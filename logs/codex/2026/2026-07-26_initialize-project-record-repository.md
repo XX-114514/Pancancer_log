@@ -1,7 +1,7 @@
 # Codex Task: initialize-project-record-repository
 
 - Date: 2026-07-26
-- Status: completed
+- Status: completed_with_push_blocker
 - Related project stage: 全项目记录系统；Project_v3 Phase 07
 - Related run ID: `20260725_120105_unified_pancancer_covarnet`
 - Requested by: 项目负责人
@@ -112,25 +112,29 @@ sed -n '1,100p' Project_v3/run_catalog/run_index.tsv
 - `scripts/validate_repository.sh`：通过，0 errors、0 warnings。
 - 验证确认核心文件齐全、Markdown 非空、非模板无明显占位符、无明显凭据或敏感绝对路径、无大于 5 MiB 的候选文件、无禁止数据格式、TSV 列数一致、无失效本地相对链接。
 - `git status --short`、staged diff、文件树和提交后状态在首次提交前后复核。
+- 首次本地提交：`ded7011`，提交信息为 `docs: initialize project progress and logging system`。
 
 ## Failed attempts
 
 - 初始只读命令因服务器内核不支持沙箱 user namespace 而失败；随后经审批在沙箱外成功执行。
 - 服务器 Git 版本不支持 `git init -b main`；改用兼容的 `git init` 和 `git symbolic-ref HEAD refs/heads/main`，已验证分支名。
 - 两次 `bash scripts/validate_repository.sh` 外部执行因审批服务超时而未启动，一次默认沙箱执行因 user namespace 问题失败；随后直接执行可执行脚本成功，验证结果为 0 errors、0 warnings。
-- 专用补丁助手同样受 user namespace 限制，补记验证结果时改用系统 patch；失败匹配留下两个本地 `.orig` 备份。
-- 依据上级工作区禁止删除规则，这两个备份未删除；通过 `.gitignore` 的 `*.orig` 规则排除，不进入提交。
+- 专用补丁助手同样受 user namespace 限制，补记验证结果时改用系统 patch；失败匹配留下本地 `.orig`/`.rej` 备份文件。
+- 依据上级工作区禁止删除规则，这些备份未删除；通过 `.gitignore` 的 `*.orig`/`*.rej` 规则排除，不进入提交。
 - 首次 `git commit` 因本仓库未配置作者身份而失败；随后从 `Project_v2/CoVarNet` 最新 Git 历史确认作者，并仅在本仓库设置对应 GitHub noreply 身份。
+- HTTPS `git push -u origin main` 因服务器无可用 GitHub 用户凭据而失败；远程未收到提交。
+- `gh auth status` 无法执行，因为服务器未安装 GitHub CLI。
+- SSH 只读认证检查被 GitHub 拒绝为 `Permission denied (publickey)`，因此未切换远程协议。
 
 ## Unresolved issues
 
-- 已配置用户提供的 GitHub `origin`；GitHub 端 private 可见性仍需由远程设置或用户确认，不从 URL 自行推断。
+- 已配置用户提供的 GitHub `origin`，但 push 被认证阻塞；GitHub 端 private 可见性仍不能从本地 URL 自行证明。
 - 32 个 human discovery 数据集尚未逐行展开到本仓库 inventory。
 - 当前主 run 的代码 commit、环境和结束时间在本次已检查证据中尚未确认。
 
 ## Recommended next action
 
-- 完成首次本地提交并向已配置的 private 目标普通 push。
+- 在服务器配置 GitHub HTTPS 凭据或为 GitHub 账户添加服务器 SSH 公钥，然后普通 push 本地 `main`。
 - 为 Phase 07 annotation 创建下一条 Codex log 与正式 run record。
 
 ## Proposed commit message

@@ -26,7 +26,7 @@
 
 - `GSE162498` 仍属于 extreme-scale pending 分支；已有分块计划，但最新检查中未观察到其进入上述 32-dataset human integration。
 - `GSE211602` 被识别为非人数据集，已从 human-only 主整合分支排除；后续用途待确认。
-- 当前记录仓库已配置用户指定的 GitHub 远程；首次 push 状态见初始化 Codex 日志。
+- 当前记录仓库已配置用户指定的 GitHub 远程，但 HTTPS 和 SSH 均无可用认证；首次 push 尚未成功。
 - 当前模型结果尚不能据此声称完成最终细胞注释或得到最终生物学结论。
 
 ## 最新验证检查点

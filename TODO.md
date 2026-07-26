@@ -2,7 +2,7 @@
 
 | ID | Priority | Status | Task | Dependency | Completion criterion | Related files |
 | --- | --- | --- | --- | --- | --- | --- |
-| REC-001 | P0 | in_progress | 配置 GitHub private 远程并核验目标 | GitHub 仓库地址 | `git remote -v` 指向确认的 private 仓库，普通 push 成功 | `docs/DATA_POLICY.md` |
+| REC-001 | P0 | blocked | 配置 GitHub private 远程并核验目标 | 服务器 GitHub 认证 | `git remote -v` 指向确认的 private 仓库，普通 push 成功 | `docs/DATA_POLICY.md` |
 | ANN-001 | P0 | todo | 冻结 Phase 07 annotation 输入与注释策略 | P3 integrated model | run record 写明对象标识、commit、环境、marker/reference 和完成标准 | `STATUS.md`, `runs/` |
 | ANN-002 | P0 | todo | 执行并验证主类群注释 | ANN-001 | 标签列、证据表、UMAP、计数表及人工复核结果齐全 | `methods/project-v3-unified-workflow.md` |
 | EXT-001 | P1 | todo | 决定 `GSE162498` 的 extreme-scale 分支处理 | 资源与分块策略复核 | 形成 ADR 或正式 run，并明确是否进入主整合 | `ROADMAP.md` |
