@@ -1,0 +1,2 @@
+run_id	scope	run_type	stage	status	start_time	end_time	code_commit	environment	record	evidence
+20260725_120105_unified_pancancer_covarnet	Project_v3	production	phase07	integration_success_annotation_pending	2026-07-25T12:01:00+08:00	待确认	待确认	待确认	runs/README.md	${PROJECT_ROOT}/Project_v3/runs/20260725_120105_unified_pancancer_covarnet/RUN_RECORD.md

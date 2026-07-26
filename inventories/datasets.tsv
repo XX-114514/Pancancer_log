@@ -1,0 +1,4 @@
+dataset_id	scope	role	species	current_stage	status	authoritative_evidence	notes
+PROJECT_V3_HUMAN_DISCOVERY_32	Project_v3	discovery	human	phase07_integrated	verified	${RUN_ROOT}/RUN_RECORD.md	32 datasets; 2040048 integrated cells; aggregate inventory row pending expansion
+GSE162498	Project_v3	extreme_scale_pending	human	phase06_planning	planning_only	${RUN_ROOT}/06_full_qc_integration/extreme_scale/GSE162498/phase06_GSE162498_extreme_plan_20260726_041732.md	Not observed in current 32-dataset human integration
+GSE211602	Project_v3	excluded_from_human_discovery	non-human	phase07_preflight	excluded	${RUN_ROOT}/RUN_RECORD.md	Excluded after species/gene-overlap review; future branch pending

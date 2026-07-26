@@ -1,0 +1,6 @@
+artifact_id	run_id	type	logical_path	status	validation	notes
+P3_RUN_RECORD	20260725_120105_unified_pancancer_covarnet	run_record	${RUN_ROOT}/RUN_RECORD.md	current	inspected_2026-07-26	External lightweight evidence
+P3_RUN_INDEX	20260725_120105_unified_pancancer_covarnet	run_index	${PROJECT_ROOT}/Project_v3/run_catalog/run_index.tsv	current	inspected_2026-07-26	Status phase07_integration_success_annotation_pending
+P3_PHASE07_ARCHIVAL_SHARDS	20260725_120105_unified_pancancer_covarnet	zarr_shards	${RUN_ROOT}/07_unified_discovery_build/archival_shard_worker/	success	39_of_39_readable_2040048_cells	Large artifacts remain outside Git
+P3_PHASE07_MODEL	20260725_120105_unified_pancancer_covarnet	model_object	${RUN_ROOT}/07_unified_discovery_build/model_branch/	success	249990_cells_11063_genes	Large artifact remains outside Git
+P3_PHASE07_UMAP	20260725_120105_unified_pancancer_covarnet	model_object	${RUN_ROOT}/07_unified_discovery_build/model_branch_umap/	success	249990x3000_46_leiden_clusters	Annotation pending

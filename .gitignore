@@ -1,0 +1,72 @@
+# Secrets and local credentials
+.env
+.env.*
+*.pem
+*.key
+*.token
+credentials*
+secrets*
+
+# Python / R / editors
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary and scheduler output
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.orig
+nohup.out
+core.*
+slurm-*.out
+
+# Large analysis objects and raw sequencing formats
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+*.rds
+*.rda
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.mtx
+*.mtx.gz
+*.bam
+*.bai
+*.cram
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Data and generated-output directories at repository root
+/data/
+/raw_data/
+/results/
+/outputs/
+/cache/
+/tmp/
+/scratch/
+
+# Small structured inventories remain trackable
+!inventories/
+!inventories/*.tsv
+!inventories/*.csv
+!inventories/*.yaml
+!inventories/*.yml
