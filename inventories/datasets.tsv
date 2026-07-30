@@ -1,4 +1,9 @@
 dataset_id	scope	role	species	current_stage	status	authoritative_evidence	notes
-PROJECT_V3_HUMAN_DISCOVERY_32	Project_v3	discovery	human	phase07_integrated	verified	${RUN_ROOT}/RUN_RECORD.md	32 datasets; 2040048 integrated cells; aggregate inventory row pending expansion
-GSE162498	Project_v3	extreme_scale_pending	human	phase06_planning	planning_only	${RUN_ROOT}/06_full_qc_integration/extreme_scale/GSE162498/phase06_GSE162498_extreme_plan_20260726_041732.md	Not observed in current 32-dataset human integration
-GSE211602	Project_v3	excluded_from_human_discovery	non-human	phase07_preflight	excluded	${RUN_ROOT}/RUN_RECORD.md	Excluded after species/gene-overlap review; future branch pending
+PROJECT_V3_HUMAN_DISCOVERY_32	Project_v3	discovery_plan	human	phase07_archival	verified_historical_snapshot	${RUN_ROOT}/07_unified_discovery_build/archival_shard_validation/	32 datasets; 2040048 cells; 39 readable shards; before GSE278694 removal
+PROJECT_V3_FINAL_DISCOVERY_31	Project_v3	discovery	human	phase09_validated	verified	${RUN_ROOT}/objects/02_integrate/archival_shards_concat.zarr	31 GSE; 1963745 cells; 773 samples; 11063 genes
+GSE162498	Project_v3	extreme_scale_pending	human	phase06_planning	planning_only	${RUN_ROOT}/06_full_qc_integration/extreme_scale/GSE162498/phase06_GSE162498_extreme_plan_20260726_041732.md	6635520 cells; not in final discovery integration
+GSE211602	Project_v3	excluded_from_human_discovery	non-human	phase07_preflight	excluded	${RUN_ROOT}/07_unified_discovery_build/full_integration_plan/	Mouse ENSMUSG identifiers; excluded from human-only branch
+GSE278694	Project_v3	removed_between_plan_and_final	human	phase07_concat	excluded_reason_unrecorded	${RUN_ROOT}/scripts/25M_exclude_GSE278694.h5ad	Filtering observed; scientific rationale not found in code or logs
+GSE195832	Project_v3	external_immunotherapy_validation	human	phase09_fixed_cm_validation	verified	${RUN_ROOT}/09_immunotherapy_validation/20260730_gse195832_fixed_cm_v1/FINAL_AUDIT.json	30190 cells; 8 samples; 4 nivolumab pre/post pairs
+GSE123813	Project_v3	external_immunotherapy_validation	human	phase09_fixed_cm_validation	verified	${RUN_ROOT}/09_immunotherapy_validation/20260730_gse123813_fixed_cm_v1/FINAL_AUDIT.json	79040 cells; 30 samples; 7 sort-matched primary pairs
+GSE169246	Project_v3	external_immunotherapy_validation	human	phase09_fixed_cm_validation	verified_with_metadata_caveat	${RUN_ROOT}/09_immunotherapy_validation/20260730_gse169246_fixed_cm_v1/FINAL_AUDIT.json	489490 cells; 78 samples; legacy clinical metadata needs primary-source check
