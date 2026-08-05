@@ -2,6 +2,16 @@
 
 本文件只记录会影响项目理解、方法、范围或复现的重要变化。日常细节见 `logs/`。
 
+## 2026-08-06
+
+- 将当前状态从“无运行中任务”纠正为三个 active extensions：四队列免疫治疗整合、恶性/CM 细胞通讯 v2、24-GSE 外部下载重试。
+- 新增三份正式运行记录，固定各任务的输入范围、分析流程、方法、实际参数、失败恢复、当前分母和完成门槛。
+- 记录免疫治疗分支完成 6/19 张 cell2location 切片，第 7 张已开始 spatial training；最终 19-slice merge 和 acceptance audit 待完成。
+- 记录 CM active manifest 因 GSE166555 从 2 个技术组重组为 25 个生物学样本而从 698 变为 721 samples，细胞数保持 1,849,413；Stage 01 当前完成 316/721。
+- 记录 CM 旧 attempt 阶段历史不代表 active v2 完成，当前 Stage 02–08 canonical artifacts 不存在，将在 Stage 01 后重算；增加 CopyKAT `genome=hg20` 参数核对任务。
+- 记录下载初始 run 的 4 verified/118 failed 及 active 141-task retry v3 的 74 terminal tasks；将 `unavailable_upstream` 与 verified 明确分开。
+- 更新状态、路线图、待办和 runs/artifacts inventories；只保存逻辑路径与汇总证据，没有复制大型对象、完整日志或样本级敏感数据。
+
 ## 2026-07-31
 
 - 将权威运行 `20260725_120105_unified_pancancer_covarnet` 的状态从“Phase 07 整合完成、注释待进行”更正为“全量多方法整合、证据注释、CoVarNet 和三个固定模块外部验证完成，带审计警告”。
