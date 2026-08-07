@@ -8,8 +8,8 @@
 | Run type | production download + versioned recovery retry |
 | Initial run | `20260805_060316_slurm_download_now24` |
 | Active retry | `20260806_025419_slurm_retry_v3` |
-| Snapshot | 2026-08-06 05:29 +08:00 |
-| Status | `in_progress` |
+| Snapshot | 2026-08-08 06:16 +08:00 |
+| Status | `in_progress_with_failure` |
 | Scheduler job | 26090；RUNNING；1 CPU；8 GiB RAM；14-day time limit |
 | Source commit | `not_recorded`；Project_v3 路径未检测到 Git 元数据 |
 | Environment | `scanpy` Python environment |
@@ -126,3 +126,12 @@
 - 大型 tar 的“文件正在增长”只证明网络传输活跃，不等于文件完整或可用。
 - SRA RunInfo 的空响应需要在最终报告中保留 `unavailable_upstream`，不得伪造 metadata。
 - 下一步继续运行剩余 recovery tasks，完成每文件完整性检查，并生成最终 retry summary；随后对 core GEX 与 sidecar 做人工范围复核，再进入预处理。
+
+## 2026-08-08 06:16 审计快照
+
+- Slurm job 26090 仍为 RUNNING（1 CPU、8 GiB），retry v3 进程存在，未生成 final retry summary。
+- 141 tasks 中已有 90 个 terminal rows（63.8%）：76 `verified`、7 `skipped_verified`、6 `unavailable_upstream`、1 `failed`。上游空响应仍与本地失败分开记录。
+- 唯一本地失败为 GSE201347 的 `GSE201347_GC.integrated.no.NAC.rds.gz`：14,413,317,040/19,071,156,087 bytes 后达到 `transfer_attempt_limit_reached`。部分文件不能计为 verified，也不能改写为 unavailable_upstream。
+- 第 91 个任务 GSE274229 PCADT2 matrix 正在传输；06:16 heartbeat 为 101,860,201/194,354,151 bytes（52.4%）。完成 size/gzip 验证前不计入 terminal。
+- `/data4` 仍为 98% used，约 1002 GiB 可用；继续保持单流并监控容量。
+- 下一步：让当前 retry 继续；对 GSE201347 使用新的可恢复 attempt，保留现有 partial/failed 证据；141 tasks 全部 terminal 后生成机器可读 summary，再人工复核 core/sidecar 与各 GSE guardrail。

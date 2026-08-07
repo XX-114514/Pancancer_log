@@ -8,7 +8,7 @@
 | Run type | production / retry / append-only attempts |
 | Initial start | 2026-07-31 18:06 +08:00 |
 | Active v2 restart | 2026-08-05 05:11 +08:00 |
-| Snapshot | 2026-08-06 05:29 +08:00 |
+| Snapshot | 2026-08-08 06:16 +08:00 |
 | Status | `in_progress_stage_01_sample_cnv` |
 | Source commit | `not_recorded`；Project_v3 路径未检测到 Git 元数据 |
 | Environments | `scanpy`、`scrna_r` |
@@ -147,7 +147,7 @@ Stage 04 输出全局和逐样本 Top CM 与 top-20 细胞状态解释；Stage 0
 
 只有 `${CM_RUN_ROOT}/FINAL_AUDIT.json` 通过后，本轮 v2 才能标记完成。
 
-## 当前进度
+## 2026-08-06 05:29 历史进度快照
 
 ### 已观察事实
 
@@ -186,9 +186,18 @@ Stage 04 输出全局和逐样本 Top CM 与 top-20 细胞状态解释；Stage 0
 | NicheNet record | `${CM_RUN_ROOT}/results/nichenet/NICHENET_RUN_RECORD.md` | pending current v2 |
 | final audit | `${CM_RUN_ROOT}/FINAL_AUDIT.json` | pending |
 
-## 下一步
+## 2026-08-06 后续计划（历史）
 
 1. 继续完成剩余 405 个 v2 样本的 Stage 01 terminal results。
 2. 自动执行 Stage 02 合并并核验零未映射、零冲突和排除/重组合同。
 3. 重算 CoVarNet K9、LIANA sample × CM 和本地 NicheNet 验证。
 4. 只有最终审计通过后更新为 completed；若 `hg20` 不是预期值，应先形成参数纠正决定并使用新 attempt 重跑受影响阶段。
+
+## 2026-08-08 06:16 审计快照
+
+- active v2 分母保持 721 个生物学样本、1,849,413 个细胞；没有用旧 attempt 改写当前分母。
+- Stage 01 已顺序完成 367/721（50.9%），尚余 354 个未完成。第 368 个为 GSE183904 的 GSM5573499/sample34：8,782 cells、669 candidates、7,562 references。
+- 该样本 inferCNV 已成功，实际阈值 0.0425147545、window size 250；CopyKAT R 子进程仍活跃并按分钟写 heartbeat，快照前位于结果保存/热图阶段。主 runner、Python worker 和 R 子进程均存在。
+- active v2 的 Stage 02–08 尚未开始，`FINAL_AUDIT.json` 仍不存在；旧 CoVarNet/LIANA/NicheNet 产物继续只作历史 attempt，不作为当前完成证据。
+- 本轮结论仍是样本级 raw-count CNV 推断后再合并映射；不得把整合对象上的全局 CNV 解释为样本级恶性证据。
+- 下一步：完成剩余 354 个 Stage 01 terminal results，再执行零未映射/零冲突合并、CoVarNet K9、LIANA sample × CM、NicheNet 和最终审计；发布前仍需确认 CopyKAT `genome=hg20`。

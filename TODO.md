@@ -5,7 +5,7 @@
 | REC-001 | P0 | blocked | 核验 GitHub private 远程并完成普通 push | 服务器 GitHub 认证 | `git remote -v` 指向确认的 private 仓库，普通 push 成功 | `docs/DATA_POLICY.md` |
 | REC-002 | P0 | done | 审计并同步统一 CoVarNet 运行的处理、参数和日志索引 | 权威运行目录可读 | 正式 run record、状态、方法、清单、Codex log 和 incident 均通过仓库验证 | `runs/20260725_120105_unified_pancancer_covarnet.md` |
 | MON-001 | P0 | in_progress | 监控三个 active extension 并维护可审计快照 | 三个运行目录和日志可读 | 每次状态变化更新 run record/Codex log；不得以进程存在代替产物验证 | `STATUS.md` |
-| IMM-001 | P0 | in_progress | 完成四队列免疫治疗整合与 19-slice cell2location | 剩余 13 张切片、严格 merge | 19/19 完成，71,398 spots 精确覆盖，`FINAL_DELIVERABLE_AUDIT.json` 通过 | `runs/20260803_immunotherapy_4cohort_analysis.md` |
+| IMM-001 | P0 | blocked | 完成四队列免疫治疗整合与最终验收 | 统一 11 个 inferCNV reference-insufficient skip 的验收语义 | 保留 19/19、71,398 spots 严格 merge；新 Stage 13 attempt 生成并通过 `FINAL_DELIVERABLE_AUDIT.json` | `runs/20260803_immunotherapy_4cohort_analysis.md` |
 | CM-001 | P0 | in_progress | 完成恶性识别、CoVarNet、LIANA 与 NicheNet active v2 | 721-sample Stage 01 | Stage 01 全 terminal，active v2 下游重算，`FINAL_AUDIT.json` 通过 | `runs/20260731_malignancy_communication.md` |
 | CM-002 | P0 | todo | 核对 CopyKAT 实际 `genome=hg20` 参数是否符合项目意图 | 原执行者或方法依据 | 参数得到书面确认，或以新 attempt 使用纠正值重跑受影响阶段 | `runs/20260731_malignancy_communication.md` |
 | DL-001 | P0 | in_progress | 完成 24-GSE 的 141-task recovery retry | 网络、磁盘容量 | final retry summary 存在；成功文件完成完整性验证；失败/上游不可用单列 | `runs/20260805_external_geo_download.md` |

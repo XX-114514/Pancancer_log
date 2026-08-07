@@ -7,9 +7,9 @@
 | Scope | `Project_v2` 四队列免疫治疗整合扩展 |
 | Run type | production / multi-stage / resumable |
 | Start | 2026-08-03 +08:00 |
-| Snapshot | 2026-08-06 05:29 +08:00 |
-| Status | `in_progress_cell2location` |
-| Current stage | Phase 5，19 张 GSE273952 Visium 切片逐切片 cell2location |
+| Snapshot | 2026-08-08 06:16 +08:00 |
+| Status | `blocked_final_acceptance_policy_conflict` |
+| Current stage | Phase 6 Stage 13 attempt 01 failed；19-slice cell2location 与严格 merge 已完成 |
 | Source commit | `not_recorded`；Project_v2 路径未检测到 Git 元数据 |
 | Code worktree status | `not_available` |
 | Main environments | `scanpy`、`cell2loc_env` |
@@ -127,7 +127,7 @@ raw counts
 - 计划输出全因子 q05 abundance、major abundance、轻量 H5AD、逐 spot 注释、样本汇总和 merge audit。
 - Phase 6 只在严格恶性结果与 19 张切片 merge 同时完成后运行，生成 `FINAL_ANALYSIS_SUMMARY.md`、`FINAL_DELIVERABLE_AUDIT.json`、`FINAL_DELIVERABLE_INDEX.tsv`。
 
-## 当前进度
+## 2026-08-06 05:29 历史进度快照
 
 ### 已观察事实
 
@@ -164,4 +164,13 @@ raw counts
 - cell2location 输出是多细胞状态的 spot-level q05 abundance，不是单一 cell identity。
 - 跨 TNBC/NSCLC/PDAC 参考投射到 ccRCC 只支持保守组成解释；不得据此声称 ccRCC 特异恶性亚型。
 - GSE273952 仍有 7/19 位患者 response 未稳定解析，不得补写为 R 或 NR。
-- 下一步由现有后台任务依次完成剩余 13 张切片、严格 merge 和 Phase 6 最终审计；只有 `FINAL_DELIVERABLE_AUDIT.json` 通过后才能标记整体完成。
+- 2026-08-06 当时计划由后台任务完成剩余 13 张切片、严格 merge 和 Phase 6 最终审计；该计划的执行结果见下方 2026-08-08 快照。
+
+## 2026-08-08 06:16 审计快照
+
+- Phase 5 已结束：19/19 张切片均有 `COMPLETED.json`，cohort manifest 为 19 completed、0 failed。
+- 严格 merge 已完成 71,398 spots 和 40 factors；spot 覆盖精确，missing=0、extra=0；q05 abundance finite fraction=1、negative values=0、zero-sum spots=0。该空间分支满足定量丰度合同，不能再记为进行中。
+- GSE316195 malignancy audit 仍为 22 文库、82,549 cells、54,384 candidates、5,648 trusted malignant，并记录 `samples_with_method_failure=0`。
+- Stage 13 attempt 01 于 2026-08-06 21:09 失败，未生成 `reports/FINAL_DELIVERABLE_AUDIT.json`。失败门槛把 11 个 `infercnv_status=skipped_insufficient_cells` 视作 required-method failures；这些文库的 CopyKAT 均为 success，属于样本内参考不足与验收策略不一致，不是 inferCNV/CopyKAT 进程崩溃。
+- 快照时未发现免疫治疗/cell2location 活跃进程。因此任务不能标为 completed，当前为最终验收阻断。
+- 下一步：先书面确定“参考不足 skip”是否为允许的 terminal 状态；若允许，修正最终审计的状态映射并用新 attempt 重跑 Stage 13；若不允许，应单独补充参考策略与敏感性分析。两种选择都不得覆盖已通过的 cell2location 结果。

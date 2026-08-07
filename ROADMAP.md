@@ -15,20 +15,20 @@
 
 ## 当前里程碑
 
-- P1：24-GSE `Download_now` initial run 保留 4 verified/118 failed 的失败证据；141-task retry v3 已完成 74 个 terminal tasks，第 75 个大文件仍在传输。
+- P1：24-GSE `Download_now` initial run 保留 4 verified/118 failed 的失败证据；141-task retry v3 已有 90 个 terminal tasks（76 verified、7 skipped_verified、6 unavailable_upstream、1 failed），第 91 个文件仍在传输。
 - P3：31 个 GSE、1,963,745 个细胞的全量对象完成 Harmony、BBKNN、scVI、CellTypist 和 scIB 评价。
 - P4：17 major lineages、136 lineage clusters、106 final annotations，最终审计 `PASS`。
-- P5：主 CoVarNet 发现分支完成固定 `K=9`；新的恶性/通讯 v2 active manifest 为 721 个生物学样本，Stage 01 当前完成 316/721。
-- P6：旧三个固定模块免疫治疗投影完成；新的四队列整合已完成 sc/snRNA、注释、PDAC 恶性判定和 Visium 整合，cell2location 完成 6/19 张切片。
+- P5：主 CoVarNet 发现分支完成固定 `K=9`；新的恶性/通讯 v2 active manifest 为 721 个生物学样本，Stage 01 当前完成 367/721。
+- P6：旧三个固定模块免疫治疗投影完成；新的四队列整合已完成 19/19 cell2location 与 71,398-spot 严格 merge，但最终验收因 11 个 reference-insufficient inferCNV skip 的状态策略冲突而阻断。
 - P7：三个 active extension 均已建立正式运行记录；最终 audit/summary 尚未齐全，远程同步仍受 GitHub 认证阻塞。
 
 ## active extension 完成标准
 
 ### 四队列免疫治疗整合
 
-1. 19/19 张 GSE273952 切片各自通过 cell2location attempt 验证。
-2. 71,398 个 spots 精确合并，无 missing/extra/duplicate、无非有限/负值/zero-sum abundance。
-3. `FINAL_DELIVERABLE_AUDIT.json` 通过，并保留 7 位 unresolved response 的不确定性。
+1. 已完成：19/19 张 GSE273952 切片各自通过 cell2location attempt 验证。
+2. 已完成：71,398 个 spots 精确合并，无 missing/extra、无非有限/负值/zero-sum abundance。
+3. 待完成：统一 11 个 inferCNV reference-insufficient skip 的验收语义，`FINAL_DELIVERABLE_AUDIT.json` 通过，并保留 7 位 unresolved response 的不确定性。
 
 ### 恶性识别与 CM 通讯
 
