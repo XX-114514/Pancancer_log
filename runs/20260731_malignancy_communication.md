@@ -9,7 +9,7 @@
 | Initial start | 2026-07-31 18:06 +08:00 |
 | Active v2 restart | 2026-08-05 05:11 +08:00 |
 | Snapshot | 2026-08-12 10:06 +08:00 |
-| Status | `interrupted_stalled_nonterminal_stage01` |
+| Status | `active_recovery_stage01_from_sample_462` |
 | Source commit | `not_recorded`；Project_v3 路径未检测到 Git 元数据 |
 | Environments | `scanpy`、`scrna_r` |
 | Active manifest | `samples_analysis_v2.tsv` |
@@ -210,3 +210,14 @@ Stage 04 输出全局和逐样本 Top CM 与 top-20 细胞状态解释；Stage 0
 - 最后可见 heartbeat 停在 2026-08-10 08:02；2026-08-12 快照时主 runner、Python worker 和 CopyKAT R 子进程均不存在。主机之后发生过重启，但现有证据不能证明重启就是这次中断的原始原因。
 - 当前应记为 `interrupted_stalled_nonterminal_stage01`，而不是活跃运行或成功完成。Stage 02–08 尚未开始，`FINAL_AUDIT.json` 仍不存在。
 - 恢复时应保留第 462 个样本的非终态 attempt，以新的 append-only attempt 从该样本重新开始；在进入 Stage 02 前重新核对 461 个 terminal 结果的 cell-ID 覆盖和 hash，并继续确认 CopyKAT `genome=hg20` 的参数意图。
+
+## 2026-08-12 12:44 恢复快照
+
+- 报错定位为通讯上游的样本级 CopyKAT 非终态中断，不是 LIANA/CoVarNet 统计报错；旧日志无 traceback/exit code，内核 journal 不可见，因此根因仍未确认。
+- runner 增加 completion artifact 合同：样本 UID/token、细胞数、三方法非失败状态、`cell_evidence.tsv.gz` 路径/可读性/关键列均通过才允许 skip。
+- 第 462 个样本旧 `attempt_01` 已追加 `INTERRUPTED.json`，5 个旧诊断文件和约 1.106 GB raw CNA 矩阵均保留；新计算写入 `attempt_02`。
+- recovery ID 为 `20260812_124600_cm_stage01_from_0462`，由 tmux 会话 `cm_stage01_20260812_1246` 托管，从零基索引 461 开始继续剩余 260 个样本。
+- 新 attempt 的 inferCNV 再次成功：8,734 cells、4,123 candidates、3,647 references、threshold 0.10957874104380605、window 250。
+- CopyKAT 1.1.0 已启动；首条 heartbeat 位于 Step 3，RSS 6,879,140 kB、无 swap。实际参数保持 `hg20`、`id.type=S`、`ngene.chr=5`、`win.size=25`、`KS.cut=0.1`、Euclidean、2 cores、60 秒 heartbeat。
+- 当前仍只确认 461/721 个顺序样本完成；第 462 个必须等 `COMPLETED.json` 和 evidence 合同通过后才增加完成数。Stage 02–08 与 final audit 仍为 pending。
+- 详细故障与恢复审计见 `logs/incidents/2026-08-12_cm-stage01-copykat-interruption-recovery.md`。

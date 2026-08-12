@@ -4,6 +4,7 @@
 
 ## 2026-08-12
 
+- 非破坏修补 CM Stage01 completion 合同与 attempt provenance；封存第 462 个旧非终态 attempt，并以 `20260812_124600_cm_stage01_from_0462` 从零基索引 461 重启。新 inferCNV 已成功，CopyKAT heartbeat 活跃。
 - 确认免疫治疗四队列在 2026-08-08 后没有新 Stage 13 attempt；19/19、71,398 spots、40-factor merge 仍通过，但最终验收策略冲突和缺失 final audit 未解除。
 - 将 CM active v2 Stage 01 更新为 461/721；第 462 个样本 inferCNV 成功但 CopyKAT 仅形成非终态 raw matrix，heartbeat 停于 2026-08-10 08:02，当前无进程，因此状态改为 interrupted/stalled，而非运行中。
 - 记录下载 retry v3 于 2026-08-09 07:12 完成 141/141 terminal tasks：127 verified、7 skipped_verified、6 unavailable_upstream、1 failed；GSE201347 partial 继续作为独立 recovery 任务。
