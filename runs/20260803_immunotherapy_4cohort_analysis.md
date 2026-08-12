@@ -7,7 +7,7 @@
 | Scope | `Project_v2` 四队列免疫治疗整合扩展 |
 | Run type | production / multi-stage / resumable |
 | Start | 2026-08-03 +08:00 |
-| Snapshot | 2026-08-08 06:16 +08:00 |
+| Snapshot | 2026-08-12 10:06 +08:00 |
 | Status | `blocked_final_acceptance_policy_conflict` |
 | Current stage | Phase 6 Stage 13 attempt 01 failed；19-slice cell2location 与严格 merge 已完成 |
 | Source commit | `not_recorded`；Project_v2 路径未检测到 Git 元数据 |
@@ -174,3 +174,11 @@ raw counts
 - Stage 13 attempt 01 于 2026-08-06 21:09 失败，未生成 `reports/FINAL_DELIVERABLE_AUDIT.json`。失败门槛把 11 个 `infercnv_status=skipped_insufficient_cells` 视作 required-method failures；这些文库的 CopyKAT 均为 success，属于样本内参考不足与验收策略不一致，不是 inferCNV/CopyKAT 进程崩溃。
 - 快照时未发现免疫治疗/cell2location 活跃进程。因此任务不能标为 completed，当前为最终验收阻断。
 - 下一步：先书面确定“参考不足 skip”是否为允许的 terminal 状态；若允许，修正最终审计的状态映射并用新 attempt 重跑 Stage 13；若不允许，应单独补充参考策略与敏感性分析。两种选择都不得覆盖已通过的 cell2location 结果。
+
+## 2026-08-12 10:06 审计快照
+
+- 2026-08-08 之后没有发现新的 Phase 6/Stage 13 attempt，快照时也没有免疫治疗或 cell2location 活跃进程。
+- 已通过的空间结果没有变化：19/19 张切片、71,398 spots、40 factors；严格 merge 仍满足精确 spot 覆盖、所有丰度有限且非负、无 zero-sum spot。
+- Stage 13 仍停留在 attempt 01。11 个 `infercnv_status=skipped_insufficient_cells` 与最终验收 required-method 语义的冲突尚未解决，`reports/FINAL_DELIVERABLE_AUDIT.json` 仍未生成。
+- 因此状态继续为 `blocked_final_acceptance_policy_conflict`；不能把空间分支成功外推为四队列最终交付完成。
+- 下一步仍需先形成书面验收决定，再以新 attempt 重跑 Stage 13；不得覆盖或重算已经严格通过的 19-slice cell2location merge。

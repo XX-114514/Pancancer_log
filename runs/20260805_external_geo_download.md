@@ -7,10 +7,10 @@
 | Scope | `Project_v3` 新数据下载扩展 |
 | Run type | production download + versioned recovery retry |
 | Initial run | `20260805_060316_slurm_download_now24` |
-| Active retry | `20260806_025419_slurm_retry_v3` |
-| Snapshot | 2026-08-08 06:16 +08:00 |
-| Status | `in_progress_with_failure` |
-| Scheduler job | 26090；RUNNING；1 CPU；8 GiB RAM；14-day time limit |
+| Final retry | `20260806_025419_slurm_retry_v3` |
+| Snapshot | 2026-08-12 10:06 +08:00 |
+| Status | `complete_with_failures` |
+| Scheduler job | 26090；retry 于 2026-08-09 07:12 +08:00 结束 |
 | Source commit | `not_recorded`；Project_v3 路径未检测到 Git 元数据 |
 | Environment | `scanpy` Python environment |
 
@@ -135,3 +135,11 @@
 - 第 91 个任务 GSE274229 PCADT2 matrix 正在传输；06:16 heartbeat 为 101,860,201/194,354,151 bytes（52.4%）。完成 size/gzip 验证前不计入 terminal。
 - `/data4` 仍为 98% used，约 1002 GiB 可用；继续保持单流并监控容量。
 - 下一步：让当前 retry 继续；对 GSE201347 使用新的可恢复 attempt，保留现有 partial/failed 证据；141 tasks 全部 terminal 后生成机器可读 summary，再人工复核 core/sidecar 与各 GSE guardrail。
+
+## 2026-08-12 10:06 审计快照
+
+- retry v3 已于 2026-08-09 07:12 +08:00 结束，141/141 tasks 均有 terminal 状态；最终 breakdown 为 127 `verified`、7 `skipped_verified`、6 `unavailable_upstream`、1 `failed`。
+- `reports/retry_summary_20260806_025419_slurm_retry_v3.json` 已生成，因此本轮 retry 状态为 `complete_with_failures`，不再是运行中。
+- 唯一失败仍为 GSE201347 的大型 RDS partial：14,413,317,040/19,071,156,087 bytes。它没有通过预期大小与 gzip 完整性验证，不能计为 verified，也不能归类为上游不可用。
+- 下载 `raw` 树快照约 64 GiB；`/data4` 使用率约 99%，可用约 869 GiB。容量风险仍需在任何新 recovery attempt 前复核。
+- 下一步应为 GSE201347 建立单独、版本化、可断点恢复的新 attempt，并保留现有 partial 和 retry v3 summary；随后人工复核 core GEX/sidecar、human/xenograft 与 baseline/repeated-measure guardrail。retry v3 本身不应重新标记为进行中。

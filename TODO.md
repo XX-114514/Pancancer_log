@@ -6,9 +6,10 @@
 | REC-002 | P0 | done | 审计并同步统一 CoVarNet 运行的处理、参数和日志索引 | 权威运行目录可读 | 正式 run record、状态、方法、清单、Codex log 和 incident 均通过仓库验证 | `runs/20260725_120105_unified_pancancer_covarnet.md` |
 | MON-001 | P0 | in_progress | 监控三个 active extension 并维护可审计快照 | 三个运行目录和日志可读 | 每次状态变化更新 run record/Codex log；不得以进程存在代替产物验证 | `STATUS.md` |
 | IMM-001 | P0 | blocked | 完成四队列免疫治疗整合与最终验收 | 统一 11 个 inferCNV reference-insufficient skip 的验收语义 | 保留 19/19、71,398 spots 严格 merge；新 Stage 13 attempt 生成并通过 `FINAL_DELIVERABLE_AUDIT.json` | `runs/20260803_immunotherapy_4cohort_analysis.md` |
-| CM-001 | P0 | in_progress | 完成恶性识别、CoVarNet、LIANA 与 NicheNet active v2 | 721-sample Stage 01 | Stage 01 全 terminal，active v2 下游重算，`FINAL_AUDIT.json` 通过 | `runs/20260731_malignancy_communication.md` |
+| CM-001 | P0 | blocked | 完成恶性识别、CoVarNet、LIANA 与 NicheNet active v2 | 从第 462 个样本建立 append-only recovery attempt | Stage 01 全 terminal，active v2 下游重算，`FINAL_AUDIT.json` 通过 | `runs/20260731_malignancy_communication.md` |
 | CM-002 | P0 | todo | 核对 CopyKAT 实际 `genome=hg20` 参数是否符合项目意图 | 原执行者或方法依据 | 参数得到书面确认，或以新 attempt 使用纠正值重跑受影响阶段 | `runs/20260731_malignancy_communication.md` |
-| DL-001 | P0 | in_progress | 完成 24-GSE 的 141-task recovery retry | 网络、磁盘容量 | final retry summary 存在；成功文件完成完整性验证；失败/上游不可用单列 | `runs/20260805_external_geo_download.md` |
+| DL-001 | P0 | done | 完成 24-GSE 的 141-task recovery retry | 网络、磁盘容量 | final retry summary 存在；127 verified、7 skipped_verified、6 unavailable_upstream、1 failed 均为 terminal | `runs/20260805_external_geo_download.md` |
+| DL-003 | P0 | todo | 以新版本化 attempt 恢复 GSE201347 大型 RDS partial | 网络、磁盘容量、retry v3 失败证据 | 文件达到 19,071,156,087 bytes 并通过 size/gzip 完整性检查；旧 partial 和失败记录保留 | `runs/20260805_external_geo_download.md` |
 | DL-002 | P1 | todo | 下载后人工复核 core/sidecar 与数据集 guardrail | DL-001 | 每个 GSE 的 GEX、TCR/ATAC/VDJ/spatial、human/xenograft 和重复测量范围明确 | `runs/20260805_external_geo_download.md` |
 | GOV-001 | P0 | todo | 对齐源 `stage_status.tsv` 与最终产物状态 | 最终审计文件 | manifest 不再把已完成阶段标记为 `pending`，且保留历史失败/恢复链 | `logs/incidents/2026-07-31_unified-run-record-drift.md` |
 | GOV-002 | P0 | blocked | 补齐 `GSE278694` 从最终整合移除的科学理由 | 原执行者决定或原始证据 | ADR/run record 写明理由、影响和是否永久排除 | `logs/incidents/2026-07-31_unified-run-record-drift.md` |

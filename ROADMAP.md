@@ -15,12 +15,12 @@
 
 ## 当前里程碑
 
-- P1：24-GSE `Download_now` initial run 保留 4 verified/118 failed 的失败证据；141-task retry v3 已有 90 个 terminal tasks（76 verified、7 skipped_verified、6 unavailable_upstream、1 failed），第 91 个文件仍在传输。
+- P1：24-GSE `Download_now` initial run 保留 4 verified/118 failed 的失败证据；141-task retry v3 已结束，127 verified、7 skipped_verified、6 unavailable_upstream、1 failed。GSE201347 partial 仍需独立 recovery attempt。
 - P3：31 个 GSE、1,963,745 个细胞的全量对象完成 Harmony、BBKNN、scVI、CellTypist 和 scIB 评价。
 - P4：17 major lineages、136 lineage clusters、106 final annotations，最终审计 `PASS`。
-- P5：主 CoVarNet 发现分支完成固定 `K=9`；新的恶性/通讯 v2 active manifest 为 721 个生物学样本，Stage 01 当前完成 367/721。
-- P6：旧三个固定模块免疫治疗投影完成；新的四队列整合已完成 19/19 cell2location 与 71,398-spot 严格 merge，但最终验收因 11 个 reference-insufficient inferCNV skip 的状态策略冲突而阻断。
-- P7：三个 active extension 均已建立正式运行记录；最终 audit/summary 尚未齐全，远程同步仍受 GitHub 认证阻塞。
+- P5：主 CoVarNet 发现分支完成固定 `K=9`；新的恶性/通讯 v2 active manifest 为 721 个生物学样本，Stage 01 完成 461/721 后在第 462 个样本形成非终态 CopyKAT attempt，当前无进程，Stage 02–08 未开始。
+- P6：旧三个固定模块免疫治疗投影完成；新的四队列整合已完成 19/19 cell2location 与 71,398-spot 严格 merge，但截至 2026-08-12 无新 Stage 13 attempt，最终验收仍因 11 个 reference-insufficient inferCNV skip 的状态策略冲突而阻断。
+- P7：三个 extension 均已建立正式运行记录；下载 retry v3 已生成 final summary，免疫与 CM 的最终 audit 仍未齐全，远程同步仍受 GitHub 认证阻塞。
 
 ## active extension 完成标准
 
@@ -39,14 +39,15 @@
 
 ### 新数据下载
 
-1. 141-task retry 终止并生成 machine-readable final summary。
+1. 已完成：141-task retry 终止并生成 machine-readable final summary；终态为 127 verified、7 skipped_verified、6 unavailable_upstream、1 failed。
 2. 每个成功文件通过与类型相符的 gzip/tar/zip/size/MD5 检查。
 3. `unavailable_upstream` 与网络失败不伪装为 verified。
 4. core GEX、sidecar、human/xenograft、baseline/repeated-measure guardrail 经人工复核后才进入预处理。
+5. GSE201347 的 14,413,317,040/19,071,156,087-byte partial 必须在新的版本化 recovery attempt 中恢复并重新验证；不得改写 retry v3 的失败历史。
 
 ## 关键依赖
 
-- 数据盘容量接近上限，下载保持单流并持续观察容量风险。
+- 数据盘约 99% used、约 869 GiB available；任何新 recovery attempt 前必须复核容量并继续保持低并发。
 - `GSE278694` 的移除原因必须形成可审计决定，否则最终发现队列范围不能算完全冻结。
 - `GSE162498` 的 extreme-scale 处理决定影响主队列是否扩展。
 - low-confidence、unresolved 和 ambiguous annotations 需要人工复核后才能作为发布版标签。

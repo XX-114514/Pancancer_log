@@ -8,8 +8,8 @@
 | Run type | production / retry / append-only attempts |
 | Initial start | 2026-07-31 18:06 +08:00 |
 | Active v2 restart | 2026-08-05 05:11 +08:00 |
-| Snapshot | 2026-08-08 06:16 +08:00 |
-| Status | `in_progress_stage_01_sample_cnv` |
+| Snapshot | 2026-08-12 10:06 +08:00 |
+| Status | `interrupted_stalled_nonterminal_stage01` |
 | Source commit | `not_recorded`；Project_v3 路径未检测到 Git 元数据 |
 | Environments | `scanpy`、`scrna_r` |
 | Active manifest | `samples_analysis_v2.tsv` |
@@ -201,3 +201,12 @@ Stage 04 输出全局和逐样本 Top CM 与 top-20 细胞状态解释；Stage 0
 - active v2 的 Stage 02–08 尚未开始，`FINAL_AUDIT.json` 仍不存在；旧 CoVarNet/LIANA/NicheNet 产物继续只作历史 attempt，不作为当前完成证据。
 - 本轮结论仍是样本级 raw-count CNV 推断后再合并映射；不得把整合对象上的全局 CNV 解释为样本级恶性证据。
 - 下一步：完成剩余 354 个 Stage 01 terminal results，再执行零未映射/零冲突合并、CoVarNet K9、LIANA sample × CM、NicheNet 和最终审计；发布前仍需确认 CopyKAT `genome=hg20`。
+
+## 2026-08-12 10:06 审计快照
+
+- active v2 Stage 01 已顺序完成 461/721 个生物学样本，即 63.9%；尚余 260 个样本没有完成。
+- 第 462 个样本为 GSE299340 的 GSM9037562_297：8,734 cells、4,123 candidates、3,647 references。inferCNV 已成功，实际 threshold=0.109578741、window size=250。
+- 该样本的 CopyKAT 只形成约 1.106 GB 的 raw gene-by-cell 中间矩阵；未形成 prediction、summary 或 terminal marker，因此不得把它计入 461 个已完成样本。
+- 最后可见 heartbeat 停在 2026-08-10 08:02；2026-08-12 快照时主 runner、Python worker 和 CopyKAT R 子进程均不存在。主机之后发生过重启，但现有证据不能证明重启就是这次中断的原始原因。
+- 当前应记为 `interrupted_stalled_nonterminal_stage01`，而不是活跃运行或成功完成。Stage 02–08 尚未开始，`FINAL_AUDIT.json` 仍不存在。
+- 恢复时应保留第 462 个样本的非终态 attempt，以新的 append-only attempt 从该样本重新开始；在进入 Stage 02 前重新核对 461 个 terminal 结果的 cell-ID 覆盖和 hash，并继续确认 CopyKAT `genome=hg20` 的参数意图。
