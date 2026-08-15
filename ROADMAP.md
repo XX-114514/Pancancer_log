@@ -18,7 +18,7 @@
 - P1：24-GSE `Download_now` initial run 保留 4 verified/118 failed 的失败证据；141-task retry v3 已结束，127 verified、7 skipped_verified、6 unavailable_upstream、1 failed。GSE201347 partial 仍需独立 recovery attempt。
 - P3：31 个 GSE、1,963,745 个细胞的全量对象完成 Harmony、BBKNN、scVI、CellTypist 和 scIB 评价。
 - P4：17 major lineages、136 lineage clusters、106 final annotations，最终审计 `PASS`。
-- P5：主 CoVarNet 发现分支完成固定 `K=9`；恶性/通讯 v2 Stage 01 保持 461/721 已完成，第 462 个旧 attempt 已封存，recovery `20260812_124600_cm_stage01_from_0462` 正在新 attempt 中运行 CopyKAT；Stage 02–08 未开始。
+- P5：主 CoVarNet 发现分支完成固定 `K=9`；恶性/通讯 v2 Stage 01 严格完成 580/721。recovery `20260812_124600_cm_stage01_from_0462` 在第 581 个样本因组配额耗尽终止；当前约 2.50 GiB 余量远低于剩余 Stage01 约 129–157 GiB 的估算，至少恢复 200 GiB 组配额余量后才从零基索引 580 新建 attempt；Stage 02–08 未开始。
 - P6：旧三个固定模块免疫治疗投影完成；新的四队列整合已完成 19/19 cell2location 与 71,398-spot 严格 merge，但截至 2026-08-12 无新 Stage 13 attempt，最终验收仍因 11 个 reference-insufficient inferCNV skip 的状态策略冲突而阻断。
 - P7：三个 extension 均已建立正式运行记录；下载 retry v3 已生成 final summary，免疫与 CM 的最终 audit 仍未齐全，远程同步仍受 GitHub 认证阻塞。
 
@@ -47,7 +47,7 @@
 
 ## 关键依赖
 
-- 数据盘约 99% used、约 869 GiB available；任何新 recovery attempt 前必须复核容量并继续保持低并发。
+- `/data4` 文件系统整体仍有约 771 GiB available，但 `USER002` 组受 1,572,864,000-block hard limit 约束；2026-08-16 仅余约 2.50 GiB。CM Stage01 新 recovery 至少需要 200 GiB 组配额余量，且下游 Stage 02–08 另需容量预算。
 - `GSE278694` 的移除原因必须形成可审计决定，否则最终发现队列范围不能算完全冻结。
 - `GSE162498` 的 extreme-scale 处理决定影响主队列是否扩展。
 - low-confidence、unresolved 和 ambiguous annotations 需要人工复核后才能作为发布版标签。

@@ -8,8 +8,8 @@
 | Run type | production / retry / append-only attempts |
 | Initial start | 2026-07-31 18:06 +08:00 |
 | Active v2 restart | 2026-08-05 05:11 +08:00 |
-| Snapshot | 2026-08-12 10:06 +08:00 |
-| Status | `active_recovery_stage01_from_sample_462` |
+| Snapshot | 2026-08-16 03:37 +08:00 |
+| Status | `blocked_stage01_group_quota_after_sample_580` |
 | Source commit | `not_recorded`；Project_v3 路径未检测到 Git 元数据 |
 | Environments | `scanpy`、`scrna_r` |
 | Active manifest | `samples_analysis_v2.tsv` |
@@ -178,7 +178,7 @@ Stage 04 输出全局和逐样本 Top CM 与 top-20 细胞状态解释；Stage 0
 | active manifest | `${CM_RUN_ROOT}/manifests/samples_analysis_v2.tsv` | 721 samples / 1,849,413 cells |
 | regroup audit | `${CM_RUN_ROOT}/manifests/GSE166555_SAMPLE_REGROUP_AUDIT.json` | pass |
 | exclusion audit | `${CM_RUN_ROOT}/manifests/GSE_EXCLUSION_AUDIT.json` | pass |
-| Stage 01 log | `${CM_RUN_ROOT}/logs/stages/01_sample_cnv.log` | active |
+| Stage 01 log | `${CM_RUN_ROOT}/logs/recovery/20260812_124600_cm_stage01_from_0462.log` | stopped at sample 581: group quota exhausted |
 | stage history | `${CM_RUN_ROOT}/status/stage_history.tsv` | append-only |
 | merged malignancy audit | `${CM_RUN_ROOT}/results/MALIGNANCY_MERGE_AUDIT.json` | pending current v2 |
 | CoVarNet record | `${CM_RUN_ROOT}/results/covarnet_r/Covarnet_R_malignancy_intersection_v1/RUN_RECORD.md` | pending current v2 |
@@ -221,3 +221,16 @@ Stage 04 输出全局和逐样本 Top CM 与 top-20 细胞状态解释；Stage 0
 - CopyKAT 1.1.0 已启动；首条 heartbeat 位于 Step 3，RSS 6,879,140 kB、无 swap。实际参数保持 `hg20`、`id.type=S`、`ngene.chr=5`、`win.size=25`、`KS.cut=0.1`、Euclidean、2 cores、60 秒 heartbeat。
 - 当前仍只确认 461/721 个顺序样本完成；第 462 个必须等 `COMPLETED.json` 和 evidence 合同通过后才增加完成数。Stage 02–08 与 final audit 仍为 pending。
 - 详细故障与恢复审计见 `logs/incidents/2026-08-12_cm-stage01-copykat-interruption-recovery.md`。
+
+## 2026-08-16 03:37 审计与重提判定
+
+- runner 自身 `validate_completed_attempt()` 合同逐样本复核 active v2：前 580/721 个样本连续通过，完成率 80.44%；第一个未通过样本为 581/721 `GSE127465::GSE127465|human_p5t1`，尚余 141 个样本、501,318 个细胞。
+- recovery `20260812_124600_cm_stage01_from_0462` 于 2026-08-14 03:40 +08:00 终止；2026-08-16 无 runner、Python、CopyKAT、Stage 02–08 进程，原 tmux session 已退出。
+- 第 581 个样本 inferCNV 已成功，threshold=0.030105505548417563、window size=250。CopyKAT 使用 `hg20`、symbol、`ngene.chr=5`、`win.size=25`、`KS.cut=0.1`、Euclidean、2 cores。
+- CopyKAT 已写原生 prediction、CNA results、clustering RDS、stdout/stderr 和约 22.1 MB raw CNA matrix，但 canonical prediction/summary、`cell_evidence.tsv.gz` 和 terminal marker 未发布，因此该样本不计为完成。
+- 直接错误为 `Disk quota exceeded`。`/data4` 是启用 user/group quota 的 XFS；故障时 `USER002` 组用量等于 1,572,864,000-block hard limit。文件系统整体当时仍约有 769 GiB available、inode 使用约 4%，故这是组配额阻断。
+- 用户释放空间后，2026-08-16 复核组用量为 1,570,240,644/1,572,864,000 blocks，仅余 2,623,356 blocks，约 2.50 GiB。
+- 对完成的 recovery 样本 462–580 共 119 个有效 attempt 按实际磁盘块审计：357,794 cells 共用 92.189 GiB；单样本中位数 0.625 GiB、P75 1.102 GiB、P95 2.491 GiB、最大 3.383 GiB。按剩余 501,318 cells 外推约需 129–157 GiB。
+- 因 2.50 GiB 明显不足，2026-08-16 未提交新 recovery，避免确定性再次 EDQUOT。Stage01 重启门槛设为至少 200 GiB 组配额余量；Stage 02–08 需另做容量预算。
+- 后续恢复必须保留当前非终态 attempt；原生 CopyKAT prediction 只有在 cell IDs 行数相等、零 missing、零 extra、零 duplicate 并记录 source/hash 后，才能由从零基索引 580 启动的新 append-only attempt 复用。
+- active-v2 Stage 02–08 canonical audit artifacts 与 `FINAL_AUDIT.json` 均不存在。详细根因和容量判定见 `logs/incidents/2026-08-14_cm-stage01-group-quota-exhaustion.md`。

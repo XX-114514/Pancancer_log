@@ -2,6 +2,12 @@
 
 本文件只记录会影响项目理解、方法、范围或复现的重要变化。日常细节见 `logs/`。
 
+## 2026-08-16
+
+- 确认 CM Stage01 recovery 在第 581/721 个样本因 `/data4` 的 `USER002` 组 hard quota 耗尽而终止；严格完成合同通过前 580 个样本，Stage 02–08 未开始。
+- 用户释放空间后复核仅得到约 2.50 GiB 组配额余量；按 119 个真实 recovery attempts 的磁盘块占用外推，剩余 Stage01 约需 129–157 GiB，因此未提交可预见会再次 EDQUOT 的任务，并把重启门槛设为至少 200 GiB 组配额余量。
+- 第 581 个样本的旧 attempt 和原生 CopyKAT prediction 均保留；后续只允许在 cell-ID 一对一覆盖审计通过后于新 append-only attempt 复用。
+
 ## 2026-08-12
 
 - 非破坏修补 CM Stage01 completion 合同与 attempt provenance；封存第 462 个旧非终态 attempt，并以 `20260812_124600_cm_stage01_from_0462` 从零基索引 461 重启。新 inferCNV 已成功，CopyKAT heartbeat 活跃。
