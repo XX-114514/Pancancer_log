@@ -234,3 +234,13 @@ Stage 04 输出全局和逐样本 Top CM 与 top-20 细胞状态解释；Stage 0
 - 因 2.50 GiB 明显不足，2026-08-16 未提交新 recovery，避免确定性再次 EDQUOT。Stage01 重启门槛设为至少 200 GiB 组配额余量；Stage 02–08 需另做容量预算。
 - 后续恢复必须保留当前非终态 attempt；原生 CopyKAT prediction 只有在 cell IDs 行数相等、零 missing、零 extra、零 duplicate 并记录 source/hash 后，才能由从零基索引 580 启动的新 append-only attempt 复用。
 - active-v2 Stage 02–08 canonical audit artifacts 与 `FINAL_AUDIT.json` 均不存在。详细根因和容量判定见 `logs/incidents/2026-08-14_cm-stage01-group-quota-exhaustion.md`。
+
+## 2026-08-16 07:00 最新容量复核
+
+- runner 自身 `validate_completed_attempt()` 再次逐样本验证：721 个 active samples 中 raw completion markers=580、有效 completion=580、连续有效前缀=580；第一个未完成样本仍为 581/721 `GSE127465::GSE127465|human_p5t1`，尚余 141 个样本、501,318 个细胞。
+- 第 581 个样本只有 `STARTED.json` 和 CopyKAT 原生中间/结果文件，没有 `COMPLETED.json`、canonical summary 或 `cell_evidence.tsv.gz`，因此仍不计入完成分母。
+- 2026-08-14 03:40 的直接错误仍是 CopyKAT 写表返回 `Disk quota exceeded`；recovery 日志和第 581 个 attempt 自此未变化。进程、Slurm 和 tmux 检查未发现本任务活动实例。
+- 最新精确 group-quota 为 1,466,340,820/1,572,864,000 blocks，余 106,523,180 blocks，即约 101.588 GiB；较 03:37 快照的 2.50 GiB 已明显改善。
+- 101.588 GiB 仍低于剩余 Stage01 的 129.2–156.9 GiB 实测外推，并比既定 200 GiB 安全重启门槛少约 98.412 GiB；`df` 显示的约 871 GiB 文件系统可用空间不能替代 group quota。
+- 因资源门槛仍未通过，本次不建立新 recovery、不复用第 581 个原生 prediction，也不启动 Stage 02–08。恢复仍必须从零基索引 580 使用新 recovery ID 和 append-only attempt，并在任何 prediction 复用前验证 cell IDs 零 missing、零 extra、零 duplicate 及来源 hash。
+- CopyKAT 实际 `genome=hg20` 的意图仍待书面确认；Stage 02–08 canonical artifacts 与 `FINAL_AUDIT.json` 仍不存在。

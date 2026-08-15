@@ -143,3 +143,12 @@
 - 唯一失败仍为 GSE201347 的大型 RDS partial：14,413,317,040/19,071,156,087 bytes。它没有通过预期大小与 gzip 完整性验证，不能计为 verified，也不能归类为上游不可用。
 - 下载 `raw` 树快照约 64 GiB；`/data4` 使用率约 99%，可用约 869 GiB。容量风险仍需在任何新 recovery attempt 前复核。
 - 下一步应为 GSE201347 建立单独、版本化、可断点恢复的新 attempt，并保留现有 partial 和 retry v3 summary；随后人工复核 core GEX/sidecar、human/xenograft 与 baseline/repeated-measure guardrail。retry v3 本身不应重新标记为进行中。
+
+## 2026-08-16 07:00 最新审计快照
+
+- 自 2026-08-12 快照后，下载运行根没有新写入文件；进程、Slurm 和后台会话检查均未发现该下载或 GSE201347 recovery 活动实例。
+- retry v3 的机器 summary 保持 `complete_with_failures`，完成时间为 2026-08-09 07:12 +08:00；141/141 terminal tasks 的分布仍为 127 `verified`、7 `skipped_verified`、6 `unavailable_upstream`、1 `failed`。
+- GSE201347 partial 的 mtime 仍为 2026-08-08 05:14 +08:00，大小仍为 14,413,317,040/19,071,156,087 bytes，即 75.577%，尚缺 4,657,839,047 bytes（约 4.338 GiB）。它未通过预期大小与 gzip 完整性合同。
+- 最近失败原因仍是 NCBI FTP 多次 `Connection refused` 或远端关闭连接，触发全局指数熔断后最终达到 transfer attempt limit；这不是 `unavailable_upstream`，也没有证据显示本次失败由本地配额直接造成。
+- 允许边界复核：只有完整性验证通过的文件可记为 `verified`；6 个上游空响应继续保持 `unavailable_upstream`，partial 继续保持 `failed`。新恢复必须使用版本化、可续传 attempt，并保留 retry v3 summary 与现有 partial。
+- 下载 `raw` 树仍约 64 GiB；`/data4` 约 99% used、约 871 GiB available，但提交任何新下载前仍需同时检查 group quota 与目标文件完整性策略。

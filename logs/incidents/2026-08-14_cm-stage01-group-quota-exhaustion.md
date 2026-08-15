@@ -53,3 +53,11 @@ recovery `20260812_124600_cm_stage01_from_0462` 将 active v2 Stage01 从 461 �
 3. 推荐门槛未满足时不提交长任务；记录为资源阻断。
 4. 继续使用 append-only attempt、严格 completion artifact 合同和 60 秒 heartbeat。
 5. Stage01 全 terminal 前不得发布 active-v2 CoVarNet、LIANA、NicheNet 或 final audit。
+
+## 2026-08-16 07:00 capacity update
+
+- 最新精确组配额为 1,466,340,820/1,572,864,000 blocks，余 106,523,180 blocks，约 101.588 GiB；相较本日 03:37 的约 2.50 GiB 已释放约 99.1 GiB。
+- 文件系统整体约有 871 GiB available、inode 使用约 4%，但 Stage01 恢复仍由 group quota 约束。
+- 当前余量仍低于剩余 141 个样本的 129.2–156.9 GiB 外推，并低于 200 GiB 安全门槛约 98.412 GiB，因此 incident 状态保持 unresolved/resource-blocked。
+- 严格 completion 合同复核仍为 580/721，第 581 个样本无 completion marker；运行目录自 03:37 快照后无新文件，当前无 runner、CopyKAT 或恢复会话。
+- 本次没有提交恢复任务，也没有修改、覆盖或删除任何 attempt。

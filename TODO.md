@@ -25,3 +25,9 @@
 | SEC-001 | P1 | todo | push 前进行人工敏感信息审查 | REC-001 | 验证脚本通过且人工确认 diff 不含敏感路径/数据 | `docs/DATA_POLICY.md` |
 
 状态使用：`todo`、`in_progress`、`blocked`、`done`。已完成任务保留原行并链接证据。
+
+## 2026-08-16 07:00 执行门槛复核
+
+- `IMM-001`：允许 skip 的书面验收决定仍缺失，保持 blocked。
+- `CM-001`：group-quota 余量约 101.588 GiB，仍未达到表内 200 GiB 依赖，保持 blocked；不得仅因 `df` 可用空间充足而启动。
+- `DL-003`：未发现新 recovery；现有 partial 保留 failed，任务仍为 todo。

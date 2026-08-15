@@ -182,3 +182,12 @@ raw counts
 - Stage 13 仍停留在 attempt 01。11 个 `infercnv_status=skipped_insufficient_cells` 与最终验收 required-method 语义的冲突尚未解决，`reports/FINAL_DELIVERABLE_AUDIT.json` 仍未生成。
 - 因此状态继续为 `blocked_final_acceptance_policy_conflict`；不能把空间分支成功外推为四队列最终交付完成。
 - 下一步仍需先形成书面验收决定，再以新 attempt 重跑 Stage 13；不得覆盖或重算已经严格通过的 19-slice cell2location merge。
+
+## 2026-08-16 07:00 最新审计快照
+
+- 自 2026-08-12 快照后，运行根内没有新写入文件；进程、Slurm 和后台会话检查均未发现本任务活动实例。
+- Phase 5 的 19/19 个 `COMPLETED.json` 仍存在。merge audit 继续确认 71,398 spots、40 factors、missing=0、extra=0、finite fraction=1、negative=0、zero-sum=0；这些已通过结果不需要重算。
+- Phase 6 Stage 13 仍只有 `attempt_01`，其失败时间保持为 2026-08-06 21:09；`reports/FINAL_DELIVERABLE_AUDIT.json` 仍不存在。
+- 直接阻断没有变化：finalizer 将 11 个 `infercnv_status=skipped_insufficient_cells` 当作 required-method failure，而上游 GSE316195 malignancy audit 记录 `samples_with_method_failure=0`，且相应 CopyKAT 均成功。
+- 允许边界复核：尚未找到“参考不足 inferCNV skip 可作为允许终态”的书面决定，因此本次不修改状态映射、不重跑 Stage 13，也不把四队列任务标为 completed。
+- 下一步仍是先记录验收决定；若允许 skip，则在新 append-only attempt 中修正 finalizer 状态映射并生成通过的 final audit；若不允许，则先补充参考策略和敏感性分析。

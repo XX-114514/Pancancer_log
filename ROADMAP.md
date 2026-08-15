@@ -53,3 +53,8 @@
 - low-confidence、unresolved 和 ambiguous annotations 需要人工复核后才能作为发布版标签。
 - 外部验证必须继续使用冻结 mapper 和固定 CoVarNet 权重，避免在验证队列重新拟合造成信息泄漏。
 - 每个阶段的权威证据通过 `inventories/runs.tsv` 和正式 run record 链接，不在路线图复制完整日志。
+
+## 2026-08-16 07:00 依赖纠正快照
+
+- 上述 03:37 记录的约 2.50 GiB 是历史快照；最新精确 `USER002` group-quota 余量为约 101.588 GiB。该值仍低于剩余 CM Stage01 的 129–157 GiB 外推和 200 GiB 安全门槛，因此 P5/CM 状态仍为 `blocked`，恢复入口仍为零基索引 580 的新 append-only attempt。
+- P6/免疫治疗仍由 11 个 reference-insufficient inferCNV skip 的验收语义和缺失 final audit 阻断；P1/下载 retry v3 已终止，但 GSE201347 独立 recovery 与下载后 guardrail 复核仍待执行。
