@@ -1,0 +1,44 @@
+cancer_type	cnv_no_malignancy_detected	malignant	not_candidate	not_evaluable	uncertain
+ADENOCARCINOMA	993	2	13792	109	762
+ALK-positive/negative LUAD	803	659	11649	0	965
+Acral melanoma	58	4	3210	26	95
+Acute myeloid leukemia	45	2564	3395	210	1948
+Advanced non-small cell lung cancer	840	2510	12404	74	4096
+Basal cell carcinoma	0	3294	28650	0	8589
+Bladder cancer	639	63	18980	11	3031
+Breast cancer	22138	25194	49118	83	28409
+CRC	911	145	3433	78	935
+Cervical SCC/adenocarcinoma	624	0	3315	0	464
+Cervical cancer	31	2845	23505	82	3014
+Clear cell renal cell carcinoma	537	238	19618	134	850
+Colorectal cancer	7696	2611	24077	544	14106
+Endometrial carcinosarcoma	3373	33786	4682	0	16481
+Esophageal cancer	1037	337	6691	0	2099
+Gastric cancer	4368	2489	109226	373	3150
+Glioblastoma	2047	14763	25512	25	14148
+HCC	589	1178	38210	97	1080
+Head and neck squamous cell carcinoma	376	190	4376	10	43
+High-grade serous ovarian cancer	435	76	7042	3	388
+INVASIVE ADENOCARCINOMA	212	3637	22563	80	2443
+INVASIVE MUCINOUS ADENOCARCINOMA	0	15	559	0	5
+INVASIVE MUCINOUS CARCINOMA	595	0	1822	0	208
+Intrahepatic cholangiocarcinoma	580	3351	2918	4	2735
+Left/right CRC	77	248	2022	0	572
+Lung cancer	5975	2532	43912	128	2407
+Melanoma	271	27	4539	138	7
+Nasopharyngeal carcinoma	217	115	6679	28	243
+Non-small cell lung cancer	394	126	4120	27	599
+Osteosarcoma	7673	2689	6264	0	4218
+Pancreatic ductal adenocarcinoma	1505	250	22531	110	945
+Pancreatic neuroendocrine tumor	9213	2822	11279	1	9978
+Papillary thyroid carcinoma	133	3209	12071	26	12411
+Part-solid LUAD	585	65	6762	21	189
+Pituitary neuroendocrine tumor	311	2282	6502	22	329
+Pleural mesothelioma	1135	1528	6056	0	3116
+Prostate cancer	6317	5236	20402	68	11948
+Rectal adenocarcinoma	24468	1227	16813	0	3888
+Renal cell carcinoma	623	97	3990	0	2061
+SCLC	1505	1163	2973	0	6295
+Seminoma	14	7	1352	8	0
+Uveal melanoma	1543	1212	24322	0	4531
+ambiguous	0	0	262	0	0

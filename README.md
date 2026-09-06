@@ -1,6 +1,14 @@
 # PanCancer 项目进展与工作日志
 
 本仓库是 PanCancer 项目的轻量级、可审计记录系统，当前以 `Project_v3` 的泛癌单细胞转录组主线为主要范围。它记录当前状态、任务历史、方法、正式运行、技术决策及证据索引，是项目进展的权威入口，但不是分析数据仓库。
+## 2026-09-06 权威入口
+
+- 当前细胞身份/CNV 恶性参考：[V7 冻结 release](releases/annotation_v7_20260905/README.md)。
+- 当前论文通讯证据与 Prism 成图：[20260906 evidence chain](releases/communication_evidence_chain_20260906/README.md)。
+- Git 维护：[维护工作流](docs/GIT_MAINTENANCE.md)。
+- Prism 与 supplementary：[交付指南](docs/PRISM_SUPPLEMENTARY_GUIDE.md)。
+- 版本边界：[版本政策](docs/VERSION_POLICY.md)。
+
 
 ## 不存储的内容
 

@@ -1,3 +1,38 @@
+
+# 当前权威状态（2026-09-06）
+
+- 当前细胞注释与 CNV 恶性参考：V7，状态 `FROZEN_PROJECT_REFERENCE`。
+- 权威 run：`20260905_v7_cnv_rerun_freeze_v1`。
+- 细胞宇宙：4,676,787 cells、1,322 samples、54 GSE、43 cancers。
+- 严格大类可用：4,057,641（86.76%）；严格亚型可用：2,455,424（52.50%）。
+- exact Unknown/Ambiguous：129,843（2.78%）；非严格大类总计 619,146（13.24%）。
+- primary malignant：515,031；uncertain：484,919；candidate not evaluable：45,284。
+- inferCNVpy：938 success、384 explicit skips、0 failed。
+- Copykat_python：668 success、654 explicit skips、0 failed。
+- CNS 策略 44 samples 中 inferCNVpy/Copykat_python 成功 38/33；黑色素策略
+  62 samples 中成功 27/18；其余主要因单样本候选或参考不足。
+
+权威入口：
+
+- [V7 release](releases/annotation_v7_20260905/README.md)
+- [V7 run record](runs/20260905_v7_cnv_rerun_freeze.md)
+- [V7 method](methods/pancancer-5m-v7-annotation-cnv.md)
+
+论文证据链：
+
+- 2026-09-06 通讯—空间—临床证据链已形成报告、汇总表和 10 组 PDF/PNG 成图。
+- 该证据链复用 V5 CoVarNet/LIANA，不是 V7 重跑结果；新分析的身份/CNV 默认用 V7。
+- [Communication release](releases/communication_evidence_chain_20260906/README.md)
+
+Git 状态：
+
+- 继续维护已有 `Pancancer_log` 历史仓库，不在 TB 级分析父目录初始化第二个竞争仓库。
+- Git 仅保存轻量、已审查、可复现/可投稿内容；重型对象由逻辑路径和 SHA-256 管理。
+- 当前主机没有 Git LFS，单文件上限按 5 MiB 执行。
+
+---
+
+以下 2026-08 状态作为历史快照保留；涉及当前注释和 CNV 时以上述 V7 段落为准。
 # 当前状态
 
 - 最近更新：2026-08-08 06:16 +08:00

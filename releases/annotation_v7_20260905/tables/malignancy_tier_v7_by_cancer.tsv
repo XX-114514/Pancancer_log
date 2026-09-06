@@ -1,0 +1,44 @@
+cancer_type	cluster_supported_malignant	cnv_no_malignancy_detected	high_confidence_malignant	not_candidate	not_evaluable	sensitive_union_only	uncertain
+ADENOCARCINOMA	3621	967	170	93889	109	113	1469
+ALK-positive/negative LUAD	5399	803	4339	72800	0	337	4329
+Acral melanoma	329	58	11	26306	26	41	213
+Acute myeloid leukemia	2952	45	1212	10980	7180	1911	6343
+Advanced non-small cell lung cancer	11244	828	4548	36856	1041	2923	14454
+Basal cell carcinoma	3169	0	1020	39019	0	3481	8833
+Bladder cancer	6900	639	2628	74668	11	1059	6768
+Breast cancer	55353	22112	36131	184723	17711	15375	70966
+CRC	1199	908	951	37564	79	210	3154
+Cervical SCC/adenocarcinoma	536	612	1331	23164	0	546	1184
+Cervical cancer	5479	31	3836	55540	83	651	2397
+Clear cell renal cell carcinoma	1191	537	883	92750	3335	237	2129
+Colorectal cancer	20770	7611	23393	203403	5540	5442	38649
+Endometrial carcinosarcoma	28357	3371	10534	17620	0	2850	31296
+Esophageal cancer	6269	1037	10817	38440	0	735	3724
+Gastric cancer	5088	4288	3274	781910	373	2277	10879
+Glioblastoma	29513	2047	18764	154082	25	4561	24659
+HCC	1939	579	1619	172679	97	344	2932
+Head and neck squamous cell carcinoma	1778	374	2127	26596	10	122	2522
+High-grade serous ovarian cancer	857	432	2043	38646	3	24	811
+INVASIVE ADENOCARCINOMA	6201	212	3873	117872	80	1762	4217
+INVASIVE MUCINOUS ADENOCARCINOMA	657	0	1539	3492	0	87	485
+INVASIVE MUCINOUS CARCINOMA	0	595	39	10375	0	48	542
+Intrahepatic cholangiocarcinoma	1187	546	5518	17587	4	891	1981
+Left/right CRC	169	77	532	21479	0	52	800
+Lung cancer	12179	5949	11619	393176	129	920	4519
+Melanoma	261	271	0	32535	331	0	99
+Nasopharyngeal carcinoma	1004	217	695	80116	28	44	505
+Non-small cell lung cancer	483	394	315	19242	27	71	820
+Osteosarcoma	19132	7670	15187	29327	0	3453	27117
+Pancreatic ductal adenocarcinoma	2095	1504	2301	74872	110	457	2370
+Pancreatic neuroendocrine tumor	6197	9209	12759	45576	1	3318	13919
+Papillary thyroid carcinoma	9897	133	5207	109278	26	4418	14245
+Part-solid LUAD	993	581	608	40594	21	97	872
+Pituitary neuroendocrine tumor	2413	309	2510	25186	335	216	1618
+Pleural mesothelioma	11557	1109	11809	48733	0	951	5075
+Prostate cancer	7227	6311	11351	107167	6576	8279	32289
+Rectal adenocarcinoma	5437	24468	7763	58763	0	466	8273
+Renal cell carcinoma	2108	623	1326	15838	0	762	2020
+SCLC	8503	1451	10996	14078	1985	1694	4993
+Seminoma	79	14	0	12450	8	0	0
+Uveal melanoma	16971	1543	2552	59995	0	2801	13975
+ambiguous	0	0	288	1301	0	364	2425

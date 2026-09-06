@@ -1,0 +1,24 @@
+{
+  "status": "FROZEN_PROJECT_REFERENCE",
+  "freeze_version": "V7",
+  "annotation_schema": "pancancer_annotation_v7_cnv_rerun_20260905",
+  "run_id": "20260905_v7_cnv_rerun_freeze_v1",
+  "data_freeze_date": "2026-09-05",
+  "reference_designation_date": "2026-09-06",
+  "cell_universe": {
+    "n_cells": 4676787,
+    "n_samples": 1322,
+    "n_gse": 54,
+    "n_cancers": 43,
+    "index_sha256": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16"
+  },
+  "canonical_columns": {
+    "major_identity": "major_celltype_v7",
+    "fine_identity": "final_annotation_v7",
+    "identity_confidence": "annotation_confidence_v7",
+    "primary_malignancy": "malignancy_call_v7",
+    "malignancy_evidence_tier": "malignancy_tier_v7",
+    "display_label": "final_annotation_with_malignancy_v7"
+  },
+  "immutability": "append_only; biological or statistical changes require V8 or later"
+}

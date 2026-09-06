@@ -1,0 +1,8 @@
+malignancy_tier_v7	n_cells
+not_candidate	3520667
+uncertain	380870
+cluster_supported_malignant	306693
+high_confidence_malignant	238418
+cnv_no_malignancy_detected	110465
+sensitive_union_only	74390
+not_evaluable	45284

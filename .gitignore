@@ -71,3 +71,15 @@ slurm-*.out
 !inventories/*.csv
 !inventories/*.yaml
 !inventories/*.yml
+
+# Local-only source copies that still contain workstation-specific paths.
+# Their logical sources and hashes are recorded by each release.
+releases/annotation_v7_20260905/scripts/run_v7_pipeline_portable.sh
+releases/communication_evidence_chain_20260906/scripts/
+
+# Additional scientific and runtime formats kept outside ordinary Git.
+*.zarr/
+*.npz
+*.RData
+*.Rdata
+*.log

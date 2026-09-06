@@ -1,6 +1,15 @@
 # 项目路线图
 
 状态值：`completed`、`in_progress`、`blocked`、`planned`、`待确认`。完成状态必须有可检查证据。
+## 2026-09-06 路线更新
+
+- P4/P5 身份与 CNV：V7 已冻结并成为当前默认参考，进入 append-only 维护。
+- P7 发布治理：V7 与通讯证据链已形成轻量 Git releases。
+- 下一里程碑：在 V7 身份/CNV 上版本化重跑依赖身份的 CoVarNet/LIANA 分支，并与
+  当前 V5-derived downstream release 做差异审计。
+- 下一里程碑：建立 Prism panel-to-source 索引、补齐软件/环境摘要和期刊要求的
+  supplementary README。
+- 数据发布继续采用 Git 元数据/小表/图 + 外部重型对象哈希的双层结构。
 
 | 阶段 | 目标 | 输入 | 输出 | 依赖 | 完成标准 | 当前状态 |
 | --- | --- | --- | --- | --- | --- | --- |

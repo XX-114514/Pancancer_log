@@ -1,4 +1,14 @@
 # 可执行任务
+## 2026-09-06 新优先项
+
+- `REL-001`（done）：冻结并登记 V7 identity/CNV release。
+- `REL-002`（done）：登记通讯—空间—临床 evidence-chain release。
+- `REL-003`（todo）：在 V7 上重跑依赖身份的 CoVarNet/LIANA，并建立 V5-vs-V7
+  下游差异审计；完成前不得把当前通讯 release 称为 V7-derived。
+- `SUP-001`（todo）：为最终主图建立 `figure-panel-source.tsv`，记录每个 panel
+  的 release、源表、筛选、统计量、分母和脚本。
+- `SEC-002`（todo）：首次上传新增 releases 前，人工复核 private remote、diff、
+  路径脱敏、文件大小和数据治理许可。
 
 | ID | Priority | Status | Task | Dependency | Completion criterion | Related files |
 | --- | --- | --- | --- | --- | --- | --- |

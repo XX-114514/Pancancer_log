@@ -1,0 +1,3 @@
+release_id	release_date	scope	status	identity_version	downstream_version	entrypoint
+annotation_v7_20260905	2026-09-05	cell_identity_and_cnv	frozen_project_reference	V7	V7_CNV	releases/annotation_v7_20260905/README.md
+communication_evidence_chain_20260906	2026-09-06	communication_spatial_clinical	completed_snapshot	V5_input	V5_CoVarNet_LIANA	releases/communication_evidence_chain_20260906/README.md

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+bash scripts/validate_repository.sh
+bash scripts/validate_releases.sh

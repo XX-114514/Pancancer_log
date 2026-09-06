@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "all_dependencies_local": true,
+  "remote_dependency_hits": [],
+  "counts_shape": [
+    4676787,
+    10432
+  ],
+  "counts_sample_integer_nonnegative": true,
+  "gene_annotation_mapping": "10432/10432",
+  "infercnvpy_import": "success",
+  "copykat_python_import": "success",
+  "copykat_engine": "Copykat_python",
+  "copykat_commit": "c2390e8a46e21fb42aa06f05839900c0f12564c5"
+}

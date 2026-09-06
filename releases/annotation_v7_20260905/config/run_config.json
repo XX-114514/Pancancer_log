@@ -1,0 +1,94 @@
+{
+  "run_id": "20260905_v7_cnv_rerun_freeze_v1",
+  "annotation_schema": "pancancer_annotation_v7_cnv_rerun_20260905",
+  "counts_zarr": "runs/20260818_pancancer_5M_merge_prep/02_merge_new_cohort/objects/5M_merge_concat.zarr",
+  "v2_annotation_pickle": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260905_uncertainty_resolution_v1/checkpoints/annotation_uncertainty_resolution_v2.pkl.gz",
+  "v5_final_checkpoint": "runs/20260818_pancancer_5M_merge_prep/10_final_v5_malignancy_covarnet_liana/20260825_v5_final_v1/checkpoints/final_annotation_v6_identity_v5_malignancy_v3.pkl.gz",
+  "fixed_gene_annotation": "runs/20260818_pancancer_5M_merge_prep/08_malignancy_cancer_aware/20260824_refined_major_v1/config/hg38_gencode_v27_hgnc_symbol_fixed.txt",
+  "legacy_engine_run": "runs/20260818_pancancer_5M_merge_prep/08_malignancy_cancer_aware/20260824_refined_major_v1",
+  "index_hash_sha256": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16",
+  "expected_cells": 4676787,
+  "expected_samples": 1322,
+  "expected_genes": 10432,
+  "min_candidate_cells": 30,
+  "min_reference_cells": 50,
+  "max_reference_cells": 5000,
+  "min_copykat_cells": 200,
+  "infercnv_reference_quantile": 0.99,
+  "infercnv_window_size": 250,
+  "infercnv_workers": 8,
+  "copykat": {
+    "engine": "Copykat_python",
+    "engine_version": "1.0.0",
+    "expected_commit": "c2390e8a46e21fb42aa06f05839900c0f12564c5",
+    "repo_dir": "runs/20260725_120105_unified_pancancer_covarnet/09_malignancy_communication/20260731_copykat_infercnv_intersection_v1/resources/Copykat_python_c2390e8a46e21fb42aa06f05839900c0f12564c5",
+    "python": "runs/20260725_120105_unified_pancancer_covarnet/09_malignancy_communication/20260731_copykat_infercnv_intersection_v1/resources/copykat_python_env/bin/python3",
+    "cores_per_sample": 1,
+    "workers": 8
+  },
+  "artifact_exclude": ["doublet_likely", "ambient_or_doublet_review"],
+  "uncertain_major_values": [
+    "Unknown", "Ambiguous", "Myeloid_boundary", "T_NK_ILC_boundary",
+    "B_Plasma_boundary", "Related_lineage_boundary", "Stromal_boundary",
+    "Hematopoietic_differentiation_boundary"
+  ],
+  "policies": {
+    "myeloid_malignancy": {
+      "patterns": ["acute myeloid", "leukemia"],
+      "candidate_expected": ["HSPC", "Monocyte", "Macrophage", "Dendritic", "Granulocyte", "Erythroid"],
+      "candidate_context": [],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Mast"],
+      "reference_fallback": ["Endothelial", "Fibroblast"]
+    },
+    "melanocytic_malignancy": {
+      "patterns": ["melanoma"],
+      "candidate_expected": ["Melanocytic", "Neural"],
+      "candidate_context": ["Epithelial"],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Monocyte", "Macrophage", "Dendritic", "Mast", "Granulocyte"],
+      "reference_fallback": ["Endothelial", "Fibroblast"]
+    },
+    "cns_malignancy": {
+      "patterns": ["glioblastoma"],
+      "candidate_expected": ["Neural"],
+      "candidate_context": ["Epithelial"],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Monocyte", "Macrophage", "Dendritic", "Mast", "Granulocyte"],
+      "reference_fallback": ["Endothelial", "Fibroblast"]
+    },
+    "neuroendocrine_malignancy": {
+      "patterns": ["neuroendocrine", "sclc"],
+      "candidate_expected": ["Epithelial", "Neural"],
+      "candidate_context": [],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Monocyte", "Macrophage", "Dendritic", "Mast", "Granulocyte"],
+      "reference_fallback": ["Endothelial", "Fibroblast"]
+    },
+    "mesenchymal_malignancy": {
+      "patterns": ["osteosarcoma"],
+      "candidate_expected": ["Fibroblast"],
+      "candidate_context": ["Epithelial"],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Monocyte", "Macrophage", "Dendritic", "Mast", "Granulocyte"],
+      "reference_fallback": ["Endothelial"]
+    },
+    "mixed_mesenchymal_malignancy": {
+      "patterns": ["mesothelioma", "carcinosarcoma"],
+      "candidate_expected": ["Epithelial", "Fibroblast"],
+      "candidate_context": [],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Monocyte", "Macrophage", "Dendritic", "Mast", "Granulocyte"],
+      "reference_fallback": ["Endothelial"]
+    },
+    "germ_cell_malignancy": {
+      "patterns": ["seminoma"],
+      "candidate_expected": ["Epithelial", "HSPC"],
+      "candidate_context": [],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Monocyte", "Macrophage", "Dendritic", "Mast", "Granulocyte"],
+      "reference_fallback": ["Endothelial", "Fibroblast"]
+    },
+    "epithelial_solid_default": {
+      "patterns": [],
+      "candidate_expected": ["Epithelial"],
+      "candidate_context": [],
+      "reference_primary": ["Tcell", "Bcell", "NK", "ILC", "Plasma", "Monocyte", "Macrophage", "Dendritic", "Mast", "Granulocyte"],
+      "reference_fallback": ["Endothelial", "Fibroblast"]
+    }
+  }
+}
+
