@@ -1,6 +1,20 @@
 # 重要变更记录
 
 本文件只记录会影响项目理解、方法、范围或复现的重要变化。日常细节见 `logs/`。
+## 2026-09-12
+
+- 新增 V8 full-metadata software candidate 的轻量 release/run/index：只记录外部逻辑路径、
+  文件大小、SHA-256 和状态，没有复制 251,914,833-byte candidate pickle、细胞级对象或完整日志。
+- 直接重算候选、run summary、statistics、审计报告、scATOMIC salvage、run policy 和 scalable
+  pilot replay attestation 的 SHA-256；候选和 summary 分别匹配 `23fb…69567c` 与 `4dfa…d998f`。
+- 明确候选 `NOT_FROZEN`：V7 仍是默认项目参考；软件合同 PASS 不等于独立准确率、classifier
+  execution、真值验证或生物学完成，且正式 downstream mutation 未获授权。
+- 记录 scATOMIC retry2 的只读 postprocess salvage 为 supporting evidence；原 retry2 失败历史
+  保留，salvage 不重跑算法、不能作为扩展或准确率结论。
+- 索引最终可复现的 scATOMIC supportive audit v2 JSON。外部全量审计报告在索引期间追加 v2
+  correction 后重新 hash；该 correction 不改变 candidate、summary 或 statistics 的校验值，
+  也不改变 `NOT_FROZEN` 边界。
+
 ## 2026-09-06
 
 - 将 V7 冻结为当前细胞身份与 CNV 恶性项目参考：4,676,787 cells、1,322 samples、

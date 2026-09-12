@@ -8,6 +8,9 @@ are represented by logical identifiers, sizes and SHA-256 checksums.
 Current releases:
 
 - `annotation_v7_20260905`: frozen 5M-cell annotation and CNV reference.
+- `annotation_v8_development_20260912`: `NOT_FROZEN` full-metadata software
+  candidate index; it preserves V7 as the default reference and is not a biological
+  release.
 - `communication_evidence_chain_20260906`: manuscript-facing communication,
   spatial and clinical evidence summaries and figures.
 

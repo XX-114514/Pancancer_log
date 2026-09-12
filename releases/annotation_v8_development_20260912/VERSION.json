@@ -1,0 +1,44 @@
+{
+  "release_id": "annotation_v8_development_20260912",
+  "release_date": "2026-09-12",
+  "status": "NOT_FROZEN",
+  "release_type": "full_metadata_software_candidate_index",
+  "candidate_run_id": "20260912_v8_full_metadata_candidate_v7_rerun2",
+  "backbone_reference": {
+    "version": "V7",
+    "status": "FROZEN_PROJECT_REFERENCE",
+    "checkpoint_sha256": "e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e",
+    "cell_index_sha256": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16"
+  },
+  "candidate": {
+    "status": "PASS_FULL_METADATA_SOFTWARE_CANDIDATE_V7",
+    "sha256": "23fbf7e21768687bd4df89558462db04be710afd2b9a5a7c37db70e6ed69567c",
+    "summary_sha256": "4dfa482c82adcc28356d0aecbc1f1782be395be3f812b1717e89798d678d998f",
+    "n_cells": 4676787,
+    "n_samples": 1322,
+    "n_gse": 54,
+    "n_cancers": 43,
+    "v7_field_contracts_passed": 128
+  },
+  "scope_limits": {
+    "full_candidate_only": true,
+    "full_expansion_allowed": false,
+    "default_project_reference": "V7",
+    "automatic_reference_promotion": false,
+    "formal_downstream_mutation_allowed": false,
+    "independent_accuracy_claimed": false,
+    "new_classifier_execution_claimed": false,
+    "coverage_is_accuracy": false
+  },
+  "gate_evidence": {
+    "run_policy_v4_sha256": "ae3df80b5a963ae1bc3bc21cd73b3d711cc5edea19c98dda12a93956e2049462",
+    "scalable_pilot_replay_attestation_sha256": "2d676686d640e0067688c4ac30298df26986fda1d94073ec43e4230a8616031b",
+    "scatomic_salvage_manifest_sha256": "adcf8cc27d9fec83972eb83cd07fc8dafa507ca3be0d0296d3ba546100c135a5"
+  },
+  "supporting_evidence": {
+    "full_candidate_audit_report_sha256": "2a5f868eba8071e71231567a5ad70b9b166bdf17de1e6e6d9b2557ebf2108cc5",
+    "scatomic_supportive_audit_v2_sha256": "6f4c22ae1cf83fc4b318872e6f9110caea9057d2c50cdf2cd123244b8fd22034"
+  },
+  "artifact_manifest": "external_artifacts.tsv",
+  "immutability": "append_only; a biological V8 reference requires a new validated promotion decision and must not overwrite V7 or downstream history"
+}

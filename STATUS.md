@@ -1,8 +1,19 @@
 
-# 当前权威状态（2026-09-06）
+# 当前权威状态（2026-09-12）
 
 - 当前细胞注释与 CNV 恶性参考：V7，状态 `FROZEN_PROJECT_REFERENCE`。
 - 权威 run：`20260905_v7_cnv_rerun_freeze_v1`。
+- V8 full-metadata software candidate 的 rerun2 已通过完整性审计，状态
+  `PASS_FULL_METADATA_SOFTWARE_CANDIDATE_V7` / `NOT_FROZEN`；它保持 4,676,787
+  cells、1,322 samples、54 GSE、43 cancers，以及 128 个冻结 V7 字段合同和 V7
+  cell-index hash。该候选仍以 V7 为默认项目参考，不自动晋升，也不允许正式 downstream
+  mutation。
+- 上述 V8 结论仅为字段、schema、hash、round-trip 和内部一致性的软件候选验证；它不是
+  独立准确率、真值、classifier execution 或生物学完成版结论。V7 及既有 V5/V7-derived
+  downstream 均未被本候选覆盖。
+- scATOMIC retry2 supporting salvage 已记录为 `PASS` 的只读后处理：没有重跑算法、联网、
+  安装、覆盖或患者合并，且不能作为扩展资源上界或准确率证据。其最终可复现 supportive audit v2
+  为 `PASS_SUPPORTIVE_ONLY`、scope-unverified，且不反序列化 candidate pickle。
 - 细胞宇宙：4,676,787 cells、1,322 samples、54 GSE、43 cancers。
 - 严格大类可用：4,057,641（86.76%）；严格亚型可用：2,455,424（52.50%）。
 - exact Unknown/Ambiguous：129,843（2.78%）；非严格大类总计 619,146（13.24%）。
@@ -17,6 +28,8 @@
 - [V7 release](releases/annotation_v7_20260905/README.md)
 - [V7 run record](runs/20260905_v7_cnv_rerun_freeze.md)
 - [V7 method](methods/pancancer-5m-v7-annotation-cnv.md)
+- [V8 development candidate index](releases/annotation_v8_development_20260912/README.md)
+- [V8 candidate run record](runs/20260912_v8_full_metadata_candidate_v7_rerun2.md)
 
 论文证据链：
 
