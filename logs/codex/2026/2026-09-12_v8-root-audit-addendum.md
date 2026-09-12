@@ -1,7 +1,7 @@
 # Codex Task: v8-root-audit-addendum
 
 - Date: 2026-09-12
-- Status: validated; local commit pending
+- Status: follow-up current-status update validated; second local commit pending; first addendum committed locally as `1415bb7`
 - Related project stage: P4/P7 release governance; V8 development candidate only
 - Related run ID: `20260912_v8_full_metadata_candidate_v7_rerun2`
 - Requested by: user
@@ -14,6 +14,14 @@ and independent-reference artifacts. Preserve the existing V8 release manifest;
 state the development-only root gate, V7 default, 167 recorded tests, blocked
 independent reference, and absence of a biological freeze. Validate and commit
 locally without pushing.
+
+## Follow-up scope
+
+After the first addendum commit, the user explicitly requested the latest project
+progress be reflected in the current authority documents. This follow-up updates
+`STATUS.md`, `TODO.md`, `ROADMAP.md`, and `CHANGELOG.md` with the observed root
+gate, V7 default, recorded 167-test result, blocked independent reference, and
+gated next action. It does not alter the original V8 release manifest.
 
 ## Initial state
 
@@ -34,6 +42,8 @@ locally without pushing.
    leaving the original V8 release manifest unchanged.
 4. Run repository, release, external-manifest, and Git diff validation; review and
    commit only the scoped records files without pushing.
+5. Update current status/planning/change records after the first addendum commit,
+   validate the additive documentation update, and create a second local commit.
 
 ## Files inspected
 
@@ -92,6 +102,9 @@ git diff --check
 - Added five corresponding provenance rows to `inventories/artifacts.tsv`.
 - Kept the existing V8 release `README.md`, `VERSION.json`, and
   `external_artifacts.tsv` unchanged.
+- Completed the follow-up current-authority update in `STATUS.md`, `TODO.md`,
+  `ROADMAP.md`, and `CHANGELOG.md`; it remains additive and does not modify the
+  original V8 release manifest.
 
 ## Validation
 
@@ -100,6 +113,10 @@ git diff --check
 - Read-only external-manifest validator: PASS; all five indexed paths, byte sizes,
   and SHA-256 values matched the Project_v3 files.
 - `git diff --check`: PASS. The original V8 release manifest was not modified.
+- Follow-up `bash scripts/validate_repository.sh`: PASS, 0 errors and 0 warnings.
+- Follow-up `bash scripts/validate_releases.sh`: PASS, 0 release-validation errors.
+- Follow-up external-manifest validator: PASS, all five artifacts still match.
+- Follow-up `git diff --check`: PASS; release manifest/README/VERSION are unchanged.
 
 ## Failed attempts
 
@@ -113,10 +130,10 @@ git diff --check
 
 ## Recommended next action
 
-- Create the scoped local commit; do not push.
+- Create the second local commit for the scoped current-status update; do not push.
 
 ## Proposed commit message
 
 ```text
-docs: add V8 root-audit provenance addendum
+docs: refresh V8 root-audit project status
 ```

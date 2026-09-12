@@ -5,6 +5,10 @@
 
 - 新增 V8 full-metadata software candidate 的轻量 release/run/index：只记录外部逻辑路径、
   文件大小、SHA-256 和状态，没有复制 251,914,833-byte candidate pickle、细胞级对象或完整日志。
+- 追加 V8 root-audit addendum：root gate 为
+  `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`，外部 gate 记录 167 项 pytest 通过，V7
+  继续为默认参考；独立 scANVI reference 保持
+  `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`，故未形成 biological freeze。
 - 直接重算候选、run summary、statistics、审计报告、scATOMIC salvage、run policy 和 scalable
   pilot replay attestation 的 SHA-256；候选和 summary 分别匹配 `23fb…69567c` 与 `4dfa…d998f`。
 - 明确候选 `NOT_FROZEN`：V7 仍是默认项目参考；软件合同 PASS 不等于独立准确率、classifier

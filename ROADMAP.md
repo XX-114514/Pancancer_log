@@ -5,8 +5,14 @@
 
 - V8 rerun2 已形成全量元数据软件候选及外部 hash/状态索引；其完整性、schema、round-trip 和
   128 个 V7 字段合同均为 `PASS`，但 release status 为 `NOT_FROZEN`。
+- 最新 root audit 记录 `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 default
+  与外部记录的 `pytest_passed: 167`；这些是软件候选门控证据，而非 biological freeze 或
+  独立准确率结论。
 - V7 继续是默认 identity/CNV 参考。该候选不代表独立准确率、classifier 执行、真值验证或
   生物学完成，且 policy 明确禁止自动参考晋升和正式 downstream mutation。
+- 独立 scANVI reference 仍为 `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`。下一步仅在明确
+  授权安装或提供可审计 client 后，先进行固定 Census 版本的前台 metadata-only 查询并审查
+  source/donor/GEO、ontology 与 license；解除该门控前不得训练、mapping 或主张独立性能。
 - 下一里程碑是在新的版本化验证 run 中完成独立生物学证据和下游影响审计；不能以本软件候选
   覆盖 V7 或已有 downstream 历史。
 
@@ -36,8 +42,10 @@
 - P1：24-GSE `Download_now` initial run 保留 4 verified/118 failed 的失败证据；141-task retry v3 已结束，127 verified、7 skipped_verified、6 unavailable_upstream、1 failed。GSE201347 partial 仍需独立 recovery attempt。
 - P3：31 个 GSE、1,963,745 个细胞的全量对象完成 Harmony、BBKNN、scVI、CellTypist 和 scIB 评价。
 - P4：17 major lineages、136 lineage clusters、106 final annotations，最终审计 `PASS`。
-- P4/P7：V8 full-metadata rerun2 仅完成 `NOT_FROZEN` software-candidate 合同验证；它保留
-  V7 作为默认参考，不能计作 P4 生物学标签升级或 P7 正式 release 完成。
+- P4/P7：V8 full-metadata rerun2/root audit 为
+  `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`，外部记录 167 项 pytest 通过；它保留
+  V7 作为默认参考，独立 reference 仍 `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`，不能计作
+  P4 生物学标签升级或 P7 正式 release 完成。
 - P5：主 CoVarNet 发现分支完成固定 `K=9`；恶性/通讯 v2 Stage 01 严格完成 580/721。recovery `20260812_124600_cm_stage01_from_0462` 在第 581 个样本因组配额耗尽终止；当前约 2.50 GiB 余量远低于剩余 Stage01 约 129–157 GiB 的估算，至少恢复 200 GiB 组配额余量后才从零基索引 580 新建 attempt；Stage 02–08 未开始。
 - P6：旧三个固定模块免疫治疗投影完成；新的四队列整合已完成 19/19 cell2location 与 71,398-spot 严格 merge，但截至 2026-08-12 无新 Stage 13 attempt，最终验收仍因 11 个 reference-insufficient inferCNV skip 的状态策略冲突而阻断。
 - P7：三个 extension 均已建立正式运行记录；下载 retry v3 已生成 final summary，免疫与 CM 的最终 audit 仍未齐全，远程同步仍受 GitHub 认证阻塞。

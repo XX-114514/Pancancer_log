@@ -6,9 +6,14 @@
 - `REL-003`（todo）：在 V7 上重跑依赖身份的 CoVarNet/LIANA，并建立 V5-vs-V7
   下游差异审计；完成前不得把当前通讯 release 称为 V7-derived。
 - `REL-004`（done）：登记 V8 full-metadata software candidate 的 rerun2、策略门控和
-  外部产物 hash；该索引明确保持 V7 默认和 `NOT_FROZEN` 边界。
-- `V8-001`（todo）：在独立真值/参考、准确率评估、classifier 或正交证据实际完成并审查后，
-  决定是否建立新的版本化生物学验证 run；在此之前不得把软件候选晋升为项目参考或改写 downstream。
+  外部产物 hash；root audit 进一步记录
+  `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 默认和外部记录的 167 项 pytest
+  通过；该索引不构成 biological freeze。
+- `V8-001`（todo）：独立 reference 当前为
+  `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`。仅在明确授权安装或提供可审计 Census client
+  后，先执行固定版本的前台 metadata-only 查询与 source/donor/GEO、ontology、license
+  审查；随后才可完成独立真值/参考、准确率、classifier/正交证据和下游影响审计，并决定是否
+  建立新的版本化生物学验证 run。在此之前不得把软件候选晋升为项目参考或改写 downstream。
 - `SUP-001`（todo）：为最终主图建立 `figure-panel-source.tsv`，记录每个 panel
   的 release、源表、筛选、统计量、分母和脚本。
 - `SEC-002`（todo）：首次上传新增 releases 前，人工复核 private remote、diff、
@@ -16,8 +21,8 @@
 
 | ID | Priority | Status | Task | Dependency | Completion criterion | Related files |
 | --- | --- | --- | --- | --- | --- | --- |
-| REL-004 | P0 | done | 登记 V8 full-metadata software candidate 及外部 checksum index | rerun2 summary、statistics、policy 与 attestation 可读取 | release/run/index 记录哈希和 `NOT_FROZEN` 边界，V7 默认未变 | `releases/annotation_v8_development_20260912/README.md` |
-| V8-001 | P0 | todo | 为 V8 候选建立独立生物学验证与晋升决策 | 独立真值/参考、实际 classifier 或正交证据、下游影响审计 | 新版本化验证 run 明确区分准确率、软件合同和生物学结论；任何晋升均有审查证据 | `runs/20260912_v8_full_metadata_candidate_v7_rerun2.md` |
+| REL-004 | P0 | done | 登记 V8 full-metadata software candidate、root gate 与外部 checksum index | rerun2 summary、statistics、policy、attestation 与 root-audit evidence 可读取 | `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 默认和外部记录 167 pytest 通过均已索引；未形成 biological freeze | `releases/annotation_v8_development_20260912/ROOT_AUDIT_ADDENDUM_20260912.md` |
+| V8-001 | P0 | todo | 为 V8 候选建立独立生物学验证与晋升决策 | `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT` 解除；独立真值/参考、实际 classifier 或正交证据、下游影响审计 | 先完成固定 Census metadata-only 与 source/donor/GEO、ontology、license 审查；新版本化验证 run 明确区分准确率、软件合同和生物学结论；任何晋升均有审查证据 | `releases/annotation_v8_development_20260912/ROOT_AUDIT_ADDENDUM_20260912.md` |
 | REC-001 | P0 | blocked | 核验 GitHub private 远程并完成普通 push | 服务器 GitHub 认证 | `git remote -v` 指向确认的 private 仓库，普通 push 成功 | `docs/DATA_POLICY.md` |
 | REC-002 | P0 | done | 审计并同步统一 CoVarNet 运行的处理、参数和日志索引 | 权威运行目录可读 | 正式 run record、状态、方法、清单、Codex log 和 incident 均通过仓库验证 | `runs/20260725_120105_unified_pancancer_covarnet.md` |
 | MON-001 | P0 | in_progress | 监控三个 active extension 并维护可审计快照 | 三个运行目录和日志可读 | 每次状态变化更新 run record/Codex log；不得以进程存在代替产物验证 | `STATUS.md` |

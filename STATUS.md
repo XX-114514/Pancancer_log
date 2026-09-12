@@ -8,9 +8,17 @@
   cells、1,322 samples、54 GSE、43 cancers，以及 128 个冻结 V7 字段合同和 V7
   cell-index hash。该候选仍以 V7 为默认项目参考，不自动晋升，也不允许正式 downstream
   mutation。
+- V8 root audit 与机器可读 release gate 记录
+  `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 default 和
+  `pytest_passed: 167`。该 167 项测试是外部 root gate 所记录的结果；本记录仓库只
+  复核了其外部产物路径、大小和 SHA-256，并未重跑 Project_v3 测试。
+- 独立 scANVI reference 仍为 `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`：尚无
+  reference mapping、模型训练或预测。仅在明确授权安装或提供可审计 client 后，下一门控
+  动作才是前台、固定 Census 版本的 metadata-only 查询，以及 source/donor/GEO、ontology
+  和 license 审查；该阻断解除前不得形成独立真值或性能结论。
 - 上述 V8 结论仅为字段、schema、hash、round-trip 和内部一致性的软件候选验证；它不是
   独立准确率、真值、classifier execution 或生物学完成版结论。V7 及既有 V5/V7-derived
-  downstream 均未被本候选覆盖。
+  downstream 均未被本候选覆盖，且没有形成 biological freeze。
 - scATOMIC retry2 supporting salvage 已记录为 `PASS` 的只读后处理：没有重跑算法、联网、
   安装、覆盖或患者合并，且不能作为扩展资源上界或准确率证据。其最终可复现 supportive audit v2
   为 `PASS_SUPPORTIVE_ONLY`、scope-unverified，且不反序列化 candidate pickle。
@@ -29,6 +37,7 @@
 - [V7 run record](runs/20260905_v7_cnv_rerun_freeze.md)
 - [V7 method](methods/pancancer-5m-v7-annotation-cnv.md)
 - [V8 development candidate index](releases/annotation_v8_development_20260912/README.md)
+- [V8 root-audit addendum](releases/annotation_v8_development_20260912/ROOT_AUDIT_ADDENDUM_20260912.md)
 - [V8 candidate run record](runs/20260912_v8_full_metadata_candidate_v7_rerun2.md)
 
 论文证据链：
