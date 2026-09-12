@@ -1,6 +1,10 @@
 # 可执行任务
 ## 2026-09-06 新优先项
 
+- `V8-002`（in_progress）：Myeloid/DC review-only V3 已完成 2 GSE、4 samples 的
+  fail-closed pilot；先冻结 cluster 接受/退回规则，再运行第三 GSE，重点验证 cDC2、pDC、
+  SPP1/TREM2 与 unresolved parent fallback。完成 held-out benchmark 和预注册门控前不得写回 V7。
+
 - `REL-001`（done）：冻结并登记 V7 identity/CNV release。
 - `REL-002`（done）：登记通讯—空间—临床 evidence-chain release。
 - `REL-003`（todo）：在 V7 上重跑依赖身份的 CoVarNet/LIANA，并建立 V5-vs-V7
@@ -9,11 +13,11 @@
   外部产物 hash；root audit 进一步记录
   `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 默认和外部记录的 167 项 pytest
   通过；该索引不构成 biological freeze。
-- `V8-001`（todo）：独立 reference 当前为
-  `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`。仅在明确授权安装或提供可审计 Census client
-  后，先执行固定版本的前台 metadata-only 查询与 source/donor/GEO、ontology、license
-  审查；随后才可完成独立真值/参考、准确率、classifier/正交证据和下游影响审计，并决定是否
-  建立新的版本化生物学验证 run。在此之前不得把软件候选晋升为项目参考或改写 downstream。
+- `V8-001`（blocked）：独立 reference 当前为
+  `BLOCKED_NO_USABLE_PINNED_CLIENT_AFTER_BINARY_RETRY`。隔离安装和唯一官方 PyPI
+  binary-only retry 的失败日志已保存；获得固定 client wheel/cache 或稳定官方连接后，先执行
+  metadata-only source/donor/GEO、ontology、license 审查，再进入独立参考与 classifier。
+  在此之前不得把软件候选晋升为项目参考或改写 downstream。
 - `SUP-001`（todo）：为最终主图建立 `figure-panel-source.tsv`，记录每个 panel
   的 release、源表、筛选、统计量、分母和脚本。
 - `SEC-002`（todo）：首次上传新增 releases 前，人工复核 private remote、diff、
@@ -22,8 +26,8 @@
 | ID | Priority | Status | Task | Dependency | Completion criterion | Related files |
 | --- | --- | --- | --- | --- | --- | --- |
 | REL-004 | P0 | done | 登记 V8 full-metadata software candidate、root gate 与外部 checksum index | rerun2 summary、statistics、policy、attestation 与 root-audit evidence 可读取 | `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 默认和外部记录 167 pytest 通过均已索引；未形成 biological freeze | `releases/annotation_v8_development_20260912/ROOT_AUDIT_ADDENDUM_20260912.md` |
-| V8-001 | P0 | todo | 为 V8 候选建立独立生物学验证与晋升决策 | `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT` 解除；独立真值/参考、实际 classifier 或正交证据、下游影响审计 | 先完成固定 Census metadata-only 与 source/donor/GEO、ontology、license 审查；新版本化验证 run 明确区分准确率、软件合同和生物学结论；任何晋升均有审查证据 | `releases/annotation_v8_development_20260912/ROOT_AUDIT_ADDENDUM_20260912.md` |
-| REC-001 | P0 | blocked | 核验 GitHub private 远程并完成普通 push | 服务器 GitHub 认证 | `git remote -v` 指向确认的 private 仓库，普通 push 成功 | `docs/DATA_POLICY.md` |
+| V8-001 | P0 | blocked | 为 V8 候选建立独立生物学验证与晋升决策 | 获得可用的固定 Census client wheel/cache 或稳定官方连接；独立真值/参考、实际 classifier 或正交证据、下游影响审计 | 完成 metadata-only source/donor/GEO、ontology、license 审查；新版本化验证 run 明确区分准确率、软件合同和生物学结论；任何晋升均有审查证据 | `runs/20260912_v8_myeloid_dc_review_pilot.md` |
+| REC-001 | P0 | done | 核验 GitHub private 远程并完成普通 push | 服务器 GitHub SSH identity | 已通过显式 identity 普通 push，并核对远端 `main` 与本地提交一致 | `logs/codex/2026/2026-09-12_v8-execution-and-cross-gse-pilot.md` |
 | REC-002 | P0 | done | 审计并同步统一 CoVarNet 运行的处理、参数和日志索引 | 权威运行目录可读 | 正式 run record、状态、方法、清单、Codex log 和 incident 均通过仓库验证 | `runs/20260725_120105_unified_pancancer_covarnet.md` |
 | MON-001 | P0 | in_progress | 监控三个 active extension 并维护可审计快照 | 三个运行目录和日志可读 | 每次状态变化更新 run record/Codex log；不得以进程存在代替产物验证 | `STATUS.md` |
 | IMM-001 | P0 | blocked | 完成四队列免疫治疗整合与最终验收 | 统一 11 个 inferCNV reference-insufficient skip 的验收语义 | 保留 19/19、71,398 spots 严格 merge；新 Stage 13 attempt 生成并通过 `FINAL_DELIVERABLE_AUDIT.json` | `runs/20260803_immunotherapy_4cohort_analysis.md` |

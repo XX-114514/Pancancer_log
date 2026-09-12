@@ -1,6 +1,29 @@
 
 # 当前权威状态（2026-09-12）
 
+## V8 实际执行更新（2026-09-12）
+
+- 已完成 Myeloid/DC review-only pilot 的 V1–V3 迭代。V1 因 marker-only universe
+  混入 epithelial/stromal/cycling cells 被否决；V2 因错误回退到 V5 uncertainty 对象且曾有
+  fail-open 汇总缺陷被否决；V3 直接以冻结 V7 obs-only 对象界定候选宇宙，并采用 fail-closed
+  验证。
+- V3 已在 2 个 GSE、4 个样本上完成：GSE161529 两个样本与 GSE131907 的
+  EFFUSION_12、NS_19；合计 22 个 review clusters、8,997 个 cluster-level cell counts。
+  `candidate_monocyte_FCN1`（4/4 samples）与 `candidate_macrophage_C1QC`
+  （2 GSE、2 samples）出现跨 GSE 复现；该结果不是 held-out accuracy，也不写回 V7。
+- GSE131907 adapter 的两张逐细胞 label 表及合并表重跑前后 SHA-256 完全一致；V7 输入
+  SHA-256 为 `e5b68d7e5f127bcdcdadc3aaa94a9bce027ec032e6b82e68e5847ea5ccf7b38e`。
+- scANVI/Census 隔离运行环境已固定到 Python 3.11.14、`cellxgene-census==1.17.0`；默认镜像
+  因依赖解析到 NumPy source build 失败，唯一一次官方 PyPI binary-only retry 因 TLS
+  `UNEXPECTED_EOF_WHILE_READING` 失败。状态更新为
+  `BLOCKED_NO_USABLE_PINNED_CLIENT_AFTER_BINARY_RETRY`；未修改既有 conda 环境、未读取
+  Census expression、未训练或预测。
+- GitHub SSH 已通过显式 `id_ed25519` 验证；`main` 已成功推送并核对远端提交。`REC-001`
+  不再是认证阻断。
+- V7 仍是 conservative backbone；以上工作均为 V8 development/review-only 证据，不构成
+  biological freeze，不覆盖正式 downstream。
+
+
 - 当前细胞注释与 CNV 恶性参考：V7，状态 `FROZEN_PROJECT_REFERENCE`。
 - 权威 run：`20260905_v7_cnv_rerun_freeze_v1`。
 - V8 full-metadata software candidate 的 rerun2 已通过完整性审计，状态
@@ -12,9 +35,10 @@
   `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 default 和
   `pytest_passed: 167`。该 167 项测试是外部 root gate 所记录的结果；本记录仓库只
   复核了其外部产物路径、大小和 SHA-256，并未重跑 Project_v3 测试。
-- 独立 scANVI reference 仍为 `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`：尚无
-  reference mapping、模型训练或预测。仅在明确授权安装或提供可审计 client 后，下一门控
-  动作才是前台、固定 Census 版本的 metadata-only 查询，以及 source/donor/GEO、ontology
+- 独立 scANVI reference 状态为
+  `BLOCKED_NO_USABLE_PINNED_CLIENT_AFTER_BINARY_RETRY`：隔离安装与唯一官方 PyPI
+  binary-only retry 均有日志，尚无 reference mapping、模型训练或预测。仅在获得可用的固定
+  client wheel/cache 或稳定官方连接后，才继续 metadata-only source/donor/GEO、ontology
   和 license 审查；该阻断解除前不得形成独立真值或性能结论。
 - 上述 V8 结论仅为字段、schema、hash、round-trip 和内部一致性的软件候选验证；它不是
   独立准确率、真值、classifier execution 或生物学完成版结论。V7 及既有 V5/V7-derived

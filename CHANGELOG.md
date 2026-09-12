@@ -3,6 +3,17 @@
 本文件只记录会影响项目理解、方法、范围或复现的重要变化。日常细节见 `logs/`。
 ## 2026-09-12
 
+- 完成 V7-scoped Myeloid/DC V3 pilot：2 GSE、4 samples、22 review clusters；
+  FCN1 monocyte 与 C1QC macrophage candidate 获得跨 GSE 复现，但保持 review-only。
+- 新增 GSE131907 V3 runtime adapter、跨 GSE机器校验与可重复性检查；两张 label 表和合并表
+  重跑前后 SHA-256 一致。
+- 记录 V1 marker-only contamination 与 V2 V5-fallback/fail-open 缺陷，明确二者不得作为
+  后续标签证据。
+- 固定 Census client 隔离安装尝试及唯一 binary-only retry；因 TLS 失败更新为
+  `BLOCKED_NO_USABLE_PINNED_CLIENT_AFTER_BINARY_RETRY`，未污染项目环境。
+- GitHub SSH 认证与普通 push 已成功，项目记录库恢复实时同步。
+
+
 - 新增 V8 full-metadata software candidate 的轻量 release/run/index：只记录外部逻辑路径、
   文件大小、SHA-256 和状态，没有复制 251,914,833-byte candidate pickle、细胞级对象或完整日志。
 - 追加 V8 root-audit addendum：root gate 为

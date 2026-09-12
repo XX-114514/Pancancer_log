@@ -1,5 +1,15 @@
 # 项目路线图
 
+## 2026-09-12 V8 实际执行里程碑
+
+- 完成 V7-scoped Myeloid/DC pilot 的污染审计、fail-closed 修正与跨 GSE review-only
+  复现；V1/V2 的否决理由和 V3 的接受边界均已保存。
+- 下一方法门控是在不查看额外验证集结果的前提下预注册 cluster 接受/退回规则；随后选择第三个
+  GSE 验证 cDC2、pDC、SPP1/TREM2 等尚未跨 GSE 复现的标签。
+- Census/scANVI 不继续盲试版本；仅在获得可用的固定 client wheel/cache 或稳定官方连接后恢复。
+- 任何 V8 标签写回、held-out benchmark 或 downstream 重跑均仍未授权为正式产物；V7 保持默认。
+
+
 状态值：`completed`、`in_progress`、`blocked`、`planned`、`待确认`。完成状态必须有可检查证据。
 ## 2026-09-12 V8 开发候选索引
 
@@ -10,9 +20,10 @@
   独立准确率结论。
 - V7 继续是默认 identity/CNV 参考。该候选不代表独立准确率、classifier 执行、真值验证或
   生物学完成，且 policy 明确禁止自动参考晋升和正式 downstream mutation。
-- 独立 scANVI reference 仍为 `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`。下一步仅在明确
-  授权安装或提供可审计 client 后，先进行固定 Census 版本的前台 metadata-only 查询并审查
-  source/donor/GEO、ontology 与 license；解除该门控前不得训练、mapping 或主张独立性能。
+- 独立 scANVI reference 为
+  `BLOCKED_NO_USABLE_PINNED_CLIENT_AFTER_BINARY_RETRY`。隔离安装及唯一官方 PyPI
+  binary-only retry 已留存失败日志；获得固定 wheel/cache 或稳定官方连接前，不再盲试版本，
+  也不得训练、mapping 或主张独立性能。
 - 下一里程碑是在新的版本化验证 run 中完成独立生物学证据和下游影响审计；不能以本软件候选
   覆盖 V7 或已有 downstream 历史。
 
@@ -44,11 +55,11 @@
 - P4：17 major lineages、136 lineage clusters、106 final annotations，最终审计 `PASS`。
 - P4/P7：V8 full-metadata rerun2/root audit 为
   `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`，外部记录 167 项 pytest 通过；它保留
-  V7 作为默认参考，独立 reference 仍 `BLOCKED_NO_LOCAL_CELLXGENE_CENSUS_CLIENT`，不能计作
+  V7 作为默认参考，独立 reference 为 `BLOCKED_NO_USABLE_PINNED_CLIENT_AFTER_BINARY_RETRY`，不能计作
   P4 生物学标签升级或 P7 正式 release 完成。
 - P5：主 CoVarNet 发现分支完成固定 `K=9`；恶性/通讯 v2 Stage 01 严格完成 580/721。recovery `20260812_124600_cm_stage01_from_0462` 在第 581 个样本因组配额耗尽终止；当前约 2.50 GiB 余量远低于剩余 Stage01 约 129–157 GiB 的估算，至少恢复 200 GiB 组配额余量后才从零基索引 580 新建 attempt；Stage 02–08 未开始。
 - P6：旧三个固定模块免疫治疗投影完成；新的四队列整合已完成 19/19 cell2location 与 71,398-spot 严格 merge，但截至 2026-08-12 无新 Stage 13 attempt，最终验收仍因 11 个 reference-insufficient inferCNV skip 的状态策略冲突而阻断。
-- P7：三个 extension 均已建立正式运行记录；下载 retry v3 已生成 final summary，免疫与 CM 的最终 audit 仍未齐全，远程同步仍受 GitHub 认证阻塞。
+- P7：三个 extension 均已建立正式运行记录；下载 retry v3 已生成 final summary，免疫与 CM 的最终 audit 仍未齐全；GitHub SSH 普通 push 已恢复并核对远端 `main`。
 
 ## active extension 完成标准
 
