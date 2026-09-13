@@ -1,6 +1,17 @@
 # 重要变更记录
 
 本文件只记录会影响项目理解、方法、范围或复现的重要变化。日常细节见 `logs/`。
+
+## 2026-09-13
+
+- 新增 V7-scoped Myeloid/DC 全量 review runner、恢复/锁/PID/监控和资源限制合同。
+- 修复初始全量 scope 将所有 uncertainty 行无差别纳入的问题；现在只保留 marker、CellTypist、
+  冲突、候选或负 marker 证据中明确涉及 Myeloid/DC 的行。
+- 增加 top1/top2 margin 0.1 门槛，并拆分 `candidate_cell_type` 与
+  `candidate_transcriptional_state`；低 margin 作为连续/近邻候选退回父级。
+- smoke v3 2/2 samples success；4 个 Python tests 和 launcher contract 均通过。
+- 启动 882,415-cell、1,321-sample、54-GSE 后台 run；保留首次旧版 `ps` 误报及非重复恢复证据。
+
 ## 2026-09-12
 
 - 完成 V7-scoped Myeloid/DC V3 pilot：2 GSE、4 samples、22 review clusters；

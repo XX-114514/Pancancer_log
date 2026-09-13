@@ -1,5 +1,14 @@
 # 项目路线图
 
+## 2026-09-13 V8 全量执行里程碑
+
+- Myeloid/DC 全量 review 已从 4-sample pilot 晋升为可恢复的 54-GSE 执行任务；该“晋升”只指
+  计算范围，不是 biological release 或标签写回。
+- 当前只允许一个重任务直接运行；Slurm 唯一节点 drained，因此未新增 pending DAG。
+- 下一重任务为 scATOMIC legacy 样本缺口，不重复已完成的 new-cohort 549/549 outputs；待
+  Myeloid/DC 任务完成或资源审计允许后再启动。
+
+
 ## 2026-09-12 V8 实际执行里程碑
 
 - 完成 V7-scoped Myeloid/DC pilot 的污染审计、fail-closed 修正与跨 GSE review-only

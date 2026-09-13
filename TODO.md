@@ -1,4 +1,8 @@
 # 可执行任务
+
+- `V8-003`（in_progress）：`20260913_084700_mydc_full_v1` 正在后台处理 882,415 scoped
+  cells / 1,321 samples / 54 GSE。完成标准：所有样本 terminal、0 failed、skips 有理由、合并
+  cluster/recurrence 表和机器 summary 存在；完成后仍须人工/跨患者审查才能决定任何 V8 写回。
 ## 2026-09-06 新优先项
 
 - `V8-002`（in_progress）：Myeloid/DC review-only V3 已完成 2 GSE、4 samples 的

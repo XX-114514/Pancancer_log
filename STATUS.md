@@ -1,6 +1,22 @@
 
 # 当前权威状态（2026-09-12）
 
+## V8 全量后台执行（2026-09-13）
+
+- 已启动 `20260913_084700_mydc_full_v1`：覆盖冻结 V7 中 Myeloid/DC identity 与
+  Myeloid/DC-related uncertainty 的并集，共 882,415 cells、1,321 samples、54 GSE。
+- 输入为与 V7 4,676,787 cell index 完全一致的 359-gene marker 对象；X 明确为基于完整
+  source library denominator 的 `log1p(CP10K)`。marker-only counts layer 不用于 counts/QC。
+- 真实 smoke v3 为 2/2 samples success；identity/state 已拆分，margin <0.1 的近邻候选退回
+  父级，`malignant`、`CNV_negative`、`discordant`、`not_evaluable` 未进入 cell type。
+- 后台 PID 559，PPID=1、PGID=SID=559，使用 `setsid + flock`；1 worker、8 numerical
+  threads、nice 10、128 GiB 虚拟内存软上限。08:51 快照为 25 success、30 explicit skips、
+  1 running；子进程 RSS 约 2.99 GiB。
+- 首次 launcher 的旧版 `ps -o` 兼容检查在进程成功启动后误报失败；未重复提交。PID/cmdline/
+  start ticks/SID 经独立核验后补写 launcher manifest，launcher 已修复并通过合同测试。
+- 结果仍为 `review_only`、`writeback=false`、`independent_benchmark=false`；V7 保持默认。
+
+
 ## V8 实际执行更新（2026-09-12）
 
 - 已完成 Myeloid/DC review-only pilot 的 V1–V3 迭代。V1 因 marker-only universe
