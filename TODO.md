@@ -5,9 +5,9 @@
 | --- | --- | --- |
 | P0-1 | DONE/FROZEN | Myeloid/DC acceptance rules |
 | P0-2 | DONE/FROZEN | Third-GSE validation and `FROZEN_V8_MYELOID_TAXONOMY` |
-| P0-3 | NEXT | T/NK refinement using the same template |
+| P0-3 | DONE/FROZEN | T/NK refinement using the same template |
 | P0-4 | DONE (targeted) | Genuine scATOMIC rerun; broader classifier use only if it changes a gate |
-| P0-5 | TODO | Fibroblast refinement |
+| P0-5 | NEXT | Fibroblast refinement |
 | P1-1 | TODO | Lightweight Endothelial and B/Plasma validation |
 | P1-2 | TODO | 10–15 GSE held-out benchmark after rules freeze |
 | P1-3/4 | TODO | Freeze identity, verify Copykat `hg20`, then rebuild V8 malignancy once |

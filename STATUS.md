@@ -1,11 +1,15 @@
 
-## Biological Freeze Sprint authoritative correction (2026-09-13 13:27 +0800)
+## Biological Freeze Sprint authoritative correction (2026-09-13 16:44 +0800)
 
 - `FROZEN_V8_MYELOID_TAXONOMY` now exists. It freezes lineage taxonomy/rules only, not the global V8 cell-level reference.
 - Independent third GSE GSE274229 completed 2/2 samples and 2,117 target cells; scATOMIC was genuinely rerun on 17,109/17,109 cells and exactly mapped to all targets.
 - Accepted: FCN1 monocyte, Macrophage, cDC2 identities; C1QC and inflammatory states. SPP1/TREM2 and pDC fall back to parents.
 - The 54-GSE full-cohort review finished with 1,075 success, 246 explicit skips, 5,048 cluster rows and 0 failed; it is supporting recurrence evidence only (`writeback=false`, `independent_benchmark=false`).
-- Global V8 remains `NOT_FROZEN`; V7 remains the default until T/NK, Fibroblast, light Endothelial/B-Plasma validation, held-out benchmark, V8 malignancy rebuild and final robustness pass.
+- `FROZEN_V8_TNK_TAXONOMY` now exists. It freezes T/NK lineage taxonomy and selected state boundaries only; it does not write back a global V8 reference.
+- T/NK primary run `20260913_tnk_3gse_v3` completed 6/6 samples across three GSE: 14,185 cells and 35 clusters, exact source mapping 14,185/14,185, source T/NK/other 12,534/1,258/393, and parent/boundary/resolved-unresolved/conflict 10,664/2,845/180/103.
+- No T/NK fine identity passed cross-GSE recurrence. Tissue-resident-like was accepted on the state axis with combined support across 3 GSE/5 samples/6,574 cells. Genuine scATOMIC evidence mapped 4,719/4,719 cells; 4,413 were confident and 3,705 supported the lineage mapping.
+- P0-3 is now `DONE/FROZEN`; P0-5 Fibroblast refinement is the next active scientific gate.
+- Global V8 remains `NOT_FROZEN`; V7 remains the default until Fibroblast, light Endothelial/B-Plasma validation, held-out benchmark, V8 malignancy rebuild and final robustness pass.
 - Any older `running` Myeloid snapshot below is historical and must not override this section.
 
 # 当前权威状态（2026-09-13）
