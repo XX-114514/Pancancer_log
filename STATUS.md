@@ -1,5 +1,10 @@
 
-## Biological Freeze Sprint authoritative correction (2026-09-13 16:44 +0800)
+## Biological Freeze Sprint authoritative correction (2026-09-13 21:20 +0800)
+
+- FROZEN_V8_FIBROBLAST_TAXONOMY now exists. The fixed three-GSE run completed 6/6 samples, 10,147 cells and 30 clusters; source mapping was exact for 10,147/10,147 cells.
+- Freeze Fibroblast parent and Fibroblast_myCAF only: 2,748 cells map to Fibroblast_myCAF, 4,872 to parent Fibroblast, and 2,527 contamination-gate cells remain unresolved_stromal.
+- iCAF, ECM-remodeling, antigen-presentation-like, IFN and cycling remain parent/overlay evidence and are not downstream nodes. P0-5 is DONE/FROZEN; P1-1 Endothelial/B-Plasma validation is next.
+- Global V8 remains NOT_FROZEN; V7 remains default until the remaining scientific gates complete.
 
 - `FROZEN_V8_MYELOID_TAXONOMY` now exists. It freezes lineage taxonomy/rules only, not the global V8 cell-level reference.
 - Independent third GSE GSE274229 completed 2/2 samples and 2,117 target cells; scATOMIC was genuinely rerun on 17,109/17,109 cells and exactly mapped to all targets.
