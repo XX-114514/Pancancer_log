@@ -1,8 +1,16 @@
 # V8 Myeloid/DC 全量 review-only run（2026-09-13）
+## Completion correction (2026-09-13 11:48 +0800)
+
+- Final status: `complete_review_only_with_skips`.
+- 1,075/1,321 samples succeeded; 246 were explicitly skipped; 0 failed.
+- 882,415 scoped cells across 54 GSE produced 5,048 cluster evidence rows.
+- This run is downgraded to supporting recurrence evidence. It is not the third-GSE gate, an independent benchmark, or a V8 writeback source.
+- Later text describing a running PID is retained as a historical snapshot only.
+
 
 ## 状态
 
-`running`。Run ID：`20260913_084700_mydc_full_v1`。V7 保持冻结默认；
+`complete_review_only_with_skips`。Run ID：`20260913_084700_mydc_full_v1`。V7 保持冻结默认；
 `writeback=false`、`independent_benchmark=false`。
 
 ## 全量范围

@@ -1,4 +1,13 @@
 
+## Biological Freeze Sprint authoritative correction (2026-09-13 13:27 +0800)
+
+- `FROZEN_V8_MYELOID_TAXONOMY` now exists. It freezes lineage taxonomy/rules only, not the global V8 cell-level reference.
+- Independent third GSE GSE274229 completed 2/2 samples and 2,117 target cells; scATOMIC was genuinely rerun on 17,109/17,109 cells and exactly mapped to all targets.
+- Accepted: FCN1 monocyte, Macrophage, cDC2 identities; C1QC and inflammatory states. SPP1/TREM2 and pDC fall back to parents.
+- The 54-GSE full-cohort review finished with 1,075 success, 246 explicit skips, 5,048 cluster rows and 0 failed; it is supporting recurrence evidence only (`writeback=false`, `independent_benchmark=false`).
+- Global V8 remains `NOT_FROZEN`; V7 remains the default until T/NK, Fibroblast, light Endothelial/B-Plasma validation, held-out benchmark, V8 malignancy rebuild and final robustness pass.
+- Any older `running` Myeloid snapshot below is historical and must not override this section.
+
 # 当前权威状态（2026-09-13）
 
 

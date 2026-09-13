@@ -1,11 +1,25 @@
 # 可执行任务
+## Biological Freeze Sprint task board (authoritative; 9 lines)
 
-- `V8-003`（in_progress）：`20260913_084700_mydc_full_v1` 正在后台处理 882,415 scoped
-  cells / 1,321 samples / 54 GSE。 2026-09-13 09:03:20 +0800 快照：93 success、41 explicit skipped、1 running、0 failed。完成标准：所有样本 terminal、0 failed、skips 有理由、合并
+| Order | Status | Scientific gate |
+| --- | --- | --- |
+| P0-1 | DONE/FROZEN | Myeloid/DC acceptance rules |
+| P0-2 | DONE/FROZEN | Third-GSE validation and `FROZEN_V8_MYELOID_TAXONOMY` |
+| P0-3 | NEXT | T/NK refinement using the same template |
+| P0-4 | DONE (targeted) | Genuine scATOMIC rerun; broader classifier use only if it changes a gate |
+| P0-5 | TODO | Fibroblast refinement |
+| P1-1 | TODO | Lightweight Endothelial and B/Plasma validation |
+| P1-2 | TODO | 10–15 GSE held-out benchmark after rules freeze |
+| P1-3/4 | TODO | Freeze identity, verify Copykat `hg20`, then rebuild V8 malignancy once |
+| P1-5/FINAL | TODO | One robustness pass → `FROZEN_V8_BIOLOGICAL_REFERENCE` → V8 CoVarNet |
+
+
+- `V8-003`（done_supporting_only）：`20260913_084700_mydc_full_v1` 已完成 review-only 处理 882,415 scoped
+  cells / 1,321 samples / 54 GSE。 终态：1,075 success、246 explicit skipped、0 failed，5,048 cluster rows。完成标准：所有样本 terminal、0 failed、skips 有理由、合并
   cluster/recurrence 表和机器 summary 存在；完成后仍须人工/跨患者审查才能决定任何 V8 写回。
 ## 2026-09-06 新优先项
 
-- `V8-002`（in_progress）：Myeloid/DC review-only V3 已完成 2 GSE、4 samples 的
+- `V8-002`（done_frozen_taxonomy）：Myeloid/DC review-only V3 已完成 2 GSE、4 samples 的
   fail-closed pilot；先冻结 cluster 接受/退回规则，再运行第三 GSE，重点验证 cDC2、pDC、
   SPP1/TREM2 与 unresolved parent fallback。完成 held-out benchmark 和预注册门控前不得写回 V7。
 
