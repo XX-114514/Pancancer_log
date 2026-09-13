@@ -48,3 +48,13 @@ bash ${PROJECT_ROOT}/Project_v3/v8_upgrade/fullscale/myeloid_dc_20260913/scripts
 
 只有全部样本 terminal、0 failed 且 merge summary 通过，才可把计算状态改为完成；即使完成也
 仍是 review-only recurrence evidence，不是 accuracy 或 V8 biological freeze。
+
+
+## 追加进度快照：2026-09-13 09:03:20 +0800
+
+- 样本账本：93 success、41 explicit skipped、
+  1 running、0 failed、981 pending、
+  205 pending-too-few-scope；合计 1321。
+- launcher/worker PID 559/988 均存活；worker RSS 2998676 KiB、nice 10。
+- 机器快照：`runs/snapshots/20260913_084700_mydc_full_v1_20260913_090320.json`；SHA-256 `b50ead5b8dcfd8c405c8b1da2631382adb2fab88ffab68f017b4f9f2c65a2859`。
+- 该快照只证明可恢复运行正在推进。最终合并、跨样本复现审查和 biological promotion 尚未完成。

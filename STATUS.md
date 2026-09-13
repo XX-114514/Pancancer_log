@@ -1,5 +1,18 @@
 
-# 当前权威状态（2026-09-12）
+# 当前权威状态（2026-09-13）
+
+
+## V8 后台实时快照（2026-09-13 09:03:20 +0800）
+
+- `20260913_084700_mydc_full_v1` 仍为 `running`；样本账本总数 1321，其中 93 success、
+  41 explicit skipped、1 running、0 failed、
+  981 pending、205 pending-too-few-scope。
+- 已形成 terminal success/explicit-skip 的样本为 134/1321；当前数字是运行进度，
+  不是注释准确率、coverage 或 biological freeze。
+- launcher PID 559 与 worker PID 988 均存活；launcher PPID=1、
+  PGID=559、SID=559；worker nice=10、
+  RSS=2998676 KiB。当前未发现 failed sample。
+- 机器可读快照：`runs/snapshots/20260913_084700_mydc_full_v1_20260913_090320.json`（SHA-256 `b50ead5b8dcfd8c405c8b1da2631382adb2fab88ffab68f017b4f9f2c65a2859`）。V7 仍是默认项目参考，V8 run 不写回。
 
 ## V8 全量后台执行（2026-09-13）
 

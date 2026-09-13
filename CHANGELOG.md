@@ -4,6 +4,10 @@
 
 ## 2026-09-13
 
+- `20260913_084700_mydc_full_v1` 于 2026-09-13 09:03:20 +0800 的追加快照为 93 success、
+  41 explicit skipped、1 running、0 failed；
+  PID 559/988 存活。该快照仅表示进度，不表示 accuracy 或 V8 freeze。
+
 - 新增 V7-scoped Myeloid/DC 全量 review runner、恢复/锁/PID/监控和资源限制合同。
 - 修复初始全量 scope 将所有 uncertainty 行无差别纳入的问题；现在只保留 marker、CellTypist、
   冲突、候选或负 marker 证据中明确涉及 Myeloid/DC 的行。

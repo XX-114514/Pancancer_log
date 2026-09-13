@@ -1,7 +1,7 @@
 # 可执行任务
 
 - `V8-003`（in_progress）：`20260913_084700_mydc_full_v1` 正在后台处理 882,415 scoped
-  cells / 1,321 samples / 54 GSE。完成标准：所有样本 terminal、0 failed、skips 有理由、合并
+  cells / 1,321 samples / 54 GSE。 2026-09-13 09:03:20 +0800 快照：93 success、41 explicit skipped、1 running、0 failed。完成标准：所有样本 terminal、0 failed、skips 有理由、合并
   cluster/recurrence 表和机器 summary 存在；完成后仍须人工/跨患者审查才能决定任何 V8 写回。
 ## 2026-09-06 新优先项
 

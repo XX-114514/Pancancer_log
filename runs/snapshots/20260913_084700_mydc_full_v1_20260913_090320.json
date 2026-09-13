@@ -1,0 +1,50 @@
+{
+  "schema_version": "pancancer.v8.background_status_snapshot.v1",
+  "timestamp": "2026-09-13T09:03:20.573432+08:00",
+  "run_id": "20260913_084700_mydc_full_v1",
+  "run_path": "${PROJECT_ROOT}/Project_v3/v8_upgrade/fullscale/myeloid_dc_20260913/runs/20260913_084700_mydc_full_v1",
+  "stage_status": {
+    "plan": "success",
+    "run": "running"
+  },
+  "sample_status_counts": {
+    "pending": 981,
+    "pending_too_few_scope": 205,
+    "running": 1,
+    "skipped": 41,
+    "success": 93
+  },
+  "sample_total": 1321,
+  "terminal_success_or_explicit_skip": 134,
+  "failed": 0,
+  "processes": {
+    "launcher": {
+      "pid": 559,
+      "alive": true,
+      "ppid": 1,
+      "pgrp": 559,
+      "session": 559,
+      "state": "S",
+      "nice": 0,
+      "rss_kib": 1520,
+      "threads": 1,
+      "cmdline": "bash ${PROJECT_ROOT}/Project_v3/v8_upgrade/fullscale/myeloid_dc_20260913/scripts/run_detached.sh ${PROJECT_ROOT}/Project_v3/v8_upgrade/fullscale/myeloid_dc_20260913/runs/20260913_084700_mydc_full_v1"
+    },
+    "worker": {
+      "pid": 988,
+      "alive": true,
+      "ppid": 559,
+      "pgrp": 559,
+      "session": 559,
+      "state": "R",
+      "nice": 10,
+      "rss_kib": 2998676,
+      "threads": 49,
+      "cmdline": "${CONDA_ROOT}/envs/scanpy/bin/python ${PROJECT_ROOT}/Project_v3/v8_upgrade/fullscale/myeloid_dc_20260913/scripts/run_fullscale.py --run-dir ${PROJECT_ROOT}/Project_v3/v8_upgrade/fullscale/myeloid_dc_20260913/runs/20260913_084700_mydc_full_v1 --resume"
+    }
+  },
+  "interpretation": "live_review_only_snapshot_not_completion_or_accuracy",
+  "v7_default": true,
+  "writeback": false,
+  "paths_redacted": true
+}
