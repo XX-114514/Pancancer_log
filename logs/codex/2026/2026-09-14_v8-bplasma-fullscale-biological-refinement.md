@@ -39,7 +39,7 @@ Create `FROZEN_V8_B_PLASMA_TAXONOMY`. Mark P1-1 DONE/FROZEN and activate P1-2 he
 
 ## Failed attempts
 
-The first smoke exposed Plasma-IgA state acceptance within Bcell identities; the parent-specific gate was fixed before the full run and smoke v2 had zero cross-identity state calls. The finalizer's first invocation used one incorrect relative path; it produced no accepted freeze outputs, the path was corrected, and the complete rerun passed. A delegated finalizer did not start an execution process and was interrupted; it produced no files. The preferred patch helper could not create its host bwrap namespace, so narrow fallback writes were used.
+The first smoke exposed Plasma-IgA state acceptance within Bcell identities; the parent-specific gate was fixed before the full run and smoke v2 had zero cross-identity state calls. The finalizer's first invocation used one incorrect relative path; it produced no accepted freeze outputs, the path was corrected, and the complete rerun passed. A delegated finalizer did not start an execution process and was interrupted; it produced no files. The preferred patch helper could not create its host bwrap namespace, so narrow fallback writes were used. Two ordinary GitHub push attempts—default SSH and the existing explicit ed25519 identity—both failed with `Permission denied (publickey)`; no third environment repair was attempted.
 
 ## Unverified / unresolved
 
