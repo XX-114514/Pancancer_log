@@ -2,6 +2,9 @@
 
 ## 2026-09-14
 
+- Replaced the planned lightweight B/Plasma check with a full 693,261-cell/54-GSE execution: 981 success, 331 explicit skips and 0 failed.
+- Recorded `FROZEN_V8_B_PLASMA_TAXONOMY` from sealed-heldout development evidence: Bcell, Plasma and Bcell-naive freeze; Plasma-IgA parent fallback; IFN/cycling overlay-only.
+- Genuine scATOMIC and source-ID mappings completed; limitations were retained explicitly (no scATOMIC Plasma class and no GSE188711 source cell labels).
 - Completed the preregistered three-GSE Endothelial validation: 6/6 samples, 8,951 cells and 35 clusters.
 - Recorded `FROZEN_V8_ENDOTHELIAL_TAXONOMY`: parent Endothelial plus arterial and venous states; capillary, angiogenic-tip and lymphatic fall back.
 - Exact genuine scATOMIC mapping supported Endothelial identity in 1,538/1,547 S37 cells; source biological cell labels were unavailable and were not imputed.

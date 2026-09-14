@@ -1,3 +1,10 @@
+## B/Plasma full-cohort biological freeze (2026-09-14)
+
+- `20260914_bplasma_full_v1` completed the full frozen V7 B/Plasma universe: 981 success, 331 explicit `<50-cell` skips, 0 failed, 685,843 processed cells and 4,378 clusters.
+- Development-only review excluded the sealed 12-GSE benchmark and covered 557,601 unique cells, 3,501 clusters, 783 samples and 39 GSE; 11/11 contracts passed.
+- `FROZEN_V8_B_PLASMA_TAXONOMY` freezes Bcell, Plasma and Bcell-naive. Plasma-IgA falls back to Plasma under the preregistered >=90% universal rule; IFN/cycling are overlays; boundary/competing cells remain unresolved.
+- P1-1 is DONE/FROZEN. P1-2 held-out reference benchmark is the sole next biological gate. Global V8 remains NOT_FROZEN and V7 remains default.
+
 
 ## Biological Freeze Sprint authoritative correction (2026-09-13 21:20 +0800)
 
@@ -22,7 +29,7 @@
 - `FROZEN_V8_ENDOTHELIAL_TAXONOMY` now exists: 6/6 samples, 8,951 cells and 35 clusters.
 - Endothelial identity passed for 7,881 cells across 3 GSE/6 samples; genuine scATOMIC independently supported 1,538/1,547 S37 cells.
 - Freeze Endothelial parent, Endothelial_arterial and Endothelial_venous. Final assignments: 4,583 parent, 1,580 arterial, 1,718 venous and 1,070 unresolved. Capillary, angiogenic-tip and lymphatic fall back to parent/overlay evidence.
-- P1-1 remains active only for lightweight B/Plasma validation. Global V8 remains NOT_FROZEN and V7 remains default.
+- P1-1 is now DONE/FROZEN after full-cohort B/Plasma validation. Global V8 remains NOT_FROZEN and V7 remains default.
 
 # 当前权威状态（2026-09-13）
 

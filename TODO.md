@@ -8,10 +8,12 @@
 | P0-3 | DONE/FROZEN | T/NK refinement using the same template |
 | P0-4 | DONE (targeted) | Genuine scATOMIC rerun; broader classifier use only if it changes a gate |
 | P0-5 | DONE/FROZEN | Fibroblast refinement and FROZEN_V8_FIBROBLAST_TAXONOMY |
-| P1-1 | IN PROGRESS | Endothelial DONE/FROZEN; lightweight B/Plasma validation NEXT |
-| P1-2 | TODO | 10–15 GSE held-out benchmark after rules freeze |
+| P1-1 | DONE/FROZEN | Endothelial and full-cohort B/Plasma validation |
+| P1-2 | ACTIVE | Frozen 12-GSE held-out reference benchmark; no retuning |
 | P1-3/4 | TODO | Freeze identity, verify Copykat `hg20`, then rebuild V8 malignancy once |
 | P1-5/FINAL | TODO | One robustness pass → `FROZEN_V8_BIOLOGICAL_REFERENCE` → V8 CoVarNet |
+
+STOP remains in force: no new schema, root audit, release-gate, checksum/provenance refinement, Census blocker repetition or nonessential regression expansion unless a verified biological-execution bug requires it.
 
 
 - `V8-003`（done_supporting_only）：`20260913_084700_mydc_full_v1` 已完成 review-only 处理 882,415 scoped

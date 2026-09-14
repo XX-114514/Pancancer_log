@@ -1,10 +1,16 @@
 # 项目路线图
 
+## 2026-09-14 V8 B/Plasma full-cohort biological freeze
+
+- Full execution completed 981/1,312 samples with 331 explicit `<50-cell` skips, 0 failures and 685,843 processed cells.
+- Development-only evidence froze Bcell, Plasma and Bcell-naive; Plasma-IgA fell back to Plasma, and IFN/cycling remain overlays.
+- P1-1 is DONE/FROZEN. The prospectively sealed 12-GSE held-out reference benchmark is now the only active scientific gate; no rule retuning is allowed.
+
 ## 2026-09-14 V8 Endothelial biological freeze
 
 - `20260914_endothelial_3gse_v1` completed 6/6 samples, 8,951 cells and 35 clusters using preregistered rules.
 - Freeze Endothelial parent, arterial and venous only; capillary, angiogenic-tip and lymphatic fall back.
-- P1-1 now proceeds directly to lightweight B/Plasma validation; global V8 remains NOT_FROZEN and V7 remains default.
+- P1-1 subsequently completed with full-cohort B/Plasma validation; global V8 remains NOT_FROZEN and V7 remains default.
 
 
 ## 2026-09-13 V8 全量执行里程碑
