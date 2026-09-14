@@ -1,5 +1,12 @@
 # 项目路线图
 
+## 2026-09-14 V8 Endothelial biological freeze
+
+- `20260914_endothelial_3gse_v1` completed 6/6 samples, 8,951 cells and 35 clusters using preregistered rules.
+- Freeze Endothelial parent, arterial and venous only; capillary, angiogenic-tip and lymphatic fall back.
+- P1-1 now proceeds directly to lightweight B/Plasma validation; global V8 remains NOT_FROZEN and V7 remains default.
+
+
 ## 2026-09-13 V8 全量执行里程碑
 
 - Myeloid/DC 全量 review 已从 4-sample pilot 晋升为可恢复的 54-GSE 执行任务；该“晋升”只指

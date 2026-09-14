@@ -1,5 +1,12 @@
 # 重要变更记录
 
+## 2026-09-14
+
+- Completed the preregistered three-GSE Endothelial validation: 6/6 samples, 8,951 cells and 35 clusters.
+- Recorded `FROZEN_V8_ENDOTHELIAL_TAXONOMY`: parent Endothelial plus arterial and venous states; capillary, angiogenic-tip and lymphatic fall back.
+- Exact genuine scATOMIC mapping supported Endothelial identity in 1,538/1,547 S37 cells; source biological cell labels were unavailable and were not imputed.
+
+
 本文件只记录会影响项目理解、方法、范围或复现的重要变化。日常细节见 `logs/`。
 
 ## 2026-09-13

@@ -17,6 +17,13 @@
 - Global V8 remains `NOT_FROZEN`; V7 remains the default until Fibroblast, light Endothelial/B-Plasma validation, held-out benchmark, V8 malignancy rebuild and final robustness pass.
 - Any older `running` Myeloid snapshot below is historical and must not override this section.
 
+## Endothelial biological freeze authoritative correction (2026-09-14)
+
+- `FROZEN_V8_ENDOTHELIAL_TAXONOMY` now exists: 6/6 samples, 8,951 cells and 35 clusters.
+- Endothelial identity passed for 7,881 cells across 3 GSE/6 samples; genuine scATOMIC independently supported 1,538/1,547 S37 cells.
+- Freeze Endothelial parent, Endothelial_arterial and Endothelial_venous. Final assignments: 4,583 parent, 1,580 arterial, 1,718 venous and 1,070 unresolved. Capillary, angiogenic-tip and lymphatic fall back to parent/overlay evidence.
+- P1-1 remains active only for lightweight B/Plasma validation. Global V8 remains NOT_FROZEN and V7 remains default.
+
 # 当前权威状态（2026-09-13）
 
 
