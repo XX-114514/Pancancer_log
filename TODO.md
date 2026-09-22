@@ -1,4 +1,16 @@
 # 可执行任务
+
+## 2026-09-22 投稿冻结任务板（当前权威）
+
+| ID | Priority | Status | Task | Completion criterion |
+| --- | --- | --- | --- | --- |
+| PUB-001 | P0 | done | 建立 Nature 投稿上游冻结与文件骨架 | V7 dependency lock、V8/V9 边界、主稿/声明/图表/SI 清单通过仓库验证 |
+| PUB-002 | P0 | todo | 选择 V8 sealed benchmark 或 V9 作为唯一升级路径 | 书面决定；不得混合门槛或结果后调参 |
+| PUB-003 | P0 | blocked | 关闭 V9 candidate 门槛 | 15 个 L3 决定、稳定性处置、632 样本 CNV 决定和显式 promotion audit |
+| PUB-004 | P0 | todo | 形成版本一致的 downstream release | 最终 identity 上重跑，或主文明确使用 V5-derived 历史分支 |
+| PUB-005 | P0 | todo | 完成 Nature submission metadata | panel source 全闭环、54-GSE source/licence、伦理、作者、基金、仓库 accession、Reporting Summary |
+| PUB-006 | P0 | done | 发布最新 V8/V9 轻量注释与审计快照 | V8 五谱系 audit manifests、V9 final candidate report/open review template 和外部 hash index 通过仓库验证 |
+
 ## Biological Freeze Sprint task board (authoritative; 9 lines)
 
 | Order | Status | Scientific gate |
@@ -9,7 +21,7 @@
 | P0-4 | DONE (targeted) | Genuine scATOMIC rerun; broader classifier use only if it changes a gate |
 | P0-5 | DONE/FROZEN | Fibroblast refinement and FROZEN_V8_FIBROBLAST_TAXONOMY |
 | P1-1 | DONE/FROZEN | Endothelial and full-cohort B/Plasma validation |
-| P1-2 | ACTIVE | Frozen 12-GSE held-out reference benchmark; no retuning |
+| P1-2 | BLOCKED/COMPROMISED | T/NK held-out cohort was used in its decision; Myeloid outputs predate split; redesign any independent benchmark without retuning |
 | P1-3/4 | TODO | Freeze identity, verify Copykat `hg20`, then rebuild V8 malignancy once |
 | P1-5/FINAL | TODO | One robustness pass → `FROZEN_V8_BIOLOGICAL_REFERENCE` → V8 CoVarNet |
 

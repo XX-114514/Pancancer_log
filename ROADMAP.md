@@ -1,5 +1,16 @@
 # 项目路线图
 
+## 2026-09-22 Nature submission freeze
+
+- P7 publication-preparation snapshot is created with V7 as the sole global identity/CNV authority.
+- Preserve the 2026-09-16/17 V8 audit qualifications: T/NK held-out validation is compromised, Myeloid/DC held-out outputs were exposed before the split, and no lineage is `HELDOUT_VALIDATED`.
+- The 2026-09-19 V9 candidate report and open review template are published as a lightweight candidate snapshot; this is evidence publication, not promotion.
+- V9 is quarantined as `FROZEN_CANDIDATE`; do not promote it before 15 L3 reviews, the 632-sample CNV decision, stability review and an explicit promotion audit.
+- Select one upgrade path: complete the V8 sealed benchmark or complete/promote V9. Do not merge their gates post hoc.
+- After the identity decision, rebuild malignancy only if required, then rerun version-dependent CoVarNet/LIANA or retain the V5 branch as explicitly historical.
+- Close panel-level provenance, source/licence, environment, ethics and repository/DOI requirements before creating a submission-candidate release.
+
+
 ## 2026-09-14 V8 B/Plasma full-cohort biological freeze
 
 - Full execution completed 981/1,312 samples with 331 explicit `<50-cell` skips, 0 failures and 685,843 processed cells.

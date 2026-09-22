@@ -1,0 +1,156 @@
+{
+  "schema_version": "v8_freeze_manifest_v1",
+  "lineage": "Fibroblast",
+  "freeze_directory": "biological_freeze_sprint/fibroblast_20260913",
+  "sentinel": {
+    "path": "biological_freeze_sprint/fibroblast_20260913/FROZEN_V8_FIBROBLAST_TAXONOMY",
+    "sha256": "c7c1204bc901d9328de77c801082c594c863c5ff2e6c128c0751f4cee643d259",
+    "fields": {
+      "status": "FROZEN_V8_FIBROBLAST_TAXONOMY",
+      "frozen_at": "2026-09-13T21:15:00+0800",
+      "run_id": "20260913_fibroblast_3gse_v1",
+      "cells": "10147",
+      "clusters": "30",
+      "gse": "3",
+      "samples": "6",
+      "accepted_identity_cells": "7620",
+      "accepted_mycaf_cells": "2748",
+      "parent_fallback_cells": "4872",
+      "unresolved_stromal_cells": "2527",
+      "source_exact_mapping": "10147/10147",
+      "writeback_to_v7": "false",
+      "fibroblast_taxonomy_frozen_v1.tsv_sha256": "40bc2267a377e17746c506fef21aa2081e177a0eb700ceead7fff4dbd0be4b15",
+      "fibroblast_identity_supported_state_recurrence_frozen_v1.tsv_sha256": "621db036c6578242821bf3312abc8006b41c6998ce98566060363e24c80e41bf",
+      "fibroblast_cluster_decisions_frozen_v1.tsv_sha256": "ecf1b9d1b7ab02ecccff1f3843ffb4e934c1bdf39e3c7e3299c6d74e4e36bd03",
+      "fibroblast_cell_assignments_frozen_v1.tsv.gz_sha256": "e210454a2c254cd5418fc9cc890d47119c50517a7b287febe92a2086eeacb815",
+      "EXECUTION_RECORD.md_sha256": "7589ee43cd4f6375e90f8e0f054e321698a7b54e7efeb7d1df4d21c18fc6d0df"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/EXECUTION_RECORD.md",
+      "sha256": "7589ee43cd4f6375e90f8e0f054e321698a7b54e7efeb7d1df4d21c18fc6d0df",
+      "bytes": 1376
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/FROZEN_V8_FIBROBLAST_TAXONOMY",
+      "sha256": "c7c1204bc901d9328de77c801082c594c863c5ff2e6c128c0751f4cee643d259",
+      "bytes": 877
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/PREREGISTERED_RULES.md",
+      "sha256": "06952a172882cca79a9abb53e372f32dab5dea438fab43ce3937e7f168facd73",
+      "bytes": 2360
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/PREREGISTRATION_FROZEN",
+      "sha256": "7e89d652b505fc7667aff480f12a12c33f424f24a697461b6117040243f1fb3e",
+      "bytes": 267
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/fibroblast_acceptance_rules_frozen_v1.tsv",
+      "sha256": "3aa36f9e7c68c0a79df8e3eccef21a0e7cf3b586f0c03c4fa40b6076c91971ed",
+      "bytes": 715
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/fibroblast_cell_assignments_frozen_v1.tsv.gz",
+      "sha256": "e210454a2c254cd5418fc9cc890d47119c50517a7b287febe92a2086eeacb815",
+      "bytes": 81548
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/fibroblast_cluster_decisions_frozen_v1.tsv",
+      "sha256": "ecf1b9d1b7ab02ecccff1f3843ffb4e934c1bdf39e3c7e3299c6d74e4e36bd03",
+      "bytes": 7342
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/fibroblast_identity_supported_state_recurrence_frozen_v1.tsv",
+      "sha256": "621db036c6578242821bf3312abc8006b41c6998ce98566060363e24c80e41bf",
+      "bytes": 1107
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/fibroblast_taxonomy_frozen_v1.tsv",
+      "sha256": "40bc2267a377e17746c506fef21aa2081e177a0eb700ceead7fff4dbd0be4b15",
+      "bytes": 1443
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/source_label_evidence_v1/cell_level_source_label_mapping.tsv.gz",
+      "sha256": "de6476f36afb5baf1e114a0feee3b74f25e9b63cc57e9a0c504a6fc1d14a1f6a",
+      "bytes": 234045
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/source_label_evidence_v1/cluster_source_label_summary.tsv",
+      "sha256": "2064739f292cb5102b37112e0fe19a492b5298d54c2d2cf270b46270236e7041",
+      "bytes": 22390
+    },
+    {
+      "path": "biological_freeze_sprint/fibroblast_20260913/source_label_evidence_v1/mapping_summary.json",
+      "sha256": "c2a767147072af757a6f2becacfc93ef3a1ab4e69ae58970f1c4f8a828f150c0",
+      "bytes": 19006
+    }
+  ],
+  "evidence": {
+    "decision_gses": [
+      "GSE131907",
+      "GSE184880",
+      "GSE188737"
+    ],
+    "n_decision_gse": 3,
+    "decision_sources": [
+      "fullscale/fibroblast_20260913/runs/20260913_fibroblast_3gse_v1"
+    ],
+    "decision_success_samples": 6,
+    "decision_scope_cells": 10147,
+    "note": "pilot rows carry no sample/cell counts; counts cover fullscale runs only"
+  },
+  "evidence_level": "PILOT_FROZEN",
+  "heldout_exposure": {
+    "classification": [
+      "CLEAN"
+    ],
+    "lineage_freeze_at": "2026-09-13T21:15:00+08:00",
+    "decision_gses": [
+      "GSE131907",
+      "GSE184880",
+      "GSE188737"
+    ],
+    "heldout_gses_used_in_decision": [],
+    "heldout_gses_with_outputs_before_split": [],
+    "heldout_gses_with_sealed_outputs_after_split": [],
+    "heldout_decision_cells": 0
+  },
+  "known_issues": [
+    {
+      "id": "V8-KI-FB-001",
+      "severity": "minor",
+      "summary": "State recurrence in the frozen run counted all clusters, not only identity-positive clusters; the restriction was recomputed post hoc in EXECUTION_RECORD.md.",
+      "evidence": "fullscale/fibroblast_20260913/runs/20260913_fibroblast_3gse_v1/tables/state_recurrence.tsv"
+    },
+    {
+      "id": "V8-KI-FB-002",
+      "severity": "minor",
+      "summary": "Clustering sensitivity: cell-level label agreement 92-97% and myCAF recurrence retained in all variants, but cluster partitions are unstable (within-sample ARI 0.22-0.47); excluding scoring panels moves 414 cells from Fibroblast_parent to contamination fallback.",
+      "evidence": "audits/20260916_clustering_sensitivity_v1/fibroblast_20260913_summary.json"
+    },
+    {
+      "id": "V8-KI-001",
+      "severity": "moderate",
+      "summary": "Review clusters are built on the 359-gene marker object that contains every scoring panel (partial circularity). Only Fibroblast/Endothelial have been sensitivity-tested; T/NK, Myeloid, B/Plasma not yet.",
+      "evidence": "audits/20260916_clustering_sensitivity_v1/"
+    },
+    {
+      "id": "V8-KI-002",
+      "severity": "moderate",
+      "summary": "Identity is decided per cluster, so every cell in a cluster inherits the call; within-cluster heterogeneity was not recorded by the historical runners (lineage_review now writes cluster_core_dispersion).",
+      "evidence": "lineage_review/single_core.py"
+    },
+    {
+      "id": "V8-KI-003",
+      "severity": "minor",
+      "summary": "Historical runner scripts were not hashed into run provenance; lineage_review now records engine and spec SHA-256.",
+      "evidence": "fullscale/*/runs/*/config/run_config.json"
+    }
+  ],
+  "global_v8_status": "NOT_FROZEN",
+  "writeback_allowed": false,
+  "generated_at": "2026-09-16T02:26:47.426178+08:00"
+}

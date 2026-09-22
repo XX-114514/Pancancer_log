@@ -1,0 +1,4 @@
+artifact_id	logical_path	bytes	sha256	disposition	status	notes
+V9_FINAL_REPORT_20260919	${PROJECT_ROOT}/Project_v3/v9_annotation/V9_FINAL_REPORT_20260919_CN.md	11835	f19c9e94482c67aa40cbe35d36f8fa31ed97aa424301021c13118cad31cc2ae0	copied_exact	candidate_report	Supersedes 2026-09-18 report; not a global freeze
+V9_FREEZE_MANIFEST_V2	${PROJECT_ROOT}/Project_v3/v9_annotation/preregistration/V9_FREEZE_MANIFEST_v2.json	203565	af83bec2c4dc11cdc96e07182a72f3da37bc2febe3f16825f93bd21b50406ac6	external_only	FROZEN_CANDIDATE	Not copied because 78 source-hash keys contain internal absolute paths
+V9_L3_REVIEW_TEMPLATE_V2	${PROJECT_ROOT}/Project_v3/v9_annotation/preregistration/manual_review_decisions_L3_pilot_TEMPLATE_v2.tsv	2962	0fc20096f4360ee5a0a10cbe663bc13f545409126f9960e1adc6114adb7c4475	copied_exact	OPEN_GATE	15 aggregate clusters; reviewer/date/decision fields blank

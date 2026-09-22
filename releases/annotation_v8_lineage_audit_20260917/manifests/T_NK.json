@@ -1,0 +1,184 @@
+{
+  "schema_version": "v8_freeze_manifest_v1",
+  "lineage": "T_NK",
+  "freeze_directory": "biological_freeze_sprint/tnk_20260913",
+  "sentinel": {
+    "path": "biological_freeze_sprint/tnk_20260913/FROZEN_V8_TNK_TAXONOMY",
+    "sha256": "faafcf8c9dba0a2647375f9785ad4dc9e115f24af98a8087ca3f884fe0974cad",
+    "fields": {
+      "status": "FROZEN_V8_TNK_TAXONOMY",
+      "frozen_at": "2026-09-13T16:41:46+0800",
+      "taxonomy_sha256": "5efaeac1c305ada61032bf90d4c11975aa6e2842c9f20b3705ccfa00d46dc7cc",
+      "execution_record_sha256": "8c0b055c899dcedd060da266736c9e410191db97528b688b043b64de46b6ca84",
+      "scope": "lineage_taxonomy_only",
+      "global_v8_writeback": "false",
+      "held_out_accuracy": "false",
+      "next_gate": "Fibroblast"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/BUGFIX_LOG.md",
+      "sha256": "2f2ecfad8cc6b0aec30f210b1db2328510b6dbdda82d7cf8123536b218a6a22b",
+      "bytes": 957
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/EXECUTION_RECORD.md",
+      "sha256": "8c0b055c899dcedd060da266736c9e410191db97528b688b043b64de46b6ca84",
+      "bytes": 1662
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/FROZEN_V8_TNK_TAXONOMY",
+      "sha256": "faafcf8c9dba0a2647375f9785ad4dc9e115f24af98a8087ca3f884fe0974cad",
+      "bytes": 334
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/PREREGISTERED_RULES.md",
+      "sha256": "8c1d90d6ce19f202444f5564a0ebd831f5f74e4135ce9b8397d57e20786de608",
+      "bytes": 2404
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/PREREGISTRATION_FROZEN",
+      "sha256": "4cf3c512fe81d93495d29118e7878dc364892f129915a2a5d30ef91fa535b4a0",
+      "bytes": 267
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/contamination_component_diagnostic_v1.tsv",
+      "sha256": "017af1de52e8f9b4bf61d513a4f0a3b4b694bdc882f7c5233963100232d50834",
+      "bytes": 5466
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/scatomic_gse274229_mapping_v1/scatomic_label_collapse_map_v1.tsv",
+      "sha256": "d317d208c674c071c676a915b07606d5bd25b22d29ce40989c9adf6261de5798",
+      "bytes": 518
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/scatomic_gse274229_mapping_v1/tnk_gse274229_scatomic_by_sample_v1.tsv",
+      "sha256": "51cb4c2a4fcf1545cf86bfa780f83e3a8786a8af7fe1877d52332c1f15fc49b2",
+      "bytes": 892
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/scatomic_gse274229_mapping_v1/tnk_gse274229_scatomic_category_summary_v1.tsv",
+      "sha256": "85a469c77e98105512e9a4dd712a5df2e1e35ed7a1e6cf29d15285b75757af4b",
+      "bytes": 2019
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/scatomic_gse274229_mapping_v1/tnk_gse274229_scatomic_identity_summary_v1.tsv",
+      "sha256": "ce50b8d4209b1d80ece01e22bbeb5688a58feea3e5439821c0bac739a136dae0",
+      "bytes": 1550
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/scatomic_gse274229_mapping_v1/tnk_gse274229_scatomic_literal_crosstab_v1.tsv",
+      "sha256": "74e79f63742b489e84682014bad39501a5b815cf79470613f77c2aceea8470de",
+      "bytes": 9044
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/scatomic_gse274229_mapping_v1/tnk_gse274229_scatomic_overlap_cells_v1.tsv.gz",
+      "sha256": "10423ece576aad49b26a6a1184d005910b90e8f5563ea25a6c9da87cfeb06a1a",
+      "bytes": 111339
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/source_label_mapping_v1/tnk_source_label_mapping_cluster_summary_v1.tsv",
+      "sha256": "575e1023f596feafced1d400d9eaef90d7841d5c9e223ce59187b5225e98a1af",
+      "bytes": 4214
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/source_label_mapping_v1/tnk_source_label_mapping_per_cell_v1.tsv.gz",
+      "sha256": "fec178c58f43e3682cbff87286e70acd5a25c8dee01d315429e28120f7e678e8",
+      "bytes": 230764
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/source_label_mapping_v1/tnk_source_label_mapping_qc_v1.json",
+      "sha256": "1f79f9f415d607ef9bd59dba449a912a0f7329a192001feb99d52562218b2754",
+      "bytes": 2234
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/source_label_mapping_v1/tnk_source_label_mapping_sample_summary_v1.tsv",
+      "sha256": "979a8d0c5d4d17a490eb43dc570c598671458fddef68f3d777f4b10116c6fbd0",
+      "bytes": 1469
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/tnk_acceptance_rules_frozen_v1.tsv",
+      "sha256": "3396c64cab20df27503c84577f23075974b171b4a777a5e861764ba1917baa08",
+      "bytes": 918
+    },
+    {
+      "path": "biological_freeze_sprint/tnk_20260913/tnk_taxonomy_frozen_v1.tsv",
+      "sha256": "5efaeac1c305ada61032bf90d4c11975aa6e2842c9f20b3705ccfa00d46dc7cc",
+      "bytes": 1499
+    }
+  ],
+  "evidence": {
+    "decision_gses": [
+      "GSE116256",
+      "GSE131907",
+      "GSE188737",
+      "GSE274229"
+    ],
+    "n_decision_gse": 4,
+    "decision_sources": [
+      "fullscale/tnk_20260913/runs/20260913_tnk_3gse_v3",
+      "fullscale/tnk_20260913/runs/20260913_tnk_gse274229_classifier_overlap_v1"
+    ],
+    "decision_success_samples": 8,
+    "decision_scope_cells": 18904,
+    "note": "pilot rows carry no sample/cell counts; counts cover fullscale runs only"
+  },
+  "evidence_level": "PILOT_FROZEN_HELDOUT_COMPROMISED",
+  "heldout_exposure": {
+    "classification": [
+      "HELDOUT_USED_IN_DECISION",
+      "HELDOUT_OUTPUTS_BEFORE_SPLIT"
+    ],
+    "lineage_freeze_at": "2026-09-13T16:41:46+08:00",
+    "decision_gses": [
+      "GSE116256",
+      "GSE131907",
+      "GSE188737",
+      "GSE274229"
+    ],
+    "heldout_gses_used_in_decision": [
+      "GSE116256"
+    ],
+    "heldout_gses_with_outputs_before_split": [
+      "GSE116256"
+    ],
+    "heldout_gses_with_sealed_outputs_after_split": [],
+    "heldout_decision_cells": 3377
+  },
+  "known_issues": [
+    {
+      "id": "V8-KI-TNK-001",
+      "severity": "critical",
+      "summary": "Held-out GSE116256 was the preregistered T/NK validation cohort (2 samples, 3,377 cells) and contributes to the frozen T_or_NK boundary recurrence ('3 GSE'). T/NK cannot be evaluated as held-out on GSE116256.",
+      "evidence": "biological_freeze_sprint/tnk_20260913/PREREGISTERED_RULES.md; audits/20260916_heldout_exposure_v1/"
+    },
+    {
+      "id": "V8-KI-TNK-002",
+      "severity": "minor",
+      "summary": "The frozen tissue_resident_like state recurred in GSE131907 and GSE188737 only within the primary run (GSE116256 did not contribute); the '3 GSE' claim adds GSE274229 from the classifier-extension run.",
+      "evidence": "fullscale/tnk_20260913/runs/20260913_tnk_3gse_v3/tables/cluster_evidence_all.tsv"
+    },
+    {
+      "id": "V8-KI-001",
+      "severity": "moderate",
+      "summary": "Review clusters are built on the 359-gene marker object that contains every scoring panel (partial circularity). Only Fibroblast/Endothelial have been sensitivity-tested; T/NK, Myeloid, B/Plasma not yet.",
+      "evidence": "audits/20260916_clustering_sensitivity_v1/"
+    },
+    {
+      "id": "V8-KI-002",
+      "severity": "moderate",
+      "summary": "Identity is decided per cluster, so every cell in a cluster inherits the call; within-cluster heterogeneity was not recorded by the historical runners (lineage_review now writes cluster_core_dispersion).",
+      "evidence": "lineage_review/single_core.py"
+    },
+    {
+      "id": "V8-KI-003",
+      "severity": "minor",
+      "summary": "Historical runner scripts were not hashed into run provenance; lineage_review now records engine and spec SHA-256.",
+      "evidence": "fullscale/*/runs/*/config/run_config.json"
+    }
+  ],
+  "global_v8_status": "NOT_FROZEN",
+  "writeback_allowed": false,
+  "generated_at": "2026-09-16T02:26:47.423223+08:00"
+}

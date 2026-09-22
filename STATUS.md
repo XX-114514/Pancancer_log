@@ -1,3 +1,21 @@
+## V8/V9 轻量发布审计（2026-09-22）
+
+- 已建立 `annotation_v8_lineage_audit_20260917`，保存 2026-09-16 生成的 V8 状态和五个谱系 manifest。全局 V8 仍为 `NOT_FROZEN`，没有谱系达到 `HELDOUT_VALIDATED`。
+- T/NK 为 `PILOT_FROZEN_HELDOUT_COMPROMISED`；GSE116256 参与冻结决定，不能再作为该谱系的 held-out 评估。Myeloid/DC 的 12 个后续 held-out GSE 在 split 冻结前已产生输出。
+- Fibroblast、Endothelial 的 held-out exposure 为 clean，但仍保留 clustering/panel 局限；B/Plasma 为 `DEVELOPMENT_FROZEN`，45.4% development cells 回退到 competing lineage。
+- 已建立 `annotation_v9_candidate_20260919`，只复制最新 V9 候选报告和 15-row 开放 L3 复核模板。含 78 个内部绝对路径 key 的原始 manifest 仅以逻辑路径、大小和 SHA-256 索引。
+- 上述 release 都不改变 V7 的全局身份/CNV 权威，也不授权 V8/V9 downstream 写回。
+
+## Nature 投稿上游冻结（2026-09-22）
+
+- 已建立 `manuscript_upstream_freeze_nature_20260922`：V7 是唯一全局身份/CNV 投稿参考；14.2-GB raw-count Zarr、V2/V5 父对象、基因坐标、实际 runner、动态 CNV 引擎和最终对象均已用哈希锁定。
+- 外部 2026-09-19 V9 状态为 `FROZEN_CANDIDATE`，不是正式冻结：15 个 L3 cluster 待人工复核，632 个样本建议 CNV 重跑但未执行，S6 主要继承 V7 CNV。V9 已隔离为候选，不能进入正式投稿分母或下游。
+- V8 仍仅有 Myeloid/DC、T/NK、Fibroblast、Endothelial、B/Plasma 的 lineage-taxonomy freeze；没有全局细胞级写回。
+- Nature Article 主稿、Methods 映射、初投清单、cover letter、Reporting Summary 工作表、Data/Code availability、figure-panel source 和 supplementary 骨架已经准备。
+- 当前包不是可直接投稿版本。尚需完成版本晋升决定、V9/V8 科学门槛、最终身份版本上的 downstream 决策、Copykat `hg20` 核验、54-GSE source/licence manifest、历史环境补档和作者/伦理/基金信息。
+- 权威入口：[`releases/manuscript_upstream_freeze_nature_20260922/README.md`](releases/manuscript_upstream_freeze_nature_20260922/README.md)。
+
+
 ## B/Plasma full-cohort biological freeze (2026-09-14)
 
 - `20260914_bplasma_full_v1` completed the full frozen V7 B/Plasma universe: 981 success, 331 explicit `<50-cell` skips, 0 failed, 685,843 processed cells and 4,378 clusters.

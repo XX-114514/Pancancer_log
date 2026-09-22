@@ -1,0 +1,162 @@
+{
+  "schema_version": "v8_freeze_manifest_v1",
+  "lineage": "Endothelial",
+  "freeze_directory": "biological_freeze_sprint/endothelial_20260914",
+  "sentinel": {
+    "path": "biological_freeze_sprint/endothelial_20260914/FROZEN_V8_ENDOTHELIAL_TAXONOMY",
+    "sha256": "3e62a84e58cac4f38e649db0ea43d02d38ab6b84736e6cca3157372acf125b66",
+    "fields": {
+      "status": "FROZEN_V8_ENDOTHELIAL_TAXONOMY",
+      "run_id": "20260914_endothelial_3gse_v1",
+      "cells": "8951",
+      "clusters": "35",
+      "identity_cells": "7881",
+      "accepted_states": "arterial;venous",
+      "fallback_states": "capillary;angiogenic_tip;lymphatic",
+      "downstream_counts": "{\"Endothelial\": 4583, \"Endothelial_arterial\": 1580, \"Endothelial_venous\": 1718, \"unresolved\": 1070}"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/EXECUTION_RECORD.md",
+      "sha256": "c19e6a6734f141da03a1d627b24b24fed5c39b38b991a129606ea49f1e4da6d4",
+      "bytes": 1248
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/FROZEN_V8_ENDOTHELIAL_TAXONOMY",
+      "sha256": "3e62a84e58cac4f38e649db0ea43d02d38ab6b84736e6cca3157372acf125b66",
+      "bytes": 318
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/PREREGISTERED_RULES.md",
+      "sha256": "872dfbabdd84bd08ebd332427a15555b4d37dbf227709ee7474889043517c7fd",
+      "bytes": 2520
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/PREREGISTRATION_FROZEN",
+      "sha256": "2ce2fbe1ed3628c1f3c45987f0e60d4b7e66cc5b79ed47cda38beda0a08fccd6",
+      "bytes": 267
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/endothelial_acceptance_rules_frozen_v1.tsv",
+      "sha256": "160a5c946f32ddc11c228e1029ed2b3619b071b9e9327f91aa412ea3a11e162e",
+      "bytes": 672
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/endothelial_cell_assignments_frozen_v1.tsv.gz",
+      "sha256": "316c425f9d3aac248a6fd3488b98f54a80b4a94c8004e2293af4c15b90912992",
+      "bytes": 150635
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/endothelial_cluster_decisions_frozen_v1.tsv",
+      "sha256": "ef32ad9948f7435b0613f55db0c231a345673b2b5e0e275c0bceb2e123f373f2",
+      "bytes": 35387
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/endothelial_identity_supported_state_recurrence_frozen_v1.tsv",
+      "sha256": "af06ff4cc139c8c068930f69b389bf69ab4319c0fccde14f99f76ffe870b6216",
+      "bytes": 1100
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/endothelial_taxonomy_frozen_v1.tsv",
+      "sha256": "04dccfc68ef20c006b9288aafaf0649e22399651921947398104b865f37c0f63",
+      "bytes": 1388
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/source_classifier_evidence/evidence_summary_v1.json",
+      "sha256": "661e2a89047b24518b45f7994d19e6ca25aaaf2d10dd9bc8ef9b5cc975f2b9d5",
+      "bytes": 2286
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/source_classifier_evidence/scatomic_validation_cell_mapping_v1.tsv.gz",
+      "sha256": "358d32de7a5f15f6be0dd00e55559deecf7265f770f57f9a890e1f63657bb80c",
+      "bytes": 20054
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/source_classifier_evidence/scatomic_validation_raw_label_counts_v1.tsv",
+      "sha256": "a2d13eea9d2a71c468ec7e0cd5f33867d3e266271b6ffb9b509be1b60ac62516",
+      "bytes": 1006
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/source_classifier_evidence/source_label_coverage_v1.tsv",
+      "sha256": "0124301a97c3041e18e2522ab8214463d01948afb0fa4e5a427d411673279cd5",
+      "bytes": 2515
+    },
+    {
+      "path": "biological_freeze_sprint/endothelial_20260914/source_classifier_evidence/source_raw_label_counts_v1.tsv",
+      "sha256": "2346187f9b42e1af69c509b22d302e0eb24a38f36bdaed7d253a426e2fa27f26",
+      "bytes": 860
+    }
+  ],
+  "evidence": {
+    "decision_gses": [
+      "GSE222315",
+      "GSE256136",
+      "GSE274229"
+    ],
+    "n_decision_gse": 3,
+    "decision_sources": [
+      "fullscale/endothelial_20260914/runs/20260914_endothelial_3gse_v1"
+    ],
+    "decision_success_samples": 6,
+    "decision_scope_cells": 8951,
+    "note": "pilot rows carry no sample/cell counts; counts cover fullscale runs only"
+  },
+  "evidence_level": "PILOT_FROZEN",
+  "heldout_exposure": {
+    "classification": [
+      "CLEAN"
+    ],
+    "lineage_freeze_at": "2026-09-14T09:17:51.115492+08:00",
+    "decision_gses": [
+      "GSE222315",
+      "GSE256136",
+      "GSE274229"
+    ],
+    "heldout_gses_used_in_decision": [],
+    "heldout_gses_with_outputs_before_split": [],
+    "heldout_gses_with_sealed_outputs_after_split": [],
+    "heldout_decision_cells": 0
+  },
+  "known_issues": [
+    {
+      "id": "V8-KI-EN-001",
+      "severity": "minor",
+      "summary": "KDR is in both Endothelial_core and state_angiogenic_tip, so that state correlates with identity by construction (it fell back to parent).",
+      "evidence": "lineage_review/specs/endothelial_20260914.json"
+    },
+    {
+      "id": "V8-KI-EN-002",
+      "severity": "minor",
+      "summary": "Historical runner carried an unused audit matcher copied from Fibroblast (fibro/CAF/stromal terms); it had no effect (audit_unique_n=0) and is not reproduced in lineage_review.",
+      "evidence": "fullscale/endothelial_20260914/scripts/run_targeted.py:170-214"
+    },
+    {
+      "id": "V8-KI-EN-003",
+      "severity": "minor",
+      "summary": "Clustering sensitivity: cell-level label agreement 92.6-96.4% and arterial/venous stay cross-GSE recurrent in all variants, but support shrinks (venous 3 GSE/5 samples/1,718 cells -> 2 GSE/2 samples/841 cells at Leiden 0.3, exactly at the >=2/>=2 threshold); sample GSE256136|GSM8086247_N10 drops to 50.7% label agreement.",
+      "evidence": "audits/20260916_clustering_sensitivity_v1/endothelial_20260914_summary.json"
+    },
+    {
+      "id": "V8-KI-001",
+      "severity": "moderate",
+      "summary": "Review clusters are built on the 359-gene marker object that contains every scoring panel (partial circularity). Only Fibroblast/Endothelial have been sensitivity-tested; T/NK, Myeloid, B/Plasma not yet.",
+      "evidence": "audits/20260916_clustering_sensitivity_v1/"
+    },
+    {
+      "id": "V8-KI-002",
+      "severity": "moderate",
+      "summary": "Identity is decided per cluster, so every cell in a cluster inherits the call; within-cluster heterogeneity was not recorded by the historical runners (lineage_review now writes cluster_core_dispersion).",
+      "evidence": "lineage_review/single_core.py"
+    },
+    {
+      "id": "V8-KI-003",
+      "severity": "minor",
+      "summary": "Historical runner scripts were not hashed into run provenance; lineage_review now records engine and spec SHA-256.",
+      "evidence": "fullscale/*/runs/*/config/run_config.json"
+    }
+  ],
+  "global_v8_status": "NOT_FROZEN",
+  "writeback_allowed": false,
+  "generated_at": "2026-09-16T02:26:47.428973+08:00"
+}

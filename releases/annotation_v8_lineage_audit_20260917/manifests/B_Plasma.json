@@ -1,0 +1,327 @@
+{
+  "schema_version": "v8_freeze_manifest_v1",
+  "lineage": "B_Plasma",
+  "freeze_directory": "biological_freeze_sprint/b_plasma_20260914",
+  "sentinel": {
+    "path": "biological_freeze_sprint/b_plasma_20260914/FROZEN_V8_B_PLASMA_TAXONOMY",
+    "sha256": "e4a49d19c447dea08ab03b0e5e2f5cd8c4b244d4942701507ac7bf10eb69a936",
+    "fields": {
+      "status": "FROZEN_V8_B_PLASMA_TAXONOMY",
+      "scope": "development_only_nonheldout",
+      "cells": "557601",
+      "clusters": "3501",
+      "gse": "39",
+      "samples": "783",
+      "heldout_predictions_opened": "false",
+      "writeback_allowed": "false",
+      "global_v8_status": "NOT_FROZEN"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/FROZEN_V8_B_PLASMA_TAXONOMY",
+      "sha256": "e4a49d19c447dea08ab03b0e5e2f5cd8c4b244d4942701507ac7bf10eb69a936",
+      "bytes": 193
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/PREREGISTERED_RULES.md",
+      "sha256": "a2c71bbcfab9d384365cf738255c156b54bf48a5f062ad1632f14ec3914076ef",
+      "bytes": 2440
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/PREREGISTRATION_FROZEN",
+      "sha256": "d061650ca8cbcf542881e9805308f6711be55ffc1b841dc2963b95a59a467320",
+      "bytes": 342
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/b_plasma_acceptance_rules_frozen_v1.tsv",
+      "sha256": "e5c9475766b5f3ad12e332950c4b604f7886a4c7ecfc7f47a5838338b7d67bdb",
+      "bytes": 675
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/development_final_cell_assignments_v1.tsv.gz",
+      "sha256": "06fb34436e417b6cab59edc92b9ac19a539d3b551ef83b86b2af120eead5450f",
+      "bytes": 9024787
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/development_final_cluster_decisions_v1.tsv",
+      "sha256": "9085a1f2833dff31051094aac4e9b392707ee1bf8f6da829c2b668647698089e",
+      "bytes": 3817140
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/final_taxonomy_v1.tsv",
+      "sha256": "f4fdfa2962817d5ed3e3678ae9d2d2bef9ac4b0e42ed0e6fb9f584de24b66b2e",
+      "bytes": 949
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/freeze_summary_v1.json",
+      "sha256": "cbd7ed4ca3a2128f5c7598109a0f1b54b71b49709f0a7f1948a26a91421c8f8e",
+      "bytes": 1021
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/DEVELOPMENT_REVIEW_v1.md",
+      "sha256": "bb318e55d0a6c0c2910fd4e9dede36c0bb07548a64d03efe2cf4d9a3808fa97c",
+      "bytes": 3464
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_candidate_v7_overlap_v1.tsv",
+      "sha256": "ad1a186d70b78b6089a910b6248a54bec6d6ac38440923e001279be258fece8d",
+      "bytes": 766
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_contamination_top_panels_v1.tsv",
+      "sha256": "d807f263c119b0051e8c4edbf2053adbee5c6ba5a04a859285fcdd22f2bc8d88",
+      "bytes": 1646
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_decision_summary_v1.tsv",
+      "sha256": "154ab204319eb7480b87c48beefef3696ef9dc309207270e37e1c0aba49ba24e",
+      "bytes": 553
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_identity_state_recurrence_v1.tsv",
+      "sha256": "736dd5060ca21fc4d0c4772753d5b9bedf6b38e49a8ccd177c34023980f0023e",
+      "bytes": 462
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_implementation_audit_v1.tsv",
+      "sha256": "551fd7dd9af615409e5783358de1007963070d299d10f32e46efcfb8786e9517",
+      "bytes": 1249
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_recurrence_by_gse_v1.tsv",
+      "sha256": "151d9f4dc70c44022ec039c928c406e68c708850cedda4c3d26a470ebf216226",
+      "bytes": 7635
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_recurrence_by_sample_v1.tsv",
+      "sha256": "08941ceae70701b1f80fadab7b0d3253c2158140602d88d0f8d943146de2cda7",
+      "bytes": 102539
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_scope_summary_v1.tsv",
+      "sha256": "5a4d7e8922eba3e07c4c7d74481dc66cae23383b5150ff3a9d94a00a4fd9d8a7",
+      "bytes": 676
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_state_overlap_v1.tsv",
+      "sha256": "c6b8fe97ba09406a769a79bb18d5a793b2a35f37c3b161db1cb7d92f5d223332",
+      "bytes": 1557
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_top10_marker_coherence_v1.tsv",
+      "sha256": "7f2050bc09e4570fa87c79af85c4092603c081b6478e6297d259f3645a567d41",
+      "bytes": 1307
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/development_v7_major_composition_v1.tsv",
+      "sha256": "a4845c6f3f7b57081f446e288cfe89bae47f245c4785af06e6d5e1986aec9763",
+      "bytes": 1543
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/review_development/review_manifest_v1.json",
+      "sha256": "8e4c8406bd30a70e1146e14a82a6d6afbed648f92105dd7e2b0451e6ac6d4ea1",
+      "bytes": 723
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_classifier_evidence/scatomic_validation_cell_mapping_v1.tsv.gz",
+      "sha256": "a2a895ad84264ae96a6283b3136e9c05ae179363e452e2e4309fd400b474f7af",
+      "bytes": 34731
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_classifier_evidence/scatomic_validation_cluster_summary_v1.tsv",
+      "sha256": "a88a789fc65e6bf06c9c072022904a864c67261b8b45c55bcd9503854d6f1361",
+      "bytes": 3963
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_classifier_evidence/scatomic_validation_sample_summary_v1.tsv",
+      "sha256": "55fc58c7e626ef063278d1a46833e1d6f764e1a892eec0d88969eb8f77441663",
+      "bytes": 2134
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_label_evidence_gse188711/evidence_summary_v1.json",
+      "sha256": "125ed71bf1a146d74c4e49e4fbed26dcbb5974b1ab662c63b5f2658ff439d3e4",
+      "bytes": 6681
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_label_evidence_gse188711/source_field_inventory_v1.tsv",
+      "sha256": "2eaef16146d99a647c136062ffbba85b10940632d2a06509a34c1be7a6e906e6",
+      "bytes": 1813
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_label_evidence_gse188711/source_label_cell_mapping_v1.tsv.gz",
+      "sha256": "8ce80bdc8b739977bafdf855934fbda06fcceea7a5884d5def793fcaf6dc6482",
+      "bytes": 42062
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_label_evidence_gse188711/source_label_cluster_summary_v1.tsv",
+      "sha256": "996d4ae530502f372bf1fc6b321660f068a3b8e1c3034a0ca860068498922717",
+      "bytes": 7560
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_label_evidence_gse188711/source_label_coverage_v1.tsv",
+      "sha256": "f4a5f2d8f11b34f7330b4b041bed28a7e685eb0b40d9741d0da9c078b9fa14ee",
+      "bytes": 1704
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_label_evidence_gse188711/source_label_sample_summary_v1.tsv",
+      "sha256": "3ce2b467b9408d965649dffb98d37bd95a3ee4136a756a93840cfcdd20449983",
+      "bytes": 2170
+    },
+    {
+      "path": "biological_freeze_sprint/b_plasma_20260914/source_label_evidence_gse188711/source_raw_label_counts_v1.tsv",
+      "sha256": "b774b547dac26d7e32f48902a36067261eea9e3f397859cc80d1a111705870d8",
+      "bytes": 364
+    }
+  ],
+  "evidence": {
+    "decision_gses": [
+      "GSE115978",
+      "GSE127465",
+      "GSE131907",
+      "GSE132465",
+      "GSE138709",
+      "GSE148071",
+      "GSE152048",
+      "GSE155698",
+      "GSE159115",
+      "GSE161529",
+      "GSE162025",
+      "GSE163558",
+      "GSE166555",
+      "GSE169609",
+      "GSE176031",
+      "GSE178341",
+      "GSE178481",
+      "GSE179784",
+      "GSE183904",
+      "GSE184362",
+      "GSE184880",
+      "GSE188711",
+      "GSE188737",
+      "GSE189357",
+      "GSE189889",
+      "GSE197461",
+      "GSE200997",
+      "GSE222315",
+      "GSE244101",
+      "GSE256136",
+      "GSE261774",
+      "GSE270680",
+      "GSE273127",
+      "GSE274229",
+      "GSE274934",
+      "GSE288479",
+      "GSE290925",
+      "GSE299340",
+      "GSE302903"
+    ],
+    "n_decision_gse": 39,
+    "decision_sources": [
+      "fullscale/b_plasma_20260914/runs/20260914_bplasma_full_v1"
+    ],
+    "decision_success_samples": 783,
+    "decision_scope_cells": 557601,
+    "note": "pilot rows carry no sample/cell counts; counts cover fullscale runs only"
+  },
+  "evidence_level": "DEVELOPMENT_FROZEN",
+  "heldout_exposure": {
+    "classification": [
+      "HELDOUT_OUTPUTS_SEALED_BY_POLICY"
+    ],
+    "lineage_freeze_at": "2026-09-14T22:45:58.095631+08:00",
+    "decision_gses": [
+      "GSE115978",
+      "GSE127465",
+      "GSE131907",
+      "GSE132465",
+      "GSE138709",
+      "GSE148071",
+      "GSE152048",
+      "GSE155698",
+      "GSE159115",
+      "GSE161529",
+      "GSE162025",
+      "GSE163558",
+      "GSE166555",
+      "GSE169609",
+      "GSE176031",
+      "GSE178341",
+      "GSE178481",
+      "GSE179784",
+      "GSE183904",
+      "GSE184362",
+      "GSE184880",
+      "GSE188711",
+      "GSE188737",
+      "GSE189357",
+      "GSE189889",
+      "GSE197461",
+      "GSE200997",
+      "GSE222315",
+      "GSE244101",
+      "GSE256136",
+      "GSE261774",
+      "GSE270680",
+      "GSE273127",
+      "GSE274229",
+      "GSE274934",
+      "GSE288479",
+      "GSE290925",
+      "GSE299340",
+      "GSE302903"
+    ],
+    "heldout_gses_used_in_decision": [],
+    "heldout_gses_with_outputs_before_split": [],
+    "heldout_gses_with_sealed_outputs_after_split": [
+      "GSE116256",
+      "GSE139829",
+      "GSE141526",
+      "GSE179994",
+      "GSE182109",
+      "GSE190597",
+      "GSE201347",
+      "GSE228501",
+      "GSE253013",
+      "GSE281740",
+      "GSE297041",
+      "GSE299623"
+    ],
+    "heldout_decision_cells": 0
+  },
+  "known_issues": [
+    {
+      "id": "V8-KI-BP-001",
+      "severity": "major",
+      "summary": "45.4% of development cells (252,944) fall back to competing lineage. Cell-level: 29.6% carry no B/Plasma identity (likely V7 mislabel, e.g. Bcell_unresolved_CST3 / Bcell_coarse_provisional), 33.6% co-express identity and a foreign lineage (doublet/ambient), 28.0% are clean identity cells rejected with their cluster. Per-GSE fallback ranges 11%-100%.",
+      "evidence": "audits/20260916_bplasma_contamination_v1/"
+    },
+    {
+      "id": "V8-KI-BP-002",
+      "severity": "moderate",
+      "summary": "Held-out GSE predictions were computed and remain readable on disk; exclusion is enforced by code and policy, not access control.",
+      "evidence": "fullscale/b_plasma_20260914/runs/20260914_bplasma_full_v1/objects/per_sample/"
+    },
+    {
+      "id": "V8-KI-001",
+      "severity": "moderate",
+      "summary": "Review clusters are built on the 359-gene marker object that contains every scoring panel (partial circularity). Only Fibroblast/Endothelial have been sensitivity-tested; T/NK, Myeloid, B/Plasma not yet.",
+      "evidence": "audits/20260916_clustering_sensitivity_v1/"
+    },
+    {
+      "id": "V8-KI-002",
+      "severity": "moderate",
+      "summary": "Identity is decided per cluster, so every cell in a cluster inherits the call; within-cluster heterogeneity was not recorded by the historical runners (lineage_review now writes cluster_core_dispersion).",
+      "evidence": "lineage_review/single_core.py"
+    },
+    {
+      "id": "V8-KI-003",
+      "severity": "minor",
+      "summary": "Historical runner scripts were not hashed into run provenance; lineage_review now records engine and spec SHA-256.",
+      "evidence": "fullscale/*/runs/*/config/run_config.json"
+    }
+  ],
+  "global_v8_status": "NOT_FROZEN",
+  "writeback_allowed": false,
+  "generated_at": "2026-09-16T02:26:47.469969+08:00"
+}

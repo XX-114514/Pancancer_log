@@ -1,6 +1,15 @@
 # PanCancer 项目进展与工作日志
 
 本仓库是 PanCancer 项目的轻量级、可审计记录系统，当前以 `Project_v3` 的泛癌单细胞转录组主线为主要范围。它记录当前状态、任务历史、方法、正式运行、技术决策及证据索引，是项目进展的权威入口，但不是分析数据仓库。
+
+## 2026-09-22 投稿冻结入口
+
+- Nature 投稿准备与注释上游锁：[`manuscript_upstream_freeze_nature_20260922`](releases/manuscript_upstream_freeze_nature_20260922/README.md)。
+- V8 最新谱系审计限定：[`annotation_v8_lineage_audit_20260917`](releases/annotation_v8_lineage_audit_20260917/README.md)。
+- V9 最新候选报告与开放复核表：[`annotation_v9_candidate_20260919`](releases/annotation_v9_candidate_20260919/README.md)。
+- 全局投稿参考仍是 V7；V8 仅为 lineage taxonomy，V9 为 `FROZEN_CANDIDATE`，均未晋升为全局参考。
+- 当前 V5-derived 通讯/空间/临床图不能无说明地称为 V7/V9-derived。
+
 ## 2026-09-12 权威入口
 
 - 当前细胞身份/CNV 恶性参考：[V7 冻结 release](releases/annotation_v7_20260905/README.md)。

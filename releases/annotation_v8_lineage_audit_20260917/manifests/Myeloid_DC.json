@@ -1,0 +1,212 @@
+{
+  "schema_version": "v8_freeze_manifest_v1",
+  "lineage": "Myeloid_DC",
+  "freeze_directory": "biological_freeze_sprint/myeloid_dc_20260913",
+  "sentinel": {
+    "path": "biological_freeze_sprint/myeloid_dc_20260913/FROZEN_V8_MYELOID_TAXONOMY",
+    "sha256": "5cf8b70fe29bda6bd9029ff4968d961a600acfb38fbeaccbc248be562d869699",
+    "fields": {
+      "status": "FROZEN_V8_MYELOID_TAXONOMY",
+      "frozen_at": "2026-09-13T13:27:21+0800",
+      "scope": "taxonomy_and_acceptance_rules_only",
+      "cell_level_full_cohort_writeback": "false",
+      "held_out_accuracy_claim": "false",
+      "rules_sha256": "53db08b20aa70a20414b36b0165ffc673f4bb943c248b93e80c22affc758c649",
+      "third_gse_cluster_evidence_sha256": "e96343304cdefad981a6b14f6442b540f7e6c32e522c1e2860e02844cb0c994e",
+      "third_gse_label_recurrence_sha256": "4d4292c34d5ffdf4b8d8c038159a48f5c605fd3f8ecd8213841896dc1b705b1c",
+      "scatomic_predictions_sha256": "1d7064e20fc91c55bf65c2a941ca6c71944014ece3c6509a0a8aa9888dc08819",
+      "marker_scatomic_mapping_sha256": "0b819a0d1b3de8e82fe873d8af888ef4764942c1efaa6827c84c89d8de7eb6bb",
+      "accepted_identity": "FCN1_monocyte;Macrophage;cDC2",
+      "accepted_state": "C1QC;inflammatory",
+      "parent_fallback": "SPP1_TREM2_macrophage;pDC;FCGR3A;cDC1;DC3;LAMP3;FOLR2;other_nonrecurrent",
+      "change_policy": "bug_fixes_only; additional fine-grained work is post-freeze exploratory"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/EXECUTION_RECORD.md",
+      "sha256": "a50d406335a483c725bbf170fa57d96ab5edbc35b3c2cf8186838a9fe3554d2e",
+      "bytes": 1541
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/FROZEN_V8_MYELOID_TAXONOMY",
+      "sha256": "5cf8b70fe29bda6bd9029ff4968d961a600acfb38fbeaccbc248be562d869699",
+      "bytes": 900
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/PREREGISTERED_RULES.md",
+      "sha256": "f59bf0587c181a06f89d79d43e500dbaa6fe8ac6267791d5dfe5d7f1c0f95ef2",
+      "bytes": 1342
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/gse274229_marker_scatomic_cell_mapping_v1.tsv.gz",
+      "sha256": "c0d299727ad46d2f14d03e3183b08df7a298fb5f1b114b3fa6c31cee17199586",
+      "bytes": 32569
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/gse274229_marker_scatomic_crosstab_v1.tsv",
+      "sha256": "b7242f6b399ee2492f1ede3e4f90db2ef500de829ad3b7c693c347955f1684f2",
+      "bytes": 2748
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/gse274229_marker_scatomic_summary_v1.tsv",
+      "sha256": "4fc5deed447a5b23f45335ba072d7a08bc8ca709b36e8eb80b51538817276c3e",
+      "bytes": 414
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/gse274229_validation_summary_v1.tsv",
+      "sha256": "95d278acf9dd4be0580eb38aba5092a0c1144d9b3b8de97e69a2c715bd032558",
+      "bytes": 1437
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/myeloid_dc_acceptance_rules_frozen_v1.tsv",
+      "sha256": "53db08b20aa70a20414b36b0165ffc673f4bb943c248b93e80c22affc758c649",
+      "bytes": 3050
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/myeloid_dc_taxonomy_decision_v1.tsv",
+      "sha256": "c96a5a6cf7c2650f962a5febfd5cf444275da494950039ef20207c73c9fc5659",
+      "bytes": 1148
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/myeloid_dc_taxonomy_frozen_v2.tsv",
+      "sha256": "6c663787a73b807c0ec91009c8257af12f661d97bfeca5b6ef2b70e6eef71ba4",
+      "bytes": 1444
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/project_records_codex_log.md",
+      "sha256": "67e4378dc772217de79fabe8cec151ebd04fcedc512fc853d22582b161e0fbfe",
+      "bytes": 1286
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/project_records_fullscale_completion_header.md",
+      "sha256": "88523bcc7d2672becaf3d31efb887018b85b65a05d9a343f4f05b7d94c8a178c",
+      "bytes": 473
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/project_records_run.md",
+      "sha256": "9b0d3a94c332179303f274f2bd24d2bfdaf7b4a73cbb5bb4edac672303e23d4a",
+      "bytes": 1513
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/project_records_status_header.md",
+      "sha256": "e47b97e9e6065894c90a385f5afadb6676a53b9da463168c9be4c6f8f2f6bb84",
+      "bytes": 989
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/project_records_todo_header.md",
+      "sha256": "954ec5e05e7af9701152b73b62542c32c989ccaab2e2e8ad30f1db67f3e85526",
+      "bytes": 778
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/scatomic_gse274229_v1/scatomic_confidence_counts_v1.tsv",
+      "sha256": "cea28376e86d1835a17c15f4881940327a3978a41abf2dcf0e371e42c0dabcf1",
+      "bytes": 200
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/scatomic_gse274229_v1/scatomic_label_counts_v1.tsv",
+      "sha256": "43e8418110dd993db08c7823b17b9054aecd8fde7b656223dc35f28f6f45a05c",
+      "bytes": 2648
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/scatomic_gse274229_v1/scatomic_predictions_S37_v1.tsv.gz",
+      "sha256": "8df18a7b1615c2cfb71f5b1b4d8da417d523ee66b0ab101665e3a8e226d9e12b",
+      "bytes": 69812
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/scatomic_gse274229_v1/scatomic_predictions_S5_v1.tsv.gz",
+      "sha256": "8793cdda0681007ff6c4952fa760c3724072f82ca39532f457810c0a689de9a5",
+      "bytes": 46436
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/scatomic_gse274229_v1/scatomic_predictions_all_v1.tsv.gz",
+      "sha256": "1d7064e20fc91c55bf65c2a941ca6c71944014ece3c6509a0a8aa9888dc08819",
+      "bytes": 115901
+    },
+    {
+      "path": "biological_freeze_sprint/myeloid_dc_20260913/scatomic_gse274229_v1/scatomic_run_status_v1.json",
+      "sha256": "531af7837b47d4bebd982d8132d1281291e0e52c108e5d9421c31bd1f53fb5dd",
+      "bytes": 1277
+    }
+  ],
+  "evidence": {
+    "decision_gses": [
+      "GSE131907",
+      "GSE161529",
+      "GSE274229"
+    ],
+    "n_decision_gse": 3,
+    "decision_sources": [
+      "fullscale/myeloid_dc_20260913/runs/20260913_gse274229_target_v1",
+      "pilots/unresolved_myeloid_dc_20260912",
+      "pilots/unresolved_myeloid_dc_cross_gse_20260912"
+    ],
+    "decision_success_samples": 2,
+    "decision_scope_cells": 2117,
+    "note": "pilot rows carry no sample/cell counts; counts cover fullscale runs only"
+  },
+  "evidence_level": "PILOT_FROZEN",
+  "heldout_exposure": {
+    "classification": [
+      "HELDOUT_OUTPUTS_BEFORE_SPLIT"
+    ],
+    "lineage_freeze_at": "2026-09-13T13:27:21+08:00",
+    "decision_gses": [
+      "GSE131907",
+      "GSE161529",
+      "GSE274229"
+    ],
+    "heldout_gses_used_in_decision": [],
+    "heldout_gses_with_outputs_before_split": [
+      "GSE116256",
+      "GSE139829",
+      "GSE141526",
+      "GSE179994",
+      "GSE182109",
+      "GSE190597",
+      "GSE201347",
+      "GSE228501",
+      "GSE253013",
+      "GSE281740",
+      "GSE297041",
+      "GSE299623"
+    ],
+    "heldout_gses_with_sealed_outputs_after_split": [],
+    "heldout_decision_cells": 0
+  },
+  "known_issues": [
+    {
+      "id": "V8-KI-MY-001",
+      "severity": "major",
+      "summary": "The 54-GSE full-cohort review (finished 2026-09-13 11:48) produced outputs for all 12 held-out GSEs before the held-out split was frozen (2026-09-14 22:06). Not cited in the decision, but those GSEs are unblinded for Myeloid.",
+      "evidence": "audits/20260916_heldout_exposure_v1/exposure_findings_v1.json"
+    },
+    {
+      "id": "V8-KI-MY-002",
+      "severity": "moderate",
+      "summary": "FCN1_monocyte was accepted although its third-GSE top1 clusters failed the frozen contamination gate (validation caveat recorded in the decision table).",
+      "evidence": "biological_freeze_sprint/myeloid_dc_20260913/myeloid_dc_taxonomy_decision_v1.tsv"
+    },
+    {
+      "id": "V8-KI-001",
+      "severity": "moderate",
+      "summary": "Review clusters are built on the 359-gene marker object that contains every scoring panel (partial circularity). Only Fibroblast/Endothelial have been sensitivity-tested; T/NK, Myeloid, B/Plasma not yet.",
+      "evidence": "audits/20260916_clustering_sensitivity_v1/"
+    },
+    {
+      "id": "V8-KI-002",
+      "severity": "moderate",
+      "summary": "Identity is decided per cluster, so every cell in a cluster inherits the call; within-cluster heterogeneity was not recorded by the historical runners (lineage_review now writes cluster_core_dispersion).",
+      "evidence": "lineage_review/single_core.py"
+    },
+    {
+      "id": "V8-KI-003",
+      "severity": "minor",
+      "summary": "Historical runner scripts were not hashed into run provenance; lineage_review now records engine and spec SHA-256.",
+      "evidence": "fullscale/*/runs/*/config/run_config.json"
+    }
+  ],
+  "global_v8_status": "NOT_FROZEN",
+  "writeback_allowed": false,
+  "generated_at": "2026-09-16T02:26:47.419677+08:00"
+}

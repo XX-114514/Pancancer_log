@@ -8,3 +8,5 @@
 *.md text eol=lf
 *.png binary
 *.pdf binary
+# Preserve structurally meaningful trailing empty fields in the exact V9 TSV snapshot.
+releases/annotation_v9_candidate_20260919/manual_review_decisions_L3_pilot_TEMPLATE_v2.tsv whitespace=-blank-at-eol

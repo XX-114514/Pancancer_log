@@ -1,0 +1,6 @@
+figure_id	panel_id	release_id	source_table	filter	statistic	denominator	script	status	notes
+Fig1	A	TBD	TBD	TBD	TBD	TBD	TBD	open	cohort flow
+Fig2	A	annotation_v7_20260905	tables/major_celltype_v7_counts.tsv	all_V7_cells	cell_count	4676787	TBD	open	verify plotting source
+Fig3	A	annotation_v7_20260905	tables/malignancy_tier_v7_counts.tsv	all_V7_cells	cell_count	4676787	TBD	open	separate not_evaluable
+Fig4	A	communication_evidence_chain_20260906	tables/focus_axes_replication_summary.tsv	TBD	TBD	TBD	scripts/05_figures.py	blocked_version	V5-derived
+Fig5	A	communication_evidence_chain_20260906	tables/EVIDENCE_MATRIX.tsv	TBD	TBD	TBD	scripts/05_figures.py	blocked_version	V5-derived

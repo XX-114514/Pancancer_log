@@ -1,0 +1,10 @@
+table_id	working_title	authoritative_source	version	status	publication_action
+S1	Datasets samples and study roles	inventories/datasets.tsv	mixed_current	incomplete	complete_final_54GSE_or_declared_scope
+S2	V7 cell identities and confidence	releases/annotation_v7_20260905/tables/	V7	frozen	select_aggregate_tables_and_dictionary
+S3	V7 per-sample CNV completion and skip reasons	releases/annotation_v7_20260905/tables/per_sample_cnv_result_index.tsv	V7	frozen	review_sample_level_governance
+S4	V7 malignancy evidence tiers	releases/annotation_v7_20260905/tables/malignancy_tier_v7_by_cancer.tsv	V7	frozen	add_denominator_definitions
+S5	V8 lineage taxonomy decisions	external_lineage_freeze_artifacts	V8_lineage_only	partial	include_only_after_heldout_scope_decision
+S6	Communication focus axes and replication	releases/communication_evidence_chain_20260906/tables/	V5_downstream	version_blocked	rerun_or_label_historical
+S7	Spatial and clinical evidence matrix	releases/communication_evidence_chain_20260906/tables/EVIDENCE_MATRIX.tsv	V5_downstream	version_blocked	endpoint_and_source_audit
+S8	Software environments and versions	multiple_run_records	mixed	incomplete	assemble_exact_final_stack
+S9	Figure panel source data	figures/FIGURE_PANEL_SOURCE.tsv	final_submission	incomplete	close_every_panel

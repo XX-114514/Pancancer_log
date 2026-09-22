@@ -1,5 +1,15 @@
 # 重要变更记录
 
+## 2026-09-22
+
+- Froze a manuscript-facing upstream snapshot with V7 as the only global identity/CNV reference.
+- Added deterministic hashes for the 14.2-GB raw-count Zarr, V2/V5 parents, gene coordinates, actual V7 runner, dynamic CNV engines, audits and final objects.
+- Indexed but did not promote the newer V9 `FROZEN_CANDIDATE`; 15 L3 reviews and 632 suggested CNV reruns remain open.
+- Added Nature Article manuscript, cover letter, reporting, data/code availability, figure provenance and supplementary preparation files.
+- Preserved the V5-derived boundary of the current communication/spatial/clinical evidence chain.
+- Added a V8 lineage-audit addendum with the generated status and five exact freeze manifests; recorded T/NK held-out compromise, Myeloid/DC pre-split exposure and the remaining lineage limitations.
+- Added a V9 candidate release with the exact 2026-09-19 report and open 15-cluster review template; retained the path-bearing full manifest externally by hash.
+
 ## 2026-09-14
 
 - Replaced the planned lightweight B/Plasma check with a full 693,261-cell/54-GSE execution: 981 success, 331 explicit skips and 0 failed.

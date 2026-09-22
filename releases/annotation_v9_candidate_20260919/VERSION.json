@@ -1,0 +1,12 @@
+{
+  "release_id": "annotation_v9_candidate_20260919",
+  "candidate_evidence_date": "2026-09-19",
+  "repository_snapshot_date": "2026-09-22",
+  "status": "FROZEN_CANDIDATE_NOT_PROMOTED",
+  "identity_reference": "V7",
+  "global_v9_promoted": false,
+  "manual_l3_clusters_open": 15,
+  "suggested_cnv_rerun_samples": 632,
+  "cnv_rerun_executed": false,
+  "copied_source_files": 2
+}

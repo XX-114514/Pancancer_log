@@ -1,0 +1,16 @@
+lineage	cluster	n_cells	auto_name	reason	best_label	best_auroc	second_label	second_auroc	enrichment_fdr	top_markers	A_gse	B_gse	marker_jaccard_AB	decision_new_label	decision_reason	reviewer	date
+B_Plasma	0	122056	B_Plasma_novel_c0_TNFRSF13B	no_signature_match	B_memory	0.69	B_naive	0.567	7.08e-07	TNFRSF13B;CLECL1;GPR183;NR4A3;SCIMP;AIM2;CAPG;BCL2A1;CD82;RILPL2;ACP5;LDLRAD4	18	28	0.667				
+B_Plasma	3	22498	B_Plasma_novel_c3_MYBL1	no_signature_match	B_naive	0.879	B_germinal_center	0.855	5.79e-02	MYBL1;UBE2C;TYMS;CDK1;MKI67;TPX2;RRM2;AURKB;TOP2A;BIRC5;ZWINT;TK1	11	15	0.786				
+B_Plasma	4	3392	B_Plasma_novel_c4_IL7R	no_signature_match	B_naive	0.652	B_memory	0.589	1.48e-01	IL7R;ANXA1;BCL11B;IL32;GIMAP7;CD3G;TRAT1;ITK;CD3D;CD7;CD3E;CD2	5	5	0.232				
+Myeloid	0	69985	Myeloid_novel_c0_CCL18	no_signature_match	Macro_C1Q	0.88	Macro_FOLR2_LYVE1	0.831	1.41e-10	CCL18;SELENOP;SLC40A1;APOE;FOLR2;ME1;APOC1;ALDH1A1;PLTP;EPHX1;GPNMB;FUCA1	17	27	0.695				
+Myeloid	1	66551	Myeloid_novel_c1_CCL18	no_signature_match	Macro_C1Q	0.766	Macro_SPP1	0.739	1.69e-01	CCL18;CES1;APOC1;CYP27A1;APOE;GCHFR;SCD;GPNMB;NR1H3;CTSD;VAT1;ACP5	17	24	0.587				
+Myeloid	2	58913	Myeloid_novel_c2_APOC1	no_signature_match	Macro_C1Q	0.648	Macro_FOLR2_LYVE1	0.557	4.89e-09	APOC1;APOE;C1QB;GPNMB;C1QC;C1QA;TREM2;LIPA;MSR1;DAB2;STMN1;MS4A4A	15	28	0.389				
+Myeloid	4	53861	Myeloid_novel_c4_S100A12	no_signature_match	Mono_classical	0.682	Mono_nonclassical	0.44	9.46e-05	S100A12;S100A8;STEAP4;S100A9;VNN2;VCAN;CDA;SLC25A37;FCN1;CKAP4;LRG1;CSF3R	16	27	0.339				
+Myeloid	5	48405	Mono_classical	vote_conflict	Mono_classical	0.923	Mono_nonclassical	0.615	4.56e-05	S100A12;S100A8;VCAN;FCN1;S100A9;CD300E;EREG;THBS1;APOBEC3A;SLC25A37;CDA;NRGN	19	28	0.667				
+Myeloid	6	34410	Mono_classical	vote_conflict	Mono_classical	0.81	Macro_FOLR2_LYVE1	0.692	5.31e-06	RETN;FCN1;VCAN	16	26	1.0				
+Myeloid	9	14065	Myeloid_novel_c9_SPC25	no_signature_match	Macro_C1Q	0.741	Mono_classical	0.71	1.00e+00	SPC25;RRM2;PKMYT1;CDCA5;CCNA2;FAM111B;TYMS;MCM10;GTSE1;UBE2C;MND1;TOP2A	12	19	0.786				
+Myeloid	11	9151	cDC2	vote_conflict	cDC2	0.808	Mono_classical	0.758	3.44e-13	CLEC10A;FCER1A;CD1E;CD1C;CD1D;PKIB;CX3CR1;NDRG2;PLD4;GAPT;FCGR2B;LGALS2	10	19	0.45				
+Myeloid	12	7469	Myeloid_novel_c12_UBE2C	no_signature_match	Macro_C1Q	0.728	Mono_classical	0.712	1.00e+00	UBE2C;CKAP2L;ASPM;GTSE1;TOP2A;DEPDC1;CCNA2;HMMR;SPC25;NEK2;KIF14;NUF2	5	15	0.852				
+Myeloid	13	7362	Myeloid_novel_c13_RSAD2	no_signature_match	Mono_classical	0.727	Mono_nonclassical	0.636	4.76e-01	RSAD2;IFIT1;CXCL10;IFIT2;HERC5;IFIT3;ISG15;MX1;CMPK2;OASL;IFI44L;S100A12	8	22	0.667				
+Myeloid	16	5962	Mono_classical	vote_conflict	Mono_classical	0.913	Mono_nonclassical	0.612	1.79e-08	S100A12;S100A8;S100A9;FCN1;RETN;VCAN;CD300E;LYZ;ASGR1;CFP;CD36;CLEC4E	7	16	0.545				
+Myeloid	17	5943	Myeloid_novel_c17_SELENOP	no_signature_match	Macro_C1Q	0.684	Macro_FOLR2_LYVE1	0.59	5.72e-04	SELENOP;CCL4L2;CCL3;CCL4;EGR1;A2M;ATF3;CXCL8;MSR1;CXCL2;CD83;SGK1	5	12	0.467				

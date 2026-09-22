@@ -1,0 +1,12 @@
+{
+  "release_id": "annotation_v8_lineage_audit_20260917",
+  "evidence_date_start": "2026-09-16",
+  "evidence_date_end": "2026-09-17",
+  "repository_snapshot_date": "2026-09-22",
+  "status": "AUDIT_ADDENDUM_NOT_GLOBAL_FREEZE",
+  "identity_reference": "V7",
+  "global_v8_status": "NOT_FROZEN",
+  "writeback_allowed": false,
+  "heldout_validated_lineages": [],
+  "copied_source_files": 6
+}
