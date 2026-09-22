@@ -52,8 +52,8 @@ STOP remains in force: no new schema, root audit, release-gate, checksum/provena
   在此之前不得把软件候选晋升为项目参考或改写 downstream。
 - `SUP-001`（todo）：为最终主图建立 `figure-panel-source.tsv`，记录每个 panel
   的 release、源表、筛选、统计量、分母和脚本。
-- `SEC-002`（todo）：首次上传新增 releases 前，人工复核 private remote、diff、
-  路径脱敏、文件大小和数据治理许可。
+- `SEC-002`（done）：新增 V8/V9 releases 上传前已人工复核 private remote、diff、
+  路径脱敏、文件大小和数据治理边界；普通 push 及远端 SHA 核对通过。
 
 | ID | Priority | Status | Task | Dependency | Completion criterion | Related files |
 | --- | --- | --- | --- | --- | --- | --- |

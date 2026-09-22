@@ -1,7 +1,7 @@
 # Codex Task: push V8/V9 annotation and audit records
 
 - Date: 2026-09-22
-- Status: ready_for_commit_and_push
+- Status: completed_and_verified
 - Related run: `20260922_v8_v9_github_release_audit`
 
 ## User request
@@ -49,7 +49,15 @@ Confirm and push the recent V8/V9 annotation and latest audit files to GitHub.
 - Staged and full remote-to-worktree `git diff --check` passed. The exact V9 TSV
   source retains four structurally meaningful trailing empty fields under a
   file-specific Git whitespace attribute.
-- Post-push remote verification remains pending.
+- Content commit `834af7afc577ef2e197cfb6d2c8f4936ebd6f43c` was pushed normally;
+  authenticated `ls-remote` returned the same SHA for `refs/heads/main`.
+
+## Commit and push
+
+- The normal push advanced `origin/main` from `ad07778` to `834af7a` and therefore
+  synchronized the five V8 lineage-freeze commits, their audit-history commit and
+  the new V8/V9/Nature release commit.
+- No force option, history rewrite, remote reconfiguration or file deletion was used.
 
 ## Failed attempts
 
