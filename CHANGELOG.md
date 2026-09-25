@@ -1,5 +1,15 @@
 # 重要变更记录
 
+## 2026-09-25
+
+- Added the formal record for the completed but subsequently superseded
+  `20260923_v7broad_covarnet_liana` run.
+- Documented the missing analysis worktree directory without attributing an
+  unverified executor: 81 tracked files remain recoverable from Git, while ignored
+  native per-sample LIANA outputs are absent and require rerun if needed.
+- Preserved the scientific boundary that this run used the old strict naming gate
+  and therefore does not complete the current V7-derived downstream release task.
+
 ## 2026-09-22
 
 - Froze a manuscript-facing upstream snapshot with V7 as the only global identity/CNV reference.

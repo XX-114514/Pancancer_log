@@ -1,3 +1,18 @@
+## 2026-09-25 V7 broad CoVarNet/LIANA 历史分支审计
+
+- `20260923_v7broad_covarnet_liana` 在 2026-09-23 完成计算：1,297 个样本全部终态，
+  1,268 success、29 `skipped_lt2_groups`、0 failed；完成提交为 `3c2234e`。
+- 后续 `20260923_annotation_master_v1` 纠正了旧 operational 输入把 strict 比较资格误作
+  大类命名门槛的问题，并明确将该 CoVarNet/LIANA 分支降级为历史审计，不能作为当前正式
+  V7-derived downstream release；`REL-003` 仍未完成。
+- 当前分析工作树中该目录已缺失，81 个 tracked 文件显示为未提交删除；它们仍存在于当前
+  Git tree（19,609,822 bytes），其中 aggregate 子树 28 files / 12,477,538 bytes。
+- 当时被 `.gitignore` 排除的 native per-sample LIANA 与 metadata cache 已不在磁盘，无法从
+  Git 直接恢复。外部 CoVarNet 目录仍在，35 files / 315,143,761 bytes，核心合同文件齐全。
+- 删除执行者与意图没有直接证据；本次只记录事实，未恢复文件，也未提交分析仓库的删除。
+  详见 [run record](runs/20260923_v7broad_covarnet_liana.md) 与
+  [incident](logs/incidents/2026-09-25_v7broad-liana-worktree-deletion.md)。
+
 ## V8/V9 轻量发布审计（2026-09-22）
 
 - 已建立 `annotation_v8_lineage_audit_20260917`，保存 2026-09-16 生成的 V8 状态和五个谱系 manifest。全局 V8 仍为 `NOT_FROZEN`，没有谱系达到 `HELDOUT_VALIDATED`。

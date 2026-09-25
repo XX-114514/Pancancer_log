@@ -40,7 +40,13 @@ STOP remains in force: no new schema, root audit, release-gate, checksum/provena
 - `REL-001`（done）：冻结并登记 V7 identity/CNV release。
 - `REL-002`（done）：登记通讯—空间—临床 evidence-chain release。
 - `REL-003`（todo）：在 V7 上重跑依赖身份的 CoVarNet/LIANA，并建立 V5-vs-V7
-  下游差异审计；完成前不得把当前通讯 release 称为 V7-derived。
+  下游差异审计；2026-09-23 的 broad run 虽完成计算，但因旧 operational 输入误用 strict
+  命名门槛而被 corrected master 降级为历史审计，不能关闭本任务。完成前不得把当前通讯
+  release 称为 V7-derived。
+- `REL-003A`（todo）：决定是否从 annotation Git tree 恢复 81 个历史 tracked 文件，或正式
+  提交该 superseded run 的退休；如需当前 downstream，必须从 corrected master 以新 run ID
+  重跑。任何选择均须先处理当前未提交 bulk deletion，并单独说明 ignored native LIANA
+  中间结果不可由 Git 恢复。
 - `REL-004`（done）：登记 V8 full-metadata software candidate 的 rerun2、策略门控和
   外部产物 hash；root audit 进一步记录
   `PASS_DEVELOPMENT_SOFTWARE_CANDIDATE_NOT_FROZEN`、V7 默认和外部记录的 167 项 pytest
