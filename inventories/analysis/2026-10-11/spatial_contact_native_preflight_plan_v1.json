@@ -1,0 +1,118 @@
+{
+  "schema": "spatial_contact_native_preflight_plan_v1",
+  "created_UTC": "2026-10-11T11:09:41.873332+00:00",
+  "created_UTC8": "2026-10-11T19:09:41.873332+08:00",
+  "biological_question": "Can the 13 frozen contact records be measured in existing spatial RNA above negative-probe background with defensible endpoint lineage and analysis units?",
+  "scope": {
+    "contact_records": 13,
+    "unique_LR": 9,
+    "assays": 5,
+    "expected_cells": 254458,
+    "record_assay_checks": 65,
+    "separate_programme_records": 2,
+    "annotation_version": "v20261010",
+    "original_nodes": 172,
+    "CM": 9
+  },
+  "accepted_parent": {
+    "register_schema": "native_LR_program_evidence_register_v12",
+    "candidate_table_sha256": "1aa6d9c911ebca1f2925ae77942d1544a1281c8bddcfccfd05540446e74ddf37",
+    "analysis_manifest_sha256": "6fda649c8b2bf4abe010ba8d53d50e495bae29ce8d30648675d9be9bf91dcf83",
+    "repair_audit_sha256": "e599e1e080a93633a6db98dafe5f8f944eda617f974b66f9d57330fedb5d07c5"
+  },
+  "panels": {
+    "T": [
+      "CD3D",
+      "CD3E",
+      "CD3G",
+      "TRAC",
+      "TRBC1",
+      "TRBC2"
+    ],
+    "B": [
+      "CD79A",
+      "CD79B",
+      "CD19",
+      "CD22"
+    ],
+    "My": [
+      "CSF1R",
+      "CD68",
+      "LYZ",
+      "LST1",
+      "CTSS"
+    ],
+    "Epi": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19"
+    ]
+  },
+  "family_name_genes": [
+    "CCL5",
+    "IL7R",
+    "MS4A1"
+  ],
+  "native_genes": "Exact unique var/_index or gene_symbol aliases; absent or ambiguous is missing, not negative. Full native X determines RNA totals and detected genes; all original cells retained in cache.",
+  "background": "Recover all raw negative controls by fov+cell_ID. FOV-specific empirical pooled per-cell/per-negative-probe 95th percentile. Gene count must exceed this percentile and 0. Descriptive background diagnostic, not gene-specific error/FDR calibration.",
+  "QC": "Sensitivity only: native target RNA >30 and finite positive Area <5*exp(mean(log(positive finite Area))) within each file; not asserted to reproduce author QC for GSE287472.",
+  "arms": [
+    "all_detected",
+    "qc_detected",
+    "qc_count_ge2",
+    "qc_background",
+    "qc_background_pure"
+  ],
+  "endpoint": "At least 2 independent T/B lineage markers positive under the same count/background rule, plus family name marker and ALL fixed ligand/receptor components positive in the SAME cell. Exclude candidate LR/name genes from lineage panels. Pure arm excludes cells with >=2 competing T/B, My or Epi markers. Mixed lineage remains explicitly counted. No subtype/state labels assigned.",
+  "overlap": "CCL5+ and IL7R+ may overlap. Inclusive membership, endpoint overlap separately reported; same cell never counts as a physical contact pair. No overlap cells silently removed.",
+  "programme": "Exact matched fixed336 program_genes per model_key; do not change genes based on spatial results. Report >=4 measurable and >=60% remaining-program coverage. Missing programme does not erase endpoint-only result.",
+  "units": "FOV/file/platform not independent patients. Patient/core map unreviewed => patient-level inference unavailable. Count per-FOV endpoint>=20 for descriptive feasibility only. No proximity test or p-value in this milestone.",
+  "author_annotation": "Two public original RDS, exact TMA-prefix+fov+cell_ID join. QC-filtered absence is unannotated, not non-T/non-B. Original labels and marker-defined populations compared; no states promoted.",
+  "author_inputs": [
+    {
+      "name": "ICON1_ICON2_CosMx_Annotations.rds",
+      "bytes": 220345,
+      "github_blob_sha": "33d2b0c3a64095aae3dac5e06857858c9e00352f",
+      "url": "https://github.com/KChen-lab/ST_Comparison/blob/main/Annotations/ICON1_ICON2_CosMx_Annotations.rds",
+      "sha256": "3750ae09cb73689e19f67ffc35cb45d7ea7d3dd3f8a468d46a564bd351261377"
+    },
+    {
+      "name": "MESO1_MESO2_CosMx_annotations.rds",
+      "bytes": 306696,
+      "github_blob_sha": "1528ad3a78267b58368be55c6fc99ae7ff8b49c8",
+      "url": "https://github.com/KChen-lab/ST_Comparison/blob/main/Annotations/MESO1_MESO2_CosMx_annotations.rds",
+      "sha256": "22ff2f7163a1b1ccc67ec3084ae8c217f6102751521ffb96bdd2df1780414b84"
+    }
+  ],
+  "author_T_labels": [
+    "T cells",
+    "CD8+ T cells",
+    "T cell proliferating",
+    "Treg",
+    "CD4+ T cells"
+  ],
+  "author_B_labels": [
+    "B cells"
+  ],
+  "expected_outputs": [
+    "predeclared_plan.json",
+    "all_selected_gene_cell_QC.tsv",
+    "coordinate_donor_and_segmentation_review.tsv",
+    "all_contact_record_testability.tsv",
+    "all_contact_record_FOV_counts.tsv",
+    "author_lineage_agreement.tsv",
+    "inventory.json",
+    "independent_audit.json",
+    "private_native_cell_caches/*.npz"
+  ],
+  "acceptance": [
+    "Exactly 5 files and 254458 cells; exact 13 frozen keys x5, no replacement endpoints",
+    "Every native control row joined or explicit failure; no missing filled zero",
+    "Independent recount of gene values, full RNA/genes, controls, aliases, QC, background thresholds, author key mapping and all65 x5 arms",
+    "Independent native keys/counts/coords unchanged; preserved old inputs",
+    "All missing/zero/mixed/overlap cases explicit; unmapped units do not support patient inference"
+  ],
+  "scientific_release": false,
+  "contact_validation": false
+}
