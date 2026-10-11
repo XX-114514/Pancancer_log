@@ -1,5 +1,23 @@
 # 可执行任务
 
+## 当前任务板：2026-10-11
+
+| ID | 优先级 | 状态 | 任务 | 完成标准 |
+|---|---|---|---|---|
+| CLOUD-001 | P0 | done | 建立Cloud可开发仓库与运行快照 | 本次代码/文档和轻量检查通过；普通push及远端SHA单独核验 |
+| CLOUD-002 | P0 | user_setup_pending | 在Codex Cloud连接仓库并Publish环境 | 新Cloud任务能执行cloud_check；不是仅本地验证 |
+| MAP-001 | P0 | ready | 来源与临床映射验证器 | 按首任务提示完成离线合成测试、服务器运行合同；真实数据验证另记录 |
+| EXP-001 | P0 | in_progress_attention | 公共下载与传输停滞检查 | 文件官方校验/大小/SHA记录齐全；胃癌日志停滞有明确恢复或失败证据 |
+| EXP-002 | P0 | in_progress | 已下载数据审计与逐来源前处理 | 源研究/文库/计数/QC/基线排重闭环；正式acceptance manifest，不只accepted命名 |
+| SRC-001 | P0 | blocked_source_mapping | TNBC文库与CTCL原研究追溯 | 作者文库映射和13个来源别名/非primary审查；疑似重复隔离，不计新增 |
+| CM-001 | P1 | ready_after_MAP-001 | 候选来源患者、癌种、组织和分选映射 | 可估计/不可估计分层明确；缺失不插补为疗效；新审计摘要 |
+| CM-002 | P1 | pending | K与来源/分母敏感性 | 预先固定合同；报告稳定性和失败，不把rank阈值当FDR |
+| ID-001 | P1 | awaiting_scientific_decisions | GSE299623 40群最终身份 | 54,099细胞逐群证据和明确接受/粗身份退回决定；独立审计 |
+| INT-001 | P1 | waiting_user_decision | 新数据跨研究整合 | 先交付验收数量及来源报告，由用户决定是否整合 |
+| CLIN-001 | P1 | pending_source_acceptance | 独立临床验证集冻结 | 可核验患者级终点、来源无泄漏；冻结后不重选发现模型 |
+
+用户此次明确授权代码与Cloud仓库设计，因此下方历史STOP不阻止本次必要工具开发。它没有授权新身份晋升、CNV重算或跨研究整合；历史任务门槛保留。
+
 ## 2026-09-22 投稿冻结任务板（当前权威）
 
 | ID | Priority | Status | Task | Completion criterion |

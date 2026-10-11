@@ -1,5 +1,14 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-11 当前入口：服务器运行与Codex云端开发
+
+- **先看下载与Project_v3动态**：[本次实测报告](inventories/runtime/2026-10-11/REPORT.md)，采集于2026-10-11 11:22:53（UTC+8）。GitHub保存快照，不是实时作业面板。
+- **当前状态/下一步**：[STATUS](STATUS.md)、[任务板](TODO.md)、[阶段路线](ROADMAP.md)。
+- **开始云端开发**：[Codex Cloud配置与工作流](docs/CODEX_CLOUD_DEVELOPMENT.md)，[可直接提交的首个任务](prompts/cloud_next_task.md)。
+- **检查代码**：Python ≥3.10环境执行 `bash scripts/cloud_check.sh`；状态采集与同步见[操作说明](docs/RUNTIME_SYNC.md)。
+- 新公共源数据5,341,204细胞；608,684细胞已有QC分片；最终新增验收尚未登记。Project_v3表达标签及新CoVarNet/LIANA计算已完成，最终科学细身份仍待GSE299623审阅。
+- 目标仓库已核实为**public**。2026-10-11用户明确授权向此仓库提交与普通push；仅上传已审查的代码、汇总与脱敏记录。下文此前版本入口保留为历史依据，不覆盖本次状态。
+
 本仓库是 PanCancer 项目的轻量级、可审计记录系统，当前以 `Project_v3` 的泛癌单细胞转录组主线为主要范围。它记录当前状态、任务历史、方法、正式运行、技术决策及证据索引，是项目进展的权威入口，但不是分析数据仓库。
 
 ## 2026-09-22 投稿冻结入口

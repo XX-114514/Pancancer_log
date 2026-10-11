@@ -1,5 +1,13 @@
 # 重要变更记录
 
+## 2026-10-11
+
+- Published an aggregate-only download/Project_v3 snapshot and readable report, distinguishing 5,341,204 source cells, 608,684 pending QC cells and zero registered final accepted new cells.
+- Indexed the completed expression annotation, new-label CoVarNet/LIANA and first CM source-replication runs without promoting final biological identity.
+- Added a read-only exporter, publication/count validators, report renderer and offline contract tests for Codex Cloud development.
+- Added Cloud setup, task handoff and server synchronization instructions; preserved the unpublished September incident commit by fast-forward.
+- Corrected the historical private-only assumption: the user explicitly selected the verified public repository for normal commit/push. No matrices, patient rows, host paths or credentials are published.
+
 ## 2026-09-25
 
 - Added the formal record for the completed but subsequently superseded

@@ -1,5 +1,11 @@
 # Annotation and analysis version policy
 
+## 2026-10-11 表达分支与身份版本边界
+
+最新运行状态以[当前快照](../inventories/runtime/2026-10-11/REPORT.md)为准。reviewed V10 core assembly SHA-256为 `41875cd0e904ed46bcae93e5e8df4031e44fc1b71f1f11ff3b5f201c764a53e3`；此索引不是全局最终科学身份晋升声明。
+
+`20261010_uniform_expression_annotation_v1` 用本群表达统计生成单基因描述标签，保留既有major/fine身份；其新CoVarNet/LIANA和CM来源内验证独立登记。表达标签可完成而最终细身份、CNV、生态和临床验证仍未完成。GSE299623最终身份门槛继续保留。历史V7投稿冻结、V8/V9候选及被降级20260923分支均不改写。
+
 ## Current authority
 
 V7 is the default cell-identity and malignancy reference from 2026-09-06 onward.

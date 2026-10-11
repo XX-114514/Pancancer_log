@@ -1,0 +1,1118 @@
+{
+  "schema": "pancancer_cloud_snapshot_v1",
+  "collected_utc": "2026-10-11T03:22:53.508526+00:00",
+  "source_mode": "read_only_live_server",
+  "repository_visibility": "public",
+  "observed_processes": [
+    {
+      "pid": 2150,
+      "scope": "clinical_expansion",
+      "role": "pipeline",
+      "executable": "python",
+      "script_basename": "download_zenodo_clinical_v2.py",
+      "elapsed": "56:16",
+      "state": "Ss",
+      "cpu_percent": 0.0
+    },
+    {
+      "pid": 2151,
+      "scope": "clinical_expansion",
+      "role": "pipeline",
+      "executable": "aria2c",
+      "script_basename": "aria2c",
+      "elapsed": "56:16",
+      "state": "S",
+      "cpu_percent": 0.3
+    },
+    {
+      "pid": 4005,
+      "scope": "clinical_expansion",
+      "role": "pipeline",
+      "executable": "python",
+      "script_basename": "download_public_clinical_batch2_v2.py",
+      "elapsed": "54:33",
+      "state": "Ssl",
+      "cpu_percent": 0.0
+    },
+    {
+      "pid": 4696,
+      "scope": "clinical_expansion",
+      "role": "pipeline",
+      "executable": "aria2c",
+      "script_basename": "aria2c",
+      "elapsed": "53:43",
+      "state": "S",
+      "cpu_percent": 0.1
+    },
+    {
+      "pid": 26154,
+      "scope": "clinical_expansion",
+      "role": "pipeline",
+      "executable": "aria2c",
+      "script_basename": "aria2c",
+      "elapsed": "49:06",
+      "state": "S",
+      "cpu_percent": 0.1
+    },
+    {
+      "pid": 78150,
+      "scope": "clinical_expansion",
+      "role": "monitor",
+      "executable": "python",
+      "script_basename": "readable_download_log_v6.py",
+      "elapsed": "37:29",
+      "state": "Ss",
+      "cpu_percent": 0.0
+    },
+    {
+      "pid": 304428,
+      "scope": "Project_v3",
+      "role": "infrastructure",
+      "executable": "python3",
+      "script_basename": "http_socks_bridge.py",
+      "elapsed": "7-18:00:34",
+      "state": "S",
+      "cpu_percent": 0.0
+    },
+    {
+      "pid": 375647,
+      "scope": "clinical_expansion",
+      "role": "pipeline",
+      "executable": "python",
+      "script_basename": "prepare_geo_counts_20261011.py",
+      "elapsed": "01:08:13",
+      "state": "Rsl",
+      "cpu_percent": 108.0
+    }
+  ],
+  "evidence": [
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_d4ef92c4-19e6-468e-925f-52943000e482.json",
+      "exists": true,
+      "bytes": 6491,
+      "sha256": "21bf61e726c0106e6f106aadc6b397d993ffbafb5450ea5fd36010b0c4ee645b",
+      "modified_utc": "2026-10-10T12:44:16.452746+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_f8f7f2b0-b8a5-4087-8048-8d3f5b6a49dd.json",
+      "exists": true,
+      "bytes": 10977,
+      "sha256": "98ad0c7419f485d75bb6a68f6b4cc169799d8f77d5ed7f3f740622eb29e84f70",
+      "modified_utc": "2026-10-10T12:53:08.388704+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_777cf301-2f1a-4429-9bb9-19173ba586d2.json",
+      "exists": true,
+      "bytes": 10202,
+      "sha256": "3f495243d6effcb0613ba2230c83bf718f53bcb701c427f13652e0cb36902e1d",
+      "modified_utc": "2026-10-10T12:52:27.858707+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_2de4e72b-1a49-457f-a3b7-8664a8bab255.json",
+      "exists": true,
+      "bytes": 7862,
+      "sha256": "918d715f912d7b94631451d4204b696de7e6c58959e4d62dd55e5e0d4db53bae",
+      "modified_utc": "2026-10-10T13:03:50.639653+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_5c7bd9b2-5609-4a7a-9445-69ff3f9aaff5.json",
+      "exists": true,
+      "bytes": 10777,
+      "sha256": "8afb9116bc0625e19dcc3899ce5513b803a50f8a0216ca6432806bc836642833",
+      "modified_utc": "2026-10-10T13:00:37.629668+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_e94bd3cc-6271-424a-baac-12f8eb320a0e.json",
+      "exists": true,
+      "bytes": 6235,
+      "sha256": "4e78bc1a9b14ffb02e4390bc482e52e0e78ad42353d2d53d1cf546ddd7a94c1d",
+      "modified_utc": "2026-10-10T13:07:24.878636+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_81036f88-1a43-46ea-a800-659ea37ce815.json",
+      "exists": true,
+      "bytes": 12364,
+      "sha256": "3a4e244546e26d5843b9de95580e40762f910a597540bd791c19859ccbc2950e",
+      "modified_utc": "2026-10-10T13:17:35.934587+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_public_GSE286827.json",
+      "exists": true,
+      "bytes": 596,
+      "sha256": "5fb85b4e23c10b3281ca1dcf2a77d630211f4fd8321971118363ba5a93ea99d8",
+      "modified_utc": "2026-10-10T18:35:13.148069+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_public_GSE294109.json",
+      "exists": true,
+      "bytes": 596,
+      "sha256": "32db78bdb8c6f1e84a30f54519f690d1a15d0e3df35634e2afb6b5d0c52750d5",
+      "modified_utc": "2026-10-10T17:51:01.176280+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/manifests/download_public_GSE292046.json",
+      "exists": true,
+      "bytes": 595,
+      "sha256": "32a6bc60cbe0d78fe2e5f22517b23fa04bf407ec4e0df532cf8d3b0d4b5b20be",
+      "modified_utc": "2026-10-10T18:14:05.011170+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/CURRENT_STATE.json",
+      "exists": true,
+      "bytes": 537860,
+      "sha256": "ba3dc88b5a1f0360edc07df62de3dc24fae8437f1bfd2e77b6d39bbee2f8cbde",
+      "modified_utc": "2026-10-11T03:03:13.247066+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/artifacts/source_audit_20261011/GSE236581_clinical_audit.json",
+      "exists": true,
+      "bytes": 273,
+      "sha256": "d00c95f2d9afb6eb72e0b0cb9221da0a6584650440dc14d629718e20b5d3af9f",
+      "modified_utc": "2026-10-11T02:40:46.147174+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/artifacts/source_audit_20261011/GSE256326_clinical_audit_v2.json",
+      "exists": true,
+      "bytes": 301,
+      "sha256": "5aa150766aad29cb5f00509601fcdc62b0b58939d907d6f00288025c6636f893",
+      "modified_utc": "2026-10-11T02:41:47.521169+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/artifacts/source_audit_20261011/SPECTRUM_clinical_audit.json",
+      "exists": true,
+      "bytes": 485,
+      "sha256": "045caa8c284ec0c2fb723f718627bcdfbf99092e8f8d005d886d1cacbcddf020",
+      "modified_utc": "2026-10-11T02:40:48.037174+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/artifacts/source_audit_20261011/TNBC_provenance_hold.json",
+      "exists": true,
+      "bytes": 636,
+      "sha256": "2d5939ae32148a4d066aaaaea7ea7f143ac4849359213db7458a8a61cd3c299f",
+      "modified_utc": "2026-10-11T02:40:49.039174+00:00"
+    },
+    {
+      "path": "${PANCANCER_ROOT}/Project_v5/runs/20261010_clinical_scrna_expansion_v1/artifacts/source_audit_20261011/CTCL_provenance_audit.json",
+      "exists": true,
+      "bytes": 402,
+      "sha256": "1d61d1fd7c245683d45c6473ed1c9ce7a8b1961898b991776a963fcca3f8cbac",
+      "modified_utc": "2026-10-11T02:42:59.099163+00:00"
+    }
+  ],
+  "expansion": {
+    "run_id": "20261010_clinical_scrna_expansion_v1",
+    "source_cells_verified_download_or_inventory": 5341204,
+    "qc_shards": 3,
+    "qc_cells_pending_final_source_acceptance": 608684,
+    "final_accepted_new_cells": 0,
+    "final_acceptance_status": "no_final_acceptance_manifest_registered",
+    "target_after_dedup_QC": [
+      4500000,
+      5500000
+    ],
+    "cross_study_integration_authorized": false,
+    "datasets": [
+      {
+        "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+        "name": "CAR-T治疗产品",
+        "source_cells": 417167,
+        "download_verified": true,
+        "collection_url": "https://cellxgene.cziscience.com/collections/d9a9760c-e43d-404d-86aa-447c9a1e9120",
+        "download_proof": {
+          "n_genes": 39404,
+          "status": "downloaded_header_verified",
+          "sha256": "b1207e1203cccafe44bcba2cdaadddab0d47a0c40413f37a95224e25ef80d5f1"
+        },
+        "QC": {
+          "status": "qc_shard_written_pending_final_source_acceptance",
+          "n_raw": 417167,
+          "n_qc_nonduplicate": 416800,
+          "n_duplicate": 0,
+          "source_sha256": "c70f2fe116562cb678903a5a4f6a41116320476d3ca4252eadd4f50888c93fc5",
+          "official_source_metadata_sha256": "591ca11ba00125955855c6898cd96ae905ebe345185f4af7eadaed65a971f1f5",
+          "tier_counts": {
+            "A": 235621,
+            "C": 181179
+          }
+        },
+        "native_preprocessing": {},
+        "baseline_overlap": {}
+      },
+      {
+        "dataset": "CXG_b252b015_b488_4d5c_b16e_968c13e48a2c",
+        "name": "卵巢癌SPECTRUM",
+        "source_cells": 927205,
+        "download_verified": true,
+        "collection_url": "https://cellxgene.cziscience.com/collections/4796c91c-9d8f-4692-be43-347b1727f9d8",
+        "download_proof": {
+          "n_genes": 31093,
+          "status": "downloaded_header_verified",
+          "sha256": "d4d183ad7bc776bb8df438f3b0eeddd30ef61b8574ce6535f46cce0a3496fdd9"
+        },
+        "QC": {},
+        "native_preprocessing": {
+          "status": "native_counts_and_full_audit_verified_pending_QC_and_overlap_acceptance",
+          "source_cells": 927205,
+          "n_genes": 31080,
+          "n_original_library_units": 275,
+          "counts_sum_before": 7711789943,
+          "counts_sum_after": 7711789943,
+          "duplicate_symbols_collapsed": 13,
+          "floor_pass_flagged": 927205,
+          "high_mt_flagged": 46687,
+          "biological_filter_applied": false,
+          "qc_policy": "author_doublet_flags_preserved_no_repeat_scrublet",
+          "source_sha256": "d4d183ad7bc776bb8df438f3b0eeddd30ef61b8574ce6535f46cce0a3496fdd9",
+          "final_accepted_new_cells": 0,
+          "dedup_status": "pending_full_counts_and_source_alias_review_against_frozen_baseline"
+        },
+        "baseline_overlap": {
+          "n_full_source_cells_audited": 927205,
+          "baseline_exact_matches": 0,
+          "within_source_exact_matches": 0,
+          "cells_removed": 0,
+          "final_accepted_new_cells": 0,
+          "status": "full_baseline_fingerprint_audit_complete_pending_source_library_and_QC_acceptance"
+        }
+      },
+      {
+        "dataset": "CXG_67b6b9ac_b841_42ce_b2d4_ed2ec12327bd",
+        "name": "大B细胞淋巴瘤",
+        "source_cells": 598289,
+        "download_verified": true,
+        "collection_url": "https://cellxgene.cziscience.com/collections/4429f25e-5c91-4981-9cf2-6a1044c36732",
+        "download_proof": {
+          "n_genes": 35180,
+          "status": "downloaded_header_verified",
+          "sha256": "9b887ce77ea80bdb6f32af20728c18e635fc2aafb5cf0f595e637f5da7a97809"
+        },
+        "QC": {},
+        "native_preprocessing": {
+          "status": "native_counts_and_full_audit_verified_pending_QC_and_overlap_acceptance",
+          "source_cells": 598289,
+          "n_genes": 35172,
+          "n_original_library_units": 232,
+          "counts_sum_before": 3231984773,
+          "counts_sum_after": 3231984773,
+          "duplicate_symbols_collapsed": 8,
+          "floor_pass_flagged": 597997,
+          "high_mt_flagged": 35,
+          "biological_filter_applied": false,
+          "qc_policy": "author_QC_methods_pending_review",
+          "source_sha256": "9b887ce77ea80bdb6f32af20728c18e635fc2aafb5cf0f595e637f5da7a97809",
+          "final_accepted_new_cells": 0,
+          "dedup_status": "pending_full_counts_and_source_alias_review_against_frozen_baseline"
+        },
+        "baseline_overlap": {
+          "n_full_source_cells_audited": 598289,
+          "baseline_exact_matches": 0,
+          "within_source_exact_matches": 0,
+          "cells_removed": 0,
+          "final_accepted_new_cells": 0,
+          "status": "full_baseline_fingerprint_audit_complete_pending_source_library_and_QC_acceptance"
+        }
+      },
+      {
+        "dataset": "CXG_843c1459_e852_429c_9339_17b5760e7716",
+        "name": "儿童高级别胶质瘤",
+        "source_cells": 401253,
+        "download_verified": true,
+        "collection_url": "https://cellxgene.cziscience.com/collections/9ceda3d2-a55e-4b82-a91a-0190d947459a",
+        "download_proof": {
+          "n_genes": 19089,
+          "status": "downloaded_header_verified",
+          "sha256": "d4393962eaedbbb3724af4a6558717ed6de0380f8c73550643186c3a3359e75d"
+        },
+        "QC": {},
+        "native_preprocessing": {
+          "status": "native_counts_and_full_audit_verified_pending_QC_and_overlap_acceptance",
+          "source_cells": 401253,
+          "n_genes": 19084,
+          "n_original_library_units": 63,
+          "counts_sum_before": 1997174300,
+          "counts_sum_after": 1997174300,
+          "duplicate_symbols_collapsed": 5,
+          "floor_pass_flagged": 401253,
+          "high_mt_flagged": 354,
+          "biological_filter_applied": false,
+          "qc_policy": "author_QC_methods_pending_review",
+          "source_sha256": "d4393962eaedbbb3724af4a6558717ed6de0380f8c73550643186c3a3359e75d",
+          "final_accepted_new_cells": 0,
+          "dedup_status": "pending_full_counts_and_source_alias_review_against_frozen_baseline"
+        },
+        "baseline_overlap": {
+          "n_full_source_cells_audited": 401253,
+          "baseline_exact_matches": 0,
+          "within_source_exact_matches": 0,
+          "cells_removed": 0,
+          "final_accepted_new_cells": 0,
+          "status": "full_baseline_fingerprint_audit_complete_pending_source_library_and_QC_acceptance"
+        }
+      },
+      {
+        "dataset": "CXG_34f5307e_7b4d_4a48_b68f_2ba844c6414b",
+        "name": "转移性乳腺癌",
+        "source_cells": 394534,
+        "download_verified": true,
+        "collection_url": "https://cellxgene.cziscience.com/collections/a96133de-e951-4e2d-ace6-59db8b3bfb1d",
+        "download_proof": {
+          "n_genes": 29845,
+          "status": "downloaded_header_verified",
+          "sha256": "0bf7a5b96ffbb7e41bbf89d0c5b7d8d56e517072e8162c47ed7a17b7f0d23eb7"
+        },
+        "QC": {},
+        "native_preprocessing": {
+          "status": "native_counts_and_full_audit_verified_pending_QC_and_overlap_acceptance",
+          "source_cells": 394534,
+          "n_genes": 29836,
+          "n_original_library_units": 64,
+          "counts_sum_before": 1497041447,
+          "counts_sum_after": 1497041447,
+          "duplicate_symbols_collapsed": 9,
+          "floor_pass_flagged": 384339,
+          "high_mt_flagged": 14689,
+          "biological_filter_applied": false,
+          "qc_policy": "author_pass_flags_preserved_no_repeat_filtering",
+          "source_sha256": "0bf7a5b96ffbb7e41bbf89d0c5b7d8d56e517072e8162c47ed7a17b7f0d23eb7",
+          "final_accepted_new_cells": 0,
+          "dedup_status": "pending_full_counts_and_source_alias_review_against_frozen_baseline"
+        },
+        "baseline_overlap": {
+          "n_full_source_cells_audited": 394534,
+          "baseline_exact_matches": 0,
+          "within_source_exact_matches": 0,
+          "cells_removed": 0,
+          "final_accepted_new_cells": 0,
+          "status": "full_baseline_fingerprint_audit_complete_pending_source_library_and_QC_acceptance"
+        }
+      },
+      {
+        "dataset": "CXG_6f9de485_58cd_4342_bfc4_b3d3dd223aa8",
+        "name": "未治疗TNBC",
+        "source_cells": 427823,
+        "download_verified": true,
+        "collection_url": "https://cellxgene.cziscience.com/collections/ceef2841-5333-46ac-92ef-ccbe0c20fe55",
+        "download_proof": {
+          "n_genes": 32354,
+          "status": "downloaded_header_verified",
+          "sha256": "d40a2b210ddf8fe0bd46118900412493c6d11d3429ffae4c311f7469f7d10da0"
+        },
+        "QC": {},
+        "native_preprocessing": {},
+        "baseline_overlap": {}
+      },
+      {
+        "dataset": "CXG_98b68224_956d_45dd_9eca_538747578af8",
+        "name": "CTCL图谱",
+        "source_cells": 1533956,
+        "download_verified": true,
+        "collection_url": "https://cellxgene.cziscience.com/collections/be2285ed-d27d-4249-97a2-9b23ea924413",
+        "download_proof": {
+          "n_genes": 15675,
+          "status": "downloaded_header_verified",
+          "sha256": "1051c679b32a9d3ffb86e5b8b752213d676bbf8cc94d8bc1e99ad0014afd82d2"
+        },
+        "QC": {},
+        "native_preprocessing": {},
+        "baseline_overlap": {}
+      },
+      {
+        "dataset": "GSE286827",
+        "name": "头颈癌免疫治疗",
+        "source_cells": 416211,
+        "download_verified": true,
+        "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286827",
+        "QC": {}
+      },
+      {
+        "dataset": "GSE294109",
+        "name": "肾癌治疗",
+        "source_cells": 145316,
+        "download_verified": true,
+        "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294109",
+        "QC": {
+          "status": "qc_shard_written_pending_final_source_acceptance",
+          "n_raw": 145316,
+          "n_qc_nonduplicate": 137728,
+          "n_duplicate": 0,
+          "source_sha256": "065597ea050eab3f9c473c2ae137bfb1b2d8d4baa8d8bbac3e49bbc5e9f35d42",
+          "official_source_metadata_sha256": "9d0e80c818885fb34f5740614ab2e008eb5c37da99c26da6412a4eaced2f5f95",
+          "tier_counts": {
+            "C": 137728
+          }
+        }
+      },
+      {
+        "dataset": "GSE292046",
+        "name": "胶质瘤疫苗",
+        "source_cells": 55570,
+        "download_verified": true,
+        "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292046",
+        "QC": {
+          "status": "qc_shard_written_pending_final_source_acceptance",
+          "n_raw": 55570,
+          "n_qc_nonduplicate": 54156,
+          "n_duplicate": 0,
+          "source_sha256": "8b68fd9bc51fe29fd17541213eb58555e46b134eb741aea8f867fbf4b6d37711",
+          "official_source_metadata_sha256": "abb4162798ab72d7e747861f4270e32642643247b6d7393864af13b182a7abe5",
+          "tier_counts": {
+            "C": 54156
+          }
+        }
+      },
+      {
+        "dataset": "GSE256326",
+        "name": "肾髓质癌",
+        "source_cells": 23880,
+        "download_verified": true,
+        "native_preprocessing": {
+          "status": "native_counts_Zarr_verified_pending_QC_and_overlap_acceptance",
+          "n_source_cells": 23880,
+          "n_genes": 27966,
+          "counts_sum": 142553986,
+          "n_libraries": 9,
+          "final_accepted_cells": 0
+        }
+      }
+    ],
+    "batch2": [
+      {
+        "dataset": "GSE315928",
+        "files": [
+          {
+            "name": "GSE315928_Paired_scRNA_TCR-seq_Sample_metadata.xlsx",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 115595,
+              "actual_bytes": 115595,
+              "sha256": "bf0fee306635a67baf70c4c7cabbaec14bb0ab9794875ae28b04bfa9b8bc8f15"
+            },
+            "transfer": {}
+          },
+          {
+            "name": "GSE315928_RAW.tar",
+            "download_verified": false,
+            "proof": {},
+            "transfer": {
+              "transfer": "526MiB/4.0GiB",
+              "percent": 12,
+              "rate_per_second": "0B",
+              "log_age_seconds": 759,
+              "stale_over_10min": true,
+              "not_a_download_completion_proof": true
+            }
+          }
+        ]
+      },
+      {
+        "dataset": "GSE294273",
+        "files": [
+          {
+            "name": "GSE294273_RAW.tar",
+            "download_verified": false,
+            "proof": {},
+            "transfer": {
+              "transfer": "508MiB/742MiB",
+              "percent": 68,
+              "rate_per_second": "0B",
+              "log_age_seconds": 16,
+              "stale_over_10min": false,
+              "not_a_download_completion_proof": true
+            }
+          }
+        ]
+      },
+      {
+        "dataset": "GSE256326",
+        "files": [
+          {
+            "name": "GSE256326_ScRNA_Features.tsv.gz",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 170799,
+              "actual_bytes": 170799,
+              "sha256": "932ce144bc04e52b7e84f0c05fd173a420568ea0a1de479937be6737b58c75f0"
+            },
+            "transfer": {}
+          },
+          {
+            "name": "GSE256326_ScRNA_Meta.tsv.gz",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 533728,
+              "actual_bytes": 533728,
+              "sha256": "7239a8aa386f02e5b7398eaa557fb0894941b6d7f350acc5804a1c6bffe987eb"
+            },
+            "transfer": {}
+          },
+          {
+            "name": "GSE256326_ScRNA_barcodes.tsv.gz",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 181759,
+              "actual_bytes": 181759,
+              "sha256": "3e1d435b1b4bb610e7299579926ddd6fdbf83b404b253a872f08ece9f4b1a628"
+            },
+            "transfer": {}
+          },
+          {
+            "name": "GSE256326_ScRNA_count_matrix.tsv.gz",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 54175442,
+              "actual_bytes": 54175442,
+              "sha256": "f39c1f679b3c025bdfd0cd4b25ebded4dcb79898deba821244bc37a44d193f2c"
+            },
+            "transfer": {}
+          }
+        ]
+      },
+      {
+        "dataset": "GSE236581",
+        "files": [
+          {
+            "name": "GSE236581_CRC-ICB_metadata.txt.gz",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 13343514,
+              "actual_bytes": 13343514,
+              "sha256": "7ecdb3b24e7e40e41676fd18f2b4ef5615506c06cb218c0a961dcfbe49e622c6"
+            },
+            "transfer": {}
+          },
+          {
+            "name": "GSE236581_barcodes.tsv.gz",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 4749382,
+              "actual_bytes": 4749382,
+              "sha256": "c43723bb3ace3df055c6d1d6716a43e8cf81ab182ee7219ee92c60af5bee71d5"
+            },
+            "transfer": {}
+          },
+          {
+            "name": "GSE236581_counts.mtx.gz",
+            "download_verified": false,
+            "proof": {},
+            "transfer": {
+              "transfer": "420MiB/3.9GiB",
+              "percent": 10,
+              "rate_per_second": "0B",
+              "log_age_seconds": 12,
+              "stale_over_10min": false,
+              "not_a_download_completion_proof": true
+            }
+          },
+          {
+            "name": "GSE236581_features.tsv.gz",
+            "download_verified": true,
+            "proof": {
+              "status": "public_file_downloaded_size_sha256_verified_pending_modality_and_raw_counts",
+              "expected_bytes": 249385,
+              "actual_bytes": 249385,
+              "sha256": "9fa791c7c082a66d2a7567620dd66dbbc82bcda1dbb0ceb145a4ce1c25540fc4"
+            },
+            "transfer": {}
+          }
+        ]
+      },
+      {
+        "dataset": "GSE246613",
+        "files": [
+          {
+            "name": "GSE246613_PembroRT_immune_R100_final.h5ad.gz",
+            "download_verified": false,
+            "proof": {},
+            "transfer": {
+              "state": "no_progress_observed"
+            }
+          },
+          {
+            "name": "GSE246613_PembroRT_non_immune_cells.h5ad.gz",
+            "download_verified": false,
+            "proof": {},
+            "transfer": {
+              "state": "no_progress_observed"
+            }
+          }
+        ]
+      },
+      {
+        "dataset": "GSE332846",
+        "files": [
+          {
+            "name": "GSE332846_RAW.tar",
+            "download_verified": false,
+            "proof": {},
+            "transfer": {
+              "state": "no_progress_observed"
+            }
+          }
+        ]
+      }
+    ],
+    "zenodo": {
+      "record": "19586163",
+      "source_url": "https://zenodo.org/records/19586163",
+      "download_proof": {},
+      "transfer": {
+        "transfer": "1.3GiB/3.7GiB",
+        "percent": 36,
+        "rate_per_second": "24KiB",
+        "log_age_seconds": 6,
+        "stale_over_10min": false,
+        "not_a_download_completion_proof": true
+      }
+    },
+    "clinical_source_audits": {
+      "GSE236581_clinical_audit.json": {
+        "n_source_cells_metadata": 975275,
+        "n_libraries": 169,
+        "n_patients": 22,
+        "n_exact_unique_GSM_matches": 169,
+        "response_column_present": false
+      },
+      "GSE256326_clinical_audit_v2.json": {
+        "source_cells_metadata": 23880,
+        "n_libraries": 9,
+        "n_patients": 9,
+        "n_exact_unique_GSM_matches": 9,
+        "clinical_tier": "C"
+      },
+      "SPECTRUM_clinical_audit.json": {
+        "source_patients": 41,
+        "exact_patient_matches": 41,
+        "OS_PFS_duration_event_available": false,
+        "clinical_tier": "C"
+      },
+      "TNBC_provenance_hold.json": {
+        "candidate_barcode_prefixes": 472,
+        "orig_ident_groups": 7,
+        "clinical_tier": "C"
+      },
+      "CTCL_provenance_audit.json": {
+        "n_source_cells": 1533956,
+        "n_source_accessions": 13,
+        "n_nonprimary_quarantined_pending_review": 570282,
+        "n_normal_labels_pending_context": 427446,
+        "exact_accession_overlap_count": 0
+      }
+    }
+  },
+  "project_v3": {
+    "source_state_generated_utc": "2026-10-11T03:03:12.990848+00:00",
+    "identity_release_readiness": {
+      "status": "NOT_READY_FOR_FINAL_IDENTITY_RELEASE",
+      "full_cells": 4676787,
+      "current_nonempty_fine_cells": 926810,
+      "remaining_GSE299623_groups": 40,
+      "remaining_GSE299623_cells": 54099,
+      "approved_remaining_group_decisions": 0,
+      "release_eligible": false
+    },
+    "accepted_identity_assembly": {
+      "sha256": "41875cd0e904ed46bcae93e5e8df4031e44fc1b71f1f11ff3b5f201c764a53e3",
+      "rows": 4676787,
+      "fine_nonempty": 926810
+    },
+    "expression_annotation": {
+      "annotation_run_id": "20261010_uniform_expression_annotation_v1",
+      "canonical_write_status": "PASS_CANONICAL_ANNOTATION_APPEND_FULLROW_READBACK_PROTECTED_MATRICES_UNCHANGED",
+      "canonical_annotation_rows": 4676787,
+      "visual_review_status": "PASS_RENDERING_SCOPE_HASH_AND_AGENT_PIXEL_REVIEW_DESCRIPTIVE_FIGURES",
+      "scientific_identity_decision": "existing_major_and_accepted_fine_preserved; single_gene_names_descriptive; no_new_subtype_claims",
+      "artifact_task_status": "COMPLETE_USER_REQUESTED_EXPRESSION_ANNOTATION_ZARR_UMAP_COVARNET_LIANA_AND_DOWNSTREAM_REVIEW",
+      "downstream_run_id": "20261010_expression_annotation_downstream_v1",
+      "release_eligible": false
+    },
+    "run_evidence": [
+      {
+        "run_id": "20261010_uniform_expression_annotation_v1",
+        "artifact": "input_contract.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_uniform_expression_annotation_v1/input_contract.json",
+          "exists": true,
+          "bytes": 2582,
+          "sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "modified_utc": "2026-10-10T02:07:44.177788+00:00"
+        },
+        "summary": {
+          "schema": "uniform_expression_exact_member_contract_v1",
+          "cells_all": 4676787,
+          "candidate_cells": 4551887,
+          "nodes_all": 268,
+          "candidate_nodes": 172,
+          "identity_promoted": false
+        }
+      },
+      {
+        "run_id": "20261010_uniform_expression_annotation_v1",
+        "artifact": "run_register.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_uniform_expression_annotation_v1/run_register.json",
+          "exists": true,
+          "bytes": 8549,
+          "sha256": "ecd59c31e7301afb8c9942ba09fadafbf21879ee7ecfa24318f952c012e3cc78",
+          "modified_utc": "2026-10-10T08:20:37.914006+00:00"
+        },
+        "summary": {
+          "run_id": "20261010_uniform_expression_annotation_v1",
+          "execution_status": "complete_full_expression_and_canonical_annotation",
+          "scientific_identity_status": "existing_major_and_accepted_fine_preserved; single_gene_names_descriptive; no_new_subtype_claims",
+          "release_eligible": false,
+          "canonical_write_status": "PASS_CANONICAL_ANNOTATION_APPEND_FULLROW_READBACK_PROTECTED_MATRICES_UNCHANGED",
+          "status": "COMPLETE_USER_REQUESTED_EXPRESSION_ANNOTATION_ZARR_UMAP_COVARNET_LIANA_AND_DOWNSTREAM_REVIEW"
+        }
+      },
+      {
+        "run_id": "20261010_uniform_expression_annotation_v1",
+        "artifact": "manifest.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_uniform_expression_annotation_v1/manifest.json",
+          "exists": true,
+          "bytes": 70349,
+          "sha256": "dd36a70020503506ada916f9b6d6a25f8f2dd05cb56b1eed675545dd94deec53",
+          "modified_utc": "2026-10-10T02:43:06.307619+00:00"
+        },
+        "summary": {
+          "status": "COMPLETE_ALL_GSE_EXPRESSION_PENDING_INDEPENDENT_AUDIT",
+          "cells": 4676787,
+          "candidate_cells": 4551887,
+          "GSE": 54,
+          "identity_promoted": false
+        }
+      },
+      {
+        "run_id": "20261010_uniform_expression_annotation_v1",
+        "artifact": "independent_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_uniform_expression_annotation_v1/independent_audit.json",
+          "exists": true,
+          "bytes": 11319,
+          "sha256": "37130469977972f77913090bcd05c2dc4d8fdb4cca540a532594554a4a3bc838",
+          "modified_utc": "2026-10-10T02:44:34.660611+00:00"
+        },
+        "summary": {
+          "status": "PASS_FULL_SCOPE_EXPRESSION_READBACK_AND_INDEPENDENT_PILOT",
+          "cells_all": 4676787,
+          "candidate_cells": 4551887,
+          "nodes_all": 268,
+          "candidate_nodes": 172,
+          "GSE": 54,
+          "identity_promoted": false
+        }
+      },
+      {
+        "run_id": "20261010_uniform_expression_annotation_v1",
+        "artifact": "final_goal_scope_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_uniform_expression_annotation_v1/final_goal_scope_audit.json",
+          "exists": true,
+          "bytes": 7025,
+          "sha256": "fd2974149f447bf389c04097aeaf95e69a8350b31ed66e062adb98c1052b1059",
+          "modified_utc": "2026-10-10T08:20:24.127007+00:00"
+        },
+        "summary": {
+          "status": "PASS_FULL_USER_GOAL_ARTIFACT_SCOPE_CANONICAL_FULLROW_AND_ALL_DOWNSTREAM_GATES_PENDING_FINAL_HANDOFF_REGISTRATION",
+          "ecology_release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_uniform_expression_annotation_v1",
+        "artifact": "final_goal_handoff_registration.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_uniform_expression_annotation_v1/final_goal_handoff_registration.json",
+          "exists": true,
+          "bytes": 2864,
+          "sha256": "846bade05d2f7f86d3e084d40d0f4c33fa194dd4c7841452648e80018779ff01",
+          "modified_utc": "2026-10-10T08:20:38.251006+00:00"
+        },
+        "summary": {
+          "status": "COMPLETE_USER_REQUESTED_EXPRESSION_ANNOTATION_ZARR_UMAP_COVARNET_LIANA_AND_DOWNSTREAM_REVIEW",
+          "identity_promoted": false,
+          "ecology_release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "run_contract.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/run_contract.json",
+          "exists": true,
+          "bytes": 3281,
+          "sha256": "f5b359da3a4c361f5b8823f5eab056b5cfd35690f70689bdb8928834f020cd0b",
+          "modified_utc": "2026-10-10T02:53:48.352567+00:00"
+        },
+        "summary": {
+          "schema": "expression_annotation_downstream_contract_v1",
+          "status": "PREPARED_NEW_LABELS_EXACT_ROSTER_SOURCE_HOLDS_PENDING_INDEPENDENT_AUDIT",
+          "cells_before_downstream_holds": 4551887,
+          "cells_after_source_hold": 4534433,
+          "samples_before_min100_filter": 1312,
+          "nodes_before_min100_filter": 172,
+          "release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "run_register.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/run_register.json",
+          "exists": true,
+          "bytes": 8456,
+          "sha256": "b6ae6cad6c99e56c0a0b117ee362be6dc1ba373798f98e1792afec346d9431ed",
+          "modified_utc": "2026-10-10T08:20:37.915006+00:00"
+        },
+        "summary": {
+          "run_id": "20261010_expression_annotation_downstream_v1",
+          "status": "COMPLETE_USER_REQUESTED_EXPRESSION_ANNOTATION_ZARR_UMAP_COVARNET_LIANA_AND_DOWNSTREAM_REVIEW",
+          "release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "input_independent_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/input_independent_audit.json",
+          "exists": true,
+          "bytes": 940,
+          "sha256": "2d8bd7b51ebff687a18e56ef258d603db87645308248e9633098d5a818940b60",
+          "modified_utc": "2026-10-10T03:00:36.123535+00:00"
+        },
+        "summary": {
+          "status": "PASS_NEW_LABEL_DOWNSTREAM_INPUTS_EXACT_SCOPE_COUNTS_AND_SOURCE_HOLDS",
+          "full_rows": 4676787,
+          "included_rows": 4534433,
+          "samples_min100": 1290,
+          "samples_before_min100": 1312,
+          "nodes": 172
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "covarnet_audit_v1/manifest.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/covarnet_audit_v1/manifest.json",
+          "exists": true,
+          "bytes": 2915,
+          "sha256": "6f02ef1b316ef45c91ccb6967dcaa646dd07536b1e0b0d8f77cef2bdb78eca55",
+          "modified_utc": "2026-10-10T07:52:12.412142+00:00"
+        },
+        "summary": {
+          "status": "PASS_COVARNET_EXACT_FREQUENCY_NORMALIZATION_NEW_LABEL_FACTOR_DIMENSIONS_AND_SOURCE_DIAGNOSTICS",
+          "samples": 1290,
+          "nodes": 172,
+          "K": 9,
+          "rank_survey_rows": 19,
+          "K_optimality_review_pending": true,
+          "independent_patient_inference_claimed": false,
+          "ecology_release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "liana/independent_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/liana/independent_audit.json",
+          "exists": true,
+          "bytes": 443446,
+          "sha256": "21d6e45befff652b9ba9ada199634a2e02347b058557b99cc9009fda41f6d194",
+          "modified_utc": "2026-10-10T07:51:40.711144+00:00"
+        },
+        "summary": {
+          "status": "PASS_LIANA_EXACT_SCOPE_NEW_LABELS_NATIVE_GENES_INPUT_SIGNATURES_NORMALIZATION_AND_OUTPUT_READBACK",
+          "samples": 1312,
+          "interactions": 31150424
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "cm_liana_summary_v1/independent_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/cm_liana_summary_v1/independent_audit.json",
+          "exists": true,
+          "bytes": 662,
+          "sha256": "a74468d2bbafa78f9348d312dcd8877b061a0b6486d8dbff5364f184b3e36df3",
+          "modified_utc": "2026-10-10T08:14:59.118033+00:00"
+        },
+        "summary": {
+          "status": "PASS_NEW_CM_LIANA_FULL_STREAM_PARITY_NEW_WEIGHTS_NATIVE_COMPLEX_DENOMINATORS_AND_SUMMARIES",
+          "all_LIANA_rows": 31150424,
+          "within_CM_rows": 13729410,
+          "primary_prioritized_CM_rows": 927379,
+          "summary_rows": 43888,
+          "primary_sample_count": 1290,
+          "no_old_CM_membership": true,
+          "rank_cutoffs_are_not_FDR": true,
+          "release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "covarnet_network_corrected_v1/network_independent_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/covarnet_network_corrected_v1/network_independent_audit.json",
+          "exists": true,
+          "bytes": 2080,
+          "sha256": "5a96293002d76edb867340e5e1d636fb578513c878fd21bf21d3d7cd55b6e13a",
+          "modified_utc": "2026-10-10T07:52:38.125140+00:00"
+        },
+        "summary": {
+          "status": "PASS_CORRECTED_COVARNET_ALL_GLOBAL_AND_CM_EDGES_METADATA_WEIGHTS_NO_MODEL_RECOMPUTATION",
+          "global_nodes": 148,
+          "global_edges": 299,
+          "CM_node_rows": 82,
+          "CM_edge_rows": 120,
+          "new_edges_vs_reference": 0,
+          "removed_edges_vs_reference": 1,
+          "NMF_recomputed": false,
+          "ecology_release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "downstream_review_v2/table_and_render_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/downstream_review_v2/table_and_render_audit.json",
+          "exists": true,
+          "bytes": 1546,
+          "sha256": "079c582fae0b57478986904e8e5bba77ee5195afd498ba1769c23b2a72b11c8a",
+          "modified_utc": "2026-10-10T08:18:56.109014+00:00"
+        },
+        "summary": {
+          "status": "PASS_DOWNSTREAM_REVIEW_FULL_TABLES_SOURCE_CONFIDENCE_EDGE_JOIN_LR_SELECTION_AND_RENDER_FILES_PENDING_AGENT_PIXEL_REVIEW",
+          "CM": 9,
+          "nodes": 172,
+          "ecology_release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_expression_annotation_downstream_v1",
+        "artifact": "downstream_review_v2/agent_visual_review.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/downstream_review_v2/agent_visual_review.json",
+          "exists": true,
+          "bytes": 2421,
+          "sha256": "c3d61d156ee5e45be0eecf2bccce722fa5b5129bfa97a7d53cd6dc9e0363d633",
+          "modified_utc": "2026-10-10T08:20:05.733008+00:00"
+        },
+        "summary": {
+          "status": "PASS_AGENT_PIXEL_REVIEW_ALL_FIVE_DOWNSTREAM_FIGURES_AND_NINE_CM_NETWORK_COMMUNICATION_PANELS",
+          "identity_promoted": false,
+          "ecology_release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_CM_source_replication_v1",
+        "artifact": "run_register.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_CM_source_replication_v1/run_register.json",
+          "exists": true,
+          "bytes": 1766,
+          "sha256": "c046f9dca90b35138d5b80c4ddf7ad88bf43b13afeec2bc984dafd2170b6e5b2",
+          "modified_utc": "2026-10-10T11:17:47.667159+00:00"
+        },
+        "summary": {
+          "status": "COMPLETE_FIRST_ROUND_SOURCE_REPLICATION_AND_SAMPLE_LR_AUDITED",
+          "run_id": "20261010_CM_source_replication_v1",
+          "release_eligible": false
+        }
+      },
+      {
+        "run_id": "20261010_CM_source_replication_v1",
+        "artifact": "results_summary.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_CM_source_replication_v1/results_summary.json",
+          "exists": true,
+          "bytes": 3761,
+          "sha256": "18a1eb25c593c63b1fb0d3295bf4bfb9206e3c5bc8ab6042dae9982046c9f885",
+          "modified_utc": "2026-10-10T11:17:44.373160+00:00"
+        },
+        "summary": {
+          "status": "COMPLETE_FIRST_ROUND_SOURCE_REPLICATION_AND_SAMPLE_LR_AUDITED",
+          "run_id": "20261010_CM_source_replication_v1",
+          "samples": 1290,
+          "reviewed_samples": 121,
+          "reviewed_patient_units": 45,
+          "unique_composition_pairs": 60,
+          "CM_edge_records": 120,
+          "n_CM": 9,
+          "candidates_inferential": 13,
+          "disputed_descriptive_candidates": 2,
+          "composition_estimated_strata": 357,
+          "primary_model_estimated_strata": 6,
+          "primary_model_BH_significant_strata": 0,
+          "identity_or_causal_release": false
+        }
+      },
+      {
+        "run_id": "20261010_CM_source_replication_v1",
+        "artifact": "execution_final.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_CM_source_replication_v1/execution_final.json",
+          "exists": true,
+          "bytes": 525,
+          "sha256": "2cf65a0c7d4ec4b864fe5e028d855a1cf2c6fbb5180ba3a522cf145235debd2b",
+          "modified_utc": "2026-10-10T11:17:44.373160+00:00"
+        },
+        "summary": {
+          "status": "COMPLETE_AUDITED",
+          "scientific_identity_promotion": false,
+          "completed_utc": "2026-10-10T11:17:44.373626+00:00"
+        }
+      },
+      {
+        "run_id": "20261010_CM_source_replication_v1",
+        "artifact": "audits/independent_audit.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_CM_source_replication_v1/audits/independent_audit.json",
+          "exists": true,
+          "bytes": 601,
+          "sha256": "607036681af6efc0d4921bb17175e12917ac9233d3cd9cd1ff6fc554e1a20ea1",
+          "modified_utc": "2026-10-10T11:11:39.516189+00:00"
+        },
+        "summary": {
+          "status": "PASS_FROZEN_CM_SOURCE_REPLICATION_AND_SAMPLE_LR_INDEPENDENT_AUDIT",
+          "patient_identity_is_not_complete": true,
+          "sorting_unknown": true,
+          "causal_release": false
+        }
+      },
+      {
+        "run_id": "20261010_CM_source_replication_v1",
+        "artifact": "audits/meta_readback.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_CM_source_replication_v1/audits/meta_readback.json",
+          "exists": true,
+          "bytes": 300,
+          "sha256": "fa5e18bf40eef4564f9ea6b36f3ee578c41b4287de5cec9c4b3bbc98db6efa7d",
+          "modified_utc": "2026-10-10T11:14:27.615175+00:00"
+        },
+        "summary": {
+          "status": "PASS_ALL_COMPOSITION_META_SCALARS_AND_EMPTY_COMMUNICATION_META_SCHEMA"
+        }
+      },
+      {
+        "run_id": "20261010_CM_source_replication_v1",
+        "artifact": "audits/visual_review.json",
+        "file": {
+          "path": "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20261010_CM_source_replication_v1/audits/visual_review.json",
+          "exists": true,
+          "bytes": 1010,
+          "sha256": "93e7006a86a74441f306e276ebb1f499a10eddf3b7946726d076037dfb48fff3",
+          "modified_utc": "2026-10-10T11:17:40.717160+00:00"
+        },
+        "summary": {
+          "status": "PASS_AGENT_PIXEL_REVIEW"
+        }
+      }
+    ]
+  }
+}

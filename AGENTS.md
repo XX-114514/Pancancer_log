@@ -1,5 +1,11 @@
 # AGENTS.md
 
+## 2026-10-11 授权与公共仓库纠正（优先于历史private条款）
+
+用户本次明确指定 `https://github.com/XX-114514/Pancancer_log` 并授权整理、commit和普通push；已核实目标为public。历史private-only描述保留为当时背景。本次及后续已授权范围内可向该目标正常提交经过审查的代码、汇总和脱敏日志；禁止force push、历史改写、删除和上传患者行/矩阵/凭据。
+
+Cloud开发遵循[工作流](docs/CODEX_CLOUD_DEVELOPMENT.md)及[RUNTIME_SYNC](docs/RUNTIME_SYNC.md)。每个任务必须写Codex日志，执行轻量检查，保留历史。Cloud不能假定能访问数据服务器或本机skill；仓库中的合同与规则是交接依据。缺少真实数据时只交付工具和合成验证，并明确真实执行未验证。
+
 本文件定义 Codex 在本记录仓库中的长期工作规则。上级工作区的规则继续生效；如有冲突，采用更严格且不破坏历史的规则。
 
 ## 1. 每次工作前必须读取
