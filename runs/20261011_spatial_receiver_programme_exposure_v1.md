@@ -24,3 +24,9 @@
 PANCANCER_PREFLIGHT_ROOT="${RUN_ROOT}" python scripts/spatial_receiver_programme_exposure_v1.py
 PANCANCER_PREFLIGHT_ROOT="${RUN_ROOT}" python scripts/audit_spatial_receiver_programme_exposure_v1.py
 ```
+
+代码a7d065e97258222ff8255d4dcc00559a0fced613已正常push并独立HTTPS核验；生产2026-10-11T12:17:57.866679+00:00（20:17:57.866679 UTC+8）派发，实际开始/终态需读取execution.json，不能只依PID或派发宣称完成。
+
+生产12:17:57.938231—12:18:56.150535 UTC（UTC+8加8小时）exit0，两进程均消失、0冲突；全部70主模型/75映射，22可估计、无名义p<0.05/主BH显著，尚待独立审计。源plan实际SHA4051c8dbd087e2cd72e9d0b9c03cc75b18bbea1728aeeca9c33e3ee03970bbd0与预先推送文件一致；创建器stdout哈希标签误指后续ROADMAP变量，已说明且不当输入变更。
+
+独立审计12:22:09.052317—12:23:13.049368 UTC exit0；2026-10-11T12:26:04.291574+00:00取证四进程终止、0冲突。70主模型/75映射及140/70/70诊断、1,272,290原生额外值和150,000唯一标签draw复算通过，尚待附加留一FOV/映射验收及v16登记。没有名义p<0.05或完整主BH显著，未通过科学轴验证。

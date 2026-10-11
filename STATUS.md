@@ -1,5 +1,9 @@
 # 当前项目状态
 
+## 2026-10-11T20:26:04.291574+08:00 接收程序终态检查
+
+70主模型生产和独立复算均exit0，22可估计、没有名义或主BH显著；尚待附加验收/登记。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。
+
 ## 2026-10-11T20:07:13 接收程序阶段
 
 接收程序—邻居暴露已预声明，70主模型/75映射，尚未启动；上轮0空间主BH不冒充通讯验证。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。

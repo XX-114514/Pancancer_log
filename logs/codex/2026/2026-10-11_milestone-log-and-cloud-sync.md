@@ -165,3 +165,17 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 [完整计划](../../../inventories/analysis/2026-10-11/spatial_receiver_programme_plan_v1.json)、[run](../../../runs/20261011_spatial_receiver_programme_exposure_v1.md)：14独立定义×5=70主模型、75映射，固定6半径niche/2与12诊断、R+内部programme~L+邻居占发送家族比例，家族数量/身份/RNA/密度与FOV调整、只置换L标签10000次完整70双侧BH。缺发送家族邻居记缺失；原程序/原9CM冻结，2programme专用记录不变为接触成功。所有结果待实际执行，未缩小到预计可显著的子集。
 
 12:09:35.189900 UTC /20:09:35.189900 UTC+8：方案7e7e2ad4044afc66011dfc9e1d1619e8dc09e9f7普通push，12:09:41.634417独立HTTPS核验同SHA。[收据](../../../inventories/analysis/2026-10-11/spatial_receiver_plan_git_receipt_v1.json)。生产/审计语法通过，服务器合成原生分母/缺失/自接触和跨FOV/强共线边界及全10000次L-only置换、QR与SVD系数通过；[冻结SHA](../../../inventories/analysis/2026-10-11/spatial_receiver_code_freeze_v1.json)。真实70模型尚未启动，条件检验非独立患者验证。
+
+12:17:27.102949 UTC /20:17:27.102949 UTC+8：代码a7d065e97258222ff8255d4dcc00559a0fced613普通push，12:17:33.594735独立HTTPS核对同SHA。[收据](../../../inventories/analysis/2026-10-11/spatial_receiver_code_git_receipt_v1.json)。12:17:57.866679 UTC派发新版本生产；实际开始/进程/结果需独立观察后记录。运行状态与已验收v15分开：新阶段用当前活跃执行清单和终态manifest登记，未提升科学标签或宣称goal已完成。
+
+生产实际12:17:57.938231—12:18:56.150535 UTC（20:17:57.938231—20:18:56.150535 UTC+8）exit0；观察worker/child均不在，状态刷新0冲突。全70主模型/75映射，22可估计；14作者未获、6作者无B类别、17接收者不足、8配体缺失、1programme覆盖不足、1缺剩余df、另1缺HLA-DRA；没有未校正p<0.05或主q05。独立审计待真终态；未因负结果改半径/端点。
+
+预声明源SHA经本机与已推送文件复核均4051c8dbd087e2cd72e9d0b9c03cc75b18bbea1728aeeca9c33e3ee03970bbd0；创建器stdout曾打印548320c，是变量q后来指向ROADMAP的哈希，非计划哈希。计划和已冻结云端内容未变，纠正stdout取证解释，不隐瞒或重写历史。接下来先验收独立复算，再核查受体适当靶基因/TF，而不是继续修改当前genericprogramme到显著。
+
+## 2026-10-11T20:26:04.291574+08:00 终态复核与用户日志要求
+
+用户再次要求关键/探索节点记录轨迹、时间线及普通git push；沿用AGENTS§2.1和RUNTIME_SYNC，同一任务日志。取证UTC 2026-10-11T12:26:04.291574+00:00 /UTC+8 2026-10-11T20:26:04.291574+08:00：读取原README/STATUS/ROADMAP/TODO、AGENTS、RUNTIME_SYNC、正式run和已有diff；保留无关未跟踪研究日志。上一工具返回输出截断只是展示限制，本次只观察既有状态，没有重启计算。
+
+服务器独立审计实际12:22:09.052317—12:23:13.049368 UTC /20:22:09.052317—20:23:13.049368 UTC+8，exit0；worker/child均不存在。70主模型、75映射、140半径诊断、70命名marker诊断和70受体表型诊断复算通过；原生额外基因1,272,290值、150,000次唯一配体标签draw重放一致。状态0冲突、active_jobs为空。计算审计通过不是独立生物验证；22可估计、0名义p05/0主BH显著，仍未证明任何通讯轴或CMdriver。
+
+检查命令结构：SSH执行既有observe.py；本机git status/diff/diff --check；repository validator结果0errors/1既有warning。接下来补充留一FOV及缺失/映射一致性验收、注册新里程碑，再发布聚合结果和图。所有细胞/FOV及原矩阵留服务器。建议commit：records: sync receiver production and audit terminal checkpoint。

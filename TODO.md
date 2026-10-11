@@ -1,5 +1,9 @@
 # 可执行任务
 
+## 2026-10-11T20:26:04.291574+08:00 接收程序终态检查
+
+计算和独立复算完成；待附加留一FOV/映射验收、里程碑登记、聚合图及普通push。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。
+
 ## 2026-10-11T20:07:13 接收程序阶段
 
 70接收程序主模型：predeclared_not_started；下一步冻结代码、全量计算及独立归一化/图/null审计。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。
