@@ -1,0 +1,102 @@
+{
+  "schema": "fullgene_receiver_target_readiness_plan_v1",
+  "created_UTC": "2026-10-11T12:45:16.867675+00:00",
+  "created_UTC8": "2026-10-11T20:45:16.867675+08:00",
+  "question": "Do all fixed candidate interfaces have traceable human LR/ligand-target/TF priors and full-gene receiver-unit data that retain original numbered subtype identities?",
+  "parent_evidence_version": "v16",
+  "parent_handoff_sha256": "27237270ac58481cb1d657e37e3b67b9f9ee550fa1996a2172810f8b61a488f8",
+  "scope": {
+    "fixed_reference_supported_records": 336,
+    "unique_LR": 209,
+    "ligand_strings": 118,
+    "receptor_strings": 126,
+    "followup_records": 15,
+    "full_native_sources": [
+      "GSE179994",
+      "GSE183904",
+      "GSE270680"
+    ],
+    "source_cells": 809784,
+    "selected_frozen_cells": 285360,
+    "source_libraries": 164,
+    "original_nodes": 13,
+    "broad_analysis_families": 4
+  },
+  "prior": {
+    "doi": "10.5281/zenodo.7074291",
+    "species": "human",
+    "files": [
+      {
+        "key": "lr_network_human_21122021.rds",
+        "size": 20724,
+        "checksum": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+        "url": "https://zenodo.org/api/records/7074291/files/lr_network_human_21122021.rds/content"
+      },
+      {
+        "key": "ligand_tf_matrix_nsga2r_final.rds",
+        "size": 29862142,
+        "checksum": "md5:d8951b123e4f7ec6bd5fb50069050972",
+        "url": "https://zenodo.org/api/records/7074291/files/ligand_tf_matrix_nsga2r_final.rds/content"
+      },
+      {
+        "key": "ligand_target_matrix_nsga2r_final.rds",
+        "size": 262116605,
+        "checksum": "md5:b09606b04b2d4490418d9028c0e58b9f",
+        "url": "https://zenodo.org/api/records/7074291/files/ligand_target_matrix_nsga2r_final.rds/content"
+      }
+    ],
+    "interpretation": "Prior regulatory potential is unsigned ligand-target support; not receptor-specific activity, significance, causal binding or assembled complexes"
+  },
+  "fullgene_transform": {
+    "inputs": "Accepted per-source full integer symbol counts and all frozen source-row/node/sample keys from supported336 native panels; source and cache SHA checked",
+    "units": "All original numbered nodes present in each accepted source × all frozen source libraries, including empty units; retain original labels and family map separately",
+    "gene_axis": "Complete native gene axis for each source; no across-source missing genes filled0 or automatic aliases",
+    "outputs": [
+      "sum_raw_counts_int64",
+      "positive_cell_counts_int32",
+      "mean_CP10K_float64",
+      "mean_log1p_CP10K_float64",
+      "n_cells",
+      "full_RNA_total_sum",
+      "full_detected_gene_sum",
+      "native_gene_presence"
+    ],
+    "normalization": "Per-cell full native RNA denominator x10000 before mean/log mean; raw totals and nGenes independently preserved",
+    "background_diagnostics": "Per original-node unit genes with detection>=1% and>=10%, units>=20cells; report counts rather than silently require all priors measured"
+  },
+  "prior_coverage": {
+    "LR": "Exact direction and literal symbols; complexes/constituents reported explicitly, not inferred as assembled LR from Cartesian flat edges",
+    "targets": "All available exact ligand columns; describe total nonzero target/TF coverage. Fixed top200positive target weights per ligand sorted by decreasing weight then lexicographic symbol, excluding L/R constituents and all4family-name marker genes; no target chosen from current expression results",
+    "followup": "Map all15 fixed records and all336 source-context/programme records, no topk candidate deletion",
+    "role": "Preparation and coverage only; no statistical association/DEG/TF activity or formal states assigned"
+  },
+  "expected_files": [
+    "predeclared_plan.json",
+    "all336_prior_coverage.tsv",
+    "all15_followup_prior_coverage.tsv",
+    "all1008_source_target_coverage.tsv",
+    "fullgene_source_summary.tsv",
+    "private_source_unit_arrays/*.npz",
+    "private_source_unit_catalogs/*.tsv",
+    "inventory.json",
+    "independent_audit.json",
+    "milestone_handoff.json"
+  ],
+  "acceptance": [
+    "Official sizes/MD5 and local/server SHA for all3priorfiles; exact RDS axes, singleton directional edges and complex/missing fixtures",
+    "All285360selectedcell rows map to unchanged accepted native H5source and original-node/library keys; original13identities retained",
+    "Independently recount all fullgene unit sums/detection/meanCP/logmean and rawRNA/nGenes; compare original296selectedgene cache aggregates",
+    "All336/15candidate keys and1008source comparisons retained; missing priors/genes/emptyunits remain distinguished",
+    "Source patient/clinical and discovery overlap limitations retained; fullgene data availability is not independent validation",
+    "Real terminal manifests/processes, audit evidence and0stateconflicts before next evidence registration"
+  ],
+  "limits": [
+    "All3native sources were inspected/discovery inputs; not untouched validation",
+    "Original labels represent identity/subtype/marker layer, not formal states",
+    "Current familyextension still has0direct originalCMedge matches; preparation doesnot proveCMdriver",
+    "NicheNet ligand targets cannot identify which receptor mediates a shared ligand response; receptor/path specificity still requires separate evidence",
+    "No genericprogramme/radius/endpoint changed after prior negative spatial results"
+  ],
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

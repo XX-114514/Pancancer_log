@@ -1,5 +1,9 @@
 # 可执行任务
 
+## 2026-10-11T20:45:16.867675+08:00 完整基因准备
+
+下一任务：全基因原子群/文库聚合和全部固定候选先验覆盖，待代码冻结/真实执行/独立审计。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。
+
 ## 2026-10-11T20:29:43.368494+08:00 接收程序验收
 
 70模型：done_conditional_computation_not_axis_validation；全基因/患者/免疫治疗输入和受体靶/TF先验审查：next_bounded_task，尚未运行新模型。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。

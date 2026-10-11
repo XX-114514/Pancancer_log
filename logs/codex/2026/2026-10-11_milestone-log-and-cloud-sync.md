@@ -197,3 +197,11 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 最终仓库验证0errors/1既有warning，diff检查通过；科学图/源SHA/缺失与时间线已核对。关键节点内容将普通push并独立核验，随后另存真实发布时间收据。
 
 20:34:56.163060 UTC+8（UTC12:34:56.163060）：全70验收内容00c9e1dd5f517f2b469c38d0f36164165f325b08普通push；20:35:02.880812 UTC+8独立HTTPS ls-remote/fetch核对同SHA。 [发布收据](../../../inventories/analysis/2026-10-11/spatial_receiver_acceptance_git_receipt_v1.json)、[四节点Git时间线](../../../inventories/analysis/2026-10-11/spatial_receiver_git_timeline_v1.tsv)。原无关未跟踪日志仍保留。仓库验证0errors/1既有路径warning（artifacts历史），新公共输出路径检查通过。本收据追加提交后再独立核验，不把科学作业审计或云端成功冒充通讯轴验证。
+
+## 2026-10-11T20:45:16.867675+08:00 全基因及靶先验预声明
+
+UTC 2026-10-11T12:45:16.867675+00:00 /UTC+8 2026-10-11T20:45:16.867675+08:00。前一goal turn判为progress：全70复算/补充验收/v16和云端95186d6改变权威状态，0名义显著决定下一步受体靶而非重试genericprogramme。当前只读核查v16/0活跃作业/0冲突及CURRENT_STATE、CURRENT_RUNS和AGENTS；源矩阵完整基因19790/24186/36601，809784源细胞，现有选定285360、164文库；all336含209LR。
+
+探索读入脚本v1因NumPy int64无法JSON序列化失败，v2转换标准int后只读完成，失败未影响任何科学对象。Nature2025协议可读摘要/数据与代码链接，全文为订阅预览，改作者公开代码/FAQ作为方法操作依据；web无法读二进制/超大小RDS不当数据缺失。官方Zenodo API元数据及20KB LR已取并MD5校验，另两人类prior正在下载，尚未称完整。
+
+[正式run](../../../runs/20261011_fullgene_receiver_target_readiness_v1.md)和[计划](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_plan_v1.json)：全部336/15固定记录，原数字子群×文库完整基因聚合及1008来源先验覆盖，方向/复合物/缺失分开。来源与癌种限定价值保留；身份与连续响应分开，原CM直接边0仍未解决。未执行新机制检验，未声称轴验证。下一步代码冻结、实际全基因准备和独立复算，普通push本节点。建议commit：analysis: predeclare fullgene receiver response and prior coverage。
