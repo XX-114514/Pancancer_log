@@ -1,0 +1,46 @@
+{
+  "schema": "author_barcode_orientation_evidence_v1",
+  "observed_UTC": "2026-10-11T11:22:54.765780+00:00",
+  "official_source": "https://github.com/satijalab/seurat/blob/master/R/preprocessing.R",
+  "author_code": "https://github.com/KChen-lab/ST_Comparison/blob/main/Seurat/CosMx_ICON.R",
+  "official_source_sha256": "f7822ed422fea5dfd5edeb1e0afc8f8ea5352d9770335851a54427bf43932f7f",
+  "author_source_sha256": "d53a229ca6913326b68829438f21246cb48929d37c9adeb5368c9257574e677e",
+  "convention": "TMAprefix_cell_ID_FOV",
+  "counts": [
+    {
+      "TMA": "ICON1",
+      "native_cells": 43565,
+      "author_records": 36513,
+      "old_direction_matches": 1047,
+      "correct_direction_matches": 36513,
+      "correct_direction_orphans": 0
+    },
+    {
+      "TMA": "ICON2",
+      "native_cells": 39123,
+      "author_records": 38393,
+      "old_direction_matches": 1400,
+      "correct_direction_matches": 38393,
+      "correct_direction_orphans": 0
+    },
+    {
+      "TMA": "MESO1",
+      "native_cells": 60395,
+      "author_records": 60293,
+      "old_direction_matches": 1596,
+      "correct_direction_matches": 60293,
+      "correct_direction_orphans": 0
+    },
+    {
+      "TMA": "MESO2",
+      "native_cells": 46955,
+      "author_records": 45857,
+      "old_direction_matches": 1527,
+      "correct_direction_matches": 45857,
+      "correct_direction_orphans": 0
+    }
+  ],
+  "old_direction_total_matches": 5570,
+  "correct_direction_total_matches": 181056,
+  "old_author_agreement_is_biologically_invalid": true
+}
