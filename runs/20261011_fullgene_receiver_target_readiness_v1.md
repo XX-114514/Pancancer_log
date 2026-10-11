@@ -17,3 +17,9 @@
 ## 验收与状态
 
 尚未启动科学生产或审计。必须核验原生全基因/原编号身份/样本轴及全部聚合值，独立审计通过后登记新证据。3来源已经用于发现/探索，不称独立验证。原9CM、172子群、Zarr和历史结果不变；当前没有新增统计p值。
+
+## 2026-10-11T21:06:33.599638+08:00 资源与合成检查点
+
+[全部事件时间线](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_timeline_v1.tsv)、[脱敏取证与SHA](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_checkpoint_v1.json)、[预声明云端核验](../inventories/analysis/2026-10-11/fullgene_receiver_target_plan_git_receipt_v1.json)。3份官方先验本机校验完整；服务器下载exit1、TF部分、靶尚未到库。分块探针通过，下一下载版本未启动。合成编码故障已修正且fixture v2通过；真实完整基因生产和独立审计均未开始。
+
+失败部分文件、旧脚本及终态manifest保留；详情在[持续任务日志](../logs/codex/2026/2026-10-11_milestone-log-and-cloud-sync.md)。科学证据保持v16，资源准备不晋升通讯验证。运行命令将使用固定scanpy Python3.10.19与环境变量PANCANCER_PREFLIGHT_ROOT；完成资源及代码冻结后记录实际生产起止和exit。

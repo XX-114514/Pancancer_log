@@ -1,0 +1,119 @@
+{
+  "schema": "fullgene_resource_and_synthetic_checkpoint_v1",
+  "observed_UTC": "2026-10-11T13:06:33.599638+00:00",
+  "observed_UTC8": "2026-10-11T21:06:33.599638+08:00",
+  "plan_sha256": "b85edcf22cbed791fbdddb54032105e01259f48dde2edacd2460511fb7648606",
+  "fixed_scope": {
+    "fixed_reference_supported_records": 336,
+    "unique_LR": 209,
+    "ligand_strings": 118,
+    "receptor_strings": 126,
+    "followup_records": 15,
+    "full_native_sources": [
+      "GSE179994",
+      "GSE183904",
+      "GSE270680"
+    ],
+    "source_cells": 809784,
+    "selected_frozen_cells": 285360,
+    "source_libraries": 164,
+    "original_nodes": 13,
+    "broad_analysis_families": 4
+  },
+  "server": {
+    "observed_UTC": "2026-10-11T13:04:30.150970+00:00",
+    "asset_v1": {
+      "status": "TERMINAL_FAILED_RESOURCE_FETCH",
+      "started_UTC": "2026-10-11T12:54:26.480304+00:00",
+      "finished_UTC": "2026-10-11T12:58:07.020611+00:00",
+      "exit_code": 1,
+      "pid": 418292,
+      "role": "public_prior_resource_fetch_not_scientific_model",
+      "script_sha256": "bed66e2fa9e586a115fa62e714d299b40b1dd6eb803c0398e1386080a956f720"
+    },
+    "asset_manifest_sha256": "97aff74a654b454454f24ddae382992552cd474a01fca343cf69edfeff409556",
+    "asset_worker_present": false,
+    "evidence_schema": "native_LR_program_evidence_register_v16",
+    "active_jobs": [],
+    "server_prior_files": [
+      {
+        "file": "ligand_tf_matrix_nsga2r_final.rds",
+        "bytes": 6339188
+      },
+      {
+        "file": "lr_network_human_21122021.rds",
+        "bytes": 20724
+      }
+    ],
+    "synthetic_fix_v2": {
+      "status": "PASS_RAW_LOG_FULL_DENOMINATOR_EMPTY_UNIT_ORIGINAL_NUMBERED_IDENTITIES_PRIOR_DIRECTION_COMPLEX_MISSING_AND_TIES",
+      "stdout_verified": true,
+      "event_UTC": "unknown",
+      "observed_UTC": "2026-10-11T13:04:30.151838+00:00"
+    },
+    "code_shas": {
+      "fullgene_receiver_target_readiness_v1.py": "1cf76bd15d5e8880bf889869d9d1999b189b13d416fa909b5f021a94633e366d",
+      "audit_fullgene_receiver_target_readiness_v1.py": "78fda589f8a659533b440eb2d4d13031191c7005b9b77c49e149f7265d35b1e5",
+      "fixture_v2.py": "473ba0d1a11ab76a021d651367f47efae8b56094ad085a1424f6dca0a8883bec"
+    },
+    "statistical_models_fitted": false,
+    "fullgene_production_started": false,
+    "axis_validation_complete": false,
+    "process_verification": {
+      "observed_UTC": "2026-10-11T13:05:24.011974+00:00",
+      "asset_worker_present": false,
+      "method": "proc_pid_exists_and_separate_ps_explicit_header_inspection",
+      "prior_boolean_from_ps_stdout_rejected": true
+    }
+  },
+  "local_priors": [
+    {
+      "file": "lr_network_human_21122021.rds",
+      "bytes": 20724,
+      "official_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+      "observed_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+      "sha256": "47c971d2fbba4ecd0ba7485d1846a74054432a0d1a97ea3e6a79ae27d0da8094",
+      "observed_UTC": "2026-10-11T13:06:33.599638+00:00",
+      "location": "local_verified_resource_not_server_production_input"
+    },
+    {
+      "file": "ligand_tf_matrix_nsga2r_final.rds",
+      "bytes": 29862142,
+      "official_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+      "observed_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+      "sha256": "bb130724daf2319a50d9da326f17ec4ddc65bd35a674eb45d132f81284d01845",
+      "observed_UTC": "2026-10-11T13:06:33.599638+00:00",
+      "location": "local_verified_resource_not_server_production_input"
+    },
+    {
+      "file": "ligand_target_matrix_nsga2r_final.rds",
+      "bytes": 262116605,
+      "official_md5": "md5:b09606b04b2d4490418d9028c0e58b9f",
+      "observed_md5": "md5:b09606b04b2d4490418d9028c0e58b9f",
+      "sha256": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d",
+      "observed_UTC": "2026-10-11T13:06:33.599638+00:00",
+      "location": "local_verified_resource_not_server_production_input"
+    }
+  ],
+  "target_resume": {
+    "status": "TERMINAL_SUCCESS_OFFICIAL_MD5",
+    "file": "ligand_target_matrix_nsga2r_final.rds",
+    "bytes": 262116605,
+    "resume_offset": 140509184,
+    "started_UTC": "2026-10-11T12:59:17.258232+00:00",
+    "finished_UTC": "2026-10-11T13:01:32.751526+00:00",
+    "md5": "md5:b09606b04b2d4490418d9028c0e58b9f",
+    "sha256": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d",
+    "first_failed_partial_retained": true
+  },
+  "limits": [
+    "All3 local official MD5 verified; server TF partial and target not present in accepted server prior directory",
+    "Synthetic PASS is not real fullgene production or independent audit",
+    "Exact remote first-fetch cause only size/MD5 assertion failure is established; network interruption explanation unconfirmed",
+    "Prior process boolean based on nonempty ps stdout rejected because ps header; explicit ps and /proc verified absent"
+  ],
+  "statistical_models_fitted": false,
+  "axis_validation_complete": false,
+  "scientific_release": false,
+  "next_action": "Restore server priors in a fresh version with exact Range/length and official wholefile MD5; then freeze code and run fullgene production and independent audit"
+}

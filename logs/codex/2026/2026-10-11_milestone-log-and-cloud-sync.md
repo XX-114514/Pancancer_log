@@ -205,3 +205,19 @@ UTC 2026-10-11T12:45:16.867675+00:00 /UTC+8 2026-10-11T20:45:16.867675+08:00。�
 探索读入脚本v1因NumPy int64无法JSON序列化失败，v2转换标准int后只读完成，失败未影响任何科学对象。Nature2025协议可读摘要/数据与代码链接，全文为订阅预览，改作者公开代码/FAQ作为方法操作依据；web无法读二进制/超大小RDS不当数据缺失。官方Zenodo API元数据及20KB LR已取并MD5校验，另两人类prior正在下载，尚未称完整。
 
 [正式run](../../../runs/20261011_fullgene_receiver_target_readiness_v1.md)和[计划](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_plan_v1.json)：全部336/15固定记录，原数字子群×文库完整基因聚合及1008来源先验覆盖，方向/复合物/缺失分开。来源与癌种限定价值保留；身份与连续响应分开，原CM直接边0仍未解决。未执行新机制检验，未声称轴验证。下一步代码冻结、实际全基因准备和独立复算，普通push本节点。建议commit：analysis: predeclare fullgene receiver response and prior coverage。
+
+## 2026-10-11T21:06:33.599638+08:00 资源失败、恢复和实时日志补录
+
+用户再次要求关键/探索节点维护Pancancer_log并普通push。取证UTC 2026-10-11T13:06:33.599638+00:00 /UTC+8 2026-10-11T21:06:33.599638+08:00；本节为补录，不倒填云端发布时间。[资源检查点](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_checkpoint_v1.json)和[时间线](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_timeline_v1.tsv)同时记录已知事件时间、取证时间；未知终态时间明确unknown。
+
+已观察：三份官方人类先验在本机均重新核对大小/MD5/SHA；靶矩阵v2续传12:59:17.258232—13:01:32.751526 UTC通过官方MD5，首次140509184bytes部分文件保留。服务器首次资源下载12:54:26.480304—12:58:07.020611 UTC exit1，TF只有6339188/29862142bytes，在大小/MD5断言失败；并非已确证socket timeout。服务器LR完整、TF部分、靶尚未进入正式输入目录，不能声称服务器资源齐全或科学计算完成。
+
+失败与修正：本机首次下载触及240秒代码上限；慢scp独占传输终止及读取未完成RDS的LibrdataError保留。合成fixture v1发现H5字符串为object，npz用allow_pickle=False读取失败；保留旧代码，改为显式Unicode基因轴，v2真实合成检查PASS，原始整数/检测/CP/log均值、完整RNA分母、空单位NA、原编号身份、复合物/缺先验/排序并列均检查。producer SHA 1cf76bd15d5e8880bf889869d9d1999b189b13d416fa909b5f021a94633e366d；不是真实生产验收，也未冻结新机制模型。
+
+取证脚本第一次把非空ps stdout当PID存在，旧ps输出表头也非空；该布尔值被否决，独立显式ps和/proc检查确认worker不存在，未因这一观察重启资源或科学作业。v16 active_jobs为空，fullgene inventory不存在。官方分块探针TF/靶均HTTP206且精确1MiB，耗时35.20/38.48秒；支持分块路径，尚未执行下一下载版本。
+
+检查命令：git status/remote/diff；SSH读取资源manifest/register/checkpoint、ps与/proc；官方Range只读探针；scanpy Python运行fixture_v2；本机逐资源重新hash。README/STATUS/ROADMAP/TODO、AGENTS、RUNTIME_SYNC和相关run/daily均复核。所有矩阵、RDS、样本/细胞行与完整stdout留外部工作区；无关未跟踪研究日志保留。更新本同任务日志、daily/run、状态与run索引，脱敏汇总及SHA入公共仓库。
+
+方案6abc0e16a9f2815934a08032b8505a0f91b1bb4c已于12:46:04.210189 UTC独立HTTPS核验，[收据](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_plan_git_receipt_v1.json)补归档。本节点推送尚待真实完成收据，不预称成功。下一步新版本恢复服务器先验并核对全文件MD5，再冻结代码、执行完整基因准备与独立审计。336/15/1008范围、原172群和9CM保持；仍无新增统计结论或正式状态标签。建议commit：records: sync fullgene resource recovery and failure timeline。
+
+提交前检查：git diff --check通过；仓库验证0errors/1既有历史路径warning；新增3结构化文件解析、时间与隐私/路径检查通过，所有本机先验与服务器脚本SHA复核一致。原无关未跟踪研究日志未暂存，代码尚非真实生产冻结。
