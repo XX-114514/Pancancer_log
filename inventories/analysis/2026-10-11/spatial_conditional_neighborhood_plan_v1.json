@@ -1,0 +1,82 @@
+{
+  "schema": "spatial_conditional_neighborhood_plan_v1",
+  "created_UTC": "2026-10-11T11:43:34.447250+00:00",
+  "created_UTC8": "2026-10-11T19:43:34.447250+08:00",
+  "biological_question": "Are frozen ligand-positive sender and receptor-positive receiver cells spatially enriched beyond family location, RNA depth and local cell density in existing tissues?",
+  "scope": {
+    "original_records": 13,
+    "unique_interfaces": 9,
+    "assays": 5,
+    "cells": 254458,
+    "primary_test_family": 45,
+    "mapped_record_results": 65,
+    "annotation": "v20261010",
+    "nodes": 172,
+    "CM": 9,
+    "separate_programme_records": 2
+  },
+  "parent": {
+    "register": "native_LR_program_evidence_register_v14",
+    "inventory_sha256": "363efe003138e336ddf037deca25f7cf8b92c1d85e2ea5fd8114adac4f12a654",
+    "audit_sha256": "74f0bf84121b60469c720fb15b2c4c0ae92e3cba965b176651993dca527ed872",
+    "candidate_sha256": "1aa6d9c911ebca1f2925ae77942d1544a1281c8bddcfccfd05540446e74ddf37"
+  },
+  "geometry": {
+    "coordinates": "v3 cache coords / converter .12028 reconstructs native pixels; independent absolute micron calibration is unverified",
+    "cell_radius": "sqrt(native Area / pi) in pixels, a circular area proxy not actual cell boundary",
+    "within_FOV_only": true,
+    "self_edges": false,
+    "primary": "centroid distance <=2*(sender radius+receiver radius)",
+    "sensitivity_multipliers": [
+      1,
+      3
+    ],
+    "tissue_mask": "No reviewed tissue mask; finite radius avoids unbounded nearest-neighbour bridging but cannot remove all holes",
+    "density": "Degree on the primary geometry graph of all QC native cells in the same FOV; calculated before candidate expression"
+  },
+  "primary_identity": "Accepted v3 qc_background_author: same author broad T/B, native QC, family name and all LR components above FOV negative-probe q95; author absence is missing. ICON B category and GSE287472 author unavailable.",
+  "null": {
+    "fixed_seed": 20261011,
+    "permutations": 2000,
+    "strata": "Within each FOV: joint sender/receiver family membership (10/01/11), native RNA above/below median of all QC FOV cells, local primary degree above/below median of all QC FOV cells",
+    "permutation": "Shuffle joint two-bit L-positive/R-positive code within each fixed stratum, preserving family locations, all stratum-specific L/R counts and same-cell coexpression. Same cell never contributes to adjacency. A stratum of size1 or constant code is preserved; no automatic bin merging.",
+    "statistic": "Sum directed ligand-positive sender to receptor-positive receiver neighbour pairs across all FOVs within a file. Constant family graph and endpoint denominator; no FOV treated as independent patient.",
+    "pvalue": "One-sided enrichment (1+null>=observed)/(2001), depletion and two-sided diagnostic separately. No test when required gene/author unavailable, no endpoints or zero primary null variance.",
+    "BH": "Primary enrichment p: BH over all45 predefined interface-file tests, unavailable/unestimable p filled1 solely inside multiplicity calculation; reported p remains NA.",
+    "sensitivity": "Same 2000 primary permutations score radii1/3; p diagnostic, no new BH family or result-selected radius. RNA-marker/background/pure and count>=2 endpoint/observed geometry sensitivity reported without selecting a replacement primary."
+  },
+  "power": "No >=20 perFOV eligibility gate for this conditional test. All measured sparse interfaces retained, endpoint and movable count, null variance, FOV concentration and leave-one-FOV enrichment summaries reported. >=20 was preflight descriptive coverage only.",
+  "units": "Conditional spatial label tests within observed FOVs; no patient/core map => no patient population significance, no independent cross-source validation. TMA files from one GSE may share people.",
+  "interpretation": "Spatial RNA organization, not protein engagement, downstream response or CM driver. Keep source/cancer limited and cross-cancer transfer valuable but distinct.",
+  "binding_limits": {
+    "LGALS9|CD44": "Primary functional binding literature; glycan and cell context unmeasured",
+    "LGALS9|PTPRC": "Glycan/protein association with CD45, broader receptor complexes; not exclusive canonical signal",
+    "IL16|CD4": "Primary CD4 domain binding/function evidence; molecular context requires qualification",
+    "IL16|CD9": "Primary alternate binding receptor evidence mainly mast cells, does not validate current B-to-T direction",
+    "HLA-DRA|CD4": "Full peptide-MHC-II complex and TCR context required; DRA RNA alone is proxy",
+    "APP|NOTCH2": "Primary same-cell association, not established trans-cell activating ligand here",
+    "SELPLG|SELL": "Adhesion interaction requires glycosylation/sulfation not measured by RNA",
+    "CD55|ADGRE5": "Direct extracellular interaction, current cell-direction function untested",
+    "TNFSF10|TNFRSF10B": "Direct TRAIL/DR5 receptor evidence, trimerization and cellular death response unmeasured"
+  },
+  "acceptance": [
+    "All9 unique interfaces x5 files exactly45; 65 mapped records with no duplicated evidence",
+    "Parent hashes and every private cache locked/verified; canonical inputs unchanged",
+    "Independent graph recount and small brute-force distance fixtures; no self/cross-FOV edges",
+    "Independent endpoint/overlap/strata/null replay across all45; all unavailable cases retained",
+    "All2000 null draws and invariants retained privately; public aggregates only; semantic audit separates computational from patient/mechanism validation"
+  ],
+  "expected_files": [
+    "predeclared_plan.json",
+    "all45_interface_results.tsv",
+    "all65_record_mapping.tsv",
+    "all135_radius_results.tsv",
+    "all135_endpoint_sensitivity.tsv",
+    "private_FOV_diagnostics.tsv",
+    "private_null_cache/*.npz",
+    "inventory.json",
+    "independent_audit.json"
+  ],
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

@@ -33,3 +33,7 @@ SELL阳性细胞在胃癌T_cell_IL7R_36内细胞毒程序较低，23样本单位
 ## 19:27:55 原生空间预检v3
 
 [run](../../../runs/20261011_spatial_contact_native_preflight_v3.md)、[全65表](spatial_contact_native_preflight_v3/all_contact_record_testability.tsv)、[终态](spatial_contact_native_preflight_v3/checkpoint.json)、[时间线](spatial_contact_native_preflight_v3/timeline.tsv)、[审计](spatial_contact_native_preflight_v3/independent_audit.json)。正确作者映射/6口径计算完成，4LR有描述性覆盖；未进行邻近/机制检验，失败和错误方向保留更正。
+
+## 条件空间阶段
+
+[预声明45接口](spatial_conditional_neighborhood_plan_v1.json)、[补充表结构/限制](spatial_core_supplement_review_v1.json)、[正式run](../../../runs/20261011_spatial_conditional_neighborhood_v1.md)。尚未启动，结果待验收。

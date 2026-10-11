@@ -129,3 +129,11 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 提交前验收：仓库验证0errors/1既有warning、git diff --check通过。新白名单文件没有内部路径/患者或细胞键；全部65组合、390口径、180图表单元格、17时间事件与审计一致，生产/审计SHA与已预先push的a61d6db严格吻合。原无关未跟踪研究日志保持，不暂存。建议commit：records: publish corrected and audited native spatial preflight。
 
 11:33:06.562091 UTC /19:33:06.562091 UTC+8：最终内容3d41ab4a3a9f55c8a24f8a285e4a5b2b9e4644a7普通push exit0；11:33:12.751482本机独立HTTPS ls-remote及fetch返回同SHA。[发布收据](../../../inventories/analysis/2026-10-11/spatial_contact_preflight_git_receipt_v1.json)。本轮5个发布节点均已正常推送并核验，没有force/历史重写或覆盖无关工作。此收据追加提交另核对远端，未把科学目标标complete。
+
+## 19:43:34 UTC+8 条件空间零模型预声明
+
+事件/取证UTC 2026-10-11T11:43:34.447250+00:00，UTC+8 2026-10-11T19:43:34.447250+08:00。用户再次要求关键/探索节点及时维护并普通push，持续同一日志。父v14/全65原生审计已核验，无活跃科学作业、新目录未创建；本机既有未跟踪研究日志保留。
+
+使用Spreadsheets skill只读原Supplementary Data6，18,357字节/SHA55a80c1，CosMx病理评分表无当前FOV到患者完整桥；未修改或公开工作簿/核心患者行。单位未解决时继续条件空间描述，不能填成独立患者。APP–NOTCH2原文同细胞关联不能直接当跨细胞信号；完整9LR的复合物/糖链/方向限制写入计划。
+
+[新正式run](../../../runs/20261011_spatial_conditional_neighborhood_v1.md)和[预声明](../../../inventories/analysis/2026-10-11/spatial_conditional_neighborhood_plan_v1.json)：全部9×5=45，映射65；有限原生像素/面积邻域、同FOV排自接触，固定家族/深度/密度联合LR标签置换2000次，完整45主BH。将原每FOV≥20门槛保持为预检描述，不作为新条件检验删样本理由；null不可变/缺失明确报告。生产/审计尚未启动，不把已声明当结果。下一步提交冻结代码、实际运行及独立复算；目标仍未完成。

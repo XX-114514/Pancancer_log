@@ -1,0 +1,33 @@
+{
+  "source_page": "https://www.nature.com/articles/s41467-025-63414-1",
+  "source_file": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-63414-1/MediaObjects/41467_2025_63414_MOESM8_ESM.xlsx",
+  "bytes": 18357,
+  "sha256": "55a80c100aac4b23ae095e0bfbc79d5d9b20746343fd0df51682a9495a677d1b",
+  "reviewed_UTC": "2026-10-11T11:43:34.447250+00:00",
+  "sheets": [
+    {
+      "sheet": "CosMx",
+      "shape": [
+        16,
+        22
+      ]
+    },
+    {
+      "sheet": "MERFISH",
+      "shape": [
+        22,
+        22
+      ]
+    },
+    {
+      "sheet": "Xenium_MM",
+      "shape": [
+        22,
+        22
+      ]
+    }
+  ],
+  "finding": "Pathologists evaluation columns for tissue cores; no exact current FOV-to-reviewed-patient bridge in this workbook",
+  "patient_rows_published": false,
+  "workbook_modified": false
+}
