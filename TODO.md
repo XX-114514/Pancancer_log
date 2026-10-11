@@ -1,5 +1,18 @@
 # 可执行任务
 
+## 下载/QC任务更新：2026-10-11 19:02 UTC+8
+
+| ID | 优先级 | 当前状态 | 下一动作/验收标准 |
+|---|---|---|---|
+| EXP-001 | P0 | download_workers_stopped | 端点与Range复测后用新重试版本续传6文件+Zenodo，官方校验；不能以queue_terminal当成功 |
+| EXP-002 | P0 | four_QC_shards_ready_for_source_review | 993,312细胞账本审计通过；完成研究别名/文库排重、临床sidecar及正式acceptance登记 |
+| EXP-003 | P0 | five_native_counts_ready_for_QC_review | 2,345,161原始计数；先核作者QC，再逐文库执行/承认QC，避免无依据重复过滤 |
+| EXP-004 | P0 | monitor_state_reporting_incorrect | v6显示续传中但无下载进程；恢复时新监控必须依据进程/失败/新鲜度，保留旧日志 |
+| LOG-SYNC-001 | P0 | ongoing_every_task | 每次任务关键节点及时普通push，独立HTTPS核验SHA；失败写待同步并处理 |
+
+此表更新下载线；下方科学线状态不由此改变。[证据与处理判断](inventories/runtime/2026-10-11/DOWNLOAD_READINESS.md)。
+
+
 ## CM扩展与节点同步补充
 
 | ID | 优先级 | 状态 | 任务 | 完成标准 |

@@ -1,5 +1,15 @@
 # 当前项目状态
 
+## 公共下载/QC最新检查：2026-10-11 18:56—19:02 UTC+8
+
+本节更新下载线，科学家族/空间线仍以各自较晚记录为准。[可读报告](inventories/runtime/2026-10-11/DOWNLOAD_READINESS.md)、[账本审计](inventories/runtime/2026-10-11/qc_ledger_readiness_v1.json)。
+
+- 完整源库存11来源/5,341,204细胞；QC增至4份/993,312细胞，149文库的doublet和mt均完成；账本与Zarr结构一致。正式新增验收仍未登记（0），尚未达到新增450万—550万目标。
+- **下载已停止**：当前无下载/前处理worker。第二批8/14文件有校验，6未完成；Zenodo39%未通过官方MD5。日志约7—7.8小时不更新，HEAD超时、aria2超时及重试耗尽有记录；v6监控的“续传中”描述不能作为运行证据。
+- 可进入下一步：4份QC分片逐来源验收、5份原始计数Zarr逐文库作者QC审查/QC；TNBC/CTCL先解来源疑点。未完成counts只先审元数据。全量跨研究整合仍待验收和用户决定。
+- 按用户“每一次任务及时push”要求，本节点建立独立任务日志、脱敏证据并普通commit/push，远端SHA另核验；没有创建自动定时push。
+
+
 ## 空间输入修复完成：2026-10-11 18:52:59 UTC+8
 
 [正式run](runs/20261011_spatial_native_input_repair_v1.md)与[终态证据](inventories/analysis/2026-10-11/spatial_input_repair_checkpoint_v1.json)：14基因轴筛查，TMA2新对象39123×1000的原CSV全39,123,000计数独立比对通过，X/counts两层、旧文件及坐标核查通过。v1错误的no-layers断言失败已保留，v2成功；登记证据v12、0冲突、本里程碑作业全部终止。

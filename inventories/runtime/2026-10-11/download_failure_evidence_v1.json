@@ -1,0 +1,56 @@
+{
+  "observed_utc": "2026-10-11T11:03:39.154777+00:00",
+  "failures": [
+    {
+      "filename": "batch2_GSE315928_failure_1791688214.json",
+      "category": "aria2_exit_1",
+      "file_mtime_utc": "2026-10-11T03:10:14.091033+00:00",
+      "sha256": "20e27865bff33744192fa91e6229837a0d40683a2bc7c19cbaae88bd17c23ca9"
+    },
+    {
+      "filename": "batch2_GSE294273_failure_1791689090.json",
+      "category": "aria2_exit_2",
+      "file_mtime_utc": "2026-10-11T03:24:50.176963+00:00",
+      "sha256": "3e4352558628bd81aa5a09d7d5f8b20a1d1d74327af07e256baf153e0d912b91"
+    },
+    {
+      "filename": "batch2_GSE236581_failure_1791689090.json",
+      "category": "aria2_exit_2",
+      "file_mtime_utc": "2026-10-11T03:24:50.191963+00:00",
+      "sha256": "c745a10a53192e58cf5003c1a2deee1c40b6cca08cb7b01bea495c93e5d1afb9"
+    },
+    {
+      "filename": "batch2_GSE246613_failure_1791688250.json",
+      "category": "ReadTimeout",
+      "file_mtime_utc": "2026-10-11T03:10:50.154030+00:00",
+      "sha256": "d0953db5df2a00954f5f325c4bc90a9dd3231e4e873275d29f791ea0c0aa8a1f"
+    },
+    {
+      "filename": "batch2_GSE332846_failure_1791688260.json",
+      "category": "ReadTimeout",
+      "file_mtime_utc": "2026-10-11T03:11:00.213029+00:00",
+      "sha256": "4406898270ea28841e019c85e6f248bf14149d64c88cf967bf10ed3f703af022"
+    },
+    {
+      "filename": "zenodo_resume_v2_failure_1791690814.json",
+      "category": "Retries_exhausted_partial_retained",
+      "file_mtime_utc": "2026-10-11T03:53:34.245826+00:00",
+      "sha256": "1c2880e002e4a2847fabadf91b9a3b00ac77f47add697c859c17b730e3a757bb"
+    }
+  ],
+  "raw_failure_paths": "${RUN_ROOT}/logs",
+  "RMC_baseline_audit": {
+    "filename": "GSE256326_baseline_overlap.json",
+    "sha256": "1f58f1012a5c169e8c29a4e8d63e2a93d6637c984e34ea129bfb53e28ce7ca63",
+    "summary": {
+      "n_full_source_cells_audited": 23880,
+      "n_native_genes": 27966,
+      "baseline_exact_matches": 0,
+      "within_source_exact_matches": 0,
+      "baseline_cells": 4676787,
+      "cells_removed": 0,
+      "final_accepted_new_cells": 0,
+      "status": "full_baseline_fingerprint_audit_complete_pending_source_library_and_QC_acceptance"
+    }
+  }
+}

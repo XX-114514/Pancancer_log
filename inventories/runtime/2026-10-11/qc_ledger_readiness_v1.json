@@ -1,0 +1,170 @@
+{
+  "schema": "qc_ledger_readiness_v1",
+  "observed_utc": "2026-10-11T11:02:09.737226+00:00",
+  "scope": "all_registered_pending_QC_shards",
+  "shards": [
+    {
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "raw_ledger_rows": 417167,
+      "retained_ledger_rows": 416800,
+      "filtered_reason_counts": {
+        "high_mitochondrial_fraction": 245,
+        "sample_doublet": 103,
+        "low_genes_or_counts": 19
+      },
+      "retained_doublet_status_counts": {
+        "predicted_singlet": 416800
+      },
+      "n_libraries": 59,
+      "Zarr_X_shape": [
+        416800,
+        38991
+      ],
+      "Zarr_counts_shape": [
+        416800,
+        38991
+      ],
+      "checks": {
+        "ledger_raw_matches_proof": true,
+        "ledger_keep_matches_proof": true,
+        "library_raw_sum_matches_ledger": true,
+        "X_and_counts_shape_match": true,
+        "Zarr_rows_match_keep": true,
+        "every_library_doublet_computed": true,
+        "every_library_mt_measured": true,
+        "no_retained_predicted_doublet": true
+      },
+      "clinical_sidecar_present": false,
+      "evidence_sha256": {
+        "accepted_CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea.json": "977b6e76c5ebee91ee01870a995faecb074240b715bce437da967605c0684081",
+        "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea_cell_qc_and_filter_reason.tsv.gz": "6ba63211f41a3f2fb5cc8e6848a59129eed7c42f58182e1088a267ef069b0712",
+        "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea_sample_qc_thresholds.tsv": "a8b098ae23154bf361329d3c4c0d63d24f7570cd540dd16f2080c8ac4668429b"
+      },
+      "evidence_directory": "${RUN_ROOT}/manifests"
+    },
+    {
+      "dataset": "GSE286827",
+      "raw_ledger_rows": 416211,
+      "retained_ledger_rows": 384628,
+      "filtered_reason_counts": {
+        "high_mitochondrial_fraction": 25430,
+        "low_genes_or_counts": 5864,
+        "sample_doublet": 289
+      },
+      "retained_doublet_status_counts": {
+        "predicted_singlet": 384628
+      },
+      "n_libraries": 57,
+      "Zarr_X_shape": [
+        384628,
+        45013
+      ],
+      "Zarr_counts_shape": [
+        384628,
+        45013
+      ],
+      "checks": {
+        "ledger_raw_matches_proof": true,
+        "ledger_keep_matches_proof": true,
+        "library_raw_sum_matches_ledger": true,
+        "X_and_counts_shape_match": true,
+        "Zarr_rows_match_keep": true,
+        "every_library_doublet_computed": true,
+        "every_library_mt_measured": true,
+        "no_retained_predicted_doublet": true
+      },
+      "clinical_sidecar_present": false,
+      "evidence_sha256": {
+        "accepted_GSE286827.json": "185444eb6f4a264f8e42e0bf6bb40b728c06c65aefd07225e0e11c90f78a5da4",
+        "GSE286827_cell_qc_and_filter_reason.tsv.gz": "931e1713c26a197f9b5a19bf0cc33b18a7b733cf6a6543d852ab71a6f69c80fc",
+        "GSE286827_sample_qc_thresholds.tsv": "6ded32196aa657895b28c30415014533653210a513766291dfc392aee686c66f"
+      },
+      "evidence_directory": "${RUN_ROOT}/manifests"
+    },
+    {
+      "dataset": "GSE292046",
+      "raw_ledger_rows": 55570,
+      "retained_ledger_rows": 54156,
+      "filtered_reason_counts": {
+        "sample_doublet": 1352,
+        "high_mitochondrial_fraction": 62
+      },
+      "retained_doublet_status_counts": {
+        "predicted_singlet": 54156
+      },
+      "n_libraries": 8,
+      "Zarr_X_shape": [
+        54156,
+        36591
+      ],
+      "Zarr_counts_shape": [
+        54156,
+        36591
+      ],
+      "checks": {
+        "ledger_raw_matches_proof": true,
+        "ledger_keep_matches_proof": true,
+        "library_raw_sum_matches_ledger": true,
+        "X_and_counts_shape_match": true,
+        "Zarr_rows_match_keep": true,
+        "every_library_doublet_computed": true,
+        "every_library_mt_measured": true,
+        "no_retained_predicted_doublet": true
+      },
+      "clinical_sidecar_present": false,
+      "evidence_sha256": {
+        "accepted_GSE292046.json": "9eafe4a54059ffad715d0da7081be9f9d4fd708cc750920421640765c43b2a47",
+        "GSE292046_cell_qc_and_filter_reason.tsv.gz": "87c05a0c9f80e83dd80df6a0a26efab3cc5d559b7104baf4e35dc86e14be524a",
+        "GSE292046_sample_qc_thresholds.tsv": "4e2339b53d6f56f403d382e1f7dca342d4faaca287784f27b849420058a9e3d9"
+      },
+      "evidence_directory": "${RUN_ROOT}/manifests"
+    },
+    {
+      "dataset": "GSE294109",
+      "raw_ledger_rows": 145316,
+      "retained_ledger_rows": 137728,
+      "filtered_reason_counts": {
+        "high_mitochondrial_fraction": 7366,
+        "low_genes_or_counts": 36,
+        "sample_doublet": 186
+      },
+      "retained_doublet_status_counts": {
+        "predicted_singlet": 137728
+      },
+      "n_libraries": 25,
+      "Zarr_X_shape": [
+        137728,
+        36591
+      ],
+      "Zarr_counts_shape": [
+        137728,
+        36591
+      ],
+      "checks": {
+        "ledger_raw_matches_proof": true,
+        "ledger_keep_matches_proof": true,
+        "library_raw_sum_matches_ledger": true,
+        "X_and_counts_shape_match": true,
+        "Zarr_rows_match_keep": true,
+        "every_library_doublet_computed": true,
+        "every_library_mt_measured": true,
+        "no_retained_predicted_doublet": true
+      },
+      "clinical_sidecar_present": false,
+      "evidence_sha256": {
+        "accepted_GSE294109.json": "7d0ec9204c48aac977668f67d52e2095a5f15333f73881a0c8760e0c158cb0c6",
+        "GSE294109_cell_qc_and_filter_reason.tsv.gz": "7a283170751a8695607db41ea2d1903b46adbe8b4362e777f39417a28c84414f",
+        "GSE294109_sample_qc_thresholds.tsv": "bf0be71a46b2b9ba90c77048d0dfeed65d50bf3b7628a9dd4c619e43ee6668f2"
+      },
+      "evidence_directory": "${RUN_ROOT}/manifests"
+    }
+  ],
+  "final_source_acceptance_granted": false,
+  "limits": [
+    "Header and ledger audit; numeric matrix readback is the prior producer proof.",
+    "Source aliases, library overlap and clinical linkage remain separate gates."
+  ],
+  "total_retained_rows": 993312,
+  "total_libraries": 149,
+  "all_checked_conditions_pass": true
+}

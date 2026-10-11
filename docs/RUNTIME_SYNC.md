@@ -49,3 +49,7 @@ git diff --check
 发布前检查已有修改、脱敏内容、仓库验证与diff；显式stage、普通commit/push到用户指定origin main，随后ls-remote或独立fetch核对完整SHA。保存内容commit/发布时间/核验方法。失败时记录待同步，继续排查，直到远端核验完成才声明云端成功。不得为了push覆盖他人修改或重写历史。
 
 最新科学节点：[2026-10-11 18:20:36 UTC+8证据](../inventories/analysis/2026-10-11/README.md)。下载库存仍使用前述独立取证时间。
+
+## 每次任务同步与最新下载依据（2026-10-11）
+
+用户重申每一次任务都需及时普通push；以§关键和探索节点流程执行，不只完成全部项目时同步。最新下载证据为[18:56—19:02报告](../inventories/runtime/2026-10-11/DOWNLOAD_READINESS.md)；此下载报告优先于旧REPORT中的下载线，科学家族/空间线仍以其专属较晚登记为准。v6监控刷新不能证明下载运行，queue_terminal不能证明全部成功。
