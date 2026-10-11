@@ -1,5 +1,9 @@
 # 当前项目状态
 
+## 2026-10-11T22:09:31.866016+08:00 组配额失败已定位，手动清理待执行
+
+data4分析组达到1500G硬配额，资源aria2实际21:51退出；v16/0活跃/0冲突，完整基因生产未开始。21:53旧尾行被误判活跃，现已更正。日志Git通过/tmp副本恢复普通push；约4.961GiB冗余候选完成SHA及只读preview，用户手动清理，代理未删除。 [事件](logs/incidents/2026-10-11_group-quota-and-manual-cleanup.md)。
+
 ## 2026-10-11T21:46:20.912081+08:00 aria2恢复已运行
 
 已核实worker和子进程，旧连续前缀约25MB，日志30MiB/249MiB，传输有增长；target未通过全文件校验，科学计算未启动。生物代码/输入SHA已装入服务器，证据仍v16。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。

@@ -1,0 +1,7 @@
+{
+  "content_commit": "4fcceccc50f0462ea9b6592343193bfcf9265b56",
+  "verified_remote_main": "4fcceccc50f0462ea9b6592343193bfcf9265b56",
+  "verified_UTC": "2026-10-11T13:56:53.175751+00:00",
+  "method": "Quota recovery via new no-hardlink tmp clone, ff-only bundle, ordinary SSH push; independent local HTTPS ls-remote/fetch",
+  "original_data4_git_unchanged": true
+}

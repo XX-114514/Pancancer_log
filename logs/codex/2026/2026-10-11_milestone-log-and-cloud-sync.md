@@ -271,3 +271,13 @@ UTC 2026-10-11T13:54:07.721835+00:00 /UTC+8 2026-10-11T21:54:07.721835+08:00取�
 新[只读45源覆盖探索合同](../../../inventories/analysis/2026-10-11/reviewed45_native_header_recon_plan_v1.json)冻结全部45已审来源及13原编号节点，仅读原生基因轴/shape/schema和既有family/context单位覆盖；不读全计数、不启动新统计模型、不更换当前3源生物scope。结果用来明确后续可比较来源，而不是因稀疏或不显著改端点。源码语法检查通过，真实探索尚未执行。早前尝试查找membership_review_v2/inventory.json及clinical_context_inventory.tsv不存在，目录列举确认membership_review.json及实际临床文件名；没有将缺路径解释为缺数据或重算失败。
 
 另准备完整基因[验收登记脚本](../../../scripts/register_fullgene_receiver_target_readiness_v1.py)：官方3先验、生产和独立审计终态、所有SHA/全336/15/1008、285360细胞/164文库/原编号/缺失边界均检查通过才可登记v17，读取/proc避免旧ps表头误判，拒绝覆盖旧里程碑。当前只是脚本语法通过，未派发或登记v17。执行/身份/正式状态/科学发布分别记录，通讯轴验证仍未完成。建议commit：tools: freeze fullgene acceptance and reviewed-source coverage reconnaissance。
+
+## 2026-10-11T22:09:31.866016+08:00 组配额根因、状态更正与用户手动清理白名单
+
+UTC 2026-10-11T14:09:31.866016+00:00 /UTC+8 2026-10-11T22:09:31.866016+08:00。[事件与完整轨迹](../../incidents/2026-10-11_group-quota-and-manual-cleanup.md)、[脱敏证据](../../../inventories/analysis/2026-10-11/manual_cleanup_reviewed_summary_v1.json)。确认1500G组硬配额耗尽，卷剩余空间不能解决；资源实际13:51:38 UTC失败、双PID不存在、v16/0活跃/0冲突，真实生产未开始。明确更正上一节点13:53“仍活跃”的错误：当时只读旧progress尾行，未核实进程，最后可靠活跃取证13:50。原历史保留，不据旧日志重启任务。
+
+Git原仓库fetch因quota失败，本机HTTPS push缺凭据失败；新/tmp无hardlink副本普通push4fccecc已独立核验，原仓库不改写。[收据](../../../inventories/analysis/2026-10-11/quota_recovery_git_receipt_v1.json)。用户转向只读冗余检查/手动删除代码，代理遵从：未执行候选删除或替换。
+
+实际完成du定位、602包归档/158Range.bin/1失败TF和21完整SHA相同GPU副本审核，预计4.961GiB；大历史版本仅定位、不判冗余。代码默认preview，用户cache/dedup分别交互确认；GPU模式保留Project_v5副本和旧路径链接，避免旧引用失效，但两路径共享数据须只读。原始数据、canonicalZarr、48错误JSON、所有manifest/logs和当前aria2部分/控制保留。私有逐文件清单不上传公共仓库。
+
+失败与修正：生成器206总文件与158bin数量不同而断言退出；首只读preview因device/dev字段退出，均未删文件。规范白名单v2后真实preview782候选SHA/保留副本/占用检查exit0；精确preview结束事件时间unknown、观察2026-10-11T14:09:31.866016+00:00。Python/Bash语法通过，--apply未运行。下一步用户手动清理/核验quota，新版本恢复资源再回到原336/15/1008生产审计；目标未完成，无新身份/正式状态/科学轴结论。无关run_ambient_preparation.py修改及collector/研究日志保留且不暂存。建议commit：records: document quota failure and verified manual cleanup candidates。

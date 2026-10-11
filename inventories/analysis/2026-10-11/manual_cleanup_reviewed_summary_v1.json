@@ -1,0 +1,57 @@
+{
+  "created_UTC": "2026-10-11T14:07:01.402478+00:00",
+  "groups": {
+    "failed_chunks": {
+      "files": 158,
+      "allocated_bytes": 159240192
+    },
+    "failed_tf_partial": {
+      "files": 1,
+      "allocated_bytes": 6340608
+    },
+    "gpu_duplicates": {
+      "files": 21,
+      "allocated_bytes": 4052586496
+    },
+    "package_archives": {
+      "files": 602,
+      "allocated_bytes": 1108836352
+    }
+  },
+  "total_allocated_bytes": 5327003648,
+  "manifest_sha256": "479e753b269e4199c0b9234fed7a2b2c56ca19a5b9aa34b88c27518ce7e12074",
+  "manual_code_sha256": "c01b7a19bd66c4a2300ad3bfc810c8bc52b9c68cf041dd1503fee95862f4e94d",
+  "no_deletion_performed": true,
+  "private_manifest_artifact_version": 2,
+  "preview_status": "PASS_COMPLETE782_FROZEN_WHITELIST_SHA_RETAINED_COPIES_AND_PROCESS_CHECKS_NO_MUTATIONS",
+  "parent_manifest_sha256": "d064c19a0ac1c06a6610f6dd880ba2cb1095f00b38025ffa7730314753e278f7",
+  "observed_UTC": "2026-10-11T14:08:11.848343+00:00",
+  "observed_UTC8": "2026-10-11T22:08:11.848343+08:00",
+  "privacy": "Only group-level sizes/counts/code and private-manifest SHAs; no source matrices or sample/patient file listing",
+  "no_agent_apply_executed": true,
+  "private_inventory_sha256": {
+    "gpu_duplicate_inventory_private_v1.json": "8c99d549ca7b29174a345456c10e7f7b1be9918ee71b724ec8564570667cb807",
+    "resource_inventory_private_v1.json": "ef460a6fc10d5eaf82a9d1d2c32feb83e80b6f84a136abed9c3d178897ec2489",
+    "conda_archives_inventory_private_v1.json": "e764a109aa3bfa282479915afec4d5dd76fee5904ae5e988461e15da0106d987"
+  },
+  "storage_context": {
+    "group_hard_limit_reported": "1500G",
+    "data4_filesystem_free_reported": "3.7T",
+    "failure_errno": 122,
+    "physical_free_space_does_not_override_group_quota": true
+  },
+  "resource_terminal": {
+    "started_UTC": "2026-10-11T13:42:48.284558+00:00",
+    "finished_UTC": "2026-10-11T13:51:38.494517+00:00",
+    "status": "TERMINAL_FAILED_ARIA2_RESOURCE_FETCH",
+    "exit_code": 1,
+    "error_time_log_local": "2026-10-11 21:51:30 UTC+8",
+    "root_cause_observed": "write cache flush rejected by group quota",
+    "worker_and_child_absent_observed_UTC": "2026-10-11T13:55:22.652731+00:00",
+    "active_jobs_empty": true,
+    "state_conflicts": 0
+  },
+  "preview_exit_code": 0,
+  "preview_event_finished_UTC": "unknown",
+  "preview_observed_UTC": "2026-10-11T14:09:31.866016+00:00"
+}

@@ -47,3 +47,7 @@ UTC 2026-10-11T13:46:20.912081+00:00 /UTC+8 2026-10-11T21:46:20.912081+08:00取�
 ## 2026-10-11T21:54:07.721835+08:00 验收代码及后续来源覆盖预声明
 
 资源79MiB/249MiB、仍活跃且未校验。v17验收登记脚本已准备/未执行；当前科学证据v16。另冻结[45源原生header/既有覆盖探索](../inventories/analysis/2026-10-11/reviewed45_native_header_recon_plan_v1.json)，scope全部已审来源，原编号分别保留，仅读header/旧覆盖、不拟合统计或晋升身份。[前一运行节点push回执](../inventories/analysis/2026-10-11/fullgene_receiver_target_running_v3_git_receipt.json)。
+
+## 2026-10-11T22:09:31.866016+08:00 资源真实失败与手动清理准备
+
+aria2于13:51:38.494517 UTC真实exit1，errno122组quota；双进程不存在、v16/active空/0冲突，生产/audit未启动。13:53的31%是旧尾行，先前活跃表述更正。用户指定手动删除，约4.961GiB候选及782文件真实只读preview通过，代理无删除。等待用户处置后以新资源版本恢复。[事件与轨迹](../logs/incidents/2026-10-11_group-quota-and-manual-cleanup.md)。
