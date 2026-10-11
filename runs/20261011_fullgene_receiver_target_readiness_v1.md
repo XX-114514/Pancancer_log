@@ -23,3 +23,5 @@
 [全部事件时间线](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_timeline_v1.tsv)、[脱敏取证与SHA](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_checkpoint_v1.json)、[预声明云端核验](../inventories/analysis/2026-10-11/fullgene_receiver_target_plan_git_receipt_v1.json)。3份官方先验本机校验完整；服务器下载exit1、TF部分、靶尚未到库。分块探针通过，下一下载版本未启动。合成编码故障已修正且fixture v2通过；真实完整基因生产和独立审计均未开始。
 
 失败部分文件、旧脚本及终态manifest保留；详情在[持续任务日志](../logs/codex/2026/2026-10-11_milestone-log-and-cloud-sync.md)。科学证据保持v16，资源准备不晋升通讯验证。运行命令将使用固定scanpy Python3.10.19与环境变量PANCANCER_PREFLIGHT_ROOT；完成资源及代码冻结后记录实际生产起止和exit。
+
+21:07:05.928423 UTC+8（UTC13:07:05.928423）：资源恢复及失败轨迹内容d435622253a0fa575328a2b1ef39aa1c73c61b55普通push；21:07:12.642061 UTC+8独立HTTPS ls-remote/fetch核对同SHA。 [发布核验](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_git_receipt_v1.json)。
