@@ -6,7 +6,7 @@
 
 | ID | 优先级 | 当前状态 | 下一交付 |
 |---|---|---|---|
-| PLAN-01 | P0 | done_planning_sync_pending | 主线、支线、依赖、停止条件及只读删除影响证据；普通push后独立核SHA |
+| PLAN-01 | P0 | done_planning_cloud_verified | 主线、支线、依赖、停止条件及只读删除影响证据；6cf29b0普通push/独立HTTPS核验，见[回执](inventories/analysis/2026-10-11/planning_roadmap_git_receipt_v1.json) |
 | READY-01/02 | P0 | waiting_user_resume_and_quota | 实际组quota、输入路径与完整先验验收；不自动使用旧失败v3 |
 | B1-01/02 | P1 | planned_not_started | 3源336/15/1008全基因聚合审计 + 45源可比范围 |
 | A1-01 | P1 | planned_existing_evidence_reuse | 原9CM生态证据地图及原节点/家族对照 |

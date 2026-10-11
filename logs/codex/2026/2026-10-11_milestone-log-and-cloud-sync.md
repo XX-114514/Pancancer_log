@@ -297,3 +297,5 @@ Git原仓库fetch因quota失败，本机HTTPS push缺凭据失败；新/tmp无ha
 验证：尚待本节点diff/链接/JSON/隐私和仓库轻量检查、普通commit/push及独立HTTPS SHA核验；不写测试或复算新科学模型。失败尝试：本规划节点尚无新增失败；既有quota/资源/误报历史保留，旧v3终态不能触发真实生产。未解决：删除全目录的历史引用/独有文件未全部审计、quota申请未发生、全基因生产及独立审计未运行、真实状态/CM驱动/临床机制未验证。下一轮以用户恢复、实际quota和新输入验收为前置；不设自动运行。建议commit：docs: organize CM and cell-pair research roadmap and pause downloads。
 
 提交前验证UTC 2026-10-11T15:51:27.786148+00:00 /UTC+8 2026-10-11T23:51:27.786148+08:00：git diff --check通过；新增JSON解析、scope断言与相对链接检查通过；仓库检查0 errors/1既有历史内部路径warning。已逐diff审阅当前9个文档/汇总文件，不含矩阵/患者行/凭据；无关ambient代码及未跟踪collector/研究日志不暂存。科学计算、下载及资源恢复仍未启动。
+
+规划内容6cf29b08d11177e569c26da0eb53437c12a2172a于2026-10-11T15:51:43.527858+00:00（UTC+8 23:51:43.527858）普通push；15:51:51.271458 UTC独立本机HTTPS ls-remote/fetch核对同SHA。[发布回执](../../../inventories/analysis/2026-10-11/planning_roadmap_git_receipt_v1.json)。任务板PLAN-01更新云端已核验，其他任务仍planned/paused；本回执追加提交后继续普通push和独立核验，无科学下载/任务启动。
