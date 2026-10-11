@@ -17,3 +17,14 @@
 生产代码、审计代码和正式时间后续记录；现在没有运行结果。验收包括全45/65映射、源SHA、原始几何独立计数、端点/重叠/条件null全量复算与合成边界检查。审计PASS不代表患者级验证、蛋白结合、下游反应或原9CM驱动。APP–NOTCH2原文主要支持同细胞蛋白关联，HLA-DRA是完整MHC-II代理，其余结合/糖链/细胞方向限制完整保留在计划；不能把统计邻近直接写成免疫抑制机制。
 
 可复现入口使用环境根目录；正式代码提交后补齐调用。关键/探索节点按持续[任务日志](../logs/codex/2026/2026-10-11_milestone-log-and-cloud-sync.md)普通push并独立核验SHA。
+
+## 代码冻结检查
+
+生产/审计代码[SHA及合成验收](../inventories/analysis/2026-10-11/spatial_conditional_code_freeze_v1.json)保存；两份代码独立实现图与统计量，未import生产者进行审计。服务器2000次合成重放、重叠/自接触/缺失均PASS。真实执行尚未开始。
+
+```bash
+PANCANCER_PREFLIGHT_ROOT="${RUN_ROOT}" python scripts/spatial_conditional_neighborhood_v1.py
+PANCANCER_PREFLIGHT_ROOT="${RUN_ROOT}" python scripts/audit_spatial_conditional_neighborhood_v1.py
+```
+
+原生细胞缓存、FOV/置换细表只留服务器；公开45接口汇总。预声明已普通push并独立核验，实际代码提交随后冻结。

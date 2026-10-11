@@ -1,0 +1,7 @@
+{
+  "spatial_conditional_neighborhood_v1.py": "54c737626eb4012d95a4d235a690f2950d6425555f2cb6e1cfe89f0ed08f9e59",
+  "audit_spatial_conditional_neighborhood_v1.py": "a9349707aafc72b165d70e842351fc1efbcfb1abe8cb574c4c65a96dbe296fc7",
+  "checked_UTC": "2026-10-11T11:48:32.285595+00:00",
+  "synthetic_status": "PASS_SYNTHETIC_GEOMETRY_SELF_OVERLAP_ZERO_MISSING_ALL2000_JOINT_DRAWS",
+  "real_execution": "NOT_STARTED"
+}

@@ -137,3 +137,5 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 使用Spreadsheets skill只读原Supplementary Data6，18,357字节/SHA55a80c1，CosMx病理评分表无当前FOV到患者完整桥；未修改或公开工作簿/核心患者行。单位未解决时继续条件空间描述，不能填成独立患者。APP–NOTCH2原文同细胞关联不能直接当跨细胞信号；完整9LR的复合物/糖链/方向限制写入计划。
 
 [新正式run](../../../runs/20261011_spatial_conditional_neighborhood_v1.md)和[预声明](../../../inventories/analysis/2026-10-11/spatial_conditional_neighborhood_plan_v1.json)：全部9×5=45，映射65；有限原生像素/面积邻域、同FOV排自接触，固定家族/深度/密度联合LR标签置换2000次，完整45主BH。将原每FOV≥20门槛保持为预检描述，不作为新条件检验删样本理由；null不可变/缺失明确报告。生产/审计尚未启动，不把已声明当结果。下一步提交冻结代码、实际运行及独立复算；目标仍未完成。
+
+11:45:57.360447 UTC /19:45:57.360447 UTC+8：预声明内容45fa8e12257fe6ccd970c219d55ea0197e2c74fb普通push；11:46:03.676430独立HTTPS ls-remote/fetch核验同SHA。[收据](../../../inventories/analysis/2026-10-11/spatial_conditional_plan_git_receipt_v1.json)。生产与独立审计代码语法通过，服务器合成边界检查PASS：直接距离图、自接触排除、不同细胞重合坐标保留、缺失NA/可测零值区分、全2000次联合LR标签重放一致；真实45接口尚未启动。[代码冻结](../../../inventories/analysis/2026-10-11/spatial_conditional_code_freeze_v1.json)。
