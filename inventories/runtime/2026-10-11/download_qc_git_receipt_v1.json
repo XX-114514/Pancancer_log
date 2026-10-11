@@ -1,0 +1,18 @@
+{
+  "content_commit": "c0c3d12447f3b5b718406e1411f95dcbbcf9e852",
+  "verified_remote_main": "c0c3d12447f3b5b718406e1411f95dcbbcf9e852",
+  "verified_at_utc": "2026-10-11T11:07:10.755665+00:00",
+  "verified_at_utc8": "2026-10-11T19:07:10.755665+08:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "push_mode": "normal_fast_forward",
+  "verification": "Independent HTTPS git fetch and git ls-remote; remote main equals local HEAD",
+  "counts": {
+    "source_cells": 5341204,
+    "QC_pending_source_acceptance": 993312,
+    "final_accepted_new_cells": 0
+  },
+  "download_workers_observed": 0,
+  "no_download_restart_in_this_task": true,
+  "privacy": "Aggregate evidence only; no patient rows, raw matrices or credentials",
+  "concurrency": "Content entered shared main in existing concurrent validation commit; all history retained."
+}

@@ -55,3 +55,9 @@ export完成后附加JSON探查遇到list没有items，退出1；已生成的sna
 普通push使用已有GitHub身份临时remote-agent签名、本机Git transport，密钥10分钟过期，无私钥复制。首次ControlPath含长名字和哈希超过macOS Unix socket限制，未形成转发；改短独立控制路径重试，未切换下载代理端口。
 
 第二次短ControlPath重试发现首轮失败留下本地签名socket，绑定失败；未删除，使用新短签名socket重试。同期其他聊天已提交36d1e06方法说明，正常保留。
+
+## GitHub发布已核实
+
+2026-10-11T11:07:10.755665+00:00（2026-10-11T19:07:10.755665+08:00）：普通push成功，独立HTTPS fetch/ls-remote及本地HEAD一致，完整内容SHA `c0c3d12447f3b5b718406e1411f95dcbbcf9e852`。[发布收据](../../../inventories/runtime/2026-10-11/download_qc_git_receipt_v1.json)。
+
+共享Git index发生并发提交：本任务15文件stage后，其他聊天验证提交c0c3d12已包含这些文件及其日志两行；本次拟执行commit显示nothing added，未改写历史或重复提交。核对c0c3d12确已包含全部本任务内容后，正常push连续历史36d1e06/3cd9b8d/c0c3d12；3cd9b8d所述待同步是当时历史状态，现已一并发布。保留其他聊天未跟踪研究综述日志。本收据另正常commit/push。
