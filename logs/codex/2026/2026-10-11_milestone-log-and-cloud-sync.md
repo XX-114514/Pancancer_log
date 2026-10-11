@@ -139,3 +139,7 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 [新正式run](../../../runs/20261011_spatial_conditional_neighborhood_v1.md)和[预声明](../../../inventories/analysis/2026-10-11/spatial_conditional_neighborhood_plan_v1.json)：全部9×5=45，映射65；有限原生像素/面积邻域、同FOV排自接触，固定家族/深度/密度联合LR标签置换2000次，完整45主BH。将原每FOV≥20门槛保持为预检描述，不作为新条件检验删样本理由；null不可变/缺失明确报告。生产/审计尚未启动，不把已声明当结果。下一步提交冻结代码、实际运行及独立复算；目标仍未完成。
 
 11:45:57.360447 UTC /19:45:57.360447 UTC+8：预声明内容45fa8e12257fe6ccd970c219d55ea0197e2c74fb普通push；11:46:03.676430独立HTTPS ls-remote/fetch核验同SHA。[收据](../../../inventories/analysis/2026-10-11/spatial_conditional_plan_git_receipt_v1.json)。生产与独立审计代码语法通过，服务器合成边界检查PASS：直接距离图、自接触排除、不同细胞重合坐标保留、缺失NA/可测零值区分、全2000次联合LR标签重放一致；真实45接口尚未启动。[代码冻结](../../../inventories/analysis/2026-10-11/spatial_conditional_code_freeze_v1.json)。
+
+11:48:54.518869 UTC /19:48:54.518869 UTC+8：生产/审计代码93ec55711f6accc113660bdeb8d126a99f540405普通push；11:49:00.811925独立HTTPS核验同SHA。[收据](../../../inventories/analysis/2026-10-11/spatial_conditional_code_git_receipt_v1.json)。生产11:49:22.700694 UTC启动，11:50:05观察到worker/child均活跃且新接口输出增长；真实结果尚未独立审计，不在此根据单个p值改计划。新目录范围始终45接口/65映射，原数据与历史未改。
+
+11:50:17.798455 UTC /19:50:17.798455 UTC+8：生产exit0，worker/child均终止。全45主检验/65映射齐全，29可估计，9作者未取、6作者无B类别、1缺HLA-DRA；主完整45 BH<0.05为0。≥20预检门槛不再是删掉稀疏检验的理由；实际可测29项都保留。最低p的SELPLG–SELL在MESO1约1.92倍、p0.004998但q0.224888，只是未校正趋势，未称验证轴。独立全量审计启动另核验终态；没有依结果换候选/半径/校正家族。
