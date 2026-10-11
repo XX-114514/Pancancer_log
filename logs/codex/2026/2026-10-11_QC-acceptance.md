@@ -45,3 +45,7 @@
 未验证：Scrublet敏感性与原作者doublet完整方法、全部基线研究别名/文库对照、唯一患者结局、跨研究整合。没有删除数据、重跑过滤或改动科学身份。Web open遇到recaptcha/出版社失败，采用官方搜索记录及本地已冻结metadata，未把无结果视为无信息。
 
 终态发布前：完整cloud_check exit0，5合同测试/仓库0errors(1旧逻辑路径warning)/release0errors/diff均通过，所有新JSON人工核对只有聚合和逻辑路径。原研究方法open未取得者明确unknown；真实全量计数和元数据独立复核已通过。专用签名转发在空闲后自动退出，使用新短socket恢复，不换下载代理端口。
+
+## 终态GitHub发布
+
+2026-10-11T13:23:03.089834+00:00 /2026-10-11T21:23:03.089834+08:00：技术QC验收及元数据修复内容提交 `a383b5915f0d217fbe427762a92cc58b0b89b157` 已普通push，独立HTTPS fetch/ls-remote与本地完整SHA一致。[发布收据](../../../inventories/runtime/2026-10-11/QC_acceptance_git_receipt_v1.json)。保留其他聊天未跟踪研究日志；未force、未删除、未复制私钥，使用仅本任务临时remote-agent签名。
