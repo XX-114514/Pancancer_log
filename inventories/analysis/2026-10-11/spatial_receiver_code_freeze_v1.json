@@ -1,0 +1,7 @@
+{
+  "spatial_receiver_programme_exposure_v1.py": "ac16c3c794224df31d45cb70b42a85aa8ef6204e7eef1d19f96750e31599713a",
+  "audit_spatial_receiver_programme_exposure_v1.py": "adbe826365dae815eb9f0afd1eb01d5fe86e563a98ce5bee4aec0de77798c61b",
+  "checked_UTC": "2026-10-11T12:16:47.306654+00:00",
+  "synthetic_status": "PASS_GEOMETRY_NATIVE_DENOMINATOR_MISSING_RANK_QR_ALL10000_NULL_AND_LIGAND_ONLY_STRATA",
+  "real_execution": "NOT_STARTED"
+}

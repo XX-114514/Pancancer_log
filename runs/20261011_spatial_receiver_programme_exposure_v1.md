@@ -15,3 +15,12 @@
 ## 验收和运行
 
 生产及独立审计待代码冻结、真实执行；先保存预声明，后正常push/核验。输入/缓存/额外原生基因/归一化、图/分母、自接触、10000置换/直方图、全70BH及所有敏感性均复算。进程退出和计算PASS不提升正式身份/状态或CMdriver；独立患者和蛋白功能仍需要证据。完整细胞/FOV/置换数据仅留服务器。
+
+## 代码冻结与合成验收
+
+[冻结SHA及合成检查](../inventories/analysis/2026-10-11/spatial_receiver_code_freeze_v1.json)：原生全靶RNA分母、缺失非零、同细胞/跨FOV无边、强共线、SVD/QR和全部10000标签/null复算通过；真实70模型未开始。独立审计不import生产者，原生HDF5CSR额外基因、query-ball图、另编码协变量和QR回归核对。
+
+```bash
+PANCANCER_PREFLIGHT_ROOT="${RUN_ROOT}" python scripts/spatial_receiver_programme_exposure_v1.py
+PANCANCER_PREFLIGHT_ROOT="${RUN_ROOT}" python scripts/audit_spatial_receiver_programme_exposure_v1.py
+```

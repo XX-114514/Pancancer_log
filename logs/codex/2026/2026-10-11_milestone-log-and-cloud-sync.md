@@ -163,3 +163,5 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 文献搜寻NCEM/NicheNet；Nature两原文跳转500，改PMC10017508全页和PubMed31819264摘要索引。NCEM将身份和niche联系表达，启发新问题但不假称包复现/因果。原生检查固定15记录及所有5文件；新增7programme/LR基因，其中HBEGF/ LAYN在面板缺失，不能填0。
 
 [完整计划](../../../inventories/analysis/2026-10-11/spatial_receiver_programme_plan_v1.json)、[run](../../../runs/20261011_spatial_receiver_programme_exposure_v1.md)：14独立定义×5=70主模型、75映射，固定6半径niche/2与12诊断、R+内部programme~L+邻居占发送家族比例，家族数量/身份/RNA/密度与FOV调整、只置换L标签10000次完整70双侧BH。缺发送家族邻居记缺失；原程序/原9CM冻结，2programme专用记录不变为接触成功。所有结果待实际执行，未缩小到预计可显著的子集。
+
+12:09:35.189900 UTC /20:09:35.189900 UTC+8：方案7e7e2ad4044afc66011dfc9e1d1619e8dc09e9f7普通push，12:09:41.634417独立HTTPS核验同SHA。[收据](../../../inventories/analysis/2026-10-11/spatial_receiver_plan_git_receipt_v1.json)。生产/审计语法通过，服务器合成原生分母/缺失/自接触和跨FOV/强共线边界及全10000次L-only置换、QR与SVD系数通过；[冻结SHA](../../../inventories/analysis/2026-10-11/spatial_receiver_code_freeze_v1.json)。真实70模型尚未启动，条件检验非独立患者验证。
