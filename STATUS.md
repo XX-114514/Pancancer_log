@@ -1,5 +1,9 @@
 # 当前项目状态
 
+## 空间输入检查补充：2026-10-11 18:36:08 UTC+8
+
+[只读检查](inventories/analysis/2026-10-11/spatial_metadata_checkpoint_v1.json)完成全部5份CosMx文件/254,458细胞。已确认GSE299786肺腺癌TMA2的CSV索引列误入表达矩阵，39,123行原始比对一致；该文件暂停归一化和空间推断，待新版本修复审计。详见[故障记录](logs/incidents/2026-10-11_spatial-csv-index-column.md)。原13候选和证据v11不变；端点RNA、背景、患者/core映射、独立物理标定及邻近检验仍未完成。本节更新输入可用性，不晋升科学版本。
+
 ## 当前家族分析状态 2026年10月11日18时20分 UTC+8
 
 本节仅更新CM相关扩展分析；下载数量仍以11:22:53 UTC+8库存快照为准。[本轮证据](inventories/analysis/2026-10-11/README.md)与[正式运行](runs/20261011_family_candidate_validation_v1.md)优先于下方早期CM快照。

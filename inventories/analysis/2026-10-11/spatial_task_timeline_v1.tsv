@@ -1,0 +1,5 @@
+event	event_UTC	event_UTCplus8	observed_UTC	status	evidence
+readonly_plan	2026-10-11T10:33:36+00:00	2026-10-11T18:33:36+08:00	2026-10-11T10:33:36+00:00	declared_before_aggregate_capture	spatial_metadata_checkpoint_plan_v1.json
+aggregate_capture_started	2026-10-11T10:34:46.528707+00:00	2026-10-11T18:34:46.528707+08:00	2026-10-11T10:34:48.478582+00:00	readonly_no_scientific_inference	spatial_metadata_checkpoint_v1.json
+aggregate_capture_finished	2026-10-11T10:34:48.478582+00:00	2026-10-11T18:34:48.478582+08:00	2026-10-11T10:34:48.478582+00:00	exit0_structural_checks_pass	spatial_metadata_checkpoint_v1.json
+raw_index_incident_confirmed	unknown_command_event_time	unknown_command_event_time	2026-10-11T10:36:08+00:00	confirmed_repair_pending	spatial_index_column_incident_v1.json

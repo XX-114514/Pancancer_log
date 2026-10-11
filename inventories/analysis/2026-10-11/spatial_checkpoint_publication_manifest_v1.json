@@ -1,0 +1,32 @@
+{
+  "scope": "aggregate-only checkpoint publication",
+  "files": [
+    {
+      "path": "inventories/analysis/2026-10-11/spatial_metadata_checkpoint_plan_v1.json",
+      "bytes": 1502,
+      "sha256": "ae465e2f19848b1afcdc75b1b2bfafe5c1ec9699644aa45221e5e6d44f3ce4e6"
+    },
+    {
+      "path": "inventories/analysis/2026-10-11/spatial_metadata_checkpoint_v1.json",
+      "bytes": 7945,
+      "sha256": "97fadd4c67a946891405e53ea49cd41edab9aa0634a53cb46db5a14fe84f0e51"
+    },
+    {
+      "path": "inventories/analysis/2026-10-11/spatial_index_column_incident_v1.json",
+      "bytes": 2332,
+      "sha256": "54827a7cf29c1a80541fc02b2d3f20f638f517ba65e934bc63738b67ae18acd5"
+    },
+    {
+      "path": "inventories/analysis/2026-10-11/spatial_task_timeline_v1.tsv",
+      "bytes": 784,
+      "sha256": "284ccfef2e9979ae7f0e72cea0c23362458eedae75cdb84ad0f5ea13a940f05d"
+    },
+    {
+      "path": "scripts/collect_spatial_metadata_checkpoint.py",
+      "bytes": 6412,
+      "sha256": "736517c1f1e0ecb66d3f94b43c60c272f1e03f63a795b55220e6d2188ef63702"
+    }
+  ],
+  "no_cell_patient_rows": true,
+  "scientific_release": false
+}

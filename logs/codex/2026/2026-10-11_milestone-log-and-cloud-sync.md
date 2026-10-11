@@ -41,3 +41,23 @@
 ## 实际云端验收
 
 2026-10-11T10:27:04.882326+00:00：服务器普通push exit0，远端main由00938eb前进到3b1522400bf3e53669512a2f2896ac102803b352；本机独立HTTPS ls-remote返回同一SHA。内容提交38363cef50b19c683bc3b4ebe67a55edfcc87068已在该历史中，云端并发Pages提交保留。没有force、rebase或私钥复制。[发布收据](../../../inventories/analysis/2026-10-11/git_publication_receipt_v1.json)记录精确核验、范围和失败恢复。此追加收据提交本身在任务结束前另核对远端；未声称Pages部署或独立科学机制验证完成。
+
+## 下一探索节点：空间输入只读检查
+
+继续落实用户要求，在本节点结束即同步，不等科学任务全结束。开始前本地/云端main为1fbc18fa2d7558b21b2c585419935f0113a580fd；未跟踪研究审阅日志保持原状。重新读取维护/数据/Git规则、相关run、daily和状态入口；服务器当前v11、本轮已登记作业终止，状态0冲突。
+
+| UTC时间 | UTC+8时间 | 轨迹与实际状态 |
+|---|---|---|
+| 10:33:36 | 18:33:36 | 记录只读检查计划；全部5个固定CosMx输入/254,458细胞，原13接触记录仍待端点预检 |
+| 10:34:46.528707—10:34:48.478582 | 18:34:46.528707—18:34:48.478582 | 聚合采集exit0，计数为非负整数、输入stat稳定；全部坐标与转换器默认缩放吻合 |
+| 10:36:08取证 | 18:36:08取证 | 原CSV全39,123行比对确认TMA2的Unnamed: 0为导出索引；转换故障确认，修复尚待执行 |
+
+[计划](../../../inventories/analysis/2026-10-11/spatial_metadata_checkpoint_plan_v1.json)、[采集结果](../../../inventories/analysis/2026-10-11/spatial_metadata_checkpoint_v1.json)、[故障证据](../../../inventories/analysis/2026-10-11/spatial_index_column_incident_v1.json)、[影响及下一步](../../incidents/2026-10-11_spatial-csv-index-column.md)。原科学证据v11未晋升，当前没有正式状态标签或空间验证。
+
+检查方式：h5py只读、CSR行总量、坐标逐行比对、字段名/唯一数/QC分位汇总；读取转换器固定代码片段并保存SHA；原归档只取索引/FOV/cell-ID列在服务器内对齐，不输出细胞键。采集代码[scripts/collect_spatial_metadata_checkpoint.py](../../../scripts/collect_spatial_metadata_checkpoint.py)输出全部5文件，没有手选有利样本、过滤细胞或跑p值。小型聚合结果留在Git；矩阵/归档/键留在服务器。
+
+首次文档定位误用了不存在的methods文件及daily层级，随后读取真实文件；没有影响结果。部分相对路径读取失败后改用明确工作区路径。当前未完成背景、物理标定、患者/core映射或修复审计；TMA2暂停进入归一化及邻近分析。下一有界任务先修复此转换错误，再开展全部13候选原生端点检查。
+
+建议commit：`records: log spatial preflight checkpoint and CSV index incident`。仓库验证、diff审阅及本节点云端SHA在发布后单独核验；没有把待修复状态写成成功。
+
+提交前核对：5文件/254,458细胞与源采集代码SHA一致；事故全行比对为真；[节点时间线](../../../inventories/analysis/2026-10-11/spatial_task_timeline_v1.tsv)区分执行时间与取证时间。仓库验证0errors/1既有路径warning，新增内容无内部路径或细胞/患者行；新JSON和脚本均小于5MiB，diff/TSV列数及链接检查通过。本次不把此只读采集称为独立科学审计。

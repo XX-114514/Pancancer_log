@@ -69,3 +69,9 @@ python register_family_candidate_validation_milestone_v1.py
 对全部13接触记录覆盖的5份既有空间文件检查实际RNA、基因名、坐标单位、FOV/core/样本/患者映射与QC；不能把FOV或重复TMA材料视为独立患者。通过预检后做样本级邻近与保留密度/谱系/QC的零模型。参考支持仍需逐轴物理复合物、方向、糖基化/异构体等证据审阅。本家族扩展目前0直接原CM边匹配；尚未建立CM驱动轴。
 
 输出和审计链接：[关键节点证据目录](../inventories/analysis/2026-10-11/README.md)。
+
+## 2026-10-11 18:36:08 UTC+8 输入预检观察
+
+按[只读计划](../inventories/analysis/2026-10-11/spatial_metadata_checkpoint_plan_v1.json)检查全部5份CosMx，采集执行时间10:34:46.528707—10:34:48.478582 UTC、exit0；这是元数据观察，没有新增空间模型或科学登记作业。采集器及转换器SHA见[JSON](../inventories/analysis/2026-10-11/spatial_metadata_checkpoint_v1.json)。
+
+原CSV全行核对确认GSE299786肺腺癌TMA2索引列误入矩阵，故障及修复门槛见[incident](../logs/incidents/2026-10-11_spatial-csv-index-column.md)。尚未修改转换器/对象或进行邻近测试。下一有界任务为新版本输入修复及独立核验，然后继续全部13固定接触记录；原172节点、9CM、v20261010、发现BH不改变。

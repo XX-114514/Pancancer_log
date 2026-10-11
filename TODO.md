@@ -5,7 +5,8 @@
 | ID | 优先级 | 状态 | 任务 | 完成标准 |
 |---|---|---|---|---|
 | CM-FAM-001 | P0 | done_computation_only | 编号家族、336记录敏感性与15记录身份内检查 | [run及审计索引](runs/20261011_family_candidate_validation_v1.md)已登记；无机制晋升 |
-| CM-CONTACT-001 | P0 | ready | 全13接触记录空间原生RNA与映射预检 | 固定记录；实际RNA、坐标单位、重复材料及样本/患者映射明确；所有不足保留 |
+| CM-CONTACT-001 | P0 | in_progress_input_qc_hold | 全13接触记录空间原生RNA与映射预检 | 固定记录；实际RNA、坐标单位、重复材料及样本/患者映射明确；所有不足保留 |
+| CM-SPATIAL-REPAIR-001 | P0 | ready | 修复已证实的CSV索引列转换错误 | 新版本对象；原CSV/count/行键/坐标独立核对；检查其余输入同类问题；原对象保留；[故障证据](logs/incidents/2026-10-11_spatial-csv-index-column.md) |
 | LOG-SYNC-001 | P0 | ongoing_per_milestone | 关键/探索节点记录与GitHub同步 | 事件时间/取证时间、输入、结果、失败、下一步、commit和远端SHA齐全 |
 
 ## 当前任务板：2026-10-11

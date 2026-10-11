@@ -1,0 +1,12 @@
+{
+  "recorded_UTC": "2026-10-11T10:33:36+00:00",
+  "kind": "read_only_metadata_observation_plan",
+  "question": "Do all five automatically eligible existing CosMx files contain stored integer counts, usable coordinate arrays, QC information and reviewed patient/core mapping?",
+  "scope": "All five CosMx files in the accepted 14-file inventory for GSE287472 and GSE299786; 254458 cells. All 13 fixed contact records remain pending native endpoint preflight.",
+  "input_version": "native_LR_program_evidence_register_v11; frozen annotation v20261010",
+  "method": "Read native H5 count type and row totals; inspect QC field aggregates, FOV/sample-key counts, mapping field names; compare all stored spatial coordinates with global pixel coordinates times the converter default 0.12028. Report count<30 only as a descriptive quantity; no filtering or hypothesis testing.",
+  "acceptance": "Exactly five unique fixed paths; input stat unchanged before/after; coordinate residual<1e-6; integer nonnegative stored counts. Missing fields and unresolved physical calibration/patient mapping remain explicit.",
+  "expected_files": ["spatial_metadata_checkpoint_v1.json", "spatial_metadata_checkpoint_plan_v1.json", "scripts/collect_spatial_metadata_checkpoint.py"],
+  "scientific_release": false,
+  "next": "Predeclare native LR/lineage expression and background-control checks for all 13 contact records across all five files; recover source FOV/core/patient map before patient-level proximity inference."
+}

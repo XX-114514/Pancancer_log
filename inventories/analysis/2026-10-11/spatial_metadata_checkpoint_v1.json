@@ -1,0 +1,246 @@
+{
+  "schema": "spatial_readonly_metadata_checkpoint_v1",
+  "event_started_UTC": "2026-10-11T10:34:46.528707+00:00",
+  "event_ended_UTC": "2026-10-11T10:34:48.478582+00:00",
+  "inventory_sha256": "0482c8de382673f951da95e77cf8976c58a0c6b5e8f3414b66df2c2d7d62a833",
+  "converter_sha256": "4a2924007c2e16c967988ad2f36aca09c1e1f7d3f89b46a3d34bc342f057b247",
+  "collector_sha256": "736517c1f1e0ecb66d3f94b43c60c272f1e03f63a795b55220e6d2188ef63702",
+  "scope": {
+    "files": 5,
+    "cells": 254458,
+    "fixed_contact_records_pending_expression_preflight": 13
+  },
+  "checks": {
+    "fixed_file_count": "PASS",
+    "input_stat_stability": "PASS",
+    "all_stored_counts_nonnegative_integer": true,
+    "coordinates_match_converter_default": true
+  },
+  "files": [
+    {
+      "dataset_id": "GSE287472",
+      "public_file_name": "GSM8746298_YKKY0189_20240312_10.cosmx-smi.h5ad",
+      "cancer_label": "LUAD",
+      "cells": 64420,
+      "genes": 1000,
+      "input_bytes": 22385349,
+      "input_mtime_ns": 1788966395452473343,
+      "matrix_dtype": "int32",
+      "stored_nonzero_entries": 2055036,
+      "stored_counts_nonnegative_integer": true,
+      "RNA_row_total_min_median_max": [
+        1.0,
+        27.0,
+        2030.0
+      ],
+      "RNA_row_total_lt30_cells_descriptive_only": 34100,
+      "zero_RNA_cells": 0,
+      "finite_coordinate_cells": 64420,
+      "global_coordinate_duplicate_rows": 0,
+      "stored_spatial_units": "um_from_px",
+      "converter_default_px_to_um": 0.12028,
+      "max_coordinate_residual_default_scale": 0.0,
+      "physical_calibration_independently_verified": false,
+      "fov_unique_count": 239,
+      "file_sample_key_unique_count": 1,
+      "donor_core_candidate_field_names": [],
+      "patient_mapping_reviewed": false,
+      "control_features_dropped_count": 207,
+      "negative_probe_obs_available": true,
+      "QC_field_min_median_max": {
+        "Area": [
+          1008.0,
+          7465.0,
+          100965.0
+        ],
+        "Area.um2": [
+          14.5832457759338,
+          107.999930275144,
+          1460.71171603884
+        ],
+        "nCount_RNA": [
+          1.0,
+          27.0,
+          2030.0
+        ],
+        "nCount_negprobes": [
+          0.0,
+          0.0,
+          24.0
+        ],
+        "nCount_falsecode": [
+          0.0,
+          0.0,
+          64.0
+        ],
+        "unassignedTranscripts": [
+          0.0113144391304095,
+          0.298632610939112,
+          0.997184065934066
+        ]
+      },
+      "stored_total_matches_obs_RNA": true
+    },
+    {
+      "dataset_id": "GSE299786",
+      "public_file_name": "GSM9046088_Lung_Adenocarcinoma_TMA1_CosMx.cosmx-smi.h5ad",
+      "cancer_label": "LUAD",
+      "cells": 43565,
+      "genes": 1000,
+      "input_bytes": 29869011,
+      "input_mtime_ns": 1789032120717668819,
+      "matrix_dtype": "int32",
+      "stored_nonzero_entries": 5382223,
+      "stored_counts_nonnegative_integer": true,
+      "RNA_row_total_min_median_max": [
+        0.0,
+        224.0,
+        4402.0
+      ],
+      "RNA_row_total_lt30_cells_descriptive_only": 6974,
+      "zero_RNA_cells": 2556,
+      "finite_coordinate_cells": 43565,
+      "global_coordinate_duplicate_rows": 0,
+      "stored_spatial_units": "um_from_px",
+      "converter_default_px_to_um": 0.12028,
+      "max_coordinate_residual_default_scale": 0.0,
+      "physical_calibration_independently_verified": false,
+      "fov_unique_count": 36,
+      "file_sample_key_unique_count": 1,
+      "donor_core_candidate_field_names": [],
+      "patient_mapping_reviewed": false,
+      "control_features_dropped_count": 10,
+      "negative_probe_obs_available": false,
+      "QC_field_min_median_max": {
+        "Area": [
+          60.0,
+          6481.0,
+          37854.0
+        ]
+      }
+    },
+    {
+      "dataset_id": "GSE299786",
+      "public_file_name": "GSM9046089_Lung_Adenocarcinoma_TMA2_CosMx.cosmx-smi.h5ad",
+      "cancer_label": "LUAD",
+      "cells": 39123,
+      "genes": 1001,
+      "input_bytes": 38428262,
+      "input_mtime_ns": 1789032129589668557,
+      "matrix_dtype": "int32",
+      "stored_nonzero_entries": 7880772,
+      "stored_counts_nonnegative_integer": true,
+      "RNA_row_total_min_median_max": [
+        104.0,
+        20179.0,
+        51584.0
+      ],
+      "RNA_row_total_lt30_cells_descriptive_only": 0,
+      "zero_RNA_cells": 0,
+      "finite_coordinate_cells": 39123,
+      "global_coordinate_duplicate_rows": 0,
+      "stored_spatial_units": "um_from_px",
+      "converter_default_px_to_um": 0.12028,
+      "max_coordinate_residual_default_scale": 0.0,
+      "physical_calibration_independently_verified": false,
+      "fov_unique_count": 38,
+      "file_sample_key_unique_count": 1,
+      "donor_core_candidate_field_names": [],
+      "patient_mapping_reviewed": false,
+      "control_features_dropped_count": 10,
+      "negative_probe_obs_available": false,
+      "QC_field_min_median_max": {
+        "Area": [
+          60.0,
+          6698.0,
+          46435.0
+        ]
+      }
+    },
+    {
+      "dataset_id": "GSE299786",
+      "public_file_name": "GSM9046090_Mesothelioma_TMA1_CosMx.cosmx-smi.h5ad",
+      "cancer_label": "pleural_mesothelioma",
+      "cells": 60395,
+      "genes": 1000,
+      "input_bytes": 52417267,
+      "input_mtime_ns": 1789032142665668172,
+      "matrix_dtype": "int32",
+      "stored_nonzero_entries": 10822092,
+      "stored_counts_nonnegative_integer": true,
+      "RNA_row_total_min_median_max": [
+        0.0,
+        517.0,
+        5172.0
+      ],
+      "RNA_row_total_lt30_cells_descriptive_only": 1354,
+      "zero_RNA_cells": 102,
+      "finite_coordinate_cells": 60395,
+      "global_coordinate_duplicate_rows": 0,
+      "stored_spatial_units": "um_from_px",
+      "converter_default_px_to_um": 0.12028,
+      "max_coordinate_residual_default_scale": 0.0,
+      "physical_calibration_independently_verified": false,
+      "fov_unique_count": 40,
+      "file_sample_key_unique_count": 1,
+      "donor_core_candidate_field_names": [],
+      "patient_mapping_reviewed": false,
+      "control_features_dropped_count": 10,
+      "negative_probe_obs_available": false,
+      "QC_field_min_median_max": {
+        "Area": [
+          468.0,
+          6888.0,
+          45271.0
+        ]
+      }
+    },
+    {
+      "dataset_id": "GSE299786",
+      "public_file_name": "GSM9046091_Mesothelioma_TMA2_CosMx.cosmx-smi.h5ad",
+      "cancer_label": "pleural_mesothelioma",
+      "cells": 46955,
+      "genes": 1000,
+      "input_bytes": 49688864,
+      "input_mtime_ns": 1789032153563667850,
+      "matrix_dtype": "int32",
+      "stored_nonzero_entries": 10649584,
+      "stored_counts_nonnegative_integer": true,
+      "RNA_row_total_min_median_max": [
+        0.0,
+        723.0,
+        11751.0
+      ],
+      "RNA_row_total_lt30_cells_descriptive_only": 1034,
+      "zero_RNA_cells": 83,
+      "finite_coordinate_cells": 46955,
+      "global_coordinate_duplicate_rows": 0,
+      "stored_spatial_units": "um_from_px",
+      "converter_default_px_to_um": 0.12028,
+      "max_coordinate_residual_default_scale": 0.0,
+      "physical_calibration_independently_verified": false,
+      "fov_unique_count": 40,
+      "file_sample_key_unique_count": 1,
+      "donor_core_candidate_field_names": [],
+      "patient_mapping_reviewed": false,
+      "control_features_dropped_count": 10,
+      "negative_probe_obs_available": false,
+      "QC_field_min_median_max": {
+        "Area": [
+          112.0,
+          7197.0,
+          66909.0
+        ]
+      }
+    }
+  ],
+  "scientific_release": false,
+  "spatial_contact_validated": false,
+  "limitations": [
+    "File/sample keys and FOVs are not patient identifiers.",
+    "Physical calibration has not been independently verified.",
+    "Count>0 has not been checked against negative-probe background.",
+    "No ligand-receptor endpoint identities or proximity tests were run.",
+    "Read-only metadata checks are not an independent scientific audit."
+  ]
+}

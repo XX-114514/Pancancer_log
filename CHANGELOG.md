@@ -2,6 +2,8 @@
 
 ## 2026-10-11
 
+- Published a read-only checkpoint for all five fixed CosMx files and confirmed a CSV row-index column in the LUAD TMA2 count matrix; held that input for versioned repair, without changing discovery candidates or claiming spatial validation.
+
 - Added dated CM-family evidence, 18 job timelines, summaries for 336 records, 15 automatic follow-up records, 136 block-level programme checks and audited figures; retained unestimable cases and biological limits.
 - Made milestone/exploration logging and normal GitHub push a persistent task rule with explicit event/observation times and remote-commit verification.
 

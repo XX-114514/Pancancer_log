@@ -2,6 +2,8 @@
 
 ## 最新CM探索节点与时间线
 
+2026-10-11 18:36:08 UTC+8：[空间输入检查与CSV索引故障](logs/incidents/2026-10-11_spatial-csv-index-column.md)。5份文件只读汇总完成；TMA2暂停归一化/空间推断，先修复并审计；患者映射/背景/邻近尚待验证。详见[持续任务日志](logs/codex/2026/2026-10-11_milestone-log-and-cloud-sync.md)。
+
 2026-10-11 18:20:36 UTC+8：[关键节点证据](inventories/analysis/2026-10-11/README.md)、[完整时间线](inventories/analysis/2026-10-11/task_timeline_v1.tsv)、[正式run](runs/20261011_family_candidate_validation_v1.md)。336条参考支持记录完成检查，自动15条后续验证记录；身份内部程序检查完成，空间接触和机制尚待验证。关键/探索节点的记录与普通push规则见[RUNTIME_SYNC](docs/RUNTIME_SYNC.md)。
 
 ## 2026-10-11 当前入口：服务器运行与Codex云端开发
