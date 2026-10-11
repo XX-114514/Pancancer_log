@@ -59,3 +59,7 @@ git diff --check
 最新科学节点[19:54条件空间验收](../runs/20261011_spatial_conditional_neighborhood_v1.md)：v15/0冲突/本阶段进程全部终止、主45BH无显著；下载线不随此刷新。关键节点普通push独立SHA逐次保存。
 
 最新科学节点[20:29接收程序验收](../runs/20261011_spatial_receiver_programme_exposure_v1.md)：v16/0冲突，70主模型/22可估计/0名义及主BH显著；生产和审计均終止。此节点不刷新下载库存，当前通用程序阴性与计算通过分开记录。
+
+## 技术QC与正式来源验收补充
+
+21:18 UTC+8四分片已[全量技术验收](../inventories/runtime/2026-10-11/QC_ACCEPTANCE.md)，technical_QC_acceptance_20261011_v1登记，不以accepted_*旧命名覆盖source门槛。patientfix_v2按稳定ID附加头颈癌元数据，原QC不改；collector旧pending仍指正式来源，技术状态以本新登记为准。clinical_sidecar_sha256=null不等于无来源证据，须核preflight.clinical_source、官方metadata与真实registry/obs。正式source acceptance正数登记出现时再扩展export合同。

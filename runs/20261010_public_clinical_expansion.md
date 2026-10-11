@@ -28,3 +28,7 @@
 下载worker已退出；第二批8/14文件校验，Zenodo39%无完成证明。原queue_terminal与v6监控不能代表成功/运行。失败记录时间与SHA见[故障证据](../inventories/runtime/2026-10-11/download_failure_evidence_v1.json)。下一阶段准入见[报告](../inventories/runtime/2026-10-11/DOWNLOAD_READINESS.md)。本节点仅审计；没有恢复传输、启动QC新批次或跨研究整合。
 
 复现账本核对：`python scripts/audit_qc_readiness.py --run "${RUN_ROOT}" --output "${NEW_AUDIT_JSON}"`。脚本使用stdlib，目标scanpy Python3.10已真实执行，新的输出使用排他创建。各来源ledger/threshold/proof SHA在汇总JSON；数值矩阵读回为既有producer凭证，本轮未重新加载全部表达矩阵。
+
+## 21:18 UTC+8 技术QC验收推进
+
+[独立全量审计](20261011_expansion_QC_acceptance_v1.md)接受993,312技术QC细胞；头颈癌患者映射v2修正7463，原QC保留。正式source acceptance仍0，产品/富集snRNA/基线文库门槛保留。本节点没有恢复下载或启动整合。

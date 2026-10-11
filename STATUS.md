@@ -1,5 +1,12 @@
 # 当前项目状态
 
+## 公共新增QC驗收完成：2026-10-11 21:18 UTC+8
+
+[完整驗收報告](inventories/runtime/2026-10-11/QC_ACCEPTANCE.md)：四份993,312細胞/149文庫、全部原始計數和4×36條件PASS，已登記technical_QC_ACCEPTED_source_final_pending。腫瘤組織576,512、CAR-T產品416,800分開；GSE292046為兩患者/8文庫富集snRNA。頭頸癌7,463細胞的post2患者解析遗漏已以v2元數據覆蓋表修正並獨立驗收，原矩陣/舊記錄保留。
+
+可以開始來源內前處理/marker審查；低doublet檢出不等於敏感性已驗證。正式新增source acceptance仍0，原研究別名與基線文庫重疊審查未閉環；全量整合仍待決定。下方running節為保留啟動歷史，其他科學線按各自最新記錄。
+
+
 ## 公共新增QC全量驗收已啟動：2026-10-11 21:11 UTC+8
 
 四份993,312細胞/149文庫逐塊比對原始計數、X/counts及全部QC指標、ID/文庫/患者映射；單線程只讀，不重算过滤。目前running，尚未簽發技術或來源驗收。[run](runs/20261011_expansion_QC_acceptance_v1.md)。其他科學分支按各自記錄。

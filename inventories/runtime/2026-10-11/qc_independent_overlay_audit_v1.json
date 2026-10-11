@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-10-11T13:18:52.908477+00:00",
+  "status": "PASS_independent_metadata_overlay_review",
+  "affected_cells": 7463,
+  "original_QC_cells": 384628,
+  "unresolved_after_overlay": 0,
+  "method": "Independent title split/token lookup and exact stable-ID/library join; no producer regex reused",
+  "response_and_tier_unchanged": true,
+  "counts_read_only": true,
+  "overlay_summary_sha256": "8abe83da0fecc5fd2d38494e50144bde5486fd6495e52435268ecc9768a1bf31"
+}

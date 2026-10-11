@@ -1,0 +1,27 @@
+{
+  "schema": "QC_metadata_overlay_acceptance_v1",
+  "observed_utc": "2026-10-11T13:18:17.691405+00:00",
+  "dataset": "GSE286827",
+  "status": "accepted_metadata_overlay_original_QC_preserved",
+  "affected_QC_cells": 7463,
+  "libraries_repaired": 1,
+  "remaining_unresolved_libraries": 0,
+  "source_linked_patients": 29,
+  "original_QC_cells": 384628,
+  "overlay_exact_stable_ID_subset": true,
+  "outcome_or_tier_changed": false,
+  "original_counts_modified": false,
+  "official_title_rule": "GEX patient token must have exactly one existing official-source mapping",
+  "timepoint_rule": "Preserve literal official title code; no interval/event inferred",
+  "original_evidence_sha256": {
+    "GSE286827_sample_registry.tsv": "0cc191a55e0ad0d42f85b9b6d4ea50249e891cf0ce03ff19ef5d06a7e1068d90",
+    "accepted_GSE286827.json": "185444eb6f4a264f8e42e0bf6bb40b728c06c65aefd07225e0e11c90f78a5da4",
+    "official_geo.json": "24528cc0d45941e045551a639f97b3b85b0ad291d73bf46db645e168da70db1a"
+  },
+  "private_output_sha256": {
+    "GSE286827_sample_registry_patientfix_v2.tsv": "dc3c389bc8ec439d0b010a9de53048e5f2c58f5ec294a286322b365ad39a60f5",
+    "GSE286827_QC_cell_metadata_overlay_v2.tsv.gz": "4d291759b53727cf8d946651f66095eea994a558c0de3a394774cedce82cb576"
+  },
+  "private_output_directory": "${RUN_ROOT}/artifacts/QC_patient_mapping_repair_20261011_v2",
+  "downstream_contract": "Join overlay by stable_cell_id; retain original registry as historical v1."
+}

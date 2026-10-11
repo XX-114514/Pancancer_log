@@ -1,0 +1,21 @@
+{
+  "schema": "technical_QC_acceptance_registration_v1",
+  "registered_utc": "2026-10-11T13:18:52.909137+00:00",
+  "status": "technical_QC_ACCEPTED_source_final_pending",
+  "n_shards": 4,
+  "technical_QC_cells": 993312,
+  "tumor_tissue_QC_cells": 576512,
+  "CAR_T_product_QC_cells": 416800,
+  "technical_audit_sha256": "4c8064fc7298badacf60fcbf127868c47da2aee10b4b86e54db070fcab9941c1",
+  "metadata_overlay_audit_sha256": "ffb36b952d44604274eb86be26d387e5fa76bde8ee7ecf434012ee0eb932dd43",
+  "final_accepted_new_cells": 0,
+  "source_final_acceptance_granted": false,
+  "source_remaining_gate": "Original study aliases and original-library overlap review against frozen baseline; preserve scRNA/snRNA and enrichment/product context",
+  "downstream_allowed": "Per-source normalization/embedding/marker review with patientfix_v2 overlay; no cross-study integration granted",
+  "source_IDs": [
+    "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+    "GSE286827",
+    "GSE292046",
+    "GSE294109"
+  ]
+}

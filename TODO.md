@@ -1,5 +1,17 @@
 # 可执行任务
 
+## 公共QC驗收節點：2026-10-11 21:18 UTC+8
+
+| 任务 | 状态 | 下一步 |
+|---|---|---|
+| 四分片/993,312細胞全量技術QC | accepted_technical_source_pending | 已登记；來源內normalize/marker审查，不代表整合或最终新增验收 |
+| 头颈癌post2患者元数据 | accepted_v2_overlay | 7,463细胞修复并独立核对；后续按稳定ID应用overlay |
+| 低doublet检出来源 | review_author_QC_and_markers | CAR-T/HNS/肾按文库核查历史QC与混合marker，不凑预期率硬删 |
+| 正式source acceptance | pending_baseline_source_library_review | 原研究别名/原始文库排重闭环，保留产品、富集和技术差异 |
+
+[验收报告](inventories/runtime/2026-10-11/QC_ACCEPTANCE.md)。
+
+
 ## 2026-10-11T21:06:33.599638+08:00 完整基因准备下一步
 
 新版本恢复服务器资源并通过官方MD5；冻结代码后执行全336/15/1008完整基因准备及独立审计。本机资源齐全不能代替服务器输入验收。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。
