@@ -1,0 +1,21 @@
+{
+  "run_id": "20261011_expansion_QC_acceptance_v1",
+  "observed_utc": "2026-10-11T13:14:02.844429+00:00",
+  "started_utc": "2026-10-11T13:11:23.365945+00:00",
+  "started_utc8": "2026-10-11T21:11:23.365945+08:00",
+  "status": "running_not_accepted",
+  "scope_cells": 993312,
+  "n_shards": 4,
+  "n_libraries": 149,
+  "script_sha256": "690b7b2e3d709f253a4295229249990263a0cf499cc09a63c05edb1ff6dced72",
+  "read_only_source": true,
+  "counts_per_block_rows": 5000,
+  "threads": 1,
+  "final_source_acceptance_granted": false,
+  "official_source_links": [
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241783",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292046",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12629806/",
+    "https://doi.org/10.1016/j.ccell.2026.05.007"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "observed_utc": "2026-10-11T13:13:04.247681+00:00",
+  "shards": [
+    {
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "patients_nonempty_source_linked": 59,
+      "libraries_unresolved_patient": 0,
+      "QC_cells_unresolved_patient": 0,
+      "library_doublet_removed_percent_quantiles": {
+        "min": 0.0,
+        "median": 0.017599436818021823,
+        "max": 0.9375
+      },
+      "libraries_zero_doublets": 20,
+      "doublets_removed": 103,
+      "post_mt_cells_assessed": 416903,
+      "threshold_min": 15.0,
+      "threshold_max": 15.105247736350265,
+      "source_registry_sha256": "364fea472e43c273455ce2c59eb5928f80034bc27e44860deb658258ed33dec9",
+      "retained_metric_quantiles": {
+        "n_genes": {
+          "q05": 672.0,
+          "median": 2605.0,
+          "q95": 5367.0
+        },
+        "total_counts": {
+          "q05": 1085.0,
+          "median": 8186.0,
+          "q95": 33530.0
+        },
+        "pct_counts_mt": {
+          "q05": 1.5429831006612784,
+          "median": 5.081928077763673,
+          "q95": 12.516695941109935
+        },
+        "doublet_score": {
+          "q05": 0.016301816488122962,
+          "median": 0.05263157894736842,
+          "q95": 0.16190476190476183
+        }
+      }
+    },
+    {
+      "dataset": "GSE286827",
+      "patients_nonempty_source_linked": 29,
+      "libraries_unresolved_patient": 1,
+      "QC_cells_unresolved_patient": 7463,
+      "library_doublet_removed_percent_quantiles": {
+        "min": 0.0,
+        "median": 0.0082904990880451,
+        "max": 1.7773354187402248
+      },
+      "libraries_zero_doublets": 28,
+      "doublets_removed": 289,
+      "post_mt_cells_assessed": 384917,
+      "threshold_min": 15.0,
+      "threshold_max": 25.0,
+      "source_registry_sha256": "0cc191a55e0ad0d42f85b9b6d4ea50249e891cf0ce03ff19ef5d06a7e1068d90",
+      "retained_metric_quantiles": {
+        "n_genes": {
+          "q05": 384.0,
+          "median": 1622.0,
+          "q95": 4829.0
+        },
+        "total_counts": {
+          "q05": 729.0,
+          "median": 4630.0,
+          "q95": 30555.0
+        },
+        "pct_counts_mt": {
+          "q05": 0.0832639467110741,
+          "median": 2.1152636934063542,
+          "q95": 10.222845992461416
+        },
+        "doublet_score": {
+          "q05": 0.00848395426042051,
+          "median": 0.03264812575574366,
+          "q95": 0.09838998211091231
+        }
+      }
+    },
+    {
+      "dataset": "GSE292046",
+      "patients_nonempty_source_linked": 2,
+      "libraries_unresolved_patient": 0,
+      "QC_cells_unresolved_patient": 0,
+      "library_doublet_removed_percent_quantiles": {
+        "min": 1.5573470135580798,
+        "median": 2.4463788023891597,
+        "max": 3.179229036958538
+      },
+      "libraries_zero_doublets": 0,
+      "doublets_removed": 1352,
+      "post_mt_cells_assessed": 55508,
+      "threshold_min": 15.0,
+      "threshold_max": 15.0,
+      "source_registry_sha256": "d5b6378db71b6ae07036b086b6aeefdfda56f181b8b3cb88d6d685012ad3bc30",
+      "retained_metric_quantiles": {
+        "n_genes": {
+          "q05": 911.0,
+          "median": 3855.5,
+          "q95": 7615.25
+        },
+        "total_counts": {
+          "q05": 1218.0,
+          "median": 10229.0,
+          "q95": 40585.25
+        },
+        "pct_counts_mt": {
+          "q05": 0.01075333934619245,
+          "median": 0.19585175201079344,
+          "q95": 1.8709175338387891
+        },
+        "doublet_score": {
+          "q05": 0.005721049516669954,
+          "median": 0.02362204724409449,
+          "q95": 0.09135802469135798
+        }
+      }
+    },
+    {
+      "dataset": "GSE294109",
+      "patients_nonempty_source_linked": 15,
+      "libraries_unresolved_patient": 0,
+      "QC_cells_unresolved_patient": 0,
+      "library_doublet_removed_percent_quantiles": {
+        "min": 0.0,
+        "median": 0.02878940549877645,
+        "max": 2.3931623931623935
+      },
+      "libraries_zero_doublets": 7,
+      "doublets_removed": 186,
+      "post_mt_cells_assessed": 137914,
+      "threshold_min": 15.0,
+      "threshold_max": 23.04164527854333,
+      "source_registry_sha256": "1df4871be6a18f04940f515393ac19443d3de25880fe38ed899bb8ae8c7bc279",
+      "retained_metric_quantiles": {
+        "n_genes": {
+          "q05": 697.3500000000004,
+          "median": 1699.0,
+          "q95": 4361.0
+        },
+        "total_counts": {
+          "q05": 1114.0,
+          "median": 3996.0,
+          "q95": 17824.0
+        },
+        "pct_counts_mt": {
+          "q05": 1.2088999855538778,
+          "median": 3.8622570903035855,
+          "q95": 9.767707307757624
+        },
+        "doublet_score": {
+          "q05": 0.008719596145020651,
+          "median": 0.03264812575574366,
+          "q95": 0.12223291626564003
+        }
+      }
+    }
+  ],
+  "source_acceptance_not_granted": true,
+  "privacy": "aggregate_only"
+}
