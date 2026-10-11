@@ -127,3 +127,5 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 覆盖图共享同一颜色尺度、NA与0区分、原共享记录去重；实际像素审閱PASS，图源和SHA保存。完整细胞缓存/RDS/FOV细表保留服务器，公开仅聚合白名单。接下来固定9LR的物理/单位审阅及条件空间零模型；目标尚未达到，没有标complete。提交前仓库验证/diff/隐私审阅、普通push和独立HTTPS核验随后登记。
 
 提交前验收：仓库验证0errors/1既有warning、git diff --check通过。新白名单文件没有内部路径/患者或细胞键；全部65组合、390口径、180图表单元格、17时间事件与审计一致，生产/审计SHA与已预先push的a61d6db严格吻合。原无关未跟踪研究日志保持，不暂存。建议commit：records: publish corrected and audited native spatial preflight。
+
+11:33:06.562091 UTC /19:33:06.562091 UTC+8：最终内容3d41ab4a3a9f55c8a24f8a285e4a5b2b9e4644a7普通push exit0；11:33:12.751482本机独立HTTPS ls-remote及fetch返回同SHA。[发布收据](../../../inventories/analysis/2026-10-11/spatial_contact_preflight_git_receipt_v1.json)。本轮5个发布节点均已正常推送并核验，没有force/历史重写或覆盖无关工作。此收据追加提交另核对远端，未把科学目标标complete。

@@ -1,0 +1,12 @@
+{
+  "content_commit": "3d41ab4a3a9f55c8a24f8a285e4a5b2b9e4644a7",
+  "verified_remote_main": "3d41ab4a3a9f55c8a24f8a285e4a5b2b9e4644a7",
+  "verified_UTC": "2026-10-11T11:33:12.751482+00:00",
+  "method": "server clean ff-only bundle + ordinary push; independent local HTTPS ls-remote and fetch",
+  "bundle_sha256": "5edf2bb38df4102a4332aa7f7de65e6de1d995e63b6ff35ca0d0e6075d276451",
+  "push_completed_UTC": "2026-10-11T11:33:06.562091+00:00",
+  "push_completed_UTC8": "2026-10-11T19:33:06.562091+08:00",
+  "scope": "Corrected v3 all65 native preflight, independent audit, explicit v1/v2 errors, UTC timeline, source tables and descriptive coverage figure",
+  "scientific_release": false,
+  "axis_validation_complete": false
+}
