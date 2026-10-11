@@ -243,3 +243,17 @@ UTC 2026-10-11T13:23:02.879031+00:00 /UTC+8 2026-10-11T21:23:02.879031+08:00。�
 未验证：真实全基因聚合/独立审计、受体特异靶作用与正式TF活性、独立临床机制；当前仍v16，不据代码PASS宣称轴或CMdriver。看到并发新增独立QC验收汇总但原研究别名/文库重叠仍pending、正式新增验收0；只读未暂存或修改。本次日志、代码、合同按节点先普通push；下一步资源完成后实际全量生产/审计。
 
 提交前静态审阅发现背景计数与空值同列会序列化为“3.0/空”，独立审计直接int(text)可能误拒有效值；改为先解析float再取int，真实audit未启动、未伪造实际失败。保留未提交冻结草稿SHA和旧代码，新fixture v6验证CSV表示/缺失边界后PASS，最终SHA以code_freeze_v2的final_code_freeze_UTC与code_shas为准。并发QC线程提交已到71cec70，保留其提交及daily内容，后续以此base普通push，不改写历史。
+
+## 2026-10-11T21:39:13.099905+08:00 分块断流定位、终态处理和原生来源可用性
+
+UTC 2026-10-11T13:39:13.099905+00:00 /UTC+8 2026-10-11T21:39:13.099905+08:00。真实检查显示完整target分块停在27/250；40失败中39有正文但不足声明1MiB（另1timeout），不能继续称健康。进一步停止时累计46次非空短正文。不是工具观察超时：精确206/Range已通过后实际传输字节不足，具体网络/服务端原因仍未确认。13:32:04.040792 UTC请求SIGTERM，仅身份/hash核实的本次资源worker124126；13:32:04.040878 UTC确认PID不存在后记录终态，exit_code unknown/null、signal15、所有旧块保留，v16/active_jobs空/0冲突。[终态证据](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_stop_v2.json)。没有启动科学生产或删除文件。
+
+只读来源核查另获重要事实：[原生范围](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_native_scope_recon_v1.json)。目录54份原生H5；已审家族main membership覆盖45GSE及全部13原子群，这45均有原生文件。当前3来源观察9/13不是所有癌种都缺4群；完成当前准备后可在其余已审来源考察同类细胞对和靶响应。仅文件存在，尚未全值/临床/缺基因验收，GSE169609/GSE299623文件存在不代表纳入；不修改当前3源范围或原9CM。
+
+恢复方法转现有aria2 1.34.0：实际help确认continue支持外部连续部分文件、checksum格式TYPE=DIGEST、force-save保留控制文件，no-conf忽略配置。曾检索abort-on-checksum-mismatch选项不存在，执行前移除，未实际启动失败命令。新[v3资源合同](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v3_spec.json)8连接/20重试/60秒传输timeout/7200秒文件deadline，保留所有旧块，只复制连续字节前缀到新目录，末端仍须原官方大小/MD5。成功后才补入v2输入目录中此前不存在的完整target；不改已有LR/TF或旧资源manifest。当前仅代码准备，未派发新v3。
+
+[科学代码冻结v3](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_code_freeze_v3.json)只更新执行worker到真实资源v3终态/收据；producer/auditor及336/15/1008/原编号/缺失含义全部未变，v2冻结历史保留。下一步普通push后启动v3恢复，核实实际传输，完整校验后才执行全量原生基因准备/独立复算，再按45来源构建跨癌种验证范围。此时仍没有可宣布验证的轴，goal active。
+
+Git失败与恢复：本机/云端含并发QC至71cec70，服务器干净但停在410180b；第一push helper基线断言拒绝，未执行fetch/merge/push，实际失败时刻unknown。本次诊断后以服务器真实410180b基线快进保留所有QC与本节点，f9bd0e835481c5ab0962dc97fa87a886986fb20a于13:29:04.551096 UTC普通push，13:29:11.356726独立HTTPS核验同SHA，[收据](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_code_v2_git_receipt.json)。没有force/rebase/reset或覆盖并发提交。
+
+本节点提交前：源码语法、JSON解析/逐SHA和公共路径隐私检查通过，diff通过，仓库0errors/1既有历史路径warning；未暂存无关研究日志。新增前置断言确保v2 target路径仍不存在，防止长恢复之后才发现路径占用。未将文件存在或CLI帮助通过记为真实下载/科学计算成功。

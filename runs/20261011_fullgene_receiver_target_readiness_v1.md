@@ -35,3 +35,7 @@
 [代码/输入冻结](../inventories/analysis/2026-10-11/fullgene_receiver_target_code_freeze_v2.json)、[资源运行取证](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_running_v2.json)。当前3来源实际节点4/6/9、合计9/目录13，原可测panel289/295/296；缺捕获家族表达覆盖NA，保留所有336/15/1008行。TF文件已完整，21680非零一般基因行不是TF目录，字段已纠正。源计数及细胞身份不变；合成检查PASS，真实计算未开始。
 
 复现命令（固定scanpy Python3.10.19，两个根目录由环境提供）：`python fullgene_execution_worker_v1.py production`，真实终态后 `python fullgene_execution_worker_v1.py audit`。worker验证全部冻结代码SHA/原输入/父交接和官方资源终态；生产与审计分别记录新manifest/PID/起止/exit，最后手动验收科学交接。
+
+## 2026-10-11T21:39:13.099905+08:00 资源v2真实停止与v3恢复准备
+
+[资源终态](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_stop_v2.json)：累计46短响应、完整块进度停止，身份核对后停止自有worker，PID已不存在/active空/0冲突，部分文件保留。新[aria2合同](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v3_spec.json)与[冻结v3](../inventories/analysis/2026-10-11/fullgene_receiver_target_code_freeze_v3.json)尚未派发；成功校验后使用`python fullgene_execution_worker_v2.py production`和终态后的`audit`。生物producer/auditor不变，真实生产始终未开始。45已审来源有原生文件，后续扩展待另冻结。

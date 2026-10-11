@@ -1,0 +1,28 @@
+{
+  "created_UTC": "2026-10-11T13:39:13.099905+00:00",
+  "created_UTC8": "2026-10-11T21:39:13.099905+08:00",
+  "role": "resource_recovery_not_scientific_model",
+  "same_fixed_prior_DOI": "10.5281/zenodo.7074291",
+  "all3_same_official_sizes_MD5_required": true,
+  "code_sha256": "fbc44a9727b4bd2440e1b36020484780fea5c92d9fbc932f94da6f6ba8c3cca5",
+  "cli_version": "aria2_1.34.0",
+  "parameters": {
+    "connections": 8,
+    "continue_partial": true,
+    "max_tries": 20,
+    "connect_timeout_seconds": 20,
+    "transfer_timeout_seconds": 60,
+    "file_deadline_seconds": 7200,
+    "checksum_arg": "md5=official_digest",
+    "keep_control_force_save": true,
+    "no_conf": true,
+    "no_env_proxy": true,
+    "http_accept_gzip": false
+  },
+  "seed": "Only contiguous prefix from exact206validated old chunks; preserve every old file; checksum not yet valid until wholefile verified",
+  "new_input": "${RUN_ROOT}/fullgene_receiver_target_readiness_v1/verified_prior_inputs_v3",
+  "biology_input_compatibility": "After wholefileMD5/SHA append previously absent complete target to frozen v2 input directory; existing2LR/TF and all earlier receipts unmodified",
+  "started": false,
+  "statistical_models_fitted": false,
+  "axis_validation_complete": false
+}

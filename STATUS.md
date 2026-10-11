@@ -1,5 +1,9 @@
 # 当前项目状态
 
+## 2026-10-11T21:39:13.099905+08:00 资源断流已处理
+
+v2资源worker因反复短正文且完整进度停滞停止，PID已不存在/登记无活跃作业/0冲突；TF和LR完整、target仍未全文件校验。aria2 v3已准备但未派发，科学计算未开始。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。
+
 ## 2026-10-11T21:23:02.879031+08:00 完整基因代码已冻结
 
 资源恢复具体worker核实活跃，TF完整校验、靶继续分块。3来源实际9/目录13原子群；代码修正缺捕获NA和TF先验标签，合成PASS、真实全基因聚合未启动，科学证据仍v16。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。
