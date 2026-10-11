@@ -1,5 +1,10 @@
 # 可执行任务
 
+## 2026-10-11T20:07:13 接收程序阶段
+
+70接收程序主模型：predeclared_not_started；下一步冻结代码、全量计算及独立归一化/图/null审计。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。
+
+
 ## 2026-10-11 19:54 条件空间验收
 
 45接口空间检验：done_conditional_computation_not_axis_validation；接收程序—邻居暴露和患者/core/独立来源验证：pending_predeclaration。 [run](runs/20261011_spatial_conditional_neighborhood_v1.md)。

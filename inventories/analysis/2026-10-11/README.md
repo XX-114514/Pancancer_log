@@ -41,3 +41,7 @@ SELL阳性细胞在胃癌T_cell_IL7R_36内细胞毒程序较低，23样本单位
 ## 19:54 条件空间验收
 
 [全45表](spatial_conditional_neighborhood_v1/all45_interface_results.tsv)、[审计](spatial_conditional_neighborhood_v1/independent_audit.json)、[终态](spatial_conditional_neighborhood_v1/checkpoint.json)、[时间线](spatial_conditional_neighborhood_v1/timeline.tsv)、[正式run](../../../runs/20261011_spatial_conditional_neighborhood_v1.md)。29可估计/16不可测/0主q05；全部结果和限制保留，邻近未达到固定接口机制验收。
+
+## 接收程序—邻居暴露阶段
+
+[70模型预声明](spatial_receiver_programme_plan_v1.json)、[run](../../../runs/20261011_spatial_receiver_programme_exposure_v1.md)：75原记录映射保留，尚未运行/验证。

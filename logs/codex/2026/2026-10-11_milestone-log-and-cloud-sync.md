@@ -155,3 +155,11 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 提交前验收：仓库验证0errors/1既有warning、diff检查通过，16聚合/图文件无内部路径或患者/细胞行，生产/审计SHA与预先93ec557代码严格吻合；补录9接口原文/结构索引，明确空掩膜占位0不等于实际家族不存在。本轮计划/代码/生产3个节点已普通push核验；最终验收第4节点及收据下一步记录。原无关未跟踪研究日志保留。建议commit：records: publish audited all45 conditional spatial results and timeline。
 
 12:00:20.718564 UTC /20:00:20.718564 UTC+8：最终验收内容1319ad60a82a7e845e4a4fc8e28a2e98e8bc5ee6普通push exit0；12:00:27.061812本机独立HTTPS ls-remote与fetch核对同SHA。[发布收据](../../../inventories/analysis/2026-10-11/spatial_conditional_acceptance_git_receipt_v1.json)。方案/代码/生产/验收4个关键节点均已推送并核验；本次无推送或科学作业失败，图审阅两次修订完整保留。本收据追加提交随后单独核验，不宣称goal完成；原无关未跟踪日志未暂存。
+
+## 20:07:13 UTC+8 接收程序—邻居暴露预声明
+
+事件/取证UTC 2026-10-11T12:07:13.114311+00:00，UTC+8 2026-10-11T20:07:13.114311+08:00。前一goal turn判为progress：v15全45审计/状态刷新/云端3921c2f，当前再读真实v15/0冲突/无活跃作业。整体验证仍未完成。
+
+文献搜寻NCEM/NicheNet；Nature两原文跳转500，改PMC10017508全页和PubMed31819264摘要索引。NCEM将身份和niche联系表达，启发新问题但不假称包复现/因果。原生检查固定15记录及所有5文件；新增7programme/LR基因，其中HBEGF/ LAYN在面板缺失，不能填0。
+
+[完整计划](../../../inventories/analysis/2026-10-11/spatial_receiver_programme_plan_v1.json)、[run](../../../runs/20261011_spatial_receiver_programme_exposure_v1.md)：14独立定义×5=70主模型、75映射，固定6半径niche/2与12诊断、R+内部programme~L+邻居占发送家族比例，家族数量/身份/RNA/密度与FOV调整、只置换L标签10000次完整70双侧BH。缺发送家族邻居记缺失；原程序/原9CM冻结，2programme专用记录不变为接触成功。所有结果待实际执行，未缩小到预计可显著的子集。

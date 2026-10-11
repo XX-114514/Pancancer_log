@@ -1,0 +1,101 @@
+{
+  "schema": "spatial_receiver_programme_exposure_plan_v1",
+  "created_UTC": "2026-10-11T12:07:13.114311+00:00",
+  "created_UTC8": "2026-10-11T20:07:13.114311+08:00",
+  "question": "Within receptor-positive reviewed receiver identities, is a fixed expression programme associated with the fraction of ligand-positive cells among nearby sender-family cells beyond family abundance, RNA quality and spatial context?",
+  "scope": {
+    "cells": 254458,
+    "files": 5,
+    "frozen_records": 15,
+    "contact_records": 13,
+    "programme_only_records": 2,
+    "mapped_record_file_rows": 75,
+    "unique_model_definition": "sender_family,receiver_family,ligand,receptor,exact ordered programme genes; duplicate discovery contexts map once",
+    "expected_unique_programme_interfaces": 14,
+    "primary_test_family": 70,
+    "annotation": "v20261010",
+    "nodes": 172,
+    "CM": 9
+  },
+  "parent": {
+    "register": "native_LR_program_evidence_register_v15",
+    "contact_inventory_sha256": "3faa3c3888782d22f25f83ebd66afb44dbf691b3c60405d5c493aa42468353fb",
+    "contact_audit_sha256": "3dd0eb43f00781cdf0d95adec3c38916178f2249dc38ddb26e8cfda9b69ce24e",
+    "candidate_sha256": "1aa6d9c911ebca1f2925ae77942d1544a1281c8bddcfccfd05540446e74ddf37",
+    "native_inventory_sha256": "363efe003138e336ddf037deca25f7cf8b92c1d85e2ea5fd8114adac4f12a654"
+  },
+  "identity": "Parent v3 author broad T/B, native QC and family-marker background definition; exact original author identity labels enter nuisance covariates. No formal state assignments. GSE287472 author unavailable; ICON B category unavailable.",
+  "programme": "Exact fixed336 programme genes per model_key, LR and receiver-name excluded by parent contract; mean log1p(native count/full-native-target-total*10000) over uniquely measurable genes, at least4genes and60%remaining-set coverage. Missing gene not zero. Preserve zeros of measurable genes. Use selected native caches when complete; read full-source gene aliases for additional exhaustion genes. Full target total unchanged.",
+  "geometry": {
+    "native_coordinates": "cached coords/.12028 and original Area pixels; independent micron calibration unverified",
+    "radius": "sqrt(Area/pi) circular proxy",
+    "primary_multiplier": 6,
+    "sensitivity_multipliers": [
+      2,
+      12
+    ],
+    "within_FOV_only": true,
+    "no_self": true,
+    "rationale": "New programme/niche question covers several cell diameters; parent2radius was a contact-scale diagnostic, not proof of absence across larger niches. Finite6 declared before any new programme/exposure coefficients. No radius selected by p value.",
+    "density": "All-QC neighbour count within the same radius used in a model"
+  },
+  "exposure": "Number of ligand-positive sender-family neighbours / number of ALL sender-family neighbours. R-positive receiver with no sender-family neighbour is exposure-missing, not zero. With sender-family neighbours but no L-positive neighbours, exposure=0. Same-cell neighbour forbidden; CCL5/IL7R overlap remains explicit.",
+  "primary_model": "R-positive receivers only, >=40eligiblecells and at least20 residual degrees of freedom; programme and exposure variance required. OLS programme~fraction_L_positive_neighbours + standardized log1p(nativeRNA),log1p(nativeDetectedGenes),log(Area),log1p(allQCdegree),log1p(senderFamilyDegree) + all present FOV/author-label/receiver sender-family-membership categorical levels minus fixed last-level anchors. Rank or condition>1e8 => unestimable; no mandatory continuous covariate auto-drop. Counts of exposed/unexposed reported, not selected using >=20pergroup gate.",
+  "null": {
+    "seed": 20261012,
+    "permutations": 10000,
+    "shuffle": "Only ligand-positive sender label shuffled; recipient cells, R-positive status, programme, family positions, geometry and nuisance covariates fixed. Strata = FOV x receiver-family-membership x fixed receptor-positive flag x exact original sender-author label x above/below allQC-FOV RNA median x above/below allQC-FOV local density median. Strata constant/size1 preserved, no automatic merging.",
+    "sampling": "Within each canonical sorted stratum, independent continuous Uniform random keys sorted to generate uniform permutations. This vectorization and seed sequence are frozen; all stratum L counts conserved.",
+    "statistic": "Adjusted programme coefficient per unit local ligand-positive fraction. Exposure rederived for every permutation; nuisance matrix fixed. Null exposure residual variance<=1e-12 gives statistic0 and is counted explicitly, not omitted.",
+    "pvalue": "Two-sided conditional permutation2min[(1+null>=observed)/(10001),(1+null<=observed)/(10001)], clipped1; null variance zero =>NA. Not cell iid p, not patient population inference.",
+    "BH": "Full70unique programme-interface/file tests, unavailable/unestimable p=1 only internally; output p/q remainNA; mapped duplicate contexts not independent evidence."
+  },
+  "sensitivities": [
+    "Same main-model covariates/rank rules at radii2and12, observed beta only/no new significance family",
+    "Remove BOTH sender and receiver family-name genes from programme for a diagnostic score with same4/60%coverage rules; fixed main score preserved",
+    "Receptor-positive versus negative receiver programme association with QC/author/FOV/member nuisance matrix, observed beta only; this is phenotype not neighbour response",
+    "Report counts, mixed/overlapping endpoint behaviour, FOV concentration, leave-one-FOV adjusted effect and no-patient-map limits"
+  ],
+  "acceptance": [
+    "Exactly14 unique model definitions x5=70 primary and15x5=75mapped, all missing explicit",
+    "Verify parent/candidate/nativecache/source hashes and all additional genes from native-source aliases",
+    "Independent source-value fixtures, programmes/normalization/endpoints/exposure/rank and QR vs SVD coefficient checks",
+    "Independent random-key/stratum conservation and every10000conditional draw for all estimable primary models",
+    "Review full70 BH and all140radius/70name/70receptor phenotype diagnostics, no duplicated evidence",
+    "Production terminal manifests and exact process disappearance plus independent audit before version update"
+  ],
+  "expected_files": [
+    "predeclared_plan.json",
+    "all70_primary_programme_exposure.tsv",
+    "all75_record_mapping.tsv",
+    "all140_radius_sensitivity.tsv",
+    "all70_programme_name_sensitivity.tsv",
+    "all70_receptor_phenotype.tsv",
+    "native_gene_coverage.tsv",
+    "private_model_caches/*.npz",
+    "inventory.json",
+    "independent_audit.json"
+  ],
+  "literature": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10017508/",
+      "method": "NCEM",
+      "use": "Conceptual support for modelling receiver expression as a function of identity and niche; this task is a fixed programme diagnostic, not an NCEM package reproduction"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31819264/",
+      "method": "NicheNet",
+      "use": "Ligand-to-target concept; no claim that generic programme is proven ligand target"
+    }
+  ],
+  "limits": [
+    "All5 assays retained but author/panel limitations remain; HBEGF is not in current1000gene panel, so missing is not negative",
+    "FOV/TMA are not independent patients; tests conditional on observed tissues only",
+    "Programme and receptor positivity may reflect subtypes or technical/segmentation effects; no formal state or causal mechanism assignment",
+    "Different cancers can share directional cell-pair ecology without universal effects; current spatial source is one GSE",
+    "No primary spatial enrichment in parent; this complementary downstream-expression question does not retroactively validate proximity",
+    "Current family extension has0direct original9CM edges; no CMdriver claim"
+  ],
+  "scientific_release": false,
+  "axis_validation_complete": false
+}
