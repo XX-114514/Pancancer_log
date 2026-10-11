@@ -61,3 +61,5 @@
 建议commit：`records: log spatial preflight checkpoint and CSV index incident`。仓库验证、diff审阅及本节点云端SHA在发布后单独核验；没有把待修复状态写成成功。
 
 提交前核对：5文件/254,458细胞与源采集代码SHA一致；事故全行比对为真；[节点时间线](../../../inventories/analysis/2026-10-11/spatial_task_timeline_v1.tsv)区分执行时间与取证时间。仓库验证0errors/1既有路径warning，新增内容无内部路径或细胞/患者行；新JSON和脚本均小于5MiB，diff/TSV列数及链接检查通过。本次不把此只读采集称为独立科学审计。
+
+2026-10-11T10:39:35.953047+00:00（18:39:35.953047 UTC+8）：本节点内容7eabdd24e2f408596ca760cfba78a664fcb0595c普通push exit0；本机独立HTTPS ls-remote返回同一main SHA，10:39:52 UTC前核验完成。[发布收据](../../../inventories/analysis/2026-10-11/spatial_git_publication_receipt_v1.json)。服务器以校验bundle快进，未复制私钥，未覆盖无关工作。本次没有推送失败；修复及空间科学验证仍待实施。

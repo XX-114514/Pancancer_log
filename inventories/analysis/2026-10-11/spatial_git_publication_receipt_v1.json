@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/XX-114514/Pancancer_log.git",
+  "branch": "main",
+  "content_commit": "7eabdd24e2f408596ca760cfba78a664fcb0595c",
+  "previous_verified_main": "1fbc18fa2d7558b21b2c585419935f0113a580fd",
+  "push_exit": 0,
+  "push_observed_UTC": "2026-10-11T10:39:35.953047+00:00",
+  "push_observed_UTCplus8": "2026-10-11T18:39:35.953047+08:00",
+  "independent_verification": "Local HTTPS git ls-remote origin refs/heads/main returned exact content SHA; observed by 2026-10-11T10:39:52+00:00",
+  "verified_remote_main": "7eabdd24e2f408596ca760cfba78a664fcb0595c",
+  "transport": "SHA-checked Git bundle; clean server main fast-forward; existing server SSH authentication over443; ordinary push",
+  "force_or_history_rewrite": false,
+  "private_keys_copied": false,
+  "scope": "All-five spatial metadata observation, confirmed CSV index incident, timeline, source collector and versioned-repair task; aggregate only",
+  "scientific_release": false,
+  "repair_complete": false,
+  "receipt_commit_verification": "This receipt is a subsequent ordinary commit; its final remote SHA is verified separately at task completion."
+}
