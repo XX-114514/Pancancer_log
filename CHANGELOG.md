@@ -2,6 +2,9 @@
 
 ## 2026-10-11
 
+- Added dated CM-family evidence, 18 job timelines, summaries for 336 records, 15 automatic follow-up records, 136 block-level programme checks and audited figures; retained unestimable cases and biological limits.
+- Made milestone/exploration logging and normal GitHub push a persistent task rule with explicit event/observation times and remote-commit verification.
+
 - Published an aggregate-only download/Project_v3 snapshot and readable report, distinguishing 5,341,204 source cells, 608,684 pending QC cells and zero registered final accepted new cells.
 - Indexed the completed expression annotation, new-label CoVarNet/LIANA and first CM source-replication runs without promoting final biological identity.
 - Added a read-only exporter, publication/count validators, report renderer and offline contract tests for Codex Cloud development.

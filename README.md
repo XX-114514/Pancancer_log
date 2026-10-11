@@ -1,5 +1,9 @@
 # PanCancer 项目进展与工作日志
 
+## 最新CM探索节点与时间线
+
+2026-10-11 18:20:36 UTC+8：[关键节点证据](inventories/analysis/2026-10-11/README.md)、[完整时间线](inventories/analysis/2026-10-11/task_timeline_v1.tsv)、[正式run](runs/20261011_family_candidate_validation_v1.md)。336条参考支持记录完成检查，自动15条后续验证记录；身份内部程序检查完成，空间接触和机制尚待验证。关键/探索节点的记录与普通push规则见[RUNTIME_SYNC](docs/RUNTIME_SYNC.md)。
+
 ## 2026-10-11 当前入口：服务器运行与Codex云端开发
 
 - **先看下载与Project_v3动态**：[本次实测报告](inventories/runtime/2026-10-11/REPORT.md)，采集于2026-10-11 11:22:53（UTC+8）。GitHub保存快照，不是实时作业面板。

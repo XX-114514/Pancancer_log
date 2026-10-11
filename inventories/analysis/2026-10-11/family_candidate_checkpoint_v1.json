@@ -1,0 +1,944 @@
+{
+  "schema": "family_candidate_milestone_public_checkpoint_v1",
+  "observed": {
+    "utc": "2026-10-11T10:20:36.594977+00:00",
+    "utc_plus_8": "2026-10-11T18:20:36.594977+08:00"
+  },
+  "baseline": "v20261010;172nodes;9CM;1290samples;canonicalZarr unchanged",
+  "evidence_register_schema": "native_LR_program_evidence_register_v11",
+  "handoff": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/candidate_validation_milestone_v1/milestone_handoff.json",
+  "scope": {
+    "supported_records": 336,
+    "stable_supported_records": 112,
+    "conditional_retained_records": 28,
+    "automatic_next_records": 15,
+    "contact_followup_records": 13,
+    "programme_followup_records": 2,
+    "within_identity_block_tests": 136,
+    "estimable_within_identity_block_tests": 80
+  },
+  "priority_class_counts": {
+    "resampling_not_stable": 224,
+    "member_depth_conditional_association_uncertain_or_reversed": 46,
+    "sender_programme_conditional_association_uncertain_or_reversed": 29,
+    "sparse_RNA_conditional_association_retained": 28,
+    "sender_programme_conditional_model_unestimable": 5,
+    "member_depth_conditional_model_unestimable": 4
+  },
+  "milestones": [
+    {
+      "run_id": "20261011_family_identity_native_input_milestone_v1",
+      "verified": {
+        "utc": "2026-10-11T09:35:34.608638+00:00",
+        "utc_plus_8": "2026-10-11T17:35:34.608638+08:00"
+      },
+      "execution_status": "COMPLETE_AUDITED_IDENTITY_DEPTH_SENSITIVITIES_AND_NATIVE_CELL_INPUTS_WITH_ROBUSTNESS_AUDIT_TRACKED",
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/identity_native_input_milestone_v1/milestone_handoff.json",
+      "sha256": "c3cc3d807c561d1444acfb028c4bb1c173d8d2730b56027a8f5214abaa0de40c"
+    },
+    {
+      "run_id": "20261011_family_candidate_validation_milestone_v1",
+      "verified": {
+        "utc": "2026-10-11T10:16:10.170163+00:00",
+        "utc_plus_8": "2026-10-11T18:16:10.170163+08:00"
+      },
+      "execution_status": "COMPLETE_AUDITED_ALL336_NATIVE_SUPPORT_CONDITIONAL_MODELS_AND_AUTOMATIC_ALL15_WITHIN_IDENTITY_PROGRAMME_CHECKS",
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/candidate_validation_milestone_v1/milestone_handoff.json",
+      "sha256": "26384679c56e98959c0f004ab8a619df7940b3129e6f9650f94a13291cee24f9"
+    }
+  ],
+  "finished_jobs": [
+    {
+      "job": "lung_identity_depth",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:08:19.558177+00:00",
+        "utc_plus_8": "2026-10-11T17:08:19.558177+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:09:33.824892+00:00",
+        "utc_plus_8": "2026-10-11T17:09:33.824892+08:00"
+      },
+      "script_sha256": "744cc6c4c0613d2ae9d0ecbd2fdd3a28d8e65e14e90cfda7918f9597852deb4b",
+      "script_names": [
+        "family_lung_author_identity_depth_sensitivity_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_lung_identity_depth.execution.json",
+        "sha256": "02c4a7fd89a1d03e13a9eac1f63c65877f8d62adfab5aea550ebfd90502b761d"
+      }
+    },
+    {
+      "job": "lung_identity_depth_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:10:05.374051+00:00",
+        "utc_plus_8": "2026-10-11T17:10:05.374051+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:11:19.437826+00:00",
+        "utc_plus_8": "2026-10-11T17:11:19.437826+08:00"
+      },
+      "script_sha256": "5092aa21ba788c8076430224a4f8417a550f7dddb941c2485895fa5839296e3b",
+      "script_names": [
+        "audit_family_lung_author_identity_depth_sensitivity_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_lung_identity_depth_audit.execution.json",
+        "sha256": "5942d8d51a7cb99722300c3166fea46ffba773677abc503ab494c4de633e379c"
+      }
+    },
+    {
+      "job": "validation",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T08:53:38.161311+00:00",
+        "utc_plus_8": "2026-10-11T16:53:38.161311+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:17:07.185819+00:00",
+        "utc_plus_8": "2026-10-11T17:17:07.185819+08:00"
+      },
+      "script_sha256": "dfeb0ab8c6d73bf141480c10900464babcc3716226472970003c2ea57522a568",
+      "script_names": [
+        "validate_source_reviewed_family_LR_candidates_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_validation.execution.json",
+        "sha256": "8f54c63f66f52ca9d554d545aa9b4c80f4e0d8425a1005738413e90910e1b373"
+      }
+    },
+    {
+      "job": "cell_panel",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:21:57.403338+00:00",
+        "utc_plus_8": "2026-10-11T17:21:57.403338+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:23:12.601601+00:00",
+        "utc_plus_8": "2026-10-11T17:23:12.601601+08:00"
+      },
+      "script_sha256": "6c23a0534a79ddf602b15d2ea094daf82ab2ab2edeb7edc7492f54d9070ab2eb",
+      "script_names": [
+        "build_family_supported_LR_native_cell_panel_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_cell_panel.execution.json",
+        "sha256": "29933f98fda3b8a93605eb25e29654f9416dc344de50975022c559c677905150"
+      }
+    },
+    {
+      "job": "cell_panel_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:27:24.906397+00:00",
+        "utc_plus_8": "2026-10-11T17:27:24.906397+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:28:28.832105+00:00",
+        "utc_plus_8": "2026-10-11T17:28:28.832105+08:00"
+      },
+      "script_sha256": "9472a6d6fb51a7cb35797f51665a42be3f4b3bd159c698722fad703fd16addea",
+      "script_names": [
+        "audit_family_supported_LR_native_cell_panel_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_cell_panel_audit.execution.json",
+        "sha256": "6f5cea62c7969533dcf85d04ad8f8c645c5da5dd08d186e64eaf25cdd0ee5877"
+      }
+    },
+    {
+      "job": "native_axes",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:40:52.738751+00:00",
+        "utc_plus_8": "2026-10-11T17:40:52.738751+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:41:27.494773+00:00",
+        "utc_plus_8": "2026-10-11T17:41:27.494773+08:00"
+      },
+      "script_sha256": "f647323448350236c165ead253e79cb6ddba5f17ec26aca5d11b3ebca315d8f9",
+      "script_names": [
+        "characterize_family_native_cell_axes_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_native_axes.execution.json",
+        "sha256": "f78ed38c37e9cc0e7ad80127e5cf04441879c35bf9cc4abec7740797eae5094c"
+      }
+    },
+    {
+      "job": "validation_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:17:27.029583+00:00",
+        "utc_plus_8": "2026-10-11T17:17:27.029583+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:44:17.642790+00:00",
+        "utc_plus_8": "2026-10-11T17:44:17.642790+08:00"
+      },
+      "script_sha256": "8fe77cfc8cf2af8a4765ceba70aee05d2b4403c568c3aac7ac537e88969ce651",
+      "script_names": [
+        "audit_source_reviewed_family_LR_candidate_validation_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_validation_audit.execution.json",
+        "sha256": "373fbc568fba7992d45ab1ab27fdb5ab8f07b1b304e53c3539d337e12249b6e3"
+      }
+    },
+    {
+      "job": "native_axes_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:41:56.268546+00:00",
+        "utc_plus_8": "2026-10-11T17:41:56.268546+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:44:27.804589+00:00",
+        "utc_plus_8": "2026-10-11T17:44:27.804589+08:00"
+      },
+      "script_sha256": "d2810b32fc2505097d703605d54624f2846d14171539a695445d5772530391c3",
+      "script_names": [
+        "audit_family_native_cell_axes_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_native_axes_audit.execution.json",
+        "sha256": "76f43eb3378305eb175a028c242bf8ce3b59dc2714815130aa10a21ebe040367"
+      }
+    },
+    {
+      "job": "depth_member",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:46:30.321375+00:00",
+        "utc_plus_8": "2026-10-11T17:46:30.321375+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:46:37.267952+00:00",
+        "utc_plus_8": "2026-10-11T17:46:37.267952+08:00"
+      },
+      "script_sha256": "280d9eb8fa60c8b24747d0539c7fad97a654d51deb36bc9088726b90c010ca36",
+      "script_names": [
+        "family_native_depth_member_sensitivity_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_depth_member.execution.json",
+        "sha256": "230191a8eb3412d0b56731f6503d331ebff4d1b9758c6bc0950ac4dc242f1d32"
+      }
+    },
+    {
+      "job": "depth_member_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:47:13.566512+00:00",
+        "utc_plus_8": "2026-10-11T17:47:13.566512+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:47:24.630521+00:00",
+        "utc_plus_8": "2026-10-11T17:47:24.630521+08:00"
+      },
+      "script_sha256": "5acd38d0a9d3b66e4bc73ac14bef3a344e5fe6eb54f48a59c597a6105a92e0dc",
+      "script_names": [
+        "audit_family_native_depth_member_sensitivity_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_depth_member_audit.execution.json",
+        "sha256": "eef22ecacde5c2480c21bc45a0b9526b96fe0cf17cb1822de83569c342015368"
+      }
+    },
+    {
+      "job": "priority",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:52:45.497571+00:00",
+        "utc_plus_8": "2026-10-11T17:52:45.497571+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:52:50.444237+00:00",
+        "utc_plus_8": "2026-10-11T17:52:50.444237+08:00"
+      },
+      "script_sha256": "a27ecf748e83d3e11c997dd7397b32294955938c91752685b18b915eff247f12",
+      "script_names": [
+        "prioritize_family_supported_axes_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_priority.execution.json",
+        "sha256": "fe3723a054fbaff96811f7f38bd36eda48d5a08909c6108d5467d6a3b0c6bf37"
+      }
+    },
+    {
+      "job": "priority_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:53:00.073009+00:00",
+        "utc_plus_8": "2026-10-11T17:53:00.073009+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:53:04.474520+00:00",
+        "utc_plus_8": "2026-10-11T17:53:04.474520+08:00"
+      },
+      "script_sha256": "4cef00f202c023320c2391f4a227afc4e6400fa168e664c414becc5f0052c0ce",
+      "script_names": [
+        "audit_family_supported_axis_priority_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_priority_audit.execution.json",
+        "sha256": "7d5613056d5cd8556fc765c127898e56213a6d556011c2ec6e61569aeeac8a29"
+      }
+    },
+    {
+      "job": "spatial_panel",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:58:03.606424+00:00",
+        "utc_plus_8": "2026-10-11T17:58:03.606424+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:58:04.693108+00:00",
+        "utc_plus_8": "2026-10-11T17:58:04.693108+08:00"
+      },
+      "script_sha256": "6cd0b5f480d57479f433a667e3720d6d010b006dc60cad8cca5bb2511b072bc1",
+      "script_names": [
+        "review_existing_spatial_supported_axis_panels_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_spatial_panel.execution.json",
+        "sha256": "b0e70948711ecb5f9cdbe681fff0341de58c16d7e173aa0964342f025b1ab4d2"
+      }
+    },
+    {
+      "job": "spatial_panel_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T09:58:22.266131+00:00",
+        "utc_plus_8": "2026-10-11T17:58:22.266131+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T09:58:23.595098+00:00",
+        "utc_plus_8": "2026-10-11T17:58:23.595098+08:00"
+      },
+      "script_sha256": "40f4a8a1227e57f066a109b530ed5e067431a61cce47153cdd6f825593ff17aa",
+      "script_names": [
+        "audit_existing_spatial_supported_axis_panels_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_spatial_panel_audit.execution.json",
+        "sha256": "c642594070946cac164aa3996f83af1e4fd32515d5c251b7c5cae51281d1d402"
+      }
+    },
+    {
+      "job": "feasibility",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T10:11:17.673596+00:00",
+        "utc_plus_8": "2026-10-11T18:11:17.673596+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T10:11:19.855890+00:00",
+        "utc_plus_8": "2026-10-11T18:11:19.855890+08:00"
+      },
+      "script_sha256": "f453dc3a5afddf3e274781d99b0072212fba03e3f1832ca5b738ad26c3627a93",
+      "script_names": [
+        "build_family_axis_validation_feasibility_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_feasibility.execution.json",
+        "sha256": "2f9640ecedfaca64bfd29b48a6bcc75ae20df019dc5650789c5793d9d0cbd923"
+      }
+    },
+    {
+      "job": "feasibility_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T10:11:31.484997+00:00",
+        "utc_plus_8": "2026-10-11T18:11:31.484997+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T10:11:33.483239+00:00",
+        "utc_plus_8": "2026-10-11T18:11:33.483239+08:00"
+      },
+      "script_sha256": "38735b65de71789bda479892a627ba39901e1e18ae3c1c9b90aaf6612aa2277b",
+      "script_names": [
+        "audit_family_axis_validation_feasibility_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_feasibility_audit.execution.json",
+        "sha256": "b681843896dfeb06980e267ed94a8d39d1f794c056a57e176b31d40df28b354b"
+      }
+    },
+    {
+      "job": "receiver_programme",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T10:14:04.413645+00:00",
+        "utc_plus_8": "2026-10-11T18:14:04.413645+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T10:14:08.633551+00:00",
+        "utc_plus_8": "2026-10-11T18:14:08.633551+08:00"
+      },
+      "script_sha256": "23e4bd25f1e23167f15b308ed9ce5e197ba18658673c6cc775bed34097b5ae29",
+      "script_names": [
+        "receiver_within_identity_programme_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_receiver_programme.execution.json",
+        "sha256": "e9faf13fc33092d2469f11a60a3be78037dd70779b6b8df76caad519810bdfc9"
+      }
+    },
+    {
+      "job": "receiver_programme_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "exit_code": 0,
+      "started": {
+        "utc": "2026-10-11T10:14:19.938350+00:00",
+        "utc_plus_8": "2026-10-11T18:14:19.938350+08:00"
+      },
+      "finished": {
+        "utc": "2026-10-11T10:14:23.105823+00:00",
+        "utc_plus_8": "2026-10-11T18:14:23.105823+08:00"
+      },
+      "script_sha256": "23e4bd25f1e23167f15b308ed9ce5e197ba18658673c6cc775bed34097b5ae29",
+      "script_names": [
+        "receiver_within_identity_programme_v1.py"
+      ],
+      "manifest": {
+        "logical_path": "${PREFLIGHT_RUN_ROOT}/family_LR_receiver_programme_audit.execution.json",
+        "sha256": "3eb37274afd561bf8aae6d10d89ad0a64cbee4376719fbceb2a8d7c3fbd2b41d"
+      }
+    }
+  ],
+  "audited_artifacts": [
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/family_LR_candidate_validation_v1/independent_audit.json",
+      "sha256": "47efc59d8a19795c146fee2dbc99798d24f89b7927c499fcf307bca7c23fd081",
+      "bytes": 2695,
+      "status": "PASS_ALL_PRIMARY_CANDIDATE_SVD_BLOCK_BOOTSTRAPS_LSTSQ_RESIDUAL_PERMUTATIONS_ALL_BLOCK_DELETIONS_QR_SENSITIVITIES_AND_RECEIVER_GENES",
+      "summary": {
+        "candidates": 651,
+        "bootstrap_replays": 1302000,
+        "permutation_replays": 1302000,
+        "block_deletion_replays": 15589,
+        "sensitivity_replays": 2604,
+        "receiver_gene_replays": 4690,
+        "stable_resampling_rows": 258,
+        "scientific_release": false,
+        "axis_validated": false,
+        "validation_plan_sha256": "855ad55653a0731efd2fd0adfa3d63d70e38b969d7484226483bf4ced7304867"
+      }
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/native_cell_axis_characterization_v1/independent_audit.json",
+      "sha256": "c3b11cc53d616f59de253553538886d7e28471a132705ddb0f0a5b91ff000231",
+      "bytes": 2051,
+      "status": "PASS_ALL336_FIXED_KEYS_ALL_NATIVE_ENDPOINT_NODE_AUTHOR_COUNTS_JOINT_COMPLEX_RATES_LINEAGE_DESCRIPTORS_AND_PROGRAMME_DEPTH_CONTRASTS",
+      "summary": {
+        "candidate_records": 336,
+        "scientific_release": false,
+        "formal_states": false,
+        "independent_biological_validation": false,
+        "plan_sha256": "b04a4d3b539ba29d2525c07f8bac0c018304616e9e9034a4fa162f862dfed2e0"
+      }
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/native_depth_member_sensitivity_v1/independent_audit.json",
+      "sha256": "9891dd7cc21eebea7a538a3ee28a941478cb1ca1049a678a80e87c2ca98304a3",
+      "bytes": 1667,
+      "status": "PASS_ALL336_SUPPORTED_KEYS1680_MODEL_ARMS_NATIVE_RNA_QC_EXACT_MEMBER_CONTRASTS_ORIGINAL_FRAMES_AND_QR_CLUSTER_STATISTICS",
+      "summary": {
+        "candidate_records": 336,
+        "models": 1680,
+        "scientific_release": false,
+        "formal_states": false,
+        "independent_biological_validation": false,
+        "plan_sha256": "4752ffef6fe42d266c181ee43a08d1c95479e4f657a496039c4cf6f0e0f787fa"
+      }
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/candidate_priority_v1/independent_audit.json",
+      "sha256": "4c75b3177e0d665f9635ec9be2ac82d5ec762d7fb1a2633716c7fd0ff6e19c01",
+      "bytes": 2918,
+      "status": "PASS_ALL336_FIXED_KEYS_ORIGINAL_FDR_ALL_CONDITIONAL_CLASSES_NATIVE_SUPPORT_COMPONENT_GENE_COUNTS_AND_PARENT_CONTEXT_EFFECTS",
+      "summary": {
+        "records": 336,
+        "stable_supported_records": 112,
+        "priority_class_counts": {
+          "frequent_RNA_conditional_association_retained": 0,
+          "sparse_RNA_conditional_association_retained": 28,
+          "sender_programme_conditional_model_unestimable": 5,
+          "sender_programme_conditional_association_uncertain_or_reversed": 29,
+          "member_depth_conditional_model_unestimable": 4,
+          "member_depth_conditional_association_uncertain_or_reversed": 46,
+          "resampling_not_stable": 224
+        },
+        "scientific_release": false,
+        "axis_validation_complete": false,
+        "independent_biological_validation": false,
+        "plan_sha256": "a449fbfdab266a09d015cb9680781a9c1bac2434c3ff1a24d92d0ed0a97e73bf"
+      }
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/existing_spatial_supported_axis_panel_review_v1/independent_audit.json",
+      "sha256": "d46e87e5ac21a4c23bf7290b080c6a95cd9b9324ba54dc30def59dcbcfc2b516",
+      "bytes": 1314,
+      "status": "PASS_ALL14_NATIVE_VAR_ALIASES_UNIQUE_INDICES_COORDINATE_FIELDS_AND4704_FIXED_CANDIDATE_PANEL_CHECKS",
+      "summary": {
+        "scientific_release": false,
+        "independent_biological_validation": false,
+        "plan_sha256": "ab9a488c8d889fe70a3f38bf6cc768fdb49336b7fb811f84709bda580c6e6ab2"
+      }
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/axis_validation_feasibility_v1/independent_audit.json",
+      "sha256": "310201ec18780050cec2dda2b259b9b795c201192ac5a8142dcf2fec8b23f101",
+      "bytes": 922,
+      "status": "PASS_ALL336_NATIVE_POSITIVE_CELL_BLOCK_COUNTS_UNIQUE_FAMILY_MARKER_SPATIAL_PANELS_AND_AUTOMATIC_VALIDATION_BRANCHES",
+      "summary": {
+        "records": 336,
+        "selected_records": 15,
+        "scientific_release": false,
+        "axis_validation_complete": false,
+        "plan_sha256": "2d38f508c3087102c220fd5e9f3fe499fb8ed35818779b8609800f3f3e53ad3b"
+      }
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/receiver_within_identity_programme_v1/independent_audit.json",
+      "sha256": "1ea0265c2513e8d56495eae65e729f0f0ac6ac13afcbffd24792d14106275345",
+      "bytes": 1263,
+      "status": "PASS_ALL15_NATIVE_COUNTS_QR_REPLAY_AND_BLOCK_BOOTSTRAP_SIGNFLIP",
+      "summary": {
+        "records": 15,
+        "sample_partition_models": 3710,
+        "block_tests": 136,
+        "estimated_block_tests": 80,
+        "scientific_release": false,
+        "formal_states": false,
+        "independent_biological_validation": false,
+        "plan_sha256": "3aa244de7a3a01c9a5d10a6812ee8563abd962d7e79edea6167b4f252f4a1284"
+      }
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/candidate_validation_milestone_v1/milestone_handoff.json",
+      "sha256": "26384679c56e98959c0f004ab8a619df7940b3129e6f9650f94a13291cee24f9",
+      "bytes": 27550,
+      "status": "COMPLETE_AUDITED_ALL336_NATIVE_SUPPORT_CONDITIONAL_MODELS_AND_AUTOMATIC_ALL15_WITHIN_IDENTITY_PROGRAMME_CHECKS"
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/candidate_priority_v1/figure_pixel_review_v1.json",
+      "sha256": "7f578c6bd76ee247c0f6df695e35a020293226030a2215f406fd9bb662e98ab3",
+      "bytes": 1286,
+      "status": "PASS_AGENT_PIXEL_REVIEW_ALL336_COVERAGE_COUNTS_AND_ALL4_FREQUENT_RNA_ORIGINAL_CONTEXT_FORESTS"
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/frozen172_same_name_coverage_review_v1/independent_coverage_audit.json",
+      "sha256": "eedbefa697f82485194fc88a4bef07b806a21de1e43e79b972b1300113c5ffc6",
+      "bytes": 1088,
+      "status": "PASS_ALL172_KEYS_1290_SCOPE_INTEGER_RECOUNT_ALL28_GROUPS_ALL_STRATA_AND_CM60_COUNTERFACTUAL_COUNTS"
+    },
+    {
+      "logical_path": "${PREFLIGHT_RUN_ROOT}/immune_same_name_family_source_review_v1/membership_review_v2/independent_audit.json",
+      "sha256": "9146dd7993f2a5f55258c1754401d58034bc986430b28a804358cc3231b4b84c",
+      "status": "PASS_ALL514_SOURCE_MEMBERSHIPS_ALL5160_INTEGER_DENOMINATORS_ALL_REVIEWED_CONTEXT_PAIR_GATES_AND_PAIRED_PROGRAMME_EXAMPLE"
+    }
+  ],
+  "family_count_coverage": [
+    {
+      "family": "T_cell_CCL5",
+      "original_nodes": 3,
+      "best_original_node_samples_ge20": 451,
+      "unreviewed_union_samples_ge20": 582,
+      "source_marker_supported_union_samples_ge20": 561,
+      "scope": "1290 frozen samples; count-only coverage, not communication/model eligibility"
+    },
+    {
+      "family": "T_cell_IL7R",
+      "original_nodes": 2,
+      "best_original_node_samples_ge20": 899,
+      "unreviewed_union_samples_ge20": 1008,
+      "source_marker_supported_union_samples_ge20": 995,
+      "scope": "1290 frozen samples; count-only coverage, not communication/model eligibility"
+    },
+    {
+      "family": "Myeloid_FCER1G",
+      "original_nodes": 4,
+      "best_original_node_samples_ge20": 164,
+      "unreviewed_union_samples_ge20": 375,
+      "source_marker_supported_union_samples_ge20": 356,
+      "scope": "1290 frozen samples; count-only coverage, not communication/model eligibility"
+    },
+    {
+      "family": "B_cell_MS4A1",
+      "original_nodes": 4,
+      "best_original_node_samples_ge20": 349,
+      "unreviewed_union_samples_ge20": 406,
+      "source_marker_supported_union_samples_ge20": 351,
+      "scope": "1290 frozen samples; count-only coverage, not communication/model eligibility"
+    }
+  ],
+  "automatic_next_validation_records": [
+    {
+      "model_key": "0|exhaustion_related6|T_cell_CCL5|T_cell_IL7R|HBEGF|CD44",
+      "gse_id": "GSE179994",
+      "cancerType": "Lung cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_CCL5",
+      "receiver_family": "T_cell_IL7R",
+      "program": "exhaustion_related6",
+      "ligand": "HBEGF",
+      "receptor": "CD44",
+      "stable_resampling": "True",
+      "priority_class": "sparse_RNA_conditional_association_retained",
+      "n_original_samples": "32",
+      "native_joint_positive_cells_ge20_paired_samples": "10",
+      "native_joint_positive_cells_ge20_paired_blocks": "10",
+      "receiver_positive_negative_ge20_samples": "29",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "0",
+      "existing_spatial_panel_dataset_ids": "",
+      "eligible_contact_expression_followup": "False",
+      "eligible_programme_specific_cell_followup": "True",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "5|antigen_presentation8|T_cell_IL7R|T_cell_CCL5|HLA-DRB1|CD4",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "normal_or_adjacent",
+      "sender_family": "T_cell_IL7R",
+      "receiver_family": "T_cell_CCL5",
+      "program": "antigen_presentation8",
+      "ligand": "HLA-DRB1",
+      "receptor": "CD4",
+      "stable_resampling": "True",
+      "priority_class": "sparse_RNA_conditional_association_retained",
+      "n_original_samples": "22",
+      "native_joint_positive_cells_ge20_paired_samples": "13",
+      "native_joint_positive_cells_ge20_paired_blocks": "13",
+      "receiver_positive_negative_ge20_samples": "14",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "0",
+      "existing_spatial_panel_dataset_ids": "",
+      "eligible_contact_expression_followup": "False",
+      "eligible_programme_specific_cell_followup": "True",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "6|IFN_response8|B_cell_MS4A1|T_cell_CCL5|IL16|CD4",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "B_cell_MS4A1",
+      "receiver_family": "T_cell_CCL5",
+      "program": "IFN_response8",
+      "ligand": "IL16",
+      "receptor": "CD4",
+      "stable_resampling": "True",
+      "priority_class": "sender_programme_conditional_model_unestimable",
+      "n_original_samples": "22",
+      "native_joint_positive_cells_ge20_paired_samples": "12",
+      "native_joint_positive_cells_ge20_paired_blocks": "12",
+      "receiver_positive_negative_ge20_samples": "17",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "1|IFN_response8|T_cell_IL7R|T_cell_CCL5|LGALS9|PTPRC",
+      "gse_id": "GSE179994",
+      "cancerType": "Lung cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_IL7R",
+      "receiver_family": "T_cell_CCL5",
+      "program": "IFN_response8",
+      "ligand": "LGALS9",
+      "receptor": "PTPRC",
+      "stable_resampling": "True",
+      "priority_class": "sender_programme_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "32",
+      "native_joint_positive_cells_ge20_paired_samples": "14",
+      "native_joint_positive_cells_ge20_paired_blocks": "14",
+      "receiver_positive_negative_ge20_samples": "24",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "9|antigen_presentation8|T_cell_CCL5|T_cell_IL7R|HLA-DRA|CD4",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_CCL5",
+      "receiver_family": "T_cell_IL7R",
+      "program": "antigen_presentation8",
+      "ligand": "HLA-DRA",
+      "receptor": "CD4",
+      "stable_resampling": "True",
+      "priority_class": "sender_programme_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "23",
+      "native_joint_positive_cells_ge20_paired_samples": "21",
+      "native_joint_positive_cells_ge20_paired_blocks": "21",
+      "receiver_positive_negative_ge20_samples": "23",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "4",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "11|IFN_response8|T_cell_IL7R|T_cell_CCL5|TNFSF10|TNFRSF10B",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_IL7R",
+      "receiver_family": "T_cell_CCL5",
+      "program": "IFN_response8",
+      "ligand": "TNFSF10",
+      "receptor": "TNFRSF10B",
+      "stable_resampling": "True",
+      "priority_class": "sender_programme_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "23",
+      "native_joint_positive_cells_ge20_paired_samples": "13",
+      "native_joint_positive_cells_ge20_paired_blocks": "13",
+      "receiver_positive_negative_ge20_samples": "15",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "6|IFN_response8|B_cell_MS4A1|T_cell_CCL5|IL16|CD9",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "B_cell_MS4A1",
+      "receiver_family": "T_cell_CCL5",
+      "program": "IFN_response8",
+      "ligand": "IL16",
+      "receptor": "CD9",
+      "stable_resampling": "True",
+      "priority_class": "sender_programme_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "22",
+      "native_joint_positive_cells_ge20_paired_samples": "11",
+      "native_joint_positive_cells_ge20_paired_blocks": "11",
+      "receiver_positive_negative_ge20_samples": "14",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "4|antigen_presentation8|T_cell_CCL5|T_cell_IL7R|HLA-DRA|CD4",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "normal_or_adjacent",
+      "sender_family": "T_cell_CCL5",
+      "receiver_family": "T_cell_IL7R",
+      "program": "antigen_presentation8",
+      "ligand": "HLA-DRA",
+      "receptor": "CD4",
+      "stable_resampling": "True",
+      "priority_class": "sender_programme_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "22",
+      "native_joint_positive_cells_ge20_paired_samples": "18",
+      "native_joint_positive_cells_ge20_paired_blocks": "18",
+      "receiver_positive_negative_ge20_samples": "20",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "4",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "4|cytotoxicity7|T_cell_CCL5|T_cell_IL7R|APP|NOTCH2",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "normal_or_adjacent",
+      "sender_family": "T_cell_CCL5",
+      "receiver_family": "T_cell_IL7R",
+      "program": "cytotoxicity7",
+      "ligand": "APP",
+      "receptor": "NOTCH2",
+      "stable_resampling": "True",
+      "priority_class": "sender_programme_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "22",
+      "native_joint_positive_cells_ge20_paired_samples": "11",
+      "native_joint_positive_cells_ge20_paired_blocks": "11",
+      "receiver_positive_negative_ge20_samples": "14",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "9|antigen_presentation8|T_cell_CCL5|T_cell_IL7R|SELPLG|SELL",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_CCL5",
+      "receiver_family": "T_cell_IL7R",
+      "program": "antigen_presentation8",
+      "ligand": "SELPLG",
+      "receptor": "SELL",
+      "stable_resampling": "True",
+      "priority_class": "member_depth_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "23",
+      "native_joint_positive_cells_ge20_paired_samples": "23",
+      "native_joint_positive_cells_ge20_paired_blocks": "23",
+      "receiver_positive_negative_ge20_samples": "23",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "4",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "1|naive_memory_related6|T_cell_IL7R|T_cell_CCL5|LGALS9|CD44",
+      "gse_id": "GSE179994",
+      "cancerType": "Lung cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_IL7R",
+      "receiver_family": "T_cell_CCL5",
+      "program": "naive_memory_related6",
+      "ligand": "LGALS9",
+      "receptor": "CD44",
+      "stable_resampling": "True",
+      "priority_class": "member_depth_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "32",
+      "native_joint_positive_cells_ge20_paired_samples": "13",
+      "native_joint_positive_cells_ge20_paired_blocks": "13",
+      "receiver_positive_negative_ge20_samples": "31",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "9|cytotoxicity7|T_cell_CCL5|T_cell_IL7R|SELPLG|SELL",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_CCL5",
+      "receiver_family": "T_cell_IL7R",
+      "program": "cytotoxicity7",
+      "ligand": "SELPLG",
+      "receptor": "SELL",
+      "stable_resampling": "True",
+      "priority_class": "member_depth_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "23",
+      "native_joint_positive_cells_ge20_paired_samples": "23",
+      "native_joint_positive_cells_ge20_paired_blocks": "23",
+      "receiver_positive_negative_ge20_samples": "23",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "1|cytotoxicity7|T_cell_IL7R|T_cell_CCL5|TNFSF10|TNFRSF10B",
+      "gse_id": "GSE179994",
+      "cancerType": "Lung cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_IL7R",
+      "receiver_family": "T_cell_CCL5",
+      "program": "cytotoxicity7",
+      "ligand": "TNFSF10",
+      "receptor": "TNFRSF10B",
+      "stable_resampling": "True",
+      "priority_class": "member_depth_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "32",
+      "native_joint_positive_cells_ge20_paired_samples": "17",
+      "native_joint_positive_cells_ge20_paired_blocks": "17",
+      "receiver_positive_negative_ge20_samples": "20",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "1|naive_memory_related6|T_cell_IL7R|T_cell_CCL5|LGALS9|PTPRC",
+      "gse_id": "GSE179994",
+      "cancerType": "Lung cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "T_cell_IL7R",
+      "receiver_family": "T_cell_CCL5",
+      "program": "naive_memory_related6",
+      "ligand": "LGALS9",
+      "receptor": "PTPRC",
+      "stable_resampling": "True",
+      "priority_class": "member_depth_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "32",
+      "native_joint_positive_cells_ge20_paired_samples": "14",
+      "native_joint_positive_cells_ge20_paired_blocks": "14",
+      "receiver_positive_negative_ge20_samples": "24",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    },
+    {
+      "model_key": "7|cycling8|B_cell_MS4A1|T_cell_IL7R|CD55|ADGRE5",
+      "gse_id": "GSE270680",
+      "cancerType": "Gastric cancer",
+      "sample_class": "primary_or_unspecified_tumor",
+      "sender_family": "B_cell_MS4A1",
+      "receiver_family": "T_cell_IL7R",
+      "program": "cycling8",
+      "ligand": "CD55",
+      "receptor": "ADGRE5",
+      "stable_resampling": "True",
+      "priority_class": "member_depth_conditional_association_uncertain_or_reversed",
+      "n_original_samples": "24",
+      "native_joint_positive_cells_ge20_paired_samples": "24",
+      "native_joint_positive_cells_ge20_paired_blocks": "24",
+      "receiver_positive_negative_ge20_samples": "24",
+      "existing_spatial_panel_lineage_programme_coordinates_familymarker_files": "5",
+      "existing_spatial_panel_dataset_ids": "GSE287472;GSE299786",
+      "eligible_contact_expression_followup": "True",
+      "eligible_programme_specific_cell_followup": "False",
+      "independent_biological_validation": "False"
+    }
+  ],
+  "state_conflicts": 0,
+  "active_jobs_in_registered_milestone": 0,
+  "execution_scope": "Only enumerated family jobs and latest bounded milestone; not a claim about all server/download processes",
+  "environment_observed_now": {
+    "python": "3.10.19",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.11.4"
+  },
+  "runtime_environment_limit": "Observed interpreter package versions now; historical per-job complete environment and pre-run Git commits were not all pinned",
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "formal_states": false,
+  "independent_biological_validation": false,
+  "privacy": "Aggregate records only; no patient/sample identifiers, matrices, hostnames, PIDs, raw absolute paths or credentials"
+}

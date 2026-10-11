@@ -1,0 +1,40 @@
+{
+  "schema": "family_candidate_publication_manifest_v1",
+  "transformations": [
+    "Logical paths and white-listed aggregate JSON",
+    "Candidate table excludes actual spatial file paths",
+    "TSV LF newlines; missing values rendered NA; no numeric statistics changed"
+  ],
+  "source_receiver_contrasts_sha256": "58f24eb7ac38d91228421a9d6f90c482d8c3cf35b763f15006a1c807366214d8",
+  "source_receiver_audit_sha256": "1ea0265c2513e8d56495eae65e729f0f0ac6ac13afcbffd24792d14106275345",
+  "public_files": {
+    "README.md": {
+      "bytes": 2757,
+      "sha256": "cb4a1a944918eca97b4d97f22d3ab8374bf202cba4a4b5cd74fc96ec8aeb8110"
+    },
+    "automatic_next_validation_records_public_v1.tsv": {
+      "bytes": 4589,
+      "sha256": "92bc07e72aeb86668f43bb8b5b25f7e137100dd1b50b3543612968ada45459fe"
+    },
+    "family_candidate_checkpoint_v1.json": {
+      "bytes": 40976,
+      "sha256": "e1dfe96edb3cd058900ec503ab9d290beee972d89317d38c18ff5a89f175f5ea"
+    },
+    "figures/all336_RNA_coverage_and_categories.png": {
+      "bytes": 136623,
+      "sha256": "c17208b2b090e7d4f6e84a5b88e7dd6455147c1800fc48d317423575af86b40b"
+    },
+    "figures/frequent_RNA_fixed_records_all_estimable_contexts.png": {
+      "bytes": 124885,
+      "sha256": "803d79448c1392e6bdf4315b1b832a9eac122dde07b0f61b7cee057856bd79f7"
+    },
+    "receiver_block_programme_contrasts_public_v1.tsv": {
+      "bytes": 25468,
+      "sha256": "12c994d9cb0292ec5f8975e0e47ec47026c543de28ed2b3a35c72748d61fbc4c"
+    },
+    "task_timeline_v1.tsv": {
+      "bytes": 9659,
+      "sha256": "c3a1302bd405befbb32dddf3f6e52730e19b01691752dce9aad30a4dfdc7b483"
+    }
+  }
+}
