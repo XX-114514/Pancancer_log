@@ -82,3 +82,7 @@ SELPLG–SELL：LUAD TMA1/2、MESO TMA1/2主邻近比1.035/1.117/1.922/1.102，�
 [固定9接口原始文献/结构索引](../inventories/analysis/2026-10-11/spatial_conditional_neighborhood_v1/primary_binding_sources.tsv)补录本轮及父轮已核查来源，用于限定结合/糖链/细胞方向语义，不作为本空间实验的新验证。APP–NOTCH2[原始研究](https://pubmed.ncbi.nlm.nih.gov/16118793/)的同细胞蛋白关联不能自动解释为跨细胞激活。
 
 不可测行的端点阳性、observed_pairs、p/BH均为NA；family_union/movable_cells/paired_positive_FOVs中的0是缺身份/基因时计算空掩膜的占位，不能解读为实际无该家族细胞。必须连同status读取；本轮科学图与显著性没有把这些占位当阴性。
+
+## 云端发布
+
+方案、代码、生产、验收4节点均普通push/独立核验；最终验收内容1319ad60a82a7e845e4a4fc8e28a2e98e8bc5ee6于2026-10-11T12:00:20.718564+00:00（20:00:20.718564 UTC+8）push，12:00:27.061812 HTTPS核验同SHA。[收据](../inventories/analysis/2026-10-11/spatial_conditional_acceptance_git_receipt_v1.json)。收据追加提交另核验；没有force/历史重写、患者行或矩阵上传。

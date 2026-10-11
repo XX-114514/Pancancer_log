@@ -153,3 +153,5 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 图v1措辞“B identity absent”修正为作者类别不可用；v2说明拥挤，v3拆行及暗色对比，历史全部保留。最终聚合白名单逐SHA核对、像素PASS；原矩阵/RDS/Excel/细胞FOV/置换细表未入Git。本节点代码/计划/生产都已分次普通push并核验，最终验收和发布收据随后核验。
 
 提交前验收：仓库验证0errors/1既有warning、diff检查通过，16聚合/图文件无内部路径或患者/细胞行，生产/审计SHA与预先93ec557代码严格吻合；补录9接口原文/结构索引，明确空掩膜占位0不等于实际家族不存在。本轮计划/代码/生产3个节点已普通push核验；最终验收第4节点及收据下一步记录。原无关未跟踪研究日志保留。建议commit：records: publish audited all45 conditional spatial results and timeline。
+
+12:00:20.718564 UTC /20:00:20.718564 UTC+8：最终验收内容1319ad60a82a7e845e4a4fc8e28a2e98e8bc5ee6普通push exit0；12:00:27.061812本机独立HTTPS ls-remote与fetch核对同SHA。[发布收据](../../../inventories/analysis/2026-10-11/spatial_conditional_acceptance_git_receipt_v1.json)。方案/代码/生产/验收4个关键节点均已推送并核验；本次无推送或科学作业失败，图审阅两次修订完整保留。本收据追加提交随后单独核验，不宣称goal完成；原无关未跟踪日志未暂存。
