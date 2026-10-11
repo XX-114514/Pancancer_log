@@ -1,0 +1,15 @@
+{
+  "inspected_UTC": "2026-10-11T12:33:37.008282+00:00",
+  "inspected_UTC8": "2026-10-11T20:33:37.008282+08:00",
+  "result": "PASS_VISUAL",
+  "figure_sha256": "68a97f344513ff4241a37662ae9960c58a616913af72fc17c5ddaccd2084e857",
+  "checks": [
+    "All14programmes5assays labels legible",
+    "NA is distinct from0; explicit NA-reason legend",
+    "22estimable and0nominal/0primaryBH clearly stated",
+    "Beta per unit ligand-positive sender-neighbour fraction and eligible receiver n come from audited all70 table",
+    "Colours clipped at1; actual beta labels retained, white text on dark tile",
+    "No FOV/TMA treated as independent patients, generic programme not receptor-specific target evidence"
+  ],
+  "scientific_release": false
+}

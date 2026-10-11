@@ -1,0 +1,11 @@
+{
+  "schema": "spatial_receiver_registration_receipt_v1",
+  "registered_UTC": "2026-10-11T12:29:43.368494+00:00",
+  "registered_UTC8": "2026-10-11T20:29:43.368494+08:00",
+  "register": "native_LR_program_evidence_register_v16",
+  "handoff_sha256": "27237270ac58481cb1d657e37e3b67b9f9ee550fa1996a2172810f8b61a488f8",
+  "state_conflicts": 0,
+  "active_jobs": 0,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

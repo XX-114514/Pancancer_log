@@ -1,0 +1,19 @@
+{
+  "schema": "spatial_receiver_acceptance_consistency_v1",
+  "status": "PASS_ALL70_MAPPING_DENOMINATORS_DIAGNOSTIC_STATUSES_AND_LOFO",
+  "started_UTC": "2026-10-11T12:27:44.531602+00:00",
+  "finished_UTC": "2026-10-11T12:28:42.017650+00:00",
+  "models": 70,
+  "mapped_rows": 75,
+  "contact_mapping_rows": 65,
+  "programme_only_mapping_rows": 10,
+  "radius_rows": 140,
+  "name_rows": 70,
+  "phenotype_rows": 70,
+  "native_extra_gene_rows": 35,
+  "checks": 70,
+  "method": "Separate acceptance-stage table and private-native-cache checks using previously audited independent query-ball graph/design/QR functions; not a third independent biological validation",
+  "acceptance_script_sha256": "3c03d6d5baf8521a7411ca23130ae6b5bc00692c48360f12fa168b108df2e03a",
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

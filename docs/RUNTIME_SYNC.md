@@ -57,3 +57,5 @@ git diff --check
 最新科学空间节点更新为[19:27:55预检](../runs/20261011_spatial_contact_native_preflight_v3.md)，不改变下载线取证。原生端点/正确作者映射v14已接受，空间邻近及机制仍待；v2作者方向错误已显式替代。事件与发布收据分开，关键节点的普通push仍逐次独立核对。
 
 最新科学节点[19:54条件空间验收](../runs/20261011_spatial_conditional_neighborhood_v1.md)：v15/0冲突/本阶段进程全部终止、主45BH无显著；下载线不随此刷新。关键节点普通push独立SHA逐次保存。
+
+最新科学节点[20:29接收程序验收](../runs/20261011_spatial_receiver_programme_exposure_v1.md)：v16/0冲突，70主模型/22可估计/0名义及主BH显著；生产和审计均終止。此节点不刷新下载库存，当前通用程序阴性与计算通过分开记录。

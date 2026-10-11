@@ -1,0 +1,10 @@
+{
+  "observed_UTC": "2026-10-11T12:33:37.008282+00:00",
+  "publication_timing": "Acceptance/register/render/export support code archived after actual execution; producer and independent auditor were frozen and pushed before production",
+  "scripts": {
+    "accept_spatial_receiver_programme_v1.py": "3c03d6d5baf8521a7411ca23130ae6b5bc00692c48360f12fa168b108df2e03a",
+    "register_spatial_receiver_programme_v1.py": "e748296a1b9c797c11b800b659183e95c670afcdb641017d4815bfe9b0c0079b",
+    "render_spatial_receiver_programme_v1.py": "4456638e862594144a8b809ca992e6161f344bf4741c8916daff2468ba981c2b",
+    "export_spatial_receiver_programme_v1.py": "80216e5244d6a3b4d644970c3545b4d2c4972e0ffbb5614b839abf63bbf4f209"
+  }
+}

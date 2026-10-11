@@ -1,0 +1,20 @@
+{
+  "all70_primary_programme_exposure.tsv": "c9123574df8d717cad92e0faea450c4ee314340ae8c2f30e2ea7b8415c784353",
+  "all75_record_mapping.tsv": "a6bf39170a2e800cb60a5097d3d45c5eddfeae8fef9aa4053b8174457b12e7cf",
+  "all140_radius_sensitivity.tsv": "5ff8b273ff2a97e51e40051c9d349ad900ab4210aaa35c7ae6e98f2b972e38f9",
+  "all70_programme_name_sensitivity.tsv": "0432b3f8826e5062b847f207114ba981f9687db6fca3080d2a83727c66ef06cb",
+  "all70_receptor_phenotype.tsv": "de9ea2ff6877d7416e04283e223fdbb4e0a0c923fafca9f7d85a56dc8c7ff9da",
+  "native_gene_coverage.tsv": "a010b5f3fcfd44ffc539363056a27832a412b2736e57b053b70075a14cd36ec3",
+  "independent_all70_checks.tsv": "cce141899e9f4126e2f4727c559951ee586b58ab0c4f14324c83c0e3c1afcbe2",
+  "accepted_all70_consistency_checks.tsv": "6f24612872e65eca1abf2b3e124ecb47fab785a077536ba043f3b683694ae98f",
+  "independent_audit.json": "de602adafd0abba4fdb687d8c3129b0835e7eb4c3bb7df000f03cb8090b638fb",
+  "accepted_primary_consistency_checks.json": "d620cbdf5002eaf8de9df9dbd0d74d85472d13961a07757f18abb3d677ac44c8",
+  "timeline.tsv": "34bed4200c2283647a171d37c81a23b9e3997416896a91f71d0ca3b920c6d0d0",
+  "registration_receipt.json": "5d18971407350fe75c8a3606641b790d9f1792b22ec730e00835e596d2c11e45",
+  "privacy_transforms.json": "0ae650fc2d5d6910450b2f75264c9a3ed37d7e7eabf799eb4b7f6d02f6b06ba7",
+  "checkpoint.json": "0b2c3f70b52122c8b5e6d9c1ded238924d0e95423bdf156dcb5f932e519bbaaf",
+  "figures/all70_receiver_programme_exposure.png": "68a97f344513ff4241a37662ae9960c58a616913af72fc17c5ddaccd2084e857",
+  "figures/all70_receiver_programme_exposure.pdf": "8759db77aa2ede884024fa4f748b2164285e49317e21d7e2670307db0bffdb4a",
+  "figures/figure_source.tsv": "e3ac8cd862d7814f05bbb3c9710eb284a2088e99d8c09187f5f4ba856360463e",
+  "figures/render_manifest.json": "d2b8ab6d5fd0db85fc79c0e3066803f815728967998a2730fd0a8c65acfb3da9"
+}

@@ -1,0 +1,14 @@
+{
+  "rendered_UTC": "2026-10-11T12:30:25.454381+00:00",
+  "input_sha256": "69a15f36fab9f26227ec1253cd47c5a3e31a32111d97948df85dfe334079704c",
+  "renderer_sha256": "4456638e862594144a8b809ca992e6161f344bf4741c8916daff2468ba981c2b",
+  "source_rows": 70,
+  "covariate_level_names_omitted": true,
+  "outputs": {
+    "all70_receiver_programme_exposure.png": "68a97f344513ff4241a37662ae9960c58a616913af72fc17c5ddaccd2084e857",
+    "all70_receiver_programme_exposure.pdf": "8759db77aa2ede884024fa4f748b2164285e49317e21d7e2670307db0bffdb4a",
+    "figure_source.tsv": "e3ac8cd862d7814f05bbb3c9710eb284a2088e99d8c09187f5f4ba856360463e"
+  },
+  "visual_inspection": "PENDING",
+  "scientific_release": false
+}

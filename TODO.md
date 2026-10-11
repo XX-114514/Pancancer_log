@@ -1,5 +1,9 @@
 # 可执行任务
 
+## 2026-10-11T20:29:43.368494+08:00 接收程序验收
+
+70模型：done_conditional_computation_not_axis_validation；全基因/患者/免疫治疗输入和受体靶/TF先验审查：next_bounded_task，尚未运行新模型。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。
+
 ## 2026-10-11T20:26:04.291574+08:00 接收程序终态检查
 
 计算和独立复算完成；待附加留一FOV/映射验收、里程碑登记、聚合图及普通push。 [run](runs/20261011_spatial_receiver_programme_exposure_v1.md)。

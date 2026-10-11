@@ -1,0 +1,9 @@
+event_UTC	event_UTC8	stage	event	status	evidence
+2026-10-11T12:07:13.114311+00:00	2026-10-11T20:07:13.114311+08:00	plan	predeclared	PREDECLARED	../spatial_receiver_programme_plan_v1.json
+2026-10-11T12:17:57.938231+00:00	2026-10-11T20:17:57.938231+08:00	production	started	TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW	checkpoint.json#execution.production
+2026-10-11T12:18:56.150535+00:00	2026-10-11T20:18:56.150535+08:00	production	finished	TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW	checkpoint.json#execution.production
+2026-10-11T12:22:09.052317+00:00	2026-10-11T20:22:09.052317+08:00	audit	started	TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW	checkpoint.json#execution.audit
+2026-10-11T12:23:13.049368+00:00	2026-10-11T20:23:13.049368+08:00	audit	finished	TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW	checkpoint.json#execution.audit
+2026-10-11T12:27:44.531602+00:00	2026-10-11T20:27:44.531602+08:00	acceptance_checks	started	COMPLETE	accepted_primary_consistency_checks.json
+2026-10-11T12:28:42.017650+00:00	2026-10-11T20:28:42.017650+08:00	acceptance_checks	finished	COMPLETE	accepted_primary_consistency_checks.json
+2026-10-11T12:29:43.368494+00:00	2026-10-11T20:29:43.368494+08:00	register_v16	accepted_conditional_receiver_results	COMPLETE	registration_receipt.json

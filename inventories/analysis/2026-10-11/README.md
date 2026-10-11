@@ -45,3 +45,7 @@ SELL阳性细胞在胃癌T_cell_IL7R_36内细胞毒程序较低，23样本单位
 ## 接收程序—邻居暴露阶段
 
 [70模型预声明](spatial_receiver_programme_plan_v1.json)、[run](../../../runs/20261011_spatial_receiver_programme_exposure_v1.md)：75原记录映射保留，尚未运行/验证。
+
+## 20:29 接收程序验收
+
+[70主模型](spatial_receiver_programme_exposure_v1/all70_primary_programme_exposure.tsv)、[终态](spatial_receiver_programme_exposure_v1/checkpoint.json)、[时间线](spatial_receiver_programme_exposure_v1/timeline.tsv)、[正式run](../../../runs/20261011_spatial_receiver_programme_exposure_v1.md)。22可估计/48不可估计、0名义p05/0主BH，v16/0冲突；所有范围保留，未证明轴机制。

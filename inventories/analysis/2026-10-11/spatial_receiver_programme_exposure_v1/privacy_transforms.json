@@ -1,0 +1,62 @@
+{
+  "all70_primary_programme_exposure.tsv": {
+    "private_source_sha256": "69a15f36fab9f26227ec1253cd47c5a3e31a32111d97948df85dfe334079704c",
+    "public_sha256": "c9123574df8d717cad92e0faea450c4ee314340ae8c2f30e2ea7b8415c784353",
+    "rows": 70,
+    "omitted_columns": [
+      "covariate_names"
+    ],
+    "reason": "Omit exact FOV/author category levels; preserve nuisance column count and fixed schema in checkpoint"
+  },
+  "all75_record_mapping.tsv": {
+    "private_source_sha256": "a6bf39170a2e800cb60a5097d3d45c5eddfeae8fef9aa4053b8174457b12e7cf",
+    "public_sha256": "a6bf39170a2e800cb60a5097d3d45c5eddfeae8fef9aa4053b8174457b12e7cf",
+    "rows": 75,
+    "omitted_columns": [],
+    "reason": "Aggregate rows only; no cell/FOV/clinical rows"
+  },
+  "all140_radius_sensitivity.tsv": {
+    "private_source_sha256": "0b881fd506504583b9bcb8473f0a3389051ce14fd5f67d0c0f8d8c10f65a7a9c",
+    "public_sha256": "5ff8b273ff2a97e51e40051c9d349ad900ab4210aaa35c7ae6e98f2b972e38f9",
+    "rows": 140,
+    "omitted_columns": [
+      "covariate_names"
+    ],
+    "reason": "Omit exact FOV/author category levels; preserve nuisance column count and fixed schema in checkpoint"
+  },
+  "all70_programme_name_sensitivity.tsv": {
+    "private_source_sha256": "0432b3f8826e5062b847f207114ba981f9687db6fca3080d2a83727c66ef06cb",
+    "public_sha256": "0432b3f8826e5062b847f207114ba981f9687db6fca3080d2a83727c66ef06cb",
+    "rows": 70,
+    "omitted_columns": [],
+    "reason": "Aggregate rows only; no cell/FOV/clinical rows"
+  },
+  "all70_receptor_phenotype.tsv": {
+    "private_source_sha256": "de9ea2ff6877d7416e04283e223fdbb4e0a0c923fafca9f7d85a56dc8c7ff9da",
+    "public_sha256": "de9ea2ff6877d7416e04283e223fdbb4e0a0c923fafca9f7d85a56dc8c7ff9da",
+    "rows": 70,
+    "omitted_columns": [],
+    "reason": "Aggregate rows only; no cell/FOV/clinical rows"
+  },
+  "native_gene_coverage.tsv": {
+    "private_source_sha256": "a010b5f3fcfd44ffc539363056a27832a412b2736e57b053b70075a14cd36ec3",
+    "public_sha256": "a010b5f3fcfd44ffc539363056a27832a412b2736e57b053b70075a14cd36ec3",
+    "rows": 35,
+    "omitted_columns": [],
+    "reason": "Aggregate rows only; no cell/FOV/clinical rows"
+  },
+  "independent_all70_checks.tsv": {
+    "private_source_sha256": "cce141899e9f4126e2f4727c559951ee586b58ab0c4f14324c83c0e3c1afcbe2",
+    "public_sha256": "cce141899e9f4126e2f4727c559951ee586b58ab0c4f14324c83c0e3c1afcbe2",
+    "rows": 70,
+    "omitted_columns": [],
+    "reason": "Aggregate rows only; no cell/FOV/clinical rows"
+  },
+  "accepted_all70_consistency_checks.tsv": {
+    "private_source_sha256": "6f24612872e65eca1abf2b3e124ecb47fab785a077536ba043f3b683694ae98f",
+    "public_sha256": "6f24612872e65eca1abf2b3e124ecb47fab785a077536ba043f3b683694ae98f",
+    "rows": 70,
+    "omitted_columns": [],
+    "reason": "Aggregate rows only; no cell/FOV/clinical rows"
+  }
+}

@@ -179,3 +179,19 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 服务器独立审计实际12:22:09.052317—12:23:13.049368 UTC /20:22:09.052317—20:23:13.049368 UTC+8，exit0；worker/child均不存在。70主模型、75映射、140半径诊断、70命名marker诊断和70受体表型诊断复算通过；原生额外基因1,272,290值、150,000次唯一配体标签draw重放一致。状态0冲突、active_jobs为空。计算审计通过不是独立生物验证；22可估计、0名义p05/0主BH显著，仍未证明任何通讯轴或CMdriver。
 
 检查命令结构：SSH执行既有observe.py；本机git status/diff/diff --check；repository validator结果0errors/1既有warning。接下来补充留一FOV及缺失/映射一致性验收、注册新里程碑，再发布聚合结果和图。所有细胞/FOV及原矩阵留服务器。建议commit：records: sync receiver production and audit terminal checkpoint。
+
+## 2026-10-11T20:33:37.008282+08:00 接收程序全量验收与交接
+
+取证UTC 2026-10-11T12:33:37.008282+00:00 /UTC+8 2026-10-11T20:33:37.008282+08:00。补充验收12:27:44.531602—12:28:42.017650 UTC PASS70，登记12:29:43.368494 UTC v16/0冲突；生产和审计四PID已确认终止。全70主模型/75映射/140半径/70marker/70表型保留。22可估计，0名义p05/0主BH显著；不把计算PASS当轴验证，不缩小成功目标。
+
+[正式run](../../../runs/20261011_spatial_receiver_programme_exposure_v1.md)、[完整时间线](../../../inventories/analysis/2026-10-11/spatial_receiver_programme_exposure_v1/timeline.tsv)、[终态](../../../inventories/analysis/2026-10-11/spatial_receiver_programme_exposure_v1/checkpoint.json)。独立复算原生额外1,272,290值及150,000唯一配体draw；补充验收复用已审计独立函数，明确不是第三次生物复现。实际图像审阅PASS；公共输出18白名单逐SHA核对，精确FOV类别名删除且源SHA保留，未上传矩阵/细胞/患者/FOV行。
+
+关键节点8813399347663ce26b016d09de579c1d7183ee6f于12:26:15.746621 UTC普通push，12:26:22.203041独立HTTPS核验同SHA，[收据](../../../inventories/analysis/2026-10-11/spatial_receiver_terminal_git_receipt_v1.json)。此时v16最终登记尚未执行，未倒填早期云端完成时间。完整结果/支撑代码本次归档，producer/auditor是预先冻结，验收/登记/导出/图是执行后归档。
+
+检查命令结构：SSH SciPy环境执行accept/register/render/export；state refresh0conflicts；scp公共白名单；本机SHA/diff/validator与像素审阅。创建器stdout错标及工具展示截断已解释，科学生产没有重启。本机首次publication脚本在任何写入前失败：不需要的pandas import触发当前目录inspect.py遮蔽标准库inspect，继而缺h5py；删除本脚本未使用的import后再执行，原inspect.py及所有科学结果保留。本次read-only历史机制检查：四LUSC记录中TIGIT/NECTIN2互反不是独立机制，MIF–TNFRSF14结合未解；后续不能复用这些当已验证线索。
+
+解释：固定通用程序未支持配体邻居效应，不抹除癌种/来源限定生态。下一步先真实全基因、身份/患者/来源审查及受体适当靶/TF先验，未运行新的机制模型或改变正式状态。目标仍active。建议commit：records: publish audited all70 receiver results and timeline。
+
+提交前检查：公共SHA清单21项和代码语法/路径检查通过。第一版隐私检查误把privacy_transforms.json记录的已删除列名covariate_names当泄露，改为核对TSV实际表头和真实FOV=类别后通过，未改结果。git diff末尾空行已修正。未暂存无关研究日志；所有生产负结果及未验证项保留。
+
+最终仓库验证0errors/1既有warning，diff检查通过；科学图/源SHA/缺失与时间线已核对。关键节点内容将普通push并独立核验，随后另存真实发布时间收据。

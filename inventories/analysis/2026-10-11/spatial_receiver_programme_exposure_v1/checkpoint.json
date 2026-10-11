@@ -1,0 +1,119 @@
+{
+  "schema": "spatial_receiver_programme_public_checkpoint_v1",
+  "observed_UTC": "2026-10-11T12:30:49.165698+00:00",
+  "execution_status": "COMPLETE_SPATIAL_RECEIVER_PROGRAMME_AUDITED_NO_NOMINAL_OR_PRIMARY_BH_SIGNIFICANT_AXES",
+  "summary": {
+    "tests": 70,
+    "mapped_rows": 75,
+    "programme_interfaces": 14,
+    "files": 5,
+    "estimable": 22,
+    "status_counts": {
+      "ESTIMABLE_CONDITIONAL": 22,
+      "INSUFFICIENT_ELIGIBLE_RECEIVERS": 17,
+      "AUTHOR_NOT_RETRIEVED": 14,
+      "AUTHOR_B_CATEGORY_UNAVAILABLE": 6,
+      "MISSING_LIGAND:HBEGF": 4,
+      "MISSING_LIGAND:HLA-DRB1": 4,
+      "MISSING_LIGAND:HLA-DRA": 1,
+      "INSUFFICIENT_PROGRAMME_PANEL": 1,
+      "INSUFFICIENT_RESIDUAL_DF": 1
+    },
+    "nominal_p05": 0,
+    "primary_BH_q05": 0,
+    "minimal_nominal_p": 0.21157884211578842,
+    "minimal_primary_BH": 1.0,
+    "all_scope_retained": true
+  },
+  "scope": {
+    "cells": 254458,
+    "files": 5,
+    "original_records": 15,
+    "programme_interfaces": 14,
+    "models": 70,
+    "mapped_rows": 75,
+    "contact_mapping_rows": 65,
+    "programme_only_mapping_rows": 10,
+    "permutations": 10000
+  },
+  "execution": {
+    "production": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T12:17:57.938231+00:00",
+      "finished_UTC": "2026-10-11T12:18:56.150535+00:00",
+      "exit_code": 0,
+      "script_sha256": "ac16c3c794224df31d45cb70b42a85aa8ef6204e7eef1d19f96750e31599713a"
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T12:22:09.052317+00:00",
+      "finished_UTC": "2026-10-11T12:23:13.049368+00:00",
+      "exit_code": 0,
+      "script_sha256": "adbe826365dae815eb9f0afd1eb01d5fe86e563a98ce5bee4aec0de77798c61b"
+    }
+  },
+  "plan_sha256": "4051c8dbd087e2cd72e9d0b9c03cc75b18bbea1728aeeca9c33e3ee03970bbd0",
+  "producer_inventory_sha256": "671d4cbdcbf10fe4f04de525e0d0eea38c9239601b42a8573780f326c148ddb0",
+  "audit_sha256": "de602adafd0abba4fdb687d8c3129b0835e7eb4c3bb7df000f03cb8090b638fb",
+  "handoff_sha256": "27237270ac58481cb1d657e37e3b67b9f9ee550fa1996a2172810f8b61a488f8",
+  "producer_sha256": "ac16c3c794224df31d45cb70b42a85aa8ef6204e7eef1d19f96750e31599713a",
+  "auditor_sha256": "adbe826365dae815eb9f0afd1eb01d5fe86e563a98ce5bee4aec0de77798c61b",
+  "code_commit": "a7d065e97258222ff8255d4dcc00559a0fced613",
+  "private_native_input_sha256": {
+    "GSM8746298_YKKY0189_20240312_10": {
+      "native_cache_sha256": "0c270cc52ab03e1f8b12c22c6e2911bb75370ff124d1dbad3bc86c02b056f128",
+      "native_source_sha256": "cb241d0a18225bfe058ac393fe8486463daff8b27ed988cdfa8cc0f67cd90e4a"
+    },
+    "GSM9046088_Lung_Adenocarcinoma_TMA1_CosMx": {
+      "native_cache_sha256": "8ea97e9c893f0b82e2a22279e7594f9cde36b5c522141fffd1aacd0fe3c69aa8",
+      "native_source_sha256": "566a8594d512131f4b27740f4bd3b35d7c0a20159de6896ca4c2c1bc597e002e"
+    },
+    "GSM9046089_Lung_Adenocarcinoma_TMA2_CosMx": {
+      "native_cache_sha256": "fd0d91dd9d547c2ca040dec7c93ef7f2a6e76c0e90a2e9796994d21ce03a04a6",
+      "native_source_sha256": "9f38cafde846139cbb3c8d3df8f2237f31a35afb6bef46f6f7026b65da096754"
+    },
+    "GSM9046090_Mesothelioma_TMA1_CosMx": {
+      "native_cache_sha256": "ededc7bd799b7fdcfdfb90f558673287d052403e3ea0240c7f32dcb4806795d8",
+      "native_source_sha256": "4bc9f467d952a02e84d42b6e10c76a4516a21e571d9f0773e32d0fc186c4140f"
+    },
+    "GSM9046091_Mesothelioma_TMA2_CosMx": {
+      "native_cache_sha256": "f54ce63e6524629a0ecfed53339ff110a521f33eb06074867684daf9c36803dd",
+      "native_source_sha256": "cf43bf5030e6e15179125e4896be0d53d1255cd2e2448b942ec9430b54a1de22"
+    }
+  },
+  "nuisance_schema": [
+    "intercept",
+    "standardized log1p native RNA",
+    "standardized log1p native nGenes",
+    "standardized logArea",
+    "standardized log1p allQC neighbour degree",
+    "standardized log1p sender-family degree",
+    "FOV dummy categories",
+    "original-author-label dummy categories",
+    "receiver sender-family-membership dummy category"
+  ],
+  "scientific_limits": [
+    "No nominal or BH-significant current fixed programme-exposure association; this is not proof of absent biological communication",
+    "Reused original discovery programme context is not ligand-specific target evidence or independent validation",
+    "Missing panel genes, author categories and eligible receiver coverage remain missing, not negative",
+    "One public author-mappable spatial source and unreviewed patient/core bridge; FOV/TMA/platform are not independent patients",
+    "Area-derived centroid neighbourhood is not membrane contact or absolute calibrated microns",
+    "Original subtype/name-marker identities remain distinct from formal states; broad author labels and background diagnostics have limits",
+    "Current family LR extension has0direct original9CMedge matches; noCMdriver demonstrated"
+  ],
+  "next_bounded_task": {
+    "question": "Which existing cell-pair hypotheses can be tested through receptor-appropriate target/TF responses and independent full-gene sources without reselecting current generic programmes to significance?",
+    "scope": "Start with all15 frozen records and existing originalCM/cellpair evidence; audit prior mechanism and immune-treatment cohort work before choosing a new prespecified validation scope",
+    "steps": [
+      "Review existing negative mechanism, cell-identity and source-specific branches so failed analyses are not silently repeated",
+      "Inventory full-gene native and immune-treatment cohorts, true clinical/patient blocks, baseline overlap and endpoint identity; subset matrices are not full-gene response evidence",
+      "Retrieve primary ligand-receptor-target/signalling/TF priors and record exact prior version, orientation, complexes and coverage; generic programme association is not receptor-specific downstream response",
+      "Before new testing freeze all eligible targets/TFs, exclusions, within-identity and source/cancer estimands, complete multiple-testing family and independent validation units",
+      "Retain cancer/source-limited cell-pair ecology and original9CM membership; current familyextension has0direct originalCMedges and is not aCMdriver",
+      "Do not change current radius/programme/endpoints after negative results; report all missing and negative evidence"
+    ],
+    "acceptance": "Independent full-gene/identity/block/prior coverage checks and actual validation results; programme, binding, ecological association and clinical effects distinguished"
+  },
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

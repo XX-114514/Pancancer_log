@@ -1,0 +1,23 @@
+{
+  "schema": "spatial_receiver_programme_audit_v1",
+  "status": "PASS_ALL70_NATIVE_PROGRAMME_GEOMETRY_EXPOSURE_QR_AND_FULL10000_CONDITIONAL_NULL",
+  "started_UTC": "2026-10-11T12:22:09.518562+00:00",
+  "finished_UTC": "2026-10-11T12:23:12.974797+00:00",
+  "cells": 254458,
+  "models": 70,
+  "mapped_rows": 75,
+  "radius_checks": 140,
+  "name_sensitivity_checks": 70,
+  "receptor_phenotype_checks": 70,
+  "native_extra_values_checked": 1272290,
+  "estimable_null_models": 22,
+  "unique_ligand_draws_replayed": 150000,
+  "joint_counts_preserved": true,
+  "self_or_cross_FOV_edges": 0,
+  "producer_inventory_sha256": "671d4cbdcbf10fe4f04de525e0d0eea38c9239601b42a8573780f326c148ddb0",
+  "auditor_sha256": "adbe826365dae815eb9f0afd1eb01d5fe86e563a98ce5bee4aec0de77798c61b",
+  "patient_level_inference": false,
+  "independence": "No producer import; native HDF5 CSR extra values and accepted parent cache, query-ball graphs, independently encoded covariates and QR coefficients. Shared frozen null specification and random-key seed replayed; numerical ties checked against saved full draws. Not independent biological replication.",
+  "scientific_release": false,
+  "axis_validation_complete": false
+}
