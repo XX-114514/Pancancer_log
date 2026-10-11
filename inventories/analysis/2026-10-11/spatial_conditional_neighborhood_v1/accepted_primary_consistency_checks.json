@@ -1,0 +1,7 @@
+{
+  "verified_UTC": "2026-10-11T11:54:05.524551+00:00",
+  "main_table_vs_radius2_all_statistics": "PASS_ALL45",
+  "leave_one_FOV_range_and_concentration": "PASS_ALL_ESTIMABLE",
+  "method": "Separate acceptance-stage primary/radius join and saved private full-FOV null recomputation, not independent patient validation",
+  "private_tables_published": false
+}

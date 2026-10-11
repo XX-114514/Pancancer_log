@@ -1,0 +1,81 @@
+{
+  "schema": "conditional_spatial_public_checkpoint_v1",
+  "observed_UTC": "2026-10-11T11:58:08.699340+00:00",
+  "execution_status": "COMPLETE_CONDITIONAL_SPATIAL_NEIGHBORHOOD_AUDITED_NO_PRIMARY_BH_SIGNIFICANT_AXES",
+  "summary": {
+    "tests": 45,
+    "estimable": 29,
+    "status_counts": {
+      "ESTIMABLE_CONDITIONAL": 29,
+      "AUTHOR_NOT_RETRIEVED": 9,
+      "AUTHOR_B_CATEGORY_UNAVAILABLE": 6,
+      "MISSING_REQUIRED_GENE:HLA-DRA": 1
+    },
+    "primary_BH_q05": 0,
+    "nominal_p05": 3,
+    "minimal_primary_BH": 0.224887556221889,
+    "all_scope_retained": true
+  },
+  "scope": {
+    "cells": 254458,
+    "files": 5,
+    "interfaces": 9,
+    "tests": 45,
+    "mapped_records": 65,
+    "permutations": 2000
+  },
+  "execution": {
+    "production": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T11:49:22.700694+00:00",
+      "finished_UTC": "2026-10-11T11:50:17.798455+00:00",
+      "exit_code": 0,
+      "script_sha256": "54c737626eb4012d95a4d235a690f2950d6425555f2cb6e1cfe89f0ed08f9e59"
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T11:51:08.444307+00:00",
+      "finished_UTC": "2026-10-11T11:52:24.836873+00:00",
+      "exit_code": 0,
+      "script_sha256": "a9349707aafc72b165d70e842351fc1efbcfb1abe8cb574c4c65a96dbe296fc7"
+    }
+  },
+  "plan_sha256": "ee35882a5c63c3f89205a4c0cad5947b0ea6b3be09ff9d00bef065bd1d82a996",
+  "inventory_sha256": "3faa3c3888782d22f25f83ebd66afb44dbf691b3c60405d5c493aa42468353fb",
+  "audit_sha256": "3dd0eb43f00781cdf0d95adec3c38916178f2249dc38ddb26e8cfda9b69ce24e",
+  "handoff_sha256": "fe3f9c08abb6985e7bc40829d3245d4cbcb1d99e1f678549417de5dfa39e4ae9",
+  "producer_sha256": "54c737626eb4012d95a4d235a690f2950d6425555f2cb6e1cfe89f0ed08f9e59",
+  "auditor_sha256": "a9349707aafc72b165d70e842351fc1efbcfb1abe8cb574c4c65a96dbe296fc7",
+  "code_commit": "93ec55711f6accc113660bdeb8d126a99f540405",
+  "private_native_cache_sha256": {
+    "GSM8746298_YKKY0189_20240312_10": "0c270cc52ab03e1f8b12c22c6e2911bb75370ff124d1dbad3bc86c02b056f128",
+    "GSM9046088_Lung_Adenocarcinoma_TMA1_CosMx": "8ea97e9c893f0b82e2a22279e7594f9cde36b5c522141fffd1aacd0fe3c69aa8",
+    "GSM9046089_Lung_Adenocarcinoma_TMA2_CosMx": "fd0d91dd9d547c2ca040dec7c93ef7f2a6e76c0e90a2e9796994d21ce03a04a6",
+    "GSM9046090_Mesothelioma_TMA1_CosMx": "ededc7bd799b7fdcfdfb90f558673287d052403e3ea0240c7f32dcb4806795d8",
+    "GSM9046091_Mesothelioma_TMA2_CosMx": "f54ce63e6524629a0ecfed53339ff110a521f33eb06074867684daf9c36803dd"
+  },
+  "native_parent": "v3_audited_254458_cells",
+  "scientific_limits": [
+    "No primary BH-significant fixed interface; nominal trends not validated axes",
+    "One public spatial source spans LUAD and mesothelioma; patient/core bridge unreviewed, no population-level independent-patient inference",
+    "Native area-normalized centroid neighborhood is not membrane contact or independently calibrated absolute microns",
+    "FOV pooled negative-control threshold is a background diagnostic, RNA sensitivity differs from original author labels",
+    "Protein complexes, glycans and cis/trans distinctions not validated by transcript localization",
+    "Current family LR extension matches0direct original9CM edges; cannot declare aCMdriver"
+  ],
+  "next_bounded_task": {
+    "question": "Do receptor-positive subpopulations and sender-neighbour exposure associate with receiver programmes within reviewed identities, and which source-specific cell-pair hypothesis can be independently tested?",
+    "scope": "Keep all frozen15 records (13contact/2programme) and9 unique contact interfaces; continue from native/space findings, no nominal spatial trend promoted as validated",
+    "steps": [
+      "Compare prespecified radius and identity sensitivities and spatial endpoint density to distinguish panel dropout, cell-family abundance and protein-mechanism uncertainty",
+      "Keep SELL+ IL7R programme difference as within-identity expression observation; explicitly model identity/programme axes separately rather than call immune inhibition",
+      "Predeclare receptor-positive receiver programme versus nearby L-positive sender exposure with family/depth/density and fixed programme genes, all missing/testability retained",
+      "Seek reviewed patient/core bridge and independent relevant native or immunotherapy cohorts for source/cancer-specific cell pairs; TMA/FOV/platform not independent patients",
+      "Do not require every cancer be independent of composition, but report which cancers retain comparable cell pairs and signs",
+      "Original9CM driver needs separate edge/module activity design; current familyextension has0direct originalCMedge matches"
+    ],
+    "acceptance": "Independent endpoint/normalization/programme and sample/block checks; no abundance-only or identity-state mixture declared causal signalling"
+  },
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

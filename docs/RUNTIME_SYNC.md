@@ -55,3 +55,5 @@ git diff --check
 用户重申每一次任务都需及时普通push；以§关键和探索节点流程执行，不只完成全部项目时同步。最新下载证据为[18:56—19:02报告](../inventories/runtime/2026-10-11/DOWNLOAD_READINESS.md)；此下载报告优先于旧REPORT中的下载线，科学家族/空间线仍以其专属较晚登记为准。v6监控刷新不能证明下载运行，queue_terminal不能证明全部成功。
 
 最新科学空间节点更新为[19:27:55预检](../runs/20261011_spatial_contact_native_preflight_v3.md)，不改变下载线取证。原生端点/正确作者映射v14已接受，空间邻近及机制仍待；v2作者方向错误已显式替代。事件与发布收据分开，关键节点的普通push仍逐次独立核对。
+
+最新科学节点[19:54条件空间验收](../runs/20261011_spatial_conditional_neighborhood_v1.md)：v15/0冲突/本阶段进程全部终止、主45BH无显著；下载线不随此刷新。关键节点普通push独立SHA逐次保存。

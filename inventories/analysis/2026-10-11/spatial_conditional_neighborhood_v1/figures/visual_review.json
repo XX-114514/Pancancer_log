@@ -1,0 +1,15 @@
+{
+  "inspected_UTC": "2026-10-11T11:58:35.407068+00:00",
+  "result": "PASS_VISUAL",
+  "figure_sha256": "448f37f13fa5ca43e1b0a568a655d5dd232f3803b87fb3d4a6e3134cc7c01407",
+  "checks": [
+    "All9interfaces5assays labels legible",
+    "Correct author B CATEGORY unavailable, not B-cell absence",
+    "Zero/NA distinguishable; dark tiles white text",
+    "All45 shared test family and29 estimable/0q05 printed",
+    "Common log2 ratio colour; observed/null and BH values from audited table",
+    "FOV/TMA not independent patient and proximity not binding"
+  ],
+  "previous_figures": "v1 label wording corrected; v2 missing-category text overlap; server histories retained; v3 split-line final",
+  "scientific_inference": false
+}

@@ -1,0 +1,13 @@
+{
+  "rendered_UTC": "2026-10-11T11:57:42.826537+00:00",
+  "input_sha256": "cafeaa9f0a575ea67d5ca18cc615b660b4ebb007d2593dcd68082b8a2a364661",
+  "renderer_sha256": "caeaaf59e1ea32e360b7078a1bb4f6b740ef062c8d6747e1e19321cf6b47f046",
+  "source_rows": 45,
+  "outputs": {
+    "all45_conditional_neighborhood.png": "448f37f13fa5ca43e1b0a568a655d5dd232f3803b87fb3d4a6e3134cc7c01407",
+    "all45_conditional_neighborhood.pdf": "edaa6e833a5ca3aaf9fcd63d84353486ce8d9db74e474c2c4d3b7ca3f734b248",
+    "figure_source.tsv": "7e97842ff5595039eac17bc0a8f7c23c4fa1daf43a4af22e0098e5e169f61875"
+  },
+  "visual_inspection": "PENDING",
+  "scientific_release": false
+}

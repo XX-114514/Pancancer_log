@@ -1,0 +1,11 @@
+{
+  "schema": "conditional_spatial_registration_receipt_v1",
+  "registered_UTC": "2026-10-11T11:54:05.524551+00:00",
+  "registered_UTC8": "2026-10-11T19:54:05.524551+08:00",
+  "register": "native_LR_program_evidence_register_v15",
+  "handoff_sha256": "fe3f9c08abb6985e7bc40829d3245d4cbcb1d99e1f678549417de5dfa39e4ae9",
+  "state_conflicts": 0,
+  "active_jobs": 0,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

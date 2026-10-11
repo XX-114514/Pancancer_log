@@ -1,0 +1,10 @@
+ligand	receptor	primary_source_url	interpretation_limit
+IL16	CD4	https://pubmed.ncbi.nlm.nih.gov/10438516/	CD4 domain binding/function original evidence; not proof of current cell direction
+IL16	CD9	https://pmc.ncbi.nlm.nih.gov/articles/PMC1895361/	Alternate receptor binding/function evidence mainly mast-cell context
+CD55	ADGRE5	https://pubmed.ncbi.nlm.nih.gov/9064337/	CD97/CD55 extracellular interaction; current B-to-T function untested
+APP	NOTCH2	https://pubmed.ncbi.nlm.nih.gov/16118793/	Same-cell protein association; trans-cell activating ligand unestablished here
+HLA-DRA	CD4	https://www.rcsb.org/structure/3S5L	Full MHC-II/CD4 structural context; DRA RNA alone is incomplete proxy
+SELPLG	SELL	https://pubmed.ncbi.nlm.nih.gov/8892633/	Adhesion binding context; glycosylation/sulfation not measured in RNA
+LGALS9	CD44	https://pmc.ncbi.nlm.nih.gov/articles/PMC4219323/	Binding/function in adaptive regulatory-T-cell context; current endpoint not assumed Treg
+LGALS9	PTPRC	https://pmc.ncbi.nlm.nih.gov/articles/PMC4214929/	CD45 protein association in glycan/receptor complexes; not exclusive canonical signal
+TNFSF10	TNFRSF10B	https://pubmed.ncbi.nlm.nih.gov/9311998/	TRAIL/DR5 direct receptor evidence; cellular death response not tested
