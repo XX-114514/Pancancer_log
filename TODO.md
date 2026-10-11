@@ -1,5 +1,21 @@
 # 可执行任务
 
+## 2026-10-11T23:50:48.128458+08:00 当前任务：规划已形成，后续执行暂停
+
+当前限制：暂不下载/传输科学输入，不恢复失败资源或启动分析；下方早期“恢复/继续下载”不作现在的执行指令。以[ROADMAP主线与支线](ROADMAP.md)任务顺序为准。
+
+| ID | 优先级 | 当前状态 | 下一交付 |
+|---|---|---|---|
+| PLAN-01 | P0 | done_planning_sync_pending | 主线、支线、依赖、停止条件及只读删除影响证据；普通push后独立核SHA |
+| READY-01/02 | P0 | waiting_user_resume_and_quota | 实际组quota、输入路径与完整先验验收；不自动使用旧失败v3 |
+| B1-01/02 | P1 | planned_not_started | 3源336/15/1008全基因聚合审计 + 45源可比范围 |
+| A1-01 | P1 | planned_existing_evidence_reuse | 原9CM生态证据地图及原节点/家族对照 |
+| B2-01/B3-01 | P1 | planned_depends_on_input_acceptance | 响应合同/独立来源冻结 → 细胞身份内部响应及多癌种效应 |
+| C1-01 | P1 | planned_existing_metadata | 已到库免疫治疗患者/时点/结局/基线排重验证清单 |
+| A3-01 | P2 | planned_separate_contract | 原CM全量自动LR与去端点模块解释贡献；家族分支不自动归为CM |
+| V1/C2 | P2 | planned_depends_on_candidate_and_cohort | 空间/临床独立验证；阴性和不可测保留 |
+| DATA-NEW | deferred | paused_by_user | 新公共下载和全局重新整合另议 |
+
 ## 2026-10-11T21:39:13.099905+08:00 恢复资源后推进45来源细胞对
 
 先以冻结aria2 v3恢复完整target并官方校验，再用执行worker v2做当前3来源全部336/15/1008基因准备/独立审计。已审45来源均有原生文件，当前完成后另冻全45来源目标响应范围与真正独立来源验证。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。

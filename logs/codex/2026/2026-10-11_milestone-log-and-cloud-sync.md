@@ -281,3 +281,19 @@ Git原仓库fetch因quota失败，本机HTTPS push缺凭据失败；新/tmp无ha
 实际完成du定位、602包归档/158Range.bin/1失败TF和21完整SHA相同GPU副本审核，预计4.961GiB；大历史版本仅定位、不判冗余。代码默认preview，用户cache/dedup分别交互确认；GPU模式保留Project_v5副本和旧路径链接，避免旧引用失效，但两路径共享数据须只读。原始数据、canonicalZarr、48错误JSON、所有manifest/logs和当前aria2部分/控制保留。私有逐文件清单不上传公共仓库。
 
 失败与修正：生成器206总文件与158bin数量不同而断言退出；首只读preview因device/dev字段退出，均未删文件。规范白名单v2后真实preview782候选SHA/保留副本/占用检查exit0；精确preview结束事件时间unknown、观察2026-10-11T14:09:31.866016+00:00。Python/Bash语法通过，--apply未运行。下一步用户手动清理/核验quota，新版本恢复资源再回到原336/15/1008生产审计；目标未完成，无新身份/正式状态/科学轴结论。无关run_ambient_preparation.py修改及collector/研究日志保留且不暂存。建议commit：records: document quota failure and verified manual cleanup candidates。
+
+## 2026-10-11T23:50:48.128458+08:00 用户暂停下载后的研究主线与支线规划
+
+事件时间：用户删除整目录及暂停请求的精确时刻unknown；取证UTC2026-10-11T15:45:06.536302+00:00 /UTC+8 2026-10-11T23:45:06.536302+08:00；文档UTC2026-10-11T15:50:48.128458+00:00 /UTC+8 2026-10-11T23:50:48.128458+08:00。本次goal仍paused，按用户今日规划请求整理，不恢复执行。
+
+用户要求：已删整个gpu_transfer，暂不下载，2026-10-12向管理员申请配额；今天形成后续主线和主线内支线。开始前HEAD95d719bb4050153e2237f362ce017d22da8442b5；无关run_ambient_preparation.py修改及collector/研究日志未跟踪文件保留。
+
+最小取证命令：SSH用scanpy Python只读检查两GPU路径/canonical路径、v16 verified_evidence逐路径exists、active_jobs及latest handoff；只读核/tmp日志Git HEAD与status。实际根GPU目录ABSENT、Project_v5副本EXISTS、ZarrEXISTS、登记证据缺失0/active_jobs空。没有全文件SHA或全历史路径审计，不能宣称整目录都是冗余；删除后组quota未复测，不由目录删除推断资源已恢复。未下载/传输科学输入、未恢复资源、未启动新科学任务，代理无删除。
+
+阅读：AGENTS/README/STATUS/ROADMAP/TODO、methods/decisions索引、RUNTIME_SYNC、当天daily/同任务日志、原CM首轮run、家族run/15自动记录、空间/接收程序与全基因run、已有CoVarNet解释。主要判断：来源和癌种限定效应保留；原9CM与细胞对双入口，当前0直接CM边不强挂CM驱动；通用空间45/70阴性不靠换方法/半径追显著；全基因/45源真实覆盖/患者块/先验验收在响应检验前；状态层与身份分开；免疫治疗临床验证不以先整合全部新细胞为依赖。
+
+修改：ROADMAP增加权威主线、两个发现入口及其支线、任务顺序/验收/转向和论文收束；README/STATUS/TODO添加当前暂停和入口，旧节点保留；fullgene run记录暂停；daily/incident补录删除后有限取证；新增脱敏checkpoint[JSON](../../../inventories/analysis/2026-10-11/planning_pause_checkpoint_v1.json)，SHA256 86cd3073b53a057a3151c18bbc4a1284d8c3c4cf70c2e49599c4aad3b454ca49。患者行、矩阵、凭据与逐文件私有白名单未入仓库。
+
+验证：尚待本节点diff/链接/JSON/隐私和仓库轻量检查、普通commit/push及独立HTTPS SHA核验；不写测试或复算新科学模型。失败尝试：本规划节点尚无新增失败；既有quota/资源/误报历史保留，旧v3终态不能触发真实生产。未解决：删除全目录的历史引用/独有文件未全部审计、quota申请未发生、全基因生产及独立审计未运行、真实状态/CM驱动/临床机制未验证。下一轮以用户恢复、实际quota和新输入验收为前置；不设自动运行。建议commit：docs: organize CM and cell-pair research roadmap and pause downloads。
+
+提交前验证UTC 2026-10-11T15:51:27.786148+00:00 /UTC+8 2026-10-11T23:51:27.786148+08:00：git diff --check通过；新增JSON解析、scope断言与相对链接检查通过；仓库检查0 errors/1既有历史内部路径warning。已逐diff审阅当前9个文档/汇总文件，不含矩阵/患者行/凭据；无关ambient代码及未跟踪collector/研究日志不暂存。科学计算、下载及资源恢复仍未启动。

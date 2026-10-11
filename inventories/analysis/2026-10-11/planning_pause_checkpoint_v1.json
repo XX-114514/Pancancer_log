@@ -1,0 +1,57 @@
+{
+  "schema_version": "planning_pause_checkpoint_v1",
+  "event_time_user_deletion_UTC": null,
+  "user_report": "Deleted whole gpu_transfer directory; temporarily stop downloads; plan later stages; intends quota request 2026-10-12 UTC+8",
+  "observation_UTC": "2026-10-11T15:45:06.536302+00:00",
+  "observation_UTC_plus8": "2026-10-11T23:45:06.536302+08:00",
+  "documentation_UTC": "2026-10-11T15:50:48.128458+00:00",
+  "documentation_UTC_plus8": "2026-10-11T23:50:48.128458+08:00",
+  "observed_paths": {
+    "${PANCANCER_ROOT}/gpu_transfer_20260903": "ABSENT",
+    "${PANCANCER_ROOT}/Project_v5/gpu_transfer_20260903": "EXISTS",
+    "${PANCANCER_ROOT}/Project_v3/annotation_rebuild/20260923_core_anndata_zarr_v1/objects/pancancer_core_fullgene_v1.zarr": "EXISTS"
+  },
+  "register_schema": "native_LR_program_evidence_register_v16",
+  "register_active_jobs": [],
+  "missing_verified_evidence_paths": [],
+  "verification_limits": [
+    "Path existence and register only; no new full SHA audit",
+    "Deletion exact time/whole-directory unique files and all historical path references not audited",
+    "Current group quota after user deletion not remeasured",
+    "Register empty is not a census of all server processes"
+  ],
+  "current_restrictions": {
+    "scientific_downloads": "PAUSED_BY_USER",
+    "scientific_input_transfers": "NOT_STARTED_TODAY",
+    "resource_retry": "NOT_STARTED_TODAY",
+    "new_scientific_jobs": "NOT_STARTED_TODAY",
+    "agent_deletions": "NONE"
+  },
+  "future_start_conditions": [
+    "User resumes execution",
+    "Actual group quota and storage peak checks",
+    "Versioned input and prior acceptance; old resource failure cannot authorize production"
+  ],
+  "scope": {
+    "annotation_version": "v20261010",
+    "original_nodes": 172,
+    "original_CM": 9,
+    "frozen_CoVarNet_libraries": 1290,
+    "reviewed_identity_libraries": 121,
+    "sample_fallback_libraries": 1169,
+    "family_original_nodes": 13,
+    "current_three_sources_observed_nodes": 9,
+    "family_records": 336,
+    "followup_records": 15,
+    "candidate_by_source_rows": 1008,
+    "family_direct_original_CM_edge_matches": 0
+  },
+  "plan_authority": "ROADMAP.md#后续研究主线与支线2026-10-11今日仅规划",
+  "baseline_git_commit": "95d719bb4050153e2237f362ce017d22da8442b5",
+  "actions": [
+    "Read-only server path/register/handoff and log Git baseline checks",
+    "Reviewed existing project evidence and prior plans",
+    "Saved mainline/branch roadmap, status, task board and logs; ordinary push pending verification"
+  ],
+  "new_scientific_results": false
+}
