@@ -23,3 +23,17 @@
 后续：冻结输入和参数 → 单文库验证 → 全量逐文库运行 → 独立计数/ID/校正审计 → 整合准备清单。失败尝试及最终结果追加在本日志。
 
 建议commit：`preprocess: register doublet and ambient RNA preparation task`。
+
+## 2026-10-11 21:46 UTC+8 方法冻结 / 13:46 UTC
+
+已观察：初次GSE294109完整文库试运行（5861个QC细胞）检出212额外双细胞，保留5649；DecontX中位UMI减除约0.73%，最后73轮convergence=.0009808，marker保留门槛通过。13:41:51 UTC独立全细胞count/ID/标准化验收通过。该初试使用Leiden，软件提示实验性，因此正式参数改Louvain，不将初试结果作为正式全队列成果。
+
+GSE256326的完整文库正式Louvain参数试运行保留1437细胞，额外双细胞0；中位UMI减除约6.64%。13:44:15 UTC全细胞独立验收通过；53个估计UMI损失>50%细胞保留对象并暂停准备放行，1384细胞进入技术候选掩码。它仍是一个文库试运行，不等于9文库RMC完成。
+
+正式范围扩展至9个有核验原始文库的分支：4已有QC队列+5native计数队列，共792文库、3338473个输入细胞（4QC+5预QC，不可当最终保留数）。5native分支执行初始QC；SPECTRUM复用作者doublet，转移性乳腺癌复用作者PASS。TNBC和CTCL继续隔离。
+
+代码及方法见methods/doublet-ambient-preintegration-v1.md。DecontX模型无背景、粗谱系分群；新增收敛日志门槛和高损失单细胞标记。原始counts与估计counts_decontx分开；只有通过校正审查的文库才从估计层normalize/log1p。全量运行独立目录prepare_v2，4源×4文库并发，上游对象不变。
+
+失败/修正：一次只读R泛型查询未加载namespace报no generic，加载包后已核实实际接口；一次patch多次指向同文件被拒绝，合并为单操作后成功；首次审计命令没有生成证据，因此未判成功，复核远端脚本后实际重跑产出通过报告。所有试运行/失败文件保留。初始任务登记已普通push并独立核验abc51a4daa7ba8a8ceb7766f5aeb5572c045d71f。
+
+验证：Python真实环境版本3.10.19，scanpy1.11.5/anndata.11.4/numpy1.26.4/scipy1.11.4/DoubletDetection4.3.0.post1；DecontX1.8.0/R4.5.3。Python编译通过；cloud_check现有5合同测试全过，仓库0错误1既有逻辑路径警告。真实全量处理仍未完成，不能仅凭启动承诺验收。

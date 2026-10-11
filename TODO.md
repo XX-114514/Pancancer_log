@@ -194,3 +194,9 @@ STOP remains in force: no new schema, root audit, release-gate, checksum/provena
 - `IMM-001`：允许 skip 的书面验收决定仍缺失，保持 blocked。
 - `CM-001`：group-quota 余量约 101.588 GiB，仍未达到表内 200 GiB 依赖，保持 blocked；不得仅因 `df` 可用空间充足而启动。
 - `DL-003`：未发现新 recovery；现有 partial 保留 failed，任务仍为 todo。
+
+## 2026-10-11 追加预处理任务
+
+- [ ] 完成9分支792原始文库的初始/复用QC、独立双细胞与污染校正评估，独立验收每个保留细胞的counts/ID/标准化。
+- [ ] 对缺空液滴、单一谱系、模型未收敛或marker损失文库保留限制与复核队列，不能伪称去污染完成。
+- [ ] 准备技术候选掩码及原始基因覆盖；关闭来源别名/文库重复审计后再决定实际跨研究整合。

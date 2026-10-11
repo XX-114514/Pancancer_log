@@ -1,0 +1,59 @@
+{
+  "schema": "independent_ambient_preparation_audit_v1",
+  "observed_utc": "2026-10-11T13:44:15.743603+00:00",
+  "n_datasets": 1,
+  "n_libraries": 1,
+  "n_output": 1437,
+  "n_ready_technical_cells": 1384,
+  "all_checks_pass": true,
+  "final_accepted_new_cells": 0,
+  "cross_study_integrated": false,
+  "datasets": [
+    {
+      "dataset": "GSE256326",
+      "n_libraries": 1,
+      "n_output": 1437,
+      "summary_count_matches": true,
+      "all_checks_pass": true,
+      "libraries": [
+        {
+          "library_token": "000_8c8f197668c9",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true
+          },
+          "n_output": 1437
+        }
+      ]
+    }
+  ],
+  "integration_candidate_index": [
+    {
+      "dataset": "GSE256326",
+      "library_token": "000_8c8f197668c9",
+      "n_cells": 1384,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 27966,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    }
+  ],
+  "gene_join_diagnostics": [
+    {
+      "branch": "tumor_and_comparator_sources_candidate",
+      "n_sources": 1,
+      "common_measured_genes": 27966,
+      "gene_missingness_must_be_preserved": true
+    }
+  ]
+}
