@@ -25,3 +25,7 @@
 失败部分文件、旧脚本及终态manifest保留；详情在[持续任务日志](../logs/codex/2026/2026-10-11_milestone-log-and-cloud-sync.md)。科学证据保持v16，资源准备不晋升通讯验证。运行命令将使用固定scanpy Python3.10.19与环境变量PANCANCER_PREFLIGHT_ROOT；完成资源及代码冻结后记录实际生产起止和exit。
 
 21:07:05.928423 UTC+8（UTC13:07:05.928423）：资源恢复及失败轨迹内容d435622253a0fa575328a2b1ef39aa1c73c61b55普通push；21:07:12.642061 UTC+8独立HTTPS ls-remote/fetch核对同SHA。 [发布核验](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_git_receipt_v1.json)。
+
+## 2026-10-11T21:11:02.854074+08:00 资源恢复v2
+
+[固定下载合同](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v2_spec.json)和[脚本](../scripts/fetch_server_priors_fullgene_v2.py)为资源阶段；8路1MiB精确Range，全文件大小/官方MD5确认后才能进入科学生产。真实3先验/原全基因输入未变，旧失败和部分文件保留。启动尚未发生。

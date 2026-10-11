@@ -1,0 +1,33 @@
+{
+  "created_UTC": "2026-10-11T13:11:02.854074+00:00",
+  "created_UTC8": "2026-10-11T21:11:02.854074+08:00",
+  "parent_evidence": "v16",
+  "role": "resource_fetch_not_scientific_model",
+  "code_sha256": "3c93eaf0689ac446836bd163952ac48911e73dc6ecae59204cfdc600d6a07d77",
+  "scope": "same predeclared all336/15/1008; human3priors DOI10.5281/zenodo.7074291",
+  "method": {
+    "threads": 8,
+    "chunk_bytes": 1048576,
+    "max_attempts_per_range": 3,
+    "socket_timeout_seconds": 60,
+    "deadline_per_file_seconds": 2400,
+    "exact_http_status": 206,
+    "fullfile_size_md5_required": true,
+    "source": "official_content_URL_exact_Range_distinct_query_direct_no_env_proxy"
+  },
+  "paths": {
+    "new_input": "${RUN_ROOT}/fullgene_receiver_target_readiness_v1/verified_prior_inputs_v2",
+    "chunk_history": "${RUN_ROOT}/fullgene_receiver_target_readiness_v1/range_chunk_attempts_v2"
+  },
+  "direct_probe": {
+    "status": 206,
+    "range": "bytes 1048576-2097151/262116605",
+    "bytes": 1048576,
+    "elapsed_seconds": 38.02796314191073,
+    "observed_UTC": "2026-10-11T13:09:00.631667+00:00"
+  },
+  "old_partials_preserved": true,
+  "started": false,
+  "statistical_models_fitted": false,
+  "axis_validation_complete": false
+}
