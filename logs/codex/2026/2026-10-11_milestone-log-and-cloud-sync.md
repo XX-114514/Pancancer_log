@@ -229,3 +229,17 @@ UTC 2026-10-11T12:45:16.867675+00:00 /UTC+8 2026-10-11T20:45:16.867675+08:00。�
 UTC 2026-10-11T13:11:02.854074+00:00 /UTC+8 2026-10-11T21:11:02.854074+08:00。上一goal turn为progress：实际资源校验/合成修复证据以及云端5f3fc18；本次重新读真实v16/active_jobs空/资源v1终态、工作合同和内存/磁盘余量（足够）。直连官方精确1MiB探针HTTP206，38.03秒，与环境代理探针接近，不能将下载慢全部归因代理。
 
 [资源v2合同](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v2_spec.json)和[代码](../../../scripts/fetch_server_priors_fullgene_v2.py)固定8路1MiB范围、每块3次上限、60秒socket/每文件2400秒deadline、精确206/Range/长度与全文件官方MD5；历史部分文件不改，新目录记录每次失败/完整块SHA。复用已完整MD5校验LR；其他2文件逐块下载。环境代理仅对本脚本请求绕开，未更改用户配置。当前未派发，代码语法和仓库/diff检查后普通push，再记录实际启动和进程，科学模型未启动。
+
+## 2026-10-11T21:23:02.879031+08:00 原编号完整基因代码冻结与来源缺失修正
+
+UTC 2026-10-11T13:23:02.879031+00:00 /UTC+8 2026-10-11T21:23:02.879031+08:00。资源v2已实际13:11:45.257631 UTC启动；本次具体PID/命令与RUNNING核实，见[真实检查点](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_running_v2.json)。完整TF文件已大小/官方MD5校验并可读，靶文件还在分块，未启动科学生产。资源代码410180b42be3f324d7543cf06f31d8e4f7b4b455于13:11:23.118210 UTC普通push，13:11:29.801119独立HTTPS核验，[收据](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v2_code_git_receipt.json)。
+
+探索发现：13是冻结家族目录的节点数；当前3原生来源实际合计9个不同原子群，分别4/6/9，原panel可测基因289/295/296。不是合并或删除4个身份，也不能为未捕获群伪造表达。全部285360选定细胞/164文库和固定336/15/1008不变，实际单位完整覆盖原编号×文库。来源未捕获接收家族时，此前草稿的表达覆盖0会混淆缺失；已修正为NA并标明缺捕获/缺靶先验/可测零值，保留全部行。单位≥20背景覆盖与原始计数/完整RNA分母分别输出并独立复算。
+
+第二个解释修正：官方TF文件实际33354×1226，21680行有非零权重，包括A1BG等一般基因；不能将所有非零行称转录因子。改为nonzero_ligand_tf_prior_row_symbols及明确“非curated TF inventory”，未把这些当TF活性或新状态。作者[协议代码](https://github.com/saeyslab/nichenet_protocol/blob/main/R/procedure_code.R)将该文件用于网络路径可视化并另传weighted_networks；[基因集例程](https://github.com/saeyslab/nichenetr/blob/master/vignettes/ligand_activity_geneset.md)给出靶基因在行、配体在列的先验和接收表达背景。查找根目录procedure_code.R曾404，读取实际R目录后成功；未假称全文文章完整阅读。
+
+[最终代码及输入SHA](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_code_freeze_v2.json)：producer v3、独立auditor v3、执行worker v1与fixture v5；旧草稿/失败修正保留外部目录。修正后的真实合成检查PASS原始/检测/归一化/空单位/不同数字身份、复杂LR/缺先验/并列排序和未捕获接收者NA；独立auditor不导入producer，未来将复算所有原生完整基因单位值和全部1008映射。worker只在资源终态成功、原输入/父交接SHA、无其他活跃任务满足后可派发，每个阶段新manifest/日志，最终生物交接不会自动发生。
+
+未验证：真实全基因聚合/独立审计、受体特异靶作用与正式TF活性、独立临床机制；当前仍v16，不据代码PASS宣称轴或CMdriver。看到并发新增独立QC验收汇总但原研究别名/文库重叠仍pending、正式新增验收0；只读未暂存或修改。本次日志、代码、合同按节点先普通push；下一步资源完成后实际全量生产/审计。
+
+提交前静态审阅发现背景计数与空值同列会序列化为“3.0/空”，独立审计直接int(text)可能误拒有效值；改为先解析float再取int，真实audit未启动、未伪造实际失败。保留未提交冻结草稿SHA和旧代码，新fixture v6验证CSV表示/缺失边界后PASS，最终SHA以code_freeze_v2的final_code_freeze_UTC与code_shas为准。并发QC线程提交已到71cec70，保留其提交及daily内容，后续以此base普通push，不改写历史。

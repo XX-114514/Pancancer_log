@@ -1,0 +1,54 @@
+{
+  "observed_UTC": "2026-10-11T13:21:47.229050+00:00",
+  "execution": {
+    "status": "RUNNING",
+    "started_UTC": "2026-10-11T13:11:45.257631+00:00",
+    "pid": 124126,
+    "role": "public_prior_resource_fetch_not_scientific_model",
+    "script_sha256": "3c93eaf0689ac446836bd163952ac48911e73dc6ecae59204cfdc600d6a07d77",
+    "threads": 8,
+    "chunk_bytes": 1048576,
+    "max_attempts": 3,
+    "timeout_seconds": 60,
+    "deadline_seconds_per_file": 2400,
+    "transport": "direct_urllib_no_env_proxy_exact_HTTP206_ranges"
+  },
+  "present": true,
+  "cmdline_matches": true,
+  "progress": {
+    "file": "ligand_target_matrix_nsga2r_final.rds",
+    "complete_chunks": 20,
+    "total_chunks": 250,
+    "verified_range_bytes": 20971520,
+    "observed_UTC": "2026-10-11T13:21:39.224305+00:00",
+    "resource_only": true
+  },
+  "receipts": {
+    "status": "FETCHING",
+    "records": [
+      {
+        "file": "lr_network_human_21122021.rds",
+        "bytes": 20724,
+        "official_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+        "observed_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+        "sha256": "47c971d2fbba4ecd0ba7485d1846a74054432a0d1a97ea3e6a79ae27d0da8094",
+        "started_UTC": "2026-10-11T13:11:45.636525+00:00",
+        "finished_UTC": "2026-10-11T13:11:45.637944+00:00",
+        "method": "copied_already_verified_v1",
+        "chunks": 0
+      },
+      {
+        "file": "ligand_tf_matrix_nsga2r_final.rds",
+        "bytes": 29862142,
+        "official_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+        "observed_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+        "sha256": "bb130724daf2319a50d9da326f17ec4ddc65bd35a674eb45d132f81284d01845",
+        "started_UTC": "2026-10-11T13:11:45.638421+00:00",
+        "finished_UTC": "2026-10-11T13:17:08.076812+00:00",
+        "method": "exact_ranges_assembled",
+        "chunks": 29
+      }
+    ]
+  },
+  "active_jobs_count": 1
+}

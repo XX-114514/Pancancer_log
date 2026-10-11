@@ -29,3 +29,9 @@
 ## 2026-10-11T21:11:02.854074+08:00 资源恢复v2
 
 [固定下载合同](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v2_spec.json)和[脚本](../scripts/fetch_server_priors_fullgene_v2.py)为资源阶段；8路1MiB精确Range，全文件大小/官方MD5确认后才能进入科学生产。真实3先验/原全基因输入未变，旧失败和部分文件保留。启动尚未发生。
+
+## 2026-10-11T21:23:02.879031+08:00 固定代码与实际覆盖
+
+[代码/输入冻结](../inventories/analysis/2026-10-11/fullgene_receiver_target_code_freeze_v2.json)、[资源运行取证](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_running_v2.json)。当前3来源实际节点4/6/9、合计9/目录13，原可测panel289/295/296；缺捕获家族表达覆盖NA，保留所有336/15/1008行。TF文件已完整，21680非零一般基因行不是TF目录，字段已纠正。源计数及细胞身份不变；合成检查PASS，真实计算未开始。
+
+复现命令（固定scanpy Python3.10.19，两个根目录由环境提供）：`python fullgene_execution_worker_v1.py production`，真实终态后 `python fullgene_execution_worker_v1.py audit`。worker验证全部冻结代码SHA/原输入/父交接和官方资源终态；生产与审计分别记录新manifest/PID/起止/exit，最后手动验收科学交接。

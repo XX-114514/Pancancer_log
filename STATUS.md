@@ -1,5 +1,9 @@
 # 当前项目状态
 
+## 2026-10-11T21:23:02.879031+08:00 完整基因代码已冻结
+
+资源恢复具体worker核实活跃，TF完整校验、靶继续分块。3来源实际9/目录13原子群；代码修正缺捕获NA和TF先验标签，合成PASS、真实全基因聚合未启动，科学证据仍v16。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。
+
 ## 公共新增QC驗收完成：2026-10-11 21:18 UTC+8
 
 [完整驗收報告](inventories/runtime/2026-10-11/QC_ACCEPTANCE.md)：四份993,312細胞/149文庫、全部原始計數和4×36條件PASS，已登記technical_QC_ACCEPTED_source_final_pending。腫瘤組織576,512、CAR-T產品416,800分開；GSE292046為兩患者/8文庫富集snRNA。頭頸癌7,463細胞的post2患者解析遗漏已以v2元數據覆蓋表修正並獨立驗收，原矩陣/舊記錄保留。
