@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/XX-114514/Pancancer_log.git",
+  "branch": "main",
+  "content_commit": "f29e0c31e22852a2144100599f234431ed8be930",
+  "previous_main": "7da773f9374ce538a67c76cb34d3dc21effe96a2",
+  "push_exit": 0,
+  "push_observed_UTC": "2026-10-11T10:58:01.701771+00:00",
+  "push_observed_UTCplus8": "2026-10-11T18:58:01.701771+08:00",
+  "independent_verification": "Local HTTPS git ls-remote origin refs/heads/main returned exact content SHA; checked by 2026-10-11T10:58:53+00:00",
+  "verified_remote_main": "f29e0c31e22852a2144100599f234431ed8be930",
+  "plan_nodes_also_pushed": ["a0a2d592b7a6b4897f70266a775320568ca4a92d", "7da773f9374ce538a67c76cb34d3dc21effe96a2"],
+  "transport": "SHA-checked bundle, clean main fast-forward, existing server SSH authentication, ordinary push",
+  "private_keys_copied": false,
+  "history_rewritten": false,
+  "scope": "Input repair, independent all39123x1000 raw count audit, preserved failure, timeline and registeredv12 evidence; no raw matrices or cell/patient keys",
+  "axis_validation_complete": false,
+  "scientific_release": false,
+  "receipt_commit": "The subsequent receipt commit is independently verified at task completion; this receipt verifies its content ancestor."
+}
