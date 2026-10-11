@@ -1,0 +1,46 @@
+{
+  "schema": "covarnet_explanation_evidence_v1",
+  "observed_UTC": "2026-10-11T11:03:01Z",
+  "observed_UTC_plus8": "2026-10-11T19:03:01+08:00",
+  "method": "Read existing snapshots/plans/scripts and independently recount aggregate TSVs; no scientific model rerun",
+  "records336": 336,
+  "distinct_LR336": 209,
+  "class_counts": {
+    "sparse_RNA_conditional_association_retained": 28,
+    "sender_programme_conditional_model_unestimable": 5,
+    "sender_programme_conditional_association_uncertain_or_reversed": 29,
+    "member_depth_conditional_model_unestimable": 4,
+    "member_depth_conditional_association_uncertain_or_reversed": 46,
+    "resampling_not_stable": 224
+  },
+  "source_material_counts": {
+    "GSE179994|primary_or_unspecified_tumor": 32,
+    "GSE270680|primary_or_unspecified_tumor": 215,
+    "GSE183904|primary_or_unspecified_tumor": 31,
+    "GSE270680|normal_or_adjacent": 58
+  },
+  "records15": 15,
+  "distinct_LR15": 11,
+  "contact15": 13,
+  "programme15": 2,
+  "inputs": [
+    {
+      "logical_id": "family_candidate_priority_336",
+      "sha256": "d0022b110ba34c5a0853b80b4517de7f9d61d711d0fb45687d560104f2b8ef4e"
+    },
+    {
+      "logical_id": "public_automatic_followup_15",
+      "sha256": "92bc07e72aeb86668f43bb8b5b25f7e137100dd1b50b3543612968ada45459fe"
+    },
+    {
+      "logical_id": "public_block_contrasts_136",
+      "sha256": "12c994d9cb0292ec5f8975e0e47ec47026c543de28ed2b3a35c72748d61fbc4c"
+    },
+    {
+      "logical_id": "spatial_input_repair_terminal",
+      "sha256": "ebf56d8025234e29f3d56778966f9df8a387c0bc3a9f5466d5538280c56b504e"
+    }
+  ],
+  "scientific_release": false,
+  "axis_validation_complete": false
+}
