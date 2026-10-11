@@ -75,3 +75,15 @@
 v1生产者于10:46:06.905067 UTC exit1：原输入有counts层，我设置的no-layers断言过严；没有生成修复H5AD。审计依赖于10:46:34.008617 UTC exit1，未执行科学审计。随后只读核实counts与X完全相同、var唯一、raw为空。历史作业/代码/目录保留，没有重启v1。
 
 新[v2计划](../../../inventories/analysis/2026-10-11/spatial_native_input_repair_plan_v2.json)追加X与counts同时修复及独立核对，全部原范围和接受门槛保持。新目录/新作业身份；尚未运行v2。该更正不靠删除有问题层通过门禁。
+
+## 18:52:59 UTC+8 修复验收节点
+
+v2预声明7da773f于10:49:04.168076 UTC普通push成功，并独立HTTPS核对；10:49:21.291248 UTC开始v2，10:49:39.034809 exit0。独立审计10:49:51.378339开始、10:50:05.782303 exit0。原CSV全39123×1000值、两层计数、原细胞键/obs/var/坐标和旧文件SHA均核对通过；14轴筛查未发现第二份已知Unnamed索引，但不把这说成全基因别名验证。
+
+10:52:17.951000 UTC登记新输入和交接、刷新状态0冲突，证据v12不是注释V12；本里程碑作业终止。10:52:59.350665 UTC导出[脱敏终态](../../../inventories/analysis/2026-10-11/spatial_input_repair_checkpoint_v1.json)。[正式run](../../../runs/20261011_spatial_native_input_repair_v1.md)保存问题、方法、命令结构、代码SHA、实际失败/成功时间、影响边界和下一步；状态/任务板/路线/incident/索引同步更新。大对象/细胞键及完整日志保留服务器。
+
+此次没有新增端点筛选或空间p值，没有机制/状态/CM驱动晋升；下一任务全13×5原生端点/背景/QC及单位预检。读取作者原始处理说明和代码，确认作者标签是QC后对象、前缀是TMA，并未据此赋患者键或下载RDS。科学目标仍在推进。
+
+提交前检查与本节点普通push/远端SHA在结束前单独核验。建议commit：`records: publish independently audited spatial input repair`。
+
+提交前验收：4个作业终态/成功失败时间与[时间线](../../../inventories/analysis/2026-10-11/spatial_input_repair_timeline_v1.tsv)一致，缺失开始时间写unknown；14文件/39,123,000值/守卫SHA与源审计一致。仓库验证0errors/1既有路径warning、diff检查通过，无新增内部路径/细胞患者行或大型对象。全目标仍未达到：还没有完成固定候选的原生空间端点、单位、邻近及通讯轴验证；没有因此标记goal完成。

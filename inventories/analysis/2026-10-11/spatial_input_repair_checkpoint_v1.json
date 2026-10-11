@@ -1,0 +1,154 @@
+{
+  "schema": "public_spatial_input_repair_checkpoint_v1",
+  "observed_UTC": "2026-10-11T10:52:59.350665+00:00",
+  "evidence_register": "native_LR_program_evidence_register_v12",
+  "baseline_unchanged": "v20261010",
+  "execution_status": "COMPLETE_SPATIAL_INPUT_REPAIR_RAW_FULLMATRIX_AUDITED_PENDING_NATIVE_ENDPOINT_AND_CONTACT_VALIDATION",
+  "scope": {
+    "original_files_screened": 14,
+    "fixed_cosmx_files": 5,
+    "fixed_cosmx_cells": 254458,
+    "corrected_files": 1,
+    "corrected_cells": 39123,
+    "corrected_genes": 1000,
+    "raw_gene_values_compared": 39123000,
+    "fixed_contact_records": 13
+  },
+  "independent_audit_status": "PASS_ALL14_GENE_AXIS_SCREEN_CORRECTED_RAW_ALL39123_CELLS_ALL1000_GENES_KEYS_COORDINATES_QC_ORIGINALS_UNCHANGED",
+  "independence": "Raw CSV chunk parser and nativeFOV+cell-ID join do not import or call parent converter; full matrices also compared with preserved original non-index columns.",
+  "all14_gene_axis_screen": [
+    {
+      "file": "GSM8746298_YKKY0189_20240312_10.cosmx-smi.h5ad",
+      "n_genes": 1000,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9049384_Lung_Adenocarcinoma_TMA1_MERFISH_cellpose.merfish-merscope.h5ad",
+      "n_genes": 500,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9049385_Lung_Adenocarcinoma_TMA2_MERFISH.merfish-merscope.h5ad",
+      "n_genes": 500,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9049386_Mesothelioma_TMA2_MERFISH_cellpose.merfish-merscope.h5ad",
+      "n_genes": 500,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9052317_Lung_Adenocarcinoma_TMA2_Xenium_unimodal.xenium.h5ad",
+      "n_genes": 339,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9052318_Lung_Adenocarcinoma_TMA2_Xenium_multi_modal.xenium.h5ad",
+      "n_genes": 339,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9052319_Mesothelioma_TMA1_Xenium_unimodal.xenium.h5ad",
+      "n_genes": 339,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9052320_Mesothelioma_TMA1_Xenium_multi_modal.xenium.h5ad",
+      "n_genes": 339,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9052321_Mesothelioma_TMA2_Xenium_unimodal.xenium.h5ad",
+      "n_genes": 339,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9052322_Mesothelioma_TMA2_Xenium_multi_modal.xenium.h5ad",
+      "n_genes": 339,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9046088_Lung_Adenocarcinoma_TMA1_CosMx.cosmx-smi.h5ad",
+      "n_genes": 1000,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9046089_Lung_Adenocarcinoma_TMA2_CosMx.cosmx-smi.v2.h5ad",
+      "n_genes": 1000,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9046090_Mesothelioma_TMA1_CosMx.cosmx-smi.h5ad",
+      "n_genes": 1000,
+      "remaining_known_export_index_columns": 0
+    },
+    {
+      "file": "GSM9046091_Mesothelioma_TMA2_CosMx.cosmx-smi.h5ad",
+      "n_genes": 1000,
+      "remaining_known_export_index_columns": 0
+    }
+  ],
+  "RNA_total_min_median_max": [
+    0.0,
+    487.0,
+    6818.0
+  ],
+  "zero_RNA_cells": 27,
+  "lt30_cells_descriptive": 701,
+  "original_h5_sha256": "b0cd5b227bfa4741c131d1fef25a12242936ec9e2ac1d554523286277ec13b29",
+  "raw_archive_sha256": "d9ca665e5700e97e3e3401b982442128a4a6561e7ff242cb1a6995c118ead1e0",
+  "corrected_sha256": "9f38cafde846139cbb3c8d3df8f2237f31a35afb6bef46f6f7026b65da096754",
+  "producer_sha256": "9684f1bc70cd13f778f69fb9acd052cd9a1bf9fcf18fdff0e8e0278ece0d664f",
+  "auditor_sha256": "fd885f6489e498786e6a9e40286deb87c596f071c6eb3f2b293ab69a1de17ca2",
+  "guard_sha256": "aa4c73335bd6e3ac0337fa4b2ca757e080df30ab83ba7d150b4def74e032f58b",
+  "candidate_table_sha256": "1aa6d9c911ebca1f2925ae77942d1544a1281c8bddcfccfd05540446e74ddf37",
+  "registered_handoff_sha256": "9fa47063f194d6462c9a477284f0568fd6e083a318a707afd7a9239217ef39a7",
+  "independent_audit_sha256": "e599e1e080a93633a6db98dafe5f8f944eda617f974b66f9d57330fedb5d07c5",
+  "inventory_sha256": "090553c24af00d470e79637b64704c600d8af74a3cde6bcd3c0446c544408bc1",
+  "analysis_input_manifest_sha256": "6fda649c8b2bf4abe010ba8d53d50e495bae29ce8d30648675d9be9bf91dcf83",
+  "jobs": [
+    {
+      "job": "spatial_repair",
+      "status": "TERMINAL_FAILED",
+      "started_utc": "2026-10-11T10:46:03.881285+00:00",
+      "finished_utc": "2026-10-11T10:46:06.905067+00:00",
+      "exit_code": 1,
+      "script_sha256": "6bfa9efaf68858f5ab2ca2aa4436e49fd972a03a6fba29f95e39a1d0b368d350"
+    },
+    {
+      "job": "spatial_repair_audit",
+      "status": "TERMINAL_FAILED_DEPENDENCY",
+      "finished_utc": "2026-10-11T10:46:34.008617+00:00",
+      "exit_code": 1
+    },
+    {
+      "job": "spatial_repair_v2",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_utc": "2026-10-11T10:49:21.291248+00:00",
+      "finished_utc": "2026-10-11T10:49:39.034809+00:00",
+      "exit_code": 0,
+      "script_sha256": "9684f1bc70cd13f778f69fb9acd052cd9a1bf9fcf18fdff0e8e0278ece0d664f"
+    },
+    {
+      "job": "spatial_repair_v2_audit",
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_utc": "2026-10-11T10:49:51.378339+00:00",
+      "finished_utc": "2026-10-11T10:50:05.782303+00:00",
+      "exit_code": 0,
+      "script_sha256": "fd885f6489e498786e6a9e40286deb87c596f071c6eb3f2b293ab69a1de17ca2"
+    }
+  ],
+  "state_refresh_conflicts": 0,
+  "milestone_verified_UTC": "2026-10-11T10:52:17.951000+00:00",
+  "active_jobs_in_this_scope": [],
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "limits": [
+    "Known export-index issue corrected; this is not a comprehensive biological-gene alias validation",
+    "No endpoint/background/physical calibration/patient mapping or proximity validation yet",
+    "All original source/cancer-specific candidates retained; no axis or CMdriver proved by input repair",
+    "Legacy original files and original13candidate keys remain unchanged"
+  ],
+  "next_scope": "All13contact records x all5assays=65checks; all254458cells, original9LRpairs and2programme-specificbranch unchanged",
+  "manifest_semantics": "analysis_path is the corrected/accepted input pointer. Original inventory gene/stats fields remain historical; downstream must read native analysis_path var/X. Initial pending status is superseded by audit andv12register."
+}

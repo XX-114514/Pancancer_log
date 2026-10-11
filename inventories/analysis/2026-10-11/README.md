@@ -1,5 +1,9 @@
 # CM扩展候选关键节点证据
 
+## 18:52:59 UTC+8 修复终态
+
+[终态证据](spatial_input_repair_checkpoint_v1.json)与[正式run](../../../runs/20261011_spatial_native_input_repair_v1.md)。14轴筛查、1新对象及原CSV39,123,000值/X/counts独立核对通过；v1失败保留，v2成功，证据v12/0冲突。尚未完成13×5端点及空间验证。下方早期快照均保留为当时状态。
+
 ## 18:36:08 UTC+8 空间输入探索补充
 
 [只读计划](spatial_metadata_checkpoint_plan_v1.json)、[5文件聚合检查](spatial_metadata_checkpoint_v1.json)、[CSV索引列故障证据](spatial_index_column_incident_v1.json)与[处理记录](../../../logs/incidents/2026-10-11_spatial-csv-index-column.md)。整数存储检查不等于基因列正确；已确认TMA2非基因索引入矩阵，修复待执行。下面18:20快照及原v11科学边界保留。

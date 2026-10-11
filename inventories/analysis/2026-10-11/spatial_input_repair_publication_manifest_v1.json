@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "path": "inventories/analysis/2026-10-11/spatial_input_repair_checkpoint_v1.json",
+      "bytes": 6522,
+      "sha256": "ebf56d8025234e29f3d56778966f9df8a387c0bc3a9f5466d5538280c56b504e"
+    },
+    {
+      "path": "inventories/analysis/2026-10-11/spatial_input_repair_timeline_v1.tsv",
+      "bytes": 1585,
+      "sha256": "f93e964b76bf7805def13edeae4a725747591b7c3ad6dedc3abf46f68b3abab9"
+    }
+  ],
+  "source_audit_SHA": "e599e1e080a93633a6db98dafe5f8f944eda617f974b66f9d57330fedb5d07c5",
+  "source_handoff_SHA": "9fa47063f194d6462c9a477284f0568fd6e083a318a707afd7a9239217ef39a7",
+  "raw_data_uploaded": false,
+  "scientific_release": false
+}
