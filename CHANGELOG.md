@@ -1,5 +1,10 @@
 # 重要变更记录
 
+## 2026-10-11 19:27 原生空间预检
+
+全65固定组合/6口径复算及正确作者181056注释映射完成；保留并纠正对象键类型失败和作者条码方向错误，登记v14证据。没有改变注释/CM/发现BH或宣称通讯机制。[正式run](runs/20261011_spatial_contact_native_preflight_v3.md)。
+
+
 ## 2026-10-11
 
 - Accepted a versioned spatial count-input repair after independent comparison of 39,123,000 raw CSV values and both X/counts layers; retained the first schema failure, original objects and all fixed candidate keys. Evidence register v12 is not an annotation release.

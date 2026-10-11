@@ -1,0 +1,14 @@
+{
+  "renderer_sha256": "9f57dc3734da23a96f93943a5c5a2e913cdc8e330add5bb137e07447e69fbc6c",
+  "producer_audit_sha256": "74f0bf84121b60469c720fb15b2c4c0ae92e3cba965b176651993dca527ed872",
+  "plotted_interfaces": 9,
+  "assays": 5,
+  "arms": 4,
+  "plot_is_descriptive": true,
+  "colour_scale": "log1p counts, same log1p scale across all panels; printed values are cell counts",
+  "outputs": {
+    "all9_interfaces_native_spatial_coverage.png": "05f1ed0922dab973868269b80dc15386d155d034247da8f007f1c6b731fe27a2",
+    "all9_interfaces_native_spatial_coverage.pdf": "4350bc40bac17f9554c4e2eb01993ca0acf99b89e351fc464c98480be072b1c6",
+    "figure_source.tsv": "74526186e08de22162061c7edb6f4b28de228abc6bf79f6df396551496a741e4"
+  }
+}

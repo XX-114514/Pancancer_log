@@ -1,0 +1,18 @@
+{
+  "independent_all65_checks.tsv": "2d54fd683592f662842b5417318be8c197725e5b1dfafe215e2e6263d6c31acc",
+  "checkpoint.json": "3f27fa5d376fc495c1abf4d63c38dc9d513bfe851029a434fa6254c4f91df527",
+  "registration_receipt.json": "cecafd3c43fbe493041e75c1f74e7005105c4eb6fdb24aeb300841fba10dfe91",
+  "coordinate_donor_and_segmentation_review.tsv": "8e1a34f84ffac3b08e395d5fba95ad0a5eec13f032ae3e673d15f2ca697332be",
+  "all_contact_record_testability.tsv": "96f4c37bbd1dbbb773122eecbc05901cc95001dd8a48b2fceece99a6ab241aaa",
+  "timeline.tsv": "ff8cbbada69e4e704a8002d61dd18541713d2877bdfebebaf10eb7a113fe642e",
+  "publication_manifest.json": "1f6541f2739480bab97f34d8961d7e28322661e9d7543b1b85be73cdcee56700",
+  "all_selected_gene_cell_QC.tsv": "59e057c70224d35b3993a9bb214676550b1772b7a56e9eda47a538135413e18f",
+  "independent_audit.json": "74f0bf84121b60469c720fb15b2c4c0ae92e3cba965b176651993dca527ed872",
+  "author_lineage_agreement.tsv": "3121a87243beea92930f65258fc1012cf8122974aa458f805c7bb9f4ef5fa7da",
+  "earlier_git_node_receipts.json": "423fd525fdaea2a7fd7c270bae2d40e574787e9a5a1b1d2f49c5e60a73f159dd",
+  "figures/render_manifest.json": "f7af5ab3a27bc7f309e522c61d3dcbf9d5e1446c3ce7e2d305160b8bc0b17a99",
+  "figures/figure_source.tsv": "74526186e08de22162061c7edb6f4b28de228abc6bf79f6df396551496a741e4",
+  "figures/all9_interfaces_native_spatial_coverage.pdf": "4350bc40bac17f9554c4e2eb01993ca0acf99b89e351fc464c98480be072b1c6",
+  "figures/all9_interfaces_native_spatial_coverage.png": "05f1ed0922dab973868269b80dc15386d155d034247da8f007f1c6b731fe27a2",
+  "figures/visual_review.json": "e74363a20358fb2bfb9041c6a19ce0bbb1c126ae397529ee94fe86139f360e5b"
+}

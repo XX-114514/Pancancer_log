@@ -1,0 +1,20 @@
+{
+  "schema": "spatial_contact_native_preflight_audit_v3",
+  "status": "PASS_ALL65_NATIVE_VALUES_CONTROLS_QC_BACKGROUND_LINEAGE_OVERLAP_AUTHOR_AND_FOV_RECOUNT",
+  "started_UTC": "2026-10-11T11:25:24.989401+00:00",
+  "finished_UTC": "2026-10-11T11:26:55.420037+00:00",
+  "assays": 5,
+  "cells": 254458,
+  "record_assay_checks": 65,
+  "arm_checks": 390,
+  "FOV_checks": 30654,
+  "native_selected_gene_values_checked": 14856530,
+  "negative_control_values_checked": 2544580,
+  "auditor_sha256": "0c5734f934d57e4594f3646a05557567f69d14ba412acddb9e3d2c4eed4ce200",
+  "producer_inventory_sha256": "363efe003138e336ddf037deca25f7cf8b92c1d85e2ea5fd8114adac4f12a654",
+  "plan_sha256": "cdf740754f7a814995f928962d151d30f7de028e3445d95fcb45333ef3fe7e77",
+  "independence": "Separate HDF5 CSR read, whole negative CSV MultiIndex join, order-statistic quantile, author table reindex and all65 vector recount; no producer imports. Shared statistical definitions are intentional, not independent biological validation.",
+  "scientific_release": false,
+  "spatial_contact_validated": false,
+  "patient_independence_validated": false
+}

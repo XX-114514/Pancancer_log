@@ -29,3 +29,7 @@
 SELL阳性细胞在胃癌T_cell_IL7R_36内细胞毒程序较低，23样本单位，RNA深度调整后差值−0.08091，块bootstrap区间[−0.10648,−0.05580]，诊断性BH值0.00363。该差值为平均log1pCP10K程序分数单位；这是已筛选记录的身份内部表达观察，不是通讯因果作用或正式状态标签。
 
 只上传聚合表和经过审阅的科学图。逐细胞/逐患者数据、原始计数、内部路径、凭据及完整stdout/stderr继续留在服务器。数值QR复算与生产计算共享输入解析和控制流程，不能称为完全独立的第二套实现或独立生物验证。
+
+## 19:27:55 原生空间预检v3
+
+[run](../../../runs/20261011_spatial_contact_native_preflight_v3.md)、[全65表](spatial_contact_native_preflight_v3/all_contact_record_testability.tsv)、[终态](spatial_contact_native_preflight_v3/checkpoint.json)、[时间线](spatial_contact_native_preflight_v3/timeline.tsv)、[审计](spatial_contact_native_preflight_v3/independent_audit.json)。正确作者映射/6口径计算完成，4LR有描述性覆盖；未进行邻近/机制检验，失败和错误方向保留更正。

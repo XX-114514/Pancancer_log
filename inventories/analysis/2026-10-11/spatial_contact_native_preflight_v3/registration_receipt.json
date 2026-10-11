@@ -1,0 +1,13 @@
+{
+  "schema": "native_spatial_preflight_registration_receipt_v2",
+  "registered_UTC": "2026-10-11T11:27:38.038378+00:00",
+  "registered_UTC8": "2026-10-11T19:27:38.038378+08:00",
+  "register_schema": "native_LR_program_evidence_register_v14",
+  "handoff_sha256": "61e13ccae97e29d71812f58f7c99f388369572283d7cfcf4ea1e286442da9b23",
+  "state_conflicts": 0,
+  "active_jobs_in_milestone": 0,
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "previous_v13_author_direction_superseded": true,
+  "audit_sha256": "74f0bf84121b60469c720fb15b2c4c0ae92e3cba965b176651993dca527ed872"
+}

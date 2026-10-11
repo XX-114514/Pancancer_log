@@ -1,0 +1,173 @@
+{
+  "schema": "spatial_contact_native_preflight_public_checkpoint_v2",
+  "observed_UTC": "2026-10-11T11:27:55.750429+00:00",
+  "observed_UTC8": "2026-10-11T19:27:55.750429+08:00",
+  "scope": {
+    "files": 5,
+    "cells": 254458,
+    "records": 13,
+    "unique_LR": 9,
+    "record_assay_checks": 65,
+    "arms": 6
+  },
+  "predeclared_plan_sha256": "cdf740754f7a814995f928962d151d30f7de028e3445d95fcb45333ef3fe7e77",
+  "producer_inventory_sha256": "363efe003138e336ddf037deca25f7cf8b92c1d85e2ea5fd8114adac4f12a654",
+  "audit_sha256": "74f0bf84121b60469c720fb15b2c4c0ae92e3cba965b176651993dca527ed872",
+  "audit_status": "PASS_ALL65_NATIVE_VALUES_CONTROLS_QC_BACKGROUND_LINEAGE_OVERLAP_AUTHOR_AND_FOV_RECOUNT",
+  "execution": {
+    "v1": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T11:12:23.632543+00:00",
+      "finished_UTC": "2026-10-11T11:13:23.073664+00:00",
+      "exit_code": 0,
+      "script_sha256": "89f184186561368aa6c276fc1d7c9a7258fa0964b61929d1da69a7f27e03ca9f"
+    },
+    "v1_audit": {
+      "status": "TERMINAL_FAILED",
+      "started_UTC": "2026-10-11T11:14:28.110588+00:00",
+      "finished_UTC": "2026-10-11T11:14:32.676149+00:00",
+      "exit_code": 1,
+      "script_sha256": "8e94d46a34c48a7ad4196f728cfd1d614b847533516db7b85e6c36c77713d4f6"
+    },
+    "v2": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T11:16:03.222726+00:00",
+      "finished_UTC": "2026-10-11T11:17:00.981835+00:00",
+      "exit_code": 0,
+      "script_sha256": "6beef8805e109c00e1096cd44edc6698dc886cb2924dfaf0a20bf3bf4e06ea39"
+    },
+    "v2_audit": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T11:17:32.509656+00:00",
+      "finished_UTC": "2026-10-11T11:18:56.559578+00:00",
+      "exit_code": 0,
+      "script_sha256": "4dc3a2ec04a6819eaf92853a6abec432757405399ddab315af4972d6372c3e92"
+    },
+    "v3": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T11:23:52.834498+00:00",
+      "finished_UTC": "2026-10-11T11:24:55.036235+00:00",
+      "exit_code": 0,
+      "script_sha256": "eb0db7e1bfad30e814c0af69e25282d19ac0ca6b7c1794fb8472003e351a403b"
+    },
+    "v3_audit": {
+      "status": "TERMINAL_SUCCESS_PENDING_SCIENTIFIC_REVIEW",
+      "started_UTC": "2026-10-11T11:25:24.493557+00:00",
+      "finished_UTC": "2026-10-11T11:26:55.545403+00:00",
+      "exit_code": 0,
+      "script_sha256": "0c5734f934d57e4594f3646a05557567f69d14ba412acddb9e3d2c4eed4ce200"
+    }
+  },
+  "inputs": [
+    {
+      "sample_id": "GSM8746298_YKKY0189_20240312_10",
+      "cells": 64420,
+      "genes": 1000,
+      "native_input_sha256": "cb241d0a18225bfe058ac393fe8486463daff8b27ed988cdfa8cc0f67cd90e4a",
+      "raw_archive_sha256": "a740d64e872f0e235e8b490e6055dcb50a5ae95e33a504c6a6223b28dd27f8bb",
+      "negative_probe_count": 10
+    },
+    {
+      "sample_id": "GSM9046088_Lung_Adenocarcinoma_TMA1_CosMx",
+      "cells": 43565,
+      "genes": 1000,
+      "native_input_sha256": "566a8594d512131f4b27740f4bd3b35d7c0a20159de6896ca4c2c1bc597e002e",
+      "raw_archive_sha256": "d9ca665e5700e97e3e3401b982442128a4a6561e7ff242cb1a6995c118ead1e0",
+      "negative_probe_count": 10
+    },
+    {
+      "sample_id": "GSM9046089_Lung_Adenocarcinoma_TMA2_CosMx",
+      "cells": 39123,
+      "genes": 1000,
+      "native_input_sha256": "9f38cafde846139cbb3c8d3df8f2237f31a35afb6bef46f6f7026b65da096754",
+      "raw_archive_sha256": "d9ca665e5700e97e3e3401b982442128a4a6561e7ff242cb1a6995c118ead1e0",
+      "negative_probe_count": 10
+    },
+    {
+      "sample_id": "GSM9046090_Mesothelioma_TMA1_CosMx",
+      "cells": 60395,
+      "genes": 1000,
+      "native_input_sha256": "4bc9f467d952a02e84d42b6e10c76a4516a21e571d9f0773e32d0fc186c4140f",
+      "raw_archive_sha256": "d9ca665e5700e97e3e3401b982442128a4a6561e7ff242cb1a6995c118ead1e0",
+      "negative_probe_count": 10
+    },
+    {
+      "sample_id": "GSM9046091_Mesothelioma_TMA2_CosMx",
+      "cells": 46955,
+      "genes": 1000,
+      "native_input_sha256": "cf43bf5030e6e15179125e4896be0d53d1255cd2e2448b942ec9430b54a1de22",
+      "raw_archive_sha256": "d9ca665e5700e97e3e3401b982442128a4a6561e7ff242cb1a6995c118ead1e0",
+      "negative_probe_count": 10
+    }
+  ],
+  "arm_summary": [
+    {
+      "INSUFFICIENT_PAIRED_FOV_ENDPOINTS": 42,
+      "DESCRIPTIVE_FOV_COVERAGE": 21,
+      "UNMEASURABLE_ENDPOINT": 2,
+      "arm": "all_detected",
+      "total": 65,
+      "unique_candidate_records_with_any_FOV": 10,
+      "record_file_programme_and_FOV_ok": 20
+    },
+    {
+      "INSUFFICIENT_PAIRED_FOV_ENDPOINTS": 42,
+      "DESCRIPTIVE_FOV_COVERAGE": 21,
+      "UNMEASURABLE_ENDPOINT": 2,
+      "arm": "qc_detected",
+      "total": 65,
+      "unique_candidate_records_with_any_FOV": 10,
+      "record_file_programme_and_FOV_ok": 20
+    },
+    {
+      "INSUFFICIENT_PAIRED_FOV_ENDPOINTS": 63,
+      "UNMEASURABLE_ENDPOINT": 2,
+      "arm": "qc_count_ge2",
+      "total": 65,
+      "unique_candidate_records_with_any_FOV": 0,
+      "record_file_programme_and_FOV_ok": 0
+    },
+    {
+      "INSUFFICIENT_PAIRED_FOV_ENDPOINTS": 58,
+      "DESCRIPTIVE_FOV_COVERAGE": 5,
+      "UNMEASURABLE_ENDPOINT": 2,
+      "arm": "qc_background",
+      "total": 65,
+      "unique_candidate_records_with_any_FOV": 5,
+      "record_file_programme_and_FOV_ok": 5
+    },
+    {
+      "INSUFFICIENT_PAIRED_FOV_ENDPOINTS": 63,
+      "UNMEASURABLE_ENDPOINT": 2,
+      "arm": "qc_background_pure",
+      "total": 65,
+      "unique_candidate_records_with_any_FOV": 0,
+      "record_file_programme_and_FOV_ok": 0
+    },
+    {
+      "INSUFFICIENT_PAIRED_FOV_ENDPOINTS": 31,
+      "UNMEASURABLE_AUTHOR_LINEAGE": 19,
+      "DESCRIPTIVE_FOV_COVERAGE": 13,
+      "UNMEASURABLE_ENDPOINT": 2,
+      "arm": "qc_background_author",
+      "total": 65,
+      "unique_candidate_records_with_any_FOV": 7,
+      "record_file_programme_and_FOV_ok": 13
+    }
+  ],
+  "QC_cells_total": 209157,
+  "author_mapped_cells_total": 181056,
+  "author_endpoint_summary": {
+    "marker_endpoint_cells": 10786,
+    "author_annotation_matched": 10687,
+    "author_same_lineage": 4256,
+    "author_other_lineage": 6431,
+    "author_unmapped": 99
+  },
+  "author_summary_counts_repeat_candidate_endpoints": true,
+  "superseded_author_alignment": "v2/counts5570 are invalid; v3 prefix_cellID_FOV matches181056 author records withzeroorphans",
+  "patient_inference_unavailable_files": 5,
+  "scientific_release": false,
+  "spatial_contact_validated": false,
+  "patient_independence_validated": false
+}
