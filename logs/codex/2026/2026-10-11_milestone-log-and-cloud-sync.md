@@ -195,3 +195,5 @@ v3生产19:23:52.834498—19:24:55.036235 UTC+8 exit0，独立审计19:25:24.493
 提交前检查：公共SHA清单21项和代码语法/路径检查通过。第一版隐私检查误把privacy_transforms.json记录的已删除列名covariate_names当泄露，改为核对TSV实际表头和真实FOV=类别后通过，未改结果。git diff末尾空行已修正。未暂存无关研究日志；所有生产负结果及未验证项保留。
 
 最终仓库验证0errors/1既有warning，diff检查通过；科学图/源SHA/缺失与时间线已核对。关键节点内容将普通push并独立核验，随后另存真实发布时间收据。
+
+20:34:56.163060 UTC+8（UTC12:34:56.163060）：全70验收内容00c9e1dd5f517f2b469c38d0f36164165f325b08普通push；20:35:02.880812 UTC+8独立HTTPS ls-remote/fetch核对同SHA。 [发布收据](../../../inventories/analysis/2026-10-11/spatial_receiver_acceptance_git_receipt_v1.json)、[四节点Git时间线](../../../inventories/analysis/2026-10-11/spatial_receiver_git_timeline_v1.tsv)。原无关未跟踪日志仍保留。仓库验证0errors/1既有路径warning（artifacts历史），新公共输出路径检查通过。本收据追加提交后再独立核验，不把科学作业审计或云端成功冒充通讯轴验证。
