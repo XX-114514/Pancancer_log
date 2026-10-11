@@ -63,3 +63,9 @@
 提交前核对：5文件/254,458细胞与源采集代码SHA一致；事故全行比对为真；[节点时间线](../../../inventories/analysis/2026-10-11/spatial_task_timeline_v1.tsv)区分执行时间与取证时间。仓库验证0errors/1既有路径warning，新增内容无内部路径或细胞/患者行；新JSON和脚本均小于5MiB，diff/TSV列数及链接检查通过。本次不把此只读采集称为独立科学审计。
 
 2026-10-11T10:39:35.953047+00:00（18:39:35.953047 UTC+8）：本节点内容7eabdd24e2f408596ca760cfba78a664fcb0595c普通push exit0；本机独立HTTPS ls-remote返回同一main SHA，10:39:52 UTC前核验完成。[发布收据](../../../inventories/analysis/2026-10-11/spatial_git_publication_receipt_v1.json)。服务器以校验bundle快进，未复制私钥，未覆盖无关工作。本次没有推送失败；修复及空间科学验证仍待实施。
+
+## 18:42:29 UTC+8 修复运行预先声明
+
+上一目标回合归类为progress：新证据确认真实转换故障并改变后续动作，未完成通讯轴验证。当前再次检查服务器CURRENT_STATE/CURRENT_RUNS、v11登记、终态及0冲突，目标修复目录尚不存在；本地/云端上次核实53381fc，未跟踪研究日志仍保留。
+
+新[修复计划](../../../inventories/analysis/2026-10-11/spatial_native_input_repair_plan_v1.json)固定14输入筛查、1已确认目标新对象、独立原CSV全39123×1000计数比对。增加版本化[导出索引守卫](../../../scripts/cosmx_export_index_guard_v2.py)，只改变列选择；保留全13接触候选、5空间文件及旧产物。生产执行/独立审计/科学结论分别登记。此节在运行之前记录，后续追加真实开始/结束及失败；此刻尚未生成修复对象。

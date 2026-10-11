@@ -1,0 +1,14 @@
+{
+  "declared_UTC": "2026-10-11T10:42:29+00:00",
+  "declared_UTCplus8": "2026-10-11T18:42:29+08:00",
+  "question": "Can the fixed spatial validation inputs be used with genuine gene-count denominators after correcting the proven unnamed CSV index bug?",
+  "scope": "Screen all14 accepted native spatial gene axes; create a new corrected object only for any already-confirmed index column. Confirmed target: GSE299786 LUAD TMA2,39123cells; all5 intended CosMx assays and13 fixed contact-record keys stay in scope.",
+  "baseline": "native_LR_program_evidence_register_v11; frozen annotation v20261010;172nodes9CM1290samples and global discovery BH unchanged",
+  "input_contract": "Accepted14-file inventory; original converted file; originalGSE299786archive; original converterSHA4a2924007c2e16c967988ad2f36aca09c1e1f7d3f89b46a3d34bc342f057b247; automatic15-record table; prior confirmed index incident",
+  "method": "Install a versioned unnamed-export-index exclusion guard in a SHA-locked parent converter. Preserve original H5AD, keys, retained gene counts, existing metadata and coordinates. Corrected copy drops only the confirmed Unnamed: 0 column and adds explicitly recomputed RNA QC; no cell filtering, identity labels or statistical tests.",
+  "independent_acceptance": "Screen all14 native axes; corrected1000gene count matrix matches remaining original counts exactly; independently read rawCSV in chunks and match all39123cells and1000genes by nativeFOV+cell-ID, without parent barcode composition; original file/converter SHA unchanged; existing obs/var/coordinates unchanged; original13contact keys unchanged; fail on unknown extra index columns rather than silently fix them.",
+  "expected_files": ["spatial_native_input_repair_v1/predeclared_plan.json", "all14_index_column_screen.tsv", "analysis_input_manifest.tsv", "corrected/GSM9046089_Lung_Adenocarcinoma_TMA2_CosMx.cosmx-smi.v2.h5ad", "inventory.json", "independent_audit.json", "milestone_handoff.json"],
+  "release_scope": "Input repair only; spatial RNA/background/physical calibration/core-patient review and contact inference still pending",
+  "scientific_release": false,
+  "next": "After this independent repair check, run native endpoint/background/QC preflight for all13 fixed contact records across all5 assays."
+}
