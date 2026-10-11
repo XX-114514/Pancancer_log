@@ -1,0 +1,54 @@
+{
+  "observed_UTC": "2026-10-11T13:44:08.747863+00:00",
+  "manifest": {
+    "status": "RUNNING",
+    "started_UTC": "2026-10-11T13:42:48.284558+00:00",
+    "pid": 360124,
+    "role": "public_prior_resource_fetch_not_scientific_model",
+    "script_sha256": "fbc44a9727b4bd2440e1b36020484780fea5c92d9fbc932f94da6f6ba8c3cca5",
+    "download_cli": "aria2_1.34.0",
+    "file_deadline_seconds": 7200,
+    "max_tries": 20,
+    "connections": 8,
+    "connect_timeout_seconds": 20,
+    "transfer_timeout_seconds": 60,
+    "force_save_control": true,
+    "current_file": "ligand_target_matrix_nsga2r_final.rds",
+    "seed_prefix_bytes": 25154316,
+    "child_pid": 360360
+  },
+  "worker_present": true,
+  "worker_cmdline_matches": true,
+  "child_present": true,
+  "child_is_aria2": true,
+  "receipts": {
+    "status": "FETCHING",
+    "records": [
+      {
+        "file": "lr_network_human_21122021.rds",
+        "bytes": 20724,
+        "official_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+        "observed_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+        "sha256": "47c971d2fbba4ecd0ba7485d1846a74054432a0d1a97ea3e6a79ae27d0da8094",
+        "started_UTC": "2026-10-11T13:42:48.611350+00:00",
+        "finished_UTC": "2026-10-11T13:42:48.612794+00:00",
+        "method": "copied_official_MD5_verified_v2",
+        "seed_bytes": 0
+      },
+      {
+        "file": "ligand_tf_matrix_nsga2r_final.rds",
+        "bytes": 29862142,
+        "official_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+        "observed_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+        "sha256": "bb130724daf2319a50d9da326f17ec4ddc65bd35a674eb45d132f81284d01845",
+        "started_UTC": "2026-10-11T13:42:48.613181+00:00",
+        "finished_UTC": "2026-10-11T13:42:48.930064+00:00",
+        "method": "copied_official_MD5_verified_v2",
+        "seed_bytes": 0
+      }
+    ]
+  },
+  "scientific_production_started": false,
+  "progress_summary": "[#3ee182 30MiB/249MiB(12%) CN:8 DL:106KiB ETA:35m12s]",
+  "progress_summary_observation_only_not_checksum_validation": true
+}

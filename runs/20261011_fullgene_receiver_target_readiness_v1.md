@@ -39,3 +39,7 @@
 ## 2026-10-11T21:39:13.099905+08:00 资源v2真实停止与v3恢复准备
 
 [资源终态](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_stop_v2.json)：累计46短响应、完整块进度停止，身份核对后停止自有worker，PID已不存在/active空/0冲突，部分文件保留。新[aria2合同](../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v3_spec.json)与[冻结v3](../inventories/analysis/2026-10-11/fullgene_receiver_target_code_freeze_v3.json)尚未派发；成功校验后使用`python fullgene_execution_worker_v2.py production`和终态后的`audit`。生物producer/auditor不变，真实生产始终未开始。45已审来源有原生文件，后续扩展待另冻结。
+
+## 2026-10-11T21:46:20.912081+08:00 aria2真实运行
+
+UTC 2026-10-11T13:46:20.912081+00:00 /UTC+8 2026-10-11T21:46:20.912081+08:00取证补录：aria2资源实际13:42:48.284558 UTC开始，worker360124/child360360于13:44:08.747863 UTC存在且命令身份匹配。保留续用25154316bytes连续前缀，实际日志30MiB/249MiB、12%、约106KiB/s，完整MD5尚未通过；不能用文件逻辑大小当完成。真实科学生产未开始，v16/资源active_jobs与科学完成分开。 [运行证据](../inventories/analysis/2026-10-11/fullgene_receiver_target_aria2_running_v3.json)。下一生产使用冻结worker v2，资源真正完整终态和官方checksum为前置条件。

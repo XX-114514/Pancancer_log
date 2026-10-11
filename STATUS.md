@@ -1,5 +1,9 @@
 # 当前项目状态
 
+## 2026-10-11T21:46:20.912081+08:00 aria2恢复已运行
+
+已核实worker和子进程，旧连续前缀约25MB，日志30MiB/249MiB，传输有增长；target未通过全文件校验，科学计算未启动。生物代码/输入SHA已装入服务器，证据仍v16。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。
+
 ## 2026-10-11T21:39:13.099905+08:00 资源断流已处理
 
 v2资源worker因反复短正文且完整进度停滞停止，PID已不存在/登记无活跃作业/0冲突；TF和LR完整、target仍未全文件校验。aria2 v3已准备但未派发，科学计算未开始。 [run](runs/20261011_fullgene_receiver_target_readiness_v1.md)。
@@ -359,3 +363,7 @@ Git 状态：
 4. 下载分支继续 141-task retry，为 GSE201347 设计单独可恢复 attempt，完成完整性校验和最终 summary，并在预处理前人工复核 core/sidecar 与各 GSE guardrail。
 5. 对齐源 `stage_status.tsv` 与最终审计状态，并补充 `GSE278694` 排除决定及依据。
 6. 人工复核 low-confidence、unresolved 和 ambiguous clusters，决定 `GSE162498` extreme-scale 分支，并在认证恢复后普通 push。
+
+## 2026-10-11 21:46 UTC+8 新增公共队列追加预处理
+
+用户授权双细胞、环境RNA处理与整合准备。两个完整原始文库试运行经全细胞独立验收，正式Louvain/DecontX方法已冻结。9分支792文库准备进入全量处理；尚未完成全量处理或来源排重，最终新增AC仍0。CAR-T产品、T富集snRNA及排序文库保留独立上下文。见[方法](methods/doublet-ambient-preintegration-v1.md)和[运行](runs/20261011_doublet_ambient_preparation_v1.md)。

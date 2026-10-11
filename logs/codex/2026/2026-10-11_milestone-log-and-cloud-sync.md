@@ -257,3 +257,7 @@ UTC 2026-10-11T13:39:13.099905+00:00 /UTC+8 2026-10-11T21:39:13.099905+08:00。�
 Git失败与恢复：本机/云端含并发QC至71cec70，服务器干净但停在410180b；第一push helper基线断言拒绝，未执行fetch/merge/push，实际失败时刻unknown。本次诊断后以服务器真实410180b基线快进保留所有QC与本节点，f9bd0e835481c5ab0962dc97fa87a886986fb20a于13:29:04.551096 UTC普通push，13:29:11.356726独立HTTPS核验同SHA，[收据](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_code_v2_git_receipt.json)。没有force/rebase/reset或覆盖并发提交。
 
 本节点提交前：源码语法、JSON解析/逐SHA和公共路径隐私检查通过，diff通过，仓库0errors/1既有历史路径warning；未暂存无关研究日志。新增前置断言确保v2 target路径仍不存在，防止长恢复之后才发现路径占用。未将文件存在或CLI帮助通过记为真实下载/科学计算成功。
+
+## 2026-10-11T21:46:20.912081+08:00 aria2实际续传检查点
+
+UTC 2026-10-11T13:46:20.912081+00:00 /UTC+8 2026-10-11T21:46:20.912081+08:00取证补录：aria2资源实际13:42:48.284558 UTC开始，worker360124/child360360于13:44:08.747863 UTC存在且命令身份匹配。保留续用25154316bytes连续前缀，实际日志30MiB/249MiB、12%、约106KiB/s，完整MD5尚未通过；不能用文件逻辑大小当完成。真实科学生产未开始，v16/资源active_jobs与科学完成分开。 [进程/收据/进度](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_aria2_running_v3.json)。bfa59bb74c4c837d149c58e97b666cb5596e1379于13:41:33.755435 UTC普通push，13:41:40.640204独立HTTPS核验同SHA，[代码发布收据](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v3_code_git_receipt.json)。C中全部生物脚本/输入冻结SHA已核对安装，但未执行；未触碰并发ambient/doublet草稿或无关研究日志。下一步观察这个已确认活跃的具体进程，资源终态成功再派发worker v2生产和audit，保留完整3来源336/15/1008范围，然后拓展已审45来源的跨癌种响应及独立验证设计。
