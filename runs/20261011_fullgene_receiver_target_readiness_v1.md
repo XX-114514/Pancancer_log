@@ -43,3 +43,7 @@
 ## 2026-10-11T21:46:20.912081+08:00 aria2真实运行
 
 UTC 2026-10-11T13:46:20.912081+00:00 /UTC+8 2026-10-11T21:46:20.912081+08:00取证补录：aria2资源实际13:42:48.284558 UTC开始，worker360124/child360360于13:44:08.747863 UTC存在且命令身份匹配。保留续用25154316bytes连续前缀，实际日志30MiB/249MiB、12%、约106KiB/s，完整MD5尚未通过；不能用文件逻辑大小当完成。真实科学生产未开始，v16/资源active_jobs与科学完成分开。 [运行证据](../inventories/analysis/2026-10-11/fullgene_receiver_target_aria2_running_v3.json)。下一生产使用冻结worker v2，资源真正完整终态和官方checksum为前置条件。
+
+## 2026-10-11T21:54:07.721835+08:00 验收代码及后续来源覆盖预声明
+
+资源79MiB/249MiB、仍活跃且未校验。v17验收登记脚本已准备/未执行；当前科学证据v16。另冻结[45源原生header/既有覆盖探索](../inventories/analysis/2026-10-11/reviewed45_native_header_recon_plan_v1.json)，scope全部已审来源，原编号分别保留，仅读header/旧覆盖、不拟合统计或晋升身份。[前一运行节点push回执](../inventories/analysis/2026-10-11/fullgene_receiver_target_running_v3_git_receipt.json)。

@@ -1,0 +1,33 @@
+{
+  "schema": "reviewed45_native_header_recon_plan_v1",
+  "created_UTC": "2026-10-11T13:54:07.721835+00:00",
+  "created_UTC8": "2026-10-11T21:54:07.721835+08:00",
+  "question": "Which reviewed sources and original numbered nodes have native complete gene axes and existing comparable-unit coverage before new fullgene response models?",
+  "scope": "All45 sources with analysis_family_main_membership, all13 original catalogue nodes; source-level headers and existing reviewed coverage only",
+  "inputs": [
+    "${RUN_ROOT}/immune_same_name_family_source_review_v1/membership_review_v2/source_node_analysis_membership.tsv",
+    "${RUN_ROOT}/immune_same_name_family_source_review_v1/membership_review_v2/all5160_reviewed_family_sample_coverage.tsv",
+    "${RUN_ROOT}/immune_same_name_family_source_review_v1/membership_review_v2/all12_reviewed_context_pair_coverage.tsv",
+    "${RUN_ROOT}/immune_same_name_family_source_review_v1/frozen1290_scope.tsv",
+    "${ANNOTATION_ROOT}/20260923_core_anndata_zarr_v1/objects/harmonized_per_gse/*_symbol_counts.h5ad"
+  ],
+  "outputs": [
+    "all45_native_header_source_summary.tsv",
+    "all180_reviewed_family_unit_coverage_summary.tsv",
+    "inventory.json"
+  ],
+  "method": "Read only native gene axes/Xshape/storage/obs schema; aggregate existing reviewed node/family/sample/context tables without opening cell count values. Do not sum overlapping directed strata as independent evidence.",
+  "code_sha256": {
+    "register_fullgene_receiver_target_readiness_v1.py": "1bbba53871dbb5cb60f02132c101d58cff2782b9e4df81e7ffa75a7f25137e8a",
+    "recon_reviewed45_native_headers_v1.py": "c1212f3f700f5e311e03f4acc963be3eb9370d0e832bf2fc85771d6eb47097d1"
+  },
+  "limits": [
+    "Header/file presence and existing count gates are not full count/identity/clinical acceptance",
+    "No new model/p value or target choice; keep current3source production contract unchanged",
+    "GSE169609/GSE299623 remain excluded; numbered nodes remain separate",
+    "121 reviewed-patient scope libraries and1169 sample fallback units remain separate, actual source subsets recounted"
+  ],
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "status": "PREDECLARED_NOT_STARTED"
+}

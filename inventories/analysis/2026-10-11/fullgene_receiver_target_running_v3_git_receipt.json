@@ -1,0 +1,7 @@
+{
+  "content_commit": "b500ef8db7192dab67a79a63e6c707c7b5f8e4fe",
+  "verified_remote_main": "b500ef8db7192dab67a79a63e6c707c7b5f8e4fe",
+  "verified_UTC": "2026-10-11T13:47:24.844297+00:00",
+  "method": "server clean ff-only bundle + ordinary push; independent local HTTPS ls-remote and fetch",
+  "bundle_sha256": "2715de85b4c119bbcf546e3dfc0ae75034602252fed0dcba4f63ca2b2282fb43"
+}

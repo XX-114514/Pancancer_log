@@ -261,3 +261,13 @@ Git失败与恢复：本机/云端含并发QC至71cec70，服务器干净但停�
 ## 2026-10-11T21:46:20.912081+08:00 aria2实际续传检查点
 
 UTC 2026-10-11T13:46:20.912081+00:00 /UTC+8 2026-10-11T21:46:20.912081+08:00取证补录：aria2资源实际13:42:48.284558 UTC开始，worker360124/child360360于13:44:08.747863 UTC存在且命令身份匹配。保留续用25154316bytes连续前缀，实际日志30MiB/249MiB、12%、约106KiB/s，完整MD5尚未通过；不能用文件逻辑大小当完成。真实科学生产未开始，v16/资源active_jobs与科学完成分开。 [进程/收据/进度](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_aria2_running_v3.json)。bfa59bb74c4c837d149c58e97b666cb5596e1379于13:41:33.755435 UTC普通push，13:41:40.640204独立HTTPS核验同SHA，[代码发布收据](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_resource_v3_code_git_receipt.json)。C中全部生物脚本/输入冻结SHA已核对安装，但未执行；未触碰并发ambient/doublet草稿或无关研究日志。下一步观察这个已确认活跃的具体进程，资源终态成功再派发worker v2生产和audit，保留完整3来源336/15/1008范围，然后拓展已审45来源的跨癌种响应及独立验证设计。
+
+## 2026-10-11T21:54:07.721835+08:00 云端回执核验与下一覆盖探索预声明
+
+UTC 2026-10-11T13:54:07.721835+00:00 /UTC+8 2026-10-11T21:54:07.721835+08:00取证。b500ef8db7192dab67a79a63e6c707c7b5f8e4fe已于13:47:24.844297 UTC独立HTTPS核验，[回执](../../../inventories/analysis/2026-10-11/fullgene_receiver_target_running_v3_git_receipt.json)。旧工具session结束后不存在不是push失败；读取落盘回执确认成功。提交中包含同时到达的ambient准备STATUS/run索引/daily汇总，已事后逐diff审查为公开聚合、保留且不称本CM任务完成；另一线程969c7a2公共代码提交已核对云端一致。无关草稿/新collector未暂存。
+
+13:53:16.002922 UTC核实原资源仍为同worker/aria2子进程、79MiB/249MiB（31%）且增长；资源未完整校验、真实全基因生产仍未开始。现有frozen1290真实unit_kind为reviewed_patient121/sample_fallback1169；与既定规则一致，不把文库计独立患者。
+
+新[只读45源覆盖探索合同](../../../inventories/analysis/2026-10-11/reviewed45_native_header_recon_plan_v1.json)冻结全部45已审来源及13原编号节点，仅读原生基因轴/shape/schema和既有family/context单位覆盖；不读全计数、不启动新统计模型、不更换当前3源生物scope。结果用来明确后续可比较来源，而不是因稀疏或不显著改端点。源码语法检查通过，真实探索尚未执行。早前尝试查找membership_review_v2/inventory.json及clinical_context_inventory.tsv不存在，目录列举确认membership_review.json及实际临床文件名；没有将缺路径解释为缺数据或重算失败。
+
+另准备完整基因[验收登记脚本](../../../scripts/register_fullgene_receiver_target_readiness_v1.py)：官方3先验、生产和独立审计终态、所有SHA/全336/15/1008、285360细胞/164文库/原编号/缺失边界均检查通过才可登记v17，读取/proc避免旧ps表头误判，拒绝覆盖旧里程碑。当前只是脚本语法通过，未派发或登记v17。执行/身份/正式状态/科学发布分别记录，通讯轴验证仍未完成。建议commit：tools: freeze fullgene acceptance and reviewed-source coverage reconnaissance。
