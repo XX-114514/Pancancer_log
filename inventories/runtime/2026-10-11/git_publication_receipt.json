@@ -1,0 +1,23 @@
+{
+  "schema": "git_publication_receipt_v1",
+  "verified_utc": "2026-10-11T03:46:35+00:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "branch": "main",
+  "previous_remote_commit": "fabd2d9b9f98b2036b469baeaf4c7a3766f47dfc",
+  "preserved_preexisting_commit": "8c6e440",
+  "content_commit": "6e3c741b1477033bd9ebc367a6d12d37308fd06e",
+  "remote_commit_at_verification": "6e3c741b1477033bd9ebc367a6d12d37308fd06e",
+  "verified": true,
+  "method": "normal_push_and_independent_HTTPS_fetch_plus_ls_remote",
+  "transport": "local_GitHub_SSH_with_temporary_remote_agent_signing",
+  "private_key_copied": false,
+  "agent_identity_lifetime_seconds": 300,
+  "verification": {
+    "contract_tests_passed": 5,
+    "repository_errors": 0,
+    "repository_warnings": 1,
+    "release_errors": 0,
+    "diff_check": "PASS",
+    "warning_review": "Historical logical directory@GitSHA:file reference; no private host address"
+  }
+}

@@ -39,3 +39,13 @@ GitHub连接器仅有pull权限，未用其写入。SSH22以及直接HTTPS dry-r
 - warning来自8c6e440历史清单中的`annotation_rebuild@GitSHA:文件`，触发user@host的通用模式；人工核查为逻辑Git证据，不是内网地址或真实路径，因此保留原记录。
 - 本次没有新增删除；完整origin/main以来的范围包含服务器原有8c6e440及本次提交。保留另一会话新建的CoVarNet文献审阅日志，不纳入本次stage。
 - 最新服务器CURRENT_STATE和三个run目录重新核对；计数快照截止03:22:53 UTC，下载/转码仍可继续变化。
+
+## 实际GitHub交付与独立核验
+
+内容提交`6e3c741b1477033bd9ebc367a6d12d37308fd06e`普通push成功，远端main从fabd2d9前进到此提交，包含原有8c6e440历史记录。2026-10-11 03:46:35 UTC独立HTTPS fetch及ls-remote均返回同一完整SHA；[收据](../../../inventories/runtime/2026-10-11/git_publication_receipt.json)保存核验。
+
+追加失败事实：首次bundle fetch在文件尚未传完时出现early EOF，完整传输后本地/远端大小及SHA一致再fetch成功；SSH直连/代理多次握手或传输超时，曾写出63.35KiB提交包但远端断开，均未报告成功；服务器Git1.8不支持-C，一次只读检查改为cwd；连接复用后台SSH会持有capture输出管道，改为外部文件日志。
+
+最终可用方案：本机GitHub网络正常但本机密钥无权限，服务器已有密钥能够认证。建立本次专用临时agent签名通道，由本机发送Git提交，服务器签名，私钥未复制；仅加载300秒，最后关闭专用通道和owned agent。没有更改Clash端口、原始数据或科学运行。
+
+本次元数据提交用于保存内容提交的真实推送收据；其自身远端SHA在任务结束前再独立核验。Cloud账号环境尚未创建；用户可按仓库指南选择环境并提交首任务。
