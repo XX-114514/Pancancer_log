@@ -1,0 +1,34 @@
+{
+  "schema": "git_milestone_publication_receipt_v1",
+  "verified_utc": "2026-10-11T10:27:04.882326+00:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "branch": "main",
+  "content_commit": "38363cef50b19c683bc3b4ebe67a55edfcc87068",
+  "preserved_concurrent_remote_commit": "00938eb8993689d4e42dd6e08d98b31f7fbfbee9",
+  "merge_commit": "2ca0108",
+  "verified_publication_commit": "3b1522400bf3e53669512a2f2896ac102803b352",
+  "remote_commit_at_verification": "3b1522400bf3e53669512a2f2896ac102803b352",
+  "normal_push_exit_code": 0,
+  "independent_verification": "local_HTTPS_git_ls_remote",
+  "transport": "server_existing_SSH_identity_GitHub443;SHA_verified_git_bundles_and_fast_forward_checkout",
+  "private_key_copied": false,
+  "force_push": false,
+  "history_rewritten": false,
+  "validation": {
+    "repository_errors": 0,
+    "repository_warnings": 1,
+    "warning": "Existing logical Git provenance references retained after manual review",
+    "staged_diff_check": "PASS",
+    "publication_rows": {
+      "timeline": 38,
+      "automatic_records": 15,
+      "block_programme_results": 136
+    }
+  },
+  "receipt_scope": "Verifies the above content/publication commit; the later receipt commit itself is checked separately at task completion",
+  "failures_preserved": [
+    "LocalHTTPS_missing_credentials",
+    "Server_normal_push_rejected_after_concurrent_remote_update"
+  ],
+  "scientific_work_reexecuted_during_logging": false
+}

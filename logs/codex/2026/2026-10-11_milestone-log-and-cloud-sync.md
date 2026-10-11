@@ -37,3 +37,7 @@
 ## 推送恢复记录
 
 本机HTTPS推送因缺少用户名凭据退出，内容提交38363ce仍完整。通过校验后的Git bundle将干净服务器记录仓库从8c6e440快进至38363ce；使用服务器已有SSH身份经GitHub443推送，私钥没有复制。云端在此期间新增00938eb（Pages工作流），首次服务器普通push被fetch-first拒绝。独立HTTPS读取并fetch审阅后，以普通merge保留双方历史和未跟踪研究日志，再提交恢复记录并继续推送；没有force或rebase。
+
+## 实际云端验收
+
+2026-10-11T10:27:04.882326+00:00：服务器普通push exit0，远端main由00938eb前进到3b1522400bf3e53669512a2f2896ac102803b352；本机独立HTTPS ls-remote返回同一SHA。内容提交38363cef50b19c683bc3b4ebe67a55edfcc87068已在该历史中，云端并发Pages提交保留。没有force、rebase或私钥复制。[发布收据](../../../inventories/analysis/2026-10-11/git_publication_receipt_v1.json)记录精确核验、范围和失败恢复。此追加收据提交本身在任务结束前另核对远端；未声称Pages部署或独立科学机制验证完成。
