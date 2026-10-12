@@ -1,0 +1,40 @@
+{
+  "observed_UTC": "2026-10-12T09:54:55.030034+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T09:53:24.769854+00:00",
+      "driver_pid": 334086,
+      "child_pid": 334100,
+      "finished_UTC": "2026-10-12T09:53:52.601659+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T09:53:52.602939+00:00",
+      "driver_pid": 334086,
+      "child_pid": 337887,
+      "finished_UTC": "2026-10-12T09:54:25.600961+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    }
+  },
+  "private_vectors_not_exported": true,
+  "outputs_sha256": {
+    "inventory.json": "2dec9c11f08dde88a84bc951de2fd1ce949ce2354894a82e532af18a0ba6fe95",
+    "independent_audit.json": "7360f82bcc7cc964fbfdbc420d22cd80777c97cd43bb536d3c832e534d46fae4",
+    "source_TF_summary.tsv": "edff58dbad97c870c2b17ada4540d5124395301059d5fa3ad4a900fb1eb6fec7",
+    "all_source_TF_coverage.tsv": "9bfd7e8bd62c1e8b85d88a7d202459d3d4e87525547743dcc44e1e3acf29c5b0",
+    "all_corrected_context_readiness.tsv": "b36463b62578afc0523f48d40eb7d49f03a394a274456af79508bfbed6d58a79",
+    "all_corrected_context_LR_support.tsv": "19a806558324cb78c6a85a258573761e6bb13b9f08c9fd06c138e558c9d212a7"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "status": "PASS_ALL_TF_SCORES_OLS_OFFICIAL_NUMERIC_FUNCTIONS_AND_CORRECTED_CONTEXTS",
+  "observed_UTC": "2026-10-12T09:54:25.460953+00:00",
+  "auditor_sha256": "6043e89eedfaaca88412b5ad579322e6aa8292281f12d41e9aae21860efbfd81",
+  "producer_inventory_sha256": "2dec9c11f08dde88a84bc951de2fd1ce949ce2354894a82e532af18a0ba6fe95",
+  "all_score_values_checked": 2766170,
+  "actual_official_function_values_checked": 44799,
+  "corrected_contexts_checked": 318,
+  "context_TF_records_checked": 369834,
+  "qualified_contexts_checked": 260,
+  "source_reports": [
+    {
+      "gse_id": "GSE116256",
+      "all_score_values_checked": 104286,
+      "actual_official_function_values_checked": 4011,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE131907",
+      "all_score_values_checked": 54768,
+      "actual_official_function_values_checked": 3912,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE148071",
+      "all_score_values_checked": 155365,
+      "actual_official_function_values_checked": 4053,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE161529",
+      "all_score_values_checked": 319704,
+      "actual_official_function_values_checked": 4152,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE176031",
+      "all_score_values_checked": 67350,
+      "actual_official_function_values_checked": 4041,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE178341",
+      "all_score_values_checked": 1088800,
+      "actual_official_function_values_checked": 4083,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE179994",
+      "all_score_values_checked": 116616,
+      "actual_official_function_values_checked": 4068,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE182109",
+      "all_score_values_checked": 158700,
+      "actual_official_function_values_checked": 4140,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE183904",
+      "all_score_values_checked": 280366,
+      "actual_official_function_values_checked": 4083,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE270680",
+      "all_score_values_checked": 284486,
+      "actual_official_function_values_checked": 4143,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    },
+    {
+      "gse_id": "GSE274229",
+      "all_score_values_checked": 135729,
+      "actual_official_function_values_checked": 4113,
+      "status": "PASS_ALL_OLS_AND_OFFICIAL_ULM_MATH"
+    }
+  ],
+  "no_response_p_or_mechanism_validation": true
+}

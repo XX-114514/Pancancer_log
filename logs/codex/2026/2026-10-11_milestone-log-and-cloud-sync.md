@@ -551,3 +551,8 @@ v1 producer09:47:00.170057—09:47:11.795263 UTC exit1：全部源评分后，�
 ## 2026-10-12T17:53:04.614369+08:00 /UTC 2026-10-12T09:53:04.614369+00:00 TF生产已完成但存储类型审计拒绝，v3冻结
 
 v2生产09:51:00.837815—09:51:28.183318 UTC exit0，318材料情境/369834TF记录/260覆盖合格；09:51:28.184569—09:51:29.780795审计exit1，TF名称object数组被allow_pickle=False拒绝。没有数值验收，不发布机制或p结论。v3仅显式Unicode名称，保持公式/输入/门槛，使用新输出目录完整运行。原失败目录不覆盖，所有driver/child已退出。首次v2状态查询错把父run名称替成v2得到NOT_STARTED，修正观察器后同句柄取证，不重新启动旧任务。[失败](../../../inventories/analysis/2026-10-12/major_receiver_TF_preflight_failure_v2.json)，[v3合同](../../../inventories/analysis/2026-10-12/major_receiver_TF_preflight_plan_v3.json)。
+
+
+## 2026-10-12T18:00:09.496433+08:00 /UTC 2026-10-12T10:00:09.496433+00:00 signed TF全量验收与自动先验匹配冻结
+
+v3 producer09:53:24—09:53:52、audit09:53:52—09:54:25 UTC均exit0，2766170全部OLS评分值、44799官方数值函数对照和318情境/369834记录全PASS；260合格情境，各222—288TF/123—991LR RNA支持。乳腺原发26/42可用、LN0/42，不再混材料；44有向细胞对≥2GSE、28≥3GSE。v3传输初次误用旧zip名，本机拒绝后改新包，无服务器科学运行受影响。8e908c3已09:53:16push/09:53:21核验。下一全LR外部受体→TF先验≤3边、全显式路径审计预声明，实际尚未运行，不读取表达/p选路径，无新机制结论。[TF结果](../../../inventories/analysis/2026-10-12/major_receiver_TF_preflight_v3/RESULTS.md)，[自动先验run](../../../runs/20261012_receiver_TF_prior_v1.md)。

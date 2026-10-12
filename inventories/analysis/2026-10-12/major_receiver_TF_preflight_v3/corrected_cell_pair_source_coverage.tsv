@@ -1,0 +1,103 @@
+source	target	testable_GSEs	contexts	current_cancer_labels
+Epithelial cell	Macrophage	6	7	5
+Macrophage	Epithelial cell	6	7	5
+Macrophage	T cell	6	7	6
+T cell	Macrophage	6	7	6
+Epithelial cell	T cell	5	7	5
+T cell	Epithelial cell	5	7	5
+T cell	T/NK lymphoid	5	7	3
+T/NK lymphoid	T cell	5	7	3
+B cell	T cell	4	7	3
+T cell	B cell	4	7	3
+Endothelial cell	Epithelial cell	4	4	4
+Endothelial cell	T cell	4	4	4
+Epithelial cell	Endothelial cell	4	4	4
+Fibroblast	T cell	4	4	3
+T cell	Endothelial cell	4	4	4
+T cell	Fibroblast	4	4	3
+B cell	Epithelial cell	3	5	3
+B cell	T/NK lymphoid	3	5	2
+Epithelial cell	B cell	3	5	3
+T/NK lymphoid	B cell	3	5	2
+B cell	Macrophage	3	4	3
+Macrophage	B cell	3	4	3
+Endothelial cell	Macrophage	3	3	3
+Epithelial cell	Fibroblast	3	3	3
+Fibroblast	Epithelial cell	3	3	3
+Fibroblast	Macrophage	3	3	3
+Macrophage	Endothelial cell	3	3	3
+Macrophage	Fibroblast	3	3	3
+Epithelial cell	T/NK lymphoid	2	3	2
+Lymphoid cell	T cell	2	3	2
+Lymphoid cell	T/NK lymphoid	2	3	2
+Macrophage	T/NK lymphoid	2	3	2
+T cell	Lymphoid cell	2	3	2
+T/NK lymphoid	Epithelial cell	2	3	2
+T/NK lymphoid	Lymphoid cell	2	3	2
+T/NK lymphoid	Macrophage	2	3	2
+B cell	Endothelial cell	2	2	2
+Endothelial cell	B cell	2	2	2
+Endothelial cell	Fibroblast	2	2	2
+Endothelial cell	T/NK lymphoid	2	2	2
+Epithelial cell	Mural cell	2	2	2
+Fibroblast	Endothelial cell	2	2	2
+Mural cell	Epithelial cell	2	2	2
+T/NK lymphoid	Endothelial cell	2	2	2
+B cell	Lymphoid cell	1	2	1
+B cell	Monocyte	1	2	1
+B cell	Myeloid	1	2	1
+Epithelial cell	Monocyte	1	2	1
+Epithelial cell	Myeloid	1	2	1
+Lymphoid cell	B cell	1	2	1
+Macrophage	Monocyte	1	2	1
+Macrophage	Myeloid	1	2	1
+Monocyte	B cell	1	2	1
+Monocyte	Epithelial cell	1	2	1
+Monocyte	Macrophage	1	2	1
+Monocyte	Myeloid	1	2	1
+Monocyte	T cell	1	2	1
+Monocyte	T/NK lymphoid	1	2	1
+Myeloid	B cell	1	2	1
+Myeloid	Epithelial cell	1	2	1
+Myeloid	Macrophage	1	2	1
+Myeloid	Monocyte	1	2	1
+Myeloid	T cell	1	2	1
+T cell	Monocyte	1	2	1
+T cell	Myeloid	1	2	1
+T/NK lymphoid	Monocyte	1	2	1
+B cell	Hematopoietic cell	1	1	1
+Endothelial cell	Monocyte	1	1	1
+Endothelial cell	Mural cell	1	1	1
+Endothelial cell	Myeloid	1	1	1
+Epithelial cell	Mast cell	1	1	1
+Fibroblast	Lymphoid cell	1	1	1
+Fibroblast	Mural cell	1	1	1
+Fibroblast	T/NK lymphoid	1	1	1
+Glial cell	Macrophage	1	1	1
+Glial cell	T cell	1	1	1
+Hematopoietic cell	B cell	1	1	1
+Hematopoietic cell	T cell	1	1	1
+Lymphoid cell	Fibroblast	1	1	1
+Macrophage	Glial cell	1	1	1
+Macrophage	Mast cell	1	1	1
+Macrophage	Mural cell	1	1	1
+Mast cell	Epithelial cell	1	1	1
+Mast cell	Macrophage	1	1	1
+Mast cell	T cell	1	1	1
+Mast cell	T/NK lymphoid	1	1	1
+Monocyte	Endothelial cell	1	1	1
+Mural cell	Endothelial cell	1	1	1
+Mural cell	Fibroblast	1	1	1
+Mural cell	Macrophage	1	1	1
+Mural cell	T cell	1	1	1
+Mural cell	T/NK lymphoid	1	1	1
+Myeloid	Endothelial cell	1	1	1
+Myeloid	T/NK lymphoid	1	1	1
+T cell	Glial cell	1	1	1
+T cell	Hematopoietic cell	1	1	1
+T cell	Mast cell	1	1	1
+T cell	Mural cell	1	1	1
+T/NK lymphoid	Fibroblast	1	1	1
+T/NK lymphoid	Mast cell	1	1	1
+T/NK lymphoid	Mural cell	1	1	1
+T/NK lymphoid	Myeloid	1	1	1
