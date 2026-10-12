@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_SIGNED_RECEPTOR_TF_SHORTEST_PATH_COUNTS_AND_EXAMPLES",
+  "observed_UTC": "2026-10-12T10:01:23.360559+00:00",
+  "auditor_sha256": "1a2d1b5e8e7b7cc17e3228f5a7f20ceb83bd3fe5b762fd4f968f1c9fe1a7fc42",
+  "inventory_sha256": "eae259b7eec32629c0a21fdab33a91d7224482156a2ffc8886fa81a0d16467c6",
+  "signed_edges_checked": 19633,
+  "roots_checked": 926,
+  "receptor_TF_records_checked": 55204,
+  "no_expression_or_p_or_mechanism_validation": true
+}

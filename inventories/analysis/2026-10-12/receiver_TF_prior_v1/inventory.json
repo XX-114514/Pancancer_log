@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_EXTERNAL_PRIOR_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T10:01:22.212395+00:00",
+  "finished_UTC": "2026-10-12T10:01:22.713479+00:00",
+  "producer_sha256": "d604f2685defae85dc52ec4cfe4d3a84a7091b2acf3f2215e3a0a7b2ad2ccb3e",
+  "plan_sha256": "a613b1565bd9beb236efeb47ce70a334f22a567ed9c1752024ba94fca29fb8f6",
+  "eligible_raw_rows": 20042,
+  "unique_signed_edges": 19633,
+  "ambiguous_gene_edges_excluded": 1,
+  "resource_receptors": 1052,
+  "receptors_with_short_TF_paths": 487,
+  "receptor_TF_records": 55204,
+  "unambiguous_shortest_sign_records": 45575,
+  "resource_LR_pairs_with_receptor_paths": 2801,
+  "no_expression_or_p": true,
+  "no_binding_or_activation_validation": true,
+  "outputs": {
+    "private_unique_signed_edges.tsv": "105a2ee2a8dc3e3e75d7b95511413e2b4428580d99004b5347ca895b742efef3",
+    "private_all_receptor_TF_paths.tsv": "5dc3897b0d0ba86e8f83035114ee72c04f0315216eef36e9b307a63dcc2109bd",
+    "receptor_prior_coverage_summary.tsv": "37241e601b080a3f3ff0ff546800174d73c8e678f14975d2c37f753c3c053ad0"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PREDECLARED_NOT_STARTED",
+  "producer_sha256": "090d4319062c5695b5ee525bfc53ed22919f2e9f49390ff05c2f454f86e765d2",
+  "native_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "TF_inventory_sha256": "2dec9c11f08dde88a84bc951de2fd1ce949ce2354894a82e532af18a0ba6fe95",
+  "TF_audit_sha256": "7360f82bcc7cc964fbfdbc420d22cd80777c97cd43bb536d3c832e534d46fae4",
+  "prior_inventory_sha256": "eae259b7eec32629c0a21fdab33a91d7224482156a2ffc8886fa81a0d16467c6",
+  "prior_audit_sha256": "04bedf85373a0eab44c04367b43d4891bf87d50e59f342834167459dd0b604a1",
+  "prior_paths_sha256": "5dc3897b0d0ba86e8f83035114ee72c04f0315216eef36e9b307a63dcc2109bd",
+  "counts_sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+  "LR_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "scope": "all318 corrected contexts/all external LR-TF compatibility, intersect prospectively frozen TF and RNA readiness; keep all family cases regardless design result",
+  "exposure": "source ligand mean logCP10K, all complex components min",
+  "primary_controls": [
+    "source_fraction_in_current172_count_denominator",
+    "target_fraction_in_current172_count_denominator",
+    "log1p(source_n)",
+    "log1p(target_n)",
+    "source_mean_detected_nonLR_genes",
+    "target_mean_detected_nonLR_genes",
+    "target_receptor_meanlog"
+  ],
+  "mixture_sensitivity": "two fixed PCA coordinates per sender and receiver within-major fine count fractions in current context; SVD full centered fractions no identity merge/no p",
+  "gates": {
+    "min_libraries": 20,
+    "min_blocks": 10,
+    "nuisance_span_SVD_relative_tolerance": 1e-10,
+    "min_exposure_residual_ss_per_library": 1e-10,
+    "max_effective_condition": 100000000.0,
+    "max_full_hat": 0.95,
+    "min_residual_df_exclusive": 2
+  },
+  "methods": "nuisance span retains constants/collinear controls; exposure must identifiable; all columns standardized within context; no ligand-TF effects or p",
+  "scientific_limits": [
+    "composition PCs are subtype mixture, not formal state",
+    "mean detected gene covariate contains biology too; adjustment does not remove all technical or sorting confounding",
+    "source-specific blocks/fallback retained",
+    "prior shortest paths are compatibility, not ligand agonism or receptor binding",
+    "sameGSE different contexts not independent validations"
+  ],
+  "privacy": "private samples/PCs/candidate integer arrays stay server; public context and source counts only",
+  "acceptance": "all candidate memberships and source-level summary separately recounted from original masks and private case arrays; design algebra independently checked before any effects published",
+  "auditor_sha256": "625b0a7fe88fb7ef1fbbbed763a92ec00c235ddc84ae525e609c8f598ea4d74a"
+}
