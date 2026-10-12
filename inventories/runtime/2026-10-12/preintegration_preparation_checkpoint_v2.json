@@ -1,0 +1,1830 @@
+{
+  "schema": "public_preintegration_preparation_manifest_v1",
+  "observed_utc": "2026-10-12T03:26:56.755558+00:00",
+  "audit_observed_utc": "2026-10-12T03:11:59.598472+00:00",
+  "audit_sha256": "d0f1a47dfdb53938dcf6fe9714e00557c2027e1f49cc9cdfd7a8a0875d66206e",
+  "author_history_sha256": "3c451bcaa8599cf26944b35e4146f7d686bf97126f97945f488e4ceeabe42550",
+  "n_sources": 3,
+  "n_libraries": 92,
+  "n_audited_prepared_cells": 579361,
+  "scope": "completed_audited_sources_only_not_full_queue_acceptance",
+  "source_final_AC": false,
+  "final_accepted_new_cells": 0,
+  "cross_study_integrated": false,
+  "records": [
+    {
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "branch": "manufactured_CAR_T_product",
+      "n_prepared_cells": 396593,
+      "author_history_reviewed_from_primary": false,
+      "author_ambient_method": "pending",
+      "neural_marker_panel_review_required": false,
+      "subset_scope": "context_review_pending",
+      "libraries": [
+        {
+          "library_token": "000_12be380825ed",
+          "n_prepared_cells": 9407,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/000_12be380825ed/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "001_bfe347e349d7",
+          "n_prepared_cells": 7647,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/001_bfe347e349d7/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "002_6ca025a97c74",
+          "n_prepared_cells": 7349,
+          "n_strict_technical_candidate_cells": 7287,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/002_6ca025a97c74/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "003_821a8a8cd145",
+          "n_prepared_cells": 6685,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/003_821a8a8cd145/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "004_30f898e7c6e9",
+          "n_prepared_cells": 3180,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/004_30f898e7c6e9/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "005_320e78d630b1",
+          "n_prepared_cells": 4562,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/005_320e78d630b1/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "006_497c8304f309",
+          "n_prepared_cells": 3156,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/006_497c8304f309/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "007_0fd8a898145f",
+          "n_prepared_cells": 951,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/007_0fd8a898145f/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "008_d8dd8cfa7bce",
+          "n_prepared_cells": 1453,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/008_d8dd8cfa7bce/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "009_8202f3f4d155",
+          "n_prepared_cells": 17899,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/009_8202f3f4d155/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "010_1adacece4c59",
+          "n_prepared_cells": 12787,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/010_1adacece4c59/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "011_0af5657dc668",
+          "n_prepared_cells": 10384,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/011_0af5657dc668/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "012_5a68a64072ba",
+          "n_prepared_cells": 6800,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/012_5a68a64072ba/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "013_bd6262e69b5d",
+          "n_prepared_cells": 3968,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/013_bd6262e69b5d/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "014_9ce9c04a4640",
+          "n_prepared_cells": 1631,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/014_9ce9c04a4640/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "015_3bcbc11a585e",
+          "n_prepared_cells": 4789,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/015_3bcbc11a585e/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "016_80568c378ee1",
+          "n_prepared_cells": 12578,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/016_80568c378ee1/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "017_9a5db9ad973d",
+          "n_prepared_cells": 6336,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/017_9a5db9ad973d/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "018_c4e9193190ab",
+          "n_prepared_cells": 8403,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/018_c4e9193190ab/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "019_1de6759e7598",
+          "n_prepared_cells": 10152,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/019_1de6759e7598/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "020_1823c23ee4ed",
+          "n_prepared_cells": 9968,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/020_1823c23ee4ed/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "021_2bc4d9190e01",
+          "n_prepared_cells": 5385,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/021_2bc4d9190e01/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "022_c2274ad4a1c6",
+          "n_prepared_cells": 3497,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/022_c2274ad4a1c6/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "023_c21eda09091e",
+          "n_prepared_cells": 2028,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/023_c21eda09091e/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "024_9d9012b043d4",
+          "n_prepared_cells": 5192,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/024_9d9012b043d4/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "025_92f03e9404f5",
+          "n_prepared_cells": 5794,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/025_92f03e9404f5/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "026_8640699d4d3f",
+          "n_prepared_cells": 4457,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/026_8640699d4d3f/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "027_5a943406091d",
+          "n_prepared_cells": 5010,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/027_5a943406091d/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "028_5f5ca565a6e8",
+          "n_prepared_cells": 7735,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/028_5f5ca565a6e8/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "029_305c9a747184",
+          "n_prepared_cells": 6381,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/029_305c9a747184/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "030_9b3aa4ea2813",
+          "n_prepared_cells": 3298,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/030_9b3aa4ea2813/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "031_15143d225d71",
+          "n_prepared_cells": 9698,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/031_15143d225d71/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "032_9a2ae296b796",
+          "n_prepared_cells": 6654,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/032_9a2ae296b796/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "033_6c8cdfe5ee97",
+          "n_prepared_cells": 6575,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/033_6c8cdfe5ee97/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "034_3c6842b11ff8",
+          "n_prepared_cells": 3556,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/034_3c6842b11ff8/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "035_8c8dba21b190",
+          "n_prepared_cells": 11939,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/035_8c8dba21b190/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "036_293c942eacc4",
+          "n_prepared_cells": 4653,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/036_293c942eacc4/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "037_bd56c5aae6c6",
+          "n_prepared_cells": 6497,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/037_bd56c5aae6c6/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "038_9b1598d8a992",
+          "n_prepared_cells": 3859,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/038_9b1598d8a992/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "039_b3d573d1ec31",
+          "n_prepared_cells": 4905,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/039_b3d573d1ec31/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "040_c883a1f8c2ba",
+          "n_prepared_cells": 3943,
+          "n_strict_technical_candidate_cells": 3921,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/040_c883a1f8c2ba/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "041_e36ece279442",
+          "n_prepared_cells": 5778,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/041_e36ece279442/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "042_91e94f593470",
+          "n_prepared_cells": 5260,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/042_91e94f593470/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "043_80eb28e7171b",
+          "n_prepared_cells": 5423,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/043_80eb28e7171b/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "044_fb25c217496f",
+          "n_prepared_cells": 5777,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/044_fb25c217496f/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "045_5a60fb42d2f2",
+          "n_prepared_cells": 7506,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/045_5a60fb42d2f2/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "046_8f1d418a66fc",
+          "n_prepared_cells": 8647,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/046_8f1d418a66fc/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "047_d03848ed1db0",
+          "n_prepared_cells": 9384,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/047_d03848ed1db0/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "048_57a62103acfc",
+          "n_prepared_cells": 9375,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/048_57a62103acfc/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "049_90153e18ba11",
+          "n_prepared_cells": 9139,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/049_90153e18ba11/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "050_0fea20a0fc87",
+          "n_prepared_cells": 5294,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/050_0fea20a0fc87/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "051_f4c0efea58d7",
+          "n_prepared_cells": 3606,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/051_f4c0efea58d7/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "052_ebdb1e3d12a4",
+          "n_prepared_cells": 7497,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/052_ebdb1e3d12a4/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "053_694ac4c8e350",
+          "n_prepared_cells": 10335,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/053_694ac4c8e350/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "054_75a7c06ef005",
+          "n_prepared_cells": 8604,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/054_75a7c06ef005/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "055_7fabccfba410",
+          "n_prepared_cells": 9445,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/055_7fabccfba410/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "056_61f4da21d985",
+          "n_prepared_cells": 10026,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/056_61f4da21d985/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "057_db7092b53935",
+          "n_prepared_cells": 6124,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/057_db7092b53935/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "058_d1571e44a39a",
+          "n_prepared_cells": 8232,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea/058_d1571e44a39a/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "author_DP_state_doublet_retention_sensitivity_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        }
+      ]
+    },
+    {
+      "dataset": "GSE292046",
+      "branch": "T_enriched_nuclei",
+      "n_prepared_cells": 52525,
+      "author_history_reviewed_from_primary": false,
+      "author_ambient_method": "pending",
+      "neural_marker_panel_review_required": false,
+      "subset_scope": "context_review_pending",
+      "libraries": [
+        {
+          "library_token": "000_42b454c88d78",
+          "n_prepared_cells": 7238,
+          "n_strict_technical_candidate_cells": 7178,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE292046/000_42b454c88d78/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "001_ee88cbe73ae0",
+          "n_prepared_cells": 7584,
+          "n_strict_technical_candidate_cells": 7494,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE292046/001_ee88cbe73ae0/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "002_cf3073eeb6df",
+          "n_prepared_cells": 6458,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE292046/002_cf3073eeb6df/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "003_160829f4e0a4",
+          "n_prepared_cells": 6516,
+          "n_strict_technical_candidate_cells": 6497,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE292046/003_160829f4e0a4/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "004_e13c50a99490",
+          "n_prepared_cells": 6946,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE292046/004_e13c50a99490/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "005_7714b080b2e8",
+          "n_prepared_cells": 5863,
+          "n_strict_technical_candidate_cells": 5843,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE292046/005_7714b080b2e8/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "006_37aa4e6a88d1",
+          "n_prepared_cells": 5289,
+          "n_strict_technical_candidate_cells": 5277,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE292046/006_37aa4e6a88d1/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "007_9a555e047679",
+          "n_prepared_cells": 6631,
+          "n_strict_technical_candidate_cells": 6601,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE292046/007_9a555e047679/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        }
+      ]
+    },
+    {
+      "dataset": "GSE294109",
+      "branch": "tissue_or_comparator_context_review",
+      "n_prepared_cells": 130243,
+      "author_history_reviewed_from_primary": false,
+      "author_ambient_method": "pending",
+      "neural_marker_panel_review_required": false,
+      "subset_scope": "context_review_pending",
+      "libraries": [
+        {
+          "library_token": "000_b9511d35f1cc",
+          "n_prepared_cells": 5637,
+          "n_strict_technical_candidate_cells": 5547,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/000_b9511d35f1cc/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "001_77b683168952",
+          "n_prepared_cells": 9141,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE294109/001_77b683168952/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "002_38f4c0be146b",
+          "n_prepared_cells": 5896,
+          "n_strict_technical_candidate_cells": 5843,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/002_38f4c0be146b/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "003_106dbdfb3737",
+          "n_prepared_cells": 4880,
+          "n_strict_technical_candidate_cells": 4859,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/003_106dbdfb3737/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "004_d6ea11a1c802",
+          "n_prepared_cells": 4017,
+          "n_strict_technical_candidate_cells": 4003,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/004_d6ea11a1c802/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "005_6cf9e24cf21d",
+          "n_prepared_cells": 1040,
+          "n_strict_technical_candidate_cells": 1038,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/005_6cf9e24cf21d/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "006_8e2d988640e6",
+          "n_prepared_cells": 6952,
+          "n_strict_technical_candidate_cells": 6749,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/006_8e2d988640e6/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "007_ae445a098085",
+          "n_prepared_cells": 7660,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE294109/007_ae445a098085/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "008_330830a593c7",
+          "n_prepared_cells": 6553,
+          "n_strict_technical_candidate_cells": 6265,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/008_330830a593c7/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "009_98a7a4667ee8",
+          "n_prepared_cells": 8732,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE294109/009_98a7a4667ee8/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "010_e149e82e012c",
+          "n_prepared_cells": 8688,
+          "n_strict_technical_candidate_cells": 8648,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/010_e149e82e012c/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "011_cf7b86493161",
+          "n_prepared_cells": 7494,
+          "n_strict_technical_candidate_cells": 7440,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/011_cf7b86493161/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "012_8f56e52f6086",
+          "n_prepared_cells": 687,
+          "n_strict_technical_candidate_cells": 681,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/012_8f56e52f6086/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "013_a74e84702ca8",
+          "n_prepared_cells": 3353,
+          "n_strict_technical_candidate_cells": 3267,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/013_a74e84702ca8/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "014_d12b604af168",
+          "n_prepared_cells": 1204,
+          "n_strict_technical_candidate_cells": 1199,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/014_d12b604af168/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "015_3b35c8fe9e33",
+          "n_prepared_cells": 2343,
+          "n_strict_technical_candidate_cells": 2157,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/015_3b35c8fe9e33/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "016_40276a5db566",
+          "n_prepared_cells": 571,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE294109/016_40276a5db566/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "017_276d6f8481b5",
+          "n_prepared_cells": 8813,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE294109/017_276d6f8481b5/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "018_a4cdaff843d4",
+          "n_prepared_cells": 11796,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE294109/018_a4cdaff843d4/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "019_bc5d13b30d53",
+          "n_prepared_cells": 1024,
+          "n_strict_technical_candidate_cells": 964,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/019_bc5d13b30d53/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "020_cbd225ea9252",
+          "n_prepared_cells": 7619,
+          "n_strict_technical_candidate_cells": 0,
+          "planned_analysis_count_layer": "counts",
+          "prepared_shard_logical_ref": "objects/GSE294109/020_cbd225ea9252/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending",
+            "strict_technical_eligibility_not_established"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "021_375345b9dd74",
+          "n_prepared_cells": 7516,
+          "n_strict_technical_candidate_cells": 7397,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/021_375345b9dd74/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "022_4a4c223459e8",
+          "n_prepared_cells": 3849,
+          "n_strict_technical_candidate_cells": 3672,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/022_4a4c223459e8/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "023_0b6277d68203",
+          "n_prepared_cells": 1340,
+          "n_strict_technical_candidate_cells": 1312,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/023_0b6277d68203/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        },
+        {
+          "library_token": "024_30cc06c67e32",
+          "n_prepared_cells": 3438,
+          "n_strict_technical_candidate_cells": 3374,
+          "planned_analysis_count_layer": "counts_decontx",
+          "prepared_shard_logical_ref": "objects/GSE294109/024_30cc06c67e32/prepared.zarr",
+          "strict_technical_mask_role": "diagnostic_candidate_not_final_cell_selection",
+          "prepared_normalized_X_may_use_different_layer": true,
+          "planned_layer_is_final": false,
+          "normalization_must_be_recomputed_from_selected_layer": true,
+          "counts_semantics": "immutable_published_upstream_counts_not_proof_of_uncorrected_droplet_counts",
+          "release_gates": [
+            "baseline_study_alias_and_library_overlap_pending",
+            "user_integration_scope_pending",
+            "author_processing_history_and_ambient_model_review_pending"
+          ],
+          "integration_allowed": false
+        }
+      ]
+    }
+  ]
+}

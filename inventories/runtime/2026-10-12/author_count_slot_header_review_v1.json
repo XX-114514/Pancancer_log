@@ -1,0 +1,28 @@
+{
+  "schema": "author_count_slot_header_review_v1",
+  "observed_utc": "2026-10-12T03:20:48.781737+00:00",
+  "records": [
+    {
+      "dataset": "CXG_67b6b9ac_b841_42ce_b2d4_ed2ec12327bd",
+      "matrix_source": "raw/X; duplicate gene symbols summed with integer count conservation",
+      "source_sha256": "9b887ce77ea80bdb6f32af20728c18e635fc2aafb5cf0f595e637f5da7a97809",
+      "author_declarations": {
+        "is_pre_analysis": "False",
+        "author_X_normalization": "LogNormalize"
+      },
+      "exact_pre_or_post_ambient_correction_slot": "unresolved_from_available_file_header",
+      "unfiltered_empty_droplet_background_verified": false
+    },
+    {
+      "dataset": "CXG_34f5307e_7b4d_4a48_b68f_2ba844c6414b",
+      "matrix_source": "raw/X; duplicate gene symbols summed with integer count conservation",
+      "source_sha256": "0bf7a5b96ffbb7e41bbf89d0c5b7d8d56e517072e8162c47ed7a17b7f0d23eb7",
+      "author_declarations": {
+        "is_pre_analysis": "False"
+      },
+      "exact_pre_or_post_ambient_correction_slot": "unresolved_from_available_file_header",
+      "unfiltered_empty_droplet_background_verified": false
+    }
+  ],
+  "source_final_AC": false
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "preintegration_finalizer_verified_start_v1",
+  "observed_utc": "2026-10-12T03:18:00.918487+00:00",
+  "started_utc": "2026-10-12T03:17:30.659509+00:00",
+  "role": "existing_run_terminal_readable_status_and_preparation_index",
+  "code_git_sha": "bc39d7e8e3c9e52e9878d768c734229cb28c7d7c",
+  "component_sha256": {
+    "build_public_preintegration_manifest.py": "f1b8f922d8a2a5ca18815bf002510ea061237dd66f9c3974d96a041dd8818e31",
+    "finalize_public_preintegration_preparation.py": "8a9ec7aac8ba27b41db98cffb54d1f202cd722c4aa66b40e42617f8b1baa1d04",
+    "collect_ambient_preparation_status.py": "344d82c8e6e125373515a1275bdc443a7cd8c8b109b88dce3ef2b1748615df9f"
+  },
+  "author_history_sha256": "3c451bcaa8599cf26944b35e4146f7d686bf97126f97945f488e4ceeabe42550",
+  "process_alive_and_command_exact": true,
+  "status": "awaiting_existing_preprocessing_terminal",
+  "source_final_AC": false,
+  "cross_study_integrated": false,
+  "git_publication": "manual_review_then_ordinary_push"
+}

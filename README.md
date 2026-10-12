@@ -1,5 +1,15 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T11:26:56.773706+08:00 公共来源预处理继续后台执行
+
+[11:20处理快照](inventories/runtime/2026-10-12/AMBIENT_PROGRESS_v3_checkpoint10.md)：323/792文库完成、0失败，保留1,517,029细胞，额外移除60,087个预测双细胞。3完整来源92文库579,361细胞已加强独立验收；[准备索引v2](inventories/runtime/2026-10-12/preintegration_preparation_checkpoint_v2.json)保留所有整合门槛。作者原有污染处理及脑谱系面板限制已落实；原始计数保留。当前不是全量终态，未开始实际整合。
+
+
+## 2026-10-12T11:15:43.446858+08:00 已下载来源前处理与整合准备
+
+[处理快照](inventories/runtime/2026-10-12/AMBIENT_PROGRESS_v3_checkpoint9.md)：11:11时274/792文库、0失败，保留1,340,180细胞。3个完整来源92文库579,361细胞已加强独立验收，并生成[准备清单](inventories/runtime/2026-10-12/preintegration_preparation_checkpoint_v1.json)。LBCL和乳腺作者已记录污染处理，追加估计层须作为敏感性审阅；整合[分支/历史合同](methods/public-source-integration-preparation-v1.md)明确限制。全量仍在后台，来源最终AC为0，未实际整合。
+
+
 ## 2026-10-12T10:54:17+08:00 公共来源前处理：3队列独立验收通过
 
 [最新处理快照](inventories/runtime/2026-10-12/AMBIENT_PROGRESS_v3_checkpoint6.md)：10:53时182/792文库完成、0失败，保留944,249细胞。已完整结束的CAR-T产品、GSE292046和GSE294109共92文库、579,361细胞，逐保留细胞的原始计数、ID、过滤映射、校正及标准化[独立验收通过](inventories/runtime/2026-10-12/ambient_checkpoint_audit_cached_v2.json)。这不是全量终态；污染不可辨识及过度校正复核仍保留，来源最终AC为0，未全局整合。

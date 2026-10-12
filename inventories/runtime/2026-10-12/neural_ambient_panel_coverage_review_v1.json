@@ -1,0 +1,23 @@
+{
+  "schema": "neural_ambient_panel_coverage_review_v1",
+  "observed_utc": "2026-10-12T03:24:37.182560+00:00",
+  "dataset": "CXG_843c1459_e852_429c_9339_17b5760e7716",
+  "n_native_cells": 401253,
+  "author_cell_type_counts": {
+    "glial cell": 335682,
+    "myeloid cell": 29836,
+    "oligodendrocyte": 15599,
+    "T cell": 8249,
+    "pericyte": 4518,
+    "neuron": 4509,
+    "endothelial cell": 2860
+  },
+  "author_labels_are_not_new_final_annotations": true,
+  "production_marker_panel_contains_neural_glial_sets": false,
+  "interpretation": "insufficient_known_broad_lineages_under_current_panel_is_not_proof_of_homogeneous_library",
+  "additional_ambient_layer_role": "diagnostic_only_pending_neural_marker_preservation_review",
+  "planned_preferred_layer_pending_review": "counts",
+  "final_integration_layer_frozen": false,
+  "integration_allowed": false,
+  "production_objects_modified": false
+}

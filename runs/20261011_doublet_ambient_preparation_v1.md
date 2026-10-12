@@ -64,3 +64,13 @@ python scripts/run_ambient_preparation.py --run-root "${PREPROCESS_RUN_ROOT}" --
 - 原文URL与简要方法字段在source_processing_history_overlay_v1，不把filtered/public counts笼统称“未去污染原始液滴”。HGG文献包括不同assay双细胞章节，具体snRNA槽方法须进一步对应，暂不把ATAC/multiome参数移植到当前RNA对象。
 - 新finalizer组件已写入并语法验证：等当前既有队列真实终态及全量独立audit PASS后，写服务器可读terminal状态与整合准备清单；失败记录明确中断，始终不自动整合。尚未启动该组件；Git最终结果发布不自动，须后续脱敏审阅/普通push。
 - 4ff6827已普通push，独立HTTPS SHA一致。当前新增公共矩阵下载继续暂停，论文方法只读核查不启动新矩阵下载。
+
+## 2026-10-12T11:24:37.182560+08:00 后台终态记录组件已核验启动
+
+- 终态记录组件03:17:30 UTC实际启动，03:18:00 UTC独立核实进程命令及builder/finalizer/collector三个SHA，版本bc39d7e已普通push并HTTPS SHA核验。代码等既有323251队列真实结束，不产生新科学模型；完整验收后写可读terminal与全分片准备索引，仍不放行整合；最后Git发布需再审阅。
+- 11:20:50（03:20:50 UTC）323/792文库、0失败、1517029保留细胞、额外60087预测双细胞，严格技术候选552354，尚非全量终态。
+- 对已有LBCL/乳腺H5AD头的最小核查：counts源均为raw/X、重复gene symbol守恒合并，作者is_pre_analysis=False；这些头不能证明exact pre/post校正槽，所以维持unknown并保留v1作者历史门槛。源文件SHA及检查结论另列。
+- 神经谱系覆盖复核：pHGG401253作者标签含335682 glial、15599 oligo、4509 neuron、29836 myeloid、8249 T、4518 pericyte及2860 endothelial；当前诊断marker面板无神经/胶质集合。少于2个“可识别谱系”不能解释为真实单一谱系，新增污染估计需脑谱系marker保留审查；拟优先counts但最终选层未冻结。准备清单原本已全部integration_allowed=false/选层pending，不因模型技术PASS跳过此审查。没有新增正式身份标签或用glial等同全部恶性细胞。
+- 失败尝试：固定SHA push首次被zsh冒号变量修饰误解造成refspec错误，改用结构化subprocess参数普通push成功，未force/改写历史。
+
+神经面板规则已落实到准备索引代码：当前pHGG来源即便模型技术PASS仍拟选counts，并明确neural_glial_marker_panel_and_preservation_review_pending。真实92分片重放计数/门槛不变；合成单一PASS脑分片用于验证不能绕过该门槛，未冒充真实细胞审计。终态组件增加独立attempt版本参数，拟保留v1记录、只替换本任务的记录等待组件为v2；不重启或修改科学生产。实际替换尚待新代码普通push/冻结。

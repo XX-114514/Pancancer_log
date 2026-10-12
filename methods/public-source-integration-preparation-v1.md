@@ -44,3 +44,7 @@ CAR-T旧QC的416,800细胞中，新增预测双细胞移除20,207（4.85%）。�
 [LBCL原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC12417684/)记录SoupX/作者doublet处理，当前598289为非恶性LME子集；[乳腺原文](https://www.nature.com/articles/s41591-024-03215-z)记录Cell Ranger/Cell Bender工作流和Scrublet。当前下载槽是否已对应其校正后矩阵还需核对，不能仅靠整数判定。方法覆盖表[source_processing_history_overlay_v1](../inventories/runtime/2026-10-12/source_processing_history_overlay_v1.json)优先于早期unknown记录。两来源的追加DecontX只保留诊断/敏感性；准备清单拟选counts并要求重新normalize，不直接使用可能来自DecontX的既有X。没有改变生产对象或伪造先前参数。
 
 严格技术候选数不等于最终整合细胞选择；实际选层、细胞掩码和上述历史必须共同冻结。[当前已审计分片清单](../inventories/runtime/2026-10-12/preintegration_preparation_checkpoint_v1.json)仍全部integration_allowed=false。
+
+## 脑谱系的面板覆盖复核
+
+pHGG作者标签的全量聚合证明存在大量胶质/少突/神经细胞，当前诊断panel未覆盖这些谱系。因此少于两个已识别粗谱系不能作为文库真实同质的证据。脑来源追加污染估计仅诊断，神经/胶质marker保留及作者分群上下文复核前不采用其为最终输入，拟优先保留counts；不从作者glial标签直接认定恶性。当前准备清单的所有拟选层本就pending、全局整合gate均false。[实际覆盖证据](../inventories/runtime/2026-10-12/neural_ambient_panel_coverage_review_v1.json)。

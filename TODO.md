@@ -236,3 +236,7 @@ STOP remains in force: no new schema, root audit, release-gate, checksum/provena
 - [ ] 完成9分支792原始文库的初始/复用QC、独立双细胞与污染校正评估，独立验收每个保留细胞的counts/ID/标准化。
 - [ ] 对缺空液滴、单一谱系、模型未收敛或marker损失文库保留限制与复核队列，不能伪称去污染完成。
 - [ ] 准备技术候选掩码及原始基因覆盖；关闭来源别名/文库重复审计后再决定实际跨研究整合。
+
+## 2026-10-12T11:15:43.446858+08:00 新增公共来源预处理
+
+PREP-01 running：9源792文库、冻结生产cdcea29；3完整来源92文库加强验收PASS。PREP-02 done_partial_audited_index：已审92分片准备清单/作者历史覆盖/技术分支合同。PREP-03 next_terminal_audit_and_all_source_index：既有队列结束后全量验收和可读终态；来源别名排重、作者count槽、状态敏感性及实际整合scope仍待，不恢复新下载。

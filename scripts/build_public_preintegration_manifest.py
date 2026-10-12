@@ -8,6 +8,7 @@ from pathlib import Path
 
 
 CAR='CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea'
+NEURAL='CXG_843c1459_e852_429c_9339_17b5760e7716'
 
 
 def build(audit_path, history_path):
@@ -29,11 +30,12 @@ def build(audit_path, history_path):
             if not library['all_checks_pass']:
                 raise ValueError('Unaudited shard cannot enter preparation manifest')
             strict=candidates.get(name,{}).get(token,0)
-            selected='counts' if prior else 'counts_decontx' if strict else 'counts'
+            selected='counts' if prior or name==NEURAL else 'counts_decontx' if strict else 'counts'
             gates=['baseline_study_alias_and_library_overlap_pending','user_integration_scope_pending']
             if prior:gates.append('author_correction_count_slot_lineage_pending')
             else:gates.append('author_processing_history_and_ambient_model_review_pending')
             if name==CAR:gates.append('author_DP_state_doublet_retention_sensitivity_pending')
+            if name==NEURAL:gates.append('neural_glial_marker_panel_and_preservation_review_pending')
             if not strict:gates.append('strict_technical_eligibility_not_established')
             libraries.append(dict(library_token=token,n_prepared_cells=library['n_output'],
                 n_strict_technical_candidate_cells=strict,planned_analysis_count_layer=selected,
@@ -46,6 +48,7 @@ def build(audit_path, history_path):
         records.append(dict(dataset=name,branch=branch,n_prepared_cells=dataset['n_output'],
             author_history_reviewed_from_primary=bool(prior),
             author_ambient_method=prior['author_ambient_method'] if prior else 'pending',
+            neural_marker_panel_review_required=name==NEURAL,
             subset_scope=prior.get('published_subset_scope') if prior else 'context_review_pending',libraries=libraries))
     return dict(schema='public_preintegration_preparation_manifest_v1',observed_utc=datetime.now(timezone.utc).isoformat(),
         audit_observed_utc=audit['observed_utc'],audit_sha256=hashlib.sha256(audit_path.read_bytes()).hexdigest(),
