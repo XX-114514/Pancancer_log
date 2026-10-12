@@ -1,0 +1,20 @@
+{
+  "schema": "preintegration_finalizer_verified_start_v2",
+  "observed_utc": "2026-10-12T03:27:45.745305+00:00",
+  "started_utc": "2026-10-12T03:27:44.817185+00:00",
+  "code_git_sha": "19f6a38c6e88963b3c1d34a34dad382c77aaa002",
+  "component_sha256": {
+    "build_public_preintegration_manifest.py": "cd14134ee43d878298bc93df5b887b97ef4d82a9149725f6cb7a8bdbdbf04e2c",
+    "collect_ambient_preparation_status.py": "344d82c8e6e125373515a1275bdc443a7cd8c8b109b88dce3ef2b1748615df9f",
+    "finalizer": "4078b47889c7d6f4ba9fa6b55223c7d5fd696e993f7bb23cc02f0e683f171f42"
+  },
+  "process_alive_and_command_exact": true,
+  "main_producer_alive_and_unchanged": true,
+  "previous_finalizer_stopped_and_history_preserved": true,
+  "status": "awaiting_existing_preprocessing_terminal",
+  "neural_source_planned_counts_layer": "counts",
+  "neural_marker_review_gate": true,
+  "source_final_AC": false,
+  "cross_study_integrated": false,
+  "git_publication": "manual_review_then_ordinary_push"
+}
