@@ -1,3 +1,7 @@
+# 当前下一步：巨噬—T跨来源响应
+
+先执行并审计[覆盖选择的双向全LR/TF pooled/source/LOSO探索](runs/20261012_macrophage_T_multisource_response_v1.md)，保持原阴性与全分母。结果出来后决定来源限定候选/外部验证；尚无验证通过的跨癌种轴。下方历史待办保留，其完成状态以较晚run结果为准。
+
 # 可执行任务
 
 ## A2-ASSOC验收，A2-PRECISION待运行

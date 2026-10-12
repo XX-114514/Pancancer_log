@@ -618,3 +618,8 @@ CRAN clubSandwich0.7.0原包官方MD5通过，381023bytes；只在本任务R_lib
 ## 2026-10-12T20:27:23.436958+08:00 /UTC 2026-10-12T12:27:23.436958+00:00 联合重采样终态阴性及免疫来源适用性已取证
 
 同49233/49234 producer11:54:10—12:15:54、audit22978012:15:54—12:16:01 UTC exit0，12:19:53 PID均退出。5477实际复核、6069选择/177393家族全核、768显式refit PASS；三模型BH/BY均0，不能据2,023名义记录命名轴，旧阴性保留。全11官方来源标题/宽7癌种梳理；巨噬–T原发5GSE/5癌种机会。179994真实33pre/14on、36患者8配对；on双T/TNK有14库≥20细胞却未满20库门槛，主分析preonly不是无on细胞。274229 current43样本全精确人类/鼠0，官方mouse8的ADT/PBS不能赋给human。角色API全量45s/四gene30s超时，无参考下载成功，不影响已有主计算，不以此标blocked。服务器无rg后改已知文件字段读取；本机首次误用无pandas系统Python后使用bundled恢复，科学数据未改。[复核](../../../inventories/analysis/2026-10-12/major_LR_receiver_TF_wild_v1/RESULTS.md)，[来源适用性](../../../inventories/analysis/2026-10-12/source_cancer_context_review_v1/RESULTS.md)。
+
+
+## 2026-10-12T20:37:56.525513+08:00 /UTC 2026-10-12T12:37:56.525513+00:00 按覆盖选择巨噬—T跨来源新问题
+
+用户要求继续。旧全LR/TF和联合wild三变体全局BH/BY0保留；本轮从原发五GSE/五癌种覆盖出发，两个方向全部4624LR/兼容TF，分层完整调整后共同斜率、各来源方向与LOSO。非按p选端点，CRC同患者跨两加工情境共块，原身份/9CM/Zarr不改。真实运行尚未开始；冻输入/代码/完整分母及24组均衡数值复算，个体向量留服务器。[方案](../../../runs/20261012_macrophage_T_multisource_response_v1.md)。检查README/STATUS/ROADMAP/TODO、RUNTIME_SYNC、最近日志及旧screen/core/launch；AST通过，仓库验证待，未有新科学结果。
