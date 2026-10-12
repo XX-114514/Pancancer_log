@@ -63,3 +63,7 @@ aria2于13:51:38.494517 UTC真实exit1，errno122组quota；双进程不存在�
 ## 2026-10-12T10:20:05.804843+08:00 资源v4验收与实际生产
 
 scp02:13:09—02:16:59 UTC；资源02:17:24—02:17:27 UTC exit0、全部官方MD5与本机SHA一致。新worker v3 production实际02:18:14 UTC启动，manifest/子进程实时核实；audit尚未启动，未据输入或代码通过发布轴。[真实证据](../inventories/analysis/2026-10-12/fullgene_resume_running_checkpoint_v1.json)。45源header审阅/独立审计支线使用新来源汇总，不改3源生物合同。
+
+## 2026-10-12T10:38:40.719500+08:00 全范围生产与独立审计真实验收
+
+生产02:18:14—02:20:18 UTC，审计02:23:49—02:25:47 UTC均exit0；139558612值/1121原单位全量独立复算、原336/15/1008全部保留。02:26:59 UTC接受v17，0登记活跃/0冲突；仅完整基因/先验输入就绪。[终态及SHA](../inventories/analysis/2026-10-12/fullgene_readiness_v17/public_checkpoint_v17.json)。下一项患者证据覆盖表先明确175来源内患者块，再预声明响应模型；当前无新p值/轴验证。

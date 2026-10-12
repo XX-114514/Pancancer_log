@@ -323,3 +323,15 @@ Git原仓库fetch因quota失败，本机HTTPS push缺凭据失败；新/tmp无ha
 新独立header审计代码/合同按全部45/180核输入/outputSHA、基因轴/shape/计数门槛、原节点及旧frozen单位统计，不导入producer，不读counts或统计模型。真实审计尚未执行。后续临床单位review已发现旧frozen121/1169与family clinical table不一致的字段层次：原首轮统计只能称frozen scope。current clinical v2 1290行unit_kind显示402 reviewed_patient，而review_status121reviewed_identity+87reviewed_author_patient，402与208的字段差异尚待交叉核对与来源证据审阅，不把402全部当已审患者。
 
 读取glob JSON曾误入._Mac二进制分叉而UnicodeDecodeError；改为显式正常JSON及排除._后只读成功，没有删除分叉或重跑科学任务。关键问题：实际可比覆盖有限；下一步fullgene生产真实成功→独立全值复算，header独立审计及单位来源核对，再冻结跨癌种响应范围。当前无新的p值/正式状态/验证轴。
+
+## 2026-10-12T10:38:40.719500+08:00 全基因v17交接、患者字段差异追溯及下一覆盖表冻结
+
+UTC 2026-10-12T02:38:40.719500+00:00 /UTC+8 2026-10-12T10:38:40.719500+08:00。真实生产worker02:18:14.731118—02:20:18.896854 UTC exit0，独立auditor02:23:50.537341—02:25:47.546577 UTC，worker02:23:49.734475—02:25:47.639317 UTC exit0；不导入producer，全部1121原节点/文库单元、139558612基因汇总值、285360细胞、336/15/1008逐键/全值复算PASS。registrar v2于02:26:59.157048 UTC接受v17/0活跃/0冲突，handoff SHA63dc3b1198c30796fdad9f81ed86ff3de4a911dde95802c34a1dcd607ad8d2c8。[脱敏证据](../../../inventories/analysis/2026-10-12/fullgene_readiness_v17/public_checkpoint_v17.json)，逐表传输SHA匹配。
+
+当前LR先验249单体匹配/55复合物未组装/32当前prior无精确LR；321记录有靶先验；1008候选×来源中959描述覆盖/45缺靶/4缺接收。数据库精确匹配不等物理单体机制。15记录实际native靶轴173—199/200，但HBEGF200中接收家族≥1%检测仅21、≥10%仅7；APP对应70/27；这些是描述性检测覆盖，不是阴性响应、FDR或新筛选阈值。
+
+45/180审计02:23:18.757318—02:23:20.162884 UTC PASS，auditorSHA7f90431905ce5ecdeecc5f2c5517fcaa458eecb631da5fffb146f347aabd1f58。此前两SSH连接超时不判生产终止，不重复派发；重连同372246/372335确认真实成功。header audit首scp连接失败未执行，随后仅一次真实审计成功。无历史/部分/分叉文件删除。
+
+患者差异现已追溯清楚：legacy194全为GSE178341176文库/62患者及GSE25301318文库/3患者，均与已审265官方侧表mapping_status exact_public_library_match、reviewed_analysis_block逐键一致（71未解US别名另保留）。旧review状态没同步；旧analysis_unit也保留文库键，不能据其304键计患者。现402已审文库/175来源内患者块（GSE17834162、17999436、18210918、18390429、2530133、27068027）；这是来源内块，不证明跨GSE不同人。此前402/208差异pending表述已由本节点证据解决，不否定已有正确使用analysis_block的模型。
+
+新metadata overlay合同锁6真实输入SHA、1290同序/所有原列不变，121frozen+87author+194parent有效证据标签及888samplefallback，原analysis_block不重分配。producer/auditor源码语法通过，真实运行尚未发生。[合同](../../../inventories/analysis/2026-10-12/patient_block_provenance_overlay_plan_v1.json)。canonical/172/9CM、原注释和旧表不改；无临床响应验证或科学轴完成。下一步普通push冻结后实际覆盖表/审计，再依真实可比身份/靶/块设计新的响应检验。无关ambient进度文件与研究日志不暂存。

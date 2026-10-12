@@ -1,5 +1,9 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T10:38:40.719500+08:00 全基因输入里程碑已独立验收
+
+3源285,360细胞/164文库、1121原编号单位、139,558,612基因汇总值及全部336/15/1008先验映射独立复算通过；已登记v17/0活跃/0冲突。[验收证据](inventories/analysis/2026-10-12/fullgene_readiness_v17/public_checkpoint_v17.json)。321/336有配体靶先验，仅输入就绪，不代表受体特异响应/通讯轴验证。45源header/180家族覆盖独立审计通过。194旧患者状态差异已追溯至官方侧表；新[非破坏性证据覆盖表](inventories/analysis/2026-10-12/patient_block_provenance_overlay_plan_v1.json)已冻结待执行。
+
 ## 2026-10-12T10:11:30.425815+08:00 配额扩充后恢复既有分析
 
 用户明确要求继续；实测组硬限2048G、已用约1495G。新[离线资源v4](inventories/analysis/2026-10-12/fullgene_offline_resource_recovery_v4_spec.json)复用本机已校验target，不重复公网下载；生物范围/producer/auditor不变。当前尚未实际传输/启动，先冻结代码及普通push，再核验输入和真实作业。[冻结](inventories/analysis/2026-10-12/fullgene_receiver_target_code_freeze_v4.json)；下方昨日暂停是历史节点。

@@ -1,0 +1,196 @@
+{
+  "status": "PASS_ALL45_HEADERS_ALL180_EXISTING_FAMILY_UNIT_SUMMARIES",
+  "started_UTC": "2026-10-12T02:23:18.757318+00:00",
+  "finished_UTC": "2026-10-12T02:23:20.162884+00:00",
+  "auditor_sha256": "7f90431905ce5ecdeecc5f2c5517fcaa458eecb631da5fffb146f347aabd1f58",
+  "producer_inventory_sha256": "e7c0c38673b4da16805ca1d842f6b34899834101f26ee2e805e2bd68ee47e60f",
+  "source_headers": 45,
+  "source_family_summaries": 180,
+  "checks": [
+    {
+      "gse_id": "GSE115978",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE116256",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE127465",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE131907",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE132465",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE138709",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE139829",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE148071",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE152048",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE155698",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE161529",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE162025",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE163558",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE176031",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE178341",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE178481",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE179994",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE182109",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE183904",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE184362",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE184880",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE188711",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE188737",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE189357",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE189889",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE190597",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE197461",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE200997",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE201347",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE222315",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE228501",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE244101",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE253013",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE256136",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE261774",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE270680",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE273127",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE274229",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE274934",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE281740",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE288479",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE290925",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE297041",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE299340",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    },
+    {
+      "gse_id": "GSE302903",
+      "status": "PASS_NATIVE_HEADER_AND_EXISTING_UNIT_COVERAGE"
+    }
+  ],
+  "count_values_or_full_file_sha_verified": false,
+  "clinical_units_accepted": false,
+  "formal_states": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

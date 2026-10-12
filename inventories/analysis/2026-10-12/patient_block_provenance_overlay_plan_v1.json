@@ -1,0 +1,33 @@
+{
+  "schema": "patient_block_provenance_overlay_plan_v1",
+  "created_UTC": "2026-10-12T02:35:45.946608+00:00",
+  "parent_register_version": "v17",
+  "scope": "Frozen1290 family clinical v2 rows; explicit evidence labels only; retain all original rows/blocks and identities",
+  "expected_evidence_groups": {
+    "reviewed_frozen_identity": 121,
+    "reviewed_author_patient": 87,
+    "reviewed_parent_official_metadata": 194,
+    "unreviewed_sample_fallback": 888
+  },
+  "expected_source_scoped_patient_blocks": 175,
+  "code_sha256": {
+    "build_patient_block_provenance_overlay_v1.py": "8abae3e12152a210e5595b084173555640a1393f88780c5987ffbb8c3a0959ec",
+    "audit_patient_block_provenance_overlay_v1.py": "e26bd9a5fb9a733d0d5b12e00800168aee40c6dbd5a5e7521be9d056cfb0f9de"
+  },
+  "method": "Match inherited194 rows exactly to independently audited265-library primary sidecar;87 rows to audited author mappings;121 to frozen identity. Copy original columns unchanged, resample by audited analysis_block rather than stale analysis_unit. No reassignment of existing blocks or statistical reruns.",
+  "limits": [
+    "402 reviewed libraries are not402 patients",
+    "175 source-scoped blocks are not proven175 cross-GSE independent people",
+    "No outcomes, models, canonical relabels or formal states assigned"
+  ],
+  "status": "PREDECLARED_NOT_STARTED",
+  "input_sha256": {
+    "current_scope": "cbfa96b46e6a6d44512ea69ca8cf1572b1871acddbaee7ac261919d977b685b6",
+    "current_audit": "935bcae11a766cf20b7a50d0cc9810105ebf835c956cf829b212a4f4904e1b2d",
+    "author_mapping": "035960fe17ff05574f7d979e3e8f2c160dda9caff8182ec21dc68338e067fa99",
+    "parent_sidecar": "063c89ff2ce2d0060f2a90124875ff8a37f3ed986ac1a63c7dc63bcc6429b9bc",
+    "parent_audit": "ce4973a43020dcecab6ac8ee5df7c2fd616ed7fce8da9e1d0515522e7bd7624a",
+    "frozen_scope": "f01733c11dc5c5fea57beac1b0189160a215b5576b11673680eab3b270c75faf"
+  },
+  "final_code_freeze_UTC": "2026-10-12T02:38:40.719261+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "fullgene_readiness_public_checkpoint_v17",
+  "observed_UTC": "2026-10-12T02:28:48.793252+00:00",
+  "registered_UTC": "2026-10-12T02:26:59.157048+00:00",
+  "execution_status": "COMPLETE_FULLGENE_PRIOR_READINESS_AUDITED_NOT_AXIS_VALIDATION",
+  "summary": {
+    "source_summary": [
+      {
+        "gse_id": "GSE179994",
+        "source_cells": 144314,
+        "selected_cells": 50970,
+        "libraries": 47,
+        "original_nodes": 4,
+        "unit_rows": 188,
+        "nonempty_units": 187,
+        "units_ge20": 161,
+        "native_genes": 19790,
+        "gene_axis_unique": true,
+        "native_input_sha256": "a2fdf155262df5e90c0f8d018480317b13c58d93f5c83581ec4b762959cba8a1",
+        "original_selected_cache_sha256": "a7bbceb99f83111e55dab1f2c217448f7ddf91ff5c5fecf607737a8db97b17f5"
+      },
+      {
+        "gse_id": "GSE183904",
+        "source_cells": 106696,
+        "selected_cells": 28602,
+        "libraries": 40,
+        "original_nodes": 6,
+        "unit_rows": 240,
+        "nonempty_units": 218,
+        "units_ge20": 123,
+        "native_genes": 24186,
+        "gene_axis_unique": true,
+        "native_input_sha256": "2385c36ae99e0ca12ddf7fddcd63f5bb84f7faf68dd7af4be04de766b7b6f2a4",
+        "original_selected_cache_sha256": "718eb4c25514c7de1a8d7d0546a1bf60d9a37abd28dd673bfacc71970f29a423"
+      },
+      {
+        "gse_id": "GSE270680",
+        "source_cells": 558774,
+        "selected_cells": 205788,
+        "libraries": 77,
+        "original_nodes": 9,
+        "unit_rows": 693,
+        "nonempty_units": 567,
+        "units_ge20": 389,
+        "native_genes": 36601,
+        "gene_axis_unique": true,
+        "native_input_sha256": "6d6e3f07eccb7af211c1204d9058e3eb8077714851664a0775d239a7cb033f22",
+        "original_selected_cache_sha256": "5bb0efc961b03dc841a36dc9ba64c19edeee831dcf468ed9063238e164eed40d"
+      }
+    ],
+    "records": 336,
+    "unique_LR": 209,
+    "followup_records": 15,
+    "source_comparisons": 1008,
+    "selected_cells": 285360,
+    "libraries": 164,
+    "source_cells": 809784,
+    "catalogued_original_nodes": 13,
+    "observed_original_node_union": 9,
+    "unit_rows": 1121,
+    "aggregate_gene_values_checked": 139558612,
+    "LR_status_counts": {
+      "EXACT_SINGLETON_LR_PRIOR": 249,
+      "COMPLEX_NOT_ASSEMBLED_BY_FLAT_PRIOR": 55,
+      "NO_EXACT_LR_PRIOR": 32
+    },
+    "target_coverage_status_counts": {
+      "DESCRIPTIVE_COVERAGE_AVAILABLE": 959,
+      "MISSING_EXACT_LIGAND_TARGET_PRIOR": 45,
+      "RECEIVER_FAMILY_NOT_CAPTURED": 4
+    },
+    "exact_target_prior_records": 321,
+    "prior_dimensions": {
+      "LR_rows": 4986,
+      "target_genes": 33354,
+      "target_ligands": 1226,
+      "ligand_tf_prior_row_symbols": 33354,
+      "ligand_tf_prior_ligands": 1226
+    },
+    "statistical_models_fitted": false,
+    "formal_states": false,
+    "scientific_release": false,
+    "axis_validation_complete": false
+  },
+  "register_schema": "native_LR_program_evidence_register_v17",
+  "registered_active_jobs": [],
+  "handoff_sha256": "63dc3b1198c30796fdad9f81ed86ff3de4a911dde95802c34a1dcd607ad8d2c8",
+  "producer_inventory_sha256": "dd4358cd5f1c8aaa3e26e95f6eb04be7eaf5ee61f13b23cdc58a3021c66f1efc",
+  "producer_sha256": "7910af2797c032a9418b6db738ba1f61c3228a6fe5cbbc139364a9426a2d3f16",
+  "prior_files": {
+    "lr_network_human_21122021.rds": {
+      "sha256": "47c971d2fbba4ecd0ba7485d1846a74054432a0d1a97ea3e6a79ae27d0da8094",
+      "official_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+      "bytes": 20724
+    },
+    "ligand_tf_matrix_nsga2r_final.rds": {
+      "sha256": "bb130724daf2319a50d9da326f17ec4ddc65bd35a674eb45d132f81284d01845",
+      "official_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+      "bytes": 29862142
+    },
+    "ligand_target_matrix_nsga2r_final.rds": {
+      "sha256": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d",
+      "official_md5": "md5:b09606b04b2d4490418d9028c0e58b9f",
+      "bytes": 262116605
+    }
+  },
+  "verified_execution": {
+    "family_LR_fullgene_assets_v4.execution.json": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_RESOURCE_ONLY",
+        "started_UTC": "2026-10-12T02:17:24.112888+00:00",
+        "pid": 359163,
+        "child_pid": null,
+        "role": "offline_prior_verification_not_scientific_model",
+        "script_sha256": "bacd14fb7f8b7b56afa2b1f3a8cd25377885c8da02135f5ee8822c639acefea0",
+        "contract_sha256": "e14dc107efd2fcda593ed392620f84dbe0afffb9e2839a7b8b51af3555c3f574",
+        "finished_UTC": "2026-10-12T02:17:27.318215+00:00",
+        "exit_code": 0
+      },
+      "manifest_sha256": "b5298f5ba4e2297a526616a90747c9c6ded6fa6a80525badd28a652adaebc9a2",
+      "process_absent": {
+        "pid": true
+      }
+    },
+    "family_LR_fullgene_production_v1.execution.json": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_PENDING_FULLGENE_AUDIT",
+        "phase": "production",
+        "started_UTC": "2026-10-12T02:18:14.731118+00:00",
+        "pid": 372246,
+        "role": "fullgene_preparation_or_computational_audit_not_axis_validation",
+        "worker_sha256": "debf951dce1c9149fde02d9c14f05e8b0d50cda2ba3f9895ebdec28cc4e37ce8",
+        "script_sha256": "7910af2797c032a9418b6db738ba1f61c3228a6fe5cbbc139364a9426a2d3f16",
+        "child_pid": 372335,
+        "finished_UTC": "2026-10-12T02:20:18.896854+00:00",
+        "exit_code": 0
+      },
+      "manifest_sha256": "96022223afb1f87a580627a13bbcd261da1e560c3677167c16ab5c93a2793973",
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "family_LR_fullgene_audit_v1.execution.json": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_INDEPENDENT_FULLGENE_AUDIT",
+        "phase": "audit",
+        "started_UTC": "2026-10-12T02:23:49.734475+00:00",
+        "pid": 20656,
+        "role": "fullgene_preparation_or_computational_audit_not_axis_validation",
+        "worker_sha256": "debf951dce1c9149fde02d9c14f05e8b0d50cda2ba3f9895ebdec28cc4e37ce8",
+        "script_sha256": "7bf9e82b1610e17e4301f2e8f34152f3a756d59b5ae0b278cf37d24508845a37",
+        "child_pid": 20766,
+        "finished_UTC": "2026-10-12T02:25:47.639317+00:00",
+        "exit_code": 0
+      },
+      "manifest_sha256": "d7e2ecc842cb89adbdc2ec25becd9dec4af511e59728ee4c037d04527a729a07",
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    }
+  },
+  "state_conflicts": [],
+  "scientific_limits": [
+    "All3native sources were inspected/discovery inputs; not untouched validation",
+    "Original labels represent identity/subtype/marker layer, not formal states",
+    "Current familyextension still has0direct originalCMedge matches; preparation doesnot proveCMdriver",
+    "NicheNet ligand targets cannot identify which receptor mediates a shared ligand response; receptor/path specificity still requires separate evidence",
+    "No genericprogramme/radius/endpoint changed after prior negative spatial results"
+  ],
+  "statistical_models_fitted": false,
+  "formal_states": false,
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "output_sha256": {
+    "all336_prior_coverage.tsv": "5128ec8f92c3e73b5d37e4cdb065b50285ad8e90ea8c66c6223b933660d1f8b0",
+    "all15_followup_prior_coverage.tsv": "65e11246a74ea7ae9e9e20b967e2a21d99a4513a30a08476daee8dc226cb32ca",
+    "all1008_source_target_coverage.tsv": "060a8f4ac6d2ce1b24db0c030ddac24d1a876ce372d98818a0206686e70dca42",
+    "fullgene_source_summary.tsv": "4f8d2d7c5fa2d395634c19f9babc6d4e4592f99185e102956fce8433cde3a367",
+    "independent_all_source_checks.tsv": "293c30033614cb936409be2de687ada19a3972386d435a1bef087db09ca3ef63",
+    "independent_audit.json": "15985514d7f2a6bd48d49aed89e41454ef7a7688e328f3e9a4ba3d077af68656"
+  }
+}

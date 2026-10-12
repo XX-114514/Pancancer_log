@@ -1,0 +1,19 @@
+{
+  "schema": "fullgene_receiver_target_audit_v1",
+  "status": "PASS_ALL336_15_1008_PRIOR_AND_FULLGENE_ORIGINAL_NODE_UNIT_AGGREGATES",
+  "started_UTC": "2026-10-12T02:23:50.537341+00:00",
+  "finished_UTC": "2026-10-12T02:25:47.546577+00:00",
+  "selected_cells": 285360,
+  "unit_rows": 1121,
+  "aggregate_gene_values_checked": 139558612,
+  "candidate_records": 336,
+  "followup_records": 15,
+  "source_comparisons": 1008,
+  "producer_inventory_sha256": "dd4358cd5f1c8aaa3e26e95f6eb04be7eaf5ee61f13b23cdc58a3021c66f1efc",
+  "auditor_sha256": "7bf9e82b1610e17e4301f2e8f34152f3a756d59b5ae0b278cf37d24508845a37",
+  "method": "No producer import; full source CSR sliced by accepted native rows and independently looped original node/library units versus producer block-incidence aggregation; exact unsigned literal prior edges and independently sorted target weights",
+  "statistical_models_fitted": false,
+  "formal_states": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

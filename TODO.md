@@ -1,5 +1,9 @@
 # 可执行任务
 
+## 2026-10-12T10:38:40.719500+08:00 全基因与45源验收已完成
+
+B1-01：done_fullgene_preparation_audited_v17_not_axis_validation；B1-02：done_header_existing_coverage_independent_audit_not_full45_count_acceptance。下一有界任务UNIT-01：按已审265/87/121来源证据制作并独立验收1290行患者证据覆盖表，使用原analysis_block、避免旧analysis_unit误计患者。[冻结](inventories/analysis/2026-10-12/patient_block_provenance_overlay_plan_v1.json)。之后B2响应合同须结合原编号内/情境内靶表达、真实患者块、稀疏与共同状态、独立来源；仍未启动新关联模型。
+
 ## 2026-10-12T10:20:05.804843+08:00 B1真实运行与覆盖发现
 
 READY-02：done_official_MD5_SHA_resource_v4；B1-01：生产RUNNING、独立audit待生产真实成功；B1-02：45源header/既有覆盖完成，独立全部45/180审计已[预声明](inventories/analysis/2026-10-12/reviewed45_header_independent_audit_plan_v1.json)待执行。新增单位核对：frozen scope与后续clinical review字段不混为当前独立患者证据；后续响应合同须使用真实块与来源证据。仍未验证轴/CM驱动。[运行取证](inventories/analysis/2026-10-12/fullgene_resume_running_checkpoint_v1.json)。
