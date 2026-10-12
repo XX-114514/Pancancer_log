@@ -638,3 +638,10 @@ CRAN clubSandwich0.7.0原包官方MD5通过，381023bytes；只在本任务R_lib
 ## 2026-10-12T20:59:37.779726+08:00 /UTC 2026-10-12T12:59:37.779726+00:00 冻结全分母共同程序敏感性；公开校验和换行纠正
 
 上轮结果70305994ebb9eeebdba98bec60ca38bbd63407c4已12:57:46 UTC普通push/12:57:53 HTTPS核验。新增发送HSF1（LR排除，62—66targets）/接收同配体RNA控制，对全部LR三模型运行，不只8阳性；不赋状态、不因衰减宣布伪影。源数组计数/score键已只读核实；生产尚未开始。[方案](../../../runs/20261012_macrophage_T_state_sensitivity_v1.md)。public证据卡CSV默认CRLF在Git转为LF，v1发布manifest该卡SHA是提交前CRLF；规范LF并另存v2校验清单，数值/证据语义不改、保留v1。不删除任何文件；绘图失败额外默认Rplots.pdf保存到本机任务证据目录，未上传。
+
+
+## 2026-10-12T21:02:31.937662+08:00 /UTC 2026-10-12T13:02:31.937662+00:00 全LR自身程序敏感性真实启动
+
+冻结c103f7f0ec7e11387c7b3f472a62d363cf26e7c2已12:59:51 UTC普通push/12:59:58 HTTPS核验；producer13:00:18启动，13:00:34 driver156239/child156247真实存在，无错误，audit未开始。覆盖全部双向LR与TF/三模型，不只8阳性；加入发送HSF1/接收同配体RNA，原患者和完整控制保持。[实测](../../../inventories/analysis/2026-10-12/macrophage_T_state_sensitivity_v1/running_checkpoint_v1.json)。目前未有敏感性结果、不能说已排除共同应激。下一同运行终态/数值核查/原8同TF比较与全family排序，不改原9CM及正式标签。
+
+本机首次日志写入因stdin编码报错，未创建检查点或commit；后续推送得到empty bundle并未执行云端更新。改显式bundled Python/UTF8重写日志，再正常commit/push；科学生产一直运行，不重启。
