@@ -1,5 +1,16 @@
 # 当前项目状态
 
+## 2026-10-12T15:57:59+08:00 原卷Zarr实际写入超过200万细胞
+
+[真实检查点](inventories/runtime/2026-10-12/final_zarr_write_checkpoint_2M_v1.json)：517/792文库、2,050,584细胞、49985特征；配额余量569.89GB，500GB留空满足。继续SPECTRUM和余GSE，最终metadata/逐cell output audit仍待；源AC限制保留，临时卷仅加工，新下载暂停。
+
+
+
+## 2026-10-12T15:48:32.679925+08:00 原CM全精度及原生表达验收
+
+[主178记录/147区间/119接口](inventories/analysis/2026-10-12/CM_LR_permutation_precision_v2/RESULTS.md)，目前0同一端点在两来源q及区间同时支持，主要CRC来源限定；保留其研究价值。全68/381170原生表达重算一致，已可研究复杂度和基因程序。乳腺患者敏感性终态另核；无验证通过的跨癌种轴，原Zarr/身份/9CM不改。
+
+
 ## 2026-10-12T15:35:24+08:00 原卷Zarr已实际写入超过100万细胞
 
 [真实写入检查点](inventories/runtime/2026-10-12/final_zarr_write_checkpoint_1M_v1.json)：272/792文库、1,108,352细胞、49985特征；原卷配额余量582.02GB，500GB留空满足。全部QC/ID原audit PASS、精确指纹0命中，正在继续CSR追加；最终metadata/逐cell输出audit尚待，不能将部分文件作完整对象。来源AC限制保留，备用卷仅加工，新下载暂停。

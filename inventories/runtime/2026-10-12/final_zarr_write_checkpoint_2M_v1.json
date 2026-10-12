@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-12T07:57:58.214884+00:00",
+  "n_libraries": 517,
+  "n_output_cells": 2050584,
+  "n_genes": 49985,
+  "schema": "combined_Zarr_write_checkpoint_2M_v1",
+  "observed_utc": "2026-10-12T07:57:59.672389+00:00",
+  "capacity": {
+    "physical_free_bytes": 4045628518400,
+    "effective_free_bytes": 569893249024,
+    "quota_used_bytes": 1629130006528,
+    "quota_limit_bytes": 2199023255552
+  },
+  "final_reserve_bytes": 500000000000,
+  "reserve_currently_satisfied": true,
+  "source_final_AC": false,
+  "full_output_audit_pending": true
+}
