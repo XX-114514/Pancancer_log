@@ -1,0 +1,61 @@
+{
+  "schema": "fullgene_receiver_target_association_plan_v1",
+  "created_UTC": "2026-10-12T03:40:41.817236+00:00",
+  "parent_scope": "All620 audited interface/original-receiver-node cases,248interfaces,336 programme mappings; current3 discovery sources,not independent validation",
+  "code_sha256": {
+    "fullgene_receiver_target_association_v1.py": "884ea7f2fb1893c00ae5d04df9fe5575bbafe8ebd3842539f8a8aa24501ef5a2",
+    "audit_fullgene_receiver_target_association_v1.py": "0e8cf03692aa3ea0ecb93fa913ee490c36fbd4d44ed5e357d75ab461f5561e39",
+    "fixture_target_association_math_v1.py": "a718401181c862ff4f21627c91ef7449cb556459e37e2c902775f4b06400568d"
+  },
+  "input_sha256": {
+    "preflight_inventory": "164231c1fc5c3c61ad968c03e3f7fff359d49235bf729e1e3f8442f30b7ce38d",
+    "preflight_audit": "0b1cb375103ba8a9aee08bffdf83d2e00c0f2d1a274755913b2fca9dd109c387",
+    "family_cache_inventory": "5498c294ebe073416c0a116915495fda3466169761198e36db7ec6f1f1384782",
+    "family_cache_audit": "40a13f28292a95def619e2434f1450bedcfad031977b88c7df3e5ffbfa929c42",
+    "target_prior": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d"
+  },
+  "fullgene_audit_sha256": "15985514d7f2a6bd48d49aed89e41454ef7a7688e328f3e9a4ba3d077af68656",
+  "score": "External-prior-fixed top200 targets after L/R/all4namingmarker exclusions; native exact genes only,missingness and retained prior-weight mass reported. Standardize each native unit mean_log1pCP10K gene across paired libraries within fixed source/stratum/node; constantgenes standardized0 without deleting their weights. Positive priorweights normalized over measured native targets. No expression reranking or postp selection. Score is unsigned prior-target expression,not standard NicheNet activity/receptor activation.",
+  "models": {
+    "M0_expression_depth": "L,R,logbothnCells,logbothmeanfullRNA,logbothmeannGenes",
+    "M1_abundance_identity": "M0+senderfamily andreceiveroriginalnode within-majorfractions+sendernumberednode mixture; reference last present node fixed from allcontext counts,structurally absent nodes not fabricated. Primary exploratory diagnostic variant.",
+    "M2_sender_shared_programmes": "M1+all6Tsender programmes or3Bsender programmes(IFN,cycling,antigenpresentation),L/R/namegenes excluded,>=4measured and>=60%remaining panel. Missing/nonvariable/collinear controls explicit,never dropped."
+  },
+  "gates": {
+    "libraries": 20,
+    "blocks": 10,
+    "diagnostic_rank_tol": 1e-10,
+    "maximum_condition": 100000000.0,
+    "maximum_leverage": 0.95,
+    "shared_program_minimum_genes": 4,
+    "shared_program_minimum_fraction": 0.6
+  },
+  "resampling": {
+    "repeats": 2000,
+    "minimum_valid_bootstrap": 1800,
+    "seed": 20261012,
+    "permutation": "FreedmanLane residual permutation within current fixed stratum; only prespecified single-library-perpatient-block designs accepted,all325 observed input cases meet this. Unknown/multiple-library designs explicitly fail rather than break blocks.",
+    "bootstrap": "Case resample whole blocks; current blocks one library each. Frozen score/standardization,designs mustretainrank/condition/leverage; CI NA below1800valid replicates.",
+    "limits": "Exchangeability assumptions remain; interval conditional onfixed scores/scales; no correction of unmeasured biological/clinical confounding"
+  },
+  "multiple_testing": "All620 planned nodecases pervariant,unestimable internalp1 solely forBH denominator,public p/q NA; separate diagnostic BH variants. Original discovery-selectionFDR not replaced; allcases chosen from currentdataset,therefore notconfirmatory FDR.",
+  "audit": "All1860 statuses/coefficient/CR1/BH,all325score replays,independent QR positive/negative resampling examples; input-control construction acceptance kept separate until independent replay.",
+  "literature": [
+    {
+      "url": "https://github.com/saeyslab/nichenetr/blob/master/vignettes/ligand_activity_geneset.md",
+      "lesson": "Official NicheNet activity compares a response gene set against expressed background using prior ranking; this newcontinuous expression score is an explicit custom exploratory summary,not that activity metric."
+    },
+    {
+      "url": "https://github.com/saeyslab/multinichenetr",
+      "lesson": "Use sample-level expression andmulti-sample designs; ligand/receptor/target support are distinct criteria,not proof ofcausal communication."
+    }
+  ],
+  "limits": [
+    "Unsigned ligand targets not receptor-specific or evidence ofassembledcomplex",
+    "Nine tested receptor-node identities onlyT/B; not myeloid/all9CM screen",
+    "M2 sharedprogramme adjustment doesnotprove mediator/confounder or remove allstates",
+    "No formal state labels,new integrations or mechanism release"
+  ],
+  "status": "PREDECLARED_NOT_STARTED",
+  "axis_validation_complete": false
+}

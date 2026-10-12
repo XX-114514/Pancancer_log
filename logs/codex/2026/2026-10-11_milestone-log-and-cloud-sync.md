@@ -371,3 +371,13 @@ UTC 2026-10-12T03:15:24.098787+00:00 /UTC+8 2026-10-12T11:15:24.098787+08:00。�
 下一真实有界任务：冻结response定义、所有620记录检验分母、完整协变量、原编号/来源特异机制先验与独立验证来源，然后实际评估完整矩阵并关联/审计；不是改旧半径或程序追显著。本轮无科学失败重跑；未暂存并发新技术元数据/研究日志。diff/JSON/TSV/SHA/隐私与仓库轻量检查后普通push。科学goal保持active，基础preflight不是完成目标。
 
 补充范围核对：输入冻结13节点目录；原336候选实际仅T/B三家族，因此620条展开涵盖9个接收编号，4个髓系目录节点不在原候选接收框架、没有检验，不能当阴性或宣称本轮覆盖所有髓系/9CM轴。没有因新结果删除它们；未来原9CM/全细胞对另范围自动筛查。提交前diff/结构化SHA/TSV及仓库检查0 errors/1既有历史路径warning；未上传样本/患者/矩阵，无关技术元数据和研究日志保留。
+
+## 2026-10-12T11:40:41.817236+08:00 先验靶表达关联与完整控制模型预声明
+
+UTC2026-10-12T03:40:41.817236+00:00 /UTC+8 2026-10-12T11:40:41.817236+08:00。上一goal turn是progress：全部620/336预检及原生cell/QR独立复算已落盘和云端f348597。本次核实v17/active空，association目录不存在；family cache/已审结果/官方prior实际SHA锁定。只读观察无等待中的科学进程，不把旧执行文件当活跃。
+
+[合同](../../../inventories/analysis/2026-10-12/fullgene_receiver_target_association_plan_v1.json)：全部620固定原接收编号×3模型=1860记录，保留所有缺失/失败。外部top200目标及权重固定；精确native基因的meanlogCP按同情境单位标准化，常数genez0保留权重，缺gene权重质量报告；这是自定义“先验靶表达”而非标准NicheNet配体活性/受体激活。官方[基因集教程](https://github.com/saeyslab/nichenetr/blob/master/vignettes/ligand_activity_geneset.md)以靶预测解释响应基因集/表达背景；[MultiNicheNet](https://github.com/saeyslab/multinichenetr)说明样本级/多条件与配体、受体、靶证据分开。未安装或伪称运行这些包，不借其排名称显著或因果。
+
+M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、发送编号混合；M2按既有适用性T6/B3共享程序，全排L/R及4namegenes、至少4gene/60%残余panel。源/情境存在成员从全context计数确定reference，与Y/p无关；必要列不可估计不删。20样本/10块、rank/condition<1e8/leverage<=.95，2000残差置换和case块bootstrap、valid>=1800才给bootstrapCI。所有325输入当前都单库/块，重复库设计未实现交换规则时明确拒绝；不拆患者。每variant620完整BH作筛选后诊断，不替代原305184发现FDR或独立确认。
+
+新producer/auditor源码语法通过，数值auditor不importproducer，全部1860系数/CR1/BH及325分数官方prior/全gene replay，另独立正负例2000重采样；控制变量构建全输入审阅与数值审计的接受层次分别保留。实际生产/审计尚未启动；数学已知系数/共线fixture将先检查，再真实执行。未更改canonical/旧阴性/身份或病例块，不上传私有样本设计。读取AGENTS/README/STATUS/ROADMAP/TODO、RUNTIME_SYNC、run和task/daily；保留并发技术header审阅/日志。轻量验证普通push后派发。科学目标active，尚无可验证新轴。
