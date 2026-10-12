@@ -263,3 +263,10 @@ prepare_v3实际启动2026-10-12T02:15:17.694990 UTC（10:15:17 UTC+8），代�
 - 真正9来源/792文库3180973细胞、49985稳定特征全部CSR/metadata写完，精确隔离0；采用DecontX校正951701细胞，其余采用发布源counts（作者前处理/脑面板/模型失败或不可辨识/高损失门槛保持）。source_final_AC=false、正式新增0，未做生物学批次校正或新注释。
 - 08:29:25 UTC输出audit实际PID63966，已逐cell核对首5文库30624细胞、检查PASS。全量仍pending，不能把文件存在/merge exit0当输出独立验收通过。
 - 最终gene mask、原ID/元数据、analysis_count_origin及校正差值均随对象；counts为稳定ID求和轴、X为选层后重新normalize。随后全行output audit、无外部软链接检查、小型过滤/旧失败/修复証据保存在原卷、实际du/配额、标准读接口验证及普通push交付。
+
+
+## 2026-10-12T17:02:37.703184+08:00 最终文件独立验收过半
+
+- 只读观察输出audit：399/792文库、1,622,434/3,180,973细胞，累计失败0；乳腺/CAR/LBCL已全部核对，HGG继续。完整终态仍pending，不发布最终通过。
+- [过半证据](../../../inventories/runtime/2026-10-12/final_zarr_independent_audit_half_checkpoint_v1.json)仅聚合计数/状态，不含患者或单细胞行。
+- 完整矩阵已在原项目卷，临时卷仅前处理；待全量输出审计PASS后保存小型过滤/审计证明、验证无外部链接、标准AnnData读取及实测空间，并普通push交付。原权威库、新下载暂停与正式来源AC=0限制继续保留。

@@ -1,0 +1,15 @@
+{
+  "schema": "public_final_Zarr_audit_progress_v1",
+  "observed_utc": "2026-10-12T09:02:37.703184+00:00",
+  "observed_UTC_plus8": "2026-10-12T17:02:37.703184+08:00",
+  "n_total_cells": 3180973,
+  "n_total_libraries": 792,
+  "n_audited_cells": 1622434,
+  "n_audited_libraries": 399,
+  "n_failed_audited_libraries": 0,
+  "final_output_audit_status": "running",
+  "source_final_AC": false,
+  "final_accepted_new_cells": 0,
+  "final_volume": "original_project_volume",
+  "temporary_volume_role": "processing_only"
+}
