@@ -499,3 +499,8 @@ All426 original breast cases/1178 CM mappings, four full families=4712 planned m
 ## 2026-10-12T14:43:34.973551+08:00 / UTC 2026-10-12T06:43:34.973551+00:00 乳腺原发患者设计预检完成
 
 全4712设计：去两端基础1037目标系数可识别、139覆盖不足、2高影响；原H基础780可识别、259高影响、139覆盖不足。两完整作者亚型模型各1039高影响、139覆盖不足，不能宣称排除亚型影响。COL原发30输出库/28编号，五个CM去两端基础均可识别，完整亚型均高影响。仅设计检查，无新p、效应或全球患者身份变化。[预检](../../../inventories/analysis/2026-10-12/GSE161529_metadata_recon_v2/primary_patient_design_preflight_v1.json)。
+
+
+## 2026-10-12T15:07:21.172726+08:00 /UTC 2026-10-12T07:07:21.172726+00:00 现成8源全基因单位可复用，表达口径验证冻结
+
+8来源14466候选sample/node单位逐一比对当前细胞计数，0错位、0缺失、0额外。旧node_index必须按268行原catalog位置→稳定node_id→172当前标签，不能当当前number；旧unit患者字段不复用。固定全部68方向/381170原观测、4624原资源，核验复合物最小组分logCP均值产品/均值是否等于LIANA1.7.1原分数，表达差异作为证据记录不覆盖旧结果。平均检测基因及总logCP表达量用于后续复杂度敏感性，兼含生物/技术影响，不直接称状态、TF或QC修正。计划已冻结，真实preflight尚未执行。首探系统Python缺pandas，改用既有scanpy环境后完成，未重读或下载RNA。[合同](../../../inventories/analysis/2026-10-12/CM_native_expression_preflight_plan_v1.json)，[对齐](../../../inventories/analysis/2026-10-12/CM_native_expression_preflight_v1/unit_alignment_probe.json)。

@@ -1,0 +1,80 @@
+{
+  "observed_UTC": "2026-10-12T06:54:06.461715+00:00",
+  "node_catalog_rows": 268,
+  "current_node_catalog_rows": 172,
+  "source_checks": [
+    {
+      "gse_id": "GSE131907",
+      "n_candidate_units": 1731,
+      "n_count_table_units": 1731,
+      "n_common": 1731,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    },
+    {
+      "gse_id": "GSE148071",
+      "n_candidate_units": 854,
+      "n_count_table_units": 854,
+      "n_common": 854,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    },
+    {
+      "gse_id": "GSE161529",
+      "n_candidate_units": 1665,
+      "n_count_table_units": 1665,
+      "n_common": 1665,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    },
+    {
+      "gse_id": "GSE178341",
+      "n_candidate_units": 4473,
+      "n_count_table_units": 4473,
+      "n_common": 4473,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    },
+    {
+      "gse_id": "GSE179994",
+      "n_candidate_units": 672,
+      "n_count_table_units": 672,
+      "n_common": 672,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    },
+    {
+      "gse_id": "GSE182109",
+      "n_candidate_units": 1209,
+      "n_count_table_units": 1209,
+      "n_common": 1209,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    },
+    {
+      "gse_id": "GSE183904",
+      "n_candidate_units": 1272,
+      "n_count_table_units": 1272,
+      "n_common": 1272,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    },
+    {
+      "gse_id": "GSE270680",
+      "n_candidate_units": 2590,
+      "n_count_table_units": 2590,
+      "n_common": 2590,
+      "count_mismatches": 0,
+      "extra_native_units": 0,
+      "missing_native_units": 0
+    }
+  ],
+  "new_statistical_p": false
+}
