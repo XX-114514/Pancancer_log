@@ -1,5 +1,11 @@
 # 当前项目状态
 
+## 2026-10-12T14:51:10+08:00 全量容量门槛通过，正在精确指纹排重
+
+全部792文库压缩估算[43.22GB矩阵/70.35GB峰值含余量](inventories/runtime/2026-10-12/final_zarr_full_storage_budget_public_v1.json)，有效配额593.60GB，500GB留空满足。全9源QC/ID已独立PASS；合并现在逐cell比对54GSE baseline与new-to-new，再原卷CSR追加。49985特征含歧义/缺失标记，最终实际大小和输出audit仍待，未增加正式来源AC，新下载暂停。
+
+
+
 ## 2026-10-12T14:41:57+08:00 全9源审计PASS，实际Zarr组装已恢复
 
 [完整独立audit](inventories/runtime/2026-10-12/ambient_full_independent_audit_identifier_v4.json)：792文库、3180973细胞、全部PASS；编号修复只改CSV读法，科学count/gate完全一致。旧失败证据保留。[实际组装attempt v3](inventories/runtime/2026-10-12/combined_zarr_assembly_public_start_attempt_v3.json)PID25352/四组件冻结，最终原data4 v2目录。接下来指纹隔离、稳定ID流式合并、逐cell输出audit；此时尚未称最终对象完成。源正式AC/污染限制保留，新下载暂停。

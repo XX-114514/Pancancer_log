@@ -227,3 +227,11 @@ prepare_v3实际启动2026-10-12T02:15:17.694990 UTC（10:15:17 UTC+8），代�
 - RMC原23880行floor/mt/作者flag/过滤/保留/ID全部PASS，5958假不一致由CSV前导零解析修正；旧v3失败报告/源码/terminal仍封存在原run config中，canonical只在新完整audit PASS后切换。未删除历史、未重跑任何DD/去污染模型。
 - 06:41:57 UTC组装attempt v3实际启动PID25352：wrapper7366dc…，merger171d2f…，final auditor6e273a…，identity helperc6e68e…；代码Git eb72e0b，四组件SHA核实。原data4 final run仍v2，保留初始start/log；新attempt后缀、scratch v3防碰撞；科学矩阵尚待流式写入与最后逐行audit。
 - 全量报告700405bytes已人工/路径/隐私审查，仅opaque library token、boolean检查和汇总；无患者/cell行、矩阵或内部路径。已授权签名代理06:42再续期，不复制私钥或更换科学端口。
+
+
+## 2026-10-12T14:48:26.408320+08:00 全792压缩容量门槛通过，精确指纹进行中
+
+- 全792文库实测压缩估算43.22GB矩阵：counts10.69、X23.80、实际采用去除量8.73；含35%+12GB余量70.35GB。有效配额593.60GB，用户500GB十进制留空可满足；此为预估，不是最终实际占用。全预算SHA2f1ecc75…，公开版去除逐文库压缩明细。
+- 稳定特征49985，与预检一致；当前已进入逐细胞baseline及new-to-new精确计数/原barcode指纹，06:51:10已到CAR第17分片，前述分片n_flagged0；整体排重仍待，不能把部分无命中当作全量新增AC。source alias最终审查继续pending。
+- 一次附加只读help误直接执行无executable标志.py得到Permission denied；实际运行始终由冻结Python显式启动、主合并进程正常，未chmod、未重启。该失败与科学计算无关，后续只读状态不再调用多余help。
+- 最终counts/采用差值/X及基因测量掩码直接原卷CSR分块；R交换不复制。等待全指纹、实际写入及输出逐cell独立audit，下载暂停、原权威Zarr保持。

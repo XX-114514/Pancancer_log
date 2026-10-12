@@ -1,0 +1,26 @@
+{
+  "observed_utc": "2026-10-12T06:48:26.408320+00:00",
+  "matrix_estimate_bytes": 43220839607,
+  "matrix_estimate_by_layer": {
+    "counts": 10693023726,
+    "X": 23799369956,
+    "ambient_removed_counts": 8728445925
+  },
+  "headroom_multiplier": 1.35,
+  "metadata_QC_and_chunk_overhead_allowance_bytes": 12000000000,
+  "expected_peak_bytes": 70348133469,
+  "reserve_bytes": 500000000000,
+  "capacity": {
+    "physical_free_bytes": 4069348118528,
+    "effective_free_bytes": 593595850752,
+    "quota_used_bytes": 1605427404800,
+    "quota_limit_bytes": 2199023255552
+  },
+  "schema": "combined_Zarr_full_792_storage_budget_public_v1",
+  "n_libraries_calibrated": 792,
+  "n_sources_calibrated": 9,
+  "n_genes": 49985,
+  "n_pre_fingerprint_cells": 3180973,
+  "private_full_budget_sha256": "2f1ecc7544531871f4cb7115a34555788f58eb84fd0e955d27d3b007bccd906a",
+  "projected_fit": true
+}
