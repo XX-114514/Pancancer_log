@@ -1,0 +1,37 @@
+{
+  "schema": "fullgene_receiver_response_preflight_plan_v1",
+  "created_UTC": "2026-10-12T02:54:26.724235+00:00",
+  "parent_handoff_sha256": "63dc3b1198c30796fdad9f81ed86ff3de4a911dde95802c34a1dcd607ad8d2c8",
+  "input_sha256": {
+    "full_inventory": "dd4358cd5f1c8aaa3e26e95f6eb04be7eaf5ee61f13b23cdc58a3021c66f1efc",
+    "full_audit": "15985514d7f2a6bd48d49aed89e41454ef7a7688e328f3e9a4ba3d077af68656",
+    "native_inventory": "4e8ff089c20dd232dde4546d473a66cc0541fd2ffc7775ab6bb77da145b95ef5",
+    "provenance_inventory": "14d645b71502c2f1a6fcd8453882b9261c48949c5a99ce8834793d489d73ccc0",
+    "provenance_audit": "baef7eb72fb4d351623e2aa8d8a51343058f512f928b0bbb3dfd8804af1b62ac",
+    "membership": "04d127a0edfa682ce253543171e1e642fbb9821c1ffc4e095d6dbe6774ba2e5b",
+    "fixed_candidates": "d6ccd1f825117cd3a0c1aef079a2f22eb9c73a5800b2eddfa4307f3bf04f8e3b"
+  },
+  "code_sha256": {
+    "fullgene_receiver_response_preflight_v1.py": "4c3ee9d60151e387a63069d07131ace5026223b560ff523fd53ea0174618a17f",
+    "audit_fullgene_receiver_response_preflight_v1.py": "ea8df3808b9de277cd4655ced44a57ad98bf2954f24ef670497413d9c61d5695"
+  },
+  "scope": "All336 records deduplicated by source/stratum/sender/receiver/L/R; map back every record; catalogue13 receivers retained including source absence",
+  "gates": {
+    "endpoint_cells": 20,
+    "library_gate": 20,
+    "block_support_minimum_diagnostic": 10,
+    "block_support20_separately_reported": true,
+    "target_variance_numeric_tolerance": 1e-12,
+    "design_rank_relative_tolerance": 1e-10
+  },
+  "design": "9columns intercept,L,R,log sender/receiver cellcounts,log mean fullRNA andnGenes on both ends; diagnostic only, does not include final major fractions/sender mixtures/shared programmes",
+  "complex_policy": "Constituents all measured; joint-positive RNA requires samecell positivity; means of log constituent expression only diagnostics, not assembled/functional complex strength",
+  "limits": [
+    "No coefficients,pvalues,causal or receptor-specific activity",
+    "Expression/count screens do not prove final-model identifiability",
+    "Targets fixed by accepted prior, no expression-based reranking",
+    "3sources were discovery sources; no independent validation"
+  ],
+  "status": "PREDECLARED_NOT_STARTED",
+  "final_code_freeze_UTC": "2026-10-12T02:58:50.465710+00:00"
+}

@@ -347,3 +347,13 @@ UTC 2026-10-12T02:48:39.301099+00:00 /UTC+8 2026-10-12T10:48:39.301099+08:00。v
 本节点新增JSON/表SHA解析通过，源码语法此前通过；diff/privacy/相对链接与仓库轻量检查后普通push。患者行、原始表达、凭据未提交，无删除或改历史；并发预处理产物保留且不称本CM完成。建议commit：records: accept patient-block provenance overlay and advance response readiness。
 
 本节点提交前检查：git diff --check及仓库验证通过（0 errors/1既有历史内部路径warning）；新增JSON解析与输出SHA/6来源表复核通过。共享STATUS/TODO/daily只暂存本节点自己的新增段；保留并发ambient段/未跟踪产物，未将私有1290行导出。目标继续active，输入/metadata验收不能满足轴或独立机制验证完成条件。
+
+## 2026-10-12T10:58:50.466041+08:00 全范围原编号响应预检已冻结
+
+前一goal turn为progress：全基因v17及1290行患者证据覆盖表真实执行/独立审计并已云端52916ab。当前实测v17/活跃空，父handoff SHA63dc3b1198c30796fdad9f81ed86ff3de4a911dde95802c34a1dcd607ad8d2c8，输入审计PASS，新preflight目录不存在。
+
+本轮[合同](../../../inventories/analysis/2026-10-12/fullgene_receiver_response_preflight_plan_v1.json)锁7输入SHA及producer/auditor SHA：全部336记录按来源/固定stratum/发送家族/接收家族/L/R去程序重复再全量回映；原13目录接收节点分别检查，来源未捕获也保留。输出端点≥20细胞的文库、真实块/已审患者块、同细胞复合物RNA联合阳性、固定先验靶在native轴/≥1%及10%检测/跨单位变异。保留20文库和10/20块支持诊断，不把RNA复合物或先验当功能结合。
+
+九列L/R、双方细胞数、完整RNA和nGenes及截距设计只做SVD诊断，不拟合系数或p；它尚不含最终major分母、发送身份混合和共同程序，不能冒称主模型可估计。独立auditor不导入producer，以原生逐细胞cache重构两端计数/全RNA归一化L/R均值、患者块和QR秩，核全部节点记录/336映射及靶覆盖。真实生产/审计尚未开始。缺失数值用nullable整数避免混合CSV类型误读；保留旧表/身份/患者块/阴性/失败，不改canonical。
+
+已读AGENTS/README/STATUS/TODO/ROADMAP、RUNTIME_SYNC、相关run/daily/task、已审input artifacts；未暂存并发ambient段、脚本或未跟踪产物。源码语法及冻结SHA检查通过；diff/仓库轻量验证和普通push后实际派发，检查真实终态再发布结果。科学目标仍未完成，预检通过不是验证轴。建议commit：tools: freeze full candidate original-node response feasibility and audit。
