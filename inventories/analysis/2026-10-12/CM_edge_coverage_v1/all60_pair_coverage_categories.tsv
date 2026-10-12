@@ -1,0 +1,61 @@
+pair_id	source	target	CM	n_contexts_ge10	n_contexts_ge20	n_GSE_ge20	n_cancer_labels_ge20	GSE_ge20	cancer_labels_ge20	coverage_category
+PAIR001	Antibody_secreting_B_cell_MZB1_51	Mural_cell_CALD1_126	CM08	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR002	B_cell_CD83_40	Lymphoid_cell_IL7R_66	CM05	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR003	B_cell_CD83_40	Mast_cell_HDC_26	CM05;CM06	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR004	B_cell_CD83_40	Mural_cell_COX4I2_61	CM05	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR005	B_cell_CD83_40	Myeloid_FCER1G_65	CM05	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR006	B_cell_HLA-DRA_24	Mast_cell_TPSAB1_25	CM02;CM09	2	0	0	0			lower_coverage_not_primary_model_ready
+PAIR007	B_cell_HLA-DRA_24	T_NK_lymphoid_NKG7_20	CM02;CM09	13	2	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR008	B_cell_HLA-DRA_24	T_cell_IL7R_28	CM02;CM09	16	3	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR009	B_cell_MS4A1_19	Regulatory_T_cell_CTLA4_15	CM01	8	1	1	1	GSE270680	Gastric cancer	source_limited_coverage_only
+PAIR010	Blood_vascular_endothelial_cell_RAMP2_10	Fibroblast_SFRP2_17	CM03	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR011	Blood_vascular_endothelial_cell_RAMP2_10	Macrophage_IFI6_18	CM03	2	1	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR012	Blood_vascular_endothelial_cell_RAMP2_10	Monocyte_TYROBP_37	CM03	3	1	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR013	Blood_vascular_endothelial_cell_RAMP2_10	Mural_cell_CALD1_13	CM03	2	0	0	0			lower_coverage_not_primary_model_ready
+PAIR014	Blood_vascular_endothelial_cell_RAMP2_10	Myeloid_FCER1G_63	CM03	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR015	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	CM01;CM03	16	3	2	2	GSE178341;GSE182109	Colorectal cancer;Glioblastoma	multiple_source_and_cancer_labels_coverage_only
+PAIR016	CD8_T_cell_NKG7_9	T_NK_lymphoid_NKG7_20	CM01;CM03	29	5	4	3	GSE131907;GSE178341;GSE179994;GSE183904	Colorectal cancer;Gastric cancer;Lung cancer	multiple_source_and_cancer_labels_coverage_only
+PAIR017	Endothelial_cell_ACKR1_50	Fibroblast_SFRP2_17	CM03;CM08;CM09	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR018	Endothelial_cell_ACKR1_50	Macrophage_CD74_39	CM08;CM09	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR019	Endothelial_cell_ACKR1_50	Myeloid_FCER1G_63	CM03	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR020	Endothelial_cell_CA4_54	Macrophage_IFI6_18	CM04	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR021	Endothelial_cell_CA4_54	Myeloid_FCER1G_95	CM04	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR022	Epithelial_cell_KRT18_52	Fibroblast_SFRP2_17	CM04;CM06;CM07;CM08;CM09	15	3	3	3	GSE161529;GSE178341;GSE183904	Breast cancer;Colorectal cancer;Gastric cancer	multiple_source_and_cancer_labels_coverage_only
+PAIR023	Epithelial_cell_KRT18_52	Macrophage_IFI6_18	CM04	16	4	3	3	GSE148071;GSE161529;GSE178341	Advanced non-small cell lung cancer;Breast cancer;Colorectal cancer	multiple_source_and_cancer_labels_coverage_only
+PAIR024	Epithelial_cell_KRT18_52	Mast_cell_TPSAB1_25	CM04;CM09	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR025	Epithelial_cell_KRT18_52	Monocyte_TYROBP_37	CM04;CM06;CM07;CM08;CM09	18	2	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR026	Fibroblast_SFRP2_17	Mast_cell_HDC_26	CM05;CM06	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR027	Fibroblast_SFRP2_17	Monocyte_TYROBP_37	CM03;CM04;CM05;CM06;CM07;CM08;CM09	8	0	0	0			lower_coverage_not_primary_model_ready
+PAIR028	Fibroblast_SFRP2_17	Mural_cell_CALD1_13	CM03;CM06;CM07	2	1	1	1	GSE161529	Breast cancer	source_limited_coverage_only
+PAIR029	Fibroblast_SFRP2_17	cDC1_LGALS2_43	CM03;CM05;CM07	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR030	Lymphoid_cell_CCL5_33	Monocyte_TYROBP_37	CM01;CM02;CM04;CM06;CM07	2	0	0	0			lower_coverage_not_primary_model_ready
+PAIR031	Lymphoid_cell_CCL5_33	Neutrophil_S100A8_35	CM02;CM06;CM07	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR032	Lymphoid_cell_IL7R_66	Mural_cell_COX4I2_61	CM05	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR033	Lymphoid_cell_IL7R_66	Myeloid_FCER1G_65	CM05	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR034	Macrophage_CD74_39	T_cell_IL7R_28	CM02;CM09	10	0	0	0			lower_coverage_not_primary_model_ready
+PAIR035	Macrophage_IFI6_18	Monocyte_TYROBP_37	CM01;CM03;CM04	20	2	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR036	Macrophage_IFI6_18	Myeloid_FCER1G_95	CM04	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR037	Macrophage_IFI6_18	Myeloid_LAMP3_5	CM01	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR038	Macrophage_IFI6_18	Regulatory_T_cell_CTLA4_15	CM01	15	2	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR039	Macrophage_IFI6_18	T_NK_lymphoid_NKG7_20	CM01;CM03;CM04	14	2	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR040	Macrophage_SELENOP_42	cDC1_LGALS2_43	CM05;CM07	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR041	Mast_cell_HDC_26	Monocyte_TYROBP_37	CM05;CM06	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR042	Mast_cell_HDC_26	Mural_cell_COX4I2_61	CM05	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR043	Mast_cell_HDC_26	T_NK_lymphoid_NKG7_20	CM05;CM06	4	0	0	0			lower_coverage_not_primary_model_ready
+PAIR044	Mast_cell_HDC_26	cDC1_LGALS2_43	CM05	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR045	Mast_cell_TPSAB1_25	Monocyte_TYROBP_37	CM02;CM04;CM09	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR046	Mast_cell_TPSAB1_25	Myeloid_FCER1G_95	CM04	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR047	Mast_cell_TPSAB1_25	T_cell_IL7R_28	CM02;CM04;CM09	4	0	0	0			lower_coverage_not_primary_model_ready
+PAIR048	Monocyte_TYROBP_37	Mural_cell_CALD1_13	CM03;CM06;CM07	3	0	0	0			lower_coverage_not_primary_model_ready
+PAIR049	Monocyte_TYROBP_37	Neutrophil_S100A8_35	CM02;CM06;CM07	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR050	Monocyte_TYROBP_37	T_NK_lymphoid_NKG7_20	CM01;CM02;CM03;CM04;CM05;CM06;CM07;CM09	21	2	1	1	GSE178341	Colorectal cancer	source_limited_coverage_only
+PAIR051	Monocyte_TYROBP_37	cDC1_LGALS2_43	CM03;CM05;CM07	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR052	Monocyte_TYROBP_37	pDC_GZMB_48	CM01	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR053	Mural_cell_CALD1_126	T_cell_STMN1_23	CM08	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR054	Mural_cell_CALD1_13	Myeloid_FCER1G_63	CM03	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR055	Mural_cell_COX4I2_61	Myeloid_FCER1G_65	CM05	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR056	Myeloid_FCER1G_65	cDC1_LGALS2_43	CM05	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR057	Myeloid_LAMP3_5	Regulatory_T_cell_CTLA4_15	CM01	1	0	0	0			lower_coverage_not_primary_model_ready
+PAIR058	Myeloid_LAMP3_5	pDC_GZMB_48	CM01	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR059	Regulatory_T_cell_CTLA4_15	pDC_GZMB_48	CM01	0	0	0	0			lower_coverage_not_primary_model_ready
+PAIR060	T_NK_lymphoid_NKG7_20	pDC_GZMB_48	CM01	0	0	0	0			lower_coverage_not_primary_model_ready

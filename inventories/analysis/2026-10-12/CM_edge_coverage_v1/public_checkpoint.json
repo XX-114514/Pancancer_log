@@ -1,0 +1,45 @@
+{
+  "observed_UTC": "2026-10-12T04:18:54.655355+00:00",
+  "executions": {
+    "production": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS",
+        "phase": "production",
+        "started_UTC": "2026-10-12T04:17:42.282727+00:00",
+        "pid": 35459,
+        "script_sha256": "07c9d9617ce0b1b2856aabb69462c51bfdfb59229d01b41d007fdbde93aeb42d",
+        "child_pid": 35462,
+        "finished_UTC": "2026-10-12T04:18:11.582690+00:00",
+        "exit_code": 0
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "audit": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS",
+        "phase": "audit",
+        "started_UTC": "2026-10-12T04:18:11.584924+00:00",
+        "pid": 35459,
+        "script_sha256": "a57746ad723e6ba7d40b3df09b0e8edef9b2bbaac31157cbd92cf991149874d0",
+        "child_pid": 40193,
+        "finished_UTC": "2026-10-12T04:18:12.475122+00:00",
+        "exit_code": 0
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    }
+  },
+  "registered_active_jobs": [],
+  "outputs": {
+    "inventory.json": "c0723af23dfe35716c897865ee19ff58be3e13462218754a9815251e1e4f8723",
+    "independent_audit.json": "8dae742d93bb7fea5e7888792d77b1a34b9362f1712b5a76165c4023f770304c",
+    "all60_pair_context_coverage.tsv": "35bc6e469bf66632b6051c5bf32625e5bb7aea4f5c0648cd311cca0de7a643d3",
+    "all240_directed_CM_edge_mapping.tsv": "935b9aa6fc90b9c9748cf6d30d0adc275c89f4c6ca13c38b817ef8be14c58a32"
+  },
+  "axis_validation_complete": false
+}

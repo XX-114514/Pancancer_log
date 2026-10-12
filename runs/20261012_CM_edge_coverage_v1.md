@@ -5,3 +5,7 @@
 [合同与全部代码/输入SHA](../inventories/analysis/2026-10-12/CM_edge_coverage_plan_v1.json)。实际LIANA分数和复合物基因测量待后续；成功状态不代表某LR输出。独立CSV逐行重建全部分母/重复块和映射，患者/样本行留服务器。原172/9CM/W/H/F和临床块保留。旧自动探索top10×3来源的4197模块记录/2101不重复情境端点LR模型保留，不重称新发现。
 
 提供PANCANCER_PREFLIGHT_ROOT、PANCANCER_ANNOTATION_ROOT、PANCANCER_CM_COVERAGE_PLAN后依次执行producer和auditor；派发前普通push，实际首尾/exit另登记。
+
+## 2026-10-12T12:23:07.629760+08:00 当前终态
+
+producer/auditor真实均exit0及独立全11220/240复算；[结果](../inventories/analysis/2026-10-12/CM_edge_coverage_v1/RESULTS.md)。COMPLETE_ALL_ORIGINAL_CM_EDGE_COVERAGE_AUDITED_NO_LR_INFERENCE；没有新效应或验证轴。

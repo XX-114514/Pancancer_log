@@ -1,0 +1,15 @@
+{
+  "schema": "all_original_CM_edge_LIANA_extraction_scope_v1",
+  "predeclared_UTC": "2026-10-12T04:23:07.629760+00:00",
+  "accepted_coverage_inventory_sha256": "c0723af23dfe35716c897865ee19ff58be3e13462218754a9815251e1e4f8723",
+  "accepted_coverage_audit_sha256": "8dae742d93bb7fea5e7888792d77b1a34b9362f1712b5a76165c4023f770304c",
+  "scope": "all60 original undirected edges/120 orientations; all34 reviewed pair/context records with>=20libraries>=10original analysis blocks; all database LR outputs, no significance/rank based selection",
+  "endpoint_gene_policy": "all receptor and ligand subunits must be in native measured genes; no alias conversion or missing-as-zero; intracellular/contested resources retained separately for binding audit",
+  "missing_policy": "LIANA return_all_lrs=False at expr_prop=.1 means un-emitted LR is missing under these rules, not a negative or zero communication; distinguish native missing subunits, cells insufficient and LIANA unsuccessful",
+  "primary_inference_not_started": true,
+  "predicted_record_family_not_yet_counted": true,
+  "lower_coverage_279_contexts_descriptive_only": true,
+  "no_new_downloads": true,
+  "no_identity_changes": true,
+  "independent_validation": false
+}

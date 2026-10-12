@@ -403,3 +403,11 @@ M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、
 新发现范围历史：20261010旧automatic实际固定W前10×最多3来源，4197模块模型对应2101不重复stratum/端点/LR，不是4197独立轴；其14候选/外部阴性保留。原120CM边记录60唯一无向关系，现转其全部来源/临床情境覆盖，避免重复top3试验。当前overlay1290、1219 eligible/71 ineligible，97当前情境；LIANA1312文库1248成功64跳过，1290须严格取键交集。当前402reviewed libs/175source scoped患者块沿已审原分组，旧121字段不当当前。
 
 [合同](../../../inventories/analysis/2026-10-12/CM_edge_coverage_plan_v1.json)：全部60×当前和粗诊断情境；双方20细胞、10/20library与10block覆盖并列，保留major/原node未捕获、失败LIANA、重复患者库、未审样本单位。全部输入真实读取SHA及W/H/F键将验收；此阶段不读LR分数、复合物、不拟合关联、不称可用轴。独立CSV Counter重建所有分母和240module有向映射。新源码语法通过，实际未派发。原data4新目录、小汇总，不下载/删除/重注释。保留并发未跟踪3脚本、测试JSON和研究日志；仓库/diff/隐私检查普通push后运行。
+
+## 2026-10-12T12:23:07.629760+08:00 原60CM边覆盖真实完成（UTC 2026-10-12T04:23:07.629760+00:00取证）
+
+04:17:42.282727—04:18:12.475122 UTC producer/auditor均exit0；同driver35459/children35462、40193终止，活跃空/0冲突。全部11220行和240模块有向映射、224400字段独立Counter复核。[检查点](../../../inventories/analysis/2026-10-12/CM_edge_coverage_v1/public_checkpoint.json)。当前97审阅情境34pair-context/15对/8GSE达20library10block；4对多来源多癌种标签有覆盖，尚非同方向通讯效应。全部15映射涉及9CM；11来源限定者保留，未达门槛45对不作阴性。下阶段全34情境双向所有LR提取范围预声明，不做rank/p预选，仍无新LR测试/外部验证轴。
+
+当前scope1219eligible/71ineligible不改，重复患者库已按block计数，sample替代/分选未知和癌种标签层级限制保留。老top10×3源4197模块/2101唯一模型保留；当前从原correlation-filtered60边入手，非重复其筛查。旧positive composition结果只供历史说明，未以其p挑本轮pair。初始计划8b2b7b8于04:17:02.077238 UTC推送/04:17:05.955862 HTTPS验证；共享daily在stage时同期并入另一预处理任务12:16:47节点，保留其记录、不归为本CM执行或验收，不改历史。并发3ed9acb/7ba0df0完整保留。本轮使用HEAD快照定向stage新增段，防止误带并发其他修改。
+
+唯一本机辅助失败是尝试导入绘图库时未安装matplotlib；没有为此下载或改变科学计算。源级count表已交付。本轮读取权威输入/规范，保留已有工作、做SHA/diff/隐私/仓库验证，再普通push并独立核云端SHA。科学goal仍active：本阶段覆盖完成不等于筛选与验证可行轴。

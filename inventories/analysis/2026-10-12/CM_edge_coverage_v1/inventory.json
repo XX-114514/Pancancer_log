@@ -1,0 +1,104 @@
+{
+  "schema": "frozen9CM_all60_edge_current_context_coverage_v1",
+  "status": "COMPLETE_COVERAGE_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T04:17:42.652563+00:00",
+  "finished_UTC": "2026-10-12T04:18:11.474310+00:00",
+  "producer_sha256": "07c9d9617ce0b1b2856aabb69462c51bfdfb59229d01b41d007fdbde93aeb42d",
+  "plan_sha256": "48e33c517c5ad68740b0526ccc77d9e7970b4a94ef91ae36e6da905626b1c9d1",
+  "input_sha256": {
+    "edges": {
+      "sha256": "27a93e28a65809667ddb732d312e98eeb4c3b9156831f08e03279ff0068763a1",
+      "bytes": 25894
+    },
+    "counts": {
+      "sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+      "bytes": 2710053
+    },
+    "sample_metadata": {
+      "sha256": "9263398c23f8ae7e9623a8c57e2b20ae46ea1b558266fcd5281135779dff2771",
+      "bytes": 413706
+    },
+    "W": {
+      "sha256": "81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29",
+      "bytes": 17344
+    },
+    "H": {
+      "sha256": "5a79054a14ef885fac12bea7611ca63ea754a4d36daca231d3e8ebc3044fac07",
+      "bytes": 277858
+    },
+    "F": {
+      "sha256": "08bf712e8f4e4938b54f5e14f4c68366443aed2ee23a4b1c95aa0dc6e99354eb",
+      "bytes": 918426
+    },
+    "catalogue": {
+      "sha256": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+      "bytes": 70173
+    },
+    "liana_status": {
+      "sha256": "792cb38d365255de54d16f7671d676012ca1042b509e0590661c6548bb678250",
+      "bytes": 745266
+    },
+    "liana_audit": {
+      "sha256": "21d6e45befff652b9ba9ada199634a2e02347b058557b99cc9009fda41f6d194",
+      "bytes": 443446
+    },
+    "provenance_inventory": {
+      "sha256": "14d645b71502c2f1a6fcd8453882b9261c48949c5a99ce8834793d489d73ccc0",
+      "bytes": 1771
+    },
+    "provenance_audit": {
+      "sha256": "baef7eb72fb4d351623e2aa8d8a51343058f512f928b0bbb3dfd8804af1b62ac",
+      "bytes": 884
+    },
+    "provenance_scope": {
+      "sha256": "e7fe741602219561ce1cae496264e819d3e8e6fb0b8de1ba955de628a2ae0ead",
+      "bytes": 937371
+    }
+  },
+  "summary": {
+    "coarse_GSE_cancer_class_diagnostic": {
+      "contexts": 90,
+      "pair_context_records": 5400,
+      "pair_contexts_ge10": 272,
+      "pair_contexts_ge20": 31,
+      "sources_ge10": 25,
+      "sources_ge20": 8,
+      "pairs_ge10": 41,
+      "pairs_ge20": 18,
+      "pairs_ge10_in_atleast2GSE": 31,
+      "pairs_ge20_in_atleast2GSE": 5,
+      "pairs_ge10_in_atleast2cancer_labels": 30,
+      "pairs_ge20_in_atleast2cancer_labels": 5
+    },
+    "reviewed_context": {
+      "contexts": 97,
+      "pair_context_records": 5820,
+      "pair_contexts_ge10": 279,
+      "pair_contexts_ge20": 34,
+      "sources_ge10": 25,
+      "sources_ge20": 8,
+      "pairs_ge10": 41,
+      "pairs_ge20": 15,
+      "pairs_ge10_in_atleast2GSE": 31,
+      "pairs_ge20_in_atleast2GSE": 4,
+      "pairs_ge10_in_atleast2cancer_labels": 30,
+      "pairs_ge20_in_atleast2cancer_labels": 4
+    }
+  },
+  "samples": 1290,
+  "nodes": 172,
+  "CM": 9,
+  "unique_undirected_pairs": 60,
+  "CM_edge_records": 120,
+  "directed_unique_pairs": 120,
+  "directed_module_map_rows": 240,
+  "full_LIANA_scores_read": false,
+  "native_complex_gene_measurement_checked": false,
+  "LR_associations_fitted": false,
+  "formal_states": false,
+  "independent_biological_validation": false,
+  "outputs": {
+    "all60_pair_context_coverage.tsv": "35bc6e469bf66632b6051c5bf32625e5bb7aea4f5c0648cd311cca0de7a643d3",
+    "all240_directed_CM_edge_mapping.tsv": "935b9aa6fc90b9c9748cf6d30d0adc275c89f4c6ca13c38b817ef8be14c58a32"
+  }
+}

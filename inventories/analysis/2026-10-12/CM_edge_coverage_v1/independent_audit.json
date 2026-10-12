@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL60_PAIR_CONTEXT_COUNT_BLOCK_STATUS_AND240_MAPPING_ROW_REPLAY",
+  "started_UTC": "2026-10-12T04:18:11.648477+00:00",
+  "finished_UTC": "2026-10-12T04:18:12.451792+00:00",
+  "auditor_sha256": "a57746ad723e6ba7d40b3df09b0e8edef9b2bbaac31157cbd92cf991149874d0",
+  "producer_inventory_sha256": "c0723af23dfe35716c897865ee19ff58be3e13462218754a9815251e1e4f8723",
+  "coverage_rows_replayed": 11220,
+  "mapping_rows_replayed": 240,
+  "integer_and_boolean_fields_checked": 224400,
+  "rows_with_repeated_library_blocks": 214,
+  "rows_below20_library10_block_gate": 11155,
+  "method": "Independent CSV row counters and explicit sample sets; no producer import/pivot or sample identities exported",
+  "new_LR_tests": false,
+  "independent_biological_validation": false
+}
