@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ALL40491_COMPLETE_DESIGNS_QR_NUISANCE_SPAN_LIBRARY_AND_BLOCK_MEAN_RECONSTRUCTION",
+  "started_UTC": "2026-10-12T05:36:29.692274+00:00",
+  "finished_UTC": "2026-10-12T05:37:07.610798+00:00",
+  "auditor_sha256": "52045687b7f44cfdb5f110bc35f98c33b78078e74c01f465994dc4daad6f5c62",
+  "producer_inventory_sha256": "5341c4bf5e2349ad3ac16a98a11dad59028a54fcdd0b6e80abc3d6eba5927cf6",
+  "diagnostic_rows_replayed": 40491,
+  "distinct_QR_templates": 13968,
+  "new_coefficients": false,
+  "new_p_values": false,
+  "strict_primary_rank_policy_preserved": true,
+  "partial_identifiability_is_diagnostic_only": true,
+  "clinical_blocks_changed": false
+}

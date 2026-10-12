@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE_DESIGN_PREFLIGHT_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T05:36:08.956553+00:00",
+  "finished_UTC": "2026-10-12T05:36:29.199733+00:00",
+  "producer_sha256": "d5e62b1167766207071dddb5a5350cc8ced814c898d88337ae794144ecbb4f30",
+  "plan_sha256": "a00a07ee03efc7efcb4c533eccb8a07747b40614cbf72d7f1680ac203dab27ae",
+  "extraction_inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+  "coverage_cases": 5377,
+  "mapped_CM_cases": 13497,
+  "diagnostic_records": 40491,
+  "distinct_X_templates": 13968,
+  "summary": {
+    "endpoint_excluded_block_mean_diagnostic": {
+      "records": 13497,
+      "status_counts": {
+        "CONSTANT_REQUIRED_NUISANCE_COLUMN": 8436,
+        "STRICT_DESIGN_SCREEN_PASSED_NOT_INFERENCE": 3127,
+        "HIGH_INFLUENCE_DESIGN": 1157,
+        "INSUFFICIENT20_ROWS_OR10_BLOCKS": 777
+      },
+      "partial_CM_identifiable_diagnostic": 13497
+    },
+    "endpoint_excluded_library": {
+      "records": 13497,
+      "status_counts": {
+        "CONSTANT_REQUIRED_NUISANCE_COLUMN": 8491,
+        "STRICT_DESIGN_SCREEN_PASSED_NOT_INFERENCE": 3269,
+        "HIGH_INFLUENCE_DESIGN": 1737
+      },
+      "partial_CM_identifiable_diagnostic": 13497
+    },
+    "original_H_library": {
+      "records": 13497,
+      "status_counts": {
+        "CONSTANT_REQUIRED_NUISANCE_COLUMN": 6303,
+        "STRICT_DESIGN_SCREEN_PASSED_NOT_INFERENCE": 2963,
+        "CONSTANT_CM_ACTIVITY": 2788,
+        "HIGH_INFLUENCE_DESIGN": 1443
+      },
+      "partial_CM_identifiable_diagnostic": 10709
+    }
+  },
+  "primary_coefficient_estimated": false,
+  "new_p_values": false,
+  "required_covariates_removed": false,
+  "partial_span_not_an_inference_acceptance": true,
+  "outputs": {
+    "all40491_model_design_diagnostics.tsv.gz": "9976c2690e96e3543b7475892b1aa85eb2a255584a7310535d5156ae25d8fe5e"
+  }
+}
