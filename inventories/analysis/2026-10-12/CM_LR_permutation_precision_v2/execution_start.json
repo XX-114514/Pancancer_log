@@ -1,0 +1,17 @@
+{
+  "observed_UTC": "2026-10-12T06:31:49.094824+00:00",
+  "execution": {
+    "status": "RUNNING",
+    "phase": "production",
+    "started_UTC": "2026-10-12T06:30:02.298542+00:00",
+    "pid": 346423,
+    "script_sha256": "84d4e5a0c7bd84288ad4e3a8af4b02adc39ca9f9403cadbd5e22debec95442f9",
+    "child_pid": 346456
+  },
+  "live": {
+    "pid": true,
+    "child_pid": true
+  },
+  "latest_log": "completed_group GRP001 models 84\ncompleted_group GRP002 models 220\ncompleted_group GRP003 models 400\ncompleted_group GRP004 models 542\n",
+  "scientific_validation": false
+}
