@@ -1,0 +1,18 @@
+{
+  "Macrophage_to_T": {
+    "libraries": 212,
+    "unique_analysis_blocks": 140,
+    "reviewed_libraries": 192,
+    "unique_reviewed_blocks": 120,
+    "sample_fallback_libraries": 20,
+    "CRC_shared_blocks": 34
+  },
+  "T_to_Macrophage": {
+    "libraries": 212,
+    "unique_analysis_blocks": 140,
+    "reviewed_libraries": 192,
+    "unique_reviewed_blocks": 120,
+    "sample_fallback_libraries": 20,
+    "CRC_shared_blocks": 34
+  }
+}

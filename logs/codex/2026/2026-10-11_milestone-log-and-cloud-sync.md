@@ -628,3 +628,8 @@ CRAN clubSandwich0.7.0原包官方MD5通过，381023bytes；只在本任务R_lib
 ## 2026-10-12T20:39:42.890592+08:00 /UTC 2026-10-12T12:39:42.890592+00:00 巨噬—T双向跨来源模型真实启动
 
 冻结f815b35e1e3bce72e4fdd29eaed796cadd1045a9已12:38:24 UTC普通push/12:38:31独立HTTPS核验。producer12:38:46 UTC启动；12:38:57 driver410505/child410506实际存在，无错误日志，audit尚未开始；不是完成或阳性。[实测检查点](../../../inventories/analysis/2026-10-12/macrophage_T_multisource_response_v1/running_checkpoint_v1.json)。全2方向×4624LR×3模型保留，所有个体向量仅服务器；下一同进程终态/独立audit/各来源方向与逐来源删除分析。
+
+
+## 2026-10-12T20:57:06.729236+08:00 /UTC 2026-10-12T12:57:06.729236+00:00 巨噬—T跨癌种完整模型已审：首次8主探索关联
+
+生产12:38:46—12:46:34/audit12:46:34—12:46:44 UTC均exit0，12:47:37进程退出；27744完整LR/128608 TF组件，主BH8/BY3、亚型2/1、全基因11/4。24均衡输入组pooled/source/LOSO 8580组件直接复算PASS最大7.11e-14，非全系数复演。212库/140块（120已审、20样本替代），CRC34患者重叠共块。固定主TF比较HSF1三模型稳定，LGALS1/THRA同向但亚型减弱；不同leadTF不能误称方向反转。MAML2核内角色排除胞外解释，HSP共同应激/胞外结合争议、整合素搭档待。旧全局阴性保留，新同数据探索未独立验证。[结果/证据卡/森林图](../../../inventories/analysis/2026-10-12/macrophage_T_multisource_response_v1/RESULTS.md)。R SVG缺X11失败、改PDF/转换SVG并视觉核查成功；NAMPT全文验证码限制如报告。下一全分母发送HSF1/接收自身配体敏感性，不改正式细胞状态与标签。

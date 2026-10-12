@@ -1,0 +1,9 @@
+ligand	receptor	evidence_status	boundary	primary_sources
+LGALS1	ITGB1	retain_state_sensitive_literature_supported_binding_other_cell_context	糖依赖β1结合有原始证据；T细胞功能报道不证明当前巨噬→T的ITGB1/THRA专属轴	https://pubmed.ncbi.nlm.nih.gov/14550305/;https://pmc.ncbi.nlm.nih.gov/articles/PMC2326819/
+HSPA1A	TLR4	prioritize_shared_stress_vs_extracellular_signal_diagnostic	全三模型保留，但HSP70/TLR4实验存在内毒素依赖争议；当前RNA不测胞外蛋白	https://pmc.ncbi.nlm.nih.gov/articles/PMC3355006/
+HSPA8	ADRB2	direct_extracellular_binding_not_verified	有限检索未找到此对直接胞外受体结合的原始实验；保留应激关联，不能由PPI推成通讯	
+ICAM1	IL2RG	extracellular_binding_not_verified	ICAM1与整合素的结合、IL2RG与细胞因子受体复合物不能证明当前这对结合	https://doi.org/10.1016/S0014-5793(98)01498-7;https://pubmed.ncbi.nlm.nih.gov/8049354/
+MAML2	NOTCH2	intracellular_coactivator_exclude_from_extracellular_mechanism	核内MAML2与Notch胞内域的结合，不应解释成发送细胞配体	https://pubmed.ncbi.nlm.nih.gov/12370315/
+NAMPT	ITGA5_ITGB1	retain_context_specific_functional_literature_lead	有eNAMPT/α5β1中性粒—内皮功能研究；不能外推当前巨噬—T或直接结合已证实	https://pmc.ncbi.nlm.nih.gov/articles/PMC12764215/
+S100A9	ITGB2	incomplete_receptor_context_and_activation_not_binding	β2整合素活化/黏附功能原始证据，不等于S100A9直接结合ITGB2；需α搭档	https://pmc.ncbi.nlm.nih.gov/articles/PMC1865105/
+TIMP2	ITGB1	complete_alpha_partner_required	TIMP2原始实验为α3β1介导内皮结合；单β1/T细胞尚未证实	https://pubmed.ncbi.nlm.nih.gov/12887919/

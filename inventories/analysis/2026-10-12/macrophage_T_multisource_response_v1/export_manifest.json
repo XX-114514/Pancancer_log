@@ -1,0 +1,20 @@
+{
+  "status": "AUDITED_AGGREGATE_EXPORT",
+  "scientific_claim": "exploratory same-data; no independently validated communication",
+  "all_models": 27744,
+  "main_estimated": 496,
+  "main_direction_flags": 242,
+  "main_BH05": 8,
+  "main_BY05": 3,
+  "min_main_q": 6.17092419558496e-07,
+  "direction_rank_rule": ">=3GSE; >=GSE-1 same-sign; allLOSO same-sign; maxsourceinformation<=.6, followed by all-family q; descriptive only",
+  "outputs": {
+    "all27744_pooled_LR_models.tsv.gz": "0d0580058b36c37236744aa9e96772fb919040575486fb54d20ee74356131ba5",
+    "summary.tsv": "b53b21ac0bdeb7d2b4b8b252ad2504d46f57636aab335fa5141d4fbe6bb588ea",
+    "top30_descriptive_direction_rank.tsv": "47b139af54c2a2beb7e7bdecddef80634385c5e3c4a0115b6aec1c02218e1f72",
+    "top30_source_effects.tsv": "35242c2fbaf7d006deba2135b7187dd56a4a04283e7b477b8269753135bca9ad",
+    "top30_LOSO_effects.tsv": "fc461767af100bf6bbb23a785a8256441307446d0e3bc26bb849fcb33691d373",
+    "independent_audit.json": "333fa86433da3dc31530cf40f248d1a0f69d4570943fc3e0facd4195cae95ea5",
+    "inventory_public_summary.json": "cee12001fde4c9091d5d2d8300a5d9217e2ff766988f39fa68e49f554cd85216"
+  }
+}

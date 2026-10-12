@@ -1,0 +1,79 @@
+{
+  "observed_UTC": "2026-10-12T12:47:37.369609+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T12:38:46.051663+00:00",
+      "driver_pid": 410505,
+      "child_pid": 410506,
+      "finished_UTC": "2026-10-12T12:46:34.519808+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      },
+      "log_tail": "{\"direction\": \"Macrophage_to_T\", \"variant\": \"abundance_complexity\", \"LR_rows\": 4624, \"TF_components\": 22108}\n{\"direction\": \"Macrophage_to_T\", \"variant\": \"subtype_mixture\", \"LR_rows\": 9248, \"TF_components\": 44195}\n{\"direction\": \"Macrophage_to_T\", \"variant\": \"full_gene_sensitivity\", \"LR_rows\": 13872, \"TF_components\": 66303}\n{\"direction\": \"T_to_Macrophage\", \"variant\": \"abundance_complexity\", \"LR_rows\": 18496, \"TF_components\": 87106}\n{\"direction\": \"T_to_Macrophage\", \"variant\": \"subtype_mixture\", \"LR_rows\": 23120, \"TF_components\": 107805}\n{\"direction\": \"T_to_Macrophage\", \"variant\": \"full_gene_sensitivity\", \"LR_rows\": 27744, \"TF_components\": 128608}\n{\"status\": \"MULTISOURCE_EXPLORATORY_POOL_COMPLETE_PENDING_NUMERIC_AUDIT\", \"started_UTC\": \"2026-10-12T12:38:46.856571+00:00\", \"finished_UTC\": \"2026-10-12T12:46:33.964136+00:00\", \"producer_sha256\": \"bb5eabc5d1a534b5d4f22b43e1cbdad480e16d5a25a703cb37e1080d01461583\", \"plan_sha256\": \"d28caac6e29054eea3d711051e9405ac175f2b74f80b38e1eebd7a1a483b1eba\", \"LR_rows\": 27744, \"TF_components\": 128608, \"summary\": [{\"variant\": \"abundance_complexity\", \"models\": 9248, \"estimated\": 496, \"BH05\": 8, \"BY05\": 3}, {\"variant\": \"full_gene_sensitivity\", \"models\": 9248, \"estimated\": 496, \"BH05\": 11, \"BY05\": 4}, {\"variant\": \"subtype_mixture\", \"models\": 9248, \"estimated\": 495, \"BH05\": 2, \"BY05\": 1}], \"no_causal_binding_or_independent_validation\": true}\n"
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T12:46:34.521054+00:00",
+      "driver_pid": 410505,
+      "child_pid": 54445,
+      "finished_UTC": "2026-10-12T12:46:44.825891+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      },
+      "log_tail": "{\"status\": \"PASS_FAMILY_AND_AGGREGATION_WITH_BALANCED_NUMERIC_FIXTURES\", \"finished_UTC\": \"2026-10-12T12:46:44.704545+00:00\", \"inventory_sha256\": \"ef93c7ac85fbb10cfb0ce0bee2cebce2ee9265c09ff32f3de5d857f38b6e266f\", \"models\": 27744, \"TF_components\": 128608, \"numeric_fixture_groups\": 24, \"numeric_component_checks\": 8580, \"max_absolute_difference\": 7.105427357601002e-14, \"all_coefficients_independently_replayed\": false, \"source_and_LOSO_numeric_checks_included\": true, \"auditor_sha256\": \"d0612eae0aeb7747ee4cca248aa8e9fc9bda9e7f0e9820fb6aace85684750e10\"}\n"
+    }
+  },
+  "inventory.json": {
+    "status": "MULTISOURCE_EXPLORATORY_POOL_COMPLETE_PENDING_NUMERIC_AUDIT",
+    "started_UTC": "2026-10-12T12:38:46.856571+00:00",
+    "finished_UTC": "2026-10-12T12:46:33.964136+00:00",
+    "producer_sha256": "bb5eabc5d1a534b5d4f22b43e1cbdad480e16d5a25a703cb37e1080d01461583",
+    "plan_sha256": "d28caac6e29054eea3d711051e9405ac175f2b74f80b38e1eebd7a1a483b1eba",
+    "LR_rows": 27744,
+    "TF_components": 128608,
+    "summary": [
+      {
+        "variant": "abundance_complexity",
+        "models": 9248,
+        "estimated": 496,
+        "BH05": 8,
+        "BY05": 3
+      },
+      {
+        "variant": "full_gene_sensitivity",
+        "models": 9248,
+        "estimated": 496,
+        "BH05": 11,
+        "BY05": 4
+      },
+      {
+        "variant": "subtype_mixture",
+        "models": 9248,
+        "estimated": 495,
+        "BH05": 2,
+        "BY05": 1
+      }
+    ],
+    "no_causal_binding_or_independent_validation": true
+  },
+  "independent_audit.json": {
+    "status": "PASS_FAMILY_AND_AGGREGATION_WITH_BALANCED_NUMERIC_FIXTURES",
+    "finished_UTC": "2026-10-12T12:46:44.704545+00:00",
+    "inventory_sha256": "ef93c7ac85fbb10cfb0ce0bee2cebce2ee9265c09ff32f3de5d857f38b6e266f",
+    "models": 27744,
+    "TF_components": 128608,
+    "numeric_fixture_groups": 24,
+    "numeric_component_checks": 8580,
+    "max_absolute_difference": 7.105427357601002e-14,
+    "all_coefficients_independently_replayed": false,
+    "source_and_LOSO_numeric_checks_included": true,
+    "auditor_sha256": "d0612eae0aeb7747ee4cca248aa8e9fc9bda9e7f0e9820fb6aace85684750e10"
+  }
+}

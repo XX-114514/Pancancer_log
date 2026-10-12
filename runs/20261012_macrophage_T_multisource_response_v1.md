@@ -21,3 +21,7 @@
 [参数与SHA](../inventories/analysis/2026-10-12/macrophage_T_multisource_response_plan_v1.json)，生产/审计代码位于scripts同名文件。沿用scanpy环境Python，OPENBLAS/OMP各2线程；真实根目录通过PANCANCER_PREFLIGHT_ROOT、PANCANCER_ANNOTATION_ROOT提供；PANCANCER_MAC_T_POOL_PLAN、PANCANCER_CR2_CORE、PANCANCER_FROZEN_LR_RESOURCE指向冻结入口。执行`python -u ${CODE_ROOT}/macrophage_T_multisource_response_v1.py`后`python -u ${CODE_ROOT}/audit_macrophage_T_multisource_response_v1.py`；独立execution manifest，不改旧primary registry。
 
 时间：2026-10-12T20:37:56.525513+08:00 /UTC 2026-10-12T12:37:56.525513+00:00
+
+## 终态
+
+真实生产与审计均exit0；完整汇总、时间、SHA/范围和限制以[结果](../inventories/analysis/2026-10-12/macrophage_T_multisource_response_v1/RESULTS.md)为准。

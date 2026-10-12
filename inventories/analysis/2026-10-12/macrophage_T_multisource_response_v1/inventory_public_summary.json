@@ -1,0 +1,33 @@
+{
+  "status": "MULTISOURCE_EXPLORATORY_POOL_COMPLETE_PENDING_NUMERIC_AUDIT",
+  "started_UTC": "2026-10-12T12:38:46.856571+00:00",
+  "finished_UTC": "2026-10-12T12:46:33.964136+00:00",
+  "producer_sha256": "bb5eabc5d1a534b5d4f22b43e1cbdad480e16d5a25a703cb37e1080d01461583",
+  "plan_sha256": "d28caac6e29054eea3d711051e9405ac175f2b74f80b38e1eebd7a1a483b1eba",
+  "LR_rows": 27744,
+  "TF_components": 128608,
+  "summary": [
+    {
+      "variant": "abundance_complexity",
+      "models": 9248,
+      "estimated": 496,
+      "BH05": 8,
+      "BY05": 3
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "models": 9248,
+      "estimated": 496,
+      "BH05": 11,
+      "BY05": 4
+    },
+    {
+      "variant": "subtype_mixture",
+      "models": 9248,
+      "estimated": 495,
+      "BH05": 2,
+      "BY05": 1
+    }
+  ],
+  "no_causal_binding_or_independent_validation": true
+}
