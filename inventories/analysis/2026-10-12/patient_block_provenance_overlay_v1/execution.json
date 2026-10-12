@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_METADATA_PROVENANCE_OVERLAY_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T02:42:52.461910+00:00",
+  "finished_UTC": "2026-10-12T02:42:53.604332+00:00",
+  "stages": [
+    {
+      "script": "build_patient_block_provenance_overlay_v1.py",
+      "script_sha256": "8abae3e12152a210e5595b084173555640a1393f88780c5987ffbb8c3a0959ec",
+      "started_UTC": "2026-10-12T02:42:52.462067+00:00",
+      "finished_UTC": "2026-10-12T02:42:53.096537+00:00",
+      "exit_code": 0
+    },
+    {
+      "script": "audit_patient_block_provenance_overlay_v1.py",
+      "script_sha256": "e26bd9a5fb9a733d0d5b12e00800168aee40c6dbd5a5e7521be9d056cfb0f9de",
+      "started_UTC": "2026-10-12T02:42:53.096573+00:00",
+      "finished_UTC": "2026-10-12T02:42:53.604247+00:00",
+      "exit_code": 0
+    }
+  ],
+  "new_models": false,
+  "axis_validation_complete": false
+}

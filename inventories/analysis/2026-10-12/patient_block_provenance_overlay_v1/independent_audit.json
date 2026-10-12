@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ALL1290_ROW_IDENTITY_PRESERVATION_OFFICIAL_PATIENT_BLOCK_PROVENANCE_AND175_SOURCE_PATIENT_BLOCKS",
+  "started_UTC": "2026-10-12T02:42:53.483968+00:00",
+  "finished_UTC": "2026-10-12T02:42:53.561432+00:00",
+  "auditor_sha256": "e26bd9a5fb9a733d0d5b12e00800168aee40c6dbd5a5e7521be9d056cfb0f9de",
+  "producer_inventory_sha256": "14d645b71502c2f1a6fcd8453882b9261c48949c5a99ce8834793d489d73ccc0",
+  "rows": 1290,
+  "inherited_official_metadata_rows": 194,
+  "reviewed_patient_libraries": 402,
+  "source_scoped_patient_blocks": 175,
+  "original_patient_block_assignments_changed": 0,
+  "original_analysis_unit_keys_do_not_count_patient_blocks": true,
+  "cross_GSE_independent_people_not_verified": true,
+  "new_statistical_models": false,
+  "formal_states": false,
+  "canonical_Zarr_changed": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

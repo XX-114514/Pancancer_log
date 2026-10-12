@@ -1,0 +1,38 @@
+{
+  "status": "METADATA_OVERLAY_COMPLETE_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T02:42:52.780438+00:00",
+  "finished_UTC": "2026-10-12T02:42:52.959544+00:00",
+  "producer_sha256": "8abae3e12152a210e5595b084173555640a1393f88780c5987ffbb8c3a0959ec",
+  "input_sha256": {
+    "current_scope": "cbfa96b46e6a6d44512ea69ca8cf1572b1871acddbaee7ac261919d977b685b6",
+    "current_audit": "935bcae11a766cf20b7a50d0cc9810105ebf835c956cf829b212a4f4904e1b2d",
+    "author_mapping": "035960fe17ff05574f7d979e3e8f2c160dda9caff8182ec21dc68338e067fa99",
+    "parent_sidecar": "063c89ff2ce2d0060f2a90124875ff8a37f3ed986ac1a63c7dc63bcc6429b9bc",
+    "parent_audit": "ce4973a43020dcecab6ac8ee5df7c2fd616ed7fce8da9e1d0515522e7bd7624a",
+    "frozen_scope": "f01733c11dc5c5fea57beac1b0189160a215b5576b11673680eab3b270c75faf"
+  },
+  "summary": {
+    "libraries": 1290,
+    "reviewed_patient_libraries": 402,
+    "sample_fallback_libraries": 888,
+    "source_scoped_patient_blocks": 175,
+    "effective_evidence_status_counts": {
+      "unreviewed_sample_fallback": 888,
+      "reviewed_parent_official_metadata": 194,
+      "reviewed_frozen_identity": 121,
+      "reviewed_author_patient": 87
+    },
+    "inherited_review_status_labels_corrected": 194,
+    "original_patient_block_assignments_changed": 0,
+    "independent_cross_GSE_people_not_verified": true
+  },
+  "outputs": {
+    "private_all1290_patient_provenance_overlay.tsv": "e7fe741602219561ce1cae496264e819d3e8e6fb0b8de1ba955de628a2ae0ead",
+    "source_patient_block_summary.tsv": "42398f998d7e854da9c1b7ad83933e854a4a13a28dfaa3553c1af02ee6df4895"
+  },
+  "new_statistical_models": false,
+  "formal_states": false,
+  "canonical_Zarr_changed": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

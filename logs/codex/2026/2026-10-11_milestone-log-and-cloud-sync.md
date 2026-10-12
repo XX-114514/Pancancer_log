@@ -335,3 +335,15 @@ UTC 2026-10-12T02:38:40.719500+00:00 /UTC+8 2026-10-12T10:38:40.719500+08:00。�
 患者差异现已追溯清楚：legacy194全为GSE178341176文库/62患者及GSE25301318文库/3患者，均与已审265官方侧表mapping_status exact_public_library_match、reviewed_analysis_block逐键一致（71未解US别名另保留）。旧review状态没同步；旧analysis_unit也保留文库键，不能据其304键计患者。现402已审文库/175来源内患者块（GSE17834162、17999436、18210918、18390429、2530133、27068027）；这是来源内块，不证明跨GSE不同人。此前402/208差异pending表述已由本节点证据解决，不否定已有正确使用analysis_block的模型。
 
 新metadata overlay合同锁6真实输入SHA、1290同序/所有原列不变，121frozen+87author+194parent有效证据标签及888samplefallback，原analysis_block不重分配。producer/auditor源码语法通过，真实运行尚未发生。[合同](../../../inventories/analysis/2026-10-12/patient_block_provenance_overlay_plan_v1.json)。canonical/172/9CM、原注释和旧表不改；无临床响应验证或科学轴完成。下一步普通push冻结后实际覆盖表/审计，再依真实可比身份/靶/块设计新的响应检验。无关ambient进度文件与研究日志不暂存。
+
+## 2026-10-12T10:48:39.301099+08:00 患者证据覆盖表真实执行与全行验收
+
+UTC 2026-10-12T02:48:39.301099+00:00 /UTC+8 2026-10-12T10:48:39.301099+08:00。v17内容ad4ba3c90fe93f6c08035993296bd03eb0a2f4f6于02:40:51.514061 UTC普通push、02:40:54.909716独立HTTPS核验；[回执](../../../inventories/analysis/2026-10-12/fullgene_v17_git_receipt_v1.json)。只暂存自己的共享README/STATUS/daily段，未带入并发ambient未提交内容或其未跟踪产物。
+
+首次本地运输driver组装remote代码时换行转义导致SyntaxError，整段解析失败、没有安装/运行科学代码或生成overlay。原生producer/auditor SHA不变；驱动改raw字符串并在本机先ast.parse后重试，旧失败输出另保留。实际02:42:52.461910—02:42:53.604332 UTC完成production+audit、两阶段exit0；全部1290旧列/同序、402已审文库/175来源内患者块、121/87/194证据来源逐键匹配、888fallback、6源总结独立复核PASS，[证据](../../../inventories/analysis/2026-10-12/patient_block_provenance_overlay_v1/independent_audit.json)。没有改变analysis_block、细胞身份、canonical或拟合新模型；私有1290行只留服务器，公共仓库仅SHA/来源统计。
+
+当前科学goal未完成：fullgene和metadata准备不是新轴验证。下一有界任务B2-PREFLIGHT需预声明全部336候选/固定情境/原编号接收子群的实际靶覆盖、端点细胞/复合物RNA、有效患者块与设计变异，区分共享记录重复；然后新的响应模型及独立来源/空间/临床验证。先保留HBEGF等稀疏覆盖和既有45/70阴性，不人工换端点或阈值追显著。当前B2尚未派发。
+
+本节点新增JSON/表SHA解析通过，源码语法此前通过；diff/privacy/相对链接与仓库轻量检查后普通push。患者行、原始表达、凭据未提交，无删除或改历史；并发预处理产物保留且不称本CM完成。建议commit：records: accept patient-block provenance overlay and advance response readiness。
+
+本节点提交前检查：git diff --check及仓库验证通过（0 errors/1既有历史内部路径warning）；新增JSON解析与输出SHA/6来源表复核通过。共享STATUS/TODO/daily只暂存本节点自己的新增段；保留并发ambient段/未跟踪产物，未将私有1290行导出。目标继续active，输入/metadata验收不能满足轴或独立机制验证完成条件。

@@ -19,3 +19,7 @@ python audit_patient_block_provenance_overlay_v1.py
 ```
 
 真实成功终态及独立全行复核才验收；不重分配原块、改注释、拟合统计、发布轴。实际起止/exit尚未发生。
+
+## 2026-10-12T10:48:39.301099+08:00 实际完成与独立验收
+
+production02:42:52.462067—02:42:53.096537 UTC、audit02:42:53.096573—02:42:53.604247 UTC均exit0；执行前合同提交ad4ba3c90fe93f6c08035993296bd03eb0a2f4f6已云端独立核验。1290全行原字段/块未改、194官方父映射/87作者/121冻结状态均逐键复核，402文库/175来源内块。首次运输驱动换行SyntaxError未执行任何生产；修正仅本地driver，不变冻结科学代码。[SHA及独立审计](../inventories/analysis/2026-10-12/patient_block_provenance_overlay_v1/independent_audit.json)。仅metadata准备，正式状态/轴/临床机制未验证。

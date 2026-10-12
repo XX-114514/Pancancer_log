@@ -1,5 +1,9 @@
 # 可执行任务
 
+## 2026-10-12T10:48:39.301099+08:00 UNIT-01已完成，下一项响应可比性
+
+UNIT-01：done_all1290_provenance_overlay_independent_audit_no_block_reassignment。下一项B2-PREFLIGHT：使用v17全基因单位和已审患者块，覆盖全部336候选/固定情境，原编号分别报告端点细胞/复合物基因可测、有效块、靶表达和变异；共享程序记录去重映射，缺失不当阴性，预声明合同后执行。当前尚未派发该preflight或新统计模型。[输入验收](inventories/analysis/2026-10-12/patient_block_provenance_overlay_v1/independent_audit.json)。
+
 ## 2026-10-12T10:38:40.719500+08:00 全基因与45源验收已完成
 
 B1-01：done_fullgene_preparation_audited_v17_not_axis_validation；B1-02：done_header_existing_coverage_independent_audit_not_full45_count_acceptance。下一有界任务UNIT-01：按已审265/87/121来源证据制作并独立验收1290行患者证据覆盖表，使用原analysis_block、避免旧analysis_unit误计患者。[冻结](inventories/analysis/2026-10-12/patient_block_provenance_overlay_plan_v1.json)。之后B2响应合同须结合原编号内/情境内靶表达、真实患者块、稀疏与共同状态、独立来源；仍未启动新关联模型。
