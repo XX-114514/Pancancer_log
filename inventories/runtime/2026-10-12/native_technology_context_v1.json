@@ -1,0 +1,124 @@
+{
+  "schema": "native_technology_context_review_v1",
+  "observed_utc": "2026-10-12T03:05:41.767997+00:00",
+  "records": [
+    {
+      "dataset": "CXG_b252b015_b488_4d5c_b16e_968c13e48a2c",
+      "n_cells": 927205,
+      "n_original_libraries": 275,
+      "metadata": {
+        "assay": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "10x 3' v3": 927205
+          },
+          "mixed_original_libraries": 0
+        },
+        "suspension_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "cell": 927205
+          },
+          "mixed_original_libraries": 0
+        },
+        "tissue_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "tissue": 927205
+          },
+          "mixed_original_libraries": 0
+        }
+      },
+      "prior_author_ambient_correction_status": "not_yet_verified_from_primary_methods"
+    },
+    {
+      "dataset": "CXG_67b6b9ac_b841_42ce_b2d4_ed2ec12327bd",
+      "n_cells": 598289,
+      "n_original_libraries": 232,
+      "metadata": {
+        "assay": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "10x multiome": 598289
+          },
+          "mixed_original_libraries": 0
+        },
+        "suspension_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "nucleus": 598289
+          },
+          "mixed_original_libraries": 0
+        },
+        "tissue_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "tissue": 598289
+          },
+          "mixed_original_libraries": 0
+        }
+      },
+      "prior_author_ambient_correction_status": "not_yet_verified_from_primary_methods"
+    },
+    {
+      "dataset": "CXG_843c1459_e852_429c_9339_17b5760e7716",
+      "n_cells": 401253,
+      "n_original_libraries": 63,
+      "metadata": {
+        "assay": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "10x 3' v3": 401253
+          },
+          "mixed_original_libraries": 0
+        },
+        "suspension_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "nucleus": 401253
+          },
+          "mixed_original_libraries": 0
+        },
+        "tissue_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "tissue": 401253
+          },
+          "mixed_original_libraries": 0
+        }
+      },
+      "prior_author_ambient_correction_status": "not_yet_verified_from_primary_methods"
+    },
+    {
+      "dataset": "CXG_34f5307e_7b4d_4a48_b68f_2ba844c6414b",
+      "n_cells": 394534,
+      "n_original_libraries": 64,
+      "metadata": {
+        "assay": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "10x 3' v3": 367312,
+            "10x 3' v2": 27222
+          },
+          "mixed_original_libraries": 0
+        },
+        "suspension_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "nucleus": 394534
+          },
+          "mixed_original_libraries": 0
+        },
+        "tissue_type": {
+          "status": "observed_all_rows",
+          "n_cells_by_label": {
+            "tissue": 394534
+          },
+          "mixed_original_libraries": 0
+        }
+      },
+      "prior_author_ambient_correction_status": "not_yet_verified_from_primary_methods"
+    }
+  ],
+  "patient_rows_exported": false
+}

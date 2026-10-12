@@ -1,0 +1,68 @@
+{
+  "schema": "native_initial_QC_independent_checkpoint_v1",
+  "observed_utc": "2026-10-12T03:06:50.618450+00:00",
+  "code_git_sha": "20505b134377a800e9c298bee4a3df27673d19c8",
+  "audit_script_sha256": "37eaefef9d920c156e30c33e1f0a8c84d619c5565e80c74fe122bfaf305fe65f",
+  "n_datasets": 3,
+  "n_native_cells": 1926747,
+  "n_initial_QC": 1878903,
+  "all_checks_pass": true,
+  "records": [
+    {
+      "dataset": "CXG_67b6b9ac_b841_42ce_b2d4_ed2ec12327bd",
+      "n_native_cells": 598289,
+      "n_initial_QC": 597962,
+      "n_initial_QC_excluded": 327,
+      "all_checks_pass": true,
+      "checks": {
+        "all_native_counts_nonnegative_finite_integer": true,
+        "ledger_covers_all_native_cells": true,
+        "ledger_original_ID_order_exact": true,
+        "ledger_original_library_order_exact": true,
+        "author_PASS_decision_exact": true,
+        "per_library_thresholds_exact": true,
+        "filter_reason_all_rows_exact": true,
+        "prior_doublet_flags_all_rows_exact": true,
+        "retained_count_exact": true
+      }
+    },
+    {
+      "dataset": "CXG_843c1459_e852_429c_9339_17b5760e7716",
+      "n_native_cells": 401253,
+      "n_initial_QC": 400899,
+      "n_initial_QC_excluded": 354,
+      "all_checks_pass": true,
+      "checks": {
+        "all_native_counts_nonnegative_finite_integer": true,
+        "ledger_covers_all_native_cells": true,
+        "ledger_original_ID_order_exact": true,
+        "ledger_original_library_order_exact": true,
+        "author_PASS_decision_exact": true,
+        "per_library_thresholds_exact": true,
+        "filter_reason_all_rows_exact": true,
+        "prior_doublet_flags_all_rows_exact": true,
+        "retained_count_exact": true
+      }
+    },
+    {
+      "dataset": "CXG_b252b015_b488_4d5c_b16e_968c13e48a2c",
+      "n_native_cells": 927205,
+      "n_initial_QC": 880042,
+      "n_initial_QC_excluded": 47163,
+      "all_checks_pass": true,
+      "checks": {
+        "all_native_counts_nonnegative_finite_integer": true,
+        "ledger_covers_all_native_cells": true,
+        "ledger_original_ID_order_exact": true,
+        "ledger_original_library_order_exact": true,
+        "author_PASS_decision_exact": true,
+        "per_library_thresholds_exact": true,
+        "filter_reason_all_rows_exact": true,
+        "prior_doublet_flags_all_rows_exact": true,
+        "retained_count_exact": true
+      }
+    }
+  ],
+  "source_final_AC": false,
+  "cross_study_integrated": false
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "ambient_audit_stage_revision_v3",
+  "event_utc": "2026-10-12T03:07:39.273842+00:00",
+  "code_git_sha": "20505b134377a800e9c298bee4a3df27673d19c8",
+  "previous_script_sha256": "51df1bc73e3f7b8e8b26db5f9e818725288e8204494841bf324549a77c9108ff",
+  "new_script_sha256": "37eaefef9d920c156e30c33e1f0a8c84d619c5565e80c74fe122bfaf305fe65f",
+  "producer_code_changed": false,
+  "production_parameters_changed": false,
+  "new_checks": [
+    "full_native_initial_QC_ledger_recomputed",
+    "nonempty_original_library_coverage_exact"
+  ],
+  "native_initial_QC_verified_cells": 1926747,
+  "stage": "final_independent_audit_not_yet_started",
+  "previous_source_preserved_as": "audit_ambient_preparation_frozen_v2.py",
+  "initial_execution_manifest_preserved": true,
+  "applied_utc": "2026-10-12T03:07:39.274661+00:00",
+  "applied_script_hash_verified": true
+}

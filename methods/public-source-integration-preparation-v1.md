@@ -36,3 +36,5 @@
 ## 已观察的状态筛除差异
 
 CAR-T旧QC的416,800细胞中，新增预测双细胞移除20,207（4.85%）。作者CD4/CD8双阳性标签移除3,591/30,427（11.80%），CD4单阳性4.08%、CD8单阳性5.06%。这是筛除偏好诊断，不能断言双阳性全是双细胞或全是假阳性；作者“thymocyte”标签也不直接证明制造后T产品具有胸腺细胞身份。原始计数和被筛细胞映射保留，后续需并列筛除前后的状态效应。[聚合证据](../inventories/runtime/2026-10-12/CAR_author_state_retention_v1.json)。
+
+全行技术类型与文库混合检查的实际证据：[native technology context](../inventories/runtime/2026-10-12/native_technology_context_v1.json)。作者污染处理历史为待核验字段。
