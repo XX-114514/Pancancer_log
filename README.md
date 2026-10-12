@@ -1,5 +1,11 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T14:15:47+08:00 全量审计编号解析需修复，合并已按门槛停止
+
+792文库逐行检查均PASS，但GSE256326来源级文库编号对比失败。[全23880行诊断](inventories/runtime/2026-10-12/native_QC_identifier_read_diagnosis_v1.json)确认CSV自动int丢前导零导致5958表面差异；字符串读取全部匹配。原数据/模型正确保留，正在准备v4完整重验，旧失败报告封存。最终Zarr尚未写入，不能称全量已验收；新修复代码冻结后继续，本阶段新下载暂停。
+
+
+
 ## 2026-10-12T14:06:46.979472+08:00 完整控制空间关联真实运行中
 
 2026-10-12T06:04:30.803833+00:00 UTC已启动driver144523/child144526，当前两个实际进程存活，最新finished_group GRP016 models 3166。全26994记录、原严格状态及必需controls保留，2000完整块置换/bootstrap与全家族BH计算中；独立audit尚未完成，不发布筛选结果。[启动证据](inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/execution_start_v1.json)。下一检查同句柄真实终态、全量数值/重采样审计及来源/癌种一致性，不因旧等待状态重启。

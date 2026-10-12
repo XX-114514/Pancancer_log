@@ -22,12 +22,15 @@ def save(path,value):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--preprocess-root',required=True);p.add_argument('--collection',required=True)
     p.add_argument('--final-root',required=True);p.add_argument('--scratch-root',required=True);p.add_argument('--code-git-sha',required=True)
+    p.add_argument('--attempt-version',default='')
     args=p.parse_args();root=Path(args.final_root);preprocess=Path(args.preprocess_root);scratch=Path(args.scratch_root)
+    if args.attempt_version and not args.attempt_version.replace('_','').isalnum():raise ValueError('Unsafe attempt version')
+    suffix=('_'+args.attempt_version) if args.attempt_version else ''
     for name in ['outputs','logs','manifests','scripts','diagnostics']:(root/name).mkdir(exist_ok=True)
     scratch.mkdir(mode=0o700,parents=True,exist_ok=True)
     lock=(root/'logs/assembly.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     components=[Path(__file__),Path(__file__).with_name('merge_public_preprocessed_zarr.py'),Path(__file__).with_name('audit_combined_public_zarr.py'),Path(__file__).with_name('public_gene_identity_contract.py')]
-    save(root/'manifests/assembly_start.json',dict(started_utc=now(),pid=os.getpid(),code_git_sha=args.code_git_sha,
+    save(root/'manifests'/('assembly_start'+suffix+'.json'),dict(started_utc=now(),pid=os.getpid(),code_git_sha=args.code_git_sha,
         components_sha256={path.name:hashlib.sha256(path.read_bytes()).hexdigest() for path in components},
         temporary_volume='data1_personal_project_area',final_volume='data4_existing_Project_v5_area',
         source_final_AC=False,batch_correction_performed=False))
@@ -36,7 +39,7 @@ def main():
         start=json.loads((preprocess/'manifests/execution_start.json').read_text());pid=start['pid']
         try:os.kill(pid,0)
         except ProcessLookupError:raise RuntimeError('Preprocessing stopped without final audit/terminal')
-        save(root/'manifests'/('assembly_wait_%04d.json'%sequence),dict(utc=now(),phase='waiting_full_preprocessing_audit'))
+        save(root/'manifests'/('assembly_wait'+suffix+'_%04d.json'%sequence),dict(utc=now(),phase='waiting_full_preprocessing_audit'))
         sequence+=1;time.sleep(20)
     terminal=json.loads((preprocess/'manifests/execution_terminal.json').read_text())
     if terminal['status']!='completed':raise RuntimeError('Preprocessing terminal requires repair')
@@ -49,7 +52,7 @@ def main():
         with (root/'logs'/(phase+'.log')).open('x') as log:
             child=subprocess.Popen(command,env=env,stdout=log,stderr=subprocess.STDOUT)
             while child.poll() is None:
-                save(root/'manifests'/('assembly_phase_%04d.json'%sequence),dict(utc=now(),phase=phase,pid=child.pid))
+                save(root/'manifests'/('assembly_phase'+suffix+'_%04d.json'%sequence),dict(utc=now(),phase=phase,pid=child.pid))
                 sequence+=1;time.sleep(20)
         if child.returncode:
             save(root/'manifests/assembly_terminal.json',dict(completed_utc=now(),status='needs_repair',phase=phase,exit_code=child.returncode,

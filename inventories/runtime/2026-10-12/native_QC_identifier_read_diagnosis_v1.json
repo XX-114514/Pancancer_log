@@ -1,0 +1,18 @@
+{
+  "schema": "native_QC_textual_identifier_read_failure_v1",
+  "source": "GSE256326",
+  "failed_check": "ledger_original_library_order_exact",
+  "n_rows": 23880,
+  "n_libraries": 9,
+  "n_libraries_with_leading_zero_IDs": 6,
+  "inferred_csv_dtype": "int64",
+  "n_inferred_ID_mismatches": 5958,
+  "n_explicit_string_ID_mismatches": 0,
+  "original_cell_order_exact_with_string_read": true,
+  "all_792_cell_level_checks_pass": true,
+  "scientific_outputs_changed": false,
+  "new_full_audit": "pending",
+  "source_final_AC": false,
+  "original_audit_observed_utc": "2026-10-12T06:14:55.197268+00:00",
+  "diagnosis_recorded_utc": "2026-10-12T06:22:03.807879+00:00"
+}

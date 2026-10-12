@@ -204,3 +204,11 @@ prepare_v3实际启动2026-10-12T02:15:17.694990 UTC（10:15:17 UTC+8），代�
 - 3338473是4源post-QC+5源原native输入范围；本轮native初始QC/既有flag共48865排除，独立DD再108635→3180973。旧4源之前Scrublet1930已在输入之外，不能再次扣除。此算术待完整独立QC账本最后确认。
 - 05:58:47观察独立audit真实扫描乳腺3/64文库12892细胞，当前检查PASS；原审计代码37eaef…，全部9源仍待。只读监控recovery连接运行正常；组装v2继续等全量audit终态，不把方法完成当最终Zarr。
 - 下一自动链为冻结基因ID合同/容量重算→原baseline与new-to-new精确指纹隔离→原卷流式合并→逐cell独立最终audit；后续手动保存小型原始过滤证据/软链接检查并普通push。原Source_SourceAlias/作者槽/脑面板/污染限制继续保留。
+
+
+## 2026-10-12T14:15:47+08:00 全量audit失败已定位为文库编号解析
+
+- 全792文库3180973细胞的逐行检查全部PASS、日志失败数0；但全量顶层all_checks_pass=false，main terminal needs_repair，组装等待器按门槛退出，没有写科学Zarr。旧报告/终态必须保留。
+- 唯一失败为GSE256326 native QC ledger_original_library_order_exact。全23880行比对：CSV默认library_id推断int64，对6/9个含前导零编号丢零，5958行表面不一致；显式字符串读取0不一致、原cell顺序仍完全匹配。生产内存按原字符串分群、所有9分片计数/元数据已PASS，属于审计解析错误，不是QC数据错位。
+- 新v4审计显式original_cell_id/library_id字符串，不改floor、mt、DD、污染或原数据；准备重跑完整9源792检查。修复组件先封存原v3审计源码/报告/terminal，只有新全量PASS且所有counts/gates不变才更新canonical proof/终态；不绕过任何失败门槛。
+- 组装等待器增加独立attempt后缀支持，在同final v2目录保留最初start/log；科学矩阵尚不存在。实际重新启动须新代码普通push/冻结与原全量audit真实PASS。最终证据utility追加保存原失败证明与修复证明；目前仅准备，未声称修复成功。

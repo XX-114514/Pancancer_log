@@ -23,7 +23,8 @@ def csr(group, ptr, lo, hi, genes):
 
 def audit_native_qc(directory, contract, obs, var, matrix):
     """Recompute the complete initial-QC ledger from every native count row."""
-    ledger=pd.read_csv(directory/'native_QC_ledger_private.tsv.gz',sep='\t',keep_default_na=False)
+    ledger=pd.read_csv(directory/'native_QC_ledger_private.tsv.gz',sep='\t',keep_default_na=False,
+                       dtype={'original_cell_id':str,'library_id':str})
     n=len(obs);total=np.zeros(n,dtype=np.float64);genes=np.zeros(n,dtype=np.int64)
     mitochondrial=np.zeros(n,dtype=np.float64)
     mt=np.asarray(var.index.astype(str).str.upper().str.startswith('MT-'))
@@ -101,7 +102,8 @@ def audit(root, collection):
             print(json.dumps(dict(dataset=name,phase='initial_QC_audited',**native_qc)),flush=True)
         qc_ids=None
         if native:
-            native_ledger=pd.read_csv(directory/'native_QC_ledger_private.tsv.gz',sep='\t',keep_default_na=False)
+            native_ledger=pd.read_csv(directory/'native_QC_ledger_private.tsv.gz',sep='\t',keep_default_na=False,
+                                      dtype={'original_cell_id':str,'library_id':str})
             qc_ids=set(native_ledger.loc[native_ledger.filter_reason.eq(''),'original_cell_id'].astype(str))
         source_IDs_by_library={}
         for library,positions in upobs.groupby(upobs.original_library_id.astype(str),sort=False).indices.items():
@@ -121,7 +123,8 @@ def audit(root, collection):
                 upstream_identity=True,raw_counts_exact=True,corrected_nonnegative_finite=True,
                 corrected_no_added_counts=True,normalization_exact=True,QC_metadata_preserved=True,
                 release_gate_conservative=True,complete_filter_mapping=True,QC_metrics_from_counts=True)
-            score_ledger=pd.read_csv(lib/'doublet_scores_private.tsv.gz',sep='\t',keep_default_na=False)
+            score_ledger=pd.read_csv(lib/'doublet_scores_private.tsv.gz',sep='\t',keep_default_na=False,
+                                     dtype={'original_cell_id':str})
             lib_names=obs.original_library_id.astype(str).unique()
             if len(lib_names)!=1:
                 raise ValueError('Prepared shard mixes original libraries')

@@ -56,6 +56,11 @@ def preserve(preprocess,collection,final_root):
                 add(collection/'manifests'/filename,Path('sources')/name/filename)
     for name in ['baseline_manifest.json','baseline_fingerprint_complete.json','fingerprint_gene_vocabulary.json']:
         add(collection/'manifests'/name,Path('baseline')/name)
+    for name in ['identifier_audit_repair_start_v4.json','identifier_audit_repair_terminal_v4.json',
+                 'independent_preparation_audit_identifier_v4.json']:
+        add(preprocess/'manifests'/name,Path('audit_repair')/name,required=False)
+    for name in ['independent_preparation_audit.json','execution_terminal.json','audit_ambient_preparation.py']:
+        add(preprocess/'config/identifier_audit_repair_v4'/name,Path('audit_repair/original_failed_v3')/name,required=False)
     total=sum(path.stat().st_size for path,_ in selected)
     if total>1_000_000_000:raise ValueError('Small-evidence contract exceeds 1GB; preserve attempt, review explicitly')
     free,capacity=effective_capacity(final_root)
