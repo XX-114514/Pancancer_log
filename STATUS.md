@@ -1,5 +1,11 @@
 # 当前项目状态
 
+## 2026-10-12T10:20:05.804843+08:00 完整先验通过，真实全基因生产已开始
+
+资源v4实际02:17:24—02:17:27 UTC exit0；3文件官方大小/MD5/本机SHA全一致，未重下载公网资源，旧v3失败保留。生产02:18:14 UTC实际开始，本次观察2026-10-12T02:20:05.804843+00:00状态RUNNING、worker/child命令核实，科学登记v16、活跃2；独立全基因审计尚未启动。[进程及资源证据](inventories/analysis/2026-10-12/fullgene_resume_running_checkpoint_v1.json)。
+
+45来源header/既有覆盖已完成：4,410,998原生源细胞、1251冻结文库、13节点、19783—58336基因；至少一个细胞对分层达20样本的3来源、达10的16来源。仅计数门槛，非新统计/临床/全count验收，独立header复核待执行。[汇总](inventories/analysis/2026-10-12/reviewed45_native_headers_v1/inventory.json)。旧frozen121患者文库字段不代表后续家族临床review当前全部审阅状态，正在核对。
+
 ## 2026-10-12T10:11:30.425815+08:00 用户已恢复任务，资源v4代码准备
 
 UTC2026-10-12T02:08:31+00:00实测组配额1495G/2048G，粗余量553G；v16/active_jobs空、原3源生产/audit输出尚不存在。旧资源v3仍失败，不改旧终态；本机3先验重新大小/MD5/SHA核实一致。[新合同](inventories/analysis/2026-10-12/fullgene_offline_resource_recovery_v4_spec.json)/[冻结](inventories/analysis/2026-10-12/fullgene_receiver_target_code_freeze_v4.json)已准备，实际传输/生产/audit尚未开始。下一步离线资源验收→3源全基因→独立审计，同时执行既定45源header/覆盖审阅。原172/9CM/336/15/1008不变；未新增机制/状态结论。昨日暂停已由用户今日“继续推进”撤销，当前不自动扩大全局整合或启动新的大规模数据下载。

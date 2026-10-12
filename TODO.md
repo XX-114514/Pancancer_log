@@ -1,5 +1,9 @@
 # 可执行任务
 
+## 2026-10-12T10:20:05.804843+08:00 B1真实运行与覆盖发现
+
+READY-02：done_official_MD5_SHA_resource_v4；B1-01：生产RUNNING、独立audit待生产真实成功；B1-02：45源header/既有覆盖完成，独立全部45/180审计已[预声明](inventories/analysis/2026-10-12/reviewed45_header_independent_audit_plan_v1.json)待执行。新增单位核对：frozen scope与后续clinical review字段不混为当前独立患者证据；后续响应合同须使用真实块与来源证据。仍未验证轴/CM驱动。[运行取证](inventories/analysis/2026-10-12/fullgene_resume_running_checkpoint_v1.json)。
+
 ## 2026-10-12T10:11:30.425815+08:00 已恢复执行授权
 
 READY-01：组配额实测扩充至2048G，原生产输出不存在；详细输入完整性由实际阶段核验。READY-02：新离线资源v4已冻结、待真实传输/校验。B1-01：生产/audit尚未启动；B1-02：45源审阅代码已冻结，待真实运行。本节取代昨日等待恢复指令；全部336/15/1008和原身份保留。[合同](inventories/analysis/2026-10-12/fullgene_offline_resource_recovery_v4_spec.json)。

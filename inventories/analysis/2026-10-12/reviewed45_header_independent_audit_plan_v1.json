@@ -1,0 +1,12 @@
+{
+  "schema": "reviewed45_header_independent_audit_plan_v1",
+  "created_UTC": "2026-10-12T02:20:07.533023+00:00",
+  "scope": "All45 native headers and all180 source-family existing unit summaries; no expression counts or models",
+  "producer_inventory_sha256": "e7c0c38673b4da16805ca1d842f6b34899834101f26ee2e805e2bd68ee47e60f",
+  "auditor_sha256": "7f90431905ce5ecdeecc5f2c5517fcaa458eecb631da5fffb146f347aabd1f58",
+  "limits": [
+    "Uses frozen scope for source patient status fields; does not independently accept current patient mapping",
+    "Count gate only; family pair records are not independent evidence"
+  ],
+  "status": "PREDECLARED_NOT_STARTED"
+}

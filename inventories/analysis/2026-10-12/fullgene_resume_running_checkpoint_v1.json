@@ -1,0 +1,84 @@
+{
+  "observed_UTC": "2026-10-12T02:20:05.804843+00:00",
+  "resource_execution": {
+    "status": "TERMINAL_SUCCESS_RESOURCE_ONLY",
+    "started_UTC": "2026-10-12T02:17:24.112888+00:00",
+    "pid": 359163,
+    "child_pid": null,
+    "role": "offline_prior_verification_not_scientific_model",
+    "script_sha256": "bacd14fb7f8b7b56afa2b1f3a8cd25377885c8da02135f5ee8822c639acefea0",
+    "contract_sha256": "e14dc107efd2fcda593ed392620f84dbe0afffb9e2839a7b8b51af3555c3f574",
+    "finished_UTC": "2026-10-12T02:17:27.318215+00:00",
+    "exit_code": 0
+  },
+  "verified_prior_receipts": {
+    "status": "ALL3_OFFICIAL_MD5_VERIFIED",
+    "method": "offline_transfer_verification_no_public_redownload",
+    "records": [
+      {
+        "file": "lr_network_human_21122021.rds",
+        "bytes": 20724,
+        "official_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+        "sha256": "47c971d2fbba4ecd0ba7485d1846a74054432a0d1a97ea3e6a79ae27d0da8094",
+        "observed_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+        "started_UTC": "2026-10-12T02:17:24.506059+00:00",
+        "finished_UTC": "2026-10-12T02:17:24.508033+00:00",
+        "method": "copied_official_MD5_verified_v2"
+      },
+      {
+        "file": "ligand_tf_matrix_nsga2r_final.rds",
+        "bytes": 29862142,
+        "official_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+        "sha256": "bb130724daf2319a50d9da326f17ec4ddc65bd35a674eb45d132f81284d01845",
+        "observed_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+        "started_UTC": "2026-10-12T02:17:24.508059+00:00",
+        "finished_UTC": "2026-10-12T02:17:24.911874+00:00",
+        "method": "copied_official_MD5_verified_v2"
+      },
+      {
+        "file": "ligand_target_matrix_nsga2r_final.rds",
+        "bytes": 262116605,
+        "official_md5": "md5:b09606b04b2d4490418d9028c0e58b9f",
+        "sha256": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d",
+        "observed_md5": "md5:b09606b04b2d4490418d9028c0e58b9f",
+        "started_UTC": "2026-10-12T02:17:24.911910+00:00",
+        "finished_UTC": "2026-10-12T02:17:26.466311+00:00",
+        "method": "offline_transferred_verified_local_target"
+      }
+    ]
+  },
+  "production_execution": {
+    "status": "RUNNING",
+    "phase": "production",
+    "started_UTC": "2026-10-12T02:18:14.731118+00:00",
+    "pid": 372246,
+    "role": "fullgene_preparation_or_computational_audit_not_axis_validation",
+    "worker_sha256": "debf951dce1c9149fde02d9c14f05e8b0d50cda2ba3f9895ebdec28cc4e37ce8",
+    "script_sha256": "7910af2797c032a9418b6db738ba1f61c3228a6fe5cbbc139364a9426a2d3f16",
+    "child_pid": 372335
+  },
+  "production_process": {
+    "pid": {
+      "exists": true,
+      "expected_fullgene_command": true
+    },
+    "child_pid": {
+      "exists": true,
+      "expected_fullgene_command": true
+    }
+  },
+  "register_schema": "native_LR_program_evidence_register_v16",
+  "registered_active_jobs": 2,
+  "resource_manifest_sha256": "b5298f5ba4e2297a526616a90747c9c6ded6fa6a80525badd28a652adaebc9a2",
+  "production_manifest_sha256": "b8f0fc0dceefb1c60e0e653b118a372f21f0c8acd3dc22295c358374f2daa12e",
+  "axis_validation_complete": false,
+  "transfer_receipt": {
+    "transfer_started_UTC": "2026-10-12T02:13:09.399019+00:00",
+    "transfer_completed_UTC": "2026-10-12T02:16:59.869705+00:00",
+    "bytes": 262116605,
+    "local_sha256": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d",
+    "method": "scp existing whole officially checked file; remote whole SHA/MD5 verification next",
+    "target_preflight_original3_input_paths": "EXIST",
+    "resource_script_not_yet_executed": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "reviewed45_native_header_recon_v1",
+  "status": "COMPLETE_HEADERS_AND_EXISTING_COVERAGE_ONLY",
+  "started_UTC": "2026-10-12T02:13:35.828887+00:00",
+  "finished_UTC": "2026-10-12T02:13:43.790987+00:00",
+  "code_sha256": "c1212f3f700f5e311e03f4acc963be3eb9370d0e832bf2fc85771d6eb47097d1",
+  "input_sha256": {
+    "membership": "04d127a0edfa682ce253543171e1e642fbb9821c1ffc4e095d6dbe6774ba2e5b",
+    "family_coverage": "0920e8ab56081f2efebbeb50923f620eda6afad5bd131f1e28f553a18016993b",
+    "pair_coverage": "243260f455348bef83eb69d1f8c5e921d225e1bb91cee618c0cfb7eec0708052",
+    "scope": "f01733c11dc5c5fea57beac1b0189160a215b5576b11673680eab3b270c75faf"
+  },
+  "sources": 45,
+  "reviewed_original_node_union": 13,
+  "native_source_cells_sum": 4410998,
+  "native_genes_min": 19783,
+  "native_genes_max": 58336,
+  "scope_libraries": 1251,
+  "family_library_units_ge20": 2263,
+  "sources_with_ge20_pair_stratum_records": 3,
+  "sources_with_ge10_pair_stratum_records": 16,
+  "original_node_union_labels": [
+    "B_cell_MS4A1_19",
+    "B_cell_MS4A1_57",
+    "B_cell_MS4A1_58",
+    "B_cell_MS4A1_67",
+    "Myeloid_FCER1G_63",
+    "Myeloid_FCER1G_65",
+    "Myeloid_FCER1G_69",
+    "Myeloid_FCER1G_95",
+    "T_cell_CCL5_31",
+    "T_cell_CCL5_38",
+    "T_cell_CCL5_74",
+    "T_cell_IL7R_28",
+    "T_cell_IL7R_36"
+  ],
+  "count_values_or_full_file_sha_verified": false,
+  "new_models_fitted": false,
+  "clinical_units_accepted": false,
+  "formal_states": false,
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "limits": [
+    "Native file/header availability is not full count/identity/clinical acceptance",
+    "Existing directed pair coverage records and source/cancer strata are not independent biological replicates",
+    "Exact clinical patient block and discovery/validation overlap require separate review",
+    "Original numbered subtypes remain separate; no formal state assignment or canonical merge"
+  ],
+  "outputs": {
+    "all45_native_header_source_summary.tsv": "28f39c7bbe7a263f93a61300b4b47c66a36272207d841829919231ba2c2522ec",
+    "all180_reviewed_family_unit_coverage_summary.tsv": "2eb1dadeda5712f8a38e3504f521ae74ef7adddd2fc17f6f9540ddcc5f5c8251"
+  }
+}

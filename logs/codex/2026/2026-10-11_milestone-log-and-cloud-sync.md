@@ -311,3 +311,15 @@ Git原仓库fetch因quota失败，本机HTTPS push缺凭据失败；新/tmp无ha
 检查AGENTS/README/STATUS/ROADMAP/TODO、RUNTIME_SYNC、方法索引、上轮daily/task/run及源合同。查询reviewed45_native_header_recon_v1.py/fetch_server_priors_fullgene_v3.py错误文件名未找到，rg发现实际recon_reviewed45_native_headers_v1.py/fetch_server_priors_aria2_v3.py后阅读；这是读取定位修正，没有科学失败。未提权的本机git ls-remote受沙箱DNS限制失败，后续用已授权网络核验，不据此诊断数据服务器网络故障。
 
 新资源/worker/registrar源码语法与biological scope SHA一致检查通过；实际传输、资源验收、生产、独立审计尚未运行。先更新README/STATUS/ROADMAP/TODO、同任务日志/daily/run并普通push；下一步安装核SHA及传输、资源v4真实校验和45源预声明只读审阅，资源通过后派发生物任务。未解决：真实全基因准备/审计、45源值级/临床验收、靶响应及轴验证。無关ambient脚本修改及collector/研究日志未暂存。建议commit：tools: resume fullgene readiness with verified offline resource recovery。
+
+## 2026-10-12T10:20:05.804843+08:00 资源v4真实验收、生产启动和45来源覆盖发现
+
+取证UTC2026-10-12T02:20:05.804843+00:00 /UTC+8 2026-10-12T10:20:05.804843+08:00。代码3e0a0f9886bdcba3f43b2f8b1acfedf8e1d545b8已02:12:21.700570 UTC普通push、02:12:25.244957独立HTTPS核验；并发预处理cdcea29提交保留，不称本CM任务产出。[代码回执](../../../inventories/analysis/2026-10-12/offline_resume_v4_code_git_receipt.json)。
+
+固定代码安装逐SHA通过，原3源/缓存路径全在；scp262116605bytes于02:13:09.399019—02:16:59.869705 UTC完整传输到新v4。资源实际02:17:24.112888—02:17:27.318215 UTC、PID359163、exit0、3官方MD5及本机SHA全通过；仅追加原v2缺失target，旧部分/失败不改。worker生产02:18:14.731118 UTC启动，worker372246/child372335；本取证严格记录当下manifest和/proc命令，[证据](../../../inventories/analysis/2026-10-12/fullgene_resume_running_checkpoint_v1.json)。资源校验/文件增长不是轴验证。
+
+45源审阅真实02:13:35.828887—02:13:43.790987 UTC exit0，完整45header/180家族覆盖导出SHA通过；4,410,998源细胞、1251冻结文库、13节点、19783—58336native基因、2263family×library单位≥20cells。至少1pair分层≥20样本仅3源（179994/183904/270680），≥10共16源；样本门槛不代表患者/设计/可测LR合格，不能说45源均可验证。[结果](../../../inventories/analysis/2026-10-12/reviewed45_native_headers_v1/inventory.json)。
+
+新独立header审计代码/合同按全部45/180核输入/outputSHA、基因轴/shape/计数门槛、原节点及旧frozen单位统计，不导入producer，不读counts或统计模型。真实审计尚未执行。后续临床单位review已发现旧frozen121/1169与family clinical table不一致的字段层次：原首轮统计只能称frozen scope。current clinical v2 1290行unit_kind显示402 reviewed_patient，而review_status121reviewed_identity+87reviewed_author_patient，402与208的字段差异尚待交叉核对与来源证据审阅，不把402全部当已审患者。
+
+读取glob JSON曾误入._Mac二进制分叉而UnicodeDecodeError；改为显式正常JSON及排除._后只读成功，没有删除分叉或重跑科学任务。关键问题：实际可比覆盖有限；下一步fullgene生产真实成功→独立全值复算，header独立审计及单位来源核对，再冻结跨癌种响应范围。当前无新的p值/正式状态/验证轴。
