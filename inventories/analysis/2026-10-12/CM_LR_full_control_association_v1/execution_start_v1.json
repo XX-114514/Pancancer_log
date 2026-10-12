@@ -1,0 +1,32 @@
+{
+  "observed_UTC": "2026-10-12T06:06:43.992259+00:00",
+  "manifest": {
+    "status": "RUNNING",
+    "phase": "production",
+    "started_UTC": "2026-10-12T06:04:30.803833+00:00",
+    "pid": 144523,
+    "script_sha256": "339fe7c966f20687ba59220f73bb137c814174a4c9bfb49a17e8ef59a25e9ffe",
+    "child_pid": 144526
+  },
+  "process_present": {
+    "pid": true,
+    "child_pid": true
+  },
+  "registered_active_jobs": [
+    {
+      "phase": "production",
+      "pid": 144523,
+      "role": "LR_extraction_driver",
+      "status_manifest": "${RUN_ROOT}/CM_LR_full_control_association_production_v1.execution.json"
+    },
+    {
+      "phase": "production",
+      "pid": 144526,
+      "role": "LR_extraction_production",
+      "status_manifest": "${RUN_ROOT}/CM_LR_full_control_association_production_v1.execution.json"
+    }
+  ],
+  "latest_completed_group": "finished_group GRP016 models 3166",
+  "audit_started": false,
+  "full_family_results_accepted": false
+}

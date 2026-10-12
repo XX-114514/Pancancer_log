@@ -473,3 +473,9 @@ COL1A1-DDR1新明确Fibro17→Epi52在乳腺34/36、CRC21/21（20块）、胃癌
 人工n50/25双库块、一常数控制的β与原全X最小二乘一致；固定seed、2000完整块残差置换和2000显式块bootstrap与批量权重计算一致/2000有效；仅数学数据，未运行真实关联。审计真实allβ/CR1/BH并显式2000例。完整13,497每variantBH，包括未估内部p1/公开NA，不能只对可估/显著子集校正。residual块按size内换全部向量（单独sizebin固定）、簇内原顺序，未知生物/区域和fallback身份不是统计可消除问题。原必需controls/blocks/W/H/canonical和RNA filtering全保留。
 
 [新合同](../../../inventories/analysis/2026-10-12/CM_LR_full_control_association_plan_v1.json)冻结seed、rank有效自由度、CR1、2000/1800、point/boot数值和hat门槛；显式补充关联不当原strict主验收或生物机制。语法/人工数学通过，真实未启动。e051db1efc9d35ce7bb7276953521b187f522f93已05:59:03.476500 UTC push/05:59:08.003982 HTTPS核验，保留并发记录和研究日志。下一普通push后真实全量与独立audit；目标active。
+
+## 2026-10-12T14:06:46.979472+08:00 补充全家族关联真实启动（UTC 2026-10-12T06:06:46.979472+00:00补录）
+
+冻结8a76fd7b56b5d30f5b77dd62c6eaefc899c8a889于06:03:40.702889 UTC普通push、06:03:45.672078独立HTTPS核验。producer 2026-10-12T06:04:30.803833+00:00 UTC真实启动，driver144523/child144526当前核实存活；观察2026-10-12T06:06:43.992259+00:00的latest=finished_group GRP016 models 3166。原严格status逐项保留、全部controls空间不变，26994全范围2000块置换/Bootstrap和13497每variantBH，当前audit未开始/无完整通过结果。[快照](../../../inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/execution_start_v1.json)。
+
+私有样本和score未上传，当前pending只记录脱敏进程/计数；不能据已完成小组发布显著性或验证轴。准备/核验执行路径后真实运行，无科学失败或重启。本轮原13497主设计8491常数nuisance与曝光唯一性改变后续方法，人工2000显式resampling对照通过；GSE161529官方网页reCAPTCHA没核临床，不改癌种/身份。保留其它任务历史和研究日志；同一句柄后续终态和完整审计优先，目标active。轻量/diff/隐私检查后普通push独立SHA。
