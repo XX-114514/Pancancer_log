@@ -42,3 +42,10 @@ var含展示gene_symbol及所有source_gene_aliases。展示名采用来源多�
 独立audit使用COO投影求和而非调用生产CSR remap：逐保留cell比较全canonical count、总量、校正、归一化及缺失掩码。基线和新集合指纹仍按冻结原始来源命名规范做精确比较；不相等不能证明跨名称处理版本非重复，source alias最终AC继续pending。
 
 [实际基因预检](../inventories/runtime/2026-10-12/gene_identity_preflight_v2.json)，[合成v3](../inventories/runtime/2026-10-12/combined_zarr_synthetic_contract_test_v3.json)，[映射合同](../scripts/public_gene_identity_contract.py)。真实最终组装改为独立run v2，避免复用已停止等待器manifest。
+
+
+## 2026-10-12T12:47:20+08:00 最终证据持久化组件准备
+
+- 用户临时卷授权下，最终对象须独立可读且过滤/审计记录留原项目卷。新增小型provenance保存组件：仅在真实全9源及最终Zarr审计PASS后，复制9源过滤账本/小型方法与冻结代码、初末执行证明、基线清单/词表；不复制矩阵/SQL大库/R交换，不删除任何文件。
+- 选中文件总量上限1GB，写前再核实有效配额+500GB留空；逐文件SHA复制前后精确一致，扫描Zarr不存在外部软链接。私有文件与索引仅服务器，新public summary只含件数/字节/SHA/状态。
+- 组件尚未真实执行；单独utility版本冻结不替换已启动的四个科学组装组件。阶段进度仍等待原预处理全量审计，当前无新增失败。
