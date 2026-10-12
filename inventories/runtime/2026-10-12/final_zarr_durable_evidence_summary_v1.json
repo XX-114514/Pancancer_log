@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-10-12T10:16:38.896768+00:00",
+  "all_checks_pass": true,
+  "n_files": 45,
+  "total_bytes": 44487737,
+  "temporary_inputs_deleted": false,
+  "schema": "public_preprocessing_durable_evidence_v1",
+  "source_final_AC": false,
+  "final_reserve_bytes": 500000000000,
+  "copy_script_sha256": "db39fc75ef07b63d91040fbb36dfa16a8458a1695c24aa083db8653d0750b84f",
+  "final_audit_sha256": "ee1f9d1f3b37d67a216db4ee70abc55527120c1b7c30533a4b4cf4f2d17b5bdf",
+  "standalone_Zarr_arrays_no_external_links": true
+}

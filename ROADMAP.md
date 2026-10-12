@@ -283,3 +283,8 @@ A4是未来检验“哪些通讯特征对模块活动有额外解释”的方案
 
 - 上述 03:37 记录的约 2.50 GiB 是历史快照；最新精确 `USER002` group-quota 余量为约 101.588 GiB。该值仍低于剩余 CM Stage01 的 129–157 GiB 外推和 200 GiB 安全门槛，因此 P5/CM 状态仍为 `blocked`，恢复入口仍为零基索引 580 的新 append-only attempt。
 - P6/免疫治疗仍由 11 个 reference-insufficient inferCNV skip 的验收语义和缺失 final audit 阻断；P1/下载 retry v3 已终止，但 GSE201347 独立 recovery 与下载后 guardrail 复核仍待执行。
+
+
+## 2026-10-12T18:16:10.399825+08:00 新数据技术合集里程碑
+
+统一预处理Zarr已完成：[9源/792文库/3180973细胞/49985特征](inventories/runtime/2026-10-12/FINAL_ZARR_ACCEPTANCE_v1.md)全量验收与原卷证据持久化PASS。随后先走来源/别名/作者计数槽及临床用途门槛，再另版本生物学整合；正式新增计数仍0，450万—550万新增目标未完成，新下载保持暂停，旧发现/验证对象不由本技术合集替换。

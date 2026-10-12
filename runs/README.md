@@ -17,3 +17,8 @@ bash scripts/new_run_record.sh "phase07 annotation"
 5. 不复制 `${RUN_ROOT}` 中的完整日志或大型对象。
 
 已有的外部历史运行可先在 inventory 建索引；只有在需要深入审计时才补建对应 Markdown 记录。
+
+
+## 2026-10-12 新公共来源完整技术合集
+
+[稳定基因ID预处理Zarr v2](20261012_public_preprocessed_zarr_v2.md)：9来源/792文库/3180973细胞，全量独立输出审计、标准读回及持久证据PASS；来源正式AC与生物学整合仍待。已登记runs/artifacts索引。

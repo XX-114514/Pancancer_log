@@ -128,3 +128,18 @@
 - 只读观察输出audit：399/792文库、1,622,434/3,180,973细胞，累计失败0；乳腺/CAR/LBCL已全部核对，HGG继续。完整终态仍pending，不发布最终通过。
 - [过半证据](../inventories/runtime/2026-10-12/final_zarr_independent_audit_half_checkpoint_v1.json)仅聚合计数/状态，不含患者或单细胞行。
 - 完整矩阵已在原项目卷，临时卷仅前处理；待全量输出审计PASS后保存小型过滤/审计证明、验证无外部链接、标准AnnData读取及实测空间，并普通push交付。原权威库、新下载暂停与正式来源AC=0限制继续保留。
+
+
+## 2026-10-12T18:16:10.399825+08:00 最终完整技术合集交付（UTC 10:16:10；读回取证10:16:59）
+
+- 全量输出audit完成2026-10-12T10:16:02.621075 UTC；组装终态10:16:10.399825 UTC，completed_audited_preprocessed_Zarr_source_acceptance_pending。9源792文库3180973细胞/49985特征，全部来源/元数据/计数/采用差值/normalize/掩码/CSR检查PASS，累计失败0。
+- 完整审计589134bytes，SHA256 ee1f9d1f3b37d67a216db4ee70abc55527120c1b7c30533a4b4cf4f2d17b5bdf。源正式AC=false/新增正式验收0保持；精确指纹0命中不替代别名审查。新批次校正/身份未做，TNBC/CTCL隔离，原权威库保持，新下载暂停。
+- 10:16:38 UTC按冻结组件保存45份小型原QC/冻结代码/基线/初末证据及原前导零失败—v4修复链，44487737bytes，逐SHA一致；无矩阵复制、无删除，最终Zarr无外部链接。
+- 10:16:59 UTC标准AnnData稀疏接口覆盖9源边界及首/中/末11位置，counts/X/采用差值读回通过；这是补充格式验证，全量逐行核对已完成。私有只读交付脚本SHA d69fe4dd3ad4a9863837953e6b5c20a41ef2c7fce1dc9f4ece92ba16213ec8af保存在最终run/scripts，未改变科学冻结组件。
+- 最终分配43837505536bytes（43.84GB），逻辑文件43755254814bytes；有效配额余量547948478464bytes（547.95GB），500000000000bytes留空满足。500GB不是写入量；备用卷仅加工，关键证据与最终数组在原卷独立保存。
+- [可读交付](../inventories/runtime/2026-10-12/FINAL_ZARR_ACCEPTANCE_v1.md)及三份JSON已逐字段脱敏审查，只含来源计数/opaque文库token/检查布尔/字节/SHA；私有过滤账本留服务器。生产冻结eb72e0b，全部旧失败史保留。
+- 本地文档渲染第一次f-string语法错误，编译阶段退出，未修改文档或科学数据；修正后生成，最后仍做链接/diff/隐私验证。
+- ZARR-NEW-01技术交付完成；后续来源别名/作者计数槽/临床用途验收，冻结细胞选择后另版本开展注释、批次校正及CoVarNet/LIANA。不能宣称新增临床450万—550万或全体彻底去污染。
+- 更新同任务/daily/run、README/STATUS/ROADMAP/TODO/CHANGELOG及方法链接；轻量cloud/diff/隐私检查后普通commit/push并独立HTTPS核验。并发科学支线修改保留，不force或重写历史。
+
+- 最终发布前检查：5项合同测试PASS，仓库/链接/JSON与release检查0错误；1项既有历史路径warning，本次新证据与新增文本无私有绝对路径/秘密/患者或细胞行；git diff --check通过。
