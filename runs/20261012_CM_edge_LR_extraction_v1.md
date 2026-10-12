@@ -7,3 +7,7 @@
 主后续指标log1p(expr_prod)，lr_means/两rank保留但本轮不测试p；rank不是绝对强度/FDR。原身份/块、W/H/F保持固定。NNLS去两端活动与H均输出，仅点估计就绪，不当CM驱动。源/情境/候选覆盖可公开，私有库/患者数组只留服务器。
 
 提供PANCANCER_PREFLIGHT_ROOT、PANCANCER_ANNOTATION_ROOT、PANCANCER_CM_LR_PLAN，依次运行producer/auditor；普通push后派发，真实首尾/exit和所有模型接受另记录。
+
+## 2026-10-12T12:47:00.606453+08:00 v1失败与v2修复
+
+v1真实04:43:01—04:43:09 UTC exit1，旧审计摘要不存在input_signature字符串字段，读LR分数前失败，audit未启动；旧目录/代码/log保留，两个PID不存在。新[修复合同](../inventories/analysis/2026-10-12/CM_edge_LR_extraction_execution_plan_v2.json)/v2独立输出，以已审flag、逐库JSON签名/SHA和父合同验收；生物范围/score/门槛不变，v2未运行。

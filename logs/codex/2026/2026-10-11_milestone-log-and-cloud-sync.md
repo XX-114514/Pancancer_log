@@ -429,3 +429,11 @@ M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、
 新[执行合同](../../../inventories/analysis/2026-10-12/CM_edge_LR_extraction_execution_plan_v1.json)：所有34原边情境，68方向×4624=314432完整candidate cases，不做rank/p选择；逐全库SHA与既有独立audit输入签名复核，native全亚基/未输出/已输出/患者块分别统计。保存私有全observed raw四scores及68数组；源级counts门槛20library/10block/80%仅数据覆盖，不当模型可识别。保留来源限定和低身份置信端点；ACTR2不是ACVR2A、C1QA-CD93争议不改字。固定W/F去两端NNLS/H并列，auditor不importproducer、以CSV row计数/全raw scores、完整314432分母和NNLS KKT验收。本轮没有association/p/外部验证，也未重跑LIANA或下载。
 
 新代码语法PASS，真实未派发；公开resource及汇总/代码，患者/库keys和原observed vectors留server。代码/计划日志轻量、diff/隐私检查、普通push后执行。同一任务失败/修复历史保留，科学goal active，数据提取不是验证完成。
+
+## 2026-10-12T12:47:00.606453+08:00 LR提取签名摘要schema修复v2预声明（UTC 2026-10-12T04:47:00.606453+00:00）
+
+v1 producer04:43:01.919705—04:43:09.659612 UTC exit1，driver289883/child289899核实均不存在，注册活跃已清空；audit未启动。KeyError input_signature：旧受审报告只保留signature_independently_reconstructed=true、output SHA，不存原签名字符串。失败发生首个完整分数文件读取前；v1只有151byte私有gzip表头，没有科学分数或candidate统计，保留目录/代码/manifest/log，不因观察超时重启。
+
+读原audit源码及真实JSON schema：逐文库sidecar存在input_signature且与固定全局status列相同，原独立审计曾按exact roster/native genes/contract重构并确认签名。新v2[合同](../../../inventories/analysis/2026-10-12/CM_edge_LR_extraction_execution_plan_v2.json)检查原审阅flag、output SHA、全局status与逐库JSON签名及JSON SHA，另核父manifest和contract SHA；不弱化/伪造签名。producer/auditor都新版本、新v2输出，原4624/68/314432范围、指标、missing/计数门槛/NNLS不变，没有新关联或重算LIANA。语法通过；真实v2尚未派发。
+
+冻结dbbd807ae7afa514223a221a719f505352629995于04:41:54.776376 UTC普通push、04:41:58.818925 HTTPS核验。保留并发记录/研究日志；修复前后diff、隐私、仓库验证普通push后新派发。目标仍active。
