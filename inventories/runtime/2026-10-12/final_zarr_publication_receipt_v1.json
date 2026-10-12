@@ -1,0 +1,16 @@
+{
+  "schema": "public_final_Zarr_publication_receipt_v1",
+  "verified_utc": "2026-10-12T10:23:22+00:00",
+  "verified_UTC_plus8": "2026-10-12T18:23:22+08:00",
+  "repository": "XX-114514/Pancancer_log",
+  "branch": "main",
+  "content_commit": "2efa2b9d3f407a3e00c663e2832a067d1b540d89",
+  "verified_remote_main": "2efa2b9d3f407a3e00c663e2832a067d1b540d89",
+  "verification": "independent_HTTPS_git_ls_remote_after_ordinary_push",
+  "final_full_audit_sha256": "ee1f9d1f3b37d67a216db4ee70abc55527120c1b7c30533a4b4cf4f2d17b5bdf",
+  "published_matrix_count": 0,
+  "published_patient_or_cell_rows": false,
+  "final_technical_Zarr_audit_pass": true,
+  "source_final_AC": false,
+  "readable_report_saved_beside_server_final_output": true
+}

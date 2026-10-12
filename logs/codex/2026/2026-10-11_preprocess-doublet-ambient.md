@@ -287,3 +287,8 @@ prepare_v3实际启动2026-10-12T02:15:17.694990 UTC（10:15:17 UTC+8），代�
 - 最终发布前检查：5项合同测试PASS，仓库/链接/JSON与release检查0错误；1项既有历史路径warning，本次新证据与新增文本无私有绝对路径/秘密/患者或细胞行；git diff --check通过。
 
 - 正式run及五项重要产物已登记runs/artifacts TSV和run索引；记录成功attempt v3实际起止时间/冻结代码，技术完成与来源正式AC保持区分。
+
+
+## 2026-10-12T18:23:22+08:00 最终技术交付已普通push并独立核验
+
+内容提交2efa2b9d3f407a3e00c663e2832a067d1b540d89已普通push到指定public库，独立HTTPS ls-remote main完全一致；[发布回执](../../../inventories/runtime/2026-10-12/final_zarr_publication_receipt_v1.json)。同一可读报告已保存服务器最终run/manifests。只发布脱敏汇总/审计/方法/日志，没有矩阵或患者/细胞行。全量技术Zarr交付完成，来源正式AC限制不变；临时数据未删除。
