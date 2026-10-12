@@ -1,0 +1,496 @@
+{
+  "observed_UTC": "2026-10-12T08:59:45.744518+00:00",
+  "coverage_sha256": "58c43265eb15f4cf6215957519c9e018eb241ce11b9d0ceecfff64900a97c8d9",
+  "native_cache": {
+    "root_files": {
+      "input_contract.json": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+      "all_node_number_catalog.tsv": "02bcd7b83b2967e8a8907016002050dbcecbc54c133f0a486f4ea7e5e96536e0",
+      "manifest.json": "dd36a70020503506ada916f9b6d6a25f8f2dd05cb56b1eed675545dd94deec53",
+      "independent_audit.json": "37130469977972f77913090bcd05c2dc4d8fdb4cca540a532594554a4a3bc838"
+    },
+    "sources": {
+      "GSE116256": {
+        "manifest_sha256": "f91a64b75c585aa4e7a86de8e4de9dcd57ae4afcf2250bf77f4e8f066dc692d8",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE116256",
+          "cells": 30623,
+          "candidate_cells": 29795,
+          "sample_node_units": 662,
+          "measured_genes": 27899,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "0516686dc53023273d1c7f303eb385508e07e26931111e392877d5d4d6d5002d",
+            "sum_CP10K.npz": "5355840c5a78ef3a9e10321af987979e4d7495416007d4c7cbad8c864ae69452",
+            "sum_log1p_CP10K.npz": "11e5eef648e43e4c39f099e82f36500fe3a83b0bdcab66f303fbc759832ffb75",
+            "units.tsv": "b36b8b0dfe8bb63e67790cba7c446ab6e787cbaebfb98802098c506636532978",
+            "genes.tsv": "adbdfd3f35501804e62c9fbeca54a9d6599abb1960afc990d14b1891e1a906e6"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              1,
+              18,
+              1,
+              0,
+              0,
+              15
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 10.26568078994751,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE131907": {
+        "manifest_sha256": "437701af07b441d92a662532400be0dbb78e39a2cc6081e033d34f482aa614f6",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE131907",
+          "cells": 199848,
+          "candidate_cells": 199628,
+          "sample_node_units": 1799,
+          "measured_genes": 29634,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "b6191dff5211d427c2f3463849ae8a715a2971a83c8475933ad5bfee04bc3762",
+            "sum_CP10K.npz": "f9f63169c36f2b8abc71565562d1e51ececb73b85351a769a0a4601dab615aa9",
+            "sum_log1p_CP10K.npz": "411fbf5bab8dc75676f5f8d26217dcb250f125a532ce62bba0050ac5afefd557",
+            "units.tsv": "7f3a68e324cf6268717fe7a416953783c5ef2dcc81bc8668a51a158c273784a2",
+            "genes.tsv": "71e2dbde2849d6e57081fa635583ca49fc9245cf571e7f9cc9c51c9af5edcd4e"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              8,
+              104,
+              26,
+              19,
+              2,
+              9
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 79.83523464202881,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE148071": {
+        "manifest_sha256": "ba3ba8c72a9604c1ecbae9568f1e722b32380f2ba91e01b6cb7a46e8b772a1f8",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE148071",
+          "cells": 71894,
+          "candidate_cells": 70331,
+          "sample_node_units": 920,
+          "measured_genes": 29527,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "b3ec0a0d55ee8f164a5d6b2b7cbbb966cdb158662aeae6cf975edcc81db8b5b1",
+            "sum_CP10K.npz": "63303b6b7d32e9146d6e9bf18530543af72412f2493d2695df80bcfca19a6a58",
+            "sum_log1p_CP10K.npz": "027ebb45a4dc58705716db1ea6d3850a7d6346579af83ae597568549b584ee38",
+            "units.tsv": "1821df9a45bb5fc12bd6084c0be1db47f0ef48fbd6ba32f0d606aa00d55ef865",
+            "genes.tsv": "732ff15d74fa3d614109c9d7fed243d9bc864dddd2902dd93e325aa914e3c5a7"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              235,
+              5,
+              0,
+              19,
+              7,
+              148
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 32.29387307167053,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE161529": {
+        "manifest_sha256": "bbe5e6fb9cb878d2ce335a41282cc7b371f199302fc7dca88dff584775a7d165",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE161529",
+          "cells": 356167,
+          "candidate_cells": 355294,
+          "sample_node_units": 1752,
+          "measured_genes": 33538,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "3c9096cc3f4093830585d937756eb92d9eae755a3041a49ee30b0d25bfbd435c",
+            "sum_CP10K.npz": "34cb41c5a73a25624d2953d243d89efd07469e8aa79041a11e55b4502590bba1",
+            "sum_log1p_CP10K.npz": "c541f4fc0440a2ef133a33b22f7b78c0cdcf1387892f0cc48028782b4e70317a",
+            "units.tsv": "5ae36fc2f2e0edaa24eb0fd43f71327ef9374bf3e9e41a69be66d68fbdb2c415",
+            "genes.tsv": "d3b8b73f9ccb9eb055411c069cf3dd076be24cdead4a132b3e0667421e61753f"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              226,
+              0,
+              0,
+              40,
+              1,
+              1
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 143.20000457763672,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE176031": {
+        "manifest_sha256": "f54c3530951659705d0e39937dbe7e2ca1b80d6c36b38fa221917f14b393c2eb",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE176031",
+          "cells": 23034,
+          "candidate_cells": 22755,
+          "sample_node_units": 676,
+          "measured_genes": 34539,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "d19dcf607f3f0750745e4eeecf18ca97ec5d2edf43de996d51ca23bb8cac5f73",
+            "sum_CP10K.npz": "7fd0129a2ff89192cbe93f7bd3e877de97aae63a27c851dd7a1079c2dea310d3",
+            "sum_log1p_CP10K.npz": "17bee6d842c228c9783edd0b2d0853b75f4e85d8512c332a7d543232277aa901",
+            "units.tsv": "cf8cc43963a827ad2ee2f3a42fdc57a804ba2c3f0677dfc3d07b360900d85229",
+            "genes.tsv": "b6486ffa541c57614c1d464ea580964280b511e4017764d3efbdd2dc59c10ee7"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              3,
+              32,
+              4,
+              56,
+              2,
+              2
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 10.259135007858276,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE178341": {
+        "manifest_sha256": "3a28671df7a8df54e345bf5b6d1c92729595e5847f3ca6dc89aa41de712f65c4",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE178341",
+          "cells": 211915,
+          "candidate_cells": 211427,
+          "sample_node_units": 4645,
+          "measured_genes": 26895,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "97fc33a583038f87cb5bda057d5c540408962128dc3d454778bb1ea7eeba3df4",
+            "sum_CP10K.npz": "5b79a3168b013ca6a93434b0c95e64fb95421cfba3b302df2622518537fb73cb",
+            "sum_log1p_CP10K.npz": "7456b4282336d909f1e274c8c259295202781c4989d8b89577800eb7a77d966f",
+            "units.tsv": "d01f62724b3c3a0ca218775afc4d4eb3e6ddddc7fa2dd7e5c30fb2964dd238ab",
+            "genes.tsv": "282bbe7ee6bf67b1975b5ec9d685940d8a3bf7ef9ac9ce776dfe45fa8d5be19a"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              0,
+              13,
+              0,
+              1,
+              2,
+              84
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 125.91330146789551,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE179994": {
+        "manifest_sha256": "74f0e58b4a9a3af162d89bee79c81dc88c170545451b7c39c1256a81aa3e0014",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE179994",
+          "cells": 144314,
+          "candidate_cells": 144267,
+          "sample_node_units": 684,
+          "measured_genes": 19790,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "1cfec2d4472aff113d6c6a3a700cd78e7f485515aa9b9fac3d29e3ec1100e55b",
+            "sum_CP10K.npz": "9cd2883a68162f54fdbda02aaa05e85191009701136fdad41e600a7c36265643",
+            "sum_log1p_CP10K.npz": "97d9040e7095eff213a31fbece9960372c8d01661938f241871ad1cbc51291df",
+            "units.tsv": "41bf33d8e48feb72f6f3a0209a17ee37101c26f82eb2014c7ee2128c107854d7",
+            "genes.tsv": "7a6e48a9edabd1e936e4806ca4d0448f4bbd821ddab2a9481d6fdd1612913707"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              4,
+              220,
+              4,
+              9,
+              0,
+              13
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 44.29109811782837,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE182109": {
+        "manifest_sha256": "9087e4d2ed30d8111a94374ec25865b1ff43ef31a523771fa9e497f794afd46a",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE182109",
+          "cells": 233651,
+          "candidate_cells": 227269,
+          "sample_node_units": 1327,
+          "measured_genes": 38224,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "58e4335dfe92cf9164054680a4a31d0e8f2f9817bfeef092f36093783d3c84f6",
+            "sum_CP10K.npz": "1b957a86282aecf46fe542cc3c51e833050099fb47b2a7387b57a9855db88829",
+            "sum_log1p_CP10K.npz": "875ef2e3ff8ade2a0cc73460fca9d13d3fe2206b827014d5a15dd42c3c968c9b",
+            "units.tsv": "97b2c6184748fcecbb6346554b4e39928e691b08c4c698c721a0fc85dda57e18",
+            "genes.tsv": "493eb3a9db5d76f118a8a6dabf617dd62e8e9e986a7ca684d69a11add1baf9e5"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              0,
+              28,
+              1,
+              0,
+              2,
+              38
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 110.86766409873962,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE183904": {
+        "manifest_sha256": "04d78026ed84e15ff9c99a2d948947b537de2808b38ce36859bfaa3e73860e5c",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE183904",
+          "cells": 106696,
+          "candidate_cells": 105707,
+          "sample_node_units": 1353,
+          "measured_genes": 24186,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "12c0c244c4fb98f8c0dbb12e945d89c753d9dccbad083dc4c3b38ec211381d3d",
+            "sum_CP10K.npz": "b9fa16f27cf34497e6802b7ece179f09018252b04489ca0484146a2704c56c0e",
+            "sum_log1p_CP10K.npz": "72a2f6e2008662eb85a3bf0a0690e6078c93b8a99a674a38eef9a1fed7383881",
+            "units.tsv": "d6fd7eeb0ef449d2287ebbba50f741731bbc82de3c60591ef1c619da549d0d00",
+            "genes.tsv": "d1c0e9035f4f601aa4c38c138887b16380434b47b79da3ec5b85b08b4a39eb87"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              1,
+              100,
+              16,
+              21,
+              1,
+              7
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 46.236440658569336,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE270680": {
+        "manifest_sha256": "1f0e038662251cd94f5070bf2443a11320e371dbf6ee55aee59e00b900a80ad7",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE270680",
+          "cells": 558774,
+          "candidate_cells": 557567,
+          "sample_node_units": 2702,
+          "measured_genes": 36601,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "50d7a14663938e568bb5499bd584f5417cd7c81d206ce6267304fc0194c8cf77",
+            "sum_CP10K.npz": "0b44eecc64f90368269fbfee544283e429abe4cf66d8c8c5a724e9ee80197ba2",
+            "sum_log1p_CP10K.npz": "1fd54d66f9a9388bb97562fd52193c6d75910e802f66c8a496c66cb67f457a56",
+            "units.tsv": "d2f019d564811c45a4013a7769c9cf9b1104c68e13a728beec448845ad210a18",
+            "genes.tsv": "817fc65a04a56aaf00b407d7d8ff86be695e95396f847453a02e4f711a044ae5"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              0,
+              141,
+              45,
+              1,
+              0,
+              2
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 218.34923458099365,
+          "peak_rss_gib": 9.070045471191406
+        }
+      },
+      "GSE274229": {
+        "manifest_sha256": "16b23269b5a2d7ba19f67e0315910606525b14998f27e102e574f89ba457d385",
+        "manifest": {
+          "status": "COMPLETE_EXACT_MEMBER_EXPRESSION_EVIDENCE",
+          "gse_id": "GSE274229",
+          "cells": 156166,
+          "candidate_cells": 155477,
+          "sample_node_units": 1300,
+          "measured_genes": 33767,
+          "zero_library_cells": 0,
+          "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+          "output_sha256": {
+            "positive_counts.npz": "1dd898be22307d96e6bc84e792a0ce2a49acd387cbbe63957f4307be410dd83b",
+            "sum_CP10K.npz": "7f566e7c01ee4809c61dbc4967779b42409a3114d358fe2be9a338609552394d",
+            "sum_log1p_CP10K.npz": "bb9e34576002b0c395862795dc4d49ea1df40852d7484546c0695a49fc4d7c77",
+            "units.tsv": "7912c8f37228394069b27d85524537370876f82db64e92f68f1d834aa284662b",
+            "genes.tsv": "45a7bac0753596c93b933b02fb180ec18f3ea7a67c2d6aa1c3aba3f5546267c6"
+          },
+          "fresh_recount": {
+            "genes": [
+              "KRT17",
+              "CD3D",
+              "MS4A1",
+              "DCN",
+              "PMEL",
+              "MKI67"
+            ],
+            "rows": 256,
+            "fresh_positive_counts": [
+              0,
+              112,
+              5,
+              6,
+              1,
+              12
+            ],
+            "fresh_first256_recount_parity": "PASS"
+          },
+          "elapsed_s": 48.66112780570984,
+          "peak_rss_gib": 9.070045471191406
+        }
+      }
+    }
+  },
+  "current_input_sha256": {
+    "counts": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+    "catalogue": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+    "scope": "e7fe741602219561ce1cae496264e819d3e8e6fb0b8de1ba955de628a2ae0ead"
+  },
+  "predeclared_UTC": "2026-10-12T09:05:56.855820+00:00",
+  "producer_sha256": "7aa2da1580a73857f27a42c51f01246ee7f911aa142c44c7e5f57fccf60e766b",
+  "auditor_sha256": "1c121e7aec0a6dfdcfe37e42e157e79036076f83b7151ada3b2c7fc4834c6bee",
+  "resource_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "scope": "all138 eligible major-pair contexts/all276 directions/all4624 resource entries=1276224, no LR selected by p or old rank",
+  "metric": "native per-cell meanlogCP10K L and R, minimum across all complex components; retain native measured zeros, absent assay genes NA; not absolute communication or old emitted LIANA result",
+  "complexity": "mean detected and sumlog genes excluding GLOBAL union of all frozen LR resource genes, both biological and technical variation; no direct outcome gene in complexity control",
+  "private": "All individual library expression vectors, patient blocks and units stay server-only; aggregate/source/context readiness/hashes only public",
+  "invariants": "current172 labels,9CM,W/H,Zarr/exclusions preserved; trusted major pooling is parallel level, not fine endpoint reproduction; no states or patient identities renamed",
+  "no_new_RNA_download": true,
+  "new_statistical_p": false,
+  "memory": "stream all1.276M readiness records, process one source at time, source matrices sparse; target peak below12GiB",
+  "audit": "separate direct fine-unit row sums allmajor/allgene vectors, allcomplexvalues and allreadiness cases; inherited old raw-data-cache audit, not new fullcell raw recount",
+  "breast_mapping_sha256": "3ee84f9c0f4cf4dfae8c30bf49f54eddd408d4743faf79936475722b62045429",
+  "breast_correction": "Preserve all138 old contexts for assembly only; carry separately audited exact tumor patient blocks and primary/LN material. Statistical inference must rederive comparable strata and coverage with corrections; normal/all69patient issue not promoted."
+}

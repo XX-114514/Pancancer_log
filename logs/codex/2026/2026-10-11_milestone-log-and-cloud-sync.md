@@ -521,3 +521,8 @@ All426 original breast cases/1178 CM mappings, four full families=4712 planned m
 CM支持生产08:26:36—08:26:39 UTC exit0，612描述行；178q中55记录剩余核心中位≤2。单核→T/NK的CM06仅1核心/约8%权重，不能直接称轴主导模块。固定1290/172按权威major汇总，14229记录/138覆盖通过，11GSE/8当前标签；Mac–T及Epi–Mac各6GSE，B–T/Epi–T各5，Mono–T仍1。新入口不改身份/状态、不当精确子群复现。[支持](../../../inventories/analysis/2026-10-12/CM_activity_member_support_diagnostic_v1/RESULTS.md)，[覆盖](../../../inventories/analysis/2026-10-12/major_pair_coverage_probe_v1/RESULTS.md)。
 
 云端：首次4MB bundle传输55秒超时；240秒重试传输完成但普通push遇并行新增提交拒绝。独立HTTPS fetch确认远端与本地均f02d0dbd4d7a4e240ec88d2320252573e6690835，包含本三阶段6cfad59；科学进程未重启，历史不改。下一新节点普通push另核，当前次级诊断未宣称独立全审。
+
+
+## 2026-10-12T17:10:20.099574+08:00 /UTC 2026-10-12T09:10:20.099574+00:00 大类细胞对全基因组装预声明
+
+核实11源缓存全部COMPLETE，14229覆盖表SHA固定，全138合格pair/context×2方向×4624资源=1276224准备记录，无新p或按rank/显著性选择。原268行node_index按位置→稳定node_id→172当前标签，按明确major聚合；保留原细胞比例用于后续混合敏感性，不改身份/9CM。非LR复杂度排除全部资源基因，避免直接包含检验对象，仍兼含生物和技术变异。原生RNA零保留，未测组分NA，不把无旧LIANA输出填为阴性。乳腺另带已审原发/LN及肿瘤作者患者块，后续统计必须重新分层核覆盖，不使用旧混合分层做验证。现在代码/合同冻结、实际尚未派发；流式写127万records，私有基因/患者向量不上传。[合同](../../../inventories/analysis/2026-10-12/major_pair_native_assembly_plan_v1.json)。
