@@ -1,0 +1,40 @@
+{
+  "observed_UTC": "2026-10-12T07:26:51.791531+00:00",
+  "executions": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T07:08:55.317532+00:00",
+      "pid": 255187,
+      "script_sha256": "ab7887f0865deaca0e1203b4bb548babc606ccf2d0431e8ed662a5d4ac2836d0",
+      "child_pid": 255190,
+      "finished_UTC": "2026-10-12T07:09:26.296594+00:00",
+      "exit_code": 0,
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T07:09:26.298421+00:00",
+      "pid": 255187,
+      "script_sha256": "06e98af03cb75ff47550accafae46d77e904564d47c44f60f6f1c38922713a05",
+      "child_pid": 255442,
+      "finished_UTC": "2026-10-12T07:16:21.407545+00:00",
+      "exit_code": 0,
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    }
+  },
+  "all381170_exprprod_and_lrmeans_within_declared_tolerance": true,
+  "private_features_not_exported": true,
+  "outputs_sha256": {
+    "inventory.json": "cf141ab4bc73984a87ae3d67edfb114f389c7251d85430148825396fb00c69fa",
+    "independent_audit.json": "e19d4855f58c5807997454023a51a7c39551f16fce7fa77f7f774f3e3c07c5be",
+    "source_native_score_parity.tsv": "0526cf73cad98a9aa526e1e107debdc47c57d2746a7a03387f459ca50dac94cf"
+  }
+}

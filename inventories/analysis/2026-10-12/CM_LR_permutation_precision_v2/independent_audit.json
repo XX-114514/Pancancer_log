@@ -1,0 +1,76 @@
+{
+  "status": "PASS_ALL26994_UNCHANGED_MODELS_AND_BH_WITH_EXPLICIT20000_BOTH_SIGN_EXAMPLES",
+  "observed_UTC": "2026-10-12T07:08:21.180263+00:00",
+  "auditor_sha256": "1a033b8a7d97d831af043cf92bf53f93e1813a65e336ceac8f30bcf93986693a",
+  "producer_inventory_sha256": "9c6eeb051726d6f564dd1e551a4073b6dcb864c9e54e03bafd9433de18afe0b2",
+  "n_all_rows": 26994,
+  "n_extended_models": 19127,
+  "all_original_columns_unchanged": true,
+  "explicit_examples": [
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM01",
+      "variant": "endpoint_excluded_library",
+      "beta_sign": "positive",
+      "hits": 244,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    },
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM01",
+      "variant": "original_H_library",
+      "beta_sign": "positive",
+      "hits": 1227,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    },
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM03",
+      "variant": "endpoint_excluded_library",
+      "beta_sign": "positive",
+      "hits": 14580,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    },
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM03",
+      "variant": "original_H_library",
+      "beta_sign": "positive",
+      "hits": 10668,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    },
+    {
+      "case_id": "GRP001_LR0842",
+      "cm": "CM01",
+      "variant": "endpoint_excluded_library",
+      "beta_sign": "positive",
+      "hits": 837,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    },
+    {
+      "case_id": "GRP001_LR0842",
+      "cm": "CM01",
+      "variant": "original_H_library",
+      "beta_sign": "positive",
+      "hits": 1120,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    },
+    {
+      "case_id": "GRP001_LR0920",
+      "cm": "CM03",
+      "variant": "endpoint_excluded_library",
+      "beta_sign": "negative",
+      "hits": 9806,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    },
+    {
+      "case_id": "GRP001_LR0920",
+      "cm": "CM03",
+      "variant": "original_H_library",
+      "beta_sign": "negative",
+      "hits": 11248,
+      "status": "PASS_EXPLICIT20000_FULLX"
+    }
+  ],
+  "scientific_validation": false
+}

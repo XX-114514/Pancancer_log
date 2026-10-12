@@ -1,0 +1,40 @@
+{
+  "observed_UTC": "2026-10-12T07:09:43.094456+00:00",
+  "executions": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T06:30:02.298542+00:00",
+      "pid": 346423,
+      "script_sha256": "84d4e5a0c7bd84288ad4e3a8af4b02adc39ca9f9403cadbd5e22debec95442f9",
+      "child_pid": 346456,
+      "finished_UTC": "2026-10-12T07:08:13.372125+00:00",
+      "exit_code": 0,
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T07:08:13.378128+00:00",
+      "pid": 346423,
+      "script_sha256": "1a033b8a7d97d831af043cf92bf53f93e1813a65e336ceac8f30bcf93986693a",
+      "child_pid": 251031,
+      "finished_UTC": "2026-10-12T07:08:21.262760+00:00",
+      "exit_code": 0,
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    }
+  },
+  "precision_job_only_terminal": true,
+  "other_validation_work_not_implied_terminal": true,
+  "outputs_sha256": {
+    "all26994_precision20000_associations.tsv.gz": "ce3238d4942c506e5132e6227b68ba6c090f976450733ff3d886a01d52fe525f",
+    "inventory.json": "9c6eeb051726d6f564dd1e551a4073b6dcb864c9e54e03bafd9433de18afe0b2",
+    "independent_audit.json": "43905bdc32daa9d1fe5b05537a86b7bb5518d9c50205a650a189c01a29acd929"
+  }
+}

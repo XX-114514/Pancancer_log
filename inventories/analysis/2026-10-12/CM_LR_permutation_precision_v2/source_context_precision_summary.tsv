@@ -1,0 +1,10 @@
+gse_id	sample_class	models	estimable	q05	q05_stable_CI
+GSE131907	normal_or_adjacent	110	110	0	0
+GSE148071	primary_or_unspecified_tumor	171	171	0	0
+GSE161529	primary_or_unspecified_tumor	1178	1171	28	1
+GSE178341	normal_or_adjacent	40	40	2	2
+GSE178341	primary_or_unspecified_tumor	10522	8067	143	142
+GSE179994	primary_or_unspecified_tumor	222	221	1	0
+GSE182109	primary_or_unspecified_tumor	414	414	1	0
+GSE183904	primary_or_unspecified_tumor	756	742	3	2
+GSE270680	primary_or_unspecified_tumor	84	84	0	0

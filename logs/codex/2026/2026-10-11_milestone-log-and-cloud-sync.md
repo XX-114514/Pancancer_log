@@ -504,3 +504,13 @@ All426 original breast cases/1178 CM mappings, four full families=4712 planned m
 ## 2026-10-12T15:07:21.172726+08:00 /UTC 2026-10-12T07:07:21.172726+00:00 现成8源全基因单位可复用，表达口径验证冻结
 
 8来源14466候选sample/node单位逐一比对当前细胞计数，0错位、0缺失、0额外。旧node_index必须按268行原catalog位置→稳定node_id→172当前标签，不能当当前number；旧unit患者字段不复用。固定全部68方向/381170原观测、4624原资源，核验复合物最小组分logCP均值产品/均值是否等于LIANA1.7.1原分数，表达差异作为证据记录不覆盖旧结果。平均检测基因及总logCP表达量用于后续复杂度敏感性，兼含生物/技术影响，不直接称状态、TF或QC修正。计划已冻结，真实preflight尚未执行。首探系统Python缺pandas，改用既有scanpy环境后完成，未重读或下载RNA。[合同](../../../inventories/analysis/2026-10-12/CM_native_expression_preflight_plan_v1.json)，[对齐](../../../inventories/analysis/2026-10-12/CM_native_expression_preflight_v1/unit_alignment_probe.json)。
+
+
+## 2026-10-12T15:48:32.679925+08:00 /UTC 2026-10-12T07:48:32.679925+00:00 全精度及原生表达两阶段终态验收
+
+补录实际事件：全20000 producer06:30:02—07:08:13/audit07:08:13—07:08:21 UTC exit0，前2000全部19127复现；主178 q/147区间、119接口、0双来源q+区间，同一CRC两技术情境不算2GSE，来源限定支持保留。原生8来源/68方向/381170分数双指标全投影无差异，07:08:55—07:16:21 UTC producer/audit exit0；没有新RNA、身份或绑定验证。候选物理含义另审，IL1B–SIGIRR不当IL1B直接受体。乳腺补充07:28:42已实际启动、需终态另验；当前源核活动diagnostic规则已准备，尚未执行，不改主p。[精度结果](../../../inventories/analysis/2026-10-12/CM_LR_permutation_precision_v2/RESULTS.md)，[表达结果](../../../inventories/analysis/2026-10-12/CM_native_expression_preflight_v1/RESULTS.md)。
+
+
+## 2026-10-12T16:21:53.442257+08:00 /UTC 2026-10-12T08:21:53.442257+00:00 乳腺敏感性已取证完成
+
+实际07:28:42—07:30:05 UTC producer/audit exit0，4712全X/BH和8显式重采样例通过。去两端基础48q，但48均无稳定bootstrap区间；只有5/1037基础模型可提供区间。完整亚型1039高影响/139覆盖不足；COL五CM均未q通过。此为同一数据敏感性非外部验证；不改阈值或将区间不足当生物消失。之前pending记录保留，现以终态为准。[结果](../../../inventories/analysis/2026-10-12/GSE161529_primary_patient_sensitivity_v1/RESULTS.md)。

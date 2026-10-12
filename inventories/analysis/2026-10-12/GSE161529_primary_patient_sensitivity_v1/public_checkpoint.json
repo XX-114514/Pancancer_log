@@ -1,0 +1,39 @@
+{
+  "observed_UTC": "2026-10-12T07:45:58.160791+00:00",
+  "executions": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T07:28:42.758517+00:00",
+      "pid": 413534,
+      "script_sha256": "028ceac002e336347a6562ee65a5202419e00714becd337175d2f5e42dfbc8e6",
+      "child_pid": 413537,
+      "finished_UTC": "2026-10-12T07:29:57.093102+00:00",
+      "exit_code": 0,
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T07:29:57.098387+00:00",
+      "pid": 413534,
+      "script_sha256": "09b2ec9faa22c7fc54b297666c3a0afa1a84835644b5c3e11cdd44d4ab08e13c",
+      "child_pid": 421416,
+      "finished_UTC": "2026-10-12T07:30:05.495601+00:00",
+      "exit_code": 0,
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    }
+  },
+  "outputs_sha256": {
+    "inventory.json": "2ef943663d16bff8bec020a3b72c120dede778db1d7f55954d65ee821d250ec8",
+    "independent_audit.json": "15dc348adf6b78b11a4c5a188eee9b4913af4ff8157a7d2eea6f64c8b110c219",
+    "all4712_primary_author_patient_models.tsv.gz": "f64f2bff1ccab16d239f7cd09c004341f543c4774e1d748ae182db14736f10f7"
+  },
+  "private_metadata_or_vectors_exported": false
+}

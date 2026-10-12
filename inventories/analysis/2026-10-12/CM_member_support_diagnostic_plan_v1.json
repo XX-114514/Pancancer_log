@@ -1,0 +1,9 @@
+{
+  "predeclared_UTC": "2026-10-12T07:31:05.308955+00:00",
+  "producer_sha256": "9a48387f31e88202c554fdd46d884139b2d6638a054da31ca4723d9848731857",
+  "scope": "all68 direction-context groups x9CM=612; fixed frozen W top10 members; support>=20cells diagnostic only",
+  "reason": "Global NNLS point identifiability is not proof every CM core was captured within each source, especially sorting. Describe support and relative reconstruction before functional interpretation.",
+  "no_primary_p_threshold_or_result_changes": true,
+  "not_independent_binding_or_CM_validation": true,
+  "coverage_inventory_sha256": "c0723af23dfe35716c897865ee19ff58be3e13462218754a9815251e1e4f8723"
+}

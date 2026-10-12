@@ -11,3 +11,7 @@
 ## 2026-10-12T14:43:34.973551+08:00 设计预检
 
 [4712诊断](../inventories/analysis/2026-10-12/GSE161529_metadata_recon_v2/primary_patient_design_preflight_v1.json)：去两端基础1037可识别；完整作者亚型控制各1039高影响、139覆盖不足，全部不能通过当前门槛。COL五CM基础可识别，加入完整亚型后均高影响。此检查没有计算p/效应，补充关联尚未派发。
+
+## 2026-10-12T16:21:53.442257+08:00 真实完成与独立验收
+
+[4712结果](../inventories/analysis/2026-10-12/GSE161529_primary_patient_sensitivity_v1/RESULTS.md)，07:28:42—07:30:05 UTC均exit0。48q/0稳定区间，亚型不能估计，不能作为乳腺验证证据。

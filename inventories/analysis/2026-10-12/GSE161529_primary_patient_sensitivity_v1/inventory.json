@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETE_SENSITIVITY_PENDING_AUDIT_NOT_INDEPENDENT_VALIDATION",
+  "started_UTC": "2026-10-12T07:28:43.763963+00:00",
+  "finished_UTC": "2026-10-12T07:29:56.906997+00:00",
+  "producer_sha256": "028ceac002e336347a6562ee65a5202419e00714becd337175d2f5e42dfbc8e6",
+  "plan_sha256": "d7071366bcef575e6da72578f0c765c32a053366cdd6fc80668bcfd62c6cac0d",
+  "summary": {
+    "endpoint_excluded_library__required_controls": {
+      "models": 1178,
+      "status_counts": {
+        "ESTIMABLE_FULL_CONTROL_SPAN_ASSOCIATION": 1037,
+        "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE": 139,
+        "ILL_CONDITIONED_OR_HIGH_INFLUENCE_DESIGN": 2
+      },
+      "q05": 48
+    },
+    "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype": {
+      "models": 1178,
+      "status_counts": {
+        "ILL_CONDITIONED_OR_HIGH_INFLUENCE_DESIGN": 1039,
+        "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE": 139
+      },
+      "q05": 0
+    },
+    "original_H_library__required_controls": {
+      "models": 1178,
+      "status_counts": {
+        "ESTIMABLE_FULL_CONTROL_SPAN_ASSOCIATION": 780,
+        "ILL_CONDITIONED_OR_HIGH_INFLUENCE_DESIGN": 259,
+        "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE": 139
+      },
+      "q05": 0
+    },
+    "original_H_library__required_controls_plus_exact_author_cancer_subtype": {
+      "models": 1178,
+      "status_counts": {
+        "ILL_CONDITIONED_OR_HIGH_INFLUENCE_DESIGN": 1039,
+        "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE": 139
+      },
+      "q05": 0
+    }
+  },
+  "outputs": {
+    "all4712_primary_author_patient_models.tsv.gz": "f64f2bff1ccab16d239f7cd09c004341f543c4774e1d748ae182db14736f10f7",
+    "private_resampling_examples/example1.npz": "2b16910c666e3ab9535fadda0fcf8f40eab07cff33c2784f52b6c5c6a4071bc3",
+    "private_resampling_examples/example2.npz": "c8c90ca6365efe9445101568a52a21a79bc8f03416b9fa78af799e0ad3d8aaae",
+    "private_resampling_examples/example3.npz": "fa3e37019350cbe9434ccaca441b50e046388b28b73db5e353944f78656a1457",
+    "private_resampling_examples/example4.npz": "6d54d4412f9672f9575207b8a7f5ecf652230a3bb8ed4e128f3447ec52afdd73",
+    "private_resampling_examples/example5.npz": "3ed228b2627451ec3dae699d3b9a083c404aff28599c752a102de01b0850b265",
+    "private_resampling_examples/example6.npz": "bed203fa7cb68f0c2ad0fb8058513d36a2d8b59bdf1cafc861a59237538bf434",
+    "private_resampling_examples/example7.npz": "479807e7846170d56c703e8fa7f853c908cfd7a064a708fbe69896714816abf2",
+    "private_resampling_examples/example8.npz": "2a58aa48a83009694e6cb6697a3bf197e99142c98524f6e176c4b39c5ddd96a3"
+  }
+}

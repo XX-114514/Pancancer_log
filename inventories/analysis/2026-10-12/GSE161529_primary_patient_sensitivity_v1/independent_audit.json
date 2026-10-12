@@ -1,0 +1,67 @@
+{
+  "status": "PASS_ALL4712_PRIMARY_AUTHOR_PATIENT_SUBSET_MODELS_AND_EXPLICIT_RESAMPLING",
+  "observed_UTC": "2026-10-12T07:30:05.394878+00:00",
+  "auditor_sha256": "09b2ec9faa22c7fc54b297666c3a0afa1a84835644b5c3e11cdd44d4ab08e13c",
+  "producer_inventory_sha256": "2ef943663d16bff8bec020a3b72c120dede778db1d7f55954d65ee821d250ec8",
+  "estimated_models_independently_recomputed": 1817,
+  "resampling_examples": [
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM04",
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1641
+    },
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM06",
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1582
+    },
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM06",
+      "variant": "original_H_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1417
+    },
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM07",
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1640
+    },
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM07",
+      "variant": "original_H_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1445
+    },
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM08",
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1616
+    },
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM08",
+      "variant": "original_H_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1607
+    },
+    {
+      "case_id": "GRP005_LR0010",
+      "cm": "CM09",
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 1689
+    }
+  ],
+  "global_registry_changed": false,
+  "scientific_validation": false
+}

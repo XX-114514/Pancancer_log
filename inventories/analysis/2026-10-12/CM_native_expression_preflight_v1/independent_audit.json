@@ -1,0 +1,68 @@
+{
+  "status": "PASS_ALL68_NATIVE_GROUP_FEATURES_AND381170_SCORE_REPRESENTATION_COMPARISONS",
+  "observed_UTC": "2026-10-12T07:16:21.315312+00:00",
+  "auditor_sha256": "06e98af03cb75ff47550accafae46d77e904564d47c44f60f6f1c38922713a05",
+  "producer_inventory_sha256": "cf141ab4bc73984a87ae3d67edfb114f389c7251d85430148825396fb00c69fa",
+  "native_feature_groups_checked": 68,
+  "original_scores_checked": 381170,
+  "source_reports": [
+    {
+      "gse_id": "GSE131907",
+      "observed_scores_checked": 2670,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    },
+    {
+      "gse_id": "GSE148071",
+      "observed_scores_checked": 12072,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    },
+    {
+      "gse_id": "GSE161529",
+      "observed_scores_checked": 37723,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    },
+    {
+      "gse_id": "GSE178341",
+      "observed_scores_checked": 291133,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    },
+    {
+      "gse_id": "GSE179994",
+      "observed_scores_checked": 6206,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    },
+    {
+      "gse_id": "GSE182109",
+      "observed_scores_checked": 10393,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    },
+    {
+      "gse_id": "GSE183904",
+      "observed_scores_checked": 16512,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    },
+    {
+      "gse_id": "GSE270680",
+      "observed_scores_checked": 4461,
+      "exprprod_discrepancies": 0,
+      "lrmeans_discrepancies": 0,
+      "status": "PASS_INDEPENDENT_NATIVE_PROJECTION"
+    }
+  ],
+  "biological_validation": false,
+  "fresh_raw_cell_recount_this_audit": false
+}

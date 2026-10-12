@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE_PRECISION_EXTENSION_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T06:30:02.890559+00:00",
+  "finished_UTC": "2026-10-12T07:08:13.280014+00:00",
+  "producer_sha256": "84d4e5a0c7bd84288ad4e3a8af4b02adc39ca9f9403cadbd5e22debec95442f9",
+  "plan_sha256": "ec1fa72b9976f824b9cc7afdb8aefe56782b29f416034ccddeb0a2a5d46e5957",
+  "all_first2000_permutation_p_reproduced": 19127,
+  "frozen_model_coefficients_and_bootstrap": true,
+  "summary": {
+    "endpoint_excluded_library": {
+      "models": 13497,
+      "estimated": 11020,
+      "q05": 178,
+      "q05_stable_positive_CI": 34,
+      "q05_stable_negative_CI": 113
+    },
+    "original_H_library": {
+      "models": 13497,
+      "estimated": 8107,
+      "q05": 181,
+      "q05_stable_positive_CI": 85,
+      "q05_stable_negative_CI": 87
+    }
+  },
+  "scientific_validation": false,
+  "outputs": {
+    "all26994_precision20000_associations.tsv.gz": "ce3238d4942c506e5132e6227b68ba6c090f976450733ff3d886a01d52fe525f"
+  }
+}
