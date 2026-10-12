@@ -1,0 +1,33 @@
+{
+  "n_canonical_features": 49985,
+  "n_original_name_union": 72554,
+  "n_known_Ensembl_IDs": 48781,
+  "n_same_ID_multiple_names": 15511,
+  "n_same_name_multiple_IDs": 485,
+  "source_feature_resolution_counts": {
+    "source_stable_ID": 260874,
+    "source_collapsed_multiple_IDs": 131,
+    "unique_cross_source_symbol_to_ID": 37806,
+    "symbol_has_multiple_known_IDs": 269,
+    "source_symbol_no_stable_ID": 1244
+  },
+  "n_ambiguous_features": 400,
+  "n_symbol_only_features": 1244,
+  "representative_symbol_policy": "most_sources_non_Ensembl_name_then_lexical_not_claimed_HGNC_current",
+  "schema": "public_source_stable_gene_identity_preflight_v2",
+  "observed_utc": "2026-10-12T04:26:24.315403+00:00",
+  "n_sources": 9,
+  "helper_sha256": "c6e68e85ec496f5483e9104a09607b38f7d657e1d6fd326f15c3d1941dbc9fd7",
+  "source_feature_counts": {
+    "CXG_34f5307e_7b4d_4a48_b68f_2ba844c6414b": 29836,
+    "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 38991,
+    "CXG_67b6b9ac_b841_42ce_b2d4_ed2ec12327bd": 35172,
+    "CXG_843c1459_e852_429c_9339_17b5760e7716": 19084,
+    "CXG_b252b015_b488_4d5c_b16e_968c13e48a2c": 31080,
+    "GSE256326": 27966,
+    "GSE286827": 45013,
+    "GSE292046": 36591,
+    "GSE294109": 36591
+  },
+  "final_output_not_yet_written": true
+}

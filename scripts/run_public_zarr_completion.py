@@ -26,7 +26,7 @@ def main():
     for name in ['outputs','logs','manifests','scripts','diagnostics']:(root/name).mkdir(exist_ok=True)
     scratch.mkdir(mode=0o700,parents=True,exist_ok=True)
     lock=(root/'logs/assembly.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    components=[Path(__file__),Path(__file__).with_name('merge_public_preprocessed_zarr.py'),Path(__file__).with_name('audit_combined_public_zarr.py')]
+    components=[Path(__file__),Path(__file__).with_name('merge_public_preprocessed_zarr.py'),Path(__file__).with_name('audit_combined_public_zarr.py'),Path(__file__).with_name('public_gene_identity_contract.py')]
     save(root/'manifests/assembly_start.json',dict(started_utc=now(),pid=os.getpid(),code_git_sha=args.code_git_sha,
         components_sha256={path.name:hashlib.sha256(path.read_bytes()).hexdigest() for path in components},
         temporary_volume='data1_personal_project_area',final_volume='data4_existing_Project_v5_area',

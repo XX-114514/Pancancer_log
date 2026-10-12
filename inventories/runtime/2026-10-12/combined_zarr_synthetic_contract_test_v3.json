@@ -1,0 +1,22 @@
+{
+  "schema": "combined_zarr_synthetic_contract_test_v3",
+  "observed_utc": "2026-10-12T04:25:47.944126+00:00",
+  "all_checks_pass": true,
+  "synthetic_only": true,
+  "real_clinical_cells": 0,
+  "actual_test_shape": [
+    106,
+    18
+  ],
+  "full_AnnData_read_pass": true,
+  "nullable_boolean_preserved": "covered_v1",
+  "baseline_duplicate_quarantine_pass": true,
+  "new_duplicate_quarantine_pass": true,
+  "large_integer_ID_preserved": true,
+  "n_synthetic_duplicate_quarantined": 2,
+  "stable_gene_alias_sum_preserves_counts": true,
+  "normalization_after_gene_alias_sum_pass": true,
+  "ambiguous_symbol_isolated": true,
+  "merge_code_sha256": "171d2f4bc32a939963542673ab5a5641bcf37f6bed84e4a0a51241ef6641daf5",
+  "audit_code_sha256": "6e273aa31ce843692d71c1fa6ff3a19ae5e8ec43dec3a5520bc5f89964b0222f"
+}

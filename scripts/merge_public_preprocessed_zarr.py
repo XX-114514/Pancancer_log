@@ -25,6 +25,7 @@ import numpy as np
 import pandas as pd
 from scipy import sparse
 import zarr
+from public_gene_identity_contract import build_contract
 
 CAR='CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea'
 NEURAL='CXG_843c1459_e852_429c_9339_17b5760e7716'
@@ -55,7 +56,15 @@ def csr_read(group,lo,hi):
 def remap(matrix,positions,n_genes):
     result=sparse.csr_matrix((matrix.data.copy(),positions[matrix.indices],matrix.indptr.copy()),
                              shape=(matrix.shape[0],n_genes))
-    result.sort_indices();return result
+    result.sum_duplicates();result.sort_indices();result.eliminate_zeros();return result
+
+
+def normalize_projected(raw,removed):
+    analysis=(raw.astype(np.float64)-removed).tocsr();analysis.eliminate_zeros()
+    total=np.asarray(analysis.sum(axis=1)).ravel()
+    x=(sparse.diags(np.divide(10000.,total,out=np.zeros(len(total)),where=total>0))@analysis).tocsr()
+    x.data=np.log1p(x.data).astype(np.float32)
+    return x,total
 
 
 def adopted_counts(raw,estimate,obs,summary,dataset):
@@ -133,7 +142,9 @@ def discover(preprocess,audit_path):
             if len(set(genes))!=len(genes):raise ValueError('Nonunique source features')
             if name in gene_lists and genes!=gene_lists[name]:raise ValueError('Source feature order drift')
             gene_lists[name]=genes
-            source_var[name]=var[[c for c in ['source_feature_id','gene_id_original'] if c in var]].copy()
+            identity_var=var[[c for c in var if c.startswith('source_feature') or c=='gene_id_original']].copy()
+            if name in source_var and not identity_var.equals(source_var[name]):raise ValueError('Source stable feature ID drift')
+            source_var[name]=identity_var
             records.append(dict(dataset=name,library_token=token,path=str(path),n_cells=row['n_output'],summary=row))
     return proof,records,gene_lists,source_var
 
@@ -215,17 +226,19 @@ def fingerprints(records,gene_lists,collection,scratch):
     return records_out,len(excluded)
 
 
-def calibration(records,gene_lists,global_genes):
+def calibration(records,gene_lists,global_genes,canonical_lists=None):
     lookup={g:i for i,g in enumerate(global_genes)};totals={'counts':0,'X':0,'ambient_removed_counts':0};samples=[]
     for r in records:
         g=zarr.open_group(r['path'],mode='r');obs=read_elem(g['obs']);n=len(obs)
-        mapping=np.array([lookup[x] for x in gene_lists[r['dataset']]],dtype=np.int32)
+        mapping=np.array([lookup[x] for x in (canonical_lists or gene_lists)[r['dataset']]],dtype=np.int32)
         lo=max(0,n//2-128);hi=min(n,lo+256)
         raw=csr_read(g['layers']['counts'],lo,hi);estimate=csr_read(g['layers']['counts_decontx'],lo,hi)
-        removed,x,_,_=adopted_counts(raw,estimate,obs.iloc[lo:hi],r['summary'],r['dataset'])
-        matrices={'counts':raw,'X':x,'ambient_removed_counts':removed};ratios={}
+        removed,_,_,_=adopted_counts(raw,estimate,obs.iloc[lo:hi],r['summary'],r['dataset'])
+        projected_raw=remap(raw.astype(np.int64),mapping,len(global_genes));projected_removed=remap(removed,mapping,len(global_genes))
+        x,_=normalize_projected(projected_raw,projected_removed)
+        matrices={'counts':projected_raw,'X':x,'ambient_removed_counts':projected_removed};ratios={}
         for key,mat in matrices.items():
-            mat=remap(mat,mapping,len(global_genes));dtype=np.int32 if key=='counts' else np.float32 if key=='X' else np.float64
+            dtype=np.int32 if key=='counts' else np.float32 if key=='X' else np.float64
             encoded=len(COMPRESSOR.encode(mat.data.astype(dtype)))+len(COMPRESSOR.encode(mat.indices.astype(np.int32)))
             ratio=encoded/max(1,raw.nnz);ratios[key]=ratio
             totals[key]+=int(ratio*int(g['layers']['counts']['data'].shape[0]))
@@ -240,8 +253,9 @@ def merge(preprocess,collection,final_root,scratch,code_sha,allow_subset=False):
     audit=preprocess/'manifests/independent_preparation_audit.json'
     proof,records,gene_lists,source_var=discover(preprocess,audit)
     if allow_subset:raise ValueError('Subset export cannot claim full production')
-    sources=sorted(gene_lists);genes=sorted(set().union(*(set(v) for v in gene_lists.values())))
-    budget=calibration(records,gene_lists,genes);free,capacity=effective_capacity(final_root)
+    sources=sorted(gene_lists);canonical_lists,var,identities,gene_report=build_contract(source_var);genes=var.index.tolist()
+    save(final_root/'manifests/gene_identity_contract.json',gene_report)
+    budget=calibration(records,gene_lists,genes,canonical_lists);free,capacity=effective_capacity(final_root)
     save(final_root/'manifests/final_storage_budget.json',dict(budget,capacity=capacity))
     if free<budget['expected_peak_bytes']+RESERVE:raise RuntimeError('Final compressed result plus 500GB reserve does not fit effective quota')
     records,n_excluded=fingerprints(records,gene_lists,collection,scratch)
@@ -270,7 +284,7 @@ def merge(preprocess,collection,final_root,scratch,code_sha,allow_subset=False):
     analysis_totals=np.zeros(len(obs),dtype=np.float64);adopted=np.zeros(len(obs),dtype=bool)
     for r in records:
         g=zarr.open_group(r['path'],mode='r');native_obs=read_elem(g['obs']);keep=np.load(r['keep_mask_ref'])
-        mapping=np.array([lookup[x] for x in gene_lists[r['dataset']]],dtype=np.int32)
+        mapping=np.array([lookup[x] for x in canonical_lists[r['dataset']]],dtype=np.int32)
         start=offset
         for lo in range(0,len(native_obs),1000):
             hi=min(lo+1000,len(native_obs));mask=keep[lo:hi]
@@ -279,8 +293,10 @@ def merge(preprocess,collection,final_root,scratch,code_sha,allow_subset=False):
             if free<RESERVE+32_000_000:raise RuntimeError('Reached final-volume 500GB reserve during append')
             raw=csr_read(g['layers']['counts'],lo,hi)[mask].tocsr()
             estimate=csr_read(g['layers']['counts_decontx'],lo,hi)[mask].tocsr()
-            removed,x,total,selected=adopted_counts(raw,estimate,native_obs.iloc[lo:hi].iloc[np.flatnonzero(mask)],r['summary'],r['dataset'])
-            for key,mat in [('counts',raw),('ambient_removed_counts',removed),('X',x)]:arrays[key].append(remap(mat,mapping,len(genes)))
+            removed,_,_,selected=adopted_counts(raw,estimate,native_obs.iloc[lo:hi].iloc[np.flatnonzero(mask)],r['summary'],r['dataset'])
+            projected_raw=remap(raw.astype(np.int64),mapping,len(genes));projected_removed=remap(removed,mapping,len(genes))
+            x,total=normalize_projected(projected_raw,projected_removed)
+            for key,mat in [('counts',projected_raw),('ambient_removed_counts',projected_removed),('X',x)]:arrays[key].append(mat)
             analysis_totals[offset:offset+len(total)]=total;adopted[offset:offset+len(total)]=selected;offset+=len(total)
         private_index.append(dict(dataset=r['dataset'],library_token=r['library_token'],source_prepared_ref=r['path'],
             keep_mask_ref=r['keep_mask_ref'],row_start=start,row_end=offset,n_kept=offset-start,summary=r['summary']))
@@ -290,8 +306,7 @@ def merge(preprocess,collection,final_root,scratch,code_sha,allow_subset=False):
     if offset!=len(obs):raise ValueError('Cell order/row count mismatch')
     obs['analysis_total_counts']=analysis_totals;obs['analysis_correction_applied']=adopted
     obs['analysis_count_origin']=pd.Categorical(np.where(adopted,'validated_DecontX','published_source_counts'))
-    var=pd.DataFrame(index=pd.Index(genes,name='gene_symbol'))
-    measured=np.column_stack([var.index.isin(gene_lists[s]) for s in sources]).astype(bool)
+    measured=np.column_stack([var.index.isin(canonical_lists[s]) for s in sources]).astype(bool)
     var['n_sources_measured']=measured.sum(axis=1)
     write_elem(group,'obs',obs);write_elem(group,'var',var)
     for name in ['obsm','obsp','varp']:write_elem(group,name,{})
@@ -299,15 +314,16 @@ def merge(preprocess,collection,final_root,scratch,code_sha,allow_subset=False):
     uns=dict(collection_stage='all_retained_preprocessing_cells_source_acceptance_pending',
         source_order=sources,source_obs_column_coverage=metadata_column_coverage,metadata_canonical_kinds=kinds,
         string_missing_sentinel=MISSING,source_gene_coverage_semantics='unmeasured_zero_padding_is_not_biological_zero',
-        counts_semantics='immutable_published_upstream_counts_after_audited_QC_doublet_selection',
+        counts_semantics='published_upstream_counts_after_audited_QC_doublet_selection_and_stable_gene_ID_sum',
         analysis_counts_recipe='layers[counts].astype(float64) - layers[ambient_removed_counts]',
         ambient_removed_counts_semantics='only_adopted_correction; diagnostic_rejected_estimates_not_applied',
         X_semantics='log1p(analysis_counts * 10000 / analysis_total_counts)',
-        raw_counts_immutable=True,source_final_AC=False,batch_correction_performed=False,
+        source_count_totals_conserved=True,source_final_AC=False,batch_correction_performed=False,
+        gene_identity_contract=gene_report,stable_gene_ID_resolution_performed=True,
         biological_annotation_performed=False,baseline_cells_unchanged=4676787,
         source_local_cluster_semantics='library_local_diagnostic_labels_not_global_cell_identity',
         exact_duplicate_rows_quarantined=n_excluded,code_git_sha=code_sha,
-        preprocessing_audit_sha256=digest(audit),fullgene_join='outer_with_measured_in_source_mask')
+        preprocessing_audit_sha256=digest(audit),fullgene_join='stable_identity_outer_with_measured_in_source_mask')
     write_elem(group,'uns',uns)
     diagnostics=final_root/'diagnostics';diagnostics.mkdir(exist_ok=True)
     for r in records:
@@ -315,9 +331,11 @@ def merge(preprocess,collection,final_root,scratch,code_sha,allow_subset=False):
         for file in Path(r['path']).parent.iterdir():
             if file.is_file() and (file.suffix in ['.json','.png','.log','.tsv'] or file.name.endswith('.tsv.gz')):
                 shutil.copyfile(file,folder/file.name)
-    for source,frame in source_var.items():frame.to_csv(diagnostics/(source+'_source_features.tsv.gz'),sep='\t')
+    for source,frame in source_var.items():
+        frame.to_csv(diagnostics/(source+'_source_features.tsv.gz'),sep='\t')
+        pd.DataFrame(identities[source]).to_csv(diagnostics/(source+'_gene_identity_mapping.tsv.gz'),sep='\t',index=False)
     shutil.copyfile(scratch/'duplicate_exclusions_private.tsv.gz',diagnostics/'duplicate_exclusions_private.tsv.gz')
-    save(final_root/'manifests/combined_private_index.json',dict(gene_lists=gene_lists,records=private_index,canonical_kinds=kinds))
+    save(final_root/'manifests/combined_private_index.json',dict(gene_lists=gene_lists,canonical_gene_lists=canonical_lists,records=private_index,canonical_kinds=kinds))
     result=dict(schema='combined_public_preprocessed_zarr_v1',completed_utc=now(),n_sources=len(sources),n_libraries=len(records),
         n_output_cells=len(obs),n_genes=len(genes),n_exact_duplicate_quarantined=n_excluded,
         n_cells_with_adopted_DecontX=int(adopted.sum()),source_final_AC=False,final_accepted_new_cells=0,

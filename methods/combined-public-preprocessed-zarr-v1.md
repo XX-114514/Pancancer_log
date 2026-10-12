@@ -28,3 +28,17 @@
 独立审计逐个保留细胞检查：原count精确一致、元数据/顺序/ID唯一、选层/校正非负及上界、独立重算总量和归一化、未测基因从不非零、各CSR指针/shape、AnnData稀疏读接口。合成对象完整`read_zarr`验证格式与缺失/排重/大整数边界；不能把它冒充真实临床验收。真实输出以`independent_final_audit.json`和终态为准。
 
 源码：[合并](../scripts/merge_public_preprocessed_zarr.py)、[独立验收](../scripts/audit_combined_public_zarr.py)、[等待/执行组件](../scripts/run_public_zarr_completion.py)。执行合同见[run](../runs/20261012_public_preprocessed_zarr_v1.md)。
+
+## 2026-10-12稳定基因ID修订（当前执行规则）
+
+真实全9源基因表核查发现：72554原名称并集存在15511相同Ensembl ID多名称、485相同名称多ID。仅按名字outer join会拆分真实同基因。最初等待器在04:23:12 UTC仅停止自身、未写科学矩阵；旧v1attempt与源码冻结保留，科学队列继续。
+
+当前以来源稳定Ensembl ID（去版本号、保留PAR_Y区分）为全局var index；无ID但原名称在全来源仅对应一个稳定ID的可按该精确名称补映射。一个原特征已合并多个ID或一个无ID名称对应多个ID时使用来源独立歧义键，不擅自拆分计数；完全无稳定ID的名称保留symbol空间。预检得到**49985特征，400歧义特征，1244仅symbol特征**。
+
+同一来源内多个名称对应同一稳定ID时，原整数计数先int64求和、验收int32范围后保存；实际采用去除量也求和，**合并后**重算总量和log1p X。每细胞来源计数总量精确守恒，不用两个log值相加。最终counts是稳定基因轴上的来源计数，不再声称原列逐字不变；原输入与原列/映射仍保留。
+
+var含展示gene_symbol及所有source_gene_aliases。展示名采用来源多数非Ensembl名称、平局按字典序，仅方便展示，不冒充当前HGNC权威更名。特征测量掩码在稳定基因轴建立，歧义/缺失显式保留。后续生物学模型按需排除歧义，不能把它们当成明确同基因。
+
+独立audit使用COO投影求和而非调用生产CSR remap：逐保留cell比较全canonical count、总量、校正、归一化及缺失掩码。基线和新集合指纹仍按冻结原始来源命名规范做精确比较；不相等不能证明跨名称处理版本非重复，source alias最终AC继续pending。
+
+[实际基因预检](../inventories/runtime/2026-10-12/gene_identity_preflight_v2.json)，[合成v3](../inventories/runtime/2026-10-12/combined_zarr_synthetic_contract_test_v3.json)，[映射合同](../scripts/public_gene_identity_contract.py)。真实最终组装改为独立run v2，避免复用已停止等待器manifest。

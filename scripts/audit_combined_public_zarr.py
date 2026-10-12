@@ -13,6 +13,7 @@ import numpy as np
 import pandas as pd
 from scipy import sparse
 import zarr
+from public_gene_identity_contract import build_contract
 
 
 GUARDED={'CXG_843c1459_e852_429c_9339_17b5760e7716',
@@ -31,6 +32,13 @@ def difference_ok(left,right,tolerance=0):
     return bool(not diff.nnz or np.max(np.abs(diff.data))<=tolerance)
 
 
+def project_expected(matrix,positions,width):
+    # Independent COO assembly sums any native aliases of the same stable ID.
+    triplets=matrix.tocoo()
+    return sparse.coo_matrix((triplets.data,(triplets.row,positions[triplets.col])),
+                              shape=(matrix.shape[0],width)).tocsr()
+
+
 def audit(root):
     manifest=json.loads((root/'manifests/combined_private_index.json').read_text())
     terminal=json.loads((root/'manifests/merge_terminal.json').read_text())
@@ -38,14 +46,22 @@ def audit(root):
     obs=read_elem(g['obs']);var=read_elem(g['var']);uns=read_elem(g['uns'])
     genes=var.index.astype(str);feature_pos={name:i for i,name in enumerate(genes)}
     source_order=list(uns['source_order']);measured=np.asarray(g['varm']['measured_in_source'])
+    source_var={}
+    for record in manifest['records']:
+        if record['dataset'] not in source_var:
+            source_var[record['dataset']]=read_elem(zarr.open_group(record['source_prepared_ref'],mode='r')['var'])
+    reconstructed,expected_var,_,_=build_contract(source_var)
     global_checks=dict(global_ID_unique=obs.index.is_unique,global_features_unique=var.index.is_unique,
         exact_total_rows=len(obs)==terminal['n_output_cells'],exact_total_genes=len(var)==terminal['n_genes'],
         source_final_AC_stays_false=not bool(uns['source_final_AC']),
         no_batch_correction_claim=not bool(uns['batch_correction_performed']),
         no_new_annotation_claim=not bool(uns['biological_annotation_performed']),
         gene_measurement_mask_shape_exact=measured.shape==(len(var),len(source_order)))
+    global_checks['stable_gene_identity_contract_exact']=bool(reconstructed==manifest['canonical_gene_lists'] and
+        np.array_equal(var.index,expected_var.index) and
+        all(np.array_equal(var[c].astype(str),expected_var[c].astype(str)) for c in expected_var.columns))
     for name in source_order:
-        expected=genes.isin(manifest['gene_lists'][name])
+        expected=genes.isin(manifest['canonical_gene_lists'][name])
         global_checks['source_gene_mask_'+name]=np.array_equal(expected,measured[:,source_order.index(name)])
     sources={};results=[];adopted_total=0;cells=0
     for record in manifest['records']:
@@ -53,10 +69,10 @@ def audit(root):
         native_obs=read_elem(source['obs']);native_var=read_elem(source['var'])
         keep=np.load(record['keep_mask_ref']);expected_obs=native_obs.iloc[np.flatnonzero(keep)]
         lo,hi=record['row_start'],record['row_end'];actual_obs=obs.iloc[lo:hi]
-        mapping=np.array([feature_pos[str(x)] for x in native_var.index],dtype=np.int32)
+        mapping=np.array([feature_pos[str(x)] for x in manifest['canonical_gene_lists'][record['dataset']]],dtype=np.int32)
         checks=dict(ID_order_exact=np.array_equal(actual_obs.index.astype(str),expected_obs.index.astype(str)),
             row_count_exact=len(actual_obs)==int(keep.sum())==record['n_kept'],source_metadata_exact=True,
-            raw_counts_exact=True,removal_nonnegative_finite=True,removal_not_above_original=True,
+            raw_counts_exact=True,source_raw_count_totals_conserved=True,removal_nonnegative_finite=True,removal_not_above_original=True,
             adopted_counts_match_source=True,normalization_exact=True,normalization_total_exact=True,
             adopted_correction_flags_exact=True,unmeasured_features_never_nonzero=True,
             conservative_correction_choice=True)
@@ -87,9 +103,9 @@ def audit(root):
             estimate=block(source['layers']['counts_decontx'],start,end)[positions].tocsr()
             original=block(g['layers']['counts'],a,b);removed=block(g['layers']['ambient_removed_counts'],a,b)
             normalized=block(g['X'],a,b)
-            # Project the final union back to the source's original feature order.
-            original_native=original[:,mapping].tocsr();removed_native=removed[:,mapping].tocsr()
-            checks['raw_counts_exact'] &= difference_ok(original_native,raw)
+            expected_raw=project_expected(raw.astype(np.int64),mapping,len(var))
+            checks['raw_counts_exact'] &= difference_ok(original,expected_raw)
+            checks['source_raw_count_totals_conserved'] &= bool(np.array_equal(np.asarray(raw.sum(axis=1)),np.asarray(original.sum(axis=1))))
             expected_mask=np.zeros(len(var),dtype=bool);expected_mask[mapping]=True
             for matrix in [original,removed,normalized]:
                 checks['unmeasured_features_never_nonzero'] &= bool(not matrix.nnz or expected_mask[matrix.indices].all())
@@ -102,13 +118,14 @@ def audit(root):
             expected=raw.astype(np.float64).tolil()
             if flags.any():expected[np.flatnonzero(flags)]=estimate[np.flatnonzero(flags)]
             expected=expected.tocsr()
-            adopted=original_native.astype(np.float64)-removed_native
+            expected=project_expected(expected,mapping,len(var))
+            adopted=original.astype(np.float64)-removed
             checks['adopted_counts_match_source'] &= difference_ok(adopted,expected,1e-4)
             totals=np.asarray(adopted.sum(axis=1)).ravel()
             checks['normalization_total_exact'] &= bool(np.allclose(totals,obs.analysis_total_counts.iloc[a:b],rtol=0,atol=1e-6))
             intended=(sparse.diags(np.divide(10000.,totals,out=np.zeros(n),where=totals>0))@adopted).tocsr()
             intended.data=np.log1p(intended.data)
-            checks['normalization_exact'] &= difference_ok(normalized[:,mapping],intended,2e-5)
+            checks['normalization_exact'] &= difference_ok(normalized,intended,2e-5)
             checks['adopted_correction_flags_exact'] &= bool(np.array_equal(flags,obs.analysis_correction_applied.iloc[a:b].to_numpy()))
             adopted_total+=int(flags.sum());local_offset+=n
         cells+=len(actual_obs)

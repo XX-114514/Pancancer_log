@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-12T04:23:12.327591+00:00",
+  "pid": 39340,
+  "reason": "stable_gene_identity_join_revision_before_matrix_write",
+  "scope": "assembly_waiter_only_preprocessing_unaffected",
+  "previous_files_preserved": true
+}
