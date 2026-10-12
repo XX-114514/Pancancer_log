@@ -39,6 +39,14 @@ def audit(root, collection):
             raise ValueError('Original source IDs not unique: '+name)
         upgroup=upstream['layers']['counts'] if 'counts' in upstream['layers'] else upstream['X']
         upmat=ad.io.sparse_dataset(upgroup)
+        reference_bytes=sum(int(upgroup[k].size)*int(upgroup[k].dtype.itemsize)
+                            for k in ['data','indices','indptr'])
+        reference_cached=reference_bytes<=36*1024**3
+        print(json.dumps(dict(dataset=name,phase='reference_loading',
+                              reference_bytes=reference_bytes,cached=reference_cached)),flush=True)
+        if reference_cached:
+            upmat=upmat[:].tocsr()
+        print(json.dumps(dict(dataset=name,phase='reference_ready')),flush=True)
         observed=0;dataset_checks=[]
         for libsummary in sorted(summary['libraries'],key=lambda x:x['library_token']):
             if libsummary['status']!='success':
@@ -125,6 +133,9 @@ def audit(root, collection):
             all_pass=all(checks.values())
             dataset_checks.append(dict(library_token=libsummary['library_token'],all_checks_pass=bool(all_pass),
                 checks={k:bool(v) for k,v in checks.items()},n_output=len(obs)))
+            print(json.dumps(dict(dataset=name,phase='library_audited',
+                                  completed_libraries=len(dataset_checks),n_cells=observed,
+                                  all_checks_pass=bool(all_pass))),flush=True)
             if eligible and all_pass:
                 n_ready=int(obs.preintegration_cell_eligible.sum()) if 'preintegration_cell_eligible' in obs else len(obs)
                 ready.append(dict(dataset=name,library_token=libsummary['library_token'],n_cells=n_ready,
@@ -132,6 +143,7 @@ def audit(root, collection):
                     source_final_AC=False,integration_allowed=False,
                     readiness='technical_preparation_pass_source_alias_gate_pending'))
         results.append(dict(dataset=name,n_libraries=len(dataset_checks),n_output=observed,
+            reference_bytes=reference_bytes,reference_cached=reference_cached,
             summary_count_matches=observed==summary['n_output'],
             all_checks_pass=all(c['all_checks_pass'] for c in dataset_checks),libraries=dataset_checks))
     intersections=[]
@@ -144,6 +156,7 @@ def audit(root, collection):
         n_datasets=len(results),n_libraries=sum(r['n_libraries'] for r in results),
         n_output=sum(r['n_output'] for r in results),n_ready_technical_cells=sum(r['n_cells'] for r in ready),
         all_checks_pass=bool(results and all(r['all_checks_pass'] and r['summary_count_matches'] for r in results)),
+        audit_script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         final_accepted_new_cells=0,cross_study_integrated=False,datasets=results,
         integration_candidate_index=ready,gene_join_diagnostics=intersections)
 

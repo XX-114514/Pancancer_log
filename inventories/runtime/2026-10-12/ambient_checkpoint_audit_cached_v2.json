@@ -1,0 +1,1999 @@
+{
+  "schema": "independent_ambient_preparation_audit_v1",
+  "observed_utc": "2026-10-12T02:54:17.270284+00:00",
+  "n_datasets": 3,
+  "n_libraries": 92,
+  "n_output": 579361,
+  "n_ready_technical_cells": 124513,
+  "all_checks_pass": true,
+  "audit_script_sha256": "51df1bc73e3f7b8e8b26db5f9e818725288e8204494841bf324549a77c9108ff",
+  "final_accepted_new_cells": 0,
+  "cross_study_integrated": false,
+  "datasets": [
+    {
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "n_libraries": 59,
+      "n_output": 396593,
+      "reference_bytes": 13682028416,
+      "reference_cached": true,
+      "summary_count_matches": true,
+      "all_checks_pass": true,
+      "libraries": [
+        {
+          "library_token": "000_12be380825ed",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9407
+        },
+        {
+          "library_token": "001_bfe347e349d7",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7647
+        },
+        {
+          "library_token": "002_6ca025a97c74",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7349
+        },
+        {
+          "library_token": "003_821a8a8cd145",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6685
+        },
+        {
+          "library_token": "004_30f898e7c6e9",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3180
+        },
+        {
+          "library_token": "005_320e78d630b1",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 4562
+        },
+        {
+          "library_token": "006_497c8304f309",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3156
+        },
+        {
+          "library_token": "007_0fd8a898145f",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 951
+        },
+        {
+          "library_token": "008_d8dd8cfa7bce",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 1453
+        },
+        {
+          "library_token": "009_8202f3f4d155",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 17899
+        },
+        {
+          "library_token": "010_1adacece4c59",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 12787
+        },
+        {
+          "library_token": "011_0af5657dc668",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 10384
+        },
+        {
+          "library_token": "012_5a68a64072ba",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6800
+        },
+        {
+          "library_token": "013_bd6262e69b5d",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3968
+        },
+        {
+          "library_token": "014_9ce9c04a4640",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 1631
+        },
+        {
+          "library_token": "015_3bcbc11a585e",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 4789
+        },
+        {
+          "library_token": "016_80568c378ee1",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 12578
+        },
+        {
+          "library_token": "017_9a5db9ad973d",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6336
+        },
+        {
+          "library_token": "018_c4e9193190ab",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 8403
+        },
+        {
+          "library_token": "019_1de6759e7598",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 10152
+        },
+        {
+          "library_token": "020_1823c23ee4ed",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9968
+        },
+        {
+          "library_token": "021_2bc4d9190e01",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5385
+        },
+        {
+          "library_token": "022_c2274ad4a1c6",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3497
+        },
+        {
+          "library_token": "023_c21eda09091e",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 2028
+        },
+        {
+          "library_token": "024_9d9012b043d4",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5192
+        },
+        {
+          "library_token": "025_92f03e9404f5",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5794
+        },
+        {
+          "library_token": "026_8640699d4d3f",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 4457
+        },
+        {
+          "library_token": "027_5a943406091d",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5010
+        },
+        {
+          "library_token": "028_5f5ca565a6e8",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7735
+        },
+        {
+          "library_token": "029_305c9a747184",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6381
+        },
+        {
+          "library_token": "030_9b3aa4ea2813",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3298
+        },
+        {
+          "library_token": "031_15143d225d71",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9698
+        },
+        {
+          "library_token": "032_9a2ae296b796",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6654
+        },
+        {
+          "library_token": "033_6c8cdfe5ee97",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6575
+        },
+        {
+          "library_token": "034_3c6842b11ff8",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3556
+        },
+        {
+          "library_token": "035_8c8dba21b190",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 11939
+        },
+        {
+          "library_token": "036_293c942eacc4",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 4653
+        },
+        {
+          "library_token": "037_bd56c5aae6c6",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6497
+        },
+        {
+          "library_token": "038_9b1598d8a992",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3859
+        },
+        {
+          "library_token": "039_b3d573d1ec31",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 4905
+        },
+        {
+          "library_token": "040_c883a1f8c2ba",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3943
+        },
+        {
+          "library_token": "041_e36ece279442",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5778
+        },
+        {
+          "library_token": "042_91e94f593470",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5260
+        },
+        {
+          "library_token": "043_80eb28e7171b",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5423
+        },
+        {
+          "library_token": "044_fb25c217496f",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5777
+        },
+        {
+          "library_token": "045_5a60fb42d2f2",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7506
+        },
+        {
+          "library_token": "046_8f1d418a66fc",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 8647
+        },
+        {
+          "library_token": "047_d03848ed1db0",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9384
+        },
+        {
+          "library_token": "048_57a62103acfc",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9375
+        },
+        {
+          "library_token": "049_90153e18ba11",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9139
+        },
+        {
+          "library_token": "050_0fea20a0fc87",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5294
+        },
+        {
+          "library_token": "051_f4c0efea58d7",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3606
+        },
+        {
+          "library_token": "052_ebdb1e3d12a4",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7497
+        },
+        {
+          "library_token": "053_694ac4c8e350",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 10335
+        },
+        {
+          "library_token": "054_75a7c06ef005",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 8604
+        },
+        {
+          "library_token": "055_7fabccfba410",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9445
+        },
+        {
+          "library_token": "056_61f4da21d985",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 10026
+        },
+        {
+          "library_token": "057_db7092b53935",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6124
+        },
+        {
+          "library_token": "058_d1571e44a39a",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 8232
+        }
+      ]
+    },
+    {
+      "dataset": "GSE292046",
+      "n_libraries": 8,
+      "n_output": 52525,
+      "reference_bytes": 2651826832,
+      "reference_cached": true,
+      "summary_count_matches": true,
+      "all_checks_pass": true,
+      "libraries": [
+        {
+          "library_token": "000_42b454c88d78",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7238
+        },
+        {
+          "library_token": "001_ee88cbe73ae0",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7584
+        },
+        {
+          "library_token": "002_cf3073eeb6df",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6458
+        },
+        {
+          "library_token": "003_160829f4e0a4",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6516
+        },
+        {
+          "library_token": "004_e13c50a99490",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6946
+        },
+        {
+          "library_token": "005_7714b080b2e8",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5863
+        },
+        {
+          "library_token": "006_37aa4e6a88d1",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5289
+        },
+        {
+          "library_token": "007_9a555e047679",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6631
+        }
+      ]
+    },
+    {
+      "dataset": "GSE294109",
+      "n_libraries": 25,
+      "n_output": 130243,
+      "reference_bytes": 3340448264,
+      "reference_cached": true,
+      "summary_count_matches": true,
+      "all_checks_pass": true,
+      "libraries": [
+        {
+          "library_token": "000_b9511d35f1cc",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5637
+        },
+        {
+          "library_token": "001_77b683168952",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 9141
+        },
+        {
+          "library_token": "002_38f4c0be146b",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 5896
+        },
+        {
+          "library_token": "003_106dbdfb3737",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 4880
+        },
+        {
+          "library_token": "004_d6ea11a1c802",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 4017
+        },
+        {
+          "library_token": "005_6cf9e24cf21d",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 1040
+        },
+        {
+          "library_token": "006_8e2d988640e6",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6952
+        },
+        {
+          "library_token": "007_ae445a098085",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7660
+        },
+        {
+          "library_token": "008_330830a593c7",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 6553
+        },
+        {
+          "library_token": "009_98a7a4667ee8",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 8732
+        },
+        {
+          "library_token": "010_e149e82e012c",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 8688
+        },
+        {
+          "library_token": "011_cf7b86493161",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7494
+        },
+        {
+          "library_token": "012_8f56e52f6086",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 687
+        },
+        {
+          "library_token": "013_a74e84702ca8",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3353
+        },
+        {
+          "library_token": "014_d12b604af168",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 1204
+        },
+        {
+          "library_token": "015_3b35c8fe9e33",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 2343
+        },
+        {
+          "library_token": "016_40276a5db566",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 571
+        },
+        {
+          "library_token": "017_276d6f8481b5",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 8813
+        },
+        {
+          "library_token": "018_a4cdaff843d4",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 11796
+        },
+        {
+          "library_token": "019_bc5d13b30d53",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 1024
+        },
+        {
+          "library_token": "020_cbd225ea9252",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7619
+        },
+        {
+          "library_token": "021_375345b9dd74",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 7516
+        },
+        {
+          "library_token": "022_4a4c223459e8",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3849
+        },
+        {
+          "library_token": "023_0b6277d68203",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 1340
+        },
+        {
+          "library_token": "024_30cc06c67e32",
+          "all_checks_pass": true,
+          "checks": {
+            "gene_order_exact": true,
+            "ID_unique": true,
+            "upstream_identity": true,
+            "raw_counts_exact": true,
+            "corrected_nonnegative_finite": true,
+            "corrected_no_added_counts": true,
+            "normalization_exact": true,
+            "QC_metadata_preserved": true,
+            "release_gate_conservative": true,
+            "complete_filter_mapping": true,
+            "QC_metrics_from_counts": true
+          },
+          "n_output": 3438
+        }
+      ]
+    }
+  ],
+  "integration_candidate_index": [
+    {
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "library_token": "002_6ca025a97c74",
+      "n_cells": 7287,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 38991,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "library_token": "040_c883a1f8c2ba",
+      "n_cells": 3921,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 38991,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE292046",
+      "library_token": "000_42b454c88d78",
+      "n_cells": 7178,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE292046",
+      "library_token": "001_ee88cbe73ae0",
+      "n_cells": 7494,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE292046",
+      "library_token": "003_160829f4e0a4",
+      "n_cells": 6497,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE292046",
+      "library_token": "005_7714b080b2e8",
+      "n_cells": 5843,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE292046",
+      "library_token": "006_37aa4e6a88d1",
+      "n_cells": 5277,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE292046",
+      "library_token": "007_9a555e047679",
+      "n_cells": 6601,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "000_b9511d35f1cc",
+      "n_cells": 5547,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "002_38f4c0be146b",
+      "n_cells": 5843,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "003_106dbdfb3737",
+      "n_cells": 4859,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "004_d6ea11a1c802",
+      "n_cells": 4003,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "005_6cf9e24cf21d",
+      "n_cells": 1038,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "006_8e2d988640e6",
+      "n_cells": 6749,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "008_330830a593c7",
+      "n_cells": 6265,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "010_e149e82e012c",
+      "n_cells": 8648,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "011_cf7b86493161",
+      "n_cells": 7440,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "012_8f56e52f6086",
+      "n_cells": 681,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "013_a74e84702ca8",
+      "n_cells": 3267,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "014_d12b604af168",
+      "n_cells": 1199,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "015_3b35c8fe9e33",
+      "n_cells": 2157,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "019_bc5d13b30d53",
+      "n_cells": 964,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "021_375345b9dd74",
+      "n_cells": 7397,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "022_4a4c223459e8",
+      "n_cells": 3672,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "023_0b6277d68203",
+      "n_cells": 1312,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    },
+    {
+      "dataset": "GSE294109",
+      "library_token": "024_30cc06c67e32",
+      "n_cells": 3374,
+      "counts_layer": "counts",
+      "analysis_layer": "counts_decontx",
+      "native_gene_coverage": 36591,
+      "source_final_AC": false,
+      "integration_allowed": false,
+      "readiness": "technical_preparation_pass_source_alias_gate_pending"
+    }
+  ],
+  "gene_join_diagnostics": [
+    {
+      "branch": "tumor_and_comparator_sources_candidate",
+      "n_sources": 2,
+      "common_measured_genes": 36591,
+      "gene_missingness_must_be_preserved": true
+    }
+  ]
+}

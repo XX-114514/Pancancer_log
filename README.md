@@ -1,5 +1,14 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T10:54:17+08:00 公共来源前处理：3队列独立验收通过
+
+[最新处理快照](inventories/runtime/2026-10-12/AMBIENT_PROGRESS_v3_checkpoint6.md)：10:53时182/792文库完成、0失败，保留944,249细胞。已完整结束的CAR-T产品、GSE292046和GSE294109共92文库、579,361细胞，逐保留细胞的原始计数、ID、过滤映射、校正及标准化[独立验收通过](inventories/runtime/2026-10-12/ambient_checkpoint_audit_cached_v2.json)。这不是全量终态；污染不可辨识及过度校正复核仍保留，来源最终AC为0，未全局整合。
+
+
+## 2026-10-12T10:38:45.707906+08:00 已下载公共源的双细胞与RNA污染处理
+
+[处理快照](inventories/runtime/2026-10-12/AMBIENT_PROGRESS_v3_checkpoint2.md)：备用卷恢复成功，10:27时44/792文库、0失败；完整验收未完成。原计数、校正估计和复核限制分开。[方法](methods/doublet-ambient-preintegration-v1.md)。新公共下载与实际全局整合仍未恢复。
+
 ## 2026-10-12T10:38:40.719500+08:00 全基因输入里程碑已独立验收
 
 3源285,360细胞/164文库、1121原编号单位、139,558,612基因汇总值及全部336/15/1008先验映射独立复算通过；已登记v17/0活跃/0冲突。[验收证据](inventories/analysis/2026-10-12/fullgene_readiness_v17/public_checkpoint_v17.json)。321/336有配体靶先验，仅输入就绪，不代表受体特异响应/通讯轴验证。45源header/180家族覆盖独立审计通过。194旧患者状态差异已追溯至官方侧表；新[非破坏性证据覆盖表](inventories/analysis/2026-10-12/patient_block_provenance_overlay_plan_v1.json)已冻结待执行。

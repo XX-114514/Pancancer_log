@@ -23,3 +23,20 @@ python scripts/run_ambient_preparation.py --run-root "${PREPROCESS_RUN_ROOT}" --
 ## 2026-10-12T02:12:48.762758+00:00 恢复记录
 
 prepare_v2因组quota errno122终止，保留部分输出、无全量验收。data4组上限现2048G/已用约1495G；恢复输出为另卷私有`${PREPROCESS_RUN_ROOT}`=prepare_v3，输入原位只读。预算782893303100 bytes+500GiB，小于输出卷约1.598TB实际余量。按原9分支792文库恢复；新增必需参数`--storage-plan "${STORAGE_PLAN}"`。不恢复新下载。
+
+## 2026-10-12T10:38:45.707906+08:00 prepare_v3实际运行
+
+启动02:15:17 UTC/10:15:17 UTC+8；代码cdcea29，4来源×4文库，500GiB预留，存储计划已核实。10:27快照44文库/0失败，275653保留细胞、额外9608；完整独立count/ID/标准化审计将在全队列终态执行。final source AC仍0，未开始全局整合。
+
+```bash
+python scripts/run_ambient_preparation.py --run-root "${PREPROCESS_RUN_ROOT}" --collection "${COLLECTION_RUN_ROOT}" --rscript "${SCRNA_RSCRIPT}" --code-git-sha cdcea29b45e989cb8d03235b9a92521611b6dd17 --parallel-datasets 4 --library-workers 4 --storage-plan "${STORAGE_PLAN}"
+```
+
+[可读快照](../inventories/runtime/2026-10-12/AMBIENT_PROGRESS_v3_checkpoint2.md)不等于实时状态或最终验收。
+
+## 2026-10-12T10:54:17+08:00 第一批完整来源验收／审计I/O优化
+
+- 实测10:53:50（UTC02:53:50）182/792文库，0失败，944249保留细胞、额外38637个预测双细胞，274673严格技术候选。完整运行仍活跃。
+- 3个完整来源独立验收：CAR-T 396593、GSE292046 52525、GSE294109 130243，合计579361细胞/92文库；原始审计02:46:16 UTC和缓存审计02:54:17 UTC均PASS；所有来源/文库科学检查、计数、候选124513及基因覆盖诊断完全一致。报告及SHA匹配证据见runtime/2026-10-12。
+- 审计缓存只改读取方式：每次最多一源36GiB稀疏参考，较大来源保持原backed读取，校验数学/门槛不变；原始报告保留。生产代码、双细胞和DecontX参数未改。全量阶段审计脚本升级尚待显式版本登记。
+- 数量为技术处理与验收，不等于来源别名排重已完成；final AC仍0，未启动跨来源整合、新下载仍暂停。CAR-T产品及富集snRNA用途限制保留。

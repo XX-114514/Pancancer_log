@@ -1,0 +1,22 @@
+{
+  "schema": "ambient_audit_cache_equivalence_v1",
+  "original_report_sha256": "4ab79644ce67677b67f4c536fba1f7e6ac9396ce211e857803180e9346bc61f3",
+  "cached_report_sha256": "0683943a7b5927558e8f320ea50f03ebda42b64a54e3e574dfc5e685dd46c2af",
+  "matched_keys": [
+    "n_datasets",
+    "n_libraries",
+    "n_output",
+    "n_ready_technical_cells",
+    "all_checks_pass",
+    "final_accepted_new_cells",
+    "cross_study_integrated",
+    "integration_candidate_index",
+    "gene_join_diagnostics"
+  ],
+  "all_library_checks_identical": true,
+  "n_datasets": 3,
+  "n_libraries": 92,
+  "n_cells": 579361,
+  "cache_limit_bytes": 38654705664,
+  "mathematical_checks_changed": false
+}
