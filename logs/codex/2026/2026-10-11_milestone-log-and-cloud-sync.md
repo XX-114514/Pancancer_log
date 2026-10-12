@@ -419,3 +419,13 @@ M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、
 覆盖结果dfb38e3361684a06eaec8673f58a0b3a67f54720于04:24:53.847862 UTC普通push、04:24:57.778506独立HTTPS核验，回执入本次补录。辅助推送取证曾遇服务器旧git不支持-C，改用subprocess cwd读取8b2b7b8成功；只读失败，无仓库/科学数据修改。原生覆盖producer/audit没有失败。共享目录其他4个预处理脚本改动保留、不暂存，必要的新metadata摘录/衍生SHA写入，不上传患者单位。下一完整LR提取仍未运行，目标保持active。
 
 分母表述澄清（UTC 2026-10-12T04:28:43.893173+00:00）：34是合格pair×context记录，属于10个不同审阅情境/8GSE，不是34个不同情境或队列；粗口径31记录属于9个情境。当前STATUS/README补充明确，原表与所有计数/门槛/模型不变。辅助文档driver曾错误断言粗情境为8，权威表实为9，断言在写入前拒绝；随后空提交/空bundle拒绝，无远端或科学结果改变。改用实际9补充。
+
+## 2026-10-12T12:40:29.183334+08:00 原9CM完整数据库提取执行冻结（UTC 2026-10-12T04:40:29.183334+00:00）
+
+上一goal turn为progress：原60对11220分母/240映射独立验收并云端c8398cb；34合格记录来自10不同情境、8GSE，非34队列。当前HEAD包含并发d8a53ee/2566587稳定基因新Zarr工作，原CM输入未改；研究日志未跟踪保留。读取现有status/task/daily/相关run/规范及原LIANA源码。当前server CM active空，新输出目录不存在。
+
+真实环境LIANA1.7.1 resource4624唯一LR，排序TSV SHA6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00，8native gene表SHA冻结；完整输出fields expr_prod/lr_means/两rank。官方[参数](https://liana.readthedocs.io/en/stable/generated/liana.mt.rank_aggregate.__call__.html)及已运行代码核实expr_prop=.1、return_all_lrs=False；旧“完整LIANA结果”仍经过表达比例过滤，未输出不能作无互作/零。最新官方默认和本机固定版本不同，不以网页默认改旧结果。
+
+新[执行合同](../../../inventories/analysis/2026-10-12/CM_edge_LR_extraction_execution_plan_v1.json)：所有34原边情境，68方向×4624=314432完整candidate cases，不做rank/p选择；逐全库SHA与既有独立audit输入签名复核，native全亚基/未输出/已输出/患者块分别统计。保存私有全observed raw四scores及68数组；源级counts门槛20library/10block/80%仅数据覆盖，不当模型可识别。保留来源限定和低身份置信端点；ACTR2不是ACVR2A、C1QA-CD93争议不改字。固定W/F去两端NNLS/H并列，auditor不importproducer、以CSV row计数/全raw scores、完整314432分母和NNLS KKT验收。本轮没有association/p/外部验证，也未重跑LIANA或下载。
+
+新代码语法PASS，真实未派发；公开resource及汇总/代码，患者/库keys和原observed vectors留server。代码/计划日志轻量、diff/隐私检查、普通push后执行。同一任务失败/修复历史保留，科学goal active，数据提取不是验证完成。

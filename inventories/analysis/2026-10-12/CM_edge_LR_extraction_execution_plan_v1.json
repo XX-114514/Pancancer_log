@@ -1,0 +1,84 @@
+{
+  "observed_UTC": "2026-10-12T04:33:28.442859+00:00",
+  "coverage_inventory_sha256": "c0723af23dfe35716c897865ee19ff58be3e13462218754a9815251e1e4f8723",
+  "coverage_audit_sha256": "8dae742d93bb7fea5e7888792d77b1a34b9362f1712b5a76165c4023f770304c",
+  "coverage_table_sha256": "35bc6e469bf66632b6051c5bf32625e5bb7aea4f5c0648cd311cca0de7a643d3",
+  "mapping_sha256": "935b9aa6fc90b9c9748cf6d30d0adc275c89f4c6ca13c38b817ef8be14c58a32",
+  "liana_version": "1.7.1",
+  "resource_name": "consensus",
+  "resource_rows": 4624,
+  "resource_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "native_gene_inputs": {
+    "GSE131907": {
+      "sha256": "71e2dbde2849d6e57081fa635583ca49fc9245cf571e7f9cc9c51c9af5edcd4e",
+      "bytes": 433306,
+      "genes": 29634
+    },
+    "GSE148071": {
+      "sha256": "732ff15d74fa3d614109c9d7fed243d9bc864dddd2902dd93e325aa914e3c5a7",
+      "bytes": 410767,
+      "genes": 29527
+    },
+    "GSE161529": {
+      "sha256": "d3b8b73f9ccb9eb055411c069cf3dd076be24cdead4a132b3e0667421e61753f",
+      "bytes": 472259,
+      "genes": 33538
+    },
+    "GSE178341": {
+      "sha256": "282bbe7ee6bf67b1975b5ec9d685940d8a3bf7ef9ac9ce776dfe45fa8d5be19a",
+      "bytes": 387798,
+      "genes": 26895
+    },
+    "GSE179994": {
+      "sha256": "7a6e48a9edabd1e936e4806ca4d0448f4bbd821ddab2a9481d6fdd1612913707",
+      "bytes": 248772,
+      "genes": 19790
+    },
+    "GSE182109": {
+      "sha256": "493eb3a9db5d76f118a8a6dabf617dd62e8e9e986a7ca684d69a11add1baf9e5",
+      "bytes": 548445,
+      "genes": 38224
+    },
+    "GSE183904": {
+      "sha256": "d1c0e9035f4f601aa4c38c138887b16380434b47b79da3ec5b85b08b4a39eb87",
+      "bytes": 325798,
+      "genes": 24186
+    },
+    "GSE270680": {
+      "sha256": "817fc65a04a56aaf00b407d7d8ff86be695e95396f847453a02e4f711a044ae5",
+      "bytes": 521942,
+      "genes": 36601
+    }
+  },
+  "schema": "original9CM_all_resource_LR_execution_plan_v1",
+  "predeclared_UTC": "2026-10-12T04:40:29.183334+00:00",
+  "code_sha256": {
+    "extract_CM_edge_LR_v1.py": "6634caa5654e3ef07b52ab39fcb9870b2cc9b4b7729af5de0ca1bc2b32e33e6e",
+    "audit_CM_edge_LR_extraction_v1.py": "3e0beb56dfa41ce084aca37133d61b1fe0ba1058cb29942a2c4f04fd7aa97d0e"
+  },
+  "parent_scope_sha256": "03ff1bbb85e2ab482a18a7fbf19066174aff359cb073b2671fc4c817fc1e83a1",
+  "scope": "all34 admitted original edge/context records in10 reviewed contexts/8GSE;68 directed groups;4624 fixed consensus LR each;314432 complete cases",
+  "score_fields": [
+    "expr_prod",
+    "lr_means",
+    "specificity_rank",
+    "magnitude_rank"
+  ],
+  "selection": "coverage-only admission; no rank/p/ligand subset selection",
+  "missing_policy": "exact native complex genes; omitted under fixed LIANA expr_prop=.1/return_all_lrs=False remains missing; observed numeric zero remains observed; no synonym substitution",
+  "coverage_gate": {
+    "minimum_observed_libraries": 20,
+    "minimum_observed_analysis_blocks": 10,
+    "minimum_observed_fraction": 0.8
+  },
+  "coverage_gate_does_not_accept_an_inferential_design": true,
+  "CM_activity": "fixed W/F NNLS after removing both original nodes; rank9 and condition<1e8/maxiter5000; full H retained; no driver claim",
+  "patient_policy": "original effective_resampling_block retained, reviewed source patient versus sample fallback shown separately; libraries are not declared independent patients",
+  "mechanism_policy": "database entries not validated binding; ACTR2 warning and C1QA-CD93 dispute retained separately, no mechanistic promotion",
+  "audit": "all selected original gzip CSV scores independently reconstructed, every314432 case/native missing/block count, every private value including missing; full activity via QR and NNLS KKT",
+  "new_hypothesis_tests": false,
+  "formal_states": false,
+  "independent_biological_validation": false,
+  "no_new_downloads": true,
+  "no_canonical_changes": true
+}
