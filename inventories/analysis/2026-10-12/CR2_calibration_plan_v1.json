@@ -1,0 +1,29 @@
+{
+  "created_UTC": "2026-10-12T10:38:09.360058+00:00",
+  "status": "PREDECLARED_NOT_STARTED",
+  "core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "calibration_sha256": "2d2dedf1df788fadc8c4ac06f89588a84c0bbcafa79504b01fe68abf0753c793",
+  "seed": 2026101201,
+  "null_draws": 5000,
+  "joint_TF_dimension": 10,
+  "min_effective_satt_df": 4,
+  "method": "unweighted OLS complete nuisance span; CR2 identity working covariance; coefficient-specific Satterthwaite df; LR omnibus Bonferroni union over all external compatible TFs",
+  "synthetic_cases": [
+    "singleton30",
+    "paired12",
+    "unequal10",
+    "paired20",
+    "unequal20",
+    "many_controls12"
+  ],
+  "errors": [
+    "iid normal",
+    "cluster intercept rho.7",
+    "cluster heteroskedasticity related to x",
+    "cluster t5",
+    "joint correlated TF outcomes"
+  ],
+  "formula_reference": "genuine CRAN clubSandwich0.7.0 isolated local R; coefficients, CR2 SE, Satterthwaite df, p and intervals matched on all six synthetic fixtures",
+  "calibration_acceptance": "report rejection rates and 95% binomial intervals at alpha.05 for all rows; not claim simulation proves real RNA assumptions; df4 threshold fixed before real effects",
+  "real_RNA_association_p_not_computed": true
+}
