@@ -1,0 +1,19 @@
+{
+  "schema": "public_preprocessing_durable_evidence_preflight_v1",
+  "observed_utc": "2026-10-12T05:25:02+00:00",
+  "scope": "read_only_file_existence_and_capacity_not_final_copy",
+  "n_expected_files": 39,
+  "n_existing_files": 36,
+  "pending_files": [
+    "execution_terminal",
+    "independent_full_preparation_audit",
+    "last_source_dataset_summary"
+  ],
+  "existing_evidence_bytes": 41765702,
+  "under_1GB_limit": true,
+  "effective_free_bytes": 593599852544,
+  "reserve_bytes": 500000000000,
+  "evidence_plus_reserve_fits": true,
+  "copy_utility_sha256": "a12707d7dd2d629e1f463819beff1d75666756c18b91dd4e953513d5ed47542b",
+  "source_final_AC": false
+}
