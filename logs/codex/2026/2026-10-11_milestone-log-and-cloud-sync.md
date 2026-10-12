@@ -561,3 +561,8 @@ v3 producer09:53:24—09:53:52、audit09:53:52—09:54:25 UTC均exit0，2766170�
 ## 2026-10-12T18:11:12.096592+08:00 /UTC 2026-10-12T10:11:12.096592+00:00 自动受体先验全量验收与统计入口预声明
 
 参考生产10:01:21—10:01:22、audit10:01:22—10:01:23 UTC exit0，19633唯一signed边/55204受体TF/全部926组件最短路径深度符号计数独立通过；2801/4624LR具有先验路径，非结合验证。TF节点311d905已10:01:25push/10:01:31核验。下一全部318情境的RNA/TF/先验相交，完整候选家族固定；主丰度+细胞数+非LR复杂度+受体表达controls、亚型PC敏感性及独立design algebra审计预声明，尚未运行/无新p。[先验结果](../../../inventories/analysis/2026-10-12/receiver_TF_prior_v1/RESULTS.md)，[设计run](../../../runs/20261012_major_LR_TF_design_preflight_v1.md)。
+
+
+## 2026-10-12T18:15:11.963799+08:00 /UTC 2026-10-12T10:15:11.963799+00:00 全LR与TF候选设计真实运行
+
+冻结2ad5254649dc409c8b6f84cda0b97a0ae25db5a5已10:11:23普通push/10:11:29独立HTTPS核验。10:12:03.293724 UTC启动driver62874/child62895，10:13:28取证两个PID在，日志到MAJ081_M01；执行的本地监控时间已标为历史取证，不当现在完整状态。来源RNA/TF/先验全家族与调整设计预检进行中，亚型PC敏感性部分不可估计；审计未启动，尚无新p/发现轴。独立任务manifest，不改原v17 primary registry或权威身份。[检查点](../../../inventories/analysis/2026-10-12/major_LR_TF_design_preflight_v1/running_checkpoint_v1.json)。

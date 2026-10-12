@@ -1,0 +1,13 @@
+{
+  "status": "LAUNCHED_NOT_TERMINAL",
+  "observed_UTC": "2026-10-12T10:12:03.235981+00:00",
+  "driver_pid": 62874,
+  "code_sha256": {
+    "major_LR_TF_design_preflight_v1.py": "090d4319062c5695b5ee525bfc53ed22919f2e9f49390ff05c2f454f86e765d2",
+    "audit_major_LR_TF_design_preflight_v1.py": "625b0a7fe88fb7ef1fbbbed763a92ec00c235ddc84ae525e609c8f598ea4d74a",
+    "major_LR_TF_design_plan_v1.json": "9958480055fe819d3bce69de3bff11cd697c1455bbb85c1b651c8c69ea25b7d9",
+    "receiver_TF_prior_v1/inventory.json": "eae259b7eec32629c0a21fdab33a91d7224482156a2ffc8886fa81a0d16467c6",
+    "receiver_TF_prior_v1/independent_audit.json": "04bedf85373a0eab44c04367b43d4891bf87d50e59f342834167459dd0b604a1",
+    "receiver_TF_prior_v1/private_all_receptor_TF_paths.tsv": "5dc3897b0d0ba86e8f83035114ee72c04f0315216eef36e9b307a63dcc2109bd"
+  }
+}

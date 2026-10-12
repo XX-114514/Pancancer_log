@@ -1,3 +1,7 @@
+## 2026-10-12T18:15:11.963799+08:00 /UTC 2026-10-12T10:15:11.963799+00:00 自动LR与TF设计预检运行中
+
+[driver62874/child62895](inventories/analysis/2026-10-12/major_LR_TF_design_preflight_v1/running_checkpoint_v1.json)10:13:28 UTC实际存活、至MAJ081_M01；318情境全RNA/TF/先验覆盖及丰度/复杂度/亚型PC设计检查中，独立审计待。前阶段表达/TF/先验已全量PASS，当前尚无新关联p或验证轴。
+
 ## 2026-10-12T18:00:09.496433+08:00 /UTC 2026-10-12T10:00:09.496433+00:00 接收TF程序全量验收通过
 
 [318情境/260覆盖合格](inventories/analysis/2026-10-12/major_receiver_TF_preflight_v3/RESULTS.md)、2766170评分独立复算PASS；44有向大类细胞对≥2GSE。下一自动外部受体与TF先验匹配，不按p或旧手选通讯。没有新响应关联p或独立验证轴，原身份/9CM/权威库保持。
