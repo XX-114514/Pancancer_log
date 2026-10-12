@@ -1,0 +1,19 @@
+{
+  "schema": "public_preprocessing_monitor_connection_recovery_v1",
+  "observed_utc": "2026-10-12T05:43:59.956802+00:00",
+  "role": "read_only_monitor_transport",
+  "previous_multiplex_connection_broken": true,
+  "default_remote_forward_conflict": true,
+  "new_monitor_default_forwarding_disabled": true,
+  "original_science_pid": 323251,
+  "assembly_waiter_pid": 144718,
+  "both_processes_verified_alive": true,
+  "n_completed_libraries": 775,
+  "n_output_cells": 3116074,
+  "n_failed_libraries": 0,
+  "scientific_processes_restarted": false,
+  "scientific_proxy_ports_changed": false,
+  "existing_authorized_signing_agent_relay_restored": true,
+  "private_key_copied": false,
+  "source_final_AC": false
+}
