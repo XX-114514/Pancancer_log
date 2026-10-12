@@ -1,0 +1,17 @@
+{
+  "observed_UTC": "2026-10-12T09:22:11.140443+00:00",
+  "execution": {
+    "status": "RUNNING",
+    "phase": "audit",
+    "started_UTC": "2026-10-12T09:18:05.264328+00:00",
+    "pid": 4319,
+    "script_sha256": "1c121e7aec0a6dfdcfe37e42e157e79036076f83b7151ada3b2c7fc4834c6bee",
+    "child_pid": 52427
+  },
+  "live": {
+    "pid": true,
+    "child_pid": true
+  },
+  "latest_log": "id\": \"GSE182109\", \"major_units\": 115, \"groups\": 6, \"status\": \"PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES\"}\n{\"gse_id\": \"GSE183904\", \"major_units\": 206, \"groups\": 56, \"status\": \"PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES\"}\n{\"gse_id\": \"GSE270680\", \"major_units\": 206, \"groups\": 28, \"status\": \"PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES\"}\n{\"gse_id\": \"GSE274229\", \"major_units\": 99, \"groups\": 10, \"status\": \"PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES\"}\n",
+  "scientific_validation": false
+}
