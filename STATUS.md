@@ -1,5 +1,11 @@
 # 当前项目状态
 
+## 2026-10-12T14:41:57+08:00 全9源审计PASS，实际Zarr组装已恢复
+
+[完整独立audit](inventories/runtime/2026-10-12/ambient_full_independent_audit_identifier_v4.json)：792文库、3180973细胞、全部PASS；编号修复只改CSV读法，科学count/gate完全一致。旧失败证据保留。[实际组装attempt v3](inventories/runtime/2026-10-12/combined_zarr_assembly_public_start_attempt_v3.json)PID25352/四组件冻结，最终原data4 v2目录。接下来指纹隔离、稳定ID流式合并、逐cell输出audit；此时尚未称最终对象完成。源正式AC/污染限制保留，新下载暂停。
+
+
+
 ## 2026-10-12T14:27:02.884531+08:00 原CM通讯关联全量审计通过
 
 [26994模型结果](inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/RESULTS.md)：主2000次置换q0、最小.050715存在精度边界；原H136记录尚非独立轴。统一20000次预声明，实际未启动。GSE161529核实7受累淋巴结和重复患者，原发患者敏感性待。此科学支线未改变并行公共前处理、当前Zarr或身份。

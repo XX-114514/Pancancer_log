@@ -1,0 +1,17 @@
+{
+  "schema": "combined_Zarr_assembly_attempt_v3_after_identifier_audit",
+  "started_utc": "2026-10-12T06:41:57.242829+00:00",
+  "pid": 25352,
+  "code_git_sha": "eb72e0b92a5630af03578851f6811c5fee2ab780",
+  "component_sha256": {
+    "run_public_zarr_completion.py": "7366dcfc9e53ee0ae5477e0459ecce519979f8850455c0d4d2d59cea55335117",
+    "merge_public_preprocessed_zarr.py": "171d2f4bc32a939963542673ab5a5641bcf37f6bed84e4a0a51241ef6641daf5",
+    "audit_combined_public_zarr.py": "6e273aa31ce843692d71c1fa6ff3a19ae5e8ec43dec3a5520bc5f89964b0222f",
+    "public_gene_identity_contract.py": "c6e68e85ec496f5483e9104a09607b38f7d657e1d6fd326f15c3d1941dbc9fd7"
+  },
+  "attempt": "v3",
+  "scientific_merge_algorithm_unchanged": true,
+  "prior_attempts_preserved": true,
+  "original_audit_repair_passed": true,
+  "source_final_AC": false
+}

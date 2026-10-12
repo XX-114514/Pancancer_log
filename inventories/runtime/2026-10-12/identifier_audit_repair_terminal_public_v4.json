@@ -1,0 +1,15 @@
+{
+  "schema": "identifier_audit_repair_terminal_v4",
+  "completed_utc": "2026-10-12T06:40:54.445636+00:00",
+  "status": "completed",
+  "all_checks_pass": true,
+  "n_datasets": 9,
+  "n_libraries": 792,
+  "n_cells": 3180973,
+  "n_ready_technical_cells": 1812664,
+  "audit_script_sha256": "9aefabd726e64e421d762833fa62ee3a52fd2bef7b047ebb93629ad30286b43c",
+  "code_git_sha": "eb72e0b92a5630af03578851f6811c5fee2ab780",
+  "old_failed_report_retained": true,
+  "scientific_worker_parameters_changed": false,
+  "source_final_AC": false
+}

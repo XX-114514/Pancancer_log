@@ -77,3 +77,11 @@
 - eb72e0b92a5630af03578851f6811c5fee2ab780代码先普通push/HTTPS核验；修复控制器PID303501、新审计SHA9aefabd…及控制器SHA9b347385…与冻结一致，启动后存活、原v3报告/终态/源码已封存。完整9源792重新验收实际进行中，不宣称已经PASS。
 - 原工作进程/计数/过滤参数不重跑或改变；v4只防止文本ID的前导零被CSV自动数值推断丢失。新原卷控制器支持独立attempt后缀，原v2源码和utility已封存后部署；真实组装仍等v4最终PASS。
 - 修复只有所有gate/count与原报告完全一致且新full audit PASS才更新canonical报告/terminal，原错误证明继续保留并随最终证据交付。旧等待器的RuntimeError是原失败记录，不能当成新审计运行异常。
+
+
+## 2026-10-12T14:40:54.445636+08:00 修正版完整audit PASS；14:41:57重启实际组装
+
+- v4完整9来源/792文库/3180973细胞、1812664技术准备候选全部独立PASS；计数/门槛与原报告完全一致，科学worker参数不变。audit SHA9aefabd…；报告SHA b911c7d3ab2111de2816c824782cd181c028024d02f372e73b4f31cedb8036c0。源正式AC仍0。
+- RMC原23880行floor/mt/作者flag/过滤/保留/ID全部PASS，5958假不一致由CSV前导零解析修正；旧v3失败报告/源码/terminal仍封存在原run config中，canonical只在新完整audit PASS后切换。未删除历史、未重跑任何DD/去污染模型。
+- 06:41:57 UTC组装attempt v3实际启动PID25352：wrapper7366dc…，merger171d2f…，final auditor6e273a…，identity helperc6e68e…；代码Git eb72e0b，四组件SHA核实。原data4 final run仍v2，保留初始start/log；新attempt后缀、scratch v3防碰撞；科学矩阵尚待流式写入与最后逐行audit。
+- 全量报告700405bytes已人工/路径/隐私审查，仅opaque library token、boolean检查和汇总；无患者/cell行、矩阵或内部路径。已授权签名代理06:42再续期，不复制私钥或更换科学端口。
