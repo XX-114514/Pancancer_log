@@ -70,3 +70,10 @@
 - 唯一失败为GSE256326 native QC ledger_original_library_order_exact。全23880行比对：CSV默认library_id推断int64，对6/9个含前导零编号丢零，5958行表面不一致；显式字符串读取0不一致、原cell顺序仍完全匹配。生产内存按原字符串分群、所有9分片计数/元数据已PASS，属于审计解析错误，不是QC数据错位。
 - 新v4审计显式original_cell_id/library_id字符串，不改floor、mt、DD、污染或原数据；准备重跑完整9源792检查。修复组件先封存原v3审计源码/报告/terminal，只有新全量PASS且所有counts/gates不变才更新canonical proof/终态；不绕过任何失败门槛。
 - 组装等待器增加独立attempt后缀支持，在同final v2目录保留最初start/log；科学矩阵尚不存在。实际重新启动须新代码普通push/冻结与原全量audit真实PASS。最终证据utility追加保存原失败证明与修复证明；目前仅准备，未声称修复成功。
+
+
+## 2026-10-12T06:24:17.372000+00:00 编号审计v4完整重验已核验启动（UTC+8 14:24:17）
+
+- eb72e0b92a5630af03578851f6811c5fee2ab780代码先普通push/HTTPS核验；修复控制器PID303501、新审计SHA9aefabd…及控制器SHA9b347385…与冻结一致，启动后存活、原v3报告/终态/源码已封存。完整9源792重新验收实际进行中，不宣称已经PASS。
+- 原工作进程/计数/过滤参数不重跑或改变；v4只防止文本ID的前导零被CSV自动数值推断丢失。新原卷控制器支持独立attempt后缀，原v2源码和utility已封存后部署；真实组装仍等v4最终PASS。
+- 修复只有所有gate/count与原报告完全一致且新full audit PASS才更新canonical报告/terminal，原错误证明继续保留并随最终证据交付。旧等待器的RuntimeError是原失败记录，不能当成新审计运行异常。

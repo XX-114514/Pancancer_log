@@ -1,0 +1,14 @@
+{
+  "schema": "identifier_audit_repair_launch_v4",
+  "started_utc": "2026-10-12T06:24:17.372000+00:00",
+  "pid": 303501,
+  "code_git_sha": "eb72e0b92a5630af03578851f6811c5fee2ab780",
+  "component_sha256": {
+    "audit_ambient_preparation_identifier_v4.py": "9aefabd726e64e421d762833fa62ee3a52fd2bef7b047ebb93629ad30286b43c",
+    "repair_ambient_identifier_audit.py": "9b347385d928675882d4c6f24a54cb5a49414ebe7fc550283642f99dbcb505da"
+  },
+  "scope": "full_nine_source_792_library_independent_audit_rerun",
+  "original_scientific_outputs_unchanged": true,
+  "new_Zarr_not_yet_written": true,
+  "source_final_AC": false
+}

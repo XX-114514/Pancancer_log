@@ -1,5 +1,11 @@
 # 当前项目状态
 
+## 2026-10-12T14:24:17+08:00 文本编号修复已冻结并启动全量重验
+
+[v4实际启动](inventories/runtime/2026-10-12/identifier_audit_repair_public_launch_v4.json)PID303501，代码eb72e0b/审计SHA9aefabd；原失败证明已封存。重验全部9源792文库，原科学数据/参数不变，只有新full audit PASS及所有count/gate一致才恢复合并。最终Zarr仍待，来源AC限制保留，新下载暂停。
+
+
+
 ## 2026-10-12T14:15:47+08:00 全量审计编号解析需修复，合并已按门槛停止
 
 792文库逐行检查均PASS，但GSE256326来源级文库编号对比失败。[全23880行诊断](inventories/runtime/2026-10-12/native_QC_identifier_read_diagnosis_v1.json)确认CSV自动int丢前导零导致5958表面差异；字符串读取全部匹配。原数据/模型正确保留，正在准备v4完整重验，旧失败报告封存。最终Zarr尚未写入，不能称全量已验收；新修复代码冻结后继续，本阶段新下载暂停。
