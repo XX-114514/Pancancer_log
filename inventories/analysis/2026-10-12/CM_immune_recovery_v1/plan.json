@@ -1,0 +1,38 @@
+{
+  "schema": "frozen_CM_immune_recovery_diagnostic_v1",
+  "status": "PREDECLARED_BEFORE_COHERENCE_AND_PROJECTION_FITS",
+  "question": "Can frozen v20261010 CM membership, abundance structure and fixed-W activities be recovered within existing immune-related cohorts?",
+  "sources": [
+    "GSE115978",
+    "GSE127465",
+    "GSE179994",
+    "GSE274229"
+  ],
+  "source_reason": "Previously collected melanoma immunotherapy-related ecosystem, lung immune landscape, longitudinal lung T-cell subset, prostate immune/resistance-related human scope. No choice by current correlation or LR p-values.",
+  "scope": "All source libraries in frozen1290, split by reviewed cancer/sample class/treatment phase. All9CM retained. No canonical/node renaming, new patient reassignment or new data download.",
+  "reference": "Frozen172 W, original H, normalized frequency matrix, corrected120 CM edge records and exact node-major dictionary",
+  "core": "Unique actual graph-member nodes per fixed CM, ordered by frozen W. Report top10 candidate nodes separately; do not mistake isolated top-weight nodes for graph members.",
+  "support": {
+    "node_cells": 20,
+    "per_library_core_count": "ceil(0.5*actual core size)",
+    "per_library_weight_coverage": 0.6,
+    "per_library_major_count": "min(3,number of reference core majors)",
+    "per_library_unambiguous_compartments": "min(2,number of reference unambiguous compartments); T/NK and unspecified lymphoid do not create new distinct biological compartments",
+    "cohort_supported_library_fraction": 0.5,
+    "cohort_supported_blocks": 10,
+    "meaning": "Operational diagnostic gates, not published CoVarNet validation thresholds or biological proof",
+    "sensitivity": "Report all weight .4/.6/.8 by supported-library fractions .5/.8, not only a favourable threshold"
+  },
+  "sampling": "GSE179994 is a published T-cell subset; non-T legacy labels are retained descriptively but excluded from whole-module capture/projection support. No whole-TME inference. Other sources preserve enrichment/material uncertainties.",
+  "projection": "Keep original W scale and identities; fixed-W KL minimization, never learn W in target cohort. Primary uses frozen normalization with unobserved/inadequately captured majors masked and only varying rows; official-style cohort minmax as sensitivity. Report W rank/condition and no identifiable activity for rank<9/condition>1e8. H values alone are not module replication.",
+  "numerical_check": "Independent scipy bounded objective minimization against multiplicative KL projection on up to3 fixed libraries per eligible cohort/normalization; save KKT and objective diagnostics. This is numerical checking, not independent biological validation.",
+  "coherence": "Patient-block means when evidence reviewed, original sample fallback otherwise; complete measured-major blocks; exact frozen cross-major graph edges, endpoint count>=20 in>=50%blocks, >=10blocks and>=3 varying edges. Mean Spearman rho across all coverage-eligible edges, no positive-edge selection.",
+  "null": "1999 permutations of entire same-major rank vectors across blocks, keeping within-major covariance and closure; independent permutations across majors. Restrict to fixed source/cancer/material/treatment strata. Missing major is not biological0. 2000 block bootstrap with fixed edge set and>=1800estimable required for interval.",
+  "multiplicity": "Diagnostic one-sided positive-coherence BH across all planned cohortx9CM tests; untestable internalp1, reportedp/qNA. Selected reference and sources were already seen; never call this independent validation.",
+  "independence": "All four sources occur in frozen discovery1290. New GSE169246/GSE243013/etc currently lack accepted exact172 mapping; no guessed marker-name transport.",
+  "outputs": "Public aggregate source/core/support/projection/coherence tables, input SHA manifest and heatmap. Private sample activities/fixtures stay in new server run directory.",
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "code_sha256": "24f89617fb0fa5eaffb3183943d6c525826e62e2f7407d246969fda921ae4403",
+  "created_UTC": "2026-10-12T14:47:44.292914+00:00"
+}
