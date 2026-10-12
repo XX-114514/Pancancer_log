@@ -1,0 +1,86 @@
+{
+  "gse_id": "GSE179994",
+  "current_single_major_coverage": [
+    {
+      "major": "B cell",
+      "pre_libraries": 1,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Dendritic cell",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Endothelial cell",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Fibroblast",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Lymphoid cell",
+      "pre_libraries": 20,
+      "on_libraries": 12,
+      "paired_patient_blocks": 5
+    },
+    {
+      "major": "Macrophage",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Mast cell",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Monocyte",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Myeloid",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "Neutrophil",
+      "pre_libraries": 0,
+      "on_libraries": 0,
+      "paired_patient_blocks": 0
+    },
+    {
+      "major": "T cell",
+      "pre_libraries": 33,
+      "on_libraries": 14,
+      "paired_patient_blocks": 8
+    },
+    {
+      "major": "T/NK lymphoid",
+      "pre_libraries": 33,
+      "on_libraries": 14,
+      "paired_patient_blocks": 8
+    }
+  ],
+  "scope_phase_counts": {
+    "pre_treatment": 33,
+    "on_treatment": 14
+  },
+  "counts_sum_by_phase": {
+    "on_treatment": 58214,
+    "pre_treatment": 86053
+  },
+  "no_individual_rows_exported": true
+}

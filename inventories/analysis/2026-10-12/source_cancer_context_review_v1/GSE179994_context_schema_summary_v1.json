@@ -1,0 +1,20 @@
+{
+  "gse_id": "GSE179994",
+  "official_GSM_count": 47,
+  "characteristic_keys_and_coverage": {
+    "patient id": 47,
+    "disease state": 47,
+    "condition": 47,
+    "platform": 47
+  },
+  "candidate_clinical_context_aggregate": {
+    "disease state": {
+      "non-small-cell lung cancer patients": 47
+    },
+    "condition": {
+      "Pre-treatment": 33,
+      "On-treatment": 14
+    }
+  },
+  "no_patient_or_individual_GSM_rows_exported": true
+}

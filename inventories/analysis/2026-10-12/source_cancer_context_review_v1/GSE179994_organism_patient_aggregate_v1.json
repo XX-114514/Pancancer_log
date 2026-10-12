@@ -1,0 +1,11 @@
+{
+  "gse_id": "GSE179994",
+  "organism_counts": {
+    "Homo sapiens": 47
+  },
+  "no_individual_rows_exported": true,
+  "author_patient_tokens": 36,
+  "patients_with_both_Pre_On": 8,
+  "patients_with_multiple_GSM": 8,
+  "all47_GSM": false
+}

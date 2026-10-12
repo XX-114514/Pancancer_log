@@ -1,0 +1,199 @@
+analysis_scope	source	target	eligible_contexts	unique_GSEs	current_cancer_labels	broad_cancer_families	sample_classes
+all_materials_separate_contexts	B cell	Endothelial cell	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	B cell	Epithelial cell	5	3	3	3	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	B cell	Hematopoietic cell	1	1	1	1	bone_marrow
+all_materials_separate_contexts	B cell	Lymphoid cell	2	1	1	1	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	B cell	Macrophage	4	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	B cell	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	B cell	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	B cell	T cell	7	4	3	3	bone_marrow;normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	B cell	T/NK lymphoid	5	3	2	2	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	B cell	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	Epithelial cell	4	4	4	4	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	Fibroblast	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	Macrophage	3	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	Monocyte	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	Myeloid	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	T cell	4	4	4	4	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	Endothelial cell	T/NK lymphoid	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	B cell	5	3	3	3	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	Endothelial cell	4	4	4	4	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	Fibroblast	3	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	Macrophage	7	6	5	5	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	Mural cell	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	T cell	7	5	5	5	metastatic_tumor;normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	Epithelial cell	T/NK lymphoid	3	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Fibroblast	Endothelial cell	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Fibroblast	Epithelial cell	3	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	Fibroblast	Lymphoid cell	1	1	1	1	normal_or_adjacent
+all_materials_separate_contexts	Fibroblast	Macrophage	3	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	Fibroblast	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Fibroblast	T cell	4	4	3	3	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	Fibroblast	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Glial cell	Macrophage	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Glial cell	T cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Hematopoietic cell	B cell	1	1	1	1	bone_marrow
+all_materials_separate_contexts	Hematopoietic cell	T cell	1	1	1	1	bone_marrow
+all_materials_separate_contexts	Lymphoid cell	B cell	2	1	1	1	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	Lymphoid cell	Fibroblast	1	1	1	1	normal_or_adjacent
+all_materials_separate_contexts	Lymphoid cell	T cell	3	2	2	2	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	Lymphoid cell	T/NK lymphoid	3	2	2	2	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	B cell	4	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Endothelial cell	3	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Epithelial cell	7	6	5	5	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Fibroblast	3	3	3	3	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Glial cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	T cell	7	6	6	6	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	Macrophage	T/NK lymphoid	3	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mast cell	Epithelial cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mast cell	Macrophage	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mast cell	T cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mast cell	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Monocyte	B cell	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Monocyte	Endothelial cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Monocyte	Epithelial cell	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Monocyte	Macrophage	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Monocyte	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Monocyte	T cell	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Monocyte	T/NK lymphoid	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mural cell	Endothelial cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mural cell	Epithelial cell	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mural cell	Fibroblast	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mural cell	Macrophage	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mural cell	T cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Mural cell	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Myeloid	B cell	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Myeloid	Endothelial cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Myeloid	Epithelial cell	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Myeloid	Macrophage	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Myeloid	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Myeloid	T cell	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	Myeloid	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	B cell	7	4	3	3	bone_marrow;normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Endothelial cell	4	4	4	4	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Epithelial cell	7	5	5	5	metastatic_tumor;normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Fibroblast	4	4	3	3	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Glial cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Hematopoietic cell	1	1	1	1	bone_marrow
+all_materials_separate_contexts	T cell	Lymphoid cell	3	2	2	2	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Macrophage	7	6	6	6	metastatic_tumor;primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T cell	T/NK lymphoid	7	5	3	3	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	B cell	5	3	2	2	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Endothelial cell	2	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Epithelial cell	3	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Fibroblast	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Lymphoid cell	3	2	2	2	normal_or_adjacent;primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Macrophage	3	2	2	2	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	Myeloid	1	1	1	1	primary_or_unspecified_tumor
+all_materials_separate_contexts	T/NK lymphoid	T cell	7	5	3	3	normal_or_adjacent;primary_or_unspecified_tumor
+primary_tumor_only	B cell	Endothelial cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	B cell	Epithelial cell	4	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	B cell	Lymphoid cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	B cell	Macrophage	4	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	B cell	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	B cell	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	B cell	T cell	4	3	2	2	primary_or_unspecified_tumor
+primary_tumor_only	B cell	T/NK lymphoid	4	3	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	B cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	Epithelial cell	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	Fibroblast	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	Macrophage	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	Monocyte	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	Myeloid	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	T cell	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Endothelial cell	T/NK lymphoid	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	B cell	4	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	Endothelial cell	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	Fibroblast	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	Macrophage	6	5	5	5	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	Mural cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	T cell	5	4	4	4	primary_or_unspecified_tumor
+primary_tumor_only	Epithelial cell	T/NK lymphoid	3	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Fibroblast	Endothelial cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Fibroblast	Epithelial cell	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Fibroblast	Macrophage	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Fibroblast	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Fibroblast	T cell	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Fibroblast	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Glial cell	Macrophage	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Glial cell	T cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Lymphoid cell	B cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Lymphoid cell	T cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Lymphoid cell	T/NK lymphoid	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	B cell	4	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Endothelial cell	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Epithelial cell	6	5	5	5	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Fibroblast	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Glial cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	T cell	6	5	5	5	primary_or_unspecified_tumor
+primary_tumor_only	Macrophage	T/NK lymphoid	3	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Mast cell	Epithelial cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mast cell	Macrophage	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mast cell	T cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mast cell	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Monocyte	B cell	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Monocyte	Endothelial cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Monocyte	Epithelial cell	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Monocyte	Macrophage	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Monocyte	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Monocyte	T cell	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Monocyte	T/NK lymphoid	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mural cell	Endothelial cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mural cell	Epithelial cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	Mural cell	Fibroblast	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mural cell	Macrophage	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mural cell	T cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Mural cell	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Myeloid	B cell	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Myeloid	Endothelial cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Myeloid	Epithelial cell	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Myeloid	Macrophage	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Myeloid	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Myeloid	T cell	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	Myeloid	T/NK lymphoid	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T cell	B cell	4	3	2	2	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Endothelial cell	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Epithelial cell	5	4	4	4	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Fibroblast	3	3	3	3	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Glial cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Lymphoid cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Macrophage	6	5	5	5	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T cell	Myeloid	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T cell	T/NK lymphoid	5	4	3	3	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	B cell	4	3	2	2	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Endothelial cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Epithelial cell	3	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Fibroblast	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Lymphoid cell	2	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Macrophage	3	2	2	2	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Mast cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Monocyte	2	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Mural cell	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	Myeloid	1	1	1	1	primary_or_unspecified_tumor
+primary_tumor_only	T/NK lymphoid	T cell	5	4	3	3	primary_or_unspecified_tumor

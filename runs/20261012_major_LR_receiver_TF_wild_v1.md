@@ -12,3 +12,8 @@
 ## 2026-10-12T19:55:07.384819+08:00 /UTC 2026-10-12T11:55:07.384819+00:00 2023全部自动记录联合TF复核真实运行
 
 冻结2f4559da70e91dd4bdd9928c4ae8165493d7a3f3已11:51:25普通push/11:51:31 HTTPS核验。11:54:10.313461 UTC启动driver49233/child49234，11:54:25两个PID真实在，日志至MAJ013_M01/LR2681亚型变体。2023×3复核实际进行、全TF共同权重/固定设计、20000MC，未最终BH/独立audit，不公布单case名义p为成功。原BH0已验收保留。[检查点](../inventories/analysis/2026-10-12/major_LR_receiver_TF_wild_v1/running_checkpoint_v1.json)。下一同句柄生产终态→完整选择/概率/BH和显式refit audit→来源/癌种方向及生物端点证据卡；旧job不重启，没有新权威身份/状态/9CM或最终验证轴。
+
+
+## 2026-10-12T20:27:23.436958+08:00 /UTC 2026-10-12T12:27:23.436958+00:00 联合重采样终态阴性及免疫来源适用性已取证
+
+同49233/49234 producer11:54:10—12:15:54、audit22978012:15:54—12:16:01 UTC exit0，12:19:53 PID均退出。5477实际复核、6069选择/177393家族全核、768显式refit PASS；三模型BH/BY均0，不能据2,023名义记录命名轴，旧阴性保留。全11官方来源标题/宽7癌种梳理；巨噬–T原发5GSE/5癌种机会。179994真实33pre/14on、36患者8配对；on双T/TNK有14库≥20细胞却未满20库门槛，主分析preonly不是无on细胞。274229 current43样本全精确人类/鼠0，官方mouse8的ADT/PBS不能赋给human。角色API全量45s/四gene30s超时，无参考下载成功，不影响已有主计算，不以此标blocked。服务器无rg后改已知文件字段读取；本机首次误用无pandas系统Python后使用bundled恢复，科学数据未改。[复核](../inventories/analysis/2026-10-12/major_LR_receiver_TF_wild_v1/RESULTS.md)，[来源适用性](../inventories/analysis/2026-10-12/source_cancer_context_review_v1/RESULTS.md)。

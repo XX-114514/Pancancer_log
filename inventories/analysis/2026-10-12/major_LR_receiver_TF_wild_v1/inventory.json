@@ -1,0 +1,308 @@
+{
+  "status": "COMPLETE_COVARIANCE_AWARE_RECHECK_PENDING_NUMERIC_AUDIT",
+  "started_UTC": "2026-10-12T11:54:12.229272+00:00",
+  "finished_UTC": "2026-10-12T12:15:54.672894+00:00",
+  "producer_sha256": "8a33e59f9e81990515ca8ad81aec61e4a3bead65a8a5195b29b732fd8173995b",
+  "plan_sha256": "ae0cc89c709d98cff183b47e71495ee08497189bf458f9b51ef44a29f945778e",
+  "selected_main_LR_cases": 2023,
+  "recheck_rows": 6069,
+  "original_family_each_variant": 59131,
+  "summary": [
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE116256",
+      "original_family_cases": 510,
+      "wild_rechecked": 10,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE131907",
+      "original_family_cases": 233,
+      "wild_rechecked": 4,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE148071",
+      "original_family_cases": 1872,
+      "wild_rechecked": 34,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE161529",
+      "original_family_cases": 7350,
+      "wild_rechecked": 208,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE176031",
+      "original_family_cases": 633,
+      "wild_rechecked": 64,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE178341",
+      "original_family_cases": 21946,
+      "wild_rechecked": 1100,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE179994",
+      "original_family_cases": 773,
+      "wild_rechecked": 19,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE182109",
+      "original_family_cases": 2015,
+      "wild_rechecked": 56,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE183904",
+      "original_family_cases": 16416,
+      "wild_rechecked": 294,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE270680",
+      "original_family_cases": 4506,
+      "wild_rechecked": 167,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "abundance_complexity",
+      "gse_id": "GSE274229",
+      "original_family_cases": 2877,
+      "wild_rechecked": 67,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE116256",
+      "original_family_cases": 510,
+      "wild_rechecked": 10,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE131907",
+      "original_family_cases": 233,
+      "wild_rechecked": 4,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE148071",
+      "original_family_cases": 1872,
+      "wild_rechecked": 34,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE161529",
+      "original_family_cases": 7350,
+      "wild_rechecked": 208,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE176031",
+      "original_family_cases": 633,
+      "wild_rechecked": 64,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE178341",
+      "original_family_cases": 21946,
+      "wild_rechecked": 1100,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE179994",
+      "original_family_cases": 773,
+      "wild_rechecked": 19,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE182109",
+      "original_family_cases": 2015,
+      "wild_rechecked": 56,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE183904",
+      "original_family_cases": 16416,
+      "wild_rechecked": 294,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE270680",
+      "original_family_cases": 4506,
+      "wild_rechecked": 167,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "gse_id": "GSE274229",
+      "original_family_cases": 2877,
+      "wild_rechecked": 67,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE116256",
+      "original_family_cases": 510,
+      "wild_rechecked": 8,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE131907",
+      "original_family_cases": 233,
+      "wild_rechecked": 4,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE148071",
+      "original_family_cases": 1872,
+      "wild_rechecked": 27,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE161529",
+      "original_family_cases": 7350,
+      "wild_rechecked": 76,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE176031",
+      "original_family_cases": 633,
+      "wild_rechecked": 64,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE178341",
+      "original_family_cases": 21946,
+      "wild_rechecked": 884,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE179994",
+      "original_family_cases": 773,
+      "wild_rechecked": 17,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE182109",
+      "original_family_cases": 2015,
+      "wild_rechecked": 54,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE183904",
+      "original_family_cases": 16416,
+      "wild_rechecked": 207,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE270680",
+      "original_family_cases": 4506,
+      "wild_rechecked": 80,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "gse_id": "GSE274229",
+      "original_family_cases": 2877,
+      "wild_rechecked": 10,
+      "BH05_exploratory": 0,
+      "BY05_exploratory": 0
+    }
+  ],
+  "independent_source_or_binding_validation": false,
+  "adaptive_screening_same_data": true,
+  "all_same_TFs_controls_endpoints_retained": true,
+  "outputs": {
+    "all177393_LR_wild_models.tsv.gz": "a631bf902d00dd01f8790e8df5416c17936e5b000851fe6708ec03536beeb5a7",
+    "all6069_selected_recheck_records.tsv.gz": "f04236488545b12d16458eacc8e2912c0b45eb135d59e3f2b5a8887c95300169",
+    "source_wild_summary.tsv": "95c65d0a19d90f8a752cf9f5bbfb8c51e73a53ab6f5c2f58872acc45778fbcfc",
+    "private_weight_audit_cases/MAJ002_M01_LR2827.npz": "c80b83ed0133059559a399ac19eb75cb2f0be132e9c289d5c09ab17398392fa9",
+    "private_weight_audit_cases/MAJ003_M01_LR283.npz": "2e867123e6573d7cf4c0b45bcb5639bb81a1b8f23382e59b4c4a34ea56697699",
+    "private_weight_audit_cases/MAJ003_M01_LR1980.npz": "a036886e4302ad4f567f1f57319127d3c3cd038247970dfe9da6100c2ab4947d",
+    "private_weight_audit_cases/MAJ003_M01_LR2945.npz": "1a470157dd5f5380472d4007c99891bd5be5d03ffc77a5e3ab3bf681a31da716",
+    "private_weight_audit_cases/MAJ004_M01_LR1269.npz": "fd4760fcb4490b8896c7946f5bb889cda63d9a4473f4239f170014fff25db71d",
+    "private_weight_audit_cases/MAJ004_M01_LR2099.npz": "371e108f21d2b2d136583cecef98fc71a68222f7c9102ca055307f0d092948de",
+    "private_weight_audit_cases/MAJ005_M01_LR914.npz": "b11580428de4e609616b6e8257f98a51310bf4c4559debce86de8856cadab207",
+    "private_weight_audit_cases/MAJ005_M01_LR2744.npz": "f642d44a730c6b28d0198b1e578c558468d1523d4d53469f8c186fed6051a127",
+    "private_weight_audit_cases/MAJ006_M01_LR285.npz": "4ddd82f3e3dfebe10f48e7b782382eaa988dc06dc0e33dde398b3bd90cdc788b",
+    "private_weight_audit_cases/MAJ006_M01_LR2255.npz": "ff9c1d326f7c4aff8c0152880c9ee84e4448aee9b79dd8008dd12276bf0b8ca5",
+    "private_weight_audit_cases/MAJ007_M01_LR2070.npz": "fe6462456094fd3ab750a5c8f3879dbca0f5eb2a4e536064b30a92524b39f542",
+    "private_weight_audit_cases/MAJ008_M01_LR3995.npz": "690ae1cf6a04212f3c87827052c246326270f8e265c770962bf41a578a89c6e4",
+    "private_weight_audit_cases/MAJ008_M01_LR4002.npz": "061a82c03111496affad58da1a4d44951f5a877e7ad9305956ab90b4af9b6df2",
+    "private_weight_audit_cases/MAJ008_M01_LR4003.npz": "76f9952e387ea1886dd85135530dc28d29d5870d0fb0abfd432e225c8bf9dcca",
+    "private_weight_audit_cases/MAJ009_M01_LR287.npz": "409a967200c69927f64d3829bb1928595154de81220a2139490678fd7c33acfd",
+    "private_weight_audit_cases/MAJ009_M01_LR2036.npz": "e77a710568e2101b80a1665cb171272ce0f388d1671b6256ad2b4a73628152cf",
+    "private_weight_audit_cases/MAJ009_M01_LR2879.npz": "b9859301fe4bfaafe6bdf845a641ce5108538838b71f2c1532054777fd4b4b21",
+    "private_weight_audit_cases/MAJ009_M01_LR3371.npz": "4d1f2140db58929874096ca6e8656f88b79f277bb9776719f6037bfd66637e46",
+    "private_weight_audit_cases/MAJ010_M01_LR473.npz": "84008ab1d031e04240c64510a56721ccf1608d0ee819cebf646dae0c6d43d2cb",
+    "private_weight_audit_cases/MAJ010_M01_LR2070.npz": "f6a310d9a7395743c6e345e3e3aef9226b3e435c96a949ada8c53b61119eee3e",
+    "private_weight_audit_cases/MAJ011_M01_LR2099.npz": "a84aeab28c507135b87d3fe15eaeb64a7e4d67f33953ce562d10d3399e31723c",
+    "private_weight_audit_cases/MAJ011_M01_LR2318.npz": "14a69e37ea98ebdb9f3d199b8ba25fe024c97760b6011ceb6051b595665c5075",
+    "private_weight_audit_cases/MAJ012_M01_LR2431.npz": "d217f6aa8a9348d514fe4bcc11a9242b90b26d8973b812992353f04bff3af00f",
+    "private_weight_audit_cases/MAJ012_M01_LR4140.npz": "260eaa5fce10bbf528a4132202ad64bca3dd33ca4e805fbd00fb90bbe5f85e15"
+  }
+}

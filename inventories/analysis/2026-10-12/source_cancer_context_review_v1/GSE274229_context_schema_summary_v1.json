@@ -1,0 +1,30 @@
+{
+  "gse_id": "GSE274229",
+  "official_GSM_count": 52,
+  "characteristic_keys_and_coverage": {
+    "tissue": 52,
+    "cell type": 52,
+    "genotype": 8,
+    "treatment": 8,
+    "library type": 52
+  },
+  "candidate_clinical_context_aggregate": {
+    "tissue": {
+      "prostate": 47,
+      "bone metastasis": 1,
+      "liver metastasis": 1,
+      "bladder metastasis": 1,
+      "lymph node metastasis": 2
+    },
+    "cell type": {
+      "CD45+ cells": 8,
+      "tumor biopsy including immune and non-immune cells": 44
+    },
+    "treatment": {
+      "degarelix (androgen-deprivation therapy (ADT))": 4,
+      "PBS": 4,
+      "MISSING": 44
+    }
+  },
+  "no_patient_or_individual_GSM_rows_exported": true
+}

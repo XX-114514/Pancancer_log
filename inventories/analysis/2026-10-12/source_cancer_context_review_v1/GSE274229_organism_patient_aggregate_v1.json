@@ -1,0 +1,16 @@
+{
+  "gse_id": "GSE274229",
+  "organism_counts": {
+    "Mus musculus": 8,
+    "Homo sapiens": 44
+  },
+  "no_individual_rows_exported": true,
+  "organism_by_cell_type": {
+    "Mus musculus": {
+      "CD45+ cells": 8
+    },
+    "Homo sapiens": {
+      "tumor biopsy including immune and non-immune cells": 44
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "gse_id": "GSE179994",
+  "all_current_pair_coverage": [
+    {
+      "group_id": "MAJ171",
+      "source": "Lymphoid cell",
+      "target": "T cell",
+      "n_libraries": 20,
+      "phase_counts": {
+        "pre_treatment": 20
+      },
+      "reviewed_patient_blocks": 20,
+      "blocks_both_pre_on": 0
+    },
+    {
+      "group_id": "MAJ172",
+      "source": "T cell",
+      "target": "Lymphoid cell",
+      "n_libraries": 20,
+      "phase_counts": {
+        "pre_treatment": 20
+      },
+      "reviewed_patient_blocks": 20,
+      "blocks_both_pre_on": 0
+    },
+    {
+      "group_id": "MAJ173",
+      "source": "Lymphoid cell",
+      "target": "T/NK lymphoid",
+      "n_libraries": 20,
+      "phase_counts": {
+        "pre_treatment": 20
+      },
+      "reviewed_patient_blocks": 20,
+      "blocks_both_pre_on": 0
+    },
+    {
+      "group_id": "MAJ174",
+      "source": "T/NK lymphoid",
+      "target": "Lymphoid cell",
+      "n_libraries": 20,
+      "phase_counts": {
+        "pre_treatment": 20
+      },
+      "reviewed_patient_blocks": 20,
+      "blocks_both_pre_on": 0
+    },
+    {
+      "group_id": "MAJ175",
+      "source": "T cell",
+      "target": "T/NK lymphoid",
+      "n_libraries": 33,
+      "phase_counts": {
+        "pre_treatment": 33
+      },
+      "reviewed_patient_blocks": 33,
+      "blocks_both_pre_on": 0
+    },
+    {
+      "group_id": "MAJ176",
+      "source": "T/NK lymphoid",
+      "target": "T cell",
+      "n_libraries": 33,
+      "phase_counts": {
+        "pre_treatment": 33
+      },
+      "reviewed_patient_blocks": 33,
+      "blocks_both_pre_on": 0
+    }
+  ],
+  "no_sample_or_patient_rows_exported": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ALL_SELECTION_SEEDS_PROBABILITY_COUNTS_FAMILY_BH_AND_EXPLICIT_BOOTSTRAP_FIXTURES",
+  "observed_UTC": "2026-10-12T12:16:01.383944+00:00",
+  "auditor_sha256": "2203762de34524be9e6c15002cbac7267f70fab1709f7a8e5c6098d33c2d2d2b",
+  "producer_inventory_sha256": "300cd8a1e351183b2337e209bb36611b8f7014d475d122d27cf74a8ea234183e",
+  "selected_LR_cases": 2023,
+  "all_recheck_records_checked": 6069,
+  "wild_rechecked_records": 5477,
+  "all_original_family_rows_checked": 177393,
+  "independent_fullX_bootstrap_refits": 768,
+  "fixtures": 24,
+  "max_absolute_refit_difference": 6.217248937900877e-14,
+  "all20000_MC_draws_not_independently_replayed": true,
+  "same_data_selection_not_independent_validation": true,
+  "no_causal_or_binding_claim": true
+}
