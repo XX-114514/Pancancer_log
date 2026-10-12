@@ -50,3 +50,5 @@
 建议commit：`records: reconcile latest CoVarNet and data preparation progress`。
 
 提交前实际检查：仓库验证exit0、0 errors/1既有路径warning；本日志相对链接及公开路径检查通过。IFNG三变体联合q和178来源计数来自现有全量汇总重新读取，不是新的模型估计。
+
+首内容提交603430e仅含本日志。旧push helper因原服务器记录仓库仍停在历史b500ef8而在基线断言处失败，未推进该仓库。只读核实既有配额恢复副本干净且main=e4dc7ec，改用该已被其他任务持续发布的副本快进；不复制密钥、重写历史或修改原分析数据。首次只读诊断使用git -C不适用于旧Git，改cwd后得到真实HEAD。同步终态由独立HTTPS读回及落盘回执确认。
