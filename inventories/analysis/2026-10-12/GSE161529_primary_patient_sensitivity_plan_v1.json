@@ -1,0 +1,27 @@
+{
+  "predeclared_UTC": "2026-10-12T06:35:35.764554+00:00",
+  "reason": "Official exact characteristics audit: current breast tumor41 includes7involvedLN and32authorpatient tokens. COL endpoint primary30RNA-output libraries/28tokens. Preserve mixed/fallback result; same-data patient/material sensitivity only.",
+  "scope": "All426 originally data-covered breast cases/all1178 CM mappings; four variants each1178, total4712; no LR selected by significance",
+  "material": "Only official tumor mammary Total; involvedLN/normal/preneoplastic kept in provenance, excluded from this sensitivity. Original frozen contexts unchanged otherwise.",
+  "patients": "exact author-characteristic patient token, source/disease scoped block; no numeric coercion, no all69/global identity promotion; all53author tokens vs paper55persons unresolved",
+  "variants": [
+    "endpoint_excluded_library__required_controls",
+    "original_H_library__required_controls",
+    "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+    "original_H_library__required_controls_plus_exact_author_cancer_subtype"
+  ],
+  "controls": "all original within-major proportions and log1p endpoint cell counts; exact author cancer type categorical full indicator span in subtype variant. No category merged because of p or rare rows; high leverage/nonidentifiability reported.",
+  "coverage": "native all subunits measured,>=20primary endpoint libraries,>=20LIANA observed,>=10source scoped author blocks,>=80%primary output coverage; absent LIANA remains missing",
+  "math": "frozen full required nuisance span FWL/CR1; original maxhat.95/effectivecond1e8; within new subset standardization;2000same-size whole-block Freedman Lane residual permutations and2000case-block bootstrap;1800valid CI",
+  "BH": "Each variant frozen1178; failed internalp1/publicNA; sensitivity after source audit, not independent discovery/validation",
+  "mapping_sha256": "3ee84f9c0f4cf4dfae8c30bf49f54eddd408d4743faf79936475722b62045429",
+  "metadata_audit_sha256": "063664b11feebfddfd02f784a72f82272c9db86344de863349a0cb8279430421",
+  "association_inventory_sha256": "d489e4a0c148a3a14d8cb1b634073dc931b03efaaa905544edc8cfb3ea5022ee",
+  "association_audit_sha256": "85b7976841f143837afc7ece8dd34baf2bccc0dd5b53410a0c9dd3f811c12ccc",
+  "frozen_model_math_sha256": "339fe7c966f20687ba59220f73bb137c814174a4c9bfb49a17e8ef59a25e9ffe",
+  "producer_sha256": "028ceac002e336347a6562ee65a5202419e00714becd337175d2f5e42dfbc8e6",
+  "auditor_sha256": "09b2ec9faa22c7fc54b297666c3a0afa1a84835644b5c3e11cdd44d4ab08e13c",
+  "no_new_RNA_download": true,
+  "no_canonical_or_original_inputs_changed": true,
+  "extraction_inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4"
+}
