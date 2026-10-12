@@ -566,3 +566,8 @@ v3 producer09:53:24—09:53:52、audit09:53:52—09:54:25 UTC均exit0，2766170�
 ## 2026-10-12T18:15:11.963799+08:00 /UTC 2026-10-12T10:15:11.963799+00:00 全LR与TF候选设计真实运行
 
 冻结2ad5254649dc409c8b6f84cda0b97a0ae25db5a5已10:11:23普通push/10:11:29独立HTTPS核验。10:12:03.293724 UTC启动driver62874/child62895，10:13:28取证两个PID在，日志到MAJ081_M01；执行的本地监控时间已标为历史取证，不当现在完整状态。来源RNA/TF/先验全家族与调整设计预检进行中，亚型PC敏感性部分不可估计；审计未启动，尚无新p/发现轴。独立任务manifest，不改原v17 primary registry或权威身份。[检查点](../../../inventories/analysis/2026-10-12/major_LR_TF_design_preflight_v1/running_checkpoint_v1.json)。
+
+
+## 2026-10-12T18:18:28.399338+08:00 /UTC 2026-10-12T10:18:28.399338+00:00 同一自动候选设计任务已至MAJ238
+
+10:17:25.341836 UTC真实同driver62874/child62895均存活，生产日志到MAJ238_M01；尚未生成终态inventory或启动独立审计。本次未重启、删协变量、改候选范围或生成关联p。08f272de7d392848df88c4ca47a01f2b2fb14107已10:15:22push/10:15:28核验。[新检查点](../../../inventories/analysis/2026-10-12/major_LR_TF_design_preflight_v1/running_checkpoint_v2.json)。下一继续同句柄验收完整家族和设计，再冻结小分析块的响应关联推断；CR2/Satterthwaite和保留设计的块重采样需先校准，不能直接用一般CR1小样本p当验证。

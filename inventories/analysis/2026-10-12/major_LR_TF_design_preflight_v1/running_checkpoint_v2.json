@@ -1,0 +1,21 @@
+{
+  "observed_UTC": "2026-10-12T10:17:25.341836+00:00",
+  "phases": {
+    "production": {
+      "status": "RUNNING",
+      "phase": "production",
+      "started_UTC": "2026-10-12T10:12:03.293724+00:00",
+      "driver_pid": 62874,
+      "child_pid": 62895,
+      "process_present": {
+        "driver_pid": true,
+        "child_pid": true
+      }
+    },
+    "audit": {
+      "status": "NOT_STARTED"
+    }
+  },
+  "last_logged_context_observed": "MAJ238_M01",
+  "independent_audit_pending": true
+}
