@@ -1,0 +1,266 @@
+[
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE116256",
+    "LR_units": 510,
+    "inference_estimated": 431,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE131907",
+    "LR_units": 233,
+    "inference_estimated": 174,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE148071",
+    "LR_units": 1872,
+    "inference_estimated": 1531,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE161529",
+    "LR_units": 7350,
+    "inference_estimated": 5596,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE176031",
+    "LR_units": 633,
+    "inference_estimated": 584,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE178341",
+    "LR_units": 21946,
+    "inference_estimated": 18816,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE179994",
+    "LR_units": 773,
+    "inference_estimated": 586,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE182109",
+    "LR_units": 2015,
+    "inference_estimated": 1399,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE183904",
+    "LR_units": 16416,
+    "inference_estimated": 12280,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE270680",
+    "LR_units": 4506,
+    "inference_estimated": 2944,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "abundance_complexity",
+    "gse_id": "GSE274229",
+    "LR_units": 2877,
+    "inference_estimated": 1667,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE116256",
+    "LR_units": 510,
+    "inference_estimated": 431,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE131907",
+    "LR_units": 233,
+    "inference_estimated": 174,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE148071",
+    "LR_units": 1872,
+    "inference_estimated": 1531,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE161529",
+    "LR_units": 7350,
+    "inference_estimated": 5596,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE176031",
+    "LR_units": 633,
+    "inference_estimated": 584,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE178341",
+    "LR_units": 21946,
+    "inference_estimated": 18816,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE179994",
+    "LR_units": 773,
+    "inference_estimated": 586,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE182109",
+    "LR_units": 2015,
+    "inference_estimated": 1399,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE183904",
+    "LR_units": 16416,
+    "inference_estimated": 12280,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE270680",
+    "LR_units": 4506,
+    "inference_estimated": 2944,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "full_gene_sensitivity",
+    "gse_id": "GSE274229",
+    "LR_units": 2877,
+    "inference_estimated": 1667,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE116256",
+    "LR_units": 510,
+    "inference_estimated": 422,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE131907",
+    "LR_units": 233,
+    "inference_estimated": 154,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE148071",
+    "LR_units": 1872,
+    "inference_estimated": 1412,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE161529",
+    "LR_units": 7350,
+    "inference_estimated": 2287,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE176031",
+    "LR_units": 633,
+    "inference_estimated": 588,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE178341",
+    "LR_units": 21946,
+    "inference_estimated": 14338,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE179994",
+    "LR_units": 773,
+    "inference_estimated": 429,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE182109",
+    "LR_units": 2015,
+    "inference_estimated": 1518,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE183904",
+    "LR_units": 16416,
+    "inference_estimated": 9185,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE270680",
+    "LR_units": 4506,
+    "inference_estimated": 1622,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  },
+  {
+    "variant": "subtype_mixture",
+    "gse_id": "GSE274229",
+    "LR_units": 2877,
+    "inference_estimated": 382,
+    "BH05_exploratory": 0,
+    "BY05_exploratory": 0
+  }
+]

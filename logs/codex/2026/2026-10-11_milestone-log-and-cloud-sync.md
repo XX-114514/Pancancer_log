@@ -596,3 +596,10 @@ CRAN clubSandwich0.7.0原包官方MD5通过，381023bytes；只在本任务R_lib
 ## 2026-10-12T18:50:25.889128+08:00 /UTC 2026-10-12T10:50:25.889128+00:00 真CR2参考通过 不利校准保留 全范围真实筛查冻结
 
 6合成公式全与genuine clubSandwich0.7.0比对PASS，最大diff1e-11；30×5000零假设中singleton暴露相关异方差7.42%偏宽松，所有行保留。将真实CR2 p/BH/BY限制为探索排序，下一块复核而非机制晋升。全59131 LR单位×3模型=177393冻结，原全TF与nuisance span保留，effective df4，失败内p1/公开NA。真实Y关联尚未计算。合成wrapper末尾literal newline观察格式已识别，科学输出正确，不重跑；下一取证另建。[校准](../../../inventories/analysis/2026-10-12/CR2_calibration_v1/RESULTS.md)，[真实run](../../../runs/20261012_major_LR_receiver_TF_screen_v1.md)。
+
+
+## 2026-10-12T19:34:46.124932+08:00 /UTC 2026-10-12T11:34:46.124932+00:00 全范围真实生产BH0 保留负结果并校准相关TF复核
+
+真实producer10:51:10—11:04:16 UTC exit0，177393全部LR模型；主46008可推断，8916 df不足/4207高影响，主/亚型/全基因BH/BY均0。主TF中位88/effective df6.55，min联合p3.79e-5/minq.987；不是无通讯证明。数值audit71590自11:04:16继续，同句柄取证待；原调整项不删。下一保留全2023主名义记录/59131分母的相关TF联合wild方案，先6合成×5场景×500draw/499bootstrap及全显式refit校准，未执行真实复核。[生产结果待审](../../../inventories/analysis/2026-10-12/major_LR_receiver_TF_screen_v1/PENDING_RESULTS.md)，[校准合同](../../../runs/20261012_wild_TF_max_calibration_v1.md)。
+
+取证纠正：11:13:12实际原CR2 execution JSON直接解析成功，末尾hex 5f636f6465223a20300a7d0a为正常换行；之前仅据本机字符串转义宣称格式错误是误判，撤回，不重跑科学代码。原错误判断保留并以实际字节证明纠正。联合p截断后不能精确反推组件minp计数，诊断已撤回此字段，主β/p/q未变。

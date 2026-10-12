@@ -1,0 +1,82 @@
+{
+  "observed_UTC": "2026-10-12T11:12:52.321422+00:00",
+  "producer_results_only_independent_audit_pending": true,
+  "summary": [
+    {
+      "variant": "abundance_complexity",
+      "all_cases": 59131,
+      "estimated": 46008,
+      "statuses": {
+        "inference_estimable": 46008,
+        "effective_df_insufficient": 8916,
+        "design_high_leverage": 4207
+      },
+      "min_joint_p": 3.794938184283837e-05,
+      "min_BH_q": 0.9869542839386792,
+      "median_TFs": 88.0,
+      "TFs_quantiles": {
+        "0.1": 16.0,
+        "0.5": 88.0,
+        "0.9": 189.0
+      },
+      "effective_df_quantiles": {
+        "0.1": 4.612092622325867,
+        "0.5": 6.547939843264477,
+        "0.9": 10.8837960263015
+      },
+      "nominal_LR_p05": 2023,
+      "minimum_component_p001_count_needs_component_readback": 3153
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "all_cases": 59131,
+      "estimated": 46008,
+      "statuses": {
+        "inference_estimable": 46008,
+        "effective_df_insufficient": 8916,
+        "design_high_leverage": 4207
+      },
+      "min_joint_p": 3.546706527352892e-05,
+      "min_BH_q": 0.6766413041727452,
+      "median_TFs": 88.0,
+      "TFs_quantiles": {
+        "0.1": 16.0,
+        "0.5": 88.0,
+        "0.9": 189.0
+      },
+      "effective_df_quantiles": {
+        "0.1": 4.612092622325867,
+        "0.5": 6.547939843264477,
+        "0.9": 10.8837960263015
+      },
+      "nominal_LR_p05": 2122,
+      "minimum_component_p001_count_needs_component_readback": 3349
+    },
+    {
+      "variant": "subtype_mixture",
+      "all_cases": 59131,
+      "estimated": 32337,
+      "statuses": {
+        "inference_estimable": 32337,
+        "design_high_leverage": 20740,
+        "effective_df_insufficient": 6054
+      },
+      "min_joint_p": 2.9996743155125297e-05,
+      "min_BH_q": 1.0,
+      "median_TFs": 85.0,
+      "TFs_quantiles": {
+        "0.1": 16.0,
+        "0.5": 85.0,
+        "0.9": 189.0
+      },
+      "effective_df_quantiles": {
+        "0.1": 4.499970140208618,
+        "0.5": 6.248571002246293,
+        "0.9": 10.53304767721828
+      },
+      "nominal_LR_p05": 1116,
+      "minimum_component_p001_count_needs_component_readback": 1824
+    }
+  ],
+  "diagnostic_correction": "joint p clipped at1 cannot reconstruct exact minimum component p by division; such reconstructed counts withdrawn before public export. LR joint p/q/df summaries unchanged."
+}

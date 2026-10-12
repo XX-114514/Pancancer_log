@@ -1,0 +1,17 @@
+{
+  "status": "TERMINAL_SUCCESS",
+  "started_UTC": "2026-10-12T10:39:25.552075+00:00",
+  "driver_pid": 292659,
+  "child_pid": 292662,
+  "finished_UTC": "2026-10-12T10:39:26.993502+00:00",
+  "exit_code": 0,
+  "observed_UTC": "2026-10-12T11:13:12.914948+00:00",
+  "original_execution_sha256": "06baf58e145e9e436c49c0d420a7f791c842c75f9bba31b5df93216747a425ab",
+  "original_execution_parsed_without_modification": true,
+  "raw_tail_hex": "5f636f6465223a20300a7d0a",
+  "prior_escape_diagnosis_retracted": true,
+  "process_present": {
+    "driver_pid": false,
+    "child_pid": false
+  }
+}

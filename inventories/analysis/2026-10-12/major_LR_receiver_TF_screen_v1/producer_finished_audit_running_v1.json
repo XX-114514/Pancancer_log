@@ -1,0 +1,29 @@
+{
+  "observed_UTC": "2026-10-12T11:26:12.396233+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T10:51:10.492537+00:00",
+      "driver_pid": 386716,
+      "child_pid": 386722,
+      "finished_UTC": "2026-10-12T11:04:16.465658+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": true,
+        "child_pid": false
+      }
+    },
+    "audit": {
+      "status": "RUNNING",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T11:04:16.466717+00:00",
+      "driver_pid": 386716,
+      "child_pid": 71590,
+      "process_present": {
+        "driver_pid": true,
+        "child_pid": true
+      }
+    }
+  }
+}

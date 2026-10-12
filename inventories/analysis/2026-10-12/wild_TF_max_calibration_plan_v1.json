@@ -1,0 +1,23 @@
+{
+  "created_UTC": "2026-10-12T11:30:33.547990+00:00",
+  "status": "PREDECLARED_NOT_STARTED",
+  "producer_sha256": "4c86ff4669642c12488e1fdb9a7d65e67e8d76963fd8397ecb01f4e5df3f8cbb",
+  "wild_core_sha256": "8908b021330de0af591fc29ecf4debdbd3f40a2bae1efec2064cb913d064e450",
+  "CR2_core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "seed": 2026101202,
+  "null_draws": 500,
+  "bootstrap_draws": 499,
+  "joint_TFs": 10,
+  "synthetic_inputs": "same6 frozen synthetic designs, no human expression",
+  "null_scenarios": [
+    "iid",
+    "cluster rho.7",
+    "x-related cluster heteroskedasticity",
+    "cluster t5",
+    "10 correlated TFs under x-related heteroskedasticity"
+  ],
+  "formula_audit": "64 independent full X refits eachdesign, direct block CR2 residual sum, no wild producer import in slow formula",
+  "purpose": "calibrate covariance-aware joint max-t before applying to all nominal LR screen candidates; not alter endpoints or delete controls",
+  "future_selection_proposed": "all main LR union p<.05, complete59131 family retained, unprocessed p1, confirmation uses20000MC or all sign pairsG<=14; outcome-based screening is not independent validation",
+  "calibration_limit": "500 draws give coarse binomial intervals; exact weight enumeration is not exact finite-sample inference; unknown patient repeats/source/sorting remain"
+}
