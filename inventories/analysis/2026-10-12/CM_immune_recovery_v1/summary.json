@@ -1,0 +1,40 @@
+{
+  "status": "COMPLETE_DIAGNOSTIC_INPUT_PARITY_AND_SELECTED_NUMERIC_CHECKS",
+  "started_UTC": "2026-10-12T14:49:45.662999+00:00",
+  "finished_UTC": "2026-10-12T14:49:52.003155+00:00",
+  "sources": [
+    "GSE115978",
+    "GSE127465",
+    "GSE179994",
+    "GSE274229"
+  ],
+  "libraries": 131,
+  "cohorts": 6,
+  "CM_tests": 54,
+  "coverage_pass": 2,
+  "coherence_estimated": 0,
+  "internal_covariance_supported": 0,
+  "coherence_status_counts": {
+    "insufficient_capture": 52,
+    "too_few_variable_crossmajor_edges": 2
+  },
+  "frequency_reconstruction_max_difference": 5.551115123125783e-16,
+  "projection_numeric_failures": 2,
+  "input_sha256": {
+    "meta": "9263398c23f8ae7e9623a8c57e2b20ae46ea1b558266fcd5281135779dff2771",
+    "counts": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+    "catalog": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+    "W": "81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29",
+    "H": "5a79054a14ef885fac12bea7611ca63ea754a4d36daca231d3e8ebc3044fac07",
+    "F": "08bf712e8f4e4938b54f5e14f4c68366443aed2ee23a4b1c95aa0dc6e99354eb",
+    "edges": "27a93e28a65809667ddb732d312e98eeb4c3b9156831f08e03279ff0068763a1",
+    "provenance": "e7fe741602219561ce1cae496264e819d3e8e6fb0b8de1ba955de628a2ae0ead"
+  },
+  "plan_sha256": "c44c40e6b107a927c595947a40c85e3c4f1d26fb67afede3366b4cb2798c2eec",
+  "code_sha256": "24f89617fb0fa5eaffb3183943d6c525826e62e2f7407d246969fda921ae4403",
+  "independent_biological_validation": false,
+  "all_coherence_statistics_independent_replay": false,
+  "canonical_changed": false,
+  "formal_states": false,
+  "axis_validation_complete": false
+}

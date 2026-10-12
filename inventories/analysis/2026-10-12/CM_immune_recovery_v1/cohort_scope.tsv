@@ -1,0 +1,7 @@
+cohort	gse_id	cancer	material	phase	libraries	blocks	reviewed_patient_libraries	cells	discovery_overlap	whole_TME_eligible
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	GSE115978	Melanoma	primary_or_unspecified_tumor	not_reviewed	23	23	0	6042	True	True
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	GSE127465	Non-small cell lung cancer	primary_or_unspecified_tumor	not_reviewed	18	18	0	21286	True	True
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	GSE179994	Lung cancer	primary_or_unspecified_tumor	on_treatment	14	11	14	58214	True	False
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	GSE179994	Lung cancer	primary_or_unspecified_tumor	pre_treatment	33	33	33	86053	True	False
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	GSE274229	Prostate cancer	metastatic_tumor	not_reviewed	30	30	0	76782	True	True
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	GSE274229	Prostate cancer	primary_or_unspecified_tumor	not_reviewed	13	13	0	78636	True	True

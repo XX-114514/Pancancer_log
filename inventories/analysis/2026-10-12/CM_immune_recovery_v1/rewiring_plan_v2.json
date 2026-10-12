@@ -1,0 +1,24 @@
+{
+  "schema": "fixed_CM_membership_source_rewiring_sensitivity_v2",
+  "status": "PREDECLARED_AFTER_V1_CAPTURE_DIAGNOSTIC_BEFORE_V2_COVARIANCE",
+  "reason": "V1 showed52/54 capture failures and2 with no eligible old crossmajor edges. Determine whether missing coverage, constant within-major denominators and context-specific rewiring explain testability; do not replace v1 or seek one favourable LR.",
+  "sources": [
+    "GSE115978",
+    "GSE127465",
+    "GSE179994",
+    "GSE274229"
+  ],
+  "scope": "All same6 reviewed strata and9 frozen CM member sets, two views (whole actual core / immune-only backbone), two denominator semantics (legacy majors / parent analysis groups), two node presence thresholds (>=1 / >=20 mean cells in at least50%blocks). 432 configured diagnostic records, not432 independent modules.",
+  "parent_groups": "B retained; Macrophage/Monocyte/Myeloid/DC/Neutrophil/Mast pooled only for analysis denominator; T/TNK/unspecified lymphoid pooled only for analysis denominator. Other majors unchanged. These are denominator sensitivities, not new cell identity assignments or altered W.",
+  "edges": "All varying cross-denominator core-member pairs, re-estimated in each fixed source/context; no requirement to repeat original edges. Require>=10complete inherited blocks, >=2unambiguous compartments and>=3pairs. Do not select only positive edges. Endpoint presence threshold must hold in at least10blocks as well as50percent.",
+  "whole_module_claim": "Immune-only or partially observed member subsets are backbone/rewiring diagnostics and cannot establish complete original module recurrence. Parent-denominator analysis is not projection of oldW to a new normalization.",
+  "inference": "Mean Spearman rho,20000 whole-denominator-vector permutations,2000blockbootstrap>=1800valid forCI; preserve within-group closure/covariance. Diagnostic BH/BY across432 planned records, untestablep1/outputNA. Cache identical statistical questions and report unique count separately.",
+  "audit": "Input reconstruction/major denominators; direct scipy Spearman observed/first4 null draws for every unique estimated question; complete plus-onep and BH/BY cross-check. Does not independently validate donor identity or repeat original rawcell counts.",
+  "selection_limits": "Post-v1 method sensitivity on discovery-used sources; no independent validation, no canonical or formal state changes, no axis or clinical claim.",
+  "numeric_projection_followup": "Check all12 v1 normalization/cohort projection fits with independent bounded KL-deviance least_squares on same3 fixed libraries; preserve2 earlier SLSQP mismatches. No biological result changes.",
+  "created_UTC": "2026-10-12T15:01:36.377956+00:00",
+  "code_sha256": {
+    "cm_immune_rewiring_sensitivity_v2.py": "df9a597c1e8b5615f55ba0b622a9f2546687776bb5ae935db3a9ac2289a8fbba",
+    "audit_cm_recovery_KL_deviance_v2.py": "38840c992ee74a028b4a3633113504a1db391147620adb394be100e83809ee03"
+  }
+}

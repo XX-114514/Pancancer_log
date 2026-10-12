@@ -1,0 +1,13 @@
+cohort	normalization	rows	rank	condition	status	loss	iterations	max_KKT	fixture_pass
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	frozen_minmax	25	9	10.079532200636894	fixed_W_numeric_checked	87.82376978456574	2241	7.476406055795422e-09	True
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	cohort_minmax	25	9	10.079532200636894	fixed_W_numeric_checked	114.33166486792913	981	1.784804950250171e-05	True
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	frozen_minmax	30	9	5.710470171473555	fixed_W_numeric_checked	32.86892062677572	8421	2.77166622986158e-10	True
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	cohort_minmax	30	9	5.710470171473555	fixed_W_numeric_checked	88.45076222864843	11161	1.328600419695919e-11	True
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	frozen_minmax	12	9	54.194416476543964	fixed_W_numeric_checked	4.9744886032264475	8621	6.875144897833252e-10	True
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	cohort_minmax	12	9	54.194416476543964	fixed_W_numeric_checked	24.414038904907155	6681	1.9916697170985354e-05	True
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	frozen_minmax	13	9	54.17044302381993	fixed_W_numeric_checked	22.831321782478238	9341	1.993624788543258e-05	True
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	cohort_minmax	13	9	54.17044302381993	numeric_check_not_passed	38.25191585477359	3981	1.5031269479837564e-08	False
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	frozen_minmax	20	9	15.876376251272118	fixed_W_numeric_checked	28.568826461047315	20000	0.00031290796302615976	True
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	cohort_minmax	20	9	15.876376251272118	fixed_W_numeric_checked	51.23986603833419	2101	4.276496458691314e-09	True
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	frozen_minmax	44	9	3.4533401422036976	numeric_check_not_passed	24.10709519170282	841	5.686266476957162e-09	False
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	cohort_minmax	44	9	3.4533401422036976	fixed_W_numeric_checked	88.75557291521675	881	1.980549421637661e-05	True
