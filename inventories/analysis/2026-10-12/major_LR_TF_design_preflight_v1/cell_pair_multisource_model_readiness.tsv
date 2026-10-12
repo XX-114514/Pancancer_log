@@ -1,0 +1,103 @@
+source	target	unique_LR_TF_cases	RNA_TF_eligible_ge2GSE	RNA_TF_eligible_ge3GSE	primary_design_estimable_ge2GSE	primary_design_estimable_ge3GSE
+B cell	Endothelial cell	33841	21310	0	21152	0
+B cell	Epithelial cell	39051	26977	16772	26930	15755
+B cell	Hematopoietic cell	8529	0	0	0	0
+B cell	Lymphoid cell	16244	0	0	0	0
+B cell	Macrophage	26057	19362	12713	19226	11806
+B cell	Monocyte	13196	0	0	0	0
+B cell	Myeloid	17958	0	0	0	0
+B cell	T cell	22367	15478	11781	15413	11781
+B cell	T/NK lymphoid	18257	11867	7360	11683	7360
+Endothelial cell	B cell	19387	11838	0	11650	0
+Endothelial cell	Epithelial cell	74460	60784	44446	59829	44446
+Endothelial cell	Fibroblast	83785	36658	0	35851	0
+Endothelial cell	Macrophage	43103	37818	24707	37626	24401
+Endothelial cell	Monocyte	22904	0	0	0	0
+Endothelial cell	Mural cell	59540	0	0	0	0
+Endothelial cell	Myeloid	22898	0	0	0	0
+Endothelial cell	T cell	32281	25662	18534	25087	17890
+Endothelial cell	T/NK lymphoid	25627	14355	0	14176	0
+Epithelial cell	B cell	17724	11437	5156	11385	4980
+Epithelial cell	Endothelial cell	86573	55966	41805	53768	41167
+Epithelial cell	Fibroblast	86449	47170	26104	38884	17365
+Epithelial cell	Macrophage	49396	37617	30152	35673	28634
+Epithelial cell	Mast cell	17543	0	0	0	0
+Epithelial cell	Monocyte	19142	0	0	0	0
+Epithelial cell	Mural cell	53420	22446	0	20230	0
+Epithelial cell	Myeloid	24527	0	0	0	0
+Epithelial cell	T cell	32514	23932	17518	23181	17134
+Epithelial cell	T/NK lymphoid	21971	11057	0	10347	0
+Fibroblast	Endothelial cell	81444	48524	0	48213	0
+Fibroblast	Epithelial cell	83872	67273	36839	57155	28424
+Fibroblast	Lymphoid cell	28842	0	0	0	0
+Fibroblast	Macrophage	50380	41171	27906	37973	21243
+Fibroblast	Mural cell	32075	0	0	0	0
+Fibroblast	T cell	37534	31085	24420	14920	600
+Fibroblast	T/NK lymphoid	28939	0	0	0	0
+Glial cell	Macrophage	47063	0	0	0	0
+Glial cell	T cell	28207	0	0	0	0
+Hematopoietic cell	B cell	6677	0	0	0	0
+Hematopoietic cell	T cell	7108	0	0	0	0
+Lymphoid cell	B cell	11516	0	0	0	0
+Lymphoid cell	Fibroblast	21608	0	0	0	0
+Lymphoid cell	T cell	13650	10309	0	8521	0
+Lymphoid cell	T/NK lymphoid	12539	8955	0	8771	0
+Macrophage	B cell	17162	12020	6203	11238	6156
+Macrophage	Endothelial cell	52013	41323	27367	38727	26169
+Macrophage	Epithelial cell	60093	48404	38565	45881	33627
+Macrophage	Fibroblast	71366	43924	26193	35989	12920
+Macrophage	Glial cell	51402	0	0	0	0
+Macrophage	Mast cell	18907	0	0	0	0
+Macrophage	Monocyte	22562	0	0	0	0
+Macrophage	Mural cell	22540	0	0	0	0
+Macrophage	Myeloid	26903	0	0	0	0
+Macrophage	T cell	28600	23967	20764	22108	18815
+Macrophage	T/NK lymphoid	20953	11392	0	11392	0
+Mast cell	Epithelial cell	27646	0	0	0	0
+Mast cell	Macrophage	20969	0	0	0	0
+Mast cell	T cell	15726	0	0	0	0
+Mast cell	T/NK lymphoid	13967	0	0	0	0
+Monocyte	B cell	8448	0	0	0	0
+Monocyte	Endothelial cell	27225	0	0	0	0
+Monocyte	Epithelial cell	28980	0	0	0	0
+Monocyte	Macrophage	25025	0	0	0	0
+Monocyte	Myeloid	21887	0	0	0	0
+Monocyte	T cell	14883	0	0	0	0
+Monocyte	T/NK lymphoid	9521	0	0	0	0
+Mural cell	Endothelial cell	70912	0	0	0	0
+Mural cell	Epithelial cell	65883	36720	0	31439	0
+Mural cell	Fibroblast	38504	0	0	0	0
+Mural cell	Macrophage	28457	0	0	0	0
+Mural cell	T cell	29373	0	0	0	0
+Mural cell	T/NK lymphoid	27212	0	0	0	0
+Myeloid	B cell	10944	0	0	0	0
+Myeloid	Endothelial cell	32140	0	0	0	0
+Myeloid	Epithelial cell	36973	0	0	0	0
+Myeloid	Macrophage	29310	0	0	0	0
+Myeloid	Monocyte	21032	0	0	0	0
+Myeloid	T cell	18590	0	0	0	0
+Myeloid	T/NK lymphoid	9645	0	0	0	0
+T cell	B cell	16794	9725	5840	9725	5840
+T cell	Endothelial cell	38799	22507	15582	21348	15582
+T cell	Epithelial cell	40481	26870	17769	25766	17769
+T cell	Fibroblast	45668	28021	19634	14283	1179
+T cell	Glial cell	28934	0	0	0	0
+T cell	Hematopoietic cell	8548	0	0	0	0
+T cell	Lymphoid cell	13588	7971	0	5534	0
+T cell	Macrophage	29092	22980	17436	20803	16851
+T cell	Mast cell	11743	0	0	0	0
+T cell	Monocyte	14724	0	0	0	0
+T cell	Mural cell	27956	0	0	0	0
+T cell	Myeloid	17645	0	0	0	0
+T cell	T/NK lymphoid	18310	13066	10516	13066	10516
+T/NK lymphoid	B cell	15989	7790	4194	7790	4194
+T/NK lymphoid	Endothelial cell	27650	13434	0	13434	0
+T/NK lymphoid	Epithelial cell	27268	16346	0	16346	0
+T/NK lymphoid	Fibroblast	30739	0	0	0	0
+T/NK lymphoid	Lymphoid cell	12826	7348	0	7348	0
+T/NK lymphoid	Macrophage	23016	13653	0	13653	0
+T/NK lymphoid	Mast cell	11919	0	0	0	0
+T/NK lymphoid	Monocyte	10969	0	0	0	0
+T/NK lymphoid	Mural cell	29433	0	0	0	0
+T/NK lymphoid	Myeloid	11996	0	0	0	0
+T/NK lymphoid	T cell	17746	13619	11118	13619	11118
