@@ -1,5 +1,11 @@
 # 当前项目状态
 
+## 2026-10-12T12:18:34+08:00 最终Zarr组装已启动，等待全量前处理审计
+
+[启动记录](inventories/runtime/2026-10-12/combined_zarr_assembly_public_start_v1.json)核实原卷新run/冻结代码/PID；既有前处理[528/792文库、0失败、2236179细胞](inventories/runtime/2026-10-12/AMBIENT_PROGRESS_v3_checkpoint12.md)，6来源完成、3来源运行。全9源独立审计通过后执行流式合并及全行验收；目前仍待，不能把启动当作最终完成。正式来源AC和用途限制继续保留，新下载暂停。
+
+
+
 ## 2026-10-12T12:16:47.369510+08:00 统一Zarr容量可满足，组装代码准备
 
 真实498文库压缩预检显示最终矩阵及写入余量约75.29GB，原卷有效配额593.64GB，可保留500GB空闲。[方法](methods/combined-public-preprocessed-zarr-v1.md)采用原计数、稀疏校正差值和重算X，保留基因测量掩码与来源限制。合成读回已PASS；真实9源全量审计及合并尚待，最终写原Project_v5，不更新旧权威库。[run](runs/20261012_public_preprocessed_zarr_v1.md)。
