@@ -1,0 +1,27 @@
+{
+  "status": "PASS_ALL6_SYNTHETIC_FIXTURES_AGAINST_GENUINE_CLUBSANDWICH070",
+  "observed_UTC": "2026-10-12T10:42:53.256529+00:00",
+  "absolute_max_differences": {
+    "beta": 1.1102230246251565e-15,
+    "se": 9.992007221626409e-16,
+    "df": 3.552713678800501e-14,
+    "p": 2.831068712794149e-15,
+    "lower": 9.994699512461125e-12,
+    "upper": 9.994227667675659e-12
+  },
+  "reference_versions": [
+    "R 4.5.2",
+    "clubSandwich 0.7.0",
+    "sandwich 3.1.1"
+  ],
+  "R_script_sha256": "6ad3a068043a86dcabe3e36e5cf3285c2da4fd5047a11b64ab6a8a18a0f49590",
+  "package": {
+    "url": "https://cran.r-project.org/src/contrib/clubSandwich_0.7.0.tar.gz",
+    "sha256": "f3cd9cd5840022b8d1354dce3e7e4a820edcd47411b9f95bdd200c4e040032ed",
+    "MD5_verified": true,
+    "bytes": 381023,
+    "version": "0.7.0"
+  },
+  "real_expression_p_computed": false,
+  "calibration_limit": "singletons30 x-related heteroskedasticity showed .0742 rejection at .05; CR2 actual-RNA p/q will be exploratory ranking pending block resampling and source checks"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "SYNTHETIC_PYTHON_CALIBRATION_COMPLETE_R_REFERENCE_PENDING",
+  "started_UTC": "2026-10-12T10:39:26.319122+00:00",
+  "finished_UTC": "2026-10-12T10:39:26.888836+00:00",
+  "core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "calibration_sha256": "2d2dedf1df788fadc8c4ac06f89588a84c0bbcafa79504b01fe68abf0753c793",
+  "plan_sha256": "e562e7cd894e012a1d4e8c69b141c3326ff8d3885c1b54ced2b4c3a35648dd8e",
+  "seed": 2026101201,
+  "null_draws": 5000,
+  "joint_dimension": 10,
+  "synthetic_cases": 6,
+  "summary_rows": 30,
+  "real_expression_p_computed": false,
+  "formula_R_reference_pending": true,
+  "outputs": {
+    "synthetic_python_reference_results.tsv": "8b286127281cf4bf218100da4dd46ff2cb8409f754dfbb485533c83566fe6920",
+    "null_calibration_summary.tsv": "8b6fa241984880382f8ad7f76adfaf8416e0b3acdbe9ae1b65ab3a76bdaabb79",
+    "synthetic_fixtures/singleton30.tsv": "78e0149838fe312f1ede3337efb7aa0f6092c5b2e14cb8e2b3809a9a57668d3a",
+    "synthetic_fixtures/paired12.tsv": "e75e95b2fb21d159e196780878a9758dd514f99761a2e5372f3d4803a292af60",
+    "synthetic_fixtures/unequal10.tsv": "a704d0424cd96c980cb7273eadeb56881f1890b3543477072abed027537b5063",
+    "synthetic_fixtures/paired20.tsv": "763dc895ec7826fdb81f5a2eb98e257ad9f311ac1836cbb700bd1914116ca6c0",
+    "synthetic_fixtures/unequal20.tsv": "08c7f1f43ec3fb0744350aee609c5719682f8dfc00219f0117752da0e65e6ec6",
+    "synthetic_fixtures/many_controls12.tsv": "cdae8c5fdd441f2bb8c05956f87a0934301a94432505282d4a56ece8ae99b899"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "created_UTC": "2026-10-12T10:45:23.392541+00:00",
+  "status": "PREDECLARED_NOT_STARTED",
+  "producer_sha256": "b213f52d78a8f816d8d293a22a01bf1aae958c859b2556c14adab404c564d7af",
+  "core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "design_inventory_sha256": "4cfc0511aecf1782452146c1a0b0284f8b7ad7e9f50e03ab0bfa495399ab9ac5",
+  "design_audit_sha256": "4e919312d58957bcf2500ca325c102eb9ed52d0d714d65554a256016afd7145c",
+  "native_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "TF_inventory_sha256": "2dec9c11f08dde88a84bc951de2fd1ce949ce2354894a82e532af18a0ba6fe95",
+  "counts_sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+  "LR_resource_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "genuine_R_validation_sha256": "b2d392efbc2d1c06e2af7d324410c578b0ec220a55b8d3c727ea1e754b8f01d3",
+  "min_effective_df": 4,
+  "joint_family_per_variant": 59131,
+  "variants": [
+    "abundance_complexity",
+    "subtype_mixture",
+    "full_gene_sensitivity"
+  ],
+  "joint_test": "K * smallest component CR2/Satt two-sided p, clipped to1; all external-compatible TFs retained; no covariance inversion",
+  "multiplicity": "full59131 eachvariant BH exploratory; BY sensitivity, invalid internalp1/publicNA; no confirmed-FDR claim due approximation calibration",
+  "component_interval": "marginal95%, descriptive after lead-TF selection; not simultaneous/selection-adjusted",
+  "calibration_limit": "singleton30 x-related heteroskedasticity .0742 falsepositive at .05; genuineR agreement does not validate unknown real RNA error distribution",
+  "scientific_status": "automatic exploratory ranking; selected relationships require block-resampling confirmation and source consistency/independent validation",
+  "no_manual_endpoint_or_TF_selection": true,
+  "all_original_ID_CM_Zarr_unchanged": true,
+  "privacy": "private component vectors stay server; aggregated LR source/context effects allowed; no individual sample/clinical vectors exported",
+  "auditor_sha256": "b73f84b6c53cd544f4829755e2d9f99968019b4781600f301c02e216aa0bf4b2"
+}
