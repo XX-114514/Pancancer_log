@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL314432_CASES_FULL_SELECTED_RAW_LIANA_SCORES_NATIVE_MISSINGNESS_BLOCKS_AND_NNLS_KKT",
+  "started_UTC": "2026-10-12T04:57:35.238555+00:00",
+  "finished_UTC": "2026-10-12T04:59:08.017182+00:00",
+  "auditor_sha256": "2cb8469901ee622ec16f849d4dc52739fe4bcb650a2ddd0a994e60b1234bb3d8",
+  "producer_inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+  "unique_libraries": 332,
+  "raw_LIANA_rows_replayed": 6996788,
+  "observed_library_LR_records_replayed": 381170,
+  "private_score_values_including_missing_checked": 40321280,
+  "public_cases_replayed": 314432,
+  "group_activity_KKT_checks": 2180,
+  "primary_association_tests": false,
+  "independent_biological_validation": false
+}

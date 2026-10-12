@@ -437,3 +437,15 @@ v1 producer04:43:01.919705—04:43:09.659612 UTC exit1，driver289883/child28989
 读原audit源码及真实JSON schema：逐文库sidecar存在input_signature且与固定全局status列相同，原独立审计曾按exact roster/native genes/contract重构并确认签名。新v2[合同](../../../inventories/analysis/2026-10-12/CM_edge_LR_extraction_execution_plan_v2.json)检查原审阅flag、output SHA、全局status与逐库JSON签名及JSON SHA，另核父manifest和contract SHA；不弱化/伪造签名。producer/auditor都新版本、新v2输出，原4624/68/314432范围、指标、missing/计数门槛/NNLS不变，没有新关联或重算LIANA。语法通过；真实v2尚未派发。
 
 冻结dbbd807ae7afa514223a221a719f505352629995于04:41:54.776376 UTC普通push、04:41:58.818925 HTTPS核验。保留并发记录/研究日志；修复前后diff、隐私、仓库验证普通push后新派发。目标仍active。
+
+## 2026-10-12T13:20:43.440767+08:00 全原CM数据库提取真实成功（UTC 2026-10-12T05:20:43.440767+00:00观察）
+
+修复07b698056537c65d17af616d91a70b9344e87aa0于04:49:38.750475 UTC普通push/04:49:42.937493 HTTPS核验；v1真实终止证明后才派发fresh v2，旧文件/日志不删。producer04:52:14.680248—04:57:34.877336、audit04:57:34.882807—04:59:08.314816 UTC均exit0，driver379438/child379442及audit17914核实不存在/注册活跃空/0冲突。[终态](../../../inventories/analysis/2026-10-12/CM_edge_LR_extraction_v2/public_checkpoint.json)。不是观察timeout重启。
+
+332库原6996788行及381170目标观测、40321280数组值含missing、314432完整cases/native/患者块/资格和2180 NNLS KKT独立CSV重放PASS，覆盖5377/3118接口、598多GSE、595多当前癌种标签；这不是效应一致或598验证轴。CRC4131案例约77%和共享CM/技术情境不独立明确记录。覆盖full resource无rank/p预选，旧10%表达filter下的缺失不填零。
+
+COL1A1-DDR1新明确Fibro17→Epi52在乳腺34/36、CRC21/21（20块）、胃癌20/21（20块）可测；CCL5-CCR1 CD8_9→Mac18在CRC36/36、42/42（29/38块）、GBM29/29（13块）。只是预先讨论分子轴的全库举例，不改全5377范围、没有beta/p。后续完整设计和患者/标注/绑定审阅；原不同端点不据此宣称复现。
+
+云端公开314432计数/keys/缺失flags完整投影，统一去4个表达/score均值避免公开表达资料；保留原源SHA/投影SHA及全部audit，私有arrays/患者和库keys/原始scores不出server。source/count不作为数值亲自审阅的cellstate/机制。原schema版本名v1表示固定format，新producer/auditor与运行目录v2为签名修复。
+
+更新run/current状态/task/daily/衍生counts及SHA，读现有规范和相关前置，保留并发来源预处理记录和未跟踪研究日志；HEAD快照只stage本任务段，轻量/diff/隐私检查普通push独立SHA。科学goal active，输入验收不是通讯轴验证。下一全5377+原CM映射设计/rank/真实块再冻结检验，主严格共线与曝光本身不变的情形分开解释。

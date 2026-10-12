@@ -11,3 +11,7 @@
 ## 2026-10-12T12:47:00.606453+08:00 v1失败与v2修复
 
 v1真实04:43:01—04:43:09 UTC exit1，旧审计摘要不存在input_signature字符串字段，读LR分数前失败，audit未启动；旧目录/代码/log保留，两个PID不存在。新[修复合同](../inventories/analysis/2026-10-12/CM_edge_LR_extraction_execution_plan_v2.json)/v2独立输出，以已审flag、逐库JSON签名/SHA和父合同验收；生物范围/score/门槛不变，v2未运行。
+
+## 2026-10-12T13:20:43.440767+08:00 v2实际完整终态
+
+producer04:52:14—04:57:34、audit04:57:34—04:59:08 UTC均exit0；332库/7M原行/381170观测和全314432cases/40M值及2180KKT独立验收。[结果](../inventories/analysis/2026-10-12/CM_edge_LR_extraction_v2/RESULTS.md)。当前COMPLETE_AUDITED_FULL_LR_INPUT_NO_ASSOCIATION，private保留原分数/块，公开仅counts投影；原v1失败不改，新p尚未计算。

@@ -1,0 +1,11 @@
+{
+  "observed_UTC": "2026-10-12T05:20:43.440767+00:00",
+  "accepted_producer_inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+  "accepted_audit_sha256": "627965b2f849e0b5fe68f438b58949a3beded82d4a8a50b8b6a14962f870b3f7",
+  "locally_derived_coverage_summaries_not_effect_tests": true,
+  "outputs": {
+    "RESULTS.md": "732ee86d2f080dc431891fe75cc57c1c218171c79b09d48bc8acf59c544c4ad8",
+    "all3118_directional_LR_interface_coverage.tsv": "727199780e013285154973f7112a34b61cc99fa01e555b671f53e7de94b344f2",
+    "preexisting_axes_current_endpoint_coverage.tsv": "87bb99b5207e21b54f1a9bdf3cd4936ee7c3c23f8908556c7d699c089bd89bfb"
+  }
+}
