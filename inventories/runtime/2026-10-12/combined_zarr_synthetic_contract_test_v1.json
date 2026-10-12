@@ -1,0 +1,16 @@
+{
+  "schema": "combined_zarr_synthetic_contract_test_v1",
+  "all_checks_pass": true,
+  "synthetic_only": true,
+  "real_clinical_cells": 0,
+  "full_AnnData_read_pass": true,
+  "nullable_boolean_preserved": true,
+  "exact_duplicate_quarantined": true,
+  "neural_author_and_high_loss_guards_tested": true,
+  "outer_gene_mask_validated": true,
+  "actual_test_shape": [
+    107,
+    11
+  ],
+  "audit_n_cells": 107
+}

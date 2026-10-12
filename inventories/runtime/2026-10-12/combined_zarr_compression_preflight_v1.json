@@ -1,0 +1,75 @@
+{
+  "schema": "combined_zarr_actual_compression_preflight_v1",
+  "observed_utc": "2026-10-12T04:12:41.772764+00:00",
+  "n_sources_observed": 9,
+  "n_completed_libraries": 498,
+  "n_genes_union_observed": 72554,
+  "n_cells_observed": 2115465,
+  "projection_compressed_matrix_bytes": 46878345275,
+  "projection_plus_35pct_and_12GB": 75285766121,
+  "reserve_bytes": 500000000000,
+  "capacity": {
+    "physical_free_bytes": 4069389422592,
+    "effective_free_bytes": 593636925440,
+    "quota_used_bytes": 1605386330112,
+    "quota_limit_bytes": 2199023255552
+  },
+  "projected_fit": true,
+  "source_projections": {
+    "CXG_34f5307e_7b4d_4a48_b68f_2ba844c6414b": {
+      "n_completed_libraries": 16,
+      "n_raw_nonzero_completed": 236924085,
+      "input_full_nnz_upper_bound": 958663866,
+      "projected_compressed_bytes": 3097840709.3314915
+    },
+    "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": {
+      "n_completed_libraries": 59,
+      "n_raw_nonzero_completed": 1058531081,
+      "input_full_nnz_upper_bound": 1140030101,
+      "projected_compressed_bytes": 5502835435.632054
+    },
+    "CXG_67b6b9ac_b841_42ce_b2d4_ed2ec12327bd": {
+      "n_completed_libraries": 146,
+      "n_raw_nonzero_completed": 683754244,
+      "input_full_nnz_upper_bound": 1340304828,
+      "projected_compressed_bytes": 6127382598.272335
+    },
+    "CXG_843c1459_e852_429c_9339_17b5760e7716": {
+      "n_completed_libraries": 63,
+      "n_raw_nonzero_completed": 839628558,
+      "input_full_nnz_upper_bound": 913752158,
+      "projected_compressed_bytes": 3939873436.443463
+    },
+    "CXG_b252b015_b488_4d5c_b16e_968c13e48a2c": {
+      "n_completed_libraries": 115,
+      "n_raw_nonzero_completed": 796526646,
+      "input_full_nnz_upper_bound": 2168855390,
+      "projected_compressed_bytes": 18513570428.36694
+    },
+    "GSE256326": {
+      "n_completed_libraries": 9,
+      "n_raw_nonzero_completed": 46248586,
+      "input_full_nnz_upper_bound": 49169629,
+      "projected_compressed_bytes": 382087560.689305
+    },
+    "GSE286827": {
+      "n_completed_libraries": 57,
+      "n_raw_nonzero_completed": 730877351,
+      "input_full_nnz_upper_bound": 758864763,
+      "projected_compressed_bytes": 5246211173.990449
+    },
+    "GSE292046": {
+      "n_completed_libraries": 8,
+      "n_raw_nonzero_completed": 210093332,
+      "input_full_nnz_upper_bound": 220967517,
+      "projected_compressed_bytes": 1893197297.469553
+    },
+    "GSE294109": {
+      "n_completed_libraries": 25,
+      "n_raw_nonzero_completed": 256087133,
+      "input_full_nnz_upper_bound": 278324779,
+      "projected_compressed_bytes": 2175346635.0052543
+    }
+  },
+  "scope": "partial_real_shards_scaled_by_full_input_nonzero_upper_bound_not_final_actual_size"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "combined_zarr_synthetic_contract_test_v2",
+  "observed_utc": "2026-10-12T04:15:52.960200+00:00",
+  "all_checks_pass": true,
+  "synthetic_only": true,
+  "real_clinical_cells": 0,
+  "actual_test_shape": [
+    106,
+    11
+  ],
+  "full_AnnData_read_pass": true,
+  "nullable_boolean_preserved": "covered_v1",
+  "baseline_duplicate_quarantine_pass": true,
+  "new_duplicate_quarantine_pass": true,
+  "large_integer_ID_preserved": true,
+  "n_synthetic_duplicate_quarantined": 2,
+  "merge_code_sha256": "18d321eba141f7132144e14874ab4793dfaae55cdb446a567e2f4149ab0a81ab",
+  "audit_code_sha256": "12ec153ba3312fe549290f2828f689acfae538783b4de449a24eb8cf141cbb6d"
+}
