@@ -1,0 +1,71 @@
+{
+  "core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "design_inventory_sha256": "4cfc0511aecf1782452146c1a0b0284f8b7ad7e9f50e03ab0bfa495399ab9ac5",
+  "design_audit_sha256": "4e919312d58957bcf2500ca325c102eb9ed52d0d714d65554a256016afd7145c",
+  "native_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "TF_inventory_sha256": "2dec9c11f08dde88a84bc951de2fd1ce949ce2354894a82e532af18a0ba6fe95",
+  "counts_sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+  "created_UTC": "2026-10-12T12:58:26.971117+00:00",
+  "status": "FROZEN_BEFORE_NEW_POOL_NOT_INDEPENDENT_OF_PREVIOUS_ANALYSES",
+  "producer_sha256": "c46042b1a960018209ab71b21018e7e522ae495d5a74d85998d19a1097c8e29d",
+  "auditor_sha256": "625228390554a10d79cd3bd7c8c266a42dd7c82b811f5f4584e230845c6e2793",
+  "LR_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "contexts": [
+    "MAJ017_M01",
+    "MAJ059_M02",
+    "MAJ095_M01",
+    "MAJ157_M01",
+    "MAJ181_M01",
+    "MAJ225_M01",
+    "MAJ018_M01",
+    "MAJ060_M02",
+    "MAJ096_M01",
+    "MAJ158_M01",
+    "MAJ182_M01",
+    "MAJ226_M01"
+  ],
+  "direction_contexts": {
+    "Macrophage_to_T": [
+      "MAJ017_M01",
+      "MAJ059_M02",
+      "MAJ095_M01",
+      "MAJ157_M01",
+      "MAJ181_M01",
+      "MAJ225_M01"
+    ],
+    "T_to_Macrophage": [
+      "MAJ018_M01",
+      "MAJ060_M02",
+      "MAJ096_M01",
+      "MAJ158_M01",
+      "MAJ182_M01",
+      "MAJ226_M01"
+    ]
+  },
+  "min_df": 4,
+  "audit_input_cases": 24,
+  "family_per_variant": 9248,
+  "selection": "primary-tumor cross-cancer coverage, not prior effect p or q",
+  "question": "full-family diagnostic conditional on sender HSF1 program and receiver intrinsic ligand RNA",
+  "controls": "full separate context nuisance spans, abundance/counts/nonLR complexity/receptor; subtype PCs sensitivity; reviewed repeated patients kept clustered across CRC processing contexts",
+  "limitations": [
+    "same discovery data; not external validation",
+    "common slope exploratory; heterogeneous effects retained descriptively",
+    "TF gene universes differ across sources",
+    "CR2 approximate calibration; BH exploratory/BY sensitivity",
+    "marginal lead-TF interval is not selection-adjusted",
+    "existing cell labels are subtype/marker, not formal states",
+    "unknown sorting/repeated cases and sample fallback units remain",
+    "controls may condition on genuine biological mediator; attenuation does not prove technical artifact",
+    "sender HSF1 is one program and not comprehensive state adjustment",
+    "not an independent cohort; post-result exploratory sensitivity"
+  ],
+  "privacy": "all individual sample vectors and matrices remain on server; only aggregate outputs published",
+  "new_controls": [
+    "Sender signed HSF1 ULM, excluding all global LR genes, 62-66 measured targets across five sources",
+    "Receiver same ligand native meanlog; min component for complexes"
+  ],
+  "all_4624_LR_and_TFs_retained": true,
+  "not_selected_only_8_positive_records": true,
+  "state_labels_assigned": false
+}

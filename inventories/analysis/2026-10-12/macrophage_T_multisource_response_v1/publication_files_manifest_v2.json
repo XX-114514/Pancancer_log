@@ -1,0 +1,26 @@
+{
+  "note": "v1 review TSV checksum referred to local CRLF bytes; Git normalized that TSV to LF on initial commit. v2 checksums use normalized LF. Numeric results unchanged; v1 retained.",
+  "files": {
+    "input_context_coverage_v1.tsv": "fb7ce585302709509a5e5b6bc0a85c6a9bd2eeab12468d502179445a7ff0e28c",
+    "inventory_public_summary.json": "cee12001fde4c9091d5d2d8300a5d9217e2ff766988f39fa68e49f554cd85216",
+    "terminal_observation_v1.json": "32456b39b646d3a39c2b440b5b8330f7d76310d2ae8474a9fc75573f2b2fd8ec",
+    "all27744_pooled_LR_models.tsv.gz": "0d0580058b36c37236744aa9e96772fb919040575486fb54d20ee74356131ba5",
+    "all8_primary_BH_records.tsv": "64160e6ef1c9196bb339f954388e856284ba6701e003551cc1a1e86c77c7d800",
+    "running_checkpoint_v1.json": "f9d77b6b48f2bb4224f6066d44bb6df60979d7735735f9ed4205e99a2b6651de",
+    "top30_descriptive_direction_rank.tsv": "47b139af54c2a2beb7e7bdecddef80634385c5e3c4a0115b6aec1c02218e1f72",
+    "RESULTS.md": "1409f65a56073c437ad2138b96b82e314e0b5e8a350c8d4f137a5b5d8acb4530",
+    "all8_mechanistic_evidence_review_v1.tsv": "0aeeb8cac0ceb9318d929f28eec0dd12a4e49aa9f110e8fb0abac6336b5878dc",
+    "all8_primary_source_effects.tsv": "2e51cd98c366cdb23c797a0d1c45cbfb094f8e31fa561a8ffa554a942c187395",
+    "source_effect_forest_v2.pdf": "6bd2756a68b3372b122fc44b44a48afbba619078c7ed8ac8c038ab3a35b656fa",
+    "input_block_coverage_v1.json": "8c3123e4383da516709e5d5084cd39362b7d83389cce36f09cf1048db0f8d516",
+    "source_effect_forest_v1.pdf": "7b4aacce32068e1678329bd001cc30f67ee27f180656120b885b0a2bb504e468",
+    "source_effect_forest_v2.svg": "7ef8cee614ef31115583c2ac288cb40204e348bb758b6b7e4c1b386e76aff987",
+    "top30_LOSO_effects.tsv": "fc461767af100bf6bbb23a785a8256441307446d0e3bc26bb849fcb33691d373",
+    "independent_audit.json": "333fa86433da3dc31530cf40f248d1a0f69d4570943fc3e0facd4195cae95ea5",
+    "all8_primary_LOSO_effects.tsv": "61f1ce114ef227278cba72129714d749d43d2bf171f59e0dc3733630968ed885",
+    "all8_fixed_primary_TF_sensitivity.tsv": "9b7d3b3b2e5ccb33787ad62969d59bd83d61f5a8931f2bb204db62fc9a34e1ec",
+    "top30_source_effects.tsv": "35242c2fbaf7d006deba2135b7187dd56a4a04283e7b477b8269753135bca9ad",
+    "export_manifest.json": "a27faa60aa22590c11fd83d30319d46a367dea71a77afa870850ebb344518698",
+    "summary.tsv": "b53b21ac0bdeb7d2b4b8b252ad2504d46f57636aab335fa5141d4fbe6bb588ea"
+  }
+}
