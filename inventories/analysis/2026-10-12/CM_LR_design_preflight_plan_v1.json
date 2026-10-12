@@ -1,0 +1,42 @@
+{
+  "observed_UTC": "2026-10-12T05:28:37.866170+00:00",
+  "inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+  "audit_sha256": "627965b2f849e0b5fe68f438b58949a3beded82d4a8a50b8b6a14962f870b3f7",
+  "case_table_sha256": "888807b1a1f222f29f2a380dddfc142c4925ba9b92af1c36d702861141ab251b",
+  "summary_sha256": "63fd0fe41a712b04398c13ab5a39789490a2ec38439e36a9bbbe4961f7461f61",
+  "schema": "all5377_CM_LR_full_design_preflight_v1",
+  "predeclared_UTC": "2026-10-12T05:34:57.723231+00:00",
+  "code_sha256": {
+    "CM_LR_design_preflight_v1.py": "d5e62b1167766207071dddb5a5350cc8ced814c898d88337ae794144ecbb4f30",
+    "audit_CM_LR_design_preflight_v1.py": "52045687b7f44cfdb5f110bc35f98c33b78078e74c01f465994dc4daad6f5c62"
+  },
+  "scope": "all5377 coverage-eligible case records;13497 mapped CM cases;3diagnostic variants=40491records",
+  "variants": [
+    "endpoint_excluded_library_primary_design",
+    "original_H_library_control_design",
+    "endpoint_excluded_equal_library_block_mean_diagnostic_only"
+  ],
+  "required_columns": [
+    "intercept",
+    "CM_activity",
+    "source_within_major",
+    "target_within_major",
+    "log1p_source_cells",
+    "log1p_target_cells"
+  ],
+  "strict_gates": {
+    "rows": 20,
+    "blocks": 10,
+    "all6columns_identifiable": true,
+    "condition_less_than": 100000000.0,
+    "max_leverage": 0.95,
+    "constant_sd_threshold": 1e-12
+  },
+  "nuisance_span": "diagnose whether CM coefficient is unique given span of ALL required nuisance columns; no p/coefficients or relaxed primary acceptance",
+  "block_mean": "equal arithmetic mean within existing analysis_block and fixed context of raw activity/fractions/logcounts and log1p(expr_prod); no identity/block changes, sample fallback remains sample",
+  "audit": "all40491 rows separately reconstruct raw array alignment, QR ranks/projections/leverage, per-block means and final statuses; no producer import",
+  "new_coefficients": false,
+  "new_p_values": false,
+  "clinical_blocks_changed": false,
+  "required_covariates_removed": false
+}

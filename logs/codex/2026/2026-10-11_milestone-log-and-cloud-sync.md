@@ -449,3 +449,11 @@ COL1A1-DDR1新明确Fibro17→Epi52在乳腺34/36、CRC21/21（20块）、胃癌
 云端公开314432计数/keys/缺失flags完整投影，统一去4个表达/score均值避免公开表达资料；保留原源SHA/投影SHA及全部audit，私有arrays/患者和库keys/原始scores不出server。source/count不作为数值亲自审阅的cellstate/机制。原schema版本名v1表示固定format，新producer/auditor与运行目录v2为签名修复。
 
 更新run/current状态/task/daily/衍生counts及SHA，读现有规范和相关前置，保留并发来源预处理记录和未跟踪研究日志；HEAD快照只stage本任务段，轻量/diff/隐私检查普通push独立SHA。科学goal active，输入验收不是通讯轴验证。下一全5377+原CM映射设计/rank/真实块再冻结检验，主严格共线与曝光本身不变的情形分开解释。
+
+## 2026-10-12T13:34:57.723231+08:00 全CM/LR完整设计预检冻结（UTC 2026-10-12T05:34:57.723231+00:00）
+
+上一goal turn为progress：完整332文库/381170LR观测/314432cases与40M values独立验收，46670e71c88683d91a7452d3115d1659af9fc61a于05:25:49.450264 UTC普通push、05:25:53.760626 HTTPS核验。当前来源/文件SHA实测一致、CM active空、preflight新目录不存在；没有尚在运行的提取任务。已读当前status/task/daily/run/规范、输入合同与private数组格式。
+
+本轮全5377case×原CM对应13497模型，4297case有重复库/块。准备主去两端activity的完整6列，与原H对照、equal-library block mean额外诊断40491行；库不是独立患者，原分析块/身份不变。模型仍严格rank6/cond<1e8/leverage≤.95、20row/10block、不自动删协变量。另完整nuisance列span诊断曝光系数可唯一识别（即使其它控制常数/冗余），不估β、不救主设计、不基于p决定方法。数据结构可能导致恒为1的major内比例，需与CM本身無独立变化区分，而不是全部称为样本少。此为待核假设，实际结果未运行。
+
+[合同](../../../inventories/analysis/2026-10-12/CM_LR_design_preflight_plan_v1.json)，两脚本语法PASS，输入Hash锁定；独立auditor以原arrays重新排列并QR/投影/块均值验全部记录。兼顾所有9CM/源限定与多源记录，不只历史COL/CCL例子。保留旧failed/scientific产物、不下载或改canonical/annotation；当前主检验/敏感性/p/外部验证仍未执行。轻量/diff/隐私检查、HEAD快照定向stage日志、普通push核验后派发。目标active。
