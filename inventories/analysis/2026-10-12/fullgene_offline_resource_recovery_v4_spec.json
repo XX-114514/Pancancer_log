@@ -1,0 +1,36 @@
+{
+  "schema": "fullgene_offline_resource_recovery_v4",
+  "created_UTC": "2026-10-12T02:09:46.224732+00:00",
+  "parent_resource_status": "TERMINAL_FAILED_ARIA2_RESOURCE_FETCH",
+  "official_record": "10.5281/zenodo.7074291",
+  "files": [
+    {
+      "file": "lr_network_human_21122021.rds",
+      "bytes": 20724,
+      "official_md5": "md5:2a155f81e9ffffd5d5e709fe66bcc465",
+      "sha256": "47c971d2fbba4ecd0ba7485d1846a74054432a0d1a97ea3e6a79ae27d0da8094"
+    },
+    {
+      "file": "ligand_tf_matrix_nsga2r_final.rds",
+      "bytes": 29862142,
+      "official_md5": "md5:d8951b123e4f7ec6bd5fb50069050972",
+      "sha256": "bb130724daf2319a50d9da326f17ec4ddc65bd35a674eb45d132f81284d01845"
+    },
+    {
+      "file": "ligand_target_matrix_nsga2r_final.rds",
+      "bytes": 262116605,
+      "official_md5": "md5:b09606b04b2d4490418d9028c0e58b9f",
+      "sha256": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d"
+    }
+  ],
+  "method": "scp existing complete target to fresh v4 directory; reverify official MD5 and exact local SHA on server; copy already-verified LR/TF; append target only to previously absent frozen v2 input path",
+  "biological_scope_unchanged": true,
+  "new_statistical_models": false,
+  "historical_failures_preserved": true,
+  "user_authorization": "2026-10-12 quota expanded, continue task",
+  "quota_observed_UTC": "2026-10-12T02:08:31+00:00",
+  "quota_observed_UTC8": "2026-10-12T10:08:31+08:00",
+  "group_space_used_G_rounded": 1495,
+  "group_hard_limit_G": 2048,
+  "rough_headroom_G": 553
+}

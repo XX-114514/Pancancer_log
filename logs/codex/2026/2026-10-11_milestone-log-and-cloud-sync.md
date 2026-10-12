@@ -299,3 +299,15 @@ Git原仓库fetch因quota失败，本机HTTPS push缺凭据失败；新/tmp无ha
 提交前验证UTC 2026-10-11T15:51:27.786148+00:00 /UTC+8 2026-10-11T23:51:27.786148+08:00：git diff --check通过；新增JSON解析、scope断言与相对链接检查通过；仓库检查0 errors/1既有历史内部路径warning。已逐diff审阅当前9个文档/汇总文件，不含矩阵/患者行/凭据；无关ambient代码及未跟踪collector/研究日志不暂存。科学计算、下载及资源恢复仍未启动。
 
 规划内容6cf29b08d11177e569c26da0eb53437c12a2172a于2026-10-11T15:51:43.527858+00:00（UTC+8 23:51:43.527858）普通push；15:51:51.271458 UTC独立本机HTTPS ls-remote/fetch核对同SHA。[发布回执](../../../inventories/analysis/2026-10-11/planning_roadmap_git_receipt_v1.json)。任务板PLAN-01更新云端已核验，其他任务仍planned/paused；本回执追加提交后继续普通push和独立核验，无科学下载/任务启动。
+
+## 2026-10-12T10:11:30.425815+08:00 用户恢复后实测配额及离线资源v4冻结
+
+事件：用户明确“配额已经扩充，请继续”，准确请求UTC unknown；实测2026-10-12T02:08:31+00:00 /UTC+8 10:08:31。文档UTC 2026-10-12T02:11:30.425815+00:00。goal active；前一goal/规划节点属progress：主支线与暂停权威状态已落盘/云端47b7036。本轮授权已满足，无需重复许可。
+
+只读quota -gs确认组硬限2048G、used约1495G（粗余553G）、data4卷余3.8T、内存available约933GiB；v16/active空，父交接SHA27237270ac58481cb1d657e37e3b67b9f9ee550fa1996a2172810f8b61a488f8，登记路径缺失0，当前production/inventory/audit不存在。原资源v3仍TERMINAL_FAILED_ARIA2_RESOURCE_FETCH，保留失败及部分文件。最初ps只读输出含基础设施命令，本公开日志不保存其完整命令/凭据或患者行。
+
+本机完整3先验重验官方MD5/大小与SHA一致；target262116605bytes、SHA699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d。新合同/代码v4离线传输此完整文件到全新目录，复制已验证LR/TF，全文件核验后仅追加旧v2原先不存在的target路径；不改旧v3失败或部分文件。worker v3/registrar v2只更新真实v4入口及资源SHA，producer/auditor与336/15/1008、285360细胞/164文库/原身份不变。[合同](../../../inventories/analysis/2026-10-12/fullgene_offline_resource_recovery_v4_spec.json)/[代码冻结](../../../inventories/analysis/2026-10-12/fullgene_receiver_target_code_freeze_v4.json)。
+
+检查AGENTS/README/STATUS/ROADMAP/TODO、RUNTIME_SYNC、方法索引、上轮daily/task/run及源合同。查询reviewed45_native_header_recon_v1.py/fetch_server_priors_fullgene_v3.py错误文件名未找到，rg发现实际recon_reviewed45_native_headers_v1.py/fetch_server_priors_aria2_v3.py后阅读；这是读取定位修正，没有科学失败。未提权的本机git ls-remote受沙箱DNS限制失败，后续用已授权网络核验，不据此诊断数据服务器网络故障。
+
+新资源/worker/registrar源码语法与biological scope SHA一致检查通过；实际传输、资源验收、生产、独立审计尚未运行。先更新README/STATUS/ROADMAP/TODO、同任务日志/daily/run并普通push；下一步安装核SHA及传输、资源v4真实校验和45源预声明只读审阅，资源通过后派发生物任务。未解决：真实全基因准备/审计、45源值级/临床验收、靶响应及轴验证。無关ambient脚本修改及collector/研究日志未暂存。建议commit：tools: resume fullgene readiness with verified offline resource recovery。

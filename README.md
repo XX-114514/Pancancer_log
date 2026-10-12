@@ -1,5 +1,9 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T10:11:30.425815+08:00 配额扩充后恢复既有分析
+
+用户明确要求继续；实测组硬限2048G、已用约1495G。新[离线资源v4](inventories/analysis/2026-10-12/fullgene_offline_resource_recovery_v4_spec.json)复用本机已校验target，不重复公网下载；生物范围/producer/auditor不变。当前尚未实际传输/启动，先冻结代码及普通push，再核验输入和真实作业。[冻结](inventories/analysis/2026-10-12/fullgene_receiver_target_code_freeze_v4.json)；下方昨日暂停是历史节点。
+
 ## 当前计划与下载暂停：2026-10-11T23:50:48.128458+08:00
 
 用户要求今日只分析后续任务，暂不下载；已形成[研究主线与主线内支线](ROADMAP.md)、[任务板](TODO.md)。原9CM生态与细胞对响应双入口，按完整基因/可比单位→响应→空间/临床证据推进。只读检查根GPU目录已不存在，Project_v5对应目录、Zarr及当前登记证据路径保留；未恢复下载或启动分析。[取证及限制](inventories/analysis/2026-10-11/planning_pause_checkpoint_v1.json)。后续执行以此最新计划为准，早期资源恢复和下载指令保留为历史。

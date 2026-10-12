@@ -1,0 +1,112 @@
+{
+  "schema": "fullgene_code_freeze_v4",
+  "created_UTC": "2026-10-12T02:11:30.425815+00:00",
+  "created_UTC8": "2026-10-12T10:11:30.425815+08:00",
+  "plan_sha256": "b85edcf22cbed791fbdddb54032105e01259f48dde2edacd2460511fb7648606",
+  "code_shas": {
+    "fullgene_receiver_target_readiness_v3.py": "7910af2797c032a9418b6db738ba1f61c3228a6fe5cbbc139364a9426a2d3f16",
+    "audit_fullgene_receiver_target_readiness_v3.py": "7bf9e82b1610e17e4301f2e8f34152f3a756d59b5ae0b278cf37d24508845a37",
+    "fullgene_execution_worker_v1.py": "ef26a9d70c531319c3dec3665fc3b96c6b0451561e0790740281d23751c92bdc",
+    "fixture_v5.py": "6b882bd3cc61a792fd56051b34c585e6e701695ac2e7c38419e28b89332552d9",
+    "fixture_v6.py": "f1833a4fd22a8bd01da2322546d87db10acc9da515571d8fe1c7efbafbf94f9a",
+    "fullgene_execution_worker_v2.py": "6bcfdd85b132f9a26ba0cd90dda2724b34c12cd7e01b2b7393c660574d11f79f",
+    "fullgene_execution_worker_v3.py": "debf951dce1c9149fde02d9c14f05e8b0d50cda2ba3f9895ebdec28cc4e37ce8",
+    "verify_transferred_fullgene_priors_v4.py": "bacd14fb7f8b7b56afa2b1f3a8cd25377885c8da02135f5ee8822c639acefea0",
+    "register_fullgene_receiver_target_readiness_v2.py": "3650cecea996638577414fd3929b03beace7f42bf3a4aec7534365e0d4bacf3b",
+    "recon_reviewed45_native_headers_v1.py": "c1212f3f700f5e311e03f4acc963be3eb9370d0e832bf2fc85771d6eb47097d1"
+  },
+  "accepted_inputs": {
+    "accepted_native_inventory_sha256": "4e8ff089c20dd232dde4546d473a66cc0541fd2ffc7775ab6bb77da145b95ef5",
+    "source_records": [
+      {
+        "gse_id": "GSE179994",
+        "native_H5_sha256": "a2fdf155262df5e90c0f8d018480317b13c58d93f5c83581ec4b762959cba8a1",
+        "cache_sha256": "a7bbceb99f83111e55dab1f2c217448f7ddf91ff5c5fecf607737a8db97b17f5",
+        "native_source_cells": 144314,
+        "selected_cells": 50970,
+        "libraries": 47,
+        "original_nodes": 4,
+        "selected_panel_genes": 289
+      },
+      {
+        "gse_id": "GSE183904",
+        "native_H5_sha256": "2385c36ae99e0ca12ddf7fddcd63f5bb84f7faf68dd7af4be04de766b7b6f2a4",
+        "cache_sha256": "718eb4c25514c7de1a8d7d0546a1bf60d9a37abd28dd673bfacc71970f29a423",
+        "native_source_cells": 106696,
+        "selected_cells": 28602,
+        "libraries": 40,
+        "original_nodes": 6,
+        "selected_panel_genes": 295
+      },
+      {
+        "gse_id": "GSE270680",
+        "native_H5_sha256": "6d6e3f07eccb7af211c1204d9058e3eb8077714851664a0775d239a7cb033f22",
+        "cache_sha256": "5bb0efc961b03dc841a36dc9ba64c19edeee831dcf468ed9063238e164eed40d",
+        "native_source_cells": 558774,
+        "selected_cells": 205788,
+        "libraries": 77,
+        "original_nodes": 9,
+        "selected_panel_genes": 296
+      }
+    ],
+    "observed_original_node_union": 9
+  },
+  "synthetic": {
+    "status": "PASS_RAW_LOG_FULL_DENOMINATOR_EMPTY_UNIT_ORIGINAL_NUMBERED_IDENTITIES_PRIOR_DIRECTION_COMPLEX_MISSING_TIES_AND_ABSENT_RECEIVER_NA",
+    "producer_sha256": "7910af2797c032a9418b6db738ba1f61c3228a6fe5cbbc139364a9426a2d3f16"
+  },
+  "synthetic_observed_UTC": "2026-10-11T13:23:02.879031+00:00",
+  "synthetic_event_UTC": "unknown",
+  "TF_resource_actual_nonzero_rows": {
+    "shape": [
+      33354,
+      1226
+    ],
+    "nonzero_row_symbols": 21680,
+    "first20_nonzero_row_symbols": [
+      "A-GAMMA3'E",
+      "A1BG",
+      "A1CF",
+      "A2M",
+      "A2ML1",
+      "A2MP1",
+      "A3GALT2",
+      "A4GALT",
+      "A4GNT",
+      "AAA1",
+      "AAAS",
+      "AABT",
+      "AACS",
+      "AADAC",
+      "AADAT",
+      "AAGAB",
+      "AAK1",
+      "AAMDC",
+      "AAMP",
+      "AANAT"
+    ],
+    "zero_A1BG": false,
+    "all_rows_should_not_be_claimed_as_TF_catalogue": true
+  },
+  "TF_interpretation": "Official ligand_tf_matrix contains general gene/network prior row symbols; do not call all rows or all positive rows curated TFs or measured TF activity",
+  "source_scope": "13frozen catalog nodes,9observed in selected3sources; all observed numbered node \u00d7 frozen library units including empty units; other catalogue members not fabricated",
+  "missingness": "Absent receiver family or absent ligand-target prior yields NA target-expression coverage; measured0 remains0; source native gene axes retain missing distinctions",
+  "limits": [
+    "Preparation only, no new statistical association models",
+    "Original identities/subtypes/name markers not formal states",
+    "3native sources already used in discovery, not untouched validation",
+    "No original9CM driver proved by current familyextension"
+  ],
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "final_code_freeze_UTC": "2026-10-12T02:11:30.425815+00:00",
+  "synthetic_fixture_version": "fixture_v6.py",
+  "prepublication_draft_sha256": "19878f5813b1b6ba614ce64ce58f047b4cd1994db50499a962421bbf0d646ef7",
+  "prepublication_CSV_correction": "Mixed positive/background missing counts serialize as numeric text3.0/empty; independent auditor parses float before integer; new synthetic serialization check PASS, no real audit had run",
+  "parent_code_freeze_sha256": "e7f40ad8d7a1a5c1a8510d1f20de5ce5706dc3942ea2f7b6fcd05b4e04b3267e",
+  "change": "Biological producer/auditor unchanged; fresh offline resource v4, worker v3 and acceptance v2 retain all prior failed manifests",
+  "current_execution_worker": "fullgene_execution_worker_v3.py",
+  "resource_contract_sha256": "e14dc107efd2fcda593ed392620f84dbe0afffb9e2839a7b8b51af3555c3f574",
+  "resource_manifest": "family_LR_fullgene_assets_v4.execution.json",
+  "resource_receipts": "verified_prior_inputs_v4/download_receipts.json"
+}

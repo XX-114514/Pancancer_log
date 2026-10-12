@@ -55,3 +55,7 @@ aria2于13:51:38.494517 UTC真实exit1，errno122组quota；双进程不存在�
 ## 2026-10-11T23:50:48.128458+08:00 用户暂停下载，阶段转为规划
 
 用户手动删除根GPU传输目录后要求今日只规划；当前3源336/15/1008真实生产/audit仍未开始。已确认canonical/当前登记证据路径存在，但没有复验全部SHA或恢复资源。未来先实际quota/输入/先验验收，旧v3资源失败必须以新阶段真实成功终态解决；不按旧worker入口自动派发。[研究主线与支线](../ROADMAP.md)、[只读观察](../inventories/analysis/2026-10-11/planning_pause_checkpoint_v1.json)。
+
+## 2026-10-12T10:11:30.425815+08:00 quota扩充后离线恢复v4预声明
+
+实测2048G组硬限/1495G已用；用户恢复执行。新[合同](../inventories/analysis/2026-10-12/fullgene_offline_resource_recovery_v4_spec.json)/[冻结](../inventories/analysis/2026-10-12/fullgene_receiver_target_code_freeze_v4.json)保留旧v3失败，完整本机target传输后按官方MD5/原SHA验收；worker v3生产/audit及registrar v2接受真实v4资源。producer/auditor未改变；现在尚未派发，336/15/1008/原13目录及9实际节点保持。[代码](../scripts/verify_transferred_fullgene_priors_v4.py)。
