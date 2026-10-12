@@ -1,0 +1,14 @@
+{
+  "observed_UTC": "2026-10-12T04:28:54.357083+00:00",
+  "catalogue_sha256": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+  "source_coverage_inventory_sha256": "c0723af23dfe35716c897865ee19ff58be3e13462218754a9815251e1e4f8723",
+  "outputs": {
+    "RESULTS.md": "b1421907acb37a61f5c788b2491b60f8edfdb1320b14c36953d34f0f20ff4cc7",
+    "all60_pair_coverage_categories.tsv": "22c9994e54efdb699339f15abc368bf4c293eb781ec5a00763225152155a216d",
+    "cross_source_endpoint_identity_excerpt.tsv": "6bd74de96c143208e74c2385ece967d404c6620aa934c0cc98440f922e058677"
+  },
+  "locally_derived_public_summaries_not_original_producer_outputs": true,
+  "no_new_tests": true,
+  "supersedes_manifest_sha256": "28962aa8b4f7c79890ff94fbf314d4504ca4448d49d70853de4eaaab2c3fda0a",
+  "change": "Clarify34 pair-context records are10 distinct reviewed contexts; coarse31 records are9 contexts, not8 sources"
+}
