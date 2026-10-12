@@ -1,5 +1,11 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T15:35:24+08:00 原卷Zarr已实际写入超过100万细胞
+
+[真实写入检查点](inventories/runtime/2026-10-12/final_zarr_write_checkpoint_1M_v1.json)：272/792文库、1,108,352细胞、49985特征；原卷配额余量582.02GB，500GB留空满足。全部QC/ID原audit PASS、精确指纹0命中，正在继续CSR追加；最终metadata/逐cell输出audit尚待，不能将部分文件作完整对象。来源AC限制保留，备用卷仅加工，新下载暂停。
+
+
+
 ## 2026-10-12T15:09:05+08:00 精确排重全量结束，原卷Zarr开始实际追加
 
 [完整指纹](inventories/runtime/2026-10-12/final_zarr_full_fingerprint_checkpoint_v1.json)：9源792分片3180973细胞、0精确命中；不同处理版本/研究别名仍需审查，正式来源AC保持0。首3054细胞已真实写入原卷49985特征Zarr，全部矩阵/metadata与独立output audit尚待。full QC/ID已PASS，500GB留空持续检查，临时卷仅加工，新下载暂停。
