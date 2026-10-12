@@ -1,0 +1,9 @@
+{
+  "schema": "target_association_audit_repair_v2",
+  "producer_inventory_sha256": "92163207fbdece4e6cfcd1862aa1e325abaf762524dc4f1df6fe94dca9152e22",
+  "original_plan_sha256": "425e9e3040d916826101be0d38134774aaa1c0c1d53b5aba1746ab92418d056c",
+  "auditor_sha256": "4cca541a930548114569d5cd4497c4fd7e20ad4d5e9d754e0851fdd232e4ef56",
+  "controls_auditor_sha256": "d78ddee154bca8758af495490a3bf69f999ccbfeae2e0439d274f8bc829f63e3",
+  "repair": "CSV random seed may serialize225765694.0; parsefloatthenint for exact32bitseed. No producer,parameters ordata changed; preserve failed auditv1.",
+  "extra_acceptance": "Replay all325raw designs directly from originalcellcache/independent withinmajor andmember TSV/programme cache. No new statistic tests."
+}

@@ -381,3 +381,7 @@ UTC2026-10-12T03:40:41.817236+00:00 /UTC+8 2026-10-12T11:40:41.817236+08:00。�
 M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、发送编号混合；M2按既有适用性T6/B3共享程序，全排L/R及4namegenes、至少4gene/60%残余panel。源/情境存在成员从全context计数确定reference，与Y/p无关；必要列不可估计不删。20样本/10块、rank/condition<1e8/leverage<=.95，2000残差置换和case块bootstrap、valid>=1800才给bootstrapCI。所有325输入当前都单库/块，重复库设计未实现交换规则时明确拒绝；不拆患者。每variant620完整BH作筛选后诊断，不替代原305184发现FDR或独立确认。
 
 新producer/auditor源码语法通过，数值auditor不importproducer，全部1860系数/CR1/BH及325分数官方prior/全gene replay，另独立正负例2000重采样；控制变量构建全输入审阅与数值审计的接受层次分别保留。实际生产/审计尚未启动；数学已知系数/共线fixture将先检查，再真实执行。未更改canonical/旧阴性/身份或病例块，不上传私有样本设计。读取AGENTS/README/STATUS/ROADMAP/TODO、RUNTIME_SYNC、run和task/daily；保留并发技术header审阅/日志。轻量验证普通push后派发。科学目标active，尚无可验证新轴。
+
+## 数值审计读取失败后修复预声明
+
+已核实producer实际03:44:11.926034—03:46:15.541342 UTC exit0、全部1860记录生成；fixture正负已知系数/共线约束实际PASS。auditor v1实际03:46:15.546480—03:46:27.503894 UTC exit1，seed文本225765694.0无法int解析。没有模型重启，失败代码/日志/输出保留；此前未写独立验收，初步q/CI计数不作为已验证结论。新numerical auditor v2只修float-int解析，固定原producer inventory/plan SHA并新输出；另独立原cell+缓存重构全部325控制列。源码语法通过、实际修复/控制审计未运行；合同见inventories/analysis/2026-10-12/target_association_audit_repair_v2.json。数据仅原data4，未使用被其他任务质疑的data1卷。
