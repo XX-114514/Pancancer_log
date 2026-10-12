@@ -1,0 +1,80 @@
+{
+  "status": "PASS_ALL276_MAJOR_DIRECTIONS_1276224_CASES_AND_NATIVE_FINE_UNIT_AGGREGATION",
+  "observed_UTC": "2026-10-12T09:22:20.827000+00:00",
+  "auditor_sha256": "1c121e7aec0a6dfdcfe37e42e157e79036076f83b7151ada3b2c7fc4834c6bee",
+  "producer_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "native_major_units_independently_checked": 2028,
+  "directions": 276,
+  "case_records": 1276224,
+  "source_reports": [
+    {
+      "gse_id": "GSE116256",
+      "major_units": 78,
+      "groups": 6,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE131907",
+      "major_units": 42,
+      "groups": 2,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE148071",
+      "major_units": 115,
+      "groups": 10,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE161529",
+      "major_units": 231,
+      "groups": 42,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE176031",
+      "major_units": 50,
+      "groups": 2,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE178341",
+      "major_units": 800,
+      "groups": 108,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE179994",
+      "major_units": 86,
+      "groups": 6,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE182109",
+      "major_units": 115,
+      "groups": 6,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE183904",
+      "major_units": 206,
+      "groups": 56,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE270680",
+      "major_units": 206,
+      "groups": 28,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    },
+    {
+      "gse_id": "GSE274229",
+      "major_units": 99,
+      "groups": 10,
+      "status": "PASS_SEPARATE_FINE_UNIT_ROW_SUMS_AND_ALL_COMPLEX_VALUES"
+    }
+  ],
+  "physical_binding_or_induced_response_validation": false,
+  "new_p": false,
+  "fresh_raw_cell_recount_this_audit": false
+}
