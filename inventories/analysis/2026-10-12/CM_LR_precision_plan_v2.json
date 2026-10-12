@@ -1,0 +1,15 @@
+{
+  "predeclared_UTC": "2026-10-12T06:25:52.289293+00:00",
+  "reason": "2000 permutation minimum p=1/2001;133 floor ties yield min full-family q=.0507152438818184. Uniform precision extension to all estimated models, not selected p values; neither evidence of absence nor proven positive from threshold proximity.",
+  "permutations": 20000,
+  "scope": "all26994 rows; extend every19127 estimable permutation test; two fixed13497 families",
+  "association_inventory_sha256": "d489e4a0c148a3a14d8cb1b634073dc931b03efaaa905544edc8cfb3ea5022ee",
+  "association_audit_sha256": "85b7976841f143837afc7ece8dd34baf2bccc0dd5b53410a0c9dd3f811c12ccc",
+  "producer_sha256": "84d4e5a0c7bd84288ad4e3a8af4b02adc39ca9f9403cadbd5e22debec95442f9",
+  "auditor_sha256": "1a033b8a7d97d831af043cf92bf53f93e1813a65e336ceac8f30bcf93986693a",
+  "unchanged": "inputs/CMs/endpoints/controls/point estimates/bootstrap/rank/high leverage gates/BH family",
+  "seed": "same original seed; first2000 p independently reproduced for all estimated models;20000 precision derived via identical block exchanges",
+  "selection": "no model dropped based on p; failed remain missing internallyp1",
+  "validation": "exploratory MC precision, no new biological/independent validation",
+  "limits": "finite Monte Carlo uncertainty near threshold remains; whole block matched size approximate exchangeability; original fallback patients/material caveats"
+}

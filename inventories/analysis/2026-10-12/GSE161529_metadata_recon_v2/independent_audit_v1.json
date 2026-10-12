@@ -1,0 +1,16 @@
+{
+  "status": "PASS_EXACT_OFFICIAL_CHARACTERISTICS_69_LIBRARY_JOIN_AND_COL_ENDPOINT_SUBSET_NOT_GLOBAL_PATIENT_PROMOTION",
+  "observed_UTC": "2026-10-12T06:23:53.991159+00:00",
+  "metadata_text_sha256": "305f19f464a307f150f59a22393b4caffcfeee46d8ccdde7b72748ff89e6409f",
+  "mapping_sha256": "3ee84f9c0f4cf4dfae8c30bf49f54eddd408d4743faf79936475722b62045429",
+  "n_libraries": 69,
+  "n_exact_author_tokens_all": 53,
+  "tumor_libraries": 41,
+  "tumor_author_tokens": 32,
+  "tumor_LN_libraries": 7,
+  "COL_primary_observed_libraries": 30,
+  "COL_primary_observed_exact_author_tokens": 28,
+  "patient_tokens_disease_material_namespace_unresolved_all": true,
+  "global_patient_registry_changed": false,
+  "original_association_inputs_changed": false
+}

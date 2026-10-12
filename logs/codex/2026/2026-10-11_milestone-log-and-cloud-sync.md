@@ -479,3 +479,8 @@ COL1A1-DDR1新明确Fibro17→Epi52在乳腺34/36、CRC21/21（20块）、胃癌
 冻结8a76fd7b56b5d30f5b77dd62c6eaefc899c8a889于06:03:40.702889 UTC普通push、06:03:45.672078独立HTTPS核验。producer 2026-10-12T06:04:30.803833+00:00 UTC真实启动，driver144523/child144526当前核实存活；观察2026-10-12T06:06:43.992259+00:00的latest=finished_group GRP016 models 3166。原严格status逐项保留、全部controls空间不变，26994全范围2000块置换/Bootstrap和13497每variantBH，当前audit未开始/无完整通过结果。[快照](../../../inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/execution_start_v1.json)。
 
 私有样本和score未上传，当前pending只记录脱敏进程/计数；不能据已完成小组发布显著性或验证轴。准备/核验执行路径后真实运行，无科学失败或重启。本轮原13497主设计8491常数nuisance与曝光唯一性改变后续方法，人工2000显式resampling对照通过；GSE161529官方网页reCAPTCHA没核临床，不改癌种/身份。保留其它任务历史和研究日志；同一句柄后续终态和完整审计优先，目标active。轻量/diff/隐私检查后普通push独立SHA。
+
+
+## 2026-10-12T14:27:02.884531+08:00 全CM通讯关联审计完成与数据材料核对
+
+UTC 2026-10-12T06:27:02.884531+00:00：producer26994完成；v1 audit整数格式失败保留，v2独立19127β/CR1、BH和6重采样例PASS，未重跑模型。主q0/minq.050715/133最小p；原H136记录不称独立轴。全20000次精度扩展预声明未启动。乳腺41肿瘤库含7LN/32作者编号；COL原发30输出库28编号，患者与组织敏感性待。仅8229字节元数据，未下载RNA。[结果](../../../inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/RESULTS.md)。

@@ -1,0 +1,64 @@
+{
+  "observed_UTC": "2026-10-12T06:18:34.745826+00:00",
+  "official_URL": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161529/soft/GSE161529_family.soft.gz",
+  "metadata_sha256": "ba32149b553442779eefabf26c3d31225b178733593953c97eee8bb30db51ffc",
+  "mapping_sha256": "3ee84f9c0f4cf4dfae8c30bf49f54eddd408d4743faf79936475722b62045429",
+  "matched_libraries": 69,
+  "unique_exact_author_patient_tokens_all": 53,
+  "current_tumor_libraries": 41,
+  "current_tumor_exact_author_patient_tokens": 32,
+  "current_tumor_LN_libraries": 7,
+  "current_tumor_duplicate_patient_token_libraries": 9,
+  "material_population_counts": [
+    {
+      "current_class": "normal_or_adjacent",
+      "official_material_role": "normal_mammary",
+      "cell_population": "Epithelial",
+      "libraries": 11
+    },
+    {
+      "current_class": "normal_or_adjacent",
+      "official_material_role": "normal_mammary",
+      "cell_population": "Total",
+      "libraries": 13
+    },
+    {
+      "current_class": "primary_or_unspecified_tumor",
+      "official_material_role": "involved_lymph_node",
+      "cell_population": "Involved lymph node",
+      "libraries": 7
+    },
+    {
+      "current_class": "primary_or_unspecified_tumor",
+      "official_material_role": "tumor_mammary_unresolved_repeat_specimens",
+      "cell_population": "Total",
+      "libraries": 34
+    },
+    {
+      "current_class": "unknown",
+      "official_material_role": "preneoplastic_mammary",
+      "cell_population": "Total",
+      "libraries": 4
+    }
+  ],
+  "COL_current_selected36_library_material_split": [
+    {
+      "official_material_role": "involved_lymph_node",
+      "cell_population": "Involved lymph node",
+      "n_endpoint_libraries": 4,
+      "n_author_patient_tokens": 4,
+      "n_COL1A1_DDR1_observed": 4
+    },
+    {
+      "official_material_role": "tumor_mammary_unresolved_repeat_specimens",
+      "cell_population": "Total",
+      "n_endpoint_libraries": 32,
+      "n_author_patient_tokens": 30,
+      "n_COL1A1_DDR1_observed": 30
+    }
+  ],
+  "correction": "v1 title-only LN regex failed hyphenated Lymph-node; title numeric token truncated decimal donor identifiers. v2 uses exact patient/cell population characteristics, no number coercion.",
+  "current_association_inputs_or_blocks_changed": false,
+  "clinical_mapping_independent_audit_not_yet_done": true,
+  "no_expression_matrices_retrieved": true
+}

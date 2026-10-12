@@ -1,5 +1,10 @@
 # 当前项目状态
 
+## 2026-10-12T14:27:02.884531+08:00 原CM通讯关联全量审计通过
+
+[26994模型结果](inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/RESULTS.md)：主2000次置换q0、最小.050715存在精度边界；原H136记录尚非独立轴。统一20000次预声明，实际未启动。GSE161529核实7受累淋巴结和重复患者，原发患者敏感性待。此科学支线未改变并行公共前处理、当前Zarr或身份。
+
+
 ## 2026-10-12T14:24:17+08:00 文本编号修复已冻结并启动全量重验
 
 [v4实际启动](inventories/runtime/2026-10-12/identifier_audit_repair_public_launch_v4.json)PID303501，代码eb72e0b/审计SHA9aefabd；原失败证明已封存。重验全部9源792文库，原科学数据/参数不变，只有新full audit PASS及所有count/gate一致才恢复合并。最终Zarr仍待，来源AC限制保留，新下载暂停。

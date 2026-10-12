@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE_EXPLORATORY_ASSOCIATION_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T06:04:31.551322+00:00",
+  "finished_UTC": "2026-10-12T06:16:05.090340+00:00",
+  "producer_sha256": "339fe7c966f20687ba59220f73bb137c814174a4c9bfb49a17e8ef59a25e9ffe",
+  "plan_sha256": "a379e3d33da559bf47745419fab64ce0e0f7c34c5dba593b83360019c7de4b54",
+  "summary": {
+    "endpoint_excluded_library": {
+      "models": 13497,
+      "status_counts": {
+        "ESTIMABLE_FULL_CONTROL_SPAN_ASSOCIATION": 11020,
+        "ILL_CONDITIONED_OR_HIGH_INFLUENCE_DESIGN": 2477
+      },
+      "diagnostic_q05": 0,
+      "bootstrap_CI_available": 9823
+    },
+    "original_H_library": {
+      "models": 13497,
+      "status_counts": {
+        "ESTIMABLE_FULL_CONTROL_SPAN_ASSOCIATION": 8107,
+        "CM_EXPOSURE_NOT_IDENTIFIABLE": 2788,
+        "ILL_CONDITIONED_OR_HIGH_INFLUENCE_DESIGN": 2602
+      },
+      "diagnostic_q05": 136,
+      "bootstrap_CI_available": 6352
+    }
+  },
+  "new_coefficients": true,
+  "primary_strict_statuses_preserved": true,
+  "all_required_controls_in_span": true,
+  "scientific_or_causal_validation": false,
+  "outputs": {
+    "all26994_full_control_CM_LR_associations.tsv.gz": "237f2394b326fa81f2f15e7c12d5b9d272442396c2e4c9166105afef91937a2c",
+    "private_resampling_examples/example1.npz": "61157e9c8dc07defe2cb639915b7e5b99e885fcdd4bac4e92e8f04518748d3b1",
+    "private_resampling_examples/example2.npz": "69222517a86f6097c399b7b9aa144ee708c4040770b7d0b6feff3f7df569061b",
+    "private_resampling_examples/example3.npz": "52ecdf052cb76499ab05bd06109b03dfc0e9ff5c4e8d67eedafb14aa5f3f5f94",
+    "private_resampling_examples/example4.npz": "e1d7ff3b57ec8d74954a657fca09522fb8656cb76dcd594471aed89b72fb9bf5",
+    "private_resampling_examples/example5.npz": "47dff3479c7bbd204199c0daa2d63366c3ce321984edbd4e61349f0f3c858bba",
+    "private_resampling_examples/example6.npz": "00e2ea036273452eed40241eced9e366bbf6b845804377365370d5e942f24dcb"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "predeclared_UTC": "2026-10-12T06:22:01.684384+00:00",
+  "repair": "Accept exactly integral numeric TSV design_rank/boot_valid fields serialized as 5.0; no change to models, data, thresholds, resampling or producer outputs",
+  "auditor_sha256": "2f3f0e83f03f1cb5904c3ea8fe0ac8d71883f913ee65fbb0a638f54815cbfdd7",
+  "unchanged_producer_plan_sha256": "a379e3d33da559bf47745419fab64ce0e0f7c34c5dba593b83360019c7de4b54",
+  "prior_failed_auditor_sha256": "56a899fe97ab5cadb0ab498a140b553e7bb3c713b64463770ae9201fb436cc7f"
+}

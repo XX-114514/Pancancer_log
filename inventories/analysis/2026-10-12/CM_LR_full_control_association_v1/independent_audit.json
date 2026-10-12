@@ -1,0 +1,55 @@
+{
+  "audit_repair_plan_sha256": "5f2a80672546b5a370518cdbf7432761ae39dfdcb8f169a3d1785aba75e37de9",
+  "status": "PASS_ALL26994_ROWS_FULL_CONTROL_TARGET_COEFFICIENT_CR1_BH_AND_EXPLICIT_RESAMPLING_EXAMPLES",
+  "started_UTC": "2026-10-12T06:22:31.448029+00:00",
+  "finished_UTC": "2026-10-12T06:22:49.552866+00:00",
+  "auditor_sha256": "2f3f0e83f03f1cb5904c3ea8fe0ac8d71883f913ee65fbb0a638f54815cbfdd7",
+  "producer_inventory_sha256": "d489e4a0c148a3a14d8cb1b634073dc931b03efaaa905544edc8cfb3ea5022ee",
+  "estimated_models_independently_recomputed": 19127,
+  "resampling_examples": [
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM01",
+      "variant": "endpoint_excluded_library",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 2000
+    },
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM01",
+      "variant": "original_H_library",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 2000
+    },
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM03",
+      "variant": "endpoint_excluded_library",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 2000
+    },
+    {
+      "case_id": "GRP001_LR0337",
+      "cm": "CM03",
+      "variant": "original_H_library",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 2000
+    },
+    {
+      "case_id": "GRP001_LR0842",
+      "cm": "CM01",
+      "variant": "endpoint_excluded_library",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 2000
+    },
+    {
+      "case_id": "GRP001_LR0842",
+      "cm": "CM01",
+      "variant": "original_H_library",
+      "status": "PASS_EXPLICIT_FULLX2000_BLOCK_PERMUTATIONS_AND_CASE_BOOTSTRAPS",
+      "valid_bootstraps": 2000
+    }
+  ],
+  "all_required_covariates_retained": true,
+  "scientific_or_causal_validation": false
+}

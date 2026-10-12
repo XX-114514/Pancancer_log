@@ -11,3 +11,7 @@
 ## 2026-10-12T14:06:46.979472+08:00 真实派发
 
 producer 2026-10-12T06:04:30.803833+00:00 UTC、driver144523/child144526已核实运行，finished_group GRP016 models 3166；全量结局和audit仍pending。原始输出/控制空间与13,497分母不变。[启动证据](../inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/execution_start_v1.json)。
+
+## 2026-10-12T14:27:02.884531+08:00 全量终态与精度扩展
+
+[全量结果/失败恢复](../inventories/analysis/2026-10-12/CM_LR_full_control_association_v1/RESULTS.md)，26994独立复算PASS，原2000次主q0受有限精度影响（minq.050715）。保留原结果，统一全检验20000次合同已冻结、尚未执行；乳腺7LN/重复患者需新敏感性。
