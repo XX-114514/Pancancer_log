@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SEPARATELY_STAGED_COUNTS_ALL54_CAPTURE_ALL432_DESIGNS_ALL120_OBSERVED_STATISTICS",
+  "numeric_checks": 2670,
+  "max_absolute_difference": 4.440892098500626e-16,
+  "source_counts_sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+  "clinical_context_sha256": "cbfa96b46e6a6d44512ea69ca8cf1572b1871acddbaee7ac261919d977b685b6",
+  "independent_input_parsing": true,
+  "all_null_draws_replayed": false,
+  "raw_cell_matrix_replayed": false,
+  "independent_biological_validation": false
+}

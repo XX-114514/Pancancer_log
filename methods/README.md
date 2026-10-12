@@ -16,6 +16,7 @@
 
 当前入口：
 
+- [CM定义与免疫来源恢复证据合同](CM-definition-and-recovery-v1.md)：固定成员/权重、情境重塑与免疫骨架；区分投影、生态和功能机制。
 - [Project_v3 统一工作流](project-v3-unified-workflow.md)
 
 方法发生实质变化时，应同时创建 Codex log；如果变化涉及方案取舍，再新增 ADR。

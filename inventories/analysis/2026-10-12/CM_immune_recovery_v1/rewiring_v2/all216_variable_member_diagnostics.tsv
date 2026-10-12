@@ -1,0 +1,217 @@
+cohort	cm	view	denominator	reference_members	variable_members	constant_members	candidate_pairs	status
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM01	whole_core	legacy_major	9	4	0	5	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM01	immune_backbone	legacy_major	9	4	0	5	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM02	whole_core	legacy_major	8	3	0	3	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM02	immune_backbone	legacy_major	8	3	0	3	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM03	whole_core	legacy_major	10	1	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM03	immune_backbone	legacy_major	6	1	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM04	whole_core	legacy_major	10	2	0	1	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM04	immune_backbone	legacy_major	7	2	0	1	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM05	whole_core	legacy_major	10	1	1	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM05	immune_backbone	legacy_major	8	1	1	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM06	whole_core	legacy_major	9	2	0	1	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM06	immune_backbone	legacy_major	6	2	0	1	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM07	whole_core	legacy_major	9	1	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM07	immune_backbone	legacy_major	6	1	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM08	whole_core	legacy_major	8	2	0	1	insufficient_variable_members
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM08	immune_backbone	legacy_major	4	2	0	1	insufficient_variable_members
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM09	whole_core	legacy_major	9	2	0	1	insufficient_variable_members
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM09	immune_backbone	legacy_major	6	2	0	1	insufficient_variable_members
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM01	whole_core	parent_analysis	9	5	0	4	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM01	immune_backbone	parent_analysis	9	5	0	4	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM02	whole_core	parent_analysis	8	4	0	3	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM02	immune_backbone	parent_analysis	8	4	0	3	estimated_posthoc_diagnostic
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM03	whole_core	parent_analysis	10	2	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM03	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM04	whole_core	parent_analysis	10	3	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM04	immune_backbone	parent_analysis	7	3	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM05	whole_core	parent_analysis	10	2	1	1	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM05	immune_backbone	parent_analysis	8	2	1	1	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM06	whole_core	parent_analysis	9	3	0	2	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM06	immune_backbone	parent_analysis	6	3	0	2	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM07	whole_core	parent_analysis	9	2	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM07	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM08	whole_core	parent_analysis	8	1	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM08	immune_backbone	parent_analysis	4	1	0	0	fewer2_unambiguous_compartments
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM09	whole_core	parent_analysis	9	3	0	2	insufficient_variable_members
+GSE115978|Melanoma|primary_or_unspecified_tumor|not_reviewed	CM09	immune_backbone	parent_analysis	6	3	0	2	insufficient_variable_members
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM01	whole_core	legacy_major	9	6	1	14	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM01	immune_backbone	legacy_major	9	6	1	14	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM02	whole_core	legacy_major	8	5	1	10	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM02	immune_backbone	legacy_major	8	5	1	10	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM03	whole_core	legacy_major	10	2	3	1	insufficient_variable_members
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM03	immune_backbone	legacy_major	6	2	2	1	insufficient_variable_members
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM04	whole_core	legacy_major	10	5	3	10	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM04	immune_backbone	legacy_major	7	4	2	6	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM05	whole_core	legacy_major	10	3	3	3	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM05	immune_backbone	legacy_major	8	3	1	3	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM06	whole_core	legacy_major	9	4	2	6	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM06	immune_backbone	legacy_major	6	3	1	3	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM07	whole_core	legacy_major	9	3	2	3	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM07	immune_backbone	legacy_major	6	2	1	1	fewer2_unambiguous_compartments
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM08	whole_core	legacy_major	8	4	2	6	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM08	immune_backbone	legacy_major	4	3	1	3	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM09	whole_core	legacy_major	9	5	2	10	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM09	immune_backbone	legacy_major	6	4	1	6	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM01	whole_core	parent_analysis	9	9	0	24	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM01	immune_backbone	parent_analysis	9	9	0	24	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM02	whole_core	parent_analysis	8	8	0	19	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM02	immune_backbone	parent_analysis	8	8	0	19	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM03	whole_core	parent_analysis	10	5	2	6	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM03	immune_backbone	parent_analysis	6	5	1	6	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM04	whole_core	parent_analysis	10	7	2	15	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM04	immune_backbone	parent_analysis	7	6	1	9	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM05	whole_core	parent_analysis	10	6	2	9	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM05	immune_backbone	parent_analysis	8	6	0	9	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM06	whole_core	parent_analysis	9	7	1	17	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM06	immune_backbone	parent_analysis	6	6	0	11	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM07	whole_core	parent_analysis	9	7	1	14	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM07	immune_backbone	parent_analysis	6	6	0	8	fewer2_unambiguous_compartments
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM08	whole_core	parent_analysis	8	5	1	9	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM08	immune_backbone	parent_analysis	4	4	0	5	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM09	whole_core	parent_analysis	9	7	1	17	estimated_posthoc_diagnostic
+GSE127465|Non-small cell lung cancer|primary_or_unspecified_tumor|not_reviewed	CM09	immune_backbone	parent_analysis	6	6	0	11	estimated_posthoc_diagnostic
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM01	whole_core	legacy_major	9	3	1	2	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM01	immune_backbone	legacy_major	9	3	1	2	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM02	whole_core	legacy_major	8	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM02	immune_backbone	legacy_major	8	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM03	whole_core	legacy_major	10	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM03	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM04	whole_core	legacy_major	10	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM04	immune_backbone	legacy_major	7	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM05	whole_core	legacy_major	10	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM05	immune_backbone	legacy_major	8	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM06	whole_core	legacy_major	9	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM06	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM07	whole_core	legacy_major	9	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM07	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM08	whole_core	legacy_major	8	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM08	immune_backbone	legacy_major	4	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM09	whole_core	legacy_major	9	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM09	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM01	whole_core	parent_analysis	9	4	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM01	immune_backbone	parent_analysis	9	4	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM02	whole_core	parent_analysis	8	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM02	immune_backbone	parent_analysis	8	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM03	whole_core	parent_analysis	10	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM03	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM04	whole_core	parent_analysis	10	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM04	immune_backbone	parent_analysis	7	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM05	whole_core	parent_analysis	10	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM05	immune_backbone	parent_analysis	8	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM06	whole_core	parent_analysis	9	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM06	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM07	whole_core	parent_analysis	9	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM07	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM08	whole_core	parent_analysis	8	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM08	immune_backbone	parent_analysis	4	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM09	whole_core	parent_analysis	9	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|on_treatment	CM09	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM01	whole_core	legacy_major	9	3	1	2	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM01	immune_backbone	legacy_major	9	3	1	2	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM02	whole_core	legacy_major	8	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM02	immune_backbone	legacy_major	8	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM03	whole_core	legacy_major	10	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM03	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM04	whole_core	legacy_major	10	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM04	immune_backbone	legacy_major	7	2	1	1	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM05	whole_core	legacy_major	10	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM05	immune_backbone	legacy_major	8	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM06	whole_core	legacy_major	9	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM06	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM07	whole_core	legacy_major	9	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM07	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM08	whole_core	legacy_major	8	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM08	immune_backbone	legacy_major	4	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM09	whole_core	legacy_major	9	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM09	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM01	whole_core	parent_analysis	9	4	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM01	immune_backbone	parent_analysis	9	4	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM02	whole_core	parent_analysis	8	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM02	immune_backbone	parent_analysis	8	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM03	whole_core	parent_analysis	10	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM03	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM04	whole_core	parent_analysis	10	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM04	immune_backbone	parent_analysis	7	3	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM05	whole_core	parent_analysis	10	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM05	immune_backbone	parent_analysis	8	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM06	whole_core	parent_analysis	9	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM06	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM07	whole_core	parent_analysis	9	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM07	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM08	whole_core	parent_analysis	8	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM08	immune_backbone	parent_analysis	4	1	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM09	whole_core	parent_analysis	9	2	0	0	fewer2_unambiguous_compartments
+GSE179994|Lung cancer|primary_or_unspecified_tumor|pre_treatment	CM09	immune_backbone	parent_analysis	6	2	0	0	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM01	whole_core	legacy_major	9	3	1	2	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM01	immune_backbone	legacy_major	9	3	1	2	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM02	whole_core	legacy_major	8	2	1	1	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM02	immune_backbone	legacy_major	8	2	1	1	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM03	whole_core	legacy_major	10	4	1	5	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM03	immune_backbone	legacy_major	6	2	1	1	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM04	whole_core	legacy_major	10	3	2	3	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM04	immune_backbone	legacy_major	7	2	1	1	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM05	whole_core	legacy_major	10	1	1	0	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM05	immune_backbone	legacy_major	8	1	1	0	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM06	whole_core	legacy_major	9	1	1	0	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM06	immune_backbone	legacy_major	6	0	1	0	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM07	whole_core	legacy_major	9	2	1	1	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM07	immune_backbone	legacy_major	6	1	1	0	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM08	whole_core	legacy_major	8	4	0	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM08	immune_backbone	legacy_major	4	2	0	1	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM09	whole_core	legacy_major	9	4	1	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM09	immune_backbone	legacy_major	6	2	1	1	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM01	whole_core	parent_analysis	9	6	0	8	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM01	immune_backbone	parent_analysis	9	6	0	8	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM02	whole_core	parent_analysis	8	6	0	9	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM02	immune_backbone	parent_analysis	8	6	0	9	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM03	whole_core	parent_analysis	10	6	0	12	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM03	immune_backbone	parent_analysis	6	4	0	4	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM04	whole_core	parent_analysis	10	7	2	15	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM04	immune_backbone	parent_analysis	7	6	1	9	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM05	whole_core	parent_analysis	10	6	0	8	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM05	immune_backbone	parent_analysis	8	6	0	8	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM06	whole_core	parent_analysis	9	5	0	8	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM06	immune_backbone	parent_analysis	6	4	0	4	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM07	whole_core	parent_analysis	9	5	0	8	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM07	immune_backbone	parent_analysis	6	4	0	4	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM08	whole_core	parent_analysis	8	5	0	9	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM08	immune_backbone	parent_analysis	4	3	0	2	insufficient_variable_members
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM09	whole_core	parent_analysis	9	7	0	17	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|metastatic_tumor|not_reviewed	CM09	immune_backbone	parent_analysis	6	5	0	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM01	whole_core	legacy_major	9	4	2	5	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM01	immune_backbone	legacy_major	9	4	2	5	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM02	whole_core	legacy_major	8	4	2	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM02	immune_backbone	legacy_major	8	4	2	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM03	whole_core	legacy_major	10	5	3	9	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM03	immune_backbone	legacy_major	6	2	2	1	insufficient_variable_members
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM04	whole_core	legacy_major	10	4	4	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM04	immune_backbone	legacy_major	7	4	2	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM05	whole_core	legacy_major	10	5	3	10	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM05	immune_backbone	legacy_major	8	5	2	10	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM06	whole_core	legacy_major	9	3	4	3	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM06	immune_backbone	legacy_major	6	3	2	3	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM07	whole_core	legacy_major	9	2	4	1	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM07	immune_backbone	legacy_major	6	2	2	1	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM08	whole_core	legacy_major	8	3	4	3	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM08	immune_backbone	legacy_major	4	2	1	1	insufficient_variable_members
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM09	whole_core	legacy_major	9	5	4	10	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM09	immune_backbone	legacy_major	6	4	2	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM01	whole_core	parent_analysis	9	7	0	12	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM01	immune_backbone	parent_analysis	9	7	0	12	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM02	whole_core	parent_analysis	8	7	0	15	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM02	immune_backbone	parent_analysis	8	7	0	15	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM03	whole_core	parent_analysis	10	8	1	23	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM03	immune_backbone	parent_analysis	6	5	0	6	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM04	whole_core	parent_analysis	10	6	2	9	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM04	immune_backbone	parent_analysis	7	6	0	9	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM05	whole_core	parent_analysis	10	8	1	18	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM05	immune_backbone	parent_analysis	8	8	0	17	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM06	whole_core	parent_analysis	9	5	2	8	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM06	immune_backbone	parent_analysis	6	5	0	8	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM07	whole_core	parent_analysis	9	6	2	11	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM07	immune_backbone	parent_analysis	6	5	0	6	fewer2_unambiguous_compartments
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM08	whole_core	parent_analysis	8	4	3	5	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM08	immune_backbone	parent_analysis	4	3	0	2	insufficient_variable_members
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM09	whole_core	parent_analysis	9	7	2	17	estimated_posthoc_diagnostic
+GSE274229|Prostate cancer|primary_or_unspecified_tumor|not_reviewed	CM09	immune_backbone	parent_analysis	6	6	0	11	estimated_posthoc_diagnostic

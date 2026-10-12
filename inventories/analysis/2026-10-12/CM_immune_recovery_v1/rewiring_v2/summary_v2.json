@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_POSTHOC_REWIRING_DIAGNOSTIC_NOT_INDEPENDENT_VALIDATION",
+  "started_UTC": "2026-10-12T15:03:12.870164+00:00",
+  "finished_UTC": "2026-10-12T15:04:05.221510+00:00",
+  "configured_records": 432,
+  "estimated_records": 120,
+  "unique_estimated_questions": 94,
+  "BH05": 14,
+  "BY05": 3,
+  "positive_CI_BH": 14,
+  "status_counts": {
+    "fewer2_unambiguous_compartments": 267,
+    "estimated_posthoc_diagnostic": 120,
+    "insufficient_variable_members": 45
+  },
+  "permutations": 20000,
+  "bootstrap": 2000,
+  "selected_numeric_audit_max_diff": 2.220446049250313e-16,
+  "plan_sha256": "fc8c60d56569bcddcad5b68988f08fc79f991ff1f1623d2830380f79f0afbd00",
+  "code_sha256": "df9a597c1e8b5615f55ba0b622a9f2546687776bb5ae935db3a9ac2289a8fbba",
+  "canonical_changed": false,
+  "formal_states": false,
+  "axis_validation_complete": false
+}
