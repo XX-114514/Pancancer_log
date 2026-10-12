@@ -1,0 +1,200 @@
+{
+  "observed_UTC": "2026-10-12T06:41:13.132243+00:00",
+  "all4712_designs_checked": 4712,
+  "statuses": [
+    {
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE",
+      "models": 1037
+    },
+    {
+      "variant": "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+      "status": "HIGH_INFLUENCE_DESIGN",
+      "models": 1039
+    },
+    {
+      "variant": "original_H_library__required_controls",
+      "status": "HIGH_INFLUENCE_DESIGN",
+      "models": 259
+    },
+    {
+      "variant": "original_H_library__required_controls_plus_exact_author_cancer_subtype",
+      "status": "HIGH_INFLUENCE_DESIGN",
+      "models": 1039
+    },
+    {
+      "variant": "original_H_library__required_controls",
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE",
+      "models": 780
+    },
+    {
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE",
+      "models": 139
+    },
+    {
+      "variant": "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+      "status": "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE",
+      "models": 139
+    },
+    {
+      "variant": "original_H_library__required_controls",
+      "status": "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE",
+      "models": 139
+    },
+    {
+      "variant": "original_H_library__required_controls_plus_exact_author_cancer_subtype",
+      "status": "INSUFFICIENT_PRIMARY_PATIENT_COVERAGE",
+      "models": 139
+    },
+    {
+      "variant": "endpoint_excluded_library__required_controls",
+      "status": "HIGH_INFLUENCE_DESIGN",
+      "models": 2
+    }
+  ],
+  "COL1A1_DDR1_primary_designs": [
+    {
+      "cm": "CM04",
+      "variant": "endpoint_excluded_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM04",
+      "variant": "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM04",
+      "variant": "original_H_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM04",
+      "variant": "original_H_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM06",
+      "variant": "endpoint_excluded_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM06",
+      "variant": "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM06",
+      "variant": "original_H_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM06",
+      "variant": "original_H_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM07",
+      "variant": "endpoint_excluded_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM07",
+      "variant": "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM07",
+      "variant": "original_H_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM07",
+      "variant": "original_H_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM08",
+      "variant": "endpoint_excluded_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM08",
+      "variant": "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM08",
+      "variant": "original_H_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM08",
+      "variant": "original_H_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM09",
+      "variant": "endpoint_excluded_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM09",
+      "variant": "endpoint_excluded_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    },
+    {
+      "cm": "CM09",
+      "variant": "original_H_library__required_controls",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "TARGET_COEFFICIENT_IDENTIFIABLE_NOT_INFERENCE"
+    },
+    {
+      "cm": "CM09",
+      "variant": "original_H_library__required_controls_plus_exact_author_cancer_subtype",
+      "n_primary_observed_libraries": 30,
+      "n_exact_author_patient_tokens": 28,
+      "status": "HIGH_INFLUENCE_DESIGN"
+    }
+  ],
+  "new_statistical_p_or_effects": false,
+  "original_registry_or_inputs_changed": false
+}
