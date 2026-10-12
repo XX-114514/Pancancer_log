@@ -1,0 +1,178 @@
+{
+  "status": "PASS_ALL8_INITIAL_PRIMARY_RECORDS_ALL_MATCHED_TFS_THREE_VARIANTS",
+  "finished_UTC": "2026-10-12T13:08:29.995322+00:00",
+  "component_refits": 3108,
+  "maximum_absolute_difference": 7.105427357601002e-14,
+  "records": [
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "ICAM1",
+      "receptor": "IL2RG",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "ICAM1",
+      "receptor": "IL2RG",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "ICAM1",
+      "receptor": "IL2RG",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "LGALS1",
+      "receptor": "ITGB1",
+      "variant": "abundance_complexity",
+      "patterns": 7
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "LGALS1",
+      "receptor": "ITGB1",
+      "variant": "subtype_mixture",
+      "patterns": 7
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "LGALS1",
+      "receptor": "ITGB1",
+      "variant": "full_gene_sensitivity",
+      "patterns": 7
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "MAML2",
+      "receptor": "NOTCH2",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "MAML2",
+      "receptor": "NOTCH2",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "MAML2",
+      "receptor": "NOTCH2",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "NAMPT",
+      "receptor": "ITGA5_ITGB1",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "NAMPT",
+      "receptor": "ITGA5_ITGB1",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "NAMPT",
+      "receptor": "ITGA5_ITGB1",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "S100A9",
+      "receptor": "ITGB2",
+      "variant": "abundance_complexity",
+      "patterns": 1
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "S100A9",
+      "receptor": "ITGB2",
+      "variant": "subtype_mixture",
+      "patterns": 1
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "S100A9",
+      "receptor": "ITGB2",
+      "variant": "full_gene_sensitivity",
+      "patterns": 1
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "TIMP2",
+      "receptor": "ITGB1",
+      "variant": "abundance_complexity",
+      "patterns": 7
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "TIMP2",
+      "receptor": "ITGB1",
+      "variant": "subtype_mixture",
+      "patterns": 7
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "TIMP2",
+      "receptor": "ITGB1",
+      "variant": "full_gene_sensitivity",
+      "patterns": 7
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "HSPA1A",
+      "receptor": "TLR4",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "HSPA1A",
+      "receptor": "TLR4",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "HSPA1A",
+      "receptor": "TLR4",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "HSPA8",
+      "receptor": "ADRB2",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "HSPA8",
+      "receptor": "ADRB2",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "HSPA8",
+      "receptor": "ADRB2",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    }
+  ],
+  "numeric_only_not_independent_biological_validation": true,
+  "code_sha256": "0455e18b21303114c1fcf5865f0f80400cb8fa94cfd0f2f4e20a6ddebe81af0c"
+}

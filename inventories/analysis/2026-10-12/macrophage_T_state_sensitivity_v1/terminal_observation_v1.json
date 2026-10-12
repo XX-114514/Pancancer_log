@@ -1,0 +1,84 @@
+{
+  "observed_UTC": "2026-10-12T13:10:29.574137+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T13:00:18.065947+00:00",
+      "driver_pid": 156239,
+      "child_pid": 156247,
+      "finished_UTC": "2026-10-12T13:09:42.178916+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      },
+      "log_tail": "{\"direction\": \"Macrophage_to_T\", \"variant\": \"abundance_complexity\", \"LR_rows\": 4624, \"TF_components\": 22108}\n{\"direction\": \"Macrophage_to_T\", \"variant\": \"subtype_mixture\", \"LR_rows\": 9248, \"TF_components\": 44195}\n{\"direction\": \"Macrophage_to_T\", \"variant\": \"full_gene_sensitivity\", \"LR_rows\": 13872, \"TF_components\": 66303}\n{\"direction\": \"T_to_Macrophage\", \"variant\": \"abundance_complexity\", \"LR_rows\": 18496, \"TF_components\": 87106}\n{\"direction\": \"T_to_Macrophage\", \"variant\": \"subtype_mixture\", \"LR_rows\": 23120, \"TF_components\": 107805}\n{\"direction\": \"T_to_Macrophage\", \"variant\": \"full_gene_sensitivity\", \"LR_rows\": 27744, \"TF_components\": 128608}\n{\"status\": \"MULTISOURCE_EXPLORATORY_POOL_COMPLETE_PENDING_NUMERIC_AUDIT\", \"started_UTC\": \"2026-10-12T13:00:18.818109+00:00\", \"finished_UTC\": \"2026-10-12T13:09:41.637550+00:00\", \"producer_sha256\": \"c46042b1a960018209ab71b21018e7e522ae495d5a74d85998d19a1097c8e29d\", \"plan_sha256\": \"6b0921bac18aee662f86960deb63f83e873f36ac34ef2fbc1d032dd240a7c470\", \"LR_rows\": 27744, \"TF_components\": 128608, \"summary\": [{\"variant\": \"abundance_complexity\", \"models\": 9248, \"estimated\": 496, \"BH05\": 0, \"BY05\": 0}, {\"variant\": \"full_gene_sensitivity\", \"models\": 9248, \"estimated\": 496, \"BH05\": 3, \"BY05\": 0}, {\"variant\": \"subtype_mixture\", \"models\": 9248, \"estimated\": 495, \"BH05\": 0, \"BY05\": 0}], \"no_causal_binding_or_independent_validation\": true, \"intrinsic_program_controls\": [\"sender_HSF1_LR_excluded\", \"receiver_same_ligand_native_meanlog\"], \"state_labels_assigned\": false}\n"
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T13:09:42.180489+00:00",
+      "driver_pid": 156239,
+      "child_pid": 234275,
+      "finished_UTC": "2026-10-12T13:09:52.904219+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      },
+      "log_tail": "{\"status\": \"PASS_FAMILY_AND_AGGREGATION_WITH_BALANCED_NUMERIC_FIXTURES\", \"finished_UTC\": \"2026-10-12T13:09:52.764218+00:00\", \"inventory_sha256\": \"10e96002477bfbb2b7684e258bf1281da2d61ce53797f8c9534ae717e8ce5ca8\", \"models\": 27744, \"TF_components\": 128608, \"numeric_fixture_groups\": 24, \"numeric_component_checks\": 8580, \"max_absolute_difference\": 7.993605777301127e-14, \"all_coefficients_independently_replayed\": false, \"source_and_LOSO_numeric_checks_included\": true, \"auditor_sha256\": \"625228390554a10d79cd3bd7c8c266a42dd7c82b811f5f4584e230845c6e2793\"}\n"
+    }
+  },
+  "inventory.json": {
+    "status": "MULTISOURCE_EXPLORATORY_POOL_COMPLETE_PENDING_NUMERIC_AUDIT",
+    "started_UTC": "2026-10-12T13:00:18.818109+00:00",
+    "finished_UTC": "2026-10-12T13:09:41.637550+00:00",
+    "producer_sha256": "c46042b1a960018209ab71b21018e7e522ae495d5a74d85998d19a1097c8e29d",
+    "plan_sha256": "6b0921bac18aee662f86960deb63f83e873f36ac34ef2fbc1d032dd240a7c470",
+    "LR_rows": 27744,
+    "TF_components": 128608,
+    "summary": [
+      {
+        "variant": "abundance_complexity",
+        "models": 9248,
+        "estimated": 496,
+        "BH05": 0,
+        "BY05": 0
+      },
+      {
+        "variant": "full_gene_sensitivity",
+        "models": 9248,
+        "estimated": 496,
+        "BH05": 3,
+        "BY05": 0
+      },
+      {
+        "variant": "subtype_mixture",
+        "models": 9248,
+        "estimated": 495,
+        "BH05": 0,
+        "BY05": 0
+      }
+    ],
+    "no_causal_binding_or_independent_validation": true,
+    "intrinsic_program_controls": [
+      "sender_HSF1_LR_excluded",
+      "receiver_same_ligand_native_meanlog"
+    ],
+    "state_labels_assigned": false
+  },
+  "independent_audit.json": {
+    "status": "PASS_FAMILY_AND_AGGREGATION_WITH_BALANCED_NUMERIC_FIXTURES",
+    "finished_UTC": "2026-10-12T13:09:52.764218+00:00",
+    "inventory_sha256": "10e96002477bfbb2b7684e258bf1281da2d61ce53797f8c9534ae717e8ce5ca8",
+    "models": 27744,
+    "TF_components": 128608,
+    "numeric_fixture_groups": 24,
+    "numeric_component_checks": 8580,
+    "max_absolute_difference": 7.993605777301127e-14,
+    "all_coefficients_independently_replayed": false,
+    "source_and_LOSO_numeric_checks_included": true,
+    "auditor_sha256": "625228390554a10d79cd3bd7c8c266a42dd7c82b811f5f4584e230845c6e2793"
+  }
+}

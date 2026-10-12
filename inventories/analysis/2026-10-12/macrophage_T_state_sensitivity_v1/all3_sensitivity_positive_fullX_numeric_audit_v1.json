@@ -1,0 +1,73 @@
+{
+  "status": "PASS_ALL3_FULLGENE_ONLY_STATE_RECORDS_ALL_TFS_THREE_VARIANTS",
+  "finished_UTC": "2026-10-12T13:14:42.663617+00:00",
+  "component_refits": 717,
+  "maximum_absolute_difference": 3.197442310920451e-14,
+  "records": [
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "ICAM1",
+      "receptor": "IL2RG",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "ICAM1",
+      "receptor": "IL2RG",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "ICAM1",
+      "receptor": "IL2RG",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "TGM2",
+      "receptor": "SDC4",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "TGM2",
+      "receptor": "SDC4",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "Macrophage_to_T",
+      "ligand": "TGM2",
+      "receptor": "SDC4",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "IFNG",
+      "receptor": "IFNGR1_IFNGR2",
+      "variant": "abundance_complexity",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "IFNG",
+      "receptor": "IFNGR1_IFNGR2",
+      "variant": "subtype_mixture",
+      "patterns": 3
+    },
+    {
+      "direction": "T_to_Macrophage",
+      "ligand": "IFNG",
+      "receptor": "IFNGR1_IFNGR2",
+      "variant": "full_gene_sensitivity",
+      "patterns": 3
+    }
+  ],
+  "numeric_only_not_independent_biological_validation": true,
+  "code_sha256": "b7449a0e37e93f894770c7c65e526a787e624c4d17b851c0398e1de55e0a2141"
+}

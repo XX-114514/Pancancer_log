@@ -1,0 +1,146 @@
+{
+  "observed_UTC": "2026-10-12T13:06:28.565885+00:00",
+  "source": "GSE294109",
+  "cells": 130243,
+  "libraries": 25,
+  "fields": [
+    {
+      "field": "patient_uid",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 15,
+      "nonmissing_unique_patient_tokens": 15
+    },
+    {
+      "field": "patient_identity_status",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 1,
+      "library_value_counts": {
+        "source_linked": 25
+      }
+    },
+    {
+      "field": "author_cell_type",
+      "nonmissing_cells": 0,
+      "nonmissing_libraries": 0,
+      "distinct_nonmissing_values": 0,
+      "library_value_counts": {
+        "__SOURCE_VALUE_MISSING__": 25
+      }
+    },
+    {
+      "field": "cell_type",
+      "nonmissing_cells": 0,
+      "nonmissing_libraries": 0,
+      "distinct_nonmissing_values": 0,
+      "library_value_counts": {
+        "__SOURCE_VALUE_MISSING__": 25
+      }
+    },
+    {
+      "field": "CellType",
+      "nonmissing_cells": 0,
+      "nonmissing_libraries": 0,
+      "distinct_nonmissing_values": 0,
+      "library_value_counts": {
+        "__SOURCE_VALUE_MISSING__": 25
+      }
+    },
+    {
+      "field": "treatment",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 5,
+      "library_value_counts": {
+        "Ipilimumab/Nivolumab": 12,
+        "Untreated": 6,
+        "Axitinib/Pembrolizumab": 4,
+        "Lenvatinib/Pembrolizumab": 2,
+        "Cabozantinib": 1
+      }
+    },
+    {
+      "field": "Treatment",
+      "nonmissing_cells": 0,
+      "nonmissing_libraries": 0,
+      "distinct_nonmissing_values": 0,
+      "library_value_counts": {
+        "__SOURCE_VALUE_MISSING__": 25
+      }
+    },
+    {
+      "field": "timepoint",
+      "nonmissing_cells": 0,
+      "nonmissing_libraries": 0,
+      "distinct_nonmissing_values": 0,
+      "library_value_counts": {
+        "": 25
+      }
+    },
+    {
+      "field": "response",
+      "nonmissing_cells": 0,
+      "nonmissing_libraries": 0,
+      "distinct_nonmissing_values": 0,
+      "library_value_counts": {
+        "": 25
+      }
+    },
+    {
+      "field": "response_source",
+      "nonmissing_cells": 0,
+      "nonmissing_libraries": 0,
+      "distinct_nonmissing_values": 0,
+      "library_value_counts": {
+        "": 25
+      }
+    },
+    {
+      "field": "clinical_tier",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 1,
+      "library_value_counts": {
+        "C": 25
+      }
+    },
+    {
+      "field": "sample_type",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 1,
+      "library_value_counts": {
+        "patient_tumor_tissue": 25
+      }
+    },
+    {
+      "field": "source_alias_acceptance_status",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 1,
+      "library_value_counts": {
+        "pending_primary_library_alias_review": 25
+      }
+    },
+    {
+      "field": "downstream_release_eligible",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 1,
+      "library_value_counts": {
+        "False": 25
+      }
+    },
+    {
+      "field": "source_final_AC",
+      "nonmissing_cells": 130243,
+      "nonmissing_libraries": 25,
+      "distinct_nonmissing_values": 1,
+      "library_value_counts": {
+        "False": 25
+      }
+    }
+  ],
+  "scope": "metadata-only aggregate; technical source acceptance pending; no expression analysis or identity remapping"
+}

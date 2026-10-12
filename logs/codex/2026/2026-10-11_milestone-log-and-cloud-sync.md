@@ -645,3 +645,8 @@ CRAN clubSandwich0.7.0原包官方MD5通过，381023bytes；只在本任务R_lib
 冻结c103f7f0ec7e11387c7b3f472a62d363cf26e7c2已12:59:51 UTC普通push/12:59:58 HTTPS核验；producer13:00:18启动，13:00:34 driver156239/child156247真实存在，无错误，audit未开始。覆盖全部双向LR与TF/三模型，不只8阳性；加入发送HSF1/接收同配体RNA，原患者和完整控制保持。[实测](../../../inventories/analysis/2026-10-12/macrophage_T_state_sensitivity_v1/running_checkpoint_v1.json)。目前未有敏感性结果、不能说已排除共同应激。下一同运行终态/数值核查/原8同TF比较与全family排序，不改原9CM及正式标签。
 
 本机首次日志写入因stdin编码报错，未创建检查点或commit；后续推送得到empty bundle并未执行云端更新。改显式bundled Python/UTF8重写日志，再正常commit/push；科学生产一直运行，不重启。
+
+
+## 2026-10-12T21:17:00.321962+08:00 /UTC 2026-10-12T13:17:00.321962+00:00 全范围共同程序敏感性完成并核查
+
+生产13:00:18—13:09:42/audit13:09:42—13:09:52 UTC exit0，13:10:29进程退出。27744/128608完整家族；主/亚型BH/BY0，全基因BH3/BY0。24均衡输入组8580数值PASS最大7.99e-14；另原8阳性3108/新3阳性717全TF复算PASS。HSPA1A→HSF1+.728→−.258、HSPA8+.658→+.0155，不能宣称已证技术伪影或负向通讯。IFNG–IFNGR1/2→IRF1五源同向/LOSO稳定但仅全基因q=.0497、主q=.239、亚型1，作为模型敏感干扰素程序线索待追，不冒称独立轴。[完整结果/后续主支线](../../../inventories/analysis/2026-10-12/macrophage_T_state_sensitivity_v1/RESULTS.md)。新ccRCC元数据25库/15tokens、结局/时点空、作者标签当前对象缺失、AC待；首probe缺失sentinel误计已v2纠正。首次远端manifest文件名全列过多，随后改只读已知Zarr字段/聚合；未读取新表达或下载数据、未改原9CM/身份。前running节点0e54515616f4857b425f3345e870effa5cb55419已13:02:44普通push/13:02:51 HTTPS核验。

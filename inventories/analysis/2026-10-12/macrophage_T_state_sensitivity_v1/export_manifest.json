@@ -1,0 +1,37 @@
+{
+  "status": "AUDITED_FULL_FAMILY_PROGRAM_CONTROLLED_EXPORT",
+  "summary": [
+    {
+      "variant": "abundance_complexity",
+      "models": 9248,
+      "estimated": 496,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "full_gene_sensitivity",
+      "models": 9248,
+      "estimated": 496,
+      "BH05": 3,
+      "BY05": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "models": 9248,
+      "estimated": 495,
+      "BH05": 0,
+      "BY05": 0
+    }
+  ],
+  "old_eight_fixed_TF_compared": true,
+  "not_proof_artifact_or_communication": true,
+  "outputs": {
+    "all27744_state_controlled_LR_models.tsv.gz": "b3d028afcf75659e3f1a2c8d1c2685184492e3c4c08c7bdf16eb555e269c00af",
+    "summary.tsv": "fc5f141f12a8ee9fb8755e72a6b421bc00f4ad55399be777e0af195d5159fca3",
+    "all27744_joint_comparison.tsv.gz": "2f7727d68674d573a232b3baac7cc7b22b543518e9e55af21fc3da10da5ee26b",
+    "all8_fixed_TF_program_sensitivity.tsv": "f3dbcec618f40be1df1241b3770f29b0ad211577f7ff2f41d3049f729ea0eace",
+    "all_main_BH_records.tsv": "c0bcdb61c3af4ed5795083c340ce58933db817dc4b7d1c5d756416dc87fa065e",
+    "independent_audit.json": "5a2528a1488e2d46d3e8527dd2081717afbe8faf2646deb9d6cde5b261112364",
+    "inventory_public_summary.json": "bd61c03f1f3ac99422ea70169dcf57117b41e88f3579a3a962590e31e40a8cf7"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FAMILY_AND_AGGREGATION_WITH_BALANCED_NUMERIC_FIXTURES",
+  "finished_UTC": "2026-10-12T13:09:52.764218+00:00",
+  "inventory_sha256": "10e96002477bfbb2b7684e258bf1281da2d61ce53797f8c9534ae717e8ce5ca8",
+  "models": 27744,
+  "TF_components": 128608,
+  "numeric_fixture_groups": 24,
+  "numeric_component_checks": 8580,
+  "max_absolute_difference": 7.993605777301127e-14,
+  "all_coefficients_independently_replayed": false,
+  "source_and_LOSO_numeric_checks_included": true,
+  "auditor_sha256": "625228390554a10d79cd3bd7c8c266a42dd7c82b811f5f4584e230845c6e2793"
+}
