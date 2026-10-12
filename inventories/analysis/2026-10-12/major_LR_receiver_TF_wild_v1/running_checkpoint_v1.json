@@ -1,0 +1,24 @@
+{
+  "observed_UTC": "2026-10-12T11:54:25.792873+00:00",
+  "phases": {
+    "production": {
+      "status": "RUNNING",
+      "phase": "production",
+      "started_UTC": "2026-10-12T11:54:10.313461+00:00",
+      "driver_pid": 49233,
+      "child_pid": 49234,
+      "process_present": {
+        "driver_pid": true,
+        "child_pid": true
+      }
+    },
+    "audit": {
+      "status": "NOT_STARTED"
+    }
+  },
+  "last_logged_case_observed": {
+    "context_id": "MAJ013_M01",
+    "LR_index": 2681,
+    "variant": "subtype_mixture"
+  }
+}

@@ -608,3 +608,8 @@ CRAN clubSandwich0.7.0原包官方MD5通过，381023bytes；只在本任务R_lib
 ## 2026-10-12T19:51:11.321199+08:00 /UTC 2026-10-12T11:51:11.321199+00:00 全RNA筛查数值验收BH0 相关TF复核即将执行
 
 原audit71590已11:37:45.369623 UTC exit0；177393模型/87384768组件值全部独立PASS，最大diff4.63e-13，全globBH/BY0保持。wild纯合成11:35:36—11:35:51 exit0，384独立refit全一致，df≥4场景1.2%—7.0%/二项CI含5%，非有限样本保证。原2023名义记录全自动复核×3/原59131家族，20000MC或G≤14完整权重符号对；端点/TF/controls不改。方案发生在原负结果后，明确同数据探索，不冒称独立验证，seed字符串编码预先固定。[筛查](../../../inventories/analysis/2026-10-12/major_LR_receiver_TF_screen_v1/RESULTS.md)，[wildrun](../../../runs/20261012_major_LR_receiver_TF_wild_v1.md)。
+
+
+## 2026-10-12T19:55:07.384819+08:00 /UTC 2026-10-12T11:55:07.384819+00:00 2023全部自动记录联合TF复核真实运行
+
+冻结2f4559da70e91dd4bdd9928c4ae8165493d7a3f3已11:51:25普通push/11:51:31 HTTPS核验。11:54:10.313461 UTC启动driver49233/child49234，11:54:25两个PID真实在，日志至MAJ013_M01/LR2681亚型变体。2023×3复核实际进行、全TF共同权重/固定设计、20000MC，未最终BH/独立audit，不公布单case名义p为成功。原BH0已验收保留。[检查点](../../../inventories/analysis/2026-10-12/major_LR_receiver_TF_wild_v1/running_checkpoint_v1.json)。下一同句柄生产终态→完整选择/概率/BH和显式refit audit→来源/癌种方向及生物端点证据卡；旧job不重启，没有新权威身份/状态/9CM或最终验证轴。

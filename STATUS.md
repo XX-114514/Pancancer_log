@@ -1,3 +1,7 @@
+## 2026-10-12T19:55:07.384819+08:00 /UTC 2026-10-12T11:55:07.384819+00:00 相关TF联合块重采样复核真实运行
+
+[driver49233/child49234](inventories/analysis/2026-10-12/major_LR_receiver_TF_wild_v1/running_checkpoint_v1.json)11:54:25 UTC真实在，2023自动LR×3模型复核/原59131分母、全TF与controls保留。完整BH和独立audit待；原177393模型数值PASS/三模型BH0不改，尚无最终验证轴。
+
 ## 2026-10-12T19:51:11.321199+08:00 /UTC 2026-10-12T11:51:11.321199+00:00 全LR接收TF关联已验收 全局校正0
 
 [177393模型/87384768组件值](inventories/analysis/2026-10-12/major_LR_receiver_TF_screen_v1/RESULTS.md)完整数值PASS，三模型BH/BY均0，原进程退出。相关TF联合wild校准已完成，下一原2023名义记录同数据重采样复核/全59131分母，不改端点/TF/controls，不称独立验证。
