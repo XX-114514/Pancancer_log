@@ -21,6 +21,55 @@ def csr(group, ptr, lo, hi, genes):
                              ptr[lo:hi+1]-start),shape=(hi-lo,genes))
 
 
+def audit_native_qc(directory, contract, obs, var, matrix):
+    """Recompute the complete initial-QC ledger from every native count row."""
+    ledger=pd.read_csv(directory/'native_QC_ledger_private.tsv.gz',sep='\t',keep_default_na=False)
+    n=len(obs);total=np.zeros(n,dtype=np.float64);genes=np.zeros(n,dtype=np.int64)
+    mitochondrial=np.zeros(n,dtype=np.float64)
+    mt=np.asarray(var.index.astype(str).str.upper().str.startswith('MT-'))
+    counts_valid=True
+    for lo in range(0,n,10000):
+        hi=min(lo+10000,n);block=matrix[lo:hi].tocsr()
+        counts_valid &= bool(np.isfinite(block.data).all() and np.all(block.data>=0) and
+                             np.array_equal(block.data,np.rint(block.data)))
+        total[lo:hi]=np.asarray(block.sum(axis=1)).ravel()
+        genes[lo:hi]=block.getnnz(axis=1)
+        if mt.any():mitochondrial[lo:hi]=np.asarray(block[:,mt].sum(axis=1)).ravel()
+    pct=np.divide(100*mitochondrial,total,out=np.zeros(n),where=total>0)
+    author_pass=bool('pass' in obs and obs['pass'].astype(str).str.lower().eq('true').all())
+    floor=(total>0) if author_pass else ((genes>=200)&(total>=500))
+    keep=floor.copy();reasons=np.where(floor,'','low_genes_or_counts').astype(object)
+    expected_thresholds={r['library_token']:r for r in contract['thresholds']}
+    threshold_checks=[]
+    for library,pos in obs.groupby(obs.original_library_id.astype(str),sort=False).indices.items():
+        pos=np.asarray(pos);fp=pos[floor[pos]]
+        median=float(np.median(pct[fp])) if len(fp) else 0.0
+        mad=float(np.median(np.abs(pct[fp]-median))) if len(fp) else 0.0
+        limit=min(25,max(15,median+3*mad));evaluable=bool(mt.any() and np.any(mitochondrial[pos]>0))
+        if evaluable and not author_pass:
+            bad=pos[pct[pos]>limit];keep[bad]=False;reasons[bad]='high_mitochondrial_fraction'
+        token=hashlib.sha256(str(library).encode()).hexdigest()[:12]
+        registered=expected_thresholds[token]
+        threshold_checks.append(bool(registered['n_raw']==len(pos) and registered['n_floor']==len(fp) and
+            registered['mt_evaluable']==evaluable and registered['author_PASS_reused']==author_pass and
+            (np.isclose(registered['mt_threshold'],limit) if evaluable else registered['mt_threshold'] is None)))
+    prior=np.zeros(n,dtype=bool)
+    if 'doublet' in obs:prior=obs.doublet.astype(str).str.lower().isin(['true','1']).to_numpy()
+    remove=prior&keep;keep[remove]=False;reasons[remove]='sample_doublet'
+    checks=dict(all_native_counts_nonnegative_finite_integer=counts_valid,
+        ledger_covers_all_native_cells=len(ledger)==n,
+        ledger_original_ID_order_exact=np.array_equal(ledger.original_cell_id.astype(str),obs.original_cell_id.astype(str)),
+        ledger_original_library_order_exact=np.array_equal(ledger.library_id.astype(str),obs.original_library_id.astype(str)),
+        author_PASS_decision_exact=contract['author_PASS_reused']==author_pass,
+        per_library_thresholds_exact=all(threshold_checks) and len(expected_thresholds)==len(threshold_checks),
+        filter_reason_all_rows_exact=np.array_equal(ledger.filter_reason.astype(str),reasons),
+        prior_doublet_flags_all_rows_exact=np.array_equal(ledger.doublet_status.astype(str),
+            np.where(prior,'predicted_doublet','predicted_singlet')),
+        retained_count_exact=contract['n_raw']==n and contract['n_QC']==int(keep.sum()))
+    return dict(n_native_cells=n,n_initial_QC=int(keep.sum()),
+        n_initial_QC_excluded=int((~keep).sum()),all_checks_pass=all(checks.values()),checks=checks)
+
+
 def audit(root, collection):
     results=[]; global_ids=set(); ready=[]; source_genes={}
     for directory in sorted(root.iterdir()):
@@ -47,7 +96,19 @@ def audit(root, collection):
         if reference_cached:
             upmat=upmat[:].tocsr()
         print(json.dumps(dict(dataset=name,phase='reference_ready')),flush=True)
-        observed=0;dataset_checks=[]
+        native_qc=audit_native_qc(directory,native,upobs,upvar,upmat) if native else None
+        if native_qc:
+            print(json.dumps(dict(dataset=name,phase='initial_QC_audited',**native_qc)),flush=True)
+        qc_ids=None
+        if native:
+            native_ledger=pd.read_csv(directory/'native_QC_ledger_private.tsv.gz',sep='\t',keep_default_na=False)
+            qc_ids=set(native_ledger.loc[native_ledger.filter_reason.eq(''),'original_cell_id'].astype(str))
+        source_IDs_by_library={}
+        for library,positions in upobs.groupby(upobs.original_library_id.astype(str),sort=False).indices.items():
+            ids_for_library=set(original_ids[np.asarray(positions)])
+            source_IDs_by_library[str(library)]=ids_for_library if qc_ids is None else ids_for_library&qc_ids
+        expected_libraries={lib for lib,ids in source_IDs_by_library.items() if ids}
+        observed_libraries=set();observed=0;dataset_checks=[]
         for libsummary in sorted(summary['libraries'],key=lambda x:x['library_token']):
             if libsummary['status']!='success':
                 dataset_checks.append(dict(library_token=libsummary['library_token'],all_checks_pass=False,
@@ -64,13 +125,10 @@ def audit(root, collection):
             lib_names=obs.original_library_id.astype(str).unique()
             if len(lib_names)!=1:
                 raise ValueError('Prepared shard mixes original libraries')
-            native_ledger=pd.read_csv(directory/'native_QC_ledger_private.tsv.gz',sep='\t',keep_default_na=False) if native else None
-            source_expected=upobs[upobs.original_library_id.astype(str).eq(lib_names[0])].original_cell_id.astype(str)
-            if native:
-                qc_ids=set(native_ledger.loc[native_ledger.filter_reason.eq(''),'original_cell_id'].astype(str))
-                source_expected=source_expected[source_expected.isin(qc_ids)]
+            observed_libraries.add(lib_names[0])
+            source_expected=source_IDs_by_library[lib_names[0]]
             extra=set(score_ledger.loc[score_ledger.additional_doublet_removed.astype(str).str.lower().eq('true'),'original_cell_id'].astype(str))
-            expected_ids=set(source_expected)-extra
+            expected_ids=source_expected-extra
             checks['complete_filter_mapping']=set(obs.original_cell_id.astype(str))==expected_ids
             global_ids.update(ids)
             if not native:
@@ -144,8 +202,12 @@ def audit(root, collection):
                     readiness='technical_preparation_pass_source_alias_gate_pending'))
         results.append(dict(dataset=name,n_libraries=len(dataset_checks),n_output=observed,
             reference_bytes=reference_bytes,reference_cached=reference_cached,
+            native_QC_independent_audit=native_qc,
+            nonempty_original_library_coverage_exact=observed_libraries==expected_libraries,
             summary_count_matches=observed==summary['n_output'],
-            all_checks_pass=all(c['all_checks_pass'] for c in dataset_checks),libraries=dataset_checks))
+            all_checks_pass=all(c['all_checks_pass'] for c in dataset_checks) and
+                (native_qc['all_checks_pass'] if native_qc else True) and
+                observed_libraries==expected_libraries,libraries=dataset_checks))
     intersections=[]
     tumor_names=[g for g in source_genes if not g.startswith('CXG_5b9b89d2')]
     if tumor_names:

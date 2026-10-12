@@ -1,0 +1,55 @@
+{
+  "schema": "CAR_author_state_doublet_retention_diagnostic_v1",
+  "observed_utc": "2026-10-12T03:00:25.705390+00:00",
+  "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+  "n_compared_post_QC": 416800,
+  "n_extra_removed": 20207,
+  "author_label_semantics": "author labels retained; they are not independent biological truth",
+  "interpretation": "DP author compartment has higher removal; sensitivity review required; not proof all DP are doublets",
+  "raw_counts_and_filter_mapping_preserved": true,
+  "clinical_state_release_allowed": false,
+  "grouped": [
+    {
+      "field": "cell_type",
+      "author_label": "CD4-positive, alpha-beta T cell",
+      "n_compared": 163973,
+      "n_extra_removed": 6688,
+      "extra_removed_fraction": 0.04078720277118794
+    },
+    {
+      "field": "cell_type",
+      "author_label": "CD8-positive, alpha-beta T cell",
+      "n_compared": 185107,
+      "n_extra_removed": 9361,
+      "extra_removed_fraction": 0.05057075097105998
+    },
+    {
+      "field": "cell_type",
+      "author_label": "double negative thymocyte",
+      "n_compared": 33688,
+      "n_extra_removed": 466,
+      "extra_removed_fraction": 0.013832818807884112
+    },
+    {
+      "field": "cell_type",
+      "author_label": "double-positive, alpha-beta thymocyte",
+      "n_compared": 30427,
+      "n_extra_removed": 3591,
+      "extra_removed_fraction": 0.11802017944588687
+    },
+    {
+      "field": "cell_type",
+      "author_label": "monocyte",
+      "n_compared": 672,
+      "n_extra_removed": 14,
+      "extra_removed_fraction": 0.020833333333333332
+    },
+    {
+      "field": "cell_type",
+      "author_label": "unknown",
+      "n_compared": 2933,
+      "n_extra_removed": 87,
+      "extra_removed_fraction": 0.029662461643368564
+    }
+  ]
+}
