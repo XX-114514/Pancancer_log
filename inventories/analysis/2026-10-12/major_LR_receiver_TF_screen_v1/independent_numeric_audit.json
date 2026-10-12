@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ALL_FULLX_CR2_EFFECTS_DF_LR_UNION_AND_MULTIPLICITY_EXPLORATORY_ONLY",
+  "observed_UTC": "2026-10-12T11:37:45.264556+00:00",
+  "auditor_sha256": "b73f84b6c53cd544f4829755e2d9f99968019b4781600f301c02e216aa0bf4b2",
+  "producer_inventory_sha256": "7c3849882a28f110b04229d1c6d3c9a4cc3990547e4d73ac745b0b91262e114f",
+  "all_LR_variants_checked": 177393,
+  "all_finite_component_values_checked": 87384768,
+  "max_absolute_numeric_difference": 4.631850458736153e-13,
+  "approximation_and_confirmation_limits_retained": true,
+  "no_independent_validation_or_causal_claim": true
+}

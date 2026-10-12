@@ -1,0 +1,27 @@
+{
+  "created_UTC": "2026-10-12T11:46:58.761695+00:00",
+  "status": "PREDECLARED_NOT_STARTED",
+  "producer_sha256": "8a33e59f9e81990515ca8ad81aec61e4a3bead65a8a5195b29b732fd8173995b",
+  "auditor_sha256": "2203762de34524be9e6c15002cbac7267f70fab1709f7a8e5c6098d33c2d2d2b",
+  "CR2_core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "wild_core_sha256": "8908b021330de0af591fc29ecf4debdbd3f40a2bae1efec2064cb913d064e450",
+  "screen_inventory_sha256": "7c3849882a28f110b04229d1c6d3c9a4cc3990547e4d73ac745b0b91262e114f",
+  "screen_audit_sha256": "0625b312d8c703d8a8ad5d45a80655c25135b53c013c1f8d366a4c5b84f853cd",
+  "screen_table_sha256": "ecdfdf24d70ec96d360706c0d40e64755e325e47776e2690d3d9270d77a99fdb",
+  "counts_sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+  "bootstrap_draws": 20000,
+  "enumerate_G_le": 14,
+  "audit_fixture_cases": 24,
+  "selection": "all2023 main nominal LR union p<.05, no manual endpoint or TF selection; same-data exploratory selection, not independent validation",
+  "family": "retain59131 eachvariant, unprocessed internalp1/publicNA; BH exploratory/BY sensitivity",
+  "method": "null-imposed block wild Rademacher, all TFs share block weights; joint max absolute re-studentized CR2 statistics; same complete design remains fixed",
+  "calibration": "30x500 synthetic null datasets with499 weights, all384 fullX refits pass; report all rates, not proof finite sample validity",
+  "limits": [
+    "exact sign-weight enumeration not exact randomization test",
+    "unknown patients/repeated studies/sorting not removed",
+    "global q exploratory not receptor activation",
+    "marginal CR2 intervals remain descriptive, not bootstrap or selection-adjusted CIs"
+  ],
+  "numerical_audit": "all selection/seed/extreme/p/BH fields;24 fixtures32fullX refits each; full20k MC draws not independently repeated",
+  "seed_encoding": "decimal strings preserve uint64 seed exactly through missing-value tables"
+}

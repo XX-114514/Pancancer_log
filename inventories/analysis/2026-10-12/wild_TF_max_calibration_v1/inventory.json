@@ -1,0 +1,16 @@
+{
+  "status": "SYNTHETIC_WILD_MAX_CALIBRATION_COMPLETE",
+  "started_UTC": "2026-10-12T11:35:37.581664+00:00",
+  "finished_UTC": "2026-10-12T11:35:51.451600+00:00",
+  "producer_sha256": "4c86ff4669642c12488e1fdb9a7d65e67e8d76963fd8397ecb01f4e5df3f8cbb",
+  "plan_sha256": "150519e9008e377827d462c57df1648662475a7a3e740fc37f743fbfaa4cd02d",
+  "all_naive_fullX_refits_pass": true,
+  "naive_refits": 384,
+  "summary_rows": 30,
+  "synthetic_only_no_RNA_p": true,
+  "actual_source_or_receptor_validation": false,
+  "outputs": {
+    "null_calibration_summary.tsv": "c48999d791416ea3177b1e96fec92373122bd3b2a32af1237987d9fb975fdf6a",
+    "independent_naive_refit_checks.tsv": "d0553429fd702762362942d86918e35650f425697dab9a7d8a674ae5ac82dc49"
+  }
+}
