@@ -1,0 +1,41 @@
+{
+  "observed_UTC": "2026-10-12T03:05:04.418195+00:00",
+  "register_schema": "native_LR_program_evidence_register_v17",
+  "registered_active_jobs": 0,
+  "verified_execution": {
+    "production": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_PREFLIGHT_PRODUCTION",
+        "phase": "production",
+        "started_UTC": "2026-10-12T03:01:16.131548+00:00",
+        "pid": 68822,
+        "script_sha256": "4c3ee9d60151e387a63069d07131ace5026223b560ff523fd53ea0174618a17f",
+        "child_pid": 68826,
+        "finished_UTC": "2026-10-12T03:01:54.860733+00:00",
+        "exit_code": 0
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "audit": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_PREFLIGHT_AUDIT",
+        "phase": "audit",
+        "started_UTC": "2026-10-12T03:01:54.863811+00:00",
+        "pid": 68822,
+        "script_sha256": "ea8df3808b9de277cd4655ced44a57ad98bf2954f24ef670497413d9c61d5695",
+        "child_pid": 79312,
+        "finished_UTC": "2026-10-12T03:02:16.587436+00:00",
+        "exit_code": 0
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    }
+  },
+  "state_conflicts": [],
+  "axis_validation_complete": false
+}

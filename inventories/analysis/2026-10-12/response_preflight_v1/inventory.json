@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_PREFLIGHT_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-12T03:01:16.490967+00:00",
+  "finished_UTC": "2026-10-12T03:01:54.813270+00:00",
+  "producer_sha256": "4c3ee9d60151e387a63069d07131ace5026223b560ff523fd53ea0174618a17f",
+  "plan_sha256": "d65f16f08dcb3d5f45e36283f4fd835164822995ad2e5ac6c5b94cd09d777b0b",
+  "input_sha256": {
+    "full_inventory": "dd4358cd5f1c8aaa3e26e95f6eb04be7eaf5ee61f13b23cdc58a3021c66f1efc",
+    "full_audit": "15985514d7f2a6bd48d49aed89e41454ef7a7688e328f3e9a4ba3d077af68656",
+    "native_inventory": "4e8ff089c20dd232dde4546d473a66cc0541fd2ffc7775ab6bb77da145b95ef5",
+    "provenance_inventory": "14d645b71502c2f1a6fcd8453882b9261c48949c5a99ce8834793d489d73ccc0",
+    "provenance_audit": "baef7eb72fb4d351623e2aa8d8a51343058f512f928b0bbb3dfd8804af1b62ac",
+    "membership": "04d127a0edfa682ce253543171e1e642fbb9821c1ffc4e095d6dbe6774ba2e5b",
+    "fixed_candidates": "d6ccd1f825117cd3a0c1aef079a2f22eb9c73a5800b2eddfa4307f3bf04f8e3b"
+  },
+  "summary": {
+    "frozen_records": 336,
+    "unique_interfaces": 248,
+    "original_receiver_node_records": 620,
+    "source_context_node_status_counts": {
+      "COUNT_VARIATION_DIAGNOSTIC_DESIGN_SCREEN_PASSED_NOT_INFERENCE": 325,
+      "INSUFFICIENT_PAIRED_LIBRARIES_OR_BLOCKS": 153,
+      "RECEIVER_ORIGINAL_NODE_NOT_CAPTURED": 119,
+      "NO_EXACT_LIGAND_TARGET_PRIOR": 23
+    },
+    "scope": "Current3 audited sources,all336 mapping,all13 catalogue nodes separately; missing original nodes retained",
+    "inference_not_accepted": true
+  },
+  "outputs": {
+    "all_interface_original_node_preflight.tsv": "e5eb1cdee2af3bc48d0d4b26a824439928d9b649c031e1ad5533375c8168dcf7",
+    "all336_to_unique_interfaces.tsv": "825b20e56bf9dd01e992c022c3892f9d73ad916cbaeb975528cdc2e7c65fef60"
+  },
+  "new_models_fitted": false,
+  "formal_states": false,
+  "canonical_Zarr_changed": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

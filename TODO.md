@@ -1,5 +1,9 @@
 # 可执行任务
 
+## 2026-10-12T11:15:24.098787+08:00 B2基础预检验收，下一项完整控制设计
+
+B2-PREFLIGHT：done_all336_mapping620nodes_independent_native_cell_audit_no_inference。下一阶段覆盖原620记录、237基础可行接口和其余失败/缺失，预声明响应构建及完整控制design（major比例、发送亚型混合、共享程序）、诊断/主分析和完整多重检验家族，不静默删共线项。需要完整设计实际可识别、结局可测后再派发关联检验；325基础screen通过不能当全部主模型可估计。[结果](inventories/analysis/2026-10-12/response_preflight_v1/public_results_summary.json)。
+
 ## 2026-10-12T10:48:39.301099+08:00 UNIT-01已完成，下一项响应可比性
 
 UNIT-01：done_all1290_provenance_overlay_independent_audit_no_block_reassignment。下一项B2-PREFLIGHT：使用v17全基因单位和已审患者块，覆盖全部336候选/固定情境，原编号分别报告端点细胞/复合物基因可测、有效块、靶表达和变异；共享程序记录去重映射，缺失不当阴性，预声明合同后执行。当前尚未派发该preflight或新统计模型。[输入验收](inventories/analysis/2026-10-12/patient_block_provenance_overlay_v1/independent_audit.json)。

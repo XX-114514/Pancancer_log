@@ -1,0 +1,19 @@
+{
+  "observed_scope": "All audited3 sources and4families",
+  "mode_used_for_future_control_inputs": "marker_supported_main",
+  "fullgene_family_counts_match_all12_source_family_comparisons": true,
+  "provisional_sensitivity_not_interchangeable": true,
+  "cache_relative_path": "source_reviewed_family_LR_cache_v1/source_reviewed_native_family_expression_cache.npz",
+  "variables_available": [
+    "within_major_fractions",
+    "all_cell_fractions",
+    "all_sample_family_member_mixture.tsv.gz",
+    "all_sample_family_gene_programme_scores.tsv.gz"
+  ],
+  "cache_parent_audit_status": "PASS_ALL52_SOURCE_NATIVE_DENSE_REAGGREGATION_BOTH_MEMBERSHIP_MODES_ALL1933_GENES_DENOMINATORS_MEMBER_FRACTIONS_AND_PROGRAMMES",
+  "limits": [
+    "Source/cell counts alignment only; new final response design not implemented",
+    "Original receiver node major fraction must derive from its own n_cells and major denominator; family fraction is not node fraction"
+  ],
+  "new_models_fitted": false
+}

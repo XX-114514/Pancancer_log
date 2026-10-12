@@ -1,0 +1,34 @@
+{
+  "frozen_records": 336,
+  "unique_source_context_interfaces": 248,
+  "original_receiver_node_records": 620,
+  "diagnostic_screen_pass_records": 325,
+  "screen_pass_unique_interfaces": 237,
+  "original_records_with_at_least_one_screen_pass_node": 321,
+  "by_source": {
+    "GSE179994": {
+      "node_records": 29,
+      "unique_interfaces": 21
+    },
+    "GSE183904": {
+      "node_records": 29,
+      "unique_interfaces": 29
+    },
+    "GSE270680": {
+      "node_records": 267,
+      "unique_interfaces": 187
+    }
+  },
+  "rank_design_is_not_final_inferential_model": true,
+  "statistical_models_fitted": false,
+  "axis_validation_complete": false,
+  "frozen_catalogue_nodes": 13,
+  "receiver_nodes_in_fixed_candidate_scope": 9,
+  "receiver_families_in_fixed_candidate_scope": [
+    "B_cell_MS4A1",
+    "T_cell_CCL5",
+    "T_cell_IL7R"
+  ],
+  "myeloid_original_nodes_not_tested_in_this_fixed_candidate_scope": 4,
+  "not_tested_does_not_mean_negative": true
+}

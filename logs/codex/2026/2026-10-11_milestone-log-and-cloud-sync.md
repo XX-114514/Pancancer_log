@@ -357,3 +357,17 @@ UTC 2026-10-12T02:48:39.301099+00:00 /UTC+8 2026-10-12T10:48:39.301099+08:00。v
 九列L/R、双方细胞数、完整RNA和nGenes及截距设计只做SVD诊断，不拟合系数或p；它尚不含最终major分母、发送身份混合和共同程序，不能冒称主模型可估计。独立auditor不导入producer，以原生逐细胞cache重构两端计数/全RNA归一化L/R均值、患者块和QR秩，核全部节点记录/336映射及靶覆盖。真实生产/审计尚未开始。缺失数值用nullable整数避免混合CSV类型误读；保留旧表/身份/患者块/阴性/失败，不改canonical。
 
 已读AGENTS/README/STATUS/TODO/ROADMAP、RUNTIME_SYNC、相关run/daily/task、已审input artifacts；未暂存并发ambient段、脚本或未跟踪产物。源码语法及冻结SHA检查通过；diff/仓库轻量验证和普通push后实际派发，检查真实终态再发布结果。科学目标仍未完成，预检通过不是验证轴。建议commit：tools: freeze full candidate original-node response feasibility and audit。
+
+## 2026-10-12T11:15:24.098787+08:00 全候选响应预检真实成功及关键数据发现
+
+UTC 2026-10-12T03:15:24.098787+00:00 /UTC+8 2026-10-12T11:15:24.098787+08:00。前一节点7e7ef92187d618bbf601c937d23e06745fc13290于02:59:56.572330 UTC普通push、03:00:00.026262独立HTTPS核验；[回执](../../../inventories/analysis/2026-10-12/response_preflight_code_git_receipt_v1.json)。并发20505b1预处理审计提交保留，不称本CM结果。
+
+生产03:01:16.131548—03:01:54.860733 UTC、audit03:01:54.863811—03:02:16.587436 UTC均exit0；driver68822、children68826/79312核实运行及真实终止。观察2026-10-12T03:05:04.418195+00:00确认各PID不存在、v17活跃空、0conflicts。全部336映射248唯一来源/情境/方向/LR，展开620原接收编号：325基本screen通过、153样本/块不足、119未捕获、23缺先验。独立不importproducer，以原生逐细胞RNA/rawcount重建496诊断设计并QR复算、全部620/336及目标表达通过。[验收](../../../inventories/analysis/2026-10-12/response_preflight_v1/independent_audit.json)及SHA读回一致。
+
+325不是显著性或独立机制；它们涉及237接口、回映321程序记录，分来源29节点/21接口lung179994、29/29gastric183904、267/187gastric270680，不能据这些数量称跨癌种复现。九列基础rank尚未包含major分母、发送混合或共享状态。数字编号对覆盖影响明确：肺T_CCL5_31有32对照文库/块而_38为18，_74未捕获；不能把同名当身份相同或为凑样本直接合并。HBEGF接口在IL7R_28/36分区27/32块，但top200只有20/22靶≥1%检测，稀疏与可检验分母必须并列。
+
+完整控制input追溯：已审source_reviewed_native_family_expression_cache.npz含2模式×4家族×1290文库，1933LR基因，within_major/allcell比例及RNA均值；逐3源×4家族n_cells均与全基因模式marker_supported_main完全一致。provisional_sensitivity多个家族不一致，不能误用。发送节点混合与programme字段定位完成，尚未实现完整响应设计/模型，没有新p值、正式状态或轴验证。原baseline13/172/9CM、病例块、阴性和历史不改。
+
+下一真实有界任务：冻结response定义、所有620记录检验分母、完整协变量、原编号/来源特异机制先验与独立验证来源，然后实际评估完整矩阵并关联/审计；不是改旧半径或程序追显著。本轮无科学失败重跑；未暂存并发新技术元数据/研究日志。diff/JSON/TSV/SHA/隐私与仓库轻量检查后普通push。科学goal保持active，基础preflight不是完成目标。
+
+补充范围核对：输入冻结13节点目录；原336候选实际仅T/B三家族，因此620条展开涵盖9个接收编号，4个髓系目录节点不在原候选接收框架、没有检验，不能当阴性或宣称本轮覆盖所有髓系/9CM轴。没有因新结果删除它们；未来原9CM/全细胞对另范围自动筛查。提交前diff/结构化SHA/TSV及仓库检查0 errors/1既有历史路径warning；未上传样本/患者/矩阵，无关技术元数据和研究日志保留。

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ALL336_MAPPING_ALL_ORIGINAL_RECEIVER_NODE_COUNT_TARGET_AND_NATIVE_CELL_DESIGN_DIAGNOSTICS",
+  "started_UTC": "2026-10-12T03:01:55.262657+00:00",
+  "finished_UTC": "2026-10-12T03:02:16.522314+00:00",
+  "auditor_sha256": "ea8df3808b9de277cd4655ced44a57ad98bf2954f24ef670497413d9c61d5695",
+  "producer_inventory_sha256": "164231c1fc5c3c61ad968c03e3f7fff359d49235bf729e1e3f8442f30b7ce38d",
+  "frozen_record_mapping": 336,
+  "unique_interfaces": 248,
+  "checked_receiver_node_records": 620,
+  "cell_reconstructed_designs": 496,
+  "source_record_counts": {
+    "GSE179994": 60,
+    "GSE183904": 76,
+    "GSE270680": 484
+  },
+  "new_models_fitted": false,
+  "final_inference_accepted": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}
