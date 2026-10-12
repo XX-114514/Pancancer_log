@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ALL_CANDIDATE_MASKS_DESIGN_STATUSES_MIXTURE_SUBSPACES_AND_SOURCE_COUNTS",
+  "observed_UTC": "2026-10-12T10:31:29.958281+00:00",
+  "auditor_sha256": "625b0a7fe88fb7ef1fbbbed763a92ec00c235ddc84ae525e609c8f598ea4d74a",
+  "producer_inventory_sha256": "4cfc0511aecf1782452146c1a0b0284f8b7ad7e9f50e03ab0bfa495399ab9ac5",
+  "all_family_cases_checked": 5891034,
+  "all_LR_designs_checked": 118262,
+  "all_contexts_checked": 318,
+  "all_source_interface_keys_checked": 3037784,
+  "no_effects_p_or_functional_validation": true
+}

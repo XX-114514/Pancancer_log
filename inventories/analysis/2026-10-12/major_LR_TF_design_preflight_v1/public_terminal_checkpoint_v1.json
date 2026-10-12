@@ -1,0 +1,32 @@
+{
+  "observed_UTC": "2026-10-12T10:32:00.910971+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T10:12:03.293724+00:00",
+      "driver_pid": 62874,
+      "child_pid": 62895,
+      "finished_UTC": "2026-10-12T10:20:41.895725+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T10:20:41.897147+00:00",
+      "driver_pid": 62874,
+      "child_pid": 139688,
+      "finished_UTC": "2026-10-12T10:31:30.944540+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    }
+  },
+  "independent_audit_pass": true
+}
