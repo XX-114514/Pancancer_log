@@ -1,3 +1,7 @@
+## 2026-10-12T20:39:42.890592+08:00 /UTC 2026-10-12T12:39:42.890592+00:00 巨噬—T跨来源新模型运行中
+
+[实际进程](inventories/analysis/2026-10-12/macrophage_T_multisource_response_v1/running_checkpoint_v1.json)：五癌种原发组织双向全部LR/兼容TF，完整情境调整及共享患者分块；真实生产中、审计待。旧全局阴性保留，尚无验证通过轴。
+
 ## 2026-10-12T20:27:23.436958+08:00 /UTC 2026-10-12T12:27:23.436958+00:00 联合重采样全审结束 仍无全局阳性
 
 [5477实际复核/768独立refit](inventories/analysis/2026-10-12/major_LR_receiver_TF_wild_v1/RESULTS.md)通过，三模型BH/BY0，原任务进程均退出；未验证轴。新[来源适用性](inventories/analysis/2026-10-12/source_cancer_context_review_v1/RESULTS.md)：179994可8对单谱系状态探索，当前主细胞对preonly；274229现43全human，官方mouse治疗不混入。原9CM/身份/权威库保持。
