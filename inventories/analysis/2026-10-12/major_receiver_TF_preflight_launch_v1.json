@@ -1,0 +1,15 @@
+{
+  "status": "LAUNCHED_NOT_TERMINAL",
+  "observed_UTC": "2026-10-12T09:47:00.110970+00:00",
+  "driver_pid": 285024,
+  "code_sha256": {
+    "major_receiver_TF_preflight_v1.py": "fca20e5fce4ed052b235377ddd07d33beb05b9847193e96ef17bc6f2d84271f0",
+    "audit_major_receiver_TF_preflight_v1.py": "0b8661473ac4dd24b2cd70880ffc26cfbe966d9df298e36b4228a41bb6f102b2",
+    "major_receiver_TF_preflight_plan_v1.json": "076955699fbc02bd90e89d72274eebe55dc4dabcd880adcd7d5fedd7c66b9f11",
+    "collectri_reference_v1/official_decoupler192_wheel_provenance.json": "a64bd7d6eac20b99a91094f0e8aba93e624241f22d56171f45e03c69f1d3e665",
+    "collectri_reference_v1/provenance.json": "fec6da0028eb2ae9aca2bdc06d72fca9c6fc8ad11b0a6b04bdbe354298cd27ba",
+    "collectri_reference_v1/human_collectri_raw.tsv": "a997c3ca8c684f9f096c889c5d988334ed4bb01642f1b795eb066a9148f9deb2",
+    "collectri_reference_v1/human_collectri_signed_complexes.tsv": "bb623ff91b49dc1e3f6066a2548c255e2c58a75609f565615028fc52baa14d8e",
+    "collectri_reference_v1/official_decoupler192_ULM_source.txt": "17954dbf35dbb10f358a330d271588867fc54be11552997726992353157664a1"
+  }
+}

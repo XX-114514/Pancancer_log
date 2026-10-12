@@ -1,0 +1,66 @@
+{
+  "created_UTC": "2026-10-12T09:44:29.190577+00:00",
+  "status": "PREDECLARED_NOT_STARTED",
+  "producer_sha256": "96842c0f943c854aabbad8aa60041a25e833a6ecc96f19065d1d8941d1e98e23",
+  "auditor_sha256": "918335d661a522a5a4923a74280c56a5406f4e242eacadc03e2967ea0f6e10a2",
+  "major_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "major_audit_sha256": "68b5df3f4897e4a726bb18167792069362c321e534bf5dcf2c8c8e02f7f9a954",
+  "LR_resource_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "reference_files": {
+    "official_decoupler192_wheel_provenance.json": "a64bd7d6eac20b99a91094f0e8aba93e624241f22d56171f45e03c69f1d3e665",
+    "provenance.json": "fec6da0028eb2ae9aca2bdc06d72fca9c6fc8ad11b0a6b04bdbe354298cd27ba",
+    "human_collectri_raw.tsv": "a997c3ca8c684f9f096c889c5d988334ed4bb01642f1b795eb066a9148f9deb2",
+    "human_collectri_signed_complexes.tsv": "bb623ff91b49dc1e3f6066a2548c255e2c58a75609f565615028fc52baa14d8e",
+    "official_decoupler192_ULM_source.txt": "17954dbf35dbb10f358a330d271588867fc54be11552997726992353157664a1"
+  },
+  "scope": "all2028 major units from11 frozen sources/all276 original directions; every material overlay subcontext retained; original roster remains history",
+  "TF_network": {
+    "retrieved_UTC": "2026-10-12T09:39:38.477620+00:00",
+    "url": "https://omnipathdb.org/interactions/?genesymbols=1&datasets=collectri&fields=references&license=academic",
+    "raw_sha256": "a997c3ca8c684f9f096c889c5d988334ed4bb01642f1b795eb066a9148f9deb2",
+    "raw_bytes": 12075845,
+    "raw_rows": 64516,
+    "transformed_rows": 40634,
+    "TF_regulators": 1163,
+    "targets": 6628,
+    "signed_weights": [
+      -1,
+      1
+    ],
+    "transformation": "decoupler1.9.2 get_collectri human split_complexes=False; inhibitory duplicate priority",
+    "network_sha256": "bb623ff91b49dc1e3f6066a2548c255e2c58a75609f565615028fc52baa14d8e",
+    "source_resource_not_expression_data": true,
+    "public_network_upload": false
+  },
+  "method": "decoupler1.9.2 ULM numeric algebra, sparse float64; all nonempty native genes, min5 matched targets; native whole-gene sensitivity; no returned gene-level p interpreted as pathway or association FDR",
+  "primary_nonLR_excludes": "global union of all4624 ligand/receptor components, both targets and background universe",
+  "footprint_gate": {
+    "min_measured_targets": 20,
+    "min_detected_targets_ge1pct": 10,
+    "min_fraction_libraries_supported": 0.8,
+    "variable": true
+  },
+  "context_gate": {
+    "min_libraries": 20,
+    "min_effective_blocks": 10
+  },
+  "LR_RNA_gate": {
+    "all_components_measured": true,
+    "ligand_variable": true,
+    "min_positive_cells_fraction": 0.01,
+    "min_fraction_ligand_libraries": 0.5,
+    "min_fraction_receptor_libraries": 0.8
+  },
+  "scientific_limits": [
+    "Expression footprint not direct TF binding/phosphorylation",
+    "Not receptor-specific induced response",
+    "Cross-source absolute TF scores not commensurate; standardize future models within corrected strata",
+    "Native same-gene target overlap removed but composition/complexity/confounding remain",
+    "All targets measured absent vs RNA zero distinct; sample fallback blocks retained",
+    "Breast primary versus involved LN split; no global69 patient promotion"
+  ],
+  "outputs": "source counts and corrected-context coverage only public; all unit/TF vectors and context TF records private; no ligand-response association p",
+  "audit": "independent raw resource transformation, all OLS beta/SSR-based scores, all targeted detection counts, actual official ULM function representative rows/allTF, all corrected patient/material/group keys and readiness flags",
+  "repair": "v1 source score preparation succeeded, then undefined lookup row index; v2 enumerates unit tuples in producer and auditor. Scientific inputs/math/gates identical; new output directory, old failed outputs preserved",
+  "supersedes_execution_only": "major_receiver_TF_preflight_v1"
+}

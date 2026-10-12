@@ -15,3 +15,8 @@
 ## 方法依据
 
 [官方有向网络接口](https://decoupler.scverse.org/en/v1.9.2/generated/decoupler.get_collectri.html)提供正负调控靶；[官方ULM](https://decoupler.scverse.org/en/v1.9.2/generated/decoupler.run_ulm.html)将基因表达对调控权重的回归t作为活动足迹。这里的细胞数加权平均RNA输入、非LR基因集和支持门槛是本次具体分析设计，不能称受体特异激活证据。跨来源绝对分数不可直接比较，未来关联在情境内标准化。
+
+
+## 2026-10-12T17:50:19.053115+08:00 /UTC 2026-10-12T09:50:19.053115+00:00 TF索引错误已修复，新输出版本待执行
+
+v1 producer09:47:00.170057—09:47:11.795263 UTC exit1：全部源评分后，样本/大类lookup缺少enumerate导致NameError；审计未启动。driver285024/child285025已不存在，原部分输出及代码保留。09:47首次SSH查询超时，09:48:47重连取证成功，没有重复启动旧任务。v2仅补行索引，输入/网络/公式/门槛不变，改用新目录并完整重算和审计；不是数据失败或生物阴性。[失败](../inventories/analysis/2026-10-12/major_receiver_TF_preflight_failure_v1.json)，[v2合同](../inventories/analysis/2026-10-12/major_receiver_TF_preflight_plan_v2.json)。

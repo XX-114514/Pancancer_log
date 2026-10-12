@@ -1,0 +1,22 @@
+{
+  "observed_UTC": "2026-10-12T09:48:47.520308+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_FAILED",
+      "phase": "production",
+      "started_UTC": "2026-10-12T09:47:00.170057+00:00",
+      "driver_pid": 285024,
+      "child_pid": 285025,
+      "finished_UTC": "2026-10-12T09:47:11.795263+00:00",
+      "exit_code": 1,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    },
+    "audit": {
+      "status": "NOT_STARTED"
+    }
+  },
+  "failure": "NameError: unit lookup row index not enumerated; failure before corrected-context outputs and audit"
+}
