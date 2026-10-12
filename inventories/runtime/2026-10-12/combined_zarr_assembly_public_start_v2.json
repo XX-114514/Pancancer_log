@@ -1,0 +1,19 @@
+{
+  "schema": "combined_public_zarr_assembly_launch_v2",
+  "started_utc": "2026-10-12T04:28:39.962278+00:00",
+  "pid": 144718,
+  "code_git_sha": "d8a53ee4feecff2129b70cc1564c90f706e667dd",
+  "component_sha256": {
+    "merge_public_preprocessed_zarr.py": "171d2f4bc32a939963542673ab5a5641bcf37f6bed84e4a0a51241ef6641daf5",
+    "audit_combined_public_zarr.py": "6e273aa31ce843692d71c1fa6ff3a19ae5e8ec43dec3a5520bc5f89964b0222f",
+    "run_public_zarr_completion.py": "5639359c7b5a6548452df3de61ec4674d0789d505af91596f6f26e2ba70b3bd9",
+    "public_gene_identity_contract.py": "c6e68e85ec496f5483e9104a09607b38f7d657e1d6fd326f15c3d1941dbc9fd7"
+  },
+  "temporary_volume_role": "intermediate_processing_only",
+  "final_volume_role": "original_project_volume_independent_new_run",
+  "phase": "waiting_full_nine_source_preprocessing_audit",
+  "source_final_AC": false,
+  "final_accepted_new_cells": 0,
+  "new_downloads_started": false,
+  "batch_correction_performed": false
+}
