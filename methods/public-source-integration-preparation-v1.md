@@ -38,3 +38,9 @@
 CAR-T旧QC的416,800细胞中，新增预测双细胞移除20,207（4.85%）。作者CD4/CD8双阳性标签移除3,591/30,427（11.80%），CD4单阳性4.08%、CD8单阳性5.06%。这是筛除偏好诊断，不能断言双阳性全是双细胞或全是假阳性；作者“thymocyte”标签也不直接证明制造后T产品具有胸腺细胞身份。原始计数和被筛细胞映射保留，后续需并列筛除前后的状态效应。[聚合证据](../inventories/runtime/2026-10-12/CAR_author_state_retention_v1.json)。
 
 全行技术类型与文库混合检查的实际证据：[native technology context](../inventories/runtime/2026-10-12/native_technology_context_v1.json)。作者污染处理历史为待核验字段。
+
+## 作者处理历史：后续覆盖规则
+
+[LBCL原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC12417684/)记录SoupX/作者doublet处理，当前598289为非恶性LME子集；[乳腺原文](https://www.nature.com/articles/s41591-024-03215-z)记录Cell Ranger/Cell Bender工作流和Scrublet。当前下载槽是否已对应其校正后矩阵还需核对，不能仅靠整数判定。方法覆盖表[source_processing_history_overlay_v1](../inventories/runtime/2026-10-12/source_processing_history_overlay_v1.json)优先于早期unknown记录。两来源的追加DecontX只保留诊断/敏感性；准备清单拟选counts并要求重新normalize，不直接使用可能来自DecontX的既有X。没有改变生产对象或伪造先前参数。
+
+严格技术候选数不等于最终整合细胞选择；实际选层、细胞掩码和上述历史必须共同冻结。[当前已审计分片清单](../inventories/runtime/2026-10-12/preintegration_preparation_checkpoint_v1.json)仍全部integration_allowed=false。

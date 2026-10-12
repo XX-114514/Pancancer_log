@@ -85,3 +85,12 @@ prepare_v3实际启动2026-10-12T02:15:17.694990 UTC（10:15:17 UTC+8），代�
 - 全行技术元数据复核4原生CELLxGENE源：SPECTRUM cell，LBCL/HGG/乳腺nucleus，乳腺v2/v3均在各原始文库内唯一；作者是否已污染处理仍unknown，未从整数raw/X推断“未经校正”。
 - HNS部分完成40文库中25个污染估计待复核：21个marker损失、8个高UMI损失（可重叠），0不收敛。继续保留raw并阻止采用这些估计，不能把处理成功解释为污染清除通过。
 - 时间补正：上一人工节点标题11:05:00不是实际取证时间；20505b1提交实际11:03:42，v2应用10:59:05。实际节点以JSON时间戳/commit时间为准，旧标题作为补录背景保留。
+
+## 2026-10-12T11:15:43.446858+08:00 准备清单实际生成与作者处理历史修正
+
+- 11:11:45快照274/792文库、0失败，1340180保留细胞、额外53640预测双细胞；完整队列仍运行。加强审计v3于03:11:59 UTC完成3来源92文库579361细胞，全量count/ID/规范化/非空文库覆盖全PASS。
+- 已实际生成preintegration_preparation_checkpoint_v1：92个逻辑分片引用、层选择/技术掩码角色及仍未放行的来源/作者历史/用户scope条件；未整合、未增加正式AC。
+- 原文方法核实LBCL已SoupX1.6.2及scDblFinder1.12.0，且598289是非恶性LME分支，不能作全肿瘤分母；乳腺原workflow含Cell Bender0.1.0、Scrublet0.2.1。论文方法与本地exact raw/X槽追溯分开；作者校正方法已documented，具体slot仍pending。后两来源追加DecontX层仅诊断/敏感性，拟选择counts时必须重新计算normalize，不能直接复用当前X。原生产和所有层保留；作者历史覆盖表进入准备合同，最终source gate仍false。
+- 原文URL与简要方法字段在source_processing_history_overlay_v1，不把filtered/public counts笼统称“未去污染原始液滴”。HGG文献包括不同assay双细胞章节，具体snRNA槽方法须进一步对应，暂不把ATAC/multiome参数移植到当前RNA对象。
+- 新finalizer组件已写入并语法验证：等当前既有队列真实终态及全量独立audit PASS后，写服务器可读terminal状态与整合准备清单；失败记录明确中断，始终不自动整合。尚未启动该组件；Git最终结果发布不自动，须后续脱敏审阅/普通push。
+- 4ff6827已普通push，独立HTTPS SHA一致。当前新增公共矩阵下载继续暂停，论文方法只读核查不启动新矩阵下载。
