@@ -19,3 +19,7 @@ python scripts/run_ambient_preparation.py --run-root "${PREPROCESS_RUN_ROOT}" --
 ```
 
 实际启动、终止及独立验收结果将追加；现阶段不声称全量完成。
+
+## 2026-10-12T02:12:48.762758+00:00 恢复记录
+
+prepare_v2因组quota errno122终止，保留部分输出、无全量验收。data4组上限现2048G/已用约1495G；恢复输出为另卷私有`${PREPROCESS_RUN_ROOT}`=prepare_v3，输入原位只读。预算782893303100 bytes+500GiB，小于输出卷约1.598TB实际余量。按原9分支792文库恢复；新增必需参数`--storage-plan "${STORAGE_PLAN}"`。不恢复新下载。

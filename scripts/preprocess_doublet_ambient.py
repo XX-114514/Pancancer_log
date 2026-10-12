@@ -162,6 +162,9 @@ def library_job(a, x_pre, pre_ledger, positions, library, dataset, destination,
                       n_method_overlap=int(np.count_nonzero(calls & old_calls)))
         result['independent_doublet_status']='computed' if doublet_evaluable else 'skipped_lt500_flags_only'
         result['prior_doublet_method']='published_author_flag_or_none' if 'prior_doublet_method' in ledger else 'audited_Scrublet'
+        result['n_prior_doublet_predicted']=int(old_calls.sum())
+        if 'prior_doublet_method' in ledger:
+            result['n_prior_Scrublet_predicted']=0
         cap = int(np.floor(len(calls)*0.08))
         union = calls | old_calls
         overcap = int(union.sum())>cap
@@ -187,6 +190,8 @@ def library_job(a, x_pre, pre_ledger, positions, library, dataset, destination,
         b = b[~b.obs.additional_doublet_removed.to_numpy()].copy()
         raw = sparse.csr_matrix(b.layers['counts']).copy()
         gene_strings=b.var_names.astype(str)
+        mt_mask=np.asarray(gene_strings.str.upper().str.startswith('MT-'))
+        b.obs['mt_metric_evaluable']=bool(mt_mask.any() and raw[:,mt_mask].sum()>0)
         for metric,mask in [('ribo',gene_strings.str.upper().str.match(r'^RP[SL]')),
                             ('hb',gene_strings.str.upper().isin(['HBA1','HBA2','HBB','HBD','HBG1','HBG2','HBE1','HBZ'])),
                             ('ercc',gene_strings.str.upper().str.startswith('ERCC-'))]:

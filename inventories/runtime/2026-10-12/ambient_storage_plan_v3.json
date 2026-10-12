@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-10-12T02:11:14.952242+00:00",
+  "peak_bytes_by_source": {
+    "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 114003010100,
+    "GSE286827": 75886476300,
+    "GSE292046": 22096751700,
+    "GSE294109": 27832477900,
+    "CXG_34f5307e_7b4d_4a48_b68f_2ba844c6414b": 95866386600,
+    "CXG_67b6b9ac_b841_42ce_b2d4_ed2ec12327bd": 134030482800,
+    "CXG_843c1459_e852_429c_9339_17b5760e7716": 91375215800,
+    "CXG_b252b015_b488_4d5c_b16e_968c13e48a2c": 216885539000,
+    "GSE256326": 4916962900
+  },
+  "total_planning_peak_bytes": 782893303100,
+  "reserve_bytes": 536870912000,
+  "free_bytes": 1597909721088,
+  "source_counts_storage": "unchanged_upstream_collection",
+  "output_volume": "verified_alternate_project_volume",
+  "output_group_hard_quota_bytes": 0,
+  "output_group_quota_evidence": "read-only group quota check: no output-volume hard limit; 2026-10-12",
+  "estimation": "100 bytes per native input nonzero; includes preserved count/log/corrected layers and retained temporary exchange matrices"
+}
