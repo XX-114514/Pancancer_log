@@ -1,0 +1,75 @@
+{
+  "schema": "preprocessing_space_permission_review_v1",
+  "observed_utc": "2026-10-12T03:33:07.579198+00:00",
+  "status": "paused_pending_output_volume_confirmation",
+  "n_files": 350148,
+  "allocated_directory_bytes": 16179200,
+  "total_allocated_bytes": 146422484992,
+  "logical_file_bytes": 145256803615,
+  "storage": [
+    {
+      "category": "R_exchange_corrected_output_matrix",
+      "allocated_bytes": 70015766528,
+      "logical_bytes": 69980306101,
+      "n_files": 257
+    },
+    {
+      "category": "R_exchange_input_count_matrix",
+      "allocated_bytes": 31407050752,
+      "logical_bytes": 31406078893,
+      "n_files": 263
+    },
+    {
+      "category": "other_QC_scores_metadata_logs_scripts",
+      "allocated_bytes": 872484864,
+      "logical_bytes": 859542038,
+      "n_files": 4810
+    },
+    {
+      "category": "prepared_decontX_estimate_layer",
+      "allocated_bytes": 14800351232,
+      "logical_bytes": 14717978121,
+      "n_files": 38478
+    },
+    {
+      "category": "prepared_metadata_embedding_and_graphs",
+      "allocated_bytes": 1953431552,
+      "logical_bytes": 1124359014,
+      "n_files": 217878
+    },
+    {
+      "category": "prepared_normalized_expression_layer",
+      "allocated_bytes": 16426016768,
+      "logical_bytes": 16343408669,
+      "n_files": 38478
+    },
+    {
+      "category": "prepared_original_count_shards",
+      "allocated_bytes": 10931204096,
+      "logical_bytes": 10825130779,
+      "n_files": 49984
+    }
+  ],
+  "permission": {
+    "run_owner_matches_current_account": true,
+    "run_mode": "drwx------",
+    "data1_root_writable": false,
+    "administrator_project_volume_authorization_verified": false
+  },
+  "source_inputs_kept_on_original_volume": true,
+  "scientific_processing_scope": {
+    "n_sources": 9,
+    "expected_libraries": 792,
+    "input_cells": 3338473,
+    "new_downloads": false,
+    "global_integration": false
+  },
+  "budget_estimation_not_actual_usage": {
+    "estimated_all_source_peak_bytes": 782893303100,
+    "reserve_bytes": 536870912000,
+    "estimator_bytes_per_native_nonzero": 100,
+    "reserve_actually_allocated": false,
+    "original_user_plan_reserve_bytes": 500000000000,
+    "original_user_plan_scope": "next_batch_peak_not_sum_of_all_nine_sources"
+  }
+}

@@ -240,3 +240,7 @@ STOP remains in force: no new schema, root audit, release-gate, checksum/provena
 ## 2026-10-12T11:15:43.446858+08:00 新增公共来源预处理
 
 PREP-01 running：9源792文库、冻结生产cdcea29；3完整来源92文库加强验收PASS。PREP-02 done_partial_audited_index：已审92分片准备清单/作者历史覆盖/技术分支合同。PREP-03 next_terminal_audit_and_all_source_index：既有队列结束后全量验收和可读终态；来源别名排重、作者count槽、状态敏感性及实际整合scope仍待，不恢复新下载。
+
+## 2026-10-12T11:37:06.841860+08:00 公共预处理暂停
+
+PREP-01/03：operator_hold_pending_user_allowed_volume。用户确认允许的输出卷前不恢复。SPACE-01：实际占用分类已核实136.37GiB/69.3%文本交换，待按原下一批+500GB合同重新设计压缩/必要层；不得自动删除现有文件或假设另卷limit0=管理授权。
