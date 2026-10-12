@@ -1,0 +1,11 @@
+{
+  "schema": "preprocessing_output_volume_user_resume_v1",
+  "event_utc": "2026-10-12T03:45:11.657136+00:00",
+  "authorization": "user_allowed_data1_for_temporary_storage_and_requested_continue_until_combined_zarr",
+  "temporary_volume": "data1_existing_personal_project_area",
+  "final_volume": "data4_existing_PanCancer_Project_v5_area",
+  "scope": "resume_existing_preprocessing_then_audited_combined_zarr",
+  "source_final_AC": false,
+  "existing_results_preserved": true,
+  "large_data_public_git_upload": false
+}
