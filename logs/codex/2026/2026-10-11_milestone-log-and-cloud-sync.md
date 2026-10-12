@@ -395,3 +395,11 @@ M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、
 关联结果与端点计划已普通push至77bff623f2cc59f173874903e0c2a8ad243f6f36，04:08:16.826101 UTC推送/04:08:20.648941独立HTTPS SHA核验。端点04:08:47.431229—04:08:57.019290 UTC exit0；driver367929/child367934终止，活跃登记空。[证据](../../../inventories/analysis/2026-10-12/ADAM12_native_endpoint_probe_v1/public_checkpoint.json)。SHA原生/cache与全panel/fullRNA精确复核，各节点×文库marker检测数同已审全基因汇总一致；不是独立生物验证。
 
 32样本端点ADAM12阳性208/19756，ITGA9接收1/9127、与ITGB1共检出0；ADAM12阳性CD3E187、CD3D145，少量其它谱系信号不能自动改标签/判污染。TRAC native缺失不是阴性；native obs无作者亚型，本次没有完成作者亚型核查。primary literature含ADAM12人Th17/Treg及T细胞自身共刺激，当前不能只按CAF解释；也不能将CCL5群改为Th17/Treg。结果保留来源内表达关联，机制优先级降低，不称验证轴。未新增假设p、下载、删除、重注释或canonical改变。下一原9CM全谱系输入/自动候选范围与外部来源审阅；模型失稳不当阴性。保留并发三脚本/研究日志，完成脱敏、diff、仓库检查后普通push与SHA验证。
+
+## 2026-10-12T12:16:32.297919+08:00 原9CM全来源端点覆盖预声明（UTC 2026-10-12T04:16:32.297919+00:00）
+
+上一goal turn是progress：1860关联/端点核查真实完成并推送b8bb86575054e848d3fc635adf6e0b85bfe29bc4，04:11:20.339524 UTC推送/04:11:24.177284 HTTPS SHA核验。尚无独立验证轴；当前CM active空。本轮阅读当前规范/路线/status/task/daily和CM原run及历史automatic源码，不将并发预处理进度当CM证据。
+
+新发现范围历史：20261010旧automatic实际固定W前10×最多3来源，4197模块模型对应2101不重复stratum/端点/LR，不是4197独立轴；其14候选/外部阴性保留。原120CM边记录60唯一无向关系，现转其全部来源/临床情境覆盖，避免重复top3试验。当前overlay1290、1219 eligible/71 ineligible，97当前情境；LIANA1312文库1248成功64跳过，1290须严格取键交集。当前402reviewed libs/175source scoped患者块沿已审原分组，旧121字段不当当前。
+
+[合同](../../../inventories/analysis/2026-10-12/CM_edge_coverage_plan_v1.json)：全部60×当前和粗诊断情境；双方20细胞、10/20library与10block覆盖并列，保留major/原node未捕获、失败LIANA、重复患者库、未审样本单位。全部输入真实读取SHA及W/H/F键将验收；此阶段不读LR分数、复合物、不拟合关联、不称可用轴。独立CSV Counter重建所有分母和240module有向映射。新源码语法通过，实际未派发。原data4新目录、小汇总，不下载/删除/重注释。保留并发未跟踪3脚本、测试JSON和研究日志；仓库/diff/隐私检查普通push后运行。

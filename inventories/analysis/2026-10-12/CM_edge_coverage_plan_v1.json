@@ -1,0 +1,81 @@
+{
+  "schema": "original9CM_all60_edge_current_context_coverage_plan_v1",
+  "predeclared_UTC": "2026-10-12T04:16:32.297919+00:00",
+  "scope": "frozen v20261010 172 nodes/1290 libraries/9CM/120 CM edge records/60 unique undirected pairs; 120 directed pair interfaces mapped to240 module records",
+  "scope_selected_using": "Original corrected CM edges, not current LR scores/significance; all current strata, no top3 source selection",
+  "context_modes": [
+    "reviewed_context_primary",
+    "coarse_GSE_cancer_class_coverage_diagnostic_only"
+  ],
+  "gates": {
+    "endpoint_cells_each": 20,
+    "diagnostic_library_gates": [
+      10,
+      20
+    ],
+    "minimum_analysis_blocks": 10
+  },
+  "unit_policy": "accepted effective_resampling_block from1290 overlay; reviewed source patient blocks versus sample fallback separately; preserve repeated blocks",
+  "missingness": "endpoint absent/major absent/LIANA unsuccessful retained as separate counts; LR scores and native complex measurement still not read, so do not call candidate analyzable",
+  "input_sha256": {
+    "edges": {
+      "sha256": "27a93e28a65809667ddb732d312e98eeb4c3b9156831f08e03279ff0068763a1",
+      "bytes": 25894
+    },
+    "counts": {
+      "sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+      "bytes": 2710053
+    },
+    "sample_metadata": {
+      "sha256": "9263398c23f8ae7e9623a8c57e2b20ae46ea1b558266fcd5281135779dff2771",
+      "bytes": 413706
+    },
+    "W": {
+      "sha256": "81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29",
+      "bytes": 17344
+    },
+    "H": {
+      "sha256": "5a79054a14ef885fac12bea7611ca63ea754a4d36daca231d3e8ebc3044fac07",
+      "bytes": 277858
+    },
+    "F": {
+      "sha256": "08bf712e8f4e4938b54f5e14f4c68366443aed2ee23a4b1c95aa0dc6e99354eb",
+      "bytes": 918426
+    },
+    "catalogue": {
+      "sha256": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+      "bytes": 70173
+    },
+    "liana_status": {
+      "sha256": "792cb38d365255de54d16f7671d676012ca1042b509e0590661c6548bb678250",
+      "bytes": 745266
+    },
+    "liana_audit": {
+      "sha256": "21d6e45befff652b9ba9ada199634a2e02347b058557b99cc9009fda41f6d194",
+      "bytes": 443446
+    },
+    "provenance_inventory": {
+      "sha256": "14d645b71502c2f1a6fcd8453882b9261c48949c5a99ce8834793d489d73ccc0",
+      "bytes": 1771
+    },
+    "provenance_audit": {
+      "sha256": "baef7eb72fb4d351623e2aa8d8a51343058f512f928b0bbb3dfd8804af1b62ac",
+      "bytes": 884
+    },
+    "provenance_scope": {
+      "sha256": "e7fe741602219561ce1cae496264e819d3e8e6fb0b8de1ba955de628a2ae0ead",
+      "bytes": 937371
+    }
+  },
+  "code_sha256": {
+    "CM_edge_coverage_v1.py": "07c9d9617ce0b1b2856aabb69462c51bfdfb59229d01b41d007fdbde93aeb42d",
+    "audit_CM_edge_coverage_v1.py": "a57746ad723e6ba7d40b3df09b0e8edef9b2bbaac31157cbd92cf991149874d0"
+  },
+  "outputs": "Source/context\u00d7pair aggregate counts and240 directed CM maps; no patient/library rows exported",
+  "independent_audit": "all rows via separate CSV Counters/sample sets and independently recomputed summary; no producer import",
+  "no_LR_tests": true,
+  "no_downloads": true,
+  "no_canonical_changes": true,
+  "formal_states": false,
+  "independent_biological_validation": false
+}
