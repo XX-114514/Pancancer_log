@@ -1,0 +1,50 @@
+{
+  "schema": "full_required_nuisance_span_CM_LR_exploratory_association_v1",
+  "predeclared_UTC": "2026-10-12T06:02:40.195670+00:00",
+  "input_sha256": {
+    "extraction_inventory": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+    "extraction_audit": "627965b2f849e0b5fe68f438b58949a3beded82d4a8a50b8b6a14962f870b3f7",
+    "design_inventory": "5341c4bf5e2349ad3ac16a98a11dad59028a54fcdd0b6e80abc3d6eba5927cf6",
+    "design_audit": "1bacc9783c81c015db607de68ce1bba819b8c3b922d67b1561222088a83f146b"
+  },
+  "code_sha256": {
+    "CM_LR_full_control_association_v1.py": "339fe7c966f20687ba59220f73bb137c814174a4c9bfb49a17e8ef59a25e9ffe",
+    "audit_CM_LR_full_control_association_v1.py": "56a899fe97ab5cadb0ab498a140b553e7bb3c713b64463770ae9201fb436cc7f"
+  },
+  "scope": "all5377 covered cases/all13497 original CM mappings;endpoint-excluded and originalH=26994 records; no LR/CM/source selection using p",
+  "scientific_status": "Supplementary equivalent full-control-space target parameterization; original strict design statuses retained, not retroactively rescued as strict primary fits",
+  "required_controls": "intercept,source/receiver within-major fractions,log1p source/receiver cells all retained in their column space; CM coefficient unique by design; nuisance coefficients not required to be unique",
+  "response": "within reviewed source/technical/tissue/phase context and observed case subset standardize log1p(expr_prod); CM activity similarly standardized; no marker/identity/state change",
+  "point_gates": {
+    "minimum_libraries": 20,
+    "minimum_analysis_blocks": 10,
+    "max_full_space_leverage": 0.95,
+    "effective_basis_condition_less_than": 100000000.0
+  },
+  "inference": "target coefficient via FWL; CR1 cluster covariance with G/(G-1)*(N-1)/(N-rank),t(G-1); not independent/causal validation",
+  "permutation": {
+    "repetitions": 2000,
+    "null": "Freedman-Lane residual null model with ALL nuisance span",
+    "unit": "exchange complete residual vectors only among same-size patient/sample blocks within fixed context; original library order within block preserved; size-bin with1block fixed",
+    "assumption": "approximate conditional exchangeability among equal-size blocks; unknown source/biology/order/sorting not eliminated"
+  },
+  "bootstrap": {
+    "repetitions": 2000,
+    "unit": "whole original source scoped patient/sample block with replacement; fixed original predictor/response scales",
+    "implementation": "weighted row multiplicity mathematically same as duplicated blocks; original nuisance-span rank retained; Gram eigenmin>1e-12 eigenmax and condition ratio<1e16; replicated-observation full hat max<=.95",
+    "minimum_valid_for_CI": 1800
+  },
+  "seed": "SHA256(group_id,observed mask,CM,variant) first8 hex, independent of gene outcome values; deterministic shared template resampling",
+  "BH": "per variant fixed full13497 family; unestimated internal p1 but publicNA; permutation p primary,analytic p descriptive sensitivity; shared underlying LR not counted as independent evidence",
+  "audit": "all coefficients with separate full-X pseudoinverse,CR1/BH and explicit2000 block permutations/bootstrap saved real examples; no producer import",
+  "fixture": {
+    "status": "PASS_KNOWN_CONSTANT_NUISANCE_TARGET_UNIQUENESS_AND_EXPLICIT2000_BLOCK_RESAMPLING",
+    "real_data_used": false,
+    "valid_bootstraps": 2000,
+    "script_sha256": "c0afe46f9b6655b996b822a857f42e9d31f481c72db23bcf26374c6fbdd42994"
+  },
+  "identity_limits": "marker-only broad endpoints and missing formal states preserved; database entries not physical binding; ACTR2 warning and C1QA-CD93 dispute not mechanisms",
+  "no_new_downloads": true,
+  "no_canonical_changes": true,
+  "clinical_blocks_changed": false
+}
