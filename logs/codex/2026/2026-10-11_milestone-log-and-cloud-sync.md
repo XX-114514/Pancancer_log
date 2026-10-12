@@ -389,3 +389,9 @@ M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、
 ## 2026-10-12T12:07:15.946820+08:00 关联数值与控制审计完成（UTC 2026-10-12T04:07:15.946820+00:00补录）
 
 真实事件时间/失败/修复及SHA见[检查点](../../../inventories/analysis/2026-10-12/target_association_v1/public_checkpoint.json)。生产1860记录、566可估计；数值重放和325控制/260098值通过。唯一M1 q与稳定正区间共同通过为NODE0002肺癌ADAM12–ITGB1；M2仅71有效bootstrap，不宣称无效或机制。私有design未出服务器。下一原生端点描述计划已冻结，未执行。未修改并发预处理代码/未跟踪研究日志、原canonical/节点/患者块。已阅读当前规范及相关run/daily/task，检查已有改动；将执行仓库/diff/脱敏检查、普通push与独立SHA核验。
+
+## 2026-10-12T12:10:52.892668+08:00 候选端点执行成功（UTC 2026-10-12T04:10:52.892668+00:00取证）
+
+关联结果与端点计划已普通push至77bff623f2cc59f173874903e0c2a8ad243f6f36，04:08:16.826101 UTC推送/04:08:20.648941独立HTTPS SHA核验。端点04:08:47.431229—04:08:57.019290 UTC exit0；driver367929/child367934终止，活跃登记空。[证据](../../../inventories/analysis/2026-10-12/ADAM12_native_endpoint_probe_v1/public_checkpoint.json)。SHA原生/cache与全panel/fullRNA精确复核，各节点×文库marker检测数同已审全基因汇总一致；不是独立生物验证。
+
+32样本端点ADAM12阳性208/19756，ITGA9接收1/9127、与ITGB1共检出0；ADAM12阳性CD3E187、CD3D145，少量其它谱系信号不能自动改标签/判污染。TRAC native缺失不是阴性；native obs无作者亚型，本次没有完成作者亚型核查。primary literature含ADAM12人Th17/Treg及T细胞自身共刺激，当前不能只按CAF解释；也不能将CCL5群改为Th17/Treg。结果保留来源内表达关联，机制优先级降低，不称验证轴。未新增假设p、下载、删除、重注释或canonical改变。下一原9CM全谱系输入/自动候选范围与外部来源审阅；模型失稳不当阴性。保留并发三脚本/研究日志，完成脱敏、diff、仓库检查后普通push与SHA验证。

@@ -1,0 +1,109 @@
+{
+  "schema": "ADAM12_native_endpoint_descriptive_probe_v1",
+  "started_UTC": "2026-10-12T04:08:47.839588+00:00",
+  "finished_UTC": "2026-10-12T04:08:56.904030+00:00",
+  "status": "COMPLETE_NATIVE_PANEL_REPLAY_AND_FULLGENE_POSITIVE_COUNTS_MATCHED",
+  "script_sha256": "a5f0021431f4147ff5a4610641d8b4785aacb47b3d91ad0b85f499bde6076c56",
+  "plan_sha256": "d4a505b5e91dfc7a31e152997bf2570468587f4679e1d06a6ed9344bfbfafb2e",
+  "native_input_sha256": "a2fdf155262df5e90c0f8d018480317b13c58d93f5c83581ec4b762959cba8a1",
+  "selected_cache_sha256": "a7bbceb99f83111e55dab1f2c217448f7ddf91ff5c5fecf607737a8db97b17f5",
+  "available_genes": [
+    "ADAM12",
+    "ITGB1",
+    "ITGA9",
+    "CD3D",
+    "CD3E",
+    "PTPRC",
+    "COL1A1",
+    "DCN",
+    "LUM",
+    "EPCAM",
+    "KRT19",
+    "LYZ"
+  ],
+  "missing_genes": [
+    "TRAC"
+  ],
+  "native_obs_column_names": [
+    "canonicalID",
+    "canonical_cell_id",
+    "globalcellID",
+    "gse_id",
+    "sampleID",
+    "source_obs_name"
+  ],
+  "summary": [
+    {
+      "test_id": "NODE0001",
+      "receiver_original_node": "T_cell_IL7R_28",
+      "n_paired_libraries": 27,
+      "sender_cells": 17889,
+      "ADAM12_positive_sender_cells": 189,
+      "ADAM12_sender_positive_fraction": 0.010565151769243669,
+      "receiver_cells": 3248,
+      "ITGB1_positive_receiver_cells": 671,
+      "ITGA9_positive_receiver_cells": 1,
+      "ITGA9_ITGB1_same_cell_positive": 0,
+      "libraries_both_L_R_positive_ge": {
+        "1": 23,
+        "5": 11,
+        "10": 5,
+        "20": 2
+      },
+      "ADAM12_positive_sender_per_library_quantiles": [
+        0.0,
+        1.0,
+        4.0,
+        9.0,
+        34.0
+      ],
+      "ADAM12_sender_positive_fraction_library_quantiles": [
+        0.0,
+        0.003697619845792826,
+        0.010062148564664102,
+        0.01980701412777742,
+        0.03219512195121951
+      ]
+    },
+    {
+      "test_id": "NODE0002",
+      "receiver_original_node": "T_cell_IL7R_36",
+      "n_paired_libraries": 32,
+      "sender_cells": 19756,
+      "ADAM12_positive_sender_cells": 208,
+      "ADAM12_sender_positive_fraction": 0.010528447054059526,
+      "receiver_cells": 9127,
+      "ITGB1_positive_receiver_cells": 3215,
+      "ITGA9_positive_receiver_cells": 1,
+      "ITGA9_ITGB1_same_cell_positive": 0,
+      "libraries_both_L_R_positive_ge": {
+        "1": 27,
+        "5": 12,
+        "10": 7,
+        "20": 2
+      },
+      "ADAM12_positive_sender_per_library_quantiles": [
+        0.0,
+        1.0,
+        2.5,
+        9.0,
+        34.0
+      ],
+      "ADAM12_sender_positive_fraction_library_quantiles": [
+        0.0,
+        0.00395407308079115,
+        0.010081579332837102,
+        0.01751417596488019,
+        0.03219512195121951
+      ]
+    }
+  ],
+  "audit": "Native selected panel and full RNA totals exact replay; every original-node/sample/gene positive count matches accepted independent fullgene arrays",
+  "no_new_statistical_tests": true,
+  "no_identity_changes": true,
+  "independent_biological_validation": false,
+  "mechanism_verified": false,
+  "outputs": {
+    "source_endpoint_marker_detection.tsv": "c370a16aca3bb526c74ec6d87ff907fed655ba3fdcbcb812b3ba39a41b38be92"
+  }
+}

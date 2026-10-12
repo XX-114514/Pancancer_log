@@ -1,0 +1,21 @@
+{
+  "observed_UTC": "2026-10-12T04:09:23.348422+00:00",
+  "execution": {
+    "status": "TERMINAL_SUCCESS",
+    "started_UTC": "2026-10-12T04:08:47.431229+00:00",
+    "pid": 367929,
+    "script_sha256": "a5f0021431f4147ff5a4610641d8b4785aacb47b3d91ad0b85f499bde6076c56",
+    "child_pid": 367934,
+    "finished_UTC": "2026-10-12T04:08:57.019290+00:00",
+    "exit_code": 0
+  },
+  "process_absent": {
+    "pid": true,
+    "child_pid": true
+  },
+  "registered_active_jobs": [],
+  "output_sha256": {
+    "summary.json": "ada0593430cd488767691d559834a9de416ccd1feef2d264876b85979e632cee",
+    "source_endpoint_marker_detection.tsv": "c370a16aca3bb526c74ec6d87ff907fed655ba3fdcbcb812b3ba39a41b38be92"
+  }
+}

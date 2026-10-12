@@ -1,5 +1,10 @@
 # 可执行任务
 
+## 2026-10-12T12:10:52.892668+08:00 B3-ENDPOINT完成，A2/B4继续
+
+端点计数匹配完成，ADAM12来源限定/受体证据不足。下一A2定位原9CM全部细胞对与完整每样本LIANA输入，预声明全谱系自动候选范围；B4逐已审来源核可比单位与发现/验证重叠。共享程序敏感性另预声明完整家族，不只追本候选p。[依据](inventories/analysis/2026-10-12/ADAM12_native_endpoint_probe_v1/RESULTS.md)。
+
+
 ## 2026-10-12T12:07:15.946820+08:00 B3探索验收，下一步端点与外部覆盖
 
 B3：done_all1860_numeric_and325_input_controls_audited_not_validation。B3-ENDPOINT：固定ADAM12原生RNA/受体搭档/谱系描述核查，保留标签与阴性；B4：逐来源审同端点可比单位和发现使用历史，冻结真正留出验证。A2原9CM全谱系自动筛查单列，本T/B范围不替代原CM。见[结果](inventories/analysis/2026-10-12/target_association_v1/RESULTS.md)。
