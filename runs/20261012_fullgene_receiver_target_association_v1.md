@@ -18,3 +18,7 @@ python audit_fullgene_receiver_target_association_v1.py
 ```
 
 真实数值与输入构建审计分别验收；选后diagnosticFDR不称独立确认。私有design/samplekeys留服务器，只有源/情境效应和SHA入仓库。实际首尾与exit待派发后记录；无状态/临床机制发布。
+
+## 实际完成与审计：2026-10-12T12:07:15.946820+08:00
+
+[结果与限制](../inventories/analysis/2026-10-12/target_association_v1/RESULTS.md)：1860记录/566可估计独立数值复算、325控制构建通过；生产与修复后两审计exit0，v1失败保留。M1有241可估计/65诊断q阳性/10稳定区间，仅NODE0002同时q阳性且区间不跨零；M2不稳定不能当阴性。当前COMPLETE_EXPLORATORY_AUDITED_NOT_AXIS_VALIDATED，非独立验证。

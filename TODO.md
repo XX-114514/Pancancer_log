@@ -1,5 +1,10 @@
 # 可执行任务
 
+## 2026-10-12T12:07:15.946820+08:00 B3探索验收，下一步端点与外部覆盖
+
+B3：done_all1860_numeric_and325_input_controls_audited_not_validation。B3-ENDPOINT：固定ADAM12原生RNA/受体搭档/谱系描述核查，保留标签与阴性；B4：逐来源审同端点可比单位和发现使用历史，冻结真正留出验证。A2原9CM全谱系自动筛查单列，本T/B范围不替代原CM。见[结果](inventories/analysis/2026-10-12/target_association_v1/RESULTS.md)。
+
+
 ## 2026-10-12T11:15:24.098787+08:00 B2基础预检验收，下一项完整控制设计
 
 B2-PREFLIGHT：done_all336_mapping620nodes_independent_native_cell_audit_no_inference。下一阶段覆盖原620记录、237基础可行接口和其余失败/缺失，预声明响应构建及完整控制design（major比例、发送亚型混合、共享程序）、诊断/主分析和完整多重检验家族，不静默删共线项。需要完整设计实际可识别、结局可测后再派发关联检验；325基础screen通过不能当全部主模型可估计。[结果](inventories/analysis/2026-10-12/response_preflight_v1/public_results_summary.json)。

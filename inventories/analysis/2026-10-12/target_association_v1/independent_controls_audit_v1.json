@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL325_NATIVE_CELL_LR_COUNTS_RNA_DEPTH_MAJOR_DENOMINATORS_SENDER_MIXTURE_AND_SHARED_PROGRAMME_CONTROLS",
+  "started_UTC": "2026-10-12T03:56:53.243071+00:00",
+  "finished_UTC": "2026-10-12T03:57:05.587783+00:00",
+  "auditor_sha256": "d78ddee154bca8758af495490a3bf69f999ccbfeae2e0439d274f8bc829f63e3",
+  "producer_inventory_sha256": "92163207fbdece4e6cfcd1862aa1e325abaf762524dc4f1df6fe94dca9152e22",
+  "cases_checked": 325,
+  "raw_control_values_checked": 260098,
+  "method": "Native cell cache L/R/RNA/nGenes; accepted independent major fractions and member TSV; old1933gene family programme means with exact exclusions; no producer import",
+  "independent_biological_validation": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

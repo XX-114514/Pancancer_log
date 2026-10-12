@@ -1,0 +1,40 @@
+{
+  "status": "PASS_ALL1860_EXPLORATORY_MODELS_TARGET_SCORE_QR_CR1_BH_AND_SIGNED_RESAMPLING_EXAMPLES",
+  "started_UTC": "2026-10-12T03:56:41.148067+00:00",
+  "finished_UTC": "2026-10-12T03:56:52.800266+00:00",
+  "auditor_sha256": "4cca541a930548114569d5cd4497c4fd7e20ad4d5e9d754e0851fdd232e4ef56",
+  "producer_inventory_sha256": "92163207fbdece4e6cfcd1862aa1e325abaf762524dc4f1df6fe94dca9152e22",
+  "score_replays": 325,
+  "estimated_models_replayed": 566,
+  "unestimated_designs_replayed": 409,
+  "model_rows": 1860,
+  "resampling_examples": [
+    {
+      "test_id": "NODE0445",
+      "variant": "M1_abundance_identity",
+      "direction": 1,
+      "status": "PASS_INDEPENDENT_QR_PERMUTATION_AND_CASE_BOOTSTRAP_REPLAY",
+      "permutation_p": 0.0014992503748125937,
+      "valid_bootstraps": 111
+    },
+    {
+      "test_id": "NODE0619",
+      "variant": "M1_abundance_identity",
+      "direction": -1,
+      "status": "PASS_INDEPENDENT_QR_PERMUTATION_AND_CASE_BOOTSTRAP_REPLAY",
+      "permutation_p": 0.02498750624687656,
+      "valid_bootstraps": 131
+    }
+  ],
+  "unestimable_examples": [
+    {
+      "test_id": "NODE0001",
+      "variant": "M1_abundance_identity",
+      "status": "HIGH_INFLUENCE_DESIGN"
+    }
+  ],
+  "input_controls_construction_not_yet_independently_replayed": true,
+  "independent_biological_validation": false,
+  "scientific_release": false,
+  "axis_validation_complete": false
+}

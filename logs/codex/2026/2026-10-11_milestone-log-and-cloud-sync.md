@@ -385,3 +385,7 @@ M0原9列；主诊断M1加双方major内比例（接收端用原node比例）、
 ## 数值审计读取失败后修复预声明
 
 已核实producer实际03:44:11.926034—03:46:15.541342 UTC exit0、全部1860记录生成；fixture正负已知系数/共线约束实际PASS。auditor v1实际03:46:15.546480—03:46:27.503894 UTC exit1，seed文本225765694.0无法int解析。没有模型重启，失败代码/日志/输出保留；此前未写独立验收，初步q/CI计数不作为已验证结论。新numerical auditor v2只修float-int解析，固定原producer inventory/plan SHA并新输出；另独立原cell+缓存重构全部325控制列。源码语法通过、实际修复/控制审计未运行；合同见inventories/analysis/2026-10-12/target_association_audit_repair_v2.json。数据仅原data4，未使用被其他任务质疑的data1卷。
+
+## 2026-10-12T12:07:15.946820+08:00 关联数值与控制审计完成（UTC 2026-10-12T04:07:15.946820+00:00补录）
+
+真实事件时间/失败/修复及SHA见[检查点](../../../inventories/analysis/2026-10-12/target_association_v1/public_checkpoint.json)。生产1860记录、566可估计；数值重放和325控制/260098值通过。唯一M1 q与稳定正区间共同通过为NODE0002肺癌ADAM12–ITGB1；M2仅71有效bootstrap，不宣称无效或机制。私有design未出服务器。下一原生端点描述计划已冻结，未执行。未修改并发预处理代码/未跟踪研究日志、原canonical/节点/患者块。已阅读当前规范及相关run/daily/task，检查已有改动；将执行仓库/diff/脱敏检查、普通push与独立SHA核验。

@@ -1,0 +1,125 @@
+{
+  "schema": "exploratory_target_association_public_checkpoint_v1",
+  "observed_UTC": "2026-10-12T03:58:59.147149+00:00",
+  "producer_inventory_sha256": "92163207fbdece4e6cfcd1862aa1e325abaf762524dc4f1df6fe94dca9152e22",
+  "producer_sha256": "884ea7f2fb1893c00ae5d04df9fe5575bbafe8ebd3842539f8a8aa24501ef5a2",
+  "plan_sha256": "425e9e3040d916826101be0d38134774aaa1c0c1d53b5aba1746ab92418d056c",
+  "production_started_UTC": "2026-10-12T03:44:12.745574+00:00",
+  "production_finished_UTC": "2026-10-12T03:46:15.362826+00:00",
+  "summary": {
+    "frozen_node_cases": 620,
+    "model_records": 1860,
+    "estimated_models": 566,
+    "status_by_variant": {
+      "M0_expression_depth": {
+        "ESTIMABLE_EXPLORATORY_ASSOCIATION": 290,
+        "PREFLIGHT_INSUFFICIENT_PAIRED_LIBRARIES_OR_BLOCKS": 153,
+        "PREFLIGHT_RECEIVER_ORIGINAL_NODE_NOT_CAPTURED": 119,
+        "HIGH_INFLUENCE_DESIGN": 35,
+        "PREFLIGHT_NO_EXACT_LIGAND_TARGET_PRIOR": 23
+      },
+      "M1_abundance_identity": {
+        "ESTIMABLE_EXPLORATORY_ASSOCIATION": 241,
+        "PREFLIGHT_INSUFFICIENT_PAIRED_LIBRARIES_OR_BLOCKS": 153,
+        "PREFLIGHT_RECEIVER_ORIGINAL_NODE_NOT_CAPTURED": 119,
+        "HIGH_INFLUENCE_DESIGN": 84,
+        "PREFLIGHT_NO_EXACT_LIGAND_TARGET_PRIOR": 23
+      },
+      "M2_sender_shared_programmes": {
+        "HIGH_INFLUENCE_DESIGN": 290,
+        "PREFLIGHT_INSUFFICIENT_PAIRED_LIBRARIES_OR_BLOCKS": 153,
+        "PREFLIGHT_RECEIVER_ORIGINAL_NODE_NOT_CAPTURED": 119,
+        "ESTIMABLE_EXPLORATORY_ASSOCIATION": 35,
+        "PREFLIGHT_NO_EXACT_LIGAND_TARGET_PRIOR": 23
+      }
+    },
+    "diagnostic_q05_by_variant": {
+      "M0_expression_depth": 79,
+      "M1_abundance_identity": 65,
+      "M2_sender_shared_programmes": 0
+    },
+    "bootstrap_CI_available_by_variant": {
+      "M0_expression_depth": 63,
+      "M1_abundance_identity": 10,
+      "M2_sender_shared_programmes": 0
+    },
+    "confirmatory_or_independent_validation": false
+  },
+  "register_schema": "native_LR_program_evidence_register_v17",
+  "registered_active_jobs": [],
+  "verified_execution": {
+    "target_association_production_v1.execution.json": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_TARGET_ASSOCIATION_PRODUCTION",
+        "phase": "production",
+        "started_UTC": "2026-10-12T03:44:11.926034+00:00",
+        "pid": 112373,
+        "script_sha256": "884ea7f2fb1893c00ae5d04df9fe5575bbafe8ebd3842539f8a8aa24501ef5a2",
+        "child_pid": 112721,
+        "finished_UTC": "2026-10-12T03:46:15.541342+00:00",
+        "exit_code": 0
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "target_association_audit_v1.execution.json": {
+      "manifest": {
+        "status": "TERMINAL_FAILED_TARGET_ASSOCIATION_AUDIT",
+        "phase": "audit",
+        "started_UTC": "2026-10-12T03:46:15.546480+00:00",
+        "pid": 112373,
+        "script_sha256": "0e8cf03692aa3ea0ecb93fa913ee490c36fbd4d44ed5e357d75ab461f5561e39",
+        "child_pid": 133444,
+        "finished_UTC": "2026-10-12T03:46:27.503894+00:00",
+        "exit_code": 1
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "target_association_audit_v2.execution.json": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_AUDIT_V2",
+        "phase": "audit_v2",
+        "started_UTC": "2026-10-12T03:56:40.346118+00:00",
+        "pid": 248268,
+        "script_sha256": "4cca541a930548114569d5cd4497c4fd7e20ad4d5e9d754e0851fdd232e4ef56",
+        "child_pid": 248271,
+        "finished_UTC": "2026-10-12T03:56:52.940605+00:00",
+        "exit_code": 0
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    },
+    "target_association_controls_v1.execution.json": {
+      "manifest": {
+        "status": "TERMINAL_SUCCESS_CONTROLS_V1",
+        "phase": "controls_v1",
+        "started_UTC": "2026-10-12T03:56:52.945749+00:00",
+        "pid": 248268,
+        "script_sha256": "d78ddee154bca8758af495490a3bf69f999ccbfeae2e0439d274f8bc829f63e3",
+        "child_pid": 250783,
+        "finished_UTC": "2026-10-12T03:57:05.647134+00:00",
+        "exit_code": 0
+      },
+      "process_absent": {
+        "pid": true,
+        "child_pid": true
+      }
+    }
+  },
+  "state_conflicts": [],
+  "independent_biological_validation": false,
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "outputs": {
+    "all1860_target_association_models.tsv": "0d35fedfa8104390da5955cf824b781e19613be80238c9b80c6df7096125de04",
+    "independent_numerical_audit_v2.json": "d6b4c1277cf64ad30d3620594345753fc9d3523b5d2279e6935c97f7c9c22ab3",
+    "independent_controls_audit_v1.json": "3cff48aad42cb2326e599d8d89c438e47bdae348156a2a925c4dcf307a83bc8b"
+  }
+}

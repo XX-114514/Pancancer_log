@@ -1,0 +1,28 @@
+{
+  "schema": "ADAM12_native_endpoint_descriptive_probe_v1",
+  "predeclared_UTC": "2026-10-12T04:07:15.946820+00:00",
+  "scope": "GSE179994; original NODE0001 and NODE0002 sample keys; sender T_cell_CCL5; receivers T_cell_IL7R_28 and T_cell_IL7R_36",
+  "gene_panel": [
+    "ADAM12",
+    "ITGB1",
+    "ITGA9",
+    "CD3D",
+    "CD3E",
+    "PTPRC",
+    "TRAC",
+    "COL1A1",
+    "DCN",
+    "LUM",
+    "EPCAM",
+    "KRT19",
+    "LYZ"
+  ],
+  "native_count_positive_rule": "integer count > 0; no threshold tuning",
+  "summary": "source/context pooled cells and library count/fraction quantiles; L/R jointly >=1,5,10,20 positive cells as descriptive sensitivity, no hypothesis tests",
+  "controls": "retain original labels; compare lineage-marker detection in ADAM12 positive and all sender cells, no identity reassignment; ITGA9 and ITGB1 same-cell RNA co-detection does not prove protein binding",
+  "input_inventory_sha256": "92163207fbdece4e6cfcd1862aa1e325abaf762524dc4f1df6fe94dca9152e22",
+  "no_new_downloads": true,
+  "no_canonical_changes": true,
+  "independent_biological_validation": false,
+  "script_sha256": "a5f0021431f4147ff5a4610641d8b4785aacb47b3d91ad0b85f499bde6076c56"
+}
