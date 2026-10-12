@@ -1,0 +1,158 @@
+{
+  "observed_UTC": "2026-10-12T09:51:43.133248+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-12T09:51:00.837815+00:00",
+      "driver_pid": 315346,
+      "child_pid": 315347,
+      "finished_UTC": "2026-10-12T09:51:28.183318+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    },
+    "audit": {
+      "status": "TERMINAL_FAILED",
+      "phase": "audit",
+      "started_UTC": "2026-10-12T09:51:28.184569+00:00",
+      "driver_pid": 315346,
+      "child_pid": 319299,
+      "finished_UTC": "2026-10-12T09:51:29.780795+00:00",
+      "exit_code": 1,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    }
+  },
+  "inventory.json": {
+    "status": "COMPLETE_TF_PREFLIGHT_PENDING_INDEPENDENT_AUDIT",
+    "started_UTC": "2026-10-12T09:51:01.380483+00:00",
+    "finished_UTC": "2026-10-12T09:51:27.657023+00:00",
+    "producer_sha256": "96842c0f943c854aabbad8aa60041a25e833a6ecc96f19065d1d8941d1e98e23",
+    "plan_sha256": "615ce03c69f92de90a1441f68a42b43d490bb0bd6775fc6c8f35a94f354fadb2",
+    "corrected_contexts": 318,
+    "context_TF_rows": 369834,
+    "qualified_contexts": 260,
+    "contexts_with_both_TF_and_LR_support": 260,
+    "source_summary": [
+      {
+        "gse_id": "GSE116256",
+        "major_units": 78,
+        "native_genes": 27899,
+        "nonempty_genes": 22382,
+        "nonLR_universe": 20752,
+        "TFs_primary_ge5": 621,
+        "TFs_primary_ge20": 271,
+        "TFs_full_ge20": 358
+      },
+      {
+        "gse_id": "GSE131907",
+        "major_units": 42,
+        "native_genes": 29634,
+        "nonempty_genes": 23156,
+        "nonLR_universe": 21606,
+        "TFs_primary_ge5": 602,
+        "TFs_primary_ge20": 259,
+        "TFs_full_ge20": 352
+      },
+      {
+        "gse_id": "GSE148071",
+        "major_units": 115,
+        "native_genes": 29527,
+        "nonempty_genes": 28869,
+        "nonLR_universe": 27217,
+        "TFs_primary_ge5": 628,
+        "TFs_primary_ge20": 272,
+        "TFs_full_ge20": 363
+      },
+      {
+        "gse_id": "GSE161529",
+        "major_units": 231,
+        "native_genes": 33538,
+        "nonempty_genes": 30151,
+        "nonLR_universe": 28341,
+        "TFs_primary_ge5": 644,
+        "TFs_primary_ge20": 289,
+        "TFs_full_ge20": 377
+      },
+      {
+        "gse_id": "GSE176031",
+        "major_units": 50,
+        "native_genes": 34539,
+        "nonempty_genes": 28034,
+        "nonLR_universe": 26345,
+        "TFs_primary_ge5": 622,
+        "TFs_primary_ge20": 282,
+        "TFs_full_ge20": 364
+      },
+      {
+        "gse_id": "GSE178341",
+        "major_units": 800,
+        "native_genes": 26895,
+        "nonempty_genes": 26781,
+        "nonLR_universe": 25060,
+        "TFs_primary_ge5": 634,
+        "TFs_primary_ge20": 280,
+        "TFs_full_ge20": 368
+      },
+      {
+        "gse_id": "GSE179994",
+        "major_units": 86,
+        "native_genes": 19790,
+        "nonempty_genes": 17771,
+        "nonLR_universe": 16061,
+        "TFs_primary_ge5": 629,
+        "TFs_primary_ge20": 280,
+        "TFs_full_ge20": 363
+      },
+      {
+        "gse_id": "GSE182109",
+        "major_units": 115,
+        "native_genes": 38224,
+        "nonempty_genes": 34729,
+        "nonLR_universe": 32894,
+        "TFs_primary_ge5": 644,
+        "TFs_primary_ge20": 291,
+        "TFs_full_ge20": 374
+      },
+      {
+        "gse_id": "GSE183904",
+        "major_units": 206,
+        "native_genes": 24186,
+        "nonempty_genes": 23580,
+        "nonLR_universe": 21867,
+        "TFs_primary_ge5": 633,
+        "TFs_primary_ge20": 275,
+        "TFs_full_ge20": 363
+      },
+      {
+        "gse_id": "GSE270680",
+        "major_units": 206,
+        "native_genes": 36601,
+        "nonempty_genes": 31974,
+        "nonLR_universe": 30171,
+        "TFs_primary_ge5": 643,
+        "TFs_primary_ge20": 286,
+        "TFs_full_ge20": 372
+      },
+      {
+        "gse_id": "GSE274229",
+        "major_units": 99,
+        "native_genes": 33767,
+        "nonempty_genes": 28359,
+        "nonLR_universe": 26561,
+        "TFs_primary_ge5": 639,
+        "TFs_primary_ge20": 287,
+        "TFs_full_ge20": 372
+      }
+    ],
+    "TF_network_sha256": "bb623ff91b49dc1e3f6066a2548c255e2c58a75609f565615028fc52baa14d8e",
+    "no_new_association_p": true,
+    "not_receptor_specific_response_or_protein_binding": true
+  },
+  "failure": "auditor refused object-array TF labels with allow_pickle=False; numerical outputs not independently accepted"
+}

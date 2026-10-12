@@ -546,3 +546,8 @@ CM支持生产08:26:36—08:26:39 UTC exit0，612描述行；178q中55记录剩�
 ## 2026-10-12T17:50:19.053115+08:00 /UTC 2026-10-12T09:50:19.053115+00:00 TF索引错误已修复，新输出版本待执行
 
 v1 producer09:47:00.170057—09:47:11.795263 UTC exit1：全部源评分后，样本/大类lookup缺少enumerate导致NameError；审计未启动。driver285024/child285025已不存在，原部分输出及代码保留。09:47首次SSH查询超时，09:48:47重连取证成功，没有重复启动旧任务。v2仅补行索引，输入/网络/公式/门槛不变，改用新目录并完整重算和审计；不是数据失败或生物阴性。[失败](../../../inventories/analysis/2026-10-12/major_receiver_TF_preflight_failure_v1.json)，[v2合同](../../../inventories/analysis/2026-10-12/major_receiver_TF_preflight_plan_v2.json)。
+
+
+## 2026-10-12T17:53:04.614369+08:00 /UTC 2026-10-12T09:53:04.614369+00:00 TF生产已完成但存储类型审计拒绝，v3冻结
+
+v2生产09:51:00.837815—09:51:28.183318 UTC exit0，318材料情境/369834TF记录/260覆盖合格；09:51:28.184569—09:51:29.780795审计exit1，TF名称object数组被allow_pickle=False拒绝。没有数值验收，不发布机制或p结论。v3仅显式Unicode名称，保持公式/输入/门槛，使用新输出目录完整运行。原失败目录不覆盖，所有driver/child已退出。首次v2状态查询错把父run名称替成v2得到NOT_STARTED，修正观察器后同句柄取证，不重新启动旧任务。[失败](../../../inventories/analysis/2026-10-12/major_receiver_TF_preflight_failure_v2.json)，[v3合同](../../../inventories/analysis/2026-10-12/major_receiver_TF_preflight_plan_v3.json)。
