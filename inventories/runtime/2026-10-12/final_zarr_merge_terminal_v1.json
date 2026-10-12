@@ -1,0 +1,15 @@
+{
+  "schema": "combined_public_preprocessed_zarr_v1",
+  "completed_utc": "2026-10-12T08:28:06.521434+00:00",
+  "n_sources": 9,
+  "n_libraries": 792,
+  "n_output_cells": 3180973,
+  "n_genes": 49985,
+  "n_exact_duplicate_quarantined": 0,
+  "n_cells_with_adopted_DecontX": 951701,
+  "source_final_AC": false,
+  "final_accepted_new_cells": 0,
+  "batch_correction_performed": false,
+  "code_git_sha": "eb72e0b92a5630af03578851f6811c5fee2ab780",
+  "independent_final_audit": "pending"
+}

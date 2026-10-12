@@ -1,5 +1,11 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T16:29:25+08:00 原卷完整Zarr写完，正在独立输出验收
+
+[真实merge终态](inventories/runtime/2026-10-12/final_zarr_merge_terminal_v1.json)：9源792文库3180973细胞、49985特征、951701采用校正、精确隔离0。全部CSR/metadata已写完，输出audit PID63966开始逐cell核对；此时仍pending，不称最终验收通过。源正式AC/作者槽/污染限制保留，原权威库保持、临时卷仅加工、新下载暂停。
+
+
+
 ## 2026-10-12T15:57:59+08:00 原卷Zarr实际写入超过200万细胞
 
 [真实检查点](inventories/runtime/2026-10-12/final_zarr_write_checkpoint_2M_v1.json)：517/792文库、2,050,584细胞、49985特征；配额余量569.89GB，500GB留空满足。继续SPECTRUM和余GSE，最终metadata/逐cell output audit仍待；源AC限制保留，临时卷仅加工，新下载暂停。
