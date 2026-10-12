@@ -1,5 +1,11 @@
 # PanCancer 项目进展与工作日志
 
+## 2026-10-12T15:09:05+08:00 精确排重全量结束，原卷Zarr开始实际追加
+
+[完整指纹](inventories/runtime/2026-10-12/final_zarr_full_fingerprint_checkpoint_v1.json)：9源792分片3180973细胞、0精确命中；不同处理版本/研究别名仍需审查，正式来源AC保持0。首3054细胞已真实写入原卷49985特征Zarr，全部矩阵/metadata与独立output audit尚待。full QC/ID已PASS，500GB留空持续检查，临时卷仅加工，新下载暂停。
+
+
+
 ## 2026-10-12T14:51:10+08:00 全量容量门槛通过，正在精确指纹排重
 
 全部792文库压缩估算[43.22GB矩阵/70.35GB峰值含余量](inventories/runtime/2026-10-12/final_zarr_full_storage_budget_public_v1.json)，有效配额593.60GB，500GB留空满足。全9源QC/ID已独立PASS；合并现在逐cell比对54GSE baseline与new-to-new，再原卷CSR追加。49985特征含歧义/缺失标记，最终实际大小和输出audit仍待，未增加正式来源AC，新下载暂停。

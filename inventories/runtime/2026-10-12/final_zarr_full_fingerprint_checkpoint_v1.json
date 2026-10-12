@@ -1,0 +1,12 @@
+{
+  "schema": "combined_Zarr_full_exact_fingerprint_checkpoint_v1",
+  "observed_utc": "2026-10-12T07:08:13.881204+00:00",
+  "n_libraries_scanned": 792,
+  "n_sources": 9,
+  "n_cells_kept": 3180973,
+  "n_exact_rows_quarantined": 0,
+  "all_792_scanned": true,
+  "source_final_AC": false,
+  "interpretation": "exact_count_and_barcode_nonmatches_do_not_close_primary_library_alias_acceptance",
+  "final_matrix_audit_pending": true
+}

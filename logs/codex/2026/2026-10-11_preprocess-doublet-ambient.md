@@ -235,3 +235,10 @@ prepare_v3实际启动2026-10-12T02:15:17.694990 UTC（10:15:17 UTC+8），代�
 - 稳定特征49985，与预检一致；当前已进入逐细胞baseline及new-to-new精确计数/原barcode指纹，06:51:10已到CAR第17分片，前述分片n_flagged0；整体排重仍待，不能把部分无命中当作全量新增AC。source alias最终审查继续pending。
 - 一次附加只读help误直接执行无executable标志.py得到Permission denied；实际运行始终由冻结Python显式启动、主合并进程正常，未chmod、未重启。该失败与科学计算无关，后续只读状态不再调用多余help。
 - 最终counts/采用差值/X及基因测量掩码直接原卷CSR分块；R交换不复制。等待全指纹、实际写入及输出逐cell独立audit，下载暂停、原权威Zarr保持。
+
+
+## 2026-10-12T15:08:13.881204+08:00 全量精确指纹结束，15:09开始实际CSR追加
+
+- 9源792分片全部原计数/原barcode指纹比对：3180973保留、0精确baseline/new-to-new命中。此前另GSE别名/基因过滤/处理版本不同仍可能非精确重叠，不能把0命中当最终source alias AC或正式新增500万；final AC维持0，源细胞不删除。
+- 07:09:05 UTC首分片3054细胞已真实写入49985特征CSR；实际原卷outputs目标存在并开始追加，不是最终完成。整理后的原ID/元数据/基因测量掩码将在全矩阵追加后写完，再独立逐cell output audit。
+- 代码eb72e0b/merger171d2f…，原QC/ID audit全792 PASS；全过程保持原source count总量、同稳定ID别名求和、采用差值/原source guards，500GB有效配额留空持续检查。最终保存小型证据和原失败修复链，临时R交换不复制、不自动删除。
