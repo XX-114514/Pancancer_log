@@ -1,0 +1,363 @@
+{
+  "observed_UTC": "2026-10-12T08:40:52.754129+00:00",
+  "authoritative_major_names": [
+    "B cell",
+    "Dendritic cell",
+    "Endothelial cell",
+    "Epithelial cell",
+    "Fibroblast",
+    "Glial cell",
+    "Hematopoietic cell",
+    "Lymphoid cell",
+    "Macrophage",
+    "Mast cell",
+    "Melanocytic cell",
+    "Mesenchymal cell",
+    "Monocyte",
+    "Mural cell",
+    "Myeloid",
+    "Neutrophil",
+    "T cell",
+    "T/NK lymphoid"
+  ],
+  "all_context_records": 14229,
+  "qualifying_pair_contexts": 138,
+  "qualifying_GSE": 11,
+  "qualifying_current_cancer_labels": 8,
+  "source_summary": {
+    "GSE116256": 3,
+    "GSE131907": 1,
+    "GSE148071": 5,
+    "GSE161529": 21,
+    "GSE176031": 1,
+    "GSE178341": 54,
+    "GSE179994": 3,
+    "GSE182109": 3,
+    "GSE183904": 28,
+    "GSE270680": 14,
+    "GSE274229": 5
+  },
+  "major_pair_summary": [
+    {
+      "major1": "B cell",
+      "major2": "Endothelial cell",
+      "n_GSE": 2,
+      "n_contexts": 2
+    },
+    {
+      "major1": "B cell",
+      "major2": "Epithelial cell",
+      "n_GSE": 4,
+      "n_contexts": 6
+    },
+    {
+      "major1": "B cell",
+      "major2": "Fibroblast",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "B cell",
+      "major2": "Hematopoietic cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "B cell",
+      "major2": "Lymphoid cell",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "B cell",
+      "major2": "Macrophage",
+      "n_GSE": 4,
+      "n_contexts": 5
+    },
+    {
+      "major1": "B cell",
+      "major2": "Monocyte",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "B cell",
+      "major2": "Myeloid",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "B cell",
+      "major2": "T cell",
+      "n_GSE": 5,
+      "n_contexts": 8
+    },
+    {
+      "major1": "B cell",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 3,
+      "n_contexts": 5
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "Epithelial cell",
+      "n_GSE": 4,
+      "n_contexts": 4
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "Fibroblast",
+      "n_GSE": 2,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "Macrophage",
+      "n_GSE": 3,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "Monocyte",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "Mural cell",
+      "n_GSE": 2,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "Myeloid",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "T cell",
+      "n_GSE": 4,
+      "n_contexts": 4
+    },
+    {
+      "major1": "Endothelial cell",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 2,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "Fibroblast",
+      "n_GSE": 3,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "Macrophage",
+      "n_GSE": 6,
+      "n_contexts": 7
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "Mast cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "Monocyte",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "Mural cell",
+      "n_GSE": 2,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "Myeloid",
+      "n_GSE": 2,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "T cell",
+      "n_GSE": 5,
+      "n_contexts": 7
+    },
+    {
+      "major1": "Epithelial cell",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 2,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Fibroblast",
+      "major2": "Lymphoid cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Fibroblast",
+      "major2": "Macrophage",
+      "n_GSE": 3,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Fibroblast",
+      "major2": "Mural cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Fibroblast",
+      "major2": "Myeloid",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Fibroblast",
+      "major2": "T cell",
+      "n_GSE": 4,
+      "n_contexts": 4
+    },
+    {
+      "major1": "Fibroblast",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Glial cell",
+      "major2": "Macrophage",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Glial cell",
+      "major2": "T cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Hematopoietic cell",
+      "major2": "T cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Lymphoid cell",
+      "major2": "T cell",
+      "n_GSE": 2,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Lymphoid cell",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 2,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Macrophage",
+      "major2": "Mast cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Macrophage",
+      "major2": "Monocyte",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Macrophage",
+      "major2": "Mural cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Macrophage",
+      "major2": "Myeloid",
+      "n_GSE": 2,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Macrophage",
+      "major2": "T cell",
+      "n_GSE": 6,
+      "n_contexts": 7
+    },
+    {
+      "major1": "Macrophage",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 2,
+      "n_contexts": 3
+    },
+    {
+      "major1": "Mast cell",
+      "major2": "T cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Mast cell",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Monocyte",
+      "major2": "Myeloid",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Monocyte",
+      "major2": "T cell",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Monocyte",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Mural cell",
+      "major2": "T cell",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Mural cell",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "Myeloid",
+      "major2": "T cell",
+      "n_GSE": 1,
+      "n_contexts": 2
+    },
+    {
+      "major1": "Myeloid",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 1,
+      "n_contexts": 1
+    },
+    {
+      "major1": "T cell",
+      "major2": "T/NK lymphoid",
+      "n_GSE": 5,
+      "n_contexts": 7
+    }
+  ],
+  "fine172_labels_or_states_changed": false,
+  "new_p": false,
+  "semantics": "Broader current authoritative major compartments, not reproduction of exact fine endpoints; cell subtype mixtures still require sensitivity; no string suffix-based merging."
+}

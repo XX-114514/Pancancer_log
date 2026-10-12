@@ -1,0 +1,21 @@
+{
+  "plan_sha256": "fdfcffd0d1596d3feaa9e28ed880010c19b48239c7adc8972c52946b0a2a961d",
+  "status": "COMPLETE_DESCRIPTIVE_SUPPORT_DIAGNOSTIC_NOT_NEW_STATISTICAL_GATE",
+  "observed_UTC": "2026-10-12T08:26:39.640919+00:00",
+  "producer_sha256": "9a48387f31e88202c554fdd46d884139b2d6638a054da31ca4723d9848731857",
+  "all_group_CM_rows": 612,
+  "fixed_top10_rule": "descending frozen W, stable original row-order ties, remove endpoints without replacing them",
+  "no_primary_result_or_gate_change": true,
+  "no_p_or_functional_validation": true,
+  "input_sha256": {
+    "W": "81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29",
+    "H": "5a79054a14ef885fac12bea7611ca63ea754a4d36daca231d3e8ebc3044fac07",
+    "F": "08bf712e8f4e4938b54f5e14f4c68366443aed2ee23a4b1c95aa0dc6e99354eb",
+    "counts": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+    "catalogue": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705"
+  },
+  "outputs": {
+    "all612_fixedCM_member_support_diagnostics.tsv": "7460fe519471b9d56531739aac536084a11e5855a1a64a266190654c0fb10337",
+    "fixed9CM_top10_member_dictionary.tsv": "9086a0d1b19e20b4efa35a6a70e595bb28f84dee6a3c1d7500cb5b6eb6773952"
+  }
+}

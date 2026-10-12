@@ -514,3 +514,10 @@ All426 original breast cases/1178 CM mappings, four full families=4712 planned m
 ## 2026-10-12T16:21:53.442257+08:00 /UTC 2026-10-12T08:21:53.442257+00:00 乳腺敏感性已取证完成
 
 实际07:28:42—07:30:05 UTC producer/audit exit0，4712全X/BH和8显式重采样例通过。去两端基础48q，但48均无稳定bootstrap区间；只有5/1037基础模型可提供区间。完整亚型1039高影响/139覆盖不足；COL五CM均未q通过。此为同一数据敏感性非外部验证；不改阈值或将区间不足当生物消失。之前pending记录保留，现以终态为准。[结果](../../../inventories/analysis/2026-10-12/GSE161529_primary_patient_sensitivity_v1/RESULTS.md)。
+
+
+## 2026-10-12T16:52:37.449744+08:00 /UTC 2026-10-12T08:52:37.449744+00:00 成员支持与大类细胞对入口实际探查
+
+CM支持生产08:26:36—08:26:39 UTC exit0，612描述行；178q中55记录剩余核心中位≤2。单核→T/NK的CM06仅1核心/约8%权重，不能直接称轴主导模块。固定1290/172按权威major汇总，14229记录/138覆盖通过，11GSE/8当前标签；Mac–T及Epi–Mac各6GSE，B–T/Epi–T各5，Mono–T仍1。新入口不改身份/状态、不当精确子群复现。[支持](../../../inventories/analysis/2026-10-12/CM_activity_member_support_diagnostic_v1/RESULTS.md)，[覆盖](../../../inventories/analysis/2026-10-12/major_pair_coverage_probe_v1/RESULTS.md)。
+
+云端：首次4MB bundle传输55秒超时；240秒重试传输完成但普通push遇并行新增提交拒绝。独立HTTPS fetch确认远端与本地均f02d0dbd4d7a4e240ec88d2320252573e6690835，包含本三阶段6cfad59；科学进程未重启，历史不改。下一新节点普通push另核，当前次级诊断未宣称独立全审。

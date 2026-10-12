@@ -1,0 +1,20 @@
+{
+  "observed_UTC": "2026-10-12T08:32:15.299885+00:00",
+  "execution": {
+    "status": "TERMINAL_SUCCESS",
+    "phase": "production",
+    "started_UTC": "2026-10-12T08:26:36.676056+00:00",
+    "pid": 47539,
+    "script_sha256": "9a48387f31e88202c554fdd46d884139b2d6638a054da31ca4723d9848731857",
+    "child_pid": 47542,
+    "finished_UTC": "2026-10-12T08:26:39.757590+00:00",
+    "exit_code": 0
+  },
+  "all_process_absent": true,
+  "descriptive_not_statistical_or_biological_validation": true,
+  "outputs_sha256": {
+    "inventory.json": "c6fd24a59b3c5dc78adc6a6696079a3f495977764228ba4b8e87acea23a3585e",
+    "all612_fixedCM_member_support_diagnostics.tsv": "7460fe519471b9d56531739aac536084a11e5855a1a64a266190654c0fb10337",
+    "fixed9CM_top10_member_dictionary.tsv": "9086a0d1b19e20b4efa35a6a70e595bb28f84dee6a3c1d7500cb5b6eb6773952"
+  }
+}
