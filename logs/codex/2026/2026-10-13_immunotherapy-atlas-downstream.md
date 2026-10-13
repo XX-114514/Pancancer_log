@@ -82,3 +82,5 @@
 - 既有GSE169246/GSE176021/GSE316195原生QC/DD复用；本轮未新跑其污染估计，明确ambient_status=not_assessed_in_this_run_prior_QC_native_counts_reused。不得称所有来源已完成污染校正。
 - 原CNV核心已通过800真实原生计数细胞的接口检查，CopyKAT明确disabled；这是技术检查、QC诊断标签，未替代正式全队列预测。一次私有检查启动命令因本地引号错误未执行；改成参数化可复现入口后成功。
 - 新恢复作业使用独立代码v3和分版本启动/终态记录，旧作业失败证据及临时对象全部保留。
+
+- 恢复前性能与语义修正：marker一次按全部原生marker列投影/提取，替代每marker重复扫描稀疏矩阵；同canonical ID多原生别名按计数加和，避免原先字典仅取最后别名。生产pilot仍重新验证新范围与代码。未改已冻结原生counts。

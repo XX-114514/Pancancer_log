@@ -95,10 +95,10 @@ def build_model(args):
         source_rows=[];source_raw=[]
         common_pos=np.array([common_lookup.get(g,-1) for g in source.canonical_genes])
         valid=common_pos>=0
-        marker_pos=np.array([marker_lookup.get(name,-1) for name in marker_names])
-        native_marker={int(global_col):i for i,global_col in enumerate(source.global_columns)}
-        marker_columns=[native_marker.get(int(p),-1) for p in marker_pos]
-        marker_available[number]=np.array(marker_columns)>=0
+        global_to_marker={int(marker_lookup[name]):j for j,name in enumerate(marker_names) if name in marker_lookup}
+        marker_destination=np.array([global_to_marker.get(int(column),-1) for column in source.global_columns])
+        marker_present=marker_destination>=0
+        marker_available[number]=np.isin(np.arange(len(marker_names)),marker_destination[marker_present])
         all_totals=[]
         for lo in range(0,len(selected),2048):
             ids=selected[lo:lo+2048]
@@ -110,10 +110,8 @@ def build_model(args):
             source_raw.append(projected_raw.astype(np.int32))
             source_rows.append(normalized(chosen_common,total))
             # Marker expression always uses the complete native library denominator.
-            for j,column in enumerate(marker_columns):
-                if column<0:continue
-                value=np.asarray(chosen[:,column].toarray()).ravel()
-                marker_matrix[start+lo:start+lo+len(ids),j]=np.log1p(value*10000./total)
+            marker_counts=projected(chosen[:,marker_present],marker_destination[marker_present],len(marker_names)).toarray()
+            marker_matrix[start+lo:start+lo+len(ids)]=np.log1p(marker_counts*(10000./total[:,None])).astype(np.float32)
             all_totals.extend(total.tolist())
             if lo%20480==0:event('native_RNA_block',dataset=source.record['dataset'],processed=lo+len(ids),total=len(selected))
         local['native_analysis_denominator']=np.asarray(all_totals)
