@@ -1,0 +1,48 @@
+{
+  "schema": "cell_state_programme_readiness_plan_v1",
+  "created_UTC": "2026-10-13T12:44:20.692617+00:00",
+  "created_UTC8": "2026-10-13T20:44:20.692617+08:00",
+  "question": "Can existing fullgene caches support identity-separated state programme discovery, and how much reference overlap/LR exclusion/complexity confounding must be addressed first?",
+  "producer_sha256": "2ab44cc879acaaeb6cc445ac3f52fdce5a2c0aeaabcd954468ebf444f4b7c902",
+  "reference_sha256": "1a9fef406d4d7c4ec0a14415c231a805b703d58574d1bc6081175bcf3f4357f2",
+  "reference_programs": 181,
+  "reference_commit": "9c079a584ab71ea83e1e0ed471f678d2f2a997a2",
+  "native_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "LR_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "sources": [
+    "GSE116256",
+    "GSE131907",
+    "GSE148071",
+    "GSE161529",
+    "GSE176031",
+    "GSE178341",
+    "GSE179994",
+    "GSE182109",
+    "GSE183904",
+    "GSE270680",
+    "GSE274229"
+  ],
+  "major_units": 2028,
+  "expected_source_major_groups": 52,
+  "expected_rows": 9412,
+  "method": "All181 official reference programs across all52 existing source-major groups; exact symbols, detection>=1pct, existing meanlog CP10K coverage, LR-gene loss, descriptive score/complexity Spearman only",
+  "diagnostic_gate": ">=5 matched genes,>=70pct reference symbol match,>=80pct libraries detect max(1,min(5,ceil(.3*nMatched))) genes; arbitrary readiness diagnostic, not state presence/absence",
+  "acceptance": [
+    "Original accepted cache SHA/axes/keys and native audit checked",
+    "All181/52/9412 keys retained; zero versus symbol-unmatched preserved",
+    "Mac_IFNG_response direct scalar mean/detection independent loop in all52 source-major groups",
+    "No sample/patient rows published; no p-value, cell-level score, matrix factorization or state assignment"
+  ],
+  "expected_files": [
+    "all181_reference_program_catalogue.tsv",
+    "all16290_reference_overlap.tsv.gz",
+    "all_source_major_program_readiness.tsv.gz",
+    "direct_scalar_diagnostic_checks.tsv",
+    "inventory.json"
+  ],
+  "scope_limit": "Only prior selected major/library aggregates, not all4.7M cells or within-subtype factor discovery; fine reference labels do not promote current broad identities",
+  "state_labels_assigned": false,
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "status": "PREDECLARED_NOT_STARTED"
+}

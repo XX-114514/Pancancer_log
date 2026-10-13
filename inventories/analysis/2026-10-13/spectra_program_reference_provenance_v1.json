@@ -1,0 +1,9 @@
+{
+  "observed_UTC": "2026-10-13T12:37:53.835468+00:00",
+  "repository": "https://github.com/dpeerlab/spectra",
+  "commit": "9c079a584ab71ea83e1e0ed471f678d2f2a997a2",
+  "url": "https://raw.githubusercontent.com/dpeerlab/spectra/9c079a584ab71ea83e1e0ed471f678d2f2a997a2/src/Spectra/data/default_gene_sets.json",
+  "sha256": "1a9fef406d4d7c4ec0a14415c231a805b703d58574d1bc6081175bcf3f4357f2",
+  "bytes": 76894,
+  "reference_only_no_expression_download": true
+}
