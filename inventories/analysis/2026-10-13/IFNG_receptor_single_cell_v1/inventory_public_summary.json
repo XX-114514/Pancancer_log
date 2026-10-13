@@ -1,0 +1,12 @@
+{
+  "status": "FRESH_SAME_CELL_RNA_COUNTS_PRODUCED_PENDING_AUDIT",
+  "started_UTC": "2026-10-13T12:51:23.133311+00:00",
+  "finished_UTC": "2026-10-13T12:52:04.049561+00:00",
+  "selected_cells": 240533,
+  "sample_node_units": 1832,
+  "sample_major_units": 424,
+  "fresh_all3_marginal_counts_equal_native_cache": true,
+  "producer_sha256": "0313ce3e5a005f0a3006bd0b927c70c735b4080c41cb53b64f59279a40f09330",
+  "plan_sha256": "a117d6318c80caabb08c5f4deac9ff316c4a231f37167da11a32511e795be759",
+  "no_surface_complex_or_communication_claim": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ALL1832_UNITS_ALL3_MARGINALS_AND_FRESH_ROW_EXAMPLES",
+  "finished_UTC": "2026-10-13T12:52:11.929876+00:00",
+  "inventory_sha256": "e1ddb1d1cf4a33f7c7169ab8aa1af76d11dff7e4930c57016ba83f8604a4077b",
+  "cells": 240533,
+  "all_unit_gene_checks": 5496,
+  "same_cell_bit_aggregation_all": true,
+  "fresh_raw_row_examples": 460,
+  "all_rows_independently_replayed": false,
+  "not_protein_assembly_or_independent_communication_validation": true,
+  "auditor_sha256": "eb7554c49f8f139f926c7e3e410968ffab1354762229df270b8b228e4cb7e630"
+}

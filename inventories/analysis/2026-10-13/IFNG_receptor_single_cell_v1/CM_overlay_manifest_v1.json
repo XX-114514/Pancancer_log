@@ -1,0 +1,8 @@
+{
+  "status": "EXACT_LABEL_FROZEN_GRAPH_MEMBERSHIP_OVERLAY",
+  "core_table_sha256": "133b1e9274c2d378d561d7165ec4de5d384c6a82d67dd7e0300cf0c199a0081e",
+  "public_rows": 50,
+  "private_low_coverage_rows_withheld": 3,
+  "contribution": "share of RNA detected cells, not normalized transcript mass or secreted ligand dose",
+  "not_module_activity_association_or_communication_driving_evidence": true
+}

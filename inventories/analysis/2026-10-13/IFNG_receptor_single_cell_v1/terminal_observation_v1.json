@@ -1,0 +1,57 @@
+{
+  "observed_UTC": "2026-10-13T12:52:20.357054+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-13T12:51:21.313708+00:00",
+      "driver_pid": 75225,
+      "child_pid": 75232,
+      "finished_UTC": "2026-10-13T12:52:04.436653+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      },
+      "log_tail": "{\"scanned_row_ranges\": 10, \"global_row\": 344064, \"selected_cells_so_far\": 31617}\n{\"scanned_row_ranges\": 20, \"global_row\": 622592, \"selected_cells_so_far\": 84482}\n{\"scanned_row_ranges\": 30, \"global_row\": 3162112, \"selected_cells_so_far\": 137233}\n{\"scanned_row_ranges\": 40, \"global_row\": 3604480, \"selected_cells_so_far\": 161051}\n{\"scanned_row_ranges\": 50, \"global_row\": 3997696, \"selected_cells_so_far\": 207862}\n{\"status\": \"FRESH_SAME_CELL_RNA_COUNTS_PRODUCED_PENDING_AUDIT\", \"started_UTC\": \"2026-10-13T12:51:23.133311+00:00\", \"finished_UTC\": \"2026-10-13T12:52:04.049561+00:00\", \"selected_cells\": 240533, \"sample_node_units\": 1832, \"sample_major_units\": 424, \"fresh_all3_marginal_counts_equal_native_cache\": true, \"producer_sha256\": \"0313ce3e5a005f0a3006bd0b927c70c735b4080c41cb53b64f59279a40f09330\", \"plan_sha256\": \"a117d6318c80caabb08c5f4deac9ff316c4a231f37167da11a32511e795be759\", \"no_surface_complex_or_communication_claim\": true}\n"
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-13T12:52:04.438123+00:00",
+      "driver_pid": 75225,
+      "child_pid": 78841,
+      "finished_UTC": "2026-10-13T12:52:12.276120+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      },
+      "log_tail": "{\"status\": \"PASS_ALL1832_UNITS_ALL3_MARGINALS_AND_FRESH_ROW_EXAMPLES\", \"finished_UTC\": \"2026-10-13T12:52:11.929876+00:00\", \"inventory_sha256\": \"e1ddb1d1cf4a33f7c7169ab8aa1af76d11dff7e4930c57016ba83f8604a4077b\", \"cells\": 240533, \"all_unit_gene_checks\": 5496, \"same_cell_bit_aggregation_all\": true, \"fresh_raw_row_examples\": 460, \"all_rows_independently_replayed\": false, \"not_protein_assembly_or_independent_communication_validation\": true, \"auditor_sha256\": \"eb7554c49f8f139f926c7e3e410968ffab1354762229df270b8b228e4cb7e630\"}\n"
+    }
+  },
+  "inventory.json": {
+    "status": "FRESH_SAME_CELL_RNA_COUNTS_PRODUCED_PENDING_AUDIT",
+    "started_UTC": "2026-10-13T12:51:23.133311+00:00",
+    "finished_UTC": "2026-10-13T12:52:04.049561+00:00",
+    "selected_cells": 240533,
+    "sample_node_units": 1832,
+    "sample_major_units": 424,
+    "fresh_all3_marginal_counts_equal_native_cache": true,
+    "producer_sha256": "0313ce3e5a005f0a3006bd0b927c70c735b4080c41cb53b64f59279a40f09330",
+    "plan_sha256": "a117d6318c80caabb08c5f4deac9ff316c4a231f37167da11a32511e795be759",
+    "no_surface_complex_or_communication_claim": true
+  },
+  "independent_audit.json": {
+    "status": "PASS_ALL1832_UNITS_ALL3_MARGINALS_AND_FRESH_ROW_EXAMPLES",
+    "finished_UTC": "2026-10-13T12:52:11.929876+00:00",
+    "inventory_sha256": "e1ddb1d1cf4a33f7c7169ab8aa1af76d11dff7e4930c57016ba83f8604a4077b",
+    "cells": 240533,
+    "all_unit_gene_checks": 5496,
+    "same_cell_bit_aggregation_all": true,
+    "fresh_raw_row_examples": 460,
+    "all_rows_independently_replayed": false,
+    "not_protein_assembly_or_independent_communication_validation": true,
+    "auditor_sha256": "eb7554c49f8f139f926c7e3e410968ffab1354762229df270b8b228e4cb7e630"
+  }
+}

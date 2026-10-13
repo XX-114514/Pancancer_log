@@ -1,0 +1,10 @@
+{
+  "source_major_rows": 10,
+  "fine_rows_total": 53,
+  "fine_rows_published": 50,
+  "fine_rows_withheld": 3,
+  "minimum_cells": 20,
+  "minimum_libraries": 3,
+  "no_individual_sample_or_cell_rows": true,
+  "rejected_example_file_kept_on_server_not_exported": true
+}

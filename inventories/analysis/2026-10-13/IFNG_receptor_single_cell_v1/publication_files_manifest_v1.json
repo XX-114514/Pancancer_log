@@ -1,0 +1,14 @@
+{
+  "existing_CM_edge_anchor_coverage.tsv": "136b834386ecb89f0eb078213e2370cfca1d6251d30374b5a01ffc87140d61d0",
+  "library_RNA_coverage_summary.tsv": "ae02a5e513abf085338dd45303fecbeec00667c5f255dfb1f74e4917512214fa",
+  "inventory_public_summary.json": "b8e857ebc4ec88c2d72dc6d9e9846a3c18d158034c39e1f280c3c0d22484f0a1",
+  "privacy_export_scope.json": "2165570f13bde3576a6dc83444069608e3aa8f912f27ec797025d56b9ef4aadd",
+  "source_subcluster_RNA_and_frozen_CM_overlay_v1.tsv": "2a0bb015b889fada8b5d7374e7b5c8099dcf6069fd98676e1c7ded2badf20b1d",
+  "terminal_observation_v1.json": "34cde02afde6d97bdf53ba8007c298440dc1055ba8fa9a2579c4d39bea2c693c",
+  "source_major_RNA_support.tsv": "df597111045ddccc024531ddc550ce188d5965fe74581ad18b7deee7e8bb2df0",
+  "RESULTS.md": "1d9dd0feff096f2f42779aadd3e5147c5cfe9f80d279ab885e1e1f8aaaef581d",
+  "independent_audit.json": "eb2787b2c007fecb4c6b25322dc3c220821042b93d789201e499a09df2c071d8",
+  "source_frozen_subcluster_RNA_support_public.tsv": "300036adf2f682a6c7478035fbd17c2326d60a005c280bcd34b670175f46adda",
+  "CM_overlay_manifest_v1.json": "8421eb98211a3b1b452dc0e39885116738e8a0634f509e6c3b890cb84489bd1b",
+  "export_manifest.json": "9918b4f9c9cc0ef44b095cebc519f16be7d713d5ce16f2c4d8feed319bc85d6c"
+}

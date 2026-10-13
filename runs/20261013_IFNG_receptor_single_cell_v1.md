@@ -13,3 +13,7 @@ RNA共同阳性不保证蛋白受体复合物；未检测不表示蛋白缺失�
 ## 执行
 
 服务器scanpy环境/BLAS2线程；PANCANCER_PREFLIGHT_ROOT/ANNOTATION_ROOT、PANCANCER_MAC_T_POOL_PLAN、PANCANCER_SINGLE_CELL_PLAN提供入口，分别执行mac_T_IFNG_receptor_single_cell_v1.py与audit_mac_T_IFNG_receptor_single_cell_v1.py，独立execution manifest。真实表达扫描尚未启动。
+
+## 终态
+
+原X扫描与数值audit均exit0，已完成同细胞RNA及真实CM核心连接。实际结果/限制/安全导出及下一步见[报告](../inventories/analysis/2026-10-13/IFNG_receptor_single_cell_v1/RESULTS.md)。
