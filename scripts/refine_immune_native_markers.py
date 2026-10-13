@@ -17,7 +17,7 @@ from immune_atlas_io import load_contract,normalized,projected,save_json_new
 
 def allowed(gene):
     return bool(gene and gene not in {'MALAT1','NEAT1','ACTB','ACTG1','B2M','FOS','FOSB','JUN','JUNB','JUND','EGR1','HLA-A','HLA-B','HLA-C'}
-                and not re.match(r'^(MT-|RPL|RPS|HSP|ENSG|IG[HKL][VJCD])',gene))
+                and not re.match(r'^(MT-|RPL|RPS|HSP|ENSG|ERCC-|IG[HKL][VJCD])',gene))
 
 
 def refine(args):

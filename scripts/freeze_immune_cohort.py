@@ -10,6 +10,7 @@ import hashlib
 import json
 from pathlib import Path
 import anndata as ad
+import h5py
 from anndata._io.specs import read_elem,write_elem
 import numpy as np
 import pandas as pd
@@ -28,8 +29,9 @@ def main(args):
     directory=args.prepared/'GSE305078'
     summary=json.loads((directory/'dataset_summary.json').read_text())
     if summary['status']!='success' or summary.get('pilot_only'):raise ValueError('Additional QC not complete')
-    destination=args.scratch/'GSE305078_prepared_native_union.zarr'
-    if destination.exists():raise ValueError('Existing preparation attempt preserved')
+    destination=args.reuse_native_union or args.scratch/'GSE305078_prepared_native_union_v3.zarr'
+    if destination.exists() and not args.reuse_native_union:raise ValueError('Existing preparation attempt preserved')
+    if args.reuse_native_union and not destination.exists():raise ValueError('Requested reusable union missing')
     frames=[];order=[];var=None;checked={r['library_token']:r for r in entry['libraries']}
     for row in sorted(summary['libraries'],key=lambda r:r['library_token']):
         if row['status']!='success' or not checked[row['library_token']]['all_checks_pass']:
@@ -42,22 +44,38 @@ def main(args):
         frames.append(obs);order.append((p,row))
     native_obs=pd.concat(frames)
     if not native_obs.index.is_unique:raise ValueError('Additional original cell IDs repeat')
-    destination.mkdir(mode=0o700)
-    g=zarr.open_group(str(destination),mode='w');g.attrs.update({'encoding-type':'anndata','encoding-version':'0.1.0'})
-    layers=g.create_group('layers');layers.attrs.update({'encoding-type':'dict','encoding-version':'0.1.0'})
-    raw_out=CSRAppender(layers,'counts','i4',len(var));removal_out=CSRAppender(layers,'ambient_removed_counts','f8',len(var))
-    xout=CSRAppender(g,'X','f4',len(var));adopted=0
+    if args.reuse_native_union:
+        g=zarr.open_group(str(destination),mode='r')
+        if not read_elem(g['obs']).index.equals(native_obs.index) or not read_elem(g['var']).index.equals(var.index):
+            raise ValueError('Reusable union cell/gene identity mismatch')
+        if read_elem(g['uns'])['independent_QC_audit_sha256']!=hashlib.sha256(args.audit.read_bytes()).hexdigest():
+            raise ValueError('Reusable union independent-QC provenance differs')
+    else:
+        destination.mkdir(mode=0o700)
+        g=zarr.open_group(str(destination),mode='w');g.attrs.update({'encoding-type':'anndata','encoding-version':'0.1.0'})
+        layers=g.create_group('layers');layers.attrs.update({'encoding-type':'dict','encoding-version':'0.1.0'})
+        raw_out=CSRAppender(layers,'counts','i4',len(var));removal_out=CSRAppender(layers,'ambient_removed_counts','f8',len(var))
+        xout=CSRAppender(g,'X','f4',len(var))
+    adopted=0;offset=0
     for path,row in order:
         z=zarr.open_group(str(path),mode='r');obs=read_elem(z['obs'])
         for lo in range(0,len(obs),2048):
             hi=min(lo+2048,len(obs))
             raw=csr_read(z['layers/counts'],lo,hi);estimate=csr_read(z['layers/counts_decontx'],lo,hi)
             removed,x,total,selected=adopted_counts(raw,estimate,obs.iloc[lo:hi],row,'GSE305078')
-            raw_out.append(raw);removal_out.append(removed);xout.append(x);adopted+=int(selected.sum())
-    write_elem(g,'obs',native_obs);write_elem(g,'var',var)
-    for key in ['obsm','obsp','varm','varp']:write_elem(g,key,{})
-    write_elem(g,'uns',dict(native_counts=True,independent_QC_audit_sha256=hashlib.sha256(args.audit.read_bytes()).hexdigest()))
-    zarr.consolidate_metadata(str(destination))
+            if args.reuse_native_union:
+                for key,expected in [('layers/counts',raw),('layers/ambient_removed_counts',removed),('X',x)]:
+                    actual=csr_read(g[key],offset,offset+hi-lo)
+                    delta=actual.astype(np.float64)-expected.astype(np.float64);delta.eliminate_zeros()
+                    if delta.nnz and np.max(np.abs(delta.data))>1e-7:raise ValueError('Reusable union matrix parity failed: '+key)
+            else:raw_out.append(raw);removal_out.append(removed);xout.append(x)
+            adopted+=int(selected.sum());offset+=hi-lo
+    if offset!=len(native_obs):raise ValueError('Additional union coverage differs')
+    if not args.reuse_native_union:
+        write_elem(g,'obs',native_obs);write_elem(g,'var',var)
+        for key in ['obsm','obsp','varm','varp']:write_elem(g,key,{})
+        write_elem(g,'uns',dict(native_counts=True,independent_QC_audit_sha256=hashlib.sha256(args.audit.read_bytes()).hexdigest()))
+        zarr.consolidate_metadata(str(destination))
     obs=pd.read_csv(config['all_rows_ref'],sep='\t',dtype=str,keep_default_na=False,index_col=0)
     old305=obs.loc[obs.dataset.eq('GSE305078')].copy()
     old305=old305.loc['GSE305078::'+native_obs.index.astype(str)].copy()
@@ -91,8 +109,25 @@ def main(args):
     for name in ['GSE169246','GSE176021','GSE316195']:
         mask=obs.dataset.eq(name);frame=sidecar.loc[sidecar.dataset.eq(name)].set_index('library_id')
         libraries=obs.loc[mask,'library_id']
-        if not libraries.isin(frame.index).all():raise ValueError('Clinical library coverage incomplete')
-        rows=frame.loc[libraries].copy();rows.index=obs.index[mask]
+        if libraries.isin(frame.index).all():
+            rows=frame.loc[libraries].copy();join_key='exact_original_library_key'
+            matched_clinical_libraries=libraries.to_numpy()
+        else:
+            record=next(r for r in config['records'] if r['dataset']==name)
+            with h5py.File(record['path'],'r') as handle:native_frame=read_elem(handle['obs'])
+            native_frame=native_frame.iloc[np.load(record['row_positions_ref'])]
+            expected=name+'::'+native_frame.index.astype(str)
+            if not np.array_equal(expected,obs.index[mask]):raise ValueError('Clinical native-row crosswalk differs')
+            if 'gsm_id' not in native_frame:raise ValueError('No original GSM evidence for library alias')
+            by_gsm=frame.reset_index().set_index('gsm_id',verify_integrity=True)
+            gsm=native_frame.gsm_id.astype(str)
+            if not gsm.isin(by_gsm.index).all():raise ValueError('Original GSM clinical coverage incomplete')
+            rows=by_gsm.loc[gsm].copy();join_key='exact_original_GSM_crosswalk_library_alias_retained'
+            matched_clinical_libraries=rows.library_id.to_numpy()
+            obs.loc[mask,'gsm_id']=gsm.to_numpy()
+        rows.index=obs.index[mask]
+        obs.loc[mask,'clinical_join_key']=join_key
+        obs.loc[mask,'clinical_library_id']=matched_clinical_libraries
         verified=rows.patient_key_status.isin(['title_patient_and_published_clinical_table_joined','raw_GEO_patient_id_verified'])
         if name=='GSE176021':
             parsed=rows.sample_title.str.extract(r'^([^_]+)_([^_]+)_([0-9]+)$')
@@ -127,9 +162,16 @@ def main(args):
     obs['independent_validation_eligible']=False
     obs['independence_gate']='P3_original_study_overlap_not_seen_but_library_alias_and_prior_analysis_use_review_pending'
     obs['sample_unit']=obs.sampleID
-    # Merge documented same-patient technical libraries only when every key is verified.
-    known=obs.patient_identity_verified.astype(bool)&obs.tissue.ne('')
-    obs.loc[known,'sample_unit']=obs.loc[known,'patient_block']+'::'+obs.loc[known,'tissue']+'::'+obs.loc[known,'timepoint']+'::'+obs.loc[known,'capture_scope']
+    # A shared patient/tissue/time label alone does not prove a shared specimen
+    # or matching FACS fraction. Preserve original libraries; downstream NMF
+    # and networks balance repeated observations by verified patient blocks.
+    obs['sample_unit_status']='original_library_unmerged_specimen_or_fraction_alias_not_assumed'
+    obs['study_therapy_context']=''
+    for record in config['records']:
+        mask=obs.dataset.eq(record['dataset'])
+        obs.loc[mask,'study_therapy_context']=record['therapy_background']
+    reused=obs.dataset.isin(['GSE169246','GSE176021','GSE316195'])
+    obs.loc[reused,'ambient_status']='not_assessed_in_this_run_prior_QC_native_counts_reused'
     for col in obs:
         if obs[col].dtype==object:obs[col]=obs[col].fillna('').astype(str)
     path=args.run/'manifests/cohort_cell_registry_v2_private.tsv.gz'
@@ -157,4 +199,5 @@ def main(args):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     for key in ['contract','audit','prepared','scratch','run']:p.add_argument('--'+key,type=Path,required=True)
+    p.add_argument('--reuse-native-union',type=Path)
     main(p.parse_args())

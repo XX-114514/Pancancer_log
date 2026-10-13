@@ -16,7 +16,7 @@ def save(path,value):
 
 def main(args):
     run=args.run;scratch=args.scratch;code=args.code_dir
-    lock=run/'manifests/production_pipeline_launch_private.json'
+    lock=run/'manifests'/('production_pipeline_launch_'+args.attempt_version+'_private.json')
     save(lock,dict(started_utc=now(),pid=os.getpid(),code_git_sha=args.code_git_sha,
         script_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in code.iterdir() if p.suffix in ['.py','.R']},
         final_storage='original_project_volume',temporary_storage_is_not_authority=True))
@@ -24,11 +24,11 @@ def main(args):
     for k in ['OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS','NUMBA_NUM_THREADS']:env[k]='8'
     env['MPLBACKEND']='Agg'
     def stage(name,command):
-        save(run/'manifests'/(name+'_started_private.json'),dict(phase=name,started_utc=now(),command=command))
+        save(run/'manifests'/(name+'_'+args.attempt_version+'_started_private.json'),dict(phase=name,started_utc=now(),command=command))
         print(json.dumps(dict(phase=name,status='running',utc=now())),flush=True)
-        with (run/'logs'/(name+'_v1.log')).open('xb') as f:
+        with (run/'logs'/(name+'_'+args.attempt_version+'.log')).open('xb') as f:
             result=subprocess.run(command,stdout=f,stderr=subprocess.STDOUT,env=env)
-        save(run/'manifests'/(name+'_terminal_public.json'),dict(phase=name,finished_utc=now(),exit_code=result.returncode,
+        save(run/'manifests'/(name+'_'+args.attempt_version+'_terminal_public.json'),dict(phase=name,finished_utc=now(),exit_code=result.returncode,
              status='process_success_pending_artifact_gate' if result.returncode==0 else 'failed',authoritative_release=False))
         if result.returncode:raise RuntimeError(name+' failed; immutable attempt/log preserved')
         print(json.dumps(dict(phase=name,status='process_success',utc=now())),flush=True)
@@ -45,12 +45,14 @@ def main(args):
             time.sleep(20)
         if json.loads(terminal.read_text())['exit_code']!=0:raise RuntimeError('Additional QC independent audit failed')
         contract=run/'config/source_contract_v2_private.json'
-        stage('cohort_freeze',[args.python,'-u',str(code/'freeze_immune_cohort.py'),'--contract',str(run/'config/source_contract_private.json'),
-             '--audit',str(scratch/'manifests/independent_QC_audit.json'),'--prepared',str(scratch/'objects/prepared'),'--scratch',str(scratch),'--run',str(run)])
-        pilot=run/'pilot_attempt_v2';pilot.mkdir(mode=0o700)
+        freeze=[args.python,'-u',str(code/'freeze_immune_cohort.py'),'--contract',str(run/'config/source_contract_private.json'),
+             '--audit',str(scratch/'manifests/independent_QC_audit.json'),'--prepared',str(scratch/'objects/prepared'),'--scratch',str(scratch),'--run',str(run)]
+        if args.reuse_native_union:freeze+=['--reuse-native-union',str(args.reuse_native_union)]
+        stage('cohort_freeze',freeze)
+        pilot=run/('pilot_attempt_'+args.attempt_version);pilot.mkdir(mode=0o700)
         for d in ['manifests','tables']:(pilot/d).mkdir(mode=0o700)
         stage('biology_pilot_v2',[args.python,'-u',str(code/'immune_atlas_biology.py'),'--contract',str(contract),
-             '--run',str(pilot),'--scratch',str(scratch/'pilot_attempt_v2'),'--panel-dir',str(run/'config'),'--phase','pilot'])
+             '--run',str(pilot),'--scratch',str(scratch/('pilot_attempt_'+args.attempt_version)),'--panel-dir',str(run/'config'),'--phase','pilot'])
         proof=json.loads((pilot/'manifests/integration_pilot_public.json').read_text())
         if not proof['pilot_only'] or proof['n_shared_features']<2000:raise RuntimeError('Pilot artifact gate failed')
         pair=[m for m in proof['metrics'] if m.get('phase') in ['before','after']]
@@ -88,13 +90,13 @@ def main(args):
              '--run',str(run),'--scratch',str(scratch),'--quota-group',args.quota_group])
         release=json.loads((run/'manifests/immune_authority_release_public.json').read_text())
         if not release['technical_authority_released'] or not release['all_checks_pass']:raise RuntimeError('Final authority gate failed')
-        save(run/'manifests/production_pipeline_terminal_public.json',dict(finished_utc=now(),status='completed',
+        save(run/'manifests'/('production_pipeline_terminal_'+args.attempt_version+'_public.json'),dict(finished_utc=now(),status='completed',
              n_cells=release['n_cells'],n_features=release['n_features'],technical_authority_released=True,
              independent_validation_frozen=False,clinical_eligibility_is_source_specific=True))
         print(json.dumps(dict(utc=now(),phase='pipeline_complete',n_cells=release['n_cells'])),flush=True)
     except Exception as exc:
-        (run/'logs/production_pipeline_traceback_private.txt').write_text(traceback.format_exc())
-        save(run/'manifests/production_pipeline_terminal_public.json',dict(finished_utc=now(),status='failed',
+        (run/'logs'/('production_pipeline_traceback_'+args.attempt_version+'_private.txt')).write_text(traceback.format_exc())
+        save(run/'manifests'/('production_pipeline_terminal_'+args.attempt_version+'_public.json'),dict(finished_utc=now(),status='failed',
              failure=str(exc),authoritative_release=False,failed_history_preserved=True))
         raise
 
@@ -104,4 +106,6 @@ if __name__=='__main__':
     for key in ['run','scratch','code-dir','core-dir','gene-annotation','covarnet-R-dir']:p.add_argument('--'+key,type=Path,required=True)
     for key in ['python','rscript','code-git-sha','quota-group']:p.add_argument('--'+key,required=True)
     p.add_argument('--QC-pid',type=int,required=True)
+    p.add_argument('--attempt-version',default='v1',choices=['v1','v2','v3'])
+    p.add_argument('--reuse-native-union',type=Path)
     main(p.parse_args())

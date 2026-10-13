@@ -72,3 +72,13 @@
 - CoVarNet实际R接口检查PASS：合成24组成单元/12模拟患者块/12节点/2模拟来源，rank2—3调查、30重复最终NMF、来源中心化网络及汇总/图输出完成，3模块/12边；这只是API和输出契约检查，真实细胞0，不能当真实CM。合成来源留出后仅6块，未满足门槛，因此LOSO重拟合0，未假称验证完成。
 - 部署过程一次R解析在大批文件尚未复制完时报告文件不存在；等待复制进程退出0后重试，实际R环境语法PASS。没有修改失败历史，也没有真实矩阵因此重复启动。
 - 7cc78f9已普通push，独立HTTPS核验同SHA。签名沿用既有服务器agent转发，密钥未复制。
+
+## 14:43—14:49 UTC / 22:43—22:49 UTC+8：额外QC通过，文库别名门槛失败及修复
+
+- GSE305078全32文库执行于14:43:36 UTC退出0；独立审计于14:44:37 UTC退出0。生产链14:44:40 UTC进入冻结，14:47:06 UTC因Clinical library coverage incomplete按门槛退出，未进入全量生物学，没有权威对象发布。
+- 已定位：GSE169246原标签及GSE176021 GSM均覆盖临床表；GSE316195全部82,549细胞原库用GM*_filtered_feature_bc_matrix，而临床表用GSM。原对象内GSM字段提供精确对应。新增按原生行与GSM校验的crosswalk，保留原物理库名和独立clinical_library_id。
+- 保留已写出的GSE305078原生准备合集和失败版本，恢复前对其全部计数/污染扣除/X与全部32原prepared shards逐行检查，再只读复用；不重复DD/DecontX。
+- 修正样本单元：同患者/组织/时间标签不足以证明同一标本或FACS分选，保持original_library未合并。CoVarNet NMF/网络在verified patient block层平衡重复观测。保留已有RNA结果，计数不会因此改动。
+- 既有GSE169246/GSE176021/GSE316195原生QC/DD复用；本轮未新跑其污染估计，明确ambient_status=not_assessed_in_this_run_prior_QC_native_counts_reused。不得称所有来源已完成污染校正。
+- 原CNV核心已通过800真实原生计数细胞的接口检查，CopyKAT明确disabled；这是技术检查、QC诊断标签，未替代正式全队列预测。一次私有检查启动命令因本地引号错误未执行；改成参数化可复现入口后成功。
+- 新恢复作业使用独立代码v3和分版本启动/终态记录，旧作业失败证据及临时对象全部保留。
