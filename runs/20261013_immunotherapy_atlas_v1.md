@@ -16,3 +16,6 @@
 - 来源盘点完成：21条来源、5,274,578细胞登记，角色分层详见[汇总](../inventories/runtime/2026-10-13/immune_atlas_v1/source_preflight_public.json)。不等于临床验收或独立验证。
 - GSE305078：原生count检查PASS，32文库DD/DecontX后台运行；独立复核pending。
 - 下游pilot：2026-10-13 13:47:03 UTC / 21:47:03 UTC+8开始，PID 341235，12个免疫主队列/待审来源，每来源600细胞；冻结代码aef9684。范围之外的机制参照/CAR产品/基线重叠没有混入该模型。
+
+- 生产链实际启动：2026-10-13 14:28:19 UTC / 22:28:19 UTC+8，PID139233，冻结7cc78f9；待额外QC独立验收后依次进入冻结、范围pilot、全量生物学与最终对象。
+- CoVarNet R接口合成测试PASS：[报告](../inventories/runtime/2026-10-13/immune_atlas_v1/synthetic_CM_API_public.json)；真实细胞0，未声称真实CM完成。
