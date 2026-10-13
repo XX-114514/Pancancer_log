@@ -21,7 +21,10 @@ def main(args):
         script_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in code.iterdir() if p.suffix in ['.py','.R']},
         final_storage='original_project_volume',temporary_storage_is_not_authority=True))
     env=os.environ.copy()
-    for k in ['OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS','NUMBA_NUM_THREADS']:env[k]='8'
+    for k in ['OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS']:env[k]='8'
+    # Scanpy forwards settings.n_jobs=16 to PyNNDescent, which calls
+    # numba.set_num_threads(16). The import-time maximum must permit that.
+    env['NUMBA_NUM_THREADS']='16'
     env['MPLBACKEND']='Agg'
     def stage(name,command):
         save(run/'manifests'/(name+'_'+args.attempt_version+'_started_private.json'),dict(phase=name,started_utc=now(),command=command))
@@ -47,13 +50,25 @@ def main(args):
         contract=run/'config/source_contract_v2_private.json'
         freeze=[args.python,'-u',str(code/'freeze_immune_cohort.py'),'--contract',str(run/'config/source_contract_private.json'),
              '--audit',str(scratch/'manifests/independent_QC_audit.json'),'--prepared',str(scratch/'objects/prepared'),'--scratch',str(scratch),'--run',str(run)]
-        if args.reuse_native_union:freeze+=['--reuse-native-union',str(args.reuse_native_union)]
-        stage('cohort_freeze',freeze)
-        pilot=run/('pilot_attempt_'+args.attempt_version);pilot.mkdir(mode=0o700)
-        for d in ['manifests','tables']:(pilot/d).mkdir(mode=0o700)
-        stage('biology_pilot_v2',[args.python,'-u',str(code/'immune_atlas_biology.py'),'--contract',str(contract),
-             '--run',str(pilot),'--scratch',str(scratch/('pilot_attempt_'+args.attempt_version)),'--panel-dir',str(run/'config'),'--phase','pilot'])
-        proof=json.loads((pilot/'manifests/integration_pilot_public.json').read_text())
+        if args.resume_from=='integration':
+            if not contract.exists():raise RuntimeError('Resume requires frozen source contract')
+            frozen_contract=json.loads(contract.read_text())
+            audit_hash=hashlib.sha256((scratch/'manifests/independent_QC_audit.json').read_bytes()).hexdigest()
+            if frozen_contract['additional_QC_audit_sha256']!=audit_hash:raise RuntimeError('Resume QC audit SHA differs')
+            if not args.resume_pilot_report:raise RuntimeError('Resume requires actual accepted pilot report')
+            proof=json.loads(args.resume_pilot_report.read_text())
+            save(run/'manifests'/('integration_resume_'+args.attempt_version+'_public.json'),dict(
+                observed_utc=now(),frozen_contract_sha256=hashlib.sha256(contract.read_bytes()).hexdigest(),
+                pilot_report_sha256=hashlib.sha256(args.resume_pilot_report.read_bytes()).hexdigest(),
+                numerical_method_unchanged=True,NUMBA_max_threads=16,QC_and_cohort_freeze_not_repeated=True))
+        else:
+            if args.reuse_native_union:freeze+=['--reuse-native-union',str(args.reuse_native_union)]
+            stage('cohort_freeze',freeze)
+            pilot=run/('pilot_attempt_'+args.attempt_version);pilot.mkdir(mode=0o700)
+            for d in ['manifests','tables']:(pilot/d).mkdir(mode=0o700)
+            stage('biology_pilot_v2',[args.python,'-u',str(code/'immune_atlas_biology.py'),'--contract',str(contract),
+                 '--run',str(pilot),'--scratch',str(scratch/('pilot_attempt_'+args.attempt_version)),'--panel-dir',str(run/'config'),'--phase','pilot'])
+            proof=json.loads((pilot/'manifests/integration_pilot_public.json').read_text())
         if not proof['pilot_only'] or proof['n_shared_features']<2000:raise RuntimeError('Pilot artifact gate failed')
         pair=[m for m in proof['metrics'] if m.get('phase') in ['before','after']]
         if len(pair)==2 and pair[0]['known_marker_major_neighbor_purity'] is not None and pair[1]['known_marker_major_neighbor_purity']<pair[0]['known_marker_major_neighbor_purity']-.10:
@@ -106,6 +121,8 @@ if __name__=='__main__':
     for key in ['run','scratch','code-dir','core-dir','gene-annotation','covarnet-R-dir']:p.add_argument('--'+key,type=Path,required=True)
     for key in ['python','rscript','code-git-sha','quota-group']:p.add_argument('--'+key,required=True)
     p.add_argument('--QC-pid',type=int,required=True)
-    p.add_argument('--attempt-version',default='v1',choices=['v1','v2','v3'])
+    p.add_argument('--attempt-version',default='v1',choices=['v1','v2','v3','v4'])
     p.add_argument('--reuse-native-union',type=Path)
+    p.add_argument('--resume-from',choices=['integration'])
+    p.add_argument('--resume-pilot-report',type=Path)
     main(p.parse_args())
