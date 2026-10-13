@@ -1,0 +1,12 @@
+{
+  "synthetic_only": true,
+  "n_real_cells": 0,
+  "n_synthetic_cells": 12000,
+  "n_PCs": 50,
+  "transformer": "pynndescent",
+  "scanpy_n_jobs": 16,
+  "NUMBA_max_threads": 16,
+  "n_connectivity_nonzero": 594238,
+  "all_connectivities_finite": true,
+  "status": "PASS"
+}

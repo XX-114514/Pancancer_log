@@ -26,3 +26,5 @@
 - 15:18:14 UTC / 23:18:14 UTC+8队列冻结PASS：[实际范围](../inventories/runtime/2026-10-13/immune_atlas_v1/cohort_freeze_v2_public.json)，9来源2,670,057细胞/400物理库。新范围pilot已启动；完整生物学与最终Zarr尚未完成。
 
 - 正式9来源pilot PASS：5,400细胞/22,351共享features，[实际指标](../inventories/runtime/2026-10-13/immune_atlas_v1/integration_pilot_v3_public.json)。15:20:53 UTC / 23:20:53 UTC+8全量2,670,057细胞生产整合已开始；没有声称全量下游完成。
+
+- 大样本后端线程上限修复已实测：[模拟12,000坐标PyNNDescent检查](../inventories/runtime/2026-10-13/immune_atlas_v1/large_neighbor_backend_API_public.json)。v4生产恢复15:38:26 UTC / 23:38:26 UTC+8，PID74376；冻结QC/pilot复用，无新的全量完成声明。方法详见[合同](../methods/immune-specific-atlas-v1.md)。
