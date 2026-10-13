@@ -24,3 +24,5 @@
 - GSE305078全量独立QC报告：[验收汇总](../inventories/runtime/2026-10-13/immune_atlas_v1/GSE305078_preprocessing_acceptance_public.json)。预计主对象9来源2,670,057细胞/400原库；正式下游和最终权威仍pending。
 
 - 15:18:14 UTC / 23:18:14 UTC+8队列冻结PASS：[实际范围](../inventories/runtime/2026-10-13/immune_atlas_v1/cohort_freeze_v2_public.json)，9来源2,670,057细胞/400物理库。新范围pilot已启动；完整生物学与最终Zarr尚未完成。
+
+- 正式9来源pilot PASS：5,400细胞/22,351共享features，[实际指标](../inventories/runtime/2026-10-13/immune_atlas_v1/integration_pilot_v3_public.json)。15:20:53 UTC / 23:20:53 UTC+8全量2,670,057细胞生产整合已开始；没有声称全量下游完成。
