@@ -1,3 +1,7 @@
+## 2026-10-13T13:20:26.393419+00:00 /UTC+8 2026-10-13T21:20:26.393419+08:00 有限通讯轮次与CM转向
+
+细分IFNG有限336检验已冻结，生产待；DIALOGUE/空间及CM临床为条件计划。 [合同](methods/finite-communication-rounds-and-CM-pivot-v1.md)。
+
 ## 2026-10-13T21:03:37.528741+08:00 /UTC 2026-10-13T13:03:37.528741+00:00 IFNG完整受体RNA同细胞支持已审
 
 [真实细胞结果](inventories/analysis/2026-10-13/IFNG_receptor_single_cell_v1/RESULTS.md)：240533细胞，巨噬共同R1/R2阳性11—56%、211/212库；T IFNG207/212库。原PAIR015/CD8_NKG7_9—Mac_IFI6_18桥接CM01/03，RNA份额与部分来源反例已确认。仅RNA/数值证据，接收程序稳健性和独立空间/功能验证仍不足；下一细分端点内程序/组成，不改原编号/9CM。

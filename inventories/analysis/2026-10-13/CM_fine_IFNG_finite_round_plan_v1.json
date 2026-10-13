@@ -1,0 +1,92 @@
+{
+  "schema": "CM_fine_IFNG_finite_round_v1",
+  "created_UTC": "2026-10-13T13:15:56.848068+00:00",
+  "contexts": [
+    "MAJ018_M01",
+    "MAJ060_M02",
+    "MAJ096_M01",
+    "MAJ158_M01",
+    "MAJ182_M01",
+    "MAJ226_M01"
+  ],
+  "pairs": [
+    {
+      "pair_id": "PAIR015",
+      "sender": "CD8_T_cell_NKG7_9",
+      "receiver": "Macrophage_IFI6_18",
+      "CM": "CM01;CM03"
+    },
+    {
+      "pair_id": "PAIR034",
+      "sender": "T_cell_IL7R_28",
+      "receiver": "Macrophage_CD74_39",
+      "CM": "CM02;CM09"
+    },
+    {
+      "pair_id": "PAIR038",
+      "sender": "Regulatory_T_cell_CTLA4_15",
+      "receiver": "Macrophage_IFI6_18",
+      "CM": "CM01"
+    }
+  ],
+  "native_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "design_inventory_sha256": "4cfc0511aecf1782452146c1a0b0284f8b7ad7e9f50e03ab0bfa495399ab9ac5",
+  "counts_sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+  "core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "dictionary_sha256": "f061583dc9cc29f27f44d0e08cca43fa4ba211504ea4d8e5e2350342202d0c7a",
+  "LR_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "native_cache": {
+    "root_files": {
+      "input_contract.json": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+      "all_node_number_catalog.tsv": "02bcd7b83b2967e8a8907016002050dbcecbc54c133f0a486f4ea7e5e96536e0",
+      "manifest.json": "dd36a70020503506ada916f9b6d6a25f8f2dd05cb56b1eed675545dd94deec53",
+      "independent_audit.json": "37130469977972f77913090bcd05c2dc4d8fdb4cca540a532594554a4a3bc838"
+    },
+    "sources": {
+      "GSE148071": {
+        "manifest_sha256": "ba3ba8c72a9604c1ecbae9568f1e722b32380f2ba91e01b6cb7a46e8b772a1f8"
+      },
+      "GSE161529": {
+        "manifest_sha256": "bbe5e6fb9cb878d2ce335a41282cc7b371f199302fc7dca88dff584775a7d165"
+      },
+      "GSE178341": {
+        "manifest_sha256": "3a28671df7a8df54e345bf5b6d1c92729595e5847f3ca6dc89aa41de712f65c4"
+      },
+      "GSE182109": {
+        "manifest_sha256": "9087e4d2ed30d8111a94374ec25865b1ff43ef31a523771fa9e497f794afd46a"
+      },
+      "GSE183904": {
+        "manifest_sha256": "04d78026ed84e15ff9c99a2d948947b537de2808b38ce36859bfaa3e73860e5c"
+      }
+    }
+  },
+  "current_input_sha256": {
+    "counts": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+    "catalogue": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+    "scope": "e7fe741602219561ce1cae496264e819d3e8e6fb0b8de1ba955de628a2ae0ead"
+  },
+  "min_cells": 20,
+  "min_libraries": 20,
+  "min_blocks": 10,
+  "min_df": 4,
+  "min_program_genes": 20,
+  "min_detected_genes": 10,
+  "min_detected_library_fraction": 0.8,
+  "score_variants": [
+    "meanlog",
+    "pseudobulk_gene_rank"
+  ],
+  "control_variants": [
+    "identity_abundance_quality_receptor",
+    "plus_shared_IFN_and_intrinsic_IFNG"
+  ],
+  "family_per_variant": 84,
+  "models_total": 336,
+  "post_result_exploration": true,
+  "independent_validation": false,
+  "score_description": "mean log1pCP10K, or within-fine-library full-measured-gene average-tie percentile rank (not UCell, not single-cell rank); fixed five-source common genes; interface IFNG/IFNGR1/IFNGR2 removed",
+  "covariates": "sender and receiver within-major fractions; log1p endpoint counts; endpoint nonLR detected gene complexity; min receiver IFNGR1/2 meanlog; context intercept. Sensitivity adds sender Hallmark gamma programme and receiver intrinsic IFNG, possible mediators not automatically artefact.",
+  "stop": "No further thresholds, endpoints or gene-set changes to recover significance. After fine/rank and one warranted spatial round, pivot to CM cohort/clinical and expression MCP discovery if no stable candidate or coverage insufficient.",
+  "producer_sha256": "5d5b4c3e9c046c48e57e579a1190a0ef15b3dd16461215e7de496e275b0c1314",
+  "auditor_sha256": "7890de31c0b56bfc80938d211c16e982874573c56dccb83c46fb5535a2b1d371"
+}

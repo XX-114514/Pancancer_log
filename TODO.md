@@ -1,3 +1,7 @@
+## 2026-10-13T13:20:26.393419+00:00 /UTC+8 2026-10-13T21:20:26.393419+08:00 有限通讯轮次与CM转向
+
+FINITE-CM：执行336固定模型与全系数full-X审计；不足不降门槛；之后按有限合同转向。 [合同](methods/finite-communication-rounds-and-CM-pivot-v1.md)。
+
 ## IFNG主线当前下一步
 
 [受体同细胞及细分角色已审](inventories/analysis/2026-10-13/IFNG_receptor_single_cell_v1/RESULTS.md)。原PAIR015连接CM01/CM03；先重核患者/材料及全部可测T—巨噬细分覆盖，再固定群内IFNG剂量/γ、α、TNF程序对比并拆解组成。RNA分子前提成立，稳定接收响应/独立空间/功能尚未验证；保持旧全部9CM和并发atlas计划。
