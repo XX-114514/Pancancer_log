@@ -1,3 +1,7 @@
+## 2026-10-13T20:55:00.657953+08:00 /UTC 2026-10-13T12:55:00.657953+00:00 状态程序准备诊断完成
+
+[实际9412记录/11源/181程序](inventories/analysis/2026-10-13/state_programme_readiness_v1/RESULTS.md)：6386与复杂度abs rho≥.5，1036全局LR剔除损失至少半签名；Mac_IFNG21→5。52标量复算/全scope与SHA通过，独立任务证据登记/0冲突。支持先做身份内factor与rank评分试点；没有训练Spectra/cNMF、单细胞状态或新通讯检验。原身份/9CM/CM证据v17保持，其他任务按其较新记录。
+
 ## 2026-10-13T20:45:11.855392+08:00 /UTC 2026-10-13T12:45:11.855392+00:00 全接收程序已审 IFNG线索尚未验证
 
 [147968完整模型](inventories/analysis/2026-10-13/mac_T_receiver_programs_v1/RESULTS.md)：数值fixture PASS，主γ/TNF各1BH，BY0；IFNG自身γ全q.918、亚型减弱，保持原IRF1线索。下一原240533细胞的IFNGR1/2同细胞RNA及细分贡献/实际CM核心核查。原状态/编号/9CM不改，独立空间/功能证据尚待。

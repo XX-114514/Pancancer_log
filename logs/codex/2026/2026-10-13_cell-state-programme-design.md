@@ -23,3 +23,11 @@
 早前过多批量输出被截断，重做限定字段只读取证；一次试图恢复未知tool session id0失败，仅观察工具错误，不影响科学任务。实际CURRENT_RUNS为json而非tsv已纠正读取。未验证新状态模型/全细胞标签、独立通讯轴或疗效。不得以程序字典或均值分数冒称Spectra/UCell训练。
 
 建议commit：analysis: freeze cell state programme readiness and communication failure review。
+
+## 2026-10-13T20:55:00.657953+08:00 /UTC 2026-10-13T12:55:00.657953+00:00 实际完成、方法修订和登记
+
+生产12:46:42.997136—12:47:30.981673 UTC，worker12:46:42.259744—12:47:31.101092 exit0；12:47:46核实63358/63359均不存在。全11/52/2028/181/9412/16290保留，全部旧缓存SHA、52固定program标量复算PASS；本机全部输出SHA/键/分母/汇总核对通过。8217覆盖诊断通过、6386复杂度abs rho≥.5、1036剔全LR损失半签名；不是独立状态或patient推断。Mac_IFNG21→5及肿瘤反应样8→1是具体信息损失。新控制应候选接口排除主读出、全局LR剔除敏感性并列，状态发现保留完整字典，不据p挑版本。
+
+12:51:35.816638 UTC新里程碑/本任务state_programme_readiness_evidence_register及control新交接保存，refresh0冲突，原CM证据v17不改、所有并行任务保持。[接受回执](../../../inventories/analysis/2026-10-13/state_programme_readiness_v1/acceptance_receipt.json)/[结果](../../../inventories/analysis/2026-10-13/state_programme_readiness_v1/RESULTS.md)。未独立重演全9412分数、未训练factor或UCell、未赋正式状态。
+
+4cb8a1c25a161333520ce6b845675ff40a57ec42预声明已12:45:22普通push/12:45:29独立HTTPS核验，[回执](../../../inventories/analysis/2026-10-13/state_programme_readiness_v1/plan_git_receipt.json)。并发主线d332d93已正式保存147968外部读出和IFNGR单细胞下一合同，保留；本任务引用较新结果而不重复模型。当前本机无matplotlib，仅查询依赖，未为制图安装包；表格直接展示实际诊断。下一Spectra/cNMF单细胞均衡试点需另固定scope和隔离实现版本；此有界准备阶段已完成，科学标签/通讯验证未完成。

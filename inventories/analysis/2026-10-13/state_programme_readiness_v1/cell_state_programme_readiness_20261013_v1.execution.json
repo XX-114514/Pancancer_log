@@ -1,0 +1,13 @@
+{
+  "status": "TERMINAL_SUCCESS_READINESS_ONLY",
+  "started_UTC": "2026-10-13T12:46:42.259744+00:00",
+  "worker_pid": 63358,
+  "role": "state_programme_reference_readiness_not_annotation",
+  "worker_sha256": "1fab37befb6eecb253eb724541fa20eb5541d3fca0952aed96a755e9277b3164",
+  "child_script_sha256": "2ab44cc879acaaeb6cc445ac3f52fdce5a2c0aeaabcd954468ebf444f4b7c902",
+  "scientific_release": false,
+  "state_labels_assigned": false,
+  "child_pid": 63359,
+  "finished_UTC": "2026-10-13T12:47:31.101092+00:00",
+  "exit_code": 0
+}

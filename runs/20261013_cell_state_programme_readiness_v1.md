@@ -11,3 +11,7 @@ UTC 2026-10-13T12:44:20.692617+00:00 /UTC+8 2026-10-13T20:44:20.692617+08:00。[
 ## 状态
 
 predeclared_not_started；语法通过，真实执行/核查待。评分只是现有major均值logCP10K描述，不是UCell或Spectra；复杂度相关无p/患者推断，参考细CD4/CD8标签不晋升原身份。真正单细胞训练、留出投影及状态审核需下一合同。
+
+## 实际终态/登记：2026-10-13T20:55:00.657953+08:00
+
+生产UTC12:46:42.997136—12:47:30.981673，worker至12:47:31.101092 exit0；12:47:46两个PID消失。全部9412和52直接标量检查通过；8217覆盖/6386复杂度rho/1036LR删除损失，详细边界见[RESULTS](../inventories/analysis/2026-10-13/state_programme_readiness_v1/RESULTS.md)。12:51:35新里程碑/本任务证据register和control交接/refresh0冲突；CM register保持v17。阶段complete_reference_readiness_not_state_annotation，factor训练、单细胞rank评分及正式state审阅待下一合同。

@@ -1,0 +1,39 @@
+{
+  "schema": "cell_state_programme_readiness_v1",
+  "status": "COMPLETE_REFERENCE_COVERAGE_DIAGNOSTICS_ONLY",
+  "started_UTC": "2026-10-13T12:46:42.997136+00:00",
+  "finished_UTC": "2026-10-13T12:47:30.981673+00:00",
+  "producer_sha256": "2ab44cc879acaaeb6cc445ac3f52fdce5a2c0aeaabcd954468ebf444f4b7c902",
+  "reference_sha256": "1a9fef406d4d7c4ec0a14415c231a805b703d58574d1bc6081175bcf3f4357f2",
+  "native_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "programs": 181,
+  "sources": 11,
+  "original_major_units": 2028,
+  "source_major_groups": 52,
+  "rows": 9412,
+  "descriptive_gate_rows": 8217,
+  "LR_exclusion_loses_at_least_half_rows": 1036,
+  "complexity_rho_abs_ge_point5_rows": 6386,
+  "complexity_rho_estimable_rows": 9412,
+  "scalar_checks": 52,
+  "matrix_factorization_executed": false,
+  "cell_level_UCell_executed": false,
+  "formal_state_labels": false,
+  "new_LR_tests": false,
+  "scientific_release": false,
+  "axis_validation_complete": false,
+  "limits": [
+    "Only existing selected major/library aggregates; not all cells or subtype-conditional state inference",
+    "Reference matching and arbitrary diagnostic gates do not prove state presence or absence",
+    "Unmatched symbols may reflect aliases or upstream feature filtering, never silently filled zero",
+    "Scores are descriptive mean log1pCP10K, not Spectra/UCell or activation thresholds",
+    "Complexity correlation may be biological or technical; no p-values or patient independence claimed",
+    "Reference fine immune labels do not promote broad T/NK into CD4/CD8/Treg identities"
+  ],
+  "outputs": {
+    "all181_reference_program_catalogue.tsv": "e02ea9190bd12c0ddc11564453da32123565e6daff5d50cb062521241ccafab7",
+    "all16290_reference_overlap.tsv.gz": "2b722263d98c465c3f3a81f673d36f2354184eab9cbf58d89bce56466467dd55",
+    "all_source_major_program_readiness.tsv.gz": "e0e98e9b6fa69c3683914672b97797d2ac61b8d0480b6fccd838cfe422ef1e5e",
+    "direct_scalar_diagnostic_checks.tsv": "6f4abc86915812ee7ce9ef366d19a4f4199a8423e5206a6c97f95a179e24ca43"
+  }
+}
