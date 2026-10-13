@@ -1,3 +1,7 @@
+## 2026-10-13T13:29:24.230755+00:00 /UTC+8 2026-10-13T21:29:24.230755+08:00 有限两轮完成及主线转向
+
+有限轮次1/2已审：336模型，主1BH但评分/共同程序敏感、CRC信息85%，其他变体/BY全0。保留PAIR015生态线索；主线转CM队列/临床及表达MCP，DIALOGUE未训练。 [结果](inventories/analysis/2026-10-13/CM_fine_IFNG_finite_round_v1/RESULTS.md)。
+
 ## 2026-10-13T13:20:26.393419+00:00 /UTC+8 2026-10-13T21:20:26.393419+08:00 有限通讯轮次与CM转向
 
 细分IFNG有限336检验已冻结，生产待；DIALOGUE/空间及CM临床为条件计划。 [合同](methods/finite-communication-rounds-and-CM-pivot-v1.md)。

@@ -1,0 +1,5 @@
+score	control	models	estimated	BH05	BY05
+meanlog	identity_abundance_quality_receptor	84	24	1	0
+meanlog	plus_shared_IFN_and_intrinsic_IFNG	84	20	0	0
+pseudobulk_gene_rank	identity_abundance_quality_receptor	84	24	0	0
+pseudobulk_gene_rank	plus_shared_IFN_and_intrinsic_IFNG	84	24	0	0

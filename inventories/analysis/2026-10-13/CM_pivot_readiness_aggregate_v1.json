@@ -1,0 +1,62 @@
+{
+  "schema": "CM_pivot_readiness_aggregate_v1",
+  "observed_UTC": "2026-10-13T13:25:07.117536+00:00",
+  "clinical_sidecar_sha256": "bfbaa4bd751d7ac8039f3ac01032e396625b8612263f419960c1908635a3dfa1",
+  "datasets": [
+    {
+      "dataset": "GSE169246",
+      "rows": 78,
+      "distinct_library_tokens": 78,
+      "duplicate_dataset_library_rows": 0,
+      "libraries_with_patient_token": 78,
+      "source_scoped_patient_tokens": 22,
+      "response_present": 78,
+      "literature_response_present": 78,
+      "explicit_response_evaluable": 77,
+      "response_source_present": 78,
+      "timepoint_present": 78,
+      "treatment_present": 78,
+      "numeric_TTP_present": 78,
+      "clinical_validation_eligible": false
+    },
+    {
+      "dataset": "GSE176021",
+      "rows": 110,
+      "distinct_library_tokens": 110,
+      "duplicate_dataset_library_rows": 0,
+      "libraries_with_patient_token": 110,
+      "source_scoped_patient_tokens": 16,
+      "response_present": 110,
+      "literature_response_present": 0,
+      "explicit_response_evaluable": 0,
+      "response_source_present": 110,
+      "timepoint_present": 0,
+      "treatment_present": 0,
+      "numeric_TTP_present": 0,
+      "clinical_validation_eligible": false
+    },
+    {
+      "dataset": "GSE316195",
+      "rows": 22,
+      "distinct_library_tokens": 22,
+      "duplicate_dataset_library_rows": 0,
+      "libraries_with_patient_token": 22,
+      "source_scoped_patient_tokens": 11,
+      "response_present": 22,
+      "literature_response_present": 0,
+      "explicit_response_evaluable": 22,
+      "response_source_present": 22,
+      "timepoint_present": 22,
+      "treatment_present": 22,
+      "numeric_TTP_present": 0,
+      "clinical_validation_eligible": false
+    }
+  ],
+  "clinical_summary_is_inventory_not_endpoint_acceptance": true,
+  "patient_tokens_not_cross_study_independent_patients": true,
+  "DIALOGUE_runtime_check_exit_code": 0,
+  "DIALOGUE_runtime_stdout": "3.6.0 \nDIALOGUE FALSE \nlme4 TRUE \nlmerTest FALSE \nPMA FALSE \nplyr TRUE \nmatrixStats TRUE \npsych FALSE \nstringi TRUE \nRColorBrewer TRUE \nunikn FALSE \nreshape2 TRUE \nggplot2 TRUE \ngrid TRUE \nbeanplot FALSE \nparallel TRUE",
+  "DIALOGUE_runtime_stderr_tail": " LC_COLLATE failed, using \"C\" \n3: Setting LC_TIME failed, using \"C\" \n4: Setting LC_MESSAGES failed, using \"C\" \n5: Setting LC_MONETARY failed, using \"C\" \n6: Setting LC_PAPER failed, using \"C\" \n7: Setting LC_MEASUREMENT failed, using \"C\" \nsh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+  "new_Dialogue_fit_performed": false,
+  "new_clinical_models_fitted": false
+}

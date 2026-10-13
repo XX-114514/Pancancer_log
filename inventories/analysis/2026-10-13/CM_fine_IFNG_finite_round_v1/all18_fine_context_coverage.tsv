@@ -1,0 +1,19 @@
+pair_id	CM	context_id	gse_id	cancer_label	material	sender	receiver	n_parent_libraries	n_fine_both_captured	n_fine_both_ge20	n_blocks	n_reviewed_blocks	coverage_ready
+PAIR015	CM01;CM03	MAJ018_M01	GSE148071	Advanced non-small cell lung cancer	CURRENT_SCOPE_UNCHANGED	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	20	19	4	4	0	False
+PAIR015	CM01;CM03	MAJ060_M02	GSE161529	Breast cancer	tumor_mammary_unresolved_repeat_specimens	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	23	21	14	14	14	False
+PAIR015	CM01;CM03	MAJ096_M01	GSE178341	Colorectal cancer	CURRENT_SCOPE_UNCHANGED	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	48	48	36	29	29	True
+PAIR015	CM01;CM03	MAJ158_M01	GSE178341	Colorectal cancer	CURRENT_SCOPE_UNCHANGED	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	61	59	42	38	38	True
+PAIR015	CM01;CM03	MAJ182_M01	GSE182109	Glioblastoma	CURRENT_SCOPE_UNCHANGED	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	36	35	29	13	13	True
+PAIR015	CM01;CM03	MAJ226_M01	GSE183904	Gastric cancer	CURRENT_SCOPE_UNCHANGED	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	24	24	13	13	13	False
+PAIR034	CM02;CM09	MAJ018_M01	GSE148071	Advanced non-small cell lung cancer	CURRENT_SCOPE_UNCHANGED	T_cell_IL7R_28	Macrophage_CD74_39	20	19	7	7	0	False
+PAIR034	CM02;CM09	MAJ060_M02	GSE161529	Breast cancer	tumor_mammary_unresolved_repeat_specimens	T_cell_IL7R_28	Macrophage_CD74_39	23	22	14	14	14	False
+PAIR034	CM02;CM09	MAJ096_M01	GSE178341	Colorectal cancer	CURRENT_SCOPE_UNCHANGED	T_cell_IL7R_28	Macrophage_CD74_39	48	48	17	16	16	False
+PAIR034	CM02;CM09	MAJ158_M01	GSE178341	Colorectal cancer	CURRENT_SCOPE_UNCHANGED	T_cell_IL7R_28	Macrophage_CD74_39	61	58	19	18	18	False
+PAIR034	CM02;CM09	MAJ182_M01	GSE182109	Glioblastoma	CURRENT_SCOPE_UNCHANGED	T_cell_IL7R_28	Macrophage_CD74_39	36	36	14	7	7	False
+PAIR034	CM02;CM09	MAJ226_M01	GSE183904	Gastric cancer	CURRENT_SCOPE_UNCHANGED	T_cell_IL7R_28	Macrophage_CD74_39	24	23	6	6	6	False
+PAIR038	CM01	MAJ018_M01	GSE148071	Advanced non-small cell lung cancer	CURRENT_SCOPE_UNCHANGED	Regulatory_T_cell_CTLA4_15	Macrophage_IFI6_18	20	19	6	6	0	False
+PAIR038	CM01	MAJ060_M02	GSE161529	Breast cancer	tumor_mammary_unresolved_repeat_specimens	Regulatory_T_cell_CTLA4_15	Macrophage_IFI6_18	23	22	13	13	13	False
+PAIR038	CM01	MAJ096_M01	GSE178341	Colorectal cancer	CURRENT_SCOPE_UNCHANGED	Regulatory_T_cell_CTLA4_15	Macrophage_IFI6_18	48	48	44	34	34	True
+PAIR038	CM01	MAJ158_M01	GSE178341	Colorectal cancer	CURRENT_SCOPE_UNCHANGED	Regulatory_T_cell_CTLA4_15	Macrophage_IFI6_18	61	61	44	41	41	True
+PAIR038	CM01	MAJ182_M01	GSE182109	Glioblastoma	CURRENT_SCOPE_UNCHANGED	Regulatory_T_cell_CTLA4_15	Macrophage_IFI6_18	36	34	18	8	8	False
+PAIR038	CM01	MAJ226_M01	GSE183904	Gastric cancer	CURRENT_SCOPE_UNCHANGED	Regulatory_T_cell_CTLA4_15	Macrophage_IFI6_18	24	24	14	14	14	False

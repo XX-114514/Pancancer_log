@@ -1,0 +1,88 @@
+{
+  "observed_UTC": "2026-10-13T13:21:50.022483+00:00",
+  "phases": {
+    "production": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "production",
+      "started_UTC": "2026-10-13T13:21:21.206080+00:00",
+      "driver_pid": 209886,
+      "child_pid": 209887,
+      "finished_UTC": "2026-10-13T13:21:39.752213+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    },
+    "audit": {
+      "status": "TERMINAL_SUCCESS",
+      "phase": "audit",
+      "started_UTC": "2026-10-13T13:21:39.753523+00:00",
+      "driver_pid": 209886,
+      "child_pid": 212163,
+      "finished_UTC": "2026-10-13T13:21:47.810179+00:00",
+      "exit_code": 0,
+      "process_present": {
+        "driver_pid": false,
+        "child_pid": false
+      }
+    }
+  },
+  "inventory.json": {
+    "status": "PRODUCED_PENDING_NUMERIC_AUDIT",
+    "started_UTC": "2026-10-13T13:21:21.833516+00:00",
+    "finished_UTC": "2026-10-13T13:21:39.636222+00:00",
+    "producer_sha256": "5d5b4c3e9c046c48e57e579a1190a0ef15b3dd16461215e7de496e275b0c1314",
+    "plan_sha256": "ccd52cb2ab251b7556b4f99df874cef6912b12e8c2cbe47002a31eddd7109dda",
+    "models": 336,
+    "fixtures": 96,
+    "summary": [
+      {
+        "score": "meanlog",
+        "control": "identity_abundance_quality_receptor",
+        "models": 84,
+        "estimated": 24,
+        "BH05": 1,
+        "BY05": 0
+      },
+      {
+        "score": "meanlog",
+        "control": "plus_shared_IFN_and_intrinsic_IFNG",
+        "models": 84,
+        "estimated": 20,
+        "BH05": 0,
+        "BY05": 0
+      },
+      {
+        "score": "pseudobulk_gene_rank",
+        "control": "identity_abundance_quality_receptor",
+        "models": 84,
+        "estimated": 24,
+        "BH05": 0,
+        "BY05": 0
+      },
+      {
+        "score": "pseudobulk_gene_rank",
+        "control": "plus_shared_IFN_and_intrinsic_IFNG",
+        "models": 84,
+        "estimated": 24,
+        "BH05": 0,
+        "BY05": 0
+      }
+    ]
+  },
+  "independent_audit.json": {
+    "status": "PASS",
+    "observed_UTC": "2026-10-13T13:21:47.716833+00:00",
+    "auditor_sha256": "7890de31c0b56bfc80938d211c16e982874573c56dccb83c46fb5535a2b1d371",
+    "all_model_keys": 336,
+    "full_family_BH_BY_checked": true,
+    "full_X_numeric_values_checked": 572,
+    "all_estimated_coefficients_replayed": true,
+    "maximum_absolute_error": 3.375077994860476e-14,
+    "independent_source_scalar_scores_checked": 60,
+    "not_second_full_program_score_scan": true,
+    "not_independent_biological_validation": true,
+    "missing_retained_not_negative": true
+  }
+}

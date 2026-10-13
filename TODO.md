@@ -1,3 +1,7 @@
+## 2026-10-13T13:29:24.230755+00:00 /UTC+8 2026-10-13T21:29:24.230755+08:00 有限两轮完成及主线转向
+
+FINITE-CM DONE：336及全可计算系数审计；PIVOT NEXT：169246/316195患者baseline/材料/治疗/响应合同、原9CM可捕获范围；隔离DIALOGUE环境/官方示例/类型内PC及患者块发现留出。临床/训练尚未执行。 [结果](inventories/analysis/2026-10-13/CM_fine_IFNG_finite_round_v1/RESULTS.md)。
+
 ## 2026-10-13T13:20:26.393419+00:00 /UTC+8 2026-10-13T21:20:26.393419+08:00 有限通讯轮次与CM转向
 
 FINITE-CM：执行336固定模型与全系数full-X审计；不足不降门槛；之后按有限合同转向。 [合同](methods/finite-communication-rounds-and-CM-pivot-v1.md)。
