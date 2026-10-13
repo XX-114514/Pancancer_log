@@ -1,0 +1,26 @@
+[
+  {
+    "name": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "keys": [
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+    ],
+    "sha256": "845aabdb9ff04fb62bbb1bc8a527654c549075852c84f31d64f50d9e43134353",
+    "url": "https://www.gsea-msigdb.org/gsea/msigdb/human/download_geneset.jsp?geneSetName=HALLMARK_INTERFERON_GAMMA_RESPONSE&fileType=json"
+  },
+  {
+    "name": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+    "keys": [
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE"
+    ],
+    "sha256": "2a3d93f3170bc9866ced1135bdde9870f18294f7ad3ae6cb3732dc3680483455",
+    "url": "https://www.gsea-msigdb.org/gsea/msigdb/human/download_geneset.jsp?geneSetName=HALLMARK_INTERFERON_ALPHA_RESPONSE&fileType=json"
+  },
+  {
+    "name": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "keys": [
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+    ],
+    "sha256": "ade1ab9b67e047ceb70f8b8a06c65c6631e17f06b10c1b0283f962be848d2954",
+    "url": "https://www.gsea-msigdb.org/gsea/msigdb/human/download_geneset.jsp?geneSetName=HALLMARK_TNFA_SIGNALING_VIA_NFKB&fileType=json"
+  }
+]

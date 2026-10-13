@@ -1,0 +1,88 @@
+{
+  "core_sha256": "8683aa2f3f7213f9672257bac696c794053b6f152420f4de8696f46c2aca8caf",
+  "native_inventory_sha256": "8f479c46df237bf95f722577055fe5758b085c8291d604ae3bf1b0789709fe25",
+  "TF_inventory_sha256": "2dec9c11f08dde88a84bc951de2fd1ce949ce2354894a82e532af18a0ba6fe95",
+  "design_inventory_sha256": "4cfc0511aecf1782452146c1a0b0284f8b7ad7e9f50e03ab0bfa495399ab9ac5",
+  "counts_sha256": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+  "LR_sha256": "6a9727b2a1dc2c16ca352afa3484d38c049abaaedb83a5bdc40a7150298d3a00",
+  "contexts": [
+    "MAJ017_M01",
+    "MAJ059_M02",
+    "MAJ095_M01",
+    "MAJ157_M01",
+    "MAJ181_M01",
+    "MAJ225_M01",
+    "MAJ018_M01",
+    "MAJ060_M02",
+    "MAJ096_M01",
+    "MAJ158_M01",
+    "MAJ182_M01",
+    "MAJ226_M01"
+  ],
+  "direction_contexts": {
+    "Macrophage_to_T": [
+      "MAJ017_M01",
+      "MAJ059_M02",
+      "MAJ095_M01",
+      "MAJ157_M01",
+      "MAJ181_M01",
+      "MAJ225_M01"
+    ],
+    "T_to_Macrophage": [
+      "MAJ018_M01",
+      "MAJ060_M02",
+      "MAJ096_M01",
+      "MAJ158_M01",
+      "MAJ182_M01",
+      "MAJ226_M01"
+    ]
+  },
+  "created_UTC": "2026-10-13T12:25:28.318179+00:00",
+  "producer_sha256": "adc8c8df7046d8cc0567e16ce0d3d766d92ec5360f00e4039e795ffd66859a29",
+  "auditor_sha256": "1a9f557c0c66918fbec81f90a65f631c1e430fd4fb58f74b259d97b5b691c92a",
+  "explicit_auditor_sha256": "d0612eae0aeb7747ee4cca248aa8e9fc9bda9e7f0e9820fb6aace85684750e10",
+  "dictionary_sha256": "f061583dc9cc29f27f44d0e08cca43fa4ba211504ea4d8e5e2350342202d0c7a",
+  "family_per_variant": 36992,
+  "variants": [
+    "interface_excluded",
+    "global_LR_excluded",
+    "IRF1_targets_excluded",
+    "subtype_mixture"
+  ],
+  "min_score_genes": 20,
+  "min_detected_genes": 10,
+  "min_library_detected_fraction": 0.8,
+  "min_df": 4,
+  "fixture_groups_per_direction_variant": 3,
+  "targeted_numeric_audit_interfaces": [
+    [
+      "IFNG",
+      "IFNGR1_IFNGR2"
+    ],
+    [
+      "HSPA1A",
+      "TLR4"
+    ],
+    [
+      "LGALS1",
+      "ITGB1"
+    ],
+    [
+      "TGM2",
+      "SDC4"
+    ]
+  ],
+  "score": "same five-source common-native-symbol gene set mean log1pCP10K; remove each tested LR genes, standardize scalar score within context; not GSVA/GSEA or formal state label",
+  "primary_covariates": "full context intercept/abundance/cellcount/nonLR complexity/receptor + sender HSF1 LR-excluded + receiver intrinsic ligand meanlog; fixed full nuisance spans",
+  "eligibility": "existing original LR design/prior gate retained; program detection >=10 genes >=1% cells in80%libraries;>=2GSE; no p selection",
+  "programs": "IFNgamma, IFNalpha, TNFa/NFKB and IFNgamma minus alpha reference overlap",
+  "limits": [
+    "same-discovery data, post-result exploration",
+    "gamma-minus-alpha is gene set difference, not IFNgamma-specific biology",
+    "IRF1 targets excluded diagnostic, not independent cohort",
+    "gene symbols unmatched may reflect aliases, not assay absence",
+    "continuous expression program; no new cell state labels",
+    "CR2 approximate calibration; BH exploratory and BY sensitivity",
+    "program associations do not prove receptor specificity or extracellular functional communication"
+  ]
+}
