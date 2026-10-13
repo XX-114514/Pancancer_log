@@ -1,0 +1,39 @@
+{
+  "created_UTC": "2026-10-13T12:42:20.871268+00:00",
+  "producer_sha256": "0313ce3e5a005f0a3006bd0b927c70c735b4080c41cb53b64f59279a40f09330",
+  "auditor_sha256": "eb7554c49f8f139f926c7e3e410968ffab1354762229df270b8b228e4cb7e630",
+  "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "original_catalogue_sha256": "02bcd7b83b2967e8a8907016002050dbcecbc54c133f0a486f4ea7e5e96536e0",
+  "current_catalogue_sha256": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+  "source_manifest_sha256": {
+    "GSE148071": "ba3ba8c72a9604c1ecbae9568f1e722b32380f2ba91e01b6cb7a46e8b772a1f8",
+    "GSE161529": "bbe5e6fb9cb878d2ce335a41282cc7b371f199302fc7dca88dff584775a7d165",
+    "GSE178341": "3a28671df7a8df54e345bf5b6d1c92729595e5847f3ca6dc89aa41de712f65c4",
+    "GSE182109": "9087e4d2ed30d8111a94374ec25865b1ff43ef31a523771fa9e497f794afd46a",
+    "GSE183904": "04d78026ed84e15ff9c99a2d948947b537de2808b38ce36859bfaa3e73860e5c"
+  },
+  "sources": [
+    "GSE148071",
+    "GSE161529",
+    "GSE178341",
+    "GSE182109",
+    "GSE183904"
+  ],
+  "genes": [
+    "IFNG",
+    "IFNGR1",
+    "IFNGR2"
+  ],
+  "expected_cells": 240533,
+  "expected_units": 1832,
+  "row_chunk": 16384,
+  "scope": "same frozen212 libraries/T cell and Macrophage, exact native eligible sample-node pairs",
+  "RNA_positive": "X raw layer value>0; bothIFNGR1/2 in same row",
+  "no_cell_state_identity_or_CM_change": true,
+  "limits": [
+    "RNA dropout means undetected is not protein absence",
+    "RNA coexpression not surface complex or functional response",
+    "same discovery sources, not external validation",
+    "frozen broad/fine lineage uncertainty retained"
+  ]
+}

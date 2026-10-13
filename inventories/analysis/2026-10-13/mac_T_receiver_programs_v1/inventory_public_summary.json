@@ -1,0 +1,141 @@
+{
+  "status": "PRODUCED_PENDING_INDEPENDENT_NUMERIC_AUDIT",
+  "started_UTC": "2026-10-13T12:28:06.295474+00:00",
+  "finished_UTC": "2026-10-13T12:32:05.818092+00:00",
+  "producer_sha256": "adc8c8df7046d8cc0567e16ce0d3d766d92ec5360f00e4039e795ffd66859a29",
+  "plan_sha256": "f154ac42c4c6080978136786c71ebab7636eab02cb4fb8c433fd90ae8410996c",
+  "rows": 147968,
+  "family_per_variant": 36992,
+  "programs_are_external_reference_not_independent_cohort": true,
+  "state_labels_assigned": false,
+  "summary": [
+    {
+      "variant": "IRF1_targets_excluded",
+      "program": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "IRF1_targets_excluded",
+      "program": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "IRF1_targets_excluded",
+      "program": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "IRF1_targets_excluded",
+      "program": "IFNG_RESPONSE_MINUS_IFNA",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "global_LR_excluded",
+      "program": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "global_LR_excluded",
+      "program": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "global_LR_excluded",
+      "program": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "global_LR_excluded",
+      "program": "IFNG_RESPONSE_MINUS_IFNA",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 1,
+      "BY05": 0
+    },
+    {
+      "variant": "interface_excluded",
+      "program": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "interface_excluded",
+      "program": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 1,
+      "BY05": 0
+    },
+    {
+      "variant": "interface_excluded",
+      "program": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 1,
+      "BY05": 0
+    },
+    {
+      "variant": "interface_excluded",
+      "program": "IFNG_RESPONSE_MINUS_IFNA",
+      "models": 9248,
+      "estimated": 491,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "program": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+      "models": 9248,
+      "estimated": 492,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "program": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+      "models": 9248,
+      "estimated": 492,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "program": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "models": 9248,
+      "estimated": 492,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "variant": "subtype_mixture",
+      "program": "IFNG_RESPONSE_MINUS_IFNA",
+      "models": 9248,
+      "estimated": 492,
+      "BH05": 0,
+      "BY05": 0
+    }
+  ]
+}

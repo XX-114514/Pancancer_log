@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FULL_FAMILY_AND_BALANCED_PLUS_FIXED_INTERFACE_NUMERIC_FIXTURES",
+  "finished_UTC": "2026-10-13T12:32:12.539402+00:00",
+  "inventory_sha256": "9ffe3855e10412d43a9cdf2b7bb1d9c6d6290dac1d7a6c17f72aedffec41a450",
+  "models": 147968,
+  "balanced_fixture_groups": 24,
+  "extra_fixed_interface_groups": 20,
+  "numeric_component_checks": 1744,
+  "max_absolute_difference": 8.526512829121202e-14,
+  "all_coefficients_independently_replayed": false,
+  "independent_biological_validation": false,
+  "auditor_sha256": "1a9f557c0c66918fbec81f90a65f631c1e430fd4fb58f74b259d97b5b691c92a"
+}

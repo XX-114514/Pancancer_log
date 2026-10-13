@@ -21,3 +21,7 @@
 冻结未启动，后续真实执行/审计/科学结论分开。参考JSON公开下载已成功，网页相对下载链接首次404，改官方human入口；非表达数据下载。原参照来自[官方γ程序](https://www.gsea-msigdb.org/gsea/msigdb/cards/HALLMARK_INTERFERON_GAMMA_RESPONSE)，公布网址和字典SHA，不复制论文全文。
 
 事件时间：2026-10-13T20:25:28.321502+08:00 /UTC 2026-10-13T12:25:28.321502+00:00
+
+## 终态
+
+生产和数值audit均exit0，详见[真实结果/范围/下一步](../inventories/analysis/2026-10-13/mac_T_receiver_programs_v1/RESULTS.md)。科学轴仍未验证。
