@@ -1,0 +1,114 @@
+{
+  "observed_utc": "2026-10-13T13:49:48.438154+00:00",
+  "n_cells": 7200,
+  "n_shared_features": 17745,
+  "n_HVG": 3000,
+  "n_PCA_landmarks": 7196,
+  "all_cells_PCA_Harmony_graph_UMAP": true,
+  "n_coarse_clusters": 5,
+  "pilot_only": true,
+  "metrics": [
+    {
+      "dataset": "GSE286827",
+      "n_cells": 600,
+      "n_native_features": 35326,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 246
+    },
+    {
+      "dataset": "GSE256326",
+      "n_cells": 600,
+      "n_native_features": 27966,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 243
+    },
+    {
+      "dataset": "GSE294109",
+      "n_cells": 600,
+      "n_native_features": 36591,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 246
+    },
+    {
+      "dataset": "GSE292046",
+      "n_cells": 600,
+      "n_native_features": 36591,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 246
+    },
+    {
+      "dataset": "GSE169246",
+      "n_cells": 600,
+      "n_native_features": 27085,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 245
+    },
+    {
+      "dataset": "GSE176021",
+      "n_cells": 600,
+      "n_native_features": 33538,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 246
+    },
+    {
+      "dataset": "GSE316195",
+      "n_cells": 600,
+      "n_native_features": 36601,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 246
+    },
+    {
+      "dataset": "ICB_Alvarez_Breckenridge",
+      "n_cells": 600,
+      "n_native_features": 22779,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 229
+    },
+    {
+      "dataset": "ICB_Bassez",
+      "n_cells": 600,
+      "n_native_features": 22779,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 229
+    },
+    {
+      "dataset": "ICB_Ma",
+      "n_cells": 600,
+      "n_native_features": 22779,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 229
+    },
+    {
+      "dataset": "ICB_Pozniak",
+      "n_cells": 600,
+      "n_native_features": 22779,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 229
+    },
+    {
+      "dataset": "ICB_Yost",
+      "n_cells": 600,
+      "n_native_features": 22779,
+      "n_shared_features": 17745,
+      "n_native_marker_genes": 229
+    },
+    {
+      "phase": "before",
+      "n_evaluation_cells": 7200,
+      "mean_batch_neighbor_entropy": 0.5258082909721273,
+      "known_marker_major_neighbor_purity": 0.8254692656765678,
+      "biology_labels": "native_multigene_proposals_not_ground_truth",
+      "clinical_outcomes_used": false
+    },
+    {
+      "phase": "after",
+      "n_evaluation_cells": 7200,
+      "mean_batch_neighbor_entropy": 1.2253535304130947,
+      "known_marker_major_neighbor_purity": 0.7809973184818482,
+      "biology_labels": "native_multigene_proposals_not_ground_truth",
+      "clinical_outcomes_used": false
+    }
+  ],
+  "authoritative_release": false,
+  "clinical_validation_frozen": false
+}

@@ -70,7 +70,7 @@ def capture_marker_indices(var, genes):
 
 
 def build_model(args):
-    config,sources,var,identities,diagnostics=load_contract(args.contract,['core','core_source_review'])
+    config,sources,var,identities,diagnostics=load_contract(args.contract,['core','CAR_product'])
     obs=read_registry(config,sources)
     major,subtype,states=panels(args.panel_dir)
     marker_names=sorted(set(g for genes in major.values() for g in genes)|
@@ -165,7 +165,7 @@ def build_model(args):
     for phase in ['before','after']:
         if phase=='after':
             event('Harmony_full_cells_start',n_cells=model.n_obs,n_pcs=50,batch_key='dataset')
-            result=harmonypy.run_harmony(model.obsm['X_pca'],model.obs,'dataset',max_iter_harmony=20,random_state=SEED)
+            result=harmonypy.run_harmony(model.obsm['X_pca'],model.obs,'dataset',theta=1.,max_iter_harmony=20,random_state=SEED)
             corrected=np.asarray(result.Z_corr)
             if corrected.shape==model.obsm['X_pca'].T.shape:corrected=corrected.T
             if corrected.shape!=model.obsm['X_pca'].shape or not np.isfinite(corrected).all():raise ValueError('Harmony result invalid')
@@ -176,8 +176,28 @@ def build_model(args):
     sc.settings.n_jobs=min(16,os.cpu_count() or 1)
     event('full_neighbor_graph_start',n_cells=model.n_obs)
     sc.pp.neighbors(model,n_neighbors=30,use_rep='X_pca_harmony',random_state=SEED)
-    event('full_UMAP_start',n_cells=model.n_obs,n_epochs=100)
-    sc.tl.umap(model,maxiter=100,min_dist=0.3,random_state=SEED)
+    if model.n_obs<=100000:
+        event('full_UMAP_start',n_cells=model.n_obs,n_epochs=100)
+        sc.tl.umap(model,maxiter=100,min_dist=0.3,random_state=SEED)
+        model.uns['UMAP_fitting_scope']='all_cells'
+    else:
+        # Large-cohort skill: fit a bounded view and retain coordinates for all cells.
+        import umap
+        take=landmarks if len(landmarks)<=100000 else np.sort(rng.choice(landmarks,100000,replace=False))
+        event('balanced_UMAP_start',n_fit_cells=len(take),n_total_cells=model.n_obs)
+        embedding=umap.UMAP(n_neighbors=30,min_dist=0.3,n_components=2,n_epochs=100,
+                            random_state=SEED,transform_seed=SEED,n_jobs=1)
+        fitted=embedding.fit_transform(model.obsm['X_pca_harmony'][take])
+        coords=np.empty((model.n_obs,2),dtype=np.float32)
+        coords[take]=fitted
+        remaining=np.setdiff1d(np.arange(model.n_obs),take)
+        for lo in range(0,len(remaining),10000):
+            rows=remaining[lo:lo+10000]
+            coords[rows]=embedding.transform(model.obsm['X_pca_harmony'][rows])
+            if lo%100000==0:event('UMAP_full_projection',n_projected=lo+len(rows),n_remaining=len(remaining))
+        if not np.isfinite(coords).all():raise ValueError('Nonfinite projected UMAP')
+        model.obsm['X_umap']=coords
+        model.uns['UMAP_fitting_scope']=dict(n_balanced_fit_cells=len(take),n_transformed_cells=len(remaining),all_cells_retained=True)
     sc.tl.leiden(model,resolution=0.1,key_added='coarse_cluster',flavor='igraph',n_iterations=2,directed=False,random_state=SEED)
     model.uns['integration_metrics_public']=json.dumps(metrics)
     target=args.scratch/('immune_model_'+args.phase+'.zarr')
@@ -185,7 +205,8 @@ def build_model(args):
     model.write_zarr(target)
     save_json_new(args.run/'manifests'/('integration_'+args.phase+'_public.json'),dict(
         observed_utc=datetime.now(timezone.utc).isoformat(),n_cells=model.n_obs,n_shared_features=model.n_vars,
-        n_HVG=int(hvg.sum()),n_PCA_landmarks=len(landmarks),all_cells_PCA_Harmony_graph_UMAP=True,
+        n_HVG=int(hvg.sum()),n_PCA_landmarks=len(landmarks),all_cells_PCA_Harmony_graph_and_UMAP_coordinates=True,
+        UMAP_fitting_scope=model.uns['UMAP_fitting_scope'],
         n_coarse_clusters=model.obs.coarse_cluster.nunique(),pilot_only=args.phase=='pilot',
         metrics=metrics,authoritative_release=False,clinical_validation_frozen=False))
     event('integration_complete',n_cells=model.n_obs,pilot_only=args.phase=='pilot')
@@ -257,6 +278,29 @@ def annotate(args):
         mask=model.obs.major.astype(str).eq(name).to_numpy();positions=np.flatnonzero(mask)
         if len(positions)>=100:
             local=model[positions].copy()
+            local.obsp.clear()
+            rng=np.random.default_rng(SEED)
+            groups_local=local.obs.groupby('dataset',observed=True).indices
+            per_source=max(1,100000//len(groups_local))
+            fit_indices=np.sort(np.concatenate([rng.choice(v,min(len(v),per_source),replace=False) for v in groups_local.values()]))
+            fit=local[fit_indices].copy()
+            sc.pp.highly_variable_genes(fit,n_top_genes=3000,flavor='seurat_v3',batch_key='dataset',layer='counts')
+            sc.tl.pca(fit,n_comps=min(30,len(fit)-1),mask_var='highly_variable',svd_solver='arpack',random_state=SEED)
+            hvg=fit.var.highly_variable.to_numpy();basis=fit.varm['PCs'][hvg]
+            center=np.asarray(fit.X[:,hvg].mean(axis=0)).ravel()@basis
+            projected_pca=np.vstack([local.X[lo:lo+4096,hvg]@basis-center for lo in range(0,len(local),4096)])
+            local.obsm['X_lineage_pca']=projected_pca.astype(np.float32)
+            del fit;gc.collect()
+            if local.obs.dataset.nunique()>1:
+                result=harmonypy.run_harmony(projected_pca,local.obs,'dataset',theta=1.,max_iter_harmony=10,random_state=SEED)
+                z=np.asarray(result.Z_corr)
+                if z.shape==projected_pca.T.shape:z=z.T
+                if z.shape!=projected_pca.shape or not np.isfinite(z).all():raise ValueError('Invalid lineage Harmony')
+                local.obsm['X_lineage_harmony']=z.astype(np.float32)
+                del result,z
+            else:local.obsm['X_lineage_harmony']=local.obsm['X_lineage_pca']
+            event('lineage_specific_neighbors',major=name,n_cells=len(local),n_balanced_PCA_fit_cells=len(fit_indices))
+            sc.pp.neighbors(local,n_neighbors=min(30,len(local)-1),use_rep='X_lineage_harmony',random_state=SEED)
             sc.tl.leiden(local,resolution=0.6,key_added='within_major',flavor='igraph',n_iterations=2,directed=False,random_state=SEED)
             groups=local.obs.within_major.astype(str).to_numpy()
         else:groups=np.repeat('0',len(positions));local=model[positions].copy()

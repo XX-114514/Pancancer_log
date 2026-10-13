@@ -10,3 +10,9 @@
 - CM：R CoVarNet新版本，rank survey与稳定性不强制K9；患者/材料/来源内共变，未捕获谱系为缺失。旧W固定投影与新W发现分开。
 - 新增公共矩阵下载：本任务不恢复，优先现有Project_v5合格数据。新授权允许下游计算及独立版本。
 - 详见[持续任务日志](../logs/codex/2026/2026-10-13_immunotherapy-atlas-downstream.md)。启动代码/参数/实际范围和终态按证据追加。
+
+## 已执行节点
+
+- 来源盘点完成：21条来源、5,274,578细胞登记，角色分层详见[汇总](../inventories/runtime/2026-10-13/immune_atlas_v1/source_preflight_public.json)。不等于临床验收或独立验证。
+- GSE305078：原生count检查PASS，32文库DD/DecontX后台运行；独立复核pending。
+- 下游pilot：2026-10-13 13:47:03 UTC / 21:47:03 UTC+8开始，PID 341235，12个免疫主队列/待审来源，每来源600细胞；冻结代码aef9684。范围之外的机制参照/CAR产品/基线重叠没有混入该模型。
