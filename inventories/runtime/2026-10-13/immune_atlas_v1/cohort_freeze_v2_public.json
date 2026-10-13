@@ -1,0 +1,27 @@
+{
+  "observed_utc": "2026-10-13T15:18:14.205665+00:00",
+  "n_model_cells": 2670057,
+  "n_sources": 9,
+  "n_libraries": 400,
+  "source_cell_counts": {
+    "GSE176021": 868494,
+    "GSE169246": 489360,
+    "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 396593,
+    "GSE286827": 375019,
+    "GSE305078": 252822,
+    "GSE294109": 130243,
+    "GSE316195": 82549,
+    "GSE292046": 52525,
+    "GSE256326": 22452
+  },
+  "additional_QC_cells": 252822,
+  "additional_adopted_DecontX_cells": 156661,
+  "n_patient_verified_cells": 2394783,
+  "n_native_clinical_endpoint_eligible_cells": 708954,
+  "n_ex_vivo_stimulated_cells": 66730,
+  "supplementary_ICB_census_excluded_cells": 322008,
+  "independent_validation_frozen": false,
+  "authoritative_release": false,
+  "clinical_endpoint_scope": "study_specific_no_response_harmonization",
+  "source_review": "compiled_min20_celltype_filtered_exports_and_baseline_overlap_not_CM_discovery_inputs"
+}

@@ -1,0 +1,20 @@
+{
+  "observed_utc": "2026-10-13T14:44:36.927450+00:00",
+  "n_datasets": 1,
+  "n_libraries": 32,
+  "n_output": 252822,
+  "n_ready_technical_cells": 139547,
+  "all_checks_pass": true,
+  "audit_script_sha256": "9aefabd726e64e421d762833fa62ee3a52fd2bef7b047ebb93629ad30286b43c",
+  "dataset": "GSE305078",
+  "original_native_cells": 297261,
+  "n_initial_QC": 261909,
+  "n_initial_QC_excluded": 35352,
+  "n_additional_doublets_removed": 9087,
+  "n_ambient_validation_pass_libraries": 21,
+  "n_ambient_validation_pass_library_cells": 164662,
+  "n_residual_doublet_flag": 83,
+  "independent_audit_sha256": "cac37923459ccc44456fa9dd34c28e81494819a673468b608cb7ac97308427b6",
+  "source_final_AC": false,
+  "clinical_and_alias_release_pending": true
+}

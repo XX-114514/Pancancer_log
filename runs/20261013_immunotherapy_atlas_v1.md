@@ -19,3 +19,8 @@
 
 - 生产链实际启动：2026-10-13 14:28:19 UTC / 22:28:19 UTC+8，PID139233，冻结7cc78f9；待额外QC独立验收后依次进入冻结、范围pilot、全量生物学与最终对象。
 - CoVarNet R接口合成测试PASS：[报告](../inventories/runtime/2026-10-13/immune_atlas_v1/synthetic_CM_API_public.json)；真实细胞0，未声称真实CM完成。
+
+- 首次驱动在临床原库别名门槛退出；GSE316195用原生GSM精确crosswalk修复，保存物理GM库名。恢复于15:12:51 UTC / 23:12:51 UTC+8启动，PID369104，冻结1eef352，只读复核/复用已审计准备数据。
+- GSE305078全量独立QC报告：[验收汇总](../inventories/runtime/2026-10-13/immune_atlas_v1/GSE305078_preprocessing_acceptance_public.json)。预计主对象9来源2,670,057细胞/400原库；正式下游和最终权威仍pending。
+
+- 15:18:14 UTC / 23:18:14 UTC+8队列冻结PASS：[实际范围](../inventories/runtime/2026-10-13/immune_atlas_v1/cohort_freeze_v2_public.json)，9来源2,670,057细胞/400物理库。新范围pilot已启动；完整生物学与最终Zarr尚未完成。

@@ -1,0 +1,11 @@
+{
+  "real_native_count_cells": 800,
+  "technical_API_check_only": true,
+  "diagnostic_QC_labels_not_final_identity": true,
+  "formal_cohort_CNVevaluated": false,
+  "core_status": "success",
+  "copykat_status": "disabled",
+  "n_finite_input_cell_scores": 800,
+  "raw_counts": true,
+  "same_original_library": true
+}
