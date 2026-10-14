@@ -1,0 +1,13 @@
+{
+  "schema": "state_programme_dictionary_plan_v1",
+  "frozen_UTC": "2026-10-14T03:26:23.757554+00:00",
+  "producer_sha256": "a6de84910cdf800bc1ce3f38ba958efa895e6643dfdc10012c742e2823a175b5",
+  "comparison_inventory_sha256": "01823a5cd7a678950c5454c179fcd62be14f599186d6e9e7f6ae0fff4427a271",
+  "Spectra_catalogue_sha256": "7dc2d542179d622746ae9f253c7da4a11784044b133138be3fa62b2dfe48f583",
+  "scope": "All90cNMF across3K/2majors plus all8 strict-stable Spectra; 98 scored signatures/65 main stability candidates, not65 unique states",
+  "Spectra_genes": "Top50 median L2-normalized weights across all3 fixed matched seeds; first-seed indices fixed, no best-seed choice",
+  "cnmf_genes": "Top50 positive fullgene regression coefficients; alternate top50 TPM spectra retained as sensitivity; no bestK choice",
+  "description": "Panel overlaps>=3 for descriptive labels; foreign/ribosomal/mitochondrial review flags; source/node/complexity retained, no automatic biological/technical assignment",
+  "annotation_policy": "Original172/9CM/subCluster/node numbers unchanged; all names pending cell-level support and within-node/source review",
+  "clinical_or_LR_p_selection": false
+}

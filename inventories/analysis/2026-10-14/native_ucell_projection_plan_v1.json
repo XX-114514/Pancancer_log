@@ -1,0 +1,37 @@
+{
+  "schema": "native_ucell_projection_plan_v1",
+  "frozen_UTC": "2026-10-14T03:26:23.757554+00:00",
+  "producer_sha256": "ec8acf7b361d47eeaf225b7163943d3feb9c2d52b2536164ad7033956050e697",
+  "input_inventory_sha256": "d75515d3b2e2e68e09dbc7ca18ed85cbe5a5c78b741781b59df7510cd7e219ca",
+  "dictionary_producer_sha256": "a6de84910cdf800bc1ce3f38ba958efa895e6643dfdc10012c742e2823a175b5",
+  "scope": {
+    "cells": 240533,
+    "sources": 5,
+    "signatures": 98,
+    "main_stability_candidates": 65,
+    "discovery_cells": 12000
+  },
+  "official_version": "pyucell0.8.0",
+  "primary_max_rank": 1500,
+  "max_rank_values": [
+    1000,
+    1500,
+    3000
+  ],
+  "TPM_signature_sensitivity_maxrank": 1500,
+  "ties_method": "average",
+  "device": "cpu",
+  "n_jobs": 1,
+  "min_measured_fraction": 0.8,
+  "min_measured_genes": 10,
+  "min_detected_genes_for_support": 5,
+  "measurement_policy": "Whole original native gene axis per source; absent genes tracked/coverage gated then skip, measured zero stays0. Programme outside trained major=>NaN; counts/fraction metadata kept, no identity reassignment",
+  "confidence_policy": "Atleast5 detected signature genes is descriptive informative support, not biological positive-state threshold; no per-library percentile, maximum-score or exclusive-state assignment",
+  "outputs": "Private original cell IDs/metadata/98scores+sensitivities/detected counts/RNA fraction; private sample-node means with inherited blocks and>=20cells flag. Public source/major/node aggregates only.",
+  "reserved_free_GiB": 500,
+  "projection_disk_budget_GiB": 1,
+  "internal_source": "GSE183904 previously used, internal projection only",
+  "formal_state_labels": false,
+  "all9CM_done": false,
+  "next": "Independent real-cell rank/score audit; within-original-node variability/model correspondence; expand missing CM lineages, all9 state/LR/receiver, then DIALOGUE/spatial"
+}

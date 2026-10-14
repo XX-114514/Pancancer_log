@@ -1,0 +1,7 @@
+# 固定程序字典及原生轴UCell评分 v1
+
+2026-10-14T03:26:23.757554+00:00 /UTC+8 2026-10-14T11:26:23.757554+08:00预声明尚未执行。 [字典计划](../inventories/analysis/2026-10-14/state_programme_dictionary_plan_v1.json)、[评分计划](../inventories/analysis/2026-10-14/native_ucell_projection_plan_v1.json)。全90cNMF/8严格稳定Spectra98sig，main稳定65含跨K重复，不是65state；SP三个matched seed L2权重中位数top50，CN正回归coef top50，TPM替代保留。不按LR/临床p选K/seed/genes。
+
+`build_state_programme_dictionary_v1.py`以PANCANCER_PREFLIGHT_ROOT/PANCANCER_STATE_DICTIONARY_PLAN先生成不覆盖字典；`project_state_ucell_native_v1.py`在官方隔离pyucell0.8环境以PANCANCER_UCELL_PROJECTION_PLAN执行。完整native轴/CPU平均并列秩/主maxrank1500及1000/3000敏感性，缺失coverage至少80%且10genes，之后skip，scope外NaN，实测零保持0。每cell检测>=5genes仅信息支持，不当状态阳性门槛；不按每库百分位强造状态/不改单一原type。源cell IDs/score/sample-node矩阵私有，只公开source-major/node汇总。
+
+500GiB预留+1GiB本轮磁盘预算逐source检查；配额不通过保留partial/execution，不静默继续。原9CM仅0—26.98%core weight当前输入、CM06未覆盖，所有missing谱系/状态LR/接收/DIALOGUE/空间完整目标仍需完成。
