@@ -1,0 +1,4 @@
+major	K	repeats	HVGs	unfiltered_silhouette	unfiltered_prediction_error	density_retained_fraction
+Endothelial cell	10	100	2000	0.8439280929127196	9590898.53606188	0.976
+Endothelial cell	15	100	2000	0.8073178409972407	9240073.216073107	0.9933333333333333
+Endothelial cell	20	100	2000	0.7350909308103857	8989269.007594313	0.9885

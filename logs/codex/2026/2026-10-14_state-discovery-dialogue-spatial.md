@@ -113,3 +113,5 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T06:32:05.466246+00:00 /UTC+8 2026-10-14T14:32:05.466246+08:00：Myeloid3seed完整177factor固定诊断/531matches2283scores761support/regression全规则独立PASS，当前规则0主/context；DC全300/3、45/4500/650独立PASS，35repeat/30crossK非30state。控制原Ids/参数，source限定价值保留；完整监督仅4/24scope通过/复用，[Myeloid](../../../inventories/analysis/2026-10-14/myeloid_Spectra_diagnostics_v2/RESULTS.md)、[DC](../../../inventories/analysis/2026-10-14/DC_cNMF_diagnostics_v2/RESULTS.md)。监督代码节点bda04fd已随443af35706:29:12普通push/06:29:16HTTPS核验；不称完整goal完成。
 
 2026-10-14T06:35:02.078689+00:00 数值交接：Myeloid/DC已审范围、三个live句柄和监督4/24scope记录，refresh135目录0冲突；原172/9CM/coreZarr不变，状态/通讯/DIALOGUE/空间未验收。
+
+2026-10-14T06:41:31.058759+00:00 /UTC+8 2026-10-14T14:41:31.058759+08:00：监督已完成/复用5/24scope，Endo全45/4500/650独立PASS、34repeat/28crossK非28states；CCL21/PDPN/PROX1程序源-nodeR2.892提示身份/状态区分，TOP2A/MKI67测量支持不能当阳性率。B/mast/Hemato固定诊断中、supervisor句柄live。[内皮结果](../../../inventories/analysis/2026-10-14/Endo_cNMF_diagnostics_v2/RESULTS.md)。Myeloid/DC节点e65508c已06:38:14普通push/06:38:19HTTPS核验。

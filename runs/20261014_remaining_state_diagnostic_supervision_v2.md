@@ -11,3 +11,7 @@
 2026-10-14T06:32:05.466246+00:00 /UTC+8 2026-10-14T14:32:05.466246+08:00取证：06:24:34 Myeloid177全部独立PASS/0当前规则合格，06:24:54 DC45全部独立PASS/30跨K重复候选非states；监督完成/复用4/24scope。对应上述结果保持原始negative/技术分类，仍无新正式state、LR、DIALOGUE或空间完成。
 
 数值交接已2026-10-14T06:35:02.078689+00:00登记，indexed 135 directories; conflicts 0 v10_audit PASS_V10_REVIEWED59_IDENTITY_OVERLAY_FULLROW_AUDIT；pipeline/monitor角色及三个当前句柄分开。[公开交接](../inventories/analysis/2026-10-14/myeloid_DC_diagnostic_checkpoint_v2/registration_public_receipt.json)。无正式state/完整goal完成。
+
+## Endo范围新增验收
+
+2026-10-14T06:41:31.058759+00:00 /UTC+8 2026-10-14T14:41:31.058759+08:00：Endo45/4500/650数值审核通过，28跨K重复候选不是states；监督5/24，[结果](../inventories/analysis/2026-10-14/Endo_cNMF_diagnostics_v2/RESULTS.md)。
