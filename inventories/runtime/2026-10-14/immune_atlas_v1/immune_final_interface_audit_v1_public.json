@@ -1,0 +1,36 @@
+{
+  "observed_utc": "2026-10-14T05:08:40.609060+00:00",
+  "status": "PASS_FINAL_ARCHIVE_INTERFACES",
+  "n_cells": 2670057,
+  "n_features": 49563,
+  "n_sources": 9,
+  "n_original_libraries": 400,
+  "n_subclusters": 270,
+  "standalone_final_archive": true,
+  "annotation_catalog_exact": true,
+  "CNV_exact_mapping_and_statuses": true,
+  "CNV_native_total_counts_storage_dtype": "float64",
+  "graphs": {
+    "connectivities": {
+      "n_rows": 2670057,
+      "n_stored_edges": 128599006
+    },
+    "distances": {
+      "n_rows": 2670057,
+      "n_stored_edges": 82771767
+    }
+  },
+  "n_CM_scopes": 15,
+  "CM_discovery_reports_exact": true,
+  "CM_input_frequencies_recounted_from_final_archive": true,
+  "malignancy_status_counts": {
+    "not_evaluated_skipped": 1760348,
+    "lineage_reference_not_tumor_candidate": 642560,
+    "CNV_negative_candidate": 151735,
+    "CNV_uncertain": 57958,
+    "CNV_supported_malignant": 52657,
+    "not_evaluated": 4799
+  },
+  "independent_clinical_validation": false,
+  "malignancy_gold_standard": false
+}

@@ -66,3 +66,7 @@
 - [全部9来源native数组写入](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_fullgene_pack_progress_v2_public.json)完成，实际候选大小及最终500GB预留预核fit；完整全行和成品读回审计仍pending。
 
 - 05:03:15 UTC[完整原生计数全行审计](../inventories/runtime/2026-10-14/immune_atlas_v1/independent_immune_fullgene_audit_public.json)PASS，X最大误差0；[正式容量门槛](../inventories/runtime/2026-10-14/immune_atlas_v1/immune_final_storage_budget_public.json)fits。data4 copy与成品接口审计继续。
+
+## 正式交付完成：2026-10-14 05:08:43 UTC /13:08:43 UTC+8
+
+[成品及完整证据](../inventories/runtime/2026-10-14/immune_atlas_v1/RESULTS.md)：data4独立Zarr2,670,057×49,563/29.8GB、24,431文件SHA、全行/图/节点/原库CNV/15范围CM频率读回均PASS；05:10:47 UTC来源与原生临床资格同冻结。原先失败终态保留，最终以metadata_recovery_v1 completed为准。source_final_AC及independent_validation_frozen仍false，单方法CNV、fine候选和新CM证据等级保留。

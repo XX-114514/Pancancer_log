@@ -1,0 +1,130 @@
+{
+  "observed_utc": "2026-10-14T05:08:39.212736+00:00",
+  "status": "PASS_SAVED_CM_INPUTS_RECOUNTED_FROM_ALL_CELL_METADATA",
+  "n_atlas_cells": 2670057,
+  "all_ready_scopes": 15,
+  "source_and_patient_blocks_exact": true,
+  "scopes": [
+    {
+      "scope": "whole_TME",
+      "n_nodes": 80,
+      "n_units": 112,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "bb345c849e9592dab4a60851f019eeed1b878ceb260021e045486361ff96f06c",
+      "input_metadata_sha256": "ab8f90b99f32d863a86b8a9bcd1f454ea0ea0195bfc90df5ffa282d5070f30a5"
+    },
+    {
+      "scope": "immune_enriched",
+      "n_nodes": 40,
+      "n_units": 174,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "e64ba32cbd80abb1b184a5ef1c2670ee695711687ab3178ba8707e39d7942991",
+      "input_metadata_sha256": "ab8c0e3e5dd9e70a2a5e1be2da89b591d36e0e95d5921a773d7f4ecc2e9ba0fc"
+    },
+    {
+      "scope": "CAR_product",
+      "n_nodes": 23,
+      "n_units": 53,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "39456c8c7b1116df8c80ffdcd4b9782d8202b0982c4cf1bd4ee1cd3ea2e22584",
+      "input_metadata_sha256": "282aa3b6ac1d25399affc74c31bd0522e493d74fda815c4ce64446bb4c5553ba"
+    },
+    {
+      "scope": "T_lineage_biopsy",
+      "n_nodes": 16,
+      "n_units": 310,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "f8b46b0bd4d8497a6b07613149640eb7a232cf813ad5b71cabe6acd0d433d40d",
+      "input_metadata_sha256": "f1b11ae59668f0bc6a58609607a2efbf4f8d3d17353e5b57cbc1526225e690c3"
+    },
+    {
+      "scope": "whole_TME_primary_tumor",
+      "n_nodes": 102,
+      "n_units": 87,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "f7b72ca449ceedcc1f1f9c9389a1586536902dd5da15c00b41118563c184dbb1",
+      "input_metadata_sha256": "53d62837894efd47645f6fa789eaf555fb440ddc1122b9185134dfa36e1924c6"
+    },
+    {
+      "scope": "T_whole_TME_primary_tumor",
+      "n_nodes": 15,
+      "n_units": 118,
+      "max_frequency_error": 9.974659986866641e-17,
+      "input_frequency_sha256": "ab296ab81d4b64f17a2ba82a4755de4d99eba0df44276564005c83859f4aa0b1",
+      "input_metadata_sha256": "012b6cd776951f5aa4e483501c2d44b714b6d1cf7c301bea2173a9a0794f9e65"
+    },
+    {
+      "scope": "whole_TME_metastatic_tumor",
+      "n_nodes": 21,
+      "n_units": 14,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "6192724c68f9dea34f2166c22fc10d87f1c9dbb7c1175c61a9345eee7ede0ea6",
+      "input_metadata_sha256": "0ffc4a567a581043411ff0fbcc16e80033b878eab7f18f7195d6b76d0c3f5e9b"
+    },
+    {
+      "scope": "immune_enriched_primary_tumor",
+      "n_nodes": 23,
+      "n_units": 52,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "52b3c25a84614f2b65ca0da0bd0b0813f4a44063cecfc470881491a1e3c62105",
+      "input_metadata_sha256": "9fb356452859673fd42704f0d2de5f31cdfd7bb05ddf473abfad353b70a45713"
+    },
+    {
+      "scope": "T_immune_enriched_primary_tumor",
+      "n_nodes": 14,
+      "n_units": 52,
+      "max_frequency_error": 9.963817965141786e-17,
+      "input_frequency_sha256": "d451b121f0b7cb6a66864fad0786dd5df7844c4bd57c056e3621d2225bf542a5",
+      "input_metadata_sha256": "4d536f544f0585977b888be1b4710cdd3f71a23963e3db8987eb5a8bfac2d788"
+    },
+    {
+      "scope": "immune_enriched_blood",
+      "n_nodes": 27,
+      "n_units": 62,
+      "max_frequency_error": 1.1102230246251565e-16,
+      "input_frequency_sha256": "79a65e4ac08e1d0e020f75e0afda3442058ac86215a6fc0560d888657eebe098",
+      "input_metadata_sha256": "6133fc44b816948cc4d534f8496d371124be819e776f7b3df82fec9a70d8ad3c"
+    },
+    {
+      "scope": "T_immune_enriched_blood",
+      "n_nodes": 11,
+      "n_units": 62,
+      "max_frequency_error": 9.942133921692076e-17,
+      "input_frequency_sha256": "9020ac566f6e7454bb87edf57754a2bb8ad8e930b94f47eb4803b393848ebe4c",
+      "input_metadata_sha256": "1e2a9bbb58ad697dad7c342057685fb0c29f4ae35b3002cd5b2fb1655ab9a454"
+    },
+    {
+      "scope": "immune_enriched_normal_adjacent",
+      "n_nodes": 22,
+      "n_units": 21,
+      "max_frequency_error": 9.8879238130678e-17,
+      "input_frequency_sha256": "46c8ff74af66d6da789d0718ae197ae0e718d45b8cea2f053b64ae7631e3c061",
+      "input_metadata_sha256": "7ead895be4692e23f217a034eb1ebc78a3961e7c51c7f2d8aec0d9ed089bca1b"
+    },
+    {
+      "scope": "T_immune_enriched_normal_adjacent",
+      "n_nodes": 12,
+      "n_units": 21,
+      "max_frequency_error": 9.8879238130678e-17,
+      "input_frequency_sha256": "1a25b27caf1ab0c768bcc06d28847cce23e2363118bbb006c0adfe5bbcd6ff64",
+      "input_metadata_sha256": "1ba04087dc992be0e2d215f021a14a8736db4137f1d0cb0669e050d767bff0d9"
+    },
+    {
+      "scope": "immune_enriched_unknown_material",
+      "n_nodes": 38,
+      "n_units": 18,
+      "max_frequency_error": 9.71445146547012e-17,
+      "input_frequency_sha256": "49101c4dac74eb15715b28be225ab589e811665f514c89739f36baae391b26c6",
+      "input_metadata_sha256": "02803114ea9d17c8d90d5b8daba5120a651a17f8fcf7dd785628b2e2b0dec922"
+    },
+    {
+      "scope": "T_immune_enriched_unknown_material",
+      "n_nodes": 14,
+      "n_units": 19,
+      "max_frequency_error": 9.71445146547012e-17,
+      "input_frequency_sha256": "30a75926ec52c5908a169362ad8ecf28cfe82a2e58d3028b36580ae70953f2aa",
+      "input_metadata_sha256": "7716f45f75310c61a9b2d68dcf9fdbf2cf448c67c2efad158d78eed40165628e"
+    }
+  ],
+  "not_biological_or_clinical_validation": true
+}

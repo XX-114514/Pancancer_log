@@ -1,0 +1,101 @@
+{
+  "observed_utc": "2026-10-14T05:10:47.836486+00:00",
+  "frozen_source_counts_exact": true,
+  "frozen_patient_key_and_endpoint_eligibility_counts_exact": true,
+  "n_cells": 2670057,
+  "n_native_endpoint_eligible_cells": 708954,
+  "sources": [
+    {
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "n_cells": 396593,
+      "n_original_libraries": 59,
+      "n_patient_key_verified_cells": 396593,
+      "n_native_endpoint_eligible_cells": 224628,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 1551,
+      "n_CNV_supported_malignant_cells": 0
+    },
+    {
+      "dataset": "GSE169246",
+      "n_cells": 489360,
+      "n_original_libraries": 78,
+      "n_patient_key_verified_cells": 489360,
+      "n_native_endpoint_eligible_cells": 484326,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 0,
+      "n_CNV_supported_malignant_cells": 0
+    },
+    {
+      "dataset": "GSE176021",
+      "n_cells": 868494,
+      "n_original_libraries": 110,
+      "n_patient_key_verified_cells": 868494,
+      "n_native_endpoint_eligible_cells": 0,
+      "n_ex_vivo_stimulated_cells": 66730,
+      "n_primary_annotation_excluded_cells": 0,
+      "n_CNV_supported_malignant_cells": 0
+    },
+    {
+      "dataset": "GSE256326",
+      "n_cells": 22452,
+      "n_original_libraries": 9,
+      "n_patient_key_verified_cells": 0,
+      "n_native_endpoint_eligible_cells": 0,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 0,
+      "n_CNV_supported_malignant_cells": 0
+    },
+    {
+      "dataset": "GSE286827",
+      "n_cells": 375019,
+      "n_original_libraries": 57,
+      "n_patient_key_verified_cells": 375019,
+      "n_native_endpoint_eligible_cells": 0,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 169,
+      "n_CNV_supported_malignant_cells": 11867
+    },
+    {
+      "dataset": "GSE292046",
+      "n_cells": 52525,
+      "n_original_libraries": 8,
+      "n_patient_key_verified_cells": 52525,
+      "n_native_endpoint_eligible_cells": 0,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 131,
+      "n_CNV_supported_malignant_cells": 14933
+    },
+    {
+      "dataset": "GSE294109",
+      "n_cells": 130243,
+      "n_original_libraries": 25,
+      "n_patient_key_verified_cells": 130243,
+      "n_native_endpoint_eligible_cells": 0,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 581,
+      "n_CNV_supported_malignant_cells": 1984
+    },
+    {
+      "dataset": "GSE305078",
+      "n_cells": 252822,
+      "n_original_libraries": 32,
+      "n_patient_key_verified_cells": 0,
+      "n_native_endpoint_eligible_cells": 0,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 83,
+      "n_CNV_supported_malignant_cells": 23873
+    },
+    {
+      "dataset": "GSE316195",
+      "n_cells": 82549,
+      "n_original_libraries": 22,
+      "n_patient_key_verified_cells": 82549,
+      "n_native_endpoint_eligible_cells": 0,
+      "n_ex_vivo_stimulated_cells": 0,
+      "n_primary_annotation_excluded_cells": 0,
+      "n_CNV_supported_malignant_cells": 0
+    }
+  ],
+  "independent_validation_frozen": false,
+  "eligibility_is_source_specific_not_harmonized_response": true
+}
