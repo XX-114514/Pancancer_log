@@ -15,6 +15,11 @@ for(pkg in c('NMF','dplyr','reshape2','igraph','jsonlite'))if(!requireNamespace(
 suppressPackageStartupMessages({library(NMF);library(dplyr);library(reshape2);library(igraph)})
 lines<-readLines(file.path(rdir,'R','CoVarNet.R'),warn=FALSE)
 lines<-lines[!grepl('^\\s*usethis::use_package\\(',lines)]
+# Legacy 1:0 makes two row names for an empty member table. This guard
+# changes only empty-table serialization, preserving every network threshold.
+bad_rowname<-'rownames(weight)=as.list(1:nrow(weight))'
+if(sum(grepl(bad_rowname,lines,fixed=TRUE))!=1L)stop('Unexpected legacy row-name implementation')
+lines<-gsub(bad_rowname,'rownames(weight)=as.character(seq_len(nrow(weight)))',lines,fixed=TRUE)
 eval(parse(text=paste(lines,collapse='\n')),envir=.GlobalEnv)
 fq<-read.delim(file.path(scope,'inputs','frequency_private.tsv'),check.names=FALSE,row.names=1)
 meta<-read.delim(file.path(scope,'inputs','sample_metadata_private.tsv'),check.names=FALSE)
@@ -96,6 +101,10 @@ for(study in unique(meta_block$dataset)){
 corres$source_support_eligible<-corres$n_positive_sources>=if(length(unique(meta_block$dataset))>1L)2L else 1L
 corres$pval_fdr[!corres$source_support_eligible|!is.finite(corres$pval_fdr)]<-1
 network<-cm_network(fit,corres,top_n=min(10L,nrow(balanced)),corr=.2,pval_fdr=.05)
+if(!is.data.frame(network$global$node)){
+ if(length(network$global$node)!=0L)stop('Unexpected legacy global-node result')
+ network$global$node<-data.frame(subCluster=character(),majorCluster=character())
+}
 saveRDS(network,file.path(out,'CM_network.rds'))
 write.table(corres,file.path(out,'source_adjusted_pair_correlations_private.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
 if(length(source_effects))write.table(do.call(rbind,source_effects),file.path(out,'per_source_effects_private.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
@@ -132,6 +141,8 @@ report<-list(observed_utc=format(Sys.time(),tz='UTC',usetz=TRUE),code_sha=code_s
  n_unverified_library_units=sum(!meta$patient_verified),n_sources=length(unique(meta$dataset)),
  n_network_edges=nrow(network$global$edge),n_network_nodes=nrow(network$global$node),
  n_modules_with_network_members=length(unique(network$each$node$cm)),
+ n_modules_without_network_members=selected-length(unique(network$each$node$cm)),
+ legacy_empty_member_rownames_guard=TRUE,network_module_support_found=nrow(network$each$node)>0L,
  new_discovery_not_fixed_reference_validation=TRUE,clinical_outcomes_used=FALSE,
  repeated_patient_network_averaged=TRUE,source_centered_correlations=TRUE,
  LOSO_refit_count=length(stability),LOSO_matching='full_cosine_matrix;row_best_is_diagnostic_not_one_to_one_proof',
