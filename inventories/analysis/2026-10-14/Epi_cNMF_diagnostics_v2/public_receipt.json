@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_ORIGINAL_MAJOR_ALL_K_CNMFDIAGNOSTICS_NOT_STATES",
+  "major": "Epithelial cell",
+  "observed_UTC": "2026-10-14T06:47:35.023764+00:00",
+  "producer_sha256": "2ab63c8925def15f1926297bf33dca23ab60ad506470db3daa718dacce81f670",
+  "plan_sha256": "da39b6e0766149d17c29667929baa12b30906aabe139b289f60c31c98c945b80",
+  "all_fit_outputs_before_after_unchanged": true,
+  "candidates": 45,
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "repeat_crossK_candidates": 26,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all45_candidates.tsv": "66be502453395e23fb5edc87f99261a68cb4fbe23dd564a19a576ba7b97c001d",
+    "all4500_repetition_matches.tsv": "c13c181d79f9324ea930662644512f942d5e55d7c1a5e9e0c95f4701e94f55c4",
+    "all650_crossK_comparisons.tsv": "63c8e2e72a410317bb18a0a7211517deb39922da980e3a65ffffd2354dd656ee",
+    "all3_K_diagnostics.tsv": "4d33beadb878c82bf2394913fd4fc6385d4622d5d43ec52c74dbb0c2d3121838",
+    "all_source_distributions.tsv": "6d73b0708cdb1bdae3a31a44adb2247605038cfee56a6df20b4ffb539a25ebce"
+  },
+  "private_producer_inventory_sha256": "5d6c7d456bbe6b5ec200796edc28d01a79e4d653ddb085a0d2d18f0a814797d5",
+  "audit": {
+    "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+    "major": "Epithelial cell",
+    "observed_UTC": "2026-10-14T06:47:44.354150+00:00",
+    "audit_code_sha256": "12ecdc1558ddfee7883beff55851046088abdb10de40a003c7bcdd4a44595dd0",
+    "producer_inventory_sha256": "5d6c7d456bbe6b5ec200796edc28d01a79e4d653ddb085a0d2d18f0a814797d5",
+    "repetition_matches": 4500,
+    "crossK_comparisons": 650,
+    "module_native_support_and_regression_checks": 45,
+    "max_repeat_cosine_difference": 2.6645352591003757e-15,
+    "K_statistics_not_independently_refit": true,
+    "source_distribution_quantiles_not_independently_recomputed_here": true,
+    "formal_states": false,
+    "mathematically_constant_group_residuals_exactzero": true,
+    "original_v1_failed_audit_retained": true
+  }
+}

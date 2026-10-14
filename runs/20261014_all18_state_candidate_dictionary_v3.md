@@ -1,0 +1,9 @@
+# 全18大类完整候选字典：事前组装合同
+
+当前仅准备，尚未组装。[冻结计划](../inventories/analysis/2026-10-14/all_lineage_state_candidate_dictionary_plan_v3.json)。必须全部6Spectra block和18cNMF major完成独立审核、监督24/24终态；不能以当前6scope代替完整字典。
+
+cNMF全810组件/全部K保留，primary真实正系数top50，TPM alternate独立列；Spectra仅已有预定context/stable因子成为signature，全部失败因子进入完整auditregistry（不删、不强造）。旧T/B已经过模型copy SHA和audit关联，可复用，不重复算。
+
+CrossK qualifying pair独立表格，表达对应不等于唯一states/细胞身份合并。固定11诊断panels及官方原Spectra references仅提供基因重叠描述，无确认刺激/功能/治疗机制命名。native训练支持、RNA份额、source/node及复杂度、其他谱系RNA/basics/低支持风险一起保留，状态资格留待固定全来源UCell及身份内检查。
+
+入口assemble_all_lineage_state_candidate_dictionary_v3.py；PANCANCER_PREFLIGHT_ROOT/PANCANCER_STATE_MODEL_OUTPUT_ROOT/PANCANCER_ALL_STATE_DICTIONARY_PLAN/PANCANCER_ALL_LINEAGE_SPECTRA_DIAGNOSTIC_PLAN。输入canonical原100766经过全量counts审核；字典输出仅在私有新data1目录，公开汇总不含cell/patient matrices。原172/9CM和完整source/状态LR/DIALOGUE/空间目标保持。

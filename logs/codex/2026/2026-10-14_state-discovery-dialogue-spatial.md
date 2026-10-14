@@ -115,3 +115,7 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T06:35:02.078689+00:00 数值交接：Myeloid/DC已审范围、三个live句柄和监督4/24scope记录，refresh135目录0冲突；原172/9CM/coreZarr不变，状态/通讯/DIALOGUE/空间未验收。
 
 2026-10-14T06:41:31.058759+00:00 /UTC+8 2026-10-14T14:41:31.058759+08:00：监督已完成/复用5/24scope，Endo全45/4500/650独立PASS、34repeat/28crossK非28states；CCL21/PDPN/PROX1程序源-nodeR2.892提示身份/状态区分，TOP2A/MKI67测量支持不能当阳性率。B/mast/Hemato固定诊断中、supervisor句柄live。[内皮结果](../../../inventories/analysis/2026-10-14/Endo_cNMF_diagnostics_v2/RESULTS.md)。Myeloid/DC节点e65508c已06:38:14普通push/06:38:19HTTPS核验。
+
+2026-10-14T06:51:21.267627+00:00 /UTC+8 2026-10-14T14:51:21.267627+08:00：上一goal turn为progress（真实Myeloid/DC/Endo全数值审计、固定监督执行、0d0558c普通push/云核验）；本turn同423862/423870/102992重新证实live，监督6/24，B/mast/Hemato159亦审核通过/0当前rule，vascular首seed完成。全18完整候选字典入口/contract冻结，须全部24审核，尚未组装，不以当前subset替代，不按LR/临床筛选。[合同](../../../runs/20261014_all18_state_candidate_dictionary_v3.md)。
+
+2026-10-14T07:06:11.674687+00:00 /UTC+8 2026-10-14T15:06:11.674687+08:00：本轮推进：取回并SHA核对上皮45/4500/650及B-mast-Hemato159/477/1353/451全审计汇总；上皮31repeat、26crossK不是独立state，组织身份/增殖/其他谱系RNA分列解释。07:04重新ps确认原Spectra、cNMF、监督3进程live，vascular三种子完成、上皮/黑色素Spectra开始；监督最新已取证7/24。全部字典入口已上传但仍等待24/24，未组装。 [上皮](../../../inventories/analysis/2026-10-14/Epi_cNMF_diagnostics_v2/RESULTS.md)、[B谱系](../../../inventories/analysis/2026-10-14/B_mast_Spectra_diagnostics_v2/RESULTS.md)。

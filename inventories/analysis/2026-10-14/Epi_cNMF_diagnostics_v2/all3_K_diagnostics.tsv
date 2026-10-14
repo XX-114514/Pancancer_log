@@ -1,0 +1,4 @@
+major	K	repeats	HVGs	unfiltered_silhouette	unfiltered_prediction_error	density_retained_fraction
+Epithelial cell	10	100	2000	0.8057950994769526	9527750.54626229	0.982
+Epithelial cell	15	100	2000	0.7739613964231894	9157778.74192911	0.992
+Epithelial cell	20	100	2000	0.803568541942544	8830625.15407603	0.9845

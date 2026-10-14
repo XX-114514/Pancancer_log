@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_BLOCK_MULTISEED_DIAGNOSTICS_NOT_FORMAL_STATES",
+  "block": "B_mast_hematopoietic",
+  "observed_UTC": "2026-10-14T06:38:08.292178+00:00",
+  "producer_sha256": "164d12399d4bb0867ba877569ebe4467ee1a15cb79590184aebad9b10d823ce3",
+  "plan_sha256": "d559119b43922822ad4d9d93fdfdf243689905745ff1ba53db1ff36c7f75794e",
+  "candidates": 159,
+  "shared_or_lineage_stable_candidates": 0,
+  "context_stable_candidates": 0,
+  "model_scope_all_majors_reported": true,
+  "global_factor_activity_not_required_in_all_majors": true,
+  "original_labels_unchanged": true,
+  "no_cell_level_p_or_clinical_LR_selection": true,
+  "formal_states": false,
+  "output_sha256": {
+    "all_factor_matches.tsv": "c6481dbebff3bfbe758415f92fab744fb4537bd24f8c0f7f12b75b8d0182eebc",
+    "all_major_score_reproducibility.tsv": "2d07abcdebf2db71aa52f49dcea017c8bcceb0166aee4fe0dc29b420e44f7e0b",
+    "all_source_node_complexity_diagnostics.tsv": "b5605d57b8846aa58796d596c929a7c4e8fd92ad06fad9ead0f0b81101b0097c",
+    "all_source_major_distributions.tsv": "7e873d3a34848a9929fa7cd9fe42bf6024ddb31ffdaf0238803589e9a78f20da",
+    "all_candidate_diagnostics.tsv": "b1d0eab72a4048f80638205cc235800d4686937d0f4b45cffcf3770e8fe360e6"
+  },
+  "private_producer_inventory_sha256": "49cb40c6a18b899273e0c0bbe04a72534fc61178873286c2c0ba2e53f4f92205",
+  "audit": {
+    "status": "PASS_ALL_BLOCK_FACTORS_MATCHES_SCORE_SOURCE_NODE_DEPTH_SUPPORT_AND_CANDIDATE_RULES",
+    "block": "B_mast_hematopoietic",
+    "observed_UTC": "2026-10-14T06:38:21.587547+00:00",
+    "audit_code_sha256": "63ea1e36c5b97106dec66094aa8e09b789e556992415f6fae3de243246bcb433",
+    "producer_inventory_sha256": "49cb40c6a18b899273e0c0bbe04a72534fc61178873286c2c0ba2e53f4f92205",
+    "factor_pair_checks": 477,
+    "score_pair_checks": 1353,
+    "major_factor_support_and_regression_checks": 451,
+    "candidate_rules": 159,
+    "max_cosine_difference": 2.4424906541753444e-15,
+    "scalar_and_sample_p_values_not_used": true,
+    "source_distributions_not_independently_recomputed_here": true,
+    "formal_states": false
+  }
+}
