@@ -1,0 +1,105 @@
+{
+  "status": "ROW_POINTER_STORAGE_BUDGET_NO_EXPRESSION_COPIED",
+  "observed_UTC": "2026-10-14T04:27:51.226825+00:00",
+  "selected_cells": 100766,
+  "native_nonzero_upper_bound": 176509672,
+  "raw_CSR_byte_upper_bound": 1412883648,
+  "requested_stage_GiB": 3,
+  "reserve_GiB": 500,
+  "free_GiB": 507.37416076660156,
+  "capacity_gate_pass": true,
+  "scope": "One common-axis int32 count matrix per original major, native total/detected metadata only; no full4.53m copy; models budget separately",
+  "source_selection_inventory_sha256": "6d6d1720e205b7fdff34a69f3c21d2d720124bc13c27d07f7511971ca93cac71",
+  "major_bounds": [
+    {
+      "major": "B cell",
+      "cells": 6000,
+      "native_nnz_bound": 6837399
+    },
+    {
+      "major": "Dendritic cell",
+      "cells": 4527,
+      "native_nnz_bound": 7928418
+    },
+    {
+      "major": "Endothelial cell",
+      "cells": 5852,
+      "native_nnz_bound": 10900444
+    },
+    {
+      "major": "Epithelial cell",
+      "cells": 6000,
+      "native_nnz_bound": 13994158
+    },
+    {
+      "major": "Fibroblast",
+      "cells": 6000,
+      "native_nnz_bound": 10975116
+    },
+    {
+      "major": "Glial cell",
+      "cells": 6000,
+      "native_nnz_bound": 21140921
+    },
+    {
+      "major": "Hematopoietic cell",
+      "cells": 6000,
+      "native_nnz_bound": 6837224
+    },
+    {
+      "major": "Lymphoid cell",
+      "cells": 3644,
+      "native_nnz_bound": 3049638
+    },
+    {
+      "major": "Macrophage",
+      "cells": 6000,
+      "native_nnz_bound": 10101301
+    },
+    {
+      "major": "Mast cell",
+      "cells": 5072,
+      "native_nnz_bound": 5362807
+    },
+    {
+      "major": "Melanocytic cell",
+      "cells": 6000,
+      "native_nnz_bound": 18699729
+    },
+    {
+      "major": "Mesenchymal cell",
+      "cells": 6000,
+      "native_nnz_bound": 15728374
+    },
+    {
+      "major": "Monocyte",
+      "cells": 5891,
+      "native_nnz_bound": 9214606
+    },
+    {
+      "major": "Mural cell",
+      "cells": 5475,
+      "native_nnz_bound": 8487886
+    },
+    {
+      "major": "Myeloid",
+      "cells": 5700,
+      "native_nnz_bound": 10407088
+    },
+    {
+      "major": "Neutrophil",
+      "cells": 4605,
+      "native_nnz_bound": 2947355
+    },
+    {
+      "major": "T cell",
+      "cells": 6000,
+      "native_nnz_bound": 6592643
+    },
+    {
+      "major": "T/NK lymphoid",
+      "cells": 6000,
+      "native_nnz_bound": 7304565
+    }
+  ]
+}

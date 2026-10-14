@@ -1,0 +1,20 @@
+{
+  "schema": "all18_native_sparse_discovery_input_plan_v1",
+  "frozen_UTC": "2026-10-14T04:29:35.986222+00:00",
+  "producer_sha256": "5f9f45c07483c760bb2788e4da1060bc1d8f9bbe39de457dbb8579ee1a136c03",
+  "selection_inventory_sha256": "6d6d1720e205b7fdff34a69f3c21d2d720124bc13c27d07f7511971ca93cac71",
+  "selection_audit_sha256": "05cc23f2552744d2300aa2fa8f4eabc10f6551eca12a7bd2c13fd701ef934048",
+  "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "cells": 100766,
+  "majors": 18,
+  "reserve_GiB": 500,
+  "stage_budget_GiB": 3,
+  "selected_cell_chunk": 256,
+  "max_core_row_span": 8192,
+  "raw_counts": "Original canonical rawX integer counts on frozen per-major chosen-source gene intersection; no imputing source absence",
+  "denominator": "Native all-gene RNA total and positive detected genes, including columns outside common training axis",
+  "identity": "Original cell IDs, major/node/number/sample/current inherited block retained; no malignancy/status relabel",
+  "outputs": "One sparse H5AD per original major; private cell/sample metadata and matrices remain remote; public major-level scope/SHA only",
+  "acceptance": "Independent fresh raw-count, fullRNA denominator, gene/identity axis readback of all100766; model fitting only after accepted inventory",
+  "formal_states": false
+}
