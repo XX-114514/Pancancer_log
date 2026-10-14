@@ -71,3 +71,5 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 02:40:10.955108UTC /10:40:10UTC+8自己的合并numeric handoff/证据登记已刷新，135目录0冲突；移除已完成cNMF的过期active jobs，不晋升states。255ab5d3459636d3b75e11b29f4b603323dfb9c8于02:14:53普通push/02:14:56HTTPS核验；acfd17f恢复计划已随并发后续提交包含，原failed v1和所有科学data保留。本goal未完成。
 
 2026-10-14T03:26:23.757554+00:00 /UTC+8 2026-10-14T11:26:23.757554+08:00：固定98sig/65稳定候选原生UCell计划，CPU average ties/1500主+1000/3000/TPM敏感性，记录cell gene支持不强造state。配额实测limit2TiB，free约507.7GiB，500+1门槛；先执行字典后评分。 [run](../../../runs/20261014_native_ucell_projection_v1.md)。
+
+2026-10-14T03:35:24.953478+00:00 /UTC+8 2026-10-14T11:35:24.953478+08:00：字典v1 JSON完成、integer-list TSV展示TypeError exit1，无评分。v2展示修正/新输出且98 records精确比对；评分参数保持，待字典恢复后启动。3cf3dff计划已03:32:10push/03:32:14HTTPS核验。 [恢复run](../../../runs/20261014_native_ucell_projection_v1.md)。
