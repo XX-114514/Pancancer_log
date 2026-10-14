@@ -364,7 +364,7 @@ class Suite:
             lookup=self.catalog.set_index('subcluster');nodecolors=[MAJOR_COLORS[str(lookup.loc[n,'major'])] for n in graph]
             nx.draw_networkx_nodes(graph,pos,ax=ax,node_size=12,node_color=nodecolors,linewidths=0)
             names=[n for n in rows if n in graph];ax.get_xlim();ax.get_ylim();fig.canvas.draw()
-            anchors=np.array([pos[n] for n in names])
+            anchors=np.asarray([pos[n] for n in names],dtype=float).reshape((-1,2))
             origin=ax.transAxes.inverted().transform(ax.transData.transform(anchors));positions=origin.copy()
             rng=np.random.default_rng(SEED)
             for step in range(250):
