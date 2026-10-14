@@ -1,0 +1,133 @@
+{
+  "worker_terminal": {
+    "finished_utc": "2026-10-14T04:09:28.542389+00:00",
+    "exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "shards": [
+    {
+      "observed_utc": "2026-10-14T04:07:49.628484+00:00",
+      "n_cells": 682844,
+      "n_libraries": 100,
+      "shard_index": 0,
+      "shard_count": 4,
+      "attempt_version": "logspace_v2",
+      "library_method_status_counts": {
+        "skipped": 63,
+        "success": 37
+      },
+      "cell_malignant_status_counts": {
+        "not_evaluated_skipped": 445740,
+        "lineage_reference_not_tumor_candidate": 170612,
+        "CNV_negative_candidate": 41170,
+        "CNV_supported_malignant": 15887,
+        "CNV_uncertain": 8425,
+        "not_evaluated": 1010
+      },
+      "original_gene_annotation_sha256": "c222685bba8d63241e6addf5e844038066c2e03884296e1e807f9c27161db38e",
+      "core_sha256": "00cb8b1d7b053983b0259b8614ccffbd873496220c500c95abcb147d3679d7f8",
+      "raw_count_input": true,
+      "same_original_library_reference": true,
+      "skips_never_normal": true,
+      "inference_input": "sample_native_raw_counts_to_log1p_CP10K",
+      "raw_counts_preserved": true,
+      "CNV_evidence_tier": "single_infercnvpy_cluster_support",
+      "n_method_failed": 0,
+      "authoritative_release": false
+    },
+    {
+      "observed_utc": "2026-10-14T04:09:20.635565+00:00",
+      "n_cells": 647808,
+      "n_libraries": 100,
+      "shard_index": 1,
+      "shard_count": 4,
+      "attempt_version": "logspace_v2",
+      "library_method_status_counts": {
+        "skipped": 62,
+        "success": 38
+      },
+      "cell_malignant_status_counts": {
+        "not_evaluated_skipped": 434769,
+        "lineage_reference_not_tumor_candidate": 149465,
+        "CNV_negative_candidate": 41454,
+        "CNV_uncertain": 13379,
+        "CNV_supported_malignant": 7385,
+        "not_evaluated": 1356
+      },
+      "original_gene_annotation_sha256": "c222685bba8d63241e6addf5e844038066c2e03884296e1e807f9c27161db38e",
+      "core_sha256": "00cb8b1d7b053983b0259b8614ccffbd873496220c500c95abcb147d3679d7f8",
+      "raw_count_input": true,
+      "same_original_library_reference": true,
+      "skips_never_normal": true,
+      "inference_input": "sample_native_raw_counts_to_log1p_CP10K",
+      "raw_counts_preserved": true,
+      "CNV_evidence_tier": "single_infercnvpy_cluster_support",
+      "n_method_failed": 0,
+      "authoritative_release": false
+    },
+    {
+      "observed_utc": "2026-10-14T04:05:25.961273+00:00",
+      "n_cells": 663562,
+      "n_libraries": 100,
+      "shard_index": 2,
+      "shard_count": 4,
+      "attempt_version": "logspace_v2",
+      "library_method_status_counts": {
+        "skipped": 62,
+        "success": 38
+      },
+      "cell_malignant_status_counts": {
+        "not_evaluated_skipped": 435152,
+        "lineage_reference_not_tumor_candidate": 155215,
+        "CNV_negative_candidate": 33611,
+        "CNV_uncertain": 23498,
+        "CNV_supported_malignant": 14592,
+        "not_evaluated": 1494
+      },
+      "original_gene_annotation_sha256": "c222685bba8d63241e6addf5e844038066c2e03884296e1e807f9c27161db38e",
+      "core_sha256": "00cb8b1d7b053983b0259b8614ccffbd873496220c500c95abcb147d3679d7f8",
+      "raw_count_input": true,
+      "same_original_library_reference": true,
+      "skips_never_normal": true,
+      "inference_input": "sample_native_raw_counts_to_log1p_CP10K",
+      "raw_counts_preserved": true,
+      "CNV_evidence_tier": "single_infercnvpy_cluster_support",
+      "n_method_failed": 0,
+      "authoritative_release": false
+    },
+    {
+      "observed_utc": "2026-10-14T04:03:51.944280+00:00",
+      "n_cells": 675843,
+      "n_libraries": 100,
+      "shard_index": 3,
+      "shard_count": 4,
+      "attempt_version": "logspace_v2",
+      "library_method_status_counts": {
+        "skipped": 64,
+        "success": 36
+      },
+      "cell_malignant_status_counts": {
+        "not_evaluated_skipped": 444687,
+        "lineage_reference_not_tumor_candidate": 167268,
+        "CNV_negative_candidate": 35500,
+        "CNV_supported_malignant": 14793,
+        "CNV_uncertain": 12656,
+        "not_evaluated": 939
+      },
+      "original_gene_annotation_sha256": "c222685bba8d63241e6addf5e844038066c2e03884296e1e807f9c27161db38e",
+      "core_sha256": "00cb8b1d7b053983b0259b8614ccffbd873496220c500c95abcb147d3679d7f8",
+      "raw_count_input": true,
+      "same_original_library_reference": true,
+      "skips_never_normal": true,
+      "inference_input": "sample_native_raw_counts_to_log1p_CP10K",
+      "raw_counts_preserved": true,
+      "CNV_evidence_tier": "single_infercnvpy_cluster_support",
+      "n_method_failed": 0,
+      "authoritative_release": false
+    }
+  ]
+}

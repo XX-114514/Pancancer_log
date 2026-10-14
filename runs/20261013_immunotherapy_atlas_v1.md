@@ -54,3 +54,5 @@
 - 03:47:25 UTC v2恢复PID251775（4worker），03:49:46 UTC[真实加速/复用检查点](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_first_recovery_checks_public.json)：28/400库有状态，规范表达全条目误差门槛继续PASS，目标active。
 
 - 最终接口审计入口`audit_immune_final_interfaces.py`已准备：从实际data4成品重读节点/CNV/图与15个CM频率，依赖逐行原生计数和逐文件复制校验先PASS。当前尚未正式发布。
+
+- 04:09:28 UTC[全部400库工作进程完成](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_workers_completed_public.json)：149success/251skip、4×exit0，无method fail；最终精确合并和authority仍pending。
