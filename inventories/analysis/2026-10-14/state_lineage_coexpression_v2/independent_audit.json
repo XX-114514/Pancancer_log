@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL240533_NATIVE_PANEL_VALUES_AGGREGATES_AND990_TAILS",
+  "observed_UTC": "2026-10-14T02:20:03.002371+00:00",
+  "auditor_sha256": "080eec953cd36bbf13b55c312440d86f77a4b0808bb831284c39f040781fc20c",
+  "producer_inventory_sha256": "5c3164ed6356dd6d726310903e37466dc5318f9093f2a23e057d91c4098b86f1",
+  "native_cell_panel_values_checked": 7937589,
+  "source_major_aggregate_rows": 110,
+  "source_node_rows": 212,
+  "module_tail_rows": 990,
+  "all_actual_node_keys_exact": true,
+  "failed_v1_first_source_private_quantities_unchanged": true,
+  "original_identities_changed": false,
+  "technical_or_biological_origin_determined": false,
+  "formal_state_labels": false
+}

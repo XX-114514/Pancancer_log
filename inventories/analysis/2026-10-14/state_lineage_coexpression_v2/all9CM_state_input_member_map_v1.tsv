@@ -1,0 +1,83 @@
+cm	node	major	weight	core_weight	immune	current_native_input_present	state_score_available	sources_with_atleast20_cells	missing_reason
+CM01	pDC_GZMB_48	Dendritic cell	0.280519461315069	0.2929764872089339	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM01	Macrophage_IFI6_18	Macrophage	0.135698297169416	0.1417242505691133	True	True	False	5	input_present_state_projection_pending
+CM01	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.109256631830965	0.1141083903699783	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM01	Lymphoid_cell_CCL5_33	Lymphoid cell	0.0900227380084365	0.0940203771495875	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM01	Monocyte_TYROBP_37	Monocyte	0.0822003728062487	0.0858506442267499	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM01	Regulatory_T_cell_CTLA4_15	T cell	0.0721052225933313	0.0753071987439955	True	True	False	5	input_present_state_projection_pending
+CM01	Myeloid_LAMP3_5	Myeloid	0.0711782649393322	0.074339077687485	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM01	B_cell_MS4A1_19	B cell	0.066013933145837	0.0689454134456296	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM01	CD8_T_cell_NKG7_9	T cell	0.050486219382803	0.0527281605985269	True	True	False	5	input_present_state_projection_pending
+CM02	Neutrophil_S100A8_35	Neutrophil	0.234473741826231	0.2955871840996543	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM02	Lymphoid_cell_CCL5_33	Lymphoid cell	0.191510494037411	0.2414259576238788	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM02	Monocyte_TYROBP_37	Monocyte	0.101702571107002	0.1282104186808797	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM02	T_cell_IL7R_28	T cell	0.0919473269700265	0.115912559132964	True	True	False	5	input_present_state_projection_pending
+CM02	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.0893207856231328	0.11260143373955	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM02	Macrophage_CD74_39	Macrophage	0.034421457760143	0.0433930967820961	True	True	False	5	input_present_state_projection_pending
+CM02	Mast_cell_TPSAB1_25	Mast cell	0.0280049939472253	0.0353042401981326	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM02	B_cell_HLA-DRA_24	B cell	0.021865949448865	0.0275651097428442	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	Mural_cell_CALD1_13	Mural cell	0.198262307002293	0.217261213997486	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	Myeloid_FCER1G_63	Myeloid	0.182870286860984	0.2003942208088318	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	Blood_vascular_endothelial_cell_RAMP2_10	Endothelial cell	0.110889618245123	0.1215158516206238	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	Fibroblast_SFRP2_17	Fibroblast	0.108269637591758	0.1186448057521147	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.0721684603619263	0.0790841564775104	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	Monocyte_TYROBP_37	Monocyte	0.0692634047254526	0.0759007177096804	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	cDC1_LGALS2_43	Dendritic cell	0.0534140215930947	0.0585325337491885	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM03	Macrophage_IFI6_18	Macrophage	0.051891276104863	0.0568638679377965	True	True	False	5	input_present_state_projection_pending
+CM03	CD8_T_cell_NKG7_9	T cell	0.0383013809355332	0.0419716921771613	True	True	False	5	input_present_state_projection_pending
+CM03	Endothelial_cell_ACKR1_50	Endothelial cell	0.027222304570373	0.029830939769606	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	Macrophage_IFI6_18	Macrophage	0.109233769882096	0.1382766023423446	True	True	False	5	input_present_state_projection_pending
+CM04	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.105135568512827	0.1330887802826562	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	Monocyte_TYROBP_37	Monocyte	0.104951076575251	0.132855236037913	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	Mast_cell_TPSAB1_25	Mast cell	0.0983948845775846	0.1245558982532709	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	Epithelial_cell_KRT18_52	Epithelial cell	0.0963729094453885	0.1219963248575841	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	Fibroblast_SFRP2_17	Fibroblast	0.0911007623792111	0.1153224310228565	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	Endothelial_cell_CA4_54	Endothelial cell	0.0480233501243763	0.0607916919416326	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	Lymphoid_cell_CCL5_33	Lymphoid cell	0.047321300538637	0.059902982969154	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM04	T_cell_IL7R_28	T cell	0.0449415995867286	0.0568905724062309	True	True	False	5	input_present_state_projection_pending
+CM04	Myeloid_FCER1G_95	Myeloid	0.0444904560972257	0.0563194798863566	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	Myeloid_FCER1G_65	Myeloid	0.109117834910535	0.1563886938887076	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.10024388641894	0.1436704685374253	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	Mural_cell_COX4I2_61	Mural cell	0.0910566701779327	0.1305032649397526	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	Fibroblast_SFRP2_17	Fibroblast	0.0716430924675112	0.1026795451571066	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	Lymphoid_cell_IL7R_66	Lymphoid cell	0.0685320698885147	0.0982207987185758	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	Mast_cell_HDC_26	Mast cell	0.0575917393768623	0.0825410154747927	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	cDC1_LGALS2_43	Dendritic cell	0.0558712707696943	0.0800752238966137	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	Monocyte_TYROBP_37	Monocyte	0.0554675757732651	0.0794966444804006	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM05	Macrophage_SELENOP_42	Macrophage	0.0459190188972943	0.0658115641305252	True	True	False	5	input_present_state_projection_pending
+CM05	B_cell_CD83_40	B cell	0.0422916468047338	0.0606127807760993	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	Mast_cell_HDC_26	Mast cell	0.161942069965166	0.228687766597372	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	Lymphoid_cell_CCL5_33	Lymphoid cell	0.115206918615462	0.1626903553869748	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	Neutrophil_S100A8_35	Neutrophil	0.086202350152127	0.1217313261215874	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	Mural_cell_CALD1_13	Mural cell	0.0821501863635831	0.1160090311868112	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	Fibroblast_SFRP2_17	Fibroblast	0.0665543630635669	0.0939852667660208	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	Epithelial_cell_KRT18_52	Epithelial cell	0.0567777567268874	0.0801791553058063	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	Monocyte_TYROBP_37	Monocyte	0.05433043362774	0.0767231487609562	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.044558010609603	0.0629229448068928	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM06	B_cell_CD83_40	B cell	0.0404140406509279	0.0570710050675782	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	Monocyte_TYROBP_37	Monocyte	0.0963143272826265	0.1438923628706673	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	Epithelial_cell_KRT18_52	Epithelial cell	0.0904097494302536	0.135070999705885	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.086554792911825	0.1293117443816729	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	Fibroblast_SFRP2_17	Fibroblast	0.0844035980855994	0.1260978870535473	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	Neutrophil_S100A8_35	Neutrophil	0.0743039081373079	0.1110090805184999	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	Macrophage_SELENOP_42	Macrophage	0.0672396361448995	0.1004551492641611	True	True	False	5	input_present_state_projection_pending
+CM07	Mural_cell_CALD1_13	Mural cell	0.0662310461060796	0.0989483287531509	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	cDC1_LGALS2_43	Dendritic cell	0.0607374644848294	0.0907409886573731	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM07	Lymphoid_cell_CCL5_33	Lymphoid cell	0.0431552980821506	0.0644734587950421	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM08	Antibody_secreting_B_cell_MZB1_51	B cell	0.249010160120574	0.29534659105495	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM08	Epithelial_cell_KRT18_52	Epithelial cell	0.241253748552333	0.2861468470991615	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM08	Fibroblast_SFRP2_17	Fibroblast	0.111424689520523	0.1321588733299386	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM08	Macrophage_CD74_39	Macrophage	0.0826154253956036	0.0979887095664336	True	True	False	5	input_present_state_projection_pending
+CM08	Monocyte_TYROBP_37	Monocyte	0.0756089588984858	0.0896784623288813	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM08	Endothelial_cell_ACKR1_50	Endothelial cell	0.0441965821888633	0.052420792305985	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM08	Mural_cell_CALD1_126	Mural cell	0.0216201457209378	0.0256432762972335	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM08	T_cell_STMN1_23	T cell	0.0173819680924611	0.0206164480174161	True	True	False	5	input_present_state_projection_pending
+CM09	Mast_cell_TPSAB1_25	Mast cell	0.172995623835729	0.1860028986732863	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM09	B_cell_HLA-DRA_24	B cell	0.158986137113086	0.1709400601947193	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM09	Epithelial_cell_KRT18_52	Epithelial cell	0.156666872258748	0.1684464133837018	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM09	T_cell_IL7R_28	T cell	0.108081539575115	0.1162080242742585	True	True	False	5	input_present_state_projection_pending
+CM09	Macrophage_CD74_39	Macrophage	0.0808289158602855	0.0869063177049406	True	True	False	5	input_present_state_projection_pending
+CM09	T_NK_lymphoid_NKG7_20	T/NK lymphoid	0.0804055383231985	0.0864511070621204	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM09	Monocyte_TYROBP_37	Monocyte	0.0676762856962163	0.0727647615114867	True	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM09	Fibroblast_SFRP2_17	Fibroblast	0.062885279572042	0.0676135270068262	False	False	False	0	lineage_or_node_not_in_initial_T_M_input
+CM09	Endothelial_cell_ACKR1_50	Endothelial cell	0.0415433124327915	0.0446668901886597	False	False	False	0	lineage_or_node_not_in_initial_T_M_input

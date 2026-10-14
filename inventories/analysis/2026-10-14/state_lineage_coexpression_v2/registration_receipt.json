@@ -1,0 +1,12 @@
+{
+  "registered_UTC": "2026-10-14T02:40:10.955108+00:00",
+  "status": "NUMERIC_STATE_METHODS_AND_NATIVE_RNA_REGISTERED_NOT_FORMAL_STATE",
+  "handoff_sha256": "29540d5e5e844c8ec5f6af3cb2e2f8a0c3156c4b6d6fe7f6da5755b1f14dfa5f",
+  "independent_lineage_audit_sha256": "e1c4f4898e49ba9e4ab29aabcc31e4f1574469b7f52bc1349f0c01f78057868b",
+  "state_refresh": "indexed 135 directories; conflicts 0 v10_audit PASS_V10_REVIEWED59_IDENTITY_OVERLAY_FULLROW_AUDIT",
+  "active_scientific_jobs": 0,
+  "original_CM_register_modified": false,
+  "formal_state_labels": false,
+  "UCell_biological_scores": false,
+  "all9CM_state_mapping": false
+}

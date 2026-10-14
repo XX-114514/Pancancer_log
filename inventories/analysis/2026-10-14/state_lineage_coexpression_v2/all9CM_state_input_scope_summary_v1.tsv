@@ -1,0 +1,10 @@
+cm	core_nodes	current_native_nodes	current_native_core_weight	state_scored_nodes	missing_majors
+CM01	9	3	0.2697596099116357	0	B cell;Dendritic cell;Lymphoid cell;Monocyte;Myeloid;T/NK lymphoid
+CM02	8	2	0.1593056559150601	0	B cell;Lymphoid cell;Mast cell;Monocyte;Neutrophil;T/NK lymphoid
+CM03	10	2	0.0988355601149578	0	Dendritic cell;Endothelial cell;Fibroblast;Monocyte;Mural cell;Myeloid;T/NK lymphoid
+CM04	10	2	0.1951671747485755	0	Endothelial cell;Epithelial cell;Fibroblast;Lymphoid cell;Mast cell;Monocyte;Myeloid;T/NK lymphoid
+CM05	10	1	0.0658115641305252	0	B cell;Dendritic cell;Fibroblast;Lymphoid cell;Mast cell;Monocyte;Mural cell;Myeloid;T/NK lymphoid
+CM06	9	0	0.0	0	B cell;Epithelial cell;Fibroblast;Lymphoid cell;Mast cell;Monocyte;Mural cell;Neutrophil;T/NK lymphoid
+CM07	9	1	0.1004551492641611	0	Dendritic cell;Epithelial cell;Fibroblast;Lymphoid cell;Monocyte;Mural cell;Neutrophil;T/NK lymphoid
+CM08	8	2	0.11860515758384971	0	B cell;Endothelial cell;Epithelial cell;Fibroblast;Monocyte;Mural cell
+CM09	9	2	0.2031143419791991	0	B cell;Endothelial cell;Epithelial cell;Fibroblast;Mast cell;Monocyte;T/NK lymphoid

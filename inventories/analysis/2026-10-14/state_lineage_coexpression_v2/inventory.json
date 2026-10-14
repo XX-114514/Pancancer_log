@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_NATIVE_LINEAGE_RNA_DIAGNOSTICS_NOT_IDENTITY_OR_STATE_DECISION",
+  "observed_UTC": "2026-10-14T02:17:41.733195+00:00",
+  "producer_sha256": "0f17b04b105ce36a7cae693df38dc8496324b57f9cdfd692a02a594214ff497c",
+  "plan_sha256": "f909943eef3fd11fd345b7554292526913863bae13e4b6d6f94b1ccbe95495ea",
+  "cells": 240533,
+  "training_cells": 12000,
+  "source_major_panels": 110,
+  "gene_coverage_records": 55,
+  "module_tail_records": 990,
+  "identity_labels_changed": false,
+  "technical_vs_biological_origin_determined": false,
+  "formal_state_labels": false,
+  "output_sha256": {
+    "all110_source_major_panel_diagnostics.tsv": "3bc0fe82770c4857dbb9ad18fd4b15433cb06eb62368918d3fce499cbe97530b",
+    "all_source_node_foreign_RNA_diagnostics.tsv": "2db5e9421fc94658760e5971d1a96bb26b73e44d04601a4a8455c37537f492ac",
+    "all55_gene_panel_coverage.tsv": "8d337d7f5fc144a11f09b9eb8eb7a62facd818474d088aabeb30bcb760528bff",
+    "all990_discovery_module_tail_diagnostics.tsv": "85fd943b74d0e07ac22c6906f3381e765fb97c6a29f05b8a296d3626c489f301"
+  }
+}

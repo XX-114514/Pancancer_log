@@ -65,3 +65,7 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T02:12:29.693688+00:00 /UTC+8 2026-10-14T10:12:29.693688+08:00：cNMF600/6于02:03:23完成，v2全90/9000/1300/14355对照02:04完成、02:08独立readbackPASS。57repeat+crossK候选跨K重复不等于57state；稳定胶原/角蛋白/神经RNA触发固定全240533同cell诊断，源限定IFN/microglia不默认artifact。 [结果](../../../inventories/analysis/2026-10-14/state_method_comparison_v2/RESULTS.md)。
 
 2026-10-14T02:16:32.712041+00:00 /UTC+8 2026-10-14T10:16:32.712041+08:00：同cell诊断v1真实空categorical组断言失败、两句柄退出；保留首source数据/失败。v2只改observed=True、同全部240533/11panel/门槛，输出新版本，尚待执行。读input字段首用source_files导致KeyError的只读metadata探查已纠正为verified_dataset_files，不是科学producer故障。 [恢复](../../../runs/20261014_state_lineage_coexpression_v1.md)。
+
+2026-10-14T02:43:07.957687+00:00 /UTC+8 2026-10-14T10:43:07.957687+08:00：v2同cell诊断/全值及990-tail独立复算完成（02:17/02:20 UTC），强foreignRNA source-major最高0.654%，不支持大范围错标、不能判断来源。冻结graph core输入只覆盖9CM参考weight0—26.98%，CM06为0，后续必补其他谱系。取回超时保留，压缩9014byte恢复，全部SHA通过；原science不重启。 [结果](../../../inventories/analysis/2026-10-14/state_lineage_coexpression_v2/RESULTS.md)。
+
+02:40:10.955108UTC /10:40:10UTC+8自己的合并numeric handoff/证据登记已刷新，135目录0冲突；移除已完成cNMF的过期active jobs，不晋升states。255ab5d3459636d3b75e11b29f4b603323dfb9c8于02:14:53普通push/02:14:56HTTPS核验；acfd17f恢复计划已随并发后续提交包含，原failed v1和所有科学data保留。本goal未完成。

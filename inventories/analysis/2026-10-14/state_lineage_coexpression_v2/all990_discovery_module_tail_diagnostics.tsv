@@ -1,0 +1,991 @@
+major	K	component	panel	tail_cells	tail_definition	tail_fraction_median	tail_multi_marker_fraction1pct_cells	all6000_multi_marker_fraction1pct_cells
+T cell	10	1	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001584821877072073	0	15
+T cell	10	1	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	1	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	10	1	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	1	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	1	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	1	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	10	1	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	47
+T cell	10	1	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	10	1	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	490
+T cell	10	1	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0009965478331787864	7	702
+T cell	10	2	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0019217512051722696	0	15
+T cell	10	2	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	2	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	10	2	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	2	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	2	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	2	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	10	2	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003476107358317702	0	47
+T cell	10	2	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	10	2	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004300694038580679	12	490
+T cell	10	2	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0035580023770328574	30	702
+T cell	10	3	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016225867871991779	0	15
+T cell	10	3	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	3	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	10	3	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	3	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	3	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	3	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	10	3	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00020311011146366095	1	47
+T cell	10	3	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	10	3	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0014298626277008868	5	490
+T cell	10	3	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.016728624535315983	197	702
+T cell	10	4	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004167615383133552	4	15
+T cell	10	4	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	4	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	10	4	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	4	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	4	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	4	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	10	4	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005593907795565394	2	47
+T cell	10	4	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	10	4	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.015302300229967621	216	490
+T cell	10	4	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016054586237582102	23	702
+T cell	10	5	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0037143685851474878	3	15
+T cell	10	5	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	5	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	10	5	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	5	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	5	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	5	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	10	5	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0008040491737097469	8	47
+T cell	10	5	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004702978879678226	29	34
+T cell	10	5	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	490
+T cell	10	5	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0020422570171867707	16	702
+T cell	10	6	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018513055755698241	0	15
+T cell	10	6	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	6	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004845028179142868	1	5
+T cell	10	6	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0002843341397558265	3	3
+T cell	10	6	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	6	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	6	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	31
+T cell	10	6	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007565788155642014	12	47
+T cell	10	6	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	34
+T cell	10	6	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005537181746186749	15	490
+T cell	10	6	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001996007984031936	17	702
+T cell	10	7	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0021939576114118117	0	15
+T cell	10	7	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	7	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	10	7	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	7	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	7	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	7	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005061186516478796	31	31
+T cell	10	7	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005375246825874502	2	47
+T cell	10	7	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00028358990318619467	1	34
+T cell	10	7	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016428805487177173	33	490
+T cell	10	7	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0032983341675896	32	702
+T cell	10	8	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002101269858125157	0	15
+T cell	10	8	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	8	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	10	8	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	8	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	8	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	8	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0009647963362871398	0	31
+T cell	10	8	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003984876682397627	2	47
+T cell	10	8	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003953931268141835	1	34
+T cell	10	8	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0014918349913900777	48	490
+T cell	10	8	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002653683731276604	14	702
+T cell	10	9	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016830327636672647	2	15
+T cell	10	9	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	9	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007551450942085204	5	5
+T cell	10	9	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	9	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	9	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	9	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	5	31
+T cell	10	9	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.000556837066249969	2	47
+T cell	10	9	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	3	34
+T cell	10	9	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0012757223970199993	34	490
+T cell	10	9	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0031887855076233856	28	702
+T cell	10	10	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001837029601875968	1	15
+T cell	10	10	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0001792491428693129	0	0
+T cell	10	10	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	5
+T cell	10	10	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	10	10	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	10	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	10	10	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	10	10	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00021309138247467403	1	47
+T cell	10	10	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	34
+T cell	10	10	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001358505096931507	10	490
+T cell	10	10	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0023955746967198486	30	702
+T cell	15	1	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016047076000866088	0	15
+T cell	15	1	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	1	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	1	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	1	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	1	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	1	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	15	1	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	47
+T cell	15	1	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	15	1	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00038396275509677575	0	490
+T cell	15	1	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002264587980888399	21	702
+T cell	15	2	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002115618607238824	0	15
+T cell	15	2	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	2	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	2	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	2	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	2	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	2	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	15	2	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	47
+T cell	15	2	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	15	2	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	490
+T cell	15	2	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.000934426882226108	8	702
+T cell	15	3	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0019573626334333243	0	15
+T cell	15	3	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	3	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	3	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	3	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	3	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	3	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	15	3	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00020220487067366255	0	47
+T cell	15	3	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	15	3	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	9	490
+T cell	15	3	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004468332341701639	39	702
+T cell	15	4	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0037308610061642473	1	15
+T cell	15	4	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	4	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	4	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	4	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	4	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	4	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	15	4	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0010045393034936309	21	47
+T cell	15	4	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	15	4	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006718234059031996	87	490
+T cell	15	4	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0020754086686180406	25	702
+T cell	15	5	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00364301444514949	3	15
+T cell	15	5	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	5	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	5	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	5	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	5	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	5	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	15	5	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006773053842222937	3	47
+T cell	15	5	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004985563200868279	30	34
+T cell	15	5	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	490
+T cell	15	5	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0022556089044720056	19	702
+T cell	15	6	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0017809052486457443	1	15
+T cell	15	6	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	6	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	6	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	6	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	6	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	6	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	15	6	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00023974472697949718	3	47
+T cell	15	6	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	15	6	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001173207918514448	7	490
+T cell	15	6	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.01926079529935494	219	702
+T cell	15	7	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0026821641479662555	2	15
+T cell	15	7	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00035597882970725013	0	0
+T cell	15	7	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	7	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	7	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	7	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	7	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	15	7	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003018359863379645	1	47
+T cell	15	7	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004515306486428093	0	34
+T cell	15	7	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.014138226432186533	170	490
+T cell	15	7	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001642554392932244	15	702
+T cell	15	8	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0020990908957394	0	15
+T cell	15	8	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	8	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	8	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	8	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	8	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	8	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0011718372131037651	0	31
+T cell	15	8	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003975352969622646	2	47
+T cell	15	8	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003970749343113685	1	34
+T cell	15	8	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0008585074620357825	37	490
+T cell	15	8	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002785907707639185	14	702
+T cell	15	9	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016724746797822869	0	15
+T cell	15	9	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	9	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	5
+T cell	15	9	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	9	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	9	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	9	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	15	9	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	47
+T cell	15	9	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	34
+T cell	15	9	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004449525845855358	16	490
+T cell	15	9	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0022443047180920354	21	702
+T cell	15	10	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0021959636337583657	0	15
+T cell	15	10	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	10	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	10	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	10	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	10	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	10	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00513950142685314	31	31
+T cell	15	10	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.000596563243390828	1	47
+T cell	15	10	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00028358990318619467	1	34
+T cell	15	10	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018450882374300998	37	490
+T cell	15	10	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0033482153283614577	33	702
+T cell	15	11	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0020161299428266377	0	15
+T cell	15	11	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	11	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	11	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006731777524609168	3	3
+T cell	15	11	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	11	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	11	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	3	31
+T cell	15	11	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.000745156896615866	7	47
+T cell	15	11	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	3	34
+T cell	15	11	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006309271324939017	20	490
+T cell	15	11	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0020540453883385068	20	702
+T cell	15	12	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0017479084977437276	1	15
+T cell	15	12	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00019526926989158692	0	0
+T cell	15	12	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	5
+T cell	15	12	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	12	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	12	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	12	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	15	12	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00024303114518582907	1	47
+T cell	15	12	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	34
+T cell	15	12	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0008307433349884939	10	490
+T cell	15	12	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002150155684986974	29	702
+T cell	15	13	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0017889144905273938	1	15
+T cell	15	13	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	13	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	3	5
+T cell	15	13	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	13	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	13	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	13	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	15	13	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00024617825450257516	2	47
+T cell	15	13	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	34
+T cell	15	13	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007328700685014647	16	490
+T cell	15	13	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0025062055831824507	19	702
+T cell	15	14	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0019587035994799297	1	15
+T cell	15	14	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004106778951231536	0	0
+T cell	15	14	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003972564378655749	4	5
+T cell	15	14	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	14	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	14	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	14	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	4	31
+T cell	15	14	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0009258546243227532	7	47
+T cell	15	14	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004106778951231536	6	34
+T cell	15	14	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0013004757173791786	38	490
+T cell	15	14	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0035826249907747005	40	702
+T cell	15	15	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016849498631599268	0	15
+T cell	15	15	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00018790695519834953	0	0
+T cell	15	15	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	15	15	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	15	15	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	15	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	15	15	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	15	15	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	47
+T cell	15	15	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	34
+T cell	15	15	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00037623039228175663	11	490
+T cell	15	15	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003296497318794517	40	702
+T cell	20	1	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0015679271192214626	0	15
+T cell	20	1	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	1	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	1	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	1	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	1	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	1	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	1	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	47
+T cell	20	1	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	20	1	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0002595910787154377	1	490
+T cell	20	1	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0020669554151415332	15	702
+T cell	20	2	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002003606572118596	0	15
+T cell	20	2	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	2	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	2	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	2	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	2	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	2	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	2	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	47
+T cell	20	2	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	20	2	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	8	490
+T cell	20	2	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004454592131601336	36	702
+T cell	20	3	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0022340896755235857	0	15
+T cell	20	3	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	3	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	3	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	3	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	3	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	3	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	3	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0001614915866672791	0	47
+T cell	20	3	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	20	3	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	490
+T cell	20	3	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0009464336131370647	8	702
+T cell	20	4	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003836860555954666	1	15
+T cell	20	4	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	4	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	4	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	4	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	4	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	4	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	4	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005233907173328601	0	47
+T cell	20	4	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	20	4	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.008390164925487466	121	490
+T cell	20	4	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0019412819904052337	24	702
+T cell	20	5	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003632071458111956	3	15
+T cell	20	5	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	5	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	5	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	5	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	5	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	5	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	5	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006242871136123301	1	47
+T cell	20	5	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004824889568750035	30	34
+T cell	20	5	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	490
+T cell	20	5	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0022897416220590983	19	702
+T cell	20	6	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0017768303594261356	1	15
+T cell	20	6	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	6	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	6	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	6	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	6	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	6	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	6	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00017018545169781462	2	47
+T cell	20	6	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	20	6	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001271407689230669	7	490
+T cell	20	6	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.019566303964173276	223	702
+T cell	20	7	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0019447148814045385	0	15
+T cell	20	7	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00048280410948687354	0	0
+T cell	20	7	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	7	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	7	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	7	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	7	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	7	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0002235702072647316	0	47
+T cell	20	7	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	34
+T cell	20	7	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001498416825377046	7	490
+T cell	20	7	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00214139257246157	31	702
+T cell	20	8	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002330749084503778	2	15
+T cell	20	8	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006713669111442851	0	0
+T cell	20	8	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	8	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	8	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	8	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	8	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	8	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003204109473158576	3	47
+T cell	20	8	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004091443810949729	0	34
+T cell	20	8	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.012236571214673406	154	490
+T cell	20	8	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016453574525399884	17	702
+T cell	20	9	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002626970227670753	0	15
+T cell	20	9	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	9	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	9	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	9	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	9	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	9	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	20	9	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00594896159385532	46	47
+T cell	20	9	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	34
+T cell	20	9	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006404099279738767	18	490
+T cell	20	9	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0031879067835735167	38	702
+T cell	20	10	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002139006271420894	0	15
+T cell	20	10	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	10	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	10	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	10	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	10	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	10	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0011718372131037651	0	31
+T cell	20	10	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003984876682397627	1	47
+T cell	20	10	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00039733787178147247	1	34
+T cell	20	10	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0009177716670661067	37	490
+T cell	20	10	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0027754274613864933	14	702
+T cell	20	11	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0021356119275009354	2	15
+T cell	20	11	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	11	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007072931730202169	1	5
+T cell	20	11	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	11	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	11	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	11	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	20	11	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	47
+T cell	20	11	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	34
+T cell	20	11	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	15	490
+T cell	20	11	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001994019928270948	15	702
+T cell	20	12	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002216885957128464	0	15
+T cell	20	12	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	12	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	12	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	12	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	12	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	12	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00513950142685314	31	31
+T cell	20	12	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006132211341404075	2	47
+T cell	20	12	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00029200402464391235	1	34
+T cell	20	12	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018824162950646208	38	490
+T cell	20	12	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0033278893927447825	32	702
+T cell	20	13	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002958586355927567	2	15
+T cell	20	13	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	13	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	13	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	13	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	13	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	13	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	31
+T cell	20	13	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005364535200212683	3	47
+T cell	20	13	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0008275864588134761	1	34
+T cell	20	13	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006142070867322976	23	490
+T cell	20	13	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002407235464864081	39	702
+T cell	20	14	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0017138073839104767	0	15
+T cell	20	14	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	14	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	14	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	14	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	14	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	14	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	20	14	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	47
+T cell	20	14	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	34
+T cell	20	14	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00045250628310397617	15	490
+T cell	20	14	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0024708178015548105	26	702
+T cell	20	15	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002113819120420927	0	15
+T cell	20	15	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	15	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	15	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007501892356567815	3	3
+T cell	20	15	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	15	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	15	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	3	31
+T cell	20	15	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007020893904301976	3	47
+T cell	20	15	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	4	34
+T cell	20	15	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.000671591672263264	24	490
+T cell	20	15	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001997004991016967	20	702
+T cell	20	16	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018283624967354401	1	15
+T cell	20	16	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	16	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	5
+T cell	20	16	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	16	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	16	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	16	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	20	16	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00031583107962359616	2	47
+T cell	20	16	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	34
+T cell	20	16	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006627746408104034	14	490
+T cell	20	16	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0026607390807050404	22	702
+T cell	20	17	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018162410078587225	1	15
+T cell	20	17	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	17	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	17	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	17	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	17	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	17	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	31
+T cell	20	17	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00027819201346712447	2	47
+T cell	20	17	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	34
+T cell	20	17	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007930219102960783	14	490
+T cell	20	17	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0021714242610203615	25	702
+T cell	20	18	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002151025407258561	2	15
+T cell	20	18	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0002891115524262302	0	0
+T cell	20	18	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00044335259797748734	4	5
+T cell	20	18	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	18	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	18	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	18	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	4	31
+T cell	20	18	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007985641469090195	5	47
+T cell	20	18	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004106778951231536	5	34
+T cell	20	18	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0016603117279197317	39	490
+T cell	20	18	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003593916497142304	36	702
+T cell	20	19	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0021050611865800744	1	15
+T cell	20	19	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	19	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	19	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	19	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	19	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	19	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	31
+T cell	20	19	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00038287173291336884	1	47
+T cell	20	19	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	4	34
+T cell	20	19	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0009549810279532423	26	490
+T cell	20	19	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0032605931536686616	41	702
+T cell	20	20	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0017141470831536897	0	15
+T cell	20	20	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	20	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	5
+T cell	20	20	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	3
+T cell	20	20	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	20	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+T cell	20	20	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	31
+T cell	20	20	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	47
+T cell	20	20	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	34
+T cell	20	20	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00037623039228175663	11	490
+T cell	20	20	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003478900185467385	48	702
+Macrophage	10	1	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	1	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0042279668480922385	1	1548
+Macrophage	10	1	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	1	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	10	1	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	1	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	1	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	1	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	8.738301094088282e-05	0	167
+Macrophage	10	1	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	1	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	1	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.010706102239225952	161	1012
+Macrophage	10	2	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	2	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0121762410231551	214	1548
+Macrophage	10	2	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	2	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	10	2	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	2	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	2	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	2	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0008873813117653219	9	167
+Macrophage	10	2	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	2	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	2	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00423562297317154	31	1012
+Macrophage	10	3	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	3	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.009249396768836158	124	1548
+Macrophage	10	3	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	3	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	10	3	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	3	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	3	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	3	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00031394063780114536	2	167
+Macrophage	10	3	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	3	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	3	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0011984583896874888	1	1012
+Macrophage	10	4	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	4	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006047591390003984	36	1548
+Macrophage	10	4	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	4	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	10	4	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	4	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	4	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	4	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006215564127999959	8	167
+Macrophage	10	4	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	4	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	4	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0019794552587352222	23	1012
+Macrophage	10	5	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	5	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006225013110667657	74	1548
+Macrophage	10	5	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0004994350417739913	0	0
+Macrophage	10	5	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	10	5	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	5	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	5	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	4
+Macrophage	10	5	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007591052295580307	12	167
+Macrophage	10	5	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	5	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	5	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004356962870249274	49	1012
+Macrophage	10	6	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	6	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006131644415776337	29	1548
+Macrophage	10	6	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	6	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	10	6	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	6	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	6	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018125328527446123	4	4
+Macrophage	10	6	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006222880323548265	11	167
+Macrophage	10	6	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	6	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	6	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004251874563690973	39	1012
+Macrophage	10	7	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	7	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004734107086294174	10	1548
+Macrophage	10	7	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	7	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	10	7	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	7	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	7	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	7	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0002278847868277047	4	167
+Macrophage	10	7	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	7	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	7	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003355917862123269	41	1012
+Macrophage	10	8	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	8	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006396789748024979	52	1548
+Macrophage	10	8	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	5.6317059212656645e-05	0	0
+Macrophage	10	8	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006276701194038788	15	15
+Macrophage	10	8	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	8	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	8	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	8	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0020055770055770056	34	167
+Macrophage	10	8	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	8	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	8	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003161645919397262	48	1012
+Macrophage	10	9	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	9	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004568384017308292	23	1548
+Macrophage	10	9	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	9	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	15
+Macrophage	10	9	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	10	9	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	9	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	9	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0002407965477904032	4	167
+Macrophage	10	9	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	9	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	9	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004709416974261239	73	1012
+Macrophage	10	10	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	10	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006178120566476448	49	1548
+Macrophage	10	10	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00014174357817432504	0	0
+Macrophage	10	10	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	3	15
+Macrophage	10	10	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	1
+Macrophage	10	10	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	10	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	10	10	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001192119373821371	49	167
+Macrophage	10	10	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	10	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	10	10	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0030038090855638213	48	1012
+Macrophage	15	1	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	1	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.008883192652492908	117	1548
+Macrophage	15	1	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	1	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	1	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	1	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	1	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	1	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003470867666258016	2	167
+Macrophage	15	1	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	1	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	1	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0013306444037144136	1	1012
+Macrophage	15	2	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	2	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006003078219856563	6	1548
+Macrophage	15	2	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	2	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	2	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	2	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	2	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	2	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00021052027924865232	0	167
+Macrophage	15	2	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	2	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	2	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006482135628546109	96	1012
+Macrophage	15	3	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	3	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.008638104229723453	119	1548
+Macrophage	15	3	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	3	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	3	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	3	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	3	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	3	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00037344879808131487	0	167
+Macrophage	15	3	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	4.4707067695425055e-05	0	0
+Macrophage	15	3	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	3	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0036116210943604723	19	1012
+Macrophage	15	4	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	4	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006283946583901662	45	1548
+Macrophage	15	4	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	4	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	4	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	4	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	4	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	4	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006368510715110195	6	167
+Macrophage	15	4	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	4	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	4	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.001963397458225659	20	1012
+Macrophage	15	5	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	5	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.011085470830154705	179	1548
+Macrophage	15	5	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	5	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	5	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	5	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	5	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	5	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0046898288723903675	61	167
+Macrophage	15	5	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	5	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	5	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005402671806882518	66	1012
+Macrophage	15	6	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	6	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004476241858655171	9	1548
+Macrophage	15	6	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	6	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	6	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	6	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	6	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	6	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	5.3137348879655007e-05	2	167
+Macrophage	15	6	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	6	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	6	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.010802304914215362	159	1012
+Macrophage	15	7	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00045442580211822265	0	0
+Macrophage	15	7	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0053963448647263886	39	1548
+Macrophage	15	7	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	7	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	7	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	7	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	7	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	7	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005367700446011824	6	167
+Macrophage	15	7	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	7	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003418225498133632	0	0
+Macrophage	15	7	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004036846986719323	33	1012
+Macrophage	15	8	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	8	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0060779686938092405	29	1548
+Macrophage	15	8	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	8	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	8	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	8	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	8	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018135513775422083	4	4
+Macrophage	15	8	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006110322682377901	11	167
+Macrophage	15	8	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	8	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	8	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004230416560832555	39	1012
+Macrophage	15	9	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	9	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005990504676034653	58	1548
+Macrophage	15	9	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006091994121401956	0	0
+Macrophage	15	9	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	15
+Macrophage	15	9	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	9	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	9	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	4
+Macrophage	15	9	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007957463968261303	7	167
+Macrophage	15	9	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	9	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	9	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00349487494340778	39	1012
+Macrophage	15	10	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	10	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004565749375837831	14	1548
+Macrophage	15	10	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	10	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	15
+Macrophage	15	10	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	10	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	10	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	10	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00021759839926743568	4	167
+Macrophage	15	10	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	10	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	10	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0037945362091324824	62	1012
+Macrophage	15	11	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	11	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0061125463965171906	48	1548
+Macrophage	15	11	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	11	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006093881423688154	15	15
+Macrophage	15	11	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	11	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	11	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	11	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0014349115014942776	13	167
+Macrophage	15	11	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	11	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	11	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00295396818950596	45	1012
+Macrophage	15	12	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	12	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006447040181883364	84	1548
+Macrophage	15	12	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	12	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	12	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	12	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	12	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	4
+Macrophage	15	12	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.000524731779664692	8	167
+Macrophage	15	12	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	12	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	12	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003756456501480181	36	1012
+Macrophage	15	13	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	13	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006279020841167476	49	1548
+Macrophage	15	13	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00014040806239752035	0	0
+Macrophage	15	13	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	4	15
+Macrophage	15	13	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	1
+Macrophage	15	13	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	13	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	13	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0013314952167192656	45	167
+Macrophage	15	13	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	13	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	13	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0029829097333020508	47	1012
+Macrophage	15	14	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	14	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005014897198971546	39	1548
+Macrophage	15	14	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	14	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	15	14	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	14	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	14	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	14	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003653195559266472	7	167
+Macrophage	15	14	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	14	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	14	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0046364131389683965	79	1012
+Macrophage	15	15	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	15	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0045485459097693685	27	1548
+Macrophage	15	15	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	15	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	15
+Macrophage	15	15	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	15	15	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	15	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	15	15	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003164400902884359	5	167
+Macrophage	15	15	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	15	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	15	15	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003556803213973467	58	1012
+Macrophage	20	1	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	1	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.008994573114836259	126	1548
+Macrophage	20	1	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	1	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	1	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	1	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	1	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	1	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003675885408038819	0	167
+Macrophage	20	1	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	6.40027104893207e-05	0	0
+Macrophage	20	1	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	1	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0033107253036226457	16	1012
+Macrophage	20	2	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	2	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.008258488186045375	96	1548
+Macrophage	20	2	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	2	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	2	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	2	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	2	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	2	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00028899518366414325	1	167
+Macrophage	20	2	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	2	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	2	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0012029472237128505	1	1012
+Macrophage	20	3	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	3	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006003078219856563	6	1548
+Macrophage	20	3	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	3	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	3	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	3	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	3	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	3	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00021314058979526282	0	167
+Macrophage	20	3	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	3	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	3	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006374094215587146	99	1012
+Macrophage	20	4	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	4	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.010863461006299546	174	1548
+Macrophage	20	4	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	4	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	4	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	4	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	4	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	4	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004452085480041217	58	167
+Macrophage	20	4	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	4	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	4	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005372606176367874	68	1012
+Macrophage	20	5	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	5	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0044324938594678	7	1548
+Macrophage	20	5	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	5	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	5	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	5	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	5	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	5	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	6.624544256997114e-05	2	167
+Macrophage	20	5	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	5	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	5	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.010973423469011822	162	1012
+Macrophage	20	6	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	6	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0075292927879263526	81	1548
+Macrophage	20	6	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	6	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	6	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	6	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	6	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	6	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0011047377092580075	18	167
+Macrophage	20	6	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	6	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	6	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002371104936587068	11	1012
+Macrophage	20	7	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	7	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00617824646388729	47	1548
+Macrophage	20	7	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	7	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	7	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	7	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	7	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	7	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00046227335490145986	1	167
+Macrophage	20	7	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	7	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	7	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0022443282752561103	31	1012
+Macrophage	20	8	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	8	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005782908984611654	39	1548
+Macrophage	20	8	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006691207811140044	0	0
+Macrophage	20	8	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	15
+Macrophage	20	8	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	8	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	8	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	8	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007416186369835892	28	167
+Macrophage	20	8	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	8	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	8	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.002023925716806894	14	1012
+Macrophage	20	9	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00047530297593334795	0	0
+Macrophage	20	9	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0056549503148667895	40	1548
+Macrophage	20	9	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	9	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	9	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	9	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	9	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	9	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005092951717909995	6	167
+Macrophage	20	9	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	9	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00039963186974441425	0	0
+Macrophage	20	9	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004553287981859411	38	1012
+Macrophage	20	10	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	10	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006131644415776337	29	1548
+Macrophage	20	10	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	10	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	10	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	10	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	10	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0018150808396891966	4	4
+Macrophage	20	10	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006190807327573388	12	167
+Macrophage	20	10	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	10	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	10	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004271620006371766	40	1012
+Macrophage	20	11	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	11	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0048161106271041015	16	1548
+Macrophage	20	11	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	11	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	11	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	11	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	9.050804958576577e-05	0	0
+Macrophage	20	11	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	11	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0001602795673318683	4	167
+Macrophage	20	11	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	11	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	11	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004682292409169385	79	1012
+Macrophage	20	12	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	12	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.008338280285668694	100	1548
+Macrophage	20	12	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0002688113775743178	0	0
+Macrophage	20	12	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	2	15
+Macrophage	20	12	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	12	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	12	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	4
+Macrophage	20	12	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0009269272583344694	1	167
+Macrophage	20	12	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	12	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	12	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005462549651213899	66	1012
+Macrophage	20	13	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	13	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006396789748024979	51	1548
+Macrophage	20	13	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	13	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0006093881423688154	15	15
+Macrophage	20	13	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	13	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	13	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	13	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0014947716507283941	11	167
+Macrophage	20	13	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	13	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	13	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0027962022437841116	44	1012
+Macrophage	20	14	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	14	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0049577113253947026	35	1548
+Macrophage	20	14	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	14	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	15
+Macrophage	20	14	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	14	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	14	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	14	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0003410095464067187	6	167
+Macrophage	20	14	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	14	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	14	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0038764272255038946	57	1012
+Macrophage	20	15	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	15	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006431678974037385	57	1548
+Macrophage	20	15	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	15	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	9	15
+Macrophage	20	15	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	15	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	15	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	4
+Macrophage	20	15	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0007890678437062273	19	167
+Macrophage	20	15	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	15	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	15	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003151219171904734	47	1012
+Macrophage	20	16	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	16	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.005114579338280083	42	1548
+Macrophage	20	16	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	16	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	15
+Macrophage	20	16	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	16	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	16	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	16	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00040690754071927564	8	167
+Macrophage	20	16	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	16	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	16	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004626240091386761	81	1012
+Macrophage	20	17	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	17	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.006643140803589752	71	1548
+Macrophage	20	17	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	17	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	15
+Macrophage	20	17	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	17	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	17	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	17	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005144315902036603	9	167
+Macrophage	20	17	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	17	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	17	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0031447893711830533	34	1012
+Macrophage	20	18	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	18	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0062496026813350656	59	1548
+Macrophage	20	18	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	18	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	5	15
+Macrophage	20	18	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	1
+Macrophage	20	18	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	18	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	18	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0008426010375789886	31	167
+Macrophage	20	18	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	18	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	18	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.003486374575598214	63	1012
+Macrophage	20	19	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	19	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0045485459097693685	29	1548
+Macrophage	20	19	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	19	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	3	15
+Macrophage	20	19	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	19	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	19	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	4
+Macrophage	20	19	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.00028964523932289207	4	167
+Macrophage	20	19	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	19	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	19	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0037434029237307927	62	1012
+Macrophage	20	20	T_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	20	Myeloid_core	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.008442371003412545	109	1548
+Macrophage	20	20	epithelial_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	20	stromal_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	15
+Macrophage	20	20	mural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	1
+Macrophage	20	20	neural_RNA	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	20	G2M	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	1	4
+Macrophage	20	20	IFN_like	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0005093762578792519	3	167
+Macrophage	20	20	Treg_related	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	20	cytotoxic	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.0	0	0
+Macrophage	20	20	heatshock	300	top5pct_normalized_usage_diagnostic_not_state_threshold	0.004682307766993332	46	1012
