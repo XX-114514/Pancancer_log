@@ -1,0 +1,36 @@
+{
+  "observed_utc": "2026-10-14T04:30:11.339540+00:00",
+  "stage": "packing_complete_native_genes",
+  "n_target_cells": 2670057,
+  "n_features": 49563,
+  "written_X_rows": 1148864,
+  "completed_sources": [
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE286827",
+      "n_output_cells": 375019
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE256326",
+      "n_output_cells": 397471
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE294109",
+      "n_output_cells": 527714
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE292046",
+      "n_output_cells": 580239
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "n_output_cells": 976832
+    }
+  ],
+  "technical_authority_released": false,
+  "whole_row_audit_not_yet_completed": true
+}
