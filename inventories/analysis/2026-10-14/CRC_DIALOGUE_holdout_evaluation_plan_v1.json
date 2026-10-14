@@ -1,0 +1,19 @@
+{
+  "created_UTC": "2026-10-14T01:18:58.221076+00:00",
+  "question": "Do discovery-frozen cell-type gene programmes co-vary in12 heldout CRC source-patient blocks beyond percell RNA/gene quality?",
+  "training_allowed": "26 discovery patients only; no refit PCA/gene choice/weights/quality regression using holdout",
+  "score": "training gene means/sampleSD, signed official NNLS weights; training score~cellQ+geneQ residual coefficients applied unchanged to holdout; parity with every saved discovery score required",
+  "primary": "Spearman of matched source-patient mean scores across the two frozen identities",
+  "null": "20000 random receiver patient-label permutations within this single fixed unsorted primary CRC context, two-sided abs rho; seed20261014; p=(1+extreme)/(20001)",
+  "interval": "2000 paired patient bootstrap with seed20261014, report undefined constant draws and retain uncertainty",
+  "family": "2 predeclared MCP slots; unsupported or unscorable MCP p=1 inside BH only, public p/q missing",
+  "sensitivity": "Pearson as descriptive effect; leave-one-patient Spearman; abundance-adjusted partial Spearman controlling both original fine/major fractions with fullrank check, report only effect/no second significance family",
+  "gene_interpretation": "learned discovery signatures gene names/NNLS active gene counts; external pathway relevance after effect assessment; no clinical/holdout gene selection",
+  "limits": [
+    "already used original CM source; relative heldout only for newMCP training",
+    "same12 patients across endpoints; do not count1170 cells asindependent",
+    "sample permutation assumes exchangeable patient pairing; clinical stage/sorting/otherunmeasured influences remain",
+    "continuous expression co-ordination, not directLR causal mechanism orformalstates",
+    "original9CM/clinical/external spatial objectives still required"
+  ]
+}

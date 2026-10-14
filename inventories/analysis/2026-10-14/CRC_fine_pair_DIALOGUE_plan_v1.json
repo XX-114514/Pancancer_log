@@ -1,0 +1,40 @@
+{
+  "schema": "CRC_original_pair_DIALOGUE_discovery_v1",
+  "created_UTC": "2026-10-14T01:08:42.822083+00:00",
+  "source": "GSE178341",
+  "scope": "original_unsorted_primary_context_MAJ158",
+  "pair_id": "PAIR015",
+  "CM": [
+    "CM01",
+    "CM03"
+  ],
+  "labels": [
+    "CD8_T_cell_NKG7_9",
+    "Macrophage_IFI6_18"
+  ],
+  "cell_type_names": [
+    "Tnode9",
+    "Macnode18"
+  ],
+  "seed": 20261014,
+  "max_cells_per_patient_type": 50,
+  "source_patient_blocks": 38,
+  "discovery_patient_blocks": 26,
+  "holdout_patient_blocks": 12,
+  "library_selection": "lexicographic first eligible original library per source-patient; metadata/capture only; original counts never merged",
+  "split": "seeded random patient blocks before expression; no outcome use",
+  "gene_candidate_filter": ">=1% discovery cells, exclude MT-/RPL/RPS; preserve all LR genes",
+  "PCA": "type-specific top2000 discovery logCP10K variance,20PC,randomized fixedseed; transform holdout with frozen model",
+  "DIALOGUE": "official pinned9c146cc, k2, abn.c20, n.genes200,quality conf cellQ/geneQ; default empirical PMD, no parameter/p-driven changes",
+  "limits": [
+    "post-result exploration in already used original CM discovery source",
+    "holdout only relative to new MCP fitting, not independent project validation",
+    "gene programmes not direct LR/receptor causal mechanisms",
+    "source counts/identity/state/9CM remain unchanged",
+    "all9CM/otherlineages/clinical/spatial remain pending objective"
+  ],
+  "precondition": "all240533 raw counts and keys full readback PASS; input1 summary failure retained",
+  "producer_sha256": "56a822d2d4aaa429c1383a23e9a6b2aec4fc5623752719c5f819d7744b2d621a",
+  "R_runner_sha256": "e8d28a10a65762518bd5cb6b1be3d7bbd0e77116de4a0ac9db4a65af622cf3f9",
+  "runtime_bootstrap_sha256": "9e8252f129296dc0ba1dfac89b0fe3232368ca646b740e08ba20246de7e1f1f4"
+}
