@@ -1,0 +1,13 @@
+{
+  "schema": "all_CM_state_input_preflight_v1",
+  "frozen_UTC": "2026-10-14T03:45:21.383967+00:00",
+  "producer_sha256": "cdd654e3ddc9f38ed6edcb5ac73db610e330af311bfb45595c5aa6b261cc4c7c",
+  "scope": "All original1290 CoVarNet samples and frozen172 nodes; metadata and exact canonical row selection only, no expression duplicate/annotation changes",
+  "input_contract": "Authoritative canonical obs sample_uid/expression_v1_node_id; current sample-major-subcluster counts/dictionary; original native units/gene axes and1290 provenance roster. Record all input SHA before read; enforce all count keys and row marginals exact.",
+  "selection": "All in frozen sample/node scope, including non-main-analysis classes; inference eligibility stays separate, no source/cancer/fine-node collapse",
+  "outputs": "Private canonical global rows/unit indices and block/sample-node table; public source-major scope counts/gene axes hashes",
+  "resource": "No new RNA download; bounded metadata/row arrays less than0.2GiB; plan discovery balancing/streaming native UCell afterwards to avoid copying millions of fullgene matrices",
+  "formal_state_labels": false,
+  "all9CM_mapping_done": false,
+  "next": "Audit full scope, source/native-axis/cell-count feasibility; build missing-lineage discovery and scores, preserve uncertain labels and distinct cell states"
+}
