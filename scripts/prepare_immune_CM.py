@@ -14,6 +14,21 @@ from immune_atlas_io import save_json_new
 def truth(values):return values.astype(str).str.lower().isin(['true','1'])
 
 
+def material_classes(obs):
+    """Conservative source-material grouping; generic LN is not a metastasis."""
+    tissue=obs.tissue.fillna('').astype(str).str.lower().str.strip()
+    capture=obs.capture_scope.fillna('').astype(str)
+    material=pd.Series('unknown_material',index=obs.index)
+    whole=capture.str.contains('whole_tumor|serial_tumor',regex=True)
+    material.loc[whole|tissue.isin(['tumor','glioblastoma tumor','primary tumor','primary tumor (multiple regions)'])]='primary_tumor'
+    material.loc[tissue.str.contains('metastas',regex=False)]='metastatic_tumor'
+    material.loc[tissue.isin(['ln','lymph_node','lymph node'])]='lymph_node_involvement_unknown'
+    material.loc[tissue.str.contains('normal|adjacent',regex=True)]='normal_adjacent'
+    material.loc[tissue.str.contains('blood|pbmc',regex=True)]='blood'
+    material.loc[obs.analysis_role.astype(str).eq('CAR_product')]='infusion_product'
+    return material
+
+
 def prepare(args):
     obs=read_elem(zarr.open_group(str(args.scratch/'immune_refined.zarr'),mode='r')['obs'])
     eligible=truth(obs.CM_composition_eligible)&~truth(obs.annotation_exclude_from_primary)&~truth(obs.ex_vivo_stimulation)&~obs.major.astype(str).isin(['Unresolved','T_NK_boundary'])
@@ -23,6 +38,21 @@ def prepare(args):
                 immune_enriched=eligible&~car&capture.str.contains('CD45_enriched|lymphocyte_enriched|T_enriched'),
                 CAR_product=eligible&car,
                 T_lineage_biopsy=eligible&~car&obs.major.astype(str).eq('T'))
+    mode=getattr(args,'scope_mode','broad')
+    material=material_classes(obs)
+    if mode=='material':
+        scopes={}
+        capture_families={
+            'whole_TME':~car&capture.str.contains('whole_tumor|serial_tumor'),
+            'immune_enriched':~car&capture.str.contains('CD45_enriched|lymphocyte_enriched|T_enriched'),
+            'mixed_enriched_nuclei':~car&capture.eq('mixed_tumor_nuclei_NFAT_enrichment')}
+        for family,family_mask in capture_families.items():
+            for label in ['primary_tumor','metastatic_tumor','blood','normal_adjacent','lymph_node_involvement_unknown','unknown_material']:
+                selected=eligible&family_mask&material.eq(label)
+                if not selected.any():continue
+                scopes[family+'_'+label]=selected
+                if family!='mixed_enriched_nuclei':
+                    scopes['T_'+family+'_'+label]=selected&obs.major.astype(str).eq('T')
     reports=[]
     for name,mask in scopes.items():
         frame=obs.loc[mask].copy();folder=args.run/'CM'/name/'inputs';folder.mkdir(parents=True,exist_ok=False,mode=0o700)
@@ -56,9 +86,13 @@ def prepare(args):
                 patient_verified=verified,n_cells=len(group),
                 cancer_type='|'.join(sorted(group.cancer_type.astype(str).unique())),
                 capture_scope='|'.join(sorted(group.capture_scope.astype(str).unique())),
+                material_class='|'.join(sorted(material.loc[group.index].unique())),
+                original_tissue='|'.join(sorted(group.tissue.fillna('').astype(str).unique())),
                 n_original_libraries=group.sampleID.nunique(),
                 timepoint='|'.join(sorted(group.timepoint.astype(str).unique()))))
-        meta=pd.DataFrame(metadata,columns=['sampleID','dataset','patient_block','independent_unit','patient_verified','n_cells','cancer_type','capture_scope','n_original_libraries','timepoint'])
+        meta=pd.DataFrame(metadata,columns=['sampleID','dataset','patient_block','independent_unit','patient_verified','n_cells','cancer_type','capture_scope','material_class','original_tissue','n_original_libraries','timepoint'])
+        if mode=='material' and meta.material_class.str.contains('|',regex=False).any():
+            raise ValueError('Composition library crosses material classes')
         export=frequency.copy();export.insert(0,'majorCluster',major_map)
         export.to_csv(folder/'frequency_private.tsv',sep='\t',index_label='subCluster')
         meta.to_csv(folder/'sample_metadata_private.tsv',sep='\t',index=False)
@@ -72,13 +106,19 @@ def prepare(args):
                 measured_major_min_cells=20,total_unit_min_cells=100,major_unit_coverage_min=.8,
                 ready=bool(frequency.shape[0]>=4 and frequency.shape[1]>=12 and meta.independent_unit.nunique()>=8),
                 interpretation='discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests',
+                scope_mode=mode,material_classes=sorted(material.loc[frame.index].unique()),
+                material_mixed=len(material.loc[frame.index].unique())>1,
+                composition_capture_bias_not_removed=True,
+                longitudinal_patient_mean_is_not_response_or_timepoint_test=True,
                 ex_vivo_excluded=True,selectively_retained_compiled_exports_excluded=True)
         reports.append(report);save_json_new(folder/'input_scope_public.json',report)
-    save_json_new(args.run/'manifests/CM_preparation_public.json',dict(observed_utc=datetime.now(timezone.utc).isoformat(),scopes=reports,
+    name='CM_material_preparation_public.json' if mode=='material' else 'CM_preparation_public.json'
+    save_json_new(args.run/'manifests'/name,dict(observed_utc=datetime.now(timezone.utc).isoformat(),scopes=reports,
                    fixed_P3_9CM_projection_completed=False,new_CM_discovery_not_validation_of_retrained_W=True))
     print(json.dumps(reports),flush=True)
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True);p.add_argument('--scratch',type=Path,required=True)
+    p.add_argument('--scope-mode',choices=['broad','material'],default='broad')
     prepare(p.parse_args())
