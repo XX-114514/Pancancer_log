@@ -32,3 +32,5 @@
 - 15:52 UTC / 23:52 UTC+8健康取证：驱动74376/子进程74379仍运行，GSE169246329,728/489,360原生块已处理；生产全量整合未完成。后续阶段由已部署的验收执行链继续，正式权威发布pending。
 
 - 全量真实模型已完成：[报告](../inventories/runtime/2026-10-14/immune_atlas_v1/integration_integrate_public.json)，2,670,057×22,351、12粗聚类。注释loess失败保留；00:41:42 UTC / 08:41:42 UTC+8恢复PID382735，真实[HVG检查](../inventories/runtime/2026-10-14/immune_atlas_v1/HVG_recovery_API_v5_public.json)通过。
+
+- 00:49 UTC / 08:49 UTC+8生产谱系检查点：B16、Endothelial15、Epithelial33、Erythroid13群，397,121细胞；Fibroblast在处理。仅部分注释，正式CNV/CM/最终权威pending，目标active。

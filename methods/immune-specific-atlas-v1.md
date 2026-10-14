@@ -9,7 +9,7 @@
 | GSE286827 | 375,019 | HNSCC完整肿瘤；ICI前后，患者疗效未补推 |
 | GSE256326 | 22,452 | RMC完整肿瘤；未治与治疗后，患者映射待核验 |
 | GSE294109 | 130,243 | ccRCC；ICI/TKI/联合/未治方案分别保留 |
-| GSE292046 | 52,525 | 疫苗研究、T富集snRNA；不能代表完整肿瘤组成 |
+| GSE292046 | 52,525 | 疫苗研究、宽松肿瘤核门加严格T富集核；含肿瘤/脑实质，组成偏倚保留 |
 | CAR-T产品来源 | 396,593 | 输注产品独立分支，原生3月R/NR不当RECIST |
 | GSE169246 | 489,360 | TNBC CD45富集；ICI+化疗及化疗对照，作者PR/SD/PD |
 | GSE176021 | 868,494 | NSCLC淋巴细胞富集；组织、血液、正常、离体抗原刺激分别标记 |
@@ -32,7 +32,7 @@ scRNA/snRNA与技术材料保留区别；未测到线粒体基因不是线粒体
 - 原生count层选3,000批次感知HVG；来源平衡PCA拟合最多250,000细胞，50PC，全细胞投影。
 - Harmony处理PCA坐标，batch为研究、theta1，治疗结局不参与。X与原生count不改成校正潜变量。
 - 全量邻接图及粗Leiden；百万规模UMAP最多100,000来源平衡细胞拟合，再给所有细胞transform坐标。拟合范围记录在对象中，显示抽样不替代全量档案。
-- 大类内重新选HVG、PCA、Harmony与邻接图，再细分；不只拆全局图。
+- 大类内重新选HVG、PCA、Harmony与邻接图，再细分；小谱系/小来源采用既有稳健dispersion/qcut，明确实际表示及恢复原因；不只拆全局图。
 - NumBa最大线程16匹配Scanpy/PyNNDescent近邻线程16，BLAS/OMP8。5,400真实细胞pilot及12,000模拟坐标的强制大样本后端检查分别记录。
 
 ## 注释与状态
@@ -47,7 +47,7 @@ scRNA/snRNA与技术材料保留区别；未测到线粒体基因不是线粒体
 
 原文库原生integer counts与同文库参考，经现有`malignant_inference`核心和hg38 gencode v27常染色体位置推断。候选≥50、参考≥50；排除残留doublet及原作者肿瘤提示细胞作为参考。
 
-本版本使用单infercnvpy聚类支持，CopyKAT没有启动，不当双方法gold。结果分`CNV_supported_malignant`、`CNV_uncertain`、`CNV_negative_candidate`、谱系参考和未评估；跳过/失败不写成正常或0分。T富集和产品分支不假称完整肿瘤阴性。正式库级方法失败在发布前复核。
+本版本使用单infercnvpy聚类支持，CopyKAT没有启动，不当双方法gold。结果分`CNV_supported_malignant`、`CNV_uncertain`、`CNV_negative_candidate`、谱系参考和未评估；跳过/失败不写成正常或0分。免疫富集和产品分支不假称完整肿瘤阴性。GSE292046混合门包含肿瘤/脑实质，Glial/Neuron/Oligodendrocyte和未决谱系评估候选；未决身份不因此强行改成肿瘤。正式库级方法失败在发布前复核。
 
 ## CM
 
