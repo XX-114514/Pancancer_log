@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-10-14T03:07:44.070324+00:00",
+  "status": "controlled_stop_and_scientific_quarantine_before_release",
+  "reason": "integer_raw_counts_passed_to_infercnvpy_log_space_algorithm_without_sample_normalization",
+  "original_core_sha256": "96495a5d7733ef31f080b1ac384db4d56f80503d901b85319a05e61522ec8bfc",
+  "old_CNV_outputs_preserved": true,
+  "old_method_success_not_scientific_acceptance": true,
+  "integration_annotation_marker_CM_unchanged": true,
+  "final_authority_not_released": true,
+  "corrected_method": "same_original_library_native_raw_counts_to_log1p_CP10K;raw_count_layer_preserved"
+}

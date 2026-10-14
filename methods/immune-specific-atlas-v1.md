@@ -45,7 +45,7 @@ scRNA/snRNA与技术材料保留区别；未测到线粒体基因不是线粒体
 
 ## 恶性细胞推断
 
-原文库原生integer counts与同文库参考，经现有`malignant_inference`核心和hg38 gencode v27常染色体位置推断。候选≥50、参考≥50；排除残留doublet及原作者肿瘤提示细胞作为参考。
+原文库保留原生integer counts，以完整原生RNA总量为分母在每库生成log1p CP10K独立层，再由最小纠正的`malignant_inference`核心和hg38 gencode v27常染色体位置推断。候选≥50、参考≥50；排除残留doublet及原作者肿瘤提示细胞作为参考。
 
 本版本使用单infercnvpy聚类支持，CopyKAT没有启动，不当双方法gold。结果分`CNV_supported_malignant`、`CNV_uncertain`、`CNV_negative_candidate`、谱系参考和未评估；跳过/失败不写成正常或0分。免疫富集和产品分支不假称完整肿瘤阴性。GSE292046混合门包含肿瘤/脑实质，Glial/Neuron/Oligodendrocyte和未决谱系评估候选；未决身份不因此强行改成肿瘤。正式库级方法失败在发布前复核。
 
@@ -74,3 +74,7 @@ NMF和网络在验证患者块平均后处理重复观测；患者未知的原�
 ## 真实来源留出门槛与恢复（2026-10-14）
 
 LOSO去掉唯一承载某节点的来源后会产生不可观测行。该范围标记无法估计并保存剩余块/不可观测节点数；不以补零、删除节点再比较完整W来制造稳定性。其余范围沿用相同nsNMF。旧完整主模型仅在细胞频率/患者键独立重计、rank规则与模型W/H行列数值一致时复用，新attempt保存失败历史。CM仍为候选发现，单marker包括性别/应激描述不能当身份或治疗机制。旧P3固定9CM需先通过节点映射/捕获门槛。最终Zarr内嵌子群目录及实际CM范围/节点成员，原生计数与复制审计条件不变。
+
+## 2026-10-14 CNV输入科学纠正
+
+原核心直接把integer counts当infercnvpy log-space输入，已隔离本轮旧结果；原skill保留counts的要求不等于省略infercnvpy所需的样本内归一化/log。[工具官方契约](https://infercnvpy.readthedocs.io/en/latest/infercnv.html)。新层从每原库原生计数独立生成，完整原生RNA分母与保留counts不改；全部表达逐项比较、原counts指纹及原库/细胞精确映射为门槛。AST还原检验只允许修改表达层及n_jobs，保留原恶性规则与诊断图。每库2推断进程、4库worker，离体刺激/CAR/纯免疫富集无肿瘤捕获不作正常。旧CNV program success不是科学验收；最终只纳入新logspace结果，CM身份与恶性证据继续分列。

@@ -232,3 +232,14 @@
 - 原生读取诊断PID22412启动后因母对象没有library_id字段退出，尚未缓存或重跑生物模型。正式物理文库在已注释对象中；v2按dataset+原生cellID逐行一致门槛取library_id，不猜字段、不改计数。另比较可用时连续row slice，判断能否不用额外缓存实现加速。
 - 生产CNV独立PID207866仍存活，已13库success。旧诊断失败保留，新快照包含完整依赖，40GB RAM峰值预算不变。Python语法PASS，真实性能/计数parity仍待。
 - 96667d6推送因独立Git签名连接超时失效待同步；源分析与代码已本地提交，恢复临时签名通道后普通push并核验。
+
+## 2026-10-14 03:01—03:19 UTC / 11:01—11:19 UTC+8：真实性能结果与CNV输入纠正
+
+- 读取实测03:01:24 UTC完成：首6576细胞原库raw读0.929秒、连续slice0.091秒、缓存0.0236秒，全库全部计数exact；源375019行缓存8.065秒、约5.85GB CSR、实际峰值17.7GiB RAM。读法无法解释每库数分钟，缓存不作为重启理由，不采用额外缓存。
+- 追查原核心与已安装infercnvpy源码发现：直接layer=counts整数输入，infercnvpy内部仅扣参考/clip/平滑，不做库深归一化与log。官方文档明确要求normalized/log-transformed输入（https://infercnvpy.readthedocs.io/en/latest/infercnv.html）。R inferCNV的raw counts入口不能套到infercnvpy。
+- 同时原核心没有n_jobs，已安装infercnvpy默认cpu_count（192核）建ProcessPool，每库只有少量chunk。新版本每库明确2进程、最多4原库工作进程，控制资源；旧方法窗口/阈值/聚类/小群合并/判定保留。
+- 03:07:44 UTC只停止原CNV207866与待发布323106；原整合/注释/marker/15CM保留、尚无最终权威发布。旧CNV产物隔离，method success仅程序成功不再视为科学验收；原独立进程组复查剩余0，未影响其他工作。
+- 新核心由原源码AST精确修改唯一infercnv call的表达层参数和进程数；还原这两处后AST必须完全同原文件，否则拒绝启动。原Project_v1核心/skill文件不写入；不将本轮纠正推断为历史P3标签已经验收。
+- 新wrapper保留integer counts，每原库用完整原生RNA总量为分母生成log1p CP10K的独立表达层，坐标筛选不重定义分母；所有表达非零逐项独立稀疏运算比较误差≤1e-6、原counts指纹前后不变。CNV在同原库参考内运行，与Harmony/整合X隔离。离体刺激加到无肿瘤捕获skip，skip始终不当正常。
+- 原raw输入的旧CNV不复用；新输出CNV_logspace_v1保留完整细胞映射、4shard原库分配及全400库合并门槛。先真实新input与首次core profile，再全范围；已完成CM不会重复训练，最终打包使用明确纠正后CNV路径。
+- 修复Python语法PASS，真实正确表达CNV/最终Zarr仍待验收；不以代码替代实际完成。de4f691普通push/HTTPS已核验；推送范围因共享main还包含并发74b4785匿名source/node/panel统计（非患者行、无矩阵），已核对字段与方法，不覆盖其文件。

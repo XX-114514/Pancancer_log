@@ -38,7 +38,7 @@ def capacity(path,group):
 def pack(args):
     config,sources,var,identities,diagnostics=load_contract(args.contract,['core','CAR_product'])
     model=ad.read_zarr(args.scratch/'immune_refined.zarr')
-    cnv=pd.read_csv(args.run/'tables/all_core_CNV_private.tsv.gz',sep='\t',index_col=0,keep_default_na=False)
+    cnv=pd.read_csv(args.CNV_results or args.run/'tables/all_core_CNV_private.tsv.gz',sep='\t',index_col=0,keep_default_na=False)
     if not cnv.index.is_unique or not cnv.index.equals(model.obs.index):raise ValueError('CNV cell mapping differs')
     if not np.array_equal(cnv.sampleID.astype(str),model.obs.sampleID.astype(str)):raise ValueError('CNV sample mapping differs')
     obs=model.obs.copy()
@@ -202,4 +202,5 @@ if __name__=='__main__':
     p.add_argument('--quota-group',required=True)
     p.add_argument('--CM-discovery-attempt',default='discovery_v1')
     p.add_argument('--CM-discovery-index',type=Path)
+    p.add_argument('--CNV-results',type=Path)
     pack(p.parse_args())

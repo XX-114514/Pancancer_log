@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-10-14T03:01:24.865283+00:00",
+  "dataset": "GSE286827",
+  "n_source_cells": 375019,
+  "n_source_genes": 35326,
+  "n_library_cells": 6576,
+  "source_cache_seconds": 8.06467416509986,
+  "original_library_read_seconds": 0.9292672160081565,
+  "cached_library_read_seconds": 0.02355589671060443,
+  "all_library_counts_exact": true,
+  "native_library_rows_contiguous": true,
+  "contiguous_slice_seconds": 0.09104265132918954,
+  "native_raw_counts_not_corrected": true,
+  "source_cache_estimated_bytes": 5850002656,
+  "maximum_process_RSS_KiB": 18517104,
+  "native_library_count_digest": "d8c9d6e4524fbda5585c5c6128f1842b47c1b444b1eeea5f3ef2be10eec24163",
+  "biological_inference_not_repeated": true
+}
