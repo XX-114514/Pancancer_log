@@ -5,3 +5,5 @@
 全部90cNMF候选/9000repeat配对/1300crossK/14355Spectra对照。官方Kstats明确无密度过滤，不与density0.5共识混写；两种gene-spectrum和absolute/normalized usage并列，原输入/outputs不得改。冻结探索repeat/crossK门槛只是程序候选稳定性，不是状态生物学/跨患者验证；不按clinical/LR p选K。所有K保留，其他谱系/原9CM/UCell/state-DIALOGUE/空间保持完整目标。
 
 2026-10-14T02:02:46.571061+00:00 /UTC+8 2026-10-14T10:02:46.571061+08:00代码审阅修正、尚未执行v1/v2：恒定score/零gene-vector数学不可估计不能显示0相关。新[v2计划](../inventories/analysis/2026-10-14/state_method_comparison_plan_v2.json)/v2新输出明确NaN及defined字段，全部范围/门槛保持，v1保留未运行；入口改`compare_state_cnmf_spectra_v2.py`。
+
+2026-10-14T02:12:29.693688+00:00 /UTC+8 2026-10-14T10:12:29.693688+08:00实际v2对照02:04:09—02:04:25 exit0、02:08:15独立复算PASS；68repeat稳定/57repeat及crossK支持，不等于57状态。稳定foreign-lineage程序触发同cell诊断。 [结果](../inventories/analysis/2026-10-14/state_method_comparison_v2/RESULTS.md)。

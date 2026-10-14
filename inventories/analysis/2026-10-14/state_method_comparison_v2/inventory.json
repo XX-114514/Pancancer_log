@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE_ALL_K_METHOD_COMPARISON_PENDING_STATE_DICTIONARY",
+  "started_UTC": "2026-10-14T02:04:11.397048+00:00",
+  "finished_UTC": "2026-10-14T02:04:25.103052+00:00",
+  "producer_sha256": "24019df6814d1a62f43a36368d5480578be90310866e63f91a15812e42da48f1",
+  "plan_sha256": "be545cb0b788d886976389bbe796da9978624d63bb1cef1d0dc9208486c42143",
+  "cnmf_inventory_sha256": "b75502883621dfae11e085eaf14b9035a53831f948fce6b17dd1d57de97c8b2c",
+  "Spectra_inventory_sha256": "1fa8f1085c1de491fe228b07612e546e15b112c2195fa6b5f129351833447d96",
+  "candidates": 90,
+  "repeat_stable_candidates": 68,
+  "crossK_supported_candidates": 69,
+  "repeat_and_crossK_candidates": 57,
+  "cNMF_stats_unfiltered": true,
+  "original_fit_outputs_unchanged": true,
+  "formal_state_labels": false,
+  "UCell_complete": false,
+  "clinical_or_LR_p_selected": false,
+  "output_sha256": {
+    "all90_cnmf_candidates.tsv": "9061e12bdccbfbd045590b9df0bb724e5f010e1a863c371d02c7eaec902deb74",
+    "all9000_repetition_matches.tsv": "270f1a42b922d612e0a37f8433b02754e545d68a98beb48fc2aeab6e19bc533b",
+    "all14355_Spectra_cnmf_comparisons.tsv": "ab596e81306d07a352b628f52f08715f6b2bb53514a8e09e868d18f28182af12",
+    "all1300_crossK_comparisons.tsv": "84210a5cc71bb619e85f171600f707bfeef43f8d913b7c4e8e6616e32f1c0103",
+    "all6_K_diagnostics.tsv": "a95a285682115a4f83e223e7739ff877a13fc9e3a09a82c1a5595a80c2af1fd1",
+    "all360_source_distributions.tsv": "1d52f7bfcaaef14efa67924c2ef407dcff660815d283f04b3f5d0cc727809944"
+  }
+}

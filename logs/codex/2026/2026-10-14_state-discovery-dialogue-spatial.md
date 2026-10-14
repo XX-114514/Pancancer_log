@@ -59,3 +59,7 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T01:58:55.707635+00:00 /UTC+8 2026-10-14T09:58:55.707635+08:00：原cNMF仍运行（526文件）；准备官方作者pyUCell0.8.0隔离软件及CPU平均并列秩检查，不提前冻结/计算生物状态。 [runtime](../../../runs/20261014_pyucell_runtime_preparation_v1.md)。
 
 2026-10-14T02:02:46.571061+00:00 /UTC+8 2026-10-14T10:02:46.571061+08:00：对照v1尚未执行，代码审阅发现恒定score/零gene-vector应为NaN而非0；冻结v2只修数学缺失，范围/门槛全保留，没读分析指标。 [v2](../../../inventories/analysis/2026-10-14/state_method_comparison_plan_v2.json)。
+
+2026-10-14T02:03:39.594178+00:00 /UTC+8 2026-10-14T10:03:39.594178+08:00：官方pyucell0.8.0新隔离环境已实际完成12标量/零/缺基因/并列/batch/dense-sparse核查，不是生物评分。原cNMF02:03已600文件但共识/inventory仍待，原句柄不重启。 [软件结果](../../../inventories/analysis/2026-10-14/pyucell_runtime_preparation_v1/RESULTS.md)。
+
+2026-10-14T02:12:29.693688+00:00 /UTC+8 2026-10-14T10:12:29.693688+08:00：cNMF600/6于02:03:23完成，v2全90/9000/1300/14355对照02:04完成、02:08独立readbackPASS。57repeat+crossK候选跨K重复不等于57state；稳定胶原/角蛋白/神经RNA触发固定全240533同cell诊断，源限定IFN/microglia不默认artifact。 [结果](../../../inventories/analysis/2026-10-14/state_method_comparison_v2/RESULTS.md)。

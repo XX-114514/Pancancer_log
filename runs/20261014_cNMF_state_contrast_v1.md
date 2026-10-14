@@ -9,3 +9,5 @@ UTC 2026-10-14T01:26:54.724585+00:00/UTC+8 2026-10-14T09:26:54.724585+08:00。[�
 ## 实际运行：2026-10-14 09:37 UTC+8取证
 
 01:32:01 UTC worker123088/child123089已启动，01:37:19两/proc命令身份匹配；164factorization文件/完整600run+consensus未结束。沿同句柄等待真实terminal，不重启。当前完整goal仍active、无正式state。[checkpoint](../inventories/analysis/2026-10-14/state_models_progress_v1/RESULTS.md)。
+
+真实terminal02:03:23 UTC /10:03:23 UTC+8，全600/6共识exit0、进程退出；02:04全对照及02:08独立统计readback完成。原Kstats无全独立重建重演，候选不是state；[全对照](../inventories/analysis/2026-10-14/state_method_comparison_v2/RESULTS.md)。
