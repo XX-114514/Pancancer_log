@@ -1,0 +1,54 @@
+{
+  "observed_UTC": "2026-10-14T04:45:58.229391+00:00",
+  "status": "REAL_ALL18_MODEL_JOBS_RUNNING_NOT_STATE_ACCEPTANCE",
+  "jobs": [
+    {
+      "job_id": "all_lineage_spectra_training_20261014_v1",
+      "started_UTC": "2026-10-14T04:44:30.084329+00:00",
+      "status": "RUNNING",
+      "worker_pid": 101010,
+      "child_pid": 101012,
+      "both_proc_commands_verified": true,
+      "producer": "train_all_lineage_spectra_v1.py"
+    },
+    {
+      "job_id": "all_lineage_cnmf_training_20261014_v1",
+      "started_UTC": "2026-10-14T04:44:30.513012+00:00",
+      "status": "RUNNING",
+      "worker_pid": 101017,
+      "child_pid": 101019,
+      "both_proc_commands_verified": true,
+      "producer": "train_all_lineage_cnmf_v1.py"
+    }
+  ],
+  "Spectra": {
+    "first_block": "lymphoid_T",
+    "first_seed": 20261014,
+    "cells": 15644,
+    "features": 4984,
+    "L": {
+      "global": 147,
+      "T cell": 20,
+      "T/NK lymphoid": 20,
+      "Lymphoid cell": 20
+    },
+    "estimated_GPU_bytes": 5496712576,
+    "free_GPU_bytes_at_start": 16543514624,
+    "completed_seeds": 0
+  },
+  "cNMF": {
+    "first_major": "B cell",
+    "K": [
+      10,
+      15,
+      20
+    ],
+    "repeats_per_K": 100,
+    "produced_factor_iteration_files": 39,
+    "completed_majors": 0
+  },
+  "formal_states": false,
+  "all9CM_completed": false,
+  "DIALOGUE_after_states_completed": false,
+  "spatial_after_states_completed": false
+}

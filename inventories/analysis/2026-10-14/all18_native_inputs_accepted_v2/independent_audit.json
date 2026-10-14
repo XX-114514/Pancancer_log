@@ -1,0 +1,141 @@
+{
+  "status": "PASS_ALL100766_NATIVE_RAW_COUNTS_FULLRNA_DENOMINATORS_IDENTITIES_AND_GENE_AXES",
+  "observed_UTC": "2026-10-14T04:40:47.271944+00:00",
+  "producer_inventory_sha256": "8b999865f81532e6d66eae64d40360fbad9be2e5cc2da403c9e1c45cb39aec1e",
+  "audit_code_sha256": "6d8929c8921a1d95ffbbf35ae86a223e170e5e542d09add62a63920ff263f616",
+  "cells": 100766,
+  "majors": 18,
+  "native_sparse_values_read": 176509672,
+  "common_sparse_values_compared": 168015737,
+  "all_cells_independently_reassembled_via_COO": true,
+  "formal_states": false,
+  "models_not_trained_by_this_audit": true,
+  "checks": [
+    {
+      "major": "B cell",
+      "cells": 6000,
+      "genes": 16462,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Dendritic cell",
+      "cells": 4527,
+      "genes": 16204,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Endothelial cell",
+      "cells": 5852,
+      "genes": 16661,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Epithelial cell",
+      "cells": 6000,
+      "genes": 16661,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Fibroblast",
+      "cells": 6000,
+      "genes": 16661,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Glial cell",
+      "cells": 6000,
+      "genes": 38224,
+      "sources": 1,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Hematopoietic cell",
+      "cells": 6000,
+      "genes": 27899,
+      "sources": 1,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Lymphoid cell",
+      "cells": 3644,
+      "genes": 16051,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Macrophage",
+      "cells": 6000,
+      "genes": 16661,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Mast cell",
+      "cells": 5072,
+      "genes": 16661,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Melanocytic cell",
+      "cells": 6000,
+      "genes": 15992,
+      "sources": 5,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Mesenchymal cell",
+      "cells": 6000,
+      "genes": 32864,
+      "sources": 1,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Monocyte",
+      "cells": 5891,
+      "genes": 16462,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Mural cell",
+      "cells": 5475,
+      "genes": 16661,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Myeloid",
+      "cells": 5700,
+      "genes": 16661,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "Neutrophil",
+      "cells": 4605,
+      "genes": 16444,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "T cell",
+      "cells": 6000,
+      "genes": 16462,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    },
+    {
+      "major": "T/NK lymphoid",
+      "cells": 6000,
+      "genes": 16051,
+      "sources": 6,
+      "exact_raw_and_native_denominator": true
+    }
+  ]
+}

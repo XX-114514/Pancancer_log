@@ -1,0 +1,27 @@
+{
+  "schema": "all18_original_major_cNMF_contrast_plan_v1",
+  "draft_UTC": "2026-10-14T04:38:59.325797+00:00",
+  "status": "FROZEN_BEFORE_ALL18_MODEL_FIT",
+  "producer_sha256": "9c05d37b90cec14c0b92c2d0ffef442e511f084df7c547075bcb2e5a39936f27",
+  "cells": 100766,
+  "majors": 18,
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "repeats_per_K": 100,
+  "seed": 20261014,
+  "HVG_per_major": 2000,
+  "max_NMF_iter": 1000,
+  "reserve_GiB": 500,
+  "model_budget_GiB": 5,
+  "normalization": "Official raw counts gene-variance scaling; external native fullRNA TPM for HVG/gene spectra, never common-axis total",
+  "stability_rule": "Full5400runs/54consensus; repeat medianHVGcos>=.8,p10>=.7,densityretained>=.5; other repeatstableK match positivecoefcos>=.8,top50Jaccard>=.25,source-residual normalized usage rho>=.5; allK kept, crossK duplicates not counted unique states",
+  "no_prior_gene_sets_used": true,
+  "no_clinical_LR_p_used": true,
+  "formal_states": false,
+  "frozen_UTC": "2026-10-14T04:43:54.067344+00:00",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "accepted_input_audit_sha256": "3d28d2a96d3bd06caff0f9256f88ebc6229a32e52eddf7c73938a14b28e337bd"
+}

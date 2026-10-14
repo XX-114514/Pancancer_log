@@ -1,0 +1,6 @@
+{
+  "status": "PASS_ALL495_SUPPORT_AND_WITHIN_NODE_SPREAD_FROM_AGGREGATES",
+  "records": 495,
+  "raw_scores_not_independently_rescored_here": true,
+  "all_missing_alternate_TPM_for_Spectra_retained_as_NA": true
+}

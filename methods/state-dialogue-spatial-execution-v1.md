@@ -27,3 +27,7 @@ GPU当前硬件空闲，但scanpy PyTorch2.6是CPU版；scrna_r GPU环境实测p
 本任务新增方法/不同状态问题不撤销上一有限两轮的阴性或模型敏感结果，也不靠放宽门槛反复追p。状态、MCP、LR、空间分别验收；DIALOGUE协调程序不保证直接通讯；空间邻近不证明因果；当前已用来源的投影只是内部迁移。未覆盖的其他谱系和全部9CM映射仍在完整目标里，不能以本5源T/巨噬结束任务。
 
 主要方法：[Spectra](https://github.com/dpeerlab/spectra)、[cNMF](https://github.com/dylkot/cNMF)、[UCell](https://github.com/carmonalab/UCell)、[DIALOGUE](https://github.com/livnatje/DIALOGUE)。
+
+## 全谱系扩展：2026-10-14T04:46:53.817940+00:00 /UTC+8 2026-10-14T12:46:53.817940+08:00
+
+原S0—S3五来源T/M试点历史保持；现18major/100766原生发现输入已独立全count/分母/identity/gene axis接受。六谱系资源块Spectra和18major cNMF已实际运行，完整稳定性、全4532933nativeUCell/状态资格审阅仍待；不以旧五来源或新模型启动替代完整goal。[执行](../runs/20261014_all_lineage_state_models_v1.md)、[证据卡点与状态轴](state-layer-and-communication-evidence-review-v1.md)。

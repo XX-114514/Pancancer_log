@@ -9,3 +9,7 @@
 ## v1故障/v2恢复
 
 2026-10-14T04:31:52.815985+00:00 /UTC+8 2026-10-14T12:31:52.817708+08:00：v1 04:30:11—04:30:13 UTC exit1/CSR索引顺序断言，尚无H5AD；首128行sort-only canonical、0重复、RNA总量exact。v2只在读入RAM副本sort_indices，仍断言无重复，权威counts不变。[v2计划](../inventories/analysis/2026-10-14/all_lineage_state_input_plan_v2.json)。所有100766独立COO重组验收后进入模型。
+
+## 全计数独立验收完成
+
+2026-10-14T04:43:54.067344+00:00 /UTC+8 2026-10-14T12:43:54.067344+08:00取证：v2 04:36:55完成、独立audit04:40:47成功，176509672原生值/168015737common值全部通过、100766身份和分母精确。04:42登记/0冲突；[完整验收](../inventories/analysis/2026-10-14/all18_native_inputs_accepted_v2/RESULTS.md)。

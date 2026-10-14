@@ -1,0 +1,16 @@
+{
+  "status": "ACCEPTED_ALL18_NATIVE_DISCOVERY_INPUTS_NOT_FORMAL_STATES",
+  "registered_UTC": "2026-10-14T04:42:47.928527+00:00",
+  "cells": 100766,
+  "majors": 18,
+  "producer_inventory_sha256": "8b999865f81532e6d66eae64d40360fbad9be2e5cc2da403c9e1c45cb39aec1e",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "accepted_input_audit_sha256": "3d28d2a96d3bd06caff0f9256f88ebc6229a32e52eddf7c73938a14b28e337bd",
+  "handoff_sha256": "35438a483b95ec38e871760c85e98f0abad83fe2bd7fe29fe13a388d7b4ce89d",
+  "all18_scope_sha256": "3011892f00f67df46d50c2b7f815b9b0c299a4edde6f5eca2f041dcab1517991",
+  "state_refresh": "indexed 135 directories; conflicts 0 v10_audit PASS_V10_REVIEWED59_IDENTITY_OVERLAY_FULLROW_AUDIT",
+  "formal_states": false,
+  "all9CM_completed": false,
+  "DIALOGUE_after_states_completed": false,
+  "spatial_after_states_completed": false
+}

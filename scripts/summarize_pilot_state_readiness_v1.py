@@ -1,0 +1,19 @@
+"""Descriptive measurement review of every frozen programme; no state selection."""
+from pathlib import Path
+import argparse,json,hashlib
+import numpy as np,pandas as pd
+p=argparse.ArgumentParser();p.add_argument('--catalogue',required=True);p.add_argument('--source-major',required=True);p.add_argument('--source-node',required=True);p.add_argument('--output',required=True);a=p.parse_args()
+c=pd.read_csv(a.catalogue,sep='\t',keep_default_na=False);s=pd.read_csv(a.source_major,sep='\t');n=pd.read_csv(a.source_node,sep='\t');assert c.programme_id.is_unique and len(c)==98
+rows=[]
+for r in s.itertuples():
+ d=c[c.programme_id.eq(r.programme_id)].iloc[0];v=n[(n.gse_id==r.gse_id)&(n.major==r.major)&(n.programme_id==r.programme_id)];assert v.cells.sum()==r.cells
+ support=r.informative_gene_support_cells/r.cells;pooled=r.score_q90-r.score_q10;inside=float(np.average(v.score_q90-v.score_q10,weights=v.cells))
+ panels=json.loads(d.diagnostic_panel_overlaps);other=(r.major=='Macrophage' and panels.get('T_core',0)>=3) or (r.major=='T cell' and panels.get('Myeloid_core',0)>=3)
+ rows.append(dict(gse_id=r.gse_id,major=r.major,programme_id=r.programme_id,method=d.method,stability_main_candidate=r.stability_main_candidate,descriptive_programmes=d.descriptive_programmes,first8_genes=';'.join(d.primary_genes.split(';')[:8]),cells=r.cells,informative_fraction=support,pooled_q90_minus_q10=pooled,cell_weighted_within_original_node_q90_minus_q10=inside,within_node_spread_to_pooled_spread=inside/pooled if pooled>0 else np.nan,spread_ratio_is_not_variance_fraction=True,score_native_RNA_rho=r.score_RNA_spearman,score_detected_genes_rho=r.score_detected_spearman,rankcap1000_rho=r.maxrank1000_rho,rankcap3000_rho=r.maxrank3000_rho,alternate_TPM_gene_signature_rho=r.TPM_signature_rho,nonimmune_foreign_RNA_review=r.foreign_RNA_sensitive,other_immune_lineage_signature_review=other,basic_expression_review=r.basic_expression_review_flag,state_or_subtype_not_resolved=True,formal_state_assigned=False))
+out=pd.DataFrame(rows);O=Path(a.output);assert not O.exists();O.mkdir();out.to_csv(O/'all_source_major_measurement_review.tsv',sep='\t',index=False)
+summary=[]
+for (pid,major),v in out.groupby(['programme_id','major']):
+ row=dict(programme_id=pid,major=major,method=v.method.iloc[0],descriptive_programmes=v.descriptive_programmes.iloc[0],first8_genes=v.first8_genes.iloc[0],stability_main_candidate=bool(v.stability_main_candidate.iloc[0]),sources=len(v),support_min=float(v.informative_fraction.min()),support_median=float(v.informative_fraction.median()),support_max=float(v.informative_fraction.max()),within_node_spread_ratio_median=float(v.within_node_spread_to_pooled_spread.median()),abs_RNA_rho_max=float(v.score_native_RNA_rho.abs().max()),rankcap1000_rho_min=float(v.rankcap1000_rho.min()),rankcap3000_rho_min=float(v.rankcap3000_rho.min()),TPM_signature_rho_median=float(v.alternate_TPM_gene_signature_rho.median()),foreign_RNA_review=bool(v.nonimmune_foreign_RNA_review.any()),other_immune_lineage_review=bool(v.other_immune_lineage_signature_review.any()),basic_expression_review=bool(v.basic_expression_review.any()),no_state_selection_or_new_tests=True)
+ summary.append(row)
+pd.DataFrame(summary).to_csv(O/'all_programme_major_measurement_summary.tsv',sep='\t',index=False)
+iv=dict(status='DESCRIPTIVE_ALL_FROZEN_PILOT_PROGRAMME_MEASUREMENT_REVIEW_NOT_STATE_ACCEPTANCE',programme_ids=98,source_major_records=len(out),programme_major_records=len(summary),no_new_LR_or_clinical_tests=True,all_programmes_retained=True,original_labels_unchanged=True,inputs={role:hashlib.sha256(Path(path).read_bytes()).hexdigest() for role,path in [('catalogue',a.catalogue),('source_major',a.source_major),('source_node',a.source_node)]},outputs={x.name:hashlib.sha256(x.read_bytes()).hexdigest() for x in O.glob('*.tsv')});(O/'inventory.json').write_text(json.dumps(iv,indent=2)+'\n');print(json.dumps(iv))

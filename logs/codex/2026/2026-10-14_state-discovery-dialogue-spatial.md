@@ -89,3 +89,9 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T04:31:52.815985+00:00 /UTC+8 2026-10-14T12:31:52.817708+08:00：有限RNA提取v1 04:30:11—04:30:13 UTC真实exit1，第一组CSR canonical-format假设不满足，无H5AD写出；首128行证实只未排序、0重复、count总量不变。v2只读副本sort_indices/仍断言无重复，新输出且全科学范围不改，v1保留；独立全部100766 COOrdinate remap readback才接受。[恢复run](../../../runs/20261014_all_lineage_state_native_inputs_v1.md)。
 
 2026-10-14T04:33:23.647520+00:00 /UTC+8 2026-10-14T12:33:23.647520+08:00：补录原9CM/条件Mac—T/有限IFNG/复杂度/真实模块/UCell/空间各阶段证据卡点，明确来源限定价值与状态独立轴；同步检索SCENIC/PROGENy/NicheNet原论文及官方资源，拟用于TF/接收响应互补证据、尚未新运行。[方法审阅](../../../methods/state-layer-and-communication-evidence-review-v1.md)。
+
+2026-10-14T04:41:35.352678+00:00 /UTC+8 2026-10-14T12:41:35.352678+08:00：全98冻结试点/495记录状态测量描述性审阅完成，gene>=5是可测支持不是阳性，原node内spread保留、深度/otherimmune RNA另标；495聚合标量独立复算，不新增LR检验/不升state。RNA提取v2 04:32:20—04:36:55 UTC exit0、18major全部写出，04:38:16全100766 COO读回audit实际启动，仍待。[审阅结果](../../../inventories/analysis/2026-10-14/pilot_state_measurement_review_v1/RESULTS.md)。
+
+2026-10-14T04:43:54.067344+00:00 /UTC+8 2026-10-14T12:43:54.067344+08:00：全100766原生计数/分母/身份/gene轴COO独立PASS，04:42数值handoff135目录0冲突；原身份/CM不变。冻结6block3seed Spectra及18major K10/15/20×100 cNMF、5GiB/500 reserve、GPU实际free70%预算，所有K/seed/谱系结果保留，尚未启动新model。[run](../../../runs/20261014_all_lineage_state_models_v1.md)。a5babec节点04:34:00push/04:34:04HTTPS核验。
+
+2026-10-14T04:46:53.817940+00:00 /UTC+8 2026-10-14T12:46:53.817940+08:00：全谱系Spectra/cNMF 04:44:30 UTC实际启动，04:45:58四个proc命令匹配。Spectra首块15644/4984/207factor，cNMF B已39iteration；无完成seed/major，数值/正式state/全9CM/DIALOGUE/空间各自pending。[启动节点](../../../inventories/analysis/2026-10-14/all18_state_model_start_v1/RESULTS.md)。

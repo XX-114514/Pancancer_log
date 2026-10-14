@@ -24,3 +24,7 @@ bash scripts/new_run_record.sh "phase07 annotation"
 ## 2026-10-12 新公共来源完整技术合集
 
 [稳定基因ID预处理Zarr v2](20261012_public_preprocessed_zarr_v2.md)：9来源/792文库/3180973细胞，全量独立输出审计、标准读回及持久证据PASS；来源正式AC与生物学整合仍待。已登记runs/artifacts索引。
+
+## 2026-10-14 全谱系细胞状态输入与模型
+
+[全100766原生输入验收](20261014_all_lineage_state_native_inputs_v1.md)、[6block Spectra/18major cNMF真实运行](20261014_all_lineage_state_models_v1.md)。原172/9CM保留；状态资格、全数据投影、全CM/DIALOGUE/空间仍待。

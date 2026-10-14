@@ -1,0 +1,18 @@
+{
+  "status": "DESCRIPTIVE_ALL_FROZEN_PILOT_PROGRAMME_MEASUREMENT_REVIEW_NOT_STATE_ACCEPTANCE",
+  "programme_ids": 98,
+  "source_major_records": 495,
+  "programme_major_records": 99,
+  "no_new_LR_or_clinical_tests": true,
+  "all_programmes_retained": true,
+  "original_labels_unchanged": true,
+  "inputs": {
+    "catalogue": "00e365a1fa6372c74ac9a33f9a533767730408ecca968332c98c138354bcd1ae",
+    "source_major": "354737577e5593d57aa6caba77026fd34842ee791504ac8b6baff7f4f8836d77",
+    "source_node": "fe6c2b8596b46c099383bff790d4128dfc4b89744a664905e1053f61fe4dc763"
+  },
+  "outputs": {
+    "all_source_major_measurement_review.tsv": "46d355db59ec9c739f1bd6b40f89c3a1f820498257b66739583cda51b61c28d7",
+    "all_programme_major_measurement_summary.tsv": "1082979b6afcce5fb7d0cffffcd769487bd7166e9ce8af27f9e639f472c391a2"
+  }
+}

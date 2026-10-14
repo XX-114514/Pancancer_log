@@ -686,3 +686,7 @@ Git 状态：
 ## 2026-10-14T04:27:54.083445+00:00 /UTC+8 2026-10-14T12:27:54.083445+08:00 状态发现全谱系输入节点
 
 五来源240533细胞UCell量化评分已审；全4532933行范围已审；18大类100766发现行抽样已审。新全谱系表达提取/训练、正式状态、原9CM映射和状态后DIALOGUE/空间仍待。[结果](inventories/analysis/2026-10-14/all_lineage_discovery_rows_v1/RESULTS.md)。
+
+## 2026-10-14T04:46:53.817940+00:00 /UTC+8 2026-10-14T12:46:53.817940+08:00 全谱系状态发现
+
+100766/18major原生counts和分母全量独立通过并登记；Spectra6block3seed与cNMF18major全K对照已实际运行，首块/首B中，无正式states。原9CM/172/Zarr保持，状态后全CM/DIALOGUE/空间未完成。[checkpoint](inventories/analysis/2026-10-14/all18_state_model_start_v1/RESULTS.md)。
