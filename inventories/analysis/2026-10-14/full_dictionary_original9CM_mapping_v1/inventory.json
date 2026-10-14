@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_ALL814_ORIGINAL9CM_STRUCTURAL_MAPPING_NOT_STATE_ASSOCIATION",
+  "observed_UTC": "2026-10-14T14:41:39.981886+00:00",
+  "producer_sha256": "f3d944c770ba67c76e85f6406e66fd50b7ce15bd86cd1f818c41fdd2e776cfa6",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "acceptance_sha256": "d751af06c0f86f591d63be0b37802ad29bf1647a26409f8455c50a85d5613d24",
+  "W_sha256": "81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29",
+  "edges_sha256": "f8937311f72d7deb0dd0b3fc87aee463dbba0db8f6b064b03cb396c4f4f7226c",
+  "core_sha256": "133b1e9274c2d378d561d7165ec4de5d384c6a82d67dd7e0300cf0c199a0081e",
+  "nodes": 172,
+  "programmes": 814,
+  "CMs": 9,
+  "unique_pairs": 60,
+  "programme_CM_records": 7326,
+  "state_scores_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all172_node_programme_scope.tsv": "b9c8e167a1faa126cdcff91158c7731e1d38188f55d5cd91f6970bd762247407",
+    "all814_by9CM_scope.tsv": "b3feb9a234228e3b347090cb7075f4640335abf7243b4e3e408c9f942d9b80da",
+    "all60_exact_pair_programme_scope.tsv": "9b765ce6bc0ba8c192c5bb7ab2018b1a64a5c7b1f3c8097d3a247916f216c894"
+  }
+}

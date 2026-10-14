@@ -1,0 +1,23 @@
+"""Map the accepted full dictionary to original identities/CM endpoints; no effects."""
+from pathlib import Path
+from datetime import datetime,timezone
+import os,json,hashlib
+import pandas as pd
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+V=Path(os.environ['PANCANCER_STATE_MODEL_OUTPUT_ROOT']);AR=Path(os.environ['PANCANCER_ANNOTATION_ROOT']);B=AR/'20261010_expression_annotation_downstream_v1';D=V/'all_lineage_state_candidate_dictionary_20261014_v4/frozen_programme_dictionary.json';A=V/'all18_candidate_dictionary_acceptance_20261014_v1/accepted_dictionary_inventory.json';a=json.loads(A.read_text());assert a['status']=='ACCEPTED_ALL18_DICTIONARY_FOR_NATIVE_PROJECTION_NOT_FORMAL_STATES' and a['dictionary_sha256']==sha(D);recs=json.loads(D.read_text())['programmes'];assert len(recs)==814 and len({r['programme_id'] for r in recs})==814
+wp=B/'covarnet/tables/nmf_W_subcluster_by_cm.tsv';ep=B/'covarnet/tables/covarnet_each_edges.tsv';cp=Path('/tmp/fixed_CM_graph_core_state_bridge.tsv');assert sha(wp)=='81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29';assert sha(ep)=='f8937311f72d7deb0dd0b3fc87aee463dbba0db8f6b064b03cb396c4f4f7226c';assert sha(cp)=='133b1e9274c2d378d561d7165ec4de5d384c6a82d67dd7e0300cf0c199a0081e'
+W=pd.read_csv(wp,sep='\t',index_col=0);edges=pd.read_csv(ep,sep='\t');core=pd.read_csv(cp,sep='\t');cat=pd.read_csv(B/'downstream_review_v2/number_to_annotation_dictionary.tsv',sep='\t',keep_default_na=False).set_index('subCluster');assert len(cat)==172 and cat.index.is_unique and set(W.index)==set(cat.index) and len(W.columns)==9
+bymajor={m:[r for r in recs if m in r['allowed_majors']] for m in sorted(cat.majorCluster.unique())};assert len(bymajor)==18 and all(bymajor.values());nodes=[];cmrows=[];pairrows=[]
+for node,r in cat.iterrows():
+ rr=bymajor[r.majorCluster];nodes.append(dict(subcluster=node,major=r.majorCluster,candidate_programmes=len(rr),stable_candidates=sum(bool(x['algorithm_stable_candidate']) for x in rr),programme_ids=';'.join(x['programme_id'] for x in rr),identity_inherited=True,formal_states=False))
+for cm in W.columns:
+ cn=set(core.loc[core.cm.eq(cm),'node']);en=set(edges.loc[edges.cm.eq(cm),'subCluster1'])|set(edges.loc[edges.cm.eq(cm),'subCluster2']);assert cn<=set(cat.index) and en<=set(cat.index)
+ for r in recs:
+  eligible=set(cat.index[cat.majorCluster.isin(r['allowed_majors'])]);cmrows.append(dict(cm=cm,CM_display='2026年10月'+cm+'（v20261010）',programme_id=r['programme_id'],method=r['method'],algorithm_stable_candidate=r['algorithm_stable_candidate'],source_limited=r['source_limited'],allowed_major=';'.join(r['allowed_majors']),eligible_nodes=len(eligible),core_nodes=len(cn&eligible),exact_endpoint_nodes=len(en&eligible),full_W_fraction=float(W.loc[sorted(eligible),cm].sum()/W[cm].sum()),score_or_effect_used=False))
+pairs=sorted({tuple(sorted([r.subCluster1,r.subCluster2])) for r in edges.itertuples()});assert len(pairs)==60
+for i,(x,y) in enumerate(pairs):
+ rx=bymajor[cat.loc[x,'majorCluster']];ry=bymajor[cat.loc[y,'majorCluster']];mods=sorted(set(edges.loc[((edges.subCluster1==x)&(edges.subCluster2==y))|((edges.subCluster1==y)&(edges.subCluster2==x)),'cm']))
+ pairrows.append(dict(pair_index=i,endpoint_A=x,endpoint_B=y,CMs=';'.join(mods),major_A=cat.loc[x,'majorCluster'],major_B=cat.loc[y,'majorCluster'],candidate_programmes_A=len(rx),candidate_programmes_B=len(ry),stable_programmes_A=sum(bool(r['algorithm_stable_candidate']) for r in rx),stable_programmes_B=sum(bool(r['algorithm_stable_candidate']) for r in ry),all_candidate_state_pair_capacity=len(rx)*len(ry),programme_ids_A=';'.join(r['programme_id'] for r in rx),programme_ids_B=';'.join(r['programme_id'] for r in ry),shared_CM_is_not_independent_evidence=True,association_tested=False))
+assert len(cmrows)==814*9 and len(nodes)==172
+O=V/'full_dictionary_original9CM_mapping_20261014_v1';assert not O.exists();O.mkdir();pd.DataFrame(nodes).to_csv(O/'all172_node_programme_scope.tsv',sep='\t',index=False);pd.DataFrame(cmrows).to_csv(O/'all814_by9CM_scope.tsv',sep='\t',index=False);pd.DataFrame(pairrows).to_csv(O/'all60_exact_pair_programme_scope.tsv',sep='\t',index=False)
+out=dict(status='COMPLETE_ALL814_ORIGINAL9CM_STRUCTURAL_MAPPING_NOT_STATE_ASSOCIATION',observed_UTC=datetime.now(timezone.utc).isoformat(),producer_sha256=sha(__file__),dictionary_sha256=sha(D),acceptance_sha256=sha(A),W_sha256=sha(wp),edges_sha256=sha(ep),core_sha256=sha(cp),nodes=172,programmes=814,CMs=9,unique_pairs=60,programme_CM_records=len(cmrows),state_scores_used=False,formal_states=False,output_sha256={p.name:sha(p) for p in O.glob('*.tsv')});(O/'inventory.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))
