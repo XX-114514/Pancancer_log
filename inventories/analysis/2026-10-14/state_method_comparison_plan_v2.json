@@ -1,0 +1,38 @@
+{
+  "schema": "state_method_comparison_v2",
+  "frozen_UTC": "2026-10-14T02:02:46.571061+00:00",
+  "producer_sha256": "24019df6814d1a62f43a36368d5480578be90310866e63f91a15812e42da48f1",
+  "Spectra_inventory_sha256": "1fa8f1085c1de491fe228b07612e546e15b112c2195fa6b5f129351833447d96",
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "repeats": 100,
+  "min_repeat_median_cosine": 0.8,
+  "min_repeat_p10_cosine": 0.7,
+  "min_repeat_density_retained_fraction": 0.5,
+  "min_crossK_cosine": 0.8,
+  "min_crossK_top50_jaccard": 0.25,
+  "min_crossK_source_residual_rho": 0.5,
+  "scope": {
+    "majors": 2,
+    "cells": 12000,
+    "cNMF_candidates": 90,
+    "replicate_matches": 9000,
+    "crossK_pairs": 1300,
+    "Spectra_cNMF_pairs": 14355
+  },
+  "acceptance": "Only after all600run/6consensus terminal, workers absent, original complete output SHA pass; original outputs must remain unchanged after official stats calls",
+  "K_stats": "Official skip_density_and_return_after_stats uses UNFILTERED repetitions for silhouette/error; separately report original density0.5 filtered fraction; no most favourable K selection",
+  "cNMF_repetition_rule": "Within each original repeat Hungarian matching of normalized HVG spectra to sameK consensus, all100 repeats. Median/p10/retained gates exploratory, not FDR or between-patient validation",
+  "crossK_rule": "Each stable candidate needs at least one repeat-stable counterpart at a differentK meeting cosine/Jaccard/source-residual-usage gates; all1300 comparison pairs retained",
+  "Spectra_match": "All14355 permitted scope pairs, positive cNMF gene-score coefficients on actual shared6512 feature axis versus Spectra weights; top50 fullgene positive-score and fullgene TPM overlaps separately; pooled, normalized/source-residual and absolute scores retained",
+  "source_complexity": "Within major, source/node R2 and source-node-residual RNA/detected rank correlations, per-source distributions; source/cancer context not automatically artifact",
+  "formal_state_labels": false,
+  "UCell_dictionary_frozen": false,
+  "clinical_or_LR_p_selection": false,
+  "next": "Biological and coverage review then freeze module dictionary/native-full-axis UCell; all9CM/other lineages/state-DIALOGUE/spatial remain",
+  "v1_retained_not_executed": true,
+  "repair": "Code-review before first metrics: constant score vectors and zero gene vectors must yield undefined/NaN, not numerical0 cosine/rho; explicit defined flags. Same endpoints/K/parameters/gates; no results inspected to change method."
+}
