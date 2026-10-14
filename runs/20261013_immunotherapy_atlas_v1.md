@@ -58,3 +58,5 @@
 - 04:09:28 UTC[全部400库工作进程完成](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_workers_completed_public.json)：149success/251skip、4×exit0，无method fail；最终精确合并和authority仍pending。
 
 - [全量CNV精确映射](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_public.json)PASS；[归档类型故障](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_pack_metadata_type_guard_v1_public.json)实际确认，旧[打包终态](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_pipeline_terminal_public.json)保留。`run_immune_authority_recovery.py`不重拟合科学模型，只恢复candidate_v2归档/验收。
+
+- 04:16:58 UTC[元数据全行转换](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_metadata_conversion_v1_public.json)PASS；[恢复快照](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_metadata_recovery_v1_start_public.json)实际启动，archive candidate_v2继续。参见[下游交接协议](../docs/IMMUNE_ATLAS_V1_HANDOFF.md)。

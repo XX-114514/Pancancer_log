@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-14T04:16:58.556777+00:00",
+  "code_git_sha": "635ae1d",
+  "script_sha256": {
+    "pack_immune_authority.py": "b85a4e358526cdf8fa456f5c60ad5620a073b13d9bc7529a45792feacfaa3cc3",
+    "run_immune_authority_recovery.py": "192326497696d6790c552d4b4c9e1272bdfef290d0bbae40b80504f2a9668953",
+    "immune_atlas_io.py": "4825989b105d973c60b7d1dc7735414195777f6b3a88a81660771df8ded8a7ec",
+    "public_gene_identity_contract.py": "c6e68e85ec496f5483e9104a09607b38f7d657e1d6fd326f15c3d1941dbc9fd7",
+    "merge_public_preprocessed_zarr.py": "171d2f4bc32a939963542673ab5a5641bcf37f6bed84e4a0a51241ef6641daf5",
+    "audit_immune_final_interfaces.py": "a4e73b601d003e5c544a14556448ca8b9b84767ef8635eee9320ddd8df5d4320",
+    "audit_immune_CM_inputs.py": "103bf2b064a5c8bc5c4b68dc1d544555f951d1696d0376404031f0648e0f50ab",
+    "prepare_immune_CM.py": "d2c2a5871f2212f4af0a5a6243b2f15f7f1f0ff4d1f52a36027eca80eb9c058f"
+  }
+}

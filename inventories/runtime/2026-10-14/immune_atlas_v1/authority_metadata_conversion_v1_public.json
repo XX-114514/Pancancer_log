@@ -1,0 +1,19 @@
+{
+  "observed_utc": "2026-10-14T04:16:58.485006+00:00",
+  "n_actual_cells": 2670057,
+  "numeric_fields": {
+    "cnv_score": {
+      "dtype": "float64",
+      "n_measured": 904910,
+      "n_missing": 1765147
+    },
+    "CNV_native_total_counts": {
+      "dtype": "float64",
+      "n_measured": 915610,
+      "n_missing": 1754447
+    }
+  },
+  "strict_conversion_all_rows_passed": true,
+  "boolean_fields_all_rows_passed": true,
+  "Zarr_numeric_missing_roundtrip_passed": true
+}

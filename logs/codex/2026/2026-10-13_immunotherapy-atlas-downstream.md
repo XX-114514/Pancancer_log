@@ -287,3 +287,9 @@
 - 新版本全CNV CSV先字符串读取，再对score/原生total严格转换float与bool；空缺保留NaN，invalid拒绝。candidate_v2独立目录继续相同计数/污染/X逐行审计、容量与copy SHA门槛；终态和旧失败不覆盖。
 - 原packer读完整建模对象造成约119GB RSS，而归档只需obs/var/坐标/图/uns；恢复版本仅取必要槽位，原生完整计数仍独立逐块读取、全行审计。该改变不缩小细胞/基因范围或改变模型。
 - 新恢复驱动先核验已完成CNV/CM，pack后执行最终接口与15范围CM频率重计。Python语法PASS，真实恢复与最终Zarr仍待。067e00b普通push/HTTPS通过，实际推送起点为另一任务已发布b62d9ac，未强制改历史。
+
+## 2026-10-14 04:16:58 UTC / 12:16:58 UTC+8：归档恢复真实启动
+
+- 全2,670,057行严格numeric和boolean转换PASS，score缺失1,765,147、原生total缺失1,754,447，全部原缺失保留；数值+缺失Zarr写入/读回实际PASS。8文件部署SHA与提交代码逐一一致。
+- 新恢复driver389733及packer389755实际启动；04:18左右RSS约13GB，计数候选v2已持续写入。仅必要model槽位读法降低了冗余RNA加载，不缩小档案。仍需全部source写入/独立全行审计、容量与copy SHA、成品CM重计门槛。
+- 635ae1d普通push/独立HTTPS同SHA通过；新增handoff协议解释成品入口、native counts/污染扣除/可测mask、身份候选、CNV及CM材料/临床资格边界。真实最终发布仍pending。
