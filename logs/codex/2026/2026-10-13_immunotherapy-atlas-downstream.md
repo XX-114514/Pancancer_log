@@ -243,3 +243,11 @@
 - 新wrapper保留integer counts，每原库用完整原生RNA总量为分母生成log1p CP10K的独立表达层，坐标筛选不重定义分母；所有表达非零逐项独立稀疏运算比较误差≤1e-6、原counts指纹前后不变。CNV在同原库参考内运行，与Harmony/整合X隔离。离体刺激加到无肿瘤捕获skip，skip始终不当正常。
 - 原raw输入的旧CNV不复用；新输出CNV_logspace_v1保留完整细胞映射、4shard原库分配及全400库合并门槛。先真实新input与首次core profile，再全范围；已完成CM不会重复训练，最终打包使用明确纠正后CNV路径。
 - 修复Python语法PASS，真实正确表达CNV/最终Zarr仍待验收；不以代码替代实际完成。de4f691普通push/HTTPS已核验；推送范围因共享main还包含并发74b4785匿名source/node/panel统计（非患者行、无矩阵），已核对字段与方法，不覆盖其文件。
+
+## 2026-10-14 03:26—03:34 UTC / 11:26—11:34 UTC+8：纠正后真实CNV首批验收
+
+- 03:26:08 UTC正确输入全范围驱动153444启动；部署7文件SHA exact，主机cpu_count=192。原核心AST还原一致门槛03:26:10 UTC实际PASS，新核心SHA00cb8b1d7b053983b0259b8614ccffbd873496220c500c95abcb147d3679d7f8。4个worker153782—153785实际运行，各约7GB RSS，2个infercnv过程/库。
+- 03:34:23 UTC首4实际原库success，共22,999细胞、1,517候选可评估；完整表达所有条目独立稀疏运算最大误差约4.7681e-7，原integer counts指纹不变，使用sample-native log1p CP10K明确记录；非合成检查。已41细胞单infercnv cluster支持恶性、241不确定，仍非双方法gold/临床金标准。
+- 原矩阵整合/270群及15CM保留；旧raw整数直接推断继续隔离，不能把其历史method success视为本版本验收。当前新版本仅4/400库完成，最终Zarr仍未发布。
+- 首4真实core profile约32.6—35.7秒（infercnv14—16秒、首次numba compile约9.5秒）；每库包围计时235—263秒，CPU主要在core外。进一步独立基因坐标membership对照np.isin与Index.isin并检查全部旗标exact，尚待结果；没有据猜测停止正确版本。
+- 31cc963普通push及独立HTTPS同SHA通过。临时签名连接采用原认证/代理参数且不携带4060 RemoteForward，原SSH配置及已有端口未修改；仅本用户Unix socket，私钥不复制。

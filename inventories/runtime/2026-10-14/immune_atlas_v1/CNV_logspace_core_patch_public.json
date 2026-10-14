@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-10-14T03:26:10.450356+00:00",
+  "original_core_sha256": "96495a5d7733ef31f080b1ac384db4d56f80503d901b85319a05e61522ec8bfc",
+  "corrected_core_sha256": "00cb8b1d7b053983b0259b8614ccffbd873496220c500c95abcb147d3679d7f8",
+  "infercnv_call_sites_changed": 1,
+  "changes": [
+    "explicit_sample_log_expression_layer_parameter",
+    "bounded_infercnv_process_workers_default2"
+  ],
+  "unchanged": [
+    "candidate_reference_masks",
+    "genomic_window",
+    "reference_quantile",
+    "CNV_clustering_and_small_cluster_merge",
+    "cluster_malignant_rules",
+    "CopyKAT_disabled",
+    "all_diagnostic_plots"
+  ],
+  "original_file_untouched": true,
+  "restored_AST_exactly_original": true
+}

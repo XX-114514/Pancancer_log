@@ -1,0 +1,502 @@
+{
+  "observed_utc": "2026-10-14T03:34:23.932136+00:00",
+  "n_completed_libraries": 4,
+  "library_checks": [
+    {
+      "status": "success",
+      "candidate_cells": 297,
+      "reference_cells": 4763,
+      "malignant_cells": 0,
+      "uncertain_cells": 0,
+      "CNV_expression": "sample_native_raw_counts_log1p_CP10K_full_native_denominator",
+      "integer_counts_preserved": true,
+      "normalization_max_absolute_error": 4.7675814940362216e-07,
+      "all_expression_entries_independently_checked": true,
+      "infercnv_process_workers": 2,
+      "elapsed_seconds": 249.2494499720633
+    },
+    {
+      "status": "success",
+      "candidate_cells": 635,
+      "reference_cells": 5920,
+      "malignant_cells": 0,
+      "uncertain_cells": 161,
+      "CNV_expression": "sample_native_raw_counts_log1p_CP10K_full_native_denominator",
+      "integer_counts_preserved": true,
+      "normalization_max_absolute_error": 4.768067540794618e-07,
+      "all_expression_entries_independently_checked": true,
+      "infercnv_process_workers": 2,
+      "elapsed_seconds": 235.30999544262886
+    },
+    {
+      "status": "success",
+      "candidate_cells": 350,
+      "reference_cells": 5166,
+      "malignant_cells": 0,
+      "uncertain_cells": 80,
+      "CNV_expression": "sample_native_raw_counts_log1p_CP10K_full_native_denominator",
+      "integer_counts_preserved": true,
+      "normalization_max_absolute_error": 4.743736319312575e-07,
+      "all_expression_entries_independently_checked": true,
+      "infercnv_process_workers": 2,
+      "elapsed_seconds": 262.75854598684236
+    },
+    {
+      "status": "success",
+      "candidate_cells": 235,
+      "reference_cells": 5601,
+      "malignant_cells": 41,
+      "uncertain_cells": 0,
+      "CNV_expression": "sample_native_raw_counts_log1p_CP10K_full_native_denominator",
+      "integer_counts_preserved": true,
+      "normalization_max_absolute_error": 4.7645555767417136e-07,
+      "all_expression_entries_independently_checked": true,
+      "infercnv_process_workers": 2,
+      "elapsed_seconds": 253.8021446140483
+    }
+  ],
+  "profiles": [
+    {
+      "total_profile_seconds": 32.58592949599991,
+      "top": [
+        {
+          "file": "corrected_malignant_inference.py",
+          "function": "run_malignant_inference",
+          "calls": 1,
+          "own_seconds": 0.0037090200000000004,
+          "cumulative_seconds": 32.596600728
+        },
+        {
+          "file": "_infercnv.py",
+          "function": "infercnv",
+          "calls": 1,
+          "own_seconds": 0.0011340060000000001,
+          "cumulative_seconds": 15.793218056
+        },
+        {
+          "file": "concurrent.py",
+          "function": "process_map",
+          "calls": 1,
+          "own_seconds": 4.1586000000000005e-05,
+          "cumulative_seconds": 15.532116421000001
+        },
+        {
+          "file": "concurrent.py",
+          "function": "_executor_map",
+          "calls": 1,
+          "own_seconds": 0.000230969,
+          "cumulative_seconds": 15.532043655
+        },
+        {
+          "file": "~",
+          "function": "<method 'acquire' of '_thread.lock' objects>",
+          "calls": 15,
+          "own_seconds": 15.187555292,
+          "cumulative_seconds": 15.187555292
+        },
+        {
+          "file": "threading.py",
+          "function": "wait",
+          "calls": 3,
+          "own_seconds": 6.9787e-05,
+          "cumulative_seconds": 15.002937064000001
+        },
+        {
+          "file": "std.py",
+          "function": "__iter__",
+          "calls": 504,
+          "own_seconds": 7.683600000000001e-05,
+          "cumulative_seconds": 15.000709112000001
+        },
+        {
+          "file": "process.py",
+          "function": "_chain_from_iterable_of_lists",
+          "calls": 3,
+          "own_seconds": 1.7898e-05,
+          "cumulative_seconds": 14.999917794000002
+        },
+        {
+          "file": "_base.py",
+          "function": "result_iterator",
+          "calls": 3,
+          "own_seconds": 5.7345e-05,
+          "cumulative_seconds": 14.999896705000001
+        },
+        {
+          "file": "_base.py",
+          "function": "_result_or_cancel",
+          "calls": 2,
+          "own_seconds": 1.1923000000000001e-05,
+          "cumulative_seconds": 14.999835708
+        },
+        {
+          "file": "_base.py",
+          "function": "result",
+          "calls": 2,
+          "own_seconds": 3.4734e-05,
+          "cumulative_seconds": 14.999811138
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 139,
+          "own_seconds": 0.002177818,
+          "cumulative_seconds": 9.566847774000001
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 48,
+          "own_seconds": 7.4158e-05,
+          "cumulative_seconds": 9.445601323
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_cached",
+          "calls": 48,
+          "own_seconds": 0.00017028100000000002,
+          "cumulative_seconds": 9.445548532
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_core",
+          "calls": 48,
+          "own_seconds": 0.002244882,
+          "cumulative_seconds": 9.445261861
+        }
+      ]
+    },
+    {
+      "total_profile_seconds": 35.678292184999954,
+      "top": [
+        {
+          "file": "corrected_malignant_inference.py",
+          "function": "run_malignant_inference",
+          "calls": 1,
+          "own_seconds": 0.004137377,
+          "cumulative_seconds": 35.688839357
+        },
+        {
+          "file": "_infercnv.py",
+          "function": "infercnv",
+          "calls": 1,
+          "own_seconds": 0.001613974,
+          "cumulative_seconds": 14.836184524
+        },
+        {
+          "file": "concurrent.py",
+          "function": "process_map",
+          "calls": 1,
+          "own_seconds": 6.5072e-05,
+          "cumulative_seconds": 14.553307160000001
+        },
+        {
+          "file": "concurrent.py",
+          "function": "_executor_map",
+          "calls": 1,
+          "own_seconds": 0.000578713,
+          "cumulative_seconds": 14.55321119
+        },
+        {
+          "file": "~",
+          "function": "<method 'acquire' of '_thread.lock' objects>",
+          "calls": 15,
+          "own_seconds": 14.232810261000001,
+          "cumulative_seconds": 14.232810261000001
+        },
+        {
+          "file": "threading.py",
+          "function": "wait",
+          "calls": 3,
+          "own_seconds": 7.0085e-05,
+          "cumulative_seconds": 13.974319407000001
+        },
+        {
+          "file": "std.py",
+          "function": "__iter__",
+          "calls": 504,
+          "own_seconds": 0.00011218600000000001,
+          "cumulative_seconds": 13.973701429
+        },
+        {
+          "file": "process.py",
+          "function": "_chain_from_iterable_of_lists",
+          "calls": 3,
+          "own_seconds": 2.4545000000000003e-05,
+          "cumulative_seconds": 13.972654115000001
+        },
+        {
+          "file": "_base.py",
+          "function": "result_iterator",
+          "calls": 3,
+          "own_seconds": 3.7777e-05,
+          "cumulative_seconds": 13.972625058
+        },
+        {
+          "file": "_base.py",
+          "function": "_result_or_cancel",
+          "calls": 2,
+          "own_seconds": 4.4145000000000005e-05,
+          "cumulative_seconds": 13.97258421
+        },
+        {
+          "file": "_base.py",
+          "function": "result",
+          "calls": 2,
+          "own_seconds": 3.4872e-05,
+          "cumulative_seconds": 13.972521616000002
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 139,
+          "own_seconds": 0.002222892,
+          "cumulative_seconds": 9.557603664
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 48,
+          "own_seconds": 7.051300000000001e-05,
+          "cumulative_seconds": 9.435591422
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_cached",
+          "calls": 48,
+          "own_seconds": 0.000177113,
+          "cumulative_seconds": 9.435544455
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_core",
+          "calls": 48,
+          "own_seconds": 0.0020325960000000002,
+          "cumulative_seconds": 9.435242232
+        }
+      ]
+    },
+    {
+      "total_profile_seconds": 32.90824286800004,
+      "top": [
+        {
+          "file": "corrected_malignant_inference.py",
+          "function": "run_malignant_inference",
+          "calls": 1,
+          "own_seconds": 0.002794014,
+          "cumulative_seconds": 32.919158265
+        },
+        {
+          "file": "_infercnv.py",
+          "function": "infercnv",
+          "calls": 1,
+          "own_seconds": 0.000398392,
+          "cumulative_seconds": 14.530758407
+        },
+        {
+          "file": "concurrent.py",
+          "function": "process_map",
+          "calls": 1,
+          "own_seconds": 4.1383e-05,
+          "cumulative_seconds": 14.288104306000001
+        },
+        {
+          "file": "concurrent.py",
+          "function": "_executor_map",
+          "calls": 1,
+          "own_seconds": 0.000146904,
+          "cumulative_seconds": 14.288035010000002
+        },
+        {
+          "file": "~",
+          "function": "<method 'acquire' of '_thread.lock' objects>",
+          "calls": 15,
+          "own_seconds": 14.014711794,
+          "cumulative_seconds": 14.014711794
+        },
+        {
+          "file": "threading.py",
+          "function": "wait",
+          "calls": 3,
+          "own_seconds": 7.981500000000001e-05,
+          "cumulative_seconds": 13.888415319000002
+        },
+        {
+          "file": "std.py",
+          "function": "__iter__",
+          "calls": 504,
+          "own_seconds": 7.616200000000001e-05,
+          "cumulative_seconds": 13.887319040000001
+        },
+        {
+          "file": "process.py",
+          "function": "_chain_from_iterable_of_lists",
+          "calls": 3,
+          "own_seconds": 1.3718000000000001e-05,
+          "cumulative_seconds": 13.886793479000001
+        },
+        {
+          "file": "_base.py",
+          "function": "result_iterator",
+          "calls": 3,
+          "own_seconds": 3.5159e-05,
+          "cumulative_seconds": 13.886777959000002
+        },
+        {
+          "file": "_base.py",
+          "function": "_result_or_cancel",
+          "calls": 2,
+          "own_seconds": 1.7255e-05,
+          "cumulative_seconds": 13.886741639
+        },
+        {
+          "file": "_base.py",
+          "function": "result",
+          "calls": 2,
+          "own_seconds": 4.5820000000000005e-05,
+          "cumulative_seconds": 13.886708256
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 139,
+          "own_seconds": 0.0022219690000000003,
+          "cumulative_seconds": 9.937406869
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 48,
+          "own_seconds": 6.7354e-05,
+          "cumulative_seconds": 9.808903056
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_cached",
+          "calls": 48,
+          "own_seconds": 0.00016352400000000002,
+          "cumulative_seconds": 9.808862277000001
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_core",
+          "calls": 48,
+          "own_seconds": 0.002005574,
+          "cumulative_seconds": 9.808576104
+        }
+      ]
+    },
+    {
+      "total_profile_seconds": 35.6809718489999,
+      "top": [
+        {
+          "file": "corrected_malignant_inference.py",
+          "function": "run_malignant_inference",
+          "calls": 1,
+          "own_seconds": 0.014880148000000001,
+          "cumulative_seconds": 35.691924633
+        },
+        {
+          "file": "_infercnv.py",
+          "function": "infercnv",
+          "calls": 1,
+          "own_seconds": 0.012066662,
+          "cumulative_seconds": 13.853440832
+        },
+        {
+          "file": "concurrent.py",
+          "function": "process_map",
+          "calls": 1,
+          "own_seconds": 6.2575e-05,
+          "cumulative_seconds": 13.377190222000001
+        },
+        {
+          "file": "concurrent.py",
+          "function": "_executor_map",
+          "calls": 1,
+          "own_seconds": 0.00016612200000000002,
+          "cumulative_seconds": 13.377086911000001
+        },
+        {
+          "file": "~",
+          "function": "<method 'acquire' of '_thread.lock' objects>",
+          "calls": 15,
+          "own_seconds": 13.103853004000001,
+          "cumulative_seconds": 13.103853004000001
+        },
+        {
+          "file": "threading.py",
+          "function": "wait",
+          "calls": 3,
+          "own_seconds": 6.3835e-05,
+          "cumulative_seconds": 12.797272430000001
+        },
+        {
+          "file": "std.py",
+          "function": "__iter__",
+          "calls": 504,
+          "own_seconds": 9.987900000000001e-05,
+          "cumulative_seconds": 12.796381247000001
+        },
+        {
+          "file": "process.py",
+          "function": "_chain_from_iterable_of_lists",
+          "calls": 3,
+          "own_seconds": 2.7816000000000003e-05,
+          "cumulative_seconds": 12.795639657
+        },
+        {
+          "file": "_base.py",
+          "function": "result_iterator",
+          "calls": 3,
+          "own_seconds": 2.5873e-05,
+          "cumulative_seconds": 12.795608410000002
+        },
+        {
+          "file": "_base.py",
+          "function": "_result_or_cancel",
+          "calls": 2,
+          "own_seconds": 1.6013e-05,
+          "cumulative_seconds": 12.795581029000001
+        },
+        {
+          "file": "_base.py",
+          "function": "result",
+          "calls": 2,
+          "own_seconds": 3.2574000000000004e-05,
+          "cumulative_seconds": 12.79554905
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 139,
+          "own_seconds": 0.002249216,
+          "cumulative_seconds": 9.769873262
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "compile",
+          "calls": 48,
+          "own_seconds": 5.7723e-05,
+          "cumulative_seconds": 9.645872805
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_cached",
+          "calls": 48,
+          "own_seconds": 0.000160017,
+          "cumulative_seconds": 9.645835349
+        },
+        {
+          "file": "dispatcher.py",
+          "function": "_compile_core",
+          "calls": 48,
+          "own_seconds": 0.002028064,
+          "cumulative_seconds": 9.645552331000001
+        }
+      ]
+    }
+  ],
+  "corrected_expression_used": true,
+  "partial_not_full_cohort_acceptance": true
+}
