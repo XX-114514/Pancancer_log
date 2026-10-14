@@ -1,0 +1,7 @@
+{
+  "finished_utc": "2026-10-14T04:14:38.836296+00:00",
+  "status": "failed",
+  "failure": "authority_pack failed; new attempt preserved",
+  "history_preserved": true,
+  "authoritative_release": false
+}

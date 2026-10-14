@@ -1,0 +1,28 @@
+{
+  "observed_utc": "2026-10-14T04:10:18.342069+00:00",
+  "n_cells": 2670057,
+  "n_libraries": 400,
+  "all_cell_IDs_exact": true,
+  "all_sample_IDs_exact": true,
+  "duplicate_or_unmapped_cells": 0,
+  "library_method_status_counts": {
+    "skipped": 251,
+    "success": 149
+  },
+  "cell_malignant_status_counts": {
+    "not_evaluated_skipped": 1760348,
+    "lineage_reference_not_tumor_candidate": 642560,
+    "CNV_negative_candidate": 151735,
+    "CNV_uncertain": 57958,
+    "CNV_supported_malignant": 52657,
+    "not_evaluated": 4799
+  },
+  "raw_counts_preserved": true,
+  "inference_input": "sample_native_raw_counts_to_log1p_CP10K_full_native_denominator",
+  "same_original_library_references": true,
+  "infercnv_process_workers": 2,
+  "library_workers": 4,
+  "old_raw_integer_CNVs_scientifically_quarantined": true,
+  "n_method_failed": 0,
+  "malignancy_gold": false
+}

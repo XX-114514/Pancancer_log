@@ -56,3 +56,5 @@
 - 最终接口审计入口`audit_immune_final_interfaces.py`已准备：从实际data4成品重读节点/CNV/图与15个CM频率，依赖逐行原生计数和逐文件复制校验先PASS。当前尚未正式发布。
 
 - 04:09:28 UTC[全部400库工作进程完成](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_workers_completed_public.json)：149success/251skip、4×exit0，无method fail；最终精确合并和authority仍pending。
+
+- [全量CNV精确映射](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_public.json)PASS；[归档类型故障](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_pack_metadata_type_guard_v1_public.json)实际确认，旧[打包终态](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_pipeline_terminal_public.json)保留。`run_immune_authority_recovery.py`不重拟合科学模型，只恢复candidate_v2归档/验收。

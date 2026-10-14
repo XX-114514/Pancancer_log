@@ -8,6 +8,7 @@ import argparse
 from datetime import datetime,timezone
 import gc,hashlib,json,shutil,subprocess
 from pathlib import Path
+from types import SimpleNamespace
 import anndata as ad
 from anndata._io.specs import read_elem,write_elem
 import numpy as np
@@ -37,16 +38,24 @@ def capacity(path,group):
 
 def pack(args):
     config,sources,var,identities,diagnostics=load_contract(args.contract,['core','CAR_product'])
-    model=ad.read_zarr(args.scratch/'immune_refined.zarr')
-    cnv=pd.read_csv(args.CNV_results or args.run/'tables/all_core_CNV_private.tsv.gz',sep='\t',index_col=0,keep_default_na=False)
+    model_group=zarr.open_group(str(args.scratch/'immune_refined.zarr'),mode='r')
+    # Native count arrays are streamed independently below; do not load redundant modeling RNA.
+    model=SimpleNamespace(**{key:read_elem(model_group[key]) for key in ['obs','var','varm','obsm','obsp','uns']})
+    model.var_names=model.var.index
+    cnv=pd.read_csv(args.CNV_results or args.run/'tables/all_core_CNV_private.tsv.gz',sep='\t',index_col=0,keep_default_na=False,dtype=str)
     if not cnv.index.is_unique or not cnv.index.equals(model.obs.index):raise ValueError('CNV cell mapping differs')
     if not np.array_equal(cnv.sampleID.astype(str),model.obs.sampleID.astype(str)):raise ValueError('CNV sample mapping differs')
     obs=model.obs.copy()
     for key in cnv:
         if key=='sampleID':continue
-        if key=='cnv_score':obs[key]=pd.to_numeric(cnv[key],errors='coerce').astype(np.float32)
+        if key in ['cnv_score','CNV_native_total_counts']:
+            obs[key]=pd.to_numeric(cnv[key].replace('',np.nan),errors='raise').astype(np.float32 if key=='cnv_score' else np.float64)
+        elif key in ['cnv_evaluable','infercnv_positive','tumor_lineage_candidate','tumor_reference_cell']:
+            values=cnv[key].str.lower()
+            if not values.isin(['true','false','1','0']).all():raise ValueError('Invalid CNV boolean metadata')
+            obs[key]=values.isin(['true','1'])
         else:obs[key]=cnv[key]
-    target=args.scratch/'immune_fullgene_authority_candidate_v1.zarr'
+    target=args.scratch/args.candidate_name
     if target.exists():raise ValueError('Existing fullgene candidate preserved')
     target.mkdir(mode=0o700)
     g=zarr.open_group(str(target),mode='w');g.attrs.update({'encoding-type':'anndata','encoding-version':'0.1.0'})
@@ -203,4 +212,5 @@ if __name__=='__main__':
     p.add_argument('--CM-discovery-attempt',default='discovery_v1')
     p.add_argument('--CM-discovery-index',type=Path)
     p.add_argument('--CNV-results',type=Path)
+    p.add_argument('--candidate-name',choices=['immune_fullgene_authority_candidate_v1.zarr','immune_fullgene_authority_candidate_v2.zarr'],default='immune_fullgene_authority_candidate_v1.zarr')
     pack(p.parse_args())

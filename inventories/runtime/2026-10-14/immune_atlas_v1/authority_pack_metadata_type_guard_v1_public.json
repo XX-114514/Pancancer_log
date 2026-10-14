@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-10-14T04:14:30.084629+00:00",
+  "n_rows": 2670057,
+  "storage_dtype": "object",
+  "value_types": {
+    "float": 835049,
+    "str": 1835008
+  },
+  "actual_mixed_type_serialization_failed": true,
+  "serialization_error": "TypeError: expected unicode string, found 41186.0",
+  "CNV_and_annotation_unchanged": true,
+  "only_active_packer_controlled_stop": true
+}
