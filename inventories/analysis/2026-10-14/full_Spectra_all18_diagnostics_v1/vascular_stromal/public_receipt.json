@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_BLOCK_MULTISEED_DIAGNOSTICS_NOT_FORMAL_STATES",
+  "block": "vascular_stromal",
+  "observed_UTC": "2026-10-14T07:06:18.933050+00:00",
+  "producer_sha256": "164d12399d4bb0867ba877569ebe4467ee1a15cb79590184aebad9b10d823ce3",
+  "plan_sha256": "d559119b43922822ad4d9d93fdfdf243689905745ff1ba53db1ff36c7f75794e",
+  "candidates": 166,
+  "shared_or_lineage_stable_candidates": 0,
+  "context_stable_candidates": 0,
+  "model_scope_all_majors_reported": true,
+  "global_factor_activity_not_required_in_all_majors": true,
+  "original_labels_unchanged": true,
+  "no_cell_level_p_or_clinical_LR_selection": true,
+  "formal_states": false,
+  "output_sha256": {
+    "all_factor_matches.tsv": "98a302db8b932183c52d1fff2fd202dbab7bbc8501540dce699361add885c78d",
+    "all_major_score_reproducibility.tsv": "ba8f4845e6b5cb7b87e1a0bfee4eea3c81d3b58c924fb5f8f4e4bae577a9925f",
+    "all_source_node_complexity_diagnostics.tsv": "5f95d5776bc107d05805125a728e78f2cb0fcc7ef43d0ec77c732d56e880a6c5",
+    "all_source_major_distributions.tsv": "9b423dbc5e295900f3e9289a2cd55147dae26b1d1c013dc279d1d3ca990003ba",
+    "all_candidate_diagnostics.tsv": "27da58c7ca9e171f85a030b98ec3bae7efc9eb2c66f6e6ec0e601156e5fc0150"
+  },
+  "private_inventory_sha256": "9194453f794cddd50d80e0541ace62422f4b427b9f8b4344669476dbfeaeb3d2",
+  "independent_audit": {
+    "status": "PASS_ALL_BLOCK_FACTORS_MATCHES_SCORE_SOURCE_NODE_DEPTH_SUPPORT_AND_CANDIDATE_RULES",
+    "block": "vascular_stromal",
+    "observed_UTC": "2026-10-14T07:06:37.579794+00:00",
+    "audit_code_sha256": "63ea1e36c5b97106dec66094aa8e09b789e556992415f6fae3de243246bcb433",
+    "producer_inventory_sha256": "9194453f794cddd50d80e0541ace62422f4b427b9f8b4344669476dbfeaeb3d2",
+    "factor_pair_checks": 498,
+    "score_pair_checks": 1812,
+    "major_factor_support_and_regression_checks": 604,
+    "candidate_rules": 166,
+    "max_cosine_difference": 3.774758283725532e-15,
+    "scalar_and_sample_p_values_not_used": true,
+    "source_distributions_not_independently_recomputed_here": true,
+    "formal_states": false
+  }
+}

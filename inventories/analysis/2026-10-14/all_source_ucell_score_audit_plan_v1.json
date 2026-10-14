@@ -1,0 +1,11 @@
+{
+  "schema": "all52_native_score_audit_and_private_unit_means_v1",
+  "frozen_UTC": "2026-10-14T07:32:10.684511+00:00",
+  "auditor_sha256": "c8233f91ec900ef27be819898cbf0455f25864a0c157995dad871a352ee24ece",
+  "canonical_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "manual_cells_per_chunk": 5,
+  "seed": 20261014,
+  "scope": "All4532933 original rows: exact IDs/unit membership, all native totals/detected counts, all programme support/fractions and 4 score masks. Up to5 predetermined cells per chunk, every eligible signature and4variants manually tied-rank rescored; other individual scores not independently recomputed.",
+  "aggregation": "Every chunk grouped sums via sparse incidence and indexed accumulation; global unit-cell counts must equal original35567 sample-node units. Private means preserve inherited unit table, no claim of independent patients.",
+  "formal_states": false
+}

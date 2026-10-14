@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_BLOCK_MULTISEED_DIAGNOSTICS_NOT_FORMAL_STATES",
+  "block": "glial",
+  "observed_UTC": "2026-10-14T07:31:18.302139+00:00",
+  "producer_sha256": "164d12399d4bb0867ba877569ebe4467ee1a15cb79590184aebad9b10d823ce3",
+  "plan_sha256": "d559119b43922822ad4d9d93fdfdf243689905745ff1ba53db1ff36c7f75794e",
+  "candidates": 154,
+  "shared_or_lineage_stable_candidates": 0,
+  "context_stable_candidates": 4,
+  "model_scope_all_majors_reported": true,
+  "global_factor_activity_not_required_in_all_majors": true,
+  "original_labels_unchanged": true,
+  "no_cell_level_p_or_clinical_LR_selection": true,
+  "formal_states": false,
+  "output_sha256": {
+    "all_factor_matches.tsv": "0bafcbe958a720e595fb7bde8efb60721379a16edfdaa9f0ec3b5f8cd4a2ef08",
+    "all_major_score_reproducibility.tsv": "106341aa591c44321b671e51f0bbc61d47efd34d5f20cd522931d1c0ad743430",
+    "all_source_node_complexity_diagnostics.tsv": "7a61f5089ff68405a2a9418f82c912bccbf25ae594484843e884177c042f3d4f",
+    "all_source_major_distributions.tsv": "6907f1785fbac40047b852489f8250b6dc5781e639da795358ed7caa5f88caf2",
+    "all_candidate_diagnostics.tsv": "26a8866d3c36b91dc3fa76b00c3b36964da078c30510ea850e29a149fc056f4d"
+  },
+  "private_inventory_sha256": "c6b11260b2d28b82c72a5d80dd0620799ea108486f99de0332d3c7a36a4f8b7d",
+  "independent_audit": {
+    "status": "PASS_ALL_BLOCK_FACTORS_MATCHES_SCORE_SOURCE_NODE_DEPTH_SUPPORT_AND_CANDIDATE_RULES",
+    "block": "glial",
+    "observed_UTC": "2026-10-14T07:31:26.091962+00:00",
+    "audit_code_sha256": "63ea1e36c5b97106dec66094aa8e09b789e556992415f6fae3de243246bcb433",
+    "producer_inventory_sha256": "c6b11260b2d28b82c72a5d80dd0620799ea108486f99de0332d3c7a36a4f8b7d",
+    "factor_pair_checks": 462,
+    "score_pair_checks": 462,
+    "major_factor_support_and_regression_checks": 154,
+    "candidate_rules": 154,
+    "max_cosine_difference": 2.3314683517128287e-15,
+    "scalar_and_sample_p_values_not_used": true,
+    "source_distributions_not_independently_recomputed_here": true,
+    "formal_states": false
+  }
+}

@@ -1,0 +1,7 @@
+block	factors	weight_stable	context_stable	shared_or_lineage_main
+lymphoid_T	207	4	0	0
+myeloid	177	1	0	0
+B_mast_hematopoietic	159	2	0	0
+vascular_stromal	166	1	0	0
+epithelial_melanocytic	155	0	0	0
+glial	154	11	4	0
