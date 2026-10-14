@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-10-14T01:53:22.634991+00:00",
+  "n_original_P3_nodes": 172,
+  "n_original_P3_modules": 9,
+  "n_new_immune_nodes": 270,
+  "exact_display_name_overlap": 0,
+  "exact_node_id_overlap": 0,
+  "fixed_W_sha256": "81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29",
+  "old_node_dictionary_sha256": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+  "status": "mapping_required_before_fixed_reference_projection",
+  "projection_completed": false,
+  "new_group_numbers_or_single_markers_not_identity_mapping": true,
+  "new_discovery_does_not_replace_fixed_reference_validation": true,
+  "further_requirement": "accepted_multigene_reference_node_mapping_and_capture_observability;do_not_impute_absent_nodes_as_zero"
+}

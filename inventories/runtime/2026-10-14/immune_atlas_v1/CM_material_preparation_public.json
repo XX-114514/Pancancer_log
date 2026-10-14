@@ -1,0 +1,509 @@
+{
+  "observed_utc": "2026-10-14T01:55:44.040595+00:00",
+  "scopes": [
+    {
+      "scope": "whole_TME_primary_tumor",
+      "n_input_cells": 726731,
+      "n_complete_denominator_units": 87,
+      "n_nodes": 102,
+      "n_major_denominators": 6,
+      "major_denominators": [
+        "B",
+        "Epithelial",
+        "Myeloid",
+        "NK",
+        "Plasma",
+        "T"
+      ],
+      "n_sources": 4,
+      "n_verified_patient_blocks": 31,
+      "n_unverified_library_units": 32,
+      "n_independent_blocks": 63,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "primary_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_whole_TME_primary_tumor",
+      "n_input_cells": 262854,
+      "n_complete_denominator_units": 118,
+      "n_nodes": 15,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 4,
+      "n_verified_patient_blocks": 43,
+      "n_unverified_library_units": 37,
+      "n_independent_blocks": 80,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "primary_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "whole_TME_metastatic_tumor",
+      "n_input_cells": 46842,
+      "n_complete_denominator_units": 14,
+      "n_nodes": 21,
+      "n_major_denominators": 6,
+      "major_denominators": [
+        "B",
+        "Endothelial",
+        "Epithelial",
+        "Fibroblast",
+        "Myeloid",
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 9,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 9,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "metastatic_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_whole_TME_metastatic_tumor",
+      "n_input_cells": 8968,
+      "n_complete_denominator_units": 10,
+      "n_nodes": 1,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 2,
+      "n_verified_patient_blocks": 8,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 8,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": false,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "metastatic_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "immune_enriched_primary_tumor",
+      "n_input_cells": 373504,
+      "n_complete_denominator_units": 52,
+      "n_nodes": 23,
+      "n_major_denominators": 3,
+      "major_denominators": [
+        "B",
+        "NK",
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 15,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 15,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "primary_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_immune_enriched_primary_tumor",
+      "n_input_cells": 345757,
+      "n_complete_denominator_units": 52,
+      "n_nodes": 14,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 15,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 15,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "primary_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "immune_enriched_metastatic_tumor",
+      "n_input_cells": 34633,
+      "n_complete_denominator_units": 5,
+      "n_nodes": 16,
+      "n_major_denominators": 3,
+      "major_denominators": [
+        "B",
+        "NK",
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 1,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 1,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": false,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "metastatic_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_immune_enriched_metastatic_tumor",
+      "n_input_cells": 32642,
+      "n_complete_denominator_units": 5,
+      "n_nodes": 12,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 1,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 1,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": false,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "metastatic_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "immune_enriched_blood",
+      "n_input_cells": 445534,
+      "n_complete_denominator_units": 62,
+      "n_nodes": 27,
+      "n_major_denominators": 3,
+      "major_denominators": [
+        "B",
+        "NK",
+        "T"
+      ],
+      "n_sources": 2,
+      "n_verified_patient_blocks": 22,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 22,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "blood"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_immune_enriched_blood",
+      "n_input_cells": 284757,
+      "n_complete_denominator_units": 62,
+      "n_nodes": 11,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 2,
+      "n_verified_patient_blocks": 22,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 22,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "blood"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "immune_enriched_normal_adjacent",
+      "n_input_cells": 134578,
+      "n_complete_denominator_units": 21,
+      "n_nodes": 22,
+      "n_major_denominators": 3,
+      "major_denominators": [
+        "B",
+        "NK",
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 12,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 12,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "normal_adjacent"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_immune_enriched_normal_adjacent",
+      "n_input_cells": 122339,
+      "n_complete_denominator_units": 21,
+      "n_nodes": 12,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 12,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 12,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "normal_adjacent"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "immune_enriched_lymph_node_involvement_unknown",
+      "n_input_cells": 130915,
+      "n_complete_denominator_units": 16,
+      "n_nodes": 31,
+      "n_major_denominators": 3,
+      "major_denominators": [
+        "B",
+        "NK",
+        "T"
+      ],
+      "n_sources": 2,
+      "n_verified_patient_blocks": 7,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 7,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": false,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "lymph_node_involvement_unknown"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_immune_enriched_lymph_node_involvement_unknown",
+      "n_input_cells": 93585,
+      "n_complete_denominator_units": 17,
+      "n_nodes": 14,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 2,
+      "n_verified_patient_blocks": 7,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 7,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": false,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "lymph_node_involvement_unknown"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "immune_enriched_unknown_material",
+      "n_input_cells": 101990,
+      "n_complete_denominator_units": 18,
+      "n_nodes": 38,
+      "n_major_denominators": 4,
+      "major_denominators": [
+        "B",
+        "Myeloid",
+        "NK",
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 11,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 11,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "unknown_material"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_immune_enriched_unknown_material",
+      "n_input_cells": 58412,
+      "n_complete_denominator_units": 19,
+      "n_nodes": 14,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 11,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 11,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "unknown_material"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "mixed_enriched_nuclei_primary_tumor",
+      "n_input_cells": 45578,
+      "n_complete_denominator_units": 8,
+      "n_nodes": 22,
+      "n_major_denominators": 4,
+      "major_denominators": [
+        "B",
+        "Glial",
+        "Myeloid",
+        "Oligodendrocyte"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 2,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 2,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": false,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "scope_mode": "material",
+      "material_classes": [
+        "primary_tumor"
+      ],
+      "material_mixed": false,
+      "composition_capture_bias_not_removed": true,
+      "longitudinal_patient_mean_is_not_response_or_timepoint_test": true,
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    }
+  ],
+  "fixed_P3_9CM_projection_completed": false,
+  "new_CM_discovery_not_validation_of_retrained_W": true
+}

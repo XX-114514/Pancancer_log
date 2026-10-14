@@ -1,7 +1,7 @@
 # 免疫治疗专用单细胞对象与下游 v1
 
 - 授权日期：2026-10-13（UTC+8）。
-- 当前阶段（2026-10-14 09:42 UTC+8）：全量整合和270子群注释完成；完整原生marker统计运行中，CNV/CM/最终权威尚未完成。
+- 当前阶段（2026-10-14 10:01 UTC+8）：整合、270子群和全原生marker完成；逐库CNV运行，CM主拟合后留出诊断失败正在恢复，最终权威待验收。
 - 输入：20261012_public_preprocessed_zarr_v2完整技术合集，Project_v5及历史免疫队列的既有QC/counts与作者临床资料。
 - 来源角色：独立验证/内部复现/机制参照/产品分支/隔离逐原研究登记。不得将Spatial、动物、bulk计为单细胞；CAR-T产品和免疫富集单独标记。
 - 输出：原项目卷新独立run下计数权威对象、降维/图/聚类、major/fine/state/单marker编号描述、逐样本CNV证据与精确回填、CM新发现及旧9CM固定投影；持久化前需阶段实测容量与完整验收。
@@ -36,3 +36,7 @@
 - 00:49 UTC / 08:49 UTC+8生产谱系检查点：B16、Endothelial15、Epithelial33、Erythroid13群，397,121细胞；Fibroblast在处理。仅部分注释，正式CNV/CM/最终权威pending，目标active。
 
 - 01:32:46 UTC / 09:32:46 UTC+8全量注释完成：[脱敏汇总](../inventories/runtime/2026-10-14/immune_atlas_v1/annotation_public.json)，2,670,057细胞/270子群；ID唯一实际核验。完整原生marker精炼运行中。免疫富集和T谱系宽范围含多组织，仅探索，追加材料分层。
+
+- 全原生marker：[完成报告](../inventories/runtime/2026-10-14/immune_atlas_v1/marker_refinement_public.json)、[完整270群目录](../inventories/runtime/2026-10-14/immune_atlas_v1/subcluster_catalog_aggregate_public.tsv)、[目录审计](../inventories/runtime/2026-10-14/immune_atlas_v1/annotation_catalog_audit_public.json)。
+- [材料实测](../inventories/runtime/2026-10-14/immune_atlas_v1/CM_material_preflight_public.json)通过；宽范围/材料CM主模型后LOSO因不可观测节点失败，新discovery_v2恢复合同保存旧拟合，输入先全细胞重计。逐库CNV保持独立运行。
+- [旧P3固定W门槛](../inventories/runtime/2026-10-14/immune_atlas_v1/P3_fixed_CM_projection_gate_public.json)要求多基因映射；本轮新发现与固定9CM验证分开，未宣称后者完成。

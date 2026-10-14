@@ -1,0 +1,271 @@
+major	subcluster	node_id	number	n_cells	n_libraries	n_sources	marker	marker_role	marker_positive_fraction	marker_mean_CP10K	marker_source_coverage	marker_source_contrast_support	subtype_candidate	subtype_evidence_status	identity_promoted
+B	B_IGHA1_1	b2e644dc5e410ede	1	9956	143	7	IGHA1	own_group_fullnative_expression_contrast	0.55614704700683	3.359733178510523	6	5	B_Activated	multigene_subtype_candidate	False
+B	B_NR4A1_2	20ffc5a9ec911072	2	46356	202	7	NR4A1	own_group_fullnative_expression_contrast	0.8189231167486409	14.199497655040394	6	6	B_Activated	multigene_subtype_candidate	False
+B	B_IGHM_3	3d1f07f8441c6fee	3	40021	252	9	IGHM	own_group_fullnative_expression_contrast	0.78828614977137	12.28798836226648	7	7	B_Activated	multigene_subtype_candidate	False
+B	B_CBLB_4	6a5203784c558cef	4	9577	356	9	CBLB	own_group_fullnative_expression_contrast	0.308656155372246	4.0124920344911645	9	3	B_Activated	multigene_subtype_candidate	False
+B	B_TNFRSF13B_5	7e720e956e2edfd2	5	16051	209	8	TNFRSF13B	own_group_fullnative_expression_contrast	0.48644944240234256	2.015843962075288	7	7	B_Activated	multigene_subtype_candidate	False
+B	B_IRAG2_6	57380329cf4fb837	6	6952	96	8	IRAG2	own_group_fullnative_expression_contrast	0.9338319907940161	9.566130117319164	5	5	B_Activated	multigene_subtype_candidate	False
+B	B_CD2_7	e297008fc44120ce	7	26277	380	9	CD2	own_group_fullnative_expression_contrast	0.6141873120980325	5.866996605867694	8	7	B_Activated	multigene_subtype_candidate	False
+B	B_DNAJB1_8	5b5f939ecb249e6b	8	14683	218	9	DNAJB1	own_group_fullnative_expression_contrast	0.9658108016073009	90.85446284920008	6	6	B_Activated	multigene_subtype_candidate	False
+B	B_ENO1_9	66bf54774c341cc9	9	13335	265	9	ENO1	own_group_fullnative_expression_contrast	0.7547056617922759	15.656601426317348	7	3	B_Activated	multigene_subtype_candidate	False
+B	B_TYMS_10	4d444769fee58bcf	10	16883	299	9	TYMS	own_group_fullnative_expression_contrast	0.7931647219096132	4.989776882118758	7	7	B_Activated	multigene_subtype_candidate	False
+B	B_GZMK_11	aa4c23fea66e6433	11	13851	270	7	GZMK	own_group_fullnative_expression_contrast	0.8712006353331889	20.060734720535685	6	6	B_Activated	multigene_subtype_candidate	False
+B	B_LAMP3_12	454a847c50e1a495	12	5429	206	7	LAMP3	own_group_fullnative_expression_contrast	0.9305581138331185	8.626401211011709	6	6	B_Activated	multigene_subtype_candidate	False
+B	B_TYROBP_13	6276030622c7db65	13	17239	255	9	TYROBP	own_group_fullnative_expression_contrast	0.6553164336678462	8.721708205078077	9	9	B_Activated	multigene_subtype_candidate	False
+B	B_IL3RA_14	8a057a0e68c162bc	14	4387	185	8	IL3RA	own_group_fullnative_expression_contrast	0.9106450877592888	7.386379200877558	6	6	B_Activated	multigene_subtype_candidate	False
+B	B_CST3_15	e4db7ee93dd45dc7	15	2096	200	9	CST3	own_group_fullnative_expression_contrast	0.6884541984732825	59.36210026779515	5	5	B_Activated	multigene_subtype_candidate	False
+B	B_IFITM3_16	aa14eb930cd2d7a7	16	4424	138	8	IFITM3	own_group_fullnative_expression_contrast	0.7509041591320073	14.992868374826894	6	6	B_Activated	multigene_subtype_candidate	False
+Endothelial	Endothelial_SELE_17	9dfcbcdc9880873b	17	2263	79	5	SELE	own_group_fullnative_expression_contrast	0.9270879363676535	32.30515948920609	2	2	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_NES_18	2f975883e9c59cfb	18	1886	108	8	NES	own_group_fullnative_expression_contrast	0.6802757158006363	2.6152999730571116	4	4	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_CCL21_19	7a22619e25eec43c	19	1254	75	6	CCL21	own_group_fullnative_expression_contrast	0.960127591706539	257.50691895539677	3	3	Endo_Lymphatic	multigene_subtype_candidate	False
+Endothelial	Endothelial_GJA4_20	2eab8e491c38a949	20	1433	108	6	GJA4	own_group_fullnative_expression_contrast	0.7578506629448709	6.698314315205896	4	4	Endo_Arterial	major_only	False
+Endothelial	Endothelial_TMSB10_21	4d560028a377fd22	21	1439	139	9	TMSB10	own_group_fullnative_representative_non_specific	0.8533703961084086	65.19587773429299	5	0	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_ACKR1_22	18b39b5b90ce7cc3	22	2800	82	5	ACKR1	own_group_fullnative_expression_contrast	0.9632142857142857	29.29333835375158	2	2	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_BTNL9_23	e17e590606e296bf	23	794	33	6	BTNL9	own_group_fullnative_expression_contrast	0.8299748110831234	6.931462554151074	2	2	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_ACKR1_24	dbdf7f079afb0ebf	24	924	93	6	ACKR1	own_group_fullnative_expression_contrast	0.9307359307359307	29.182542873237907	4	4	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_PTPRC_25	a003cfbad34bba53	25	643	61	5	PTPRC	own_group_fullnative_expression_contrast	0.6158631415241057	4.0033295667289535	3	3	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_MIR99AHG_26	8a0796399ca0a74d	26	672	45	6	MIR99AHG	own_group_fullnative_expression_contrast	0.7633928571428571	6.835142654037164	3	3	Endo_Venous	multigene_subtype_candidate	False
+Endothelial	Endothelial_ARL15_27	1ef0920a2872fbd2	27	991	53	5	ARL15	own_group_fullnative_expression_contrast	0.9142280524722503	30.999884546316142	3	3	Endo_Capillary	major_only	False
+Endothelial	Endothelial_IGFBP5_28	79b51cf818e9610b	28	315	13	2	IGFBP5	own_group_fullnative_expression_contrast	0.9587301587301588	102.57508017653318	2	2	Endo_Capillary	multigene_subtype_candidate	False
+Endothelial	Endothelial_CRHBP_29	79633be3a6d9fc56	29	329	6	3	CRHBP	own_group_fullnative_expression_contrast	0.9209726443768997	39.79970008515674	2	2	Endo_Capillary	major_only	False
+Endothelial	Endothelial_STAB2_30	9bc71ec3166d79a4	30	910	18	4	STAB2	own_group_fullnative_expression_contrast	0.8472527472527472	34.09945927417981	1	1	Endo_Capillary	multigene_subtype_candidate	False
+Endothelial	Endothelial_DOCK8_31	42ed6b08e16becd6	31	254	32	4	DOCK8	own_group_fullnative_expression_contrast	0.5826771653543307	7.284895699303403	2	2	Endo_Capillary	major_only	False
+Epithelial	Epithelial_COL17A1_32	b3baf1e8e425f3e1	32	1760	35	2	COL17A1	own_group_fullnative_expression_contrast	0.9369318181818181	7.5187106567462365	1	1	Epi_Basal	multigene_subtype_candidate	False
+Epithelial	Epithelial_HLA-DRA_33	e5c255c6814fe14b	33	5766	109	7	HLA-DRA	own_group_fullnative_expression_contrast	0.7800901838362817	7.239495836155562	3	3	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_PRCD_34	4481b5137b9d7d2e	34	144	5	3	PRCD	own_group_fullnative_expression_contrast	0.8541666666666666	2.7155493247204254	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_MGP_35	a395f00c65490229	35	16185	134	7	MGP	own_group_fullnative_expression_contrast	0.5356194006796416	25.48004292423942	6	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_SFRP1_36	7f5445d6f6675e98	36	5256	34	5	SFRP1	own_group_fullnative_expression_contrast	0.8706240487062404	7.373241003427096	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_KRT13_37	e9e683ecada0ec55	37	5334	55	3	KRT13	own_group_fullnative_expression_contrast	0.8488938882639671	72.76318366185029	1	1	Epi_Basal	multigene_subtype_candidate	False
+Epithelial	Epithelial_SOX2_38	c393a04726186216	38	2377	20	1	SOX2	own_group_fullnative_expression_contrast	0.8350862431636517	2.6486806562108742	1	1	Epi_Basal	multigene_subtype_candidate	False
+Epithelial	Epithelial_S100A2_39	ff040a6e0b85539e	39	9379	62	4	S100A2	own_group_fullnative_expression_contrast	0.9608700287877172	95.62900091684293	1	1	Epi_Basal	multigene_subtype_candidate	False
+Epithelial	Epithelial_CD74_40	35a276559f546398	40	4925	65	5	CD74	own_group_fullnative_expression_contrast	0.9484263959390863	31.872283676924244	1	1	Epi_Basal	multigene_subtype_candidate	False
+Epithelial	Epithelial_NTS_41	5019f039459ec958	41	4286	17	1	NTS	own_group_fullnative_expression_contrast	0.9580027998133458	99.3579223115665	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_GSTM1_42	b0b3b8d221ef9f4a	42	3542	20	1	GSTM1	own_group_fullnative_expression_contrast	0.8935629587803501	19.279582813507	1	1	Epi_Basal	multigene_subtype_candidate	False
+Epithelial	Epithelial_CXCL14_43	6833bb3c2a6b64fa	43	5438	31	5	CXCL14	own_group_fullnative_expression_contrast	0.789076866495035	19.814461293013856	1	1	Epi_Basal	major_only	False
+Epithelial	Epithelial_SCGB2A2_44	e5b84bed3737c0bd	44	3285	22	3	SCGB2A2	own_group_fullnative_expression_contrast	0.9540159411404047	177.1791156882433	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_SCGN_45	801b8ab30dead442	45	5850	18	3	SCGN	own_group_fullnative_expression_contrast	0.5331623931623931	3.8814754049668236	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_SAP25_46	cc166708a01fc1db	46	3674	26	4	SAP25	own_group_fullnative_expression_contrast	0.8377789874795862	2.201981846493707	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_TMPRSS11B_47	54ff0f1fac8db9cc	47	491	16	1	TMPRSS11B	own_group_fullnative_expression_contrast	0.9979633401221996	58.52581392945531	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_KRT81_48	2d095fdd922940ae	48	2368	17	3	KRT81	own_group_fullnative_expression_contrast	0.9113175675675675	13.800485856281563	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_TGM2_49	74a43915e6ac8409	49	1832	32	5	TGM2	own_group_fullnative_expression_contrast	0.7188864628820961	5.498757120368585	3	3	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_DCDC2_50	b5e4528b2107c4be	50	427	3	2	DCDC2	own_group_fullnative_expression_contrast	0.9742388758782201	9.052894977573732	1	1	Epi_EMT	multigene_subtype_candidate	False
+Epithelial	Epithelial_HTN1_51	e2f8819b0753f05a	51	1828	12	4	HTN1	own_group_fullnative_expression_contrast	0.9490131578947368	83.2049781020866	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_PIP_52	0ab71f0cc6e57fa0	52	4534	5	3	PIP	own_group_fullnative_expression_contrast	0.9907366563740626	100.62883226411074	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_CES1_53	6046fcbea01e2470	53	8903	6	2	CES1	own_group_fullnative_expression_contrast	0.9417050432438504	6.696708116387662	1	1	Epi_Basal	multigene_subtype_candidate	False
+Epithelial	Epithelial_LINC01876_54	c45995993d5e9da0	54	3427	18	4	LINC01876	own_group_fullnative_expression_contrast	0.7840676976947768	11.197660409109467	2	2	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_FXYD2_55	ccd7825f78094840	55	2086	18	5	FXYD2	own_group_fullnative_expression_contrast	0.9256951102588686	45.862703117122436	3	3	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_PDK4_56	70777c1a7c4c681d	56	2790	15	2	PDK4	own_group_fullnative_expression_contrast	0.9555555555555556	32.21181658077824	1	1	Epi_EMT	multigene_subtype_candidate	False
+Epithelial	Epithelial_LRMDA_57	9a3a200ceb521fba	57	3322	35	5	LRMDA	own_group_fullnative_expression_contrast	0.7465382299819386	14.32649943094517	2	2	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_XKR6_58	710b33ef8e358cf3	58	900	7	2	XKR6	own_group_fullnative_expression_contrast	0.8866666666666667	14.967305277792233	1	1	Epi_EPCAM	major_only	False
+Epithelial	Epithelial_MYEOV_59	20b48145458f0762	59	1792	9	2	MYEOV	own_group_fullnative_expression_contrast	0.7991071428571429	8.632533271083723	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_FDCSP_60	070dcc01b1b933ce	60	11457	9	2	FDCSP	own_group_fullnative_expression_contrast	0.9096622152395916	37.44133185789139	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_MIR31HG_61	8ed90d12ab92edc6	61	2408	5	1	MIR31HG	own_group_fullnative_expression_contrast	0.9264950166112956	41.41041015058418	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_PTPRN2_62	9fb6ab1b571199a9	62	1016	6	1	PTPRN2	own_group_fullnative_expression_contrast	0.812992125984252	19.98408676581033	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_TFF2_63	4e9653aa4d7c0bbb	63	2935	10	1	TFF2	own_group_fullnative_expression_contrast	0.8793867120954003	8.508769553527944	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Epithelial	Epithelial_DOK6_64	407e9fcb9b3d46e5	64	394	2	1	DOK6	own_group_fullnative_expression_contrast	0.8654822335025381	2.4211927423004576	1	1	Epi_EPCAM	multigene_subtype_candidate	False
+Erythroid	Erythroid_IGHG4_65	c3160a4bd7f53b04	65	126	16	4	IGHG4	own_group_fullnative_expression_contrast	0.8968253968253969	38.16999464209391	1	1		major_only	False
+Erythroid	Erythroid_LTB_66	c86c3ab0ecedb68a	66	472	81	8	LTB	own_group_fullnative_expression_contrast	0.5995762711864406	12.019357157943448	4	3		major_only	False
+Erythroid	Erythroid_HLA-DRA_67	103a35599e57171c	67	139	51	7	HLA-DRA	own_group_fullnative_expression_contrast	0.5971223021582733	16.185329360108426	2	2		major_only	False
+Erythroid	Erythroid_IFI27_68	8fed54b65e44e3db	68	218	19	4	IFI27	own_group_fullnative_expression_contrast	0.7431192660550459	25.316347263191613	2	2		major_only	False
+Erythroid	Erythroid_RIPOR2_69	705b0a8426786b91	69	305	35	7	RIPOR2	own_group_fullnative_expression_contrast	0.5147540983606558	8.271828997411301	2	2		major_only	False
+Erythroid	Erythroid_CCL5_70	cab96c290153771e	70	262	55	5	CCL5	own_group_fullnative_expression_contrast	0.916030534351145	28.571609434738757	4	4		major_only	False
+Erythroid	Erythroid_HBD_71	c2f3dbf16c14cfd5	71	82	30	7	HBD	own_group_fullnative_expression_contrast	0.7926829268292683	53.40269675005402	0	0		major_only	False
+Erythroid	Erythroid_RIPOR2_72	99834e36f3ecf79a	72	138	10	4	RIPOR2	own_group_fullnative_expression_contrast	0.8913043478260869	20.76345296263906	2	2		major_only	False
+Erythroid	Erythroid_FN1_73	e0933cbe32bc11a7	73	499	10	3	FN1	own_group_fullnative_expression_contrast	0.7194388777555111	25.229674870628113	1	1		major_only	False
+Erythroid	Erythroid_ITIH4_74	460134ee600ef46d	74	78	7	1	ITIH4	own_group_fullnative_expression_contrast	0.9743589743589743	50.340279847606034	1	1		major_only	False
+Erythroid	Erythroid_STAB1_75	e75d88f8226e0077	75	108	3	1	STAB1	own_group_fullnative_expression_contrast	0.7592592592592593	21.284254416402067	1	1		major_only	False
+Erythroid	Erythroid_CPA1_76	4424f1881f566e74	76	118	1	1	CPA1	own_group_fullnative_expression_contrast	1.0	44.91825713900562	1	1		major_only	False
+Erythroid	Erythroid_NCALD_77	d936aa1240152f90	77	41	1	1	NCALD	own_group_fullnative_expression_contrast	0.8780487804878049	22.70480254750715	1	1		major_only	False
+Fibroblast	Fibroblast_SRGN_78	c27ffd2c3ea9559e	78	4750	130	8	SRGN	own_group_fullnative_expression_contrast	0.3625263157894737	3.476679640871983	4	3	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_PKHD1L1_79	c1a7400bd7f3447a	79	100	6	3	PKHD1L1	own_group_fullnative_expression_contrast	0.97	21.564280478740205	1	1	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_COL11A1_80	a9c8f33eb2b9ff8b	80	5959	97	6	COL11A1	own_group_fullnative_expression_contrast	0.8603792582648095	13.151060504709077	3	3	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_WNT5A_81	74b0c80640e00021	81	3844	92	7	WNT5A	own_group_fullnative_expression_contrast	0.759105098855359	4.218012654933301	2	2	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_CFD_82	4e38fee56dc774c7	82	3780	87	5	CFD	own_group_fullnative_expression_contrast	0.8166666666666667	46.76765499049224	4	4	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_DCDC2_83	5bd380bb259497e5	83	2722	4	1	DCDC2	own_group_fullnative_expression_contrast	0.9801616458486407	9.300807036863983	1	1	CAF_MYO	major_only	False
+Fibroblast	Fibroblast_CACNA1C_84	dd00cf83a3b21a60	84	3247	43	5	CACNA1C	own_group_fullnative_expression_contrast	0.6914074530335694	12.57521274607681	2	1	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_ALB_85	0a2467c00d7b7c51	85	1053	76	6	ALB	own_group_fullnative_expression_contrast	0.251661918328585	6.8735360935817145	3	0	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_COL11A1_86	3bb35a5e5deea0ae	86	1975	38	4	COL11A1	own_group_fullnative_expression_contrast	0.9458227848101266	12.519325177421845	2	2	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_MMP11_87	3da60809cf6152e7	87	3888	82	5	MMP11	own_group_fullnative_expression_contrast	0.8626543209876543	28.29010326365694	2	2	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_CFD_88	1085a2f0e7224d65	88	1683	98	6	CFD	own_group_fullnative_expression_contrast	0.5929887106357694	41.2387603782825	3	3	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_CCDC102B_89	6fd6773bfe65f49e	89	2275	108	6	CCDC102B	own_group_fullnative_expression_contrast	0.7494505494505495	4.700916955586916	4	4	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_NR1H4_90	4cd626a4f8696fb5	90	1212	15	3	NR1H4	own_group_fullnative_expression_contrast	0.7896039603960396	20.730864744334195	1	1	CAF_COL	multigene_subtype_candidate	False
+Fibroblast	Fibroblast_HMGA2_91	18a640c522d7267f	91	1988	8	3	HMGA2	own_group_fullnative_expression_contrast	0.9310865191146881	22.999986635162884	2	2	CAF_COL	major_only	False
+Glial	Glial_GFAP_92	4e83913845f02540	92	651	12	4	GFAP	own_group_fullnative_representative_non_specific	0.5299539170506913	9.148754729553136	1	1		major_only	False
+Glial	Glial_AC109466.1_93	4fef81b29a314c11	93	4911	3	1	AC109466.1	own_group_fullnative_expression_contrast	0.9495011199348402	14.427168397792803	1	1		major_only	False
+Glial	Glial_CNR1_94	490750e9817ecaaf	94	496	2	1	CNR1	own_group_fullnative_expression_contrast	0.7560483870967742	3.2611317491859415	1	1		major_only	False
+Glial	Glial_ID3_95	b2d66de1f96b6f68	95	3428	3	1	ID3	own_group_fullnative_expression_contrast	0.8754375729288215	4.646193707439537	1	1		major_only	False
+Glial	Glial_FANCB_96	9a282c9647ef7b98	96	254	2	1	FANCB	own_group_fullnative_expression_contrast	0.8503937007874016	1.721130631547687	1	1		major_only	False
+Glial	Glial_IRAG1_97	f1e452d40f8ffe09	97	469	8	1	IRAG1	own_group_fullnative_expression_contrast	0.9722814498933902	10.728484172413749	1	1		major_only	False
+Glial	Glial_DOCK8_98	56361610d1bdd01c	98	548	11	2	DOCK8	own_group_fullnative_expression_contrast	0.9562043795620438	14.047459166525396	1	1		major_only	False
+Glial	Glial_KCNIP4_99	9ef2148fa0f5a074	99	404	6	1	KCNIP4	own_group_fullnative_expression_contrast	0.8168316831683168	12.381188428879906	1	1		major_only	False
+Glial	Glial_BRIP1_100	7ad9963808d4f1bc	100	3217	4	1	BRIP1	own_group_fullnative_expression_contrast	0.9527510102580043	5.239353208608942	1	1		major_only	False
+Glial	Glial_CACNA1A_101	ca222033d9eb091a	101	2247	4	1	CACNA1A	own_group_fullnative_expression_contrast	0.9528259902091678	12.417659967182605	1	1		major_only	False
+Glial	Glial_CCNB1_102	a8fa9d4c2ec85a6d	102	652	4	1	CCNB1	own_group_fullnative_expression_contrast	0.9754601226993865	4.971138387447378	1	1		major_only	False
+Glial	Glial_RRM2_103	f59bbaa3b3038ccc	103	58	2	1	RRM2	own_group_fullnative_expression_contrast	1.0	7.069772606819242	1	1		major_only	False
+Glial	Glial_IQCA1_104	dd4519255add05d2	104	942	4	1	IQCA1	own_group_fullnative_expression_contrast	0.9193205944798302	5.344609000981586	1	1		major_only	False
+Glial	Glial_PDGFRA_105	2ab2c13b3f520bb8	105	398	3	1	PDGFRA	own_group_fullnative_expression_contrast	0.8668341708542714	7.903258075461591	1	1		major_only	False
+Mast	Mast_CTSG_106	68a0117702d2eb98	106	1721	58	5	CTSG	own_group_fullnative_expression_contrast	0.7908192911098199	32.18507131242981	2	2	Mast_CPA3	major_only	False
+Mast	Mast_EEF1G_107	6c75ed890a881af1	107	672	138	8	EEF1G	own_group_fullnative_representative_non_specific	0.28273809523809523	3.6205800660726704	4	1	Mast_TPSAB1	major_only	False
+Mast	Mast_HLA-DPB1_108	fb57cd6f027cc929	108	609	49	7	HLA-DPB1	own_group_fullnative_expression_contrast	0.90311986863711	10.09509705327578	2	2	Mast_CPA3	major_only	False
+Mast	Mast_TPSD1_109	6705a77de2a3fcdf	109	1563	52	7	TPSD1	own_group_fullnative_expression_contrast	0.889315419065899	19.160203795651288	1	1	Mast_CPA3	multigene_subtype_candidate	False
+Mast	Mast_SLC24A3_110	2274e968610c1fcb	110	494	51	8	SLC24A3	own_group_fullnative_expression_contrast	0.8522267206477733	26.069829206384696	3	2	Mast_TPSAB1	major_only	False
+Mast	Mast_CD81_111	72bf4aed86d476c9	111	1364	85	6	CD81	own_group_fullnative_expression_contrast	0.7653958944281525	5.65273018723693	4	3	Mast_TPSAB1	major_only	False
+Mast	Mast_CLC_112	bc54e0c2ad0d58d3	112	101	29	6	CLC	own_group_fullnative_expression_contrast	0.8613861386138614	115.78974265651554	1	1	Mast_TPSAB1	multigene_subtype_candidate	False
+Mast	Mast_DNAJB1_113	dfe45395e8d90a6d	113	1282	55	6	DNAJB1	own_group_fullnative_expression_contrast	0.9742589703588144	42.12887488707994	2	2	Mast_CPA3	multigene_subtype_candidate	False
+Mast	Mast_CMA1_114	0ff095aef98c54df	114	108	16	4	CMA1	own_group_fullnative_expression_contrast	0.7777777777777778	18.358176981859007	1	1	Mast_CPA3	major_only	False
+Mast	Mast_SFN_115	77548e90a5760061	115	146	32	4	SFN	own_group_fullnative_expression_contrast	0.6438356164383562	12.18705818854849	2	2	Mast_TPSAB1	major_only	False
+Melanocytic	Melanocytic_ALB_116	8d7a940f6d255887	116	95	29	4	ALB	own_group_fullnative_representative_non_specific	0.4631578947368421	29.64955583893525	1	0		major_only	False
+Myeloid	Myeloid_CDKN1A_117	f28d782d07e002dc	117	28447	220	7	CDKN1A	own_group_fullnative_expression_contrast	0.8899005167504482	7.952776658918362	7	7	Macro_INFL	major_only	False
+Myeloid	Myeloid_LTB_118	15644d9d4d6d012a	118	16228	317	9	LTB	own_group_fullnative_expression_contrast	0.2941828937638649	3.8507130016223505	9	5	Mono_LILRB	multigene_subtype_candidate	False
+Myeloid	Myeloid_CCL4_119	f36be64fac14ac1a	119	3533	126	8	CCL4	own_group_fullnative_expression_contrast	0.8706481743560713	72.06849770499741	4	4	Macro_C1QC	multigene_subtype_candidate	False
+Myeloid	Myeloid_CXCL8_120	e333f44391fb2135	120	7603	171	9	CXCL8	own_group_fullnative_expression_contrast	0.9145074312771274	166.28206142529015	9	8	Macro_INFL	multigene_subtype_candidate	False
+Myeloid	Myeloid_GPR183_121	68048c3d10e7c228	121	12020	157	8	GPR183	own_group_fullnative_expression_contrast	0.8916805324459235	13.092432280320335	5	5	Macro_C1QC	multigene_subtype_candidate	False
+Myeloid	Myeloid_SLCO2B1_122	ff91dce63e74fc80	122	5389	91	8	SLCO2B1	own_group_fullnative_expression_contrast	0.8767860456485433	3.1297584546667374	4	4	Macro_C1QC	multigene_subtype_candidate	False
+Myeloid	Myeloid_PELATON_123	a1486e0ccaffb30e	123	11800	134	7	PELATON	own_group_fullnative_expression_contrast	0.9438135593220339	9.10556096965912	5	5	Mono_LILRB	multigene_subtype_candidate	False
+Myeloid	Myeloid_S100A12_124	caf35090a91586e0	124	32782	181	8	S100A12	own_group_fullnative_expression_contrast	0.8138002562381795	10.603112386339024	6	6	Mono_FCN1	multigene_subtype_candidate	False
+Myeloid	Myeloid_DIP2B_125	f5a0df39aaafca85	125	7636	234	9	DIP2B	own_group_fullnative_expression_contrast	0.4888685175484547	2.985998941466217	9	4	Mono_LILRB	multigene_subtype_candidate	False
+Myeloid	Myeloid_SPP1_126	5e6ec9bc39b077f6	126	11897	170	8	SPP1	own_group_fullnative_expression_contrast	0.8716483147011852	141.51766523947822	7	7	Macro_SPP1	multigene_subtype_candidate	False
+Myeloid	Myeloid_APOE_127	b7344376575b578a	127	21588	215	9	APOE	own_group_fullnative_expression_contrast	0.9480266814897165	121.64986239083368	7	7	Macro_C1QC	multigene_subtype_candidate	False
+Myeloid	Myeloid_C1QB_128	4ca9659fb4cc5891	128	14856	228	9	C1QB	own_group_fullnative_expression_contrast	0.9388126009693053	53.9705738979476	9	9	Macro_C1QC	multigene_subtype_candidate	False
+Myeloid	Myeloid_TUBB1_129	6cd68f952abf07d8	129	67	8	1	TUBB1	own_group_fullnative_expression_contrast	0.9850746268656716	70.24225313492431	1	1	Mono_LILRB	multigene_subtype_candidate	False
+NK	NK_CXCR4_130	454b0b2a37246f00	130	27573	254	7	CXCR4	own_group_fullnative_expression_contrast	0.8486200268378487	16.586168202219465	6	6	NK_XCL	major_only	False
+NK	NK_CREM_131	6e6c5e1161cdfadb	131	9417	284	7	CREM	own_group_fullnative_expression_contrast	0.8217054263565892	17.053292972995433	7	7	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_MACF1_132	889e63eb84341428	132	15406	378	9	MACF1	own_group_fullnative_expression_contrast	0.5644554069842919	7.05174791643219	9	5	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_KLRC1_133	e2e02de8b1615405	133	12672	231	8	KLRC1	own_group_fullnative_expression_contrast	0.8375157828282829	9.980160639845481	7	7	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_STMN1_134	ad5939c63f5c46fb	134	7742	264	9	STMN1	own_group_fullnative_expression_contrast	0.69142340480496	11.374529595790172	6	6	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_FCGR3A_135	97df2cee267b1575	135	25366	235	7	FCGR3A	own_group_fullnative_expression_contrast	0.9231254435070567	11.194962815912154	7	7	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_GZMH_136	e951be99f6f78714	136	12945	177	7	GZMH	own_group_fullnative_expression_contrast	0.8813441483198146	18.8339191041999	6	6	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_IL32_137	9d5918e707daf7f8	137	10652	302	7	IL32	own_group_fullnative_expression_contrast	0.9593503567405182	34.66905284035182	6	5	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_MTRNR2L12_138	43343b3ccf8f5b03	138	19285	282	9	MTRNR2L12	own_group_fullnative_expression_contrast	0.6234753596236942	86.58830286080263	6	1	NK_Cytotoxic	multigene_subtype_candidate	False
+NK	NK_IFIT3_139	dc1a6cbd2ca50bc0	139	8227	83	5	IFIT3	own_group_fullnative_expression_contrast	0.7700255257080345	11.732355662941265	4	4	NK_Cytotoxic	multigene_subtype_candidate	False
+Neuron	Neuron_SYNE2_140	529c2181932f68b6	140	818	23	3	SYNE2	own_group_fullnative_representative_non_specific	0.2078239608801956	2.289739579540273	2	0		major_only	False
+Neuron	Neuron_TTTY14_141	99f530fdc2b68a66	141	470	4	1	TTTY14	own_group_fullnative_expression_contrast	0.9680851063829787	3.389853739212586	1	1		major_only	False
+Neuron	Neuron_LINC02196_142	58b905d7209a2371	142	118	2	1	LINC02196	own_group_fullnative_expression_contrast	0.9745762711864406	7.707146708285427	1	1		major_only	False
+Neuron	Neuron_SEMA3E_143	8467e586f3e7c07f	143	286	8	1	SEMA3E	own_group_fullnative_expression_contrast	0.8636363636363636	3.3372005997798992	1	1		major_only	False
+Neuron	Neuron_PAWR_144	50fb111f336417cd	144	601	6	1	PAWR	own_group_fullnative_expression_contrast	0.9251247920133111	2.870665031600875	1	1		major_only	False
+Neuron	Neuron_KIT_145	b303c09fd8c9420f	145	489	8	1	KIT	own_group_fullnative_expression_contrast	0.9591002044989775	4.976857500910809	1	1		major_only	False
+Neuron	Neuron_ADARB2_146	f3abb1875230928d	146	1005	7	1	ADARB2	own_group_fullnative_expression_contrast	1.0	87.69535806057883	1	1		major_only	False
+Neuron	Neuron_CA10_147	64f12268fef0e212	147	834	2	1	CA10	own_group_fullnative_expression_contrast	0.9784172661870504	3.4512144726697387	1	1		major_only	False
+Neuron	Neuron_COL22A1_148	da1972af49eab68b	148	478	3	1	COL22A1	own_group_fullnative_expression_contrast	0.8430962343096234	2.3302901104741904	1	1		major_only	False
+Neuron	Neuron_ARSJ_149	d7630aef8ba867e7	149	519	2	1	ARSJ	own_group_fullnative_expression_contrast	0.7784200385356455	1.8260830982257672	1	1		major_only	False
+Neuron	Neuron_COBLL1_150	c4a8b545e206e73b	150	402	2	1	COBLL1	own_group_fullnative_expression_contrast	0.9402985074626866	3.3418118485365946	1	1		major_only	False
+Neuron	Neuron_TAFA4_151	8e6c103ab791bf81	151	127	5	1	TAFA4	own_group_fullnative_expression_contrast	0.9291338582677166	3.04449279456416	1	1		major_only	False
+Neuron	Neuron_SLCO2B1_152	0fb48247ea1b6f4d	152	89	3	2	SLCO2B1	own_group_fullnative_expression_contrast	0.898876404494382	16.882563600818372	1	1		major_only	False
+Neuron	Neuron_SYTL5_153	a5e5f0a168d1a40a	153	891	4	1	SYTL5	own_group_fullnative_expression_contrast	0.9371492704826038	3.2643347576285	1	1		major_only	False
+Neuron	Neuron_MEIS2_154	7c39a805b3e11d39	154	1867	3	1	MEIS2	own_group_fullnative_expression_contrast	0.9105516871987145	2.710814912058508	1	1		major_only	False
+Neuron	Neuron_ABTB3_155	7acbeb567930d3af	155	894	5	1	ABTB3	own_group_fullnative_expression_contrast	0.9955257270693513	7.09267503037291	1	1		major_only	False
+Neuron	Neuron_MEIS2_156	652f79fe7b91deca	156	484	4	1	MEIS2	own_group_fullnative_expression_contrast	0.9008264462809917	1.908718855871102	1	1		major_only	False
+Neuron	Neuron_GABRG1_157	769610d7b45e29ee	157	537	4	1	GABRG1	own_group_fullnative_expression_contrast	0.9124767225325885	1.7487290651340142	1	1		major_only	False
+Neuron	Neuron_LINC02073_158	c2d4290f08b570b2	158	100	5	1	LINC02073	own_group_fullnative_expression_contrast	0.88	3.038421013330938	1	1		major_only	False
+Neuron	Neuron_TTTY14_159	91658a9bb9ab9334	159	547	5	1	TTTY14	own_group_fullnative_expression_contrast	0.9670932358318098	3.2515718700446437	1	1		major_only	False
+Neuron	Neuron_HTR2C_160	53fb4051292f25e2	160	132	5	1	HTR2C	own_group_fullnative_expression_contrast	0.9772727272727273	16.76291960066614	1	1		major_only	False
+Neuron	Neuron_THEMIS_161	940b590971ff9949	161	306	5	1	THEMIS	own_group_fullnative_expression_contrast	0.8496732026143791	1.1471218766949418	1	1		major_only	False
+Neuron	Neuron_PLP1_162	0e93c242eab5a40d	162	256	6	2	PLP1	own_group_fullnative_expression_contrast	0.39453125	9.686221531773812	1	1		major_only	False
+Neuron	Neuron_MIR217HG_163	edc32e3c6e7d0a4e	163	208	4	1	MIR217HG	own_group_fullnative_expression_contrast	0.9375	12.607167488550422	1	1		major_only	False
+Neutrophil	Neutrophil_IFITM2_164	016a3f6bcd1d2618	164	7465	110	7	IFITM2	own_group_fullnative_expression_contrast	0.9324849296718017	68.27563074073142	4	4		major_only	False
+Neutrophil	Neutrophil_KRT6B_165	4b84e03bc34d115c	165	4391	49	2	KRT6B	own_group_fullnative_expression_contrast	0.8982008654065133	69.18297480990898	2	2		major_only	False
+Neutrophil	Neutrophil_AKR1B10_166	013bab388bbf35a3	166	1906	24	2	AKR1B10	own_group_fullnative_expression_contrast	0.8515215110178384	17.724319880251347	1	1		major_only	False
+Neutrophil	Neutrophil_KRT13_167	b4ef96117265c3a9	167	1270	40	1	KRT13	own_group_fullnative_expression_contrast	0.9858267716535433	264.40917837939173	1	1		major_only	False
+Neutrophil	Neutrophil_CDKN2A_168	28e6ed3ec2f0bb94	168	2264	41	2	CDKN2A	own_group_fullnative_expression_contrast	0.9567137809187279	13.923224666500378	2	2		major_only	False
+Neutrophil	Neutrophil_FABP5_169	45888c8f204d9b3d	169	5424	78	4	FABP5	own_group_fullnative_expression_contrast	0.7817109144542773	78.9395639054565	2	2		major_only	False
+Neutrophil	Neutrophil_CCL3_170	d435e1ba06518166	170	1814	136	7	CCL3	own_group_fullnative_expression_contrast	0.7976846747519294	87.57640761589771	6	6		major_only	False
+Neutrophil	Neutrophil_MAL_171	84b92448efe5ea81	171	1569	35	1	MAL	own_group_fullnative_expression_contrast	0.9968132568514978	124.49189907889492	1	1		major_only	False
+Neutrophil	Neutrophil_IL32_172	a61a98ab5752c9d5	172	4167	164	9	IL32	own_group_fullnative_expression_contrast	0.49940004799616033	15.069295103578733	5	4		major_only	False
+Neutrophil	Neutrophil_LYZ_173	7502823ca17fa510	173	3375	124	8	LYZ	own_group_fullnative_expression_contrast	0.9804444444444445	97.35545276355174	5	4		major_only	False
+Neutrophil	Neutrophil_SAA1_174	5aadd39d482122cb	174	642	28	4	SAA1	own_group_fullnative_expression_contrast	0.7710280373831776	25.2179184230921	2	2		major_only	False
+Neutrophil	Neutrophil_MUC4_175	959ff151528385b5	175	5207	45	1	MUC4	own_group_fullnative_expression_contrast	0.9633186095640484	29.33945990398109	1	1		major_only	False
+Neutrophil	Neutrophil_PI3_176	d0425b5be863922e	176	373	28	2	PI3	own_group_fullnative_expression_contrast	0.710455764075067	28.44978328801651	1	1		major_only	False
+Neutrophil	Neutrophil_ZEB2_177	c696b8c2b107a460	177	1004	71	7	ZEB2	own_group_fullnative_expression_contrast	0.9133466135458167	21.257631693716732	3	3		major_only	False
+Neutrophil	Neutrophil_TMPRSS2_178	4c9a7b6eb3c97170	178	1089	23	1	TMPRSS2	own_group_fullnative_expression_contrast	0.9173553719008265	10.8904681722969	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_MTRNR2L12_179	4e2e1dbc4244e162	179	383	19	7	MTRNR2L12	own_group_fullnative_expression_contrast	0.6762402088772846	26.730305487984594	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_XIST_180	f8d4a46794f321f7	180	362	4	1	XIST	own_group_fullnative_expression_contrast	0.988950276243094	9.855307802649952	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_FYB1_181	8182245ba92e1fac	181	118	13	3	FYB1	own_group_fullnative_expression_contrast	0.8305084745762712	10.125256379182874	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_EGFR_182	88feccc6c1e24a16	182	300	8	2	EGFR	own_group_fullnative_expression_contrast	0.9266666666666666	23.48967318456347	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_MYT1L_183	420a516b08f5ae6e	183	37	4	1	MYT1L	own_group_fullnative_expression_contrast	0.972972972972973	7.737140805848806	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_XIST_184	f2ef9d323771dd3d	184	413	2	1	XIST	own_group_fullnative_expression_contrast	0.9007263922518159	8.370719532836377	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_CSMD3_185	aef82d4042159332	185	621	6	1	CSMD3	own_group_fullnative_expression_contrast	0.71658615136876	3.831329104333467	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_OPALIN_186	39eab0c45b109065	186	2541	5	1	OPALIN	own_group_fullnative_expression_contrast	0.910271546635183	5.814074725084751	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_RASGRF1_187	474f26af2efaf530	187	1511	4	1	RASGRF1	own_group_fullnative_expression_contrast	0.885506287227002	3.952251391311826	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_FKBP5_188	b77f940181c00971	188	1331	5	1	FKBP5	own_group_fullnative_expression_contrast	0.873779113448535	5.3103067008141815	1	1		major_only	False
+Oligodendrocyte	Oligodendrocyte_SVEP1_189	49414cfd4750e5af	189	445	4	1	SVEP1	own_group_fullnative_expression_contrast	0.6674157303370787	4.866692423408375	1	1		major_only	False
+Pericyte_SMC	Pericyte_SMC_MYH11_190	feb2fa4fb56ec661	190	513	79	7	MYH11	own_group_fullnative_expression_contrast	0.9415204678362573	27.082167034156974	4	4	SMC_ACTA2	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_C11orf96_191	294fe6ea237aa5b1	191	832	83	6	C11orf96	own_group_fullnative_expression_contrast	0.9507211538461539	34.673298946016	2	2	SMC_ACTA2	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_S100A10_192	6c46346369e667e9	192	1143	127	8	S100A10	own_group_fullnative_expression_contrast	0.6185476815398075	13.111606847109625	4	3	SMC_ACTA2	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_PRRX1_193	d7bdb34d25e9b598	193	1235	101	6	PRRX1	own_group_fullnative_expression_contrast	0.8728744939271255	5.212769235926261	3	3	SMC_ACTA2	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_CD74_194	78801ca15c112a63	194	591	81	5	CD74	own_group_fullnative_expression_contrast	0.8815566835871405	48.3750579702307	3	3	SMC_ACTA2	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_ID1_195	65927de59c20775a	195	773	18	4	ID1	own_group_fullnative_expression_contrast	0.869340232858991	7.820512702291052	1	1	SMC_ACTA2	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_MTRNR2L8_196	54e31b7d09f1f2ac	196	977	23	5	MTRNR2L8	own_group_fullnative_expression_contrast	0.8331627430910952	87.57392858422621	1	1	SMC_ACTA2	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_CACNA1C_197	1116b1ab9c991a93	197	482	53	7	CACNA1C	own_group_fullnative_expression_contrast	0.8817427385892116	26.635000687897996	3	3	Pericyte_RGS5	multigene_subtype_candidate	False
+Pericyte_SMC	Pericyte_SMC_PRKCA_198	0e525b119a99c137	198	292	34	6	PRKCA	own_group_fullnative_expression_contrast	0.613013698630137	5.946033170797012	2	2	SMC_ACTA2	major_only	False
+Pericyte_SMC	Pericyte_SMC_CA12_199	8cf6ce451c5528d4	199	181	3	2	CA12	own_group_fullnative_expression_contrast	0.9060773480662984	7.085061721769462	1	1	SMC_ACTA2	multigene_subtype_candidate	False
+Plasma	Plasma_FCHSD2_200	1e4035c9543262b6	200	1110	137	8	FCHSD2	own_group_fullnative_expression_contrast	0.6783783783783783	10.383485683809411	6	5	Plasma_IgG	major_only	False
+Plasma	Plasma_CD2_201	e7dd1942ab3fed76	201	4114	150	8	CD2	own_group_fullnative_expression_contrast	0.48833252309188135	5.469452492908316	6	6	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IFITM3_202	0c48081ea9e1244a	202	4494	107	7	IFITM3	own_group_fullnative_expression_contrast	0.5425011125945706	7.713402742337133	4	3	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGFBP7_203	cb19f6ac4f188a3b	203	42	2	1	IGFBP7	own_group_fullnative_expression_contrast	0.9761904761904762	16.56846653761992	1	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG4_204	54b5c0ade9bc8ab7	204	3200	78	5	IGHG4	own_group_fullnative_expression_contrast	0.99875	969.3069863064602	3	3	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_JCHAIN_205	171f42c75387df1b	205	2273	183	7	JCHAIN	own_group_fullnative_expression_contrast	0.9018917729872415	186.39504140509854	4	4	Plasma_IgA	multigene_subtype_candidate	False
+Plasma	Plasma_SEC13_206	cab2b0cd99cf9db5	206	884	87	6	SEC13	own_group_fullnative_expression_contrast	0.6153846153846154	0.9501161072167781	3	2	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG4_207	64b452b316d71a97	207	4441	77	6	IGHG4	own_group_fullnative_expression_contrast	1.0	1066.2500036350516	3	3	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHA1_208	49c9999dfd6ead87	208	1691	115	7	IGHA1	own_group_fullnative_expression_contrast	0.9929036073329391	1274.82277013435	3	3	Plasma_IgA	multigene_subtype_candidate	False
+Plasma	Plasma_IGHM_209	c3bce51c6c508b8d	209	1969	160	7	IGHM	own_group_fullnative_expression_contrast	0.9994921279837481	1523.1932595655185	3	3	Plasmablast	multigene_subtype_candidate	False
+Plasma	Plasma_IFITM1_210	61824c13ae732c05	210	1060	120	7	IFITM1	own_group_fullnative_expression_contrast	0.7471698113207547	4.348848053477639	3	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHA2_211	196da468f025e71c	211	3628	189	8	IGHA2	own_group_fullnative_expression_contrast	0.7235391400220507	172.41067564341245	4	4	Plasma_IgA	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG3_212	db651b23dfefeb2d	212	5878	111	7	IGHG3	own_group_fullnative_expression_contrast	0.9998298741068391	586.9343045336487	3	3	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IFITM1_213	ff3cab630728498f	213	1798	123	7	IFITM1	own_group_fullnative_expression_contrast	0.7719688542825361	4.6732681483809095	4	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_ERGIC3_214	a6dcd84c1c420449	214	611	77	7	ERGIC3	own_group_fullnative_expression_contrast	0.7315875613747954	2.134553625959316	3	2	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG2_215	d1ff313a0c9b444d	215	2686	149	7	IGHG2	own_group_fullnative_expression_contrast	1.0	572.7766706202731	4	4	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG2_216	ccd08c198d7f3226	216	1790	145	7	IGHG2	own_group_fullnative_expression_contrast	0.9960893854748604	703.7974831785782	4	4	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG3_217	82cd081ded045c93	217	524	78	6	IGHG3	own_group_fullnative_expression_contrast	1.0	843.6901285474192	3	3	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG3_218	b39af77db4bc6817	218	3926	96	5	IGHG3	own_group_fullnative_expression_contrast	0.999490575649516	560.3134936621511	3	3	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGLL5_219	0ff4ffc3af5bfca4	219	945	68	3	IGLL5	own_group_fullnative_expression_contrast	0.9441340782122905	297.2361058725063	1	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_ANKRD37_220	64f98dabda05db1c	220	2095	144	7	ANKRD37	own_group_fullnative_expression_contrast	0.5159904534606206	1.774915436387524	5	2	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IL32_221	ab36544d60a7cf27	221	1277	27	4	IL32	own_group_fullnative_expression_contrast	0.44557556773688334	13.25895595878995	1	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IGHG3_222	f784e72bf4c22f57	222	1230	68	4	IGHG3	own_group_fullnative_expression_contrast	1.0	461.29791312335	3	3	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_KDELR1_223	dc25c2715c08cd52	223	3078	138	7	KDELR1	own_group_fullnative_expression_contrast	0.7560103963612735	2.5451977302942614	5	4	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_GNLY_224	201924f72784fe9b	224	100	6	2	GNLY	own_group_fullnative_expression_contrast	0.87	29.704458672394875	1	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_AC233755.1_225	ec0fe2870dbe14ce	225	734	96	7	AC233755.1	own_group_fullnative_expression_contrast	0.41553133514986373	25.107464587379795	2	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IFITM1_226	14d298d2f89a36e5	226	1359	106	7	IFITM1	own_group_fullnative_expression_contrast	0.7623252391464312	4.184895478874869	3	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_IFITM1_227	962915f01b5212c7	227	1413	107	7	IFITM1	own_group_fullnative_expression_contrast	0.7558386411889597	4.232351686309399	3	1	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_RPN1_228	83b913f7108568d7	228	513	87	7	RPN1	own_group_fullnative_expression_contrast	0.7387914230019493	2.235250063997673	3	2	Plasmablast	major_only	False
+Plasma	Plasma_PTPRC_229	ea89815dd4d24f1c	229	1012	9	4	PTPRC	own_group_fullnative_expression_contrast	0.7648221343873518	14.69701463840576	2	2	Plasma_IgG	multigene_subtype_candidate	False
+Plasma	Plasma_NA_230	2df0a3d20e13314b	230	23	1	1	NA	no_valid_native_marker			0	0	Plasma_IgG	multigene_subtype_candidate	False
+T	T_GZMB_231	c3f761a9da61f578	231	75236	241	7	GZMB	own_group_fullnative_expression_contrast	0.8263065553724281	20.10681531850823	6	6	CD8_Effector	multigene_subtype_candidate	False
+T	T_GZMK_232	4ca1f961fb61fd38	232	148421	251	7	GZMK	own_group_fullnative_expression_contrast	0.9591634606962627	20.678728864235207	6	6	CD8_Effector	multigene_subtype_candidate	False
+T	T_TYMS_233	495f402778399ace	233	99499	353	7	TYMS	own_group_fullnative_expression_contrast	0.9225419350948251	5.828884389582316	7	7	CD8_Effector	multigene_subtype_candidate	False
+T	T_CCL4_234	ef485e0199dcd1b2	234	67056	235	7	CCL4	own_group_fullnative_expression_contrast	0.7953948938200907	35.79653470777129	6	6	CD8_Effector	multigene_subtype_candidate	False
+T	T_CTLA4_235	39697d077b6cb8bf	235	106529	343	7	CTLA4	own_group_fullnative_expression_contrast	0.7279332388363732	5.716899199313594	7	7	Treg	multigene_subtype_candidate	False
+T	T_DNAJB1_236	708a2b4a32125af1	236	102415	240	8	DNAJB1	own_group_fullnative_expression_contrast	0.973451154616023	75.79210634212347	6	6	Naive_memory_program	multigene_subtype_candidate	False
+T	T_LTB_237	9cc9a643be67e220	237	170370	358	9	LTB	own_group_fullnative_expression_contrast	0.9418911780243	30.92305445112071	7	6	Naive_memory_program	multigene_subtype_candidate	False
+T	T_ATOX1_238	98458987db699851	238	99675	359	8	ATOX1	own_group_fullnative_expression_contrast	0.7877200902934537	1.7511319269998646	7	7	Naive_memory_program	multigene_subtype_candidate	False
+T	T_IL7R_239	ffecf8d2caf45264	239	217593	284	8	IL7R	own_group_fullnative_expression_contrast	0.9162886673744101	20.42725444061286	6	6	Naive_memory_program	multigene_subtype_candidate	False
+T	T_CTSW_240	b0d4477ad9b2ae93	240	89410	275	7	CTSW	own_group_fullnative_expression_contrast	0.7696454535286881	6.5185270032669935	6	6	CD8_Effector	multigene_subtype_candidate	False
+T	T_NKG7_241	1505029661ca3f4d	241	123295	363	8	NKG7	own_group_fullnative_expression_contrast	0.9801289590007705	49.603892244613824	7	7	CD8_Effector	multigene_subtype_candidate	False
+T	T_H1-5_242	59eb77ab48c9904d	242	26577	266	9	H1-5	own_group_fullnative_expression_contrast	0.69804718365504	5.619089684305126	9	9	Naive_memory_program	multigene_subtype_candidate	False
+T	T_LEF1_243	3b73c5c5816cce97	243	46513	307	8	LEF1	own_group_fullnative_expression_contrast	0.4726850557908542	1.8539897115794353	7	6	Naive_memory_program	major_only	False
+T	T_XIST_244	5207402e5c8588ac	244	102271	397	9	XIST	own_group_fullnative_expression_contrast	0.23146346471629298	2.9606933021856565	9	1	Naive_memory_program	major_only	False
+T	T_KLRG1_245	ef4500662cacb599	245	95539	325	8	KLRG1	own_group_fullnative_expression_contrast	0.5790200860381625	4.1207809352468505	7	7	CD8_Effector	multigene_subtype_candidate	False
+T	T_GZMK_246	b33869aa78719435	246	953	108	7	GZMK	own_group_fullnative_expression_contrast	0.9884575026232949	25.542418620399367	3	3	CD8_Effector	multigene_subtype_candidate	False
+T_NK_boundary	T_NK_boundary_DNAJB1_247	f57ef01c515b8c5d	247	1470	151	7	DNAJB1	own_group_fullnative_expression_contrast	0.9707482993197278	85.20864868311436	5	5		major_only	False
+T_NK_boundary	T_NK_boundary_GZMK_248	126ee825df378459	248	2286	190	7	GZMK	own_group_fullnative_expression_contrast	0.9024496937882764	18.7133675466869	5	5		major_only	False
+T_NK_boundary	T_NK_boundary_CD55_249	08b89cdcb8e159ec	249	1461	180	7	CD55	own_group_fullnative_expression_contrast	0.5400410677618069	3.8065656623007977	5	5		major_only	False
+T_NK_boundary	T_NK_boundary_CST3_250	48d6305138c85352	250	374	58	6	CST3	own_group_fullnative_expression_contrast	0.9358288770053476	17.41967611650981	3	3		major_only	False
+T_NK_boundary	T_NK_boundary_GNLY_251	0e0fe0116fc7b43a	251	2732	260	9	GNLY	own_group_fullnative_expression_contrast	0.5977306002928258	11.029717932444887	6	2		major_only	False
+T_NK_boundary	T_NK_boundary_CXCL13_252	a04fec9a1b3c39fa	252	927	132	8	CXCL13	own_group_fullnative_expression_contrast	0.5997842502696872	21.79727504186133	5	5		major_only	False
+T_NK_boundary	T_NK_boundary_MACF1_253	781d314ca3f9a0c7	253	708	148	9	MACF1	own_group_fullnative_expression_contrast	0.7768361581920904	7.088164869430056	4	4		major_only	False
+T_NK_boundary	T_NK_boundary_KLRB1_254	cf22e5267f0c3bf6	254	2023	93	6	KLRB1	own_group_fullnative_expression_contrast	0.957983193277311	24.029364446496086	2	2		major_only	False
+T_NK_boundary	T_NK_boundary_H2AC14_255	287b9af4d6a6027f	255	428	24	4	H2AC14	own_group_fullnative_expression_contrast	0.9065420560747663	15.398994534413236	1	1		major_only	False
+Unresolved	Unresolved_IFITM3_256	b5f43e6fab2cb88f	256	7879	134	7	IFITM3	own_group_fullnative_expression_contrast	0.8686381520497525	20.061097073530803	5	5		major_only	False
+Unresolved	Unresolved_TYROBP_257	59b1f9bb9b4db39e	257	9903	253	9	TYROBP	own_group_fullnative_expression_contrast	0.7844087650207008	14.937004441623202	8	8		major_only	False
+Unresolved	Unresolved_TUBA1B_258	a259f579f921a60e	258	15349	293	9	TUBA1B	own_group_fullnative_expression_contrast	0.6784806827806372	17.322957077865848	9	9		major_only	False
+Unresolved	Unresolved_DNAJB1_259	5230e617f8edb697	259	17590	248	9	DNAJB1	own_group_fullnative_expression_contrast	0.9341102899374645	85.92747313549953	7	7		major_only	False
+Unresolved	Unresolved_PARD3_260	05ba62c36a03ed6b	260	13716	137	9	PARD3	own_group_fullnative_expression_contrast	0.5551181102362205	7.412358654620954	6	4		major_only	False
+Unresolved	Unresolved_PTPRZ1_261	8839dd5e5942e2f3	261	667	4	1	PTPRZ1	own_group_fullnative_expression_contrast	0.9730134932533733	38.25030535992875	1	1		major_only	False
+Unresolved	Unresolved_SRGN_262	6c5c760514d2b0ce	262	21484	315	7	SRGN	own_group_fullnative_expression_contrast	0.9226401042636381	38.94677669144668	7	7		major_only	False
+Unresolved	Unresolved_PTPRC_263	e1317c8d43fd29d2	263	28573	367	9	PTPRC	own_group_fullnative_expression_contrast	0.7384593847338397	23.756609141686233	9	8		major_only	False
+Unresolved	Unresolved_ZEB2_264	259a16062ba81046	264	12475	165	9	ZEB2	own_group_fullnative_expression_contrast	0.653627254509018	13.517387443589236	7	6		major_only	False
+Unresolved	Unresolved_CD52_265	5fe5d3d7e68a71ff	265	18751	364	9	CD52	own_group_fullnative_expression_contrast	0.5984214175243987	13.197732140211743	7	6		major_only	False
+Unresolved	Unresolved_FCN1_266	74dcd1f0efcc7a5a	266	3405	162	7	FCN1	own_group_fullnative_expression_contrast	0.9450807635829662	24.54240449080732	5	5		major_only	False
+Unresolved	Unresolved_PLD4_267	293f1e6d91b90914	267	1020	158	8	PLD4	own_group_fullnative_expression_contrast	0.9029411764705882	12.447000689976024	5	5		major_only	False
+Unresolved	Unresolved_APOB_268	8c7f9a31f9e19fc3	268	18260	25	3	APOB	own_group_fullnative_expression_contrast	0.9461664841182913	29.634224746847043	1	1		major_only	False
+Unresolved	Unresolved_GSTA1_269	3820549bda8e879c	269	996	6	4	GSTA1	own_group_fullnative_expression_contrast	0.9668674698795181	33.35138895447123	2	2		major_only	False
+Unresolved	Unresolved_NRXN1_270	f522ffc94ef3cff2	270	1273	7	2	NRXN1	own_group_fullnative_expression_contrast	0.9890023566378633	102.249727837047	1	1		major_only	False

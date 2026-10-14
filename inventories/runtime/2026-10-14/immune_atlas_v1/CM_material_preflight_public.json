@@ -1,0 +1,97 @@
+{
+  "observed_utc": "2026-10-14T01:51:21.621641+00:00",
+  "n_cells": 2670057,
+  "n_libraries": 400,
+  "every_original_library_single_material": true,
+  "material_counts": {
+    "primary_tumor": 1295421,
+    "blood": 460361,
+    "infusion_product": 396593,
+    "normal_adjacent": 143878,
+    "lymph_node_involvement_unknown": 141379,
+    "metastatic_tumor": 125922,
+    "unknown_material": 106503
+  },
+  "source_material_counts": {
+    "blood": {
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 0,
+      "GSE169246": 322184,
+      "GSE176021": 138177,
+      "GSE256326": 0,
+      "GSE286827": 0,
+      "GSE292046": 0,
+      "GSE294109": 0,
+      "GSE305078": 0,
+      "GSE316195": 0
+    },
+    "infusion_product": {
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 396593,
+      "GSE169246": 0,
+      "GSE176021": 0,
+      "GSE256326": 0,
+      "GSE286827": 0,
+      "GSE292046": 0,
+      "GSE294109": 0,
+      "GSE305078": 0,
+      "GSE316195": 0
+    },
+    "lymph_node_involvement_unknown": {
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 0,
+      "GSE169246": 60673,
+      "GSE176021": 80706,
+      "GSE256326": 0,
+      "GSE286827": 0,
+      "GSE292046": 0,
+      "GSE294109": 0,
+      "GSE305078": 0,
+      "GSE316195": 0
+    },
+    "metastatic_tumor": {
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 0,
+      "GSE169246": 0,
+      "GSE176021": 36304,
+      "GSE256326": 0,
+      "GSE286827": 0,
+      "GSE292046": 0,
+      "GSE294109": 11796,
+      "GSE305078": 0,
+      "GSE316195": 77822
+    },
+    "normal_adjacent": {
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 0,
+      "GSE169246": 0,
+      "GSE176021": 143878,
+      "GSE256326": 0,
+      "GSE286827": 0,
+      "GSE292046": 0,
+      "GSE294109": 0,
+      "GSE305078": 0,
+      "GSE316195": 0
+    },
+    "primary_tumor": {
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 0,
+      "GSE169246": 0,
+      "GSE176021": 469429,
+      "GSE256326": 22452,
+      "GSE286827": 375019,
+      "GSE292046": 52525,
+      "GSE294109": 118447,
+      "GSE305078": 252822,
+      "GSE316195": 4727
+    },
+    "unknown_material": {
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea": 0,
+      "GSE169246": 106503,
+      "GSE176021": 0,
+      "GSE256326": 0,
+      "GSE286827": 0,
+      "GSE292046": 0,
+      "GSE294109": 0,
+      "GSE305078": 0,
+      "GSE316195": 0
+    }
+  },
+  "source_patient_count_not_global_independence": true,
+  "no_material_or_clinical_missingness_imputed": true,
+  "real_categorical_input_API_pass": true
+}

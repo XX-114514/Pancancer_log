@@ -4,9 +4,11 @@
 # network observation. All row-level results remain on the private server.
 options(stringsAsFactors=FALSE)
 args<-commandArgs(trailingOnly=TRUE)
-if(length(args)!=3L)stop('Usage: run_immune_CM.R SCOPE_DIR COVARNET_R_DIR CODE_SHA')
+if(!(length(args)%in%c(3L,4L,5L)))stop('Usage: run_immune_CM.R SCOPE_DIR COVARNET_R_DIR CODE_SHA [ATTEMPT [RESUME_DISCOVERY_DIR]]')
 scope<-args[[1]];rdir<-args[[2]];code_sha<-args[[3]]
-out<-file.path(scope,'discovery_v1')
+attempt<-if(length(args)>=4L)args[[4]]else 'discovery_v1'
+if(!grepl('^discovery_v[0-9]+$',attempt))stop('Invalid immutable discovery attempt')
+out<-file.path(scope,attempt)
 if(dir.exists(out))stop('Existing discovery preserved')
 dir.create(out,recursive=TRUE)
 for(pkg in c('NMF','dplyr','reshape2','igraph','jsonlite'))if(!requireNamespace(pkg,quietly=TRUE))stop('Missing ',pkg)
@@ -32,7 +34,11 @@ meta_block<-meta[match(blocks,meta$independent_unit),,drop=FALSE]
 max_rank<-min(12L,nrow(balanced)-1L,floor(ncol(balanced)/4))
 if(max_rank<2L)stop('Insufficient independent composition blocks')
 profiles<-list();models<-list()
-for(k in 2:max_rank){
+resume<-if(length(args)>=5L)args[[5]]else ''
+if(nzchar(resume)){
+ profile<-read.delim(file.path(resume,'rank_survey.tsv'))
+ if(!identical(as.integer(profile$rank),as.integer(2:max_rank)))stop('Resume rank survey scope differs')
+}else for(k in 2:max_rank){
  message('rank survey K=',k,' blocks=',ncol(balanced))
  fit<-nmf(balanced,k,method='nsNMF',nrun=10,seed=20261013+k,.options='v',maxIter=1000)
  summ<-summary(fit)
@@ -40,7 +46,7 @@ for(k in 2:max_rank){
  profiles[[as.character(k)]]<-data.frame(rank=k,cophenetic=cophenetic,rss=sum((balanced-fitted(fit))^2))
  models[[as.character(k)]]<-fit
 }
-profile<-do.call(rbind,profiles)
+if(!nzchar(resume))profile<-do.call(rbind,profiles)
 write.table(profile,file.path(out,'rank_survey.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
 if(any(!is.finite(profile$cophenetic)))stop('NMF consensus stability unavailable')
 # Pre-specified stability heuristic: largest rank before the first material
@@ -48,7 +54,15 @@ if(any(!is.finite(profile$cophenetic)))stop('NMF consensus stability unavailable
 drops<-which(diff(profile$cophenetic)<(-0.02))
 selected<-if(length(drops))profile$rank[min(drops)]else max(profile$rank)
 message('selected discovery rank K=',selected)
-fit<-nmf(balanced,selected,method='nsNMF',nrun=30,seed=20261013,.options='v',maxIter=2000)
+if(nzchar(resume)){
+ fit<-readRDS(file.path(resume,'NMF_discovery.rds'))
+ oldW<-as.matrix(read.delim(file.path(resume,'W_private.tsv'),row.names=1,check.names=FALSE))
+ oldH<-as.matrix(read.delim(file.path(resume,'H_patient_block_private.tsv'),row.names=1,check.names=FALSE))
+ if(!identical(rownames(basis(fit)),rownames(balanced))||!identical(colnames(coef(fit)),colnames(balanced))||ncol(basis(fit))!=selected)stop('Resume model identity or selected rank differs')
+ if(!identical(dim(oldW),dim(basis(fit)))||!identical(dim(oldH),dim(coef(fit)))||max(abs(oldW-basis(fit)))>1e-8||max(abs(oldH-coef(fit)))>1e-8)stop('Resume saved model/table parity failed')
+ if(any(!is.finite(basis(fit)))||any(!is.finite(coef(fit)))||any(basis(fit)<0)||any(coef(fit)<0))stop('Invalid resume factors')
+ message('Reusing completed immutable main fit; rerun diagnostics only')
+}else fit<-nmf(balanced,selected,method='nsNMF',nrun=30,seed=20261013,.options='v',maxIter=2000)
 colnames(basis(fit))<-sprintf('CM%02d',seq_len(selected));rownames(coef(fit))<-colnames(basis(fit))
 saveRDS(fit,file.path(out,'NMF_discovery.rds'))
 write.table(basis(fit),file.path(out,'W_private.tsv'),sep='\t',quote=FALSE,col.names=NA)
@@ -89,16 +103,24 @@ for(name in c('global','each'))for(type in c('node','edge'))write.table(network[
 write.table(network$filter,file.path(out,'CM_members.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
 # Source hold-out stability refits learn new W for diagnostics, never count as
 # fixed-reference external validation. Compare all components by cosine matrix.
-stability<-list();W<-basis(fit)
+stability<-list();holdout_status<-list();W<-basis(fit)
 cosine<-function(A,B){A<-sweep(A,2,sqrt(colSums(A^2)),'/');B<-sweep(B,2,sqrt(colSums(B^2)),'/');t(A)%*%B}
 for(study in unique(meta_block$dataset)){
  keep<-meta_block$dataset!=study
- if(sum(keep)<max(8L,selected+1L))next
+ null_rows<-rowSums(balanced[,keep,drop=FALSE])<=0
+ reason<-if(sum(keep)<max(8L,selected+1L))'insufficient_training_blocks'else if(any(null_rows))'unobservable_nodes_after_source_holdout'else 'estimable'
+ holdout_status[[study]]<-data.frame(heldout_source=study,n_training_blocks=sum(keep),n_unobservable_nodes=sum(null_rows),status=reason)
+ if(reason!='estimable'){
+   message('LOSO not estimable for ',study,': ',reason,'; missing nodes are not biological zero')
+   next
+ }
+ message('LOSO refit ',study)
  held<-nmf(balanced[,keep,drop=FALSE],selected,method='nsNMF',nrun=10,seed=20261013,.options='v',maxIter=1000)
  sim<-cosine(W,basis(held));write.table(sim,file.path(out,paste0('LOSO_cosine_',make.names(study),'.tsv')),sep='\t',quote=FALSE,col.names=NA)
  stability[[study]]<-data.frame(heldout_source=study,cm=colnames(W),best_cosine=apply(sim,1,max),one_to_one_assignment_not_assumed=TRUE)
 }
 if(length(stability))write.table(do.call(rbind,stability),file.path(out,'LOSO_stability.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
+write.table(do.call(rbind,holdout_status),file.path(out,'LOSO_scope_status.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
 png(file.path(out,'rank_survey.png'),width=1400,height=1000,res=150)
 plot(profile$rank,profile$cophenetic,type='b',xlab='Rank',ylab='Consensus cophenetic');abline(v=selected,col='red',lty=2);dev.off()
 png(file.path(out,'CM_W_heatmap.png'),width=1800,height=1600,res=160)
@@ -113,6 +135,8 @@ report<-list(observed_utc=format(Sys.time(),tz='UTC',usetz=TRUE),code_sha=code_s
  new_discovery_not_fixed_reference_validation=TRUE,clinical_outcomes_used=FALSE,
  repeated_patient_network_averaged=TRUE,source_centered_correlations=TRUE,
  LOSO_refit_count=length(stability),LOSO_matching='full_cosine_matrix;row_best_is_diagnostic_not_one_to_one_proof',
+ LOSO_unestimable_count=sum(vapply(holdout_status,function(x)x$status!='estimable',logical(1))),
+ resumed_completed_main_fit=nzchar(resume),
  authority='candidate_discovery_modules;clinical_validation_and_biological_review_pending')
 jsonlite::write_json(report,file.path(out,'CM_public.json'),auto_unbox=TRUE,pretty=TRUE)
 capture.output(sessionInfo(),file=file.path(out,'session_info_private.txt'))

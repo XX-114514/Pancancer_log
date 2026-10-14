@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-10-14T01:56:35.252592+00:00",
+  "n_cells": 2670057,
+  "n_nodes": 270,
+  "n_T_nodes": 16,
+  "all_group_counts_reconcile": true,
+  "display_and_node_ID_unique": true,
+  "one_marker_number_contract_exact": true,
+  "all_marker_detection_fractions_bounded": true,
+  "fine_identity_gold": false,
+  "descriptor_gene_is_not_cell_identity": true,
+  "source_counts_not_patient_counts": true,
+  "n_descriptors_sex_associated": 3,
+  "n_descriptors_chaperone_associated": 5
+}

@@ -1,0 +1,16 @@
+{
+  "observed_utc": "2026-10-14T01:54:40.565284+00:00",
+  "n_cells": 2670057,
+  "n_nodes": 270,
+  "n_native_union_genes": 49563,
+  "all_cell_native_expression_statistics": true,
+  "marker_origin_counts": {
+    "own_group_fullnative_expression_contrast": 264,
+    "own_group_fullnative_representative_non_specific": 5,
+    "no_valid_native_marker": 1
+  },
+  "one_marker_per_display": true,
+  "SHA_in_separate_node_id": true,
+  "formal_DEG_tests": false,
+  "authoritative_release": false
+}

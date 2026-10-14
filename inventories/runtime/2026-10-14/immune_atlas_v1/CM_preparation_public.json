@@ -1,0 +1,99 @@
+{
+  "observed_utc": "2026-10-14T01:55:18.914933+00:00",
+  "scopes": [
+    {
+      "scope": "whole_TME",
+      "n_input_cells": 773573,
+      "n_complete_denominator_units": 112,
+      "n_nodes": 80,
+      "n_major_denominators": 5,
+      "major_denominators": [
+        "B",
+        "Epithelial",
+        "Myeloid",
+        "NK",
+        "T"
+      ],
+      "n_sources": 5,
+      "n_verified_patient_blocks": 43,
+      "n_unverified_library_units": 36,
+      "n_independent_blocks": 79,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "immune_enriched",
+      "n_input_cells": 1221154,
+      "n_complete_denominator_units": 174,
+      "n_nodes": 40,
+      "n_major_denominators": 3,
+      "major_denominators": [
+        "B",
+        "NK",
+        "T"
+      ],
+      "n_sources": 2,
+      "n_verified_patient_blocks": 38,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 38,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "CAR_product",
+      "n_input_cells": 381955,
+      "n_complete_denominator_units": 53,
+      "n_nodes": 23,
+      "n_major_denominators": 3,
+      "major_denominators": [
+        "B",
+        "NK",
+        "T"
+      ],
+      "n_sources": 1,
+      "n_verified_patient_blocks": 53,
+      "n_unverified_library_units": 0,
+      "n_independent_blocks": 53,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    },
+    {
+      "scope": "T_lineage_biopsy",
+      "n_input_cells": 1210934,
+      "n_complete_denominator_units": 310,
+      "n_nodes": 16,
+      "n_major_denominators": 1,
+      "major_denominators": [
+        "T"
+      ],
+      "n_sources": 8,
+      "n_verified_patient_blocks": 91,
+      "n_unverified_library_units": 37,
+      "n_independent_blocks": 128,
+      "measured_major_min_cells": 20,
+      "total_unit_min_cells": 100,
+      "major_unit_coverage_min": 0.8,
+      "ready": true,
+      "interpretation": "discovery_descriptive;unknown_patient_units_exploratory;no_clinical_response_tests",
+      "ex_vivo_excluded": true,
+      "selectively_retained_compiled_exports_excluded": true
+    }
+  ],
+  "fixed_P3_9CM_projection_completed": false,
+  "new_CM_discovery_not_validation_of_retrained_W": true
+}
