@@ -1,0 +1,20 @@
+{
+  "schema": "all18_per_major_CNMFK_repetition_diagnostics_v1",
+  "frozen_UTC": "2026-10-14T04:58:22.874216+00:00",
+  "producer_sha256": "79d51bff9288f74f006a9fe42bb15c2d1d3da277380556440da49b19a907f81f",
+  "parent_model_plan_sha256": "d1ab42c5f3e69ac74656ebe136ec7a7013ed5fc8c6fb0be57896d7e01faddfc4",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "repeats": 100,
+  "min_finite_repeat_fraction": 0.9,
+  "repeat_rule": "medianHVGcos>=.8,p10>=.7,densityretained>=.5; zero-profile/constant-score staysNA,>=90% finite repetition assignment matches required; fixed penalized Hungarian assigns undefined entries for audit but never treats them cosine0",
+  "crossK_rule": "otherrepeat-stableK positivecoefcos>=.8,positive_top50Jaccard>=.25,source-residual usage rho>=.5; allK retained, no statecount from duplicates",
+  "genes": "top50 genuinely positive TPM-regression coefficients, never pad zero coefficients as programme genes; actual fewer genes explicitly recorded",
+  "diagnostics": "Every original node/source/RNA-depth/nativeRNA support; no gene set or K selected by clinical/LR p",
+  "formal_states": false,
+  "status": "FROZEN_BEFORE_ANY_ALL18_CNMF_DIAGNOSTIC_RESULTS"
+}

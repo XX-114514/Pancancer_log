@@ -1,0 +1,18 @@
+{
+  "schema": "frozen_pilot_programme_gene_axis_and_all9CM_native_capture_v1",
+  "frozen_UTC": "2026-10-14T04:58:22.874216+00:00",
+  "producer_sha256": "966cdab80dabe98dfe12f0ac2b4167ebb9dc65a06628665254a5628b972e8971",
+  "pilot_dictionary_sha256": "9f8182f124bf50ee5d2a2c5ac976968d1d8d6c4dd3ba3d606090ca0ed28a0c3a",
+  "full_scope_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "CM_core_graph_sha256": "133b1e9274c2d378d561d7165ec4de5d384c6a82d67dd7e0300cf0c199a0081e",
+  "min_gene_fraction": 0.8,
+  "min_genes": 10,
+  "min_cells_per_member_library": 20,
+  "sources": 52,
+  "CMs": 9,
+  "nodes": 172,
+  "libraries": 1290,
+  "core_members_are_records_not_independent_evidence": true,
+  "scope": "All52 source actual gene axes; frozen98 pilot signatures on existing allowedmajors only; all9CM source/coremember capture. No new RNA copy, state score, LR/patient inference or clinical analysis. All18 programmes pending fit/stability.",
+  "status": "FROZEN_BEFORE_REAL_COVERAGE_CHECK"
+}
