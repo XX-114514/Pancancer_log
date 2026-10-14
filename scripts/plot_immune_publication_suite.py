@@ -289,7 +289,7 @@ class Suite:
         z=(means-means.mean())/means.std(ddof=0).replace(0,np.nan)
         ax=axes[1,2];im=ax.imshow(z,cmap='PuOr',vmin=-2,vmax=2,aspect='auto')
         ax.set_xticks(range(5));ax.set_xticklabels([label(x.removeprefix('state_score_')) for x in cols],rotation=90)
-        ax.set_yticks(range(len(means)));ax.set_yticklabels([short_node(x) for x in means.index]);ax.set_title('Mean state score by T node')
+        ax.set_yticks(range(len(means)));ax.set_yticklabels([short_node(x) for x in means.index]);ax.set_title('T-node mean\nstate scores',fontsize=6)
         fig.colorbar(im,ax=ax,fraction=.04,pad=.02).set_label('Across-node z-score')
         means.to_csv(self.out/'tables/T_node_full_cell_state_means.tsv',sep='\t')
         self.save(fig,'Fig04_T_continuous_states','Continuous T-cell state axes',

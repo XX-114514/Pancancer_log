@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Descriptive capture, assay and annotation-uncertainty supplements."""
 import argparse
+import textwrap
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -25,7 +26,7 @@ def main(a):
     if len(names)<9:
         ax=axes.flat[len(names)];counts=pd.Series(capture).value_counts().reindex(names)
         ax.barh(np.arange(len(names)),counts/1000,color='#777777')
-        ax.set_yticks(np.arange(len(names)));ax.set_yticklabels([titles.get(x,x) for x in names],fontsize=5)
+        ax.set_yticks(np.arange(len(names)));ax.set_yticklabels([textwrap.fill(titles.get(x,x),18) for x in names],fontsize=5)
         ax.set_xlabel('Archived cells (thousands)');ax.set_title('Capture scope: full counts')
         for extra in list(axes.flat)[len(names)+1:]:extra.set_axis_off()
     pd.Series(capture).value_counts().to_csv(s.out/'tables/capture_scope_all_cell_counts.tsv',sep='\t')
