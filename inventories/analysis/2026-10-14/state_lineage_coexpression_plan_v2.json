@@ -1,0 +1,124 @@
+{
+  "schema": "state_lineage_coexpression_diagnostic_v2",
+  "frozen_UTC": "2026-10-14T02:16:32.712041+00:00",
+  "producer_sha256": "0f17b04b105ce36a7cae693df38dc8496324b57f9cdfd692a02a594214ff497c",
+  "input_inventory_sha256": "d75515d3b2e2e68e09dbc7ca18ed85cbe5a5c78b741781b59df7510cd7e219ca",
+  "scope": "All240533 native cells/5sources, original T/M identities and nodes unchanged; 12000 discovery cells all90 cNMF module-tail diagnostics",
+  "panels": {
+    "T_core": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD247",
+      "LCK"
+    ],
+    "Myeloid_core": [
+      "LST1",
+      "TYROBP",
+      "AIF1",
+      "CSF1R",
+      "FCER1G",
+      "CTSS"
+    ],
+    "epithelial_RNA": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "KRT5",
+      "KRT14",
+      "KRT6A",
+      "KRT16"
+    ],
+    "stromal_RNA": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "DCN",
+      "LUM",
+      "COL5A1",
+      "COL6A1"
+    ],
+    "mural_RNA": [
+      "ACTA2",
+      "TAGLN",
+      "MYL9",
+      "ACTG2",
+      "MYH11",
+      "RGS5",
+      "PDGFRB"
+    ],
+    "neural_RNA": [
+      "PTPRZ1",
+      "BCAN",
+      "STMN2",
+      "DCX",
+      "PCDH8",
+      "LRRTM1",
+      "IGFBPL1"
+    ],
+    "G2M": [
+      "MKI67",
+      "TOP2A",
+      "CDK1",
+      "UBE2C",
+      "CCNB1",
+      "CENPF"
+    ],
+    "IFN_like": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "IFI6",
+      "MX1",
+      "OAS1",
+      "OAS2",
+      "RSAD2"
+    ],
+    "Treg_related": [
+      "FOXP3",
+      "IL2RA",
+      "CTLA4",
+      "TNFRSF18",
+      "IKZF2",
+      "TNFRSF4"
+    ],
+    "cytotoxic": [
+      "GZMA",
+      "GZMB",
+      "PRF1",
+      "NKG7",
+      "GNLY",
+      "CTSW"
+    ],
+    "heatshock": [
+      "HSPA1A",
+      "HSPA1B",
+      "HSP90AA1",
+      "DNAJB1",
+      "DNAJA1",
+      "HSPH1"
+    ]
+  },
+  "foreign_panels": [
+    "epithelial_RNA",
+    "stromal_RNA",
+    "mural_RNA",
+    "neural_RNA"
+  ],
+  "RNA_fraction_thresholds": [
+    0,
+    0.01,
+    0.05
+  ],
+  "multi_marker_rule": "at least3 measured positive genes; fractions use native fullRNA counts, never shared-axis denominator; report missing and complete coverage",
+  "own_identity_rule": "at least2 identity-core genes measured-positive, descriptive only; not a diagnosis/relabel",
+  "tail_rule": "Exactly300/6000 highest normalized cNMF usages per each90 module; frozen-order tie break; diagnostic conditional distribution, not cell state/high cutoff",
+  "inference": "No p/FDR or automatic exclusion; same-cell foreign+immune RNA cannot distinguish misannotation/doublets/ambient/phagocytosis by itself",
+  "privacy": "all percell quantities private; only source-major and original-node/panel aggregate publicly reviewed",
+  "formal_state_labels": false,
+  "scientific_release": false,
+  "failed_parent_retained": "v1 worker288108/child288127 terminal exit1 at02:14:34; categorical groupby observed=False created empty unobserved labels",
+  "repair": "Only observed=True for original subCluster categorical grouping, new output v2. Same240533 cells/panels/native counts/thresholds; compare retained first-source private quantities between v1/v2."
+}
