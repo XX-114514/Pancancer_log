@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+  "major": "Mesenchymal cell",
+  "observed_UTC": "2026-10-14T08:59:29.709120+00:00",
+  "audit_code_sha256": "12ecdc1558ddfee7883beff55851046088abdb10de40a003c7bcdd4a44595dd0",
+  "producer_inventory_sha256": "da120098ab7407af2199df3fa4c7381b5e8b761eb2af12697689b6c7632a5531",
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "module_native_support_and_regression_checks": 45,
+  "max_repeat_cosine_difference": 2.3314683517128287e-15,
+  "K_statistics_not_independently_refit": true,
+  "source_distribution_quantiles_not_independently_recomputed_here": true,
+  "formal_states": false,
+  "mathematically_constant_group_residuals_exactzero": true,
+  "original_v1_failed_audit_retained": true
+}

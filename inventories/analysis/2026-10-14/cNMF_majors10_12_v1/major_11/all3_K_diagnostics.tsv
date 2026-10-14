@@ -1,0 +1,4 @@
+major	K	repeats	HVGs	unfiltered_silhouette	unfiltered_prediction_error	density_retained_fraction
+Mesenchymal cell	10	100	2000	0.7702284992289858	10191800.280326046	0.985
+Mesenchymal cell	15	100	2000	0.828375055455613	9919232.49206969	0.988
+Mesenchymal cell	20	100	2000	0.7949119360528698	9727341.955404766	0.9895

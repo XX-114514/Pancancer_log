@@ -1,0 +1,4 @@
+major	K	repeats	HVGs	unfiltered_silhouette	unfiltered_prediction_error	density_retained_fraction
+Melanocytic cell	10	100	2000	0.7611358771288257	9482602.731081318	0.981
+Melanocytic cell	15	100	2000	0.8302378479132045	8958138.296636365	0.978
+Melanocytic cell	20	100	2000	0.7994400527595527	8568689.131877024	0.981
