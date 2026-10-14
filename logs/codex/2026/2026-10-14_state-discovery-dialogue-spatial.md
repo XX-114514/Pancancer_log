@@ -33,3 +33,9 @@
 真实readback13226/13227于00:58:17—00:59:38 UTC exit0、01:00:40均不存在。全部240533保存raw rows直接逐一比较canonical；1832unit-loop两类全gene值108251626、fullRNA/nGenes/ID/原身份/继承block及完整训练counts对照通过。212库/424major-unit/140blocks/12000训练cells/16625共基因正确，native H5总990778466bytes，无矩阵重算或复制。新v2接受inventory SHA d75515d...；原failed v1保留。
 
 正式[Spectra多seed合同](../../../inventories/analysis/2026-10-14/Spectra_multiseed_state_discovery_plan_v1.json)：4源训练，胃source内部迁移；143global/18T/5Mac prior资格仅基因轴匹配≥5，未看留出表达/p。保留完整prior加discovery-only T/M2000HVG，各extra3/2/2，173factor slots；3seed各1000epoch GPU batch1000；subset先验不授权CD4/CD8/Treg身份。完整goal/cNMF/UCell/所有9CM/DIALOGUE/空间均继续，当前模型未启动，正式state仍0。
+
+## 2026-10-14T09:26:54.724585+08:00/UTC 2026-10-14T01:26:54.724585+00:00 实际Spectra训练与cNMF方法核查
+
+正式66828/66829于01:14:25实际启动，01:16:41两个/proc命令身份匹配；首seed20261014/12000cells/6512features/173factor slots，01:21观察首seed614/1000进展。不是smoke或状态接受。官方GPU源码构建/初始化后实际优化已开始，不因早期GPU0%快照当故障。10f4fe568cb0c963f02dc3147a2ff228f5b8090a已01:13:23普通push/01:13:26HTTPS核验。
+
+官方cnmf1.7prepare/consensus/get_norm_counts源码及签名已读，发现TPM用于HVG/谱而NMF自身raw-count unitvariance，不混写为全RNA-percell归一化。新[cNMF完整600run对照](../../../inventories/analysis/2026-10-14/cnmf_state_contrast_plan_v1.json)同发现cells2major×3K×100；所有K/repeats、密度和stability保留，phase真实未启动。原GeneScalar/control/RNA深度差别后续诊断，不据与Spectra最相似结果择K。整个goal active，未做UCell、完整9CM状态/DIALOGUE后状态或新空间。

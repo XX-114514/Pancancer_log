@@ -1,0 +1,31 @@
+{
+  "schema": "cnmf_state_contrast_plan_v1",
+  "created_UTC": "2026-10-14T01:26:54.724585+00:00",
+  "created_UTC8": "2026-10-14T09:26:54.724585+08:00",
+  "producer_sha256": "95f301243e40e399ebc7e689788774d264599dc76fc12b8a05168d1e0f88d59b",
+  "accepted_input_inventory_sha256": "d75515d3b2e2e68e09dbc7ca18ed85cbe5a5c78b741781b59df7510cd7e219ca",
+  "cnmf_version": "1.7.0",
+  "scope": "Same12000 accepted balanced discovery cells, separately6000T/6000Mac across4source; no gastric heldout expression used",
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "repeats_per_K": 100,
+  "HVG_per_major": 2000,
+  "max_NMF_iter": 1000,
+  "seed": 20261014,
+  "density_threshold": 0.5,
+  "local_neighborhood_size": 0.3,
+  "normalization": "Unmodified official algorithm: native-fullRNA externalTPM for independent Fano-HVG selection and gene spectra; rawcount columns scaled to unit variance for NMF; normalized and absolute usage both retained; do not equate to Spectra log-amplitude or claim RNA complexity fully removed",
+  "filtering": "No reference gene sets or LR/clinical p selection; allK/repeats retained, no silent missing-run combine or zero-HVG-cell deletion",
+  "acceptance": [
+    "Same native input SHA/cell/major axes and no heldout discovery cells",
+    "All2major\u00d73K\u00d7100runs complete or explicit failed status, consensus/density/stability diagnostics retained",
+    "Fixed official version/interfaces; no code changes to alter normalization",
+    "Compare cross-seed/source modules and identity/complexity effects before state dictionary selection",
+    "Candidate modules not formal states, causal LR or complete DIALOGUE/spatial goal"
+  ],
+  "state_labels_assigned": false,
+  "status": "PREDECLARED_NOT_STARTED"
+}
