@@ -1,0 +1,22 @@
+{
+  "original_sha256": "c1e145ffa6c4b88ba5cce679d10b2496248b4ff21185d8ddba31b4688d395798",
+  "parts": [
+    {
+      "file": "all_source_major_programme_review_part01.tsv",
+      "rows": 11157,
+      "sha256": "d6a4e364db2b471c2f19190d7895401dedbd3532de079435615934bca0df3bca"
+    },
+    {
+      "file": "all_source_major_programme_review_part02.tsv",
+      "rows": 11828,
+      "sha256": "34033ffb4cef3c8627ac1507402fe2d09788188f2a83628223fe6a4be39fccb0"
+    },
+    {
+      "file": "all_source_major_programme_review_part03.tsv",
+      "rows": 9689,
+      "sha256": "a63fe9aef3d72b3d0d3ed13ce4d041e9f72139ee5a0d4f7f41258e493ecbd2c0"
+    }
+  ],
+  "reconstruction": "First header plus all part data lines in numerical order; exact byte equality with original verified.",
+  "rows": 32674
+}
