@@ -14,8 +14,8 @@ def save(path,value):
 
 
 def main(args):
-    manifests=args.run/'manifests';code=args.code_dir
-    save(manifests/'CM_material_launch_v1_private.json',dict(started_utc=now(),pid=os.getpid(),
+    manifests=args.run/'manifests';code=args.code_dir;version=args.attempt_version
+    save(manifests/('CM_material_launch_'+version+'_private.json'),dict(started_utc=now(),pid=os.getpid(),
         code_git_sha=args.code_git_sha,
         source_contract_sha256=hashlib.sha256((args.run/'config/source_contract_v2_private.json').read_bytes()).hexdigest(),
         script_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in code.iterdir() if p.suffix in ['.py','.R']}))
@@ -23,9 +23,9 @@ def main(args):
     for k in ['OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS']:env[k]='4'
     def stage(name,command):
         print(json.dumps(dict(phase=name,status='running',utc=now())),flush=True)
-        with (args.run/'logs'/(name+'_material_v1.log')).open('xb') as f:
+        with (args.run/'logs'/(name+'_material_'+version+'.log')).open('xb') as f:
             result=subprocess.run(command,stdout=f,stderr=subprocess.STDOUT,env=env)
-        save(manifests/(name+'_material_v1_terminal_public.json'),dict(phase=name,finished_utc=now(),exit_code=result.returncode))
+        save(manifests/(name+'_material_'+version+'_terminal_public.json'),dict(phase=name,finished_utc=now(),exit_code=result.returncode))
         if result.returncode:raise RuntimeError(name+' failed; attempt preserved')
     try:
         gate=manifests/'fullnative_marker_refinement_v5_terminal_public.json'
@@ -48,14 +48,14 @@ def main(args):
             evidence=json.loads((args.run/'CM'/name/'discovery_v1/CM_public.json').read_text())
             if evidence['scope']!=name:raise RuntimeError('CM scope output differs')
             completed.append(evidence)
-        save(manifests/'CM_material_terminal_v1_public.json',dict(finished_utc=now(),status='completed',
+        save(manifests/('CM_material_terminal_'+version+'_public.json'),dict(finished_utc=now(),status='completed',
             n_prepared_scopes=len(scopes),n_completed_scopes=len(completed),results=completed,
             n_insufficient_scopes=sum(not s['ready'] for s in scopes),
             no_existing_atlas_or_CM_overwritten=True,material_and_capture_stratified=True,
             biological_or_clinical_validation=False))
     except Exception as exc:
-        (args.run/'logs/CM_material_traceback_v1_private.txt').write_text(traceback.format_exc())
-        save(manifests/'CM_material_terminal_v1_public.json',dict(finished_utc=now(),status='failed',failure=str(exc),failed_history_preserved=True))
+        (args.run/'logs'/('CM_material_traceback_'+version+'_private.txt')).write_text(traceback.format_exc())
+        save(manifests/('CM_material_terminal_'+version+'_public.json'),dict(finished_utc=now(),status='failed',failure=str(exc),failed_history_preserved=True))
         raise
 
 
@@ -63,4 +63,5 @@ if __name__=='__main__':
     p=argparse.ArgumentParser()
     for name in ['run','scratch','code-dir','covarnet-R-dir']:p.add_argument('--'+name,type=Path,required=True)
     for name in ['python','rscript','code-git-sha']:p.add_argument('--'+name,required=True)
+    p.add_argument('--attempt-version',choices=['v1','v2'],default='v1')
     main(p.parse_args())

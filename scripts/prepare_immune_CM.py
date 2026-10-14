@@ -16,8 +16,8 @@ def truth(values):return values.astype(str).str.lower().isin(['true','1'])
 
 def material_classes(obs):
     """Conservative source-material grouping; generic LN is not a metastasis."""
-    tissue=obs.tissue.fillna('').astype(str).str.lower().str.strip()
-    capture=obs.capture_scope.fillna('').astype(str)
+    tissue=obs.tissue.astype('string').fillna('').astype(str).str.lower().str.strip()
+    capture=obs.capture_scope.astype('string').fillna('').astype(str)
     material=pd.Series('unknown_material',index=obs.index)
     whole=capture.str.contains('whole_tumor|serial_tumor',regex=True)
     material.loc[whole|tissue.isin(['tumor','glioblastoma tumor','primary tumor','primary tumor (multiple regions)'])]='primary_tumor'
@@ -87,7 +87,7 @@ def prepare(args):
                 cancer_type='|'.join(sorted(group.cancer_type.astype(str).unique())),
                 capture_scope='|'.join(sorted(group.capture_scope.astype(str).unique())),
                 material_class='|'.join(sorted(material.loc[group.index].unique())),
-                original_tissue='|'.join(sorted(group.tissue.fillna('').astype(str).unique())),
+                original_tissue='|'.join(sorted(group.tissue.astype('string').fillna('').astype(str).unique())),
                 n_original_libraries=group.sampleID.nunique(),
                 timepoint='|'.join(sorted(group.timepoint.astype(str).unique()))))
         meta=pd.DataFrame(metadata,columns=['sampleID','dataset','patient_block','independent_unit','patient_verified','n_cells','cancer_type','capture_scope','material_class','original_tissue','n_original_libraries','timepoint'])
