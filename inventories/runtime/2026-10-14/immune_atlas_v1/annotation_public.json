@@ -1,0 +1,211 @@
+{
+  "observed_utc": "2026-10-14T01:32:45.747459+00:00",
+  "n_cells": 2670057,
+  "n_nodes": 270,
+  "major_counts": {
+    "T": 1571352,
+    "B": 247517,
+    "Myeloid": 173846,
+    "Unresolved": 171341,
+    "NK": 149285,
+    "Epithelial": 130111,
+    "Plasma": 59898,
+    "Neutrophil": 41960,
+    "Fibroblast": 38476,
+    "Glial": 18675,
+    "Endothelial": 16907,
+    "Neuron": 12458,
+    "T_NK_boundary": 12409,
+    "Oligodendrocyte": 8062,
+    "Mast": 8060,
+    "Pericyte_SMC": 7019,
+    "Erythroid": 2586,
+    "Melanocytic": 95
+  },
+  "state_axes": [
+    "naive_memory",
+    "cytotoxic",
+    "dysfunction",
+    "interferon",
+    "cycling"
+  ],
+  "all_raw_counts_preserved_in_upstream": true,
+  "display_marker_count": 1,
+  "lineage_HVG_audit": [
+    {
+      "major": "B",
+      "used": "batch_aware_seurat_v3",
+      "input": "native_integer_counts",
+      "n_fit_cells": 76176,
+      "min_source_cells": 2651,
+      "n_HVG": 3000
+    },
+    {
+      "major": "Endothelial",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 16907,
+      "min_source_cells": 3,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Epithelial",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 50768,
+      "min_source_cells": 53,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Erythroid",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 2586,
+      "min_source_cells": 1,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Fibroblast",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 35379,
+      "min_source_cells": 14,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Glial",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 18550,
+      "min_source_cells": 1,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Mast",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 8060,
+      "min_source_cells": 22,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Myeloid",
+      "used": "batch_aware_seurat_v3",
+      "input": "native_integer_counts",
+      "n_fit_cells": 63497,
+      "min_source_cells": 945,
+      "n_HVG": 3000
+    },
+    {
+      "major": "NK",
+      "used": "batch_aware_seurat_v3",
+      "input": "native_integer_counts",
+      "n_fit_cells": 58864,
+      "min_source_cells": 240,
+      "n_HVG": 3000
+    },
+    {
+      "major": "Neuron",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 12457,
+      "min_source_cells": 1,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Neutrophil",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 22999,
+      "min_source_cells": 2,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Oligodendrocyte",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 8062,
+      "min_source_cells": 1,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Pericyte_SMC",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 7019,
+      "min_source_cells": 33,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Plasma",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 35831,
+      "min_source_cells": 4,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "T",
+      "used": "batch_aware_seurat_v3",
+      "input": "native_integer_counts",
+      "n_fit_cells": 78660,
+      "min_source_cells": 1620,
+      "n_HVG": 3000
+    },
+    {
+      "major": "T_NK_boundary",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 12391,
+      "min_source_cells": 37,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source"
+    },
+    {
+      "major": "Unresolved",
+      "used": "batch_aware_seurat_v3",
+      "input": "native_integer_counts",
+      "n_fit_cells": 82698,
+      "min_source_cells": 1011,
+      "n_HVG": 3000
+    }
+  ],
+  "fine_identity_promoted": false,
+  "CNV_completed": false,
+  "authoritative_release": false
+}
