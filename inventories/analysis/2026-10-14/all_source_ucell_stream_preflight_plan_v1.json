@@ -1,0 +1,17 @@
+{
+  "schema": "all52_native_UCell_stream_capacity_v1",
+  "frozen_UTC": "2026-10-14T07:16:07.791344+00:00",
+  "producer_sha256": "e17008fa1032cd6ec7a08fe98eb90fa0e23e656bb39c083566a36e3bcb033658",
+  "scope_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "canonical_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "programme_capacity_per_major": 252,
+  "bytes_per_cell_programme": 22,
+  "output_cells_per_chunk": 5000,
+  "ucell_rank_batch_cells": 500,
+  "dense_rank_workspace_multiplier": 6,
+  "metadata_and_aggregate_budget_GiB": 8,
+  "total_output_budget_GiB": 40,
+  "reserve_free_GiB": 500,
+  "scope": "All4532933 canonical cells,52 sources,18 frozen majors; no RNA copy, no scoring until complete dictionary accepted; score only permitted-major programmes.",
+  "capacity_note": "252 conservatively allows45cNMF plus207Spectra signatures per major; actual dictionary must be checked. 22 bytes allows4float32 score variants, uint8 support, float32 fraction, bool mask. No source gene union substituted."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_NATIVE_STREAM_CAPACITY_PENDING_COMPLETE_DICTIONARY",
+  "observed_UTC": "2026-10-14T07:18:21.374252+00:00",
+  "producer_sha256": "e17008fa1032cd6ec7a08fe98eb90fa0e23e656bb39c083566a36e3bcb033658",
+  "plan_sha256": "8c8c2075dc59af99ae87c8eab91bf4e5d9019e14777222b7cafe421c396bae6d",
+  "sources": 52,
+  "majors": 18,
+  "cells": 4532933,
+  "source_major_groups": 726,
+  "output_chunks": 1437,
+  "max_native_genes": 58336,
+  "max_dense_rank_workspace_bytes": 1400064000,
+  "score_sidecars_bytes_upper_bound": 25130580552,
+  "required_bytes_with_metadata": 33720515144,
+  "volume_free_bytes": 1130229403648,
+  "capacity_pass": true,
+  "programme_capacity_per_major": 252,
+  "capacity_must_be_rechecked_with_actual_dictionary": true,
+  "native_RNA_copied": false,
+  "actual_scoring_started": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_source_major_stream_budget.tsv": "f38c5bd5dea8918a5c6952fec43f2360c5cbd004a4a01a419398ca86054f9ec5"
+  }
+}

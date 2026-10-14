@@ -125,3 +125,7 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T07:12:34.932060+00:00 /UTC+8 2026-10-14T15:12:34.932060+08:00：全18方法比较监督07:09:55 UTC真实启动（worker297681/child297683）；首B/DC/Endo/Fib已完成27180对，每cosine标量检查+2160预定Spearman独立抽检通过。原生轴最大cosine各类.367—.453，未构成强方法一致；完整配对保留，不拼接不同指标最大值、不称无状态。模型与后续全18/原9CM/状态通讯/DIALOGUE/空间仍继续。[结果](../../../inventories/analysis/2026-10-14/all18_cross_method_first4_v1/RESULTS.md)。
 
 2026-10-14T07:12:32.786539+00:00 /15:12:32 UTC+8：服务器证据登记/交接已完成，首4共27180对纳入，四个原进程逐cmdline确认live；refresh135目录0冲突，handoff SHA cdfc7b7bcf3f7be142cb3da7307131442a64cb1607190f7faecc7fd8661fdbd1。状态、原9CM新通讯、DIALOGUE和空间完成均false。
+
+2026-10-14T07:17:41.682952+00:00 /UTC+8 2026-10-14T15:17:41.682952+08:00：上一goal turn为progress（首4方法全27180对及独立抽检、证据交接、f098682普通push/云核验）。本turn原4进程重新ps live，Spectra上皮块第3seed中，诊断9/24。全52/4532933原生UCell流式容量预检07:16:33实际启动，固定来源轴/原行/40GiB及500GiB预留，无RNA副本、未开始评分。[预检](../../../runs/20261014_all_source_UCell_stream_preflight_v1.md)。
+
+2026-10-14T07:21:48.406914+00:00 /UTC+8 2026-10-14T15:21:48.406914+08:00：全来源stream预检07:18:21退出0，52/18/726groups/4532933cells/1437chunks，保守31.40GiB含元数据，现输出卷约1052.6GiB空闲满足500预留。726组与已冻结scope独立一致、分块/预算全重算通过；scorer入口仅语法检查，需完整字典+独立acceptance，实际评分未开始。[结果](../../../inventories/analysis/2026-10-14/all_source_ucell_stream_preflight_v1/RESULTS.md)。
