@@ -264,26 +264,80 @@ def integration_metrics(model,sample,basis):
                 clinical_outcomes_used=False)
 
 
+def lineage_hvg(fit, name):
+    """Reuse historical robust sparse-lineage fallback with an explicit audit."""
+    sizes=fit.obs.dataset.astype(str).value_counts()
+    minimum=int(sizes.min())
+    fallback=fit.n_obs<5000 or minimum<200
+    reason='small_lineage_or_source_batch_below_200'
+    if not fallback:
+        try:
+            sc.pp.highly_variable_genes(fit,n_top_genes=3000,flavor='seurat_v3',batch_key='dataset',layer='counts')
+            return dict(major=name,used='batch_aware_seurat_v3',input='native_integer_counts',
+                        n_fit_cells=fit.n_obs,min_source_cells=minimum,n_HVG=int(fit.var.highly_variable.sum()))
+        except ValueError as exc:
+            if not any(word in str(exc).lower() for word in ['singular','loess','extrapolation','svddc']):raise
+            reason='observed_seurat_v3_numerical_failure: '+str(exc)
+    matrix=fit.X
+    means=np.asarray(matrix.mean(axis=0)).ravel().astype(np.float64)
+    mean_square=np.asarray(matrix.power(2).mean(axis=0)).ravel().astype(np.float64)
+    variance=np.maximum(mean_square-means*means,0.)
+    dispersion=variance/np.maximum(means,1e-12)
+    log_dispersion=np.log1p(dispersion)
+    eligible=np.flatnonzero((means>0)&(variance>0)&np.isfinite(log_dispersion))
+    if len(eligible)<3:raise ValueError('Too few variable native-lineage genes')
+    bins=pd.qcut(means[eligible],q=min(20,len(np.unique(means[eligible]))),labels=False,duplicates='drop')
+    bins=np.asarray(bins,dtype=float)
+    if np.isnan(bins).all():bins=np.zeros(len(eligible))
+    scores=np.full(fit.n_vars,-np.inf)
+    for bin_id in np.unique(bins[np.isfinite(bins)]):
+        positions=eligible[bins==bin_id];values=log_dispersion[positions]
+        scale=max(float(values.std()),1e-8)
+        scores[positions]=(values-values.mean())/scale
+    ordered=eligible[np.argsort(-scores[eligible],kind='stable')]
+    chosen=ordered[:min(3000,len(eligible))]
+    mask=np.zeros(fit.n_vars,dtype=bool);mask[chosen]=True
+    fit.var['highly_variable']=mask
+    report=dict(major=name,used='historical_robust_dispersion_qcut',input='native_log1p_CP10K_X',
+                n_fit_cells=fit.n_obs,min_source_cells=minimum,n_HVG=len(chosen),reason=reason,
+                native_counts_unchanged=True,batch_correction_after_HVG='Harmony_on_PCA_by_source')
+    event('lineage_HVG_fallback',**report)
+    return report
+
+
 def annotate(args):
     target=args.scratch/'immune_model_integrate.zarr'
     model=ad.read_zarr(target)
     major,subtype,states=panels(args.panel_dir)
     model.obs['major']=model.obs.major_marker_proposal.astype(str)
+    # Official protocol retains tumor/stroma with a broad NFAT gate and adds
+    # a stringent enriched fraction. It is not an immune-only sample.
+    mixed=model.obs.dataset.astype(str).eq('GSE292046')
+    model.obs['capture_scope']=model.obs.capture_scope.astype(str)
+    model.obs.loc[mixed,'capture_scope']='mixed_tumor_nuclei_NFAT_enrichment'
+    model.obs['capture_bias_status']='source_capture_scope_preserved'
+    model.obs.loc[mixed,'capture_bias_status']='broad_gate_plus_T_enriched_nuclei_composition_biased'
     score,_=panel_scores(model,states)
     for i,name in enumerate(states):model.obs['state_score_'+name]=score[:,i]
-    cell_groups=np.full(model.n_obs,'',dtype=object);catalog=[];number=0
+    cell_groups=np.full(model.n_obs,'',dtype=object);catalog=[];number=0;hvg_reports=[]
+    checkpoints=args.scratch/'lineage_annotation_checkpoints_v5';checkpoints.mkdir(exist_ok=True,mode=0o700)
+    sc.settings.n_jobs=min(16,int(os.environ.get('NUMBA_NUM_THREADS','16')))
     for name in sorted(model.obs.major.astype(str).unique()):
         mask=model.obs.major.astype(str).eq(name).to_numpy();positions=np.flatnonzero(mask)
         if len(positions)>=100:
             local=model[positions].copy()
             local.obsp.clear()
             rng=np.random.default_rng(SEED)
-            groups_local=local.obs.groupby('dataset',observed=True).indices
+            eligible=~local.obs.annotation_exclude_from_primary.astype(str).str.lower().isin(['true','1']).to_numpy()
+            eligible_positions=np.flatnonzero(eligible)
+            groups_local=local.obs.iloc[eligible_positions].groupby('dataset',observed=True).indices
             per_source=max(1,100000//len(groups_local))
-            fit_indices=np.sort(np.concatenate([rng.choice(v,min(len(v),per_source),replace=False) for v in groups_local.values()]))
+            fit_indices=np.sort(np.concatenate([eligible_positions[rng.choice(v,min(len(v),per_source),replace=False)] for v in groups_local.values()]))
             fit=local[fit_indices].copy()
-            sc.pp.highly_variable_genes(fit,n_top_genes=3000,flavor='seurat_v3',batch_key='dataset',layer='counts')
-            sc.tl.pca(fit,n_comps=min(30,len(fit)-1),mask_var='highly_variable',svd_solver='arpack',random_state=SEED)
+            event('lineage_HVG_start',major=name,n_fit_cells=len(fit))
+            report=lineage_hvg(fit,name);hvg_reports.append(report)
+            save_json_new(checkpoints/(name+'_HVG_public.json'),report)
+            sc.tl.pca(fit,n_comps=min(30,len(fit)-1,int(fit.var.highly_variable.sum())-1),mask_var='highly_variable',svd_solver='arpack',random_state=SEED)
             hvg=fit.var.highly_variable.to_numpy();basis=fit.varm['PCs'][hvg]
             center=np.asarray(fit.X[:,hvg].mean(axis=0)).ravel()@basis
             projected_pca=np.vstack([local.X[lo:lo+4096,hvg]@basis-center for lo in range(0,len(local),4096)])
@@ -301,6 +355,8 @@ def annotate(args):
             sc.pp.neighbors(local,n_neighbors=min(30,len(local)-1),use_rep='X_lineage_harmony',random_state=SEED)
             sc.tl.leiden(local,resolution=0.6,key_added='within_major',flavor='igraph',n_iterations=2,directed=False,random_state=SEED)
             groups=local.obs.within_major.astype(str).to_numpy()
+            np.save(checkpoints/(name+'_clusters_private.npy'),groups)
+            save_json_new(checkpoints/(name+'_complete_public.json'),dict(major=name,n_cells=len(local),n_clusters=len(np.unique(groups)),all_cells_projected=True))
         else:groups=np.repeat('0',len(positions));local=model[positions].copy()
         fine_panels=subtype.get(name,{})
         fine_score,_=panel_scores(local,fine_panels) if fine_panels else (np.zeros((len(local),0)),None)
@@ -353,6 +409,7 @@ def annotate(args):
         del local,major_markers;gc.collect()
     model.obs['subcluster']=pd.Categorical(cell_groups)
     model.obs['annotation_status']='multigene_major_proposal_descriptive_subcluster_fine_review_pending'
+    model.uns['lineage_HVG_audit']=json.dumps(hvg_reports)
     model.obs['malignant_status']='not_yet_evaluated_per_native_library'
     destination=args.scratch/'immune_annotated.zarr'
     if destination.exists():raise ValueError('Existing annotation attempt preserved')
@@ -362,7 +419,7 @@ def annotate(args):
     save_json_new(args.run/'manifests/annotation_public.json',dict(observed_utc=datetime.now(timezone.utc).isoformat(),
         n_cells=model.n_obs,n_nodes=len(catalog),major_counts=model.obs.major.astype(str).value_counts().to_dict(),
         state_axes=list(states),all_raw_counts_preserved_in_upstream=True,display_marker_count=1,
-        fine_identity_promoted=False,CNV_completed=False,authoritative_release=False))
+        lineage_HVG_audit=hvg_reports,fine_identity_promoted=False,CNV_completed=False,authoritative_release=False))
     event('annotation_complete',n_cells=model.n_obs,n_nodes=len(catalog))
 
 

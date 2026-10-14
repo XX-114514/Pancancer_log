@@ -54,9 +54,13 @@ def native_cnv(args):
                 author=frame.source_author_label.astype(str).str.lower()
                 author_tumor=author.str.contains(r'tumou?r|malignan|cancer|epithelial',regex=True)
                 residual=frame.annotation_exclude_from_primary.astype(str).str.lower().isin(['true','1'])
-                candidate=(major.isin(['Epithelial','Glial','Melanocytic'])|author_tumor)&~residual
+                brain_neural=source.record['dataset']=='GSE292046'
+                neural_candidates=major.isin(['Neuron','Oligodendrocyte']) if brain_neural else np.zeros(len(frame),dtype=bool)
+                candidate=(major.isin(['Epithelial','Glial','Melanocytic','Unresolved'])|neural_candidates|author_tumor)&~residual
                 reference=major.isin(['T','NK','B','Plasma','Myeloid','Mast','Neutrophil','Endothelial','Fibroblast','Pericyte_SMC'])&~author_tumor&~candidate&~residual
                 result['tumor_lineage_candidate']=candidate.to_numpy();result['tumor_reference_cell']=reference.to_numpy()
+                result['CNV_candidate_basis']=np.where(major.eq('Unresolved'),'unresolved_in_tumor_capture_not_identity_assignment',
+                    np.where(neural_candidates,'neural_glial_state_in_GBM_not_automatically_normal','marker_or_author_tumor_lineage_candidate'))
                 try:
                     counts=source.raw(positions)
                     symbols=np.asarray(source.symbols,dtype=str)

@@ -124,3 +124,13 @@
 - 生产驱动74376及子进程74379仍运行，无terminal；子进程约53.8GB RSS、CPU108%，GSE169246原生分块已观察329,728/489,360。前五来源原生装配已完成，仍是全量整合准备步骤，不当整体完成百分比。
 - 后续执行链已部署：全量PCA/Harmony/图与UMAP坐标→大类内细分及全部原生marker统计→逐原库CNV与分范围CM→全基因档案逐行审计及原项目卷最终读回。阶段失败保留历史并停止后续。
 - 尚无新immune_validation_authority_v1.zarr科学发布，不把pilot/接口检查当生产完成；旧三队列污染未在本轮重新估计，独立临床验证资格仍未冻结。
+
+## 2026-10-14 00:34 UTC / 08:34 UTC+8：全量整合已完成，注释失败恢复
+
+- 前一目标轮为progress：全量对象于2026-10-13 17:20:52 UTC / 2026-10-14 01:20:52 UTC+8实写完成。当前取证原作业terminal=failed、PID不存在；失败是annotation的seurat_v3 loess近奇异，不因观察超时重启。
+- 实际模型2,670,057×22,351，cell ID unique，9源计数与冻结完全一致，全量PC/Harmony/邻接图、100,000拟合+2,570,057 UMAP transform、12粗聚类已完成。全量10,000评价弱标签邻域纯度0.8223→0.8136、来源熵0.4127→0.8077，未触发0.10复核门槛。
+- 注释B大类247,517已走谱系PC/Harmony；随后HVG ValueError near singularities于17:26:07 UTC / 01:26:07 UTC+8使驱动停后续。没有annotated/CNV/CM/最终权威对象完成证据。
+- 复用服务器既有04a谱系v4/v5：小谱系<5,000或任一来源<200用log1p表达稳健dispersion/qcut去重复边界；大谱系保留原生count seurat_v3，捕获明确loess数值错误时同一记录fallback。不改count/细胞范围；新报告每谱系实际方法及原因。主要拟合排除残留doublet，完整细胞仍投影/归档。加入逐谱系完成checkpoint。
+- 复核官方GSE292046提取协议：约14,000宽松NFAT门含免疫/微环境/肿瘤，再加≤2,000严格T富集核。原T_enriched标签过粗，修正mixed_tumor_nuclei_NFAT_enrichment和组成偏倚标记，不能因此跳过脑神经/胶质样CNV候选；2患者/8库不作8独立患者。
+- wholetumor的Unresolved进入独立未定谱系CNV候选检查，不把其自动正常；仅单方法支持，不用CNV强行改身份。脑来源Neuron/Oligodendrocyte也评估，免疫富集/CAR仍无完整肿瘤阴性声明。
+- 新驱动从已完成整合对象与严格源计数/ID门槛恢复annotation，保留全部旧失败和原矩阵，不重新QC/整合。正式CM与独立验证仍待。

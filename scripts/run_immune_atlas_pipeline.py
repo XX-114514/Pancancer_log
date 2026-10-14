@@ -50,7 +50,7 @@ def main(args):
         contract=run/'config/source_contract_v2_private.json'
         freeze=[args.python,'-u',str(code/'freeze_immune_cohort.py'),'--contract',str(run/'config/source_contract_private.json'),
              '--audit',str(scratch/'manifests/independent_QC_audit.json'),'--prepared',str(scratch/'objects/prepared'),'--scratch',str(scratch),'--run',str(run)]
-        if args.resume_from=='integration':
+        if args.resume_from in ['integration','annotation']:
             if not contract.exists():raise RuntimeError('Resume requires frozen source contract')
             frozen_contract=json.loads(contract.read_text())
             audit_hash=hashlib.sha256((scratch/'manifests/independent_QC_audit.json').read_bytes()).hexdigest()
@@ -75,10 +75,23 @@ def main(args):
             raise RuntimeError('Pilot marker-lineage purity loss exceeds 0.10; batch correction review required')
         common=[args.python,'-u',str(code/'immune_atlas_biology.py'),'--contract',str(contract),'--run',str(run),
                 '--scratch',str(scratch),'--panel-dir',str(run/'config')]
-        stage('integration',common+['--phase','integrate'])
+        if args.resume_from!='annotation':stage('integration',common+['--phase','integrate'])
         proof=json.loads((run/'manifests/integration_integrate_public.json').read_text())
         frozen=json.loads((run/'manifests/cohort_freeze_v2_public.json').read_text())
         if proof['pilot_only'] or proof['n_cells']!=frozen['n_model_cells']:raise RuntimeError('Full integration coverage gate failed')
+        if args.resume_from=='annotation':
+            import zarr
+            from anndata._io.specs import read_elem
+            model=zarr.open_group(str(scratch/'immune_model_integrate.zarr'),mode='r')
+            obs=read_elem(model['obs'])
+            if model['X'].attrs['shape']!=[frozen['n_model_cells'],proof['n_shared_features']] or not obs.index.is_unique:
+                raise RuntimeError('Completed model shape or cell identity gate failed')
+            if obs.dataset.astype(str).value_counts().to_dict()!=frozen['source_cell_counts']:
+                raise RuntimeError('Completed model source count gate failed')
+            save(run/'manifests'/('annotation_resume_'+args.attempt_version+'_public.json'),dict(
+                observed_utc=now(),n_cells=len(obs),n_features=proof['n_shared_features'],
+                existing_all_cell_integration_reused=True,cell_ID_unique=True,source_counts_exact=True,
+                integration_report_sha256=hashlib.sha256((run/'manifests/integration_integrate_public.json').read_bytes()).hexdigest()))
         pair=[m for m in proof['metrics'] if m.get('phase') in ['before','after']]
         if len(pair)==2 and pair[0]['known_marker_major_neighbor_purity'] is not None and pair[1]['known_marker_major_neighbor_purity']<pair[0]['known_marker_major_neighbor_purity']-.10:
             raise RuntimeError('Full model marker-lineage purity loss exceeds 0.10; batch correction review required')
@@ -121,8 +134,8 @@ if __name__=='__main__':
     for key in ['run','scratch','code-dir','core-dir','gene-annotation','covarnet-R-dir']:p.add_argument('--'+key,type=Path,required=True)
     for key in ['python','rscript','code-git-sha','quota-group']:p.add_argument('--'+key,required=True)
     p.add_argument('--QC-pid',type=int,required=True)
-    p.add_argument('--attempt-version',default='v1',choices=['v1','v2','v3','v4'])
+    p.add_argument('--attempt-version',default='v1',choices=['v1','v2','v3','v4','v5'])
     p.add_argument('--reuse-native-union',type=Path)
-    p.add_argument('--resume-from',choices=['integration'])
+    p.add_argument('--resume-from',choices=['integration','annotation'])
     p.add_argument('--resume-pilot-report',type=Path)
     main(p.parse_args())
