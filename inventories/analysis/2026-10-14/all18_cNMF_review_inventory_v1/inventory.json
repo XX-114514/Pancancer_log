@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE_LOCAL_ALL18_CNMF_REVIEW_SUMMARY",
+  "observed_UTC": "2026-10-14T14:49:15.745863+00:00",
+  "candidates": 810,
+  "majors": 18,
+  "repeat_stable": 626,
+  "repeat_crossK": 534,
+  "formal_states": false,
+  "new_models_fitted": false,
+  "output_sha256": {
+    "all810_candidate_diagnostics.tsv": "9acae3180c1b0a139dcffc3344dd3698add8496be397a10113b311a5d55e7c3d",
+    "all18_programme_review_summary.tsv": "0c93773b15fc819b1285dca4941eb8aa35c028e974f99525b7c4b550e2397d54"
+  }
+}
