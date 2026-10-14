@@ -1,0 +1,32 @@
+{
+  "real_data": true,
+  "results": [
+    {
+      "major": "Endothelial",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 16907,
+      "min_source_cells": 3,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source",
+      "all_real_lineage_cells_checked": true,
+      "native_count_layer_unchanged": true
+    },
+    {
+      "major": "Erythroid",
+      "used": "historical_robust_dispersion_qcut",
+      "input": "native_log1p_CP10K_X",
+      "n_fit_cells": 2586,
+      "min_source_cells": 1,
+      "n_HVG": 3000,
+      "reason": "small_lineage_or_source_batch_below_200",
+      "native_counts_unchanged": true,
+      "batch_correction_after_HVG": "Harmony_on_PCA_by_source",
+      "all_real_lineage_cells_checked": true,
+      "native_count_layer_unchanged": true
+    }
+  ],
+  "formal_annotation_complete": false
+}

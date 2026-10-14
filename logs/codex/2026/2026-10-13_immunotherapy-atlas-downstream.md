@@ -134,3 +134,9 @@
 - 复核官方GSE292046提取协议：约14,000宽松NFAT门含免疫/微环境/肿瘤，再加≤2,000严格T富集核。原T_enriched标签过粗，修正mixed_tumor_nuclei_NFAT_enrichment和组成偏倚标记，不能因此跳过脑神经/胶质样CNV候选；2患者/8库不作8独立患者。
 - wholetumor的Unresolved进入独立未定谱系CNV候选检查，不把其自动正常；仅单方法支持，不用CNV强行改身份。脑来源Neuron/Oligodendrocyte也评估，免疫富集/CAR仍无完整肿瘤阴性声明。
 - 新驱动从已完成整合对象与严格源计数/ID门槛恢复annotation，保留全部旧失败和原矩阵，不重新QC/整合。正式CM与独立验证仍待。
+
+## 2026-10-14 00:41 UTC / 08:41 UTC+8：真实HVG恢复检查PASS并启动注释恢复
+
+- Endothelial16,907和Erythroid2,586全部实际谱系细胞已测试，来源最小3/1，稳健qcut各选3,000 HVG；count layer保持，结果不是整个注释完成。
+- v5于00:41:42 UTC / 08:41:42 UTC+8启动，PID382735，代码a7533d160dbdb7a9debdab17e889b5a175f268c4；直接复用实际整合对象，不重复矩阵和PCA/Harmony/UMAP。
+- 全量整合报告和恢复检查收录在2026-10-14运行inventory；独立Git HTTPS已核验a7533d1。正式annotation/CNV/CM/最终权威仍待阶段验收。

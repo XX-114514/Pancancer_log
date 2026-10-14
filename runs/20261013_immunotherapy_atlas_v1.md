@@ -1,7 +1,7 @@
 # 免疫治疗专用单细胞对象与下游 v1
 
 - 授权日期：2026-10-13（UTC+8）。
-- 当前阶段：来源范围和方法冻结；尚未声称新生物学生产完成。
+- 当前阶段（2026-10-14 08:41 UTC+8）：全量整合完成，稀疏谱系HVG修复后从注释恢复；CNV/CM/最终权威尚未完成。
 - 输入：20261012_public_preprocessed_zarr_v2完整技术合集，Project_v5及历史免疫队列的既有QC/counts与作者临床资料。
 - 来源角色：独立验证/内部复现/机制参照/产品分支/隔离逐原研究登记。不得将Spatial、动物、bulk计为单细胞；CAR-T产品和免疫富集单独标记。
 - 输出：原项目卷新独立run下计数权威对象、降维/图/聚类、major/fine/state/单marker编号描述、逐样本CNV证据与精确回填、CM新发现及旧9CM固定投影；持久化前需阶段实测容量与完整验收。
@@ -30,3 +30,5 @@
 - 大样本后端线程上限修复已实测：[模拟12,000坐标PyNNDescent检查](../inventories/runtime/2026-10-13/immune_atlas_v1/large_neighbor_backend_API_public.json)。v4生产恢复15:38:26 UTC / 23:38:26 UTC+8，PID74376；冻结QC/pilot复用，无新的全量完成声明。方法详见[合同](../methods/immune-specific-atlas-v1.md)。
 
 - 15:52 UTC / 23:52 UTC+8健康取证：驱动74376/子进程74379仍运行，GSE169246329,728/489,360原生块已处理；生产全量整合未完成。后续阶段由已部署的验收执行链继续，正式权威发布pending。
+
+- 全量真实模型已完成：[报告](../inventories/runtime/2026-10-14/immune_atlas_v1/integration_integrate_public.json)，2,670,057×22,351、12粗聚类。注释loess失败保留；00:41:42 UTC / 08:41:42 UTC+8恢复PID382735，真实[HVG检查](../inventories/runtime/2026-10-14/immune_atlas_v1/HVG_recovery_API_v5_public.json)通过。
