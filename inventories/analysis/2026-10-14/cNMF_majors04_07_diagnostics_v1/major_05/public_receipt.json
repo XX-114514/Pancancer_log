@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_ORIGINAL_MAJOR_ALL_K_CNMFDIAGNOSTICS_NOT_STATES",
+  "major": "Glial cell",
+  "observed_UTC": "2026-10-14T07:21:41.387392+00:00",
+  "producer_sha256": "2ab63c8925def15f1926297bf33dca23ab60ad506470db3daa718dacce81f670",
+  "plan_sha256": "da39b6e0766149d17c29667929baa12b30906aabe139b289f60c31c98c945b80",
+  "all_fit_outputs_before_after_unchanged": true,
+  "candidates": 45,
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "repeat_crossK_candidates": 32,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all45_candidates.tsv": "c4c20bb8c4a5dcc3bc6f68c7d2733a38515a8b4419413d85e14ff8bf4bf49b61",
+    "all4500_repetition_matches.tsv": "c5f3b47cf48e7e28ebd3b1d819c328dabf6fbf229ada26b18ad964ecac533aae",
+    "all650_crossK_comparisons.tsv": "0efb046039fe2ab0e0bd1baf908a9920c21f3d0234494b2a83cd700d660552db",
+    "all3_K_diagnostics.tsv": "3f2fa1b21c02c932360b1178570a2a74f1c8167eb92ed4c0344dedc250ae8f40",
+    "all_source_distributions.tsv": "c3fd3407f168b1ea911f5aaffcf064a465eb7592130f66b400154bcf22d2cc31"
+  },
+  "discovery_cells": 6000,
+  "independent_audit": {
+    "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+    "major": "Glial cell",
+    "observed_UTC": "2026-10-14T07:21:50.608614+00:00",
+    "audit_code_sha256": "12ecdc1558ddfee7883beff55851046088abdb10de40a003c7bcdd4a44595dd0",
+    "producer_inventory_sha256": "141e832d0cbb451ac535a94cd6092ef565155397657d2896659ebdb9ffa883d8",
+    "repetition_matches": 4500,
+    "crossK_comparisons": 650,
+    "module_native_support_and_regression_checks": 45,
+    "max_repeat_cosine_difference": 2.4424906541753444e-15,
+    "K_statistics_not_independently_refit": true,
+    "source_distribution_quantiles_not_independently_recomputed_here": true,
+    "formal_states": false,
+    "mathematically_constant_group_residuals_exactzero": true,
+    "original_v1_failed_audit_retained": true
+  }
+}

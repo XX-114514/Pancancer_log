@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_ORIGINAL_MAJOR_ALL_K_CNMFDIAGNOSTICS_NOT_STATES",
+  "major": "Lymphoid cell",
+  "observed_UTC": "2026-10-14T07:47:56.158353+00:00",
+  "producer_sha256": "2ab63c8925def15f1926297bf33dca23ab60ad506470db3daa718dacce81f670",
+  "plan_sha256": "da39b6e0766149d17c29667929baa12b30906aabe139b289f60c31c98c945b80",
+  "all_fit_outputs_before_after_unchanged": true,
+  "candidates": 45,
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "repeat_crossK_candidates": 30,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all45_candidates.tsv": "803e28499a759909458b9b86bea94318d71688681b6d03461d5ec0fb8e28d1a2",
+    "all4500_repetition_matches.tsv": "3bbd977228dd288b3060273a017078579be653407524e572f139cc383f4049ff",
+    "all650_crossK_comparisons.tsv": "afb985fa9ddadea19878d54af70cb2cf5824ff5913bb3298b6b43dd057ead46e",
+    "all3_K_diagnostics.tsv": "d8fe7219a1dbdd2f26187257d6f13933c9c0fd04df98730921c9e00dddbeb979",
+    "all_source_distributions.tsv": "56bbc12f0d1cf864e6dfe026fac4fc8ec8e4922b4d326042845217cbcd1ec2a0"
+  },
+  "discovery_cells": 3644,
+  "independent_audit": {
+    "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+    "major": "Lymphoid cell",
+    "observed_UTC": "2026-10-14T07:48:03.332987+00:00",
+    "audit_code_sha256": "12ecdc1558ddfee7883beff55851046088abdb10de40a003c7bcdd4a44595dd0",
+    "producer_inventory_sha256": "437238db061a363917ddbcd4c9edea5e9b63b171a5b369e4abcf3932fc22e313",
+    "repetition_matches": 4500,
+    "crossK_comparisons": 650,
+    "module_native_support_and_regression_checks": 45,
+    "max_repeat_cosine_difference": 2.6645352591003757e-15,
+    "K_statistics_not_independently_refit": true,
+    "source_distribution_quantiles_not_independently_recomputed_here": true,
+    "formal_states": false,
+    "mathematically_constant_group_residuals_exactzero": true,
+    "original_v1_failed_audit_retained": true
+  }
+}

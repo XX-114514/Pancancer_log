@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_ORIGINAL_MAJOR_ALL_K_CNMFDIAGNOSTICS_NOT_STATES",
+  "major": "Hematopoietic cell",
+  "observed_UTC": "2026-10-14T07:32:08.676317+00:00",
+  "producer_sha256": "2ab63c8925def15f1926297bf33dca23ab60ad506470db3daa718dacce81f670",
+  "plan_sha256": "da39b6e0766149d17c29667929baa12b30906aabe139b289f60c31c98c945b80",
+  "all_fit_outputs_before_after_unchanged": true,
+  "candidates": 45,
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "repeat_crossK_candidates": 28,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all45_candidates.tsv": "4ff3df177b863e29f83a4f3be6ffd2489ca33dafdb82b24f0f82b8b0914d22fc",
+    "all4500_repetition_matches.tsv": "5af16ec380813359a14cc75a7da31740365cdb83b2cd2d8f66ba8fe10e0b687c",
+    "all650_crossK_comparisons.tsv": "7fa97bb07df878f14bd7e8b7cafc420d23e0a8585cd77e9051a4490e7a82cb50",
+    "all3_K_diagnostics.tsv": "de584f953cdd498e2bb8ed71e4e7998485539d267be51f5091553fb5d7266fa8",
+    "all_source_distributions.tsv": "de46214d449c5a02d19281cf567c2a563682dd7ba811eeaecf4a2ca200543490"
+  },
+  "discovery_cells": 6000,
+  "independent_audit": {
+    "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+    "major": "Hematopoietic cell",
+    "observed_UTC": "2026-10-14T07:32:16.754255+00:00",
+    "audit_code_sha256": "12ecdc1558ddfee7883beff55851046088abdb10de40a003c7bcdd4a44595dd0",
+    "producer_inventory_sha256": "f0da1a5170ea67263fcb880cc548e8caef6ff1e44d764e50cd08f67f7f8c1f4f",
+    "repetition_matches": 4500,
+    "crossK_comparisons": 650,
+    "module_native_support_and_regression_checks": 45,
+    "max_repeat_cosine_difference": 2.6645352591003757e-15,
+    "K_statistics_not_independently_refit": true,
+    "source_distribution_quantiles_not_independently_recomputed_here": true,
+    "formal_states": false,
+    "mathematically_constant_group_residuals_exactzero": true,
+    "original_v1_failed_audit_retained": true
+  }
+}

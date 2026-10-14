@@ -1,0 +1,127 @@
+{
+  "schema": "all18_discovery_fixed_panel_coexpression_v1",
+  "frozen_UTC": "2026-10-14T07:53:11.512839+00:00",
+  "producer_sha256": "db7ce347b4041bc3ead2bcc1eb43e767330e70ca3de8783f097233441577b0ba",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "panels": {
+    "T_core": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD247",
+      "LCK"
+    ],
+    "Myeloid_core": [
+      "LST1",
+      "TYROBP",
+      "AIF1",
+      "CSF1R",
+      "FCER1G",
+      "CTSS"
+    ],
+    "epithelial_RNA": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "KRT5",
+      "KRT14",
+      "KRT6A",
+      "KRT16"
+    ],
+    "stromal_RNA": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "DCN",
+      "LUM",
+      "COL5A1",
+      "COL6A1"
+    ],
+    "mural_RNA": [
+      "ACTA2",
+      "TAGLN",
+      "MYL9",
+      "ACTG2",
+      "MYH11",
+      "RGS5",
+      "PDGFRB"
+    ],
+    "neural_RNA": [
+      "PTPRZ1",
+      "BCAN",
+      "STMN2",
+      "DCX",
+      "PCDH8",
+      "LRRTM1",
+      "IGFBPL1"
+    ],
+    "G2M": [
+      "MKI67",
+      "TOP2A",
+      "CDK1",
+      "UBE2C",
+      "CCNB1",
+      "CENPF"
+    ],
+    "IFN_like": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "IFI6",
+      "MX1",
+      "OAS1",
+      "OAS2",
+      "RSAD2"
+    ],
+    "Treg_related": [
+      "FOXP3",
+      "IL2RA",
+      "CTLA4",
+      "TNFRSF18",
+      "IKZF2",
+      "TNFRSF4"
+    ],
+    "cytotoxic": [
+      "GZMA",
+      "GZMB",
+      "PRF1",
+      "NKG7",
+      "GNLY",
+      "CTSW"
+    ],
+    "heatshock": [
+      "HSPA1A",
+      "HSPA1B",
+      "HSP90AA1",
+      "DNAJB1",
+      "DNAJA1",
+      "HSPH1"
+    ]
+  },
+  "joint_panels": [
+    [
+      "T_core",
+      "epithelial_RNA"
+    ],
+    [
+      "Myeloid_core",
+      "epithelial_RNA"
+    ],
+    [
+      "T_core",
+      "Myeloid_core"
+    ],
+    [
+      "T_core",
+      "stromal_RNA"
+    ],
+    [
+      "Myeloid_core",
+      "neural_RNA"
+    ]
+  ],
+  "scope": "All100766 accepted discovery cells/all18 frozen majors. Same fixed11 panels. Full panel gene coverage required for strong support; >=3genes and>=1% native RNA each for joint coexpression. No state/contamination diagnosis; balanced-discovery rates not fullcohort prevalence.",
+  "labels_unchanged": true
+}

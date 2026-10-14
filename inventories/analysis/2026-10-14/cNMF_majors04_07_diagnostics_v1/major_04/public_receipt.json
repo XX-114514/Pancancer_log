@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_ORIGINAL_MAJOR_ALL_K_CNMFDIAGNOSTICS_NOT_STATES",
+  "major": "Fibroblast",
+  "observed_UTC": "2026-10-14T07:07:20.158802+00:00",
+  "producer_sha256": "2ab63c8925def15f1926297bf33dca23ab60ad506470db3daa718dacce81f670",
+  "plan_sha256": "da39b6e0766149d17c29667929baa12b30906aabe139b289f60c31c98c945b80",
+  "all_fit_outputs_before_after_unchanged": true,
+  "candidates": 45,
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "repeat_crossK_candidates": 37,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all45_candidates.tsv": "250ba0b144ff0c592590112f7d0e4b9e4b4e32a063a34b335ccac0ffa6c72683",
+    "all4500_repetition_matches.tsv": "9609d16c7f1b627f762d2ec5fee001fcbac2ba83bcaa52b91bad2854f578e5f3",
+    "all650_crossK_comparisons.tsv": "cab7dcb202884fe9dc8b875152f10c83677fafa4aae5fc1f1bf98a4c7a02b0ba",
+    "all3_K_diagnostics.tsv": "bb77f4ac007b6e61a39dc4c49e5a4df40e3234e6bb3cfa53bc14486f4affcf0e",
+    "all_source_distributions.tsv": "8a0f73feee48192ac78c35031be2f5d3c2595610a0f1b10ddc0dcd40aea92b09"
+  },
+  "discovery_cells": 6000,
+  "independent_audit": {
+    "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+    "major": "Fibroblast",
+    "observed_UTC": "2026-10-14T07:07:29.381878+00:00",
+    "audit_code_sha256": "12ecdc1558ddfee7883beff55851046088abdb10de40a003c7bcdd4a44595dd0",
+    "producer_inventory_sha256": "dc38bdfd4afdba2f0d304d3c5b4e1714ad2e7073ee3b4debafe18a62f8d0e4e1",
+    "repetition_matches": 4500,
+    "crossK_comparisons": 650,
+    "module_native_support_and_regression_checks": 45,
+    "max_repeat_cosine_difference": 3.1086244689504383e-15,
+    "K_statistics_not_independently_refit": true,
+    "source_distribution_quantiles_not_independently_recomputed_here": true,
+    "formal_states": false,
+    "mathematically_constant_group_residuals_exactzero": true,
+    "original_v1_failed_audit_retained": true
+  }
+}

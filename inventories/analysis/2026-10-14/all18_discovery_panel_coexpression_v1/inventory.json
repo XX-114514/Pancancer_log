@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_ALL100766_DISCOVERY_PANEL_DIAGNOSTICS_NOT_STATE_LABELS",
+  "observed_UTC": "2026-10-14T07:54:24.058201+00:00",
+  "producer_sha256": "db7ce347b4041bc3ead2bcc1eb43e767330e70ca3de8783f097233441577b0ba",
+  "plan_sha256": "0bfb20edf9441ac52bd096a9ea080c4e1fcc112c5990ca56140b5f389ee82b0e",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "cells": 100766,
+  "majors": 18,
+  "panels": 11,
+  "source_node_panel_rows": 3883,
+  "joint_panel_rows": 1765,
+  "all_cell_panel_quantities_independently_accumulated": true,
+  "max_fraction_difference": 0,
+  "full_cohort_prevalence": false,
+  "formal_state": false,
+  "original_labels_changed": false,
+  "output_sha256": {
+    "all_major_panel_gene_coverage.tsv": "e6247ec867b9f888343925161706d8af0a7659fdc973042a189b02eae8751bc1",
+    "all_source_node_panel_support.tsv": "9b45cacd586f708071c3f3fb005bea656e7b8595e1ba0efd1308d7717ed7c8fb",
+    "all_source_node_joint_panel_support.tsv": "033edd3b42c7e942054366fc7f7da0cae47e378629688651768de8952250655e"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "schema": "all18_discovery_source_native_panel_coexpression_v2",
+  "frozen_UTC": "2026-10-14T07:58:15.177102+00:00",
+  "producer_sha256": "49769d3791a259aa96643d0beb12ccc4d90ad86ec045c9204ff99c0f3a448631",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "panels": {
+    "T_core": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD247",
+      "LCK"
+    ],
+    "Myeloid_core": [
+      "LST1",
+      "TYROBP",
+      "AIF1",
+      "CSF1R",
+      "FCER1G",
+      "CTSS"
+    ],
+    "epithelial_RNA": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "KRT5",
+      "KRT14",
+      "KRT6A",
+      "KRT16"
+    ],
+    "stromal_RNA": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "DCN",
+      "LUM",
+      "COL5A1",
+      "COL6A1"
+    ],
+    "mural_RNA": [
+      "ACTA2",
+      "TAGLN",
+      "MYL9",
+      "ACTG2",
+      "MYH11",
+      "RGS5",
+      "PDGFRB"
+    ],
+    "neural_RNA": [
+      "PTPRZ1",
+      "BCAN",
+      "STMN2",
+      "DCX",
+      "PCDH8",
+      "LRRTM1",
+      "IGFBPL1"
+    ],
+    "G2M": [
+      "MKI67",
+      "TOP2A",
+      "CDK1",
+      "UBE2C",
+      "CCNB1",
+      "CENPF"
+    ],
+    "IFN_like": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "IFI6",
+      "MX1",
+      "OAS1",
+      "OAS2",
+      "RSAD2"
+    ],
+    "Treg_related": [
+      "FOXP3",
+      "IL2RA",
+      "CTLA4",
+      "TNFRSF18",
+      "IKZF2",
+      "TNFRSF4"
+    ],
+    "cytotoxic": [
+      "GZMA",
+      "GZMB",
+      "PRF1",
+      "NKG7",
+      "GNLY",
+      "CTSW"
+    ],
+    "heatshock": [
+      "HSPA1A",
+      "HSPA1B",
+      "HSP90AA1",
+      "DNAJB1",
+      "DNAJA1",
+      "HSPH1"
+    ]
+  },
+  "joint_panels": [
+    [
+      "T_core",
+      "epithelial_RNA"
+    ],
+    [
+      "Myeloid_core",
+      "epithelial_RNA"
+    ],
+    [
+      "T_core",
+      "Myeloid_core"
+    ],
+    [
+      "T_core",
+      "stromal_RNA"
+    ],
+    [
+      "Myeloid_core",
+      "neural_RNA"
+    ]
+  ],
+  "scope": "Same100766 accepted discovery cells and fixed11 panels/thresholds, restored source-native gene axes from original canonical rows. v1 common discovery intersection omitted some panel genes; missing results remain NA, never zero. Native raw denominators and gene support independently checked; no new RNA copy or state labels.",
+  "labels_unchanged": true,
+  "parent_plan_sha256": "0bfb20edf9441ac52bd096a9ea080c4e1fcc112c5990ca56140b5f389ee82b0e",
+  "canonical_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7"
+}

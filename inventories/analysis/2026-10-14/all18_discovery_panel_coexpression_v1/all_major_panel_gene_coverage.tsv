@@ -1,0 +1,199 @@
+major	panel	required_genes	measured_genes	complete_gene_axis	missing_genes
+B cell	T_core	5	4	False	TRAC
+B cell	Myeloid_core	6	6	True	
+B cell	epithelial_RNA	8	8	True	
+B cell	stromal_RNA	7	7	True	
+B cell	mural_RNA	7	7	True	
+B cell	neural_RNA	7	6	False	DCX
+B cell	G2M	6	6	True	
+B cell	IFN_like	9	9	True	
+B cell	Treg_related	6	6	True	
+B cell	cytotoxic	6	6	True	
+B cell	heatshock	6	6	True	
+Dendritic cell	T_core	5	4	False	TRAC
+Dendritic cell	Myeloid_core	6	6	True	
+Dendritic cell	epithelial_RNA	8	8	True	
+Dendritic cell	stromal_RNA	7	7	True	
+Dendritic cell	mural_RNA	7	7	True	
+Dendritic cell	neural_RNA	7	6	False	DCX
+Dendritic cell	G2M	6	6	True	
+Dendritic cell	IFN_like	9	9	True	
+Dendritic cell	Treg_related	6	6	True	
+Dendritic cell	cytotoxic	6	6	True	
+Dendritic cell	heatshock	6	6	True	
+Endothelial cell	T_core	5	5	True	
+Endothelial cell	Myeloid_core	6	6	True	
+Endothelial cell	epithelial_RNA	8	8	True	
+Endothelial cell	stromal_RNA	7	7	True	
+Endothelial cell	mural_RNA	7	7	True	
+Endothelial cell	neural_RNA	7	6	False	DCX
+Endothelial cell	G2M	6	6	True	
+Endothelial cell	IFN_like	9	9	True	
+Endothelial cell	Treg_related	6	6	True	
+Endothelial cell	cytotoxic	6	6	True	
+Endothelial cell	heatshock	6	6	True	
+Epithelial cell	T_core	5	5	True	
+Epithelial cell	Myeloid_core	6	6	True	
+Epithelial cell	epithelial_RNA	8	8	True	
+Epithelial cell	stromal_RNA	7	7	True	
+Epithelial cell	mural_RNA	7	7	True	
+Epithelial cell	neural_RNA	7	6	False	DCX
+Epithelial cell	G2M	6	6	True	
+Epithelial cell	IFN_like	9	9	True	
+Epithelial cell	Treg_related	6	6	True	
+Epithelial cell	cytotoxic	6	6	True	
+Epithelial cell	heatshock	6	6	True	
+Fibroblast	T_core	5	5	True	
+Fibroblast	Myeloid_core	6	6	True	
+Fibroblast	epithelial_RNA	8	8	True	
+Fibroblast	stromal_RNA	7	7	True	
+Fibroblast	mural_RNA	7	7	True	
+Fibroblast	neural_RNA	7	6	False	DCX
+Fibroblast	G2M	6	6	True	
+Fibroblast	IFN_like	9	9	True	
+Fibroblast	Treg_related	6	6	True	
+Fibroblast	cytotoxic	6	6	True	
+Fibroblast	heatshock	6	6	True	
+Glial cell	T_core	5	5	True	
+Glial cell	Myeloid_core	6	6	True	
+Glial cell	epithelial_RNA	8	8	True	
+Glial cell	stromal_RNA	7	7	True	
+Glial cell	mural_RNA	7	7	True	
+Glial cell	neural_RNA	7	7	True	
+Glial cell	G2M	6	6	True	
+Glial cell	IFN_like	9	9	True	
+Glial cell	Treg_related	6	6	True	
+Glial cell	cytotoxic	6	6	True	
+Glial cell	heatshock	6	6	True	
+Hematopoietic cell	T_core	5	4	False	TRAC
+Hematopoietic cell	Myeloid_core	6	6	True	
+Hematopoietic cell	epithelial_RNA	8	8	True	
+Hematopoietic cell	stromal_RNA	7	7	True	
+Hematopoietic cell	mural_RNA	7	7	True	
+Hematopoietic cell	neural_RNA	7	7	True	
+Hematopoietic cell	G2M	6	6	True	
+Hematopoietic cell	IFN_like	9	9	True	
+Hematopoietic cell	Treg_related	6	6	True	
+Hematopoietic cell	cytotoxic	6	6	True	
+Hematopoietic cell	heatshock	6	6	True	
+Lymphoid cell	T_core	5	4	False	TRAC
+Lymphoid cell	Myeloid_core	6	6	True	
+Lymphoid cell	epithelial_RNA	8	8	True	
+Lymphoid cell	stromal_RNA	7	7	True	
+Lymphoid cell	mural_RNA	7	7	True	
+Lymphoid cell	neural_RNA	7	6	False	DCX
+Lymphoid cell	G2M	6	6	True	
+Lymphoid cell	IFN_like	9	9	True	
+Lymphoid cell	Treg_related	6	6	True	
+Lymphoid cell	cytotoxic	6	6	True	
+Lymphoid cell	heatshock	6	6	True	
+Macrophage	T_core	5	5	True	
+Macrophage	Myeloid_core	6	6	True	
+Macrophage	epithelial_RNA	8	8	True	
+Macrophage	stromal_RNA	7	7	True	
+Macrophage	mural_RNA	7	7	True	
+Macrophage	neural_RNA	7	6	False	DCX
+Macrophage	G2M	6	6	True	
+Macrophage	IFN_like	9	9	True	
+Macrophage	Treg_related	6	6	True	
+Macrophage	cytotoxic	6	6	True	
+Macrophage	heatshock	6	6	True	
+Mast cell	T_core	5	5	True	
+Mast cell	Myeloid_core	6	6	True	
+Mast cell	epithelial_RNA	8	8	True	
+Mast cell	stromal_RNA	7	7	True	
+Mast cell	mural_RNA	7	7	True	
+Mast cell	neural_RNA	7	6	False	DCX
+Mast cell	G2M	6	6	True	
+Mast cell	IFN_like	9	9	True	
+Mast cell	Treg_related	6	6	True	
+Mast cell	cytotoxic	6	6	True	
+Mast cell	heatshock	6	6	True	
+Melanocytic cell	T_core	5	4	False	TRAC
+Melanocytic cell	Myeloid_core	6	6	True	
+Melanocytic cell	epithelial_RNA	8	8	True	
+Melanocytic cell	stromal_RNA	7	7	True	
+Melanocytic cell	mural_RNA	7	7	True	
+Melanocytic cell	neural_RNA	7	5	False	LRRTM1;IGFBPL1
+Melanocytic cell	G2M	6	6	True	
+Melanocytic cell	IFN_like	9	9	True	
+Melanocytic cell	Treg_related	6	6	True	
+Melanocytic cell	cytotoxic	6	6	True	
+Melanocytic cell	heatshock	6	6	True	
+Mesenchymal cell	T_core	5	4	False	TRAC
+Mesenchymal cell	Myeloid_core	6	6	True	
+Mesenchymal cell	epithelial_RNA	8	8	True	
+Mesenchymal cell	stromal_RNA	7	7	True	
+Mesenchymal cell	mural_RNA	7	7	True	
+Mesenchymal cell	neural_RNA	7	7	True	
+Mesenchymal cell	G2M	6	6	True	
+Mesenchymal cell	IFN_like	9	9	True	
+Mesenchymal cell	Treg_related	6	6	True	
+Mesenchymal cell	cytotoxic	6	6	True	
+Mesenchymal cell	heatshock	6	6	True	
+Monocyte	T_core	5	4	False	TRAC
+Monocyte	Myeloid_core	6	6	True	
+Monocyte	epithelial_RNA	8	8	True	
+Monocyte	stromal_RNA	7	7	True	
+Monocyte	mural_RNA	7	7	True	
+Monocyte	neural_RNA	7	6	False	DCX
+Monocyte	G2M	6	6	True	
+Monocyte	IFN_like	9	9	True	
+Monocyte	Treg_related	6	6	True	
+Monocyte	cytotoxic	6	6	True	
+Monocyte	heatshock	6	6	True	
+Mural cell	T_core	5	5	True	
+Mural cell	Myeloid_core	6	6	True	
+Mural cell	epithelial_RNA	8	8	True	
+Mural cell	stromal_RNA	7	7	True	
+Mural cell	mural_RNA	7	7	True	
+Mural cell	neural_RNA	7	6	False	DCX
+Mural cell	G2M	6	6	True	
+Mural cell	IFN_like	9	9	True	
+Mural cell	Treg_related	6	6	True	
+Mural cell	cytotoxic	6	6	True	
+Mural cell	heatshock	6	6	True	
+Myeloid	T_core	5	5	True	
+Myeloid	Myeloid_core	6	6	True	
+Myeloid	epithelial_RNA	8	8	True	
+Myeloid	stromal_RNA	7	7	True	
+Myeloid	mural_RNA	7	7	True	
+Myeloid	neural_RNA	7	6	False	DCX
+Myeloid	G2M	6	6	True	
+Myeloid	IFN_like	9	9	True	
+Myeloid	Treg_related	6	6	True	
+Myeloid	cytotoxic	6	6	True	
+Myeloid	heatshock	6	6	True	
+Neutrophil	T_core	5	4	False	TRAC
+Neutrophil	Myeloid_core	6	6	True	
+Neutrophil	epithelial_RNA	8	8	True	
+Neutrophil	stromal_RNA	7	7	True	
+Neutrophil	mural_RNA	7	7	True	
+Neutrophil	neural_RNA	7	7	True	
+Neutrophil	G2M	6	6	True	
+Neutrophil	IFN_like	9	9	True	
+Neutrophil	Treg_related	6	6	True	
+Neutrophil	cytotoxic	6	6	True	
+Neutrophil	heatshock	6	6	True	
+T cell	T_core	5	4	False	TRAC
+T cell	Myeloid_core	6	6	True	
+T cell	epithelial_RNA	8	8	True	
+T cell	stromal_RNA	7	7	True	
+T cell	mural_RNA	7	7	True	
+T cell	neural_RNA	7	6	False	DCX
+T cell	G2M	6	6	True	
+T cell	IFN_like	9	9	True	
+T cell	Treg_related	6	6	True	
+T cell	cytotoxic	6	6	True	
+T cell	heatshock	6	6	True	
+T/NK lymphoid	T_core	5	4	False	TRAC
+T/NK lymphoid	Myeloid_core	6	6	True	
+T/NK lymphoid	epithelial_RNA	8	8	True	
+T/NK lymphoid	stromal_RNA	7	7	True	
+T/NK lymphoid	mural_RNA	7	7	True	
+T/NK lymphoid	neural_RNA	7	6	False	DCX
+T/NK lymphoid	G2M	6	6	True	
+T/NK lymphoid	IFN_like	9	9	True	
+T/NK lymphoid	Treg_related	6	6	True	
+T/NK lymphoid	cytotoxic	6	6	True	
+T/NK lymphoid	heatshock	6	6	True	

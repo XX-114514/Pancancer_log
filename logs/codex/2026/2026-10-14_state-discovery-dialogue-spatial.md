@@ -141,3 +141,11 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T07:45:49.334031+00:00 /UTC+8 2026-10-14T15:45:49.334031+08:00：上一goal turn为progress（完整Spectra1018/4context、全量score audit依赖启动及ab61377普通push/云核验）。本turn原后续5进程live，诊断13/24。初查4候选所属Glial在82核心成员中无记录，原生Glial只GSE182109/93663cells/44库/9nodes；进一步对原W全部9CM及120/60精确边真实结构核对已派发，不将core缺席推断为完整W无权重。[run](../../../runs/20261014_original9CM_programme_endpoint_bridge_v1.md)。
 
 2026-10-14T07:47:24.715677+00:00 /UTC+8 2026-10-14T15:47:24.715677+08:00：原172W/9CM/82core/120edge/60pair桥接实际07:42:28 exit0；4稳定Spectra对应core0/edge0，Glial完整W最高CM02份额2.0533%，不混同非零W与核心/边。全部9列份额及原core/pair无Glial独立核对PASS；没有新score或效应检验。[结果](../../../inventories/analysis/2026-10-14/original9CM_programme_endpoint_bridge_v1/RESULTS.md)。
+
+2026-10-14T07:49:35.619374+00:00 /15:49:35 UTC+8：补录上轮同步恢复。080f520首推因并发9f2cb759基点变化触发安全断言，未改写远端；核实远端干净及新基点后普通ff-only推送，07:49:30完成、07:49:35独立HTTPS SHA一致。科学作业未受影响。
+
+2026-10-14T07:54:51.511969+00:00 /UTC+8 2026-10-14T15:54:51.511969+08:00：上一goal turn为progress（原172W/9CM精确桥接及080f520普通push/云核验）。本turn5后续进程live、诊断14/24、cNMF8/18及方法比较8major。新增Fib/Glial/Hemato/Lymphoid180组件全部审计，crossK37/32/28/30非127state；Lymphoid细胞毒/Treg相关/增殖及其他谱系程序并存，已派发全100766固定11面板同细胞诊断，尚待。[四类结果](../../../inventories/analysis/2026-10-14/cNMF_majors04_07_diagnostics_v1/RESULTS.md)、[共表达](../../../runs/20261014_all18_discovery_panel_coexpression_v1.md)。
+
+2026-10-14T07:59:10.388914+00:00 /UTC+8 2026-10-14T15:59:10.388914+08:00：共表达v1 07:54:24退出0、全100766支持量双路径差0；24/198 major-panel缺共同轴基因（如TRAC），相应结果NA不可当0。纠正本机默认sum全NA显示0的解释风险，未发布该0结论。v2恢复同cells来源原生轴，保留阈值/旧结果，派发中。已读取并遵守新增AGENTS时间版本规则，后续称2026年10月CM（v20261010）。[结果](../../../inventories/analysis/2026-10-14/all18_discovery_panel_coexpression_v1/RESULTS.md)。
+
+2026-10-14T07:59:08.564645+00:00 /15:59:08 UTC+8：原生面板复核v2已真实启动90024/90025，07:59:52上皮等前4major已打印完成；完整终态待，未据部分输出发布新比例。全部来源继续按原生测量范围处理缺失。

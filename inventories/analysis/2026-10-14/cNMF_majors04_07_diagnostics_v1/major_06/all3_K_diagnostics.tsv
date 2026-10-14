@@ -1,0 +1,4 @@
+major	K	repeats	HVGs	unfiltered_silhouette	unfiltered_prediction_error	density_retained_fraction
+Hematopoietic cell	10	100	2000	0.8012068587322083	10938943.276657838	0.973
+Hematopoietic cell	15	100	2000	0.7955529880890791	10759832.563642822	0.9773333333333334
+Hematopoietic cell	20	100	2000	0.7640878189795629	10617535.711553255	0.992
