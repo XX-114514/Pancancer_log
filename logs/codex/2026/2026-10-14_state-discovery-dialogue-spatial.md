@@ -175,3 +175,5 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T14:39:18.181048+00:00 UTC（UTC+8加8小时）：最后4免疫谱系180/18000/2600审计取回SHA及绑定核验通过；T与T/NK细胞毒/身份、增殖/IFN/应激候选和低支持其他谱系程序分开审阅，未按LR/临床选择或升级正式状态。[结果](../../../inventories/analysis/2026-10-14/cNMF_final4_immune_v1/RESULTS.md)。ab981af审计链14:38:16 UTC云SHA一致。
 
 2026-10-14T14:42:49.581765+00:00 UTC（UTC+8加8小时）：本轮评分原PID/审计监督live，104892cell/56chunks。完整814字典到172节点/9CM/60唯一细胞对映射14:41:40 UTC exit0，7326结构记录；全部60对与旧120去重独立一致、两端列表逐一节点核对PASS。结构映射未用评分，不称状态/通讯效应完成。[结果](../../../inventories/analysis/2026-10-14/full_dictionary_original9CM_mapping_v1/RESULTS.md)。
+
+2026-10-14T14:45:38.993769+00:00 UTC（UTC+8加8小时）：上一轮progress为全部814到原9CM映射及348b5cb云核验。本轮原评分/审计PID live，187051cells/78chunks。发现既有汇总仅保留主1500，补充四评分变体和原生RNA/检出深度样本内节点汇总，依赖完整独立审计成功后执行；每块双累加核验及主1500与已审均值一致为必需gate。入口语法PASS，真实汇总未执行。[run](../../../runs/20261014_all_source_UCell_unit_sensitivity_v1.md)。
