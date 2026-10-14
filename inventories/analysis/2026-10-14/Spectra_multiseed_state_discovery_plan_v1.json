@@ -1,0 +1,67 @@
+{
+  "schema": "Spectra_multiseed_state_discovery_plan_v1",
+  "created_UTC": "2026-10-14T01:09:01.038759+00:00",
+  "created_UTC8": "2026-10-14T09:09:01.038759+08:00",
+  "producer_sha256": "cf8d544c6bb9953ca3bdca1fd3e7be7a7e511d5cf2370b7340e2ec265bd098ec",
+  "accepted_input_inventory_sha256": "d75515d3b2e2e68e09dbc7ca18ed85cbe5a5c78b741781b59df7510cd7e219ca",
+  "accepted_input_audit_sha256": "647fb3ac11244c3209bb61348bc47f616afd63c830962585e95111e4d56b0d84",
+  "Spectra_commit": "9c079a584ab71ea83e1e0ed471f678d2f2a997a2",
+  "training_cells": 12000,
+  "sources_for_fit": [
+    "GSE148071",
+    "GSE161529",
+    "GSE178341",
+    "GSE182109"
+  ],
+  "internal_projection_source": "GSE183904",
+  "all_target_cells_for_later_projection": 240533,
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "HVG_per_major": 2000,
+  "feature_rule": "Discovery-only Seurat dispersion HVGs separately in T and Mac with gse batch_key, union plus all fixed reference gene symbols; no heldout expression or phenotype used",
+  "prior_mapping": "143 eligible global,18 T reference processes from CD4/CD8/Treg and5MDC for Mac; subtype process signatures do not promote broad identities",
+  "min_reference_genes": 5,
+  "expected_prior_counts": {
+    "global": 143,
+    "T cell": 18,
+    "Macrophage": 5
+  },
+  "global_free_factors": 3,
+  "lineage_free_factors": 2,
+  "expected_L": {
+    "global": 146,
+    "T cell": 20,
+    "Macrophage": 7
+  },
+  "num_epochs": 1000,
+  "batch_size": 1000,
+  "lr_skip": 15,
+  "lam": 0.008,
+  "delta": 0.001,
+  "rho": 0.05,
+  "filter_sets": false,
+  "top_genes": 50,
+  "normalization": "Meanlog input per cell log1p(10000*x/native_fullRNA_total), native denominator retained; no globalLR gene deletion or source regression",
+  "runtime": "Isolated scvi_py311-based venv; official pinned Spectra_gpu, torch2.5.1.post207 CUDA12.6; CPU thread2",
+  "acceptance": [
+    "Original input readback and runtime actual terminal success; all source file/code SHA frozen",
+    "All3 fixed seeds or explicit terminal failures retained; no most-favourable seed selection",
+    "Save weights/checkpoints/all12000 scores/feature dictionaries/raw original metadata in private outputs",
+    "Finite nonnegative weights/scores,exact training cell/gene/factor axes and173 scope masks",
+    "Cross-seed matching and source/RNA/identity diagnostics required after fitting before module freezing/UCell",
+    "No formalstate/CM/LR/DIALOGUE/spatial completion from fit success"
+  ],
+  "state_release": false,
+  "remaining_goal_requirements": [
+    "cNMF stability comparison",
+    "Fixed UCell full-source/internal projection and qualified independent-source checks",
+    "All9CM mapping plus uncovered-lineage inputs/states",
+    "State-dependent LR/receiver retesting with prespecified controls/testing family",
+    "DIALOGUE after state stage and multicell/clinical-unit verification",
+    "New state-aware spatial validation/coverage/heldout-slice design"
+  ],
+  "status": "PREDECLARED_NOT_STARTED"
+}

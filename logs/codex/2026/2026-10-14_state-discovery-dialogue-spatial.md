@@ -27,3 +27,9 @@
 软件metadata GitHub API403限流，v1空目录保留；通过官方git shallow blobless元数据只读取13Python/JSON/license文件，未检出表达样例。固定commit9c079...及全部SHA；cnmf1.7.0/pyvis0.3.2/jsonpickle4.1.1公开wheel按PyPI官方SHA验证。资源不到1MB源码/轮子bundle，新隔离venv使用已验证scvi_py311基础，旧所有环境未改。runtime worker410626、smoke411173在00:50:29—00:51:23 exit0，官方Spectra_gpu真实3epoch/12toy cells得到12×6有限分数，Python3.11.14/torch2.5.1.post207/CUDA12.6；这只是API/synthetic验证，没有生物状态训练。官方GPU实现的mini-batch可能改变优化，需要后续多初始化/稳定性；pandas markers dtype FutureWarning不影响实际运行，未篡改官方算法。
 
 4833e8bcac2087e3a546ef631b38e107d9bf8503合同已00:45:12普通push/00:45:15独立HTTPS核验，[回执](../../../inventories/analysis/2026-10-14/state_singlecell_input_plan_git_receipt_v1.json)。前置quota精确余量约509GiB，500GiB预留保持需后续再查。并发825fa02已提交shared daily含状态启动段和atlas段，事后核查公开聚合/保留，不改写。完整goal仍active，输入/软件PASS不替代Spectra/cNMF/UCell/全部9CM/DIALOGUE及空间。下一执行读回验收后正式模型配置冻结和训练。
+
+## 2026-10-14T09:09:01.038759+08:00/UTC 2026-10-14T01:09:01.038759+00:00 原生输入全审接受，正式Spectra冻结
+
+真实readback13226/13227于00:58:17—00:59:38 UTC exit0、01:00:40均不存在。全部240533保存raw rows直接逐一比较canonical；1832unit-loop两类全gene值108251626、fullRNA/nGenes/ID/原身份/继承block及完整训练counts对照通过。212库/424major-unit/140blocks/12000训练cells/16625共基因正确，native H5总990778466bytes，无矩阵重算或复制。新v2接受inventory SHA d75515d...；原failed v1保留。
+
+正式[Spectra多seed合同](../../../inventories/analysis/2026-10-14/Spectra_multiseed_state_discovery_plan_v1.json)：4源训练，胃source内部迁移；143global/18T/5Mac prior资格仅基因轴匹配≥5，未看留出表达/p。保留完整prior加discovery-only T/M2000HVG，各extra3/2/2，173factor slots；3seed各1000epoch GPU batch1000；subset先验不授权CD4/CD8/Treg身份。完整goal/cNMF/UCell/所有9CM/DIALOGUE/空间均继续，当前模型未启动，正式state仍0。
