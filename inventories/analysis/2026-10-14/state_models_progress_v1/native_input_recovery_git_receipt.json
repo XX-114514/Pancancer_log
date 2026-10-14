@@ -1,0 +1,7 @@
+{
+  "content_commit": "96edde418cb73caeace28cb4f21135cc18c2a7c6",
+  "verified_remote_main": "96edde418cb73caeace28cb4f21135cc18c2a7c6",
+  "verified_UTC": "2026-10-14T00:57:05.565362+00:00",
+  "method": "server quota-recovery tmp clone clean ff-only bundle + ordinary push; independent local HTTPS ls-remote and fetch",
+  "bundle_sha256": "57bb3fd88050b46e4413fc2055f7db7a1c5d3cea333d9532d14de1c6aea74246"
+}

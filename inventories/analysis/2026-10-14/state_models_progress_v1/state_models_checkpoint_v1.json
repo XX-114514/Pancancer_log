@@ -1,0 +1,150 @@
+{
+  "observed_UTC": "2026-10-14T01:37:19.861206+00:00",
+  "input_audit": {
+    "status": "PASS_ALL240533_CELL_NATIVE_COUNTS_FULLRNA_AND1832_UNIT_AGGREGATES",
+    "started_UTC": "2026-10-14T00:58:19.210727+00:00",
+    "finished_UTC": "2026-10-14T00:59:37.643182+00:00",
+    "auditor_sha256": "cdfd0410492d43d250ded54df7832a930074b0588ec64aa23bfdb645f007beed",
+    "parent_execution_status": "TERMINAL_FAILED_INPUT_ASSEMBLY",
+    "parent_failure": "Library count212 mistaken for sample-major units424 in final summary assert; no data transform changed",
+    "cells": 240533,
+    "libraries": 212,
+    "sample_major_units": 424,
+    "sample_node_units": 1832,
+    "analysis_blocks": 140,
+    "training_cells": 12000,
+    "common_genes": 16625,
+    "all240533_raw_rows_directly_compared_to_canonical": true,
+    "aggregate_values_checked": 108251626,
+    "all_source_checks": [
+      {
+        "gse_id": "GSE148071",
+        "cells": 9057,
+        "genes": 29527,
+        "libraries": 20,
+        "sample_major_units": 40,
+        "analysis_blocks": 20,
+        "training_cells": 3000,
+        "status": "PASS_ALL_CELLS_NATIVE_GENES_RNA_KEYS_AND_UNIT_LOOP_AGGREGATES"
+      },
+      {
+        "gse_id": "GSE161529",
+        "cells": 39547,
+        "genes": 33538,
+        "libraries": 23,
+        "sample_major_units": 46,
+        "analysis_blocks": 22,
+        "training_cells": 3000,
+        "status": "PASS_ALL_CELLS_NATIVE_GENES_RNA_KEYS_AND_UNIT_LOOP_AGGREGATES"
+      },
+      {
+        "gse_id": "GSE178341",
+        "cells": 54566,
+        "genes": 26895,
+        "libraries": 109,
+        "sample_major_units": 218,
+        "analysis_blocks": 59,
+        "training_cells": 3000,
+        "status": "PASS_ALL_CELLS_NATIVE_GENES_RNA_KEYS_AND_UNIT_LOOP_AGGREGATES"
+      },
+      {
+        "gse_id": "GSE182109",
+        "cells": 96990,
+        "genes": 38224,
+        "libraries": 36,
+        "sample_major_units": 72,
+        "analysis_blocks": 15,
+        "training_cells": 3000,
+        "status": "PASS_ALL_CELLS_NATIVE_GENES_RNA_KEYS_AND_UNIT_LOOP_AGGREGATES"
+      },
+      {
+        "gse_id": "GSE183904",
+        "cells": 40373,
+        "genes": 24186,
+        "libraries": 24,
+        "sample_major_units": 48,
+        "analysis_blocks": 24,
+        "training_cells": 0,
+        "status": "PASS_ALL_CELLS_NATIVE_GENES_RNA_KEYS_AND_UNIT_LOOP_AGGREGATES"
+      }
+    ],
+    "state_model_trained": false,
+    "state_labels_assigned": false,
+    "scientific_release": false
+  },
+  "input_audit_sha256": "647fb3ac11244c3209bb61348bc47f616afd63c830962585e95111e4d56b0d84",
+  "input_acceptance_sha256": "d75515d3b2e2e68e09dbc7ca18ed85cbe5a5c78b741781b59df7510cd7e219ca",
+  "Spectra_execution": {
+    "status": "TERMINAL_SUCCESS_SPECTRA_FITS_PENDING_STABILITY",
+    "started_UTC": "2026-10-14T01:14:25.080186+00:00",
+    "worker_pid": 66828,
+    "formal_state_labels": false,
+    "child_pid": 66829,
+    "finished_UTC": "2026-10-14T01:31:39.168194+00:00",
+    "exit_code": 0
+  },
+  "Spectra_inventory_sha256": "1fa8f1085c1de491fe228b07612e546e15b112c2195fa6b5f129351833447d96",
+  "Spectra_seeds": [
+    {
+      "seed": 20261014,
+      "factors": 173,
+      "features": 6512,
+      "scope_counts": {
+        "Macrophage": 7,
+        "T cell": 20,
+        "global": 146
+      },
+      "all_finite": true
+    },
+    {
+      "seed": 20261015,
+      "factors": 173,
+      "features": 6512,
+      "scope_counts": {
+        "Macrophage": 7,
+        "T cell": 20,
+        "global": 146
+      },
+      "all_finite": true
+    },
+    {
+      "seed": 20261016,
+      "factors": 173,
+      "features": 6512,
+      "scope_counts": {
+        "Macrophage": 7,
+        "T cell": 20,
+        "global": 146
+      },
+      "all_finite": true
+    }
+  ],
+  "complete_Spectra_output_SHA_and_axes_checked": true,
+  "cNMF_execution": {
+    "status": "RUNNING_COMPLETE_CNMFK_GRID",
+    "started_UTC": "2026-10-14T01:32:01.738363+00:00",
+    "worker_pid": 123088,
+    "formal_state_labels": false,
+    "child_pid": 123089
+  },
+  "cNMF_live_processes": [
+    {
+      "role": "worker_pid",
+      "pid": 123088,
+      "exists": true,
+      "command_identity_matches": true
+    },
+    {
+      "role": "child_pid",
+      "pid": 123089,
+      "exists": true,
+      "command_identity_matches": true
+    }
+  ],
+  "cNMF_completed_factorization_files": 164,
+  "state_release": false,
+  "UCell_completed": false,
+  "all9CM_state_mapping_completed": false,
+  "state_Dialogue_completed": false,
+  "new_spatial_completed": false
+}

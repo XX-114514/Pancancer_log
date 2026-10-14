@@ -39,3 +39,11 @@
 正式66828/66829于01:14:25实际启动，01:16:41两个/proc命令身份匹配；首seed20261014/12000cells/6512features/173factor slots，01:21观察首seed614/1000进展。不是smoke或状态接受。官方GPU源码构建/初始化后实际优化已开始，不因早期GPU0%快照当故障。10f4fe568cb0c963f02dc3147a2ff228f5b8090a已01:13:23普通push/01:13:26HTTPS核验。
 
 官方cnmf1.7prepare/consensus/get_norm_counts源码及签名已读，发现TPM用于HVG/谱而NMF自身raw-count unitvariance，不混写为全RNA-percell归一化。新[cNMF完整600run对照](../../../inventories/analysis/2026-10-14/cnmf_state_contrast_plan_v1.json)同发现cells2major×3K×100；所有K/repeats、密度和stability保留，phase真实未启动。原GeneScalar/control/RNA深度差别后续诊断，不据与Spectra最相似结果择K。整个goal active，未做UCell、完整9CM状态/DIALOGUE后状态或新空间。
+
+## 2026-10-14T09:39:22.873600+08:00/UTC 2026-10-14T01:39:22.873600+00:00 三seed真实完成与cNMF已验证运行
+
+01:14:25—01:31:39 Spectra正式exit0，01:34:42worker/child已不存在；3seed每12000×173scores/173×6512weights、146global/20T/7Mac，所有输出SHA、有限值、cell/gene/factor axes已全核。仅candidate fits，cross-seed稳定性/生物state未审。native v2输入accepted/control新handoff于01:11:34.206532登记，0冲突，原CM v17不改。
+
+cNMF123088/123089实际01:32:01启动，01:37:19两个命令/proc确实匹配，164factorization文件，仍运行完整600+consensus。记录实际进展，不据PID文件或stdout等待重启。所有私有matrix/cell/patient/score不上传，公开[关键节点](../../../inventories/analysis/2026-10-14/state_models_progress_v1/RESULTS.md)。完整goal仍active，不以当前T/M或healthy model替代9CM/DIALOGUE/空间。
+
+d8b7ac29f75964ead1d1fa6cb914c1b263ddbe91于01:32:01普通push/01:32:04HTTPS核验；10f4...01:13:23/01:13:26；96edde...00:57:02/00:57:05，回执在本checkpoint目录。共享daily中的CRC旧细分DIALOGUE预备段曾随本次cNMFcommit包含，已审公开聚合/保留并不称本state阶段完成；未暂存其他未提交STATUS/CRC/R脚本。下一真正module稳定性/谱系深度诊断、cNMF完成和UCell冻结。
