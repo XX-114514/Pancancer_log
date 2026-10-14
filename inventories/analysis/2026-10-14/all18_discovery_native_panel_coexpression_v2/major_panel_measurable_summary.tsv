@@ -1,0 +1,199 @@
+major	panel	discovery_cells	measurable_cells	detect_atleast3	strict_atleast3_and1pct
+B cell	G2M	6000	6000	111.0	1.0
+B cell	IFN_like	6000	6000	525.0	5.0
+B cell	Myeloid_core	6000	6000	177.0	0.0
+B cell	T_core	6000	5000	66.0	0.0
+B cell	Treg_related	6000	6000	15.0	0.0
+B cell	cytotoxic	6000	6000	62.0	0.0
+B cell	epithelial_RNA	6000	6000	88.0	0.0
+B cell	heatshock	6000	6000	2604.0	448.0
+B cell	mural_RNA	6000	6000	10.0	0.0
+B cell	neural_RNA	6000	5000	0.0	0.0
+B cell	stromal_RNA	6000	6000	58.0	2.0
+Dendritic cell	G2M	4527	4527	123.0	0.0
+Dendritic cell	IFN_like	4527	4527	1175.0	12.0
+Dendritic cell	Myeloid_core	4527	4527	3402.0	0.0
+Dendritic cell	T_core	4527	4238	107.0	0.0
+Dendritic cell	Treg_related	4527	4527	26.0	0.0
+Dendritic cell	cytotoxic	4527	4527	200.0	13.0
+Dendritic cell	epithelial_RNA	4527	4527	66.0	0.0
+Dendritic cell	heatshock	4527	4527	2783.0	487.0
+Dendritic cell	mural_RNA	4527	4527	6.0	0.0
+Dendritic cell	neural_RNA	4527	3527	0.0	0.0
+Dendritic cell	stromal_RNA	4527	4527	13.0	0.0
+Endothelial cell	G2M	5852	5852	116.0	2.0
+Endothelial cell	IFN_like	5852	5852	1923.0	207.0
+Endothelial cell	Myeloid_core	5852	5852	106.0	0.0
+Endothelial cell	T_core	5852	5852	66.0	0.0
+Endothelial cell	Treg_related	5852	5852	14.0	0.0
+Endothelial cell	cytotoxic	5852	5852	63.0	2.0
+Endothelial cell	epithelial_RNA	5852	5852	254.0	3.0
+Endothelial cell	heatshock	5852	5852	3451.0	172.0
+Endothelial cell	mural_RNA	5852	5852	338.0	23.0
+Endothelial cell	neural_RNA	5852	4852	0.0	0.0
+Endothelial cell	stromal_RNA	5852	5852	283.0	29.0
+Epithelial cell	G2M	6000	6000	553.0	9.0
+Epithelial cell	IFN_like	6000	6000	1276.0	29.0
+Epithelial cell	Myeloid_core	6000	6000	297.0	0.0
+Epithelial cell	T_core	6000	6000	66.0	0.0
+Epithelial cell	Treg_related	6000	6000	13.0	0.0
+Epithelial cell	cytotoxic	6000	6000	88.0	0.0
+Epithelial cell	epithelial_RNA	6000	6000	4576.0	502.0
+Epithelial cell	heatshock	6000	6000	4042.0	185.0
+Epithelial cell	mural_RNA	6000	6000	128.0	14.0
+Epithelial cell	neural_RNA	6000	5000	2.0	0.0
+Epithelial cell	stromal_RNA	6000	6000	160.0	0.0
+Fibroblast	G2M	6000	6000	80.0	1.0
+Fibroblast	IFN_like	6000	6000	1317.0	62.0
+Fibroblast	Myeloid_core	6000	6000	123.0	0.0
+Fibroblast	T_core	6000	6000	54.0	0.0
+Fibroblast	Treg_related	6000	6000	10.0	0.0
+Fibroblast	cytotoxic	6000	6000	45.0	1.0
+Fibroblast	epithelial_RNA	6000	6000	282.0	1.0
+Fibroblast	heatshock	6000	6000	3652.0	261.0
+Fibroblast	mural_RNA	6000	6000	2971.0	442.0
+Fibroblast	neural_RNA	6000	5000	0.0	0.0
+Fibroblast	stromal_RNA	6000	6000	5680.0	4753.0
+Glial cell	G2M	6000	6000	1016.0	49.0
+Glial cell	IFN_like	6000	6000	1272.0	16.0
+Glial cell	Myeloid_core	6000	6000	273.0	0.0
+Glial cell	T_core	6000	6000	66.0	0.0
+Glial cell	Treg_related	6000	6000	13.0	0.0
+Glial cell	cytotoxic	6000	6000	42.0	0.0
+Glial cell	epithelial_RNA	6000	6000	11.0	0.0
+Glial cell	heatshock	6000	6000	4901.0	308.0
+Glial cell	mural_RNA	6000	6000	126.0	2.0
+Glial cell	neural_RNA	6000	6000	1820.0	145.0
+Glial cell	stromal_RNA	6000	6000	383.0	1.0
+Hematopoietic cell	G2M	6000	6000	489.0	7.0
+Hematopoietic cell	IFN_like	6000	6000	163.0	2.0
+Hematopoietic cell	Myeloid_core	6000	6000	1322.0	0.0
+Hematopoietic cell	T_core	6000	0		
+Hematopoietic cell	Treg_related	6000	6000	32.0	0.0
+Hematopoietic cell	cytotoxic	6000	6000	9.0	0.0
+Hematopoietic cell	epithelial_RNA	6000	6000	2.0	0.0
+Hematopoietic cell	heatshock	6000	6000	994.0	4.0
+Hematopoietic cell	mural_RNA	6000	6000	7.0	0.0
+Hematopoietic cell	neural_RNA	6000	6000	0.0	0.0
+Hematopoietic cell	stromal_RNA	6000	6000	0.0	0.0
+Lymphoid cell	G2M	3644	3644	26.0	3.0
+Lymphoid cell	IFN_like	3644	3644	132.0	12.0
+Lymphoid cell	Myeloid_core	3644	3644	39.0	0.0
+Lymphoid cell	T_core	3644	2367	857.0	24.0
+Lymphoid cell	Treg_related	3644	3644	277.0	33.0
+Lymphoid cell	cytotoxic	3644	3644	1030.0	322.0
+Lymphoid cell	epithelial_RNA	3644	3644	31.0	0.0
+Lymphoid cell	heatshock	3644	3644	1933.0	919.0
+Lymphoid cell	mural_RNA	3644	3644	5.0	0.0
+Lymphoid cell	neural_RNA	3644	3112	0.0	0.0
+Lymphoid cell	stromal_RNA	3644	3644	9.0	1.0
+Macrophage	G2M	6000	6000	217.0	2.0
+Macrophage	IFN_like	6000	6000	2006.0	112.0
+Macrophage	Myeloid_core	6000	6000	5561.0	1776.0
+Macrophage	T_core	6000	6000	146.0	0.0
+Macrophage	Treg_related	6000	6000	56.0	0.0
+Macrophage	cytotoxic	6000	6000	148.0	2.0
+Macrophage	epithelial_RNA	6000	6000	189.0	1.0
+Macrophage	heatshock	6000	6000	3920.0	643.0
+Macrophage	mural_RNA	6000	6000	30.0	2.0
+Macrophage	neural_RNA	6000	5000	0.0	0.0
+Macrophage	stromal_RNA	6000	6000	77.0	9.0
+Mast cell	G2M	5072	5072	48.0	2.0
+Mast cell	IFN_like	5072	5072	387.0	28.0
+Mast cell	Myeloid_core	5072	5072	1258.0	1.0
+Mast cell	T_core	5072	5072	50.0	0.0
+Mast cell	Treg_related	5072	5072	19.0	0.0
+Mast cell	cytotoxic	5072	5072	62.0	2.0
+Mast cell	epithelial_RNA	5072	5072	48.0	0.0
+Mast cell	heatshock	5072	5072	2940.0	626.0
+Mast cell	mural_RNA	5072	5072	7.0	0.0
+Mast cell	neural_RNA	5072	4072	0.0	0.0
+Mast cell	stromal_RNA	5072	5072	25.0	2.0
+Melanocytic cell	G2M	6000	6000	327.0	0.0
+Melanocytic cell	IFN_like	6000	6000	1505.0	26.0
+Melanocytic cell	Myeloid_core	6000	6000	52.0	0.0
+Melanocytic cell	T_core	6000	4800	23.0	0.0
+Melanocytic cell	Treg_related	6000	6000	13.0	0.0
+Melanocytic cell	cytotoxic	6000	6000	35.0	0.0
+Melanocytic cell	epithelial_RNA	6000	6000	214.0	3.0
+Melanocytic cell	heatshock	6000	6000	4050.0	213.0
+Melanocytic cell	mural_RNA	6000	6000	131.0	4.0
+Melanocytic cell	neural_RNA	6000	4800	237.0	0.0
+Melanocytic cell	stromal_RNA	6000	6000	74.0	2.0
+Mesenchymal cell	G2M	6000	6000	1182.0	32.0
+Mesenchymal cell	IFN_like	6000	6000	1479.0	94.0
+Mesenchymal cell	Myeloid_core	6000	6000	353.0	0.0
+Mesenchymal cell	T_core	6000	0		
+Mesenchymal cell	Treg_related	6000	6000	2.0	0.0
+Mesenchymal cell	cytotoxic	6000	6000	22.0	0.0
+Mesenchymal cell	epithelial_RNA	6000	6000	71.0	0.0
+Mesenchymal cell	heatshock	6000	6000	4783.0	540.0
+Mesenchymal cell	mural_RNA	6000	6000	1235.0	39.0
+Mesenchymal cell	neural_RNA	6000	6000	4.0	0.0
+Mesenchymal cell	stromal_RNA	6000	6000	5623.0	2911.0
+Monocyte	G2M	5891	5891	10.0	0.0
+Monocyte	IFN_like	5891	5891	1499.0	62.0
+Monocyte	Myeloid_core	5891	5891	5731.0	2352.0
+Monocyte	T_core	5891	4891	153.0	0.0
+Monocyte	Treg_related	5891	5891	42.0	0.0
+Monocyte	cytotoxic	5891	5891	115.0	3.0
+Monocyte	epithelial_RNA	5891	5891	59.0	0.0
+Monocyte	heatshock	5891	5891	3398.0	673.0
+Monocyte	mural_RNA	5891	5891	17.0	2.0
+Monocyte	neural_RNA	5891	4891	0.0	0.0
+Monocyte	stromal_RNA	5891	5891	31.0	5.0
+Mural cell	G2M	5475	5475	143.0	5.0
+Mural cell	IFN_like	5475	5475	1270.0	70.0
+Mural cell	Myeloid_core	5475	5475	48.0	0.0
+Mural cell	T_core	5475	5475	37.0	0.0
+Mural cell	Treg_related	5475	5475	7.0	0.0
+Mural cell	cytotoxic	5475	5475	60.0	1.0
+Mural cell	epithelial_RNA	5475	5475	303.0	4.0
+Mural cell	heatshock	5475	5475	2884.0	197.0
+Mural cell	mural_RNA	5475	5475	5038.0	3635.0
+Mural cell	neural_RNA	5475	4475	0.0	0.0
+Mural cell	stromal_RNA	5475	5475	3256.0	1194.0
+Myeloid	G2M	5700	5700	295.0	4.0
+Myeloid	IFN_like	5700	5700	1216.0	26.0
+Myeloid	Myeloid_core	5700	5700	5097.0	392.0
+Myeloid	T_core	5700	5700	356.0	0.0
+Myeloid	Treg_related	5700	5700	94.0	0.0
+Myeloid	cytotoxic	5700	5700	213.0	3.0
+Myeloid	epithelial_RNA	5700	5700	116.0	0.0
+Myeloid	heatshock	5700	5700	4175.0	680.0
+Myeloid	mural_RNA	5700	5700	15.0	1.0
+Myeloid	neural_RNA	5700	4700	0.0	0.0
+Myeloid	stromal_RNA	5700	5700	47.0	5.0
+Neutrophil	G2M	4605	4605	2.0	0.0
+Neutrophil	IFN_like	4605	4605	780.0	213.0
+Neutrophil	Myeloid_core	4605	4605	3232.0	890.0
+Neutrophil	T_core	4605	3605	5.0	0.0
+Neutrophil	Treg_related	4605	4605	5.0	0.0
+Neutrophil	cytotoxic	4605	4605	22.0	1.0
+Neutrophil	epithelial_RNA	4605	4605	394.0	1.0
+Neutrophil	heatshock	4605	4605	954.0	163.0
+Neutrophil	mural_RNA	4605	4605	1.0	0.0
+Neutrophil	neural_RNA	4605	4605	0.0	0.0
+Neutrophil	stromal_RNA	4605	4605	6.0	1.0
+T cell	G2M	6000	6000	165.0	3.0
+T cell	IFN_like	6000	6000	518.0	27.0
+T cell	Myeloid_core	6000	6000	156.0	0.0
+T cell	T_core	6000	5000	3182.0	24.0
+T cell	Treg_related	6000	6000	424.0	16.0
+T cell	cytotoxic	6000	6000	1658.0	326.0
+T cell	epithelial_RNA	6000	6000	41.0	0.0
+T cell	heatshock	6000	6000	2821.0	468.0
+T cell	mural_RNA	6000	6000	9.0	0.0
+T cell	neural_RNA	6000	5000	0.0	0.0
+T cell	stromal_RNA	6000	6000	29.0	3.0
+T/NK lymphoid	G2M	6000	6000	14.0	0.0
+T/NK lymphoid	IFN_like	6000	6000	473.0	28.0
+T/NK lymphoid	Myeloid_core	6000	6000	1092.0	2.0
+T/NK lymphoid	T_core	6000	4000	1394.0	1.0
+T/NK lymphoid	Treg_related	6000	6000	71.0	0.0
+T/NK lymphoid	cytotoxic	6000	6000	5717.0	4351.0
+T/NK lymphoid	epithelial_RNA	6000	6000	29.0	0.0
+T/NK lymphoid	heatshock	6000	6000	2943.0	900.0
+T/NK lymphoid	mural_RNA	6000	6000	4.0	0.0
+T/NK lymphoid	neural_RNA	6000	5000	0.0	0.0
+T/NK lymphoid	stromal_RNA	6000	6000	14.0	0.0

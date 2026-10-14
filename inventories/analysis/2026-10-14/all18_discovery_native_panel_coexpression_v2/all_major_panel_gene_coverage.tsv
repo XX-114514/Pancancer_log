@@ -1,0 +1,1013 @@
+gse_id	major	panel	required_genes	measured_genes	complete_gene_axis	missing_genes
+GSE131907	B cell	T_core	5	5	True	
+GSE131907	B cell	Myeloid_core	6	6	True	
+GSE131907	B cell	epithelial_RNA	8	8	True	
+GSE131907	B cell	stromal_RNA	7	7	True	
+GSE131907	B cell	mural_RNA	7	7	True	
+GSE131907	B cell	neural_RNA	7	7	True	
+GSE131907	B cell	G2M	6	6	True	
+GSE131907	B cell	IFN_like	9	9	True	
+GSE131907	B cell	Treg_related	6	6	True	
+GSE131907	B cell	cytotoxic	6	6	True	
+GSE131907	B cell	heatshock	6	6	True	
+GSE155698	B cell	T_core	5	4	False	TRAC
+GSE155698	B cell	Myeloid_core	6	6	True	
+GSE155698	B cell	epithelial_RNA	8	8	True	
+GSE155698	B cell	stromal_RNA	7	7	True	
+GSE155698	B cell	mural_RNA	7	7	True	
+GSE155698	B cell	neural_RNA	7	7	True	
+GSE155698	B cell	G2M	6	6	True	
+GSE155698	B cell	IFN_like	9	9	True	
+GSE155698	B cell	Treg_related	6	6	True	
+GSE155698	B cell	cytotoxic	6	6	True	
+GSE155698	B cell	heatshock	6	6	True	
+GSE161529	B cell	T_core	5	5	True	
+GSE161529	B cell	Myeloid_core	6	6	True	
+GSE161529	B cell	epithelial_RNA	8	8	True	
+GSE161529	B cell	stromal_RNA	7	7	True	
+GSE161529	B cell	mural_RNA	7	7	True	
+GSE161529	B cell	neural_RNA	7	7	True	
+GSE161529	B cell	G2M	6	6	True	
+GSE161529	B cell	IFN_like	9	9	True	
+GSE161529	B cell	Treg_related	6	6	True	
+GSE161529	B cell	cytotoxic	6	6	True	
+GSE161529	B cell	heatshock	6	6	True	
+GSE178341	B cell	T_core	5	5	True	
+GSE178341	B cell	Myeloid_core	6	6	True	
+GSE178341	B cell	epithelial_RNA	8	8	True	
+GSE178341	B cell	stromal_RNA	7	7	True	
+GSE178341	B cell	mural_RNA	7	7	True	
+GSE178341	B cell	neural_RNA	7	7	True	
+GSE178341	B cell	G2M	6	6	True	
+GSE178341	B cell	IFN_like	9	9	True	
+GSE178341	B cell	Treg_related	6	6	True	
+GSE178341	B cell	cytotoxic	6	6	True	
+GSE178341	B cell	heatshock	6	6	True	
+GSE253013	B cell	T_core	5	5	True	
+GSE253013	B cell	Myeloid_core	6	6	True	
+GSE253013	B cell	epithelial_RNA	8	8	True	
+GSE253013	B cell	stromal_RNA	7	7	True	
+GSE253013	B cell	mural_RNA	7	7	True	
+GSE253013	B cell	neural_RNA	7	6	False	DCX
+GSE253013	B cell	G2M	6	6	True	
+GSE253013	B cell	IFN_like	9	9	True	
+GSE253013	B cell	Treg_related	6	6	True	
+GSE253013	B cell	cytotoxic	6	6	True	
+GSE253013	B cell	heatshock	6	6	True	
+GSE274229	B cell	T_core	5	5	True	
+GSE274229	B cell	Myeloid_core	6	6	True	
+GSE274229	B cell	epithelial_RNA	8	8	True	
+GSE274229	B cell	stromal_RNA	7	7	True	
+GSE274229	B cell	mural_RNA	7	7	True	
+GSE274229	B cell	neural_RNA	7	7	True	
+GSE274229	B cell	G2M	6	6	True	
+GSE274229	B cell	IFN_like	9	9	True	
+GSE274229	B cell	Treg_related	6	6	True	
+GSE274229	B cell	cytotoxic	6	6	True	
+GSE274229	B cell	heatshock	6	6	True	
+GSE131907	Dendritic cell	T_core	5	5	True	
+GSE131907	Dendritic cell	Myeloid_core	6	6	True	
+GSE131907	Dendritic cell	epithelial_RNA	8	8	True	
+GSE131907	Dendritic cell	stromal_RNA	7	7	True	
+GSE131907	Dendritic cell	mural_RNA	7	7	True	
+GSE131907	Dendritic cell	neural_RNA	7	7	True	
+GSE131907	Dendritic cell	G2M	6	6	True	
+GSE131907	Dendritic cell	IFN_like	9	9	True	
+GSE131907	Dendritic cell	Treg_related	6	6	True	
+GSE131907	Dendritic cell	cytotoxic	6	6	True	
+GSE131907	Dendritic cell	heatshock	6	6	True	
+GSE155698	Dendritic cell	T_core	5	4	False	TRAC
+GSE155698	Dendritic cell	Myeloid_core	6	6	True	
+GSE155698	Dendritic cell	epithelial_RNA	8	8	True	
+GSE155698	Dendritic cell	stromal_RNA	7	7	True	
+GSE155698	Dendritic cell	mural_RNA	7	7	True	
+GSE155698	Dendritic cell	neural_RNA	7	7	True	
+GSE155698	Dendritic cell	G2M	6	6	True	
+GSE155698	Dendritic cell	IFN_like	9	9	True	
+GSE155698	Dendritic cell	Treg_related	6	6	True	
+GSE155698	Dendritic cell	cytotoxic	6	6	True	
+GSE155698	Dendritic cell	heatshock	6	6	True	
+GSE161529	Dendritic cell	T_core	5	5	True	
+GSE161529	Dendritic cell	Myeloid_core	6	6	True	
+GSE161529	Dendritic cell	epithelial_RNA	8	8	True	
+GSE161529	Dendritic cell	stromal_RNA	7	7	True	
+GSE161529	Dendritic cell	mural_RNA	7	7	True	
+GSE161529	Dendritic cell	neural_RNA	7	7	True	
+GSE161529	Dendritic cell	G2M	6	6	True	
+GSE161529	Dendritic cell	IFN_like	9	9	True	
+GSE161529	Dendritic cell	Treg_related	6	6	True	
+GSE161529	Dendritic cell	cytotoxic	6	6	True	
+GSE161529	Dendritic cell	heatshock	6	6	True	
+GSE178341	Dendritic cell	T_core	5	5	True	
+GSE178341	Dendritic cell	Myeloid_core	6	6	True	
+GSE178341	Dendritic cell	epithelial_RNA	8	8	True	
+GSE178341	Dendritic cell	stromal_RNA	7	7	True	
+GSE178341	Dendritic cell	mural_RNA	7	7	True	
+GSE178341	Dendritic cell	neural_RNA	7	7	True	
+GSE178341	Dendritic cell	G2M	6	6	True	
+GSE178341	Dendritic cell	IFN_like	9	9	True	
+GSE178341	Dendritic cell	Treg_related	6	6	True	
+GSE178341	Dendritic cell	cytotoxic	6	6	True	
+GSE178341	Dendritic cell	heatshock	6	6	True	
+GSE183904	Dendritic cell	T_core	5	5	True	
+GSE183904	Dendritic cell	Myeloid_core	6	6	True	
+GSE183904	Dendritic cell	epithelial_RNA	8	8	True	
+GSE183904	Dendritic cell	stromal_RNA	7	7	True	
+GSE183904	Dendritic cell	mural_RNA	7	7	True	
+GSE183904	Dendritic cell	neural_RNA	7	7	True	
+GSE183904	Dendritic cell	G2M	6	6	True	
+GSE183904	Dendritic cell	IFN_like	9	9	True	
+GSE183904	Dendritic cell	Treg_related	6	6	True	
+GSE183904	Dendritic cell	cytotoxic	6	6	True	
+GSE183904	Dendritic cell	heatshock	6	6	True	
+GSE253013	Dendritic cell	T_core	5	5	True	
+GSE253013	Dendritic cell	Myeloid_core	6	6	True	
+GSE253013	Dendritic cell	epithelial_RNA	8	8	True	
+GSE253013	Dendritic cell	stromal_RNA	7	7	True	
+GSE253013	Dendritic cell	mural_RNA	7	7	True	
+GSE253013	Dendritic cell	neural_RNA	7	6	False	DCX
+GSE253013	Dendritic cell	G2M	6	6	True	
+GSE253013	Dendritic cell	IFN_like	9	9	True	
+GSE253013	Dendritic cell	Treg_related	6	6	True	
+GSE253013	Dendritic cell	cytotoxic	6	6	True	
+GSE253013	Dendritic cell	heatshock	6	6	True	
+GSE131907	Endothelial cell	T_core	5	5	True	
+GSE131907	Endothelial cell	Myeloid_core	6	6	True	
+GSE131907	Endothelial cell	epithelial_RNA	8	8	True	
+GSE131907	Endothelial cell	stromal_RNA	7	7	True	
+GSE131907	Endothelial cell	mural_RNA	7	7	True	
+GSE131907	Endothelial cell	neural_RNA	7	7	True	
+GSE131907	Endothelial cell	G2M	6	6	True	
+GSE131907	Endothelial cell	IFN_like	9	9	True	
+GSE131907	Endothelial cell	Treg_related	6	6	True	
+GSE131907	Endothelial cell	cytotoxic	6	6	True	
+GSE131907	Endothelial cell	heatshock	6	6	True	
+GSE148071	Endothelial cell	T_core	5	5	True	
+GSE148071	Endothelial cell	Myeloid_core	6	6	True	
+GSE148071	Endothelial cell	epithelial_RNA	8	8	True	
+GSE148071	Endothelial cell	stromal_RNA	7	7	True	
+GSE148071	Endothelial cell	mural_RNA	7	7	True	
+GSE148071	Endothelial cell	neural_RNA	7	7	True	
+GSE148071	Endothelial cell	G2M	6	6	True	
+GSE148071	Endothelial cell	IFN_like	9	9	True	
+GSE148071	Endothelial cell	Treg_related	6	6	True	
+GSE148071	Endothelial cell	cytotoxic	6	6	True	
+GSE148071	Endothelial cell	heatshock	6	6	True	
+GSE161529	Endothelial cell	T_core	5	5	True	
+GSE161529	Endothelial cell	Myeloid_core	6	6	True	
+GSE161529	Endothelial cell	epithelial_RNA	8	8	True	
+GSE161529	Endothelial cell	stromal_RNA	7	7	True	
+GSE161529	Endothelial cell	mural_RNA	7	7	True	
+GSE161529	Endothelial cell	neural_RNA	7	7	True	
+GSE161529	Endothelial cell	G2M	6	6	True	
+GSE161529	Endothelial cell	IFN_like	9	9	True	
+GSE161529	Endothelial cell	Treg_related	6	6	True	
+GSE161529	Endothelial cell	cytotoxic	6	6	True	
+GSE161529	Endothelial cell	heatshock	6	6	True	
+GSE178341	Endothelial cell	T_core	5	5	True	
+GSE178341	Endothelial cell	Myeloid_core	6	6	True	
+GSE178341	Endothelial cell	epithelial_RNA	8	8	True	
+GSE178341	Endothelial cell	stromal_RNA	7	7	True	
+GSE178341	Endothelial cell	mural_RNA	7	7	True	
+GSE178341	Endothelial cell	neural_RNA	7	7	True	
+GSE178341	Endothelial cell	G2M	6	6	True	
+GSE178341	Endothelial cell	IFN_like	9	9	True	
+GSE178341	Endothelial cell	Treg_related	6	6	True	
+GSE178341	Endothelial cell	cytotoxic	6	6	True	
+GSE178341	Endothelial cell	heatshock	6	6	True	
+GSE253013	Endothelial cell	T_core	5	5	True	
+GSE253013	Endothelial cell	Myeloid_core	6	6	True	
+GSE253013	Endothelial cell	epithelial_RNA	8	8	True	
+GSE253013	Endothelial cell	stromal_RNA	7	7	True	
+GSE253013	Endothelial cell	mural_RNA	7	7	True	
+GSE253013	Endothelial cell	neural_RNA	7	6	False	DCX
+GSE253013	Endothelial cell	G2M	6	6	True	
+GSE253013	Endothelial cell	IFN_like	9	9	True	
+GSE253013	Endothelial cell	Treg_related	6	6	True	
+GSE253013	Endothelial cell	cytotoxic	6	6	True	
+GSE253013	Endothelial cell	heatshock	6	6	True	
+GSE274229	Endothelial cell	T_core	5	5	True	
+GSE274229	Endothelial cell	Myeloid_core	6	6	True	
+GSE274229	Endothelial cell	epithelial_RNA	8	8	True	
+GSE274229	Endothelial cell	stromal_RNA	7	7	True	
+GSE274229	Endothelial cell	mural_RNA	7	7	True	
+GSE274229	Endothelial cell	neural_RNA	7	7	True	
+GSE274229	Endothelial cell	G2M	6	6	True	
+GSE274229	Endothelial cell	IFN_like	9	9	True	
+GSE274229	Endothelial cell	Treg_related	6	6	True	
+GSE274229	Endothelial cell	cytotoxic	6	6	True	
+GSE274229	Endothelial cell	heatshock	6	6	True	
+GSE131907	Epithelial cell	T_core	5	5	True	
+GSE131907	Epithelial cell	Myeloid_core	6	6	True	
+GSE131907	Epithelial cell	epithelial_RNA	8	8	True	
+GSE131907	Epithelial cell	stromal_RNA	7	7	True	
+GSE131907	Epithelial cell	mural_RNA	7	7	True	
+GSE131907	Epithelial cell	neural_RNA	7	7	True	
+GSE131907	Epithelial cell	G2M	6	6	True	
+GSE131907	Epithelial cell	IFN_like	9	9	True	
+GSE131907	Epithelial cell	Treg_related	6	6	True	
+GSE131907	Epithelial cell	cytotoxic	6	6	True	
+GSE131907	Epithelial cell	heatshock	6	6	True	
+GSE148071	Epithelial cell	T_core	5	5	True	
+GSE148071	Epithelial cell	Myeloid_core	6	6	True	
+GSE148071	Epithelial cell	epithelial_RNA	8	8	True	
+GSE148071	Epithelial cell	stromal_RNA	7	7	True	
+GSE148071	Epithelial cell	mural_RNA	7	7	True	
+GSE148071	Epithelial cell	neural_RNA	7	7	True	
+GSE148071	Epithelial cell	G2M	6	6	True	
+GSE148071	Epithelial cell	IFN_like	9	9	True	
+GSE148071	Epithelial cell	Treg_related	6	6	True	
+GSE148071	Epithelial cell	cytotoxic	6	6	True	
+GSE148071	Epithelial cell	heatshock	6	6	True	
+GSE161529	Epithelial cell	T_core	5	5	True	
+GSE161529	Epithelial cell	Myeloid_core	6	6	True	
+GSE161529	Epithelial cell	epithelial_RNA	8	8	True	
+GSE161529	Epithelial cell	stromal_RNA	7	7	True	
+GSE161529	Epithelial cell	mural_RNA	7	7	True	
+GSE161529	Epithelial cell	neural_RNA	7	7	True	
+GSE161529	Epithelial cell	G2M	6	6	True	
+GSE161529	Epithelial cell	IFN_like	9	9	True	
+GSE161529	Epithelial cell	Treg_related	6	6	True	
+GSE161529	Epithelial cell	cytotoxic	6	6	True	
+GSE161529	Epithelial cell	heatshock	6	6	True	
+GSE178341	Epithelial cell	T_core	5	5	True	
+GSE178341	Epithelial cell	Myeloid_core	6	6	True	
+GSE178341	Epithelial cell	epithelial_RNA	8	8	True	
+GSE178341	Epithelial cell	stromal_RNA	7	7	True	
+GSE178341	Epithelial cell	mural_RNA	7	7	True	
+GSE178341	Epithelial cell	neural_RNA	7	7	True	
+GSE178341	Epithelial cell	G2M	6	6	True	
+GSE178341	Epithelial cell	IFN_like	9	9	True	
+GSE178341	Epithelial cell	Treg_related	6	6	True	
+GSE178341	Epithelial cell	cytotoxic	6	6	True	
+GSE178341	Epithelial cell	heatshock	6	6	True	
+GSE253013	Epithelial cell	T_core	5	5	True	
+GSE253013	Epithelial cell	Myeloid_core	6	6	True	
+GSE253013	Epithelial cell	epithelial_RNA	8	8	True	
+GSE253013	Epithelial cell	stromal_RNA	7	7	True	
+GSE253013	Epithelial cell	mural_RNA	7	7	True	
+GSE253013	Epithelial cell	neural_RNA	7	6	False	DCX
+GSE253013	Epithelial cell	G2M	6	6	True	
+GSE253013	Epithelial cell	IFN_like	9	9	True	
+GSE253013	Epithelial cell	Treg_related	6	6	True	
+GSE253013	Epithelial cell	cytotoxic	6	6	True	
+GSE253013	Epithelial cell	heatshock	6	6	True	
+GSE274229	Epithelial cell	T_core	5	5	True	
+GSE274229	Epithelial cell	Myeloid_core	6	6	True	
+GSE274229	Epithelial cell	epithelial_RNA	8	8	True	
+GSE274229	Epithelial cell	stromal_RNA	7	7	True	
+GSE274229	Epithelial cell	mural_RNA	7	7	True	
+GSE274229	Epithelial cell	neural_RNA	7	7	True	
+GSE274229	Epithelial cell	G2M	6	6	True	
+GSE274229	Epithelial cell	IFN_like	9	9	True	
+GSE274229	Epithelial cell	Treg_related	6	6	True	
+GSE274229	Epithelial cell	cytotoxic	6	6	True	
+GSE274229	Epithelial cell	heatshock	6	6	True	
+GSE131907	Fibroblast	T_core	5	5	True	
+GSE131907	Fibroblast	Myeloid_core	6	6	True	
+GSE131907	Fibroblast	epithelial_RNA	8	8	True	
+GSE131907	Fibroblast	stromal_RNA	7	7	True	
+GSE131907	Fibroblast	mural_RNA	7	7	True	
+GSE131907	Fibroblast	neural_RNA	7	7	True	
+GSE131907	Fibroblast	G2M	6	6	True	
+GSE131907	Fibroblast	IFN_like	9	9	True	
+GSE131907	Fibroblast	Treg_related	6	6	True	
+GSE131907	Fibroblast	cytotoxic	6	6	True	
+GSE131907	Fibroblast	heatshock	6	6	True	
+GSE148071	Fibroblast	T_core	5	5	True	
+GSE148071	Fibroblast	Myeloid_core	6	6	True	
+GSE148071	Fibroblast	epithelial_RNA	8	8	True	
+GSE148071	Fibroblast	stromal_RNA	7	7	True	
+GSE148071	Fibroblast	mural_RNA	7	7	True	
+GSE148071	Fibroblast	neural_RNA	7	7	True	
+GSE148071	Fibroblast	G2M	6	6	True	
+GSE148071	Fibroblast	IFN_like	9	9	True	
+GSE148071	Fibroblast	Treg_related	6	6	True	
+GSE148071	Fibroblast	cytotoxic	6	6	True	
+GSE148071	Fibroblast	heatshock	6	6	True	
+GSE161529	Fibroblast	T_core	5	5	True	
+GSE161529	Fibroblast	Myeloid_core	6	6	True	
+GSE161529	Fibroblast	epithelial_RNA	8	8	True	
+GSE161529	Fibroblast	stromal_RNA	7	7	True	
+GSE161529	Fibroblast	mural_RNA	7	7	True	
+GSE161529	Fibroblast	neural_RNA	7	7	True	
+GSE161529	Fibroblast	G2M	6	6	True	
+GSE161529	Fibroblast	IFN_like	9	9	True	
+GSE161529	Fibroblast	Treg_related	6	6	True	
+GSE161529	Fibroblast	cytotoxic	6	6	True	
+GSE161529	Fibroblast	heatshock	6	6	True	
+GSE178341	Fibroblast	T_core	5	5	True	
+GSE178341	Fibroblast	Myeloid_core	6	6	True	
+GSE178341	Fibroblast	epithelial_RNA	8	8	True	
+GSE178341	Fibroblast	stromal_RNA	7	7	True	
+GSE178341	Fibroblast	mural_RNA	7	7	True	
+GSE178341	Fibroblast	neural_RNA	7	7	True	
+GSE178341	Fibroblast	G2M	6	6	True	
+GSE178341	Fibroblast	IFN_like	9	9	True	
+GSE178341	Fibroblast	Treg_related	6	6	True	
+GSE178341	Fibroblast	cytotoxic	6	6	True	
+GSE178341	Fibroblast	heatshock	6	6	True	
+GSE253013	Fibroblast	T_core	5	5	True	
+GSE253013	Fibroblast	Myeloid_core	6	6	True	
+GSE253013	Fibroblast	epithelial_RNA	8	8	True	
+GSE253013	Fibroblast	stromal_RNA	7	7	True	
+GSE253013	Fibroblast	mural_RNA	7	7	True	
+GSE253013	Fibroblast	neural_RNA	7	6	False	DCX
+GSE253013	Fibroblast	G2M	6	6	True	
+GSE253013	Fibroblast	IFN_like	9	9	True	
+GSE253013	Fibroblast	Treg_related	6	6	True	
+GSE253013	Fibroblast	cytotoxic	6	6	True	
+GSE253013	Fibroblast	heatshock	6	6	True	
+GSE274229	Fibroblast	T_core	5	5	True	
+GSE274229	Fibroblast	Myeloid_core	6	6	True	
+GSE274229	Fibroblast	epithelial_RNA	8	8	True	
+GSE274229	Fibroblast	stromal_RNA	7	7	True	
+GSE274229	Fibroblast	mural_RNA	7	7	True	
+GSE274229	Fibroblast	neural_RNA	7	7	True	
+GSE274229	Fibroblast	G2M	6	6	True	
+GSE274229	Fibroblast	IFN_like	9	9	True	
+GSE274229	Fibroblast	Treg_related	6	6	True	
+GSE274229	Fibroblast	cytotoxic	6	6	True	
+GSE274229	Fibroblast	heatshock	6	6	True	
+GSE182109	Glial cell	T_core	5	5	True	
+GSE182109	Glial cell	Myeloid_core	6	6	True	
+GSE182109	Glial cell	epithelial_RNA	8	8	True	
+GSE182109	Glial cell	stromal_RNA	7	7	True	
+GSE182109	Glial cell	mural_RNA	7	7	True	
+GSE182109	Glial cell	neural_RNA	7	7	True	
+GSE182109	Glial cell	G2M	6	6	True	
+GSE182109	Glial cell	IFN_like	9	9	True	
+GSE182109	Glial cell	Treg_related	6	6	True	
+GSE182109	Glial cell	cytotoxic	6	6	True	
+GSE182109	Glial cell	heatshock	6	6	True	
+GSE116256	Hematopoietic cell	T_core	5	4	False	TRAC
+GSE116256	Hematopoietic cell	Myeloid_core	6	6	True	
+GSE116256	Hematopoietic cell	epithelial_RNA	8	8	True	
+GSE116256	Hematopoietic cell	stromal_RNA	7	7	True	
+GSE116256	Hematopoietic cell	mural_RNA	7	7	True	
+GSE116256	Hematopoietic cell	neural_RNA	7	7	True	
+GSE116256	Hematopoietic cell	G2M	6	6	True	
+GSE116256	Hematopoietic cell	IFN_like	9	9	True	
+GSE116256	Hematopoietic cell	Treg_related	6	6	True	
+GSE116256	Hematopoietic cell	cytotoxic	6	6	True	
+GSE116256	Hematopoietic cell	heatshock	6	6	True	
+GSE131907	Lymphoid cell	T_core	5	5	True	
+GSE131907	Lymphoid cell	Myeloid_core	6	6	True	
+GSE131907	Lymphoid cell	epithelial_RNA	8	8	True	
+GSE131907	Lymphoid cell	stromal_RNA	7	7	True	
+GSE131907	Lymphoid cell	mural_RNA	7	7	True	
+GSE131907	Lymphoid cell	neural_RNA	7	7	True	
+GSE131907	Lymphoid cell	G2M	6	6	True	
+GSE131907	Lymphoid cell	IFN_like	9	9	True	
+GSE131907	Lymphoid cell	Treg_related	6	6	True	
+GSE131907	Lymphoid cell	cytotoxic	6	6	True	
+GSE131907	Lymphoid cell	heatshock	6	6	True	
+GSE155698	Lymphoid cell	T_core	5	4	False	TRAC
+GSE155698	Lymphoid cell	Myeloid_core	6	6	True	
+GSE155698	Lymphoid cell	epithelial_RNA	8	8	True	
+GSE155698	Lymphoid cell	stromal_RNA	7	7	True	
+GSE155698	Lymphoid cell	mural_RNA	7	7	True	
+GSE155698	Lymphoid cell	neural_RNA	7	7	True	
+GSE155698	Lymphoid cell	G2M	6	6	True	
+GSE155698	Lymphoid cell	IFN_like	9	9	True	
+GSE155698	Lymphoid cell	Treg_related	6	6	True	
+GSE155698	Lymphoid cell	cytotoxic	6	6	True	
+GSE155698	Lymphoid cell	heatshock	6	6	True	
+GSE178341	Lymphoid cell	T_core	5	5	True	
+GSE178341	Lymphoid cell	Myeloid_core	6	6	True	
+GSE178341	Lymphoid cell	epithelial_RNA	8	8	True	
+GSE178341	Lymphoid cell	stromal_RNA	7	7	True	
+GSE178341	Lymphoid cell	mural_RNA	7	7	True	
+GSE178341	Lymphoid cell	neural_RNA	7	7	True	
+GSE178341	Lymphoid cell	G2M	6	6	True	
+GSE178341	Lymphoid cell	IFN_like	9	9	True	
+GSE178341	Lymphoid cell	Treg_related	6	6	True	
+GSE178341	Lymphoid cell	cytotoxic	6	6	True	
+GSE178341	Lymphoid cell	heatshock	6	6	True	
+GSE179994	Lymphoid cell	T_core	5	4	False	TRAC
+GSE179994	Lymphoid cell	Myeloid_core	6	6	True	
+GSE179994	Lymphoid cell	epithelial_RNA	8	8	True	
+GSE179994	Lymphoid cell	stromal_RNA	7	7	True	
+GSE179994	Lymphoid cell	mural_RNA	7	7	True	
+GSE179994	Lymphoid cell	neural_RNA	7	7	True	
+GSE179994	Lymphoid cell	G2M	6	6	True	
+GSE179994	Lymphoid cell	IFN_like	9	9	True	
+GSE179994	Lymphoid cell	Treg_related	6	6	True	
+GSE179994	Lymphoid cell	cytotoxic	6	6	True	
+GSE179994	Lymphoid cell	heatshock	6	6	True	
+GSE253013	Lymphoid cell	T_core	5	5	True	
+GSE253013	Lymphoid cell	Myeloid_core	6	6	True	
+GSE253013	Lymphoid cell	epithelial_RNA	8	8	True	
+GSE253013	Lymphoid cell	stromal_RNA	7	7	True	
+GSE253013	Lymphoid cell	mural_RNA	7	7	True	
+GSE253013	Lymphoid cell	neural_RNA	7	6	False	DCX
+GSE253013	Lymphoid cell	G2M	6	6	True	
+GSE253013	Lymphoid cell	IFN_like	9	9	True	
+GSE253013	Lymphoid cell	Treg_related	6	6	True	
+GSE253013	Lymphoid cell	cytotoxic	6	6	True	
+GSE253013	Lymphoid cell	heatshock	6	6	True	
+GSE274229	Lymphoid cell	T_core	5	5	True	
+GSE274229	Lymphoid cell	Myeloid_core	6	6	True	
+GSE274229	Lymphoid cell	epithelial_RNA	8	8	True	
+GSE274229	Lymphoid cell	stromal_RNA	7	7	True	
+GSE274229	Lymphoid cell	mural_RNA	7	7	True	
+GSE274229	Lymphoid cell	neural_RNA	7	7	True	
+GSE274229	Lymphoid cell	G2M	6	6	True	
+GSE274229	Lymphoid cell	IFN_like	9	9	True	
+GSE274229	Lymphoid cell	Treg_related	6	6	True	
+GSE274229	Lymphoid cell	cytotoxic	6	6	True	
+GSE274229	Lymphoid cell	heatshock	6	6	True	
+GSE131907	Macrophage	T_core	5	5	True	
+GSE131907	Macrophage	Myeloid_core	6	6	True	
+GSE131907	Macrophage	epithelial_RNA	8	8	True	
+GSE131907	Macrophage	stromal_RNA	7	7	True	
+GSE131907	Macrophage	mural_RNA	7	7	True	
+GSE131907	Macrophage	neural_RNA	7	7	True	
+GSE131907	Macrophage	G2M	6	6	True	
+GSE131907	Macrophage	IFN_like	9	9	True	
+GSE131907	Macrophage	Treg_related	6	6	True	
+GSE131907	Macrophage	cytotoxic	6	6	True	
+GSE131907	Macrophage	heatshock	6	6	True	
+GSE148071	Macrophage	T_core	5	5	True	
+GSE148071	Macrophage	Myeloid_core	6	6	True	
+GSE148071	Macrophage	epithelial_RNA	8	8	True	
+GSE148071	Macrophage	stromal_RNA	7	7	True	
+GSE148071	Macrophage	mural_RNA	7	7	True	
+GSE148071	Macrophage	neural_RNA	7	7	True	
+GSE148071	Macrophage	G2M	6	6	True	
+GSE148071	Macrophage	IFN_like	9	9	True	
+GSE148071	Macrophage	Treg_related	6	6	True	
+GSE148071	Macrophage	cytotoxic	6	6	True	
+GSE148071	Macrophage	heatshock	6	6	True	
+GSE161529	Macrophage	T_core	5	5	True	
+GSE161529	Macrophage	Myeloid_core	6	6	True	
+GSE161529	Macrophage	epithelial_RNA	8	8	True	
+GSE161529	Macrophage	stromal_RNA	7	7	True	
+GSE161529	Macrophage	mural_RNA	7	7	True	
+GSE161529	Macrophage	neural_RNA	7	7	True	
+GSE161529	Macrophage	G2M	6	6	True	
+GSE161529	Macrophage	IFN_like	9	9	True	
+GSE161529	Macrophage	Treg_related	6	6	True	
+GSE161529	Macrophage	cytotoxic	6	6	True	
+GSE161529	Macrophage	heatshock	6	6	True	
+GSE178341	Macrophage	T_core	5	5	True	
+GSE178341	Macrophage	Myeloid_core	6	6	True	
+GSE178341	Macrophage	epithelial_RNA	8	8	True	
+GSE178341	Macrophage	stromal_RNA	7	7	True	
+GSE178341	Macrophage	mural_RNA	7	7	True	
+GSE178341	Macrophage	neural_RNA	7	7	True	
+GSE178341	Macrophage	G2M	6	6	True	
+GSE178341	Macrophage	IFN_like	9	9	True	
+GSE178341	Macrophage	Treg_related	6	6	True	
+GSE178341	Macrophage	cytotoxic	6	6	True	
+GSE178341	Macrophage	heatshock	6	6	True	
+GSE253013	Macrophage	T_core	5	5	True	
+GSE253013	Macrophage	Myeloid_core	6	6	True	
+GSE253013	Macrophage	epithelial_RNA	8	8	True	
+GSE253013	Macrophage	stromal_RNA	7	7	True	
+GSE253013	Macrophage	mural_RNA	7	7	True	
+GSE253013	Macrophage	neural_RNA	7	6	False	DCX
+GSE253013	Macrophage	G2M	6	6	True	
+GSE253013	Macrophage	IFN_like	9	9	True	
+GSE253013	Macrophage	Treg_related	6	6	True	
+GSE253013	Macrophage	cytotoxic	6	6	True	
+GSE253013	Macrophage	heatshock	6	6	True	
+GSE274229	Macrophage	T_core	5	5	True	
+GSE274229	Macrophage	Myeloid_core	6	6	True	
+GSE274229	Macrophage	epithelial_RNA	8	8	True	
+GSE274229	Macrophage	stromal_RNA	7	7	True	
+GSE274229	Macrophage	mural_RNA	7	7	True	
+GSE274229	Macrophage	neural_RNA	7	7	True	
+GSE274229	Macrophage	G2M	6	6	True	
+GSE274229	Macrophage	IFN_like	9	9	True	
+GSE274229	Macrophage	Treg_related	6	6	True	
+GSE274229	Macrophage	cytotoxic	6	6	True	
+GSE274229	Macrophage	heatshock	6	6	True	
+GSE131907	Mast cell	T_core	5	5	True	
+GSE131907	Mast cell	Myeloid_core	6	6	True	
+GSE131907	Mast cell	epithelial_RNA	8	8	True	
+GSE131907	Mast cell	stromal_RNA	7	7	True	
+GSE131907	Mast cell	mural_RNA	7	7	True	
+GSE131907	Mast cell	neural_RNA	7	7	True	
+GSE131907	Mast cell	G2M	6	6	True	
+GSE131907	Mast cell	IFN_like	9	9	True	
+GSE131907	Mast cell	Treg_related	6	6	True	
+GSE131907	Mast cell	cytotoxic	6	6	True	
+GSE131907	Mast cell	heatshock	6	6	True	
+GSE148071	Mast cell	T_core	5	5	True	
+GSE148071	Mast cell	Myeloid_core	6	6	True	
+GSE148071	Mast cell	epithelial_RNA	8	8	True	
+GSE148071	Mast cell	stromal_RNA	7	7	True	
+GSE148071	Mast cell	mural_RNA	7	7	True	
+GSE148071	Mast cell	neural_RNA	7	7	True	
+GSE148071	Mast cell	G2M	6	6	True	
+GSE148071	Mast cell	IFN_like	9	9	True	
+GSE148071	Mast cell	Treg_related	6	6	True	
+GSE148071	Mast cell	cytotoxic	6	6	True	
+GSE148071	Mast cell	heatshock	6	6	True	
+GSE161529	Mast cell	T_core	5	5	True	
+GSE161529	Mast cell	Myeloid_core	6	6	True	
+GSE161529	Mast cell	epithelial_RNA	8	8	True	
+GSE161529	Mast cell	stromal_RNA	7	7	True	
+GSE161529	Mast cell	mural_RNA	7	7	True	
+GSE161529	Mast cell	neural_RNA	7	7	True	
+GSE161529	Mast cell	G2M	6	6	True	
+GSE161529	Mast cell	IFN_like	9	9	True	
+GSE161529	Mast cell	Treg_related	6	6	True	
+GSE161529	Mast cell	cytotoxic	6	6	True	
+GSE161529	Mast cell	heatshock	6	6	True	
+GSE178341	Mast cell	T_core	5	5	True	
+GSE178341	Mast cell	Myeloid_core	6	6	True	
+GSE178341	Mast cell	epithelial_RNA	8	8	True	
+GSE178341	Mast cell	stromal_RNA	7	7	True	
+GSE178341	Mast cell	mural_RNA	7	7	True	
+GSE178341	Mast cell	neural_RNA	7	7	True	
+GSE178341	Mast cell	G2M	6	6	True	
+GSE178341	Mast cell	IFN_like	9	9	True	
+GSE178341	Mast cell	Treg_related	6	6	True	
+GSE178341	Mast cell	cytotoxic	6	6	True	
+GSE178341	Mast cell	heatshock	6	6	True	
+GSE253013	Mast cell	T_core	5	5	True	
+GSE253013	Mast cell	Myeloid_core	6	6	True	
+GSE253013	Mast cell	epithelial_RNA	8	8	True	
+GSE253013	Mast cell	stromal_RNA	7	7	True	
+GSE253013	Mast cell	mural_RNA	7	7	True	
+GSE253013	Mast cell	neural_RNA	7	6	False	DCX
+GSE253013	Mast cell	G2M	6	6	True	
+GSE253013	Mast cell	IFN_like	9	9	True	
+GSE253013	Mast cell	Treg_related	6	6	True	
+GSE253013	Mast cell	cytotoxic	6	6	True	
+GSE253013	Mast cell	heatshock	6	6	True	
+GSE274229	Mast cell	T_core	5	5	True	
+GSE274229	Mast cell	Myeloid_core	6	6	True	
+GSE274229	Mast cell	epithelial_RNA	8	8	True	
+GSE274229	Mast cell	stromal_RNA	7	7	True	
+GSE274229	Mast cell	mural_RNA	7	7	True	
+GSE274229	Mast cell	neural_RNA	7	7	True	
+GSE274229	Mast cell	G2M	6	6	True	
+GSE274229	Mast cell	IFN_like	9	9	True	
+GSE274229	Mast cell	Treg_related	6	6	True	
+GSE274229	Mast cell	cytotoxic	6	6	True	
+GSE274229	Mast cell	heatshock	6	6	True	
+GSE115978	Melanocytic cell	T_core	5	4	False	TRAC
+GSE115978	Melanocytic cell	Myeloid_core	6	6	True	
+GSE115978	Melanocytic cell	epithelial_RNA	8	8	True	
+GSE115978	Melanocytic cell	stromal_RNA	7	7	True	
+GSE115978	Melanocytic cell	mural_RNA	7	7	True	
+GSE115978	Melanocytic cell	neural_RNA	7	7	True	
+GSE115978	Melanocytic cell	G2M	6	6	True	
+GSE115978	Melanocytic cell	IFN_like	9	9	True	
+GSE115978	Melanocytic cell	Treg_related	6	6	True	
+GSE115978	Melanocytic cell	cytotoxic	6	6	True	
+GSE115978	Melanocytic cell	heatshock	6	6	True	
+GSE138665	Melanocytic cell	T_core	5	5	True	
+GSE138665	Melanocytic cell	Myeloid_core	6	6	True	
+GSE138665	Melanocytic cell	epithelial_RNA	8	8	True	
+GSE138665	Melanocytic cell	stromal_RNA	7	7	True	
+GSE138665	Melanocytic cell	mural_RNA	7	7	True	
+GSE138665	Melanocytic cell	neural_RNA	7	7	True	
+GSE138665	Melanocytic cell	G2M	6	6	True	
+GSE138665	Melanocytic cell	IFN_like	9	9	True	
+GSE138665	Melanocytic cell	Treg_related	6	6	True	
+GSE138665	Melanocytic cell	cytotoxic	6	6	True	
+GSE138665	Melanocytic cell	heatshock	6	6	True	
+GSE139829	Melanocytic cell	T_core	5	5	True	
+GSE139829	Melanocytic cell	Myeloid_core	6	6	True	
+GSE139829	Melanocytic cell	epithelial_RNA	8	8	True	
+GSE139829	Melanocytic cell	stromal_RNA	7	7	True	
+GSE139829	Melanocytic cell	mural_RNA	7	7	True	
+GSE139829	Melanocytic cell	neural_RNA	7	7	True	
+GSE139829	Melanocytic cell	G2M	6	6	True	
+GSE139829	Melanocytic cell	IFN_like	9	9	True	
+GSE139829	Melanocytic cell	Treg_related	6	6	True	
+GSE139829	Melanocytic cell	cytotoxic	6	6	True	
+GSE139829	Melanocytic cell	heatshock	6	6	True	
+GSE141526	Melanocytic cell	T_core	5	5	True	
+GSE141526	Melanocytic cell	Myeloid_core	6	6	True	
+GSE141526	Melanocytic cell	epithelial_RNA	8	8	True	
+GSE141526	Melanocytic cell	stromal_RNA	7	7	True	
+GSE141526	Melanocytic cell	mural_RNA	7	7	True	
+GSE141526	Melanocytic cell	neural_RNA	7	7	True	
+GSE141526	Melanocytic cell	G2M	6	6	True	
+GSE141526	Melanocytic cell	IFN_like	9	9	True	
+GSE141526	Melanocytic cell	Treg_related	6	6	True	
+GSE141526	Melanocytic cell	cytotoxic	6	6	True	
+GSE141526	Melanocytic cell	heatshock	6	6	True	
+GSE189889	Melanocytic cell	T_core	5	5	True	
+GSE189889	Melanocytic cell	Myeloid_core	6	6	True	
+GSE189889	Melanocytic cell	epithelial_RNA	8	8	True	
+GSE189889	Melanocytic cell	stromal_RNA	7	7	True	
+GSE189889	Melanocytic cell	mural_RNA	7	7	True	
+GSE189889	Melanocytic cell	neural_RNA	7	5	False	LRRTM1;IGFBPL1
+GSE189889	Melanocytic cell	G2M	6	6	True	
+GSE189889	Melanocytic cell	IFN_like	9	9	True	
+GSE189889	Melanocytic cell	Treg_related	6	6	True	
+GSE189889	Melanocytic cell	cytotoxic	6	6	True	
+GSE189889	Melanocytic cell	heatshock	6	6	True	
+GSE152048	Mesenchymal cell	T_core	5	4	False	TRAC
+GSE152048	Mesenchymal cell	Myeloid_core	6	6	True	
+GSE152048	Mesenchymal cell	epithelial_RNA	8	8	True	
+GSE152048	Mesenchymal cell	stromal_RNA	7	7	True	
+GSE152048	Mesenchymal cell	mural_RNA	7	7	True	
+GSE152048	Mesenchymal cell	neural_RNA	7	7	True	
+GSE152048	Mesenchymal cell	G2M	6	6	True	
+GSE152048	Mesenchymal cell	IFN_like	9	9	True	
+GSE152048	Mesenchymal cell	Treg_related	6	6	True	
+GSE152048	Mesenchymal cell	cytotoxic	6	6	True	
+GSE152048	Mesenchymal cell	heatshock	6	6	True	
+GSE131907	Monocyte	T_core	5	5	True	
+GSE131907	Monocyte	Myeloid_core	6	6	True	
+GSE131907	Monocyte	epithelial_RNA	8	8	True	
+GSE131907	Monocyte	stromal_RNA	7	7	True	
+GSE131907	Monocyte	mural_RNA	7	7	True	
+GSE131907	Monocyte	neural_RNA	7	7	True	
+GSE131907	Monocyte	G2M	6	6	True	
+GSE131907	Monocyte	IFN_like	9	9	True	
+GSE131907	Monocyte	Treg_related	6	6	True	
+GSE131907	Monocyte	cytotoxic	6	6	True	
+GSE131907	Monocyte	heatshock	6	6	True	
+GSE155698	Monocyte	T_core	5	4	False	TRAC
+GSE155698	Monocyte	Myeloid_core	6	6	True	
+GSE155698	Monocyte	epithelial_RNA	8	8	True	
+GSE155698	Monocyte	stromal_RNA	7	7	True	
+GSE155698	Monocyte	mural_RNA	7	7	True	
+GSE155698	Monocyte	neural_RNA	7	7	True	
+GSE155698	Monocyte	G2M	6	6	True	
+GSE155698	Monocyte	IFN_like	9	9	True	
+GSE155698	Monocyte	Treg_related	6	6	True	
+GSE155698	Monocyte	cytotoxic	6	6	True	
+GSE155698	Monocyte	heatshock	6	6	True	
+GSE161529	Monocyte	T_core	5	5	True	
+GSE161529	Monocyte	Myeloid_core	6	6	True	
+GSE161529	Monocyte	epithelial_RNA	8	8	True	
+GSE161529	Monocyte	stromal_RNA	7	7	True	
+GSE161529	Monocyte	mural_RNA	7	7	True	
+GSE161529	Monocyte	neural_RNA	7	7	True	
+GSE161529	Monocyte	G2M	6	6	True	
+GSE161529	Monocyte	IFN_like	9	9	True	
+GSE161529	Monocyte	Treg_related	6	6	True	
+GSE161529	Monocyte	cytotoxic	6	6	True	
+GSE161529	Monocyte	heatshock	6	6	True	
+GSE178341	Monocyte	T_core	5	5	True	
+GSE178341	Monocyte	Myeloid_core	6	6	True	
+GSE178341	Monocyte	epithelial_RNA	8	8	True	
+GSE178341	Monocyte	stromal_RNA	7	7	True	
+GSE178341	Monocyte	mural_RNA	7	7	True	
+GSE178341	Monocyte	neural_RNA	7	7	True	
+GSE178341	Monocyte	G2M	6	6	True	
+GSE178341	Monocyte	IFN_like	9	9	True	
+GSE178341	Monocyte	Treg_related	6	6	True	
+GSE178341	Monocyte	cytotoxic	6	6	True	
+GSE178341	Monocyte	heatshock	6	6	True	
+GSE253013	Monocyte	T_core	5	5	True	
+GSE253013	Monocyte	Myeloid_core	6	6	True	
+GSE253013	Monocyte	epithelial_RNA	8	8	True	
+GSE253013	Monocyte	stromal_RNA	7	7	True	
+GSE253013	Monocyte	mural_RNA	7	7	True	
+GSE253013	Monocyte	neural_RNA	7	6	False	DCX
+GSE253013	Monocyte	G2M	6	6	True	
+GSE253013	Monocyte	IFN_like	9	9	True	
+GSE253013	Monocyte	Treg_related	6	6	True	
+GSE253013	Monocyte	cytotoxic	6	6	True	
+GSE253013	Monocyte	heatshock	6	6	True	
+GSE274229	Monocyte	T_core	5	5	True	
+GSE274229	Monocyte	Myeloid_core	6	6	True	
+GSE274229	Monocyte	epithelial_RNA	8	8	True	
+GSE274229	Monocyte	stromal_RNA	7	7	True	
+GSE274229	Monocyte	mural_RNA	7	7	True	
+GSE274229	Monocyte	neural_RNA	7	7	True	
+GSE274229	Monocyte	G2M	6	6	True	
+GSE274229	Monocyte	IFN_like	9	9	True	
+GSE274229	Monocyte	Treg_related	6	6	True	
+GSE274229	Monocyte	cytotoxic	6	6	True	
+GSE274229	Monocyte	heatshock	6	6	True	
+GSE131907	Mural cell	T_core	5	5	True	
+GSE131907	Mural cell	Myeloid_core	6	6	True	
+GSE131907	Mural cell	epithelial_RNA	8	8	True	
+GSE131907	Mural cell	stromal_RNA	7	7	True	
+GSE131907	Mural cell	mural_RNA	7	7	True	
+GSE131907	Mural cell	neural_RNA	7	7	True	
+GSE131907	Mural cell	G2M	6	6	True	
+GSE131907	Mural cell	IFN_like	9	9	True	
+GSE131907	Mural cell	Treg_related	6	6	True	
+GSE131907	Mural cell	cytotoxic	6	6	True	
+GSE131907	Mural cell	heatshock	6	6	True	
+GSE148071	Mural cell	T_core	5	5	True	
+GSE148071	Mural cell	Myeloid_core	6	6	True	
+GSE148071	Mural cell	epithelial_RNA	8	8	True	
+GSE148071	Mural cell	stromal_RNA	7	7	True	
+GSE148071	Mural cell	mural_RNA	7	7	True	
+GSE148071	Mural cell	neural_RNA	7	7	True	
+GSE148071	Mural cell	G2M	6	6	True	
+GSE148071	Mural cell	IFN_like	9	9	True	
+GSE148071	Mural cell	Treg_related	6	6	True	
+GSE148071	Mural cell	cytotoxic	6	6	True	
+GSE148071	Mural cell	heatshock	6	6	True	
+GSE161529	Mural cell	T_core	5	5	True	
+GSE161529	Mural cell	Myeloid_core	6	6	True	
+GSE161529	Mural cell	epithelial_RNA	8	8	True	
+GSE161529	Mural cell	stromal_RNA	7	7	True	
+GSE161529	Mural cell	mural_RNA	7	7	True	
+GSE161529	Mural cell	neural_RNA	7	7	True	
+GSE161529	Mural cell	G2M	6	6	True	
+GSE161529	Mural cell	IFN_like	9	9	True	
+GSE161529	Mural cell	Treg_related	6	6	True	
+GSE161529	Mural cell	cytotoxic	6	6	True	
+GSE161529	Mural cell	heatshock	6	6	True	
+GSE178341	Mural cell	T_core	5	5	True	
+GSE178341	Mural cell	Myeloid_core	6	6	True	
+GSE178341	Mural cell	epithelial_RNA	8	8	True	
+GSE178341	Mural cell	stromal_RNA	7	7	True	
+GSE178341	Mural cell	mural_RNA	7	7	True	
+GSE178341	Mural cell	neural_RNA	7	7	True	
+GSE178341	Mural cell	G2M	6	6	True	
+GSE178341	Mural cell	IFN_like	9	9	True	
+GSE178341	Mural cell	Treg_related	6	6	True	
+GSE178341	Mural cell	cytotoxic	6	6	True	
+GSE178341	Mural cell	heatshock	6	6	True	
+GSE253013	Mural cell	T_core	5	5	True	
+GSE253013	Mural cell	Myeloid_core	6	6	True	
+GSE253013	Mural cell	epithelial_RNA	8	8	True	
+GSE253013	Mural cell	stromal_RNA	7	7	True	
+GSE253013	Mural cell	mural_RNA	7	7	True	
+GSE253013	Mural cell	neural_RNA	7	6	False	DCX
+GSE253013	Mural cell	G2M	6	6	True	
+GSE253013	Mural cell	IFN_like	9	9	True	
+GSE253013	Mural cell	Treg_related	6	6	True	
+GSE253013	Mural cell	cytotoxic	6	6	True	
+GSE253013	Mural cell	heatshock	6	6	True	
+GSE274229	Mural cell	T_core	5	5	True	
+GSE274229	Mural cell	Myeloid_core	6	6	True	
+GSE274229	Mural cell	epithelial_RNA	8	8	True	
+GSE274229	Mural cell	stromal_RNA	7	7	True	
+GSE274229	Mural cell	mural_RNA	7	7	True	
+GSE274229	Mural cell	neural_RNA	7	7	True	
+GSE274229	Mural cell	G2M	6	6	True	
+GSE274229	Mural cell	IFN_like	9	9	True	
+GSE274229	Mural cell	Treg_related	6	6	True	
+GSE274229	Mural cell	cytotoxic	6	6	True	
+GSE274229	Mural cell	heatshock	6	6	True	
+GSE131907	Myeloid	T_core	5	5	True	
+GSE131907	Myeloid	Myeloid_core	6	6	True	
+GSE131907	Myeloid	epithelial_RNA	8	8	True	
+GSE131907	Myeloid	stromal_RNA	7	7	True	
+GSE131907	Myeloid	mural_RNA	7	7	True	
+GSE131907	Myeloid	neural_RNA	7	7	True	
+GSE131907	Myeloid	G2M	6	6	True	
+GSE131907	Myeloid	IFN_like	9	9	True	
+GSE131907	Myeloid	Treg_related	6	6	True	
+GSE131907	Myeloid	cytotoxic	6	6	True	
+GSE131907	Myeloid	heatshock	6	6	True	
+GSE148071	Myeloid	T_core	5	5	True	
+GSE148071	Myeloid	Myeloid_core	6	6	True	
+GSE148071	Myeloid	epithelial_RNA	8	8	True	
+GSE148071	Myeloid	stromal_RNA	7	7	True	
+GSE148071	Myeloid	mural_RNA	7	7	True	
+GSE148071	Myeloid	neural_RNA	7	7	True	
+GSE148071	Myeloid	G2M	6	6	True	
+GSE148071	Myeloid	IFN_like	9	9	True	
+GSE148071	Myeloid	Treg_related	6	6	True	
+GSE148071	Myeloid	cytotoxic	6	6	True	
+GSE148071	Myeloid	heatshock	6	6	True	
+GSE161529	Myeloid	T_core	5	5	True	
+GSE161529	Myeloid	Myeloid_core	6	6	True	
+GSE161529	Myeloid	epithelial_RNA	8	8	True	
+GSE161529	Myeloid	stromal_RNA	7	7	True	
+GSE161529	Myeloid	mural_RNA	7	7	True	
+GSE161529	Myeloid	neural_RNA	7	7	True	
+GSE161529	Myeloid	G2M	6	6	True	
+GSE161529	Myeloid	IFN_like	9	9	True	
+GSE161529	Myeloid	Treg_related	6	6	True	
+GSE161529	Myeloid	cytotoxic	6	6	True	
+GSE161529	Myeloid	heatshock	6	6	True	
+GSE178341	Myeloid	T_core	5	5	True	
+GSE178341	Myeloid	Myeloid_core	6	6	True	
+GSE178341	Myeloid	epithelial_RNA	8	8	True	
+GSE178341	Myeloid	stromal_RNA	7	7	True	
+GSE178341	Myeloid	mural_RNA	7	7	True	
+GSE178341	Myeloid	neural_RNA	7	7	True	
+GSE178341	Myeloid	G2M	6	6	True	
+GSE178341	Myeloid	IFN_like	9	9	True	
+GSE178341	Myeloid	Treg_related	6	6	True	
+GSE178341	Myeloid	cytotoxic	6	6	True	
+GSE178341	Myeloid	heatshock	6	6	True	
+GSE253013	Myeloid	T_core	5	5	True	
+GSE253013	Myeloid	Myeloid_core	6	6	True	
+GSE253013	Myeloid	epithelial_RNA	8	8	True	
+GSE253013	Myeloid	stromal_RNA	7	7	True	
+GSE253013	Myeloid	mural_RNA	7	7	True	
+GSE253013	Myeloid	neural_RNA	7	6	False	DCX
+GSE253013	Myeloid	G2M	6	6	True	
+GSE253013	Myeloid	IFN_like	9	9	True	
+GSE253013	Myeloid	Treg_related	6	6	True	
+GSE253013	Myeloid	cytotoxic	6	6	True	
+GSE253013	Myeloid	heatshock	6	6	True	
+GSE274229	Myeloid	T_core	5	5	True	
+GSE274229	Myeloid	Myeloid_core	6	6	True	
+GSE274229	Myeloid	epithelial_RNA	8	8	True	
+GSE274229	Myeloid	stromal_RNA	7	7	True	
+GSE274229	Myeloid	mural_RNA	7	7	True	
+GSE274229	Myeloid	neural_RNA	7	7	True	
+GSE274229	Myeloid	G2M	6	6	True	
+GSE274229	Myeloid	IFN_like	9	9	True	
+GSE274229	Myeloid	Treg_related	6	6	True	
+GSE274229	Myeloid	cytotoxic	6	6	True	
+GSE274229	Myeloid	heatshock	6	6	True	
+GSE148071	Neutrophil	T_core	5	5	True	
+GSE148071	Neutrophil	Myeloid_core	6	6	True	
+GSE148071	Neutrophil	epithelial_RNA	8	8	True	
+GSE148071	Neutrophil	stromal_RNA	7	7	True	
+GSE148071	Neutrophil	mural_RNA	7	7	True	
+GSE148071	Neutrophil	neural_RNA	7	7	True	
+GSE148071	Neutrophil	G2M	6	6	True	
+GSE148071	Neutrophil	IFN_like	9	9	True	
+GSE148071	Neutrophil	Treg_related	6	6	True	
+GSE148071	Neutrophil	cytotoxic	6	6	True	
+GSE148071	Neutrophil	heatshock	6	6	True	
+GSE155698	Neutrophil	T_core	5	4	False	TRAC
+GSE155698	Neutrophil	Myeloid_core	6	6	True	
+GSE155698	Neutrophil	epithelial_RNA	8	8	True	
+GSE155698	Neutrophil	stromal_RNA	7	7	True	
+GSE155698	Neutrophil	mural_RNA	7	7	True	
+GSE155698	Neutrophil	neural_RNA	7	7	True	
+GSE155698	Neutrophil	G2M	6	6	True	
+GSE155698	Neutrophil	IFN_like	9	9	True	
+GSE155698	Neutrophil	Treg_related	6	6	True	
+GSE155698	Neutrophil	cytotoxic	6	6	True	
+GSE155698	Neutrophil	heatshock	6	6	True	
+GSE182109	Neutrophil	T_core	5	5	True	
+GSE182109	Neutrophil	Myeloid_core	6	6	True	
+GSE182109	Neutrophil	epithelial_RNA	8	8	True	
+GSE182109	Neutrophil	stromal_RNA	7	7	True	
+GSE182109	Neutrophil	mural_RNA	7	7	True	
+GSE182109	Neutrophil	neural_RNA	7	7	True	
+GSE182109	Neutrophil	G2M	6	6	True	
+GSE182109	Neutrophil	IFN_like	9	9	True	
+GSE182109	Neutrophil	Treg_related	6	6	True	
+GSE182109	Neutrophil	cytotoxic	6	6	True	
+GSE182109	Neutrophil	heatshock	6	6	True	
+GSE201347	Neutrophil	T_core	5	5	True	
+GSE201347	Neutrophil	Myeloid_core	6	6	True	
+GSE201347	Neutrophil	epithelial_RNA	8	8	True	
+GSE201347	Neutrophil	stromal_RNA	7	7	True	
+GSE201347	Neutrophil	mural_RNA	7	7	True	
+GSE201347	Neutrophil	neural_RNA	7	7	True	
+GSE201347	Neutrophil	G2M	6	6	True	
+GSE201347	Neutrophil	IFN_like	9	9	True	
+GSE201347	Neutrophil	Treg_related	6	6	True	
+GSE201347	Neutrophil	cytotoxic	6	6	True	
+GSE201347	Neutrophil	heatshock	6	6	True	
+GSE270680	Neutrophil	T_core	5	5	True	
+GSE270680	Neutrophil	Myeloid_core	6	6	True	
+GSE270680	Neutrophil	epithelial_RNA	8	8	True	
+GSE270680	Neutrophil	stromal_RNA	7	7	True	
+GSE270680	Neutrophil	mural_RNA	7	7	True	
+GSE270680	Neutrophil	neural_RNA	7	7	True	
+GSE270680	Neutrophil	G2M	6	6	True	
+GSE270680	Neutrophil	IFN_like	9	9	True	
+GSE270680	Neutrophil	Treg_related	6	6	True	
+GSE270680	Neutrophil	cytotoxic	6	6	True	
+GSE270680	Neutrophil	heatshock	6	6	True	
+GSE297041	Neutrophil	T_core	5	5	True	
+GSE297041	Neutrophil	Myeloid_core	6	6	True	
+GSE297041	Neutrophil	epithelial_RNA	8	8	True	
+GSE297041	Neutrophil	stromal_RNA	7	7	True	
+GSE297041	Neutrophil	mural_RNA	7	7	True	
+GSE297041	Neutrophil	neural_RNA	7	7	True	
+GSE297041	Neutrophil	G2M	6	6	True	
+GSE297041	Neutrophil	IFN_like	9	9	True	
+GSE297041	Neutrophil	Treg_related	6	6	True	
+GSE297041	Neutrophil	cytotoxic	6	6	True	
+GSE297041	Neutrophil	heatshock	6	6	True	
+GSE131907	T cell	T_core	5	5	True	
+GSE131907	T cell	Myeloid_core	6	6	True	
+GSE131907	T cell	epithelial_RNA	8	8	True	
+GSE131907	T cell	stromal_RNA	7	7	True	
+GSE131907	T cell	mural_RNA	7	7	True	
+GSE131907	T cell	neural_RNA	7	7	True	
+GSE131907	T cell	G2M	6	6	True	
+GSE131907	T cell	IFN_like	9	9	True	
+GSE131907	T cell	Treg_related	6	6	True	
+GSE131907	T cell	cytotoxic	6	6	True	
+GSE131907	T cell	heatshock	6	6	True	
+GSE155698	T cell	T_core	5	4	False	TRAC
+GSE155698	T cell	Myeloid_core	6	6	True	
+GSE155698	T cell	epithelial_RNA	8	8	True	
+GSE155698	T cell	stromal_RNA	7	7	True	
+GSE155698	T cell	mural_RNA	7	7	True	
+GSE155698	T cell	neural_RNA	7	7	True	
+GSE155698	T cell	G2M	6	6	True	
+GSE155698	T cell	IFN_like	9	9	True	
+GSE155698	T cell	Treg_related	6	6	True	
+GSE155698	T cell	cytotoxic	6	6	True	
+GSE155698	T cell	heatshock	6	6	True	
+GSE161529	T cell	T_core	5	5	True	
+GSE161529	T cell	Myeloid_core	6	6	True	
+GSE161529	T cell	epithelial_RNA	8	8	True	
+GSE161529	T cell	stromal_RNA	7	7	True	
+GSE161529	T cell	mural_RNA	7	7	True	
+GSE161529	T cell	neural_RNA	7	7	True	
+GSE161529	T cell	G2M	6	6	True	
+GSE161529	T cell	IFN_like	9	9	True	
+GSE161529	T cell	Treg_related	6	6	True	
+GSE161529	T cell	cytotoxic	6	6	True	
+GSE161529	T cell	heatshock	6	6	True	
+GSE178341	T cell	T_core	5	5	True	
+GSE178341	T cell	Myeloid_core	6	6	True	
+GSE178341	T cell	epithelial_RNA	8	8	True	
+GSE178341	T cell	stromal_RNA	7	7	True	
+GSE178341	T cell	mural_RNA	7	7	True	
+GSE178341	T cell	neural_RNA	7	7	True	
+GSE178341	T cell	G2M	6	6	True	
+GSE178341	T cell	IFN_like	9	9	True	
+GSE178341	T cell	Treg_related	6	6	True	
+GSE178341	T cell	cytotoxic	6	6	True	
+GSE178341	T cell	heatshock	6	6	True	
+GSE253013	T cell	T_core	5	5	True	
+GSE253013	T cell	Myeloid_core	6	6	True	
+GSE253013	T cell	epithelial_RNA	8	8	True	
+GSE253013	T cell	stromal_RNA	7	7	True	
+GSE253013	T cell	mural_RNA	7	7	True	
+GSE253013	T cell	neural_RNA	7	6	False	DCX
+GSE253013	T cell	G2M	6	6	True	
+GSE253013	T cell	IFN_like	9	9	True	
+GSE253013	T cell	Treg_related	6	6	True	
+GSE253013	T cell	cytotoxic	6	6	True	
+GSE253013	T cell	heatshock	6	6	True	
+GSE274229	T cell	T_core	5	5	True	
+GSE274229	T cell	Myeloid_core	6	6	True	
+GSE274229	T cell	epithelial_RNA	8	8	True	
+GSE274229	T cell	stromal_RNA	7	7	True	
+GSE274229	T cell	mural_RNA	7	7	True	
+GSE274229	T cell	neural_RNA	7	7	True	
+GSE274229	T cell	G2M	6	6	True	
+GSE274229	T cell	IFN_like	9	9	True	
+GSE274229	T cell	Treg_related	6	6	True	
+GSE274229	T cell	cytotoxic	6	6	True	
+GSE274229	T cell	heatshock	6	6	True	
+GSE131907	T/NK lymphoid	T_core	5	5	True	
+GSE131907	T/NK lymphoid	Myeloid_core	6	6	True	
+GSE131907	T/NK lymphoid	epithelial_RNA	8	8	True	
+GSE131907	T/NK lymphoid	stromal_RNA	7	7	True	
+GSE131907	T/NK lymphoid	mural_RNA	7	7	True	
+GSE131907	T/NK lymphoid	neural_RNA	7	7	True	
+GSE131907	T/NK lymphoid	G2M	6	6	True	
+GSE131907	T/NK lymphoid	IFN_like	9	9	True	
+GSE131907	T/NK lymphoid	Treg_related	6	6	True	
+GSE131907	T/NK lymphoid	cytotoxic	6	6	True	
+GSE131907	T/NK lymphoid	heatshock	6	6	True	
+GSE155698	T/NK lymphoid	T_core	5	4	False	TRAC
+GSE155698	T/NK lymphoid	Myeloid_core	6	6	True	
+GSE155698	T/NK lymphoid	epithelial_RNA	8	8	True	
+GSE155698	T/NK lymphoid	stromal_RNA	7	7	True	
+GSE155698	T/NK lymphoid	mural_RNA	7	7	True	
+GSE155698	T/NK lymphoid	neural_RNA	7	7	True	
+GSE155698	T/NK lymphoid	G2M	6	6	True	
+GSE155698	T/NK lymphoid	IFN_like	9	9	True	
+GSE155698	T/NK lymphoid	Treg_related	6	6	True	
+GSE155698	T/NK lymphoid	cytotoxic	6	6	True	
+GSE155698	T/NK lymphoid	heatshock	6	6	True	
+GSE178341	T/NK lymphoid	T_core	5	5	True	
+GSE178341	T/NK lymphoid	Myeloid_core	6	6	True	
+GSE178341	T/NK lymphoid	epithelial_RNA	8	8	True	
+GSE178341	T/NK lymphoid	stromal_RNA	7	7	True	
+GSE178341	T/NK lymphoid	mural_RNA	7	7	True	
+GSE178341	T/NK lymphoid	neural_RNA	7	7	True	
+GSE178341	T/NK lymphoid	G2M	6	6	True	
+GSE178341	T/NK lymphoid	IFN_like	9	9	True	
+GSE178341	T/NK lymphoid	Treg_related	6	6	True	
+GSE178341	T/NK lymphoid	cytotoxic	6	6	True	
+GSE178341	T/NK lymphoid	heatshock	6	6	True	
+GSE179994	T/NK lymphoid	T_core	5	4	False	TRAC
+GSE179994	T/NK lymphoid	Myeloid_core	6	6	True	
+GSE179994	T/NK lymphoid	epithelial_RNA	8	8	True	
+GSE179994	T/NK lymphoid	stromal_RNA	7	7	True	
+GSE179994	T/NK lymphoid	mural_RNA	7	7	True	
+GSE179994	T/NK lymphoid	neural_RNA	7	7	True	
+GSE179994	T/NK lymphoid	G2M	6	6	True	
+GSE179994	T/NK lymphoid	IFN_like	9	9	True	
+GSE179994	T/NK lymphoid	Treg_related	6	6	True	
+GSE179994	T/NK lymphoid	cytotoxic	6	6	True	
+GSE179994	T/NK lymphoid	heatshock	6	6	True	
+GSE253013	T/NK lymphoid	T_core	5	5	True	
+GSE253013	T/NK lymphoid	Myeloid_core	6	6	True	
+GSE253013	T/NK lymphoid	epithelial_RNA	8	8	True	
+GSE253013	T/NK lymphoid	stromal_RNA	7	7	True	
+GSE253013	T/NK lymphoid	mural_RNA	7	7	True	
+GSE253013	T/NK lymphoid	neural_RNA	7	6	False	DCX
+GSE253013	T/NK lymphoid	G2M	6	6	True	
+GSE253013	T/NK lymphoid	IFN_like	9	9	True	
+GSE253013	T/NK lymphoid	Treg_related	6	6	True	
+GSE253013	T/NK lymphoid	cytotoxic	6	6	True	
+GSE253013	T/NK lymphoid	heatshock	6	6	True	
+GSE274229	T/NK lymphoid	T_core	5	5	True	
+GSE274229	T/NK lymphoid	Myeloid_core	6	6	True	
+GSE274229	T/NK lymphoid	epithelial_RNA	8	8	True	
+GSE274229	T/NK lymphoid	stromal_RNA	7	7	True	
+GSE274229	T/NK lymphoid	mural_RNA	7	7	True	
+GSE274229	T/NK lymphoid	neural_RNA	7	7	True	
+GSE274229	T/NK lymphoid	G2M	6	6	True	
+GSE274229	T/NK lymphoid	IFN_like	9	9	True	
+GSE274229	T/NK lymphoid	Treg_related	6	6	True	
+GSE274229	T/NK lymphoid	cytotoxic	6	6	True	
+GSE274229	T/NK lymphoid	heatshock	6	6	True	

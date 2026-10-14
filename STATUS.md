@@ -1,3 +1,7 @@
+## 2026-10-14 状态探索：原生测量复核与巨噬程序
+
+全100,766发现集原生面板复核完成，缺测保持NA；cNMF已核实9/18大类完成，新增巨噬45组件数值审计通过。算法稳定与生物状态分开，完整字典/全量UCell及2026年10月CM（v20261010）状态通讯仍待。[原生复核](inventories/analysis/2026-10-14/all18_discovery_native_panel_coexpression_v2/RESULTS.md)、[巨噬结果](inventories/analysis/2026-10-14/Macrophage_cNMF_diagnostics_v2/RESULTS.md)。
+
 ## 2026-10-14 15:41 UTC+8 上次整理后的方向与下一阶段
 
 [时间线与规划](methods/project-progress-and-next-phase-20261014.md)：免疫图谱及45组图技术交付完成；有限通讯转向MCP/患者结局，单端临床与两端互作分开；全Spectra1018因子仅4单来源胶质背景候选达当前联合规则。cNMF/全字典/UCell及原9CM状态、独立功能和空间仍待。按三个工作对话归属，统一Git署名不当实际人物分工。以下各线较早状态保留。

@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_ALL100766_NATIVE_PANEL_DIAGNOSTICS_NOT_STATE_LABELS",
+  "observed_UTC": "2026-10-14T08:01:42.172518+00:00",
+  "producer_sha256": "49769d3791a259aa96643d0beb12ccc4d90ad86ec045c9204ff99c0f3a448631",
+  "plan_sha256": "ffa024d7af2b3d0f734b1303ba3dc28c2cf77e6f976a51d6b201407f802b3518",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "cells": 100766,
+  "majors": 18,
+  "panels": 11,
+  "source_node_panel_rows": 3883,
+  "joint_panel_rows": 1765,
+  "all_cell_panel_quantities_independently_accumulated": true,
+  "max_fraction_difference": 0,
+  "full_cohort_prevalence": false,
+  "source_native_gene_axes": true,
+  "native_denominators_independently_recomputed": true,
+  "formal_state": false,
+  "original_labels_changed": false,
+  "output_sha256": {
+    "all_major_panel_gene_coverage.tsv": "cce2cbdffa70e561eb3486246fb41c1f3bc1fde7944ec226004adf99dc413bb4",
+    "all_source_node_panel_support.tsv": "8eff4c45466100ad87488a9d9a9985c963966fa81b2064605c1405aaa4608315",
+    "all_source_node_joint_panel_support.tsv": "9edff2b4641ca60f67fd8d8fc3c6f1fd19f76cb70380018002db3d6c76c3e4e4"
+  }
+}
