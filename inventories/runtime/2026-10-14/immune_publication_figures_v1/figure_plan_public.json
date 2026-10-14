@@ -1,0 +1,48 @@
+{
+  "run_id": "20261014_immune_publication_figures_v1",
+  "created_utc": "2026-10-14T05:56:26.488061+00:00",
+  "created_Asia_Taipei": "2026-10-14T13:56:26.488061+08:00",
+  "input_archive": "immune_validation_authority_v1.zarr",
+  "n_cells": 2670057,
+  "n_native_features": 49563,
+  "n_nodes": 270,
+  "story": [
+    "cohort_scope_and_full_cell_atlas",
+    "major_multigene_evidence",
+    "descriptive_T_subclusters",
+    "T_continuous_state_axes",
+    "per_library_CNV_candidates",
+    "source_adjusted_composition_CM"
+  ],
+  "main_figures": 6,
+  "extended": [
+    "study_and_capture_facets",
+    "PCA_Harmony_diagnostics",
+    "available_depth_and_correction_provenance",
+    "all18_major_lineage_evidence",
+    "all15_CM_scope_details"
+  ],
+  "full_data_summaries": true,
+  "global_UMAP_all_cells": true,
+  "detail_display_seed": 20261014,
+  "detail_display_max_cells": 200000,
+  "native_marker_statistics": "previous_all_cell_270x49563_sufficient_statistics_with_exact_node_gene_maps",
+  "styles": {
+    "width_mm": 183,
+    "max_height_mm": 170,
+    "font_pt_min": 5,
+    "font_pt_max": 7,
+    "panel_font_pt": 8,
+    "RGB": true,
+    "editable_text_PDF_SVG": true,
+    "PNG_dpi": 600
+  },
+  "no_new_clinical_or_mechanistic_hypothesis_tests": true,
+  "identity_labels": "proposals_and_descriptive_nodes",
+  "CNV": "single_method_not_gold",
+  "CM": "new_composition_covariation_not_LR_mechanism",
+  "journal_guidance": [
+    "https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/",
+    "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/"
+  ]
+}
