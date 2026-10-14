@@ -53,3 +53,5 @@ d8b7ac29f75964ead1d1fa6cb914c1b263ddbe91于01:32:01普通push/01:32:04HTTPS核�
 2026-10-14T01:49:26.197281+00:00 /UTC+8 2026-10-14T09:49:26.197281+08:00：真实Spectra全部173诊断及独立审计完成，8探索稳定/2复杂度；纠正3零prior交集展示字段但不改历史模型/统计。T cNMF全K完成、Mac继续；无正式状态或新通讯机制。 [结果](../../../inventories/analysis/2026-10-14/Spectra_multiseed_diagnostics_v1/RESULTS.md)。
 
 UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM登记不动；cNMF原双句柄命令匹配、406文件。预声明506df80bbd3e59ff7d223bb883f3e4f57d48cd05于01:45:01普通push，01:45:04HTTPS核验；本阶段仅程序诊断，不以8stable候选晋升生物标签。
+
+2026-10-14T01:55:32.953664+00:00 /UTC+8 2026-10-14T09:55:32.953664+08:00：原cNMF01:52双/proc命令匹配、441文件；冻结所有90候选/9000repeat/1300crossK/14355Spectra对照，不择最有利K。未读指标，等待原job terminal后执行。 [对照run](../../../runs/20261014_state_method_comparison_v1.md)。
