@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE_BLOCK_MULTISEED_DIAGNOSTICS_NOT_FORMAL_STATES",
+  "block": "myeloid",
+  "observed_UTC": "2026-10-14T06:24:12.796970+00:00",
+  "producer_sha256": "164d12399d4bb0867ba877569ebe4467ee1a15cb79590184aebad9b10d823ce3",
+  "plan_sha256": "d559119b43922822ad4d9d93fdfdf243689905745ff1ba53db1ff36c7f75794e",
+  "input_seed_sha256": {
+    "myeloid/seed20261014/factors_and_discovery_scores.npz": "6c7ff5b90f9f81796fc0fd715c176de93470ad24d50dbe14cde0ead6a93ab795",
+    "myeloid/seed20261014/private_discovery_metadata.tsv.gz": "6a56fafc89e407d33f090512312220063aa7551e25e0951d7b4dd9ec6a743ecb",
+    "myeloid/seed20261015/factors_and_discovery_scores.npz": "e2ea9f73dbfaa570866c411f96fa2a5038aefaa64b90b4d8a00c4c2b2250529b",
+    "myeloid/seed20261015/private_discovery_metadata.tsv.gz": "87c096aa26c707a22af9b0d48ac4f0ee96187332a1c0417b14382393d92b7e4a",
+    "myeloid/seed20261016/factors_and_discovery_scores.npz": "50006fa9b4a8e2d052365b933e84e7c1687e17a1a92909e70142a1757a3e07ed",
+    "myeloid/seed20261016/private_discovery_metadata.tsv.gz": "a12512b11307e7f364a2f38b047d5ed5261ad144494716fc9c8c5254eac2a777"
+  },
+  "candidates": 177,
+  "shared_or_lineage_stable_candidates": 0,
+  "context_stable_candidates": 0,
+  "model_scope_all_majors_reported": true,
+  "global_factor_activity_not_required_in_all_majors": true,
+  "original_labels_unchanged": true,
+  "no_cell_level_p_or_clinical_LR_selection": true,
+  "formal_states": false,
+  "output_sha256": {
+    "all_factor_matches.tsv": "022857cd77ad468aa46aaa1c42051391c05f8fb652f95c1878e5b3a2d5b44a44",
+    "all_major_score_reproducibility.tsv": "5d8934e4604b9d9c89f07e7646d8c57e57fd9d6916b181ec3491c3af53b59a33",
+    "all_source_node_complexity_diagnostics.tsv": "2b8c786b6738d1b23b9953274fad0c4725e6f469278d1b6ffd32488db5f2f503",
+    "all_source_major_distributions.tsv": "b7caaaeef660c172fb79d014d92274f07a993676a6affd90c6d9fd1563ce45a6",
+    "all_candidate_diagnostics.tsv": "4c6cb76ba0350265ebc47aebe352eaa1f9322c234da2973b9201c0b8e6acf6a3"
+  }
+}

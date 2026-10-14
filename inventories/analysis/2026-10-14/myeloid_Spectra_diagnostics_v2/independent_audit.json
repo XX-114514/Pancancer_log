@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL_BLOCK_FACTORS_MATCHES_SCORE_SOURCE_NODE_DEPTH_SUPPORT_AND_CANDIDATE_RULES",
+  "block": "myeloid",
+  "observed_UTC": "2026-10-14T06:24:33.907926+00:00",
+  "audit_code_sha256": "63ea1e36c5b97106dec66094aa8e09b789e556992415f6fae3de243246bcb433",
+  "producer_inventory_sha256": "643733335493792c6b97618acec52b9bb3084cb9e5087b526315575439a97010",
+  "factor_pair_checks": 531,
+  "score_pair_checks": 2283,
+  "major_factor_support_and_regression_checks": 761,
+  "candidate_rules": 177,
+  "max_cosine_difference": 2.6645352591003757e-15,
+  "scalar_and_sample_p_values_not_used": true,
+  "source_distributions_not_independently_recomputed_here": true,
+  "formal_states": false
+}

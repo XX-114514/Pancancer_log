@@ -1,0 +1,46 @@
+{
+  "status": "AUDITED_MYEOID_DC_FIXED_DIAGNOSTIC_CHECKPOINT_FULL_GOAL_ACTIVE",
+  "registered_UTC": "2026-10-14T06:35:02.078689+00:00",
+  "scope": {
+    "Myeloid_cells": 26723,
+    "Myeloid_factors": 177,
+    "DC_cells": 4527,
+    "DC_K": [
+      10,
+      15,
+      20
+    ],
+    "DC_repeats_per_K": 100,
+    "supervision_scopes": 24,
+    "completed_diagnostic_scopes": 4
+  },
+  "handoff_sha256": "06dd70b0790e823a532b160bc7ab048f405f8f03f4a2fb43a64c19ca42543e7f",
+  "state_refresh": "indexed 135 directories; conflicts 0 v10_audit PASS_V10_REVIEWED59_IDENTITY_OVERLAY_FULLROW_AUDIT",
+  "jobs": [
+    {
+      "job_id": "all_lineage_spectra_training_20261014_v2",
+      "role": "pipeline",
+      "status": "VERIFIED_LIVE",
+      "worker_pid": 423861,
+      "child_pid": 423862
+    },
+    {
+      "job_id": "all_lineage_cnmf_training_20261014_v2",
+      "role": "pipeline",
+      "status": "VERIFIED_LIVE",
+      "worker_pid": 423869,
+      "child_pid": 423870
+    },
+    {
+      "job_id": "remaining_state_diagnostic_supervision_20261014_v2",
+      "role": "monitor_with_fixed_scientific_children",
+      "status": "VERIFIED_LIVE",
+      "worker_pid": 102991,
+      "child_pid": 102992
+    }
+  ],
+  "formal_states": false,
+  "all9CM_completed": false,
+  "DIALOGUE_completed": false,
+  "spatial_completed": false
+}

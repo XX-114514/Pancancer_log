@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+  "major": "Dendritic cell",
+  "observed_UTC": "2026-10-14T06:24:53.822958+00:00",
+  "audit_code_sha256": "12ecdc1558ddfee7883beff55851046088abdb10de40a003c7bcdd4a44595dd0",
+  "producer_inventory_sha256": "7062185fbd3098f8b103904050e2530f94735e1f54087f9595a1601aaf031e86",
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "module_native_support_and_regression_checks": 45,
+  "max_repeat_cosine_difference": 2.7755575615628914e-15,
+  "K_statistics_not_independently_refit": true,
+  "source_distribution_quantiles_not_independently_recomputed_here": true,
+  "formal_states": false,
+  "mathematically_constant_group_residuals_exactzero": true,
+  "original_v1_failed_audit_retained": true
+}
