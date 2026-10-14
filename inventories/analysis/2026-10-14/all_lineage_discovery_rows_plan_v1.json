@@ -1,0 +1,19 @@
+{
+  "schema": "all18_lineage_state_discovery_row_selection_v1",
+  "frozen_UTC": "2026-10-14T04:12:18.067948+00:00",
+  "producer_sha256": "402b4dea40fff9f8c4c9d555c358886005d5340d67d5d2cd47689f956bc0c63c",
+  "input_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "seed": 20261014,
+  "max_cells_per_major": 6000,
+  "max_sources_per_major": 6,
+  "min_source_cells": 200,
+  "min_source_blocks": 5,
+  "min_training_cells": 1000,
+  "min_common_genes": 5000,
+  "source_ranking": "blocks then libraries then available cells descending, stable source-ID ordering ties; metadata only, no expression/LR/clinical scores",
+  "balancing": "Within each selected source-major round-robin inherited analysis blocks, fixed random seed. Equal source cap ceil6000/nsource; no force-fill scarce source, no patient-independence assumption",
+  "scope": "All18 original majors, including single-source Glial/Hematopoietic with source-limited flag, no identity/source/cancer collapse. All4532933 reserved for later stream projection.",
+  "resource": "Only metadata/rows/common gene lists; no full expression copy. Before RNA extraction budget training matrices and500GiB reserve; later stream full scope.",
+  "scientific_release": false,
+  "next": "Audit selections/counts/common axes then extract <=108000 discovery cell counts/nativeRNA denominator; Spectra/cNMF alllineage models and full scope state scoring before9CM/DIALOGUE/spatial"
+}

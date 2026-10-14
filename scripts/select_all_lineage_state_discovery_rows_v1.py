@@ -1,0 +1,25 @@
+"""Metadata-only balanced discovery rows for all18 original majors."""
+from pathlib import Path
+from datetime import datetime,timezone
+import os,json,hashlib,math
+import numpy as np,pandas as pd
+
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def main():
+    R=Path(os.environ['PANCANCER_PREFLIGHT_ROOT']);AR=Path(os.environ['PANCANCER_ANNOTATION_ROOT']);P=Path(os.environ['PANCANCER_STATE_DISCOVERY_ROW_PLAN']);plan=json.loads(P.read_text());assert sha(__file__)==plan['producer_sha256'];I=R/'all_CM_state_native_input_preflight_20261014_v1';inv=json.loads((I/'inventory.json').read_text());assert sha(I/'inventory.json')==plan['input_inventory_sha256'];audit=json.loads((R/'all_CM_state_row_preflight_audit_20261014_v1/independent_audit.json').read_text());assert audit['producer_inventory_sha256']==sha(I/'inventory.json') and audit['status'].startswith('PASS_ALL4532933')
+    units=pd.read_csv(I/'private_all_frozen_sample_node_units.tsv.gz',sep='\t',keep_default_na=False);z=np.load(I/'private_canonical_row_selection.npz',allow_pickle=False);positions=z['global_rows'];code=z['unit_index'];assert len(positions)==4532933;meta=units.iloc[code].reset_index(drop=True);native=pd.read_csv(I/'all_source_native_scope.tsv',sep='\t').set_index('gse_id');majors=sorted(units.major.unique());assert len(majors)==18;selected=[];summary=[];source_rows=[];gene_sets={}
+    for mi,major in enumerate(majors):
+        u=units[units.major.eq(major)];source=u.groupby('gse_id',observed=True).agg(cells=('n_cells','sum'),libraries=('sample_uid','nunique'),blocks=('effective_resampling_block','nunique'));eligible=source[(source.cells>=plan['min_source_cells'])&(source.blocks>=plan['min_source_blocks'])].sort_values(['blocks','libraries','cells'],ascending=False,kind='stable').head(plan['max_sources_per_major']);sids=sorted(eligible.index);cap=math.ceil(plan['max_cells_per_major']/max(len(sids),1));chosen=[];source_genes=[]
+        for sj,sid in enumerate(sids):
+            which=np.flatnonzero(meta.major.eq(major).to_numpy()&meta.gse_id.eq(sid).to_numpy());block=meta.effective_resampling_block.to_numpy()[which];rng=np.random.default_rng(plan['seed']+mi*100+sj);queues=[rng.permutation(which[block==b]) for b in sorted(np.unique(block))];take=[];offset=0
+            while len(take)<min(cap,len(which)):
+                added=False
+                for q in queues:
+                    if offset<len(q) and len(take)<cap:take.append(int(q[offset]));added=True
+                if not added:break
+                offset+=1
+            chosen.extend(take);gpath=AR/'20261010_uniform_expression_annotation_v1/by_gse'/sid/'genes.tsv';assert sha(gpath)==native.loc[sid,'native_gene_axis_sha256'];genes=set(pd.read_csv(gpath,sep='\t').gene);source_genes.append(genes);source_rows.append(dict(major=major,gse_id=sid,available_cells=len(which),training_cells=len(take),available_blocks=int(eligible.loc[sid,'blocks']),libraries=int(eligible.loc[sid,'libraries']),native_genes=len(genes)))
+        common=sorted(set.intersection(*source_genes)) if source_genes else [];gene_sets[major]=common;selected.extend(chosen);summary.append(dict(major=major,available_cells=int(u.n_cells.sum()),available_sources=len(source),selected_sources=len(sids),selected_cells=len(chosen),common_training_genes=len(common),source_limited=len(sids)<2,model_training_eligible=len(chosen)>=plan['min_training_cells'] and len(common)>=plan['min_common_genes'],original_major_unchanged=True))
+    idx=np.array(sorted(set(selected)),np.int64);assert len(idx)==len(selected) and len(idx)<=18*plan['max_cells_per_major'];O=R/'all_lineage_state_discovery_row_selection_20261014_v1';assert not O.exists();O.mkdir();np.savez_compressed(O/'private_discovery_row_indices.npz',selected_input_indices=idx,canonical_global_rows=positions[idx],unit_indices=code[idx]);meta.iloc[idx].assign(core_position=positions[idx]).to_csv(O/'private_discovery_metadata.tsv.gz',sep='\t',index=False,compression='gzip');(O/'fixed_common_training_genes_by_major.json').write_text(json.dumps(gene_sets,indent=2)+'\n');pd.DataFrame(summary).to_csv(O/'all18_major_discovery_scope.tsv',sep='\t',index=False);pd.DataFrame(source_rows).to_csv(O/'all_selected_source_major_discovery_scope.tsv',sep='\t',index=False)
+    out=dict(status='COMPLETE_ALL18_BALANCED_DISCOVERY_ROWS_NO_RNA_EXTRACTION',observed_UTC=datetime.now(timezone.utc).isoformat(),producer_sha256=sha(__file__),plan_sha256=sha(P),input_inventory_sha256=sha(I/'inventory.json'),selected_cells=len(idx),majors=18,eligible_majors=sum(r['model_training_eligible'] for r in summary),single_source_majors=sum(r['source_limited'] for r in summary),no_expression_copied=True,no_LR_or_clinical_p_used=True,original_labels_changed=False,formal_state_labels=False,public_output_sha256={p.name:sha(p) for p in O.glob('*.tsv')},private_row_sha256=sha(O/'private_discovery_row_indices.npz'));(O/'inventory.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out),flush=True)
+if __name__=='__main__':main()

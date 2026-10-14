@@ -75,3 +75,9 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T03:35:24.953478+00:00 /UTC+8 2026-10-14T11:35:24.953478+08:00：字典v1 JSON完成、integer-list TSV展示TypeError exit1，无评分。v2展示修正/新输出且98 records精确比对；评分参数保持，待字典恢复后启动。3cf3dff计划已03:32:10push/03:32:14HTTPS核验。 [恢复run](../../../runs/20261014_native_ucell_projection_v1.md)。
 
 2026-10-14T03:45:21.383967+00:00 /UTC+8 2026-10-14T11:45:21.383967+08:00：冻结全部172/1290原canonical行/metadata选择预检，补9CM初期谱系缺口；不复制fullgene矩阵、保持推断资格/患者别名限制。 [全scope](../../../runs/20261014_all_CM_state_input_preflight_v1.md)。
+
+2026-10-14T03:59:00.501325+00:00 /UTC+8 2026-10-14T11:59:00.501325+08:00：v2字典98record与v1精确相同，SHA9f8182f1...；真实UCell224310/224311于03:42:30—03:52:16 exit0，98sig/240533cells/三rank与TPM敏感性完成，原type/轴不变，独立real-cell审核派发。全scope172/1290预检03:49完成：52source/4532933cells/35567units，行与counts全一致，未复制RNA，row audit待。 [字典](../../../inventories/analysis/2026-10-14/frozen_state_programme_dictionary_v2/RESULTS.md)。
+
+2026-10-14T04:10:17.089296+00:00 /UTC+8 2026-10-14T12:10:17.089296+08:00：真实UCell及独立47144468支持量/38700手算/91599unit均值PASS；330main记录92 absRNA rho>=.5，TPM敏感性medianrho.512，非无技术影响states。全scope52source/18major/4532933cells/172/1290/35567units独立全行通过，无RNA复制；缺谱系实际存在，下一平衡有限发现/流式原生评分。 [真实评分](../../../inventories/analysis/2026-10-14/native_ucell_projection_v2/RESULTS.md)、[全scope](../../../inventories/analysis/2026-10-14/all_CM_state_input_preflight_v1/RESULTS.md)。
+
+2026-10-14T04:12:18.067948+00:00 /UTC+8 2026-10-14T12:12:18.067948+08:00：冻结全18major<=108000平衡发现行选择，<=6sources、块/库/cells排名纯metadata，无LR/临床p、单来源保留，后续所有4532933仍流式评分，不复制RNA。 [全谱系发现](../../../runs/20261014_all_lineage_discovery_rows_v1.md)。

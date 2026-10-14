@@ -1,0 +1,10 @@
+{
+  "status": "FROZEN_ALL98_CANDIDATE_SIGNATURES_NOT_STATE_ACCEPTANCE",
+  "producer_sha256": "fcd54fe871384d6d445c1548cfaca9b53dfd6e00718ae1959d8c63efba0ca997",
+  "frozen_UTC": "2026-10-14T03:38:11.190675+00:00",
+  "programmes": 98,
+  "main_stability_candidates": 65,
+  "dictionary_sha256": "9f8182f124bf50ee5d2a2c5ac976968d1d8d6c4dd3ba3d606090ca0ed28a0c3a",
+  "catalogue_sha256": "00e365a1fa6372c74ac9a33f9a533767730408ecca968332c98c138354bcd1ae",
+  "formal_state_labels": false
+}

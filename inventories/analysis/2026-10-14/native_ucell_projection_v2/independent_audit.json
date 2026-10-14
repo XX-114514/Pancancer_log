@@ -1,0 +1,59 @@
+{
+  "status": "PASS_NATIVE_UCELL_ALL_CELL_SUPPORT_MASKS_AND_MANUAL_REAL_CELL_SCORES",
+  "observed_UTC": "2026-10-14T03:59:43.804027+00:00",
+  "auditor_sha256": "39e954a9f392dc92f0272fbe2ad3162fc4e3bf988532ba4014a20e652314a24c",
+  "producer_inventory_sha256": "a98228effb662a7138a63c7ba0215e073048f736c65146b0bbde4baf0e463a2f",
+  "cells": 240533,
+  "programmes": 98,
+  "quantity_values_checked": 47144468,
+  "manual_scalar_scores_checked": 38700,
+  "max_manual_score_difference": 4.4693984069255066e-08,
+  "sample_node_means_checked": 91599,
+  "max_sample_mean_difference": 2.0193642580323967e-07,
+  "summary": [
+    {
+      "gse_id": "GSE148071",
+      "cells": 9057,
+      "native_genes": 29527,
+      "manual_cells": 40,
+      "sample_node_means_checked": 8133,
+      "all_masks_quantities_identity_exact": true
+    },
+    {
+      "gse_id": "GSE161529",
+      "cells": 39547,
+      "native_genes": 33538,
+      "manual_cells": 40,
+      "sample_node_means_checked": 9846,
+      "all_masks_quantities_identity_exact": true
+    },
+    {
+      "gse_id": "GSE178341",
+      "cells": 54566,
+      "native_genes": 26895,
+      "manual_cells": 40,
+      "sample_node_means_checked": 45087,
+      "all_masks_quantities_identity_exact": true
+    },
+    {
+      "gse_id": "GSE182109",
+      "cells": 96990,
+      "native_genes": 38224,
+      "manual_cells": 40,
+      "sample_node_means_checked": 16611,
+      "all_masks_quantities_identity_exact": true
+    },
+    {
+      "gse_id": "GSE183904",
+      "cells": 40373,
+      "native_genes": 24186,
+      "manual_cells": 40,
+      "sample_node_means_checked": 11922,
+      "all_masks_quantities_identity_exact": true
+    }
+  ],
+  "all_cell_score_values_independently_recomputed": false,
+  "all_public_aggregate_correlations_independently_recomputed": false,
+  "formal_state_labels": false,
+  "biological_or_mechanistic_validation": false
+}

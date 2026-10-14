@@ -9,3 +9,7 @@
 ## 字典v1展示失败与v2恢复
 
 2026-10-14T03:35:24.953478+00:00 /UTC+8 2026-10-14T11:35:24.953478+08:00：v1完整98记录JSON已写成，但展示TSV join matched_factor_indices的integer列表TypeError，producer exit1；保留JSON和代码，未启动任何评分。新[v2字典](../inventories/analysis/2026-10-14/state_programme_dictionary_plan_v2.json)仅str展示修正，要求与v1全部98record精确相同；[v2评分](../inventories/analysis/2026-10-14/native_ucell_projection_plan_v2.json)仅新字典路径/producer SHA断言/输出版本，所有参数不变。
+
+2026-10-14T03:59:00.501325+00:00 /UTC+8 2026-10-14T11:59:00.501325+08:00真实v2字典03:38:11成功，98原记录精确一致；评分224310/22431103:42:30—03:52:16exit0/退出，5sources全部98/三rank与TPM完成。独立audit派发；formal states仍待。 [字典](../inventories/analysis/2026-10-14/frozen_state_programme_dictionary_v2/RESULTS.md)。
+
+2026-10-14T04:10:17.089296+00:00 /UTC+8 2026-10-14T12:10:17.089296+08:00：03:59:43独立真实UCell audit PASS（非全score再算）；330main中92明显RNA相关、TPM signature rho中位.512。gene轴50/50 complete，保留low gene支持及scope NA；正式state命名/原9CM扩展仍待。[结果](../inventories/analysis/2026-10-14/native_ucell_projection_v2/RESULTS.md)。

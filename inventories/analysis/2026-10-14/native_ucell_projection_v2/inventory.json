@@ -1,0 +1,68 @@
+{
+  "status": "COMPLETE_NATIVE_UCELL_CANDIDATE_SCORES_PENDING_INDEPENDENT_AUDIT",
+  "started_UTC": "2026-10-14T03:42:32.382584+00:00",
+  "finished_UTC": "2026-10-14T03:52:15.773041+00:00",
+  "producer_sha256": "f97968d9ac5b9fd40bd763032c857d5e6b0859727ec04a40a8638f0912ec437d",
+  "plan_sha256": "fb964d6578621e8f7661e8d394faac2b8dbae1ed1e09cf502851d85a4858ebf9",
+  "dictionary_sha256": "9f8182f124bf50ee5d2a2c5ac976968d1d8d6c4dd3ba3d606090ca0ed28a0c3a",
+  "input_inventory_sha256": "d75515d3b2e2e68e09dbc7ca18ed85cbe5a5c78b741781b59df7510cd7e219ca",
+  "cells": 240533,
+  "programmes": 98,
+  "main_stability_candidates": 65,
+  "version": "pyucell0.8.0",
+  "primary_maxrank": 1500,
+  "ties_method": "average",
+  "missing_genes": "skip_with_explicit_measurement_gate",
+  "native_gene_axes_preserved": true,
+  "original_identities_changed": false,
+  "formal_state_labels": false,
+  "high_state_percentile_forced": false,
+  "internal_source_projection": "GSE183904 previously_used_not_independent_validation",
+  "source_files": [
+    {
+      "gse_id": "GSE148071",
+      "cells": 9057,
+      "genes": 29527,
+      "score_file_sha256": "528172d992df559595f357c333c7e7c27cddf97e03f4213b53c1d9183ecd4f18",
+      "metadata_sha256": "e268b59ad03e630fca3fcbe46f5dd9e0bfe003791a702a020089b8a0001b2905",
+      "sample_node_means_sha256": "cee7e254bb6b1a2799d7468e4b2b16d6ae6b59a24ee1c6c0b64b2a7de89545ca"
+    },
+    {
+      "gse_id": "GSE161529",
+      "cells": 39547,
+      "genes": 33538,
+      "score_file_sha256": "6a5828f9bfb9c4ce93fa9185ea58f94a75262217b3fddab69c89e859a4adf03d",
+      "metadata_sha256": "44fb443d9e6c0351466157acab94b502c9ed6c609e635e8ef50805f5698cf9f6",
+      "sample_node_means_sha256": "5297b8d9c6f70471f89d6c3cce833fc14c2edc0d0b782d3cd614edf75f2cfbfc"
+    },
+    {
+      "gse_id": "GSE178341",
+      "cells": 54566,
+      "genes": 26895,
+      "score_file_sha256": "ae8e4f6b74013108987a778799d2ae9061d9fb171cdbd3d841dc08ece50e2239",
+      "metadata_sha256": "d9acc5dc575378fa75e0e94179b63aa11fe40eb2810f69aecbd0624985357952",
+      "sample_node_means_sha256": "e2efe829d54fc32d355eced7dcf2339b3c3228e164446026f68f161dd648178e"
+    },
+    {
+      "gse_id": "GSE182109",
+      "cells": 96990,
+      "genes": 38224,
+      "score_file_sha256": "15dc76b73cbb2b6777aeace43a65a1be50241869cef048121ea6004874ae3566",
+      "metadata_sha256": "d310d105e24e3bcb735898674bf84089048655691bba63fe4268b12de212db3f",
+      "sample_node_means_sha256": "734a3e3c604e91cb8418d66a7959886266efce0d9d3ac2fb68c24be6c9625a4f"
+    },
+    {
+      "gse_id": "GSE183904",
+      "cells": 40373,
+      "genes": 24186,
+      "score_file_sha256": "1a3e66519fb11e4a2957ce256a313d97bd4179542c5ff3acd896cfc8efecf212",
+      "metadata_sha256": "642d7677d717e67052d69633f7292fca4111221a583394e0ac32bbc4d1d6f5ed",
+      "sample_node_means_sha256": "76169ef33662b2f6af51ff4eb044f46ae0cc9f2639a607396fea80f4f789188f"
+    }
+  ],
+  "public_output_sha256": {
+    "all490_native_gene_coverage.tsv": "1b4796245343da45e4c578b2fa2f881c4324267088cf9fd8c26db0a881c698bd",
+    "all_source_major_programme_distribution.tsv": "354737577e5593d57aa6caba77026fd34842ee791504ac8b6baff7f4f8836d77",
+    "all_source_node_programme_distribution.tsv": "fe6c2b8596b46c099383bff790d4128dfc4b89744a664905e1053f61fe4dc763"
+  }
+}

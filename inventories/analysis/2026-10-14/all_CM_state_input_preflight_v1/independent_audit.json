@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL4532933_CANONICAL_ROWS_ALL35567_UNITS_AND_FROZEN172_1290_SCOPE",
+  "observed_UTC": "2026-10-14T04:00:26.573910+00:00",
+  "auditor_sha256": "97733cb5283af24fece508f8dfcff5ec98cb30a4a82a5958ee7c4d3afed2e736",
+  "producer_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "selected_cells": 4532933,
+  "sample_node_units": 35567,
+  "sources": 52,
+  "libraries": 1290,
+  "nodes": 172,
+  "canonical_row_membership_independently_rebuilt": true,
+  "all_native_counts_marginals_exact": true,
+  "no_expression_copy_or_identity_change": true,
+  "formal_state_labels": false
+}

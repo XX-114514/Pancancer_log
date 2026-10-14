@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE_ALL172_ALL1290_NATIVE_ROW_PREFLIGHT_PENDING_AUDIT",
+  "observed_UTC": "2026-10-14T03:49:33.963109+00:00",
+  "producer_sha256": "cdd654e3ddc9f38ed6edcb5ac73db610e330af311bfb45595c5aa6b261cc4c7c",
+  "plan_sha256": "f3427957da41e7409f0f82306ca60bd88c69dddcb47b5c295f4dac59952adf20",
+  "input_sha256": {
+    "input_contract": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+    "original_catalogue": "02bcd7b83b2967e8a8907016002050dbcecbc54c133f0a486f4ea7e5e96536e0",
+    "current_catalogue": "dae713e2c6074107c8ae380247fd6df851810f70799339e6a9dbccbcc14a7705",
+    "counts": "3506cb2396f3f819813e68f4cbd7757cf78b4caf73b23612e9d5befdeab77ae7",
+    "scope": "e7fe741602219561ce1cae496264e819d3e8e6fb0b8de1ba955de628a2ae0ead"
+  },
+  "canonical_shape": [
+    4676787,
+    95038
+  ],
+  "sources": 52,
+  "libraries": 1290,
+  "frozen_nodes": 172,
+  "selected_cells": 4532933,
+  "selected_sample_node_units": 35567,
+  "all_counts_keys_and_rows_exact": true,
+  "no_expression_matrix_copied": true,
+  "original_labels_changed": false,
+  "formal_state_labels": false,
+  "source_conditions_not_independent_patients": true,
+  "private_row_selection_sha256": "3bea4fd0b6bbc76db36aaa9d9a476f44d5c57b3e82ed21d23cde72cc99f01cf8",
+  "private_unit_table_sha256": "08d04e08caba4800b0db9830cf91d8f78bb5466dcb63ee8d7691feb42010d9a3",
+  "public_output_sha256": {
+    "all_source_native_scope.tsv": "9c14409a53b3e73dfe44ad77f344882e2aa11aa063ad78409309402bbb2e2b30",
+    "all_source_major_native_scope.tsv": "75519486e463f70a7e894af2cac2ef574def6bbe2e395ac908c45fd9d668204c"
+  }
+}
