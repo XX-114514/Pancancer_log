@@ -1,0 +1,15 @@
+args<-commandArgs(trailingOnly=TRUE);root<-args[1]
+.libPaths(c(file.path(root,'library_v7'),file.path(root,'library_v5'),file.path(root,'library_v2'),file.path(root,'library'),.libPaths()))
+suppressPackageStartupMessages(library(DIALOGUE))
+r<-readRDS(file.path(root,'synthetic_smoke_v7/result.rds'))
+stopifnot(length(r$scores)==2,all(c('T','Myeloid')%in%names(r$scores)))
+rows<-lapply(names(r$scores),function(type){
+ d<-r$scores[[type]];m<-as.matrix(d[,grep('^MCP[0-9]+$',names(d)),drop=FALSE]);stopifnot(nrow(m)==720,ncol(m)==2,all(is.finite(m)),length(unique(d$samples))==24)
+ a<-aggregate(m,by=list(sample=d$samples),FUN=mean);rownames(a)<-a$sample;a$sample<-NULL
+ known<-cbind(linear=scale(seq_len(24))[,1],oscillation=scale(sin(seq_len(24)*pi/5))[,1]);corr<-abs(cor(as.matrix(a),known))
+ matches<-max(min(corr[1,1],corr[2,2]),min(corr[1,2],corr[2,1]));stopifnot(matches>.8)
+ data.frame(cell_type=type,n_simulated_cells=nrow(m),n_simulated_samples=24,n_MCP_scores=ncol(m),all_finite=TRUE,min_abs_known_factor_correlation=matches,n_gene_evidence_rows=nrow(r$gene.pval[[type]]))
+});summary<-do.call(rbind,rows)
+write.table(summary,file.path(root,'synthetic_independent_output_checks_v2.tsv'),sep='\t',row.names=FALSE,quote=FALSE)
+stopifnot(sum(vapply(r$MCPs,function(x)!is.null(x)&&length(x)>0,logical(1)))==2,unname(r$k['DIALOGUE'])==2)
+cat('SYNTHETIC_RESULT_CHECKS_PASS_REAL_CELLS_ZERO\n');print(summary)

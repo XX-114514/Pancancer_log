@@ -1,3 +1,7 @@
+## 2026-10-14T01:02:07.270860+00:00 /UTC+8 2026-10-14T09:02:07.270860+08:00 DIALOGUE完整入口与临床机会
+
+CM-PIVOT临床患者机会及DIALOGUE官方完整接口DONE；下一读取240533输入独立readback接受→来源内患者块发现/留出→全9CM映射及合格临床/空间。真实生物/临床目标active，不把toy/软件健康算发现。 [方法结果](inventories/analysis/2026-10-14/DIALOGUE_method_preparation_v1/RESULTS.md)。
+
 ## 2026-10-14T00:48:50.209434+00:00 /UTC+8 2026-10-14T08:48:50.209434+08:00 CM临床机会与DIALOGUE支线
 
 CM-PIVOT：患者/捕获机会核验完成；下一DIALOGUE同版本ABI修复/full合成API、读取已审state原生输入、来源内患者发现/留出。全9CM映射、真实临床/空间意义未完成；保留其他任务新atlas恢复。 [run](runs/20261014_CM_clinical_DIALOGUE_preparation_v1.md)。

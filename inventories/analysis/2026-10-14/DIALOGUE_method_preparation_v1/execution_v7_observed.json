@@ -1,0 +1,16 @@
+{
+  "status": "TERMINAL_SUCCESS",
+  "started_UTC": "2026-10-14T00:54:56.911053+00:00",
+  "driver_pid": 3446,
+  "real_cells": 0,
+  "compiler_PATH_corrected": true,
+  "shared_R_library_unchanged": true,
+  "child_pid": 3447,
+  "exit_code": 0,
+  "finished_UTC": "2026-10-14T00:55:09.026644+00:00",
+  "observed_UTC": "2026-10-14T00:55:16.439558+00:00",
+  "process_present": {
+    "driver_pid": false,
+    "child_pid": false
+  }
+}

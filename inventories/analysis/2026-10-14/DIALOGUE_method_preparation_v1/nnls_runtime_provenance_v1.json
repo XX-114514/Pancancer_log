@@ -1,0 +1,8 @@
+{
+  "package": "nnls",
+  "version": "1.6",
+  "url": "https://cloud.r-project.org/src/contrib/nnls_1.6.tar.gz",
+  "bytes": 11745,
+  "sha256": "272f6174cfbab744486f7ec44a516cb5845663b28d38fe0b4d2a924673117fda",
+  "reason": "official DIALOGUE iterative scoring invokes nnls::nnls but does not declare it in DESCRIPTION"
+}

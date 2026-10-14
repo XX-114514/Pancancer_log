@@ -1,0 +1,40 @@
+{
+  "observed_UTC": "2026-10-14T01:00:32.349575+00:00",
+  "source_sha256": {
+    "PMA_1.2-4.tar.gz": "3e9bf312d14077558ce0696e2c5587943850192bff60fb7490f413ba21ab0057",
+    "unikn_1.0.0.tar.gz": "6edd5d420175a4691066b5c695d2a96f706d225a62473c85be62b2dd42350dc1",
+    "ppcor_1.1.tar.gz": "6a78f0c4d9caa17ab0252c5d351c2371e4ffb9047ebd13964877018dd6142bf5",
+    "UpSetR_1.4.1.tar.gz": "91c1fdfbb5dccaf29e57f159d752a846f73d01a40e05f542f64f4841d48e549e",
+    "lmerTest_3.1-3.tar.gz": "35aa75e9f5f2871398ff56a482b013e6828135ef04916ced7d1d7e35257ea8fd",
+    "DIALOGUE-9c146cc.tar.gz": "2f2a8a6dfa2f47f2e9cce553310164d38c862a692e963b3e702bf04d7709e511",
+    "lme4_1.1-35.5.tar.gz": "7d6664db7ea96429562efe1058da58985d779d6fe79ec6f4e86ba68047135170",
+    "nnls_1.6.tar.gz": "272f6174cfbab744486f7ec44a516cb5845663b28d38fe0b4d2a924673117fda"
+  },
+  "aggregate_output_sha256": {
+    "runtime_dependencies_v7.tsv": "087c5ef88017271b8ce66e2171a8c607f06fad65dcc741bdca59d6bd3725e788",
+    "synthetic_independent_output_checks_v2.tsv": "95440e3fbce3f13933c5f4054470cdca247ed3189db42d42f4852509f5bd1ee8",
+    "synthetic_smoke_summary_v7.txt": "127d3402919a2c2abed13968001e02783bd6f49d751dd4d3dd4ba8aff7b14d8d"
+  },
+  "status": "OFFICIAL_DIALOGUE_COMPLETE_SYNTHETIC_API_AND_OUTPUT_CHECKS_PASS",
+  "real_cells": 0,
+  "clinical_models_fitted": 0,
+  "official_algorithm_modified": false,
+  "shared_R_library_modified": false,
+  "nonempty_MCPs": 2,
+  "synthetic_score_values_finite": 2880,
+  "known_factor_min_abs_correlations": [
+    0.9982038,
+    0.9984558
+  ],
+  "source_and_export_SHA_verified": true,
+  "private_library_order": [
+    "library_v7",
+    "library_v5",
+    "library_v2",
+    "library"
+  ],
+  "private_R_runtime": "scrna_r R4.3.3",
+  "lme4_version": "1.1-35.5",
+  "Matrix_version": "1.6-5",
+  "source_input_readback_acceptance_still_required": true
+}

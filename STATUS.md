@@ -1,3 +1,7 @@
+## 2026-10-14T01:02:07.270860+00:00 /UTC+8 2026-10-14T09:02:07.270860+08:00 DIALOGUE完整入口与临床机会
+
+CM临床机会核验完成；DIALOGUE完整官方PMD/HLM/NNLS合成流程及2880分数/2预设因子独立检查PASS，私有兼容R入口可用。真实MCP拟合/临床/空间尚未完成；240533单细胞输入读回验收待。 [方法结果](inventories/analysis/2026-10-14/DIALOGUE_method_preparation_v1/RESULTS.md)。
+
 ## 2026-10-14T00:48:50.209434+00:00 /UTC+8 2026-10-14T08:48:50.209434+08:00 CM临床机会与DIALOGUE支线
 
 临床患者机会核验：210精确文库键/16捕获机会/3源QC总量通过；TNBC baseline实体15患者，旧T—Myeloid两端各20时ICI仅6。DIALOGUE官方已私有安装，HLM暴露旧lme4/Matrix ABI不兼容，隔离修复终态待；真实MCP和临床模型未拟合。 [run](runs/20261014_CM_clinical_DIALOGUE_preparation_v1.md)。

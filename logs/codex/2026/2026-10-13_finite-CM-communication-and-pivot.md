@@ -29,3 +29,11 @@ PAIR015 gamma-minus-alpha β.395/BH.030/BY.151；CRC/胶质瘤同向，但CRC信
 DIALOGUE官方9c146cc源码及CRAN依赖SHA已固定；只私有R4.3.3库。v1编译器PATH缺失，v2修正后安装成功但合成PC无列名，v3补列名进入HLM后全NA。显式合成lmer揭示共享lme4 1.1-34和Matrix1.6-5二进制ABI chm_factor_ldetL2缺失，不是生物学阴性。v4同版本lme4官方源码私有重编译，终态尚待；一次poll在launch传输未结束时不存在execution文件，不判任务失败或重启。旧所有失败、共享R库和原权威数据保留。新表达下载0，真实DIALOGUE cell0。正在读取/复用并行5源240533原生输入合同，不重复大数据装配。
 
 [临床机会](../../../inventories/analysis/2026-10-14/clinical_CM_patient_opportunity_v1/RESULTS.md)、[新run](../../../runs/20261014_CM_clinical_DIALOGUE_preparation_v1.md)。下一ABI修复实测/full官方API→来源内匹配患者MCP发现/预冻结留出与9CM映射→合格临床和空间；完整生物/临床目标仍未完成。建议commit：Audit clinical patient opportunity and repair isolated DIALOGUE runtime.
+
+## 2026-10-14T01:02:07.270860+00:00 /UTC+8 2026-10-14T09:02:07.270860+08:00 DIALOGUE完整入口已审
+
+4228ab5关键节点已00:50:47普通push/00:50:50独立HTTPS核验。v4同版源码失败，由旧Cholmod/Eigen头不兼容；上游#756/#763同类记录已读。v5私有1.1-35.5实际编译DONE，自己的私有库路径验证未处理新目录/物理规范路径，误拒绝；保留历史，v6复用实际库和正确规范化。v6 PMD/HLM均通过，最终评分缺官方DESCRIPTION未声明nnls；加入官方CRAN nnls1.6私有v7。
+
+v7生产UTC00:54:56.911—00:55:09.026 exit0，00:55:16.439核实驱动3446/child3447消失；PMD/HLM/NNLS全完成。另独立读取1440模拟细胞的2880有限分数、非空2MCP、24模拟samples、25/24gene evidence rows和已知因子相关.99820/.99846全部PASS。首独立audit把官方MCP列表5槽（后3NULL）当实际模块数拒绝，修正按非空＋官方k计数，数值没有改变。真实cells0/临床models0，没有生物学新发现。
+
+8源码和3只白名单聚合文件server/local SHA全部一致，public运行/验收/失败时点及私有bootstrap发布；原R共享库、原172/9CM/权威Zarr未改。状态输入全部已经写出但其原v1末尾212/424汇总失败；独立读回v2的登记文件现已存在，待真实终态，未经验收不直接训练。新MCP真实拟合和临床/空间意义仍是下一要求，goal保持active；本轮是临床真实机会＋官方方法完整恢复的progress。下一输入接受→来源内、患者块预冻结发现/留出及MCP→9CM/临床/空间，不用合成PASS替代目标。

@@ -1,0 +1,8 @@
+{
+  "package": "lme4",
+  "version": "1.1-35.5",
+  "sha256": "7d6664db7ea96429562efe1058da58985d779d6fe79ec6f4e86ba68047135170",
+  "bytes": 3300116,
+  "url": "https://cloud.r-project.org/src/contrib/Archive/lme4/lme4_1.1-35.5.tar.gz",
+  "reason": "isolated compatible Matrix/Eigen header build after same-version old headers failed; shared lme4 unchanged"
+}
