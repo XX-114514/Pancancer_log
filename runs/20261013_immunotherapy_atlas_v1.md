@@ -1,7 +1,7 @@
 # 免疫治疗专用单细胞对象与下游 v1
 
 - 授权日期：2026-10-13（UTC+8）。
-- 当前阶段（2026-10-14 10:18 UTC+8）：整合、270子群和全原生marker完成；6范围CM完成，逐库CNV运行，其余范围空结果保存修复；最终权威待验收。
+- 当前阶段（2026-10-14 10:35 UTC+8）：整合、270子群、全原生marker及15范围CM完成；逐库CNV继续，最终Zarr尚未发布。
 - 输入：20261012_public_preprocessed_zarr_v2完整技术合集，Project_v5及历史免疫队列的既有QC/counts与作者临床资料。
 - 来源角色：独立验证/内部复现/机制参照/产品分支/隔离逐原研究登记。不得将Spatial、动物、bulk计为单细胞；CAR-T产品和免疫富集单独标记。
 - 输出：原项目卷新独立run下计数权威对象、降维/图/聚类、major/fine/state/单marker编号描述、逐样本CNV证据与精确回填、CM新发现及旧9CM固定投影；持久化前需阶段实测容量与完整验收。
@@ -42,3 +42,5 @@
 - [旧P3固定W门槛](../inventories/runtime/2026-10-14/immune_atlas_v1/P3_fixed_CM_projection_gate_public.json)要求多基因映射；本轮新发现与固定9CM验证分开，未宣称后者完成。
 
 - 02:16:29 UTC / 10:16:29 UTC+8：[实际检查点](../inventories/runtime/2026-10-14/immune_atlas_v1/downstream_checkpoint_20261014T0217_public.json)，6范围CM完成、4/400库CNV success。转移分支NMF成功但无支持网络，修复原CoVarNet空表行名后新版本继续，不降低科学门槛。
+
+- [全15范围CM完成](../inventories/runtime/2026-10-14/immune_atlas_v1/CM_recovery_v3_public.json)及[独立接口审计](../inventories/runtime/2026-10-14/immune_atlas_v1/CM_artifact_audit_v1_public_recovered.json)PASS：10范围有支持网络成员、5无支持成员，6准备不足；均非临床独立验证。待原CNV完整覆盖400库通过后自动打包及全行/复制/读回审计。
