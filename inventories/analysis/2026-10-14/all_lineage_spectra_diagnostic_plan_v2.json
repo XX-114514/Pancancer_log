@@ -1,0 +1,58 @@
+{
+  "schema": "all18_scope_multiseed_state_diagnostics_v1_recovery_root_v2",
+  "frozen_UTC": "2026-10-14T06:15:03.588919+00:00",
+  "producer_sha256": "164d12399d4bb0867ba877569ebe4467ee1a15cb79590184aebad9b10d823ce3",
+  "parent_model_plan_sha256": "9e8032e4bf3f8853cda57f76d01f318be1461b4fcb59c51868eefd9322d0f7cd",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "blocks": {
+    "lymphoid_T": [
+      "T cell",
+      "T/NK lymphoid",
+      "Lymphoid cell"
+    ],
+    "myeloid": [
+      "Macrophage",
+      "Monocyte",
+      "Myeloid",
+      "Dendritic cell",
+      "Neutrophil"
+    ],
+    "B_mast_hematopoietic": [
+      "B cell",
+      "Mast cell",
+      "Hematopoietic cell"
+    ],
+    "vascular_stromal": [
+      "Endothelial cell",
+      "Fibroblast",
+      "Mural cell",
+      "Mesenchymal cell"
+    ],
+    "epithelial_melanocytic": [
+      "Epithelial cell",
+      "Melanocytic cell"
+    ],
+    "glial": [
+      "Glial cell"
+    ]
+  },
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "min_cosine": 0.9,
+  "min_top50_jaccard": 0.5,
+  "min_source_residual_score_rho": 0.7,
+  "informative_genes": 5,
+  "min_informative_cells": 20,
+  "scope_rule": "scope-restricted Hungarian every3seedpair plus fullcycle; all permitted majors and source/node/depth/support diagnostics reported. Weight-stable block_global with>=2supported majors is shared; exactly1 is context-candidate, retained separately; original own-lineage factors need ownmajor supported. support>=20cells with>=5top50genes plus all3source-residual-score rho>=.7; no fixed positivity proportion.",
+  "gene_signature_rule": "Median L2 normalized matched3seed weights, top50; factor weights already include official gene scaling; no most-favourable seed selection",
+  "source_rule": "source and joint source-node group residual descriptive R2; sparse-signature RNA fraction and detected-support from accepted native-denominator counts. High source R2 not automatically artifact.",
+  "state_rule": "No formal state names or biological promotion; technical/otherlineage source context reviewed later. All factors retained incl failed/undefined.",
+  "clinical_LR_p_used": false,
+  "status": "FROZEN_RECOVERY_LOCATION_ONLY",
+  "parent_diagnostic_plan_sha256": "de0f0e0d1f42b65a46dee93b54fbcbc7298ef71f6a2164ba99fbe2d9725d1a56",
+  "model_plan_recovery_sha256": "44517ebc82f7b6699a08580591c91bd1cf1ddc7ff846d440b1e2867b9ebe6737",
+  "recovery": "Only model/input-outputlocator on already accepted private data1 model root; all scientific diagnostic thresholds/rules and originalIDs unchanged; v1 T/B numeric results retained and reused."
+}

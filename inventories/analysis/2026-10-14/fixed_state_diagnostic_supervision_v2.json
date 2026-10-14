@@ -1,0 +1,15 @@
+{
+  "schema": "fixed24_scopes_state_diagnostic_supervision_v2",
+  "frozen_UTC": "2026-10-14T06:24:31.505691+00:00",
+  "producer_sha256": "d448aa8ef0a6a07f65adb8d7a2c08d559a11a2c46bc4d827c52174441db0da8f",
+  "Spectra_scopes": 6,
+  "cNMF_majors": 18,
+  "prior_T_B_audit_reused_only_after_model_copy_SHA": true,
+  "required_fit_evidence": "Originalproducer completed3seeds/wholeKmajor record, immutable gene/model axes; no fileexistence-only acceptance",
+  "worker": "Serial diagnostic then independent audit using existingmodelvenv/CPU2, poll specificoriginalfit handles30secs, stop on diagnostic/audit error, never restart fits; no CellState/LR/clinicalpromotion",
+  "scientific_parameters_unchanged": true,
+  "formal_states": false,
+  "all9CM_completed": false,
+  "DIALOGUE_after_states_completed": false,
+  "spatial_after_states_completed": false
+}

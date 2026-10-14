@@ -1,0 +1,23 @@
+{
+  "schema": "all18_per_major_CNMFK_repetition_diagnostics_v1_recovery_root_v2",
+  "frozen_UTC": "2026-10-14T06:15:03.588919+00:00",
+  "producer_sha256": "2ab63c8925def15f1926297bf33dca23ab60ad506470db3daa718dacce81f670",
+  "parent_model_plan_sha256": "d1ab42c5f3e69ac74656ebe136ec7a7013ed5fc8c6fb0be57896d7e01faddfc4",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "repeats": 100,
+  "min_finite_repeat_fraction": 0.9,
+  "repeat_rule": "medianHVGcos>=.8,p10>=.7,densityretained>=.5; zero-profile/constant-score staysNA,>=90% finite repetition assignment matches required; fixed penalized Hungarian assigns undefined entries for audit but never treats them cosine0",
+  "crossK_rule": "otherrepeat-stableK positivecoefcos>=.8,positive_top50Jaccard>=.25,source-residual usage rho>=.5; allK retained, no statecount from duplicates",
+  "genes": "top50 genuinely positive TPM-regression coefficients, never pad zero coefficients as programme genes; actual fewer genes explicitly recorded",
+  "diagnostics": "Every original node/source/RNA-depth/nativeRNA support; no gene set or K selected by clinical/LR p",
+  "formal_states": false,
+  "status": "FROZEN_RECOVERY_LOCATION_ONLY",
+  "parent_diagnostic_plan_sha256": "d99dc2cbb49fbb114739ff9c2b660942655bc6005f02e0020fa3d898ab22b8f4",
+  "model_plan_recovery_sha256": "c629fbdd9338b2cff532fbe0e69c7c2ffcb2be4f5ab550ef6d3e17bf20111786",
+  "recovery": "Only model/input-outputlocator on already accepted private data1 model root; all scientific diagnostic thresholds/rules and originalIDs unchanged; v1 T/B numeric results retained and reused."
+}
