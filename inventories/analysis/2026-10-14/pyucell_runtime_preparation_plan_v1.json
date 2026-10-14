@@ -1,0 +1,15 @@
+{
+  "schema": "pyucell_runtime_preparation_v1",
+  "frozen_UTC": "2026-10-14T01:58:55.707635+00:00",
+  "official_package": "pyucell",
+  "version": "0.8.0",
+  "wheel_sha256": "73101d62e74ca697ad3d07120c6336744c04881ba7c7db4ffa2caa639602e185",
+  "verifier_sha256": "59e82618a369f82378209ee62bf9709a6269cb6ec7e22b5aa27131301d2c40a4",
+  "official_repository": "https://github.com/carmonalab/pyucell",
+  "official_R_release_points_to_python": "https://github.com/carmonalab/UCell/releases/tag/v2.16",
+  "installation": "New system-site-packages venv backed by existing Python3.11; wheel only --no-deps/--no-index, no base environment changes",
+  "verification": "Synthetic scalar Mann-Whitney normalized score; average ties; measured zeros; skip missing; dense/sparse; batch composition unchanged",
+  "scope": "Software preparation only; no biological scores or state dictionary frozen; CPU average-tie path, GPU different tie options not substituted",
+  "missing_measurement_policy": "At projection step report coverage first and mark unscorable if insufficient; missing_genes=skip, never interpret absent assay genes as measured zero; thresholds to be frozen with dictionary",
+  "scientific_release": false
+}
