@@ -1,0 +1,119 @@
+{
+  "schema": "complete24scopes_all18_candidate_dictionary_v4",
+  "frozen_UTC": "2026-10-14T07:23:52.564763+00:00",
+  "producer_sha256": "a909a9033872b07d5da57ba2554f57add83c60231d13213e552f065208e42088",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "diagnostic_panels": {
+    "T_core": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD247",
+      "LCK"
+    ],
+    "Myeloid_core": [
+      "LST1",
+      "TYROBP",
+      "AIF1",
+      "CSF1R",
+      "FCER1G",
+      "CTSS"
+    ],
+    "epithelial_RNA": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "KRT5",
+      "KRT14",
+      "KRT6A",
+      "KRT16"
+    ],
+    "stromal_RNA": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "DCN",
+      "LUM",
+      "COL5A1",
+      "COL6A1"
+    ],
+    "mural_RNA": [
+      "ACTA2",
+      "TAGLN",
+      "MYL9",
+      "ACTG2",
+      "MYH11",
+      "RGS5",
+      "PDGFRB"
+    ],
+    "neural_RNA": [
+      "PTPRZ1",
+      "BCAN",
+      "STMN2",
+      "DCX",
+      "PCDH8",
+      "LRRTM1",
+      "IGFBPL1"
+    ],
+    "G2M": [
+      "MKI67",
+      "TOP2A",
+      "CDK1",
+      "UBE2C",
+      "CCNB1",
+      "CENPF"
+    ],
+    "IFN_like": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "IFI6",
+      "MX1",
+      "OAS1",
+      "OAS2",
+      "RSAD2"
+    ],
+    "Treg_related": [
+      "FOXP3",
+      "IL2RA",
+      "CTLA4",
+      "TNFRSF18",
+      "IKZF2",
+      "TNFRSF4"
+    ],
+    "cytotoxic": [
+      "GZMA",
+      "GZMB",
+      "PRF1",
+      "NKG7",
+      "GNLY",
+      "CTSW"
+    ],
+    "heatshock": [
+      "HSPA1A",
+      "HSPA1B",
+      "HSP90AA1",
+      "DNAJB1",
+      "DNAJA1",
+      "HSPH1"
+    ]
+  },
+  "scope": "All18 cNMF majors/all810 candidates plus fullSpectra factor auditregistry; all24 completed independent diagnostic scopes required, no subset substituted.",
+  "signature_rule": "cNMF primarytop50 genuinepositive nativeTPM-regression coefficients; alternativeTPMtop50. Spectra onlyalready-prespecified contextstable candidates with3seedmedianL2top50. AllfailedSpectrafactors retained in separatefullregistry.",
+  "labels_rule": "All original identity/node/number/9CM frozen. ProgrammeIDs separate; source/node/complexity/owncellgenedetection/otherlineage signatures are reviewfields, nothardstate labels.",
+  "crossK_rule": "Qualifying pairwise correspondence separatetable, sameoriginalmajor only; retain allK, do not count components as unique biologicalstates or mergeoriginalIDs.",
+  "reference_rule": "Originalfixed11panels and officialpinnedSpectra generef descriptors are descriptive, not confirmedstimulus/state; no LR/clinicalp or outcome selections.",
+  "algorithm_stability_does_not_equal_state": true,
+  "fullscope_projection_required": true,
+  "formal_states": false,
+  "status": "FROZEN_COMPLETE_SCOPE_ASSEMBLER_PENDING_ALL24_AUDITS",
+  "parent_plan_sha256": "e895bd99e4bf869df25d1e8669f36b0bf1d3c1caf6a099d2217965ddc33322c8",
+  "revision": "Before any assembly, make lineage-panel review relative to allowed major: own epithelial/stromal/mural/neural markers are identity-review fields, not foreign-RNA flags. Shared programmes get per-major review. No signature/stability/score rule changed; no contamination diagnosis."
+}

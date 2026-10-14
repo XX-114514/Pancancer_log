@@ -1,0 +1,28 @@
+{
+  "scope_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "canonical_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "programme_capacity_per_major": 252,
+  "output_cells_per_chunk": 5000,
+  "ucell_rank_batch_cells": 500,
+  "metadata_and_aggregate_budget_GiB": 8,
+  "total_output_budget_GiB": 40,
+  "reserve_free_GiB": 500,
+  "schema": "all52_native_UCell_projection_v1",
+  "frozen_UTC": "2026-10-14T07:25:33.442241+00:00",
+  "producer_sha256": "5899a319f6aa0086a565c5b55c07603cda66ef04623a80ad21f9ae42b8ed12b2",
+  "dictionary_directory": "all_lineage_state_candidate_dictionary_20261014_v4",
+  "dictionary_schema": "all18_candidate_state_dictionary_v4",
+  "dictionary_acceptance_relative_file": "all18_candidate_dictionary_acceptance_20261014_v1/accepted_dictionary_inventory.json",
+  "min_measured_genes": 10,
+  "min_measured_fraction": 0.8,
+  "max_rank_values": [
+    1000,
+    1500,
+    3000
+  ],
+  "read_cells_per_chunk": 500,
+  "max_core_row_span": 5000,
+  "formal_states": false,
+  "scope": "All4532933 frozen canonical rows; score all candidate signatures only within allowed majors on source-native gene axes. No fixed high-state proportion or original annotation changes.",
+  "independent_score_audit_required": true
+}
