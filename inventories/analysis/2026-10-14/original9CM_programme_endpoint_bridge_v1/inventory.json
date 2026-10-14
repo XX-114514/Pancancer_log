@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_STRUCTURAL_BRIDGE_NOT_STATE_OR_COMMUNICATION_ASSOCIATION",
+  "observed_UTC": "2026-10-14T07:42:28.761219+00:00",
+  "producer_sha256": "086c0b0335852d68261723855acc7800478a779146e34ebca745ad79be2b0d3e",
+  "W_sha256": "81eb511df103f0273d702dc45d1c7b0e3e85dfcd70e511ac5a9a63a956542d29",
+  "core_sha256": "133b1e9274c2d378d561d7165ec4de5d384c6a82d67dd7e0300cf0c199a0081e",
+  "edges_sha256": "f8937311f72d7deb0dd0b3fc87aee463dbba0db8f6b064b03cb396c4f4f7226c",
+  "W_nodes": 172,
+  "original_nodes": 172,
+  "CMs": 9,
+  "core_records": 82,
+  "edge_records": 120,
+  "unique_pairs": 60,
+  "stable_Spectra_programmes": 4,
+  "stable_Spectra_core_records": 0,
+  "stable_Spectra_edge_records": 0,
+  "glial_max_CM_W_fraction": 0.020533111605678705,
+  "state_scores_used": false,
+  "output_sha256": {
+    "all_CM_major_W_core_edge_scope.tsv": "0c68cdd8c89d84151908c25e3bec6ea70e28b0024e478a28b621f3f958310a6f",
+    "all_stable_Spectra_CM_scope.tsv": "e43df21611098ee5891b061dd30792086af301c5ae4c169249130561652dced1",
+    "original_glial_node_W.tsv": "0671488b6254da7c4b2ff22a6c581864d3f4612fb431214dfd01261990df0dda"
+  }
+}
