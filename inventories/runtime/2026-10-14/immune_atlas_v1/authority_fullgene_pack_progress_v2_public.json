@@ -1,0 +1,58 @@
+{
+  "observed_utc": "2026-10-14T04:44:06.590701+00:00",
+  "stage": "all_native_arrays_written_audit_pending",
+  "n_cells": 2670057,
+  "n_features": 49563,
+  "completed_sources": [
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE286827",
+      "n_output_cells": 375019
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE256326",
+      "n_output_cells": 397471
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE294109",
+      "n_output_cells": 527714
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE292046",
+      "n_output_cells": 580239
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "n_output_cells": 976832
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE169246",
+      "n_output_cells": 1466192
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE176021",
+      "n_output_cells": 2334686
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE316195",
+      "n_output_cells": 2417235
+    },
+    {
+      "phase": "fullgene_pack_source",
+      "dataset": "GSE305078",
+      "n_output_cells": 2670057
+    }
+  ],
+  "candidate_allocated_bytes": 29816090624,
+  "effective_final_free_bytes": 544389627904,
+  "reserve_bytes": 500000000000,
+  "current_capacity_precheck_fits": true,
+  "technical_authority_released": false
+}

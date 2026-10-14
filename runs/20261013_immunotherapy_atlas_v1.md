@@ -62,3 +62,5 @@
 - 04:16:58 UTC[元数据全行转换](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_metadata_conversion_v1_public.json)PASS；[恢复快照](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_metadata_recovery_v1_start_public.json)实际启动，archive candidate_v2继续。参见[下游交接协议](../docs/IMMUNE_ATLAS_V1_HANDOFF.md)。
 
 - [全基因写入检查点](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_fullgene_pack_progress_v1_public.json)：前5来源完成，超过百万行；这是处理进度，最终发布仍pending。
+
+- [全部9来源native数组写入](../inventories/runtime/2026-10-14/immune_atlas_v1/authority_fullgene_pack_progress_v2_public.json)完成，实际候选大小及最终500GB预留预核fit；完整全行和成品读回审计仍pending。
