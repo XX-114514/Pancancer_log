@@ -88,23 +88,32 @@ def pack(args):
     if set(catalog.subcluster)!=set(obs.subcluster.astype(str).unique()):raise ValueError('Final annotation catalog differs')
     uns['subcluster_catalog_json']=catalog.to_json(orient='records')
     CM_reports=[];CM_memberships={}
+    CM_attempts={}
+    if args.CM_discovery_index:
+        index=json.loads(args.CM_discovery_index.read_text())
+        if not index['all_ready_scopes_completed']:raise ValueError('CM discovery index incomplete')
+        CM_attempts={p['scope']:p['discovery_attempt'] for p in index['results']}
     for manifest in ['CM_preparation_public.json','CM_material_preparation_public.json']:
         path=args.run/'manifests'/manifest
         if not path.exists():continue
         for scope in json.loads(path.read_text())['scopes']:
             if not scope['ready']:continue
-            folder=args.run/'CM'/scope['scope']/args.CM_discovery_attempt
+            attempt=CM_attempts.get(scope['scope'],args.CM_discovery_attempt)
+            if not __import__('re').fullmatch(r'discovery_v[0-9]+',attempt):raise ValueError('Invalid CM artifact attempt')
+            folder=args.run/'CM'/scope['scope']/attempt
             evidence=json.loads((folder/'CM_public.json').read_text())
             if evidence['scope']!=scope['scope']:raise ValueError('Final CM scope differs')
             CM_reports.append(dict(input_scope=scope,discovery=evidence))
-            try:members=pd.read_csv(folder/'each_node.tsv',sep='\t').to_dict(orient='records')
+            try:
+                table=pd.read_csv(folder/'each_node.tsv',sep='\t')
+                members=table.astype(object).where(pd.notna(table),None).to_dict(orient='records')
             except pd.errors.EmptyDataError:
                 if evidence['n_network_nodes']!=0:raise
                 members=[]
             CM_memberships[scope['scope']]=members
     if not CM_reports:raise ValueError('No completed CM evidence to archive')
     uns['CM_scope_reports_json']=json.dumps(CM_reports)
-    uns['CM_node_membership_json']=json.dumps(CM_memberships)
+    uns['CM_node_membership_json']=json.dumps(CM_memberships,allow_nan=False)
     uns.update(source_order=np.asarray([s.record['dataset'] for s in sources],dtype=str),
                feature_identity_diagnostics=diagnostics,raw_counts_layer='counts',
                chosen_count_formula='layers/counts - layers/ambient_removed_counts',
@@ -192,4 +201,5 @@ if __name__=='__main__':
     for key in ['contract','run','scratch']:p.add_argument('--'+key,type=Path,required=True)
     p.add_argument('--quota-group',required=True)
     p.add_argument('--CM-discovery-attempt',default='discovery_v1')
+    p.add_argument('--CM-discovery-index',type=Path)
     pack(p.parse_args())

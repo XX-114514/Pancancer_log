@@ -71,7 +71,7 @@ write.table(coef(fit),file.path(out,'H_patient_block_private.tsv'),sep='\t',quot
 # network correlations: repeated sampling does not inflate nominal n.
 block_freq<-sapply(blocks,function(b)rowMeans(original[,meta$independent_unit==b,drop=FALSE]))
 residual<-t(block_freq)
-design<-model.matrix(~0+factor(meta_block$dataset))
+design<-if(length(unique(meta_block$dataset))==1L)matrix(1,nrow=nrow(meta_block),ncol=1L)else model.matrix(~0+factor(meta_block$dataset))
 residual<-qr.resid(qr(design),residual)
 cor_mat<-cor(residual);N<-ncol(cor_mat);df<-nrow(residual)-qr(design)$rank-1L
 if(df<3L)stop('Insufficient source-adjusted network degrees of freedom')
