@@ -1,0 +1,29 @@
+{
+  "version": "Spectra_multiseed_diagnostics_v1",
+  "frozen_UTC": "2026-10-14T01:44:33.011327+00:00",
+  "producer_sha256": "0b0a119fe4356a0a807a89ed8b57249ab5db7eea6ef84711dbf5440ff94c03ab",
+  "Spectra_inventory_sha256": "1fa8f1085c1de491fe228b07612e546e15b112c2195fa6b5f129351833447d96",
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "anchor_seed": 20261014,
+  "scopes": {
+    "global": 146,
+    "T cell": 20,
+    "Macrophage": 7
+  },
+  "top_genes": 50,
+  "min_cosine": 0.9,
+  "min_top50_jaccard": 0.5,
+  "min_source_residual_score_rho": 0.7,
+  "matching": "Hungarian cosine within each frozen scope for all3 seed pairs; cycle consistency required",
+  "score_rule": "Within each permitted major separately; no structural zero-cell inflation; source-residual score rank correlation required for all3 pairs and both majors if shared",
+  "diagnostics": "Descriptive source-only/source-node R2, complexity increment and residual rank associations, each source-major distributions; no cell-level p values or clinical/LR selection",
+  "stability_threshold_status": "Exploratory frozen computational stability rules, not significance or validation",
+  "identity_source_interpretation": "source association contextual, not automatically artifact; source/cancer confounding and original subtype dependence retained",
+  "formal_state_labels": false,
+  "UCell_dictionary_frozen": false,
+  "next": "cNMF complete grid and method comparison before fixed UCell dictionary; all9CM/other lineages/state-DIALOGUE/spatial remain"
+}
