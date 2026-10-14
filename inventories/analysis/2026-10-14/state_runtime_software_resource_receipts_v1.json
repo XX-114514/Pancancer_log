@@ -1,0 +1,98 @@
+{
+  "observed_UTC": "2026-10-14T00:46:55.481746+00:00",
+  "Spectra_repository_commit": "9c079a584ab71ea83e1e0ed471f678d2f2a997a2",
+  "source_files": [
+    {
+      "path": "LICENSE.md",
+      "bytes": 1110,
+      "sha256": "27b23e7c80a0e7f1d4b6342e04b78d47dcfa6c68e7ea2a1eaa4641dda269e4e0"
+    },
+    {
+      "path": "src/Spectra/K_est.py",
+      "bytes": 7367,
+      "sha256": "773fb646741adb850bb35e4b6a7b3bc5ca7ec420c068e6b4a47107b0b22e5700"
+    },
+    {
+      "path": "src/Spectra/Spectra.py",
+      "bytes": 68666,
+      "sha256": "c9fa51e81a0d594102a2c4a6ef364a2ad59d1b84b605d3bda8613eefbb27da66"
+    },
+    {
+      "path": "src/Spectra/Spectra_attn.py",
+      "bytes": 56248,
+      "sha256": "623fba651b5c8cda8f25aa98046bb40e66d948a473f41f1316342ef15a87e20b"
+    },
+    {
+      "path": "src/Spectra/Spectra_gpu.py",
+      "bytes": 48665,
+      "sha256": "ed9614108120f5974c5f0452ab6b2ec2734e3927057fb7e89619c4000dbb95b3"
+    },
+    {
+      "path": "src/Spectra/Spectra_util.py",
+      "bytes": 15200,
+      "sha256": "42cda6900e752aed82d1731e11df623d3cf8133783163c1e3fb8f90b10b0d266"
+    },
+    {
+      "path": "src/Spectra/__init__.py",
+      "bytes": 302,
+      "sha256": "6beb827949b65efa6328cdcb3ff4eaff59f6bb2e5d2ed877a48051bf35288233"
+    },
+    {
+      "path": "src/Spectra/attend.py",
+      "bytes": 4333,
+      "sha256": "6c86b86599a21407784ae853f7833add698a5937b2beb131b4f2fa40ef9e087a"
+    },
+    {
+      "path": "src/Spectra/data/default_gene_sets.json",
+      "bytes": 76894,
+      "sha256": "1a9fef406d4d7c4ec0a14415c231a805b703d58574d1bc6081175bcf3f4357f2"
+    },
+    {
+      "path": "src/Spectra/initialization.py",
+      "bytes": 1743,
+      "sha256": "b928e3a7e66ce5779c3cdee7369a918f51b277f1d84c7746651a1b4d547b282f"
+    },
+    {
+      "path": "src/Spectra/load/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/Spectra/load/default_gene_sets.py",
+      "bytes": 294,
+      "sha256": "a3c30db111e4e8aa4342ef387c833ed7718192da86d760b84f68be45c8a01d50"
+    },
+    {
+      "path": "src/Spectra/load/sample_data.py",
+      "bytes": 288,
+      "sha256": "3aa19b8cde5e845a4e583a937f788fe88f2a664f872297c93892f02f6f9707e7"
+    }
+  ],
+  "pinned_wheels": [
+    {
+      "package": "cnmf",
+      "version": "1.7.0",
+      "filename": "cnmf-1.7.0-py3-none-any.whl",
+      "sha256": "a969fe3a80787c0293bb582eb3724dd3dd941f9403d6a6c5b53d07f2d9a50883",
+      "url": "https://files.pythonhosted.org/packages/d4/f1/38d0ed2f3945c88d7d64b9292f441708c2a3971147e0c2748d5c28b45d5b/cnmf-1.7.0-py3-none-any.whl",
+      "bytes": 25877
+    },
+    {
+      "package": "pyvis",
+      "version": "0.3.2",
+      "filename": "pyvis-0.3.2-py3-none-any.whl",
+      "sha256": "5720c4ca8161dc5d9ab352015723abb7a8bb8fb443edeb07f7a322db34a97555",
+      "url": "https://files.pythonhosted.org/packages/ab/4b/e37e4e5d5ee1179694917b445768bdbfb084f5a59ecd38089d3413d4c70f/pyvis-0.3.2-py3-none-any.whl",
+      "bytes": 756038
+    },
+    {
+      "package": "jsonpickle",
+      "version": "4.1.1",
+      "filename": "jsonpickle-4.1.1-py3-none-any.whl",
+      "sha256": "bb141da6057898aa2438ff268362b126826c812a1721e31cf08a6e142910dc91",
+      "url": "https://files.pythonhosted.org/packages/c1/73/04df8a6fa66d43a9fd45c30f283cc4afff17da671886e451d52af60bdc7e/jsonpickle-4.1.1-py3-none-any.whl",
+      "bytes": 47125
+    }
+  ],
+  "software_only_no_expression_download": true
+}

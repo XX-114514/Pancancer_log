@@ -1,0 +1,10 @@
+{
+  "status": "LAUNCHED_NOT_TERMINAL",
+  "worker_pid": 405202,
+  "observed_UTC": "2026-10-14T00:46:40.964977+00:00",
+  "code_sha256": {
+    "assemble_state_singlecell_inputs_v1.py": "3388aa154720bdbd09947fb3cea393ba3df3ee62fc47d6012690a74e6614c96a",
+    "state_input_worker_v1.py": "6041ac4a7a2e29ddbed301587522e739914a4748719647a309e59fe81f41696d",
+    "state_input_plan_v1.json": "0bc83e95f059adcc61c8ce42a516b5cdad999b8cb7bda26d50c0e96dbf093429"
+  }
+}

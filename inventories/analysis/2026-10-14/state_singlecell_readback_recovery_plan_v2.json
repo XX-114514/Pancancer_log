@@ -1,0 +1,27 @@
+{
+  "schema": "state_singlecell_readback_recovery_plan_v2",
+  "created_UTC": "2026-10-14T00:54:34.467285+00:00",
+  "created_UTC8": "2026-10-14T08:54:34.467285+08:00",
+  "auditor_sha256": "cdfd0410492d43d250ded54df7832a930074b0588ec64aa23bfdb645f007beed",
+  "question": "Independently audit all retained native H5ADs after v1 final summary confused212 libraries with424 sample-major units",
+  "parent_producer_sha256": "3388aa154720bdbd09947fb3cea393ba3df3ee62fc47d6012690a74e6614c96a",
+  "parent_plan_sha256": "0bc83e95f059adcc61c8ce42a516b5cdad999b8cb7bda26d50c0e96dbf093429",
+  "scope": {
+    "cells": 240533,
+    "libraries": 212,
+    "sample_major_units": 424,
+    "sample_node_units": 1832,
+    "training_cells": 12000,
+    "common_genes": 16625
+  },
+  "checks": [
+    "Real failed parentterminal/worker and child absent; preserve all v1 source and training files",
+    "All240533 raw source rows directly compared to fresh canonical CSR in separate512cell reader",
+    "Exact full cell IDs/global positions/units/original identity/blocks/native gene axes/fullRNA/nGenes",
+    "Independent per-unit loops recompute all fullgene positive/log aggregates against accepted old caches",
+    "All saved training rows/counts exactly equal source native common features; no heldout cells and<=1500/source-major",
+    "Write new v2 audit/accepted file-pointer inventory; no overwrite, recomputation or copying of retained matrices"
+  ],
+  "state_model_trained": false,
+  "status": "PREDECLARED_RECOVERY_AUDIT_NOT_STARTED"
+}
