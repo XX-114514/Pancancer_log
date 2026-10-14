@@ -35,12 +35,38 @@ def native_cnv(args):
         source_obs=obs.loc[obs.dataset.astype(str).eq(source.record['dataset'])]
         expected=source.record['dataset']+'::'+source.obs.index[source.rows].astype(str)
         if not np.array_equal(source_obs.index.astype(str),expected):raise ValueError('CNV raw-row identity mismatch')
+        symbols=np.asarray(source.symbols,dtype=str)
+        indexed=pd.Index(symbols).isin(coords.gene_symbol)
+        coordinate_set=set(coords.gene_symbol.tolist())
+        direct=np.fromiter((g in coordinate_set for g in symbols),dtype=bool,count=len(symbols))
+        if not np.array_equal(indexed,direct):raise ValueError('Coordinate membership semantics differ')
+        keep=(~pd.Index(symbols).duplicated(keep=False))&indexed
         for library,positions in source_obs.groupby('library_id',observed=True,sort=False).indices.items():
             assigned=library_number%args.shard_count==args.shard_index;library_number+=1
             if not assigned:continue
             positions=np.asarray(positions);frame=source_obs.iloc[positions].copy()
             token=source.record['dataset']+'_'+hashlib.sha256(str(library).encode()).hexdigest()[:16]
             out=args.scratch/('CNV_'+args.attempt_version)/token;out.mkdir(parents=True,exist_ok=False,mode=0o700)
+            if args.reuse_attempt_version:
+                old=args.scratch/('CNV_'+args.reuse_attempt_version)/token
+                method_path=old/'method_summary_private.json';cells_path=old/'cell_CNV_results_private.tsv.gz'
+                if method_path.exists() and cells_path.exists():
+                    old_method=json.loads(method_path.read_text())
+                    accepted=old_method['status']=='success' and old_method.get('integer_counts_preserved') and old_method.get('all_expression_entries_independently_checked') and old_method.get('normalization_max_absolute_error',1.)<=1e-6 and old_method.get('CNV_expression')=='sample_native_raw_counts_log1p_CP10K_full_native_denominator'
+                    if accepted:
+                        result=pd.read_csv(cells_path,sep='\t',index_col=0,keep_default_na=False)
+                        if not result.index.equals(frame.index) or not np.array_equal(result.sampleID.astype(str),frame.sampleID.astype(str)):raise ValueError('Completed correct-expression reuse mapping differs')
+                        def truth(v):return v.astype(str).str.lower().isin(['true','1'])
+                        row=dict(dataset=source.record['dataset'],library_token=token,status='success',n_cells=len(result),
+                            n_candidates=int(truth(result.tumor_lineage_candidate).sum()),n_references=int(truth(result.tumor_reference_cell).sum()),
+                            n_evaluable=int(truth(result.cnv_evaluable).sum()),n_CNV_supported_malignant=int(result.malignant_status.eq('CNV_supported_malignant').sum()),detail='completed_correct_log_expression_reused')
+                        save_json_new(out/'reused_correct_CNV_private.json',dict(original_result=str(cells_path),
+                            original_result_sha256=hashlib.sha256(cells_path.read_bytes()).hexdigest(),original_method_sha256=hashlib.sha256(method_path.read_bytes()).hexdigest(),
+                            original_core_patch_sha256=hashlib.sha256((args.run/'manifests/CNV_logspace_core_patch_public.json').read_bytes()).hexdigest(),
+                            native_gene_membership_independently_equal=True,cell_and_original_library_IDs_exact=True))
+                        summary_rows.append(row);output.append(result)
+                        print(json.dumps({k:v for k,v in row.items() if k not in ['library_token','detail']}),flush=True)
+                        continue
             result=pd.DataFrame(index=frame.index)
             result['sampleID']=frame.sampleID.astype(str)
             result['malignant_status']='not_evaluated'
@@ -73,8 +99,6 @@ def native_cnv(args):
                     total=np.asarray(counts.sum(axis=1)).ravel().astype(np.float64)
                     if not np.isfinite(total).all() or (total<=0).any():raise ValueError('Invalid native library RNA denominators')
                     result['CNV_native_total_counts']=total
-                    symbols=np.asarray(source.symbols,dtype=str)
-                    keep=(~pd.Index(symbols).duplicated(keep=False))&np.isin(symbols,coords.gene_symbol)
                     if keep.sum()<1000:raise ValueError('Insufficient unambiguous autosomal gene coordinate coverage')
                     local=ad.AnnData(sparse.csr_matrix(counts[:,keep],dtype=np.int32),
                                      obs=frame[['major','subcluster']].copy(),var=pd.DataFrame(index=pd.Index(symbols[keep],name='gene_symbol')))
@@ -176,6 +200,7 @@ if __name__=='__main__':
     p.add_argument('--corrected-core',type=Path,required=True)
     p.add_argument('--attempt-version',default='logspace_v1')
     p.add_argument('--shard-index',type=int,default=0);p.add_argument('--shard-count',type=int,default=1)
+    p.add_argument('--reuse-attempt-version')
     args=p.parse_args()
     if args.shard_count<1 or not 0<=args.shard_index<args.shard_count:raise ValueError('Invalid original-library shard')
     native_cnv(args)

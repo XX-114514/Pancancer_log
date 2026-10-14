@@ -251,3 +251,11 @@
 - 原矩阵整合/270群及15CM保留；旧raw整数直接推断继续隔离，不能把其历史method success视为本版本验收。当前新版本仅4/400库完成，最终Zarr仍未发布。
 - 首4真实core profile约32.6—35.7秒（infercnv14—16秒、首次numba compile约9.5秒）；每库包围计时235—263秒，CPU主要在core外。进一步独立基因坐标membership对照np.isin与Index.isin并检查全部旗标exact，尚待结果；没有据猜测停止正确版本。
 - 31cc963普通push及独立HTTPS同SHA通过。临时签名连接采用原认证/代理参数且不携带4060 RemoteForward，原SSH配置及已有端口未修改；仅本用户Unix socket，私钥不复制。
+
+## 2026-10-14 03:40—03:44 UTC / 11:40—11:44 UTC+8：真实CPU瓶颈定位并等价恢复
+
+- 03:40:20 UTC坐标membership实测终态：35,326原生symbol对53,783坐标，np.isin（Unicode×object）209.178秒；Index.isin0.0139秒，全部flag exact。该core外步骤解释每库约250秒，而core profile仅约33秒；没有通过缓存/缩小数据/改变阈值解决。
+- 每源预计算唯一坐标mask，Index与独立Python set全gene一致；保留相同重复symbol排除与全部基因/细胞。新logspace_v2保持纠正后的完整core SHA一致、raw counts及log变换/候选/参考/阈值不变。
+- 控制停止仅自己原logspace_v1隔离进程组153444，已16原库正确CNV success全部保留。新版本逐cellID+sampleID、全部表达检查/原counts保留/误差门槛严格复用这16个成功结果，并保存原结果/方法文件SHA；未完成库重新执行，旧整数直接输入CNV仍不复用。
+- 新版本4shard分配原库不变，复用与新结果共同按全部2,670,057 IDs、400库精确合并。0临床金标准/独立验证声明，仍需最终Zarr全行及复制读回验收。语法PASS，真实新快照尚待启动/验证。
+- dc78db8首批正确输入验收记录普通push成功，远端范围含本任务一提交、4匿名文件；独立核验随下一节点。

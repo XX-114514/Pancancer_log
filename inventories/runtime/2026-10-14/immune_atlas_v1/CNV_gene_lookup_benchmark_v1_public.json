@@ -1,0 +1,9 @@
+{
+  "observed_utc": "2026-10-14T03:40:20.466562+00:00",
+  "n_symbols": 35326,
+  "n_coordinates": 53783,
+  "numpy_isin_seconds": 209.17820060485974,
+  "index_isin_seconds": 0.013904253020882607,
+  "all_gene_membership_flags_exact": true,
+  "no_counts_or_predictions_changed": true
+}
