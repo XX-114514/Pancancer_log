@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETE_ALL173_DIAGNOSTICS_NOT_STATE_ACCEPTANCE",
+  "started_UTC": "2026-10-14T01:45:29.184837+00:00",
+  "finished_UTC": "2026-10-14T01:45:37.659274+00:00",
+  "producer_sha256": "0b0a119fe4356a0a807a89ed8b57249ab5db7eea6ef84711dbf5440ff94c03ab",
+  "plan_sha256": "8deb41247cd6bec21cfa1c6f4d75c2c8dcc3464fbfe27848afb5b2e8b9ca6aea",
+  "input_inventory_sha256": "1fa8f1085c1de491fe228b07612e546e15b112c2195fa6b5f129351833447d96",
+  "cells": 12000,
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "candidates": 173,
+  "pairwise_matches": 519,
+  "score_comparisons": 957,
+  "stable_count": 8,
+  "cycle_consistent_count": 156,
+  "complexity_flag_count": 2,
+  "stable_by_scope": {
+    "global": 1,
+    "T cell": 5,
+    "Macrophage": 2
+  },
+  "formal_state_labels": false,
+  "UCell_complete": false,
+  "source_is_not_artifact_by_definition": true,
+  "cell_level_p_values_used": false,
+  "output_sha256": {
+    "pairwise_factor_matching.tsv": "5b6ba22ef9484abd58151d8e14e499b8410dacbc482ddb16bff882a1a9ece3be",
+    "pairwise_score_reproducibility.tsv": "69cb811404a8ba1261efc774a00da7121fb1f1311dcbf52a5e2010ae25f5e363",
+    "source_identity_complexity_diagnostics.tsv": "7b591a556d364238d442d126ad69345b9f598b71048c898ccddb507be4a9fad2",
+    "within_source_major_distributions.tsv": "9e4171d026cba24178690f189113eaababf8da43c09a084720d25abbd7d13174",
+    "all173_candidate_diagnostics.tsv": "1ef4e6092429257e7744054dd529512b357b95c9e4af0c52d8576165a3e5e446",
+    "independent_scalar_checks.json": "0b663193190611aac3db8c159e68023a458fae289d78aa19b25c931a60f392e4"
+  }
+}

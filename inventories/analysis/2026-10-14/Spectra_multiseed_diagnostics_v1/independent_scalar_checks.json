@@ -1,0 +1,30 @@
+[
+  {
+    "check": "scalar_cosine",
+    "factor_a": 0,
+    "factor_b": 0,
+    "reported": 0.9472496509552002,
+    "independent": 0.9472496642724283,
+    "pass_check": true
+  },
+  {
+    "check": "scalar_cosine",
+    "factor_a": 8,
+    "factor_b": 85,
+    "reported": 3.6627235999731056e-07,
+    "independent": 3.662723630623056e-07,
+    "pass_check": true
+  },
+  {
+    "check": "scalar_cosine",
+    "factor_a": 169,
+    "factor_b": 169,
+    "reported": 0.9999468326568604,
+    "independent": 0.9999469695868325,
+    "pass_check": true
+  },
+  {
+    "check": "positive_negative_constant_rank",
+    "pass_check": true
+  }
+]
