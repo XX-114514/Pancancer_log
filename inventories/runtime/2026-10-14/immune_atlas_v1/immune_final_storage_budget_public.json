@@ -1,0 +1,8 @@
+{
+  "observed_utc": "2026-10-14T05:03:16.553106+00:00",
+  "actual_candidate_allocated_bytes": 29816090624,
+  "final_effective_free_bytes": 544209276928,
+  "reserve_bytes": 500000000000,
+  "additional_copy_allowance_bytes": 1000000000,
+  "fits": true
+}
