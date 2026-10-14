@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Hematopoietic cell",
+  "block": "B_mast_hematopoietic",
+  "observed_UTC": "2026-10-14T07:32:46.179399+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "f0da1a5170ea67263fcb880cc548e8caef6ff1e44d764e50cd08f67f7f8c1f4f",
+  "Spectra_inventory_sha256": "49cb40c6a18b899273e0c0bbe04a72534fc61178873286c2c0ba2e53f4f92205",
+  "pairs": 6795,
+  "permitted_Spectra_factors": 151,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "9e61af4787793146d28fa1c311e129f0c351fcace85967a02ca50ee89d5cc812",
+    "scalar_score_checks.tsv": "3de556fe0c9a45f79ecf58c6c581c580058aca003487442475ccdb4c82fb64c7"
+  }
+}

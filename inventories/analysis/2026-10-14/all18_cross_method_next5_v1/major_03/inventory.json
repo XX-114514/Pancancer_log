@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Epithelial cell",
+  "block": "epithelial_melanocytic",
+  "observed_UTC": "2026-10-14T07:22:13.224846+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "5d6c7d456bbe6b5ec200796edc28d01a79e4d653ddb085a0d2d18f0a814797d5",
+  "Spectra_inventory_sha256": "076707d373ce22a80699fe1b085aa37cdb68dcb9113b86f5f822f13b6af83729",
+  "pairs": 6750,
+  "permitted_Spectra_factors": 150,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "cb26f6b7c451f1817ad496d4bed13ceaa8e8f76aaff43ad5db61d095f2b231d7",
+    "scalar_score_checks.tsv": "e1b3fe00ca87711b5156240f660a92976ece935913a46d54dd038b776cac55f9"
+  }
+}

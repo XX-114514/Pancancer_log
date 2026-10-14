@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Glial cell",
+  "block": "glial",
+  "observed_UTC": "2026-10-14T07:31:59.905891+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "141e832d0cbb451ac535a94cd6092ef565155397657d2896659ebdb9ffa883d8",
+  "Spectra_inventory_sha256": "c6b11260b2d28b82c72a5d80dd0620799ea108486f99de0332d3c7a36a4f8b7d",
+  "pairs": 6930,
+  "permitted_Spectra_factors": 154,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "239a0589feb4901255a1759843a36a7d29b8f596bb639d3bf9018f1aabe7d2f1",
+    "scalar_score_checks.tsv": "a0a9b09af19a28b1891fdc5d0a80459e48dcf8bdfdbe9fa6dd5fadbca325e6b2"
+  }
+}

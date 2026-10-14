@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Lymphoid cell",
+  "block": "lymphoid_T",
+  "observed_UTC": "2026-10-14T07:48:28.398509+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "437238db061a363917ddbcd4c9edea5e9b63b171a5b369e4abcf3932fc22e313",
+  "Spectra_inventory_sha256": "3440a2feea5f83c7238d12940cca4bd7d5957557bac9750c7d280979242ab3e1",
+  "pairs": 7515,
+  "permitted_Spectra_factors": 167,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "45cd4d3b24196ef3fd6451ebc3fea57acdc158dc349cadd50324f6f8f7933d32",
+    "scalar_score_checks.tsv": "9c26e232849e3aa0ce03b3952f0f1557ecbc37af7fde59109e037d79f0846e78"
+  }
+}

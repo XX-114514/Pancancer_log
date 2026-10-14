@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Macrophage",
+  "block": "myeloid",
+  "observed_UTC": "2026-10-14T08:06:45.347955+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "d2a053295152bf9e720a7ea33361c074816e1a6691cce90c422f7c860775cfe9",
+  "Spectra_inventory_sha256": "643733335493792c6b97618acec52b9bb3084cb9e5087b526315575439a97010",
+  "pairs": 6885,
+  "permitted_Spectra_factors": 153,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "7ac616378eec37c8dbd2a87703ae854d84a389f138e4d8159ca17c30e9c6b012",
+    "scalar_score_checks.tsv": "16a2b5232687d681bd841085bdf120174f6e7c27be21131da07842cc05f2d524"
+  }
+}
