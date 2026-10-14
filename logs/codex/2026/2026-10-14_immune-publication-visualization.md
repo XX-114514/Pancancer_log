@@ -19,3 +19,18 @@
 18major含未决与边界、fine候选未晋升；单方法CNV与未评估分别画；CM是source-adjusted组成共变，独立临床/旧9CM复现未冻结。成品缺标准mito/nGene全量字段，不能用0填补；可画真实RNA分母和纠正/排除来源。所有图逐页视检、PNG尺寸/矢量文字/数据映射验收后才交付。实现与真实绘制待，失败历史另版保留。
 
 建议commit：Build complete publication figure suite for audited immune atlas。
+
+## 2026-10-14T06:06:38.959422+00:00 / 2026-10-14T14:06:38.959422+08:00 实际全图绘制启动
+
+- 06:04:46 UTC新版本driver29631启动，producer SHA764ab95cf956b877e13cec0865ef36094352b59c9877ecfbcc811a9c77714d74，代码a257a65，源release SHA2d4c4a43f981c3265b85064ba74de3c9d99338c2f64a4ab0f4ff74642c96daa6。有效余量514.26GB，通过500GB预留+1GB图/复制预算；BLAS4。
+- 已核对全量统计270×49563及最终节点/gene行列顺序；真实producer还会验证269个有效命名marker数值与原目录、全数据细胞数/分群计数。分群编号注释用leader lines排开拥挤标签，点坐标不变。
+- 数值/字体/尺寸/矢量文字/600dpi图片门槛后仍必须逐页视检，当前绘制运行中，不宣称图稿已完成。
+- 首次Git普通push因临时签名publickey被拒，远端agent续期7200秒后继续原目标同步，未复制私钥或改写history。
+
+## 2026-10-14T06:17:20.906062+00:00 / 2026-10-14T14:17:20.906062+08:00 首轮43图完成与真实视检修正
+
+- v1实际06:09:14 UTC exit0，共43图集（6主+37补充）、每图PDF/SVG/600dpiPNG。269命名marker与充分统计核验、字体/图幅/文件结构通过；这不替代视觉审查。
+- 6主图逐张取回视检：Fig03部分编号推到图边，原因Matplotlib lazy autoscale在坐标变换前尚未落定；若干细图及state末端色标字裁切，CM网络标签重叠且高K W行需足够行高。保留全部v1。
+- v2仅修视图：坐标变换先落实轴范围；独立footer图例/色标右侧留白；T/B/Myeloid/NK增加预设多基因亚型证据；网络用编号与leader lines，并增颜色图例；CM错落版面+K>4各top3并集<=36可读行，完整W不改。所有新绘制text bbox须在画布内，否则拒绝。
+- 6未受影响图与CNV两汇总表逐文件SHA精确复用；37图重新绘制，新figures_v2目录，不改归档/注释/CM方法或阈值。Python语法PASS，真实v2待。
+- a257a65初次/续期后push仍publickey拒绝，证实旧Unix签名桥Connection refused；新临时桥与远端公开指纹一致，普通push成功、独立HTTPS同SHA确认。原代理端口/配置不改。

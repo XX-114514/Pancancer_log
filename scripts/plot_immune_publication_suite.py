@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Read-only manuscript atlas figures; all-cell summaries and explicit display samples."""
-import argparse, gc, hashlib, html, json, os, platform, traceback
+import argparse, gc, hashlib, html, json, os, platform, shutil, traceback
 from datetime import datetime, timezone
 from pathlib import Path
 import matplotlib
@@ -37,6 +37,15 @@ PANELS={'T':['CD3D','CD3E','TRAC'],'NK':['GNLY','KLRD1','NKG7'],
  'Glial':['GFAP','AQP4','SLC1A3'],'Neuron':['SNAP25','SYT1','RBFOX3'],
  'Oligodendrocyte':['MBP','PLP1','MOG'],'Melanocytic':['PMEL','MLANA','MITF'],
  'T_NK_boundary':['CD3D','TRAC','GNLY'],'Unresolved':['EPCAM','LYZ','CD3D']}
+DETAIL_PANELS={
+ 'T':['CD3D','CD3E','TRAC','CD4','CD8A','CD8B','TCF7','CCR7','IL7R','LEF1',
+      'FOXP3','IL2RA','CTLA4','GZMK','GZMB','PRF1','PDCD1','TOX','HAVCR2','LAG3',
+      'IFIT1','ISG15','MKI67','TOP2A'],
+ 'B':['MS4A1','CD79A','CD79B','CD37','CD74','HLA-DRA','MZB1','JCHAIN','CD3D','TRAC','LST1','GNLY'],
+ 'Myeloid':['LYZ','LST1','CSF1R','CD14','FCGR3A','S100A8','S100A9','C1QA','C1QB',
+            'C1QC','APOE','TREM2','SPP1','CD68','CD163','IL1B','HLA-DRA','FCER1A',
+            'CD1C','CLEC9A','CST3','TCF4','LILRA4'],
+ 'NK':['GNLY','NKG7','KLRD1','FCGR3A','NCAM1','XCL1','XCL2','KLRB1','CD3D','TRAC']}
 
 def now():return datetime.now(timezone.utc).isoformat()
 def sha(p):
@@ -126,6 +135,13 @@ class Suite:
         fig.canvas.draw()
         texts=[t for t in fig.findobj(matplotlib.text.Text) if t.get_visible() and t.get_text()]
         assert all(5<=t.get_fontsize()<=8.1 for t in texts)
+        renderer=fig.canvas.get_renderer();bounds=fig.bbox
+        clipped=[]
+        for t in texts:
+            b=t.get_window_extent(renderer)
+            if b.x0<bounds.x0-1 or b.y0<bounds.y0-1 or b.x1>bounds.x1+1 or b.y1>bounds.y1+1:
+                clipped.append(t.get_text())
+        if clipped:raise ValueError('Figure text exceeds canvas: '+repr(clipped))
         for extension in ['pdf','svg','png']:
             path=self.figdir/(key+'.'+extension)
             assert not path.exists()
@@ -166,16 +182,20 @@ class Suite:
     def dots(self,fig,ax,rows,genes,rowlabels,pool=False):
         genes,mean,pct,colour=self.expression(rows,genes,pool)
         yy,xx=np.indices(mean.shape)
-        dots=ax.scatter(xx.ravel(),yy.ravel(),s=(pct*45).ravel(),c=colour.ravel(),cmap='cividis',vmin=0,vmax=1,linewidths=0)
+        width_pt=fig.get_figwidth()*72*ax.get_position().width*.94
+        scale=min(6.7,width_pt/max(len(genes),1)*.82)**2
+        dots=ax.scatter(xx.ravel(),yy.ravel(),s=(pct*scale).ravel(),c=colour.ravel(),cmap='cividis',vmin=0,vmax=1,linewidths=0)
         ax.set_xticks(np.arange(len(genes)));ax.set_xticklabels(genes,rotation=90,fontsize=5.2)
         ax.set_yticks(np.arange(len(rowlabels)));ax.set_yticklabels(rowlabels,fontsize=5.5)
         ax.set_xlim(-.8,len(genes)-.2);ax.set_ylim(len(rowlabels)-.4,-.8)
         ax.set_xlabel('Native marker gene');ax.set_ylabel('')
         cbar=fig.colorbar(dots,ax=ax,fraction=.025,pad=.015);cbar.set_label('Relative log mean CP10K')
         for spine in ax.spines.values():spine.set_visible(False)
-        handles=[ax.scatter([],[],s=p*45,color='#777777',label=str(int(p*100))+'%') for p in [.25,.5,.75,1]]
-        ax.legend(handles=handles,title='Detected / measured cells',ncol=4,frameon=False,
-          loc='upper center',bbox_to_anchor=(.5,-.38),fontsize=5.5,title_fontsize=5.5,columnspacing=.7,handletextpad=.25)
+        handles=[ax.scatter([],[],s=p*scale,color='#777777',label=str(int(p*100))+'%') for p in [.25,.5,.75,1]]
+        position=ax.get_position()
+        fig.legend(handles=handles,title='Detected / measured cells',ncol=4,frameon=False,
+          loc='lower center',bbox_to_anchor=(position.x0+position.width/2,.075 if pool else .025),
+          fontsize=5.5,title_fontsize=5.5,columnspacing=.7,handletextpad=.25)
         return mean,pct,genes
 
     def overview(self):
@@ -194,7 +214,7 @@ class Suite:
     def composition_and_markers(self):
         ct=pd.crosstab(self.obs.dataset,self.obs.major).reindex(index=self.datasets,columns=MAJORS,fill_value=0)
         ct.to_csv(self.out/'tables/study_major_all_cell_counts.tsv',sep='\t')
-        fig,axes=self.figure(155,cols=1,rows=2);fig.subplots_adjust(left=.12,right=.96,bottom=.25,hspace=.75)
+        fig,axes=self.figure(165,cols=1,rows=2);fig.subplots_adjust(left=.12,right=.89,bottom=.25,hspace=.65)
         left=np.zeros(9)
         for major in MAJORS:
             values=ct[major].to_numpy()/ct.sum(axis=1).to_numpy()*100
@@ -205,6 +225,8 @@ class Suite:
         axes[1,0].set_title('Multigene evidence from all-cell native statistics')
         pd.DataFrame(mean,index=MAJORS,columns=genes).to_csv(self.out/'tables/major_marker_mean_CP10K.tsv',sep='\t')
         pd.DataFrame(pct,index=MAJORS,columns=genes).to_csv(self.out/'tables/major_marker_detection_fraction.tsv',sep='\t')
+        fig.legend(handles=[Patch(color=MAJOR_COLORS[m],label=label(m)) for m in MAJORS],ncol=6,
+                   frameon=False,loc='lower center',bbox_to_anchor=(.5,.005),fontsize=5.2)
         self.save(fig,'Fig02_composition_and_identity_evidence','Composition and multigene identity evidence',
           'All archived cells contribute to composition and marker statistics. Dot area is the positive fraction among cells in sources that measured that gene; colour is log1p(mean native chosen-count CP10K), scaled to each gene maximum across displayed rows. Unmeasured genes remain missing. Capture-biased composition is descriptive. Proposals require multigene review; naming markers alone are not definitive identities.',True)
 
@@ -213,7 +235,7 @@ class Suite:
         ids=np.flatnonzero(self.major==major);cap=200000 if major=='T' else 40000
         sample=self.sample(ids,self.node[ids],cap)
         colours={n:self.node_colors[n] for n in cat.subcluster}
-        fig,axes=self.figure(150,cols=2,rows=1);fig.subplots_adjust(left=.08,right=.96,bottom=.29,wspace=.7)
+        fig,axes=self.figure(150,cols=2,rows=1);fig.subplots_adjust(left=.08,right=.88,bottom=.22,wspace=.7)
         self.scatter(axes[0,0],sample,self.node,colours,f'{label(major)} descriptive nodes',False)
         centres=[];numbers=[]
         for row in cat.itertuples():
@@ -222,6 +244,7 @@ class Suite:
                 xy=np.median(self.xy[group],axis=0)
                 centres.append(xy);numbers.append(str(row.number))
         ax=axes[0,0];centres=np.asarray(centres)
+        ax.get_xlim();ax.get_ylim();fig.canvas.draw()
         origin=ax.transAxes.inverted().transform(ax.transData.transform(centres))
         positions=origin.copy();rng=np.random.default_rng(SEED)
         for step in range(250):
@@ -238,7 +261,7 @@ class Suite:
             ax.annotate(number,xy=xy,xycoords='data',xytext=position,textcoords='axes fraction',fontsize=5,
                 ha='center',va='center',bbox=dict(facecolor='white',edgecolor='none',alpha=.8,pad=.2),
                 arrowprops=dict(arrowstyle='-',color='#888888',lw=.4),annotation_clip=True)
-        genes=list(dict.fromkeys(PANELS[major]+cat.marker.tolist()))
+        genes=list(dict.fromkeys(DETAIL_PANELS.get(major,PANELS[major])+cat.marker.tolist()))
         self.dots(fig,axes[0,1],rows,genes,[str(r.number)+' '+r.marker for r in cat.itertuples()])
         axes[0,1].set_title('Own-node marker evidence; all cells')
         self.save(fig,key,f'{label(major)}: descriptive subclusters',
@@ -247,7 +270,7 @@ class Suite:
     def states(self):
         cols=[x for x in self.obs if x.startswith('state_score_')];assert len(cols)==5
         ids=np.flatnonzero(self.major=='T');sample=self.sample(ids,self.ds[ids],200000)
-        fig,axes=self.figure(160,cols=3,rows=2);fig.subplots_adjust(left=.09,right=.96,bottom=.12,wspace=.63,hspace=.6)
+        fig,axes=self.figure(160,cols=3,rows=2);fig.subplots_adjust(left=.09,right=.86,bottom=.17,wspace=.75,hspace=.65)
         for ax,key in zip(axes.flat,cols):
             values=self.obs[key].to_numpy();vmax=float(np.nanquantile(values[ids],.99))
             points=ax.scatter(self.xy[sample,0],self.xy[sample,1],c=values[sample],s=.3,
@@ -304,9 +327,13 @@ class Suite:
         assert list(W.columns)==list(H.index) and np.isfinite(W.to_numpy()).all()
         factor_mass=W.sum(axis=0);wn=W.divide(factor_mass,axis=1)
         chosen=set()
-        for c in wn:chosen.update(wn[c].nlargest(4 if len(wn.columns)>4 else 8).index)
+        for c in wn:chosen.update(wn[c].nlargest(3 if len(wn.columns)>4 else 8).index)
         rows=sorted(chosen,key=lambda n:(str(self.catalog.set_index('subcluster').loc[n,'major']),str(n)))
-        fig,axes=self.figure(165);fig.subplots_adjust(left=.16,right=.95,bottom=.2,wspace=.65,hspace=.65)
+        fig=plt.figure(figsize=(183/25.4,168/25.4))
+        grid=fig.add_gridspec(3,2,left=.16,right=.87,bottom=.12,top=.90,wspace=.75,hspace=.95)
+        axes=np.array([[fig.add_subplot(grid[:2,0]),fig.add_subplot(grid[0,1])],
+                       [fig.add_subplot(grid[2,0]),fig.add_subplot(grid[1:,1])]])
+        for i,ax in enumerate(axes.flat):ax.text(-.12,1.08,chr(97+i),transform=ax.transAxes,fontsize=8,fontweight='bold')
         ax=axes[0,0];im=ax.imshow(wn.loc[rows],aspect='auto',cmap='cividis',vmin=0,vmax=max(float(wn.loc[rows].to_numpy().max()),1e-8))
         ax.set_yticks(range(len(rows)));ax.set_yticklabels([short_node(x) for x in rows],fontsize=5)
         ax.set_xticks(range(len(W.columns)));ax.set_xticklabels(W.columns,rotation=90);ax.set_title('Selected node loadings');fig.colorbar(im,ax=ax,fraction=.04,pad=.02).set_label('W / factor mass')
@@ -329,13 +356,33 @@ class Suite:
             nx.draw_networkx_edges(graph,pos,ax=ax,alpha=.4,width=[float(x['correlation'])*1.5 for _,_,x in graph.edges(data=True)],edge_color='#777777')
             lookup=self.catalog.set_index('subcluster');nodecolors=[MAJOR_COLORS[str(lookup.loc[n,'major'])] for n in graph]
             nx.draw_networkx_nodes(graph,pos,ax=ax,node_size=12,node_color=nodecolors,linewidths=0)
-            names={n:short_node(n) for n in rows if n in graph};nx.draw_networkx_labels(graph,pos,labels=names,font_size=5,font_color='black',ax=ax)
+            names=[n for n in rows if n in graph];ax.get_xlim();ax.get_ylim();fig.canvas.draw()
+            anchors=np.array([pos[n] for n in names])
+            origin=ax.transAxes.inverted().transform(ax.transData.transform(anchors));positions=origin.copy()
+            rng=np.random.default_rng(SEED)
+            for step in range(250):
+                force=np.zeros_like(positions)
+                for i in range(len(positions)):
+                    for j in range(i):
+                        delta=(positions[i]-positions[j])/np.array([.085,.045]);distance=np.linalg.norm(delta)
+                        if distance<1:
+                            direction=delta/max(distance,1e-8) if distance>1e-8 else rng.normal(size=2)
+                            push=direction*(1-distance)*.018;force[i]+=push;force[j]-=push
+                positions=np.clip(positions+force+(origin-positions)*.001,.035,.965)
+            for name,anchor,position in zip(names,anchors,positions):
+                ax.annotate(str(lookup.loc[name,'number']),xy=anchor,xycoords='data',xytext=position,
+                    textcoords='axes fraction',fontsize=5,ha='center',va='center',
+                    bbox=dict(facecolor='white',edgecolor='none',alpha=.8,pad=.15),
+                    arrowprops=dict(arrowstyle='-',color='#888888',lw=.4))
+            majors=sorted({str(lookup.loc[n,'major']) for n in graph})
+            fig.legend(handles=[Patch(color=MAJOR_COLORS[m],label=label(m)) for m in majors],
+                frameon=False,ncol=6,loc='lower center',bbox_to_anchor=(.5,.015),fontsize=5.2)
             ax.text(.02,.02,f'{len(graph)} nodes; {len(edges)} edges',transform=ax.transAxes,fontsize=5.5)
         else:ax.text(.5,.5,'No supported network\nNMF factors retained',ha='center',va='center',transform=ax.transAxes,fontsize=7)
         ax.set_axis_off()
         fig.suptitle(scope.replace('_',' ')+f" | K={result['selected_rank']}; supported member modules={result['n_modules_with_network_members']}",fontsize=7,y=.995)
         self.save(fig,key,f'CM scope: {scope}',
-          f"Actual saved {scope} nsNMF, {result['n_nodes']} nodes, rank {result['selected_rank']}, {result['n_modules_with_network_members']} factors with supported network members. Rows are the union of top loading nodes per factor (four per factor for K>4, eight otherwise); all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",main)
+          f"Actual saved {scope} nsNMF, {result['n_nodes']} nodes, rank {result['selected_rank']}, {result['n_modules_with_network_members']} factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",main)
 
     def scope_overview(self):
         results=self.cm_index['results'];fig,axes=self.figure(155,cols=2,rows=1);fig.subplots_adjust(left=.28,right=.96,bottom=.15,wspace=.45)
@@ -383,6 +430,7 @@ class Suite:
           f'All nine sources, each with unchanged common UMAP limits. Up to 60,000 major-balanced display points per source, seed {SEED}, preserving rare observed classes; this sampling is not used for composition proportions. Titles map to GEO IDs and the CAR-T CXG source in the cohort registry.')
 
     def finish(self):
+        self.entries.sort(key=lambda e:(not e['main'],e['id']))
         gallery=['<!doctype html><html><head><meta charset="utf-8"><title>Immune atlas manuscript figures</title><style>body{font:16px system-ui;max-width:1100px;margin:32px auto;padding:12px;color:#17212b}img{width:100%;border:1px solid #ddd}article{margin:32px 0;padding:16px;background:#fafafa}a{margin-right:14px}p{line-height:1.55}</style></head><body><h1>Immune atlas: manuscript figure suite</h1><p>Full archive: 2,670,057 cells; nine sources; 400 original libraries. Major/fine identities and single-method CNV remain proposals. New CMs describe composition covariance. See captions for sampling, measurement and scope.</p>']
         for e in self.entries:
             gallery.append('<article><h2>'+html.escape(e['id']+' · '+e['title'])+'</h2><p>'+html.escape(e['caption'])+'</p><p>'+''.join('<a href="figures/'+e['id']+'.'+x+'">'+x.upper()+'</a>' for x in ['pdf','svg','png'])+'</p><img loading="lazy" src="figures/'+e['id']+'.png"></article>')
@@ -415,11 +463,27 @@ class Suite:
 
 
 def main(a):
-    suite=Suite(a);suite.overview();suite.composition_and_markers();suite.lineage('T','Fig03_T_descriptive_subclusters',True)
-    suite.states();suite.CNV()
+    suite=Suite(a)
+    preserved=['Fig01_atlas_and_cohorts','Fig05_CNV_evidence','ED01_CM_scope_coverage',
+               'ED02_PCA_Harmony','ED03_depth_and_provenance','ED04_all_cohort_UMAP']
+    if a.reuse_render:
+        old=json.loads((a.reuse_render/'figure_manifest_public.json').read_text())
+        for e in old['figures']:
+            if e['id'] not in preserved:continue
+            suite.entries.append(e)
+            for ext in ['pdf','svg','png']:
+                src=a.reuse_render/'figures'/(e['id']+'.'+ext);dst=suite.figdir/src.name
+                shutil.copy2(src,dst);assert sha(src)==sha(dst)
+        assert len(suite.entries)==6
+        for name in ['study_CNV_status_all_cells.tsv','study_CNV_library_methods.tsv']:
+            src=a.reuse_render/'tables'/name;dst=suite.out/'tables'/name
+            shutil.copy2(src,dst);assert sha(src)==sha(dst)
+        event('reused_exact_unaffected_figures',n_figures=6)
+    else:suite.overview();suite.CNV();suite.scope_overview();suite.technical();suite.facets()
+    suite.composition_and_markers();suite.lineage('T','Fig03_T_descriptive_subclusters',True)
+    suite.states()
     whole=next(r for r in suite.cm_index['results'] if r['scope']=='whole_TME')
     suite.CM_detail(whole,'Fig06_whole_TME_covariance',True)
-    suite.scope_overview();suite.technical();suite.facets()
     for i,m in enumerate(MAJORS):suite.lineage(m,f'ED_lineage_{i+1:02d}_{m}')
     for i,r in enumerate(suite.cm_index['results']):suite.CM_detail(r,f'ED_CM_{i+1:02d}_{r["scope"]}')
     suite.finish()
@@ -428,6 +492,7 @@ def main(a):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     for k in ['atlas','run','stats','output']:p.add_argument('--'+k,type=Path,required=True)
+    p.add_argument('--reuse-render',type=Path)
     a=p.parse_args()
     try:main(a)
     except Exception:
