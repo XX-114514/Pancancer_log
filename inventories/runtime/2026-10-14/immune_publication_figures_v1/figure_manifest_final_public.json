@@ -1,0 +1,1496 @@
+{
+  "observed_utc": "2026-10-14T06:44:16.782730+00:00",
+  "status": "FIGURES_RENDERED_NUMERICAL_AND_FILE_GATES_PASSED_VISUAL_REVIEW_PENDING",
+  "n_atlas_cells": 2670057,
+  "n_sources": 9,
+  "n_original_libraries": 400,
+  "n_nodes": 270,
+  "n_main_figures": 6,
+  "n_figure_sets": 43,
+  "figures": [
+    {
+      "id": "Fig01_atlas_and_cohorts",
+      "title": "An immune-treatment-associated atlas",
+      "caption": "a, All 2,670,057 archived cells at unchanged atlas UMAP coordinates, shuffled drawing order. b, 199,998 study-balanced display cells, seed 20261014; counts in c and eligibility in d use every cell. Study colours match cohort bars. Endpoint eligibility is source-specific and does not count independent patients. Major labels include proposals, unresolved and boundary categories. UMAP fit used 100,000 landmarks and transformed the remaining 2,570,057 cells.",
+      "main": true,
+      "width_mm": 183,
+      "height_mm": 170.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "Fig02_composition_and_identity_evidence",
+      "title": "Composition and multigene identity evidence",
+      "caption": "All archived cells contribute to composition and marker statistics. Dot area is the positive fraction among cells in sources that measured that gene; colour is log1p(mean native chosen-count CP10K), scaled to each gene maximum across displayed rows. Unmeasured genes remain missing. Capture-biased composition is descriptive. Proposals require multigene review; naming markers alone are not definitive identities.",
+      "main": true,
+      "width_mm": 183,
+      "height_mm": 165.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "Fig03_T_descriptive_subclusters",
+      "title": "T: descriptive subclusters",
+      "caption": "1,571,352 archived T cells and 16 descriptive nodes; 188,453 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": true,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "Fig04_T_continuous_states",
+      "title": "Continuous T-cell state axes",
+      "caption": "Five saved native panel-score axes, 145,326 study-balanced T display cells. Each score colour range runs from zero to its all-T-cell 99th percentile; saturation is visual only. The heatmap uses all 1,571,352 T cells and descriptive node means standardized separately within each axis, clipped visually at \u00b12. Scores are state axes, not mutually exclusive cell types or treatment-response tests.",
+      "main": true,
+      "width_mm": 183,
+      "height_mm": 160.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "Fig05_CNV_evidence",
+      "title": "Malignancy candidates and evaluation scope",
+      "caption": "All-cell atlas CNV states and source-specific cell counts; original-library methods, not cell counts, define panel c. Panel d shows each evaluable library median candidate burden divided by its own reference median (log2), with library median across points as black line; no new threshold or hypothesis test. 52,657 single-method supported malignant candidates, 57,958 uncertain cells. Skips and negative candidates do not establish normal identity.",
+      "main": true,
+      "width_mm": 183,
+      "height_mm": 160.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "Fig06_whole_TME_covariance",
+      "title": "CM scope: whole_TME",
+      "caption": "Actual saved whole_TME nsNMF, 80 nodes, rank 2, 2 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": true,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED01_CM_scope_coverage",
+      "title": "Complete CM discovery scope",
+      "caption": "All 15 completed composition scopes: 10 have supported network-member modules, five do not; another six prepared scopes were insufficient. Selected NMF rank and supported-member module count are distinct. Scopes overlap and their ranks must not be summed as independent modules. No unsupported result is hidden.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 155.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED02_PCA_Harmony",
+      "title": "Batch and biological structure diagnostics",
+      "caption": "Identical 199,998 study-balanced display cells before and after Harmony in the first two component coordinates, not a before/after UMAP. All RNA counts remain unchanged. The original 10,000-cell neighbor diagnostic reported entropy 0.4127\u21920.8077 and marker-proposal purity 0.8223\u21920.8136; these are descriptive indicators, not a ground-truth annotation or proof of absent overcorrection.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 160.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED03_depth_and_provenance",
+      "title": "Available depth and correction provenance",
+      "caption": "Left: per-original-library medians of the complete native chosen-count denominator; points are libraries and black segments are study medians. Right: full-cell correction-adopted and primary-fit exclusion fractions. This is available provenance, not a replacement for source QC; original mitochondrial/nGene fields are not universally available and have not been fabricated. Prior-QC sources without new ambient assessment retain their documented status.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 130.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED04_all_cohort_UMAP",
+      "title": "Every cohort in the shared atlas coordinates",
+      "caption": "All nine sources, each with unchanged common UMAP limits. Up to 60,000 major-balanced display points per source, seed 20261014, preserving rare observed classes; this sampling is not used for composition proportions. Titles map to GEO IDs and the CAR-T CXG source in the cohort registry.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 170.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_01_whole_TME",
+      "title": "CM scope: whole_TME",
+      "caption": "Actual saved whole_TME nsNMF, 80 nodes, rank 2, 2 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_02_immune_enriched",
+      "title": "CM scope: immune_enriched",
+      "caption": "Actual saved immune_enriched nsNMF, 40 nodes, rank 9, 9 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_03_CAR_product",
+      "title": "CM scope: CAR_product",
+      "caption": "Actual saved CAR_product nsNMF, 23 nodes, rank 12, 12 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_04_T_lineage_biopsy",
+      "title": "CM scope: T_lineage_biopsy",
+      "caption": "Actual saved T_lineage_biopsy nsNMF, 16 nodes, rank 12, 12 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_05_whole_TME_primary_tumor",
+      "title": "CM scope: whole_TME_primary_tumor",
+      "caption": "Actual saved whole_TME_primary_tumor nsNMF, 102 nodes, rank 12, 12 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_06_T_whole_TME_primary_tumor",
+      "title": "CM scope: T_whole_TME_primary_tumor",
+      "caption": "Actual saved T_whole_TME_primary_tumor nsNMF, 15 nodes, rank 4, 4 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_07_whole_TME_metastatic_tumor",
+      "title": "CM scope: whole_TME_metastatic_tumor",
+      "caption": "Actual saved whole_TME_metastatic_tumor nsNMF, 21 nodes, rank 2, 0 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_08_immune_enriched_primary_tumor",
+      "title": "CM scope: immune_enriched_primary_tumor",
+      "caption": "Actual saved immune_enriched_primary_tumor nsNMF, 23 nodes, rank 3, 3 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_09_T_immune_enriched_primary_tumor",
+      "title": "CM scope: T_immune_enriched_primary_tumor",
+      "caption": "Actual saved T_immune_enriched_primary_tumor nsNMF, 14 nodes, rank 3, 3 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_10_immune_enriched_blood",
+      "title": "CM scope: immune_enriched_blood",
+      "caption": "Actual saved immune_enriched_blood nsNMF, 27 nodes, rank 5, 0 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_11_T_immune_enriched_blood",
+      "title": "CM scope: T_immune_enriched_blood",
+      "caption": "Actual saved T_immune_enriched_blood nsNMF, 11 nodes, rank 5, 0 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_12_immune_enriched_normal_adjacent",
+      "title": "CM scope: immune_enriched_normal_adjacent",
+      "caption": "Actual saved immune_enriched_normal_adjacent nsNMF, 22 nodes, rank 3, 3 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_13_T_immune_enriched_normal_adjacent",
+      "title": "CM scope: T_immune_enriched_normal_adjacent",
+      "caption": "Actual saved T_immune_enriched_normal_adjacent nsNMF, 12 nodes, rank 3, 2 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_14_immune_enriched_unknown_material",
+      "title": "CM scope: immune_enriched_unknown_material",
+      "caption": "Actual saved immune_enriched_unknown_material nsNMF, 38 nodes, rank 2, 0 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_CM_15_T_immune_enriched_unknown_material",
+      "title": "CM scope: T_immune_enriched_unknown_material",
+      "caption": "Actual saved T_immune_enriched_unknown_material nsNMF, 14 nodes, rank 2, 0 factors with supported network members. Rows are the union of top loading nodes per factor (three per factor for K>4, eight otherwise), at most 36 readable rows; all rows remain in saved W. W is scaled by factor mass; source median H contributions use matching inverse scaling, then within-block fractions. Blocks include explicitly exploratory unverified libraries where applicable. Numeric network labels refer to catalog node numbers; marker names appear in loading rows or the full catalog. Network edges are saved source-adjusted composition correlations after original FDR/specificity/support gates; layout is illustrative, not spatial or ligand-receptor evidence. Rank-boundary/LOSO-unestimable results remain in source reports. No new clinical tests.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 168.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_01_T",
+      "title": "T: descriptive subclusters",
+      "caption": "1,571,352 archived T cells and 16 descriptive nodes; 188,453 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_02_NK",
+      "title": "NK: descriptive subclusters",
+      "caption": "149,285 archived NK cells and 10 descriptive nodes; 40,000 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_03_B",
+      "title": "B: descriptive subclusters",
+      "caption": "247,517 archived B cells and 16 descriptive nodes; 39,596 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_04_Plasma",
+      "title": "Plasma: descriptive subclusters",
+      "caption": "59,898 archived Plasma cells and 31 descriptive nodes; 31,995 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_05_Myeloid",
+      "title": "Myeloid: descriptive subclusters",
+      "caption": "173,846 archived Myeloid cells and 13 descriptive nodes; 36,979 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_06_Neutrophil",
+      "title": "Neutrophil: descriptive subclusters",
+      "caption": "41,960 archived Neutrophil cells and 15 descriptive nodes; 27,927 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_07_Mast",
+      "title": "Mast: descriptive subclusters",
+      "caption": "8,060 archived Mast cells and 10 descriptive nodes; 8,060 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_08_Epithelial",
+      "title": "Epithelial: descriptive subclusters",
+      "caption": "130,111 archived Epithelial cells and 33 descriptive nodes; 36,096 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_09_Fibroblast",
+      "title": "Fibroblast: descriptive subclusters",
+      "caption": "38,476 archived Fibroblast cells and 14 descriptive nodes; 30,150 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_10_Endothelial",
+      "title": "Endothelial: descriptive subclusters",
+      "caption": "16,907 archived Endothelial cells and 15 descriptive nodes; 16,773 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_11_Pericyte_SMC",
+      "title": "Pericyte SMC: descriptive subclusters",
+      "caption": "7,019 archived Pericyte_SMC cells and 10 descriptive nodes; 7,019 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_12_Erythroid",
+      "title": "Erythroid: descriptive subclusters",
+      "caption": "2,586 archived Erythroid cells and 13 descriptive nodes; 2,586 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_13_Glial",
+      "title": "Glial: descriptive subclusters",
+      "caption": "18,675 archived Glial cells and 14 descriptive nodes; 15,690 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_14_Neuron",
+      "title": "Neuron: descriptive subclusters",
+      "caption": "12,458 archived Neuron cells and 24 descriptive nodes; 12,257 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_15_Oligodendrocyte",
+      "title": "Oligodendrocyte: descriptive subclusters",
+      "caption": "8,062 archived Oligodendrocyte cells and 11 descriptive nodes; 8,062 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_16_Melanocytic",
+      "title": "Melanocytic: descriptive subclusters",
+      "caption": "95 archived Melanocytic cells and 1 descriptive nodes; 95 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_17_T_NK_boundary",
+      "title": "T NK boundary: descriptive subclusters",
+      "caption": "12,409 archived T_NK_boundary cells and 9 descriptive nodes; 12,409 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED_lineage_18_Unresolved",
+      "title": "Unresolved: descriptive subclusters",
+      "caption": "171,341 archived Unresolved cells and 15 descriptive nodes; 33,282 node-balanced display points, seed 20261014, in the original atlas UMAP (no new lineage embedding). Numerical labels identify catalog numbers; labels are moved with leader lines for legibility while data coordinates stay unchanged. Complete labels and full-cell expression evidence are in the dotplot. Colour is relative per-gene log mean CP10K; area is detection/measured fraction. Fine candidates remain unpromoted; stress/sex markers are descriptors.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 150.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    }
+  ],
+  "files": [
+    {
+      "name": "ED01_CM_scope_coverage.pdf",
+      "size_bytes": 19674,
+      "sha256": "0ad3df9751489bfda82f804e61617aa7ab8aa6bd5b56b9897931c826b73da884"
+    },
+    {
+      "name": "ED01_CM_scope_coverage.png",
+      "size_bytes": 274138,
+      "sha256": "2e2fb59bd834833e071b6e503d6639326f41809dec49c57ffd430b36a6e40f40",
+      "pixel_size": [
+        4322,
+        3661
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED01_CM_scope_coverage.svg",
+      "size_bytes": 28034,
+      "sha256": "17d3b7d0f06027fa6fbac1de860980e0d1f70e657917074649c3b1fcaaeacbe4"
+    },
+    {
+      "name": "ED02_PCA_Harmony.pdf",
+      "size_bytes": 4752500,
+      "sha256": "4963cc9bffa39d9de9a27e5499601e0d7e37e13b4488e53f67adb9031ba7abda"
+    },
+    {
+      "name": "ED02_PCA_Harmony.png",
+      "size_bytes": 5992253,
+      "sha256": "eeccac5159bc18c89ad56f00d4e6af0d016f0bf50e8bc03a0d0843c1f2c56805",
+      "pixel_size": [
+        4322,
+        3779
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED02_PCA_Harmony.svg",
+      "size_bytes": 7386057,
+      "sha256": "b99d5b1ca6e48d3335f4ae6f47683c214b215de617a7ee9f640509dfe2e73489"
+    },
+    {
+      "name": "ED03_depth_and_provenance.pdf",
+      "size_bytes": 29270,
+      "sha256": "6ca49ba1619b0e863ce662289d58d3fc4262d7365018be251d11c9fb69d1ba6d"
+    },
+    {
+      "name": "ED03_depth_and_provenance.png",
+      "size_bytes": 509026,
+      "sha256": "d50ccbe45d9f7daf119fb7e0e98cf553b3e9d1c2e89c969b520471e95f65dfe9",
+      "pixel_size": [
+        4322,
+        3070
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED03_depth_and_provenance.svg",
+      "size_bytes": 88890,
+      "sha256": "a6a9f8742022e4ccd0b5547da4ad55fadb0c266988a384fdb08cd3273e8e8df3"
+    },
+    {
+      "name": "ED04_all_cohort_UMAP.pdf",
+      "size_bytes": 2560097,
+      "sha256": "f61d958519fd5607ce8eb6807bbda9721ba342ab4b51802227293ab0d89d000c"
+    },
+    {
+      "name": "ED04_all_cohort_UMAP.png",
+      "size_bytes": 3249736,
+      "sha256": "1fe61465edf1f67fe0ef081130f0ae27222d7e7017ee22a42774e27b814f6edf",
+      "pixel_size": [
+        4322,
+        4015
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED04_all_cohort_UMAP.svg",
+      "size_bytes": 3845722,
+      "sha256": "1df3a26d7cecfd1b4615c039de24b9010fb66ad51a6ba09c16c81088c4fb251c"
+    },
+    {
+      "name": "ED_CM_01_whole_TME.pdf",
+      "size_bytes": 41119,
+      "sha256": "4a1849bae4daa209a7f70c2867c904ba716613c51ab04cdec09e4725a6ac9f53"
+    },
+    {
+      "name": "ED_CM_01_whole_TME.png",
+      "size_bytes": 534659,
+      "sha256": "a237289db2bfb93f6aeec95d9342079699e2faf8ed4416718c9365a7f5fa6f4b",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_01_whole_TME.svg",
+      "size_bytes": 83605,
+      "sha256": "f273767678ecbcf4fce0285c2089d7dcc0ee7b4efeb04179f66387d273c407aa"
+    },
+    {
+      "name": "ED_CM_02_immune_enriched.pdf",
+      "size_bytes": 45112,
+      "sha256": "7f502afd5051097cb33283bd3c04a1a79838c866a4a8423bc5f3abc618c65f71"
+    },
+    {
+      "name": "ED_CM_02_immune_enriched.png",
+      "size_bytes": 573776,
+      "sha256": "9f276e2affdacedc846d5f8093ce6c1e3c3741bd3f50e098fae8f7cd180c4ac4",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_02_immune_enriched.svg",
+      "size_bytes": 90096,
+      "sha256": "55bb61f6a702c7fc8d8387300b504e9275d417eeea530ac3d91028771ff71519"
+    },
+    {
+      "name": "ED_CM_03_CAR_product.pdf",
+      "size_bytes": 44276,
+      "sha256": "60a0f690be56d4257e518a14210cc2ddd168c3352d0ca95e34a5115350013c71"
+    },
+    {
+      "name": "ED_CM_03_CAR_product.png",
+      "size_bytes": 571602,
+      "sha256": "f0e0d8bc31e5572e288c7bc7704c2a9fb783b247468357c5b2aa2e9a65fbf468",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_03_CAR_product.svg",
+      "size_bytes": 89744,
+      "sha256": "6e15b57755a0ae32571395bb812485b3e12d1726a9cf072c1861f8840438af5b"
+    },
+    {
+      "name": "ED_CM_04_T_lineage_biopsy.pdf",
+      "size_bytes": 46536,
+      "sha256": "adf64be2c7f0b23ba90feb4f69c34a1e4ff4e26f6a8402c10dd545b204aeb3db"
+    },
+    {
+      "name": "ED_CM_04_T_lineage_biopsy.png",
+      "size_bytes": 539975,
+      "sha256": "4d1d107b2cc522fbe423db8b454668aa0b2ce8bb19201b024f0be3997e48f1c4",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_04_T_lineage_biopsy.svg",
+      "size_bytes": 77649,
+      "sha256": "27627022ee1b0f94f674402a369e594cb75722121cafcdc85013ecd7b50d51ad"
+    },
+    {
+      "name": "ED_CM_05_whole_TME_primary_tumor.pdf",
+      "size_bytes": 50273,
+      "sha256": "7ec0de0210478d368187814e2fc179233315332fddcf26961aa3d15336f9ce48"
+    },
+    {
+      "name": "ED_CM_05_whole_TME_primary_tumor.png",
+      "size_bytes": 686457,
+      "sha256": "d8c935b88be8efc13808ad072fcd0254b16c2ab564f51f5e041f422b63f7a1ea",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_05_whole_TME_primary_tumor.svg",
+      "size_bytes": 114745,
+      "sha256": "439f4bf49921c7af497cbe55db920556e812ddec944fd58406abc0995074c652"
+    },
+    {
+      "name": "ED_CM_06_T_whole_TME_primary_tumor.pdf",
+      "size_bytes": 42264,
+      "sha256": "2be0c8b1407c0295aa253e628a377a168a3db688480cff5eb951f6f161d4f06c"
+    },
+    {
+      "name": "ED_CM_06_T_whole_TME_primary_tumor.png",
+      "size_bytes": 481859,
+      "sha256": "0dd1ea665c5bc04b4fbab7b2bc2279ef6a5b02a4c138022019b778c88f99bbd7",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_06_T_whole_TME_primary_tumor.svg",
+      "size_bytes": 67232,
+      "sha256": "2953386e700cb74228700466b939c8b525fb9cf34643a997b62cf8ab80671ea6"
+    },
+    {
+      "name": "ED_CM_07_whole_TME_metastatic_tumor.pdf",
+      "size_bytes": 35655,
+      "sha256": "a04264d1d6f224b51064fcfaa76ad9ad0a9c629eea9c34ae251dfe3a10d3cb89"
+    },
+    {
+      "name": "ED_CM_07_whole_TME_metastatic_tumor.png",
+      "size_bytes": 391575,
+      "sha256": "82f7ed61226690355dfd3b076aef1396afc57cbdf14f84903a5e5443938779ee",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_07_whole_TME_metastatic_tumor.svg",
+      "size_bytes": 53290,
+      "sha256": "62b7cb56297a75081f2d7968147bfad80dc3231fef1c4a9e6d3cbb217cc3fc5e"
+    },
+    {
+      "name": "ED_CM_08_immune_enriched_primary_tumor.pdf",
+      "size_bytes": 43917,
+      "sha256": "bcea0444f2b8b0db90f6047d541c17a365b611e22ede0b30e88ddf637387c069"
+    },
+    {
+      "name": "ED_CM_08_immune_enriched_primary_tumor.png",
+      "size_bytes": 461337,
+      "sha256": "0098e21d1e84aac86377444ee68a8e01b9a419973960e299822970004eedbf62",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_08_immune_enriched_primary_tumor.svg",
+      "size_bytes": 68260,
+      "sha256": "e9a72a1341b862a3ef1fa7060f9892496310b75a55a9e56fb41a46cf7e62f6b1"
+    },
+    {
+      "name": "ED_CM_09_T_immune_enriched_primary_tumor.pdf",
+      "size_bytes": 42020,
+      "sha256": "240a7fcb4d4cda1074f0d3094252c6c77205cdc8e8333a10e00fd013f0020e37"
+    },
+    {
+      "name": "ED_CM_09_T_immune_enriched_primary_tumor.png",
+      "size_bytes": 411117,
+      "sha256": "11b633e7883afd03775b0df0e0477d1e3971bbc9e4067733c132129df27d0901",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_09_T_immune_enriched_primary_tumor.svg",
+      "size_bytes": 55698,
+      "sha256": "f2e9a075d42a9dcb3ee1e88baf58316924efb5a557aa8466a3d2dfbf9af47cb9"
+    },
+    {
+      "name": "ED_CM_10_immune_enriched_blood.pdf",
+      "size_bytes": 42006,
+      "sha256": "b7f361e92acfe5ad526875f2f41e6ba876345228d6a3aa3b69635b4fd23ae1b3"
+    },
+    {
+      "name": "ED_CM_10_immune_enriched_blood.png",
+      "size_bytes": 408584,
+      "sha256": "47357fcd2ca743a9cc1d5feefb0e8ae3af98425dccf2a37b31970e35628781a7",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_10_immune_enriched_blood.svg",
+      "size_bytes": 53319,
+      "sha256": "4fa69a08238b0a2d5cdbbb2a6f699d4908903655ec68d0817ee2a582774b5037"
+    },
+    {
+      "name": "ED_CM_11_T_immune_enriched_blood.pdf",
+      "size_bytes": 42083,
+      "sha256": "e89809cf1551607c5730f72f807f236e4283824d8f5affac7e9d8c1601b77f0f"
+    },
+    {
+      "name": "ED_CM_11_T_immune_enriched_blood.png",
+      "size_bytes": 411803,
+      "sha256": "3aebacbbf6f70b2f4409366fc2c59d4ee6df55cc0eab9291630d872f222e8c44",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_11_T_immune_enriched_blood.svg",
+      "size_bytes": 54050,
+      "sha256": "56249a3b0821e79f4a81cc89ba26fe004415ca742927d09815681896fe0a7c9c"
+    },
+    {
+      "name": "ED_CM_12_immune_enriched_normal_adjacent.pdf",
+      "size_bytes": 43707,
+      "sha256": "07e8f513f97d9b5b3a5d5ddb3690a6eafd73e096a597d39193f53adef5756804"
+    },
+    {
+      "name": "ED_CM_12_immune_enriched_normal_adjacent.png",
+      "size_bytes": 468725,
+      "sha256": "51af2e9db0e11e84db84cee347f8490833f1cbde9643d39060d71fd347247ba2",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_12_immune_enriched_normal_adjacent.svg",
+      "size_bytes": 67510,
+      "sha256": "ac5929026ae122f8d727732c49a616789031a4a73a82e908c3a12b346dd67d2f"
+    },
+    {
+      "name": "ED_CM_13_T_immune_enriched_normal_adjacent.pdf",
+      "size_bytes": 41607,
+      "sha256": "e10bb8acd6bf57636d8b71f2ca7e0b52e2baded666e6bbac6e029cad55dc7b69"
+    },
+    {
+      "name": "ED_CM_13_T_immune_enriched_normal_adjacent.png",
+      "size_bytes": 421693,
+      "sha256": "adb37bde626a998803a3fb42428c8527cc33279564ec72315ee1531d951e9c81",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_13_T_immune_enriched_normal_adjacent.svg",
+      "size_bytes": 56569,
+      "sha256": "b9b09dd289a3314d349e02367775f0d582f1e146bd9fceaa1f4c24e3d6ed34f4"
+    },
+    {
+      "name": "ED_CM_14_immune_enriched_unknown_material.pdf",
+      "size_bytes": 36369,
+      "sha256": "6d914d922b0e59e74f8ec9dc4d08d5defff40788c85de6bdc91830502dbadec2"
+    },
+    {
+      "name": "ED_CM_14_immune_enriched_unknown_material.png",
+      "size_bytes": 413005,
+      "sha256": "164a0dc1aeb5f4a1053b0eeab9a486d0e8da79ddd0203e5ffe3810be0d0c104f",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_14_immune_enriched_unknown_material.svg",
+      "size_bytes": 55217,
+      "sha256": "5e004ab83702372c7e5f96b518ef1487aa292de8688d116d4098466c9a1d8b44"
+    },
+    {
+      "name": "ED_CM_15_T_immune_enriched_unknown_material.pdf",
+      "size_bytes": 35652,
+      "sha256": "64e586f9d79e29f6eca60287226dfeaa950fed4bccf48c82c90bc2fa9f04424d"
+    },
+    {
+      "name": "ED_CM_15_T_immune_enriched_unknown_material.png",
+      "size_bytes": 396614,
+      "sha256": "7298a6d19f3c942de15f7ff4ed23ada617da8c3dfa5ff9397eacec0eba26219d",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_CM_15_T_immune_enriched_unknown_material.svg",
+      "size_bytes": 52877,
+      "sha256": "334b9cd352481c582274c2467f137f722de2c0525623c73b92f6d0e283c5be1b"
+    },
+    {
+      "name": "ED_lineage_01_T.pdf",
+      "size_bytes": 1111875,
+      "sha256": "91611afb74566a95bd5f12c7ff2d4aa200214fdd2ba8f2733183154920c79f8f"
+    },
+    {
+      "name": "ED_lineage_01_T.png",
+      "size_bytes": 1675194,
+      "sha256": "57a5b818bfcee4cf3b2368374138df00c3d72fafcea7295f9e7e57a3d73349b8",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_01_T.svg",
+      "size_bytes": 1888940,
+      "sha256": "a058676f884499e88c64cd9f152e77110d35934281817d1bec506673d56c3786"
+    },
+    {
+      "name": "ED_lineage_02_NK.pdf",
+      "size_bytes": 573441,
+      "sha256": "e51903f47796935f69ae6d41e548228ca85767bde9dbbb8eda17697e06cffa3c"
+    },
+    {
+      "name": "ED_lineage_02_NK.png",
+      "size_bytes": 1140281,
+      "sha256": "9110df43df2fb16020c818e770937a23916800182c15a432f6399ab76861a742",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_02_NK.svg",
+      "size_bytes": 985786,
+      "sha256": "180c4391edb209da6a9232e8acb54015d93449a3f6fa707d9e851345a0fa568d"
+    },
+    {
+      "name": "ED_lineage_03_B.pdf",
+      "size_bytes": 889576,
+      "sha256": "539859e884141722f6655201fff01d0b0d4d4fb03574c74ef49b7ca68fa6a8ee"
+    },
+    {
+      "name": "ED_lineage_03_B.png",
+      "size_bytes": 1559158,
+      "sha256": "05d2b12818143ae73219b321523d4ea5f0b5202e5523df428213ec4176a31679",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_03_B.svg",
+      "size_bytes": 1601264,
+      "sha256": "f39e991b02f420f2e3f6b7e99df7bb8eb940d24dd5d16466e163163b36d06073"
+    },
+    {
+      "name": "ED_lineage_04_Plasma.pdf",
+      "size_bytes": 495130,
+      "sha256": "afd4b277cb2a1f96264b1bab8ab24e0e37a3131238eab72cadf2ead92d847f3a"
+    },
+    {
+      "name": "ED_lineage_04_Plasma.png",
+      "size_bytes": 1322740,
+      "sha256": "42b5558456ec5c50847147ad3f921646a7fe3fe24b154d50052648f37c591b78",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_04_Plasma.svg",
+      "size_bytes": 1064021,
+      "sha256": "c3e575e7f2f86e38e18dad650cc1a87e5ad98e5125d5b6b1d1adf0b0dff2db87"
+    },
+    {
+      "name": "ED_lineage_05_Myeloid.pdf",
+      "size_bytes": 466318,
+      "sha256": "b2e7f73eaae1c8db659f4c88b744681241276a969da80a9b88a33217fd453e14"
+    },
+    {
+      "name": "ED_lineage_05_Myeloid.png",
+      "size_bytes": 943944,
+      "sha256": "f26c0c426097464912119ce18191e78265e977aed1eef23688cb284b17bd63ca",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_05_Myeloid.svg",
+      "size_bytes": 883495,
+      "sha256": "44a3d5a540e1ed24c8b32e6ea784f0a96313e220f55bb9ef0af512c7bff5db11"
+    },
+    {
+      "name": "ED_lineage_06_Neutrophil.pdf",
+      "size_bytes": 428496,
+      "sha256": "eb23d57107961a425998ef8bbf1f2c38c0119be5122dbc4575a9758335f5cf23"
+    },
+    {
+      "name": "ED_lineage_06_Neutrophil.png",
+      "size_bytes": 914585,
+      "sha256": "605df5322897a827415f4c364490760756bd7ba9ad1c4acd5ca7de4719caab63",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_06_Neutrophil.svg",
+      "size_bytes": 761411,
+      "sha256": "9b92ef4b0165ad400bcda13c5556efd3c02d351be2e6fe01d91ee3acbc1ff74e"
+    },
+    {
+      "name": "ED_lineage_07_Mast.pdf",
+      "size_bytes": 195383,
+      "sha256": "d969ebf217ff907f1298c55ac71c0027c16e6c80a1e47c39ba7e24b8d1c21654"
+    },
+    {
+      "name": "ED_lineage_07_Mast.png",
+      "size_bytes": 569816,
+      "sha256": "7340132ba4b44d4243ca31dd6ce4878de4ba2334060fdcc9aac4d279e1b0a485",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_07_Mast.svg",
+      "size_bytes": 349297,
+      "sha256": "0687fb1e1bd98c01bdbf83b2c0f39e6ca1e891f55a1979e777d0e794928a02ed"
+    },
+    {
+      "name": "ED_lineage_08_Epithelial.pdf",
+      "size_bytes": 629169,
+      "sha256": "1825275cdb3be1e1c406064fd950e25c2d2511f974f4cd23707f021d6f21dd55"
+    },
+    {
+      "name": "ED_lineage_08_Epithelial.png",
+      "size_bytes": 1230540,
+      "sha256": "7c4aaed001cc029f5b1e0ae38be9f7057af247712393bd92fd1cfe263c7caea8",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_08_Epithelial.svg",
+      "size_bytes": 1466040,
+      "sha256": "8a3a7f0335bbdaa214abe86ebc06b89a6a46e990aaf280989edfa5506a17ded8"
+    },
+    {
+      "name": "ED_lineage_09_Fibroblast.pdf",
+      "size_bytes": 364851,
+      "sha256": "67ae6af860dc78f7566dab5ba110e549bfd716e98cdb1835412918d11211fb6d"
+    },
+    {
+      "name": "ED_lineage_09_Fibroblast.png",
+      "size_bytes": 860058,
+      "sha256": "283f47fd460033596557150491567e66209dc6da13cdd951a104836c439fe0b3",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_09_Fibroblast.svg",
+      "size_bytes": 652043,
+      "sha256": "0861e6695e60d07a0c43deba8174e095c43ac527c72ce05e6d584152d8aee8ad"
+    },
+    {
+      "name": "ED_lineage_10_Endothelial.pdf",
+      "size_bytes": 188703,
+      "sha256": "b30db52b9c067bf2f99dc40754db3c99e1ce176fb4c68d40b6deabcb8b921aad"
+    },
+    {
+      "name": "ED_lineage_10_Endothelial.png",
+      "size_bytes": 644939,
+      "sha256": "b3077670394a92264cccebab70dbc4ef997816f0cb464d61173db2f8b12fbed8",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_10_Endothelial.svg",
+      "size_bytes": 378315,
+      "sha256": "9f2c5a510a9f4c08f3655643cb50fa63aca0bbbd59b2e51532d635b50120d950"
+    },
+    {
+      "name": "ED_lineage_11_Pericyte_SMC.pdf",
+      "size_bytes": 203887,
+      "sha256": "50230b8ff2dcb2ca2caacb34698e7646e174f49b0b3d74c53da524242d86b1b2"
+    },
+    {
+      "name": "ED_lineage_11_Pericyte_SMC.png",
+      "size_bytes": 601513,
+      "sha256": "8e14aa074f5cdf521887fbde4eaaf46e3d6ea82bf13bdf4d3a7f704126e4c113",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_11_Pericyte_SMC.svg",
+      "size_bytes": 354924,
+      "sha256": "f99f751ec25a3db361142f3ee994b935c6508fa5073b98fc9fe405a2366e4683"
+    },
+    {
+      "name": "ED_lineage_12_Erythroid.pdf",
+      "size_bytes": 217146,
+      "sha256": "3e64e81d493bcaeb1c73d6ede00c8a791099a107807da4fe4498029e296eec08"
+    },
+    {
+      "name": "ED_lineage_12_Erythroid.png",
+      "size_bytes": 615789,
+      "sha256": "37e8ebbc8a8644fa46c0b7210a831c33b998897b4dab4d17153c3187f9c03fb6",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_12_Erythroid.svg",
+      "size_bytes": 425324,
+      "sha256": "9bdcd3bcabe0a7b17ef2001d12a3a87a69f617d6768221875876435ee6689660"
+    },
+    {
+      "name": "ED_lineage_13_Glial.pdf",
+      "size_bytes": 242531,
+      "sha256": "907786cbe2ae56456ce2b001b3e1c8f9e53cc0b35256e89d20b653cacaaa1c70"
+    },
+    {
+      "name": "ED_lineage_13_Glial.png",
+      "size_bytes": 679433,
+      "sha256": "0519bc77394d3f817a172be77b39075d66bbf3153041d8fa88aa766dbaf37b72",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_13_Glial.svg",
+      "size_bytes": 449587,
+      "sha256": "6ce05d703c5689636d5d80a79d37d882854677e16b472d9b4dff5b255d3c81c1"
+    },
+    {
+      "name": "ED_lineage_14_Neuron.pdf",
+      "size_bytes": 286673,
+      "sha256": "f5a26f62858d6ddcf610324f2c8141a090c0422a8f94334043a402d092763dc9"
+    },
+    {
+      "name": "ED_lineage_14_Neuron.png",
+      "size_bytes": 820956,
+      "sha256": "21e18e34093a0949a6c82a19f1e60c9ca13da00fdc00b07d79aa509ad079dd5e",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_14_Neuron.svg",
+      "size_bytes": 679861,
+      "sha256": "8e422f3dd6dce284fe1927f3826754243a75ca1d5e14b248295f5015acca492b"
+    },
+    {
+      "name": "ED_lineage_15_Oligodendrocyte.pdf",
+      "size_bytes": 142606,
+      "sha256": "8bb840f09f6aee06ac674ca3da9835caedfc7a915359fa0b01a3eddd2fab4d85"
+    },
+    {
+      "name": "ED_lineage_15_Oligodendrocyte.png",
+      "size_bytes": 519920,
+      "sha256": "a2dec962b072764b588b300fe5a6c3c75f240fe76fc70600e9d1c467792377af",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_15_Oligodendrocyte.svg",
+      "size_bytes": 264325,
+      "sha256": "a58650308dd31c370f65b4a9cbce8dfe1e53632c057fbe9741b75ed4430ef7f2"
+    },
+    {
+      "name": "ED_lineage_16_Melanocytic.pdf",
+      "size_bytes": 33220,
+      "sha256": "a78de723ab806efee39b47ceb4211c9eb489bbe3b7703320259b8b3e808e96ec"
+    },
+    {
+      "name": "ED_lineage_16_Melanocytic.png",
+      "size_bytes": 214016,
+      "sha256": "f8ef1b82e905e57812f0e7e4922852847adcbb88b484aa1430486070dc23a174",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_16_Melanocytic.svg",
+      "size_bytes": 53488,
+      "sha256": "49b309047cef95907b6de2674a70badc862750589d707e328c9d86fc8be46a6c"
+    },
+    {
+      "name": "ED_lineage_17_T_NK_boundary.pdf",
+      "size_bytes": 494831,
+      "sha256": "b2ba73e31f9cfc4ac9db273901a729238e7690a537731c65414ffd68106d5ae6"
+    },
+    {
+      "name": "ED_lineage_17_T_NK_boundary.png",
+      "size_bytes": 953380,
+      "sha256": "886ac0c3e8b1db2ffc6cb416b552faeb58ce81b92b0b1a998be81dceccc304b2",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_17_T_NK_boundary.svg",
+      "size_bytes": 820382,
+      "sha256": "0b25af7ce9cf1ce327c5209af8dd03e0b1666d9ff731d03ada8eeb0ffe8a1572"
+    },
+    {
+      "name": "ED_lineage_18_Unresolved.pdf",
+      "size_bytes": 826078,
+      "sha256": "6f1a9dae9b8d7029c4e545c5d9a8589b86523dce9c8e4a2a3e13457fe721ad92"
+    },
+    {
+      "name": "ED_lineage_18_Unresolved.png",
+      "size_bytes": 1655596,
+      "sha256": "28fbb34ca1959249c2a9270d78b22881628f01ccdfe04efdd796340d65142f38",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED_lineage_18_Unresolved.svg",
+      "size_bytes": 1492401,
+      "sha256": "5816612b5fd8287755d608e1769fc45f82852e7b12dcb25e5620a65098ca046c"
+    },
+    {
+      "name": "Fig01_atlas_and_cohorts.pdf",
+      "size_bytes": 2425933,
+      "sha256": "d8700674d5831120cb15873b44b447a06606967c133147d79e6223ebe51c3d51"
+    },
+    {
+      "name": "Fig01_atlas_and_cohorts.png",
+      "size_bytes": 3087286,
+      "sha256": "fab343c28b55202ae81eef29366b36176ac8362aefa64c75e46f3542fb084e72",
+      "pixel_size": [
+        4322,
+        4015
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "Fig01_atlas_and_cohorts.svg",
+      "size_bytes": 3689889,
+      "sha256": "7fb9d41abe8f7ead0be414c3bfc563714dadf968439f9aa1685e0eda07b4e481"
+    },
+    {
+      "name": "Fig02_composition_and_identity_evidence.pdf",
+      "size_bytes": 168555,
+      "sha256": "770901941563e825705a443966c47ad2b37d04afaff4931570b5d27ffb26695e"
+    },
+    {
+      "name": "Fig02_composition_and_identity_evidence.png",
+      "size_bytes": 739504,
+      "sha256": "93ea355178eadbc1974f7a1070c4d1befee64fd0b2890c5efda8ad318de26cca",
+      "pixel_size": [
+        4322,
+        3897
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "Fig02_composition_and_identity_evidence.svg",
+      "size_bytes": 625470,
+      "sha256": "bad02d0a6e55db1d585d7d45a0cad29d03f1c1d48ee8da198e8649afe4911a10"
+    },
+    {
+      "name": "Fig03_T_descriptive_subclusters.pdf",
+      "size_bytes": 1111875,
+      "sha256": "2c12ce22a0df8aed1bd356a1716ad6e130440bd58cccf3d4c17d4c0cb49f97f3"
+    },
+    {
+      "name": "Fig03_T_descriptive_subclusters.png",
+      "size_bytes": 1675194,
+      "sha256": "57a5b818bfcee4cf3b2368374138df00c3d72fafcea7295f9e7e57a3d73349b8",
+      "pixel_size": [
+        4322,
+        3543
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "Fig03_T_descriptive_subclusters.svg",
+      "size_bytes": 1888940,
+      "sha256": "f6ce0c7fdbc266b61fa1acc070d1b231e5d0a09610d58cc4b122fc238949bad9"
+    },
+    {
+      "name": "Fig04_T_continuous_states.pdf",
+      "size_bytes": 1396951,
+      "sha256": "a6ebc88f1aeb3790a94a1a0f8c02a211629c339f096cde45740e8251fefab78d"
+    },
+    {
+      "name": "Fig04_T_continuous_states.png",
+      "size_bytes": 1948836,
+      "sha256": "5cb4d9e7b99b31599884d4258e20fac5e4442c8b71aa9887d532b2d71d89b05c",
+      "pixel_size": [
+        4322,
+        3779
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "Fig04_T_continuous_states.svg",
+      "size_bytes": 2074157,
+      "sha256": "ff2c09c8de9fb9e9317a54237dd820ecdbe6306789c1a75f3b3bc874cf73f340"
+    },
+    {
+      "name": "Fig05_CNV_evidence.pdf",
+      "size_bytes": 1289431,
+      "sha256": "0de33c3f6fd795a07ab7e243bd16b218438ce1360af59d432469c9d017f09964"
+    },
+    {
+      "name": "Fig05_CNV_evidence.png",
+      "size_bytes": 1971634,
+      "sha256": "89c55a61ae7c0d1710b297fa963714011fa2339cd855a1c4f4f7a10390947b55",
+      "pixel_size": [
+        4322,
+        3779
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "Fig05_CNV_evidence.svg",
+      "size_bytes": 1975916,
+      "sha256": "0eedcf8e3b142638bd903dece5af2cca24d2aa169a76b53ea03ea4912a954975"
+    },
+    {
+      "name": "Fig06_whole_TME_covariance.pdf",
+      "size_bytes": 41119,
+      "sha256": "5d0c9eda8f6dc898348b53cfc006850bb7f8ae2324828568479bfbf028c693cf"
+    },
+    {
+      "name": "Fig06_whole_TME_covariance.png",
+      "size_bytes": 534659,
+      "sha256": "a237289db2bfb93f6aeec95d9342079699e2faf8ed4416718c9365a7f5fa6f4b",
+      "pixel_size": [
+        4322,
+        3968
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "Fig06_whole_TME_covariance.svg",
+      "size_bytes": 83605,
+      "sha256": "59ccf6730789618b60ac9f6ec58bf939aaf81c42f32b7a2dae759eeaa19141a2"
+    }
+  ],
+  "full_native_statistics_marker_audit": {
+    "n_checked_named_markers": 269,
+    "maximum_mean_error": 0.0
+  },
+  "excluded_missing_or_ambiguous_requested_markers": [
+    "NA",
+    "RGS5"
+  ],
+  "input_release_sha256": "2d4c4a43f981c3265b85064ba74de3c9d99338c2f64a4ab0f4ff74642c96daa6",
+  "producer_sha256": "db6ce0eb8e023d93a76f7259868ee497fa4d5636d6a3ec1935eae299457d8797",
+  "seed": 20261014,
+  "patient_or_cell_IDs_rendered": false,
+  "original_archive_read_only": true,
+  "no_new_clinical_hypothesis_tests": true,
+  "main_UMAP_all_cells": true,
+  "detail_display_sampling_explicit": true,
+  "vector_text_and_600dpi_raster_verified": true,
+  "visual_review_complete": false,
+  "python_version": "3.10.19",
+  "matplotlib_version": "3.10.8"
+}

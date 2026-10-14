@@ -1,0 +1,54 @@
+{
+  "observed_utc": "2026-10-14T06:47:18.607978+00:00",
+  "status": "COMPLETE_AS_REVIEWABLE_MANUSCRIPT_FIGURE_DRAFT",
+  "n_cells": 2670057,
+  "n_sources": 9,
+  "n_libraries": 400,
+  "n_nodes": 270,
+  "n_main_figures": 6,
+  "n_supplement_figures": 39,
+  "n_figure_sets": 45,
+  "n_PDF_SVG_PNG_files": 135,
+  "figure_SHA_verified_after_transfer": true,
+  "marker_audit": {
+    "n_named_markers_checked": 269,
+    "maximum_mean_error": 0.0
+  },
+  "original_scientific_archive_read_only": true,
+  "clinical_validation_frozen": false,
+  "visual_review": {
+    "contact_sheets_reviewed": 8,
+    "all_45_figures_covered": true,
+    "magnified_files": [
+      "Fig03_T_descriptive_subclusters",
+      "Fig06_whole_TME_covariance",
+      "Fig04_T_continuous_states",
+      "ED05_capture_scope_UMAP"
+    ],
+    "earlier_draft_major_images_reviewed": 6,
+    "final_revisions": [
+      "materialized_axis_limits_before_node_label_transform",
+      "colourbar_canvas_clearance",
+      "numeric_network_labels_and_leader_lines",
+      "high_rank_loading_row_selection_and_row_height",
+      "T_state_title_wrap",
+      "capture_summary_label_wrap"
+    ],
+    "remaining_scope": "Scientific labels remain proposals; dense network can be read with adjacent loading table and PDF zoom; contact sheets are overview-only, not publication exports."
+  },
+  "final_outputs": {
+    "server_version": "figures_v5 + extra_context_v2",
+    "figure_book_pages": 45,
+    "figure_book_sha256": "058d54434fbb2d3a20ed5f9b99406848e4c58dda27d5516cd3fe37f087e59833",
+    "figure_book_bytes": 25531904,
+    "ZIP_sha256": "dc861ab0d0e59ca76bfab2f202f0e3e4794b48fbdc13dd70f2b4d4427593525f"
+  },
+  "limitations": [
+    "Capture-dependent composition is not tissue population prevalence",
+    "Single-method CNV is not malignant ground truth",
+    "CM is composition covariance, not ligand-receptor causal proof",
+    "No new patient-level clinical hypothesis tests",
+    "Broad and fine cell identities still need biological review before frozen publication claims"
+  ],
+  "published_payload": "Code, captions, anonymous aggregate manifests and low-resolution figure previews only; no patient/cell rows or model payloads"
+}

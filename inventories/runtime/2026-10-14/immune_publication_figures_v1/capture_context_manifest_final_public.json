@@ -1,0 +1,99 @@
+{
+  "observed_utc": "2026-10-14T06:44:24.587517+00:00",
+  "status": "FIGURES_RENDERED_NUMERICAL_AND_FILE_GATES_PASSED_VISUAL_REVIEW_PENDING",
+  "n_atlas_cells": 2670057,
+  "n_sources": 9,
+  "n_original_libraries": 400,
+  "n_nodes": 270,
+  "n_main_figures": 0,
+  "n_figure_sets": 2,
+  "figures": [
+    {
+      "id": "ED05_capture_scope_UMAP",
+      "title": "Capture-specific atlas structure",
+      "caption": "Every recorded capture scope in the unchanged atlas UMAP, using up to 60,000 major-balanced display cells per scope, fixed seed20261014. Full scope counts use all 2,670,057 cells. Enriched immune, stimulated lymphocyte, selected nuclei, serial biopsy and infusion-product captures are distinct observation contexts; these facets do not estimate comparable population prevalences.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 170.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    },
+    {
+      "id": "ED06_assay_and_uncertainty",
+      "title": "Technology and annotation uncertainty",
+      "caption": "Recorded assays are retained exactly, including any source-specific or unknown labels. UMAP uses 199,998 study-balanced display points, fixed seed20261014. Assay proportions and unresolved/boundary fractions are full-cell counts. The 171,341 unresolved and 12,409 T/NK-boundary cells remain archived; their labels have not been forced or equated to malignant or normal truth.",
+      "main": false,
+      "width_mm": 183,
+      "height_mm": 165.0,
+      "PNG_dpi": 600,
+      "PDF_editable_text": true,
+      "SVG_editable_text": true
+    }
+  ],
+  "files": [
+    {
+      "name": "ED05_capture_scope_UMAP.pdf",
+      "size_bytes": 2011053,
+      "sha256": "bc9a22b07961b0aac751b1c5bf4fb88c0e68736c1125c3ec97a9caa43b57c7e6"
+    },
+    {
+      "name": "ED05_capture_scope_UMAP.png",
+      "size_bytes": 2659765,
+      "sha256": "8d8089578a6bc05af38441df65d81cad483840db4e4dacded87bb166e7b1b9f6",
+      "pixel_size": [
+        4322,
+        4015
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED05_capture_scope_UMAP.svg",
+      "size_bytes": 3000324,
+      "sha256": "483438f68295e965437863acf48ab2ad7ea999585fd3f9dee0c9498021dec01b"
+    },
+    {
+      "name": "ED06_assay_and_uncertainty.pdf",
+      "size_bytes": 1306769,
+      "sha256": "8021c8e2f27efeeac4064365d9294ee97e6df361bd580f0f1954ecaad2547081"
+    },
+    {
+      "name": "ED06_assay_and_uncertainty.png",
+      "size_bytes": 1996996,
+      "sha256": "eead225b43edb12b7e050974a7f597f07b0b6547a3b712f13b83b958c67f5baf",
+      "pixel_size": [
+        4322,
+        3897
+      ],
+      "DPI": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "ED06_assay_and_uncertainty.svg",
+      "size_bytes": 2004380,
+      "sha256": "506aab89b7a0df2956e89066d9f11508eaea698206aaa15944669ac5a59c5702"
+    }
+  ],
+  "full_native_statistics_marker_audit": {
+    "n_checked_named_markers": 269,
+    "maximum_mean_error": 0.0
+  },
+  "excluded_missing_or_ambiguous_requested_markers": [],
+  "input_release_sha256": "2d4c4a43f981c3265b85064ba74de3c9d99338c2f64a4ab0f4ff74642c96daa6",
+  "producer_sha256": "db6ce0eb8e023d93a76f7259868ee497fa4d5636d6a3ec1935eae299457d8797",
+  "seed": 20261014,
+  "patient_or_cell_IDs_rendered": false,
+  "original_archive_read_only": true,
+  "no_new_clinical_hypothesis_tests": true,
+  "main_UMAP_all_cells": true,
+  "detail_display_sampling_explicit": true,
+  "vector_text_and_600dpi_raster_verified": true,
+  "visual_review_complete": false,
+  "python_version": "3.10.19",
+  "matplotlib_version": "3.10.8"
+}
