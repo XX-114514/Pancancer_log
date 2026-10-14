@@ -1,0 +1,61 @@
+unique_pair_id	endpoint_A	endpoint_B	major_A	major_B	CMs	original_edge_records	source_count_any_both20	primary_composition_potential_contexts	primary_state20_potential_sources	primary_state20_potential_contexts	source_consistency_not_yet_tested	formal_state
+PAIR_f7f84c7334e7	Antibody_secreting_B_cell_MZB1_51	Mural_cell_CALD1_126	B cell	Mural cell	CM08	1	1	0	0	0	True	False
+PAIR_095fe56dbda3	B_cell_CD83_40	Lymphoid_cell_IL7R_66	B cell	Lymphoid cell	CM05	1	12	7	0	0	True	False
+PAIR_63db71947a78	B_cell_CD83_40	Mast_cell_HDC_26	B cell	Mast cell	CM05;CM06	2	28	9	0	0	True	False
+PAIR_4eefec8a3151	B_cell_CD83_40	Mural_cell_COX4I2_61	B cell	Mural cell	CM05	1	8	4	0	0	True	False
+PAIR_f91eafb25dbe	B_cell_CD83_40	Myeloid_FCER1G_65	B cell	Myeloid	CM05	1	13	11	0	0	True	False
+PAIR_88467a49d63e	B_cell_HLA-DRA_24	Mast_cell_TPSAB1_25	B cell	Mast cell	CM02;CM09	2	23	9	0	0	True	False
+PAIR_ca2890bd9701	B_cell_HLA-DRA_24	T_NK_lymphoid_NKG7_20	B cell	T/NK lymphoid	CM02;CM09	2	39	0	1	2	True	False
+PAIR_2b9f63a9507d	B_cell_HLA-DRA_24	T_cell_IL7R_28	B cell	T cell	CM02;CM09	2	41	32	1	3	True	False
+PAIR_f414054629d2	B_cell_MS4A1_19	Regulatory_T_cell_CTLA4_15	B cell	T cell	CM01	1	41	32	1	1	True	False
+PAIR_6652402a4420	Blood_vascular_endothelial_cell_RAMP2_10	Fibroblast_SFRP2_17	Endothelial cell	Fibroblast	CM03	1	38	9	0	0	True	False
+PAIR_d1a6ae9168fe	Blood_vascular_endothelial_cell_RAMP2_10	Macrophage_IFI6_18	Endothelial cell	Macrophage	CM03	1	39	16	1	1	True	False
+PAIR_59a099f2d4a7	Blood_vascular_endothelial_cell_RAMP2_10	Monocyte_TYROBP_37	Endothelial cell	Monocyte	CM03	1	38	0	1	1	True	False
+PAIR_46a3b350e8ab	Blood_vascular_endothelial_cell_RAMP2_10	Mural_cell_CALD1_13	Endothelial cell	Mural cell	CM03	1	33	10	0	0	True	False
+PAIR_8f653cc0561e	Blood_vascular_endothelial_cell_RAMP2_10	Myeloid_FCER1G_63	Endothelial cell	Myeloid	CM03	1	20	9	0	0	True	False
+PAIR_a434fad1aefe	CD8_T_cell_NKG7_9	Macrophage_IFI6_18	T cell	Macrophage	CM01;CM03	2	45	31	2	3	True	False
+PAIR_0bc52ae4496b	CD8_T_cell_NKG7_9	T_NK_lymphoid_NKG7_20	T cell	T/NK lymphoid	CM01;CM03	2	47	0	4	5	True	False
+PAIR_265e52800a51	Endothelial_cell_ACKR1_50	Fibroblast_SFRP2_17	Endothelial cell	Fibroblast	CM03;CM08;CM09	3	30	9	0	0	True	False
+PAIR_472a3603f1fe	Endothelial_cell_ACKR1_50	Macrophage_CD74_39	Endothelial cell	Macrophage	CM08;CM09	2	27	16	0	0	True	False
+PAIR_d76b8d70e990	Endothelial_cell_ACKR1_50	Myeloid_FCER1G_63	Endothelial cell	Myeloid	CM03	1	16	9	0	0	True	False
+PAIR_bbb2da1f7b1c	Endothelial_cell_CA4_54	Macrophage_IFI6_18	Endothelial cell	Macrophage	CM04	1	7	8	0	0	True	False
+PAIR_68fdc541b412	Endothelial_cell_CA4_54	Myeloid_FCER1G_95	Endothelial cell	Myeloid	CM04	1	1	1	0	0	True	False
+PAIR_f1f952883648	Epithelial_cell_KRT18_52	Fibroblast_SFRP2_17	Epithelial cell	Fibroblast	CM04;CM06;CM07;CM08;CM09	5	35	4	3	3	True	False
+PAIR_c83300b5863e	Epithelial_cell_KRT18_52	Macrophage_IFI6_18	Epithelial cell	Macrophage	CM04	1	36	9	3	4	True	False
+PAIR_35a6bafdbf5c	Epithelial_cell_KRT18_52	Mast_cell_TPSAB1_25	Epithelial cell	Mast cell	CM04;CM09	2	23	3	0	0	True	False
+PAIR_612bea85b9ae	Epithelial_cell_KRT18_52	Monocyte_TYROBP_37	Epithelial cell	Monocyte	CM04;CM06;CM07;CM08;CM09	5	36	0	1	2	True	False
+PAIR_dea053bc79ba	Fibroblast_SFRP2_17	Mast_cell_HDC_26	Fibroblast	Mast cell	CM05;CM06	2	24	4	0	0	True	False
+PAIR_87865583e722	Fibroblast_SFRP2_17	Monocyte_TYROBP_37	Fibroblast	Monocyte	CM03;CM04;CM05;CM06;CM07;CM08;CM09	7	41	0	0	0	True	False
+PAIR_ff0000bfb159	Fibroblast_SFRP2_17	Mural_cell_CALD1_13	Fibroblast	Mural cell	CM03;CM06;CM07	3	35	3	1	1	True	False
+PAIR_0be0ec43704d	Fibroblast_SFRP2_17	cDC1_LGALS2_43	Fibroblast	Dendritic cell	CM03;CM05;CM07	3	15	0	0	0	True	False
+PAIR_c3ab9e43fb8f	Lymphoid_cell_CCL5_33	Monocyte_TYROBP_37	Lymphoid cell	Monocyte	CM01;CM02;CM04;CM06;CM07	5	37	0	0	0	True	False
+PAIR_861bff3b49d8	Lymphoid_cell_CCL5_33	Neutrophil_S100A8_35	Lymphoid cell	Neutrophil	CM02;CM06;CM07	3	23	0	0	0	True	False
+PAIR_a26e1f555e66	Lymphoid_cell_IL7R_66	Mural_cell_COX4I2_61	Lymphoid cell	Mural cell	CM05	1	7	2	0	0	True	False
+PAIR_4af6fdceed56	Lymphoid_cell_IL7R_66	Myeloid_FCER1G_65	Lymphoid cell	Myeloid	CM05	1	12	4	0	0	True	False
+PAIR_3f800134ffaa	Macrophage_CD74_39	T_cell_IL7R_28	Macrophage	T cell	CM02;CM09	2	39	31	0	0	True	False
+PAIR_09a41f4fb008	Macrophage_IFI6_18	Monocyte_TYROBP_37	Macrophage	Monocyte	CM01;CM03;CM04	3	44	0	1	2	True	False
+PAIR_5c66b17632bc	Macrophage_IFI6_18	Myeloid_FCER1G_95	Macrophage	Myeloid	CM04	1	1	2	0	0	True	False
+PAIR_32c184f37fc8	Macrophage_IFI6_18	Myeloid_LAMP3_5	Macrophage	Myeloid	CM01	1	23	18	0	0	True	False
+PAIR_532a3ffefcae	Macrophage_IFI6_18	Regulatory_T_cell_CTLA4_15	Macrophage	T cell	CM01	1	45	31	1	2	True	False
+PAIR_96a898bc0749	Macrophage_IFI6_18	T_NK_lymphoid_NKG7_20	Macrophage	T/NK lymphoid	CM01;CM03;CM04	3	44	0	1	2	True	False
+PAIR_0139833aad87	Macrophage_SELENOP_42	cDC1_LGALS2_43	Macrophage	Dendritic cell	CM05;CM07	2	22	2	0	0	True	False
+PAIR_d80038d7ea9c	Mast_cell_HDC_26	Monocyte_TYROBP_37	Mast cell	Monocyte	CM05;CM06	2	29	0	0	0	True	False
+PAIR_9f00b7644a54	Mast_cell_HDC_26	Mural_cell_COX4I2_61	Mast cell	Mural cell	CM05	1	8	1	0	0	True	False
+PAIR_1d33ecc87f34	Mast_cell_HDC_26	T_NK_lymphoid_NKG7_20	Mast cell	T/NK lymphoid	CM05;CM06	2	30	0	0	0	True	False
+PAIR_e249ec0a13b0	Mast_cell_HDC_26	cDC1_LGALS2_43	Mast cell	Dendritic cell	CM05	1	13	0	0	0	True	False
+PAIR_24a9d502c551	Mast_cell_TPSAB1_25	Monocyte_TYROBP_37	Mast cell	Monocyte	CM02;CM04;CM09	3	27	0	0	0	True	False
+PAIR_91bc3a81be42	Mast_cell_TPSAB1_25	Myeloid_FCER1G_95	Mast cell	Myeloid	CM04	1	1	2	0	0	True	False
+PAIR_a3424c94010d	Mast_cell_TPSAB1_25	T_cell_IL7R_28	Mast cell	T cell	CM02;CM04;CM09	3	28	12	0	0	True	False
+PAIR_409d94a6a253	Monocyte_TYROBP_37	Mural_cell_CALD1_13	Monocyte	Mural cell	CM03;CM06;CM07	3	33	0	0	0	True	False
+PAIR_c2bb35e40ada	Monocyte_TYROBP_37	Neutrophil_S100A8_35	Monocyte	Neutrophil	CM02;CM06;CM07	3	29	0	0	0	True	False
+PAIR_3ae74fef7e41	Monocyte_TYROBP_37	T_NK_lymphoid_NKG7_20	Monocyte	T/NK lymphoid	CM01;CM02;CM03;CM04;CM05;CM06;CM07;CM09	8	44	0	1	2	True	False
+PAIR_13214534e510	Monocyte_TYROBP_37	cDC1_LGALS2_43	Monocyte	Dendritic cell	CM03;CM05;CM07	3	23	0	0	0	True	False
+PAIR_1352eb20289e	Monocyte_TYROBP_37	pDC_GZMB_48	Monocyte	Dendritic cell	CM01	1	27	0	0	0	True	False
+PAIR_24bbb1947ee3	Mural_cell_CALD1_126	T_cell_STMN1_23	Mural cell	T cell	CM08	1	1	0	0	0	True	False
+PAIR_773929c864fa	Mural_cell_CALD1_13	Myeloid_FCER1G_63	Mural cell	Myeloid	CM03	1	20	4	0	0	True	False
+PAIR_33ededad16f0	Mural_cell_COX4I2_61	Myeloid_FCER1G_65	Mural cell	Myeloid	CM05	1	12	3	0	0	True	False
+PAIR_feb65c9d2e0b	Myeloid_FCER1G_65	cDC1_LGALS2_43	Myeloid	Dendritic cell	CM05	1	8	2	0	0	True	False
+PAIR_f59b8cdf4322	Myeloid_LAMP3_5	Regulatory_T_cell_CTLA4_15	Myeloid	T cell	CM01	1	24	20	0	0	True	False
+PAIR_1c92ba8f15a0	Myeloid_LAMP3_5	pDC_GZMB_48	Myeloid	Dendritic cell	CM01	1	18	2	0	0	True	False
+PAIR_c5cf0e6627b1	Regulatory_T_cell_CTLA4_15	pDC_GZMB_48	T cell	Dendritic cell	CM01	1	28	4	0	0	True	False
+PAIR_4628237be624	T_NK_lymphoid_NKG7_20	pDC_GZMB_48	T/NK lymphoid	Dendritic cell	CM01	1	28	0	0	0	True	False

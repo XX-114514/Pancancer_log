@@ -1,0 +1,57 @@
+{
+  "status": "VERIFIED_SCOPE_DIAGNOSTICS_AND_PRIVATE_DATA1_RECOVERY_RUNNING",
+  "registered_UTC": "2026-10-14T06:06:00.920403+00:00",
+  "scope": {
+    "original_CM_records": 120,
+    "unique_pairs": 60,
+    "CMs": 9,
+    "libraries": 1290,
+    "sources": 52,
+    "model_discovery_cells": 100766,
+    "majors": 18
+  },
+  "handoff_sha256": "c32bc9430770a38334b7fe75959a83c3b25a0c9e37edf8a1987a03ad520bad9d",
+  "evidence_sha256": {
+    "inventory.json__pilot_dictionary_full_CM_scope_preflight_20261014_v1": "180b3e281d3d1055355518c44bcbbe356e2f8b2959173d610ccf06e6bac6f10b",
+    "independent_audit.json__pilot_dictionary_full_CM_scope_audit_20261014_v1": "03787825a4cb0f09579aca30419dd17f0a046ef35a3ec605bff8e3e5e45595d8",
+    "inventory.json__fixed_CM_edge_state_scope_preflight_20261014_v1": "4671aa09385478a04bf62d4c4741fe73f395a0701d79adfe5fdecbc6e23194f0",
+    "independent_audit.json__fixed_CM_edge_state_scope_audit_20261014_v1": "6df7e2f47d59834e8cd6a847eb659dffc0a36a2da9a2ff4437a826f8619185ab",
+    "inventory.json__lymphoid_T": "3440a2feea5f83c7238d12940cca4bd7d5957557bac9750c7d280979242ab3e1",
+    "independent_audit.json__lymphoid_T": "7b3d782797775171625859dab7865b19e3982291083a6226278d8090a6074fce",
+    "inventory.json__major_00": "571a5246dad7be7622084af7e0cc32ab901a8c9616ab4ea33c2d4a1395917b54",
+    "independent_audit.json__major_00": "d1436831321fdf814b190b55f5d1d4329880fbea7e38a079db91573463094e7e",
+    "recovery_input_inventory.json__state_models_20261014_recovery_v2": "297e856d6643cb5df1e6e982e650e462360f29da7e56ab21f308866921dc4107"
+  },
+  "state_refresh": "indexed 135 directories; conflicts 0 v10_audit PASS_V10_REVIEWED59_IDENTITY_OVERLAY_FULLROW_AUDIT",
+  "jobs": [
+    {
+      "job_id": "all_lineage_spectra_training_20261014_v2",
+      "worker_pid": 423861,
+      "child_pid": 423862,
+      "status": "VERIFIED_LIVE",
+      "started_UTC": "2026-10-14T05:58:48.458417+00:00"
+    },
+    {
+      "job_id": "all_lineage_cnmf_training_20261014_v2",
+      "worker_pid": 423869,
+      "child_pid": 423870,
+      "status": "VERIFIED_LIVE",
+      "started_UTC": "2026-10-14T05:58:49.300014+00:00"
+    }
+  ],
+  "actual_phases": {
+    "all_lineage_spectra_training_20261014_v2": [
+      "{\"block\": \"lymphoid_T\", \"phase\": \"REUSED_SHA_VERIFIED_COMPLETE_V1_BLOCK\"}",
+      "{\"block\": \"myeloid\", \"seed\": 20261014, \"phase\": \"REUSED_SHA_VERIFIED_COMPLETE_V1_SEED\"}",
+      "{\"block\": \"myeloid\", \"seed\": 20261015, \"phase\": \"TRAINING\", \"cells\": 26723, \"features\": 4575, \"L\": {\"global\": 146, \"Macrophage\": 7, \"Monocyte\": 7, \"Myeloid\": 7, \"Dendritic cell\": 5, \"Neutrophil\": 5}, \"started_UTC\": \"2026-10-14T05:59:02.853060+00:00\"}"
+    ],
+    "all_lineage_cnmf_training_20261014_v2": [
+      "{\"major\": \"B cell\", \"phase\": \"REUSED_SHA_VERIFIED_ALL_V1_K_REPEATS_CONSENSUS\"}",
+      "{\"major\": \"Dendritic cell\", \"phase\": \"FACTORIZING\", \"K\": [10, 15, 20], \"repeats\": 100, \"started_UTC\": \"2026-10-14T05:58:55.480767+00:00\"}"
+    ]
+  },
+  "formal_states": false,
+  "all9CM_completed": false,
+  "DIALOGUE_after_states_completed": false,
+  "spatial_after_states_completed": false
+}

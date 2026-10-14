@@ -1,0 +1,114 @@
+{
+  "schema": "all18_identity_aware_Spectra_6block_model_plan_v1_volume_recovery_v2",
+  "draft_UTC": "2026-10-14T04:38:59.325797+00:00",
+  "status": "FROZEN_STORAGE_RECOVERY_SAME_ALL18_PARAMETERS",
+  "producer_sha256": "8d070be0ebb39540ea42e75f8a92658174bed2aebdce6826a35d87d571bbb6f7",
+  "Spectra_commit": "9c079a584ab71ea83e1e0ed471f678d2f2a997a2",
+  "cells": 100766,
+  "majors": 18,
+  "blocks": {
+    "lymphoid_T": [
+      "T cell",
+      "T/NK lymphoid",
+      "Lymphoid cell"
+    ],
+    "myeloid": [
+      "Macrophage",
+      "Monocyte",
+      "Myeloid",
+      "Dendritic cell",
+      "Neutrophil"
+    ],
+    "B_mast_hematopoietic": [
+      "B cell",
+      "Mast cell",
+      "Hematopoietic cell"
+    ],
+    "vascular_stromal": [
+      "Endothelial cell",
+      "Fibroblast",
+      "Mural cell",
+      "Mesenchymal cell"
+    ],
+    "epithelial_melanocytic": [
+      "Epithelial cell",
+      "Melanocytic cell"
+    ],
+    "glial": [
+      "Glial cell"
+    ]
+  },
+  "prior_mapping": {
+    "T cell": [
+      "CD4_T",
+      "CD8_T",
+      "Treg"
+    ],
+    "T/NK lymphoid": [
+      "CD4_T",
+      "CD8_T",
+      "Treg"
+    ],
+    "Lymphoid cell": [
+      "CD4_T",
+      "CD8_T",
+      "Treg"
+    ],
+    "Macrophage": [
+      "MDC"
+    ],
+    "Monocyte": [
+      "MDC"
+    ],
+    "Myeloid": [
+      "MDC"
+    ],
+    "Dendritic cell": [
+      "DC",
+      "pDC"
+    ],
+    "Neutrophil": [],
+    "B cell": [
+      "B_memory"
+    ],
+    "Mast cell": [
+      "mast"
+    ],
+    "Hematopoietic cell": [],
+    "Endothelial cell": [],
+    "Fibroblast": [],
+    "Mural cell": [],
+    "Mesenchymal cell": [],
+    "Epithelial cell": [],
+    "Melanocytic cell": [],
+    "Glial cell": []
+  },
+  "min_common_genes": 5000,
+  "min_reference_genes": 5,
+  "HVG_budget_per_block": 2000,
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "num_epochs": 1000,
+  "batch_size": 1000,
+  "global_free_factors": 3,
+  "lineage_free_factors_with_prior": 2,
+  "lineage_free_factors_without_prior": 5,
+  "GPU_free_fraction_limit": 0.7,
+  "reserve_GiB": 500,
+  "model_budget_GiB": 5,
+  "normalization": "log1p(10000*raw/native fullRNA total), retained per-major/source measured intersection, no globalLR deletion",
+  "resource_reason": "Official GPU has dense (n_types+1,p,p) adjacency/1m/weight arrays. Prespecified6disjoint biological resource blocks; no-cell-type GPU mode explicitly unsupported. Original identities retained. Block_shared only means shared within block; cross-block matching later, not one fitted pan18 shared factor.",
+  "HVG_rule": "Within each original major batch-source Seurat dispersion HVG cap floor2000/nmajor; union+all measured process prior genes. No expression/source regression before fit.",
+  "stability_plan": "All factors/all3seed pair scope Hungarian plus cycles; weight mincos.9,top50Jaccard.5,source-residual score rho.7. Lineage factors within own major; block-shared candidates report all major score/support diagnostics, shared qualification requires at least2 majors supported/variable, other majors remain reported, no biological necessity for all majors active. Old strict pilot rule unchanged.",
+  "no_clinical_LR_p_used": true,
+  "formal_states": false,
+  "frozen_UTC": "2026-10-14T04:43:54.067344+00:00",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "accepted_input_audit_sha256": "3d28d2a96d3bd06caff0f9256f88ebc6229a32e52eddf7c73938a14b28e337bd",
+  "global_scope_definition": "block_global is permitted across the fixed fit block, not proof of shared activity; shared qualification requires supported variation in>=2 majors. Single-major Glial cannot qualify as a multitype shared factor.",
+  "scientific_parent_plan_sha256": "9e8032e4bf3f8853cda57f76d01f318be1461b4fcb59c51868eefd9322d0f7cd",
+  "recovery": "Originalmainvolume groupfree~479GiB below500reserve; actualv1terminal atmajor/seed boundary. Reuse SHA-verified completedT3/Myeloid1/Ball300/3, samecells/genes/priors/K/seeds/epoch/hyperparameters; private outputroot on existing personaldata1,>500+5GiB free and nohardquota. No canonical/history deletion, no fullRNA recopy, finaldurable authority transfer/audit explicitly pending."
+}

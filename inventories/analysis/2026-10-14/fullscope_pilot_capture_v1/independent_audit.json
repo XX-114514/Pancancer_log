@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL5148_PILOT_GENE_CAPTURE_ALL468_CM_SOURCE_AND4264_MEMBER_DENOMINATORS",
+  "observed_UTC": "2026-10-14T05:03:05.193252+00:00",
+  "producer_inventory_sha256": "180b3e281d3d1055355518c44bcbbe356e2f8b2959173d610ccf06e6bac6f10b",
+  "audit_code_sha256": "f53f20a13676cec53fb6707160c285103699cad8ecd4ca4aaa184d9935bc566a",
+  "gene_records": 5148,
+  "CM_source_records": 468,
+  "member_source_records": 4264,
+  "independent_gene_isin_and_sample_node_pivot": true,
+  "expression_activity_not_tested": true,
+  "no_LR_or_clinical_test": true,
+  "formal_states": false
+}

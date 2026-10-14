@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE_BLOCK_MULTISEED_DIAGNOSTICS_NOT_FORMAL_STATES",
+  "block": "lymphoid_T",
+  "observed_UTC": "2026-10-14T05:04:19.827827+00:00",
+  "producer_sha256": "5569d94ac9055301db17478f474852391249a886609ed1a4f971f35769f6fc93",
+  "plan_sha256": "de0f0e0d1f42b65a46dee93b54fbcbc7298ef71f6a2164ba99fbe2d9725d1a56",
+  "input_seed_sha256": {
+    "lymphoid_T/seed20261014/factors_and_discovery_scores.npz": "098f9ecd31b902532aa6b9a476bb88f9dcadb5b38e9f570115ec10a1e32aa6a1",
+    "lymphoid_T/seed20261014/private_discovery_metadata.tsv.gz": "ac2ad9e8caaf8606b5e03640c4b400214a35d4f63723534218f2914ac345d312",
+    "lymphoid_T/seed20261015/factors_and_discovery_scores.npz": "709988704825007b8027ffadce3e7ee15a6e15ff46b3feeafbbd138743805190",
+    "lymphoid_T/seed20261015/private_discovery_metadata.tsv.gz": "5ef2c9305ebd66bff10e93c027c9c999c6d608668a5d0be2d5c75ab16b71db08",
+    "lymphoid_T/seed20261016/factors_and_discovery_scores.npz": "f339f21dc0316d85e702e794c6bd5a8bfab6363e939ec10f83ddd02ee8a8cb02",
+    "lymphoid_T/seed20261016/private_discovery_metadata.tsv.gz": "9ca3e003b9c7355e25b723547def8e210c5b922b1e701a11edd63ce6b1716cff"
+  },
+  "candidates": 207,
+  "shared_or_lineage_stable_candidates": 0,
+  "context_stable_candidates": 0,
+  "model_scope_all_majors_reported": true,
+  "global_factor_activity_not_required_in_all_majors": true,
+  "original_labels_unchanged": true,
+  "no_cell_level_p_or_clinical_LR_selection": true,
+  "formal_states": false,
+  "output_sha256": {
+    "all_factor_matches.tsv": "707c06868316a335908ebc770d2ccc8bbfcdbd89ec80dc33383d6d08edab6829",
+    "all_major_score_reproducibility.tsv": "0588d3c9c76ce85e03549d7b06682e186284966fe49f6cba0a3e971067ab22f4",
+    "all_source_node_complexity_diagnostics.tsv": "e8f442c42e0ea39837eaaba584aa90ee911e7b9d657e7fec5edd6f4667f42812",
+    "all_source_major_distributions.tsv": "79f815b99b3fda0bee171ba90f8a7f246ae084cf1bc94d08fa6dab28837eeb6b",
+    "all_candidate_diagnostics.tsv": "12715530bcd3e044d11fe899e191cf1cf6b6ef5824855e41a78cdd756eb35ecb"
+  }
+}

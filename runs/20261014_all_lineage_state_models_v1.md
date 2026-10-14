@@ -13,3 +13,7 @@ cNMF同100766原major逐个拟合，K10/15/20×100，共5400runs/54共识；官�
 ## 真实启动
 
 2026-10-14T04:46:53.817940+00:00 /UTC+8 2026-10-14T12:46:53.817940+08:00取证：04:44:30 UTC启动两个job、04:45:58四proc一致，首T/lymphoid/首B训练中，无完成seed或major。[快照](../inventories/analysis/2026-10-14/all18_state_model_start_v1/RESULTS.md)。
+
+## v1真实容量终态与v2储存恢复
+
+2026-10-14T06:00:58.406941+00:00 /UTC+8 2026-10-14T14:00:58.406941+08:00：v1 cnmf05:03:55/Spectra05:09:33因主卷quota500+1门槛exit1，完成B/T3/Myeloid1保留；原此前RUNNING快照不再新鲜。[备用卷恢复](../inventories/analysis/2026-10-14/state_model_volume_recovery_v2/RESULTS.md)。科学字段不变，only存储/完成组合复用。

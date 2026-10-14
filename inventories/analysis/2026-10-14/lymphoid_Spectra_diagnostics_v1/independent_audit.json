@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL_BLOCK_FACTORS_MATCHES_SCORE_SOURCE_NODE_DEPTH_SUPPORT_AND_CANDIDATE_RULES",
+  "block": "lymphoid_T",
+  "observed_UTC": "2026-10-14T05:08:40.356847+00:00",
+  "audit_code_sha256": "6083fafb3bb177ce7f650746a429e215b9c409ac5cfc6347cbfff5abcada1eff",
+  "producer_inventory_sha256": "3440a2feea5f83c7238d12940cca4bd7d5957557bac9750c7d280979242ab3e1",
+  "factor_pair_checks": 621,
+  "score_pair_checks": 1503,
+  "major_factor_support_and_regression_checks": 501,
+  "candidate_rules": 207,
+  "max_cosine_difference": 2.6645352591003757e-15,
+  "scalar_and_sample_p_values_not_used": true,
+  "source_distributions_not_independently_recomputed_here": true,
+  "formal_states": false
+}

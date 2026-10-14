@@ -1,0 +1,29 @@
+{
+  "schema": "all18_original_major_cNMF_contrast_plan_v1_volume_recovery_v2",
+  "draft_UTC": "2026-10-14T04:38:59.325797+00:00",
+  "status": "FROZEN_STORAGE_RECOVERY_SAME_ALL18_PARAMETERS",
+  "producer_sha256": "a7973d22f178d9bca04fc953a632a5341ed4d421285a056ada6f4901716e47c6",
+  "cells": 100766,
+  "majors": 18,
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "repeats_per_K": 100,
+  "seed": 20261014,
+  "HVG_per_major": 2000,
+  "max_NMF_iter": 1000,
+  "reserve_GiB": 500,
+  "model_budget_GiB": 5,
+  "normalization": "Official raw counts gene-variance scaling; external native fullRNA TPM for HVG/gene spectra, never common-axis total",
+  "stability_rule": "Full5400runs/54consensus; repeat medianHVGcos>=.8,p10>=.7,densityretained>=.5; other repeatstableK match positivecoefcos>=.8,top50Jaccard>=.25,source-residual normalized usage rho>=.5; allK kept, crossK duplicates not counted unique states",
+  "no_prior_gene_sets_used": true,
+  "no_clinical_LR_p_used": true,
+  "formal_states": false,
+  "frozen_UTC": "2026-10-14T04:43:54.067344+00:00",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "accepted_input_audit_sha256": "3d28d2a96d3bd06caff0f9256f88ebc6229a32e52eddf7c73938a14b28e337bd",
+  "scientific_parent_plan_sha256": "d1ab42c5f3e69ac74656ebe136ec7a7013ed5fc8c6fb0be57896d7e01faddfc4",
+  "recovery": "Originalmainvolume groupfree~479GiB below500reserve; actualv1terminal atmajor/seed boundary. Reuse SHA-verified completedT3/Myeloid1/Ball300/3, samecells/genes/priors/K/seeds/epoch/hyperparameters; private outputroot on existing personaldata1,>500+5GiB free and nohardquota. No canonical/history deletion, no fullRNA recopy, finaldurable authority transfer/audit explicitly pending."
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "exact_completed_model_artifact_copy_recovery_v2",
+  "observed_UTC": "2026-10-14T05:55:46.039896+00:00",
+  "output_volume": "existing_personal_data1",
+  "scientific_parameters_unchanged": true,
+  "raw_full_cohort_matrices_not_copied": true,
+  "old_results_preserved": true,
+  "private_directory_mode": "0o700",
+  "copied_bytes": 301182371,
+  "completed_Spectra_seeds": 4,
+  "completed_cNMF_majors": 1,
+  "filesystem_free_GiB_after_copy": 1053.7608947753906,
+  "recovery_input_inventory_sha256": "297e856d6643cb5df1e6e982e650e462360f29da7e56ab21f308866921dc4107",
+  "copied_files": {
+    "Spectra": 15,
+    "cNMF": 344
+  }
+}

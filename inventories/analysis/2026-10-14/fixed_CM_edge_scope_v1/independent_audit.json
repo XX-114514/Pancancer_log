@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL5820_PAIR_CONTEXT_DENOMINATORS_60SUMMARIES_AND120_MAPS",
+  "observed_UTC": "2026-10-14T05:26:42.930346+00:00",
+  "producer_inventory_sha256": "4671aa09385478a04bf62d4c4741fe73f395a0701d79adfe5fdecbc6e23194f0",
+  "audit_code_sha256": "cf1b54d57117a405a721deb78ed9e1f45c2702ff352b7f73a5f44132fd9fa2c2",
+  "pair_context_records": 5820,
+  "unique_pairs": 60,
+  "CM_edge_records": 120,
+  "independent_long_form_count_lookup": true,
+  "zero_values_block_reviewed_counts_and_dedup_checked": true,
+  "score_or_design_estimability_not_tested": true,
+  "formal_states": false
+}

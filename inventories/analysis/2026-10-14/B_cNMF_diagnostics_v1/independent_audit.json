@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ALL_MAJOR4500_REPEAT650_CROSSK45_SOURCE_NODE_DEPTH_NATIVE_SUPPORT_AND_RULES",
+  "major": "B cell",
+  "observed_UTC": "2026-10-14T05:34:25.138923+00:00",
+  "audit_code_sha256": "a439ea2fa2c6baef4bd4b2935e44f4bad02a93a77e79794c67c315ffe10c690d",
+  "producer_inventory_sha256": "571a5246dad7be7622084af7e0cc32ab901a8c9616ab4ea33c2d4a1395917b54",
+  "repetition_matches": 4500,
+  "crossK_comparisons": 650,
+  "module_native_support_and_regression_checks": 45,
+  "max_repeat_cosine_difference": 2.7755575615628914e-15,
+  "K_statistics_not_independently_refit": true,
+  "source_distribution_quantiles_not_independently_recomputed_here": true,
+  "formal_states": false,
+  "mathematically_constant_group_residuals_exactzero": true,
+  "original_v1_failed_audit_retained": true
+}

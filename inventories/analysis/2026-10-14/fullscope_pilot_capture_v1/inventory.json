@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE_FROZEN_PILOT_GENES_AND_ALL9CM_NATIVE_CAPTURE_DENOMINATORS_NOT_STATE_ASSOCIATIONS",
+  "observed_UTC": "2026-10-14T04:58:52.113551+00:00",
+  "producer_sha256": "966cdab80dabe98dfe12f0ac2b4167ebb9dc65a06628665254a5628b972e8971",
+  "plan_sha256": "407bbf31920ec64d419fff6e562a05a5733920a425cd542aba2dd1447dbe44b8",
+  "pilot_dictionary_sha256": "9f8182f124bf50ee5d2a2c5ac976968d1d8d6c4dd3ba3d606090ca0ed28a0c3a",
+  "full_scope_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "CM_core_graph_sha256": "133b1e9274c2d378d561d7165ec4de5d384c6a82d67dd7e0300cf0c199a0081e",
+  "sources": 52,
+  "CMs": 9,
+  "original_cells": 4532933,
+  "original_nodes": 172,
+  "original_libraries": 1290,
+  "programme_ids": 98,
+  "source_major_programme_records": 5148,
+  "gene_axis_gate_pass_records": 5048,
+  "gene_gate_and_original_major_captured_records": 4949,
+  "CM_source_records": 468,
+  "core_member_records": 82,
+  "source_member_records": 4264,
+  "all9CM_scope_included": true,
+  "no_expression_copied_or_scores_computed": true,
+  "all_gene_gate_pass_does_not_imply_state_activation": true,
+  "formal_states": false,
+  "no_LR_or_clinical_tests": true,
+  "output_sha256": {
+    "all52_source_pilot_programme_gene_capture.tsv": "fb175c9aeb9930d5cc26cb0edea279f8397dc4b3c28dfbf73fcc605c075590da",
+    "all9CM_by52source_native_capture.tsv": "86a513ca9d8f2856b6c3aae3cc6b3a51be8a27be74b4eeee37eb2f918687bbb8",
+    "all_CM_core_member_source_capture.tsv": "59cee956b6b25935f5773b1dd06c0aa0cfd05b46d11c974f98b3612e9be81dc1"
+  }
+}

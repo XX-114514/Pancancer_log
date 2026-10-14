@@ -9,3 +9,7 @@
 入口：`python diagnose_all_lineage_spectra_v1.py --block <fixed_block> --plan <frozen_plan>`，环境PANCANCER_PREFLIGHT_ROOT；读取既有模型/原生输入，全程不做cell级p、不按LR/临床筛选、不改172/9CM、不发布正式state。
 
 完整block诊断保存新版本目录；后续独立对所有匹配、major支持和统计复算后冻结候选签名/投影。只有seed文件存在不当作fit完成，须有producer completed记录。
+
+## 真实终态与独立数值审计
+
+2026-10-14T06:00:58.406941+00:00 /UTC+8 2026-10-14T14:00:58.406941+08:00取证：[全结果](../inventories/analysis/2026-10-14/lymphoid_Spectra_diagnostics_v1/RESULTS.md)。其余完整目标仍待，无正式state/通讯promotion。

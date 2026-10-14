@@ -31,3 +31,7 @@ GPU当前硬件空闲，但scanpy PyTorch2.6是CPU版；scrna_r GPU环境实测p
 ## 全谱系扩展：2026-10-14T04:46:53.817940+00:00 /UTC+8 2026-10-14T12:46:53.817940+08:00
 
 原S0—S3五来源T/M试点历史保持；现18major/100766原生发现输入已独立全count/分母/identity/gene axis接受。六谱系资源块Spectra和18major cNMF已实际运行，完整稳定性、全4532933nativeUCell/状态资格审阅仍待；不以旧五来源或新模型启动替代完整goal。[执行](../runs/20261014_all_lineage_state_models_v1.md)、[证据卡点与状态轴](state-layer-and-communication-evidence-review-v1.md)。
+
+## 2026-10-14T06:06:50.585066+00:00 /UTC+8 2026-10-14T14:06:50.585066+08:00 覆盖与方法证据更新
+
+原60fine pairs只有15在至少一来源/4在至少两来源达到state数量条件，且基因/score/design仍未查；原CM拥有任意2core成员覆盖可达47—50sources，两者不能互代。T/lymph首207严格main0，B35repeat+crossK非state；全部失败/源限定/身份和复杂度诊断保留。模型主卷quota停止与data1同参数恢复已有真实handoff，完整目标active。[已审scope](../inventories/analysis/2026-10-14/fixed_CM_edge_scope_v1/RESULTS.md)。

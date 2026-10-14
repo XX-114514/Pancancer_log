@@ -694,3 +694,7 @@ Git 状态：
 ## 2026-10-14T04:46:53.817940+00:00 /UTC+8 2026-10-14T12:46:53.817940+08:00 全谱系状态发现
 
 100766/18major原生counts和分母全量独立通过并登记；Spectra6block3seed与cNMF18major全K对照已实际运行，首块/首B中，无正式states。原9CM/172/Zarr保持，状态后全CM/DIALOGUE/空间未完成。[checkpoint](inventories/analysis/2026-10-14/all18_state_model_start_v1/RESULTS.md)。
+
+## 2026-10-14T06:06:50.585066+00:00 /UTC+8 2026-10-14T14:06:50.585066+08:00 状态发现与精确CM覆盖最新节点
+
+全源固定pilot gene轴/原9CM成员捕获、原120记录/60唯一对/5820精确分层已独立全复算。T/lymph207因子当前规则0合格（4权重稳定），B35重复+跨K候选已审但非35独立state。原两个fit确在05:03/05:09因quota退出；data1恢复v2实际live，Myeloidseed2/DC运行，原schema/params/172/9CM/Zarr不变。正式states/全数据UCell/状态LR/DIALOGUE/空间仍待。[scope](inventories/analysis/2026-10-14/fixed_CM_edge_scope_v1/RESULTS.md)、[恢复](inventories/analysis/2026-10-14/state_model_volume_recovery_v2/RESULTS.md)。

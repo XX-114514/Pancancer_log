@@ -1,0 +1,15 @@
+{
+  "schema": "all_original120_CM_edge_records_unique60_state_scope_v1",
+  "frozen_UTC": "2026-10-14T05:17:14.608830+00:00",
+  "producer_sha256": "41bcef610378015354deb79291a2390a016a6d1541893003fbf8c06a93ba4a20",
+  "original120_CM_edges_sha256": "f8937311f72d7deb0dd0b3fc87aee463dbba0db8f6b064b03cb396c4f4f7226c",
+  "full_scope_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "composition_min_samples": 10,
+  "state_min_samples": 20,
+  "composition_rule": "Each parent major>=20cells; original within-parent proportion; absent fine subgroup remainszero; source/cancer/sampleclass inheritedstratum;>=10eligiblelibrary units and both variable. Blocks/reviewed counts separate, no patient-independence assumption.",
+  "state_rule": "Both exact fine endpoints>=20cells,>=20eligiblelibrary units in inheritedstratum onlypotential; gene/programme coverage and design estimability not yet checked, no positivity or split into tiny high-state groups",
+  "deduplication": "Canonical undirected frozen cellpair computed once across60pairs; map every120originalCM record back with originaldirection retained, never duplicate as independent evidence",
+  "scope": "Original9CM/172/1290 only; source-only corecapture is distinct from exactedgecapture. No expression/state/LR/clinical hypothesis tests or gene-score calculation.",
+  "formal_states": false,
+  "status": "FROZEN_BEFORE_REAL_EXACT_EDGE_CAPTURE_COUNTS"
+}
