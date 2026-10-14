@@ -1,3 +1,7 @@
+## 2026-10-14T00:48:50.209434+00:00 /UTC+8 2026-10-14T08:48:50.209434+08:00 CM临床机会与DIALOGUE支线
+
+CM-PIVOT：患者/捕获机会核验完成；下一DIALOGUE同版本ABI修复/full合成API、读取已审state原生输入、来源内患者发现/留出。全9CM映射、真实临床/空间意义未完成；保留其他任务新atlas恢复。 [run](runs/20261014_CM_clinical_DIALOGUE_preparation_v1.md)。
+
 ## 2026-10-13T13:29:24.230755+00:00 /UTC+8 2026-10-13T21:29:24.230755+08:00 有限两轮完成及主线转向
 
 FINITE-CM DONE：336及全可计算系数审计；PIVOT NEXT：169246/316195患者baseline/材料/治疗/响应合同、原9CM可捕获范围；隔离DIALOGUE环境/官方示例/类型内PC及患者块发现留出。临床/训练尚未执行。 [结果](inventories/analysis/2026-10-13/CM_fine_IFNG_finite_round_v1/RESULTS.md)。

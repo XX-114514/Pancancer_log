@@ -1,0 +1,17 @@
+dataset	subset	sender	receiver	min_endpoint_cells	arm	n_patient_tokens	n_libraries	PR	SD_PD	group_definition
+GSE169246	baseline_solid_evaluable	T	Myeloid	20	ICI_plus_chemo	6	6	3	3	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	Myeloid	20	chemo	3	3	1	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	Myeloid	50	ICI_plus_chemo	5	5	3	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	Myeloid	50	chemo	2	2	1	1	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	Macrophage	20	ICI_plus_chemo	5	5	2	3	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	Macrophage	20	chemo	3	3	1	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	Macrophage	50	ICI_plus_chemo	4	4	2	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	Macrophage	50	chemo	2	2	1	1	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	B	20	ICI_plus_chemo	5	5	3	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	B	20	chemo	3	3	1	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	B	50	ICI_plus_chemo	4	4	3	1	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	T	B	50	chemo	2	2	1	1	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	Myeloid	B	20	ICI_plus_chemo	6	6	3	3	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	Myeloid	B	20	chemo	5	5	2	3	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	Myeloid	B	50	ICI_plus_chemo	5	5	3	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping
+GSE169246	baseline_solid_evaluable	Myeloid	B	50	chemo	4	4	2	2	legacy_QC_major; Macrophage=legacy_Macro_name; not_new_172_mapping

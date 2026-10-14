@@ -17,3 +17,15 @@ PAIR015 gamma-minus-alpha β.395/BH.030/BY.151；CRC/胶质瘤同向，但CRC信
 临床聚合盘点13:25:07 UTC：16924678库/22源patienttokens、77显式evaluable及文献/时点字段；31619522库/11tokens、22evaluable；176021110库/16tokens但时点/治疗空。均未临床正式验收，不全称独立患者；169246需分血液/肿瘤、两治疗臂及配对，优先baseline。系统R3.6.0未装DIALOGUE，5依赖缺；新fit没有执行。一次盘点本机脚本嵌套引号SyntaxError、远端未执行，修正后成功；一次stdin日志更新编码失败、未改日志，改用明确UTF8文件后完成。失败历史保留，数值产物未受影响。官方教程明确cell-type单细胞表达、类型内PC及样本/质量metadata；不是LR绑定检验。
 
 已修改STATUS/ROADMAP/TODO、run、日记及结果。原身份/9CM/权威库、peer新免疫对象/状态准备和证据v17保留，未消息其他任务，无表达下载/删除。下一：临床来源患者与baseline/组织/治疗/响应合同审阅、CM捕获意义、隔离DIALOGUE环境及类型内程序发现；新临床/空间独立机制仍未验证。建议提交：Publish finite fine-identity rounds and pivot to CM cohort MCP evidence。
+
+## 2026-10-14T00:48:50.209434+00:00 /UTC+8 2026-10-14T08:48:50.209434+08:00 临床患者机会真实核验与DIALOGUE恢复
+
+本goal上一轮progress：336真实检验改变临床/MCP路线，完整goal仍active。开始HEADb0b345c，保留未跟踪review与并发atlas/状态修改；已读AGENTS/README/STATUS/ROADMAP/TODO、RUNTIME_SYNC、有限合同、近期daily/run、immune atlas方法和较晚state/DIALOGUE输入合同。SSH旧别名无ProxyCommand且direct超时；Clash界面核实7897/SystemProxy on/TUN off，使用仅本次显式SOCKS恢复，没有更改系统/用户SSH配置；一次后续连接中断重试同读请求，没有重启科学任务。
+
+最新只读v4：2670057完整整合UTC10/13 17:20:52，注释17:26:07 Seurat-v3 LOESS near singularities失败、驱动/子进程已消失、CM目录未生成。较晚并行a7533d1/825fa02已记录恢复，保留其代码和日志，不覆盖后续状态。本任务没有重启atlas。
+
+临床sidecar SHA bfbaa4bd与本机缓存精确相同；210库唯一连接、三源原QC计数与现冻结全部吻合；16双方捕获机会逐库独立复算PASS。169246baseline可评估实体15患者，其中ICI+化疗9（4PR/5SD）、化疗6（3PR/3SD）；旧T/Myeloid各20仅ICI6/chemo3；PDAC baseline8患者（6PR/1SD/1PD），176021时点/治疗空。旧口径不能升级新身份；精准部位表移到私有目录保留，仅公开粗材料统计。首次生产父目录缺失无输出，修正parents后成功。当前无新临床p/9CM投影。
+
+DIALOGUE官方9c146cc源码及CRAN依赖SHA已固定；只私有R4.3.3库。v1编译器PATH缺失，v2修正后安装成功但合成PC无列名，v3补列名进入HLM后全NA。显式合成lmer揭示共享lme4 1.1-34和Matrix1.6-5二进制ABI chm_factor_ldetL2缺失，不是生物学阴性。v4同版本lme4官方源码私有重编译，终态尚待；一次poll在launch传输未结束时不存在execution文件，不判任务失败或重启。旧所有失败、共享R库和原权威数据保留。新表达下载0，真实DIALOGUE cell0。正在读取/复用并行5源240533原生输入合同，不重复大数据装配。
+
+[临床机会](../../../inventories/analysis/2026-10-14/clinical_CM_patient_opportunity_v1/RESULTS.md)、[新run](../../../runs/20261014_CM_clinical_DIALOGUE_preparation_v1.md)。下一ABI修复实测/full官方API→来源内匹配患者MCP发现/预冻结留出与9CM映射→合格临床和空间；完整生物/临床目标仍未完成。建议commit：Audit clinical patient opportunity and repair isolated DIALOGUE runtime.

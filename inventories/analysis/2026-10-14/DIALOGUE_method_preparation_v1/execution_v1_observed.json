@@ -1,0 +1,14 @@
+{
+  "status": "TERMINAL_FAILED",
+  "started_UTC": "2026-10-14T00:38:32.055786+00:00",
+  "driver_pid": 370301,
+  "real_cells": 0,
+  "child_pid": 370302,
+  "exit_code": 1,
+  "finished_UTC": "2026-10-14T00:38:58.646967+00:00",
+  "observed_UTC": "2026-10-14T00:39:43.057388+00:00",
+  "process_present": {
+    "driver_pid": false,
+    "child_pid": false
+  }
+}

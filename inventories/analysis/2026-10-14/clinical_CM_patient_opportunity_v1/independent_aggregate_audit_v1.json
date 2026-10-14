@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "all16_capture_queries_independently_rebuilt": 16,
+  "all3_frozen_QC_totals_matched": true,
+  "QC_total_checks": [
+    {
+      "dataset": "GSE169246",
+      "legacy_QC_count_total": 489360,
+      "frozen_count_total": 489360
+    },
+    {
+      "dataset": "GSE176021",
+      "legacy_QC_count_total": 868494,
+      "frozen_count_total": 868494
+    },
+    {
+      "dataset": "GSE316195",
+      "legacy_QC_count_total": 82549,
+      "frozen_count_total": 82549
+    }
+  ],
+  "no_independent_clinical_validation_claim": true,
+  "clinical_source_sha256": "bfbaa4bd751d7ac8039f3ac01032e396625b8612263f419960c1908635a3dfa1"
+}

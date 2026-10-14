@@ -1,3 +1,7 @@
+## 2026-10-14T00:48:50.209434+00:00 /UTC+8 2026-10-14T08:48:50.209434+08:00 CM临床机会与DIALOGUE支线
+
+临床患者机会核验：210精确文库键/16捕获机会/3源QC总量通过；TNBC baseline实体15患者，旧T—Myeloid两端各20时ICI仅6。DIALOGUE官方已私有安装，HLM暴露旧lme4/Matrix ABI不兼容，隔离修复终态待；真实MCP和临床模型未拟合。 [run](runs/20261014_CM_clinical_DIALOGUE_preparation_v1.md)。
+
 ## 2026-10-13T13:29:24.230755+00:00 /UTC+8 2026-10-13T21:29:24.230755+08:00 有限两轮完成及主线转向
 
 有限轮次1/2已审：336模型，主1BH但评分/共同程序敏感、CRC信息85%，其他变体/BY全0。保留PAIR015生态线索；主线转CM队列/临床及表达MCP，DIALOGUE未训练。 [结果](inventories/analysis/2026-10-13/CM_fine_IFNG_finite_round_v1/RESULTS.md)。

@@ -1,0 +1,8 @@
+dataset	clinical_rows	exact_count_library_keys	source_patient_tokens	baseline_rows	baseline_patient_tokens	baseline_solid_evaluable_rows	baseline_solid_evaluable_patient_tokens	patient_response_conflicts	patient_treatment_arm_conflicts	independent_validation_accepted	subset	arm	libraries	patient_tokens	PR	SD	PD
+GSE169246	78.0	78.0	22.0	36.0	21.0	15.0	15.0	0.0	0.0	False							
+GSE169246											baseline_solid	ICI_plus_chemo	9.0	9.0	4.0	5.0	0.0
+GSE169246											baseline_solid	chemo	6.0	6.0	3.0	3.0	0.0
+GSE169246											baseline_blood	ICI_plus_chemo	11.0	11.0	4.0	7.0	0.0
+GSE169246											baseline_blood	chemo	9.0	9.0	5.0	3.0	1.0
+GSE176021	110.0	110.0	16.0	0.0	0.0	0.0	0.0	0.0	0.0	False							
+GSE316195	22.0	22.0	11.0	8.0	8.0	8.0	8.0	0.0	0.0	False							

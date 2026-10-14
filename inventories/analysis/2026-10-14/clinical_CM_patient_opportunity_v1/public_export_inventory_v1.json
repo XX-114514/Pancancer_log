@@ -1,0 +1,14 @@
+{
+  "schema": "clinical_patient_opportunity_public_export_v1",
+  "all_patient_rows_remain_private": true,
+  "exact_site_detail_retained_private_not_deleted": true,
+  "missing_inventory_output_explanation": "producer material_timepoint_arm_coverage.tsv retained privately; public coarser material table derived after production",
+  "public_files": {
+    "all16_baseline_pair_opportunities.tsv": "125fd4273ca73cd80c9b5fe75f9e990188c390e29f669d47fb5cdce7c1172fd7",
+    "RESULTS.md": "ed51f97d557e1c0c540e30ca65710d40079978a6fee0665c5d98145790909db3",
+    "independent_aggregate_audit_v1.json": "d7a84a8a954329e4f402db15ebe117e022d030f8717af61d45b73afe05a0446e",
+    "coarse_material_timepoint_arm_coverage.tsv": "33b9521acc1de769e237d0a9dcc0464f26321653ac060025d9199298daae8e05",
+    "patient_opportunity_summary.tsv": "b7148907d0a9f0e20882e4da947198f81627f64080cbd22dfd0c1f63b22c799f",
+    "inventory.json": "2aac11a487288efaeb12a5b3498be67920466d30d184b0c27f7f8c7463f0b95c"
+  }
+}

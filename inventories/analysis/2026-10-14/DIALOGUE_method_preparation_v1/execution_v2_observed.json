@@ -1,0 +1,16 @@
+{
+  "status": "TERMINAL_FAILED",
+  "started_UTC": "2026-10-14T00:41:22.512461+00:00",
+  "driver_pid": 380553,
+  "real_cells": 0,
+  "compiler_PATH_corrected": true,
+  "shared_R_library_unchanged": true,
+  "child_pid": 380554,
+  "exit_code": 1,
+  "finished_UTC": "2026-10-14T00:41:49.399139+00:00",
+  "observed_UTC": "2026-10-14T00:42:00.901715+00:00",
+  "process_present": {
+    "driver_pid": false,
+    "child_pid": false
+  }
+}

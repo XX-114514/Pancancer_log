@@ -1,0 +1,18 @@
+{
+  "status": "PATIENT_KEY_AND_CAPTURE_OPPORTUNITY_CHECKED_NOT_CLINICAL_MODEL_ACCEPTANCE",
+  "observed_UTC": "2026-10-14T00:38:18.858188+00:00",
+  "producer_sha256": "2d23ee85c155c2ac856245f354419aac419222e382f94bdfdb2965ce7baf6abc",
+  "clinical_sidecar_sha256": "bfbaa4bd751d7ac8039f3ac01032e396625b8612263f419960c1908635a3dfa1",
+  "counts_sha256": "ba8fd89651459d1913f0f9457f22a14099e0de170075378cee789d720942b8f1",
+  "exact_library_joins_verified": true,
+  "source_patient_tokens_not_cross_study_independence": true,
+  "no_new_p_values": true,
+  "no_expression_export": true,
+  "no_new_CM_projection": true,
+  "legacy_cell_annotation_pending_new_identity_review": true,
+  "outputs": {
+    "all16_baseline_pair_opportunities.tsv": "125fd4273ca73cd80c9b5fe75f9e990188c390e29f669d47fb5cdce7c1172fd7",
+    "patient_opportunity_summary.tsv": "b7148907d0a9f0e20882e4da947198f81627f64080cbd22dfd0c1f63b22c799f",
+    "material_timepoint_arm_coverage.tsv": "09a70d14c1d79450953a8985f931cd8ef0052b4e34010e01f2adf4a1a4678a35"
+  }
+}
