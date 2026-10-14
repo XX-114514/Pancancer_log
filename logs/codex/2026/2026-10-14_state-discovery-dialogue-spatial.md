@@ -119,3 +119,9 @@ UTC01:50:11/UTC+8 09:50:11数值交接完成、control135目录0冲突，原CM�
 2026-10-14T06:51:21.267627+00:00 /UTC+8 2026-10-14T14:51:21.267627+08:00：上一goal turn为progress（真实Myeloid/DC/Endo全数值审计、固定监督执行、0d0558c普通push/云核验）；本turn同423862/423870/102992重新证实live，监督6/24，B/mast/Hemato159亦审核通过/0当前rule，vascular首seed完成。全18完整候选字典入口/contract冻结，须全部24审核，尚未组装，不以当前subset替代，不按LR/临床筛选。[合同](../../../runs/20261014_all18_state_candidate_dictionary_v3.md)。
 
 2026-10-14T07:06:11.674687+00:00 /UTC+8 2026-10-14T15:06:11.674687+08:00：本轮推进：取回并SHA核对上皮45/4500/650及B-mast-Hemato159/477/1353/451全审计汇总；上皮31repeat、26crossK不是独立state，组织身份/增殖/其他谱系RNA分列解释。07:04重新ps确认原Spectra、cNMF、监督3进程live，vascular三种子完成、上皮/黑色素Spectra开始；监督最新已取证7/24。全部字典入口已上传但仍等待24/24，未组装。 [上皮](../../../inventories/analysis/2026-10-14/Epi_cNMF_diagnostics_v2/RESULTS.md)、[B谱系](../../../inventories/analysis/2026-10-14/B_mast_Spectra_diagnostics_v2/RESULTS.md)。
+
+2026-10-14T07:10:25.774322+00:00 /UTC+8 2026-10-14T15:10:25.774322+08:00：上一goal turn为progress（上皮/B谱系数值审阅与5e63a49普通push/独立云核验）。本turn原3进程ps live，诊断9/24含vascular和Fibroblast；全18跨方法对应代码/事前计划已冻结上传并启动请求，真实终态待。全部因子保留，逐对cosine及固定分数抽检；本机系统Python compile缓存权限失败，改用既有bundled Python检查通过，未改科学代码或数据。[run](../../../runs/20261014_all18_method_comparison_v1.md)。
+
+2026-10-14T07:12:34.932060+00:00 /UTC+8 2026-10-14T15:12:34.932060+08:00：全18方法比较监督07:09:55 UTC真实启动（worker297681/child297683）；首B/DC/Endo/Fib已完成27180对，每cosine标量检查+2160预定Spearman独立抽检通过。原生轴最大cosine各类.367—.453，未构成强方法一致；完整配对保留，不拼接不同指标最大值、不称无状态。模型与后续全18/原9CM/状态通讯/DIALOGUE/空间仍继续。[结果](../../../inventories/analysis/2026-10-14/all18_cross_method_first4_v1/RESULTS.md)。
+
+2026-10-14T07:12:32.786539+00:00 /15:12:32 UTC+8：服务器证据登记/交接已完成，首4共27180对纳入，四个原进程逐cmdline确认live；refresh135目录0冲突，handoff SHA cdfc7b7bcf3f7be142cb3da7307131442a64cb1607190f7faecc7fd8661fdbd1。状态、原9CM新通讯、DIALOGUE和空间完成均false。

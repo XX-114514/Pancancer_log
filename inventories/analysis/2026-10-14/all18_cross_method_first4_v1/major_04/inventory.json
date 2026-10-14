@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Fibroblast",
+  "block": "vascular_stromal",
+  "observed_UTC": "2026-10-14T07:10:57.476322+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "dc38bdfd4afdba2f0d304d3c5b4e1714ad2e7073ee3b4debafe18a62f8d0e4e1",
+  "Spectra_inventory_sha256": "9194453f794cddd50d80e0541ace62422f4b427b9f8b4344669476dbfeaeb3d2",
+  "pairs": 6795,
+  "permitted_Spectra_factors": 151,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "d1ecbc0e86a1121562eb496e013d13c9d19d556dcb3dc390feb24122cdaeefa4",
+    "scalar_score_checks.tsv": "5230ebde99c141fbd4f475eb27c0bb8ad64bb77bc08aa3558d93d380cf23f567"
+  }
+}

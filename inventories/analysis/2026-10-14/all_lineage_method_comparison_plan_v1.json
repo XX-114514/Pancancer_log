@@ -1,0 +1,53 @@
+{
+  "schema": "all18_full_method_correspondence_v1",
+  "frozen_UTC": "2026-10-14T07:09:04.581517+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "accepted_input_inventory_sha256": "0961d5a83e2f5002fcaa98b584ca53743b58900d5fc9b11cabbf708b14d37172",
+  "blocks": {
+    "lymphoid_T": [
+      "T cell",
+      "T/NK lymphoid",
+      "Lymphoid cell"
+    ],
+    "myeloid": [
+      "Macrophage",
+      "Monocyte",
+      "Myeloid",
+      "Dendritic cell",
+      "Neutrophil"
+    ],
+    "B_mast_hematopoietic": [
+      "B cell",
+      "Mast cell",
+      "Hematopoietic cell"
+    ],
+    "vascular_stromal": [
+      "Endothelial cell",
+      "Fibroblast",
+      "Mural cell",
+      "Mesenchymal cell"
+    ],
+    "epithelial_melanocytic": [
+      "Epithelial cell",
+      "Melanocytic cell"
+    ],
+    "glial": [
+      "Glial cell"
+    ]
+  },
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "K": [
+    10,
+    15,
+    20
+  ],
+  "scope": "All18 original majors, all45 cNMF components versus all permitted Spectra factors including unstable factors; each major requires both independent diagnostic audits.",
+  "metrics": "Median matched3seed L2 Spectra gene weights vs positive cNMF coefficients; common-axis cosine and native-axis zero-padded cosine with retained norm fraction; full top50 Jaccard; all3 seeds pooled/source/source-node residual score rho. No seed/K selection or formal state threshold.",
+  "audit": "Every cosine scalar check; deterministic20pairs perK, all3seeds/all3contexts independently scipy Spearman checked; source/cell/gene identities and hashes asserted.",
+  "no_LR_clinical_selection": true,
+  "formal_state": false
+}

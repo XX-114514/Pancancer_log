@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Endothelial cell",
+  "block": "vascular_stromal",
+  "observed_UTC": "2026-10-14T07:10:40.375464+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "b3eccdb0e7103107c09a62c659eb2a4a162a5daaa6362f49c2e05e4058ff714e",
+  "Spectra_inventory_sha256": "9194453f794cddd50d80e0541ace62422f4b427b9f8b4344669476dbfeaeb3d2",
+  "pairs": 6795,
+  "permitted_Spectra_factors": 151,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "99227d74669866aae57bc1ec3ca441595970df136c1cf847ec74accd9617f107",
+    "scalar_score_checks.tsv": "b224fa1179aaaa295108ddec4b33280d9f9d9bead35b198c43bd65c92e3dfd53"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_ALL_PERMITTED_METHOD_PAIRS_NOT_STATE_VALIDATION",
+  "major": "Dendritic cell",
+  "block": "myeloid",
+  "observed_UTC": "2026-10-14T07:10:24.332443+00:00",
+  "producer_sha256": "a0f6ebe726190d4228c1bb9ad4154ed656cceab55f411275a49796e5e5d7909d",
+  "plan_sha256": "c76250abc115ee676f282a87a43e2f77c45558b056a7af0d1a8d792c508756ef",
+  "cNMF_inventory_sha256": "7062185fbd3098f8b103904050e2530f94735e1f54087f9595a1601aaf031e86",
+  "Spectra_inventory_sha256": "643733335493792c6b97618acec52b9bb3084cb9e5087b526315575439a97010",
+  "pairs": 6795,
+  "permitted_Spectra_factors": 151,
+  "scalar_score_checks": 540,
+  "all_cosines_scalar_checked": true,
+  "all_factors_including_unstable": true,
+  "clinical_LR_p_used": false,
+  "formal_states": false,
+  "output_sha256": {
+    "all_method_pairs.tsv": "e450700e682da2b98bd81fa254cb770f09b4caafcca9ee1cb47c0a58e42ead2b",
+    "scalar_score_checks.tsv": "2bb6783f40bb56e93bf75283fe02a784612bb0e0a08c51df93f3c86f6d78dd99"
+  }
+}
