@@ -678,3 +678,7 @@ Git 状态：
 ## 2026-10-11 21:46 UTC+8 新增公共队列追加预处理
 
 用户授权双细胞、环境RNA处理与整合准备。两个完整原始文库试运行经全细胞独立验收，正式Louvain/DecontX方法已冻结。9分支792文库准备进入全量处理；尚未完成全量处理或来源排重，最终新增AC仍0。CAR-T产品、T富集snRNA及排序文库保留独立上下文。见[方法](methods/doublet-ambient-preintegration-v1.md)和[运行](runs/20261011_doublet_ambient_preparation_v1.md)。
+
+## 2026-10-14T04:27:54.083445+00:00 /UTC+8 2026-10-14T12:27:54.083445+08:00 状态发现全谱系输入节点
+
+五来源240533细胞UCell量化评分已审；全4532933行范围已审；18大类100766发现行抽样已审。新全谱系表达提取/训练、正式状态、原9CM映射和状态后DIALOGUE/空间仍待。[结果](inventories/analysis/2026-10-14/all_lineage_discovery_rows_v1/RESULTS.md)。

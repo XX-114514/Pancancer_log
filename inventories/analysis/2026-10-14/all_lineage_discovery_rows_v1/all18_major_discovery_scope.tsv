@@ -1,0 +1,19 @@
+major	available_cells	available_sources	selected_sources	selected_cells	common_training_genes	source_limited	model_training_eligible	original_major_unchanged
+B cell	482248	51	6	6000	16462	False	True	True
+Dendritic cell	16266	50	6	4527	16204	False	True	True
+Endothelial cell	122858	49	6	5852	16661	False	True	True
+Epithelial cell	1032027	45	6	6000	16661	False	True	True
+Fibroblast	147160	52	6	6000	16661	False	True	True
+Glial cell	93663	1	1	6000	38224	True	True	True
+Hematopoietic cell	7055	1	1	6000	27899	True	True	True
+Lymphoid cell	128717	51	6	3644	16051	False	True	True
+Macrophage	398575	51	6	6000	16661	False	True	True
+Mast cell	42396	48	6	5072	16661	False	True	True
+Melanocytic cell	97127	21	5	6000	15992	False	True	True
+Mesenchymal cell	50002	2	1	6000	32864	True	True	True
+Monocyte	125704	51	6	5891	16462	False	True	True
+Mural cell	69292	50	6	5475	16661	False	True	True
+Myeloid	57302	51	6	5700	16661	False	True	True
+Neutrophil	56628	50	6	4605	16444	False	True	True
+T cell	1391840	51	6	6000	16462	False	True	True
+T/NK lymphoid	214073	51	6	6000	16051	False	True	True

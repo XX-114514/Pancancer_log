@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_ALL18_BALANCED_DISCOVERY_ROWS_NO_RNA_EXTRACTION",
+  "observed_UTC": "2026-10-14T04:15:45.017000+00:00",
+  "producer_sha256": "402b4dea40fff9f8c4c9d555c358886005d5340d67d5d2cd47689f956bc0c63c",
+  "plan_sha256": "f809ab4b05121411746febe45cdfba04c2660dafce2e26abd3d02e0218307156",
+  "input_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "selected_cells": 100766,
+  "majors": 18,
+  "eligible_majors": 18,
+  "single_source_majors": 3,
+  "no_expression_copied": true,
+  "no_LR_or_clinical_p_used": true,
+  "original_labels_changed": false,
+  "formal_state_labels": false,
+  "public_output_sha256": {
+    "all18_major_discovery_scope.tsv": "ab0185d90bff46fef702caeb9784bba16494f9440fc62abb3ee36524a4b6c1b6",
+    "all_selected_source_major_discovery_scope.tsv": "4fc2c7af08a0d4268eb1785c3adf2945beed183a3f71fbb2bbb9567775f17eb1"
+  },
+  "private_row_sha256": "671f1055f2dd1cf33dbe7145d1202e49c4ddbde883eeb84f5d0acc969b3321ba"
+}

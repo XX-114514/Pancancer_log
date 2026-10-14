@@ -1,0 +1,122 @@
+{
+  "status": "PASS_ALL100766_DISCOVERY_ROWS_ALL18_MAJORS_RANK_CAP_BLOCK_REPLAY_AND_GENE_AXES",
+  "observed_UTC": "2026-10-14T04:26:27.075444+00:00",
+  "producer_inventory_sha256": "6d6d1720e205b7fdff34a69f3c21d2d720124bc13c27d07f7511971ca93cac71",
+  "audit_code_sha256": "9f1158a7d4b3f6aa86f141dd264f1ac044543b4b393d08904512185ba9da2718",
+  "selected_cells": 100766,
+  "all_labels_and_canonical_rows_exact": true,
+  "metadata_only_fixed_selection": true,
+  "patient_independence_not_assumed": true,
+  "source_limited_majors": 3,
+  "checks": [
+    {
+      "major": "B cell",
+      "selected_cells": 6000,
+      "selected_sources": 6,
+      "common_genes": 16462
+    },
+    {
+      "major": "Dendritic cell",
+      "selected_cells": 4527,
+      "selected_sources": 6,
+      "common_genes": 16204
+    },
+    {
+      "major": "Endothelial cell",
+      "selected_cells": 5852,
+      "selected_sources": 6,
+      "common_genes": 16661
+    },
+    {
+      "major": "Epithelial cell",
+      "selected_cells": 6000,
+      "selected_sources": 6,
+      "common_genes": 16661
+    },
+    {
+      "major": "Fibroblast",
+      "selected_cells": 6000,
+      "selected_sources": 6,
+      "common_genes": 16661
+    },
+    {
+      "major": "Glial cell",
+      "selected_cells": 6000,
+      "selected_sources": 1,
+      "common_genes": 38224
+    },
+    {
+      "major": "Hematopoietic cell",
+      "selected_cells": 6000,
+      "selected_sources": 1,
+      "common_genes": 27899
+    },
+    {
+      "major": "Lymphoid cell",
+      "selected_cells": 3644,
+      "selected_sources": 6,
+      "common_genes": 16051
+    },
+    {
+      "major": "Macrophage",
+      "selected_cells": 6000,
+      "selected_sources": 6,
+      "common_genes": 16661
+    },
+    {
+      "major": "Mast cell",
+      "selected_cells": 5072,
+      "selected_sources": 6,
+      "common_genes": 16661
+    },
+    {
+      "major": "Melanocytic cell",
+      "selected_cells": 6000,
+      "selected_sources": 5,
+      "common_genes": 15992
+    },
+    {
+      "major": "Mesenchymal cell",
+      "selected_cells": 6000,
+      "selected_sources": 1,
+      "common_genes": 32864
+    },
+    {
+      "major": "Monocyte",
+      "selected_cells": 5891,
+      "selected_sources": 6,
+      "common_genes": 16462
+    },
+    {
+      "major": "Mural cell",
+      "selected_cells": 5475,
+      "selected_sources": 6,
+      "common_genes": 16661
+    },
+    {
+      "major": "Myeloid",
+      "selected_cells": 5700,
+      "selected_sources": 6,
+      "common_genes": 16661
+    },
+    {
+      "major": "Neutrophil",
+      "selected_cells": 4605,
+      "selected_sources": 6,
+      "common_genes": 16444
+    },
+    {
+      "major": "T cell",
+      "selected_cells": 6000,
+      "selected_sources": 6,
+      "common_genes": 16462
+    },
+    {
+      "major": "T/NK lymphoid",
+      "selected_cells": 6000,
+      "selected_sources": 6,
+      "common_genes": 16051
+    }
+  ],
+  "formal_states": false
+}
