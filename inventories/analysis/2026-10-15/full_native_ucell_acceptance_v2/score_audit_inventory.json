@@ -1,0 +1,146 @@
+{
+  "status": "PASS_ALL4532933_IDENTITIES_SUPPORT_MASKS_AND_SAMPLED_MANUAL_UCELL_WITH_PRIVATE_UNIT_MEANS",
+  "observed_UTC": "2026-10-14T18:42:11.521458+00:00",
+  "auditor_sha256": "bb56ec870e9480ce4fb4b20c854350e4c8d37b72e1f2823b76e0d28edd27315b",
+  "plan_sha256": "f337058f50c29a3ff1c4aa5ce012922b79623e9e90bac5393352dae14cb24663",
+  "producer_inventory_sha256": "e45f75dbe2ee77c10f1aa44a059e1a24c974ac0011032ddde1980435e36f00c7",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "cells": 4532933,
+  "chunks": 1437,
+  "quantity_values_checked": 408713274,
+  "manual_score_values_checked": 1262305,
+  "max_manual_score_error": 4.4702068713320386e-08,
+  "all_score_values_independently_rescored": false,
+  "all_sample_node_cells_match_frozen_counts": true,
+  "all_chunk_means_two_implementations_checked": true,
+  "private_aggregate_files": [
+    {
+      "major": "B cell",
+      "relative_file": "private_major_00_sample_node_programmes.npz",
+      "sha256": "51479fc22f304b7136c686021da15b35f1b40fd83c7aedb21b5a2f012b6afe60",
+      "sample_node_units": 5989,
+      "programmes": 45
+    },
+    {
+      "major": "Dendritic cell",
+      "relative_file": "private_major_01_sample_node_programmes.npz",
+      "sha256": "02e473bc92053df82f4c85ff2f79037ce4afb2086bdd855af04ba6b3024f9dc4",
+      "sample_node_units": 1538,
+      "programmes": 45
+    },
+    {
+      "major": "Endothelial cell",
+      "relative_file": "private_major_02_sample_node_programmes.npz",
+      "sha256": "dca57bb4d13e1e444588a2045d3943aff399a0a5b27ae5866df52493e27c4bf0",
+      "sample_node_units": 4062,
+      "programmes": 45
+    },
+    {
+      "major": "Epithelial cell",
+      "relative_file": "private_major_03_sample_node_programmes.npz",
+      "sha256": "d52bbe8946022aa4527988540ec980a4d15e7784103cb92ae30999a1daaad162",
+      "sample_node_units": 1513,
+      "programmes": 45
+    },
+    {
+      "major": "Fibroblast",
+      "relative_file": "private_major_04_sample_node_programmes.npz",
+      "sha256": "84f6a786e18dbd91fc6f3025e48bab7f32082f68b7f055faf714422ef02c76ac",
+      "sample_node_units": 1164,
+      "programmes": 45
+    },
+    {
+      "major": "Glial cell",
+      "relative_file": "private_major_05_sample_node_programmes.npz",
+      "sha256": "6aff240e62bad805d6d0d1c5fd98945d1b26032fdac115423469189f720ab014",
+      "sample_node_units": 299,
+      "programmes": 49
+    },
+    {
+      "major": "Hematopoietic cell",
+      "relative_file": "private_major_06_sample_node_programmes.npz",
+      "sha256": "791356539558726b27363b43e367ffcb9b3c7c9d9dd1f590fed8f799f8ee6ce5",
+      "sample_node_units": 29,
+      "programmes": 45
+    },
+    {
+      "major": "Lymphoid cell",
+      "relative_file": "private_major_07_sample_node_programmes.npz",
+      "sha256": "137e9de5d4b86c3c1069e51361fe16237315a42a43cddfd09574b6f751ca124b",
+      "sample_node_units": 1605,
+      "programmes": 45
+    },
+    {
+      "major": "Macrophage",
+      "relative_file": "private_major_08_sample_node_programmes.npz",
+      "sha256": "c6d285b1c11864bafb516d3fc21face8bac5511d56f05ae6bea02a47a46b4d37",
+      "sample_node_units": 3196,
+      "programmes": 45
+    },
+    {
+      "major": "Mast cell",
+      "relative_file": "private_major_09_sample_node_programmes.npz",
+      "sha256": "2bccbbe8e928e5afdf429c07cf2734848f3d1a92914d3d95e84c62fe50013b92",
+      "sample_node_units": 1511,
+      "programmes": 45
+    },
+    {
+      "major": "Melanocytic cell",
+      "relative_file": "private_major_10_sample_node_programmes.npz",
+      "sha256": "c3cdc4c3638068a7b35d2a2152bef81bd10bf5f098df470f8d435980146d35f6",
+      "sample_node_units": 295,
+      "programmes": 45
+    },
+    {
+      "major": "Mesenchymal cell",
+      "relative_file": "private_major_11_sample_node_programmes.npz",
+      "sha256": "9c9594e047ac2467c6a3ddabcbfc6ecc7252befee588840fb4034ecfdebce497",
+      "sample_node_units": 67,
+      "programmes": 45
+    },
+    {
+      "major": "Monocyte",
+      "relative_file": "private_major_12_sample_node_programmes.npz",
+      "sha256": "d6216db27df514ab2db21a8ea52b160611748fc9b978a90be8b60b291135acb6",
+      "sample_node_units": 1149,
+      "programmes": 45
+    },
+    {
+      "major": "Mural cell",
+      "relative_file": "private_major_13_sample_node_programmes.npz",
+      "sha256": "49da897fa7d89e68d966db205fc6007df441f510b66be7dda007a77962e22ea0",
+      "sample_node_units": 1432,
+      "programmes": 45
+    },
+    {
+      "major": "Myeloid",
+      "relative_file": "private_major_14_sample_node_programmes.npz",
+      "sha256": "337bb0a047d3209db311da29e850d21bceff79a152ca78972cf771c98a7daa9d",
+      "sample_node_units": 2579,
+      "programmes": 45
+    },
+    {
+      "major": "Neutrophil",
+      "relative_file": "private_major_15_sample_node_programmes.npz",
+      "sha256": "9bdcefb6e39e05b72feb3a6c80925f75236c0a5e457ab80b348b811e940df01e",
+      "sample_node_units": 644,
+      "programmes": 45
+    },
+    {
+      "major": "T cell",
+      "relative_file": "private_major_16_sample_node_programmes.npz",
+      "sha256": "13e436bae7363e0004986ca1071ddcf012de66f5c3a1579c66e84eae3a01f1a6",
+      "sample_node_units": 7319,
+      "programmes": 45
+    },
+    {
+      "major": "T/NK lymphoid",
+      "relative_file": "private_major_17_sample_node_programmes.npz",
+      "sha256": "37848c732b2994e862b0683b327e649f9f8f2646e8b548c7b18150f417137c72",
+      "sample_node_units": 1176,
+      "programmes": 45
+    }
+  ],
+  "formal_states": false,
+  "biological_validation": false
+}

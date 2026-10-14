@@ -1,3 +1,7 @@
+## 2026-10-15 全量状态评分技术验收完成
+
+全4,532,933细胞、814程序的原生UCell投影及独立审计完成，35,567样本内原亚群四评分汇总一致。正式状态、2026年10月CM（v20261010）通讯、DIALOGUE及空间待后续；来源内身份/状态审阅已启动。[验收](inventories/analysis/2026-10-15/full_native_ucell_acceptance_v2/RESULTS.md)。
+
 ## 2026-10-14 状态探索：原生测量复核与巨噬程序
 
 全100,766发现集原生面板复核完成，缺测保持NA；cNMF已核实9/18大类完成，新增巨噬45组件数值审计通过。算法稳定与生物状态分开，完整字典/全量UCell及2026年10月CM（v20261010）状态通讯仍待。[原生复核](inventories/analysis/2026-10-14/all18_discovery_native_panel_coexpression_v2/RESULTS.md)、[巨噬结果](inventories/analysis/2026-10-14/Macrophage_cNMF_diagnostics_v2/RESULTS.md)。

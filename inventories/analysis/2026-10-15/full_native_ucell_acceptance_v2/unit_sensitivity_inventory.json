@@ -1,0 +1,129 @@
+{
+  "status": "COMPLETE_ALL4532933_UNIT_SCORE_SENSITIVITIES_QC_WITH_PRIMARY_AUDIT_AGREEMENT",
+  "observed_UTC": "2026-10-14T18:43:36.423141+00:00",
+  "producer_sha256": "ca30aff741a9efd60892957373e6c2086093acbf93cce75718acc35873361ffb",
+  "score_inventory_sha256": "e45f75dbe2ee77c10f1aa44a059e1a24c974ac0011032ddde1980435e36f00c7",
+  "audit_inventory_sha256": "d2a3f6eb66abd8880a89a0a9bc5c36cec462926347122df90d8ad9f45b5e170c",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "cells": 4532933,
+  "units": 35567,
+  "variants": [
+    "scores_maxrank1000",
+    "scores_maxrank1500",
+    "scores_maxrank3000",
+    "TPM_signature_scores_maxrank1500"
+  ],
+  "all_chunks_two_aggregation_methods": true,
+  "primary1500_agrees_with_independent_audit": true,
+  "private_outputs": [
+    {
+      "major": "B cell",
+      "relative_file": "private_major_00_sensitivity_units.npz",
+      "sha256": "f80c469616eaee85a84feee235bdf542720200d1c45408fbec197bd218382ec8",
+      "units": 5989
+    },
+    {
+      "major": "Dendritic cell",
+      "relative_file": "private_major_01_sensitivity_units.npz",
+      "sha256": "d5beb72d36eb98ac658f28f6a44b2f3fbe6ef16ad203bff9fb0a5a13cc6c2214",
+      "units": 1538
+    },
+    {
+      "major": "Endothelial cell",
+      "relative_file": "private_major_02_sensitivity_units.npz",
+      "sha256": "dd5da9b6fa297fb347d42fd449d65515546210548a24b16f72aac4f86f17510b",
+      "units": 4062
+    },
+    {
+      "major": "Epithelial cell",
+      "relative_file": "private_major_03_sensitivity_units.npz",
+      "sha256": "47884a1a2f706ae60e138c58f8ddfa43d58589717c4769402ca3bcdcea79fdff",
+      "units": 1513
+    },
+    {
+      "major": "Fibroblast",
+      "relative_file": "private_major_04_sensitivity_units.npz",
+      "sha256": "a2b94521f2b28856aa379b66b4c6cca1759503d11cc2ea86d9293cb3acb60317",
+      "units": 1164
+    },
+    {
+      "major": "Glial cell",
+      "relative_file": "private_major_05_sensitivity_units.npz",
+      "sha256": "2e8de9d54f208c32b883b7bb7f586af560e742862362438199bcbb21eda8e3c2",
+      "units": 299
+    },
+    {
+      "major": "Hematopoietic cell",
+      "relative_file": "private_major_06_sensitivity_units.npz",
+      "sha256": "6b1d368e8c49e3809913379d6e094d66e0edb996309038cf52f3c07bebb1d0ea",
+      "units": 29
+    },
+    {
+      "major": "Lymphoid cell",
+      "relative_file": "private_major_07_sensitivity_units.npz",
+      "sha256": "5ba42be1e96f9fcebfb4ffe482196248f148fe15d0428a022055482baed6d3c6",
+      "units": 1605
+    },
+    {
+      "major": "Macrophage",
+      "relative_file": "private_major_08_sensitivity_units.npz",
+      "sha256": "37bbc8d66581f4eb40a05d28851e6391a6d56800a0857a6c61cf305a5896ec53",
+      "units": 3196
+    },
+    {
+      "major": "Mast cell",
+      "relative_file": "private_major_09_sensitivity_units.npz",
+      "sha256": "e6168e5622b9f20ad0c152e9631d4802864a41022060a3c54b741d802f579176",
+      "units": 1511
+    },
+    {
+      "major": "Melanocytic cell",
+      "relative_file": "private_major_10_sensitivity_units.npz",
+      "sha256": "07b6739c2b8f73b249ffe4478b329dad2234d4dba67bd54691a250ede46d9725",
+      "units": 295
+    },
+    {
+      "major": "Mesenchymal cell",
+      "relative_file": "private_major_11_sensitivity_units.npz",
+      "sha256": "137b454d144bad73dcbdc3ece8ab35a91ad045b548efc0b56e99824617412ac2",
+      "units": 67
+    },
+    {
+      "major": "Monocyte",
+      "relative_file": "private_major_12_sensitivity_units.npz",
+      "sha256": "e7eefaafd0431ed619e9e22ba51dd15998e57e87fd1292ec4647394f026ffe66",
+      "units": 1149
+    },
+    {
+      "major": "Mural cell",
+      "relative_file": "private_major_13_sensitivity_units.npz",
+      "sha256": "a4bb9fa1a93dc7ac200544cf84149165e1f3dbbe4207f964a85869a9eac04cd7",
+      "units": 1432
+    },
+    {
+      "major": "Myeloid",
+      "relative_file": "private_major_14_sensitivity_units.npz",
+      "sha256": "c8e73dbf6a4682840603ab5805864caaa04d62e346bc326bf975d45412348db9",
+      "units": 2579
+    },
+    {
+      "major": "Neutrophil",
+      "relative_file": "private_major_15_sensitivity_units.npz",
+      "sha256": "d6277a8acc1e44fabda65f9d23db2af0ea8faa2b196c269c3f9a9192bfe86529",
+      "units": 644
+    },
+    {
+      "major": "T cell",
+      "relative_file": "private_major_16_sensitivity_units.npz",
+      "sha256": "1684bc9247e4447ef48d13f5404fb4a57f892e0d2e7277eca92f2566363647f3",
+      "units": 7319
+    },
+    {
+      "major": "T/NK lymphoid",
+      "relative_file": "private_major_17_sensitivity_units.npz",
+      "sha256": "2e4aad4bab5d3f5b8e86157babe5c43973b289cc49f8218e4b376279b3b0b0e5",
+      "units": 1176
+    }
+  ],
+  "formal_states": false
+}
