@@ -1,3 +1,7 @@
+## 2026-10-14T02:16:02.814631+00:00 /UTC+8 2026-10-14T10:16:02.814631+08:00 CRC科学审阅待
+
+CRC下一必须先审真实MMR/跨来源/全9CM结果及程序共同因素，之后选择来源/空间验证。当前对话读取派生统计被自动审批拒绝、授权待；不以新计算替代结果判断。两份server私有报告已生成。[run](runs/20261014_CRC_frozen_source_and_allCM_MMR_v1.md)。
+
 ## 2026-10-14T01:02:07.270860+00:00 /UTC+8 2026-10-14T09:02:07.270860+08:00 DIALOGUE完整入口与临床机会
 
 CM-PIVOT临床患者机会及DIALOGUE官方完整接口DONE；下一读取240533输入独立readback接受→来源内患者块发现/留出→全9CM映射及合格临床/空间。真实生物/临床目标active，不把toy/软件健康算发现。 [方法结果](inventories/analysis/2026-10-14/DIALOGUE_method_preparation_v1/RESULTS.md)。
