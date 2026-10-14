@@ -126,7 +126,7 @@ class Suite:
         fig,axes=plt.subplots(rows,cols,figsize=(183/25.4,h/25.4),squeeze=False)
         fig.subplots_adjust(left=.10,right=.96,bottom=.16,top=.93,wspace=.48,hspace=.56)
         for i,ax in enumerate(axes.flat):
-            ax.text(-.12,1.09,chr(97+i),transform=ax.transAxes,fontsize=8,fontweight='bold')
+            ax.text(-.12,1.035,chr(97+i),transform=ax.transAxes,fontsize=8,fontweight='bold')
         return fig,axes
 
     def save(self,fig,key,title,caption,main=False):
@@ -136,8 +136,15 @@ class Suite:
         texts=[t for t in fig.findobj(matplotlib.text.Text) if t.get_visible() and t.get_text()]
         assert all(5<=t.get_fontsize()<=8.1 for t in texts)
         renderer=fig.canvas.get_renderer();bounds=fig.bbox
+        not_drawn_ticks=set()
+        for ax in fig.axes:
+            for axis,limits in [(ax.xaxis,ax.get_xlim()),(ax.yaxis,ax.get_ylim())]:
+                for tick in axis.get_major_ticks()+axis.get_minor_ticks():
+                    if not min(limits)<=tick.get_loc()<=max(limits):
+                        not_drawn_ticks.update([tick.label1,tick.label2])
         clipped=[]
         for t in texts:
+            if t in not_drawn_ticks:continue
             b=t.get_window_extent(renderer)
             if b.x0<bounds.x0-1 or b.y0<bounds.y0-1 or b.x1>bounds.x1+1 or b.y1>bounds.y1+1:
                 clipped.append(t.get_text())

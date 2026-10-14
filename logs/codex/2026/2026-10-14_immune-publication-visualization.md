@@ -34,3 +34,9 @@
 - v2仅修视图：坐标变换先落实轴范围；独立footer图例/色标右侧留白；T/B/Myeloid/NK增加预设多基因亚型证据；网络用编号与leader lines，并增颜色图例；CM错落版面+K>4各top3并集<=36可读行，完整W不改。所有新绘制text bbox须在画布内，否则拒绝。
 - 6未受影响图与CNV两汇总表逐文件SHA精确复用；37图重新绘制，新figures_v2目录，不改归档/注释/CM方法或阈值。Python语法PASS，真实v2待。
 - a257a65初次/续期后push仍publickey拒绝，证实旧Unix签名桥Connection refused；新临时桥与远端公开指纹一致，普通push成功、独立HTTPS同SHA确认。原代理端口/配置不改。
+
+## 2026-10-14T06:23:09.608803+00:00 / 2026-10-14T14:23:09.608803+08:00 真实文字边界门槛触发及修复
+
+- v2 06:19:27 UTC实际exit1，先完成6精确复用+Fig02改版，T图save被新增bbox门槛拒绝。真实面板号a/b放得过高（单行大轴比多行轴高），另±16 locator标签位于视区外并不会被Matplotlib绘制，被全artist检查误计。没有科学输入或绘图数据失败。
+- v3面板号降低至axes y1.035；只按实际view limits排除不绘制的locator ticks，其余可见文字bbox门槛保持。旧v2所有文件/终态保留。使用同参数和现有6 unaffected figures继续新目录，未删文件/降低科学门槛。
+- 988ae2e普通push/HTTPS同SHA已核验；共享index中另一任务5文件仅方法/状态/权限边界，无患者或科学数值载荷，已逐项核对，未覆盖并发工作。
