@@ -1,0 +1,79 @@
+{
+  "schema": "state_singlecell_input_assembly_plan_v1",
+  "created_UTC": "2026-10-14T00:42:24.057206+00:00",
+  "created_UTC8": "2026-10-14T08:42:24.057206+08:00",
+  "question": "Build audited native fullgene singlecell data and inherited identities/blocks for Spectra discovery, cNMF comparison, fixed UCell projection and DIALOGUE/spatial followup",
+  "producer_sha256": "3388aa154720bdbd09947fb3cea393ba3df3ee62fc47d6012690a74e6614c96a",
+  "input_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "source_manifest_sha256": {
+    "GSE148071": "ba3ba8c72a9604c1ecbae9568f1e722b32380f2ba91e01b6cb7a46e8b772a1f8",
+    "GSE161529": "bbe5e6fb9cb878d2ce335a41282cc7b371f199302fc7dca88dff584775a7d165",
+    "GSE178341": "3a28671df7a8df54e345bf5b6d1c92729595e5847f3ca6dc89aa41de712f65c4",
+    "GSE182109": "9087e4d2ed30d8111a94374ec25865b1ff43ef31a523771fa9e497f794afd46a",
+    "GSE183904": "04d78026ed84e15ff9c99a2d948947b537de2808b38ce36859bfaa3e73860e5c"
+  },
+  "frozen_input_sha256": {
+    "inventory.json": "e1ddb1d1cf4a33f7c7169ab8aa1af76d11dff7e4930c57016ba83f8604a4077b",
+    "independent_audit.json": "eb2787b2c007fecb4c6b25322dc3c220821042b93d789201e499a09df2c071d8",
+    "private_selected_cell_gene_bits.npz": "e24864a674ae9ba3fdddc86c5b7a2cdc1ab7988eb6cf42b629700a608604da81",
+    "private_all1832_sample_node_RNA_counts.tsv": "54e2b0bb6917f232abc6640dd8feeaa6471550c2ad5ffe0dd22bbef8b7984d9d"
+  },
+  "contexts": [
+    "MAJ018_M01",
+    "MAJ060_M02",
+    "MAJ096_M01",
+    "MAJ158_M01",
+    "MAJ182_M01",
+    "MAJ226_M01"
+  ],
+  "context_sha256": {
+    "MAJ018_M01": "3426cc4c5913325df1a053fdd76c40a4419fe08122d9e61deed1e358382c3ccc",
+    "MAJ060_M02": "0ab15f6a6bf7aac70b391a161a4708056c8e8c2db9e2673a525c684e17e1690b",
+    "MAJ096_M01": "cc2e56927adf9c9d79c6245e2d3bf4977ce88a34702b339e5d421e1cfbe116b2",
+    "MAJ158_M01": "06a8dfabbdd8241d6b87d634b47fff04aab549f1254b0f932afd37c0b443003b",
+    "MAJ182_M01": "3cb416763c851604f89d9e6fc082332b00ad4f2babc60669957b6ba71392491b",
+    "MAJ226_M01": "bafcdf3b43d7b579f336fde4080485bf98ae7846917904e4eaa2212b032c8712"
+  },
+  "sources": [
+    "GSE148071",
+    "GSE161529",
+    "GSE178341",
+    "GSE182109",
+    "GSE183904"
+  ],
+  "majors": [
+    "T cell",
+    "Macrophage"
+  ],
+  "cells": 240533,
+  "sample_node_units": 1832,
+  "libraries": 212,
+  "sample_major_units": 424,
+  "seed": 20261014,
+  "max_training_cells_per_source_major": 1500,
+  "max_training_cells": 12000,
+  "heldout_source": "GSE183904",
+  "heldout_role": "internal source-transfer check only; this source has already appeared in previous discovery, never untouched independent validation",
+  "cell_chunk": 1024,
+  "common_gene_symbols": 16625,
+  "normalization": "Native fullRNA count denominator preserved per cell; shared training axis is intersection of actual source genes, not union-zero filling; raw counts plus separately derived full-native TPM/logCP10K",
+  "sampling": "Roundrobin inherited patient/sample blocks within each source-major, seeded random cell queues; no phenotype/RNA/association-based selection; keep original subtype labels and all240533 native-source cells for projection",
+  "acceptance": [
+    "All frozen input and native gene/aggregate SHAs checked",
+    "All240533 frozen global positions/cellIDs/1832units/424sample-major counts exact",
+    "Native fullRNA row sums equal canonical full row sums; fresh fullgene positive/log aggregates compared against accepted per-source cache",
+    "IFNG/R1/R2 raw row positivity equal prior independently audited bits",
+    "Training IDs unique, <=12000, no heldout source, all nonzero source/fullRNA metadata preserved",
+    "Readback audit before actual state model training"
+  ],
+  "expected_files": [
+    "private_native_sources/GSE*.h5ad",
+    "private_training_common_counts.h5ad",
+    "source_scope_summary.tsv",
+    "inventory.json",
+    "independent_readback_audit.json"
+  ],
+  "no_formal_state_labels": true,
+  "scientific_release": false,
+  "status": "PREDECLARED_NOT_STARTED"
+}
