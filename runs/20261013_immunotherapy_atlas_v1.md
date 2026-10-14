@@ -1,7 +1,7 @@
 # 免疫治疗专用单细胞对象与下游 v1
 
 - 授权日期：2026-10-13（UTC+8）。
-- 当前阶段（2026-10-14 11:44 UTC+8）：RNA/15CM完成；16正确CNV库已保存，209秒坐标匹配瓶颈经全gene exact实测，logspace_v2准备复用/加速全400库；最终Zarr未发布。
+- 当前阶段（2026-10-14 11:49 UTC+8）：RNA/15CM完成；logspace_v2运行，16复用+11新success+1skip，真实每库20—47秒；完整400库与最终Zarr待验收。
 - 输入：20261012_public_preprocessed_zarr_v2完整技术合集，Project_v5及历史免疫队列的既有QC/counts与作者临床资料。
 - 来源角色：独立验证/内部复现/机制参照/产品分支/隔离逐原研究登记。不得将Spatial、动物、bulk计为单细胞；CAR-T产品和免疫富集单独标记。
 - 输出：原项目卷新独立run下计数权威对象、降维/图/聚类、major/fine/state/单marker编号描述、逐样本CNV证据与精确回填、CM新发现及旧9CM固定投影；持久化前需阶段实测容量与完整验收。
@@ -50,3 +50,5 @@
 - 03:26:08 UTC正确logspace版本PID153444启动；[AST最小纠正实际验收](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_core_patch_public.json)、[首4真实文库表达/计数/profile](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_first_real_checks_public.json)PASS。新计算继续全400库，旧raw整数直接推断不复用；最终pack使用明确版本CNV结果。
 
 - [真实坐标匹配性能与全gene等价性](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_gene_lookup_benchmark_v1_public.json)：209.178→0.0139秒，基因集合/计数/推断不改；16正确logspace_v1库保留，v2按精确ID/方法/表达门槛复用。
+
+- 03:47:25 UTC v2恢复PID251775（4worker），03:49:46 UTC[真实加速/复用检查点](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_first_recovery_checks_public.json)：28/400库有状态，规范表达全条目误差门槛继续PASS，目标active。

@@ -1,0 +1,39 @@
+{
+  "observed_utc": "2026-10-14T03:49:46.699320+00:00",
+  "n_reused_correct_libraries": 16,
+  "new_library_status_counts": {
+    "success": 11,
+    "skipped": 1
+  },
+  "new_success_elapsed_seconds": [
+    23.282636779360473,
+    25.91502717602998,
+    46.64136818982661,
+    41.56189775513485,
+    20.134552797768265,
+    19.751005361787975,
+    25.91592919221148,
+    35.40638578403741,
+    38.89067303435877,
+    31.250091255642474,
+    26.308541617821902
+  ],
+  "new_success_normalization_max_errors": [
+    4.2740614425440526e-07,
+    4.766884895701651e-07,
+    4.6579831725068743e-07,
+    4.7657096580167035e-07,
+    4.71262950441087e-07,
+    4.760507970047456e-07,
+    4.5129998760273793e-07,
+    4.7659594315518916e-07,
+    4.7588299700862535e-07,
+    4.7071135256260277e-07,
+    4.754840521314918e-07
+  ],
+  "n_target_original_libraries": 400,
+  "final_authority_released": false,
+  "verified_gene_lookup_flags_exact": true,
+  "old_raw_integer_CNV_outputs_not_reused": true,
+  "technical_partial_not_clinical_validation": true
+}
