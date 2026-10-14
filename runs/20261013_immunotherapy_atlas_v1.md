@@ -52,3 +52,5 @@
 - [真实坐标匹配性能与全gene等价性](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_gene_lookup_benchmark_v1_public.json)：209.178→0.0139秒，基因集合/计数/推断不改；16正确logspace_v1库保留，v2按精确ID/方法/表达门槛复用。
 
 - 03:47:25 UTC v2恢复PID251775（4worker），03:49:46 UTC[真实加速/复用检查点](../inventories/runtime/2026-10-14/immune_atlas_v1/CNV_logspace_v2_first_recovery_checks_public.json)：28/400库有状态，规范表达全条目误差门槛继续PASS，目标active。
+
+- 最终接口审计入口`audit_immune_final_interfaces.py`已准备：从实际data4成品重读节点/CNV/图与15个CM频率，依赖逐行原生计数和逐文件复制校验先PASS。当前尚未正式发布。

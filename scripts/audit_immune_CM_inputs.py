@@ -11,7 +11,8 @@ from prepare_immune_CM import material_classes
 
 
 def main(args):
-    obs=read_elem(zarr.open_group(str(args.scratch/'immune_refined.zarr'),mode='r')['obs'])
+    source=getattr(args,'observation_zarr',None) or args.scratch/'immune_refined.zarr'
+    obs=read_elem(zarr.open_group(str(source),mode='r')['obs'])
     yes=lambda v:v.astype(str).str.lower().isin(['true','1'])
     eligible=yes(obs.CM_composition_eligible)&~yes(obs.annotation_exclude_from_primary)&~yes(obs.ex_vivo_stimulation)&~obs.major.astype(str).isin(['Unresolved','T_NK_boundary'])
     car=obs.analysis_role.astype(str).eq('CAR_product');capture=obs.capture_scope.astype(str)
@@ -62,10 +63,12 @@ def main(args):
     report=dict(observed_utc=datetime.now(timezone.utc).isoformat(),status='PASS_SAVED_CM_INPUTS_RECOUNTED_FROM_ALL_CELL_METADATA',
         n_atlas_cells=len(obs),all_ready_scopes=len(rows),source_and_patient_blocks_exact=True,scopes=rows,
         not_biological_or_clinical_validation=True)
-    with (args.run/'manifests/CM_input_recount_v1_public.json').open('x') as f:json.dump(report,f,indent=2)
+    destination=getattr(args,'report',None) or args.run/'manifests/CM_input_recount_v1_public.json'
+    with destination.open('x') as f:json.dump(report,f,indent=2)
     print(json.dumps(report),flush=True)
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True);p.add_argument('--scratch',type=Path,required=True)
+    p.add_argument('--observation-zarr',type=Path);p.add_argument('--report',type=Path)
     main(p.parse_args())
