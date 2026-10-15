@@ -1,0 +1,16 @@
+{
+  "source_sha256": "0e50b2dc4bb4942099792bc78b3b78319d463ddc87c5e0aabf402d903bb14364",
+  "exact_reconstruction_pass": true,
+  "parts": [
+    {
+      "file": "programme_pair_associations_part01.tsv",
+      "rows": 6968,
+      "sha256": "3a755924e95cc0088d9d47d15060ee02671bd69d0a7c55d0a97f7d5996aad072"
+    },
+    {
+      "file": "programme_pair_associations_part02.tsv",
+      "rows": 4748,
+      "sha256": "0d13e2162e2cbd1972b0d23463fb753989765b3237332b7d9efb50cdc9dc61fd"
+    }
+  ]
+}

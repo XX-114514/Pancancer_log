@@ -1,0 +1,31 @@
+{
+  "frozen_UTC": "2026-10-15T00:02:21.438613+00:00",
+  "producer_sha256": "063a3ccbc16bd3084aeec32d31911d1e862f6424285cebc5292e81898ea94007",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "sensitivity_inventory_sha256": "f6aafabeec2d12381d86facadf5270197c26bbe17428ed9751ace738a8f906fc",
+  "edges_sha256": "f8937311f72d7deb0dd0b3fc87aee463dbba0db8f6b064b03cb396c4f4f7226c",
+  "seed": 2026101502,
+  "min_blocks": 20,
+  "min_residual_df": 10,
+  "permutations": 20000,
+  "bootstraps": 0,
+  "min_valid_bootstraps": 1900,
+  "scope": "All60 unique frozen CM pairs, all algorithm-stable dictionary programmes; current frozen stratum and eligible units. No LR/clinical selection. Shared CM and K variants do not imply independent biological evidence.",
+  "unit": "Equal-library means within inherited reviewed_patient or sample_fallback block, only paired libraries with both original nodes >=20 cells.",
+  "covariates": [
+    "log1p_cells_A",
+    "log1p_cells_B",
+    "within_major_proportion_A",
+    "within_major_proportion_B",
+    "log1p_mean_RNA_A",
+    "log1p_mean_RNA_B",
+    "log1p_mean_detected_A",
+    "log1p_mean_detected_B"
+  ],
+  "test": "Partial rank correlation conditional on all8 prespecified covariates; Freedman-Lane permuted rank residuals at block level; pairwise block bootstrap reranks scores; one BH family all finite tests. No automatic collinearity deletion.",
+  "limitations": "Candidate discovery and tests share sources; sample fallback not reviewed independent patient; foreign/basic expression flags retained; no confirmed LR or mechanism.",
+  "numerical_degeneracy": "Rank residual norm <=1e-12 times original centered rank norm (floor1) is zero, no effect estimated.",
+  "prior_results_sha256": "0e50b2dc4bb4942099792bc78b3b78319d463ddc87c5e0aabf402d903bb14364",
+  "precision_reason": "81 of11716 hypotheses hit the1/2001 floor; minimumBH0.0723. Uniform fixed20000 permutations over identical full family, no outcome-specific selection or stopping. All effects and original2000-bootstrap CIs must agree and are inherited; no new bootstrap.",
+  "status": "UNIFORM_MONTE_CARLO_PRECISION_RECOMPUTATION_PRESERVING_V1"
+}
