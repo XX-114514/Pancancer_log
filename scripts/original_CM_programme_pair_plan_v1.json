@@ -1,0 +1,28 @@
+{
+  "frozen_UTC": "2026-10-14T23:57:27.555338+00:00",
+  "producer_sha256": "d5301bbb62c42a1d90f4249de67d4247945e248ecb429e0b35514d2ec3f2ca4b",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "sensitivity_inventory_sha256": "f6aafabeec2d12381d86facadf5270197c26bbe17428ed9751ace738a8f906fc",
+  "edges_sha256": "f8937311f72d7deb0dd0b3fc87aee463dbba0db8f6b064b03cb396c4f4f7226c",
+  "seed": 20261015,
+  "min_blocks": 20,
+  "min_residual_df": 10,
+  "permutations": 2000,
+  "bootstraps": 2000,
+  "min_valid_bootstraps": 1900,
+  "scope": "All60 unique frozen CM pairs, all algorithm-stable dictionary programmes; current frozen stratum and eligible units. No LR/clinical selection. Shared CM and K variants do not imply independent biological evidence.",
+  "unit": "Equal-library means within inherited reviewed_patient or sample_fallback block, only paired libraries with both original nodes >=20 cells.",
+  "covariates": [
+    "log1p_cells_A",
+    "log1p_cells_B",
+    "within_major_proportion_A",
+    "within_major_proportion_B",
+    "log1p_mean_RNA_A",
+    "log1p_mean_RNA_B",
+    "log1p_mean_detected_A",
+    "log1p_mean_detected_B"
+  ],
+  "test": "Partial rank correlation conditional on all8 prespecified covariates; Freedman-Lane permuted rank residuals at block level; pairwise block bootstrap reranks scores; one BH family all finite tests. No automatic collinearity deletion.",
+  "limitations": "Candidate discovery and tests share sources; sample fallback not reviewed independent patient; foreign/basic expression flags retained; no confirmed LR or mechanism.",
+  "numerical_degeneracy": "Rank residual norm <=1e-12 times original centered rank norm (floor1) is zero, no effect estimated."
+}

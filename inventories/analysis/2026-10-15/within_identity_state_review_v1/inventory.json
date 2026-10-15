@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_WITHIN_IDENTITY_STRATUM_DESCRIPTIVE_REVIEW_NOT_FORMAL_STATES",
+  "observed_UTC": "2026-10-14T23:52:41.862551+00:00",
+  "producer_sha256": "f07616d531959dddd0f1b316fcd683d142cdd71519236df384117a6e6a34026b",
+  "audit_inventory_sha256": "d2a3f6eb66abd8880a89a0a9bc5c36cec462926347122df90d8ad9f45b5e170c",
+  "sensitivity_inventory_sha256": "f6aafabeec2d12381d86facadf5270197c26bbe17428ed9751ace738a8f906fc",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "cells": 4532933,
+  "sample_node_units": 35567,
+  "rows": 59841,
+  "no_inference_p_values": true,
+  "notes": "Source-major records inherit repeated-library/patient units; descriptive correlations only. Node R2 and partial ranks measure association, not causal correction. Coverage includes all eligible measurements, no quantile state allocation.",
+  "output_sha256": {
+    "within_identity_stratum_programme_review.tsv": "70adda75ced66d970d44f23bc3a92263994d64361de9c5b48aebe2d6913de35d"
+  },
+  "formal_states": false
+}
