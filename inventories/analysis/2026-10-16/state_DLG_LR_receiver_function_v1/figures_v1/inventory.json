@@ -1,0 +1,13 @@
+{
+  "status": "ALL14_BH_RECORDS_PLOTTED_WITH_MISSING_INTERVALS_EXPLICIT",
+  "producer_sha256": "5ce21c053638d45be57db324bcf799097b496d7697d470ee68062b563372f305",
+  "primary_inventory_sha256": "7565bf43f51fad95fa296bb16ce7996ac360c826557a577054927cde5225a4d1",
+  "records": 14,
+  "qualifying_intervals": 6,
+  "files": {
+    "all14_BH_LR_forest_and_coverage.png": "e3f9d0fd74161d1a23730fbbfb316f99666acd53cd6662da823e8e0ed413152d",
+    "all14_BH_LR_forest_and_coverage.pdf": "208850322c1e38d54fac4d907c8babd1f704bc20e6d660b5c70ff949a4e73b16",
+    "all14_BH_LR_forest_and_coverage.svg": "6f840e02bdfae887409b0aa2ad9294c4377d4080cd86934cbb621140cf445aa0",
+    "all14_plotted_records.tsv": "6438e08b4f7ed72c6fa3419ca68001e84fc5320e01e3951a14234c255d2f6b3e"
+  }
+}
