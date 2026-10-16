@@ -1,0 +1,21 @@
+{
+  "scope": "All814 frozen programmes (unmeasurable NA) and3 fixed DDIT3 RNA readouts across19 GSE273952 libraries. Mixed spots; not cell-intrinsic states.",
+  "endpoints_frozen": [
+    "NAMPT_neighbour_mean_logCP10K",
+    "RNA_DDIT3_TARGETS_SIGNED",
+    "RNA_DDIT3_TARGETS_POS",
+    "RNA_DDIT3_TARGETS_NEG"
+  ],
+  "graph": "Six immediate Visium hex neighbours within library; author-folded regions excluded; no self edges.",
+  "primary_programme_descriptor": "Moran I of continuous programme scores after logRNA/logdetected and categorical author TLS/tumour-region adjustment within each library. Descriptive only.",
+  "primary_LR_descriptor": "Partial Spearman between neighbour mean NAMPT logCP10K and each fixed receiver-target RNA readout, controlling own NAMPT, both ITGA5/ITGB1 logCP10K, own RNA/detected, author TLS/tumour categorical regions. No cell-pair assignment or binding claim.",
+  "sensitivity": "Add old six-major fractions (five with Epithelial fixed reference). This lacks endothelium/fibroblast and is explicitly incomplete; not accepted full composition correction. Spatial x/y polynomial gradient adjustment separately.",
+  "minimum_spots": 200,
+  "model_gate": "Full rank with numerical condition number below1e8 and residual df at least100, every endpoint has variation. No data-selected removal of required covariates.",
+  "summary": "Every library retained privately; public only cohort medians/IQR/min/max/positive-negative counts and leave-one-library median range. No pvalues or inferential CI: patient independence not reviewed and spatial RNA association alone is not mechanism.",
+  "unknown": "Missing author region remains UNKNOWN; unmeasurable programme remains NA. Folded regions excluded only by author label. No high-low score threshold.",
+  "clinical_outcomes": false,
+  "formal_state_or_mechanism_claim": false,
+  "partial_composition_covariates": "five legacy fractions, Epithelial fixed reference; total abundance unavailable and not fabricated",
+  "producer_sha256": "b0938928ad0705d45e7f97712eddf8e3152586c597d5800ac59bd8e7285d4d30"
+}
