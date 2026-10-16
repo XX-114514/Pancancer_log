@@ -82,3 +82,13 @@
 本轮没有重新访问论文全文或服务器审计，既有导入依据来自已提交run及完全相同的本地附件指纹；没有新下载、上传附件或统计检验。只追加本日志与年度daily，原权威身份、CM、模型及其他任务文件保持。发布前执行diff和隐私人工检查、仓库验证及普通提交推送，独立核验云端SHA后再声明同步。建议提交：Recheck author supplement scope without duplicating inputs。
 
 本次git diff --check通过，仓库验证0错误、1项既有警告；人工审查两份diff无患者行、学习列表或科学效果表。仅显式提交同任务日志与年度daily；云端结果以随后独立回执为准。
+
+## 2026-10-16 19:05 UTC /2026-10-17 03:05 UTC+8 附件用途定向只读核查
+
+用户再次询问所给附件是否需要。开始前HEAD为ac64ccfe20343207017283a664de5defb002a45b，保留所有原有未跟踪文件。依Spreadsheets只读流程使用bundled Python/openpyxl检查S1及shasum复核指纹；仍为a3e217eaf201be1b4e697e6622d4a26f56679bdbf9e4934c5b413f08e6b711a9，与10月14日原件一致。重新核临床字段、精确Pre/Post配对、malignant至GCB_DZ计数及总数一致性、二分类和连续病理退缩的跨时点相容性，科学汇总仅用于已授权对话，不写公共仓库。
+
+这是已接入并用于头颈癌临床/作者细胞组成研究的资料，重复附件不增加独立验证。它没有逐细胞标签/表达或生存随访终点，不能单独确认通讯或补齐肺癌随访。后续使用以较晚作者状态临床run为准，不把原表初次导入时未运行临床当作当前状态。本轮没有重新访问服务器或论文全文，没有新下载、上传、效应检验或标签改写。
+
+已读AGENTS、README、STATUS、TODO、ROADMAP、RUNTIME_SYNC、同任务日志、年度daily及相关run/原审计脚本。首次多文件日志patch因daily标题锚点不匹配而整体未应用，之后采用明确文件末尾追加，保留原内容。只追加同任务日志及年度daily；验证/diff与隐私审查后显式提交、普通push并独立核验云SHA。下一仍按现有科学路线推进，不因重复附件重开已收束检验。建议提交：docs: confirm existing HNSCC supplement scope from supplied workbook。
+
+本轮git diff --check通过，仓库验证为0错误、1项既有路径警告；人工审阅两份日志diff，不含患者行、学习列表或科学结果表。仅显式提交这两份日志，普通push及独立SHA以随后的回执为准。
