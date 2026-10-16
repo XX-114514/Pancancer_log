@@ -1,0 +1,12 @@
+{
+  "status": "ACCEPTED_ALL14_DIALOGUE_CONTEXTS_ALL28_COUNT_ID_PCA_QC_READBACK",
+  "observed_UTC": "2026-10-16T04:32:09.141652+00:00",
+  "audit_code_sha256": "c226ef48cdc83f8689be473b2968c832144622e5cc340172e909c18b6094d27a",
+  "input_inventory_sha256": "2a036da127778b01d5ebd62d050eb5e1fb416e37a106a5ff65a506df69881fb6",
+  "contexts": 14,
+  "sides": 28,
+  "cell_context_records": 64996,
+  "max_logexpr_error": 1.7763568394002505e-15,
+  "biological_or_MCP_validation": false,
+  "checks_sha256": "74013f550be3b8a65955e343a169ffc6f50be2298ba3c914786e22e0a78c2747"
+}

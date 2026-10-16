@@ -1,0 +1,9 @@
+"context"	"type"	"program"	"discovery_cells"	"holdout_cells"	"max_saved_score_error"	"active_genes"	"training_only_transform"
+445	"typeA"	"MCP1"	1833	0	0	67	TRUE
+445	"typeA"	"MCP2"	1833	0	0	175	TRUE
+445	"typeB"	"MCP1"	2124	0	0	65	TRUE
+445	"typeB"	"MCP2"	2124	0	0	210	TRUE
+446	"typeA"	"MCP1"	1288	0	0	34	TRUE
+446	"typeA"	"MCP2"	1288	0	0	93	TRUE
+446	"typeB"	"MCP1"	1703	0	0	65	TRUE
+446	"typeB"	"MCP2"	1703	0	0	116	TRUE

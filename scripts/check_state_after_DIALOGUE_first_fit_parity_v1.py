@@ -1,0 +1,5 @@
+from pathlib import Path
+import os,json,hashlib,subprocess
+V=Path(os.environ['PANCANCER_STATE_MODEL_OUTPUT_ROOT']);R=Path(os.environ['PANCANCER_PREFLIGHT_ROOT']);a=json.loads((V/'state_after_DIALOGUE_input_acceptance_20261016_v2/inventory.json').read_text());assert a['status'].startswith('ACCEPTED_ALL14');plan=json.loads(Path('/tmp/state_after_DIALOGUE_projection_plan_v1.json').read_text());p=Path('/tmp/project_state_after_DIALOGUE_frozen_v1.R');assert hashlib.sha256(p.read_bytes()).hexdigest()==plan['scripts'][p.name]
+# Read the current completed-context table once; no incomplete models or test selection.
+r=subprocess.run([os.environ['PANCANCER_DIALOGUE_RSCRIPT'],str(p),str(V/'state_after_DIALOGUE_inputs_20261016_v3'),str(V/'state_after_DIALOGUE_models_20261016_v2'),str(V/'state_after_DIALOGUE_projection_preflight_20261016_v1'),str(R.parent/plan['runtime_directory']),str(R/'all_CM_state_native_input_preflight_20261014_v1/private_all_frozen_sample_node_units.tsv.gz')],timeout=1800);assert r.returncode==0
