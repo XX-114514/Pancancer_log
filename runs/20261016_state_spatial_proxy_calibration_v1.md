@@ -36,3 +36,8 @@
 ## 后续原生输入独立审计
 
 09:46:46 UTC /17:46:46 UTC+8完成全部91447身份/数量、2092真实canonical细胞及92925官方完整UCell参考值复核，误差0；全基因值新鲜重读范围为2092细胞，不偷换为全部91447。全细胞完整/部分/去共享基因手算审计已启动等待最终校准。证据见[TF与原生输入验收](../inventories/analysis/2026-10-16/state_DLG_TF_and_native_acceptance_v1/RESULTS.md)。
+
+
+## 2026-10-16T10:11:06.989555+00:00 /UTC+8 2026-10-16T18:11:06.989555+08:00 后续独立审计未通过与v2修正
+
+91447全计算终止，但审计发现float32/float64块均值使并列秩不同，v1未验收。新v2只重算块均值描述，全部细胞评分及其他字段保留，重新独立验收pending。[失败与修正证据](../inventories/analysis/2026-10-16/state_spatial_proxy_precision_repair_v2/RESULTS.md)。

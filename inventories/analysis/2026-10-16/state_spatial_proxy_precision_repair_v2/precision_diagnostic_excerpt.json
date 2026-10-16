@@ -1,0 +1,19 @@
+{
+  "evidence_observed_UTC": "2026-10-16T10:11:06.989555+00:00",
+  "original_independent_audit_finished_UTC": "2026-10-16T10:04:54.388190+00:00",
+  "original_independent_audit_status": "TERMINAL_FAILED",
+  "exit_code": 1,
+  "first_file": "GSE115978::B cell",
+  "example_programme": "ACN_B_cell_K15_04",
+  "analysis_blocks": 10,
+  "stored_and_float32_block_rho": 0.406060606060606,
+  "float64_block_rho": 0.3890595479552414,
+  "max_proxy_block_mean_difference": 7.152557368605983e-08,
+  "max_full_reference_block_mean_difference": 4.470348358154297e-08,
+  "proxy_tie_groups_float32": 0,
+  "proxy_tie_groups_float64": 1,
+  "source": "Captured real diagnostic output; no individual block scores or identifiers included.",
+  "all_cell_scores_recomputed": false,
+  "repair_started_UTC": "2026-10-16T10:09:00.323047+00:00",
+  "repair_scientifically_accepted": false
+}
