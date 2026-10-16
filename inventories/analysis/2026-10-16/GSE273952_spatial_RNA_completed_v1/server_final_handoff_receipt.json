@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE_REQUESTED_EXPLORATORY_ATTEMPT_NOT_FORMAL_STATE_OR_MECHANISM_ACCEPTANCE",
+  "observed_UTC": "2026-10-16T11:34:23.639711+00:00",
+  "handoff_sha256": "5f67d5771e3ffcdd25d40a4fcf23a7b36a29d45dbc3716e5a4c7409d40838ca3",
+  "scope_sha256": "c452f2e15a792f8446c63ed63a73a61c7334d625733fc8d96875a61949581bd6",
+  "refresh_exit_code": 0,
+  "remaining_active_registered_jobs": 0,
+  "scientific_acceptance": false
+}

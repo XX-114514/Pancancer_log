@@ -1,0 +1,23 @@
+annotation	region	spots	nonfolded_spots	libraries_with_region
+TLS_primary	UNKNOWN_EMPTY	36004	35941	11
+TLS_primary	Folded area	433	0	2
+TLS_primary	NO_TLS	34301	34301	8
+TLS_primary	TLS_PFL	14	14	1
+TLS_primary	TLS_SFL	38	38	1
+TLS_primary	TLS_immature	564	564	7
+TLS_primary	TLS_sain	44	44	1
+TLS_secondary	UNKNOWN_EMPTY	36471	36038	9
+TLS_secondary	Folded area	63	0	1
+TLS_secondary	NO_TLS	33758	33758	10
+TLS_secondary	TLS_CD21NA_CD23NA	6	6	1
+TLS_secondary	TLS_CD21NA_CD23neg	256	256	3
+TLS_secondary	TLS_NA	12	12	1
+TLS_secondary	TLS_SFL	188	188	4
+TLS_secondary	TLS_immature	644	644	7
+tumor_zone	UNKNOWN_EMPTY	3	3	3
+tumor_zone	Folded area	407	0	1
+tumor_zone	Folded_area	63	0	1
+tumor_zone	NO_Tumor	1353	1353	1
+tumor_zone	NO_tumor	12451	12438	17
+tumor_zone	Tumor	53772	53759	18
+tumor_zone	Tumor zone	3349	3349	1

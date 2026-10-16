@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL71398_HEX_GRAPH_INDEPENDENT_KDTREE_EXACT_EDGE_RECONSTRUCTION_AND_PARTIAL_FRACTIONS",
+  "observed_UTC": "2026-10-16T11:19:21.867886+00:00",
+  "auditor_sha256": "6850a58ae37f804f6e6e0d81f1af821168567587608c1d308fae711bfadb0a01",
+  "input_inventory_sha256": "c97595966ea960dec2eb5aa919f300afc68845721dc7789817679f9d6b3ab44f",
+  "private_geometry_sha256": "0d7c6ebf17858ef127436ec28cc1827b8e9d3e1bfc8354c0037f36f9d60f0e26",
+  "spots": 71398,
+  "undirected_edges": 203981,
+  "old_fractions_complete_TME": false,
+  "clinical_outcomes_used": false,
+  "biological_validation": false,
+  "complete_server_inventory_sha256": "5cc1376909f440fda0e2b306d7eff063382db8bc7a63dbc63af3e335a142650d"
+}

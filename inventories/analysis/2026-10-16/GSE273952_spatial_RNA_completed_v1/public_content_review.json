@@ -1,0 +1,156 @@
+{
+  "status": "PASS_EXPLICIT6_SCALAR5_COHORT_OR_REGION_AGGREGATES_ALL_TEXT_CLOSED_DOMAINS_NUMERIC_FIELDS",
+  "observed_UTC": "2026-10-16T11:27:17.747085+00:00",
+  "producer_sha256": "8639a20b58f0f395cc2f09948c7783b8662f1af25aab85975409161b58beeeca",
+  "files": [
+    {
+      "file": "GSE273952_frozen_programme_projection_20261016_v1_scalar.json",
+      "bytes": 1640,
+      "sha256": "4bdecf0a5263429e91db7e8cdca790001121abc294db5f8feefb5431e5757a91"
+    },
+    {
+      "file": "GSE273952_spatial_neighbourhood_preflight_20261016_v1_scalar.json",
+      "bytes": 2166,
+      "sha256": "86ae56ccfb38e01640547b8178ff3656a4201ced52a1ef3fe9b11bcfee84db76"
+    },
+    {
+      "file": "GSE273952_spatial_RNA_descriptors_20261016_v1_scalar.json",
+      "bytes": 1315,
+      "sha256": "665fb7380ee8380a7f1aa5d586ce36f49602a3a7027158158db4994647a9f56a"
+    },
+    {
+      "file": "GSE273952_frozen_programme_independent_audit_20261016_v1_scalar.json",
+      "bytes": 767,
+      "sha256": "a63873cb0c60ffbdb6562f13b9d0be46910aa5ae1e5b732e36d24ad3089e6449"
+    },
+    {
+      "file": "GSE273952_spatial_geometry_audit_20261016_v1_scalar.json",
+      "bytes": 706,
+      "sha256": "91bfa87c5552f670f9e3a399a41f4b7af9b8c8279522ff7abbd7e3c6adf95df2"
+    },
+    {
+      "file": "GSE273952_spatial_RNA_descriptors_audit_20261016_v1_scalar.json",
+      "bytes": 742,
+      "sha256": "45eb5ae09bf5906a9f11193cc8bce46d0b4a6a8e7b27a75ddbcfe546e9f2e2c3"
+    },
+    {
+      "file": "public_all817_programme_measurement_scope.tsv",
+      "bytes": 92502,
+      "sha256": "6c3e80727d0880f386f54035362c0c8721d7d5d4d86a6d9f1f1cbc8cda0c9f20"
+    },
+    {
+      "file": "public_all817_cohort_RNA_score_summary.tsv",
+      "bytes": 137681,
+      "sha256": "f918d04dc5431681260fdc03be7f39b66de60d27eb59835859ef2a13490a0248"
+    },
+    {
+      "file": "public_author_region_coverage_aggregate.tsv",
+      "bytes": 803,
+      "sha256": "b94ffc307e56b6b60c9c32654ec080582416c0069aeb571b063aa8646cad194c"
+    },
+    {
+      "file": "public_all2451_programme_spatial_descriptors.tsv",
+      "bytes": 526183,
+      "sha256": "34d805232adb3e1869f0cabab22d39a0a496a8c133da175de21a4c3ff2413df1"
+    },
+    {
+      "file": "public_all9_neighbour_NAMPT_target_RNA_descriptors.tsv",
+      "bytes": 2253,
+      "sha256": "20fb146ff0bf97d01147ae7fee1a346bce93186cdb5f9413ba2b7637eb382e7b"
+    }
+  ],
+  "table_schemas": [
+    {
+      "file": "public_all817_programme_measurement_scope.tsv",
+      "rows": 817,
+      "columns": [
+        "programme_id",
+        "role",
+        "signature_genes",
+        "measured_physical_genes",
+        "measurement_gate",
+        "allowed_single_cell_majors",
+        "spot_cell_identity_assigned",
+        "formal_state"
+      ],
+      "all_text_closed_domains": true,
+      "no_participant_spot_library_rows_or_clinical_outcomes": true
+    },
+    {
+      "file": "public_all817_cohort_RNA_score_summary.tsv",
+      "rows": 817,
+      "columns": [
+        "programme_id",
+        "valid_spots",
+        "mean_score",
+        "q10",
+        "median_score",
+        "q90",
+        "interpretation"
+      ],
+      "all_text_closed_domains": true,
+      "no_participant_spot_library_rows_or_clinical_outcomes": true
+    },
+    {
+      "file": "public_author_region_coverage_aggregate.tsv",
+      "rows": 22,
+      "columns": [
+        "annotation",
+        "region",
+        "spots",
+        "nonfolded_spots",
+        "libraries_with_region"
+      ],
+      "all_text_closed_domains": true,
+      "no_participant_spot_library_rows_or_clinical_outcomes": true
+    },
+    {
+      "file": "public_all2451_programme_spatial_descriptors.tsv",
+      "rows": 2451,
+      "columns": [
+        "model",
+        "programme_id",
+        "libraries_total",
+        "libraries_estimable",
+        "positive_libraries",
+        "negative_libraries",
+        "median",
+        "q25",
+        "q75",
+        "minimum",
+        "maximum",
+        "leave_one_library_median_min",
+        "leave_one_library_median_max",
+        "inference_pvalue_computed",
+        "cell_intrinsic_or_mechanism_validation"
+      ],
+      "all_text_closed_domains": true,
+      "no_participant_spot_library_rows_or_clinical_outcomes": true
+    },
+    {
+      "file": "public_all9_neighbour_NAMPT_target_RNA_descriptors.tsv",
+      "rows": 9,
+      "columns": [
+        "model",
+        "endpoint",
+        "libraries_total",
+        "libraries_estimable",
+        "positive_libraries",
+        "negative_libraries",
+        "median",
+        "q25",
+        "q75",
+        "minimum",
+        "maximum",
+        "leave_one_library_median_min",
+        "leave_one_library_median_max",
+        "inference_pvalue_computed",
+        "cell_intrinsic_or_mechanism_validation"
+      ],
+      "all_text_closed_domains": true,
+      "no_participant_spot_library_rows_or_clinical_outcomes": true
+    }
+  ],
+  "private_spot_and_per_library_rows_not_included": true,
+  "raw_expression_or_clinical_data_not_included": true
+}

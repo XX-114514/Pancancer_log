@@ -1,0 +1,22 @@
+{
+  "status": "ALL19_LIBRARIES_FROZEN_SPATIAL_RNA_DESCRIPTORS_COMPLETE_PENDING_INDEPENDENT_AUDIT_NOT_MECHANISM",
+  "observed_UTC": "2026-10-16T11:26:23.168867+00:00",
+  "producer_sha256": "b0938928ad0705d45e7f97712eddf8e3152586c597d5800ac59bd8e7285d4d30",
+  "plan_sha256": "47e4df6d34e4c407f109201c20607ea3c4ceb4a5fe4f876c0280edd1c37145dd",
+  "projection_inventory_sha256": "e2d6b55700712bc7896328fa1a5c944ee642ad6a448282f64fd052d924f169ce",
+  "projection_audit_sha256": "27d49af833bc87b2f07045a73114b75d92454e47059616d3d33cf6ff9a0622ed",
+  "geometry_audit_sha256": "5cc1376909f440fda0e2b306d7eff063382db8bc7a63dbc63af3e335a142650d",
+  "programmes": 817,
+  "library_model_programme_records": 46569,
+  "fixed_LR_RNA_records": 171,
+  "model_designs": 114,
+  "pvalues_computed": false,
+  "patient_independence_reviewed": false,
+  "legacy6_composition_incomplete": true,
+  "formal_spatial_cellstate_or_mechanism_validation": false,
+  "public_outputs": {
+    "public_all2451_programme_spatial_descriptors.tsv": "34d805232adb3e1869f0cabab22d39a0a496a8c133da175de21a4c3ff2413df1",
+    "public_all9_neighbour_NAMPT_target_RNA_descriptors.tsv": "20fb146ff0bf97d01147ae7fee1a346bce93186cdb5f9413ba2b7637eb382e7b"
+  },
+  "complete_server_inventory_sha256": "2c0cc821074f5a1f87c4f61554e6ef2d10daade630cd040ecb75a57235f63d93"
+}

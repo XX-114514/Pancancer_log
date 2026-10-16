@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ALL_FROZEN_SPATIAL_MORAN_LR_RNA_DESIGNS_EFFECTS_AND_COHORT_SUMMARIES_INDEPENDENT_LEAST_SQUARES",
+  "observed_UTC": "2026-10-16T11:27:06.526241+00:00",
+  "auditor_sha256": "5f7219d0a90b76a74e19e9d725ccaad36ae78445cdbd7bc58155394a0caae935",
+  "producer_inventory_sha256": "2c0cc821074f5a1f87c4f61554e6ef2d10daade630cd040ecb75a57235f63d93",
+  "Moran_records_checked": 46569,
+  "LR_RNA_records_checked": 171,
+  "model_designs_checked": 114,
+  "max_Moran_error": 9.936496070395151e-15,
+  "max_partial_rho_error": 2.498001805406602e-16,
+  "pvalues_or_patient_independence_claim": false,
+  "biological_validation": false,
+  "complete_server_inventory_sha256": "e369443175d4ebdc7bfb37304b336e3de8a10bdf4d49485d64bd20e43489bdba"
+}

@@ -1,0 +1,121 @@
+{
+  "status": "PASS_FROZEN_STATE_DISCOVERY_NATIVE_PROJECTION_ORIGINAL_CM_DIALOGUE_LR_TF_AND_ACTUAL_SPATIAL_EXPLORATION_ATTEMPT_SCOPE",
+  "observed_UTC": "2026-10-16T11:33:26.783383+00:00",
+  "auditor_sha256": "4062d7d0235ff85a1502ecfa0b35c91b7399205ad69a9713e669ded45083a063",
+  "frozen_programmes": 814,
+  "method_records": {
+    "cNMF": 810,
+    "Spectra": 4
+  },
+  "evidence": [
+    {
+      "relative_evidence": "all_lineage_state_candidate_dictionary_20261014_v4/frozen_programme_dictionary.json",
+      "sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+      "recorded_status": "FROZEN_DICTIONARY",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "all_source_native_UCell_projection_20261014_v2/inventory.json",
+      "sha256": "e45f75dbe2ee77c10f1aa44a059e1a24c974ac0011032ddde1980435e36f00c7",
+      "recorded_status": "COMPLETE_ALL4532933_NATIVE_UCELL_PENDING_INDEPENDENT_AUDIT",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "all_source_native_UCell_audit_aggregation_20261014_v2/inventory.json",
+      "sha256": "d2a3f6eb66abd8880a89a0a9bc5c36cec462926347122df90d8ad9f45b5e170c",
+      "recorded_status": "PASS_ALL4532933_IDENTITIES_SUPPORT_MASKS_AND_SAMPLED_MANUAL_UCELL_WITH_PRIVATE_UNIT_MEANS",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "original_CM_programme_pair_associations_20261015_v2/inventory.json",
+      "sha256": "798ffee075584f59dd5fd60f0c70790b0713cb0563dc7d0d95f54d7a5e06c298",
+      "recorded_status": "COMPLETE_FIXED_ORIGINAL60_STATE_PROGRAMME_PAIRS_NOT_LR_MECHANISM",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "state_after_DIALOGUE_frozen_projection_20261016_v1/inventory.json",
+      "sha256": "eed84449facbcdfa49fc64a6438304900e98f3bc5db6ddbd2c9fff18ce458bb5",
+      "recorded_status": "ALL_SUPPORTED_SLOTS_ATTEMPTED_REVIEW_PER_SLOT_PARITY_AND_INTERNAL_HOLDOUT_NOT_EXTERNAL_VALIDATION",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "state_after_DIALOGUE_LR_response_20261016_v1/inventory.json",
+      "sha256": "7565bf43f51fad95fa296bb16ce7996ac360c826557a577054927cde5225a4d1",
+      "recorded_status": "ALL258944_LR_RECEIVER_SLOTS_ACCOUNTED_EXPLORATORY_NOT_EXTERNAL_OR_CAUSAL_VALIDATION",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "state_DLG_orthogonal_TF_response_20261016_v1/inventory.json",
+      "sha256": "93ec71c1231e3816fc30dab17b4418174c9b2d4d1e7f0a278dfb1667f58ca335",
+      "recorded_status": "ALL5448_PRIOR_FIXED_DISJOINT_GENE_TF_RESPONSE_SLOTS_ACCOUNTED_NOT_CAUSAL_VALIDATION",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "state_DLG_orthogonal_TF_independent_audit_20261016_v1/inventory.json",
+      "sha256": "f74dd3e22a8a2c438b39db7877d113297b78b063d17a685f11b7696b73dbe99b",
+      "recorded_status": "PASS_ALL5448_OFFICIAL_ULM_ACTIVITIES_ALL_ESTIMABLE_SVD_POINT_HELDOUT_BH_AND_CI_GATES",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "state_DLG_TF_joint_review_20261016_v1/inventory.json",
+      "sha256": "81025d5d10337bf59ee288998513a0d0e89d0ddd46129ae942d1a5db8dfa90dd",
+      "recorded_status": "REVIEWED_ALL5448_50TF_BH_33CI_ONE_PRIMARY_LR_TF_JOINT_RNA_CANDIDATE_NOT_VALIDATED_AXIS",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "state_spatial_partial_panel_calibration_20261016_v2/inventory.json",
+      "sha256": "f4802973cf3ca061b35c0659389572ed513ae012d8e5957bf0bfeae684d515fd",
+      "recorded_status": "ALL91447_PARTIAL_PANEL_SCORES_UNCHANGED_BLOCK_MEANS_FLOAT64_REPAIR_PENDING_INDEPENDENT_AUDIT",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "state_spatial_partial_panel_independent_audit_20261016_v2/inventory.json",
+      "sha256": "3339daf356719ba15a187be2953f0090852cd692588ebeabca1492cb17c367cf",
+      "recorded_status": "PASS_ALL91447_CELL_SPARSE_MANUAL_FULL_PARTIAL_OUTSIDE_UCELL_AND_ALL_IDENTITY_RHOS_SCOPE_SOURCE_SUMMARIES",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "GSE273952_frozen_programme_projection_20261016_v1/inventory.json",
+      "sha256": "e2d6b55700712bc7896328fa1a5c944ee642ad6a448282f64fd052d924f169ce",
+      "recorded_status": "ALL71398_MIXED_SPOTS_814_FROZEN_PROGRAMMES_PLUS3_FIXED_TF_RNA_COMPONENTS_SCORED_PENDING_INDEPENDENT_AUDIT",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "GSE273952_frozen_programme_independent_audit_20261016_v1/inventory.json",
+      "sha256": "27d49af833bc87b2f07045a73114b75d92454e47059616d3d33cf6ff9a0622ed",
+      "recorded_status": "PASS_ALL71398_MIXED_SPOT_FROZEN_AND_SIGNED_UCELL_RAW_COUNTS_SUPPORT_FRACTIONS_AND_COHORT_SUMMARIES",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "GSE273952_spatial_geometry_audit_20261016_v1/inventory.json",
+      "sha256": "5cc1376909f440fda0e2b306d7eff063382db8bc7a63dbc63af3e335a142650d",
+      "recorded_status": "PASS_ALL71398_HEX_GRAPH_INDEPENDENT_KDTREE_EXACT_EDGE_RECONSTRUCTION_AND_PARTIAL_FRACTIONS",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "GSE273952_spatial_RNA_descriptors_20261016_v1/inventory.json",
+      "sha256": "2c0cc821074f5a1f87c4f61554e6ef2d10daade630cd040ecb75a57235f63d93",
+      "recorded_status": "ALL19_LIBRARIES_FROZEN_SPATIAL_RNA_DESCRIPTORS_COMPLETE_PENDING_INDEPENDENT_AUDIT_NOT_MECHANISM",
+      "technical_record_present": true
+    },
+    {
+      "relative_evidence": "GSE273952_spatial_RNA_descriptors_audit_20261016_v1/inventory.json",
+      "sha256": "e369443175d4ebdc7bfb37304b336e3de8a10bdf4d49485d64bd20e43489bdba",
+      "recorded_status": "PASS_ALL_FROZEN_SPATIAL_MORAN_LR_RNA_DESIGNS_EFFECTS_AND_COHORT_SUMMARIES_INDEPENDENT_LEAST_SQUARES",
+      "technical_record_present": true
+    }
+  ],
+  "followup_jobs_all_terminal_zero": true,
+  "original172_and_20261010_CM9_remain_frozen": true,
+  "no_fresh_complete_canonical_matrix_rehash_claim": true,
+  "formal_new_state_names": false,
+  "validated_cross_cancer_communication_mechanism": false,
+  "scientific_unresolved": [
+    "exact172 endpoint spatial identity",
+    "full18major spatial composition reference",
+    "patient identity bridge19libraries",
+    "independent same-cancer validation of source-limited RNA candidate",
+    "protein receptor assembly and causal perturbation"
+  ],
+  "meaning": "The requested exploratory attempt was executed and audited; negative/weak findings retained. This is not formal biological mechanism acceptance."
+}

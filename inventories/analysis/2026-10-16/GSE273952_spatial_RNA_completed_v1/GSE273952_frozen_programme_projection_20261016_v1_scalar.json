@@ -1,0 +1,29 @@
+{
+  "status": "ALL71398_MIXED_SPOTS_814_FROZEN_PROGRAMMES_PLUS3_FIXED_TF_RNA_COMPONENTS_SCORED_PENDING_INDEPENDENT_AUDIT",
+  "observed_UTC": "2026-10-16T11:24:50.585484+00:00",
+  "producer_sha256": "2010bdde05f959d61c73a2d351ecd19bf3a655fccd35ab1b7b7550f23f8e3e78",
+  "plan_sha256": "00a9af36501c10e5d7ffa7e3520aed9cf4b454b328c1daf0c48052e62451cc77",
+  "input_audit_sha256": "814c5abee4b0654274b2c49d27c96bf211e09c935cbafaebe09f78a0cb6cfd4c",
+  "raw_input_sha256": "9035a38d47f82167f9ff69051ca4f9872f2efce6737df6ee121328d363c92c3f",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "fixed_TF_gene_definition_sha256": "7d01b59dc74118c0bfe0713239ee00f1710de2c0562dbf8d1de163693400d2d9",
+  "spots": 71398,
+  "native_genes": 24146,
+  "source_libraries": 19,
+  "columns": 817,
+  "original_programme_measurement_gates": 800,
+  "DDIT3_positive_targets": 49,
+  "DDIT3_negative_targets": 25,
+  "DDIT3_signed_UCell_weight_negative": 1.0,
+  "DDIT3_signed_UCell_negative_scores_clipped_to_zero": true,
+  "synthetic_signed_scores_checked": 12,
+  "case_level_clinical_outcome_values_used": false,
+  "old_deconvolution_results_used": false,
+  "spot_cell_identity_assigned": false,
+  "formal_state_or_spatial_biological_validation": false,
+  "public_outputs": {
+    "public_all817_programme_measurement_scope.tsv": "6c3e80727d0880f386f54035362c0c8721d7d5d4d86a6d9f1f1cbc8cda0c9f20",
+    "public_all817_cohort_RNA_score_summary.tsv": "f918d04dc5431681260fdc03be7f39b66de60d27eb59835859ef2a13490a0248"
+  },
+  "complete_server_inventory_sha256": "e2d6b55700712bc7896328fa1a5c944ee642ad6a448282f64fd052d924f169ce"
+}

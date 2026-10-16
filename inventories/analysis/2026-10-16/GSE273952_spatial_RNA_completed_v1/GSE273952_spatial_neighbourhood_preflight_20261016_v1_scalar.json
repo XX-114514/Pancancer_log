@@ -1,0 +1,67 @@
+{
+  "status": "PASS_ALL71398_ARRAY_GEOMETRY_AUTHOR_REGIONS_AND_LEGACY6_MAJOR_ALIGNMENT_NOT_FULL_COMPOSITION_VALIDATION",
+  "observed_UTC": "2026-10-16T11:17:28.005355+00:00",
+  "producer_sha256": "dab6102a14a6c2c42db41f87d499159da64b30b2bd10f3e289b79f9f1b1be836",
+  "raw_input_sha256": "9035a38d47f82167f9ff69051ca4f9872f2efce6737df6ee121328d363c92c3f",
+  "input_audit_sha256": "814c5abee4b0654274b2c49d27c96bf211e09c935cbafaebe09f78a0cb6cfd4c",
+  "historical_composition_file_sha256": "30f34efc502ceb505bf7c20be56daad87dc97a3230d7318d976ce8a35e2e2ec0",
+  "historical_composition_audit_sha256": "2254e7d475445f9e98b764e1abcd3e0dd899b8a4434874064cda3a586bc085e1",
+  "spots": 71398,
+  "libraries": 19,
+  "folded_region_excluded_spots": 496,
+  "nonfolded_spots": 70902,
+  "undirected_immediate_neighbour_edges": 203981,
+  "max_degree": 6,
+  "isolated_nonfolded_spots": 39,
+  "pixel_neighbour_distance_quantiles": [
+    54.0,
+    218.0022935659164,
+    220.41097976280582
+  ],
+  "library_geometry_summary": {
+    "spots": {
+      "min": 1077,
+      "median": 4213.0,
+      "max": 4964
+    },
+    "edges": {
+      "min": 2866,
+      "median": 11973.0,
+      "max": 14572
+    },
+    "isolated_spots": {
+      "min": 0,
+      "median": 0.0,
+      "max": 14
+    },
+    "components": {
+      "min": 1,
+      "median": 1.0,
+      "max": 27
+    },
+    "largest_component_spots": {
+      "min": 1012,
+      "median": 4181.0,
+      "max": 4964
+    }
+  },
+  "legacy6_major_names": [
+    "B",
+    "Epithelial",
+    "Myeloid",
+    "NK",
+    "Plasma",
+    "T"
+  ],
+  "legacy40_to6_max_sum_error": 2.86102294921875e-06,
+  "legacy_composition_full_TME": false,
+  "legacy_composition_missing_endothelium_and_fibroblast": true,
+  "patient_bridge_reviewed": false,
+  "clinical_outcomes_used": false,
+  "biological_spatial_validation": false,
+  "public_outputs": {
+    "public_author_region_coverage_aggregate.tsv": "b94ffc307e56b6b60c9c32654ec080582416c0069aeb571b063aa8646cad194c"
+  },
+  "private_input_sha256": "0d7c6ebf17858ef127436ec28cc1827b8e9d3e1bfc8354c0037f36f9d60f0e26",
+  "complete_server_inventory_sha256": "c97595966ea960dec2eb5aa919f300afc68845721dc7789817679f9d6b3ab44f"
+}

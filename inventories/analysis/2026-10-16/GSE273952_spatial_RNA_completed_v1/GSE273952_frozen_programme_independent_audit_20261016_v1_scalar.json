@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL71398_MIXED_SPOT_FROZEN_AND_SIGNED_UCELL_RAW_COUNTS_SUPPORT_FRACTIONS_AND_COHORT_SUMMARIES",
+  "observed_UTC": "2026-10-16T11:26:03.369550+00:00",
+  "auditor_sha256": "3c762999d3b3949dc67690054f3b733d4606035be7000ec9005894eb1a780fac",
+  "projection_inventory_sha256": "e2d6b55700712bc7896328fa1a5c944ee642ad6a448282f64fd052d924f169ce",
+  "spots_checked": 71398,
+  "columns": 817,
+  "manual_score_values": 57332594,
+  "max_manual_error": 5.904919198052028e-08,
+  "quantity_values_checked": 117092720,
+  "summary_rows_checked": 817,
+  "clinical_outcomes_used": false,
+  "cell_identity_or_protein_activity_or_biological_validation": false,
+  "complete_server_inventory_sha256": "27d49af833bc87b2f07045a73114b75d92454e47059616d3d33cf6ff9a0622ed"
+}

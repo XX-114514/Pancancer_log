@@ -1,0 +1,15 @@
+{
+  "status": "TWO_FROZEN_SPATIAL_DESCRIPTOR_FIGURES_RENDERED_PENDING_PIXEL_REVIEW",
+  "observed_UTC": "2026-10-16T11:27:28.895547+00:00",
+  "producer_sha256": "97885f1504e7bb3d7bb8fac26c6c0211759f6df771b7fdc786b9a6b40fe9c30a",
+  "descriptor_audit_sha256": "e369443175d4ebdc7bfb37304b336e3de8a10bdf4d49485d64bd20e43489bdba",
+  "pvalues_or_CI_claim": false,
+  "files": {
+    "all_frozen_programme_spatial_sensitivity.png": "ed52a91407c4c423ee2b5296c0648c44dca78d83e6661b37b022149c4efe2bd3",
+    "all_frozen_programme_spatial_sensitivity.pdf": "e9e0cffeba1698aede12e68783cedc818fc60d77ca86ab431bd05c5feee5bcda",
+    "all_frozen_programme_spatial_sensitivity.svg": "9f50260361c4ab0703f75ab94625dfd87a53557af82fa259e474e9691fc5fa47",
+    "fixed_NAMPT_target_RNA_effect_spread.png": "d877adb7495a4f73c1ed03dba6f8100e211a5099612b6d48d9d0c75183abad42",
+    "fixed_NAMPT_target_RNA_effect_spread.pdf": "624ae560aa77fb7e027147d3a82500a6e151022bb6e1e33941e8237c6cf2abaa",
+    "fixed_NAMPT_target_RNA_effect_spread.svg": "94738e756958a963a0e6c389c5eb6949b2b8533cd00ecd7140a9cfe0e63ce985"
+  }
+}

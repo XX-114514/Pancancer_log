@@ -25,3 +25,6 @@ inventories/analysis/2026-10-16/state_DLG_LR_receiver_function_v1/figures_v1/*.s
 inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/**/*.tsv whitespace=-blank-at-eol
 inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/*.tsv whitespace=-blank-at-eol
 inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/*.svg whitespace=-blank-at-eol
+
+# Preserve reviewed spatial descriptor figure SHA.
+inventories/analysis/2026-10-16/GSE273952_spatial_RNA_completed_v1/figures_v1/*.svg whitespace=-blank-at-eol
