@@ -1,0 +1,39 @@
+"""Outcome-free native four-view eligibility, independently recounted from author cells."""
+import hashlib,json,os,re,subprocess
+from collections import Counter
+from datetime import datetime,timezone
+from pathlib import Path
+import numpy as np,pandas as pd
+
+
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+
+
+def main():
+    r=Path(os.environ['PANCANCER_PREFLIGHT_ROOT']);native=r/'NSCLC_full_native_gene_units_20261016_v1';proof=r/'NSCLC_full_native_gene_unit_audit_20261016_v1/private_terminal.json';check=json.loads(proof.read_text());assert check['status'].startswith('PASS_ALL_OUTPUTS_OLD_OVERLAP_');assert check['producer_terminal_sha256']==sha(native/'private_terminal.json')
+    p=native/'private_all_native_units_and_quality.tsv';units=pd.read_csv(p,sep='\t',dtype={'sampleID':str,'sub_cell_type':str});assert len(units)==11701 and units.unit_index.is_unique and not units.duplicated(['sampleID','sub_cell_type']).any();states=units[['major_cell_type','sub_cell_type']].drop_duplicates();assert len(states)==51;lookup=states.set_index('sub_cell_type').major_cell_type;assert lookup.index.is_unique
+    pools={'author_CD8':sorted(x for x in lookup.index if x.startswith('CD8T_')),'author_Treg':sorted(x for x in lookup.index if x.startswith('CD4T_Treg_')),'author_Macrophage':sorted(x for x in lookup.index if x.startswith('Mφ_')),'author_B_Plasma':sorted(lookup[lookup.eq('B cell')].index),'broad_T_NK':sorted(lookup[lookup.eq('T/NK cell')].index),'broad_Myeloid':sorted(lookup[lookup.eq('Myeloid cell')].index),'broad_B_Plasma':sorted(lookup[lookup.eq('B cell')].index)}
+    primary=['author_CD8','author_Treg','author_Macrophage','author_B_Plasma'];assert [len(pools[x]) for x in primary]==[10,3,11,10];assert len(set(sum([pools[x] for x in primary],[])))==sum(len(pools[x]) for x in primary)
+    metadata=r/'GSE243013_NSCLC_immune_scRNA_metadata.csv.gz';assert sha(metadata)=='24155466454df53d01eb6cbbfcd56abeb45adb68f74e721af22a9dce41040b2f';counts=Counter();meta=[]
+    for block in pd.read_csv(metadata,usecols=['sampleID','sub_cell_type','major_cell_type','anti-PD1_therapy','cancer_type'],dtype=str,keep_default_na=False,chunksize=100000):
+        assert block.major_cell_type.eq(block.sub_cell_type.map(lookup)).all()
+        counts.update(block.groupby(['sampleID','sub_cell_type'],observed=True).size().to_dict());meta.append(block[['sampleID','anti-PD1_therapy','cancer_type']].drop_duplicates())
+    md=pd.concat(meta).drop_duplicates().set_index('sampleID');assert md.index.is_unique and len(md)==243 and set(md.index)==set(units.sampleID)
+    observed={(str(x.sampleID),str(x.sub_cell_type)):int(x.n_cells) for x in units.itertuples() if x.n_cells>0};assert dict(counts)==observed and sum(counts.values())==1254749
+    drugs='(?:Tislelizumab|Pembrolizumab|Camrelizumab|Sintilimab|Nivolumab|Toripalimab)';term=drugs+r'(?:\(C\d+(?:-C\d+)?\))?';explicit=re.compile('^'+term+'(?: \\+ '+term+')*$');roles=[]
+    for case,row in md.iterrows():
+        therapy=row['anti-PD1_therapy'];role='EXPLICIT_ICI_AUTHOR_CASE' if therapy=='Yes' or explicit.fullmatch(therapy) else 'NO_ICI' if therapy=='No' else 'AMBIGUOUS_OR_UNKNOWN_ICI';roles.append(dict(sampleID=case,therapy_original=therapy,cancer_type=row.cancer_type,treatment_role=role,reviewed_independent_patient=False))
+    roles=pd.DataFrame(roles).set_index('sampleID');assert roles.treatment_role.value_counts().to_dict()=={'EXPLICIT_ICI_AUTHOR_CASE':232,'NO_ICI':9,'AMBIGUOUS_OR_UNKNOWN_ICI':2}
+    rows=[]
+    for case in sorted(md.index):
+        for pool,labels in pools.items():
+            selected=units[units.sampleID.eq(case)&units.sub_cell_type.isin(labels)];n=int(selected.n_cells.sum());independent=sum(counts.get((case,label),0) for label in labels);assert n==independent;rows.append(dict(sampleID=case,pool=pool,n_cells=n,author_subtypes=len(labels),captured_ge20=n>=20,treatment_role=roles.loc[case,'treatment_role'],cancer_type=roles.loc[case,'cancer_type'],reviewed_independent_patient=False))
+    table=pd.DataFrame(rows);assert len(table)==1701 and not table.duplicated(['sampleID','pool']).any();pivot=table.pivot(index='sampleID',columns='pool',values='n_cells');eligible=sorted(case for case in md.index if roles.loc[case,'treatment_role']=='EXPLICIT_ICI_AUTHOR_CASE' and pivot.loc[case,primary].min()>=20)
+    ordered=sorted(eligible,key=lambda x:hashlib.sha256((x+'|NSCLC_native_four_view|20261017').encode()).hexdigest());cut=int(np.floor(.7*len(ordered)));train=set(ordered[:cut]);test=set(ordered[cut:]);assert not train&test and train|test==set(eligible);roles['discovery_role']=['discovery' if x in train else 'internal_holdout' if x in test else 'excluded_from_four_view_discovery' for x in roles.index];eligible_ready=len(train)>=50 and len(test)>=30
+    out=r/'NSCLC_native_multicell_discovery_preflight_20261016_v1';assert not out.exists();fs=subprocess.check_output(['df','-P',str(r.resolve())],text=True).splitlines()[-1].split()[0];quota=subprocess.check_output(['quota','-g','-v','-w','USER002'],text=True);qr=[s.split() for s in quota.splitlines() if s.split() and s.split()[0]==fs];assert len(qr)==1;free=(int(qr[0][3])-int(qr[0][1].rstrip('*')))*1024;assert free>500_000_000_000+1_073_741_824+268_435_456;out.mkdir(mode=0o700)
+    plan=dict(created_UTC=datetime.now(timezone.utc).isoformat(),code_sha256=sha(__file__),native_audit_sha256=sha(proof),unit_metadata_sha256=sha(p),source_metadata_sha256=sha(metadata),native_features=31831,primary_views=primary,view_author_labels=pools,case_gate='Explicit original antiPD1 therapy, exclude No and unknown/placebo uncertain. Each primary view >=20 original cells. No outcome used. Author sampleID is not a newly reviewed independent patient.',partition='All eligible author cases ordered by fixed SHA(sampleID|NSCLC_native_four_view|20261017); first floor(.7*N) discovery, remainder internal holdout. Need>=50 discovery and>=30holdout. All prior source exploration acknowledged; no project-independent validation claim.',scope='Four disjoint source-author views; full original broad lineage coverage reported as diagnostics, not a favourable alternative model. Original author labels preserved; no old172 mapping or formal state promotion.',method_gate='This stage only establishes eligibility and freezes cases/partition. Native expression views, normalization, quality/mixture controls, learning method, k/penalty and holdout tests must be fixed and independently audited before any new fit. No clinical label or previous trained gene lists enter selection.',new_expression_measurement_or_model_fit=False,new_download=False,quota_free_bytes=free,output_cap_bytes=268_435_456)
+    (out/'plan_before_any_native_discovery_effect.json').write_text(json.dumps(plan,indent=2)+'\n');table.to_csv(out/'private_all1701_case_pool_capture.tsv',sep='\t',index=False);roles.reset_index().to_csv(out/'private_all243_author_case_therapy_partition.tsv',sep='\t',index=False);summary=table.groupby(['pool','treatment_role'],as_index=False).agg(author_cases=('sampleID','size'),captured_cases=('captured_ge20','sum'),cells=('n_cells','sum'));summary.to_csv(out/'private_all_pool_therapy_coverage_summary.tsv',sep='\t',index=False)
+    proof=dict(status='PASS_ALL11701_UNIT_COUNTS_RECOUNTED_FROM1254749_AUTHOR_CELLS_ALL1701_CASE_POOL_COUNTS_AND_FROZEN_FOUR_VIEW_PARTITION',finished_UTC=datetime.now(timezone.utc).isoformat(),code_sha256=sha(__file__),unique_author_cases=243,eligible_author_cases=len(eligible),discovery_cases=len(train),internal_holdout_cases=len(test),eligible_for_next_input_phase=eligible_ready,counts_independent_author_cell_recount_exact=True,case_or_patient_independence_review_completed=False,expression_fit_or_clinical_effects=False,files={p.name:sha(p) for p in out.iterdir() if p.is_file()});(out/'private_terminal.json').write_text(json.dumps(proof,indent=2)+'\n');print(json.dumps(proof))
+
+
+if __name__=='__main__':main()
