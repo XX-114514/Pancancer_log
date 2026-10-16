@@ -2,7 +2,7 @@
 
 ## 模块和问题
 
-本轮检验2026年10月13日免疫图谱v1的新发现范围，保留与2026年10月CM（v20261010）原172节点/9模块的区别。四个HNSCC基线合格范围固定为whole_TME、T_lineage_biopsy、whole_TME_primary_tumor和T_whole_TME_primary_tumor，对应2/12/12/4组件。30个scope/component为完整主要家族，范围重叠不计独立研究，T-only范围不称跨谱系互作。
+本轮检验2026-10-14免疫图谱CM（v1）的新发现范围，保留与2026年10月CM（v20261010）原172节点/9模块的区别。四个HNSCC基线合格范围固定为whole_TME、T_lineage_biopsy、whole_TME_primary_tumor和T_whole_TME_primary_tumor，对应2/12/12/4组件。30个scope/component为完整主要家族，范围重叠不计独立研究，T-only范围不称跨谱系互作。2026-10-16更正展示日期：原目录以20261013命名，不能据此将已接受图谱及新CM版本改称10月13日；底层目录、模型和历史记录保留。
 
 ## 效果前模型核查
 
