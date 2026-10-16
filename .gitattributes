@@ -14,3 +14,6 @@ releases/annotation_v9_candidate_20260919/manual_review_decisions_L3_pilot_TEMPL
 # Preserve empty final TSV fields in SHA-bound DIALOGUE exports.
 inventories/analysis/2026-10-16/state_after_DIALOGUE_completed_public_v1/**/*.tsv whitespace=-blank-at-eol
 inventories/analysis/2026-10-16/state_after_DIALOGUE_programme_bridge_v2/*.tsv whitespace=-blank-at-eol
+
+# Preserve missing final fields in manifest-bound aggregate LR exports.
+inventories/analysis/2026-10-16/state_DLG_LR_receiver_function_v1/**/*.tsv whitespace=-blank-at-eol

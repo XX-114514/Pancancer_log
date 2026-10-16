@@ -746,3 +746,8 @@ Git 状态：
 ## 2026-10-14T06:06:50.585066+00:00 /UTC+8 2026-10-14T14:06:50.585066+08:00 状态发现与精确CM覆盖最新节点
 
 全源固定pilot gene轴/原9CM成员捕获、原120记录/60唯一对/5820精确分层已独立全复算。T/lymph207因子当前规则0合格（4权重稳定），B35重复+跨K候选已审但非35独立state。原两个fit确在05:03/05:09因quota退出；data1恢复v2实际live，Myeloidseed2/DC运行，原schema/params/172/9CM/Zarr不变。正式states/全数据UCell/状态LR/DIALOGUE/空间仍待。[scope](inventories/analysis/2026-10-14/fixed_CM_edge_scope_v1/RESULTS.md)、[恢复](inventories/analysis/2026-10-14/state_model_volume_recovery_v2/RESULTS.md)。
+
+
+## 2026-10-16T09:21:08.768902+00:00 /UTC+8 2026-10-16T17:21:08.768902+08:00 原CM全LR完成与TF响应运行
+
+原DIALOGUE后全258944接口槽终态，4012关联可估计、14BH/6合格区间；全部点效应/敏感性/留出/BH独立复算通过，3例独立bootstrap说明区间限制。5448固定TF功能槽已运行，尚未验收结果；原生复合受体共表达及空间代理校准仍待，无正式状态或机制晋级。[run](runs/20261016_DLG_LR_receiver_function_v1.md)。

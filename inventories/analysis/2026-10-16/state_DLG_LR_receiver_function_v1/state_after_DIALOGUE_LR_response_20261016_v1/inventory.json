@@ -1,0 +1,18 @@
+{
+  "status": "ALL258944_LR_RECEIVER_SLOTS_ACCOUNTED_EXPLORATORY_NOT_EXTERNAL_OR_CAUSAL_VALIDATION",
+  "observed_UTC": "2026-10-16T06:11:52.973357+00:00",
+  "plan_sha256": "636721983f83abf15260af9c40da58d9d86b2b37bb352785106945e83d244643",
+  "component_inventory_sha256": "bd7f8040aa742faf7a5da3b884df938f7a526956d724356e5eb3abb228cca0ff",
+  "LR_preflight_audit_sha256": "ccadcfcc5d2715961b51975970a0d70565de554ddf7f2375c70467ee33cda164",
+  "hypotheses_accounted": 258944,
+  "estimable_tests": 4012,
+  "BH_below_05": 14,
+  "files": {
+    "progress.json": "442929414f874bc0a727db8eca859e2a896a64888e5fff63b9fe8277f40bd65c",
+    "all_estimable_exploratory_LR_receiver_associations.tsv": "e01cf5519c54af81e7669a271148534cf768849a1fe3120de0ef6760ded2d0b8",
+    "all258944_hypothesis_scope_counts.tsv": "fd5fdcc13314bc4ecf1a4ed87d92f9d6f2b280c2dd384a36db6e917fd6d2e380",
+    "independent_scalar_OLS_checks.tsv": "fd4ad972a67f8f41a9d940db63c3bbc67273ac9d73bc49428086a6e7a5dfc825"
+  },
+  "clinical_outcomes_used": false,
+  "formal_states": false
+}

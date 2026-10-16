@@ -1,0 +1,24 @@
+{
+  "status": "EFFECTS_UNCHANGED_MISSING_RECEIVER_SCORE_REASON_REFINED",
+  "observed_UTC": "2026-10-16T06:12:08.334883+00:00",
+  "producer_sha256": "9d0221c839bf7eb8157b3b4d22a678ed144b2fa8a2ed8c9762666ce0e9da5df5",
+  "parent_inventory_sha256": "7565bf43f51fad95fa296bb16ce7996ac360c826557a577054927cde5225a4d1",
+  "projection_slot_scope_sha256": "835cac04ff714c6d7b249f25c0bf882d023c4fb4739f6c657e343d1c8f709ca0",
+  "changed_scope_rows": [
+    {
+      "context": 1538,
+      "source": "Epithelial_cell_KRT18_52",
+      "target": "Fibroblast_SFRP2_17",
+      "MCP": "MCP2",
+      "records": 4624,
+      "old_status": "NO_GENE_SUPPORTED_RECEIVER_SCORE",
+      "new_status": "RECEIVER_SCORE_RECONSTRUCTION_OR_DESIGN_FAILED"
+    }
+  ],
+  "all_effects_p_CI_BH_byte_identical": true,
+  "files": {
+    "all258944_hypothesis_scope_counts.tsv": "96b87fccbe16b8560e4733ba37e63035c1527210066e176e3680d71d2608a3f8",
+    "all_estimable_exploratory_LR_receiver_associations.tsv": "e01cf5519c54af81e7669a271148534cf768849a1fe3120de0ef6760ded2d0b8",
+    "independent_scalar_OLS_checks.tsv": "fd4ad972a67f8f41a9d940db63c3bbc67273ac9d73bc49428086a6e7a5dfc825"
+  }
+}

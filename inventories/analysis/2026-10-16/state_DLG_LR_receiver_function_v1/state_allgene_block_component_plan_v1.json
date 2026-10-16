@@ -1,0 +1,10 @@
+{
+  "driver_sha256": "e5ae57a72e2a5f9a0df0de7a69c4c5b9b6d32e3bf3ecb95b99da4990eea3ef17",
+  "R_sha256": "4d36a2489c466fe7326d52b33594f3099a113d6a1b84cd9942469f310bb3969f",
+  "projection_inventory_sha256": "eed84449facbcdfa49fc64a6438304900e98f3bc5db6ddbd2c9fff18ce458bb5",
+  "input_inventory_sha256": "2a036da127778b01d5ebd62d050eb5e1fb416e37a106a5ff65a506df69881fb6",
+  "runtime_directory": "20261014_DIALOGUE_method_pilot_v1",
+  "scope": "All28 original discovery/holdout types; retain complete four-covariate design; gene-specific discovery normalization; no gene or type selection by LR/MCP p.",
+  "purpose": "Orthogonal receiver TF footprints can exclude each MCP and LR genes. No protein activity or causal validation.",
+  "reserve_GiB": 500
+}

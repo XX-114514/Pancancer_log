@@ -1,0 +1,13 @@
+{
+  "producer_sha256": "337ac48af269d7bede157b9ca4747f7396015cea5db4d842c4f0e5d9c893e6de",
+  "TF_network_sha256": "bb623ff91b49dc1e3f6066a2548c255e2c58a75609f565615028fc52baa14d8e",
+  "receptor_TF_prior_sha256": "5dc3897b0d0ba86e8f83035114ee72c04f0315216eef36e9b307a63dcc2109bd",
+  "official_ULM_source_sha256": "17954dbf35dbb10f358a330d271588867fc54be11552997726992353157664a1",
+  "minimum_MCP_prior_target_overlap": 5,
+  "minimum_outside_targets": 10,
+  "minimum_background_genes": 5000,
+  "top_TFs_per_primary_case": 3,
+  "ranking": "abs prior cosine desc, MCP target overlap desc, shortest path asc, TF alphabetical; unambiguous <=3edge signed paths only.",
+  "scope": "All4012 estimable primary cases independent of primary or DIALOGUE P; no manually chosen LR.",
+  "response": "Official ULM core activity on discovery-normalized gene block residuals; exclude all corresponding MCP genes and that LR genes; no gene-level p as patient evidence."
+}

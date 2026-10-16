@@ -1,0 +1,4 @@
+context	ligand	receptor	original_valid_bootstraps	independent_valid_bootstraps	independent_rank_deficient_bootstraps
+716	LGALS1	PTPRC	2000	2000	0
+1060	MIF	CD74_CXCR4	2000	2000	0
+1611	ANXA2	TLR2	1737	1730	270

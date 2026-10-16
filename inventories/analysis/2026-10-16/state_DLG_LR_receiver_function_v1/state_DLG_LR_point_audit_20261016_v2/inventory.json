@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ALL4012_POINT_MASK_SENSITIVITY_HELDOUT_BH_AND_CI_GATES_WITH_THREE_INDEPENDENT_RESAMPLING_DIAGNOSTICS",
+  "observed_UTC": "2026-10-16T09:08:08.349626+00:00",
+  "auditor_sha256": "7b7f88243e9d25c9ac4ec28206e954779914ecd572e44955b93c1f61acd6188a",
+  "producer_inventory_sha256": "7565bf43f51fad95fa296bb16ce7996ac360c826557a577054927cde5225a4d1",
+  "scope_detail_inventory_sha256": "e882887a49ad67bdee727f7b979f16e51b232e13d4cd6562fcd0d9bc84e5f1c0",
+  "point_records_checked": 4012,
+  "max_point_error": 4.0245584642661925e-15,
+  "max_heldout_error": 1.1102230246251565e-16,
+  "BH_records": 14,
+  "BH_with_CI_excluding_zero": 6,
+  "primary_permutations_independently_replayed_all": false,
+  "all_primary_bootstrap_endpoint_values_independently_replayed": false,
+  "independent_resampling_cases": 3,
+  "files": {
+    "progress.json": "a69b690038612b7bf9b20769da6aecd92c8c62b6a0f58fd377a1e13c477b60a6",
+    "three_actual_resampling_cases.tsv": "e2ff7ccd1a7172d935d4d6beb29ce2afec9d9a5008b018b4214597868197454e",
+    "resampling_design_diagnostics.json": "ca370ac2a3efd9c4f1201f8160fccdc3c50a3b8a1c89b54a5c75ff1f590393db"
+  },
+  "formal_states": false,
+  "causal_validation": false
+}

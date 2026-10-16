@@ -1,0 +1,15 @@
+{
+  "producer_sha256": "f60155375c83e81f0537788d6b22b9e7e4eb90ddd3d5962c6a3e06c89bda2f52",
+  "fixed_family_slots": 5448,
+  "seed": 2026101607,
+  "permutations": 20000,
+  "permutation_batch": 200,
+  "bootstraps": 2000,
+  "minimum_valid_bootstraps": 1900,
+  "selection": "All1868 primary cases having prior-compatible TFs out of all4012; top3 fixed before activity/P. Never primaryBH filtering.",
+  "activity": "Official decoupler1.9.2 ULM core on training-normalized four-covariate gene residual block means. Entire receiverMCP gene set and LR genes excluded from background and targets. >=10targets and>=5000background.",
+  "association": "Same frozen8covariate source/stratum block partial-rank, >=20blocks/80pctoutputs/fullrank9/10residualdf; all estimable TF slots globalBH; full-loop blockbootstrap, no droppedcovariates.",
+  "interpretation": "Features disjoint, patients/cohort not independent; RNA footprint, not TFprotein or causality.",
+  "privacy": "Private fixed TF edges/activity/fullresults; public scope counts and numerical checks; reviewed aggregate shortlisted findings only.",
+  "internal_holdout": "Diagnostic rho only with >=20discovery/10heldout and full training design; nuisance fit in discovery, no extraP or independentvalidation claim."
+}

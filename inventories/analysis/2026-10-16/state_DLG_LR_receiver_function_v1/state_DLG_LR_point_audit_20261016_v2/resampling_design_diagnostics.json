@@ -1,0 +1,217 @@
+[
+  {
+    "context": 716,
+    "source": "Blood_vascular_endothelial_cell_RAMP2_10",
+    "target": "Macrophage_IFI6_18",
+    "MCP": "MCP1",
+    "ligand": "LGALS1",
+    "receptor": "PTPRC",
+    "original_valid_bootstraps": 2000,
+    "independent_seed": 2026101606,
+    "independent_valid_bootstraps": 2000,
+    "independent_rank_deficient_bootstraps": 0,
+    "independent_bootstrap_CI": [
+      0.3575727026517743,
+      0.9173775457528531
+    ],
+    "independent_percentiles_descriptive_only": [
+      0.3575727026517743,
+      0.9173775457528531
+    ],
+    "constant_covariate_counts_in_failed_resamples": {},
+    "covariate_level_coverage": [
+      {
+        "covariate": "source_log_cells",
+        "unique_values": 22,
+        "dominant_level_blocks": 5,
+        "other_blocks": 26
+      },
+      {
+        "covariate": "target_log_cells",
+        "unique_values": 27,
+        "dominant_level_blocks": 3,
+        "other_blocks": 28
+      },
+      {
+        "covariate": "source_within_major",
+        "unique_values": 30,
+        "dominant_level_blocks": 2,
+        "other_blocks": 29
+      },
+      {
+        "covariate": "target_within_major",
+        "unique_values": 31,
+        "dominant_level_blocks": 1,
+        "other_blocks": 30
+      },
+      {
+        "covariate": "source_log_RNA",
+        "unique_values": 31,
+        "dominant_level_blocks": 1,
+        "other_blocks": 30
+      },
+      {
+        "covariate": "target_log_RNA",
+        "unique_values": 31,
+        "dominant_level_blocks": 1,
+        "other_blocks": 30
+      },
+      {
+        "covariate": "source_log_detected",
+        "unique_values": 31,
+        "dominant_level_blocks": 1,
+        "other_blocks": 30
+      },
+      {
+        "covariate": "target_log_detected",
+        "unique_values": 31,
+        "dominant_level_blocks": 1,
+        "other_blocks": 30
+      }
+    ],
+    "not_replacement_of_primary_bootstrap_or_P": true
+  },
+  {
+    "context": 1060,
+    "source": "Macrophage_IFI6_18",
+    "target": "CD8_T_cell_NKG7_9",
+    "MCP": "MCP2",
+    "ligand": "MIF",
+    "receptor": "CD74_CXCR4",
+    "original_valid_bootstraps": 2000,
+    "independent_seed": 2026101606,
+    "independent_valid_bootstraps": 2000,
+    "independent_rank_deficient_bootstraps": 0,
+    "independent_bootstrap_CI": [
+      -0.8664391290876889,
+      -0.3941244507211147
+    ],
+    "independent_percentiles_descriptive_only": [
+      -0.8664391290876889,
+      -0.3941244507211147
+    ],
+    "constant_covariate_counts_in_failed_resamples": {},
+    "covariate_level_coverage": [
+      {
+        "covariate": "source_log_cells",
+        "unique_values": 31,
+        "dominant_level_blocks": 3,
+        "other_blocks": 35
+      },
+      {
+        "covariate": "target_log_cells",
+        "unique_values": 34,
+        "dominant_level_blocks": 2,
+        "other_blocks": 36
+      },
+      {
+        "covariate": "source_within_major",
+        "unique_values": 36,
+        "dominant_level_blocks": 2,
+        "other_blocks": 36
+      },
+      {
+        "covariate": "target_within_major",
+        "unique_values": 38,
+        "dominant_level_blocks": 1,
+        "other_blocks": 37
+      },
+      {
+        "covariate": "source_log_RNA",
+        "unique_values": 38,
+        "dominant_level_blocks": 1,
+        "other_blocks": 37
+      },
+      {
+        "covariate": "target_log_RNA",
+        "unique_values": 38,
+        "dominant_level_blocks": 1,
+        "other_blocks": 37
+      },
+      {
+        "covariate": "source_log_detected",
+        "unique_values": 38,
+        "dominant_level_blocks": 1,
+        "other_blocks": 37
+      },
+      {
+        "covariate": "target_log_detected",
+        "unique_values": 38,
+        "dominant_level_blocks": 1,
+        "other_blocks": 37
+      }
+    ],
+    "not_replacement_of_primary_bootstrap_or_P": true
+  },
+  {
+    "context": 1611,
+    "source": "Epithelial_cell_KRT18_52",
+    "target": "Macrophage_IFI6_18",
+    "MCP": "MCP2",
+    "ligand": "ANXA2",
+    "receptor": "TLR2",
+    "original_valid_bootstraps": 1737,
+    "independent_seed": 2026101606,
+    "independent_valid_bootstraps": 1730,
+    "independent_rank_deficient_bootstraps": 270,
+    "independent_bootstrap_CI": null,
+    "independent_percentiles_descriptive_only": [
+      0.2900476926409891,
+      0.796893337907543
+    ],
+    "constant_covariate_counts_in_failed_resamples": {
+      "source_within_major": 270
+    },
+    "covariate_level_coverage": [
+      {
+        "covariate": "source_log_cells",
+        "unique_values": 45,
+        "dominant_level_blocks": 2,
+        "other_blocks": 44
+      },
+      {
+        "covariate": "target_log_cells",
+        "unique_values": 37,
+        "dominant_level_blocks": 4,
+        "other_blocks": 42
+      },
+      {
+        "covariate": "source_within_major",
+        "unique_values": 3,
+        "dominant_level_blocks": 44,
+        "other_blocks": 2
+      },
+      {
+        "covariate": "target_within_major",
+        "unique_values": 44,
+        "dominant_level_blocks": 2,
+        "other_blocks": 44
+      },
+      {
+        "covariate": "source_log_RNA",
+        "unique_values": 46,
+        "dominant_level_blocks": 1,
+        "other_blocks": 45
+      },
+      {
+        "covariate": "target_log_RNA",
+        "unique_values": 46,
+        "dominant_level_blocks": 1,
+        "other_blocks": 45
+      },
+      {
+        "covariate": "source_log_detected",
+        "unique_values": 46,
+        "dominant_level_blocks": 1,
+        "other_blocks": 45
+      },
+      {
+        "covariate": "target_log_detected",
+        "unique_values": 46,
+        "dominant_level_blocks": 1,
+        "other_blocks": 45
+      }
+    ],
+    "not_replacement_of_primary_bootstrap_or_P": true
+  }
+]

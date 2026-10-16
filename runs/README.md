@@ -28,3 +28,8 @@ bash scripts/new_run_record.sh "phase07 annotation"
 ## 2026-10-14 全谱系细胞状态输入与模型
 
 [全100766原生输入验收](20261014_all_lineage_state_native_inputs_v1.md)、[6block Spectra/18major cNMF真实运行](20261014_all_lineage_state_models_v1.md)。原172/9CM保留；状态资格、全数据投影、全CM/DIALOGUE/空间仍待。
+
+
+## 2026-10-16 原CM全LR与接收功能
+
+[全LR验收/TF功能启动](20261016_DLG_LR_receiver_function_v1.md)：4012估计、14BH/6区间，5448固定功能槽运行；原身份/CM保留，机制仍待。

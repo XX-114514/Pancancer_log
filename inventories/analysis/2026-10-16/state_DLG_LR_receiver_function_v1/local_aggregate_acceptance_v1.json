@@ -1,0 +1,10 @@
+{
+  "status": "PASS_LOCAL_AGGREGATE_SHAS_SCOPE_AND_ALL4012_BH",
+  "observed_UTC": "2026-10-16T09:21:08.768902+00:00",
+  "records": 4012,
+  "hypothesis_slots": 258944,
+  "BH_records": 14,
+  "BH_with_interval_excluding_zero": 6,
+  "primary_permutations_independently_replayed_all": false,
+  "all_primary_bootstrap_endpoint_values_independently_replayed": false
+}

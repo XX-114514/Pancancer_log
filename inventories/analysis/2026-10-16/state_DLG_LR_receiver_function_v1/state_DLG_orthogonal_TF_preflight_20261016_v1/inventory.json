@@ -1,0 +1,21 @@
+{
+  "status": "ALL4012_PRIMARY_ASSOCIATIONS_ACCOUNTED_FIXED_PRIOR_TF_FAMILY_WITHOUT_P_SELECTION",
+  "observed_UTC": "2026-10-16T09:06:55.446883+00:00",
+  "plan_sha256": "e3ae8f664ad11d8b02378b489af024c76e06e127bdcc098231083d0041180f98",
+  "allgene_inventory_sha256": "f611046d7b0bd20c5fc8c03537b112c5786ebd26c5b5a70a52281a10a42e2c86",
+  "primary_LR_inventory_sha256": "7565bf43f51fad95fa296bb16ce7996ac360c826557a577054927cde5225a4d1",
+  "primary_cases": 4012,
+  "with_fixed_TFs": 1868,
+  "fixed_TF_slots": 5448,
+  "prior_TF_network_sha256": "bb623ff91b49dc1e3f6066a2548c255e2c58a75609f565615028fc52baa14d8e",
+  "receptor_TF_prior_sha256": "5dc3897b0d0ba86e8f83035114ee72c04f0315216eef36e9b307a63dcc2109bd",
+  "official_ULM_source_sha256": "17954dbf35dbb10f358a330d271588867fc54be11552997726992353157664a1",
+  "minimum_targets": 10,
+  "minimum_MCP_prior_overlap": 5,
+  "files": {
+    "all4012_primary_case_TF_coverage.tsv": "a09900cdf31dca1b20a1eb4373308d41b8a0cbf316ef4d590f28a1b12ac7825a",
+    "private_fixed_TF_slots.tsv": "8c3007ff55f3346a158b3c2a8cb58a3f43f0ef79026fd92066ab209e486db958"
+  },
+  "TF_activities_or_associations_computed": false,
+  "protein_or_causal_validation": false
+}
