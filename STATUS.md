@@ -1,3 +1,7 @@
+## 2026-10-16 13:00 UTC /21:00 UTC+8 外部细对分母已验收，原生测量v4进行中
+
+[完整2106来源细对/2788分层/234配对机会](runs/20261016_external_fine_pair_case_opportunities_v1.md)已独立集合算法核对，病例不足与未知身份逐项保留，不当通讯阴性。[全部原细单位测量](runs/20261016_existing_immune_fine_native_signatures_v1.md)v1合成索引、v2程序标识及v3空掩码实现失败均保留；v4已启动并先预检完整结构，独立审计v3等待同一句柄，生产/审计终态仍待。尚无新外部效应或精确端点验证。500GB十进制空闲/256MiB输出和原身份/2026年10月CM（v20261010）保持，整体goal active。
+
 ## 2026-10-16 12:41 UTC /20:41 UTC+8 全功能方向及外部原细分测量入口已验收
 
 [完整功能描述](runs/20261016_NSCLC_gene_disjoint_functional_review_v1.md)与[调控签名特异性/共同程序诊断](runs/20261016_NSCLC_regulator_specificity_v1.md)均完成独立复算；私有完整报告及修正图已核数值并实际审阅，无新P/BH或独立机制声明。[既有九来源输入v2](runs/20261016_existing_immune_candidate_extension_preflight_v1.md)恢复稳定ID别名、保留95%覆盖门槛，全量审计通过；[全部原29个T/髓系节点及6957单位](runs/20261016_existing_immune_fine_native_measurement_scope_v1.md)已冻结，真实资源门槛通过。下一在原计数/来源掩码上测量固定程序和调控靶RNA，原生表达尚未开始；精确作者亚群映射和外部效应仍待。原2026年10月CM（v20261010）、172身份、历史阴性和整体goal active保持。

@@ -418,3 +418,5 @@ PREP-01/03恢复：用户允许临时卷并要求最终Zarr。ZARR-NEW-01：新�
 - [x] 九来源稳定ID别名/原库掩码独立核对，原29细分节点/全部单位冻结及真实文件系统配额纠正通过。[输入run](runs/20261016_existing_immune_candidate_extension_preflight_v1.md)、[范围run](runs/20261016_existing_immune_fine_native_measurement_scope_v1.md)。
 - [ ] 保留全部细节点，用原计数和全RNA分母测量外部固定程序、全部既定调控签名及有限QA；全基因工作区只在RAM，写出不超过256MiB且保留500GB十进制配额空闲，独立原行核查。
 - [ ] 效应前审阅精确端点或明确定义谱系扩展、患者/材料/时点/捕获和可恢复临床控制。不能将宽池、多个亚型、重复文库或同病例当独立复现。
+- [x] 原候选宽谱系扩展去重复家族的全部细对来源/分层/头颈已审配对机会独立集合审计；覆盖机会仍非设计可识别或外部验证。[run](runs/20261016_external_fine_pair_case_opportunities_v1.md)。
+- [ ] 跟踪原生v4及独立审计v3原句柄；v1—v3已核失败保留，不因观察超时重启。全单位键/状态及表达前64原单位完整程序/官方TF/marker重放通过后再解读。[run](runs/20261016_existing_immune_fine_native_signatures_v1.md)。
