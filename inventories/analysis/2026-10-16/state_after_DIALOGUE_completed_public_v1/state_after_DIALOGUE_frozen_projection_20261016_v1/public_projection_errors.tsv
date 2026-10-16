@@ -1,0 +1,2 @@
+"context"	"status"	"message"
+1538	"FAILED_PARITY_OR_DESIGN_REVIEW"	"qr(design)$rank == ncol(design) is not TRUE"

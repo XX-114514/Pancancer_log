@@ -1,0 +1,57 @@
+context	gse_id	CMs	endpoint	major	type	MCP	reconstruction_pass	reference_programmes	formal_state
+445	GSE178341	CM02;CM09	B_cell_HLA-DRA_24	B cell	typeA	MCP1	True	45	False
+445	GSE178341	CM02;CM09	B_cell_HLA-DRA_24	B cell	typeA	MCP2	True	45	False
+445	GSE178341	CM02;CM09	T_cell_IL7R_28	T cell	typeB	MCP1	True	45	False
+445	GSE178341	CM02;CM09	T_cell_IL7R_28	T cell	typeB	MCP2	True	45	False
+446	GSE178341	CM02;CM09	B_cell_HLA-DRA_24	B cell	typeA	MCP1	True	45	False
+446	GSE178341	CM02;CM09	B_cell_HLA-DRA_24	B cell	typeA	MCP2	True	45	False
+446	GSE178341	CM02;CM09	T_cell_IL7R_28	T cell	typeB	MCP1	True	45	False
+446	GSE178341	CM02;CM09	T_cell_IL7R_28	T cell	typeB	MCP2	True	45	False
+449	GSE178341	CM02;CM09	B_cell_HLA-DRA_24	B cell	typeA	MCP1	True	45	False
+449	GSE178341	CM02;CM09	B_cell_HLA-DRA_24	B cell	typeA	MCP2	True	45	False
+449	GSE178341	CM02;CM09	T_cell_IL7R_28	T cell	typeB	MCP1	True	45	False
+449	GSE178341	CM02;CM09	T_cell_IL7R_28	T cell	typeB	MCP2	True	45	False
+580	GSE270680	CM01	B_cell_MS4A1_19	B cell	typeA	MCP1	True	45	False
+580	GSE270680	CM01	B_cell_MS4A1_19	B cell	typeA	MCP2	True	45	False
+580	GSE270680	CM01	Regulatory_T_cell_CTLA4_15	T cell	typeB	MCP1	True	45	False
+580	GSE270680	CM01	Regulatory_T_cell_CTLA4_15	T cell	typeB	MCP2	True	45	False
+716	GSE178341	CM03	Blood_vascular_endothelial_cell_RAMP2_10	Endothelial cell	typeA	MCP1	True	45	False
+716	GSE178341	CM03	Blood_vascular_endothelial_cell_RAMP2_10	Endothelial cell	typeA	MCP2	True	45	False
+716	GSE178341	CM03	Macrophage_IFI6_18	Macrophage	typeB	MCP1	True	45	False
+716	GSE178341	CM03	Macrophage_IFI6_18	Macrophage	typeB	MCP2	True	45	False
+1057	GSE178341	CM01;CM03	CD8_T_cell_NKG7_9	T cell	typeA	MCP1	True	45	False
+1057	GSE178341	CM01;CM03	CD8_T_cell_NKG7_9	T cell	typeA	MCP2	True	45	False
+1057	GSE178341	CM01;CM03	Macrophage_IFI6_18	Macrophage	typeB	MCP1	True	45	False
+1057	GSE178341	CM01;CM03	Macrophage_IFI6_18	Macrophage	typeB	MCP2	True	45	False
+1060	GSE178341	CM01;CM03	CD8_T_cell_NKG7_9	T cell	typeA	MCP1	True	45	False
+1060	GSE178341	CM01;CM03	CD8_T_cell_NKG7_9	T cell	typeA	MCP2	True	45	False
+1060	GSE178341	CM01;CM03	Macrophage_IFI6_18	Macrophage	typeB	MCP1	True	45	False
+1060	GSE178341	CM01;CM03	Macrophage_IFI6_18	Macrophage	typeB	MCP2	True	45	False
+1524	GSE161529	CM04;CM06;CM07;CM08;CM09	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP1	True	45	False
+1524	GSE161529	CM04;CM06;CM07;CM08;CM09	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP2	True	45	False
+1524	GSE161529	CM04;CM06;CM07;CM08;CM09	Fibroblast_SFRP2_17	Fibroblast	typeB	MCP1	True	45	False
+1524	GSE161529	CM04;CM06;CM07;CM08;CM09	Fibroblast_SFRP2_17	Fibroblast	typeB	MCP2	True	45	False
+1538	GSE178341	CM04;CM06;CM07;CM08;CM09	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP1	False	45	False
+1538	GSE178341	CM04;CM06;CM07;CM08;CM09	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP2	True	45	False
+1538	GSE178341	CM04;CM06;CM07;CM08;CM09	Fibroblast_SFRP2_17	Fibroblast	typeB	MCP1	False	45	False
+1538	GSE178341	CM04;CM06;CM07;CM08;CM09	Fibroblast_SFRP2_17	Fibroblast	typeB	MCP2	False	45	False
+1598	GSE161529	CM04	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP1	True	45	False
+1598	GSE161529	CM04	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP2	True	45	False
+1598	GSE161529	CM04	Macrophage_IFI6_18	Macrophage	typeB	MCP1	True	45	False
+1598	GSE161529	CM04	Macrophage_IFI6_18	Macrophage	typeB	MCP2	True	45	False
+1611	GSE178341	CM04	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP1	True	45	False
+1611	GSE178341	CM04	Epithelial_cell_KRT18_52	Epithelial cell	typeA	MCP2	True	45	False
+1611	GSE178341	CM04	Macrophage_IFI6_18	Macrophage	typeB	MCP1	True	45	False
+1611	GSE178341	CM04	Macrophage_IFI6_18	Macrophage	typeB	MCP2	True	45	False
+1991	GSE161529	CM03;CM06;CM07	Fibroblast_SFRP2_17	Fibroblast	typeA	MCP1	True	45	False
+1991	GSE161529	CM03;CM06;CM07	Fibroblast_SFRP2_17	Fibroblast	typeA	MCP2	True	45	False
+1991	GSE161529	CM03;CM06;CM07	Mural_cell_CALD1_13	Mural cell	typeB	MCP1	True	45	False
+1991	GSE161529	CM03;CM06;CM07	Mural_cell_CALD1_13	Mural cell	typeB	MCP2	True	45	False
+2710	GSE178341	CM01	Macrophage_IFI6_18	Macrophage	typeA	MCP1	True	45	False
+2710	GSE178341	CM01	Macrophage_IFI6_18	Macrophage	typeA	MCP2	True	45	False
+2710	GSE178341	CM01	Regulatory_T_cell_CTLA4_15	T cell	typeB	MCP1	True	45	False
+2710	GSE178341	CM01	Regulatory_T_cell_CTLA4_15	T cell	typeB	MCP2	True	45	False
+2713	GSE178341	CM01	Macrophage_IFI6_18	Macrophage	typeA	MCP1	True	45	False
+2713	GSE178341	CM01	Macrophage_IFI6_18	Macrophage	typeA	MCP2	True	45	False
+2713	GSE178341	CM01	Regulatory_T_cell_CTLA4_15	T cell	typeB	MCP1	True	45	False
+2713	GSE178341	CM01	Regulatory_T_cell_CTLA4_15	T cell	typeB	MCP2	True	45	False

@@ -10,3 +10,7 @@
 *.pdf binary
 # Preserve structurally meaningful trailing empty fields in the exact V9 TSV snapshot.
 releases/annotation_v9_candidate_20260919/manual_review_decisions_L3_pilot_TEMPLATE_v2.tsv whitespace=-blank-at-eol
+
+# Preserve empty final TSV fields in SHA-bound DIALOGUE exports.
+inventories/analysis/2026-10-16/state_after_DIALOGUE_completed_public_v1/**/*.tsv whitespace=-blank-at-eol
+inventories/analysis/2026-10-16/state_after_DIALOGUE_programme_bridge_v2/*.tsv whitespace=-blank-at-eol

@@ -1,0 +1,20 @@
+{
+  "status": "ALL56_FIXED_MCP_SLOTS_BRIDGED_DESCRIPTIVE_NOT_NEW_STATE_OR_LR_VALIDATION",
+  "observed_UTC": "2026-10-16T04:54:20.015305+00:00",
+  "plan_sha256": "47b55d6ca8b7caffe19899849257e62ca4820c2f8acb03e3d2da7404be9995b4",
+  "projection_inventory_sha256": "eed84449facbcdfa49fc64a6438304900e98f3bc5db6ddbd2c9fff18ce458bb5",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "scope": 56,
+  "reference_pair_records": 2385,
+  "score_correspondence_records": 4770,
+  "independent_rank_checks": 3645,
+  "max_rank_error": 3.3306690738754696e-16,
+  "files": {
+    "all56_MCP_slot_CM_scope.tsv": "77e0a66961285ff1bee9775cb2fedf1a33b42f7b943fb76dcd9f70fb5f12f3e1",
+    "all_MCP_reference_gene_overlap.tsv": "c18412422d1dd1fbc9ecc40d65fc67f7db06aa95e6f7d71a8e342f8e257cc9d5",
+    "all_MCP_UCell_block_correspondence.tsv": "01879259a1e13df5451415be261b5fdf52eeecaf8d658fb233d3ad635a30d13f"
+  },
+  "no_programme_selection_by_P": true,
+  "formal_states": false,
+  "independent_validation": false
+}

@@ -1,0 +1,5 @@
+# 完整814程序字典v4
+
+[frozen_programme_dictionary.json](frozen_programme_dictionary.json)：810个cNMF组件和4个Spectra背景候选，全814共SHA `6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9`，3362087 bytes。保留算法稳定性、原生训练支持、基本表达及其他RNA审阅flags和全部基因，不是814个正式细胞状态。无细胞/患者行或绝对路径。
+
+完整字典此前在服务器/本机用于4,532,933细胞UCell投影和原9CM映射；本轮核查发现公共仓库仅有其计划与映射，现补齐同SHA基因级字典，便于复算MCP对应。98程序旧版为历史pilot，不能替代此814版本。

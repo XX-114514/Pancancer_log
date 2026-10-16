@@ -1,0 +1,15 @@
+{
+  "status": "ALL28_FIXED_SLOTS_ACCOUNTED_INTERNAL_HOLDOUT_NOT_INDEPENDENT_VALIDATION",
+  "observed_UTC": "2026-10-16T04:54:03.808565+00:00",
+  "producer_sha256": "b551b5183c2aaea81f0f11bea5a3dc09fd598e11128e502f5ad967f5827cb975",
+  "slot_scope_sha256": "835cac04ff714c6d7b249f25c0bf882d023c4fb4739f6c657e343d1c8f709ca0",
+  "fixed_slots": 28,
+  "estimable_tests": 14,
+  "BH_below_05": 2,
+  "permutations": 20000,
+  "bootstrap": 2000,
+  "seed": 2026101603,
+  "missing_not_zero": true,
+  "holdout_transform": "Training gene normalization, signed NNLS weights, and all four training quality/abundance coefficients frozen; block means equal weight.",
+  "results_sha256": "bcdc6571e49a9937bc54c233cf77aab942a368ecf658a918af542d8659939a03"
+}
