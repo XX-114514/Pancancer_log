@@ -1,0 +1,14 @@
+{
+  "frozen_UTC": "2026-10-16T04:04:46.244888+00:00",
+  "preparer_sha256": "704477528b445d40f2a96d283403dceed3e30ba3dd324acb2c589f6c4a3c30bb",
+  "coverage_sha256": "5ca58a27cf99335ca5f76b335cc420a9941b4162fb2d5441a1e92a901feec704",
+  "canonical_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "seed": 20261016,
+  "max_cells_per_block_type": 100,
+  "scope": "All14 contexts estimable under original fixed8covariate programme-pair design; includes all null and BH contexts. Not selected by association p. Original 9CM coverage limits reported.",
+  "split": "For >=30 inherited blocks: deterministic random max(10,floor(n/3)) holdout; >=20 discovery. Otherwise exploratory all-block fit, no heldout validation. One lexicographically first eligible paired library/block; patient identity status inherited.",
+  "expression": "Source-native fullRNA log1p(1e4 counts/total), genes >=1%discoverycells, excludeMT/RPL/RPS; top2000 discovery variance,20PC; untouched heldout transform.",
+  "DIALOGUE": "Pinned official9c146cc, k2,n.genes200,abn20, conf cellQ/geneQ, covar cellQ/geneQ/tme.qc; no phenotypes, libraryv7/v5/v2/library. Metadata original fractions/counts retained for later score-level sensitivity.",
+  "validation": "Read exact original row IDs/counts; source axis assertions; train/holdout block disjoint; frozen transformation saved; hash every input. Inputs/PCs are internal-source processing, not independent cohort validation.",
+  "repair": "Keep same RNG/blocks/cells; implement >=1% detection as exact integer detected_cells*100>=n_discovery_cells. Preserve failed sparse-mean boundary audit of v2. Gene set changes only at intended threshold boundary."
+}

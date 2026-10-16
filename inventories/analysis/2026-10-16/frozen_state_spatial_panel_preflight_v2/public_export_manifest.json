@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "file": "all814_by14_assay_programme_coverage_part01.tsv",
+      "sha256": "69c5e0c3fc1514dd6a3fc277c8c50ebd228fac49a04c1dc416969fb44249a1fa",
+      "source": "all814_by14_assay_programme_coverage.tsv"
+    },
+    {
+      "file": "all814_by14_assay_programme_coverage_part02.tsv",
+      "sha256": "aaa120f66a7da7220c181f91fd315fd2a3c51a58d8aa6247809531eb22930f71",
+      "source": "all814_by14_assay_programme_coverage.tsv"
+    },
+    {
+      "file": "all36_by14_assay_pair_measurement.tsv",
+      "sha256": "23f54ede7ddd6abf396904bc856d7ce64bc2405dd71e977064437e439013f41d"
+    },
+    {
+      "file": "all14_spatial_axes.tsv",
+      "sha256": "ae580d0414e4123bc84a83fb30d564fe0d41781afed120cdfa96012a5b81f8e9"
+    }
+  ],
+  "split_byte_reconstruction_checked": true
+}

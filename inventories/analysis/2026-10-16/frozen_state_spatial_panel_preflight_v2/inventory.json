@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_FROZEN_STATE_SPATIAL_MEASUREMENT_PREFLIGHT_NOT_SPATIAL_VALIDATION",
+  "observed_UTC": "2026-10-16T04:16:47.721912+00:00",
+  "producer_sha256": "987d507e8e4118cb89235edcace2a6698e2365bf15afc28e0f095475931b7e79",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "spatial_manifest_sha256": "6fda649c8b2bf4abe010ba8d53d50e495bae29ce8d30648675d9be9bf91dcf83",
+  "prior_spatial_audit_sha256": "74f0bf84121b60469c720fb15b2c4c0ae92e3cba965b176651993dca527ed872",
+  "programmes": 814,
+  "assays": 14,
+  "coverage_records": 11396,
+  "pair_measurement_records": 504,
+  "gene_gate_min_fraction": 0.8,
+  "gene_gate_min_measured": 10,
+  "fully_measurable_programme_assay_records": 0,
+  "both_programmes_measurable_pair_assay_records": 0,
+  "exact_endpoint_identity_validated": false,
+  "spatial_test_performed": false,
+  "additional9_count_QC_not_revalidated_here": true,
+  "output_sha256": {
+    "all814_by14_assay_programme_coverage.tsv": "41ebe397ff90c8223ecc2c162ccd8f7cb9bf0b9fe791a45aa9caf3f2969ae482",
+    "all36_by14_assay_pair_measurement.tsv": "23f54ede7ddd6abf396904bc856d7ce64bc2405dd71e977064437e439013f41d",
+    "all14_spatial_axes.tsv": "ae580d0414e4123bc84a83fb30d564fe0d41781afed120cdfa96012a5b81f8e9"
+  }
+}
