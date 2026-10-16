@@ -1,3 +1,7 @@
+## 2026-10-16 12:41 UTC /20:41 UTC+8 全功能方向及外部原细分测量入口已验收
+
+[完整功能描述](runs/20261016_NSCLC_gene_disjoint_functional_review_v1.md)与[调控签名特异性/共同程序诊断](runs/20261016_NSCLC_regulator_specificity_v1.md)均完成独立复算；私有完整报告及修正图已核数值并实际审阅，无新P/BH或独立机制声明。[既有九来源输入v2](runs/20261016_existing_immune_candidate_extension_preflight_v1.md)恢复稳定ID别名、保留95%覆盖门槛，全量审计通过；[全部原29个T/髓系节点及6957单位](runs/20261016_existing_immune_fine_native_measurement_scope_v1.md)已冻结，真实资源门槛通过。下一在原计数/来源掩码上测量固定程序和调控靶RNA，原生表达尚未开始；精确作者亚群映射和外部效应仍待。原2026年10月CM（v20261010）、172身份、历史阴性和整体goal active保持。
+
 ## 2026-10-16 11:53 UTC /19:53 UTC+8 原生诊断及基因不重叠功能测量完成
 
 [全部原主筛记录原生谱系/组分诊断](runs/20261016_NSCLC_candidate_lineage_cofactor_RNA_v1.md)完成并独立验收，私有完整分子报告已生成；科学比例仅当前授权对话/server。全部[基因不重叠TF测量](runs/20261016_NSCLC_gene_disjoint_receiver_TF_v1.md)范围及259725病例读数/原完整设计独立对照官方算法通过。尚无新配体—TF关联检验或独立机制验证，下一为全范围功能方向描述和外部队列资格，原9CM/172身份不改。64edd00已11:44:19 UTC独立核云；本节点待后续普通同步回执，整体goal active。
