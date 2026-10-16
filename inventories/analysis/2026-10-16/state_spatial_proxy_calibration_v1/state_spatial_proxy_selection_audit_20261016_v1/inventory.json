@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ALL91447_CANONICAL_ROWS_NO_DISCOVERY_OVERLAP_ALL4189_POOL_COUNTS4027_SELECTION_STRATA_AND11396_PANEL_COVERAGES",
+  "observed_UTC": "2026-10-16T09:40:16.935758+00:00",
+  "input_inventory_sha256": "ccbd2e8f682885fefe2363a775f671fdf7c6b286bd6f8adf70cb5ecd530eb91e",
+  "auditor_sha256": "1fec0340506be93396df11e81ecb64be38878de407359791ab49875ac4065348",
+  "rows_checked": 91447,
+  "source_node_strata": 4189,
+  "selected_strata": 4027,
+  "sources": 52,
+  "majors": 18,
+  "actual_max_cells_per_stratum": 50,
+  "actual_max_blocks_per_stratum": 10,
+  "actual_max_cells_per_block": 5,
+  "panel_programme_checks": 11396,
+  "unique_panels": 4,
+  "calibration_effects_or_biological_validation": false
+}

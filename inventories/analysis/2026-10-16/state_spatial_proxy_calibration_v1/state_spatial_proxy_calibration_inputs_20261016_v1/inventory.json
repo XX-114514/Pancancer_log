@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_ALL52_SOURCE_IDENTITY_INTERNAL_NONDISCOVERY_ROW_SELECTION_AND14_PANEL_AXES_NOT_CALIBRATED_YET",
+  "observed_UTC": "2026-10-16T09:33:39.934918+00:00",
+  "plan_sha256": "b6711ed184812c3dd8edf992ba2f623ebcb10eb9adede9f57e724731ab67e28d",
+  "producer_sha256": "c9f34442736f2d95c652f1cd494ba4b400e9c1123709ef6b8c38a90beb3d200d",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "projection_inventory_sha256": "e45f75dbe2ee77c10f1aa44a059e1a24c974ac0011032ddde1980435e36f00c7",
+  "spatial_preflight_inventory_sha256": "a8381d095c4b0b2652c28fd1082a790f8c3757a1cd5f0d4db12979968ff2bb3b",
+  "discovery_metadata_sha256": "7a3a6c18105740aadd5dd0f7896d1cfed0bbd0828b0c5a98a827635728e4cb50",
+  "frozen_cells": 91447,
+  "sources": 52,
+  "majors": 18,
+  "source_node_strata": 4189,
+  "strata_with_non_discovery_cells": 4027,
+  "panels": 14,
+  "unique_symbol_axes": 4,
+  "original_full_signature_gate_unchanged": true,
+  "formal_state_or_spatial_biological_validation": false,
+  "files": {
+    "private_fixed_calibration_rows.npz": "8dbca7aae77e8d69e586287112c78d55ef7467a7fffb084af6a27277c37b8472",
+    "all_source_node_stratum_calibration_coverage.tsv": "4ec099747ee8d35f9109d9d598ea12ab8a222cc8082a35ef00c900fe53a625fb",
+    "fixed_all14_panel_gene_axes.json": "b4818461998e0130d0db8b7a3ce2b75605c2dd13caeec1c39acd85b3a3caa589",
+    "all14_panel_axis_identity.tsv": "d30c4a3a19e197f5c642863de5a50c50de08fd688522ab9e430a229389bec304",
+    "official_UCell_small_panel_checks.json": "927351646b29cf908d6988c01341dd6f611e9ebac43bff208498183f88bee2f4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "producer_sha256": "4b07f0f9395fc52090a4e56c9f3af7a80eff42734f1a4d5c48aaacb54bc41ba6",
+  "scope_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "projection_inventory_sha256": "e45f75dbe2ee77c10f1aa44a059e1a24c974ac0011032ddde1980435e36f00c7",
+  "canonical_contract_sha256": "bd830b0251cfcf219244bf3be00823420273bb96fdafb30989938fce6bbaffa7",
+  "reserve_free_GiB": 500,
+  "remaining_output_budget_GiB": 40,
+  "raw_read_cells_per_batch": 128,
+  "original_projection_chunk_cells": 5000,
+  "privacy": "All cell identities/counts/reference cell scores private; public only source-major counts/SHAs.",
+  "scope": "Every frozen selection cell, all source majors. Canonical CSR RAM-sorted only; exact native axes and existing complete-score chunks; no clinical or p selection."
+}

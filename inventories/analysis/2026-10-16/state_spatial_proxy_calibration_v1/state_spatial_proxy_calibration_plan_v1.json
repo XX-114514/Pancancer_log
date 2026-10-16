@@ -1,0 +1,16 @@
+{
+  "producer_sha256": "c9f34442736f2d95c652f1cd494ba4b400e9c1123709ef6b8c38a90beb3d200d",
+  "seed": 2026101609,
+  "max_blocks_per_source_node_stratum": 10,
+  "max_cells_per_block": 5,
+  "maximum_selected_cells": 500000,
+  "scope_inventory_sha256": "1d92fd242f0dca368ca498ccc44171a051ef2a5dfaa3ca3e522d8499ef4830ee",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "projection_inventory_sha256": "e45f75dbe2ee77c10f1aa44a059e1a24c974ac0011032ddde1980435e36f00c7",
+  "spatial_preflight_inventory_sha256": "a8381d095c4b0b2652c28fd1082a790f8c3757a1cd5f0d4db12979968ff2bb3b",
+  "purpose": "All source x originalnode x stratum balanced technical proxy calibration, exclude discovery cells; no learned clinical results or p-based selection; all814 programmes/all14 panels, not full-signature spatial qualification.",
+  "reference": "Existing accepted full-native UCell1500; additionally score remaining full-signature genes outside each spatial panel to expose shared-feature inflation.",
+  "proxy": "All unambiguously measured panel/native intersection signature genes; no marker picking. Native missing remains missing; partial-proxy status never upgrades original80pct/10gene gate.",
+  "reserve_free_GiB": 500,
+  "panel_mapping": "Freeze all aliases-to-unique-feature mapping plus preferred gene_symbol per physical feature; subsequent native-panel simulation must use each physical feature at most once, prefer symbol then index alias, report ambiguous/missing rather than duplicate or zero fill."
+}

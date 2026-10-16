@@ -1,0 +1,18 @@
+[
+  {
+    "max_rank": 5,
+    "rows": 3,
+    "signatures": 2,
+    "max_manual_error": 0.0,
+    "zero_is_zero": true,
+    "missing_skipped_not_filled": true
+  },
+  {
+    "max_rank": 8,
+    "rows": 3,
+    "signatures": 2,
+    "max_manual_error": 2.5544847792602354e-08,
+    "zero_is_zero": true,
+    "missing_skipped_not_filled": true
+  }
+]

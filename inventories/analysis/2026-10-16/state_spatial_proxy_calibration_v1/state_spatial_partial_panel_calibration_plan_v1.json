@@ -1,0 +1,11 @@
+{
+  "producer_sha256": "5431e41d9871b9ec0b0bb1fbbe2d1aea09008052dca50e40ca7b6a1161821ac8",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "min_cells_per_identity_stratum": 20,
+  "min_blocks_per_identity_stratum": 5,
+  "scope": "All814 frozen programmes, every frozen91k non-discovery cell within allowed major, all14 existing panels mapped to4 unique symbol axes. Identity-internal source-node-stratum technical calibration; no clinical effect/P/FDR tests.",
+  "scores": "Official pyUCell0.8.0, positive-count average ties, zeros capped; partial all measured panel/native signature genes, cap=min(1500,native panel feature count). Original fullnative1500 reference plus official fullnative score of signature genes outside panel; >=10remaining/80pctnative. No handpicked genes or original80pct/10gene qualification change.",
+  "metrics": "Cell and block-mean Spearman, proxy RNA/panelRNA/complexity dependence, IQR and gene support. <20cells or<5blocks, missing and constant recorded, not zero effects. Programme-source-axis summaries are medians of identity-stratum descriptors, not pooled patient inference.",
+  "privacy": "Private cells/raw expression/all fine technical context metrics; public reviewed source-major programme/axis summaries and hashes. Panel aliases mapped physical feature once.",
+  "reserve_free_GiB": 500
+}
