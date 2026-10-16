@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_FIXED_ORIGINAL60_STATE_PROGRAMME_PAIRS_NOT_LR_MECHANISM",
+  "observed_UTC": "2026-10-15T00:03:19.577423+00:00",
+  "producer_sha256": "063a3ccbc16bd3084aeec32d31911d1e862f6424285cebc5292e81898ea94007",
+  "plan_sha256": "0f24d874687c42161e062753da42225aede99b5bc2d958e763a97c225fc0eb50",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "pairs": 60,
+  "contexts": 4331,
+  "estimable_contexts": 14,
+  "tests": 11716,
+  "main_BH_records": 36,
+  "permutations": 20000,
+  "bootstraps": 0,
+  "bootstrap_CI_inherited_from_2000_preserved": true,
+  "prior_results_sha256": "0e50b2dc4bb4942099792bc78b3b78319d463ddc87c5e0aabf402d903bb14364",
+  "formal_states": false,
+  "LR_mechanism_tested": false,
+  "output_sha256": {
+    "all_programme_pair_associations.tsv": "1684f88bab864c66ed4fcda315763ece5df25377e70e062567200c7406fcc029",
+    "all_context_coverage_reasons.tsv": "5ca58a27cf99335ca5f76b335cc420a9941b4162fb2d5441a1e92a901feec704",
+    "independent_scalar_OLS_checks.tsv": "672e6747dd51a8e57a6b8cc585967eb6361ec70badfe33a6009bde8a0f8cd25a"
+  }
+}

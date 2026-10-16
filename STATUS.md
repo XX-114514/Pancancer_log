@@ -1,3 +1,7 @@
+## 2026-10-16 原CM状态程序关联与DIALOGUE推进
+
+全量状态评分审阅后，固定60细胞对/14可估计上下文的11716程序检验完成；统一20000置换后36BH记录，按冻结跨K链为12组端点—程序对应组合，每组显著来源仅1，主要包含共同应激、基本表达及低支持候选。尚非LR轴。全部记录森林/覆盖图已验收；DIALOGUE全部14上下文输入及独立验收→官方拟合链已启动，留出/机制/空间待。[程序关联](inventories/analysis/2026-10-15/original_CM_programme_pairs_v2/RESULTS.md)、[DIALOGUE](runs/20261016_state_after_DIALOGUE_v1.md)。
+
 ## 2026-10-15 全量状态评分技术验收完成
 
 全4,532,933细胞、814程序的原生UCell投影及独立审计完成，35,567样本内原亚群四评分汇总一致。正式状态、2026年10月CM（v20261010）通讯、DIALOGUE及空间待后续；来源内身份/状态审阅已启动。[验收](inventories/analysis/2026-10-15/full_native_ucell_acceptance_v2/RESULTS.md)。

@@ -1,0 +1,13 @@
+{
+  "status": "PLOTS_COMPLETE_ALL36_AND_ALL4331_CONTEXTS",
+  "source_inventory_sha256": "798ffee075584f59dd5fd60f0c70790b0713cb0563dc7d0d95f54d7a5e06c298",
+  "producer_sha256": "f85bb8b50f2834f7e13d78d3bba6151578b9be04b68ee7088794beb74877c47f",
+  "files": {
+    "all36_programme_associations_forest.pdf": "95d2b6b4ab40e91a74b15ff5eae8f30c1ac71865dd358ca8bb6811e2ff4f7406",
+    "all36_programme_associations_forest.svg": "31ae27eb762cfa14a863e07c54bfdee2682809f01bcfd5a3f37f0d20eca821b9",
+    "all36_programme_associations_forest.png": "0a438b90db23fa2842eaa81f4a8d61ff9b4cf58d06e6040712a2448c15e53afe",
+    "context_coverage_reasons.pdf": "3f23b3198641d9cf6f65d3bd4249731ba3c76604a178c8094124f97befbf7bb3",
+    "context_coverage_reasons.svg": "25755adb49888080ea27abc6d3d9f24724ff13840b9ad1c54110e09ba075c341",
+    "context_coverage_reasons.png": "211c1f4cfe5533d4187de36e3bbf370edd45bfd4110fee6244af63bdbfd391c8"
+  }
+}

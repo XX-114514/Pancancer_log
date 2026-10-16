@@ -1,0 +1,26 @@
+{
+  "frozen_UTC": "2026-10-16T04:08:40.282263+00:00",
+  "driver_sha256": "2d9608e3f26c23882ceb808a6f82aaa79d3a6f51a7759cb512336b3a00229f8e",
+  "input_auditor_sha256": "a1453ef2eac723c3727f8e659032f3b329074bd23e645fd96db1ad5bb5696014",
+  "runner_sha256": "2197bff17b9d92e43a888551f3ef0636bc868e54d5b72e58c276981e1004f066",
+  "official_archive_sha256": "2f2a8a6dfa2f47f2e9cce553310164d38c862a692e963b3e702bf04d7709e511",
+  "scope": "All14 estimable original CM source-strata, including null programme pairs, two frozen endpoint identities each. One official fit per context, no k/seed/significance search.",
+  "fit_parameters": {
+    "k": 2,
+    "n_genes": 200,
+    "abundance_min_cells": 20,
+    "seed": 20261016,
+    "PCs": 20,
+    "quality_covariates": [
+      "cellQ",
+      "geneQ",
+      "original_within_major_fraction",
+      "log1p_original_node_cells"
+    ]
+  },
+  "pre_fit_covariate_correction": "Use real original proportion and original counts, not tme.qc derived from capped cells. This supersedes preparatory plan intended tme.qc field; no model results inspected before choice.",
+  "dependencies": "All input ID/row/native expression/PCA/QC checks must pass; all14 per-context status exported including errors/no gene-supported slots.",
+  "limits": "Internal-source heldout patients only when>=30blocks (>=20 discovery/>=10holdout); smaller contexts discovery exploratory, not independent validation. No clinical labels or other thread results used. Heldout projection and gene/source/state interpretation separate acceptance steps.",
+  "runtime_directory": "20261014_DIALOGUE_method_pilot_v1",
+  "Rscript_environment": "PANCANCER_DIALOGUE_RSCRIPT"
+}
