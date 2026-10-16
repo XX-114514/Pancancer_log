@@ -1,0 +1,18 @@
+{
+  "status": "PASS_ALL5448_OFFICIAL_ULM_ACTIVITIES_ALL_ESTIMABLE_SVD_POINT_HELDOUT_BH_AND_CI_GATES",
+  "observed_UTC": "2026-10-16T09:51:43.342765+00:00",
+  "producer_inventory_sha256": "93ec71c1231e3816fc30dab17b4418174c9b2d4d1e7f0a278dfb1667f58ca335",
+  "auditor_sha256": "f5e38517f644ce053cfa7eae03f5cc81f02daa865bb26b06878dcf1932610482",
+  "activities_checked": 5448,
+  "estimable_point_tests_checked": 5448,
+  "max_official_ULM_error": 6.572520305780927e-14,
+  "max_point_error": 3.219646771412954e-15,
+  "max_heldout_error": 1.1102230246251565e-16,
+  "BH_records": 50,
+  "all_primary_permutations_or_bootstrap_endpoints_independently_replayed": false,
+  "formal_states_or_causal_validation": false,
+  "files": {
+    "progress.json": "0fd2dd37f544e7b0d4f4530a82033ad7c1f7e0e3ce9e722d34129191edf8a706",
+    "public_allgroup_activity_audit.tsv": "5dda8fbf0e22ff1f07b99d6a1bf99902a66cd3bedcc5c01f45e2a3bf37aa0c6d"
+  }
+}

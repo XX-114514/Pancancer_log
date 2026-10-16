@@ -1,0 +1,21 @@
+{
+  "status": "REVIEWED_ALL5448_50TF_BH_33CI_ONE_PRIMARY_LR_TF_JOINT_RNA_CANDIDATE_NOT_VALIDATED_AXIS",
+  "observed_UTC": "2026-10-16T09:54:36.275315+00:00",
+  "producer_sha256": "58e5086fd40085b1d3550ad93cbd3e53f26f95b75ffdfd8d0e480383fb38eede",
+  "TF_inventory_sha256": "93ec71c1231e3816fc30dab17b4418174c9b2d4d1e7f0a278dfb1667f58ca335",
+  "TF_independent_audit_sha256": "f74dd3e22a8a2c438b39db7877d113297b78b063d17a685f11b7696b73dbe99b",
+  "primary_LR_inventory_sha256": "7565bf43f51fad95fa296bb16ce7996ac360c826557a577054927cde5225a4d1",
+  "fixed_family": 5448,
+  "TF_BH_records": 50,
+  "TF_BH_CI_qualifies": 33,
+  "original_primary_LR_BH_records": 14,
+  "original_primary_LR_with_TF_tests": 10,
+  "joint_LR_TF_BH_and_both_CIs": 1,
+  "TF_only_signals_retained_in_private_full_family": true,
+  "formal_state_or_binding_or_causal_validation": false,
+  "files": {
+    "public_all14_original_LR_TF_support.tsv": "04628416f84fbb4d638d0fe82be8ae2a457e7327f1d1b5035368480342f103dc",
+    "public_joint_LR_TF_RNA_candidate.tsv": "fff37d814905e2e73cd28be17649c82f21d66eda44abf31a04e1ad09af74f532",
+    "public_all50_BH_context_counts.tsv": "61bcb38298659ee872e027c80b55bc1e9ba90b87f6dd4c1fbd94126b36f9861c"
+  }
+}

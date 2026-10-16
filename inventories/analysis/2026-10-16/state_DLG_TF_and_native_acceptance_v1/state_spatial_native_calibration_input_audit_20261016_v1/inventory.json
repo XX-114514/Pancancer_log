@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL91447_ID_NATIVE_AXES_QUANTITIES_AND_THREE_REAL_CELL_CANONICAL_COUNTS_UCELL_PER709_FILE",
+  "observed_UTC": "2026-10-16T09:46:46.738573+00:00",
+  "auditor_sha256": "2bcb3ecfc86180ccd47bc618b8f2f2171f39f2c0f723ae6566096f72bd9017c8",
+  "native_input_inventory_sha256": "91be1ae48a338aa6bfcd2d89107fd62bf3a00566a90ec5aa953fe0a3f37478f0",
+  "all_ID_quantity_cells": 91447,
+  "fresh_canonical_count_cells": 2092,
+  "full_native_reference_values_checked": 92925,
+  "max_full_reference_score_error": 0,
+  "all_selected_gene_values_freshly_reassembled": false,
+  "public_output_sha256": "dde55d00c1feefacfd75055a97b5fb1c4726ba87d5956bf9f2efd9fbf55d86ee",
+  "spatial_calibration_or_biological_validation": false
+}

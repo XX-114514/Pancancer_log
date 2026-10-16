@@ -1,0 +1,2 @@
+context	source	target	MCP	ligand	receptor	gse_id	TF	blocks	outside_targets	background_genes	adjusted_LR_TF_rho	MCP_TF_adjusted_rho	prior_cosine	prior_path_sign	BH_q	CI_low	CI_high	valid_bootstraps	internal_holdout_observed_blocks	internal_holdout_rho	primary_BH_q
+2713	Regulatory_T_cell_CTLA4_15	Macrophage_IFI6_18	MCP2	NAMPT	ITGA5_ITGB1	GSE178341	DDIT3	34	74	12657	0.7240220232178272	-0.3832686478041304	-0.039902972060792	1	0.0226988650567471	0.4472423426806927	0.8549254700541495	2000	10	0.4787878787878787	0.0429835651074589

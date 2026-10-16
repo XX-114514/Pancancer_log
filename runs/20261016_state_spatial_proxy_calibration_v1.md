@@ -31,3 +31,8 @@
 
 
 [阶段证据与更新](../inventories/analysis/2026-10-16/state_spatial_proxy_calibration_v1/RESULTS.md)。原始正式运行通过已审环境变量执行脚本，代码commit在本次提交形成，实际生产以计划和文件SHA锁定，不倒填早期commit。
+
+
+## 后续原生输入独立审计
+
+09:46:46 UTC /17:46:46 UTC+8完成全部91447身份/数量、2092真实canonical细胞及92925官方完整UCell参考值复核，误差0；全基因值新鲜重读范围为2092细胞，不偷换为全部91447。全细胞完整/部分/去共享基因手算审计已启动等待最终校准。证据见[TF与原生输入验收](../inventories/analysis/2026-10-16/state_DLG_TF_and_native_acceptance_v1/RESULTS.md)。
