@@ -1,0 +1,15 @@
+{
+  "producer_sha256": "2010bdde05f959d61c73a2d351ecd19bf3a655fccd35ab1b7b7550f23f8e3e78",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "frozen_DDIT3_definition_sha256": "7d01b59dc74118c0bfe0713239ee00f1710de2c0562dbf8d1de163693400d2d9",
+  "spots_per_chunk": 500,
+  "ucell_rank_batch": 250,
+  "output_budget_GiB": 8,
+  "primary_maxrank": 1500,
+  "ties": "average",
+  "missing": "skip_only_if_original80pct10gene_gate; unqualified columns NA",
+  "scope": "Every71398 QC retained spot/all814 frozen candidates; no clinical or score-based selection. Mixed spots, no cell-type assignments. All19 source libraries, patient bridge unreviewed.",
+  "fixed_TF_readout": "All74 source-frozen DDIT3 targets excluding original receiverMCP/LR. Official positive, negative and signed UCell(w_neg=1,negative results clipped0) all saved. RNA proxy distinct from original gene-Z ULM or TF protein. No variable readout or sign selected after tissue effects.",
+  "next_gate": "Independently replay all raw count tied-rank scores and metadata; audit composition/reference/regions before planning any spatial association. Never equate same-spot coexpression with direct interaction.",
+  "empty_TF_component": "If prior has no targets of one sign, that component is mathematically zero and is labelled by target count0; never interpreted as measured biological absence."
+}

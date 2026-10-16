@@ -1,0 +1,26 @@
+{
+  "status": "PASS_ALL14_FRESH_FEATURE_TABLES_NAMPT_SYMBOL_ALIAS_ENSEMBL_HGNC_ENTREZ_UNIPROT_MATCHES_PREFLIGHT",
+  "observed_UTC": "2026-10-16T10:24:19.694999+00:00",
+  "auditor_sha256": "2a6dc477da2bbd1cada48763b0721942ade51fe5d77f7a28c476f47bb290551a",
+  "measurement_inventory_sha256": "8e417a9d44d4044bcd2b3541e221645242c38622fbc0703d2d357a31e468b342",
+  "official_identifier_source": "https://www.ncbi.nlm.nih.gov/gene/10135/",
+  "official_source_review_date": "2026-10-16",
+  "identifiers_checked": [
+    "10135",
+    "1110035O14RIK",
+    "ENSG00000105835",
+    "HGNC:30092",
+    "NAMPT",
+    "P43490",
+    "PBEF",
+    "PBEF1",
+    "VF",
+    "VISFATIN"
+  ],
+  "assays": 14,
+  "assays_with_NAMPT_identifier": 0,
+  "public_output_sha256": "71b524ab6ef0e0997f5da7f0492fa2458878d6a5d3d53781272da82724105b7e",
+  "gene_absence_is_not_expression_negative": true,
+  "spatial_biological_validation": false,
+  "complete_server_inventory_sha256": "94a38454248ca7f166d47cb76d7060ee6146492e8bb4205b463880c7429c1279"
+}

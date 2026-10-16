@@ -1,0 +1,105 @@
+{
+  "observed_UTC": "2026-10-16T11:03:35.891353+00:00",
+  "explicit_files": [
+    {
+      "file": "Visium_raw_preflight_scalar.json",
+      "bytes": 1298,
+      "sha256": "e77ad6153f2857d9a8ca40b472e0cd2cadcc00412dd29e02a05fc8aac8e1c04f"
+    },
+    {
+      "file": "Visium_independent_input_audit_scalar.json",
+      "bytes": 1089,
+      "sha256": "9f03efaf6b8d3081dd82a36683566813b219c78875c9d1873eead463a26bf049"
+    },
+    {
+      "file": "joint_axis_panel_measurement_scalar.json",
+      "bytes": 1049,
+      "sha256": "7e5ca9e6d5a475a114963646d313f0812cd6baa581f247f3f64a7d44b855af1f"
+    },
+    {
+      "file": "NAMPT_alias_audit_scalar.json",
+      "bytes": 1012,
+      "sha256": "8490b1ac12ca6c3cd4fa338eec5d13d3a553d6a684a416c0db245e9b237fe598"
+    },
+    {
+      "file": "public_all814_Visium_signature_measurement.tsv",
+      "bytes": 36811,
+      "sha256": "8578076e26abf8e20aa56acd2d47b339626c3896c0e9f81d2d858574031523a1"
+    },
+    {
+      "file": "public_Visium_joint_axis_measurement.tsv",
+      "bytes": 348,
+      "sha256": "e2b0c629a5baa32cd0bfb6a264f7c2602376ab28d0ac5dc7bb9e209145171722"
+    },
+    {
+      "file": "public_all4_panel_axis_measurement_without_specimen_IDs.tsv",
+      "bytes": 1186,
+      "sha256": "d3d77c035ee992d66ba3065877631b0e91cb91d5f3a74f3dcd777e7a7ddf6684"
+    }
+  ],
+  "table_schemas": [
+    {
+      "table": "public_all814_Visium_signature_measurement.tsv",
+      "rows": 814,
+      "columns": [
+        "programme_id",
+        "signature_genes",
+        "unambiguous_measured_genes",
+        "measured_fraction",
+        "original80pct10gene_measurement_gate",
+        "formal_state_or_spatial_validation"
+      ],
+      "no_participant_identifiers_or_clinical_values": true
+    },
+    {
+      "table": "public_Visium_joint_axis_measurement.tsv",
+      "rows": 1,
+      "columns": [
+        "dataset",
+        "spots",
+        "genes",
+        "libraries",
+        "NAMPT",
+        "ITGA5",
+        "ITGB1",
+        "DDIT3",
+        "DDIT3_frozen_targets",
+        "DDIT3_targets_measured",
+        "DDIT3_target_fraction",
+        "frozen_background",
+        "frozen_background_measured",
+        "all_joint_gene_measurement_gates",
+        "exact_original172_endpoint_identity_validated",
+        "spot_is_single_cell"
+      ],
+      "no_participant_identifiers_or_clinical_values": true
+    },
+    {
+      "table": "public_all4_panel_axis_measurement_without_specimen_IDs.tsv",
+      "rows": 4,
+      "columns": [
+        "axis_id",
+        "NAMPT_measured",
+        "ITGA5_measured",
+        "ITGB1_measured",
+        "DDIT3_transcript_measured",
+        "all_LR_subunits_measured",
+        "full_frozen_DDIT3_outside_targets",
+        "DDIT3_targets_on_panel",
+        "DDIT3_target_fraction",
+        "frozen_source_background",
+        "original_target_gate_min10_and80pct",
+        "original_background_gate_min5000",
+        "all_gene_measurement_gates",
+        "original_exact_endpoint_identity_validated",
+        "actual_spatial_footprint_activity_scored",
+        "spatial_binding_or_causal_validation",
+        "assays_sharing_panel",
+        "frozen_background_on_panel_min",
+        "frozen_background_on_panel_max"
+      ],
+      "no_participant_identifiers_or_clinical_values": true
+    }
+  ],
+  "no_matrices_spot_rows_sample_ids_clinical_values_or_internal_paths": true
+}

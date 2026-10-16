@@ -1,0 +1,18 @@
+{
+  "status": "ALL14_MEASUREMENT_QUALIFIED_OR_EXPLICITLY_UNMEASURABLE_NOT_SPATIAL_VALIDATION",
+  "observed_UTC": "2026-10-16T10:20:31.131205+00:00",
+  "producer_sha256": "8cea3a764ebeaa9cede60661b315aa65a2a9cbb4d45f76dc28a35cc02bfcef3e",
+  "joint_review_inventory_sha256": "81025d5d10337bf59ee288998513a0d0e89d0ddd46129ae942d1a5db8dfa90dd",
+  "spatial_selection_inventory_sha256": "ccbd2e8f682885fefe2363a775f671fdf7c6b286bd6f8adf70cb5ecd530eb91e",
+  "TF_network_sha256": "bb623ff91b49dc1e3f6066a2548c255e2c58a75609f565615028fc52baa14d8e",
+  "full_target_genes": 74,
+  "full_background_genes": 12657,
+  "assays": 14,
+  "unique_symbol_panels": 4,
+  "LR_measurable_assays": 0,
+  "all_measurement_gate_assays": 0,
+  "frozen_gene_definition_sha256": "7d01b59dc74118c0bfe0713239ee00f1710de2c0562dbf8d1de163693400d2d9",
+  "public_output_sha256": "963f5592bf934488aa4c4f135c955a41d75ab7c961b52d6b7f0fe922b7c5b1ca",
+  "scientific_validation": false,
+  "complete_server_inventory_sha256": "8e417a9d44d4044bcd2b3541e221645242c38622fbc0703d2d357a31e468b342"
+}

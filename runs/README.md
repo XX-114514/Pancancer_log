@@ -38,3 +38,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 ## 2026-10-16 原CM接收功能与空间技术校准
 
 [5448TF联合证据](20261016_DLG_TF_joint_evidence_v1.md)、[全52来源空间代理](20261016_state_spatial_proxy_calibration_v1.md)。TF全量独立通过；空间块均值精度修复后独立审计仍运行，不能当空间生物学验证。
+
+
+空间状态程序最新：[全来源代理校准终态](20261016_state_spatial_proxy_calibration_v1.md)；[GSE273952全转录组冻结投射](20261016_GSE273952_frozen_programme_spatial_v1.md)。

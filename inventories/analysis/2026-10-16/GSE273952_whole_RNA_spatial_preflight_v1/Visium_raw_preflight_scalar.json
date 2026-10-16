@@ -1,0 +1,26 @@
+{
+  "status": "EXISTING_VISIUM_RAW_COUNTS_NATIVE_AXES_COORDINATES_AND_PROGRAMME_COVERAGE_CHECKED_NOT_BIOLOGICAL_VALIDATION",
+  "observed_UTC": "2026-10-16T10:38:19.180840+00:00",
+  "producer_sha256": "08ca77a938a22e5526ac7df873bad4c8a2430ab36e753c29eb6d8522168643dc",
+  "historical_technical_contract_sha256": "e017871efea1fc988fd5f7109f32af3598afee0f26f6ec0e953b8bada9383403",
+  "input_file_sha256": "9035a38d47f82167f9ff69051ca4f9872f2efce6737df6ee121328d363c92c3f",
+  "input_file_bytes": 1123406183,
+  "dataset": "GSE273952",
+  "source_design": "19 TLS-positive ccRCC specimens per GEO; patient/clinical bridge not reviewed here",
+  "official_design_source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273952",
+  "spots": 71398,
+  "genes": 24146,
+  "library_count": 19,
+  "full_signature_measurement_gate_programmes": 800,
+  "NAMPT_identifier_matches": [
+    "ENSG00000105835",
+    "NAMPT"
+  ],
+  "DDIT3_targets_measured": 74,
+  "frozen_background_measured": 11181,
+  "case_level_clinical_outcome_tables_or_old_cell2location_results_used": false,
+  "old_pipeline_final_acceptance_not_inherited": true,
+  "raw_counts_read_only": true,
+  "spatial_biological_validation": false,
+  "complete_server_inventory_sha256": "ceb8aea551081510e5a8661ab0f93582aa72c03c2a51d24e9ba322530458ddc9"
+}

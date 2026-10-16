@@ -20,3 +20,8 @@ inventories/analysis/2026-10-16/state_DLG_LR_receiver_function_v1/**/*.tsv white
 
 # Preserve Matplotlib SVG path formatting and the server-bound figure SHA.
 inventories/analysis/2026-10-16/state_DLG_LR_receiver_function_v1/figures_v1/*.svg whitespace=-blank-at-eol
+
+# Preserve source SHA and missing fields in reviewed spatial aggregates.
+inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/**/*.tsv whitespace=-blank-at-eol
+inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/*.tsv whitespace=-blank-at-eol
+inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/*.svg whitespace=-blank-at-eol

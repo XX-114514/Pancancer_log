@@ -1,0 +1,5 @@
+axis_id	panel	assays_sharing_panel	no_paired_source	one_paired_source	atleast_two_paired_sources	original_full_signature_qualified
+39b0b7152fd8eb7e231088260234a630f14de117f25118ab85ae80708739bfe8	Panel A	1	60	96	658	0
+5c464f2ecb7c186856f4baf4797d3beb8b2e249b6ddac4a5ec0b168285d805c8	Panel B	4	60	96	658	0
+5f54d4f6507c385288359167e01182c33daf7be7ae1ab712e549a0e86d81a64d	Panel C	3	123	85	606	0
+bfe7fe67b21ec65a1e982ed6389be327ee72efbb71d90a87020d0fd67144b67b	Panel D	6	122	75	617	0

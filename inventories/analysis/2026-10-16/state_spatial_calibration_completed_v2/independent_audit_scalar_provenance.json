@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ALL91447_CELL_SPARSE_MANUAL_FULL_PARTIAL_OUTSIDE_UCELL_AND_ALL_IDENTITY_RHOS_SCOPE_SOURCE_SUMMARIES",
+  "observed_UTC": "2026-10-16T10:30:49.483991+00:00",
+  "auditor_sha256": "fc8d1709104ef40ada2340c0ca02165726e69226ccdbd2b4d3cb6ede8ee891a0",
+  "calibration_inventory_sha256": "f4802973cf3ca061b35c0659389572ed513ae012d8e5957bf0bfeae684d515fd",
+  "cells_checked": 91447,
+  "manual_partial_and_outside_score_values": 30820392,
+  "manual_full_reference_values": 4090125,
+  "identity_descriptor_records": 725004,
+  "max_manual_score_error": 4.4703277413127296e-08,
+  "max_descriptor_error": 1.1102230246251565e-16,
+  "public_output_sha256": "564575a2192729e3a415fc6aceaa4820fb37893a2bd41e6effcba33bd7f05bf9",
+  "formal_states_or_biological_validation": false
+}

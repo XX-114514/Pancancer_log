@@ -41,3 +41,8 @@
 ## 2026-10-16T10:11:06.989555+00:00 /UTC+8 2026-10-16T18:11:06.989555+08:00 后续独立审计未通过与v2修正
 
 91447全计算终止，但审计发现float32/float64块均值使并列秩不同，v1未验收。新v2只重算块均值描述，全部细胞评分及其他字段保留，重新独立验收pending。[失败与修正证据](../inventories/analysis/2026-10-16/state_spatial_proxy_precision_repair_v2/RESULTS.md)。
+
+
+## 2026-10-16T11:12:52.291147+00:00 UTC / 2026-10-16T19:12:52.291147+08:00 UTC+8 终态验收
+
+10:30:49 UTC独立全34910517分数/725004描述通过。[全交付和限制](../inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/RESULTS.md)。此前pending为历史观察，当前以此验收为准。

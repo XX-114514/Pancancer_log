@@ -1,0 +1,2 @@
+dataset	spots	genes	libraries	NAMPT	ITGA5	ITGB1	DDIT3	DDIT3_frozen_targets	DDIT3_targets_measured	DDIT3_target_fraction	frozen_background	frozen_background_measured	all_joint_gene_measurement_gates	exact_original172_endpoint_identity_validated	spot_is_single_cell
+GSE273952	71398	24146	19	True	True	True	True	74	74	1.0	12657	11181	True	False	False

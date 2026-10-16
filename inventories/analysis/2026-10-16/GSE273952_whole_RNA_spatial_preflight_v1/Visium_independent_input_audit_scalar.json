@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ALL71398_RAW_COUNT_ROWS_NATIVE_GENE_LOOKUP19_LIBRARIES_UNIQUE_COORDINATES814_GENE_COVERAGES",
+  "observed_UTC": "2026-10-16T10:54:12.467331+00:00",
+  "auditor_sha256": "8cfc0c5518d6e63fcb499a812196c3d515057620d7a513363e0b6212658ba05f",
+  "producer_inventory_sha256": "ceb8aea551081510e5a8661ab0f93582aa72c03c2a51d24e9ba322530458ddc9",
+  "input_file_sha256": "9035a38d47f82167f9ff69051ca4f9872f2efce6737df6ee121328d363c92c3f",
+  "spots": 71398,
+  "genes": 24146,
+  "specimen_library_units": 19,
+  "reviewed_patient_identity_bridge": false,
+  "raw_sparse_values_checked": 232928622,
+  "duplicate_within_library_coordinates": 0,
+  "empty_count_spots": 0,
+  "signature_measurement_rows_checked": 814,
+  "all_count_rows_streamed_independently": true,
+  "clinical_outcome_values_used": false,
+  "old_deconvolution_values_used": false,
+  "spatial_biological_validation": false,
+  "private_QC_sha256": "1ca9741c9cc2e65d5ec135505706dd66bd9fe4ecf825e2469afa17b098c52b5b",
+  "complete_server_inventory_sha256": "814c5abee4b0654274b2c49d27c96bf211e09c935cbafaebe09f78a0cb6cfd4c"
+}

@@ -1,0 +1,301 @@
+{
+  "status": "PASS_EXACT_SCHEMAS_ALL_ROWS_CLOSED_TEXT_DOMAIN_NUMERIC_AGGREGATES_ONLY",
+  "observed_UTC": "2026-10-16T10:51:08.561835+00:00",
+  "producer_sha256": "f9114b9c5a19c9aecaf07baf39d15deed32a68cf5b70da897edd6dd2e9fd6d49",
+  "parent_publication_inventory_sha256": "027081c381d7280bebfb248c5a0117c92fbca6d4cf1f4e2998978f4c62811975",
+  "independent_audit_sha256": "3339daf356719ba15a187be2953f0090852cd692588ebeabca1492cb17c367cf",
+  "previous_recursive_packet_not_transferred": true,
+  "removed": [
+    "sample_id identifiers and repeated specimen rows",
+    "all private output filenames and private inventory entries"
+  ],
+  "table_reviews": [
+    {
+      "table": "public_all_source_programme_axis_summary.tsv",
+      "records": 127636,
+      "row_unit": "cohort_GSE x major x programme x panel",
+      "all_text_fields_closed_whitelists": true,
+      "all_other_fields_numeric_or_boolean": true,
+      "no_patient_cell_or_sample_identifiers": true,
+      "no_clinical_outcomes": true,
+      "no_internal_paths_credentials_or_raw_expression": true
+    },
+    {
+      "table": "public_source_major_axis_resolution_aggregate.tsv",
+      "records": 2836,
+      "row_unit": "cohort_GSE x major x panel",
+      "all_text_fields_closed_whitelists": true,
+      "all_other_fields_numeric_or_boolean": true,
+      "no_patient_cell_or_sample_identifiers": true,
+      "no_clinical_outcomes": true,
+      "no_internal_paths_credentials_or_raw_expression": true
+    },
+    {
+      "table": "public_actual_cell_manual_proxy_checks.tsv",
+      "records": 2836,
+      "row_unit": "cohort_GSE x major x panel",
+      "all_text_fields_closed_whitelists": true,
+      "all_other_fields_numeric_or_boolean": true,
+      "no_patient_cell_or_sample_identifiers": true,
+      "no_clinical_outcomes": true,
+      "no_internal_paths_credentials_or_raw_expression": true
+    },
+    {
+      "table": "public_all_source_axis_independent_checks.tsv",
+      "records": 2836,
+      "row_unit": "cohort_GSE x major x panel",
+      "all_text_fields_closed_whitelists": true,
+      "all_other_fields_numeric_or_boolean": true,
+      "no_patient_cell_or_sample_identifiers": true,
+      "no_clinical_outcomes": true,
+      "no_internal_paths_credentials_or_raw_expression": true
+    }
+  ],
+  "tables": [
+    {
+      "table": "public_all_source_programme_axis_summary.tsv",
+      "records": 127636,
+      "columns": [
+        "gse_id",
+        "major",
+        "programme_id",
+        "axis_id",
+        "identity_strata",
+        "calibratable_identity_strata",
+        "partial_signature_genes",
+        "native_panel_features",
+        "proxy_maxrank",
+        "full_signature_spatial_qualified",
+        "biological_validation",
+        "cell_full_reference_rho_median",
+        "cell_full_reference_rho_estimable_strata",
+        "cell_outside_panel_reference_rho_median",
+        "cell_outside_panel_reference_rho_estimable_strata",
+        "block_mean_full_reference_rho_median",
+        "block_mean_full_reference_rho_estimable_strata",
+        "block_mean_outside_panel_reference_rho_median",
+        "block_mean_outside_panel_reference_rho_estimable_strata",
+        "proxy_full_RNA_rho_median",
+        "proxy_full_RNA_rho_estimable_strata",
+        "proxy_panel_RNA_rho_median",
+        "proxy_panel_RNA_rho_estimable_strata",
+        "proxy_detected_genes_rho_median",
+        "proxy_detected_genes_rho_estimable_strata",
+        "status_DESCRIPTIVE_IDENTITY_INTERNAL_CALIBRATION",
+        "status_FEWER_THAN20CELLS_OR5BLOCKS_TECHNICAL_COVERAGE",
+        "status_CONSTANT_PROXY_OR_REFERENCE",
+        "status_NO_SIGNATURE_GENE_ON_NATIVE_PANEL",
+        "status_FULL_NATIVE_REFERENCE_UNMEASURABLE"
+      ],
+      "publication_table_sha256": "f96dcc8c3d602032cb4f7bd460248e94e53a9690c8cc5bb9b804888fa83de278",
+      "parent_table_sha256": "f96dcc8c3d602032cb4f7bd460248e94e53a9690c8cc5bb9b804888fa83de278",
+      "unchanged_original_scientific_summary": true,
+      "parts": [
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_000.tsv",
+          "sha256": "10683e53f18513755e80eb82064417e681743803499bfadbe92d8d66e2fca2b6",
+          "bytes": 3145502
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_001.tsv",
+          "sha256": "02a4ad8a12c4ab003b3340314795b0c6af679b343b751c792f8a12dd5af743f0",
+          "bytes": 3145647
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_002.tsv",
+          "sha256": "79bc92230519d45911443a35b14c4c7c39622adac97fa4cf4820508abb5ccc15",
+          "bytes": 3145520
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_003.tsv",
+          "sha256": "8817a375ed52e0367715e0115d6f9ff78845595b8177f5f60cc2410a92369443",
+          "bytes": 3145673
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_004.tsv",
+          "sha256": "994e90bd41bf27c38c8f13f4b7c034aa43daddebecb275c7cc480fc82bedda17",
+          "bytes": 3145720
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_005.tsv",
+          "sha256": "67b55639114c8aa8a459ceb93e66515477086539a8d40591e41c122b9f086881",
+          "bytes": 3145690
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_006.tsv",
+          "sha256": "7d02560e768d1bb191fc4bf0344d0a6f3c0882b2afeceb0a22ca88d7df6a5c85",
+          "bytes": 3145592
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_007.tsv",
+          "sha256": "1b839cc24698f32c1c035f699f22c8bf6a3785ded31d533ab17a2b3e16245141",
+          "bytes": 3145508
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_008.tsv",
+          "sha256": "52c33afea5d206d6f69af3f7eded77ebebab41fa78e6ca6d9aac1ee6a65f853f",
+          "bytes": 3145555
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_009.tsv",
+          "sha256": "74ccbaae2e20e34e64183f6b16e08476c7af2e93b26f520f4c6775480f6638f8",
+          "bytes": 3145437
+        },
+        {
+          "relative_file": "public_all_source_programme_axis_summary/part_010.tsv",
+          "sha256": "2e6473294a6639aac123426689ac7009713e8f629be6ba6f0478de77299493d5",
+          "bytes": 1391819
+        }
+      ]
+    },
+    {
+      "table": "public_source_major_axis_resolution_aggregate.tsv",
+      "records": 2836,
+      "columns": [
+        "gse_id",
+        "major",
+        "axis_id",
+        "native_resolved_panel_features",
+        "original_features_min",
+        "original_features_max",
+        "panel_missing_not_zero_filled"
+      ],
+      "publication_table_sha256": "3c0ffd434a7a536dcf3befd1d1261822c1560d7db71bf005bd838119cd69dfa9",
+      "parent_table_sha256": "434d0ee2ff0cf4e809ae6475046c3c0460de651a47ebcd2147258a3ef9e61f1c",
+      "unchanged_original_scientific_summary": false,
+      "parts": [
+        {
+          "relative_file": "public_source_major_axis_resolution_aggregate/part_000.tsv",
+          "sha256": "3c0ffd434a7a536dcf3befd1d1261822c1560d7db71bf005bd838119cd69dfa9",
+          "bytes": 296806
+        }
+      ]
+    },
+    {
+      "table": "public_actual_cell_manual_proxy_checks.tsv",
+      "records": 2836,
+      "columns": [
+        "gse_id",
+        "major",
+        "axis_id",
+        "manual_scores",
+        "max_manual_error"
+      ],
+      "publication_table_sha256": "9312d601f387da4bd0a03a397053a09e9806911d7e85980b1a34b18bdad44a67",
+      "parent_table_sha256": "9312d601f387da4bd0a03a397053a09e9806911d7e85980b1a34b18bdad44a67",
+      "unchanged_original_scientific_summary": true,
+      "parts": [
+        {
+          "relative_file": "public_actual_cell_manual_proxy_checks/part_000.tsv",
+          "sha256": "9312d601f387da4bd0a03a397053a09e9806911d7e85980b1a34b18bdad44a67",
+          "bytes": 320232
+        }
+      ]
+    },
+    {
+      "table": "public_all_source_axis_independent_checks.tsv",
+      "records": 2836,
+      "columns": [
+        "gse_id",
+        "major",
+        "axis_id",
+        "cells",
+        "manual_proxy_max_error",
+        "manual_outside_reference_max_error",
+        "identity_descriptor_records"
+      ],
+      "publication_table_sha256": "564575a2192729e3a415fc6aceaa4820fb37893a2bd41e6effcba33bd7f05bf9",
+      "parent_table_sha256": "564575a2192729e3a415fc6aceaa4820fb37893a2bd41e6effcba33bd7f05bf9",
+      "unchanged_original_scientific_summary": true,
+      "parts": [
+        {
+          "relative_file": "public_all_source_axis_independent_checks/part_000.tsv",
+          "sha256": "564575a2192729e3a415fc6aceaa4820fb37893a2bd41e6effcba33bd7f05bf9",
+          "bytes": 391754
+        }
+      ]
+    }
+  ],
+  "explicit_payload_files": [
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_000.tsv",
+      "sha256": "10683e53f18513755e80eb82064417e681743803499bfadbe92d8d66e2fca2b6",
+      "bytes": 3145502
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_001.tsv",
+      "sha256": "02a4ad8a12c4ab003b3340314795b0c6af679b343b751c792f8a12dd5af743f0",
+      "bytes": 3145647
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_002.tsv",
+      "sha256": "79bc92230519d45911443a35b14c4c7c39622adac97fa4cf4820508abb5ccc15",
+      "bytes": 3145520
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_003.tsv",
+      "sha256": "8817a375ed52e0367715e0115d6f9ff78845595b8177f5f60cc2410a92369443",
+      "bytes": 3145673
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_004.tsv",
+      "sha256": "994e90bd41bf27c38c8f13f4b7c034aa43daddebecb275c7cc480fc82bedda17",
+      "bytes": 3145720
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_005.tsv",
+      "sha256": "67b55639114c8aa8a459ceb93e66515477086539a8d40591e41c122b9f086881",
+      "bytes": 3145690
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_006.tsv",
+      "sha256": "7d02560e768d1bb191fc4bf0344d0a6f3c0882b2afeceb0a22ca88d7df6a5c85",
+      "bytes": 3145592
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_007.tsv",
+      "sha256": "1b839cc24698f32c1c035f699f22c8bf6a3785ded31d533ab17a2b3e16245141",
+      "bytes": 3145508
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_008.tsv",
+      "sha256": "52c33afea5d206d6f69af3f7eded77ebebab41fa78e6ca6d9aac1ee6a65f853f",
+      "bytes": 3145555
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_009.tsv",
+      "sha256": "74ccbaae2e20e34e64183f6b16e08476c7af2e93b26f520f4c6775480f6638f8",
+      "bytes": 3145437
+    },
+    {
+      "relative_file": "public_all_source_programme_axis_summary/part_010.tsv",
+      "sha256": "2e6473294a6639aac123426689ac7009713e8f629be6ba6f0478de77299493d5",
+      "bytes": 1391819
+    },
+    {
+      "relative_file": "public_source_major_axis_resolution_aggregate/part_000.tsv",
+      "sha256": "3c0ffd434a7a536dcf3befd1d1261822c1560d7db71bf005bd838119cd69dfa9",
+      "bytes": 296806
+    },
+    {
+      "relative_file": "public_actual_cell_manual_proxy_checks/part_000.tsv",
+      "sha256": "9312d601f387da4bd0a03a397053a09e9806911d7e85980b1a34b18bdad44a67",
+      "bytes": 320232
+    },
+    {
+      "relative_file": "public_all_source_axis_independent_checks/part_000.tsv",
+      "sha256": "564575a2192729e3a415fc6aceaa4820fb37893a2bd41e6effcba33bd7f05bf9",
+      "bytes": 391754
+    },
+    {
+      "relative_file": "reviewed_calibration_scalar_provenance.json",
+      "sha256": "370e23a6ee448340daf7497a49e0eb80f2aa0a05aa77113d4ebf6c64de651937",
+      "bytes": 1308
+    },
+    {
+      "relative_file": "independent_audit_scalar_provenance.json",
+      "sha256": "3339daf356719ba15a187be2953f0090852cd692588ebeabca1492cb17c367cf",
+      "bytes": 779
+    }
+  ]
+}

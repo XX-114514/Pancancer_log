@@ -777,4 +777,9 @@ Git 状态：
 
 2026年10月CM（v20261010）的完整5448固定TF检验及官方ULM/SVD/BH独立复算已通过：50BH/33合格区间，与原14LR候选只有1条同时支持，为来源限定的Treg→巨噬NAMPT–ITGA5_ITGB1/DDIT3靶RNA线索。尚无直接结合、蛋白机制或正式状态结论。[TF审阅](runs/20261016_DLG_TF_joint_evidence_v1.md)。
 
-空间固定52来源/18major、91447非发现细胞、14数据/4唯一面板全部计算结束，原生输入身份/数量与2092原始细胞/92925完整UCell独立复核通过。v1独立审计检出float32/float64块均值并列秩差异；v2仅重汇总两个块相关及来源摘要，全部细胞评分字节不变，10:12:46 UTC退出0。新全细胞手算审计实际运行，尚未验收；原80%/10基因完整空间资格仍不满足。[空间run](runs/20261016_state_spatial_proxy_calibration_v1.md)、[精度修复](inventories/analysis/2026-10-16/state_spatial_proxy_precision_repair_v2/RESULTS.md)。
+空间固定52来源/18major、91447非发现细胞、14数据/4唯一面板全部计算结束，原生输入身份/数量与2092原始细胞/92925完整UCell独立复核通过。v1独立审计检出float32/float64块均值并列秩差异；v2仅重汇总两个块相关及来源摘要，全部细胞评分字节不变，10:12:46 UTC退出0。10:30:49 UTC全34910517分数与725004身份描述手算审计通过；14靶向面板原80%/10基因完整空间资格仍不满足。现有全转录组Visium输入独立通过，71398混合spot投射已启动待终态。[空间run](runs/20261016_state_spatial_proxy_calibration_v1.md)、[精度修复](inventories/analysis/2026-10-16/state_spatial_proxy_precision_repair_v2/RESULTS.md)。
+
+
+## 2026-10-16T11:12:52.291147+00:00 UTC / 2026-10-16T19:12:52.291147+08:00 UTC+8 空间代理全量验收，现有全转录组空间数据继续投射
+
+[当前run](runs/20261016_GSE273952_frozen_programme_spatial_v1.md)；91447空间代理校准已全量审计通过，14靶向面板无NAMPT；新Visium输入已验收，投射尚待终态，不改变原标签/2026年10月9CM或其他并发任务状态。
