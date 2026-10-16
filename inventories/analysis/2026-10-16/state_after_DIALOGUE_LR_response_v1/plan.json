@@ -1,0 +1,17 @@
+{
+  "producer_sha256": "258d4725ce70b000f9ffa440877b7f23ea415ea7d810decc67726b65139882eb",
+  "LR_inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+  "QC_inventory_sha256": "f6aafabeec2d12381d86facadf5270197c26bbe17428ed9751ace738a8f906fc",
+  "seed": 2026101604,
+  "permutations": 20000,
+  "bootstraps": 2000,
+  "minimum_valid_bootstraps": 1900,
+  "minimum_retained_genes": 20,
+  "minimum_retained_L1_fraction": 0.8,
+  "scope": "All14 fixed contexts x2 directions x2 receiver MCP slots x4624 LR=258944; no selection on MCP or LR p.",
+  "full_block_main": "Exploratory same-cohort learned programme partial rank, eight original covariates, >=20 observed blocks, >=80pct output, residual df>=10, no dropped covariates.",
+  "internal_holdout": "Diagnostic effect only: >=20 observed discovery /10 holdout, full training nuisance design; no heldout p or external-validation claim.",
+  "causal_validation": false,
+  "disputed_C1QA_CD93_and_misleading_INHBA_ACTR2_main_inference": false,
+  "missing_not_zero": true
+}

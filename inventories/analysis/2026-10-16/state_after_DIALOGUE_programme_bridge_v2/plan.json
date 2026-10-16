@@ -1,0 +1,9 @@
+{
+  "producer_sha256": "e718a97ebc5273308618fadf2a14a64688a58b72624d9d3cc50faef23fcf71d4",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "context_coverage_sha256": "5ca58a27cf99335ca5f76b335cc420a9941b4162fb2d5441a1e92a901feec704",
+  "ucell_audit_sha256": "d2a3f6eb66abd8880a89a0a9bc5c36cec462926347122df90d8ad9f45b5e170c",
+  "scope": "All14 contexts x2 types x2 MCPs; every allowed reference programme; no effect/P selection.",
+  "descriptive_only": true,
+  "addition": "All4770 programme score comparisons also report actual source/identity cell gene support, RNA fraction and both score IQRs; no new tests or post-P filtering."
+}

@@ -1,0 +1,663 @@
+{
+  "purpose": "Descriptive review only; all fixed programmes remain in LR scope regardless of p",
+  "records": [
+    {
+      "context": 1611,
+      "MCP": "MCP2",
+      "heldout_blocks": 15,
+      "rho": 0.7714285714285715,
+      "CI": [
+        0.4504735595895818,
+        0.9019963702359348
+      ],
+      "BH_q": 0.015399230038498,
+      "endpoints": [
+        {
+          "type": "typeA",
+          "endpoint": "Epithelial_cell_KRT18_52",
+          "CMs": "CM04",
+          "major": "Epithelial cell",
+          "positive_genes": [
+            {
+              "gene": "NDUFV2",
+              "weight": 0.597903847506596
+            },
+            {
+              "gene": "GALNT1",
+              "weight": 0.448299971651931
+            },
+            {
+              "gene": "ANO1",
+              "weight": 0.382644502760146
+            },
+            {
+              "gene": "CCDC68",
+              "weight": 0.353162219028031
+            },
+            {
+              "gene": "AGR2",
+              "weight": 0.21224853214738
+            },
+            {
+              "gene": "ACTG1",
+              "weight": 0.152851614991753
+            },
+            {
+              "gene": "SERPINB6",
+              "weight": 0.14667311149957
+            },
+            {
+              "gene": "CTD-2568A17.3",
+              "weight": 0.134994790888324
+            },
+            {
+              "gene": "HSPA1B",
+              "weight": 0.125131361242583
+            },
+            {
+              "gene": "MT1X",
+              "weight": 0.118084578067716
+            },
+            {
+              "gene": "SFN",
+              "weight": 0.104663993961667
+            },
+            {
+              "gene": "RP11-329L6.2",
+              "weight": 0.103137332121528
+            }
+          ],
+          "negative_genes": [
+            {
+              "gene": "MPC2",
+              "weight": -0.66422895256227
+            },
+            {
+              "gene": "H3F3A",
+              "weight": -0.654585875255323
+            },
+            {
+              "gene": "WIPI1",
+              "weight": -0.563716245071568
+            },
+            {
+              "gene": "GS1-251I9.4",
+              "weight": -0.510667283926125
+            },
+            {
+              "gene": "REG1A",
+              "weight": -0.453298483358395
+            },
+            {
+              "gene": "CREB3L4",
+              "weight": -0.393434799687604
+            },
+            {
+              "gene": "SERPINA1",
+              "weight": -0.230266229544954
+            },
+            {
+              "gene": "SPINK1",
+              "weight": -0.172066210629288
+            },
+            {
+              "gene": "ROMO1",
+              "weight": -0.155006072914542
+            },
+            {
+              "gene": "FAM3D",
+              "weight": -0.112473370727393
+            },
+            {
+              "gene": "CYB5B",
+              "weight": -0.112365669313947
+            },
+            {
+              "gene": "TPT1",
+              "weight": -0.111843982564819
+            }
+          ],
+          "top_reference_overlap": [
+            {
+              "reference_programme": "ACN_Epithelial_cell_K10_04",
+              "reference_stable": true,
+              "reference_descriptors": "epithelial_RNA",
+              "reference_basic_expression": true,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0531400966183574,
+              "up_overlap": 7,
+              "down_overlap": 4,
+              "overlap_genes": "AGR2;C10ORF99;CLDN7;ETHE1;FAM3D;KRT18;KRT8;PCCA;PRSS3;REG1A;REG4"
+            },
+            {
+              "reference_programme": "ACN_Epithelial_cell_K20_16",
+              "reference_stable": false,
+              "reference_descriptors": null,
+              "reference_basic_expression": false,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0380952380952381,
+              "up_overlap": 3,
+              "down_overlap": 5,
+              "overlap_genes": "AGR2;CAPN9;FAM3D;PCCA;REG1A;REG4;SERPINA1;TFF1"
+            },
+            {
+              "reference_programme": "ACN_Epithelial_cell_K15_03",
+              "reference_stable": true,
+              "reference_descriptors": null,
+              "reference_basic_expression": true,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0331753554502369,
+              "up_overlap": 4,
+              "down_overlap": 3,
+              "overlap_genes": "AGR2;GPX2;KRT18;PCCA;REG1A;REG4;TFF1"
+            }
+          ],
+          "top_heldout_UCell_correspondence": [
+            {
+              "reference_programme": "ACN_Epithelial_cell_K15_06",
+              "paired_measured_blocks": 15,
+              "Spearman_rho": 0.8642857142857143
+            },
+            {
+              "reference_programme": "ACN_Epithelial_cell_K20_07",
+              "paired_measured_blocks": 15,
+              "Spearman_rho": 0.8607142857142858
+            },
+            {
+              "reference_programme": "ACN_Epithelial_cell_K10_05",
+              "paired_measured_blocks": 15,
+              "Spearman_rho": 0.775
+            }
+          ]
+        },
+        {
+          "type": "typeB",
+          "endpoint": "Macrophage_IFI6_18",
+          "CMs": "CM04",
+          "major": "Macrophage",
+          "positive_genes": [
+            {
+              "gene": "MMP12",
+              "weight": 0.314588109828696
+            },
+            {
+              "gene": "MT1X",
+              "weight": 0.298960275879228
+            },
+            {
+              "gene": "S100A8",
+              "weight": 0.237502373459862
+            },
+            {
+              "gene": "MT1G",
+              "weight": 0.225150806267604
+            },
+            {
+              "gene": "C15ORF48",
+              "weight": 0.176277453590171
+            },
+            {
+              "gene": "TMSB10",
+              "weight": 0.171494823815876
+            },
+            {
+              "gene": "JUN",
+              "weight": 0.142357694278
+            },
+            {
+              "gene": "DNAJB1",
+              "weight": 0.141808422388426
+            },
+            {
+              "gene": "NFKBIA",
+              "weight": 0.140812644739453
+            },
+            {
+              "gene": "SOD2",
+              "weight": 0.136062392780129
+            },
+            {
+              "gene": "MMP9",
+              "weight": 0.134524128825432
+            },
+            {
+              "gene": "S100A9",
+              "weight": 0.134202422832918
+            }
+          ],
+          "negative_genes": [
+            {
+              "gene": "ALOX5AP",
+              "weight": -0.174243280089114
+            },
+            {
+              "gene": "CTSL",
+              "weight": -0.17096518949256
+            },
+            {
+              "gene": "IFI6",
+              "weight": -0.136276519987952
+            },
+            {
+              "gene": "CORO1A",
+              "weight": -0.126969784009474
+            },
+            {
+              "gene": "SDS",
+              "weight": -0.125946495574721
+            },
+            {
+              "gene": "ISG15",
+              "weight": -0.117136306169486
+            },
+            {
+              "gene": "LY6E",
+              "weight": -0.114986335020724
+            },
+            {
+              "gene": "CD9",
+              "weight": -0.112998234778024
+            },
+            {
+              "gene": "CTSD",
+              "weight": -0.105730828425937
+            },
+            {
+              "gene": "BRI3",
+              "weight": -0.102139914741268
+            },
+            {
+              "gene": "SATB1",
+              "weight": -0.0984051906638681
+            },
+            {
+              "gene": "LGALS3",
+              "weight": -0.0891353203678101
+            }
+          ],
+          "top_reference_overlap": [
+            {
+              "reference_programme": "ACN_Macrophage_K20_05",
+              "reference_stable": false,
+              "reference_descriptors": "IFN_like",
+              "reference_basic_expression": false,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0551724137931034,
+              "up_overlap": 6,
+              "down_overlap": 10,
+              "overlap_genes": "CMPK2;CXCL10;EIF2AK2;GBP4;GBP5;IFI44L;IFI6;IFIT1;ISG15;LAP3;LY6E;MX1;MX2;OAS1;STAT1;VAMP5"
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K15_06",
+              "reference_stable": false,
+              "reference_descriptors": "IFN_like",
+              "reference_basic_expression": false,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0515463917525773,
+              "up_overlap": 6,
+              "down_overlap": 9,
+              "overlap_genes": "CXCL10;EIF2AK2;GBP4;GBP5;IFI44L;IFI6;IFIT1;ISG15;LAP3;LY6E;MX1;MX2;OAS1;STAT1;VAMP5"
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K10_02",
+              "reference_stable": true,
+              "reference_descriptors": null,
+              "reference_basic_expression": false,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.047945205479452,
+              "up_overlap": 13,
+              "down_overlap": 1,
+              "overlap_genes": "C15ORF48;CCL3;CTSL;CXCL1;CXCL2;CXCL3;CXCL5;CXCL8;IL1B;NFKBIA;SLC39A8;SOD2;SRGN;TNFAIP6"
+            }
+          ],
+          "top_heldout_UCell_correspondence": [
+            {
+              "reference_programme": "ACN_Macrophage_K20_07",
+              "paired_measured_blocks": 15,
+              "Spearman_rho": -0.5964285714285714
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K20_04",
+              "paired_measured_blocks": 15,
+              "Spearman_rho": 0.5607142857142857
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K20_18",
+              "paired_measured_blocks": 15,
+              "Spearman_rho": 0.5607142857142857
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": 2713,
+      "MCP": "MCP2",
+      "heldout_blocks": 13,
+      "rho": 0.7747252747252747,
+      "CI": [
+        0.3965382159347677,
+        0.9426934097421203
+      ],
+      "BH_q": 0.0199490025498725,
+      "endpoints": [
+        {
+          "type": "typeA",
+          "endpoint": "Macrophage_IFI6_18",
+          "CMs": "CM01",
+          "major": "Macrophage",
+          "positive_genes": [
+            {
+              "gene": "TYROBP",
+              "weight": 0.441481069565862
+            },
+            {
+              "gene": "MIF",
+              "weight": 0.277089444528653
+            },
+            {
+              "gene": "TMSB10",
+              "weight": 0.257513200358975
+            },
+            {
+              "gene": "SERF2",
+              "weight": 0.184546369670793
+            },
+            {
+              "gene": "TMSB4X",
+              "weight": 0.181254000914208
+            },
+            {
+              "gene": "NPC2",
+              "weight": 0.132319944968996
+            },
+            {
+              "gene": "PPDPF",
+              "weight": 0.114567583125864
+            },
+            {
+              "gene": "UQCRB",
+              "weight": 0.0805117176145156
+            },
+            {
+              "gene": "OTOA",
+              "weight": 0.0781638328912792
+            },
+            {
+              "gene": "EEF1D",
+              "weight": 0.0280470612043448
+            },
+            {
+              "gene": "TOMM7",
+              "weight": 0.0251805249475332
+            },
+            {
+              "gene": "C9ORF16",
+              "weight": 0.0206303679914602
+            }
+          ],
+          "negative_genes": [
+            {
+              "gene": "GNAS",
+              "weight": -0.311159001030684
+            },
+            {
+              "gene": "PTPRC",
+              "weight": -0.293115061496974
+            },
+            {
+              "gene": "HSPA5",
+              "weight": -0.251417884423461
+            },
+            {
+              "gene": "NEAT1",
+              "weight": -0.245031478988001
+            },
+            {
+              "gene": "EIF3A",
+              "weight": -0.233211555520453
+            },
+            {
+              "gene": "SAMHD1",
+              "weight": -0.221626722928847
+            },
+            {
+              "gene": "ACTR3",
+              "weight": -0.208001347694231
+            },
+            {
+              "gene": "CD81",
+              "weight": -0.198819467949426
+            },
+            {
+              "gene": "CYBB",
+              "weight": -0.197933178580986
+            },
+            {
+              "gene": "PDIA3",
+              "weight": -0.195894474766066
+            },
+            {
+              "gene": "TPM3",
+              "weight": -0.191120240532217
+            },
+            {
+              "gene": "HNRNPU",
+              "weight": -0.172585655258999
+            }
+          ],
+          "top_reference_overlap": [
+            {
+              "reference_programme": "ACN_Macrophage_K20_01",
+              "reference_stable": true,
+              "reference_descriptors": null,
+              "reference_basic_expression": true,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0479041916167664,
+              "up_overlap": 0,
+              "down_overlap": 8,
+              "overlap_genes": "ACTR2;CD81;CLTC;HNRNPU;JUND;LHFPL2;NEAT1;TFRC"
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K15_01",
+              "reference_stable": true,
+              "reference_descriptors": null,
+              "reference_basic_expression": true,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0416666666666666,
+              "up_overlap": 0,
+              "down_overlap": 7,
+              "overlap_genes": "ACTR2;CD81;CLTC;CTSS;CYBB;JUND;TFRC"
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K10_01",
+              "reference_stable": true,
+              "reference_descriptors": null,
+              "reference_basic_expression": true,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.023391812865497,
+              "up_overlap": 0,
+              "down_overlap": 4,
+              "overlap_genes": "C3AR1;CD81;CTSS;CYBB"
+            }
+          ],
+          "top_heldout_UCell_correspondence": [
+            {
+              "reference_programme": "ACN_Macrophage_K20_07",
+              "paired_measured_blocks": 13,
+              "Spearman_rho": 0.8406593406593407
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K20_02",
+              "paired_measured_blocks": 13,
+              "Spearman_rho": 0.6208791208791209
+            },
+            {
+              "reference_programme": "ACN_Macrophage_K15_09",
+              "paired_measured_blocks": 13,
+              "Spearman_rho": 0.6043956043956044
+            }
+          ]
+        },
+        {
+          "type": "typeB",
+          "endpoint": "Regulatory_T_cell_CTLA4_15",
+          "CMs": "CM01",
+          "major": "T cell",
+          "positive_genes": [
+            {
+              "gene": "TMSB4X",
+              "weight": 0.222527205319939
+            },
+            {
+              "gene": "SH3BGRL3",
+              "weight": 0.158559147291443
+            },
+            {
+              "gene": "CD74",
+              "weight": 0.112751733660716
+            },
+            {
+              "gene": "TRAC",
+              "weight": 0.108670771383927
+            },
+            {
+              "gene": "GLTSCR2",
+              "weight": 0.0941015503098617
+            },
+            {
+              "gene": "EEF1D",
+              "weight": 0.0915024812266446
+            },
+            {
+              "gene": "EEF2",
+              "weight": 0.0898102703701912
+            },
+            {
+              "gene": "UQCR11",
+              "weight": 0.0860841203963021
+            },
+            {
+              "gene": "PFN1",
+              "weight": 0.0835968221077209
+            },
+            {
+              "gene": "HNRNPA1",
+              "weight": 0.08164060921531
+            },
+            {
+              "gene": "B2M",
+              "weight": 0.0776413157853748
+            },
+            {
+              "gene": "SLC25A6",
+              "weight": 0.0766799739059547
+            }
+          ],
+          "negative_genes": [
+            {
+              "gene": "JUND",
+              "weight": -0.458767272810627
+            },
+            {
+              "gene": "IL7R",
+              "weight": -0.273608671862473
+            },
+            {
+              "gene": "GNAS",
+              "weight": -0.209837985502779
+            },
+            {
+              "gene": "TNFAIP3",
+              "weight": -0.188230168679283
+            },
+            {
+              "gene": "DDX5",
+              "weight": -0.185132484406927
+            },
+            {
+              "gene": "CALM1",
+              "weight": -0.181790305409754
+            },
+            {
+              "gene": "HSP90AB1",
+              "weight": -0.175248097985312
+            },
+            {
+              "gene": "NCL",
+              "weight": -0.155896882927815
+            },
+            {
+              "gene": "HLA-F",
+              "weight": -0.153821100476816
+            },
+            {
+              "gene": "LCP1",
+              "weight": -0.150900923454112
+            },
+            {
+              "gene": "XRCC5",
+              "weight": -0.144081560677962
+            },
+            {
+              "gene": "ETS1",
+              "weight": -0.13979419366808
+            }
+          ],
+          "top_reference_overlap": [
+            {
+              "reference_programme": "ACN_T_cell_K10_02",
+              "reference_stable": true,
+              "reference_descriptors": "heatshock",
+              "reference_basic_expression": false,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0261194029850746,
+              "up_overlap": 0,
+              "down_overlap": 7,
+              "overlap_genes": "DNAJA1;FOSB;HSP90AA1;HSP90AB1;JUN;KLF6;TNFAIP3"
+            },
+            {
+              "reference_programme": "ACN_T_cell_K15_07",
+              "reference_stable": false,
+              "reference_descriptors": "heatshock",
+              "reference_basic_expression": false,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0261194029850746,
+              "up_overlap": 1,
+              "down_overlap": 6,
+              "overlap_genes": "DNAJA1;FOSB;HSP90AA1;HSP90AB1;HSPB1;JUN;UBC"
+            },
+            {
+              "reference_programme": "ACN_T_cell_K10_04",
+              "reference_stable": true,
+              "reference_descriptors": "Treg_related",
+              "reference_basic_expression": false,
+              "reference_foreign_RNA_sensitive": false,
+              "jaccard": 0.0261194029850746,
+              "up_overlap": 5,
+              "down_overlap": 2,
+              "overlap_genes": "ACTB;B2M;CD74;CTLA4;PFN1;TBC1D4;UCP2"
+            }
+          ],
+          "top_heldout_UCell_correspondence": [
+            {
+              "reference_programme": "ACN_T_cell_K15_13",
+              "paired_measured_blocks": 13,
+              "Spearman_rho": -0.7307692307692307
+            },
+            {
+              "reference_programme": "ACN_T_cell_K20_17",
+              "paired_measured_blocks": 13,
+              "Spearman_rho": -0.7307692307692307
+            },
+            {
+              "reference_programme": "ACN_T_cell_K10_09",
+              "paired_measured_blocks": 13,
+              "Spearman_rho": -0.7197802197802198
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
