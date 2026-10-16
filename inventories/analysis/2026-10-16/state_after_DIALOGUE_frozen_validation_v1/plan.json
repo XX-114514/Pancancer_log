@@ -1,0 +1,22 @@
+{
+  "driver_sha256": "afad4891774b89964aa0e34c56e4bb673d91ecf479ce99f2ebc02ae0621a6596",
+  "scripts": {
+    "project_state_after_DIALOGUE_frozen_v1.R": "f4acb778c9528110e7bc89c61b1e44a876750ca984f5b6a438d53584327b2421",
+    "test_state_after_DIALOGUE_holdout_v1.py": "b551b5183c2aaea81f0f11bea5a3dc09fd598e11128e502f5ad967f5827cb975"
+  },
+  "runtime_directory": "20261014_DIALOGUE_method_pilot_v1",
+  "fixed_contexts": 14,
+  "fixed_MCPs": 2,
+  "minimum_internal_holdout_blocks": 10,
+  "permutations": 20000,
+  "bootstrap": 2000,
+  "seed": 2026101603,
+  "confounders": [
+    "cellQ",
+    "geneQ",
+    "fraction",
+    "logN"
+  ],
+  "BH_family": "All estimable internal-heldout MCP slots among fixed 28; nonestimable retained missing.",
+  "independent_validation": false
+}
