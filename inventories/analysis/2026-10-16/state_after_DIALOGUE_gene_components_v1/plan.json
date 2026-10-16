@@ -1,0 +1,7 @@
+{
+  "driver_sha256": "9016b2032654104f28bef92be2e10552cc9b58515884038f0fab7abfc5beb255",
+  "R_sha256": "e23390e90298b402342c8256ec2ce8291ec2cb8bcb5460408f593bc51e6be507",
+  "runtime_directory": "20261014_DIALOGUE_method_pilot_v1",
+  "scope": "All supported fixed56 slots; frozen gene normalization, signed weights and complete four-covariate gene-wise training correction.",
+  "LR_effect_tests": false
+}

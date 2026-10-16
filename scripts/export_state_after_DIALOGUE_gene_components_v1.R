@@ -1,0 +1,21 @@
+# Every supported fixed MCP: frozen gene contributions for LR-gene-masked response.
+args<-commandArgs(trailingOnly=TRUE);input<-args[1];models<-args[2];projection<-args[3];out<-args[4];runtime<-args[5];units_path<-args[6]
+stopifnot(!dir.exists(out));dir.create(out,recursive=TRUE,mode='0700');.libPaths(c(file.path(runtime,c('library_v7','library_v5','library_v2','library')),.libPaths()));suppressPackageStartupMessages(library(Matrix))
+units<-read.delim(gzfile(units_path),check.names=FALSE);tot<-aggregate(n_cells~sample_uid+major,data=units,FUN=sum);keys<-paste(tot$sample_uid,tot$major,sep='||');scope<-read.delim(file.path(projection,'public_slot_scope.tsv'),check.names=FALSE);checks<-list();rows<-list();saved_blocks<-read.delim(file.path(projection,'private_block_mean_scores.tsv'),check.names=FALSE)
+read_part<-function(root,side,part){p<-file.path(root,paste0('type',side,'_',part));if(!file.exists(paste0(p,'_metadata.tsv')))return(NULL);md<-read.delim(paste0(p,'_metadata.tsv'),check.names=FALSE);g<-readLines(paste0(p,'_genes.tsv'));m<-readMM(gzfile(paste0(p,'_tpm.mtx.gz')));stopifnot(nrow(m)==length(g),ncol(m)==nrow(md));rownames(m)<-g;colnames(m)<-md$cell;u<-units[match(md$unit_index,units$unit_index),];stopifnot(!anyNA(u$unit_index),identical(as.character(u$sample_uid),as.character(md$sample_uid)));md$fraction<-u$n_cells/tot$n_cells[match(paste(u$sample_uid,u$major,sep='||'),keys)];md$logN<-log1p(u$n_cells);list(md=md,m=m)}
+for(i in seq_len(nrow(scope))){
+ q<-scope[i,];if(q$status!='FROZEN_RECONSTRUCTION_PASS')next
+ name<-sprintf('context_%04d',q$context);type<-q$type;side<-sub('type','',type);program<-q$program;root<-file.path(input,name);key<-paste(q$context,type,program,sep='_');tr<-read_part(root,side,'discovery');te<-read_part(root,side,'holdout');w<-readRDS(file.path(projection,paste0(key,'_weights.rds')));stopifnot(all(w$genes%in%rownames(tr$m)))
+ z<-t(sweep(sweep(as.matrix(tr$m[w$genes,,drop=FALSE]),1,w$gene_mean,'-'),1,w$gene_sd,'/'));D<-model.matrix(~cellQ+geneQ+fraction+logN,data=tr$md);qrD<-qr(D);stopifnot(qrD$rank==ncol(D));coeff<-qr.coef(qrD,z);resid<-z-D%*%coeff;official<-readRDS(file.path(models,name,'discovery_result.rds'))$scores[[type]];ix<-match(tr$md$cell,official$cells);stopifnot(!anyNA(ix));err<-max(abs(as.numeric(resid%*%w$weight)-official[ix,program]));stopifnot(is.finite(err),err<1e-6)
+ blockerr<-0
+ for(part in c('discovery','holdout')){
+  v<-if(part=='discovery')tr else te;if(is.null(v))next
+  if(part=='discovery')C<-resid else {zt<-t(sweep(sweep(as.matrix(v$m[w$genes,,drop=FALSE]),1,w$gene_mean,'-'),1,w$gene_sd,'/'));Dt<-model.matrix(~cellQ+geneQ+fraction+logN,data=v$md);stopifnot(identical(colnames(D),colnames(Dt)));C<-zt-Dt%*%coeff}
+  blocks<-sort(unique(v$md$sample));B<-do.call(rbind,lapply(blocks,function(b)colMeans(C[v$md$sample==b,,drop=FALSE])));stopifnot(all(is.finite(B)));sb<-saved_blocks[saved_blocks$context==q$context&saved_blocks$type==type&saved_blocks$program==program&saved_blocks$partition==part,];bi<-match(blocks,sb$sample);stopifnot(!anyNA(bi),nrow(sb)==length(blocks));be<-max(abs(as.numeric(B%*%w$weight)-sb$score[bi]));stopifnot(is.finite(be),be<1e-6);blockerr<-max(blockerr,be);r<-expand.grid(gene=w$genes,sample=blocks,KEEP.OUT.ATTRS=FALSE,stringsAsFactors=FALSE);r$contribution<-as.vector(t(B));r$weight<-rep(w$weight,times=length(blocks));r$context<-q$context;r$type<-type;r$program<-program;r$partition<-part;rows[[paste(key,part)]]<-r
+ }
+ checks[[key]]<-data.frame(context=q$context,type=type,program=program,genes=length(w$genes),max_official_reconstruction_error=err,max_all_partition_block_reconstruction_error=blockerr,complete_four_covariate_gene_fit=TRUE)
+ saveRDS(list(genes=w$genes,weights=w$weight,gene_quality_coefficients=coeff,quality_columns=colnames(D)),file.path(out,paste0(key,'_gene_coefficients.rds')))
+}
+if(length(rows)>0){con<-gzfile(file.path(out,'private_all_block_gene_components.tsv.gz'),'wt');write.table(do.call(rbind,rows),con,sep='\t',row.names=FALSE,quote=TRUE);close(con)}
+if(length(checks)>0)write.table(do.call(rbind,checks),file.path(out,'public_gene_component_parity_checks.tsv'),sep='\t',row.names=FALSE,quote=FALSE)
+writeLines('ALL_SUPPORTED_FIXED_SLOTS_EXPORTED_NOT_LR_EFFECT_TESTS',file.path(out,'execution_complete.txt'))

@@ -1,0 +1,25 @@
+{
+  "status": "ALL129472_CONSENSUS_LR_PARTITION_COVERAGE_ONLY_NOT_EFFECT_OR_MECHANISM",
+  "observed_UTC": "2026-10-16T04:43:09.856415+00:00",
+  "plan_sha256": "957aab266544fd7c33685a815be52f31a8d7d2aecc1e4489b00d76cb93ade6a8",
+  "input_inventory_sha256": "2a036da127778b01d5ebd62d050eb5e1fb416e37a106a5ff65a506df69881fb6",
+  "LR_inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+  "LR_audit_sha256": "627965b2f849e0b5fe68f438b58949a3beded82d4a8a50b8b6a14962f870b3f7",
+  "directional_contexts": 28,
+  "records": 129472,
+  "status_counts": {
+    "FEWER_THAN_20_OBSERVED_DISCOVERY_BLOCKS": 117182,
+    "NATIVE_COMPLEX_SUBUNIT_UNMEASURED": 9972,
+    "INPUT_ELIGIBLE_EFFECT_AND_MASKED_RECEIVER_SCORE_NOT_TESTED": 1115,
+    "FEWER_THAN_10_OBSERVED_INTERNAL_HOLDOUT_BLOCKS": 710,
+    "DISCOVERY_OUTPUT_COVERAGE_BELOW_80PCT": 267,
+    "FULL_EIGHT_COVARIATE_DISCOVERY_DESIGN_NOT_IDENTIFIABLE": 226
+  },
+  "files": {
+    "all129472_LR_partition_coverage.tsv": "152c9af4d4cc03328d0e2e33236f6791fd4c365d5eff334556232d10c393d844",
+    "all28_cache_alignment_checks.tsv": "68e8fb905cce4cf69b5da642ac929c3fc1706aa21a85aebe642ee4b46360f654",
+    "coverage_reason_counts.tsv": "234e95805a814cd21c15cf9be3d4be5a11204be86a75812c02f8eb488cfbb652"
+  },
+  "missing_not_zero": true,
+  "new_hypothesis_tests": false
+}

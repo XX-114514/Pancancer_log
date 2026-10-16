@@ -1,0 +1,13 @@
+{
+  "producer_sha256": "82c160f4fd50a001f7f9fd8b96ac6ee92f3b0439e126215fa4108956bee21b31",
+  "LR_inventory_sha256": "8d92ccddcaf35b4ac0cfffc48a176bf34b7272f72f58cd7c723ca4aecebae4a4",
+  "context_coverage_sha256": "5ca58a27cf99335ca5f76b335cc420a9941b4162fb2d5441a1e92a901feec704",
+  "input_inventory_sha256": "2a036da127778b01d5ebd62d050eb5e1fb416e37a106a5ff65a506df69881fb6",
+  "QC_inventory_sha256": "f6aafabeec2d12381d86facadf5270197c26bbe17428ed9751ace738a8f906fc",
+  "scope": "All14 fixed contexts x2 directions x4624 consensus LR; no candidate selection by expression score or p.",
+  "minimum_observed_training_blocks": 20,
+  "minimum_discovery_output_fraction": 0.8,
+  "minimum_internal_holdout_blocks": 10,
+  "all8_covariates_required": true,
+  "tests_performed": false
+}

@@ -1,0 +1,8 @@
+{
+  "producer_sha256": "8ffdafbecc71023b012cbe91eb45e9795c9c22da53e2991dc891ade2e285b432",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "context_coverage_sha256": "5ca58a27cf99335ca5f76b335cc420a9941b4162fb2d5441a1e92a901feec704",
+  "ucell_audit_sha256": "d2a3f6eb66abd8880a89a0a9bc5c36cec462926347122df90d8ad9f45b5e170c",
+  "scope": "All14 contexts x2 types x2 MCPs; every allowed reference programme; no effect/P selection.",
+  "descriptive_only": true
+}
