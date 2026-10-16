@@ -33,3 +33,8 @@ bash scripts/new_run_record.sh "phase07 annotation"
 ## 2026-10-16 原CM全LR与接收功能
 
 [全LR验收/TF功能启动](20261016_DLG_LR_receiver_function_v1.md)：4012估计、14BH/6区间，5448固定功能槽运行；原身份/CM保留，机制仍待。
+
+
+## 2026-10-16 原CM接收功能与空间技术校准
+
+[5448TF联合证据](20261016_DLG_TF_joint_evidence_v1.md)、[全52来源空间代理](20261016_state_spatial_proxy_calibration_v1.md)。TF全量独立通过；空间块均值精度修复后独立审计仍运行，不能当空间生物学验证。
