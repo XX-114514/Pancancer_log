@@ -416,7 +416,9 @@ PREP-01/03恢复：用户允许临时卷并要求最终Zarr。ZARR-NEW-01：新�
 
 - [x] 全部固定功能方向、发送同签名诊断、靶冗余及私有报告数值/修图审阅；不新增同来源P/BH。[run](runs/20261016_NSCLC_regulator_specificity_v1.md)。
 - [x] 九来源稳定ID别名/原库掩码独立核对，原29细分节点/全部单位冻结及真实文件系统配额纠正通过。[输入run](runs/20261016_existing_immune_candidate_extension_preflight_v1.md)、[范围run](runs/20261016_existing_immune_fine_native_measurement_scope_v1.md)。
-- [ ] 保留全部细节点，用原计数和全RNA分母测量外部固定程序、全部既定调控签名及有限QA；全基因工作区只在RAM，写出不超过256MiB且保留500GB十进制配额空闲，独立原行核查。
+- [x] 保留全部细节点，用原计数和全RNA分母测量外部固定程序、全部既定调控签名及有限QA；全基因工作区只在RAM，约56MB输出且保留500GB十进制配额空闲。全部单位/槽及预固定64单位原行独立核查通过，非全体细胞独立重放。
 - [ ] 效应前审阅精确端点或明确定义谱系扩展、患者/材料/时点/捕获和可恢复临床控制。不能将宽池、多个亚型、重复文库或同病例当独立复现。
 - [x] 原候选宽谱系扩展去重复家族的全部细对来源/分层/头颈已审配对机会独立集合审计；覆盖机会仍非设计可识别或外部验证。[run](runs/20261016_external_fine_pair_case_opportunities_v1.md)。
-- [ ] 跟踪原生v4及独立审计v3原句柄；v1—v3已核失败保留，不因观察超时重启。全单位键/状态及表达前64原单位完整程序/官方TF/marker重放通过后再解读。[run](runs/20261016_existing_immune_fine_native_signatures_v1.md)。
+- [x] 跟踪原生v4和依赖审计：旧生产/审计失败保留，未因观察超时重启；最终v4生产及审计完整终止并通过。[run](runs/20261016_existing_immune_fine_native_signatures_v1.md)。
+- [x] 13:18更新：审计v4于13:14:38正式通过全部单位/状态及64原单位重放；原审计v3矩阵方向失败保留，生产未重跑、原容差未变。
+- [x] GSE305078全部32文库与官方GSM/title双标识、作者时点/分期和468原细对阶段机会独立核对；无疗效/患者身份晋级，下一来源限定模型需先冻结。[run](runs/20261016_GSE305078_official_sampling_sidecar_v1.md)。
