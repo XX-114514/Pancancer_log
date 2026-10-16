@@ -17,3 +17,6 @@ inventories/analysis/2026-10-16/state_after_DIALOGUE_programme_bridge_v2/*.tsv w
 
 # Preserve missing final fields in manifest-bound aggregate LR exports.
 inventories/analysis/2026-10-16/state_DLG_LR_receiver_function_v1/**/*.tsv whitespace=-blank-at-eol
+
+# Preserve Matplotlib SVG path formatting and the server-bound figure SHA.
+inventories/analysis/2026-10-16/state_DLG_LR_receiver_function_v1/figures_v1/*.svg whitespace=-blank-at-eol
