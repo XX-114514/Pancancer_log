@@ -1,3 +1,5 @@
+[独立功能读出资格与下一步](GSE176021-disjoint-functional-response-preflight-20261019.md)：全50参考/预测基因排除与完整源身份、亚型组成和runtime条件，尚未评分/推断。
+
 [作者身份RNA与组织配对](GSE176021-author-lineage-RNA-paired-tissue-20261019.md)：原变换/完整范围、六项新组织问题与分母、秩假设和全部敏感性。
 
 [GSE176021原作者参考恢复](GSE176021-original-author-reference-recovery-20261019.md)：双层gzip、文库命名空间精确桥及全来源/捕获覆盖独立接受；临床原表未取得，不采纳逐病例MPR。
