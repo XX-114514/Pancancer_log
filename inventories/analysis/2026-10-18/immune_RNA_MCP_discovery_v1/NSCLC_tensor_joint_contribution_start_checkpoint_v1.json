@@ -1,0 +1,17 @@
+{
+  "observed_UTC": "2026-10-18T20:32:49+00:00",
+  "started_UTC": "2026-10-18T20:31:48.131943+00:00",
+  "status": "RUNNING_FULL_JOINT_20_ORIGINAL_PROGRAMMES_TWO_SCENARIOS",
+  "source_sha256": {
+    "NSCLC_tensor_joint_contribution_math_v1.py": "193a35cf092bb3b87a59c6ed5d6c6fa6319c9e6fdfd4b5c3ad17470159510006",
+    "attribute_NSCLC_tensor_complete_joint_axes_v1.py": "d1ad41b5aa045976eedb53bf4df13ef5c954470332e31b7e4432463aa4d88989"
+  },
+  "joint_positions": 50597760,
+  "candidate_rows_fixed": 8000,
+  "same_process_independent_Gram_and_QR_implementations": true,
+  "separate_process_joint_audit": false,
+  "new_molecular_P": false,
+  "main_inference_changed": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}
