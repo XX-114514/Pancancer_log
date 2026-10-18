@@ -1,0 +1,14 @@
+{
+  "status": "ALL76_FIXED_REGIONAL_DESCRIPTORS_COMPLETE_INDEPENDENT_REPLAY_PENDING",
+  "finished_utc": "2026-10-18T11:56:16.718694+00:00",
+  "n_slots": 76,
+  "n_spots": 71398,
+  "no_P_or_FDR": true,
+  "not_single_cell_contact": true,
+  "files": {
+    "bound_plan_before_regional_effects.json": "2d86cd953e921f87d3bb1d7f586e601e29acf6c9f1ae6545f1fadb8731a8c6a7",
+    "private_all76_regional_descriptors.tsv": "2b9659dd17a0af9fcd41738c2785b1c6a2a1a3d45782a0851a6e4d6779b9b694",
+    "private_all133_library_panel_measurement.tsv": "035f509a637d3c10d5d50e35527e648a5f2015af2c174bc9dbb0c5b532aced0d",
+    "private_fixed34_counts_and7_scores.npz": "7b83642d692914de35ce55d6fe1bafc063cebe890c9ff7a2d2912307a97b841b"
+  }
+}

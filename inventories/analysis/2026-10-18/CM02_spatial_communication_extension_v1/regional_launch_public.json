@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-18T11:55:57.270836+00:00",
+  "driver_pid": 356369,
+  "scope": "All76 new mixed-region descriptions, no P or old family refit",
+  "code_sha256": {
+    "describe_CM02_Visium_regional_balance_v1.py": "2fe318707f88f6c449605af74184653b4956ec9b42806fdac1ee37cdedc655ff",
+    "audit_CM02_Visium_regional_balance_v1.py": "23de3c9b37f0dd35e1b562b142b485ac8039777b107f0c0a52d6210501e8f1ca"
+  },
+  "plan_sha256": "0890ecfef5cac8599886004262ce7086edcb1e080c067ef2b50345db59fc3db6"
+}

@@ -1,0 +1,17 @@
+{
+  "steps": [
+    {
+      "script": "describe_CM02_Visium_regional_balance_v1.py",
+      "started_utc": "2026-10-18T11:55:57.332631+00:00",
+      "finished_utc": "2026-10-18T11:56:17.201330+00:00",
+      "exit_code": 0
+    },
+    {
+      "script": "audit_CM02_Visium_regional_balance_v1.py",
+      "started_utc": "2026-10-18T11:56:17.201827+00:00",
+      "finished_utc": "2026-10-18T11:56:32.460337+00:00",
+      "exit_code": 0
+    }
+  ],
+  "all_steps_exit0": true
+}

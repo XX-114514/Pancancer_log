@@ -1,0 +1,12 @@
+{
+  "status": "ALL76_REGIONAL_DESCRIPTORS_ORIGINAL_FIXED_RNA_AND_ALTERNATE_NUMERIC_REPLAY_ACCEPTED",
+  "finished_utc": "2026-10-18T11:56:32.365983+00:00",
+  "n_slots": 76,
+  "raw_fixed_gene_values_re_read": 2427532,
+  "all7_panel_scores_compared": 499786,
+  "maximum_rho_difference": 6.938893903907228e-17,
+  "producer_terminal_sha256": "3f1b77b45e5a6a63f852597d49a1c34e37293192cdfae3afdd44417c092d99c4",
+  "auditor_sha256": "23de3c9b37f0dd35e1b562b142b485ac8039777b107f0c0a52d6210501e8f1ca",
+  "no_P_or_FDR": true,
+  "not_patient_or_single_cell_validation": true
+}
