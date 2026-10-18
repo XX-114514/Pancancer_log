@@ -1,3 +1,7 @@
+[GSE299886原坐标恢复](20261018_GSE299886_original_coordinates_v1.md)：3输入旧坐标缺失，原归档双射/完整RNA核查及新旁表完成。
+
+[GSE328481空间来源资格](20261018_GSE328481_spatial_bridge_qualification_v1.md)：全11公开链接/字节、单文件schema pilot与配额/通路轨迹。
+
 [外部支持线索真实来源诊断](20261018_NSCLC_supported_source_identity_v1.md)：全选择细胞/同细胞阈值接受，衔接全部大类完整/非重叠背景。
 
 [原候选全外部来源推断](20261018_NSCLC_candidate_external_associations_v1.md)：完整22模型/全随机流已接受，全13主森林图实际查看；附全节点组成诊断。

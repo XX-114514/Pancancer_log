@@ -1,3 +1,7 @@
+[MERFISH原坐标与RNA行保真恢复](GSE299886-original-coordinate-sidecars-v1.md)：全ID与RNA逐项复算后只建旁表，旧输入不覆盖。
+
+[LUAD空间细胞/程序桥接资格](GSE328481-spatial-cellular-bridge-qualification-v1.md)：先官方metadata和效果盲schema，不混用原CM/功能代理。
+
 [支持线索的同细胞来源与共享谱系背景诊断](NSCLC-supported-source-identity-v1.md)：结果后解释，保留全部谱系与失败，不重标注。
 
 [外部来源家族真实推断](../runs/20261018_NSCLC_candidate_external_associations_v1.md)：输入已接受，全部固定随机流与独立结果重放，原两家族保留。
