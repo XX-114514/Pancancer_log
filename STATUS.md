@@ -1,3 +1,7 @@
+## 2026-10-18 13:09 UTC /21:09 UTC+8 全固定MCP推断及RNA功能资格完成接受
+
+5模型exit0；全部33评分/投射、6主/6敏感性/12描述及全119994置换/12000 bootstrap独立接受。全部600功能与90来源RNA组件另实现通过，固定补集点敏感性完成。结果初审仅私有，图v1布局问题保留，v2于13:16:48 UTC实际查看接受；下一原细节点组成与方向性候选，完整临床/互作goal未完成。[run](runs/20261018_immune_RNA_MCP_discovery_v1.md)。
+
 ## 2026-10-18 12:42 UTC /20:42 UTC+8 四组模型正常结束，最后来源敏感性运行
 
 三K2及K3均exit0；最后source_permissive自12:39:38 UTC真实R计算，单次后续控制器仍等待完整家族。新临床资格发现同GSE论文的混合治疗语境线索，但公开补充链接返回HTML而非DOCX，未取得逐例标签；原来源协同家族保持，未称纯ICI验证。[MCP run](runs/20261018_immune_RNA_MCP_discovery_v1.md)、[临床资格](runs/20261018_GSE305078_clinical_link_qualification_v1.md)。

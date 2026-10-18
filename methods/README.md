@@ -1,3 +1,5 @@
+[MCP功能与来源资格](immune-RNA-MCP-functional-qualification-20261018.md)：完整参考/哨兵/补集描述、独立核查和组成/状态解释边界。
+
 [TNBC临床连接资格](GSE305078-clinical-link-qualification-20261018.md)：混合治疗语境、精确键及格式拒收边界，原MCP合同保持。
 
 [无结局免疫RNA MCP发现设计](immune-RNA-MCP-discovery-design-20261018.md)：病例/来源冻结、全输入独立接受、五个官方拟合及解释边界。

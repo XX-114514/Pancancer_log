@@ -1,0 +1,41 @@
+{
+  "recorded_UTC": "2026-10-18T13:11:40.494416+00:00",
+  "source_sha256": {
+    "describe_immune_RNA_MCP_function_and_nuisance_v1.py": "5eda6d391955d7c6b204729167197568818efc1d0674695709177fb80a89a92f",
+    "audit_immune_RNA_MCP_functional_description_v1.py": "f78c8918096e6525dfbc7768e5510dafbd8bbc7f4af7a74e8052f0842ec77348",
+    "describe_immune_RNA_MCP_nuisance_complements_v1.py": "552a1a7d2a2a6389aa9e3427662ca2fd0cc4127144fb52c114d28bffdd207623",
+    "render_immune_RNA_MCP_source_report_v1.py": "985e242a632611f848d29d781edf2c1336089a7738649b801a7683d7024f0cca",
+    "render_immune_RNA_MCP_source_report_v2.py": "e7592de30c47bb03810858ea1381abab78fb2d0294de3a128dc00cc4e1e8e8cd"
+  },
+  "evidence_sha256": {
+    "official_models": "04566993f8355764df41a346a5305fd1a6c745d84a7aa5b28d548b5209a44da6",
+    "projection": "06c5637d9acf562a9266436da9f814af403fceed330a6bfd951ff45dc1d920a3",
+    "projection_acceptance": "5d5557f3d58fca65a3857d16666b430706d7e8076e9d9276318deb4d867fa844",
+    "seed_stability": "728578dbb3fda6fe4c57ffd6c640e91467bf40b002e9e5e3f7431d259e31ae7a",
+    "source_coordination": "72fdf3928ac53318e2c5b4db162d4e9c3c432b76f5105191e463a02ee73d7b23",
+    "complete_stability_source_acceptance": "27efdf31dfee1a3937de6790a03947ff13ab7af594f8a74ddd3e5ffeeaf11a6a",
+    "dependency_pipeline": "54b995c9ad67d3fe17eaac3f8156d841a1569ce9258e74cd010c0d415a887cd4",
+    "functional_description": "d54010b0054d36c5b169efebe49412ba8ff5ce43e7298477ac7e83ca3ea07d26",
+    "functional_acceptance": "e96be1d1a2630885557cec7443b931723a8f162f76dbff2b920f92b638f37b42",
+    "nuisance_complement_points": "08d8aa3a04a51427ecef8a2c56e994e4eb6ffc27d7f994797a7359e872440937",
+    "source_figures_v1": "9f43fac790865f50ca067ddf30aa9a48d436e16289f0d8ae2806c633b1808641",
+    "private_scientific_interpretation": "2095129467f7ea8ef5ea2d897cc5a3738820f0b5405374d0d5da5941d84a283a",
+    "actual_source_figure_visual_acceptance": "1346504cf948537fe8ea64226b90cf95df7028f4765ba9d32cdb55d9965ee181"
+  },
+  "status": "all_fixed_numeric_functional_and_actual_source_figures_accepted_science_private",
+  "official_fits": 5,
+  "supported_projection_slots": 33,
+  "cell_score_records": 209198,
+  "case_score_records": 2178,
+  "primary_slots": 6,
+  "reviewed_sensitivity_slots": 6,
+  "discovery_descriptions": 12,
+  "permutation_values_replayed": 119994,
+  "bootstrap_values_replayed": 12000,
+  "functional_slots": 600,
+  "sentinel_content_slots": 30,
+  "source_RNA_components": 90,
+  "nuisance_complement_point_slots": 90,
+  "goal_complete": false,
+  "visual_acceptance_UTC": "2026-10-18T13:16:48.887979+00:00"
+}
