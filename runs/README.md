@@ -1,5 +1,7 @@
 # 正式运行记录
 
+最新测量节点：[去LR重叠接收分数全宇宙校准](20261018_NSCLC_disjoint_receiver_universe_calibration_v1.md)，v1清单读法失败保留，v2完整逐点独立接受。
+
 当前结果入口：[原生全家族解释准备](20261018_NSCLC_native_interface_result_review_v1.md)，绑定原全数值审核，等待通过后才读取效果。
 
 当前新增入口：[原生接口外部测量机会预检](20261018_NSCLC_native_external_opportunities_v1.md)，与仍运行的原生完整关联家族分开登记。

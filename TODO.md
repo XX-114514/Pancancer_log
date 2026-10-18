@@ -6,7 +6,7 @@
 
 全家族解释和独立派生审核已实际启动并绑定前序接受证明；核完整终态后审阅所有原规则失败、已有敏感性、字面依赖分组与相关图页。统计派生通过与实际图查看分别验收，不将等待说成完成。[解释run](runs/20261018_NSCLC_native_interface_result_review_v1.md)。
 
-下一实际测量依赖：在新效果前固定全候选去LR重叠接收分数在既有48基因测量宇宙中的保留校准，可复用原pseudobulk/TMM，不按当前较强因子挑范围。空间来源GSE328481仅公开元数据候选，未下载/验收，取样和计数尺度门槛见[资格说明](methods/native-programme-biological-and-spatial-qualification-20261018.md)。
+全固定去LR接收分数×48测量宇宙已独立接受并连回完整基因/捕获机会。下一先接受原主关联全数值及解释，再按原候选规则固定发送端单细胞均值RNA和同细胞复合受体测量，不用pseudobulk或边际计数暗代。[校准run](runs/20261018_NSCLC_disjoint_receiver_universe_calibration_v1.md)。空间来源GSE328481仅公开元数据候选，未下载/验收，取样和计数尺度门槛见[资格说明](methods/native-programme-biological-and-spatial-qualification-20261018.md)。
 
 ## 2026-10-16 21:22 UTC /2026-10-17 05:22 UTC+8 全先验接受、生产修复后完整重算
 

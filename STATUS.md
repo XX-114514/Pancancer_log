@@ -1,3 +1,7 @@
+## 2026-10-18 08:34 UTC /16:34 UTC+8 去重叠接收分数测量资格接受
+
+新全槽/测量宇宙校准v2已完整逐点独立通过，v1清单读法失败历史保留。分数资格与原基因/捕获机会完整连接；发送RNA、同细胞受体和完整模型仍待，原主关联全数值审核继续，不据此声称新互作或临床发现。详见[校准run](runs/20261018_NSCLC_disjoint_receiver_universe_calibration_v1.md)。
+
 ## 2026-10-18 08:11 UTC /16:11 UTC+8 完整原生关联生产结束
 
 全固定主要检验已产生正式完成终态；绑定全数值审核已实际进入四进程独立重放、完整接受尚待。结果解释/独立派生核查已绑定前序完成条件，尚无新直接互作或临床确认。详见[主run](runs/20261018_NSCLC_native_interface_association_v1.md)与[解释run](runs/20261018_NSCLC_native_interface_result_review_v1.md)。

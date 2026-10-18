@@ -1,5 +1,7 @@
 # 方法文档
 
+新增测量门槛：[去LR重叠接收程序的测量宇宙校准](NSCLC-disjoint-receiver-universe-calibration-v1.md)，全固定槽的评分保留资格，不是外部生物学复现。
+
 解释边界与后续资格：[原生程序生物学及空间来源](native-programme-biological-and-spatial-qualification-20261018.md)，公开研究设计、原身份/程序的区别及未下载空间资源门槛。
 
 当前结果入口：[原生全家族解释](NSCLC-native-interface-result-review-v1.md)，依赖完整数值审核，保留所有因子、敏感性及依赖记录，不新增推断。
