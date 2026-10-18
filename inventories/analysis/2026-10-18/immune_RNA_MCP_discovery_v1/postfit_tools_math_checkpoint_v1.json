@@ -1,0 +1,21 @@
+{
+  "recorded_UTC": "2026-10-18T12:28:31.577687+00:00",
+  "source_sha256": {
+    "review_immune_RNA_MCP_seed_stability_v1.py": "141a8ddffe10c8eb0808b8359f0a95cb11ea62dab11c5adfcd818f713e3b60d3",
+    "test_immune_RNA_MCP_source_coordination_v1.py": "4bff1ebe975983237035de8b401dc9d9e13ff38c321276643fa73c2caaaf37ff",
+    "check_immune_RNA_MCP_inference_math_v1.py": "0d4bd2ee89432b636fd80d7d63499e688ef8c10281668a47e8465b99b7306c23",
+    "run_immune_RNA_MCP_accepted_postfit_v1.py": "336d44c01c49b363ae671186a1aa63c554a06e12caecfbfe99e6ae5276017d2c",
+    "audit_immune_RNA_MCP_stability_and_coordination_v1.py": "705f2ffb34748aefebce46f337f6ec4b566320e8e05455f638f0a928cc409c1c"
+  },
+  "status": "synthetic_math_accepted_real_postfit_tools_deployed_not_executed",
+  "last_model_observation_UTC": "2026-10-18T12:24:02.645737+00:00",
+  "completed_fixed_fits": 2,
+  "current_fixed_fit": "K2_seed20261020_source_adjusted",
+  "synthetic_terminal_sha256": "b155302f244b8324627555ce734ec203a104e2a4c21fbfb4f54005f1b2c47aa1",
+  "synthetic_completed_UTC": "2026-10-18T12:25:06.016653+00:00",
+  "independently_replayed_synthetic_permutations": 19999,
+  "independently_replayed_synthetic_bootstrap": 2000,
+  "maximum_synthetic_permutation_difference": 7.771561172376096e-16,
+  "maximum_synthetic_bootstrap_difference": 9.992007221626409e-16,
+  "real_scientific_effects_read": false
+}

@@ -1,0 +1,11 @@
+{
+  "recorded_UTC": "2026-10-18T12:31:20.776051+00:00",
+  "source_sha256": "15eeeda314594869a66ec031de26b8a7900cabe2e0a551673a22dd629270d0c2",
+  "started_UTC": "2026-10-18T12:30:25.356787+00:00",
+  "observed_UTC": "2026-10-18T12:30:37.258092+00:00",
+  "plan_sha256": "bbea5d763585e6fd3257ec5b67b4d82257c5fa6f03fe63ddb1074b31d243aabf",
+  "status": "WAITING_FOR_VERIFIED_CURRENT_UPSTREAM_FAMILY",
+  "fixed_model_fits_completed": 3,
+  "subsequent_scientific_stages_started": false,
+  "not_recurring_or_scheduled": true
+}

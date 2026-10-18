@@ -56,3 +56,19 @@ python scripts/run_immune_RNA_MCP_official_family_v1.py
 投射Rreader已真实parser通过，Python控制器及另实现全分数/病例均值审核器已AST/服务器编译并逐SHA核对；12:17:37确认投射目录尚不存在。它们是已准备代码，尚未真实执行，不声称数值通过。等五拟合终态再用同一冻结输入，先核官方全33位置、所有supported分数/权重和病例聚合，独立接受后才做稳定性/来源效果。
 
 本轮早期内容39eefe077de35b8b7ec10fc63b70c9b69bf9dfaa已12:13:16.182487 UTC普通push，12:13:22.732918 UTC独立ls-remote/fetch核云，bundle fec9e572df4efce58fa535c4ea4ecbed6e9de9ee9f8916c7e8f5eb457d50b789。完整goal active，科学结果/逐病例行/学习权重只server。
+
+
+## 2026-10-18 12:28 UTC /20:28 UTC+8 完整后续工具及合成门槛
+
+12:24:02 UTC实证同一family两组完成、第三seed20261020（12:21:31.584641 UTC开始）R child8410仍运行。后续54比较/24匹配、6主要来源槽/6已审患者敏感性/12发现描述与全随机流审核器已部署；尚未用真实模型执行。
+
+纯合成门槛12:24:57.623449 UTC启动、12:25:06.016653 UTC完成，19,999置换和2,000 bootstrap全部以独立OLS复算，数值差低于1e-15；正/负/不可估计和BH/BY通过。SHA与五源码见[技术checkpoint](../inventories/analysis/2026-10-18/immune_RNA_MCP_discovery_v1/postfit_tools_math_checkpoint_v1.json)。这不构成真实生物阳性。
+
+本机无scipy改在现有服务器环境验证；预执行P字段修正发生在任何真实数据分析前。全部轨迹/边界/上一云端0744123收据见[同任务日志](../logs/codex/2026/2026-10-13_finite-CM-communication-and-pivot.md)，避免复制全日志。完整实际来源/随机流审计仍待，原主要统计家族不重开。
+
+
+## 2026-10-18 12:30 UTC /20:30 UTC+8 单次依赖流水线启动
+
+同一family三组K2均exit0（结束UTC分别12:14:13.214109、12:21:31.550629、12:28:38.622280），K3自12:28:38.637729 UTC运行。后续单次控制器12:30:25.356787 UTC启动PID36945/startticks314173150，12:30:37 UTC真实S且ticks一致，等待原driver；plan SHA bbea5d763585e6fd3257ec5b67b4d82257c5fa6f03fe63ddb1074b31d243aabf。
+
+它只等待现有固定family，核全五manifest后顺序执行冻结投射、独立分数审核、全部稳定性/来源检验和完整独立数值审核。没有自动科学重试、换K/seed或周期定时器。具体控制/故障边界和SHA见[任务轨迹](../logs/codex/2026/2026-10-13_finite-CM-communication-and-pivot.md)。当前处于真实等待，未开始后续效果计算。
