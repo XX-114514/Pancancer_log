@@ -1,0 +1,31 @@
+{
+  "recorded_UTC": "2026-10-18T14:46:19.664319+00:00",
+  "status": "all6_native_gene_axes_accepted_raw_RNA_producer_live_auditor_waiting_same_handle",
+  "source_sha256": {
+    "qualify_NSCLC_immune_RNA_MCP_native_axis_v1.py": "3e3508cbf335ab99d060567ca1cb9e5399f2bbaf5196dcc4bf69638216b46f11",
+    "audit_NSCLC_immune_RNA_MCP_native_axis_v1.py": "bbdc66493728c255ee2b6fab564f7d52bfa135a46a63bbea41d40b494cd1aba2",
+    "measure_NSCLC_immune_RNA_MCP_native_cells_v1.py": "2db3770b4b3d29cca228f049f3f050c279641dfba5b84ebf5e8d016e56b7bbcf",
+    "audit_NSCLC_immune_RNA_MCP_native_cells_v1.py": "15f8251af7743e7ebda6e6be370729b1813986171629407a90ce6eb4276d0507",
+    "qualify_NSCLC_immune_RNA_MCP_clinical_scope_v1.py": "d94cf91fbb125bd6692679518ace136c0c3fbfcd5ea879038dc3ec9059df678c",
+    "audit_NSCLC_immune_RNA_MCP_clinical_scope_v1.py": "e8c55fca37de842e5196b9106903ae561ed38a2372c2d993ce3c640625db5858"
+  },
+  "native_axis_terminal_sha256": "7f1ddaa54cfb2fd550c4892ce6e63363888641103bf57f6a986f974314a33e5d",
+  "native_axis_acceptance_sha256": "575bb2a84376ddd6557882ca47f0f8045d2be7c5d08854082482b0da099759e4",
+  "producer_plan_sha256": "e3c78a807fa756a50a01329857bd473b1ba8dea4a6f91c51d73e7491287ae1ec",
+  "auditor_plan_sha256": "e9e584d73a493449df188480845b0d9f40a7631e728367b5b6785b27c83d1d72",
+  "producer_start_UTC": "2026-10-18T14:38:06.584088+00:00",
+  "auditor_start_UTC": "2026-10-18T14:39:37.385536+00:00",
+  "last_verified_raw_checkpoint_UTC": "2026-10-18T14:46:14.525649+00:00",
+  "coordinates_read": 950562189,
+  "expected_coordinates": 2010550708,
+  "whole_native_cells": 1254749,
+  "whole_native_materials": 243,
+  "output_cap_bytes": 100663296,
+  "clinical_effects_executed": false,
+  "learned_features_or_effects_public": false,
+  "goal_complete": false,
+  "clinical_scope_terminal_sha256": "09d3fc4d485277429c0c88fa9a15b82a042d29e2f58883f8adbae971b887786a",
+  "clinical_scope_acceptance_sha256": "78d83326e28986f614de71d3fe3883424e7a3fc850642673f119c9a9af0d78d4",
+  "verified_producer_state": "R",
+  "verified_auditor_state": "S"
+}

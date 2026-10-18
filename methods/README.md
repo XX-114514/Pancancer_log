@@ -72,3 +72,5 @@
 - [原外部候选结果后全冻结节点组成诊断](NSCLC-candidate-external-node-composition-v1.md)
 
 - [当前RNA MCP头颈癌八项内部临床家族](immune-RNA-MCP-HNSCC-clinical-family-20261019.md)：精确已审患者/明确基线，连续病理结局，完整背景控制和全家族独立审核。
+
+- [当前RNA MCP向NSCLC的原生测量资格](immune-RNA-MCP-NSCLC-measurement-qualification-20261019.md)：唯一stable-ID alias、全活跃基因、原始RNA门控、冻结变换和全来源审核。
