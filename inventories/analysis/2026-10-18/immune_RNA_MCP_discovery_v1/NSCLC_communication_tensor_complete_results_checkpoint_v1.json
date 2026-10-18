@@ -1,0 +1,32 @@
+{
+  "recorded_UTC": "2026-10-18T20:12:01.121779+00:00",
+  "recorded_UTC8": "2026-10-19T04:12:01.121779+08:00",
+  "status": "all_original_and_supplementary_full_numerics_and_revised_five_figures_accepted",
+  "source_sha256": {
+    "NSCLC_tensor_followup_math_v1.py": "22e69a4f06f4fe76361e1830da24bcc01fff5d804639e3b5f056298b98bc56df",
+    "diagnose_NSCLC_tensor_complete_family_v1.py": "f965a53e882a806622554eff7523839d2319ac2d87292778ac829ebafbbf322b",
+    "audit_NSCLC_tensor_complete_family_diagnostics_v1.py": "b33d58d434df316b1b291a49cfc08323affbedc18ba31bb48187955337a9ad38",
+    "review_NSCLC_communication_tensor_family_v2.py": "44b50beb83b3eb12480f3a3067fc8bb006adfff7fa6f1eb2be7b205eb7aceabf"
+  },
+  "actual_executed_diagnostic_source_sha256": "f4674b3b06cb3b5f64fce1623a233f2ca629ac029e736ad77bdcd6695a9bd6c1",
+  "public_source_plan_literal_redaction_only_AST_verified": true,
+  "canonical_AST_sha256": "bc2acd954601f97d1b29928988383485de04b0ac1e86cfbebeb6d17225e06305",
+  "original_producer_terminal_sha256": "76062d04e93f905926a3bf2086f9aa5059e4cbc97bbc14c5d33c1d0262e0041f",
+  "original_full_audit_sha256": "e83389e75443b9168cd9e3d56a63980c14d42021ddfe1faedb3d3371c6d37101",
+  "post_result_diagnostics_terminal_sha256": "5153bdbb27d7b287f21d5e56f18a833e5381a58a6a8ecd5cea1e38638701019d",
+  "post_result_full_audit_sha256": "35cb7b38a2dff16fa590923e1956601bcd546d229ec14eebf76e52657a3a3a8b",
+  "revised_review_sha256": "053c7ae8e1cb6e963e9bb4da6d5f7a1d05affeef3c4fb6e88390aaf5c0f2aa04",
+  "all_main_slots": 20,
+  "all_original_fixed_CP_models": 15,
+  "all_post_result_pair_positions": 190,
+  "all_post_result_background_positions": 60,
+  "all_main_wild_draws": 399980,
+  "all_original_case_bootstrap_draws": 40000,
+  "all_supplementary_wild_t_draws": 399980,
+  "revised_five_figures_actual_viewed": true,
+  "original_main_or_original_case_CI_gate_changed": false,
+  "scientific_effects_or_individual_rows_or_learned_features_public": false,
+  "goal": "active",
+  "revised_visual_accepted_UTC": "2026-10-18T20:14:18.156411+00:00",
+  "revised_visual_receipt_sha256": "ef26553b13355ba8372ac6d87fa353cfde9361d7502549a49b56c0a3a123e320"
+}

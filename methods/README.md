@@ -100,3 +100,5 @@
 - [CAR产品作者三个月结局的完整元数据资格](immune-RNA-MCP-CAR-product-clinical-qualification-20261019.md)：精确原细胞桥、二元标签与ORR语义、作者标签缺失规范化，先核元数据后建模。
 
 - [自动通讯张量与完整20留出临床家族](NSCLC-communication-tensor-heldout-family-20261019.md)。
+
+- [自动通讯全家族结果后区间、跨秩和背景诊断](NSCLC-communication-tensor-post-result-diagnostics-20261019.md)。
