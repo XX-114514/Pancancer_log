@@ -1,5 +1,7 @@
 # 方法文档
 
+解释边界与后续资格：[原生程序生物学及空间来源](native-programme-biological-and-spatial-qualification-20261018.md)，公开研究设计、原身份/程序的区别及未下载空间资源门槛。
+
 当前结果入口：[原生全家族解释](NSCLC-native-interface-result-review-v1.md)，依赖完整数值审核，保留所有因子、敏感性及依赖记录，不新增推断。
 
 当前新增入口：[原生接口外部测量机会](NSCLC-native-interface-external-opportunities-v1.md)，仅基因可测性和冻结捕获元数据，不是效果检验或完整验证就绪。
