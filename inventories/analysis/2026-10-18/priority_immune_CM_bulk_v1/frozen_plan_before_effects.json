@@ -1,0 +1,153 @@
+{
+  "created_utc": "2026-10-18T08:53:12.408532+00:00",
+  "version": "20261018_priority_immune_CM_bulk_v1",
+  "stage": "frozen_before_new_effects",
+  "source_CM_version": "2026-10-14 immune atlas CM v1, T_whole_TME_primary_tumor",
+  "axes": {
+    "pCM02_regulatory_cytotoxic": [
+      "regulatory_associated",
+      "cytotoxic"
+    ],
+    "pCM04_memory_GZMK_effector": [
+      "memory_associated",
+      "GZMK_effector"
+    ]
+  },
+  "caveat": "Fixed literature/marker functional proxies; not learned CM W/S/H, exact cell-subcluster recovery or validated clinical predictor.",
+  "panels": {
+    "regulatory_associated": [
+      "FOXP3",
+      "IL2RA",
+      "CTLA4",
+      "IKZF2",
+      "TNFRSF18"
+    ],
+    "cytotoxic": [
+      "GZMB",
+      "PRF1",
+      "CTSW",
+      "NKG7",
+      "CD8A",
+      "CD8B"
+    ],
+    "memory_associated": [
+      "TCF7",
+      "LEF1",
+      "CCR7",
+      "IL7R",
+      "SELL",
+      "LTB"
+    ],
+    "GZMK_effector": [
+      "GZMK",
+      "CTSW",
+      "CCL5",
+      "GZMA"
+    ],
+    "pan_T": [
+      "CD3D",
+      "CD3E",
+      "TRAC"
+    ],
+    "interferon": [
+      "STAT1",
+      "IRF1",
+      "ISG15",
+      "IFIT1",
+      "IFIT3",
+      "MX1"
+    ],
+    "proliferation": [
+      "MKI67",
+      "TOP2A",
+      "STMN1",
+      "TYMS",
+      "PCNA"
+    ]
+  },
+  "coverage": "100% fixed requested genes present and variable for each arm and pan_T; no outcome-guided replacement. Missing/unmeasured gives unavailable primary slot.",
+  "scoring": "Within-cohort (TCGA within cancer) per-gene average-tie percentiles across all eligible pretreatment/primary-tumor patients, equally averaged per panel. Joint=min(two panel scores). No outcome learning. OR/HR per SD on fixed complete-case design.",
+  "TCGA_cancers": [
+    "ACC",
+    "BLCA",
+    "BRCA",
+    "CESC",
+    "CHOL",
+    "COAD",
+    "DLBC",
+    "ESCA",
+    "GBM",
+    "HNSC",
+    "KICH",
+    "KIRC",
+    "KIRP",
+    "LAML",
+    "LGG",
+    "LIHC",
+    "LUAD",
+    "LUSC",
+    "MESO",
+    "OV",
+    "PAAD",
+    "PCPG",
+    "PRAD",
+    "READ",
+    "SARC",
+    "SKCM",
+    "STAD",
+    "TGCT",
+    "THCA",
+    "THYM",
+    "UCEC",
+    "UCS",
+    "UVM"
+  ],
+  "TCGA_samples": "Only primary solid tumour barcode sample type01; repeated aliquots average gene expression within patient. Clinical duplicate conflicts quarantine. No assumed ICI treatment.",
+  "TCGA_endpoints": [
+    "PFI",
+    "OS"
+  ],
+  "TCGA_models": {
+    "clinical_basic": [
+      "joint",
+      "pan_T",
+      "age",
+      "sex_if_variable"
+    ],
+    "stage_sensitivity": [
+      "joint",
+      "pan_T",
+      "age",
+      "sex_if_variable",
+      "stage_ordinal"
+    ]
+  },
+  "TCGA_gate": "n>=60, events>=max(20,10*p),full design rank,condition<1e6. Stage sensitivity requires verified AJCC I-IV (pathologic first,clinical fallback), >=70% stage availability; never replace missing stage by zero.",
+  "TCGA_family_size": 264,
+  "TCGA_endpoint_caveat": "PFI main prognostic question; OS secondary endpoint with TCGA-CDR disease limitations, both kept in full264-slot BH/BY. No pooled patient-level pan-cancer treatment model.",
+  "ICI_cohorts": [
+    "IMvigor210",
+    "Riaz2017",
+    "Hugo2016",
+    "Jung2019",
+    "Rose2021"
+  ],
+  "ICI_endpoints": [
+    "OS",
+    "PFS"
+  ],
+  "ICI_response": "CR/PR (PRCR for Riaz) vs SD/PD; unknown stays missing. IMvigor uses original curated RESPONDER. Riaz onlyPre; Hugo onlypre-treatment; repeat same-patient pre samples average. Uncertain material/time explicit, no prediction claim.",
+  "ICI_models": "Primary response logistic and survival Cox: joint+pan_T. Demographic/IFN/proliferation controls descriptive sensitivity when full design identifiable. n>=30; response minority>=10; survival events>=max(10,5*p); all failures retained.",
+  "ICI_response_family_size": 10,
+  "ICI_survival_family_size": 20,
+  "ICI_increment_family_size": 10,
+  "ICI_increment": "Secondary response LRT joint+armA+armB+pan_T vs armA+armB+pan_T; n>=80,minority>=20,full rank. Tests balance/co-enrichment beyond arms, not direct cellular interaction.",
+  "inference": "Exploratory model likelihood-ratio P and Wald95%CI; complete-slot BH and BY separately per frozen question family, unavailable P=1 internally and NA shown. Independent logistic/ Efron partial-likelihood numeric audit required. No optimized cutpoints, AUC optimization, new survival event imputation or old HNSCC30-family refit.",
+  "source_independence": "Different study accession from nine-source new CM discovery; patient aliases/cross-study overlap require provenance review. No reuse of old 20260906 CM interpretations.",
+  "data_root": "${PROJECT_V5_ROOT}/bulk_cohorts_20260904",
+  "reserve_decimal_bytes": 500000000000,
+  "output_cap_bytes": 100000000,
+  "extra_headroom_bytes": 1000000000,
+  "public_payload": "Code/frozen plan/provenance/audit status only; scientific coefficients and patient rows stay server and authorized chat.",
+  "no_new_effects_computed": true
+}
