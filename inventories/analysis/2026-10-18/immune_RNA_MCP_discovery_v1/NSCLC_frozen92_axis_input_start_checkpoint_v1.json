@@ -1,0 +1,25 @@
+{
+  "observed_UTC": "2026-10-18T20:50:31.179854+00:00",
+  "status": "FULL92_SOURCE_INPUTS_WRITTEN_INDEPENDENT_AUDIT_PENDING_NO_TRUE_EFFECTS",
+  "source_sha256": {
+    "NSCLC_frozen92_axis_contract_v1.py": "a45dc5c4789a5252e2c78f4cec6ad2467178247b279a12e38ee93a6bd1b97183",
+    "NSCLC_frozen_axis_block_math_v1.py": "654fd051af33d42ad880c99e25ee625f819ce5c7a15a73f4e923a92277f1ce71",
+    "NSCLC_frozen_axis_block_math_v2.py": "aec797aca165ac2c2dfa23b9266579efdefa114ef00408c86007c14f075565b2",
+    "NSCLC_frozen92_axis_io_v1.py": "010277c8877513c5acd65ac0e99d36269b67bcef9b687fbc90e38be518fbb27d",
+    "NSCLC_frozen92_axis_io_v2.py": "af5164d69418ec26588bb04da408be452d34933941c8ec9d8a9214ca3a39fe22",
+    "prepare_NSCLC_frozen92_axis_source_inputs_v1.py": "9fb76dcec130be6cc34fb6048ae149673c11f90d04a8a062c682783ab7ddb943",
+    "prepare_NSCLC_frozen92_axis_source_inputs_v2.py": "698e06c0b2f8e224d1c7ede17a41c0054ee811ca033675f429f31af6ddf6162d",
+    "NSCLC_frozen_axis_block_audit_math_v1.py": "732c3d8d20cf10055a9aec0a629123123abf6d6d368d061293bb7f555aa4cb25",
+    "audit_NSCLC_frozen92_axis_source_inputs_v1.py": "7e6f307860c5bf6307fda4aeada7f7a1303437202c98ee1e7e4cdc368b98c45d"
+  },
+  "failed_v1_terminal_sha256": "9468c1dc69bebb65163fea5a353ad4d7e486ff202544338caae5b30c1046d1c2",
+  "producer_v2_terminal_sha256": "071e4bdde8b79b4f6db1e0493b550dd49e7a0478af9d4e1361c162b73d4bde68",
+  "producer_completed_UTC": "2026-10-18T20:48:30.370835+00:00",
+  "input_audit_started_UTC": "2026-10-18T20:50:02.948301+00:00",
+  "candidate_slots": 92,
+  "author_records": 129,
+  "nonoutcome_profile_blocks": 128,
+  "new_true_clinical_effects_read": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}

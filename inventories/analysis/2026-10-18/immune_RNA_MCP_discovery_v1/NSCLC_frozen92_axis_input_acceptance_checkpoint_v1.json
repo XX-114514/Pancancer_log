@@ -1,0 +1,14 @@
+{
+  "observed_UTC": "2026-10-18T20:53:12.079708+00:00",
+  "status": "ACCEPTED_COMPLETE92_NATIVE_INPUTS_FINITE_NULL_CALIBRATION_RUNNING_NO_TRUE_EFFECTS",
+  "input_producer_terminal_sha256": "071e4bdde8b79b4f6db1e0493b550dd49e7a0478af9d4e1361c162b73d4bde68",
+  "input_audit_terminal_sha256": "b07c736a359df5ec4138c7743c2a978bd7f620e867c59344d06fcc466057ecbd",
+  "input_audit_completed_UTC": "2026-10-18T20:50:18.241957+00:00",
+  "calibration_started_UTC": "2026-10-18T20:52:40.721052+00:00",
+  "calibration_source_sha256": "3dc113256ed0911e19d8194c87bad8833ef0be6b923a3c49717216cc04214ccb",
+  "maximum_independent_geometry_difference": 1.145784855882681e-15,
+  "maximum_synthetic_statistic_difference": 3.108624468950438e-14,
+  "true_axis_clinical_effects_read": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}

@@ -104,3 +104,5 @@
 - [自动通讯全家族结果后区间、跨秩和背景诊断](NSCLC-communication-tensor-post-result-diagnostics-20261019.md)。
 
 - [完整通讯临床差异贡献及联合解释合同](NSCLC-communication-clinical-contrast-attribution-20261019.md)。
+
+- [冻结通讯候选在原队列另一组记录中的一致性](NSCLC-frozen92-axis-within-cohort-consistency-20261019.md)。
