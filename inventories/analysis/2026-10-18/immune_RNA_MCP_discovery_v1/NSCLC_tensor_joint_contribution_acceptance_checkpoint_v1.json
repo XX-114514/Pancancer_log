@@ -1,0 +1,21 @@
+{
+  "observed_UTC": "2026-10-18T20:39:50.465886+00:00",
+  "status": "ACCEPTED_FULL_JOINT_GRAM_QR_AND_ALL_CANDIDATE_NATIVE_DETECTION_COVERAGE",
+  "joint_completed_UTC": "2026-10-18T20:36:38.233558+00:00",
+  "qualification_completed_UTC": "2026-10-18T20:37:03.737242+00:00",
+  "joint_terminal_sha256": "5ada51eb8ddb73ded9b816c75f89ac13cffd26409691942bf5c474d02011e448",
+  "expression_qualification_terminal_sha256": "82344b0f9d8204796b3bea185038889eb68c9b45322dd0e170a388b85a1ccd49",
+  "private_scientific_review_sha256": "9ea80025a9bf769efa903de085d335ee6feafa9f62cd893557aa55a3b293e8d1",
+  "qualification_source_sha256": "4b8a1b57c5430b1494206f5fefb0ab24362502d4a8d7fb299b6c58c72b7f75ae",
+  "joint_positions": 50597760,
+  "candidate_rows": 8000,
+  "ranking_summaries": 80,
+  "unique_native_integer_replayed_candidate_keys": 1894,
+  "maximum_aggregate_Gram_QR_difference": 7.806255641895632e-18,
+  "independent_implementations_same_job": true,
+  "separate_process_joint_audit": false,
+  "main_inference_changed": false,
+  "new_single_axis_P_FDR": false,
+  "scientific_results_public": false,
+  "goal_status": "active"
+}
