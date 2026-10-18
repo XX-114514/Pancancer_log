@@ -1,3 +1,5 @@
+[本批免疫图谱CM暂定命名与临床挖掘](immune-CM-naming-and-clinical-interpretation-20261018.md)：全79范围因子别名、主六候选、已有临床阴性家族与独立验证路线。
+
 # 方法文档
 
 新增测量门槛：[去LR重叠接收程序的测量宇宙校准](NSCLC-disjoint-receiver-universe-calibration-v1.md)，全固定槽的评分保留资格，不是外部生物学复现。

@@ -1,0 +1,259 @@
+{
+  "observed_utc": "2026-10-18T08:41:30.494640+00:00",
+  "status": "ALL79_SCOPE_QUALIFIED_DESCRIPTIVE_ALIASES_GENERATED",
+  "source_evidence_sha256": "0c95c53de89a9eeff6cc60d4b885da50dfb2bfd40f2f049094559519c0e9b180",
+  "n_factor_instances": 79,
+  "n_with_original_network_members": 62,
+  "n_without_original_network_members": 17,
+  "n_raw_W_peak_ge90pct": 4,
+  "n_supported_but_no_edge_with_both_raw_W_endpoints_ge1pct": 5,
+  "source_files_sha256": [
+    {
+      "logical_path": "CM/whole_TME/discovery_v2/W_private.tsv",
+      "sha256": "5e80874e0bee9edac66e6f21f85e902d84cf7318cb28183a23b9eba652720731"
+    },
+    {
+      "logical_path": "CM/whole_TME/discovery_v2/H_patient_block_private.tsv",
+      "sha256": "cbc49a4a18f2f0d97a5ee1badb409324cd2090fd390f530cea34cee188134289"
+    },
+    {
+      "logical_path": "CM/whole_TME/discovery_v2/each_node.tsv",
+      "sha256": "d4c47f3525f35ad34257acf7aab661628475f31448eb7de1d029f59c1a6b8a9b"
+    },
+    {
+      "logical_path": "CM/whole_TME/discovery_v2/global_edge.tsv",
+      "sha256": "d150779fb3462ef089e794e7aa1469e78477e8cdea3c9f8686e961f3fc540cdb"
+    },
+    {
+      "logical_path": "CM/immune_enriched/discovery_v2/W_private.tsv",
+      "sha256": "e9f3f7c8aa1dacf7012a2c3b820e4b352ee953a45aa48e3597ced6a302ee6a27"
+    },
+    {
+      "logical_path": "CM/immune_enriched/discovery_v2/H_patient_block_private.tsv",
+      "sha256": "6525e507961e56458e82b24e0cba932e16fd08903fbb3e511337a4f7f053760f"
+    },
+    {
+      "logical_path": "CM/immune_enriched/discovery_v2/each_node.tsv",
+      "sha256": "675ef2c18db09358266ca005082cc4505049833d45ff951de9ee14ac4626398c"
+    },
+    {
+      "logical_path": "CM/immune_enriched/discovery_v2/global_edge.tsv",
+      "sha256": "ec31a898f0f24dfa18d29a8cb665d885ca435e5d21d7e2c329b80c8f0423c126"
+    },
+    {
+      "logical_path": "CM/CAR_product/discovery_v3/W_private.tsv",
+      "sha256": "1d2e3efb833b13997991837b6a5262076c2a0b031a035d9355fa759f3b46ad5d"
+    },
+    {
+      "logical_path": "CM/CAR_product/discovery_v3/H_patient_block_private.tsv",
+      "sha256": "00c4018e79dc6d9a037fc01afb9b99840a4d8143a0c7c4ee0a83d4864dda43c6"
+    },
+    {
+      "logical_path": "CM/CAR_product/discovery_v3/each_node.tsv",
+      "sha256": "2e3e41474cc4866e9d118c40ad62e83e3703783f66474d661a5537e821261134"
+    },
+    {
+      "logical_path": "CM/CAR_product/discovery_v3/global_edge.tsv",
+      "sha256": "5148cf9c363e1015c1208c520c0304407a31e873e386d9fa173e7d9757c600a2"
+    },
+    {
+      "logical_path": "CM/T_lineage_biopsy/discovery_v3/W_private.tsv",
+      "sha256": "7e06eedb63520df4786e703bbf0f3651fa625ec8a55793bea7271b94fcd18f48"
+    },
+    {
+      "logical_path": "CM/T_lineage_biopsy/discovery_v3/H_patient_block_private.tsv",
+      "sha256": "b06d6ef1b8a6d92336a67adbd2852c8a23ed22d122b44a7f69b2d3ed344656c6"
+    },
+    {
+      "logical_path": "CM/T_lineage_biopsy/discovery_v3/each_node.tsv",
+      "sha256": "6a98a602db7435f7190d879d442fa33dda566fea36dd59a1caf8815635933f9e"
+    },
+    {
+      "logical_path": "CM/T_lineage_biopsy/discovery_v3/global_edge.tsv",
+      "sha256": "2e4007cd5b643c652d50d7e3ef36be3433d3ba8d2b117ff13cd84d7cc90b2d2b"
+    },
+    {
+      "logical_path": "CM/whole_TME_primary_tumor/discovery_v3/W_private.tsv",
+      "sha256": "215184e45c942d913c0f4d5ccd52b0e2e47b6f6b1bd9bcbd34a61d1c00ed0e55"
+    },
+    {
+      "logical_path": "CM/whole_TME_primary_tumor/discovery_v3/H_patient_block_private.tsv",
+      "sha256": "62453b5cb64db2b68e0ef23b8c7a265199b4611ec8d2cb7dee0c5b388f048f49"
+    },
+    {
+      "logical_path": "CM/whole_TME_primary_tumor/discovery_v3/each_node.tsv",
+      "sha256": "0eaf088fcb0aa05965601e87f3ec6470f91b9b18187645691582395d1aae20ba"
+    },
+    {
+      "logical_path": "CM/whole_TME_primary_tumor/discovery_v3/global_edge.tsv",
+      "sha256": "559f7c60e157b91534c7289bb4fffa2d68b1e9cf141c1bf92dfd64797ce220e8"
+    },
+    {
+      "logical_path": "CM/T_whole_TME_primary_tumor/discovery_v3/W_private.tsv",
+      "sha256": "48c4c506a0ddfd180d4189724569cca1e8c7fe8fc44fc53297677ccf4759fbfb"
+    },
+    {
+      "logical_path": "CM/T_whole_TME_primary_tumor/discovery_v3/H_patient_block_private.tsv",
+      "sha256": "4a7c7df847797cdd923c8377f91379d5bb89209d368fc58760ac0d30840e7f01"
+    },
+    {
+      "logical_path": "CM/T_whole_TME_primary_tumor/discovery_v3/each_node.tsv",
+      "sha256": "5731d7a3f32f1988358f3482fa103630a386dbdc8b24160e74fa2029f5ae0351"
+    },
+    {
+      "logical_path": "CM/T_whole_TME_primary_tumor/discovery_v3/global_edge.tsv",
+      "sha256": "cc16a94cdd048effffd5da27d674d2cd9cc33b805599a720710d7fb6551894f4"
+    },
+    {
+      "logical_path": "CM/whole_TME_metastatic_tumor/discovery_v4/W_private.tsv",
+      "sha256": "e3c5c708ebcb1dbb2d2457d92eb6f9dc8398330bf0b89005c2647f7d2321c31b"
+    },
+    {
+      "logical_path": "CM/whole_TME_metastatic_tumor/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "a220b8ceab7b84e05d4dcf30d777be1d754485a3470aa6e70a895e9ea391f697"
+    },
+    {
+      "logical_path": "CM/whole_TME_metastatic_tumor/discovery_v4/each_node.tsv",
+      "sha256": "1eea3821ed5b3e7f6a2856124b58ab39c95f241256f24ab25b4be6fbcc3e5492"
+    },
+    {
+      "logical_path": "CM/whole_TME_metastatic_tumor/discovery_v4/global_edge.tsv",
+      "sha256": "fe6245ba1a43bc3094c68f3bebfeff95407b02f0405c50394d54af69df3d08b4"
+    },
+    {
+      "logical_path": "CM/immune_enriched_primary_tumor/discovery_v4/W_private.tsv",
+      "sha256": "00bbb66e85d6f5804a905d5e65be07cca518afe51e6d65d9dffe8e42b06e6940"
+    },
+    {
+      "logical_path": "CM/immune_enriched_primary_tumor/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "66bd6b255ed16b60395f2513d84bc1881e8638e8c95753e6635664be2c202231"
+    },
+    {
+      "logical_path": "CM/immune_enriched_primary_tumor/discovery_v4/each_node.tsv",
+      "sha256": "1cadc219b0a0d9fc07eac8720861ae92b0d4a8c0e4f928831460a5e44cab1992"
+    },
+    {
+      "logical_path": "CM/immune_enriched_primary_tumor/discovery_v4/global_edge.tsv",
+      "sha256": "b3cc1c2668dc3304849f121b6afe94016e0573518b96a26c458c3881a0dce3aa"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_primary_tumor/discovery_v4/W_private.tsv",
+      "sha256": "f02623c1f723791a056722bd0c3f2617c6e24111b9bf504f59e277e48461d004"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_primary_tumor/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "8a7d305e543621987d52e4714112fcb628b46eb42aad7bae6705c91d971dc71b"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_primary_tumor/discovery_v4/each_node.tsv",
+      "sha256": "558c3be06b8b878eab6d44dcde505d028a4121760020f64d8709181b9c0e01a0"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_primary_tumor/discovery_v4/global_edge.tsv",
+      "sha256": "ebd5a95449f945cfe6d84ccdc9d5e50ce2a07f3fbedc3d305a95913d57d9cc47"
+    },
+    {
+      "logical_path": "CM/immune_enriched_blood/discovery_v4/W_private.tsv",
+      "sha256": "0ac35fd36f24f8f8deac71b4b59fd8b5db4b8a4e5bef7d6341ffd54934083b8e"
+    },
+    {
+      "logical_path": "CM/immune_enriched_blood/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "046a61647679e6d92bb68170e1bc532192ec348473256085d64a0e00aeadeaa6"
+    },
+    {
+      "logical_path": "CM/immune_enriched_blood/discovery_v4/each_node.tsv",
+      "sha256": "1eea3821ed5b3e7f6a2856124b58ab39c95f241256f24ab25b4be6fbcc3e5492"
+    },
+    {
+      "logical_path": "CM/immune_enriched_blood/discovery_v4/global_edge.tsv",
+      "sha256": "fe6245ba1a43bc3094c68f3bebfeff95407b02f0405c50394d54af69df3d08b4"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_blood/discovery_v4/W_private.tsv",
+      "sha256": "77e4afe122926a2ec4a3201dbe19026d1b7ac2a7af2c026a1d2fe79897a1841e"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_blood/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "e8860d752e2d2065101ae5ac36e70aa8ffac618f1b8da140ec9757aed4bf067e"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_blood/discovery_v4/each_node.tsv",
+      "sha256": "1eea3821ed5b3e7f6a2856124b58ab39c95f241256f24ab25b4be6fbcc3e5492"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_blood/discovery_v4/global_edge.tsv",
+      "sha256": "fe6245ba1a43bc3094c68f3bebfeff95407b02f0405c50394d54af69df3d08b4"
+    },
+    {
+      "logical_path": "CM/immune_enriched_normal_adjacent/discovery_v4/W_private.tsv",
+      "sha256": "99fd3d2ee174cf6c78a328e51dce0df5343d028d9812b2952dd8f7935d6c9fae"
+    },
+    {
+      "logical_path": "CM/immune_enriched_normal_adjacent/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "d2d887eee84a0ab544a6e3afca23d6cddf52df14ff6d9f60bd0d20d174e45aa1"
+    },
+    {
+      "logical_path": "CM/immune_enriched_normal_adjacent/discovery_v4/each_node.tsv",
+      "sha256": "af6f58f4ef9f7be4fcfdb93883aaceebaad6cebc2f6f6d87818931163ce76982"
+    },
+    {
+      "logical_path": "CM/immune_enriched_normal_adjacent/discovery_v4/global_edge.tsv",
+      "sha256": "f4162dabb687567705261a13190ca333790b61de03b5e675f81cabde9016ff7b"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_normal_adjacent/discovery_v4/W_private.tsv",
+      "sha256": "33131e06553d55c6972bf053942576c4f9fbbc3b650b2f307527dd40de50cf2c"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_normal_adjacent/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "a342aa5af8bc9a669bcc176b0fe15d073d2a77fe0ef576f96abb7ec75a916b81"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_normal_adjacent/discovery_v4/each_node.tsv",
+      "sha256": "dfa992548a79666872f3d414fc93eb3e203d2841fe1e20507e852b1a542fdba8"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_normal_adjacent/discovery_v4/global_edge.tsv",
+      "sha256": "a308658fa9eca650e3ea6db494fafa5c81e8f866f855942b31e4a75b983288ff"
+    },
+    {
+      "logical_path": "CM/immune_enriched_unknown_material/discovery_v4/W_private.tsv",
+      "sha256": "12142ce5a9e0f8ea55502b969a468843354f33b152ef2d838bdb3108f3cd1f26"
+    },
+    {
+      "logical_path": "CM/immune_enriched_unknown_material/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "8bc4c6d93ada45e72201a9c60d58805dbeb7d35a972f460bcfb12b63fd966bf3"
+    },
+    {
+      "logical_path": "CM/immune_enriched_unknown_material/discovery_v4/each_node.tsv",
+      "sha256": "1eea3821ed5b3e7f6a2856124b58ab39c95f241256f24ab25b4be6fbcc3e5492"
+    },
+    {
+      "logical_path": "CM/immune_enriched_unknown_material/discovery_v4/global_edge.tsv",
+      "sha256": "99815bc8402bb13e5bc0b510b6ca312b71c6695607f3b704a121194c76069a4f"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_unknown_material/discovery_v4/W_private.tsv",
+      "sha256": "64b9b3fdc8d7e05d8c24d64c86fa352ba63225ace562e2516846c622e3f68dbe"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_unknown_material/discovery_v4/H_patient_block_private.tsv",
+      "sha256": "447192841ebccb3c89d3a60142e605a9f35e5d90cab360a0e6bc0cbd16d0b480"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_unknown_material/discovery_v4/each_node.tsv",
+      "sha256": "1eea3821ed5b3e7f6a2856124b58ab39c95f241256f24ab25b4be6fbcc3e5492"
+    },
+    {
+      "logical_path": "CM/T_immune_enriched_unknown_material/discovery_v4/global_edge.tsv",
+      "sha256": "fe6245ba1a43bc3094c68f3bebfeff95407b02f0405c50394d54af69df3d08b4"
+    }
+  ],
+  "naming_producer_sha256": "3557af03a609490e83b5ac5019640854fa8552f191e49f50c06f51808470e432",
+  "learned_weights_and_H_excluded_from_public_catalog": true,
+  "original_model_or_annotation_changed": false,
+  "no_new_clinical_tests": true,
+  "diagnostic_thresholds_not_original_CM_acceptance_gates": true,
+  "raw_W_not_effective_WS": true,
+  "catalogue_sha256": "4c188a59504a172ce0667f101770ed15d8c2ba030ab0df4bf722f7ef644ccfc9"
+}

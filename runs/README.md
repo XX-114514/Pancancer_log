@@ -1,3 +1,5 @@
+[2026-10-18免疫CM命名与解释](20261018_immune_CM_naming_v1.md)：只读全15范围，79实例别名及完整解释；原模型和旧临床家族不改。
+
 # 正式运行记录
 
 最新测量节点：[去LR重叠接收分数全宇宙校准](20261018_NSCLC_disjoint_receiver_universe_calibration_v1.md)，v1清单读法失败保留，v2完整逐点独立接受。

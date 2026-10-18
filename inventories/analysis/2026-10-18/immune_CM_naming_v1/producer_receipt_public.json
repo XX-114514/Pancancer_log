@@ -1,0 +1,5 @@
+{
+  "producer_sha256": "82caf492f618d68b7eb5c7948cbf9e0334f3565268b7878e4912623a2c8b8eb0",
+  "execution": "read_only_remote_python_stdin",
+  "exit_code": 0
+}
