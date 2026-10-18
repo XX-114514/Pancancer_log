@@ -1,3 +1,5 @@
+[原节点组成拆解](immune-RNA-MCP-original-node-decomposition-20261018.md)及[自动配体资格](immune-RNA-MCP-automatic-ligand-qualification-20261018.md)：发现基线固定、完整家族与非手选候选生成。
+
 [MCP功能与来源资格](immune-RNA-MCP-functional-qualification-20261018.md)：完整参考/哨兵/补集描述、独立核查和组成/状态解释边界。
 
 [TNBC临床连接资格](GSE305078-clinical-link-qualification-20261018.md)：混合治疗语境、精确键及格式拒收边界，原MCP合同保持。

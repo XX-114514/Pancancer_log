@@ -1,0 +1,41 @@
+{
+  "recorded_UTC": "2026-10-18T13:28:05.339047+00:00",
+  "source_sha256": {
+    "locate_immune_RNA_MCP_original_nodes_v1.py": "a38f8b34d4b1b12e24c5e4d5f76fb81ad60e9275381da415216e2f373e665b59",
+    "decompose_immune_RNA_MCP_original_nodes_v1.py": "aabbbda88d497cf52da175463b2770761f73c9cf733b3ad38828cfdcb343dd6d",
+    "audit_immune_RNA_MCP_original_node_decomposition_v1.py": "af829906f4e4d5cda0f1b969abfa011da2ce95f8e63b72122f978a9fb94458b6",
+    "render_immune_RNA_MCP_node_composition_followup_v1.py": "c82951521d900d68faa34b691aae4146689b38b3fe88ea7c42928f03f4194beb",
+    "qualify_immune_RNA_MCP_all_ligand_candidates_v1.py": "da37f6a16b7de483907cd98f81c6a8290f5e43d259a33b816e26ea0afa297955",
+    "qualify_immune_RNA_MCP_all_ligand_candidates_v2.py": "153213c6c03ef0bbf5f7e579f52615f079c9874c275ac2e53b65baa6100370d5",
+    "audit_immune_RNA_MCP_all_ligand_candidates_v1.py": "559d2c308a513addcbdfe6cc7fd1e786557a5fcbe98a78b82391424d26e47633"
+  },
+  "evidence_sha256": {
+    "node_localization": "fc0675de85f514ca94b73d063e0e6d1ebbb9f27269061edf9a3b7b439e3e77a3",
+    "node_decomposition": "785f3a4cf7eba7c56e791abfddfd8040de7b9cc93dc2506a1905e00c9f745f5d",
+    "complete_decomposition_acceptance": "f109cecf33be6ad8a937bce8c50d567aa1426f1a1e1ea05a0c20335ce4e123d7",
+    "source_forest": "29a94a9fa0cb306e58f94c43f0a22639c25ee8773982ca709f5bd1f823175803",
+    "actual_visual_acceptance": "69e1c4df259c56b4d891e321cfaae677741f35f840b658cd0473dae2e8a44fd9",
+    "private_full_interpretation": "e0a93f7e621482d5c675dd99cf8eb588e8d9be32ee152c41138c2597d5724c70",
+    "all_ligand_frozen_plan": "f97fc553875ae62588ea1ed325db1d12b18d346f6084618a1de1dc00b0a198b7",
+    "all_ligand_v1_serialization_failure": "acad088e056a6be53766d8201cc6505ed3d265cf7d436a075bde58c131645efc",
+    "all_ligand_v2_plan": "c4f1534b169a00432f9eb4a342496221e84064e276811ff15f2eeca21fcec570",
+    "all_ligand_v2_producer": "a6e01d8290fcf725d5f4714e3d94d16bcd03dbb5cf7186f2e75edaae603a826d",
+    "complete_all_ligand_numeric_acceptance": "ff2928361a945ec06bfd3e2827d149405351b54954d8b4406b90bc91eae5b659"
+  },
+  "status": "all_node_composition_followup_and_all_prior_native_candidate_qualification_accepted_directional_effects_pending",
+  "case_view_decompositions": 396,
+  "followup_slots": 6,
+  "point_sensitivities": 12,
+  "source_descriptions": 18,
+  "permutation_values_replayed": 119994,
+  "bootstrap_values_replayed": 12000,
+  "node_coefficients_or_scientific_effects_in_public_record": false,
+  "goal_complete": false,
+  "candidate_generation_native_cells": 19018,
+  "candidate_generation_prior_ligands": 1226,
+  "candidate_generation_ranking_positions": 14712,
+  "candidate_generation_fixed_slots": 120,
+  "candidate_generation_reference_qualifications": 13194,
+  "candidate_generation_maximum_native_mean_error": 3.552713678800501e-15,
+  "all_ligand_acceptance_UTC": "2026-10-18T13:32:55.601552+00:00"
+}
