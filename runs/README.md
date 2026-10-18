@@ -1,6 +1,6 @@
 [GSE305078临床连接资格](20261018_GSE305078_clinical_link_qualification_v1.md)：公开补充返回HTML拒收，无临床标签采纳。
 
-[免疫RNA MCP新发现](20261018_immune_RNA_MCP_discovery_v1.md)：全原生输入接受，官方固定家族运行，稳定性和保留来源投射待。
+[免疫RNA MCP发现与跟进](20261018_immune_RNA_MCP_discovery_v1.md)：固定模型/投射及既定分子、临床与配对家族完整接受并关闭；全400材料机会与扩展测量合同接受，新原RNA投射未执行，实际配额门槛待紧凑预算。
 
 [原生固定面板同细胞测量](20261018_immune_CM_fixed_panel_same_cell_RNA_v1.md)：全T生产完成，原obs/源轴/全RNA独立审计。
 

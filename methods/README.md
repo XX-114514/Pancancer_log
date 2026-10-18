@@ -79,3 +79,6 @@
 
 - [HNSCC配对完整RNA测量资格](immune-RNA-MCP-HNSCC-paired-measurement-20261019.md)：全部既有配对材料、冻结程序、应激补集与原官方锚定。
 - [HNSCC配对动态12项家族](immune-RNA-MCP-HNSCC-paired-dynamics-family-20261019.md)：精确符号/中位数及完整控制的共同变化，统一家族校正和全部敏感性。
+
+- [全既有免疫材料RNA机会资格](immune-RNA-MCP-all-atlas-opportunities-20261019.md)：全部材料、逐对捕获、完整基因轴和病例/语境分母，不作新效果。
+- [全材料冻结RNA投射的前瞻测量合同](immune-RNA-MCP-all-atlas-native-projection-20261019.md)：完整参数传递、原锚定、固定辅助RNA与独立重放；实际资源门槛另核。
