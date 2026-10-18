@@ -57,7 +57,7 @@ def main(a):
  assert len(rows)==79 and len(pairs)==79
  a.output.mkdir(parents=True,exist_ok=True)
  with (a.output/'CM_name_catalog_v1.tsv').open('x') as f:
-  w=csv.DictWriter(f,fieldnames=list(rows[0]),delimiter='\t');w.writeheader();w.writerows(rows)
+  w=csv.DictWriter(f,fieldnames=list(rows[0]),delimiter='\t',lineterminator='\n');w.writeheader();w.writerows(rows)
  md=['# 2026-10-14免疫图谱CM（v1）完整暂定名称','',
  '每行均保留原范围与编号。范围重叠，79行为因子实例，不能计作79个独立生态模块。名称为描述性别名，不覆盖原模型；细胞身份沿用候选标签。未获网络支持与原始W单节点主导因子明确标注。','',
  '命名使用原始W与冻结网络；实际nsNMF重建为F=W S H。原始W的集中度不等于有效基底W S只由一个节点组成。1%权重仅是本轮可读性诊断，不改变旧CM门槛或成员。','']

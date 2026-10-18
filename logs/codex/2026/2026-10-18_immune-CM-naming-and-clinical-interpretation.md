@@ -29,3 +29,7 @@
 - 全79别名唯一、全部原成员逐项一致、功能/临床确认标志均false，源输入SHA和目录SHA可追溯。源代码compile、git diff --check通过，仓库校验0 errors/1既有内部路径warning。学习权重JSON被精确ignore，公开目录没有患者、细胞、H或数值学习权重。
 - 解释报告强调原W与W S、已有30槽HNSCC阴性、患者/时点、队列偏移及候选身份；未来疗效/纵向/生存/增量为设计，不是已实施。文献为机制假设依据，不借用原论文临床结论。
 - 独立服务器sidecar保存名称与方法/代码/源SHA，不改原15范围或图谱。普通Git提交与远端核验继续；建议commit：analysis: name scope-qualified immune CMs and map clinical interpretation limits。
+
+### 发布字节规范化
+
+Git提示默认CSV的CRLF会规范为LF；79行语义完全一致，但初始生成字节SHA不同于Git blob。公开表规范为LF，生成器明确lineterminator，收据同时保留原CRLF字节SHA和公开LF SHA；服务器v1 sidecar仍保留原CRLF及原匹配收据。原节点/名称/解释完全不变。Git blob SHA与公开表实际字节已核一致，不覆盖远端历史。

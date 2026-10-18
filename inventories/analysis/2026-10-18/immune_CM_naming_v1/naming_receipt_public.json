@@ -249,11 +249,13 @@
       "sha256": "fe6245ba1a43bc3094c68f3bebfeff95407b02f0405c50394d54af69df3d08b4"
     }
   ],
-  "naming_producer_sha256": "3557af03a609490e83b5ac5019640854fa8552f191e49f50c06f51808470e432",
+  "naming_producer_sha256": "b2f95506660635131cf13a816fb52e8315fca0d526bd142280c43115b839bb20",
   "learned_weights_and_H_excluded_from_public_catalog": true,
   "original_model_or_annotation_changed": false,
   "no_new_clinical_tests": true,
   "diagnostic_thresholds_not_original_CM_acceptance_gates": true,
   "raw_W_not_effective_WS": true,
-  "catalogue_sha256": "4c188a59504a172ce0667f101770ed15d8c2ba030ab0df4bf722f7ef644ccfc9"
+  "catalogue_sha256": "7679ec3014bac8dc021e9f80aee44ab6ed854d98b690c8b2c11c9eb4c750e2b8",
+  "generated_catalogue_original_byte_sha256": "4c188a59504a172ce0667f101770ed15d8c2ba030ab0df4bf722f7ef644ccfc9",
+  "publication_line_ending_note": "Public catalogue canonical LF; original server sidecar preserves produced CRLF and its original matching receipt. All79 records identical."
 }
