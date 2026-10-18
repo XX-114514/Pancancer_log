@@ -1,3 +1,5 @@
+[GSE176021原作者参考恢复](GSE176021-original-author-reference-recovery-20261019.md)：双层gzip、文库命名空间精确桥及全来源/捕获覆盖独立接受；临床原表未取得，不采纳逐病例MPR。
+
 [新来源与CAR有限家族](immune-RNA-MCP-new-source-and-CAR-clinical-family-20261019.md)：完整语境/终点、固定对比/背景、完整分母与全部随机流独立接受，科学结果保持私有。
 
 [固定交叉谱系RNA与状态诊断](immune-RNA-MCP-fixed-lineage-and-state-diagnostic-20261018.md)：原始固定标记、全来源、无身份变更和额外P。

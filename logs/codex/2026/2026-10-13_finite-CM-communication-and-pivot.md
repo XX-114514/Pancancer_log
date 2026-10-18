@@ -1154,3 +1154,22 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 检查文件/修改：完整原RNA接受回执、临床9字段、冻结420输入、原数学与独立QR实现、全部随机流、来源上下文与病例聚合、全部图/原注释文件头和schema、论文/公开GEO。新增15份Python及有限方法，更新本日志/daily/run、状态/路线/TODO、方法与run索引、技术checkpoint及TSV。源码采用环境逻辑根，scanpy Python3.10/单BLAS实际执行；不复制完整作业stderr、个体行或原始矩阵。时间为实际回执/取证，旧失败历史保留，三份并发无关文件保持。当前科学计算均已终态；goal仍active/progress。建议commit：analysis: accept complete new-source and CAR clinical finite families。
 
 发布门槛：15份新Python实际服务器执行及3.10 AST已核；完整27份任务文件人工diff/源码、隐私和大小检查通过，TSV列一致。仓库轻量实际exit0、0错误/1既有路径warning；图实际查看与回执接受。仅显式任务文件暂存；三份并发无关文件保留。普通push及独立HTTPS核云接续，以实际回执为准。
+
+
+## 2026-10-18T17:44:51.545812+00:00 UTC /2026-10-19T01:44:51.545812+08:00 UTC+8 GSE176021作者参考标签完整恢复接受，病理反应映射未采纳
+
+上一完整420/48/3360有限家族内容5badc3bcca82690e7e6eacb1e14d94d58ab28d9d已2026-10-18T17:32:00.252566UTC普通push，17:32:08.700799UTC独立HTTPS核云，bundle21734d7d。此节点继续科学测量对象/原作者metadata资格，不重开已关闭来源、临床、空间或分子家族。
+
+观察/格式：原GSE176021 raw obs两作者列902463行均无有效值；缓存CD3/CD8作者rds.gz文件头为外gzip，解开后仍gzip。单层readRDS(gzfile)的unknown input format不是无细分标签的证据。外gzip流+内gzcon成功还原CD3 560916×7和CD8 235851×7；全部公开作者参考值完整保留。17:33:24UTC全原表schema/24精确键候选资格698c1117完成：裸barcode、raw index等不能直接相连。只读匿名结构检查后，raw imid+underscore+barcode精确匹配CD3 552499、CD8 233249，匹配均唯一且全部原patient字段一致；分别8417/2602原作者行无匹配，保持缺失，不模糊补齐。
+
+技术修正：首旁表v1在atlas占位original_native_row_position转int时ValueError停，依赖审核v1按原上游失败拒绝；没有不完整标签采纳。受限全来源字段检查确认source_row_position全868494项等于原manifest，parent_cell_id全量等于原raw index；original_native_row_position本来源全空、original_cell_id不是同一完整原生index。v2仅改两个正确字段和新输出目录，保留v1所有源码/计划/日志；无原数据/科学参数变化。曾对不存在的非权威脚本名head/无匹配rg返回1，仅只读查询，无科学或文件副作用。
+
+实际运行：17:38:55.285235UTC旁表v2一次启动，17:39:14.802342UTC完整生产b4960a3c；全部868494当前来源行被登记，其中CD3有效552315、CD8有效233143；新增压缩旁表4556211字节。17:38:58.445851UTC独立审核启动等待原生产，同句柄17:39:40.290260UTC全部原始作者/原生/当前行、患者字段、标签code、全部组织与全部捕获覆盖接受d8d21a1c。独立实现采用字典键/有引号CSV，与生产pandas Index/TSV逐行比较；全部未匹配位置和代码字典亦核对。捕获视图重叠、作者参考细分比例仅私有科学诊断，具体来源组成不公开Git，也未改正式身份/状态或训练新MCP。
+
+文献及临床支线：web primary查询PMID34290408、原GEO、原文及勘误DOI10.1038/s41586-021-03893-6；PMC网页多次CAPTCHA/Nature重定向，未声称成功网页全读。通过官方EuropePMC REST实际取得完整原XML 201479字节、67b88ab4，核DOI10.1038/s41586-021-03752-4及Patients/scRNA Methods：冻存复苏后CD3分选，来源组织与纵向血液/抗原刺激支线分开；新辅助nivolumab后残存活肿瘤<=10%为MPR。原XML定位MOESM8 Supplementary Tables，但逐病例标签/材料桥未取得。服务器直接CDN请求SSLError；官方ZIP返回200/application-zip后ChunkedEncodingError，未当完整文件；经用户既有Clash建立仅命令有效回环转发、TLS验证保持，CDN仍SSLError。三份失败回执全部保留，无标签采纳；短转发随命令完成关闭，未新建后台代理。未关闭TLS验证，无原表达下载。17:43:05.142046UTC原协议/三失败回执资格24f47a32通过；只是论文定义接受，不是逐病例结局映射或临床效应接受。
+
+检查/修改：全部原作者RDS、原raw obs和当前manifest/metadata、已接受完整原RNA捕获membership、原论文XML/Methods/补充链接和失败网络回执；新增6份实际服务器执行/3.10 AST通过的来源恢复/独立审核/论文资格源码，新方法及技术checkpoint，更新本任务/daily/run/STATUS/ROADMAP/TODO/索引清单。公开只逻辑路径、方法、源码、技术维度/SHA；个体键、完整旁表、学习数据和组成/效应/图保持私有。三份并发无关工作保留，不删历史。所有本节点作业终态；完整goal仍active/progress。
+
+下一：先用已接受作者参考身份明确冻结捕获视图的组成/覆盖和原程序适用范围，若新测量作者定义Treg/CD8需预先另定两程序/原轴、全组织和病例配对范围、全部原RNA审核及分母；不因已有显著性只选一个程序/组织/细分状态。临床支线需完整原表及病例桥，不把论文总体组数/例子或脑转移时点补作当前病例标签；旧闭合家族不重开。建议commit：analysis: restore exact original NSCLC author references and qualify protocol。
+
+发布门槛：6份新增Python源码3.10 AST及真实服务器终态/技术恢复历史已核；18份任务文件人工diff/隐私/大小检查通过。仓库轻量实际exit0、0错误/1既有路径warning，本地链接/全部TSV列通过。仅显式任务文件暂存；三份无关并发文件保留。普通push与独立HTTPS核云接续，以实际回执为准。
