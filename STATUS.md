@@ -1,3 +1,7 @@
+## 2026-10-18T19:09:43+00:00 UTC /2026-10-19T03:09:43+08:00 UTC+8 外部NSCLC全作者谱系接受及通讯程序路线资格
+
+外部NSCLC原作者全部1254749行/243记录/729池及68300固定抽样已全量独立接受；独立patient字段缺失、作者细分类/旧marker差异保留。MCP12模型/50参考后续方案资格接受但未执行新RNA或效果；下一通讯张量路线先核软件/完整LR/缺失mask与保留集合同。原六项/400等家族关闭，科学结果私有，goal active。[方法](methods/NSCLC-author-lineage-and-communication-factor-preflight-20261019.md)。
+
 ## 2026-10-18T18:44:25+00:00 UTC /2026-10-19T02:44:25+08:00 UTC+8 完整400功能家族全随机接受与全范围图册验收
 
 全400功能问题/3200敏感性、39999600整数置换/800000bootstrap/4000留一已另实现完整接受；全范围四图实际查看和SHA核对接受，有限功能家族关闭。科学效应仅server/授权对话，下一先核已有外部NSCLC的作者谱系与可比较病例，尚无新该来源功能测量或P。原组织/方向性家族、身份及临床标签保持，goal active。[方法](methods/GSE176021-disjoint-functional-association-family-20261019.md)、[run](runs/20261018_immune_RNA_MCP_discovery_v1.md)。

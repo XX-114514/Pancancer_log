@@ -1,3 +1,5 @@
+[NSCLC作者谱系与通讯程序路线资格](NSCLC-author-lineage-and-communication-factor-preflight-20261019.md)：原全行/记录接受，MCP方案资格及通讯张量下一合同/软件边界。
+
 [独立功能RNA完整400家族](GSE176021-disjoint-functional-association-family-20261019.md)：全测量/400真实问题/3200点及完整随机流、四幅全范围图均接受；有限家族关闭。
 
 [作者亚型动态精确分解](GSE176021-author-subtype-dynamics-decomposition-20261019.md)：全部160/928/80/8独立接受、单侧抽样及QC表示边界。
