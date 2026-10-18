@@ -1,3 +1,5 @@
+[新来源与CAR有限家族](immune-RNA-MCP-new-source-and-CAR-clinical-family-20261019.md)：完整语境/终点、固定对比/背景、完整分母与全部随机流独立接受，科学结果保持私有。
+
 [固定交叉谱系RNA与状态诊断](immune-RNA-MCP-fixed-lineage-and-state-diagnostic-20261018.md)：原始固定标记、全来源、无身份变更和额外P。
 
 [去内生接收程序与覆盖](immune-RNA-MCP-disjoint-receiver-preflight-20261018.md)及[固定方向性关联家族](immune-RNA-MCP-directional-association-family-20261018.md)：全端点、固定程序、原生RNA与推断分母。
