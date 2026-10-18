@@ -29,3 +29,13 @@ New published SCP2510/Zenodo11198494 includes4 MERFISH transcript CSVs. Smallest
 10x official Prime5K lung potential source has1 donor; web download page request429, no bypass and no unknown-size bundle. Another Xenium TLS source requires reasonable request, not emailed. GSE271689 raw DCC example lacks direct complete gene mapping, processed author tables have missing fixed genes; no clinical or CCI model fitted from incomplete processed data.
 
 New source requests remain qualified before outcomes/space: full panel and specimen/ROI/segmentation units before validation, no marker replacement. Actual repository preflight0errors1existing warning. This checkpoint adds full producer/audit/render versions and technical receipts; next finish pilot qualification, actual figure QA and authorized scientific report.
+
+## 2026-10-18 11:54 UTC /19:54 UTC+8 完整新数据资格与区域问题冻结
+
+公开Pt43全263338496bytes于11:46:25 MD5通过，11:48:24全6044353条转录本检查完成；550标签含71 Blank和479其他基因，未将阴性探针计作生物基因。所有坐标有限，固定CM02核心四基因在该文件未观测到，不将其强说未测或生物缺失。保守FOV+Baysor编号只作片段，跨FOV完整细胞与物理边界未确证，不作为细胞/患者单位，也不评分不完整CM02。v1在import阶段缺SciPy未写对象，v2使用NumPy构建同一稀疏计数，未安装/改全局环境。
+
+10x公开Prime5K原panel JSON4.48MB核完5001唯一生物靶基因、控制/废弃codeword分别处理，固定CM02和HLA-II定义缺测；仅HEAD核103878075-byte矩阵与16632012-byte坐标表，未下载两个不合要求的对象。初次2MB小预算正确拒绝较大panel，HEAD确认大小后才按5MB预算获取；未绕过网页429或验证挑战。
+
+原83232新分子位置全部独立接受；三幅v2已11:48:37实际查看、上下地图同全来源范围，所有派生数值表解压后与v1一致。e0ddbb06d3c778fd292d7db1595a606cf812d2f2已普通push并独立核云。前节点11:47 UTC换算为19:47 UTC+8，原英文plus8说明补为本明确时区。
+
+现有GSE273952全RNA输入的34固定基因全部唯一可测，19来源为ccRCC混合Visium，作者TLS阳性选样。其患者关系和既有部分组成限制保留；不作为肺癌疗效/细胞接触验证。11:53:39效果前冻结76个新的区域功能描述，原NAMPT/DDIT3、18空间、312临床均不重开，不新增P。原data1只读接受凭证/几何，新的结果写data4任务版本目录。来源lookup值为整型、只读检查初稿以len调用报错，修正数据类型后完整资格通过，未计算效果或改变矩阵。下一真实执行和全部原RNA/秩/邻域/设计独立复算。
