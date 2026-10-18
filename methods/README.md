@@ -102,3 +102,5 @@
 - [自动通讯张量与完整20留出临床家族](NSCLC-communication-tensor-heldout-family-20261019.md)。
 
 - [自动通讯全家族结果后区间、跨秩和背景诊断](NSCLC-communication-tensor-post-result-diagnostics-20261019.md)。
+
+- [完整通讯临床差异贡献及联合解释合同](NSCLC-communication-clinical-contrast-attribution-20261019.md)。

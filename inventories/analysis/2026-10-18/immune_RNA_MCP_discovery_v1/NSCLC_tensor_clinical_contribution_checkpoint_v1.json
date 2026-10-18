@@ -1,0 +1,25 @@
+{
+  "observed_UTC": "2026-10-18T20:29:52+00:00",
+  "status": "ACCEPTED_ALL20_DESCRIPTIVE_MARGINAL_CLINICAL_CONTRIBUTIONS_JOINT_PENDING",
+  "source_sha256": {
+    "math": "5eb68dc06d38e3fc3f450c5657163b24bbfc1d459814d8badad7c18a5eccd53e",
+    "producer": "e6cc0693d8d5db8176c1fbc97ef608d107574cca72828a1606908e1e95a27e3f",
+    "auditor": "e117ef8c6d812e09e01eb0cb945047422aeb6cd7e39ca92a483dd9d940d9a129"
+  },
+  "producer_completed_UTC": "2026-10-18T20:20:12.499696+00:00",
+  "audit_completed_UTC": "2026-10-18T20:22:44.944888+00:00",
+  "producer_terminal_sha256": "74a74af9ad6682b68c44f857455a06c2cac153463332cf3aa894265cc789d9a9",
+  "audit_terminal_sha256": "edf548e9cc0d3b24158725d78f34df203f779bfc999fadf3ad1a9a96ceedddca",
+  "technical_dimensions": {
+    "original_programmes": 20,
+    "scenarios": 2,
+    "LR": 876,
+    "author_types": 38,
+    "LR_terms": 35040,
+    "cellpair_terms": 57760
+  },
+  "new_molecular_inference": false,
+  "main_inference_changed": false,
+  "full_science_public": false,
+  "goal_status": "active"
+}
