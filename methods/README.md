@@ -74,3 +74,5 @@
 - [当前RNA MCP头颈癌八项内部临床家族](immune-RNA-MCP-HNSCC-clinical-family-20261019.md)：精确已审患者/明确基线，连续病理结局，完整背景控制和全家族独立审核。
 
 - [当前RNA MCP向NSCLC的原生测量资格](immune-RNA-MCP-NSCLC-measurement-qualification-20261019.md)：唯一stable-ID alias、全活跃基因、原始RNA门控、冻结变换和全来源审核。
+
+- [当前RNA MCP的NSCLC六项程序/临床共同关联](immune-RNA-MCP-NSCLC-cohort-clinical-family-20261019.md)：同病例三组成IUT、完整控制空间、有限校准、全随机流和敏感性。

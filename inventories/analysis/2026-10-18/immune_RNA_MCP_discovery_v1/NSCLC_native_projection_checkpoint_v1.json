@@ -1,6 +1,6 @@
 {
-  "recorded_UTC": "2026-10-18T14:46:19.664319+00:00",
-  "status": "all6_native_gene_axes_accepted_raw_RNA_producer_live_auditor_waiting_same_handle",
+  "recorded_UTC": "2026-10-18T15:27:32.474576+00:00",
+  "status": "full_native_counts_capture_frozen_scores_and_domain_checks_independently_accepted",
   "source_sha256": {
     "qualify_NSCLC_immune_RNA_MCP_native_axis_v1.py": "3e3508cbf335ab99d060567ca1cb9e5399f2bbaf5196dcc4bf69638216b46f11",
     "audit_NSCLC_immune_RNA_MCP_native_axis_v1.py": "bbdc66493728c255ee2b6fab564f7d52bfa135a46a63bbea41d40b494cd1aba2",
@@ -15,17 +15,19 @@
   "auditor_plan_sha256": "e9e584d73a493449df188480845b0d9f40a7631e728367b5b6785b27c83d1d72",
   "producer_start_UTC": "2026-10-18T14:38:06.584088+00:00",
   "auditor_start_UTC": "2026-10-18T14:39:37.385536+00:00",
-  "last_verified_raw_checkpoint_UTC": "2026-10-18T14:46:14.525649+00:00",
-  "coordinates_read": 950562189,
+  "coordinates_read": 2010550708,
   "expected_coordinates": 2010550708,
   "whole_native_cells": 1254749,
   "whole_native_materials": 243,
   "output_cap_bytes": 100663296,
-  "clinical_effects_executed": false,
+  "clinical_effects_executed": true,
   "learned_features_or_effects_public": false,
   "goal_complete": false,
   "clinical_scope_terminal_sha256": "09d3fc4d485277429c0c88fa9a15b82a042d29e2f58883f8adbae971b887786a",
   "clinical_scope_acceptance_sha256": "78d83326e28986f614de71d3fe3883424e7a3fc850642673f119c9a9af0d78d4",
-  "verified_producer_state": "R",
-  "verified_auditor_state": "S"
+  "native_producer_terminal_sha256": "692752febca701683727bce5274cd0a193d3df342abfa15b540f93696cc7e4ad",
+  "native_producer_completed_UTC": "2026-10-18T14:56:15.528638+00:00",
+  "raw_audit_coordinates_replayed": 2010550708,
+  "native_audit_terminal_sha256": "de1f3ede3b2a62559c368f26a30507e1dcb676a0ebb343a4d82ec7b69780e210",
+  "native_audit_completed_UTC": "2026-10-18T15:09:42.011856+00:00"
 }
