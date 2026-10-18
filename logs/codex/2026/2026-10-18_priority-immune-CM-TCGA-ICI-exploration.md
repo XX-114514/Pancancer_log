@@ -66,3 +66,7 @@ Zenodo服务器直连仍无首文件，改本机公开Range获取；09:02:30三�
 修改：增加临床描述脚本、修正渲染、记录方法/run、完整技术收据、来源/审计、状态及索引。轻量检查与Git同步待本节点执行；建议commit `analysis: accept all312 priority CM proxy slots and reviewed clinical exploration deliverables`。
 
 轻量验证实际完成：git diff --check通过；仓库验证0错误/1既有路径警告，新增项不含内部绝对路径、患者行、矩阵、科学P或权重。当前无他人已暂存内容，只提交本任务明确路径，保留并发NSCLC新脚本与旧未跟踪日志。实际脚本语法解析和真实执行通过；不重复可逆修改的镜像测试。普通commit/push及远端SHA核验接续。
+
+## 2026-10-18 09:17:39 UTC /17:17:39 UTC+8 发布独立核验
+
+内容提交f22b4ea76c634a1334d731c2e89e352dbb9031b7已普通push，独立ls-remote核对origin main完全一致；并发提交43d8df6正常保留为父历史。中文报告及全部312槽表本机/服务器SHA分别完全一致。4组PDF/SVG/PNG、完整聚合表/补充诊断与中文解释已打包本地授权交付，无患者行进入包或公共Git。收据publication_receipt_v1.json记录内容发布；本收据随随后普通提交同步，不改写原内容。后续未启动新的模型/受控申请。
