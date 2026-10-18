@@ -1,0 +1,12 @@
+{
+  "content_commit": "6a006ed85772fe820d270e22c881953e56fda89f",
+  "verified_remote_main": "6a006ed85772fe820d270e22c881953e56fda89f",
+  "push_completed_UTC": "2026-10-18T13:39:09.628525+00:00",
+  "push_completed_UTC8": "2026-10-18T21:39:09.628525+08:00",
+  "independent_verification_UTC": "2026-10-18T13:39:16.485718+00:00",
+  "independent_verification_UTC8": "2026-10-18T21:39:16.485718+08:00",
+  "bundle_sha256": "20587c7ace6a5eba2941784e6b34e034f631558b5f415d09f45e081aea355338",
+  "method": "Reviewed code/method/technical-log bundle via existing authorized SSH standard input; clean server fast-forward and ordinary push; independent local public HTTPS ls-remote and fetch",
+  "prior_failures": "Two SCP exit255 failures before remote mutation; local HTTPS write could not obtain configured login. No scientific restart, history rewrite or port/proxy change.",
+  "scientific_tables_images_candidate_lists_weights_or_case_rows_uploaded": false
+}
