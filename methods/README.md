@@ -1,5 +1,7 @@
 # 方法文档
 
+当前新增入口：[原生接口外部测量机会](NSCLC-native-interface-external-opportunities-v1.md)，仅基因可测性和冻结捕获元数据，不是效果检验或完整验证就绪。
+
 `methods/` 只保存当前认可、仍应执行的方法逻辑。历史方案、被放弃方案及选择理由进入 `decisions/`；某次运行的具体参数进入 `runs/`。
 
 每个方法文件建议包含：
