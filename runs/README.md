@@ -1,3 +1,5 @@
+[CM02固定功能代理空间探索](20261018_CM02_MERFISH_conditional_spatial_mixing_v1.md)：原探针QC后18槽启动，审计另记。
+
 [GSE299886原坐标恢复](20261018_GSE299886_original_coordinates_v1.md)：3输入旧坐标缺失，原归档双射/完整RNA核查及新旁表完成。
 
 [GSE328481空间来源资格](20261018_GSE328481_spatial_bridge_qualification_v1.md)：全11公开链接/字节、单文件schema pilot与配额/通路轨迹。

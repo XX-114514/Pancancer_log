@@ -1,3 +1,5 @@
+[有限CM02功能代理条件空间组织](CM02-MERFISH-conditional-spatial-mixing-v1.md)：固定全部输入/尺度/门槛，技术内条件null，不提升机制。
+
 [MERFISH原坐标与RNA行保真恢复](GSE299886-original-coordinate-sidecars-v1.md)：全ID与RNA逐项复算后只建旁表，旧输入不覆盖。
 
 [LUAD空间细胞/程序桥接资格](GSE328481-spatial-cellular-bridge-qualification-v1.md)：先官方metadata和效果盲schema，不混用原CM/功能代理。

@@ -1,5 +1,6 @@
 # GSE299886原坐标恢复与计数行保真
 
+本文功能代理CM02专指2026-10-14免疫图谱CM（v1，T_whole_TME_primary_tumor）；原2026年10月9CM（v20261010）保持原版本。
 ## 来源与问题
 
 [官方说明](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299886)为MERFISH多平台TMA研究，涉及肺腺癌和间皮瘤。3份assay不是3名独立患者；core/FOV/切片/患者需分别登记。该批现有基因轴完整覆盖原固定CM02两臂及pan-T，但不因此通过表达、状态或几何验收。
