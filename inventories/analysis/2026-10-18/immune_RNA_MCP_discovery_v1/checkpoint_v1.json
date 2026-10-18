@@ -1,0 +1,26 @@
+{
+  "recorded_UTC": "2026-10-18T12:11:01.774452+00:00",
+  "recorded_UTC8": "2026-10-18T20:11:01.774452+08:00",
+  "status": "all_native_inputs_independently_accepted_official_family_running_not_biological_validation",
+  "source_sha256": {
+    "freeze_immune_RNA_MCP_discovery_scope_v1.py": "5c21c53a986a8ffb8c0ee511ee836722f12f3df0deeacc28a02cd95b4a1bc597",
+    "prepare_immune_RNA_MCP_native_expression_inputs_v1.py": "7cad10f5944331256f43421aee49bfe6f00e4355aa26a5b6f45d87fbaab361c1",
+    "audit_immune_RNA_MCP_native_expression_inputs_v1.py": "44dfb5406fa4fabfea4f8a62b557eb32040e37b972bb18d601c7874eb6217223",
+    "run_immune_RNA_MCP_official_fit_v1.R": "b682e33c5221bca14cfde0fd5d8c052112b07e259fa4a78bcd5b4a05f3c38e78",
+    "run_immune_RNA_MCP_official_family_v1.py": "24ed7c348a96100a6b00d63a2809d1e7f39ba10f842253320280d515698090bc"
+  },
+  "scope_terminal_sha256": "0f4833a07bd5cdf5e8f6806d06805777dddf78adad60a6151eca991dfdda6196",
+  "input_terminal_sha256": "2474355a003d96232b752ad2c77ba92a506f4c68829c7e0adf434045cf03d656",
+  "input_acceptance_sha256": "58385bca98d751470d7f7026b0e6ff4ca7f1c584dacbfa6b7eb5ac644f7b5d4b",
+  "raw_common_gene_opportunities": 32207,
+  "selected_cells": 19018,
+  "discovery_reviewed_cases": 38,
+  "heldout_source_sample_cases": 28,
+  "view_count": 3,
+  "candidate_genes_per_view": 5000,
+  "PCs_per_view": 20,
+  "planned_official_fits": 5,
+  "model_launch_UTC": "2026-10-18T12:06:31.734393+00:00",
+  "live_observation_UTC": "2026-10-18T12:09:30.370262+00:00",
+  "no_new_scientific_claim": true
+}

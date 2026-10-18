@@ -1,3 +1,5 @@
+[无结局免疫RNA MCP发现设计](immune-RNA-MCP-discovery-design-20261018.md)：病例/来源冻结、全输入独立接受、五个官方拟合及解释边界。
+
 [原免疫CM固定面板同细胞RNA](immune-CM-fixed-panel-same-cell-RNA-v1.md)：原T全范围、原CM材料与pre，源测量而非新临床检验。
 
 [有限CM02功能代理条件空间组织](CM02-MERFISH-conditional-spatial-mixing-v1.md)：固定全部输入/尺度/门槛，技术内条件null，不提升机制。
