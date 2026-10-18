@@ -1,0 +1,8 @@
+{
+  "observed_utc": "2026-10-18T08:44:05.218301+00:00",
+  "status": "CANONICAL_PRODUCER_RERUN_BYTE_PARITY_PASS",
+  "producer_sha256": "b2f95506660635131cf13a816fb52e8315fca0d526bd142280c43115b839bb20",
+  "catalogue_sha256": "7679ec3014bac8dc021e9f80aee44ab6ed854d98b690c8b2c11c9eb4c750e2b8",
+  "all79_names_and_members_unchanged": true,
+  "no_source_model_or_outcome_refit": true
+}
