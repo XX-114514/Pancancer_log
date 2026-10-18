@@ -37,3 +37,7 @@ Git提示默认CSV的CRLF会规范为LF；79行语义完全一致，但初始生
 ## 2026-10-18T08:44:30.087659+00:00 规范表复生成与同步恢复
 
 当前LF生成器在独立临时目录实际重跑，全79名称/成员及中文目录与公开产物逐字节相等，canonical_publication_check单独记代码/目录SHA。旧CRLF服务器sidecar和初始SHA保留，不改变科学数据。HTTPS普通push因无凭据失败，使用既有已授权服务器密钥建立30分钟有效的独立临时签名代理，密钥不复制，用户SSH/代理配置不改；普通推送及最终SHA核验继续。
+
+### 云端同步完成
+
+普通push 9ced5a7→f4e1eb0成功，独立HTTPS ls-remote完整SHA=f4e1eb077f84f6492e09f304853e474b603bee53已核对。内容commit及核验见cloud_publication_receipt.json；此收据提交仅补同步事实，不新增科学结果。未跟踪的其他任务文件保持原状。
