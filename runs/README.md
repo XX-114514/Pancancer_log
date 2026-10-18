@@ -1,3 +1,5 @@
+[原生固定面板同细胞测量](20261018_immune_CM_fixed_panel_same_cell_RNA_v1.md)：全T生产完成，原obs/源轴/全RNA独立审计。
+
 [CM02固定功能代理空间探索](20261018_CM02_MERFISH_conditional_spatial_mixing_v1.md)：原探针QC后18槽启动，审计另记。
 
 [GSE299886原坐标恢复](20261018_GSE299886_original_coordinates_v1.md)：3输入旧坐标缺失，原归档双射/完整RNA核查及新旁表完成。
