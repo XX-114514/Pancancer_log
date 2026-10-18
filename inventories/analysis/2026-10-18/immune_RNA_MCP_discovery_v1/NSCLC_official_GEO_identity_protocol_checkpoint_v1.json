@@ -1,0 +1,20 @@
+{
+  "recorded_UTC": "2026-10-18T19:53:23.669937+00:00",
+  "recorded_UTC8": "2026-10-19T03:53:23.669937+08:00",
+  "status": "complete_official_metadata_exact_bridge_shared_protocol_accepted_no_patient_alias",
+  "source_sha256": {
+    "qualify_NSCLC_official_GEO_metadata_v1.py": "6e03375d2674b322508086ae1e60391104c361935e2ce7e7ae13777722966679",
+    "audit_NSCLC_official_GEO_metadata_v1.py": "ea07303ab66028cb5197b9f514d308e4849d96fd87c4bb59ad81f240c84210d8"
+  },
+  "official_GEO_gzip_sha256": "a866f3cc67e94eefd25804a1da21f02720bf64c7775536a04d7c65ffb46b1c17",
+  "producer_terminal_sha256": "1a5a0f7832f7bf670bd6cf53104ce3d753887c79dd66a16c1f6bc7103fcf0488",
+  "complete_audit_terminal_sha256": "340a1cc501a2fe5094402f9ca3094cd3e805289262794bb62df9c57ed85de4f2",
+  "accepted_UTC": "2026-10-18T19:52:18.765485+00:00",
+  "exact_original_author_bridges": 243,
+  "official_study_design_samples_and_patients": 234,
+  "deposit_records": 243,
+  "adopted_patient_aliases": 0,
+  "running_clinical_input_changed": false,
+  "raw_expression_downloaded": false,
+  "scientific_effects_or_individual_rows_public": false
+}
