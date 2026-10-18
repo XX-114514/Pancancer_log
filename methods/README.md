@@ -76,3 +76,6 @@
 - [当前RNA MCP向NSCLC的原生测量资格](immune-RNA-MCP-NSCLC-measurement-qualification-20261019.md)：唯一stable-ID alias、全活跃基因、原始RNA门控、冻结变换和全来源审核。
 
 - [当前RNA MCP的NSCLC六项程序/临床共同关联](immune-RNA-MCP-NSCLC-cohort-clinical-family-20261019.md)：同病例三组成IUT、完整控制空间、有限校准、全随机流和敏感性。
+
+- [HNSCC配对完整RNA测量资格](immune-RNA-MCP-HNSCC-paired-measurement-20261019.md)：全部既有配对材料、冻结程序、应激补集与原官方锚定。
+- [HNSCC配对动态12项家族](immune-RNA-MCP-HNSCC-paired-dynamics-family-20261019.md)：精确符号/中位数及完整控制的共同变化，统一家族校正和全部敏感性。
