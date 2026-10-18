@@ -1,0 +1,7 @@
+ligand	receptor	review_status	primary_source	interpretation_limit
+TGFB1	TGFBR1_TGFBR2	complete_canonical_receptor_structure_supported	https://pubmed.ncbi.nlm.nih.gov/20207738/	RNA_not_latent_ligand_activation_or_pSMAD_response
+IFNG	IFNGR1_IFNGR2	complete_signaling_receptor_structure_supported	https://pubmed.ncbi.nlm.nih.gov/30814731/	RNA_not_assembled_2to2to2_complex_or_activity
+CCL5	CCR5	functional_agonist_receptor_supported	https://pubmed.ncbi.nlm.nih.gov/8639485/	Not_current_sample_binding_or_recruitment
+CCL5	CCR4	specificity_disputed_do_not_promote_legacy_entry	https://pubmed.ncbi.nlm.nih.gov/9169480/;https://pubmed.ncbi.nlm.nih.gov/9430724/	Primary_TARC_MDC_competition_did_not_support_RANTES_binding; keep_original_counts
+CD80	CTLA4	ligand_binding_and_transendocytosis_supported	https://pubmed.ncbi.nlm.nih.gov/21474713/	Not_current_cellular_APC_source_or_function
+CD86	CTLA4	ligand_binding_and_transendocytosis_supported	https://pubmed.ncbi.nlm.nih.gov/21474713/	Not_current_cellular_APC_source_or_function
