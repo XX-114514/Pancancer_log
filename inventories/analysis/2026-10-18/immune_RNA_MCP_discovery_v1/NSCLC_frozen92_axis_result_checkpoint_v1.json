@@ -1,0 +1,15 @@
+{
+  "observed_UTC": "2026-10-18T21:09:47.718521+00:00",
+  "status": "ACCEPTED_ALL92_NUMERICAL_INFERENCE_AND_POSTRESULT_EXPRESSION_PARTITIONS_BACKGROUND_VISUAL_PENDING",
+  "null_calibration_terminal_sha256": "867b75f492d431d5ff0650e6c689d3cfd0ffe24a0611a620f2ab4f6d92360cf3",
+  "producer_terminal_sha256": "6c0f830552d845ff210162b6f77d34fb9f611125a5f375d351cac57c9d872c6f",
+  "audit_terminal_sha256": "79e8aa29aec12db05d437f6e4ebc24dec7e97772bf62ca594434efe36522b9b7",
+  "audit_completed_UTC": "2026-10-18T20:56:05.041675+00:00",
+  "random_statistics_compared": 3599820,
+  "maximum_independent_statistic_difference": 5.928590951498336e-14,
+  "endpoint_partition_terminal_sha256": "e930616f7b55b41c6ce0005df2669d8be9962c0a05bdd05ca1a02f4f06ca8745",
+  "endpoint_partition_original_P_unchanged": true,
+  "all_visual_QA_complete": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}

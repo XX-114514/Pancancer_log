@@ -1,0 +1,16 @@
+{
+  "observed_UTC": "2026-10-18T21:17:00.365374+00:00",
+  "status": "ACCEPTED_FINAL_FOUR_ACTUALLY_VIEWED_SOURCE_FIGURES_RECEIVER_REFERENCE_SCOPE_WRITTEN",
+  "result_audit_terminal_sha256": "79e8aa29aec12db05d437f6e4ebc24dec7e97772bf62ca594434efe36522b9b7",
+  "final_visual_receipt_sha256": "5e19a115408040c85d8fc19e39e83244ea0b589959024a4df682ea2c6924660f",
+  "background_v4_terminal_sha256": "622bf6eb62994553c80f08817fdc2abb8bbf2bcab68b607dd1e871cea0f6a807",
+  "final_four_source_figures_actually_viewed": true,
+  "old_figure_versions_preserved": true,
+  "complete_reference_scope_terminal_sha256": "fd4d775a3f4094f0359e020b72d4e85c2e546d13df50b9d0edf937cd3d909f2b",
+  "reference_slots": 50,
+  "new_functional_expression_scores": false,
+  "new_functional_P_values": false,
+  "new_complement_raw_audit_not_yet_asserted": true,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}
