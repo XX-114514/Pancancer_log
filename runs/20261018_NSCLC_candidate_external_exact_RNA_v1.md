@@ -1,0 +1,19 @@
+# 全原候选外部精确RNA与同细胞受体
+
+## 实施前
+
+前一goal轮实际完成内部全家族、机制描述及全61来源路线接受，并普通push独立核云43d8df6b6903c5fdb8d9f914049e451f1a56adc1，属于实际进展。本轮重核当前Git/相关合同与旧计数源码、原质量字段和原96审核单位来源；没有将上轮metadata路线当已取得真实RNA。
+
+按[测量合同](../methods/NSCLC-candidate-external-exact-RNA-v1.md)，全部原候选/全部来源与冻结行/角色保持。新I/O辅助NSCLC_candidate_external_exact_RNA_inputs_v1.py绑定范围、路线证明638443f5、原计数7bd028cc、原固定96单位及来源基因轴；按不可变列重数计算映射，再与原路线完全核对。通用生产extract_NSCLC_candidate_external_exact_RNA_v1.py采用既有原core/图谱counts流，无新下载。源码语法已核；真实启动与独立数值验收尚待登记。
+
+原生均值、边际和完整复合物两阈值保留，空池/未测/实测零/零RNA细胞区分。32MiB产物、500GB+1GiB预留、至少3GiB可用RAM、4096行/单worker/单BLAS。先写计划和输入/代码SHA，再读真实panel。正式run路径以PANCANCER_PREFLIGHT_ROOT为根，既有scanpy环境运行对应源码；审计依赖同一真实生产句柄和正式终态，观察超时不重启。
+
+下一全部52原缓存/全部panel重聚合与原96池独立raw复算，区分全轴不变量与抽取raw覆盖；不宣称全6760池raw独立验证。效果、模型和临床价值尚未计算，科学载荷只server/授权对话。
+
+## 真实启动与名称冲突纠正
+
+辅助源码4481ed630c771f739be34e77c075ae5a5f74a97a60ad52bffc6d8d1ff854dbe4先上传成功。生产源码33d7d8cbdd0aa6cf009ce6b54cca0d0b4f04de4aed9af5c8763ebd77911c7a96于2026-10-18 09:17:17.725494 UTC /17:17:17.725494 UTC+8真实启动。09:19:46检查点原core2232320/4676787行、745468选中细胞，09:20前取证同启动标识R、技术日志空；完整终态未到，不提前解读新科学值。
+
+首次独立审核派发被已有源码存在性断言拒绝：新raw审核误用了上一轮metadata审核的名称。仅本地新工作文件曾覆盖本任务先前脚本，发现后将新raw内容另存为audit_NSCLC_candidate_external_exact_panel_values_v1.py，并从当前Git对象恢复原64行metadata源码；原服务器metadata源码SHA705567ba3b0e19f1e1dd1cdf4e0cebd979db0f8333041f3831a33d408f87af4d与Git逐字一致，原科学证明和输出均保持。首次派发未建立新raw作业，未改变原提取；一次检查错误地尝试读取不存在审核收据而FileNotFound，后改为分项核真实存在性，不视为生产故障。
+
+新专用raw审核源码7ab16d10c85f16f4adcbbf567d09b9e3828e73e40fbffe8eb798f50832554f58在明确新源码/作业不存在后首次实际部署，于2026-10-18 09:20:06.787322 UTC /17:20:06.787322 UTC+8启动，等待同一原生产终态，再执行全部52旧缓存panel与原96池raw复算。它与原metadata审核角色/名称分开，尚未接受真实RNA输入；没有重启生产、换端口或修改原数据。

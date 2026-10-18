@@ -1,3 +1,7 @@
+## 2026-10-18 09:20 UTC /17:20 UTC+8 从路线资格进入真实外部RNA
+
+全候选/全来源精确单细胞均值及功能受体交集已在既有计数上运行，独立原缓存和原96 raw池审核已绑定。下一真实输入接受、去重叠分数和完整来源模型，再评估跨来源一致性；不以任务运行替代复现。[run](runs/20261018_NSCLC_candidate_external_exact_RNA_v1.md)。
+
 ## 2026-10-18 09:12 UTC /17:12 UTC+8 机制资格完成、外部精确RNA入口明确
 
 原主要家族与全部结果后机制描述已数值接受，解释留server/授权对话。全61来源唯一基因映射和功能组合测量路线也已核对；下一真实单细胞均值/受体交集抽取、独立raw审核、外部完整设计，而非直接把metadata机会叫复现。[机制](runs/20261018_NSCLC_native_interface_mechanistic_followup_v1.md)、[外部路线](runs/20261018_NSCLC_candidate_external_exact_RNA_preflight_v1.md)。

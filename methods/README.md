@@ -1,3 +1,5 @@
+[全原候选外部精确RNA](NSCLC-candidate-external-exact-RNA-v1.md)：原始细胞全RNA分母、同细胞受体、全旧缓存及固定96 raw池复算。
+
 [优先免疫CM的TCGA与ICI功能代理探索](priority-immune-CM-TCGA-ICI-exploration-20261018.md)：固定两轴/312主要槽，原模型不改；临床代理与精确模块分开。
 
 [原生内部候选机制资格与独立靶RNA描述](NSCLC-native-interface-mechanistic-followup-v1.md)：全部原候选，结果后固定文献范围，无新P或主要分类修改。

@@ -742,3 +742,15 @@ v2生产08:29:16完成8a9564a9，独立QR/直接保留特征完整重放于08:32
 新增通用两脚本/run及导航、同task/daily和inventory。前序机制完整仓库检查0错误/1既有警告，新增路线源码语法/路径检查和实际metadata数值核通过；最后仓库/diff/隐私检查、显式自有stage、普通push并独立核云后才称本节点同步。并发另任务已推进至9379f89，所有其未提交文件保持；不发送线程消息、删除或改写历史。goal active，仍未直接互作或临床确认。
 
 本节点四新脚本语法、路径/凭据模式和人工隐私差异核查通过；git diff --check及最终完整仓库0错误/1既有警告通过。正式数值与metadata分别有98a2fd9a/638443f5证明；不将其混称生物学复现。建议提交：feat: qualify native interface mechanisms and exact external RNA routes。普通push及独立云SHA另有真实收据，保留其他任务未提交文件。
+
+## 2026-10-18 09:20 UTC /17:20 UTC+8 全来源精确RNA实际读取
+
+前一goal轮完成原完整接受/机制描述/外部路线并09:13:42独立核云43d8df6，属于实际进展。本轮重读当前AGENTS、README/STATUS/ROADMAP/TODO、RUNTIME_SYNC、相关合同/run和近期日志，核旧计数/marker/96 raw审核真实源码、质量字段及7bd028cc全SHA。猜测的rules路径不存在后按实际import读取真实文件，不把不存在路径当分析证据。另线程bulk工作持续普通提交至fa7aa69，其修改/未跟踪均保持。
+
+新增完整测量合同、I/O/producer及专用数值审核。全部原候选及功能复合物、61source-arms/1690libraries/6760冻结池、原canonical行/角色与全物理RNA分母保持；源列重数预先固定后核与旧路线一致，缺失/零值/空池/零RNA细胞分开。32MiB产物、500GB+1GiB余量、至少3GiBRAM、单worker/BLAS、4096行；全旧52缓存和原早已冻结96单位的raw数值复算，不能称全部6760池独立raw重放。新P/临床/下载均未执行。
+
+09:17:17原提取真实启动33d7d8cb，09:19:46检查点core2232320行/745468选中细胞，进程R同启动标识、无技术错误。第一次审核派发因名称撞上既有metadata源码而存在性断言停止，服务器原源码/证明无改动；本地新raw内容另存专用名称，并从当前Git对象逐字复原原64行metadata源码705567ba（不是覆盖并发更改）。首次未建立raw作业，分项确认新名称不存在后09:20:06真正启动7ab16d10。一次状态查询误读不存在原名job收据而FileNotFound，后分项核真实句柄，未据此重启生产或换端口。
+
+生产/完整审核接受仍待，尚未读未接受的真实panel结果。新源码语法、差异及路径检查通过，新增状态/任务/路线/方法与run导航、索引、同task/daily按职责更新；仓库轻量验证及隐私diff后只提交本节点自有文件，普通push独立核云后才称同步。科学panel、学习端点、病例/文库行与数组留server/授权对话。下一接受同一任务后准备去LR外部分数和完整来源模型，goal active。
+
+本节点三新脚本语法/路径/凭据模式及人工隐私差异检查通过；git diff --check与完整仓库0错误/1既有警告通过。原metadata审核源码与当前Git/server逐字SHA一致，未纳入修改。只显式提交本节点自有文件，建议提交：feat: extract exact candidate RNA with fixed raw replay audit。普通push和独立云核以真实收据为准，尚不称科学RNA接受或goal完成。

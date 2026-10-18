@@ -1,3 +1,5 @@
+[全原候选外部真实RNA执行](20261018_NSCLC_candidate_external_exact_RNA_v1.md)：全冻结池计数提取已启动，独立原缓存/96 raw池审核等待同一生产终态。
+
 [优先免疫CM临床探索](20261018_priority_immune_CM_bulk_v1.md)：全312槽和162设计独立数值接受，4幅v2图全部实际查看；科学表仅授权工作区。
 
 [全部原候选外部精确RNA路线](20261018_NSCLC_candidate_external_exact_RNA_preflight_v1.md)：全61来源映射/功能组合资格元数据独立通过，真实RNA抽取与模型仍待。
