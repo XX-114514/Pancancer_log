@@ -1,3 +1,5 @@
+[作者身份RNA与组织配对](GSE176021-author-lineage-RNA-paired-tissue-20261019.md)：原变换/完整范围、六项新组织问题与分母、秩假设和全部敏感性。
+
 [GSE176021原作者参考恢复](GSE176021-original-author-reference-recovery-20261019.md)：双层gzip、文库命名空间精确桥及全来源/捕获覆盖独立接受；临床原表未取得，不采纳逐病例MPR。
 
 [新来源与CAR有限家族](immune-RNA-MCP-new-source-and-CAR-clinical-family-20261019.md)：完整语境/终点、固定对比/背景、完整分母与全部随机流独立接受，科学结果保持私有。
