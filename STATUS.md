@@ -1,3 +1,7 @@
+## 2026-10-18 12:42 UTC /20:42 UTC+8 四组模型正常结束，最后来源敏感性运行
+
+三K2及K3均exit0；最后source_permissive自12:39:38 UTC真实R计算，单次后续控制器仍等待完整家族。新临床资格发现同GSE论文的混合治疗语境线索，但公开补充链接返回HTML而非DOCX，未取得逐例标签；原来源协同家族保持，未称纯ICI验证。[MCP run](runs/20261018_immune_RNA_MCP_discovery_v1.md)、[临床资格](runs/20261018_GSE305078_clinical_link_qualification_v1.md)。
+
 ## 2026-10-18 12:30 UTC /20:30 UTC+8 三组K2结束，固定后续已在后台依赖等待
 
 原family三组已完成，K3仍运行；当前单次依赖控制器/proc已确认live，待全五manifest后执行冻结投射、独立分数接受、全稳定性/来源检验及独立随机流审核。无模型重启或科学重试；未读学习结果、尚无新生物学结论。[run](runs/20261018_immune_RNA_MCP_discovery_v1.md)。

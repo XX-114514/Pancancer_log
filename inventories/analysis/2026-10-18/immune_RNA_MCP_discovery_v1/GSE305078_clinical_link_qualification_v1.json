@@ -1,0 +1,10 @@
+{
+  "recorded_UTC": "2026-10-18T12:39:56.007325+00:00",
+  "source_sha256": "2e1c70b8a683cd8a00be99e9a089eca4d0decf26519634ba76183b78183365a6",
+  "public_manuscript_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13355034/",
+  "qualification_status": "HTTP200_HTML_NOT_DOCX_NO_LABEL_ADOPTION",
+  "downloaded_response_bytes": 1817,
+  "terminal_sha256": "72981884c349ababdca4c2883fc74c08634a5836d75de5271c88ed6afe24be39",
+  "patient_identity_treatment_or_response_join_established": false,
+  "original_fixed_MCP_family_modified": false
+}

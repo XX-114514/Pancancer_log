@@ -72,3 +72,8 @@ python scripts/run_immune_RNA_MCP_official_family_v1.py
 同一family三组K2均exit0（结束UTC分别12:14:13.214109、12:21:31.550629、12:28:38.622280），K3自12:28:38.637729 UTC运行。后续单次控制器12:30:25.356787 UTC启动PID36945/startticks314173150，12:30:37 UTC真实S且ticks一致，等待原driver；plan SHA bbea5d763585e6fd3257ec5b67b4d82257c5fa6f03fe63ddb1074b31d243aabf。
 
 它只等待现有固定family，核全五manifest后顺序执行冻结投射、独立分数审核、全部稳定性/来源检验和完整独立数值审核。没有自动科学重试、换K/seed或周期定时器。具体控制/故障边界和SHA见[任务轨迹](../logs/codex/2026/2026-10-13_finite-CM-communication-and-pivot.md)。当前处于真实等待，未开始后续效果计算。
+
+
+## 2026-10-18 12:42 UTC /20:42 UTC+8 第四拟合结束、第五真实运行
+
+K3于12:39:38.931632 UTC正常exit0；最后K2 source_permissive自12:39:38.947275 UTC开始，12:42:05 UTC R child63765真实R。全部四已结束拟合均exit0，原controller仍等待全五manifest，后续数值/科学接受未完成。新[临床语境资格](20261018_GSE305078_clinical_link_qualification_v1.md)仅说明标签边界，不改变任何拟合/统计参数。

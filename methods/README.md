@@ -1,3 +1,5 @@
+[TNBC临床连接资格](GSE305078-clinical-link-qualification-20261018.md)：混合治疗语境、精确键及格式拒收边界，原MCP合同保持。
+
 [无结局免疫RNA MCP发现设计](immune-RNA-MCP-discovery-design-20261018.md)：病例/来源冻结、全输入独立接受、五个官方拟合及解释边界。
 
 [原免疫CM固定面板同细胞RNA](immune-CM-fixed-panel-same-cell-RNA-v1.md)：原T全范围、原CM材料与pre，源测量而非新临床检验。
