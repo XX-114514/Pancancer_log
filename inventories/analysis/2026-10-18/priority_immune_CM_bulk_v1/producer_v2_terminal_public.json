@@ -1,0 +1,12 @@
+{
+  "status": "ALL304_FROZEN_SLOTS_COMPLETE_EXPLORATORY_NUMERIC_CORE_PASS_INDEPENDENT_REPLAY_PENDING",
+  "finished_utc": "2026-10-18T08:58:53.755741+00:00",
+  "producer_sha256": "ba595534167de68b5054a81ac97ea66a2d12ccfab0501f00ad925e733d23d9d3",
+  "plan_sha256": "5c45c9e48dcc7cafb6259364d4c72b876b159796412c46f3666ee99471525043",
+  "n_slots": 304,
+  "n_fitted": 154,
+  "output_bytes": 8615259,
+  "scientific_results_private": true,
+  "no_old_CM_models_changed": true,
+  "no_HNSCC30_family_refit": true
+}

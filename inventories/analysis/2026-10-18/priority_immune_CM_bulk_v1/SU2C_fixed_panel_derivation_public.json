@@ -1,0 +1,8 @@
+{
+  "source_full_RNA_sha256": "892f8687ed42eb017894aa9c99d4d4a04f5af52037f88709ee7913df36166160",
+  "selected_panel_sha256": "d3c464dd03b3444cfb894a8cbd3ab792a02034c014d38213d5ee3bc264ed996c",
+  "n_requested_genes": 34,
+  "n_source_RNA_samples": 152,
+  "all_requested_genes_present": true,
+  "selection": "Only frozen genes, before any new external effect; no effect filtering"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "ALL_FITTED_COX_PH_DIAGNOSTICS_AND_DECLARED_DESCRIPTIVE_CONTROLS_COMPLETE",
+  "finished_utc": "2026-10-18T09:08:45.615774+00:00",
+  "n_Cox_diagnostics": 146,
+  "n_descriptive_controls": 10,
+  "no_new_significance_family": true,
+  "primary_results_unchanged": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "ALL304_SLOTS_AND_ALL_FITTED_NUMERIC_DESIGNS_INDEPENDENTLY_REPLAYED",
+  "finished_utc": "2026-10-18T08:59:14.520310+00:00",
+  "n_slots": 304,
+  "n_fitted_replayed": 154,
+  "maximum_numeric_difference": 2.034734478684186e-06,
+  "full_family_BH_BY_pass": true,
+  "producer_terminal_sha256": "24eb6b6834f65829cda7ac8e203f40e7371c547eb5cb2cdcb24f86e4c23c377b",
+  "auditor_sha256": "668ac80b3c4e06e4d6ff21728b511817d177a666ea8b117ac9e4b21592c25aad",
+  "scope": "Independent numeric refit/likelihood/score/covariance and FDR. Original clinical source fields reviewed separately; not independent data collection or clinical replication.",
+  "no_scientific_promotion": true
+}

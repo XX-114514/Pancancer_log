@@ -1,0 +1,52 @@
+{
+  "n_full_author_patients": 393,
+  "n_RNA_source_columns": 152,
+  "n_author_RNA_Keep": 136,
+  "n_author_RNA_Flag_excluded": 16,
+  "exact_RNA_clinical_mapping": true,
+  "coverage": {
+    "regulatory_associated": {
+      "required": 5,
+      "measured_variable": 5,
+      "missing": []
+    },
+    "cytotoxic": {
+      "required": 6,
+      "measured_variable": 6,
+      "missing": []
+    },
+    "memory_associated": {
+      "required": 6,
+      "measured_variable": 6,
+      "missing": []
+    },
+    "GZMK_effector": {
+      "required": 4,
+      "measured_variable": 4,
+      "missing": []
+    },
+    "pan_T": {
+      "required": 3,
+      "measured_variable": 3,
+      "missing": []
+    },
+    "interferon": {
+      "required": 6,
+      "measured_variable": 6,
+      "missing": []
+    },
+    "proliferation": {
+      "required": 5,
+      "measured_variable": 5,
+      "missing": []
+    }
+  },
+  "merge_audit": {
+    "conflicting_patients_excluded": 0,
+    "eligible_samples": 136,
+    "unique_patients": 136
+  },
+  "expression_full_source_retained_local": true,
+  "server_analysis_uses_exact_frozen_gene_subset": true,
+  "no_assumption_393_RNA_patients": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "ALL312_PRIMARY_SLOTS_ACCEPTED_AND_ALL4_V2_FIGURES_ACTUALLY_VISUALLY_REVIEWED",
+  "observed_utc": "2026-10-18T09:15:06.982923+00:00",
+  "observed_utc_plus8": "2026-10-18T17:15:06.982923+08:00",
+  "n_primary_slots": 312,
+  "n_fitted_independently_replayed": 162,
+  "n_unavailable_retained": 150,
+  "n_descriptive_clinical_slots": 8,
+  "n_existing_descriptive_common_program_slots": 10,
+  "descriptive_controls_not_part_of_primary_independent_refit_claim": true,
+  "figures_actually_viewed": [
+    "TCGA_PFI_all33_cancers",
+    "TCGA_OS_all33_cancers",
+    "ICI_all_cohorts_complete_endpoints",
+    "Native_T_identity_and_panel_evidence"
+  ],
+  "v2_fixes": [
+    "Fixed y limits preserve all33 cancer row alignment across missing/estimable panels",
+    "Confidence-limit arrows explicitly show truncation",
+    "Increment panel range0.1to100 displays wide observed CI"
+  ],
+  "all312_result_tsv_sha256": "9a610df8820292b765d74d494fb9e952b15904bdcc632c2c3b60fc1a96c479f0",
+  "v1_v2_result_tsv_byte_identical": true,
+  "scientific_effect_tables_not_in_public_git": true,
+  "no_original_models_or_annotations_modified": true,
+  "no_HNSCC30_family_refit": true,
+  "patient_level_independence_across_research_sources_not_certified": true,
+  "remote_task_directory_bytes_before_final_delivery": 20392721,
+  "remote_task_output_budget_bytes": 100000000,
+  "environment": {
+    "python": "3.10.19",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.11.4",
+    "statsmodels": "0.14.6"
+  },
+  "script_sha256": {
+    "render_priority_immune_CM_bulk_v1.py": "c5a2d8f001ae64d6cca895626b38948b0983fd888317ebba4c3670f668042e6b",
+    "describe_SU2C_clinical_controls_v1.py": "9a69bcdde6fe18805fce11e35d6e57bf388475580e16035e126db5116ba93fd0"
+  },
+  "figures_png_sha256": {
+    "ICI_all_cohorts_complete_endpoints.png": "156f56fd6000b44d662e5e9e8b837df1772458811f8a390cd0e050a5276f407e",
+    "Native_T_identity_and_panel_evidence.png": "4de0e49fb5ea21b5f221be49064d24a739db2ccafa9b076b2911537ff83ef37b",
+    "TCGA_OS_all33_cancers.png": "56cd7483b369329571a0eb62d865efc77ac07d6cbbdd43434628b1246e45692c",
+    "TCGA_PFI_all33_cancers.png": "9d971a97c597628600231fb33356c7874569999ea5af23ccb3c0f89ca43aa743"
+  }
+}

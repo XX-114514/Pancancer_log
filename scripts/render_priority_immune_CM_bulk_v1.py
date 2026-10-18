@@ -28,15 +28,17 @@ def main(a):
   fig.canvas.draw();width,height=fig.get_size_inches()*25.4;assert abs(width-183)<1e-4 and height<=170.01
   for ext in ['pdf','svg','png']:fig.savefig(figdir/(key+'.'+ext),dpi=400)
   plt.close(fig);entries.append(dict(id=key,caption=caption))
- def forest(ax,sub,labels,title):
-  ax.axvline(1,color='#888888',lw=.7);ax.set_xscale('log');ax.set_xlim(.15,6.5)
+ def forest(ax,sub,labels,title,limits=(.15,6.5)):
+  ax.axvline(1,color='#888888',lw=.7);ax.set_xscale('log');ax.set_xlim(*limits)
   for i,(label,row) in enumerate(zip(labels,sub)):
    if row is not None and row.get('status')=='exploratory_model_numeric_audit_pass':
     effect,low,high=float(row['effect']),float(row['CI_low']),float(row['CI_high']);colour=PALETTE[AXES.index(row['axis'])]
-    ax.plot([max(.15,low),min(6.5,high)],[i,i],color=colour,lw=.8)
-    ax.plot(np.clip(effect,.15,6.5),i,'D',ms=3,color=colour,markerfacecolor=colour if row['BH_q']<.05 else 'white')
+    ax.plot([max(limits[0],low),min(limits[1],high)],[i,i],color=colour,lw=.8)
+    if low<limits[0]:ax.plot(limits[0],i,'<',ms=3,color=colour,clip_on=False)
+    if high>limits[1]:ax.plot(limits[1],i,'>',ms=3,color=colour,clip_on=False)
+    ax.plot(np.clip(effect,*limits),i,'D',ms=3,color=colour,markerfacecolor=colour if row['BH_q']<.05 else 'white')
    else:ax.text(1,i,'NA',va='center',ha='center',color='#999999',fontsize=5)
-  ax.set_yticks(range(len(labels)));ax.set_yticklabels(labels);ax.invert_yaxis();ax.set_title(title);ax.set_xlabel('Effect per SD (95% Wald CI)')
+  ax.set_yticks(range(len(labels)));ax.set_yticklabels(labels);ax.set_ylim(len(labels)-.5,-.5);ax.set_title(title);ax.set_xlabel('Effect per SD (95% Wald CI)')
  cancers=json.loads((a.run/'frozen_plan_before_effects.json').read_text())['TCGA_cancers']
  for endpoint in ['PFI','OS']:
   fig,axes=plt.subplots(1,4,figsize=(183/25.4,168/25.4));fig.subplots_adjust(left=.08,right=.98,bottom=.14,top=.88,wspace=.8)
@@ -54,9 +56,9 @@ def main(a):
   for c in ['IMvigor210','Riaz2017','Hugo2016','Jung2019','Rose2021']+(['SU2C_MARK'] if a.external else []):
    for axis in AXES:
     hit=sub[sub.cohort.eq(c)&sub.axis.eq(axis)];rows.append(hit.iloc[0].to_dict() if len(hit) else None);labels.append(c+' / '+('02' if axis==AXES[0] else '04'))
-  forest(ax,rows,labels,{'response':'Objective response (OR)','OS':'Overall survival (HR)','PFS':'Progression-free survival (HR)','response_increment':'Balance beyond both arms (OR)'}[ep])
- fig.text(.15,.035,'Blue: proxy02; orange: proxy04. Solid diamonds: own complete-family BH q<0.05.\nAll endpoints/gates kept. SU2C has separate frozen external families. Observational association, not treatment-specific prediction.',fontsize=5.5)
- save(fig,'ICI_all_cohorts_complete_endpoints','Patient-level fixed proxy associations, pan-T-adjusted. Objective response=CR/PR vs SD/PD; unknown remains missing. Distinct complete response, survival and increment families; SU2C external families separate. Archived/unknown sampling times do not support baseline prediction. No SD reclassification to improve effects.')
+  forest(ax,rows,labels,{'response':'Objective response (OR)','OS':'Overall survival (HR)','PFS':'Progression-free survival (HR)','response_increment':'Balance beyond both arms (OR)'}[ep],limits=(.1,100) if ep=='response_increment' else (.15,6.5))
+ fig.text(.15,.035,'Blue: proxy02; orange: proxy04. Solid diamonds: own complete-family BH q<0.05.\nAll gates kept; SU2C families separate. Arrows mark truncated CI. Balance panel has a wider scale. Association, not prediction.',fontsize=5.5)
+ save(fig,'ICI_all_cohorts_complete_endpoints','Patient-level fixed proxy associations, pan-T-adjusted. Objective response=CR/PR vs SD/PD; unknown remains missing. Distinct complete response, survival and increment families; SU2C external families separate. Arrows mark truncated confidence limits; the balance panel uses a wider scale. Archived/unknown sampling times do not support baseline prediction. No SD reclassification to improve effects.')
  native=pd.read_csv(a.run/'native_T_panel_expression_private.tsv',sep='\t');genes=list(dict.fromkeys(native.gene));nodes=list(dict.fromkeys(native.node))
  matrix=native.pivot_table(index='node',columns='gene',values='mean_CP10K',aggfunc='first').reindex(index=nodes,columns=genes);val=np.log1p(matrix.to_numpy());val=val/np.nanmax(val,axis=0)
  fig,ax=plt.subplots(figsize=(183/25.4,125/25.4));fig.subplots_adjust(left=.19,right=.88,bottom=.23,top=.91)

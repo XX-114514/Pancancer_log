@@ -1,3 +1,5 @@
+[优先免疫CM临床探索](20261018_priority_immune_CM_bulk_v1.md)：全312槽和162设计独立数值接受，4幅v2图全部实际查看；科学表仅授权工作区。
+
 [全部原候选外部精确RNA路线](20261018_NSCLC_candidate_external_exact_RNA_preflight_v1.md)：全61来源映射/功能组合资格元数据独立通过，真实RNA抽取与模型仍待。
 
 [原生候选机制资格与独立靶RNA后续](20261018_NSCLC_native_interface_mechanistic_followup_v1.md)：原范围保留，完整独立数值复算已接受，实际解释范围另行记录。
