@@ -1,4 +1,10 @@
-[全原候选外部真实RNA执行](20261018_NSCLC_candidate_external_exact_RNA_v1.md)：全冻结池计数提取已启动，独立原缓存/96 raw池审核等待同一生产终态。
+[原候选全外部来源推断](20261018_NSCLC_candidate_external_associations_v1.md)：完整22模型/全随机流已接受，全13主森林图实际查看；附全节点组成诊断。
+
+[原候选来源模型输入](20261018_NSCLC_candidate_external_association_inputs_v1.md)：全部同文库case、资格和分母已独立接受。
+
+[原候选去LR外部分数](20261018_NSCLC_candidate_external_original_masked_scores_v1.md)：完整原assay/双公式核对，不改变主要评分定义。
+
+[全原候选外部真实RNA执行](20261018_NSCLC_candidate_external_exact_RNA_v1.md)：全冻结池计数已完成，全部轴/52缓存/固定96 raw池审核接受。
 
 [优先免疫CM临床探索](20261018_priority_immune_CM_bulk_v1.md)：全312槽和162设计独立数值接受，4幅v2图全部实际查看；科学表仅授权工作区。
 

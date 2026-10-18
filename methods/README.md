@@ -1,3 +1,9 @@
+[外部来源家族真实推断](../runs/20261018_NSCLC_candidate_external_associations_v1.md)：输入已接受，全部固定随机流与独立结果重放，原两家族保留。
+
+[原候选完整外部来源模型](NSCLC-candidate-external-source-association-v1.md)：效果前冻结全计划、完整控制和家族，重新组装本问题所需配对。
+
+[原去LR外部固定分数](NSCLC-candidate-external-original-masked-scores-v1.md)：原定义不改，原assay与直接/减贡献/增广投影数值核对。
+
 [全原候选外部精确RNA](NSCLC-candidate-external-exact-RNA-v1.md)：原始细胞全RNA分母、同细胞受体、全旧缓存及固定96 raw池复算。
 
 [优先免疫CM的TCGA与ICI功能代理探索](priority-immune-CM-TCGA-ICI-exploration-20261018.md)：固定两轴/312主要槽，原模型不改；临床代理与精确模块分开。
@@ -38,3 +44,5 @@
 - [Project_v3 统一工作流](project-v3-unified-workflow.md)
 
 方法发生实质变化时，应同时创建 Codex log；如果变化涉及方案取舍，再新增 ADR。
+
+- [原外部候选结果后全冻结节点组成诊断](NSCLC-candidate-external-node-composition-v1.md)
