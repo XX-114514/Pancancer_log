@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-18T08:58:06.136526+00:00",
+  "source": "Ravi et al Nature Genetics2023 SU2C-MARK; Zenodo11179623 v3",
+  "source_design": "Pretreatment FFPE tumor from anti-PD(L)1-treated advanced NSCLC; published393 total is not RNA sample count",
+  "acquisition": "Only public harmonized TPM GCT and author clinical XLSX/TXT ZIP members; HTTP Range preserves whole original archive untouched; per-member CRC/SHA, not whole archive checksum",
+  "axes_identical_to_original_frozen_plan": true,
+  "score_panels_or_thresholds_not_changed": true,
+  "predeclared_families": {
+    "response": 2,
+    "survival_OS_PFS": 4,
+    "response_increment": 2
+  },
+  "clinical": "Exact sample/patient/pretreatment and response/time/event mapping; mapping or timing ambiguity stays unavailable. Repeat samples average within patient. Source counts and event codes verified before effects.",
+  "model": "Same minimal panT-adjusted logistic/Cox and eligibility gates, separate fresh external families. Age/sex/histology/liver/line additional descriptive controls only when measurable and identifiable; no tuning.",
+  "validation_boundary": "Bulk functional proxy association only, not exact subcluster/CM recovery, causal communication or independent clinical predictor.",
+  "overlap_review": "Study/paper/centre/trial patient history checked against prior sources; no assumption that393 all have RNA or constitute new patients.",
+  "raw_controlled_fallback": "phs002822.v1.p1: prepare request scope for authorized institutional PI/IRB if raw files become necessary; do not fabricate identity or submit contact messages.",
+  "download_cap_bytes": 52428800,
+  "no_new_outcomes_read_yet": true
+}

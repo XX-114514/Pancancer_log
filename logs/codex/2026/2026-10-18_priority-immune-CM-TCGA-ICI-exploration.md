@@ -30,3 +30,9 @@
 实查Hugo有27pre/1on，Riaz51pre/58on；新readers将排除on、保留SD为客观应答NR（不沿旧reader只保留PD的定义），未知删失保留缺失。IMvigor347均Atezolizumab，RESPONDER49缺失不填。Rose有io.response但时点需证明；T/N/M字段不当AJCC整体分期。
 
 实际data4组配额按文件系统精确匹配，余量约501.9GB（十进制），本轮仅读取现有矩阵，采用100MB输出上限+1GB额外余量、500GB留空；不复写740MB源表达或写大中间矩阵。首次元数据shell包装引号SyntaxError在执行前，改为本地stdin脚本后完整metadata审计成功，无科学数据改变。
+
+## 2026-10-18T08:58:34.439754+00:00 全范围生产与肺癌补充
+
+2039bcc计划已普通push。v1实际08:55:38启动，08:56:05因Rose表达列部分无临床key在断言处停止；前三来源阶段已执行但未生成完整效果终态，未读取选择效果。修复只按精确交集对接并明确计未映射行，scope/基因/终点/门槛不变；v2 08:57:49实际启动并绑定独立304槽数值重拟/直接Efron与logistic公式、完整BH/BY审核。v1目录保留。
+
+针对肺癌27例既有bulk规模限制，已检索SU2C-MARK原NatureGenetics2023、dbGaP phs002822与作者Zenodo11179623 v3。原393是全WES/RNA队列，不能当可用RNA患者数。公开ZIP1.18GB已只取22.7KB目录核实，所需TPM约44.6MB、原临床XLSX77.5KB、补充TXT23.8KB。冻结新外部2应答/4生存/2增量槽及原固定panel/门槛后按HTTP Range取三成员；CRC及自算SHA验各成员，不声称验证全ZIP MD5。全部加工/获取纳入100MB本轮小输出预算，不下载受控raw，也不向机构发邮件或代填未知PI/IRB。

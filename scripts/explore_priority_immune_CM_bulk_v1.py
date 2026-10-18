@@ -76,7 +76,8 @@ def load_ici(base,name,h):
   expr=pd.read_csv(root/'rose2021_urothelial/GSE176307_salmon_tpm.tsv.gz',sep='\t',index_col=0);expr=expr[~expr.index.duplicated()];expr=np.log2(expr.clip(lower=0)+1)
   key=pd.read_csv(root/'rose2021_urothelial/sample_key.csv.gz');assert key.shape[1]==2;key.columns=['sample_id','rs_id']
   c=h['parse_series_matrix'](root/'rose2021_urothelial/series_matrix.txt.gz');c['sample_id']=c.title.str.replace('Patient sample ','',regex=False)
-  c=c.merge(key,on='sample_id',validate='one_to_one').set_index('rs_id');c=c.reindex(expr.columns)
+  c=c.merge(key,on='sample_id',validate='one_to_one').set_index('rs_id')
+  common=expr.columns.intersection(c.index);unmapped=len(expr.columns)-len(common);expr=expr[common];c=c.loc[common]
   assert c.sample_id.notna().all();cc=pd.DataFrame(index=c.index);pt=c.sample_id
   cc['response']=c['io.response'].str.upper().map({'CR':1,'PR':1,'SD':0,'PD':0})
   cc['OS']=numeric(c['overall survival']);cc['OS_event']=binary(c.alive,{'no':1,'yes':0})
@@ -86,6 +87,7 @@ def load_ici(base,name,h):
   if col not in cc:cc[col]=np.nan
  expr,c,meta=collapse(expr,cc,pt)
  meta.update(cohort=name,time_status=time_status,age_sex_adjustment_available=False)
+ if name=='Rose2021':meta['expression_samples_without_exact_clinical_key_excluded']=unmapped
  return expr,c,meta
 
 def load_tcga(base,genes):
