@@ -1,0 +1,20 @@
+{
+  "status": "ALL3_V2_FIGURES_ACTUALLY_VISUALLY_REVIEWED",
+  "observed_utc": "2026-10-18T11:48:37.172573+00:00",
+  "observed_utc_plus8": "2026-10-18T19:48:37.172573+08:00",
+  "n_figures": 3,
+  "figure_ids": [
+    "All_resource_measurement_funnel",
+    "All3_complete_tissue_R_C_maps",
+    "Named_complete_receptor_diagnostics"
+  ],
+  "v1_v2_all_numeric_tables_identical_after_gzip_metadata_removed": true,
+  "correction": "Identical complete source limits for upper and lower maps",
+  "counts_are_descriptive_opportunities_not_effects": true,
+  "no_new_P_or_FDR": true,
+  "png_sha256": {
+    "Named_complete_receptor_diagnostics.png": "6606706163711adbffa116307fdbd15e77a922dc6ee519a09b9b8a4ed6d65ff4",
+    "All3_complete_tissue_R_C_maps.png": "34ccccbfc5793b0bef23362cc97c071016e4bf8a31fed4c94317541034353965",
+    "All_resource_measurement_funnel.png": "6cc7059dc1088c7ef7e9c09bac356cc4b838aba32c79fa2ee2dca354b85b5b01"
+  }
+}

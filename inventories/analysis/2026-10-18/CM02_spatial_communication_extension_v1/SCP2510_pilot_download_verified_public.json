@@ -1,0 +1,12 @@
+{
+  "status": "FULL_SELECTED_PUBLIC_MERFISH_TRANSCRIPT_FILE_OFFICIAL_MD5_VERIFIED",
+  "finished_utc": "2026-10-18T11:46:25.895095+00:00",
+  "url": "https://zenodo.org/records/11198494/files/tx_merfish_Pt43.csv?download=1",
+  "source_record": "https://zenodo.org/records/11198494",
+  "bytes": 263338496,
+  "md5": "e7e82a1fd863df190ef271441b2c48bd",
+  "sha256": "90ebf3e2081cfdf10b5eeac99a0135c37e0b85aa983d8b9d0d1de8b05caffdd0",
+  "selection": "Smallest of all4 published patient transcript CSVs before any expression or spatial effects",
+  "qualified_for_biological_analysis": false,
+  "reason": "Complete numeric/gene/segmentation/geometry qualification remains separate"
+}

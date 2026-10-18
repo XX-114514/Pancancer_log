@@ -1,0 +1,47 @@
+{
+  "status": "OFFICIAL_XENIUM_PRIME5K_LUNG_PANEL_SCHEMA_AND_FIXED_MEASUREMENT_CHECK_COMPLETE_NO_CELL_MATRIX_DOWNLOADED",
+  "observed_utc": "2026-10-18T11:54:16.692547+00:00",
+  "source_dataset": "https://www.10xgenomics.com/datasets/xenium-human-lung-cancer-post-xenium-technote",
+  "panel_url": "https://cf.10xgenomics.com/samples/xenium/3.0.0/Xenium_Prime_Human_Lung_Cancer_FFPE/Xenium_Prime_Human_Lung_Cancer_FFPE_gene_panel.json",
+  "panel_bytes": 4478940,
+  "panel_sha256": "a507dedd8ae03e6ef8f858c58b6149dbf43b80b0fcc841d32c85878e80167a5d",
+  "descriptors": {
+    "gene": 5001,
+    "negative_control": 40,
+    "deprecated_codeword": 3291,
+    "genomic_control": 21
+  },
+  "unique_biological_gene_targets": 5001,
+  "fixed_panels_missing": {
+    "regulatory_associated": [],
+    "cytotoxic": [
+      "CTSW",
+      "NKG7"
+    ],
+    "memory_associated": [
+      "IL7R",
+      "LTB"
+    ],
+    "GZMK_effector": [
+      "CCL5",
+      "CTSW"
+    ],
+    "pan_T": [
+      "CD3D",
+      "TRAC"
+    ],
+    "interferon": [
+      "ISG15"
+    ],
+    "proliferation": []
+  },
+  "HLAII_missing": [
+    "CD74",
+    "HLA-DRA"
+  ],
+  "matrix_HEAD_bytes": 103878075,
+  "cells_csv_HEAD_bytes": 16632012,
+  "matrix_and_cells_not_downloaded": true,
+  "donor_count_reported_by_official_page": 1,
+  "complete_frozen_CM02_not_measurable": true
+}

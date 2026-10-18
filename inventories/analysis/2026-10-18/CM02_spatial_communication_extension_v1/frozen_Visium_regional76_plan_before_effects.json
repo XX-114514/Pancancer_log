@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-18T11:53:39.204372+00:00",
+  "scope": "GSE273952 all19 accepted ccRCC Visium libraries; fixed CM02 mixed-region programme and neighboring programme balance, not precise cells or previous NAMPT/DDIT3 question",
+  "n_slots": 76,
+  "contrasts": [
+    "same_spot_R_C",
+    "neighbor_R_C_given_own_R"
+  ],
+  "models": [
+    "quality_T_IFN_cycle_regions_xy",
+    "plus_incomplete_legacy_composition"
+  ],
+  "P_values": false,
+  "patient_independence_certified": false,
+  "source_gene_requirement": "All34 original genes unique native measured; each used panel all genes variable within eligible library",
+  "scores": "Mean average-tie percentile per gene of source-native CP10K across nonfolded, connected spots within each library; equal fixed gene weights",
+  "controls": "pan_T, IFN, proliferation, log full-RNA counts, log detected full-RNA genes, original author TLS_primary/tumor_zone categorical variables, xy/x2/y2/xy spatial trend; sensitivity adds five old partial fractions with Epithelial reference; neighbor contrast additionally controls own R",
+  "neighbors": "Original independently accepted six-neighbor hex geometry, no parameter tuning",
+  "gates": {
+    "min_spots": 200,
+    "min_residual_df": 100,
+    "max_condition": 100000000.0,
+    "all_required_design_full_rank": true
+  },
+  "missing": "All failed slots retained NA; no imputation of genes or clinical labels, no rank-driven nuisance removal",
+  "summary": "All19 private rows per descriptor, medians/IQR/direction counts/leave-one-library median range; no inferred patient CI or treatment claim",
+  "output_budget": 67108864,
+  "old18_spatial_and312_clinical_families_reopened": false
+}

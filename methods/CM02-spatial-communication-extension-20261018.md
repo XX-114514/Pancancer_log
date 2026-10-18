@@ -23,3 +23,13 @@
 新来源先下载少量公开处理矩阵和元数据、核作者Git blob/文件SHA；不下载多GB原图或未知大小的完整h5ad。无直接公开数据的Xenium TLS研究登记为需作者请求；未发送邮件，不编造PI/伦理。若完整34基因或几何/病例不足，则按区室程序、临床代理或不可用分层交付，不通过放宽签名救资格。
 
 研究来源：[肺癌GeoMx原研究](https://www.nature.com/articles/s41588-025-02351-7)、[作者仓库](https://github.com/tznaung/NSCLC_SpatialOmics)、[需请求的Xenium TLS研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC12870244/)。本工作不构成直接通讯验证或治疗特异机制确认。
+
+## 全转录组混合区域的独立描述问题
+
+资格前读取已有GSE273952计数/基因/几何接受凭证，确认原固定34基因全部可唯一测量，才冻结[新76槽](../inventories/analysis/2026-10-18/CM02_spatial_communication_extension_v1/frozen_Visium_regional76_plan_before_effects.json)。全部19个ccRCC Visium文库、71,398原spot；作者folded区域与无邻居点按既有规则排除。空间图保持已独立接受的六邻居图。
+
+本问题研究固定调节相关/细胞毒多基因读数在同一混合区域和相邻区域的共同分布，不复做原NAMPT/DDIT3问题或18槽T细胞邻近检验。各基因native CP10K在文库内取平均秩百分位，再按原面板等权平均；缺测或面板任一基因不变，保持NA。
+
+全部76位置为19文库×2关系（同spot两臂、邻居R与本spot C且控制本spot R）×2控制设计。基础设计固定pan-T、IFN、增殖、完整RNA量/检出基因数、作者TLS/肿瘤区域及xy二阶趋势；敏感性再加五个旧大类比例，Epithelial参照。旧比例缺内皮/成纤维等，不称完整TME组成校正。全必要设计满秩、条件数<1e8、至少200spot/100残差自由度；不可估计保留，不自动删协变量。
+
+只计算各文库部分Spearman、全范围中位/IQR/方向与留一文库范围，不给P、患者CI或治疗效应。T背景条件化后的负向相关不能直接称细胞排斥；同spot/相邻spot共同RNA也不是精确细胞接触或通讯。所有旧模型只读，data1仅仅读已有接受输入，新结果写data4任务目录。独立复读原34基因、不同秩/邻域求和及最小二乘实现接受后才解释。

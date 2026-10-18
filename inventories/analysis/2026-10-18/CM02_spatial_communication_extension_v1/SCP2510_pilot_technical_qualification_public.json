@@ -1,0 +1,90 @@
+{
+  "status": "FULL_SELECTED_PUBLIC_TRANSCRIPT_FILE_QUALIFIED_AS_TECHNICAL_FRAGMENT_INPUT_ONLY",
+  "finished_utc": "2026-10-18T11:48:24.993211+00:00",
+  "source_record": "https://zenodo.org/records/11198494",
+  "source_file": "tx_merfish_Pt43.csv",
+  "source_bytes": 263338496,
+  "source_md5": "e7e82a1fd863df190ef271441b2c48bd",
+  "source_sha256": "90ebf3e2081cfdf10b5eeac99a0135c37e0b85aa983d8b9d0d1de8b05caffdd0",
+  "all_transcript_rows": 6044353,
+  "all_observed_gene_labels": 550,
+  "n_FOV_codes": 2500,
+  "nonfinite_coordinate_rows": 0,
+  "excluded_or_unverified_assignment_code_rows": 1854841,
+  "retained_transcript_rows": 4189512,
+  "conservative_FOV_Baysor_fragments": 251540,
+  "observed_assigned_genes": 550,
+  "Baysor_labels_observed_in_multiple_FOVs": 13538,
+  "Cellpose_labels_observed_in_multiple_FOVs": 27729,
+  "complete_fixed_CM02_14_genes_observed": false,
+  "CM02_genes_not_observed_not_proven_unmeasured": [
+    "CTSW",
+    "GZMB",
+    "NKG7",
+    "TNFRSF18"
+  ],
+  "HLAII_group_genes_not_observed": [],
+  "coverage": {
+    "regulatory_associated": {
+      "required": 5,
+      "observed_in_raw": 4,
+      "not_observed_measurement_status_uncertain": [
+        "TNFRSF18"
+      ]
+    },
+    "cytotoxic": {
+      "required": 6,
+      "observed_in_raw": 3,
+      "not_observed_measurement_status_uncertain": [
+        "CTSW",
+        "GZMB",
+        "NKG7"
+      ]
+    },
+    "memory_associated": {
+      "required": 6,
+      "observed_in_raw": 5,
+      "not_observed_measurement_status_uncertain": [
+        "LTB"
+      ]
+    },
+    "GZMK_effector": {
+      "required": 4,
+      "observed_in_raw": 3,
+      "not_observed_measurement_status_uncertain": [
+        "CTSW"
+      ]
+    },
+    "pan_T": {
+      "required": 3,
+      "observed_in_raw": 3,
+      "not_observed_measurement_status_uncertain": []
+    },
+    "interferon": {
+      "required": 6,
+      "observed_in_raw": 4,
+      "not_observed_measurement_status_uncertain": [
+        "IFIT1",
+        "IFIT3"
+      ]
+    },
+    "proliferation": {
+      "required": 5,
+      "observed_in_raw": 4,
+      "not_observed_measurement_status_uncertain": [
+        "TYMS"
+      ]
+    }
+  },
+  "spatial_or_clinical_effects_not_tested": true,
+  "independent_patient_validation": false,
+  "limits": [
+    "Only smallest-file technical pilot, not a four-patient analysis or representative effect selection",
+    "Zero/unassigned-code meaning and cross-FOV segmentation identity require author verification",
+    "Conservative FOV+label keys may split genuine cells; no fragment is counted as independent patient or validated cell identity",
+    "Coordinate means are transcript centroids, not nuclear/boundary cell centroids or contact",
+    "Unobserved genes may be unassayed or below capture; no zero-filled missing genes",
+    "Published pre-treatment cohort design does not by itself provide the four MERFISH cases matched clinical outcomes"
+  ],
+  "code_sha256": "7f7cb870908a86336fe135ebe09037e086f09cfd3884395775ea69cfd79af168"
+}

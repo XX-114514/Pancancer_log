@@ -1,0 +1,15 @@
+{
+  "status": "PILOT_ALL_OBSERVED_GENE_LABEL_TYPES_SEPARATED",
+  "observed_utc": "2026-10-18T11:54:16.697264+00:00",
+  "source_record": "https://zenodo.org/records/11198494",
+  "source_file": "tx_merfish_Pt43.csv",
+  "all_observed_gene_labels": 550,
+  "blank_control_labels": 71,
+  "other_observed_gene_labels": 479,
+  "all_control_labels_prefix": "Blank-",
+  "negative_controls_not_biological_RNA": true,
+  "legacy_qualification_matrix_keeps_controls_explicitly": true,
+  "fragment_total_in_initial_output_includes_blanks_not_biological_library_size": true,
+  "full_fixed_CM02_not_scored": true,
+  "source_file_and_original_qualification_unchanged": true
+}
