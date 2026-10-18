@@ -1,0 +1,24 @@
+{
+  "status": "REPORT_AND_REQUEST_PACKET_WRITTEN_LOCAL_LINKS_CHECKED",
+  "created_utc": "2026-10-18T12:09:04.600969+00:00",
+  "reports": [
+    {
+      "name": "CM02_SPATIAL_VALIDATION_REPORT_CN.html",
+      "sha256": "c8d8933a4b8bbd5ceced600972a54136f3aa18a7232967464a099bc062de4e52",
+      "bytes": 10620
+    },
+    {
+      "name": "DATA_REQUIREMENTS_AND_REQUEST_PACKET_CN.html",
+      "sha256": "244673072f4887b27e339b36d3e6db6d16391f31361d947f50ea38b16bdf9faf",
+      "bytes": 3481
+    }
+  ],
+  "public_source_actual_full_downloads": {
+    "SCP2510_Pt43_bytes": 263338496,
+    "author_four_csv_bytes": 9408574,
+    "Xenium_Prime5K_panel_bytes": 4478940
+  },
+  "new_AC": 0,
+  "raw_or_patient_tables_in_public_git": false,
+  "final_visual_receipt_sha256": "837dba4ef0f0d220b2100ccdb5de2be92847bdba63c34b0241f91a14b7dc31ca"
+}

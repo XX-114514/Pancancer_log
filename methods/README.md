@@ -48,6 +48,8 @@
 
 当前入口：
 
+- [CM02空间分子测量与新来源资格](CM02-spatial-communication-extension-20261018.md)：全资源、完整受体和区域描述分开，原始RNA独立复算；测量桥与直接机制边界。
+
 - [10月14日之后的任务进展与下一阶段](project-progress-and-next-phase-20261016.md)：墨尔本时间线、2026年10月CM程序与空间闭环、临床及外部功能验证依赖。
 - [10月12日之后的进展与下一阶段](project-progress-and-next-phase-20261014.md)：按角色和事件时间对照三条主线、依赖与停止条件。
 - [CM定义与免疫来源恢复证据合同](CM-definition-and-recovery-v1.md)：固定成员/权重、情境重塑与免疫骨架；区分投影、生态和功能机制。

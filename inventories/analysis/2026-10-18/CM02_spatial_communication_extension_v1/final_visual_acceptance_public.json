@@ -1,0 +1,53 @@
+{
+  "status": "ALL8_FINAL_FIGURES_ACTUALLY_VIEWED_AND_ACCEPTED",
+  "checked_utc": "2026-10-18T12:09:04.584667+00:00",
+  "all_19_regional_libraries_and_all3_merfish_inputs_shown": true,
+  "molecular_v2_to_v3_original_83232_rows_and_fields_identical": true,
+  "regional_v1_v2_summary_bytes_identical": true,
+  "final_figures": [
+    {
+      "logical_path": "visual_delivery_v3/Named_complete_receptor_diagnostics.png",
+      "bytes": 194008,
+      "sha256": "8bc3842836ddd61ec6be931d2069dd8c528619df894dc37a7a71e94e63f0ff0e"
+    },
+    {
+      "logical_path": "visual_delivery_v3/All3_complete_tissue_R_C_maps.png",
+      "bytes": 1160254,
+      "sha256": "34ccccbfc5793b0bef23362cc97c071016e4bf8a31fed4c94317541034353965"
+    },
+    {
+      "logical_path": "visual_delivery_v3/All_resource_measurement_funnel.png",
+      "bytes": 327124,
+      "sha256": "4401dbdc83f1d261979d22e0dbedef2e9a43afb710306dbd0490c15076ea285c"
+    },
+    {
+      "logical_path": "regional_visual_v2/All76_regional_conditional_RNA_descriptors.png",
+      "bytes": 217141,
+      "sha256": "af1b2080d7dfc270a1ac9fff27339ac91bd775680cc1d7dbf1a9f5b59d9fde25"
+    },
+    {
+      "logical_path": "regional_visual_v2/All19_libraries_fixed_panel_maps_page4.png",
+      "bytes": 3018774,
+      "sha256": "e55ef7ac222f3ad6f972c194e6e6cf52bcf36c325b2d42934357905748bcb9bd"
+    },
+    {
+      "logical_path": "regional_visual_v2/All19_libraries_fixed_panel_maps_page1.png",
+      "bytes": 5303089,
+      "sha256": "65a340cf4dfcb923757f697461eb1bb0c264bc1cf5ead560c9dbd4c8cd3d5b7e"
+    },
+    {
+      "logical_path": "regional_visual_v2/All19_libraries_fixed_panel_maps_page3.png",
+      "bytes": 4420943,
+      "sha256": "a47c102ba2b78135b7380c20f9bfefd124f061448c7acaf7ca5b582dd1f08cf5"
+    },
+    {
+      "logical_path": "regional_visual_v2/All19_libraries_fixed_panel_maps_page2.png",
+      "bytes": 5552144,
+      "sha256": "446dc7244973d45f1bb7363e7e64661d8a432ca18237dd4fb40f7b93538a5bac"
+    }
+  ],
+  "scientific_effects_not_published_to_git": true,
+  "no_additional_P_FDR_or_AC": true,
+  "no_author_messages_sent": true,
+  "original_objects_unchanged": true
+}

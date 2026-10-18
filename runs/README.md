@@ -73,3 +73,7 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 空间状态程序最新：[全来源代理校准终态](20261016_state_spatial_proxy_calibration_v1.md)；[GSE273952全转录组冻结投射](20261016_GSE273952_frozen_programme_spatial_v1.md)。
+
+## 2026-10-18 CM02空间通讯测量与区域共现
+
+[完整资源/区域描述与公共数据资格](20261018_CM02_spatial_communication_extension_v1.md)：83,232分子位置和76区域位置全量独立接受，完整3技术输入/19文库共8图实际检查；新公共小文件已资格，未把分割片段当细胞或AC，原统计家族不重开。
