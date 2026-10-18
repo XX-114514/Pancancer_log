@@ -1,0 +1,16 @@
+{
+  "recorded_UTC": "2026-10-18T12:18:08.557710+00:00",
+  "source_sha256": {
+    "freeze_immune_RNA_MCP_postfit_contract_v1.py": "1334288219660652153c4751bee7ddaf66b708eff89c0acc473ef14f220c7d4e",
+    "project_immune_RNA_MCP_official_family_v1.R": "f7738b571a238b5fa34ce34aa370081def84da159fa70b6e26397a87962df2fd",
+    "project_immune_RNA_MCP_official_family_v1.py": "fcb603ababa242460b0a780718807a5232d907f13a1c257d015a6c85483014e9",
+    "audit_immune_RNA_MCP_frozen_projection_v1.py": "297fe7bb6b3fc136bf9d453ad5f91f303f5c6c2d27b31539803d3cae903688b1"
+  },
+  "contract_plan_sha256": "1172d887cffb7c3b0c28a21583154fbe3718a1f13d79edb85500343ead5e2b09",
+  "contract_terminal_sha256": "04a862f1126bae8290c20f6f6f7a79fbbba6f571a6407abb6254e2767879cffa",
+  "status": "contract_frozen_first_fit_exit0_second_running_projection_and_acceptance_not_executed",
+  "planned_projection_slots": 33,
+  "planned_primary_source_association_slots": 6,
+  "learned_values_read": false,
+  "prior_cloud_commit": "39eefe077de35b8b7ec10fc63b70c9b69bf9dfaa"
+}
