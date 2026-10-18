@@ -1,3 +1,5 @@
+[固定交叉谱系RNA与状态诊断](immune-RNA-MCP-fixed-lineage-and-state-diagnostic-20261018.md)：原始固定标记、全来源、无身份变更和额外P。
+
 [去内生接收程序与覆盖](immune-RNA-MCP-disjoint-receiver-preflight-20261018.md)及[固定方向性关联家族](immune-RNA-MCP-directional-association-family-20261018.md)：全端点、固定程序、原生RNA与推断分母。
 
 [原节点组成拆解](immune-RNA-MCP-original-node-decomposition-20261018.md)及[自动配体资格](immune-RNA-MCP-automatic-ligand-qualification-20261018.md)：发现基线固定、完整家族与非手选候选生成。
@@ -68,3 +70,5 @@
 方法发生实质变化时，应同时创建 Codex log；如果变化涉及方案取舍，再新增 ADR。
 
 - [原外部候选结果后全冻结节点组成诊断](NSCLC-candidate-external-node-composition-v1.md)
+
+- [当前RNA MCP头颈癌八项内部临床家族](immune-RNA-MCP-HNSCC-clinical-family-20261019.md)：精确已审患者/明确基线，连续病理结局，完整背景控制和全家族独立审核。
