@@ -59,3 +59,5 @@ New source requests remain qualified before outcomes/space: full panel and speci
 中途一次多文件补丁在method上下文不匹配，原子校验失败，未改任何文件；按实际上下文重试后成功。该故障只在文档，不影响科学对象。270293b8d04d5924117255eb4e2a76e452efd42e已普通push且独立远端核验，未改其他聊天的工作。最终仓库验证、隐私diff和新普通push另记。
 
 最终仓库验证0错误/1条既存路径扫描警告；新diff未包含内部主机/凭据/患者表或科学效应表。文档diff检查检出daily尾部多空行，已去掉，未改历史正文。服务器独立SHA复核两个HTML及两收据全部与本地一致；累计任务目录110,312,254字节，包含保留各版图。最终只显式stage本任务路径及共享文件的本任务增量，其他聊天未跟踪脚本和旧日志保留。建议提交`docs: deliver accepted CM02 spatial validation and public source qualification`；普通push和独立云SHA为最后同步检查。
+
+81ceccea6d34c19ad05749a0eaae35370eef8e56内容提交已普通push成功，独立`ls-remote`核远端main完全一致；[发布收据](../../../inventories/analysis/2026-10-18/CM02_spatial_communication_extension_v1/publication_receipt_81cecce.json)。并发共享文件只使用本任务区块构造index补丁，其余改动均留工作区；无force或历史改写。本收据提交不追写自身SHA，最后云同步状态由实际远端核验和用户回复给出。
