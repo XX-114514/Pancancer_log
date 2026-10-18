@@ -1,0 +1,258 @@
+{
+  "status": "ALL4_SMALL_AUTHOR_PUBLIC_INPUTS_GIT_BLOB_VERIFIED_AND_FIXED_PANEL_COVERAGE_CHECKED",
+  "finished_utc": "2026-10-18T11:34:46.107500+00:00",
+  "source_study": "https://www.nature.com/articles/s41588-025-02351-7",
+  "source_repository": "https://github.com/tznaung/NSCLC_SpatialOmics",
+  "source_tree_revision": "7cb78392967696fc5a6ec44d05e687a11052f94f",
+  "total_bytes": 9408574,
+  "files": [
+    {
+      "file": "CK_av_3B.csv",
+      "url": "https://raw.githubusercontent.com/tznaung/NSCLC_SpatialOmics/7cb78392967696fc5a6ec44d05e687a11052f94f/data/CK_av_3B.csv",
+      "bytes": 5008370,
+      "git_blob_sha1": "94dd626cb5ed9aa0c54ecbcaa1b6cbf5c4e6f211",
+      "sha256": "5899e8e7f057f5067ba75f1417debcde6e478821f822f419370166d8845a9ac3",
+      "data_rows": 37,
+      "columns": 10133,
+      "orientation": "genes_in_columns",
+      "coverage": {
+        "regulatory_associated": {
+          "required": 5,
+          "unique_measured": 2,
+          "missing": [
+            "CTLA4",
+            "FOXP3",
+            "IL2RA"
+          ]
+        },
+        "cytotoxic": {
+          "required": 6,
+          "unique_measured": 2,
+          "missing": [
+            "CD8B",
+            "GZMB",
+            "NKG7",
+            "PRF1"
+          ]
+        },
+        "memory_associated": {
+          "required": 6,
+          "unique_measured": 1,
+          "missing": [
+            "CCR7",
+            "IL7R",
+            "LEF1",
+            "SELL",
+            "TCF7"
+          ]
+        },
+        "GZMK_effector": {
+          "required": 4,
+          "unique_measured": 2,
+          "missing": [
+            "GZMA",
+            "GZMK"
+          ]
+        },
+        "pan_T": {
+          "required": 3,
+          "unique_measured": 0,
+          "missing": [
+            "CD3D",
+            "CD3E",
+            "TRAC"
+          ]
+        },
+        "interferon": {
+          "required": 6,
+          "unique_measured": 6,
+          "missing": []
+        },
+        "proliferation": {
+          "required": 5,
+          "unique_measured": 5,
+          "missing": []
+        }
+      },
+      "no_effect_analysis": true,
+      "cell_coordinates_not_inherited_from_compartment_average": true
+    },
+    {
+      "file": "Stroma_av_3B.csv",
+      "url": "https://raw.githubusercontent.com/tznaung/NSCLC_SpatialOmics/7cb78392967696fc5a6ec44d05e687a11052f94f/data/Stroma_av_3B.csv",
+      "bytes": 3132965,
+      "git_blob_sha1": "74e4f604b48eaa99e68d450eb6d0776d17737a58",
+      "sha256": "1c77be15101a60db7121ff241cabca5ed646fdce69fa12cacfff1e4588cb74d3",
+      "data_rows": 37,
+      "columns": 6094,
+      "orientation": "genes_in_columns",
+      "coverage": {
+        "regulatory_associated": {
+          "required": 5,
+          "unique_measured": 1,
+          "missing": [
+            "CTLA4",
+            "FOXP3",
+            "IKZF2",
+            "TNFRSF18"
+          ]
+        },
+        "cytotoxic": {
+          "required": 6,
+          "unique_measured": 4,
+          "missing": [
+            "CD8B",
+            "PRF1"
+          ]
+        },
+        "memory_associated": {
+          "required": 6,
+          "unique_measured": 3,
+          "missing": [
+            "LEF1",
+            "SELL",
+            "TCF7"
+          ]
+        },
+        "GZMK_effector": {
+          "required": 4,
+          "unique_measured": 2,
+          "missing": [
+            "GZMA",
+            "GZMK"
+          ]
+        },
+        "pan_T": {
+          "required": 3,
+          "unique_measured": 1,
+          "missing": [
+            "CD3D",
+            "CD3E"
+          ]
+        },
+        "interferon": {
+          "required": 6,
+          "unique_measured": 5,
+          "missing": [
+            "IFIT1"
+          ]
+        },
+        "proliferation": {
+          "required": 5,
+          "unique_measured": 3,
+          "missing": [
+            "MKI67",
+            "TYMS"
+          ]
+        }
+      },
+      "no_effect_analysis": true,
+      "cell_coordinates_not_inherited_from_compartment_average": true
+    },
+    {
+      "file": "UQ_CK_large_PFS_OS_only_1st_2nd_line.csv",
+      "url": "https://raw.githubusercontent.com/tznaung/NSCLC_SpatialOmics/7cb78392967696fc5a6ec44d05e687a11052f94f/data/UQ_CK_large_PFS_OS_only_1st_2nd_line.csv",
+      "bytes": 666536,
+      "git_blob_sha1": "df16a07832edd52a766b5cb4424f86f42965ed40",
+      "sha256": "bc9648f2971625a0b0c8b7b97debea9d297f473672f01345f51d1cf28286034c",
+      "data_rows": 30,
+      "columns": 1844,
+      "orientation": "genes_in_columns",
+      "coverage": {
+        "regulatory_associated": {
+          "required": 5,
+          "unique_measured": 4,
+          "missing": [
+            "IKZF2"
+          ]
+        },
+        "cytotoxic": {
+          "required": 6,
+          "unique_measured": 6,
+          "missing": []
+        },
+        "memory_associated": {
+          "required": 6,
+          "unique_measured": 6,
+          "missing": []
+        },
+        "GZMK_effector": {
+          "required": 4,
+          "unique_measured": 4,
+          "missing": []
+        },
+        "pan_T": {
+          "required": 3,
+          "unique_measured": 3,
+          "missing": []
+        },
+        "interferon": {
+          "required": 6,
+          "unique_measured": 6,
+          "missing": []
+        },
+        "proliferation": {
+          "required": 5,
+          "unique_measured": 5,
+          "missing": []
+        }
+      },
+      "no_effect_analysis": true,
+      "cell_coordinates_not_inherited_from_compartment_average": true
+    },
+    {
+      "file": "UQ_Stroma_large_PFS_OS_only_1st_2nd_line.csv",
+      "url": "https://raw.githubusercontent.com/tznaung/NSCLC_SpatialOmics/7cb78392967696fc5a6ec44d05e687a11052f94f/data/UQ_Stroma_large_PFS_OS_only_1st_2nd_line.csv",
+      "bytes": 600703,
+      "git_blob_sha1": "a91b62a3dc3827ba8a5499f4563b6ab9b92b362a",
+      "sha256": "43992ec60cd55d6c6b0029f67c82fc08775bcfa8ab28744cbe4eaaddd878ce4a",
+      "data_rows": 27,
+      "columns": 1844,
+      "orientation": "genes_in_columns",
+      "coverage": {
+        "regulatory_associated": {
+          "required": 5,
+          "unique_measured": 4,
+          "missing": [
+            "IKZF2"
+          ]
+        },
+        "cytotoxic": {
+          "required": 6,
+          "unique_measured": 6,
+          "missing": []
+        },
+        "memory_associated": {
+          "required": 6,
+          "unique_measured": 6,
+          "missing": []
+        },
+        "GZMK_effector": {
+          "required": 4,
+          "unique_measured": 4,
+          "missing": []
+        },
+        "pan_T": {
+          "required": 3,
+          "unique_measured": 3,
+          "missing": []
+        },
+        "interferon": {
+          "required": 6,
+          "unique_measured": 6,
+          "missing": []
+        },
+        "proliferation": {
+          "required": 5,
+          "unique_measured": 5,
+          "missing": []
+        }
+      },
+      "no_effect_analysis": true,
+      "cell_coordinates_not_inherited_from_compartment_average": true
+    }
+  ],
+  "no_patient_rows_in_receipt": true,
+  "single_cell_contact_not_measured": true,
+  "clinical_or_spatial_model_not_started": true
+}

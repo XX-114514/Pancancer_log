@@ -1,0 +1,28 @@
+{
+  "schema": "CM02_full_resource_spatial_molecular_opportunity_before_new_effects_v1",
+  "created_utc": "2026-10-18T11:34:09.070549+00:00",
+  "module": "2026-10-14 immune atlas CM v1, T_whole_TME_primary_tumor, CM02",
+  "resource_rows_expected": 4624,
+  "assays_expected": 3,
+  "directions": [
+    "R_to_C",
+    "C_to_R",
+    "R_to_A",
+    "A_to_R",
+    "C_to_A",
+    "A_to_C"
+  ],
+  "slots_expected": 83232,
+  "new_P_or_FDR": false,
+  "reopen_previous18_or312_slots": false,
+  "groups": {
+    "R": "panT>=2; original regulatory>=2; cytotoxic<2",
+    "C": "panT>=2; original cytotoxic>=2; regulatory<2",
+    "A": "panT<2; HLA-DRA>=1 and CD74>=1"
+  },
+  "all_subunits_same_cell_threshold": 1,
+  "min_group_cells": 30,
+  "min_positive_cells_each_endpoint": 10,
+  "radius_multiple_original_median_all_cell_NN": 5,
+  "output_cap_bytes": 67108864
+}
