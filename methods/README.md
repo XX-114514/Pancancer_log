@@ -98,3 +98,5 @@
 - [全材料冻结RNA投射的前瞻测量合同](immune-RNA-MCP-all-atlas-native-projection-20261019.md)：完整参数传递、原锚定、固定辅助RNA与独立重放；实际资源门槛另核。
 
 - [CAR产品作者三个月结局的完整元数据资格](immune-RNA-MCP-CAR-product-clinical-qualification-20261019.md)：精确原细胞桥、二元标签与ORR语义、作者标签缺失规范化，先核元数据后建模。
+
+- [自动通讯张量与完整20留出临床家族](NSCLC-communication-tensor-heldout-family-20261019.md)。
