@@ -1,3 +1,5 @@
+[作者亚型动态精确分解](GSE176021-author-subtype-dynamics-decomposition-20261019.md)：全部160/928/80/8独立接受、单侧抽样及QC表示边界。
+
 [独立功能读出资格与下一步](GSE176021-disjoint-functional-response-preflight-20261019.md)：全50参考/预测基因排除与完整源身份、亚型组成和runtime条件，尚未评分/推断。
 
 [作者身份RNA与组织配对](GSE176021-author-lineage-RNA-paired-tissue-20261019.md)：原变换/完整范围、六项新组织问题与分母、秩假设和全部敏感性。

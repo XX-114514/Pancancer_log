@@ -1,0 +1,33 @@
+{
+  "recorded_UTC": "2026-10-18T18:28:53+00:00",
+  "recorded_UTC8": "2026-10-19T02:28:53+08:00",
+  "status": "all_subtype_decomposition_independently_accepted_QC_calibration_diagnostic_and_old_runtime_found",
+  "source_sha256": {
+    "calibrate_GSE176021_author_native_QC_v1.py": "3da02ef75bdce887c5750c2f74fac107af0b5062641637e8278941599705a84c",
+    "decompose_GSE176021_author_subtype_dynamics_v1.py": "bc653f66d2c2faebb541963c5d1a97e01621479aec2db8a97e5ba9049206ee71",
+    "audit_GSE176021_author_subtype_dynamics_v1.py": "77b482cd4c051a7297e355ce29beecb6d9a73946d91b538fe18f35cc281b31df"
+  },
+  "QC_calibration_terminal_sha256": "1482c27fa3a362b3488f186a0f44f93449b1db4a67d936efa3d09fb9ab507afa",
+  "QC_pair_rows": 37512,
+  "QC_calibration_new_native_fingerprint_accepted": false,
+  "decomposition_producer_terminal_sha256": "3861070378c76028cc7e3aad19adedd36b6d64f20ba4f3e4420896a6113df40a",
+  "decomposition_acceptance_sha256": "c4a8be3debb2e22b5b9282b34410d5567943cf918c8e8e7eb6498a72925b7fe6",
+  "accepted_UTC": "2026-10-18T18:27:29.086033+00:00",
+  "case_view_positions": 160,
+  "subtype_contributions": 928,
+  "sampling_coverage_positions": 80,
+  "source_descriptor_positions": 8,
+  "selected_cells": 11939,
+  "all_capture_label_cells": 204940,
+  "maximum_producer_closure_error": 8.881784197001252e-16,
+  "old_runtime_versions": {
+    "python": "3.11.14",
+    "pyucell": "0.8.0"
+  },
+  "unmatched_alias_adopted": false,
+  "new_functional_scores_or_P": false,
+  "old_six_family_closed": true,
+  "all_current_jobs_terminal": true,
+  "goal_complete": false,
+  "scientific_effects_or_individual_rows_gene_weights_or_matrices_public": false
+}
