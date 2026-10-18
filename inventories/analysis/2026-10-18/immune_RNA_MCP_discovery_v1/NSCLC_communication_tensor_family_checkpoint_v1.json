@@ -30,5 +30,9 @@
     "run_NSCLC_communication_tensor_family_v1.py": "43b659116c33ddf6644fc8ac1459b8bb2ce5f40312ca22245306865e4af6ffdd",
     "audit_NSCLC_communication_tensor_family_v1.py": "7c9a5311be9bcdae6e5df907f3b4df3420b00f4fd9755086ef2e73a1f94605f2",
     "audit_NSCLC_communication_tensor_family_v2.py": "5b23b4dd0d67cb8937a98e3ffa1f4c1996dc4162dc3a9caec8446bb1bed076a0"
-  }
+  },
+  "review_script": "review_NSCLC_communication_tensor_family_v1.py",
+  "review_source_sha256": "9f4a2274b45fccffa18e185f78a3c36cc12a933be7f4439a6422c609e27a6aef",
+  "review_started_UTC": "2026-10-18T19:37:23.790430+00:00",
+  "review_status": "waiting_same_audit_v2_no_figures_yet"
 }
