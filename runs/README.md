@@ -1,3 +1,7 @@
+[全部原候选外部精确RNA路线](20261018_NSCLC_candidate_external_exact_RNA_preflight_v1.md)：全61来源映射/功能组合资格元数据独立通过，真实RNA抽取与模型仍待。
+
+[原生候选机制资格与独立靶RNA后续](20261018_NSCLC_native_interface_mechanistic_followup_v1.md)：原范围保留，完整独立数值复算已接受，实际解释范围另行记录。
+
 [2026-10-18免疫CM命名与解释](20261018_immune_CM_naming_v1.md)：只读全15范围，79实例别名及完整解释；原模型和旧临床家族不改。
 
 # 正式运行记录

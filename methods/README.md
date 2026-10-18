@@ -1,3 +1,5 @@
+[原生内部候选机制资格与独立靶RNA描述](NSCLC-native-interface-mechanistic-followup-v1.md)：全部原候选，结果后固定文献范围，无新P或主要分类修改。
+
 [本批免疫图谱CM暂定命名与临床挖掘](immune-CM-naming-and-clinical-interpretation-20261018.md)：全79范围因子别名、主六候选、已有临床阴性家族与独立验证路线。
 
 # 方法文档
