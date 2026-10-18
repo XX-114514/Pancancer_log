@@ -1,3 +1,5 @@
+[支持线索的同细胞来源与共享谱系背景诊断](NSCLC-supported-source-identity-v1.md)：结果后解释，保留全部谱系与失败，不重标注。
+
 [外部来源家族真实推断](../runs/20261018_NSCLC_candidate_external_associations_v1.md)：输入已接受，全部固定随机流与独立结果重放，原两家族保留。
 
 [原候选完整外部来源模型](NSCLC-candidate-external-source-association-v1.md)：效果前冻结全计划、完整控制和家族，重新组装本问题所需配对。

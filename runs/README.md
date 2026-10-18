@@ -1,3 +1,5 @@
+[外部支持线索真实来源诊断](20261018_NSCLC_supported_source_identity_v1.md)：全选择细胞/同细胞阈值接受，衔接全部大类完整/非重叠背景。
+
 [原候选全外部来源推断](20261018_NSCLC_candidate_external_associations_v1.md)：完整22模型/全随机流已接受，全13主森林图实际查看；附全节点组成诊断。
 
 [原候选来源模型输入](20261018_NSCLC_candidate_external_association_inputs_v1.md)：全部同文库case、资格和分母已独立接受。
