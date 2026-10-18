@@ -31,9 +31,9 @@ def qvalues(values,by=False):
 
 def main(a):
  assert not a.output.exists();a.output.mkdir(mode=0o700)
- terminal=json.loads((a.run/'terminal_public.json').read_text());assert terminal['n_slots']==304
+ terminal=json.loads((a.run/'terminal_public.json').read_text());assert terminal['n_slots']==a.expected_slots
  rows=pd.read_csv(a.run/'all_frozen_model_slots_private.tsv',sep='\t');designs=json.loads((a.run/'fitted_designs_private.json').read_text())
- assert len(rows)==304 and len(designs)==sum(rows.status.eq('exploratory_model_numeric_audit_pass'))
+ assert len(rows)==a.expected_slots and len(designs)==sum(rows.status.eq('exploratory_model_numeric_audit_pass'))
  errors=[]
  for i,entry in enumerate(designs):
   row=rows.iloc[entry['record_index']];d=pd.DataFrame(entry['data']);X=d[entry['predictors']].to_numpy(float);X=(X-X.mean(0))/X.std(0)
@@ -59,13 +59,15 @@ def main(a):
   assert np.allclose([np.exp(coef),np.exp(coef-1.96*se),np.exp(coef+1.96*se)],[row.effect,row.CI_low,row.CI_high],atol=1e-5,rtol=1e-5)
   errors.append(max(abs(coef-row.log_effect),abs(se-row.se),abs(ll-row.loglik),abs(p-row.p)))
   if i%20==0:print(json.dumps(dict(phase='independent_design_checked',done=i+1,total=len(designs))),flush=True)
- for family,n in [('TCGA_survival',264),('ICI_response',10),('ICI_survival',20),('ICI_increment',10)]:
+ families=[('TCGA_survival',264),('ICI_response',10),('ICI_survival',20),('ICI_increment',10)] if a.expected_slots==304 else [('SU2C_response',2),('SU2C_survival',4),('SU2C_increment',2)]
+ assert a.expected_slots in [8,304]
+ for family,n in families:
   ss=rows[rows.family.eq(family)];assert len(ss)==n;p=ss.p.fillna(1).to_numpy()
   assert np.allclose(qvalues(p),ss.BH_q,atol=1e-12,rtol=1e-12) and np.allclose(qvalues(p,True),ss.BY_q,atol=1e-12,rtol=1e-12)
- result=dict(status='ALL304_SLOTS_AND_ALL_FITTED_NUMERIC_DESIGNS_INDEPENDENTLY_REPLAYED',finished_utc=datetime.now(timezone.utc).isoformat(),n_slots=304,n_fitted_replayed=len(designs),maximum_numeric_difference=max(errors) if errors else 0.,full_family_BH_BY_pass=True,
+ result=dict(status='ALL_FROZEN_SLOTS_AND_ALL_FITTED_NUMERIC_DESIGNS_INDEPENDENTLY_REPLAYED',finished_utc=datetime.now(timezone.utc).isoformat(),n_slots=a.expected_slots,n_fitted_replayed=len(designs),maximum_numeric_difference=max(errors) if errors else 0.,full_family_BH_BY_pass=True,
   producer_terminal_sha256=hashlib.sha256((a.run/'terminal_public.json').read_bytes()).hexdigest(),auditor_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
   scope='Independent numeric refit/likelihood/score/covariance and FDR. Original clinical source fields reviewed separately; not independent data collection or clinical replication.',no_scientific_promotion=True)
  (a.output/'independent_audit_public.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True)
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True);p.add_argument('--output',type=Path,required=True);main(p.parse_args())
+ p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--expected-slots',type=int,default=304);main(p.parse_args())

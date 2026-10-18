@@ -1,0 +1,38 @@
+{
+  "status": "SELECTED_OPEN_AUTHOR_MEMBERS_DOWNLOADED_CRC_AND_SHA_VERIFIED",
+  "finished_utc": "2026-10-18T09:02:30.328236+00:00",
+  "source_record": "https://zenodo.org/records/11179623",
+  "source_url": "https://zenodo.org/records/11179623/files/Source%20Data%203.zip?download=1",
+  "source_archive_md5_published": "9bf9af4fb9ae1191ea9562a20f2c1f56",
+  "whole_archive_MD5_not_verified": true,
+  "archive_bytes": 1180232016,
+  "network_bytes": 24236705,
+  "members": [
+    {
+      "name": "Table_S1_Clinical_Annotations.xlsx",
+      "archive_member": "Source Data/Clinical/Table_S1_Clinical_Annotations.xlsx",
+      "bytes": 77519,
+      "sha256": "6ab0b77effa91325f0d96a64e04cd62252dd297646965e4461e3a001f8d33545",
+      "source_CRC32": 3807486608,
+      "full_member_CRC_verified_by_zipfile": true
+    },
+    {
+      "name": "SU2C-MARK_Harmonized_Clinical_Annotations_Supplement_v1.txt",
+      "archive_member": "Source Data/Clinical/SU2C-MARK_Harmonized_Clinical_Annotations_Supplement_v1.txt",
+      "bytes": 23777,
+      "sha256": "3a2b9ab7ff709dfa81ee3ce54c1a9ad8653617575bf937cab812f365285f90c8",
+      "source_CRC32": 2355811493,
+      "full_member_CRC_verified_by_zipfile": true
+    },
+    {
+      "name": "SU2C-MARK_Harmonized_rnaseqc_tpm_v1.gct",
+      "archive_member": "Source Data/RNA/SU2C-MARK_Harmonized_rnaseqc_tpm_v1.gct",
+      "bytes": 44557830,
+      "sha256": "892f8687ed42eb017894aa9c99d4d4a04f5af52037f88709ee7913df36166160",
+      "source_CRC32": 2991744730,
+      "full_member_CRC_verified_by_zipfile": true
+    }
+  ],
+  "controlled_raw_data_not_requested": true,
+  "no_outcome_analysis": true
+}
