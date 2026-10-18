@@ -1,0 +1,18 @@
+{
+  "finished_utc": "2026-10-18T11:38:41.784953+00:00",
+  "steps": [
+    {
+      "script": "measure_CM02_spatial_full_LR_opportunities_v1.py",
+      "started_utc": "2026-10-18T11:38:30.475065+00:00",
+      "finished_utc": "2026-10-18T11:38:38.831303+00:00",
+      "exit_code": 0
+    },
+    {
+      "script": "audit_CM02_spatial_full_LR_opportunities_v1.py",
+      "started_utc": "2026-10-18T11:38:38.831668+00:00",
+      "finished_utc": "2026-10-18T11:38:41.784157+00:00",
+      "exit_code": 1
+    }
+  ],
+  "all_steps_exit0": false
+}

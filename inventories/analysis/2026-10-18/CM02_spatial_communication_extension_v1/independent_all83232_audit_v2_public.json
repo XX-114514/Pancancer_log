@@ -1,0 +1,11 @@
+{
+  "status": "ALL83232_SPATIAL_MOLECULAR_MEASUREMENTS_INDEPENDENTLY_REPLAYED",
+  "finished_utc": "2026-10-18T11:40:34.941329+00:00",
+  "n_slots": 83232,
+  "n_raw_values_re_read": 262477000,
+  "maximum_fraction_error": 0.0,
+  "producer_terminal_sha256": "ffc81cadf5cda8de8cd1704505d9a64a1703513c73c506ca81c5dbab84253c50",
+  "auditor_sha256": "c520a4de9e1e699747657ba5b7f920525f513514e774a4eae0c292e0382a15c3",
+  "no_new_P_or_FDR": true,
+  "scope": "Independent original RNA/group/joint-subunit/neighbor-edge/all-resource replay; not independent biological validation or a conditional spatial enrichment test."
+}

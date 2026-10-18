@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-18T11:42:23.946529+00:00",
+  "source_record": "https://zenodo.org/records/11198494",
+  "source_paper": "https://www.nature.com/articles/s41590-024-01792-2",
+  "stage": "schema_and_complete_transcript_measurement_qualification_only_no_spatial_effects",
+  "pilot_selection": "Smallest of all4 published MERFISH transcript CSVs by exact bytes, before expression/cell/spatial effects",
+  "selected_file": "tx_merfish_Pt43.csv",
+  "selected_bytes": 263338496,
+  "expected_MD5": "e7e82a1fd863df190ef271441b2c48bd",
+  "all4_source_bytes": [
+    1896609592,
+    263338496,
+    3897725787,
+    1628892360
+  ],
+  "download_cap_bytes": 300000000,
+  "local_new_public_source_only": true,
+  "old_server_matrices_not_exported": true,
+  "exact_34_frozen_genes_not_replaced": true,
+  "segmentation_fov_units_and_all_coordinates_must_be_checked": true,
+  "do_not_infer_unmeasured_from_no_transcript_observed": true,
+  "do_not_call_pilot_a_cohort_or_clinical_validation": true
+}

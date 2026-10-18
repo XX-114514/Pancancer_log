@@ -1,0 +1,13 @@
+{
+  "status": "ALL83232_MOLECULAR_MEASUREMENT_SLOTS_COMPLETE_INDEPENDENT_AUDIT_PENDING",
+  "finished_utc": "2026-10-18T11:38:38.394103+00:00",
+  "n_slots": 83232,
+  "no_P_or_FDR": true,
+  "no_old_families_reopened": true,
+  "output_bytes": 788793,
+  "files": {
+    "private_bound_plan_before_molecular_counts.json": "ed73ecee92a99fdd754fcc730e3632995f34b0faadf9a5edf2af37e109f3c1b8",
+    "private_all83232_spatial_molecular_opportunities.tsv.gz": "ac047028c1fb72e93d6c22ec5bd3e24771740d049411ff153f9fdb8b25c6c535",
+    "private_all3_source_measurement_summary.json": "82bfbe3e17d825ffaeb247e9a23f56c757bfd68b694e23f840fb08cbf63589eb"
+  }
+}

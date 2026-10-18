@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-18T11:38:30.406790+00:00",
+  "driver_pid": 296557,
+  "scope": "All83232 molecular measurement positions; no new P or old family refit",
+  "code_sha256": {
+    "measure_CM02_spatial_full_LR_opportunities_v1.py": "7f22b10de02a588a892f2caf872e6804396ec0378b862601892607c1110e3d4d",
+    "audit_CM02_spatial_full_LR_opportunities_v1.py": "c8a178d473a1e03318b43fdbfc797632d8fc0c1aa7c20d2abfd3b05787a3cc00"
+  },
+  "plan_sha256": "85c73f1259396b9011bfa461776a344ba52f49fa1399eb0307384e5ce3f096b8"
+}
