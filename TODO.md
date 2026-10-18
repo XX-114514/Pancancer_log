@@ -1,12 +1,12 @@
 ## 2026-10-18 07:39 UTC /2026-10-18 15:39 UTC+8 完整结果接受与病例级接口检验入口
 
-继续同一1338检验生产及绑定审核句柄，完整接受后再评估全因子候选及跨来源接口。新版森林图已生成、代表图已查看，其余图仅自动边界核查。来源级扩展汇总仅限当前对话，公共Git范围保持。入口：[当前run](runs/20261018_NSCLC_native_interface_association_v1.md)。
+原1338主要检验、全部随机流和派生已完整独立接受。下一将全原规则候选的功能受体组装、发送身份和独立靶RNA读数固化为可复现后续；不增P或修改原候选。来源级扩展汇总仅限当前对话，公共Git范围保持。入口：[当前run](runs/20261018_NSCLC_native_interface_association_v1.md)。
 
 外部测量机会已全量独立接受；下一以原生完整接受为依赖，核候选的同细胞受体表达、去LR重叠外部分数校准及完整模型，不能凭已有覆盖直接做验证声明。[预检run](runs/20261018_NSCLC_native_external_opportunities_v1.md)。
 
-全家族解释和独立派生审核已实际启动并绑定前序接受证明；核完整终态后审阅所有原规则失败、已有敏感性、字面依赖分组与相关图页。统计派生通过与实际图查看分别验收，不将等待说成完成。[解释run](runs/20261018_NSCLC_native_interface_result_review_v1.md)。
+全家族解释/派生与三幅原生图已分别接受。外部20幅森林图仅F01/F03两幅实际查看；其余自动范围/边界通过，尚未实际逐图查看。按材料和阶段保留限定，不由产品文库推断肿瘤共同机制。[解释run](runs/20261018_NSCLC_native_interface_result_review_v1.md)。
 
-全固定去LR接收分数×48测量宇宙已独立接受并连回完整基因/捕获机会。下一先接受原主关联全数值及解释，再按原候选规则固定发送端单细胞均值RNA和同细胞复合受体测量，不用pseudobulk或边际计数暗代。[校准run](runs/20261018_NSCLC_disjoint_receiver_universe_calibration_v1.md)。空间来源GSE328481仅公开元数据候选，未下载/验收，取样和计数尺度门槛见[资格说明](methods/native-programme-biological-and-spatial-qualification-20261018.md)。
+全固定去LR接收分数×48测量宇宙及原主家族均已独立接受。下一按原候选规则固定外部发送端单细胞均值RNA、同细胞复合受体与完整模型，不用pseudobulk或边际计数暗代。[校准run](runs/20261018_NSCLC_disjoint_receiver_universe_calibration_v1.md)。空间来源GSE328481仅公开元数据候选，未下载/验收，取样和计数尺度门槛见[资格说明](methods/native-programme-biological-and-spatial-qualification-20261018.md)。
 
 ## 2026-10-16 21:22 UTC /2026-10-17 05:22 UTC+8 全先验接受、生产修复后完整重算
 
