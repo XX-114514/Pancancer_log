@@ -1,0 +1,31 @@
+{
+  "recorded_UTC": "2026-10-18T19:27:09.579991+00:00",
+  "recorded_UTC8": "2026-10-19T03:27:09.579991+08:00",
+  "status": "blind_inputs_and_official_CP_synthetic_gate_accepted_full_native_LR_replay_running",
+  "source_sha256": {
+    "prepare_cell2cell_isolated_GPU_runtime_v1.py": "87389eeeed711fd9640dbe3052486683cf0d543189370fd6884cf765719da0d3",
+    "prepare_cell2cell_isolated_GPU_runtime_v2.py": "0086c8637825f2c6eb1310c156b18cf8c941fd7b500700b47f2e1a21ec0984b9",
+    "prepare_cell2cell_isolated_GPU_runtime_v3.py": "7a5eed1aa5fc540f6ce4ed4d773e9112a01486712525238ffe23f84ce79e626b",
+    "qualify_NSCLC_communication_tensor_inputs_v1.py": "a6beeadcc7f750c899e2bf237b67248888568de16b8973064017ca26576720fd",
+    "audit_NSCLC_communication_tensor_inputs_v1.py": "9f00900b2f1290f1fc2fc747b6db2df2ea61781974487dfe55f7cf1c2669f6a2",
+    "audit_NSCLC_communication_tensor_inputs_v2.py": "3ba66f4c4caf25323e2228ca24974e0f1c21470ec594b590723ba39eac5bbd64",
+    "audit_NSCLC_complete_native_LR_statistics_v1.py": "41f5938ac13c1b1c9cc137b20616057c2939e9600d10e811628782f9cea12e2d",
+    "qualify_cell2cell_mask_and_projection_v1.py": "6fc6f462fb228ccfae0555f8e02703b74ff6dc5adbe3939f6a636494a50892d4"
+  },
+  "input_producer_terminal_sha256": "ba8d1d3a6ff5fc05edc584f2c22e3970875147202ffe1d2e3b61438e81df3131",
+  "input_audit_source_sha256": "3ba66f4c4caf25323e2228ca24974e0f1c21470ec594b590723ba39eac5bbd64",
+  "input_audit_accepted_UTC": "2026-10-18T19:24:31.368595+00:00",
+  "raw_author_types": 51,
+  "coverage_eligible_types": 38,
+  "discovery_records": 129,
+  "heldout_records": 87,
+  "full_LR_native_gene_columns": 1840,
+  "full_original_units": 11701,
+  "new_real_tensor_factor_or_clinical_effects": false,
+  "unknown_patient_identity_not_promoted": true,
+  "scientific_effects_and_learned_features_public": false,
+  "goal": "active",
+  "input_audit_terminal_sha256": "dfbc55bd2f2fc408afb8780c96f583d24754f5826665be32d5edef9134c1ab51",
+  "synthetic_gate_accepted_UTC": "2026-10-18T19:27:11.447776+00:00",
+  "synthetic_gate_terminal_sha256": "e1743140d72f35dcb45791586b40976b40925fcc78f2dabffea2087cacc63a7e"
+}
