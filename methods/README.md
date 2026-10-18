@@ -1,3 +1,5 @@
+[去内生接收程序与覆盖](immune-RNA-MCP-disjoint-receiver-preflight-20261018.md)及[固定方向性关联家族](immune-RNA-MCP-directional-association-family-20261018.md)：全端点、固定程序、原生RNA与推断分母。
+
 [原节点组成拆解](immune-RNA-MCP-original-node-decomposition-20261018.md)及[自动配体资格](immune-RNA-MCP-automatic-ligand-qualification-20261018.md)：发现基线固定、完整家族与非手选候选生成。
 
 [MCP功能与来源资格](immune-RNA-MCP-functional-qualification-20261018.md)：完整参考/哨兵/补集描述、独立核查和组成/状态解释边界。

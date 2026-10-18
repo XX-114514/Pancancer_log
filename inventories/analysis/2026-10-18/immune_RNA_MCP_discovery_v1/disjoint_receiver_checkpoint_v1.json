@@ -1,0 +1,21 @@
+{
+  "recorded_UTC": "2026-10-18T13:50:01.325969+00:00",
+  "source_sha256": {
+    "prepare_immune_RNA_MCP_disjoint_receiver_preflight_v1.py": "c49b5ff607053017892c5dfb18e7170b9723d117c77b219345bf162d02fa6ba9",
+    "audit_immune_RNA_MCP_disjoint_receiver_preflight_v1.py": "8dae2aa90f1f22893622abb75bbc27fd0c68a55000468144d2e2219749620d2a",
+    "test_immune_RNA_MCP_directional_associations_v1.py": "b68c7e42f5a3a5cb23dbf27d1fc6cf084a846437d1f057091503e08888caf4f3"
+  },
+  "preflight_plan_sha256": "63430c4bff5f64a786ae71f30bd5eb36838e96742006a785ff48eb82452b6a78",
+  "preflight_producer_terminal_sha256": "469df1863a6770168a7c67fd78078455b586f654ef7be3e350ede9a7f3592f2b",
+  "status": "all_disjoint_production_complete_independent_audit_live_inference_code_prepared_not_started",
+  "frozen_selection_slots": 120,
+  "receiver_prototypes": 120,
+  "unique_directional_endpoint_slots": 394,
+  "source_coverage_positions": 1182,
+  "faithful_prototypes": 120,
+  "preflight_estimable_TNBC_slots": 297,
+  "source_gene_or_candidate_list_public": false,
+  "goal_complete": false,
+  "prepared_directional_audit_source_sha256": "8ed4e32c8f2e580fe186500ccfba20ee0a2adaad990957be907a336bc7eedc61",
+  "last_verified_preflight_audit_live_UTC": "2026-10-18T13:52:09+00:00"
+}
