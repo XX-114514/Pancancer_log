@@ -1,3 +1,7 @@
+## 2026-10-19T12:04:33 UTC /2026-10-19T20:04:33 UTC+8 αβ处理后注释分段接收中；全空间测量/坐标范围完成
+
+αβ诊断旧完整GET未过长度校验，在记录解析前停止；新v2同字段/键/缺失规则、已核生产和审核原句柄存活，仍无科学计数。全部14空间分子/坐标来源范围已完成，测量机会不等于细胞/邻域验证。[αβ方法](methods/gamma-delta-alpha-beta-annotation-diagnostic-20261019.md)、[空间范围](methods/NSCLC-complementary-spatial-interface-scope-20261019.md)。原作者/候选/CM不改，goal active。
+
 ## 2026-10-19T11:32:12 UTC /2026-10-19T19:32:12 UTC+8 γδ群水平证据与正交范围已审，最终身份仍待
 
 完整51群/25marker、100同记录描述、全部21缓存模式及公开处理后TCR有界表头资格闭合；四完整缓存SHA与全部数值/范围独立核对。私有科学审阅完成，身份仍按作者参考/候选/边界保留，无新通讯或临床P。下一非序列精确注释诊断与来源/空间资格，宽T问题另立不混作γδ验证。[方法](methods/gamma-delta-group-lineage-and-orthogonal-evidence-20261019.md)，整体目标active。

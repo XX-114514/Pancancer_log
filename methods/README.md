@@ -1,3 +1,7 @@
+[γδ候选的αβ非序列注释诊断](gamma-delta-alpha-beta-annotation-diagnostic-20261019.md)：精确键、完整链/重复/缺失、完整性门槛与序列列排除。
+
+[互补空间接口的输入范围](NSCLC-complementary-spatial-interface-scope-20261019.md)：全部14输入分子/当前及恢复坐标证明，无RNA或空间效果。
+
 [γδ群水平谱系与正交范围](gamma-delta-group-lineage-and-orthogonal-evidence-20261019.md)：完整51群/25marker、同记录描述、缓存模式与有界公开表头资格；无正式身份采纳。
 
 [γδ固定scGate试验](gamma-delta-scGate-pilot-20261019.md)及[原RNA候选规则](gamma-delta-RNA-candidate-identification-20261019.md)：原作者参考/候选并列、模型/命名边界及未执行扩展范围。
