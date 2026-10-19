@@ -1674,3 +1674,18 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 本轮为progress：真实完整模型/全审核及科学处理结束，追加字段可追溯；当前来源/身份科学边界改变下一动作。原2026年10月CM（v20261010）/权威Zarr/172标签和旧有限家族保持。整体goal active；下一按现有接收状态与空间校准/whole-RNA可测性登记确定新的群水平问题，不继续按临床效果优化单细胞硬纯化。
 
 - Publication gate 2026-10-19T15:24:03.052200+00:00 UTC /2026-10-19T23:24:03.052200+08:00 UTC+8: five new Python sources pass3.10 AST and match executed source SHA; full repository validation0 errors/1 pre-existing absolute-path warning; complete code, methods, technical metadata and sanitized diffs manually reviewed. git diff --check passes. Shared local/cloud main6b79581817559918bccb2197c42314e0861dca33 checked equal; concurrent unrelated files preserved. Only explicit owned files staged; no scientific counts/effects, learned genes/weights, figures, outcomes or individual arrays. Suggested commit: analysis: complete normalized gamma identity review and qualify ICB sample scope.
+
+
+## 2026-10-19T15:34:43.173206+00:00 UTC /2026-10-19T23:34:43.173206+08:00 UTC+8 深度调整的面板外参考保真度：效果盲全范围新问题
+
+- 上一goal turn为progress：规范完整模型和证据字段真实完成/审阅，5b7a7ac2535e506735b88c9bceeb9fff6ef1fe18于15:24:53.436803 UTC普通push、15:25:00.975643 UTC独立HTTPS核验，临时中转关闭。未将模型运行成功或作者参考当受体身份真值，原临床家族和正式标签保持。
+- 当前只读复核状态证据register和真实终态：既有DIALOGUE/TF、全91447/814/4部分面板校准、GSE273952全71398点投射/空间描述均已结束。不重开原NAMPT/DDIT3或宽T单LR空间检验。全签名门槛失败与部分代理描述分开；已有Moran空间结构不能当细胞互作。
+- 新[方法](../../../methods/state-panel-quality-adjusted-disjoint-fidelity-20261020.md)：旧校准未控制两端共同的完整RNA/检出背景，故在原身份/材料层内做块等权秩残差与面板外参考保真度。本轮只读现有分数和metadata，无新表达、空间效果、临床结局。全部814×4和18适用major保留。原抽样上限50细胞/10块/每块5；新50/10门槛只评完整分配层，其余缺覆盖不当阴性。来源只代表技术转移，不称独立生物验证。
+- [计划](../../../inventories/analysis/2026-10-20/state_panel_quality_fidelity_v1/frozen_plan_before_adjusted_fidelity_v1.json)在新真实系数前冻结：原709文件/2836分数SHA、91447行、725004身份/127636来源位置；RNA/检出两必需协变量、等块权重、QR与Schur独立算法逐值比对；原完整空间门槛不改。算法稳定/≥5面板基因/≥3来源及预定相关/留一分流只是探索性技术规则，不是通用生物阳性标准。
+- 15:32:54.150390 UTC实际服务器正/负/常量/必需协变量共线/不等块权重fixture通过，源86bf00a4b4a05eeff0d20d51b7032219995fee055a12175767873a8c8788a4f0，计划b47546c680abdedbad70c6d5035e1ec4c8f51dd0d5a0fec308eddf743488eed1。Python3.10 AST和源码SHA一致。15:33:21.031006 UTC一次启动真实新生产，原句柄确认存活，15:33:51.396780 UTC已82/709文件、10090metadata行/71640描述；无终态或新科学分级接受。
+- 沿用上一节点配额不足时的本任务500000000000+1GiB预留策略，本节点未重测配额，项目卷保持只读；所有新产物在任务专属tmpfs，64MiB预算/512MiB空闲检查。权重、逐细胞分数/标识和科学分级不进公共Git，代码/计划/脱敏轨迹可发布。其他任务三份未提交文件保留。
+- 当前goal active，本轮为progress（真实新计算及独立于旧结果的测量问题）。下一核同一进程终态、全来源聚合/分流独立复算；若无合格代理，保留结果并采用明确全RNA的其他测量问题，不调整门槛挽救空间主张。建议commit：analysis: launch outcome-blind quality-adjusted panel fidelity triage。
+
+- 2026-10-19T15:38:30.743993+00:00 UTC补记新增常量块反例：每块真实两端秩均值完全相同，v1仍因浮点残差给出有限块相关。该反例只用合成数据，未依据真实相关/通过名单更改参数；v1运行和计划保留，不接受其块分流。v2仅在块均值方差不超过细胞残差方差1e-10时记NA，全部生物/来源阈值不变。15:36:32.428500 UTC原全部fixture及该新增反例通过；v2源47a8774f645b0a759c31dce3626c1dfdff0fa9d1cf6e74d5c632dcac431692b2、计划0839f00e7f3b3e81d72d648f7d9042fb805914e92bea5370c6a0855f37e97310冻结，15:36:48.071332 UTC一次启动。下一逐项确认原细胞指标/所有仍可估计块值完全保持，只将数值无变异块改NA；独立复算全部来源及分流，不按结果调门槛。
+
+- 2026-10-19T15:39:47.531421+00:00 UTC /2026-10-19T23:39:47.531421+08:00 UTC+8 发布前进度：v1于15:38:55.013148 UTC终止，技术终态5ab3ccf3c979c136c871723781b1e5195ec011341c60556d38146c8ab406eb8f不作科学接受；v2同句柄真实存活，15:38:42.049299 UTC完成全部709/2836/91447/725004输入描述，仍来源聚合。依赖审核于15:38:56.079162 UTC一次启动，源34cd0f2be2bccbd03dc8dfeff58dac3ac395534ef581442c0c5c4325f1eec655，原依赖待终态不重启。三源码3.10 AST、合成数值fixture及全仓库验证0错误/1既存路径警告通过，通用源码/方法/计划和脱敏diff人工审阅；git diff --check通过，三个并发无关文件保留。

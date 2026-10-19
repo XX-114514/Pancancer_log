@@ -1,0 +1,59 @@
+{
+  "created_UTC": "2026-10-19T15:36:29.695564+00:00",
+  "producer_sha256": "47a8774f645b0a759c31dce3626c1dfdff0fa9d1cf6e74d5c632dcac431692b2",
+  "inputs": {
+    "native": {
+      "directory": "state_spatial_proxy_native_cells_20261016_v1",
+      "manifest": "inventory.json",
+      "sha256": "91be1ae48a338aa6bfcd2d89107fd62bf3a00566a90ec5aa953fe0a3f37478f0"
+    },
+    "scores": {
+      "directory": "state_spatial_partial_panel_calibration_20261016_v2",
+      "manifest": "inventory.json",
+      "sha256": "f4802973cf3ca061b35c0659389572ed513ae012d8e5957bf0bfeae684d515fd"
+    },
+    "audit": {
+      "directory": "state_spatial_partial_panel_independent_audit_20261016_v2",
+      "manifest": "inventory.json",
+      "sha256": "3339daf356719ba15a187be2953f0090852cd692588ebeabca1492cb17c367cf"
+    },
+    "dictionary": {
+      "directory": "all_lineage_state_candidate_dictionary_20261014_v4",
+      "manifest": "frozen_programme_dictionary.json",
+      "sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9"
+    }
+  },
+  "frozen_cells": 91447,
+  "programmes": 814,
+  "panel_axes": 4,
+  "source_scopes": 52,
+  "identity_descriptions": 725004,
+  "source_descriptions": 127636,
+  "min_cells": 50,
+  "min_blocks": 10,
+  "required_covariates": [
+    "rank_full_RNA_total",
+    "rank_full_detected_genes",
+    "intercept"
+  ],
+  "cell_weight": "Each block equal total weight, each cell within block equal share",
+  "near_explained_variance_fraction": 1e-10,
+  "block_constant_guard_fraction_of_cell_residual_variance": 1e-10,
+  "provisional_triage": {
+    "stable_algorithm_required": true,
+    "min_panel_signature_genes": 5,
+    "min_estimable_sources": 3,
+    "median_adjusted_cell_rho": 0.3,
+    "median_adjusted_block_rho": 0.3,
+    "source_rho_both_threshold": 0.2,
+    "min_concordant_source_fraction": 0.75,
+    "min_leave_one_source_median": 0.3
+  },
+  "thresholds_are_project_exploratory_triage_not_validated_biological_standards": true,
+  "raw_expression_spatial_effect_or_clinical_outcome_read": false,
+  "original_full_signature_measurement_gate_changed": false,
+  "formal_state_or_identity_adoption": false,
+  "storage": "TASK_OWNED_TMPFS_ONLY_PROJECT_READ_ONLY",
+  "output_cap_bytes": 67108864,
+  "min_tmpfs_free_bytes": 536870912
+}

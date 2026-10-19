@@ -1,0 +1,16 @@
+{
+  "observed_UTC": "2026-10-19T15:39:47.531421+00:00",
+  "goal_status": "active",
+  "goal_turn_classification": "progress",
+  "v1_terminal_sha256": "5ab3ccf3c979c136c871723781b1e5195ec011341c60556d38146c8ab406eb8f",
+  "v1_block_triage_accepted": false,
+  "v2_started_UTC": "2026-10-19T15:36:48.071332+00:00",
+  "v2_source_sha256": "47a8774f645b0a759c31dce3626c1dfdff0fa9d1cf6e74d5c632dcac431692b2",
+  "v2_plan_sha256": "0839f00e7f3b3e81d72d648f7d9042fb805914e92bea5370c6a0855f37e97310",
+  "v2_same_handle_confirmed_live": true,
+  "metadata_cells_processed": 91447,
+  "identity_descriptions_processed": 725004,
+  "independent_audit_started_UTC": "2026-10-19T15:38:56.079162+00:00",
+  "original_gates_or_formal_labels_changed": false,
+  "no_new_scientific_acceptance": true
+}
