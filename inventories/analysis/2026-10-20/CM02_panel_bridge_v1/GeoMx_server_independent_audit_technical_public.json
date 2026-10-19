@@ -1,0 +1,10 @@
+{
+  "status": "ALL586_DCC_CANDIDATE_GENE_SUMS_AND_ALL_GREEK_MATRIX_VALUES_AXES_ACCEPTED",
+  "finished_utc": "2026-10-19T14:43:26.521812+00:00",
+  "replayed_probe_records": 10635826,
+  "replayed_workbook_values": 4370418,
+  "exact_Yale_PKC_version_and_patient_ROI_scale_still_pending": true,
+  "producer_receipt_sha256": "c03febd499dd7978b430b92ac15036046bb395b2d8530ca0c67733958434ac92",
+  "auditor_sha256": "748f11756a6db29228b154ac56c6dc1dcd3984fa171ac229b0781bd39f1184e3",
+  "no_new_effects": true
+}

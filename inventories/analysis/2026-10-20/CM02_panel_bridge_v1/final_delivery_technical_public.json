@@ -1,0 +1,12 @@
+{
+  "status": "PRIVATE_REPORT_FIGURES_AND_AGGREGATE_BUNDLE_CREATED_AND_ZIP_READBACK_ACCEPTED",
+  "finished_utc": "2026-10-19T14:45:15.624024+00:00",
+  "bytes": 7899364,
+  "sha256": "47d63dfad649127f1cfc51e7091ffdcfb3d8669787fc8e5247062fe9d5eaced4",
+  "members": 64,
+  "donor_level_technical_coverage_tables_included": true,
+  "no_cell_level_rows_clinical_outcome_rows_coefficients_or_raw_matrices_in_bundle": true,
+  "remaining_project_quota_bytes": 499651059712,
+  "reserve_bytes": 483183820800,
+  "producer_sha256": "ae1be1d822c5f39ccd67adfe47797208936a0c6d1e42a2bd959f85fd87233cfe"
+}
