@@ -1484,3 +1484,17 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 独立审核09:44:44.157053 UTC一次启动，等待同一原生产句柄终态后再读取；固定首8192细胞的不同解析器raw重读，另核完整候选/全部单位聚合/来源基因资格。有界抽样不称全细胞独立raw重读。原Zarr/CM/身份/原统计家族冻结，goal active，三个无关文件保留。
 - 日志写入失败：首次本机长中文stdin因Non-UTF8 SyntaxError停止，没有文件改动；改为明确UTF8保存的独立本机脚本。真实RNA生产/审核未受影响。
 - 节点轻量门槛：全部新增Python3.10 AST与七例合成通过，diff --check通过，完整仓库0错误/1既有路径警告；人工审阅源码/方法/脱敏增量。标题取证时间按整分钟记，原作业事件分别保留精确UTC。09:47:52.851063 UTC同一生产已读700552998坐标仍R，无重启。建议commit: analysis: accept cached metadata scope and start fixed gamma-delta RNA candidates。
+
+
+## 2026-10-19T10:19:02 UTC /2026-10-19T18:19:02 UTC+8 原生RNA候选计数接受、科学扩展未接受，固定scGate真实试验启动
+
+- 前一启动节点fc57e5a0cecbc5c277020ad650b0b25d1f7e8c86于09:49:07.886751 UTC普通push、09:49:13.997320 UTC独立HTTPS核云一致；bundle1ccd64c72e8019d34d835026171d8b9ff42fd2c3c883f746e09f4ef52dd51241。辅助收据旧initial_transport_failures不当本轮故障。
+- 首轮真实身份RNA生产09:58:51.069674 UTC完成88d5a0858bc778e27a22df31e1abd2ad35b2b278380b08c8baa70e789453d1e9。2010550708全部坐标合法/排序、压缩SHA/CRC、全1254749细胞RNA/检测数和11701单位九marker总量/阳性数锚定通过。09:59:14.577211 UTC审核e4d6c57c1727d33dd4d123178929125787706afa64964520c7c0ab1ff7429502接受全部候选键/四规则聚合及固定首8192细胞/73728marker位置的独立raw重读；边界为有界raw样本，不称全细胞独立重读。
+- 首轮全部作者类型/四规则/两作者γδ参考及NK冲突整批科学审阅只在私有server/获准来源汇总对话。10:07:41.022709 UTC私有扩展决定14c2ae9566e5d8d87b62ad9cee126360e60d21aafc9a241f59a02c171ad382d4明确continue_fixed_candidate_only_extension=false。计算通过不等于身份合格；保留完整原作者参考，不用硬门槛缩减成所谓真值。原两阈值/两规则不再调，原61来源扩展代码只是未执行草案，两个脚本已加醒目状态，未读取其真实RNA或产出结果。
+- 方法改变是解决身份漏检/混淆，不重开任何关闭的临床/通讯P家族。官方scGate文档/主源码及模型库已实际阅读；它使用UCell秩和kNN平滑。公开源码/模型取证使用GitHub GET工具，初期web的raw/目录/API缓存失败保留；未将私有表达、候选权重或个体传至检索。
+- 只读依赖检查确认R4.3.3/Seurat5.3.1及全部所需共享依赖已存在；缺R UCell/scGate，与既有PyUCell0.8区分。任务本地软件准备10:08:46.572274 UTC一次启动、10:10:38.876460 UTC接受8b69085d7dbe3be4b7342d58511066b2804eef4f7618a362112f4a1e24379058，scGate1.7.3/UCell2.17.1与固定模型库、240纯合成兼容性通过。三个不可变公开软件归档仅约1.91MB，含解压/本地R库实际6507023bytes，12MiB门槛内；没有共享依赖更新或表达下载，合成通过不当生物学准确度。
+- 两完整官方γδ模型的全部原生feature测量资格效果前写成1f746d64ff2eeb601f9b8bfd42802b4a4b96f218dbff1fb044c697258ead7778；完整/测量子集/组织域分开，不补未知marker为零。新[方案](../../../methods/gamma-delta-scGate-pilot-20261019.md)固定四槽（三实际可运行、一保留不可测）、官方默认参数；完整自然比例均匀20000细胞seed2026101901，全部31931原生基因只RAM。原作者和疗效不进子R，作者只在打分后作参考；原生库大小/检测数双端、压缩SHA、旧规则锚定及全部R标签结构另核。
+- 真实scGate试验10:17:23.667828 UTC一次启动，当前新RNA提取/打分尚未终态，没有新的已接受scGate真实细胞身份。审核10:19:02.585075 UTC一次启动、依赖同一个活句柄；此审核为全部抽样/R标签传输/作者聚合的结构审核，不声称独立图算法或全基因raw重放，更不是TCR/外部真值。真实试验4MiB生产+审核预算与RAM上界已预定，500GB+1GiB预留保留。
+- 本轮所有原权威Zarr/作者身份/CM/旧统计不改，科学数值/图/个体留私有，goal active。下一完整试验审阅后再决定全来源候选身份、T/NK细分或已有TCR/蛋白验证。当前不做最终亚型/状态/耐药或机制命名。
+- 小型取证失败：一次本机检索提到不存在的辅助脚本只报路径错误；此前完整命令Unicode stdin失败已改UTF8文件，无远端影响。web两完整论文页验证码/403不当全文阅读；取证仅作者摘要/索引方法，模型源码按不可变SHA另核。新源码AST/diff/完整仓库及脱敏发布接续，三无关文件保留。
+- Publication gate: all five new Python sources pass Python3.10 AST; actual server R4.3.3 parses the frozen real-pilot worker successfully at 10:25:12 UTC. git diff --check and full repository validation pass with0 errors/1 existing path warning. Code, methods, technical-only JSON and sanitized changes reviewed; three unrelated files retained. Suggested commit: analysis: close hard-rule calibration and launch official fixed scGate pilot.

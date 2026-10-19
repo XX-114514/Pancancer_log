@@ -1,3 +1,7 @@
+## 2026-10-19T10:19:02 UTC /2026-10-19T18:19:02 UTC+8 原生计数接受，身份科学资格分开；scGate试验运行
+
+RNA硬规则完整计数/有界raw审核通过，科学审阅未接受直接扩展，不改原作者身份；旧全来源草案未执行。官方scGate/UCell任务本地软件和合成兼容性已接受；固定四槽/均匀20000细胞[真实试验](methods/gamma-delta-scGate-pilot-20261019.md)正在提取既有RNA，尚无新接受的scGate身份、临床或机制结论。科学数据私有，goal active。
+
 ## 2026-10-19T09:46:00 UTC /2026-10-19T17:46:00 UTC+8 新RNA候选识别正在运行
 
 全缓存作者字段/原生feature范围接受；用户新增γδ T RNA候选分支已开始全部原NSCLC原生计数，审核等待同一生产，真实候选统计未接受。下一按固定多基因规则核作者混淆再外推，尚无正式身份或验证。[方案](methods/gamma-delta-RNA-candidate-identification-20261019.md)，科学输出私有，goal active。
