@@ -88,3 +88,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [20261020 全来源固定接口分流与HNSCC](20261020_fixed_interface_source_routing_HNSCC_v1.md)：完整metadata字段修复/来源mask、真实RNA和全部固定推断复算及私有科学审阅已接受。
 
 - [20261020 已缓存bulk固定接口](20261020_cached_bulk_fixed_interface_v1.md)：完整资格、原生RNA/全部数值及私有整批科学/实际图接受；发布许可待。
+
+- [20261020 CM代理证据整合与内部留出](20261020_CM_proxy_balance_internal_CV_v1.md)：全原证据/内部诊断/数学/私有科学及实际图已接受，失败保留；发布许可待。

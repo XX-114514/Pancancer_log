@@ -1,0 +1,43 @@
+{
+  "observed_UTC": "2026-10-19T19:45:26.945041+00:00",
+  "status": "FULL_EXISTING_CM_EVIDENCE_REVIEW_EXACT_BALANCE_AND_INTERNAL_CV_V3_LAUNCH_PENDING_ACCEPTANCE",
+  "original_312_effect_file_SHA256": "9a610df8820292b765d74d494fb9e952b15904bdcc632c2c3b60fc1a96c479f0",
+  "original_primary_families_and_controls_unchanged": true,
+  "frozen_diagnostic_plan_SHA256": "360a9474b81ceabbe66c8050a90045948ad78e5b2d6a785429037cdc9f101230",
+  "source_SHA256": {
+    "run_CM_proxy_balance_internal_CV_v1.py": "83bbb268a22a37e10ac5c5c407d7ad26313f6ea6bf4f4169f98a856a055bb193",
+    "run_CM_proxy_balance_internal_CV_v2.py": "e34668ee0763473f2f885c68b948e4dfdaf77d0c55d5c102e62e7f8f3e9c4429",
+    "run_CM_proxy_balance_internal_CV_v3.py": "4a5f2eb1b1856b4d42fe0ec65c835a17627c7835f7797f9959394af3c4ac1c0d"
+  },
+  "registered_source_module_positions": 12,
+  "registered_performance_contrasts": 24,
+  "folds": 5,
+  "fixed_repeats": 10,
+  "new_P_or_FDR_family": false,
+  "v1_exception_class": "AssertionError",
+  "v1_source_lines": [
+    191,
+    176,
+    124,
+    45,
+    15
+  ],
+  "v1_reason": "Default IRLS final covariance differs from independently evaluated final information; original numeric tolerance retained",
+  "v2_exception_class": "AssertionError",
+  "v2_source_lines": [
+    191,
+    181,
+    98,
+    15
+  ],
+  "v2_reason": "New comparison stricter than accepted parent optimizer interval precision; parent model exactly replayed before repair",
+  "v2_repair": "Only tighten GLM convergence tolerance and maxiter; same model, scoring, splits and gates",
+  "v3_repair": "Exact monotone transform of existing accepted point/CI for mismatch; no replacement parent CI or new P. Compare high-precision refit at original parent audit numerical tolerance.",
+  "all_CV_score_split_fit_and_metric_code_identical_v2_v3": true,
+  "all_original_increment_models_replayed_before_v3": true,
+  "no_real_RNA_scores_models_predictions_or_random_arrays_persisted": true,
+  "scientific_source_effects_counts_genes_or_individuals_public": false,
+  "public_push_and_new_external_clinical_CSV_specific_permissions_pending": true,
+  "no_denied_action_retried_or_bypassed": true,
+  "goal_status": "active"
+}

@@ -145,3 +145,5 @@
 - [已审HNSCC的固定接口治疗前互补问题](HNSCC-fixed-interface-baseline-complement-20261020.md)。
 
 - [既有bulk固定接口临床家族](cached-bulk-fixed-interface-clinical-family-20261020.md)：全物理轴/临床分母接受，新84临床与39描述事前固定。
+
+- [固定CM代理的平衡含义与内部留出](CM-proxy-balance-and-internal-CV-20261020.md)：原全临床证据、精确min重参数化及训练CDF隔离；无新P。

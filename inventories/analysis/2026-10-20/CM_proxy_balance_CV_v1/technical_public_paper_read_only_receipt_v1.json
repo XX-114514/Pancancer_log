@@ -1,0 +1,22 @@
+{
+  "url": "https://www.nature.com/articles/s41698-026-01615-7_reference.pdf",
+  "bytes": 2945530,
+  "SHA256": "fdb6379d30c897b98227e950a53749e8161b9eb8b6ccd77ec99c107cd4cce7a2",
+  "pages": 40,
+  "complete_relevant_zero_based_pages_read": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    17,
+    18,
+    19,
+    20
+  ],
+  "paper_only_no_supplement_or_expression_download": true,
+  "status": "PUBLIC_PAPER_ONLY_READ_RELEVANT_COMPLETE_PAGES_AND_ACTUAL_RENDER",
+  "actual_page8_visual_review": true,
+  "no_public_PDF_or_adapted_figure_redistribution": true
+}
