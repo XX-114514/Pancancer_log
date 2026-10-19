@@ -1,0 +1,20 @@
+{
+  "observed_UTC": "2026-10-19T19:25:38.973472+00:00",
+  "status": "V1_STOPPED_KEY_TYPE_MISMATCH_V2_LAUNCHED_SAME_SCIENCE",
+  "v1_terminal_absent_original_process_stopped": true,
+  "v1_exception_class": "AssertionError",
+  "v1_source_lines": [
+    192,
+    176,
+    152
+  ],
+  "v1_source_SHA256": "b8db0b06184ae68efb3d544f553f28b0e4ad40d09a4357740df1a9bed95369c7",
+  "v2_source_SHA256": "ee6d4ce1b9f80c37d01c94811ce33e5bb2e914952357a80076e5ac993acade6e",
+  "v2_launch_UTC": "2026-10-19T19:24:48.348988+00:00",
+  "fixed_plan_SHA256": "595950347ed10e52e02826a8ca7dbc4251cc194df06c5298d27ad0e137aa61c0",
+  "all_model_and_score_functions_unchanged": true,
+  "raw_text_legacy_keys_exactly_preserved_before_set_index": true,
+  "all_individual_values_private": true,
+  "public_push_permission_still_pending": true,
+  "goal_status": "active"
+}

@@ -143,3 +143,5 @@
 
 - [固定接口的全部缓存来源轴与分流](fixed-interface-cached-source-axis-routing-20261020.md)。
 - [已审HNSCC的固定接口治疗前互补问题](HNSCC-fixed-interface-baseline-complement-20261020.md)。
+
+- [既有bulk固定接口临床家族](cached-bulk-fixed-interface-clinical-family-20261020.md)：全物理轴/临床分母接受，新84临床与39描述事前固定。
