@@ -1,0 +1,23 @@
+{
+  "observed_UTC": "2026-10-19T21:20:20.752599+00:00",
+  "goal_status_returned": "blocked",
+  "blocked_audit_passed": true,
+  "same_remote_transport_blocker_consecutive_goal_turns": 3,
+  "previous_turn_classification": "progress_source_reference_count_bounds",
+  "current_turn_classification": "no_scientific_progress_same_external_blocker_revalidated",
+  "current_exact_task_status_probe_exit_code": 255,
+  "current_probe_failed_before_remote_result": true,
+  "remote_scientific_terminal_not_observed": true,
+  "no_verified_live_scientific_handle_claimed": true,
+  "no_remote_task_restart_or_termination": true,
+  "local_aggregate_scope_checks_complete": true,
+  "next_required_original_RNA_and_library_inputs_unavailable_locally": true,
+  "reviewed_source_aggregates_cannot_replace_individual_native_RNA_analysis": true,
+  "completion_not_proven": true,
+  "scientific_relationship_evidence_still_incomplete": true,
+  "existing_original_project_labels_and_results_preserved": true,
+  "SSH_and_Clash_configuration_unchanged": true,
+  "new_data_or_previously_denied_followup_CSV_not_transferred": true,
+  "previously_denied_public_push_not_retried": true,
+  "next": "Human confirms restored server SSH access; inspect exact original gamma task control/terminal before resuming reference support and native-library analysis."
+}
