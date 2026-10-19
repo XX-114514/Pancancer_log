@@ -92,8 +92,7 @@ def choose(x,y,groups,kind):
         rows.append(dict(parameter=param,inner_fold='mean',score=value,converged=bool(np.isfinite(value))))
     means=[r for r in rows if r['inner_fold']=='mean']
     best=max(means,key=lambda r:r['score'])
-    assert np.isfinite(best['score']),'No converged inner validation model'
-    return best['parameter'],rows
+    return (best['parameter'] if np.isfinite(best['score']) else None),rows
 
 
 def save_bundle(path,bundle,cols,tr,te):
@@ -106,7 +105,7 @@ def save_bundle(path,bundle,cols,tr,te):
 def main(a):
     budget(a.root,2*1024**3)
     original=a.root/'reference_native_inputs_v2'
-    audit=a.root/'reference_native_audit_v1/independent_native_audit_technical_public.json'
+    audit=a.root/'reference_native_audit_v2/independent_native_audit_technical_public.json'
     assert json.loads(audit.read_text())['producer_terminal_sha256']==sha(original/'native_input_technical_public.json')
     cpath=a.root/'reference_scope_v1/private_frozen_reference_contract.json';c=json.loads(cpath.read_text())
     meta=pd.read_csv(original/'private_selected_reference_metadata.tsv.gz',sep='\t',keep_default_na=False)
@@ -135,10 +134,11 @@ def main(a):
     # Saved technical realization allows an independent numerical replay.
     np.save(out/'private_fixed_capture_stress_counts.npy',thin)
     sx_lineage,stress_good_lineage=prepare(thin,lc);sx_programme,stress_good_programme=prepare(thin,pc)
-    rows=[];classrows=[];innerrows=[];predictions=[]
+    rows=[];classrows=[];innerrows=[];predictions=[];missing_gene_rows=[]
     groups=meta.patient_block.astype(str).to_numpy();sources=meta.dataset.astype(str).to_numpy()
     lineage_mask=meta.lineage_evaluation_row.astype(str).str.lower().isin(['true','1']).to_numpy() & good_lineage
     targets=native['original_full_signature_UCell1500']
+    core_counts=native['core14_native_counts'];native_total=native['full_native_total']
     programme_mask=meta.lineage.eq('T').to_numpy() & np.isfinite(targets).all(1) & good_programme
     for holdout in c['sources']:
         for kind,valid,x,sx,cols,stressgood in [
@@ -151,6 +151,14 @@ def main(a):
             param,inner=choose(x[tr],y[tr],groups[tr],kind)
             for r in inner:r.update(holdout=holdout,kind=kind)
             innerrows.extend(inner)
+            if param is None:
+                for mode in ['native','matched_depth_stress']:
+                    for target in (['regulatory','cytotoxic'] if kind=='programme' else ['lineage']):
+                        rows.append(dict(holdout=holdout,kind=kind,mode=mode,target=target,
+                                         parameter=np.nan,test_cells=len(te),test_cases=len(set(groups[te])),
+                                         macroF1=np.nan,rho=np.nan,coverage_eligible=False,converged=False,
+                                         status='NO_CONVERGED_ESTIMABLE_INNER_VALIDATION_MODEL'))
+                continue
             bundle=fit(x[tr],y[tr],groups[tr],param,kind)
             assert bundle[3], 'Outer model did not converge'
             save_bundle(out/'models'/(holdout+'_'+kind+'.npz'),bundle,cols,tr,te)
@@ -183,11 +191,17 @@ def main(a):
                                          zero_input_cells=int((~ok[te]).sum())))
                         predictions.append(pd.DataFrame(dict(reference_row=te,holdout=holdout,kind=kind,mode=mode,target=name,
                                                               truth=y[te,j],predicted=p[:,j],pressure_positive_input=ok[te])))
+                        for gene in (['TNFRSF18'] if name=='regulatory' else ['CTSW','GZMB','NKG7']):
+                            signal=np.log1p(core_counts[te,c['core14'].index(gene)]/native_total[te]*10000)
+                            missing_gene_rows.append(dict(holdout=holdout,mode=mode,target=name,missing_spatial_gene=gene,
+                                                         programme_prediction_vs_native_gene_rho=wrho(signal,p[:,j],w),
+                                                         not_imputed_gene_counts=True))
             print(json.dumps(dict(phase='whole_study_fold_finished',holdout=holdout,kind=kind)),flush=True)
     metrics=pd.DataFrame(rows);classes=pd.DataFrame(classrows)
     metrics.to_csv(out/'private_all_model_metrics.tsv',sep='\t',index=False)
     classes.to_csv(out/'private_all_class_precision_recall.tsv',sep='\t',index=False)
     pd.DataFrame(innerrows).to_csv(out/'private_all_inner_case_validation.tsv',sep='\t',index=False)
+    pd.DataFrame(missing_gene_rows).to_csv(out/'private_missing_spatial_marker_recovery_diagnostics.tsv',sep='\t',index=False)
     pd.concat(predictions,ignore_index=True).to_csv(out/'private_all_heldout_predictions.tsv.gz',sep='\t',index=False,compression='gzip')
     gates=[]
     for mode in ['native','matched_depth_stress']:
