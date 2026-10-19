@@ -1,0 +1,13 @@
+{
+  "status": "ALL_OUTER_MODEL_PREDICTIONS_PATIENT_SOURCE_SPLITS_METRICS_AND_ENGINEERING_GATES_INDEPENDENTLY_ACCEPTED",
+  "finished_utc": "2026-10-19T14:01:34.236165+00:00",
+  "outer_models": 6,
+  "replayed_prediction_values": 1744612,
+  "maximum_prediction_difference": 2.4424906541753444e-15,
+  "inner_parameter_selection_replayed_from_all_frozen_scores": true,
+  "no_claim_all_inner_optimizers_independently_refit": true,
+  "producer_terminal_sha256": "924a5c117fffe6b069b250ca667d0fae2b69735c7166c38ac3adac998214a056",
+  "auditor_sha256": "fa29d15182fd83c09408a813e2cd49eb137f39aa78834c3a7f025f0701e035b0",
+  "scientific_metrics_gates_predictions_not_in_public_receipt": true,
+  "no_spatial_inference_run": true
+}

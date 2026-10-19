@@ -1,0 +1,83 @@
+{
+  "status": "ALL8_SERVER_PUBLIC_FILES_LENGTH_RANGE_MD5_AND_ACCEPTED_LOCAL_SHA_VERIFIED",
+  "finished_utc": "2026-10-19T14:13:26.008077+00:00",
+  "total_bytes": 171194934,
+  "files": [
+    {
+      "name": "single_cell_portal/counts/features.tsv.gz",
+      "relative_path": "single_cell_portal/counts/features.tsv.gz",
+      "bytes": 1354,
+      "sha256": "ea573daae89028fc4af486698a9644e67eaeb4d326c5e971c0a2dd759b899bc4",
+      "official_md5": "72e728889d141f6eae552ee9b26d8dcb",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    },
+    {
+      "name": "spatial_Pt43",
+      "relative_path": "single_cell_portal/spatial_Pt43.txt.gz",
+      "bytes": 1372265,
+      "sha256": "8a782091c63f51dd7249f2d442358d0543ba0e2efe883006965d2250a37bf4fc",
+      "official_md5": "21a228a0944d3e0460b53de9ddb8fd52",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    },
+    {
+      "name": "spatial_Pt73",
+      "relative_path": "single_cell_portal/spatial_Pt73.txt.gz",
+      "bytes": 2342533,
+      "sha256": "9500549202baca4b732b6baf49bfc3708c9f9f7208d042b73140d09b33cfae88",
+      "official_md5": "170d3addb5fdf827d7f7aad34663bdf2",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    },
+    {
+      "name": "single_cell_portal/counts/barcodes.tsv.gz",
+      "relative_path": "single_cell_portal/counts/barcodes.tsv.gz",
+      "bytes": 3076267,
+      "sha256": "64c48276059114081b35eb6494c555520692943275d86f43b53ca9ead58aa56b",
+      "official_md5": "820ef960a97447a96b170c9b7fb6004a",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    },
+    {
+      "name": "spatial_Pt67",
+      "relative_path": "single_cell_portal/spatial_Pt67.txt.gz",
+      "bytes": 5678300,
+      "sha256": "b1600b088a592e861a572dd787ff2796fc63719c4ff17591817f802aaf8c013c",
+      "official_md5": "73bc14fe18bc7e34174663931c0f7cde",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    },
+    {
+      "name": "spatial_Pt38",
+      "relative_path": "single_cell_portal/spatial_Pt38.txt.gz",
+      "bytes": 6779710,
+      "sha256": "4a2e53db33455ee503b68941a5acb42ce24ee93f14b8a5737ddb0d245943efa8",
+      "official_md5": "e832d2e3fcadceb05beee5ce8431733d",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    },
+    {
+      "name": "single_cell_portal/metadata.txt.gz",
+      "relative_path": "single_cell_portal/metadata.txt.gz",
+      "bytes": 12570244,
+      "sha256": "f9c954088d4523c54909a4e7d05ed385f770639802a2a699ff4be7e2902dce99",
+      "official_md5": "a99b161567704ca675469a446e1f535a",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    },
+    {
+      "name": "single_cell_portal/counts/counts.mtx.gz",
+      "relative_path": "single_cell_portal/counts/counts.mtx.gz",
+      "bytes": 139374261,
+      "sha256": "ea2a614a115d5f0a200f64a2913f6de1f9c7148460accca5b7ca77c2f1735e2f",
+      "official_md5": "f0624881196b2a3a6b92b6c2290a9837",
+      "source": "SCP2510 public viewer file inventory",
+      "MD5_and_length_verified": true
+    }
+  ],
+  "anonymous_public_read_token_not_recorded": true,
+  "partial_older_transport_not_accepted": true,
+  "transport_workers": 16,
+  "range_chunk_bytes": 1048576
+}

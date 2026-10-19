@@ -1,0 +1,11 @@
+{
+  "status": "ALL_SELECTED_REFERENCE_RAW_COUNTS_PHYSICAL_AXES_METADATA_AND_NATIVE_UCELL_INDEPENDENTLY_ACCEPTED",
+  "finished_utc": "2026-10-19T13:49:20.184412+00:00",
+  "selected_cells": 181076,
+  "shared_panel_values_replayed": 85286796,
+  "full_signature_scores_replayed": 156926,
+  "maximum_UCell_difference": 0.0,
+  "producer_terminal_sha256": "9e255e593cf9b88b2c830f97094d9663375edad457270e6d91e1b4dc0cdb911f",
+  "auditor_sha256": "b7b2fadecaf52c4fb0c98aa0e7663ec05f716e0192f7aa1a344433cb4ada2c57",
+  "no_model_fit_or_spatial_effect": true
+}
