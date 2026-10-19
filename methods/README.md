@@ -1,3 +1,5 @@
+[真实原生空间分区多视图](native-spatial-blocked-multiview-20261020.md)：官方单视图RF、外层空间缓冲/训练融合/完整家族；真实模型运行待审核。
+
 [原生空间状态代理的相同探针口径](native-spatial-state-probe-matching-20261020.md)：最大来源组固定、全部父ID映射及作者T/严格巨噬捕获，先测量后空间。
 
 [身份内质量调整的面板外保真度](state-panel-quality-adjusted-disjoint-fidelity-20261020.md)：复用全91447细胞和814×4测量范围，先评技术转移，再决定新空间问题。

@@ -1,0 +1,21 @@
+{
+  "created_UTC": "2026-10-19T16:58:00.257633+00:00",
+  "audit_source_sha256": "8e3519543dac425957d9386c21192c63229f57c635471b3a37854cfb7d734aee",
+  "producer_terminal_sha256": "e187616ee043701294421c002444973803684be0a1fd34d4a050c4fa4d5e0bbe",
+  "full_family_positions": 126,
+  "all_aggregate_errors_recomputed": true,
+  "preselected_direct_refit": {
+    "image_ordinal": 0,
+    "target_ordinal": 0,
+    "outer_fold": 0,
+    "readouts": [
+      "RAW",
+      "NEGATIVE_EXCESS"
+    ]
+  },
+  "refit_independent": "DIRECT_SKLEARN_FORESTS_AND_EXPLICIT_CENTERED_RIDGE_NORMAL_EQUATIONS",
+  "reuse_already_accepted_input_transform": true,
+  "all_models_independently_retrained": false,
+  "no_second_raw_archive_replay": true,
+  "scientific_effects_not_reviewed_when_selecting_refit": true
+}

@@ -1,0 +1,17 @@
+{
+  "status": "REAL_BLOCKED_MULTIVIEW_LAUNCHED_PENDING_AUDIT",
+  "started_UTC": "2026-10-19T16:54:59.613156+00:00",
+  "pid": 34922,
+  "start_ticks": 324399828,
+  "producer_sha256": "9c61ae19866eb128b010b07f4c4ce56de512a5ed88750d57fc4bd3c423b15def",
+  "plan_sha256": "6294b3f5684ba4df0270a0dfa0546df57854a7eac688fdddebb4cec2f604731e",
+  "fixture": {
+    "status": "PASS_OFFICIAL_RF_CUSTOM_TRAIN_ONLY_FUSION_DETERMINISM_AND_EQUAL_FIELD_ERROR_AGGREGATION",
+    "no_heldout_outcome_argument_in_fit_function": true,
+    "capacity_matched_three_RF_comparisons": true,
+    "synthetic_only": true,
+    "actual_official_RF_backend": true,
+    "explicit_weighted_observed_mass_and_structural_zero": true
+  },
+  "model_positions": 126
+}

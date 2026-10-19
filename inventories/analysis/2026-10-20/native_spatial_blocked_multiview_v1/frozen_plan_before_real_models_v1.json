@@ -1,0 +1,60 @@
+{
+  "version": "native_spatial_blocked_multiview_v1",
+  "created_UTC": "2026-10-19T16:54:50.969165+00:00",
+  "producer_sha256": "9c61ae19866eb128b010b07f4c4ce56de512a5ed88750d57fc4bd3c423b15def",
+  "helper_sha256": {
+    "spatial_blocked_multiview_math_v1.py": "d0d66cdf0ddc1940047a6fd744e89e6aca9342eb1ef48d96f18f463357a50816",
+    "author_spatial_inflow_math_v1.py": "9305ddc589bada8e207314f2fce8b44fc518c4da4ebe0a4df1cf4cc06b5b79f1"
+  },
+  "private_contract": "/dev/shm/pancancer-native-state-probe-match-20261020-v1/private_output/private_frozen_matched_measurement_and_target_contract.json",
+  "private_contract_sha256": "0d6f8e2bac99780b7a7b211c33468ae243ece7920167c3ce85fcf465d994345e",
+  "full_input_scope": 14,
+  "native_images": 4,
+  "frozen_target_positions": 63,
+  "readouts": [
+    "RAW",
+    "NEGATIVE_EXCESS"
+  ],
+  "full_model_positions": 126,
+  "min_cells_per_lineage_and_field": 30,
+  "all_frozen_proxies_raw_capture_qualified": true,
+  "duplicate_centroids": "EXCLUDE_ALL_DUPLICATES",
+  "graph_domain": "QC_RNA_OBSERVED_ONLY",
+  "near": {
+    "k": 6,
+    "radius_multiplier": 2
+  },
+  "far": {
+    "k": 12,
+    "radius_multiplier": 5
+  },
+  "normalization": "ROW_OVER_ALL_QC_RNA_NODES",
+  "sender_feature": "OBSERVED_STATE_WEIGHTED_MASS_NOT_MISSING_RNA_IMPUTATION",
+  "minimum_common_fields": 6,
+  "outer_geometry_regions": 3,
+  "buffer": "MAXIMUM_INCLUDED_FAR_RADIUS_FROM_ALL_HELDOUT_RNA_NODES",
+  "minimum_buffered_train_fields": 3,
+  "minimum_buffered_train_cells_per_field": 30,
+  "train_cells_per_field_cap": 80,
+  "equal_train_field_cells": true,
+  "equal_test_field_weight": true,
+  "all_three_folds_required": true,
+  "RF_trees": 64,
+  "RF_leaf": 5,
+  "RF_max_features": "sqrt",
+  "RF_threads": 1,
+  "workers": 2,
+  "model": "OFFICIAL_LIANA_SINGLE_VIEW_RF_WITH_CUSTOM_SPATIAL_OUTER_AND_TRAIN_ONLY_OOB_RIDGE_FUSION",
+  "baseline_RF_count": 3,
+  "multiview_RF_count": 3,
+  "ridge_alpha": 1.0,
+  "seed_namespace": "20261020_native_spatial_MV",
+  "test_outcome_used_for_fitting": false,
+  "clinical_testing": false,
+  "FDR_testing": false,
+  "outputs": "TMPFS_PRIVATE_AGGREGATES_ONLY_NO_RNA_SCORE_GRAPH_MODEL_OR_CELL_PREDICTIONS",
+  "minimum_tmpfs_free_bytes": 536870912,
+  "maximum_aggregate_output_bytes": 33554432,
+  "unknown_patient_identity_preserved": true,
+  "no_new_raw_downloads": true
+}
