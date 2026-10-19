@@ -1,0 +1,11 @@
+{
+  "observed_UTC": "2026-10-19T00:09:52.388196+00:00",
+  "stage": "ALL_THREE_QUESTION_INPUTS_INDEPENDENTLY_ACCEPTED_TRUE_EFFECTS_NOT_STARTED",
+  "input_terminal_sha256": "9baac73ab60e3efb2e9042dcc93fad806ef09108dc917f41bc5b935527f7d869",
+  "input_audit_sha256": "f8bc21b4a522b108d71aee77f107b774a28c1ef0665bddfe5de2f21c1c5196c1",
+  "original_input_audit_sha256": "9f756ac9ee50959fc1c840e7925fa763ea4d4094bddaa95d46b0d392ba959e7a",
+  "all_original_assay_values_unchanged": true,
+  "all_added_component_values_and_deleted_QR_checked": true,
+  "new_expression_download": false,
+  "goal_status": "active"
+}

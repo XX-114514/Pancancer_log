@@ -1,0 +1,17 @@
+{
+  "observed_UTC": "2026-10-19T00:07:05.730776+00:00",
+  "stage": "COMPLETE_FUNCTION_INPUTS_INDEPENDENTLY_ACCEPTED_TRUE_EFFECTS_NOT_STARTED",
+  "reference_slots": 50,
+  "source_partitions": [
+    129,
+    87
+  ],
+  "input_terminal_sha256": "fc66f654e4a0fd9a217f77e58e5910f31dca5a86de0dc9e405d171eaf25d71b3",
+  "input_audit_sha256": "9f756ac9ee50959fc1c840e7925fa763ea4d4094bddaa95d46b0d392ba959e7a",
+  "input_audit_completed_UTC": "2026-10-19T00:06:23.481581+00:00",
+  "maximum_score_reconstruction_difference": 0.0,
+  "inherited_raw_audit_units": 64,
+  "all_native_units_independently_raw_replayed": false,
+  "new_expression_download": false,
+  "goal_status": "active"
+}
