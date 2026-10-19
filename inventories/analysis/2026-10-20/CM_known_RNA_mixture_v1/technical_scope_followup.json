@@ -1,0 +1,16 @@
+{
+  "observed_UTC": "2026-10-19T20:59:41.946035+00:00",
+  "status": "REFERENCE_PARTITION_SCOPE_LIMIT_AND_EXISTING_METADATA_FOLLOWUP_RECORDED",
+  "private_scope_followup_SHA256": "a441635cf0c34a78c9400d0a88751bbae524b41dbb1404fb6f7374987c317948",
+  "private_background_scope_SHA256": "1e601c29d2ffb28bdc461606472c94506f93163d3814ce1913a6675c2daffec1",
+  "private_existing_metadata_qualification_SHA256": "3f89ec4d3e1e18a1b0825622b5efcdbf0bddc9192160c45157ba3be6d6fd649c",
+  "Other_assigned_is_multiple_original_major_types": true,
+  "coarse_basis_not_full_original_major_reference": true,
+  "full_original_major_coverage_required_before_future_quantitative_reference": true,
+  "conservative_shared_case_key_grouping_does_not_establish_patient_independence": true,
+  "new_RNA_or_denied_followup_table_read": false,
+  "source_scientific_composition_counts_or_individual_tokens_public": false,
+  "original_annotation_unchanged": true,
+  "public_push_specific_permission_pending": true,
+  "goal_status": "active"
+}

@@ -151,3 +151,5 @@
 - [固定CM面板全大类RNA来源](CM-fixed-panel-all-lineage-RNA-sources-20261020.md)：全部大类/范围，固定面板与同细胞双臂，不新增临床P。
 
 - [CM分组基因排除后的来源留出参考](CM-marker-disjoint-reference-diagnostic-20261020.md)：实际缓存资格、全部类别保留及QC基线。
+
+- [CM已知RNA混合可辨识性](CM-known-RNA-mixture-calibration-20261020.md)：完整basis、来源留出及材料压力测试，不混同细胞比例。

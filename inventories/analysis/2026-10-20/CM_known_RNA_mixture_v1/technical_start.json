@@ -1,0 +1,18 @@
+{
+  "observed_UTC": "2026-10-19T20:38:06.875384+00:00",
+  "status": "FULL_BASIS_KNOWN_RNA_MIXTURE_CALIBRATION_STARTED_REVIEW_PENDING",
+  "actual_launch_UTC": "2026-10-19T20:36:34.292858+00:00",
+  "source_SHA256": "af2705f6e24d0e2e44218cb2fbdb1affe51d4e9cc40744efe0e4d3f6f7bcb5b9",
+  "configuration_SHA256": "3e8203609c55380c0e86a41799e7fc47dfa52d69763244d444d0b1bb37bd1cb7",
+  "registered_source_scaling_contexts": 8,
+  "full_basis_classes": 10,
+  "registered_RNA_targets": 17,
+  "source_pooled_regimes": 4,
+  "source_library_stress_prespecified": true,
+  "synthetic_exact_recovery_and_duplicate_basis_fixture_accepted": true,
+  "all_human_expression_profiles_random_truth_estimates_weights_RAM_only": true,
+  "no_new_clinical_P_FDR_or_labels": true,
+  "original_project_read_only": true,
+  "public_push_specific_permission_pending": true,
+  "goal_status": "active"
+}
