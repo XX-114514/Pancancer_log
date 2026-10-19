@@ -1,3 +1,7 @@
+## 2026-10-19T12:29:14 UTC /2026-10-19T20:29:14 UTC+8 γδ候选注释诊断与证据表合并完成
+
+完整非序列注释/全部群与旧通道独立审核通过，原候选并集保留全部原行/列、新注释字段逐行核对。科学审阅私有，缺失不当阴性，未新增γδ受体功能证明或正式身份。[方法/边界](methods/gamma-delta-alpha-beta-annotation-diagnostic-20261019.md)。无新通讯/临床P，goal active。
+
 ## 2026-10-19T12:04:33 UTC /2026-10-19T20:04:33 UTC+8 αβ处理后注释分段接收中；全空间测量/坐标范围完成
 
 αβ诊断旧完整GET未过长度校验，在记录解析前停止；新v2同字段/键/缺失规则、已核生产和审核原句柄存活，仍无科学计数。全部14空间分子/坐标来源范围已完成，测量机会不等于细胞/邻域验证。[αβ方法](methods/gamma-delta-alpha-beta-annotation-diagnostic-20261019.md)、[空间范围](methods/NSCLC-complementary-spatial-interface-scope-20261019.md)。原作者/候选/CM不改，goal active。

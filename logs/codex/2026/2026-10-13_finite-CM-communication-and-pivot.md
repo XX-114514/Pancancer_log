@@ -1554,3 +1554,17 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 小型只读取证修正：一次zsh无匹配glob未读文件，改rg --files；复核既有日志已确认用户mmc2.xlsx是HNSCC资料，不重导入/误当当前NSCLC身份表。新代码AST、轻量合成、完整仓库及脱敏diff检查接续；三份无关工作保留。整体goal active，当前αβ源仍网络接收，完整主线目标没有缩为技术完成。
 
 - 12:11:37 UTC /20:11:37 UTC+8补充核验：原生产415699/start322618138与审核416004/start322622371仍存活，原分段记录12:09:05.301388 UTC为8388608/15940803字节、8段已核，无错误/生产或审核终态。不是任务完成比例或新科学结果。Publication gate: all8 new Python sources pass3.10 AST; original missing/format/no-chain-stitching fixture passes; full repository validation0 errors/1 existing path warning; git diff --check passes. Reviewed generic source, methods, technical JSON and sanitized changes. No selected metadata rows, sequences, genotype values, weights, scientific effects or figures staged; three unrelated files retained. Suggested commit: analysis: start exact alpha beta metadata diagnostic and qualify spatial scope.
+
+
+## 2026-10-19T12:29:14 UTC /2026-10-19T20:29:14 UTC+8 完整非序列注释与候选证据合并完成
+
+- 上一pending内容bff88621d74d3e7e9913dfcb8760e363c2ebec4e于12:13:40.940847 UTC普通push，12:13:47.386047 UTC独立HTTPS核main一致，临时中转已关闭。本轮继续原作业，未因观察中断重启。
+- 本机前代理端口已无监听，当前代理另端口已核监听；受限网络下连接失败，授权网络执行经当前代理恢复。没有修改用户配置/认证/主机校验。远端生产/审核仍为原PID/startticks，不能把本机观察通道变化误称分析失败；只更改另版任务本地包装器。
+- 12:23:21.518002 UTC全部16段/15940803压缩字节核验；12:23:49.093692 UTC生产完成fd1bc131cc4fda0d2ddf55faaac21f67b4b69df24ba493c20732493d6d2644bc。完整处理后压缩对象仅RAM；九字段最小化表6993674字节/旁表652398字节私有落盘。CDR3/克隆字段未使用/持久化，无新原始测序或表达下载。
+- 12:27:19.993161 UTC独立审核fb378d3a964edec099990a4f7d74286198b437ee0999a2432ba0b7858eb3d471通过：全部最小九字段另一CSV引擎重读，完整RNA键/重复/组件/同原行完整链、51群/3264模式/20通道逐项一致；独立2MiB源前缀的8192记录字段/顺序一致。不是第二次全原源重放或受体生物学金标准。
+- [原证据合并](../../../methods/gamma-delta-alpha-beta-annotation-diagnostic-20261019.md)计算前固定全部原并集行/列保留，新增三类注释描述码；无源记录不能当阴性。代码ee3ef64e24faa020465368eba5c2436405716b6ea434712a4c833ff2d2477a5a于12:28:07.326216 UTC一次启动，12:28:09.624679 UTC完成2d19ac4fa9dfdbb0f246d71e5cd9e8a5c72ae863fbc87ea84208ed821d60749f。原列逐项一致，新字段另建字典逐行核验，完整18描述位置核总数及两原参考分母；私有旁表176800字节。工程逐行检查不冒称独立生物学复核。
+- 私有科学审阅12:29:07.662108 UTC完成1f585b3fccb94ff74f406ac7f6ec0cbee6c4cdd9276d9c55c86fd75d4e739e36。科学计数/解释/优先级仅私有及获准来源级对话；公共Git只代码/方法/技术维度和SHA，不含患者/细胞记录、序列、矩阵或科学结果。未以αβ缺失确认γδ，未以αβ注释直接判双细胞/错误作者。所有原身份/状态及2026年10月CM（v20261010）保持，无新通讯或临床P。
+- 小型取证失败：一次监控把输出目录名误作控制stem，FileNotFoundError；改按真实脚本stem核两原日志无错误，这是观察命令路径错误。一次本机日志更新在解释器解析中文时失败，无文件变更；另版UTF-8文件以明确Python运行时执行。新代码Python3.10 AST通过，真实逐行核验完成，仓库/diff gate接续，三份无关工作保留。
+- 整体goal active。下一按证据另立身份敏感性或跨来源分类校准，不能按通讯/临床效果调身份门槛；原精确γδ通讯的身份证据限制保留。
+
+- Publication gate: new source passes Python3.10 AST; real metadata join checked every selected row/new field and all original columns. Full repository validation completed with 0 errors/1 pre-existing path warning; git diff --check passes. Reviewed complete new source, method, technical JSON and sanitized diffs. No scientific values, cell records, sequences, annotation values, learned gene weights or matrices staged. Suggested commit: analysis: complete gamma candidate annotation evidence audit and join.
