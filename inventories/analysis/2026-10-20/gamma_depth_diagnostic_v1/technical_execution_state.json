@@ -1,0 +1,25 @@
+{
+  "observed_UTC": "2026-10-19T21:09:07+00:00",
+  "state": "EXECUTION_UNCONFIRMED_SSH_TRANSPORT_FAILURE",
+  "source": "GSE243013",
+  "method": "gamma-candidate-depth-diagnostic-20261020",
+  "production_command_dispatched": true,
+  "production_terminal_observed": false,
+  "same_task_read_only_status_probe_succeeded": false,
+  "direct_read_only_connection_probe_succeeded": false,
+  "production_restart_attempted": false,
+  "local_Python310_AST_check": "PASS",
+  "local_tied_depth_and_empty_bin_fixture": "PASS",
+  "new_scientific_results_accepted": false,
+  "formal_identity_changed": false,
+  "individual_data_or_sequences_exported": false,
+  "new_data_downloaded": false,
+  "public_push_attempted": false,
+  "next": "Read the exact original task terminal or process handle after transport recovery before considering any versioned retry. Preserve prior accepted candidate evidence.",
+  "producer_sha256": "d47c018d709bc34928b82ae77c26fb44e6fac2ab7d376532805c040df934b456",
+  "repository_validation": {
+    "exit_code": 0,
+    "errors": 0,
+    "preexisting_warnings": 1
+  }
+}
