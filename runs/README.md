@@ -82,3 +82,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 [完整资源/区域描述与公共数据资格](20261018_CM02_spatial_communication_extension_v1.md)：83,232分子位置和76区域位置全量独立接受，完整3技术输入/19文库共8图实际检查；新公共小文件已资格，未把分割片段当细胞或AC，原统计家族不重开。
 - [20261020 CM02分割与空间面板测量桥](20261020_CM02_spatial_panel_bridge_v1.md)：全作者细胞／参考与模型独立复核，科学准入与技术接受分开，完整条件描述私有。
+
+- [20261020 原作者入口与既有Bassez资格](20261020_original_author_and_Bassez_qualification_v1.md)：完整代码/表头与原生轴独立审核；临床传输未执行，科学分级私有。

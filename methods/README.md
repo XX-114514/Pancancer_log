@@ -137,3 +137,6 @@
 
 - [冻结通讯候选在原队列另一组记录中的一致性](NSCLC-frozen92-axis-within-cohort-consistency-20261019.md)。
 - [CM02分割、病例与空间面板测量桥](CM02-spatial-panel-bridge-20261020.md)：真实面板、病例／研究留出、测量压力与严格准入；作者T单臂条件描述另命名。
+
+- [原作者随访资料的效果前来源与单位资格](NSCLC-original-author-followup-qualification-20261020.md)：当前传输许可待定，真实处理未执行。
+- [既定接口在已缓存Bassez来源的互补问题](Bassez-fixed-interface-complement-20261020.md)：完整测量资格与缺失处理，非γδ同端点或临床应答验证。
