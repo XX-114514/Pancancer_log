@@ -63,3 +63,8 @@ git diff --check
 ## 技术QC与正式来源验收补充
 
 21:18 UTC+8四分片已[全量技术验收](../inventories/runtime/2026-10-11/QC_ACCEPTANCE.md)，technical_QC_acceptance_20261011_v1登记，不以accepted_*旧命名覆盖source门槛。patientfix_v2按稳定ID附加头颈癌元数据，原QC不改；collector旧pending仍指正式来源，技术状态以本新登记为准。clinical_sidecar_sha256=null不等于无来源证据，须核preflight.clinical_source、官方metadata与真实registry/obs。正式source acceptance正数登记出现时再扩展export合同。
+
+
+## 2026-10-19 旧Git与临时传输故障
+
+已观察服务器Git1.8.3.1会忽略GIT_SSH_COMMAND并调用默认ssh；需要带固定选项的可执行GIT_SSH包装器，不能把认证失败直接解释为原密钥失效。独立认证探针、实际Git调用轨迹和普通push分开检查，不记录密钥或完整调试日志。服务器直达GitHub443不可用而本机可达时，本任务曾用仅loopback的临时SSH中转完成同一已审提交的普通push，保持既有认证与主机校验，退出即关闭；它不是长期Codex代理/科学作业。原SSH观察中断不重启科学任务。最终仍要求独立HTTPS ls-remote/fetch核对main，未核对不称云端成功。
