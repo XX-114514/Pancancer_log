@@ -1580,3 +1580,16 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 新两源Python3.10 AST已通过，复用已接受数值算法并在真实计算核全部新模型；完整仓库与脱敏diff gate接续。保留三份无关未提交工作。下一核同生产/审核句柄，等待真实效应与限定范围核验，然后据结果而非P选择后续机制问题。
 
 - Publication gate: both new sources pass Python3.10 AST; full repository validation completed with 0 errors/1 existing path warning; git diff --check passes. Reviewed complete sources/method/technical JSON and sanitized diffs; scientific coverage and eventual effects remain private. No raw cell/clinical rows, expression/score matrices, receptor sequences or learned molecular values staged. During waiting, official article full-text request again returned403; no newly read Methods or protocol conclusion claimed. Suggested commit: analysis: launch fixed gamma receiver identity sensitivity.
+
+
+## 2026-10-19T12:55:52.565859+00:00 UTC /2026-10-19T20:55:52.565859+08:00 UTC+8 既定组装资格及两项描述完成，原身份敏感性继续
+
+- 前一节点内容b6cc4a0b36633c1f62c0cb9b3705d7467ac24c01于12:45:27.075269 UTC普通push、12:45:34.224954 UTC独立HTTPS核main，临时中转已关闭。上一goal turn为progress，原四口径覆盖/真实RNA读取改变本轮动作；本轮重核原生产/审核PID与startticks，未重启。
+- 等待期间按[独立效果前测量方案](../../../methods/native-fixed-ligand-assembly-qualification-20261019.md)复用现有全基因缓存，沿用此前私有请求f31d71f1efdc8450f346020733b0edea354a962eeec57bcc58328ba36bd890d0的指定组装补充，覆盖全部243作者记录及原129/其他114。不是重新挑基因、重开旧家族或将其他114称独立来源；特定组分代理不代表所有替代链/等位型，也不等于实际成熟蛋白。
+- 资格源d066c1a43860687b3962343477d988699f62dbef9b553a3d45a6dcd16061694d于12:49:47.470210 UTC一次启动，12:50:00.381970 UTC完成6eb4d53a6d61a75253d3c3eb418fe2da9ecbfe0f5bcec9539a69c2326690f545。当前所用全缓存SHA/物理列核验，原129可测记录的旧分数完全复原；全部边际阳性联合界限逐行满足0<=lower<=upper<=n，完整三来源分区描述。原缓存独立raw证明只覆盖预定64单元/7957细胞，不扩称全部新组分/所有单元独立重读。科学界限/比例只私有/获准来源对话。
+- 资格后另立结果后两项组装敏感性：原组分与此前指定补充，用完全相同原细胞、原记录/尺度/控制/块，旧P/BH/BY不变，不发新P。源d843b93d0e90a27800d19b135784ac1bea20f3f4859f6b216e8da4c30316f1e1于12:53:29.014584 UTC一次启动，12:53:38.486128 UTC完成08c023902dff9cbe4db1a428d257982309be76e078218100e7d6ddd6916f0af0；每个可估计模型另套nuisance与全删除块QR核效应/SE/留块。未称与正在计算的去αβ子群已做联合敏感性；完整分数只RAM，无新原始扫描或下载，两项真实效应留私有。
+- 原作者病理类别到0/1映射及模型方向已从当前243临床表和原129输入逐项核对；不得沿用与实际编码冲突的记忆/上下文方向。未改结局/原推断；具体类别数与方向解释只获准来源对话和私有审阅。官方主文仍403，未新取得完整Methods；公开结构摘要只支持既有组装问题，不冒称当前队列机制验证。
+- 原身份生产12:53:47.015750 UTC已真实读取1550079741/2010550708坐标，尚无终态；原审核同句柄依赖等待。当前仍是主线候选的身份/测量边界检查，不以RNA完整性或结果后参考区间宣称新验证。全表达/score数组不落盘，原身份/状态/2026年10月CM（v20261010）保持，goal active。
+- 两新源Python3.10 AST通过，真实模型另一QR检查完成；仓库/脱敏diff gate接续，原三份无关未提交工作保留。下一继续原身份句柄及固定1024接收参考raw前缀核验，完整审查七描述和相同记录基线，再据科学边界规划独立来源/空间问题。
+
+- Publication gate: both assembly sources pass Python3.10 AST; real old-score reconstruction/bound checks and alternate nuisance/all-deleted-QR effect checks completed. Full repository validation0 errors/1 old path warning; git diff --check passes. Reviewed complete code/method/technical JSON and sanitized diff, no scientific effects, gene identities/weights, per-record values, sequences or matrices staged. Suggested commit: analysis: qualify fixed ligand assembly and describe same-design sensitivity.

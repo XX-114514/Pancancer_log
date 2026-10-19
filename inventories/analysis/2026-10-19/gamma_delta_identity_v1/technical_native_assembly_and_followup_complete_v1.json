@@ -1,0 +1,20 @@
+{
+  "observed_UTC": "2026-10-19T12:55:52.565859+00:00",
+  "status": "complete_fixed_assembly_marginal_qualification_and_same_design_descriptions",
+  "qualification_source_sha256": "d066c1a43860687b3962343477d988699f62dbef9b553a3d45a6dcd16061694d",
+  "qualification_terminal_sha256": "6eb4d53a6d61a75253d3c3eb418fe2da9ecbfe0f5bcec9539a69c2326690f545",
+  "qualification_completed_UTC": "2026-10-19T12:50:00.381970+00:00",
+  "author_record_positions": 243,
+  "source_partition_positions": 3,
+  "followup_source_sha256": "d843b93d0e90a27800d19b135784ac1bea20f3f4859f6b216e8da4c30316f1e1",
+  "followup_terminal_sha256": "08c023902dff9cbe4db1a428d257982309be76e078218100e7d6ddd6916f0af0",
+  "followup_completed_UTC": "2026-10-19T12:53:38.486128+00:00",
+  "descriptive_followup_positions": 2,
+  "all_estimable_models_alternate_nuisance_and_deleted_QR_checked": true,
+  "whole_new_raw_positions_independently_replayed": false,
+  "original_formal_labels_changed": false,
+  "expression_or_score_arrays_persisted": false,
+  "new_P_or_FDR": false,
+  "scientific_values_public": false,
+  "goal_status": "active"
+}
