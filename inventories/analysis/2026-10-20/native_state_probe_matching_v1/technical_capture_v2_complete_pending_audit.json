@@ -1,0 +1,22 @@
+{
+  "observed_UTC": "2026-10-19T16:22:18.023950+00:00",
+  "goal_status": "active",
+  "goal_turn_classification": "progress",
+  "producer_completed_UTC": "2026-10-19T16:18:42.987874+00:00",
+  "producer_terminal_sha256": "efa79e09ea535391339ec81d4ecdbb0088500cea23d9ef003814d8c020ea2a1d",
+  "native_inputs": 4,
+  "native_cells": 190038,
+  "full_native_RNA_positions": 190038000,
+  "official_cached_proxy_reference_checks": 31,
+  "actual_cached_reference_cells": 91,
+  "target_independent_scalar_checks": 189,
+  "max_target_scalar_error": 0.0,
+  "field_proxy_positions": 2426,
+  "author_subtype_proxy_positions": 4846,
+  "output_audit_started_UTC": "2026-10-19T16:21:13.658166+00:00",
+  "output_audit_source_sha256": "c708fbcd50be4b6cfcb5164d5b5a53836b637303712fff41feb93fa6c281d03d",
+  "scientific_acceptance": false,
+  "no_score_expression_graph_arrays_written": true,
+  "new_spatial_or_clinical_effects": false,
+  "scientific_outputs_public": false
+}

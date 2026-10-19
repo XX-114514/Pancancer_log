@@ -1,0 +1,15 @@
+{
+  "observed_UTC": "2026-10-19T16:17:44.331314+00:00",
+  "v1_original_process_missing_no_terminal": true,
+  "exception_class": "AssertionError",
+  "failure_source_line": 83,
+  "unique_complete_native_metadata_join_independently_proven": true,
+  "selected_native_coordinates_and_area_exact": true,
+  "metadata_only_RNA_not_imputed": true,
+  "normal_superset_missing_duplicate_actual_reader_synthetic_cases_pass": true,
+  "v2_started_UTC": "2026-10-19T16:16:43.001601+00:00",
+  "v2_source_sha256": "261376550b89a020bbb5403f8fe4402a063264b116957460f743bd77c4080036",
+  "v2_plan_sha256": "b605dfe5fad8175372875c6d21320e77b8a10a295d5027a855a696d597e05026",
+  "statistical_thresholds_and_target_scope_unchanged": true,
+  "scientific_outputs_public": false
+}

@@ -1,3 +1,5 @@
+[原生空间状态代理的相同探针口径](native-spatial-state-probe-matching-20261020.md)：最大来源组固定、全部父ID映射及作者T/严格巨噬捕获，先测量后空间。
+
 [身份内质量调整的面板外保真度](state-panel-quality-adjusted-disjoint-fidelity-20261020.md)：复用全91447细胞和814×4测量范围，先评技术转移，再决定新空间问题。
 
 [ICB基线字面Sample与供者阶段资格](ICB-cached-Sample-versus-donor-phase-qualification-20261019.md)：全8来源/两范围、原捕获复原与格式诊断；不自动晋级患者或临床终点。

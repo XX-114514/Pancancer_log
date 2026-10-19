@@ -1,0 +1,39 @@
+{
+  "created_UTC": "2026-10-19T16:16:41.519211+00:00",
+  "producer_sha256": "261376550b89a020bbb5403f8fe4402a063264b116957460f743bd77c4080036",
+  "helper_source_sha256": {
+    "author_spatial_native_reader_v3.py": "cf10fbe635c7e4d8c8ab2774e2d9a40556d2487e736e424171ce30f173086816",
+    "qualify_native_spatial_state_probe_contract_v1.py": "1954264ebf3359e27f6371cab603d76cf441beb4b2dcef748c5e15f90ad03741"
+  },
+  "profile_auditor_sha256": "62a076a32632ea47ebb0dd3327071663fdcfa75b6b4feb791da0472fa4ba52ae",
+  "profile_audit_terminal_sha256": "7dd89c7091e46eb41b177632163197885131d9807eb54400f7a5e318107d3904",
+  "raw_metadata_superset_unique_complete_join_allowed": true,
+  "metadata_only_RNA_unknown_not_imputed": true,
+  "all_native_target_images": 4,
+  "expected_native_cells": 190038,
+  "expected_native_physical_features_per_input": 1000,
+  "readout": "Explicit positive-signature UCell formula matched to accepted official reference caches. Average ties, zero genes at cap, exact frozen physical probe subset/maxrank. No new official-package invocation claimed.",
+  "target_capture_rules": {
+    "min_author_lineage_cells_per_FOV": 30,
+    "min_cells_with_atleast3_signature_probes": 10,
+    "required_covariates": [
+      "observed_panel_RNA_rank",
+      "observed_panel_detected_genes_rank",
+      "area_rank",
+      "intercept",
+      "author_subtype_dummies"
+    ],
+    "max_condition_number": 100000000.0,
+    "min_residual_df": 20,
+    "min_raw_score_variance": 1e-12,
+    "min_residual_fraction": 1e-10
+  },
+  "field_or_cell_is_reviewed_patient": false,
+  "new_RNA_values_read": true,
+  "all_native_panel_raw_parity": true,
+  "new_spatial_effects_P_clinical_or_formal_state_labels": false,
+  "score_expression_graph_arrays_written": false,
+  "output_cap_bytes": 8388608,
+  "min_tmpfs_free_bytes": 536870912,
+  "project_data_mode": "READ_ONLY"
+}

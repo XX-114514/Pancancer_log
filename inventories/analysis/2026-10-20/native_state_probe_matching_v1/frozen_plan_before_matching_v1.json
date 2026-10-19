@@ -1,0 +1,50 @@
+{
+  "created_UTC": "2026-10-19T16:01:22.162934+00:00",
+  "producer_sha256": "1954264ebf3359e27f6371cab603d76cf441beb4b2dcef748c5e15f90ad03741",
+  "quality_audit_sha256": "d0221b7719999d7678d79fc33bdf8f8da1e3f0602f4954ef941ac956b9b13759",
+  "dictionary_sha256": "6a3c4311d89a9a02d55a19f2d249c960c508b5973368c06c2e5c43bb605edec9",
+  "author_scope_sha256": "e68ea3caf60fc05a09abd0072ed9155aa8e09b4d27a19b72fe82f010a5ec1c9a",
+  "native_inventory_sha256": "91be1ae48a338aa6bfcd2d89107fd62bf3a00566a90ec5aa953fe0a3f37478f0",
+  "prior_fixed_full_family_slots": 3256,
+  "all_target_input_positions": 14,
+  "known_author_geometry_inputs": 4,
+  "reference_majors": [
+    "T cell",
+    "Macrophage"
+  ],
+  "physical_probe_identity": "SHA256 of all unique aliases; column-order invariant",
+  "profile_definition": [
+    "background_physical_probes",
+    "signature_physical_probes",
+    "maxrank"
+  ],
+  "profile_selection": "Most eligible GSEs; fingerprint lexical tie; no effect maximization",
+  "fidelity_thresholds_unchanged": {
+    "min_sources": 3,
+    "min_signature_probes": 5,
+    "algorithm_stable": true,
+    "cell_and_block_source_median": 0.3,
+    "fraction_both_atleast_point2": 0.75,
+    "leave_one_source_min_medians": 0.3
+  },
+  "identical_measurement_duplicate_parents_preserved": true,
+  "primary_target_capture_reporting_min_per_author_lineage": 30,
+  "T_author_labels": [
+    "CD4+ T cells",
+    "CD8+ T cells",
+    "T cell proliferating",
+    "T cells",
+    "Treg"
+  ],
+  "strict_Mac_author_labels": [
+    "Alveolar macrophages",
+    "Alveolar mph proliferating",
+    "Interstitial mph prevascular",
+    "Macrophages"
+  ],
+  "new_expression_or_spatial_effects_or_outcomes_read": false,
+  "original_gates_and_formal_labels_changed": false,
+  "output_cap_bytes": 8388608,
+  "min_tmpfs_free_bytes": 536870912,
+  "project_data_mode": "READ_ONLY"
+}
