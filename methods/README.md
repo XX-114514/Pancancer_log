@@ -1,3 +1,5 @@
+[原通讯接收身份敏感性](gamma-receiver-identity-sensitivity-20261019.md)：四固定口径/七描述，原分母与尺度，全部数值核验和限定原始审核。
+
 [γδ候选的αβ非序列注释诊断](gamma-delta-alpha-beta-annotation-diagnostic-20261019.md)：精确键、完整链/重复/缺失、完整性门槛与序列列排除。
 
 [互补空间接口的输入范围](NSCLC-complementary-spatial-interface-scope-20261019.md)：全部14输入分子/当前及恢复坐标证明，无RNA或空间效果。

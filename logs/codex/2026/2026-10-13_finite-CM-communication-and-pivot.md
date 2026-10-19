@@ -1568,3 +1568,15 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 整体goal active。下一按证据另立身份敏感性或跨来源分类校准，不能按通讯/临床效果调身份门槛；原精确γδ通讯的身份证据限制保留。
 
 - Publication gate: new source passes Python3.10 AST; real metadata join checked every selected row/new field and all original columns. Full repository validation completed with 0 errors/1 pre-existing path warning; git diff --check passes. Reviewed complete new source, method, technical JSON and sanitized diffs. No scientific values, cell records, sequences, annotation values, learned gene weights or matrices staged. Suggested commit: analysis: complete gamma candidate annotation evidence audit and join.
+
+
+## 2026-10-19T12:41:51.625711+00:00 UTC /2026-10-19T20:41:51.625711+08:00 UTC+8 原接收端身份敏感性正式启动
+
+- 上一goal turn分类progress：完整注释审核和原候选旁表闭合，改变下一科学动作；内容d13dad241ba02165fcf990b1b9effccf3596a415于12:33:13.163369 UTC普通push、12:33:19.842232 UTC独立HTTPS核main，临时中转已关闭。本轮先重核当前服务器三份接受输入SHA及原完整92槽家族，不以旧意图代替当前状态。
+- 新[身份敏感性方案](../../../methods/gamma-receiver-identity-sensitivity-20261019.md)已在新表达/效果前固定：原完整主BH候选的原端点，四个作者参考/完整αβ注释/旧RNA规则口径，原129记录、原尺度、原TNK分母和完整临床/质量/数量/比例控制；四个各自覆盖加三个相同记录集基线共七位置。结果后随访不是盲发现，旧P/BH/BY不改，无新P，未捕获TCR不当阴性。
+- 生产fa6eb375a663c482e4a7fc323b8658d677e9c4b1fcbadcc4b553c04a38cf4d2c于12:40:14.138069 UTC一次启动；另进程审核e79ff3b9405963ff0f579d0267d2597d5ee4d0d1ab8896daf5f56e2e10d400f3于12:40:28.028192 UTC一次启动，等待原句柄，不重复生产。12:40:35.900186 UTC原生产已核存活并实际读取既有原生矩阵715282/2010550708非零坐标；四个效果前来源覆盖位置已写，尚无新效应/终态。
+- 新计算会重算接收表达、数量、质量和比例，并在相同记录上重算原作者群，区分细胞口径与记录丢失；所有原候选及失败位置保留。完整源SHA/CRC、全细胞RNA/检出基因、所用组分全单元raw/检测/均值与旧缓存核验；基线须复原旧效应/SE。每个可估计模型在RAM用另一nuisance与全部删除块QR核验。独立原始范围固定为native顺序首1024参考接收细胞，不冒称第二次全原始/全模型另进程复算。
+- 完整表达和分数只RAM，私有仅metadata、来源汇总/排除/摘要；生产输出1MiB/guard2MiB、另审核512KiB，保持500GB+1GiB。原始数据没有新下载，原权威身份/状态/2026年10月CM（v20261010）不改。当前四覆盖科学统计只私有/获准来源对话，公共只技术范围/代码/轨迹，goal active。
+- 新两源Python3.10 AST已通过，复用已接受数值算法并在真实计算核全部新模型；完整仓库与脱敏diff gate接续。保留三份无关未提交工作。下一核同生产/审核句柄，等待真实效应与限定范围核验，然后据结果而非P选择后续机制问题。
+
+- Publication gate: both new sources pass Python3.10 AST; full repository validation completed with 0 errors/1 existing path warning; git diff --check passes. Reviewed complete sources/method/technical JSON and sanitized diffs; scientific coverage and eventual effects remain private. No raw cell/clinical rows, expression/score matrices, receptor sequences or learned molecular values staged. During waiting, official article full-text request again returned403; no newly read Methods or protocol conclusion claimed. Suggested commit: analysis: launch fixed gamma receiver identity sensitivity.
