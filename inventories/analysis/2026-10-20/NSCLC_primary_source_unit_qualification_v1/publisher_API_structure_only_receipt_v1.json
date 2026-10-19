@@ -1,0 +1,15 @@
+{
+  "observed_UTC": "2026-10-19T17:51:36.533095+00:00",
+  "source_url": "https://api.elsevier.com/content/article/pii/S0092867425002910?httpAccept=text%2Fxml",
+  "http_status": 200,
+  "bytes": 1943,
+  "sha256": "6094e04f6b97ecd1865db2e8d4f8026242081381b72a705355f2540e02547a25",
+  "root_element": "full-text-retrieval-response",
+  "canonical_DOI_present": true,
+  "structured_article_body_present": false,
+  "explicit_supplement_link_count": 0,
+  "explicit_supplement_links": [],
+  "response_body_persisted": false,
+  "no_clinical_or_gene_values_disclosed": true,
+  "patient_bridge_validated": false
+}

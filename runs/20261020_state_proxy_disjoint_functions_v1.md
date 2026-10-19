@@ -36,3 +36,10 @@ PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREA
 全31×50功能解释完成：全部203分数频数排名、70150身份另一LS、10150来源/1550聚合和留一复算接受；v2仅修正审核读回/离散边界重放，原科学生产/阈值不变。六份来源汇总/图409676字节私有SHA核及分母守恒，实际图/科学分级已审；具体效果仅私有。当前有限家族收束，下一优先既有临床候选的原研究单位/患者与来源桥，不据当前部分测量认定功能状态或互作。[方法](../methods/state-proxy-gene-disjoint-functional-interpretation-20261020.md)、[run](../runs/20261020_state_proxy_disjoint_functions_v1.md)。goal active。
 
 [最终技术接受](../inventories/analysis/2026-10-20/state_proxy_disjoint_functions_v1/technical_full_function_audit_and_source_review_acceptance_v1.json)、[报告分母解释](../inventories/analysis/2026-10-20/state_proxy_disjoint_functions_v1/technical_report_denominator_clarification_v1.json)。v1审核失败保留，v2已终止；实际图与全家族科学审阅完成，具体分级仅私有。所有本任务科学作业已有终态。参考细胞已用于测量资格，不当未接触外部验证；固定Hallmark未匹配不当状态缺失或新功能标签。无新P/FDR、正式身份、临床或因果结论。
+
+
+## 后续原临床来源资格（2026-10-19T17:59:45.977811+00:00 UTC /2026-10-20T01:59:45.977811+08:00 UTC+8）
+
+原Cell研究的书目一致性已由NCBI/EuropePMC核实；正常公开入口仅取得元数据，候选工作簿在RAM中按结构/表头核查，未提供临床患者桥，原文件/基因表/病例数据未保存或披露。BioProject→BioSample此次查询未返回链接，不能据此称全来源没有供者资料；不把243作者记录升级独立患者。已请求可选原临床补充资料，同时下一查既有原作者代码及其它已缓存、患者单位可审的队列。功能有限家族保持闭合，原身份/结局/临床块不改。整体goal active。
+
+[仅结构技术收据](../inventories/analysis/2026-10-20/NSCLC_primary_source_unit_qualification_v1/technical_primary_source_structure_summary_v1.json)。该后续节点不改变已完成的功能测量，不是临床患者桥或新效应接受。

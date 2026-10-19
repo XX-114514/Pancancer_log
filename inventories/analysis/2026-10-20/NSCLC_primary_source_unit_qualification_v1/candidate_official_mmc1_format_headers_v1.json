@@ -1,0 +1,27 @@
+{
+  "observed_UTC": "2026-10-19T17:54:01.267939+00:00",
+  "candidate_official_endpoints_only_not_claimed_verified_clinical_links": true,
+  "results": [
+    {
+      "candidate_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425002910-mmc1.docx",
+      "status": "UNAVAILABLE",
+      "exception_class": "HTTPError",
+      "http_status": 404,
+      "body_downloaded": false
+    },
+    {
+      "candidate_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425002910-mmc1.xls",
+      "status": "UNAVAILABLE",
+      "exception_class": "HTTPError",
+      "http_status": 404,
+      "body_downloaded": false
+    },
+    {
+      "candidate_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425002910-mmc1.zip",
+      "status": "UNAVAILABLE",
+      "exception_class": "HTTPError",
+      "http_status": 404,
+      "body_downloaded": false
+    }
+  ]
+}

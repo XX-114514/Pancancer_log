@@ -1,0 +1,27 @@
+{
+  "observed_UTC": "2026-10-19T17:43:58.922342+00:00",
+  "candidate_official_endpoints_not_claimed_as_verified_article_supplement_links": true,
+  "results": [
+    {
+      "candidate_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425002910-mmc1.pdf",
+      "status": "UNAVAILABLE",
+      "exception_class": "HTTPError",
+      "http_status": 404,
+      "metadata_body_downloaded": false
+    },
+    {
+      "candidate_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425002910-mmc2.xlsx",
+      "status": 200,
+      "content_type": "application/excel",
+      "content_length": "86648",
+      "metadata_body_downloaded": false
+    },
+    {
+      "candidate_url": "https://api.elsevier.com/content/article/pii/S0092867425002910?httpAccept=text%2Fxml",
+      "status": 200,
+      "content_type": "text/xml;charset=UTF-8",
+      "content_length": "0",
+      "metadata_body_downloaded": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "observed_UTC": "2026-10-19T17:59:45.977811+00:00",
+  "status": "PUBLIC_BIBLIOGRAPHIC_AND_STRUCTURE_QUALIFICATION_ONLY_PATIENT_BRIDGE_PENDING",
+  "canonical_PII": "S0092-8674(25)00291-0",
+  "official_workbook_checked_in_RAM": true,
+  "workbook_clinical_structure_qualified": false,
+  "workbook_data_rows_or_gene_lists_not_disclosed": true,
+  "workbook_body_not_saved": true,
+  "publisher_API_full_article_body_received": false,
+  "clinical_patient_bridge_validated": false,
+  "new_patient_alias_or_outcome_recoding": false,
+  "public_BioSample_query_returned_no_links_not_proof_of_global_absence": true,
+  "optional_original_clinical_supplement_requested": true,
+  "other_safe_goal_work_remains": true,
+  "goal_status": "active",
+  "files": {
+    "candidate_official_endpoint_headers_v1.json": {
+      "bytes": 922,
+      "sha256": "8cc3cbd8ca96fc667899311baf614fc763bdbb7a6982d61958245b05ad8f891d"
+    },
+    "official_candidate_workbook_structures_v1.json": {
+      "bytes": 1828,
+      "sha256": "759b51d4ba11fe8c6a08efbc3cce67a849b34060d3c8fa5291b073f5d178e2fa"
+    },
+    "publisher_API_structure_only_receipt_v1.json": {
+      "bytes": 602,
+      "sha256": "3ed81e220e6d5fe55308772718859e5ad28f08f5e7e9ae0a35f70428a7480109"
+    },
+    "candidate_official_mmc1_format_headers_v1.json": {
+      "bytes": 869,
+      "sha256": "5abeb610788ab7c013842aa95bda4884184e1dc08c23d95feb029f3a83b19a46"
+    },
+    "public_BioSample_donor_field_schema_probe_v1.json": {
+      "bytes": 446,
+      "sha256": "800806ad0c3450bc576bf20c940b9644ff6861b6225d418a42fa3beb81029bf7"
+    }
+  },
+  "new_raw_RNA_or_sequence_download": false,
+  "new_clinical_effects_computed": false,
+  "public_workbook_structural_RAM_read_completed": true
+}

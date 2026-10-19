@@ -1,0 +1,11 @@
+{
+  "observed_UTC": "2026-10-19T17:56:13.597553+00:00",
+  "public_BioProject": "PRJNA1015724",
+  "no_record_identifiers_or_values_disclosed": true,
+  "metadata_bodies_RAM_only": true,
+  "patient_bridge_validated": false,
+  "linked_BioSample_records": 0,
+  "link_response_sha256": "2fea7c4ab2dfd932f29a314a303f598a1a4cf4d93da76981c5139f5671b11345",
+  "link_response_bytes": 319,
+  "status": "NO_BIOSAMPLE_LINKS_RETURNED_PATIENT_UNIT_UNRESOLVED"
+}
