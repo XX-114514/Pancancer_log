@@ -1,3 +1,7 @@
+## 2026-10-19T09:46:00 UTC /2026-10-19T17:46:00 UTC+8 新RNA候选识别正在运行
+
+全缓存作者字段/原生feature范围接受；用户新增γδ T RNA候选分支已开始全部原NSCLC原生计数，审核等待同一生产，真实候选统计未接受。下一按固定多基因规则核作者混淆再外推，尚无正式身份或验证。[方案](methods/gamma-delta-RNA-candidate-identification-20261019.md)，科学输出私有，goal active。
+
 ## 2026-10-19T09:28:25 UTC /2026-10-19T17:28:25 UTC+8 既有来源元数据资格已接受
 
 原两图谱全61来源臂/1690文库及五通道、全部来源分层独立接受；科学覆盖私有。原作者细分旁表和新恢复来源未纳入此旧合同，下一先清点补充与原生测量资格，不把标签缺失当细胞缺失，无新外部效果。[方法](methods/NSCLC-external-endpoint-metadata-qualification-20261019.md)，goal active。

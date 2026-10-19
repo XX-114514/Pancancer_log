@@ -1,0 +1,16 @@
+{
+  "observed_UTC": "2026-10-19T09:46:00+00:00",
+  "status": "all_cached_annotation_fields_and_native_feature_roles_accepted_gamma_RNA_started",
+  "producer_terminal_sha256": "9017150706731523ed44a7f68fb670a73f97db2daf871a5985ae190e5d13268d",
+  "independent_audit_sha256": "4b9ae548f959684e4d1653ba0d36fc0a38cf234547601f6784c8ccf88d4b3f80",
+  "source_axes": 61,
+  "cached_contract_entries": 21,
+  "annotation_fields": 79,
+  "annotation_categories": 2426,
+  "RNA_producer_source_sha256": "2ddce9d2db57d2f5f0e761e9aa4e08d88ad7314fd5e8a9b2b47cc6d6903e6a51",
+  "RNA_audit_source_sha256": "b71d9dd7c90a4e59e491dc907e57084277c9dd7d7d8c4031743db3699fe02d27",
+  "RNA_start_UTC": "2026-10-19T09:42:04.449397+00:00",
+  "RNA_results_accepted": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}
