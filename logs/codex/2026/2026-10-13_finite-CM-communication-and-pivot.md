@@ -964,7 +964,7 @@ v1汇总图保留，v2仅补日期版本/白底字，底层TSV一致；11:38:21�
 
 结果后完整功能描述采用全部600公有参考/30哨兵内容/90来源RNA组件，另实现尾和/QR全部接受；进一步全部90补集点敏感性两求解器核对，无新增P/CI/BH。完整私有初审2095129467f7ea8ef5ea2d897cc5a3738820f0b5405374d0d5da5941d84a283a于13:09:17 UTC登记，科学效应/候选/图片不进入公共Git。尚未确定方向性LR或临床预测，完整goal active。
 
-两来源图实际PNG逐SHA取回并查看；发现裁切/重叠，保留v1，v2仅改布局，视觉再查待。一次SSH读取closed255后原路只读重试成功，真实终态证明任务早已结束；未重启科学计算、换端口或更改代理。
+两张来源级图实际PNG逐SHA取回并查看；发现裁切/重叠，保留v1，v2仅改布局，视觉再查待。一次SSH读取closed255后原路只读重试成功，真实终态证明任务早已结束；未重启科学计算、换端口或更改代理。
 
 修改五源码、功能method、run/任务/daily/状态与技术清单。AST/部署SHA及真实完整执行核对；仓库轻量/隐私diff及关键节点普通push独立核云接续。下一先发布本接受检查点，再定位原冻结细节点/组成及数据驱动方向性候选。
 
@@ -1498,3 +1498,26 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 本轮所有原权威Zarr/作者身份/CM/旧统计不改，科学数值/图/个体留私有，goal active。下一完整试验审阅后再决定全来源候选身份、T/NK细分或已有TCR/蛋白验证。当前不做最终亚型/状态/耐药或机制命名。
 - 小型取证失败：一次本机检索提到不存在的辅助脚本只报路径错误；此前完整命令Unicode stdin失败已改UTF8文件，无远端影响。web两完整论文页验证码/403不当全文阅读；取证仅作者摘要/索引方法，模型源码按不可变SHA另核。新源码AST/diff/完整仓库及脱敏发布接续，三无关文件保留。
 - Publication gate: all five new Python sources pass Python3.10 AST; actual server R4.3.3 parses the frozen real-pilot worker successfully at 10:25:12 UTC. git diff --check and full repository validation pass with0 errors/1 existing path warning. Code, methods, technical-only JSON and sanitized changes reviewed; three unrelated files retained. Suggested commit: analysis: close hard-rule calibration and launch official fixed scGate pilot.
+
+
+## 2026-10-19T10:37:31 UTC /2026-10-19T18:37:31 UTC+8 同一真实scGate句柄进入R打分；全来源测量/材料上下文接受
+
+- 前一goal turn分类为progress：完整原生硬规则的真实计算/抽样raw审核完成、科学资格拒绝直接扩展、官方软件合成通过，并启动固定真实试验；不是仅状态重述。上一内容8aaf2a849205238267bb4664bc14c522089c1e11于10:25:51.141236 UTC普通push、10:25:57.245287 UTC独立HTTPS核云一致；bundle3bedd0bce6674feb4afffbe8166410fd188b504d04f897c19d51f099473a21f6。
+- 本轮重新核原PID/startticks、父/子关系与终态，不据旧progress假定活着。原生产/审核均是同一活句柄，10:34:22.984958 UTC源RNA提取结束并进入官方R打分；10:37:31 UTC实际owned R子进程R/CPU活动且无R错误行，父/审核活着，当前还没有生产或结构审核终态。没有重启、重复抽样、改seed或新真实身份结果。
+- 等待期间执行真正的依赖准备：10:30:45.797257 UTC全61固定模型测量资格一次启动，10:30:54.883268 UTC完整写成96cd90814aa53c8104448e7b8f3f69e8d935aabfe5bea8cc462d4fa26b7d59f8。四模型/244源位置，HiTME原生子集一次冻结不随来源再删gene，所有未测/歧义/列碰撞保留。只读已接受原生轴和metadata，无其他来源新RNA/临床效果。
+- 10:34:33.614163 UTC审核一次启动，10:34:43.044437 UTC接受db230a445874a26c99fea20e9482b3ec0aa95df8edf540e7d2f9ab7cb3388899。直接读不可变官方模型与master表重新解析定义，独立核所有244列映射/缺失/碰撞及完整1690来源文库计数；源轴沿用其既有独立接受，非新raw重放。生产粗材料/phase分组正确保留；审核额外写全部原始tissue/sample_class/timepoint/treatment/capture/exvivo/stage与当前癌种/phase组合，细粒度不替代或删除粗表。
+- 全部模型可测性和来源汇总仅私有server及获准对话，不能当γδ身份/临床验收。来源臂不当独立队列，已审患者跨材料不重复相加；分选/材料未知仍未知。当前只是[准备条件](../../../methods/gamma-delta-scGate-pilot-20261019.md)，新RNA仅原固定NSCLC试验。
+- 两新metadata代码3.10 AST通过，实际作业无错误；1MiB生产/1MiB审核上限与500GB+1GiB预留维持，没有表达下载/身份改写/新统计家族。下一同句柄完成后整批审四槽、全部作者参考和模型/NK冲突；完整goal active。新节点验证与普通push接续，三份无关工作保持。
+
+
+## 2026-10-19T11:01:00 UTC /2026-10-19T19:01:00 UTC+8 固定真实试验及候选证据闭合；名称资格另版更正
+
+- 事件与取证分开：原20000均匀细胞的官方R三可运行槽均完成，生产90f8cd091c914517fe3beb3c86e200cf1710915c2c140889170ea2e62d2b44e7；全部匿名分类/输入/作者汇总结构审核519a8671d37cc311d45c799acbd6ce70a2c76fafe956a70f209ee7fa62175cbf接受。四原槽和旧四整数规则均完整保留。10:46:29.336425 UTC来源描述/两图完成；随后实际查看两PNG（0fd61355a8f748992c686efb90ef92ec84e2361835af182cd75708eee82a9db5、17c9a5ddd8247aecb47d68fdf05795b33a990bf294d6f3938145533c9ca73e4b），文字/分母/颜色/目标/缺测灰槽可读。其科学全家族审阅/数值不进入公共Git。
+- 科学决定与计算接受分开：不以RNA共检测、单一scGate模型或两模型交集替换作者身份；全部作者参考、原候选规则、模型分歧与NK冲突作为候选证据并列，尚无TCR真值/正式身份/状态或新临床检验。全部来源硬规则草案仍未执行，不因计算通过自动扩展。
+- 发现并纠正测量解释：此前完整HiTME不可用是字面符号门槛；[IMGT](https://www.imgt.org/IMGTrepertoire/LocusGenes/genetable/autotable.php?group=TRDV&species=Homo+sapiens)把TRDV5连到TRAV29/DV5，[NCBI](https://www.ncbi.nlm.nih.gov/gene/28653/)现行符号TRAV29DV5、HGNC:12127、ENSG00000211810。此共享α/δ变量片段不是γδ专属证据。原数据具有唯一现行符号、没有源稳定ID列，不能声称新验了源Ensembl。只做这个明确同义词的集合并集；多列歧义和模型列碰撞必须失败，未做模糊alias或按来源删gene。全部旧字面门槛及原测量子集结果保持，不静默改为完整模型。新完整符号归一v2只完成62原生轴位置资格，尚未RNA打分，不主张修复即提高准确率。
+- 10:58:32.635516 UTC同一次启动证据整合，10:58:41.555031 UTC完成a900b0816de7adea6da1a60116184080851f1bf989d594e3991751ba5494acd3。仅私有native行/作者参考码/旧规则位/原pilot分类码/候选TRDV检测标志；表达或得分矩阵未落盘。未在pilot者为NOT_ASSESSED，非Impure；候选之外TRDV未测状态在合同中明确，不能当gene阴性。范围为全部作者γδ参考、全部旧RNA候选及原固定pilot的并集，其他行不作新身份判断。
+- 10:59:20.739852 UTC独立metadata审核一次启动，10:59:29.755126 UTC接受a5dabd6d1003f0b4576ebe2c9dcdeaa003b875a10fd55bea344a60852d3ab706；完整并集/所有作者与规则位/全部pilot码/未测码以及62归一映射均逐项核对。源轴沿用旧接受，非新RNA或TCR重放；全部私有来源计数另存，不转为患者准确率。
+- 期间两次只读SSH连接在认证前退出255；本机SOCKS5协商正常，后续同配置成功，未重启既有科学作业或换端口。原官方R没有错误；不把观测链路故障写为分析失败。
+- 方法文字曾将原生基因31831误写31931；代码/输入始终31831，追加勘误而不重跑数据。新代码3.10 AST/完整仓库门槛和普通push接续。资源仍500GB+1GiB预留、新RNA下载0、共享包/Zarr/原身份/2026年10月CM（v20261010）不改，三份无关工作保留。下一优先群水平谱系共表达、现有TCR/蛋白metadata与明确材料范围；符号归一完整模型若运行须单独固定，无临床P驱动调门槛。整体goal active。
+
+- Publication gate: all five new sources pass Python3.10 AST, actual real jobs and complete metadata reconciliation/audit terminate successfully; git diff --check passes. Full repository validation: 0 errors, 1 existing path warning. Two source-only figures inspected by actual pixels and hashes. Public diff and technical JSON reviewed; no scientific counts/effects/plots, patient rows, matrices or learned gene lists staged. Three unrelated files preserved. Suggested commit: analysis: preserve gamma candidate evidence and correct model nomenclature.

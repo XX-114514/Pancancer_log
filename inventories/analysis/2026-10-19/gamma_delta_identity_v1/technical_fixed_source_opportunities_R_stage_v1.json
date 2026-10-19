@@ -1,0 +1,16 @@
+{
+  "observed_UTC": "2026-10-19T10:37:31+00:00",
+  "status": "fixed_real_pilot_R_scoring_active_all_source_physical_contexts_accepted",
+  "source_opportunity_terminal_sha256": "96cd90814aa53c8104448e7b8f3f69e8d935aabfe5bea8cc462d4fa26b7d59f8",
+  "source_opportunity_audit_sha256": "db230a445874a26c99fea20e9482b3ec0aa95df8edf540e7d2f9ab7cb3388899",
+  "fixed_source_model_positions": 244,
+  "library_arm_entries": 1690,
+  "native_source_axes_previously_accepted": true,
+  "complete_original_tissue_sampleclass_treatment_phase_contexts_written": true,
+  "real_pilot_R_start_UTC": "2026-10-19T10:34:22.984958+00:00",
+  "real_pilot_terminal_accepted": false,
+  "original_producer_handle_reused": true,
+  "other_source_new_RNA_scored": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}

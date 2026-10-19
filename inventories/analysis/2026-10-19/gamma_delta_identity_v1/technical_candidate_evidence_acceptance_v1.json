@@ -1,0 +1,19 @@
+{
+  "observed_UTC": "2026-10-19T11:01:00+00:00",
+  "status": "fixed_real_pilot_structurally_accepted_reference_preserving_candidate_evidence_complete",
+  "real_pilot_terminal_sha256": "90f8cd091c914517fe3beb3c86e200cf1710915c2c140889170ea2e62d2b44e7",
+  "real_pilot_structural_audit_sha256": "519a8671d37cc311d45c799acbd6ce70a2c76fafe956a70f209ee7fa62175cbf",
+  "candidate_reconciliation_terminal_sha256": "a900b0816de7adea6da1a60116184080851f1bf989d594e3991751ba5494acd3",
+  "candidate_reconciliation_audit_sha256": "a5dabd6d1003f0b4576ebe2c9dcdeaa003b875a10fd55bea344a60852d3ab706",
+  "pilot_cells": 20000,
+  "original_model_slots": 4,
+  "original_rule_slots": 4,
+  "normalized_source_axis_positions": 62,
+  "source_aggregate_figures_actually_viewed": 2,
+  "original_author_reference_preserved": true,
+  "unknown_pilot_status_distinct_from_Impure": true,
+  "nomenclature_normalized_full_model_RNA_run": false,
+  "formal_identity_adoption": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}
