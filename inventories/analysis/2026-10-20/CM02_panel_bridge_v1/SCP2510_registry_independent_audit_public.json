@@ -1,0 +1,14 @@
+{
+  "status": "ALL_PUBLIC_PROCESSED_COO_PAIRS_COUNTS_GEOMETRY_METADATA_AND_CASE_LINKS_INDEPENDENTLY_ACCEPTED",
+  "finished_utc": "2026-10-19T13:35:41.899651+00:00",
+  "all_cells": 1459214,
+  "all_genes": 479,
+  "all_COO_entries": 48404416,
+  "duplicate_COO_pairs": 0,
+  "all4_original_author_key_geometry_replayed": true,
+  "original_metadata_ntx_ngene_exact": true,
+  "producer_terminal_sha256": "bcfdf36f12fa0c4085d71647dfef825ffe2baa157b924df3adda8439a51521e9",
+  "auditor_sha256": "621bf9a20c06567e225f1764b39fb1ca349e5366d3eaeec46abb5033ca84e298",
+  "no_raw_transcript_to_processed_cell_claim": true,
+  "no_physical_boundary_contact_or_clinical_effect_claim": true
+}

@@ -1,0 +1,27 @@
+{
+  "status": "ALL_AUTHOR_PROCESSED_INPUTS_FULL_NUMERIC_AND_EXACT_KEY_REVIEW_COMPLETE",
+  "finished_utc": "2026-10-19T13:33:11.186848+00:00",
+  "original_cells": 1459214,
+  "genes": 479,
+  "all_numeric_entries": 48404416,
+  "all4_metadata_coordinates_counts_keys_bijective": true,
+  "all_count_values_positive_integers": true,
+  "metadata_ntx_matches_raw_counts": true,
+  "metadata_ngene_matches_stored_entries": true,
+  "note": "nnz/detected equality remains conditional on unique COO pairs; independent audit checks duplicates",
+  "all4_published_donor_case_keys_found": true,
+  "response_evaluable_cases": 4,
+  "no_spatial_effects_or_clinical_model": true,
+  "author_processed_ID_authority_not_raw_transcript_per_cell_reconstruction": true,
+  "no_boundary_contact_claim": true,
+  "producer_sha256": "c7add067a5fd2f8e10615be0c8a1b3c9142f70f21e212fb65bf576635cc74480",
+  "input_download_receipt_sha256": "0ed380702cdb6feb1d2a03380d3462d4ca3c55eb969d4dd6c530b3f2e7dc457b",
+  "supplement_sha256": "f33f58f219adcecfc5355b1ce8b526dfd36d7eca4555a320ba1deb185d122982",
+  "files": {
+    "private_all_author_cells_registry.tsv.gz": "25f91ad01851b8a2eca3372cee0309a302ed2d6e4ef91e7e885909dca408e7a1",
+    "private_all4_segmentation_geometry_qualification.tsv": "720b49ddde966c7e859bac827344885abac9e87a4d12ee6858f8c178af3fd488",
+    "private_official_panel_and_companion_channels.json": "b6a74d64aec52258004e6d01825631f6ebfc594b63d8bbb8e630bc17dd1818e8",
+    "private_four_case_source_linkage.tsv": "99c1b8c4368348ea738d2df9aa57cc32b4aa99381909f0c1df7f0faef710b217",
+    "private_isolation_and_unresolved_registry.tsv": "368c47365d5ccbd0af3c032d57f81ab7da97bc03dcbcf343a480df12453d37ee"
+  }
+}

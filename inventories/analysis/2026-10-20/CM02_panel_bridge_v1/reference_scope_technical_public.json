@@ -1,0 +1,15 @@
+{
+  "status": "REVIEWED_CASE_REFERENCE_SELECTION_AND_NATIVE_GENE_SCOPE_FROZEN_NO_RNA_MODEL",
+  "finished_utc": "2026-10-19T13:35:31.709538+00:00",
+  "selected_cells": 181076,
+  "sources": 3,
+  "private_contract_sha256": "cc86e4b1e90d647570295fe030ae2a8f6fe6aaf74c6c8093eb7b23ed21304108",
+  "producer_sha256": "9bae7b6e752849ddf6302bc620001f5d8daf2db6dec486fd12d6f5811523dcef",
+  "resource": {
+    "group_remaining_bytes": 501079678976,
+    "reserve_bytes": 483183820800,
+    "estimated_additional_bytes": 3217280656,
+    "reserve_change_explicitly_user_authorized": true
+  },
+  "class_labels_are_proposals_not_biological_gold_standard": true
+}
