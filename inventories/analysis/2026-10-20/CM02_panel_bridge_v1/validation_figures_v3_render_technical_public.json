@@ -1,0 +1,14 @@
+{
+  "status": "ALL5_COMPLETE_MODEL_VALIDATION_FIGURES_RENDERED_VISUAL_REVIEW_PENDING",
+  "finished_utc": "2026-10-19T14:22:30.482580+00:00",
+  "figures": [
+    "All3_lineage_validation",
+    "All3_two_programme_validation",
+    "All_class_precision_coverage",
+    "All_missing_marker_recovery",
+    "Complete_engineering_admission"
+  ],
+  "model_audit_sha256": "d58a405aa6e60c8802a0b5431ebb98dc58c78641371275545c85c53d16897db1",
+  "producer_sha256": "2c5f85edba11c1da343c58792ae37c4352ecfb7137311f5263b0c4ab45ca8721",
+  "no_new_statistics": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "ALL4_CONDITIONAL_MAPS_AND_ALL_UNKNOWN_STATES_RENDERED_VISUAL_REVIEW_PENDING",
+  "finished_utc": "2026-10-19T14:26:16.843305+00:00",
+  "all4_original_samples": true,
+  "independent_audit_sha256": "83f10508905845d31f1172ccc49dcfafc8fbe718a151984282bd4888f40ef43e",
+  "producer_sha256": "d76e8838139413033cb15ef4a26538887974771927773bf4347212bd6b31e37b",
+  "no_new_spatial_P": true
+}

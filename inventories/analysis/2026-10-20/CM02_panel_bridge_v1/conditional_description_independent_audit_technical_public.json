@@ -1,0 +1,8 @@
+{
+  "status": "ALL_CONDITIONAL_AUTHOR_T_COUNTS_COEFFICIENT_PREDICTIONS_DOMAIN_AND_NA_MASKS_ACCEPTED",
+  "finished_utc": "2026-10-19T14:22:07.264687+00:00",
+  "producer_receipt_sha256": "61f62d9198617b94a5b07dce080316cb16d5bef323b715ade855c2a3b7c7f892",
+  "auditor_sha256": "be68e20515c5b538ae884419255645e6f3bee955d09893f2804c4e0671b6da37",
+  "no_new_spatial_inference": true,
+  "no_independent_author_identity_validation_claim": true
+}

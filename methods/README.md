@@ -124,3 +124,4 @@
 - [完整通讯临床差异贡献及联合解释合同](NSCLC-communication-clinical-contrast-attribution-20261019.md)。
 
 - [冻结通讯候选在原队列另一组记录中的一致性](NSCLC-frozen92-axis-within-cohort-consistency-20261019.md)。
+- [CM02分割、病例与空间面板测量桥](CM02-spatial-panel-bridge-20261020.md)：真实面板、病例／研究留出、测量压力与严格准入；作者T单臂条件描述另命名。
