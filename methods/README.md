@@ -1,3 +1,5 @@
+[ICB基线字面Sample与供者阶段资格](ICB-cached-Sample-versus-donor-phase-qualification-20261019.md)：全8来源/两范围、原捕获复原与格式诊断；不自动晋级患者或临床终点。
+
 [公开符号规范的同细胞完整scGate试验](gamma-delta-symbol-normalized-paired-pilot-20261019.md)：一个精确映射、原固定选择、三个不变锚点、完整四槽审阅；不做临床重测。
 
 [全来源γδ作者参考与原缓存细字段资格](gamma-delta-all-source-author-reference-qualification-20261019.md)：作者文字不是TCR真值，所有来源及未知/混合保留，先核参考再做校准。
