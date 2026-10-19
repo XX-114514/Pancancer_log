@@ -1,0 +1,22 @@
+{
+  "observed_UTC": "2026-10-19T17:06:24.670721+00:00",
+  "production_complete_UTC": "2026-10-19T16:57:19.409377+00:00",
+  "producer_terminal_sha256": "e187616ee043701294421c002444973803684be0a1fd34d4a050c4fa4d5e0bbe",
+  "independent_audit_complete_UTC": "2026-10-19T16:58:09.704793+00:00",
+  "independent_audit_sha256": "eaefa7bcdd81583e6ac74fe32d4acfeb44fe08d7cac9c8e4dfebd20c9348c8d8",
+  "full_family_positions": 126,
+  "aggregate_fold_positions": 282,
+  "aggregate_test_field_positions": 1778,
+  "maximum_aggregate_error": 8.215650382226158e-15,
+  "preselected_direct_refit_cases": 2,
+  "maximum_direct_refit_error": 9.71445146547012e-17,
+  "report_v1_terminal_sha256": "fe6aa4c27f361f9ad4cf337197641612fc14d19bbc497d225c1c4abe118f1e06",
+  "report_v2_terminal_sha256": "d47f2ae160b07ceb742b6257e2c701fcf6d483e3730f3a93e41f67fea57b5f19",
+  "all_four_source_tables_byte_identical_after_legend_repair": true,
+  "actual_v2_visual_and_scientific_review_complete": true,
+  "all_forest_models_independently_retrained": false,
+  "independent_raw_archive_replay": false,
+  "scientific_effects_counts_figures_private": true,
+  "formal_communication_or_state_identity_validation": false,
+  "goal_status": "active"
+}

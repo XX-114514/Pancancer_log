@@ -1,0 +1,23 @@
+{
+  "observed_UTC": "2026-10-19T17:10:36.591739+00:00",
+  "production_complete_UTC": "2026-10-19T17:06:20.185245+00:00",
+  "producer_terminal_sha256": "6249069ad1f86f80bfefddb61d66dcc64d9d3a0f5c44d20226553ec8f71b9916",
+  "independent_audit_complete_UTC": "2026-10-19T17:07:05.649125+00:00",
+  "independent_audit_sha256": "bb1ae0a3aef7e458905f71bcbb2cc54b050101ff500b907797a821bd0eae7ff1",
+  "full_family_positions": 126,
+  "aggregate_fold_positions": 282,
+  "aggregate_test_field_positions": 1778,
+  "maximum_aggregate_error": 5.218048215738236e-15,
+  "preselected_direct_refit_cases": 2,
+  "maximum_direct_refit_error": 9.71445146547012e-17,
+  "original_scope_and_all_training_unit_hashes_exactly_preserved": true,
+  "source_report_complete_UTC": "2026-10-19T17:07:58.713408+00:00",
+  "source_report_terminal_sha256": "ded95fa0e05a57074915fb7fa6636db0f5ac897ccca2b684e37c678d3f6a56bd",
+  "all_source_tables_schema_and_bounds_proven": true,
+  "actual_visual_and_private_scientific_review_complete": true,
+  "all_models_independently_retrained": false,
+  "second_raw_archive_replay": false,
+  "scientific_effects_counts_figures_and_programmes_private": true,
+  "formal_interaction_or_gamma_delta_identity_validation": false,
+  "goal_status": "active"
+}

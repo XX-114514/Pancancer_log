@@ -1,0 +1,8 @@
+{
+  "status": "INDEPENDENT_AGGREGATION_AND_DIRECT_REFIT_STARTED",
+  "started_UTC": "2026-10-19T17:06:56.228203+00:00",
+  "pid": 90795,
+  "start_ticks": 324471490,
+  "audit_source_sha256": "68d6651f7b0c3c74dc4b2c301c33d9640d6940bace72bdc5338e0d92e3f1352a",
+  "producer_terminal_sha256": "6249069ad1f86f80bfefddb61d66dcc64d9d3a0f5c44d20226553ec8f71b9916"
+}

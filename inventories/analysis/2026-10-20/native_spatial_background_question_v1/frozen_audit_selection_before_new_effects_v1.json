@@ -1,0 +1,16 @@
+{
+  "created_UTC": "2026-10-19T17:06:24.670721+00:00",
+  "new_model_effects_not_reviewed": true,
+  "preselected_image_ordinal": 0,
+  "preselected_target_ordinal": 0,
+  "preselected_outer_fold": 0,
+  "readouts": [
+    "RAW",
+    "NEGATIVE_EXCESS"
+  ],
+  "audit_source_sha256": "68d6651f7b0c3c74dc4b2c301c33d9640d6940bace72bdc5338e0d92e3f1352a",
+  "full_family_positions": 126,
+  "all_scope_and_train_unit_fields_must_match_original": true,
+  "direct_refit": "SKLEARN_FORESTS_EXPLICIT_CENTERED_RIDGE",
+  "old_primary_conditional_family_preserved": true
+}
