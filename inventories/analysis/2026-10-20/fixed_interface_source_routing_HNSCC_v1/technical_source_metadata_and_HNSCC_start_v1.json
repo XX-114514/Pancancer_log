@@ -1,0 +1,36 @@
+{
+  "observed_UTC": "2026-10-19T18:52:54.915236+00:00",
+  "status": "FULL_SOURCE_METADATA_READER_V2_ACCEPTED_HNSCC_V2_LAUNCH_RECEIPT_ONLY_NO_TERMINAL_ACCEPTANCE",
+  "source_arm_axes": 61,
+  "additional_calibration_axes": 1,
+  "original_contract_records": 21,
+  "current_library_metadata_rows": 1690,
+  "source_context_positions": 126,
+  "source_axis_terminal_SHA256": "76fae809fb3e1cf14107465aa9fa641d03fedcb1cd86ee35b02d9e9b9ac1fd54",
+  "source_axis_code_SHA256": "8ae5e01bd35a70b8da7cabc4a5726e6c13255971808d904065ff269bf725e015",
+  "physical_identity_field_omitted_by_declared_column_order": "canonical_gene_identity",
+  "explicit_physical_identity_reader_v2": true,
+  "authoritative_zarr_unchanged": true,
+  "v1_metadata_cardinalities_and_all_context_counts_identical_after_repair": true,
+  "HNSCC_v1_failure_before_expression": true,
+  "HNSCC_v1_exception_class": "AttributeError",
+  "HNSCC_v1_source_line": 125,
+  "HNSCC_v1_source_SHA256": {
+    "qualify_fixed_interface_all_cached_axes_v1.py": "a45a82a46cd6cdf88d183ef7413955b2503bf22d9be2fdaaae2c07d0f41f76fc",
+    "fixed_interface_rank_family_math_v1.py": "44c8afde5013e0117ca1817092de12a2e4a1f481f1d502abaf15a1f01d12e821",
+    "run_HNSCC_fixed_interface_baseline_v1.py": "41ff49b569c5a3c20e5e6faf10fa0ae413ec06a6e1b53dc1cff8c57a24a40ad9"
+  },
+  "HNSCC_v2_launch_UTC": "2026-10-19T18:50:35.667214+00:00",
+  "HNSCC_v2_source_SHA256": {
+    "qualify_fixed_interface_all_cached_axes_v2.py": "8ae5e01bd35a70b8da7cabc4a5726e6c13255971808d904065ff269bf725e015",
+    "fixed_interface_rank_family_math_v1.py": "44c8afde5013e0117ca1817092de12a2e4a1f481f1d502abaf15a1f01d12e821",
+    "run_HNSCC_fixed_interface_baseline_v2.py": "768cdda46ce6f9e3c82429b9413ede6de44e8e90b4765f46b792b4f2362bc60f"
+  },
+  "math_inner_versions_unchanged": true,
+  "original_interface_gene_ID_triples_unchanged": true,
+  "scientific_results_and_source_admission_counts_private": true,
+  "new_external_followup_CSV_not_read_or_transferred": true,
+  "permission_for_that_route_still_pending": true,
+  "goal_status": "active",
+  "later_observation_correction": "v2 subsequently confirmed stopped in zero-control descriptive point sensitivity; start receipt never proves a live or completed process. See final technical acceptance."
+}

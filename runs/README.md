@@ -84,3 +84,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [20261020 CM02分割与空间面板测量桥](20261020_CM02_spatial_panel_bridge_v1.md)：全作者细胞／参考与模型独立复核，科学准入与技术接受分开，完整条件描述私有。
 
 - [20261020 原作者入口与既有Bassez资格](20261020_original_author_and_Bassez_qualification_v1.md)：完整代码/表头与原生轴独立审核；临床传输未执行，科学分级私有。
+
+- [20261020 全来源固定接口分流与HNSCC](20261020_fixed_interface_source_routing_HNSCC_v1.md)：完整metadata字段修复/来源mask、真实RNA和全部固定推断复算及私有科学审阅已接受。

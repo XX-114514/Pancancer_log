@@ -1,0 +1,49 @@
+{
+  "observed_UTC": "2026-10-19T19:09:19.021637+00:00",
+  "status": "COMPLETE_FULL_NATIVE_HNSCC_FINITE_FAMILY_NUMERIC_REPLAY_AND_PRIVATE_SCIENTIFIC_REVIEW",
+  "source_axis_terminal_SHA256": "76fae809fb3e1cf14107465aa9fa641d03fedcb1cd86ee35b02d9e9b9ac1fd54",
+  "HNSCC_v3_terminal_SHA256": "ca2daa343a913009c80f1cec1a8a155d04f5566374d1858bd42153027fe18da6",
+  "HNSCC_v3_completed_UTC": "2026-10-19T18:55:32.783009+00:00",
+  "HNSCC_v3_launch_UTC": "2026-10-19T18:55:00.757254+00:00",
+  "code_SHA256": {
+    "qualify_fixed_interface_all_cached_axes_v1.py": "a45a82a46cd6cdf88d183ef7413955b2503bf22d9be2fdaaae2c07d0f41f76fc",
+    "qualify_fixed_interface_all_cached_axes_v2.py": "8ae5e01bd35a70b8da7cabc4a5726e6c13255971808d904065ff269bf725e015",
+    "fixed_interface_rank_family_math_v1.py": "44c8afde5013e0117ca1817092de12a2e4a1f481f1d502abaf15a1f01d12e821",
+    "fixed_interface_rank_family_math_v2.py": "dd62160b8629ad83bceb45456eda49343033c51042d4a9cdd14f368831658b3e",
+    "run_HNSCC_fixed_interface_baseline_v1.py": "41ff49b569c5a3c20e5e6faf10fa0ae413ec06a6e1b53dc1cff8c57a24a40ad9",
+    "run_HNSCC_fixed_interface_baseline_v2.py": "768cdda46ce6f9e3c82429b9413ede6de44e8e90b4765f46b792b4f2362bc60f",
+    "run_HNSCC_fixed_interface_baseline_v3.py": "2a0d6610d4a8aa6507548f9ec5850d08850e3bc51cd0b6c8034af7471b35f038"
+  },
+  "source_metadata_axes_and_parent_capture_qualification_complete": true,
+  "native_input_and_all_working_nulls_identical_across_v2_v3": true,
+  "primary_calibration_and_inference_prefix_identical_across_math_v1_v2": true,
+  "primary_inference_prefix_SHA256": "8b259ceff0c775668e7c0bd3c3e4ff725cb1c4fb3585ee4b519c06a295a2b129",
+  "HNSCC_v1_failure": {
+    "exception_class": "AttributeError",
+    "source_line": 125,
+    "before_expression": true,
+    "physical_identity_field_omitted_by_whole_frame_reader": true
+  },
+  "HNSCC_v2_failure": {
+    "exception_class": "IndexError",
+    "scope": "Zero-control unadjusted descriptive point; original full native inputs and finite nulls completed; family not complete",
+    "original_process_stopped_no_terminal": true
+  },
+  "HNSCC_v3_repair": "Unadjusted descriptive point uses direct average-rank Spearman independently checked with pandas; main model/null/random streams unchanged",
+  "all_main_null_wild_bootstrap_leave_one_and_BH_BY_values_independently_replayed": true,
+  "replay_limit": "Shared native selection/metadata I-O and inherited authoritative RNA; bounded manual CSR audit does not independently repeat all raw experiments",
+  "private_source_only_outputs_SHA256": {
+    "private_complete2_HNSCC_source_associations.json": "95ce5a48ea7cad55fc95674b644d06bc056b064d3e2f15d691b5a915d184f50f",
+    "private_all_working_null_diagnostics.json": "038dfb8a9a71f4f8e38107824f1a428853e358df2a1ac497b0af229080012a5f",
+    "private_source_only_native_capture_and_clinical_coverage.json": "a771ea7ee6ac207861af65dcf5232725757ce92bb3b908d91857cff69d347746"
+  },
+  "private_scientific_review_SHA256": "6bba1e3d1b1673f6190852eb5afff43cf4a1e200c653f4bfb23687c65adb51a2",
+  "scientific_effects_counts_candidate_definitions_and_individuals_public": false,
+  "real_RNA_scores_model_inputs_and_random_arrays_persisted": false,
+  "new_external_followup_CSV_not_read_or_transferred": true,
+  "permission_for_that_specific_route_pending": true,
+  "formal_identities_states_old_CM_and_closed_families_unchanged": true,
+  "local_fixture_limit": "Local bundled Python lacks SciPy; initial import fixture stopped; local manual average-rank adapter/pandas tests passed; actual server SciPy/pandas points fully checked",
+  "goal_status": "active",
+  "goal_turn_classification": "progress"
+}

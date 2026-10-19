@@ -140,3 +140,6 @@
 
 - [原作者随访资料的效果前来源与单位资格](NSCLC-original-author-followup-qualification-20261020.md)：当前传输许可待定，真实处理未执行。
 - [既定接口在已缓存Bassez来源的互补问题](Bassez-fixed-interface-complement-20261020.md)：完整测量资格与缺失处理，非γδ同端点或临床应答验证。
+
+- [固定接口的全部缓存来源轴与分流](fixed-interface-cached-source-axis-routing-20261020.md)。
+- [已审HNSCC的固定接口治疗前互补问题](HNSCC-fixed-interface-baseline-complement-20261020.md)。
