@@ -1,0 +1,20 @@
+{
+  "observed_UTC": "2026-10-19T13:58:00.029411+00:00",
+  "goal_status": "active",
+  "goal_turn_classification": "progress",
+  "producer_terminal_sha256": "be857003def7e756a2d65665a6b458717513ec98a861813d06fccdf46c084281",
+  "producer_completed_UTC": "2026-10-19T13:54:57.734225+00:00",
+  "aggregate_audit_sha256": "2e16a9a5663020a7e2aafbe4091174311b3c0dc667a2916b0efff7875f175a54",
+  "native_cells": 150915,
+  "native_count_positions_replayed": 150915000,
+  "target_count_positions": 301830,
+  "all_source_positions": 7,
+  "aggregate_null_values_replayed": 7996,
+  "field_decomposition_positions": 300,
+  "private_copied_files": 11,
+  "private_copied_bytes": 85171,
+  "new_project_volume_outputs": false,
+  "full_expression_graph_or_cell_scores_persisted": false,
+  "scientific_outputs_public": false,
+  "formal_identity_changed": false
+}

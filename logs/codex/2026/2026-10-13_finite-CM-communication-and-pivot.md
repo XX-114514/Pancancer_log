@@ -1607,3 +1607,25 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 报告源Python3.10 AST通过，完整九表/旧等级/重复基线校核与实际视觉接受完成；完整仓库及脱敏diff gate接续，原三份无关未提交工作保留。
 
 - Publication gate: report source Python3.10 AST and complete9-table/reference equality checks pass; bounded independent raw/metadata audit and actual source-PNG visual accepted. Full repository validation0 errors/1 existing path warning; git diff --check passes. Reviewed complete new report code, method, technical JSON and sanitized diff; source statistics, figures, candidate molecules, individual rows, sequences and matrices remain outside publicGit. Suggested commit: analysis: complete receiver identity sensitivity and source review.
+
+
+## 2026-10-19T13:56:02.659617+00:00 UTC /2026-10-19T21:56:02.659617+08:00 UTC+8 全空间作者谱系资格接受；内存输出实验启动
+
+- 上一内容deb52c3a84c7579952e1e8781fda3a3cee260d7b于13:10:41.891617 UTC普通push、13:10:48.926608 UTC独立HTTPS核main，中转关闭。本轮progress：全部既有空间输入metadata资格和独立计数重建实际完成；γδ身份和临床科学边界保持上一接受记录。
+- [全14输入资格](../../../methods/all14-author-spatial-lineage-qualification-20261019.md)13:23:24.690775 UTC启动、13:23:28.522384 UTC完成e68ea3caf60fc05a09abd0072ed9155aa8e09b4d27a19b72fe82f010a5ec1c9a。全部输入SHA、既有作者缓存及有界8源metadata表头/一层旁表目录核验，无新表达或效果。13:48:36.295752 UTC独立Pandas重建全部可用作者技术视野计数308位置，未知保持NA；限定目录未找到旁表不等于作者从未提供标签，FOV不是患者。
+- [固定空间问题](../../../methods/author-spatial-inflow-followup-20261019.md)保留全部7来源×癌种位置，3合格输入；宽作者T/单核吞噬细胞、原资源RNA代理，不当原细γδ/完整组装精确复现。6NN/相对限长2、背景超额主读出、两条件null各1999次、双尾最大P及BH/BY7，raw/宽图只点敏感性；四项分解/显式边核验。无新下载或身份写回。
+- 本机缺SciPy，合成数值未在本机执行；现有服务器NumPy1.26.4/SciPy1.11.4实际fixture通过显式边、四项恒等、枚举null和零图。没有安装/调用Squidpy，官方inflow数学式由明确代码实现。
+- v1于13:44:04.370355 UTC启动后确认退出，缺历史辅助模块，ModuleNotFoundError，源14/reader7，真实数据前失败；v2原样内置原numeric-key函数、导入/fixture通过，13:47:39.583746 UTC启动后确认退出，resource50的AssertionError为配额保护，输出目录未创建，不是科学阴性。两次失败保留。
+- 配额剩500349120512字节，低于既定501073741824预留+缓冲；不降低预留、不删/移原数据。RAM输出v3源54e015e6f5419dffaa62cd5771b8d6ba226f678ead3996d6c3e35538255fb638于13:54:27.411795 UTC一次启动，项目卷只读；代码/日志/小型汇总在专属tmpfs，禁pycache，RAM空闲512MiB门槛及输出2MiB上限，完成后小结果存本机私有目录核SHA。科学参数不变，尚无新空间效果接受。
+- 正式身份/状态、2026年10月CM（v20261010）与旧有限推断保持；公开只通用代码/方法、技术维度/SHA和轨迹，所有科学统计/图私有。新代码Python3.10 AST通过；另两份并发代码与原三份无关工作保留。首个本机日志写入因stdin编码解析失败、未写入，本脚本显式UTF-8重做。完整仓库和脱敏diff gate接续。下一核原RAM句柄，全原生输入核验后独立复算7来源null/BH/BY。goal active。
+
+
+## 2026-10-19T13:58:00.029411+00:00 UTC /2026-10-19T21:58:00.029411+08:00 UTC+8 内存空间实验完成、全部来源聚合独立复算接受
+
+- 同一v3作业13:54:57.734225 UTC完成be857003def7e756a2d65665a6b458717513ec98a861813d06fccdf46c084281；3输入全原生150915细胞×1000特征逐项重放150915000计数位置，目标301830位置、全RNA/检出数、十负探针与FOV阈值、原metadata精确键/globalXY/Area核验通过。几何绝对物理单位仍未独立确认，不把技术视野当患者。全部表达/图/单细胞分数只RAM。
+- 原小型11文件85171字节复制本机私有目录，所有manifest SHA/字节核对；保留tmpfs原件，无删除，掉电风险由已核本机副本覆盖。未新下载原始数据，没有向项目卷写新输出，也未降低预留。
+- 新独立聚合审核通过2e16a9a5663020a7e2aafbe4091174311b3c0dc667a2916b0efff7875f175a54：另一标量尾计数/独立排序BH/BY核7996个来源null值、完整7位置、全部图像等权/FOV等权聚合、300四项分解、全部排除互斥与门槛；不是第二次全raw/图重建。原生产显式边检查和全原生校验范围如上，不夸大独立审核。
+- 所有来源读出、失败位置、固定点敏感性和科学审阅均保留私有；本轮不公开科学效果/分子/权重/图。科学优先级依据完整固定主问题，不用某一个null或raw/宽图的更有利结果改变家族。细γδ身份、独立患者、完整组装/蛋白与机制仍未由本轮确认；正式标签及旧有限推断保持。
+- 本轮真实实验/独立审核/结果解释为progress，整体goal active；下一回到来源限定的接收状态与接口证据，γδ参考跨来源校准须先定资格，不直接扩展低恢复的RNA交集规则。公共记录仅技术证据/方法/轨迹。完整仓库检查和脱敏diff后普通push，保留并发新增及已有无关未提交工作。
+
+- Publication gate: all8 new Python sources pass3.10 AST; real server math fixture and full-native production parity pass; independent aggregate replay of all7996 source-null values/300 decomposition positions/all7 P-BH-BY accepted. Full repository validation0 errors/1 pre-existing path warning; full generic sources, methods, technical JSON and sanitized diffs reviewed, git diff --check passes. Current shared main09d6536f61cf9d6b6f071b85e6a977a6bb1a8155 independently matched cloud before this commit; unrelated concurrent work retained. Scientific effects, candidate molecules, private output files, figures, individual rows and matrices excluded from staging. Suggested commit: analysis: qualify author spatial scope and complete finite RAM inflow followup.

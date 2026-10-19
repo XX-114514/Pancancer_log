@@ -1,3 +1,5 @@
+[全14作者谱系资格](all14-author-spatial-lineage-qualification-20261019.md)、[固定作者空间inflow](author-spatial-inflow-followup-20261019.md)：有限条件置换、身份及配额边界。
+
 [既定配体组装补充的原生测量资格](native-fixed-ligand-assembly-qualification-20261019.md)：全作者记录边际联合RNA界限、指定补充的同设计结果后描述，无新P/FDR。
 
 [原通讯接收身份敏感性](gamma-receiver-identity-sensitivity-20261019.md)：四固定口径/七描述，原分母与尺度，全部数值核验和限定原始审核。

@@ -1,0 +1,20 @@
+{
+  "observed_UTC": "2026-10-19T13:56:02.659617+00:00",
+  "goal_status": "active",
+  "qualification_terminal_sha256": "e68ea3caf60fc05a09abd0072ed9155aa8e09b4d27a19b72fe82f010a5ec1c9a",
+  "independent_metadata_count_positions": 308,
+  "metadata_acceptance_UTC": "2026-10-19T13:48:36.295752+00:00",
+  "all_inputs": 14,
+  "source_cancer_positions": 7,
+  "selected_inputs": 3,
+  "new_spatial_results_accepted": false,
+  "v1_failure": "ModuleNotFoundError_before_real_data",
+  "v2_failure": "quota_guard_AssertionError_before_real_data",
+  "v3_source_sha256": "54e015e6f5419dffaa62cd5771b8d6ba226f678ead3996d6c3e35538255fb638",
+  "v3_launch_UTC": "2026-10-19T13:54:27.411795+00:00",
+  "storage": "volatile_tmpfs_then_small_private_local_copy",
+  "data_volume_read_only": true,
+  "full_expression_graph_or_cell_score_arrays_persisted": false,
+  "formal_identity_changed": false,
+  "scientific_outputs_public": false
+}
