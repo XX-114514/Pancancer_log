@@ -1,0 +1,16 @@
+{
+  "observed_UTC": "2026-10-19T19:58:59.621209+00:00",
+  "observed_UTC8": "2026-10-20T03:58:59.621209+08:00",
+  "status": "EXISTING_GAMMA_EVIDENCE_READ_ONLY_RECHECK_AND_SOURCE_HANDOFF_COMPLETE",
+  "registered_server_artifacts_reverified": 17,
+  "all_prior_server_manifest_SHA_equal": true,
+  "local_selected_source_subset_SHA_reverified": true,
+  "all_original_54_aggregate_positions_preserved": true,
+  "source_aggregate_handoff_SHA256": "5f2650e0859bd469bf349337db668d9d865801988c5a4e3702941ed184287331",
+  "new_RNA_measurement_or_classification": false,
+  "new_clinical_P_or_FDR": false,
+  "formal_labels_and_CM_unchanged": true,
+  "individuals_weights_and_matrices_not_exported": true,
+  "public_push_not_attempted_permission_pending": true,
+  "goal_status": "active"
+}
