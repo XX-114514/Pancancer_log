@@ -90,3 +90,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [20261020 已缓存bulk固定接口](20261020_cached_bulk_fixed_interface_v1.md)：完整资格、原生RNA/全部数值及私有整批科学/实际图接受；发布许可待。
 
 - [20261020 CM代理证据整合与内部留出](20261020_CM_proxy_balance_internal_CV_v1.md)：全原证据/内部诊断/数学/私有科学及实际图已接受，失败保留；发布许可待。
+
+- [20261020 全大类固定CM面板来源](20261020_CM_all_lineage_fixed_panel_sources_v1.md)：原RNA描述运行及接受状态。

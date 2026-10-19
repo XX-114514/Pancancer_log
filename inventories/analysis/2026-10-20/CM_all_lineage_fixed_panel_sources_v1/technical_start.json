@@ -1,0 +1,22 @@
+{
+  "observed_UTC": "2026-10-19T20:03:31.597315+00:00",
+  "status": "FIXED_ALL_LINEAGE_SOURCE_ATTRIBUTION_STARTED_REVIEW_PENDING",
+  "launch_UTC": "2026-10-19T20:03:02.152283+00:00",
+  "source_SHA256": "b9eb038b5a052b1d0d40c5aedd99af7d47dfa558ef80692065f55b1918abd074",
+  "configuration_SHA256": "d76cf749f60a4d80e426780e8d8eae605f3877b0aa256871b4b0e671c5fd1d66",
+  "synthetic_fixture_accepted": true,
+  "scope_count": 3,
+  "fixed_panels": 7,
+  "fixed_panel_pairs": 2,
+  "thresholds": [
+    1,
+    2
+  ],
+  "chunk_rows": 8192,
+  "real_RNA_and_per_cell_arrays_RAM_only": true,
+  "original_project_read_only": true,
+  "no_new_data_or_clinical_tests": true,
+  "scientific_results_private": true,
+  "public_push_permission_pending": true,
+  "goal_status": "active"
+}

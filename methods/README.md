@@ -147,3 +147,5 @@
 - [既有bulk固定接口临床家族](cached-bulk-fixed-interface-clinical-family-20261020.md)：全物理轴/临床分母接受，新84临床与39描述事前固定。
 
 - [固定CM代理的平衡含义与内部留出](CM-proxy-balance-and-internal-CV-20261020.md)：原全临床证据、精确min重参数化及训练CDF隔离；无新P。
+
+- [固定CM面板全大类RNA来源](CM-fixed-panel-all-lineage-RNA-sources-20261020.md)：全部大类/范围，固定面板与同细胞双臂，不新增临床P。
