@@ -1,3 +1,7 @@
+[γδ群水平谱系与正交范围](gamma-delta-group-lineage-and-orthogonal-evidence-20261019.md)：完整51群/25marker、同记录描述、缓存模式与有界公开表头资格；无正式身份采纳。
+
+[γδ固定scGate试验](gamma-delta-scGate-pilot-20261019.md)及[原RNA候选规则](gamma-delta-RNA-candidate-identification-20261019.md)：原作者参考/候选并列、模型/命名边界及未执行扩展范围。
+
 [NSCLC作者谱系与通讯程序路线资格](NSCLC-author-lineage-and-communication-factor-preflight-20261019.md)：原全行/记录接受，MCP方案资格及通讯张量下一合同/软件边界。
 
 [独立功能RNA完整400家族](GSE176021-disjoint-functional-association-family-20261019.md)：全测量/400真实问题/3200点及完整随机流、四幅全范围图均接受；有限家族关闭。

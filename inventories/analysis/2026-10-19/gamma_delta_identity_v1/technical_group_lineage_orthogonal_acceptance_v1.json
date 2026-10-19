@@ -1,0 +1,20 @@
+{
+  "observed_UTC": "2026-10-19T11:32:12+00:00",
+  "status": "complete_group_lineage_and_orthogonal_scope_scientific_review_no_formal_identity",
+  "group_profile_producer_sha256": "f19ab40cc910c3ea11e286d9a04893336bc20e4d3465bb6215a0bf188facbb0a",
+  "group_profile_audit_sha256": "32d0dba881c9029c61839ccef8b449a27ddb1142453c3d889551fcff3a1e3ec9",
+  "public_header_terminal_sha256": "d8dab0d2258cc06419e38be3c51244a149274fec41037a8f4a3f0fc13917069f",
+  "private_scientific_review_terminal_sha256": "a9751cec1cf76fcd77e951f9e01789f7a34d65ff6f30a9b3b30464cf7a5d166a",
+  "original_author_types": 51,
+  "prespecified_markers": 25,
+  "group_marker_positions": 1275,
+  "within_record_marker_comparisons": 100,
+  "cached_source_schema_entries": 21,
+  "full_cache_SHA_reverified": true,
+  "all_numeric_descriptions_independently_recomputed": true,
+  "public_TCR_metadata_scope": "header_only_no_data_rows_or_complete_file",
+  "raw_RNA_or_TCR_sequence_download": false,
+  "scientific_values_or_weights_public": false,
+  "formal_identity_adopted": false,
+  "goal_status": "active"
+}
