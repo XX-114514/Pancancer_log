@@ -92,3 +92,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [20261020 CM代理证据整合与内部留出](20261020_CM_proxy_balance_internal_CV_v1.md)：全原证据/内部诊断/数学/私有科学及实际图已接受，失败保留；发布许可待。
 
 - [20261020 全大类固定CM面板来源](20261020_CM_all_lineage_fixed_panel_sources_v1.md)：原RNA描述运行及接受状态。
+
+- [20261020 CM参考来源留出诊断](20261020_CM_marker_disjoint_reference_v1.md)：资格核查后原RNA/固定8位置实际运行，表现待审。

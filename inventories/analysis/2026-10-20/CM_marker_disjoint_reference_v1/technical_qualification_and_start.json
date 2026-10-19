@@ -1,0 +1,23 @@
+{
+  "observed_UTC": "2026-10-19T20:21:03.951130+00:00",
+  "status": "REFERENCE_CACHE_COVERAGE_ACCEPTED_FIXED_SOURCE_HELDOUT_DIAGNOSTIC_STARTED",
+  "qualification_source_SHA256": "5b6f6164b6430494dc82ba1e4f52c743c9c803c4f8c93091853bb3ce707ffe62",
+  "private_qualification_SHA256": "2490f67edef4db44ef3b748dcf213627e5bbe7979b9db01373e5a901f81dbf1d",
+  "qualification_completed_UTC": "2026-10-19T20:15:23.578794+00:00",
+  "current_disjoint_measured_gene_opportunities": 25188,
+  "excluded_grouping_physical_columns": 34,
+  "old_three_view_cache_scope_not_sufficient_for_full_reference": true,
+  "legacy_all18_not_same_native_row_namespace": true,
+  "actual_launch_UTC": "2026-10-19T20:19:46.073161+00:00",
+  "source_SHA256": "fba2383acd9620627691d46192307b188256c11dcf7cbc0362f3bc5f5dffbc77",
+  "helper_SHA256": "5b6f6164b6430494dc82ba1e4f52c743c9c803c4f8c93091853bb3ce707ffe62",
+  "configuration_SHA256": "a584553cc397930eff01ab8a1eab81f4281db8f66cec4e3c432d83fa2308c5fa",
+  "registered_contexts": 8,
+  "models_per_context": 2,
+  "synthetic_fixture_accepted": true,
+  "new_clinical_P_FDR_or_identity": false,
+  "all_real_arrays_and_learned_features_RAM_only": true,
+  "scientific_coverage_and_effects_private": true,
+  "public_push_permission_pending": true,
+  "goal_status": "active"
+}

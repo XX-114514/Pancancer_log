@@ -149,3 +149,5 @@
 - [固定CM代理的平衡含义与内部留出](CM-proxy-balance-and-internal-CV-20261020.md)：原全临床证据、精确min重参数化及训练CDF隔离；无新P。
 
 - [固定CM面板全大类RNA来源](CM-fixed-panel-all-lineage-RNA-sources-20261020.md)：全部大类/范围，固定面板与同细胞双臂，不新增临床P。
+
+- [CM分组基因排除后的来源留出参考](CM-marker-disjoint-reference-diagnostic-20261020.md)：实际缓存资格、全部类别保留及QC基线。
