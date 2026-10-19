@@ -1,0 +1,14 @@
+{
+  "observed_UTC": "2026-10-19T09:28:25+00:00",
+  "status": "all_original_two_atlas_endpoint_metadata_accepted_fine_author_sidecars_not_in_scope",
+  "source_arm_entries": 61,
+  "library_arm_entries": 1690,
+  "library_channel_positions": 8450,
+  "producer_terminal_sha256": "378dc6238668eae086b5c870294c114bb0b30baa4cadd921a9e4c8a3f925561b",
+  "independent_audit_sha256": "893cf18853f979f5ffd50e69665fd457188cd60a75e81d96178ec6bdecf8eeb6",
+  "input_capture_proof_sha256": "2d67723d6174a0301ea7157d038ef08f3aa715e695dd4414e7deafb602313fa7",
+  "new_expression_read": false,
+  "new_clinical_adoption": false,
+  "scientific_outputs_public": false,
+  "goal_status": "active"
+}
