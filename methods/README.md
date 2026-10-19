@@ -1,3 +1,7 @@
+[公开符号规范的同细胞完整scGate试验](gamma-delta-symbol-normalized-paired-pilot-20261019.md)：一个精确映射、原固定选择、三个不变锚点、完整四槽审阅；不做临床重测。
+
+[全来源γδ作者参考与原缓存细字段资格](gamma-delta-all-source-author-reference-qualification-20261019.md)：作者文字不是TCR真值，所有来源及未知/混合保留，先核参考再做校准。
+
 [全14作者谱系资格](all14-author-spatial-lineage-qualification-20261019.md)、[固定作者空间inflow](author-spatial-inflow-followup-20261019.md)：有限条件置换、身份及配额边界。
 
 [既定配体组装补充的原生测量资格](native-fixed-ligand-assembly-qualification-20261019.md)：全作者记录边际联合RNA界限、指定补充的同设计结果后描述，无新P/FDR。

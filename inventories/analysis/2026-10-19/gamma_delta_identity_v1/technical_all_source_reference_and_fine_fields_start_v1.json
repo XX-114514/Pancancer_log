@@ -1,0 +1,23 @@
+{
+  "observed_UTC": "2026-10-19T14:11:54.462371+00:00",
+  "goal_status": "active",
+  "previous_goal_turn_classification": "progress",
+  "metadata_producer_terminal_sha256": "017deb6e9448c22daa22eb929fa1b9c4c1b1782d375acaf785465c5c8f6a4a40",
+  "source_semantics_aggregate_audit_sha256": "ca5cf908c69bf1ac706896dda4f37b48a03110a9ef1003b65680e0250bbd982e",
+  "source_arm_positions": 61,
+  "library_arm_entries": 1690,
+  "source_author_term_positions": 147,
+  "distinct_author_terms": 70,
+  "semantics_fixture_examples": [
+    20,
+    13
+  ],
+  "fine_field_v1_stopped": "AssertionError_nonunique_shared_path_role_before_metadata_values",
+  "fine_field_v2_source_sha256": "e0835cca9dd119613deee479329ba55af285db232f12162aa653c84fa6bdaa0e",
+  "fine_field_v2_launch_UTC": "2026-10-19T14:10:31.397984+00:00",
+  "last_confirmed_same_process_records": 6,
+  "fine_field_record_positions": 21,
+  "new_expression_or_clinical_effects": false,
+  "formal_identity_changed": false,
+  "scientific_outputs_public": false
+}
