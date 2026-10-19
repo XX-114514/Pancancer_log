@@ -1593,3 +1593,17 @@ v2生产14:27:38.807497–14:27:58.590620 UTC（22:27 UTC+8），终态a1a7bff0�
 - 两新源Python3.10 AST通过，真实模型另一QR检查完成；仓库/脱敏diff gate接续，原三份无关未提交工作保留。下一继续原身份句柄及固定1024接收参考raw前缀核验，完整审查七描述和相同记录基线，再据科学边界规划独立来源/空间问题。
 
 - Publication gate: both assembly sources pass Python3.10 AST; real old-score reconstruction/bound checks and alternate nuisance/all-deleted-QR effect checks completed. Full repository validation0 errors/1 old path warning; git diff --check passes. Reviewed complete code/method/technical JSON and sanitized diff, no scientific effects, gene identities/weights, per-record values, sequences or matrices staged. Suggested commit: analysis: qualify fixed ligand assembly and describe same-design sensitivity.
+
+
+## 2026-10-19T13:06:52.526049+00:00 UTC /2026-10-19T21:06:52.526049+08:00 UTC+8 原接收身份敏感性及完整来源审阅闭合
+
+- 原组装节点45e42a04836f28f2f57f466dd6c680b3e69f5ce0于12:58:41.501868 UTC普通push、12:58:48.409540 UTC独立HTTPS核main，临时中转已关闭。当前turn为progress：原长作业真实完成、限定审核通过，另完成既定组装资格/同设计描述及来源科学分级，不是仅等待/状态复述。
+- 原生产同句柄12:57:42.287317 UTC完成326ae264d1715e34a191d3f3c4003d3ab7efe997ccd1262101031d1e4e308837：原2010550708坐标完整SHA/CRC，全部1254749细胞RNA/检出基因与缓存完全一致，所有11701单元的所用组分raw sum/检测/mean-log逐项核验。原基线分数/完整控制/效应/CV3 SE复原；全部可估计新模型由第二nuisance/显式删除块QR重算，原四身份口径/七描述及516记录排除位置完整保留。原尺度/全部协变量/不足门槛不变，所有表达和分数数组只RAM。
+- 原审核同句柄12:58:15.081464 UTC完成10440bf7d887dc34785f58b08e66db956b4d13877d4579d9a219508fc9be8cf7：从原作者字段重建全部参考行，字典逐细胞核四掩码与全部覆盖位置；另一CSV解析器检查native顺序首1024接收参考细胞/2048所用组分计数位置，扫描73750000原坐标，摘要完全一致。此限定原始前缀不是第二次整原源重放；新模型第二实现是生产RAM中执行，不冒称另一进程全新表达/模型重做。
+- 原七项身份描述和两项组装描述分别完成，未做的联合替换不能宣称完成。原P/BH/BY/已闭合功能家族及原身份/状态保持；结果后参考区间不创造新的校正发现。当前真实细胞/样本覆盖、方向、效应和优先级仅私有及获准来源级对话；不把工程审核称γδ受体/独立患者/机制验证。
+- 私有科学优先级请求fe8587f44faadc8d0d61f376070f1875b69daecc7b9ed2f6d7f4fa52fe0045e4于13:01:51.583536 UTC形成；报告源69229447311d0d03303ea9f4ed69b2a7677bd4f9bf0950dd96046c7901c9344f于13:03:04.496246 UTC启动，13:03:06.985298 UTC完成b5482d03c1255e0cfb699966ade9af3ee95b17c73588515c5d606b64cb0a5edd。完整九描述全部保留，原组装重复基线逐值核一致不重复计证据，图显示四个非重复可估计比较；不可估计口径在完整表和图注明确保留。当前原始临床编码/效应方向及旧主BH/BY等级已核，不沿用冲突记忆或把敏感性变为新发现。
+- 13:04:57.690514 UTC实际PNG视觉与优先级验收f90587b180d374d4f92e5cf43d6cf92d1556adb127f55a793669144c2a468ed1：标题/全部四点和区间/记录数/零线/方向轴与完整限制脚注均可辨无截断。PNG de4303871275f529c55c85108727272683c031f401450e1cff08e19a26dd1850、SVG117a4e3904a7d8cdd5a4c8763bab34d963d8607c3013324847e8509b01dc18c0绑定原报告；只有获准来源汇总PNG取回当前工作区，未传个体表、序列、学习权重或矩阵，科学图未进公共Git。
+- 整体goal active。下一具体范围为全部14既有空间输入的作者旁表/面板相容谱系参考资格，再研究更宽髓系—T局部接口。原细γδ身份/指定完整组装不可测位置继续保留，更宽T空间问题只作互补，不冒称原精确端点复现；不重开旧HNSCC/NSCLC闭合家族或按本轮效应调身份/分子门槛。原2026年10月CM（v20261010）/172身份/9模块不改，后续免疫程序与其分版本。
+- 报告源Python3.10 AST通过，完整九表/旧等级/重复基线校核与实际视觉接受完成；完整仓库及脱敏diff gate接续，原三份无关未提交工作保留。
+
+- Publication gate: report source Python3.10 AST and complete9-table/reference equality checks pass; bounded independent raw/metadata audit and actual source-PNG visual accepted. Full repository validation0 errors/1 existing path warning; git diff --check passes. Reviewed complete new report code, method, technical JSON and sanitized diff; source statistics, figures, candidate molecules, individual rows, sequences and matrices remain outside publicGit. Suggested commit: analysis: complete receiver identity sensitivity and source review.
