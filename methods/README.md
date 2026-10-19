@@ -1,3 +1,5 @@
+[全代理基因不重叠功能解释](state-proxy-gene-disjoint-functional-interpretation-20261020.md)：同背景、全50参考/全既定来源、四项质量控制和独立原生RNA计分；执行待审核。
+
 [两个嵌套空间问题](native-spatial-nested-background-question-20261020.md)：原其它状态条件结果保留，新增背景条件的全家族描述；不按有利结果选子集。
 
 [真实原生空间分区多视图](native-spatial-blocked-multiview-20261020.md)：官方单视图RF、外层空间缓冲/训练融合/完整家族；两套完整问题执行及审核完成，科学效果私有。

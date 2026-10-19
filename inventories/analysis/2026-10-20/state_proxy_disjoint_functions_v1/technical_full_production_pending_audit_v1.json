@@ -1,0 +1,16 @@
+{
+  "observed_UTC": "2026-10-19T17:25:00.261918+00:00",
+  "production_complete_UTC": "2026-10-19T17:22:49.914288+00:00",
+  "producer_terminal_sha256": "f188a874d9bfbcbd6621964f7fc0c48c8690a7e7cc5b4a92d72870475f354173",
+  "source_proxy_positions": 203,
+  "source_function_positions": 10150,
+  "identity_descriptions": 70150,
+  "function_rank_positions": 1588604662,
+  "partial_rank_positions": 51399920,
+  "all_original_parent_proxy_values_checked": 58956,
+  "independent_audit_started_UTC": "2026-10-19T17:24:13.689955+00:00",
+  "independent_audit_source_sha256": "c9950bdfc43f013b85826085706c7bc7afe2dcccf810dfd10e45dda5ff18c0f6",
+  "scientific_review_complete": false,
+  "new_formal_state_or_interaction_or_clinical_validation": false,
+  "scientific_effects_private": true
+}

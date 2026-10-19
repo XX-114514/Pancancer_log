@@ -1,0 +1,12 @@
+{
+  "status": "ALL_PROXY_DISJOINT_FUNCTION_REAL_RNA_LAUNCHED_PENDING_AUDIT",
+  "started_UTC": "2026-10-19T17:21:03.127424+00:00",
+  "pid": 138649,
+  "start_ticks": 324556180,
+  "producer_sha256": "8f386392b2fca68098272718326d8e63dc0cc681576e2faeb90d1377894fdabf",
+  "plan_sha256": "89178c14bdb9d88e3e007d430cdb09ac015a29a4f1f49487e839983e81a24960",
+  "fixture": {
+    "status": "PASS_POSITIVE_NEGATIVE_CONSTANT_DUPLICATE_COVARIATE_AND_INDEPENDENT_WEIGHTED_LS",
+    "synthetic_only": true
+  }
+}

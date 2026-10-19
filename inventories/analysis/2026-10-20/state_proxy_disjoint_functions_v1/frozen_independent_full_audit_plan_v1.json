@@ -1,0 +1,16 @@
+{
+  "created_UTC": "2026-10-19T17:24:14.617579+00:00",
+  "audit_source_sha256": "c9950bdfc43f013b85826085706c7bc7afe2dcccf810dfd10e45dda5ff18c0f6",
+  "producer_terminal_sha256": "f188a874d9bfbcbd6621964f7fc0c48c8690a7e7cc5b4a92d72870475f354173",
+  "all_source_proxy_positions": 203,
+  "all_identity_descriptions": 70150,
+  "all_source_function_positions": 10150,
+  "all_proxy_function_aggregates": 1550,
+  "all_rank_scores_reconstructed": true,
+  "independent_ranking": "UNIQUE_VALUE_FREQUENCIES",
+  "independent_effect": "WEIGHTED_LEAST_SQUARES_AND_PANDAS_RANKS",
+  "all_common_gene_axes_and_exclusions_rebuilt": true,
+  "clinical_spatial_effect_selection": false,
+  "no_independent_raw_archive_replay": true,
+  "scientific_review_pending": true
+}

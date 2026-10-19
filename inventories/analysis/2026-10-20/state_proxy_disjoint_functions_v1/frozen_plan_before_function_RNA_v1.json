@@ -1,0 +1,62 @@
+{
+  "version": "all_measured_proxy_disjoint_function_interpretation_v1",
+  "created_UTC": "2026-10-19T17:21:02.793858+00:00",
+  "producer_sha256": "8f386392b2fca68098272718326d8e63dc0cc681576e2faeb90d1377894fdabf",
+  "helper_sha256": {
+    "state_proxy_disjoint_function_math_v1.py": "8dbf2dc871fe108c9e819bd8db5af858f341307622f107a01db888e29bf44061",
+    "qualify_native_spatial_state_probe_contract_v1.py": "1954264ebf3359e27f6371cab603d76cf441beb4b2dcef748c5e15f90ad03741"
+  },
+  "physical_contract_sha256": "0d6f8e2bac99780b7a7b211c33468ae243ece7920167c3ce85fcf465d994345e",
+  "reference_definition_sha256": "89ad355c5c6f02f0d0e68b2b0f35cd7e1cc217097512c99e2e306e5f9c92f4fa",
+  "native_files": 12,
+  "reference_cells": 4349,
+  "measured_proxies": 31,
+  "fixed_function_references": 50,
+  "source_proxy_positions": 203,
+  "source_function_positions": 10150,
+  "aggregate_positions": 1550,
+  "background": "COMMON_UNIQUE_NATIVE_AXIS_MINUS_ALL1840_LR_AND_ALL_FULL_PARENT_PRIMARY_GENES_AND_PROXY_SIGNATURE_PHYSICAL_ALIASES",
+  "functional_min_genes": 20,
+  "functional_min_remaining_coverage": 0.8,
+  "minimum_variable_genes": 20,
+  "minimum_variable_fraction": 0.8,
+  "strong_original_reference_retention": 0.8,
+  "signature_gene_reselection": false,
+  "variable_genes_removed_from_signature": false,
+  "maxrank": 1500,
+  "cell_chunk": 128,
+  "zero_gene_rank": "CAP",
+  "ties": "AVERAGE",
+  "identity": "ORIGINAL_NODE_X_STRATUM",
+  "minimum_cells": 50,
+  "minimum_analysis_blocks": 10,
+  "block_weighting": "EQUAL_BLOCK_THEN_EQUAL_CELLS",
+  "fixed_controls": [
+    "FULL_NATIVE_RNA",
+    "FULL_NATIVE_DETECTED",
+    "MATCHED_PANEL_RNA",
+    "MATCHED_PANEL_DETECTED"
+  ],
+  "drop_unidentifiable_covariates": false,
+  "maximum_condition_number": 100000000.0,
+  "minimum_residual_relative_variance": 1e-10,
+  "minimum_block_mean_relative_variance": 1e-10,
+  "descriptive_concordance": {
+    "min_sources": 3,
+    "min_both_source_medians": 0.3,
+    "min_fraction_both_ge_point2": 0.75,
+    "min_leave_one_two_medians": 0.3
+  },
+  "new_P_or_FDR": false,
+  "clinical_or_spatial_effect_selection": false,
+  "formal_state_or_interaction_validation": false,
+  "resource": {
+    "project_read_only": true,
+    "new_raw_downloads": false,
+    "arrays_RAM_only": true,
+    "new_outputs": "TASK_OWNED_TMPFS_ONLY",
+    "minimum_tmpfs_free_bytes": 536870912,
+    "maximum_private_summary_bytes": 33554432
+  },
+  "independent_audit": "ALL_RANKS_BY_UNIQUE_VALUE_FREQUENCIES_ALL_IDENTITY_WEIGHTED_LS_AND_SOURCE_SUMMARIES_NOT_RAW_ARCHIVE_REPLAY"
+}
