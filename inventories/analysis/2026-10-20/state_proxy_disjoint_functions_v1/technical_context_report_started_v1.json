@@ -1,0 +1,8 @@
+{
+  "status": "ALL_FUNCTION_CONTEXT_AND_SOURCE_ONLY_REPORT_STARTED",
+  "started_UTC": "2026-10-19T17:35:18.886864+00:00",
+  "pid": 200127,
+  "start_ticks": 324641756,
+  "report_source_sha256": "4ee5222323d8120d5f10b5f9c8081516ec5daaed8abfd71ff547f4042898fe3a",
+  "function_audit_terminal_sha256": "e97bc7185608b79418176f9878c7238244bfcc79b1014f7238efc93d369c2638"
+}

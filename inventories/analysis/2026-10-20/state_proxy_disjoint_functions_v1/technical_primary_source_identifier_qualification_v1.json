@@ -1,0 +1,29 @@
+{
+  "observed_UTC": "2026-10-19T17:42:47.953068+00:00",
+  "public_bibliographic_only_no_clinical_records": true,
+  "results": [
+    {
+      "source": "pubmed_efetch",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40147443&retmode=xml",
+      "sha256": "48a41a468dc141655542e20a9d0c8a3d765af047949887e694f49c0b9af293e7",
+      "bytes": 24213,
+      "doi": "10.1016/j.cell.2025.03.018",
+      "publisher_PII": "S0092-8674(25)00291-0",
+      "PMID": "40147443",
+      "full_paper_or_supplement_read": false,
+      "patient_bridge_validated": false
+    },
+    {
+      "source": "europepmc_core",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40147443%20AND%20SRC%3AMED&format=json&resultType=core",
+      "sha256": "bf13b86b3d1db78fb03818a2d615473ec28153233a80347e60668cf9666cd97c",
+      "bytes": 25342,
+      "doi": "10.1016/j.cell.2025.03.018",
+      "publisher_PII": null,
+      "PMID": "40147443",
+      "full_paper_or_supplement_read": false,
+      "patient_bridge_validated": false
+    }
+  ],
+  "nonprimary_claims_not_adopted": true
+}

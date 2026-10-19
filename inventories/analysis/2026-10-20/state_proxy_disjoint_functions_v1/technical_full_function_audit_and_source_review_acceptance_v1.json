@@ -1,0 +1,33 @@
+{
+  "observed_UTC": "2026-10-19T17:41:32.950104+00:00",
+  "producer_terminal_sha256": "f188a874d9bfbcbd6621964f7fc0c48c8690a7e7cc5b4a92d72870475f354173",
+  "original_scientific_production_and_thresholds_unchanged": true,
+  "audit_v1_failure_preserved": true,
+  "audit_v2_complete_UTC": "2026-10-19T17:34:23.721820+00:00",
+  "audit_v2_terminal_sha256": "e97bc7185608b79418176f9878c7238244bfcc79b1014f7238efc93d369c2638",
+  "all_source_proxy_scores_checked": 203,
+  "identity_positions_recomputed": 70150,
+  "source_function_positions_recomputed": 10150,
+  "proxy_function_positions_recomputed": 1550,
+  "maximum_numeric_error": 8.881784197001252e-16,
+  "alternative_LS_boundary_sensitive_coefficients": 45,
+  "maximum_boundary_difference": 8.326672684688674e-17,
+  "discrete_decisions_verified_from_unchanged_published_source_with_roundtrip_precision": true,
+  "report_complete_UTC": "2026-10-19T17:35:21.282314+00:00",
+  "report_terminal_sha256": "898076dd76e99a2d1c64f57e8f216eda716960dfb52eeac49a70291cb0945499",
+  "source_only_table_rows": [
+    12,
+    8,
+    4,
+    33
+  ],
+  "explicit_source_only_files_privately_copied": 6,
+  "source_only_bytes": 409676,
+  "actual_scientific_and_visual_review_complete": true,
+  "all_source_and_identity_denominators_conserved": true,
+  "no_independent_raw_archive_replay": true,
+  "reference_calibration_reuse_not_external_validation": true,
+  "formal_state_or_interaction_or_clinical_validation": false,
+  "scientific_effects_and_learning_programmes_private": true,
+  "goal_status": "active"
+}

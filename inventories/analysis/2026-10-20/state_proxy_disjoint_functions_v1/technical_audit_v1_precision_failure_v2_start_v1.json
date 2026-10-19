@@ -1,0 +1,23 @@
+{
+  "observed_UTC": "2026-10-19T17:32:33.223870+00:00",
+  "original_producer_unchanged": true,
+  "original_producer_terminal_sha256": "f188a874d9bfbcbd6621964f7fc0c48c8690a7e7cc5b4a92d72870475f354173",
+  "audit_v1_confirmed_terminal_without_acceptance": true,
+  "audit_v1_exception_class": "AssertionError",
+  "audit_v1_source_lines": [
+    130,
+    120,
+    73
+  ],
+  "audit_failure_scope": "CROSS_SOURCE_FRACTION_AGGREGATE_AFTER_ALL_RANKS_AND_IDENTITY_DESCRIPTIONS_CHECKED",
+  "read_only_diagnostic": {
+    "source_summary_mismatches": 0,
+    "default_CSV_fraction_summary_mismatches": 1,
+    "round_trip_CSV_fraction_summary_mismatches": 0,
+    "descriptive_candidate_flag_mismatches": 0
+  },
+  "audit_v2_started_UTC": "2026-10-19T17:31:45.966710+00:00",
+  "audit_v2_source_sha256": "a753da5084b7432bee5fb8d5ce77778ecaf1c00af78169c2afa9a80b9a30760a",
+  "raw_RNA_scores_coefficients_and_thresholds_not_modified": true,
+  "scientific_review_pending": true
+}

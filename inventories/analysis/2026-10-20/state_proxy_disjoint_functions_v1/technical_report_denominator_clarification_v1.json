@@ -1,0 +1,11 @@
+{
+  "original_report_plan_preserved": true,
+  "source_function_positions": 10150,
+  "proxy_function_positions": 1550,
+  "original_spatial_model_cases_per_question": 126,
+  "spatial_questions": 2,
+  "total_original_spatial_model_cases": 252,
+  "paired_readout_target_positions_per_question": 63,
+  "paired_readout_target_question_positions_reported": 126,
+  "these_are_not_independent_states_or_patients": true
+}

@@ -1,0 +1,20 @@
+{
+  "created_UTC": "2026-10-19T17:35:11.757550+00:00",
+  "report_source_sha256": "4ee5222323d8120d5f10b5f9c8081516ec5daaed8abfd71ff547f4042898fe3a",
+  "all_proxy_groups": 31,
+  "all_fixed_functions": 50,
+  "all_original_spatial_question_positions": 126,
+  "full_function_and_spatial_family_not_favourable_subset": true,
+  "source_only_exports": [
+    "source_native_function_coverage_and_effects.tsv",
+    "target_source_function_spatial_support.tsv",
+    "target_source_original_dictionary_limits.tsv",
+    "source_identity_function_reason_counts.tsv",
+    "source_function_and_spatial_context.png",
+    "source_function_and_spatial_context.svg"
+  ],
+  "individual_rows_programme_IDs_gene_lists_weights_or_matrices_exported": false,
+  "reference_calibration_reuse_explicit": true,
+  "new_independent_patient_validation": false,
+  "no_new_P_FDR_or_mechanistic_claim": true
+}
