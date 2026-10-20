@@ -89,3 +89,6 @@ scripts/report_HNSCC_subtype_functions_private_v1.py
 
 # CM interpretation working evidence includes numerical learned loadings; publish names and audit receipts only.
 /inventories/analysis/2026-10-18/immune_CM_naming_v1/module_evidence*.json
+
+# Executed local depth audit v1 includes a private source-result assertion; use data-agnostic v2.
+scripts/audit_gamma_candidate_depth_strata_v1.py

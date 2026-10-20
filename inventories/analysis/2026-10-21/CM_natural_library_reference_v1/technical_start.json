@@ -1,0 +1,20 @@
+{
+  "observed_UTC": "2026-10-20T22:09:16.573629+00:00",
+  "status": "FIXED_PLAN_V2_INDEX_CORRECTION_RUNNING_REVIEW_PENDING",
+  "actual_launch_UTC": "2026-10-20T22:07:28.410790+00:00",
+  "source_SHA256": "ff340330f9f27a81ed25d4cda0a33e1ad5b80e1baef31fad1cc1933cacf1131d",
+  "configuration_SHA256": "911954f5bd044ce160a69fe308ac1b209dd9dd2804e0a8a0c198f39b1e85286c",
+  "solver_SHA256": "af2705f6e24d0e2e44218cb2fbdb1affe51d4e9cc40744efe0e4d3f6f7bcb5b9",
+  "failed_v1_source_SHA256": "ded5173d15ba86ba990b831eeac543901ecf86863d396d86a8796e4cab9da80f",
+  "failure": "NARROW_CATEGORICAL_BLOCK_INDEX_OVERFLOW_BEFORE_MODEL_FITS",
+  "versioned_int64_fix_and_90_block_fixture": true,
+  "all_context_positions": 64,
+  "all_target_positions": 1376,
+  "all_original_truth_classes": 24,
+  "supported_reference_classes": 19,
+  "all_human_RNA_profiles_truth_predictions_weights_RAM_only": true,
+  "original_project_read_only": true,
+  "no_new_clinical_tests_or_identity_adoption": true,
+  "public_push_specific_permission_pending": true,
+  "goal_tool_status": "paused_user_authorized_manual_work_resumed"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE_FIXED_DEPTH_DESCRIPTIONS_INDEPENDENT_AUDIT_PRIVATE_SCIENCE_AND_ACTUAL_FIGURE_REVIEW",
+  "observed_UTC": "2026-10-20T22:09:49.253676+00:00",
+  "producer_completed_UTC": "2026-10-20T21:52:01.731821+00:00",
+  "producer_source_SHA256": "d47c018d709bc34928b82ae77c26fb44e6fac2ab7d376532805c040df934b456",
+  "terminal_SHA256": "357b98a305de51db1a2d54d3744489c6c827b42d96280d90e093125fdc5fb3d4",
+  "audit_source_SHA256": "77a0b6876865244382317e68f7df3171cfaafd742abce32ba6b676ca5536798d",
+  "audit_SHA256": "2ddc2c3052a332ce0e2390556cba3571817bbc76618c55d5de7b3c7ed0c98a0f",
+  "aggregate_positions": 448,
+  "all_author_types_and_disjoint_roles_preserved": true,
+  "independent_native_unit_aggregation_and_manual_sorted_quantiles": true,
+  "all_rule_numerators_denominators_medians_checked": true,
+  "figure_v1_preserved_layout_v2_actually_viewed": true,
+  "figure_v2_source_SHA256": "a41b4ccedc2329c557ebb5c2662e85efc6e971dbfb78122fc15ae57b1e6a09c0",
+  "private_scientific_acceptance_SHA256": "0a4a622480e81f52fa6d13f67795c6a53745b36e5711e68b984cae61711e3ebf",
+  "no_new_raw_RNA_read_or_identity_adoption": true,
+  "source_scientific_counts_and_effects_not_in_public_git": true,
+  "public_push_specific_permission_pending": true
+}

@@ -153,3 +153,5 @@
 - [CM分组基因排除后的来源留出参考](CM-marker-disjoint-reference-diagnostic-20261020.md)：实际缓存资格、全部类别保留及QC基线。
 
 - [CM已知RNA混合可辨识性](CM-known-RNA-mixture-calibration-20261020.md)：完整basis、来源留出及材料压力测试，不混同细胞比例。
+
+[真实文库参考背景与来源迁移诊断](CM-natural-library-reference-diagnostic-20261021.md)：全部原生RNA分母、未覆盖成分、相同训练细胞的两架构及来源/保守块留出；不重开旧临床家族。

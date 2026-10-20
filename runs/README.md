@@ -96,3 +96,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [20261020 CM参考来源留出诊断](20261020_CM_marker_disjoint_reference_v1.md)：资格核查后原RNA/固定8位置实际运行，表现待审。
 
 - [20261020 CM已知RNA混合校准](20261020_CM_known_RNA_mixture_v1.md)：完整10basis/17目标固定后实际RNA启动。
+
+[恢复连接后的真实文库参考诊断](20261021_CM_natural_library_reference_v1.md)、[γδ固定深度描述完整接受](20261021_gamma_candidate_depth_v1.md)。

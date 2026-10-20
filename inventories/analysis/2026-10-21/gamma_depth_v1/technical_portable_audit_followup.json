@@ -1,0 +1,14 @@
+{
+  "status": "ACCEPTED_DATA_AGNOSTIC_PUBLIC_AUDIT_V2_ALL_ORIGINAL_AGGREGATES",
+  "observed_UTC": "2026-10-20T22:17:01.726068+00:00",
+  "audit_completed_UTC": "2026-10-20T22:16:52.156328+00:00",
+  "public_source_SHA256": "e1b32a29cb709f0ad3eac0b15098237018a3cdabf0df89adf6aea99c9fcf48ad",
+  "audit_acceptance_SHA256": "835cbfa470aea6ece8be6cb1196f010fdba7cb0c9e27cecf816e129874e92f8d",
+  "parent_terminal_SHA256": "357b98a305de51db1a2d54d3744489c6c827b42d96280d90e093125fdc5fb3d4",
+  "all448_original_positions_replayed": true,
+  "v1_private_result_constant_not_in_public_code": true,
+  "v1_preserved_locally_and_on_server": true,
+  "v2_uses_sidecar_conservation_instead_of_private_result_literal": true,
+  "no_scientific_values_labels_or_rules_changed": true,
+  "no_second_native_RNA_read": true
+}
