@@ -157,3 +157,6 @@
 [真实文库参考背景与来源迁移诊断](CM-natural-library-reference-diagnostic-20261021.md)：全部原生RNA分母、未覆盖成分、相同训练细胞的两架构及来源/保守块留出；不重开旧临床家族。
 
 [CM02明确状态—组织关系—同终点临床增量](CM02-specific-states-spatial-clinical-line-20261021.md)：原完整网络/同marker原生RNA与空间主家族已执行及审核，阶段活动量和临床增量分开待。
+
+
+- [作者T类型与原生空间全范围资格](GSE328481-author-spatial-qualification-20261022.md)：有限字段/完整几何与层级，源RAM手交后的预定组织描述，不作临床或患者推断。
