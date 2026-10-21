@@ -1,3 +1,9 @@
+## 当前：NSCLC固定T状态原生完整计数扫描实际运行中
+
+原始轴/矩阵与临床键入口已核，测量代码及依赖先冻结、四项原生合成核通过，真实worker只读既有原生计数，在RAM提取全部固定状态和质量。完整CRC/SHA、逐cell/原unit复核和真正可测分母尚待；新真实状态/临床效应未计算。统计实现/另四核仅合成接受，新临床合同须在capture后另冻。CM02图谱优先及原身份/模型/闭家族保持，TableS1用户后补，public push未同步。见[run](runs/20261022_NSCLC_observed_T_state_preflight_v1.md)。
+
+### 以下保留上一阶段观察
+
 ## 当前：成像来源资格完成，下一NSCLC固定T状态入口metadata接受
 
 新的完整小RNA来源/临床模态与原生测量资格已接受，独立XML及全行scalar重放通过，原失败v1和同预算分块v2均保留。科学源覆盖、视图重叠/选择限制与优先级私有；没有新空间或临床效果，不当扩大独立患者数。下一NSCLC全原作者源临床metadata及身份字段检查已完成，真正RNA marker/父群捕获和新状态效应待，不使用旧程序结果子集代替源。当前没有运行中新科学作业。CM02图谱优先、原身份/模型/闭家族保持；TableS1依用户安排待补，public push此前受拒未重试。见[成像run](runs/20261022_Chen_NSCLC_imaging_qualification_v1.md)及[RNA入口](runs/20261022_NSCLC_observed_T_state_preflight_v1.md)。

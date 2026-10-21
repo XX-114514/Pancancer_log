@@ -15,3 +15,22 @@
 本次全源临床检查与原始身份表头只在RAM读个体，保存源级汇总/技术指纹，未读取被拒NSCLC作者生存CSV或任何替代路径。GSE288199 TableS1按用户安排待补；三个受拒动作不重试、public push未同步。观察2026-10-21T20:37:41.331163+00:00 UTC /2026-10-22T04:37:41.331163+08:00 UTC+8完成来源metadata接受，源单位和科学值私有，实际RNA资格/新状态效应待；总目标active。
 
 [技术接受](../inventories/analysis/2026-10-22/NSCLC_observed_T_state_preflight_v1/technical_metadata_only_acceptance_v1.json)。
+
+
+## NSCLC固定T观测状态的原生计数实际启动
+
+20:47:40.065823 UTC /2026-10-22T04:47:40.065823 UTC+8固定完整测量实现和五依赖，SHA4d1692fe9c05ed9e3c532a764f29ff4c1fe61caed0540d4f7b009ddf7ebdb283；实际worker20:47:42.648206 UTC /04:47:42.648206 UTC+8启动。完整marker/MT轴及原生文件可访问性已核，当前权威Zarr没有该完整来源，不用其他子集代替原native。原有raw/cache当前SHA检查后进入完整坐标扫描；实际终态/原生状态capture待，不据临床metadata资格当模型已可估。
+
+四项原生核检查接受，含QC边界、父群缺失/真实零及独立Decimal原始prefix对数值错误/real notation检查；统计实现另四核含独立R分块随机流通过，但真实临床合同仍待完整capture。新私有RAM桥在源完成后可保留case数组等效果前合同，不能写个体/矩阵或以文件当进程live。原CM02/正式身份/旧家族保持，TableS1用户后补，三受拒动作不重试，public push待同步。
+
+方法实现见[协调/临床方法](../methods/NSCLC-observed-T-state-coordination-clinical-20261022.md)，尚未执行新的真实状态效应。
+
+
+## 完整组合问题效果前扩展与全链合成接受
+
+观察2026-10-21T21:06:28.540032+00:00 UTC / 2026-10-22T05:06:28.540032+08:00 UTC+8：原三组合草案与全链合成运行已封存。21:01:19.273362 UTC /2026-10-22T05:01:19.273362 UTC+8在任何新真实状态效应前将新来源问题明确为全部3×3组合；来源/癌种依赖可接受，原外部提名保留而不限制新来源。完整主交并BH9/BY9、六临床辅助与九协调另全量，原子集不作显著性补救，方法文档已更新。原生测量worker及冻结源码未改。
+
+21:03:44.806183 UTC /2026-10-22T05:03:44.806183 UTC+8全九组合纯合成实际执行完成：全部实际wild/bootstrap与R重放、工作null门槛和129点支路检查通过；这是软件接受，不是真实源效果。完整native扫描仍在同一真实worker继续，真实capture/统计合同/新效应待。临床关联≠预测增量、病理MPR≠生存；原论文与GEO仅作来源语境，未读被拒生存文件。TableS1用户稍后补，public push不重试。
+
+
+技术检查点：观察2026-10-21T21:08:14.983681+00:00 UTC /2026-10-22T05:08:14.983681+08:00 UTC+8；完整九组合纯合成终态SHAad04c3eb5a4be69bdab2270c083df5b0f9809829a9f755504fdb1e30473e63f1。七新Python AST、八项原生/统计核与全链合成（无重采样缩减）、展示通路检查通过。完整仓库轻量检查exit0，0errors/1既有warning；实际原生仍同一活跃worker，无真实临床合同/效应，不能把合成图当源结果。公开diff/隐私审阅无个体、数组或新科学值；三无关未跟踪文件保留。本节点仅普通本地提交，public push按前拒绝不重试。建议commit: Freeze full native T-state measurement and complete finite statistics pipeline。
