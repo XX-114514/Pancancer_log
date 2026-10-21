@@ -1,0 +1,9 @@
+{
+  "status": "EXACT_PUBLIC_SOURCE_FRAME_RECEIVING_NO_SCIENTIFIC_CHILD_YET",
+  "observed_UTC": "2026-10-21T16:05:36.811765+00:00",
+  "receiver_started_UTC": "2026-10-21T16:03:20.610574+00:00",
+  "source_payload_not_saved": true,
+  "source_URL_SHA_annotation_unchanged": true,
+  "own_launcher_SHA256": "0f618120b8c101af3f7c266c74a114feb6c51f00be7f3911cb2af24a09554139",
+  "prior_denied_actions_not_retried": true
+}
