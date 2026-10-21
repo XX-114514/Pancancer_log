@@ -9,7 +9,7 @@ def number(x):return '—' if x is None else f'{x:.4g}'
 def label(key):
     parent,source,target=key.split('__')
     parent={'RegMixed':'Mixed Reg/Tex','CD4control':'CD4 control','RegMinusCD4':'Reg/Tex minus CD4'}[parent]
-    return parent+' | '+source.replace('_reference',' ref').replace('_','/')+' -> '+target.replace('CD8_','CD8 ')
+    return parent+' | '+source.replace('_reference',' ref').replace('_','/')+' ~ '+target.replace('CD8_','CD8 ')
 
 
 def main(source,outdir):
@@ -28,6 +28,7 @@ def main(source,outdir):
     lines=['# 固定连续标记空间配对结果','',
       '原2026-10-14免疫图谱CM02 v1保持优先；本研究是独立乳腺来源中的连续蛋白标记空间比较，不是原RNA CM02投影。',
       '', '## 数据与检验范围','',
+      '本分析为无向的异类细胞邻近状态关联；代码左/右端不代表配体发送者或受体接收者。',
       f"- 临床连接且混合Reg/Tex、CD8各至少20细胞：{r['source_scope']['clinical_linked_target_eligible_cases']}病例。",
       f"- 其中纯CD4比较父类也至少20细胞：{r['source_scope']['control_parent_also_at_least20_cases']}病例。",
       '- 全成员CRC/SHA、原资格计数/病例对齐已复核；只保存来源级结果，原始payload/个体数组未落盘。',

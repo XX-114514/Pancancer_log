@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE_FIXED_SPATIAL_FAMILY_AUDITED_AND_VISUALLY_REVIEWED_GOAL_ACTIVE",
+  "started_UTC": "2026-10-21T18:39:37.196506+00:00",
+  "completed_UTC": "2026-10-21T18:46:05.045289+00:00",
+  "observation_UTC": "2026-10-21T18:51:30.082245+00:00",
+  "source_summary_SHA256": "175afcdb274eaf4b3e0bdf6b8b85ac807d4a13d88a96917e8e3661a758d10a3f",
+  "independent_audit_SHA256": "8a39f36472d143b8e655b25d6bf01f344fce73c432beeabb7d8f48dd1f4e8e6c",
+  "source_SHA_and_CRC_and_native_reconciliation": true,
+  "all_predefined_slots_configs_and_subgroups_checked": true,
+  "BH_BY_independently_recomputed": true,
+  "numerical_checks_passed": 13,
+  "real_positive_negative_null_and_unestimable_audit": true,
+  "source_worker_exit_code": 0,
+  "synthetic_workers_terminal": true,
+  "figures_actually_viewed": true,
+  "figure_SHA256": {
+    "primary_and_reference_forest.png": "cb4a1bb49630022e084d36dd4d28583106f3233f8627b399de6431a4e5efbbbc",
+    "all_spatial_sensitivities.png": "ac03b6b8195b6a033c1ba11940e2e356f43a8e2bbafe50813170958fe3e12526"
+  },
+  "scientific_counts_and_effects_outside_public_Git": true,
+  "no_new_clinical_model_or_identity_relabel": true,
+  "no_new_specific_interaction_or_clinical_validation_claim": true,
+  "no_individual_payload_files": true,
+  "range_requested_bytes": 383734648,
+  "range_retry_failures": [],
+  "peak_RSS_bytes": 432390144,
+  "goal_active": true
+}
