@@ -1,3 +1,15 @@
+## 当前：NSCLC完整原生T模式有限家族已完成，组织与临床增量仍待
+
+完整源计数/质量/marker及临床键接受后，实际九组合协调+两端临床有限家族、全部独立R随机流/家族校正和预定工作null已完成；匹配其他T、分层/敏感性与两图实际审阅接受。源级科学结论/分级和限制私有，不把协调或单端临床当直接通讯/特异性/独有临床增量。原worker已exit0，无新运行作业，整体目标active；下一实际面板/组织/病例/同终点资格。原CM02/身份/旧家族保持，TableS1依用户安排后补，public push此前受拒未重试。[run](runs/20261022_NSCLC_observed_T_state_preflight_v1.md)。
+
+### 以下保留上一阶段观察
+
+## 当前：NSCLC原生固定T模式完整测量接受，九组合真实统计运行中
+
+完整原始计数/CRC/SHA、逐cell与原unit、临床键及独立规则审核完成；真实状态效果前冻结全部九组合协调+临床合同，完整合成及八核先接受。同一worker RAM执行全真实wild/bootstrap与R、工作null及固定敏感性，终态待；不把测量通过叫临床或直接通讯成立。源覆盖/科学值私有；原CM02/身份/旧家族保持，TableS1用户后补，public push受拒不重试。[run](runs/20261022_NSCLC_observed_T_state_preflight_v1.md)。
+
+### 以下保留上一阶段观察
+
 ## 当前：NSCLC固定T状态原生完整计数扫描实际运行中
 
 原始轴/矩阵与临床键入口已核，测量代码及依赖先冻结、四项原生合成核通过，真实worker只读既有原生计数，在RAM提取全部固定状态和质量。完整CRC/SHA、逐cell/原unit复核和真正可测分母尚待；新真实状态/临床效应未计算。统计实现/另四核仅合成接受，新临床合同须在capture后另冻。CM02图谱优先及原身份/模型/闭家族保持，TableS1用户后补，public push未同步。见[run](runs/20261022_NSCLC_observed_T_state_preflight_v1.md)。

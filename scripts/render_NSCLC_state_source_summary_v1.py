@@ -62,6 +62,15 @@ def main():
              '**仅合成软件检查，不是真实数据结果。**' if synthetic else '以下为真实来源级汇总。', '',
              '范围：2026-10-14免疫图谱CM02 v1（T_whole_TME_primary_tumor）的状态落实支线。'
              '这里测量固定marker的RNA观测模式，不改原CM或正式身份。', '',
+             '## 模式定义', '',
+             'T证据为CD3D/CD3E/TRAC任一有原始计数；R父群另需FOXP3和IL2RA，'
+             'E父群另需CD8A，R/E重叠细胞从双方排除。主QC为RNA≥500、检测基因≥250、MT≤20%。', '',
+             '- R_TNFRSF9、R_LAG3：R父群内相应基因有计数。',
+             '- R_cycling、E_cycling：对应父群内MKI67且TOP2A/UBE2C至少一个有计数。',
+             '- E_dysfunction：E父群内PDCD1且TOX/HAVCR2至少一个有计数。',
+             '- E_memory：E父群内TCF7/IL7R至少一个有计数。', '',
+             '这些模式可在同一细胞重叠，不是互斥亚群；单细胞RNA阳性也不等于功能或正式身份已确认。'
+             '其他T参照是T证据阳性但不属R/E/双父群，不能直接称精确常规CD4。', '',
              '## 执行与分母', '', f"- 统计终态：`{terminal['status']}`。",
              f"- 严格临床并双父群捕获：{coverage['clinical_and_both_parent_capture']}个作者材料单位；"
              f"具体药物类别至少10单位后保留{coverage['retained_after_agent_group10']}；"
@@ -83,6 +92,18 @@ def main():
     for r in clinical:
         lines.append(f"| {r['state']} | {fmt(r.get('rho'))} | {interval(r.get('CI95'))} | "
                      f"{fmt(r.get('raw_P'))} | {fmt(r['auxiliary6_BH'])} / {fmt(r['auxiliary6_BY'])} |")
+    points = {(r['setting'], r.get('R_state'), r.get('E_state')): r for r in sensitivity
+              if r['component'] == 'coordination'}
+    settings = ['unadjusted', 'clinical_background_only', 'LUAD_same_main_cases', 'LUSC_same_main_cases']
+    lines += ['', '## 背景调整与癌种分层：预定点值检查', '',
+              '每格为rho（单位数）。NA保留原可估计门槛；分层结果没有新增P或校正家族。', '',
+              '| R / E模式 | 未调整 | 只调整临床背景 | LUAD | LUSC |', '|---|---|---|---|---|']
+    for c in coordination:
+        cells = []
+        for setting in settings:
+            r = points[(setting, c['R_state'], c['E_state'])]
+            cells.append(f"{fmt(r['rho'])} ({r['n']})")
+        lines.append('| ' + c['R_state'] + ' / ' + c['E_state'] + ' | ' + ' | '.join(cells) + ' |')
     lines += ['', '## 匹配的其他T参照', '',
               '两条关系使用同一病例与全部三父群控制，区间是共同重采样的差值区间；不由两个P之差推特异性。', '',
               '这些是逐组合的描述区间，没有提供九组合同时覆盖或特异性显著性的保证。', '',

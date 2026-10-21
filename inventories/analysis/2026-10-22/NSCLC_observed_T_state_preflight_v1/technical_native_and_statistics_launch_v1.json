@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_NATIVE_MEASUREMENT_ACCEPTED_REAL_STATISTICS_PENDING",
+  "observed_UTC": "2026-10-21T21:15:25.948152+00:00",
+  "native_terminal_SHA256": "d57fabd6485e538a6cb0cf2611346fe1e8fb4b13ac0c6f815d11454d75ffa7b6",
+  "native_input_proof_SHA256": "fb0f51f39046a0087ae4d816b2294768aea9360ec79205e442a544eb27ca54d7",
+  "frozen_full9_statistics_SHA256": "c08636bb9072be59911eb1cdd9aa6e99391322732d79f6e06817da0f68e9b2e2",
+  "full9_synthetic_terminal_SHA256": "ad04c3eb5a4be69bdab2270c083df5b0f9809829a9f755504fdb1e30473e63f1",
+  "actual_source_effects_not_in_public_record": true,
+  "individual_arrays_RAM_only": true,
+  "original_CM_or_formal_identity_not_changed": true
+}
