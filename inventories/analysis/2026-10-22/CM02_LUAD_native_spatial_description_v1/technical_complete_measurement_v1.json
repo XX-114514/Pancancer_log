@@ -1,0 +1,16 @@
+{
+  "scope": "technical_only_no_scientific_values_or_priority",
+  "observed_UTC": "2026-10-21T22:22:00.414994+00:00",
+  "source_completed_UTC": "2026-10-21T22:16:52.643968+00:00",
+  "actual_tool_exit_code": 0,
+  "frozen_contract_SHA256": "077d4eb883456370deb3096de7da188fa5b144d79d516d59b922a36754e747c5",
+  "source_terminal_SHA256": "1cf0be68d6c19902b8abf1d01ea3f595a9338e0f1df74e0f789fd614e54fdf4a",
+  "source_aggregate_SHA256": "03521eff2ee4c695c0b46546518263c002d609f7c88e257eb8f02d1f85898405",
+  "private_acceptance_SHA256": "c036e11c8ed843fe2dadf93bc7dcece292cfdb516a9520f707941e8f8d33dc2c",
+  "all_fixed_slots_retained": true,
+  "three_figures_visually_reviewed": true,
+  "display_version": "v3",
+  "original_scientific_contract_unchanged": true,
+  "individual_data_RAM_only": true,
+  "new_inferential_or_clinical_claim": false
+}

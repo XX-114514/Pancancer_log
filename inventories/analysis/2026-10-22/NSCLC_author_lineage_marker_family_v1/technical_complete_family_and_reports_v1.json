@@ -1,0 +1,20 @@
+{
+  "scope": "technical_only_no_scientific_values_or_candidate_priority",
+  "observed_UTC": "2026-10-21T22:27:08.036333+00:00",
+  "actual_tool_exit_code": 0,
+  "started_UTC": "2026-10-21T22:05:19.279449+00:00",
+  "completed_UTC": "2026-10-21T22:24:56.438489+00:00",
+  "frozen_statistics_contract_SHA256": "258366cef801d05850a2c1ef2b349acd784aa82a1b3eb29a3ff9baf08eaf646b",
+  "source_terminal_SHA256": "499c8c85874ef4f9c4d55bf124c458950079e8fa81c818e94856a0c1e694ac98",
+  "private_source_acceptance_SHA256": "907086eb40be5fd86d3e47ed2fba111ce3b5d29766fed1c666c6fcb90bdbb3e2",
+  "private_visual_acceptance_SHA256": "364820aec745f260301774f4c9dc8dcfab302fe958ec413b15069979d92f67fe",
+  "all_fixed_family_slots_retained": true,
+  "actual_full_main_R_audits": 103,
+  "actual_full_reference_R_audits": 60,
+  "max_numeric_error": 1.709743457922741e-14,
+  "all_finite_working_model_alarms_accepted": true,
+  "report_and_two_figures_visually_reviewed": true,
+  "individual_data_and_resampling_RAM_only": true,
+  "independent_patients_or_prediction_not_accepted": true,
+  "original_CM_identity_and_closed_families_unchanged": true
+}

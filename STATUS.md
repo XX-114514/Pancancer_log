@@ -1,3 +1,15 @@
+## 当前：作者谱系marker全家族与原生空间测量均完成；状态特异性和临床增量仍待
+
+真实作者谱系marker全部固定家族、匹配其他CD4、敏感性/LOO、全实际随机流独立R和固定工作null已完成，原工具exit0；两图/完整源级报告私有审阅。完整空间原生文件/规则和预定描述槽亦完成，源级测量限制私有，不把不可估当无关系。当前无活跃科学worker，整体目标active；下一优先区分谱系内marker与作者亚型组成、一般T背景，再核组织原生身份/位置与患者/同终点。来源内条件rank关联不当预测增量/直接互作，两个不同父群定义不拼成精确复现。原CM02/身份/Zarr/闭家族保持；GSE288199 TableS1用户后补，public push此前自动审批拒绝，本轮未同步。见[临床run](runs/20261022_NSCLC_author_lineage_marker_family_v1.md)、[空间run](runs/20261022_CM02_LUAD_fixed_state_spatial_description_v1.md)。
+
+### 以下保留上一阶段观察
+
+## 当前：原生空间全范围测量已完成；作者谱系marker临床参照继续
+
+全部冻结原生空间文件、输入/逐观察规则及固定描述槽已处理并验签，源工具实际exit0；源级捕获/可估计性结论与三图私有审阅，不把测量完成当空间支持。未资格关系不补阴性，不改变门槛。作者谱系marker的全部主条件计算已产出，匹配非Treg CD4参照仍运行，完整真实随机R/工作null终态待，尚不作最终推断或预测增量。原CM02/身份/闭家族保持，TableS1按用户安排后补；public push此前受拒未重试。见[空间run](runs/20261022_CM02_LUAD_fixed_state_spatial_description_v1.md)、[临床run](runs/20261022_NSCLC_author_lineage_marker_family_v1.md)。
+
+### 以下保留上一阶段观察
+
 ## 当前：LUAD全空间描述继续；作者谱系内marker条件临床新家族实际运行
 
 源级分母/父群参考诊断后，原全部作者亚型与父群质量在同QC实际接受，原旧RNA家族不替代。新marker–作者CD8细类全部机会/条件问题先固定，合成装配和新分支完整随机数值接受；真实单基因cache/病例键再核后，全部条件关联在RAM运行，完整终态/全实际随机R与工作null待。并行全11 LUAD原生空间描述仍同一活跃源worker运行，未重启或扩大既定27槽。科学值及分级私有，尚未验证预测增量/直接通讯；原CM02/身份保持，TableS1用户后补，public push此前受拒未重试。[临床run](runs/20261022_NSCLC_author_lineage_marker_family_v1.md)、[空间run](runs/20261022_CM02_LUAD_fixed_state_spatial_description_v1.md)。
