@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE_DESCRIPTIVE_FINE_LOO_AND_SPLIT_ACCEPTED",
+  "scientific_started_UTC": "2026-10-21T16:08:39.103780+00:00",
+  "scientific_completed_UTC": "2026-10-21T16:10:27.755072+00:00",
+  "observed_UTC": "2026-10-21T16:16:18.522764+00:00",
+  "source_terminal_SHA256": "fbd4128f87a4d20dcbfbc357e61de0005af1382c2ab3de8d16ac5d2849b8bc95",
+  "source_file_SHA256": {
+    "private_score_and_scope_audit.json": "d77e73b0fbe4a82bf2557d19903d79d8c20438b5522678357ad85394390b20bc",
+    "private_all32_split_programme_descriptions.json": "c1cac51dd9694d904207fff193300f735b092ca5dba18a0af7acb9465d99b2a1",
+    "private_all52_author_fine_profiles.json": "86b91e7af7b7df93bedfac19c1909af84cd8b915f6c5c8ccc922593c389b9a63",
+    "private_all32_LOO_descriptions.json": "c6b94eb3d8b7cbd5e48e25945f5dddb2ab7b588ade5c893bc18ee400d41a2fe1",
+    "private_progress.json": "1a2e026f21e499df46e844af2857702e4c9b771b07f10d21f4d7db5b04db478f",
+    "plan_before_state_stability.json": "3263760905c0c005615a2d2b017b2c4f56746bc2cd1fad32f56123ed10f54a66"
+  },
+  "frozen_code_SHA256": {
+    "RNA_programme_case_inputs_v1.py": "ed27ce8a49ea2159712fe16862e75760956565b14810f45914e90ca1e45d9816",
+    "RNA_programme_partial_rank_v1.py": "aa4d2d6311d72275f551a0f4272562e4ec1fff442df701aee5e3090842baaf16",
+    "analyze_CM02_RNA_multigene_in_RAM_v1.py": "97a5dcf1404e4efa317e9b18507ef57528e37368be6c10701ee7fd40f73f8b20",
+    "audit_RNA_programme_partial_rank_v1.py": "198ac85ab4c796a2cccbcc3a162986ced9df144364dfe1e31ec5ebebad9d8a21",
+    "project_original_CM02_activity_in_RAM_v1.py": "b3b330897bd7cec6e4b3f4773960e42b48126070dff21168f37045f4c4330338",
+    "run_CM02_RNA_from_RAM_sources_v1.py": "17dbff24e7ecf1e8746c8112dd3ac0ea19a5644da0c53a0d618606c86cd4c9e3",
+    "ucell_native_sparse_scores_v1.py": "2feb5a2be3725bbfb91d1197a91339a1e13ab667443bb9c7fb77dee2d3842499",
+    "qualify_CM02_RNA_programme_RAM_public_sources_v4.py": "2e4116fdc9b6e2d4013286fe27f5b448241af5d9b4b986cac5f986be3d817e0a",
+    "CM02_RNA_state_stability_helpers_v1.py": "de3f3f79abf2bd13cb0370858506a7f66fb2a11f05b3e9662cfa52b021d49f93",
+    "characterize_CM02_G2M_state_stability_v1.py": "b89cf6b5d104ac69bf7d343e2a691a247108cbdac9af79a4def8629f9f2aab42",
+    "run_CM02_G2M_state_stability_from_RAM_v1.py": "d018803601d93de5816191ce50542d579e13425c053f233df75b1da69aa653e0"
+  },
+  "all_original32_observed_scalars_and_denominators_replayed": true,
+  "all_LOO_and_split_fits_independently_replayed": true,
+  "all_fine_reference_counts_reconcile_to_parent_counts": true,
+  "sparse_native_boundary_dense_rank_replay_accepted": true,
+  "rare_group_expression_suppression_checked": true,
+  "no_new_P_CI_or_clinical_tests": true,
+  "no_authority_annotation_or_primary_results_changed": true,
+  "no_individual_or_learned_arrays_written_or_copied": true,
+  "scientific_counts_effects_figures_and_report_private_only": true,
+  "two_figures_visually_reviewed": true,
+  "synthetic_tests_passed": 4,
+  "implementation_local_commit": "63c29d0466208038ce4491d04dccedce1936e848",
+  "previous_denied_public_push_not_retried": true
+}
