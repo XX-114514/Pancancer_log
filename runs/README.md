@@ -118,3 +118,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 [CM02 observed T-state pairs and capture controls](20261021_CM02_observed_T_pair_capture_adjustment_v1.md): GSE286827 reviewed cases; full288 descriptive positions, real execution and acceptance in run.
 
 [CM02 external joint resource qualification](20261021_CM02_external_joint_resource_qualification_v1.md): published panel, archive directory/header and protein aliases; clinical/units/positivity not yet accepted.
+
+
+[CM02 independent protein patient and native-spatial measurement](20261021_CM02_melanoma_patient_spatial_measurement_v1.md): full numeric input/age bridge complete; alias-aware patient coverage v2 running, no new biological or clinical effect accepted.

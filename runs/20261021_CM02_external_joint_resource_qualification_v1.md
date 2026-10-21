@@ -79,3 +79,8 @@ The actual duration-budget v3 started at 2026-10-21T05:32:51.095688 UTC / 13:32:
 GSE288199 clinical TableS1 remains deferred per human; no repeated request or inferred drug/pathology labels. Prior completed partial imaging bridge remains accepted only for its exact coverage. No original authorities/models/closed statistical families changed, and rejected push/derived-summary transfer/NSCLC follow-up operations were not retried. Public artifacts contain technical provenance only; source science and coded records remain excluded.
 
 Recovery checkpoint SHA256 c123fb063ae4f99c4264c1b01275ad973f7d0146fc27435b4bc62d3cb89b8293; observed 2026-10-21T05:35:07.824289+00:00 UTC / 2026-10-21T13:35:07.824289+08:00 UTC+8
+
+
+## Current stage after completed full input
+
+Full numeric input and author-formatted age provenance are complete. Prior literal-ROI dependency stop is preserved; [new patient/native-spatial stage](20261021_CM02_melanoma_patient_spatial_measurement_v1.md) is genuinely running. Earlier running descriptions refer to their observation times. No new effect accepted; overall goal active. Observed 2026-10-21T06:39:04.571029+00:00 UTC / 2026-10-21T14:39:04.571029+08:00 UTC+8.
