@@ -2478,3 +2478,28 @@ Technical partial-bridge acceptance SHA256: beef4eb6669ebe333bd2f66c32117a142c1f
 ## Partial bridge node validation and local commit
 
 Full repository validation completed with 0 errors and 1 existing warning; Python3.10 AST/source SHA, explicit private scope/result/terminal binding, TSV widths and diff checks passed. All original unrelated untracked files are preserved. This checkpoint accepts only the explicit partial imaging bridge; the same full-cell measurement worker is still pending, with no scientific effect adopted. Public records contain generic methods/code/source provenance/technical hashes only. Ordinary local commit prepared; rejected public push and local-derived outbound transfer are not retried. Validation SHA256 85c14096012e60bf04a8e0ef69943ae93c44fecf7110c4710a5b10c9adaee92b; observed 2026-10-21T05:24:55.909427+00:00 UTC / 2026-10-21T13:24:55.909427+08:00 UTC+8.
+
+
+## Full selected member length failure and bounded recovery
+
+The initial complete-cell worker actually terminated at 2026-10-21T05:24:04.241046 UTC / 13:24:04.241046 UTC+8. The terminal source frame identifies the response-length assertion after ContentRange checks, not a successful full member. The old artifact did not record actual/expected lengths, so it does not distinguish short from overlong or identify the failing network hop. It is retained as failed/not accepted; no full-cell measurement or effect is adopted. The earlier partial-bridge local commit is verified as 6c24f5143f8b7db59d69fad23172234dec4fb8ae with the expected parent and 16 files; public push not attempted.
+
+A new fixed generic transport and same-scope measurement v2 actually started at 2026-10-21T05:26:47.680973 UTC / 13:26:47.680973 UTC+8. Default-TLS same-origin persistent HTTP connections use <=512KiB ranges; incomplete same-block responses/timeouts have at most three tries, overlong/status/Range/identity/SSL errors fail closed. All requested bytes, including failures, count toward 64MiB; 45s per-request alarm and an overall elapsed-time check are explicit. Synthetic segmentation/keepalive/short/overlong/SSL/budget/expiry/alarm cleanup passed; actual full production remains pending. New source SHA a2ba11bf29adcdf9317f3e91f11868d32c6e8c5751dbec41d716b08d84b027a6 and transport SHA cdefc49534de13fa04870603d7c661637232348e45a25a44700bde9734ed2f98. Both full selected CSV parser paths now compare every numeric marker value as well as counters; the assay and biological scope are unchanged. No record payloads or local derived results were uploaded, no rejected action retried, original CM02 and closed families retained. Overall goal active.
+
+Observed 2026-10-21T05:27:57.046570+00:00 UTC / 2026-10-21T13:27:57.046570+08:00 UTC+8
+
+
+## Rate-qualified runtime budget and verified single reader
+
+Two actual v2 progress points show a complete selected member cannot finish under the original20min budget at the observed throughput. A local standard-TLS directory range passed, but the exact selected-member speed pilot timed out; no local route was adopted or verification bypassed. A dispatch placeholder collision was caught by local generated-source AST before SSH, so it did not create a remote job. Structured configuration fixed only that local launcher.
+
+The actual duration-budget v3 started at 2026-10-21T05:32:51.095688 UTC / 13:32:51.095688 UTC+8. Its live PID/startticks, main/transport SHA, frozen plan and successful bytes were verified. Old v2 was then controlled-stopped at 2026-10-21T05:33:39.841473 UTC / 13:33:39.841473 UTC+8, and process absence verified. No old partial cell measurement adopted. The transport change is exactly the elapsed gate20-to75min plus explanatory docstring, verified by source comparison and expiry/default-TLS checks. Every request byte, CRC/SHA, fixed object,512KiB/45sec bounds, original scientific gates and RAM-only contract remain unchanged. v3 is genuinely reading, not complete; no new state/clinical/spatial effect or scientific success claimed. This is progress on the independent measurement dependency; overall goal active.
+
+GSE288199 clinical TableS1 remains deferred per human; no repeated request or inferred drug/pathology labels. Prior completed partial imaging bridge remains accepted only for its exact coverage. No original authorities/models/closed statistical families changed, and rejected push/derived-summary transfer/NSCLC follow-up operations were not retried. Public artifacts contain technical provenance only; source science and coded records remain excluded.
+
+Recovery checkpoint SHA256 c123fb063ae4f99c4264c1b01275ad973f7d0146fc27435b4bc62d3cb89b8293; observed 2026-10-21T05:35:07.824289+00:00 UTC / 2026-10-21T13:35:07.824289+08:00 UTC+8
+
+
+## Reader recovery checkpoint validation
+
+Full repository validation completed:0 errors/1 existing warning. Actual uploaded source hashes, default-TLS/duration-only fixture receipts, failed-terminal/controlled-stop/new-launch/private-progress bindings, AST3.10, inventory widths and diff/privacy review passed. Four new generic source files and the technical pending receipt are included; no private source effects/records/arrays are staged. This is a running-reader checkpoint only, not full-member, identity, spatial or clinical acceptance. Original three unrelated untracked files preserved. Ordinary local commit prepared; public push and rejected local-derived transfer not retried. Validation SHA256 85c14096012e60bf04a8e0ef69943ae93c44fecf7110c4710a5b10c9adaee92b; observed 2026-10-21T05:35:59.705210+00:00 UTC / 2026-10-21T13:35:59.705210+08:00 UTC+8.

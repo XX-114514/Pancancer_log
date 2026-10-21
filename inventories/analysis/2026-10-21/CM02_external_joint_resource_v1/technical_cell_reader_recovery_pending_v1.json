@@ -1,0 +1,29 @@
+{
+  "status": "RUNNING_ACTUAL_COMPLETE_MEMBER_READER_NOT_ACCEPTED_MEASUREMENT",
+  "observed_UTC": "2026-10-21T05:35:07.824289+00:00",
+  "started_UTC": "2026-10-21T05:32:51.095688+00:00",
+  "source_record": 6838169,
+  "source_SHAs": {
+    "melanoma_IMC_bounded_transport_v1.py": "cdefc49534de13fa04870603d7c661637232348e45a25a44700bde9734ed2f98",
+    "melanoma_IMC_bounded_transport_v2.py": "709f9b5ced875fea663557bad936f32d004e12d5daf291048b7de476064b0d68",
+    "qualify_melanoma_IMC_complete_cell_measurement_v2.py": "a2ba11bf29adcdf9317f3e91f11868d32c6e8c5751dbec41d716b08d84b027a6",
+    "qualify_melanoma_IMC_complete_cell_measurement_v3.py": "eb142bcdeb172f068f9d182a6ba89866d3d07e852c75f0b976ec4c5b43cd436d"
+  },
+  "private_recovery_review_SHA256": "7a48d5bb775a300ec2f5526a0402362068099a5cb2e1acc694c55a9f233cf6b8",
+  "prior_response_length_failure_SHA256": "f19ca51788cd5ab30c5a6da069c366c3e5e3500145828a838c4528ea03c7ad09",
+  "controlled_old_reader_stop_SHA256": "f783f6deb2641e182af629d484641526d360c68b64d9d1b9a15d324c5c712871",
+  "real_launch_SHA256": "e0c3b0833a28f840ad0b7a326a3625cb7a081fd497a44329289d7c572bcd945a",
+  "real_technical_progress_snapshot_SHA256": "96107376b1d3382f096b7965a66978a4dbeceb44c57d43d3944d11f9b9d35054",
+  "synthetic_transport_checks_SHA256": "74ff83ba48333d4e3e7bfbcf8f3b0ca11bf5fb7df8e12b31dc104b9b42d5b9d1",
+  "duration_only_gate_check_SHA256": "1947ecbedb1886829f8880b62124984f1d797eeee0bd147ca0f7944846bcc49c",
+  "local_exact_member_pilot_timeout_SHA256": "0394ba7f6d5d40219ba12695fce899c74e9d2deff1c24515ad5568bdaefb4c21",
+  "only_current_v3_reader_retained": true,
+  "technical_elapsed_budget_minutes": 75,
+  "default_TLS_same_origin_and_scientific_scope_unchanged": true,
+  "no_local_payload_or_individual_arrays_persisted": true,
+  "no_full_member_CRC_or_measurement_accepted": true,
+  "no_new_clinical_or_spatial_effects": true,
+  "original_models_and_closed_families_unchanged": true,
+  "rejected_actions_not_retried": true,
+  "overall_goal_achieved": false
+}
