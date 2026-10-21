@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE_SOURCE_SUMMARY_NUMERIC_SCOPE_AND_VISUAL_AUDIT_ACCEPTED",
+  "scientific_completed_UTC": "2026-10-21T17:08:22.052097+00:00",
+  "observed_UTC": "2026-10-21T17:11:40.823140+00:00",
+  "observed_UTC_plus8": "2026-10-22T01:11:40.823140+08:00",
+  "terminal_SHA256": "917e3b92f2aafb386df525db179d8248ebfd68515905ca5b4329199ff97c0a5b",
+  "source_files_SHA256": {
+    "private_background_lineage_coverage.json": "f5b58989e1d0214da56609eaab15e712e726228377c7143cf59db5adab74182b",
+    "private_terminal.json": "917e3b92f2aafb386df525db179d8248ebfd68515905ca5b4329199ff97c0a5b",
+    "plan_before_shared_background_scores.json": "adb655dec99cd0d0d98d02f4b3bbe4d706c7c62e7955a20da6544d4a3e041733",
+    "private_progress.json": "ba190f5a41aac9bab9cffcdc5ff7464718ea949361d9a38692a29e444ccbce43",
+    "private_score_and_scope_audit.json": "5c2aec1c078563234b58f900a9de44508412fe22d90a83655c9d703c08c9d15c",
+    "private_all8_shared_background_sensitivities.json": "e88eb8936a6724dca3fac8f6bbfc84e3635970a4a4133c2f872ba0456ddfc9ce"
+  },
+  "all_original_observed_scalars_and_coverage_replayed": true,
+  "all_estimable_paired_bootstraps_independent_replay": true,
+  "original_annotations_and_closed_families_unchanged": true,
+  "no_new_P_or_BH": true,
+  "no_individual_or_learned_arrays_written": true,
+  "figure_actually_viewed": true,
+  "additional_bootstrap_occupancy_audit_aggregate_only": true,
+  "scientific_values_private": true,
+  "goal_active": true,
+  "public_push_previously_denied_not_retried": true
+}
