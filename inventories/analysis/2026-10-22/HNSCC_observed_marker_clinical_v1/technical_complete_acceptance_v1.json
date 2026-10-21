@@ -1,0 +1,20 @@
+{
+  "status": "PASS_COMPLETE_FIXED_CLINICAL_EXECUTION_AND_PRIVATE_REVIEW",
+  "observed_UTC": "2026-10-21T20:12:39.655452+00:00",
+  "observed_UTC8": "2026-10-22T04:12:39.655452+08:00",
+  "started_UTC": "2026-10-21T20:08:19.745313+00:00",
+  "completed_UTC": "2026-10-21T20:11:03.300188+00:00",
+  "frozen_implementation_SHA256": "1279692fb08d83ae9edd0204cc113b3b445cb35134bca972501a7bb28fb0b49a",
+  "terminal_SHA256": "8829c3ca662991b18a2da206d947f8dd2cf2ddd093f8de1a8cf06b227cb19d86",
+  "private_acceptance_SHA256": "74b6fb4138501790d55b7724a676c3c5dfd07297e96bce745c9258a3716e900c",
+  "all_original_source_and_assay_keys_checked": true,
+  "all_finite_families_complete": true,
+  "all_real_endpoint_random_streams_independent_R_replayed": true,
+  "full_family_corrections_independent_R_checked": true,
+  "fixed_working_model_alarm_accepted": true,
+  "actual_two_figures_reviewed": true,
+  "source_scientific_values_candidates_figures_and_priority_private": true,
+  "original_CM_formal_identity_and_closed_families_unchanged": true,
+  "TableS1_user_deferred": true,
+  "public_push_not_retried": true
+}
