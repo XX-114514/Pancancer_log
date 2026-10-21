@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN_BEFORE_PUBLIC_CLINICAL_ROWS_METADATA_QUALIFICATION",
+  "created_UTC": "2026-10-21T17:41:19.613051+00:00",
+  "code_SHA256": "38706be4f9c2612ea94c3135ff665f82da520ac0b8991a259b0cd326ae608d0c",
+  "source_record": 7324285,
+  "version": "2.1.0",
+  "selected_member": "IMCClinical.csv",
+  "CRC32": 1165356369,
+  "bytes": 51316,
+  "synthetic_checks_passed": 3,
+  "individual_keys_and_values_RAM_only": true,
+  "no_phenotype_or_clinical_associations": true,
+  "validation_flag_preserved_not_treated_automatically_as_independent_cohort": true
+}

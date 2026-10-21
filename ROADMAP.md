@@ -710,3 +710,6 @@ A4是未来检验“哪些通讯特征对模块活动有额外解释”的方案
 
 
 - 独立Hoch时间语义已核为月精度、报告时长按月区间相容；复杂临床增量不由metadata机会或论文N保证。优先更大空间队列标记/身份/临床键资格，GSE288199表待补；见[run](runs/20261022_CM02_spatial_clinical_bridge_v1.md)。
+
+
+- 较大Danenberg乳腺空间来源的版本/面板/类型/小型临床与字段语义资格接受。待实现并执行单CSV成员RAM原生键、伪影、marker与真实病例覆盖；之后另冻状态/空间/临床机会，未运行效应。见[run](runs/20261022_CM02_breast_spatial_preflight_v1.md)。

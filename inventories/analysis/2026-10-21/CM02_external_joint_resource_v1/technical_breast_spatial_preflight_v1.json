@@ -1,0 +1,20 @@
+{
+  "status": "PUBLIC_SPATIAL_SOURCE_VERSION_PANEL_CODE_AND_HEADERS_ACCEPTED_NOT_NATIVE_DATA",
+  "observed_UTC": "2026-10-21T17:39:33.605529+00:00",
+  "observed_UTC_plus8": "2026-10-22T01:39:33.605529+08:00",
+  "record": 7324285,
+  "version": "2.1.0",
+  "directory_SHA256": "17911e718220292268a8cddfac32fb4bfa6c021a615ead0e011464c4a3658814",
+  "source_receipts_SHA256": {
+    "private_Danenberg_public_record_v1.json": "dd46313e2f14dab52775887bc7b8b65d57955c90c81092651ae73393bdef38df",
+    "private_Danenberg_public_versions_v1.json": "baf3c75b5cb653f184bdb5791cb77f6e7624ebfdb399fd84f84e3cb1f14bb1c6",
+    "private_Danenberg_processed_directory_v1.json": "47429218dabee1d326f05edecd72d460acd6f57a755d0ee3687e0ed58bda603f",
+    "private_Danenberg_panel_and_headers_v1.json": "b6f026cda80422121bed36423bce5fe01ff957192d2918584e7dd0eb6d46052b",
+    "private_Danenberg_static_phenotype_scope_v1.json": "5e6af7553a1d9ac88ea68da23fd8a4f5cc4febf62275211098cb3888c8700033"
+  },
+  "clinical_or_cell_rows_not_parsed": true,
+  "no_full_archive_integrity_claim": true,
+  "author_code_not_executed": true,
+  "mixed_source_annotations_not_renamed": true,
+  "goal_active": true
+}

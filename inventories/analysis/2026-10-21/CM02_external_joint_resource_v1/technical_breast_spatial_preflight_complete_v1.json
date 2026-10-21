@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_SMALL_CLINICAL_AND_SOURCE_SCHEMA_QUALIFICATION_NATIVE_DATA_PENDING",
+  "completed_UTC": "2026-10-21T17:41:28.417220+00:00",
+  "observed_UTC": "2026-10-21T17:50:13.775095+00:00",
+  "observed_UTC_plus8": "2026-10-22T01:50:13.775095+08:00",
+  "source_record": 7324285,
+  "version": "2.1.0",
+  "source_summaries_SHA256": {
+    "private_Danenberg_clinical_metadata_scope_v1.json": "1ba583aa7ac68efa78880ac7aeb94b88e27512f3bd1d7659afce76453ddaf4ec",
+    "private_readonly_field_annotation_review_v1.json": "bc9ce54a814f2d206655e7fd6db11a63de48616b91087256f96cd74abe383e85",
+    "private_public_field_annotations_receipt_v1.json": "272db7965d325e4c4ddf2d24cd6f0ca1cb89f085af7ecb57bd679964d373bde2",
+    "private_preflight_acceptance_v1.json": "e1b2697f8206f3fa1cf60ca192f3f95a2de2a218f4e1dfa8f1f5bff13b9fab7c"
+  },
+  "all_patient_event_denominators_independently_replayed": true,
+  "source_workbooks_readonly": true,
+  "no_cell_rows_or_new_clinical_effects": true,
+  "source_hot_aggregate_flag_is_imaging_artifact": true,
+  "source_tumour_flag_is_sample_scope": true,
+  "mixed_source_types_not_renamed": true,
+  "native_worker_not_started": true,
+  "scientific_values_private": true,
+  "goal_active": true
+}
