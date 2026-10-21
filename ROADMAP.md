@@ -731,3 +731,6 @@ A4是未来检验“哪些通讯特征对模块活动有额外解释”的方案
 
 
 - 较大Danenberg乳腺空间来源的版本/面板/类型/小型临床与字段语义资格接受。待实现并执行单CSV成员RAM原生键、伪影、marker与真实病例覆盖；之后另冻状态/空间/临床机会，未运行效应。见[run](runs/20261022_CM02_breast_spatial_preflight_v1.md)。
+
+
+- 既有NSCLC通讯、接收功能、身份敏感性与原生临床来源证据已完成只读综合复核；科学报告私有，不新增效应或升格机制。CM02继续图谱优先，GSE288199 HNSCC病例/治疗/阶段/结局桥待Table S1；见[run](runs/20261022_NSCLC_existing_communication_evidence_review_v1.md)。

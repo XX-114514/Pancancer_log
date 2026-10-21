@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_READ_ONLY_EXISTING_SOURCE_AGGREGATE_REVIEW",
+  "observed_UTC": "2026-10-21T19:09:53.224526+00:00",
+  "observed_UTC8": "2026-10-22T03:09:53.224526+08:00",
+  "review_scope": "previously fixed full tensor, axis, receiver-function, identity/assembly descriptions and native multicell clinical families",
+  "private_completion_SHA256": "3b1ae92fb2d95f6d4bfa000a16e26f6f4ee7dae38bca19ead760d0c3a3b172e2",
+  "private_report_SHA256": "a6cb9db0c76bacc11576016152c4f777170052e450d21ca3e763311ff4a56969",
+  "frozen_clinical_report_terminal_SHA256": "16c42be3ff2e24c3390c3149c24df29a92c0a6ee851fbe0c6e8bbf74c1702653",
+  "frozen_clinical_summary_SHA256": "56e9b6bbad9852f3ea17f3b93098a5d2d60f7a98884dfa9e8da43e7e965334fa",
+  "review_kind": "Existing audited results and manifests; not a new independent raw-data replay or new biological validation",
+  "new_tests_or_expression_downloads": false,
+  "formal_labels_CM_or_original_inference_changed": false,
+  "scientific_results_public": false,
+  "GSE288199_TableS1_status": "DEFERRED_USER_WILL_SUPPLY",
+  "public_push": "NOT_RETRIED_AFTER_PRIOR_AUTO_REVIEW_DENIAL",
+  "overall_objective_complete": false,
+  "source_only_consistency_check_SHA256": "938217547f0067b53aeb50931bfa0fe363b31aea6849a51b8acc6034869d5130",
+  "repository_validation": {
+    "exit": 0,
+    "errors": 0,
+    "existing_warnings": 1,
+    "log_SHA256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  }
+}
