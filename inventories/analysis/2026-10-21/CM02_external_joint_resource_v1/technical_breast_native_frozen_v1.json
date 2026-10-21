@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_NATIVE_CAPTURE_QUALIFICATION_NOT_STARTED",
+  "observation_UTC": "2026-10-21T18:00:14.137579+00:00",
+  "source_record": 7324285,
+  "directory_SHA256": "17911e718220292268a8cddfac32fb4bfa6c021a615ead0e011464c4a3658814",
+  "code_SHA256": {
+    "scripts/Danenberg_bounded_member_transport_v1.py": "e7de1af6fd1509778d463b5b8565c78a5e6de4cb52c17a7e0ce44d83919c8a6d",
+    "scripts/qualify_Danenberg_native_cells_v1.py": "2bd99a7d236c79db71ab68f829dc68f91a887b5baa187f8df4cf738b47b7ee71",
+    "tests/test_Danenberg_native_qualification.py": "30f8a2c47ab35d88ce727d082b4e8b92be51ae5966bbc5913ae3c4d81df2ba7b"
+  },
+  "synthetic_tests_passed": 8,
+  "requested_byte_budget": 805306368,
+  "total_seconds_budget": 7200,
+  "per_request_seconds_budget": 45,
+  "RAM_budget_bytes": 8589934592,
+  "no_individual_or_source_payload_written": true,
+  "no_full_archive_or_images": true,
+  "no_associations": true
+}
