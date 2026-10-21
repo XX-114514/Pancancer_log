@@ -98,3 +98,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [20261020 CM已知RNA混合校准](20261020_CM_known_RNA_mixture_v1.md)：完整10basis/17目标固定后实际RNA启动。
 
 [恢复连接后的真实文库参考诊断](20261021_CM_natural_library_reference_v1.md)、[γδ固定深度描述完整接受](20261021_gamma_candidate_depth_v1.md)。
+
+[CM02状态—组织—同终点临床主线首轮](20261021_CM02_state_context_v1.md)：完整状态计数机会与结局盲描述实际完成，细胞桥/空间/新临床验证分阶段。
