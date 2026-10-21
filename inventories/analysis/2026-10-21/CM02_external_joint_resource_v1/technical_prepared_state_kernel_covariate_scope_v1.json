@@ -1,0 +1,27 @@
+{
+  "status": "PREPARED_STATE_ORGANIZATION_ALGORITHM_AND_ACTUAL_COVARIATE_SCOPE_NOT_REAL_EFFECTS",
+  "observed_UTC": "2026-10-21T07:13:59.686141+00:00",
+  "source_hashes": {
+    "scripts/analyze_melanoma_IMC_continuous_state_neighbors_v1.py": "c4ab9d8c8616b4912da657796568b31135e43fcb66bade715b0e324f75384963",
+    "tests/test_melanoma_IMC_continuous_state_neighbors.py": "371c22419223f5485a3e6bfa1a300b1329b46c9861ccbeec27c22e5829c5fb3b",
+    "scripts/melanoma_IMC_firth_logistic_v1.py": "385368a8a2fec0e2d57c2d1daaf225c1e9571a163c56c7f4fca9f422c6fa8cc5",
+    "tests/test_melanoma_IMC_firth_logistic.py": "20c09cfa5e193d67d24cc32fada020cad870ca3d933ab284822890341f6eb4bb",
+    "scripts/qualify_melanoma_IMC_imaging_covariate_scope_v1.py": "4f5055db652b738e392e22aee4f395020cdd08291a40dc98263bf0aa011f7732"
+  },
+  "state_runtime_synthetic_tests": 9,
+  "state_runtime_skips": 0,
+  "state_runtime_selftest_SHA256": "3d2400eb1f68d61acb8eace3c38739e4f899b289b20aae13e26963a45f8fac9e",
+  "firth_runtime_synthetic_tests": 5,
+  "firth_runtime_skips": 0,
+  "firth_runtime_selftest_SHA256": "9775e023f45c4897112cc642f3e48c9e895b6b18bf25b794ee5f802f128c9c7c",
+  "covariate_scope_completed_UTC": "2026-10-21T07:04:10.142521+00:00",
+  "private_covariate_scope_SHA256": "eda8ba77b18b88bdd5723201ba63dded852883500813690b19e5dbdc4dcf38d4",
+  "private_full_clinical_template_necessary_df_bound_SHA256": "5c555598904ad92f05c081213e37e16391681e832f022bb2e632b844a12338c7",
+  "complete_source_member_SHA256": "59c9f04e4e12cc7484f1cc262b96b77c7a5eae4efff7d2510fbc23921b6f55dc",
+  "state_real_identity_parameters_and_protocol_not_frozen": true,
+  "no_new_spatial_or_clinical_effects_executed": true,
+  "full_proposed_clinical_template_necessary_df_gate_not_passed": true,
+  "no_automatic_covariate_deletion": true,
+  "no_scientific_source_counts_effects_or_individuals_public": true,
+  "overall_goal_achieved": false
+}

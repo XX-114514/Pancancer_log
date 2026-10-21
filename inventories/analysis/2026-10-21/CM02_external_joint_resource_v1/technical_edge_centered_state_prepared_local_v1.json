@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_EDGE_CENTERED_KERNEL_LOCAL_CHECKS_ONLY_SERVER_UPLOAD_UNCONFIRMED",
+  "observed_UTC": "2026-10-21T07:22:56.138402+00:00",
+  "source_hashes": {
+    "scripts/analyze_melanoma_IMC_continuous_state_neighbors_v2.py": "51b8a4323d806ae011ecb7d9419d56548eba63ca947a6756d3ab1dc5f9baf7bf",
+    "tests/test_melanoma_IMC_edge_centered_state_neighbors.py": "3e8c0f522937add6facb252430105729e127f10e1277271ab21de3c785fb2322"
+  },
+  "local_synthetic_tests": 10,
+  "local_synthetic_skips": 0,
+  "local_selftest_SHA256": "9c1cdd00de15849e1722b97f2039ef82fd37ebab26f029cb867a014e0078057c",
+  "server_upload_and_runtime_tests_unconfirmed_due_hostname_resolution": true,
+  "v1_never_executed_on_real_data": true,
+  "new_state_protocol_not_written": true,
+  "no_scientific_source_effects_counts_or_individuals_public": true,
+  "overall_goal_achieved": false
+}

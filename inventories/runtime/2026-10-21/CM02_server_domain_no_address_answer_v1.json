@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_JOB_LAST_VERIFIED_LIVE_LATEST_TERMINAL_UNOBSERVED_DNS_NO_A_ANSWER",
+  "observed_UTC": "2026-10-21T07:22:56.138402+00:00",
+  "original_system_resolution_failed": true,
+  "absolute_FQDN_resolution_failed": true,
+  "other_public_domains_resolved": true,
+  "default_DNS_status": "NOERROR",
+  "default_A_answer_count": 0,
+  "independent_public_DNS_status": 0,
+  "independent_public_A_answer_count": 0,
+  "independent_public_authority_SOA": true,
+  "Cursor_full_AX_disconnected_reconnecting": true,
+  "Cursor_full_AX_observed_UTC": "2026-10-21T07:21:06.071Z",
+  "original_SSH_config_equivalent_numeric_alias_found": false,
+  "new_entry_information_requested": true,
+  "remote_job_not_restarted": true,
+  "no_DNS_proxy_port_TLS_hostkey_route_or_config_changes": true,
+  "analysis_source_arrays_and_individuals_not_public": true,
+  "not_proof_of_permanent_authoritative_failure_or_remote_job_stop": true
+}
