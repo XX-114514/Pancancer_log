@@ -1309,3 +1309,6 @@ PREP-01/03恢复：用户允许临时卷并要求最终Zarr。ZARR-NEW-01：新�
 
 
 - [ ] GSE288199 Table S1由用户稍后补充；收到后先审核精确病例/材料/阶段/治疗和病理终点，另冻临床家族。保留当前RNA资格，未收到表不猜映射；既有NSCLC证据复核已完成，见[run](runs/20261022_NSCLC_existing_communication_evidence_review_v1.md)。
+
+
+- [ ] 跟进GSE288199状态组合v2同一运行句柄：完整旧来源grid/载荷、工作null门槛、全部主家族与同材料其他T/90敏感性及独立R全随机数值接受后，整批审阅结果和图。临床Table S1缺失不补猜；见[run](runs/20261022_GSE288199_state_pairs_v1.md)。

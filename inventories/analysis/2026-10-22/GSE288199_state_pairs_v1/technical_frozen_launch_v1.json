@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_AND_REAL_WORKER_STARTED_INPUT_NOT_EFFECTS_ACCEPTED",
+  "started_UTC": "2026-10-21T19:20:14.874247+00:00",
+  "started_UTC8": "2026-10-22T03:20:14.874247+08:00",
+  "frozen_implementation_SHA256": "e7f75ca8d9518cd775d59a31719f7ff129ef6c1b90272281648fd64583188bd4",
+  "private_launch_receipt_SHA256": "76a3e2b2e104df0da0c56f0a1ff493b01a8aaa5db3315ee690b4247b3614970f",
+  "generic_scope": "Complete source RNA parity, fixed phase-specific state-pair family and all matched references/sensitivities",
+  "source_inputs_and_individual_arrays_RAM_only": true,
+  "clinical_payload_read": false,
+  "independent_validation_or_direct_communication_confirmed": false,
+  "GSE288199_TableS1": "DEFERRED_USER_WILL_SUPPLY",
+  "public_push": "NOT_RETRIED"
+}

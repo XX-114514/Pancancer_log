@@ -1,0 +1,19 @@
+{
+  "status": "V1_RESOURCE_GATE_FAILED_V2_SEQUENTIAL_IMPLEMENTATION_STARTED_INPUT_ONLY",
+  "observed_UTC": "2026-10-21T19:23:28.839192+00:00",
+  "observed_UTC8": "2026-10-22T03:23:28.839192+08:00",
+  "prior_failed_terminal_SHA256": "17453ddb3f1149d32bf66571ded37f1f4718452f3cd18a9b0a44c5ea24296dd8",
+  "prior_resource_diagnostic_SHA256": "b9cd2cc8446e3c357f5b796f19b50306eaa4e804e8187fa6ab91b77316519258",
+  "v2_frozen_implementation_SHA256": "c69d5db9d930b8f55b42d7674b5371d2ba5217d439954f64d9f0316d5e8f1d8f",
+  "v2_private_launch_SHA256": "23c9b0d3fe88081cf17418184c010beb6e44aa1ec586773aec613548f3f13d9e",
+  "science_rules_or_random_seeds_changed": false,
+  "original_3GiB_RAM_headroom_unchanged": true,
+  "v1_original_process_confirmed_missing": true,
+  "v1_full_matrix_or_pair_effects_started": false,
+  "v2_runtime_changes": [
+    "one native stream at a time",
+    "one independent R statistical block at a time"
+  ],
+  "real_scientific_terminal_accepted": false,
+  "clinical_table_status": "DEFERRED_USER_WILL_SUPPLY"
+}

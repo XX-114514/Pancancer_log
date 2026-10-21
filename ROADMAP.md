@@ -734,3 +734,6 @@ A4是未来检验“哪些通讯特征对模块活动有额外解释”的方案
 
 
 - 既有NSCLC通讯、接收功能、身份敏感性与原生临床来源证据已完成只读综合复核；科学报告私有，不新增效应或升格机制。CM02继续图谱优先，GSE288199 HNSCC病例/治疗/阶段/结局桥待Table S1；见[run](runs/20261022_NSCLC_existing_communication_evidence_review_v1.md)。
+
+
+- GSE288199独立HNSCC来源进入结局盲T状态组合有限家族：原v1输入资源失败保留，v2单并发/逐项R接受通过预算后实际测量中。状态效应及临床意义待，原CM02优先和Table S1依赖保持；见[run](runs/20261022_GSE288199_state_pairs_v1.md)。
