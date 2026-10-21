@@ -1,0 +1,12 @@
+{
+  "status": "ALL_DECLARED_PUBLIC_INPUT_ACKNOWLEDGED_SCIENTIFIC_CHILD_STARTED",
+  "started_UTC": "2026-10-21T17:04:45.187650+00:00",
+  "observed_UTC": "2026-10-21T17:05:12.982909+00:00",
+  "observed_UTC_plus8": "2026-10-22T01:05:12.982909+08:00",
+  "frozen_implementation_commit": "98af56c",
+  "maximum_outstanding_bytes": 262144,
+  "exact_public_source_count": 3,
+  "private_and_derived_records_not_sent": true,
+  "scientific_effects_pending": true,
+  "global_network_root_cause_not_established": true
+}
