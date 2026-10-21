@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE_PUBLIC_AUTHOR_CODE_REVIEW_AND_QUEUED_NATIVE_NODE_BRIDGE_NOT_ASSOCIATION",
+  "observed_UTC": "2026-10-21T06:52:30.066497+00:00",
+  "author_code_review_completed_UTC": "2026-10-21T06:47:13.368296+00:00",
+  "author_code_review_source_SHA256": "1e35e7f09cb5f792f1aa0a596ad9bbba7a04bf13d1616ded1e8756bfefbfc2cf",
+  "private_author_code_review_SHA256": "12930b6a7ff0eb8ecd3162b5e85104ca28d224064db856172939b86a80beccdf",
+  "queued_UTC": "2026-10-21T06:50:31.218142+00:00",
+  "queued_module_SHA256": "446db04496964ea07d22d7c02bbae9cdb31beffc6c2987febb08e57d581cc602",
+  "source_hashes": {
+    "scripts/qualify_melanoma_IMC_native_graph_key_bridge_v1.py": "446db04496964ea07d22d7c02bbae9cdb31beffc6c2987febb08e57d581cc602",
+    "tests/test_melanoma_IMC_native_graph_key_bridge.py": "a8b9bbd6f5e759dc922c8f646d8413badea6092361eef746b77024a874a30033"
+  },
+  "runtime_synthetic_tests_passed": 9,
+  "runtime_synthetic_skips": 0,
+  "runtime_selftest_SHA256": "75276c81237cce7804ff54c680a71a1c25f8fe88e2eed2f3ae1609af8438b3d8",
+  "fixed_edge_prefix_limits": {
+    "maximum_edge_prefix_rows": 1024,
+    "maximum_edge_prefix_bytes": 1048576,
+    "maximum_node_member_bytes": 41943040
+  },
+  "queued_not_running": true,
+  "complete_coverage_still_pending": true,
+  "no_physical_micron_claim": true,
+  "no_new_association_or_clinical_test": true,
+  "no_source_scientific_counts_individuals_or_arrays_public": true,
+  "overall_goal_achieved": false
+}
