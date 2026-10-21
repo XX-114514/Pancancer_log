@@ -1,0 +1,15 @@
+{
+  "status": "PASS_COMPLETE_INPUT_AND_PRIVATE_SCOPE_REVIEW_NO_NEW_EFFECTS",
+  "observed_UTC": "2026-10-21T20:37:41.331163+00:00",
+  "observed_UTC8": "2026-10-22T04:37:41.331163+08:00",
+  "frozen_metadata_SHA256": "eae56208ebdc261f5002a08fffa7861305da44e755ca6cc1826021f11001d7c2",
+  "accepted_RNA_frozen_SHA256": "8496b3dbec2dd0ab903ab6775fc9f98d5f65a20e8b0bcef53dbf0803fa6e2d21",
+  "complete_terminal_SHA256": "d55d3f4b2ef86c11638907f43a6671e0237b5a8558a2188b23d1a2a86125247f",
+  "private_acceptance_SHA256": "7036fcf862822e4fd7df65112d896b284d06c6e8f2eb90cd8e4d7f7eb2ac4dda",
+  "independent_workbook_XML_and_full_RNA_scalar_replay": true,
+  "v1_memory_failure_preserved_and_v2_original_budget_accepted": true,
+  "own_scientific_coverage_values_and_priorities_private": true,
+  "original_CM_identity_and_closed_families_unchanged": true,
+  "TableS1_user_deferred": true,
+  "public_push_not_retried": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "SOURCE_CLINICAL_METADATA_AND_ORIGINAL_IDENTITY_HEADER_ONLY_ACCEPTED",
+  "observed_UTC": "2026-10-21T20:37:41.331163+00:00",
+  "frozen_scope_SHA256": "f05b6c9fda16fd28206d1f2be837225557f61a8d0c0f357b7c38cd91f3fe2abd",
+  "private_source_metadata_SHA256": "98d013338b20ae7715daa6953104b083ef4880f5dfeff2bd6c3cffb15711eeda",
+  "source_terminal_SHA256": "09d3fc4d485277429c0c88fa9a15b82a042d29e2f58883f8adbae971b887786a",
+  "original_native_metadata_SHA256": "24155466454df53d01eb6cbbfcd56abeb45adb68f74e721af22a9dce41040b2f",
+  "patient_alias_field_not_established": true,
+  "RNA_marker_parent_capture_and_new_state_effects_pending": true,
+  "no_individual_rows_or_scientific_values_public": true,
+  "forbidden_survival_CSV_not_accessed": true
+}

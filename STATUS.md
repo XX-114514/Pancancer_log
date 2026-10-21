@@ -1,3 +1,15 @@
+## 当前：成像来源资格完成，下一NSCLC固定T状态入口metadata接受
+
+新的完整小RNA来源/临床模态与原生测量资格已接受，独立XML及全行scalar重放通过，原失败v1和同预算分块v2均保留。科学源覆盖、视图重叠/选择限制与优先级私有；没有新空间或临床效果，不当扩大独立患者数。下一NSCLC全原作者源临床metadata及身份字段检查已完成，真正RNA marker/父群捕获和新状态效应待，不使用旧程序结果子集代替源。当前没有运行中新科学作业。CM02图谱优先、原身份/模型/闭家族保持；TableS1依用户安排待补，public push此前受拒未重试。见[成像run](runs/20261022_Chen_NSCLC_imaging_qualification_v1.md)及[RNA入口](runs/20261022_NSCLC_observed_T_state_preflight_v1.md)。
+
+### 以下保留上一阶段观察
+
+## 当前：独立NSCLC成像来源资格与小RNA实际读入
+
+复用官方临床表/完整源模态覆盖及通道协议已核，独立XML重放通过；配准主面板与validation12plex范围分开。小RNA完整RAM资格真实启动，官方签名/全行数值/type与图像层级终态待，尚无新状态/空间/临床P。原CM02/身份/旧家族保持，TableS1按用户安排待补，public push此前受拒未重试。见[run](runs/20261022_Chen_NSCLC_imaging_qualification_v1.md)。
+
+### 以下保留上一阶段观察
+
 ## 当前：固定RNA状态的探索性病理家族完整验收
 
 完整来源/临床/测量键、原始counts观测规则、全部固定临床家族、预定敏感性和病例留一已完成；独立R全真实随机流及完整校正、固定工作null报警和两图审阅接受。源级科学结果/区间/分级仅私有，未据技术PASS升格直接通讯、正式身份或临床预测增量。当前新作业已退出。CM02继续图谱优先，原身份/模型/旧家族保持；GSE288199 Table S1按用户安排待补，不猜材料/治疗/疗效桥。见[run](runs/20261022_HNSCC_observed_marker_clinical_v1.md)。public push此前受拒未重试。

@@ -1,0 +1,17 @@
+# 固定T观测状态的NSCLC原生临床入口资格
+
+## 背景与范围
+
+前轮ac7b342已完成HNSCC固定六状态/组合临床家族，本轮又完成独立成像来源不同面板与病例范围核查。新状态问题先回既有NSCLC原生RNA临床入口，保持CM02图谱优先，不用原CM/MCP/MFA/92LR临床结果子集替代完整源。
+
+2026-10-21T20:34:58.450340+00:00 UTC /2026-10-22T04:34:58.450340+08:00 UTC+8先固定全原作者材料的临床metadata问题，SHAf05b6c9fda16fd28206d1f2be837225557f61a8d0c0f357b7c38cd91f3fe2abd。只读原已有NSCLC_immune_RNA_MCP_clinical_scope_20261019_v1/private_all243_current_RNA_clinical_scope.tsv与原producer/terminal，完整table SHA318f0bbf03d48872625bf0e8b2639070d85229cdade3b78498a27ee5cfaed377、terminal SHA09d3fc4d485277429c0c88fa9a15b82a042d29e2f58883f8adbae971b887786a、producer SHAd94cf91fbb125bd6692679518ace136c0c3fbfcd5ea879038dc3ec9059df678c。全部原临床控制/病理及显式ICI资格逻辑重新核，源级覆盖私有，无新RNA或临床效应。
+
+## 解释和下一资格
+
+原作者pCR/MPR对non-MPR、八背景变量及严格ICI角色保持，未转换HNSCC病理退缩阈值；两个来源不是同一临床终点复现。原GSE/BioProject术后新辅助语境只支持治疗后来源关联，不是基线预测。原始metadata完整SHA24155466454df53d01eb6cbbfcd56abeb45adb68f74e721af22a9dce41040b2f及表头仅核已存身份/背景字段，独立患者别名尚未建立，材料/作者case不得写为已审独立患者。
+
+下一必须先核原RNA物理层/唯一基因/实际状态父群捕获、病例/排除集对齐，不能据临床表可用推断六状态模型有资格。候选及完整临床方案/误差模型在新状态-终点效应前另冻；本来源已多轮探索，新问题为探索性状态关联，不当未触及确证。保持所有旧家族关闭，不改正式身份或原CM模型。
+
+本次全源临床检查与原始身份表头只在RAM读个体，保存源级汇总/技术指纹，未读取被拒NSCLC作者生存CSV或任何替代路径。GSE288199 TableS1按用户安排待补；三个受拒动作不重试、public push未同步。观察2026-10-21T20:37:41.331163+00:00 UTC /2026-10-22T04:37:41.331163+08:00 UTC+8完成来源metadata接受，源单位和科学值私有，实际RNA资格/新状态效应待；总目标active。
+
+[技术接受](../inventories/analysis/2026-10-22/NSCLC_observed_T_state_preflight_v1/technical_metadata_only_acceptance_v1.json)。
