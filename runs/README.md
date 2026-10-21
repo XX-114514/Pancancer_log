@@ -106,3 +106,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 [CM02同癌种空间联合测量资格](20261021_CM02_spatial_joint_measurement_preflight_v1.md)：全输入键/面板身份与来源单位实际验收，尚未进行空间或临床推断。
 
 [CM02观察marker支持与真实空间执行](20261021_CM02_observed_spatial_state_support_v1.md)：全量测量/来源聚合接受，空间原作业已实际启动、结果待。
+
+[CM02同marker原生RNA/完整网络状态与主空间审核](20261021_CM02_native_marker_reference_correspondence_v1.md)：完整描述/原范围回放、主问题全随机流及来源范围接受；阶段投影/临床增量待。

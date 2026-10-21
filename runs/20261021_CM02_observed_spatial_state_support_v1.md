@@ -52,3 +52,8 @@ python -B scripts/measure_public_xenium_state_neighbours_v1.py
 同目录带固定SHA的context_v2和state_spatial_kernel_v1；PANCANCER_OBSERVED_SUPPORT指已接受支持表，PANCANCER_SPATIAL_QUESTION/SHA256绑定效果前私有合同，其余输入环境同前。逻辑控制目录pancancer-CM02-Xenium-state-neighbours-20261021-v1；原PID/startticks在私有launch收据，终态为private_output/private_terminal.json。原进程不见且无终态时先核安全异常类型/源码位置，不能据观察中断重启。只将源级科学汇总私有审阅，逐切片技术细节不转存本机。
 
 [技术收据](../inventories/analysis/2026-10-21/CM02_observed_state_support_v1/technical_measurement_and_spatial_launch.json)区分marker完成与空间pending。旧临床/空间家族不重开，未启动新的临床模型。
+
+
+## 后续实际完成
+
+空间生产02:05:17.705206 UTC结束，独立主九完整随机流/病例区间/留一/BH及27病史范围02:28:01.254574 UTC结束；完整来源科学范围私有接受，不是直接通讯/临床机制接受。全网络状态描述和当前交接见[后续run](20261021_CM02_native_marker_reference_correspondence_v1.md)。原pending和失败历史保留，当前无这些原进程在运行。
