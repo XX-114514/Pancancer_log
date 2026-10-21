@@ -104,3 +104,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 [CM02细参考患者覆盖、计数版本及完整来源/锚点描述](20261021_CM02_fine_reference_patient_scope_v1.md)：完整机会/数值和私有科学审阅，空间/新临床仍待。
 
 [CM02同癌种空间联合测量资格](20261021_CM02_spatial_joint_measurement_preflight_v1.md)：全输入键/面板身份与来源单位实际验收，尚未进行空间或临床推断。
+
+[CM02观察marker支持与真实空间执行](20261021_CM02_observed_spatial_state_support_v1.md)：全量测量/来源聚合接受，空间原作业已实际启动、结果待。
