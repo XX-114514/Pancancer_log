@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_RNA_MULTIGENE_INPUT_QUALIFICATION_AND_KERNEL_VERIFICATION",
+  "event_UTC": "2026-10-21T15:21:54.982778+00:00",
+  "observed_UTC": "2026-10-21T15:26:58.627290+00:00",
+  "observed_UTC8": "2026-10-21T23:26:58.627290+08:00",
+  "scope": "2026-10-14_immune_atlas_CM02_v1_T_whole_TME_primary_tumor",
+  "source": "GSE286827",
+  "input_terminal_SHA256": "2444332cd29366790906114434a59e008d959fe5a969edb88070d2e8be3bda77",
+  "source_copy_receipt_SHA256": "032ecb517eeff1b3cf174920f5549b1b82f52537bd9becdaf3a038cb454dfe45",
+  "audit_SHA256": "1af112e328ddbf3597e712d0d78cbebe3ffbdc672d34d57a2cf93b1ec038b474",
+  "future_design_SHA256": "46143402415a1cad9efc18fe58fa2380111bd25d2876c5e642d80a2bf40772c6",
+  "synthetic_checks_passed": 20,
+  "original_reference_and_network_unchanged": true,
+  "approved_unmodified_public_source_RAM_transport_only": true,
+  "no_raw_source_or_individual_arrays_saved": true,
+  "source_process_terminal_not_live": true,
+  "no_native_count_layer_or_RNA_clinical_effects_computed": true,
+  "scientific_coverage_counts_private": true,
+  "prior_denied_actions_not_retried": true,
+  "current_kernel_SHA256": "2feb5a2be3725bbfb91d1197a91339a1e13ab667443bb9c7fb77dee2d3842499",
+  "current_kernel_verification_SHA256": "32b4a8ecbd5558821f992844e6717a2663faf5c966e7a2620b009b990f6d4d3f"
+}

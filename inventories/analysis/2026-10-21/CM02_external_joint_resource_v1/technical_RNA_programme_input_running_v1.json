@@ -1,0 +1,16 @@
+{
+  "status": "RNA_MULTIGENE_INPUT_QUALIFICATION_CHECKPOINT_RUNNING",
+  "observed_UTC": "2026-10-21T15:18:56.238660+00:00",
+  "observed_UTC8": "2026-10-21T23:18:56.238660+08:00",
+  "scope": "2026-10-14_immune_atlas_CM02_v1_T_whole_TME_primary_tumor",
+  "public_programme_definition_SHA256": "bb5944d842db4874c6f952a9e8f83f227bd936611cee9754ecf2d286dd0fedc1",
+  "kernel_SHA256": "99537b0b6df896b5f294a4d57185eb342a56695b488b5be76a176c28ca328aba",
+  "source_version_full_SHAs_unchanged": true,
+  "sparse_kernel_official_R_reference_replay": true,
+  "synthetic_checks_passed": 18,
+  "new_expression_or_clinical_effects_not_computed": true,
+  "scientific_counts_private": true,
+  "approved_raw_public_source_bytes_RAM_transport_only": true,
+  "old_failed_input_attempts_preserved": true,
+  "earlier_denied_actions_not_retried": true
+}
