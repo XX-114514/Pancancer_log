@@ -1,0 +1,26 @@
+{
+  "status": "ACTUALLY_STARTED_AUTHORITATIVE_FINAL_ST4_SINGLE_RAM_PIPELINE_EFFECTS_PENDING",
+  "observed_UTC": "2026-10-21T12:48:43.641114+00:00",
+  "observed_UTC8": "2026-10-21T20:48:43.641114+08:00",
+  "source": "Zenodo5903179_Moldoveanu2022",
+  "old_legacy_equality_step_stopped_before_any_effect": true,
+  "old_RAM_closed": true,
+  "author_code_SHA256": "2d38c485cfdc5e5292d92d5f4ce4f11a08c95767a2eaa382aa92a077c840487f",
+  "bounded_exact_code_logic_receipt_SHA256": "eebe55a03e7bd8e9ca79e3d01c6cbd3bbdebf03d58590d849896f11040078f0b",
+  "full_source_SHA256": "d11cd7a5a1672ff002e40658f8d22bea0898733386d24197d817de9adca56112",
+  "new_final_type_tests": 3,
+  "new_RAM_lifecycle_tests": 2,
+  "existing_full2000_statistics_tests": 5,
+  "new_request_SHA256": "e74d35fed9c2f64cd68f949b7b7da05f6266985542dcceb5311d24d520133234",
+  "new_code_SHA256": {
+    "qualify_independent_melanoma_processed_tar_v6.py": "8435f068c383291e61990c9b8ea292bb867bff95d9ac3f3eb04f92cb9bf9dd01",
+    "qualify_independent_melanoma_processed_tar_v7.py": "d777efb90096aaf9a2aaf8578da028fd540d38a1f5fa4074fe7c2297a5ecb694",
+    "measure_moldoveanu_authoritative_source_states_v1.py": "52f3a96455dc9ddd93ccbff8bf4cf9d2d1ac037d23fa31ebefaf39aa95da2a24",
+    "analyze_moldoveanu_fixed_Ki67_source_organization_v2.py": "7bd6561955a40115a014d729bc491d7f863cda9b562f8230a8c3d253b67c871f",
+    "qualify_moldoveanu_ICI_cells_in_RAM_v1.py": "a498faeb15053036e72003585ba82d5c9b44b2f8f9d3c16d392c3fcf8e693125",
+    "analyze_melanoma_IMC_continuous_state_neighbors_v2.py": "51b8a4323d806ae011ecb7d9419d56548eba63ca947a6756d3ab1dc5f9baf7bf",
+    "melanoma_IMC_numpy_neighbors_v1.py": "acbde69dae387ee79d6d8397899681bedf00553dd3da08878abd16b392858471"
+  },
+  "no_new_clinical_or_patient_inference": true,
+  "no_global_network_changes_or_rejected_actions_retried": true
+}

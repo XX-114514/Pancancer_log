@@ -1,0 +1,18 @@
+{
+  "status": "INDEPENDENT_SOURCE_QUALIFICATION_RUNNING_AFTER_VERIFIED_REQUEST_ONLY_PROXY",
+  "observed_UTC": "2026-10-21T10:57:12.025127+00:00",
+  "observed_UTC8": "2026-10-21T18:57:12.025127+08:00",
+  "source": "Zenodo5903179_Moldoveanu2022",
+  "fresh_metadata_SHA256": "3692ec4c0a6d25234e12331630d72193ae106fa374b9bfa6d6c8e3f026bf923d",
+  "fixed_processed_archive_size": 45548888,
+  "fixed_processed_archive_MD5": "f03adede5b7b81c11569608393aad5df",
+  "source_license": "cc-by-4.0",
+  "schema_tests_passed": 5,
+  "HTTP_failover_tests_passed": 8,
+  "request_only_proxy_tests_passed": 4,
+  "proxy_live_probe_SHA256": "dd49926af717e588d553ff0f0898b4faeb3a3f345d9268af17fdb220f113a4be",
+  "full_archive_and_table_acceptance_pending": true,
+  "no_author_code_execution_or_individual_payload_written": true,
+  "server_same_alias_readonly_connectivity_success": true,
+  "no_global_network_changes_or_rejected_actions_retried": true
+}
