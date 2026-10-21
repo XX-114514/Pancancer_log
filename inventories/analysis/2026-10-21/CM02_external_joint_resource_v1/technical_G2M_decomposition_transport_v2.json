@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN_WINDOWED_PUBLIC_RAM_TRANSPORT_V2_AFTER_NO_SCIENTIFIC_START",
+  "observed_UTC": "2026-10-21T16:34:31.124625+00:00",
+  "v1_receiver_terminal_no_scientific_directory": true,
+  "source_scientific_frozen_code_unchanged": true,
+  "ack_module_SHA256": "82ca0f695f418dd9672121d93cb92f68b1f28beddaedebabb62a43c3dc4e5c10",
+  "transport_window_bytes": 262144,
+  "ServerAliveInterval_seconds": 30,
+  "ServerAliveCountMax": 10,
+  "absolute_transport_budget_seconds": 600,
+  "synthetic_ack_tests": 3,
+  "per_request_only_no_port_or_global_config_change": true,
+  "no_original_payload_or_individual_arrays_saved": true
+}
