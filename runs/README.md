@@ -121,3 +121,7 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [CM02 independent protein patient and native-spatial measurement](20261021_CM02_melanoma_patient_spatial_measurement_v1.md): full numeric input/age bridge complete; alias-aware patient coverage v2 running, no new biological or clinical effect accepted.
+
+[CM02 same-source local RAM fallback preflight](20261021_CM02_local_RAM_fallback_preflight_v1.md): strict compressed-prefix pilot passed; earlier failures preserved, not full scientific acceptance.
+
+[CM02 same-source local RAM patient measurement](20261021_CM02_local_RAM_patient_measurement_v1.md): real full read/coverage started after11 runtime checks; node step queued after10 checks, no state-effect protocol.
