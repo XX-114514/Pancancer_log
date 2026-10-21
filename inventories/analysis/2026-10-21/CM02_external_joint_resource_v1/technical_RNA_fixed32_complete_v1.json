@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_FIXED32_RNA_AND_ALL_RANDOM_REPLAY_ACCEPTED",
+  "scientific_started_UTC": "2026-10-21T15:46:51.035069+00:00",
+  "scientific_completed_UTC": "2026-10-21T15:53:13.356446+00:00",
+  "observed_UTC": "2026-10-21T15:56:41.581668+00:00",
+  "exact_public_source_RAM_only": true,
+  "all_fixed_slots_retained": true,
+  "independent_dense_raw_score_and_all_random_replay_accepted": true,
+  "all_original_model_H_and_baseline_NNLS_BVLS_KKT_checks_accepted": true,
+  "all_source_summary_files_SHA256_verified": true,
+  "source_terminal_SHA256": "b8ec10763455af1785906ce6d2917b5b0c293321f1ee73249709cef5d664833d",
+  "source_file_SHA256": {
+    "private_all24_programme_activity_descriptions.json": "85b13d369aa1dfbf009925dc3f89c77952707d9705ecc16c54a9a7e34bc8c4e1",
+    "private_original_activity_projection_parity.json": "13e23764767c24557379d5a6dde3dd1d4c06336d978f221884264cac0a58f1b3",
+    "private_all32_independent_inference_replay.json": "e8f1a93916457b133937731f670723757a19cf460fa51552f4c9015c0c431116",
+    "private_all32_RNA_programme_associations.json": "fa879e91137b4fe887930529865e53cf34a4321be1d008f14a875f1ed7c1e051",
+    "private_RNA_input_and_score_audit.json": "68a7ff9f0e2de141faae39161991c0f5934b7e5966f2c521caa4ece828da1316",
+    "private_progress.json": "1c347c215097cb9b64fcefbd6916da7ab93255fd90b1e987eddc33efe54068c3",
+    "plan_before_native_RNA_effects.json": "b72da812e1653cfb4ab70224a75f7ec1d65edcedaa0ab0cbdfc2e0fd89e98592"
+  },
+  "frozen_implementation_SHA256": {
+    "RNA_programme_case_inputs_v1.py": "ed27ce8a49ea2159712fe16862e75760956565b14810f45914e90ca1e45d9816",
+    "RNA_programme_partial_rank_v1.py": "aa4d2d6311d72275f551a0f4272562e4ec1fff442df701aee5e3090842baaf16",
+    "analyze_CM02_RNA_multigene_in_RAM_v1.py": "97a5dcf1404e4efa317e9b18507ef57528e37368be6c10701ee7fd40f73f8b20",
+    "audit_RNA_programme_partial_rank_v1.py": "198ac85ab4c796a2cccbcc3a162986ced9df144364dfe1e31ec5ebebad9d8a21",
+    "project_original_CM02_activity_in_RAM_v1.py": "b3b330897bd7cec6e4b3f4773960e42b48126070dff21168f37045f4c4330338",
+    "run_CM02_RNA_from_RAM_sources_v1.py": "17dbff24e7ecf1e8746c8112dd3ac0ea19a5644da0c53a0d618606c86cd4c9e3",
+    "ucell_native_sparse_scores_v1.py": "2feb5a2be3725bbfb91d1197a91339a1e13ab667443bb9c7fb77dee2d3842499",
+    "qualify_CM02_RNA_programme_RAM_public_sources_v4.py": "2e4116fdc9b6e2d4013286fe27f5b448241af5d9b4b986cac5f986be3d817e0a"
+  },
+  "synthetic_tests_passed": 9,
+  "visual_QA": true,
+  "no_individual_or_learned_arrays_written_or_copied": true,
+  "scientific_counts_and_effects_private_only": true,
+  "no_new_clinical_tests_or_original_authority_annotation_model_changes": true,
+  "implementation_local_commit": "669652fbf6dfefc1e1e80d6ace5e64f146b5cafd",
+  "prior_denied_public_push_not_retried": true
+}

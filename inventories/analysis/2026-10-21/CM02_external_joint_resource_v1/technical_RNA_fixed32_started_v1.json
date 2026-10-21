@@ -1,0 +1,10 @@
+{
+  "status": "REAL_FIXED32_RNA_PIPELINE_STARTED",
+  "scientific_started_UTC": "2026-10-21T15:46:51.035069+00:00",
+  "observed_UTC": "2026-10-21T15:47:25.491292+00:00",
+  "frozen_code_manifest_unchanged": true,
+  "implementation_local_commit": "669652fbf6dfefc1e1e80d6ace5e64f146b5cafd",
+  "original_public_source_received_RAM_only": true,
+  "no_completed_effects_claimed": true,
+  "previous_denied_actions_not_retried": true
+}
