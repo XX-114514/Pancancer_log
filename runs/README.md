@@ -127,4 +127,4 @@ bash scripts/new_run_record.sh "phase07 annotation"
 [CM02 same-source local RAM patient measurement](20261021_CM02_local_RAM_patient_measurement_v1.md): real full read/coverage started after11 runtime checks; node step queued after10 checks, no state-effect protocol.
 
 
-[CM02全范围作者T类型/区域/几何资格](20261022_GSE328481_author_spatial_qualification_v1.md)：原公开输入的metadata/坐标RAM读取实际运行，完整资格和效果前描述合同待。
+[CM02全范围作者T类型/区域/几何资格](20261022_GSE328481_author_spatial_qualification_v1.md)：完整原公开输入metadata/坐标资格、效果前冻结组织描述及全部源级表图审阅已完成，状态/临床桥仍待；科学数值和优先级私有。

@@ -8,8 +8,9 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 
-def render(task):
-    task=Path(task);out=task/'source_figures_v1';out.mkdir(exist_ok=False)
+def render(task,version='source_figures_v1'):
+    assert version in ['source_figures_v1','source_figures_v2']
+    task=Path(task);out=task/version;out.mkdir(exist_ok=False)
     m=json.loads((task/'private_complete_measurement_v1.json').read_text())
     d=json.loads((task/'private_complete_description_v1.json').read_text())
     c=json.loads((task/'private_frozen_description_v1.json').read_text())
@@ -19,7 +20,7 @@ def render(task):
     y=np.arange(len(labels));parent=m['images_with_concordant_fine_T'];eligible=m['images_meeting_future_20each_fourgroup_gate']
     axes[0].barh(y-.18,[parent.get(k,0) for k in labels],height=.32,color='#94a3b8',label='Author type present')
     axes[0].barh(y+.18,[eligible.get(k,0) for k in labels],height=.32,color='#2563eb',label='All four groups >=20')
-    axes[0].set_yticks(y,labels);axes[0].invert_yaxis();axes[0].set_xlim(0,n+1);axes[0].set_xlabel('Native files (not verified independent patients)');axes[0].legend(loc='lower right',fontsize=8)
+    axes[0].set_yticks(y,labels);axes[0].invert_yaxis();axes[0].set_xlim(0,n+1);axes[0].set_xlabel('Native files (not verified independent patients)');axes[0].legend(loc='lower left',bbox_to_anchor=(0,1.02),frameon=False,fontsize=8)
     primary=[s for s in d['all_spatial_slots'] if s['primary']]
     for i,label in enumerate(labels):
         slot=next(v for v in primary if v['CD8_author_label']==label)
@@ -57,6 +58,13 @@ def render(task):
     lines=['# GSE328481作者T类型与组织关系：完整来源描述','','## 测量范围',
         f"完整{n}份原生作者文件，{m['rows']}条保留观察。有限/唯一坐标{m['coordinates_usable']}；全部精确重复坐标排除{m['duplicate_xy_rows_excluded']}。这不是已审阅独立患者数。",
         '原CM02、RNA功能代理、作者类型及RNA marker状态保持不同对象。此分析未读取表达矩阵，不能验证原CTLA4/GZMB或LAG3/增殖状态。',
+        f"粗细T标签不一致观察{m['fine_T_not_coarse_T']}，粗T但不属已资格CD4/CD8细类{m['coarse_T_not_typed_CD4_CD8']}；后者不是不存在或非T的判断。",
+        '', '### 完整作者T类型来源覆盖','','| 作者细类 | 一致父群且可用坐标观察 | 有该类型文件 |','|---|---|---|']
+    for label,value in m['concordant_fine_T_counts'].items():lines.append(f"| {label} | {value} | {m['images_with_concordant_fine_T'].get(label,0)} |")
+    lines+=['','### 原区域来源覆盖','','| 作者区域 | 原观察 | 有该标签文件 |','|---|---|---|']
+    field=m['fields']['bin50 structural annotation']
+    for label,value in field['qualified_counts'].items():lines.append(f"| {label} | {value} | {field['images_with_label'].get(label,0)} |")
+    lines += [f"未通过披露词表的区域观察{field['unqualified_rows']}，缺失区域{field['missing_rows']}；前者只在源RAM按不同原类别分层，不合并或强行命名。",
         '', '## 全部空间描述槽',
         '数值是每文件log优势比的等文件中位数及IQR，无P/FDR/患者CI。正值表示相对于其他CD4锚点，作者CD4_Treg邻域的CD8中更偏向该作者细类；不等于总CD8更多或直接接触。主k10；k5/20保留敏感性。区域MH只保留双方锚点且至少10边的同原区域stratum，不加伪计数；粗比及区域组成使用0.5。',
         '', '| 作者CD8类型 | k | 全图 n; 中位数 [IQR] | 同原区域MH n; 中位数 [IQR] | 缺资格原因 |', '|---|---|---|---|---|']
@@ -70,10 +78,11 @@ def render(task):
         '此项不能确立CM02耐药/免疫抑制、因果通讯、同一状态跨来源复现或临床增量；后续须明确状态测量及可比较患者/阶段/终点。GSE288199 Table S1按用户安排后补。']
     (out/'REPORT_zh.md').write_text('\n'.join(lines)+'\n')
     files={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in out.iterdir() if p.is_file()}
-    (out/'private_render_terminal_v1.json').write_text(json.dumps(dict(status='COMPLETE_SOURCE_RENDER_PENDING_VISUAL_QA',files_SHA256=files),indent=2)+'\n')
+    (out/'private_render_terminal_v1.json').write_text(json.dumps(dict(status='COMPLETE_SOURCE_RENDER_PENDING_VISUAL_QA',files_SHA256=files,
+        renderer_code_SHA256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()),indent=2)+'\n')
     print('SOURCE_AGGREGATE_REPORT_AND_TWO_FIGURES_RENDERED')
 
 
 if __name__=='__main__':
     import sys
-    render(sys.argv[1])
+    render(sys.argv[1],sys.argv[2] if len(sys.argv)>2 else 'source_figures_v1')
