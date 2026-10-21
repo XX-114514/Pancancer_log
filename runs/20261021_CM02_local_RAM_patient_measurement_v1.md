@@ -2,6 +2,12 @@
 
 ## 实际状态
 
+### 2026-10-21T08:42:04 UTC /16:42:04 UTC+8 后续恢复
+
+08:20启动的修正版实际于08:30:38.156445 UTC /16:30:38.156445 UTC+8失败；08:35后取证才发现，不能继续称其运行中。失败发生在严格检查HTTP `206`处，旧程序只留下AssertionError，未保存具体状态码。此前约39 MB技术进度不代表完整CSV或任何来源科学结果；不能归因为429、403、归档损坏或生物学阴性。原PID结束已直接核对，失败历史保留。
+
+新增传输v3只记录数字HTTP状态，不读取错误正文、不跟随重定向、不接收200全归档。429/500/502/503/504最多三次重试；短Retry-After尊重，长或日期格式等待要求直接记录deferred并停止，不立即重试；401/403/404及完整性失败均停止。保持原证书、目录、SHA、64MiB/75分钟及RAM规则。新入口local_v4于08:42:04.202277 UTC实际启动；真实环境36项检查、0 skip，包括当前完整依赖链的21项科学合同、5项缓存、5项TLS和5项状态恢复检查，13个科学函数AST保持。节点仍仅排队、未冻结真实状态效应。具体状态待后续真实终态，不由启动或片段推成功。
+
 [有界片段资格](20261021_CM02_local_RAM_fallback_preflight_v1.md)通过后，首个完整测量于2026-10-21T07:57:26.296246 UTC /15:57:26.296246 UTC+8启动，但08:00:52.773032 UTC /16:00:52.773032 UTC+8真实失败，未读CSV。失败终态和原进程结束已确认。合并读取/同域名受验证地址选择经实测后，修正版于08:20:58.052225 UTC /16:20:58.052225 UTC+8启动。当前完整CRC/SHA、患者覆盖及图未接受。原远端终态仍不可读、未重启；此为同源计算，非新增证据分母。原CM02时间/范围及权威身份/家族保持。
 
 ## 输入与实现
@@ -28,14 +34,16 @@
 
 ## 复现
 
+以下为08:42状态诊断修正版入口；先前版本与失败历史保留在本节以上及原提交。
+
 ```bash
 PANCANCER_IMC_ACCEPTED_MEASUREMENT="${ACCEPTED_FULL_MEMBER_JSON}" \
 PANCANCER_RAM_OUTPUT="${LOCAL_RUN_ROOT}/private_output" \
 PANCANCER_IMC_TRANSPORT_HELPER="${LOCAL_RUN_ROOT}/scripts/preflight_melanoma_IMC_public_archive_v2.py" \
-PANCANCER_IMC_BOUNDED_TRANSPORT="${LOCAL_RUN_ROOT}/scripts/melanoma_IMC_coalesced_ranges_v2.py" \
+PANCANCER_IMC_BOUNDED_TRANSPORT="${LOCAL_RUN_ROOT}/scripts/melanoma_IMC_coalesced_ranges_v3.py" \
 PANCANCER_RETAIN_RAM_FOR_FROZEN_STEP=1 \
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
-python "${LOCAL_RUN_ROOT}/scripts/summarize_melanoma_IMC_patient_coverage_local_v3.py"
+python "${LOCAL_RUN_ROOT}/scripts/summarize_melanoma_IMC_patient_coverage_local_v4.py"
 ```
 
 自有源复制后逐SHA核对；真实PID/开始身份、依赖/协议/输入hash与stdout/stderr路径仅私有launch receipt。公共只代码/方法/技术hash，来源效应和科学数量私有。此为单次计算，不创建定时自动化。

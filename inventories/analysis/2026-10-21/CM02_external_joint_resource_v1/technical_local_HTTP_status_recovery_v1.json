@@ -1,0 +1,39 @@
+{
+  "status": "ACTUAL_LOCAL_BOUNDED_HTTP_STATUS_RECOVERY_STARTED_NOT_SCIENTIFIC_ACCEPTANCE",
+  "observed_UTC": "2026-10-21T08:43:31.320480+00:00",
+  "observed_UTC8": "2026-10-21T16:43:31.320480+08:00",
+  "prior_failed_UTC": "2026-10-21T08:30:38.156445+00:00",
+  "prior_error": "AssertionError_at_response_status_206_guard",
+  "prior_numeric_HTTP_status_unknown": true,
+  "prior_process_absent_checked": true,
+  "prior_failed_terminal_SHA256": "fd9f14045bb729e77daea126700490a5d72a4e57efa220991fa89f7ddd94ae5e",
+  "started_UTC": "2026-10-21T08:42:04.202277+00:00",
+  "source_hashes": {
+    "summarize_melanoma_IMC_patient_coverage_local_v4.py": "ddca608bfc703c17e1d35bcf35ccf99624fa9871cf47a105fb5d2caac1699fc7",
+    "qualify_melanoma_IMC_native_graph_key_bridge_local_v4.py": "427434209f230231011232b718e286eca77d6b779f72cdbd8d1ac6b182ff6eef",
+    "melanoma_IMC_local_bounded_transport_v3.py": "1d575fb3c460f0df3511f5fda36f79ef266d633566aefc67d4d4187893ca012d",
+    "melanoma_IMC_verified_dns_transport_v2.py": "12ffe4ac9c1c37efefbe42e8153928473da3cee8997a2086118d46ba81d7c25c",
+    "melanoma_IMC_coalesced_ranges_v3.py": "1536f71ebb4399ec3d1b3fe8239b02a90b892ca3a420c8f934fd183226bd8329",
+    "melanoma_IMC_numpy_neighbors_v1.py": "acbde69dae387ee79d6d8397899681bedf00553dd3da08878abd16b392858471",
+    "preflight_melanoma_IMC_public_archive_v2.py": "9fb200d98e321584fde8bca6cb92f72151ac33ec00d64e04d93e7e2b33e870e2",
+    "analyze_melanoma_IMC_continuous_state_neighbors_v2.py": "51b8a4323d806ae011ecb7d9419d56548eba63ca947a6756d3ab1dc5f9baf7bf"
+  },
+  "actual_runtime_tests": 36,
+  "skipped": 0,
+  "scientific_AST_parity_functions": 13,
+  "runtime_test_SHA256": "6f04d390bcbab62665cf454e258d620deb7e2924393e6140b821caceb1c55a82",
+  "transient_statuses": [
+    429,
+    500,
+    502,
+    503,
+    504
+  ],
+  "max_attempts": 3,
+  "permission_or_redirect_or_integrity_failure_not_retried": true,
+  "short_retry_after_respected_long_or_date_deferred": true,
+  "source_arrays_RAM_only": true,
+  "local_full_coverage_or_state_effect_accepted": false,
+  "original_remote_job_unobserved_not_restarted": true,
+  "public_push_or_denied_transfer_not_retried": true
+}
