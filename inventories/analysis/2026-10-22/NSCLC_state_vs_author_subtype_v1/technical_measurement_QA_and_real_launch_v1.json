@@ -1,0 +1,15 @@
+{
+  "scope": "technical_only_no_scientific_source_values_or_priority",
+  "observed_UTC": "2026-10-21T22:36:02.301839+00:00",
+  "measurement_contract_SHA256": "8a91fc308997b893a9c1a9224492c2aa5851b3e523a4d53bfd46bea1b8ef0476",
+  "measurement_terminal_SHA256": "01c272f386dbea3b5b39c73c3c787727a8c09705cf2f1dff4af4f9cabe7add4c",
+  "measurement_proof_SHA256": "fc39812a78c64b61a44c3bd62a18a44f44dad06f3e4c4c1b3905e1556eed3ee2",
+  "synthetic_QA_SHA256": "0870e0cd4214b2b45e74dc415c39a93795e27f60fc775f493d962a4e38838952",
+  "statistics_contract_SHA256": "4b59b353d795c58539e2b50c083aadd45aadf18eb1ec03b4536892fa0fce6412",
+  "actual_original_tool_confirmed_live": true,
+  "all112_point_assembly_and_five_full_random_branches_R_accepted": true,
+  "max_synthetic_numeric_error": 2.708944180085382e-14,
+  "real_science_and_full_random_acceptance_pending": true,
+  "source_individual_arrays_RAM_only": true,
+  "original_CM_identity_and_closed_families_unchanged": true
+}
