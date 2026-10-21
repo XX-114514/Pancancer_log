@@ -1,0 +1,19 @@
+{
+  "status": "CURRENT_GENE_AXES_AND_RUNTIME_SYNTHETIC_ACCEPTED_REAL_NATIVE_DESCRIPTION_PENDING",
+  "observed_UTC": "2026-10-21T21:35:54.277377+00:00",
+  "fixed_scope_SHA256": "077d4eb883456370deb3096de7da188fa5b144d79d516d59b922a36754e747c5",
+  "native_runtime_synthetic_SHA256": "2bf3cf8cb3ab49deb19cf07ce9540af64fd12325168e1b8687622c433f96ea58",
+  "native_gene_axis_qualification_SHA256": "b78e9f710a3a2fbf3e2d39f02e9d0c26bdae5cdcd15eb2a378f683f52a8c8370",
+  "author_code_and_access_metadata_SHA256": "866e28c4bd637020e8b072496124d47d242e6d3f500bf04df1ef36f94a910b7b",
+  "only_technical_fingerprints_public": true,
+  "source_scientific_values_private": true,
+  "no_new_patient_P_or_clinical_results": true,
+  "source_runtime_versions": {
+    "Python": "3.10.19",
+    "NumPy": "1.26.4",
+    "h5py": "3.13.0",
+    "SciPy": "1.11.4",
+    "observed_UTC": "2026-10-21T21:35:32.634154+00:00"
+  },
+  "source_runtime_metadata_SHA256": "71be450137a9556486d294df9c77579a8b1f45f76b4555c45a83033083e7bc5f"
+}
