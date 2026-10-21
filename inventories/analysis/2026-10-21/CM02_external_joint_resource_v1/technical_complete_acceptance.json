@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_PUBLIC_MELANOMA_PANEL_DIRECTORY_HEADER_ALIAS_AND_PRIVATE_RESOURCE_SCOPE_QUALIFICATION",
+  "observed_UTC": "2026-10-21T04:56:48.466675+00:00",
+  "production_completed_UTC": "2026-10-21T04:51:47.658414+00:00",
+  "schema_audit_completed_UTC": "2026-10-21T04:54:05.138207+00:00",
+  "producer_SHA256": "9fb200d98e321584fde8bca6cb92f72151ac33ec00d64e04d93e7e2b33e870e2",
+  "schema_auditor_SHA256": "f26f329b7ef87cab6ae68cb25ef313e34940ea70c353104b98c6ef9b30fb8a65",
+  "producer_terminal_SHA256": "83b5fa91e49c910b3aed7ab6d10691cd94e68d2270fab12d0d3a0dfd44304230",
+  "schema_audit_receipt_SHA256": "e536995d470e504bedf22012034b6a16d882f731b1242281de3875c653fcfe29",
+  "private_resource_scope_review_SHA256": "dad4c605e5d88614da048ee471cc2fef43767504b5dea05126ede647435d5cb0",
+  "source_record": 6838169,
+  "source_license": "cc-by-4.0",
+  "all35_protein_aliases_unique_in_processed_header": true,
+  "source_panel_complete_MD5_checked": true,
+  "complete_directory_schema_twice_and_published_file_metadata_binding": true,
+  "HTTP_validators_missing_v1_failure_preserved": true,
+  "shared_HTTP_and_zipfile_decoder_not_claimed_independent_parser": true,
+  "complete_generic_code_member_CRC_checked": true,
+  "cell_CSV_header_only_no_full_member_CRC_or_archive_MD5_claim": true,
+  "clinical_units_coordinate_units_and_positivity_not_accepted": true,
+  "no_cell_clinical_rows_parsed_or_saved": true,
+  "no_original_CM_projection_or_RNA_protein_identity_equivalence_claim": true,
+  "no_author_code_executed_no_new_effects": true,
+  "no_raw_images_sequences_RNA_learning_matrices_or_full_archives_selected": true,
+  "original_CM_models_and_closed_families_unchanged": true,
+  "pending_rejected_actions_not_retried": true,
+  "overall_scientific_goal_achieved": false,
+  "runtime": {
+    "Python": "3.9.6",
+    "library_scope": "stdlib_only_no_new_packages",
+    "observed_not_execution_time": true
+  },
+  "source_SHAs": {
+    "preflight_melanoma_IMC_public_archive_v1.py": "b090358bbc32c7d326136332b376595a6fc03a7bae783b68f32c059876d8d117",
+    "preflight_melanoma_IMC_public_archive_v2.py": "9fb200d98e321584fde8bca6cb92f72151ac33ec00d64e04d93e7e2b33e870e2",
+    "audit_melanoma_IMC_public_schema_v1.py": "f26f329b7ef87cab6ae68cb25ef313e34940ea70c353104b98c6ef9b30fb8a65"
+  }
+}

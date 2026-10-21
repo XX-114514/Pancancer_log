@@ -2424,3 +2424,32 @@ Technical acceptance SHA256: 1707309832ee1d5f416b04edc472d9f12bbcb4abd0dec92afdb
 本轮显式15文件普通本地commit，保留原三份无关未跟踪文件；不尝试公共push、GSE288199派生来源结果回传或NSCLC新随访表。整体goal active；本轮分类progress（全新实际结局盲实验、数值/完整来源/科学范围接受，下一独立临床/队列分支）。建议commit: Characterize CM02 observed T-state pairs with patient and RNA capture controls。
 
 Validation receipt SHA256: 85c14096012e60bf04a8e0ef69943ae93c44fecf7110c4710a5b10c9adaee92b; observed UTC 2026-10-21T04:38:22.517716+00:00 / UTC+8 2026-10-21T12:38:22.517716+08:00
+
+
+## 独立联合资源资格的新阶段
+
+上一288观察状态/捕获描述已经实际完整接受，为progress；本轮按目标转向独立临床/队列及空间资源。公开原文/作者数据仓核查发现cSCC CosMx有三阶段/疗效与开放RDS声明，但实际下载链接403，未获取任何RNA或临床表，不绕过验证；与HNSCC不同癌种分开。HNSCC FAST数据upon request，另两小melanoma IMC不足临床n门槛，大melanoma TMA无治疗结局，均不自动称ICI验证。新可检入口为melanoma2022官方Zenodo668.2MB处理zip/35蛋白小panel，先真实预算/schema/精确病例阶段键，未接受新细状态或效果。PDAC开放FCS作为后备，仅已核页面，尚未读文件。新run记录来源原文和边界；具体结果未计算，旧CM/家族保持，原三类受拒动作不重试。
+Observed UTC 2026-10-21T04:45:08.617857+00:00 / UTC+8 2026-10-21T12:45:08.617857+08:00
+
+Recorded 2026-10-21T04:59:25.677717+00:00 UTC /2026-10-21T12:59:25.677717+08:00 UTC+8
+
+
+## 公开联合资源结构资格实际完成
+
+上一288状态/捕获实验真实完成并改变下一动作，为progress。本轮实际v1在HTTP206/ContentRange通过后因缺ETag和LastModified技术门槛停止，失败源码/部分面板证据和后补故障审阅保留，无科学/临床效果失败。v2不改读取范围，以固定发表record/fileID/size/checksum/link的API前后比对和完整ZIP目录schema两次重读绑定对象；官方archive MD5只声明未全包复算，小型完整代码成员CRC另核。
+
+v2于2026-10-21T04:51:47.658414+00:00 UTC（UTC+8 12:51:47.658414）真实结束，读取97233个range字节，无全archive或原始图像。完整目录295项、处理sc_data表44列和4份作者代码结构已核；独立别名审阅重读面板/目录/同一headerSHA，35蛋白逐项唯一对应，原v2的严格字面名缺项不能误判为实际缺蛋白。独立核查共享HTTP/zipfile解码，不冒称另一二进制解析器。代码没有执行，CSV只解析表头，解压预取可能含未解析成员字节，不保留个体记录或学习数组。
+
+关键公开原文终点进一步核为CR/PR/SD均属作者responder，PD为nonresponder；不能默认通常ORR或病理MPR。细胞表无直接疗效字段，clidata目录也可能属于bulk验证队列，下一必须核精确imaging临床键；Position字段不当已核物理坐标。蛋白阳性阈值与作者分类、个体/ROI/区域/单位和临床均尚未接受。缺标志导致新蛋白问题和原RNA六模式分别命名，原CM02不改。
+
+cSCC公开页面CC0及对象声明已查，但实际README下载HTTP403；并发代码小探针其余未保留完整回执，不当已成功读取，未进入RNA对象或临床表。未绕过限制、改UA或用镜像。其他候选的upon-request/临床n不足/无治疗终点是本轮临床入口限制，仍可有结构用途；未自动联系作者或申请许可。GSE288199用户待补表不重复问，三类受拒动作均未重试。本轮只传递通用公开资源请求，没有上传本机派生结果。
+
+全部实际源码、producer/audit终态及完整私有输入范围审阅SHA已绑定技术证明；当前接受的是资源结构入口，不是细身份/空间关系/临床增量。原模型/权威注释/结束家族保持，整体goal active，本轮分类progress。
+
+Technical acceptance SHA256: 1d3e28bf9ef55f2128af1258c82b6e8680760eff929de60b57a6f90fb0bf5c92
+
+
+## 资源结构节点验证收束
+
+完整validate_repository退出0，0错误/1既有路径警告；实际v1/v2/auditor源码SHA、终态绑定与所有产物SHA、蛋白别名一对一和原始/处理轴命名空间、Python3.10 AST、通用代码隐私、inventory列宽/local链接及diff检查通过。v1失败历史保留；v2与审核scope为目录/表头/代码结构，不扩大成临床/空间/细胞身份结果。显式本轮14文件普通本地commit，保留原三份无关未跟踪文件；公共push/派生来源回传/NSCLC随访表受拒动作无新许可不重试。整体goal active，当前节点progress；下一继续精确单位/临床桥和可测状态资格。建议commit: Qualify public joint spatial and clinical resource structure for CM02。
+Validation SHA256 85c14096012e60bf04a8e0ef69943ae93c44fecf7110c4710a5b10c9adaee92b; observed UTC 2026-10-21T05:01:32.134338+00:00

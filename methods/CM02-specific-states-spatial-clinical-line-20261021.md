@@ -156,3 +156,12 @@
 [本轮合同及实际执行](../runs/20261021_CM02_observed_T_pair_capture_adjustment_v1.md)依原20已审病例/两parent各20观察及完整控制门槛，保留九配对、pre主/post次、原网络并集/双parent/四原生深度共288位置。基础五列设计与加入四个非recipe RNA代理的九列设计并报，每个点/2000药物×HPV患者抽样/留一/敏感性由独立秩及QR/SVD核对。全部source输出审计、完整源分母资格与私有图实际QA结束，具体结果私有。
 
 非recipe RNA量/检测代理仍可能携带生物激活，不能把调整后变化直接解释为技术因果；多控制模型的小队列区间与资格并报。state/本parent、state/marker-T和parent/marker-T是不同量；共同T分母不能作为另一个独立的互作证据。完整源阶段病例分母与context有观察病例数分别列出，缺观察不填阴性。病例抽样而非cell/文库扩大n，没有新的P/FDR、结局读取或独立验证声称。GSE288199待临床键审阅后才计算关系，不能用其未审coded单位放宽患者门槛。
+
+
+## 独立蛋白空间资源的命名空间与终点
+
+[公开联合资源资格](../runs/20261021_CM02_external_joint_resource_qualification_v1.md)只接受实际文件结构入口：物理35蛋白与处理表头别名完整对应，作者代码只读不执行，目录/表头与完整数据/成员CRC分别验收。压缩解码器缓冲可能包含未解析成员字节；当前只解析表头，不声称读取或验收了细胞/临床记录。全archive MD5只由官方声明固定，未读全包不声称复算。缺HTTP验证头时保留v1技术停止，v2以固定发表版本/fileID/checksum/size/link前后核和完整目录schema两次核对，完整所选小代码另核CRC。
+
+蛋白标志与RNA多基因正证据不是同一测量：TNFRSF9/CD25/CTLA4/TCF1等缺项保留，不把LAG3/Ki67/PD1/TIM3/IL7R可测直接说成原六RNA状态可复现。连续归一化强度不能未经背景/校准证明以大于零作阳性。Position/sample_id/celltype20字段存在也不证明单位、临床患者或正式细身份已接受。
+
+melanoma原文作者分组为RECIST1.1的CR/PR/SD对PD，含稳定病灶，和通常CR/PR对SD/PD以及HNSCC病理50%或cSCC病理<10%分别处理；阶段为untreated advanced melanoma治疗前，不称新辅助同阶段复现。原CM02保留图谱优先；新平台/癌种分支须独立命名、效果前合同、精确临床及空间验收，不能改原W/S/H或旧结束家族。

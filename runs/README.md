@@ -116,3 +116,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 [GSE288199全部材料原生RNA状态捕获](20261021_GSE288199_native_state_capture_v1.md)：先完整header/预算，固定全96来源机会，实际读取/验收状态见run。
 
 [CM02 observed T-state pairs and capture controls](20261021_CM02_observed_T_pair_capture_adjustment_v1.md): GSE286827 reviewed cases; full288 descriptive positions, real execution and acceptance in run.
+
+[CM02 external joint resource qualification](20261021_CM02_external_joint_resource_qualification_v1.md): published panel, archive directory/header and protein aliases; clinical/units/positivity not yet accepted.
