@@ -1,0 +1,19 @@
+{
+  "scope": "technical_only_no_scientific_effects_or_source_counts_or_priority",
+  "observed_UTC": "2026-10-21T23:00:45.154365+00:00",
+  "actual_tool_exit_code": 0,
+  "started_UTC": "2026-10-21T22:33:48.376779+00:00",
+  "completed_UTC": "2026-10-21T22:57:08.494251+00:00",
+  "source_terminal_SHA256": "90abd58cedcbfe37cebd9ed4916cd5a4a44c81a5d838556f14302088011f558f",
+  "statistics_contract_SHA256": "4b59b353d795c58539e2b50c083aadd45aadf18eb1ec03b4536892fa0fce6412",
+  "private_numerical_acceptance_SHA256": "c852a7b74e4474139faf0b25a342446ecac63764db662e6f1aa17509a948aad3",
+  "private_report_visual_acceptance_SHA256": "6b7f2568392e108f0843eb40c5221c4f96b45f8b04e0d51b15445430ea3ca845",
+  "all_fixed_family_slots_retained": true,
+  "all_actual_fitted_full_random_R_streams_accepted": true,
+  "max_R_numeric_error": 2.5146551507759796e-14,
+  "same_case_all30_baselines_exactly_match_previous": true,
+  "finite_working_model_alarm_accepted": true,
+  "two_real_figures_visually_reviewed": true,
+  "individual_data_and_resampling_only_RAM": true,
+  "no_independent_patients_direct_interaction_prediction_or_space_claim": true
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "technical_only_no_scientific_source_counts_or_candidate_priority",
+  "observed_UTC": "2026-10-21T22:55:33.563520+00:00",
+  "v1_status": "EXISTING_PILOT_NOT_QUALIFIED",
+  "v2_status": "METADATA_RANGE_SCOPE_NOT_ACCEPTED",
+  "v2_failure_not_claimed_fully_diagnosed": true,
+  "v3_terminal_SHA256": "3f3ecea9fcfdddcfe7a7370fa6bc4dd61bc9dd4403c09ff2ea90f399c78c644e",
+  "v4_terminal_SHA256": "120ecd50ae9be32d1fb6e1b1b2b9f932aec81801d8f4a74815813daa3973190e",
+  "v3_contract_SHA256": "f6ee0da46bc0a641601f62ef2455327a245b725f3836aff935867e80e368c32d",
+  "v4_contract_SHA256": "0fa5c09af323c232fc6c96f068d8297900d42142b585d52387d6341e89d866e2",
+  "v4_private_acceptance_SHA256": "cda44e543a5549b2040109336eb38a32fe5343e02b79fd87ab64ad9cfa4e40d8",
+  "native_nullable_format_failure_pure_synthetic_reproduced": true,
+  "v3_v4_actual_source_exit_code_zero": true,
+  "same_resource_caps_no_auth_bypass": true,
+  "no_new_human_files_or_sequence_or_identity_rows": true,
+  "current_whole_file_SHA_not_revalidated_under_partial_metadata": true,
+  "scientific_identity_or_effect_not_accepted": true
+}
