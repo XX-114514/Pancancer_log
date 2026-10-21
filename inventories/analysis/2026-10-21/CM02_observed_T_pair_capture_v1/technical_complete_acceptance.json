@@ -1,0 +1,57 @@
+{
+  "status": "COMPLETE_ALL288_PATIENT_STATE_PAIR_CAPTURE_DESCRIPTIONS_NUMERIC_SOURCE_AUDIT_AND_PRIVATE_SCIENTIFIC_FIGURE_REVIEW",
+  "observed_UTC": "2026-10-21T04:35:19.501474+00:00",
+  "production_started_UTC": "2026-10-21T04:21:52.671219+00:00",
+  "production_completed_UTC": "2026-10-21T04:30:25.948612+00:00",
+  "source_audit_completed_UTC": "2026-10-21T04:30:29.447458+00:00",
+  "plot_completed_UTC": "2026-10-21T04:30:32.633343+00:00",
+  "source_SHAs": {
+    "observed_T_marker_evidence_v1.py": "e8950f189eb399a4aa647e9e36c96dd4f2d0733404d47aa5d5f72b9d02922ae6",
+    "frozen_CM_network_contexts_v1.py": "93968537c09dc123412c121a153ecad5c95cbba9f1d8e17046035d8931a3262c",
+    "measure_CM02_native_marker_author_correspondence_v3.py": "bef6afe304de1b2c8857d2efd81a9784e4533e1cc5b067de82517cfb50e08783",
+    "observed_T_pair_statistics_v1.py": "ab636d6664c13c82f45f5e947580079f48b9cd6c7992de510bf79ab5fe58d17e",
+    "describe_CM02_observed_T_pair_capture_v1.py": "6df0aea6104cf7885fc1936b87818460e3132735db222d7b44f9d8218e37edb4",
+    "audit_CM02_observed_T_pair_capture_source_v1.py": "7ae3ad095e4e195148aa8e7eed43a8e936f83114bccc814ee09c3ddf43519859",
+    "plot_CM02_observed_T_pair_capture_v1.py": "65c9972ffb2d893fcdfc43abedd4cd092cc3255be77e7113aa609f92363372b2"
+  },
+  "producer_terminal_SHA256": "d68d206567c35466c6640b9ee44485defc84e40f74ff81e0591428e1740ce641",
+  "source_audit_receipt_SHA256": "c1498a38fc2227b05aa47ff952f3fdcc349fc78240c97e1915236368888b7821",
+  "private_scientific_review_SHA256": "be45802596a9f7934488decf23b2336b7cbf95c39c35fc7f6b685bde8230ba49",
+  "plot_receipt_SHA256": "c0b4af96a4231cd10a0360a27d39c8c7b4094eed42c951d883704cf7ff61cbfc",
+  "source_fetch_receipt_SHA256": "d091999f5a40fb6ad9c3d52ac135480ced695700d841007113b1dc6e0bb83cfa",
+  "producer_PID_confirmed_ended": true,
+  "all14_source_aggregate_technical_figure_files_SHA_verified": true,
+  "all_native_CSR_marker_scalar_and_patient_dictionary_counts_checked": true,
+  "all_background_medians_independent_array_index_checked": true,
+  "all_actual_points_bootstrap_LOO_sensitivities_rank_lstsq_QR_vs_Pandas_SVD_checked": true,
+  "all288_opportunities_and_all32_scope_profiles_audited": true,
+  "full_authority_denominator_context_observed_denominator_qualified_separately_without_effect_changes": true,
+  "patient20_parent20_full_controls_condition_and_residual_DF_gates_retained": true,
+  "all2000_synthetic_draws_and_positive_negative_constant_collinear_scenarios_passed": true,
+  "all_primary_and_secondary_source_forest_visually_reviewed": true,
+  "no_P_FDR_new_clinical_endpoint_or_spatial_tests": true,
+  "no_cell_case_expression_control_draw_or_learned_arrays_saved": true,
+  "original_CM_models_authorities_and_closed_families_unchanged": true,
+  "source_scientific_counts_effects_figures_and_interpretation_private_only": true,
+  "external_GSE288199_clinical_table": "deferred_user_will_supplement_no_state_pair_effects_in_unreviewed_units",
+  "no_local_derived_source_results_uploaded_to_server": true,
+  "pending_actions_not_retried": [
+    "GSE288199_source_result_upload_to_Project_v5",
+    "public_Git_push",
+    "NSCLC_followup_CSV"
+  ],
+  "overall_scientific_goal_achieved": false,
+  "runtime_verified_after_completion": {
+    "runtime": {
+      "Python": "3.10.19",
+      "NumPy": "1.26.4",
+      "Pandas": "2.3.3",
+      "SciPy": "1.11.4",
+      "Zarr": "2.18.3",
+      "Matplotlib": "3.10.8"
+    },
+    "observed_UTC": "2026-10-21T04:35:49.538750+00:00",
+    "same_existing_analysis_executable": true,
+    "no_packages_installed_or_updated": true
+  }
+}
