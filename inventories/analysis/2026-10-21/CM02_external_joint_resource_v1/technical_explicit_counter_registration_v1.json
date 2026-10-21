@@ -1,5 +1,5 @@
 {
-  "status": "ACTUALLY_STARTED_NODE_FIRST_COMPLETE_COUNTER_REGISTRATION_NOT_ACCEPTANCE",
+  "status": "NODE_PRELOAD_ACCEPTED_MAIN_READ_FAILED_BEFORE_COUNTER_OR_EFFECTS",
   "observed_UTC": "2026-10-21T09:30:56.347163+00:00",
   "observed_UTC8": "2026-10-21T17:30:56.347163+08:00",
   "started_UTC": "2026-10-21T09:30:00.570794+00:00",
@@ -41,5 +41,9 @@
   "observed_transient_HTTP_status": 500,
   "short_retry_after_respected_seconds": 10,
   "recovered_node_fetch_and_current_main_read": true,
-  "full_counter_or_effects_still_pending": true
+  "full_counter_or_effects_still_pending": false,
+  "failed_UTC": "2026-10-21T09:44:36.565093+00:00",
+  "failed_terminal_SHA256": "c4ea19c334e8f15106d27e4691cbdd5daa4b66f1a18c931e3d04cfefc6b85ad5",
+  "old_PID_absence_checked": true,
+  "full_counter_and_effects_not_run": true
 }

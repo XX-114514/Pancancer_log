@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_NATIVE_COUNTER_STATE_CALCULATION_AND_SOURCE_NUMERIC_AUDIT_ACCEPTED_NOT_CLINICAL_VALIDATION",
+  "observed_UTC": "2026-10-21T10:37:55.057833+00:00",
+  "observed_UTC8": "2026-10-21T18:37:55.057833+08:00",
+  "completed_UTC": "2026-10-21T10:36:06.650011+00:00",
+  "completed_UTC8": "2026-10-21T18:36:06.650011+08:00",
+  "result_SHA256": "1afd6e1eecf1e5318efa98c31691cb7e88c0001d7892b0f7d82c3d41fab510fe",
+  "producer_SHA256": "acf9136480a1258d474595adb286123a9c2f4ca6e7046373ea41539eb678608c",
+  "wrapper_SHA256": "ec8389133afe62248046287cc3bd382bd913ee846f1ed61a7193f40060230cd9",
+  "bridge_and_geometry_hashes_verified": true,
+  "complete_frozen_18_family_preserved": true,
+  "all_numeric_replay_checks_passed": true,
+  "permutations_and_bootstraps": 2000,
+  "source_state_scientific_results_and_figure_private_only": true,
+  "RAM_closed_without_individual_output": true,
+  "RAM_terminal_SHA256": "8b1208e17a718c095f9cdc90a7701d104a4250430fb9f09c8d1c8be7135dc6af",
+  "forest_visually_reviewed_readable": true,
+  "source_report_SHA256": "e29185ff0b289ba23802b48da46987c6488a10bacb33a1393493a56518474a1b",
+  "source_forest_SHA256": "29e3791c144a12085e5268232e6313957a898bf74b9a59ac5cceaea941f79167",
+  "goal_achieved": false,
+  "no_clinical_outcomes_or_direct_communication_effects_computed": true,
+  "no_public_push_or_rejected_upload_retried": true
+}

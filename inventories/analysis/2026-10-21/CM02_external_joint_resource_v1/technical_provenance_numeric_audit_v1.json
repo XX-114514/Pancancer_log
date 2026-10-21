@@ -1,0 +1,28 @@
+{
+  "status": "PROVENANCE_AND_PENDING_NUMERIC_AUDIT_NOT_REAL_EFFECT_ACCEPTANCE",
+  "observed_UTC": "2026-10-21T09:44:52.101786+00:00",
+  "observed_UTC8": "2026-10-21T17:44:52.101786+08:00",
+  "software_provenance_SHA256": "caf25b4a1ff1488fbba0fccb51450a4560030a56c48c1fde3f6260c9d865ddd8",
+  "software_blob_SHA1": "1aa038854cb9cc8ed115e0039ac32b95f579004a",
+  "software_source_SHA256": "f23887d83b5b65cc22c967a35aa9c55079ace3b42a6b13364efe4e4ac01bdd0c",
+  "software_Position_centroid_dataflow_supported": true,
+  "exact_dataset_version_or_physical_unit_not_proven": true,
+  "edge_prefix_schema_SHA256": "da8e9b02d427e281435a7ee1bb4782c59e50f1c4765175c6b7c423edcf0d1e9e",
+  "partial_schema_not_full_graph_acceptance": true,
+  "source_hashes": {
+    "melanoma_IMC_numeric_replay_audit_v1.py": "0b8d9d82e5b353a16e368b2b49775c4b675afcbd3804e85926a800425c823edb",
+    "measure_melanoma_IMC_complete_author_graph_states_audited_v4.py": "d1bdcc002a5820844c046d246a94f41c1910c92ab1eb9b4ec1735c9ed5758221"
+  },
+  "tests": 5,
+  "skipped": 0,
+  "test_SHA256": "5152e0140ffbf215da823d4e76aa2de745e520b34b1f012d0b9cc745370d1c3b",
+  "initial_test_fixture_signature_errors_preserved": true,
+  "original_unexecuted_protocol_SHA256": "81e1b73404f1463dcf8e83257e21b2584e12953b25f1a17f6d01675929265a83",
+  "amendment_before_effects_SHA256": "5b211933fd2a404bd82b2c54f2efd19ea37668905227df0b9ecac3c4a736f0e8",
+  "current_pending_protocol_SHA256": "d9c9adb384bed6c273fe8d5c67563cc1601613c92007ccacd6a5443cf42a5ae0",
+  "original_active_reader_and_transport_not_changed": true,
+  "numerical_outputs_and_random_stream_unchanged_in_synthetic_checks": true,
+  "real_numeric_audit_and_effects_pending": true,
+  "individual_data_RAM_only": true,
+  "no_rejected_actions_retried": true
+}

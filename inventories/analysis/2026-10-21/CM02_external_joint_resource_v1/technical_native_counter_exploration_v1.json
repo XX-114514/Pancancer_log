@@ -1,0 +1,22 @@
+{
+  "status": "AUTHOR_GRAPH_TRANSPORT_FAILED_GEOMETRY_PREFIX_ACCEPTED_NATIVE_FIXED_EXPLORATION_RUNNING",
+  "observed_UTC": "2026-10-21T10:35:49.545610+00:00",
+  "observed_UTC8": "2026-10-21T18:35:49.545610+08:00",
+  "author_graph_failure_receipt_SHA256": "e93b39c5b167d39df86e1255fe68e94ca001ee50d7365708322285ec7a0a4d10",
+  "geometry_result_SHA256": "54a29bab0f9fa3625cf6b0c365e1f2ef59f5675ceb1b540d20e72c9dc7a3e4ca",
+  "geometry_partial_only": true,
+  "source_arrays_retained_in_RAM": true,
+  "native_protocol_before_effects_SHA256": "3d993c808d302e8a68a1cdd3268f265a8b36d391d919655b3544d08a14ab0a51",
+  "native_request_SHA256": "6a06d1e63d8b382f079dfce4ebd6f5da420cbe6a2da2f1b85dfcba0a637deeed",
+  "native_started_UTC": "2026-10-21T10:35:05.441450+00:00",
+  "tests_passed": 2,
+  "mathematical_functions_AST_unchanged": true,
+  "full2000_synthetic_positive_negative_and_independent_numeric_replay_passed": true,
+  "all18_family_seed_and_thresholds_unchanged": true,
+  "no_clinical_outcomes_read": true,
+  "source_hashes": {
+    "analyze_melanoma_IMC_counter_native_states_v3.py": "acf9136480a1258d474595adb286123a9c2f4ca6e7046373ea41539eb678608c",
+    "measure_melanoma_IMC_counter_native_states_audited_v1.py": "ec8389133afe62248046287cc3bd382bd913ee846f1ed61a7193f40060230cd9"
+  },
+  "no_global_network_changes_or_rejected_actions_retried": true
+}
