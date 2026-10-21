@@ -1,0 +1,14 @@
+{
+  "status": "CASE_SIGNFLIP_CALIBRATION_FROZEN_NO_SOURCE_EFFECTS",
+  "observation_UTC": "2026-10-21T18:30:42.546336+00:00",
+  "code_SHA256": {
+    "CM02_marked_spatial_case_inference_v2.py": "d12ee97da4771e656299dedb53e9f094baf95123efe4cc1c4a1e661edfec44c6",
+    "calibrate_CM02_marked_spatial_case_null_v2.py": "5fd66ce57be3c58bf4ba52bfd609c70da475748e9066e3b49f39173f4cac01cf"
+  },
+  "replicates": 200,
+  "legacy_same_synthetic_draws_exact_replay": true,
+  "case_signflips": 2000,
+  "coarse_gate": "Both mechanisms Wilson95 upper <=0.10; no guarantee of actual-data case symmetry or independence",
+  "synthetic_case_tests_passed": 4,
+  "no_real_effects_examined": true
+}

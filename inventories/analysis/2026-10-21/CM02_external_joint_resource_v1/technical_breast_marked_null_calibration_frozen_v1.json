@@ -1,0 +1,16 @@
+{
+  "status": "SYNTHETIC_NULL_CALIBRATION_FROZEN_BEFORE_SOURCE_EFFECTS",
+  "observation_UTC": "2026-10-21T18:27:20.038868+00:00",
+  "code_SHA256": "4df0ce20a0a6de63d850cd180d699e67a50c8e667b1f0f94835adf5fac98a366",
+  "replicates_per_mechanism": 200,
+  "cases_per_replicate": 30,
+  "cells_per_parent": 30,
+  "permutations": 199,
+  "seed": 20261023,
+  "mechanisms": [
+    "independent_homoscedastic",
+    "independent_heteroscedastic_spatial_variance"
+  ],
+  "coarse_gate": "Wilson95 upper<=0.10; lower>0.05 flags inflation; no claim of actual-data validity",
+  "no_human_input": true
+}

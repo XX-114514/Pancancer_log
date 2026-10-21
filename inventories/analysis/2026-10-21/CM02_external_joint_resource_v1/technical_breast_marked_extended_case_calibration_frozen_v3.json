@@ -1,0 +1,17 @@
+{
+  "status": "EXTENDED_CALIBRATION_FROZEN_BEFORE_SOURCE_RESTART",
+  "observation_UTC": "2026-10-21T18:33:00.064773+00:00",
+  "code_SHA256": "30a67df673287d39a4c7fa977684539450f0ad215821d0d772041c5ae6446723",
+  "seed": 20261023,
+  "batches": 10,
+  "trials_per_batch_and_mechanism": 200,
+  "all_initial_200_trials_replayed_and_retained": true,
+  "no_stopping_when_passing": true,
+  "gate": "Wilson99 includes nominal 0.05 and upper<=0.075 in both synthetic mechanisms",
+  "source_worker_stopped_during_INPUT": true,
+  "no_source_effects_seen": true,
+  "direct_independent_normal_case_vector_check": {
+    "replicates": 10000,
+    "typeI": 0.0513
+  }
+}

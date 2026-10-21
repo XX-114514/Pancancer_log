@@ -1,0 +1,13 @@
+{
+  "status": "CONTROLLED_SOURCE_STOP_AND_EXTENDED_SYNTHETIC_CALIBRATION_RUNNING",
+  "observation_UTC": "2026-10-21T18:36:20.879088+00:00",
+  "source_worker_stopped_during_INPUT": true,
+  "source_worker_exit_code": 1,
+  "source_result_not_created": true,
+  "synthetic_pilot_checks_not_qualified": true,
+  "extended_calibration_no_early_stopping": true,
+  "all_initial_synthetic_trials_retained": true,
+  "candidate_case_inference_source_worker_not_started": true,
+  "goal_active": true,
+  "no_individual_payload_written": true
+}
