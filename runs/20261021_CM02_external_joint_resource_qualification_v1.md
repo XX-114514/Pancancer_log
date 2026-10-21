@@ -38,3 +38,24 @@ cSCC公开页面CC0及对象声明已查，但实际README下载HTTP403；并发
 全部实际源码、producer/audit终态及完整私有输入范围审阅SHA已绑定技术证明；当前接受的是资源结构入口，不是细身份/空间关系/临床增量。原模型/权威注释/结束家族保持，整体goal active，本轮分类progress。
 
 Technical acceptance SHA256: 1d3e28bf9ef55f2128af1258c82b6e8680760eff929de60b57a6f90fb0bf5c92
+
+## 精确ROI元数据连接资格继续
+
+用户明确允许先继续并记录GSE288199 TableS1缺失，待稍后补充；不重复索取，不猜coded单位的治疗/病理标签。该缺口不影响独立公开资源的结构资格。
+
+此前本机后续代码探针真实退出1，标准TLS报hostname mismatch；其后2026-10-21T05:04:50.233091 UTC（UTC+8 13:04:50.233091）本机诊断超时。实际失败事件的精确时间未知，以上为取证时间。旧已接受载荷不因此作废。服务器2026-10-21T05:04:58.173435 UTC（UTC+8 13:04:58.173435）标准证书校验通过；同官方入口通用代码/路径探针于05:06:39.586809 UTC完成，源码SHA与既有记录一致。没有关TLS、更改UA/DNS/IP/代理或换镜像。
+
+下一只选完整小型成员`data/input/meta/ROI_meta_afterQC.csv`，CSV与Pandas逐值在服务器RAM核对；只输出字段、来源类别/数量与连接资格，禁止病例/ROI键和记录落盘，不计算疗效或空间效应。病例字段计数匹配论文不单独证明patient语义；须核作者代码、精确细胞连接和坐标/测量。
+
+首次派发字符串换行语法错误，远端未执行/未建目录；本地先AST解析修正派发后，于2026-10-21T05:12:27.594105 UTC（UTC+8 13:12:27.594105）实际启动。通用核验源码SHA256 `340c28d3fd0901dc31dc1180de029d8e4254f1939a3aee48b7cfd884d704608c`。仅通用代码上行；本机派生结果没有上行。运行/完整小表资格与科学效果分开接受，当前真实终态待核。
+
+
+## Explicit partial imaging bridge accepted; full measurement still pending
+
+Complete small ROI metadata v2 ended at 2026-10-21T05:14:40.325126 UTC / 13:14:40.325126 UTC+8 after the v1 transient directory timeout at 05:13:08.821832 UTC / 13:13:08.821832 UTC+8. Retry changes preserve standard TLS, the official endpoint and Range/byte-budget checks. Synthetic timeout limit, failed-attempt budget and TLS/HTTP/ContentRange fail-closed checks passed. Masked generic author-code review ended at 05:16:20.674024 UTC / 13:16:20.674024 UTC+8.
+
+The first imaging-key producer exported all source headers before discovering coded-unit columns in the source wide table. That broad-schema result is not adopted or transferred; its original source/SHA remains private, while its public v1 entry is inert. v2 exports only contract fields and unselected-column counts. Its exact partial-key join actually completed at 2026-10-21T05:20:26.615551 UTC / 13:20:26.615551 UTC+8. The explicit patient/ROI bridge supports only invasive-margin metadata, with consistent outcomes and no prefix inference; core units remain unmapped. Exact source counts and the scope review are private. This accepts clinical-key provenance for the covered subset, not clinical association, protein state identity or spatial relationships.
+
+A separate complete processed-cell member qualification actually started at 2026-10-21T05:18:45.644546 UTC / 13:18:45.644546 UTC+8. Its fixed scope is one selected CSV member in server RAM, not the full archive or raw images. Source SHA 3d1d59b9cfc9bedd62de2b9a26688bf812999e75221b41bab93829fdd295e176. The same process remains under observation; no full-member or source measurement result is accepted yet. Future case/parent eligibility and coordinate/positivity meaning remain dependent on actual results. GSE288199 TableS1 remains human-deferred; original CM02, authorities and closed families remain unchanged. Overall goal active; this node is progress, not completion. No rejected outbound action retried.
+
+Technical partial-bridge acceptance SHA256: beef4eb6669ebe333bd2f66c32117a142c1f9b8dfcb3b444d6bd689ca9b5e2c6; observed 2026-10-21T05:23:40.717550+00:00 UTC / 2026-10-21T13:23:40.717550+08:00 UTC+8
