@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE_TARGET_PARENT_CAPTURE_WITH_GLOBAL_PHENOTYPE_MAPPING_LIMIT",
+  "started_UTC": "2026-10-21T18:03:20.053489+00:00",
+  "completed_UTC": "2026-10-21T18:10:51.422120+00:00",
+  "observation_UTC": "2026-10-21T18:12:29.993516+00:00",
+  "code_SHA256": {
+    "scripts/Danenberg_bounded_member_transport_v1.py": "bcc512c940a1769fad944ffb6b9a2d376ab81652b0956e67fda87f1ec054b44c",
+    "scripts/qualify_Danenberg_native_cells_v1.py": "7ffdb5327ad9f06e1c9bb808e729be816e4f6d82b6599de9b41bbaf8662277d9",
+    "tests/test_Danenberg_native_qualification.py": "b5961c23e074c3c56180c90461986198ce70edc5148952b8234057eeb1de259e"
+  },
+  "source_summary_SHA256": "3ed630b09ad0f83b94b84c47f95b831e399cfac4b050c50d892e907b4d407767",
+  "selected_member_SHA256": "9f693514acc02bbb6b2dabd14c15c806348c5b882659aea071a83ed16e2d5df0",
+  "directory_SHA256": "17911e718220292268a8cddfac32fb4bfa6c021a615ead0e011464c4a3658814",
+  "full_selected_member_CRC": true,
+  "fresh_directory_replay": true,
+  "independent_count_reconciliation": true,
+  "no_range_retries": true,
+  "response_validators_absent_explicit": true,
+  "no_full_archive_MD5_claim": true,
+  "peak_RSS_bytes": 405520384,
+  "successful_range_bytes": 384783224,
+  "synthetic_checks_passed": 9,
+  "global_phenotype_mapping_incomplete_explicit": true,
+  "no_new_associations_or_individual_payload_files": true,
+  "source_scientific_values_private": true,
+  "goal_active": true
+}
