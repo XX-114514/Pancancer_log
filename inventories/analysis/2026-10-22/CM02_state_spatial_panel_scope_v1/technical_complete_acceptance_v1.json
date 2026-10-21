@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_CURRENT_PANEL_BINDING_OBSERVABILITY_AUDIT_AND_CLOSED_SPATIAL_EVIDENCE_REVIEW",
+  "observed_UTC": "2026-10-21T19:55:12.282170+00:00",
+  "observed_UTC8": "2026-10-22T03:55:12.282170+08:00",
+  "private_complete_acceptance_SHA256": "ff23f10e64e6f6d5991e2dcb30f09d9f2c52eb665fc6226a286bc69a6493a160",
+  "private_input_catalog_SHA256": "1533b2980dd69171da71af5833b22b83a594fc08abd72aff3764407b31e48d09",
+  "current_cached_RNA_file_binding_SHA256": "5935b693002c5beaa01470ef78e4e9b8e443cb40d88ad2834567adfe234fe065",
+  "independent_complete_observability_audit_SHA256": "4f62dcd8d711a16013bbb2b4f35851701f06339fb7384ab92b30c31944abb9ca",
+  "private_closed_spatial_evidence_review_SHA256": "6b0d69472fb766c80266d4eb2321bbfed15d5120023d942ac97790d804b7a074",
+  "private_report_SHA256": "866c0e9e3692829650efbbfec3937eb4e56e2a99e211e5c5c03567864f192577",
+  "new_cell_expression_coordinate_or_clinical_arrays_parsed": false,
+  "new_spatial_or_clinical_effects": false,
+  "closed_families_formal_identity_CM_and_models_changed": false,
+  "scientific_values_or_candidate_names_public": false,
+  "clinical_TableS1": "DEFERRED_USER_WILL_SUPPLY",
+  "public_push": "NOT_RETRIED",
+  "overall_goal_complete": false,
+  "repository_validation": {
+    "exit": 0,
+    "errors": 0,
+    "existing_warnings": 1,
+    "log_SHA256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  }
+}
