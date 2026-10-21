@@ -1,0 +1,20 @@
+{
+  "status": "PREPARED_TESTED_NO_REAL_STATE_REQUEST",
+  "observed_UTC": "2026-10-21T08:50:40.469126+00:00",
+  "observed_UTC8": "2026-10-21T16:50:40.469126+08:00",
+  "source_hashes": {
+    "scripts/measure_melanoma_IMC_complete_author_graph_states_v1.py": "ff7a96e5b2e05f2c87428c73d00263073a82efdef62d885e94929aab6e651690",
+    "scripts/analyze_melanoma_IMC_author_graph_states_v1.py": "57d4af556e450f5a267b7a2e10caf3a097250090e35a97669a62d2c104ee87be",
+    "tests/test_melanoma_IMC_complete_author_graph_states.py": "fac65ec79ff05bbbdfb805fb8a3dc352a17bac53f413f66561db45be6e5892f7"
+  },
+  "actual_tests": 15,
+  "skipped": 0,
+  "runtime_test_SHA256": "f4218a70831e4daeeb526188efa0125b0f5281a73900d874d0de7f1b3b938ec5",
+  "static_coordinate_provenance_review_SHA256": "fd28f8198970f38911bfa5331f16ad3ceb8cef9baf0ae069faa1386cb6245d5c",
+  "native_Position_provenance_unresolved": true,
+  "primary_graph": "Complete author-supplied adjacency, paper describes20um centroids, not independently reconstructed",
+  "all18_family_preserved": true,
+  "no_real_state_or_clinical_effects": true,
+  "author_code_not_executed": true,
+  "all_individual_arrays_RAM_only": true
+}
