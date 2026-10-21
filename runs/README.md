@@ -110,3 +110,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 [CM02同marker原生RNA/完整网络状态与主空间审核](20261021_CM02_native_marker_reference_correspondence_v1.md)：完整描述/原范围回放、主问题全随机流及来源范围接受；后续阶段状态对应/临床增量待。真正基线投影和旧临床家族已于20261016执行，见下一纠正。
 
 [CM02分阶段活动与实测状态对应](20261021_CM02_phase_activity_state_correspondence_v1.md)：先纠正原真正基线投影已完成的历史，再补结局盲pre/post与固定观察状态的来源描述；实际运行/验收状态见run。
+
+[GSE288199独立HNSCC测量资格](20261021_GSE288199_external_CM02_measurement_qualification_v1.md)：官方双格式/三模态/全部基因轴实际核查，XML格式修正保留历史；临床/空间文件和患者桥另待。
