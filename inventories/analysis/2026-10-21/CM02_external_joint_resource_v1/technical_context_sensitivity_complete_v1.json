@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_RAM_SOURCE_CONTEXT_SENSITIVITY_AND_DATE_QUALIFICATION",
+  "event_UTC": "2026-10-21T13:32:28.916726+00:00",
+  "observed_UTC": "2026-10-21T13:34:27.886669+00:00",
+  "observed_UTC8": "2026-10-21T21:34:27.886669+08:00",
+  "scope": "2026-10-14_immune_atlas_CM02_v1_T_whole_TME_primary_tumor_inspired_external_state_question",
+  "source": "https://zenodo.org/records/5903179",
+  "result_SHA256": "187491812c4acc6f3f500058713f9d379e50fe03563bfb7142e062e043656226",
+  "analysis_code_SHA256": "2c0d67729a64e9a9a1831640572f41a458135c21c49ec572f956067795a90352",
+  "audit_SHA256": "09d3a399571b22ad84bec0631a2f3401cf8596930a8da1603f4f5658325abff8",
+  "family_size": 8,
+  "permutations": 2000,
+  "seed": 2026102201,
+  "synthetic_checks_passed": 6,
+  "full_BH_and_missing_denominator_audit": true,
+  "RAM_closed": true,
+  "own_scientific_values_figures_and_counts_private": true,
+  "no_clinical_or_original_CM02_validation_claim": true,
+  "original_authorities_and_closed_families_unchanged": true,
+  "missing_GSE288199_TableS1_user_deferred": true,
+  "previous_denied_push_not_retried": true
+}
