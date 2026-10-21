@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_BEFORE_NEW_CLINICAL_EFFECTS_ACTUAL_INPUT_STARTED",
+  "frozen_UTC": "2026-10-21T20:08:14.726767+00:00",
+  "frozen_SHA256": "1279692fb08d83ae9edd0204cc113b3b445cb35134bca972501a7bb28fb0b49a",
+  "code_SHA256": {
+    "HNSCC_observed_marker_clinical_reader_v1.py": "c39eeb030037cd4efb56faa802dca4a2a59924288a2baaf474a945ebd1c127f6",
+    "run_HNSCC_observed_marker_clinical_v1.py": "c42814779ae019fba42c02067b07168256a0b5f1a8620cfa5cb3e683370a92c9",
+    "test_HNSCC_observed_marker_clinical_v1.py": "aa4ee8d7d4626cc3367fb0a62cfd0fba3b13c506b06abce5da4cedcb647958fe",
+    "measure_CM02_native_marker_author_correspondence_v3.py": "bef6afe304de1b2c8857d2efd81a9784e4533e1cc5b067de82517cfb50e08783",
+    "observed_T_marker_evidence_v1.py": "e8950f189eb399a4aa647e9e36c96dd4f2d0733404d47aa5d5f72b9d02922ae6",
+    "GSE288199_state_pair_math_v1.py": "239f1e9d18332533bcee7465e899d5f654c68930351c10fe33068288c5cb2277",
+    "GSE288199_state_pair_R_audit_v1.py": "9988cc2a2a6460db59159f13c6a6440b117cf2dd36601219f030c1bf490453ea"
+  },
+  "method_SHA256": "91c1c20d1b2783878449469bb7c8ebdee1afb0a10c9289ed68b1d996e3518355",
+  "synthetic_tests_passed": 4,
+  "actual_terminal_pending": true,
+  "scientific_values_and_selected_pairs_private": true,
+  "public_push_not_retried": true
+}
