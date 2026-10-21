@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_EXISTING_CAPTURE_REUSE_AND_SAME_PILOT_SPECIFIC_RNA_QUALIFICATION_GOAL_ACTIVE",
+  "observed_UTC": "2026-10-21T23:52:14.621937+00:00",
+  "metadata_launch_parent_commit": "970d63b",
+  "code_files_SHA_frozen_before_source_run_and_uncommitted_at_launch": true,
+  "existing_capture_contract_SHA256": "c086b8c53b21cbbc034182d0a9e8074d6af66ebaf55a86c24eed54c4b43ed626",
+  "existing_capture_terminal_SHA256": "acac6adb216b77634c07ec5195ee36a17072a0badbea01f748fba5c359cb4187",
+  "specific_gene_contract_SHA256": "39ea33d7d68c77ca1cb8e986c0e74491e4ee2837f788f83365f7c69932b73610",
+  "specific_gene_terminal_SHA256": "6f1dcf980977e14cf9109fc295ad0f802ae03c4f194d0deba9c130d43bd2e6d7",
+  "numeric_acceptance_SHA256": "727578dabf7dc8565d60c9b59e0c2e6802b0bd70e186becc827ead1830a85934",
+  "scientific_visual_acceptance_SHA256": "473fef1c3706a12faf2991683f7788ed53f6dab86e25bf71a32622cd969d31ef",
+  "source_runtime": "Python3.10.19_h5py3.13.0_numpy1.26.4_threads1",
+  "source_exit_code": 0,
+  "source_RAM_released": true,
+  "all_existing_input_files_and_old_panel_capture_SHA_reconciled": true,
+  "all_selected_sparse_row_marker_dictionary_oracles": true,
+  "old_full_source_group_depth_medians_exact": true,
+  "no_raw_individual_matrix_sequence_identifier_or_scientific_result_payload_in_this_receipt": true,
+  "all_scientific_values_and_candidates_private": true,
+  "no_formal_state_marker_absence_identity_disproof_direct_interaction_clinical_or_independent_validation_claim": true,
+  "public_push_not_retried": true
+}

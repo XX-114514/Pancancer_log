@@ -128,3 +128,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [CM02全范围作者T类型/区域/几何资格](20261022_GSE328481_author_spatial_qualification_v1.md)：完整原公开输入metadata/坐标资格、效果前冻结组织描述及全部源级表图审阅已完成，状态/临床桥仍待；科学数值和优先级私有。
+
+
+[CM02作者组织类型的RNA与临床桥资格](20261022_CM02_author_type_RNA_clinical_bridge_v1.md)：完整旧捕获复用、同一试点marker/深度与匹配旧临床/图表接受；不能将组织标签直接当精细RNA状态或临床验证。
