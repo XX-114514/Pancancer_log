@@ -1,0 +1,47 @@
+{
+  "status": "FROZEN_BEFORE_NATIVE_RAW_SCORE_AND_MULTIGENE_DIAGNOSTICS",
+  "observed_UTC": "2026-10-21T16:27:54.195489+00:00",
+  "files": {
+    "RNA_programme_case_inputs_v1.py": "ed27ce8a49ea2159712fe16862e75760956565b14810f45914e90ca1e45d9816",
+    "RNA_programme_partial_rank_v1.py": "aa4d2d6311d72275f551a0f4272562e4ec1fff442df701aee5e3090842baaf16",
+    "analyze_CM02_RNA_multigene_in_RAM_v1.py": "97a5dcf1404e4efa317e9b18507ef57528e37368be6c10701ee7fd40f73f8b20",
+    "audit_RNA_programme_partial_rank_v1.py": "198ac85ab4c796a2cccbcc3a162986ced9df144364dfe1e31ec5ebebad9d8a21",
+    "project_original_CM02_activity_in_RAM_v1.py": "b3b330897bd7cec6e4b3f4773960e42b48126070dff21168f37045f4c4330338",
+    "run_CM02_RNA_from_RAM_sources_v1.py": "17dbff24e7ecf1e8746c8112dd3ac0ea19a5644da0c53a0d618606c86cd4c9e3",
+    "ucell_native_sparse_scores_v1.py": "2feb5a2be3725bbfb91d1197a91339a1e13ab667443bb9c7fb77dee2d3842499",
+    "qualify_CM02_RNA_programme_RAM_public_sources_v4.py": "2e4116fdc9b6e2d4013286fe27f5b448241af5d9b4b986cac5f986be3d817e0a",
+    "CM02_RNA_state_stability_helpers_v1.py": "de3f3f79abf2bd13cb0370858506a7f66fb2a11f05b3e9662cfa52b021d49f93",
+    "characterize_CM02_G2M_state_stability_v1.py": "b89cf6b5d104ac69bf7d343e2a691a247108cbdac9af79a4def8629f9f2aab42",
+    "run_CM02_G2M_state_stability_from_RAM_v1.py": "d018803601d93de5816191ce50542d579e13425c053f233df75b1da69aa653e0",
+    "CM02_author_node_bridge_v1.py": "92c47d8bcddcda14aa6c00eb564fbca1d5727da318e1a299e245cb11c79e9885",
+    "CM02_G2M_additive_diagnostics_v1.py": "537521cb4bdb56963eb010f2db263006810a1c50db3cdab06aa58733f77e4724",
+    "measure_CM02_G2M_decomposition_v1.py": "5a5304d12ae92f97f2ec4193af872d694084e443e9b5a1bcf59760c92f861850",
+    "run_CM02_G2M_decomposition_from_RAM_v1.py": "f958cbb77d27840b1941525b168cad81bb98c31ff3ccfe58537dfbb2fe74514a"
+  },
+  "prior_design_SHA256": "46143402415a1cad9efc18fe58fa2380111bd25d2876c5e642d80a2bf40772c6",
+  "synthetic_tests_passed": 6,
+  "primary_scope": "2026-10-14_CM02_v1_T_whole_TME_primary_tumor",
+  "parent_source": "GSE286827",
+  "primary_terminal_SHA256": "b8ec10763455af1785906ce6d2917b5b0c293321f1ee73249709cef5d664833d",
+  "stability_terminal_SHA256": "fbd4128f87a4d20dcbfbc357e61de0005af1382c2ab3de8d16ac5d2849b8bc95",
+  "raw_score_contexts": 8,
+  "reference_schemes": [
+    "pooled_cell_weighted_reference",
+    "equal_observed_case_reference"
+  ],
+  "fine_pair_additive_terms": 168,
+  "multigene_source_profiles": 64,
+  "score_diag": [
+    "detected_genes",
+    "rank_contributing_genes",
+    "inverse_concentration_effective_gene_number",
+    "maximum_gene_mass_fraction_among_positive_cells",
+    "active_gene_fractions_ge1_ge2_ge5_ge10"
+  ],
+  "no_new_P_CI_or_clinical_tests": true,
+  "not_a_decomposition_of_primary_Spearman": true,
+  "no_gene_contribution_vectors_exported": true,
+  "no_individual_or_learned_arrays_written": true,
+  "nonT_coverage_only_no_nonT_expression_or_effects": true,
+  "new_native_diagnostics_not_read_yet": true
+}
