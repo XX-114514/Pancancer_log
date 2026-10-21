@@ -1,0 +1,21 @@
+{
+  "status": "FROZEN_IMPLEMENTATION_AND_CHECKS_BEFORE_SCIENCE",
+  "observation_UTC": "2026-10-21T18:38:43.479579+00:00",
+  "code_SHA256": {
+    "CM02_Danenberg_marked_spatial_v2.py": "11f6cf5570b728fff39e5821f1ac62c4b151fbeb3d3e876fe989493cad81a990",
+    "CM02_marked_spatial_core_v1.py": "c11396acb3e62d342551ad650fd03fe40708f36d7bb54bcc7ad5196c630f6734",
+    "CM02_marked_spatial_case_inference_v2.py": "d12ee97da4771e656299dedb53e9f094baf95123efe4cc1c4a1e661edfec44c6",
+    "Danenberg_bounded_member_transport_v1.py": "bcc512c940a1769fad944ffb6b9a2d376ab81652b0956e67fda87f1ec054b44c",
+    "qualify_Danenberg_native_cells_v1.py": "7ffdb5327ad9f06e1c9bb808e729be816e4f6d82b6599de9b41bbaf8662277d9",
+    "qualify_Danenberg_clinical_metadata_v1.py": "38706be4f9c2612ea94c3135ff665f82da520ac0b8991a259b0cd326ae608d0c"
+  },
+  "numerical_checks_passed": 13,
+  "extended_synthetic_calibration_SHA256": "b1783f1fc8502a7dfeccd5d409d460922e1f566ff9c0285185c4804b89907bfe",
+  "both_synthetic_mechanisms_qualified": true,
+  "no_source_effects_seen": true,
+  "cell_residual_P_retired": true,
+  "primary_family_unchanged": 12,
+  "BY12_sensitivity": true,
+  "all_individual_and_source_payload_RAM_only": true,
+  "source_worker_v2_not_started": true
+}

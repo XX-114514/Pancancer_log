@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_EXTENDED_SYNTHETIC_CALIBRATION_CASE_METHOD_QUALIFIED",
+  "started_UTC": "2026-10-21T18:33:00.438828+00:00",
+  "completed_UTC": "2026-10-21T18:38:02.494068+00:00",
+  "source_free_simulation_SHA256": "b1783f1fc8502a7dfeccd5d409d460922e1f566ff9c0285185c4804b89907bfe",
+  "all_initial_trials_retained_and_replayed": true,
+  "both_synthetic_mechanisms_qualified": true,
+  "cell_residual_strategy_not_used_for_P": true,
+  "synthetic_scope_not_actual_data_validity_proof": true,
+  "no_human_or_real_effect_inputs": true
+}
