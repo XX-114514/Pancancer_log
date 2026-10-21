@@ -1,0 +1,15 @@
+{
+  "status": "AUTHOR_MEASUREMENT_AND_FULL_QA_ACCEPTED_REAL_CONDITIONAL_FAMILY_RUNNING",
+  "observed_UTC": "2026-10-21T22:07:52.340054+00:00",
+  "measurement_terminal_SHA256": "3fbc8da427f10009f1e3bc5b05e7bb3e2a032516b026e87561a9a536096d00e0",
+  "question_SHA256": "5ed755a672e69331ed5c2646b74bc0effbc293ed416d7a4cd5944f6d2c5bfb4d",
+  "actual_statistics_contract_SHA256": "258366cef801d05850a2c1ef2b349acd784aa82a1b3eb29a3ff9baf08eaf646b",
+  "runtime_marker_proof_SHA256": "46bbe5e7298eae68f848d7e402295e08a7631d44d2a7c548cd4cc2f4b959d25d",
+  "source_selection_aggregate_review_SHA256": "8536f70c2f868f6c44bbcdac988afea5c456f2a0225918f8f43f23f159baaf10",
+  "source_parent_compatibility_bound_SHA256": "2c3e9787e7e8a88afac1f1226062e52c320e336855eaecd202eed4a0ad64d644",
+  "existing_spatial_unit_phase_metadata_SHA256": "22a6aea086d3a9ec4935c50e3eaf4785c61da71637cdf3efc9331a81417a394a",
+  "synthetic103assembly_four_complete_main_and_matched_reference_SHA256": "6a9f870f9aef99af5b77a47455b605ccbf9940fe66d35129b85854a2779385f8",
+  "all103full_synthetic_resampling_not_claimed": true,
+  "scientific_counts_effects_and_priorities_not_public": true,
+  "new_individual_data_or_matrices_not_saved": true
+}

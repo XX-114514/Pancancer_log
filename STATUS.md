@@ -1,3 +1,9 @@
+## 当前：LUAD全空间描述继续；作者谱系内marker条件临床新家族实际运行
+
+源级分母/父群参考诊断后，原全部作者亚型与父群质量在同QC实际接受，原旧RNA家族不替代。新marker–作者CD8细类全部机会/条件问题先固定，合成装配和新分支完整随机数值接受；真实单基因cache/病例键再核后，全部条件关联在RAM运行，完整终态/全实际随机R与工作null待。并行全11 LUAD原生空间描述仍同一活跃源worker运行，未重启或扩大既定27槽。科学值及分级私有，尚未验证预测增量/直接通讯；原CM02/身份保持，TableS1用户后补，public push此前受拒未重试。[临床run](runs/20261022_NSCLC_author_lineage_marker_family_v1.md)、[空间run](runs/20261022_CM02_LUAD_fixed_state_spatial_description_v1.md)。
+
+### 以下保留上一阶段观察
+
 ## 当前：固定状态空间入口核查完成，LUAD全11原生描述运行中
 
 前一NSCLC真实家族已闭合，当前转具体状态/组织关系。既有靶向assay gene轴与作者CODEX代码/访问边界实际核，科学缺口私有；代码marker存在不当表达可用。完整11已审公开LUAD作者cell-bin的文件SHA/测量实现/全27描述槽效果前固定，相同运行环境RAM H5AD/几何合成先接受；真实有界RAM流送及测量运行中，源终态/科学效果待，无新P/CI或临床拟合。原CM02/身份/旧家族保持，TableS1用户后补，公开push拒绝未重试。[run](runs/20261022_CM02_LUAD_fixed_state_spatial_description_v1.md)。
