@@ -42,6 +42,10 @@ class Tests(unittest.TestCase):
     def test_identity_change_rejected(self):
         r,c=reader(change=lambda x,i:x.headers.update(ETag=str(i)))
         with self.assertRaises(IntegrityError):r.read(8)
+    def test_missing_validators_explicit_not_invented(self):
+        def change(r,i):r.headers.pop('ETag',None)
+        r,c=reader(change=change);self.assertEqual(r.read(8),b'01234567')
+        self.assertEqual(r.identity,(None,None))
     def test_lengths_and_range_rejected(self):
         for change in [lambda x,i:setattr(x,'body',b''),lambda x,i:setattr(x,'body',b'12345'),
                        lambda x,i:x.headers.update({'Content-Range':'invalid'})]:

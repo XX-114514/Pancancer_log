@@ -106,7 +106,9 @@ class RangeFile:
                     if r.getheader('Content-Length') is not None and r.getheader('Content-Length')!=str(n):
                         raise IntegrityError('content_length_mismatch')
                     identity=(r.getheader('ETag'),r.getheader('Last-Modified'))
-                    if identity==(None,None):raise IntegrityError('missing_object_identity')
+                    # This fixed public endpoint can omit both validators.
+                    # Missing is recorded, never invented. The caller MUST
+                    # check pinned directories before/after and full member CRC.
                     if self.identity is None:self.identity=identity
                     elif self.identity!=identity:raise IntegrityError('object_identity_changed')
                     raw=r.read(n+1)

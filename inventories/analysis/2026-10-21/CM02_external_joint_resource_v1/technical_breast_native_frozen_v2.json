@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_NATIVE_CAPTURE_V2_AFTER_MISSING_RESPONSE_VALIDATOR_DIAGNOSTIC",
+  "observation_UTC": "2026-10-21T18:02:04.615803+00:00",
+  "source_record": 7324285,
+  "directory_SHA256": "17911e718220292268a8cddfac32fb4bfa6c021a615ead0e011464c4a3658814",
+  "code_SHA256": {
+    "scripts/Danenberg_bounded_member_transport_v1.py": "bcc512c940a1769fad944ffb6b9a2d376ab81652b0956e67fda87f1ec054b44c",
+    "scripts/qualify_Danenberg_native_cells_v1.py": "7ffdb5327ad9f06e1c9bb808e729be816e4f6d82b6599de9b41bbaf8662277d9",
+    "tests/test_Danenberg_native_qualification.py": "b5961c23e074c3c56180c90461986198ce70edc5148952b8234057eeb1de259e"
+  },
+  "synthetic_tests_passed": 9,
+  "requested_byte_budget": 805306368,
+  "total_seconds_budget": 7200,
+  "per_request_seconds_budget": 45,
+  "RAM_budget_bytes": 8589934592,
+  "no_individual_or_source_payload_written": true,
+  "no_full_archive_or_images": true,
+  "no_associations": true,
+  "response_validator_policy": "May be absent; tuple equality still enforced. Fixed directory before and after/full selected-member CRC; no full archive MD5 claim."
+}

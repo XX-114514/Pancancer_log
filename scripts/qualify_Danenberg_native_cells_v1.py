@@ -77,7 +77,7 @@ class HashReader(io.RawIOBase):
 
 def run(output):
     require(not output.exists(),'refuse_overwrite')
-    progress=output.with_name('private_native_progress_v1.json')
+    progress=output.with_name(output.stem+'_progress.json')
     started=datetime.now(timezone.utc).isoformat();last=[0]
     def checkpoint(values):
         if time.monotonic()-last[0]>10:
@@ -181,6 +181,7 @@ def run(output):
                 independent_count_reconciliation=True,peak_RSS_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
                 requested_bytes_including_retries=rf.requested,successful_range_bytes=rf.transferred,requests=rf.requests,
                 failure_classes=rf.failures,no_individual_payload_written=True,no_full_archive_MD5_claim=True,
+                response_identity_headers_available=rf.identity!=(None,None),
                 no_CM02_projection_or_pure_Treg_identity_claim=True,no_state_cutoffs_or_clinical_effects_computed=True,
                 CD45RO_isoform_unqualified_excluded=True,
                 producer_SHA256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
@@ -188,6 +189,7 @@ def run(output):
             progress.write_text(json.dumps(dict(status=result['status'],completed_UTC=result['completed_UTC']),indent=2)+'\n')
     except BaseException as error:
         progress.write_text(json.dumps(dict(status='FAILED_NATIVE_QUALIFICATION',error_class=type(error).__name__,
+            qualification_reason=str(error) if isinstance(error,IntegrityError) else 'EXTERNAL_ERROR_VALUES_WITHHELD',
             observation_UTC=datetime.now(timezone.utc).isoformat(),requested_bytes=rf.requested),indent=2)+'\n')
         raise
     finally:rf.close()
