@@ -1,0 +1,9 @@
+{
+  "status": "SOURCE_TRANSPORT_RUNNING_SCIENTIFIC_CHILD_NOT_YET_OBSERVED",
+  "observed_UTC": "2026-10-21T15:44:00.334176+00:00",
+  "source_bytes_two_original_SHAs_accepted": true,
+  "remote_receiver_observed": true,
+  "no_individual_or_learned_payload_files_saved": true,
+  "no_duplicate_scientific_start": true,
+  "own_launcher_SHA256": "8f547f29cf06391c1ff7abc3cd3136b683c4b35e3d9e61d7fcd1c01a19f5155a"
+}

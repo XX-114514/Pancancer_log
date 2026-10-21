@@ -1,0 +1,18 @@
+{
+  "status": "FROZEN_IMPLEMENTATION_BEFORE_REAL_COUNTS_SCORES_OR_EFFECTS",
+  "observed_UTC": "2026-10-21T15:40:45.469666+00:00",
+  "files": {
+    "RNA_programme_case_inputs_v1.py": "ed27ce8a49ea2159712fe16862e75760956565b14810f45914e90ca1e45d9816",
+    "RNA_programme_partial_rank_v1.py": "aa4d2d6311d72275f551a0f4272562e4ec1fff442df701aee5e3090842baaf16",
+    "analyze_CM02_RNA_multigene_in_RAM_v1.py": "97a5dcf1404e4efa317e9b18507ef57528e37368be6c10701ee7fd40f73f8b20",
+    "audit_RNA_programme_partial_rank_v1.py": "198ac85ab4c796a2cccbcc3a162986ced9df144364dfe1e31ec5ebebad9d8a21",
+    "project_original_CM02_activity_in_RAM_v1.py": "b3b330897bd7cec6e4b3f4773960e42b48126070dff21168f37045f4c4330338",
+    "run_CM02_RNA_from_RAM_sources_v1.py": "17dbff24e7ecf1e8746c8112dd3ac0ea19a5644da0c53a0d618606c86cd4c9e3",
+    "ucell_native_sparse_scores_v1.py": "2feb5a2be3725bbfb91d1197a91339a1e13ab667443bb9c7fb77dee2d3842499",
+    "qualify_CM02_RNA_programme_RAM_public_sources_v4.py": "2e4116fdc9b6e2d4013286fe27f5b448241af5d9b4b986cac5f986be3d817e0a"
+  },
+  "tests_passed": 9,
+  "all32_slots_exact_prior_design": true,
+  "prior_design_SHA256": "46143402415a1cad9efc18fe58fa2380111bd25d2876c5e642d80a2bf40772c6",
+  "no_new_real_RNA_effects_yet": true
+}
