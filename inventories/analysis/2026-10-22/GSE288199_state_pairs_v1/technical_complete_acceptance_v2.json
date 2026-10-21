@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE_NATIVE_INPUT_AND_FIXED_SOURCE_STATE_FAMILY_NUMERICS_SCIENTIFIC_REVIEW_AND_ACTUAL_FIGURES",
+  "actual_v2_started_UTC": "2026-10-21T19:23:28.839192+00:00",
+  "actual_v2_completed_UTC": "2026-10-21T19:32:58.306795+00:00",
+  "observed_UTC": "2026-10-21T19:36:00.289978+00:00",
+  "observed_UTC8": "2026-10-22T03:36:00.289978+08:00",
+  "source_terminal_SHA256": "3c2fd09f672f416814e924a774b01944b294a2717d45ae1f5eef8519be7ac093",
+  "private_complete_acceptance_SHA256": "bc384cbb94474b1237984e6dc729ed83049167fecb56963a7b6081126b74b44d",
+  "independent_R_real_designs_and_full_random_streams_SHA256": "b306f0c0bb0e27bde44771ea74c89653e446a916127b8ac7dea3a024a96338ba",
+  "independent_complete_family_adjustments_SHA256": "b6b1834fa89fc12eb49880225220698d17881de8a19a1a36744f982b86089683",
+  "actual_visual_acceptance_SHA256": "637d43e25a1e8c278270e8e55e45e3a580085e81252763ab4c6c496a61d42c94",
+  "private_scientific_priority_SHA256": "12844f9dd3b90baa6dc62691f9027d47cc87a94c7e1618c1c4e92f3f7e755c5b",
+  "audit_scope": "All primary and matched-reference real designs with their submitted full wild/bootstrap streams, full family BH/BY; sensitivity descriptions use validated kernel but not separately independent-R replayed",
+  "v1_resource_failure_preserved": true,
+  "v2_original_RAM_headroom_and_science_contract_unchanged": true,
+  "original_scientific_worker_confirmed_missing": true,
+  "new_source_payloads_individual_or_resampling_arrays_saved": false,
+  "scientific_values_names_and_figures_public": false,
+  "formal_identity_original_CM_or_closed_inference_changed": false,
+  "clinical_TableS1": "DEFERRED_USER_WILL_SUPPLY",
+  "public_push": "NOT_RETRIED_AFTER_PREVIOUS_DENIAL",
+  "overall_goal_complete": false,
+  "repository_validation": {
+    "exit": 0,
+    "errors": 0,
+    "existing_warnings": 1,
+    "log_SHA256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  }
+}
