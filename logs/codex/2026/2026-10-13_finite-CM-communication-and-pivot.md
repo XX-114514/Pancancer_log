@@ -2347,3 +2347,43 @@ v2生产03:14:53.108208 UTC真实结束，已核终态和源级SHA，转存时�
 完整仓库validate_repository退出0、0错误/1既有路径警告；全部来源转存/producer/独立audit终态SHA、实际v1失败/v2修正/audit三份launch与源码严格吻合，三脚本Python3.10 AST、inventory列宽及diff/隐私检查通过。验证日志SHA85c14096012e60bf04a8e0ef69943ae93c44fecf7110c4710a5b10c9adaee92b。真实分析证明只涵盖技术测量入口/完整来源范围；实际RNA捕获、临床/空间尚未接受，整体goal保持active。
 
 显式本轮14文件普通本地commit，保留原三份无关未跟踪文件。原公开push/新随访表具体许可仍待，无重试或绕过；云端待同步。下一安全动作是原矩阵header/预算和原生RNA完整测量合同，TableS1只影响新临床分支而非停止所有可行分析。建议commit: Qualify independent HNSCC data and RNA feature boundaries for CM02。
+
+
+## 2026-10-21T03:30:29.586746+00:00 UTC /2026-10-21T11:30:29.586746+08:00 UTC+8 独立来源RNA真实测量启动
+
+上一轮技术资格全范围执行/独立复算及来源结果接受，分类progress。本轮原生RNA效果前合同固定全材料/96来源位置、双QC/parent/捕获深度、人类RNA与其他GEX/抗体分母，先全部header及预算后全流。无临床/空间/状态对相关或新CM投影。per-cell/case/表达数组仅RAM，原CM/W/S/H/注释及所有旧家族保持。
+
+03:30:11.320591 UTC实际启动，03:30:29.586746同PID/startticks仍活跃；实际合成读入通过两排序、小chunk/零值、命名空间、full mmread与重复坐标门槛。原GSE真实全header census进行中，完整数值与科学接受待定。reader SHA c62ef83dbd9810e83a409e236cee7243f2189b113398704c461bd59ae02f678c，主SHA7b0ff86d68a5868d4213ad27a88e6e25b239a9837463b1cab6669b162e88b1c7。Source transport direct官方HTTPS，同URL有界重试；无矩阵落盘或barcode/VDJ/新临床读取。临床补表可选缺失文件问题未答，不影响结局盲测量继续；原公开push/新随访表拒绝无特定许可不重试。
+
+
+## 2026-10-21T04:02:31.879243+00:00 UTC /2026-10-21T12:02:31.879243+08:00 UTC+8 用户确认临床附件待补与测量继续
+
+用户明确回复：先继续，记录GSE288199 TableS1缺失，稍后补充。临床表状态设为待用户补充，不重复请求，不从图或来源编号补出病例药物/病理值；不因此暂停结局盲RNA测量或整体goal。NeoTRIP许可问题仍未答，不访问受限文件。
+
+全矩阵header/预算于03:34:11.743244 UTC通过；直连服务器完整读取较慢。相同官方1MiB片段服务器20.57s、本机2.25s，prefix SHA完全相同；SSH Unix临时通道保持官方TLS但26.06s，无速度收益，未切换科学作业，已请求关闭本任务通道，不更改既有代理或TCP端口。
+
+既有本机NumPy2.4.1/Python3.13.9与R4.5.2/Matrix1.7.4可用，未安装。最初R输出别名fixture生成仅4byte握手文件，未触真实表达，原失败代码/fixture保留；显式/dev标准管道在默认沙箱受阻，使用与实际任务相同执行权限后原代码合成通过。保持原计数/坐标/CRC门槛，独立reference改用每chunkR Matrix binary pipes，全部同scope、不输出个体数组。
+
+03:58:21.694252 UTC一份完整官方真实矩阵NumPy/R Matrix所有marker/命名空间/检测/线粒体逐块精确一致，完整字节/CRC/LastModified/prefix通过，约5.16s；未审阅状态或疗效，原raw传输/header/parser方法AST与原reader一致。0400UTC按原PID/startticks受控停止旧v1，保留全部历史；当时5/60已校验，未接受完整结果。此次停止基于验证过的性能替代，不因观察超时判失败。旧作业停止证明已转存，原完整header摘要固定。
+
+04:01:12.655285 UTC本机private RAM全量v3真实启动，先重放所有60 header并要求与原摘要严格相同，再计数；原96机会、六状态、QC和全部材料不变。并发2，R Matrix逐块reference与全部cell scalar规则；数据和病例数组仅RAM，最后回传来源汇总。新任务实际终态仍待。现有临床/空间旧家族、CM02/W/S/H和注释保持，整体goal active，原受拒公开push/新随访表不重试。
+
+
+## 2026-10-21T04:12:38.248152+00:00 UTC /2026-10-21T12:12:38.248152+08:00 UTC+8 原生RNA全材料与完整来源测量接受
+
+本机实际v3于2026-10-21T04:09:44.092091+00:00 UTC结束，全部官方材料完整流/gzipCRC/长度/LastModified/header/nnz与全部chunk跨语言数值核对通过；实际代码副本和终态清单逐SHA相同。source auditor v1全部96位置、父类/交叠/marker/深度分区与QC子集和小分布规则通过，原生RNA质量与全部预设来源范围已私有审阅。逐case分位仅核支持与边界，不冒称独立逐case数组重放；本轮没有新的状态对/临床/空间效果检验或原CM投影，不新增正式身份。
+
+原v1服务器慢速作业按同PID/startticks受控停止，旧部分产物保留；SSH Unix relay无速度增益、科学main v2未启动。实际本机main v3/reader v4/R reference v2完成，所有版本/fixture失败历史保留。已确认本任务临时relay及实际RNA worker均结束，原任务和代理配置未改。
+
+用户确认临床Table S1稍后补充，当前为deferred，不重复请求。旧mmc2输入属于原Cha/GSE286827，并非当前Li/GSE288199；临床材料/药物/病理桥和联合空间仍未接受。下一先根据完整测量支持固定全部R×E来源状态问题与捕获/两端丰度背景，不能由可测直接声称稳定互作。具体观察数量/状态比例/捕获结果留私有；公共仅技术轨迹、通用代码和SHA。
+
+自动审批新拒绝将本轮非公开来源汇总/科学审阅写回具体Project_v5目录，理由是该批派生结果向该目的地出站缺明确授权；拒绝命令未执行，未重试或绕过，已询问只含来源汇总/通用代码/技术证明的具体目录许可。本机完成验收及日志整理继续。此服务器回传问题与原公共push/NSCLC随访表拒绝分别记录；原两项仍无特定新许可，不重试。
+
+技术验收：[receipt](../../../inventories/analysis/2026-10-21/GSE288199_native_capture_v1/technical_complete_acceptance.json)，SHA f11767f9e3f7ae6f6cbc482ce3d4b089f4007d80b5daef36b479f38a7e8ec982。执行与数值和完整测量范围接受；状态组合、空间组织与同终点临床增量尚未完成，整体goal active。本轮分类progress，建议commit: Measure independent HNSCC native RNA state capture and defer clinical bridge。
+
+
+## 2026-10-21T04:14:00.664235+00:00 UTC /2026-10-21T12:14:00.664235+08:00 UTC+8 本轮完整验证
+
+validate_repository退出0，0错误/1既有路径警告；最终验证日志SHA85c14096012e60bf04a8e0ef69943ae93c44fecf7110c4710a5b10c9adaee92b。全部10份新增脚本Python3.10 AST和通用代码隐私扫描、完整producer终态及代码副本SHA、auditor绑定和全部inventory列宽/local链接通过；git diff已逐项检查。完整RNA与来源测量接受，非新的互作/临床结果。显式本轮21文件普通本地commit，原三份无关未跟踪文件保留；公共push及新服务器具体目录回传各待特定许可，均不重试或绕过。整体goal active，本轮progress。
+
+Staged diff补核：实际执行main v3末尾有一个空行，默认cached --check报告该EOF格式警告；为保留实际运行源码字节/SHA不改写历史版本。仅忽略blank-at-eof项的临时命令检查其余whitespace，不能将默认检查写为零警告。其余源码/终态绑定保持。

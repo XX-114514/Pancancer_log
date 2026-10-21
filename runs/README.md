@@ -112,3 +112,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 [CM02分阶段活动与实测状态对应](20261021_CM02_phase_activity_state_correspondence_v1.md)：先纠正原真正基线投影已完成的历史，再补结局盲pre/post与固定观察状态的来源描述；实际运行/验收状态见run。
 
 [GSE288199独立HNSCC测量资格](20261021_GSE288199_external_CM02_measurement_qualification_v1.md)：官方双格式/三模态/全部基因轴实际核查，XML格式修正保留历史；临床/空间文件和患者桥另待。
+
+[GSE288199全部材料原生RNA状态捕获](20261021_GSE288199_native_state_capture_v1.md)：先完整header/预算，固定全96来源机会，实际读取/验收状态见run。

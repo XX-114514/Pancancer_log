@@ -1,3 +1,11 @@
+## 2026-10-21T04:12:38.248152+00:00 UTC /2026-10-21T12:12:38.248152+08:00 UTC+8 独立HNSCC原生RNA测量完整接受
+
+[run](runs/20261021_GSE288199_native_state_capture_v1.md)及[技术验收](inventories/analysis/2026-10-21/GSE288199_native_capture_v1/technical_complete_acceptance.json)：全部官方材料完整表达流、跨语言数值与完整来源范围审核完成。临床TableS1用户稍后补，下一固定来源状态组合和捕获/两端丰度检查；尚无新状态对、临床/空间检验或正式身份。原CM02优先，goal active。本机结果已保存，服务器具体目录回传新遭自动审批拒绝、许可待；公共push仍待。
+
+## 2026-10-21T04:02:31.879243+00:00 UTC /2026-10-21T12:02:31.879243+08:00 UTC+8 全矩阵RNA测量已切换验证过的本地RAM路径
+
+原完整header/预算已通过；本机真实矩阵跨语言数值校验通过后受控停止旧慢速作业，全材料/原规则的新测量已实际启动，完整结果待。用户确认临床TableS1稍后补充，当前记录缺失并继续RNA；临床/空间尚未接受。[run](runs/20261021_GSE288199_native_state_capture_v1.md)。原CM02优先、goal active，公共push待。
+
 ## 2026-10-21T03:22:20.452180+00:00 UTC /2026-10-21T11:22:20.452180+08:00 UTC+8 独立HNSCC来源测量资格完整接受
 
 GSE288199官方元数据/完整feature轴与全部独立负载复算及私有范围审阅已接受。下一原生RNA需分人类RNA/其他特征和分选范围；实际表达、患者临床桥和空间联合资料尚待。[run](runs/20261021_GSE288199_external_CM02_measurement_qualification_v1.md)。保留原CM02优先及旧家族，整体goal active，公共push待。
