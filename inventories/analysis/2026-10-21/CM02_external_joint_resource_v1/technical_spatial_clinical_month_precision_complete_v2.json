@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_AUTHOR_MONTH_PRECISION_METADATA_QUALIFICATION_ACCEPTED_NO_EFFECTS",
+  "completed_UTC": "2026-10-21T17:27:42.740725+00:00",
+  "observed_UTC": "2026-10-21T17:32:16.166539+00:00",
+  "observed_UTC_plus8": "2026-10-22T01:32:16.166539+08:00",
+  "synthetic_checks_passed": 10,
+  "author_commit": "3cb375d195aeb6312481a2800a73932a5c759e53",
+  "public_date_format": "01-%b-20%y",
+  "daily_precision_and_same_day_assumptions_withdrawn": true,
+  "all_individual_values_RAM_only": true,
+  "no_new_clinical_association_or_large_object": true,
+  "no_hidden_days_or_century_inferred": true,
+  "source_summaries_SHA256": {
+    "private_Hoch_exact_clinical_code_receipt_v1.json": "beb8a54a3ce4d06e7cf2a3e3b9c38c1b7232c4164a391993d1c6f9ec02512a2a",
+    "private_Hoch_block_landmark_scope_v1.json": "862b6ce600fcca59d3ccd5824072ff86bde7e9277f27200e56bb5dbd52cca71c",
+    "private_Hoch_stored_time_origins_v1.json": "c82bd06a04b83792879f14d3fdb0794ad32ef93687f6d6649c8e95af7b0831be",
+    "private_Hoch_monthly_clinical_scope_v2.json": "963776016f9a6b61f3424186798d088ff68a99b3e14a1abae748556fe356e722",
+    "private_month_precision_acceptance_v2.json": "68cba2e570b50c7901c52cd7f0b5f8f8a3bf0aa3a5e5e6f464f45e29e50bc4b2"
+  },
+  "scientific_values_private": true,
+  "goal_active": true,
+  "public_push_previously_denied_not_retried": true
+}

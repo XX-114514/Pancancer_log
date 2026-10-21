@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_BEFORE_NEW_BLOCK_LANDMARK_METADATA_QUALIFICATION",
+  "created_UTC": "2026-10-21T17:21:11.603546+00:00",
+  "code_SHA256": "49ee2948cfc0642af33f2408b152d195aaf3b6bfed8111f2faef9b88d96368d8",
+  "author_code_blobs": [
+    {
+      "public_code_path": "analysis/00_prepare_clinical_dat.rmd",
+      "git_blob_SHA1": "6e7a4789d7ad8cf62af670df636bcb5a87cb31de",
+      "SHA256": "c368897e41a883d0f426838214f1f8a1e09b45e5ff84e53d8518dcf15ed9e91e",
+      "bytes": 8669
+    },
+    {
+      "public_code_path": "analysis/Table_ClinicalData.rmd",
+      "git_blob_SHA1": "ae9d6fcd41ac75bc7e8e12b48c86af3531548515",
+      "SHA256": "18525f71611758df4dd9ccb74af789005353f943ab152a5e37e8cf18606ef803",
+      "bytes": 6857
+    }
+  ],
+  "clinical_member_SHA256": "ac4a02e4d0e23504aa980b21585de74c4d7390d2e6e0ec2399303c5c29ca5b25",
+  "clinical_member_MAX_bytes": 262144,
+  "small_metadata_only": true,
+  "individual_records_RAM_only": true,
+  "source_summary_only": true,
+  "synthetic_checks_passed": 5,
+  "earliest_tissue_selected_before_followup_eligibility": true,
+  "no_cell_or_clinical_association_run": true,
+  "original_strict_baseline_scope_not_replaced": true,
+  "scientific_results_private": true
+}

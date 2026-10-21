@@ -1258,3 +1258,6 @@ PREP-01/03恢复：用户允许临时卷并要求最终Zarr。ZARR-NEW-01：新�
 
 
 - CM02同病例共同免疫背景有限敏感性已完成并接受，完整来源报告/图及支持诊断私有；后续独立队列/状态资格待推进，不新增P或临床检验。见[run](runs/20261022_CM02_shared_immune_background_v1.md)。
+
+
+- 独立Hoch时间语义已核为月精度、报告时长按月区间相容；复杂临床增量不由metadata机会或论文N保证。优先更大空间队列标记/身份/临床键资格，GSE288199表待补；见[run](runs/20261022_CM02_spatial_clinical_bridge_v1.md)。

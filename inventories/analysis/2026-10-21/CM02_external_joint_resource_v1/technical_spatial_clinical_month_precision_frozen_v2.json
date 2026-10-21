@@ -1,0 +1,26 @@
+{
+  "status": "MONTH_PRECISION_CORRECTION_FROZEN_BEFORE_NEW_DIAGNOSTIC",
+  "created_UTC": "2026-10-21T17:27:33.471078+00:00",
+  "code_SHA256": "0c5a7b2ec201a7f9c0e4d63757da718248298a5c4dc86bbfc58792f19d489c11",
+  "public_author_export_format": "01-%b-20%y",
+  "public_code_format_lines": [
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178
+  ],
+  "author_code_SHA256": "c368897e41a883d0f426838214f1f8a1e09b45e5ff84e53d8518dcf15ed9e91e",
+  "stored_time_computed_before_export": true,
+  "months_as_intervals_not_exact_days": true,
+  "no_hidden_days_or_century_reconstruction": true,
+  "no_clinical_association_or_unit_repair": true,
+  "synthetic_checks_passed": 3
+}

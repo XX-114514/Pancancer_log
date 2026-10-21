@@ -1,0 +1,35 @@
+{
+  "status": "EXACT_PUBLIC_COMMIT_CODE_TREE_ACCEPTED_NO_TABLE_REQUEST",
+  "observed_UTC": "2026-10-21T17:15:55.415259+00:00",
+  "commit": "3cb375d195aeb6312481a2800a73932a5c759e53",
+  "tree_response_SHA256": "e61d9d002badfd3db5942093887523cf0aa327b93630cdcae41a19719e2fca55",
+  "code_candidates": [
+    {
+      "path": "analysis/00_prepare_clinical_dat.rmd",
+      "git_blob_SHA1": "6e7a4789d7ad8cf62af670df636bcb5a87cb31de",
+      "bytes": 8669
+    },
+    {
+      "path": "analysis/01_Protein_read_data.rmd",
+      "git_blob_SHA1": "24688091b26e848b16584abde810ca0b883da6f6",
+      "bytes": 6425
+    },
+    {
+      "path": "analysis/01_RNA_read_data.rmd",
+      "git_blob_SHA1": "aa533f4fc954dbc55664e66e9ecfe8de1d141ab5",
+      "bytes": 4972
+    },
+    {
+      "path": "analysis/Table_ClinicalData.rmd",
+      "git_blob_SHA1": "ae9d6fcd41ac75bc7e8e12b48c86af3531548515",
+      "bytes": 6857
+    },
+    {
+      "path": "code/helper_functions/read_Data.R",
+      "git_blob_SHA1": "b3ef11d92b05462343db7e5ed76364ea79a07a9c",
+      "bytes": 2338
+    }
+  ],
+  "scientific_values_not_public": true,
+  "clinical_tables_not_requested": true
+}
