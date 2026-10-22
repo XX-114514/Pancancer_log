@@ -1,0 +1,19 @@
+{
+  "kind": "MEASUREMENT_UNIT_PHASE002_TECHNICAL_START_NO_EFFECTS",
+  "observed_UTC": "2026-10-22T04:09:28.551159+00:00",
+  "actual_published_UTC": "2026-10-22T04:07:18.016207+00:00",
+  "runtime_R": "4.3.3",
+  "dependencies_SHA256": {
+    "profile_LN_marker_assay_RAM_v2.R": "c56bde541ca0794c61a76f04e34132e4dedae8ebcbe43e6ad6adf2ecef1e49c2",
+    "qualify_LN_unit_geometry_RAM_v1.R": "9b2123ec7608207ea08ab194798f38912a23b2b6a3f850e1953eaf882ec98223",
+    "qualify_LN_native_measurement_units_RAM_v1.R": "6e1ad7146fc1406b9054f43aa4d7ecee80130aa5757cf30804a977af18c20100"
+  },
+  "stage_code_SHA256": "5458ae1eb5ed70899191f605b0df952e2e776840e14941d65ca886a214ef5abf",
+  "frozen_contract_SHA256": "0be19ba6cfa81d05f794978ffd08de015302d8ee5964feddd05a68d50600c967",
+  "synthetic_acceptance_SHA256": "47d699f315e17d1f8b40d3d1e2a0547d94ce230531116dd7207c5843a9880912",
+  "same_exact_native_R_child_verified_before_start": true,
+  "no_individual_arrays_uploaded_or_saved": true,
+  "actual_measurement_results_pending": true,
+  "no_state_thresholds_or_effects_computed": true,
+  "scientific_counts_panel_maps_and_schema_configuration_private": true
+}

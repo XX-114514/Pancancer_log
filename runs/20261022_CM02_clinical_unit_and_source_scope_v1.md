@@ -257,3 +257,17 @@ v1源纯合成事件2026-10-22T02:54:22.731807Z UTC /2026-10-22T10:54:22.731807+
 本节点实质progress：真实完整输入/结构接受，实际物理面板与候选层级已明确，下一方案改为按可测通道核操作状态及原/修正患者分区，不把不可测RNA状态认作精确复现。两assay变换、数值质量、作者类型值、临床类别/嵌套及坐标单位仍未接受，尚未新效果；第2阶段待另冻，不读组成派生niche作独立真值。原CM02/身份/Zarr/全部闭家族保持，临床仅资格/RFS入口资料提醒及另一TableS1后补，public push原拒绝未重试。三个无关未跟踪文件保持；完整仓库/隐私diff及普通本地commit待，goal active。建议commit: Accept native spatial input and qualify schema before state measurements。
 
 归档检查观察2026-10-22T04:02:41Z UTC /2026-10-22T12:02:41+08:00 UTC+8：完整仓库实际exit0、0errors/1既有warning，新增R源码19cb3597…与冻结/纯合成/实际阶段及技术JSON SHA一致，完整隐私diff/git diff --check通过。04:02:38.307144Z精确源父/R子进程及实时阶段1心跳再核live，未派发phase002/未release，原生对象留RAM；当前并行已有文档提交9379fa9与三个无关未跟踪文件保持。仅普通本地commit，public push原拒绝未重试，goal active。
+
+
+### 原生测量/单位整合纯合成接受后第2阶段实际启动
+
+观察2026-10-22T04:09:28.551159+00:00 UTC /2026-10-22T12:09:28.551159+08:00 UTC+8。新增通用qualify_LN_native_measurement_units_RAM_v1.R，两个已验数值/几何核心SHA保持；实际物理panel/row map及明确字段配置只私有。源R4.3.3整合纯合成于2026-10-22T04:06:09Z UTC /12:06:09+08:00 exit0，固定变换真值/错误候选、手工嵌套/缺组件/拆分、独立图像内完整距离矩阵及无标识输出均接受。编码前缺组件过滤在真实前完成，不将缺组件编码为可计单位；具体方法见本轮方法节。
+
+完整phase002源码/依赖与参数先冻结，2026-10-22T04:07:18.016207Z UTC /12:07:18.016207+08:00守卫同一精确源父/R子进程、读取程序/完整输入和阶段1心跳后发布，meta最后原子link；只传通用代码和物理schema配置，没有个体或数组上行。命令形态仍既有只读SSH代理和源Python/R stdin，未改环境/网络。04:08:26.152762Z UTC /12:08:26.152762+08:00只读核同一R仍live、开始标记存在、结果尚待，不因心跳在计算期间未更新推退出。结果/独立患者语义和科学状态/空间效果仍未接受。源码、冻结与合成SHA见[技术启动](../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_measurement_units_phase002_started_v1.json)。
+
+当前goal turn为progress：新增实际测量准入实现/完整合成及源原生第2阶段启动；原CM02/身份/Zarr/闭家族、临床仅资格/RFS入口提醒与另一TableS1后补保持，公共push原拒绝不重试。完整仓库/隐私diff与普通本地归档待，goal active。建议commit: Qualify native protein measurements and tissue units before spatial effects。
+
+
+第2阶段实际完成事件2026-10-22T04:09:07Z UTC /12:09:07+08:00；取证2026-10-22T04:10:02.348744Z UTC /12:10:02.348744+08:00同一精确R仍live，阶段2完成/当前心跳已核，源对象未释放。观察2026-10-22T04:13:36.909327+00:00 UTC /2026-10-22T12:13:36.909327+08:00 UTC+8，原始来源汇总的粗/细类型总量、阶段/站位及几何分母与总量相符；代码依赖SHA和冻结合同一致。该核对不当独立原始数组重读。具体患者/节点/图像数量、变换误差、测量状态与类型字段值仅私有，不据资格通过升级生物学结论。实际结果使下一动作成为父身份标志和未审阶段编码资格；全零通道不能参与操作状态，来源编号不自动变成正式T身份。源R还剩原第3控制阶段，后续若需增加范围必须事前显式有界合同，保留原时限/隐私，不暗改原上限或重复下载同对象。尚无新空间或临床效果；目标active。见[实际技术收据](../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_measurement_units_phase002_accepted_v1.json)。
+
+归档核查观察2026-10-22T04:14:04Z UTC /12:14:04+08:00：完整仓库实际exit0、0errors/1既有warning；新增通用R/依赖/冻结合同及合成/实际收据SHA、源汇总总量、两技术JSON和完整隐私diff/git diff --check接受。原工具句柄仍live，原生未release，下一资格/效果仍待。下一范围草案仅私有、尚未发控制或修改原3阶段上限；普通本地commit，public push原拒绝未重试，三个无关未跟踪文件保持。

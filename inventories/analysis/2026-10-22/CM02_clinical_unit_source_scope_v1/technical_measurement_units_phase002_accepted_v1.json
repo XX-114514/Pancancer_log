@@ -1,0 +1,19 @@
+{
+  "kind": "ACTUAL_NATIVE_MEASUREMENT_UNIT_PHASE002_TECHNICAL_ACCEPTANCE",
+  "observed_UTC": "2026-10-22T04:13:36.909327+00:00",
+  "source_completed_UTC": "2026-10-22 04:09:07 UTC",
+  "stage_code_SHA256": "5458ae1eb5ed70899191f605b0df952e2e776840e14941d65ca886a214ef5abf",
+  "dependency_code_SHA256": {
+    "profile_LN_marker_assay_RAM_v2.R": "c56bde541ca0794c61a76f04e34132e4dedae8ebcbe43e6ad6adf2ecef1e49c2",
+    "qualify_LN_unit_geometry_RAM_v1.R": "9b2123ec7608207ea08ab194798f38912a23b2b6a3f850e1953eaf882ec98223",
+    "qualify_LN_native_measurement_units_RAM_v1.R": "6e1ad7146fc1406b9054f43aa4d7ecee80130aa5757cf30804a977af18c20100"
+  },
+  "source_acceptance_SHA256": "da742502a5d9b5aab5436166439181877cb0134cc842d66efd22799a721a3388",
+  "frozen_contract_SHA256": "0be19ba6cfa81d05f794978ffd08de015302d8ee5964feddd05a68d50600c967",
+  "actual_control_phase_completed": 2,
+  "no_scientific_counts_marker_profiles_classification_or_effects_in_public_receipt": true,
+  "aggregate_denominators_reconciled": true,
+  "not_independent_raw_replay": true,
+  "source_object_still_held_RAM_only": true,
+  "no_state_thresholds_or_spatial_or_clinical_effects_accepted": true
+}
