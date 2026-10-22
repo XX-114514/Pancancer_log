@@ -1,0 +1,21 @@
+{
+  "status": "SUFFIX_RECOVERY_WHOLE_INPUT_ACCEPTED_FROZEN_NATIVE_PRODUCTION_ACTUALLY_STARTED_RESULT_PENDING",
+  "observed_UTC": "2026-10-22T08:48:55.234409+00:00",
+  "observed_UTC_plus_8": "2026-10-22T16:48:55.234409+08:00",
+  "source_observed_UTC": "2026-10-22T08:47:07.710050+00:00",
+  "source_observed_UTC_plus_8": "2026-10-22T16:47:07.710050+08:00",
+  "whole_input_event_UTC": "2026-10-22T08:45:41.963374+00:00",
+  "whole_input_event_UTC_plus_8": "2026-10-22T16:45:41.963374+08:00",
+  "frozen_state_replay_and_production_event_UTC": "2026-10-22T08:46:25+00:00",
+  "frozen_state_replay_and_production_event_UTC_plus_8": "2026-10-22T16:46:25+08:00",
+  "source_object_SHA256": "11d1b810f7c1f2e9ade2c174fdec0a8c2cebd1c6b7cdb158b2e18a9c4fbdcdfd",
+  "native_R_SHA256": "17acaacaf3abb7f2f1db4f00771be385f0817e691a1cbb42ecd31550ff229c91",
+  "frozen_family_contract_SHA256": "55d962f73ef70d969ca82c2c33e5954c0e1296ea2ab3276876daa3654f09effe",
+  "private_acceptance_receipt_SHA256": "00a4100cff768a956e5da534cca092b1ec56b31c2a598b1b525b5a3eb306cfef",
+  "independent_snapshot_SHA256": "9aba9c3627e3bbbd301b821cf743cf105b86c27e9b887e51bc6dd753b7f7411d",
+  "whole_input_length_MD5_SHA256_match": true,
+  "frozen_state_replay_accepted": true,
+  "exact_parent_and_active_R_child_verified": true,
+  "full_production_audit_and_exit_pending": true,
+  "scope": "technical milestones only; no source scientific counts/effects or individual arrays; previous failed execution preserved"
+}

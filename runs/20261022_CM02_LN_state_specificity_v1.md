@@ -100,3 +100,13 @@ Qureshi2011及Maier2020的PubMed页面只返页脚，官方NCBI efetch公开摘�
 
 
 归档检查观察2026-10-22T06:39:16.908497+00:00 UTC /2026-10-22T14:39:16.908497+08:00 UTC+8：最终完整仓库检查实际exit0、0errors/1既有warning；两Python AST、合成完整主槽/BH/BY及缺失/方向/错误覆盖保护、第二版三图视觉和全部隐私diff接受，统计R拼接SHA保持。真实源输入仍live/增长，完整校验/原生/科学终态待，正式图未生成。四个无关未跟踪文件保留，仅通用代码/方法/技术轨迹普通本地提交；公共push此前拒绝未重试，云端待同步，整体goal active。建议commit: Prepare complete spatial evidence plots and preserve negative associations。
+
+
+## 2026-10-22T08:48:55.234409+00:00 UTC /2026-10-22T16:48:55.234409+08:00 UTC+8 v2完整输入及固定状态复核接受，真实检验已启动
+
+前一goal turn为同一live句柄的verified wait；本轮继续同一源而未重启。完整输入事件2026-10-22T08:45:41.963374+00:00 UTC /2026-10-22T16:45:41.963374+08:00 UTC+8，实际整对象长度/官方MD5/前次接受SHA均一致；原生R代码SHA与冻结代码完全相等。固定状态原生重放及另一assay/独立rank的逐细胞成员复核于2026-10-22T08:46:25+00:00 UTC /2026-10-22T16:46:25+08:00 UTC+8接受，同一时刻启动既定二次检验。只读源观察2026-10-22T08:47:07.710050+00:00 UTC /2026-10-22T16:47:07.710050+08:00 UTC+8确认精确父进程及其R子进程活跃，当前生产/完整审计/实际退出仍待，不提前审阅部分效果。
+
+当前证明本次传输恢复达到完整输入及原状态一致性，不证明完整统计、功能身份或生物学发现；旧v1短读失败保留。统计R/状态/15主槽和随机种子完全未改，原CM02/身份/Zarr/旧家族保持。原生/个体/图/病例数组只RAM，科学结果仅私有；RFS入口提醒及另一TableS1后补不变。技术依据见[收据](../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_secondary_full_input_native_start_v2.json)。完整仓库/人工隐私diff及普通本地提交待，public push此前拒绝不重试，整体goal active。
+
+
+输入/原生启动归档检查观察2026-10-22T08:50:18.905614+00:00 UTC /2026-10-22T16:50:18.905614+08:00 UTC+8：完整仓库实际exit0、0errors/1既有warning，整对象/原生代码和固定状态复核收据、不可变源汇总快照及全部隐私diff/git diff --check接受。同一实际任务继续，完整生产/独立全审计与退出待；没有正式效果判读或图。四个无关文件保持，普通本地提交技术轨迹，公有push此前拒绝不重试，云端待同步，goal active。建议commit: Accept verified full input and start frozen spatial specificity production。
