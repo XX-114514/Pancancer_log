@@ -1,0 +1,28 @@
+{
+  "kind": "ACTUAL_SECONDARY_INPUT_TRUNCATION_AND_EXACT_EXIT_VERIFIED",
+  "observed_UTC": "2026-10-22T05:58:01.051983+00:00",
+  "failure_event_UTC": "2026-10-22T05:52:08.101499+00:00",
+  "source_terminal_observed_UTC": "2026-10-22T05:52:11.149215+00:00",
+  "source_exit_code": 2,
+  "local_tool_exit_code": 1,
+  "range_failure_reason": "RANGE_LENGTH_SHORT",
+  "expected_range_bytes": 1048576,
+  "received_last_attempt_bytes": 1018904,
+  "maximum_attempts_exhausted": 4,
+  "range_elapsed_seconds": 206.84936403483152,
+  "exact_parent_absent_observed_UTC": "2026-10-22T05:52:44.237784+00:00",
+  "native_stage_started": false,
+  "statistical_results_produced": false,
+  "partial_individual_payload_not_persisted": true,
+  "scientific_family_and_R_definitions_unchanged": true,
+  "new_verified_suffix_transport_preparation_only": true,
+  "new_actual_recovery_started": false,
+  "public_push_not_retried": true,
+  "repository_validation": {
+    "observed_UTC": "2026-10-22T06:04:17.817037+00:00",
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "manual_privacy_code_source_and_frozen_SHA_review_passed": true
+  }
+}

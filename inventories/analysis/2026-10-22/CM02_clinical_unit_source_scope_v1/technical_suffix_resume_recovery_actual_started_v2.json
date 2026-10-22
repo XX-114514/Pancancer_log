@@ -1,0 +1,41 @@
+{
+  "kind": "VERIFIED_SUFFIX_CONTINUATION_NATIVE_WORKFLOW_RECOVERY_ACTUAL_START_V2",
+  "observed_UTC": "2026-10-22T06:02:28.080254+00:00",
+  "actual_started_UTC": "2026-10-22T06:00:27.095692+00:00",
+  "same_exact_parent_live_observed_UTC": "2026-10-22T06:01:28.388459+00:00",
+  "transport_amendment_SHA256": "55d962f73ef70d969ca82c2c33e5954c0e1296ea2ab3276876daa3654f09effe",
+  "execution_contract_SHA256": "e7cc99f512dc738ea4ee8541347967733907676190dd4b18f5412c01408f6d01",
+  "statistical_R_code_SHA256_unchanged": "17acaacaf3abb7f2f1db4f00771be385f0817e691a1cbb42ecd31550ff229c91",
+  "code_SHA256": {
+    "run_LN_regulatory_specificity_RAM_v2.py": "a8a312a571342f8a797db7a89e78c068d7687bd2bc96e3c577aebcb7c3f0032f",
+    "fetch_public_RDS_ranges_resume_RAM_v1.py": "cbb841566c6f7ec2bd24f76e1e60bd67bc93ee6dff452d956cceb889ee11686e",
+    "check_public_RDS_suffix_resume_RAM_v1.py": "7c06116a3727bff446fb603568df005bdb494758403301502c3091e5a86c72bf",
+    "check_LN_specificity_native_workflow_RAM_v2.py": "4a32e3f68cafda2962720c1f30a099938e261186769e65146a4e7759fb2c6bf5",
+    "qualify_public_RDS_suffix_protocol_RAM_v1.py": "0ad422ce884b497cbc15b7d8da4578e67f4dccc81368d054a4ebd81215885384"
+  },
+  "protocol_source_synthetic_SHA256": "49a99cacd72f4f7aea453cbf5607d5d14d0c0a7b91649d93779b91b85985b490",
+  "full_native_synthetic_SHA256": "27dff8c5073cdacb1c2ff0fae58eaedf6d6311e09908bd4c5c88335678bace8b",
+  "official_tiny_protocol_SHA256": "bef0b8aa009b0d7cb1ab8084164e3b84c2e1f7aa3346095ac8d6e6d4c3bf726c",
+  "actual_source_protocol_and_native_synthetic_exit_codes": [
+    0,
+    0
+  ],
+  "official_exact_tiny_ranges_passed": true,
+  "official_strong_ETag_available": false,
+  "official_IfMatch_support_not_tested_without_strong_ETag": true,
+  "logical_reassembly_headers_not_single_HTTP_response": true,
+  "complete_MD5_SHA_and_all_scientific_definitions_preserved": true,
+  "planned_primary_tests": 15,
+  "old_failed_attempt_and_exact_exit_preserved": true,
+  "old_partial_payload_not_reused": true,
+  "raw_objects_and_individual_arrays_RAM_only": true,
+  "actual_complete_input_and_scientific_results_pending": true,
+  "public_push_not_retried": true,
+  "repository_validation": {
+    "observed_UTC": "2026-10-22T06:04:17.817037+00:00",
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "manual_privacy_code_source_and_frozen_SHA_review_passed": true
+  }
+}
