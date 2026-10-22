@@ -1,0 +1,27 @@
+{
+  "kind": "PRIMARY_ABSTRACT_AND_POSSIBLE_APC_AXIS_SCOPE_TECHNICAL_REVIEW",
+  "observed_UTC": "2026-10-22T05:33:40.152899+00:00",
+  "NCBI_efetch_actual_observed_UTC": "2026-10-22T05:31:57.465063+00:00",
+  "official_abstract_response_SHA256": "1b651f03071cff1082d900faf215a16ba3e6c769baca6d59233a35f5fbc8a24d",
+  "primary_PMIDs": [
+    "21474713",
+    "11015443",
+    "32269339",
+    "38503922"
+  ],
+  "existing_aggregate_eligibility_review_completed": true,
+  "specific_source_marker_qualification_results_private": true,
+  "no_new_native_individual_or_clinical_records_read": true,
+  "new_axis_effects_run": false,
+  "current_secondary_family_and_code_unchanged": true,
+  "publisher_authentication_and_PMC_captcha_not_bypassed": true,
+  "public_push_not_retried": true,
+  "repository_validation": {
+    "observed_UTC": "2026-10-22T05:34:53.455195+00:00",
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "manual_primary_scope_and_privacy_diff_review_passed": true,
+    "exact_source_worker_live_observed_UTC": "2026-10-22T05:34:14.874270+00:00"
+  }
+}

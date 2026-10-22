@@ -46,3 +46,17 @@
 
 
 归档检查观察2026-10-22T05:27:21.825217+00:00 UTC /2026-10-22T13:27:21.825217+08:00 UTC+8：完整仓库实际exit0、0errors/1既有warning；通用判读器、手工合成/缺失及误判保护、代码/收据SHA、完整脱敏diff/git diff --check接受。源精确父进程live取证2026-10-22T05:26:45.239929+00:00 UTC，当前只有输入进展，未新真实统计或解释输出；不改运行合同/状态。四个无关未跟踪文件保留，仅普通本地commit，public push此前拒绝不重试，云端待同步；goal active。建议commit: Guard source-level interpretation against missing coverage and unmatched comparisons。
+
+
+### 后续APC方向的原始摘要与既有测量资格审阅
+
+观察2026-10-22T05:33:40.152899+00:00 UTC /2026-10-22T13:33:40.152899+08:00 UTC+8。前一goal turn为同一活跃句柄的verified wait；本轮继续核同一读取，并独立审阅公开原始摘要和已接受的源聚合测量摘要，没有再读原生个体/临床或新增效应。经典CD86–CTLA4/CD28及PDL1–PD1仅作未来可测候选；面板存在不等于每标志数值/膜定位资格，源具体检查结果私有，不能把未作资格当作未测/无效。
+
+Qureshi2011及Maier2020的PubMed页面只返页脚，官方NCBI efetch公开摘要实际取证2026-10-22T05:31:57.465063Z UTC /13:31:57.465063+08:00；Freeman2000及Chen2024为正常服务的PubMed摘要。未绕过此前全文认证或PMC captcha，未接触序列/病例数据。文献改变下一准入：CD86配体捕获使方向不应机械预设为正；成熟/调节DC与PD1相关T共居也能出现在较好治疗结局背景，不能凭粗组成称耐药。Chen为项目已有来源，不作新独立验证。来源、作用范围及原始摘要SHA技术收据另存；文献解释及未来门槛以同一方法为准。
+
+本轮actual scientific progress是核定未来两类轴的证据与测量资格缺口，不是新通讯发现。原15项冻结家族、代码/状态与源工作流保持，当前仍只有输入进展；RFS资格边界、入口提醒及另一TableS1后补不变。仅通用方法/技术轨迹可归档，科学资格细节私有，public push此前拒绝不重试；四个无关未跟踪文件保持，完整仓库/隐私diff和普通本地提交待，goal active。
+
+
+归档观察2026-10-22T05:34:53.455195+00:00 UTC /2026-10-22T13:34:53.455195+08:00 UTC+8：完整仓库actual exit0、0errors/1既有warning，原始摘要范围/官方API哈希、既有源聚合测量资格及完整隐私diff/git diff --check接受。精确源父进程live取证2026-10-22T05:34:14.874270+00:00 UTC /2026-10-22T13:34:14.874270+08:00 UTC+8；本轮仍无新效应终态或运行代码改动。四个无关未跟踪文件保留；仅普通本地commit，公共push此前拒绝未重试，云端待同步，goal active。建议commit: Qualify APC-axis literature and measurement boundaries before new tests。
+
+[APC原始摘要与资格范围技术收据](../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_APC_axis_primary_abstract_scope_v1.json)。
