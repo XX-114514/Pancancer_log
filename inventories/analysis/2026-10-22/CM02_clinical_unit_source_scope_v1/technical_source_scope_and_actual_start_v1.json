@@ -1,0 +1,25 @@
+{
+  "status": "PUBLIC_SPATIAL_METADATA_AND_EXISTING_RUNTIME_ACCEPTED_NATIVE_OBJECT_STRUCTURE_RUNNING",
+  "observed_UTC": "2026-10-22T01:03:04.737169+00:00",
+  "source_record": "10.5281/zenodo.18265339",
+  "original_study_preprint": "10.64898/2026.01.12.25343268",
+  "source_metadata_receipt_SHA256": "323bb7bcca68d0a762484f85d26c5123db5aa2ea056074e2a69654d02ba90aa1",
+  "README_acceptance_SHA256": "84e8f6ca2c63e28b48686b4b5f13a3a11f42175987d923701f12fa707a9b3e62",
+  "source_object_identity_receipt_SHA256": "154a53dd8420d8e50a2f7d1511194bd431b2feb4d34d193f16c7556c409bc1ea",
+  "synthetic_structure_acceptance_SHA256": "67b189fd1388ef2c0fafd0b1541228ad0813e7f00a60f31f9f5ed163f3fb754d",
+  "frozen_native_structure_contract_SHA256": "de5a15b21f0df6a793429e6886def1e55f53b6f6777659ede4a5920f5e6b4aaa",
+  "actual_source_start_receipt_SHA256": "7f18ec41e9126955fdba59b969b62b685e06dedb1143a5e03a2f8264bced9ceb",
+  "actual_started_UTC": "2026-10-22T01:00:30.815129+00:00",
+  "execution_base_commit": "5b391be",
+  "frozen_code_SHA256": {
+    "read_LN_spatial_protein_RDS_RAM_v1.py": "3524926ad5677e2b268bc01afad4ed77ed262ee27c65068e7240a303e6d8552a",
+    "run_LN_spatial_protein_RDS_RAM_v1.py": "f485ef5c0538ff5e295ea57e7aefe4c6b7a22f734173241e293e5104b9d2e127",
+    "qualify_LN_spatial_RDS_structure_RAM_v1.R": "ca3b0f4146de21aad7469a3c164776f87f27fb785a5c86f22682a0604dbe0cee"
+  },
+  "complete_input_and_native_schema_still_pending": true,
+  "no_new_identity_spatial_clinical_effect_acceptance": true,
+  "all_original_native_individual_and_protein_coordinate_arrays_source_RAM_only": true,
+  "source_only_scientific_counts_private": true,
+  "previous_denied_clinical_CSV_new_permission_still_pending": true,
+  "no_denied_transport_upload_or_public_push_retry": true
+}

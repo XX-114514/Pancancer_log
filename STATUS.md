@@ -1,3 +1,9 @@
+## 当前：独立空间蛋白输入资格运行中，原随访正文待明确许可
+
+上一完整TCR来源状态解释已完成并封存，未重开旧家族。新的NSCLC淋巴结公开记录/README/对象标识及现成资源与S4结构合成已接受，真实源RAM资格worker已启动；完整字节/原生结构、标记、单位/坐标及生物效应尚待。原被拒作者随访CSV的新明确许可问题已提出，答复前未读取正文。CM02图谱优先、原身份/Zarr及科学分级保持，GSE288199表依用户后补，公共push仍因此前拒绝待同步。见[run](runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)、[方法](methods/CM02-clinical-unit-independent-source-scope-20261022.md)。
+
+### 以下保留上一阶段观察
+
 ## 当前：报告克隆扩增的完整来源家族与科学审阅完成
 
 本机非序列测量、原RNA精确键/编码、完整真实固定家族、全部实际随机流独立R/校正和工作null、全表/两图及数值精度解释已完成，原工具exit0/RAM释放。科学结果和分级私有，不将状态关联或组织线索直接升格双状态机制、原CM精确投影、独立患者或预测增量。原CM02图谱优先、原身份/Zarr和闭家族保持，当前无活跃科学worker，整体goal active。下一按证据分级核患者/阶段/同终点入口；GSE288199 TableS1用户后补，public push此前自动审批拒绝未重试，云端待同步。见[run](runs/20261022_CM02_nonsequence_TCR_measurement_v1.md)、[方法](methods/CM02-reported-TCR-expansion-20261022.md)。

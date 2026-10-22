@@ -134,3 +134,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [CM02非序列TCR扩增状态资格与来源解释统计](20261022_CM02_nonsequence_TCR_measurement_v1.md)：本机测量/精确RNA键与完整真实家族、随机R/精度和全表两图审阅完成，工具exit0/RAM释放；科学值私有，不当受体重建、独立患者/原CM或临床增量验证。
+
+
+[CM02临床单位与新组织来源入口](20261022_CM02_clinical_unit_and_source_scope_v1.md)：原研究级设计未接受、受拒随访正文待明确许可，公开NSCLC LN记录/README与资源资格继续；尚无新组织或临床效果。
