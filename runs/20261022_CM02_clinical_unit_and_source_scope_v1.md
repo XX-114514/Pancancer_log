@@ -197,3 +197,23 @@ Spreadsheets技能用于只读资格分析，捆绑Python3.12.14/Pandas2.2.3/Num
 
 
 单位/几何准备归档检查：观察2026-10-22T02:36:57.867133+00:00 UTC /2026-10-22T10:36:57.867133+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；R核心在实际源环境完整纯合成/独立dist通过且exit0，代码/冻结合同/技术JSON与全部脱敏diff已审，新增官方README约束及引用人工核查、git diff --check无错。实际人类对象尚未参与新核心，无新控制阶段或生物效果；同一v6真实输入句柄仍live、完整官方MD5/原生待，不重启。三份无关未跟踪文件保持；仅普通本地commit，公共push此前自动审批拒绝未重试，云端待同步，整体goal active。建议commit: Prepare native spatial unit and geometry qualification before effects。
+
+
+### v6真实区间耗时失败已核，单次软预算完整合成接受后v7恢复
+
+上一turn单位/几何纯合成与官方niche循环约束已提交d593822，是progress。本轮先核同一实际工具live及连续进度，属于verified wait；未因等待到期重启。随后同句柄返回实际终态：事件2026-10-22T02:39:19.224919+00:00 UTC /2026-10-22T10:39:19.224919+08:00 UTC+8，PUBLIC_PROTEIN_OBJECT_RANGES_COMPLETE_RAM_ONLY阶段RangeInputError/RANGE_ELAPSED_BUDGET，source exit2，本机工具exit1。原源精确PID/startticks于2026-10-22T02:40:44.573468+00:00 UTC确认不存在/无子进程，完整输入identity、原生schema和R heartbeat均未生成。实际没有HTTP401/403，不按SSH代理故障、作者数据异常或科学负结果解释。
+
+旧失败收据范围/尝试/耗时字段为空；现有逻辑仅整区间480秒软检查，无法据该收据区分具体哪次慢请求/多次传输问题，也不能声称已证明计时bug。旧冻结代码、失败及部分进度历史保留，不把部分输入当完整验收；源进程退出后个体payload不持久，不能从本机checkpoint恢复数组。本轮下一动作针对这一明确边界/诊断缺口，非盲重启。
+
+新增fetch_public_RDS_ranges_retry_RAM_v4.py：单次90秒软检查，仍480秒逻辑区间、45秒socket不活跃、同区间最多4次/1/2/4秒。仅短正文、明确瞬态传输和单次软时限可重试；HTTP/认证/协议/哈希、逻辑区间耗尽仍终止，保留HTTPMessage。新增read producer v6只接该参数并导出范围/尝试/逻辑耗时/当前正文字节诊断，原覆盖/官方MD5核心与R/codec完全未改。新dispatcher v7只换冻结入口/依赖/收据。时限为阻塞调用返回时检查的cooperative软预算，socket超时不等于单请求总墙时硬上限；原文“最多480+45”不作为已证明的严格墙时保证，方法已明确纠正。
+
+完整纯合成在实际源环境于2026-10-22T02:43:49.460766+00:00 UTC /2026-10-22T10:43:49.460766+08:00 UTC+8 exit0：假HTTP全部范围/整体MD5→原生R结构→代码SHA阶段→release，所有旧完整性/短正文/认证与旧dict回归通过。新增virtual time单worker模拟首个header及body过慢，同区间第二次恢复与原始payload/MD5逐字一致；持续过慢4次停止、逻辑到期一次停止，范围/次数/部分字节和逻辑耗时均另核，未真实等待或访问来源。合成源码/合同先冻，未据成功挑seed或放宽科学/完整性门槛。
+
+另冻真实v7固定1MiB/4并发（预期范围数量仍在原核心上限内）、单次90秒/逻辑480秒软预算及原资源/3小时下载/R/9000秒RAM交接；不调整全局网络、官方端点或认证，所有原生/个体/强度/坐标数组仍仅进程RAM。源实际开始2026-10-22T02:44:37.939762+00:00 UTC /2026-10-22T10:44:37.939762+08:00 UTC+8；观察2026-10-22T02:45:45.004412+00:00 UTC /2026-10-22T10:45:45.004412+08:00 UTC+8，已收到同一新工具实际启动及合格输入进度。当前完整输入/官方MD5/原生marker/患者单位/状态及科学效果仍待；冻结合同5d51e9c0a39db6cf92cd620b412d2b07bfda4babd30b1ea76c63d618e0a240be。随后核同一句柄，不因观察等待重启。
+
+执行形态为PANCANCER_LN_STRUCTURE_TASK=${PRIVATE_TASK}及已审只读SSH环境变量，${LOCAL_PYTHON} -B scripts/run_LN_spatial_protein_RDS_RAM_v7.py；本机Python3.13.9、既有scanpy源解释器与R4.3.3，源Python精确版本本节点未重新读取不猜。纯合成通用checker经SSH stdin执行，不落原生/个体数组；只有通用代码、合同及来源汇总控制文件可落源控制目录。正式身份/Zarr/原CM02/全部闭家族保持，临床仍仅资格、RFS说明信息问题未答，GSE288199 TableS1用户后补，公共push原拒绝未重试，目标active。本轮实质进展为真实失败分型/精确终态、可复现恢复实现/完整独立合成及新实际启动，非新增生物关系。
+
+[v7单次预算及实际启动技术收据](../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_attempt_deadline_actual_start_v7.json)。
+
+
+v7恢复归档检查：观察2026-10-22T02:48:27.050128+00:00 UTC /2026-10-22T10:48:27.050128+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；四新Python AST、完整源纯合成/失败诊断/独立虚拟时间及原R交接释放、全部冻结依赖SHA/新实际启动及脱敏diff/技术JSON已审。新producer仅参数/诊断差异、原覆盖/官方MD5与R/codec不变；软预算非硬墙时保证已明确纠正。当前同一v7真实句柄live且连续输入，整对象/原生/科学效果未接受，不重启。旧v6真实失败和精确退出保持，不作数据或科学负结论；三个无关未跟踪文件保持。仅普通本地commit，公共push此前自动审批拒绝未重试，云端待同步；整体goal active。建议commit: Bound slow range attempts and preserve failure telemetry before RAM recovery。

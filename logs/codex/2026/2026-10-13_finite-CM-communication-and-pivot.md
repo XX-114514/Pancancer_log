@@ -3606,3 +3606,15 @@ v4合同另冻后，源实际开始2026-10-22T02:00:39.114865+00:00 UTC；观察
 
 
 单位/几何准备归档检查：观察2026-10-22T02:36:57.867133+00:00 UTC /2026-10-22T10:36:57.867133+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；R核心在实际源环境完整纯合成/独立dist通过且exit0，代码/冻结合同/技术JSON与全部脱敏diff已审，新增官方README约束及引用人工核查、git diff --check无错。实际人类对象尚未参与新核心，无新控制阶段或生物效果；同一v6真实输入句柄仍live、完整官方MD5/原生待，不重启。三份无关未跟踪文件保持；仅普通本地commit，公共push此前自动审批拒绝未重试，云端待同步，整体goal active。建议commit: Prepare native spatial unit and geometry qualification before effects。
+
+
+### 2026-10-22：真实区间预算终态、软时限恢复的完整合成与实际v7
+
+观察2026-10-22T02:45:45.004412+00:00 UTC /2026-10-22T10:45:45.004412+08:00 UTC+8。上一turn单位/几何和schema约束d593822为progress；本轮先同一句柄verified wait，后取得v6真实RANGE_ELAPSED_BUDGET终态/source exit2并核精确源退出，不因等待或本机异常直接重启。缺尝试级字段不强行声称root cause，完整输入/原生未接受，失败历史保留。
+
+新增单次软时限/诊断helper v4、只接新参数及诊断的producer v6、dispatcher v7及checker v5。源完整纯合成实际2026-10-22T02:43:49.460766+00:00 UTC exit0，覆盖慢首header/body同区间恢复/整体字节与MD5、持续慢次数上限、逻辑到期、原认证/协议/哈希/短正文/HTTP头旧错误回归，完整R/SHA控制阶段及释放。实际范围缩1MiB、原核心/R/codec不变，合同先冻后真实v7于2026-10-22T02:44:37.939762+00:00 UTC启动并返回真实输入进度。代码差异、固定边界/运行命令/证据SHA与事件UTC+8见[run](../../../runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)和[收据](../../../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_attempt_deadline_actual_start_v7.json)。
+
+审阅当前终态/同源proc只读结果、旧与新helper/producer/dispatcher完整diff及合成收据；修改STATUS/ROADMAP/TODO/方法与同任务run/daily/Codex，添加四个通用Python和技术收据。纠正预算含义：在阻塞返回时检查的软时限，socket不活跃非总墙时硬上限，原宽限“最多”不作为严格保证。原生/个体只RAM，不写或上传数组、已退出旧部分输入不当恢复成功。新实际完整输入/MD5/schema/身份及科学效果仍待；不重开原家族，RFS信息问题未答且临床仅资格，另一TableS1用户后补。完整仓库/人工隐私diff及普通本地commit待；三个无关未跟踪文件保持，public push原拒绝不重试，整体goal active。建议commit: Bound slow range attempts and preserve failure telemetry before RAM recovery。
+
+
+v7恢复归档检查：观察2026-10-22T02:48:27.050128+00:00 UTC /2026-10-22T10:48:27.050128+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；四新Python AST、完整源纯合成/失败诊断/独立虚拟时间及原R交接释放、全部冻结依赖SHA/新实际启动及脱敏diff/技术JSON已审。新producer仅参数/诊断差异、原覆盖/官方MD5与R/codec不变；软预算非硬墙时保证已明确纠正。当前同一v7真实句柄live且连续输入，整对象/原生/科学效果未接受，不重启。旧v6真实失败和精确退出保持，不作数据或科学负结论；三个无关未跟踪文件保持。仅普通本地commit，公共push此前自动审批拒绝未重试，云端待同步；整体goal active。建议commit: Bound slow range attempts and preserve failure telemetry before RAM recovery。
