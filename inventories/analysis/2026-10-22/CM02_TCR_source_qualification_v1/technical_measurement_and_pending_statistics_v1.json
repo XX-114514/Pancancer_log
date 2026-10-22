@@ -1,0 +1,28 @@
+{
+  "status": "MEASUREMENT_ACCEPTED_COMPLETE_SOURCE_STATISTICS_RUNNING",
+  "observed_UTC": "2026-10-22T00:22:42.627901+00:00",
+  "measurement_started_UTC": "2026-10-22T00:16:50.833356+00:00",
+  "measurement_completed_UTC": "2026-10-22T00:17:04.331651+00:00",
+  "source": "GSE243013",
+  "measurement_contract_SHA256": "6d93be8b2763041bff98be4684c538b7306fe9a9f3e3b707aa8f1111c3795944",
+  "measurement_terminal_SHA256": "557e7981cf85cd3c193038a4f1abfab06b19660049c2fbc19515ebe7bd45128b",
+  "measurement_summary_SHA256": "99761bbc831811c13025dc189cb46cd09b76216210dfc841b3868e0cef24f0b2",
+  "aggregate_measurement_acceptance_SHA256": "498a6bd9bfcb3620179414d1dfd8b30ce8dc5e44bccff236f2a773458e229980",
+  "synthetic_statistics_acceptance_SHA256": "8bdc1149743d5dd93d018210e506d9c269d58f14b150bf796ca846031ecddb88",
+  "statistics_contract_SHA256": "6cbb858b3b5c54ec8217355cb120edf07b10a605b10f4026572153b6b3594cbe",
+  "frozen_statistics_code_SHA256": {
+    "NSCLC_TCR_reported_expansion_statistics_v1.py": "0c551324e646c8dca20086066c24c7d507ed41e206dbd224d614debe77fba02a",
+    "check_NSCLC_TCR_local_statistics_v1.py": "dfc58cf23354305979b0b7e43447a2e03b1cc58bfd3c97bb7bf8b4bb6de53e64",
+    "GSE288199_state_pair_math_v1.py": "239f1e9d18332533bcee7465e899d5f654c68930351c10fe33068288c5cb2277",
+    "NSCLC_observed_T_state_statistics_v1.py": "274ca22a4165c11d028f94509b80c3b476b5b00e30c6ce99a338b760f85cde2a",
+    "GSE288199_state_pair_R_audit_v1.py": "9988cc2a2a6460db59159f13c6a6440b117cf2dd36601219f030c1bf490453ea",
+    "observed_T_marker_evidence_v1.py": "e8950f189eb399a4aa647e9e36c96dd4f2d0733404d47aa5d5f72b9d02922ae6"
+  },
+  "public_scientific_values_or_candidate_ranking": false,
+  "individual_input_and_resampling_arrays_local_RAM_only": true,
+  "no_SSH_or_remote_record_transmission": true,
+  "prior_rejected_remote_entrypoint_disabled": true,
+  "source_reexplored_postoperative_not_independent_patient_or_original_CM_validation": true,
+  "actual_statistics_and_scientific_review_still_pending": true,
+  "public_push_previously_rejected_not_retried": true
+}

@@ -131,3 +131,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [CM02作者组织类型的RNA与临床桥资格](20261022_CM02_author_type_RNA_clinical_bridge_v1.md)：完整旧捕获复用、同一试点marker/深度与匹配旧临床/图表接受；不能将组织标签直接当精细RNA状态或临床验证。
+
+
+[CM02非序列TCR扩增状态资格与来源解释统计](20261022_CM02_nonsequence_TCR_measurement_v1.md)：本机测量和原RNA精确键/编码接受，新完整统计运行中；科学值私有，不当受体重建、独立患者/原CM或临床增量验证。
