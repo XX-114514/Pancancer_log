@@ -193,7 +193,8 @@ def render_report(report, out, synthetic=False):
         'The factor is exp(median patient-centered log effect), not the uncentered Mantel–Haenszel odds ratio.\n'
         'Shuffle blocks preserve local regulatory counts, MKI67 strata and CD8 degree; parent geometry and receiver states stay fixed.\n'
         'Fine-scale sender spatial autocorrelation is not fully preserved. Bootstrap intervals condition on the fitted null center.\n'
-        'BH/BY cover all 15 secondary tests. Filled circles: BY < 0.05; crosses: no primary inference. Auxiliary grids have no P test.\n'
+        'BH/BY cover all 15 secondary tests. Left panel only: filled circle = BY < 0.05; cross = no primary inference.\n'
+        'Right panel markers distinguish grids only; auxiliary grids have no P test.\n'
         'No claim of direct signalling, suppression, treatment resistance or clinical prediction follows from these tests.', fontsize=8.2)
     fig.tight_layout(rect=(.01, .22, .82, .93))
     save(fig, 'LOCAL_NULL_AND_SCALE')
