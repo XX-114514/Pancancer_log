@@ -1,0 +1,25 @@
+{
+  "status": "PURE_SYNTHETIC_LN_UNIT_GEOMETRY_ACCEPTED_ACTUAL_SOURCE_INPUT_STILL_LIVE",
+  "observed_UTC": "2026-10-22T02:33:56.740639+00:00",
+  "synthetic_completion_UTC": "2026-10-22T02:32:50.022387+00:00",
+  "code_SHA256": "9b2123ec7608207ea08ab194798f38912a23b2b6a3f850e1953eaf882ec98223",
+  "frozen_synthetic_contract_SHA256": "6987c3fad85258f36aae2b361f9e80f21e8015ffbcb502cc9e03c59883e5bc98",
+  "synthetic_acceptance_SHA256": "434557c1c1b52e5a1c29dabf228aa4cff1e619af6c013eb33b59bc9bef3ee3af",
+  "actual_source_R_exit_code": 0,
+  "runtime_R": "4.3.3",
+  "package_versions": {
+    "RANN": "2.6.2",
+    "FNN": "1.1.4.1",
+    "BiocNeighbors": "1.20.0",
+    "data.table": "1.17.8",
+    "Matrix": "1.6.5",
+    "jsonlite": "2.0.0"
+  },
+  "complete_unit_nesting_cross_ROI_isolation_ties_self_exclusion_and_empty_eligibility_checked": true,
+  "independent_full_pairwise_distance_oracle_checked": true,
+  "no_real_native_fields_or_arrays_read_by_this_test": true,
+  "no_actual_control_phase_uploaded_or_effect_contract_frozen": true,
+  "no_patient_or_physical_unit_semantics_inferred": true,
+  "no_modification_or_restart_of_live_protein_input": true,
+  "no_individual_files_or_public_push": true
+}

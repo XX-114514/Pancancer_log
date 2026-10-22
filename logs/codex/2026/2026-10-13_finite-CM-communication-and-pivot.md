@@ -3591,3 +3591,18 @@ v4合同另冻后，源实际开始2026-10-22T02:00:39.114865+00:00 UTC；观察
 
 
 临床覆盖资格归档检查：观察2026-10-22T02:27:11.161458+00:00 UTC /2026-10-22T10:27:11.161458+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；新Python AST与实际本机计数/独立对照、原输入SHA/完整队列指纹、精确材料/共享字段、脱敏diff和技术JSON均审阅。实际临床工具exit0且个体RAM已释放；同一蛋白v6工具仍live，完整对象/原生/科学效果尚待，无重启。没有临床效应或新的科学分级，三个无关未跟踪文件保留。仅普通本地commit，public push此前自动审批拒绝未重试，云端仍待同步；目标active。建议commit: Qualify immutable clinical followup population coverage in local RAM。
+
+
+### 2026-10-22：同一蛋白输入的verified wait及单位/原生几何实质准备
+
+观察2026-10-22T02:33:56.740639+00:00 UTC /2026-10-22T10:33:56.740639+08:00 UTC+8。上一turn临床覆盖资格和普通本地9b05726为progress；本轮同一实际v6工具重核live持续前进，未因等待超时重启。独立完成新原始文献/来源入口/重复来源识别，新增通用qualify_LN_unit_geometry_RAM_v1.R并于2026-10-22T02:32:50.022387+00:00 UTC在现成源R实际纯合成exit0。实际字段未选择、未接触源对象或上传实际控制阶段，不当真实空间/临床接受。
+
+关键检查：字面字段长度前缀元组、原标签复用与患者—LN—ROI嵌套、ROI内非自身近邻、重合位置/单点/空集、缺单位/非有限坐标与分隔符反例；独立完整dist距离和行重排对照通过，全部中间键/坐标/距离只RAM。源R及近邻依赖版本、固定合同/代码SHA、完整执行和文献失败边界见[run](../../../runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)与[技术收据](../../../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_unit_geometry_synthetic_v1.json)。没有重跑运输测试、原家族或新拟合；纯合成和published先验均不当生物发现。
+
+检查当前README/STATUS/ROADMAP/TODO、现有源producer/dispatcher/R资格、数据政策/既有Chen方法/状态主线。修改源资格方法、同任务run/daily/Codex、ROADMAP/TODO当前动作，新增通用R和技术收据。原生输入仍live；后续完整官方MD5和原生schema后再接实际单位/抗体/强度资格及有限效果合同。新JITC/CellReportsMedicine403、Nature认证重定向和作者仓库实际API403均停止，无PDF/镜像/raw/作者消息；识别Chen是已审来源，不加独立n。详细来源事实仅主论文设计与私有审阅，不导出任何个体。临床本次仅资格、RFS说明待答，TableS1用户后补保持。完整仓库/脱敏diff检查和普通本地commit待，public push原拒绝不重试，目标active。建议commit: Prepare native spatial unit and geometry qualification before effects。
+
+
+官方schema新约束：观察2026-10-22T02:36:29.366628+00:00 UTC /2026-10-22T10:36:29.366628+08:00 UTC+8。直接核官方850B通用README，其cn_celltypes来自邻居细胞类型构成的Kmeans，不是独立病理区室。后续只作作者组织结果描述叠图，不用来选择阳性niche或作为主要配对富集控制，防止以待检邻居构成循环定义背景。独立形态/区域背景仍待实际资格；原冻结reader/真实对象未改，详同一方法。无新增生物效应。
+
+
+单位/几何准备归档检查：观察2026-10-22T02:36:57.867133+00:00 UTC /2026-10-22T10:36:57.867133+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；R核心在实际源环境完整纯合成/独立dist通过且exit0，代码/冻结合同/技术JSON与全部脱敏diff已审，新增官方README约束及引用人工核查、git diff --check无错。实际人类对象尚未参与新核心，无新控制阶段或生物效果；同一v6真实输入句柄仍live、完整官方MD5/原生待，不重启。三份无关未跟踪文件保持；仅普通本地commit，公共push此前自动审批拒绝未重试，云端待同步，整体goal active。建议commit: Prepare native spatial unit and geometry qualification before effects。
