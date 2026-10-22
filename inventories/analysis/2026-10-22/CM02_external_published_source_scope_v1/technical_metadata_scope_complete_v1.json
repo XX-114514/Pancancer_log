@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE_METADATA_ONLY_EXTERNAL_SOURCE_SCOPE_NOT_NEW_EFFECT_ANALYSIS",
+  "observed_UTC": "2026-10-22T09:27:53.467045+00:00",
+  "observed_UTC_plus_8": "2026-10-22T17:27:53.467045+08:00",
+  "frozen_scope_SHA256": "a9266b5847e70931edee4de59cf358e5988600d2922cf967f404bfa6d30b08bd",
+  "private_source_fit_decision_SHA256": "34d23bceb2f163e9e3304189374833323dce26e69d47f0bbfc0d82a37088df99",
+  "private_panel_receipt_SHA256": "c6cff190775578074d5d66def7a36708cda265a7f40ebc83a0b774f0ce3228fd",
+  "reader_SHA256": "56ac03726c2caff230ca3232852c7575f9525f4cd2c1772789f0ab9c5844f049",
+  "official_bibliography_response_SHA256": "8b93589d9babf5bab3876768782573aa522d5496b9b3c1064745193452db8b8a",
+  "public_protocol_SHA256": "e215b0937eed52c06792f57aca9e1d12abc0ccee3a90789b2b2de6a644734818",
+  "public_channel_metadata_SHA256": "61e1c4426041b285e7d7a8a3b65b35bf76038f5535af89a58354e6cdc4c1b068",
+  "complete_official_channel_length_and_MD5_verified": true,
+  "protocol_biomarker_column_cross_checked": true,
+  "initial_unrecognized_protocol_header_preserved": true,
+  "published_source_PMIDs": [
+    "38439077",
+    "36116212",
+    "39093404",
+    "40501950"
+  ],
+  "no_cell_clinical_coordinate_matrix_weights_or_sequence_payload_read": true,
+  "no_new_thresholds_statistics_or_closed_family_reopened": true,
+  "source_fit_details_private_published_methods_separate_from_own_results": true,
+  "previous_scope_processes_remain_released": true,
+  "fulltext_captcha_resources_stopped_without_alternate_routes": true,
+  "read_only_spreadsheets_skill_bundled_runtime_used": true
+}
