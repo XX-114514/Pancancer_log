@@ -1,0 +1,31 @@
+{
+  "kind": "BOUNDED_TRANSFER_DIAGNOSTIC_TECHNICAL_RECEIPT",
+  "observed_UTC": "2026-10-22T11:05:57.847144+00:00",
+  "observed_UTC_plus_8": "2026-10-22T19:05:57.847144+08:00",
+  "telemetry_event_UTC": "2026-10-22T11:04:33.693192+00:00",
+  "diagnostic_completed_UTC": "2026-10-22T11:05:16.241156+00:00",
+  "actual_diagnostic_exit_code": 0,
+  "no_native_payload_files": true,
+  "main_source_unchanged": true,
+  "CPU_one_core_percent": 0.9910341624941693,
+  "process_swap_bytes": 0,
+  "process_disk_read_delta_bytes": 0,
+  "process_disk_write_delta_bytes": 0,
+  "source_direct_probe_MB_per_second": 0.030671231553326666,
+  "local_existing_proxy_probe_MB_per_second": 0.29430330374291247,
+  "probe_bytes_each": 1048576,
+  "HTTP_status_each": 206,
+  "exact_range_hashes_match": true,
+  "limitations": [
+    "Two hosts and routes differ; does not isolate proxy alone or prove rate limiting.",
+    "One short probe does not guarantee sustained throughput.",
+    "Private v2 started_UTC was recorded after remote completion; use telemetry and completion events, not that label, as timing evidence."
+  ],
+  "private_evidence_SHA256": {
+    "private_frozen_diagnostic_v1.json": "948235aaca4858b74c66b191f5979e1fac0755c4df392b0566eecd35fbce5bd8",
+    "private_actual_transfer_diagnostic_v1.json": "a8a1d3d9c4b2e716633e9424fa40c563edd5570c0d31f7ae26f33fbc34395f38",
+    "private_actual_transfer_diagnostic_v2.json": "eca323dabaea37140fd84fe1072c9a3cf5ddcc4e6bdb6e03e6ed2693fcd12f51",
+    "diagnose_transfer_v1.py": "eadc25228cc807c2d49fabf86c1a3e8e50893d485ade82f40777543af97f53bd",
+    "diagnose_transfer_v2.py": "1bf90890d4cc0a2683fcbb53824a37e45478011c21a0c3186c2aca9ff65d9dc3"
+  }
+}
