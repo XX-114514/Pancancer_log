@@ -3630,3 +3630,11 @@ v7恢复归档检查：观察2026-10-22T02:48:27.050128+00:00 UTC /2026-10-22T10
 
 
 蛋白数值资格准备归档检查：观察2026-10-22T03:00:26.008534+00:00 UTC /2026-10-22T11:00:26.008534+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；两版源R纯合成/独立scalar与手工插值/原面板顺序及v2小集合发布边界、全部冻结代码/技术JSON SHA和脱敏diff已审，git diff --check无错。v1只是初次纯合成，v2为当前待实际使用的资格核心，均未读真实对象或上传控制阶段；不作阳性/UMI/正式状态/患者单位或科学效果接受。同一实际v7句柄仍live连续输入，完整官方MD5/原生待，未重启。三个无关未跟踪文件保持；仅普通本地commit，public push此前自动审批拒绝未重试，云端仍待同步，整体goal active。建议commit: Prepare protein measurement qualification before native state calls。
+
+### 用户RFS信息答复及空间优先待办更新
+
+观察2026-10-22T03:14:25.334718+00:00 UTC /2026-10-22T11:14:25.334718+08:00 UTC+8；人类事件时刻unknown。用户要求先继续空间，RFS说明待补并记录提醒。核当前待办/方法/任务轨迹和实际v7句柄，私有保存答复收据；修改STATUS/TODO、临床方法和同任务run/daily，保留旧未答历史，提醒设在RFS入口，不虚构日期或定时任务。范围/字段与证据见[run](../../../runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)。
+
+检查命令为git diff --check及完整validate_repository，实际终态待。未新增个体读取/效应/控制阶段，未重启live输入；原CM02/身份/Zarr/闭家族保持。三个无关未跟踪文件保留，普通本地归档待，public push此前拒绝不重试，整体goal active。建议commit: Record deferred RFS definitions and spatial-first reminder checkpoint。
+
+归档核查观察2026-10-22T03:15:10Z UTC /2026-10-22T11:15:10+08:00 UTC+8：完整仓库检查实际exit0，0errors/1既有warning；git diff --check及六文件隐私/diff审阅接受，新增仅用户安排/方法与轨迹。当前同一实际输入仍live，完整性/原生尚待，不把技术进度作为科学结果；普通本地commit，公共push此前拒绝未重试。
