@@ -1,0 +1,9 @@
+{
+  "status": "SAME_NEW_SOURCE_LIVE_INPUT_IN_PROGRESS_NOT_ACCEPTED",
+  "observed_UTC": "2026-10-22T09:51:52.193501+00:00",
+  "observed_UTC8": "2026-10-22T17:51:52.193501+08:00",
+  "exact_source_live_observed_UTC": "2026-10-22T09:50:59.210572+00:00",
+  "private_runtime_snapshot_SHA256": "2b9621a750991879c8148cbd299597da46d39ca64fffdcea56547ba2b3b86ab9",
+  "full_input_and_native_qualification_pending": true,
+  "no_new_scientific_effects": true
+}

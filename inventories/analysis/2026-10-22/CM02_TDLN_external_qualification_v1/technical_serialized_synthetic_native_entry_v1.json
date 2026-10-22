@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SERIALIZED_SYNTHETIC_NATIVE_FILE_ENTRY_PIPE_AND_AGGREGATE_PRIVACY",
+  "event_UTC": "2026-10-22T09:56:25.686932+00:00",
+  "observed_UTC": "2026-10-22T09:57:28.805673+00:00",
+  "R_code_SHA256": "4e1198cbf468d08314824fe20914475055b4fcfa3f05d764f29dca4ef606d966",
+  "private_complete_proof_SHA256": "ae3837ce93c2e2876a277fbcce8ba0ef36d0de6bb255cb36ad69b2e8476fdc9a",
+  "actual_source_data_used": false,
+  "production_R_and_reader_unchanged": true,
+  "earlier_probe_failures_preserved": true,
+  "earlier_synthetic_fixture_file_created_not_real_native_data": true,
+  "synthetic_fixture_not_deleted": true
+}

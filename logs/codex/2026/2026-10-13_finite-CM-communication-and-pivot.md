@@ -3788,3 +3788,19 @@ Qureshi2011及Maier2020的PubMed页面只返页脚，官方NCBI efetch公开摘�
 
 
 来源资格归档检查观察2026-10-22T09:30:40.082281+00:00 UTC /2026-10-22T17:30:40.082281+08:00 UTC+8：完整仓库actual exit0、0errors/1既有warning，通用读取器AST、官方整长/MD5通道与同一协议/通道两次SHA、限定元信息范围/全部隐私diff/git diff --check接受。首次biomarker表头未识别与修正历史保持，无原生/个体/临床/矩阵/序列读取或新效果，四个无关文件保留。仅通用方法/代码和技术轨迹普通本地提交，public push此前拒绝不重试，云端待同步，goal active。建议commit: Qualify external spatial sources by measured markers and clinical setting。
+
+
+### 2026-10-22T09:50:33.103260+00:00 UTC /2026-10-22T17:50:33.103260+08:00 UTC+8 外部TDLN原始证据、数据目录和新原生资格实际开始
+
+用户继续空间并保留RFS说明入口提醒。前一来源元信息阶段完成；本轮单篇公开原始摘要/图注与独立Zenodo/DataCite关系准入，受认证正文停止未换路。新对象结构/预声明marker与单位字段资格另冻，不读随访值/不建状态或效果。源R纯合成exit0，首次实际输入前命中旧容量上限且精确退出；新字节/块数边界合成定位并修正限制，HTTP/哈希逻辑不变，新版本实际启动、完整输入仍待。具体来源角色/科学资格仅私有，详[run](../../../runs/20261022_CM02_TDLN_external_qualification_v1.md)。
+
+新增通用资格R/reader/dispatcher及有界core/guard检查，更新方法、run、状态/规划/待办与同任务日志，技术SHA收据无个体或科学效果。新native/个体只RAM、结束释放且无动态接口；原CM02/身份/Zarr/闭家族与两项临床材料提醒保持。无关四文件保留，完整仓库/隐私diff和普通本地提交待；public push旧拒绝未重试，goal active，当前为progress。
+
+
+新原生入口补充观察2026-10-22T09:57:28.805673+00:00 UTC /2026-10-22T17:57:28.805673+08:00 UTC+8：相同R文件入口的人工序列化RAM读取/来源汇总及canary完整检查实际exit0，生产代码SHA不变。旧inline/空输入探针不接受保留，错误辅助生成器留下的纯人工fixture仅元信息核查未删除，未涉及真实来源数据；修正后全RAM。首次完整仓库检查实际exit0、0errors/1既有warning；新补充记录后的最终检查/隐私diff待。真实同一源输入持续，未开状态或临床模型，见[run](../../../runs/20261022_CM02_TDLN_external_qualification_v1.md)。
+
+
+归档差异检查观察2026-10-22T09:58:23.600956+00:00 UTC /2026-10-22T17:58:23.600956+08:00 UTC+8：全部冻结代码SHA逐项仍匹配。默认git diff --cached --check仅报source reader已冻字节末尾多空行；为保留真实执行SHA不改已运行文件。其余文件用默认检查，该单文件用单次core.whitespace=-blank-at-eof检查，明确只豁免这个格式项，不伪称默认检查全通过。完整仓库最终检查待。此格式项不改变运行、资源或统计；所有自有科学内容仍私有，无关四文件保留。
+
+
+最终归档检查观察2026-10-22T09:59:43.759030+00:00 UTC /2026-10-22T17:59:43.759030+08:00 UTC+8：完整仓库最终实际exit0、0errors/1warning；五Python AST、源R marker纯合成及相同生产文件入口RAM序列化/个体canary、2GiB/2048块无网络边界与HTTP/哈希body逐字不变、全部冻结代码SHA和人工隐私/JSON diff接受。默认差异检查的单一已冻EOF空行已明确记录并分文件限定豁免；其余默认检查通过。仅通用代码/方法/技术收据普通本地归档，未公开科学效应/来源细胞计数/候选排名；四个无关文件保持。真实同一任务输入仍增长但完整准入/原生资格/退出待，不重启；public push此前拒绝不重试，云端待同步，goal active。本轮新增来源资格及真实执行progress，不是blocked或目标完成。建议commit: Qualify new TDLN evidence and start bounded native measurement checks。
