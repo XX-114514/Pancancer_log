@@ -1,0 +1,23 @@
+{
+  "status": "PURE_SYNTHETIC_MARKER_NUMERIC_QUALIFICATION_ACCEPTED_NO_NATIVE_EFFECTS",
+  "observed_UTC": "2026-10-22T02:55:19.916300+00:00",
+  "actual_synthetic_completion_UTC": "2026-10-22T02:54:22.731807Z",
+  "runtime_R": "4.3.3",
+  "code_SHA256": {
+    "profile_LN_marker_assay_RAM_v1.R": "fa8b3d3eb92c3bca8d4e41f6aaf12744158ea0b2ffbf69e8b940706ba0e830b8",
+    "qualify_LN_spatial_RDS_structure_RAM_v1.R": "ca3b0f4146de21aad7469a3c164776f87f27fb785a5c86f22682a0604dbe0cee"
+  },
+  "frozen_synthetic_contract_SHA256": "5f0704be07ff596c6f9f2b1c416c1b47d9105bca80d84d5ea23f3fdda4275a0b",
+  "synthetic_acceptance_SHA256": "6f697f69e3bc9afac9c8bb08b09f5f3ef84bd33beb0fe829ddc5b2f6aa82b320",
+  "source_R_exit_code": 0,
+  "original_predeclared_marker_panel_unchanged": true,
+  "scalar_counts_and_manually_interpolated_quantiles_checked": true,
+  "dense_sparse_and_column_permutation_equivalent": true,
+  "missing_zero_nonfinite_ambiguous_and_transformed_values_distinguished": true,
+  "no_marker_positivity_or_state_thresholds_adopted": true,
+  "no_native_assay_or_field_map_or_actual_control_stage_access": true,
+  "no_actual_input_restart_or_contract_change": true,
+  "no_individual_arrays_or_unit_rows_persisted_or_returned": true,
+  "no_new_clinical_or_communication_effect_family": true,
+  "no_public_push": true
+}

@@ -3618,3 +3618,15 @@ v4合同另冻后，源实际开始2026-10-22T02:00:39.114865+00:00 UTC；观察
 
 
 v7恢复归档检查：观察2026-10-22T02:48:27.050128+00:00 UTC /2026-10-22T10:48:27.050128+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；四新Python AST、完整源纯合成/失败诊断/独立虚拟时间及原R交接释放、全部冻结依赖SHA/新实际启动及脱敏diff/技术JSON已审。新producer仅参数/诊断差异、原覆盖/官方MD5与R/codec不变；软预算非硬墙时保证已明确纠正。当前同一v7真实句柄live且连续输入，整对象/原生/科学效果未接受，不重启。旧v6真实失败和精确退出保持，不作数据或科学负结论；三个无关未跟踪文件保持。仅普通本地commit，公共push此前自动审批拒绝未重试，云端待同步；整体goal active。建议commit: Bound slow range attempts and preserve failure telemetry before RAM recovery。
+
+
+### 2026-10-22：效果前预设蛋白数值资格与发布边界准备
+
+观察2026-10-22T02:59:09.589366+00:00 UTC /2026-10-22T10:59:09.589366+08:00 UTC+8。前一turn是同一实际v7句柄verified wait，本轮重核live/连续输入并独立准备数值核心，分类progress。新增profile_LN_marker_assay_RAM_v1.R及v2；前者源纯合成于2026-10-22T02:54:22.731807Z接受，真实前审阅补小有效集合不发布分位的v2于2026-10-22T02:56:55.590274Z source R4.3.3 exit0/RAM释放，旧v1/代码/收据保留且从未用于真实对象。
+
+核原面板名称/顺序、dense与dgCMatrix/非有限/隐式零、缺标志与零/常数/多行歧义、正负/小数、ROI内变异支持；独立scalar计数/足量样例手工插值、19/20分位发布边界、行映射冲突与列重排均通过。全部索引/强度/单位键只RAM，只返回源聚合；不自动阈值/UMI/背景/功能状态，20观测非20患者门槛。真实字段/assay语义和实际控制阶段尚未选择，不改活跃v7合同或旧模型家族。另纯合成核旧治疗正则对已知格式正确，疑点未证实，不新增/修改规则或读取新病例。
+
+相关结构程序、实时输入句柄/冻结收据和现有临床方法最小读后，修改STATUS/TODO/源资格方法/同任务run/daily/Codex，新增两个通用R和两份脱敏技术收据。完整事件/命令结构/源码SHA与边界见[run](../../../runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)和[当前收据](../../../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_marker_numeric_synthetic_v2.json)。完整实际输入/官方MD5/原生/空间关系仍待，临床仅资格、RFS说明与TableS1后补保持；原CM02/身份/Zarr/闭家族保持。完整仓库/人工diff/普通本地commit待，三个无关未跟踪文件保持；public push旧拒绝未重试，目标active。建议commit: Prepare protein measurement qualification before native state calls。
+
+
+蛋白数值资格准备归档检查：观察2026-10-22T03:00:26.008534+00:00 UTC /2026-10-22T11:00:26.008534+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；两版源R纯合成/独立scalar与手工插值/原面板顺序及v2小集合发布边界、全部冻结代码/技术JSON SHA和脱敏diff已审，git diff --check无错。v1只是初次纯合成，v2为当前待实际使用的资格核心，均未读真实对象或上传控制阶段；不作阳性/UMI/正式状态/患者单位或科学效果接受。同一实际v7句柄仍live连续输入，完整官方MD5/原生待，未重启。三个无关未跟踪文件保持；仅普通本地commit，public push此前自动审批拒绝未重试，云端仍待同步，整体goal active。建议commit: Prepare protein measurement qualification before native state calls。
