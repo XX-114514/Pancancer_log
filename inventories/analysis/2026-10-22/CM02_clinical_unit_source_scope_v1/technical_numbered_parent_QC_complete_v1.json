@@ -1,0 +1,15 @@
+{
+  "kind": "FIRST_RELATIVE_PARENT_QUALIFICATION_TECHNICAL_COMPLETION",
+  "observed_UTC": "2026-10-22T04:27:03.217426+00:00",
+  "source_completed_UTC": "2026-10-22 04:22:15 UTC",
+  "entry_code_SHA256": "20352495b247f7842928013d1419c173bf0a2a36f04c0b400e216077dd8ea3a5",
+  "entry_contract_SHA256": "692d6395b21ed60baee918a330999fba6ffe39186da2cbcc1e15d07d1fa69ce3",
+  "source_acceptance_SHA256": "66943bb40dae813be7af72c42ea849bc14fe67c138b2605b0f4f1e1dd133cd51",
+  "source_aggregate_denominators_reconciled": true,
+  "independent_raw_replay_not_claimed": true,
+  "same_exact_R_verified_in_amended_wait": true,
+  "remaining_followup_scopes": 2,
+  "original_absolute_deadline_not_extended": true,
+  "no_formal_cell_identity_or_spatial_or_clinical_effects_accepted": true,
+  "scientific_counts_annotations_marker_flags_and_stage_codes_private": true
+}

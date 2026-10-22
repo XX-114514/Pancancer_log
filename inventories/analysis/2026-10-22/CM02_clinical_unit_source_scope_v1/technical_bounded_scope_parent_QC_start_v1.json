@@ -1,0 +1,21 @@
+{
+  "kind": "PROSPECTIVE_NATIVE_SCOPE_AMENDMENT_AND_PARENT_QC_TECHNICAL_START",
+  "observed_UTC": "2026-10-22T04:23:18.394195+00:00",
+  "actual_published_UTC": "2026-10-22T04:21:59.104170+00:00",
+  "old_logical_scope_maximum": 3,
+  "new_logical_scope_maximum": 5,
+  "maximum_followups_after_qualification": 2,
+  "absolute_original_RAM_wait_deadline_UTC": "2026-10-22T06:25:35+00:00",
+  "deadline_not_extended": true,
+  "outer_counter_not_reset": true,
+  "amendment_contract_SHA256": "5791fca98b560335068fc29e298ec8a6778f6a47b30fa2f15cd4b0643e1085e6",
+  "entry_contract_SHA256": "692d6395b21ed60baee918a330999fba6ffe39186da2cbcc1e15d07d1fa69ce3",
+  "entry_code_SHA256": "20352495b247f7842928013d1419c173bf0a2a36f04c0b400e216077dd8ea3a5",
+  "qualification_code_SHA256": "284240b3d49289d8e159c47cafef3647410ffc8bf7dd5cc0db74d9000a571629",
+  "bounded_runner_code_SHA256": "fcb7bac48a1831e2101fbd9ffc49cabaec4ff7838edb97692f4b4639f2e834c8",
+  "full_synthetic_acceptance_SHA256": "50e1f575cc1d273367bace67ec6c2a12ec2cdbe3b3cbaa946a585afb0328bf54",
+  "scalar_guard_protocol_acceptance_SHA256": "e301b11f9d84c719736829c161421d7f3397b1f432deac61af99cfdd3cfd55be",
+  "same_exact_native_R_child_verified": true,
+  "no_individual_data_or_rank_profiles_in_public_receipt": true,
+  "no_spatial_effect_family_frozen_or_tested_yet": true
+}
