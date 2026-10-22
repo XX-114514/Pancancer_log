@@ -1,0 +1,26 @@
+{
+  "kind": "SOURCE_AGGREGATE_INTERPRETATION_ACCEPTANCE_GUARDS_ONLY",
+  "observed_UTC": "2026-10-22T05:26:13.596688+00:00",
+  "synthetic_event_UTC": "2026-10-22T05:25:07.048012+00:00",
+  "code_SHA256": "1cb1a55cc4a2dae44dce6e33f4480c296fbc4cb11e1741eeeb1c0b805f197afb",
+  "synthetic_proof_SHA256": "456439ecf2b745888450cb027fb6168f9faaa21879b8c67aea78ad4df6eab6d8",
+  "synthetic_guards_passed": true,
+  "complete_frozen_family_and_BH_BY_independently_checked": true,
+  "unestimable_not_called_negative": true,
+  "separate_P_values_not_called_group_difference": true,
+  "unmatched_eligible_sets_not_used_for_attenuation_fraction": true,
+  "actual_source_pending_rejected_without_output": true,
+  "actual_new_scientific_results_accepted": false,
+  "source_workflow_and_frozen_contract_unchanged": true,
+  "no_individual_records_or_arrays_read": true,
+  "public_push_not_retried": true,
+  "repository_validation": {
+    "observed_UTC": "2026-10-22T05:27:21.825217+00:00",
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "manual_source_privacy_and_SHA_review_passed": true,
+    "same_exact_source_live_observed_UTC": "2026-10-22T05:26:45.239929+00:00",
+    "actual_effects_still_pending": true
+  }
+}
