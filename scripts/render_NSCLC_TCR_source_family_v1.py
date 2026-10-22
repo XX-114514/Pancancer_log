@@ -25,12 +25,14 @@ def cell(result):
     if result.get('rho') is None:
         return 'NA: '+result['status']
     ci = result.get('CI95')
-    return f"{result['rho']:+.3f}; CI "+(f'[{ci[0]:+.3f}, {ci[1]:+.3f}]' if ci else 'NA')
+    prefix = 'coordination40' if result['kind'] == 'coordination' else 'conditional80'
+    return f"{result['rho']:+.3f}; CI "+(f'[{ci[0]:+.3f}, {ci[1]:+.3f}]' if ci else 'NA')+f"; BH {result[prefix+'_BH']:.4g} / BY {result[prefix+'_BY']:.4g}"
 
 
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--task', type=Path, required=True)
+    p.add_argument('--version', type=int, choices=[1, 2], default=1)
     a = p.parse_args()
     t = a.task
     read = lambda name: json.loads((t/name).read_text())
@@ -83,7 +85,7 @@ def main():
         assert v['n'] == original['n'] and v['status'] == original['status'] and v['rho'] == original.get('rho')
     null_ok = all(s['passed_finite_alarm'] for v in calibrations for s in v['scenarios'])
     assert ('WORKING_NULL_ACCEPTED' in terminal['status']) == null_ok
-    out = t/'source_figures_v1'
+    out = t/('source_figures_v'+str(a.version))
     out.mkdir(exist_ok=False)
     rs = list(dict.fromkeys(r for r, e in pairs))
     es = list(dict.fromkeys(e for r, e in pairs))
@@ -125,9 +127,10 @@ def main():
         for cut in [9.5, 19.5, 29.5]:
             ax.axhline(cut, color='#bbbbbb', lw=.8)
     axes[0].set_yticks(range(40), [f'{short(r)} / {short(e)}   n={coverage[r,e]["qualified_author_materials"]}' for r, e in pairs], fontsize=8)
-    axes[0].invert_yaxis()
+    axes[0].set_ylim(39.8, -.8)
     fig.suptitle('GSE243013: complete adjusted reported-expansion family\nPostoperative source exploration; neither direct communication nor predictive clinical gain', fontsize=13)
-    fig.subplots_adjust(left=.28, right=.98, top=.94, bottom=.055, wspace=.13)
+    fig.subplots_adjust(left=.28, right=.98, top=.94, bottom=.075, wspace=.13)
+    fig.text(.63, .015, 'o: qualified interval   |   x: point only, interval unqualified   |   NA: coverage / design unqualified', ha='center', fontsize=10)
     fig.savefig(out/'all40_adjusted_effects.png', dpi=160)
     plt.close(fig)
     status = dict(Counter(v['status'] for v in results))
@@ -136,20 +139,29 @@ def main():
         ci = lookup[r, e, kind].get('CI95')
         return ci is not None and ci[0]*ci[1] > 0
     supported_ci = [v for v in supported if all(stable_ci(v['R_group'], v['E_group'], k) for k in family.KINDS)]
+    captured = {v['author_group']: v for v in measurement['all_author_group_capture']}
+    target_calls = sum(captured[name]['known_TCR_expansion_calls'] for name in ['Treg_POOL', 'CD8_POOL', 'other_CD4_POOL'])
+    auxiliary = read('local_statistics_v1/private_conditional80.json')
+    aux_bh = [v for v in auxiliary if v['conditional80_BH'] < .05]
+    aux_by = [v for v in auxiliary if v['conditional80_BY'] < .05]
     lines = ['# CM02支线：报告克隆扩增的完整来源结果', '',
         '## 本轮回答什么', '',
         '保持2026-10-14免疫图谱CM02 v1（T_whole_TME_primary_tumor）优先。本轮是GSE243013术后来源的作者Treg/CD8细类型内扩增状态解释；原作者已报告相关克隆现象，不当作新发现。源材料未审阅为独立患者，不能声称独立验证、治疗前预测、临床增量、直接通讯或原CM投影。', '',
         '## 测量与可检验分母', '',
-        f"- 全部{measurement['original_TCR_rows']:,}条TCR旁表记录按原双键精确连回RNA；未匹配{measurement['unmatched_TCR_cells']}。", 
+        f"- 全部{measurement['original_TCR_rows']:,}条TCR旁表记录按原双键精确连回RNA；未匹配{measurement['unmatched_TCR_cells']}。",
         '- 作者flag与报告大小的实际边界为≥3；≥2差异全部来自大小2的记录，保留为固定敏感性。没有按病理效果改flag。',
         '- 两张表的CXCL13 CD8命名差异已按精确细胞键解决，不能把字符串缺失当该细类不存在。',
+        f'- 原冻结三个池合计{target_calls:,}个已知调用；另{measurement["original_TCR_rows"]-target_calls:,}条属于本轮未选的RNA类型，未强行纳入。其他CD4背景仅原冻结六类，不能声称已控制全部剩余T状态。',
         '- 已知TCR状态的细胞作为比例分母，未知不补未扩增。克隆大小必要检查与字段语义通过不等于受体序列重建。',
         f'- 完整120分量状态：`{json.dumps(status, ensure_ascii=False)}`。增殖Treg的材料覆盖不足保留NA，不下调资格门槛。', '',
         '![完整覆盖](all40_coverage.png)', '', '## 完整调整后的结果', '',
         f'- 全部实际可拟合设计{len(fitted)}项已重放完整19999次wild与2000次bootstrap，独立R最大数值误差{max(v["max_numeric_error"] for v in audits):.3g}。工作null资格：{null_ok}。',
+        '- 工作null通过只接受预定工作模型下的数值资格，不证明患者独立性。若未通过，以下P/区间仅存计算结果，不能据其支持推断。',
         f'- 主40项IUT BH<.05且三项区间资格通过：{len(supported)}；三项区间都不跨0：{len(supported_ci)}。这些仍为本来源多轮探索，不是全研究FDR或确证。',
         '- 正病理rho表示MPR/pCR方向较高；协调正负表示两类内部扩增比例的同向/反向变化。所有点值均按同一原门槛和完整背景计算。',
         '- 区间依赖作者材料独立假设；未知患者重复可能使区间偏窄。调节后减弱不证明因果中介，也不否认原整体共变的价值。', '',
+        f'- 辅助80项条件病理关联：BH<.05共{len(aux_bh)}项，BY<.05共{len(aux_by)}项；按R/E分量分布为`{json.dumps(dict(Counter(v["kind"] for v in aux_bh)))}`。这是辅助状态关联，不能用它替代未成立的主双状态组合。',
+        '- 多个CD8背景下重复的同一Treg信号使用重叠材料，不能算多次独立复现。全部主和辅助校正值见下表，未选择新的检验家族。', '',
         '![全部调整效应](all40_adjusted_effects.png)', '',
         '|R群|CD8群|材料n|协调rho / CI|R条件病理rho / CI|E条件病理rho / CI|主BH / BY|',
         '|---|---|---:|---|---|---|---|']
@@ -173,7 +185,7 @@ def main():
         all_frozen_slots_coverage_and_complete_adjustments_checked=True,
         actual_complete_random_stream_R_replay_checked=True, full_points_exactly_match_main=True,
         complete_source_report_SHA256=sha(out/'REPORT_zh.md'), source_scientific_values_private=True)
-    (t/'private_full_source_numeric_acceptance_v1.json').write_text(json.dumps(receipt, indent=2)+'\n')
+    (t/('private_full_source_numeric_acceptance_v'+str(a.version)+'.json')).write_text(json.dumps(receipt, indent=2)+'\n')
     print('COMPLETE_SOURCE_NUMERICAL_REVIEW_AND_FIGURES_VISUAL_REVIEW_PENDING')
 
 

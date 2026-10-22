@@ -1,6 +1,6 @@
-## 当前：非序列克隆扩增测量已接受，完整来源解释统计运行中
+## 当前：报告克隆扩增的完整来源家族与科学审阅完成
 
-官方公开processed旁表的本机非序列字段语义、原RNA精确键/标签与原QC/临床角色已实际接受；个体输入和统计数组只本机RAM，未远程传输或保存原文件。新完整统计问题及源码另冻，全部设计装配/三分量完整随机R纯合成接受；同一实际RAM句柄计算中，完整真实效果/独立R/工作null及表图仍待，不称临床或原CM验证。原CM02图谱优先、原身份/Zarr和闭家族保持。TableS1用户后补，public push此前自动审批拒绝未重试，云端待同步。见[run](runs/20261022_CM02_nonsequence_TCR_measurement_v1.md)、[方法](methods/CM02-reported-TCR-expansion-20261022.md)。
+本机非序列测量、原RNA精确键/编码、完整真实固定家族、全部实际随机流独立R/校正和工作null、全表/两图及数值精度解释已完成，原工具exit0/RAM释放。科学结果和分级私有，不将状态关联或组织线索直接升格双状态机制、原CM精确投影、独立患者或预测增量。原CM02图谱优先、原身份/Zarr和闭家族保持，当前无活跃科学worker，整体goal active。下一按证据分级核患者/阶段/同终点入口；GSE288199 TableS1用户后补，public push此前自动审批拒绝未重试，云端待同步。见[run](runs/20261022_CM02_nonsequence_TCR_measurement_v1.md)、[方法](methods/CM02-reported-TCR-expansion-20261022.md)。
 
 ### 以下保留上一阶段观察
 

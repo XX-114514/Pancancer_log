@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE_LOCAL_MEASUREMENT_AND_COMPLETE_SOURCE_FAMILY_NUMERICAL_AND_SCOPE_REVIEW",
+  "observed_UTC": "2026-10-22T00:34:25.500511+00:00",
+  "statistics_started_UTC": "2026-10-22T00:19:53.509408+00:00",
+  "statistics_completed_UTC": "2026-10-22T00:30:42.938055+00:00",
+  "actual_local_worker_exit_code": 0,
+  "actual_local_RAM_released": true,
+  "execution_base_commit": "c20a42c",
+  "frozen_code_committed_snapshot": "6ebad1cc425e723dbc7e688dc16380ad6c4e2973",
+  "frozen_source_code_bound_before_execution": true,
+  "public_runtime_versions": {
+    "Python": "3.13.9",
+    "NumPy": "2.4.1",
+    "pandas": "3.0.3",
+    "R": "4.5.2"
+  },
+  "statistics_contract_SHA256": "6cbb858b3b5c54ec8217355cb120edf07b10a605b10f4026572153b6b3594cbe",
+  "statistics_terminal_SHA256": "80e7c08b6f8a36800578baacd62b60add36e71868f2c3b9fa3407955095730a2",
+  "RAM_release_terminal_SHA256": "0d91ff0959e3ff0dcc4ecc38d33e8882c9071bbc200b0557487b302842e890a9",
+  "complete_numeric_acceptance_SHA256": "205062331e99c859297468357604e53fbd26dd3f71a55db9fb56357c78a345ce",
+  "complete_scientific_and_visual_acceptance_SHA256": "aea5cafe2d0d1c7b3684e2221742ed1e7dc6df349f00bcf292c3feffd93cd565",
+  "frozen_complete_families_and_actual_R_replays_reviewed": true,
+  "all_actual_design_Monte_Carlo_precision_described_without_new_tests": true,
+  "actual_source_figures_visually_reviewed": true,
+  "figure_v2_padding_and_marker_legend_only_no_scientific_recalculation": true,
+  "source_scientific_values_and_ranking_private": true,
+  "no_sequence_original_file_or_individual_array_persistence_or_remote_export": true,
+  "source_postoperative_exploratory_not_independent_patient_direct_communication_or_predictive_validation": true,
+  "original_CM02_identity_and_closed_families_unchanged": true,
+  "GSE288199_author_TableS1_still_pending_user_supply": true,
+  "public_push_previously_rejected_not_retried": true
+}
