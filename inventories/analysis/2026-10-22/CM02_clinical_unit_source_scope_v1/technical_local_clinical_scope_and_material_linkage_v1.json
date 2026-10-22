@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_CLINICAL_QUALIFICATION_COMPLETE_REAL_PROTEIN_INPUT_FAILED_AND_SOURCE_EXIT_CONFIRMED",
+  "observed_UTC": "2026-10-22T01:46:55.592388+00:00",
+  "explicit_new_human_permission_receipt_SHA256": "f6a7e30a005990ae4b27362dca057f7328a10e1f11f399712b0f0c97a46a755d",
+  "frozen_local_clinical_contract_SHA256": "0bb3cc7c842eea606a17b31ebcbd9f55e93f6bfceca1858169c420992b7d31e6",
+  "clinical_source_object_SHA256": "f3c3dbeca7d3e5fadb632f81a65e94e13079c02227aab0900408dc35385c6683",
+  "clinical_qualification_acceptance_SHA256": "76c3eab81c5896a3675ebc30a9ddb88a15217847444f1e24ccc6539aa1461bb5",
+  "frozen_local_exact_linkage_contract_SHA256": "61935461dfa83e1b47ccc92c0ff355ec13541e8ab5605fb613b51193d9a0a80b",
+  "exact_material_linkage_receipt_SHA256": "91a7c5d7003b3f04e9c65262cd9e0285e2fbe33eeacf91242d8cad9e5277119f",
+  "original_public_metadata_whole_SHA256": "24155466454df53d01eb6cbbfcd56abeb45adb68f74e721af22a9dce41040b2f",
+  "source_native_reference_digest_receipt_SHA256": "ede407d6c1fb7f044e779d8fe2a5daa09005e4a02085de09430778a0ab862754",
+  "failed_real_protein_input_receipt_SHA256": "cb3a9a3d22892b7b27513bf05dd01a51d97e640437837b2d87a7e16a95f9f4bf",
+  "exact_protein_worker_absence_receipt_SHA256": "3963595f3f92db33e905063a14e04b0b7e91fe05560fcbc20755d7efead9f2d5",
+  "original_native_registry_unchanged": true,
+  "no_individual_record_persistence_or_upload": true,
+  "all_own_source_counts_and_endpoint_values_private": true,
+  "no_clinical_effects_or_new_model_family": true,
+  "no_original_projects_or_denied_remote_row_transport_or_public_push_retry": true,
+  "official_header_only_scope_SHA256": "bc446b2c804b4cd1f28ba62c8d1afe061b969a7f67aaff0754822396890decb6",
+  "official_record_two_small_range_scope_SHA256": "56a96596a5344dce89fa665fdbebfcd8afa37d585cd480ed48d38ddd7b99e406",
+  "full_protein_input_not_restarted_or_accepted": true
+}
