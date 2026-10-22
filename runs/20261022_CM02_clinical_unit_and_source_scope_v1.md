@@ -244,3 +244,16 @@ v1源纯合成事件2026-10-22T02:54:22.731807Z UTC /2026-10-22T10:54:22.731807+
 继续同一实际v7空间输入，未因等待重启；完整官方MD5、原生结构及真实抗体/单位资格仍待。只修改待办、当前状态、临床方法和同任务轨迹，旧未答记录保留为当时历史；新用户答复收据仅私有，无个体内容或新科学效果。三个无关未跟踪文件保留，公共push此前拒绝未重试，普通本地检查/归档待，整体goal active。建议commit: Record deferred RFS definitions and spatial-first reminder checkpoint。
 
 本节点归档观察2026-10-22T03:15:10Z UTC /2026-10-22T11:15:10+08:00 UTC+8：完整仓库检查实际exit0、0errors/1既有warning；六文件diff及隐私检查通过，只登记用户安排与临床入口提醒。空间同一真实进程仍live，完整输入/MD5/schema待；普通本地提交，不重试此前受拒push。
+
+
+### 完整官方输入、真实原生结构及第1schema-only阶段接受
+
+观察2026-10-22T04:01:26.856175+00:00 UTC /2026-10-22T12:01:26.856175+08:00 UTC+8。前一goal turn为同一live句柄verified wait；本轮多次核同一实际输入后取得完整字节事件2026-10-22T03:55:05.214038Z UTC /11:55:05.214038+08:00，官方MD5/整长实际接受2026-10-22T03:55:07.867560Z UTC /11:55:07.867560+08:00；原生schema于03:55:35Z UTC /11:55:35+08:00就绪。03:55:56.813380Z UTC /11:55:56.813380+08:00快照核精确源父/R子进程及预先由冻结源码AST拼接推导的读取代码SHA一致，原生对象源RAM持有。具体科学维度/字段/面板来源汇总私有，未释放或取得R终态。
+
+新增qualify_LN_native_metadata_schema_RAM_v1.R仅接当前原生对象，输出物理panel/assay和字段结构；不选factor levels/个体/临床值/强度/坐标/邻居矩阵，不打开外部存储。纯合成于2026-10-22T03:58:05Z UTC /11:58:05+08:00 source R4.3.3 exit0，独立固定字符串预期和因子/强度不输出、异常字段控制字符处理接受。纯准备审阅中将潜在转义歧义改为literal character code，发生在测试/真实使用之前，无真实错误采用。工具对未知schema只留未审标记，阶段错误只返回错误类而不杀持有对象。
+
+合同/code SHA先冻结，03:58:43.089040Z UTC /11:58:43.089040+08:00仅发布通用phase001.R和hash合同；对精确父/子进程、完整输入/读取代码及阶段0心跳守卫，meta最后原子link发布。实际阶段03:58:44Z UTC /11:58:44+08:00完成，03:59:00.687951Z UTC /11:59:00.687951+08:00只读快照核阶段1和同一live R。各次SSH argv形态为现有只读代理、ClearAllForwardings/BatchMode和既有源Python/R，通过stdin传通用代码/合同，无个体上行或新网络配置。新源码SHA和完整输入SHA/技术收据见[收据](../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_native_input_schema_phase001_v7.json)。
+
+本节点实质progress：真实完整输入/结构接受，实际物理面板与候选层级已明确，下一方案改为按可测通道核操作状态及原/修正患者分区，不把不可测RNA状态认作精确复现。两assay变换、数值质量、作者类型值、临床类别/嵌套及坐标单位仍未接受，尚未新效果；第2阶段待另冻，不读组成派生niche作独立真值。原CM02/身份/Zarr/全部闭家族保持，临床仅资格/RFS入口资料提醒及另一TableS1后补，public push原拒绝未重试。三个无关未跟踪文件保持；完整仓库/隐私diff及普通本地commit待，goal active。建议commit: Accept native spatial input and qualify schema before state measurements。
+
+归档检查观察2026-10-22T04:02:41Z UTC /2026-10-22T12:02:41+08:00 UTC+8：完整仓库实际exit0、0errors/1既有warning，新增R源码19cb3597…与冻结/纯合成/实际阶段及技术JSON SHA一致，完整隐私diff/git diff --check通过。04:02:38.307144Z精确源父/R子进程及实时阶段1心跳再核live，未派发phase002/未release，原生对象留RAM；当前并行已有文档提交9379fa9与三个无关未跟踪文件保持。仅普通本地commit，public push原拒绝未重试，goal active。

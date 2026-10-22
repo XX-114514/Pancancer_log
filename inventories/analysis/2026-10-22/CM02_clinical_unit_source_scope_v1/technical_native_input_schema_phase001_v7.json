@@ -1,0 +1,20 @@
+{
+  "kind": "NATIVE_INPUT_AND_SCHEMA_ONLY_PHASE001_TECHNICAL_RECEIPT",
+  "observed_UTC": "2026-10-22T04:01:26.856175+00:00",
+  "official_input_bytes": 727288542,
+  "official_MD5": "6044f911d6a5d27a5c2919d6343ef34a",
+  "complete_input_SHA256": "11d1b810f7c1f2e9ade2c174fdec0a8c2cebd1c6b7cdb158b2e18a9c4fbdcdfd",
+  "complete_input_UTC": "2026-10-22T03:55:07.867560+00:00",
+  "native_schema_ready_UTC": "2026-10-22T03:55:35+00:00",
+  "runtime_R": "4.3.3",
+  "native_reader_SHA256": "e348ee317297fd2f28bc625f7da6f54a2b5b177da657bed5870b5cd7da2d4996",
+  "schema_only_stage_code_SHA256": "19cb359712a10a61130ad1e9be9b61bab0faea76b641233c3b3143ba6de1ec28",
+  "synthetic_acceptance_SHA256": "7246690ea0a5f839c0c3d28f53525f30ab44c72d9abe104bff13ee483330364b",
+  "source_only_acceptance_SHA256": "e57192ec1aaa22010dc0a7c3801d94202204090e7d313b559d46e92e5ce07887",
+  "same_exact_source_and_R_child_verified": true,
+  "native_object_held_source_process_RAM_only": true,
+  "individual_identifiers_values_and_factor_levels_not_exported": true,
+  "no_scientific_dimensions_marker_results_or_patient_counts_in_public_receipt": true,
+  "no_state_or_spatial_or_clinical_effects_accepted": true,
+  "source_R_exit_and_RAM_release_pending": true
+}

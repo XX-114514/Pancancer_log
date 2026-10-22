@@ -3638,3 +3638,12 @@ v7恢复归档检查：观察2026-10-22T02:48:27.050128+00:00 UTC /2026-10-22T10
 检查命令为git diff --check及完整validate_repository，实际终态待。未新增个体读取/效应/控制阶段，未重启live输入；原CM02/身份/Zarr/闭家族保持。三个无关未跟踪文件保留，普通本地归档待，public push此前拒绝不重试，整体goal active。建议commit: Record deferred RFS definitions and spatial-first reminder checkpoint。
 
 归档核查观察2026-10-22T03:15:10Z UTC /2026-10-22T11:15:10+08:00 UTC+8：完整仓库检查实际exit0，0errors/1既有warning；git diff --check及六文件隐私/diff审阅接受，新增仅用户安排/方法与轨迹。当前同一实际输入仍live，完整性/原生尚待，不把技术进度作为科学结果；普通本地commit，公共push此前拒绝未重试。
+
+
+### 真实完整输入/原生结构与schema-only实际阶段
+
+观察2026-10-22T04:01:26.856175+00:00 UTC /2026-10-22T12:01:26.856175+08:00 UTC+8。前一goal turn verified wait；本轮同一输入完成官方MD5/整长并成功原生解析，精确父/R子进程、原生读取代码及心跳接受。新增schema-only R工具、纯合成/冻结合同和第1真实阶段已完成，独立字符串预期核无因子/强度输出；实际科学维度/面板/层级私有，未新状态或效果、未释放R。完整事件/命令结构/证据SHA见[run](../../../runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)。
+
+检查原bootstrap/dispatcher/两已验测量与几何工具、真实结构快照和现有方法/索引；修改STATUS/TODO/ROADMAP、源资格方法及同任务run/daily，新增通用R及脱敏技术收据。下一在现有对象第2阶段核强度/变换、作者类型和原/修正患者分区与LN/图像嵌套；不重下或重开旧效果家族。完整仓库检查、隐私diff与普通本地提交待；无关未跟踪文件保留，public push此前拒绝不重试，目标active，本轮分类progress。建议commit: Accept native spatial input and qualify schema before state measurements。
+
+原生阶段归档核查观察2026-10-22T04:02:41Z UTC /2026-10-22T12:02:41+08:00 UTC+8：完整仓库实际exit0、0errors/1既有warning，源码/冻结合同/纯合成与实际阶段及技术收据SHA和隐私diff接受；git diff --check无错。04:02:38.307144Z再次只读核同一精确源R/父进程与实时阶段1心跳，尚未第2阶段或release，剩余两个控制阶段。并行已有9379fa9文档提交及三个无关未跟踪文件保留，不改其内容；本节点普通本地commit，public push此前拒绝不重试。
