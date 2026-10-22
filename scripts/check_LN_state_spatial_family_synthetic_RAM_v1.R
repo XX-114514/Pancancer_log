@@ -1,0 +1,46 @@
+check_LN_state_spatial_family_synthetic_RAM <- function() {
+  suppressPackageStartupMessages(library(SingleCellExperiment))
+  methods::setClass("SyntheticLNStateSpatial",contains="SingleCellExperiment",slots=c(spatialCoords="matrix"))
+  markers<-c("CD4","CD8a","CD14","CD68","CD163","CD19","CD56","SMA","CD45RA","CD45RO","FoxP3","CTLA4","MKI67","PD1","TIM3","CCR7","CD127")
+  meta<-do.call(rbind,lapply(seq_len(7),function(p)do.call(rbind,lapply(c("N1","N2"),function(st)data.frame(patient=paste0("FAKE_PATIENT_",p),node=paste0("REUSED_NODE_",st),image=paste0("FAKE_IMAGE_",p,"_",st),station=st,fine=rep(c("D4","D8","B","M"),each=40),j=rep(seq_len(40),4),area=50+(rep(seq_len(40),4)*7)%%13,stringsAsFactors=FALSE)))))
+  a<-matrix(1,length(markers),nrow(meta),dimnames=list(markers,NULL))
+  a["CD4",meta$fine=="D4"]<-10;a["CD8a",meta$fine=="D8"]<-10;a["CD19",meta$fine=="B"]<-10;a[c("CD14","CD68","CD163"),meta$fine=="M"]<-10
+  a["CD45RO",meta$fine%in%c("D4","D8")]<-10
+  for(m in c("FoxP3","CTLA4","MKI67"))a[m,meta$fine=="D4"]<-1+meta$j[meta$fine=="D4"]/5
+  for(m in c("PD1","TIM3"))a[m,meta$fine=="D8"]<-1+meta$j[meta$fine=="D8"]/5
+  a["MKI67",meta$fine=="D8"]<-1+(41-meta$j[meta$fine=="D8"])/5
+  xy<-cbind(meta$j*3+ifelse(meta$fine=="D8",.2,0),ifelse(meta$fine=="D4",0,ifelse(meta$fine=="D8",.5,ifelse(meta$fine=="B",30,60))))
+  sce<-SingleCellExperiment(assays=list(counts=a,asin=asinh(a)),colData=S4Vectors::DataFrame(meta));x<-methods::new("SyntheticLNStateSpatial",sce,spatialCoords=xy)
+  pc<-list(physical_panel=markers,fine_field="fine",image_field="image",patient_field="patient",area_field="area",minimum_cells_per_image_group=20L,minimum_images=5L,minimum_patients=3L,minimum_cells=100L,minimum_image_agreement=.6,lineage_margin=.10,minimum_CD45_relative_rank=.50,minimum_parent_cells_per_image=20L)
+  primary<-derive_LN_hierarchical_protein_states_RAM(x,pc,"counts");adjusted<-derive_LN_hierarchical_protein_states_RAM(x,pc,"counts",area_adjust=TRUE)
+  stopifnot(identical(unlist(primary$summary$resolved_parent_groups$CD4),"D4"),identical(unlist(primary$summary$resolved_parent_groups$CD8a),"D8"))
+  stopifnot(sum(primary$internal$states$R0_FOXP3_CTLA4)==14*10,sum(primary$internal$states$E0_PD1_TIM3)==14*12,sum(primary$internal$states$E1_CD8_MKI67)==14*10,sum(primary$internal$states$E2_CCR7_CD127)==0)
+  constant<-x;SummarizedExperiment::colData(constant)$area<-rep(50,ncol(x));cq<-derive_LN_hierarchical_protein_states_RAM(constant,pc,"counts",area_adjust=TRUE)
+  stopifnot(all(vapply(cq$internal$states,function(z)!any(z),logical(1))))
+  sc<-list(image_field="image",patient_field="patient",node_field="node",station_field="station",k_values=c(2L,3L,5L),primary_k=3L,minimum_parent_cells=20L,minimum_state_cells=2L,minimum_cases=5L,bootstrap_replicates=2000L,seed=20261022L,absolute_deadline_UTC=format(Sys.time()+600,tz="UTC",usetz=FALSE))
+  production<-measure_LN_state_spatial_family_RAM(x,list(primary=primary,area_adjusted=adjusted),sc)
+  audit<-audit_LN_state_spatial_family_RAM(x,production,sc,pc)
+  stopifnot(audit$status=="PASS_FULL_FROZEN_FAMILY_NUMERIC_AND_GRAPH_AUDIT",length(production$summary$primary_rows)==27L)
+  rows<-production$summary$primary_rows
+  pos<-Filter(function(z)z$estimand=="conditional"&&grepl("R0_.*__E0_",z$pair),rows)[[1]]
+  neg<-Filter(function(z)z$estimand=="conditional"&&grepl("R0_.*__E1_",z$pair),rows)[[1]]
+  unavailable<-Filter(function(z)grepl("__E2_",z$pair),rows)
+  stopifnot(pos$median_effect>0,neg$median_effect<0,all(vapply(unavailable,function(z)!is.finite(z$exact_sign_p),logical(1))))
+  tiny<-x[,seq_len(8)];tc<-pc;tc$minimum_images<-1L;tc$minimum_patients<-1L;tc$minimum_cells<-1L
+  tq<-derive_LN_hierarchical_protein_states_RAM(tiny,tc,"counts");tp<-measure_LN_state_spatial_family_RAM(tiny,list(primary=tq,area_adjusted=tq),sc)
+  stopifnot(all(vapply(tp$summary$primary_rows,function(z)z$cases==0L&&!is.finite(z$exact_sign_p),logical(1))))
+  ta<-audit_LN_state_spatial_family_RAM(tiny,tp,sc,tc);stopifnot(ta$status=="PASS_FULL_FROZEN_FAMILY_NUMERIC_AND_GRAPH_AUDIT")
+  z<-LN_exact_direction_summary_RAM(rep(0,7),7,2000);stopifnot(z$summary$exact_sign_p==1,z$summary$zero_cases==7L)
+  p<-LN_exact_direction_summary_RAM(1:7,7,2000);m<-LN_exact_direction_summary_RAM(-(1:7),7,2000);stopifnot(abs(p$summary$exact_sign_p-2/128)<1e-15,p$summary$exact_sign_p==m$summary$exact_sign_p)
+  na<-LN_exact_direction_summary_RAM(numeric(),7,2000);stopifnot(!is.finite(na$summary$exact_sign_p))
+  md<-data.frame(image=c("a","b","c","d"),patient=c("A","A","A","B"),node=c("SAME","SAME","SECOND","SAME"),station=c("N1","N1","N2","N1"))
+  rr<-lapply(c(0,10,-1,20),function(z)list(whole=z,conditional=z))
+  stopifnot(identical(unname(LN_patient_effects_RAM(rr,md,"whole")),c(2,20)),identical(unname(LN_audit_cases_RAM(rr,md,"whole")),c(2,20)))
+  bh<-LN_audit_BH_RAM(c(.01,.02,NA,.20));stopifnot(max(abs(bh[c(1,2,4)]-c(.04,.04,4*.20/3)))<1e-15)
+  serial<-jsonlite::toJSON(production$summary,auto_unbox=TRUE,null="null");stopifnot(!grepl("FAKE_PATIENT",serial),!grepl("FAKE_IMAGE",serial),!grepl("REUSED_NODE",serial))
+  list(status="PASS_COMPLETE_HIERARCHICAL_STATE_SPATIAL_FAMILY_SYNTHETIC",completed_UTC=format(Sys.time(),tz="UTC",usetz=TRUE),runtime_R=as.character(getRversion()),
+    exact_cell_state_membership_independent_of_subgroup_resolution=TRUE,constant_area_and_uninformative_marker_not_negative=TRUE,
+    positive_negative_and_unestimable_graph_cases_checked=TRUE,all_zero_effect_p_one_and_exact_sign_truth_checked=TRUE,
+    repeated_node_labels_and_unequal_ROI_aggregation_oracle_checked=TRUE,complete_sparse_graph_exact_distance_and_case_statistic_audit=audit,
+    summary_contains_no_individual_identifiers=TRUE,no_real_native_object_accessed=TRUE)
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "FULL_FROZEN_SPATIAL_FAMILY_NUMERIC_AUDIT_AND_RAM_EXIT_ACCEPTANCE",
+  "observed_UTC": "2026-10-22T05:06:04.230730+00:00",
+  "production_event_UTC": "2026-10-22T04:48:32+00:00",
+  "audit_event_UTC": "2026-10-22T04:49:16+00:00",
+  "explicit_release_event_UTC": "2026-10-22T05:05:11.199736+00:00",
+  "source_exit0_observed_UTC": "2026-10-22T05:05:17.412459+00:00",
+  "exact_process_exit_observed_UTC": "2026-10-22T05:05:30.861889+00:00",
+  "family_contract_SHA256": "a8c7073d62eef676a819a384139f2ea11d9016f5a24f87bff6a61f246c5ff74e",
+  "source_code_SHA256": {
+    "derive_LN_hierarchical_protein_states_RAM_v2.R": "532ae2c42067b94a5500adc545c5c51f900617a2eccd2176fce12458313ab9bd",
+    "measure_LN_state_spatial_family_RAM_v1.R": "a460f85987f1c3286d0eab1fbad55597d717bec67f3748a97b0484a0912f6641",
+    "audit_LN_state_spatial_family_RAM_v1.R": "51853384a4b30cb86dc6e5789a2ece1321a700ec85aae5e272e4875658971315",
+    "check_LN_state_spatial_family_synthetic_RAM_v1.R": "a8deb7bdb7060e9d6f7f7aba6f119214b7f7018725179a5829d511cd504ce122",
+    "plot_LN_hierarchical_spatial_source_summary_v1.py": "960f67b0742c06d5c595f7d27994727d98bf41863ebcd00b9c2ae14454da7c4e"
+  },
+  "planned_primary_tests": 27,
+  "all_frozen_slots_and_sensitivities_returned": true,
+  "independent_numeric_graph_aggregation_and_statistic_audit_passed": true,
+  "exact_distance_oracle_is_sampled_per_image_not_every_cell": true,
+  "source_aggregate_figures_visually_reviewed": true,
+  "source_exit_code": 0,
+  "original_parent_and_R_processes_independently_absent": true,
+  "original_RAM_deadline_not_extended": true,
+  "source_individual_arrays_saved": false,
+  "source_results_and_candidate_rankings_public": false,
+  "legacy_input_terminal_name_is_not_a_scientific_scope_attestation": true,
+  "clinical_or_mechanistic_validation_completed": false,
+  "public_push_not_retried": true,
+  "overall_goal_status": "active",
+  "repository_validation": {
+    "observed_UTC": "2026-10-22T05:07:09.715238+00:00",
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "manual_privacy_and_source_hash_review_passed": true,
+    "unrelated_untracked_files_preserved": true
+  }
+}

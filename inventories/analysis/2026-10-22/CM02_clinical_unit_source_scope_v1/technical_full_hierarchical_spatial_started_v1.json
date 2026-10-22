@@ -1,0 +1,24 @@
+{
+  "kind": "FROZEN_HIERARCHICAL_SPATIAL_FAMILY_AND_AUDIT_TECHNICAL_START",
+  "observed_UTC": "2026-10-22T04:51:13.781847+00:00",
+  "actual_published_UTC": "2026-10-22T04:47:12.494810+00:00",
+  "family_contract_SHA256": "a8c7073d62eef676a819a384139f2ea11d9016f5a24f87bff6a61f246c5ff74e",
+  "source_code_SHA256": {
+    "derive_LN_hierarchical_protein_states_RAM_v2.R": "532ae2c42067b94a5500adc545c5c51f900617a2eccd2176fce12458313ab9bd",
+    "measure_LN_state_spatial_family_RAM_v1.R": "a460f85987f1c3286d0eab1fbad55597d717bec67f3748a97b0484a0912f6641",
+    "audit_LN_state_spatial_family_RAM_v1.R": "51853384a4b30cb86dc6e5789a2ece1321a700ec85aae5e272e4875658971315",
+    "check_LN_state_spatial_family_synthetic_RAM_v1.R": "a8deb7bdb7060e9d6f7f7aba6f119214b7f7018725179a5829d511cd504ce122"
+  },
+  "complete_synthetic_acceptance_SHA256": "f46912001ac0703c22c27f2da540cd9426c82201251c020190610f35e4e168bd",
+  "two_control_stage_SHA256": [
+    "a84753dd47a5766569756a2808bcf980cad6974d080c9791ca74586082ac4012",
+    "d1b9b7e23e1252aee7c385ce379ef3b6fa69f9d73fd49aed1145af605f65cea2"
+  ],
+  "planned_primary_tests": 27,
+  "both_roles_same_family_locked_before_execution": true,
+  "same_exact_source_R_child_verified": true,
+  "no_individual_or_case_graph_state_bootstrap_arrays_saved_or_uploaded": true,
+  "source_results_and_resolved_annotations_private": true,
+  "actual_scientific_and_independent_audit_results_pending": true,
+  "original_RAM_deadline_not_extended": true
+}
