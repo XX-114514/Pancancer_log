@@ -58,6 +58,20 @@ def positive_support(row, correction='BH'):
             and finite(row[correction]) and row[correction] < .05)
 
 
+def negative_support(row, correction='BH'):
+    return (row['status'] == 'ESTIMABLE' and finite(row['median_effect']) and row['median_effect'] < 0
+            and finite(row['bootstrap_upper']) and row['bootstrap_upper'] < 0
+            and finite(row[correction]) and row[correction] < .05)
+
+
+def supported_direction(row, correction='BH'):
+    if positive_support(row, correction):
+        return 'positive'
+    if negative_support(row, correction):
+        return 'negative'
+    return 'not_established' if estimable(row) else 'not_estimable'
+
+
 def estimable(row):
     return row['status'] == 'ESTIMABLE' and finite(row['primary_p'])
 
@@ -67,33 +81,50 @@ def interpret_endpoint(records, endpoint):
     local = records[endpoint, NULL]
     contrast = records[endpoint, 'cycling_minus_noncycling']
     main_yes, local_yes = positive_support(main), positive_support(local)
+    main_negative, local_negative = negative_support(main), negative_support(local)
     if not estimable(main):
         label = 'WITHIN_MKI67_COMPARISON_NOT_ESTIMABLE'
     elif not estimable(local):
         label = 'LOCAL_NULL_NOT_ESTIMABLE_WITHIN_MKI67_SUPPORT_REPORTED_SEPARATELY'
     elif main_yes and local_yes:
         label = 'SOURCE_SPECIFIC_STATE_PAIR_RETAINED_UNDER_LOCAL_COMPOSITION_NULL'
+    elif main_negative and local_negative:
+        label = 'SOURCE_SPECIFIC_NEGATIVE_STATE_ASSOCIATION_RETAINED_UNDER_LOCAL_COMPOSITION_NULL'
+    elif (main_yes and local_negative) or (main_negative and local_yes):
+        label = 'SUPPORTED_DIRECTIONS_DIFFER_ACROSS_ESTIMANDS_AND_POTENTIALLY_DIFFERENT_ELIGIBLE_SETS'
     elif main_yes:
         label = 'WITHIN_MKI67_SUPPORT_LOCAL_CONDITIONAL_TEST_NOT_SUPPORTED'
     elif local_yes:
         label = 'LOCAL_CONDITIONAL_SUPPORT_WITHOUT_MAIN_COMBINED_SUPPORT'
+    elif main_negative:
+        label = 'WITHIN_MKI67_NEGATIVE_ASSOCIATION_WITHOUT_LOCAL_CONDITIONAL_SUPPORT'
+    elif local_negative:
+        label = 'LOCAL_CONDITIONAL_NEGATIVE_ASSOCIATION_WITHOUT_MAIN_COMBINED_SUPPORT'
     else:
-        label = 'NO_JOINT_SUPPORT_UNDER_CURRENT_SECONDARY_FAMILY'
+        label = 'NO_SUPPORTED_DIRECTION_UNDER_CURRENT_SECONDARY_FAMILY'
     # Differences between two P values never establish a difference between strata.
     contrast_supported = (estimable(contrast) and finite(contrast['BH']) and contrast['BH'] < .05
                           and finite(contrast['bootstrap_lower']) and finite(contrast['bootstrap_upper'])
                           and (contrast['bootstrap_lower'] > 0 or contrast['bootstrap_upper'] < 0))
     return dict(endpoint=endpoint, evidence_label=label,
+        within_MKI67_combined_supported_direction_BH=supported_direction(main),
+        local_composition_supported_direction_BH=supported_direction(local),
         within_MKI67_combined_support_BH=main_yes, local_composition_support_BH=local_yes,
         within_MKI67_combined_support_BY=positive_support(main, 'BY'),
         local_composition_support_BY=positive_support(local, 'BY'),
+        within_MKI67_combined_negative_support_BH=main_negative,
+        local_composition_negative_support_BH=local_negative,
+        within_MKI67_combined_negative_support_BY=negative_support(main, 'BY'),
+        local_composition_negative_support_BY=negative_support(local, 'BY'),
         MKI67_remaining_stratum_support=positive_support(records[endpoint, 'noncycling']),
         MKI67_high_stratum_support=positive_support(records[endpoint, 'cycling']),
         direct_between_stratum_difference_supported=contrast_supported,
         direct_between_stratum_difference_direction=('high_stronger' if contrast['median_effect'] > 0 else 'remaining_stronger') if contrast_supported else 'not_established',
         patient_leave_one_out_positive_main=(finite(main.get('leave_one_case_median_min')) and main['leave_one_case_median_min'] > 0),
         patient_leave_one_out_positive_local=(finite(local.get('leave_one_case_median_min')) and local['leave_one_case_median_min'] > 0),
-        note='Direct and local-null rows may use different eligible images. No attenuation fraction or cross-grid effect difference is inferred.')
+        patient_leave_one_out_negative_main=(finite(main.get('leave_one_case_median_max')) and main['leave_one_case_median_max'] < 0),
+        patient_leave_one_out_negative_local=(finite(local.get('leave_one_case_median_max')) and local['leave_one_case_median_max'] < 0),
+        note='Direct and local-null rows may use different eligible images. No attenuation fraction, cross-grid effect difference, biological repulsion or directional reversal is inferred.')
 
 
 def main():
@@ -130,6 +161,7 @@ def main():
                         'A conditional-null effect is a centered log enrichment factor, not the uncentered MH odds ratio.',
                         'Eligible sets can differ. No attenuation percentages or cross-scale hypothesis tests are added.',
                         'BH covers the15 planned secondary tests, not the full exploration history.',
+                        'Supported negative associations remain visible; spatial depletion is not proof of active repulsion. Opposite directions from different estimands or eligible sets do not establish reversal.',
                         'No endpoint is labelled direct communication, immune suppression, resistance or clinical prediction.'])
     target = task/'private_LN_specificity_source_evidence_summary_v1.json'
     assert not target.exists()

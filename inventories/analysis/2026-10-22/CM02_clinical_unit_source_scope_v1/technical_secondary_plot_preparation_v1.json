@@ -1,0 +1,34 @@
+{
+  "status": "GENERIC_SECONDARY_SOURCE_FIGURES_PREPARED_ACTUAL_RESULTS_PENDING",
+  "observed_UTC": "2026-10-22T06:36:10.003348+00:00",
+  "observed_UTC_plus_8": "2026-10-22T14:36:10.003348+08:00",
+  "synthetic_render_event_UTC": "2026-10-22T06:34:45.664445+00:00",
+  "renderer_SHA256": "be606db92763208f956b4ff7f1073a1bf929f1a2e1836f12933ae3b5ea1361f9",
+  "synthetic_execution_SHA256": "0739bc885df8f059cb7bd432d49a7793c05a994772b14daa4d816ed559019d86",
+  "synthetic_visual_QA_SHA256": "34d8e162cc10a554c26f15ae8a412dad56cf26deb3867213efad38e781d0e786",
+  "frozen_R_SHA256_unchanged": "17acaacaf3abb7f2f1db4f00771be385f0817e691a1cbb42ecd31550ff229c91",
+  "source_parent_live_observation_UTC": "2026-10-22T06:35:31.685312+00:00",
+  "synthetic_checks": [
+    "all planned main rows and BH/BY checked",
+    "pending actual source exit and audit refused",
+    "null coverage exceeding direct coverage refused before writing",
+    "missing endpoint and degenerate null retained",
+    "point outside its percentile interval retained without clipping"
+  ],
+  "visual_scope": "three synthetic aggregate PNGs actually viewed, not actual source result figures",
+  "unchanged": [
+    "statistical R and current execution",
+    "fixed states/endpoints/seeds",
+    "clinical qualification only and entry reminders",
+    "original CM02, identities and Zarr"
+  ],
+  "privacy": "generic code and technical provenance only; scientific actual counts/effects/figures stay private; no individual arrays or public push",
+  "synthetic_render_event_UTC_plus_8": "2026-10-22T14:34:45.664445+08:00",
+  "source_parent_live_observation_UTC_plus_8": "2026-10-22T14:35:31.685312+08:00",
+  "synthetic_fixture_revision": "first draft null counts were inconsistent with their direct gate; artificial examples corrected and subset refusal added; no statistical R change",
+  "direction_guard_event_UTC": "2026-10-22T06:37:44.587410+00:00",
+  "direction_guard_event_UTC_plus_8": "2026-10-22T14:37:44.587410+08:00",
+  "interpreter_SHA256": "569585ad80f958d9a14eed822f1e55e2ca4fca09011fc75414b009134d8c769b",
+  "synthetic_direction_guard_SHA256": "feda5f3790dfe1c4ac32b395c73fe9c8c2bf5a1e42df4d87e2e8c18b03b34c4a",
+  "direction_guard_scope": "positive, negative, opposite-supported, missing-null and unsupported directions, synthetic only; no new scientific test"
+}
