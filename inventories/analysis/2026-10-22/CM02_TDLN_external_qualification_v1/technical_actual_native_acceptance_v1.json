@@ -1,0 +1,29 @@
+{
+  "kind": "EXTERNAL_TDLN_COMPLETED_INPUT_AND_BOUND_MEASUREMENT_ACCEPTANCE",
+  "observed_UTC": "2026-10-22T23:15:38.817721+00:00",
+  "observed_UTC_plus_8": "2026-10-23T07:15:38.817721+08:00",
+  "input_identity_event_UTC": "2026-10-22T13:03:31.023357+00:00",
+  "source_completion_event_UTC": "2026-10-22T13:04:07.854697+00:00",
+  "actual_exit_event_UTC": "2026-10-22T13:04:18.616679+00:00",
+  "actual_exit_code": 0,
+  "source_R_exit_code": 0,
+  "whole_official_MD5_verified": true,
+  "input_SHA256": "e3bf8fc5d27a3c3c9bfebe4657ba14b5049bc9e84e2692fc5f001e73d7473bb6",
+  "native_payload_RAM_released_producer_proof": true,
+  "acceptance_consumes_bound_proofs_not_independent_payload_rehash": true,
+  "no_new_state_spatial_or_clinical_effect": true,
+  "new_control_SSH_check": "TIMEOUT_NOT_A_SOURCE_FAILURE_OR_PROCESS_ABSENCE_PROOF",
+  "evidence_SHA256": {
+    "private_complete_input_identity_v1.json": "1b4b51b1f6e3e9e97527092fdda12e1824a34bf86ad1a8b0bf3881b9ab18bd40",
+    "private_complete_source_qualification_v1.json": "fb2734d4940736e25f246e841b0e2ea007a1a1e225873d5fef0815030b2ef492",
+    "private_actual_exit_v1.json": "2c681fc62de1f3948542f402f55fb44f973ffac473db47124aa23cb0b502103f",
+    "private_accepted_measurement_qualification_v1.json": "a5770c21ded12c428b55a4e869f97c468556821452770cfccce69099a212d25d",
+    "private_scientific_measurement_review_v1.json": "9c5c1ac754e86a3464fe4da8f65f49a57fbbf7d643e6c9d11d153d788f08f4a6",
+    "private_exact_source_after_actual_exit_v1.json": "9840dd3a8c49cd24a26ce79df34f8dc7ea6e0a8e9b8e7045c19d2a4c7780685e",
+    "private_current_control_connectivity_v1.json": "d4a9af1be84b439a2386fc692803b231b1c0629b4fc70230bc6e9ca997dfa9d4",
+    "private_control_route_comparison_v1.json": "36c314e4a023e5e0a607237bfba5418dc9641db8c66e8258987d8d0f3682fcec",
+    "private_prospective_gated_spatial_extension_plan_v1.json": "712b1eecf1875c3d6186a65154d4d0737f82c578a0137052f25729cb923913fa"
+  },
+  "current_route_comparison": "DIRECT_AND_EXISTING_PROXY_BANNER_TIMEOUT_BEFORE_AUTHENTICATION",
+  "UI_app_state_not_accepted_due_to_tool_timeout": true
+}
