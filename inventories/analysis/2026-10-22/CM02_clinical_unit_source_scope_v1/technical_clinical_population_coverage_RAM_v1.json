@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE_LOCAL_CLINICAL_FOLLOWUP_COVERAGE_QUALIFICATION_ONLY_NO_EFFECTS",
+  "observed_UTC": "2026-10-22T02:25:37.739641+00:00",
+  "actual_completion_UTC": "2026-10-22T02:24:48.516817+00:00",
+  "human_permission_scope": "Named public table clinical qualification only in local RAM",
+  "code_SHA256": {
+    "qualify_NSCLC_followup_population_coverage_RAM_v1.py": "adc808f2762f798d13fd90f48634f2b11dde499e812e0d75e146d0fbd32dedec",
+    "qualify_NSCLC_clinical_columns_local_RAM_v3.py": "8364ff1cb55cd679dd30bc1145ebf8fddfcd01f556a944993fee3f9fe9448c26",
+    "NSCLC_selected_clinical_RAM_v2.py": "3796d66673cc2c91a9d5dc2bbb8bc844a7a5e10a93f12814a2f54f1e38ce3b90",
+    "qualify_NSCLC_original_author_followup_v1.py": "f2e09985fcbfd79babc3b7df94ede2522051c9e0515f10d2864c45e2ec472799",
+    "run_NSCLC_TCR_local_RNA_bridge_v1.py": "e133e78c4f91e23bf7c2544c4b4783d6df1440d1fbe0c67621ba89fc6512513d",
+    "NSCLC_TCR_local_RNA_bridge_v1.py": "4b38729f51ba7c2f53981c445acf92f3cdae42b1e4d8c5886ae0c411660d5cba",
+    "qualify_NSCLC_reported_TCR_expansion_RAM_v1.py": "16669340fca85f79cf3b2c14ff6ce1f7e5197604f46389e3befb027576e1f3d9"
+  },
+  "frozen_contract_SHA256": "e5bdc380fc3323ff2ab9d42538aa52677482de4f0113c3b8e587015d2181a9d0",
+  "source_aggregate_receipt_SHA256": "f1e296b4a6d4cd56c5af85b066c61b67b4c3fd7efb5fc4a961b42ef799447e4c",
+  "independent_synthetic_receipt_SHA256": "0a6fbf515cf2fc6bc68c70a1b4a59de08cd449430f6231e9762459e3b81b1a99",
+  "private_acceptance_SHA256": "37cd5bd968c78c9649414e6ce4217f197c8b475605e7bf906ce4a4158b30b198",
+  "actual_tool_exit_code": 0,
+  "local_RAM_released_by_process_exit": true,
+  "same_immutable_public_inputs_and_source_cohort_fingerprints_reused": true,
+  "independent_counter_groupby_and_selected_CSV_lexer_checks_passed": true,
+  "clinical_records_only_no_cell_omics_clone_or_programme_fields": true,
+  "no_individual_rows_or_per_record_hashes_saved_uploaded_or_displayed": true,
+  "no_workbook_created_or_modified": true,
+  "scientific_counts_effects_and_candidate_rankings_private": true,
+  "no_new_survival_effect_or_communication_family": true,
+  "no_global_network_changes_or_public_push_retry": true,
+  "independent_protein_input_same_live_worker_continues": true
+}

@@ -158,3 +158,19 @@ v4合同另冻后，源实际开始2026-10-22T02:00:39.114865+00:00 UTC；观察
 
 
 最终归档检查：观察2026-10-22T02:17:56.643134+00:00 UTC /2026-10-22T10:17:56.643134+08:00 UTC+8。最新完整仓库检查实际exit0、0errors/1既有warning，所有新Python AST、各阶段冻结代码/完整合成/实际退出与新启动SHA、全部脱敏diff和技术JSON已审；实际header新旧helper仅保留原容器的一行差别，真实类型回归接受。当前同一v6真实工具仍live并连续返回合格区间进度，完整总MD5/原生schema/科学效果未接受，无重启。v4短正文、v5人工停止和旧实现缺陷均保留，不改成科学结论；三个无关未跟踪文件保持。仅普通本地commit，public push此前拒绝不重试，goal active。建议commit: Preserve native HTTP headers and bound public input transport recovery。
+
+
+### 同版临床输入的随访覆盖资格已实际完成
+
+事件2026-10-22T02:24:48.516817+00:00 UTC /2026-10-22T10:24:48.516817+08:00 UTC+8；观察2026-10-22T02:25:37.739641+00:00 UTC /2026-10-22T10:25:37.739641+08:00 UTC+8。用户已明确允许的范围仍仅临床资格，本次不拟合效应；同一原公开metadata完整SHA和固定commit临床CSV在本机RAM重新读取，仅保留临床字段，原个体已释放因而不复用任何个体文件。原登记整个队列指纹、精确材料及三个共享字段再次一致，未回传服务器记录。
+
+新脚本qualify_NSCLC_followup_population_coverage_RAM_v1.py按效果前冻结的组织学、病理反应、粗分期前缀、原严格ICI角色核表覆盖/缺失。原治疗词法由已接受代码三个静态赋值提取，全来源原角色计数须精确复现；不为扩充可用组而改别名。各固定组的总分母/入表/未入表/数值完整性和编码1计数由Counter逐行与Pandas groupby独立核、各轴总数与补集均对齐。合成已核非正时间/非法状态/缺表/零分母及严格角色；真实工具exit0并释放全部个体RAM，仅来源汇总私有。
+
+Spreadsheets技能用于只读资格分析，捆绑Python3.12.14/Pandas2.2.3/NumPy2.3.5；未创建、编辑或导出任何工作簿。执行形态PANCANCER_CLINICAL_SCOPE_TASK=${PRIVATE_TASK} ${BUNDLED_PYTHON} -B scripts/qualify_NSCLC_followup_population_coverage_RAM_v1.py；输入合同e5bdc380fc3323ff2ab9d42538aa52677482de4f0113c3b8e587015d2181a9d0。技术收据绑定真实完成、源码与独立合成SHA，自有科学计数/临床范围解释不进公共Git。
+
+解释边界：原登记与随访子集覆盖不同，不把缺表原因猜为失访；分期前缀不当已核AJCC版次。未知治疗角色不并入明确ICI，唯一材料仍非已审独立患者，缺OS不补删失。RFS事件/时间起点及new更新规则尚待信息，本次资格许可不扩成生存/通讯效应。空间蛋白v6同一句柄持续前进、尚未全长/官方MD5和原生结构接受，不重启或把技术进度当生物效果。CM02/身份/Zarr和闭家族保持，TableS1仍由用户后补；public push原拒绝未重试，目标active。本节点分类progress。
+
+[本机临床覆盖技术收据](../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_clinical_population_coverage_RAM_v1.json)。
+
+
+临床覆盖资格归档检查：观察2026-10-22T02:27:11.161458+00:00 UTC /2026-10-22T10:27:11.161458+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning；新Python AST与实际本机计数/独立对照、原输入SHA/完整队列指纹、精确材料/共享字段、脱敏diff和技术JSON均审阅。实际临床工具exit0且个体RAM已释放；同一蛋白v6工具仍live，完整对象/原生/科学效果尚待，无重启。没有临床效应或新的科学分级，三个无关未跟踪文件保留。仅普通本地commit，public push此前自动审批拒绝未重试，云端仍待同步；目标active。建议commit: Qualify immutable clinical followup population coverage in local RAM。
