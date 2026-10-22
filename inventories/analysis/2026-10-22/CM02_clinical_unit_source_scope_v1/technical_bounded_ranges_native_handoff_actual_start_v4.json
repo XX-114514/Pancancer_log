@@ -1,0 +1,22 @@
+{
+  "status": "SOURCE_COMPLETE_RANGE_NATIVE_RAM_SYNTHETIC_ACCEPTED_REAL_V4_INPUT_RUNNING",
+  "observed_UTC": "2026-10-22T02:02:02.241720+00:00",
+  "source_record": "10.5281/zenodo.18265339",
+  "official_record_two_range_protocol_SHA256": "56a96596a5344dce89fa665fdbebfcd8afa37d585cd480ed48d38ddd7b99e406",
+  "full_range_R_native_handoff_acceptance_SHA256": "3eb42f9384c838484ecc5d57488dc76d232f3d06954862cb27aa353ea6a6dbf8",
+  "frozen_v4_contract_SHA256": "7060b57090f9e3a825520b76b4c705f7c2f6f0914f3803295e3c1b4ace74c88e",
+  "actual_source_v4_start_receipt_SHA256": "0f5b8f931ccbcd4058dae341b558b446e942e9e46f2ac552aed839ab69d54f39",
+  "actual_started_UTC": "2026-10-22T02:00:39.114865+00:00",
+  "execution_base_commit": "975e101",
+  "frozen_code_SHA256": {
+    "read_LN_spatial_protein_RDS_RAM_v4.py": "3b933fb86a1ae13579549b46c32e13e53211d094a6a75ffc2051bf9b99caf85d",
+    "run_LN_spatial_protein_RDS_RAM_v4.py": "e50f630b465c002f4aab5111710545fc5af3714a2dc1b8b8ef82bbbe8fd6ec75",
+    "fetch_public_RDS_ranges_RAM_v1.py": "83ff4bda8039f2ffb22f3bc168316948eea1a908a5780e22fc3db8dc9c47a938",
+    "pipe_native_RDS_RAM_v1.py": "86d44f8f69433f25245e1737f8bc58205338b2ac158c790539915cfc140b953e",
+    "qualify_LN_spatial_RDS_structure_RAM_v1.R": "ca3b0f4146de21aad7469a3c164776f87f27fb785a5c86f22682a0604dbe0cee"
+  },
+  "old_source_actual_failure_and_exit_preserved": true,
+  "complete_real_object_MD5_native_state_and_scientific_effects_pending": true,
+  "no_input_native_or_individual_array_files_or_record_upload": true,
+  "no_prior_denied_remote_clinical_TCR_transport_or_public_push_retry": true
+}

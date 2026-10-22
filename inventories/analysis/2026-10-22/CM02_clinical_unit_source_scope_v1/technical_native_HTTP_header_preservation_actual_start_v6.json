@@ -1,0 +1,23 @@
+{
+  "status": "REAL_HEADER_CONTAINER_BUG_REPRODUCED_CORRECTED_FULL_SYNTHETIC_ACCEPTED_REAL_V6_RUNNING",
+  "observed_UTC": "2026-10-22T02:15:13.708840+00:00",
+  "real_response_header_case_scope_SHA256": "6aaf40f6be2895c7800beef9ec558c67fcfa530536aa6b54b1931cf5c63213a7",
+  "exact_own_v5_intentional_stop_receipt_SHA256": "141d32f0b27aee27b142cd53ec84fe5eed984c64ca54fd72b76d9a257e42bbf6",
+  "full_native_header_retry_RAM_acceptance_SHA256": "97dc46c6faf75a3fa303ac75f08407c3b690cefd83f411b28af8b90e3236c934",
+  "frozen_v6_contract_SHA256": "7fc699c962f42b33a42bdef2404952bf75b73ba52ab2f01b7e5db5299d403deb",
+  "actual_v6_start_receipt_SHA256": "cc87bcfc8b7f19e1df9a666e6d94d9b79270dea094e4b5cf3e54c69ff0e367e8",
+  "actual_started_UTC": "2026-10-22T02:13:48.024204+00:00",
+  "execution_base_commit": "975e101",
+  "frozen_code_SHA256": {
+    "read_LN_spatial_protein_RDS_RAM_v5.py": "2099d11da008ce0ad81e21a9f8390842d72affa0e5079666c8d85619df75de1f",
+    "run_LN_spatial_protein_RDS_RAM_v6.py": "7e3b055b6c24295b6aa47f71245adfbdab707e10ede0ee247d7aae66539b99a2",
+    "fetch_public_RDS_ranges_retry_RAM_v3.py": "b48f7d5116d102f393c86854509b578b49e66b46966ef43bf02ca5c34c0cbc53",
+    "fetch_public_RDS_ranges_RAM_v1.py": "83ff4bda8039f2ffb22f3bc168316948eea1a908a5780e22fc3db8dc9c47a938",
+    "pipe_native_RDS_RAM_v1.py": "86d44f8f69433f25245e1737f8bc58205338b2ac158c790539915cfc140b953e",
+    "qualify_LN_spatial_RDS_structure_RAM_v1.R": "ca3b0f4146de21aad7469a3c164776f87f27fb785a5c86f22682a0604dbe0cee"
+  },
+  "native_case_insensitive_response_headers_preserved_not_protocol_values_relaxed": true,
+  "same_R_producer_core_and_official_integrity_rules_unchanged": true,
+  "real_whole_object_MD5_native_schema_state_and_clinical_results_pending": true,
+  "no_individual_payload_file_upload_or_denied_transport_push_retry": true
+}

@@ -1,3 +1,27 @@
+## 当前：真实HTTP头语义修正已完整验证，蛋白v6读取中
+
+实际206头为小写HTTPMessage，v5转dict导致误判已直接定位；精确停旧任务，保留原容器的修正通过真实格式完整合成及旧错误回归，复用原R producer/整体覆盖与MD5核心。新v6已真实启动，完整对象/原生状态/生物效果尚待，核同一句柄不因等待重启。临床资格/精确材料接受保持，RFS定义信息待答、仅资格不计算效应；原CM02/身份/Zarr/闭家族和另一来源TableS1后补保持。public push原拒绝不重试，goal active。见[run](runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)。
+
+### 以下保留上一阶段观察
+
+## 当前：短正文有界重试全流程接受，蛋白v5真实读取中
+
+v4真实RANGE_LENGTH_SHORT已退出，旧区间/覆盖/整体MD5核心保持。新同区间最多4次运输重试通过完整合成、原生R与释放、持续错误上限和认证不重试，另冻v5并收到真实启动帧；整对象/MD5/原生状态/生物效果仍待。临床资格与精确材料对应接受保留，RFS定义信息请求未答，临床仅资格；原CM02/身份/Zarr/闭家族和另一来源TableS1后补安排不变。整体邻域及条件配对特异性并列问题，mregDC仅组织上下文；public push此前拒绝不重试，goal active。见[run](runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)。
+
+### 以下保留上一阶段观察
+
+## 当前：区间短正文已定位，新有界重试完整合成核查中
+
+v4真实输入明确RANGE_LENGTH_SHORT/source exit2，完整对象/原生状态/科学效果未接受；旧失败和核心保持。新准备只对同URL同区间短正文/瞬态连接错误有限重试，原区间/总MD5不放宽、HTTP/认证/协议/哈希错误不重试，完整合成仍待。当前无真实科学worker；临床列/精确材料对应接受保持，RFS说明信息请求待答，临床仅资格。原CM02/身份/Zarr/闭家族保持，TableS1仍待补，public push原拒绝不重试，整体goal active。见[run](runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)。
+
+### 以下保留上一阶段观察
+
+## 当前：临床资格保留，完整分块合成接受后蛋白v4读取中
+
+原蛋白v3失败/退出已确认，官方record协议与完整多块→整体MD5→原生R交接/释放纯合成实际接受，另冻v4并收到真实启动帧；完整实际MD5/原生schema/marker/单位与科学效果尚待。个体/矩阵只源RAM，原身份/Zarr/CM02及闭家族保持。本机临床列与材料对应已完成，RFS定义新信息问题待用户答复，本次临床仅资格不计算效应；GSE288199 TableS1仍另待补。public push原拒绝不重试，整体goal active。见[run](runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)。
+
+### 以下保留上一阶段观察
+
 ## 当前：本机临床资格及精确材料对应完成，蛋白输入失败已退出
 
 用户新明确许可后，固定公开CSV临床列、本机原metadata四临床字段与既有源登记全队列指纹、精确材料和共享字段核查已实际完成；全部个体仅本机RAM，来源统计私有，未上传/保存个体或计算效应。RFS_new事件/起点与患者单位仍待，OS缺失不补删失。蛋白v3真实输入完整性断言失败、精确源worker已退出，无原生schema或科学效果；官方record两个离散小范围协议资格已通过，下一另冻分块整长/MD5重建，当前无活跃科学worker，整体goal active。原CM02、身份/Zarr与闭家族保持，TableS1用户后补，公共push此前拒绝未重试。见[run](runs/20261022_CM02_clinical_unit_and_source_scope_v1.md)。
