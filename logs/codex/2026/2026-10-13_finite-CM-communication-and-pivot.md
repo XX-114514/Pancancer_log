@@ -3478,3 +3478,26 @@ GSE288199 TableS1缺失继续记录，按用户稍后补；原指定作者随访
 
 
 归档检查：观察2026-10-22T01:26:27.961495+00:00 UTC /2026-10-22T09:26:27.961495+08:00 UTC+8。最新完整仓库检查真实exit0、0errors/1既有warning，四新Python AST/冻结源码SHA及全部通用代码、脱敏diff和技术JSON已审。源四格式结构合成已exit0，原v2同一真实句柄持续返回输入进度；完整长度/MD5及原生schema待，未重启。原失败与三份无关未跟踪文件保留；仅普通本地commit，public push原拒绝不重试，云端待同步。整体goal active，下一核同一源输入与RAM控制资格，不能以运行中节点称研究完成。建议commit: Recover public protein RAM input with verified codec streaming。
+
+
+### 完整交接合成发现原R启动路径失败，真实输入主动终止
+
+观察2026-10-22T01:31:26.468698+00:00 UTC /2026-10-22T09:31:26.468698+08:00 UTC+8。本轮开始时同一v2真实工具确认仍live并有连续进度，分类progress/verified wait，不因观察超时重启。随后新增完全合成的假HTTP→完整冻结读取器→源R→RAM后续阶段→显式释放检查；前次仅四格式结构读取测试没有覆盖完整R启动/交接，不能替代本次。
+
+原完整合成退出2，冻结读取器在R_NATIVE_STRUCTURE_ONLY_NO_EFFECTS阶段JSONDecodeError，前次包装器未保留stdout诊断；添加白名单帧后证实阶段，纯合成单独执行原完整R片段又实际返回R启动警告（长-e参数未接受）和Error: object 'X' not found，exit1。原结构测试短代码通过，不代表该更长启动代码可执行；不把此问题归因真实对象、网络或细胞身份。失败与原代码/纯合成诊断SHA保留。
+
+基于可直接复现的真实下游启动缺陷，于2026-10-22T01:30:21.236533+00:00 UTC核精确v2 PID/startticks、确认无R子进程后主动SIGTERM本次自有未完成读取，源精确worker随后不存在，原工具exit1/source transport255，未到完整长度/MD5或原生接受。该终态由有证据的主动终止导致，不能按255称代理故障，不是因观察到期而重启。原项目/权威对象未动，部分输入RAM释放；已有源通用控制文件保留。
+
+新v3准备将完整通用R代码保存到本次owner-only控制目录的native_reader.R，再从代码文件启动R；原数据流仍为完整MD5后逐块RAM解压/二进制stdin，无原生/个体/坐标/状态/矩阵文件。原v2冻结代码不改写，v3完整合成已于2026-10-22T01:31:01.455412+00:00 UTC实际exit0，完整结构、单个SHA阶段及显式释放通过；新真实输入待另冻合同派发。TableS1和原特定CSV许可缺口保持，目标active，尚无新生物效果。
+
+
+### 完整源合成接受与v3真实输入开始
+
+完整假HTTP→官方式长度/MD5→原生S4结构→保留RAM→通用代码SHA阶段→显式release→R exit0与原生RAM释放合成，事件2026-10-22T01:31:01.455412+00:00 UTC，实际exit0；原v2缺陷没有靠放宽断言处理，只改v3通用代码文件启动。原reader/pipe/marker与checker逐SHA绑定，旧失败保留。
+
+另冻v3合同后源实际开始2026-10-22T01:31:56.370052+00:00 UTC；观察2026-10-22T01:32:36.314053+00:00 UTC /2026-10-22T09:32:36.314053+08:00 UTC+8。同一新工具句柄已返回实际源worker启动帧，完整长度/MD5、真实原生结构/marker/单位/坐标与新科学效果仍待。[完整启动与RAM交接收据](../../../inventories/analysis/2026-10-22/CM02_clinical_unit_source_scope_v1/technical_full_bootstrap_and_RAM_handoff_v3.json)保存失败/诊断/精确旧退出/完整合成/实际启动和源码绑定，不公开自有科学值。
+
+只通用R代码文件/合同/来源汇总可落源控制目录，原生/个体/强度/坐标/状态数组仍只进程RAM；正式身份/Zarr/原CM02与闭家族不改。TableS1用户后补，指定随访CSV新明确许可待，public push此前拒绝不重试。完整仓库检查与普通本地归档待，整体goal active。
+
+
+归档检查：观察2026-10-22T01:33:29.940347+00:00 UTC /2026-10-22T09:33:29.940347+08:00 UTC+8。完整仓库检查实际exit0、0errors/1既有warning；三新Python AST、完整合成接受及v3冻结源码/实际启动SHA、全部脱敏diff与技术JSON已审。v3同一真实工具仍live且持续返回输入进度，尚无完整输入/原生schema或科学效果接受，不重启。源v2终态来自主动止损，失败历史保留；三个无关未跟踪文件保持。仅普通本地commit，公共push此前拒绝不重试；整体goal active。建议commit: Validate complete R bootstrap and RAM stage handoff before public input。
