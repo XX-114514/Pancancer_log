@@ -80,3 +80,13 @@ GSE288199 TableS1缺失继续记录，按用户稍后补；原指定作者随访
 
 
 归档检查：观察2026-10-22T01:33:29.940347+00:00 UTC /2026-10-22T09:33:29.940347+08:00 UTC+8。完整仓库检查实际exit0、0errors/1既有warning；三新Python AST、完整合成接受及v3冻结源码/实际启动SHA、全部脱敏diff与技术JSON已审。v3同一真实工具仍live且持续返回输入进度，尚无完整输入/原生schema或科学效果接受，不重启。源v2终态来自主动止损，失败历史保留；三个无关未跟踪文件保持。仅普通本地commit，公共push此前拒绝不重试；整体goal active。建议commit: Validate complete R bootstrap and RAM stage handoff before public input。
+
+
+### 原始公开摘要核实研究层级，明确蛋白组织分析问题
+
+观察2026-10-22T01:35:08.594451+00:00 UTC /2026-10-22T09:35:08.594451+08:00 UTC+8。新增有限原始来源搜索取得[PubMed摘要](https://pubmed.ncbi.nlm.nih.gov/41646724/)与[官方开放记录](https://zenodo.org/records/18265339)，确认全研究患者/淋巴结层级、非转移节点/手术/分期/解剖位置语境和蛋白设计；具体作者发表数字见方法，不当当前原生IMC分母。未请求此前403全文/PMC镜像、受拒CSV或其他个体输入，原v3同一真实工具仍在读取。
+
+作者已发表的Treg/异常CD8/mregDC组织现象仅作为先验；下一重点是状态特异的Treg–CD8组织关系能否在共同T区、mregDC与丰度背景下保留，以及有资格时的患者内节点位置对照。分期问题与免疫治疗MPR/RFS/OS分开，物理坐标单位不由影像分辨率推断；具体测量/效果有限家族仍待原生资格后另冻，尚无新效果。方法已更新，来源级公开设计约束私有JSON保存。整体goal active，本轮为新设计资格证据进展及同一进程verified wait。
+
+
+设计资格归档检查：观察2026-10-22T01:37:16.074521+00:00 UTC /2026-10-22T09:37:16.074521+08:00 UTC+8。完整仓库检查真实exit0、0errors/1既有warning，四份文档的脱敏diff/原始公开引用已审；私有原研究设计约束收据SHA0eebc30bc537870aab7eaef35474f46ffbb866cf21ff9ad4ce6d584ebe88ca92。同一v3实际读取句柄仍live且持续进度，无重启、原生完成或新科学效果；本轮仅公开原作者已发表设计事实和前向分析问题，没有自有科学计数/效果。三个无关未跟踪文件保留，普通本地commit，public push原拒绝不重试，整体goal active。建议commit: Ground protein spatial analysis in published patient and node hierarchy。
