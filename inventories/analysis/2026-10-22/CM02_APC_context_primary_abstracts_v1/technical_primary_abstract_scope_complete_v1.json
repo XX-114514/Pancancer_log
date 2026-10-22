@@ -1,0 +1,16 @@
+{
+  "status": "THREE_PRIMARY_ABSTRACTS_QUALIFIED_NO_NEW_DATA_OR_EFFECTS",
+  "observed_UTC": "2026-10-22T10:07:21.087667+00:00",
+  "observed_UTC8": "2026-10-22T18:07:21.087667+08:00",
+  "PMIDs": [
+    "28280247",
+    "28280249",
+    "36736322"
+  ],
+  "frozen_scope_SHA256": "8ad987e09e3ef0eb5dee61e4be5f22154a304d397fb8251ef587e9bcb43e737b",
+  "private_qualified_evidence_SHA256": "ab1c43c5904a2be25aac3c665460681b83ff9b3e0979c760273d7682c690d645",
+  "private_prospective_decision_SHA256": "dbe46056dd900dda1965f4102f2b0de20cfaaef2dd2b6c1c4f03f62a62ff4e6e",
+  "current_native_code_and_scope_unchanged": true,
+  "no_new_individual_payload_or_statistical_tests": true,
+  "public_push_not_retried": true
+}

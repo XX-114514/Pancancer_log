@@ -24,3 +24,8 @@ GSE288199 Table S1与GSE243013 RFS更新字段说明为不同依赖；沿用用�
 若某来源仅满足状态、组织或临床其中一环，该环可单独交付，剩余环记未完成。不得为闭合故事改marker、转移已发表结论、减少必要控制或合并不相同的终点。既有[固定RNA临床](../runs/20261022_HNSCC_observed_marker_clinical_v1.md)、[状态与亚型背景](../runs/20261022_NSCLC_state_vs_author_subtype_v1.md)、[非序列扩增](../runs/20261022_CM02_nonsequence_TCR_measurement_v1.md)和[组织类型测量桥](../runs/20261022_CM02_author_type_RNA_clinical_bridge_v1.md)各按原范围保留。
 
 具体来源级效果、候选优先级和完整对照表仅在已授权私有台账及当前对话说明；公共记录仅方法、过程与技术指纹。此对照没有产生新效应/P/FDR，不重跑旧家族。
+
+
+## APC组织解释的原始证据补充
+
+[三篇正常公开原始摘要/图注资格](APC-organized-T-state-spatial-context-20261022.md)将细胞内信号、动物机制及人体不同癌种/组织证据分开；后续测量合格再另定组织比较，不能把邻近配对预先解释为直接受体结合或抑制功能。当前原生资格工作流保持，不追加效果。

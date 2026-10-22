@@ -5,6 +5,7 @@
 - [x] 新有限合同/版本先冻后实际启动，不改原CM02/已关闭家族。
 - [ ] 验收同一新任务整长/MD5/SHA、原生测量/单位结构和实际退出，不能以物理marker或字段名替代状态/患者/病理/终点真值。
 - [ ] 完成后再定合格的同状态或粗身份/组织问题；临床资料入口提醒继续。
+- [ ] 按[原始证据准入](methods/APC-organized-T-state-spatial-context-20261022.md)区分共同组织环境、APC组织反馈与抑制解释；构成状态的marker不再当独立响应，不提前命名DC1/功能状态。
 
 见[run](runs/20261022_CM02_TDLN_external_qualification_v1.md)，无native或个体文件，无新效果，公有push限制保持。
 

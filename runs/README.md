@@ -1,3 +1,5 @@
+[APC组织问题的原始证据资格](20261022_CM02_APC_context_primary_abstracts_v1.md)：三篇正常公开摘要/图注完成，无新原生或统计，当前空间源继续。
+
 [CM02外部TDLN原始证据及原生资格](20261022_CM02_TDLN_external_qualification_v1.md)：公开关系已核，新有界读取实际开始，仅资格无新效果。
 
 [GSE305078临床连接资格](20261018_GSE305078_clinical_link_qualification_v1.md)：公开补充返回HTML拒收，无临床标签采纳。
