@@ -1,0 +1,23 @@
+{
+  "status": "SOURCE_V1_FIXED_TIMEOUT_EXITED_V2_CODEC_ACCEPTED_ACTUAL_INPUT_RUNNING",
+  "observed_UTC": "2026-10-22T01:25:33.817040+00:00",
+  "source_record": "10.5281/zenodo.18265339",
+  "previous_timeout_receipt_SHA256": "6a5ffdd5f170bc56c1923bdf038375972532ba8a7ba7fed074458e8e71568193",
+  "exact_previous_worker_absence_receipt_SHA256": "a6b7603a99ece336659bd900454558d3bc6dc8ec2d0dbcdf34813ec3521a69b9",
+  "range_pilot_not_accepted_not_adopted_receipt_SHA256": "b992af0bdb369843c42efaf4fb891f12814dded2359f347dc4ae586506b1ec03",
+  "source_four_codec_acceptance_SHA256": "749d640b1e4e2b8767096856fc69f56689ad6dc7d3b345be51027b595c946ada",
+  "frozen_v2_contract_SHA256": "818c7227f86d83542eb3ca48126767596c5bb6f9bf295b06ee04c5540d975008",
+  "actual_v2_worker_start_receipt_SHA256": "71c3f8d47179d3a54d1e5ecc80ceeb57371fe490f4520c9ee008d54842e8c2ef",
+  "actual_started_UTC": "2026-10-22T01:25:03.441846+00:00",
+  "execution_base_commit": "df5d770",
+  "frozen_code_SHA256": {
+    "read_LN_spatial_protein_RDS_RAM_v2.py": "439f5c057b9d96e940368d7091896557885de3b8ef29ab2cbda1dc7c9b3513b1",
+    "run_LN_spatial_protein_RDS_RAM_v2.py": "91155adffa15fb2b8ddef82e546cd191e5f1a57c1225e17bd8f6a030509c9b75",
+    "pipe_native_RDS_RAM_v1.py": "86d44f8f69433f25245e1737f8bc58205338b2ac158c790539915cfc140b953e",
+    "qualify_LN_spatial_RDS_structure_RAM_v1.R": "ca3b0f4146de21aad7469a3c164776f87f27fb785a5c86f22682a0604dbe0cee"
+  },
+  "full_input_native_schema_and_all_scientific_effects_pending": true,
+  "native_and_individual_arrays_process_RAM_only": true,
+  "source_control_files_generic_code_contracts_or_source_aggregates_only": true,
+  "no_denied_clinical_transport_or_public_push_retry": true
+}
