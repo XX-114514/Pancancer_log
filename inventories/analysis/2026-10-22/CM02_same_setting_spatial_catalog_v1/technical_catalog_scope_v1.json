@@ -1,0 +1,20 @@
+{
+  "kind": "PUBLIC_CATALOG_AND_PREPRINT_ACCESS_TECHNICAL_RECEIPT",
+  "observed_UTC": "2026-10-22T11:52:47.706446+00:00",
+  "observed_UTC_plus_8": "2026-10-22T19:52:47.706446+08:00",
+  "search_queries_used": 3,
+  "official_bibliographic_HTTP_status": 200,
+  "primary_DOI_HTTP_status": 403,
+  "primary_body_stop_respected": true,
+  "active_native_source_unchanged": true,
+  "evidence_SHA256": {
+    "private_frozen_catalog_scope_v1.json": "3853c13d116247284e81a020474de0201dbb17396454c67178d9dfe4d4bf6e18",
+    "private_PubMed42779625_bibliographic_metadata_v1.json": "d8f3fbbbf35a0302c4a2634a1b542f7b0e0a8b328b44554ea76fad3149dadf00",
+    "private_catalog_decision_v1.json": "1bdb8d7eeb5b160adbb323defaa1aaa15b159c8412c4944bec1d7d14607b4976",
+    "private_frozen_preprint_methods_scope_v1.json": "c980ee6192693706a8f3d14ee8ff90614001226495c5262fb47beeaabaef85fc",
+    "private_actual_preprint_primary_entry_v1.json": "e05005dcecdd8005fef2bd08952cbcf072d75c82bb3a2b968ef70930c86276f4",
+    "private_preprint_scope_decision_v1.json": "62eb3eddfe8b22b7e8a99784a7ee9fff5118bac5f4448478f032e427d5b8cc05"
+  },
+  "no_native_or_individual_table_or_new_effect_selected": true,
+  "incidental_search_sample_titles_not_extracted_saved_or_analyzed": true
+}
