@@ -1,0 +1,46 @@
+# Dependencies are concatenated before this entry point; no individual file reads/writes.
+suppressPackageStartupMessages(library(SingleCellExperiment))
+suppressPackageStartupMessages(library(jsonlite))
+phase<-"READ_SAME_VERIFIED_PUBLIC_PROTEIN_OBJECT"
+tryCatch({
+  cfg<-fromJSON(Sys.getenv("PANCANCER_LN_SPEC_CONFIG"),simplifyVector=TRUE)
+  root<-Sys.getenv("PANCANCER_LN_CONTROL_ROOT")
+  receipt<-function(v,name)writeLines(toJSON(v,auto_unbox=TRUE,null="null",digits=16),file.path(root,name))
+  x<-readRDS(file("stdin","rb"))
+  av<-function(v,k)attr(v,k,exact=TRUE);dl<-function(v){if(is.list(v)&&!isS4(v))return(v);attr(v,"listData",exact=TRUE)}
+  raw<-dl(av(av(x,"assays"),"data"))[["counts"]]
+  stopifnot(isS4(x),ncol(raw)==cfg$expected_cells,identical(rownames(raw),cfg$phenotype_config$physical_panel))
+  phase<-"FROZEN_PHENOTYPE_REPLAY"
+  phenotype<-derive_LN_hierarchical_protein_states_RAM(x,cfg$phenotype_config,"counts")
+  alternate<-derive_LN_hierarchical_protein_states_RAM(x,cfg$phenotype_config,"asin",LN_audit_rank_RAM)
+  differences<-sum(vapply(names(phenotype$internal$states),function(n)sum(phenotype$internal$states[[n]]!=alternate$internal$states[[n]]),numeric(1)))+
+    sum(vapply(names(phenotype$internal$parents),function(n)sum(phenotype$internal$parents[[n]]!=alternate$internal$parents[[n]]),numeric(1)))
+  stopifnot(differences==0)
+  actual_counts<-vapply(phenotype$summary$state_records,function(r)r$cell_rows,numeric(1))
+  names(actual_counts)<-vapply(phenotype$summary$state_records,function(r)r$state,character(1))
+  expected<-unlist(cfg$expected_state_counts)
+  stopifnot(setequal(names(actual_counts),names(expected)),all(actual_counts[names(expected)]==expected))
+  for(parent in names(cfg$expected_parent_groups))stopifnot(setequal(unlist(phenotype$summary$resolved_parent_groups[[parent]]),unlist(cfg$expected_parent_groups[[parent]])))
+  rm(alternate);gc(verbose=FALSE)
+  receipt(list(status="SAME_INPUT_FROZEN_PHENOTYPE_REPLAY_ACCEPTED",observed_UTC=format(Sys.time(),tz="UTC",usetz=TRUE),numeric_membership_differences=differences,family_contract_SHA256=cfg$family_contract_SHA256),"private_specificity_phenotype_ready.json")
+  config<-cfg$spatial_config;config$absolute_deadline_UTC<-Sys.getenv("PANCANCER_LN_R_DEADLINE_UTC")
+  phase<-"FINITE_SECONDARY_SPECIFICITY_PRODUCTION"
+  receipt(list(status="FROZEN_SECONDARY_PRODUCTION_STARTED",observed_UTC=format(Sys.time(),tz="UTC",usetz=TRUE),family_contract_SHA256=cfg$family_contract_SHA256),"private_specificity_production_started.json")
+  production<-measure_LN_regulatory_specificity_RAM(x,phenotype,config)
+  production$summary$family_contract_SHA256<-cfg$family_contract_SHA256
+  production$summary$completed_UTC<-format(Sys.time(),tz="UTC",usetz=TRUE)
+  receipt(production$summary,"private_specificity_production_complete.json")
+  phase<-"FULL_SECONDARY_NUMERIC_REPLAY_AUDIT"
+  audit<-audit_LN_regulatory_specificity_RAM(x,production,config)
+  audit$family_contract_SHA256<-cfg$family_contract_SHA256;audit$completed_UTC<-format(Sys.time(),tz="UTC",usetz=TRUE)
+  receipt(audit,"private_specificity_audit_complete.json")
+  stopifnot(audit$status=="PASS_FULL_SECONDARY_SPECIFICITY_NUMERIC_AUDIT")
+  answer<-list(status="COMPLETE_FROZEN_SECONDARY_SPECIFICITY_AND_FULL_NUMERIC_AUDIT",production=production$summary,audit=audit,
+    phenotype_counts_match_previous_family=TRUE,actual_numeric_membership_differences=differences,runtime_R=as.character(getRversion()),
+    clinical_outcomes_not_tested=TRUE,no_individual_objects_saved_or_returned=TRUE)
+  rm(x,phenotype,production);gc(verbose=FALSE)
+  cat(toJSON(list(kind="SOURCE_ONLY_SPECIFICITY_SUMMARY",summary=answer),auto_unbox=TRUE,null="null",digits=16))
+},error=function(e){
+  cat(toJSON(list(kind="SOURCE_SPECIFICITY_FAILED",phase=phase,error_class=class(e)[1]),auto_unbox=TRUE))
+  quit(status=2L)
+})

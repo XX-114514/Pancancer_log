@@ -1,0 +1,30 @@
+check_LN_regulatory_specificity_RAM <- function() {
+  suppressPackageStartupMessages(library(SingleCellExperiment))
+  methods::setClass("SyntheticLNSpecificity",contains="SingleCellExperiment",slots=c(spatialCoords="matrix"))
+  meta<-do.call(rbind,lapply(seq_len(7),function(p)do.call(rbind,lapply(c("N1","N2"),function(nd)data.frame(patient=paste0("FAKE_P_",p),node=nd,image=paste0("FAKE_IMAGE_",p,"_",nd),kind=rep(c("CD4","CD8","OTHER"),c(80,80,20)),j=c(1:80,1:80,1:20),stringsAsFactors=FALSE)))))
+  xy<-cbind(meta$j*3+ifelse(meta$kind=="CD8",.1,0),ifelse(meta$kind=="CD4",0,ifelse(meta$kind=="CD8",.2,50)))
+  sce<-SingleCellExperiment(assays=list(counts=matrix(1,1,nrow(meta))),colData=S4Vectors::DataFrame(meta));x<-methods::new("SyntheticLNSpecificity",sce,spatialCoords=xy)
+  reg<-meta$j%%4%in%c(0,1);cyc<-meta$j%%2==0
+  states<-list(R0_FOXP3_CTLA4=meta$kind=="CD4"&reg,R2_general_CD4_MKI67=meta$kind=="CD4"&cyc,
+    E0_PD1_TIM3=meta$kind=="CD8"&reg,E1_CD8_MKI67=meta$kind=="CD8"&!reg,E2_CCR7_CD127=rep(FALSE,nrow(meta)))
+  ph<-list(internal=list(states=states,parents=list(CD4=meta$kind=="CD4",CD8a=meta$kind=="CD8"),testable_images=setNames(rep(list(unique(meta$image)),length(states)),names(states))))
+  cfg<-list(image_field="image",patient_field="patient",node_field="node",k=1L,minimum_parent=20L,minimum_class=10L,minimum_mixed_blocks=2L,minimum_movable_class=10L,grids=c(2L,4L,8L),primary_grid=4L,permutations=99L,bootstrap_replicates=2000L,minimum_cases=5L,seed=20261023L,absolute_deadline_UTC=format(Sys.time()+600,tz="UTC",usetz=FALSE))
+  prod<-measure_LN_regulatory_specificity_RAM(x,ph,cfg);audit<-audit_LN_regulatory_specificity_RAM(x,prod,cfg)
+  stopifnot(audit$status=="PASS_FULL_SECONDARY_SPECIFICITY_NUMERIC_AUDIT",length(prod$summary$primary_rows)==15L)
+  rows<-prod$summary$primary_rows
+  stopifnot(rows[[1]]$median_effect>0,rows[[2]]$median_effect>0,rows[[3]]$median_effect>0,abs(rows[[4]]$median_effect)<1e-12,rows[[4]]$exact_sign_p==1,
+    rows[[5]]$median_effect<0,rows[[13]]$median_effect>0,rows[[14]]$median_effect<0,
+    all(vapply(c(9L,10L,11L,12L,15L),function(j)!is.finite(rows[[j]]$primary_p),logical(1))))
+  tab<-matrix(c(20,0,0,20,20,0,0,20),nrow=2,byrow=TRUE);z<-LN_spec_effects(tab);stopifnot(abs(z[3]-log(41^2))<1e-12,abs(z[4])<1e-12)
+  cases<-matrix(c(0,10,-1,20,1,11,0,21),ncol=2);md<-data.frame(patient=c("A","A","A","B"),node=c("SAME","SAME","OTHER","SAME"));a<-LN_spec_cases_matrix(cases,md);b<-LN_spec_audit_cases(cases,md)
+  stopifnot(max(abs(a-b))<1e-12,identical(unname(a[,1]),c(2,20)))
+  deg<-LN_spec_null_summary(rep(0,7),matrix(0,7,99),7);stopifnot(deg$summary$status=="DEGENERATE_CONDITIONAL_NULL",!is.finite(deg$summary$permutation_p),deg$summary$zero_cases==7)
+  first<-which(meta$image==meta$image[1]);short<-ph;short$internal$parents<-lapply(ph$internal$parents,function(z)z[first]);short$internal$states<-lapply(ph$internal$states,function(z)z[first])
+  one<-measure_LN_regulatory_specificity_RAM(x[,first],short,cfg);oa<-audit_LN_regulatory_specificity_RAM(x[,first],one,cfg)
+  stopifnot(oa$status=="PASS_FULL_SECONDARY_SPECIFICITY_NUMERIC_AUDIT",all(vapply(one$summary$primary_rows,function(r)!is.finite(r$primary_p),logical(1))))
+  text<-jsonlite::toJSON(prod$summary,auto_unbox=TRUE,null="null");stopifnot(!grepl("FAKE_P_",text),!grepl("FAKE_IMAGE_",text))
+  list(status="PASS_COMPLETE_SECONDARY_SPECIFICITY_SYNTHETIC",completed_UTC=format(Sys.time(),tz="UTC",usetz=TRUE),runtime_R=as.character(getRversion()),
+    disjoint_within_cycle_positive_negative_and_zero_contrasts_checked=TRUE,missing_endpoint_and_degenerate_null_not_negative=TRUE,
+    all_local_permutations_and_case_statistics_independently_replayed=TRUE,all_BH_Bootstrap_and_null_tails_recalculated=TRUE,
+    repeated_node_labels_and_unequal_image_weight_oracle_checked=TRUE,numeric_audit=audit,no_human_data_or_network_read=TRUE)
+}
