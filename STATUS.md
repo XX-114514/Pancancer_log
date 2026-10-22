@@ -4,6 +4,8 @@
 
 旧空间家族已关闭/RAM释放，原CM02/身份/Zarr和临床仅资格/资料提醒保持；不同疾病或结局选择不能直接当同状态/临床复现。新对象完成即RAM释放，无动态节点或native文件。见[run](runs/20261022_CM02_TDLN_external_qualification_v1.md)。public push此前拒绝不重试，goal active。
 
+完整源汇总验收程序及人工反例已准备；真实输入尚缺时实际拒绝创建接受输出，不能把准备完成当真实数据资格。部分有限测量保留待核，数值候选不自动认定状态/患者/病理/终点。详[方法](methods/CM02-external-TDLN-native-qualification-20261022.md)。
+
 原始证据补充：[APC组织问题](runs/20261022_CM02_APC_context_primary_abstracts_v1.md)已核三篇正常公开摘要/图注，细胞内信号/动物机制/人体不同来源分开，后续只在测量合格后另冻；当前源资格和统计不改。
 
 ### 以下保留上一阶段观察

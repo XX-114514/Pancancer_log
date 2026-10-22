@@ -34,3 +34,23 @@ python -B scripts/run_external_TDLN_qualification_RAM_v2.py
 
 
 最终归档检查观察2026-10-22T09:59:43.759030+00:00 UTC /2026-10-22T17:59:43.759030+08:00 UTC+8：完整仓库最终实际exit0、0errors/1warning；五Python AST、源R marker纯合成及相同生产文件入口RAM序列化/个体canary、2GiB/2048块无网络边界与HTTP/哈希body逐字不变、全部冻结代码SHA和人工隐私/JSON diff接受。默认差异检查的单一已冻EOF空行已明确记录并分文件限定豁免；其余默认检查通过。仅通用代码/方法/技术收据普通本地归档，未公开科学效应/来源细胞计数/候选排名；四个无关文件保持。真实同一任务输入仍增长但完整准入/原生资格/退出待，不重启；public push此前拒绝不重试，云端待同步，goal active。本轮新增来源资格及真实执行progress，不是blocked或目标完成。建议commit: Qualify new TDLN evidence and start bounded native measurement checks。
+
+
+### 2026-10-22T10:45:21.487838+00:00 UTC /2026-10-22T18:45:21.487838+08:00 UTC+8 完整源汇总验收准备
+
+前轮为同一源verified wait；本轮新增可在源终态后运行的通用验收和人工反例，解决输入/实际退出/代码版本混合及跨轴marker拼接造成的错误接受风险。本轮为实质实现进展，尚非真实来源接受。程序对部分有限测量保留共同细胞覆盖待核，不自动排除整来源或填阴性；候选数值资格不当细胞状态/功能或临床验证。全部合成实际exit0、两Python AST，真实inflight门槛实际exit3且无接受输出，源冻结代码SHA逐项仍一致。代码/证明SHA见[准备收据](../inventories/analysis/2026-10-22/CM02_TDLN_external_qualification_v1/technical_postqualification_consumer_prepared_v1.json)。
+
+```bash
+python -B scripts/check_external_TDLN_measurement_consumer_v1.py
+PANCANCER_EXTERNAL_TDLN_TASK="${PRIVATE_ATTEMPT_ROOT}" \
+python -B scripts/summarize_external_TDLN_qualification_v1.py
+```
+
+第二条本轮仅验证未完成状态会拒绝；真实完成后再按相同程序运行，不能以当前合成或pending拒绝替代真实验收。只消费来源汇总控制文件，不读新原生或临床个体值，真实结果仍待。原CM02/身份/Zarr/闭家族和RFS/TableS1提醒不变，原生任务不重启/不扩充，公有push旧拒绝不重试。
+
+补录此前资料核查：原来源[独立数据目录](https://zenodo.org/records/18265339)及其通用README正常服务，公开手术取材语境可读，但未能确认非癌对照纳入和临床分期字段的具体语义。范围冻结2026-10-22T10:11:50.945447+00:00 UTC /2026-10-22T18:11:50.945447+08:00 UTC+8，取证归档2026-10-22T10:12:55.811047+00:00 UTC /2026-10-22T18:12:55.811047+08:00 UTC+8；本段为当前补录，未伪称当时已commit。网页README为正常文本，未另做新的字节MD5；仪器分辨率不替代坐标导出尺度，composition-derived niche不作病理真值。没有原生/个体行或受拒正文读取、病例剔除或旧家族重算。
+
+新增通用两Python与技术收据，更新原方法/run、状态/待办和同任务轨迹，未制造新原生任务。完整仓库/人工隐私diff/普通本地归档待；无关四文件保留，goal active。建议commit: Prepare bound external spatial measurement acceptance and counterexamples。
+
+
+汇总验收准备归档检查观察2026-10-22T10:47:41.643683+00:00 UTC /2026-10-22T18:47:41.643683+08:00 UTC+8：完整仓库实际exit0、0errors/1与前轮相同warning；两Python AST、正负人工控制反例、实际未完成输入exit3无接受输出、全部源冻结代码SHA、人工隐私/JSON diff与默认git diff --cached --check通过。准备合成不当真实来源接受或科学效果。当前同一原任务输入增长，完整input/native/实际退出仍待。仅通用代码/方法/技术轨迹普通本地归档，四个无关文件保持，公有push此前拒绝不重试、云端待同步，goal active，本轮progress。建议commit: Prepare bound external spatial measurement acceptance and counterexamples。

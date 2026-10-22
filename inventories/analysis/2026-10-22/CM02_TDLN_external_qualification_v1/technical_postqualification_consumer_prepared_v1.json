@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FINAL_PREPARED_CONSUMER_AND_ACTUAL_PENDING_GATE",
+  "observed_UTC": "2026-10-22T10:45:21.487838+00:00",
+  "observed_UTC8": "2026-10-22T18:45:21.487838+08:00",
+  "code_SHA256": {
+    "summarize_external_TDLN_qualification_v1.py": "645d57be83f771c0d2cdbcad52eb3b3162da032c2beb71326f7889b12a2fb3ea",
+    "check_external_TDLN_measurement_consumer_v1.py": "6c701304c6053adcca8cd3993fc1660f17191de268bf766f0fca2d6314284d35"
+  },
+  "private_complete_checks_SHA256": "ddeb62b56ca0eff1b7af717a17a7556b2b53a5d227aefa440b6565f6ca5c1e35",
+  "native_input_qualification_still_pending": true,
+  "producer_code_and_scope_unchanged": true,
+  "no_new_native_individual_or_clinical_values_read": true,
+  "no_new_scientific_tests_or_effects": true
+}
