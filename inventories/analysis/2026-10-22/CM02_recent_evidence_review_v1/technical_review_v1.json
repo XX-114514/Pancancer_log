@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW_SOURCE_FILES_AND_SCOPE_ACCEPTED_NO_NEW_INFERENCE",
+  "UTC": "2026-10-22T03:33:18.697799+00:00",
+  "private_ledger_sha256": "82112f74d2cc5d970424eabb66edbd6d560ddbfff68f8b4a32ad22879d452c26",
+  "indexed_run_records": 40,
+  "key_private_source_aggregates": 18,
+  "same_material_comparison_checked": true,
+  "source_hashes_rechecked": true,
+  "no_new_individual_arrays_or_effects": true,
+  "original_tool_handle_poll": "unknown_process_id_not_worker_exit_evidence"
+}
