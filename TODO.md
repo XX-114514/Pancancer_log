@@ -1646,3 +1646,12 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [ ] 完成来源×谱系局部细聚类和审阅后C路由；保留未知池，原生/正交证据资格后再全量映射。
 
 完整目标未完成；新权威身份、最终选型、来源用途/临床资格及全量交付待。详[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。public push旧拒绝保持，云端待同步。
+
+
+### 2026-10-23T17:58:55.327256+00:00 UTC: full-context atlas next gates
+
+- [x] Complete source-native coarse routing and true source-by-lineage discovery; retain unknown/small-branch distinctions.
+- [x] Audit selected-source native role, assay, author and reviewed-unit identity coverage.
+- [ ] Accept new native fine-group proposals and independent comparison replay; coordinate source-local identities and qualify rare/unknown handling.
+- [ ] Freeze source-specific QC/layer/material eligibility, complete new-route holdout/limited engine comparison and select the workflow for full mapping.
+- [ ] Complete the unchanged full-scope [acceptance register](inventories/analysis/2026-10-23/full_context_annotation_v1/objective_acceptance_register_v1.json), including qualified views and storage delivery.

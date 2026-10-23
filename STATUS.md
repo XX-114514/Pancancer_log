@@ -1965,3 +1965,8 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 ## 2026-10-23T17:07:17.692056+00:00 UTC / 2026-10-24T01:07:17.692056+08:00 UTC+8：注释复算、粒度配对与marker锚点核查完成
 
 本对话最新状态：原生注释建议计算审计、六档粒度/同查询配对及两marker锚点敏感性均actual exit0，相关进程已终止。完整目标未完成；新权威身份、最终选型、来源用途/临床资格及全量交付待。详[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。public push旧拒绝保持，云端待同步。
+
+
+### 2026-10-23T17:58:55.327256+00:00 UTC: current full-context atlas branch
+
+Native coarse routing, true source-by-lineage A/new-route C discovery and selected-source metadata/role coverage have completed with actual exit0. Native fine-group review and new-comparison numerical replay are running. Source aliases, layer/model eligibility, full identity/mapping and qualified analysis views remain pending; no method winner or authoritative relabeling. See [current run](runs/20261023_full_context_hierarchical_annotation_v1.md). Other project branches are not refreshed by this entry. Public sync remains pending after the prior approval rejection.

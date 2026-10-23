@@ -1,0 +1,147 @@
+{
+  "schema": "technical_source_lineage_and_roles_v1",
+  "observed_UTC": "2026-10-23T18:05:54.304502+00:00",
+  "stages": [
+    {
+      "stage": "20261024_full_context_pilot_native_routing_v1",
+      "terminal": {
+        "status": "SOURCE_NATIVE_COARSE_ROUTING_PROPOSALS_COMPLETE_NOT_FINAL_IDENTITY",
+        "completed_UTC": "2026-10-23T17:21:21.006395+00:00",
+        "n_tests_actual_no_skips": 6,
+        "output_sha256": "da0ef5d6d4433022a22eff299b5af4db8de80cec58d323bea61e0a0fa2880412",
+        "summary_sha256": "c29413538422cb25901c32163f44953896aeed7376b1fd2fee15d79b13b32a94",
+        "wall_seconds": 69.36086577782407,
+        "peak_RSS_bytes_Linux": 1278308352,
+        "written_bytes_before_terminal": 805001,
+        "native_counts_copied": false
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "observed_UTC": "2026-10-23T17:30:24.537644+00:00"
+    },
+    {
+      "stage": "20261024_full_context_source_role_coverage_v1",
+      "terminal": {
+        "status": "SOURCE_ROLE_AND_NATIVE_METADATA_COVERAGE_COMPLETE_NOT_NEW_CLINICAL_QUALIFICATION",
+        "completed_UTC": "2026-10-23T17:38:37.611035+00:00",
+        "n_tests_actual_no_skips": 4,
+        "output_sha256": "f9386365b491f4c18575f08d99c512b5e3b73333c0c6063a1419719bf97029a9",
+        "wall_seconds": 170.30664039496332,
+        "peak_RSS_bytes_Linux": 1477668864,
+        "written_bytes_before_terminal": 315334
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "observed_UTC": "2026-10-23T17:46:18.553418+00:00"
+    },
+    {
+      "stage": "20261024_full_context_source_lineage_discovery_v1",
+      "terminal": {
+        "status": "SOURCE_LINEAGE_FINE_DISCOVERY_AND_PAIRED_DIAGNOSTICS_COMPLETE_NATIVE_FINE_REVIEW_PENDING",
+        "completed_UTC": "2026-10-23T17:46:10.461445+00:00",
+        "n_tests_actual_no_skips": 4,
+        "n_profile_records": 1476,
+        "partitions_sha256": "a6644770fcaa4bbb8b505d691770f34a47a8953354d39bff80fe2bba83ee8193",
+        "output_sha256": "b4ea121ec6b81738f7218b2312bf3a4f5a96831b458972b730b10a3179488da0",
+        "wall_seconds": 1079.1609192150645,
+        "peak_RSS_bytes_Linux": 6610690048,
+        "written_bytes_before_terminal": 5291813,
+        "native_counts_copied": false,
+        "method_winner_selected": false
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "observed_UTC": "2026-10-23T17:46:18.553418+00:00"
+    },
+    {
+      "stage": "20261024_full_context_source_lineage_native_review_v1",
+      "terminal": {
+        "status": "SOURCE_LINEAGE_NATIVE_REVIEW_PROPOSALS_COMPLETE_NOT_NEW_AUTHORITY",
+        "completed_UTC": "2026-10-23T18:00:26.535355+00:00",
+        "n_tests_actual_no_skips": 8,
+        "index_sha256": "ebc13301268f0528159fe6a21b4789778e7b8dc228f6db68f15044df08a1500f",
+        "wall_seconds": 376.514114018064,
+        "peak_RSS_bytes_Linux": 1861287936,
+        "reference_models_immutable": true
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "observed_UTC": "2026-10-23T18:05:16.366549+00:00"
+    },
+    {
+      "stage": "20261024_full_context_source_lineage_comparison_audit_v1",
+      "terminal": {
+        "status": "SOURCE_LINEAGE_STRUCTURE_AND_BOTH_CONTEXT_PAIRED_NUMERIC_REPLAY_COMPLETE",
+        "completed_UTC": "2026-10-23T18:04:04.583066+00:00",
+        "output_sha256": "34497be56129dc38dbe5f6d1396b2a4751042192db87881b5eb86331119c6dec",
+        "n_profiles_replayed": 1476,
+        "n_pairs_and_states": 7278,
+        "n_tests_actual_no_skips": 4,
+        "independent_prediction_cases": 1836,
+        "independent_prediction_max_absolute_error": 1.4765966227514582e-14,
+        "native_readout_values_checked": 1056516,
+        "native_readout_max_absolute_error": 3.3229312279559053e-07,
+        "wall_seconds": 390.5703934733756,
+        "peak_RSS_bytes_Linux": 1441304576,
+        "written_bytes_before_terminal": 414064,
+        "new_authoritative_labels": false,
+        "no_graphs_or_models_refitted": true
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "observed_UTC": "2026-10-23T18:05:16.366549+00:00"
+    }
+  ],
+  "scripts_sha256": {
+    "scripts/native_lineage_routing_v1.py": "8ddefdc13ee05af47d03552f06e456dc696dc44f1b7d6ff3f9ae7968f9493976",
+    "scripts/build_native_lineage_routing_v1.py": "29114c340f1b895fe526e925691b1441eb7685f0374e8e99022f0c2e72cdf9bd",
+    "scripts/source_lineage_discovery_v1.py": "18f5abec0f235558270fa9f5a5463374dca9eccec049ae28345d8a82a6351c82",
+    "scripts/audit_source_analysis_roles_v1.py": "123390ede12ff2d70fce516d74cde15f1e5969cde9c26651cb3e104314205eab",
+    "tests/test_native_lineage_routing_v1.py": "50dfabe22a442a5df63ea4f38eb1c0f8808008c16572832939e9e1ddb81f26b0",
+    "tests/test_source_lineage_discovery_v1.py": "f76bd71b592f8b6167c717596b42f0f6aa57f72e06090ae64c7f6e36fc813eea",
+    "tests/test_source_analysis_roles_v1.py": "981be6ca971099fac56fdff7fbb47ec939ab7af79a4b95d5bc49312580b5c81d",
+    "scripts/review_source_lineage_native_annotations_v1.py": "c74a8f624f50aa1af6d27f8006e5fe72b99581a8429cdd1d071b4d52f937b48f",
+    "scripts/audit_source_lineage_native_review_v1.py": "eaa3cabfd3b29e499ad9bc6ca052fb9aff4b3eabe6e0930ac531a94973c7d5e4",
+    "scripts/audit_source_lineage_comparison_v1.py": "c74c684cd21c05442f629fbbd66b8e9ceb8f6c066ca6c06132012c992463a4cb"
+  },
+  "new_native_review": {
+    "launched_UTC": "2026-10-23T17:54:05.206581+00:00",
+    "config_sha256": "b89fb589853f05c6f268682ae3c1955a20ef58bd84da9a0efa46c015a6979631",
+    "status": "completed_actual_exit0_independent_native_replay_running",
+    "anchor_rules": "frozen_specific_red_and_neutrophil_anchors",
+    "author_rule": "explicit_native_author_fields_or_missing_no_carried_fine_fallback",
+    "branch_fine_fit_flags_retained": true
+  },
+  "transport_failure_preserved": "uncompressed_launcher_argument_too_long_before_target_creation_then_exact_same_bytes_compressed_roundtrip",
+  "documentation_attempt_failure_preserved": "UTF8_stdin_syntax_error_before_append_repaired_with_ASCII_script",
+  "source_scientific_statistics_exported": false,
+  "authoritative_labels_promoted": false,
+  "full_goal_complete": false,
+  "public_push": "prior_auto_review_rejection_cloud_sync_pending",
+  "new_comparison_audit": {
+    "stage": "20261024_full_context_source_lineage_comparison_audit_v1",
+    "status": "running_both_contexts_and_original_B_invariance"
+  },
+  "new_native_audit": {
+    "stage": "20261024_full_context_source_lineage_native_audit_v1",
+    "status": "running_all_source_axes_pass_official_reference_replay_in_progress"
+  },
+  "pilot_QC_metadata_review": "source_level_existing_flags_reviewed_missing_not_promoted_no_masks_changed",
+  "original_harmonized_pilot_H5AD_author_fields": "checked_candidate_field_names_no_author_field_recovered_not_claiming_original_study_lacked_labels",
+  "group_proposal_counts_are_not_per_cell_acceptance": true,
+  "next_equal_rule_confidence_gate": "apply_same_native_reference_conflict_and_coarse_only_branch_rules_to_ABC_before_final_identity_coverage_comparison",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "existing_warning": "preexisting_provenance_path_warning",
+    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "nonsemantic_postlaunch_formatting": {
+    "file": "scripts/audit_source_lineage_native_review_v1.py",
+    "executed_source_sha256": "4d48e003dea7f09fa7bf08c896bab00341116b01ff7f2c7d27ba8c2856f79d16",
+    "repository_sha256": "eaa3cabfd3b29e499ad9bc6ca052fb9aff4b3eabe6e0930ac531a94973c7d5e4",
+    "AST_exactly_unchanged": true,
+    "change": "remove_one_inherited_trailing_space_detected_by_staged_diff_check"
+  }
+}

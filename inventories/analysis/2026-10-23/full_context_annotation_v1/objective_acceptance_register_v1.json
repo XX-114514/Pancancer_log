@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T17:07:17.692056+00:00",
+  "updated_UTC": "2026-10-23T17:55:40.819110+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -13,22 +13,22 @@
     {
       "id": "R2_source_design_alias",
       "requirement": "study/library aliases, capture/material/phase/assay and patient/clinical roles qualified",
-      "status": "existing_registry_joined_alias_and_clinical_review_pending",
+      "status": "all_selected_source_native_role_coverage_audited_alias_clinical_and_layer_qualification_pending",
       "completion_requires": "explicit accepted/held/unknown source table and duplicate review",
-      "evidence": "technical_source_design_bridge_v1.json"
+      "evidence": "technical_source_lineage_and_roles_v1.json"
     },
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "pilot_native_proposals_computationally_audited_conflict_and_two_anchor_sensitivity_complete_source_lineage_fine_workflow_and_full_identity_pending",
-      "evidence": "technical_granularity_and_annotation_diagnostics_v1.json",
+      "status": "pilot_native_coarse_routing_and_source_by_lineage_discovery_complete_native_fine_review_running_full_identity_pending",
+      "evidence": "technical_source_lineage_and_roles_v1.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified"
     },
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "frozen_discovery_source_holdout_and_paired_granularity_diagnostics_accepted_full_source_lineage_A_new_route_C_and_engine_comparison_pending",
-      "evidence": "technical_granularity_and_annotation_diagnostics_v1.json"
+      "status": "true_source_by_lineage_A_and_new_route_C_six_resolution_discovery_complete_native_review_independent_numeric_audit_and_new_source_holdout_pending",
+      "evidence": "technical_source_lineage_and_roles_v1.json"
     },
     {
       "id": "R5_resolution",

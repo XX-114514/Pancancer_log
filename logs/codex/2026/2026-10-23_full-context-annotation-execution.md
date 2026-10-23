@@ -502,3 +502,53 @@ public push is still pending after the prior automatic-review rejection.
 ### 本节点仓库验收
 
 `bash scripts/validate_repository.sh`实际退出0，0错误、1项既有路径警告；输出SHA256 `ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e`。9份本轮新增脚本/测试全部AST通过；显式diff/新增代码与私有路径/凭据模式检查通过，`git diff --check`无问题。实际科学环境分别完成6项粒度、4项同查询配对、3项锚点检查；审计v2的3项缓存等价也已通过。来源科学效果、细胞/单位行及矩阵未进入公共文件。普通本地提交使用本节点显式文件清单，保留无关未追踪工作；云端仍待同步。
+
+
+## 2026-10-23T17:55:40.819110+00:00 UTC / 2026-10-24T01:55:40.819110+08:00 UTC+8: native routes, true lineage discovery and source-role audit
+
+Completed three source stages with actual child exit0 and no supervisor timeout:
+provisional native coarse routing (six actual counterexample tests), source-by-lineage
+A and new-route C discovery (four actual branch tests), and complete selected-source
+native metadata/role coverage (four actual role tests). B is the frozen joint comparator.
+Six resolutions, shared features/engine/first seed and both old/new lineage contexts
+remain; no clinical result selects a resolution or workflow. New A/C fine groups
+have not yet been biologically accepted, and the old holdout is not a new-route holdout.
+
+Unknown/conflicting evidence remains in a source-local pool. Small branches retain
+coarse membership with explicit no-fine-fit flags; reference and native-only support
+remain separate. Source-role audit preserves native assay, author-field and reviewed
+unit-identity coverage; neither unit IDs nor technical review certify independent
+patients or clinical eligibility. Existing QC flags require layer/design interpretation,
+not blanket cell deletion or automatic promotion.
+
+The first uncompressed discovery launch failed with Argument list too long before
+source target creation. Absence was checked, and the exact original launcher bytes
+were compressed and SHA-verified before execution. No scientific parameter or
+network configuration changed. A documentation append failed with UTF8 stdin syntax
+before writing; this ASCII-script append repairs that documentation operation.
+
+A new versioned native fine-group reviewer launched at17:54:05 UTC. It uses the same
+fixed native panels plus the already specified red/neutrophil anchors, explicit native
+author fields (no old-fine fallback), and branch fit flags. Own-group marker evidence,
+reference proposals and old-label crosswalks remain separate from identity/state/
+malignancy. The independent reviewer is prepared but waits for successful producer
+termination. Original counts/labels, frozen dated CM02 and unrelated jobs stay preserved.
+
+Evidence: [technical receipt](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_source_lineage_and_roles_v1.json),
+[method](../../../methods/source-native-routing-and-lineage-discovery-20261024.md).
+Full objective active. Public push remains pending after the prior automatic-review
+rejection; no alternate upload attempted. Next: native fine review acceptance, new
+comparison numerical replay and source-qualified full-scale annotation/model mapping.
+
+
+## 2026-10-23T18:05:54.304502+00:00 UTC: native fine proposals completed; independent audits running
+
+The new native review finished at18:00:26 UTC with actual child exit0, eight actual tests and immutable reference fingerprints. Group-level native fine proposals, explicit author provenance, old-label crosswalks, state separation and own-group marker records are written. Independent source-lineage native replay launched only after that terminal; all source axes are checked and the size-selected official-reference replay is in progress. Both-context comparison audit is also progressing on the same handle.
+
+A source-level pilot metadata read checked existing QC/material flags. Missing flags remain unknown; the original harmonized pilot H5AD annotation field-name check did not recover omitted author fields. This does not imply the original studies never supplied author labels. No QC mask or input layer changed. Scientific source summaries remain private.
+
+Group proposal coverage must not be interpreted as per-cell identity accuracy: the next equal-rule confidence view will apply native/reference conflicts and branch status consistently across A/B/C. Continuous states and type identities need distinct evaluation, with all fixed matched-resolution comparisons retained. No workflow is promoted by the number of assigned groups.
+
+Local AST/path scan passed for ten new Python files. Repository validator actual exit0, zero errors and one pre-existing provenance-path warning; diff whitespace check passed. Current output receipt records the validation SHA. Public push remains pending after the previous automatic approval rejection.
+
+Staged new-file whitespace check found one inherited trailing space in the new native auditor. Removed it with exact AST equivalence; the technical receipt retains executed and repository SHA separately. No running source code or scientific parameters changed.
