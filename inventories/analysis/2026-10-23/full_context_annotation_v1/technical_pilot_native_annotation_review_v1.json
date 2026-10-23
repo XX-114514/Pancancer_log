@@ -1,6 +1,6 @@
 {
   "schema": "technical_pilot_native_annotation_review_v1",
-  "status": "producer_actual_exit0_independent_audit_running_identity_not_final",
+  "status": "producer_actual_exit0_v2_independent_numeric_audit_accepted_identity_not_final",
   "producer_completed_UTC": "2026-10-23T15:43:04.439853+00:00",
   "producer_actual_child_exit_code": 0,
   "producer_wall_timeout": false,
@@ -42,5 +42,6 @@
   "method_winner_selected": false,
   "replicate_aware_DEG_computed": false,
   "public_scientific_source_results_included": false,
-  "full_goal_complete": false
+  "full_goal_complete": false,
+  "audit_continuation": "technical_granularity_and_annotation_diagnostics_v1.json"
 }

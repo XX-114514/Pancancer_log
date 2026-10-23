@@ -1,0 +1,140 @@
+{
+  "schema": "technical_granularity_and_annotation_diagnostics_v1",
+  "observed_UTC": "2026-10-23T17:07:17.692056+00:00",
+  "stages": [
+    {
+      "stage": "20261024_full_context_pilot_native_annotation_audit_v2",
+      "terminal": {
+        "status": "ALL_REVIEW_AXES_AND_SIZE_SELECTED_DIRECT_NATIVE_REFERENCE_REPLAY_PASS_NOT_BIOLOGICAL_TRUTH",
+        "completed_UTC": "2026-10-23T16:23:50.200746+00:00",
+        "output_sha256": "866b747f3268ea1ec9eb288c2430a8e33c08f32022207bf1775f9694f3e55c3a",
+        "producer_terminal_sha256": "65e3c88e6f42085b6c4fde6da072399f6ddca559174b676a1b7d5d7634b2f5f3",
+        "wall_seconds": 343.18737589009106,
+        "peak_RSS_bytes_Linux": 2325622784
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "supervisor_completed_UTC": "2026-10-23T16:23:50.926172+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    },
+    {
+      "stage": "20261024_full_context_native_lineage_conflict_diagnostic_v1",
+      "terminal": {
+        "status": "SOURCE_LINEAGE_CONFLICT_DIAGNOSTIC_COMPLETE_NOT_NEW_IDENTITY_OR_QC_EXCLUSION",
+        "completed_UTC": "2026-10-23T16:36:26.292939+00:00",
+        "output_sha256": "858d32e6544b84bd4a8c3ada304e111b5edeaf738f1444d303409e8b9c28e6e1",
+        "wall_seconds": 64.68400968424976,
+        "peak_RSS_bytes_Linux": 1444909056
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "supervisor_completed_UTC": "2026-10-23T16:36:26.906667+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    },
+    {
+      "stage": "20261024_full_context_controlled_granularity_v1",
+      "terminal": {
+        "status": "SAME_INPUT_GRAPH_RESOLUTION_CURVES_COMPLETE_NOT_METHOD_SELECTION",
+        "completed_UTC": "2026-10-23T16:36:11.385591+00:00",
+        "output_sha256": "c8957eca04e6017aa8308f1b7b864686aaad33b982635aecd31d1ac8e0d27887",
+        "wall_seconds": 1493.2871236759238,
+        "peak_RSS_bytes_Linux": 6597287936,
+        "written_bytes_before_terminal": 3349556,
+        "n_profile_records": 846,
+        "n_tests_actual_no_skips": 6,
+        "original_resolution1_reproductions": {
+          "A": {
+            "adjusted_Rand_with_original_resolution1": 1.0
+          },
+          "B": {
+            "adjusted_Rand_with_original_resolution1": 1.0
+          },
+          "C": {
+            "adjusted_Rand_with_original_resolution1": 1.0
+          }
+        }
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "supervisor_completed_UTC": "2026-10-23T16:36:12.928510+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    },
+    {
+      "stage": "20261024_full_context_paired_granularity_review_v1",
+      "terminal": {
+        "status": "PAIRED_QUERY_REVIEW_AND_SIZE_SELECTED_NUMERIC_AUDIT_COMPLETE",
+        "completed_UTC": "2026-10-23T17:02:26.111514+00:00",
+        "output_sha256": "77869ac386f62753baec4167ecf107e50c50448ab1d5dfe9e04f28ff55f859da",
+        "wall_seconds": 209.70287304697558,
+        "peak_RSS_bytes_Linux": 1427881984,
+        "written_bytes_before_terminal": 357366,
+        "n_tests_actual_no_skips": 4,
+        "n_profiles_replayed": 846,
+        "n_pairs_and_states": 6768,
+        "independent_audit_source_selection": "smallest_pilot_source_before_outcome_inspection",
+        "independent_prediction_cases": 1080,
+        "independent_prediction_max_absolute_error": 1.9317880628477724e-14,
+        "native_readout_values_checked": 1056516,
+        "native_readout_max_absolute_error": 3.3229312279559053e-07,
+        "no_graphs_or_models_refitted": true
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "supervisor_completed_UTC": "2026-10-23T17:02:26.683621+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    },
+    {
+      "stage": "20261024_full_context_lineage_anchor_sensitivity_v1",
+      "terminal": {
+        "status": "TWO_PANEL_ANCHOR_SENSITIVITY_COMPLETE_NOT_NEW_IDENTITY_OR_QC",
+        "completed_UTC": "2026-10-23T17:03:38.829616+00:00",
+        "output_sha256": "ca58aeacac23ffbadeef37d1041b2e567cca4a58760be95115b50595ef2773db",
+        "wall_seconds": 75.2867575660348,
+        "peak_RSS_bytes_Linux": 1274925056,
+        "written_bytes_before_terminal": 148049,
+        "n_tests_actual_no_skips": 3,
+        "all_original_group_calls_reproduced": true
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "supervisor_completed_UTC": "2026-10-23T17:03:39.443612+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    }
+  ],
+  "scripts_sha256": {
+    "scripts/audit_native_annotation_review_v2.py": "213494d76a776877c5ef4721bfa71b4c088673feee4db988dd20acb6e103ff72",
+    "scripts/annotation_granularity_metrics_v1.py": "453781b407a3a94b449af3989fb3ad064466c789f616aa97fcd13cc2402d79d8",
+    "scripts/compare_annotation_granularity_v1.py": "8817f26ff58ff92254613c633184ea186c61202b62de23933029061b8b4f8d7b",
+    "scripts/diagnose_native_lineage_conflicts_v1.py": "464a314b18b1fc7065af44dc3c3bd41acd4efda3b57d9c1af80f4c284296a537",
+    "scripts/paired_granularity_review_v1.py": "b433b05d61b0cf0af67e4aa0954742d4f8f90a5c833ce55a3b6298239cc11c1a",
+    "scripts/review_lineage_anchor_sensitivity_v1.py": "f8239b9aaee4b381077d295ef32679102f590eda578b510901811aa821b6d3d3",
+    "tests/test_annotation_granularity_metrics_v1.py": "22afc9b1ab080e97c9b474917a93ac99bc80dd5ef9eadf336de94c580dcebe12",
+    "tests/test_paired_granularity_review_v1.py": "f2ec76e24fcbd7ca07e09fbcf2d5766e1fffbd3a8ede5f5dcaadd7b1c15a940c",
+    "tests/test_lineage_anchor_sensitivity_v1.py": "eab75436f8f0cbb2e3c86ba4841319894695db8038f6ae8018a215202977f453"
+  },
+  "audit_v1_preserved": {
+    "actual_child_exit_code": -15,
+    "wall_timeout": true,
+    "supervisor_completed_UTC": "2026-10-23T16:15:45.269833+00:00",
+    "scientific_terminal_exists": false
+  },
+  "audit_v2_change": "cache_CSC_gene_columns_same_scope_and_tolerance_three_equivalence_cases",
+  "native_review_acceptance": "all_source_axes_and_denominators_size_selected_source_native_marker_and_official_reference_numeric_replay",
+  "paired_review_acceptance": "all_source_profiles_and_pairs_replayed_smallest_source_all_state_predictions_independently_recomputed",
+  "lineage_anchor_sensitivity_is_posthoc_rule_review": true,
+  "unresolved_reduction_is_not_accuracy": true,
+  "full_A_source_by_lineage_workflow_complete": false,
+  "C_uses_new_native_reviewed_routing": false,
+  "new_authoritative_labels": false,
+  "method_winner_selected": false,
+  "clinical_outcomes_used": false,
+  "public_source_scientific_statistics_included": false,
+  "native_counts_copied": false,
+  "full_goal_complete": false,
+  "public_push": "previous_auto_review_rejection_preserved_cloud_sync_pending"
+}

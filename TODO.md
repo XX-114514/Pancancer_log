@@ -1638,3 +1638,11 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [ ] 跟进同一独立验收句柄的实际终态；全来源轴/旧新对应及按规模选定来源的直接CSR/官方预测重放，不能以进程存活当验收。
 - [ ] 审阅局部粗细建议、混合谱系/未知/γδ边界，并纳入完整来源和补入未决池；参考模型训练重叠保持显式。
 - [ ] 按[来源×谱系粒度方案](methods/full-context-granularity-comparison-plan-20261024.md)冻结下一比较配置，保留完整八项目标。
+
+
+## 2026-10-23T17:07:17.692056+00:00 UTC / 2026-10-24T01:07:17.692056+08:00 UTC+8：注释复算、粒度配对与marker锚点核查完成
+
+- [x] 完成原生建议独立复算、原分群重现、同查询配对和限定marker敏感性。
+- [ ] 完成来源×谱系局部细聚类和审阅后C路由；保留未知池，原生/正交证据资格后再全量映射。
+
+完整目标未完成；新权威身份、最终选型、来源用途/临床资格及全量交付待。详[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。public push旧拒绝保持，云端待同步。

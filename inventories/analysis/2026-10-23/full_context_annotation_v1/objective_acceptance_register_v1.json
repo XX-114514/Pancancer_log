@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T15:45:45.034949+00:00",
+  "updated_UTC": "2026-10-23T17:07:17.692056+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -20,21 +20,21 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "native_evidence_accepted_pilot_local_annotation_proposals_complete_independent_review_running_full_source_identities_pending",
-      "evidence": "technical_pilot_native_annotation_review_v1.json",
+      "status": "pilot_native_proposals_computationally_audited_conflict_and_two_anchor_sensitivity_complete_source_lineage_fine_workflow_and_full_identity_pending",
+      "evidence": "technical_granularity_and_annotation_diagnostics_v1.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified"
     },
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "discovery_and_all_source_holdout_axes_accepted_representative_prototype_replay_pass_identity_granularity_and_engine_comparison_pending",
-      "evidence": "technical_source_holdout_independent_acceptance_v2.json"
+      "status": "frozen_discovery_source_holdout_and_paired_granularity_diagnostics_accepted_full_source_lineage_A_new_route_C_and_engine_comparison_pending",
+      "evidence": "technical_granularity_and_annotation_diagnostics_v1.json"
     },
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "representative_native_and_query_prototype_numeric_replay_accepted_rare_unknown_mixing_and_fair_granularity_comparison_pending",
-      "evidence": "technical_source_holdout_independent_acceptance_v2.json"
+      "status": "paired_query_state_diagnostics_and_size_selected_independent_numeric_replay_accepted_orthogonal_identity_rare_unknown_and_mixing_review_pending",
+      "evidence": "technical_granularity_and_annotation_diagnostics_v1.json"
     },
     {
       "id": "R6_full_scale",

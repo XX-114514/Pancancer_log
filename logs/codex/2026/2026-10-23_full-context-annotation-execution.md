@@ -449,3 +449,56 @@ resolve their series metadata: the official series viewers returned browser
 checks. A search excerpt is not substituted for full source qualification. No
 hold, duplicate classification, source membership or download policy changed.
 Continue R2 from the existing registry and original metadata bridges.
+
+## 2026-10-23T16:13:38.561229+00:00 UTC / 2026-10-24T00:13:38.561229+08:00 UTC+8: controlled granularity comparison running
+
+Previous goal turn classified as **progress**: source-native annotation proposal
+production completed on the full frozen pilot with five actual counterexamples,
+and code/protocol/state was committed as0063dad. New turn rechecked worktree/HEAD
+and exact source process handles; the original independent annotation auditor
+remains live, without a terminal. No completed production job was restarted.
+
+Implemented `annotation_granularity_metrics_v1.py`,
+`compare_annotation_granularity_v1.py` and six meaningful scientific-environment
+tests. Frozen first-seed grid0.125/0.25/0.5/1/2/4 uses unchanged input/features/
+engine/graph parameters, with graphs reused over resolutions. Resolution1 must
+reproduce original memberships, up to label permutation. Source×prior-parent
+effective group counts, sizes, missingness and fixed20% ratio matching distinguish
+local numbering from biological resolution. No RNA/clinical/CM result chooses
+the matching pairs. Source-native count matrices and graphs remain RAM-only.
+
+RNA readouts use other expression units: both depth regression and same-group
+residual prediction exclude every row of the queried unit. Report prediction
+gain over the identical depth baseline and its coverage; negative/no-variation/
+unit-exclusive/insufficient outcomes remain. Group discovery is transductive,
+and units are not assumed independent patients. This does not replace source
+holdout or establish new identity/state truth. Rare RNA candidate neighbors
+exclude the query itself, preventing singleton groups receiving perfect scores.
+
+New exact supervisor launched2026-10-23T16:11:13.991756+00:00 UTC. At16:13:38 UTC
+all6 tests had passed with no skips; supervisor/child both exact-live, native input
+loading checkpoint advanced. Full curve results, original partition reproduction,
+independent numerical acceptance and a method winner are pending. This stage
+does not use the pending native-reference audit's proposed labels as truth.
+
+Original annotation audit remains the same handle;27 official prediction block
+completion messages are progress indicators, not a terminal/acceptance claim.
+Its original30-minute supervisor budget remains. Complete full objective active;
+public push is still pending after the prior automatic-review rejection.
+
+
+## 2026-10-23T17:07:17.692056+00:00 UTC / 2026-10-24T01:07:17.692056+08:00 UTC+8：注释复算、粒度配对与marker锚点核查完成
+
+原注释审计v1到达30分钟上限，真实child=-15、无科学终态；完整保留。瓶颈为重复CSR行列切片，v2缓存CSC基因列并保持原范围/标准，3项等价检查通过。v2独立审计实际exit0，全来源轴/分母及按规模选择来源的原生marker和官方参考预测重放通过；这是计算验收，正式身份另审。
+
+六档分辨率比较actual exit0，6项实际反例通过，原resolution1三种方法全部ARI=1。补充的同查询细胞配对审阅actual exit0：全部846曲线记录复算、4项反例通过，按规模选定来源1080种状态预测独立中心化OLS/直接群均值重放通过。状态匹配只用原冻结粒度，不按结果挑分辨率；全部匹配对及共同覆盖完整保留，表达单位不当独立患者，结果只在私有来源汇总审阅。
+
+原始H5AD与规范库的代表行全部原生基因映射检查、完整试验细胞级多谱系RNA诊断actual exit0。随后按固定四情形检查两组marker锚点，3项实际反例及完整旧群判定重现通过、actual exit0。减少冲突不当准确率提高，不诊断污染/双细胞、不删除细胞或改权威身份。原规则和失败历史保留。
+
+当前本对话这五项科学/审计任务均真实终止；完整目标继续active。A仍是来源内全细胞图的基线，尚需来源×谱系细聚类；C仍为旧粗类路由，尚需审阅后版本。下一建立该完整分层流程，审未知/边界、来源用途与全量资格，再选择映射路线。没有按本轮结果宣布单一赢家。旧计数、旧CM02和并行任务不变；此前公共push自动审批拒绝保持，普通本地归档、云端待同步。
+
+技术收据：[验收记录](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_granularity_and_annotation_diagnostics_v1.json)。
+
+### 本节点仓库验收
+
+`bash scripts/validate_repository.sh`实际退出0，0错误、1项既有路径警告；输出SHA256 `ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e`。9份本轮新增脚本/测试全部AST通过；显式diff/新增代码与私有路径/凭据模式检查通过，`git diff --check`无问题。实际科学环境分别完成6项粒度、4项同查询配对、3项锚点检查；审计v2的3项缓存等价也已通过。来源科学效果、细胞/单位行及矩阵未进入公共文件。普通本地提交使用本节点显式文件清单，保留无关未追踪工作；云端仍待同步。

@@ -1960,3 +1960,8 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 ### 2026-10-23T15:45:45.034949+00:00 来源内注释推进
 
 完整冻结试验的A/B/C来源内身份建议、原生证据、参考无/多匹配及旧新群对应已生成，5项实际检查通过；独立原生/官方预测复算运行中。正式新身份、全量映射和方法选择待验。同粒度比较须按来源×谱系校准编号和群大小，不能直接比较来源内与跨来源总群数。[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。
+
+
+## 2026-10-23T17:07:17.692056+00:00 UTC / 2026-10-24T01:07:17.692056+08:00 UTC+8：注释复算、粒度配对与marker锚点核查完成
+
+本对话最新状态：原生注释建议计算审计、六档粒度/同查询配对及两marker锚点敏感性均actual exit0，相关进程已终止。完整目标未完成；新权威身份、最终选型、来源用途/临床资格及全量交付待。详[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。public push旧拒绝保持，云端待同步。

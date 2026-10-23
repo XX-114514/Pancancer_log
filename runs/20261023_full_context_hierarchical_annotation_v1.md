@@ -392,3 +392,16 @@ Numbers in local display names are source/method group IDs, not final common
 biological types. New annotation truth, valid replicate-aware DEG, full archive
 mapping and a method winner remain unaccepted. Full eight-part goal stays active;
 scientific summaries remain private and public push remains pending.
+
+
+## 2026-10-23T17:07:17.692056+00:00 UTC / 2026-10-24T01:07:17.692056+08:00 UTC+8：注释复算、粒度配对与marker锚点核查完成
+
+原注释审计v1到达30分钟上限，真实child=-15、无科学终态；完整保留。瓶颈为重复CSR行列切片，v2缓存CSC基因列并保持原范围/标准，3项等价检查通过。v2独立审计实际exit0，全来源轴/分母及按规模选择来源的原生marker和官方参考预测重放通过；这是计算验收，正式身份另审。
+
+六档分辨率比较actual exit0，6项实际反例通过，原resolution1三种方法全部ARI=1。补充的同查询细胞配对审阅actual exit0：全部846曲线记录复算、4项反例通过，按规模选定来源1080种状态预测独立中心化OLS/直接群均值重放通过。状态匹配只用原冻结粒度，不按结果挑分辨率；全部匹配对及共同覆盖完整保留，表达单位不当独立患者，结果只在私有来源汇总审阅。
+
+原始H5AD与规范库的代表行全部原生基因映射检查、完整试验细胞级多谱系RNA诊断actual exit0。随后按固定四情形检查两组marker锚点，3项实际反例及完整旧群判定重现通过、actual exit0。减少冲突不当准确率提高，不诊断污染/双细胞、不删除细胞或改权威身份。原规则和失败历史保留。
+
+当前本对话这五项科学/审计任务均真实终止；完整目标继续active。A仍是来源内全细胞图的基线，尚需来源×谱系细聚类；C仍为旧粗类路由，尚需审阅后版本。下一建立该完整分层流程，审未知/边界、来源用途与全量资格，再选择映射路线。没有按本轮结果宣布单一赢家。旧计数、旧CM02和并行任务不变；此前公共push自动审批拒绝保持，普通本地归档、云端待同步。
+
+技术收据：[验收记录](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_granularity_and_annotation_diagnostics_v1.json)。
