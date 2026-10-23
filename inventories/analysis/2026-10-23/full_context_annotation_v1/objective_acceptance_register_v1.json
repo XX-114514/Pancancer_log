@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T18:32:49.704832+00:00",
+  "updated_UTC": "2026-10-23T19:04:49.054659+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -27,14 +27,14 @@
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "true_source_lineage_A_new_route_C_and_both_context_numeric_replay_accepted_identity_coordination_feature_engine_and_new_holdout_pending",
-      "evidence": "technical_source_lineage_and_roles_v1.json"
+      "status": "controlled_ABC_source_lineage_and_two_route_feature_engine_diagnostics_independently_accepted_new_route_source_holdout_and_final_workflow_pending",
+      "evidence": "technical_lineage_graph_factor_comparison_v1.json"
     },
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "paired_state_and_equal_cell_guard_replays_accepted_rare_unknown_orthogonal_graph_state_and_comparable_mixing_pending",
-      "evidence": "technical_common_cell_confidence_v2.json"
+      "status": "common_cell_guard_actual_graph_RNA_and_candidate_neighbor_diagnostics_accepted_conditional_coverage_rare_unknown_and_full_scale_qualification_pending",
+      "evidence": "technical_lineage_graph_factor_comparison_v1.json"
     },
     {
       "id": "R6_full_scale",

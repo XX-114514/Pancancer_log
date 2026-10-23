@@ -61,6 +61,7 @@ def main(root,producer):
     fits=json.loads((producer/'outputs/graph_fit_resource_records_v1.json').read_text())
     fit_by={(r['route'],r['variant']):r for r in fits if r['status']=='fit_complete'}
     index=json.loads(index_path.read_text());reports=[];n_cases=0;max_error=0.;replayed=0
+    finite_prediction_values=0;cases_with_finite_predictions=0
     for entry in index:
         parent=entry['route'];ap=producer/'outputs'/entry['axes'];pp=producer/'outputs'/entry['profile']
         if sha256_file(ap)!=entry['axes_sha256'] or sha256_file(pp)!=entry['profile_sha256']:raise ValueError('Graph profile or axis changed')
@@ -109,6 +110,8 @@ def main(root,producer):
                 for state,y in values.items():
                     first=unit_out_graph_state(sub,u[q],d[q],y[q],cfg['minimum_other_unit_neighbors'],cfg['minimum_train_cells'],True)
                     p,b=direct_unit_out_graph_state(sub,u[q],d[q],y[q],cfg['minimum_other_unit_neighbors'],cfg['minimum_train_cells'])
+                    finite_prediction_values+=int(np.isfinite(p).sum())
+                    cases_with_finite_predictions+=int(np.isfinite(p).any())
                     for a,z in [(first['prediction'],p),(first['baseline'],b)]:
                         np.testing.assert_array_equal(np.isfinite(a),np.isfinite(z))
                         ok=np.isfinite(a)
@@ -129,11 +132,15 @@ def main(root,producer):
     out=root/'outputs/graph_comparison_independent_audit_v1.json'
     save(out,{'route_reports':reports,'replayed_aggregate_records':replayed,'independent_prediction_cases':n_cases,
         'independent_prediction_max_absolute_error':max_error,'numeric_source_selection':'smallest_frozen_pilot_source',
+        'independent_finite_prediction_values_replayed':finite_prediction_values,
+        'independent_cases_with_evaluable_predictions':cases_with_finite_predictions,
         'all_rare_RNA_route_denominators_checked':True,'native_features_and_heldout_physical_aliases_validated':True,
         'graph_rebuild_not_claimed':True,'new_source_holdout_not_claimed':True,'biological_accuracy_not_claimed':True})
     save(root/'provenance/terminal_v1.json',{'status':'LINEAGE_GRAPH_FACTOR_AXES_FULL_AGGREGATES_AND_SELECTED_DIRECT_NEIGHBOR_REPLAY_ACCEPTED',
         'completed_UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'output_sha256':sha256_file(out),
         'replayed_aggregate_records':replayed,'independent_prediction_cases':n_cases,'independent_prediction_max_absolute_error':max_error,
+        'independent_finite_prediction_values_replayed':finite_prediction_values,
+        'independent_cases_with_evaluable_predictions':cases_with_finite_predictions,
         'wall_seconds':time.monotonic()-started,'peak_RSS_bytes_Linux':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024,
         'no_graph_or_model_refit':True,'native_counts_copied':False,'new_authoritative_labels':False})
 

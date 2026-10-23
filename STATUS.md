@@ -1985,3 +1985,8 @@ Both producer versions completed; v2 preserves broad-family reference/group drop
 ### 2026-10-23T18:42:27.136188+00:00 UTC: current full-context graph-factor comparison
 
 Common cell-confidence v2 and independent replay are accepted. Graph comparison first attempt stopped before fitting on Unicode index encoding; preserved and repaired in a new run. Eight actual numerical tests and both installed engine API checks passed; real four-condition comparison running. Full mapping, new-route holdout and source-qualified views remain pending. [Run](runs/20261023_full_context_hierarchical_annotation_v1.md). Other project branches not refreshed; public sync remains pending.
+
+
+### 2026-10-23T19:04:49.054659+00:00 UTC: lineage feature/graph comparison accepted
+
+Version2 producer and independent auditor both actual exit0. Eight graph conditions across two predefined lineages completed; all2000 aggregates and126852 finite independent predictions reproduced, maximum discrepancy5.33e-15. All owned graph jobs terminal. Common-query coverage and candidate-label scope constrain interpretation; no universal winner or final atlas labels. Next new-route source holdout, full native annotation/reference mapping and qualified views. [Evidence](runs/20261023_full_context_hierarchical_annotation_v1.md). Full objective active; other branches not refreshed, public sync pending.

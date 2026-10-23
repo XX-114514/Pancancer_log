@@ -430,3 +430,8 @@ Actual source seven counterexamples and Scanpy/BBKNN API smokes passed; frozen f
 ### 2026-10-23T18:41:57.826901+00:00 UTC: graph comparison encoding repair v2
 
 First attempt passed numerical/API gates then exited1 before fitting because NumPy Unicode addition was unsupported. Preserved failure; new version uses explicit source-qualified keys and an added counterexample. Scientific design unchanged; v2 actual execution pending. [Technical trajectory](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_lineage_graph_factor_comparison_v1.json).
+
+
+### 2026-10-23T19:04:49.054659+00:00 UTC: lineage feature/graph comparison accepted
+
+Version2 producer and independent auditor both actual exit0. Eight graph conditions across two predefined lineages completed; all2000 aggregates and126852 finite independent predictions reproduced, maximum discrepancy5.33e-15. All owned graph jobs terminal. Common-query coverage and candidate-label scope constrain interpretation; no universal winner or final atlas labels. Next new-route source holdout, full native annotation/reference mapping and qualified views. [Evidence](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_lineage_graph_factor_comparison_v1.json). Full objective active; other branches not refreshed, public sync pending.

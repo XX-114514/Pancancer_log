@@ -603,3 +603,24 @@ Version2 uses explicit string construction, preserves leading zeros and source n
 Prior repository validator completed actual exit0, zero errors and one pre-existing provenance warning. New versioned code receives another owned diff/privacy/validator pass before ordinary commit. Public push previous rejection remains.
 
 At 2026-10-23T18:42:27.136188+00:00 UTC, v2 actual eight counterexamples and both graph API smokes passed; native inputs continue on the same live process. The old source failure was independently localized to NumPy Unicode add, with zero graph/model files created. New repository validator actual exit0, zero errors and one pre-existing provenance warning; owned code privacy/absolute-path/whitespace checks passed. Ordinary local milestone commit follows; public push remains pending.
+
+
+Source-design exploration while the fixed graph comparison runs: rechecked two existing pilot sources through official GEO/BioProject indexed metadata and a primary-author conference abstract. Direct GEO pages returned a browser challenge and PubMed open supplied no usable abstract; did not bypass the challenge or download biological files. Existing source-level register was read only. The review distinguishes publication reuse of an external cohort from duplication inside a native source archive, and tumor material from a certified whole-tissue capture design. Scientific metadata and interpretation remain in the private source-design note. No frozen fold, capture eligibility or source label was changed.
+
+Clarified graph output semantics: the unknown-neighbor field means absence of direct fine-candidate evidence, which also includes cells with coarse/inferred identity. It is not the number of biologically unidentified cells. Prepared v2 auditor now separately counts finite independent predictions and evaluable cases; it has not yet run.
+
+
+## 2026-10-23T18:59:58.070186+00:00 UTC: real feature/engine comparison complete; independent replay started
+
+Version2 producer completed18:54:26 UTC, actual child exit0 and no timeout. All eight real graphs and both saved lineage PCA models completed; shared-feature Harmony exactly reproduced the frozen C partitions for both requested lineages. Actual wall797.78seconds, peak RSS6,976,667,648bytes, output219,018,578bytes. Eight numerical counterexamples passed; raw counts not copied and no final labels/engine selected. Index SHA322256e95c850ed5995ed3d1035021bc9f289a5d7e4a98ee416c2fd2fcc2c9ce.
+
+Independent v2 audit launched only after the real supervisor terminal. It rechecks all stored graph/feature/axis/profile records and uses independent centered-OLS/direct-neighbor calculations in the size-selected source, with finite predicted values separately counted. Source-level interpretation was read privately with audit-pending status; no result-driven parameter or frozen fold changes. Next gates remain new-route train-only source holdout, full native reference evidence and full archive mapping/qualified views; the pilot is not the final delivery.
+
+
+## 2026-10-23T19:04:49.054659+00:00 UTC / 2026-10-24T03:04:49.054659+08:00 UTC+8: feature/engine graph comparison independently accepted
+
+Audit completed19:00:29 UTC, actual child exit0 and no timeout. All2000 source/graph/coverage aggregate records reproduced. Independent centered-OLS/direct-row-neighbor replay covered120 cases,114 with finite predictions and126852 finite predicted values; maximum absolute discrepancy5.3291e-15. All graph/feature/identity axes, frozen C reproduction, rare RNA route denominators and artifact hashes passed. Audit SHA9b27d175bb9c9c8d00932fd22ad4bcae220e4c2bce88355d1324346b98a6812a. Exact graph producer/auditor processes are terminal as of2026-10-23T19:02:09.306129+00:00.
+
+Scientific source-level comparisons and scope-limited interpretation stay private. The results do not justify a universal feature or engine winner. Common-query coverage and source/type conditioning remain explicit; frozen RNA scores are unchanged. Next use the existing mappable Harmony candidates in new-route train-only source holdout, while preparing full selected-native-archive reference evidence and mapping. Full eight-part objective remains active; no final labels, clinical mechanism or whole-atlas completion claim.
+
+A source-aggregate figure for two illustrative predeclared programs was rendered in the existing source environment, transferred with matching SHA and visually checked; all six program results remain in the complete private report. No individual data, gene weights or native matrices exported. Code milestone dcdda9e is local; final acceptance record receives ordinary local commit after diff/privacy check. Repository validator actual exit0, zero errors and one existing warning. Prior public push rejection preserved; cloud sync remains pending.

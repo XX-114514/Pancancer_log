@@ -2,7 +2,7 @@
   "schema": "technical_lineage_graph_factor_comparison_v1",
   "launched_UTC": "2026-10-23T18:37:23.277745+00:00",
   "observed_UTC": "2026-10-23T18:38:31.675711+00:00",
-  "status": "v1_prefit_namespace_failure_preserved_v2_encoding_only_repair_launched_actual_acceptance_pending",
+  "status": "v1_failure_preserved_v2_producer_and_independent_numeric_audit_accepted",
   "config_sha256": "55b5c90d1993fbbb62220ed50496db6e2f4bfac854b1e5365ee4b3fd58edc205",
   "executed_script_SHA256": {
     "scripts/compare_lineage_graph_engines_v1.py": "f5504d107ca5f0440accc304fc46a5831c9974dd54aa137075efca9fd278d104",
@@ -92,8 +92,8 @@
   "v2_repair": "scalar_string_plus_numpy_Unicode_array_replaced_by_explicit_source_qualified_string_construction",
   "scientific_parameters_changed": false,
   "v2_additional_counterexample": "Unicode_leading_zero_and_cross_source_key_preservation",
-  "prepared_v2_auditor_sha256": "96dccd663621e51e5c03cf8dfb6c7b5e36bac8b943bf21ed36a19a4d782e9a2d",
-  "v2_status": "eight_actual_counterexamples_and_both_API_smokes_passed_real_comparison_running",
+  "prepared_v2_auditor_sha256": "5801228cd2130d7ee575e15379110115fd5353af5f44173d59e27d721ab2ab30",
+  "v2_status": "complete_actual_exit0_independent_audit_accepted",
   "v2_observed_UTC": "2026-10-23T18:42:27.136188+00:00",
   "v2_actual_tests": {
     "actual_exit_code": 0,
@@ -126,13 +126,90 @@
       }
     ]
   },
-  "v2_exact_supervisor_live": true,
-  "v2_exact_child_live": true,
+  "v2_exact_supervisor_live": false,
+  "v2_exact_child_live": false,
   "repository_validation": {
     "actual_exit_code": 0,
     "errors": 0,
     "warnings": 1,
     "existing_warning": "preexisting_provenance_path_warning",
     "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "prepared_v2_auditor_extra_scope": "finite_independent_prediction_values_and_evaluable_cases_counted_separately_before_launch",
+  "v2_terminal": {
+    "status": "LINEAGE_FEATURE_AND_GRAPH_FACTOR_COMPARISON_COMPLETE_INDEPENDENT_AUDIT_PENDING",
+    "completed_UTC": "2026-10-23T18:54:26.877645+00:00",
+    "n_tests_actual_no_skips": 8,
+    "n_route_branches": 2,
+    "index_sha256": "322256e95c850ed5995ed3d1035021bc9f289a5d7e4a98ee416c2fd2fcc2c9ce",
+    "wall_seconds": 797.7822944438085,
+    "peak_RSS_bytes_Linux": 6976667648,
+    "written_bytes_before_terminal": 219018578,
+    "all_shared_Harmony_C_partitions_reproduced": true,
+    "native_counts_copied": false,
+    "engine_winner_selected": false,
+    "new_authoritative_labels": false,
+    "source_holdout_replaced": false,
+    "versions": {
+      "bbknn": "1.6.0",
+      "scanpy": "1.11.5",
+      "numpy": "1.26.4",
+      "scipy": "1.11.4",
+      "pynndescent": "0.5.13",
+      "scikit-learn": "1.7.2"
+    }
+  },
+  "v2_supervisor_terminal": {
+    "completed_UTC": "2026-10-23T18:54:29.552716+00:00",
+    "actual_child_exit_code": 0,
+    "wall_timeout": false,
+    "science_terminal_exists": true
+  },
+  "audit_v2_launch": {
+    "observed_UTC": "2026-10-23T18:55:50.776127+00:00",
+    "script_SHA256": {
+      "scripts/audit_lineage_graph_comparison_v2.py": "5801228cd2130d7ee575e15379110115fd5353af5f44173d59e27d721ab2ab30",
+      "scripts/compare_lineage_graph_engines_v2.py": "156e26d6e32be084b0e214f86c9fe6d28dbccd49b7a8fabf4238f32498a8c4c5",
+      "scripts/annotation_graph_diagnostics_v1.py": "26991af0caab93dda29a29be7c731c64217e60874c68ca71fe16140390bc421e",
+      "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+      "scripts/paired_granularity_review_v1.py": "b433b05d61b0cf0af67e4aa0954742d4f8f90a5c833ce55a3b6298239cc11c1a",
+      "scripts/annotation_granularity_metrics_v1.py": "453781b407a3a94b449af3989fb3ad064466c789f616aa97fcd13cc2402d79d8",
+      "scripts/load_annotation_pilot_native_v1.py": "2600266035065c71bf46079c3be691fbcc7c556d5027531e4f2b368a731c4e78",
+      "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+      "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+      "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+      "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f"
+    },
+    "producer_terminal_sha256": "52311104f021ddf9b3737ee2027fccadf3f83585355256200aaded844b0cbdd1",
+    "stage": "LINEAGE_GRAPH_INDEPENDENT_AUDIT_LAUNCHED_NOT_ACCEPTANCE"
+  },
+  "audit_v2_terminal": {
+    "status": "LINEAGE_GRAPH_FACTOR_AXES_FULL_AGGREGATES_AND_SELECTED_DIRECT_NEIGHBOR_REPLAY_ACCEPTED",
+    "completed_UTC": "2026-10-23T19:00:29.422732+00:00",
+    "output_sha256": "9b27d175bb9c9c8d00932fd22ad4bcae220e4c2bce88355d1324346b98a6812a",
+    "replayed_aggregate_records": 2000,
+    "independent_prediction_cases": 120,
+    "independent_prediction_max_absolute_error": 5.329070518200751e-15,
+    "independent_finite_prediction_values_replayed": 126852,
+    "independent_cases_with_evaluable_predictions": 114,
+    "wall_seconds": 276.18239411339164,
+    "peak_RSS_bytes_Linux": 6583685120,
+    "no_graph_or_model_refit": true,
+    "native_counts_copied": false,
+    "new_authoritative_labels": false
+  },
+  "audit_v2_supervisor_terminal": {
+    "completed_UTC": "2026-10-23T19:00:30.935321+00:00",
+    "actual_child_exit_code": 0,
+    "wall_timeout": false,
+    "science_terminal_exists": true
+  },
+  "all_owned_graph_jobs_terminal_as_of_UTC": "2026-10-23T19:02:09.306129+00:00",
+  "private_figure": {
+    "source_aggregate_only": true,
+    "sha256": "3b223f43ecb643ff16d5fcfa4402401267c3b98b1db34360138a8922317b7ae1",
+    "visual_QA": "labels_points_and_coverage_readable",
+    "public_git_export": false,
+    "scope": "two_illustrative_predeclared_RNA_programs_full_six_program_report_retained"
   }
 }
