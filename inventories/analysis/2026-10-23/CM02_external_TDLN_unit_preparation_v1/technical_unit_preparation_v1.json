@@ -1,0 +1,34 @@
+{
+  "kind": "SYNTHETIC_EXTERNAL_TDLN_UNIT_CORE_PREPARATION_AND_CONTROL_RECOVERY",
+  "observed_UTC": "2026-10-23T06:57:47.507071+00:00",
+  "observed_UTC_plus_8": "2026-10-23T14:57:47.507071+08:00",
+  "unit_core_code_SHA256": {
+    "scripts/qualify_LN_unit_geometry_RAM_v1.R": "9b2123ec7608207ea08ab194798f38912a23b2b6a3f850e1953eaf882ec98223",
+    "scripts/qualify_external_TDLN_units_RAM_v1.R": "07fece7912a6af7ec8d4fda4e51d0a36d00658517035f6bc86d312678b39a907",
+    "scripts/check_external_TDLN_units_RAM_v1.R": "05d18b217fbc8c85ba4da2608bd13895084e362973421020d691944df69264c3"
+  },
+  "local_synthetic_actual_exit_code": 0,
+  "source_synthetic_actual_exit_code": 0,
+  "current_direct_control_actual_exit_code": 0,
+  "old_original_process_absence_confirmed": true,
+  "source_or_local_full_native_read_not_started": true,
+  "whole_native_local_analysis_resource_gate_not_accepted": true,
+  "local_range_probe": "SHORT_BODY_NO_FULL_HASH",
+  "source_range_probe": "TIMEOUT_NO_FULL_HASH",
+  "no_individual_source_values_in_public_receipt": true,
+  "evidence_SHA256": {
+    "private_frozen_unit_preparation_v1.json": "9a906d850b4301a7e5672e8fb32544f9a865a255ca197a599e0404c81b819811",
+    "private_actual_unit_core_checks_v1.json": "d7779bf92b7da850acf38b40ed7f96cbb27cb2f7970df40546bc6beefd8976c2",
+    "private_source_unit_core_checks_v1.json": "d00790c0fd4ff54d58b8cb73de9ae7354ac9515b776cec6b1e892859c20adfa6",
+    "private_existing_alias_control_v1.json": "de1dc0a3ca01fe0f5f6ec950c844c6f1eed5619a2d344c36200a703f2ae29b13",
+    "private_current_DNS_consistency_v1.json": "87b467afba209ebd13e840e7761e7d3672af287c0acb94cb5f0d042112c42542",
+    "private_local_proxy_and_route_v1.json": "915dc1d79413a69153d55c5a7376e4acfaec34a196344e7eaf8e722b3c7bfdf6",
+    "private_control_after_existing_Clash_launch_v1.json": "cf26849da0a7dac1d9a4c95912c1c3d4c45f6e168f2702a33545488c57413fab",
+    "private_control_resume_20261023_v1.json": "c89f4f7ca417210a6055b1073d24fca7158d1d47f4b68de34da3b2fc5f4c3910",
+    "private_frozen_local_direct_range_probe_v1.json": "57d86c6b933bad380807ae6cca8c10c01fcb6b2d41e6497866ad620efeded262",
+    "private_actual_local_direct_range_probe_v1.json": "4a4acd8e3781de5c461e7c3193e231a0e265555cfb3172a0c17e3b6104d697d1",
+    "private_frozen_source_range_requalification_v1.json": "f036ee6cbc77cd662b5f0e8b7ea37eee8f598ec8f8e5bee121057a0adf9fdcb6",
+    "private_actual_source_range_requalification_v1.json": "787beb21f456a2b3e830d52fb04081b19fb0f967970f351142a0f12d109a2957",
+    "private_transport_and_lifecycle_clarification_v1.json": "adce261f20fa9acc95af8092ff5c36d69433aa0191429ae2518b3c0c0cfa46c2"
+  }
+}

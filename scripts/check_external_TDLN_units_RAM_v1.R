@@ -1,0 +1,67 @@
+# Independent expectations for alias reuse, collisions, missingness and duplicates.
+source("scripts/qualify_LN_unit_geometry_RAM_v1.R")
+source("scripts/qualify_external_TDLN_units_RAM_v1.R")
+run_external_TDLN_unit_checks <- function() {
+  case<-rep(c("SUBJECT_CANARY_A","SUBJECT_CANARY_B"),each=6)
+  roi<-rep(rep(c("r1","r2"),each=3),2)
+  image<-rep(rep(c("im1","im2"),each=3),2)
+  sample<-rep(rep(c("s1","s2"),each=3),2)
+  object<-rep(1:3,4)
+  xy<-cbind(rep(0:2,4),rep(c(0,1,3),4))
+  call<-function(ca=case,ro=roi,im=image,sa=sample,ob=object,co=xy)
+    qualify_external_TDLN_units_RAM(ca,ro,im,sa,ob,co)
+  q<-call()
+  stopifnot(q$registered_case_ROI_partition_gate_passed,q$literal_case_labels==2L,
+    q$literal_ROI_labels==2L,q$primary_complete_case_ROI_tuples==4L,
+    q$raw_ROI_to_case$child_labels_with_multiple_parents==2L,
+    q$primary_ROIs_with_nonzero_two_axis_span==4L,
+    q$literal_case_labels_not_accepted_independent_patients)
+  # Reordering neither changes grouping nor promotes raw repeated names to cases.
+  perm<-c(12,3,8,4,10,1,6,9,2,11,5,7)
+  stopifnot(identical(q,call(case[perm],roi[perm],image[perm],sample[perm],object[perm],xy[perm,])))
+  merged<-image;merged[case==case[1]]<-"one-image"
+  stopifnot(!call(im=merged)$registered_case_ROI_partition_gate_passed)
+  missing<-image;missing[1]<-NA_character_
+  z<-call(im=missing)
+  stopifnot(z$alias_checks[[1]]$same_partition_on_jointly_complete_rows,
+    !z$alias_checks[[1]]$full_primary_coverage_and_same_partition,
+    !z$registered_case_ROI_partition_gate_passed)
+  duplicate<-object;duplicate[2]<-duplicate[1]
+  z<-call(ob=duplicate)
+  stopifnot(z$duplicate_case_ROI_object_rows==1L,!z$registered_case_ROI_partition_gate_passed)
+  fractional<-object;fractional[1]<-.5
+  stopifnot(call(ob=fractional)$invalid_object_rows==1L)
+  missing_case<-case;missing_case[1]<-"unknown"
+  stopifnot(!call(ca=missing_case)$registered_case_ROI_partition_gate_passed)
+  infinite<-xy;infinite[1,1]<-Inf
+  stopifnot(call(co=infinite)$finite_coordinate_rows==11L,
+    !call(co=infinite)$registered_case_ROI_partition_gate_passed)
+  tied<-xy;tied[2,]<-tied[1,]
+  z<-call(co=tied)
+  stopifnot(z$repeated_coordinate_rows_within_primary_ROI==1L,
+    z$registered_case_ROI_partition_gate_passed)
+  flat<-xy;flat[,1]<-0
+  z<-call(co=flat)
+  stopifnot(z$registered_case_ROI_partition_gate_passed,
+    z$primary_ROIs_with_single_cell_or_zero_axis_span==4L)
+  # Two tuples that naive delimiter concatenation would incorrectly merge.
+  collision<-qualify_external_TDLN_units_RAM(c("a:b","a"),c("c","b:c"),
+    c("i1","i2"),c("s1","s2"),c(1,1),matrix(c(0,0,1,1),2,2,byrow=TRUE))
+  stopifnot(collision$primary_complete_case_ROI_tuples==2L,
+    collision$registered_case_ROI_partition_gate_passed)
+  empty<-call(ca=rep(NA_character_,12))
+  stopifnot(empty$primary_complete_case_ROI_tuples==0L,
+    is.null(empty$primary_ROI_cell_count_quantiles),
+    !empty$registered_case_ROI_partition_gate_passed)
+  stopifnot(!grepl("SUBJECT_CANARY|one-image",jsonlite::toJSON(q,auto_unbox=TRUE)))
+  # Base R can deserialize an unknown S4 class without adopting class methods.
+  methods::setClass("SyntheticExternalTDLNUnitEnvelope",slots=c(payload="list"))
+  x<-methods::new("SyntheticExternalTDLNUnitEnvelope",payload=list(case=case,roi=roi))
+  raw<-serialize(x,NULL);rm(x);methods::removeClass("SyntheticExternalTDLNUnitEnvelope")
+  restored<-unserialize(raw)
+  stopifnot(isS4(restored),identical(attr(restored,"payload",exact=TRUE)$roi,roi))
+  list(status="PASS_SYNTHETIC_EXTERNAL_TDLN_UNIT_PARTITION_AND_UNKNOWN_S4_BASE_RESTORE",
+    no_real_native_or_clinical_or_individual_rows_read=TRUE,
+    native_patient_identity_or_state_not_accepted=TRUE)
+}
+cat(jsonlite::toJSON(run_external_TDLN_unit_checks(),auto_unbox=TRUE),"\n")
