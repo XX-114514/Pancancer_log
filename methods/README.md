@@ -1,3 +1,5 @@
+[全细胞图谱的分层注释与整合比较方案](full-context-atlas-hierarchical-annotation-plan-20261023.md)：前向A/B/C比较、类型内状态保留、原生表达与容量准入，尚未执行新比较。
+
 [T状态配对后的APC组织语境](APC-organized-T-state-spatial-context-20261022.md)：三篇原始摘要/图注与实际测量准入，细胞内/动物/人体证据分开。
 
 [外部TDLN原生状态/单位资格](CM02-external-TDLN-native-qualification-20261022.md)：数据入口、测量准入、有限资源与临床/隐私边界。
