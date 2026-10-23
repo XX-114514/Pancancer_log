@@ -1,0 +1,37 @@
+{
+  "schema": "broad_immune_source_census_technical_receipt_v1",
+  "client_reporting_date": "2026-10-23",
+  "observed_at_utc": "2026-10-23T07:14:30.998544+00:00",
+  "observed_at_utc_plus_8": "2026-10-23T15:14:30.998544+08:00",
+  "scope": "public study-level catalogue metadata; local private source registry and workbook",
+  "server_scientific_job_started": false,
+  "expression_matrix_downloaded": false,
+  "individual_rows_published": false,
+  "candidate_priorities_published": false,
+  "source_scientific_aggregates_published": false,
+  "validation": {
+    "historical_scope_reconciled": true,
+    "registry_identifiers_unique": true,
+    "existing_scope_counts_reconciled": true,
+    "coverage_formulas_independently_reconciled": true,
+    "unknown_patient_coverage_preserved": true,
+    "exported_workbook_structure_verified": true,
+    "all_worksheet_preview_reviews_completed": true
+  },
+  "private_artifact_sha256": {
+    "source_registry_and_coverage_inputs_v2.json": "1044ce863e746381349e6204548bec0cc441d16ad7ce4b49fcd20cede179a94e",
+    "免疫图谱来源登记与覆盖表_v2.xlsx": "37327df095422d3c18e460ce08c75fd171b4e2a2e86dbe8f3767dc5207a52ba2",
+    "final_artifact_validation.json": "e05cce911bbe107b2321d29ae0e2c1726fcb54c76b274f23a74d86abfcf674e2",
+    "CELLxGENE_selected_safe_metadata_receipt.json": "6c4f77456e29f0a4a767b551525f49b73ec9f6e6222164293304da07562f318f",
+    "build_source_registry.py": "efff2c0807bf27c717fd5f46cca436ff9a4069fef6e712c10bdd1f24c5e05e93",
+    "build_source_workbook.mjs": "c99d539185a707b0916660d9229cdc5fad53ed3237e72ea48bbb0acd087b12bb"
+  },
+  "public_sync": "prior automatic-review rejection retained; no alternate-route retry",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "diff_whitespace_check": "passed",
+    "scientific_private_artifacts_not_staged": true
+  }
+}
