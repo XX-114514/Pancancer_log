@@ -1,0 +1,47 @@
+# Integration checks on artificial attribute-backed objects only.
+source("scripts/check_external_TDLN_fixed_spatial_RAM_v1.R")
+source("scripts/qualify_external_TDLN_units_RAM_v1.R")
+source("scripts/run_external_TDLN_fixed_spatial_native_RAM_v1.R")
+
+check_external_TDLN_fixed_native_RAM <- function() {
+  f<-external_TDLN_synthetic_fixture();m<-f$meta
+  pc<-list(minimum_cells_per_image_group=20L,minimum_images=5L,minimum_cases=3L,
+    minimum_cells=100L,minimum_CD3_relative_rank=.5,minimum_CD45_relative_rank=.5,
+    lineage_margin=.1,minimum_case_balanced_agreement=.6,minimum_parent_cells_per_image=20L)
+  sc<-list(k=10L,minimum_parent=20L,minimum_class=10L,minimum_mixed_blocks=2L,
+    minimum_movable_class=10L,grids=c(2L,4L,8L),primary_grid=4L,permutations=999L,
+    bootstrap_replicates=2000L,minimum_cases=5L,seed=20261023L,
+    absolute_deadline_UTC=format(Sys.time()+1200,tz="UTC",usetz=FALSE))
+  colnames(f$xy)<-c("Pos_X","Pos_Y")
+  cd<-list(Patient.ID=m$case,ROI.ID=m$roi,Image.name=m$roi,sample_id=m$roi,
+    ObjectNumber=rep(seq_len(nrow(m)/14L),14L),pg_clusters_corrected_40=m$fine,
+    Group=rep("SYNTHETIC_CLINICAL_CANARY_DO_NOT_EXPORT",nrow(m)),RFS.time=rep(123,nrow(m)))
+  x<-structure(list(),assays=structure(list(),data=list(counts=f$a,exprs=log1p(f$a))),
+    colData=cd,spatialCoords=f$xy)
+  config<-list(physical_panel=as.list(f$panel),parent=pc,spatial=sc)
+  out<-external_TDLN_native_workflow_RAM(x,config)
+  stopifnot(out$status=="COMPLETE_EXTERNAL_FIXED_STATE_SPATIAL_EXTENSION_AUDITED",
+    out$audit$status=="PASS_FULL_EXTERNAL_FIXED_SPATIAL_NUMERIC_AUDIT",
+    out$unit$registered_case_ROI_partition_gate_passed,
+    all(vapply(c(out$assay_sensitivity$parent_masks,out$assay_sensitivity$state_masks),
+      function(z)z$same_missingness&&z$discordant_jointly_measured_rows==0L,logical(1))))
+  broken<-x;bad<-attr(broken,"colData");bad$ObjectNumber[2]<-bad$ObjectNumber[1]
+  attr(broken,"colData")<-bad;rejected<-external_TDLN_native_workflow_RAM(broken,config)
+  stopifnot(rejected$status=="EXTERNAL_UNIT_GATE_NOT_PASSED_NO_SPATIAL_EFFECTS",
+    is.null(rejected$spatial),is.null(rejected$phenotype))
+  noParent<-x;aa<-attr(attr(noParent,"assays"),"data")
+  aa$counts["CD3",]<-0;aa$exprs["CD3",]<-0
+  attr(attr(noParent,"assays"),"data")<-aa
+  unqualified<-external_TDLN_native_workflow_RAM(noParent,config)
+  stopifnot(unqualified$status=="EXTERNAL_PARENT_GATE_NOT_PASSED_NO_SPATIAL_EFFECTS",
+    is.null(unqualified$spatial))
+  txt<-jsonlite::toJSON(list(out,rejected,unqualified),auto_unbox=TRUE,null="null")
+  stopifnot(!grepl("SYNTHETIC_CASE_CANARY|SYNTHETIC_ROI_CANARY|SYNTHETIC_CLINICAL_CANARY",txt))
+  list(status="PASS_EXTERNAL_NATIVE_ENTRYPOINT_ARTIFICIAL_ATTRIBUTE_INTEGRATION",
+    runtime_R=as.character(getRversion()),unit_failure_stops_before_phenotype_or_effects=TRUE,
+    parent_failure_stops_before_spatial_effects=TRUE,
+    monotone_assay_rank_sensitivity_matches=TRUE,
+    no_clinical_or_individual_canaries_in_source_aggregate=TRUE,
+    no_actual_native_or_individual_or_clinical_data_read=TRUE)
+}
+cat(jsonlite::toJSON(check_external_TDLN_fixed_native_RAM(),auto_unbox=TRUE,null="null"),"\n")
