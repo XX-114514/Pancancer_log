@@ -1,0 +1,21 @@
+{
+  "schema": "heldout_independent_auditor_boundary_failure_v1",
+  "observed_UTC": "2026-10-23T15:03:06.807120+00:00",
+  "actual_audit_child_exit_code": 1,
+  "wall_timeout": false,
+  "three_initial_counterexamples_passed": true,
+  "known_failure": "Auditor assumed compressed Harmony C axes as PCA by soft_cluster; actual fixed dependency stores soft_cluster by PCA",
+  "actual_parameter_shape": [
+    100,
+    50
+  ],
+  "failed_model_dimension_expectation": [
+    50,
+    100
+  ],
+  "scientific_producer_model_changed": false,
+  "repair": "Correct auditor axis contract; nonsquare valid and transposed-invalid reference fixtures added; four-test gate then full audit in new v2 run",
+  "previous_attempt_preserved": true,
+  "new_audit_acceptance": "pending",
+  "stderr_sha256": "fc31e43c2bf6fce56ca337929bb4e1308ad034fc6a5039b0c2ef17c72cfd04b7"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "supplementary_native_marker_technical_completion_v1",
+  "observed_UTC": "2026-10-23T15:12:33.549324+00:00",
+  "actual_child_exit_code": 0,
+  "wall_timeout": false,
+  "completed_UTC": "2026-10-23T15:10:36.945553+00:00",
+  "terminal_sha256": "65f3600adbb7d020b6ad05ee266f14fcb0525d283c44dbcd7598710b85803d22",
+  "private_index_sha256": "0103aefc1c228e9b5a6e126ea4e348ab1fcb536f29e20dfa479a090fc1c33479",
+  "all_archive_supplementary_rows_measured": true,
+  "aggregator_byte_identical_to_previously_passed_three_counterexamples": true,
+  "independent_numeric_replay_scope": "all supplementary cells in the smallest supplemental source selected by count",
+  "all_other_source_evidence_independent_numeric_replay": false,
+  "new_identity_or_model_eligibility_assigned": false,
+  "wall_seconds": 285.4278588988818,
+  "peak_RSS_bytes_Linux": 2087944192,
+  "scientific_values_and_source_counts": "private_only"
+}

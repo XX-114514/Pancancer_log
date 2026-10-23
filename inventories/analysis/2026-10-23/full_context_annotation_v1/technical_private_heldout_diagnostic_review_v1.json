@@ -1,0 +1,18 @@
+{
+  "schema": "private_heldout_source_diagnostic_review_v1",
+  "observed_UTC": "2026-10-23T15:10:31.063494+00:00",
+  "private_source_summary_sha256": "5ce297ca9c7c994750a0b18097b7f893a2c9a13669734d3a87251bb0f8bed234",
+  "review_scope": "source by inherited lineage by predefined native RNA program; all predeclared candidates retained",
+  "shared_geometry_counted_once": true,
+  "prototype_complexity_matched": false,
+  "RNA_programs_are_not_identity_gold_standard": true,
+  "epithelial_diagnostic_scope": "immune-centered RNA readouts cannot establish general epithelial identity resolution",
+  "next_requirements": [
+    "native marker and scope-matched reference review",
+    "matched-granularity comparison",
+    "separate train-only lineage-feature sensitivity",
+    "rare/unknown and applicable mixing evaluation"
+  ],
+  "winner_selected": false,
+  "scientific_values_or_models_published": false
+}

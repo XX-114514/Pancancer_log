@@ -1,14 +1,14 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T14:39:17.514538+00:00",
+  "updated_UTC": "2026-10-23T15:12:33.549324+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
       "requirement": "all source rows/features/count origin and carried-label axes audited without copying expression",
-      "status": "frozen_context_structure_accepted_complete_archive_membership_and_model_eligibility_review_pending",
-      "evidence": "technical_archive_membership_scope_review_v1.json",
-      "completion_requires": "separate complete selected-source native archive from frozen context/model/composition masks, qualify excluded-row reasons and audit readback; preserve existing study exclusions and benchmark"
+      "status": "complete_selected_source_native_archive_membership_and_readback_accepted_model_eligibility_pending",
+      "evidence": "technical_native_archive_membership_acceptance_v1.json",
+      "completion_requires": "qualify carried exclusion/QC evidence for modeling and intended views; source alias/clinical qualifications remain R2; upstream QC removed droplets are not reconstructed"
     },
     {
       "id": "R2_source_design_alias",
@@ -20,20 +20,20 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "full_native_marker_evidence_independently_accepted_new_identity_local_fine_review_pending",
-      "evidence": "technical_native_marker_independent_acceptance_v1.json"
+      "status": "frozen_context_native_marker_evidence_audited_supplementary_archive_markers_complete_new_identity_and_local_fine_review_pending",
+      "evidence": "technical_supplementary_marker_completion_v1.json"
     },
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "three_seed_discovery_audited_five_group_source_holdout_production_exit0_independent_holdout_identity_and_final_comparison_pending",
-      "evidence": "technical_source_heldout_completion_v1.json"
+      "status": "discovery_and_all_source_holdout_axes_accepted_representative_prototype_replay_pass_identity_granularity_and_engine_comparison_pending",
+      "evidence": "technical_source_holdout_independent_acceptance_v2.json"
     },
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "representative_native_and_RNA_numeric_replay_accepted_full_comparison_rare_unknown_and_mixing_pending",
-      "evidence": "technical_representative_discovery_numeric_acceptance_v1.json"
+      "status": "representative_native_and_query_prototype_numeric_replay_accepted_rare_unknown_mixing_and_fair_granularity_comparison_pending",
+      "evidence": "technical_source_holdout_independent_acceptance_v2.json"
     },
     {
       "id": "R6_full_scale",

@@ -1,0 +1,23 @@
+{
+  "schema": "native_archive_membership_technical_acceptance_v1",
+  "observed_UTC": "2026-10-23T15:03:06.807120+00:00",
+  "producer_completed_UTC": "2026-10-23T14:59:49.901871+00:00",
+  "actual_child_exit_code": 0,
+  "wall_timeout": false,
+  "scientific_environment_tests": 5,
+  "no_test_skips": true,
+  "native_manifest_sha256": "b5c1b7c1449087d3718065741141276fb7df248428bed8fa07d47c377ad9dae0",
+  "private_source_summary_sha256": "58edf5def54d648d1cef562207efa0ffcfed8fa0b3f72de3a4d9b6d0eaed5177",
+  "auditor_terminal_sha256": "db097a4efcb9677662aca00ebb14dba5b87060537c5cff1434c29769b33bd7df",
+  "all_selected_source_native_cell_ID_unit_axes_and_context_label_crosswalk_checked": true,
+  "native_measurement_masks_and_representative_CSR_readback_checked": true,
+  "all_supplementary_rows_count_domain_scanned": true,
+  "prior_full_context_count_evidence_terminal_sha256": "331951be3c5131e4eccf90ebacd5b39367d52400c3e8a243142a6f6e7af5da90",
+  "model_or_clinical_eligibility_accepted": false,
+  "new_identity_accepted": false,
+  "standalone_Zarr": false,
+  "source_scientific_counts_and_tables": "private_only",
+  "upstream_QC_removed_droplets_reconstructed": false,
+  "wall_seconds": 391.1202265853062,
+  "peak_RSS_bytes_Linux": 4602191872
+}

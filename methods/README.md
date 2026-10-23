@@ -1,4 +1,6 @@
-[全细胞图谱的分层注释与整合比较方案](full-context-atlas-hierarchical-annotation-plan-20261023.md)：前向A/B/C比较、类型内状态保留、原生表达与容量准入，尚未执行新比较。
+[原生档案成员与分析视图](native-archive-membership-and-analysis-views-20261024.md)：按所选来源补全原生行，区分冻结context、旧roster及单位门槛，保留原排除/QC证据。
+
+[全细胞图谱的分层注释与整合比较方案](full-context-atlas-hierarchical-annotation-plan-20261023.md)：完整目标与验收；当前已进入受控发现和来源留出验收，新身份和最终选型待。
 
 [T状态配对后的APC组织语境](APC-organized-T-state-spatial-context-20261022.md)：三篇原始摘要/图注与实际测量准入，细胞内/动物/人体证据分开。
 

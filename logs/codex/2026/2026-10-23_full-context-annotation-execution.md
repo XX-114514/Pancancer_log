@@ -268,3 +268,117 @@ source-private. The original full goal remains active, including archive
 membership repair, source qualification, new identity, fair comparison, full
 mapping and final delivery. This node supersedes earlier running observations
 without rewriting their historical evidence. No public push retry.
+
+
+## 2026-10-23T14:58:12.502146+00:00 UTC / 2026-10-23T22:58:12.502146+08:00 UTC+8: native archive repair and heldout independent audit launched
+
+The new archive reader preserves all native rows of the existing selected sources,
+without changing the frozen comparison inputs. Five real-environment boundary
+tests passed (actual exit0, no skips): distinct context/roster/archive scopes,
+low-unit coverage, zero-RNA unresolved rows, native measurement masks and repeated
+read order, primary QC flags, source-scope/ID/unit mutations, and the exact native
+unit namespace. Real all-source membership/axis/readback and supplementary-row
+count-domain audit is now supervised; final acceptance remains pending.
+
+The five-fold heldout producer has actual exit0. Its independent auditor is
+launched with three gated counterexamples, all-fold training-feature/model/anchor
+checks and whole-query prototype replay on the smallest fold selected by size.
+Final run bytes include terminal summaries and are below the original cap at
+read-only inspection. No scientific result is yet promoted by this new audit.
+Raw expression stays server-side and read-only; source scientific tables stay
+private. New source identities, source roles, fair final selection, full mapping
+and downstream delivery remain required. Previous goal turn and this turn make
+progress; full objective active. Public push remains pending under the earlier
+automatic-review rejection; no alternate push route attempted.
+
+
+## 2026-10-23T15:03:06.807120+00:00 UTC / 2026-10-23T23:03:06.807120+08:00 UTC+8: selected-source native archive accepted; heldout auditor corrected
+
+The archive membership/readback stage completed at 2026-10-23T14:59:49.901871+00:00 UTC,
+actual child exit0 with no timeout. All selected-source native row/ID/unit axes,
+frozen-context label crosswalks and measurement masks reconciled. Independent
+representative CSR reads passed for every source; every supplemental native row
+was scanned for count domain. Native counts and the frozen comparison inputs are
+unchanged. This delivers a readable native partition collection; it does not
+reconstruct earlier upstream QC removals or claim a standalone Zarr. Source
+counts/reasons and scientific tables remain private. New modeling/clinical
+eligibility and identity review are separate unfinished requirements.
+
+The first independent heldout auditor exited1 on its own compressed-center axis
+assumption. The actual fixed dependency stores soft clusters by PCA dimensions;
+the auditor assumed the transpose. Its initial square synthetic fixture could
+not expose this. Corrected the contract and added nonsquare valid/transposed
+invalid fixtures. A new version runs four tests before full audit; preserve the
+failed attempt and original scientific producer/models. No result accepted from
+the failed audit. A metadata search also found server rg unavailable; bounded
+Python traversal found the original roster scripts without altering files.
+
+Goal continues across all eight original requirements. Public push remains
+pending under the prior automatic-review restriction; no alternate route.
+
+
+## 2026-10-23T15:06:13.699749+00:00 UTC / 2026-10-23T23:06:13.699749+08:00 UTC+8: original roster exclusion mechanism recovered
+
+Read the original prepare_downstream_inputs.py (SHA256
+d4c8943751b0872f73204fb058e1400892f6a5e9fc377a69741d56aa26f33742).
+Its identity-input gate precedes the explicit duplicate-source hold; the separate
+expression-unit threshold is applied to downstream eligibility. Restored native
+rows carry unresolved coarse-identity exclusions or fall below the unit gate,
+not a newly demonstrated low-quality or doublet diagnosis. Native units reconcile
+with the full frozen roster; source-level totals remain private. Original
+benchmark manifest still matches its frozen SHA.
+
+All restored rows now enter a bounded supplementary native-marker stage, using
+the byte-identical previously qualified native aggregator and existing fixed
+panels. Scope is membership stratum × inherited coarse evidence; output remains
+private and assigns no new identity. The smallest supplemental source is chosen
+by count for direct-CSR numeric replay. Full new identity review remains next.
+The repaired heldout auditor passed four actual counterexamples and continues
+on its same handle; results not yet accepted. No biological download or counts
+copy, and no public push retry.
+
+
+## 2026-10-23T15:08:37.733485+00:00 UTC / 2026-10-23T23:08:37.733485+08:00 UTC+8: repaired heldout independent audit accepted
+
+Actual auditor child exit0, no timeout; four scientific counterexamples passed.
+All five conservative folds reconciled source/cell/route axes, uniquely measured
+model features and physical RNA-readout alias separation, training-only feature
+selection and means, saved model dimensions/fingerprints, route prototypes and
+identical training anchors, complete scientific keys and query denominators.
+Final production bytes including summaries fit the original frozen cap.
+
+Whole-query mapping and independent prototype distance/residual-score replay
+passed for the smallest preselected query fold: all three methods, all declared
+routes and readouts. Largest numerical difference is floating-point precision.
+The original count loader is shared with the qualified producer; this is not
+a new independent all-input count replay. Training-cell neighbor scores received
+axis/bounds checks but are not numerically replayed here. These scopes remain
+explicit. New identity accuracy or a method winner is not established.
+
+Source-level descriptive summaries may now be reviewed privately. Supplementary
+archive-marker measurement remains live on the original handle. Next tasks are
+marker-supported local/common identity, unknown/rare and comparable-granularity
+evaluation, source/design qualification, chosen full mapping and downstream
+views. Full objective active; scientific values and models stay private.
+
+
+## 2026-10-23T15:12:33.549324+00:00 UTC / 2026-10-23T23:12:33.549324+08:00 UTC+8: supplemental native evidence complete and local validation
+
+Supplemental native-marker production completed at 2026-10-23T15:10:36.945553+00:00 UTC,
+actual child exit0, no timeout, exact worker/supervisor absent after terminal.
+All restored archive rows were measured with the existing fixed panels and
+previously qualified native aggregator. Missingness and native RNA denominators
+are retained; size-selected whole-source supplemental direct-CSR scalar replay
+passed. Other sources are not claimed numerically replayed by that representative
+check. This produces evidence for unresolved/local identity review; it does not
+assign new identity, state, malignancy or model eligibility.
+
+Repository validation returned actual exit0, zero errors and one pre-existing
+warning; log SHA256 ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e.
+New Python sources parse, technical receipts parse, explicit diff whitespace and
+private-path/credential-pattern review pass. Local skipped fixtures are not
+scientific passes. Only explicit task files enter the ordinary local commit;
+unrelated parallel work remains. Public push is still pending due to the earlier
+automatic-review rejection. All owned scientific stages are now terminal; next
+turn should advance identity/appropriate-reference and fair comparison work,
+not poll or restart these completed stages. Full eight-section goal stays active.
