@@ -104,6 +104,8 @@ def main(args):
         'multiple_family_support_is_not_doublet_call': True,
         'reference_unavailable_is_not_final_unknown_identity': True,
         'identity_malignancy_and_model_eligibility_still_require_review': True})
+    if sum(p.stat().st_size for p in args.output.rglob('*') if p.is_file()) > args.output_cap_bytes:
+        raise ValueError('Native evidence coverage output cap exceeded')
     save(args.output / 'provenance/terminal_v1.json', {
         'status': 'AUDITED_NATIVE_EVIDENCE_COVERAGE_SUMMARIZED_NOT_FINAL_ANNOTATION',
         'completed_UTC': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -115,6 +117,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     for name in ['reference', 'reference-audit', 'supplemental', 'supplemental-audit', 'output']:
         parser.add_argument('--' + name, required=True, type=Path)
+    parser.add_argument('--output-cap-bytes', type=int, default=8 * 1024 ** 2)
     args = parser.parse_args()
     try:
         main(args)

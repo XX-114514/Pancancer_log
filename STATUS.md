@@ -2015,3 +2015,8 @@ All-selected-native supplemental lineage/differentiation readouts launched and p
 ### 2026-10-23T19:58:54.046974+00:00 UTC: current full-context measurement and malignancy evidence
 
 Common-measurement source holdout, independent audit and paired query comparison accepted. Carried malignancy metadata registry completed; prior methods remain evidence with explicit evaluation coverage. Full native reference/supplemental evidence still running; no final identity or production mapping promotion. [Run](runs/20261023_full_context_hierarchical_annotation_v1.md). Full goal active; other branches not refreshed, public sync remains pending.
+
+
+### 2026-10-23T20:15:53.941644+00:00 UTC / 2026-10-24T04:15:53.941644+08:00 UTC+8: native cue, anatomy and modality milestone
+
+Supplemental native evidence independently accepted, including3970 direct native samples. Full-source anatomical/context cross-tabs and source-modality evidence overlay completed with actual exit0 and six actual counterexamples across the two stages. These preserve inherited labels, unknown metadata and original capture/patient/alias gates; full reference evidence still running. See [method](methods/native-anatomy-and-modality-evidence-20261024.md). Full goal active; final identities/mapping/views remain, cloud sync pending after prior rejection.

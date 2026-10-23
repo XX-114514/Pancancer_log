@@ -1,0 +1,48 @@
+{
+  "schema": "technical_supplemental_native_context_v1",
+  "observed_UTC": "2026-10-23T20:14:21.873359+00:00",
+  "status": "actual_tests_and_full_source_metadata_stage_exit0",
+  "launch": {
+    "observed_UTC": "2026-10-23T20:09:03.668985+00:00",
+    "script_SHA256": {
+      "scripts/audit_full_archive_feature_coverage_v1.py": "79325457a11317e1302b33b8f9fbcf0e547bc84a4f1269ef0a9aa9e3390f897e",
+      "scripts/native_archive_collection_v1.py": "eb4d68d792ef3ceb8479f657bc9072bcc3526f61ccc71b11dc7555251718a7e3",
+      "scripts/native_annotation_review_v1.py": "2f80ae4766c21279a4a3375e8339896f5f4d60fd9902596d3375717440438cc6",
+      "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+      "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+      "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+      "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+      "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f",
+      "scripts/native_supplemental_lineage_evidence_v1.py": "278ef48b2fe5fa937dcd4a37200759596ace85ef0944ea232f04da9a37b39a7b",
+      "tests/test_supplemental_lineage_cues_v1.py": "d0994f9eb52b65a29b316eb1601e15b5c78427449d74dcf230d62f716d31c943",
+      "scripts/audit_native_malignancy_evidence_registry_v1.py": "a53da4e37ee71d3d14168ff2680f406fda4d1eabf696501e631f3858ac652663",
+      "tests/test_native_malignancy_registry_v1.py": "350479ac24b3d333773d73ea81c96241f0e058fecad02463b20e896dac0070b0",
+      "scripts/audit_supplemental_native_context_v1.py": "b8796d31cd7dcd06c6855c8578f992f0ec38be05d082b35a0d6f20fedd78c074",
+      "tests/test_supplemental_native_context_v1.py": "371f3bb086478ccf487c87a2d73ee893b569533e1d833bf6ed5dff8b1ec227ad"
+    },
+    "config_sha256": "8b4b129a142d017903a4b9628d31e79f1de9b6b82aba6f15be37e2b0351fca0f",
+    "stage": "SUPPLEMENTAL_NATIVE_CONTEXT_CROSSTABS_LAUNCHED_NOT_IDENTITIES"
+  },
+  "numerical_tests": {
+    "actual_exit_code": 0,
+    "n_tests": 3,
+    "no_skips": true
+  },
+  "terminal": {
+    "status": "AUDITED_SUPPLEMENTAL_CUES_AND_NATIVE_CONTEXT_CROSSTABS_COMPLETE",
+    "completed_UTC": "2026-10-23T20:10:35.214927+00:00",
+    "n_sources": 65,
+    "output_sha256": "ab96939e974ea1a4c8edb0350638626528c328bdabe689baea2f9bf44e8f6408",
+    "native_expression_read": false,
+    "new_authoritative_labels": false,
+    "wall_seconds": 89.20694849686697,
+    "peak_RSS_bytes_Linux": 2855464960
+  },
+  "actual_exit_code": 0,
+  "native_expression_read": false,
+  "new_authoritative_labels": false,
+  "scientific_source_counts_and_metadata": "private",
+  "individual_records_or_unreviewed_free_text_exported": false,
+  "original_frozen_benchmark_inputs_changed": false,
+  "public_push": "prior_auto_review_rejection_preserved_no_retry"
+}

@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T20:02:09.584265+00:00",
+  "updated_UTC": "2026-10-23T20:15:53.941644+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -13,14 +13,18 @@
     {
       "id": "R2_source_design_alias",
       "requirement": "study/library aliases, capture/material/phase/assay and patient/clinical roles qualified",
-      "status": "all_selected_source_native_role_coverage_audited_alias_clinical_and_layer_qualification_pending",
+      "status": "source_roles_and_full_native_modality_overlay_complete_matched_public_dataset_evidence_added_anatomy_alias_capture_clinical_qualification_pending",
       "completion_requires": "explicit accepted/held/unknown source table and duplicate review",
-      "evidence": "technical_source_lineage_and_roles_v1.json"
+      "evidence": "technical_source_lineage_and_roles_v1.json",
+      "additional_evidence": [
+        "technical_source_modality_overlay_v1.json",
+        "technical_supplemental_native_context_v1.json"
+      ]
     },
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "carried_malignancy_registry_complete_supplemental_full_native_producer_complete_audit_running_full_reference_producer_running_identity_review_pending",
+      "status": "supplemental_full_archive_native_cues_independently_accepted_context_and_carried_malignancy_registry_complete_full_reference_producer_running_source_local_identity_review_pending",
       "evidence": "technical_common_cell_confidence_v2.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified",
       "additional_evidence": [
@@ -43,7 +47,7 @@
     {
       "id": "R6_full_scale",
       "requirement": "selected lineage-specific workflow and full mapping, model/exposure flags, confidence and version crosswalk",
-      "status": "native_measured_feature_axis_coverage_complete_full_reference_evidence_running_production_feature_choice_and_mapping_pending"
+      "status": "native_measured_feature_bridge_and_source_modality_evidence_complete_full_reference_running_new_nuclear_branch_transfer_and_production_mapping_pending"
     },
     {
       "id": "R7_storage",

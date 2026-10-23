@@ -1,7 +1,7 @@
 {
   "schema": "technical_supplemental_native_lineage_evidence_v1",
   "observed_UTC": "2026-10-23T19:47:49.205421+00:00",
-  "status": "full_selected_archive_producer_actual_exit0_independent_audit_running",
+  "status": "full_native_producer_and_independent_auditor_actual_exit0_accepted_not_identity_truth",
   "launch": {
     "observed_UTC": "2026-10-23T19:44:32.893368+00:00",
     "script_SHA256": {
@@ -33,7 +33,7 @@
   "auditor_prepared_not_launched": false,
   "prepared_auditor_sha256": "cf03e2a1ddfed27f7ad78bb6ab0f3c787df3cc63932f0a4138d4ad77b8f6b3dc",
   "public_push": "prior_auto_review_rejection_preserved_no_retry",
-  "latest_observed_UTC": "2026-10-23T20:01:57.122594+00:00",
+  "latest_observed_UTC": "2026-10-23T20:14:21.873359+00:00",
   "producer_terminal": {
     "status": "FULL_ARCHIVE_SUPPLEMENTAL_NATIVE_CUES_COMPLETE_AUDIT_PENDING",
     "completed_UTC": "2026-10-23T19:57:59.007567+00:00",
@@ -45,7 +45,7 @@
     "native_counts_copied": false
   },
   "actual_producer_exit_code": 0,
-  "auditor_exact_process_live": true,
+  "auditor_exact_process_live": false,
   "full_native_scientific_denominator_private": true,
   "coverage_summary_implementation": "prepared_not_executed_requires_both_reference_and_supplemental_producers_and_audits",
   "repository_validation": {
@@ -55,5 +55,19 @@
     "preexisting_warning": true,
     "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
   },
-  "owned_AST_JSON_private_path_and_whitespace_check": "passed"
+  "owned_AST_JSON_private_path_and_whitespace_check": "passed",
+  "independent_audit_terminal": {
+    "status": "SUPPLEMENTAL_ALL_AXES_CUE_LOGIC_AND_STRATIFIED_NATIVE_REPLAY_ACCEPTED",
+    "n_direct_native_rows": 3970,
+    "max_native_panel_score_error": 1.159475471190774e-07,
+    "biological_identity_truth_verified": false,
+    "full_native_counts_second_pass": false,
+    "new_authoritative_labels": false,
+    "completed_UTC": "2026-10-23T20:06:35.062002+00:00",
+    "output_sha256": "5957361f3cc150e5e0cd6a983671092bc58a9ca7bd1d4e9241a2716c8cf06b71",
+    "producer_terminal_sha256": "fc70825ce9bdd31f19352dfd7c208dcf3583f2726072e5be008aecb81f12ff7f",
+    "wall_seconds": 421.5501290583052,
+    "peak_RSS_bytes_Linux": 3867607040
+  },
+  "independent_audit_actual_exit_code": 0
 }
