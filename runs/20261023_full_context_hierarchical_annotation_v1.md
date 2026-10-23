@@ -370,3 +370,25 @@ unrelated parallel work remains. Public push is still pending due to the earlier
 automatic-review rejection. All owned scientific stages are now terminal; next
 turn should advance identity/appropriate-reference and fair comparison work,
 not poll or restart these completed stages. Full eight-section goal stays active.
+
+## 2026-10-23T15:45:45.034949+00:00 UTC / 2026-10-23T23:45:45.034949+08:00 UTC+8: native annotation review production completed, independent audit launched
+
+The complete frozen pilot now has source-local A/B/C group identity proposals,
+native multi-marker evidence, explicitly descriptive own-group markers, reference
+no-match/multiple-match records and inherited-label crosswalks. Four cached
+reference models were hash-bound and their predictions numerically compared with
+the official API; all five actual tests passed without skips. Producer actual
+child exit0/no timeout, complete source scope, no count copies or authority change.
+
+Independent all-source axes/denominator/crosswalk review and smallest-source direct
+native/official-reference replay launched on the exact new handle; acceptance
+pending here. First guarded audit dispatch arrived before the producer terminal
+was written, created no stage and was safely reissued after completion. See
+[technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_pilot_native_annotation_review_v1.json),
+[method](../methods/native-source-annotation-review-20261024.md) and
+[next granularity design](../methods/full-context-granularity-comparison-plan-20261024.md).
+
+Numbers in local display names are source/method group IDs, not final common
+biological types. New annotation truth, valid replicate-aware DEG, full archive
+mapping and a method winner remain unaccepted. Full eight-part goal stays active;
+scientific summaries remain private and public push remains pending.

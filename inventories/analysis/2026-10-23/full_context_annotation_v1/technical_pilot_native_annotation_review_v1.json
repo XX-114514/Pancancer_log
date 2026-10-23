@@ -1,0 +1,46 @@
+{
+  "schema": "technical_pilot_native_annotation_review_v1",
+  "status": "producer_actual_exit0_independent_audit_running_identity_not_final",
+  "producer_completed_UTC": "2026-10-23T15:43:04.439853+00:00",
+  "producer_actual_child_exit_code": 0,
+  "producer_wall_timeout": false,
+  "actual_tests_no_skips": {
+    "actual_exit_code": 0,
+    "n_tests": 5,
+    "no_skips": true
+  },
+  "producer_terminal_sha256": "65e3c88e6f42085b6c4fde6da072399f6ddca559174b676a1b7d5d7634b2f5f3",
+  "config_sha256": "7a854ef99ec5ddb8c1757e8baad8322ec7a8244a4d9ae9c6d2a7ffe6fa94bed4",
+  "scripts_sha256": {
+    "scripts/native_annotation_review_v1.py": "2f80ae4766c21279a4a3375e8339896f5f4d60fd9902596d3375717440438cc6",
+    "scripts/review_pilot_native_annotations_v1.py": "08820e2d761994c5a479b4fd133c99761a8da6cbc43cc0635df6147a6381b5ec",
+    "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+    "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+    "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f",
+    "tests/test_native_annotation_review_v1.py": "25d8a5d77254f323eb4365d67b85badb1648b79e4ce2a364e0e9c18dda2bdc51"
+  },
+  "producer_wall_seconds": 366.479497151915,
+  "producer_peak_RSS_bytes": 1750626304,
+  "producer_written_bytes": 5070990,
+  "producer_output_cap_bytes": 33554432,
+  "independent_audit_launched_UTC": "2026-10-23T15:45:45.034949+00:00",
+  "independent_audit_scripts_sha256": {
+    "scripts/audit_native_annotation_review_v1.py": "0b31d2ac93f48a0133081daad558f62316db8e6f655e8d79eddc0e2e9f281ebe",
+    "scripts/native_annotation_review_v1.py": "2f80ae4766c21279a4a3375e8339896f5f4d60fd9902596d3375717440438cc6",
+    "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+    "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+    "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f"
+  },
+  "full_frozen_pilot_processed": true,
+  "native_counts_copied_to_disk": false,
+  "reference_models_mutated": false,
+  "new_final_identity_authority": false,
+  "method_winner_selected": false,
+  "replicate_aware_DEG_computed": false,
+  "public_scientific_source_results_included": false,
+  "full_goal_complete": false
+}

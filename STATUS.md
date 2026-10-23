@@ -1956,3 +1956,7 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 ### 2026-10-23T15:10:31.063494+00:00 全细胞图谱当前状态
 
 完整所选来源原生档案成员与读回已接受，原context保持冻结；全部5折留出轴/训练特征与代表原型评分复算通过。补入行的原生marker测量及代表直接CSR复算完成。新粗细身份、相同粒度/谱系特征和有限引擎比较、来源用途资格、生产映射及下游视图继续待验。[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。
+
+### 2026-10-23T15:45:45.034949+00:00 来源内注释推进
+
+完整冻结试验的A/B/C来源内身份建议、原生证据、参考无/多匹配及旧新群对应已生成，5项实际检查通过；独立原生/官方预测复算运行中。正式新身份、全量映射和方法选择待验。同粒度比较须按来源×谱系校准编号和群大小，不能直接比较来源内与跨来源总群数。[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。

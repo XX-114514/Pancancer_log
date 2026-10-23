@@ -382,3 +382,70 @@ unrelated parallel work remains. Public push is still pending due to the earlier
 automatic-review rejection. All owned scientific stages are now terminal; next
 turn should advance identity/appropriate-reference and fair comparison work,
 not poll or restart these completed stages. Full eight-section goal stays active.
+
+## 2026-10-23T15:44:21.853438+00:00 UTC / 2026-10-23T23:44:21.853438+08:00 UTC+8: source-native annotation proposals completed
+
+Continued the authorized full objective from local commit b8255c7. Read current
+repository instructions, status/roadmap/todo, complete method/run and latest
+private handoff. Preserved unrelated untracked work and all completed stages.
+Current work moves R3 forward; neither the archive scope nor previous input
+labels are silently promoted to final annotation.
+
+Implemented `native_annotation_review_v1.py`, its five numerical/counterexample
+tests and `review_pilot_native_annotations_v1.py`. The first predeclared discovery
+seed, same source-local selectors and all three candidate partitions were frozen.
+Native full-RNA normalization, unique measured genes, lineage-specific marker
+requirements, reference abstention/multiple matches, own-group expression-marker
+origin and source-local IDs/SHA are explicit. The cached Low/High immune and lung/
+adult-breast reference files are hash-bound; all four API calculations agree in
+the actual scientific environment. No shared environment or reference mutation,
+new download, count copy, clinical/CM-based selection or authority replacement.
+See [method](../../../methods/native-source-annotation-review-20261024.md).
+
+Producer launched 2026-10-23T15:36:52.866278+00:00 UTC. All five actual tests passed
+without skips. Science completed 2026-10-23T15:43:04.439853+00:00 UTC, supervisor
+recorded actual child exit0/no timeout at 15:43:05.587098 UTC. Final observation
+confirmed both exact processes absent. The full frozen pilot was processed;
+source-level scientific values and categorical sidecars remain private. Counts
+and complete probability/score matrices were RAM-only. Elapsed366.48s, peak RSS
+1,750,626,304 bytes; complete stage files5,070,990 bytes below32MiB cap. These are
+technical measurements, not estimates of whole-archive runtime.
+
+Implemented independent audit of all source/group axes, inherited crosswalks,
+native RNA/reference denominators, plus direct CSR/native marker and official
+API replay on the smallest frozen pilot source selected without looking at
+annotation effects. The first audit dispatch reached its dependency check just
+before producer supervisor terminal existed, returned FileNotFoundError and
+created no audit stage. Production was not restarted or changed. After observing
+actual successful producer completion, the same guarded dispatch is being
+reissued. Independent acceptance is still pending at this node.
+
+No newly accepted biological truth, inferential DEG, final common type naming,
+matched-granularity winner or full-archive labels are claimed. Full goal remains
+active. Public push remains pending after the earlier automatic-review rejection;
+it is not retried via another route. Proposed milestone commit: `Review native
+source annotations with frozen references and explicit marker origin`.
+
+### Repository check and next-comparison scope
+
+The new source-native method and forward granularity design are written in
+Chinese for review. Local versus joint cluster numbers have different source
+namespaces: future comparisons must inspect source-by-lineage group-size and
+effective-granularity profiles, rather than naively equate global group totals.
+No new resolution grid or winner has been accepted. Fine RNA states, reference
+overlap and malignant context retain separate scopes.
+
+`bash scripts/validate_repository.sh` returned actual exit0, zero errors and the
+one pre-existing path warning. Log SHA256
+ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e.
+All four new Python sources parse; explicit source/path/credential-pattern review
+found no new public-sensitive fields. The repository checker includes untracked
+files, and does not itself replace the five actual scientific tests. The same
+textual validation output as the preceding milestone is expected because its
+success lines do not enumerate each new Python or method file.
+
+A bounded public-metadata check for the two carried whole-source holds did not
+resolve their series metadata: the official series viewers returned browser
+checks. A search excerpt is not substituted for full source qualification. No
+hold, duplicate classification, source membership or download policy changed.
+Continue R2 from the existing registry and original metadata bridges.
