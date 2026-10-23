@@ -482,3 +482,13 @@ Full author evidence inventory completed with actual exit 0 and four counterexam
 ### 2026-10-23T20:29:01.549003+00:00 UTC: full reference extraction complete
 
 Full selected-native reference extraction completed with actual exit 0. Index SHA 80d4330cbd75cdf7960b89109c6083a598ae523ffa60a13fe800e4ebdbf7c466; wall 3,890.56 seconds, peak RSS 4,311,449,600 bytes, written bytes 247,103,562 at final source checkpoint. Native counts were not copied. The full independent auditor launched after a fresh bounded quota/RAM preflight; producer completion is not full evidence acceptance or final annotation. Author-label evidence inventory is complete. Provisional source-local routing is prepared behind independent evidence acceptance. Full goal remains active; cloud sync pending after prior rejection.
+
+
+### 2026-10-23T20:45:56.728845+00:00 UTC / 2026-10-24T04:45:56.728845+08:00 UTC+8: source-local representative fit qualification
+
+Finite fixed-factor qualification launched on previously accepted inputs at 2026-10-23T20:44:22.885225+00:00. Six numeric counterexamples actually passed; real branch fitting and conditional RNA review are running. The full reference auditor is also live. [Method](../methods/representative-source-local-qualification-20261024.md) fixes representative cap, support flags, same-query scoring and independent replay. This is a precursor to full-source modeling, not full-archive acceptance. Configuration SHA d2bff4a1c8b244d8ad329fecfd886e1fe692d5b1506b9d2e8abf8d2266850e78. Prior public push rejection retained; local milestone commit pending validation.
+
+
+### 2026-10-23T20:55:52.157447+00:00 UTC / 2026-10-24T04:55:52.157447+08:00 UTC+8: representative qualification completed
+
+Actual exit0 with six counterexamples and222072 independently replayed RNA predictions, maximum error6.7724e-15. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_representative_local_qualification_completion_v1.json). Scientific source review is private; representative-only replacement of local identities was not accepted. All-qualified source-local anchors are prepared behind full evidence/routing/input acceptance, with native feature selection explicitly declared as an additional factor. Full objective active.

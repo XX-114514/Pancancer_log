@@ -1,0 +1,22 @@
+{
+  "schema": "technical_representative_local_qualification_completion_v1",
+  "observed_UTC": "2026-10-23T20:55:52.157447+00:00",
+  "completed_UTC": "2026-10-23T20:49:18.036999+00:00",
+  "supervisor_actual_exit_code": 0,
+  "n_tests_actual_no_skips": 6,
+  "n_direct_predictions": 222072,
+  "maximum_direct_prediction_error": 6.772360450213455e-15,
+  "output_sha256": "0aa4284c503b0bd10873e9a93895f3fa2a46c166906fddb6804654e18c7e1331",
+  "partitions_sha256": "022f62dfec6c3d7022d0757dce2489e6ad82196fb87e270f1d1438b6f630c15b",
+  "wall_seconds": 290.0900564873591,
+  "peak_RSS_bytes_Linux": 6611062784,
+  "written_bytes_before_terminal": 51452208,
+  "native_counts_copied": false,
+  "new_final_identity": false,
+  "model_file_digest_index_sha256": "723888708f48f4c1d9e513f9d736d0d4c6546af93cad97f0d930b2682ea9d56f",
+  "scientific_results": "private_source_aggregate_report",
+  "reference_only_replacement_for_local_identity": "not_accepted",
+  "next": "all_qualified_source_local_anchor_graphs_after_input_gates",
+  "full_goal_complete": false,
+  "cloud_sync": "pending_prior_rejection_no_retry"
+}

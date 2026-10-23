@@ -2025,3 +2025,13 @@ Supplemental native evidence independently accepted, including3970 direct native
 ### 2026-10-23T20:29:01.549003+00:00 UTC: full reference extraction complete
 
 Full selected-native reference extraction completed with actual exit 0. Index SHA 80d4330cbd75cdf7960b89109c6083a598ae523ffa60a13fe800e4ebdbf7c466; wall 3,890.56 seconds, peak RSS 4,311,449,600 bytes, written bytes 247,103,562 at final source checkpoint. Native counts were not copied. The full independent auditor launched after a fresh bounded quota/RAM preflight; producer completion is not full evidence acceptance or final annotation. Author-label evidence inventory is complete. Provisional source-local routing is prepared behind independent evidence acceptance. Full goal remains active; cloud sync pending after prior rejection.
+
+
+### 2026-10-23T20:45:56.728845+00:00 UTC / 2026-10-24T04:45:56.728845+08:00 UTC+8: atlas scalability qualification
+
+Full native reference auditor remains live. A bounded source-local representative-fit/mapping qualification has started with six executed numerical checks, fixed features/engine and original A comparison. Real fit and RNA-structure outcomes are pending. [Method](methods/representative-source-local-qualification-20261024.md); full-source model/identity/crosswalk and analysis views remain open. No new downloads or public push retry.
+
+
+### 2026-10-23T20:55:52.157447+00:00 UTC / 2026-10-24T04:55:52.157447+08:00 UTC+8: local-structure qualification decision
+
+Representative source-local qualification completed with actual exit0 and independent numerical agreement. It is not accepted as replacement for local fine identities. Full qualified source-local anchor graphs are prepared behind full evidence/routing/input gates; current full reference auditor remains live. [Method](methods/representative-source-local-qualification-20261024.md). Scientific source findings private; full objective and downstream qualification continue.

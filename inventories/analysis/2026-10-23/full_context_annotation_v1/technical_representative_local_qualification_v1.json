@@ -1,0 +1,16 @@
+{
+  "schema": "technical_representative_local_qualification_v1",
+  "observed_UTC": "2026-10-23T20:49:16.783733+00:00",
+  "status": "running_not_complete",
+  "launch_UTC": "2026-10-23T20:44:22.885225+00:00",
+  "config_sha256": "d2bff4a1c8b244d8ad329fecfd886e1fe692d5b1506b9d2e8abf8d2266850e78",
+  "launcher_sha256": "e60fc80c9e9b22d4e4804c1b98841eff49eb2310e613f8e4d7e3ff76bc5b0881",
+  "mapping_counterexamples_actual": 6,
+  "fit_pool_counterexamples_local_actual": 4,
+  "source_fit_pool_stage_status": "prepared_not_launched",
+  "native_counts_copied": false,
+  "new_final_identity": false,
+  "full_goal_complete": false,
+  "scientific_source_results_location": "private_source_artifacts",
+  "cloud_sync": "pending_prior_auto_review_rejection_no_retry"
+}

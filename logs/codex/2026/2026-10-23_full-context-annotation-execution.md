@@ -727,3 +727,31 @@ At 2026-10-23T20:35:09.740511+00:00 UTC, the semantic-missing revision completed
 
 
 At 2026-10-23T20:35:34.962669+00:00 UTC, owned AST/JSON/private-path/whitespace checks and repository validation passed: actual exit 0, zero errors, one pre-existing unrelated provenance warning; validation SHA ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e. The full reference auditor remains active. The coverage and provisional-route launchers are prepared and gated, not completed outputs. Ordinary local milestone commit follows; no public push retry.
+
+
+## 2026-10-23T20:45:56.728845+00:00 UTC / 2026-10-24T04:45:56.728845+08:00 UTC+8: representative source-local fit qualification launched
+
+Continued the full eight-part objective from local commit470c336. Full reference evidence auditor remains on its exact live handle; no completion inferred from elapsed time. Prepared and launched a finite representative-fit qualification on accepted pilot/source-local A inputs after successful predecessor exits and fresh bounded quota/RAM checks. Actual launch 2026-10-23T20:44:22.885225+00:00, configuration SHA d2bff4a1c8b244d8ad329fecfd886e1fe692d5b1506b9d2e8abf8d2266850e78. The four-thread source process is running; completed results remain pending.
+
+Only fit population changes: expression-unit-balanced cap12,000 per source/provisional route, inherited fine labels as rare inclusion strata, same features/PCA/graph/seed/resolution1. Queries receive local nearest-neighbor proposals and separate distance/vote support. All positive-RNA records remain represented; small branches retain coarse-only status. Frozen original partitions are the structure reference, not identity truth. Six mapping counterexamples passed locally and at source. Same-query conditional RNA diagnostics and independent direct distance/centered-OLS checks are specified before results. See [method](../../../methods/representative-source-local-qualification-20261024.md).
+
+New files are the bounded qualifier, numeric mapping helper, six counterexamples and method. Existing input readers, baseline partitions, native data and historical labels stay unchanged. Read the native archive/reference/routing readers and prior stage contracts. Two guessed script filenames were absent during read-only inspection; authoritative filenames were then found with rg. No scientific failure or input mutation arose from those lookups. No new downloads or public push retry. Full-source discovery, qualified common identities, models/mapping, crosswalk and downstream views remain open.
+
+
+### 2026-10-23T20:49:16.783733+00:00 UTC / 2026-10-24T04:49:16.783733+08:00 UTC+8: source-local fit pool preparation
+
+Prepared the full-native discovery input stage behind accepted reference evidence and completed provisional routing. It preserves every archive row, records context/positive-RNA/unit/explicit exclusion axes, keeps unknown QC distinct from assessed negative, and freezes source-native measured model candidates with held-out physical aliases removed. Four additional counterexamples passed locally. This stage is not launched yet and does not fit a graph or assign model/downstream release eligibility. See [method](../../../methods/representative-source-local-qualification-20261024.md).
+
+
+## 2026-10-23T20:55:52.157447+00:00 UTC / 2026-10-24T04:55:52.157447+08:00 UTC+8: representative qualification complete; full local anchors prepared
+
+Qualification completed2026-10-23T20:49:18 UTC and supervisor actual exit0 at20:49:20 UTC. Six counterexamples passed;222072 finite conditional RNA predictions independently replayed, maximum discrepancy6.7724e-15. Wall290.09seconds, peak RSS6,611,062,784bytes, bounded output51,452,208bytes. Output SHA0aa4284c503b0bd10873e9a93895f3fa2a46c166906fddb6804654e18c7e1331; partition SHA022f62dfec6c3d7022d0757dce2489e6ad82196fb87e270f1d1438b6f630c15b. Uncapped fitted branches reproduce original A exactly. Model-file digest index SHA723888708f48f4c1d9e513f9d736d0d4c6546af93cad97f0d930b2682ea9d56f.
+
+Source-level scientific diagnostics remain private. The representative shortcut was not accepted as replacement for source-local identities under the prespecified support/RNA review gates. The diagnostic separates distance range from fine-group vote ambiguity and preserves all query rows; no threshold relaxation, outcome selection or deletion. Fresh source RAM inspection supports preparing all-qualified source-by-provisional-family fitting, with a conservative per-branch RAM gate. Local anchors retain fine structure while common coordinates/identity coordination remain separate.
+
+Implemented a full-source driver using existing native normalization, dispersion selection, PCA and graph primitives, source-native measured candidate axes, and held-out physical-feature exclusions. Small/no-qualified branches remain explicit; no counts copied or authoritative labels written. Model arrays/axes read back and hashed; source quota/physical headroom refreshed before each source. Execution is still gated behind full reference audit, provisional routing and fit-pool preparation. Native local feature selection is an explicit additional factor and not attributed solely to annotation ordering. Eight inherited branch/pool counterexamples will execute at source; the full driver itself has not yet run.
+
+Owned code/methods/technical receipts and same task/daily/run are maintained. Full objective continues; final shared identities, group-native evidence, audits, crosswalk and qualified downstream views remain. Prior public push rejection unchanged.
+
+
+At 2026-10-23T20:58:37.269675+00:00 UTC, owned AST/JSON/private-path/whitespace checks and repository validation passed: actual exit0, zero errors, one pre-existing unrelated warning; validation SHA ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e. Full-source driver includes a bounded one-source sparse RAM cache when its fresh conservative gate passes, avoiding repeated CSR span reads across interleaved lineages; it falls back to branch streaming otherwise, without changing statistical inputs. This driver remains prepared and gated. Ordinary local milestone commit follows, no public push retry.
