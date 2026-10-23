@@ -1,0 +1,20 @@
+{
+  "status": "MANUSCRIPT_SOURCE_CLAIMS_AND_SCOPE_CHECKED_NO_NEW_INFERENCE",
+  "created_UTC": "2026-10-23T01:40:36.509505+00:00",
+  "private_plan_sha256": "9aaf0e426e393ab3e85f0a91dfcfdd53ac4ca56322bc6e86edf290e37674fa65",
+  "atlas_version_counts_checked": true,
+  "exponentiated_existing_logOR_and_existing_interval_endpoints_only": true,
+  "all_three_spatial_endpoints_and_complete_family_retained": true,
+  "clinical_cohort_endpoint_and_proxy_scope_checked": true,
+  "no_private_effects_or_manuscript_uploaded": true,
+  "draft_main_text_in_authorized_local_workspace": true,
+  "document_QA": {
+    "created_UTC": "2026-10-23T01:49:28.212082+00:00",
+    "docx_sha256": "4f7491dba436bf108728c28123f638242cccc90d9553f5f650924519df98ce48",
+    "rendered_pages": 4,
+    "all_pages_visually_inspected": true,
+    "chinese_font_rendering_verified": true,
+    "source_claims_rechecked": true,
+    "no_new_scientific_inference": true
+  }
+}
