@@ -1,0 +1,15 @@
+{
+  "created_UTC": "2026-10-23T03:07:21.109745+00:00",
+  "language": "en",
+  "source_claim_plan_sha256": "9aaf0e426e393ab3e85f0a91dfcfdd53ac4ca56322bc6e86edf290e37674fa65",
+  "document_sha256": "606ccba60c5e15cba805945c83a3c58c8bf9a109dcdb8724a00d86b332be796a",
+  "text_source_sha256": "a93e922c7d969f8ff7cf20b910198a522e1eff95aa003bf5f8750b6ecd9710ab",
+  "word_count_including_references_and_legends": 2788,
+  "rendered_pages": 7,
+  "all_pages_visually_inspected": true,
+  "primary_numeric_claims_checked": true,
+  "assay_objects_and_inference_families_distinguished": true,
+  "figure_legends_are_drafts_for_proposed_manuscript_figures": true,
+  "no_new_scientific_inference": true,
+  "private_manuscript_not_uploaded": true
+}
