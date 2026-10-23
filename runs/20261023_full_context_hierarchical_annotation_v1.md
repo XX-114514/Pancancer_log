@@ -2,7 +2,7 @@
 
 ## 完整目标与当前阶段
 
-按用户明确实施指令执行[原完整方案](../methods/full-context-atlas-hierarchical-annotation-plan-20261023.md)。八类要求见[验收登记](../inventories/analysis/2026-10-23/full_context_annotation_v1/objective_acceptance_register_v1.json)，不因某个读取/合成通过缩小成功定义。当前为stage1：既有全来源原生计数的可读索引、来源内标签继承和结构审计；新多marker身份、A/B/C、全量模型和最终交付仍待。
+按用户明确实施指令执行[原完整方案](../methods/full-context-atlas-hierarchical-annotation-plan-20261023.md)。八类要求见[验收登记](../inventories/analysis/2026-10-23/full_context_annotation_v1/objective_acceptance_register_v1.json)，不因某个读取/合成通过缩小成功定义。当前结构与比较输入已独立验收，全范围原生marker生产正常结束待独立复算，受控A/B/C候选分群正在执行。新多marker身份、来源留出、方法选择、全量映射和最终交付仍待。
 
 ## 输入、资源与约束
 
@@ -59,3 +59,96 @@ This explicit UTF-8 file and repository cwd repair the documentation step withou
 changing science. Full repository validation follows. Goal remains active;
 this turn is progress, not a completion or a blocked audit. Public push retains
 its prior auto-review restriction; local archive is pending cloud synchronization.
+
+
+## 2026-10-23T12:57:50.422815+00:00 UTC / 2026-10-23T20:57:50.422815+08:00 UTC+8: pilot input acceptance and namespace correction
+
+Observed: the existing official material bridge separates tumor Total libraries
+from involved nodes and other materials. The frozen source metadata's coarse
+primary category did not make that distinction. The new pilot uses the accepted
+official mapping; raw archives and historical labels remain unchanged. Another
+diagnostic cohort has unresolved exact biopsy sites and remains a material
+stress source, not a reviewed primary-tumor census. Study-wide pretreatment
+design is not promoted to cell-wise verified patient metadata. Potentially
+overlapping sources stay in one conservative fold without claiming proven
+overlap or independent cohorts.
+
+The first selector attempt failed with actual child exit1 because raw sampleID
+strings differ from the frozen expression-unit namespace. It is retained. The
+reader now exposes frozen_expression_units using authoritative roster codes;
+raw obs values remain available. Independent native sample_uid replay verified
+all selected legacy rows without string stripping or inferred identifiers.
+The second attempt preserves source rules, sampling caps and seeds. Six reader
+and four sampling counterexamples passed in the real scientific environment;
+the supervised selector child returned exit0. The independent material/QC,
+unit-balance, physical-row and common-feature audit returned actual exit0.
+The SSH observation timed out after the audit completed; source artifacts and
+absence of the exact auditor process established completion, without a restart.
+Technical hashes: technical_pilot_input_acceptance_v1.json.
+
+These are frozen comparison inputs, not fitted A/B/C models, a method winner or
+new annotations. Held-out RNA marker names are not independent ground truth;
+physical alias disjointness still receives a modeling preflight. Inherited
+labels used for sampling cannot serve as annotation accuracy truth. Native
+multi-marker evidence continues on its original supervised handle. Source
+alias/clinical qualification, new identity review, model comparison and full
+mapping remain outstanding. Goal active; this turn makes progress. Source
+scientific summaries stay private; public push remains pending under the prior
+automatic review rejection. Original matrices, dated CM and parallel jobs stay.
+
+
+## 2026-10-23T13:10:05.512949+00:00 UTC / 2026-10-23T21:10:05.512949+08:00 UTC+8 / 2026-10-24T00:10:05.512949+11:00 Australia/Melbourne: native stage completed; controlled discovery models running
+
+Observed: the full frozen native-marker scope finished with supervisor-recorded
+actual science exit0, no timeout and complete source/count reconciliation. The
+direct-CSR independent audit is running; native group evidence has not yet been
+accepted as a new identity or state annotation. The original count archives and
+authoritative labels are read-only.
+
+Five meaningful counterexamples and actual PCA/Harmony/Scanpy graph API tests
+passed in the scientific environment, with no skipped tests and actual exit0.
+They cover full native denominators/zero RNA/invalid counts, physical aliases
+between model and held-out readouts, declared training-only feature-selection
+axes, variable/constant conditional state recovery, and actual runtime APIs.
+After qualification, the exact same code was frozen for real discovery fits.
+The supervisor and child are live; every frozen pilot source was loaded and
+checkpointed. This is actual modeling progress, not a completed comparison.
+
+The common-feature A/B/C discovery protocol is recorded in
+methods/full-context-annotation-discovery-pilot-20261023.md. Seeds, graph/PCA/
+Harmony parameters, threads, wall budget and output cap were frozen before
+fitting. C is conditional on inherited coarse labels and cannot validate its
+own input labels. A/B shared geometry is one observation. Held-out RNA
+diagnostics, rare candidates and native panel crosswalks do not establish
+independent identity accuracy. Source-held-out fitting, identity review and
+unknown/reference behavior remain required before choosing a production route.
+
+Original raw matrices, dated CM, and parallel external work remain unchanged.
+No downloads, shared-environment installation, physical matrix copies or new
+clinical hypothesis tests were performed. Large-write reserve gate stays
+unqualified. Goal active; this turn is progress. Public push remains pending
+under the prior automatic-review rejection; archive only explicit task files.
+
+
+## 2026-10-23T13:16:19.805401+00:00 UTC: native evidence independently accepted, biological labels pending
+
+Actual independent audit completed 2026-10-23T13:11:49.593811+00:00 UTC and supervisor recorded science
+exit0 without timeout. Every source's inherited-group count, measured-gene mask,
+null policy and expression/detection bounds passed. One complete source was
+replayed directly from CSR arrays, independently of producer gathering and
+normalization; detection counts and native CP10K/log means matched. Real true
+zeros and unmeasured markers were found and checked. No real zero-RNA example
+was observed; its synthetic counterexample had passed and is not represented
+as a real case. Acceptance is for marker evidence, not new identity/state.
+
+The discovery child remains the same live process. It completed global PCA,
+the joint graph and source-local graphs and is fitting within-route graphs for
+the first frozen seed. Physical held-out/model aliases passed for every loaded
+pilot source. Three-seed completion, independent partition checks, source-heldout
+mapping, routing review and production selection remain pending.
+
+Repository final validation actual exit0: zero errors, one pre-existing warning;
+SHA256 ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e.
+Explicit-task diff/whitespace and private-path/credential-pattern review passed.
+Ordinary local archival follows; public push retains the prior automatic-review
+restriction. Complete goal remains active; no final atlas/model claim.

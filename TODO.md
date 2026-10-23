@@ -1594,3 +1594,12 @@ PREP-01/03恢复：用户允许临时卷并要求最终Zarr。ZARR-NEW-01：新�
 Stage1 structure and inherited labels independently accepted; native-marker supervisor/child live after actual numerical tests. Registry joined, alias/identity/A-B-C/full-scale/archive acceptance still pending. Original inputs and parallel tasks preserved; public push pending.
 
 [Implementation record](runs/20261023_full_context_hierarchical_annotation_v1.md).
+
+
+## 2026-10-23T13:10:05.512949+00:00：全细胞图谱当前接续
+
+- [x] Stage1结构与继承轴独立验收；比较输入、材料/单位与特征独立验收。
+- [x] 全范围原生marker生产进程actual exit0。
+- [ ] 完成原生证据独立CSR复算与来源内身份审阅。
+- [ ] 核同句柄三种子发现模型终态，再完成来源留出、路由纠错、未知群和参考资格评价。
+- [ ] 按八项原验收继续生产路由、全量映射、crosswalk、存储/下游视图；不以候选分群代替完整完成。

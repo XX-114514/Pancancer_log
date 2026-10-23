@@ -112,6 +112,21 @@ class FullContextAtlas:
     def field_names(self, dataset):
         return list(self.store(dataset)['obs'].attrs['column-order'])
 
+    def frozen_expression_units(self, dataset):
+        """Use the frozen roster's keys, preserving the raw obs keys separately."""
+        if self.is_legacy(dataset):
+            selected = self._source_per_roster == dataset
+            units = self._sample_categories[self._sample_codes[selected]]
+        else:
+            unit_field = self.partitions[dataset].get('unit_field', 'library_id')
+            units = self.field(dataset, unit_field)
+        if len(units) != len(self.rows(dataset)):
+            raise ValueError('Frozen expression-unit axis mismatch')
+        expected = self.partitions[dataset].get('n_context_units')
+        if expected is not None and len(set(units)) != expected:
+            raise ValueError('Changed frozen expression-unit count')
+        return units
+
     def field(self, dataset, name):
         """Return a selected metadata axis; caller keeps individual rows private."""
         z = self.store(dataset)

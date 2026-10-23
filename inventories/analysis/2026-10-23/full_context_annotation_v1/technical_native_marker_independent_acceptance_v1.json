@@ -1,0 +1,16 @@
+{
+  "schema": "full_native_evidence_independent_acceptance_technical_v1",
+  "observed_UTC": "2026-10-23T13:16:19.805401+00:00",
+  "actual_audit_completed_UTC": "2026-10-23T13:11:49.593811+00:00",
+  "actual_independent_audit_exit_code": 0,
+  "all_source_inherited_group_measurement_null_and_bound_checks_pass": true,
+  "one_whole_source_replayed_from_direct_CSR_without_producer_gather_or_normalization_helpers": true,
+  "true_zero_and_unmeasured_examples_checked": true,
+  "no_real_zero_RNA_case_claimed": true,
+  "zero_RNA_synthetic_counterexample_passed": true,
+  "private_native_terminal_SHA256": "331951be3c5131e4eccf90ebacd5b39367d52400c3e8a243142a6f6e7af5da90",
+  "private_output_index_SHA256": "4c8f01ba82b31117b4cfc6b5cdb60839e71a4271972e91384ed318b7c6c7ec78",
+  "private_audit_observation_SHA256": "db45d50eaf4264a4865b98862516f04ec189e409a8c7da90c8cc9f9ae21f10d4",
+  "new_identity_state_malignancy_accepted": false,
+  "large_matrix_write_qualified": false
+}

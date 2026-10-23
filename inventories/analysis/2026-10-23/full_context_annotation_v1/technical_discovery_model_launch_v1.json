@@ -1,0 +1,30 @@
+{
+  "schema": "controlled_annotation_discovery_launch_technical_v1",
+  "observed_UTC": "2026-10-23T13:10:05.512949+00:00",
+  "actual_launch_UTC": "2026-10-23T13:05:35.631140+00:00",
+  "actual_runtime_counterexamples_passed": 5,
+  "skipped_tests": 0,
+  "exact_supervisor_and_science_child_live": true,
+  "code_SHA256": {
+    "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+    "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+    "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f"
+  },
+  "config_SHA256": "f921f8f25b67112d558261df1e9be9663869af051320484fd4cb98827d957dc5",
+  "threads": 4,
+  "model_seeds": [
+    2026102301,
+    2026102302,
+    2026102303
+  ],
+  "wall_seconds": 10800,
+  "output_cap_bytes": 16777216,
+  "private_launch_SHA256": "cfdf5450ef04a3a88a82bf499393bf4dc902778f36f2b8d9778fb95a8d172f4a",
+  "private_progress_observation_SHA256": "3f5fbe604384e974751de19b1723b315f2491fcec1d2af6ad21a0950a1e7ee16",
+  "all_source_discovery_not_source_holdout": true,
+  "new_identity_method_winner_full_mapping_or_archive_accepted": false,
+  "native_count_disk_copy": false,
+  "large_matrix_write_qualified": false
+}

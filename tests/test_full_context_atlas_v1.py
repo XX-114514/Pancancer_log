@@ -25,6 +25,7 @@ class FullContextTests(unittest.TestCase):
         self.root = Path(tempfile.mkdtemp(prefix='full-context-counterexample-'))
         a = ad.AnnData(sp.csr_matrix([[2, 3, 0], [0, 1, 0], [7, 0, 0]], dtype=np.int32),
                        obs=pd.DataFrame({'gse_id': ['OLD1'] * 3,
+                                         'sampleID': ['raw0', 'raw1', 'raw0'],
                                          'majorCluster': ['T cell', 'T cell', 'Myeloid']},
                                         index=['o0', 'o1', 'o2']),
                        var=pd.DataFrame(index=['G1', 'G2', 'G3']))
@@ -38,6 +39,7 @@ class FullContextTests(unittest.TestCase):
         (self.root / 'samples.tsv').write_text('sampleID\tgse_id\teligible_min100_cells\nunit0\tOLD1\tTrue\nunit1\tOLD1\tFalse\n')
         b = ad.AnnData(sp.csr_matrix([[11, 2, 0], [4, 1, 0], [5, 6, 0]], dtype=np.int32),
                        obs=pd.DataFrame({'dataset': ['NEW1', 'REF1', 'NEW1'], 'major': ['T', 'T', 'B'],
+                                         'library_id': ['newlib0', 'reflib1', 'newlib2'],
                                          'node_id': ['N0', 'N1', 'N2'],
                                          'author': ['Tline', 'Epithelial', 'Bline']}, index=['n0', 'n1', 'n2']),
                        var=pd.DataFrame({'gene_symbol': ['G1', 'G2', 'G3'],
@@ -74,7 +76,10 @@ class FullContextTests(unittest.TestCase):
         r = FullContextAtlas(self.path)
         np.testing.assert_array_equal(r.rows('OLD1'), [2, 0])
         np.testing.assert_array_equal(r.frozen_labels('OLD1')['fine'], ['F0', 'F1'])
+        np.testing.assert_array_equal(r.frozen_expression_units('OLD1'), ['unit0', 'unit0'])
+        np.testing.assert_array_equal(r.field('OLD1', 'sampleID'), ['raw0', 'raw0'])
         np.testing.assert_array_equal(r.rows('NEW1'), [0, 2])
+        np.testing.assert_array_equal(r.frozen_expression_units('NEW1'), ['newlib0', 'newlib2'])
 
     def test_duplicates_order_missingness_and_full_RNA_denominator(self):
         r = FullContextAtlas(self.path)

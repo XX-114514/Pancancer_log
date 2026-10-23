@@ -1,0 +1,12 @@
+{
+  "schema": "full_native_marker_completion_technical_v1",
+  "observed_UTC": "2026-10-23T13:10:05.512949+00:00",
+  "actual_science_exit_code": 0,
+  "wall_timeout": false,
+  "complete_frozen_source_scope_reconciled": true,
+  "all_selected_native_count_values_checked": true,
+  "private_terminal_index_SHA256": "4c8f01ba82b31117b4cfc6b5cdb60839e71a4271972e91384ed318b7c6c7ec78",
+  "independent_audit": "running_not_accepted_yet",
+  "new_biological_identity_accepted": false,
+  "private_observation_SHA256": "8d8e1127e459e4e8ab6db976c798df6cee7fde7d22f70998542a348ae8fb1701"
+}

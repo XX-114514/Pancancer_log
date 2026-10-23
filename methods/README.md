@@ -178,3 +178,6 @@
 
 
 [全细胞方案实施记录](../runs/20261023_full_context_hierarchical_annotation_v1.md)：沿用完整方案和八项验收，不以读取器/合成通过替代最终完成。
+
+
+[注释时序比较的受控发现阶段](full-context-annotation-discovery-pilot-20261023.md)：同输入/共同特征候选分群与条件RNA诊断，身份及来源留出验收另列。

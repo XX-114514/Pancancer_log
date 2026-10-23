@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T11:51:00.455728+00:00",
+  "updated_UTC": "2026-10-23T13:16:19.805401+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -20,18 +20,20 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "full_native_marker_evidence_running_identity_review_pending",
-      "evidence": "technical_native_marker_launch_v1.json"
+      "status": "full_native_marker_evidence_independently_accepted_new_identity_local_fine_review_pending",
+      "evidence": "technical_native_marker_independent_acceptance_v1.json"
     },
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "pending"
+      "status": "frozen_input_accepted_controlled_discovery_fits_running_identity_and_source_holdout_pending",
+      "evidence": "technical_discovery_model_launch_v1.json"
     },
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "pending"
+      "status": "predeclared_RNA_structure_diagnostics_running_no_winner",
+      "evidence": "technical_discovery_model_launch_v1.json"
     },
     {
       "id": "R6_full_scale",
