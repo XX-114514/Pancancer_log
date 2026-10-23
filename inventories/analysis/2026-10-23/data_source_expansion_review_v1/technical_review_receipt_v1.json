@@ -1,0 +1,17 @@
+{
+  "observed_UTC": "2026-10-23T03:07:39.038104+00:00",
+  "status": "LOCAL_AGGREGATE_PROVENANCE_REVIEW_AND_EXPANSION_PLAN_COMPLETE",
+  "local_review_manifest_sha256": "527dd48adcacf8f58052a2c0cd417bda5d739a19740224033ef86f36e8e5ace8",
+  "frozen_original_sample_scope_aggregates_recounted": true,
+  "source_scopes_distinguished": true,
+  "no_patient_or_cell_records_exported": true,
+  "no_expression_download_or_new_model": true,
+  "official_web_resource_metadata_reviewed": true,
+  "server_live_Zarr_recount_not_performed": true,
+  "private_source_values_not_added_to_public_git": true,
+  "aggregate_arithmetic_and_complete_rows_check": "PASS",
+  "repository_validation_exit_code": 0,
+  "repository_validation_errors": 0,
+  "repository_validation_warnings": 1,
+  "privacy_diff_review": "PASS"
+}
