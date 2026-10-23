@@ -410,3 +410,8 @@ scientific summaries remain private and public push remains pending.
 ## 2026-10-23T17:55:40.819110+00:00 UTC: true source-lineage workflow
 
 Native routing, six-resolution source-lineage discovery and native role coverage finished with actual exit0. New fine-group review launched17:54:05 UTC; biological acceptance and full mapping pending. See [technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_source_lineage_and_roles_v1.json) and [execution contract](../methods/source-native-routing-and-lineage-discovery-20261024.md). Prior transport failure preserved; source statistics private, public sync pending.
+
+
+## 2026-10-23T18:09:53.278708+00:00 UTC: independent new-route audits complete
+
+Native group review, all-source axis/author/branch and size-selected native-reference replay, and both-context comparison replay are accepted with actual exit0. All exact owned jobs are terminal. [Technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_source_lineage_and_roles_v1.json) records hashes and computation scope. Per-cell confidence/rare-unknown review, selected workflow/full mapping and qualified views remain pending; full goal active.

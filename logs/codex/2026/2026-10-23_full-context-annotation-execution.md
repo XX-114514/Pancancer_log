@@ -552,3 +552,14 @@ Group proposal coverage must not be interpreted as per-cell identity accuracy: t
 Local AST/path scan passed for ten new Python files. Repository validator actual exit0, zero errors and one pre-existing provenance-path warning; diff whitespace check passed. Current output receipt records the validation SHA. Public push remains pending after the previous automatic approval rejection.
 
 Staged new-file whitespace check found one inherited trailing space in the new native auditor. Removed it with exact AST equivalence; the technical receipt retains executed and repository SHA separately. No running source code or scientific parameters changed.
+
+
+## 2026-10-23T18:09:53.278708+00:00 UTC / 2026-10-24T02:09:53.278708+08:00 UTC+8: new source-lineage review and comparison accepted
+
+New native review actual exit0 at18:00:26 UTC. Both-context comparison audit actual exit0 at18:04:04 UTC: all1476 profiles and7278 paired-state records reproduced,1836 independent centered-OLS cases, maximum prediction discrepancy1.48e-14, frozen B and route/source/unknown-pool boundaries accepted. New native audit actual exit0 at18:07:37 UTC: all-source axes/author provenance/branch eligibility/crosswalks accepted; size-selected native and49348 official reference predictions replayed, maximum probability discrepancy1.87e-7. Every exact owned scientific process is terminal as of18:08:18 UTC.
+
+These are computational acceptance gates. Group proposal coverage is not per-cell accuracy, references are not independent truth, and new-route source holdout/full-scale identity remain outstanding. Next apply common cell-level conflicts and confidence across ABC, then source-qualified lineage features/limited engine/reference mapping. Full eight-part objective remains active.
+
+A private source-aggregate state-retention figure was rendered and visually checked. Local plotting first failed because matplotlib was unavailable; reused the existing source plotting library for an in-RAM render, returned the authorized aggregate PNG with matching SHA, installed nothing and exported no individual data. The figure is outside public Git.
+
+The preceding code milestone was committed locally as ccdf810. Public push remains blocked by the prior automatic-review rejection; no alternate upload attempted. Source-specific scientific interpretation and next gates remain private.

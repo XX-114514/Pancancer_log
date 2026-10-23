@@ -1,6 +1,6 @@
 {
   "schema": "technical_source_lineage_and_roles_v1",
-  "observed_UTC": "2026-10-23T18:05:54.304502+00:00",
+  "observed_UTC": "2026-10-23T18:09:53.278708+00:00",
   "stages": [
     {
       "stage": "20261024_full_context_pilot_native_routing_v1",
@@ -66,7 +66,29 @@
       },
       "actual_child_exit_code": 0,
       "wall_timeout": false,
-      "observed_UTC": "2026-10-23T18:05:16.366549+00:00"
+      "observed_UTC": "2026-10-23T18:08:18.222616+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    },
+    {
+      "stage": "20261024_full_context_source_lineage_native_audit_v1",
+      "terminal": {
+        "status": "SOURCE_LINEAGE_REVIEW_AXES_AUTHORS_BRANCHES_AND_SIZE_SELECTED_REPLAY_PASS_NOT_BIOLOGICAL_TRUTH",
+        "completed_UTC": "2026-10-23T18:07:37.973878+00:00",
+        "output_sha256": "1f696e95474f4a02aeb5f3aec772fc3935fd4a88d67220ae28e9b5830d89e069",
+        "producer_terminal_sha256": "379367835c1fd2d7807e8711eee93b353496dc01895509071b6959eef76d37cf",
+        "wall_seconds": 328.99377687228844,
+        "peak_RSS_bytes_Linux": 2354323456
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "observed_UTC": "2026-10-23T18:08:18.222616+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false,
+      "official_prediction_replay": {
+        "n_official_reference_cell_model_predictions_replayed": 49348,
+        "max_probability_error": 1.866098173208819e-07
+      }
     },
     {
       "stage": "20261024_full_context_source_lineage_comparison_audit_v1",
@@ -89,7 +111,9 @@
       },
       "actual_child_exit_code": 0,
       "wall_timeout": false,
-      "observed_UTC": "2026-10-23T18:05:16.366549+00:00"
+      "observed_UTC": "2026-10-23T18:08:18.222616+00:00",
+      "exact_supervisor_live": false,
+      "exact_child_live": false
     }
   ],
   "scripts_sha256": {
@@ -107,7 +131,7 @@
   "new_native_review": {
     "launched_UTC": "2026-10-23T17:54:05.206581+00:00",
     "config_sha256": "b89fb589853f05c6f268682ae3c1955a20ef58bd84da9a0efa46c015a6979631",
-    "status": "completed_actual_exit0_independent_native_replay_running",
+    "status": "completed_actual_exit0_independent_native_replay_accepted",
     "anchor_rules": "frozen_specific_red_and_neutrophil_anchors",
     "author_rule": "explicit_native_author_fields_or_missing_no_carried_fine_fallback",
     "branch_fine_fit_flags_retained": true
@@ -120,11 +144,11 @@
   "public_push": "prior_auto_review_rejection_cloud_sync_pending",
   "new_comparison_audit": {
     "stage": "20261024_full_context_source_lineage_comparison_audit_v1",
-    "status": "running_both_contexts_and_original_B_invariance"
+    "status": "complete_B_invariance_boundaries_and_both_context_numeric_replay_accepted"
   },
   "new_native_audit": {
     "stage": "20261024_full_context_source_lineage_native_audit_v1",
-    "status": "running_all_source_axes_pass_official_reference_replay_in_progress"
+    "status": "complete_all_axes_authors_branches_and_size_selected_native_reference_replay_accepted"
   },
   "pilot_QC_metadata_review": "source_level_existing_flags_reviewed_missing_not_promoted_no_masks_changed",
   "original_harmonized_pilot_H5AD_author_fields": "checked_candidate_field_names_no_author_field_recovered_not_claiming_original_study_lacked_labels",
@@ -135,7 +159,8 @@
     "errors": 0,
     "warnings": 1,
     "existing_warning": "preexisting_provenance_path_warning",
-    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e",
+    "scope": "final_code_and_acceptance_documents"
   },
   "nonsemantic_postlaunch_formatting": {
     "file": "scripts/audit_source_lineage_native_review_v1.py",
@@ -143,5 +168,14 @@
     "repository_sha256": "eaa3cabfd3b29e499ad9bc6ca052fb9aff4b3eabe6e0930ac531a94973c7d5e4",
     "AST_exactly_unchanged": true,
     "change": "remove_one_inherited_trailing_space_detected_by_staged_diff_check"
+  },
+  "all_current_owned_scientific_jobs_terminal_as_of_UTC": "2026-10-23T18:08:18.222616+00:00",
+  "private_figure": {
+    "source_aggregate_only": true,
+    "public_git_export": false,
+    "visual_QA": "readable_labels_values_and_evidence_scope_checked",
+    "sha256": "0db0a39bd7431aad94eb64131cba2432247988fa43ef3e1e911677b2e105c98c",
+    "local_render_attempt": "matplotlib_unavailable",
+    "recovery": "existing_source_matplotlib_RAM_render_no_install_or_data_download"
   }
 }

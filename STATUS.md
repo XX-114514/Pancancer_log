@@ -1970,3 +1970,8 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 ### 2026-10-23T17:58:55.327256+00:00 UTC: current full-context atlas branch
 
 Native coarse routing, true source-by-lineage A/new-route C discovery and selected-source metadata/role coverage have completed with actual exit0. Native fine-group review and new-comparison numerical replay are running. Source aliases, layer/model eligibility, full identity/mapping and qualified analysis views remain pending; no method winner or authoritative relabeling. See [current run](runs/20261023_full_context_hierarchical_annotation_v1.md). Other project branches are not refreshed by this entry. Public sync remains pending after the prior approval rejection.
+
+
+### 2026-10-23T18:09:53.278708+00:00 UTC: latest full-context atlas branch
+
+New native group annotations and both-context comparison diagnostics have passed independent computational replay; all owned scientific jobs are terminal. Equal cell-level confidence, rare/unknown review, new-route holdout, feature/engine qualification and full mapping are next. No final method or authoritative labels promoted. [Current run](runs/20261023_full_context_hierarchical_annotation_v1.md). Other project branches not refreshed; public push prior rejection remains.

@@ -1655,3 +1655,10 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [ ] Accept new native fine-group proposals and independent comparison replay; coordinate source-local identities and qualify rare/unknown handling.
 - [ ] Freeze source-specific QC/layer/material eligibility, complete new-route holdout/limited engine comparison and select the workflow for full mapping.
 - [ ] Complete the unchanged full-scope [acceptance register](inventories/analysis/2026-10-23/full_context_annotation_v1/objective_acceptance_register_v1.json), including qualified views and storage delivery.
+
+
+2026-10-23T18:10:19.794994+00:00 UTC full-context gate update:
+
+- [x] New native fine-group review and independent author/axis/branch/native-reference replay accepted.
+- [x] New source-lineage comparison replay accepted in inherited and provisional-native contexts.
+- [ ] Apply equal per-cell conflict/confidence rules across ABC; group-level label coverage is not cell-level identity validation. Remaining feature/engine/holdout/full-mapping gates above remain open.

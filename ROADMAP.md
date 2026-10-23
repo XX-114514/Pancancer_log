@@ -908,3 +908,6 @@ A4是未来检验“哪些通讯特征对模块活动有额外解释”的方案
 
 
 2026-10-23T17:58:55.327256+00:00 UTC: the full-context route has advanced from inherited-label baselines to native coarse routing, true source-lineage A and new-route C discovery. Native fine evidence and both-context numerical acceptance are the current gates. Full-scale source-qualified mapping, confidence/crosswalk and final views remain the next milestones; the eight-part objective is unchanged. See [contract](methods/source-native-routing-and-lineage-discovery-20261024.md).
+
+
+2026-10-23T18:10:19.794994+00:00 UTC: both new source-lineage numerical gates are now accepted. Move from group proposals to equal per-cell confidence/rare-unknown handling, then qualified lineage features, reference selection and full-archive mapping. Preserve full-scope acceptance gates and separate identity/state evidence.
