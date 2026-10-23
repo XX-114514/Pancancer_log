@@ -1,0 +1,31 @@
+{
+  "schema": "technical_full_native_local_graph_launch_v1",
+  "observed_UTC": "2026-10-23T21:16:26.409734+00:00",
+  "input_preparation": {
+    "status": "FULL_NATIVE_LOCAL_DISCOVERY_INPUTS_PREPARED_NO_GRAPH_FITTED",
+    "completed_UTC": "2026-10-23T21:12:11.590713+00:00",
+    "n_sources": 65,
+    "index_sha256": "1b9ec651867934135e11353c9e6e6050930130d60ad02d6dde43a0a15ef1a081",
+    "wall_seconds": 422.98152541182935,
+    "peak_RSS_bytes_Linux": 3966455808,
+    "native_expression_read": false,
+    "new_authoritative_labels": false
+  },
+  "input_actual_exit_code": 0,
+  "input_source_counterexamples_actual": 4,
+  "full_graph_launch_UTC": "2026-10-23T21:14:43.027011+00:00",
+  "full_graph_launcher_sha256": "c6b96df3d7123ce95ea696ea600ff2eccd826a5931281f26ae852f7458449b4d",
+  "full_graph_status_at_observation": "running_not_complete",
+  "full_graph_source_counterexamples_actual": 8,
+  "full_graph_exact_supervisor_and_child_live": true,
+  "native_counts_copied": false,
+  "new_authoritative_labels": false,
+  "clinical_or_CM_selection": false,
+  "scientific_denominators": "private_source_aggregate_report",
+  "cloud_sync": "pending_prior_rejection_no_retry",
+  "config_sha256_observed_after_launch": "3376143b434b24b268a7d98c8eb9e735a1bbff672edb82d117858d7a43e9b7ec",
+  "supervisor_request_sha256": "1283d18262f0c52dbc26da50c65eaf342e301bb07bd2bb0ec9754e11d6731b41",
+  "binding_observation_UTC": "2026-10-23T21:17:12.364052+00:00",
+  "all_declared_input_bindings_and_deployed_scripts_match": true,
+  "upstream_index_hashes_match_producer_terminals": true
+}

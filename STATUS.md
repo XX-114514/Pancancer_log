@@ -2035,3 +2035,13 @@ Full native reference auditor remains live. A bounded source-local representativ
 ### 2026-10-23T20:55:52.157447+00:00 UTC / 2026-10-24T04:55:52.157447+08:00 UTC+8: local-structure qualification decision
 
 Representative source-local qualification completed with actual exit0 and independent numerical agreement. It is not accepted as replacement for local fine identities. Full qualified source-local anchor graphs are prepared behind full evidence/routing/input gates; current full reference auditor remains live. [Method](methods/representative-source-local-qualification-20261024.md). Scientific source findings private; full objective and downstream qualification continue.
+
+
+### 2026-10-23T21:02:23.567065+00:00 UTC / 2026-10-24T05:02:23.567065+08:00 UTC+8: full reference audit accepted; full local discovery advancing
+
+Full selected-native reference audit has actual exit0 and independent native/official-prediction replay. Joint coverage and provisional coarse routing are launched behind that acceptance. Full-source fit-pool and graph stages follow in order. [Run](runs/20261023_full_context_hierarchical_annotation_v1.md). These are provisional discovery steps; final shared identities and views remain open.
+
+
+### 2026-10-23T21:16:26.409734+00:00 UTC / 2026-10-24T05:16:26.409734+08:00 UTC+8: full-source local graphs running
+
+All-source fit-pool/native feature preparation completed actual exit0 and its denominators/resources were reviewed. Full source-by-provisional-family graph fitting has now started and passed eight source counterexamples. [Receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_native_local_graph_launch_v1.json). Local group annotations, common identities, audits/crosswalk/views remain; no final annotation or standalone Zarr completion claim.

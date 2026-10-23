@@ -1,0 +1,37 @@
+{
+  "schema": "technical_full_native_coverage_and_routing_v1",
+  "observed_UTC": "2026-10-23T21:08:05.247893+00:00",
+  "completed_stages": {
+    "coverage": {
+      "terminal": {
+        "status": "AUDITED_NATIVE_EVIDENCE_COVERAGE_SUMMARIZED_NOT_FINAL_ANNOTATION",
+        "completed_UTC": "2026-10-23T21:02:02.516121+00:00",
+        "output_sha256": "19ba9224dba23ca7958869d6a22abeec5776757850e725cd9f3eec53f6eb2e46",
+        "n_sources": 65,
+        "new_authoritative_labels": false,
+        "native_expression_read": false
+      },
+      "actual_exit_code": 0,
+      "supervisor_completed_UTC": "2026-10-23T21:02:03.255346+00:00"
+    },
+    "provisional_routing": {
+      "terminal": {
+        "status": "FULL_NATIVE_PROVISIONAL_ROUTING_COMPLETE_SOURCE_LOCAL_DISCOVERY_PENDING",
+        "completed_UTC": "2026-10-23T21:03:40.331020+00:00",
+        "n_sources": 65,
+        "index_sha256": "6df4e3e1955dfb59cfc7f604d8d64bc9b59c1f1c2fdfc9bf105d5b5899d8872e",
+        "wall_seconds": 92.09334096778184,
+        "peak_RSS_bytes_Linux": 2819837952,
+        "native_expression_read": false,
+        "new_authoritative_labels": false,
+        "model_and_downstream_eligibility_assigned": false
+      },
+      "actual_exit_code": 0,
+      "supervisor_completed_UTC": "2026-10-23T21:03:41.982688+00:00"
+    }
+  },
+  "scientific_source_counts": "private",
+  "new_authoritative_labels": false,
+  "full_annotation_complete": false,
+  "cloud_sync": "pending_prior_rejection_no_retry"
+}

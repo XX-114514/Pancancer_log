@@ -23,6 +23,7 @@ from annotation_representation_pilot_v1 import normalized_log_counts, select_fea
 from compare_annotation_granularity_v1 import graph_grid
 from full_context_atlas_v1 import sha256_file
 from native_archive_collection_v1 import NativeArchiveCollection, row_axis_sha256, text_axis_sha256
+from native_lineage_routing_v1 import FAMILIES
 from native_panel_aggregate_v1 import gather_csr_rows
 from summarize_full_native_annotation_evidence_v1 import read_source
 
@@ -80,6 +81,8 @@ def main(root):
         ds = item['source']; info, pool = read_source(inputs, item); rm, evidence = read_source(reference, refs[ds])
         rows = reader.rows(ds); n = len(rows)
         np.testing.assert_array_equal(rows, pool['native_row']); np.testing.assert_array_equal(rows, evidence['native_row'])
+        if np.any((pool['provisional_family_code'] < -1) | (pool['provisional_family_code'] >= len(FAMILIES))):
+            raise ValueError('Provisional family code outside frozen dictionary')
         identity_sha = text_axis_sha256(reader.native_ids(ds))
         if info['native_ids_sha256'] != identity_sha or rm['native_ids_sha256'] != identity_sha: raise ValueError('Native identity mismatch')
         feature_path = inputs / 'outputs' / info['feature_candidates']
@@ -129,6 +132,7 @@ def main(root):
             member = np.flatnonzero(branch_mask & pool['fit_pool_candidate'])
             branch_id = 'branch_%02d' % len(branches)
             record = {'branch_id': branch_id, 'provisional_family_code': int(family),
+                'provisional_family': FAMILIES[family] if family >= 0 else 'unresolved_context',
                 'n_archive_rows': int(branch_mask.sum()), 'n_fit_pool_rows': len(member),
                 'n_unfitted_archive_rows': int(branch_mask.sum()) - len(member)}
             if not len(member):
@@ -208,6 +212,7 @@ def main(root):
         save_arrays(output, native_row=rows, source_local_group_code=groups, fine_graph_fitted=fine,
                     fit_pool_candidate=pool['fit_pool_candidate'], provisional_family_code=pool['provisional_family_code'])
         meta = {'source': ds, 'n_archive_rows': n, 'native_rows_sha256': row_axis_sha256(rows), 'native_ids_sha256': identity_sha,
+            'provisional_family_code_dictionary': FAMILIES, 'unresolved_family_code': -1,
             'n_fit_pool_rows': int(pool['fit_pool_candidate'].sum()), 'n_fine_graph_rows': int(fine.sum()),
             'n_source_local_groups': group_offset, 'branches': branches, 'native_nnz_read': source_nnz,
             'wall_seconds': time.monotonic() - source_started, 'local_group_codes_require_source_and_version_namespace': True,

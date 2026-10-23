@@ -492,3 +492,18 @@ Finite fixed-factor qualification launched on previously accepted inputs at 2026
 ### 2026-10-23T20:55:52.157447+00:00 UTC / 2026-10-24T04:55:52.157447+08:00 UTC+8: representative qualification completed
 
 Actual exit0 with six counterexamples and222072 independently replayed RNA predictions, maximum error6.7724e-15. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_representative_local_qualification_completion_v1.json). Scientific source review is private; representative-only replacement of local identities was not accepted. All-qualified source-local anchors are prepared behind full evidence/routing/input acceptance, with native feature selection explicitly declared as an additional factor. Full objective active.
+
+
+### 2026-10-23T21:02:23.567065+00:00 UTC / 2026-10-24T05:02:23.567065+08:00 UTC+8: full native reference audit accepted
+
+Full auditor actual exit0, all selected axes/scopes checked with4651 direct native rows and5764 official prediction values replayed. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_native_reference_audit_v1.json). Joint coverage and provisional routing now launched, results pending; fit-pool and full source graphs remain dependent next stages. No final identity claim.
+
+
+### 2026-10-23T21:08:05.247893+00:00 UTC / 2026-10-24T05:08:05.247893+08:00 UTC+8: full discovery inputs advancing
+
+Joint coverage and full provisional routing are complete with actual exit0; [technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_native_coverage_and_routing_v1.json). Native fit-pool and measured feature-axis preparation is running after four source counterexamples. Full-source graphs remain gated on this stage. All native records and original labels are retained; shared marker-program flags do not establish doublets or final identity.
+
+
+### 2026-10-23T21:16:26.409734+00:00 UTC / 2026-10-24T05:16:26.409734+08:00 UTC+8: full source-local graph stage running
+
+Full input preparation actual exit0; all-source denominator/feature/resource review completed. Full local graphs actually launched at 2026-10-23T21:14:43.027011+00:00, eight counterexamples passed, exact handles live and native fitting begun. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_native_local_graph_launch_v1.json). Final full graphs, independent audits, local group annotation and shared identities remain pending; full objective active.

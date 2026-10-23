@@ -755,3 +755,32 @@ Owned code/methods/technical receipts and same task/daily/run are maintained. Fu
 
 
 At 2026-10-23T20:58:37.269675+00:00 UTC, owned AST/JSON/private-path/whitespace checks and repository validation passed: actual exit0, zero errors, one pre-existing unrelated warning; validation SHA ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e. Full-source driver includes a bounded one-source sparse RAM cache when its fresh conservative gate passes, avoiding repeated CSR span reads across interleaved lineages; it falls back to branch streaming otherwise, without changing statistical inputs. This driver remains prepared and gated. Ordinary local milestone commit follows, no public push retry.
+
+
+## 2026-10-23T21:02:23.567065+00:00 UTC / 2026-10-24T05:02:23.567065+08:00 UTC+8: full native reference evidence independently accepted
+
+The full auditor completed2026-10-23T21:01:07 UTC, supervisor actual exit0 at21:01:09 UTC. All selected native row/identity axes, scopes and compact evidence logic checked;4651 sampled native records and5764 official reference prediction values independently replayed. Maximum reference probability discrepancy1.3667e-7. Audit output SHA4d6db76dd7f71bc07a796e53efe75b2d2c29cdcb3087626f57f63356fdaced87; bound producer terminal SHA3654404f79e93119682c1065fa3b01d10a08c858a4f291cb71df0221cf790bc0. Wall1958.03seconds, peak RSS4,145,360,896bytes. It does not recompute every native count/prediction or establish biological identity truth.
+
+After that actual terminal, the prepared joint evidence coverage and full provisional-routing launchers were invoked with fresh bounded quota/RAM gates. Their final results are pending. Next completed routing permits full-native fit-pool preparation, then actual source-local graphs under the committed full-qualified-row policy. The prepared graph launcher now additionally serializes and checks the provisional-family dictionary. Native counts/old identities and dated CM02 remain unchanged; full objective active.
+
+
+## 2026-10-23T21:08:05.247893+00:00 UTC / 2026-10-24T05:08:05.247893+08:00 UTC+8: full evidence coverage and provisional routing complete
+
+Joint coverage completed21:02:02 UTC, actual exit0 at21:02:03 UTC, output SHA19ba9224dba23ca7958869d6a22abeec5776757850e725cd9f3eec53f6eb2e46. Full provisional routing completed21:03:40 UTC, actual exit0 at21:03:41 UTC; six counterexamples, index SHA6df4e3e1955dfb59cfc7f604d8d64bc9b59c1f1c2fdfc9bf105d5b5899d8872e, wall92.09seconds, peak RSS2,819,837,952bytes. All selected source records retained, no final identity or model/downstream eligibility assigned. Source scientific summaries and interpretation remain private.
+
+Native fit-pool preparation launched21:05:06 UTC after all predecessor exits, with four actual source counterexamples passed and all source-specific axes/features processing. It is running, not accepted as completed. Cross-lineage cue counts are not doublet diagnoses: source-local unresolved pools remain in discovery. After graph completion, inspect shared/nonexclusive lineage programs, native expression strength, author/reference context and supplemental lineages before accepting identities; no new marker threshold or final taxonomy introduced here.
+
+
+## 2026-10-23T21:16:26.409734+00:00 UTC / 2026-10-24T05:16:26.409734+08:00 UTC+8: full native source-local graphs actually launched
+
+All-source fit-pool/native feature input preparation completed21:12:11 UTC and supervisor actual exit0 at21:12:13 UTC. Four actual source counterexamples passed; index SHA1b9ec651867934135e11353c9e6e6050930130d60ad02d6dde43a0a15ef1a081, wall422.98seconds, peak RSS3,966,455,808bytes. Reviewed the complete source-level fit denominators, nonempty feature axes and largest branch RAM bound. Primary-exclusion positives add no rows beyond carried doublet positives in this actual archive. Missing QC flags remain unassessed rather than assessed negative; fit candidates do not certify comprehensive QC. Original native archive exclusions and old labels remain.
+
+The full-source graph stage actually launched at 2026-10-23T21:14:43.027011+00:00 UTC after fresh storage/RAM and predecessor gates. Eight source counterexamples passed without skips; exact supervisor and child were alive at 2026-10-23T21:15:27.838592+00:00. Native branch fitting has begun; no full production completion is claimed. Frozen launcher SHA c6b96df3d7123ce95ea696ea600ff2eccd826a5931281f26ae852f7458449b4d. Four threads, all qualified source-by-provisional-family rows, native measured feature selection, bounded sparse per-source RAM cache, original graph engine, and8GiB output cap with2GiB other headroom. No counts copied.
+
+Next: follow the same handle; independently audit actual source/model axes, native normalization/PCA/group outputs and full-source denominators; then native own-group expression/marker, author/reference correspondence, unresolved shared-program review and cross-source identity coordination. Full workflow/crosswalk/qualified views/downstream remain. Source-level biological results and individual/model arrays stay private. Public push old rejection unchanged; local milestone commit follows validation.
+
+
+A read-only post-launch binding check at 2026-10-23T21:17:12.364052+00:00 UTC confirmed every deployed script against the supervisor request, all declared input bindings, and both upstream indexes against their producer terminals. Observed configuration SHA 3376143b434b24b268a7d98c8eb9e735a1bbff672edb82d117858d7a43e9b7ec; supervisor request SHA 1283d18262f0c52dbc26da50c65eaf342e301bb07bd2bb0ec9754e11d6731b41. This is explicitly an after-launch observation; no running configuration or output was changed. One local polling command used a mistyped script directory and failed before SSH; rerun at the known correct path succeeded and the source job was unaffected. Latest21:17:32 UTC observation shows five source graph outputs completed with exact handles live; these outputs still await independent graph/native annotation review.
+
+
+At 2026-10-23T21:18:49.743936+00:00 UTC, owned AST/JSON/private-path/whitespace checks and repository validation passed: actual exit0, zero errors, one pre-existing unrelated warning; validation SHA ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e. Ordinary local milestone commit follows. Full source graph generation remains live on the same handle, full objective active; public push previous rejection remains pending without retry.

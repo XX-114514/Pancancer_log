@@ -1,0 +1,22 @@
+{
+  "schema": "technical_full_native_reference_audit_v1",
+  "observed_UTC": "2026-10-23T21:02:23.567065+00:00",
+  "status": "ALL_SOURCE_AXES_SCOPES_AND_STRATIFIED_NATIVE_OFFICIAL_REFERENCE_REPLAY_ACCEPTED",
+  "full_archive_audit": true,
+  "n_direct_native_rows": 4651,
+  "n_official_reference_predictions": 5764,
+  "max_reference_probability_error": 1.3666713394311358e-07,
+  "all_native_counts_and_predictions_recomputed": false,
+  "independent_biological_validation": false,
+  "new_authoritative_labels": false,
+  "completed_UTC": "2026-10-23T21:01:07.485925+00:00",
+  "output_sha256": "4d6db76dd7f71bc07a796e53efe75b2d2c29cdcb3087626f57f63356fdaced87",
+  "producer_terminal_sha256": "3654404f79e93119682c1065fa3b01d10a08c858a4f291cb71df0221cf790bc0",
+  "wall_seconds": 1958.0270444178022,
+  "peak_RSS_bytes_Linux": 4145360896,
+  "supervisor_actual_exit_code": 0,
+  "supervisor_completed_UTC": "2026-10-23T21:01:09.153967+00:00",
+  "scientific_source_profiles": "private",
+  "full_annotation_complete": false,
+  "cloud_sync": "pending_prior_rejection_no_retry"
+}
