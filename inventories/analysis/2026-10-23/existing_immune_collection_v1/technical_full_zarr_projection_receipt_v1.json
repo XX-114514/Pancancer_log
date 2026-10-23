@@ -1,0 +1,28 @@
+{
+  "schema": "full_existing_zarr_projection_technical_receipt_v1",
+  "observed_utc": "2026-10-23T09:49:14.904494+00:00",
+  "observed_utc_plus_8": "2026-10-23T17:49:14.904494+08:00",
+  "scope": "Existing accepted-scope source metadata and frozen major counts; no new expression download",
+  "server_count_and_scope_contract_actual_exit_code": 0,
+  "context_and_immune_totals_independently_reconciled": true,
+  "nonempty_expression_units_recounted": true,
+  "dataset_identifier_overlap_checked": true,
+  "cross_study_alias_dedup_closed": false,
+  "old_cell_identity_or_CM_changed": false,
+  "large_matrix_write_started": false,
+  "reserve_gate_preserved": true,
+  "scientific_counts_or_unit_records_public": false,
+  "private_artifact_sha256": {
+    "projected_zarr_scope_v1.json": "d9fa2bd718e1fb2aa2a18553f51cc9199f1da1adeb39c86d708a942b333f6a14",
+    "projected_zarr_count_validation_v1.json": "cf9605f610cdfd7e2b2a68deb5fcf829b4a6c9a335663eca447f05e2ded331d2",
+    "full_existing_zarr_first_count_v1.json": "0c32a4b0a1b2d9be1f64f7cf00548fe1c3ddc29669065181599dd8887bc285c8"
+  },
+  "public_sync": "Prior rejection preserved, not retried",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "diff_whitespace_check": "passed",
+    "public_diff_manually_reviewed": true
+  }
+}
