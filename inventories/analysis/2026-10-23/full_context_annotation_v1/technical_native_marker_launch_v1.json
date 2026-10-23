@@ -1,0 +1,22 @@
+{
+  "schema": "full_native_marker_evidence_launch_technical_v1",
+  "observed_UTC": "2026-10-23T11:51:00.455728+00:00",
+  "actual_launch_UTC": "2026-10-23T11:45:27.512796+00:00",
+  "stage": "full_native_marker_evidence_not_annotation",
+  "supervisor_and_child_exact_identities_live": true,
+  "numerical_tests_passed": 3,
+  "actual_numerical_test_exit_code": 0,
+  "original_matrix_copied_or_downloaded": false,
+  "script_SHA256": {
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/full_context_atlas_v1.py": "c8bd31b8ce400653a4db3de0d530018076fe70643e593fda9a106a4554d7402f",
+    "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+    "scripts/run_native_coarse_evidence_v1.py": "a1982fe3cd4f64e088dc74724ea0d551ed84a6bed4bcf5ce4f1187ea3e0efa7b",
+    "scripts/supervise_native_evidence_v1.py": "49e2adcb8c42ca402e511f160a939d59caf70d6806e62dea7247e3903d9e5e48",
+    "tests/test_native_panel_aggregate_v1.py": "5a25f9254d78418b816076ff8ad21ecc6174e7f48150e8cf51ee83de1b7e14a9"
+  },
+  "new_identity_state_or_A_B_C_fitted": false,
+  "result_acceptance": "pending",
+  "private_launch_SHA256": "1110f77e957c7e22a36f264b98d9a020327daac967ed7eb20c05c42d9e0d2b39",
+  "private_poll_SHA256": "5f335753667c3e8de08bfe4261b8808b11d29aee31c2cc86ffc88c8c944cdffe"
+}

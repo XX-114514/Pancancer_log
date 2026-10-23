@@ -1891,3 +1891,17 @@ Git 状态：
 ### 2026-10-23 现有代理服务小范围恢复
 
 打开现有Clash应用后，源当前既有代理的完整范围/原SHA及实际socket资格通过，未修改网络设置或端口；大文件仍慢，原v2继续同一句柄、完整输入/效果待。详[run](runs/20261023_CM02_existing_checkpoint_measurement_bridge_v1.md)，无永久Codex/传输修复声明。
+
+
+## 2026-10-23 本对话全细胞图谱：stage1真实审计运行中
+
+新精确执行句柄live，六项真实环境数值反例通过、来源检查点推进；完整来源终态/独立审计、新身份及A/B/C待。原计数、旧CM和并行外部TDLN工作保持。
+
+见[实施记录](runs/20261023_full_context_hierarchical_annotation_v1.md)。观察UTC 2026-10-23T11:33:12.503288+00:00，公共同步待。
+
+
+## 2026-10-23T11:51:00.455728+00:00 UTC: full-context implementation checkpoint
+
+Stage1 structure and inherited labels independently accepted; native-marker supervisor/child live after actual numerical tests. Registry joined, alias/identity/A-B-C/full-scale/archive acceptance still pending. Original inputs and parallel tasks preserved; public push pending.
+
+[Implementation record](runs/20261023_full_context_hierarchical_annotation_v1.md).

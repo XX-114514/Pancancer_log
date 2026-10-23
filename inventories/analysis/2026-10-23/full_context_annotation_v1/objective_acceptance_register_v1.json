@@ -1,0 +1,53 @@
+{
+  "schema": "full_context_objective_acceptance_register_v1",
+  "objective_not_reduced": true,
+  "updated_UTC": "2026-10-23T11:51:00.455728+00:00",
+  "requirements": [
+    {
+      "id": "R1_native_scope",
+      "requirement": "all source rows/features/count origin and carried-label axes audited without copying expression",
+      "status": "accepted_structure_and_inherited_label_counts_only",
+      "evidence": "technical_stage1_acceptance_v1.json",
+      "completion_requires": "all partitions reconciled; independent audit and process terminal"
+    },
+    {
+      "id": "R2_source_design_alias",
+      "requirement": "study/library aliases, capture/material/phase/assay and patient/clinical roles qualified",
+      "status": "existing_registry_joined_alias_and_clinical_review_pending",
+      "completion_requires": "explicit accepted/held/unknown source table and duplicate review",
+      "evidence": "technical_source_design_bridge_v1.json"
+    },
+    {
+      "id": "R3_preannotation",
+      "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
+      "status": "full_native_marker_evidence_running_identity_review_pending",
+      "evidence": "technical_native_marker_launch_v1.json"
+    },
+    {
+      "id": "R4_ABC",
+      "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
+      "status": "pending"
+    },
+    {
+      "id": "R5_resolution",
+      "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
+      "status": "pending"
+    },
+    {
+      "id": "R6_full_scale",
+      "requirement": "selected lineage-specific workflow and full mapping, model/exposure flags, confidence and version crosswalk",
+      "status": "pending"
+    },
+    {
+      "id": "R7_storage",
+      "requirement": "quota/peak/reserve qualification, appropriate archive delivery and native count/mask/ID readback audit",
+      "status": "not_qualified_for_large_write",
+      "completion_requires": "refreshed gate and verified output; an index is not standalone Zarr"
+    },
+    {
+      "id": "R8_downstream",
+      "requirement": "qualified analysis views and new composition/communication mapping with old dated CM references preserved",
+      "status": "pending"
+    }
+  ]
+}

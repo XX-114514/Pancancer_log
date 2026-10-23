@@ -1,0 +1,22 @@
+{
+  "schema": "full_context_stage1_technical_launch_v1",
+  "observed_UTC": "2026-10-23T11:33:12.503288+00:00",
+  "actual_launch_UTC": "2026-10-23T11:30:33.896217+00:00",
+  "stage": "native_scope_index_and_carried_labels_not_new_annotation",
+  "source_launch_actual_exit": 0,
+  "scientific_child_same_start_identity_live": true,
+  "numerical_counterexample_tests_passed": 6,
+  "source_fixture_actual_exit": 0,
+  "script_SHA256": {
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/full_context_atlas_v1.py": "c8bd31b8ce400653a4db3de0d530018076fe70643e593fda9a106a4554d7402f",
+    "scripts/build_full_context_collection_v1.py": "1d006aedb93c40f280828430c6ab3eaeaa6a56bd1b01ffb9b983aa34c0ce1a3c",
+    "tests/test_full_context_atlas_v1.py": "d3de5cb3f6d83fea82f257e89d18050f9ded052ba727fa47ffcdbf02ed554bce"
+  },
+  "original_inputs_read_only": true,
+  "large_matrix_copied_or_downloaded": false,
+  "new_biological_labels_or_A_B_C_fitted": false,
+  "public_payload_excludes_source_scientific_values_paths_and_individual_rows": true,
+  "private_preflight_SHA256": "aabfd773ec1ba058fc6a3cd2f9c4df42aa3e06b0a193a3b971e49e30bc1f9b8d",
+  "private_poll_SHA256": "8ce1fb4f8ebafe9c94344025d43a62d0e23afccc248582468e31f2e02efd48f2"
+}

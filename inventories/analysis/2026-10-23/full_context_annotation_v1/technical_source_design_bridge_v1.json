@@ -1,0 +1,9 @@
+{
+  "observed_UTC": "2026-10-23T11:51:00.455728+00:00",
+  "all_frozen_source_keys_matched_to_existing_registry": true,
+  "exact_native_metadata_column_names_checked": true,
+  "actual_exit_code": 0,
+  "alias_and_clinical_independence_not_accepted": true,
+  "private_bridge_SHA256": "08a6af69c697d9e861dbb8713ec7f94d3f5be53d72a40ccf18e1f589dadb5f4a",
+  "private_source_registry_SHA256": "72b24f045e05e62d85f1c6a8e8ad9b03c9eb38f07c82a851522dbbd5354771d6"
+}

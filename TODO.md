@@ -1569,3 +1569,20 @@ PREP-01/03恢复：用户允许临时卷并要求最终Zarr。ZARR-NEW-01：新�
 
 
 - [ ] 下一按状态测量能力及患者/癌种/治疗阶段/终点资格选择来源；保留原作者组织假设和原代理临床线索分开，不在低捕获来源叠新P或把局部聚合当同细胞状态。见[run](runs/20261022_CM02_author_type_RNA_clinical_bridge_v1.md)。
+
+
+## 2026-10-23 全细胞图谱当前执行项
+
+- [ ] 核同一stage1句柄完整终态并独立审计。
+- [ ] 完成源设计/别名资格与原生多marker粗身份。
+- [ ] 冻结并执行T/NK优先的A/B/C比较、状态/稀有群/成本评价。
+- [ ] 按完整八项验收扩展、交付及连接下游；大写入门槛先核。
+
+见[实施记录](runs/20261023_full_context_hierarchical_annotation_v1.md)。观察UTC 2026-10-23T11:33:12.503288+00:00，公共同步待。
+
+
+## 2026-10-23T11:51:00.455728+00:00 UTC: full-context implementation checkpoint
+
+Stage1 structure and inherited labels independently accepted; native-marker supervisor/child live after actual numerical tests. Registry joined, alias/identity/A-B-C/full-scale/archive acceptance still pending. Original inputs and parallel tasks preserved; public push pending.
+
+[Implementation record](runs/20261023_full_context_hierarchical_annotation_v1.md).

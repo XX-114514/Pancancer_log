@@ -144,3 +144,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [已有数据优先的免疫分区集合](20261023_existing_immune_collection_v1.md)：源实际集合读取与独立审计完成，旧原生参考另挂接；来源表/容量及下载计划私有。
+
+
+[全细胞分层注释与整合比较实施](20261023_full_context_hierarchical_annotation_v1.md)：原生全范围索引审计实际运行，新身份/A-B-C与物化待验收。

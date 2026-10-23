@@ -1,0 +1,17 @@
+{
+  "schema": "full_context_stage1_independent_acceptance_technical_v1",
+  "observed_UTC": "2026-10-23T11:51:00.455728+00:00",
+  "status": "STRUCTURE_AND_CARRIED_LABEL_COUNTS_ACCEPTED_NOT_NEW_IDENTITY",
+  "independent_auditor_actual_exit_code": 0,
+  "original_process_absent": true,
+  "original_OS_exit_status_captured": false,
+  "original_terminal_exit_claim_not_used_as_OS_exit_proof": true,
+  "all_original_legacy_major_count_tables_match": true,
+  "all_source_native_CSR_panel_and_denominator_replays_pass": true,
+  "frozen_manifest_and_script_SHA_chain_pass": true,
+  "no_expression_arrays_written": true,
+  "source_alias_and_clinical_independence_not_accepted": true,
+  "private_acceptance_SHA256": "66a484f924ffa672176f6fcd0955bb3cfff37b8d5fa298670d4901fe7afd36d4",
+  "private_source_terminal_SHA256": "55d30d96500b1acaf497a76ad8d9f16abf6012b3fd204c0628f3a180376ef8fc",
+  "private_source_coverage_SHA256": "4cadc6c30575cd183f9ac4b1db2640673103416e4b654335a75ecd07185cc6a5"
+}

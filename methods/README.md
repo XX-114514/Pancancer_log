@@ -175,3 +175,6 @@
 
 
 [已有表达的分区集合与低存储读取](backed-existing-atlas-collection-v1.md)：显式来源选择、原生计数/缺失掩码及数值反例；不复制全量矩阵。
+
+
+[全细胞方案实施记录](../runs/20261023_full_context_hierarchical_annotation_v1.md)：沿用完整方案和八项验收，不以读取器/合成通过替代最终完成。
