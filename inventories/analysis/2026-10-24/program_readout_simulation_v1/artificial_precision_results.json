@@ -1,0 +1,1715 @@
+{
+  "kind": "ARTIFICIAL_DESIGN_SIMULATION_NOT_REAL_DATA",
+  "started_UTC": "2026-10-23T14:03:32.375508+00:00",
+  "code_sha256": "1f068a2c2079595daef6f2446383b563756ae86fa313a8e4d17c1c3aec5116a6",
+  "numpy_version": "2.4.1",
+  "seed": 2026102402,
+  "permutations": 499,
+  "alpha": 0.05,
+  "quantiles": [
+    0.25,
+    0.5,
+    0.75,
+    0.95,
+    0.99
+  ],
+  "checks": {
+    "exhaustive_permutations": 720,
+    "max_statistic_error": 8.326672684688674e-16,
+    "block_preservation": true,
+    "swap_inverse_parity": true,
+    "constant_and_missing_rejected": true,
+    "tied_scores_supported": true
+  },
+  "caveats": [
+    "Synthetic scores are not sparse RNA or learned programmes.",
+    "Fixed 32 independent patients, two equal sources; not a general power analysis.",
+    "Per-test rejection rates, not BH family power; no method selected by real p-values.",
+    "Source shifts are real marginal associations but null within source.",
+    "Blocked absolute-statistic tests condition on source; no causal conclusion.",
+    "No repeated measures, unequal counts, spatial autocorrelation or missingness modeled."
+  ],
+  "results": [
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 132,
+      "repetitions": 3000,
+      "rejection_fraction": 0.044,
+      "monte_carlo_Wilson95": [
+        0.037225603621850144,
+        0.05194070641564714
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 142,
+      "repetitions": 3000,
+      "rejection_fraction": 0.04733333333333333,
+      "monte_carlo_Wilson95": [
+        0.04029631456999429,
+        0.055528136476000814
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 139,
+      "repetitions": 3000,
+      "rejection_fraction": 0.04633333333333333,
+      "monte_carlo_Wilson95": [
+        0.03937397396973145,
+        0.054453034773714305
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 161,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05366666666666667,
+      "monte_carlo_Wilson95": [
+        0.04615821902958661,
+        0.06231669993255437
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 138,
+      "repetitions": 3000,
+      "rejection_fraction": 0.046,
+      "monte_carlo_Wilson95": [
+        0.03906673741365379,
+        0.05409445722894219
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 129,
+      "repetitions": 3000,
+      "rejection_fraction": 0.043,
+      "monte_carlo_Wilson95": [
+        0.0363065587076942,
+        0.05086230902725372
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 129,
+      "repetitions": 3000,
+      "rejection_fraction": 0.043,
+      "monte_carlo_Wilson95": [
+        0.0363065587076942,
+        0.05086230902725372
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 137,
+      "repetitions": 3000,
+      "rejection_fraction": 0.04566666666666667,
+      "monte_carlo_Wilson95": [
+        0.03875960781167959,
+        0.0537357727300666
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 144,
+      "repetitions": 3000,
+      "rejection_fraction": 0.048,
+      "monte_carlo_Wilson95": [
+        0.04091172361423537,
+        0.05624435563345931
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 123,
+      "repetitions": 3000,
+      "rejection_fraction": 0.041,
+      "monte_carlo_Wilson95": [
+        0.03447168327024165,
+        0.048702299859607584
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 172,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05733333333333333,
+      "monte_carlo_Wilson95": [
+        0.049566525431781604,
+        0.06623234863970698
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 162,
+      "repetitions": 3000,
+      "rejection_fraction": 0.054,
+      "monte_carlo_Wilson95": [
+        0.046467649316585216,
+        0.06267308374640554
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 181,
+      "repetitions": 3000,
+      "rejection_fraction": 0.060333333333333336,
+      "monte_carlo_Wilson95": [
+        0.05236224245603363,
+        0.069428958523103
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 158,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05266666666666667,
+      "monte_carlo_Wilson95": [
+        0.04523044741686434,
+        0.06124702924272729
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 168,
+      "repetitions": 3000,
+      "rejection_fraction": 0.056,
+      "monte_carlo_Wilson95": [
+        0.04832599678282378,
+        0.06480962088526569
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 173,
+      "repetitions": 3000,
+      "rejection_fraction": 0.057666666666666665,
+      "monte_carlo_Wilson95": [
+        0.04987685524861582,
+        0.06658783292372254
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 165,
+      "repetitions": 3000,
+      "rejection_fraction": 0.055,
+      "monte_carlo_Wilson95": [
+        0.047396448984681316,
+        0.06374172638085879
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 182,
+      "repetitions": 3000,
+      "rejection_fraction": 0.06066666666666667,
+      "monte_carlo_Wilson95": [
+        0.052673250511886385,
+        0.06978376456810004
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 158,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05266666666666667,
+      "monte_carlo_Wilson95": [
+        0.04523044741686434,
+        0.06124702924272729
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 185,
+      "repetitions": 3000,
+      "rejection_fraction": 0.06166666666666667,
+      "monte_carlo_Wilson95": [
+        0.05360670722610212,
+        0.07084775015643364
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 150,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05,
+      "monte_carlo_Wilson95": [
+        0.04276033676455916,
+        0.05839062708823421
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 150,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05,
+      "monte_carlo_Wilson95": [
+        0.04276033676455916,
+        0.05839062708823421
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 152,
+      "repetitions": 3000,
+      "rejection_fraction": 0.050666666666666665,
+      "monte_carlo_Wilson95": [
+        0.04337731140028998,
+        0.05910528065420295
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 178,
+      "repetitions": 3000,
+      "rejection_fraction": 0.059333333333333335,
+      "monte_carlo_Wilson95": [
+        0.05142965866607647,
+        0.06836410001051083
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 156,
+      "repetitions": 3000,
+      "rejection_fraction": 0.052,
+      "monte_carlo_Wilson95": [
+        0.044612373435453025,
+        0.06053347502243903
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 150,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05,
+      "monte_carlo_Wilson95": [
+        0.04276033676455916,
+        0.05839062708823421
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 147,
+      "repetitions": 3000,
+      "rejection_fraction": 0.049,
+      "monte_carlo_Wilson95": [
+        0.041835590014624356,
+        0.05731793153561967
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 155,
+      "repetitions": 3000,
+      "rejection_fraction": 0.051666666666666666,
+      "monte_carlo_Wilson95": [
+        0.04430347095281026,
+        0.060176563404232025
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 179,
+      "repetitions": 3000,
+      "rejection_fraction": 0.059666666666666666,
+      "monte_carlo_Wilson95": [
+        0.0517404459622769,
+        0.06871912681516018
+      ]
+    },
+    {
+      "scenario": "within_source_null",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 156,
+      "repetitions": 3000,
+      "rejection_fraction": 0.052,
+      "monte_carlo_Wilson95": [
+        0.044612373435453025,
+        0.06053347502243903
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 171,
+      "repetitions": 3000,
+      "rejection_fraction": 0.057,
+      "monte_carlo_Wilson95": [
+        0.04925627402901687,
+        0.06587678594162194
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 155,
+      "repetitions": 3000,
+      "rejection_fraction": 0.051666666666666666,
+      "monte_carlo_Wilson95": [
+        0.04430347095281026,
+        0.060176563404232025
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 159,
+      "repetitions": 3000,
+      "rejection_fraction": 0.053,
+      "monte_carlo_Wilson95": [
+        0.04553961731667641,
+        0.061603673443764995
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 137,
+      "repetitions": 3000,
+      "rejection_fraction": 0.04566666666666667,
+      "monte_carlo_Wilson95": [
+        0.03875960781167959,
+        0.0537357727300666
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 169,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05633333333333333,
+      "monte_carlo_Wilson95": [
+        0.048636009047360436,
+        0.0651654227215788
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 133,
+      "repetitions": 3000,
+      "rejection_fraction": 0.044333333333333336,
+      "monte_carlo_Wilson95": [
+        0.03753218141738335,
+        0.05229994272096372
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 133,
+      "repetitions": 3000,
+      "rejection_fraction": 0.044333333333333336,
+      "monte_carlo_Wilson95": [
+        0.03753218141738335,
+        0.05229994272096372
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 137,
+      "repetitions": 3000,
+      "rejection_fraction": 0.04566666666666667,
+      "monte_carlo_Wilson95": [
+        0.03875960781167959,
+        0.0537357727300666
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 128,
+      "repetitions": 3000,
+      "rejection_fraction": 0.042666666666666665,
+      "monte_carlo_Wilson95": [
+        0.03600044409660137,
+        0.05050260953749677
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 133,
+      "repetitions": 3000,
+      "rejection_fraction": 0.044333333333333336,
+      "monte_carlo_Wilson95": [
+        0.03753218141738335,
+        0.05229994272096372
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 158,
+      "repetitions": 3000,
+      "rejection_fraction": 0.05266666666666667,
+      "monte_carlo_Wilson95": [
+        0.04523044741686434,
+        0.06124702924272729
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 156,
+      "repetitions": 3000,
+      "rejection_fraction": 0.052,
+      "monte_carlo_Wilson95": [
+        0.044612373435453025,
+        0.06053347502243903
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 152,
+      "repetitions": 3000,
+      "rejection_fraction": 0.050666666666666665,
+      "monte_carlo_Wilson95": [
+        0.04337731140028998,
+        0.05910528065420295
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 138,
+      "repetitions": 3000,
+      "rejection_fraction": 0.046,
+      "monte_carlo_Wilson95": [
+        0.03906673741365379,
+        0.05409445722894219
+      ]
+    },
+    {
+      "scenario": "source_shift_only",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 155,
+      "repetitions": 3000,
+      "rejection_fraction": 0.051666666666666666,
+      "monte_carlo_Wilson95": [
+        0.04430347095281026,
+        0.060176563404232025
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 2676,
+      "repetitions": 3000,
+      "rejection_fraction": 0.892,
+      "monte_carlo_Wilson95": [
+        0.8803878640930226,
+        0.902609518506322
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 2617,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8723333333333333,
+      "monte_carlo_Wilson95": [
+        0.85991358251519,
+        0.8838007681340172
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 2476,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8253333333333334,
+      "monte_carlo_Wilson95": [
+        0.8113331118216258,
+        0.8385014506077622
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 2189,
+      "repetitions": 3000,
+      "rejection_fraction": 0.7296666666666667,
+      "monte_carlo_Wilson95": [
+        0.7134876407255384,
+        0.7452582747599619
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2652,
+      "repetitions": 3000,
+      "rejection_fraction": 0.884,
+      "monte_carlo_Wilson95": [
+        0.8720468358394053,
+        0.8949710083395443
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 2676,
+      "repetitions": 3000,
+      "rejection_fraction": 0.892,
+      "monte_carlo_Wilson95": [
+        0.8803878640930226,
+        0.902609518506322
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 2623,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8743333333333333,
+      "monte_carlo_Wilson95": [
+        0.8619911398889296,
+        0.8857180953653764
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 2460,
+      "repetitions": 3000,
+      "rejection_fraction": 0.82,
+      "monte_carlo_Wilson95": [
+        0.8058457495881891,
+        0.8333357872276023
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 2174,
+      "repetitions": 3000,
+      "rejection_fraction": 0.7246666666666667,
+      "monte_carlo_Wilson95": [
+        0.7084029725607413,
+        0.7403557314120124
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2647,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8823333333333333,
+      "monte_carlo_Wilson95": [
+        0.870311360071726,
+        0.8933774136029746
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 2743,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9143333333333333,
+      "monte_carlo_Wilson95": [
+        0.9037809748298287,
+        0.9238259525264512
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 2745,
+      "repetitions": 3000,
+      "rejection_fraction": 0.915,
+      "monte_carlo_Wilson95": [
+        0.9044820796890298,
+        0.9244564758689497
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 2692,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8973333333333333,
+      "monte_carlo_Wilson95": [
+        0.8859590319575867,
+        0.9076913762553542
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 2526,
+      "repetitions": 3000,
+      "rejection_fraction": 0.842,
+      "monte_carlo_Wilson95": [
+        0.8285118020279054,
+        0.8546134654439717
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2735,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9116666666666666,
+      "monte_carlo_Wilson95": [
+        0.9009783394438072,
+        0.9213020751056743
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 2744,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9146666666666666,
+      "monte_carlo_Wilson95": [
+        0.9041315046068269,
+        0.9241412368503027
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 2732,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9106666666666666,
+      "monte_carlo_Wilson95": [
+        0.8999280707857793,
+        0.920354901461153
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 2688,
+      "repetitions": 3000,
+      "rejection_fraction": 0.896,
+      "monte_carlo_Wilson95": [
+        0.8845654148067178,
+        0.9064217370028241
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 2537,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8456666666666667,
+      "monte_carlo_Wilson95": [
+        0.8322977483314793,
+        0.8581514742497454
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2746,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9153333333333333,
+      "monte_carlo_Wilson95": [
+        0.9048327003173081,
+        0.9247716693415212
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 2740,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9133333333333333,
+      "monte_carlo_Wilson95": [
+        0.9027296549557633,
+        0.9228798300979673
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 2738,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9126666666666666,
+      "monte_carlo_Wilson95": [
+        0.9020289972521606,
+        0.9222488595998702
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 2717,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9056666666666666,
+      "monte_carlo_Wilson95": [
+        0.8946823650097088,
+        0.9156133957244766
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 2696,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8986666666666666,
+      "monte_carlo_Wilson95": [
+        0.8873532149440364,
+        0.9089604496723036
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2736,
+      "repetitions": 3000,
+      "rejection_fraction": 0.912,
+      "monte_carlo_Wilson95": [
+        0.9013285151800982,
+        0.9216177134702334
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 2731,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9103333333333333,
+      "monte_carlo_Wilson95": [
+        0.8995780666929761,
+        0.9200390914531064
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 2734,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9113333333333333,
+      "monte_carlo_Wilson95": [
+        0.9006282069450771,
+        0.9209863935035547
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 2718,
+      "repetitions": 3000,
+      "rejection_fraction": 0.906,
+      "monte_carlo_Wilson95": [
+        0.8950317944253932,
+        0.9159297804096422
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 2685,
+      "repetitions": 3000,
+      "rejection_fraction": 0.895,
+      "monte_carlo_Wilson95": [
+        0.8835205675018077,
+        0.9054691420051847
+      ]
+    },
+    {
+      "scenario": "whole_population_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2735,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9116666666666666,
+      "monte_carlo_Wilson95": [
+        0.9009783394438072,
+        0.9213020751056743
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 209,
+      "repetitions": 3000,
+      "rejection_fraction": 0.06966666666666667,
+      "monte_carlo_Wilson95": [
+        0.06109618811882249,
+        0.07933780768410804
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 170,
+      "repetitions": 3000,
+      "rejection_fraction": 0.056666666666666664,
+      "monte_carlo_Wilson95": [
+        0.04894610168340463,
+        0.06552114418638438
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 845,
+      "repetitions": 3000,
+      "rejection_fraction": 0.2816666666666667,
+      "monte_carlo_Wilson95": [
+        0.2658577455273071,
+        0.29803401841608523
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 2752,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9173333333333333,
+      "monte_carlo_Wilson95": [
+        0.9069373943420365,
+        0.9266618599218914
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 1088,
+      "repetitions": 3000,
+      "rejection_fraction": 0.3626666666666667,
+      "monte_carlo_Wilson95": [
+        0.34564859372162926,
+        0.3800359967282603
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 219,
+      "repetitions": 3000,
+      "rejection_fraction": 0.073,
+      "monte_carlo_Wilson95": [
+        0.0642273151202552,
+        0.08286482169117315
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 165,
+      "repetitions": 3000,
+      "rejection_fraction": 0.055,
+      "monte_carlo_Wilson95": [
+        0.047396448984681316,
+        0.06374172638085879
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 800,
+      "repetitions": 3000,
+      "rejection_fraction": 0.26666666666666666,
+      "monte_carlo_Wilson95": [
+        0.25114814293061083,
+        0.2827819864745412
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 2740,
+      "repetitions": 3000,
+      "rejection_fraction": 0.9133333333333333,
+      "monte_carlo_Wilson95": [
+        0.9027296549557633,
+        0.9228798300979673
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 50,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 1064,
+      "repetitions": 3000,
+      "rejection_fraction": 0.3546666666666667,
+      "monte_carlo_Wilson95": [
+        0.33774302086582414,
+        0.3719620311636706
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 198,
+      "repetitions": 3000,
+      "rejection_fraction": 0.066,
+      "monte_carlo_Wilson95": [
+        0.057658875203565316,
+        0.07545116549001761
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 145,
+      "repetitions": 3000,
+      "rejection_fraction": 0.04833333333333333,
+      "monte_carlo_Wilson95": [
+        0.041219579683999655,
+        0.056602313664544796
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 1025,
+      "repetitions": 3000,
+      "rejection_fraction": 0.3416666666666667,
+      "monte_carlo_Wilson95": [
+        0.3249076312405698,
+        0.3588306708557834
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2425,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8083333333333333,
+      "monte_carlo_Wilson95": [
+        0.793857536451633,
+        0.8220205068344161
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 190,
+      "repetitions": 3000,
+      "rejection_fraction": 0.06333333333333334,
+      "monte_carlo_Wilson95": [
+        0.055163878001273065,
+        0.07261964988551162
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 141,
+      "repetitions": 3000,
+      "rejection_fraction": 0.047,
+      "monte_carlo_Wilson95": [
+        0.03998876360822058,
+        0.055169873336924746
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 984,
+      "repetitions": 3000,
+      "rejection_fraction": 0.328,
+      "monte_carlo_Wilson95": [
+        0.31142927694665384,
+        0.34501064701485834
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 200,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2423,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8076666666666666,
+      "monte_carlo_Wilson95": [
+        0.7931731105881779,
+        0.8213733044961715
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "mean",
+      "rejections": 200,
+      "repetitions": 3000,
+      "rejection_fraction": 0.06666666666666667,
+      "monte_carlo_Wilson95": [
+        0.058283278209758996,
+        0.0761583906855235
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q75",
+      "rejections": 147,
+      "repetitions": 3000,
+      "rejection_fraction": 0.049,
+      "monte_carlo_Wilson95": [
+        0.041835590014624356,
+        0.05731793153561967
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q95",
+      "rejections": 1475,
+      "repetitions": 3000,
+      "rejection_fraction": 0.49166666666666664,
+      "monte_carlo_Wilson95": [
+        0.4737993069040172,
+        0.5095553405747381
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "q99",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "unrestricted_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2727,
+      "repetitions": 3000,
+      "rejection_fraction": 0.909,
+      "monte_carlo_Wilson95": [
+        0.898178471949616,
+        0.9187754297930675
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "mean",
+      "rejections": 197,
+      "repetitions": 3000,
+      "rejection_fraction": 0.06566666666666666,
+      "monte_carlo_Wilson95": [
+        0.05734677014110726,
+        0.07509745645162587
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q75",
+      "rejections": 140,
+      "repetitions": 3000,
+      "rejection_fraction": 0.04666666666666667,
+      "monte_carlo_Wilson95": [
+        0.03968131639113648,
+        0.05481150645315906
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q95",
+      "rejections": 1444,
+      "repetitions": 3000,
+      "rejection_fraction": 0.48133333333333334,
+      "monte_carlo_Wilson95": [
+        0.46348915706056826,
+        0.49922525329184386
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "q99",
+      "rejections": 3000,
+      "repetitions": 3000,
+      "rejection_fraction": 1.0,
+      "monte_carlo_Wilson95": [
+        0.9987211512746742,
+        1.0000000000000002
+      ]
+    },
+    {
+      "scenario": "rare_5percent_signal",
+      "patients": 32,
+      "cells_per_type_patient": 1000,
+      "permutation_scheme": "within_source_patient",
+      "readout": "five_quantile_fisher",
+      "rejections": 2699,
+      "repetitions": 3000,
+      "rejection_fraction": 0.8996666666666666,
+      "monte_carlo_Wilson95": [
+        0.8883992294487808,
+        0.9099118774701085
+      ]
+    }
+  ],
+  "completed_UTC": "2026-10-23T14:04:28.172210+00:00"
+}

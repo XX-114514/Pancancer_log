@@ -1,3 +1,9 @@
+## 当前方法线：程序分布设计已审，真实测量试点待开始
+
+已从源码确认旧DIALOGUE患者读出使用均值，完成Pelka/其他研究设计复核与纯人工分布读出实验；不能据此认定真实稀有状态已经发现。下一先既有字典、患者/类型覆盖和尾部稳定性，再冻结有限新状态网络。见[路线](methods/Pelka-informed-program-distribution-roadmap-20261024.md)、[人工实验](runs/20261024_program_distribution_design_simulation_v1.md)。原结果/闭家族保留；上传、空间和并行atlas状态本节点未刷新，云端待同步。
+
+观察2026-10-23T14:06:58 UTC /2026-10-23T22:06:58 UTC+8 /2026-10-24T01:06:58 Australia/Melbourne。
+
 ## 当前：上传输入路线准备接受，真实空间分析等待完整文件
 
 用户上传仍为增长中的前缀，半小时监控保持；尚无完整双hash或新原生R。新只读已有文件路线及源后台生命周期人工验收已完成，原11R组件/拼接R与analysis完全不变。完整稳定双hash后再启动一次固定空间任务。见[准备run](runs/20261024_CM02_uploaded_fixed_spatial_preparation_v1.md)。
