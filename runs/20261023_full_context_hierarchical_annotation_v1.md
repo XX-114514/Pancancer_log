@@ -440,3 +440,13 @@ Version2 producer and independent auditor both actual exit0. Eight graph conditi
 ### 2026-10-23T19:12:21.619978+00:00 UTC: new-route feature holdout launched
 
 Train-only shared versus lineage feature selection started on frozen source folds, with conditional native-RNA transfer and paired coverage. Actual producer completion and independent audit pending. Four threads, existing data/software, no new authoritative labels. [Contract](../methods/new-route-feature-source-holdout-20261024.md). Full goal active; public sync pending.
+
+
+### 2026-10-23T19:26:20.701518+00:00 UTC: full native evidence started; source holdout audit running
+
+Train-only feature holdout completed actual exit0; independent replay running. Full selected-native-archive evidence v2 passed eleven tests and started, preserving v1 pre-input test-environment failure. Bounded sidecar headroom passed; large-count reserve gate remains unqualified. Final labels/mapping and qualified views still pending. [Evidence](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_native_archive_reference_evidence_v1.json). Full objective active; public sync pending.
+
+
+### 2026-10-23T19:38:37.749631+00:00 UTC: full-context feature coverage and preflight milestone
+
+New-route source holdout and independent replay accepted; measured-feature metadata completed. Expanded source coverage requires a finite common-measurement transfer check, now running after nine actual counterexamples. Full native evidence continues; completed-source independent axes/native/official-reference preflight passed, full-archive acceptance still pending. [Feature bridge](../methods/full-archive-measured-feature-bridge-20261024.md). Full scope active; selected production mapping, identities and qualified views remain. Other branches not refreshed; public sync pending after prior rejection.

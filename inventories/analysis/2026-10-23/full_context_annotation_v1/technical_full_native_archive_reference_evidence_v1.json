@@ -1,0 +1,92 @@
+{
+  "schema": "technical_full_native_archive_reference_evidence_v1",
+  "status": "full_producer_running_completed_source_preflight_independently_accepted",
+  "observed_UTC": "2026-10-23T19:23:37.604192+00:00",
+  "launched_UTC": "2026-10-23T19:22:43.717495+00:00",
+  "script_SHA256": {
+    "scripts/full_archive_reference_evidence_v1.py": "74858a6252ee17ed996825f731de61cf66ad630217d114f8346ad26416c5105e",
+    "scripts/native_archive_collection_v1.py": "eb4d68d792ef3ceb8479f657bc9072bcc3526f61ccc71b11dc7555251718a7e3",
+    "scripts/native_annotation_review_v1.py": "2f80ae4766c21279a4a3375e8339896f5f4d60fd9902596d3375717440438cc6",
+    "scripts/native_lineage_routing_v1.py": "8ddefdc13ee05af47d03552f06e456dc696dc44f1b7d6ff3f9ae7968f9493976",
+    "scripts/review_lineage_anchor_sensitivity_v1.py": "f8239b9aaee4b381077d295ef32679102f590eda578b510901811aa821b6d3d3",
+    "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+    "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+    "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f",
+    "tests/test_native_annotation_review_v1.py": "25d8a5d77254f323eb4365d67b85badb1648b79e4ce2a364e0e9c18dda2bdc51",
+    "tests/test_lineage_anchor_sensitivity_v1.py": "eab75436f8f0cbb2e3c86ba4841319894695db8038f6ae8018a215202977f453",
+    "tests/test_full_archive_reference_scopes_v1.py": "1df6da8e277b36b3e01d0ff4499eac1195860427dba5d74bbf4b93926d1050bc"
+  },
+  "config_sha256": "e78daf5528a08f890211db86ca9309b53bd0d356bc553d60df4facc364a84062",
+  "v1_actual_exit_code": 1,
+  "v1_failure_reason": "frozen_cached_reference_directory_not_in_test_environment_one_required_API_test_skipped_before_native_input_read",
+  "v2_repair": "explicit_existing_model_directory_environment_only_same_scientific_code_and_parameters",
+  "v2_tests": {
+    "tests": [
+      {
+        "test": "test_native_annotation_review_v1.py",
+        "n_tests": 5,
+        "actual_exit_code": 0,
+        "no_skips": true
+      },
+      {
+        "test": "test_lineage_anchor_sensitivity_v1.py",
+        "n_tests": 3,
+        "actual_exit_code": 0,
+        "no_skips": true
+      },
+      {
+        "test": "test_full_archive_reference_scopes_v1.py",
+        "n_tests": 3,
+        "actual_exit_code": 0,
+        "no_skips": true
+      }
+    ],
+    "n_tests": 11,
+    "actual_exit_code": 0
+  },
+  "bounded_output_cap_bytes": 536870912,
+  "bounded_hard_quota_and_physical_headroom_passed": true,
+  "large_counts_reserve_gate_passed": false,
+  "native_counts_not_copied": true,
+  "new_data_downloads": false,
+  "new_authoritative_labels": false,
+  "scope": "all_selected_native_archive_records_including_prior_context_exclusions",
+  "scientific_counts_and_source_summaries": "private_only",
+  "remaining": "full_producer_then_independent_evidence_audit_source_local_groups_organ_reference_expansion_and_mapping",
+  "public_push": "prior_rejection_preserved_no_retry",
+  "latest_observed_UTC": "2026-10-23T19:37:31.753700+00:00",
+  "full_producer_exact_process_live": true,
+  "preflight_audit": {
+    "status": "COMPLETED_SOURCE_PREFLIGHT_REPLAY_ACCEPTED_NOT_FULL_ARCHIVE_ACCEPTANCE",
+    "full_archive_audit": false,
+    "n_direct_native_rows": 154,
+    "n_official_reference_predictions": 274,
+    "max_reference_probability_error": 9.155105640257233e-08,
+    "all_native_counts_and_predictions_recomputed": false,
+    "independent_biological_validation": false,
+    "new_authoritative_labels": false,
+    "completed_UTC": "2026-10-23T19:36:42.852036+00:00",
+    "output_sha256": "37b5f5adfe09f476b2eeb2b52b5b8d2cb23348f509fc86e22db87372c3c104d7",
+    "producer_terminal_sha256": null,
+    "wall_seconds": 85.05052772304043,
+    "peak_RSS_bytes_Linux": 2424958976
+  },
+  "preflight_supervisor_terminal": {
+    "completed_UTC": "2026-10-23T19:36:44.288947+00:00",
+    "actual_child_exit_code": 0,
+    "wall_timeout": false,
+    "science_terminal_exists": true
+  },
+  "full_archive_acceptance": false,
+  "prepared_full_auditor_sha256": "71ae984bbf1e37ec67ce0a9842aaf5fbbb36ed6140caa18c1ba35f93f3a9f6ad",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "preexisting_warning": true,
+    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "owned_AST_JSON_private_path_and_whitespace_check": "passed"
+}

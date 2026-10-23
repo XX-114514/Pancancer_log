@@ -10,7 +10,7 @@ from full_context_atlas_v1 import FullContextAtlas, sha256_file
 from native_panel_aggregate_v1 import gather_csr_rows
 
 
-def load_pilot(pilot_root, manifest, checkpoint=None, block_size=2048):
+def load_pilot(pilot_root, manifest, checkpoint=None, block_size=2048, feature_universe_binding=None):
     pilot = Path(pilot_root)
     spec = json.loads((pilot / 'config/pilot_spec_v1.json').read_text())
     inventory = json.loads((pilot / 'outputs/pilot_input_inventory_v1.json').read_text())
@@ -18,6 +18,9 @@ def load_pilot(pilot_root, manifest, checkpoint=None, block_size=2048):
     reader = FullContextAtlas(manifest)
     genes = plan['common_model_feature_candidates']
     heldout = sorted({g for panels in plan['heldout_RNA_readouts'].values() for panel in panels.values() for g in panel})
+    if feature_universe_binding is not None:
+        from common_measured_feature_contract_v1 import restrict_candidates
+        genes = restrict_candidates(genes, heldout, feature_universe_binding)
     common_readouts = {
         name: [g for g in panel if all(v[g] for v in plan['source_measurement_coverage'].values())]
         for name, panel in plan['heldout_RNA_readouts']['state'].items()}

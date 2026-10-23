@@ -1,0 +1,47 @@
+{
+  "schema": "technical_full_archive_measurement_coverage_v1",
+  "observed_UTC": "2026-10-23T19:38:37.749631+00:00",
+  "status": "all_selected_native_feature_metadata_complete_actual_exit0",
+  "launch": {
+    "observed_UTC": "2026-10-23T19:28:19.742597+00:00",
+    "script_SHA256": {
+      "scripts/audit_full_archive_feature_coverage_v1.py": "79325457a11317e1302b33b8f9fbcf0e547bc84a4f1269ef0a9aa9e3390f897e",
+      "scripts/native_archive_collection_v1.py": "eb4d68d792ef3ceb8479f657bc9072bcc3526f61ccc71b11dc7555251718a7e3",
+      "scripts/native_annotation_review_v1.py": "2f80ae4766c21279a4a3375e8339896f5f4d60fd9902596d3375717440438cc6",
+      "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+      "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+      "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+      "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+      "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f"
+    },
+    "config_sha256": "ff8c3973f52f92eeb5fac7a09bd0edffda09a5eb279f4ce85450a69bd6e3ff40",
+    "stage": "FULL_NATIVE_FEATURE_METADATA_AUDIT_LAUNCHED_NO_EXPRESSION_READ"
+  },
+  "terminal": {
+    "status": "FULL_NATIVE_MEASURED_FEATURE_INTERSECTION_AND_REFERENCE_COVERAGE_COMPLETE",
+    "completed_UTC": "2026-10-23T19:33:43.434403+00:00",
+    "output_sha256": "b3efecf837733d7004e025aab60c141c52679569e988e89422e94d0692fe95df",
+    "wall_seconds": 318.53671461204067,
+    "peak_RSS_bytes_Linux": 1860673536,
+    "counts_read_or_copied": false,
+    "new_authoritative_labels": false
+  },
+  "supervisor_terminal": {
+    "completed_UTC": "2026-10-23T19:33:44.877602+00:00",
+    "actual_child_exit_code": 0,
+    "wall_timeout": false,
+    "science_terminal_exists": true
+  },
+  "source_coverage_and_gene_lists_private": true,
+  "reference_biological_applicability_not_proven_by_gene_coverage": true,
+  "no_new_downloads": true,
+  "public_push": "prior_rejection_preserved_no_retry",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "preexisting_warning": true,
+    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "owned_AST_JSON_private_path_and_whitespace_check": "passed"
+}

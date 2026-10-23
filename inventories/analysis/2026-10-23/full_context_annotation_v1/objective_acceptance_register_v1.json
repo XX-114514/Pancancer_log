@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T19:04:49.054659+00:00",
+  "updated_UTC": "2026-10-23T19:38:37.749631+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -20,15 +20,15 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "pilot_native_group_and_common_cell_confidence_crosswalk_computationally_accepted_full_archive_identity_pending",
+      "status": "pilot_and_completed_source_full_evidence_preflight_accepted_full_archive_producer_running_local_groups_unknown_pool_pending",
       "evidence": "technical_common_cell_confidence_v2.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified"
     },
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "controlled_ABC_source_lineage_and_two_route_feature_engine_diagnostics_independently_accepted_new_route_source_holdout_and_final_workflow_pending",
-      "evidence": "technical_lineage_graph_factor_comparison_v1.json"
+      "status": "ABC_graph_factors_and_new_route_train_only_holdout_independently_accepted_common_measurement_transfer_bridge_running",
+      "evidence": "technical_new_route_feature_holdout_v1.json"
     },
     {
       "id": "R5_resolution",
@@ -39,7 +39,7 @@
     {
       "id": "R6_full_scale",
       "requirement": "selected lineage-specific workflow and full mapping, model/exposure flags, confidence and version crosswalk",
-      "status": "pending"
+      "status": "native_measured_feature_axis_coverage_complete_full_reference_evidence_running_production_feature_choice_and_mapping_pending"
     },
     {
       "id": "R7_storage",

@@ -16,34 +16,16 @@
   },
   "config_sha256": "15882d8230940e07b52299480909165781263f76ea965920a021ee307e239c31",
   "stage": "NEW_ROUTE_FEATURE_SOURCE_HOLDOUT_LAUNCHED_NOT_RESULT",
-  "status": "six_actual_counterexamples_passed_real_train_only_reference_comparison_running",
+  "status": "producer_and_independent_auditor_actual_exit0_accepted",
   "schema": "technical_new_route_feature_holdout_v1",
   "no_new_data_downloads": true,
   "source_level_scientific_results_private": true,
   "public_push": "prior_rejection_not_retried",
-  "latest_observed_UTC": "2026-10-23T19:13:00.944416+00:00",
+  "latest_observed_UTC": "2026-10-23T19:37:31.753700+00:00",
   "latest_state": {
-    "numerical_tests_v1.json": {
-      "actual_exit_code": 0,
-      "n_tests": 6,
-      "no_skips": true
-    },
-    "launch_receipt_v1.json": {
-      "exact_process_live": true
-    },
-    "child_launch_v1.json": {
-      "exact_process_live": true
-    },
-    "last_checkpoint": {
-      "observed_UTC": "2026-10-23T19:12:21.647406+00:00",
-      "stage": "native_holdout_input_loaded",
-      "wall_seconds": 92.72233502427116
-    },
-    "official_prediction_completed_blocks": 0,
-    "completed_reference_files": 0,
-    "completed_graph_files": 0,
-    "saved_PCA_files": 0,
-    "written_bytes": 770215
+    "producer_exact_process_live": false,
+    "auditor_exact_process_live": false,
+    "no_timeout": true
   },
   "repository_validation": {
     "actual_exit_code": 0,
@@ -52,5 +34,65 @@
     "preexisting_warning": true,
     "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
   },
-  "prepared_auditor_sha256": "bb885e9c39d18885b9af0beebdca0de67a8e887981576923f125ab2d68d50101"
+  "prepared_auditor_sha256": "bb885e9c39d18885b9af0beebdca0de67a8e887981576923f125ab2d68d50101",
+  "producer_terminal": {
+    "status": "NEW_ROUTE_TRAIN_ONLY_FEATURE_HOLDOUT_COMPLETE_INDEPENDENT_AUDIT_PENDING",
+    "completed_UTC": "2026-10-23T19:23:03.727555+00:00",
+    "n_folds": 5,
+    "n_completed_route_folds": 10,
+    "n_source_profile_records": 384,
+    "index_sha256": "ee0afb44cf738d0967f6acb34996d72b309e0b527d50d6cc804d95b17d8708a2",
+    "wall_seconds": 734.8026159680448,
+    "peak_RSS_bytes_Linux": 9359667200,
+    "native_counts_copied": false,
+    "final_identity_accuracy_claimed": false,
+    "new_authoritative_labels": false,
+    "candidate_routes_from_transductive_review_condition_evaluation": true,
+    "known_or_possible_source_overlap_retained_in_same_fold": true,
+    "production_winner_selected": false
+  },
+  "producer_supervisor_terminal": {
+    "completed_UTC": "2026-10-23T19:23:04.857084+00:00",
+    "actual_child_exit_code": 0,
+    "wall_timeout": false,
+    "science_terminal_exists": true
+  },
+  "independent_audit_launch": {
+    "observed_UTC": "2026-10-23T19:24:42.009416+00:00",
+    "script_SHA256": {
+      "scripts/audit_lineage_feature_source_holdout_v1.py": "bb885e9c39d18885b9af0beebdca0de67a8e887981576923f125ab2d68d50101",
+      "scripts/lineage_holdout_diagnostics_v1.py": "82817514d3fb398f1ff4aafdc5c3117d2a43f236ffa02007226bbf92be6ec509",
+      "scripts/run_annotation_source_holdout_v1.py": "8a7efa12e57701ade857fb0b03192fc8c9803306db0e7702832c0697b106c389",
+      "scripts/frozen_symphony_reference_v1.py": "bb2636ed81c1b0fd10e15616623667de7bbcb1e1741a8e9c335a07d9965541fd",
+      "scripts/annotation_pilot_sampling_v1.py": "a2bbffb7302ea84d79133d604664d31a24b97980c2a16149c9b8db700130f34b",
+      "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+      "scripts/load_annotation_pilot_native_v1.py": "2600266035065c71bf46079c3be691fbcc7c556d5027531e4f2b368a731c4e78",
+      "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+      "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+      "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+      "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f"
+    },
+    "producer_terminal_sha256": "185da233996738b6a5f550263e9631ed7f458ea66af4d06813092d4361dae2a1",
+    "stage": "NEW_ROUTE_FEATURE_HOLDOUT_AUDIT_LAUNCHED_NOT_ACCEPTANCE"
+  },
+  "independent_audit_terminal": {
+    "status": "NEW_ROUTE_FEATURE_HOLDOUT_AXES_FEATURES_PROFILES_AND_DIRECT_PREDICTIONS_ACCEPTED",
+    "completed_UTC": "2026-10-23T19:28:59.414195+00:00",
+    "output_sha256": "84f2900840dd0bc87bd4c33323b4be07dcbbcf17ee10804f36845853def82ca5",
+    "completed_route_folds": 10,
+    "profile_records_replayed": 384,
+    "independent_finite_prediction_values": 3096,
+    "independent_prediction_max_abs_error": 1.1102230246251565e-15,
+    "boundary_tied_query_rows_not_adjudicated": 0,
+    "wall_seconds": 253.57687730481848,
+    "peak_RSS_bytes_Linux": 8847568896,
+    "new_authoritative_labels": false,
+    "native_counts_copied": false
+  },
+  "independent_audit_supervisor_terminal": {
+    "completed_UTC": "2026-10-23T19:29:00.396299+00:00",
+    "actual_child_exit_code": 0,
+    "wall_timeout": false,
+    "science_terminal_exists": true
+  }
 }

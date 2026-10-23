@@ -53,9 +53,22 @@ def main(root):
     (root / 'provenance/test_stderr.txt').write_text(result.stderr)
     if result.returncode != 0 or 'Ran 6 tests' not in result.stderr or 'skipped' in result.stderr.lower():
         raise ValueError('Lineage holdout counterexamples failed')
-    save(root / 'provenance/numerical_tests_v1.json', {'actual_exit_code': 0, 'n_tests': 6, 'no_skips': True})
+    n_tests = 6
+    if cfg.get('feature_universe_binding') is not None:
+        contract_test = subprocess.run([sys.executable, '-B', str(root / 'tests/test_common_measured_feature_contract_v1.py')],
+                                      capture_output=True, text=True, timeout=180)
+        (root / 'provenance/measurement_test_stdout.txt').write_text(contract_test.stdout)
+        (root / 'provenance/measurement_test_stderr.txt').write_text(contract_test.stderr)
+        if contract_test.returncode != 0 or 'Ran 3 tests' not in contract_test.stderr or 'skipped' in contract_test.stderr.lower():
+            raise ValueError('Measurement feature contract counterexamples failed')
+        n_tests += 3
+    save(root / 'provenance/numerical_tests_v1.json', {'actual_exit_code': 0, 'n_tests': n_tests, 'no_skips': True})
     symphony = load_symphonypy(cfg['wheel_path'], cfg['wheel_SHA256'])
-    data = load_pilot(cfg['pilot'], cfg['manifest'], checkpoint, cfg['read_block_rows'])
+    data = load_pilot(cfg['pilot'], cfg['manifest'], checkpoint, cfg['read_block_rows'], cfg.get('feature_universe_binding'))
+    save(root / 'outputs/model_feature_universe_v1.json', {
+        'n_candidate_genes': len(data['genes']), 'candidate_genes': data['genes'],
+        'measurement_metadata_binding': cfg.get('feature_universe_binding'),
+        'query_expression_used_for_feature_ranking': False, 'missing_genes_imputed': False})
     with np.load(Path(cfg['source_lineage']) / 'outputs/derived_axis_and_model_mask.npz', allow_pickle=False) as f:
         source, route, positive = f['source'], f['provisional_native_route'], f['modeled']
         np.testing.assert_array_equal(source, data['source'])

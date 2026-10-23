@@ -1,0 +1,48 @@
+{
+  "schema": "technical_common_measurement_source_holdout_v1",
+  "observed_UTC": "2026-10-23T19:38:37.749631+00:00",
+  "status": "actual_nine_counterexamples_passed_producer_running_not_result",
+  "launch": {
+    "observed_UTC": "2026-10-23T19:36:58.689754+00:00",
+    "script_SHA256": {
+      "scripts/run_lineage_feature_source_holdout_v1.py": "f257b125559e734e0152995183a01ec67c5fdaf9be946d0628f444e873324dff",
+      "scripts/lineage_holdout_diagnostics_v1.py": "82817514d3fb398f1ff4aafdc5c3117d2a43f236ffa02007226bbf92be6ec509",
+      "scripts/run_annotation_source_holdout_v1.py": "8a7efa12e57701ade857fb0b03192fc8c9803306db0e7702832c0697b106c389",
+      "scripts/frozen_symphony_reference_v1.py": "bb2636ed81c1b0fd10e15616623667de7bbcb1e1741a8e9c335a07d9965541fd",
+      "scripts/annotation_pilot_sampling_v1.py": "a2bbffb7302ea84d79133d604664d31a24b97980c2a16149c9b8db700130f34b",
+      "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+      "scripts/load_annotation_pilot_native_v1.py": "7fa9a4153603d9049acf0af0136657d6cb4290d4f1a3737705d9145b5e20c6bd",
+      "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+      "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+      "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+      "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f",
+      "tests/test_lineage_source_holdout_v1.py": "4c5cda35c044c2aab5c4f47daddd99aaa198766e71a584be453271659e1e05d8",
+      "scripts/common_measured_feature_contract_v1.py": "bd402aeb65c46ef51879dcd8877e85876b21ff5b577bda08b5b7ae201f1eb0bb",
+      "tests/test_common_measured_feature_contract_v1.py": "ddeee0e211eaeef3bb527cb0449258aec479330b188ffc9b674a88bbbe67061c"
+    },
+    "config_sha256": "0cc51a82881be724b2343fa438bb06080b200abf096c8cfdf9ec1b49900f1592",
+    "stage": "NEW_ROUTE_FEATURE_SOURCE_HOLDOUT_LAUNCHED_NOT_RESULT"
+  },
+  "numerical_tests": {
+    "actual_exit_code": 0,
+    "n_tests": 9,
+    "no_skips": true
+  },
+  "native_counts_copied": false,
+  "candidate_universe_metadata_only_query_expression_not_ranked": true,
+  "source_scientific_results_private": true,
+  "independent_audit": "prepared_not_launched_before_producer_terminal",
+  "new_authoritative_labels": false,
+  "public_push": "prior_rejection_preserved_no_retry",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "preexisting_warning": true,
+    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "owned_AST_JSON_private_path_and_whitespace_check": "passed",
+  "latest_observed_UTC": "2026-10-23T19:40:30.427409+00:00",
+  "exact_producer_live": true,
+  "paired_comparison_implementation": "prepared_four_way_matched_queries_and_exact_anchors_native_readout_checks_not_launched"
+}

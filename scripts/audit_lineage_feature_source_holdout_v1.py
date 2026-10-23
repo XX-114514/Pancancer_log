@@ -62,7 +62,7 @@ def main(root, producer):
     def checkpoint(stage, **extra):
         save(root / 'checkpoints' / (str(time.time_ns()) + '.json'), {
             'observed_UTC': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'stage': stage, **extra})
-    data = load_pilot(cfg['pilot'], cfg['manifest'], checkpoint, cfg['read_block_rows'])
+    data = load_pilot(cfg['pilot'], cfg['manifest'], checkpoint, cfg['read_block_rows'], cfg.get('feature_universe_binding'))
     with np.load(Path(cfg['source_lineage']) / 'outputs/derived_axis_and_model_mask.npz', allow_pickle=False) as f:
         source, route, positive = f['source'], f['provisional_native_route'], f['modeled']
     np.testing.assert_array_equal(source, data['source']); np.testing.assert_array_equal(positive, data['native_total'] > 0)
