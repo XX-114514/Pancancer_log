@@ -1950,4 +1950,4 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 
 ### 2026-10-23T14:27:50.572095+00:00 本对话全细胞图谱当前状态
 
-三种子发现、分群轴与代表数值复算完成；七项冻结参考资格通过，真实来源留出仍运行。当前原生读数/计数验收作用于冻结context；完整档案成员资格单独待补，分析门槛不当细胞QC。新身份、最终选型、全量映射和交付待。[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。
+三种子发现、分群轴与代表数值复算完成；七项冻结参考资格通过，五组真实来源留出生产actual exit0、待独立验收。当前原生读数/计数验收作用于冻结context；完整档案成员资格单独待补，分析门槛不当细胞QC。新身份、最终选型、全量映射和交付待。[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。

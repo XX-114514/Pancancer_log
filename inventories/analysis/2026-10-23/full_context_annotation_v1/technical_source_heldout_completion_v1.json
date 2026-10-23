@@ -1,0 +1,15 @@
+{
+  "schema": "train_only_source_heldout_completion_technical_v1",
+  "observed_UTC": "2026-10-23T14:39:17.514538+00:00",
+  "production_completed_UTC": "2026-10-23T14:31:20.248103+00:00",
+  "actual_scientific_child_exit_code": 0,
+  "wall_timeout": false,
+  "completed_frozen_fold_groups": 5,
+  "wall_seconds": 2444.539180152118,
+  "peak_RSS_bytes_Linux": 13015298048,
+  "producer_claims_training_query_information_separation": true,
+  "independent_holdout_result_audit": "pending_not_claimed",
+  "native_expression_disk_copy": false,
+  "new_identity_or_method_winner_accepted": false,
+  "private_completion_observation_SHA256": "89654bbd8df1eaab24090b685fdf70640fe9b7c1c63522dfda5baedc37f76534"
+}

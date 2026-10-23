@@ -253,3 +253,18 @@ Goal active and progressing; no completion or blocked claim.
 ## 2026-10-23T14:35:44.655247+00:00 UTC: local archival gate
 
 Final repository validation returned actual exit0, zero errors and one pre-existing warning. Technical JSON syntax, explicit-task whitespace/diff and private-path/credential-pattern review passed. Validator SHA256 ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e. Actual scientific tests and replays are recorded separately; no local skipped fixture is counted as scientific acceptance. Archive only explicit task files, preserve unrelated work, and leave public push pending under the previous automatic-review restriction. Goal remains active with full source/archive/identity/benchmark/mapping/delivery requirements.
+
+
+## 2026-10-23T14:39:17.514538+00:00 UTC / 2026-10-23T22:39:17.514538+08:00 UTC+8 / 2026-10-24T01:39:17.514538+11:00 Australia/Melbourne: real source-heldout production complete; independent review pending
+
+The original five-group heldout job completed at 2026-10-23T14:31:20.248103+00:00 UTC; supervisor actual
+science exit0, no timeout. Exact original supervisor/child are absent after
+terminal. The producer reports completion of the predeclared training-only
+fits and query scoring. Independent source/fold/feature/mask/model and numeric
+audit remains pending; no identity accuracy or method winner is accepted.
+Native expression was not copied to disk. Technical resource/terminal receipt
+is in technical_source_heldout_completion_v1.json; scientific output remains
+source-private. The original full goal remains active, including archive
+membership repair, source qualification, new identity, fair comparison, full
+mapping and final delivery. This node supersedes earlier running observations
+without rewriting their historical evidence. No public push retry.

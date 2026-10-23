@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T14:27:50.572095+00:00",
+  "updated_UTC": "2026-10-23T14:39:17.514538+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -26,8 +26,8 @@
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "three_seed_discovery_axes_audited_train_only_source_holdout_running_identity_and_final_comparison_pending",
-      "evidence": "technical_source_holdout_launch_v1.json"
+      "status": "three_seed_discovery_audited_five_group_source_holdout_production_exit0_independent_holdout_identity_and_final_comparison_pending",
+      "evidence": "technical_source_heldout_completion_v1.json"
     },
     {
       "id": "R5_resolution",

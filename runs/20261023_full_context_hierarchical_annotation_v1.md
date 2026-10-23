@@ -2,7 +2,7 @@
 
 ## 完整目标与当前阶段
 
-按用户明确实施指令执行[原完整方案](../methods/full-context-atlas-hierarchical-annotation-plan-20261023.md)。八类要求见[验收登记](../inventories/analysis/2026-10-23/full_context_annotation_v1/objective_acceptance_register_v1.json)，不因某个读取/合成通过缩小成功定义。当前结构、原生marker及比较输入已独立验收，三种子发现分群完成，全轴/边界审计与代表性数值复算通过；训练专用的来源留出正在执行。统一新身份、最终方法选择、全量映射和最终交付仍待。
+按用户明确实施指令执行[原完整方案](../methods/full-context-atlas-hierarchical-annotation-plan-20261023.md)。八类要求见[验收登记](../inventories/analysis/2026-10-23/full_context_annotation_v1/objective_acceptance_register_v1.json)，不因某个读取/合成通过缩小成功定义。当前结构、原生marker及比较输入已独立验收，三种子发现分群完成，全轴/边界审计与代表性数值复算通过；五组训练专用来源留出生产已正常结束、待独立验收。统一新身份、最终方法选择、全量映射和最终交付仍待。
 
 ## 输入、资源与约束
 
@@ -241,3 +241,18 @@ frozen-scope structural evidence remains valid. Source-only representation
 diagnostics were also reviewed privately; final workflow choice still requires
 heldout transfer, marker-supported identity and granularity/feature sensitivities.
 Goal active and progressing; no completion or blocked claim.
+
+
+## 2026-10-23T14:39:17.514538+00:00 UTC / 2026-10-23T22:39:17.514538+08:00 UTC+8 / 2026-10-24T01:39:17.514538+11:00 Australia/Melbourne: real source-heldout production complete; independent review pending
+
+The original five-group heldout job completed at 2026-10-23T14:31:20.248103+00:00 UTC; supervisor actual
+science exit0, no timeout. Exact original supervisor/child are absent after
+terminal. The producer reports completion of the predeclared training-only
+fits and query scoring. Independent source/fold/feature/mask/model and numeric
+audit remains pending; no identity accuracy or method winner is accepted.
+Native expression was not copied to disk. Technical resource/terminal receipt
+is in technical_source_heldout_completion_v1.json; scientific output remains
+source-private. The original full goal remains active, including archive
+membership repair, source qualification, new identity, fair comparison, full
+mapping and final delivery. This node supersedes earlier running observations
+without rewriting their historical evidence. No public push retry.
