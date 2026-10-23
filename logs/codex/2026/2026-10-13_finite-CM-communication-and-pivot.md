@@ -3939,3 +3939,8 @@ Qureshi2011及Maier2020的PubMed页面只返页脚，官方NCBI efetch公开摘�
 ## 2026-10-23T12:45:20.746515+00:00 UTC / 2026-10-23T20:45:20.746515+08:00 UTC+8 / 2026-10-23T23:45:20.746515+11:00 Australia/Melbourne (AEDT) CM阶段复核、原始研究调研与上传监控
 
 已实际建立当前对话30分钟单文件上传heartbeat，明确每次简短进度、稳定完整后双hash及成功后暂停；只读元数据见私有历史，未启动新native。两版本CM/已接受来源证据和统计方法分别复核，原论文/作者软件与访问限制逐项记录；科学结论仅私有/获准对话，通用建议见[方法](../../../methods/CM-cohort-first-evidence-strategy-20261023.md)。详[日志](2026-10-23_CM-stage-literature-and-monitoring.md)。未改原结果/家族或并行atlas，public push旧拒绝保持。
+
+
+## 2026-10-23T13:04:59.501642+00:00 UTC / 2026-10-23T21:04:59.501642+08:00 UTC+8 / 2026-10-24T00:04:59.501642+11:00 Australia/Melbourne (AEDT) 用户上传输入准备与源人工生命周期接受
+
+只读上传前缀仍增长，真实完整输入/R未启动。新只读双遍hash→RAM→原R路线已准备；源输入/消费及五个后台反例实际通过，原R/参数不变。孤立后代管道与首遍文件一致性反例在真实输入前修复，失败保留。详[run](../../../runs/20261024_CM02_uploaded_fixed_spatial_preparation_v1.md)及[日志](2026-10-24_CM02-uploaded-fixed-input-preparation.md)。public push旧拒绝保持，goal active。

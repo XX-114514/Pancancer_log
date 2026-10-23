@@ -1,0 +1,19 @@
+{
+  "status": "ACCEPTED_ARTIFICIAL_SOURCE_AND_FROZEN_PREPARATION_ONLY",
+  "observed_UTC": "2026-10-23T13:04:59.501642+00:00",
+  "frozen_contract_SHA256": "2fcabbe5544171b5b4546f6bc48642114538ccfb2c9631a254e7668e78279e66",
+  "artificial_source_acceptance_SHA256": "b7997c755e0f196675942ac4cbf95b34df81460c374364e6c5877a4f0ae47f0e",
+  "source_actual_input_R_pipe_check_exit": 0,
+  "source_actual_uploaded_consumer_check_exit": 0,
+  "source_actual_lifecycle_cases": 5,
+  "delayed_completion_after_control_SSH_exit_verified": true,
+  "exit7_preserved": true,
+  "individual_canary_not_persisted": true,
+  "deadline_and_orphan_group_cleanup_verified": true,
+  "all_original_R_and_analysis_unchanged": true,
+  "actual_pending_consumer_exit": 3,
+  "real_upload_complete": false,
+  "real_native_read_or_scientific_job_launched": false,
+  "no_new_native_or_expanded_payload_cache": true,
+  "original_statistics_not_reselected": true
+}
