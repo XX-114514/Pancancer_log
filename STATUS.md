@@ -1929,3 +1929,8 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 
 
 本对话atlas更新（2026-10-23T13:16:19.805401+00:00 UTC）：全范围原生marker证据已独立验收；新生物标签待。真实候选分群仍在同一句柄运行，完整A/B/C、留出和最终交付待。
+
+
+## 2026-10-23T13:27:43.738176+00:00 UTC / 2026-10-23T21:27:43.738176+08:00 UTC+8 / 2026-10-24T00:27:43.738176+11:00 Australia/Melbourne：固定CM来源权重敏感性完成
+
+既有数据的有限敏感性源实际exit0，原种子模型数值重放与完整汇总独立验收通过。原生/新模型数组只RAM，科学结果仅私有/获准对话；不是外部、空间或临床验证。半小时heartbeat已实际view确认启用；用户上传只stat，完整输入和原固定空间R仍待。详[run](runs/20261024_CM_source_balance_sensitivity_v1.md)、[方法](methods/CM-source-balanced-sensitivity-20261024.md)；public push旧自动审批拒绝不重试，云端待同步，goal active。

@@ -1,0 +1,18 @@
+{
+  "status": "PASS_FINITE_SOURCE_SENSITIVITY_TECHNICAL_ACCEPTANCE",
+  "observed_UTC": "2026-10-23T13:27:43.738176+00:00",
+  "contract_SHA256": "ee0a4e3819c534772480539aa6f0020c121c080a253e5bf91f269e34ca491618",
+  "R_code_SHA256": "cccce702ea8095f5950a8996e5d7a4fa1d60e5343135f8e41f541819d7d12a3c",
+  "source_actual_R_exit": 0,
+  "actual_SSH_exit": 0,
+  "private_source_exit_receipt_SHA256": "e4b25301d28fe19f4a89af0167ac2519468e9df8612255cddcfbae70fdf5b553",
+  "private_aggregate_acceptance_SHA256": "8e68fa90a4ec864bd31a57cfc1402583eb0315f9f20755f1b283dad61aa3ffba",
+  "native_and_model_arrays_RAM_only": true,
+  "input_files_unchanged": true,
+  "no_scientific_values_or_source_denominators_in_public_receipt": true,
+  "not_external_or_clinical_validation": true,
+  "public_push_stays_pending": true,
+  "repository_validation_actual_exit": 0,
+  "repository_validation_SHA256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e",
+  "manual_explicit_diff_and_privacy_review_passed": true
+}

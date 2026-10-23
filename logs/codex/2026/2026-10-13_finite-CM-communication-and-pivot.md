@@ -3944,3 +3944,8 @@ Qureshi2011及Maier2020的PubMed页面只返页脚，官方NCBI efetch公开摘�
 ## 2026-10-23T13:04:59.501642+00:00 UTC / 2026-10-23T21:04:59.501642+08:00 UTC+8 / 2026-10-24T00:04:59.501642+11:00 Australia/Melbourne (AEDT) 用户上传输入准备与源人工生命周期接受
 
 只读上传前缀仍增长，真实完整输入/R未启动。新只读双遍hash→RAM→原R路线已准备；源输入/消费及五个后台反例实际通过，原R/参数不变。孤立后代管道与首遍文件一致性反例在真实输入前修复，失败保留。详[run](../../../runs/20261024_CM02_uploaded_fixed_spatial_preparation_v1.md)及[日志](2026-10-24_CM02-uploaded-fixed-input-preparation.md)。public push旧拒绝保持，goal active。
+
+
+## 2026-10-23T13:27:43.738176+00:00 UTC / 2026-10-23T21:27:43.738176+08:00 UTC+8 / 2026-10-24T00:27:43.738176+11:00 Australia/Melbourne：固定CM来源权重敏感性完成
+
+既有数据的有限敏感性源实际exit0，原种子模型数值重放与完整汇总独立验收通过。原生/新模型数组只RAM，科学结果仅私有/获准对话；不是外部、空间或临床验证。半小时heartbeat已实际view确认启用；用户上传只stat，完整输入和原固定空间R仍待。详[run](../../../runs/20261024_CM_source_balance_sensitivity_v1.md)、[方法](../../../methods/CM-source-balanced-sensitivity-20261024.md)；public push旧自动审批拒绝不重试，云端待同步，goal active。

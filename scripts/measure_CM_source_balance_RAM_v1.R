@@ -1,0 +1,158 @@
+# Source-balance sensitivity only: no clinical fitting, weights or arrays saved.
+options(stringsAsFactors=FALSE, mc.cores=1)
+suppressPackageStartupMessages({library(NMF);library(jsonlite);library(digest)})
+foreach::registerDoSEQ()
+
+kl_columns<-function(X,Y){
+  stopifnot(identical(dim(X),dim(Y)),all(is.finite(X)),all(X>=0),all(is.finite(Y)),all(Y>=0))
+  term<-Y-X;positive<-X>0
+  if(any(Y[positive]<=0))stop('Nonfinite KL prediction')
+  term[positive]<-term[positive]+X[positive]*log(X[positive]/Y[positive])
+  colSums(term)
+}
+source_weights<-function(source){
+  counts<-table(source);w<-length(source)/(length(counts)*as.numeric(counts[source]))
+  stopifnot(all(is.finite(w)),all(w>0),abs(sum(w)-length(source))<1e-10)
+  w
+}
+cosine<-function(A,B){
+  stopifnot(identical(rownames(A),rownames(B)),all(colSums(A^2)>0),all(colSums(B^2)>0))
+  crossprod(sweep(A,2,sqrt(colSums(A^2)),'/'),sweep(B,2,sqrt(colSums(B^2)),'/'))
+}
+permutations<-function(x){
+  if(length(x)==1L)return(matrix(x,nrow=1L))
+  do.call(rbind,lapply(x,function(v)cbind(v,permutations(x[x!=v]))))
+}
+matching<-function(A,B){
+  C<-cosine(A,B);stopifnot(nrow(C)==ncol(C),nrow(C)<=6L)
+  possibilities<-permutations(seq_len(nrow(C)))
+  scores<-apply(possibilities,1,function(p)sum(C[cbind(seq_len(nrow(C)),p)]))
+  assignment<-as.integer(possibilities[which.max(scores),])
+  # Separate scalar calculation audits every cosine and assignment objective.
+  reference<-matrix(0,nrow(C),ncol(C))
+  for(i in seq_len(nrow(C)))for(j in seq_len(ncol(C))){
+    reference[i,j]<-sum(A[,i]*B[,j])/sqrt(sum(A[,i]^2)*sum(B[,j]^2))
+  }
+  stopifnot(max(abs(C-reference))<1e-12)
+  list(C=C,assignment=assignment,maximum_numeric_error=max(abs(C-reference)))
+}
+parts<-function(model){
+  W<-as.matrix(basis(model));H<-as.matrix(coef(model));S<-smoothing(NMF::fit(model));A<-W%*%S
+  stopifnot(max(abs(A%*%H-as.matrix(fitted(model))))<1e-8)
+  list(W=W,H=H,S=S,A=A)
+}
+check_artificial<-function(){
+  set.seed(20261024);X<-matrix(runif(180,.01,2),6,30);Y<-matrix(runif(180,.01,2),6,30)
+  source<-rep(c('ARTIFICIAL_A','ARTIFICIAL_B','ARTIFICIAL_C'),c(5,10,15));w<-source_weights(source)
+  left<-sum(kl_columns(sweep(X,2,w,'*'),sweep(Y,2,w,'*')))
+  right<-sum(w*kl_columns(X,Y));stopifnot(abs(left-right)<1e-10)
+  stopifnot(max(abs(tapply(w,source,sum)-10))<1e-10)
+  W<-matrix(runif(24,.1,1),6,4);rownames(W)<-paste0('ARTIFICIAL_',1:6)
+  shuffled<-W[,c(3,1,4,2)];m<-matching(W,shuffled)
+  stopifnot(identical(m$assignment,c(2L,4L,1L,3L)))
+  f<-nmf(X,2,method='nsNMF',nrun=2,seed=20261024,.options='-p',maxIter=200)
+  p<-parts(f);stopifnot(all(is.finite(p$A)),all(is.finite(p$H)),length(kl_columns(X,p$A%*%p$H))==30)
+  cat(toJSON(list(status='PASS_ARTIFICIAL_WEIGHTED_KL_MATCHING_AND_REAL_NSNMF_API',
+    weighted_KL_identity_error=abs(left-right),one_to_one_matching_checked=TRUE,
+    original_WSH_model_checked=TRUE,NMF_version=as.character(packageVersion('NMF')),
+    parallel_workers=foreach::getDoParWorkers(),
+    no_human_input=TRUE),auto_unbox=TRUE,digits=16),'\n')
+}
+measure<-function(plan){
+  for(name in names(plan$inputs)){
+    item<-plan$inputs[[name]]
+    stopifnot(digest(file=item$path,algo='sha256')==item$SHA256)
+  }
+  fq<-read.delim(plan$inputs$frequency$path,check.names=FALSE,row.names=1)
+  meta<-read.delim(plan$inputs$metadata$path,check.names=FALSE)
+  meta<-meta[match(colnames(fq)[-1],meta$sampleID),,drop=FALSE]
+  stopifnot(!anyNA(meta$sampleID),!anyDuplicated(meta$sampleID))
+  # Evaluate only the original normalization definition, not package side effects.
+  definitions<-parse(plan$inputs$covarnet_code$path)
+  selected<-which(vapply(definitions,function(e)is.call(e)&&length(e)>=3L&&
+    identical(e[[1]],as.name('<-'))&&identical(e[[2]],as.name('freq_normalize')),logical(1)))
+  stopifnot(length(selected)==1L)
+  functions<-new.env(parent=baseenv());eval(definitions[[selected]],envir=functions)
+  normalized<-functions$freq_normalize(fq,normalize='minmax')
+  raw<-as.matrix(fq[,-1,drop=FALSE]);storage.mode(raw)<-'double'
+  independently<-t(apply(raw,1,function(x)(x-min(x))/(max(x)-min(x))))
+  stopifnot(identical(dim(normalized),dim(independently)),max(abs(normalized-independently))<1e-12)
+  blocks<-unique(meta$independent_unit)
+  X<-sapply(blocks,function(b)rowMeans(normalized[,meta$independent_unit==b,drop=FALSE]))
+  rownames(X)<-rownames(normalized)
+  block_meta<-meta[match(blocks,meta$independent_unit),,drop=FALSE]
+  stopifnot(all(vapply(blocks,function(b)length(unique(meta$dataset[meta$independent_unit==b]))==1L,logical(1))))
+  source<-as.character(block_meta$dataset)
+  old<-readRDS(plan$inputs$original_model$path);baseline<-parts(old)
+  Wtable<-as.matrix(read.delim(plan$inputs$original_W$path,check.names=FALSE,row.names=1))
+  Htable<-as.matrix(read.delim(plan$inputs$original_H$path,check.names=FALSE,row.names=1))
+  stopifnot(identical(dim(baseline$W),dim(Wtable)),max(abs(baseline$W-Wtable))<1e-8,
+    identical(dim(baseline$H),dim(Htable)),max(abs(baseline$H-Htable))<1e-8,
+    identical(dimnames(baseline$W),dimnames(Wtable)),
+    identical(dimnames(baseline$H),dimnames(Htable)),
+    identical(rownames(X),rownames(baseline$W)),identical(colnames(X),colnames(baseline$H)),
+    ncol(baseline$W)==plan$rank,nrow(X)==plan$expected_nodes,ncol(X)==plan$expected_blocks,
+    all(is.finite(X)),all(X>=0),all(rowSums(X)>0),all(colSums(X)>0))
+  members<-read.delim(plan$inputs$original_members$path,check.names=FALSE)
+  source_weight<-source_weights(source);theta<-as.numeric(diag(baseline$S)[1])
+  theta<-(1-theta)/(1-1/plan$rank)
+  stopifnot(abs(theta-plan$theta)<1e-10)
+  losses<-kl_columns(X,baseline$A%*%baseline$H)
+  records<-list();fit_reports<-list();number<-0L
+  for(mode in c('original_unit_weight','equal_source_weight'))for(seed in unlist(plan$seeds)){
+    w<-if(mode=='equal_source_weight')source_weight else rep(1,ncol(X))
+    target<-sweep(X,2,w,'*')
+    fit_started<-proc.time()[['elapsed']]
+    model<-nmf(target,plan$rank,method='nsNMF',nrun=plan$nrun,seed=as.integer(seed),
+      .options='-p',maxIter=plan$max_iterations,theta=plan$theta)
+    p<-parts(model);p$H<-sweep(p$H,2,w,'/')
+    matched<-matching(baseline$A,p$A);raw_similarity<-cosine(baseline$W,p$W)
+    fit_loss<-kl_columns(X,p$A%*%p$H)
+    fit_reports[[paste(mode,seed)]]<-list(mode=mode,seed=seed,
+      original_scale_KL=sum(fit_loss),equal_source_scale_KL=sum(source_weight*fit_loss),
+      original_stored_model_original_scale_KL=sum(losses),
+      original_stored_model_equal_source_scale_KL=sum(source_weight*losses),
+      elapsed_seconds=proc.time()[['elapsed']]-fit_started,
+      selected_fit_iterations=as.integer(niter(model)),
+      maximum_numeric_cosine_error=matched$maximum_numeric_error,
+      source_mean_KL=as.list(tapply(fit_loss,source,mean)))
+    for(j in seq_len(plan$rank)){
+      assigned<-matched$assignment[j];reference_name<-colnames(baseline$W)[j]
+      core<-members$subCluster[members$cm==reference_name]
+      stopifnot(length(core)>0,all(core%in%rownames(X)))
+      normalizedA<-p$A[,assigned]/sum(p$A[,assigned]);oldA<-baseline$A[,j]/sum(baseline$A[,j])
+      normalizedW<-p$W[,assigned]/sum(p$W[,assigned]);oldW<-baseline$W[,j]/sum(baseline$W[,j])
+      top<-min(10L,nrow(X));new_top<-head(order(normalizedA,decreasing=TRUE),top)
+      old_top<-head(order(oldA,decreasing=TRUE),top)
+      number<-number+1L
+      records[[number]]<-list(reference_module=reference_name,mode=mode,seed=seed,
+        effective_A_cosine=matched$C[j,assigned],raw_W_cosine_same_assignment=raw_similarity[j,assigned],
+        assignment_margin=matched$C[j,assigned]-max(matched$C[j,-assigned]),
+        original_core_member_count=length(core),
+        original_core_effective_mass=sum(oldA[core]),new_core_effective_mass=sum(normalizedA[core]),
+        original_core_raw_mass=sum(oldW[core]),new_core_raw_mass=sum(normalizedW[core]),
+        effective_top10_overlap_count=length(intersect(new_top,old_top)),
+        original_core_members_in_new_raw_top10=sum(core%in%names(sort(normalizedW,decreasing=TRUE))[seq_len(top)]))
+    }
+  }
+  for(name in names(plan$inputs))stopifnot(digest(file=plan$inputs[[name]]$path,algo='sha256')==plan$inputs[[name]]$SHA256)
+  verified<-tolower(as.character(block_meta$patient_verified))%in%c('true','1')
+  list(status='COMPLETE_SOURCE_BALANCED_CM_SENSITIVITY',scope=plan$scope,rank=plan$rank,
+    nodes=nrow(X),composition_blocks=ncol(X),reviewed_patient_blocks=sum(verified),
+    unreviewed_library_units=sum(!verified),source_block_counts=as.list(table(source)),
+    equal_source_total_objective_weight=as.list(tapply(source_weight,source,sum)),
+    seeds=unlist(plan$seeds),nrun=plan$nrun,component_comparisons=records,fit_diagnostics=unname(fit_reports),
+    input_files_unchanged=TRUE,independent_normalization_and_WSH_numeric_checks=TRUE,
+    one_to_one_all_components_matched=TRUE,NMF_version=as.character(packageVersion('NMF')),
+    parallel_workers=foreach::getDoParWorkers(),
+    no_weights_H_or_sample_arrays_saved=TRUE,no_clinical_outcomes_used=TRUE,
+    no_new_P_or_external_validation=TRUE,original_CM_labels_and_graph_unchanged=TRUE,
+    data_informed_sensitivity_not_new_confirmed_module=TRUE)
+}
+args<-commandArgs(trailingOnly=TRUE)
+if(identical(args,'--check-artificial'))check_artificial()else{
+  stopifnot(length(args)==1L)
+  plan<-fromJSON(args[1],simplifyVector=FALSE)
+  result<-measure(plan)
+  cat(toJSON(result,auto_unbox=TRUE,digits=16,null='null',na='null'),'\n')
+}
