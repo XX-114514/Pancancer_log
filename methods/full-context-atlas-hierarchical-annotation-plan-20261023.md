@@ -1,6 +1,6 @@
 # 全细胞背景图谱：分层注释与整合比较方案
 
-状态：2026-10-23提出的前向方案，尚未执行比较、选择新模型或更改权威标签。具体来源/预计数量/容量快照仅保存在授权私有计划。本方案承接[分区集合](backed-existing-atlas-collection-v1.md)和[免疫图谱v1](immune-specific-atlas-v1.md)。
+状态：本文件保留2026-10-23提出的完整前向方案；提出时尚未执行比较、选择新模型或更改权威标签。当前进度见[实施记录](../runs/20261023_full_context_hierarchical_annotation_v1.md)及其逐项验收，不以本方案文字代替执行结果。具体来源/预计数量/容量快照保存在授权私有计划。本方案承接[分区集合](backed-existing-atlas-collection-v1.md)和[免疫图谱v1](immune-specific-atlas-v1.md)。
 
 ## 一、目标与概念
 

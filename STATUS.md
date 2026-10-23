@@ -1946,3 +1946,8 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 ## 2026-10-23T13:27:43.738176+00:00 UTC / 2026-10-23T21:27:43.738176+08:00 UTC+8 / 2026-10-24T00:27:43.738176+11:00 Australia/Melbourne：固定CM来源权重敏感性完成
 
 既有数据的有限敏感性源实际exit0，原种子模型数值重放与完整汇总独立验收通过。原生/新模型数组只RAM，科学结果仅私有/获准对话；不是外部、空间或临床验证。半小时heartbeat已实际view确认启用；用户上传只stat，完整输入和原固定空间R仍待。详[run](runs/20261024_CM_source_balance_sensitivity_v1.md)、[方法](methods/CM-source-balanced-sensitivity-20261024.md)；public push旧自动审批拒绝不重试，云端待同步，goal active。
+
+
+### 2026-10-23T14:27:50.572095+00:00 本对话全细胞图谱当前状态
+
+三种子发现、分群轴与代表数值复算完成；七项冻结参考资格通过，真实来源留出仍运行。当前原生读数/计数验收作用于冻结context；完整档案成员资格单独待补，分析门槛不当细胞QC。新身份、最终选型、全量映射和交付待。[当前run](runs/20261023_full_context_hierarchical_annotation_v1.md)。

@@ -1,0 +1,30 @@
+{
+  "schema": "source_heldout_reference_launch_technical_v1",
+  "observed_UTC": "2026-10-23T14:02:38.427208+00:00",
+  "actual_launch_UTC": "2026-10-23T13:50:33.461967+00:00",
+  "actual_counterexamples_and_synthetic_pipeline_tests": 7,
+  "actual_qualification_exit_code": 0,
+  "qualification_skips": 0,
+  "previous_small_reference_failure_retained": true,
+  "code_SHA256": {
+    "scripts/run_annotation_source_holdout_v1.py": "8a7efa12e57701ade857fb0b03192fc8c9803306db0e7702832c0697b106c389",
+    "scripts/frozen_symphony_reference_v1.py": "bb2636ed81c1b0fd10e15616623667de7bbcb1e1741a8e9c335a07d9965541fd",
+    "scripts/load_annotation_pilot_native_v1.py": "2600266035065c71bf46079c3be691fbcc7c556d5027531e4f2b368a731c4e78",
+    "scripts/annotation_pilot_sampling_v1.py": "a2bbffb7302ea84d79133d604664d31a24b97980c2a16149c9b8db700130f34b",
+    "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+    "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+    "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f"
+  },
+  "config_SHA256": "e1adeceadac0d49189b9ec08a95b61c8fb73b1d064fc2f3fb9bc7cf4e1abb2e2",
+  "same_original_scientific_scope_and_predeclared_folds": true,
+  "threads": 4,
+  "wall_seconds": 10800,
+  "output_cap_bytes": 16777216,
+  "exact_supervisor_and_child_live_at_observation": true,
+  "source_heldout_fitting": "running_not_accepted_result",
+  "no_shared_environment_modification_or_native_count_disk_copy": true,
+  "private_launch_SHA256": "23070ed6fa49ed26d6ef54d8995703973210e80715f17403a03aa5fdc4f800ae",
+  "private_health_and_replay_observation_SHA256": "08f987c8759c3817cd8a5855e8e4862988303df22739b20e5c260e6d627cd1d3"
+}

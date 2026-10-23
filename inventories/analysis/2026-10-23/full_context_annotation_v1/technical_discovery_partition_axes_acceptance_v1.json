@@ -1,0 +1,14 @@
+{
+  "schema": "three_seed_discovery_partition_axes_acceptance_technical_v1",
+  "observed_UTC": "2026-10-23T13:47:18.486010+00:00",
+  "actual_science_exit_code": 0,
+  "actual_independent_axes_auditor_exit_code": 0,
+  "actual_auditor_mutation_counterexamples": 2,
+  "three_seeds_A_B_C_complete": true,
+  "frozen_pilot_axes_crosswalks_masks_and_bounds_pass": true,
+  "private_discovery_terminal_SHA256": "2ed28585e0ee589d652975833f5c687893edcc7fa3e6ecf5fc185d637dcb6ee8",
+  "private_audited_output_manifest_SHA256": "efb472bc4cbb4b96378962aa4a1dcba419dcc351799b72882b2c89ef6da45cf8",
+  "private_completion_observation_SHA256": "e0a27bbd92d6bb4de01fc1bd4fa2e60f9923919a75c4b8d01a0c246f450a108a",
+  "native_panel_numeric_and_RNA_neighborhood_replay": "pending_not_claimed",
+  "new_identity_or_method_winner_accepted": false
+}

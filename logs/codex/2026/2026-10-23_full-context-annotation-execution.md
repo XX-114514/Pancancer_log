@@ -159,3 +159,97 @@ SHA256 ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e.
 Explicit-task diff/whitespace and private-path/credential-pattern review passed.
 Ordinary local archival follows; public push retains the prior automatic-review
 restriction. Complete goal remains active; no final atlas/model claim.
+
+
+## 2026-10-23T13:47:18.486010+00:00 UTC / 2026-10-23T21:47:18.486010+08:00 UTC+8 / 2026-10-24T00:47:18.486010+11:00 Australia/Melbourne: three-seed discovery complete; train-only reference qualification
+
+Previous goal turn was progress. Original discovery completed all three frozen
+seeds at 2026-10-23T13:32:25.187225+00:00 UTC; supervisor actual science exit0, no timeout. Independent
+axes/bounds auditor actual exit0 after two mutation counterexamples. Every
+method/seed's frozen cell order, modeled/small-group masks, source-local/routed
+boundaries, old-label crosswalk and native-panel denominators passed. Input/model
+physical aliases stayed disjoint from the RNA readouts. This accepts axes and
+bounds, not independently replayed panel/neighborhood values or new identities.
+The candidate partition counts differ by construction; more clusters do not
+establish better annotation. Raw diagnostic and seed-stability summaries stay
+private; no method winner or clinical result was selected.
+
+Reference mapping software was inspected from a pinned official small wheel,
+verified against PyPI SHA and loaded only into task subprocesses. No shared
+installation, biological download or original-data mutation occurred. Three
+component counterexamples initially passed. The complete synthetic source-heldout
+pipeline then exposed the installed Harmony backend's K=1 scalar-sigma .astype
+error; actual test/child exit1, preserved. This occurred before any real heldout
+fit. Explicit K and an equal sigma vector preserve intended defaults and repair
+the interface. A new small-reference regression and all component/end-to-end
+tests must pass together on the repaired code before real fitting.
+
+The holdout protocol fixes training-only HVG/mean/PCA/Harmony/reference clusters,
+conservative study folds, common measurement-defined RNA readouts and identical
+within-route training anchors. A/B share one reference-neighbor result; separate
+prototype probes do not control prototype counts and cannot by themselves rank
+identity quality. Query/cohort alias and patient independence limits remain.
+See methods/full-context-source-heldout-reference-20261024.md. The full original
+eight-requirement objective remains active. Public push is still pending under
+the prior automatic-review restriction; unrelated parallel files are preserved.
+
+
+## 2026-10-23T14:02:38.427208+00:00 UTC / 2026-10-23T22:02:38.427208+08:00 UTC+8 / 2026-10-24T01:02:38.427208+11:00 Australia/Melbourne: repaired reference workflow qualified; real study holdout running
+
+Seven component/end-to-end tests passed in the actual scientific environment,
+including the new K=1 reference regression, missing/reordered-feature rejection,
+query-order equivariance, fixed-reference fingerprint, native-RNA score edge
+cases, and a full synthetic three-source replay that checks exact training rows.
+The previous failure stays preserved. Actual qualification test/child exit0,
+no skips. Real fitting then launched with byte-identical qualified code and
+effect-before frozen conservative folds/parameters. The exact supervisor and
+child are live; the first heldout fold's training A/B reference and source-local
+partitions completed. There is no accepted real holdout result or method winner.
+
+Independent numeric replay also returned actual exit0. It selected the smallest
+frozen source before inspecting outcomes, read native CSR arrays directly, and
+recomputed every method/seed's native panels in that source. Full-pilot global
+PCA and source-local PCA were independently refitted with matching parameters;
+two representations' six-program RNA neighbor diagnostics matched. Float
+precision error stayed within the declared tolerance. Corrected B/C neighborhood
+replay is not claimed by this representative scope. This supports measured
+evidence; new biological identities, reference-outside rejection, appropriate
+mixing, complexity sensitivity, production mapping and final archive remain.
+
+Source-only diagnostic summaries may be reviewed privately under current user
+authorization. No expression rows, gene weights, matrices or patient records
+are returned or committed. Official dependency wheel remains process-local;
+no shared environment or old count/label/dated-CM object changed. No biological
+download or large matrix write. Full goal active; prior turn and this turn make
+progress. Final repository validation/diff and ordinary local archive follow;
+public push retains the previous automatic-review restriction.
+
+
+## 2026-10-23T14:27:50.572095+00:00 UTC / 2026-10-23T22:27:50.572095+08:00 UTC+8: archival membership scope correction
+
+Metadata-only review exposed a distinction required by the original objective:
+the current legacy reader's frozen context applies the min100 expression-unit
+gate. Native records also exist outside the old exact-cell roster. The original
+structure/count acceptance proves that frozen view, not complete selected-source
+archive membership. Analysis-unit coverage is not a cell-QC exclusion. Raw
+counts remain in the original read-only store, and no source/cell was deleted.
+
+Next action is an independently versioned native-archive view with explicit
+current-context membership, below-unit-gate and outside-roster flags/reasons,
+including zero/low-quality/identity-unresolved cases as applicable. Whole-study
+exclusions remain explicit and are not automatically reversed. Existing input
+manifest, roster, labels and live source-heldout benchmark stay frozen. Do not
+inflate an archival denominator into independent cells, patients or clinical
+coverage; source aliases and origin/count qualifications remain necessary.
+
+Scientific source/cell totals are retained only in the authorized private review.
+The acceptance register now marks full archive membership pending; earlier
+frozen-scope structural evidence remains valid. Source-only representation
+diagnostics were also reviewed privately; final workflow choice still requires
+heldout transfer, marker-supported identity and granularity/feature sensitivities.
+Goal active and progressing; no completion or blocked claim.
+
+
+## 2026-10-23T14:35:44.655247+00:00 UTC: local archival gate
+
+Final repository validation returned actual exit0, zero errors and one pre-existing warning. Technical JSON syntax, explicit-task whitespace/diff and private-path/credential-pattern review passed. Validator SHA256 ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e. Actual scientific tests and replays are recorded separately; no local skipped fixture is counted as scientific acceptance. Archive only explicit task files, preserve unrelated work, and leave public push pending under the previous automatic-review restriction. Goal remains active with full source/archive/identity/benchmark/mapping/delivery requirements.

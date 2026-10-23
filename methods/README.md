@@ -181,3 +181,6 @@
 
 
 [注释时序比较的受控发现阶段](full-context-annotation-discovery-pilot-20261023.md)：同输入/共同特征候选分群与条件RNA诊断，身份及来源留出验收另列。
+
+
+[来源留出的冻结参考诊断](full-context-source-heldout-reference-20261024.md)：训练/查询信息隔离、Symphony压缩及相同锚点RNA诊断，不以输入标签验证身份。

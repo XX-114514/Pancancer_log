@@ -1,0 +1,15 @@
+{
+  "schema": "representative_discovery_numeric_replay_technical_v1",
+  "observed_UTC": "2026-10-23T14:02:38.427208+00:00",
+  "actual_independent_replay_exit_code": 0,
+  "completed_UTC": "2026-10-23T13:56:06.389302+00:00",
+  "source_chosen_by_size_before_effect_inspection": true,
+  "all_three_seeds_all_methods_native_panels_in_selected_source_replayed": true,
+  "full_pilot_PCA_independently_recomputed_and_parameter_matched": true,
+  "source_local_PCA_and_two_representations_six_programs_replayed": true,
+  "largest_native_panel_float_precision_error": 5.662441253662109e-07,
+  "largest_replayed_RNA_correlation_error": 5.551115123125783e-16,
+  "corrected_B_C_neighborhood_numeric_replay": "not_claimed_in_this_representative_scope",
+  "new_identity_or_production_winner_accepted": false,
+  "private_replay_observation_SHA256": "08f987c8759c3817cd8a5855e8e4862988303df22739b20e5c260e6d627cd1d3"
+}

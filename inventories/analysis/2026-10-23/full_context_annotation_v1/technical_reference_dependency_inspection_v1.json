@@ -1,0 +1,13 @@
+{
+  "schema": "frozen_reference_dependency_technical_v1",
+  "observed_UTC": "2026-10-23T13:47:18.486010+00:00",
+  "package": "symphonypy",
+  "version": "0.2.4",
+  "official_wheel_bytes": 27524,
+  "official_PyPI_wheel_SHA256": "6024b7d92e0ccd6e3e8bc84d3eb22ca34922a47a9f04f5973db7eb70b6c4373a",
+  "old_reference_component_counterexamples_actual_exit": 0,
+  "old_reference_component_tests": 3,
+  "current_repaired_wrapper_requalification": "pending",
+  "shared_environment_modified": false,
+  "biological_data_downloaded": false
+}

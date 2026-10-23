@@ -1,0 +1,14 @@
+{
+  "schema": "native_archive_vs_frozen_context_membership_review_technical_v1",
+  "observed_UTC": "2026-10-23T14:27:50.572095+00:00",
+  "actual_metadata_review_exit_code": 0,
+  "current_reader_uses_legacy_min100_expression_unit_gate": true,
+  "native_records_outside_current_roster_exist": true,
+  "unit_gate_not_accepted_as_cell_quality_exclusion": true,
+  "frozen_context_structure_acceptance_does_not_prove_full_archive_membership": true,
+  "archive_view_extension_and_exclusion_reason_qualification": "pending",
+  "original_raw_matrices_rosters_and_running_benchmark_unchanged": true,
+  "existing_whole_source_scope_exclusions_not_automatically_reversed": true,
+  "private_membership_artifact_SHA256": "654dab600f109204397dc31f232bcfc710db48b82e106560744f97b6a2900b62",
+  "private_review_observation_SHA256": "683ef9409ddbaa1f18838c961a16a953756d0691d0f00ede21ddce6bc9ee0590"
+}

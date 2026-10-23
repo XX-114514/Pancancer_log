@@ -1,0 +1,14 @@
+{
+  "schema": "source_holdout_qualification_boundary_failure_technical_v1",
+  "observed_UTC": "2026-10-23T13:47:18.486010+00:00",
+  "actual_test_exit_code": 1,
+  "actual_supervised_child_exit_code": 1,
+  "failure_in_synthetic_end_to_end_only": true,
+  "cause": "existing_Harmony_backend_scalar_sigma_astype_when_only_one_soft_cluster",
+  "repair": "explicit_cluster_count_and_equal_sigma_vector_preserving_intended_existing_defaults",
+  "original_failed_attempt_retained": true,
+  "shared_environment_modified": false,
+  "real_source_heldout_fit_started": false,
+  "requalification_with_new_small_reference_regression": "required",
+  "private_failure_observation_SHA256": "31859c00195ebba758273a63381296677f901dd7f5239a9df93da811bc9c847e"
+}
