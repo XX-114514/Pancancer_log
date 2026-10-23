@@ -1,0 +1,93 @@
+{
+  "status": "OLD_SOURCE_ACTUAL_INPUT_FAILURE_NEW_BOUNDED_RELAY_STARTED_RESULTS_PENDING",
+  "observed_UTC": "2026-10-23T07:58:37.611687+00:00",
+  "actual_old_source_failure_UTC": "2026-10-23T07:38:37.641934+00:00",
+  "actual_old_control_exit": 2,
+  "old_exact_process_absence_confirmed": true,
+  "old_complete_input_and_native_R_not_reached": true,
+  "prior_contract_SHA256": "f580355e7e04bdac92da36ebc71a197abc5795c6983cf781687442d7803ad90e",
+  "new_contract_SHA256": "2eb12dbbc4344a24bb2cba5a6c8ba87286600833cda92c8b191a7f9956b66122",
+  "new_started_UTC": "2026-10-23T07:54:22.621084+00:00",
+  "new_R_SHA256": "3071361d6c5d2adaffa5c5287e22a69644e8eef9df4b70fa2a56446e84ca8c2e",
+  "all_scientific_R_components_and_analysis_configuration_unchanged": true,
+  "code_SHA256": {
+    "qualify_LN_unit_geometry_RAM_v1.R": "9b2123ec7608207ea08ab194798f38912a23b2b6a3f850e1953eaf882ec98223",
+    "qualify_external_TDLN_units_RAM_v1.R": "07fece7912a6af7ec8d4fda4e51d0a36d00658517035f6bc86d312678b39a907",
+    "derive_LN_hierarchical_protein_states_RAM_v2.R": "532ae2c42067b94a5500adc545c5c51f900617a2eccd2176fce12458313ab9bd",
+    "derive_external_TDLN_parents_states_RAM_v1.R": "64b594be862fde485d0f161d4a53524c2e215d5ccdb4b3f7135de07a66a06b6b",
+    "measure_LN_state_spatial_family_RAM_v1.R": "a460f85987f1c3286d0eab1fbad55597d717bec67f3748a97b0484a0912f6641",
+    "measure_LN_regulatory_specificity_RAM_v1.R": "c2de20ec6f6e86195fd363acd8f5ce7e2e56188bc7b392a6e4498c80aed4e615",
+    "audit_LN_state_spatial_family_RAM_v1.R": "51853384a4b30cb86dc6e5789a2ece1321a700ec85aae5e272e4875658971315",
+    "audit_LN_regulatory_specificity_RAM_v1.R": "65aba69e30eca733b2e26a18a8212e3c0de62b5f96c93a6d742538dd1d3a4606",
+    "measure_external_TDLN_fixed_spatial_RAM_v1.R": "1586040782411e277c1c10d810cd463acc035e07d7414157792eadaa060818e2",
+    "audit_external_TDLN_fixed_spatial_RAM_v1.R": "17836684d23286bdeb63e23d82ed6ed689cf99bc013b3a5e7ca82cfa659ef1d6",
+    "run_external_TDLN_fixed_spatial_native_RAM_v1.R": "50f98283a4e44da81d05b6e42e045588110db49375961d0704afe943148040c4",
+    "pipe_native_RDS_RAM_v1.py": "86d44f8f69433f25245e1737f8bc58205338b2ac158c790539915cfc140b953e",
+    "stream_public_RDS_ordered_RAM_v1.py": "b6f69dcc7dce21adb7befa1901b47905515a89bd9f0381488db089bbb78fc28f",
+    "receive_external_TDLN_opaque_relay_RAM_v1.py": "8c11fbc0aa326ca2dd9e00b0ea21436c6c780f814dfd35cec9ae197b4451605a",
+    "run_external_TDLN_opaque_relay_RAM_v1.py": "002cf1cb94359eee5abef23d7ca0a6b45cfd9ea5d0de49c20e2e0252544fb592",
+    "check_external_TDLN_opaque_relay_v1.py": "fa70cdf25ea48641f50bb5a34ac2a8e668b6c3e3b2dd77b7767dc17eebf019c9",
+    "accept_external_TDLN_fixed_spatial_v1.py": "2ed6f7fe4e8a75c4b7f0d7aa6255fc4070d406825d68a41c73c660eada1151a3",
+    "check_external_TDLN_fixed_acceptance_v1.py": "34f7eebcfc1292837b2f2221591d2069cb0ff979c050c8d966715b9ae32cece2"
+  },
+  "synthetic_checks": {
+    "check_external_TDLN_fixed_acceptance_v1.py": {
+      "actual_exit": 0,
+      "check": {
+        "status": "PASS_ARTIFICIAL_FIXED_SPATIAL_ACCEPTANCE_AND_COUNTEREXAMPLES",
+        "source_exit_input_and_code_binding_checked": true,
+        "known_direction_and_15_slot_BH_BY_oracles_checked": true,
+        "missing_not_zero_and_changed_cutoff_and_individual_payload_rejected": true,
+        "unit_parent_failure_and_pending_not_misreported_as_spatial_evidence": true,
+        "no_real_native_clinical_or_individual_data_read": true,
+        "observed_UTC": "2026-10-23T07:58:37.484120+00:00"
+      }
+    },
+    "check_external_TDLN_opaque_relay_v1.py": {
+      "actual_exit": 0,
+      "check": {
+        "status": "PASS_ARTIFICIAL_ORDERED_BOUNDED_RELAY_AND_SOURCE_HASH_GATES",
+        "reordered_completion_suffix_only_recovery_and_ordered_sink_checked": true,
+        "authentication_certificate_header_origin_and_hash_errors_terminal": true,
+        "short_excess_corrupted_input_and_resource_cap_rejected_before_R": true,
+        "source_independent_full_hash_and_no_local_file_sized_buffer_protocol": true,
+        "no_real_native_individual_clinical_or_payload_files": true,
+        "observed_UTC": "2026-10-23T07:58:37.605647+00:00"
+      }
+    }
+  },
+  "actual_source_artificial_relay_integration": {
+    "observed_UTC": "2026-10-23T07:51:58.970165+00:00",
+    "actual_exit_code": 0,
+    "check": {
+      "status": "PASS_ACTUAL_SSH_OPAQUE_RECEIVE_HASH_GZIP_AND_R_SYNTHETIC_PIPE",
+      "R_result": {
+        "status": "PASS_ARTIFICIAL_OPAQUE_SSH_GZIP_R_PIPE"
+      },
+      "pipe_proof": {
+        "codec": "gzip",
+        "expanded_stream_bytes": 169,
+        "no_native_or_expanded_payload_files": true
+      },
+      "no_real_native_or_individual_data": true
+    }
+  },
+  "source_artificial_integration_proof_SHA256": "0ca3e76f76cd643a5b82ed31c786ff91d806f8c53b148c884324e05e81d58bf0",
+  "transport_diagnostic_proof_SHA256": "5006b1dfc9ca9ebe7a4d5ab4a7c98f66d073705f9a366ed57070b968bb64f46b",
+  "local_first_range_probe_SHA256": "a3451e85185d15bf84a63c184a3937f7e29afa7a38851bda52633d019933d227",
+  "no_real_patient_sample_cell_clinical_arrays_or_scientific_effects_in_public_receipt": true,
+  "source_whole_input_and_real_effects_pending": true,
+  "public_push_not_retried_after_prior_rejection": true,
+  "repository_validation": {
+    "actual_exit": 0,
+    "errors": 0,
+    "warnings": 1,
+    "output_SHA256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "exact_new_source_live_observed_UTC": "2026-10-23T07:57:52.232595+00:00",
+  "exact_source_live_proof_SHA256": "041beb6cdeb89a12f353907e2bde0187e6f814cc518f7ebfba47ed8496e0c04d",
+  "artificial_SSH_upload_probe_status": "INCOMPLETE_NO_WHOLE_HASH_NO_BANDWIDTH_CLAIM",
+  "artificial_upload_probe_SHA256": "41328dcf355abc47896f21b5ebf7362195677d7a212d7e5353d70f50be9ebacb",
+  "manual_generic_code_and_technical_receipt_privacy_diff_review": true,
+  "new_route_not_claimed_faster_or_network_fully_resolved": true
+}
