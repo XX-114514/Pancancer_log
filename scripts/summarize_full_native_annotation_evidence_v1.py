@@ -49,6 +49,17 @@ def main(args):
     cues, ct = accepted(args.supplemental, args.supplemental_audit, 'supplemental_native_index_v1.json')
     if set(refs) != set(cues) or rt['n_archive_rows'] != ct['n_archive_rows']:
         raise ValueError('Full native evidence source scope differs')
+    sup = json.loads((args.author_evidence / 'provenance/supervisor_terminal_v1.json').read_text())
+    at = json.loads((args.author_evidence / 'provenance/terminal_v1.json').read_text())
+    ap = args.author_evidence / 'outputs/native_author_label_evidence_v1.json'
+    if sup['actual_child_exit_code'] != 0 or sup['wall_timeout'] or sha256_file(ap) != at['output_sha256']:
+        raise ValueError('Completed and unchanged semantic author coverage required')
+    ad = json.loads(ap.read_text())
+    if not ad.get('merged_source_missing_placeholders_are_not_author_classes'):
+        raise ValueError('Source missing placeholders not qualified')
+    authors = {r['source']: r for r in ad['sources']}
+    if len(authors) != len(ad['sources']) or set(authors) != set(refs):
+        raise ValueError('Author evidence source coverage differs')
     reports = []
     for ds in sorted(refs):
         rm, rv = read_source(args.reference, refs[ds]); cm, cv = read_source(args.supplemental, cues[ds])
@@ -86,8 +97,13 @@ def main(args):
                 'n_positive_with_no_base_family_support': int((cue & (n_support == 0)).sum()),
                 'n_positive_with_one_base_family_support': int((cue & (n_support == 1)).sum()),
                 'n_positive_with_multiple_base_family_support': int((cue & (n_support > 1)).sum())}
+        author = authors[ds]
+        if author['n_archive_rows'] != len(bits) or author['native_author_field'] != rm['author_field']:
+            raise ValueError('Author coverage row or field origin differs')
         reports.append({'source': ds, 'n_archive_rows': len(bits), 'n_positive_RNA': int(positive.sum()),
-            'n_nonmissing_author_labels': rm['n_nonmissing_author_labels'],
+            'n_literal_nonempty_selected_label_values_in_original_reference_receipt': rm['n_nonmissing_author_labels'],
+            'n_semantically_nonmissing_author_labels': author['n_author_labels_nonmissing'],
+            'source_missing_sentinels_excluded_from_semantic_coverage': True,
             'native_support_counts_not_identity_labels': family_counts,
             'positive_RNA_support_multiplicity': {str(k): int((positive & (n_support == k)).sum()) for k in np.unique(n_support[positive])},
             'reference_proposals_not_truth': reference_counts,
@@ -115,7 +131,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    for name in ['reference', 'reference-audit', 'supplemental', 'supplemental-audit', 'output']:
+    for name in ['reference', 'reference-audit', 'supplemental', 'supplemental-audit', 'author-evidence', 'output']:
         parser.add_argument('--' + name, required=True, type=Path)
     parser.add_argument('--output-cap-bytes', type=int, default=8 * 1024 ** 2)
     args = parser.parse_args()

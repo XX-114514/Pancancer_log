@@ -2020,3 +2020,8 @@ Common-measurement source holdout, independent audit and paired query comparison
 ### 2026-10-23T20:15:53.941644+00:00 UTC / 2026-10-24T04:15:53.941644+08:00 UTC+8: native cue, anatomy and modality milestone
 
 Supplemental native evidence independently accepted, including3970 direct native samples. Full-source anatomical/context cross-tabs and source-modality evidence overlay completed with actual exit0 and six actual counterexamples across the two stages. These preserve inherited labels, unknown metadata and original capture/patient/alias gates; full reference evidence still running. See [method](methods/native-anatomy-and-modality-evidence-20261024.md). Full goal active; final identities/mapping/views remain, cloud sync pending after prior rejection.
+
+
+### 2026-10-23T20:29:01.549003+00:00 UTC: full reference extraction complete
+
+Full selected-native reference extraction completed with actual exit 0. Index SHA 80d4330cbd75cdf7960b89109c6083a598ae523ffa60a13fe800e4ebdbf7c466; wall 3,890.56 seconds, peak RSS 4,311,449,600 bytes, written bytes 247,103,562 at final source checkpoint. Native counts were not copied. The full independent auditor launched after a fresh bounded quota/RAM preflight; producer completion is not full evidence acceptance or final annotation. Author-label evidence inventory is complete. Provisional source-local routing is prepared behind independent evidence acceptance. Full goal remains active; cloud sync pending after prior rejection.
