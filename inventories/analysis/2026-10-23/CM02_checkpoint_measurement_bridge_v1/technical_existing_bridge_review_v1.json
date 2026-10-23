@@ -1,0 +1,32 @@
+{
+  "status": "EXISTING_SOURCE_AGGREGATE_MEASUREMENT_BRIDGE_REVIEW_COMPLETE",
+  "observed_UTC": "2026-10-23T08:27:24.630518+00:00",
+  "accepted_input_bindings": {
+    "accepted_measurement_SHA256": "da742502a5d9b5aab5436166439181877cb0134cc842d66efd22799a721a3388",
+    "frozen_marker_map_SHA256": "0be19ba6cfa81d05f794978ffd08de015302d8ee5964feddd05a68d50600c967",
+    "actual_snapshot_SHA256": "1224b7decb99a837733506505d0c5882e7f233199424912e2e6f6aef5ae00b40",
+    "complete_native_source_SHA256": "e657afca4b65289b307a40cc14eca9391f5e545ab0bbaa88c9ff50a7b5f99a4a",
+    "new_frozen_contract_SHA256": "2eb12dbbc4344a24bb2cba5a6c8ba87286600833cda92c8b191a7f9956b66122"
+  },
+  "private_review_SHA256": "fb61ee6b97cb1cd307d2a56c1abfd5caf62bd11e6ed1a444f70e1f4fc14e3598",
+  "private_report_SHA256": "0fb12392feab220149a9d2f67432dfff5e88b33399ed453c13139941b60416f9",
+  "actual_and_accepted_numeric_profiles_identical": true,
+  "same_input_and_completed_source_binding_checked": true,
+  "public_scope_generic_method_and_technical_hashes_only": true,
+  "no_candidate_names_channel_results_source_counts_or_scientific_effects_in_receipt": true,
+  "no_new_raw_individual_matrices_weights_or_models": true,
+  "active_v2_workflow_unchanged": true,
+  "server_input_cache_permission_pending": true,
+  "public_push_prior_rejection_not_retried": true,
+  "existing_proxy_service_small_range_recovery_proof_SHA256": "a6e075eef6e9963832a4ab9ea1414b6743d4eaf8f5131e91c12a4033cbc26c27",
+  "existing_proxy_complete_range_verified": true,
+  "no_global_proxy_node_or_port_changes": true,
+  "bulk_or_Codex_permanent_resolution_not_claimed": true,
+  "repository_validation": {
+    "actual_exit": 0,
+    "errors": 0,
+    "warnings": 1,
+    "validation_output_SHA256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "manual_private_public_boundary_and_diff_review": true
+}
