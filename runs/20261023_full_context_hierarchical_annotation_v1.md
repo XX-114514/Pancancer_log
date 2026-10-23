@@ -435,3 +435,8 @@ First attempt passed numerical/API gates then exited1 before fitting because Num
 ### 2026-10-23T19:04:49.054659+00:00 UTC: lineage feature/graph comparison accepted
 
 Version2 producer and independent auditor both actual exit0. Eight graph conditions across two predefined lineages completed; all2000 aggregates and126852 finite independent predictions reproduced, maximum discrepancy5.33e-15. All owned graph jobs terminal. Common-query coverage and candidate-label scope constrain interpretation; no universal winner or final atlas labels. Next new-route source holdout, full native annotation/reference mapping and qualified views. [Evidence](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_lineage_graph_factor_comparison_v1.json). Full objective active; other branches not refreshed, public sync pending.
+
+
+### 2026-10-23T19:12:21.619978+00:00 UTC: new-route feature holdout launched
+
+Train-only shared versus lineage feature selection started on frozen source folds, with conditional native-RNA transfer and paired coverage. Actual producer completion and independent audit pending. Four threads, existing data/software, no new authoritative labels. [Contract](../methods/new-route-feature-source-holdout-20261024.md). Full goal active; public sync pending.
