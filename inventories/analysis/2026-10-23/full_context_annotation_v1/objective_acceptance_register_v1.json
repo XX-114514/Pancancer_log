@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T18:09:53.278708+00:00",
+  "updated_UTC": "2026-10-23T18:32:49.704832+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -20,8 +20,8 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "source_lineage_pilot_native_group_proposals_and_independent_replay_accepted_equal_per_cell_confidence_and_full_identity_pending",
-      "evidence": "technical_source_lineage_and_roles_v1.json",
+      "status": "pilot_native_group_and_common_cell_confidence_crosswalk_computationally_accepted_full_archive_identity_pending",
+      "evidence": "technical_common_cell_confidence_v2.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified"
     },
     {
@@ -33,8 +33,8 @@
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "both_lineage_contexts_same_query_state_comparisons_independently_replayed_equal_cell_conflict_rules_rare_unknown_and_mixing_review_pending",
-      "evidence": "technical_source_lineage_and_roles_v1.json"
+      "status": "paired_state_and_equal_cell_guard_replays_accepted_rare_unknown_orthogonal_graph_state_and_comparable_mixing_pending",
+      "evidence": "technical_common_cell_confidence_v2.json"
     },
     {
       "id": "R6_full_scale",

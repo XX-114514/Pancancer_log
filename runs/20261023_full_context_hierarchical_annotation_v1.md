@@ -415,3 +415,18 @@ Native routing, six-resolution source-lineage discovery and native role coverage
 ## 2026-10-23T18:09:53.278708+00:00 UTC: independent new-route audits complete
 
 Native group review, all-source axis/author/branch and size-selected native-reference replay, and both-context comparison replay are accepted with actual exit0. All exact owned jobs are terminal. [Technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_source_lineage_and_roles_v1.json) records hashes and computation scope. Per-cell confidence/rare-unknown review, selected workflow/full mapping and qualified views remain pending; full goal active.
+
+
+### 2026-10-23T18:32:49.704832+00:00 UTC: common cell-confidence v2 accepted
+
+Both producer versions completed; v2 preserves broad-family reference/group dropout conflicts. Ten counterexamples and independent all-cell guard/crosswalk plus selected native fine-marker replay passed with actual exit0. All owned confidence jobs terminal; candidates not promoted to final labels. Feature/engine/new-route holdout, full mapping and qualified views remain pending. [Evidence](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_cell_confidence_v2.json). Full objective active; public cloud sync pending after prior rejection. Other project branches not refreshed.
+
+
+### 2026-10-23T18:39:09.431834+00:00 UTC: feature and graph-engine factor comparison running
+
+Actual source seven counterexamples and Scanpy/BBKNN API smokes passed; frozen four-condition comparison launched. Real results and independent audit pending. [Contract](../methods/lineage-features-and-graph-engine-comparison-20261024.md). No new data downloads, native count copies or final label/engine promotion; full goal active, public sync pending.
+
+
+### 2026-10-23T18:41:57.826901+00:00 UTC: graph comparison encoding repair v2
+
+First attempt passed numerical/API gates then exited1 before fitting because NumPy Unicode addition was unsupported. Preserved failure; new version uses explicit source-qualified keys and an added counterexample. Scientific design unchanged; v2 actual execution pending. [Technical trajectory](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_lineage_graph_factor_comparison_v1.json).

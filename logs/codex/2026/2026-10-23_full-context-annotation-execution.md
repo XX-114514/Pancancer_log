@@ -563,3 +563,43 @@ These are computational acceptance gates. Group proposal coverage is not per-cel
 A private source-aggregate state-retention figure was rendered and visually checked. Local plotting first failed because matplotlib was unavailable; reused the existing source plotting library for an in-RAM render, returned the authorized aggregate PNG with matching SHA, installed nothing and exported no individual data. The figure is outside public Git.
 
 The preceding code milestone was committed locally as ccdf810. Public push remains blocked by the prior automatic-review rejection; no alternate upload attempted. Source-specific scientific interpretation and next gates remain private.
+
+
+## 2026-10-23T18:19:15.495905+00:00 UTC / 2026-10-24T02:19:15.495905+08:00 UTC+8: common cell-level confidence implementation
+
+Previous turn classified as progress: source-lineage native and comparison stages completed with independent replay, local commits ccdf810/a402261. Revalidated clean owned worktree state and full acceptance register; unrelated untracked files preserved.
+
+Implemented a shared evidence guard and nine meaningful counterexamples for all ABC pilot partitions. It preserves coherent minority-cell native/reference support, coarse/within-family conflicts, marker dropout, gamma RNA requirements and rare direct identity without claiming a small-branch fine graph. New source producer reuses accepted frozen references, verifies all native group fractions, and writes categorical confidence/old-label crosswalk sidecars with parent-marker origin explicit. No graph/count/author/clinical inputs change. See [contract](../../../methods/cell-level-annotation-confidence-20261024.md).
+
+The local policy counterexamples passed; source execution, serialized acceptance and independent audit are pending. No new downloads or public push; full objective remains active.
+
+
+## 2026-10-23T18:32:49.704832+00:00 UTC / 2026-10-24T02:32:49.704832+08:00 UTC+8: common cell-confidence v2 accepted
+
+Version1 completed at18:21:29 UTC with actual exit0 and nine tests. Code review identified a semantic boundary: native-marker dropout with opposing group/reference T-versus-NK or B-versus-plasma proposals must retain the broader family. Preserved v1, implemented v2 with a tenth counterexample and explicit incomplete-native-support wording. Version2 completed18:24:38 UTC, actual exit0; frozen native panel group aggregates, hard conflicts, direct fine support and serialized sidecars all reproduced. No native expression or graph was modified.
+
+Independent v2 audit completed18:26:28 UTC, actual exit0. All-cell vectorized coarse guards/direct-fine decisions, version-change scope, source axes, crosswalks and parent-marker provenance passed; the size-selected direct CSR replay checked207160 fine-marker Boolean values. Audit output SHA b792930a2874c4691382333c5a1c6c5a5e6e5fe41bb8383d670308b65d6b09ed. All exact owned confidence jobs were terminal by18:28:30 UTC.
+
+Evidence tiers are candidate annotations, not calibrated probabilities or accuracy. Guarded subsets explicitly point to parent-group descriptive markers; own-subset DEG is not claimed. Full eight-part goal remains active. Next freeze lineage feature and graph-engine factors, preserve actual RNA-state gradients and evaluate eligible shared types without requiring source-unique types to mix. Public push prior rejection remains; ordinary local commit follows validation. Technical receipt: [confidence acceptance](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_cell_confidence_v2.json).
+
+
+## 2026-10-23T18:39:09.431834+00:00 UTC / 2026-10-24T02:39:09.431834+08:00 UTC+8: lineage feature and graph-engine factor comparison launched
+
+Frozen four conditions in the T/NK and myeloid pilot routes: shared-feature Harmony reproduction, lineage-feature uncorrected diagnostic, lineage-feature Harmony, and the same PCA with existing BBKNN. Full protocol specifies heldout RNA, actual neighbor prediction excluding the query expression unit, identical-query paired scores, common direct-candidate purity/unknown-neighbor coverage, qualified same-type source composition, rare RNA route denominators and mapping limitations. No clinical outcome selection or final engine promotion.
+
+Local diagnostic test invocation stopped because bundled Python lacks scipy; installed nothing. The actual source stage launched at2026-10-23T18:37:23.277745+00:00, then passed all seven numerical counterexamples and two synthetic graph API smokes. The same exact supervisor/child are running as of2026-10-23T18:38:31.675711+00:00. Native input/real comparison terminal and independent audit remain pending. Audit code is prepared but has not been launched before its producer dependency.
+
+Checked installed source APIs and official BBKNN documentation; scIB-E motivates a separate within-type structure evaluation. Attempted Nature scIB original page returned an inaccessible authentication redirect; no new claim relies on that failed fetch. Exact model/feature/graph parameters are in the source-frozen contract.
+
+See [method](../../../methods/lineage-features-and-graph-engine-comparison-20261024.md) and [technical launch](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_lineage_graph_factor_comparison_v1.json). Full eight-part objective remains active. Local code/protocol commit after privacy and repository validation; prior public push rejection preserved.
+
+
+## 2026-10-23T18:41:57.826901+00:00 UTC / 2026-10-24T02:41:57.826901+08:00 UTC+8: graph comparison pre-fit compatibility repair
+
+The first source run exited1 at18:39:43 UTC after successful seven counterexamples and actual engine API smokes. Native input had loaded; source-qualified expression-unit construction used scalar string plus a NumPy Unicode array, which this environment does not implement. No graph/model was fitted. The failure, frozen code and directory are preserved.
+
+Version2 uses explicit string construction, preserves leading zeros and source namespaces, and adds an eighth counterexample. All biological inputs, feature estimator, seeds, parameters and metric definitions stay fixed. New stage launched at2026-10-23T18:41:06.829628+00:00; tests/real terminal remain pending here. Old process identity was confirmed terminated before new launch. Prepared independent auditor receives the same encoding correction. A local compressed-wrapper output name was checked and corrected before dispatch; the original wrapper was regenerated byte-identically from its preserved body SHA. No source data or running code changed.
+
+Prior repository validator completed actual exit0, zero errors and one pre-existing provenance warning. New versioned code receives another owned diff/privacy/validator pass before ordinary commit. Public push previous rejection remains.
+
+At 2026-10-23T18:42:27.136188+00:00 UTC, v2 actual eight counterexamples and both graph API smokes passed; native inputs continue on the same live process. The old source failure was independently localized to NumPy Unicode add, with zero graph/model files created. New repository validator actual exit0, zero errors and one pre-existing provenance warning; owned code privacy/absolute-path/whitespace checks passed. Ordinary local milestone commit follows; public push remains pending.

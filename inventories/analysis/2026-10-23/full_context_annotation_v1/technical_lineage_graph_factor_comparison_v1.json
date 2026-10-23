@@ -1,0 +1,138 @@
+{
+  "schema": "technical_lineage_graph_factor_comparison_v1",
+  "launched_UTC": "2026-10-23T18:37:23.277745+00:00",
+  "observed_UTC": "2026-10-23T18:38:31.675711+00:00",
+  "status": "v1_prefit_namespace_failure_preserved_v2_encoding_only_repair_launched_actual_acceptance_pending",
+  "config_sha256": "55b5c90d1993fbbb62220ed50496db6e2f4bfac854b1e5365ee4b3fd58edc205",
+  "executed_script_SHA256": {
+    "scripts/compare_lineage_graph_engines_v1.py": "f5504d107ca5f0440accc304fc46a5831c9974dd54aa137075efca9fd278d104",
+    "scripts/annotation_graph_diagnostics_v1.py": "26991af0caab93dda29a29be7c731c64217e60874c68ca71fe16140390bc421e",
+    "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+    "scripts/paired_granularity_review_v1.py": "b433b05d61b0cf0af67e4aa0954742d4f8f90a5c833ce55a3b6298239cc11c1a",
+    "scripts/annotation_granularity_metrics_v1.py": "453781b407a3a94b449af3989fb3ad064466c789f616aa97fcd13cc2402d79d8",
+    "scripts/load_annotation_pilot_native_v1.py": "2600266035065c71bf46079c3be691fbcc7c556d5027531e4f2b368a731c4e78",
+    "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+    "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+    "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+    "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f",
+    "tests/test_annotation_graph_diagnostics_v1.py": "734fa9a2d180addbc1bcc11cddf828340c4a0d67c9cb30ab3a3b9fa64e06d97b"
+  },
+  "prepared_independent_audit_sha256": "9cbb54852d447083b82d353d418cb8469628cfa3e8c44fbc7d144bdc3e38e727",
+  "actual_tests": {
+    "actual_exit_code": 0,
+    "n_tests": 7,
+    "no_skips": true,
+    "actual_graph_API_smoke": [
+      {
+        "engine": "Scanpy",
+        "n_cells": 160,
+        "graph_nnz": 6488,
+        "actual_degree_min": 29,
+        "actual_degree_median": 35.0,
+        "actual_degree_max": 101,
+        "n_isolated": 0,
+        "actual_csr_uncompressed_bytes": 78500,
+        "symmetric_within_1e6": true,
+        "self_edges_removed_for_diagnostics": true
+      },
+      {
+        "engine": "BBKNN",
+        "n_cells": 160,
+        "graph_nnz": 2120,
+        "actual_degree_min": 9,
+        "actual_degree_median": 12.0,
+        "actual_degree_max": 33,
+        "n_isolated": 0,
+        "actual_csr_uncompressed_bytes": 26084,
+        "symmetric_within_1e6": true,
+        "self_edges_removed_for_diagnostics": true
+      }
+    ]
+  },
+  "exact_supervisor_live": true,
+  "exact_child_live": true,
+  "local_test_attempt": "bundled_runtime_missing_scipy_no_install_used_existing_source_environment",
+  "current_native_counts_unchanged": true,
+  "source_scientific_aggregate_export": false,
+  "new_identity_or_method_winner": false,
+  "full_goal_complete": false,
+  "public_push": "prior_auto_review_rejection_preserved_cloud_sync_pending",
+  "v1_actual_terminal": {
+    "completed_UTC": "2026-10-23T18:39:43.410433+00:00",
+    "actual_child_exit_code": 1,
+    "wall_timeout": false,
+    "science_terminal_exists": false,
+    "PID": 234076,
+    "startticks": "359571214"
+  },
+  "v1_failure": {
+    "error_class": "UFuncTypeError",
+    "sha256": "673225a8f60ed57d93fad490b59599be9535ba308854a0b2e88f847a0d7dc4a3",
+    "safe_error": "see_private_failure_file"
+  },
+  "v1_exact_processes_terminal": true,
+  "v2_launch": {
+    "observed_UTC": "2026-10-23T18:41:06.829628+00:00",
+    "script_SHA256": {
+      "scripts/compare_lineage_graph_engines_v2.py": "156e26d6e32be084b0e214f86c9fe6d28dbccd49b7a8fabf4238f32498a8c4c5",
+      "scripts/annotation_graph_diagnostics_v1.py": "26991af0caab93dda29a29be7c731c64217e60874c68ca71fe16140390bc421e",
+      "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+      "scripts/paired_granularity_review_v1.py": "b433b05d61b0cf0af67e4aa0954742d4f8f90a5c833ce55a3b6298239cc11c1a",
+      "scripts/annotation_granularity_metrics_v1.py": "453781b407a3a94b449af3989fb3ad064466c789f616aa97fcd13cc2402d79d8",
+      "scripts/load_annotation_pilot_native_v1.py": "2600266035065c71bf46079c3be691fbcc7c556d5027531e4f2b368a731c4e78",
+      "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+      "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+      "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+      "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f",
+      "tests/test_annotation_graph_diagnostics_v2.py": "cfe90068f99dce43853068854b00e0f30f7812f6582444371af1849f06b02bf2"
+    },
+    "config_sha256": "911df6cc13167a68442726917e40efc260efdb51d96c4d0531dfef1f67e07ed9",
+    "stage": "LINEAGE_GRAPH_FACTOR_COMPARISON_LAUNCHED_TESTS_AND_BIOLOGICAL_COMPARISON_PENDING"
+  },
+  "v2_repair": "scalar_string_plus_numpy_Unicode_array_replaced_by_explicit_source_qualified_string_construction",
+  "scientific_parameters_changed": false,
+  "v2_additional_counterexample": "Unicode_leading_zero_and_cross_source_key_preservation",
+  "prepared_v2_auditor_sha256": "96dccd663621e51e5c03cf8dfb6c7b5e36bac8b943bf21ed36a19a4d782e9a2d",
+  "v2_status": "eight_actual_counterexamples_and_both_API_smokes_passed_real_comparison_running",
+  "v2_observed_UTC": "2026-10-23T18:42:27.136188+00:00",
+  "v2_actual_tests": {
+    "actual_exit_code": 0,
+    "n_tests": 8,
+    "no_skips": true,
+    "actual_graph_API_smoke": [
+      {
+        "engine": "Scanpy",
+        "n_cells": 160,
+        "graph_nnz": 6488,
+        "actual_degree_min": 29,
+        "actual_degree_median": 35.0,
+        "actual_degree_max": 101,
+        "n_isolated": 0,
+        "actual_csr_uncompressed_bytes": 78500,
+        "symmetric_within_1e6": true,
+        "self_edges_removed_for_diagnostics": true
+      },
+      {
+        "engine": "BBKNN",
+        "n_cells": 160,
+        "graph_nnz": 2120,
+        "actual_degree_min": 9,
+        "actual_degree_median": 12.0,
+        "actual_degree_max": 33,
+        "n_isolated": 0,
+        "actual_csr_uncompressed_bytes": 26084,
+        "symmetric_within_1e6": true,
+        "self_edges_removed_for_diagnostics": true
+      }
+    ]
+  },
+  "v2_exact_supervisor_live": true,
+  "v2_exact_child_live": true,
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "existing_warning": "preexisting_provenance_path_warning",
+    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  }
+}

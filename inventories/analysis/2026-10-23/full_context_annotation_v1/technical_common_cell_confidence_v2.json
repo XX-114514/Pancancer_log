@@ -1,0 +1,86 @@
+{
+  "schema": "technical_common_cell_confidence_v2",
+  "observed_UTC": "2026-10-23T18:28:30.164253+00:00",
+  "documented_UTC": "2026-10-23T18:32:49.704832+00:00",
+  "stages": [
+    {
+      "stage": "20261024_full_context_cell_identity_confidence_v1",
+      "terminal": {
+        "status": "COMMON_CELL_CONFIDENCE_AND_OLD_LABEL_CROSSWALK_COMPLETE_NOT_NEW_AUTHORITY",
+        "completed_UTC": "2026-10-23T18:21:29.150367+00:00",
+        "n_tests_actual_no_skips": 9,
+        "output_sha256": "a75a36767ad4b3bef790c50a215bf6bd1b3957cc1af25b3f4903a0ec9c078213",
+        "summary_sha256": "a62ece08b27836720832ed32755760d9b42f84f59b41d44f4483d5fa12fe282f",
+        "all_source_native_panel_group_aggregates_reproduced": true,
+        "all_hard_cell_conflicts_retained": true,
+        "all_direct_cell_fine_candidates_method_invariant": true,
+        "all_sidecars_serialized_readback_identical": true,
+        "wall_seconds": 80.13252515299246,
+        "peak_RSS_bytes_Linux": 2317799424,
+        "written_bytes_before_terminal": 3366830,
+        "new_authoritative_labels": false,
+        "native_counts_copied": false
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    },
+    {
+      "stage": "20261024_full_context_cell_identity_confidence_v2",
+      "terminal": {
+        "status": "COMMON_CELL_CONFIDENCE_V2_DROPOUT_CONFLICT_AND_CROSSWALK_COMPLETE_NOT_NEW_AUTHORITY",
+        "completed_UTC": "2026-10-23T18:24:38.665055+00:00",
+        "n_tests_actual_no_skips": 10,
+        "output_sha256": "9f362088c54bce9b985156756fb5eeb588fb13d88eb384cc0c9dc44bf447f8b0",
+        "summary_sha256": "e486474fdac00e7d11cbef5f7960455e719479ce8f69c36097a9a171f2f056ac",
+        "all_source_native_panel_group_aggregates_reproduced": true,
+        "all_hard_cell_conflicts_retained": true,
+        "all_direct_cell_fine_candidates_method_invariant": true,
+        "all_sidecars_serialized_readback_identical": true,
+        "wall_seconds": 87.88042267411947,
+        "peak_RSS_bytes_Linux": 2364989440,
+        "written_bytes_before_terminal": 3369453,
+        "new_authoritative_labels": false,
+        "native_counts_copied": false
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    },
+    {
+      "stage": "20261024_full_context_cell_identity_confidence_audit_v2",
+      "terminal": {
+        "status": "COMMON_CELL_CONFIDENCE_V2_INDEPENDENT_GUARDS_NATIVE_FINE_AND_CROSSWALK_ACCEPTED",
+        "completed_UTC": "2026-10-23T18:26:28.745191+00:00",
+        "output_sha256": "b792930a2874c4691382333c5a1c6c5a5e6e5fe41bb8383d670308b65d6b09ed",
+        "direct_native_fine_boolean_values_replayed": 207160,
+        "all_source_scope_complete": true,
+        "wall_seconds": 17.73486960818991,
+        "peak_RSS_bytes_Linux": 2473107456,
+        "new_authoritative_labels": false,
+        "native_counts_copied": false
+      },
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "exact_supervisor_live": false,
+      "exact_child_live": false
+    }
+  ],
+  "scripts_sha256": {
+    "scripts/cell_identity_confidence_v1.py": "1140c7d92822771d2dc6cb4d740c5eeb3433af0524615327d0cd5977fee3ab44",
+    "scripts/build_cell_identity_confidence_v1.py": "2bc2b5bb8cd8537634f41ba484242fe4a0edd869dccda3d39b3a82019d79d4d2",
+    "tests/test_cell_identity_confidence_v1.py": "d44e09e06efdd6b81acc96e90da2111a41fc2f38a98dbd281772899b721d9342",
+    "scripts/cell_identity_confidence_v2.py": "f5640f1ba3946e8c5ae1b659ee19cf4c4bed172f3802b1b019c3f555d16a9347",
+    "scripts/build_cell_identity_confidence_v2.py": "91a200eb823521798aa50c25097a5b3c0d19d0e9139e43a4f5557a1f9b0620e1",
+    "tests/test_cell_identity_confidence_v2.py": "feef7fe427ab7f2ba74ecd978acb36b46ed780b65d9dde4eafe964583b670b21",
+    "scripts/audit_cell_identity_confidence_v2.py": "d579c268959e01c26cff1d83b9e35c69378c9b0a86fbcc230200aea8bcabb19e"
+  },
+  "v1_status": "successful_execution_preserved_semantic_refinement_not_new_authority",
+  "v2_change": "reference_only_T_NK_or_B_Plasma_group_reference_disagreement_broad_family_fallback_and_explicit_inferred_fine_evidence_wording",
+  "independent_audit": "all_cell_coarse_guards_direct_fine_consistency_crosswalks_parent_marker_provenance_and_size_selected_direct_CSR_fine_booleans",
+  "scientific_source_statistics_public_export": false,
+  "full_goal_complete": false,
+  "public_push": "prior_auto_review_rejection_preserved_cloud_sync_pending"
+}

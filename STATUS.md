@@ -1975,3 +1975,13 @@ Native coarse routing, true source-by-lineage A/new-route C discovery and select
 ### 2026-10-23T18:09:53.278708+00:00 UTC: latest full-context atlas branch
 
 New native group annotations and both-context comparison diagnostics have passed independent computational replay; all owned scientific jobs are terminal. Equal cell-level confidence, rare/unknown review, new-route holdout, feature/engine qualification and full mapping are next. No final method or authoritative labels promoted. [Current run](runs/20261023_full_context_hierarchical_annotation_v1.md). Other project branches not refreshed; public push prior rejection remains.
+
+
+### 2026-10-23T18:32:49.704832+00:00 UTC: common cell-confidence v2 accepted
+
+Both producer versions completed; v2 preserves broad-family reference/group dropout conflicts. Ten counterexamples and independent all-cell guard/crosswalk plus selected native fine-marker replay passed with actual exit0. All owned confidence jobs terminal; candidates not promoted to final labels. Feature/engine/new-route holdout, full mapping and qualified views remain pending. [Evidence](runs/20261023_full_context_hierarchical_annotation_v1.md). Full objective active; public cloud sync pending after prior rejection. Other project branches not refreshed.
+
+
+### 2026-10-23T18:42:27.136188+00:00 UTC: current full-context graph-factor comparison
+
+Common cell-confidence v2 and independent replay are accepted. Graph comparison first attempt stopped before fitting on Unicode index encoding; preserved and repaired in a new run. Eight actual numerical tests and both installed engine API checks passed; real four-condition comparison running. Full mapping, new-route holdout and source-qualified views remain pending. [Run](runs/20261023_full_context_hierarchical_annotation_v1.md). Other project branches not refreshed; public sync remains pending.
