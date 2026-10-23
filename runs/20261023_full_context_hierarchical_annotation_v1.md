@@ -507,3 +507,10 @@ Joint coverage and full provisional routing are complete with actual exit0; [tec
 ### 2026-10-23T21:16:26.409734+00:00 UTC / 2026-10-24T05:16:26.409734+08:00 UTC+8: full source-local graph stage running
 
 Full input preparation actual exit0; all-source denominator/feature/resource review completed. Full local graphs actually launched at 2026-10-23T21:14:43.027011+00:00, eight counterexamples passed, exact handles live and native fitting begun. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_native_local_graph_launch_v1.json). Final full graphs, independent audits, local group annotation and shared identities remain pending; full objective active.
+
+
+### 2026-10-23T21:30:46.970859+00:00 UTC: full source-local graph preflight and native markers
+
+[Technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_local_graph_preflight_marker_launch_v1.json). Completed-source graph preflight actual0:14 sources,79 models,692 direct native rows, one100-row complete branch re-fit with identical PCA and graph. Output SHA854151598ff981a19bf19c16cf278b7f713436a2111dd48844d0547959085105. This does not accept all sources or infer biological truth. Full auditor prepared, not launched.
+
+Native own-group expression/marker and within-unit support stage started21:29:00 UTC, five actual checks passed; all-source completion/independent audit pending. At21:29:26 UTC: graph18 completed sources/108 models; native marker evidence2 completed sources. Both exact handles live. [Method](../methods/source-local-native-evidence-and-audits-20261024.md). Full objective, final labels/crosswalk and qualified views remain open; no count copy or standalone Zarr claim. Public cloud sync pending after earlier rejection.

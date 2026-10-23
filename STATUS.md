@@ -2045,3 +2045,8 @@ Full selected-native reference audit has actual exit0 and independent native/off
 ### 2026-10-23T21:16:26.409734+00:00 UTC / 2026-10-24T05:16:26.409734+08:00 UTC+8: full-source local graphs running
 
 All-source fit-pool/native feature preparation completed actual exit0 and its denominators/resources were reviewed. Full source-by-provisional-family graph fitting has now started and passed eight source counterexamples. [Receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_native_local_graph_launch_v1.json). Local group annotations, common identities, audits/crosswalk/views remain; no final annotation or standalone Zarr completion claim.
+
+
+### 2026-10-23T21:30:46.970859+00:00 UTC / 2026-10-24T05:30:46.970859+08:00 UTC+8: source-local graph checks and native evidence
+
+Completed-source preflight accepted with actual exit0 and a complete branch numerical replay. All-source native own-group expression/marker evidence now runs beside remaining local graph production, with five actual numerical checks. Full graph/evidence audits and final identities/crosswalk/views remain pending. [Method](methods/source-local-native-evidence-and-audits-20261024.md); [run](runs/20261023_full_context_hierarchical_annotation_v1.md). No new downloads, public push retry or final-Zarr claim.

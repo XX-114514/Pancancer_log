@@ -1,0 +1,38 @@
+{
+  "schema": "source_local_graph_preflight_and_native_marker_launch_v1",
+  "observed_UTC": "2026-10-23T21:29:26.942887+00:00",
+  "graph_producer": {
+    "status": "running_not_complete",
+    "completed_source_files": 18,
+    "saved_local_models": 108,
+    "exact_supervisor_and_child_live": true
+  },
+  "preflight_audit": {
+    "scope": "completed_source_snapshot_not_full_archive_acceptance",
+    "completed_UTC": "2026-10-23T21:27:16.955012+00:00",
+    "n_sources": 14,
+    "n_models_checked": 79,
+    "n_native_rows_directly_recomputed": 692,
+    "replayed_branch_rows": 100,
+    "output_sha256": "854151598ff981a19bf19c16cf278b7f713436a2111dd48844d0547959085105",
+    "wall_seconds": 110.37697499105707,
+    "peak_RSS_bytes_Linux": 2555944960,
+    "actual_supervisor_exit_code": 0,
+    "numerical_tests": 4,
+    "graph_replay_ARI": 1.0,
+    "PCA_replay_max_absolute_error": 0.0
+  },
+  "native_marker_evidence": {
+    "status": "running_not_complete",
+    "actual_startup_tests": 5,
+    "completed_source_files": 2,
+    "launch_UTC": "2026-10-23T21:29:00.911175+00:00",
+    "config_SHA256": "ba5e0cdda8a6b5947d0767c073fe8cadb1408d6efc7f8a736b7e96908f8d459c",
+    "launcher_SHA256": "0f3bcb289596c929ca069c439b56a1d96f053a7ca648802c59e2857bb37f9c4b"
+  },
+  "new_final_identity": false,
+  "all_graphs_recomputed": false,
+  "standalone_Zarr_completed": false,
+  "full_objective": "active_unchanged",
+  "public_sync": "pending_prior_rejection_not_retried"
+}
