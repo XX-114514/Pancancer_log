@@ -450,3 +450,20 @@ Train-only feature holdout completed actual exit0; independent replay running. F
 ### 2026-10-23T19:38:37.749631+00:00 UTC: full-context feature coverage and preflight milestone
 
 New-route source holdout and independent replay accepted; measured-feature metadata completed. Expanded source coverage requires a finite common-measurement transfer check, now running after nine actual counterexamples. Full native evidence continues; completed-source independent axes/native/official-reference preflight passed, full-archive acceptance still pending. [Feature bridge](../methods/full-archive-measured-feature-bridge-20261024.md). Full scope active; selected production mapping, identities and qualified views remain. Other branches not refreshed; public sync pending after prior rejection.
+
+
+### 2026-10-23T19:47:49.205421+00:00 UTC: supplemental native unknown-pool evidence running
+
+All-selected-native supplemental lineage/differentiation readouts launched and passed four actual counterexamples. Original full reference evidence and common-measurement holdout remain on their same handles; no new identity or malignancy calls. Independent supplemental auditor prepared, real result pending. [Method](../methods/supplemental-native-lineage-cues-20261024.md). Full goal active; other branches not refreshed, public sync pending.
+
+
+### 2026-10-23T19:58:54.046974+00:00 UTC / 2026-10-24T03:58:54.046974+08:00 UTC+8: common-feature bridge and carried malignancy registry
+
+Common-feature source holdout, independent replay and exact-query paired comparison all completed with actual exit0; full predeclared source-level diagnostics reviewed privately. Native carried malignancy registry completed across selected sources, separating evaluation coverage from result and preserving parallel historical evidence definitions. New authoritative identities, source qualification and full mapping remain pending. Supplemental/full reference producers continue on existing handles. See [run](20261023_full_context_hierarchical_annotation_v1.md). Public sync pending after prior rejection.
+
+
+### 2026-10-23T20:02:09.584265+00:00 UTC / 2026-10-24T04:02:09.584265+08:00 UTC+8: supplemental full-native producer complete, audit running
+
+Supplemental producer actual exit0 at19:58:00 UTC after full selected-archive completion19:57:59 UTC. Index SHA710116f8a908ccd867c1d84d373614dca1dbbbff733f0155b2bc9f9e47ac6865, wall801.29seconds, peak RSS3,818,340,352bytes. Independent full axes/cue logic and selected direct-CSR replay launched after supervisor completion and remains running. Four original counterexamples passed. These are differentiation/lineage cues; negative cues do not exclude identity and positive cues do not infer malignancy.
+
+Prepared a source-aggregate coverage summarizer gated on both full reference/supplemental producers and their own independently bound successful auditors. It preserves zero/one/multiple native family support, absent/out-of-scope/unscored references and incremental supplemental evidence without assigning labels or doublets. Not executed while full reference evidence remains incomplete. Common-measurement method now states the separate choices of fitting lineage and selecting features, and retains full native/local expression alongside the shared model axis. Full objective remains active.

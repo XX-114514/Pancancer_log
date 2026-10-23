@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T19:38:37.749631+00:00",
+  "updated_UTC": "2026-10-23T20:02:09.584265+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -20,15 +20,19 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "pilot_and_completed_source_full_evidence_preflight_accepted_full_archive_producer_running_local_groups_unknown_pool_pending",
+      "status": "carried_malignancy_registry_complete_supplemental_full_native_producer_complete_audit_running_full_reference_producer_running_identity_review_pending",
       "evidence": "technical_common_cell_confidence_v2.json",
-      "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified"
+      "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified",
+      "additional_evidence": [
+        "technical_supplemental_native_lineage_evidence_v1.json",
+        "technical_native_malignancy_evidence_registry_v1.json"
+      ]
     },
     {
       "id": "R4_ABC",
       "requirement": "frozen same-input A/B/C benchmark, study holdout, separate engine comparison and independent evaluation",
-      "status": "ABC_graph_factors_and_new_route_train_only_holdout_independently_accepted_common_measurement_transfer_bridge_running",
-      "evidence": "technical_new_route_feature_holdout_v1.json"
+      "status": "ABC_graph_original_and_common_feature_holdouts_and_exact_query_paired_comparison_accepted_scope_specific_interpretation_final_production_qualification_pending",
+      "evidence": "technical_common_measurement_source_holdout_v1.json"
     },
     {
       "id": "R5_resolution",

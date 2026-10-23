@@ -1,0 +1,59 @@
+{
+  "schema": "technical_supplemental_native_lineage_evidence_v1",
+  "observed_UTC": "2026-10-23T19:47:49.205421+00:00",
+  "status": "full_selected_archive_producer_actual_exit0_independent_audit_running",
+  "launch": {
+    "observed_UTC": "2026-10-23T19:44:32.893368+00:00",
+    "script_SHA256": {
+      "scripts/audit_full_archive_feature_coverage_v1.py": "79325457a11317e1302b33b8f9fbcf0e547bc84a4f1269ef0a9aa9e3390f897e",
+      "scripts/native_archive_collection_v1.py": "eb4d68d792ef3ceb8479f657bc9072bcc3526f61ccc71b11dc7555251718a7e3",
+      "scripts/native_annotation_review_v1.py": "2f80ae4766c21279a4a3375e8339896f5f4d60fd9902596d3375717440438cc6",
+      "scripts/annotation_representation_pilot_v1.py": "eeff13472e7b938a37e00cce5a323b89d669c84de4293a8df9eb6730616c17b2",
+      "scripts/full_context_atlas_v1.py": "2efded68f74d9b8787272803e4911d657e87014f7bbde31ecc39c69a0551dd24",
+      "scripts/backed_atlas_collection_v1.py": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+      "scripts/native_panel_aggregate_v1.py": "f9d881c2db731daf72cebc7ae64f5fed3b0242e3ffbef1a7f702be36d3325248",
+      "scripts/supervise_atlas_stage_v1.py": "8cb276e56aa5c2544161cc62837906217489da56a4beff05cb561c0f61dbd42f",
+      "scripts/native_supplemental_lineage_evidence_v1.py": "278ef48b2fe5fa937dcd4a37200759596ace85ef0944ea232f04da9a37b39a7b",
+      "tests/test_supplemental_lineage_cues_v1.py": "d0994f9eb52b65a29b316eb1601e15b5c78427449d74dcf230d62f716d31c943"
+    },
+    "config_sha256": "80f4255210687a46b188f739970b9c3bbd23a7f8dd1eb5a45d13485bc89f5e0a",
+    "stage": "FULL_NATIVE_SUPPLEMENTAL_CUE_EXTRACTION_LAUNCHED_NOT_ANNOTATION"
+  },
+  "numerical_tests": {
+    "n_tests": 4,
+    "actual_exit_code": 0,
+    "no_skips": true
+  },
+  "source_scientific_counts_private": true,
+  "native_counts_copied": false,
+  "new_data_or_models_downloaded": false,
+  "new_authoritative_labels": false,
+  "negative_cue_excludes_lineage": false,
+  "positive_cue_assigns_malignancy": false,
+  "auditor_prepared_not_launched": false,
+  "prepared_auditor_sha256": "cf03e2a1ddfed27f7ad78bb6ab0f3c787df3cc63932f0a4138d4ad77b8f6b3dc",
+  "public_push": "prior_auto_review_rejection_preserved_no_retry",
+  "latest_observed_UTC": "2026-10-23T20:01:57.122594+00:00",
+  "producer_terminal": {
+    "status": "FULL_ARCHIVE_SUPPLEMENTAL_NATIVE_CUES_COMPLETE_AUDIT_PENDING",
+    "completed_UTC": "2026-10-23T19:57:59.007567+00:00",
+    "index_sha256": "710116f8a908ccd867c1d84d373614dca1dbbbff733f0155b2bc9f9e47ac6865",
+    "n_sources": 65,
+    "wall_seconds": 801.2914414238185,
+    "peak_RSS_bytes_Linux": 3818340352,
+    "new_authoritative_labels": false,
+    "native_counts_copied": false
+  },
+  "actual_producer_exit_code": 0,
+  "auditor_exact_process_live": true,
+  "full_native_scientific_denominator_private": true,
+  "coverage_summary_implementation": "prepared_not_executed_requires_both_reference_and_supplemental_producers_and_audits",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "preexisting_warning": true,
+    "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
+  },
+  "owned_AST_JSON_private_path_and_whitespace_check": "passed"
+}

@@ -1,7 +1,7 @@
 {
   "schema": "technical_common_measurement_source_holdout_v1",
   "observed_UTC": "2026-10-23T19:38:37.749631+00:00",
-  "status": "actual_nine_counterexamples_passed_producer_running_not_result",
+  "status": "producer_independent_replay_and_fixed_paired_source_comparison_complete",
   "launch": {
     "observed_UTC": "2026-10-23T19:36:58.689754+00:00",
     "script_SHA256": {
@@ -31,7 +31,28 @@
   "native_counts_copied": false,
   "candidate_universe_metadata_only_query_expression_not_ranked": true,
   "source_scientific_results_private": true,
-  "independent_audit": "prepared_not_launched_before_producer_terminal",
+  "independent_audit": {
+    "terminal": {
+      "status": "NEW_ROUTE_FEATURE_HOLDOUT_AXES_FEATURES_PROFILES_AND_DIRECT_PREDICTIONS_ACCEPTED",
+      "completed_UTC": "2026-10-23T19:54:54.674168+00:00",
+      "output_sha256": "f2ea8aabb86cea34492871e16dc34b59a04ac2f41f5ab88edb34a4d4ba0d5fe1",
+      "completed_route_folds": 10,
+      "profile_records_replayed": 384,
+      "independent_finite_prediction_values": 3096,
+      "independent_prediction_max_abs_error": 8.881784197001252e-16,
+      "boundary_tied_query_rows_not_adjudicated": 0,
+      "wall_seconds": 214.97999198175967,
+      "peak_RSS_bytes_Linux": 7931600896,
+      "new_authoritative_labels": false,
+      "native_counts_copied": false
+    },
+    "supervisor_terminal": {
+      "completed_UTC": "2026-10-23T19:54:55.968914+00:00",
+      "actual_child_exit_code": 0,
+      "wall_timeout": false,
+      "science_terminal_exists": true
+    }
+  },
   "new_authoritative_labels": false,
   "public_push": "prior_rejection_preserved_no_retry",
   "repository_validation": {
@@ -42,7 +63,42 @@
     "sha256": "ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e"
   },
   "owned_AST_JSON_private_path_and_whitespace_check": "passed",
-  "latest_observed_UTC": "2026-10-23T19:40:30.427409+00:00",
-  "exact_producer_live": true,
-  "paired_comparison_implementation": "prepared_four_way_matched_queries_and_exact_anchors_native_readout_checks_not_launched"
+  "latest_observed_UTC": "2026-10-23T19:57:13.833693+00:00",
+  "exact_producer_live": false,
+  "paired_comparison_implementation": "complete_four_way_matched_queries_exact_anchors_and_native_readouts",
+  "producer_terminal": {
+    "status": "NEW_ROUTE_TRAIN_ONLY_FEATURE_HOLDOUT_COMPLETE_INDEPENDENT_AUDIT_PENDING",
+    "completed_UTC": "2026-10-23T19:49:22.914833+00:00",
+    "n_folds": 5,
+    "n_completed_route_folds": 10,
+    "n_source_profile_records": 384,
+    "index_sha256": "4f1f42f1909d5032c5e0aae7fb6e58140819bdc35cec335771cb2ed50971c85b",
+    "wall_seconds": 740.853001658339,
+    "peak_RSS_bytes_Linux": 8592568320,
+    "native_counts_copied": false,
+    "final_identity_accuracy_claimed": false,
+    "new_authoritative_labels": false,
+    "candidate_routes_from_transductive_review_condition_evaluation": true,
+    "known_or_possible_source_overlap_retained_in_same_fold": true,
+    "production_winner_selected": false
+  },
+  "producer_supervisor_terminal": {
+    "completed_UTC": "2026-10-23T19:49:24.045174+00:00",
+    "actual_child_exit_code": 0,
+    "wall_timeout": false,
+    "science_terminal_exists": true
+  },
+  "paired_comparison_terminal": {
+    "status": "COMMON_MEASUREMENT_BRIDGE_PAIRED_SOURCE_COMPARISON_COMPLETE",
+    "completed_UTC": "2026-10-23T19:56:26.864022+00:00",
+    "output_sha256": "2049c5625dce93b6551c9709a0a18efe757677e9e445e6b7db71984a1e3b2861",
+    "n_profiles": 384,
+    "n_unavailable_route_folds": 0,
+    "wall_seconds": 4.0659435810521245,
+    "native_counts_read_or_copied": false,
+    "new_authoritative_labels": false
+  },
+  "paired_comparison_actual_exit_code": 0,
+  "paired_source_interpretation": "private_all_predeclared_programs_and_candidate_strata_retained_not_independent_identity_accuracy",
+  "production_winner_selected": false
 }

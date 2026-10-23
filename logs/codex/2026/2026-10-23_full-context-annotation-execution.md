@@ -660,3 +660,38 @@ Local bookkeeping command initially had a dictionary syntax error and executed n
 
 
 Final owned AST/JSON/private-path/whitespace checks passed; repository validator actual exit0, zero errors and one pre-existing warning. A read-only diff command initially used the workspace parent and returned not-a-repository; rerun in the correct repository passed. Prepared the four-condition matched-query bridge comparison with exact anchors/native-readout checks; it remains gated on the new independent audit. Ordinary local commit follows; no public push attempt.
+
+
+## 2026-10-23T19:47:49.205421+00:00 UTC / 2026-10-24T03:47:49.205421+08:00 UTC+8: full-archive unresolved-pool cue extraction
+
+Previous goal turn classified progress: full-source measurement metadata and source preflight accepted, train-only common-measurement bridge actually running, ordinary local commit843ee58. Revalidated worktree and exact live source handles; no restart on observation expiry.
+
+Implemented and launched all-selected-native supplemental measurement for hepatocyte, melanocytic differentiation and neural/neuroendocrine differentiation cues, independent of prior identity gating. Four actual counterexamples passed without skips. Full native totals, measurement masks, gene-detection bitmaps and three descriptive logCP10K panels are retained in compact sidecars; no raw count copy or authoritative labels. The complete objective remains: these cues address explicit gaps, not the whole unknown-pool acceptance.
+
+Reviewed original literature indexed content on hepatocyte/epithelial progenitor continua, melanoma MITF and AXL-associated states, and high/low neuroendocrine phenotypes. Direct PMC pages returned browser challenges; Nature and PubMed direct opens also had access errors. No bypass/download or claim of unread full text. Explicitly retained tissue context and that negative differentiation evidence does not rule out lineage. Rules are prespecified review heuristics, not validated identity truth. See [method](../../../methods/supplemental-native-lineage-cues-20261024.md).
+
+Independent auditor prepared for all axes/bit-rule replay and fixed plus cue-positive/negative/zero-RNA sampled CSR measurements in each source, gated on actual producer exit0. Hard quota and physical free space refreshed for bounded output and both concurrent stages; four threads per task. Original full reference-evidence and common-measurement holdout continue. Source roles/cached organ dictionaries rechecked; extra models remain unscored until scope-qualified. A guessed local role-script filename did not exist; located the authoritative script by exact output-name search, without modifying source state.
+
+Local AST/diff/privacy and repository validation followed by ordinary commit; public push remains pending after prior rejection. Full objective active, no final workflow/labels/all-archive acceptance claim.
+
+
+## 2026-10-23T19:58:54.046974+00:00 UTC / 2026-10-24T03:58:54.046974+08:00 UTC+8: common-measurement paired comparison and carried malignancy evidence
+
+Common-measurement producer completed19:49:22 UTC with actual exit0; independent audit completed19:54:54 UTC with actual exit0. All384 profiles and3096 finite direct predictions replayed, maximum discrepancy8.8818e-16; ten route/fold pairs accepted. Audit SHA f2ea8aabb86cea34492871e16dc34b59a04ac2f41f5ab88edb34a4d4ba0d5fe1. The prepared paired comparison launched after both original/common producers and auditors terminated successfully. It completed19:56:26 UTC:384 profiles, no unavailable route/fold pairs, identical anchors/native targets and four-way query denominators. Output SHA2049c5625dce93b6551c9709a0a18efe757677e9e445e6b7db71984a1e3b2861. Full source/program/candidate-stratum interpretation stays private; no clinical labels, new identity accuracy or universal workflow winner.
+
+The carried CNV/malignancy metadata registry completed19:56:23 UTC with actual exit0; all65 selected sources and three actual counterexamples accepted. Wall327.25seconds, peak RSS4,288,135,168bytes, no native expression read. Output SHA3efd806a725297df9922078f84a86a0e6148b18bee3136cbee24556a63c9495d. Evaluation/positive flag pairs distinguish assessed positive, assessed negative, absent, unknown and unevaluated records. Finite CNV scores do not certify assessment. Original historical report section9 was read and hashed privately: cluster-level primary calls and cellwise dual-method strict/sensitive evidence are parallel axes and need not be nested. No new malignancy calls or threshold changes; original method/reference/gene-order scope still needs review.
+
+Supplemental native lineage cue extraction and full reference evidence continue on their existing exact handles. Corresponding independent auditors remain gated on actual producer success. This is progress toward the unchanged eight-part objective; full native identities, source eligibility, production mapping/crosswalk and qualified views remain. Primary scIB-E text rechecked for within-type biological preservation; original scIB direct page redirected to unavailable authorization, no bypass. Public push previous rejection preserved, local ordinary milestone commit follows owned validation.
+
+
+Additional source-design review: official indexed GEO design distinguishes FACS-selected immune/nonimmune compartments and full-length library chemistry in an existing source. This is a prospective source-role/count-origin overlay, not a rewrite of frozen inputs or a whole-tissue composition acceptance. Other queried direct GEO/PMC pages returned browser challenges; indexed sample/paper fragments do not certify source-wide assay/capture or exact count provenance. Private provenance note preserves URLs and scope. No biological downloads, access bypass, new assay assumptions or model assignment.
+
+
+### 2026-10-23T20:02:09.584265+00:00 UTC / 2026-10-24T04:02:09.584265+08:00 UTC+8: supplemental full-native producer complete, audit running
+
+Supplemental producer actual exit0 at19:58:00 UTC after full selected-archive completion19:57:59 UTC. Index SHA710116f8a908ccd867c1d84d373614dca1dbbbff733f0155b2bc9f9e47ac6865, wall801.29seconds, peak RSS3,818,340,352bytes. Independent full axes/cue logic and selected direct-CSR replay launched after supervisor completion and remains running. Four original counterexamples passed. These are differentiation/lineage cues; negative cues do not exclude identity and positive cues do not infer malignancy.
+
+Prepared a source-aggregate coverage summarizer gated on both full reference/supplemental producers and their own independently bound successful auditors. It preserves zero/one/multiple native family support, absent/out-of-scope/unscored references and incremental supplemental evidence without assigning labels or doublets. Not executed while full reference evidence remains incomplete. Common-measurement method now states the separate choices of fitting lineage and selecting features, and retains full native/local expression alongside the shared model axis. Full objective remains active.
+
+
+At 2026-10-23T20:03:33.618233+00:00 UTC / 2026-10-24T04:03:33.618233+08:00 UTC+8, owned AST/JSON/private-path/credential/whitespace checks and repository validator passed: actual exit0, zero errors, one pre-existing unrelated provenance warning. Validation SHA ae19d66d087e8ad4b547094098602beff0234bedeb894e4cc23dd6715762e67e. Ordinary local milestone commit follows; prior public push rejection remains, no retry or cloud-success claim. Full reference producer and supplemental auditor continue on exact handles; goal active.

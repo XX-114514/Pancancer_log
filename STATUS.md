@@ -2005,3 +2005,13 @@ Train-only feature holdout completed actual exit0; independent replay running. F
 ### 2026-10-23T19:38:37.749631+00:00 UTC: full-context feature coverage and preflight milestone
 
 New-route source holdout and independent replay accepted; measured-feature metadata completed. Expanded source coverage requires a finite common-measurement transfer check, now running after nine actual counterexamples. Full native evidence continues; completed-source independent axes/native/official-reference preflight passed, full-archive acceptance still pending. [Feature bridge](methods/full-archive-measured-feature-bridge-20261024.md). Full scope active; selected production mapping, identities and qualified views remain. Other branches not refreshed; public sync pending after prior rejection.
+
+
+### 2026-10-23T19:47:49.205421+00:00 UTC: supplemental native unknown-pool evidence running
+
+All-selected-native supplemental lineage/differentiation readouts launched and passed four actual counterexamples. Original full reference evidence and common-measurement holdout remain on their same handles; no new identity or malignancy calls. Independent supplemental auditor prepared, real result pending. [Method](methods/supplemental-native-lineage-cues-20261024.md). Full goal active; other branches not refreshed, public sync pending.
+
+
+### 2026-10-23T19:58:54.046974+00:00 UTC: current full-context measurement and malignancy evidence
+
+Common-measurement source holdout, independent audit and paired query comparison accepted. Carried malignancy metadata registry completed; prior methods remain evidence with explicit evaluation coverage. Full native reference/supplemental evidence still running; no final identity or production mapping promotion. [Run](runs/20261023_full_context_hierarchical_annotation_v1.md). Full goal active; other branches not refreshed, public sync remains pending.
