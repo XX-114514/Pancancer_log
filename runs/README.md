@@ -141,3 +141,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [CM02临床单位与新组织来源入口](20261022_CM02_clinical_unit_and_source_scope_v1.md)：原研究级设计未接受、受拒随访正文待明确许可，公开NSCLC LN记录/README与资源资格继续；尚无新组织或临床效果。
+
+
+[已有数据优先的免疫分区集合](20261023_existing_immune_collection_v1.md)：源实际集合读取与独立审计完成，旧原生参考另挂接；来源表/容量及下载计划私有。

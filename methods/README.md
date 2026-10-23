@@ -170,3 +170,6 @@
 
 
 [CM02临床单位与独立组织来源资格](CM02-clinical-unit-independent-source-scope-20261022.md)：明确临床新许可与本机字段排除，独立蛋白组织入口与真实患者/测量范围先核，不重开旧家族。
+
+
+[已有表达的分区集合与低存储读取](backed-existing-atlas-collection-v1.md)：显式来源选择、原生计数/缺失掩码及数值反例；不复制全量矩阵。

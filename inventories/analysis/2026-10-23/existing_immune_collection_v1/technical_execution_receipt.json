@@ -1,0 +1,43 @@
+{
+  "schema": "existing_immune_collection_technical_execution_v1",
+  "observed_utc": "2026-10-23T08:04:10.105528+00:00",
+  "observed_utc_plus_8": "2026-10-23T16:04:10.105528+08:00",
+  "execution_scope": "Existing server stores; bounded private collection and source-level workbook; generic code public only",
+  "source_environment": {
+    "python": "3.10.19",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "zarr": "2.18.3",
+    "anndata": "0.11.4"
+  },
+  "reader_code_sha256": "ddd6df1fb17667fd03bd23a93b6b87624a42e886a83bf6ef9d963f065310bb9b",
+  "reader_execution_equals_local_code": true,
+  "source_numerical_fixture_actual_exit_code": 0,
+  "source_partition_read_checks_passed": true,
+  "source_independent_audit_actual_exit_code": 0,
+  "all_recorded_file_hashes_passed": true,
+  "frozen_authority_release_unchanged": true,
+  "legacy_native_reference_files_present": true,
+  "matrix_copy_or_new_expression_download": false,
+  "joint_embedding_or_new_CM_fitted": false,
+  "scientific_source_counts_or_priorities_published": false,
+  "individual_data_rows_published": false,
+  "workbook_structure_formula_and_visual_checks_passed": true,
+  "private_artifact_sha256": {
+    "collection_completed_server_receipt_v1.json": "ef038c244f8b70d3037530a0b0de30ca3006489fa3744b3068404216d6f9118a",
+    "independent_collection_audit_and_legacy_links_v1.json": "a19bcf26cf020fdaca85b6f1a3e3a8632526449a472b3a275a8377f3e368bfb1",
+    "final_server_environment_and_storage_v1.json": "e3141a83df9bd347c63b40a3ab0ac6e22d43e88dfb332c31043f374e755c99e3",
+    "filtered_existing_sources_and_structure_v1.json": "7f80130332fe43c2f6f307d06080c8d6cfb6088c5c4f23b48a91fcb9292d25dc",
+    "已有数据筛选_整合结构与空间计划_v1.xlsx": "a9ea0935561cba8ba0477b69befae223126d513fa870fa9f31c3ad2ba6029474",
+    "final_delivery_validation_v1.json": "d5179cbee1ca4aa2ab278e66816079cf878a63a03baaa149eec66f821dff4624"
+  },
+  "public_sync": "Prior automatic-review rejection retained; no retry by alternate route",
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "diff_whitespace_check": "passed",
+    "public_new_files_manually_reviewed": true
+  },
+  "source_test_code_sha256": "ad389f4d6ae3959256ae9a6896a54c315e438ee50a72c5a21bbbc33d2e07864a"
+}
