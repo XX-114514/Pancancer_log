@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-23T20:29:01.549003+00:00",
+  "updated_UTC": "2026-10-24T09:42:32.320975+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -24,13 +24,18 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "all_native_reference_producer_and_author_context_complete_full_reference_independent_audit_running_source_local_discovery_pending",
+      "status": "full_local_graph_marker_and_identity_join_computational_audits_accepted_all_conflict_pair_overlap_replayed_full_cell_evidence_candidates_v2_running_final_taxonomy_and_biological_review_pending",
       "evidence": "technical_common_cell_confidence_v2.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified",
       "additional_evidence": [
         "technical_supplemental_native_lineage_evidence_v1.json",
         "technical_native_malignancy_evidence_registry_v1.json",
-        "technical_native_author_label_evidence_v1.json"
+        "technical_native_author_label_evidence_v1.json",
+        "technical_full_native_local_graph_launch_v1.json",
+        "technical_local_graph_preflight_marker_launch_v1.json",
+        "technical_marker_audit_followthrough_v1.json",
+        "technical_full_local_graph_marker_acceptance_v1.json",
+        "technical_full_identity_join_cell_candidate_v1.json"
       ]
     },
     {
@@ -42,13 +47,23 @@
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "common_cell_guard_actual_graph_RNA_and_candidate_neighbor_diagnostics_accepted_conditional_coverage_rare_unknown_and_full_scale_qualification_pending",
-      "evidence": "technical_lineage_graph_factor_comparison_v1.json"
+      "status": "pilot_conditional_graph_RNA_and_source_holdout_diagnostics_accepted_representative_projection_not_qualified_to_replace_local_fine_identities_full_source_local_anchors_running",
+      "evidence": "technical_lineage_graph_factor_comparison_v1.json",
+      "additional_evidence": [
+        "technical_local_graph_preflight_marker_launch_v1.json"
+      ]
     },
     {
       "id": "R6_full_scale",
       "requirement": "selected lineage-specific workflow and full mapping, model/exposure flags, confidence and version crosswalk",
-      "status": "all_native_reference_producer_complete_independent_audit_running_provisional_routing_prepared_mapping_and_modality_transfer_pending"
+      "status": "all_source_local_anchors_and_evidence_accepted_full_archive_cell_guard_candidates_v2_running_common_model_final_confidence_crosswalk_and_qualified_views_pending",
+      "additional_evidence": [
+        "technical_full_native_local_graph_launch_v1.json",
+        "technical_local_graph_preflight_marker_launch_v1.json",
+        "technical_marker_audit_followthrough_v1.json",
+        "technical_full_local_graph_marker_acceptance_v1.json",
+        "technical_full_identity_join_cell_candidate_v1.json"
+      ]
     },
     {
       "id": "R7_storage",

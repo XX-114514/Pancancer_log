@@ -1,0 +1,54 @@
+{
+  "status": "PASS_SIX_ARTIFICIAL_LIFECYCLE_CHECKS_AND_ACTUAL_DIAGNOSTIC_ONLY_RECOVERY_LAUNCH",
+  "observed_UTC": "2026-10-24T09:41:54.953850+00:00",
+  "private_artificial_acceptance_SHA256": "c7222ebebd1e31c607f851e3beb60c8f7479e98cf47e87b7ad7b5d33820d9aa6",
+  "artificial_actual_SSH_exit": 0,
+  "actual_checks": [
+    {
+      "label": "success_after_control_exit",
+      "actual_worker_exit": 0,
+      "effective_exit": 0,
+      "completed_UTC": "2026-10-24T09:39:08.118084+00:00"
+    },
+    {
+      "label": "actual_worker_exit7",
+      "actual_worker_exit": 7,
+      "effective_exit": 7,
+      "completed_UTC": "2026-10-24T09:38:56.269570+00:00"
+    },
+    {
+      "label": "individual_frame_rejected",
+      "actual_worker_exit": -15,
+      "effective_exit": 2,
+      "completed_UTC": "2026-10-24T09:38:56.316160+00:00"
+    },
+    {
+      "label": "aggregate_count_array_rejected",
+      "actual_worker_exit": -15,
+      "effective_exit": 2,
+      "completed_UTC": "2026-10-24T09:38:56.507512+00:00"
+    },
+    {
+      "label": "deadline_terminates_worker",
+      "actual_worker_exit": -15,
+      "effective_exit": 2,
+      "completed_UTC": "2026-10-24T09:38:58.581306+00:00"
+    },
+    {
+      "label": "orphan_group_cleanup",
+      "actual_worker_exit": 0,
+      "effective_exit": 0,
+      "completed_UTC": "2026-10-24T09:38:57.051382+00:00"
+    }
+  ],
+  "recovery_frozen_contract_SHA256": "f2ffa4b344429f87e5396c7db62656a139c83325bb3476eed7401b312b50ded1",
+  "recovery_actual_launch_control_exit": 0,
+  "recovery_source_started_UTC": "2026-10-24T09:40:19.616575+00:00",
+  "latest_exact_worker_live": true,
+  "full_input_identity_received": true,
+  "original_scientific_R_and_analysis_exactly_unchanged": true,
+  "original_payload_guard_unchanged": true,
+  "only_literal_error_codes_generic_locations_and_constant_field_types_added": true,
+  "no_scientific_results_or_identifiers_in_receipt": true,
+  "public_push_not_retried": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ACTUAL_SOURCE_R_NA_SERIALIZATION_FIX_AND_FULL_FAMILY_CONSUMER",
+  "observed_UTC": "2026-10-24T14:03:57.653519+00:00",
+  "legacy_failure_reproduced_with_artificial_NA": true,
+  "explicit_na_null_passes_actual_R_call": true,
+  "positive_negative_and_structural_missing_preserved": true,
+  "individual_guard_unchanged_and_canary_rejected": true,
+  "only_single_JSON_serialization_argument_added": true,
+  "all_scientific_functions_and_analysis_parameters_unchanged": true,
+  "source_acceptance_receipt_SHA256": "a2b8c5fff212d08eae5c32718ee9f1c5aed1ac75c4b9f59f2ed5f1e4986336dc",
+  "recovery_contract_SHA256": "ff71b2fa40dde722197e759bb76c241971e408ad9070fc66cb7a72d25e3d6f90",
+  "no_actual_scientific_acceptance_yet": true,
+  "public_push_not_retried": true
+}

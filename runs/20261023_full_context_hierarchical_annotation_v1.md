@@ -514,3 +514,18 @@ Full input preparation actual exit0; all-source denominator/feature/resource rev
 [Technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_local_graph_preflight_marker_launch_v1.json). Completed-source graph preflight actual0:14 sources,79 models,692 direct native rows, one100-row complete branch re-fit with identical PCA and graph. Output SHA854151598ff981a19bf19c16cf278b7f713436a2111dd48844d0547959085105. This does not accept all sources or infer biological truth. Full auditor prepared, not launched.
 
 Native own-group expression/marker and within-unit support stage started21:29:00 UTC, five actual checks passed; all-source completion/independent audit pending. At21:29:26 UTC: graph18 completed sources/108 models; native marker evidence2 completed sources. Both exact handles live. [Method](../methods/source-local-native-evidence-and-audits-20261024.md). Full objective, final labels/crosswalk and qualified views remain open; no count copy or standalone Zarr claim. Public cloud sync pending after earlier rejection.
+
+
+### 2026-10-23T23:07:06.242376+00:00 UTC: full-source marker independent audit advancing
+
+Marker preflight v1 failed before scientific inputs on missing test deployment; preserved and corrected asv2, with actual tests passed and audit running. Full audit followthrough is live and will launch the prepared complete auditors only after actual producer success. Local identity review join prepared behind accepted marker preflight. Final labels/common model/crosswalk/views remain pending; full goal active. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_marker_audit_followthrough_v1.json); [method](../methods/source-local-native-evidence-and-audits-20261024.md). Public sync pending after earlier rejection.
+
+
+### 2026-10-24T09:28:24.798624+00:00 UTC / 2026-10-24T17:28:24.798624+08:00 UTC+8: full local graph/marker computational acceptance
+
+All source-local graphs and own-group native marker evidence are complete with actual exit0. Both full independent auditors completed actual exit0 and their complete scope, output hashes and producer terminal hashes were verified. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_local_graph_marker_acceptance_v1.json). This establishes computational consistency; biological identities, common representation/confidence/crosswalk and qualified views remain open. Local identity evidence join has actually started behind these gates. No counts copied, final identity or standalone Zarr released. Public sync pending after prior rejection.
+
+
+### 2026-10-24T09:42:32.320975+00:00 UTC / 2026-10-24T17:42:32.320975+08:00 UTC+8: full local identity join and individual evidence guards
+
+Full local identity join and its complete independent audit have actual exit0. All group/state/native/reference/author/marker connections replayed. Complete descriptive lineage-pair overlap also has actual exit0 plus an independent all-record bitwise replay; source scientific findings private. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_identity_join_cell_candidate_v1.json). Cell-candidate v1 preserved after explicit reference-scope parser inconsistency; corrected v2 passed13 actual tests and is live with22 sources completed at2026-10-24T09:41:40.289358+00:00. This is candidate evidence, not final common annotation. Common model/taxonomy/crosswalk/views and storage gate remain open; full objective active, public sync pending after earlier rejection.

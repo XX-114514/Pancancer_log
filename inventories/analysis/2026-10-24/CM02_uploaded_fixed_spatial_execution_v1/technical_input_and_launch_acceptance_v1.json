@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE_USER_UPLOAD_AND_ACTUAL_FROZEN_WORKFLOW_LAUNCH_ACCEPTED_SCIENCE_PENDING",
+  "observed_UTC": "2026-10-24T09:33:30.901912+00:00",
+  "whole_expected_length_verified": true,
+  "whole_official_MD5_and_fixed_SHA256_verified_twice": true,
+  "same_descriptor_path_and_stat_stable": true,
+  "private_complete_upload_proof_SHA256": "bc8e5e766f5a88d67d945da40cf3c188be4542e6a575287495e5ce6f0e89027d",
+  "frozen_contract_SHA256": "2fcabbe5544171b5b4546f6bc48642114538ccfb2c9631a254e7668e78279e66",
+  "source_launch_receipt_SHA256": "95f6f4811d438ee4617fee357ae3c20089878675857745225862961b6de817ab",
+  "actual_launch_control_exit": 0,
+  "source_started_UTC": "2026-10-24T09:29:37.204581+00:00",
+  "source_complete_input_frame_received": true,
+  "latest_exact_worker_live": true,
+  "latest_snapshot_observed_UTC": "2026-10-24T09:33:14.858012+00:00",
+  "actual_scientific_exit_not_yet_accepted": true,
+  "original_scientific_code_and_parameters_unchanged": true,
+  "no_native_individual_or_clinical_values_in_public_receipt": true,
+  "public_push_not_retried": true
+}

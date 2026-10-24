@@ -1,0 +1,31 @@
+{
+  "schema": "source_local_marker_audit_followthrough_v1",
+  "recorded_UTC": "2026-10-23T23:07:06.242376+00:00",
+  "predecessor_local_commit": "d296d7a",
+  "marker_preflight_v1": {
+    "actual_exit_code": 1,
+    "stage": "startup_test_dependency_missing_before_native_inputs",
+    "history_preserved": true
+  },
+  "marker_preflight_v2": {
+    "status": "running_not_accepted",
+    "scope": "frozen_completed_sources",
+    "executed_counterexamples": 3,
+    "launch_UTC": "2026-10-23T23:02:32.245353+00:00",
+    "config_sha256": "472254a4585d20a7b62193b1eb1f1cd0262526ce98f60df0ee69207156c5fb90",
+    "launcher_sha256": "7ddb526270e6d954dc9a02e1d04f883a3bc7c201ac341919d5c7048a3edbbdbc"
+  },
+  "full_audit_followthrough": {
+    "status": "running_waiting_for_actual_successful_producers",
+    "launch_UTC": "2026-10-23T23:05:15.040200+00:00",
+    "launcher_sha256": "9287368c64417740a3c7e329df58636dcc8377e96954ec6b7a851e4ab6b21177",
+    "launch_does_not_accept_audit_results": true
+  },
+  "identity_review_join": {
+    "status": "prepared_not_launched",
+    "requires": "marker_preflight_actual_exit0",
+    "new_final_labels": false
+  },
+  "full_objective": "active_unchanged",
+  "public_sync": "pending_prior_rejection_not_retried"
+}

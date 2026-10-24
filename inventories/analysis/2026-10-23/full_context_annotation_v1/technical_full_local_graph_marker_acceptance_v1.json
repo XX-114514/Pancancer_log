@@ -1,0 +1,105 @@
+{
+  "schema": "full_source_local_graph_and_marker_acceptance_v1",
+  "observed_UTC": "2026-10-24T09:27:40.833045+00:00",
+  "recorded_UTC": "2026-10-24T09:28:24.798624+00:00",
+  "accepted_computational_stages": [
+    {
+      "stage": "20261024_full_native_source_local_graphs_v1",
+      "terminal": {
+        "status": "FULL_NATIVE_SOURCE_LOCAL_GRAPHS_COMPLETE_GROUP_ANNOTATION_AND_AUDIT_PENDING",
+        "completed_UTC": "2026-10-24T00:25:38.730542+00:00",
+        "n_sources": 65,
+        "n_archive_rows": 9439479,
+        "n_modeled_rows": 9400652,
+        "n_fine_graph_rows": 9396416,
+        "native_nnz_read": 17615881155,
+        "index_sha256": "5613fc21dab92ff0c5bc2dac0745e158bfef752b1007eeda95f3ed13aee816ac",
+        "wall_seconds": 11452.27046344988,
+        "peak_RSS_bytes_Linux": 67326750720,
+        "native_counts_copied": false,
+        "new_final_identity": false
+      },
+      "actual_supervisor_exit_code": 0,
+      "supervisor_completed_UTC": "2026-10-24T00:25:45.922000+00:00"
+    },
+    {
+      "stage": "20261024_full_source_local_native_marker_evidence_v1",
+      "terminal": {
+        "status": "FULL_NATIVE_LOCAL_MARKER_EVIDENCE_COMPLETE_INDEPENDENT_AUDIT_PENDING",
+        "completed_UTC": "2026-10-24T00:29:05.337571+00:00",
+        "n_sources": 65,
+        "n_archive_rows": 9439479,
+        "n_fitted_rows": 9400652,
+        "n_local_groups": 6820,
+        "index_sha256": "6d0b9b03f532f66a82856d71126209291dce8c48104d4be4f250f2acb38f0b51",
+        "graph_producer_terminal_sha256": "7e2d443e2ea8d19d5c23a67e2119d1a89a9004adb35a3b7babddd06face97045",
+        "wall_seconds": 10802.221369627863,
+        "peak_RSS_bytes_Linux": 35804823552,
+        "new_final_identity": false,
+        "inferential_DEG_computed": false,
+        "native_counts_copied": false
+      },
+      "actual_supervisor_exit_code": 0,
+      "supervisor_completed_UTC": "2026-10-24T00:29:07.975615+00:00"
+    },
+    {
+      "stage": "20261024_full_source_local_graph_audit_v1",
+      "terminal": {
+        "status": "FULL_LOCAL_GRAPH_AUDIT_COMPLETE",
+        "completed_UTC": "2026-10-24T00:32:59.166268+00:00",
+        "scope": "full_completed_archive",
+        "n_sources": 65,
+        "n_archive_rows": 9439479,
+        "n_models_checked": 471,
+        "n_native_rows_directly_recomputed": 3381,
+        "replayed_branch_rows": 100,
+        "output_sha256": "43126e25000cbc8d61b4b45b03de6dcf05cea52c073226685551467f7269c803",
+        "wall_seconds": 426.52731925761327,
+        "peak_RSS_bytes_Linux": 3912552448,
+        "not_identity_truth": true,
+        "producer_terminal_sha256": "7e2d443e2ea8d19d5c23a67e2119d1a89a9004adb35a3b7babddd06face97045"
+      },
+      "actual_supervisor_exit_code": 0,
+      "supervisor_completed_UTC": "2026-10-24T00:33:01.581628+00:00"
+    },
+    {
+      "stage": "20261024_full_source_local_marker_audit_v2",
+      "terminal": {
+        "status": "FULL_LOCAL_MARKER_AUDIT_COMPLETE",
+        "scope": "full_completed_archive",
+        "completed_UTC": "2026-10-24T00:38:29.562619+00:00",
+        "n_sources": 65,
+        "n_groups_checked": 6820,
+        "n_markers_arithmetic_checked": 136322,
+        "output_sha256": "799969702537e5bd063c373675477611e273b277ada4ceedd058813e1c433094",
+        "wall_seconds": 546.413057859987,
+        "peak_RSS_bytes_Linux": 6387220480,
+        "complete_source_native_replay": {
+          "n_fitted_native_rows_replayed": 3360,
+          "n_measured_genes_replayed": 36601,
+          "n_group_unit_pairs_replayed": 76,
+          "maximum_native_stat_absolute_error": 0.0,
+          "maximum_unit_direction_absolute_error": 1.021405182655144e-14,
+          "not_independent_biological_validation": true,
+          "source_key_kept_in_private_receipt": true
+        },
+        "producer_terminal_sha256": "851ceda5722558c9eb7dcda7a911313f0ad842854370a96abfd2c910b7a595d9"
+      },
+      "actual_supervisor_exit_code": 0,
+      "supervisor_completed_UTC": "2026-10-24T00:38:31.174846+00:00"
+    }
+  ],
+  "all_producer_and_audit_terminal_bindings_verified_before_identity_review_launch": true,
+  "acceptance_scope": "computational_axes_native_sampling_marker_arithmetic_not_independent_biological_identity_truth",
+  "identity_evidence_join": {
+    "status": "launched_real_outputs_pending",
+    "launch_UTC": "2026-10-24T09:27:33.149547+00:00",
+    "config_sha256": "95297cbb7dd3e315d7c24be2bfe9d1e029bb61196bfe6ed82caa7cd872ae41c8",
+    "launcher_sha256": "8ba13ccaa90d1d8ddb1f4b9557852d9eef955ee60605f74bcd8c00972d93aeba"
+  },
+  "new_final_identity": false,
+  "cross_source_common_model_complete": false,
+  "standalone_Zarr_complete": false,
+  "full_objective": "active_unchanged",
+  "public_sync": "pending_after_prior_rejection_not_retried"
+}

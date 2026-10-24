@@ -1,0 +1,15 @@
+{
+  "status": "ACTUAL_FIRST_WORKER_TERMINATED_AFTER_OUTPUT_SUPERVISION_ASSERTION",
+  "source_observed_UTC": "2026-10-24T09:34:06.368228+00:00",
+  "private_source_failure_receipt_SHA256": "4bb4a01580048f23a2b4fad45459ac626d5a527d01174b9ec265674ff0913557",
+  "actual_worker_exit_code": -15,
+  "effective_exit_code": 2,
+  "complete_source_frames": 0,
+  "error_class": "AssertionError",
+  "exact_old_worker_and_supervisor_absent": true,
+  "input_complete_hash_previously_accepted": true,
+  "no_spatial_or_scientific_acceptance": true,
+  "old_error_lacked_location_and_literal_code": true,
+  "diagnostic_only_recovery_prepared_not_real_launched": true,
+  "public_push_not_retried": true
+}

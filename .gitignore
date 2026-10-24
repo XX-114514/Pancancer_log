@@ -28,6 +28,7 @@ Thumbs.db
 *.orig
 *.rej
 nohup.out
+/stdout
 core.*
 slurm-*.out
 

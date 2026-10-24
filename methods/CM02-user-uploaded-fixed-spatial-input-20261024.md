@@ -19,3 +19,11 @@
 [输入反例](../scripts/check_uploaded_RDS_RAM_v1.py)覆盖短文件、hash错、增长、原位修改、路径替换、symlink/目录、预算及原R管道。[汇总反例](../scripts/check_external_TDLN_uploaded_acceptance_v1.py)包括正/负/结构NA、坏hash/代码/家族校正、未完成/坏退出及意外个体字段。[源生命周期](../scripts/check_detached_source_supervisor_v1.py)用独立控制连接核延迟成功、exit7、个体帧拦截、超时与孤立后代；所有夹具为人工，无真实原生或临床输入。
 
 人工测试失败和修复保留，源R管道及修复后五任务均实际接受。原完整统计合成此前已通过，本轮未改变或重跑以挑结果。真实上传仍不完整，人工验证不代表真实单位/状态/空间效果。参见[准备run](../runs/20261024_CM02_uploaded_fixed_spatial_preparation_v1.md)。
+
+## 2026-10-25 完整上传后的实际输出诊断
+
+上述“不完整/未执行”为原准备阶段状态。完整用户文件后来已稳定且双遍整文件hash接受，真实计算进入原生R；前两次完整结果未被监督器接受，失败均保留。新增[监督v2](../scripts/supervise_external_TDLN_RAM_v2.py)仅记录常量错误码、通用代码位置及有限字段角色/类型，不保存被拒正文或值，原个体内容守卫不变。六项源人工生命周期包括新增计数字段数组反例，实际通过。
+
+诊断确认真实汇总的缺测计数字段被R JSON默认序列化成字符串；这使合法缺测无法通过数值/隐私守卫。新[原生入口v2](../scripts/run_external_TDLN_fixed_spatial_native_RAM_v2.R)仅在原toJSON调用显式增加`na="null"`，所有科学函数、输入、状态门槛、统计家族和种子保持原设定。拼接R的字节SHA因此改变，须以新冻结合同记录，不能沿用旧SHA称完全一致。
+
+[针对性反例](../scripts/check_external_TDLN_NA_serialization_v1.py)从实际R入口AST提取序列化调用，在本机与源R复现旧缺测错误；新调用的人工正/负/结构NA通过完整十五槽消费者，个体canary仍拒绝。旧精确作业终态确认后才启用新控制名，未因观察失败重启。真实结果和数值审核见[执行run](../runs/20261024_CM02_uploaded_fixed_spatial_execution_v1.md)。
