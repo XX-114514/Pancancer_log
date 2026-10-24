@@ -1,0 +1,13 @@
+{
+  "schema": "recent_run_record_review_v1",
+  "observed_UTC": "2026-10-24T03:01:48.430025+00:00",
+  "indexed_run_records": 38,
+  "key_private_aggregate_sources": 16,
+  "private_manifest_SHA256": "726c1a3dee109676b843165e601967144405e18cb50d9ffdc661bcd01e7d2ff7",
+  "source_fingerprints_rechecked": true,
+  "aggregate_denominators_and_archived_progress_arithmetic_checked": true,
+  "new_scientific_model_or_inference": false,
+  "parallel_files_and_jobs_preserved": true,
+  "runtime_status_scope": "last recorded checkpoints only; no new server polling",
+  "public_sync": "pending prior rejection; not retried"
+}
