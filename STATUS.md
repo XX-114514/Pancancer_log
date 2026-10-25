@@ -2074,3 +2074,13 @@ Full local identity join and its complete independent audit have actual exit0. A
 ## 2026-10-24T14:11:56.169452+00:00 UTC /2026-10-24T22:11:56.169452+08:00 UTC+8 /2026-10-25T01:11:56.169452+11:00 Australia/Melbourne：本对话用户上传固定空间线已完整验收
 
 完整上传、修复缺测JSON序列化、原固定空间计算和全数值/消费者/两图审阅均完成，源actual exit0且RAM释放。科学结果和来源对照私有，未将技术通过解释为验证支持；不再等待该文件或轮询旧作业。见[执行记录](runs/20261024_CM02_uploaded_fixed_spatial_execution_v1.md)。原注释/CM/其他并行线保持各自状态，整体goal active；public push旧拒绝保持，云端待同步。
+
+
+### 2026-10-25T01:40:20.877013+00:00 UTC / 2026-10-25T09:40:20.877013+08:00 UTC+8: full cell-candidate audit accepted, common-reference inputs started
+
+All native cell candidates and their complete independent reconstruction are actual exit0; full axis/evidence/guard/crosswalk checks passed. [Receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_candidate_audit_common_reference_launch_v1.json). Reference row exposure and all-source measured feature axes now prepare under source/unit/rare-stratum balancing; no coordinate model or final taxonomy fitted. [Contract](methods/common-coordinate-reference-inputs-20261025.md). Full objective, model/mapping/marker/view/storage gates remain open. Earlier backlog publication was independently verified by the separate authorized sync task; this milestone awaits its own commit/publication.
+
+
+### 2026-10-25T01:48:02.840182+00:00 UTC / 2026-10-25T09:48:02.840182+08:00 UTC+8: common reference input production complete
+
+All-source reference row/feature input preparation actual exit0: exact exposures and rare-stratum reserves retained; model coordinates not fitted. Complete independent input auditor running on the original handle. [Receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_reference_input_producer_and_audit_launch_v1.json),[contract](methods/common-coordinate-reference-inputs-20261025.md). Common model/full mapping/final identity/subset markers and qualified views remain pending; full objective active.

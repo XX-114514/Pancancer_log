@@ -1,0 +1,36 @@
+{
+  "schema": "full_common_reference_input_producer_and_audit_launch_v1",
+  "recorded_UTC": "2026-10-25T01:48:02.840182+00:00",
+  "observed_UTC": "2026-10-25T01:47:01.077989+00:00",
+  "producer": {
+    "actual_exit_code": 0,
+    "supervisor_completed_UTC": "2026-10-25T01:43:58.426346+00:00",
+    "terminal": {
+      "status": "FULL_COMMON_REFERENCE_ROWS_AND_MEASURED_FEATURE_INPUTS_PREPARED_NO_COORDINATES_FITTED",
+      "completed_UTC": "2026-10-25T01:43:56.284923+00:00",
+      "n_sources": 65,
+      "n_archive_rows": 9439479,
+      "n_common_alias_excluded_feature_candidates": 11135,
+      "n_global_reference_rows": 200000,
+      "n_lineage_reference_rows": 876228,
+      "index_sha256": "5cff22651c81ebc80414991d38a6bbf5833501049f892e529237990dc29c9528",
+      "candidate_auditor_terminal_sha256": "eb37636f55beb8ac2f43bf4e9fc87c0b1e0cc251ac4bdde359725f916bb0975a",
+      "wall_seconds": 413.9627192299813,
+      "peak_RSS_bytes_Linux": 4010913792,
+      "native_counts_read": false,
+      "new_final_identity": false
+    }
+  },
+  "independent_input_audit": {
+    "status": "running_not_accepted",
+    "launch_UTC": "2026-10-25T01:46:10.218985+00:00",
+    "config_sha256": "956e057833d1294590dbfd853f24e75074c777f503b8e84decd85c90d369059f",
+    "launcher_sha256": "5a2ddca69c21875b4144d5423df973a22a0f23e107991153d7934f8165a111f5",
+    "exact_supervisor_and_child_live": true
+  },
+  "reference_exposure_counts_not_new_cell_or_patient_counts": true,
+  "model_coordinates_fitted": false,
+  "new_final_identity": false,
+  "common_model_mapping_final_markers_and_views_pending": true,
+  "full_objective": "active_unchanged"
+}

@@ -529,3 +529,13 @@ All source-local graphs and own-group native marker evidence are complete with a
 ### 2026-10-24T09:42:32.320975+00:00 UTC / 2026-10-24T17:42:32.320975+08:00 UTC+8: full local identity join and individual evidence guards
 
 Full local identity join and its complete independent audit have actual exit0. All group/state/native/reference/author/marker connections replayed. Complete descriptive lineage-pair overlap also has actual exit0 plus an independent all-record bitwise replay; source scientific findings private. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_identity_join_cell_candidate_v1.json). Cell-candidate v1 preserved after explicit reference-scope parser inconsistency; corrected v2 passed13 actual tests and is live with22 sources completed at2026-10-24T09:41:40.289358+00:00. This is candidate evidence, not final common annotation. Common model/taxonomy/crosswalk/views and storage gate remain open; full objective active, public sync pending after earlier rejection.
+
+
+### 2026-10-25T01:40:20.877013+00:00 UTC / 2026-10-25T09:40:20.877013+08:00 UTC+8: full cell-candidate audit accepted, common-reference inputs started
+
+All native cell candidates and their complete independent reconstruction are actual exit0; full axis/evidence/guard/crosswalk checks passed. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_candidate_audit_common_reference_launch_v1.json). Reference row exposure and all-source measured feature axes now prepare under source/unit/rare-stratum balancing; no coordinate model or final taxonomy fitted. [Contract](../methods/common-coordinate-reference-inputs-20261025.md). Full objective, model/mapping/marker/view/storage gates remain open. Earlier backlog publication was independently verified by the separate authorized sync task; this milestone awaits its own commit/publication.
+
+
+### 2026-10-25T01:48:02.840182+00:00 UTC / 2026-10-25T09:48:02.840182+08:00 UTC+8: common reference input production complete
+
+All-source reference row/feature input preparation actual exit0: exact exposures and rare-stratum reserves retained; model coordinates not fitted. Complete independent input auditor running on the original handle. [Receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_reference_input_producer_and_audit_launch_v1.json),[contract](../methods/common-coordinate-reference-inputs-20261025.md). Common model/full mapping/final identity/subset markers and qualified views remain pending; full objective active.
