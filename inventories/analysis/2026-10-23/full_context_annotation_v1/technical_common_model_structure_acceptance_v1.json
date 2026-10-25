@@ -1,0 +1,42 @@
+{
+  "schema": "technical_common_model_structure_acceptance_v1",
+  "observed_UTC": "2026-10-25T09:40:06.841413+00:00",
+  "model_producer": {
+    "actual_exit_code": 0,
+    "completed_UTC": "2026-10-25T09:23:56.875145+00:00",
+    "n_fitted_models": 15,
+    "wall_seconds": 1058.169331732206,
+    "peak_RSS_bytes": 31965646848,
+    "index_sha256": "68997aa37268f7dcf8b04b11d23b8e95775d099d7c9abdd8dca636d2f2ed7174"
+  },
+  "full_model_computational_auditor": {
+    "actual_exit_code": 0,
+    "completed_UTC": "2026-10-25T09:25:26.379728+00:00",
+    "n_models_checked": 15,
+    "output_sha256": "02f57c317ada29b3ca860a4711f1eb5e57442209f610b5edecf2929e248e0535"
+  },
+  "native_structure_producer": {
+    "actual_exit_code": 0,
+    "completed_UTC": "2026-10-25T09:29:25.383648+00:00",
+    "n_state_profiles": 16374,
+    "n_paired_profiles": 16506,
+    "n_coverage_records": 2783,
+    "output_sha256": "62981be874a73580124637abfaf22deecc11eac37f627e2ceda947ce6274bdd7",
+    "n_tests_actual_no_skips": 3
+  },
+  "independent_structure_auditor": {
+    "actual_exit_code": 0,
+    "completed_UTC": "2026-10-25T09:32:42.846619+00:00",
+    "positive_negative_and_not_estimable_cases_actually_replayed": true,
+    "maximum_estimated_case_score_absolute_difference": 2.220446049250313e-16,
+    "output_sha256": "5d3b93ea471bb5ae3b362142459fc6b10da47613f511ba70546ba9497af8bdd8"
+  },
+  "scientific_effects_and_source_profiles": "private_not_in_this_receipt",
+  "next_complete_source_projection_input_scope": "frozen_privately_counts_not_read_projection_not_started",
+  "final_model_selection_biological_transfer_full_archive_mapping": "pending",
+  "new_final_identity": false,
+  "standalone_Zarr": false,
+  "full_eight_part_objective": "active_unchanged",
+  "approved_previous_public_snapshot": "da37a09ce3c3ed6b53e9ab7ee23ad9e4408c5fb3",
+  "this_newer_receipt_publication": "local_pending_reviewed_synchronization"
+}

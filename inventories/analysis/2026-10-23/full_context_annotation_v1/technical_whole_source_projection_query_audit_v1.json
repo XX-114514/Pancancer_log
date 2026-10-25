@@ -1,0 +1,63 @@
+{
+  "schema": "technical_whole_source_projection_query_audit_v1",
+  "observed_UTC": "2026-10-25T21:04:42.909218+00:00",
+  "projection_producer": {
+    "completed_UTC": "2026-10-25T09:57:24.654827+00:00",
+    "actual_exit_code": 0,
+    "n_complete_sources": 2,
+    "n_source_model_records": 6,
+    "n_tests_actual_no_skips": 6,
+    "wall_seconds": 670.7528502950445,
+    "peak_RSS_bytes": 40005910528,
+    "index_sha256": "176529425ae3be9c7f9d2f0cd4f5c16ab79bc51e6c8f4c070443daedad83c73f"
+  },
+  "independent_complete_query_auditor": {
+    "completed_UTC": "2026-10-25T20:35:26.999115+00:00",
+    "actual_exit_code": 0,
+    "n_source_model_records": 6,
+    "n_tests_actual_no_skips": 2,
+    "output_sha256": "3310a7004ac398a7da998f562b2ca825364d708b3ff1a1ce44125d70de14c135",
+    "producer_terminal_sha256": "11a35d5640ddfa88f819d96ccebae37adef0935178a8c58d9a0de0bf4e81a3b2"
+  },
+  "reference_neighbor_precision_v1": {
+    "actual_exit_code": 0,
+    "scientific_acceptance": false,
+    "all_precision_gates_passed": false,
+    "one_probe_exact_fraction": 0.9453125,
+    "required_exact_fraction": 0.95,
+    "preserved_not_bypassed": true
+  },
+  "reference_neighbor_precision_v2": {
+    "query_epsilon": 0.6,
+    "additional_midpoint_exact_probes": true,
+    "required_exact_fraction": 0.95,
+    "status": "actual_exit_0_all_primary_and_midpoint_precision_gates_passed",
+    "completed_UTC": "2026-10-25T20:55:26.855310+00:00",
+    "actual_exit_code": 0,
+    "index_sha256": "efbeada1202a88324377fc05c2b7183c525bda3516c5a04d386ed4bad37506d4"
+  },
+  "full_archive_axes_and_13_models": "production_projection_started_independent_full_audit_pending",
+  "new_authoritative_identity": false,
+  "native_count_matrix_copy_or_standalone_Zarr": false,
+  "scientific_source_effects_individual_axes_model_weights_public": false,
+  "full_eight_part_objective": "active_unchanged",
+  "full_archive_projection_launch": {
+    "observed_UTC": "2026-10-25T20:55:48.813370+00:00",
+    "status": "FULL_ARCHIVE_SELECTED_PROJECTION_AND_PER_CELL_NEIGHBOR_FLAGS_STARTED_NO_NEW_IDENTITY",
+    "actual_numerical_tests_passed": 7,
+    "actual_runtime_smoke_exact_fraction": 1.0,
+    "original_exact_process_live_last_observed_UTC": "2026-10-25T20:58:12.209406+00:00"
+  },
+  "guarded_subset_own_native_markers": {
+    "partition": "frozen_source_parent_group_by_guarded_celltype_candidate",
+    "parent_marker_copy": false,
+    "v1_actual_exit_code": 1,
+    "v1_failure": "immutable_base_receipt_write_protection",
+    "v2_repair": "distinct_augmented_metadata_filename_new_stage",
+    "v2_actual_numerical_tests_passed": 8,
+    "v2_completed_sources_last_observation": 2,
+    "v2_original_exact_process_live_observed_UTC": "2026-10-25T21:03:56.114759+00:00",
+    "independent_completed_source_preflight_audit": "launched_actual_acceptance_pending",
+    "new_final_identity": false
+  }
+}

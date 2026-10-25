@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-25T09:11:05.282805+00:00",
+  "updated_UTC": "2026-10-25T21:04:42.909218+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -48,16 +48,18 @@
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "pilot_conditional_graph_RNA_and_source_holdout_diagnostics_accepted_representative_projection_not_qualified_to_replace_local_fine_identities_full_source_local_anchors_running",
+      "status": "whole_source_query_ridge_and_native_probe_audit_and_neighbor_precision_qualification_accepted_full_archive_transfer_pending",
       "evidence": "technical_lineage_graph_factor_comparison_v1.json",
       "additional_evidence": [
-        "technical_local_graph_preflight_marker_launch_v1.json"
+        "technical_local_graph_preflight_marker_launch_v1.json",
+        "technical_common_model_structure_acceptance_v1.json",
+        "technical_whole_source_projection_query_audit_v1.json"
       ]
     },
     {
       "id": "R6_full_scale",
       "requirement": "selected lineage-specific workflow and full mapping, model/exposure flags, confidence and version crosswalk",
-      "status": "common_reference_candidate_model_fit_live_after_accepted_full_inputs_final_selection_mapping_taxonomy_markers_views_pending",
+      "status": "full_archive_projection_and_exact_guarded_subset_own_native_marker_producers_live_full_independent_audits_taxonomy_crosswalk_views_pending",
       "additional_evidence": [
         "technical_full_native_local_graph_launch_v1.json",
         "technical_local_graph_preflight_marker_launch_v1.json",
@@ -67,7 +69,9 @@
         "technical_full_candidate_audit_common_reference_launch_v1.json",
         "technical_common_reference_input_producer_and_audit_launch_v1.json",
         "technical_common_reference_input_acceptance_cloud_v1.json",
-        "technical_common_reference_model_launch_v1.json"
+        "technical_common_reference_model_launch_v1.json",
+        "technical_common_model_structure_acceptance_v1.json",
+        "technical_whole_source_projection_query_audit_v1.json"
       ]
     },
     {

@@ -549,3 +549,33 @@ Complete reference-input auditor actual exit0 with all-source exposure, minimum 
 ### 2026-10-25T09:08:12.564354+00:00: common-model candidate fit started
 
 Approved six-file follow-up independently verified public/local at bf737a2672f55db1d05d547915c6421eac7a7aa2. Fixed-reference model producer started under fresh resource gates; exact original supervisor/child live verified. Raw representations retained, no final model/identity or full mapping accepted. Independent auditor prepared, not executed. [Task details](../logs/codex/2026/2026-10-23_full-context-annotation-execution.md).
+
+
+### 2026-10-25T09:30:52.722264+00:00: full common-reference computational acceptance
+
+All15candidate models and complete independent model auditor have actual exit0. Paired native structure diagnostics now running,3actual tests passed. Approved nine-file public snapshot independently verified at da37a09ce3c3ed6b53e9ab7ee23ad9e4408c5fb3; newer local technical milestones await reviewed synchronization. No model-selection/full-mapping/final-label or Zarr completion claim; complete eight-part goal active.
+
+
+### 2026-10-25T09:40:06.841413+00:00: native-structure comparison and independent cases accepted
+
+All reference-model and native-structure producers/auditors have actual exit0. Complete profile denominators and declared positive/negative/non-estimable numeric cases checked. [Technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_model_structure_acceptance_v1.json). Scientific source/state effect summaries remain private. Next complete-source projection input scope frozen under fresh resources; counts not read and projection not started. Full mapping/final model transfer, taxonomy/own-markers/crosswalk/views/storage remain pending. Previous approved snapshot da37a09 independently verified; this newer milestone is local pending reviewed synchronization. Full objective unchanged.
+
+
+### 2026-10-25T20:53:19.756947+00:00 UTC / 2026-10-26T04:53:19.756947+08:00 UTC+8: whole-source query audit accepted; neighbor precision repair
+
+Original complete-source projection finished actual0 and all6whole-query cases independently replayed actual0. One neighbor precision gate below95% preserved; v2query search and added exact probes running, full-archive launch still gated. [Technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_whole_source_projection_query_audit_v1.json). Full goal and identity/own-marker/crosswalk/views/storage requirements unchanged.
+
+
+### 2026-10-25T20:56:01.763212+00:00 UTC / 2026-10-26T04:56:01.763212+08:00 UTC+8: complete-source precision accepted; full archive projection started
+
+Second neighbor qualification completed actual exit0; all primary and added midpoint exact-distance gates passed at the unchanged95% requirement. Full selected-model archive projection actually launched after fresh hard-quota/physical disk/RAM gates. Native counts remain in existing partitions; coordinate sidecars only. Full producer/auditor, final identities/own-subgroup markers/crosswalk/qualified views and storage gates remain open. Approved9-file public commit da37a09 independently verified; newer local changes are not part of that fulfilled approval.
+
+
+### 2026-10-25T21:03:26.005791+00:00 UTC / 2026-10-26T05:03:26.005791+08:00 UTC+8: own-subset marker immutable-file repair
+
+First exact-subset marker producer passed8actual tests, then exited1 at first-source supplementary metadata write: immutable writer correctly rejected replacing the base marker receipt. Native arithmetic had completed; no final identity released. Failure version retained. Repair stores augmented guarded-subset metadata under a distinct new filename in a new v2stage, preserving base output and frozen scientific rules. All-source independent membership/arithmetic/native group auditor prepared, AST valid; real auditor execution pending. Full projection original process continued separately.
+
+
+### 2026-10-25T21:04:42.909218+00:00 UTC / 2026-10-26T05:04:42.909218+08:00 UTC+8: full projection and own-subset markers proceeding
+
+Full selected-model archive projection original exact process live,5complete-source checkpoints observed. Repaired own-subset native marker v2passed8actual tests and2source checkpoints; first failed immutable-file attempt retained. Completed-source independent marker auditor launched; full audit/final identity not accepted. See [own-marker method](../methods/guarded-subset-own-native-markers-20261026.md) and [technical receipt](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_whole_source_projection_query_audit_v1.json). New reviewed generic code/technical logs prepared for ordinary authorized cloud synchronization; previous9-file approval remains fulfilled at da37a09.
