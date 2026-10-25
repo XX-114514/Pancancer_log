@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-25T01:48:02.840182+00:00",
+  "updated_UTC": "2026-10-25T01:55:04.719490+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -57,7 +57,7 @@
     {
       "id": "R6_full_scale",
       "requirement": "selected lineage-specific workflow and full mapping, model/exposure flags, confidence and version crosswalk",
-      "status": "all_archive_guarded_cell_evidence_audited_common_reference_rows_features_producer_complete_independent_input_audit_running_common_models_full_mapping_final_taxonomy_markers_views_pending",
+      "status": "all_archive_guarded_cell_evidence_and_common_reference_row_feature_inputs_independently_accepted_common_models_full_mapping_final_taxonomy_markers_views_pending",
       "additional_evidence": [
         "technical_full_native_local_graph_launch_v1.json",
         "technical_local_graph_preflight_marker_launch_v1.json",
@@ -65,7 +65,8 @@
         "technical_full_local_graph_marker_acceptance_v1.json",
         "technical_full_identity_join_cell_candidate_v1.json",
         "technical_full_candidate_audit_common_reference_launch_v1.json",
-        "technical_common_reference_input_producer_and_audit_launch_v1.json"
+        "technical_common_reference_input_producer_and_audit_launch_v1.json",
+        "technical_common_reference_input_acceptance_cloud_v1.json"
       ]
     },
     {

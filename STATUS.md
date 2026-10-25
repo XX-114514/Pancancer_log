@@ -2084,3 +2084,11 @@ All native cell candidates and their complete independent reconstruction are act
 ### 2026-10-25T01:48:02.840182+00:00 UTC / 2026-10-25T09:48:02.840182+08:00 UTC+8: common reference input production complete
 
 All-source reference row/feature input preparation actual exit0: exact exposures and rare-stratum reserves retained; model coordinates not fitted. Complete independent input auditor running on the original handle. [Receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_reference_input_producer_and_audit_launch_v1.json),[contract](methods/common-coordinate-reference-inputs-20261025.md). Common model/full mapping/final identity/subset markers and qualified views remain pending; full objective active.
+
+
+### 2026-10-25T01:55:04.719490+00:00 UTC / 2026-10-25T09:55:04.719490+08:00 UTC+8: common-reference inputs fully accepted
+
+Complete reference-input auditor actual exit0 with all-source exposure, minimum strata, modality and actual gene-column checks passed. [Receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_reference_input_acceptance_cloud_v1.json). Prior reviewed code node797ebc1f909f50fbdac67c03b750d29d697f4d23 independently verified on public main and local via fast-forward. Common-coordinate models, full mapping, final taxonomy/markers and qualified views remain pending in the unchanged full objective.
+
+
+2026-10-25T02:00:01.121328+00:00 UTC publication gate: code node797ebc1 is independently verified public/local. A six-file follow-up acceptance/log update is locally prepared; automatic review rejected public disclosure as potentially nonpublic scientific/source metadata even after added-diff risk checks. Explicit human authorization for this bounded follow-up is pending. Scientific computation/input acceptance above remains valid; no new model fit or final-label release claimed.

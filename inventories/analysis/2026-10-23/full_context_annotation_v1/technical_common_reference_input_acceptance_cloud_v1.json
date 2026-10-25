@@ -1,0 +1,45 @@
+{
+  "schema": "common_reference_input_acceptance_and_code_publication_v1",
+  "recorded_UTC": "2026-10-25T01:55:04.719490+00:00",
+  "observed_UTC": "2026-10-25T01:51:38.577376+00:00",
+  "complete_reference_input_auditor": {
+    "terminal": {
+      "status": "COMMON_REFERENCE_ROWS_FEATURE_AXES_AUDIT_COMPLETE_NO_MODEL_FITTED",
+      "completed_UTC": "2026-10-25T01:50:07.859771+00:00",
+      "n_sources": 65,
+      "n_archive_rows": 9439479,
+      "n_global_reference_rows": 200000,
+      "n_lineage_reference_rows": 876228,
+      "n_common_feature_candidates": 11135,
+      "output_sha256": "f63dd87e8a457b51db08ddffc802a93a191744a5e3b5b724e407159b6e912670",
+      "producer_terminal_sha256": "9223a545b72f3f927e9a8cb996a17a43b45936a667f557b27d2204eec8c6ddb3",
+      "wall_seconds": 235.3000277611427,
+      "peak_RSS_bytes_Linux": 4214554624,
+      "new_final_identity": false
+    },
+    "actual_supervisor_exit_code": 0,
+    "supervisor_completed_UTC": "2026-10-25T01:50:09.704491+00:00"
+  },
+  "code_publication": {
+    "schema": "common_reference_node_publication_v1",
+    "observed_UTC": "2026-10-25T01:50:48.721158+00:00",
+    "repository": "XX-114514/Pancancer_log",
+    "branch": "main",
+    "previous_sha": "5593b64e399ab7b03ebe676a6e24206d5ac11223",
+    "published_commit_sha": "797ebc1f909f50fbdac67c03b750d29d697f4d23",
+    "reviewed_tree_sha": "2a9303fc61782b62f7ba7c4d1091baa6fa36224e",
+    "github_tree_matched_reviewed_staged_tree": true,
+    "github_ref_update_nonforced_expected_head": true,
+    "independent_https_ls_remote_sha": "797ebc1f909f50fbdac67c03b750d29d697f4d23",
+    "local_fetch_and_fast_forward_sha": "797ebc1f909f50fbdac67c03b750d29d697f4d23",
+    "working_tree_clean": true,
+    "source_patient_matrix_and_model_weight_data_published": false,
+    "private_key_or_token_exported": false,
+    "history_rewritten": false
+  },
+  "reference_exposure_counts_not_new_archive_or_patient_rows": true,
+  "model_coordinates_fitted": false,
+  "final_common_identity_release_complete": false,
+  "remaining_work": "common models and full mapping, supplemental/source-context and taxonomy coordination, own-subset markers, qualified analysis views and final storage/readback gates",
+  "full_objective": "active_unchanged"
+}
