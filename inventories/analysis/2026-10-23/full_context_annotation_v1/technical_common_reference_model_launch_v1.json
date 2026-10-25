@@ -1,0 +1,32 @@
+{
+  "schema": "technical_common_reference_model_launch_v1",
+  "observed_UTC": "2026-10-25T09:07:50.913622+00:00",
+  "producer_started_UTC": "2026-10-25T09:06:16.341994+00:00",
+  "status": "candidate_model_fit_live_exact_supervisor_and_child_verified",
+  "actual_cached_runtime_tests": {
+    "exit_code": 0,
+    "n_tests": 4,
+    "skips": 0
+  },
+  "threads": 4,
+  "native_reference_inputs_and_audit": "accepted",
+  "paired_feature_comparison_routes": [
+    "T_NK",
+    "Myeloid"
+  ],
+  "context_raw_PCA_routes": [
+    "Epithelial",
+    "Glial",
+    "Astrocyte",
+    "Neuron"
+  ],
+  "retained_raw_PCA": true,
+  "new_data_model_software_downloads": false,
+  "learned_parameters_and_individual_axes_public": false,
+  "full_archive_mapping_complete": false,
+  "final_model_selected": false,
+  "final_labels_released": false,
+  "independent_model_auditor": "prepared_AST_checked_not_executed",
+  "prior_approved_six_file_publication_verified_commit": "bf737a2672f55db1d05d547915c6421eac7a7aa2",
+  "complete_eight_part_goal": "active_unchanged"
+}

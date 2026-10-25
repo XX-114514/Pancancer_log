@@ -2092,3 +2092,8 @@ Complete reference-input auditor actual exit0 with all-source exposure, minimum 
 
 
 2026-10-25T02:00:01.121328+00:00 UTC publication gate: code node797ebc1 is independently verified public/local. A six-file follow-up acceptance/log update is locally prepared; automatic review rejected public disclosure as potentially nonpublic scientific/source metadata even after added-diff risk checks. Explicit human authorization for this bounded follow-up is pending. Scientific computation/input acceptance above remains valid; no new model fit or final-label release claimed.
+
+
+### 2026-10-25T09:09:17.473122+00:00: common-model candidates fitting
+
+The human-approved six-file follow-up is independently verified on public main and local at bf737a2672f55db1d05d547915c6421eac7a7aa2, resolving the earlier bounded publication gate. Common-reference model producer started; four actual cached-runtime tests passed and original supervisor/child identities are live. Raw PCA retained, T/NK and myeloid feature comparisons fixed; model audit/biological transfer/full mapping/final labels and qualified views remain pending. [Technical receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_common_reference_model_launch_v1.json). Full eight-part objective active.
