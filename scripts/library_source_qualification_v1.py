@@ -5,7 +5,7 @@ authors used this table, infer sorting from cell proportions, alter an archive,
 or certify patient independence, clinical eligibility or identity annotations.
 """
 
-SORTING={'unknown','unselected','viability_only','CD45_positive','lymphocyte_enriched','CD3_positive','T_enriched','CD8_positive','other_lineage_selected','mixed_sorted_fractions'}
+SORTING={'unknown','unselected','viability_only','CD45_positive','CD45_negative','lymphocyte_enriched','CD3_positive','T_enriched','CD8_positive','other_lineage_selected','mixed_sorted_fractions'}
 MATERIAL={'primary_tumor','tumor_unspecified','metastatic_tumor','normal_adjacent','blood','bone_marrow','lymph_node_unknown','fluid','unknown','mixed','cell_product'}
 MODALITY={'scRNA','snRNA','unknown','mixed'}
 
@@ -21,6 +21,7 @@ def qualify_library(review):
     if sorting in ['CD45_positive','lymphocyte_enriched']:reasons.append('免疫/淋巴细胞富集，不能直接比较全TME多谱系比例')
     if sorting in ['CD3_positive','T_enriched','CD8_positive']:reasons.append('T/CD8富集，缺少其他细胞区室的观察机会')
     if sorting=='other_lineage_selected':reasons.append('指定谱系分选，缺少完整TME捕获')
+    if sorting=='CD45_negative':reasons.append('CD45阴性分选，免疫区室缺少观察机会')
     if sorting=='mixed_sorted_fractions' and not review.get('mixing_weights_reconstructable',False):reasons.append('分选区室混合比例未恢复，不能使用未加权全TME比例')
     if material in ['blood','bone_marrow','fluid']:reasons.append({'blood':'血液/PBMC另建集合','bone_marrow':'骨髓生态另建集合','fluid':'体液/胸腹水另建集合'}[material])
     if material=='normal_adjacent':reasons.append('正常/癌旁作为独立对照集合，不混入肿瘤主发现集')
@@ -38,7 +39,7 @@ def qualify_library(review):
     elif material in ['blood','bone_marrow','fluid','normal_adjacent']:
         tstatus,tscope='单独分析',{'blood':'血液T细胞','bone_marrow':'骨髓T细胞','fluid':'体液T细胞','normal_adjacent':'正常/癌旁T细胞'}[material]
     elif sorting=='CD8_positive':tstatus,tscope='条件候选','限定CD8内部，不能代表全部T细胞'
-    elif sorting=='other_lineage_selected' or retention=='selected_other_lineage':tstatus,tscope='排除','未提供可比较的全T细胞捕获'
+    elif sorting in ['other_lineage_selected','CD45_negative'] or retention=='selected_other_lineage':tstatus,tscope='排除','未提供可比较的全T细胞捕获'
     elif material in ['unknown','mixed','lymph_node_unknown'] or modality in ['unknown','mixed'] or not review.get('actual_sample_or_library_bridge',False):tstatus,tscope='待核实','先核材料、模态与样本/文库桥'
     else:tstatus,tscope='条件候选','同材料、阶段及捕获范围内的T细胞'
     if modality=='snRNA':tscope+='；snRNA分支'
@@ -48,3 +49,18 @@ def qualify_library(review):
             'whole_TME_all_reasons':reasons,'critical_missing_fields':missing,'T_internal_CM':tstatus,'T_internal_scope':tscope,
             'archive_retained':True,'patient_independence_newly_certified':False,'clinical_eligibility_newly_certified':False,
             'sorting_inferred_from_cell_proportions':False,'policy_is_project_proposal_not_author_protocol_table':True}
+
+def normalize_library_alias(value):
+    """Normalize separator spelling while preserving identifier token boundaries.
+
+    BC2 1 and BC21 must remain different. Dataset-specific semantic aliases,
+    prefixes, patient numbering and timepoints require separate evidence.
+    """
+    import re
+    return re.sub(r'[^a-z0-9]+','_',str(value).lower()).strip('_')
+
+def resolve_library_aliases(query_aliases,reference_aliases):
+    """Return all exact normalized hits; ambiguity is never silently resolved."""
+    keys={normalize_library_alias(v) for v in query_aliases}
+    hits=sorted(k for k,aliases in reference_aliases.items() if keys & {normalize_library_alias(v) for v in aliases})
+    return {'reference_keys':hits,'status':'unique' if len(hits)==1 else 'ambiguous' if hits else 'unmatched'}

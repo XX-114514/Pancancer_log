@@ -1,7 +1,7 @@
 import sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from library_source_qualification_v1 import qualify_library
+from library_source_qualification_v1 import qualify_library,normalize_library_alias,resolve_library_aliases
 
 class LibraryPolicy(unittest.TestCase):
     def base(self):return {'experimental_sorting':'unselected','material':'primary_tumor','RNA_modality':'scRNA','retained_data_scope':'whole_tissue','actual_sample_or_library_bridge':True}
@@ -32,5 +32,19 @@ class LibraryPolicy(unittest.TestCase):
         self.assertEqual(qualify_library(a)['whole_TME_scRNA_main'],'排除')
         a['mixing_weights_reconstructable']=True
         self.assertEqual(qualify_library(a)['whole_TME_scRNA_main'],'条件候选')
+    def test_CD45_negative_is_not_whole_TME_or_T_capture(self):
+        r={**self.base(),'experimental_sorting':'CD45_negative'}
+        self.assertEqual(qualify_library(r)['whole_TME_scRNA_main'],'排除')
+        self.assertEqual(qualify_library(r)['T_internal_CM'],'排除')
+    def test_all_cell_file_name_does_not_certify_unsorted_tissue(self):
+        r={**self.base(),'experimental_sorting':'unknown','retained_data_scope':'whole_tissue','file_title':'All cells'}
+        self.assertEqual(qualify_library(r)['whole_TME_scRNA_main'],'待核实')
+    def test_identifier_token_boundaries_prevent_false_library_join(self):
+        self.assertNotEqual(normalize_library_alias('BC2 1'),normalize_library_alias('BC21'))
+        q=resolve_library_aliases(['BC21'],{'a':['BC2 1'],'b':['BC21']})
+        self.assertEqual(q,{'reference_keys':['b'],'status':'unique'})
+    def test_ambiguous_aliases_and_replicates_stay_unresolved(self):
+        self.assertEqual(resolve_library_aliases(['A-1'],{'a':['A_1'],'b':['A 1']})['status'],'ambiguous')
+        self.assertEqual(resolve_library_aliases(['P13.post.2'],{'x':['P13.post.3']})['status'],'unmatched')
 
 if __name__=='__main__':unittest.main()
