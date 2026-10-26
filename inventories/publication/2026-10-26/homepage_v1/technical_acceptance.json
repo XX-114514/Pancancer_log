@@ -1,0 +1,51 @@
+{
+  "schema": "homepage_publication_technical_acceptance_v1",
+  "observed_UTC": "2026-10-26T02:08:51.636087+00:00",
+  "source_observed_UTC": "2026-10-26T01:50:46.004644Z",
+  "source_read_only": true,
+  "new_scientific_fit": false,
+  "source_original_images_SHA_verified": 2,
+  "source_aggregate_reconciliation": {
+    "NSCLC_all15_primary_slots_exact": true,
+    "clinical_complete_original_aggregates_SHA_exact": true,
+    "source_balance_all32_records_reconcile_ranges": true
+  },
+  "final_five_figures_visually_reviewed": true,
+  "final_png_SHA_manifest": "assets/publication/20261026/figure_manifest.json",
+  "numerical_checks": {
+    "full_spatial_BH_BY_families_replayed": 2,
+    "spatial_exp_transform_values_rechecked": 18,
+    "clinical_main_records_match_complete_family": 2,
+    "renderer_AST_pass": true,
+    "README_prohibited_weakening_phrases_absent": true,
+    "source_aggregate_count_only_no_individual_rows": true
+  },
+  "repository_validation": {
+    "actual_exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "existing_warning": "previous provenance inventory internal-path hint"
+  },
+  "parallel_work_preserved": true,
+  "public_payload": "User-requested README, five reviewed figures, necessary evidence definitions, reproducibility code and sanitized logs. Full aggregate input JSON excluded from publication.",
+  "20261026_full_archive_projection_v1": {
+    "n_sources": 65,
+    "all_queried_neighbor_precision_gates_passed": false,
+    "n_archive_rows": 9439479,
+    "n_source_model_records": 845,
+    "actual_child_exit_code": 0,
+    "terminal_SHA256": "2dacaeb65b7ac2bffd4dbbee4e8b1584854b10a4146045dbe06c71e377d1e152",
+    "standalone_Zarr": false,
+    "new_final_identity": false
+  },
+  "20261026_guarded_subset_native_marker_evidence_v2": {
+    "n_sources": 65,
+    "n_archive_rows": 9439479,
+    "actual_child_exit_code": 0,
+    "inferential_DEG_computed": false,
+    "terminal_SHA256": "6bdc35024fcc88308173f161e93df2663c4e25f8f13142fbc196119faa1e25bd",
+    "new_final_identity": false,
+    "n_guarded_subsets": 13279
+  },
+  "full_aggregate_dataset_published": false
+}

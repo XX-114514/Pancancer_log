@@ -1,0 +1,67 @@
+{
+  "schema": "project_homepage_figure_manifest_v1",
+  "observed_UTC": "2026-10-26T02:02:34.531835+00:00",
+  "source_access": "authenticated read through existing configured jump host; direct route timed out",
+  "scientific_inputs_unchanged": true,
+  "renderer_path": "scripts/render_project_homepage_figures_v1.py",
+  "renderer_SHA256": "81c26b4a1c6aa0923361561fa180c655954c445ff53750e258f134cffbc90f94",
+  "source_rendering_input_SHA256": "68e1b03694d16e9f855420a75c89b12cd46ece14ab4e839e60f96db8e319c031",
+  "images": [
+    {
+      "file": "atlas_overview.png",
+      "role": "Multi-source atlas and archived cohort context",
+      "source": "20261014_immune_publication_figures_v1/outputs/figures_v5/figures/Fig01_atlas_and_cohorts.png",
+      "original_SHA256": "fab343c28b55202ae81eef29366b36176ac8362aefa64c75e46f3542fb084e72",
+      "original_pixels": [
+        4322,
+        4015
+      ],
+      "published_pixels": [
+        2400,
+        2230
+      ],
+      "display_transform": "full-panel downsample to maximum2400px using Lanczos; no cropping, relabeling, or numerical changes",
+      "SHA256": "64572217f70df584caed98975d7edf47ff55ff56018894208b9c7d6bccbd945a",
+      "bytes": 1463577
+    },
+    {
+      "file": "T_continuous_states.png",
+      "role": "RNA state coordinates above descriptive T identities",
+      "source": "20261014_immune_publication_figures_v1/outputs/figures_v5/figures/Fig04_T_continuous_states.png",
+      "original_SHA256": "5cb4d9e7b99b31599884d4258e20fac5e4442c8b71aa9887d532b2d71d89b05c",
+      "original_pixels": [
+        4322,
+        3779
+      ],
+      "published_pixels": [
+        2400,
+        2098
+      ],
+      "display_transform": "full-panel downsample to maximum2400px using Lanczos; no cropping, relabeling, or numerical changes",
+      "SHA256": "ff972046631fcd3c283f0f50138cbb650f1399967f474b8c6e632f7b94b76df0",
+      "bytes": 1070866
+    },
+    {
+      "file": "cm02_source_balance.png",
+      "source": "server rendering of reviewed aggregates; actual exit0",
+      "display_transform": "none; full figure",
+      "SHA256": "93c25bc8aab085af6dd6e02e67a753f15ed4941f03458ad27b0f4e8dd2eb6f97",
+      "bytes": 123348
+    },
+    {
+      "file": "cm02_clinical_associations.png",
+      "source": "server rendering of reviewed aggregates; actual exit0",
+      "display_transform": "none; full figure",
+      "SHA256": "eee5b9098f971234f8c6df99f9bcecc88806a2109a68b54a7d09b9a0f6bc300a",
+      "bytes": 107060
+    },
+    {
+      "file": "nsclc_state_organization.png",
+      "source": "server rendering of reviewed aggregates; actual exit0",
+      "display_transform": "none; full figure",
+      "SHA256": "bca023533b8136e4a07d3e831b7c46649bb49cb0c025855913f2365fed226078",
+      "bytes": 112711
+    }
+  ],
+  "aggregate_input_scope": "Reviewed input retained in analysis environment; README publishes the requested figures and narrative statistics."
+}
