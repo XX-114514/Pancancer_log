@@ -1,0 +1,14 @@
+{
+  "schema": "homepage_cloud_publication_receipt_v1",
+  "verified_UTC": "2026-10-26T02:18:53.109300+00:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "content_commit_SHA": "4e716a09522337eba5c7f3688deeb2ba41b2844e",
+  "independent_HTTPS_remote_SHA": "4e716a09522337eba5c7f3688deeb2ba41b2844e",
+  "ordinary_push_actual_exit_code": 0,
+  "published_figures_SHA_verified": 5,
+  "README_exact_remote_match": true,
+  "full_aggregate_dataset_absent_from_public_tree": true,
+  "rejected_draft_not_public_ancestor": true,
+  "browser_rendered_new_homepage_and_atlas_figure_checked": true,
+  "publication_scope": "README, five scientific figures, necessary evidence definitions, generic renderer and technical logs; complete aggregate dataset retained private."
+}

@@ -48,3 +48,9 @@ origin已确认是用户指定public仓库，GitHub连接具备push权限。只�
 本轮是证据核查和首页发布，没有启动新科学推断。全量身份发布和用途／crosswalk／存储仍由原任务接续，本轮没有接管其待审阶段。首页实时入口保留STATUS，最新服务器取证单独固定时刻。
 
 建议提交：Publish evidence-led PanCancer homepage with server-verified scientific figures。
+
+## 实际公开终态
+
+收窄后的十二文件发布提交4e716a09522337eba5c7f3688deeb2ba41b2844e，以当时最新公开0849cfd为父，普通push实际退出0。2026-10-26约02:17 UTC／10:17 UTC+8／13:17 Melbourne，推送完成后的独立HTTPS ls-remote及fetch取得同一完整SHA。逐图从公开Git树读回并核五个PNG SHA，README字节与审阅稿一致；全树没有完整聚合JSON，拒绝草稿c0281e7不是公开提交祖先。
+
+真实GitHub页面刷新后已显示新标题、核心发现表、五图入口及新正文；实际截图核对首页排版和图谱图加载。公开验收见同批cloud_publication_receipt.json；浏览器截图仅本地核验。最终仓库validator仍为实际退出0、0 errors／1既有warning。未夹带原工作树并行修改，旧草稿与原文件不删除。后续继续以已公开main为基础逐文件交付，不把被排除的本地草稿历史推送。
