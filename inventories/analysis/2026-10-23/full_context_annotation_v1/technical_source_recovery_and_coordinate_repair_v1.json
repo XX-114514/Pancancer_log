@@ -1,0 +1,24 @@
+{
+  "schema": "technical_source_recovery_and_coordinate_repair_v1",
+  "observed_UTC": "2026-10-26T01:50:17.578102+00:00",
+  "source_access": "restored_actual_successful_read_verified",
+  "original_projection_producer_actual_exit_code": 0,
+  "original_own_subset_marker_producer_actual_exit_code": 0,
+  "no_duplicate_producer_started": true,
+  "original_failed_neighbor_precision_record_preserved": true,
+  "coordinate_only_exact_neighbor_repair": {
+    "actual_exit_code": 0,
+    "completed_UTC": "2026-10-26T01:49:22.024602+00:00",
+    "independent_distance_implementations_agreed": true,
+    "index_sha256": "c7292f0620e678553b07f3ec885ca4df73695ba9774ea2e2a17ad1089f28735e",
+    "native_counts_read": false,
+    "model_refit": false,
+    "threshold_lowered": false
+  },
+  "full_projection_independent_auditor": "original_exact_process_live_acceptance_pending",
+  "full_marker_independent_auditor": "original_exact_process_live_acceptance_pending",
+  "source_identifiers_scientific_effects_marker_names_and_individual_records": "not_in_this_receipt",
+  "new_authoritative_annotation": false,
+  "whole_eight_part_objective": "active_incomplete_scope_unchanged",
+  "standalone_Zarr": false
+}
