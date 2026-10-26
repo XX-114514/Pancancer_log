@@ -1,0 +1,88 @@
+{
+  "schema": "technical_joined_delivery_and_panel_review_v1",
+  "observed_UTC": "2026-10-26T03:16:35.441074+00:00",
+  "recorded_UTC": "2026-10-26T03:17:18.801132+00:00",
+  "recorded_UTC_plus8": "2026-10-26T11:17:18.801132+08:00",
+  "execution_and_audit": {
+    "own_marker_full_audit": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T02:01:29.760377+00:00",
+      "completed_UTC_plus8": "2026-10-26T10:01:29.760377+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "ALL_GUARDED_SUBSET_MARKER_MEMBERSHIP_AND_ARITHMETIC_AUDITED",
+      "output_sha256": "209aadc70acd7e35b625ffadbb43448783c48558e980528b5979955f7f55ce39"
+    },
+    "exact_group_catalog_audit": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T02:08:04.990927+00:00",
+      "completed_UTC_plus8": "2026-10-26T10:08:04.990927+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "ALL_ARCHIVE_GUARDED_GROUP_KEYS_MARKER_DISPLAYS_AND_CROSSWALKS_INDEPENDENTLY_AUDITED",
+      "output_sha256": "35081ed91442ed2b816a4363d8a15ec3124278cc4dbac5092f3d20fb55b63532"
+    },
+    "expression_unit_axes_audit": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T02:22:16.071120+00:00",
+      "completed_UTC_plus8": "2026-10-26T10:22:16.071120+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "ALL_ARCHIVE_NATIVE_UNIT_AND_INHERITED_REVIEW_BLOCK_AXES_AUDITED_SCIENTIFIC_VIEW_GATES_REMAIN_EXPLICIT",
+      "output_sha256": "dea2d519bc1cd14012f0ffdb0baa3dc5ec1b8e6b2520cd7f2eca9a88bd371cfb"
+    },
+    "projection_full_numerical_audit": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T02:40:29.552201+00:00",
+      "completed_UTC_plus8": "2026-10-26T10:40:29.552201+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "FULL_ARCHIVE_DOMAIN_AXES_NATIVE_PROBES_AND_COMPLETE_QUERY_FITS_AUDITED",
+      "output_sha256": "e1f279a0cb2274c8af0dd9f8f11d96e69277cc68051cc6de36bc1c296642e66d"
+    },
+    "exact_distance_overlay_qualification": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T02:49:30.851721+00:00",
+      "completed_UTC_plus8": "2026-10-26T10:49:30.851721+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "FULL_COMPUTATIONAL_PROJECTION_WITH_EXACT_NEIGHBOR_OVERLAY_QUALIFIED_NOT_IDENTITY_RELEASE",
+      "output_sha256": "c10fc00e8fa0d40dff0a35bb5f8449a2a4427d12621ea931d9b9e864a17d136a"
+    },
+    "native_panel_review_audit": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T03:00:39.720188+00:00",
+      "completed_UTC_plus8": "2026-10-26T11:00:39.720188+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "ALL_GUARDED_GROUP_MULTIGENE_PANEL_STATE_AND_AGGREGATE_PROFILES_AUDITED_NO_RELABELING",
+      "output_sha256": "5da4fa700b811c62c631e15ae8053b8293cfe30f0b1fe73da7fa6a6f32c9e38d"
+    },
+    "readonly_joined_delivery": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T03:02:29.559432+00:00",
+      "completed_UTC_plus8": "2026-10-26T11:02:29.559432+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "ALL_SOURCE_READONLY_JOINED_NATIVE_ATLAS_DELIVERY_AND_BOUNDED_READBACK_COMPLETE_AUDIT_REQUIRED",
+      "manifest_sha256": "53074bbf3d37071eb6cb79157e4645ac0e548ca4b3f0126db4a1b6b2c43d6d42",
+      "coverage_sha256": "63c5f20d8bb22092a3882ac737f86b6202ecc3800814e314d974b6670c6a313b"
+    },
+    "readonly_joined_delivery_audit_v2": {
+      "actual_child_exit_code": 0,
+      "completed_UTC": "2026-10-26T03:15:56.447741+00:00",
+      "completed_UTC_plus8": "2026-10-26T11:15:56.447741+08:00",
+      "wall_timeout": false,
+      "acceptance_status": "ALL_SOURCE_READONLY_DELIVERY_GROUP_MODEL_AND_NATIVE_PROBE_JOINS_AUDITED",
+      "output_sha256": "d9ef048f3f23938c183b1dc96b3290106a6e146ba35bbd3672b330fb5a5e49db"
+    }
+  },
+  "missing_author_label_audit_failure": {
+    "original_failure_preserved": true,
+    "cause": "NumPy_object_array_NaN_equality_false_mismatch",
+    "new_missingness_counterexamples_passed": 4,
+    "producer_data_or_labels_changed": false
+  },
+  "native_counts_copied": false,
+  "new_downloads": false,
+  "source_local_structural_numbers_are_not_new_shared_celltypes": true,
+  "new_authoritative_taxonomy_or_clinical_eligibility": false,
+  "standalone_counts_Zarr": false,
+  "large_count_write_gate": "not_qualified_by_existing_free_reserve_requirement",
+  "source_unit_identity_and_scientific_analysis_view_gates_separate": true,
+  "new_scientific_profiles_individual_records_matrices_learned_weights_or_source_IDs_in_this_receipt": false,
+  "whole_eight_part_objective": "incomplete_scientific_identity_and_source_view_qualification_remain"
+}
