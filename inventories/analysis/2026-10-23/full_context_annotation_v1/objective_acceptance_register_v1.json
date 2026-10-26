@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-25T21:04:42.909218+00:00",
+  "updated_UTC": "2026-10-26T23:42:54.700619+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -13,12 +13,13 @@
     {
       "id": "R2_source_design_alias",
       "requirement": "study/library aliases, capture/material/phase/assay and patient/clinical roles qualified",
-      "status": "source_roles_and_full_native_modality_overlay_complete_matched_public_dataset_evidence_added_anatomy_alias_capture_clinical_qualification_pending",
+      "status": "explicit_unit_source_qualification_v3_and_existing_metadata_preflight_completed_final_capture_alias_specimen_patient_and_QC_gates_remain_separate",
       "completion_requires": "explicit accepted/held/unknown source table and duplicate review",
       "evidence": "technical_source_lineage_and_roles_v1.json",
       "additional_evidence": [
         "technical_source_modality_overlay_v1.json",
-        "technical_supplemental_native_context_v1.json"
+        "technical_supplemental_native_context_v1.json",
+        "technical_metadata_readback_and_specificity_diagnostic_v1.json"
       ]
     },
     {
@@ -36,7 +37,8 @@
         "technical_marker_audit_followthrough_v1.json",
         "technical_full_local_graph_marker_acceptance_v1.json",
         "technical_full_identity_join_cell_candidate_v1.json",
-        "technical_full_candidate_audit_common_reference_launch_v1.json"
+        "technical_full_candidate_audit_common_reference_launch_v1.json",
+        "technical_metadata_readback_and_specificity_diagnostic_v1.json"
       ]
     },
     {
@@ -85,5 +87,6 @@
       "requirement": "qualified analysis views and new composition/communication mapping with old dated CM references preserved",
       "status": "pending"
     }
-  ]
+  ],
+  "current_execution_gate": "existing_metadata_preflight_readback_and_full_native_specificity_shadow_independent_replay_accepted_no_active_worker_from_this_node_final_biological_taxonomy_QC_specimen_alias_and_downstream_mapping_pending"
 }

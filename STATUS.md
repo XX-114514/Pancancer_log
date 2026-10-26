@@ -1,3 +1,7 @@
+## 2026-10-27 图谱元数据回读与谱系诊断已验收
+
+既有元数据预检的生产和监督终态实际退出0，完整分块回读SHA通过，私有资格表已更新实际预检值。四方案原生谱系支持敏感性诊断及独立全范围整数复算完成，仅验收计算一致性；没有更改来源资格、细胞身份、QC或旧CM。新下载补件已在服务器另一项目目录定位并完成清单校验，逐来源补证、公开条码桥、最终共同身份、组织/重复与下游资格分别待验收。见[本节点记录](logs/codex/2026/2026-10-27_atlas-metadata-readback-and-shadow-diagnostic.md)与[方法](methods/native-specificity-shadow-diagnostic-20261027.md)。此节点不刷新其他研究支线。
+
 ## 2026-10-25 云端同步已恢复
 
 用户明确批准本批公开发布后，147个积压/补充提交已普通推送至`b336611e680437f5436f1fa65c925ee27d4c0f51`；2026-10-24 14:24 UTC /22:24 UTC+8 /2026-10-25 01:24 Australia/Melbourne通过独立HTTPS读取及fetch核验一致。此次恢复同步不改变科学分级；历史“public push待同步”保留为当时状态。见[技术验收](inventories/runtime/2026-10-25/git_cloud_sync_initial_acceptance_v1.json)及[同步日志](logs/codex/2026/2026-10-25_project-cloud-sync.md)。同期新增空间完成记录已审阅，后续普通同步按同任务继续。

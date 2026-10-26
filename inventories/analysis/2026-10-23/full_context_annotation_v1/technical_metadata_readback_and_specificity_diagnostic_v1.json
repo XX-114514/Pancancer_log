@@ -1,0 +1,23 @@
+{
+  "schema": "technical_metadata_readback_and_specificity_diagnostic_v1",
+  "observed_UTC": "2026-10-26T23:42:54.700619+00:00",
+  "observed_UTCplus8": "2026-10-27T07:42:54.700619+08:00",
+  "metadata_production_and_supervisor_actual_exit_zero": true,
+  "metadata_chunk_and_final_SHA_verified": true,
+  "source_decisions_unchanged": true,
+  "four_fixed_shadow_scenarios_completed": true,
+  "producer_and_independent_audit_actual_exit_zero": true,
+  "independent_integer_replay_all_source_unit_and_candidate_type_scopes": true,
+  "summary_SHA256": "0c0aca7e447005d5335614e1f304a22ba754d2a582f08bcb79336d20e0c4fb1c",
+  "independent_audit_SHA256": "673d6e4e32f887b663ee873b971fe25344aaf8b93cc58930b5f9395389ca5df8",
+  "no_native_expression_read_in_this_diagnostic": true,
+  "no_annotation_accuracy_or_new_identity_claim": true,
+  "no_doublet_or_ambient_diagnosis": true,
+  "no_new_CM": true,
+  "public_barcode_bridge_separate_and_uncompleted": true,
+  "final_taxonomy_QC_specimen_alias_and_downstream_gates_pending": true,
+  "user_uploaded_supplements_located_on_server": true,
+  "uploaded_file_checksums_independently_matched": true,
+  "temporary_upload_files_excluded_from_complete_inputs": true,
+  "source_qualification_not_inferred_from_file_presence": true
+}
