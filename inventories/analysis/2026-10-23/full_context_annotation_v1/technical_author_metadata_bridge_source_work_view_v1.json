@@ -1,0 +1,20 @@
+{
+  "schema": "technical_author_metadata_bridge_and_source_work_view_v1",
+  "observed_UTC": "2026-10-27T00:12:51.497879+00:00",
+  "observed_UTCplus8": "2026-10-27T08:12:51.497879+08:00",
+  "production_and_independent_audit_v2_actual_exit_zero": true,
+  "full_source_cell_sample_material_and_author_label_axes_independently_replayed": true,
+  "original_h5_observations_and_public_metadata_exactly_compared": true,
+  "case_aliases_verified_bidirectionally_through_GEO_processed_file_links": true,
+  "original_case_number_differences_retained": true,
+  "failed_overstrict_numeric_name_equality_audit_v1_preserved": true,
+  "no_global_patient_independence_or_clinical_endpoint_claim": true,
+  "new_source_work_view_materialized": true,
+  "server_client_full_work_unit_semantic_SHA_matched": true,
+  "native_storage_units_archive_counts_old_labels_and_old_CM_unchanged": true,
+  "no_new_native_expression_read_or_count_materialization": true,
+  "final_common_taxonomy_QC_specimen_repeat_and_downstream_gates_pending": true,
+  "independent_audit_SHA256": "9ecfb88ed96247c90b860e48b483f87f74de65a5aa9685a7b8b94e63512806a7",
+  "source_work_view_manifest_SHA256": "9ee2e0ed92337e5a65b94523129a1b752b1481a6284d99b0b9a9049f0b80ba24",
+  "source_work_units_semantic_SHA256": "56af69c9f352b1e3923414027cfd3c6720c3c9af2345dd5c1dcf96c3ff5a7fe1"
+}
