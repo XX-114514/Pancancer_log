@@ -54,6 +54,8 @@ class TMEScopedAnnotationView:
         out['fine_evidence'][code==5]='baseline_pDC_RNA_evidence_retained_related_alias'
         out['coarse_evidence'][code==6]='additional_TCR_core_reference_and_local_context_supported'
         out['fine_evidence'][code==6]='coarse_T_RNA_context_only_no_new_fine_identity'
+        out['coarse_evidence'][code==7]='TCR_core_reference_and_current_common_local_context_supported'
+        out['fine_evidence'][code==7]='coarse_T_RNA_reentry_context_only'
         if 'fine_revision_review_code' in a:
             fine_code=a['fine_revision_review_code'][p]
             dictionary=m['candidate_dictionaries']['fine_revision_review']

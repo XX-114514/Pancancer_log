@@ -36,6 +36,9 @@ def main(root):
             for celltype in ['Treg','CD4_T','CD8_T','T_gamma_delta_RNA_candidate']:
                 role='new_direct_fine__'+celltype;mask=(a['fine_revision_review_code']>0)&(decoded==celltype)
                 if role not in roles and mask.any():roles[role]=(source,np.array([int(np.flatnonzero(mask)[0])],np.int64))
+        for celltype in ['T','Treg','CD4_T','CD8_T','T_gamma_delta_RNA_candidate']:
+            role='new_reentry__'+celltype;mask=(a['annotation_review_code']==7)&(decoded==celltype)
+            if role not in roles and mask.any():roles[role]=(source,np.array([int(np.flatnonzero(mask)[0])],np.int64))
         if 'source_filtered_boundary' not in roles and len(a['source_native_position'])>1:
             gaps=np.flatnonzero(np.diff(a['source_native_position'])>1)
             if len(gaps):roles['source_filtered_boundary']=(source,np.array([int(gaps[0]),int(gaps[0]+1),int(gaps[0])],np.int64))
@@ -46,9 +49,11 @@ def main(root):
     tested=[]
     required={'new_pDC_context','competing_or_incomplete_context','without_fitted_group','source_filtered_boundary'}
     fine_roles={'new_direct_fine__'+t for t in ['Treg','CD4_T','CD8_T','T_gamma_delta_RNA_candidate']}
-    assert required.issubset(roles) and set(roles).issubset(required|{'new_TCR_context'}|fine_roles)
+    reentry_roles={'new_reentry__'+t for t in ['T','Treg','CD4_T','CD8_T','T_gamma_delta_RNA_candidate']}
+    assert required.issubset(roles) and set(roles).issubset(required|{'new_TCR_context'}|fine_roles|reentry_roles)
     if summary['totals'].get('n_TCR_coarse_updates',0):assert 'new_TCR_context' in roles
     if summary['totals'].get('n_direct_fine_updates',0):assert fine_roles.issubset(roles)
+    if summary['totals'].get('n_reentry_TCR_updates',0):assert reentry_roles.issubset(roles)
     for role,(source,p) in roles.items():
         s=reader.source(source);a=s['arrays'];result=reader.metadata(source,p);columns=result['columns']
         np.testing.assert_array_equal(columns['source_native_position'],a['source_native_position'][p]);np.testing.assert_array_equal(columns['native_row'],a['native_row'][p]);assert (columns['source_qualification_code']==1).all()
@@ -69,6 +74,11 @@ def main(root):
             tcr=s['arrays']['annotation_review_code'][p]==6
             assert (columns['coarse_evidence'][tcr]=='additional_TCR_core_reference_and_local_context_supported').all()
             assert (columns['fine_revision_review']==evidence).all()
+        if role.startswith('new_reentry__'):
+            celltype=role.split('__',1)[1];assert (columns['consensus_major']=='T').all() and (columns['consensus_celltype']==celltype).all()
+            assert (columns['coarse_evidence']=='TCR_core_reference_and_current_common_local_context_supported').all()
+            evidence='coarse_T_RNA_reentry_context_only' if celltype=='T' else ('gamma_RNA_candidate_requires_orthogonal_review' if celltype=='T_gamma_delta_RNA_candidate' else 'direct_native_and_unique_reference_fine_RNA')
+            assert (columns['fine_evidence']==evidence).all() and (columns['annotation_review']=='TCR_core_reference_and_common_reentry_context_RNA_identity_applied').all()
         if role=='without_fitted_group':assert (columns['global_subcluster_number']==-1).all() and all(v is None for v in columns['subcluster'])
         genes=['CD3D','LILRA4','__UNMEASURED_SENTINEL__'];actual=reader.read_counts(source,p,genes);expected=reader.atlas.read_counts(source,a['source_native_position'][p],genes)
         assert (actual['counts']!=expected['counts']).nnz==0
@@ -91,7 +101,7 @@ def main(root):
     table(root/'outputs/TME_current_subcluster_catalog_v1.tsv',group_rows)
     if 'annotation_membership_crosswalk' in manifest:
         cross=manifest['annotation_membership_crosswalk'];assert sha(cross['path'])==cross['SHA256']
-        version='v4' if summary['totals'].get('n_direct_fine_updates',0) else 'v3'
+        version='v5' if summary['totals'].get('n_reentry_TCR_updates',0) else ('v4' if summary['totals'].get('n_direct_fine_updates',0) else 'v3')
         table(root/'outputs'/('TME_annotation_membership_crosswalk_'+version+'.tsv'),load(cross['path']))
     if 'marker_display_crosswalk' in manifest:
         cross=manifest['marker_display_crosswalk'];assert sha(cross['path'])==cross['SHA256']

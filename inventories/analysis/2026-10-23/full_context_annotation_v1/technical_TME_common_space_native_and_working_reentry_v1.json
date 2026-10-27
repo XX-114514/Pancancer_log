@@ -1,0 +1,138 @@
+{
+  "schema": "source_free_TME_common_space_native_and_working_reentry_technical_receipt_v1",
+  "observed_UTC": "2026-10-27T12:59:28.338663+00:00",
+  "stages": [
+    {
+      "logical_stage": "20261027_TME_common_TNK_reentry_discovery_v1",
+      "started_UTC": "2026-10-27T11:56:10.800297+00:00",
+      "completed_UTC": "2026-10-27T12:08:56.092172+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "3c5707f038ad858ced319a91b73a552172222bcb78e152eb3da75c7ce11ec098",
+      "supervisor_terminal_SHA256": "dbcbc2b699485d6a339dbe8c0c37a25d75f8c415e3ca9288f4270b78049704df"
+    },
+    {
+      "logical_stage": "20261027_TME_common_TNK_reentry_scope_audit_v1",
+      "started_UTC": "2026-10-27T12:01:44.521642+00:00",
+      "completed_UTC": "2026-10-27T12:09:00.092969+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "7d8d3da2899796a31150ad0120e9660d8cd95f5649dc6b1d03672b32a0899783",
+      "supervisor_terminal_SHA256": "2e4f7e8596749850ec69f91d3ecb5e6edbf563e6aaa36c36c2e8e09c97e6a220"
+    },
+    {
+      "logical_stage": "20261027_TME_common_TNK_native_audit_v1",
+      "started_UTC": "2026-10-27T12:10:02.882190+00:00",
+      "completed_UTC": "2026-10-27T12:18:05.973458+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "c0052faadb79e963f2dd78b5b95bbd6c83c1cebfb0c051abb5e5495051902604",
+      "supervisor_terminal_SHA256": "028bb649789c135e9e3e60d4271adee3e07b4ef2a2d71a21a0efc6534143baf0"
+    },
+    {
+      "logical_stage": "20261027_TME_common_TNK_group_profiles_v1",
+      "started_UTC": "2026-10-27T12:14:57.198909+00:00",
+      "completed_UTC": "2026-10-27T12:19:35.378750+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "243608acaaff373e8616a8e15074b3a5708d45e261de35c19b2227c32f45b819",
+      "supervisor_terminal_SHA256": "6b893aeb610a3772dc47d4681fb1b7f89b9db2583f1fc5a3d4e9bba6c9fee155"
+    },
+    {
+      "logical_stage": "20261027_TME_common_TNK_group_profiles_audit_v1",
+      "started_UTC": "2026-10-27T12:19:02.544754+00:00",
+      "completed_UTC": "2026-10-27T12:25:46.179604+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "ebe1db18aba1fb6e231cf9f169ebd7828ca39c584e0dc4330375ed725557c91e",
+      "supervisor_terminal_SHA256": "733ec3b3971fb9c026ab67c0f1c4109a45b9b358503290fe66c1f99092a44d6c"
+    },
+    {
+      "logical_stage": "20261027_TME_common_reentry_identity_proposals_v1",
+      "started_UTC": "2026-10-27T12:30:19.728297+00:00",
+      "completed_UTC": "2026-10-27T12:30:36.635767+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "ffcd4dd8efe1ea4051107b3dd70e11ab1783e33faa1b2b304a06a41f6fa6ca15",
+      "supervisor_terminal_SHA256": "b2e4c363295960eed2ec27027af0477d0c77d461e02aeae781f747eed686511c"
+    },
+    {
+      "logical_stage": "20261027_TME_common_reentry_identity_proposals_audit_v1",
+      "started_UTC": "2026-10-27T12:32:29.814752+00:00",
+      "completed_UTC": "2026-10-27T12:32:39.890349+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "4ebb2fff137f9028a3bffc9603529ec8ebeb4a34f3e668b440dff7d5f2ffed58",
+      "supervisor_terminal_SHA256": "a5ec43a8a3fe02ffd48201cc0792d5db9eac288647e1624e96efb816fbb98399"
+    },
+    {
+      "logical_stage": "20261027_TME_reentry_annotation_delta_native_v1",
+      "started_UTC": "2026-10-27T12:34:52.882756+00:00",
+      "completed_UTC": "2026-10-27T12:36:50.186468+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "6f28072e46f15f12fcd113c0b8e39540c6b452f7360eaa298401bf215a5dd632",
+      "supervisor_terminal_SHA256": "56f0281c3a5fd87d809ff4c629f4758ac25833fc052b335bdbd5661a031ee205"
+    },
+    {
+      "logical_stage": "20261027_TME_reentry_annotation_delta_native_audit_v1",
+      "started_UTC": "2026-10-27T12:40:37.831129+00:00",
+      "completed_UTC": "2026-10-27T12:44:11.856591+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "7cdf78180258193c66ae10330f369db47851985786f13520abd31807cafb1cd9",
+      "supervisor_terminal_SHA256": "0aa80376c2ef91cc0200c15d3b2f3955287efd6682531fd0770c28dde56c5ca5"
+    },
+    {
+      "logical_stage": "20261027_TME_reentry_working_revision_v5",
+      "started_UTC": "2026-10-27T12:47:23.966034+00:00",
+      "completed_UTC": "2026-10-27T12:47:50.549023+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "7fbd06adeb3e43fa650308d8ab2f8b9379a4b5a401d6f3fac4cd7b50fecf4d66",
+      "supervisor_terminal_SHA256": "35146b6bd82d349a57cbeb6d82d877210a8a5561528a6cbb13a504653b0a5237"
+    },
+    {
+      "logical_stage": "20261027_TME_reentry_working_audit_v5",
+      "started_UTC": "2026-10-27T12:54:56.853547+00:00",
+      "completed_UTC": "2026-10-27T12:55:09.979278+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "468829ebca41876395399b7f3791f1dadf9a10a228d2147bde5be76416743edc",
+      "supervisor_terminal_SHA256": "3ddd66629e33e0dbd35d20e2695c5184956cafc90ff90136e3e53a135554bc94"
+    },
+    {
+      "logical_stage": "20261027_TME_reentry_working_delivery_v5",
+      "started_UTC": "2026-10-27T12:56:14.609187+00:00",
+      "completed_UTC": "2026-10-27T12:56:41.334753+00:00",
+      "actual_child_exit_code": 0,
+      "science_terminal_SHA256": "d02d2b87857e9fd8b5425a76a836c5b2d6c4d07370114e8b077278eecc3a7411",
+      "supervisor_terminal_SHA256": "c245e087df0f0a59b36c64d25ec3b546bbd158658604c7a8c632d84735210ef4"
+    }
+  ],
+  "script_SHA256": {
+    "audit_TME_common_TNK_native_features_v1.py": "6d444088358f2561fc7920e3ce91473b8d5cd5f4558dc63e40cbc7b1cc083808",
+    "measure_TME_common_TNK_group_profiles_v1.py": "8ab703b71aa023bf0e9b3daa11ea91baed04445cff52ba7ae1d303db9bffbbcb",
+    "audit_TME_common_TNK_group_profiles_v1.py": "6fc2b86a30dc318218e515b0afbc084a065d969bf175eabd60c6c7571f4935dc",
+    "propose_TME_common_reentry_identity_v1.py": "4a19090678bca42fe30f1eacc9e00b4b69bb5400d0768d6042a48fcbb6e626c5",
+    "audit_TME_common_reentry_identity_v1.py": "0dd98f10985f4c21f07a06adfd1192938c0bc7e4c59e97892eee619dcd78823e",
+    "measure_TME_reentry_annotation_delta_v1.py": "db39ca1882107e7d274c28ffb6e9b55d13de9dd1fa5ae15c65a4815ec1a4f4cb",
+    "audit_TME_reentry_annotation_delta_v1.py": "ce1a1a6303372d956463a16e5350e09546d56856a296349cebf08d86822d5b1a",
+    "build_TME_reentry_working_revision_v1.py": "f9ae91ec6a464b1f0cd8ac44dd251609b26f7ca27dccae9d582eaf3f031ef865",
+    "audit_TME_reentry_working_revision_v1.py": "9a9edc04b39533685c131e896e6733dea28e198192fa99145711a2991e7deeaf",
+    "TME_scoped_annotation_view_v1.py": "94555fd72e86d4c0f9fc66f9267225395a3f77af09b420d9c5e05e8ad6eb0cb7",
+    "accept_TME_working_annotation_v1.py": "6e77692103557f4f73c936bb7286ef974741fddd8f22a8b756d1c6162aa176d5"
+  },
+  "working_manifest_SHA256": "c800511e4d5a8444046072bcbdd0f2aafdaeb9272aceaa2e86eae14ecd40929e",
+  "accepted_working_contract_SHA256": "72a06406f6d8edcb6f4541ff6aba241064926c8c344d4f6b561fe7cf0b8cec99",
+  "all_scope_rows_and_unfit_archive_records_retained": true,
+  "all_new_exact_subset_markers_native_and_independently_audited": true,
+  "inactive_historical_membership_keys_and_display_numbers_preserved": true,
+  "old_author_fields_native_counts_measurement_masks_RNA_states_and_source_gate_preserved": true,
+  "local_aggregate_export": "explicit_group_and_source_field_whitelist_no_individual_rows_expression_values_matrices_or_learned_parameters",
+  "all_exported_bytes_SHA256_and_complete_aggregate_denominators_verified": true,
+  "full_original_objective_complete": false,
+  "final_module_input_ready": false,
+  "new_CM_started": false,
+  "model_replay_scope": "independent_CSR_and_feature_selection_same_installed_PCA_solver_deterministic_replay_not_biological_accuracy",
+  "explicit_five_history_publication": {
+    "commit": "02ab3f8c7b5cf6e1558b301a3288c52d85f02a80",
+    "exact_frozen_payload_SHA256": "b566ad02b13c6ed1718fa79d861f2bf12b72671254606516ba5cb70074b9356a",
+    "all_five_UTF8_contents_and_changed_paths_independently_verified": true
+  },
+  "technical_approval_incident": {
+    "initial_delivery_launch_rejected_as_possible_individual_crosswalk_transfer": true,
+    "static_review_proved_launch_returns_only_status_and_crosswalk_is_group_level": true,
+    "server_launch_then_approved": true,
+    "subsequent_export_restricted_to_explicit_safe_aggregate_fields": true
+  }
+}
