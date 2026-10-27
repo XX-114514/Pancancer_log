@@ -1,0 +1,43 @@
+{
+  "schema": "technical_full_TME_native_evidence_and_own_marker_acceptance_v1",
+  "observed_UTC": "2026-10-27T09:56:54.599590+00:00",
+  "observed_UTC_plus_8": "2026-10-27T17:56:54.599590+08:00",
+  "observed_Australia_Melbourne": "2026-10-27T20:56:54.599590+11:00",
+  "full_current_scope_native_measurement_actual_exit_code": 0,
+  "full_independent_direct_CSR_replay_actual_exit_code": 0,
+  "all_exact_group_full_gene_statistics_and_ordered_candidates_replayed": true,
+  "marker_only_revision_and_independent_audit_actual_exit_codes": [
+    0,
+    0
+  ],
+  "working_reader_delivery_actual_exit_code": 0,
+  "changed_marker_metadata_and_native_count_cases_passed": true,
+  "all_identity_state_membership_and_number_arrays_unchanged_by_SHA256": true,
+  "all_current_exact_groups_have_own_expression_marker": true,
+  "current_parent_marker_borrowing_required": false,
+  "complete_frozen_family_policy_replay_actual_exit_code": 0,
+  "all_common_native_detections_and_frozen_masks_match": true,
+  "earlier_incomplete_policy_replay_failure_preserved": true,
+  "additional_or_alias_binary_detections_not_fabricated_amounts": true,
+  "fixed_count_diagnostic_actual_exit_code": 0,
+  "fixed_count_thresholds": [
+    1,
+    2,
+    3
+  ],
+  "family_count_varied_with_new_quantities": 10,
+  "family_count_held_at_old_support_for_missing_additional_quantities": 2,
+  "independent_histogram_and_transition_table_reaggregation_passed": true,
+  "no_new_identity_from_diagnostic": true,
+  "scientific_numerical_tests": 4,
+  "scientific_tests_skipped": 0,
+  "accepted_working_contract_SHA256": "922af32b6053ab3c22380b98bef973cf5834ccffdd90de0b1d7b32ddf0072a64",
+  "private_full_native_evidence_SHA256": "0d5a1f4003bf01d8dc833d2946d17a7994c89be7eecd672ffabc54845249f1c1",
+  "private_marker_evidence_SHA256": "4f290c35ec15b716335dd73191983698c9716bc268579ec1a0c89df87efd6b98",
+  "private_policy_evidence_SHA256": "aca315b146a0a5360cd3be23a6f837ee589e1372fcc7865815527b6350723417",
+  "new_inferential_DEG_or_patient_support_claimed": false,
+  "final_module_input_ready": false,
+  "new_CM_started": false,
+  "full_original_objective_complete": false,
+  "source_scientific_statistics_individual_rows_expression_or_weights_in_public_payload": false
+}

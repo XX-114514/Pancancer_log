@@ -48,3 +48,18 @@ pDC争议集合的新判读规则和八项缺测/共享程序/竞争谱系反例
 表达候选明确不是重复单位感知DEG，没有给未知患者生成独立样本。marker排名审核前只保存待审证据，不替换现有展示；身份、来源/QC、状态和旧CM均未变化。最终本群marker版本crosswalk、其他共同细身份、QC、组织/技术重复/别名与新下游仍待。
 
 [方法](../../../methods/TME-full-native-evidence-20261027.md)和[技术收据](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_pending_v1.json)。下一跟随同一实际句柄，接受全部来源生产及独立终态，再更新本群marker展示和审阅未决身份，不因SSH观察超时重新计算。建议提交：Measure full TME native context and exact-group expression with independent replay。
+
+
+## 完整原生证据与本群 marker 工作版已接受
+
+取证：2026-10-27T09:56:54.599590+00:00 UTC / 2026-10-27T17:56:54.599590+08:00 UTC+8 / 2026-10-27T20:56:54.599590+11:00 Australia/Melbourne。完整原生测量于2026-10-27T09:28:45.110507+00:00 UTC完成，直接CSR独立重放于2026-10-27T09:30:48.332214+00:00 UTC完成，监督actual exit均0。覆盖完整当前范围的面板值、RNA、mask、唯一可测基因轴、全部精确群的全基因统计和marker排序。原计数不复制；科学环境四项数值反例全部通过、零跳过。
+
+本群marker展示修订于2026-10-27T09:33:56.955960+00:00 UTC完成，完整独立展示审核于2026-10-27T09:38:03.834814+00:00 UTC接受，均actual exit0。当前全部确切群的marker均有本群表达证据；旧marker和展示保留crosswalk，成员SHA、数字、身份和状态数组不变。修订读取接口于2026-10-27T09:40:08.172490+00:00 UTC完成exit0，真实检查改变的marker、基线/当前证据、原计数和缺测。小型合同及汇总已本机SHA回读；完整群目录在服务器交付，大文本客户端取回未全部完成。
+
+新增规则重放先遇到Path类型错误和SSH观察超时；持久化重放actual exit1来自漏用旧红细胞/粒细胞锚点过滤，以及canonical/别名覆盖差别。修正后检查全部共同原生检测值，对未纳入新面板的附加/别名基因沿用已审二元检测，再应用完整规则，于2026-10-27T09:47:46.156891+00:00 UTC actual exit0，全部旧谱系mask匹配。二元检测不冒充新增原生量，原生产统计和marker未重跑。
+
+固定计数诊断于2026-10-27T09:51:07.101085+00:00 UTC actual exit0。事前固定1/2/3原生计数，十谱系变化；两类附加锚点/别名量缺项的谱系维持旧支持。阈值1重现旧mask，提高阈值不新造谱系。另一只读实现从全部直方图/转移表逐行复算分母与摘要通过；首次准备复算脚本有占位断言，已保留并用明确比较全范围/未决分母的修订版验收。结果用于安排后续源内群体审阅，不生成替代身份、去污染或doublet结论，不按未知数下降或临床关联选阈值。
+
+多次SSH取回出现255/观察超时；较长传输保存部分字节，单次传输试用无QoS标记和压缩，未改持久网络/SSH/代理配置，也未重启科学作业。首次本地文档脚本UTF8解析失败、未写入，改为显式UTF8文件保存后运行。原错误记录保留。
+
+最终共同身份、生物准确性、缺项QC、实际组织/重复与新CM门槛继续。原全档案及历史带日期CM保持。[方法](../../../methods/TME-full-native-evidence-20261027.md)和[技术收据](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_and_own_marker_acceptance_v1.json)。下一按多基因量、源内群体和参考作用域审阅未决边界；新增marker不等于新增类型。建议提交：Accept full TME native evidence and exact own-marker working annotation。

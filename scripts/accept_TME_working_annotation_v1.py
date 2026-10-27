@@ -14,7 +14,9 @@ def table(p,rows):
 def main(root):
     start=time.monotonic();cfg=load(root/'config/spec_v1.json');P=Path(cfg['producer']);A=Path(cfg['auditor']);J=Path(cfg['joined'])
     for stage in [P,A]:assert load(stage/'provenance/supervisor_terminal_v1.json')['actual_child_exit_code']==0
-    m=P/'outputs/TME_scoped_working_annotation_manifest_v1.json';at=A/'provenance/terminal_v1.json';t=load(at)
+    manifest_name=cfg.get('producer_manifest_name','TME_scoped_working_annotation_manifest_v1.json')
+    if Path(manifest_name).name!=manifest_name:raise ValueError('Manifest name must be a filename within producer outputs')
+    m=P/'outputs'/manifest_name;at=A/'provenance/terminal_v1.json';t=load(at)
     assert sha(m)==t['producer_manifest_SHA256'];manifest=load(m);groups=load(manifest['group_catalog']['path'])['groups'];summary=load(manifest['summary']['path'])
     acceptance={'schema':'accepted_TME_scoped_working_annotation_v1','accepted_UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'producer_manifest':{'path':str(m),'SHA256':sha(m)},'independent_audit_terminal':{'path':str(at),'SHA256':sha(at)},
@@ -65,8 +67,23 @@ def main(root):
     major_rows=[{'major':k,'n_source_qualified_records':v,'fraction_of_source_qualified_archive':v/totals['n_source_qualified_rows']} for k,v in major.most_common()]
     fine_rows=[{'celltype':k,'n_source_qualified_records':v,'fraction_of_source_qualified_archive':v/totals['n_source_qualified_rows'],'identity_level':'unresolved' if k=='unresolved' else 'working_RNA_identity_or_coarse_fallback_not_accuracy_certified'} for k,v in fine.most_common()]
     table(root/'outputs/TME_current_major_summary_v1.tsv',major_rows);table(root/'outputs/TME_current_celltype_summary_v1.tsv',fine_rows);table(root/'outputs/TME_current_source_annotation_coverage_v1.tsv',source_rows)
-    group_rows=[{k:g.get(k) for k in ['source','global_subcluster_number','consensus_celltype','marker','subcluster','n_scope_group_rows','marker_evidence_type','parent_marker_borrowed','borrow_reason','stable_group_sha256','marker_origin','parent_archive_group_sha256','parent_archive_display_number']} for g in groups]
+    group_rows=[{k:g.get(k) for k in ['source','global_subcluster_number','consensus_celltype','marker','subcluster','n_scope_group_rows','marker_evidence_type','parent_marker_borrowed','borrow_reason','stable_group_sha256','marker_origin','parent_archive_group_sha256','parent_archive_display_number','marker_native_mean_CP10K','marker_detection_fraction','marker_comparator_scope','marker_comparator_cell_count','marker_DEG_status','marker_small_group_status']} for g in groups]
     table(root/'outputs/TME_current_subcluster_catalog_v1.tsv',group_rows)
+    if 'marker_display_crosswalk' in manifest:
+        cross=manifest['marker_display_crosswalk'];assert sha(cross['path'])==cross['SHA256']
+        table(root/'outputs/TME_marker_display_crosswalk_v2.tsv',load(cross['path']))
+        for g in groups:
+            assert not g['parent_marker_borrowed'] and g['marker_origin']==g['stable_group_sha256']
+        # Exercise actual metadata with the new catalog, including at least
+        # one changed marker, rather than accepting only the manifest hash.
+        changed=next(g for g in groups if g.get('previous__marker',g['marker'])!=g['marker'])
+        src=reader.source(changed['source']);pos=np.flatnonzero(src['arrays']['annotation_group_code']==changed['source_annotation_group_code'])[:2]
+        columns=reader.metadata(changed['source'],pos)['columns']
+        assert len(pos)>0 and all(v==changed['marker'] for v in columns['marker'])
+        assert all(v==changed['subcluster'] for v in columns['subcluster'])
+        assert all(v==manifest['label_version'] for v in columns['label_version'])
+        assert all(v==changed['stable_group_sha256'] for v in columns['marker_origin'])
+        tested.append({'role':'changed_marker_current_catalog_readback','n_query_rows':len(pos),'metadata_marker_display_and_origin_matched':True})
     marker_counts=collections.Counter(g['marker_evidence_type'] for g in groups);marker_cell_counts=collections.Counter()
     for g in groups:marker_cell_counts[g['marker_evidence_type']]+=g['n_scope_group_rows']
     report={'status':'ACCEPTED_WORKING_ANNOTATION_READER_NATIVE_COUNT_MAPPING_AND_PRIVATE_SUMMARIES_DELIVERED',

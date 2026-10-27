@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-27T08:48:00.270903+00:00",
+  "updated_UTC": "2026-10-27T09:56:54.599590+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -29,7 +29,7 @@
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "source_qualified_working_annotation_pDC_context_review_full_scope_and_reader_numerically_accepted_final_shared_taxonomy_and_other_unresolved_boundaries_pending",
+      "status": "full_current_scope_native_context_exact_own_markers_working_reader_and_frozen_policy_accepted_shared_taxonomy_and_other_boundaries_pending",
       "evidence": "technical_common_cell_confidence_v2.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified",
       "additional_evidence": [
@@ -47,7 +47,8 @@
         "technical_declared_author_context_protocol_source_view_v2.json",
         "technical_source_qualified_identity_context_and_document_application_v1.json",
         "technical_fine_resolution_and_native_context_v1.json",
-        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json"
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_and_own_marker_acceptance_v1.json"
       ]
     },
     {
@@ -84,7 +85,8 @@
         "technical_common_model_structure_acceptance_v1.json",
         "technical_whole_source_projection_query_audit_v1.json",
         "technical_fine_resolution_and_native_context_v1.json",
-        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json"
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_and_own_marker_acceptance_v1.json"
       ]
     },
     {
@@ -93,7 +95,8 @@
       "status": "readonly_source_backed_collection_delivered_all_source_group_modeljoins_and_bounded_native_count_mask_readback_accepted_standalone_countsZarr_not_qualified_by500GiBreserve_plusoutput_workspace_gate",
       "completion_requires": "For standalone materialization, refresh physical and hard-quota minimum and qualify reserve plus measured output/workspace; current delivery is explicitly a readable source-backed collection, not standalone Zarr.",
       "additional_evidence": [
-        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json"
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_and_own_marker_acceptance_v1.json"
       ]
     },
     {
@@ -109,5 +112,5 @@
       ]
     }
   ],
-  "current_execution_gate": "accepted_source_qualified_working_annotation_and_native_backed_reader; continue_unresolved_taxonomy_QC_own_markers_specimen_duplicates_before_new_composition_or_CM"
+  "current_execution_gate": "accepted_full_current_TME_native_context_and_exact_own_marker_working_revision; continue_source_local_biological_taxonomy_QC_specimen_duplicates_before_new_composition_CM"
 }
