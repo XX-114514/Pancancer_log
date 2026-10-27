@@ -1,0 +1,33 @@
+{
+  "schema": "technical_TME_unknown_parent_context_and_common_reentry_v1",
+  "observed_UTC": "2026-10-27T12:03:52.271087+00:00",
+  "observed_timezones": "2026-10-27T12:03:52.271087+00:00 UTC / 2026-10-27T20:03:52.271087+08:00 UTC+8 / 2026-10-27T23:03:52.271087+11:00 Australia/Melbourne",
+  "previous_goal_turn_classification": "progress",
+  "complete_current_scope_unknown_parent_context_actual_exit_code": 0,
+  "independent_full_pool_neighbor_distance_audit_actual_exit_code": 0,
+  "complete_candidate_and_remainder_native_profiles_actual_exit_code": 0,
+  "independent_native_CSR_profiles_memberships_units_and_markers_actual_exit_code": 0,
+  "all_original_annotation_and_RNA_state_fields_preserved": true,
+  "separate_old_branch_neighbor_absence_not_used_as_negative_identity_evidence": true,
+  "old_embedding_training_exposure_separate_from_qualified_neighbor_pool": true,
+  "all_nonpositive_and_competing_controls_in_related_parents_retained_in_new_fit": true,
+  "frozen_source_pool_features_parameters_and_resource_preflight_passed": true,
+  "common_space_fit_and_scope_audit_started_with_exact_live_process_evidence": true,
+  "common_model_native_feature_PCA_and_identity_acceptance_pending": true,
+  "earlier_full_context_objective_not_reduced": true,
+  "new_CM_started": false,
+  "final_module_input_ready": false,
+  "original_full_objective_complete": false,
+  "private_context_aggregate_SHA256": "68a6f5b1d3e7e2bb05316bf7ba32dc38c8062db0e0640d878d81912415dfb2ae",
+  "private_native_aggregate_SHA256": "f2a8b9f53cccd33dfb358c79f0db16762988cce1457d584ce43e26b689298828",
+  "private_common_pool_preflight_SHA256": "282fe276bc6281c815aa7d614c4db0231e2b2dd3d358e028ad706a0d7879f3b3",
+  "private_runtime_observation_SHA256": "a607af3200a6b2a905db353639154d2b7de9889f4918f7301b1b7b8992b75467",
+  "accepted_science_terminal_SHA256": {
+    "20261027_TME_unknown_parent_TCR_context_v1": "a4eb01af7ac1a9d915b8e07bcbef5674ee8259e40d6b3ae2ee63904a839480d0",
+    "20261027_TME_unknown_parent_TCR_context_audit_v1": "a7834e1471ba71635104b0ea11d822d541b7516c15a65fab0fa6dbf68b836c52",
+    "20261027_TME_unknown_parent_TCR_profiles_v1": "75e06e14144a1bf9effd13723969c33d29c15c5ed0be450d300e899d24b7678e",
+    "20261027_TME_unknown_parent_TCR_profiles_audit_v1": "116c86c0fe6808e9eeb7766348b6336525515ad592cb037474a96af45c213006"
+  },
+  "source_statistics_individual_rows_expression_and_learned_models_in_public_payload": false,
+  "prior_five_full_history_files_not_included": true
+}
