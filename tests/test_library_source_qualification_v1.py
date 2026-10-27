@@ -36,6 +36,14 @@ class LibraryPolicy(unittest.TestCase):
         r={**self.base(),'experimental_sorting':'CD45_negative'}
         self.assertEqual(qualify_library(r)['whole_TME_scRNA_main'],'排除')
         self.assertEqual(qualify_library(r)['T_internal_CM'],'排除')
+    def test_known_CD45_design_without_fraction_identity_is_not_unsorted(self):
+        r={**self.base(),'experimental_sorting':'CD45_fraction_unresolved'}
+        q=qualify_library(r);self.assertEqual(q['whole_TME_scRNA_main'],'排除');self.assertEqual(q['T_internal_CM'],'待核实');self.assertTrue(q['archive_retained'])
+        r['T_cell_fraction']=.99;r['mixing_weights_reconstructable']=True
+        self.assertEqual(qualify_library(r)['whole_TME_scRNA_main'],'排除')
+    def test_unresolved_CD45_fraction_still_needs_review_in_normal_controls(self):
+        r={**self.base(),'experimental_sorting':'CD45_fraction_unresolved','material':'normal_adjacent'}
+        self.assertEqual(qualify_library(r)['T_internal_CM'],'待核实')
     def test_all_cell_file_name_does_not_certify_unsorted_tissue(self):
         r={**self.base(),'experimental_sorting':'unknown','retained_data_scope':'whole_tissue','file_title':'All cells'}
         self.assertEqual(qualify_library(r)['whole_TME_scRNA_main'],'待核实')
