@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-27T10:52:56.119324+00:00",
+  "updated_UTC": "2026-10-27T12:59:28.338663+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -49,7 +49,8 @@
         "technical_fine_resolution_and_native_context_v1.json",
         "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json",
         "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_and_own_marker_acceptance_v1.json",
-        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TCR_coarse_working_revision_v1.json"
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TCR_coarse_working_revision_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_common_space_native_and_working_reentry_v1.json"
       ]
     },
     {
@@ -88,7 +89,8 @@
         "technical_fine_resolution_and_native_context_v1.json",
         "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json",
         "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_and_own_marker_acceptance_v1.json",
-        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TCR_coarse_working_revision_v1.json"
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TCR_coarse_working_revision_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_common_space_native_and_working_reentry_v1.json"
       ]
     },
     {
@@ -99,7 +101,8 @@
       "additional_evidence": [
         "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json",
         "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_TME_native_evidence_and_own_marker_acceptance_v1.json",
-        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TCR_coarse_working_revision_v1.json"
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TCR_coarse_working_revision_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_common_space_native_and_working_reentry_v1.json"
       ]
     },
     {
@@ -115,5 +118,18 @@
       ]
     }
   ],
-  "current_execution_gate": "accepted_current_TME_TCR_coarse_working_revision; continue_unresolved_parent_local_reannotation_fine_identity_QC_specimen_duplicates_and_model_exposure_before_new_CM"
+  "current_execution_gate": "accepted_current_TME_common_context_reentry_working_revision; continue_other_lineages_shared_taxonomy_state_structure_QC_specimen_duplicates_and_model_exposure_before_new_CM",
+  "TME_direct_fine_working_revision_checkpoint": {
+    "technical_receipt": "technical_TME_direct_fine_working_revision_v1.json",
+    "all_production_independent_audit_and_reader_actual_exit_code": 0,
+    "complete_objective": false,
+    "final_module_input_ready": false
+  },
+  "TME_common_reentry_working_checkpoint": {
+    "technical_receipt": "technical_TME_common_space_native_and_working_reentry_v1.json",
+    "all_production_independent_audit_and_reader_actual_exit_code": 0,
+    "complete_objective": false,
+    "final_module_input_ready": false,
+    "new_CM_started": false
+  }
 }
