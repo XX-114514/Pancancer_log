@@ -1,0 +1,48 @@
+{
+  "schema": "technical_source_evidence_gap_and_native_boundary_audit_v1",
+  "observed_UTC": "2026-10-27T01:40:28.679229+00:00",
+  "observed_UTC_plus_8": "2026-10-27T09:40:28.679229+08:00",
+  "source_review": {
+    "new_bundle_format_and_checksums_accepted": true,
+    "official_metadata_CSV_fields_independently_reconciled": true,
+    "older_retrieval_notes_do_not_regress_later_accepted_materials": true,
+    "missing_documents_distinguished_from_unresolved_fields_and_conflicting_records": true,
+    "new_raw_bundle_not_uploaded": true,
+    "local_bundle_manifest_registered_privately_on_server": true,
+    "preparation_polarity_conflict_not_silently_corrected": true,
+    "additional_preanalysis_hold_materialized_actual_exit_code": 0,
+    "independent_first_audit_exit_code": 1,
+    "first_audit_error_class": "KeyError_incorrect_assumed_manifest_field",
+    "independent_corrected_audit_exit_code": 0,
+    "no_producer_rerun_for_audit_fix": true,
+    "complete_source_gate_output_SHA256": "0da66f9d685e653bf21e333fe855571064ca15232cd767bd1078f674e1e90e91",
+    "all_work_units_key_sorted_semantic_SHA256": "fbda28ce4e43a575490a8cae154088f0199f3176c09a8ba9001ed2decedfcd49",
+    "source_gate_independent_audit_SHA256": "9ec99f20c22a59ed0414c56be2feb5805166f6858231e4426c902d5e69d72fed",
+    "previous_qualification_view_preserved": true,
+    "native_expression_read_for_source_gate": false,
+    "all_archive_members_counts_labels_and_old_CM_unchanged": true,
+    "incomplete_client_PDF_readback_not_accepted_as_complete": true,
+    "private_workbook_export_CRC_and_complete_cell_readback_passed": true,
+    "private_workbook_SHA256": "fd63846c6317401646959c06469655c9ce2becb9fde789d085be506d92613218",
+    "small_supplied_metadata_and_gap_inventory_upload_actual_exit_code": 0,
+    "small_metadata_upload_receipt_SHA256": "272150c12d81b517fd05f7f449858cd9aa4605b3281864143502c2d3a4e1e3f5",
+    "old_exact_preview_processes_remaining": false
+  },
+  "native_boundary_probe_audit": {
+    "actual_exit_code": 0,
+    "all_bounded_probe_rows_reread_from_original_native_CSR": true,
+    "sampling_and_measurement_masks_and_all_panel_values_and_full_RNA_recomputed": true,
+    "production_CSR_helpers_not_imported": true,
+    "result_SHA256": "de2ec27f4935e53c22dca2fe1d95b8611c4f5776022451540c522772f927a4a0",
+    "producer_terminal_SHA256": "f896b83df34fa58479e59f71cd4fad47878084ea41aae46fc5898a297aeaba1f",
+    "audit_completion_UTC": "2026-10-27T01:19:20.909147+00:00",
+    "not_population_error_rate_or_biological_identity_validation": true,
+    "no_labels_or_QC_changed": true
+  },
+  "remaining_original_objective": {
+    "final_common_taxonomy_QC_specimen_repeat_and_alias_gates_complete": false,
+    "new_composition_or_communication_started": false,
+    "full_eight_part_objective_complete": false
+  },
+  "public_payload_excludes_source_scientific_effects_patient_sample_library_cell_rows_expression_matrices_model_weights_and_raw_attachments": true
+}

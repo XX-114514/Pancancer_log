@@ -11,3 +11,7 @@
 时间为同日UTC，UTC+8对应加8小时。其他精确首尾和监督终态在私有收据中，不用观察时间冒充完成时间。六项反例通过；额外基因不称独立真值，群均值不证明同细胞共表达，原QC名称不授予新资格。
 
 [同任务日志](../logs/codex/2026/2026-10-27_source-qualified-identity-context.md)、[技术收据](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_source_qualified_identity_context_and_document_application_v1.json)。原档案、计数、标签和历史CM不变，最终身份/QC/组织归并及新下游仍待。
+
+
+2026-10-27T01:40:28.679229+00:00 UTC / 2026-10-27T09:40:28.679229+08:00 UTC+8：有界原生边界抽查的全部行、原生计数/测量mask、抽样与汇总独立复算actual exit0，完整结果SHA回读一致。不改身份/QC，不称全档案生物正确性。新资料的来源预分析追加门槛另行验收；完整目标未完成。
+详见[任务日志](../logs/codex/2026/2026-10-27_source-qualified-identity-context.md)。

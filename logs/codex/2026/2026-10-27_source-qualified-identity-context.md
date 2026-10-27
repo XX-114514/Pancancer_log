@@ -17,3 +17,12 @@
 [方法](../../../methods/source-qualified-identity-context-review-20261027.md)、[run](../../../runs/20261027_source_qualified_identity_context_v1.md)、[技术收据](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_source_qualified_identity_context_and_document_application_v1.json)。来源统计、样本关系、逐群表达及原附件私有。公共worker把固定快照分母检查改为从绑定登记推导，测量/身份逻辑不变；实际执行脚本保留原SHA。
 
 下一步独立复核边界抽查，按原生多基因和来源背景审阅未决池，冻结保守共同类型/状态边界、最终QC及组织/技术重复，再构建组成矩阵。旧带日期CM不变，完整目标active。建议提交：Join source qualification to identity context and apply reviewed preparation documents。
+
+
+## 有界原生抽查独立复核完成：2026-10-27T01:40:28.679229+00:00 UTC / 2026-10-27T09:40:28.679229+08:00 UTC+8
+
+独立审核于2026-10-27T01:19:20.909147+00:00 UTC完成，监督器actual exit0；完整结果文件回读SHA与服务端相同。审核不导入生产抽样/CSR聚合函数，重建冻结来源规模间隔、固定分层与抽样轴，直接按每个原生行的indptr/data/indices复算全部面板值、可测mask和完整RNA分母；重复物理基因槽合并及真实零/缺测语义保留。冻结抽查来源资格帧保持原版本，不用后续补件资格重新选样。
+
+本节点只验收有界抽查的计算和原生读值一致性，不是全档案误注率、doublet诊断或最终身份验证，未改任何标签/QC。用户新补件继续以用途/来源覆盖单独登记，新的追加暂缓层已审核，不沿用旧覆盖汇总冒充新范围。最终共同身份、QC、真实组织/重复和新下游仍未完成；原完整八项目标active。
+
+[独立审核实现](../../../scripts/audit_native_identity_boundaries_v1.py)、[本节点技术收据](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_source_evidence_gap_and_native_boundary_audit_v1.json)。
