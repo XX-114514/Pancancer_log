@@ -1,0 +1,45 @@
+{
+  "schema": "technical_fine_resolution_and_native_context_v1",
+  "observed_UTC": "2026-10-27T02:36:37.625187+00:00",
+  "observed_UTC_plus_8": "2026-10-27T10:36:37.625187+08:00",
+  "previous_goal_turn_classification": "progress",
+  "full_archive_fine_resolution_diagnostic": {
+    "actual_exit_code": 0,
+    "independent_audit_actual_exit_code": 0,
+    "summary_SHA256": "8d547ed94d2dd1ccc45bb0483e4e78689cb746ca0aecfb24359cab324de5ffbd",
+    "index_SHA256": "028b187215607ac50c8dfdaf84fd4583407dadaee33a6a50e3f67ff54f76b35e",
+    "independent_audit_output_SHA256": "294752c2049b25169ca1e44b85e5e82f86fc8cc0cbbb75b03042997aa1a4feed",
+    "all_bound_archive_rows_patterns_masks_and_group_counts_checked": true,
+    "missing_required_measurement_not_biological_zero": true,
+    "native_count_matrix_read_for_this_sidecar_census": false,
+    "wall_seconds": 119.30295062810183,
+    "peak_RSS_bytes_Linux": 2890424320,
+    "written_output_bytes": 39401292
+  },
+  "targeted_native_context": {
+    "producer_actual_exit_code": 0,
+    "independent_direct_CSR_audit_actual_exit_code": 0,
+    "summary_SHA256": "3e0af03def4147eb6610b0e8c9626629221d1476eb5e94767d3d3734363ff17b",
+    "index_SHA256": "76315a48f30593d3b9aea9459d7ac6a2213fd159c3d48c8afea96bbbc9611c73",
+    "independent_audit_output_SHA256": "1af6883cfe5b714529ff729a4868738c86d43673557d00b4f978d356a178d12f",
+    "every_selected_native_row_and_added_gene_and_RNA_denominator_recomputed": true,
+    "sampling_not_population_accuracy_estimation": true,
+    "new_context_genes_may_be_reference_features": true,
+    "wall_seconds": 28.630347514059395,
+    "peak_RSS_bytes_Linux": 2571988992
+  },
+  "complete_disputed_subset_context": {
+    "producer_actual_exit_code": 0,
+    "case_scope_entire_archive_including_TME_held_excluded_and_model_excluded_rows": true,
+    "summary_SHA256": "8c1797e8cc88bd8af5055d83f38e4f6f42be41bf4ff0731a3579d599d5963669",
+    "index_SHA256": "a0ea2e4a126f4f168aef735371d2f9ef81d92a94fe0c078a6ab9e00f065455cc",
+    "independent_audit_complete": true,
+    "independent_audit_actual_exit_code": 0,
+    "independent_audit_output_SHA256": "901eb85b2b575d298ecd3646add6e9d3bb94b5ddefa048f3494db9f3b6a19bd3",
+    "wall_seconds": 231.62907656794414,
+    "peak_RSS_bytes_Linux": 3799339008
+  },
+  "no_new_cell_identity_QC_source_gate_malignancy_clinical_or_CM_release": true,
+  "original_full_eight_part_objective_still_active_incomplete": true,
+  "public_payload_contains_no_source_scientific_effects_or_patient_sample_library_cell_rows_gene_values_matrices_or_model_weights": true
+}

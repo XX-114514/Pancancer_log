@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-27T01:13:09.337315+00:00",
+  "updated_UTC": "2026-10-27T08:48:00.270903+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -22,13 +22,14 @@
         "technical_metadata_readback_and_specificity_diagnostic_v1.json",
         "technical_author_metadata_bridge_source_work_view_v1.json",
         "technical_declared_author_context_protocol_source_view_v2.json",
-        "technical_source_qualified_identity_context_and_document_application_v1.json"
+        "technical_source_qualified_identity_context_and_document_application_v1.json",
+        "technical_source_evidence_gap_and_native_boundary_audit_v1.json"
       ]
     },
     {
       "id": "R3_preannotation",
       "requirement": "source-local native multi-marker coarse review and fine-group evidence; unresolved and malignancy axes retained",
-      "status": "full_local_and_all_archive_guarded_cell_evidence_computational_audits_accepted_final_supplemental_taxonomy_and_biological_coordination_pending",
+      "status": "source_qualified_working_annotation_pDC_context_review_full_scope_and_reader_numerically_accepted_final_shared_taxonomy_and_other_unresolved_boundaries_pending",
       "evidence": "technical_common_cell_confidence_v2.json",
       "completion_requires": "source-qualified full archive local identities and unresolved/boundary review; references are proposals, not independent truth; final common types and state separation must be qualified",
       "additional_evidence": [
@@ -44,7 +45,9 @@
         "technical_metadata_readback_and_specificity_diagnostic_v1.json",
         "technical_author_metadata_bridge_source_work_view_v1.json",
         "technical_declared_author_context_protocol_source_view_v2.json",
-        "technical_source_qualified_identity_context_and_document_application_v1.json"
+        "technical_source_qualified_identity_context_and_document_application_v1.json",
+        "technical_fine_resolution_and_native_context_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json"
       ]
     },
     {
@@ -56,7 +59,7 @@
     {
       "id": "R5_resolution",
       "requirement": "rare/unknown, within-type state and native marker preservation plus runtime/memory evaluation",
-      "status": "whole_source_query_ridge_and_native_probe_audit_and_neighbor_precision_qualification_accepted_full_archive_transfer_pending",
+      "status": "full845source_model_numerical_audit_and_complete_exact_failed_basis_overlay_qualified_biological_scope_specific_interpretation_retained",
       "evidence": "technical_lineage_graph_factor_comparison_v1.json",
       "additional_evidence": [
         "technical_local_graph_preflight_marker_launch_v1.json",
@@ -67,7 +70,7 @@
     {
       "id": "R6_full_scale",
       "requirement": "selected lineage-specific workflow and full mapping, model/exposure flags, confidence and version crosswalk",
-      "status": "full_archive_projection_and_exact_guarded_subset_own_native_marker_producers_live_full_independent_audits_taxonomy_crosswalk_views_pending",
+      "status": "all9439479archive_rows_selected_projection_group_registry_marker_crosswalk_unit_state_and_readonly_joins_independently_audited_final_biological_sharedtaxonomy_and_analysisnodes_pending",
       "additional_evidence": [
         "technical_full_native_local_graph_launch_v1.json",
         "technical_local_graph_preflight_marker_launch_v1.json",
@@ -79,25 +82,32 @@
         "technical_common_reference_input_acceptance_cloud_v1.json",
         "technical_common_reference_model_launch_v1.json",
         "technical_common_model_structure_acceptance_v1.json",
-        "technical_whole_source_projection_query_audit_v1.json"
+        "technical_whole_source_projection_query_audit_v1.json",
+        "technical_fine_resolution_and_native_context_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json"
       ]
     },
     {
       "id": "R7_storage",
       "requirement": "quota/peak/reserve qualification, appropriate archive delivery and native count/mask/ID readback audit",
-      "status": "not_qualified_for_large_write",
-      "completion_requires": "refreshed gate and verified output; an index is not standalone Zarr"
+      "status": "readonly_source_backed_collection_delivered_all_source_group_modeljoins_and_bounded_native_count_mask_readback_accepted_standalone_countsZarr_not_qualified_by500GiBreserve_plusoutput_workspace_gate",
+      "completion_requires": "For standalone materialization, refresh physical and hard-quota minimum and qualify reserve plus measured output/workspace; current delivery is explicitly a readable source-backed collection, not standalone Zarr.",
+      "additional_evidence": [
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json"
+      ]
     },
     {
       "id": "R8_downstream",
       "requirement": "qualified analysis views and new composition/communication mapping with old dated CM references preserved",
-      "status": "pending",
+      "status": "actual_all9439479rows2346unit_tables_and_explicit_unknown_rejected_view_gates_materialized_and_independently_audited_no_new_clinical_or_composition_eligibility_downstream_pending",
       "additional_evidence": [
         "technical_author_metadata_bridge_source_work_view_v1.json",
         "technical_declared_author_context_protocol_source_view_v2.json",
-        "technical_source_qualified_identity_context_and_document_application_v1.json"
+        "technical_source_qualified_identity_context_and_document_application_v1.json",
+        "technical_source_evidence_gap_and_native_boundary_audit_v1.json",
+        "inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_scoped_annotation_v1.json"
       ]
     }
   ],
-  "current_execution_gate": "source_qualified_native_context_and_uploaded_document_source_view_accepted_unresolved_boundaries_final_shared_taxonomy_QC_specimen_repeat_and_downstream_pending"
+  "current_execution_gate": "accepted_source_qualified_working_annotation_and_native_backed_reader; continue_unresolved_taxonomy_QC_own_markers_specimen_duplicates_before_new_composition_or_CM"
 }
