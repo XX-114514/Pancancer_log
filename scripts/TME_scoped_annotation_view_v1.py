@@ -52,6 +52,8 @@ class TMEScopedAnnotationView:
         out['coarse_evidence'][code==1]='additional_native_context_pDC_related_working_proposal'
         out['fine_evidence'][code==1]='additional_native_context_not_orthogonal_identity_validation'
         out['fine_evidence'][code==5]='baseline_pDC_RNA_evidence_retained_related_alias'
+        out['coarse_evidence'][code==6]='additional_TCR_core_reference_and_local_context_supported'
+        out['fine_evidence'][code==6]='coarse_T_RNA_context_only_no_new_fine_identity'
         out['confidence']=np.asarray([str(r)+';'+str(c)+';'+str(f) for r,c,f in zip(review,out['coarse_evidence'],out['fine_evidence'])],object)
         out['author_label']=np.asarray(m['author_label_dictionary'],object)[a['author_label_code'][p]]
         out['fit_pool_candidate_not_final_QC']=a['fit_pool_candidate_not_final_QC'][p]

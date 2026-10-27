@@ -29,7 +29,7 @@ def main(root):
     reader=TMEScopedAnnotationView(ap);roles={};source_rows=[];major=collections.Counter();fine=collections.Counter();review=collections.Counter()
     for source in reader.sources:
         s=reader.source(source);a=s['arrays'];meta=s['metadata'];nr=len(a['native_row'])
-        for role,mask in [('new_pDC_context',a['annotation_review_code']==1),('competing_or_incomplete_context',np.isin(a['annotation_review_code'],[2,3,4])),('without_fitted_group',~a['fit_pool_candidate_not_final_QC'])]:
+        for role,mask in [('new_pDC_context',a['annotation_review_code']==1),('new_TCR_context',a['annotation_review_code']==6),('competing_or_incomplete_context',np.isin(a['annotation_review_code'],[2,3,4])),('without_fitted_group',~a['fit_pool_candidate_not_final_QC'])]:
             if role not in roles and mask.any():roles[role]=(source,np.array([int(np.flatnonzero(mask)[0])],np.int64))
         if 'source_filtered_boundary' not in roles and len(a['source_native_position'])>1:
             gaps=np.flatnonzero(np.diff(a['source_native_position'])>1)
@@ -39,7 +39,9 @@ def main(root):
             'n_without_fitted_group':meta['n_without_fitted_group'],'n_major_unresolved':meta['major_counts'].get('unresolved',0),
             'n_new_pDC_related_context_supported':meta['annotation_review_counts'].get('1',0),'n_structural_groups_not_celltypes':meta['n_source_annotation_groups']})
     tested=[]
-    assert set(roles)=={'new_pDC_context','competing_or_incomplete_context','without_fitted_group','source_filtered_boundary'}
+    required={'new_pDC_context','competing_or_incomplete_context','without_fitted_group','source_filtered_boundary'}
+    assert required.issubset(roles) and set(roles).issubset(required|{'new_TCR_context'})
+    if summary['totals'].get('n_TCR_coarse_updates',0):assert 'new_TCR_context' in roles
     for role,(source,p) in roles.items():
         s=reader.source(source);a=s['arrays'];result=reader.metadata(source,p);columns=result['columns']
         np.testing.assert_array_equal(columns['source_native_position'],a['source_native_position'][p]);np.testing.assert_array_equal(columns['native_row'],a['native_row'][p]);assert (columns['source_qualification_code']==1).all()
@@ -49,6 +51,10 @@ def main(root):
             assert (columns['fine_evidence']=='additional_native_context_not_orthogonal_identity_validation').all()
             assert 'baseline__coarse_evidence' in columns and 'baseline__fine_evidence' in columns
         if role=='competing_or_incomplete_context':assert (columns['consensus_major']=='unresolved').all()
+        if role=='new_TCR_context':
+            assert (columns['consensus_major']=='T').all() and (columns['consensus_celltype']=='T').all()
+            assert (columns['coarse_evidence']=='additional_TCR_core_reference_and_local_context_supported').all()
+            assert (columns['fine_evidence']=='coarse_T_RNA_context_only_no_new_fine_identity').all()
         if role=='without_fitted_group':assert (columns['global_subcluster_number']==-1).all() and all(v is None for v in columns['subcluster'])
         genes=['CD3D','LILRA4','__UNMEASURED_SENTINEL__'];actual=reader.read_counts(source,p,genes);expected=reader.atlas.read_counts(source,a['source_native_position'][p],genes)
         assert (actual['counts']!=expected['counts']).nnz==0
@@ -69,6 +75,9 @@ def main(root):
     table(root/'outputs/TME_current_major_summary_v1.tsv',major_rows);table(root/'outputs/TME_current_celltype_summary_v1.tsv',fine_rows);table(root/'outputs/TME_current_source_annotation_coverage_v1.tsv',source_rows)
     group_rows=[{k:g.get(k) for k in ['source','global_subcluster_number','consensus_celltype','marker','subcluster','n_scope_group_rows','marker_evidence_type','parent_marker_borrowed','borrow_reason','stable_group_sha256','marker_origin','parent_archive_group_sha256','parent_archive_display_number','marker_native_mean_CP10K','marker_detection_fraction','marker_comparator_scope','marker_comparator_cell_count','marker_DEG_status','marker_small_group_status']} for g in groups]
     table(root/'outputs/TME_current_subcluster_catalog_v1.tsv',group_rows)
+    if 'annotation_membership_crosswalk' in manifest:
+        cross=manifest['annotation_membership_crosswalk'];assert sha(cross['path'])==cross['SHA256']
+        table(root/'outputs/TME_annotation_membership_crosswalk_v3.tsv',load(cross['path']))
     if 'marker_display_crosswalk' in manifest:
         cross=manifest['marker_display_crosswalk'];assert sha(cross['path'])==cross['SHA256']
         table(root/'outputs/TME_marker_display_crosswalk_v2.tsv',load(cross['path']))
