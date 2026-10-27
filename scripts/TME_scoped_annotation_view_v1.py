@@ -54,6 +54,13 @@ class TMEScopedAnnotationView:
         out['fine_evidence'][code==5]='baseline_pDC_RNA_evidence_retained_related_alias'
         out['coarse_evidence'][code==6]='additional_TCR_core_reference_and_local_context_supported'
         out['fine_evidence'][code==6]='coarse_T_RNA_context_only_no_new_fine_identity'
+        if 'fine_revision_review_code' in a:
+            fine_code=a['fine_revision_review_code'][p]
+            dictionary=m['candidate_dictionaries']['fine_revision_review']
+            if len(dictionary)!=3 or np.any(fine_code>=len(dictionary)):raise ValueError('Fine revision evidence code differs')
+            out['fine_revision_review']=np.asarray(dictionary,object)[fine_code]
+            out['fine_evidence'][fine_code==1]='direct_native_and_unique_reference_fine_RNA'
+            out['fine_evidence'][fine_code==2]='gamma_RNA_candidate_requires_orthogonal_review'
         out['confidence']=np.asarray([str(r)+';'+str(c)+';'+str(f) for r,c,f in zip(review,out['coarse_evidence'],out['fine_evidence'])],object)
         out['author_label']=np.asarray(m['author_label_dictionary'],object)[a['author_label_code'][p]]
         out['fit_pool_candidate_not_final_QC']=a['fit_pool_candidate_not_final_QC'][p]

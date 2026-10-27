@@ -29,8 +29,13 @@ def main(root):
     reader=TMEScopedAnnotationView(ap);roles={};source_rows=[];major=collections.Counter();fine=collections.Counter();review=collections.Counter()
     for source in reader.sources:
         s=reader.source(source);a=s['arrays'];meta=s['metadata'];nr=len(a['native_row'])
-        for role,mask in [('new_pDC_context',a['annotation_review_code']==1),('new_TCR_context',a['annotation_review_code']==6),('competing_or_incomplete_context',np.isin(a['annotation_review_code'],[2,3,4])),('without_fitted_group',~a['fit_pool_candidate_not_final_QC'])]:
+        decoded=np.asarray(meta['candidate_dictionaries']['consensus_celltype'],object)[a['consensus_celltype_code']]
+        for role,mask in [('new_pDC_context',a['annotation_review_code']==1),('new_TCR_context',(a['annotation_review_code']==6)&(decoded=='T')),('competing_or_incomplete_context',np.isin(a['annotation_review_code'],[2,3,4])),('without_fitted_group',~a['fit_pool_candidate_not_final_QC'])]:
             if role not in roles and mask.any():roles[role]=(source,np.array([int(np.flatnonzero(mask)[0])],np.int64))
+        if 'fine_revision_review_code' in a:
+            for celltype in ['Treg','CD4_T','CD8_T','T_gamma_delta_RNA_candidate']:
+                role='new_direct_fine__'+celltype;mask=(a['fine_revision_review_code']>0)&(decoded==celltype)
+                if role not in roles and mask.any():roles[role]=(source,np.array([int(np.flatnonzero(mask)[0])],np.int64))
         if 'source_filtered_boundary' not in roles and len(a['source_native_position'])>1:
             gaps=np.flatnonzero(np.diff(a['source_native_position'])>1)
             if len(gaps):roles['source_filtered_boundary']=(source,np.array([int(gaps[0]),int(gaps[0]+1),int(gaps[0])],np.int64))
@@ -40,8 +45,10 @@ def main(root):
             'n_new_pDC_related_context_supported':meta['annotation_review_counts'].get('1',0),'n_structural_groups_not_celltypes':meta['n_source_annotation_groups']})
     tested=[]
     required={'new_pDC_context','competing_or_incomplete_context','without_fitted_group','source_filtered_boundary'}
-    assert required.issubset(roles) and set(roles).issubset(required|{'new_TCR_context'})
+    fine_roles={'new_direct_fine__'+t for t in ['Treg','CD4_T','CD8_T','T_gamma_delta_RNA_candidate']}
+    assert required.issubset(roles) and set(roles).issubset(required|{'new_TCR_context'}|fine_roles)
     if summary['totals'].get('n_TCR_coarse_updates',0):assert 'new_TCR_context' in roles
+    if summary['totals'].get('n_direct_fine_updates',0):assert fine_roles.issubset(roles)
     for role,(source,p) in roles.items():
         s=reader.source(source);a=s['arrays'];result=reader.metadata(source,p);columns=result['columns']
         np.testing.assert_array_equal(columns['source_native_position'],a['source_native_position'][p]);np.testing.assert_array_equal(columns['native_row'],a['native_row'][p]);assert (columns['source_qualification_code']==1).all()
@@ -55,6 +62,13 @@ def main(root):
             assert (columns['consensus_major']=='T').all() and (columns['consensus_celltype']=='T').all()
             assert (columns['coarse_evidence']=='additional_TCR_core_reference_and_local_context_supported').all()
             assert (columns['fine_evidence']=='coarse_T_RNA_context_only_no_new_fine_identity').all()
+        if role.startswith('new_direct_fine__'):
+            celltype=role.split('__',1)[1];assert (columns['consensus_major']=='T').all() and (columns['consensus_celltype']==celltype).all()
+            evidence='gamma_RNA_candidate_requires_orthogonal_review' if celltype=='T_gamma_delta_RNA_candidate' else 'direct_native_and_unique_reference_fine_RNA'
+            assert (columns['fine_evidence']==evidence).all()
+            tcr=s['arrays']['annotation_review_code'][p]==6
+            assert (columns['coarse_evidence'][tcr]=='additional_TCR_core_reference_and_local_context_supported').all()
+            assert (columns['fine_revision_review']==evidence).all()
         if role=='without_fitted_group':assert (columns['global_subcluster_number']==-1).all() and all(v is None for v in columns['subcluster'])
         genes=['CD3D','LILRA4','__UNMEASURED_SENTINEL__'];actual=reader.read_counts(source,p,genes);expected=reader.atlas.read_counts(source,a['source_native_position'][p],genes)
         assert (actual['counts']!=expected['counts']).nnz==0
@@ -77,7 +91,8 @@ def main(root):
     table(root/'outputs/TME_current_subcluster_catalog_v1.tsv',group_rows)
     if 'annotation_membership_crosswalk' in manifest:
         cross=manifest['annotation_membership_crosswalk'];assert sha(cross['path'])==cross['SHA256']
-        table(root/'outputs/TME_annotation_membership_crosswalk_v3.tsv',load(cross['path']))
+        version='v4' if summary['totals'].get('n_direct_fine_updates',0) else 'v3'
+        table(root/'outputs'/('TME_annotation_membership_crosswalk_'+version+'.tsv'),load(cross['path']))
     if 'marker_display_crosswalk' in manifest:
         cross=manifest['marker_display_crosswalk'];assert sha(cross['path'])==cross['SHA256']
         table(root/'outputs/TME_marker_display_crosswalk_v2.tsv',load(cross['path']))
