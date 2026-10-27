@@ -1,7 +1,7 @@
 {
   "schema": "full_context_objective_acceptance_register_v1",
   "objective_not_reduced": true,
-  "updated_UTC": "2026-10-27T00:41:10.027465+00:00",
+  "updated_UTC": "2026-10-27T01:13:09.337315+00:00",
   "requirements": [
     {
       "id": "R1_native_scope",
@@ -13,7 +13,7 @@
     {
       "id": "R2_source_design_alias",
       "requirement": "study/library aliases, capture/material/phase/assay and patient/clinical roles qualified",
-      "status": "versioned_source_work_view_additional_exact_author_cell_material_case_phase_and_protocol_branches_independently_accepted_other_capture_alias_specimen_and_final_QC_review_pending",
+      "status": "versioned_source_work_view_uploaded_preparation_protocol_and_exact_library_links_accepted_other_capture_alias_specimen_and_final_QC_review_pending",
       "completion_requires": "explicit accepted/held/unknown source table and duplicate review",
       "evidence": "technical_source_lineage_and_roles_v1.json",
       "additional_evidence": [
@@ -21,7 +21,8 @@
         "technical_supplemental_native_context_v1.json",
         "technical_metadata_readback_and_specificity_diagnostic_v1.json",
         "technical_author_metadata_bridge_source_work_view_v1.json",
-        "technical_declared_author_context_protocol_source_view_v2.json"
+        "technical_declared_author_context_protocol_source_view_v2.json",
+        "technical_source_qualified_identity_context_and_document_application_v1.json"
       ]
     },
     {
@@ -42,7 +43,8 @@
         "technical_full_candidate_audit_common_reference_launch_v1.json",
         "technical_metadata_readback_and_specificity_diagnostic_v1.json",
         "technical_author_metadata_bridge_source_work_view_v1.json",
-        "technical_declared_author_context_protocol_source_view_v2.json"
+        "technical_declared_author_context_protocol_source_view_v2.json",
+        "technical_source_qualified_identity_context_and_document_application_v1.json"
       ]
     },
     {
@@ -92,9 +94,10 @@
       "status": "pending",
       "additional_evidence": [
         "technical_author_metadata_bridge_source_work_view_v1.json",
-        "technical_declared_author_context_protocol_source_view_v2.json"
+        "technical_declared_author_context_protocol_source_view_v2.json",
+        "technical_source_qualified_identity_context_and_document_application_v1.json"
       ]
     }
   ],
-  "current_execution_gate": "additional_author_context_and_protocol_source_work_view_accepted_final_shared_taxonomy_QC_specimen_repeat_and_downstream_mapping_pending"
+  "current_execution_gate": "source_qualified_native_context_and_uploaded_document_source_view_accepted_unresolved_boundaries_final_shared_taxonomy_QC_specimen_repeat_and_downstream_pending"
 }
