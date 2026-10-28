@@ -45,3 +45,9 @@ Treg、CD4、CD8和γδ分别保留组合证据；Treg与其CD4父类不作重�
 3. [Sun与Qiu，PLOS Computational Biology，2024](https://doi.org/10.1371/journal.pcbi.1012643)：近缘群的层次marker比较，避免所有T子群都被泛Tmarker代表。
 4. [Zheng等，Science，2021](https://doi.org/10.1126/science.abe6474)和[Chu等，Nature Medicine，2023](https://doi.org/10.1038/s41591-023-02371-y)：泛癌T细胞组成与多种RNA状态；用于提出待审生物学方向，不直接把本群命名成论文中的类型。
 5. [Squair等，Nature Communications，2021](https://doi.org/10.1038/s41467-021-25960-2)：生物重复对DE推断的作用；本轮表达marker与后续患者级机制/临床验证分开。
+
+## 只读cluster树接口与安全交付
+
+[cluster视图](../scripts/TME_hierarchical_cluster_view_v1.py)在已接受v5之上新增父群/叶子群名称、marker、群体身份候选、状态程序及独立成员键，不覆盖既有共识、作者、原计数或状态。第一轮范围外的当前合格记录继续可读，标记outside-pool而非删除。
+
+[一次性交付器](../scripts/deliver_TME_hierarchical_cluster_view_v1.py)只在生产及独立完整审核真实exit0后接受，实际查询各细身份/粗标签、父子群、重复查询、范围外与未拟合保留案例；对照v5字段、原生计数及测量mask。随后输出每群一行的名称/marker候选/状态名目录、叶子表和父子表；不把个体记录、表达值或模型权重写进这些导出表。等待链已启动，启动本身不等于真实读取验证完成。

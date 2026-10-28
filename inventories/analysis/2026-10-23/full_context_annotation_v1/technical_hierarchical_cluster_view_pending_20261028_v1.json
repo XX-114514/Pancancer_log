@@ -1,0 +1,16 @@
+{
+  "schema": "source_free_hierarchical_cluster_view_pending_receipt_v1",
+  "observed_UTC": "2026-10-28T03:13:32.130804+00:00",
+  "launch": {
+    "started_UTC": "2026-10-28T03:12:04.503069+00:00"
+  },
+  "launch_SHA256": "e95e3e3f736c6a5cfbb299608d9f1b596896eb28f5ef51906182825d2d5d954d",
+  "exact_child_alive": true,
+  "current_status": "waiting_for_producer_and_full_native_audit_no_real_reader_acceptance_yet",
+  "baseline_consensus_and_counts_and_state_not_overwritten": true,
+  "outside_first_round_pool_records_remain_readable": true,
+  "exported_tables_group_names_and_counts_only_not_individual_or_expression_values": true,
+  "original_objective_complete": false,
+  "new_CM_started": false,
+  "previous_technical_launch_commit": "e9ae804344d3288bd7809a2cc45a4527cfa8f9c4"
+}
