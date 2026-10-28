@@ -26,7 +26,7 @@ def main(root):
   while not (r/'provenance/supervisor_terminal_v1.json').exists():time.sleep(3)
   assert load(r/'provenance/supervisor_terminal_v1.json')['actual_child_exit_code']==0
  at=A/'provenance/terminal_v1.json';assert load(at)['producer_terminal_SHA256']==sha(P/'provenance/terminal_v1.json');pc=load(P/'config/spec_v1.json');B=Path(pc['working_delivery'])/'outputs/accepted_TME_scoped_working_annotation_v1.json';bm=load(load(B)['producer_manifest']['path']);J=Path(cfg['joined']);sys.path.insert(0,str(J/'scripts'));sys.path.insert(0,str(root/'scripts'))
- catalog=P/'outputs/cluster_hierarchy_named_catalog_v1.json';index=P/'outputs/cluster_hierarchy_index_v1.json';assert sha(catalog)==load(P/'provenance/terminal_v1.json')['catalog_SHA256'];assert sha(index)==load(P/'provenance/terminal_v1.json')['index_SHA256'];accept=dict(schema='accepted_numeric_TME_hierarchical_cluster_view_v1',accepted_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat(),catalog=dict(path=str(catalog),SHA256=sha(catalog)),index=dict(path=str(index),SHA256=sha(index)),audit_terminal=dict(path=str(at),SHA256=sha(at)),baseline_working_acceptance=dict(path=str(B),SHA256=sha(B)),scope='first_round_source_local_T_NK_and_frozen_unknown_controls_not_all_TME',all_baseline_fields_and_counts_preserved=True,biological_accuracy_certified=False,final_shared_taxonomy=False,new_CM_started=False)
+ catalog=P/'outputs/cluster_hierarchy_named_catalog_v1.json';index=P/'outputs/cluster_hierarchy_index_v1.json';assert sha(catalog)==load(P/'provenance/terminal_v1.json')['catalog_SHA256'];assert sha(index)==load(P/'provenance/terminal_v1.json')['index_SHA256'];accept=dict(schema='accepted_numeric_TME_hierarchical_cluster_view_v1',accepted_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat(),catalog=dict(path=str(catalog),SHA256=sha(catalog)),index=dict(path=str(index),SHA256=sha(index)),audit_terminal=dict(path=str(at),SHA256=sha(at)),baseline_working_acceptance=dict(path=str(B),SHA256=sha(B)),scope=('source_qualified_fit_pool_all_lineages' if pc.get('root_protocol')=='qualified_full_TME_source_roots_v1' else 'first_round_source_local_T_NK_and_frozen_unknown_controls_not_all_TME'),all_baseline_fields_and_counts_preserved=True,biological_accuracy_certified=False,final_shared_taxonomy=False,new_CM_started=False)
  ap=root/'outputs/accepted_TME_hierarchical_cluster_view_v1.json';save(ap,accept)
  from TME_hierarchical_cluster_view_v1 import TMEHierarchicalClusterView
  view=TMEHierarchicalClusterView(ap);nodes=load(catalog)['nodes'];roles={}
@@ -38,6 +38,9 @@ def main(root):
    for n in np.unique(leaf):
     r=s['nodes'][int(n)]
     if r['cluster_RNA_proposal']['celltype']==label:roles[key]=(source,np.array([pool[np.flatnonzero(leaf==n)[0]]],np.int64));break
+  if pc.get('root_protocol')=='qualified_full_TME_source_roots_v1' and 'baseline_non_T_fit_member' not in roles:
+   baseline_meta=view.baseline.source(source)['metadata'];old=np.asarray(baseline_meta['candidate_dictionaries']['consensus_major'],object)[base['consensus_major_code']];candidates=pool[np.isin(old[pool],['Epithelial','Fibroblast','Glial','Myeloid'])]
+   if len(candidates):roles['baseline_non_T_fit_member']=(source,candidates[:1])
   child=np.array([s['nodes'][int(n)]['level']==2 for n in leaf])
   if cfg.get('require_assay_aware_T_case') and 'assay_missing_chain_alternate_T_RNA' not in roles:
    for n in np.unique(leaf):
@@ -49,13 +52,14 @@ def main(root):
   if 'outside_first_round_pool' not in roles and len(outside):roles['outside_first_round_pool']=(source,outside[:1])
   nofit=np.flatnonzero(~base['fit_pool_candidate_not_final_QC'])
   if 'unfitted_retained_baseline' not in roles and len(nofit):roles['unfitted_retained_baseline']=(source,nofit[:1])
+ if pc.get('root_protocol')=='qualified_full_TME_source_roots_v1':assert 'baseline_non_T_fit_member' in roles
  assert {'nested_child_and_repeated_query','outside_first_round_pool','unfitted_retained_baseline','cluster_Tcell','cluster_unresolved'}.issubset(roles)
  if cfg.get('require_assay_aware_T_case'):assert 'assay_missing_chain_alternate_T_RNA' in roles
  tests=[]
  for role,(source,p) in roles.items():
   actual=view.metadata(source,p)['columns'];baseline=view.baseline.metadata(source,p)['columns']
   for k,v in baseline.items():assert_same_metadata(actual[k],v)
-  if role in ['outside_first_round_pool','unfitted_retained_baseline']:assert (actual['cluster_leaf_number']==-1).all() and (actual['cluster_view_status']=='outside_frozen_first_round_pool').all()
+  if role in ['outside_first_round_pool','unfitted_retained_baseline']:assert (actual['cluster_leaf_number']==-1).all() and (actual['cluster_view_status']==('outside_frozen_qualified_fit_pool' if accept['scope']=='source_qualified_fit_pool_all_lineages' else 'outside_frozen_first_round_pool')).all()
   else:assert (actual['cluster_leaf_number']>=0).all() and all(x is not None for x in actual['cluster_leaf_display'])
   if role=='assay_missing_chain_alternate_T_RNA':assert (actual['cluster_T_evidence_mode']=='T_chain_unmeasured_alternate_CD3_accessory_two_signal_RNA_evidence').all()
   genes=['CD3D','FOXP3','__UNMEASURED_SENTINEL__'];x=view.read_counts(source,p,genes);y=view.baseline.read_counts(source,p,genes);assert (x['counts']!=y['counts']).nnz==0

@@ -1,0 +1,56 @@
+{
+  "schema": "source_free_whole_lineage_hierarchy_live_technical_checkpoint_v1",
+  "stages": [
+    {
+      "logical_stage": "20261028_TME_all_lineage_hierarchy_v1",
+      "started_UTC": "2026-10-28T09:24:20.928157+00:00",
+      "launch_receipt_SHA256": "13ad425580d21d7cb0e46435d0f654c5533da13c8638ac487b940633df292827",
+      "exact_handle_alive_at_observation": true,
+      "observed_UTC": "2026-10-28T09:29:11.247096+00:00",
+      "source_output_present": true
+    },
+    {
+      "logical_stage": "20261028_TME_all_lineage_hierarchy_audit_v1",
+      "started_UTC": "2026-10-28T09:24:29.904246+00:00",
+      "launch_receipt_SHA256": "ee4e6c60b865d235e4ea66668502072f5de3383872af3cf85e3b5113ff0348e4",
+      "exact_handle_alive_at_observation": true,
+      "observed_UTC": "2026-10-28T09:29:11.247096+00:00",
+      "source_output_present": true
+    },
+    {
+      "logical_stage": "20261028_TME_all_lineage_hierarchy_delivery_v1",
+      "started_UTC": "2026-10-28T09:27:09.923157+00:00",
+      "launch_receipt_SHA256": "caeee16e1c568791cc9b62ded8ff887373a117953b6dd694232e94b909d93aaf",
+      "exact_handle_alive_at_observation": true,
+      "observed_UTC": "2026-10-28T09:29:11.247096+00:00",
+      "source_output_present": false
+    }
+  ],
+  "freeze_before_new_full_hierarchy_calls": true,
+  "fresh_physical_and_hard_quota_and_workspace_reserve_gate_passed": true,
+  "all_existing_display_numbers_preserved_in_append_only_registry": true,
+  "local_new_policy_counterexamples": {
+    "n_tests": 8,
+    "actual_exit_code": 0,
+    "n_skips": 0
+  },
+  "local_metadata_missingness_counterexamples": {
+    "n_tests": 4,
+    "actual_exit_code": 0,
+    "n_skips": 0
+  },
+  "server_policy_tests_enforced_before_first_source_read": true,
+  "assay_candidate_seven_local_files_raw_SHA_verified": true,
+  "whole_lineage_reader_acceptance_pending": true,
+  "current_v5_and_native_counts_masks_author_fields_and_RNA_states_unchanged": true,
+  "new_CM_started": false,
+  "original_goal_complete": false,
+  "script_SHA256": {
+    "scripts/TME_all_lineage_cluster_policy_v1.py": "95355584899a9358a22ca3bddf28682acf61834a0c87054e799ada5a485eee96",
+    "scripts/discover_TME_hierarchical_clusters_v1.py": "f3af2146ba1b11abb7f33b54d1c9314c4aad620903653c8993aa1160814ef7b8",
+    "scripts/audit_TME_hierarchical_clusters_v1.py": "e40e504db78103e9098defde2ad1942884a960d2663424aa55af88811d2473e0",
+    "scripts/TME_hierarchical_cluster_view_v1.py": "d9b2cfc38fcc8b88a67337d18de919f5b20187a197cf237815ebdb8eca5918b1",
+    "scripts/deliver_TME_hierarchical_cluster_view_v1.py": "3cfc86a3c0618c38a54b92beb575ce3da5407946b4f99ae79815ccec87b7d5f8",
+    "tests/test_TME_all_lineage_cluster_policy_v1.py": "c5d3d2028818367815db0d26410e3db73d638ecc173e5dd4d5da93ac3f46d7f4"
+  }
+}

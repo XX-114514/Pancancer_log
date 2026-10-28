@@ -25,7 +25,8 @@ class TMEHierarchicalClusterView:
   names=['cluster_root_display','cluster_leaf_display','cluster_marker','cluster_major_proposal','cluster_celltype_proposal','cluster_annotation_status','cluster_membership_SHA256','cluster_state_program_names','cluster_view_status','cluster_T_evidence_mode']
   for name in names:
    v=np.empty(len(p),object);v[:]=None;extra[name]=v
-  extra['cluster_view_status'][:]='outside_frozen_first_round_pool';extra['cluster_leaf_number']=np.full(len(p),-1,np.int64)
+  outside='outside_frozen_qualified_fit_pool' if self.acceptance['scope']=='source_qualified_fit_pool_all_lineages' else 'outside_frozen_first_round_pool'
+  extra['cluster_view_status'][:]=outside;extra['cluster_leaf_number']=np.full(len(p),-1,np.int64)
   for j in np.flatnonzero(hit):
    pos=where[j];r=s['nodes'][int(a['final_leaf_node'][pos])];parent=s['nodes'][int(a['root_cluster_code'][pos])];call=r['cluster_RNA_proposal'];extra['cluster_root_display'][j]=parent['display_label'];extra['cluster_leaf_display'][j]=r['display_label'];extra['cluster_leaf_number'][j]=r['global_display_number'];extra['cluster_marker'][j]=r['marker'];extra['cluster_major_proposal'][j]=call['major'];extra['cluster_celltype_proposal'][j]=call['celltype'];extra['cluster_annotation_status'][j]=call['status'];extra['cluster_membership_SHA256'][j]=r['stable_membership_SHA256'];extra['cluster_state_program_names'][j]=tuple(k for k,v in r['descriptive_state_programs'].items() if v['descriptively_enriched']);extra['cluster_view_status'][j]='audited_numeric_cluster_RNA_proposal_not_final_taxonomy'
    extra['cluster_T_evidence_mode'][j]=r.get('assay_aware_T_evidence_mode','original_native_module_assay_coverage_in_proposal')
