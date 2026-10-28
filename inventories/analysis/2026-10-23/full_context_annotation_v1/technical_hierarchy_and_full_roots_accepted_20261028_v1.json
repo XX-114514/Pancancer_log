@@ -1,0 +1,85 @@
+{
+  "schema": "source_free_numeric_hierarchy_and_full_root_acceptance_technical_checkpoint_v1",
+  "records": [
+    {
+      "logical_stage": "20261028_TME_cluster_hierarchy_discovery_v2",
+      "completed_UTC": "2026-10-28T03:44:56.133297+00:00",
+      "terminal_SHA256": "3ab914cb361b0d96f299289f2b0055077176ad199392ec0583f3c36edf4a1a44",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "75e0ee98a730ca7e9c288f57891fa88a4800ae2bd043eb03bc6760cbb0cd8b43",
+      "observed_UTC": "2026-10-28T09:12:34.777358+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_cluster_hierarchy_audit_v1",
+      "completed_UTC": "2026-10-28T03:45:49.931965+00:00",
+      "terminal_SHA256": "916d40fc1f8e1570a0c60b04b51ea26a2b029e06e0dfd1eb34167fa32e3bca90",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "0f3aae3629b45ee1ccf8f970f4d5e46335bb2a26142569a85ffa0c8ddb132fc5",
+      "observed_UTC": "2026-10-28T09:12:34.777358+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_cluster_hierarchy_delivery_v2",
+      "completed_UTC": "2026-10-28T03:48:26.940335+00:00",
+      "terminal_SHA256": "5c7be12b29a576d8c1f65abe8e27fab36122ea841848bea580938458aeaab799",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "fb4a79c169c2dcad4111868bf23459484ad320f7da0bbb1b936d96451133562f",
+      "observed_UTC": "2026-10-28T09:12:34.777358+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_cluster_crosswalk_role_review_v1",
+      "completed_UTC": "2026-10-28T04:14:00.276239+00:00",
+      "terminal_SHA256": "4d10c96ee756bff6c9af3ce0690bbc454099419928bd8b463fc3ea6494b779d1",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "96d2f388428ef66fff6c92c9263499b8ffb056979132d36d77b7dcb2d50bf4ff",
+      "observed_UTC": "2026-10-28T09:12:34.777358+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_assay_aware_cluster_proposals_v1",
+      "completed_UTC": "2026-10-28T09:09:23.420824+00:00",
+      "terminal_SHA256": "9817bd3251b41a52186d13928a4bfa8570280c1bc3105d462044f89d0c226712",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "e33855f3fe1d1ac934f87aca6978560b57c90a7ccf6ce677c6da46f6736862f5",
+      "observed_UTC": "2026-10-28T09:12:34.777358+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_assay_aware_cluster_audit_v1",
+      "completed_UTC": "2026-10-28T09:11:56.818519+00:00",
+      "terminal_SHA256": "0dbbcb4bd80b717ad19ff7d02f8ae33be60ae0db1057bc03ec736aab02fa1d94",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "34d8033f346dfa49a0ec3445c7132a6ee480754660253678eb1646c896e1f10b",
+      "observed_UTC": "2026-10-28T09:12:34.777358+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_all_qualified_roots_v1",
+      "completed_UTC": "2026-10-28T04:37:22.900596+00:00",
+      "terminal_SHA256": "67a643f6e82e9b6b0591cb174ccf2e845a0c617d6a9ac26099c3f71b0ba9f013",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "86550f4933e7e817fbdae40a29a5d2a775c7241b818224ecb77af92a14d334c5",
+      "observed_UTC": "2026-10-28T09:08:19.106417+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_all_qualified_roots_audit_v1",
+      "completed_UTC": "2026-10-28T04:38:58.309681+00:00",
+      "terminal_SHA256": "57cc828e5cc82f2a8c63163ff539bd593650ae92b3696fd85e8c7c0b66e133e1",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "6825041f0132ffaaf6cae261d9e314870ec1afe7679e03453f54ea262e1e61bf",
+      "observed_UTC": "2026-10-28T09:08:19.106417+00:00"
+    },
+    {
+      "logical_stage": "20261028_TME_assay_aware_cluster_delivery_v1",
+      "completed_UTC": "2026-10-28T09:14:04.976380+00:00",
+      "terminal_SHA256": "cb12a90dee09e573903576dec2602096ad11f7657be80de3afa3bc6ab617bfdc",
+      "actual_exit_code": 0,
+      "supervisor_terminal_SHA256": "67069b3a15d4b6e34518fadcf1525b856e305cab9a9103652d5bed1d0c2b618c",
+      "observed_UTC": "2026-10-28T09:14:55.324665+00:00"
+    }
+  ],
+  "current_v5_and_native_counts_masks_author_and_RNA_states_unchanged": true,
+  "original_goal_complete": false,
+  "not_final_shared_taxonomy": true,
+  "new_CM_started": false,
+  "assay_rule_frozen_before_new_calls": true,
+  "alternative_assay_evidence_does_not_infer_missing_TCR_chains": true,
+  "scientific_source_statistics_individual_rows_expression_values_and_parameters_not_in_public_checkpoint": true,
+  "assay_aware_candidate_view_real_reader_cases": 10
+}

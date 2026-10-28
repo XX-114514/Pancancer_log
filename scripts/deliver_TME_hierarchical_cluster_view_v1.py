@@ -1,5 +1,5 @@
 """After real producer/auditor success, exercise view and export group-only tables."""
-import argparse,collections,csv,datetime,hashlib,json,sys,time
+import argparse,collections,csv,datetime,hashlib,json,subprocess,sys,time
 from pathlib import Path
 import numpy as np
 
@@ -10,8 +10,18 @@ def save(p,v):
 def table(p,rows):
  with Path(p).open('x',encoding='utf-8-sig',newline='') as f:w=csv.DictWriter(f,fieldnames=list(rows[0]),delimiter='\t');w.writeheader();w.writerows(rows)
 
+def assert_same_metadata(actual,expected):
+ """Preserve dtype and exact missing positions; None and NaN stay distinct."""
+ a=np.asarray(actual);b=np.asarray(expected);assert a.shape==b.shape and a.dtype==b.dtype
+ if a.dtype.kind!='O':np.testing.assert_array_equal(a,b);return
+ for x,y in zip(a.flat,b.flat):
+  if isinstance(x,(float,np.floating)) and np.isnan(x):assert isinstance(y,(float,np.floating)) and np.isnan(y)
+  elif x is None:assert y is None
+  else:np.testing.assert_equal(x,y)
+
 def main(root):
  begin=time.monotonic();cfg=load(root/'config/spec_v1.json');P=Path(cfg['producer']);A=Path(cfg['auditor'])
+ t=subprocess.run([sys.executable,'-B',str(root/'tests/test_TME_cluster_view_missingness_v1.py')],capture_output=True,text=True,timeout=60);(root/'provenance/metadata_test_stdout.txt').write_text(t.stdout);(root/'provenance/metadata_test_stderr.txt').write_text(t.stderr);assert t.returncode==0 and 'Ran 4 tests' in t.stderr and 'skipped' not in t.stderr
  for r in [P,A]:
   while not (r/'provenance/supervisor_terminal_v1.json').exists():time.sleep(3)
   assert load(r/'provenance/supervisor_terminal_v1.json')['actual_child_exit_code']==0
@@ -29,6 +39,10 @@ def main(root):
     r=s['nodes'][int(n)]
     if r['cluster_RNA_proposal']['celltype']==label:roles[key]=(source,np.array([pool[np.flatnonzero(leaf==n)[0]]],np.int64));break
   child=np.array([s['nodes'][int(n)]['level']==2 for n in leaf])
+  if cfg.get('require_assay_aware_T_case') and 'assay_missing_chain_alternate_T_RNA' not in roles:
+   for n in np.unique(leaf):
+    r=s['nodes'][int(n)]
+    if r.get('assay_aware_T_evidence_mode') and r['cluster_RNA_proposal']['major']=='T':roles['assay_missing_chain_alternate_T_RNA']=(source,np.array([pool[np.flatnonzero(leaf==n)[0]]],np.int64));break
   if 'nested_child_and_repeated_query' not in roles and child.any():
    p=int(pool[np.flatnonzero(child)[0]]);roles['nested_child_and_repeated_query']=(source,np.array([p,p],np.int64))
   outside=np.setdiff1d(np.arange(len(base['native_row'])),pool)
@@ -36,19 +50,21 @@ def main(root):
   nofit=np.flatnonzero(~base['fit_pool_candidate_not_final_QC'])
   if 'unfitted_retained_baseline' not in roles and len(nofit):roles['unfitted_retained_baseline']=(source,nofit[:1])
  assert {'nested_child_and_repeated_query','outside_first_round_pool','unfitted_retained_baseline','cluster_Tcell','cluster_unresolved'}.issubset(roles)
+ if cfg.get('require_assay_aware_T_case'):assert 'assay_missing_chain_alternate_T_RNA' in roles
  tests=[]
  for role,(source,p) in roles.items():
   actual=view.metadata(source,p)['columns'];baseline=view.baseline.metadata(source,p)['columns']
-  for k,v in baseline.items():np.testing.assert_equal(actual[k],v)
+  for k,v in baseline.items():assert_same_metadata(actual[k],v)
   if role in ['outside_first_round_pool','unfitted_retained_baseline']:assert (actual['cluster_leaf_number']==-1).all() and (actual['cluster_view_status']=='outside_frozen_first_round_pool').all()
   else:assert (actual['cluster_leaf_number']>=0).all() and all(x is not None for x in actual['cluster_leaf_display'])
+  if role=='assay_missing_chain_alternate_T_RNA':assert (actual['cluster_T_evidence_mode']=='T_chain_unmeasured_alternate_CD3_accessory_two_signal_RNA_evidence').all()
   genes=['CD3D','FOXP3','__UNMEASURED_SENTINEL__'];x=view.read_counts(source,p,genes);y=view.baseline.read_counts(source,p,genes);assert (x['counts']!=y['counts']).nnz==0
   for k in ['native_row','native_total_counts','measured']:np.testing.assert_array_equal(x[k],y[k])
   assert not x['measured'][-1];tests.append(dict(role=role,n_query_records=len(p),baseline_fields_and_native_counts_mask_equal=True))
  nodeby={(r['source'],r['source_node_code']):r for r in nodes};rows=[];links=[]
  for r in nodes:
   call=r['cluster_RNA_proposal'];parent=nodeby[(r['source'],r['source_root_cluster'])];states=[k for k,v in r['descriptive_state_programs'].items() if v['descriptively_enriched']]
-  rows.append(dict(source=r['source'],level=r['level'],root_cluster_number=r['source_root_cluster'],child_cluster_number=r['child_cluster_number'],display_number=r['global_display_number'],subcluster=r['display_label'],major=call['major'],celltype=call['celltype'],marker=r['marker'],n_records=r['n_records'],final_leaf=r['final_leaf'],annotation_status=call['status'],marker_evidence_type=r['marker_evidence_type'],marker_candidate_names=';'.join(x['gene'] for x in r['marker_candidates']),state_program_names=';'.join(states),stable_membership_SHA256=r['stable_membership_SHA256'],parent_membership_SHA256=parent['stable_membership_SHA256'],n_declared_units_not_verified_patients=r['n_declared_expression_units_not_verified_patients_or_libraries'],parent_marker_borrowed=False))
+  rows.append(dict(source=r['source'],level=r['level'],root_cluster_number=r['source_root_cluster'],child_cluster_number=r['child_cluster_number'],display_number=r['global_display_number'],subcluster=r['display_label'],major=call['major'],celltype=call['celltype'],marker=r['marker'],n_records=r['n_records'],final_leaf=r['final_leaf'],annotation_status=call['status'],marker_evidence_type=r['marker_evidence_type'],marker_candidate_names=';'.join(x['gene'] for x in r['marker_candidates']),state_program_names=';'.join(states),stable_membership_SHA256=r['stable_membership_SHA256'],parent_membership_SHA256=parent['stable_membership_SHA256'],n_declared_units_not_verified_patients=r['n_declared_expression_units_not_verified_patients_or_libraries'],parent_marker_borrowed=False,T_evidence_mode=r.get('assay_aware_T_evidence_mode','original_native_module_assay_coverage_in_proposal')))
   if r['level']==2:links.append(dict(source=r['source'],parent_display=parent['display_label'],child_display=r['display_label'],child_n_records=r['n_records'],child_is_final_leaf=r['final_leaf'],parent_membership_SHA256=parent['stable_membership_SHA256'],child_membership_SHA256=r['stable_membership_SHA256']))
  table(root/'outputs/TME_hierarchical_cluster_catalog_names_v1.tsv',rows);table(root/'outputs/TME_hierarchical_cluster_leaf_names_v1.tsv',[r for r in rows if r['final_leaf']]);table(root/'outputs/TME_hierarchical_cluster_parent_child_v1.tsv',links)
  summary=load(P/'outputs/cluster_hierarchy_summary_v1.json');save(root/'outputs/TME_hierarchical_cluster_summary_v1.json',summary);coverage=[]
