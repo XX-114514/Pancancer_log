@@ -1,0 +1,61 @@
+{
+  "schema": "source_free_hierarchical_cluster_annotation_technical_checkpoint_v1",
+  "observed_UTC": "2026-10-28T03:06:01.522910+00:00",
+  "current_phase": "producer_and_complete_native_auditor_running_not_final_acceptance",
+  "stages": [
+    {
+      "logical_stage": "20261028_TME_cluster_hierarchy_discovery_v1",
+      "observed_UTC": "2026-10-28T03:04:51.737832+00:00",
+      "exact_child_alive": false,
+      "child_launch_v1.json": {
+        "SHA256": "ba6954ce6fa67908d8b955a9f2de195dc705909cada21af065da75447b772cfb",
+        "started_UTC": "2026-10-28T03:00:55.144052+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "6226939cf2bc51b049e34a726d3620bf9f1ee9cde973b2751b1edcec4c1f410f",
+        "completed_UTC": "2026-10-28T03:00:58.021944+00:00",
+        "actual_child_exit_code": 1
+      }
+    },
+    {
+      "logical_stage": "20261028_TME_cluster_hierarchy_discovery_v2",
+      "observed_UTC": "2026-10-28T03:04:51.737832+00:00",
+      "exact_child_alive": true,
+      "child_launch_v1.json": {
+        "SHA256": "7a920b38cd5df9124c400317f4d03c3fc84f49ccbeac7d72a2631fd9badae901",
+        "started_UTC": "2026-10-28T03:02:02.167445+00:00"
+      }
+    },
+    {
+      "logical_stage": "20261028_TME_cluster_hierarchy_audit_v1",
+      "observed_UTC": "2026-10-28T03:04:51.737832+00:00",
+      "exact_child_alive": true,
+      "child_launch_v1.json": {
+        "SHA256": "68b78a936e8b459982843647921551aecb2e128604208a5aa21ff162d837263b",
+        "started_UTC": "2026-10-28T03:04:09.804501+00:00"
+      }
+    }
+  ],
+  "local_policy_tests": {
+    "interpreter": "bundled_existing_numpy_runtime_no_dependency_install",
+    "n_tests": 8,
+    "actual_exit_code": 0,
+    "n_skips": 0
+  },
+  "server_policy_tests_enforced_before_source_outputs": true,
+  "script_SHA256": {
+    "scripts/TME_cluster_annotation_policy_v1.py": "e62e49ba479f306588148e4547e32ebd15afc5d12ce5b83491bd6d22a7946397",
+    "scripts/discover_TME_hierarchical_clusters_v1.py": "b6fe26ab3fb04e366d57377b867ba99497dbe4075134a679cabb540bfc8e7fbb",
+    "scripts/audit_TME_hierarchical_clusters_v1.py": "627f0f853531feb3a690508740fb7606c10acf678450e62950922dcdbcb58d92",
+    "tests/test_TME_cluster_annotation_policy_v1.py": "3c7818c74455499f1f92c9faafa5ca33e1bdcf57fa1690d90985c8c51540cd58"
+  },
+  "first_deployment_failed_before_source_read_missing_existing_membership_module": true,
+  "repair_in_fresh_immutable_directory_added_same_dependency": true,
+  "native_counts_masks_author_labels_current_v5_and_RNA_states_unchanged": true,
+  "new_output_is_provisional_cluster_tree_not_final_shared_taxonomy": true,
+  "cluster_marker_is_own_expression_comparison_not_replicate_aware_DEG": true,
+  "source_free_publication_no_individual_rows_expression_or_parameters": true,
+  "tailscale_jump_route_preferred_by_explicit_user_instruction": true,
+  "new_CM_started": false,
+  "original_full_objective_complete": false
+}
