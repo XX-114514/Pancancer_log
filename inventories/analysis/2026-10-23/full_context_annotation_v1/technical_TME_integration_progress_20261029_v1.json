@@ -1,0 +1,17 @@
+{
+  "observed_UTC": "2026-10-29T06:26:49.195415+00:00",
+  "standard_HVG_PCA_Harmony_actual_exit_code": 0,
+  "independent_numeric_readback_actual_exit_code": 0,
+  "same_graph_neighbors_complete": true,
+  "predeclared_Leiden_resolutions_complete": true,
+  "same_graph_full_UMAP_state": "RUNNING",
+  "UMAP_final_figure_available": false,
+  "scVI_state": "SLURM_PENDING_PRIORITY",
+  "scVI_actual_model_training_started": false,
+  "scVI_downstream_graph_state": "WAITING_FOR_MODEL",
+  "final_marker_annotation_accepted": false,
+  "biological_integration_comparison_accepted": false,
+  "new_CM_discovery_started": false,
+  "other_queued_tasks_modified": false,
+  "counts_labels_and_historical_CM_preserved": true
+}

@@ -1,3 +1,7 @@
+## 2026-10-29 当前TME进度：数字分群完成，全量UMAP运行，GPU scVI排队
+
+06:25—06:26UTC实际检查：标准HVG/PCA/Harmony及独立数值核对均actual exit0，新近邻图和预设Leiden分群完成；同图全量UMAP仍存活运行，尚无最终图件。GPU scVI仍PENDING Priority，未发生真实模型训练；后续同图链等待。数字cluster尚未升级为最终marker身份，生物整合比较和本轮新CM未验收。原数据/标签和历史CM保持，未修改其他队列任务。见[最新技术进度](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_integration_progress_20261029_v1.json)及[同步日志](logs/codex/2026/2026-10-29_TME-progress-sync.md)。
+
 ## 2026-10-29 GPU scVI已提交，Harmony独立审核修复后通过
 
 按用户要求加入现有GPU scVI平行路线，复用当前细胞/HVG轴和原生整数counts，不串联Harmony；NB/架构核实际旧脚本，显式登记KL预热与有限训练预算。现有CUDA环境算例通过，Slurm提交实际成功，05:11UTC仍PENDING Priority，尚未称真实训练完成；训练后同图Leiden/UMAP链已等待。Harmony主计算及修复版独立审核actual exit0，同图近邻继续；原审计误将浮点ambient差值要求为整数的失败保留，四个回归实际通过。原数据/标签和日期CM保持，最终生物学整合评价未验收。见[scVI方法](methods/TME-scVI-GPU-comparison-20261029.md)、[run](runs/20261029_TME_scVI_GPU_v1.md)和[日志](logs/codex/2026/2026-10-29_TME-scVI-GPU.md)。
