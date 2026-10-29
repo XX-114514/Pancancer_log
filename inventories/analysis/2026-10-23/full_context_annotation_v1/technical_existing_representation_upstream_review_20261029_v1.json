@@ -1,0 +1,15 @@
+{
+  "schema": "existing_representation_upstream_readonly_review_technical_v1",
+  "observed_UTC": "2026-10-29T02:24:08.229334+00:00",
+  "existing_counts_models_and_labels_unchanged": true,
+  "metadata_only_QC_coverage_review": true,
+  "same_existing_coordinate_geometry_diagnostic": "actual_exit0_not_independent_identity_validation",
+  "public_scientific_statistics_or_individual_records": false,
+  "private_artifact_SHA256": {
+    "read_TME_upstream_UMAP_provenance_v1.py": "f938a267faf7c031e97d7f3e8a5d09b061579b60a381f25b17a0dc97462b9416",
+    "read_TME_upstream_QC_and_reference_v2.py": "e463058fe8b897229af169b18afd4fd2ae495fe99fd0237e61c78a1d1a396c1d",
+    "read_actual_common_reference_summary_v3.py": "2b30edba9b3cf0dc71214c711fc21f358aac1675c72c21cdd1ea09fe564f94ba",
+    "diagnose_TME_raw_corrected_neighbors_v1.py": "63825d23583a31c9951fd865744cc66bb941b76f1d9b25acac0263137b0e4f4c",
+    "private_existing_representation_neighbor_diagnostic_v1.json": "a121afa8ec93ddb9d41568afdc34220ce883c09611515af8fd6ae39a6e1de2af"
+  }
+}

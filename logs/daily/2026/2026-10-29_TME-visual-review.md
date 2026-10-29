@@ -7,3 +7,5 @@
 00:12:58 UTC / 08:12:58 UTC+8绘图实际完成。首版读回遇到未使用旧字典object数组；保持禁用pickle，只读取必要primitive轴。加入两个反例并在服务器强制执行后，最终v3于00:18:34 UTC / 08:18:34 UTC+8接受。源内边界补图v2已完成，静态预览完整SHA取回；本机中文PDF嵌入字体后，全部页面实际渲染并目视检查。候选身份、数据和旧CM保持，新的共同细身份/状态及整合比较继续待办。
 
 见[同任务日志](../../codex/2026/2026-10-28_TME-hierarchical-cluster-annotation.md)与[技术收据](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_hierarchy_visual_review_20261029_v1.json)。
+
+02:15–02:23 UTC / 10:15–10:23 UTC+8补充追溯：用户质疑拉丝和原始图更清楚。确认当前群在来源内图计算、全局图为较广旧参考的投影叠色；同图社区命名尚未由该展示完成。恢复实际来源校正/查询参数及carried QC资格，不把标准字段缺项说成作者未做QC。已有坐标的同锚点近邻诊断实际exit0，科学统计私有，原始图和标签保持。见[方法与结论边界](../../../methods/TME-UMAP-upstream-provenance-review-20261029.md)。

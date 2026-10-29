@@ -1,5 +1,7 @@
 # 逐层cluster注释运行
 
+2026-10-29上游追溯：用户要求解释图形与命名，确认局部Leiden群、既有共同参考与UMAP叠色是不同步骤；恢复实际来源校正、完整域查询和拟合QC门槛。对已有坐标做预设marker锚点的同参考近邻描述诊断，实际exit0，不重标、不据此选择整合赢家。原始计数/模型/身份和旧CM不改。后续同图数字群/原生marker审阅及QC/控制变量比较见[核查方法](../methods/TME-UMAP-upstream-provenance-review-20261029.md)，[技术收据](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_existing_representation_upstream_review_20261029_v1.json)不含来源效应或个体行。
+
 2026-10-29 00:21 UTC / 08:21 UTC+8取证：可视化生产和最终v3读回已真实退出0。首版object数组读取失败保留，必要primitive轴审计与两个反例在新目录接受；未开启pickle或重跑生产。补充TCR/谱系边界及已验模块交集图完成。静态图经整包和文件SHA取回，本机中文审阅图册实际渲染/目视检查后交付。当前原注释与候选树冻结，先审大类边界与粗标签覆盖；该节点不代表最终共同身份或新CM资格通过。
 
 2026-10-29续：全谱系生产和独立完整原生审核已成功终止，真实交付首版误选证据案例，修复后在新交付目录通过。用户随后要求先充分查看UMAP和marker，暂停新注释规则调整，执行[可视化审阅合同](../methods/TME-UMAP-marker-visual-review-20261029.md)。已有共同表示和来源局部PCA分别布局，不拼接独立PCA，不以UMAP替代身份/状态/临床资格。完整原生marker补图及独立图件读回另行执行，科学图片与逐细胞数组不进入公共Git。取证时刻与技术状态见[新节点](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_hierarchy_visual_review_20261029_v1.json)。
