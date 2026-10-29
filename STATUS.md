@@ -1,3 +1,7 @@
+## 2026-10-29 GPU scVI已提交，Harmony独立审核修复后通过
+
+按用户要求加入现有GPU scVI平行路线，复用当前细胞/HVG轴和原生整数counts，不串联Harmony；NB/架构核实际旧脚本，显式登记KL预热与有限训练预算。现有CUDA环境算例通过，Slurm提交实际成功，05:11UTC仍PENDING Priority，尚未称真实训练完成；训练后同图Leiden/UMAP链已等待。Harmony主计算及修复版独立审核actual exit0，同图近邻继续；原审计误将浮点ambient差值要求为整数的失败保留，四个回归实际通过。原数据/标签和日期CM保持，最终生物学整合评价未验收。见[scVI方法](methods/TME-scVI-GPU-comparison-20261029.md)、[run](runs/20261029_TME_scVI_GPU_v1.md)和[日志](logs/codex/2026/2026-10-29_TME-scVI-GPU.md)。
+
 ## 2026-10-29 当前TME标准重整合已真实启动，历史QC与分析层已纠正
 
 已核原5M脚本、Scanpy标准教程/公开skill及实际版本接口，使用标准来源batch-aware seurat_v3 HVG、中心化PCA与当前范围完整Harmony替换自定义离散度启发式。恢复已有QC/doublet与部分已采用环境RNA的历史证据，统一字段缺失不代表未处理；PCA采用登记的分析计数，整数counts另用于标准HVG。03:38 UTC主阶段实际启动、真实编译LOESS接口及完整输入轴检查通过；03:49 UTC取证仍在运行，独立数值读回与同图Leiden/UMAP链等待，尚未宣布全量整合或生物学审阅完成。Harmony显式theta=2、固定lambda=1，版本默认差异已登记，不称完整当前默认。旧计数、标签和日期CM保持。见[标准方法](methods/TME-standard-reintegration-20261029.md)、[任务日志](logs/codex/2026/2026-10-29_TME-standard-reintegration.md)及[运行记录](runs/20261029_TME_standard_reintegration_v1.md)。

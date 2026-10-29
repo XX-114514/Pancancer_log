@@ -1,0 +1,22 @@
+{
+  "observed_UTC": "2026-10-29T05:11:04+00:00",
+  "status": "GPU_SCVI_SLURM_SUBMITTED_PENDING_PRIORITY",
+  "actual_GPU_training_started": false,
+  "full_scVI_complete": false,
+  "existing_CUDA_runtime_arithmetic_passed": true,
+  "existing_runtime_changed": false,
+  "old_incompatible_environment_preserved": true,
+  "raw_integer_counts_not_log_or_Harmony_input": true,
+  "old_labels_and_QC_unchanged": true,
+  "Harmony_producer_actual_exit_code": 0,
+  "Harmony_readback_v2_actual_exit_code": 0,
+  "Harmony_same_graph_neighbors_running": true,
+  "fractional_delta_regression_cases": 4,
+  "all_four_actual_passed": true,
+  "scVI_same_graph_followthrough_waiting": true,
+  "no_other_tasks_cancelled": true,
+  "train_TME_scVI_GPU_v1.py_SHA256": "380a5c222d595df95596c04a174ab5cd4c81b37ecc605a2fcb2d95ee9e30417b",
+  "prepare_TME_scVI_native_feature_map_v1.py_SHA256": "7f17d8e7201087a7d6362a1e454aa3752340e82181651793e581bbb3c8416156",
+  "build_TME_scVI_graph_UMAP_v1.py_SHA256": "4bacf6a01ae691e31d82187fea7969a214a6d833abd8ad672defb712ff6e2caf",
+  "audit_TME_standard_Harmony_v2.py_SHA256": "7e8ad211ba574a65a0ea3fb36ea74c5350ac9fb0f3e6b15d41f492081cb9fbd2"
+}
