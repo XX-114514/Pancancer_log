@@ -1,0 +1,28 @@
+{
+  "recorded_UTC": "2026-10-29T03:51:35.127618+00:00",
+  "status": "ACTUAL_MAIN_STAGE_RUNNING_DEPENDENT_AUDIT_AND_SAME_GRAPH_CHAIN_WAITING",
+  "actual_start_UTC": "2026-10-29T03:38:10.175784+00:00",
+  "latest_direct_observation_UTC": "2026-10-29T03:49:49.731340+00:00",
+  "compiled_standard_HVG_batch_API_smoke_passed": true,
+  "current_scope_and_shared_measured_features_verified": true,
+  "full_HVG_PCA_Harmony_complete": false,
+  "numeric_readback_complete": false,
+  "same_graph_Leiden_UMAP_complete": false,
+  "biological_integration_quality_accepted": false,
+  "new_QC_doublet_ambient_fit": false,
+  "counts_labels_previous_models_unchanged": true,
+  "scope_and_individual_axes_kept_on_execution_server": true,
+  "history_QC_field_coverage_not_processing_coverage": true,
+  "adopted_ambient_delta_restored_for_analysis_PCA": true,
+  "standard_HVG_integer_counts_PCA_adopted_analysis_counts_distinct": true,
+  "standard_recipe": "Scanpy_seurat_v3_batch_HVG_centered_ARPACK_PCA_direct_full_Harmony",
+  "harmony_explicit_parameters": {
+    "theta": 2.0,
+    "lambda_fixed": 1.0,
+    "current_API_all_defaults": false
+  },
+  "observation_timeout_does_not_restart_scientific_stage": true,
+  "producer_code_SHA256": "ae799f7635dc4c253ae526b688e2e7812dab4fb78871c6786f8eec0aa417c415",
+  "auditor_code_SHA256": "8ed9a174e8f1ec3898a0113bf6caf25750de03733ae3035b5e5ab8bc211a3f17",
+  "graph_code_SHA256": "9e7d1bee8f1b3171865014cafea61bbbe4d4c82e850f03f0ccb80a6c1b701257"
+}

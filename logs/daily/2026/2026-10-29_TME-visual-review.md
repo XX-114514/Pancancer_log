@@ -9,3 +9,5 @@
 见[同任务日志](../../codex/2026/2026-10-28_TME-hierarchical-cluster-annotation.md)与[技术收据](../../../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_hierarchy_visual_review_20261029_v1.json)。
 
 02:15–02:23 UTC / 10:15–10:23 UTC+8补充追溯：用户质疑拉丝和原始图更清楚。确认当前群在来源内图计算、全局图为较广旧参考的投影叠色；同图社区命名尚未由该展示完成。恢复实际来源校正/查询参数及carried QC资格，不把标准字段缺项说成作者未做QC。已有坐标的同锚点近邻诊断实际exit0，科学统计私有，原始图和标签保持。见[方法与结论边界](../../../methods/TME-UMAP-upstream-provenance-review-20261029.md)。
+
+03:38 UTC用户授权的标准TME重整合真实启动：复核既有5M脚本和Scanpy官方/skill输入合同后，恢复标准seurat_v3批次HVG、PCA及直接Harmony。旧QC/环境RNA历史全量验收已找到，新/旧字段继承差异不能当实际处理率；新PCA恢复已采用差值层，不重复去污染。编译LOESS/标准API小对象及完整输入范围核对通过，原生数据读取中；审核与同图Leiden/UMAP有限等待链已启动。见[新run](../../../runs/20261029_TME_standard_reintegration_v1.md)和[新任务日志](../../codex/2026/2026-10-29_TME-standard-reintegration.md)。

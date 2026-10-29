@@ -1,3 +1,7 @@
+## 2026-10-29 当前TME标准重整合已真实启动，历史QC与分析层已纠正
+
+已核原5M脚本、Scanpy标准教程/公开skill及实际版本接口，使用标准来源batch-aware seurat_v3 HVG、中心化PCA与当前范围完整Harmony替换自定义离散度启发式。恢复已有QC/doublet与部分已采用环境RNA的历史证据，统一字段缺失不代表未处理；PCA采用登记的分析计数，整数counts另用于标准HVG。03:38 UTC主阶段实际启动、真实编译LOESS接口及完整输入轴检查通过；03:49 UTC取证仍在运行，独立数值读回与同图Leiden/UMAP链等待，尚未宣布全量整合或生物学审阅完成。Harmony显式theta=2、固定lambda=1，版本默认差异已登记，不称完整当前默认。旧计数、标签和日期CM保持。见[标准方法](methods/TME-standard-reintegration-20261029.md)、[任务日志](logs/codex/2026/2026-10-29_TME-standard-reintegration.md)及[运行记录](runs/20261029_TME_standard_reintegration_v1.md)。
+
 ## 2026-10-29 UMAP上游已追溯，局部群与共同参考展示分别解释
 
 已核当前来源内PCA/Leiden分群、旧全档案共同参考及来源查询适配和展示参数，确认现图是局部群在既有全局表示上的叠色，不是当前TME同图联合Leiden。恢复carried QC门槛与字段覆盖，预设身份模块和发现表达marker分开；本轮没有完成全量新QC或逐群最终marker审定。对已有坐标的固定锚点近邻诊断实际通过，结果仅私有/授权对话；未因二维外观改标签、重跑整合或新CM。后续先QC/桥接审阅，再控制输入/特征/校正比较并用同图数字cluster、原生marker和正负标志命名。见[核查方法](methods/TME-UMAP-upstream-provenance-review-20261029.md)与[任务日志](logs/codex/2026/2026-10-28_TME-hierarchical-cluster-annotation.md)。
