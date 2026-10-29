@@ -1,5 +1,9 @@
 # 逐层cluster注释运行
 
+2026-10-29 00:21 UTC / 08:21 UTC+8取证：可视化生产和最终v3读回已真实退出0。首版object数组读取失败保留，必要primitive轴审计与两个反例在新目录接受；未开启pickle或重跑生产。补充TCR/谱系边界及已验模块交集图完成。静态图经整包和文件SHA取回，本机中文审阅图册实际渲染/目视检查后交付。当前原注释与候选树冻结，先审大类边界与粗标签覆盖；该节点不代表最终共同身份或新CM资格通过。
+
+2026-10-29续：全谱系生产和独立完整原生审核已成功终止，真实交付首版误选证据案例，修复后在新交付目录通过。用户随后要求先充分查看UMAP和marker，暂停新注释规则调整，执行[可视化审阅合同](../methods/TME-UMAP-marker-visual-review-20261029.md)。已有共同表示和来源局部PCA分别布局，不拼接独立PCA，不以UMAP替代身份/状态/临床资格。完整原生marker补图及独立图件读回另行执行，科学图片与逐细胞数组不进入公共Git。取证时刻与技术状态见[新节点](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_full_hierarchy_visual_review_20261029_v1.json)。
+
 取证：2026-10-28T03:06:01.522910+00:00 UTC / 2026-10-28T11:06:01.522910+08:00 UTC+8 / 2026-10-28T14:06:01.522910+11:00 Australia/Melbourne。输入为已接受的当前来源内共同根群及其全原生统计，父群内重选变量特征后PCA/Leiden细分，身份模块与状态、marker分开；不是新CM运行。首次部署缺依赖actual1，修复版和独立完整CSR审核已实际启动并有完成来源。完整终态与候选生物学审阅待，v5指针不变。逻辑运行、命令、实际环境和完整SHA在私有回执；公开[技术收据](../inventories/analysis/2026-10-23/full_context_annotation_v1/technical_hierarchical_cluster_annotation_launch_20261028_v1.json)及[任务日志](../logs/codex/2026/2026-10-28_TME-hierarchical-cluster-annotation.md)。
 
 启动节点代码/方法与技术日志已公开并核验`e9ae804344d3288bd7809a2cc45a4527cfa8f9c4`。只读cluster树接口和一次性交付链已启动，真实读取与全范围终态待，v5和其余档案不覆盖。取证2026-10-28T03:13:32.130804+00:00 UTC / 2026-10-28T11:13:32.130804+08:00 UTC+8。

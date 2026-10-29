@@ -10,6 +10,9 @@ def save(p,v):
 def table(p,rows):
  with Path(p).open('x',encoding='utf-8-sig',newline='') as f:w=csv.DictWriter(f,fieldnames=list(rows[0]),delimiter='\t');w.writeheader();w.writerows(rows)
 
+def eligible_alternate_T_case(node):
+ return node.get('assay_aware_T_evidence_mode')=='T_chain_unmeasured_alternate_CD3_accessory_two_signal_RNA_evidence' and node['cluster_RNA_proposal']['major']=='T'
+
 def assert_same_metadata(actual,expected):
  """Preserve dtype and exact missing positions; None and NaN stay distinct."""
  a=np.asarray(actual);b=np.asarray(expected);assert a.shape==b.shape and a.dtype==b.dtype
@@ -22,6 +25,8 @@ def assert_same_metadata(actual,expected):
 def main(root):
  begin=time.monotonic();cfg=load(root/'config/spec_v1.json');P=Path(cfg['producer']);A=Path(cfg['auditor'])
  t=subprocess.run([sys.executable,'-B',str(root/'tests/test_TME_cluster_view_missingness_v1.py')],capture_output=True,text=True,timeout=60);(root/'provenance/metadata_test_stdout.txt').write_text(t.stdout);(root/'provenance/metadata_test_stderr.txt').write_text(t.stderr);assert t.returncode==0 and 'Ran 4 tests' in t.stderr and 'skipped' not in t.stderr
+ if cfg.get('require_assay_aware_T_case'):
+  t=subprocess.run([sys.executable,'-B',str(root/'tests/test_TME_cluster_delivery_role_selection_v1.py')],capture_output=True,text=True,timeout=60);(root/'provenance/role_test_stderr.txt').write_text(t.stderr);assert t.returncode==0 and 'Ran 3 tests' in t.stderr and 'skipped' not in t.stderr
  for r in [P,A]:
   while not (r/'provenance/supervisor_terminal_v1.json').exists():time.sleep(3)
   assert load(r/'provenance/supervisor_terminal_v1.json')['actual_child_exit_code']==0
@@ -45,7 +50,7 @@ def main(root):
   if cfg.get('require_assay_aware_T_case') and 'assay_missing_chain_alternate_T_RNA' not in roles:
    for n in np.unique(leaf):
     r=s['nodes'][int(n)]
-    if r.get('assay_aware_T_evidence_mode') and r['cluster_RNA_proposal']['major']=='T':roles['assay_missing_chain_alternate_T_RNA']=(source,np.array([pool[np.flatnonzero(leaf==n)[0]]],np.int64));break
+    if eligible_alternate_T_case(r):roles['assay_missing_chain_alternate_T_RNA']=(source,np.array([pool[np.flatnonzero(leaf==n)[0]]],np.int64));break
   if 'nested_child_and_repeated_query' not in roles and child.any():
    p=int(pool[np.flatnonzero(child)[0]]);roles['nested_child_and_repeated_query']=(source,np.array([p,p],np.int64))
   outside=np.setdiff1d(np.arange(len(base['native_row'])),pool)

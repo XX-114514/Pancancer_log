@@ -1,0 +1,216 @@
+{
+  "schema": "source_free_full_hierarchy_delivery_and_visual_review_technical_checkpoint_v1",
+  "entries": [
+    {
+      "logical_stage": "20261028_TME_all_lineage_hierarchy_v1",
+      "observed_UTC": "2026-10-28T23:50:14.421846+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "81ac625f56400bbeb1ffcc5f8a1e4dbf1b2d8d8df93d36fc770ad407a41f65a6",
+        "completed_UTC": "2026-10-28T11:02:25.545801+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "62d8b55a7332416ac5b54930e0fa9ca795e961b37eafdc09e1fa1f879d7839d5",
+        "completed_UTC": "2026-10-28T11:02:30.635354+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261028_TME_all_lineage_hierarchy_audit_v1",
+      "observed_UTC": "2026-10-28T23:50:14.421846+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "00fd0090155b48ff50e4a1035aa64e235ae57b8f962116e2b20da6fa41bbc29a",
+        "completed_UTC": "2026-10-28T11:05:33.008180+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "b9e1344b6a53dbda11758711c5b69e3fd4c5663f93268ef7e29030b06c3d75fc",
+        "completed_UTC": "2026-10-28T11:05:34.869369+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261028_TME_all_lineage_hierarchy_delivery_v1",
+      "observed_UTC": "2026-10-28T23:50:14.421846+00:00",
+      "exact_handle_alive": false,
+      "supervisor_terminal_v1.json": {
+        "SHA256": "f87e9fb7baa051ef99da71e8de82af39026ad233d7c9ac26ad3896fb1a523eaa",
+        "completed_UTC": "2026-10-28T11:06:03.054782+00:00"
+      },
+      "actual_exit_code": 1
+    },
+    {
+      "logical_stage": "20261029_TME_all_lineage_hierarchy_delivery_v2",
+      "observed_UTC": "2026-10-28T23:50:14.421846+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "6810663b0f2b652e79dbf89eb56d600099510cfdaaed1e3de348ed1cdf344ce8",
+        "completed_UTC": "2026-10-28T23:43:16.200506+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "0be71de49fd31757d25ff90f810cfa47b3317c2db498d19edcf0a31d78b0d091",
+        "completed_UTC": "2026-10-28T23:43:17.588131+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_full_cluster_shared_scope_review_v1",
+      "observed_UTC": "2026-10-28T23:50:14.421846+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "7838ead073f32b719ae795fa74058f20b183cc1aecd4a658fbd1f68dcb496440",
+        "completed_UTC": "2026-10-28T23:45:28.469445+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "9da6a2fe3d2feff491741b6ee16a1de79d29351d205625007c01dcd8157649b5",
+        "completed_UTC": "2026-10-28T23:45:28.691198+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_full_cluster_shared_scope_audit_v1",
+      "observed_UTC": "2026-10-28T23:50:14.421846+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "c25cc9e7b5480fd217bc242451cd88718d52895dd6aa76708694832392ad74b4",
+        "completed_UTC": "2026-10-28T23:46:55.354107+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "51ebafb7bc582483ddffafa3896259f2d8becd57e14b386fbba1c74b4857ec9b",
+        "completed_UTC": "2026-10-28T23:46:55.514326+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_UMAP_marker_review_v1",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "5f19a1fb7f7ee26db944680211f0b3422e23abfb95cc43f1d1754556c2f3e2a6",
+        "completed_UTC": "2026-10-29T00:12:58.680587+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "6b63853e308015a49597e81d524332ed8cddfc25b8ca556d8ee46130bff69607",
+        "completed_UTC": "2026-10-29T00:13:00.301769+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_unresolved_core_overlap_v1",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "641518005af42290f0d9a8d67aeb930b451ee934e3bffc42c6b6b104df47f85e",
+        "completed_UTC": "2026-10-28T23:56:20.814885+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "2b5f6af290daa93d4845e6aaf49d41f1730555d7f1cc6cd1dedca1e3aba66130",
+        "completed_UTC": "2026-10-28T23:56:21.368191+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_unresolved_core_overlap_audit_v1",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "a7198f6b5e40a8b505319924173a698a5d7227191909a99ab23bc3bd0ba4100a",
+        "completed_UTC": "2026-10-29T00:04:08.191744+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "aa7b1abc1ba14d6638da1b1f706dba67c2e04b377ab4a50e5cff8d3260a95d4e",
+        "completed_UTC": "2026-10-29T00:04:08.649489+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_annotation_diagnostic_panels_v1",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "a14c79939ed914aa2f5c94815f6fa579a5eacbb4e67316fde662f82e21e8db82",
+        "completed_UTC": "2026-10-29T00:00:53.648703+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "1f44d6d23ba822e2af1b35c9757dd370a3e5b3dbd23518503a993ecb035164c0",
+        "completed_UTC": "2026-10-29T00:00:53.813525+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_UMAP_marker_review_audit_v1",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "supervisor_terminal_v1.json": {
+        "SHA256": "51d98190ef6d7c6b555865f2703733ffd01654b489eb2fb5d745d591d16295c4",
+        "completed_UTC": "2026-10-29T00:13:06.829105+00:00"
+      },
+      "actual_exit_code": 1
+    },
+    {
+      "logical_stage": "20261029_TME_UMAP_marker_review_audit_v2",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "8aa15ed573081b97123434e114e89b2867a2ea8d2f1d6747fb382433e2bd20ca",
+        "completed_UTC": "2026-10-29T00:16:48.560787+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "c3a884ae6f063e6cf69f0691168a8017f2e7e4326ad615e5671b9632716b0227",
+        "completed_UTC": "2026-10-29T00:16:49.161908+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_annotation_diagnostic_panels_v2",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "021419ec0a5469b42b6a6bbfab56431eb8e0f5034a8317270046a0070647b16c",
+        "completed_UTC": "2026-10-29T00:17:35.399960+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "49ccc7373b0d18c0737c71a28b3f587a94112e556db93e10c065f81d25ce6fab",
+        "completed_UTC": "2026-10-29T00:17:35.579628+00:00"
+      },
+      "actual_exit_code": 0
+    },
+    {
+      "logical_stage": "20261029_TME_UMAP_marker_review_audit_v3",
+      "observed_UTC": "2026-10-29T00:18:56.549527+00:00",
+      "exact_handle_alive": false,
+      "terminal_v1.json": {
+        "SHA256": "fb929aa6e62d6a1614398a80016a71fb8c0cfe8bf2078b377bbf88afae79ca86",
+        "completed_UTC": "2026-10-29T00:18:34.929652+00:00"
+      },
+      "supervisor_terminal_v1.json": {
+        "SHA256": "e5c08b7561cac05216be0c684287b328bde874dc18b0e152cb48d584cf375efa",
+        "completed_UTC": "2026-10-29T00:18:35.539632+00:00"
+      },
+      "actual_exit_code": 0
+    }
+  ],
+  "working_annotation_v5_and_native_counts_masks_author_states_unchanged": true,
+  "new_identity_rule_changes_deferred_at_user_request": true,
+  "UMAP_uses_existing_common_coordinates_not_concatenated_source_PCAs": true,
+  "display_sampling_tests": {
+    "n_tests": 3,
+    "actual_exit_code": 0,
+    "n_skips": 0
+  },
+  "delivery_role_tests": {
+    "n_tests": 3,
+    "actual_exit_code": 0,
+    "n_skips": 0
+  },
+  "overlap_rule_tests": {
+    "n_tests": 4,
+    "actual_exit_code": 0,
+    "n_skips": 0
+  },
+  "static_scientific_figures_and_individual_arrays_not_published": true,
+  "original_goal_complete": false,
+  "new_CM_started": false,
+  "visualization_readback_scope": "all_current_label_and_common_coordinate_axes; bounded_independent_native_marker_checks; all_static_image_readback; no_pickle_of_unused_legacy_baseline_dictionary",
+  "local_visual_QA": "static_bundle_full_file_SHA_accepted; embedded_CJK_PDF_all_pages_rendered_and_contact_sheet_reviewed; key_figures_and_first_last_pages_inspected; scientific_artifacts_not_published"
+}
