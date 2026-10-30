@@ -1,7 +1,7 @@
 ## 2026-10-30 旧服务器到WEHI的按需迁移规划
 
 07:30 UTC，WEHI已能经SSH连到旧服务器，但实测约4–30 KB/s；旧服务器HTTPS并行上传4路合计约440 KB/s，WEHI公网下载约150 MB/s。当前TME主线最终依赖三个原生存储（约60、41、28 GB）；`runs/`共317 GB，大部分是可重新下载的公开数据和历史运行。
-规划分四层：M0代码、清单、私有登记和wheel（SSH，小于300 MB）；M1免疫权威zarr（28 GB）；M2按依赖闭包选取的当前工作层（预计5–15 GB）；M3两个原生存储（约101 GB，主线计算迁移时才需要）。约200 GB的临床扩展、预检和空间打包件不迁移。用户已确定M0–M3全部迁移，经Cloudflare R2中转（旧服务器16路上传实测约1.1 MB/s，全部约36小时）；工具见`scripts/wehi_migration/`，本地端到端测试和坏分块测试通过。尚未传输数据；需用户创建桶及令牌，WEHI持久空间仍待申请。见[规划](methods/WEHI-data-migration-plan-20261030.md)和[任务日志](logs/codex/2026/2026-10-30_WEHI-data-migration-plan.md)。
+规划分四层：M0代码、清单、私有登记和wheel（SSH，小于300 MB）；M1免疫权威zarr（28 GB）；M2按依赖闭包选取的当前工作层（预计5–15 GB）；M3两个原生存储（约101 GB，主线计算迁移时才需要）。约200 GB的临床扩展、预检和空间打包件不迁移。用户已确定M0–M3全部迁移，经Cloudflare R2中转（旧服务器16路上传实测约1.1 MB/s，全部约36小时）；工具见`scripts/wehi_migration/`，本地端到端测试和坏分块测试通过。10:20 UTC已启动：M0已在WEHI通过逐文件核对；M1上传中（实测约6.8 MiB/s）；M3、M2已排队，M2按依赖分析裁剪后约35 GB。数据暂放WEHI scratch，持久空间仍待申请。见[规划](methods/WEHI-data-migration-plan-20261030.md)和[任务日志](logs/codex/2026/2026-10-30_WEHI-data-migration-plan.md)。
 
 ## 2026-10-30 WEHI Xenium逐切片统计与测量mask完成
 

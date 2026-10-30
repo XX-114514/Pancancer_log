@@ -12,6 +12,8 @@ SSH直连只有约4–30 KB/s，所以M0也走同一通道。
 | `old_stage_m0.sh` | 旧服务器 | 用本地rsync收集M0：代码、配置、每个运行的config/provenance/scripts/tests/manifests和outputs顶层文本，外加指定文件（如私有wheel） |
 | `old_pack_upload.sh` | 旧服务器 | 逐文件SHA256 → tar分块（默认1 GiB）→ 分块SHA256 → 先传清单，再在预算上限内分批并行传分块 → 写`_UPLOADED` |
 | `wehi_fetch_verify.sh` | WEHI | 分块一到就下载并核对SHA256，核对通过即从桶里删除、留下`received/`标记；不一致的分块两边都删，由旧服务器重传 → 解包（不覆盖已有目标）→ 逐文件SHA256与旧服务器清单逐行一致 → `receipt.tsv` → 清空该项 |
+| `old_m2_closure.py` | 旧服务器 | 从种子运行出发，递归解析config、provenance和outputs顶层的JSON中引用到的运行目录 |
+| `old_stage_m2.sh` | 旧服务器 | 重新做依赖分析 → 去掉排除项 → 等引用这些运行的进程结束 → 用硬链接建M2目录（不额外占盘、不碰原件），符号链接只记录不打包 |
 | `jobs/fetch.sbatch` | WEHI | 在datamover分区运行上面的脚本 |
 
 两个脚本都可以重跑：已完成的哈希、打包步骤会保留，rclone跳过已传完的分块。有符号链接时打包会停止，先处理。
@@ -58,7 +60,7 @@ export MIG_CODE_ROOT=<仓库>/scripts/wehi_migration
 sbatch --export=ALL,MIG_ITEM=m0_records,MIG_DEST="$DEST" "$MIG_CODE_ROOT/jobs/fetch.sbatch"
 ```
 
-M2先按依赖闭包生成目录清单，再作为一个或多个项目传输；M3的两个原生存储各为一项。
+M2由`old_stage_m2.sh`收集为一项；排除清单只放在旧服务器本地，内容为可重新下载的输入，以及作为M1/M3单独传输的数据存储。M3的两个原生存储各为一项。
 每项完成后把`receipt.tsv`的计数与SHA摘要写入`runs/`记录；目录、样本表和数据对象不进仓库。
 
 ## 已验证
