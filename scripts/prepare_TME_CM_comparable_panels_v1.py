@@ -38,13 +38,19 @@ def main(R):
         mapping=np.asarray([r['parent_code'] for r in nodes],np.int64);assert ((mapping>=0)&(mapping<len(parents))).all();assigned=n>=0;np.testing.assert_array_equal(mapping[n[assigned]],p[assigned])
         if axis is None:axis=a['input_axis_SHA256']
         assert a['input_axis_SHA256']==axis
-        shared&=assigned;schemes.append(dict(manifest=a,manifest_binding=binding,parent=p,node=n,mapping=mapping))
+        if a.get('node_measurement_mask'):
+            opportunity=np.load(bound(a['node_measurement_mask']));assert opportunity.shape==(len(nodes),nu) and opportunity.dtype.kind=='b'
+        else:
+            assert cfg['accepted_purpose']=='synthetic_validation','Production schemes require explicit per-node measurement opportunity'
+            opportunity=np.ones((len(nodes),nu),bool)
+        shared&=assigned;schemes.append(dict(manifest=a,manifest_binding=binding,parent=p,node=n,mapping=mapping,opportunity=opportunity))
     # Shared assessed-cell domain is identical across schemes. Each scheme's
     # complete parent denominator is retained before omitting discovery nodes.
     np.save(R/'outputs/private_common_assessed_cell_mask_v1.npy',shared);common_total=np.bincount(unit[shared],minlength=nu);report=[];candidate_bindings=[]
     for s in schemes:
         a=s['manifest'];nn=len(a['nodes']);np_=len(a['parents']);count=np.bincount(s['node'][shared].astype(np.int64)*nu+unit[shared],minlength=nn*nu).reshape(nn,nu);parent=np.bincount(s['parent'][shared].astype(np.int64)*nu+unit[shared],minlength=np_*nu).reshape(np_,nu)
         for k in range(np_):np.testing.assert_array_equal(count[s['mapping']==k].sum(axis=0),parent[k])
+        assert (count[~s['opportunity']]==0).all(),'A class called in an unmeasurable node/unit needs its definition corrected'
         s.update(count=count,parent_counts=parent);np.save(R/'outputs'/('private_'+a['scheme_id']+'_complete_parent_counts_v1.npy'),parent)
     for panel in cfg['panels']:
         base=np.load(design/'outputs'/('private_'+panel['material_panel']+'_unit_mask_v1.npy'));assert base.shape==(nu,) and base.dtype.kind=='b';use=base&(common_total>=cfg['minimum_total_cells'])&(exposed>0);requested=panel['parents'];assert requested and len(set(requested))==len(requested)
@@ -53,17 +59,34 @@ def main(R):
             by={r['name']:r['code'] for r in s['manifest']['parents']}
             if not set(requested)<=set(by):reason='requested_parent_absent_from_scheme_ontology';break
             use&=(s['parent_counts'][[by[n] for n in requested]]>=cfg['minimum_parent_cells']).all(axis=0)
+        # Freeze a pre-coverage node pool using only genuinely measured units.
+        # Unapplied/unsupported classifiers must not create apparent variation
+        # by contributing artificial zeros outside their observation scope.
+        pools=[]
+        if reason is None:
+            preliminary=use.copy()
+            for s in schemes:
+                a=s['manifest'];f,measured=frequency_with_measurement_mask(s['count'],s['mapping'],s['parent_counts'],cfg['minimum_parent_cells']);pool=[]
+                for j,node in enumerate(a['nodes']):
+                    if a['parents'][node['parent_code']]['name'] not in requested or not node['discovery_eligible']:continue
+                    observed=preliminary&s['opportunity'][j]&measured[j]
+                    if s['count'][j,observed].sum()>=cfg['minimum_node_cells'] and (s['count'][j,observed]>0).sum()>=cfg['minimum_node_observed_units'] and observed.sum() and np.ptp(f[j,observed])>0:pool.append(j)
+                pools.append(pool)
+                if pool:use&=s['opportunity'][pool].all(axis=0)
+        else:pools=[[] for s in schemes]
         nblocks=int(table.loc[use,'patient_candidate_block'].nunique())
         if reason is None and (use.sum()<cfg['minimum_units'] or nblocks<cfg['minimum_blocks']):reason='insufficient_complete_comparable_units_or_candidate_blocks'
         rows=[]
-        for s in schemes:
+        for s,pool in zip(schemes,pools):
             a=s['manifest'];f,measured=frequency_with_measurement_mask(s['count'],s['mapping'],s['parent_counts'],cfg['minimum_parent_cells']);eligible=[]
             for j,node in enumerate(a['nodes']):
+                if j not in pool:continue
                 if a['parents'][node['parent_code']]['name'] not in requested or not node['discovery_eligible']:continue
+                assert s['opportunity'][j,use].all()
                 if s['count'][j,use].sum()<cfg['minimum_node_cells'] or (s['count'][j,use]>0).sum()<cfg['minimum_node_observed_units']:continue
                 if use.sum() and np.isfinite(f[j,use]).all() and np.ptp(f[j,use])>0:eligible.append(j)
             status=reason or ('insufficient_variable_discovery_nodes' if len(eligible)<cfg['minimum_nodes'] else 'prepared_waiting_independent_input_audit')
-            row=dict(panel=panel['id'],scheme=a['scheme_id'],status=status,n_units=int(use.sum()),n_candidate_blocks=nblocks,n_sources=int(table.loc[use,'source'].nunique()),n_nodes=len(eligible),parents_requested=requested,n_common_cells=int(common_total[use].sum()),candidate_blocks_are_not_certified_independent_patients=True)
+            row=dict(panel=panel['id'],scheme=a['scheme_id'],status=status,n_units=int(use.sum()),n_candidate_blocks=nblocks,n_sources=int(table.loc[use,'source'].nunique()),n_nodes=len(eligible),n_precoverage_discovery_nodes=len(pool),node_opportunity_applied_without_missing_to_zero=True,parents_requested=requested,n_common_cells=int(common_total[use].sum()),candidate_blocks_are_not_certified_independent_patients=True)
             report.append(row);rows.append((s,eligible,row))
         # No scheme-specific sample fallback: a head-to-head panel is usable
         # only when every scheme passes on exactly these same observations.
@@ -74,7 +97,7 @@ def main(R):
             a=s['manifest'];prefix=panel['id']+'__'+a['scheme_id'];fq,mask=frequency_with_measurement_mask(s['count'],s['mapping'],s['parent_counts'],cfg['minimum_parent_cells']);assert mask[np.ix_(eligible,use)].all();out=fq[np.ix_(eligible,use)];assert np.isfinite(out).all()
             ids=['UNIT_'+str(i) for i in np.flatnonzero(use)];frame=pd.DataFrame(out,index=[a['nodes'][j]['name'] for j in eligible],columns=ids);frame.insert(0,'majorCluster',[a['parents'][s['mapping'][j]]['name'] for j in eligible]);fp=R/'outputs'/('private_'+prefix+'_frequency_v1.tsv');frame.to_csv(fp,sep='\t',index_label='subCluster')
             meta=table.loc[use].copy();meta.insert(0,'sampleID',ids);mp=R/'outputs'/('private_'+prefix+'_metadata_v1.tsv');meta.to_csv(mp,sep='\t',index=False)
-            row['comparison_ready']=True;candidate=dict(schema='candidate_TME_CM_scheme_input_v1',accepted_purpose=cfg['accepted_purpose'],independent_input_audit_pending=True,complete_measured_denominators_no_missing_to_zero=True,annotation_and_unit_masks_bound=True,frequency=dict(path=str(fp),SHA256=sha(fp)),metadata=dict(path=str(mp),SHA256=sha(mp)),annotation_acceptance=s['manifest_binding'],common_assessed_cell_mask_SHA256=sha(R/'outputs/private_common_assessed_cell_mask_v1.npy'),training_mask_binding=cfg['training_cell_mask'],requested_parent_panel=panel,coverage=row,rank_upper_bound_by_candidate_blocks=min(cfg['maximum_rank'],len(eligible)-1,nblocks//4))
+            row['comparison_ready']=True;candidate=dict(schema='candidate_TME_CM_scheme_input_v1',accepted_purpose=cfg['accepted_purpose'],independent_input_audit_pending=True,complete_measured_denominators_no_missing_to_zero=True,annotation_and_unit_masks_bound=True,node_measurement_mask_binding=a.get('node_measurement_mask'),frequency=dict(path=str(fp),SHA256=sha(fp)),metadata=dict(path=str(mp),SHA256=sha(mp)),annotation_acceptance=s['manifest_binding'],common_assessed_cell_mask_SHA256=sha(R/'outputs/private_common_assessed_cell_mask_v1.npy'),training_mask_binding=cfg['training_cell_mask'],requested_parent_panel=panel,coverage=row,rank_upper_bound_by_candidate_blocks=min(cfg['maximum_rank'],len(eligible)-1,nblocks//4))
             cp=R/'outputs'/('private_'+prefix+'_candidate_input_v1.json');save(cp,candidate);candidate_bindings.append(dict(path=str(cp),SHA256=sha(cp)))
     storage_gate(R,cfg);save(R/'outputs/comparable_CM_panel_preparation_v1.json',dict(schema='TME_CM_comparable_panel_preparation_v1',n_fit=N,n_common_assessed_cells=int(shared.sum()),panels=report,candidate_inputs=candidate_bindings,accepted_analysis_inputs_not_yet_granted=True,input_axis_SHA256=axis,no_missing_to_zero=True,shared_cell_domain_and_unit_panels=True))
     save(R/'provenance/terminal_v1.json',dict(status='COMPARABLE_CM_PANELS_PREPARED_PENDING_INDEPENDENT_INPUT_AUDIT',completed_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat(),n_candidate_inputs=len(candidate_bindings),manifest_SHA256=sha(R/'outputs/comparable_CM_panel_preparation_v1.json')))

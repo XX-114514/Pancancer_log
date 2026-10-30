@@ -46,7 +46,19 @@ def main(R):
     except AssertionError:pass
     else:raise AssertionError('Partial material train/test leakage was accepted')
     assert not (bad/'provenance/terminal_v1.json').exists()
-    put(R/'outputs/hand_counted_panel_driver_acceptance_v1.json',dict(synthetic_only=True,whole_material_split_checked=True,absent_parent_not_subgroup_zero=True,observed_subgroup_zero_retained=True,technical_hold_changes_complete_denominator=True,split_node_comparison_same_units=True,candidate_not_accepted_input=True,rank_limited_by_candidate_blocks=True,n_hand_counted_schemes=2))
+    # The same observed zero is retained when measured above, but cannot be
+    # counted as a negative class if that node was not measurable in the unit.
+    measurement_schemes=[]
+    for k,original in enumerate(schemes):
+        a=json.loads(Path(original['path']).read_text());mask=np.ones((len(a['nodes']),nu),bool)
+        if k==0:mask[2,0]=False
+        a['node_measurement_mask']=array(base/('opportunity_'+str(k)+'.npy'),mask);ap=base/('measured_scheme_'+str(k)+'.json');put(ap,a);measurement_schemes.append(binding(ap))
+    measured=base/'measurement_opportunity';(measured/'config').mkdir(parents=True);(measured/'outputs').mkdir();(measured/'provenance').mkdir();put(measured/'config/spec_v1.json',dict(spec,schemes=measurement_schemes));prepare(measured)
+    check=json.loads((measured/'outputs/comparable_CM_panel_preparation_v1.json').read_text());assert len(check['candidate_inputs'])==2;axes=[]
+    for b in check['candidate_inputs']:
+        a=json.loads(Path(b['path']).read_text());fq=pd.read_csv(a['frequency']['path'],sep='\t',index_col=0);axes.append(fq.columns.tolist());assert 'UNIT_0' not in fq;assert a['coverage']['node_opportunity_applied_without_missing_to_zero']
+    assert axes[0]==axes[1]
+    put(R/'outputs/hand_counted_panel_driver_acceptance_v1.json',dict(synthetic_only=True,whole_material_split_checked=True,absent_parent_not_subgroup_zero=True,observed_subgroup_zero_retained=True,unmeasured_node_zero_excludes_unit_from_both_schemes=True,technical_hold_changes_complete_denominator=True,split_node_comparison_same_units=True,candidate_not_accepted_input=True,rank_limited_by_candidate_blocks=True,n_hand_counted_schemes=2))
     put(R/'provenance/terminal_v1.json',dict(status='HAND_COUNTED_COMPARABLE_PANEL_DRIVER_COUNTEREXAMPLES_PASS',synthetic_only=True))
 
 if __name__=='__main__':

@@ -1,5 +1,13 @@
 # Automatic-annotation / CM / state goal: technical checkpoint
 
+Current checkpoint: official per-cell prediction and its full-axis numerical
+audit are accepted. A predeclared coverage completion, exact reference-label
+interpretation, common-compartment scope and five pre-CM membership views
+also completed. Comparable input preparation and independent all-cell recount
+have passed. Human-data CM fitting is submitted; cross-scheme module comparison
+and new state modules are subsequent gates.
+The paragraphs below retain the earlier execution timeline.
+
 2026-10-30. The user requested a plan followed by an active implementation goal.
 
 The design separates annotation engines, annotation granularity, composition
@@ -88,3 +96,54 @@ Per-source membership and numerical probes continue. Full annotation,
 biological interpretation, human-data CM fits and state-module acceptance
 remain separate milestones; a block timing gain is not an accuracy claim or
 a whole-workflow runtime estimate.
+
+## Reference interpretation before human-data CM inputs
+
+The complete reference vocabularies are frozen as exact mappings. A legacy
+substring rule could route the literal Mast label into a T-cell category;
+the new interpretation layer corrects that lexical error while preserving
+raw model predictions. Developmental, tissue-origin and state-related words
+remain reference cues, not biological validation or new state measurements.
+
+The primary reference view follows official in-scope best-match output.
+Unique-positive proposal handling is a separate sensitivity view, rather
+than adding a probability cutoff to best-match. Fixed-cluster workflow
+comparisons retain their reference/aggregation differences and do not claim
+isolated algorithm accuracy. Semantic execution was submitted behind full
+inference/audit acceptance; final cell-identity and CM gates were then pending.
+
+## 2026-10-30 13:32–14:19 UTC /21:32–22:19 UTC+8
+
+Official inference and independent full-axis checks completed. Exact semantic
+interpretation and a common broad compartment domain were accepted separately.
+The common compartments define comparison denominators; they do not assert
+that related biological identities are interchangeable.
+
+An inherited project feature-coverage cutoff had withheld otherwise measurable
+reference predictions. The strict view is preserved, and the predeclared
+affected scope was completed through the official matched-feature API with
+unchanged model numbers, RNA normalization and existing predictions. The first
+completion attempt compared different batch sizes and stopped at a numerical
+equivalence check. A new immutable attempt compared identical batches and
+passed. Failed attempts remain recorded; no upstream QC was repeated.
+
+Five numerical-cluster-preserving membership views were then frozen before
+human-data CM results. Reference phenotypes, identity coarsening and two actual
+group-reference workflows are compared under the same broad scope. Reference
+conflicts remain denominator-retained fallback nodes. Organ-specific references
+have separate measurement domains. Group labels are not per-cell ground truth.
+
+The measurement-opportunity counterexample suite passed: an observed subgroup
+zero is retained, whereas a classifier-unmeasured zero removes that observation
+from every arm of the affected comparison. Actual prepared matrices require
+independent all-cell recounting before the execution acceptance is granted.
+Human-data module discovery and new state modules are not yet claimed here.
+
+## 2026-10-30 14:21–14:23 UTC /22:21–22:23 UTC+8
+
+All prepared comparison inputs passed independent cell-member recounts with
+complete parent denominators, measured-zero checks, whole-material training
+scope and identical observation axes across methods. The first prespecified
+panel's five real CoVarNet fits were submitted using the frozen author nsNMF
+workflow, rank survey and repeated final fits. Submission is not completion.
+Rank selection does not use clinical outcomes or a desired historical module.
