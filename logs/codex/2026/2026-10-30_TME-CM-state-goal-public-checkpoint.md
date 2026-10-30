@@ -258,3 +258,7 @@ Development multiview state inputs were accepted. Raw, source-centred and within
 The prespecified common-rank CM robustness stage passed synthetic checks and entered candidate-material block bootstrap, source-equal and leave-one-source refits. Frozen matrix/atlas conditions and uncertified candidate-patient blocks remain explicit. The goal remains active; functional states, communication mechanisms and clinical increment are not yet claimed.
 
 The corrected official MOFA synthetic test has now passed all six checks with a scientific acceptance artifact; Scanpy graph/Leiden/frozen projection passed its three synthetic checks. The bounded real-data jobs wait for the native measurement diagnostic acceptance. These synthetic results validate execution interfaces and counterexamples, not human biological states.
+
+## Native sensitivity acceptance and bounded state CM handoff
+
+The development-only native rank/universe and disjoint-gene diagnostic accepted with a scientific terminal. Both real state-modelling routes entered computation after their dependencies. All prespecified identity CM fits and comparison manifests accepted; block/source robustness remains running. A finite state-partition CoVarNet handoff now waits for frozen projection acceptance, uses whole-work-unit training roles, explicit assay opportunity even for unobserved categories, independent count replay and a first-fit gate before expansion. No result-selected retry or threshold change is configured. State model validation and incremental information remain open goal work.
