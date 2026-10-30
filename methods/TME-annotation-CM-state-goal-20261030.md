@@ -33,6 +33,10 @@ G1在查看CM结果前冻结映射和不确定性处理。主要比较使用共�
 
 执行补充：匹配群均值CellTypist仅作同输入的工具诊断。其标签若与同来源同群的逐细胞投票不同，不将群均值细标签广播给全部成员；以完整逐细胞结果及相应群投票建立主视图。SingleR保留完整来源查询批次，独立复算反转查询列顺序以检查标签、pruned结果和delta的轴不变性；不能抽几个查询群后假定其自适应pruning阈值应与完整批次相同。
 
+身份方案分为原始参考表型、身份归并、身份×数字群、固定群CellTypist投票、固定群SingleR及marker/自动共识。原始参考表型中可能包含状态词，保留作敏感性视图，不改称纯身份。主要细身份计数视图要求适用父类内的唯一正参考提议；正提议沿官方概率大于0.5的定义，不解释为经过校准的生物学准确率。其余保留明确的大类内未定节点及原始best-match，不从完整父类分母删除；另用全部适用best-match检查这一置信处理对组成的影响。
+
+性能实施：函数级计时定位到object基因名字数组的重复成员匹配。无损转换名字数组表示后，仍调用同一官方Classifier构造和未修改的celltype；不修改表达、名称/顺序、模型数值、缩放、scope或投票规则，也不猴补丁全局NumPy/安装包。先核完整名称membership及普通/新路径的标签、decision和probability逐位相同，接受后记录确切owned PID和完整来源检查点再受控切换。只复用完整来源，旧产物及切换原因保留，后继全轴审核不省略。[NumPy成员匹配](https://numpy.org/doc/1.26/reference/generated/numpy.isin.html)与[官方CellTypist推理](https://celltypist.readthedocs.io/en/latest/celltypist.annotate.html)为接口依据；性能增益由本项目实测，不当生物准确性结果。
+
 ## G2｜组成矩阵与CoVarNet
 
 采用作者CoVarNet的子群/所属大类内比例、minmax、nsNMF和相关网络基线。输入先显式处理测量mask，再调用作者接口；不调用会将缺失大类NA置0的默认频率转换。大类充分捕获但子群未见可记0；大类未捕获或身份/材料未审记NA。

@@ -68,3 +68,23 @@ for a previously accepted native-statistics phase. Its exact phase checksum
 and successful matched-profile consumer were verified before a new immutable
 attempt. The native coverage attempt then completed successfully; no upstream
 expression processing or live classification was restarted.
+
+## 2026-10-30 12:52 UTC /20:52 UTC+8 official inference performance transition
+
+Function-level timing located repeated object-string gene membership as the
+main block cost. Lossless Unicode gene-name representation was checked
+against exact string membership and ordinary official inference. Labels,
+decision values and probabilities agreed bit for bit in the tested cases;
+original models and installed functions were unchanged.
+
+After that acceptance, an explicit task-owned transition retained complete
+source checkpoints and started the verified metadata path with the same
+models, RNA normalization, feature scope and block size. The bounded
+controller completed successfully and launched its independent full-axis
+auditor. Earlier attempts and their outputs remain available. A transient
+read-only SSH observation failure recovered without restarting computation.
+
+Per-source membership and numerical probes continue. Full annotation,
+biological interpretation, human-data CM fits and state-module acceptance
+remain separate milestones; a block timing gain is not an accuracy claim or
+a whole-workflow runtime estimate.
