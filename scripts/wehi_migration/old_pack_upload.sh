@@ -45,10 +45,28 @@ fi
 for f in meta.tsv files.sha256 chunks.sha256; do
   "$MIG_RCLONE" copyto "$out/$f" "$dest/$f" --retries 20
 done
-mig_log "$item uploading $(wc -l < "$out/chunks.sha256") chunks"
-"$MIG_RCLONE" copy "$out/chunks" "$dest/chunks" \
-  --transfers "${MIG_TRANSFERS:-8}" --s3-upload-concurrency "${MIG_PART_CONCURRENCY:-4}" \
-  --s3-chunk-size "${MIG_PART_SIZE:-16M}" --retries 50 --low-level-retries 100 \
-  --stats 10m --stats-one-line --stats-log-level NOTICE
+
+# Budget guard: chunks go up only while the whole bucket stays under MIG_BUCKET_CAP (default 9G,
+# inside the R2 free storage tier). WEHI deletes each chunk after verifying it and leaves a
+# zero-byte marker under received/, so a chunk is pending until it is in neither place.
+chunk_bytes="$(numfmt --from=iec "${MIG_CHUNK:-1G}")"
+cap_bytes="$(numfmt --from=iec "${MIG_BUCKET_CAP:-9G}")"
+(( chunk_bytes < cap_bytes )) || { echo "MIG_CHUNK must be smaller than MIG_BUCKET_CAP" >&2; exit 1; }
+cut -c67- "$out/chunks.sha256" | LC_ALL=C sort > "$out/all_chunks.txt"
+mig_log "$item uploading $(wc -l < "$out/all_chunks.txt") chunks, bucket cap ${MIG_BUCKET_CAP:-9G}"
+while :; do
+  { "$MIG_RCLONE" lsf "$dest/received/" 2>/dev/null || true
+    "$MIG_RCLONE" lsf "$dest/chunks/" 2>/dev/null || true; } | LC_ALL=C sort -u > "$out/present.txt"
+  LC_ALL=C comm -23 "$out/all_chunks.txt" "$out/present.txt" > "$out/pending.txt"
+  [[ -s "$out/pending.txt" ]] || break
+  used="$("$MIG_RCLONE" size "${MIG_REMOTE}:${MIG_BUCKET}" --json | grep -o '"bytes":[0-9]*' | cut -d: -f2)"
+  room=$(( (cap_bytes - ${used:-0}) / chunk_bytes ))
+  if (( room < 1 )); then sleep "${MIG_POLL:-300}"; continue; fi
+  head -n "$(( room < ${MIG_TRANSFERS:-8} ? room : ${MIG_TRANSFERS:-8} ))" "$out/pending.txt" > "$out/batch.txt"
+  "$MIG_RCLONE" copy "$out/chunks" "$dest/chunks" --files-from "$out/batch.txt" --no-traverse \
+    --transfers "${MIG_TRANSFERS:-8}" --s3-upload-concurrency "${MIG_PART_CONCURRENCY:-4}" \
+    --s3-chunk-size "${MIG_PART_SIZE:-16M}" --retries 50 --low-level-retries 100 \
+    --stats 10m --stats-one-line --stats-log-level NOTICE
+done
 date -u +%FT%TZ | "$MIG_RCLONE" rcat "$dest/_UPLOADED"
 mig_log "$item upload complete"

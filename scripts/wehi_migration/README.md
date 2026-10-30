@@ -10,8 +10,8 @@ SSH直连只有约4–30 KB/s，所以M0也走同一通道。
 | `config.sh` | 两端 | 读取本地配置`~/.config/pancancer/migration.local.sh`；清除旧服务器失效的代理变量；并行SHA256 |
 | `setup_r2_remote.sh` | 两端，交互 | 写入rclone的R2 remote（密钥不回显、不出现在命令行），并做一次写/读/删探测 |
 | `old_stage_m0.sh` | 旧服务器 | 用本地rsync收集M0：代码、配置、每个运行的config/provenance/scripts/tests/manifests和outputs顶层文本，外加指定文件（如私有wheel） |
-| `old_pack_upload.sh` | 旧服务器 | 逐文件SHA256 → tar分块（默认1 GiB）→ 分块SHA256 → 先传清单再并行传分块 → 写`_UPLOADED` |
-| `wehi_fetch_verify.sh` | WEHI | 轮询并下载分块 → 分块SHA256 → 解包（不覆盖已有目标）→ 逐文件SHA256与旧服务器清单逐行一致 → `receipt.tsv` |
+| `old_pack_upload.sh` | 旧服务器 | 逐文件SHA256 → tar分块（默认1 GiB）→ 分块SHA256 → 先传清单，再在预算上限内分批并行传分块 → 写`_UPLOADED` |
+| `wehi_fetch_verify.sh` | WEHI | 分块一到就下载并核对SHA256，核对通过即从桶里删除、留下`received/`标记；不一致的分块两边都删，由旧服务器重传 → 解包（不覆盖已有目标）→ 逐文件SHA256与旧服务器清单逐行一致 → `receipt.tsv` → 清空该项 |
 | `jobs/fetch.sbatch` | WEHI | 在datamover分区运行上面的脚本 |
 
 两个脚本都可以重跑：已完成的哈希、打包步骤会保留，rclone跳过已传完的分块。有符号链接时打包会停止，先处理。
@@ -35,19 +35,27 @@ MIG_RCLONE=...         # 旧服务器上rclone的路径；WEHI用 module load rc
 3. 记下Access Key ID、Secret Access Key和Account ID。不要发在聊天、日志或仓库里。
 4. 在两台服务器上分别运行`bash setup_r2_remote.sh`，按提示输入。
 
-费用：存储超过10 GB免费额度的部分按每GB每月0.015美元计，下载不收流量费。每项验收后清除，峰值约60 GB，整个迁移预计不到2美元。
+## 预算控制（总预算不超过5美元）
+
+- **存储**：`MIG_BUCKET_CAP`（默认`9G`）是整个桶的硬上限。旧服务器每批上传前都会查一次桶的已用量，超过上限就等待；WEHI核对一块就删一块。因此桶里同时存放的数据始终低于R2每月10 GB的免费存储额度。
+- **操作次数**：140 GB按16 MiB分段约9千次分段上传，加上每块的创建、完成、标记、删除，以及两端每5分钟一次的列表，合计约2万次A类操作，远低于每月100万次的免费额度；下载（B类）只有几百次，也远低于免费额度。
+- **流量**：R2下载不收费。
+- 预计费用约为0美元。最坏情况下，假设整个140 GB在桶里放满一个月，存储费也只有约2美元。
+- 不要调大`MIG_BUCKET_CAP`；如果这个Cloudflare账号的R2里还存着别的数据，要相应调小。
+- R2没有消费硬上限，需要绑定付款方式。建议在Cloudflare的Billing → Notifications里设置用量提醒。
+- 迁移完成后删除桶和令牌。
 
 ## 运行顺序
 
 ```bash
 # 旧服务器（长任务用nohup）
 bash old_stage_m0.sh "$OLD_V5" "$WHEEL"
-nohup bash old_pack_upload.sh m0_records "$MIG_STAGE/m0_tree" > m0.out 2>&1 &
-nohup bash old_pack_upload.sh immune_authority_zarr "$IMMUNE_ZARR" > m1.out 2>&1 &
+# 一次只运行一个上传进程：上限检查按整个桶计，并行上传可能短暂超出上限
+nohup bash -c 'bash old_pack_upload.sh m0_records "$MIG_STAGE/m0_tree" && bash old_pack_upload.sh immune_authority_zarr "$IMMUNE_ZARR"' > upload.out 2>&1 &
 
 # WEHI，在运行目录提交
 export MIG_CODE_ROOT=<仓库>/scripts/wehi_migration
-sbatch --export=ALL,MIG_ITEM=m0_records,MIG_DEST="$DEST",MIG_PURGE_REMOTE=1 "$MIG_CODE_ROOT/jobs/fetch.sbatch"
+sbatch --export=ALL,MIG_ITEM=m0_records,MIG_DEST="$DEST" "$MIG_CODE_ROOT/jobs/fetch.sbatch"
 ```
 
 M2先按依赖闭包生成目录清单，再作为一个或多个项目传输；M3的两个原生存储各为一项。
@@ -55,4 +63,4 @@ M2先按依赖闭包生成目录清单，再作为一个或多个项目传输；
 
 ## 已验证
 
-在WEHI上用rclone本地后端代替R2做了端到端测试：301个文件（含带空格的路径）、91个分块，上传、下载、解包以及逐文件SHA全部一致；人为改坏一个分块后，脚本在解包前报错退出，目标目录保持为空。真实R2吞吐要等桶建好后实测。
+在WEHI上用rclone本地后端代替R2做了端到端测试：301个文件（含带空格的路径）、91个分块，上传、下载、解包以及逐文件SHA全部一致；人为改坏一个分块后，脚本在解包前报错退出，目标目录保持为空。同时运行两端，上限设为3 MB、分块1 MB时，桶的峰值约2.1 MB；人为改坏桶内一个分块后，WEHI删掉它，旧服务器自动重传，最终逐文件一致。真实R2吞吐要等桶建好后实测。

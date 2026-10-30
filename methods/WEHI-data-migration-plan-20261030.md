@@ -124,6 +124,7 @@
 
 - 迁移范围确定为M0–M3全部（约140 GB）；“不迁移”清单保持不变。
 - 中转采用Cloudflare R2。旧服务器16路并行上传实测合计约1.1 MB/s（含连接建立），按此估算全部约36小时。M0也走R2，不走SSH。
+- 总预算不超过5美元：整个桶有9 GB硬上限（低于R2免费存储额度），一边核对一边删除，预计费用约0美元，详见[工具说明](../scripts/wehi_migration/README.md)。
 - M0实测上限：各运行的config/provenance/scripts/tests/manifests共约2.3 GB，outputs顶层文本4,976个文件、约1.6 GB；单文件超过20 MB的不收集，所以实际不超过约3.9 GB，高于原先估计的300 MB，仍走R2。
 - 工具见[scripts/wehi_migration](../scripts/wehi_migration/README.md)。在WEHI上用本地后端做了端到端测试，并测试了改坏分块的情况；真实R2吞吐待桶建好后实测。
 
