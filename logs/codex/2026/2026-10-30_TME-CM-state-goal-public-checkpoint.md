@@ -164,3 +164,21 @@ concurrent fits. It neither overwrites attempts nor automatically retries a
 failed scientific fit. Local orchestration execution required Linux process
 identity; the actual fixture therefore ran on the server. State scoring and
 new state modules remain subsequent scientific gates.
+
+## Continuation supervisor-bound correction
+
+Exact child-process observation found that the extension queue and four
+comparison launchers requested a wall budget above the supervisor's maximum.
+Their supervisors stopped before launching scientific children. The initial
+real fits and first comparison were unaffected. The earlier deployment receipt
+therefore did not establish that those continuation children were running.
+
+The failed directories are retained. New immutable attempts use the permitted
+outer budget with a shorter internal wait/queue limit, and launcher generation
+now checks the supervisor limit locally. Child-process identity is checked
+separately from successful submission. No initial scientific fit is restarted.
+
+At 14:34 UTC, read-only inspection verified the exact live child-process
+identities of the replacement queue and all four replacement comparisons.
+They are waiting for their scientific dependencies. Four initial rank surveys
+are now written; all initial real R processes remain live.
