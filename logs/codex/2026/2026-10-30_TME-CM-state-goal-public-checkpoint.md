@@ -1,11 +1,12 @@
 # Automatic-annotation / CM / state goal: technical checkpoint
 
-Current checkpoint: official per-cell prediction and its full-axis numerical
-audit are accepted. A predeclared coverage completion, exact reference-label
-interpretation, common-compartment scope and five pre-CM membership views
-also completed. Comparable input preparation and independent all-cell recount
-have passed. Human-data CM fitting is submitted; cross-scheme module comparison
-and new state modules are subsequent gates.
+Current checkpoint: official annotation and exact semantics, comparable inputs,
+first-panel fits, common-rank fits and both internal membership comparisons are
+accepted. Full native-gene programme scoring, all-source numerical audit and
+development-only readout diagnostics are accepted. Measurement candidates are
+prepared; source/block robustness, final state-feature validation, state-pattern
+and continuous module learning, and information-increment comparisons remain
+open. The goal is active.
 The paragraphs below retain the earlier execution timeline.
 
 2026-10-30. The user requested a plan followed by an active implementation goal.
@@ -237,3 +238,15 @@ It records depth associations and programme gene overlap separately. These are
 measurement diagnostics and do not complete functional validation, state-pattern
 learning, state modules or their information-increment assessment. Remaining
 annotation-panel fits and source/block stability work continue separately.
+
+## Informative-split candidate gate
+
+Development readouts completed successfully without opening held-out score
+arrays. A separate candidate gate checks the number of finite repeated splits
+and the number of materials with observed positive programme scores, alongside
+the earlier measurement criteria. This prevents one lucky estimable split or
+one positive material from being called a reliable state feature. Four targeted
+counterexamples passed; candidate processing then completed on the accepted
+readouts. Source-limited candidates remain recorded alongside multisource ones.
+These are expression-readout candidates, not new cell types or validated
+functional states. No state feature has been selected from a clinical effect.
