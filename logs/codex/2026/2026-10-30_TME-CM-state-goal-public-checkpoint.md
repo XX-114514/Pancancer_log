@@ -55,3 +55,16 @@ splits. Prepared inputs require a separate acceptance step.
 Group-mean and individual-cell reference predictions are being compared before
 freezing annotation views. Full individual-cell execution continues. No real
 TME CM comparison or new state-module completion is claimed at this node.
+
+## 2026-10-30 12:40 UTC /20:40 UTC+8 state-resource preparation
+
+Fixed programme coverage was registered on the accepted native gene axes,
+separately from the common-gene universe. No expression matrix or new state
+score was read or computed for this registration. Programme applicability,
+original-citation review and biological/module admission remain separate.
+
+The first attempt incorrectly required the later combined rank-audit terminal
+for a previously accepted native-statistics phase. Its exact phase checksum
+and successful matched-profile consumer were verified before a new immutable
+attempt. The native coverage attempt then completed successfully; no upstream
+expression processing or live classification was restarted.
