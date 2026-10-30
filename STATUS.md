@@ -1,3 +1,9 @@
+## 2026-10-30 WEHI数据服务器接入：空间来源下载完成，进入新平台入库
+
+02:33 UTC，WEHI上的仓库检出、两套环境和普通push流程已建立（[工作流](docs/WEHI_SERVER_WORKFLOW.md)）。Xenium共31单元入库，其中新增S18 HNSCC 10位患者，7位有两次run。
+CosMx、MERFISH、Stereo-XCR-seq、Visium和三个单细胞参考共415个文件下载完成，只读检查完成；IMC的Steinbock归档仍在下载。S16、S20、S22是同一批TMA，不能作为独立患者。
+冻结免疫图谱和私有登记不在WEHI上。这一步只是数据准备，没有状态或效应分析，主线状态不变。见[数据汇总](inventories/runtime/2026-10-30/wehi_spatial/DATA_SUMMARY.md)、[规划](methods/WEHI-spatial-line-plan-20261030.md)和[run](runs/20261030_WEHI_spatial_ingest_and_download_v1.md)。
+
 ## 2026-10-30 新联合群：来源内marker效应已独立接受，同细胞证据推进
 
 01:21—01:22UTC来源内全部共同基因/数字群的表达与检出差异、来源等权汇总和候选排序生产及独立复算均actual0；正负效应与未观察群缺失案例通过。同细胞多基因模块使用既有冻结政策，实际生产和独立读回后继已启动，完整终态待验收；测量缺失、T链替代及γδ RNA候选分开。正式全细胞Wilcoxon、raw-PCA UMAP和scVI分群继续；本轮不修改最终身份、不发布新CM。完整全细胞档案与八项目标保持。

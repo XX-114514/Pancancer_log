@@ -1,5 +1,9 @@
 # 重要变更记录
 
+## 2026-10-30 WEHI数据服务器与空间来源下载
+
+新增`scripts/wehi_xenium/`和[服务器工作流](docs/WEHI_SERVER_WORKFLOW.md)；Xenium共31单元入库，新增S18 HNSCC；CosMx、MERFISH、Stereo-seq、Visium和单细胞参考下载完成；新增[数据汇总](inventories/runtime/2026-10-30/wehi_spatial/DATA_SUMMARY.md)与[WEHI空间线规划](methods/WEHI-spatial-line-plan-20261030.md)。[run](runs/20261030_WEHI_spatial_ingest_and_download_v1.md)。
+
 ## 2026-10-21 CM02完整网络状态与主空间复算
 
 全原生RNA/参考、原固定网络成员和并集、全部主空间随机流与来源审核结束；原H的纵向平均用途已核，阶段投影和临床增量尚待，原CM/身份保持。[run](runs/20261021_CM02_native_marker_reference_correspondence_v1.md)。
