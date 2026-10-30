@@ -250,3 +250,11 @@ counterexamples passed; candidate processing then completed on the accepted
 readouts. Source-limited candidates remain recorded alongside multisource ones.
 These are expression-readout candidates, not new cell types or validated
 functional states. No state feature has been selected from a clinical effect.
+
+## Bounded state modelling and CM robustness checkpoint
+
+Development multiview state inputs were accepted. Raw, source-centred and within-source depth-residual estimands retain explicit missingness and a paired observation domain. Official MOFA was SHA-pinned in an isolated task vendor; no global dependencies were changed. Synthetic API checks exposed cross-view identifier uniqueness and an unsupported optional sparse-parameter export path; new versions preserve those failures and require scientific acceptance rather than shell exit zero. Real continuous-state and identity-conditioned Leiden stages remain pending validation.
+
+The prespecified common-rank CM robustness stage passed synthetic checks and entered candidate-material block bootstrap, source-equal and leave-one-source refits. Frozen matrix/atlas conditions and uncertified candidate-patient blocks remain explicit. The goal remains active; functional states, communication mechanisms and clinical increment are not yet claimed.
+
+The corrected official MOFA synthetic test has now passed all six checks with a scientific acceptance artifact; Scanpy graph/Leiden/frozen projection passed its three synthetic checks. The bounded real-data jobs wait for the native measurement diagnostic acceptance. These synthetic results validate execution interfaces and counterexamples, not human biological states.

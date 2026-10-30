@@ -126,3 +126,11 @@ T/NK、B/Plasma等共享组成区室不能替代状态评分需要的生物身�
 [SingleR官方聚合注释及其混合群边界](https://bioconductor.org/books/release/SingleRBook/advanced-options.html#cluster-level-annotation)、
 [SingleR诊断](https://bioconductor.org/books/release/SingleRBook/annotation-diagnostics.html)、
 [UCell作者文档](https://github.com/carmonalab/UCell)。
+
+### 状态学习执行补充
+
+连续模型采用作者官方MOFA Python0.7.5，公开wheel按SHA冻结并放在独立任务vendor，不更新全局环境。主输入保留来源/癌种差异；来源中心化和同来源内RNA量、检测基因数及身份细胞数残差作为敏感性。三种估计口径使用同一观测mask，缺失为NaN。主rank10，预设5/15和两个种子对照，不以临床或既有CM效应挑rank。模型待原生基因空间/不重叠基因诊断及合成API验证成功后运行；拟合成功不等于状态功能或独立验证完成。参照[作者Python模板](https://github.com/bioFAM/MOFA2/blob/master/inst/scripts/template_script.py)和[方法FAQ](https://biofam.github.io/MOFA2/faq.html)。
+
+身份内模式路线预定以来源/单位均衡的开发细胞参考，在固定程序向量上标准化、PCA、15邻居和Leiden（分辨率0.3/0.6/1.0、两个种子；0.6为主）。项目预算上限为每单位100、每来源2000、每上下文20000个训练细胞；不按程序方差排名选基因集。测量不全的特征先按开发侧原生基因覆盖处理，无可支持模型的身份保留原身份。固定图上的Leiden分区保存；其余细胞以固定PCA和15近邻距离加权投影，弱邻居一致性另标。模式先编号，不先命名为耗竭、调节或耐药。参照[Scanpy Leiden](https://scanpy.readthedocs.io/en/stable/generated/scanpy.tl.leiden.html)和[sklearn近邻分类器](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)；项目采样与分辨率预算不冒称作者推荐的通用阈值。
+
+CM共同K4稳健性采用100次候选患者/材料块重采样、来源等权和留一来源重新拟合。以冻结输入的minmax参数和nsNMF方法为条件，保存raw W/effective WS的一一匹配、未匹配及固定基KL投影活动。候选块不自动视为独立患者，冻结图谱与注释不重拟合，因此不称端到端外部验证。
