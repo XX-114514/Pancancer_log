@@ -117,3 +117,10 @@ Plan needs-based data migration from the old server to WEHI
 - 读取：`methods/TME-annotation-CM-state-goal-20261030.md`，10-28至10-30的CM02与状态日志，迁移后新增的提交。
 - 旧服务器只读审计：快照后新运行594个（约1.5 GB）；已迁移运行在快照后没有文件被更新；快照前未迁移的运行151个，其中148个小运行约9.6 GB；对已迁移和新运行的JSON做引用解析，发现直接引用临床扩展运行中的9个来源对象（约20 GB）和临床侧表，以及R/Python环境、CellTypist模型、ExperimentHub缓存。
 - 结论写入规划第九节（M4）。尚未传输。
+
+## 续：启动M4，并整理本机文件清单（2026-10-30 23:05 UTC）
+
+- 新增`old_stage_list.sh`（按清单用硬链接或复制建立暂存目录，可用于以后的增量同步）和`old_export_env.sh`（conda/pip/R精确清单，并复制非CRAN/Bioconductor的R包）。用合成目录测试了收集清单脚本。
+- 旧服务器按顺序运行：m4a_inputs（9个来源对象、临床扩展的非原始部分、快照后594个新运行（复制）、CellTypist模型、ExperimentHub缓存；99,132个文件，24 GB）→ m4b_runs（148个运行，硬链接）→ m4c_env（scrna_r、scanpy、singler_bioc、scvi）。启动时没有进程在使用这594个新运行。
+- WEHI：三个datamover作业，目标目录在scratch的`m4/`下。
+- 本机文件：根据仓库日志整理出只在用户本机的资料类别（CM02私有交付与临床来源桥、用户上传的作者资料原件、待补的Table S1、黑色素瘤IMC公开分段下载、审阅图册/工作簿/研究稿）。本会话无法访问用户本机，清单需用户核对。
