@@ -1,4 +1,4 @@
-"""Exact default-resource and reference-parent scope intersection.
+"""Exact resource-parent scope with legacy-default intersection sensitivity.
 
 This is an applicability rule for diagnostic expression-program scores, not
 an identity classifier or proof of functional cell state.
@@ -41,10 +41,17 @@ def resource_parent_scope(parent,context):
     if parent=='M':return False
     raise ValueError('Unreviewed Cytopus resource parent: '+str(parent))
 
-def applicable(default,metadata,context):
+def applicable(default,metadata,context,mode='legacy_default_intersection'):
     if not metadata.get('exact_Cytopus_gene_match',False):return False,'resource_exact_match_pending'
     parents=metadata['reference_parents']
     if not parents:return False,'resource_parent_unresolved'
     if parents==['M']:return False,'abbreviated_resource_parent_definition_pending'
-    ok=default_scope(default,context) and any(resource_parent_scope(p,context) for p in parents)
-    return ok,('default_and_resource_parent_intersection' if ok else 'outside_reviewed_reference_scope')
+    original=default_scope(default,context)
+    biological=any(resource_parent_scope(p,context) for p in parents)
+    if mode=='legacy_default_intersection':
+        ok=original and biological
+        return ok,('default_and_resource_parent_intersection' if ok else 'outside_reviewed_reference_scope')
+    if mode=='resource_hierarchy_primary':
+        return biological,('resource_parent_within_legacy_default' if biological and original else
+            'explicit_resource_parent_beyond_legacy_default' if biological else 'outside_reviewed_reference_scope')
+    raise ValueError('Unreviewed programme applicability mode: '+str(mode))

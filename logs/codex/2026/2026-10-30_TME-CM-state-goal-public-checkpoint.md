@@ -208,3 +208,16 @@ Existing source learning roles were checked before state-feature or pattern
 selection. Fixed quantification can cover both development and held-out rows;
 state learning will inherit the frozen source roles. Older lineage-specific
 eligibility and patient counts are not propagated into the new TME analysis.
+
+## State scope clarification before feature selection
+
+The first accepted scope view used the intersection of the original default
+application group and the explicit knowledge-base parent. Further documentation
+review distinguished the original application grouping from programme-specific
+biological scope. The primary view now follows explicit resource parents; the
+earlier intersection remains a conservative sensitivity. Thus an explicitly
+T/NK resource programme can cover supported T and NK contexts, whereas a
+CD8-specific resource cannot be broadened into NK. Unresolved or unmatched
+resource parents remain held. Eight counterexamples cover both policies.
+No numerical score, upstream identity or completed CM fit is changed, and no
+state-feature effect or clinical outcome was used to choose this scope policy.

@@ -29,5 +29,19 @@ class ScopeCases(unittest.TestCase):
             self.assertFalse(applicable('MDC',dict(reference_parents=parents,exact_Cytopus_gene_match=exact),c)[0])
     def test_all_cell_process_can_cover_compartment_only_context(self):
         self.assertTrue(applicable('global',dict(reference_parents=['all-cells'],exact_Cytopus_gene_match=True),dict(compartment='Mesenchymal_stromal'))[0])
+    def test_primary_uses_explicit_resource_TNK_scope(self):
+        md=dict(exact_Cytopus_gene_match=True,reference_parents=['TNK'])
+        nk=dict(compartment='T_NK',reference_parent='NK',canonical_identity='NK_reference_related')
+        self.assertTrue(applicable('CD8_T',md,nk,mode='resource_hierarchy_primary')[0])
+        self.assertFalse(applicable('CD8_T',md,nk,mode='legacy_default_intersection')[0])
+        md['reference_parents']=['CD8-T']
+        self.assertFalse(applicable('CD8_T',md,nk,mode='resource_hierarchy_primary')[0])
+    def test_primary_B_resource_scope_excludes_plasma(self):
+        md=dict(exact_Cytopus_gene_match=True,reference_parents=['B'])
+        b=dict(compartment='B_Plasma',reference_parent='B',canonical_identity='Naive_B_reference_related')
+        self.assertTrue(applicable('B_memory',md,b,mode='resource_hierarchy_primary')[0])
+        self.assertFalse(applicable('B_memory',md,b,mode='legacy_default_intersection')[0])
+        b.update(reference_parent='Plasma',canonical_identity='Plasma_reference_related')
+        self.assertFalse(applicable('B_memory',md,b,mode='resource_hierarchy_primary')[0])
 
 if __name__=='__main__':unittest.main()

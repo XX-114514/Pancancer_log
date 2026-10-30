@@ -1,7 +1,8 @@
 """Bind reference identity contexts to exact resource-program applicability.
 
-This sidecar never rewrites cell identities or raw programme scores. Programme
-scope is intersected with the original default scope and measured-gene mask.
+This sidecar never rewrites cell identities or raw programme scores. Primary
+scope follows explicit resource parents; legacy-use intersection is retained.
+Every use also requires its separate measured-gene mask.
 """
 import argparse,datetime,hashlib,json,sys
 from pathlib import Path
@@ -51,28 +52,33 @@ def main(R):
     assert sha(covp)==load(C/'provenance/terminal_v1.json')['manifest_SHA256']
     assert cfg['catalog']['SHA256']==cov['catalog_SHA256']==curation['scored_catalog_SHA256']
     assert cfg['curation']['SHA256']==cov['curation_SHA256']
-    programs=catalog['programs'];matrix=np.zeros((len(contexts),len(programs)),bool);ledger=[]
+    mode=cfg.get('scope_policy_mode','legacy_default_intersection')
+    programs=catalog['programs'];matrix=np.zeros((len(contexts),len(programs)),bool);legacy=np.zeros_like(matrix);ledger=[]
     for j,program in enumerate(programs):
         meta=cmap[program['program_id']];reasons=[]
         for i,c in enumerate(contexts):
-            ok,reason=applicable(program['reference_cell_type'],meta,c);matrix[i,j]=ok;reasons.append(reason)
+            ok,reason=applicable(program['reference_cell_type'],meta,c,mode=mode);matrix[i,j]=ok;reasons.append(reason)
+            legacy[i,j]=applicable(program['reference_cell_type'],meta,c,mode='legacy_default_intersection')[0]
         ledger.append(dict(program_id=program['program_id'],default_resource_scope=program['reference_cell_type'],
             Cytopus_parents=meta['reference_parents'],exact_resource_gene_match=meta.get('exact_Cytopus_gene_match',False),
-            n_eligible_contexts=int(matrix[:,j].sum()),n_eligible_cells_before_gene_measurement=int(counts[matrix[:,j]].sum()),
+            n_eligible_contexts=int(matrix[:,j].sum()),n_legacy_eligible_contexts=int(legacy[:,j].sum()),n_eligible_cells_before_gene_measurement=int(counts[matrix[:,j]].sum()),
             scope_reasons=sorted(set(reasons)),original_article_citation_status=meta['citation_status'],
             function_validated=False,module_admitted=False))
     mp=R/'outputs/private_program_by_reference_context_applicability_v1.npy';np.save(mp,matrix)
+    lp=R/'outputs/private_legacy_default_program_applicability_v1.npy';np.save(lp,legacy)
+    assert not np.any(legacy&~matrix)
     # Check every realized context after readback. Outside scope is a masked
     # observation even when the package produced a large raw numerical score.
     read=np.load(mp)
     for i,c in enumerate(contexts):
         for j,program in enumerate(programs):
-            assert bool(read[i,j])==applicable(program['reference_cell_type'],cmap[program['program_id']],c)[0]
+            assert bool(read[i,j])==applicable(program['reference_cell_type'],cmap[program['program_id']],c,mode=mode)[0]
     np.testing.assert_array_equal(np.load(cp)[selected],inverse)
     out=R/'outputs/accepted_state_program_applicability_view_v1.json'
     save(out,dict(schema='accepted_TME_state_program_reference_applicability_v1',
         accepted_purpose='diagnostic_expression_program_scope_before_readout_and_module_admission',
         n_fit=len(p),n_assessed=int(selected.sum()),n_contexts=len(contexts),n_programs=len(programs),
+        scope_policy_mode=mode,legacy_default_sensitivity=binding(lp),
         context_codes=binding(cp),context_program_applicability=binding(mp),contexts=contexts,programs=ledger,
         catalog=cfg['catalog'],curation=cfg['curation'],source_gene_coverage_manifest=binding(covp),
         scope_acceptance=binding(sp),reference_semantics_acceptance=scope['reference_semantics_acceptance'],
