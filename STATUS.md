@@ -4,6 +4,12 @@
 CosMx、MERFISH、Stereo-XCR-seq、Visium和三个单细胞参考共415个文件下载完成，只读检查完成；IMC的Steinbock归档仍在下载。S16、S20、S22是同一批TMA，不能作为独立患者。
 冻结免疫图谱和私有登记不在WEHI上。这一步只是数据准备，没有状态或效应分析，主线状态不变。见[数据汇总](inventories/runtime/2026-10-30/wehi_spatial/DATA_SUMMARY.md)、[规划](methods/WEHI-spatial-line-plan-20261030.md)和[run](runs/20261030_WEHI_spatial_ingest_and_download_v1.md)。
 
+## 2026-10-30 完整同细胞证据已验收，标准T/NK谱系细化已启动
+
+01:33—01:43UTC完整原生同细胞模块生产与独立CSR/Boolean复算actual0；整父群及完整增殖竞争对照的模型范围桥和原轴/父拟合mask独立审核actual0，原身份与QC保持。01:47UTC标准谱系HVG/PCA/Harmony与独立审核/同图链、GPU scVI及独立模型审核/图链已启动；01:49UTC新生产者来源范围检查点推进，后继按依赖等待。复用原标准代码，显式继承谱系特征排除；不只挑marker阳性细胞，不按临床或CM选择父群。完整档案和其他谱系保留，新的共同细身份/新CM未发布；本分支是B的细化，不冒称A/B/C胜出。
+
+见[技术节点](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_TNK_parent_refinement_20261030_v1.json)、[谱系方法](methods/TME-joint-TNK-parent-refinement-20261030.md)及[执行日志](logs/codex/2026/2026-10-30_TME-UMAP-marker-continuation.md)。以下保留此前节点。
+
 ## 2026-10-30 新联合群：来源内marker效应已独立接受，同细胞证据推进
 
 01:21—01:22UTC来源内全部共同基因/数字群的表达与检出差异、来源等权汇总和候选排序生产及独立复算均actual0；正负效应与未观察群缺失案例通过。同细胞多基因模块使用既有冻结政策，实际生产和独立读回后继已启动，完整终态待验收；测量缺失、T链替代及γδ RNA候选分开。正式全细胞Wilcoxon、raw-PCA UMAP和scVI分群继续；本轮不修改最终身份、不发布新CM。完整全细胞档案与八项目标保持。

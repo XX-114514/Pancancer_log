@@ -13,3 +13,5 @@
 00:52UTC /08:52 UTC+8：正式GPU scVI完整训练、模型保存重载与全latent完成actual exit0；独立全部latent/训练历史/实际暴露及原生CPU推理审核actual exit0。scVI后继建图已开始。全部原生来源统计独立接受，Wilcoxon继续；marker审阅panel完成，不宣称新身份或新CM。
 
 01:21—01:22UTC /09:21—09:22 UTC+8：完整新群来源内表达/检出效应和等权候选排序生产actual0；逐来源全部基因/群效应、汇总与排序独立重放actual0。名称与覆盖加到本机审阅图页，科学表达值不公开。复用冻结全谱系规则的同细胞模块检查与完整独立读回后继已启动，终态尚待；raw-PCA完整UMAP已开始，scVI Leiden和原正式Wilcoxon继续。完整目标未缩减为当前TME分支。
+
+01:33—01:43UTC /09:33—09:43 UTC+8：完整同细胞生产与全原生独立复算actual0；T/NK整父群和完整增殖对照范围桥及原轴/mask独立审核actual0。01:47UTC标准谱系HVG/PCA/Harmony及GPU scVI后继链启动，01:49UTC来源范围检查点推进。复用旧标准实现及冻结适配，不改原QC/身份，不以共享marker竞争自动判doublet。方法、六项代码和技术收据同步，完整目标与旧CM保持。

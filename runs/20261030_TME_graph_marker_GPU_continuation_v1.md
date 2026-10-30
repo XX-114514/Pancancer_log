@@ -13,3 +13,5 @@
 后续终态更新：00:52 UTC正式GPU scVI全部轮次完成，模型与完整latent保存/重载actual exit0；独立全latent/历史/实际训练暴露及原生CPU重载审核同样actual exit0。后继scVI近邻图已开始。全部原生来源统计已独立接受，正式Wilcoxon和统计案例仍待。全量原生marker审阅panel已生成，仅供生物学审阅，不作为最终身份或新DEG。
 
 01:21—01:22UTC后继：来源内本群与其他群表达/检出效应及来源等权候选排序生产、全部独立复算均actual0；未观察群保留缺失，未引入新P值或最终身份。同细胞多基因检查及其完整独立读回已实际启动，政策和输入SHA冻结，全部来源终态尚待。raw-PCA同图UMAP已经开始，scVI Leiden继续，两条图均接续等待验收。见[原生新群审阅方法](../methods/TME-joint-cluster-native-adjudication-20261030.md)。
+
+01:33—01:43UTC：完整同细胞多marker生产和全原生独立复算actual0。T/NK整父群及完整增殖对照的模型范围桥、全部原合格轴和父拟合mask独立审核均actual0，身份/QC不改。01:47UTC新标准谱系HVG/PCA/Harmony、独立读回/图和GPU scVI/独立模型读回/图链真实启动，01:49UTC范围检查点推进；后继等待与科学终态分开。详见[谱系方法](../methods/TME-joint-TNK-parent-refinement-20261030.md)。该分支为B的谱系细化，完整A/B/C与全档案目标未缩减。
