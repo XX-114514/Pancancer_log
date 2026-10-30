@@ -2192,3 +2192,89 @@ Second neighbor qualification completed actual exit0; all primary and added midp
 ### 2026-10-25T21:04:42.909218+00:00 UTC / 2026-10-26T05:04:42.909218+08:00 UTC+8: full projection and own-subset markers proceeding
 
 Full selected-model archive projection original exact process live,5complete-source checkpoints observed. Repaired own-subset native marker v2passed8actual tests and2source checkpoints; first failed immutable-file attempt retained. Completed-source independent marker auditor launched; full audit/final identity not accepted. See [own-marker method](methods/guarded-subset-own-native-markers-20261026.md) and [technical receipt](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_whole_source_projection_query_audit_v1.json). New reviewed generic code/technical logs prepared for ordinary authorized cloud synchronization; previous9-file approval remains fulfilled at da37a09.
+
+
+## 2026-10-30 补录的此前本地状态节点
+
+以下补录保留历史语境，当前状态以页首较晚终态为准。
+
+## 2026-10-29 全谱系候选树读回已修复，优先进行可视化审阅
+
+全谱系来源内分层树及完整原生审核已接受；交付首版误选证据等级测试案例，修正并加入回归测试后，新不可变交付真实通过，完整群级文件SHA已取回。当前保持工作注释v5，新增全谱系候选树视图单列。跨来源共同细身份、组织/患者重复、QC、状态结构和新CM准入仍待。用户要求先充分查看UMAP与marker，因此新的注释规则调整暂缓；复用现有共同表示作布局、保留来源与癌种背景，另查来源局部结构。图件、细胞/表达数组及来源科学统计不公开到GitHub；通用方法与技术日志持续同步。
+
+
+
+## 2026-10-27 未决父群原生证据已接受，共同来源内空间正在拟合
+
+完整上下文与独立全池距离、候选/余群全基因原生统计及独立CSR证明均actual exit0。旧未知空间不含常规T近邻不能当成身份反证；已冻结完整合格T/NK与相关父群全部对照，实际启动新来源内同空间拟合和作用域/模型轴审核，精确进程及来源产物已核。完整终态、原生特征/PCA、生物身份与原八项目标继续，权威工作注释保持。见[方法](methods/TME-unknown-parent-TCR-context-review-20261027.md)。
+
+## 2026-10-27 直接细身份注释工作版已接受
+
+完整当前粗T范围的直接细身份规则及独立原生/参考重放已接受，所有改变群已补齐本群全基因marker证据并直接CSR复核。新工作版、全来源增量/历史数字审核和实际读取交付均actual exit0；本机完整目录及crosswalk原字节核对后更新当前指针。原大类、作者、RNA状态与来源门槛保持，最终共同身份/QC/组织重复和新CM门槛继续。见[方法](methods/TME-direct-T-fine-revision-20261027.md)。
+
+## 2026-10-27 细身份断点与原生上下文已完成完整诊断
+
+全档案细分判定链和定向原生计数上下文均已独立复算actual exit0；完整稀有DC争议子集也已完成测量，独立复核状态见任务日志。参考词表、预测作用域、共享程序与身份分别解释，不据此直接改标签。当前进入子类—父类覆盖和标志角色审阅，随后仍需最终共同身份/QC、群体/marker与跨版本映射、实际组织/重复及新下游。见[任务节点](logs/codex/2026/2026-10-27_source-qualified-identity-context.md)与[方法](methods/native-fine-resolution-gap-review-20261027.md)。
+
+
+
+## 来源资格v3与TME输入准备已完成本地审阅
+
+逐来源补查原始元数据、Methods与补充门控，更新私有来源白名单、精确补件清单和排除数据用途。来源制备与最终共同身份/QC、物理组织/患者/技术重复资格分别冻结。此前因读取失败未观测到元数据预检终态；2026-10-27已核实实际完成并完整回读，见上方新节点。公开细胞键补证传输仍未完成。新CM未启动，历史带日期CM02保持。见[同任务run](runs/20261023_full_context_hierarchical_annotation_v1.md)及[方法](methods/library-level-source-qualification-20261026.md)。
+
+## 来源资格v2白名单已冻结
+
+原待核来源已逐项复核，按实际文库/作者样本矩阵保留未分选组织分支；富集、分选混合、非组织与未知分支分别登记。已生成私有白名单、暂缓清单与稳定单位覆盖层。来源资格与QC/最终身份、技术重复/患者归组及临床资格分别维护，新CM未启动。见[方法](methods/library-level-source-qualification-20261026.md)及[同任务run](runs/20261023_full_context_hierarchical_annotation_v1.md)。
+
+## 文库级来源资格快照已交付
+
+已复用既有来源审阅，完成私有文库/表达单位资格表及来源证据表，明确全TME与T内部用途、缺失桥及待核字段。保存后逐项回读通过；未知分选不默认通过，原档案全部保留，新CM未启动。见[规则](methods/library-level-source-qualification-20261026.md)及[同任务run](runs/20261023_full_context_hierarchical_annotation_v1.md)。这一步不代表全部来源或原八项目标最终验收。
+
+## 全细胞图谱：只读统一交付已通过完整接口验收
+
+本轮生产及独立验收已全部actual exit0，覆盖全部来源、精确群体与模型域。当前进入最终共同身份、未决边界及来源/分析用途审阅；尚未启动新CoVarNet或改变旧带日期CM02。实际交付是复用原计数分区的可读集合，独立counts Zarr未通过现有容量预留门槛。见[同任务记录](runs/20261023_full_context_hierarchical_annotation_v1.md)与[读取说明](methods/joined-native-atlas-delivery-20261026.md)。整个八项目标尚未全部完成。
+
+已批准的17项通用技术更新已公开至`e22a2cb1f5cbfc533e5493c043bd4b8b6d6a558a`，远端main和全部文件内容已独立核对；该发布不改变科学资格。
+
+## 全细胞图谱：全量投影及精确距离修复已完成验收
+
+全量投影独立审计与精确小分支距离修复合并验收均actual exit0；原失败记录保留。正在接通只读统一交付及生物身份/来源用途审阅。技术投影接受不替代最终身份或临床资格。见[同任务记录](runs/20261023_full_context_hierarchical_annotation_v1.md)。
+
+
+
+### 2026-10-25T21:56:31.268004+00:00 UTC / 2026-10-26T05:56:31.268004+08:00 UTC+8: source access gate prevents real full-scale acceptance
+
+User and agent cannot log into source; direct and existing proxy routes failed before SSH command execution, TCPalone is not a scientific status check. Same condition persisted across at least3goal turns; user is contacting administrator. Approved30-file cloud publication e349f553b1e75bebd08d8de9e1e164c21dd01058 is independently verified, so cloud authentication is no longer a blocker. Local release keys/crosswalk5tests and unit-view rules4tests passed, real application pending.
+
+Remaining original job terminals, full numerical/native audits, final taxonomy/own-markers, real IDs/crosswalk/views and storage/downstream acceptance require source access. No qualified local native/output copy exists for substitution. Preserve original handles and all failure/history records; after access returns read the same jobs before deciding whether any new stage is needed. Full eight-part objective is incomplete and unchanged; mark blocked for source access, not complete or user-paused. This newer local chronology is outside the frozen30-file public payload.
+
+
+### 2026-10-26T01:47:36.845325+00:00 UTC / 2026-10-26T09:47:36.845325+08:00 UTC+8: source access restored; original producers completed during observation outage
+
+Human reported restored source; same original reader actually exited0. Full selected archive projection completed2026-10-25T23:39:45.268285UTC, supervisor actual0,65sources/845records; all-neighbor precision acceptance false, preserved pending coordinate-only diagnosis. Own-subset marker producer completed2026-10-25T22:12:33.610362UTC, supervisor actual0,13279exact guarded subsets. Complete-source marker preflight actual0 for its2frozen sources only. Full independent marker and projection auditors requested sequentially; actual launch and terminal acceptance separately verified. No duplicate producer, count-copy or new identity release. Source outage was observation failure, not evidence of scientific job failure. Full objective unchanged and incomplete.
+
+
+### 2026-10-26T01:51:33.834277+00:00 UTC / 2026-10-26T09:51:33.834277+08:00 UTC+8: original whole producers accepted as completed; bounded exact repair actual0
+
+Both independent full auditors launched with exact live supervisor/child observed. Whole own-subset marker audit actual3tests,21sources checked at latest observation; full projection audit actual2tests and original source/model checkpoints progressing. Only1nonempty source-model/basis failed approximate-neighbor precision,9rows. Separate coordinate-only patch computed exact distances with SciPy and blocked sum-of-squares, actual0; original arrays/failed record retained, full base audit still required. New own-marker summary is private, records all13279subsets and flags small groups/unit replication for later review; no group or marker promoted to final identity. Source recovery and scientific completion event times distinguished.
+
+
+### 2026-10-26T02:04:21.309169+00:00 UTC / 2026-10-26T10:04:21.309169+08:00 UTC+8: full own-marker acceptance and actual group catalog production
+
+Full own-marker auditor completed2026-10-26T02:01:29.760377UTC, supervisoractual0 at02:01:31.723416UTC;65sources/13279subsets/265458marker records, full membership/arithmetic checks and bounded native replay accepted. Actual group catalog launched02:02:58.800308UTC after that gate,5actual tests passed; original exact process live. It writes structural stable IDs, one-own-marker display and complete old/new archive crosswalks while candidate identity uncertainty retained. Prepared full independent catalog auditor not executed until produceractual0. Full projection auditor remains same liveprocess,241numeric-model checkpoints at02:03:33UTC; full acceptance pending.
+
+Human approved exact3generic recovery files; nonforced GitHub update and independent ls-remote/fetch/blob comparison verified0849cfd646969c6ed42b02d4fe961f16f48c3516. New catalog code/logs and unowned concurrent homepage work excluded. Latest whole-repo validator reports1error/1priorwarning because concurrent README references unfinished publication assets/doc; no changes made to that work. Owned new source ASTchecks and5core tests passed, scientific catalog full audit remains required.
+
+
+### 2026-10-26T02:10:48.899313+00:00 UTC / 2026-10-26T10:10:48.899313+08:00 UTC+8: all-archive structural group catalog independently accepted
+
+Catalog producer actual0 completed02:05:23.578158UTC,65sources/9439479archive rows/13279exact groups, then full independent all-row/group membership-key, numeric ID, own-marker, evidence-grade and old/new crosswalk audit completed02:08:04.990927UTC, supervisoractual0 at02:08:06.023998UTC. Audit outputSHA35081ed91442ed2b816a4363d8a15ec3124278cc4dbac5092f3d20fb55b63532. No expression matrix copied, authoritative biological identity or clinical eligibility promoted. Joint projection auditor same exact process remains live,317nonempty checkpoints at02:09:07UTC; overlay qualification still gated on its actual0.
+
+Actual65source metadata-field schemas inspected without individual rows or counts. Existing legacy unit metadata carries patient_review_status/analysis_unit/unit_kind; missing a literal patient_id column does not erase prior reviewed units. Native treatment_phase column not uniformly available. Source capture classes include unknown53and whole-tissue candidates6; neither certifies tissue proportions. Eligibility core updated to match actual candidate/nuclear-enrichment enums with4tests passed. Next explicit unit joins, source/clinical accepted-held-unknown flags and shared biological identity review; structural source-local groups do not automatically become cross-source CoVarNetnodes. Private handoff v25saved; approved3-file public snapshot stays0849cfd.
+
+
+### 2026-10-26T02:25:48.884693+00:00 UTC / 2026-10-26T10:25:48.884693+08:00 UTC+8: complete native unit/block axes independently accepted
+
+Unit census producer actual0 completed02:18:29.988903UTC:65sources/9439479archive rows/2346native expression-unit keys. Full independent all-row/unit namespace, inherited review, patient-block and view-status audit completed02:22:16.071120UTC, supervisoractual0 at02:22:17.590541UTC; outputSHAdea2d519bc1cd14012f0ffdb0baa3dc5ec1b8e6b2520cd7f2eca9a88bd371cfb. Preserved121reviewed-identity units forming45source-scoped patient blocks; not a globally independent-patient count. Old1312metadata keys matched. All available native records retained, no expression read/copied.
+
+New formal expression/composition/clinical-view gates are still unknown/rejected because explicit priorQC/assay/finalannotation/sourcealias/material/phase/endpoint review has not been joined; unit-axis audit does not fill them. This is a current review boundary, not a statement that native measurements or prior accepted analyses are unusable. Known selection/product restrictions remain explicit. Full projection auditor originalexact process live,495numeric checkpoints at02:22:31UTC; final overlay qualification gated on actual0. Next unified readonly metadata/counts interface, biological fine/common-type coordination including unresolved boundary review, and source-scientific qualification. Private handoff v26saved; full objective active, no new final annotation or standaloneZarr claimed.
