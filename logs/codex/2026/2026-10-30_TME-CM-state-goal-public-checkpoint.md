@@ -19,6 +19,11 @@ unit/QC registration completed successfully. Official SingleR and matched-input
 CellTypist execution were submitted. Registration preserves unresolved unit
 bridges and does not grant final module-input eligibility.
 
+The remaining inherited author-sample dictionary bridge was reconstructed from
+its original accepted registry and checked against the native row/qualification
+axes. Existing QC history is inherited: absent carried fields do not imply that
+the earlier processing was absent, and this node does not repeat it.
+
 Full automatic annotation, independent-tool results, real CoVarNet discovery
 and new state-module results are pending. The goal remains active.
 
