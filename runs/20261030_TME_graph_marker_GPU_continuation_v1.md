@@ -11,3 +11,5 @@
 均使用既有软件，无新的表达下载或共享环境升级；历史计数、QC、工作标签、未决记录和日期CM保持。全目标仍未完成。详见[任务日志](../logs/codex/2026/2026-10-30_TME-UMAP-marker-continuation.md)、[全量marker方法](../methods/TME-full-cluster-marker-discovery-20261030.md)、[raw对照](../methods/TME-matched-raw-PCA-baseline-20261030.md)及[GPU执行规则](../methods/TME-scVI-GPU-comparison-20261029.md)。
 
 后续终态更新：00:52 UTC正式GPU scVI全部轮次完成，模型与完整latent保存/重载actual exit0；独立全latent/历史/实际训练暴露及原生CPU重载审核同样actual exit0。后继scVI近邻图已开始。全部原生来源统计已独立接受，正式Wilcoxon和统计案例仍待。全量原生marker审阅panel已生成，仅供生物学审阅，不作为最终身份或新DEG。
+
+01:21—01:22UTC后继：来源内本群与其他群表达/检出效应及来源等权候选排序生产、全部独立复算均actual0；未观察群保留缺失，未引入新P值或最终身份。同细胞多基因检查及其完整独立读回已实际启动，政策和输入SHA冻结，全部来源终态尚待。raw-PCA同图UMAP已经开始，scVI Leiden继续，两条图均接续等待验收。见[原生新群审阅方法](../methods/TME-joint-cluster-native-adjudication-20261030.md)。

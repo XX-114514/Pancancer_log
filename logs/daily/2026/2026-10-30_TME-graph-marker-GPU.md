@@ -11,3 +11,5 @@
 完整过程和未完成项见[任务日志](../../../logs/codex/2026/2026-10-30_TME-UMAP-marker-continuation.md)。
 
 00:52UTC /08:52 UTC+8：正式GPU scVI完整训练、模型保存重载与全latent完成actual exit0；独立全部latent/训练历史/实际暴露及原生CPU推理审核actual exit0。scVI后继建图已开始。全部原生来源统计独立接受，Wilcoxon继续；marker审阅panel完成，不宣称新身份或新CM。
+
+01:21—01:22UTC /09:21—09:22 UTC+8：完整新群来源内表达/检出效应和等权候选排序生产actual0；逐来源全部基因/群效应、汇总与排序独立重放actual0。名称与覆盖加到本机审阅图页，科学表达值不公开。复用冻结全谱系规则的同细胞模块检查与完整独立读回后继已启动，终态尚待；raw-PCA完整UMAP已开始，scVI Leiden和原正式Wilcoxon继续。完整目标未缩减为当前TME分支。

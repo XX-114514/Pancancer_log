@@ -1,3 +1,9 @@
+## 2026-10-30 新联合群：来源内marker效应已独立接受，同细胞证据推进
+
+01:21—01:22UTC来源内全部共同基因/数字群的表达与检出差异、来源等权汇总和候选排序生产及独立复算均actual0；正负效应与未观察群缺失案例通过。同细胞多基因模块使用既有冻结政策，实际生产和独立读回后继已启动，完整终态待验收；测量缺失、T链替代及γδ RNA候选分开。正式全细胞Wilcoxon、raw-PCA UMAP和scVI分群继续；本轮不修改最终身份、不发布新CM。完整全细胞档案与八项目标保持。
+
+见[技术状态](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_native_joint_cluster_review_20261030_v1.json)、[审阅方法](methods/TME-joint-cluster-native-adjudication-20261030.md)及[任务日志](logs/codex/2026/2026-10-30_TME-UMAP-marker-continuation.md)。以下保留此前节点。
+
 ## 2026-10-30 当前TME：GPU scVI全轮次完成并独立复核，同图与marker审阅推进
 
 00:52UTC完整GPU scVI训练、保存及重载actual exit0；独立全latent、历史、实际训练/验证暴露及原生CPU重载推理审核actual exit0。CPU仅用于审核推理。Harmony同图UMAP/数字群及完整图读回已完成，静态审阅图与marker panel仅本机。全来源原生新群统计已独立接受，完整细胞标准Wilcoxon、scVI图和同输入raw-PCA对照继续。正式身份、受控生物学比较和新CM未升级，完整全细胞档案目标保持。已取得用户转述的管理员直接GPU许可，未修改共享调度配置；被替代的本账号排队条目已取消并保留记录。
