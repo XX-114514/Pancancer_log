@@ -1,0 +1,22 @@
+# Repository check env (scripts/cloud_check.sh) on the WEHI data server.
+# Pinned to the versions recorded in earlier run receipts; kept separate from pc-spatial (zarr 3 / numpy 2).
+name: pc-repo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ripgrep
+  - numpy=1.26.4
+  - scipy=1.11.4
+  - pandas=2.2.3
+  - zarr=2.18.3
+  - anndata=0.11.4
+  - h5py
+  - scanpy=1.11.5
+  - scikit-learn
+  - pyarrow
+  - psutil
+  - celltypist
+  - pip
+  - pip:
+      - harmonypy==2.1.0

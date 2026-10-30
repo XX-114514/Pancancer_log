@@ -1,0 +1,26 @@
+name: pc-spatial
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - scanpy>=1.11,<1.12
+  - anndata>=0.11,<0.13
+  - pandas>=2.2,<3
+  - numpy
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - h5py
+  - pyarrow
+  - igraph
+  - leidenalg
+  - geopandas
+  - shapely
+  - ipykernel
+  - tabulate
+  - pip
+  - pip:
+      - squidpy
+      - spatialdata
+      - spatialdata-io
