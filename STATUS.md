@@ -1,3 +1,9 @@
+## 2026-10-30 当前TME：GPU scVI全轮次完成并独立复核，同图与marker审阅推进
+
+00:52UTC完整GPU scVI训练、保存及重载actual exit0；独立全latent、历史、实际训练/验证暴露及原生CPU重载推理审核actual exit0。CPU仅用于审核推理。Harmony同图UMAP/数字群及完整图读回已完成，静态审阅图与marker panel仅本机。全来源原生新群统计已独立接受，完整细胞标准Wilcoxon、scVI图和同输入raw-PCA对照继续。正式身份、受控生物学比较和新CM未升级，完整全细胞档案目标保持。已取得用户转述的管理员直接GPU许可，未修改共享调度配置；被替代的本账号排队条目已取消并保留记录。
+
+见[技术收据](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_graph_marker_GPU_20261030_v1.json)、[执行日志](logs/codex/2026/2026-10-30_TME-UMAP-marker-continuation.md)与[run](runs/20261030_TME_graph_marker_GPU_continuation_v1.md)。以下为此前节点快照，当前状态以上述较晚实际终态为准。
+
 ## 2026-10-29 当前TME进度：数字分群完成，全量UMAP运行，GPU scVI排队
 
 06:25—06:26UTC实际检查：标准HVG/PCA/Harmony及独立数值核对均actual exit0，新近邻图和预设Leiden分群完成；同图全量UMAP仍存活运行，尚无最终图件。GPU scVI仍PENDING Priority，未发生真实模型训练；后续同图链等待。数字cluster尚未升级为最终marker身份，生物整合比较和本轮新CM未验收。原数据/标签和历史CM保持，未修改其他队列任务。见[最新技术进度](inventories/analysis/2026-10-23/full_context_annotation_v1/technical_TME_integration_progress_20261029_v1.json)及[同步日志](logs/codex/2026/2026-10-29_TME-progress-sync.md)。
