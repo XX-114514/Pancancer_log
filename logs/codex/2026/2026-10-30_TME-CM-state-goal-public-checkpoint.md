@@ -147,3 +147,20 @@ scope and identical observation axes across methods. The first prespecified
 panel's five real CoVarNet fits were submitted using the frozen author nsNMF
 workflow, rank survey and repeated final fits. Submission is not completion.
 Rank selection does not use clinical outcomes or a desired historical module.
+
+## 2026-10-30 14:25–14:30 UTC /22:25–22:30 UTC+8
+
+All initial real R processes are live with increasing CPU use; their completed
+rank surveys and numerical fit terminals are not yet available. A downstream
+membership-refinement comparison is deployed behind actual fit acceptance.
+It compares effective and raw bases, keeps unmatched factors and checks the
+same-sample activities separately from transported feature loadings.
+
+A finite extension queue and its artificial Linux fixture were prepared.
+The fixture passed concurrency, fixed-rank routing and failure-stop checks.
+The deployed queue waits for initial numeric acceptance, then runs a fixed
+common-rank comparison and the remaining prespecified panels with at most two
+concurrent fits. It neither overwrites attempts nor automatically retries a
+failed scientific fit. Local orchestration execution required Linux process
+identity; the actual fixture therefore ran on the server. State scoring and
+new state modules remain subsequent scientific gates.
