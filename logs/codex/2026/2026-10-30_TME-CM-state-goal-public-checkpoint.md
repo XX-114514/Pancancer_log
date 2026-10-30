@@ -182,3 +182,29 @@ At 14:34 UTC, read-only inspection verified the exact live child-process
 identities of the replacement queue and all four replacement comparisons.
 They are waiting for their scientific dependencies. Four initial rank surveys
 are now written; all initial real R processes remain live.
+
+## 2026-10-30 14:43–15:05 UTC /22:43–23:05 UTC+8
+
+All first-panel real fits and numerical readbacks completed successfully. The
+first membership-refinement comparison also completed. These are internal
+training-domain comparisons; common-rank, remaining panels, source checks and
+resampling remain separate gates. Descriptive figures were generated and are
+retained in the research workspace. Scientific effects and individual records
+are not included in this public checkpoint.
+
+Official native-gene UCell scoring was tested on a fixed small scope. The
+first attempt lacked a packaged adopted-RNA helper; the next used an ambiguous
+sparse-matrix length API. Both failed attempts were retained. After dependency
+and row-count interface corrections, all selected sources passed independent
+scalar-rank and chunk-invariance probes. Full new-domain scoring and an
+independent all-source numerical auditor were then started.
+
+The exact resource/default-parent applicability intersection completed, with
+passing hand-written scope counterexamples. Scores outside scope remain masked,
+even if their raw values are high. Resource attribution, original-citation
+review, functional validation and final module admission remain distinct.
+
+Existing source learning roles were checked before state-feature or pattern
+selection. Fixed quantification can cover both development and held-out rows;
+state learning will inherit the frozen source roles. Older lineage-specific
+eligibility and patient counts are not propagated into the new TME analysis.
