@@ -5,6 +5,8 @@
 - [ ] W1 新平台读取器：CosMx（去掉索引列bug）、MERFISH、Stereo-seq h5ad（先确认X是原始计数）、Visium、IMC；输出与Xenium入库一致。完成标准：逐切片读回，坐标完整，有回归测试。
 - [ ] W2 空间来源角色与患者单位登记：S16/S20/S22的core→患者映射；S18、S23、V01按患者计。
 - [ ] W3 测量mask与三平台同core校准（S16/S20/S22）。
+  - [x] Xenium部分（31切片，阴性对照背景规则）完成：见[run](runs/20261030_WEHI_xenium_section_stats_v1.md)。三平台校准仍待W1与core映射。
+  - [ ] 入库读取作者表时修正科学计数barcode（`1e+05`）；S07 Rep1 unsupervised标签无法映射到cell_id，需作者映射或标为不可用。
 - [ ] W4 临时参考（GSE176021、GSE169246）做粗身份迁移，并用原生marker核对；冻结T子集迁移后替换。
 - [ ] W5 IMC淋巴结输入复核（Steinbock下载完成后）。
 - [ ] 用户决定：S16主分割方案；旧服务器到WEHI的迁移通道；SCP2510下载。

@@ -1,3 +1,8 @@
+## 2026-10-30 WEHI Xenium逐切片统计与测量mask完成
+
+04:30 UTC，31个Xenium切片完成背景校正可测性、标准化、数字分群和Moran's I，以及跨切片测量mask和单位一致性（commit `70f2ba6`，31/31完成）。没有来源对全部冻结列表都可测；IFN列表在C11、S07、S16、S18不可测。
+S18同患者两次run的伪bulk相关中位0.987，不同患者0.833，支持按患者计；S16两种分割0.98–0.99。S07 Rep1作者unsupervised标签无法映射。只是描述，没有状态或效应，主线状态不变。见[run](runs/20261030_WEHI_xenium_section_stats_v1.md)。
+
 ## 2026-10-30 WEHI数据服务器接入：空间来源下载完成，进入新平台入库
 
 02:33 UTC，WEHI上的仓库检出、两套环境和普通push流程已建立（[工作流](docs/WEHI_SERVER_WORKFLOW.md)）。Xenium共31单元入库，其中新增S18 HNSCC 10位患者，7位有两次run。
