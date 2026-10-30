@@ -32,3 +32,26 @@ and new state-module results are pending. The goal remains active.
 This public checkpoint contains general methods and technical status. Private
 unit records, scientific source effects, expression and learned parameters are
 kept in the research workspace.
+
+## 2026-10-30 12:31 UTC /20:31 UTC+8 technical acceptance
+
+Official matched-group reference execution completed. An independent audit
+checked the complete proposal axes and label vocabularies, then replayed full
+source query batches in reversed column order. Raw labels, pruned labels and
+diagnostic deltas agreed. Group-reference execution is distinct from per-cell
+mixture resolution and final module-input eligibility.
+
+The real author nsNMF/API path passed synthetic execution and saved-matrix
+readback, including nonuniform observation weights and empty-network output.
+The compatibility network preserves the author's actual P-adjustment behavior;
+raw Pearson/BH results are separately named sensitivity outputs.
+
+Purpose-specific technical/material views retain earlier explicit review holds
+and an all-fit sensitivity view. The comparable-panel input driver requires
+accepted membership codes, shared assessed cells and the same observations,
+preserves full parent denominators, and rejects partial-material training
+splits. Prepared inputs require a separate acceptance step.
+
+Group-mean and individual-cell reference predictions are being compared before
+freezing annotation views. Full individual-cell execution continues. No real
+TME CM comparison or new state-module completion is claimed at this node.
