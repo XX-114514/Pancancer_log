@@ -134,3 +134,11 @@ T/NK、B/Plasma等共享组成区室不能替代状态评分需要的生物身�
 身份内模式路线预定以来源/单位均衡的开发细胞参考，在固定程序向量上标准化、PCA、15邻居和Leiden（分辨率0.3/0.6/1.0、两个种子；0.6为主）。项目预算上限为每单位100、每来源2000、每上下文20000个训练细胞；不按程序方差排名选基因集。测量不全的特征先按开发侧原生基因覆盖处理，无可支持模型的身份保留原身份。固定图上的Leiden分区保存；其余细胞以固定PCA和15近邻距离加权投影，弱邻居一致性另标。模式先编号，不先命名为耗竭、调节或耐药。参照[Scanpy Leiden](https://scanpy.readthedocs.io/en/stable/generated/scanpy.tl.leiden.html)和[sklearn近邻分类器](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)；项目采样与分辨率预算不冒称作者推荐的通用阈值。
 
 CM共同K4稳健性采用100次候选患者/材料块重采样、来源等权和留一来源重新拟合。以冻结输入的minmax参数和nsNMF方法为条件，保存raw W/effective WS的一一匹配、未匹配及固定基KL投影活动。候选块不自动视为独立患者，冻结图谱与注释不重拟合，因此不称端到端外部验证。
+
+### Common-cell budget and source-context recurrence
+
+The common-rank first panel uses50 prespecified paired draws with20 cells per broad parent and qualification unit. All annotation arms use the exact same cells and retain fallback cells in full denominators. Author minmax is re-estimated in each draw; freezing a positive original minimum could create negative sampled coordinates, so this control does not silently clamp negative values. Identity, rank and node vocabulary stay fixed; sampled constant nodes remain explicit.
+
+Frozen network edges are deduplicated within a scheme across shared modules, seeds and author/raw-BH variants. Source/cancer/material/phase Spearman effects require10 materials and8 candidate blocks, with2000 exact integer block-bootstrap draws and an80% finite-replicate gate. Weighted midranks reproduce explicitly expanded unequal-size blocks and tied zeros. Same recorded cancer/material/phase summaries and broader cross-context source support are separate. Bootstrap intervals are descriptive after selected-edge discovery; they are not relabelled as multiplicity-adjusted confirmation. Source dependence, unknown design and uncertified patient blocks remain recorded.
+
+For state increment, follow the [frozen sender/receiver validation protocol](TME-state-module-increment-validation-20261030.md). Original training float32 matrix layout and thread budget are part of numerical PCA replay; model files and thresholds are retained when correcting an audit operation mismatch.
