@@ -1,0 +1,46 @@
+{
+  "schema": "generic_standard_ABC_native_readback_study_holdout_technical_v1",
+  "observed_UTC": "2026-10-30T06:13:00.817566+00:00",
+  "version": "20261030_v1",
+  "standard_API_tests": {
+    "actual_exit_code": 0,
+    "n_tests": 5,
+    "no_skips": true
+  },
+  "independent_reader_metric_counterexamples": {
+    "actual_exit_code": 0,
+    "n_tests": 3,
+    "no_skips": true
+  },
+  "native_evaluation_full_replay": "ACCEPTED",
+  "first_seed_saved_axis_native_PCA_and_conditional_statistic_replay": "ACCEPTED_OTHER_SEEDS_RUNNING",
+  "frozen_reference_actual_tests": {
+    "actual_exit_code": 0,
+    "n_tests": 2,
+    "no_skips": true
+  },
+  "study_holdout": "SUPERVISED_START_OBSERVED_TRAINING_ONLY_MODELS_RUNNING",
+  "study_holdout_full_query_auditor": "CODE_PREPARED_ACTUAL_START_PENDING",
+  "science_result_or_model_winner_selected": false,
+  "authoritative_labels_counts_QC_and_historical_CM_changed": false,
+  "native_count_disk_copies": false,
+  "public_scope": "generic_code_method_and_technical_status_only",
+  "C_prototype_construction_membership_not_independently_replayed": true,
+  "complete_eight_part_objective_achieved": false,
+  "program_SHA256": {
+    "scripts/standard_annotation_order_primitives_v1.py": "dbcde8798247b2ab15f8b3f80fda5eb17855f93949c0187be3c36fdbd0b2acf4",
+    "scripts/annotation_order_standard_HVG_pilot_v2.py": "e6676d28a7afb340606bf4d8ad4fb80afc6f0bd52ec86443982531c35426b54a",
+    "scripts/standard_annotation_order_readback_v1.py": "ff0b06097fdfe77ed604d7a94e8a3755db3b7a85bf69c565f0628e3d83c7abb8",
+    "scripts/audit_standard_annotation_order_pilot_v2.py": "a66e73640ae1c6cd66951802400ebac4568c82ea0043f3c14d033f5765d203e1",
+    "scripts/load_standard_annotation_pilot_native_v2.py": "998c0cc146b8b9874a7a9f3e01de1f7fce324dac81c4afcc3f8d713efa90fe7d",
+    "scripts/frozen_symphony_reference_standard_v2.py": "09fb226f5977da3283f23423d5a4705886a93257a9000ff0b21cf01d0e607e0c",
+    "scripts/run_standard_annotation_source_holdout_v2.py": "4aebcf0f509534de0b2484018dbc93a8d84ecccf13087be4d3aa3e917f99345b",
+    "scripts/standard_study_holdout_readback_v1.py": "7ceaae795932f3084d1eef7577ad71120b225c0cd875a03f1ce46c16f61e3399",
+    "scripts/audit_standard_annotation_source_holdout_v2.py": "ec8012dac4aec856e1ccd9a6c0e0abd26cd91480882488e4e2ac6eea08de8b90",
+    "scripts/TME_exact_globin_feature_exclusion_v1.py": "b51a8fb61e1288fa5e919a6b090ab24e639cc95cbfea6c949dcfa307f4cbc744",
+    "tests/test_standard_annotation_order_primitives_v1.py": "2091bfcfe5442e8882e3e78351b4d923d3c50f89c78c66fbe4f61860d7a168cb",
+    "tests/test_standard_annotation_order_readback_v1.py": "5cb97a4b05aff851cc4a32371612c546d8749121b361ea71ea1c36f4d1c1c5a6",
+    "tests/test_standard_annotation_reference_v2.py": "e05140163b27cbdbbcdc47278d8fa82c2cb311b68a69d57f646ce13cf2ae16d8",
+    "tests/test_standard_study_holdout_readback_v1.py": "adbd3bb46bc319e98a2f9a6030d46607ff9231512b9ccd5effb8754efde7d817"
+  }
+}
