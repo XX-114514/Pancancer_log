@@ -105,3 +105,7 @@ Plan needs-based data migration from the old server to WEHI
 - 旧服务器上传顺序：M0 → M1 → M3核心 → M3公开 → M2（M2打包前重新做依赖分析，并等引用这些运行的进程结束）。每一项只在前一项上传完成后才开始，同时只有一个上传进程。
 - WEHI：每项一个datamover作业；受用户CPU配额限制，最多同时运行两个，其余排队。
 - 预算：桶硬上限9 GB；按GB-月计费，进行中的分段上传只是短暂占用，预计仍在免费额度内。
+
+## 续：完成状态检查（2026-10-30 22:40 UTC）
+
+5项全部VERIFIED，桶为空，WEHI上的datamover作业全部结束。详见[run](../../../runs/20261030_WEHI_old_server_migration_v1.md)。原定12:18 UTC的检查提醒没有留下仓库记录，本次补写运行记录。
