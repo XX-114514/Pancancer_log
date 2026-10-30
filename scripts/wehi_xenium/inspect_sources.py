@@ -6,12 +6,12 @@ Inspection only: files are read, nothing is converted, filtered or normalised.
 Usage: python -I inspect_sources.py RAW_ROOT FROZEN_PLAN_JSON OUT_DIR
 Writes OUT_DIR/source_sections.tsv, OUT_DIR/source_gene_coverage.tsv and OUT_DIR/SOURCES.md.
 """
+import csv
 import gzip
 import io
-import json
 import re
+import subprocess
 import sys
-import tarfile
 from pathlib import Path
 
 import h5py
@@ -21,12 +21,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from panel_coverage import CD3, gene_lists  # noqa: E402
 
 # Probe/control features that are not genes on each platform.
-CONTROL = re.compile(r"^(Neg|NegPrb|SystemControl|Blank|BLANK|NegControl|Unassigned|fov$|cell_ID$|cell$|Unnamed)")
+CONTROL = re.compile(r"^($|Neg|NegPrb|SystemControl|Blank|BLANK|NegControl|Unassigned|fov$|cell_ID$|cell$|Unnamed)")
 
 
 def csv_header(path):
-    with gzip.open(path, "rt") as fh:
-        return fh.readline().rstrip("\n").split(",")
+    # Exports differ in quoting (GSE299786 mixes quoted and unquoted headers); parse as CSV.
+    with gzip.open(path, "rt", newline="") as fh:
+        return next(csv.reader(fh))
 
 
 def count_lines(path):
@@ -57,7 +58,7 @@ def cosmx(d):
                          n_controls=sum(1 for g in header if CONTROL.match(g)),
                          coordinates="CenterX_global_px" in meta_cols,
                          author_annotation=any(expr.parent.glob("*.RDS*")),
-                         notes="leading unnamed index column" if header and header[0] in ("", "Unnamed: 0") else ""))
+                         notes="leading unnamed index column (export bug; drop before use)" if header[0] in ("", "Unnamed: 0") else ""))
     return rows
 
 
@@ -114,15 +115,28 @@ def tenx_h5_gz(d):
 
 
 def tar_samples(d):
-    """GSE176021-style per-library tar.gz: list members only (no extraction)."""
+    """GSE176021-style per-library tar.gz. Python tarfile rejects these archives (macOS ._ entries),
+    so GNU tar lists members and streams barcodes/features without extracting to disk."""
     rows = []
     for t in sorted(d.rglob("*.tar.gz")):
-        with tarfile.open(t) as tf:
-            names = tf.getnames()
         kind = "vdj" if ".vdj." in t.name else "gex"
-        rows.append(dict(section=t.name.replace(".tar.gz", ""), unit=f"library_{kind}", n_obs=None, genes=[],
-                         n_controls=0, coordinates=False, author_annotation=False,
-                         notes=";".join(sorted({Path(n).name for n in names})[:5])))
+        row = dict(section=t.name.replace(".tar.gz", ""), unit=f"library_{kind}", n_obs=None, genes=[],
+                   n_controls=0, coordinates=False, author_annotation=False, notes="")
+        try:
+            names = [n for n in subprocess.run(["tar", "tzf", str(t)], check=True, capture_output=True,
+                                               text=True).stdout.split() if "/._" not in n and not n.startswith("./._")]
+            if kind == "gex":
+                bc = next(n for n in names if n.endswith("barcodes.tsv.gz"))
+                ft = next(n for n in names if n.endswith("features.tsv.gz"))
+                stream = lambda m: gzip.decompress(subprocess.run(["tar", "xzOf", str(t), m], check=True,
+                                                                  capture_output=True).stdout).decode()
+                row["n_obs"] = len(stream(bc).splitlines())
+                row["genes"] = [l.split("\t")[1] for l in stream(ft).splitlines() if l]
+            else:
+                row["notes"] = ";".join(sorted({Path(n).name for n in names if not n.endswith("/")})[:6])
+        except Exception as e:
+            row["notes"] = f"READ FAILED: {type(e).__name__}: {e}"
+        rows.append(row)
     return rows
 
 
