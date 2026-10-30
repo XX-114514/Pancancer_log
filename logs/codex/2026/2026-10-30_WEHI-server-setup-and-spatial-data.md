@@ -84,3 +84,8 @@ GSE328481计数是否为原始计数；三份同TMA数据的core→患者映射�
 ## 建议的commit message
 
 Record WEHI server setup, spatial downloads, data summary and plan
+
+## 同步收据
+
+2026-10-30 02:36:59 UTC / 10:36:59 UTC+8：普通push `3dcece6..1b6ad9e`到origin main；分别用SSH和HTTPS执行`git ls-remote`，远端main都是`1b6ad9ef6c0c5da28fb598c11acd0138ca160c08`，与本地一致。
+IMC下载完成后，来源检查会通过Slurm依赖自动重跑；结果出来前，IMC在汇总里仍是“下载中”。
