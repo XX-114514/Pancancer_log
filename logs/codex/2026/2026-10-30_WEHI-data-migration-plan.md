@@ -1,0 +1,73 @@
+# 2026-10-30 旧数据服务器到WEHI的按需迁移规划
+
+时间：约06:00–07:30 UTC（17:00–18:30 Australia/Melbourne，14:00–15:30 UTC+8）。
+
+## 用户要求
+
+“我已经可以在这个服务器连接到我[旧数据服务器]了，现在可以根据情况研究如何迁移数据分析。”
+随后：“根据pancaner项目最新的情况规划迁移数据，不要全部迁移，根据需要。”
+
+## 开始前状态
+
+- 仓库HEAD `64f0056`，工作区干净。
+- WEHI已承担空间来源下载与入库；冻结免疫图谱、私有登记和旧运行产物只在旧服务器上（[工作流](../../../docs/WEHI_SERVER_WORKFLOW.md)）。
+- 旧服务器上主线仍在运行：官方Wilcoxon、T/NK谱系Harmony/scVI图链、ABC指标等。
+
+## 计划
+
+测量两台服务器之间的网络通道；按下一阶段工作包追溯实际依赖；给出分层迁移清单、通道、校验与顺序。不传输数据对象。
+
+## 检查过的文件
+
+README、STATUS、AGENTS、`methods/CM-project-next-stage-20261030.md`、`methods/WEHI-spatial-line-plan-20261030.md`、
+`docs/WEHI_SERVER_WORKFLOW.md`、`docs/IMMUNE_ATLAS_V1_HANDOFF.md`、`docs/DATA_POLICY.md`、
+`inventories/analysis/2026-10-23/full_context_annotation_v1/`中10-29至10-30的技术收据。
+旧服务器（只读）：T/NK谱系Harmony运行的`config/spec_v1.json`、joined原生图谱交付的配置、原生档案范围`native_archive_collection_v1.json`及其`frozen_context`。
+
+## 执行（只读）
+
+- SSH吞吐：不同负载大小及6路并行的`head -c | wc -c`计时；SSH上传方向计时。
+- 旧服务器出站：带/不带本地代理的HTTPS下载、单路与4路并行上传到Cloudflare测速端点。
+- 大小：在旧服务器后台对`Project_v5`顶层、`runs/*`、三个原生存储及其组成部分执行`du --apparent-size`，结果写在旧服务器用户缓存目录。
+- WEHI：`quota`、可写项目目录检查。
+
+## 关键发现（已观察）
+
+- SSH单流约4 KB/s，6流合计约30 KB/s；旧服务器HTTPS上传单流约68 KB/s，4流合计约440 KB/s；WEHI公网下载约150 MB/s。旧服务器本地代理无响应。
+- 当前TME主线（joined原生图谱→原生档案范围）最终依赖三个原生存储：核心全基因zarr（约60 GB）、公开预处理合并zarr（约41 GB）、免疫权威zarr（约28 GB）。
+- `runs/`约317 GB，其中临床scRNA扩展170 GB、公开预处理43 GB、免疫图谱29 GB、GSE243013预检25 GB；当前链条的工作层多为MB到百MB级。
+- WEHI home配额约30 GB；scratch会清理；当前账号没有可写的项目目录。
+
+## 修改的文件
+
+- 新增`methods/WEHI-data-migration-plan-20261030.md`：分层迁移规划（M0–M3与不迁移清单）。
+- `docs/WEHI_SERVER_WORKFLOW.md`：通道现状改为“SSH可用但只适合小文件”，链接规划。
+- `STATUS.md`、`logs/daily/2026/2026-10-30_WEHI-spatial-server.md`：追加节点。
+
+## 验证
+
+`git diff --check`；检查新增文本中没有主机名、账号、绝对路径和凭据。
+
+## 失败尝试
+
+- 首次用`rsync`和`cat`整文件测速，在超时内没有完成任何可计量传输；改为小负载计时。
+- 8路并行上传测试超时未返回；改为4路×1 MB。
+- 第一次`du * runs/*`因du去重未列出`runs/*`，改为单独扫描。
+
+## 未验证
+
+- 16路以上并行上传的真实合计速度。
+- M0实际大小（预计小于300 MB）和M2闭包实际大小（预计5–15 GB）。
+- 核心store中哪个层是原生计数，`obsp`是否有当前消费者。
+
+## 未解决的问题
+
+见规划第七节：持久项目空间、中转桶、主线计算是否迁移、`obsp`是否迁移。
+
+## 建议的下一步
+
+立即执行M0（SSH，小）；用户提供持久空间和中转桶后实测16流吞吐，再迁移M1。
+
+## 建议的commit message
+
+Plan needs-based data migration from the old server to WEHI
