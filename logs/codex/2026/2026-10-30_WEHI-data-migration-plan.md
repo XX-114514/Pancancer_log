@@ -109,3 +109,11 @@ Plan needs-based data migration from the old server to WEHI
 ## 续：完成状态检查（2026-10-30 22:40 UTC）
 
 5项全部VERIFIED，桶为空，WEHI上的datamover作业全部结束。详见[run](../../../runs/20261030_WEHI_old_server_migration_v1.md)。原定12:18 UTC的检查提醒没有留下仓库记录，本次补写运行记录。
+
+## 续：按三条在研分析线核对补充迁移（2026-10-31）
+
+用户要求根据三条在研分析（新TME的CM发现与复现性、免疫图谱CM结合患者信息、状态NMF）读取日志和服务器文件，找出仍需迁移的关键文件。
+
+- 读取：`methods/TME-annotation-CM-state-goal-20261030.md`，10-28至10-30的CM02与状态日志，迁移后新增的提交。
+- 旧服务器只读审计：快照后新运行594个（约1.5 GB）；已迁移运行在快照后没有文件被更新；快照前未迁移的运行151个，其中148个小运行约9.6 GB；对已迁移和新运行的JSON做引用解析，发现直接引用临床扩展运行中的9个来源对象（约20 GB）和临床侧表，以及R/Python环境、CellTypist模型、ExperimentHub缓存。
+- 结论写入规划第九节（M4）。尚未传输。
