@@ -221,3 +221,19 @@ CD8-specific resource cannot be broadened into NK. Unresolved or unmatched
 resource parents remain held. Eight counterexamples cover both policies.
 No numerical score, upstream identity or completed CM fit is changed, and no
 state-feature effect or clinical outcome was used to choose this scope policy.
+
+## Full programme computation and development readouts
+
+Full common-domain official native-gene programme scoring completed with an
+actual zero exit. Its independent all-source numerical auditor is running.
+Development-only readout code was prepared behind that audit, with programme
+scope, measurement and frozen source roles required together. Four artificial
+rank/split counterexamples passed; the exact tested mathematical functions are
+bound to the production consumer.
+
+The readout step preserves unit/identity counts, unavailable values and observed
+zero scores; repeated half splits stay inside each material/identity group.
+It records depth associations and programme gene overlap separately. These are
+measurement diagnostics and do not complete functional validation, state-pattern
+learning, state modules or their information-increment assessment. Remaining
+annotation-panel fits and source/block stability work continue separately.
