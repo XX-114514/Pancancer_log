@@ -71,3 +71,15 @@ README、STATUS、AGENTS、`methods/CM-project-next-stage-20261030.md`、`method
 ## 建议的commit message
 
 Plan needs-based data migration from the old server to WEHI
+
+## 续：确定全部迁移，采用Cloudflare R2（约07:30–07:45 UTC）
+
+用户：“确定全部100多GB，考虑cloudflareR2方案”。
+
+- 旧服务器16路×1 MB并行上传到Cloudflare，合计约1.1 MB/s（14 s内16 MB，含连接建立）。两端都能解析并连接R2端点；用假账号ID时TLS被拒，属于预期，真实连通要等有账号后验证。
+- WEHI有`module load rclone`（1.67）；旧服务器有rclone 1.75；旧服务器数据盘剩余约3.7 TB，可作暂存。
+- 私有wheel位于旧服务器某个运行目录（2026-10-23参考运行时检查）；旧仓库检出没有未跟踪的私有登记，私有登记应在运行的outputs中，由M0收集。
+- 新增`scripts/wehi_migration/`：配置、R2 remote设置（密钥不回显、不进命令行）、M0本地收集、打包上传、下载校验、datamover作业。
+- 验证：所有脚本通过`bash -n`；用rclone本地后端做端到端测试（301个文件、91个分块，路径含空格），逐文件SHA一致，`diff -r`一致；改坏一个分块后，在解包前失败退出；M0的include规则在合成目录上排除了npz、子目录和checkpoint。
+- 未验证：真实R2吞吐与费用；M0实际大小（旧服务器后台统计时SSH超时，未读到结果）。
+- 下一步：用户创建桶和只限该桶的令牌，在两端运行`setup_r2_remote.sh`；先传M0和M1，并实测吞吐。
