@@ -20,6 +20,13 @@ SSH直连只有约4–30 KB/s，所以M0也走同一通道。
 | `wehi_verify_relocated.py` | WEHI | 按移动记录在新位置重新核对全部文件的SHA256 |
 | `wehi_build_views.py` | WEHI | 按分析线建立运行索引和符号链接视图（含每个系列的最新版本） |
 | `jobs/fetch.sbatch` | WEHI | 在datamover分区运行下载核对脚本 |
+| `wehi_rebuild_env.sh`、`jobs/rebuild_env.sbatch` | WEHI | 按`envs/specs/<env>`重建旧环境：conda explicit（不求解）→ 补装`name==version`不符的PyPI精确版本（`--no-deps`）→ 复制非CRAN R库 → pip/R差异表 |
+| `wehi_install_R_exact.R`、`jobs/build_R_subset_env.sbatch` | WEHI | conda-forge r-base 4.3.3 + 按旧记录版本从CRAN归档/Bioconductor 3.18装指定包及其依赖闭包（包名用冒号分隔：`sbatch --export`按逗号拆参数） |
+| `wehi_oldpath_sandbox.sh`、`shims/quota` | WEHI | bwrap沙箱：按本地`PATH_MAP.tsv`把旧绝对路径只读绑定到WEHI位置、旧环境路径绑定到重建环境，只有指定输出目录可写；`quota -g <旧组>`改报当前用户在WEHI的真实配额 |
+| `jobs/replay_python_stage.sbatch`、`jobs/replay_covarnet.sbatch` | WEHI | 在新目录中按原配置重放一个已接受阶段，再用`wehi_compare_outputs.py`逐文件与原输出比较 |
+| `wehi_compare_outputs.py` | WEHI | TSV/TSV.GZ逐值、JSON逐键（列出不同的键）、其余按SHA256 |
+
+注意：在一个Slurm作业内部（例如本身作为作业运行的会话）不要用`srun`，它会在当前作业里开step并等待资源；一律用`sbatch`。
 
 两个脚本都可以重跑：已完成的哈希、打包步骤会保留，rclone跳过已传完的分块。有符号链接时打包会停止，先处理。
 

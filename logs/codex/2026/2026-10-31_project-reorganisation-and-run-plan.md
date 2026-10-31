@@ -48,3 +48,15 @@ Add post-migration project overview and next-stage run plan
 ## 推送时发现远端新提交并合并
 
 首次push被拒：远端已有旧服务器推送的`91289b2`（TME CM首轮结构与接口审查报告及计划）。两边文件不重叠，按AGENTS禁止rebase，做普通merge。据该报告修订运行计划：线①首轮阅读已完成，P1改为临床资格、免疫五轴重新测量与CM×状态关系，并注明旧服务器Codex仍在推进该线，切换计算前需对齐。
+
+## P0执行（用户2026-10-31要求：推进P0重建环境等，删除迁移暂存区；私有文件稍后由用户上传）
+
+详细记录见[run](../../../runs/20261031_WEHI_compute_switch_P0_v1.md)。要点：
+
+- 删除旧服务器`migration_stage`（305 GB）前核对8项VERIFIED、318,117个文件新位置一致；硬链接树删除不影响原件；只读目录需先对暂存区目录加`u+w`。R2桶与令牌未删（未在本次授权中）。
+- 增量同步1个新运行，SHA一致。
+- 环境：singler_bioc、scanpy、scvi重建完成且精确版本一致（scanpy补正mpmath/sympy）；完整scrna_r因Anaconda默认源在WEHI不可达未能重建，改用conda-forge r-base同构建+CRAN归档精确版本建CoVarNet子集环境。
+- 仓库检查658项在`pc-repo`有3项不过，其中2项在重建的scanpy参考环境中通过，1项为测试布局问题。
+- 重放中发现迁移缺口：Project_v3 `harmonized_per_gse`（20 GB）及3个原始文件；作为M5经R2补迁（21 GB，VERIFIED，新位置111/111一致），旧服务器暂存随后删除。
+- 新增bwrap旧路径沙箱和quota替代脚本；pyUCell重放与旧服务器逐字节/逐值一致；CellTypist路径等价检查通过；CellTypist跨机器全量重放和CoVarNet重放进行中。
+- 失败与修正：rsync在慢链路断开（改ssh tar）；`srun`在会话作业内卡住（改sbatch）；一次范围过宽的`scancel --name`被安全检查拦下，未执行；`sbatch --export`按逗号拆分包名导致只装了NMF；`micromamba run`导致stringi configure失败；沙箱重复绑定导致df名称变化。

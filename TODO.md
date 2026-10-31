@@ -2,11 +2,13 @@
 
 依据[运行计划](methods/next-stage-run-plan-20261031.md)。下方较早的“当前”条目保留为历史，以本节为准。
 
-- [ ] P0.1 增量同步`20261031_TME_CM_clinical_structure_review_v1`并重建索引。完成标准：SHA一致，索引含该运行。
-- [ ] P0.2 在`${PC_ROOT}/envs/conda/`按清单重建scanpy、scrna_r、singler_bioc、scvi。完成标准：版本逐项比对，差异登记。
-- [ ] P0.3 `ATLAS_SYMPHONY_WHEEL`指向`resources/`中的wheel，`sbatch -c 4`重跑仓库检查。完成标准：620/620。
+- [x] P0.1 增量同步`20261031_TME_CM_clinical_structure_review_v1`并重建索引（SHA一致；见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)）。
+- [ ] P0.2 环境重建：scanpy、singler_bioc、scvi完成且精确版本一致；CoVarNet用`scrna_r_covarnet`子集（conda-forge r-base同构建+CRAN归档精确版本）。完整scrna_r（CellChat、copykat、scATOMIC等）待按同法补齐，Anaconda默认源在WEHI不可达。
+- [x] P0.3 wheel已配置；`pc-repo`中658项有3项不过，其中2项在scanpy参考环境通过，1项为测试布局问题（`test_standard_annotation_reference_v2`按仓库根找`config/`）。
 - [ ] P0.4 WEHI数值等价冒烟（共同K4 CoVarNet拟合、一个来源pyUCell读回、一个来源CellTypist）。完成标准：与旧产物一致；通过前不切换计算。
-- [ ] P0.5 （需用户确认）删除旧服务器`migration_stage`已核对分块（305 GB）、R2桶与令牌。
+- [x] P0.5 旧服务器`migration_stage`已删除（用户10-31确认）。
+- [ ] P0.5b （需用户确认）删除R2桶与令牌。
+- [x] M5补迁Project_v3 `harmonized_per_gse`及3个原始文件（21 GB，VERIFIED，新位置111/111一致）。
 - [ ] P0.6 （用户）申请持久空间；scratch约2026-11-29起面临清理。
 - [x] P1.0 线①首轮结构与接口审查（旧服务器，10-31，见[评审报告](docs/reports/20261031_TME_CM_review/TME_CM_review.md)）。
 - [ ] P1 线①：T/NK父群细化终态核对；GSE305078临床精确桥与外部ICI覆盖审查；旧免疫五轴在新TME重新测量；CM×状态来源内关系（按[临床与免疫状态计划](methods/TME-CM-clinical-and-immune-state-plan-20261031.md)）。

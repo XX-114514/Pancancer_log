@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Sandbox shim: old-server stages ask `quota -g -v -w <group>` (group quota on the old data
+# disk). WEHI scratch is accounted per user, so answer with the caller's real user quota in the
+# same column layout. Other invocations pass through unchanged. Values are never synthesised.
+# Numeric uid because winbind user names do not resolve inside bwrap.
+if [ "${1:-}" = -g ]; then exec /usr/bin/quota -u -v -w "$(id -u)"; fi
+exec /usr/bin/quota "$@"
