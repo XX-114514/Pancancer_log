@@ -14,7 +14,12 @@ SSH直连只有约4–30 KB/s，所以M0也走同一通道。
 | `wehi_fetch_verify.sh` | WEHI | 分块一到就下载并核对SHA256，核对通过即从桶里删除、留下`received/`标记；不一致的分块两边都删，由旧服务器重传 → 解包（不覆盖已有目标）→ 逐文件SHA256与旧服务器清单逐行一致 → `receipt.tsv` → 清空该项 |
 | `old_m2_closure.py` | 旧服务器 | 从种子运行出发，递归解析config、provenance和outputs顶层的JSON中引用到的运行目录 |
 | `old_stage_m2.sh` | 旧服务器 | 重新做依赖分析 → 去掉排除项 → 等引用这些运行的进程结束 → 用硬链接建M2目录（不额外占盘、不碰原件），符号链接只记录不打包 |
-| `jobs/fetch.sbatch` | WEHI | 在datamover分区运行上面的脚本 |
+| `old_stage_list.sh` | 旧服务器 | 按清单（硬链接或复制）建立暂存目录，用于补充迁移和增量同步 |
+| `old_export_env.sh` | 旧服务器 | 导出conda/pip/R精确清单，并复制非CRAN/Bioconductor的R包 |
+| `wehi_organize.py` | WEHI | 把已核对的各项按旧服务器布局移入一个数据树，记录每次移动；默认只演练 |
+| `wehi_verify_relocated.py` | WEHI | 按移动记录在新位置重新核对全部文件的SHA256 |
+| `wehi_build_views.py` | WEHI | 按分析线建立运行索引和符号链接视图（含每个系列的最新版本） |
+| `jobs/fetch.sbatch` | WEHI | 在datamover分区运行下载核对脚本 |
 
 两个脚本都可以重跑：已完成的哈希、打包步骤会保留，rclone跳过已传完的分块。有符号链接时打包会停止，先处理。
 

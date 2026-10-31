@@ -42,3 +42,19 @@
 2. 从运行目录提交作业，并导出`XENIUM_CODE_ROOT`；`--array`必须在提交时显式给出，与样本表行数一致。
 3. 下载按清单校验字节数，每个来源目录生成`SHA256SUMS`。
 4. 样本表重建后，先确认已有行号没有变化，再只提交新增行。
+
+## 迁移数据布局（2026-10-31）
+
+旧服务器数据迁移后按旧布局放在`${PC_ROOT}`（本地配置`~/.config/pancancer/pancancer.local.sh`），运行配置中的旧绝对路径按根目录下的`PATH_MAP.tsv`做前缀替换即可对应。
+
+| 位置 | 内容 |
+|---|---|
+| `Project_v5/` | 运行目录、代码、配置、冻结文件、来源记录 |
+| `Project_v3/annotation_rebuild/` | 核心全基因zarr及两个注释目录 |
+| `resources/` | CellTypist模型、ExperimentHub缓存、私有wheel |
+| `envs/specs/` | 旧服务器环境的精确清单，用于在WEHI重建 |
+| `views/` | 按分析线分组的符号链接，含每个系列的最新版本和关键输入入口 |
+| `index/runs_by_line.tsv` | 运行与分析线对照 |
+| `migration/` | 回执、逐文件SHA、移动记录与复核结果 |
+
+目前位于scratch（不备份，30天未访问会被清理），持久空间待申请；旧服务器原件保留。详见[迁移记录](../runs/20261030_WEHI_old_server_migration_v1.md)。

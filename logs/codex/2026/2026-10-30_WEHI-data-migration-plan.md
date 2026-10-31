@@ -124,3 +124,11 @@ Plan needs-based data migration from the old server to WEHI
 - 旧服务器按顺序运行：m4a_inputs（9个来源对象、临床扩展的非原始部分、快照后594个新运行（复制）、CellTypist模型、ExperimentHub缓存；99,132个文件，24 GB）→ m4b_runs（148个运行，硬链接）→ m4c_env（scrna_r、scanpy、singler_bioc、scvi）。启动时没有进程在使用这594个新运行。
 - WEHI：三个datamover作业，目标目录在scratch的`m4/`下。
 - 本机文件：根据仓库日志整理出只在用户本机的资料类别（CM02私有交付与临床来源桥、用户上传的作者资料原件、待补的Table S1、黑色素瘤IMC公开分段下载、审阅图册/工作簿/研究稿）。本会话无法访问用户本机，清单需用户核对。
+
+## 续：确认传输并整理WEHI文件结构（2026-10-31 01:10 UTC起）
+
+- M4三项全部VERIFIED，桶为空。
+- 新增`wehi_organize.py`（先演练后执行；1,174次同文件系统内重命名，不覆盖已有目标，记录移动）、`wehi_verify_relocated.py`、`wehi_build_views.py`。
+- 复核：318,117个文件全部一致。
+- 按运行名称分到五条线；第一版把一个TME来源集合（名称含immune）分到了免疫线，加例外规则后重建。
+- 数据树根目录写了说明和旧→新路径映射表（含主机路径，不进仓库）；本地配置新增`pancancer.local.sh`。
