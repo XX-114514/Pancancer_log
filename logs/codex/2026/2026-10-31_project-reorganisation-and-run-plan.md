@@ -44,3 +44,7 @@
 ## 建议commit message
 
 Add post-migration project overview and next-stage run plan
+
+## 推送时发现远端新提交并合并
+
+首次push被拒：远端已有旧服务器推送的`91289b2`（TME CM首轮结构与接口审查报告及计划）。两边文件不重叠，按AGENTS禁止rebase，做普通merge。据该报告修订运行计划：线①首轮阅读已完成，P1改为临床资格、免疫五轴重新测量与CM×状态关系，并注明旧服务器Codex仍在推进该线，切换计算前需对齐。
