@@ -24,8 +24,8 @@ set +u; eval "$(micromamba shell hook -s bash)"; micromamba activate "$P"; set -
 export CPATH="$P/include/freetype2:$P/include${CPATH:+:$CPATH}"
 export UDUNITS2_INCLUDE=$P/include UDUNITS2_LIBS=$P/lib
 MV=$(mktemp); echo 'CXXFLAGS += -fpermissive' > "$MV"
-R_MAKEVARS_USER=$MV Rscript -e 'remotes::install_version("ragg", version = "1.2.6", dependencies = FALSE, upgrade = "never")'
-Rscript -e 'remotes::install_version("lme4", version = "1.1-35.5", dependencies = FALSE, upgrade = "never")'
+R_MAKEVARS_USER=$MV Rscript -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); remotes::install_version("ragg", version = "1.2.6", dependencies = FALSE, upgrade = "never")'
+Rscript -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); remotes::install_version("lme4", version = "1.1-35.5", dependencies = FALSE, upgrade = "never")'
 printf 'package\told\twehi\treason\nlme4\t1.1-34\t%s\t1.1-34 does not compile against Matrix 1.6-5 CHOLMOD headers\n' \
   "$(Rscript -e 'cat(as.character(packageVersion("lme4")))')" > "$REP/R_version_deviations.tsv"
 PKGS=$(awk -F'\t' 'NR>1 && $4!="installed_exact" && $4!="already_exact" && $4!="not_in_old_env" && $1!="lme4" {print $1}' "$REP/R_exact_install.tsv" | paste -sd:)
