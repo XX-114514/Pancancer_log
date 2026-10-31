@@ -1,0 +1,156 @@
+{
+  "schema": "public_TME_CM_comparison_evidence_20261031_v1",
+  "statistics_role": "descriptive_structural_review_no_new_patient_endpoint_model",
+  "catalogue_summary": {
+    "n_fits": 25,
+    "n_seed_factor_records": 240,
+    "n_no_network": 41,
+    "n_network_supported": 199,
+    "by_scheme": {
+      "shared_compartment_cluster": {
+        "n_records": 62,
+        "n_network": 42,
+        "n_cross_parent_networks": 36
+      },
+      "CT_reference_phenotype_cluster": {
+        "n_records": 26,
+        "n_network": 26,
+        "n_cross_parent_networks": 24
+      },
+      "CT_identity_cluster": {
+        "n_records": 24,
+        "n_network": 22,
+        "n_cross_parent_networks": 16
+      },
+      "SingleR_HPCA_group_cluster": {
+        "n_records": 104,
+        "n_network": 85,
+        "n_cross_parent_networks": 74
+      },
+      "SingleR_Monaco_immune_group_cluster": {
+        "n_records": 24,
+        "n_network": 24,
+        "n_cross_parent_networks": 24
+      }
+    },
+    "by_panel": {
+      "T_NK_Myeloid": {
+        "n_records": 92,
+        "n_network": 73,
+        "n_cross_parent_networks": 60
+      },
+      "T_NK_Myeloid_Epithelial": {
+        "n_records": 46,
+        "n_network": 36,
+        "n_cross_parent_networks": 34
+      },
+      "T_NK_Myeloid_Stromal": {
+        "n_records": 52,
+        "n_network": 40,
+        "n_cross_parent_networks": 30
+      },
+      "TME_six_compartments": {
+        "n_records": 50,
+        "n_network": 50,
+        "n_cross_parent_networks": 50
+      }
+    }
+  },
+  "n_fit_deduplicated_edges": 288,
+  "numerical_replay_max_error": 1.1102230246251565e-15,
+  "source_overlap": {
+    "immune_atlas_version": "20261014_v1_2670057_cells_9_sources",
+    "new_TME_version": "20261030_v7_common_state_scope_2758214_cells_43_sources",
+    "overlapping_sources": [
+      "GSE256326",
+      "GSE294109",
+      "GSE305078"
+    ],
+    "n_overlapping_sources": 3,
+    "new_TME_common_cells_in_overlapping_sources": 364913,
+    "overlap_does_not_establish_exact_same_cells_or_patient_independence": true,
+    "source_disjoint_old_atlas_sources": [
+      "CXG_5b9b89d2_2e3e_4ad1_8965_666f64540fea",
+      "GSE169246",
+      "GSE176021",
+      "GSE286827",
+      "GSE292046",
+      "GSE316195"
+    ],
+    "new_TME_overlap_counts": [
+      {
+        "source": "GSE256326",
+        "n_common_state": "17333",
+        "n_qualification_units": "9"
+      },
+      {
+        "source": "GSE294109",
+        "n_common_state": "121280",
+        "n_qualification_units": "25"
+      },
+      {
+        "source": "GSE305078",
+        "n_common_state": "226300",
+        "n_qualification_units": "32"
+      }
+    ]
+  },
+  "evidence_SHA256": {
+    "all_CM_review.json": "fc9368c7b11be5846e5dee3467f417fb9c0df3e12acac2c6b37d27461333f79a",
+    "activity_audit_v1.json": "7e05f9d0a8abf8536902dfbafd9009fd9f950a89f1a8e53ca2e5f89a887f6485",
+    "exact_source_edge_audit_v2.json": "e707b39b82af37270639791e7b26129c111a2423b95ec8f2edf5927f443259eb",
+    "immune_five_axis_resource_bridge.json": "2b70e6c57c4308a550aa5ad7b13980da30c346d2bb5889bae9134c186e256d3e",
+    "validation_receipt.json": "66a33fe4ccb7f1af456997171822710b4364cd1cb0ba6d241b922f36a3b0a4d0"
+  },
+  "primary_activity_source_eta2": [
+    {
+      "fit": "20261030_TME_CM_TNK_Mye_Epi_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM01",
+      "eta2_source": 0.5482680726420689
+    },
+    {
+      "fit": "20261030_TME_CM_TNK_Mye_Epi_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM02",
+      "eta2_source": 0.548268072642069
+    },
+    {
+      "fit": "20261030_TME_CM_TNK_Mye_Stroma_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM01",
+      "eta2_source": 0.5400873776077361
+    },
+    {
+      "fit": "20261030_TME_CM_TNK_Mye_Stroma_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM02",
+      "eta2_source": 0.540087377607736
+    },
+    {
+      "fit": "20261030_TME_CM_TME_six_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM01",
+      "eta2_source": 0.6535609474483501
+    },
+    {
+      "fit": "20261030_TME_CM_TME_six_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM02",
+      "eta2_source": 0.6535609474483499
+    },
+    {
+      "fit": "20261030_TME_CM_TNK_Mye_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM01",
+      "eta2_source": 0.2844527454382042
+    },
+    {
+      "fit": "20261030_TME_CM_TNK_Mye_CT_identity_v1",
+      "seed": 20261030,
+      "module": "CM02",
+      "eta2_source": 0.2844527454382042
+    }
+  ],
+  "patient_rows_matrices_weights_gene_resources_published": false
+}
