@@ -1,3 +1,7 @@
+## 2026-10-31 其余计算路径重放：scVI、SingleR、MOFA、Harmony/UMAP
+
+07:40 UTC前后：SingleR、MOFA在WEHI上与旧服务器一致（MOFA最大相对差6.3×10⁻⁸）；HVG/PCA只在AVX-512节点上与旧服务器完全相同（Broadwell节点上排序并列导致30/4000个HVG不同），Harmony嵌入相对差约2.5×10⁻⁵。同图Leiden/UMAP的近邻边集合相同、权重差1.4×10⁻⁶，主分辨率0.5约0.9%细胞换群，UMAP不同；WEHI上可逐位复现，与旧服务器差异的原因未查明。scVI在同型号GPU上逐位可复现，但跨GPU架构（旧V100与WEHI的A30/A100/P100）局部近邻约两成不同，按事先规则不通过。约定：CPU作业加`--constraint=AVX512`；scVI固定GPU型号；旧服务器冻结的scVI、Leiden、UMAP结果为权威版本，WEHI重算的作为新版本。见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)。
+
 ## 2026-10-31 WEHI计算切换门槛（P0）通过
 
 05:00 UTC前后：scanpy、singler_bioc、scvi三套环境按旧清单重建，版本一致；CoVarNet所需R子集改用conda-forge同一r-base构建加CRAN精确版本重建（Anaconda默认源在WEHI不可达，完整scrna_r未重建）。补迁了重放中发现的Project_v3原生h5ad缺口（21 GB，逐文件核对一致）。在旧路径沙箱中按原配置重放pyUCell、CellTypist全量预测（约290万细胞）和共同K4 CoVarNet，输出与旧服务器逐字节或在机器精度内一致，WEHI可以作为这三类计算的位置。其他代码路径（scVI、SingleR、MOFA、Harmony/UMAP）首次使用前仍需各自重放。旧服务器迁移暂存区已删除；数据仍在scratch，持久空间待申请；R2桶与令牌未删。见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)。

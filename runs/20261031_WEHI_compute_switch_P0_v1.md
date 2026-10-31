@@ -74,3 +74,36 @@ M5共113个文件、21 GB，经同一R2通道（单个上传进程，桶上限9G
 在WEHI上，用重建的scanpy环境和CoVarNet子集R环境，经旧路径沙箱运行原配置，三类计算（pyUCell评分、CellTypist全量预测、CoVarNet nsNMF与作者网络）的输出与旧服务器逐字节或在机器精度内一致。P0.4的切换门槛已满足。限制：只覆盖这三类代码路径；scVI（GPU）、SingleR、MOFA、Harmony/UMAP以及依赖完整scrna_r的CellChat、copykat、scATOMIC等未重放；完整scrna_r尚未重建。
 
 比较工具[wehi_compare_outputs.py](../scripts/wehi_migration/wehi_compare_outputs.py)：TSV与TSV.GZ逐值（rtol 1e-9、atol 1e-12，报告最大差；gzip头含时间戳），JSON逐键并列出不同的键，其他文件按SHA；RDS含R会话信息，只报告差异不判定。
+
+## P0.4b 其余代码路径重放（2026-10-31 05:20–06:40 UTC）
+
+用户要求继续验证scVI、SingleR、MOFA、Harmony/UMAP。每类选一个已验收运行，按原配置在沙箱中重放，线程数与原运行相同。重放作业现在同时复制原运行的`tests/`（Harmony脚本运行前要先跑其中的测试，第一次重放因缺少它而失败）。沙箱新增`--gpu`模式（带入宿主`/dev`与`/sys`）；scVI的GPU锁文件在WEHI数据树`runs/`下新建为空文件，并以可写方式绑定。比较工具新增NPY/NPZ、H5/HDF5逐数组比较和JSON数值容差。
+
+| 类别 | 原运行 | 环境与节点 | 结果 |
+|---|---|---|---|
+| SingleR（群级参考注释，HPCA/Monaco） | `20261030_TME_SingleR_matched_group_annotation_v1` | scanpy驱动 + singler_bioc（R），2线程，Ice Lake | **一致**：90个文件中46个完全相同，44个标签/pruned结果相同、分数差≤2.9×10⁻¹⁵ |
+| MOFA（官方mofapy2 0.7.5，18个模型：rank 5/10/15 × 种子 × 估计口径） | `20261030_TME_state_MOFA_development_v3` | scanpy，2线程，Ice Lake | **一致（浮点范围）**：各模型迭代次数相同；去掉每轮耗时`training_stats/time`后，817万个数值最大绝对差2.2×10⁻⁸、最大相对差6.3×10⁻⁸；方差解释比例最大差6.8×10⁻¹³ |
+| HVG/PCA/Harmony（T/NK谱系，seurat_v3批次HVG，4000个） | `20261030_TME_joint_TNK_standard_HVG_Harmony_globinfix_v1` | scanpy，8线程 | Broadwell节点（无AVX-512）：均值、方差完全相同，但4000个HVG中30个不同，348个基因的批次选中数不同。AVX-512节点（Ice Lake）：**HVG、PCA模型和PCA坐标完全相同**；Harmony嵌入逐细胞相对差中位数2.5×10⁻⁵（最大3.3×10⁻⁴），抽样5万细胞的30近邻重合99.99%，迭代次数相同 |
+| 同图Leiden/UMAP（30近邻，分辨率0.5/1.0/2.0，主分辨率0.5） | `20261030_TME_joint_TNK_Harmony_graph_UMAP_globinfix_v1`（输入为原Harmony嵌入） | scanpy，8线程，Ice Lake | **部分一致**：102.8万细胞、5,176万条边的近邻图边集合完全相同，权重最大差1.4×10⁻⁶；Leiden 1.0与2.0标签完全相同；主分辨率0.5两边都是8个群，ARI 0.9805，按一对一对齐后8,815个细胞（0.86%）换群，各群保留原成员≥98.4%；UMAP坐标不同。在Skylake节点（与旧服务器同架构）再跑一次，结果与Ice Lake重放**逐字节相同**（含UMAP与Leiden），与旧服务器的差异不变 |
+| scVI（NB，30维，30轮，172,137细胞） | `20261030_standard_matched_TNK_scVI_GPU_v1`（原GPU：Tesla V100） | scvi，8线程；A30两次、A100、P100各一次 | **按事先规则不通过**（见下） |
+
+HVG差异的原因（已观察+解释）：scanpy seurat_v3批次HVG对每个批次的标准化方差用默认（不稳定）`np.argsort`排名；NumPy 1.25起在AVX-512 CPU上改用另一套排序实现，并列值的先后顺序因此依CPU而定；批次中可测基因少于截取数时，截断点落在并列值上。旧服务器为Xeon Platinum 8168（Skylake，AVX-512）。在AVX-512节点上结果与旧服务器完全相同，与此解释一致；未直接检查每个批次的并列情况。之前P0.4的三个重放都碰巧跑在Ice Lake节点上。
+
+scVI比较规则在看结果前写入[wehi_compare_latent.py](../scripts/wehi_migration/wehi_compare_latent.py)：以同一种GPU上的WEHI副本对作为运行间参照，旧服务器与WEHI每一对的15近邻平均重合不低于副本对减0.05、两两距离Spearman不低于副本对减0.02，才算一致。
+
+| 比较 | 15近邻重合（均值/5%分位） | 5000细胞两两距离Spearman | 最后一轮损失最大相对差 |
+|---|---|---|---|
+| A30副本a ~ 副本b | 1.000 / 1.000 | 1.000 | 0 |
+| WEHI不同GPU之间（A30、A100、P100两两） | 0.778–0.792 / 0.60–0.67 | 0.9957–0.9963 | 0.05–0.34% |
+| 旧服务器V100 ~ WEHI A30 / A100 / P100 | 0.786 / 0.824 / 0.766（5%分位0.60–0.67） | 0.9959 / 0.9974 / 0.9950 | 0.19–0.49% |
+
+同一种GPU上scVI训练逐位可复现（A30两次完全相同），因此参照差异为0，旧服务器与WEHI的比较不满足规则。旧服务器与WEHI之间的差异，与WEHI内部换一种GPU产生的差异处在同一范围，说明差异来自GPU架构而非迁移；全局结构（距离相关≥0.995、损失差<0.5%）保持，局部近邻约两成不同。WEHI没有V100，无法复现原V100结果。
+
+### 结论与使用约定
+
+- SingleR、MOFA、HVG/PCA（AVX-512节点）在WEHI上与旧服务器一致；Harmony在浮点范围内一致。
+- **CPU计算一律加`--constraint=AVX512`**（WEHI regular分区的Skylake与Ice Lake节点），避免Broadwell节点上排序并列导致的HVG差异。
+- **scVI**：旧服务器V100上的已验收结果是唯一权威版本，不在WEHI重训后替换；在WEHI新训练scVI时固定GPU型号（如A30），并作为新版本登记。
+- **Leiden/UMAP**：已冻结的旧标签和坐标是权威版本；在WEHI重新构图得到的标签作为新版本，主分辨率0.5约有0.9%边界细胞变化。
+
+Leiden/UMAP差异的位置（已观察）：近邻距离矩阵与旧服务器完全相同，差异出现在由距离计算连接权重的一步（umap `fuzzy_simplicial_set`，numba编译执行），权重最大差1.4×10⁻⁶，再传到Leiden与UMAP。WEHI上两种CPU架构的重放彼此逐字节相同，记录的参数（30近邻、pynndescent、种子、euclidean）也与原运行一致，因此不是CPU微架构所致。原因未查明（可能与旧服务器运行时的线程设置或numba编译缓存有关，现有记录无法验证）。WEHI上这一步是确定性的，之后在WEHI上的构图可以完全复现。

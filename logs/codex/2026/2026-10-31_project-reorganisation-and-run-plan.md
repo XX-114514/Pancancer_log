@@ -61,3 +61,12 @@ Add post-migration project overview and next-stage run plan
 - 新增bwrap旧路径沙箱和quota替代脚本；pyUCell重放与旧服务器逐字节/逐值一致；CellTypist路径等价检查通过；CellTypist跨机器全量重放和CoVarNet重放进行中。
 - 失败与修正：rsync在慢链路断开（改ssh tar）；`srun`在会话作业内卡住（改sbatch）；一次范围过宽的`scancel --name`被安全检查拦下，未执行；`sbatch --export`按逗号拆分包名导致只装了NMF；`micromamba run`导致stringi configure失败；沙箱重复绑定导致df名称变化。
 - P0.4完成：CellTypist v4全量重放64/64文件相同；CoVarNet共同K4在`scrna_r_covarnet2`（r-base h5074ccb_16、ICU 75.1、52个R包精确版本）中重放，表格完全相同或差≤1.1e-14，RDS内模型与网络一致。第一个子集环境因补装开发库时求解器更换r-base构建和ICU而作废。
+
+## P0.4b：scVI、SingleR、MOFA、Harmony/UMAP重放（用户要求“先验证scVI、SingleR、MOFA、Harmony/UMAP等”）
+
+- SingleR、MOFA一致（MOFA最大相对差6.3e-8）。
+- HVG：Broadwell节点上30/4000个HVG不同；AVX-512节点上HVG/PCA完全相同。解释为NumPy在AVX-512上的不稳定排序对并列值的处理不同。Harmony嵌入相对差中位2.5e-5。
+- Leiden/UMAP：边集合相同、权重差1.4e-6；Leiden 1.0/2.0相同，主分辨率0.5 ARI 0.98（0.86%换群）；UMAP不同。Skylake重放用于判断是否为CPU微架构所致。
+- scVI：同型号GPU逐位可复现；V100与WEHI各GPU之间、以及WEHI GPU型号之间15近邻重合约0.77–0.82。按事先写入脚本的规则不通过；差异来自GPU架构。
+- 失败与修正：重放未复制`tests/`导致Harmony脚本自检失败；两个scVI副本共用非阻塞锁，改为串行依赖；MOFA的hdf5/npz最初只按字节比较，比较工具已扩展。
+- Skylake重放与Ice Lake重放逐字节相同，Leiden/UMAP与旧服务器的差异不是CPU架构所致，原因未查明。

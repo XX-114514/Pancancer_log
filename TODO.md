@@ -6,7 +6,9 @@
 - [ ] P0.2 环境重建：scanpy、singler_bioc、scvi完成且精确版本一致；CoVarNet用`scrna_r_covarnet2`子集（conda-forge r-base同构建+CRAN归档精确版本）。完整scrna_r（CellChat、copykat、scATOMIC等）待按同法补齐，Anaconda默认源在WEHI不可达。
 - [x] P0.3 wheel已配置；`pc-repo`中658项有3项不过，其中2项在scanpy参考环境通过，1项为测试布局问题（`test_standard_annotation_reference_v2`按仓库根找`config/`）。
 - [x] P0.4 WEHI数值等价重放：pyUCell、CellTypist全量v4（约290万细胞）、共同K4 CoVarNet均与旧服务器一致（见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)）。
-- [ ] P0.4b 其余代码路径（scVI GPU、SingleR、MOFA、Harmony/UMAP）按需在首次使用前各做一次重放；完整scrna_r按“conda-forge r-base同构建+CRAN精确版本”补齐。
+- [x] P0.4b 其余代码路径重放（见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)）：SingleR、MOFA一致；HVG/PCA在AVX-512节点一致、Harmony浮点范围一致；Leiden/UMAP边集合一致、主分辨率0.5约0.9%细胞换群（WEHI上可逐位复现，与旧服务器差异原因未查明）；scVI跨GPU架构不可逐位复现（按事先规则不通过），同型号GPU可复现。
+- [ ] 约定执行：CPU作业加`--constraint=AVX512`；scVI固定GPU型号；冻结的旧Leiden/UMAP与scVI结果为权威版本。
+- [ ] 完整scrna_r按“conda-forge r-base同构建+CRAN精确版本”补齐（CellChat、copykat、scATOMIC等）。
 - [x] P0.5 旧服务器`migration_stage`已删除（用户10-31确认）。
 - [ ] P0.5b （需用户确认）删除R2桶与令牌。
 - [x] M5补迁Project_v3 `harmonized_per_gse`及3个原始文件（21 GB，VERIFIED，新位置111/111一致）。
