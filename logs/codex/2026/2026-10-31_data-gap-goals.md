@@ -51,3 +51,13 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 - 证据：GEO系列声明3个来源、GSM字段6个来源、样本名标签（GSE182109的ndGBM/rGBM/LGG）、论文全文（PMC，经E-utilities下载到WEHI，只抽取治疗相关句子）。证据表[treatment_evidence_v1.tsv](../../../inventories/data_gaps/treatment_evidence_v1.tsv)。
 - 结果（[按来源汇总](../../../inventories/data_gaps/gap1_treatment_resolution_by_source_v1.tsv)）：466个待核实单位中206个有了证据。其中未治疗141个；有既往治疗或其他情况43个（GSE294109的19个是ICB/TKI治疗后切除，GSE182109的18个复发GBM，GSE184362的5个是复发前已手术或碘治疗）；GSE182109的4个LGG论文未说明。剩余260个单位分布在17个来源。其中GSE148071、GSE274229、GSE152048论文写明来源内有混合治疗状态，需要补充表；GSE132465、GSE222315没有PMC全文。
 - 同时得到细亚型的单位级信息：GSE182109分级（IV 35 / II 8 / III 1）、GSE161529受体亚型、GSE159115、GSE197461、GSE273127、GSE274934的组织学（见`unit_geo_characteristics_by_source_v1.tsv`），用于癌种v2的单位级细分。
+
+### 漏洞3 结论（表达指纹，作业30615343，9.6 min）
+- 43个来源4,906,058个细胞（总计数≥500、检出基因≥200）。完整指纹跨来源相同0个；top50指纹跨来源18组、9个来源对（每对1–9个），视为低复杂度巧合。
+- 来源内"重复"305,390个，全部来自GSE294109和GSE256326，每个恰好2份——这两个来源在immune和public两个库各有一份，本筛查把两库都读了。这同时证实两库副本的计数向量逐细胞完全一致（此前只核对过细胞ID）。
+- 结论：43个来源之间，从GEO元数据和细胞级计数都看不到同一份数据被重复收录。无法排除的是：同一患者在两个研究中各有不同样本，计数矩阵检测不到这种情况，需要原始reads的基因型。
+
+### 漏洞2 患者键（[按来源汇总](../../../inventories/data_gaps/gap2_patient_keys_by_source_v1.tsv)）
+- 381个无患者依据的单位中，123个按来源命名规则（对照GEO标题与论文）归并为75名患者：GSE274229 44→25（阶段加文件名第二个编号；6 mCRPC + 14 mHSPC + 5 localized，与论文一致；该编号只在同一阶段内唯一）、GSE127465 18→7、GSE294109 25→15（多区域）、GSE178481 15→9（多区域）、GSE155698 16→15、GSE138709 5→4。即这些来源原本多算了48个"独立单位"。
+- 245个单位按标题判断为一个单位一名患者；GSE163558（原发/转移样本无法配对）和GSE228501共13个单位仍未知。
+- 有记录的389个单位保留原patient_candidate_block。

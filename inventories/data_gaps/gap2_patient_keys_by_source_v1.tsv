@@ -1,0 +1,27 @@
+source	gap2_rule	units	patients	evidence
+GSE127465	source_rule	18	7	sample name pXtY = patient X tumour sample Y; GEO lists 7 patients
+GSE138709	source_rule	5	4	ICC_<patient>_Tumor[n]
+GSE139829	assumed_one_unit_per_patient	11	11	
+GSE141526	assumed_one_unit_per_patient	4	4	
+GSE148071	assumed_one_unit_per_patient	42	42	
+GSE152048	assumed_one_unit_per_patient	11	11	
+GSE155698	source_rule	16	15	PDAC_TISSUE_11A/11B share patient 11
+GSE163558	unknown	9	0	primary and metastatic samples; pairing to patients not in GEO
+GSE176031	assumed_one_unit_per_patient	3	3	
+GSE178481	source_rule	15	9	RCC-<patient>-PTumor[n]: multi-region
+GSE183904	assumed_one_unit_per_patient	29	29	
+GSE184880	assumed_one_unit_per_patient	7	7	
+GSE188711	assumed_one_unit_per_patient	6	6	
+GSE189357	assumed_one_unit_per_patient	9	9	
+GSE189889	assumed_one_unit_per_patient	9	9	
+GSE197461	assumed_one_unit_per_patient	8	8	
+GSE200997	assumed_one_unit_per_patient	16	16	
+GSE201347	assumed_one_unit_per_patient	12	12	
+GSE222315	assumed_one_unit_per_patient	9	9	
+GSE228501	unknown	4	0	4 samples 19355X1-4; patient count not stated in GEO
+GSE256136	assumed_one_unit_per_patient	17	17	
+GSE273127	assumed_one_unit_per_patient	11	11	
+GSE274229	source_rule	44	25	stage + second file-name number; 6 mCRPC + 14 mHSPC + 5 localized = 25 patients as in PMID 39436703
+GSE274934	assumed_one_unit_per_patient	9	9	
+GSE294109	source_rule	25	15	sc<patient>, region suffix: multi-region
+GSE305078	assumed_one_unit_per_patient	32	32	
