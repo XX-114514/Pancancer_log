@@ -29,3 +29,9 @@
 ## 建议commit message
 
 Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild the full R env on WEHI
+
+## 进展更新（12:20 UTC）
+
+- **漏洞7 非RNA特征排除表**（完成v1）：[non_RNA_features_v1.tsv](../../../inventories/feature_exclusions/non_RNA_features_v1.tsv)。core中有GSE274229的229个（211个抗体、14个hashtag、4个同型对照，按GEO `feature_types`判定，在库中计数全为0），以及GSE169609的5个`TOTALSEQC09xx`（类型未核，计数非零；该来源已排除）。immune和public union两个库的特征名中没有抗体/hashtag类特征（已检查）。跨来源分析只使用RNA特征。
+- **漏洞3 跨研究别名**，第一层（GEO元数据）：42个GSE的PubMed ID互不重复，彼此之间没有SuperSeries/SubSeries关系；只有GSE273127（食管）和GSE274934（肺）的第一贡献者相同，是同一团队、不同癌种。没有发现同一研究重复发布。第二层（表达指纹）：新增`scripts/data_gaps/cell_fingerprint_duplicates.py`，对43个来源的每个细胞计算与基因顺序无关的计数指纹（完整非零计数多重集，以及最大50个计数），查找跨来源相同的细胞；作业30614885运行中。
+- 环境作业30614882运行中（Bioconductor基础包已开始编译）。
