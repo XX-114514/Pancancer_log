@@ -1,3 +1,7 @@
+## 2026-10-31 按七条工作线重整当前任务
+
+当前没有科学计算在运行：旧服务器01:40 UTC后无新运行，Slurm中9个旧作业均为依赖失败/等待或人工挂起；WEHI上只有本会话的重放作业，均已结束。多数工作线处于待审阅或待验证阶段。WEHI迁移已在WEHI端核对完成（含M5补迁），不只是源端上传完成。T/NK试点跨设置审阅材料已生成。见[工作线看板](methods/workstream-board-20261031.md)。
+
 ## 2026-10-31 其余计算路径重放：scVI、SingleR、MOFA、Harmony/UMAP
 
 07:40 UTC前后：SingleR、MOFA在WEHI上与旧服务器一致（MOFA最大相对差6.3×10⁻⁸）；HVG/PCA只在AVX-512节点上与旧服务器完全相同（Broadwell节点上排序并列导致30/4000个HVG不同），Harmony嵌入相对差约2.5×10⁻⁵。同图Leiden/UMAP的近邻边集合相同、权重差1.4×10⁻⁶，主分辨率0.5约0.9%细胞换群，UMAP不同；WEHI上可逐位复现，与旧服务器差异的原因未查明。scVI在同型号GPU上逐位可复现，但跨GPU架构（旧V100与WEHI的A30/A100/P100）局部近邻约两成不同，按事先规则不通过。约定：CPU作业加`--constraint=AVX512`；scVI固定GPU型号；旧服务器冻结的scVI、Leiden、UMAP结果为权威版本，WEHI重算的作为新版本。见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)。
