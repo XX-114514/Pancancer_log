@@ -20,7 +20,9 @@ if [ "${RESUME:-0}" = 1 ]; then
   [ -d "$P" ] || { echo "missing $P" >&2; exit 2; }
 else
   [ -e "$P" ] && { echo "exists $P" >&2; exit 2; }
-  micromamba create -y -p "$P" -c conda-forge --override-channels "r-base=4.3.3=h5074ccb_16" compilers make pkg-config glpk gmp libxml2 r-remotes r-biocmanager
+  # Everything in one solve with the r-base build pinned: adding packages later let the solver
+  # swap the r-base build and ICU underneath already compiled packages.
+  micromamba create -y -p "$P" -c conda-forge --override-channels "r-base=4.3.3=h5074ccb_16" compilers make pkg-config glpk gmp libxml2 libxml2-devel zlib liblzma-devel r-remotes r-biocmanager
 fi
 mkdir -p "$P/rebuild_report"
 # Activate (not `micromamba run`): compiler activation scripts must set CC/CXX, and configure

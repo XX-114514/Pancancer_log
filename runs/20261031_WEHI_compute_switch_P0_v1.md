@@ -40,9 +40,10 @@
 | scvi | conda explicit完成，补装29个PyPI精确版本；pip差异表为空 |
 | scanpy | 补装59个PyPI精确版本；R包差异为空。首轮漏装mpmath 1.3.0、sympy 1.13.1：旧环境用pip覆盖了conda的1.4.0/1.14.0，脚本只按包名判断。已补装并改脚本为按`name==version`判断；之后PyPI精确版本与旧环境完全一致 |
 | scrna_r（完整） | 失败：842个包中156个来自`repo.anaconda.com/pkgs/main`、186个来自`pkgs/r`，WEHI连不上该地址（conda-forge可连），也没有本地镜像 |
-| scrna_r_covarnet（CoVarNet子集） | conda-forge `r-base 4.3.3 h5074ccb_16`（与旧环境同一构建）+ 工具链，再按旧环境记录的版本从CRAN归档安装NMF、dplyr、reshape2、igraph、psych、jsonlite及其依赖闭包：35个包全部为旧版本 |
+| scrna_r_covarnet2（CoVarNet子集） | conda-forge `r-base 4.3.3 h5074ccb_16`（与旧环境同一构建）、ICU 75.1 + 工具链与libxml2/zlib/liblzma开发库，一次求解建成；再按旧环境记录的版本从CRAN归档安装NMF、dplyr、reshape2、igraph、psych、jsonlite及其依赖闭包：52个包全部为旧版本 |
+| scrna_r_covarnet（作废） | 第一个子集环境。后续往里补装开发库时，求解器把r-base换成`h05019bb_23`、ICU换成78.3，已编译的stringi因找不到`libicui18n.so.75`无法加载。不再使用，保留目录待清理 |
 
-旧scrna_r中多数R包实际来自CRAN源码安装而非conda（R包清单中457个标为CRAN来源；例如conda给的igraph是1.5.1，实际加载的是CRAN的2.2.0），所以“conda-forge r-base + 按版本装CRAN包”比还原Anaconda默认源的包更接近实际运行环境。子集构建的失败与修正：首轮stringi的configure报“C++ compiler cannot create executables”与“5: Bad file descriptor”，原因是`micromamba run`不提供configure需要的文件描述符5，编译器激活脚本也未生效；改为`micromamba activate`后通过。版本比较原先按字符串，`0.5-1`与`0.5.1`被误判为不一致，已改为`package_version`比较。
+旧scrna_r中多数R包实际来自CRAN源码安装而非conda（R包清单中457个标为CRAN来源；例如conda给的igraph是1.5.1，实际加载的是CRAN的2.2.0），所以“conda-forge r-base + 按版本装CRAN包”比还原Anaconda默认源的包更接近实际运行环境。子集构建的失败与修正：首轮stringi的configure报“C++ compiler cannot create executables”与“5: Bad file descriptor”，原因是`micromamba run`不提供configure需要的文件描述符5，编译器激活脚本也未生效；改为`micromamba activate`后通过。版本比较原先按字符串，`0.5-1`与`0.5.1`被误判为不一致，已改为`package_version`比较。另外三处失败：`sbatch --export`按逗号拆分参数，`PKGS=NMF,dplyr,...`实际只传入NMF（改为冒号分隔）；当前CRAN的Matrix要求更新的R，R 4.3的包索引里查不到它的依赖，lattice没排在前面（安装脚本改为最多3轮重试）；igraph的configure用到系统libxml2头文件但env缺开发库（建环境时加入）。还有一次是作业运行中修改了正在被`Rscript`逐条读取的安装脚本，作业末尾出现语法错误；安装报告在此之前已写完，以后作业运行期间不改其使用的脚本。
 
 工具：[wehi_install_R_exact.R](../scripts/wehi_migration/wehi_install_R_exact.R)、[build_R_subset_env.sbatch](../scripts/wehi_migration/jobs/build_R_subset_env.sbatch)。完整scrna_r（CellChat、copykat、scATOMIC等）未重建，待决定。
 
@@ -65,7 +66,11 @@ M5共113个文件、21 GB，经同一R2通道（单个上传进程，桶上限9G
 |---|---|---|---|
 | pyUCell | `20261030_predefined_state_UCell_smoke_v2`（2来源256细胞，126程序，2线程） | 原config/scripts/resources/vendor不改，沙箱内scanpy环境 | **一致**。首次（作业30608313）因缺M5的h5ad失败；补齐后（30608540，exit 0）16个数据文件全部一致：两个来源的UCell分数`.npy`与旧服务器逐字节相同，各单位均值/分位数和观察表逐值相同；3个JSON只有`wall_seconds`不同 |
 | CellTypist（路径等价） | `20261030_TME_CellTypist_unicode_metadata_equivalence_v1`（2来源128探针细胞，6模型） | 同上，8线程 | **通过**（30608558，第三次）。验收JSON除各探针耗时外完全相同：6个模型的匹配特征数与旧服务器相同，两条推理路径的decision/probability逐位一致。注意：此检查比较的是同一次运行内的两条路径，不是与旧服务器预测值比较 |
-| CellTypist（跨机器预测值） | `20261030_TME_official_CellTypist_cluster_crosscheck_v4`（续跑v3，约290万细胞，6模型，原40分钟） | 同上，8线程120 GB；新算来源的逐细胞输出与旧输出比较 | 运行中（30608571） |
-| CoVarNet共同K4 | `20261030_TME_CM_TNK_Mye_commonK4_CT_identity_v1`（67节点×628观察，原耗时约12分钟，2线程） | 同一R驱动与冻结作者代码（SHA `917c60c4…`一致），请求仅改输入/输出路径；输入SHA对照冻结接受记录；`scrna_r_covarnet`环境 | 运行中（30608574） |
+| CellTypist（跨机器预测值） | `20261030_TME_official_CellTypist_cluster_crosscheck_v4`（续跑v3：7个来源沿用v3结果，其余重新计算；拟合细胞2,946,498个，6模型，原40分钟） | 同上，8线程120 GB | **一致**（30608571，39分钟，exit 0）：64个输出文件全部与旧服务器相同，包括各模型逐细胞最佳标签、最大概率、阳性数、来源覆盖与群投票 |
+| CoVarNet共同K4 | `20261030_TME_CM_TNK_Mye_commonK4_CT_identity_v1`（67节点×628观察，43来源，原耗时约12分钟，2线程） | 同一R驱动与冻结作者代码（SHA `917c60c4…`一致），原冻结请求只改输入/输出路径；输入SHA对照冻结接受记录；`scrna_r_covarnet2`环境 | **一致**（30608656，7.5分钟，exit 0）：24个文件完全相同（rank调查、权重、S、两个种子的作者口径与原始BH口径全部边/节点表）；W、A、H、加权H共8个表最大差1.1×10⁻¹⁴；RDS中NMF模型basis/coef最大差4.4×10⁻¹⁵，网络对象的全局/逐模块/过滤/注释部分`all.equal`相同，只有内嵌的原始NMF拟合对象（含耗时与会话信息）不同。`numeric_readback_acceptance_v1.json`由原Python执行器生成，重放直接调用R驱动，故没有此文件。前三次失败（缺包、stringi无法加载）均为环境问题，见上文 |
+
+### 结论
+
+在WEHI上，用重建的scanpy环境和CoVarNet子集R环境，经旧路径沙箱运行原配置，三类计算（pyUCell评分、CellTypist全量预测、CoVarNet nsNMF与作者网络）的输出与旧服务器逐字节或在机器精度内一致。P0.4的切换门槛已满足。限制：只覆盖这三类代码路径；scVI（GPU）、SingleR、MOFA、Harmony/UMAP以及依赖完整scrna_r的CellChat、copykat、scATOMIC等未重放；完整scrna_r尚未重建。
 
 比较工具[wehi_compare_outputs.py](../scripts/wehi_migration/wehi_compare_outputs.py)：TSV与TSV.GZ逐值（rtol 1e-9、atol 1e-12，报告最大差；gzip头含时间戳），JSON逐键并列出不同的键，其他文件按SHA；RDS含R会话信息，只报告差异不判定。

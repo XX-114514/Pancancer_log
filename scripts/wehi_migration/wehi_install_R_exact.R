@@ -28,19 +28,29 @@ visit <- function(p) {
 }
 for (p in need) visit(p)
 same <- function(a, b) !is.na(a) && !is.na(b) && package_version(a) == package_version(b)
+# Up to three passes: when the R 4.3 package index lacks a package's current entry (e.g. a newer
+# Matrix needs a newer R), its dependencies cannot be ordered first; retrying resolves that.
 rows <- list()
-for (p in order) {
-  v <- ver[p]
-  have <- tryCatch(as.character(packageVersion(p)), error = function(e) NA)
-  if (is.na(v)) { rows[[p]] <- c(p, "", have, "not_in_old_env"); next }
-  if (same(have, v)) { rows[[p]] <- c(p, v, have, "already_exact"); next }
-  ok <- tryCatch({
-    if (grepl("Bioc", origin[p])) BiocManager::install(p, version = "3.18", update = FALSE, ask = FALSE, dependencies = FALSE)
-    else remotes::install_version(p, version = v, dependencies = FALSE, upgrade = "never", quiet = FALSE)
-    TRUE
-  }, error = function(e) { message(p, ": ", conditionMessage(e)); FALSE })
-  have <- tryCatch(as.character(packageVersion(p)), error = function(e) NA)
-  rows[[p]] <- c(p, v, have, if (isTRUE(ok) && same(have, unname(v))) "installed_exact" else "MISMATCH")
+todo <- order
+for (pass in 1:3) {
+  failed <- character(0)
+  for (p in todo) {
+    v <- ver[p]
+    have <- tryCatch(as.character(packageVersion(p)), error = function(e) NA)
+    if (is.na(v)) { rows[[p]] <- c(p, "", have, "not_in_old_env"); next }
+    if (same(have, v)) { if (is.null(rows[[p]])) rows[[p]] <- c(p, v, have, "already_exact"); next }
+    ok <- tryCatch({
+      if (grepl("Bioc", origin[p])) BiocManager::install(p, version = "3.18", update = FALSE, ask = FALSE, dependencies = FALSE)
+      else remotes::install_version(p, version = v, dependencies = FALSE, upgrade = "never", quiet = FALSE)
+      TRUE
+    }, error = function(e) { message(p, ": ", conditionMessage(e)); FALSE })
+    have <- tryCatch(as.character(packageVersion(p)), error = function(e) NA)
+    exact <- isTRUE(ok) && same(have, unname(v))
+    rows[[p]] <- c(p, v, have, if (exact) "installed_exact" else "MISMATCH")
+    if (!exact) failed <- c(failed, p)
+  }
+  if (!length(failed)) break
+  todo <- failed
 }
 for (p in intersect(basepk, old$Package)) {
   have <- as.character(packageVersion(p))

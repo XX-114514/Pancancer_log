@@ -3,9 +3,10 @@
 依据[运行计划](methods/next-stage-run-plan-20261031.md)。下方较早的“当前”条目保留为历史，以本节为准。
 
 - [x] P0.1 增量同步`20261031_TME_CM_clinical_structure_review_v1`并重建索引（SHA一致；见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)）。
-- [ ] P0.2 环境重建：scanpy、singler_bioc、scvi完成且精确版本一致；CoVarNet用`scrna_r_covarnet`子集（conda-forge r-base同构建+CRAN归档精确版本）。完整scrna_r（CellChat、copykat、scATOMIC等）待按同法补齐，Anaconda默认源在WEHI不可达。
+- [ ] P0.2 环境重建：scanpy、singler_bioc、scvi完成且精确版本一致；CoVarNet用`scrna_r_covarnet2`子集（conda-forge r-base同构建+CRAN归档精确版本）。完整scrna_r（CellChat、copykat、scATOMIC等）待按同法补齐，Anaconda默认源在WEHI不可达。
 - [x] P0.3 wheel已配置；`pc-repo`中658项有3项不过，其中2项在scanpy参考环境通过，1项为测试布局问题（`test_standard_annotation_reference_v2`按仓库根找`config/`）。
-- [ ] P0.4 WEHI数值等价冒烟（共同K4 CoVarNet拟合、一个来源pyUCell读回、一个来源CellTypist）。完成标准：与旧产物一致；通过前不切换计算。
+- [x] P0.4 WEHI数值等价重放：pyUCell、CellTypist全量v4（约290万细胞）、共同K4 CoVarNet均与旧服务器一致（见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)）。
+- [ ] P0.4b 其余代码路径（scVI GPU、SingleR、MOFA、Harmony/UMAP）按需在首次使用前各做一次重放；完整scrna_r按“conda-forge r-base同构建+CRAN精确版本”补齐。
 - [x] P0.5 旧服务器`migration_stage`已删除（用户10-31确认）。
 - [ ] P0.5b （需用户确认）删除R2桶与令牌。
 - [x] M5补迁Project_v3 `harmonized_per_gse`及3个原始文件（21 GB，VERIFIED，新位置111/111一致）。

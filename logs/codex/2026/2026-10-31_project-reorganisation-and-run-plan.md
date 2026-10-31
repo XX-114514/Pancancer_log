@@ -60,3 +60,4 @@ Add post-migration project overview and next-stage run plan
 - 重放中发现迁移缺口：Project_v3 `harmonized_per_gse`（20 GB）及3个原始文件；作为M5经R2补迁（21 GB，VERIFIED，新位置111/111一致），旧服务器暂存随后删除。
 - 新增bwrap旧路径沙箱和quota替代脚本；pyUCell重放与旧服务器逐字节/逐值一致；CellTypist路径等价检查通过；CellTypist跨机器全量重放和CoVarNet重放进行中。
 - 失败与修正：rsync在慢链路断开（改ssh tar）；`srun`在会话作业内卡住（改sbatch）；一次范围过宽的`scancel --name`被安全检查拦下，未执行；`sbatch --export`按逗号拆分包名导致只装了NMF；`micromamba run`导致stringi configure失败；沙箱重复绑定导致df名称变化。
+- P0.4完成：CellTypist v4全量重放64/64文件相同；CoVarNet共同K4在`scrna_r_covarnet2`（r-base h5074ccb_16、ICU 75.1、52个R包精确版本）中重放，表格完全相同或差≤1.1e-14，RDS内模型与网络一致。第一个子集环境因补装开发库时求解器更换r-base构建和ICU而作废。

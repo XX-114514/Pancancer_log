@@ -1,3 +1,7 @@
+## 2026-10-31 WEHI计算切换门槛（P0）通过
+
+05:00 UTC前后：scanpy、singler_bioc、scvi三套环境按旧清单重建，版本一致；CoVarNet所需R子集改用conda-forge同一r-base构建加CRAN精确版本重建（Anaconda默认源在WEHI不可达，完整scrna_r未重建）。补迁了重放中发现的Project_v3原生h5ad缺口（21 GB，逐文件核对一致）。在旧路径沙箱中按原配置重放pyUCell、CellTypist全量预测（约290万细胞）和共同K4 CoVarNet，输出与旧服务器逐字节或在机器精度内一致，WEHI可以作为这三类计算的位置。其他代码路径（scVI、SingleR、MOFA、Harmony/UMAP）首次使用前仍需各自重放。旧服务器迁移暂存区已删除；数据仍在scratch，持久空间待申请；R2桶与令牌未删。见[P0 run](runs/20261031_WEHI_compute_switch_P0_v1.md)。
+
 ## 2026-10-31 项目整理：迁移后现状与下一阶段运行计划
 
 01:40 UTC前后取证：旧服务器已没有分析进程在运行，快照后只新增1个只读审计运行（276 KB）；WEHI数据树完整，但旧服务器的四套分析环境（scanpy、CoVarNet R、SingleR、scVI）尚未在WEHI重建，数值等价也未验证，因此计算还没有切换到WEHI。三条在研分析线的拟合与技术验收大多已完成，下一步以科学阅读为主。旧服务器`/data4`已用93%，其中迁移暂存305 GB待用户确认后清理；持久空间仍待申请。现状表与运行计划见[运行计划](methods/next-stage-run-plan-20261031.md)。
