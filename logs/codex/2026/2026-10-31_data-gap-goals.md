@@ -80,3 +80,4 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 
 ### 现有来源复核（第2步）
 [existing_source_fitness_v1.tsv](../../../inventories/data_gaps/existing_source_fitness_v1.tsv)：按冻结的必需字段（患者编号、取样部位、治疗状态、≥3名患者）复核。保留23个来源（449个单位/357名患者）；待补充表17个（302/255）——补不齐的排除；建议排除3个：GSE163558（患者无法配对）、CXG SPECTRUM卵巢（6个单位来自同1名患者）、GSE228501（患者与治疗都不明）。**尚未执行，等用户确认。**
+- monocle3 1.3.1（GitHub tag）与presto 1.0.0均LOAD_OK（作业30615914/30615917，`jobs/fix2_monocle_presto.sbatch`）；为满足monocle3，新增旧环境没有的terra 1.9.50。偏差全部记录在`scrna_r_full/rebuild_report/R_version_deviations.tsv`：lme4、terra、monocle3来源。**漏洞8的R环境部分完成。**
