@@ -1,0 +1,18 @@
+source	rule	value	evidence
+GSE161529	series_statement	naive	GEO summary: 'treatment-naive ER+, HER2+, triple negative (TN) breast cancers'
+GSE131907	series_statement	naive	GEO summary: 'patients conserving surgery without prior treatment'
+GSE184880	series_statement	naive	GEO summary: 'seven treatment-naive HGSOC patients'
+GSE162025	paper_statement	naive	PMID 33531485 (doi:10.1038/s41467-021-21043-4): '10 treatment-naive patients with NPC'
+GSE188711	paper_statement	naive	PMID 34793335 (doi:10.1172/jci.insight.152616): 'None of the patients was treated with chemotherapy, radiation or any other antitumor medicines prior to tumor resection'
+GSE299340	paper_statement	naive	PMID 40721811 (doi:10.1186/s12967-025-06869-6): 'had not previously received any treatments, such as chemotherapy or radiation'
+GSE197461	paper_statement	naive_chemo_RT	PMID 37794698 (doi:10.1002/cac2.12486): exclusion of 'history of chemotherapy or radiotherapy'
+GSE127465	gsm_field	per_sample	GEO 'treatment received prior to surgery (1= treated; 0=untreated)'
+GSE163558	gsm_field	per_sample	GEO 'treatment: untreated'
+GSE178481	gsm_field	per_sample	GEO 'treatment' field
+GSE184362	gsm_field	per_sample	GEO 'treatment' field (prior thyroidectomy / iodine ablation for recurrent samples)
+GSE294109	gsm_field	per_sample	GEO 'pre-surgery treatment' field
+GSE182109	unit_id_label	per_sample	PMID 35140215 (doi:10.1038/s41467-022-28372-y): LGG grade II, newly diagnosed GBM, recurrent GBM; ndGBM/rGBM/LGG label in sample name
+GSE148071	paper_statement	mixed_needs_supplement	PMID 33953163 (doi:10.1038/s41467-021-22801-0): 35/42 biopsied before systemic treatment, 2 after TKI, 3 after immunotherapy, 2 after chemotherapy; per-patient list in supplement
+GSE274229	paper_statement	mixed_needs_supplement	PMID 39436703 (doi:10.1172/JCI180282): localized primary, metastatic hormone-sensitive and castration-resistant tumours
+GSE152048	paper_statement	mixed_needs_supplement	PMID 33303760 (doi:10.1038/s41467-020-20059-6): primary, lung metastasis and recurrent lesions
+GSE183904	paper_statement	not_applicable	PMID 34642171: 'without preoperative treatment' refers to the fibroblast culture cohort, not the scRNA samples

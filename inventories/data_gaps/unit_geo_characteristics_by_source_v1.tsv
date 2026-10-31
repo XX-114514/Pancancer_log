@@ -1,0 +1,43 @@
+source	units	matched	grade	histology	treatment
+GSE127465	18	18		Adeno: 12; Squamous: 6	0: 16; 1: 2
+GSE131907	32	32			
+GSE132465	23	23			
+GSE138665	6	0			
+GSE138709	5	0			
+GSE139829	11	0			
+GSE141526	4	4			
+GSE148071	42	42			
+GSE152048	11	0			
+GSE155698	16	16			Treatment Naïve: 16
+GSE159115	8	8		Clear Cell RCC: 7; Chromophobe RCC: 1	
+GSE161529	41	41		ER+ tumour: 26; HER2+ tumour: 6; Triple negative tumour: 4; Triple negative BRCA1 tumour: 4; PR+ tumour: 1	
+GSE162025	10	10			
+GSE163558	9	9			untreated: 9
+GSE166555	13	13			
+GSE176031	27	27			
+GSE178341	68	0			
+GSE178481	15	15			No: 13; chemotherapy for collicular lymphoma: 1; Primary RCC tumor Thrombus: 1
+GSE179994	46	0			
+GSE182109	44	44	IV: 35; II: 8; III: 1		
+GSE183904	29	29			
+GSE184362	17	17			No treatment: 12; Total thyroidectomy, three times of iodine ablation and TSH suppression: 2; Iodine ablation and TSH suppression: 1; Hemi-thyroidectomy and TSH suppression: 1; Total thyroidectomy and TSH suppression: 1
+GSE184880	7	7			
+GSE188711	6	6			
+GSE189357	9	9		IAC: 3; MIA: 3; AIS: 3	
+GSE189889	9	0			
+GSE197461	8	8		ADC: 5; SCC: 3	
+GSE200997	16	0			
+GSE201347	12	12			
+GSE222315	9	0			
+GSE228501	4	4			
+GSE253013	11	4			
+GSE256136	17	17			no: 17
+GSE256326	9	0			
+GSE273127	11	11		ESCC: 9; EAC: 2	
+GSE274229	44	44			
+GSE274934	9	9		WT LUAD: 5; ALK-positive LUAD: 4	
+GSE288479	8	8			
+GSE294109	25	25			Ipilimumab/Nivolumab: 12; Untreated: 6; Axitinib/Pembrolizumab: 4; Lenvatinib/Pembrolizumab: 2; Cabozantinib: 1
+GSE297041	18	0			
+GSE299340	5	5		Primary hepatocellular carcinoma: 5	
+GSE305078	32	32			

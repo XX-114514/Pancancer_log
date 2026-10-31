@@ -1,0 +1,41 @@
+source	gap1_rule	gap1_status	units
+GSE127465	gsm_field	prior_or_other:1	2
+GSE127465	gsm_field	untreated	16
+GSE131907	series_statement	naive	32
+GSE132465	unresolved		23
+GSE138665	unresolved		6
+GSE138709	unresolved		5
+GSE139829	unresolved		11
+GSE141526	unresolved		4
+GSE148071	unresolved		42
+GSE152048	unresolved		11
+GSE159115	unresolved		8
+GSE161529	series_statement	naive	41
+GSE162025	paper_statement	naive	10
+GSE163558	gsm_field	untreated	9
+GSE176031	unresolved		27
+GSE178481	gsm_field	prior_or_other:Primary RCC tumor Thrombus	1
+GSE178481	gsm_field	prior_or_other:chemotherapy for collicular lymphoma	1
+GSE182109	sample_label	LGG_status_unstated	4
+GSE182109	sample_label	recurrent_after_standard_therapy	18
+GSE182109	sample_label	untreated_newly_diagnosed	22
+GSE183904	unresolved		29
+GSE184362	gsm_field	prior_or_other:Hemi-thyroidectomy and TSH suppression	1
+GSE184362	gsm_field	prior_or_other:Iodine ablation and TSH suppression	1
+GSE184362	gsm_field	prior_or_other:Total thyroidectomy and TSH suppression	1
+GSE184362	gsm_field	prior_or_other:Total thyroidectomy, three times of iodine ablation and TSH suppression	2
+GSE184880	series_statement	naive	7
+GSE188711	paper_statement	naive	6
+GSE189889	unresolved		9
+GSE197461	paper_statement	naive_chemo_RT	8
+GSE222315	unresolved		9
+GSE228501	unresolved		4
+GSE273127	unresolved		11
+GSE274229	unresolved		44
+GSE274934	unresolved		9
+GSE288479	unresolved		8
+GSE294109	gsm_field	prior_or_other:Axitinib/Pembrolizumab	4
+GSE294109	gsm_field	prior_or_other:Cabozantinib	1
+GSE294109	gsm_field	prior_or_other:Ipilimumab/Nivolumab	12
+GSE294109	gsm_field	prior_or_other:Lenvatinib/Pembrolizumab	2
+GSE299340	paper_statement	naive	5

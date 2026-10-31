@@ -35,3 +35,19 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 - **漏洞7 非RNA特征排除表**（完成v1）：[non_RNA_features_v1.tsv](../../../inventories/feature_exclusions/non_RNA_features_v1.tsv)。core中有GSE274229的229个（211个抗体、14个hashtag、4个同型对照，按GEO `feature_types`判定，在库中计数全为0），以及GSE169609的5个`TOTALSEQC09xx`（类型未核，计数非零；该来源已排除）。immune和public union两个库的特征名中没有抗体/hashtag类特征（已检查）。跨来源分析只使用RNA特征。
 - **漏洞3 跨研究别名**，第一层（GEO元数据）：42个GSE的PubMed ID互不重复，彼此之间没有SuperSeries/SubSeries关系；只有GSE273127（食管）和GSE274934（肺）的第一贡献者相同，是同一团队、不同癌种。没有发现同一研究重复发布。第二层（表达指纹）：新增`scripts/data_gaps/cell_fingerprint_duplicates.py`，对43个来源的每个细胞计算与基因顺序无关的计数指纹（完整非零计数多重集，以及最大50个计数），查找跨来源相同的细胞；作业30614885运行中。
 - 环境作业30614882运行中（Bioconductor基础包已开始编译）。
+
+## 进展更新（2026-11-01）
+
+### 环境（漏洞8）
+- 作业30614882跑了2.5 h后失败：conda-forge r-base不带recommended包（这一点在后续轮次已自行补上）；udunits2头文件缺失（units/sf失败）；求解器选了gcc 15，readxl等旧C++代码编译失败；Cairo缺X11头文件；systemfonts找不到`ft2build.h`。Bioconductor包装成了3.18的最新补丁版本，而不是旧版本（如zlibbioc 1.48.2，旧为1.48.0）。
+- 修正：编译器固定gcc 11（旧环境为11.2）；加`udunits2`和xorg头文件；`CPATH`加入freetype2；`wehi_install_R_exact.R`的Bioconductor包先按精确版本取3.18的源码包或Archive，取不到再用BiocManager。上次失败的环境已删除（失败报告保存在`envs/build_logs/attempt_30614882_rebuild_report`），重建。
+- 作业30615342在激活环境时失败（编译器激活脚本读取未定义变量，与`set -u`冲突）→ 激活前后放宽`-u`，以RESUME方式继续（作业30615350，运行中）。
+
+### 漏洞3 表达指纹
+- 首次运行（30614885）只用10分钟就算完全部指纹，但写parquet时失败（scanpy环境没有pyarrow）→ 改为写tsv.gz，重跑（30615343）。
+
+### 漏洞1 治疗阶段
+- 单位↔GSM桥：按GSM编号、标题完全相同、标题方括号内样本名、唯一子串的顺序匹配，731个GEO来源单位中549个唯一匹配（脚本`scripts/data_gaps/unit_geo_characteristics_v1.py`；单位级结果只留服务器）。
+- 证据：GEO系列声明3个来源、GSM字段6个来源、样本名标签（GSE182109的ndGBM/rGBM/LGG）、论文全文（PMC，经E-utilities下载到WEHI，只抽取治疗相关句子）。证据表[treatment_evidence_v1.tsv](../../../inventories/data_gaps/treatment_evidence_v1.tsv)。
+- 结果（[按来源汇总](../../../inventories/data_gaps/gap1_treatment_resolution_by_source_v1.tsv)）：466个待核实单位中206个有了证据。其中未治疗141个；有既往治疗或其他情况43个（GSE294109的19个是ICB/TKI治疗后切除，GSE182109的18个复发GBM，GSE184362的5个是复发前已手术或碘治疗）；GSE182109的4个LGG论文未说明。剩余260个单位分布在17个来源。其中GSE148071、GSE274229、GSE152048论文写明来源内有混合治疗状态，需要补充表；GSE132465、GSE222315没有PMC全文。
+- 同时得到细亚型的单位级信息：GSE182109分级（IV 35 / II 8 / III 1）、GSE161529受体亚型、GSE159115、GSE197461、GSE273127、GSE274934的组织学（见`unit_geo_characteristics_by_source_v1.tsv`），用于癌种v2的单位级细分。
