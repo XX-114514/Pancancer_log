@@ -42,9 +42,11 @@ for (pass in 1:3) {
     ok <- tryCatch({
       if (grepl("Bioc", origin[p])) {
         # BiocManager only offers the latest 3.18 patch; try the exact recorded tarball first.
-        base <- "https://bioconductor.org/packages/3.18"
-        urls <- c(sprintf("%s/%s/src/contrib/%s_%s.tar.gz", base, c("bioc", "data/annotation", "data/experiment"), p, v),
-                  sprintf("%s/%s/src/contrib/Archive/%s/%s_%s.tar.gz", base, c("bioc", "data/annotation", "data/experiment"), p, p, v))
+        # The old env mixed Bioconductor 3.17 and 3.18 versions, so look in both releases.
+        urls <- character(0)
+        for (base in sprintf("https://bioconductor.org/packages/%s", c("3.18", "3.17")))
+          urls <- c(urls, sprintf("%s/%s/src/contrib/%s_%s.tar.gz", base, c("bioc", "data/annotation", "data/experiment"), p, v),
+                    sprintf("%s/%s/src/contrib/Archive/%s/%s_%s.tar.gz", base, c("bioc", "data/annotation", "data/experiment"), p, p, v))
         done <- FALSE
         for (u in urls) {
           f <- tempfile(fileext = ".tar.gz")
