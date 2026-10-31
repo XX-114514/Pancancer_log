@@ -1,0 +1,12 @@
+source	status	evidence
+GSE148071	fresh	PMID 33953163 (doi:10.1038/s41467-021-22801-0): 'Fresh samples were stored in the GEXSCOPE Tissue Preservation Solution ... at 2-8 C immediately after being collected'
+GSE127465	fresh	PMID 30979687 (doi:10.1016/j.immuni.2019.03.009): 'We first obtained fresh tumor tissue from seven human patients'
+GSE152048	fresh	PMID 33303760 (doi:10.1038/s41467-020-20059-6): 'Fresh tumor lesions ... processed on ice after the surgery within 30 mins'
+GSE162025	fresh	PMID 33531485 (doi:10.1038/s41467-021-21043-4): 'Fresh tumour samples were processed ... immediately after collection'
+GSE159115	fresh	PMID 34099557 (doi:10.1073/pnas.2103240118): 'processed for single-cell preparation within 1 to 2 h of the clinical procedure'
+GSE184880	fresh	PMID 35675036 (doi:10.1158/1078-0432.CCR-22-0296): 'Fresh tissues were immediately dissected into fractions for enzymatic digestion into single cells'
+GSE178341	fresh	PMID 34450029 (doi:10.1016/j.cell.2021.08.003): 'droplet-based scRNAseq on dissociated fresh tissues'
+GSE189357	fresh	PMID 36434043 (doi:10.1038/s12276-022-00896-9): 'Following isolation and pathological clearance of fresh specimens' (single-cell suspension)
+GSE178481	fresh	PMID 36180422 (doi:10.1038/s41467-022-33375-w): 'Here we use fresh patient samples'
+GSE299340	ambiguous	PMID 40721811: 'fresh ... stored at cryogenic temperature for subsequent scRNA-seq procedures'
+GSE161529	partial	PMID 33950524: fresh preparation stated for reduction mammoplasty/prophylactic mastectomy (normal) only; tumours not stated

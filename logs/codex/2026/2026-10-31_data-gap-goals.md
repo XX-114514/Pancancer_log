@@ -61,3 +61,7 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 - 381个无患者依据的单位中，123个按来源命名规则（对照GEO标题与论文）归并为75名患者：GSE274229 44→25（阶段加文件名第二个编号；6 mCRPC + 14 mHSPC + 5 localized，与论文一致；该编号只在同一阶段内唯一）、GSE127465 18→7、GSE294109 25→15（多区域）、GSE178481 15→9（多区域）、GSE155698 16→15、GSE138709 5→4。即这些来源原本多算了48个"独立单位"。
 - 245个单位按标题判断为一个单位一名患者；GSE163558（原发/转移样本无法配对）和GSE228501共13个单位仍未知。
 - 有记录的389个单位保留原patient_candidate_block。
+
+### 漏洞5 材料信息
+- 取样部位（[按来源汇总](../../../inventories/data_gaps/gap5_sampling_site_by_source_v1.tsv)，脚本`gap5_sampling_site_v1.py`）：521个"肿瘤阶段未注明"的单位中，449个按GEO source name / tissue字段或来源设计判定为原发器官部位（GSE182109、GSE138665、GSE138709、GSE222315按来源规则），3个为转移部位（腹膜），69个未解决（GSE179994 46、GSE152048 11、GSE139829 8、CXG SPECTRUM 4）。取样部位与疾病分期分开记录：GSE274229前列腺活检来自mHSPC/mCRPC患者，GSE305078含advanced TNBC。
+- 新鲜/冻存（[证据](../../../inventories/data_gaps/fresh_frozen_evidence_v1.tsv)）：GEO简要视图不含protocol文本，改为从论文方法部分抽取。429个待核实单位中，188个（9个来源）论文写明为新鲜处理；GSE299340原文有歧义（"fresh…stored at cryogenic temperature"）；GSE161529只写明正常组织为新鲜；其余195个单位（11个来源）方法中没有写明。

@@ -1,0 +1,36 @@
+source	gap5_rule	sampling_site	units
+CXG_b252b015_b488_4d5c_b16e_968c13e48a2c	unresolved		4
+GSE127465	geo_site	primary_organ_site	18
+GSE131907	geo_site	primary_organ_site	15
+GSE132465	geo_site	primary_organ_site	23
+GSE138665	source_rule	primary_organ_site	6
+GSE138709	source_rule	primary_organ_site	5
+GSE139829	unresolved		8
+GSE141526	geo_site	primary_organ_site	4
+GSE148071	geo_site	primary_organ_site	42
+GSE152048	unresolved		11
+GSE155698	geo_site	primary_organ_site	16
+GSE159115	geo_site	primary_organ_site	8
+GSE162025	geo_site	primary_organ_site	10
+GSE163558	geo_site	primary_organ_site	3
+GSE176031	geo_site	primary_organ_site	17
+GSE178481	geo_site	primary_organ_site	15
+GSE179994	unresolved		46
+GSE182109	geo_site	primary_organ_site	44
+GSE183904	geo_site	metastatic_site	3
+GSE183904	geo_site	primary_organ_site	26
+GSE184362	geo_site	primary_organ_site	7
+GSE184880	geo_site	primary_organ_site	7
+GSE188711	geo_site	primary_organ_site	6
+GSE189357	geo_site	primary_organ_site	9
+GSE197461	geo_site	primary_organ_site	8
+GSE201347	geo_site	primary_organ_site	12
+GSE222315	source_rule	primary_organ_site	9
+GSE228501	geo_site	primary_organ_site	4
+GSE256136	geo_site	primary_organ_site	15
+GSE273127	geo_site	primary_organ_site	11
+GSE274229	geo_site	primary_organ_site	39
+GSE274934	geo_site	primary_organ_site	9
+GSE294109	geo_site	primary_organ_site	24
+GSE299340	geo_site	primary_organ_site	5
+GSE305078	geo_site	primary_organ_site	32
