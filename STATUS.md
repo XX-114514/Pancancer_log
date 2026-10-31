@@ -1,3 +1,7 @@
+## 2026-10-31 数据库存核查：WEHI目标端复核完成，core抗体特征精确分类
+
+11:23 UTC，源服务器交接清单的32项和50个依赖在WEHI上按PATH_MAP逐项核对：52项SHA一致，3个zarr目录及1个3 GB h5ad在迁移时已逐文件核对；只有GSE162498 raw/filtered和GSE278694 QC对象不在WEHI（未迁移，交接时就注明不需要）。按GEO发布的feature_types，core中的非RNA特征为GSE274229的229个Antibody Capture列。这些列在原生计数中全为0，对标准化没有影响；此前的214、222都不准确。新发现：GSE169609有5个TotalSeq-C特征计数真实存在（中位占细胞总计数5.7%）。该来源已处于duplicate-source hold，当前结果不受影响，但重新纳入前必须剔除。GSE299623和GSE169609的范围排除依据已追到冻结52-GSE输入；GSE169609与哪个来源重复、GSE278694的排除理由仍未解决。见[任务日志](logs/codex/2026/2026-10-31_WEHI-data-claim-target-verification.md)。
+
 ## 2026-10-31 按七条工作线重整当前任务
 
 当前没有科学计算在运行：旧服务器01:40 UTC后无新运行，Slurm中9个旧作业均为依赖失败/等待或人工挂起；WEHI上只有本会话的重放作业，均已结束。多数工作线处于待审阅或待验证阶段。WEHI迁移已在WEHI端核对完成（含M5补迁），不只是源端上传完成。T/NK试点跨设置审阅材料已生成。见[工作线看板](methods/workstream-board-20261031.md)。
