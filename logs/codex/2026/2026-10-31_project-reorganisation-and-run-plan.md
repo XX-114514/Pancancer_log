@@ -1,0 +1,46 @@
+# 迁移后项目整理与下一阶段运行计划
+
+## 用户要求
+
+根据此前对pancancer项目的计划，先探索目录、整理项目，再规划下一步各任务的运行计划。取证时间2026-10-31约01:30–01:50 UTC / 09:30–09:50 UTC+8 / 12:30–12:50 Melbourne（AEDT）。
+
+## 开始前状态
+
+仓库工作树干净，本地main与origin/main同为`2f2b289`。
+
+## 检查过的内容
+
+- 仓库：STATUS、TODO、ROADMAP、AGENTS、WEHI工作流、迁移规划第九节、TME注释/CM/状态goal、下一阶段研究方案、状态读出验证方法，以及10-30各线最新任务日志尾部。
+- WEHI：`${PC_ROOT}`布局、`README.md`、`index/runs_by_line.tsv`（按线计：0线166、1线注释198、1线CM 70、2线78、3线632个运行）、`views/`、`envs/specs/`、`~/envs`、`quota -s`、`sinfo -s`、2026-10-30/31运行的终态字段。
+- 旧服务器（SSH只读）：快照后新运行、进程列表、`/data4`占用、`migration_stage`大小、新运行的`acceptance.json`。
+
+## 关键发现（已观察）
+
+- 旧服务器没有分析进程在运行；快照后只新增`20261031_TME_CM_clinical_structure_review_v1`（276 KB，`COMPLETE_READONLY_DESCRIPTIVE_AUDIT`，`n_fits: 25`，`no_clinical_tests: true`）。
+- 旧服务器`/data4`已用93%，`migration_stage`占305 GB。
+- WEHI只有`pc-repo`、`pc-spatial`两套环境；旧服务器四套分析环境只有清单。home配额不够容纳重建环境。
+- TODO（约175 KB）与STATUS中大量“当前”节已过时，但按AGENTS不得删除历史，因此只在顶部加入以新运行计划为准的入口。
+
+## 修改的文件
+
+- 新增`methods/next-stage-run-plan-20261031.md`：现状表、三条分析线完成/未完成对照、P0–P4运行计划、决策点和需用户操作的事项。
+- `STATUS.md`、`TODO.md`、`ROADMAP.md`：顶部各加一节指向该计划；原内容未改。
+- 本日志。
+
+## 验证
+
+运行`bash scripts/validate_repository.sh`与`git diff --check`，结果见提交前输出。
+
+## 未验证
+
+- T/NK父群细化链和标准A/B/C/研究留出的最终终态没有逐个读取，列为P1第1步。
+- scratch清理的具体日期按“30天未访问”推算，不是系统给出的日期。
+- 计划中的运行全部未执行。
+
+## 待用户决定
+
+持久空间申请；是否删除旧服务器`migration_stage`与R2桶/令牌；上传本机私有文件；S16主分割方案与SCP2510下载。
+
+## 建议commit message
+
+Add post-migration project overview and next-stage run plan

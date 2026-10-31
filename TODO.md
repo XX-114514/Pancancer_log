@@ -1,3 +1,18 @@
+## 下一阶段运行计划（2026-10-31，优先于下方较早条目）
+
+依据[运行计划](methods/next-stage-run-plan-20261031.md)。下方较早的“当前”条目保留为历史，以本节为准。
+
+- [ ] P0.1 增量同步`20261031_TME_CM_clinical_structure_review_v1`并重建索引。完成标准：SHA一致，索引含该运行。
+- [ ] P0.2 在`${PC_ROOT}/envs/conda/`按清单重建scanpy、scrna_r、singler_bioc、scvi。完成标准：版本逐项比对，差异登记。
+- [ ] P0.3 `ATLAS_SYMPHONY_WHEEL`指向`resources/`中的wheel，`sbatch -c 4`重跑仓库检查。完成标准：620/620。
+- [ ] P0.4 WEHI数值等价冒烟（共同K4 CoVarNet拟合、一个来源pyUCell读回、一个来源CellTypist）。完成标准：与旧产物一致；通过前不切换计算。
+- [ ] P0.5 （需用户确认）删除旧服务器`migration_stage`已核对分块（305 GB）、R2桶与令牌。
+- [ ] P0.6 （用户）申请持久空间；scratch约2026-11-29起面临清理。
+- [ ] P1 线①：核对T/NK父群细化终态是否改变CM成员；G3跨方案CM对应、拆分合并与情境支持阅读；需要时只重跑受影响面板。
+- [ ] P2 线③：26个预测增量分支阅读、lockbox读出审阅、身份×状态模式CM与身份CM同预算比较。
+- [ ] P3 线②：CM02材料→患者→队列桥，来源等权/患者块/留一来源/队列分层复核；等待用户上传私有文件。
+- [ ] P4 空间W1–W5并行推进（见下节）。
+
 ## WEHI空间线（2026-10-30）
 
 依据[WEHI空间线规划](methods/WEHI-spatial-line-plan-20261030.md)；主线三个接口优先，W6等主线冻结候选关系后再开始。
