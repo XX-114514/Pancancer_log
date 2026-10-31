@@ -1,3 +1,7 @@
+## 2026-11-01 完整R环境可用；补充来源检索与现有来源复核完成，待用户筛选
+
+完整scrna_r的R环境（`scrna_r_full`）中，Seurat、CellChat、copykat、scATOMIC、infercnv、NMF、SingleR、GSVA都能加载；lme4用1.1-35.5（登记为偏差），monocle3补装中。按冻结的检索规格，为14个单来源癌种在GEO/CELLxGENE检索到969条候选，筛到63条人工预判候选，等用户筛选。现有43个来源按必需字段复核：23个保留、17个待补充表、3个建议排除（GSE163558、CXG SPECTRUM卵巢、GSE228501），排除尚未执行。见[检索规格](methods/tissue-source-search-spec-v1-20261101.md)和[任务日志](logs/codex/2026/2026-10-31_data-gap-goals.md)。
+
 ## 2026-10-31 癌种名称统一v1完成；完整R环境重建作业已提交
 
 11:55 UTC：当前TME合格范围（770单位/43来源）的35个原始癌种写法，按OncoTree（stable 2025-10-03）和GEO标题/GSM特征映射到23个分析分层，770/770匹配。只有9个分层有≥2个独立来源；其余14个癌种是单来源，结论无法和来源效应分开。纠正：GSE182109不全是胶质母细胞瘤（含grade II/III）。完整scrna_r的R环境（CellChat、copykat、scATOMIC、infercnv等）首次提交因conda求解冲突失败，修正固定版本后重新提交（作业30614882），尚未完成。见[方法](methods/cancer-type-harmonization-v1-20261031.md)和[任务日志](logs/codex/2026/2026-10-31_data-gap-goals.md)。

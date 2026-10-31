@@ -65,3 +65,18 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 ### 漏洞5 材料信息
 - 取样部位（[按来源汇总](../../../inventories/data_gaps/gap5_sampling_site_by_source_v1.tsv)，脚本`gap5_sampling_site_v1.py`）：521个"肿瘤阶段未注明"的单位中，449个按GEO source name / tissue字段或来源设计判定为原发器官部位（GSE182109、GSE138665、GSE138709、GSE222315按来源规则），3个为转移部位（腹膜），69个未解决（GSE179994 46、GSE152048 11、GSE139829 8、CXG SPECTRUM 4）。取样部位与疾病分期分开记录：GSE274229前列腺活检来自mHSPC/mCRPC患者，GSE305078含advanced TNBC。
 - 新鲜/冻存（[证据](../../../inventories/data_gaps/fresh_frozen_evidence_v1.tsv)）：GEO简要视图不含protocol文本，改为从论文方法部分抽取。429个待核实单位中，188个（9个来源）论文写明为新鲜处理；GSE299340原文有歧义（"fresh…stored at cryogenic temperature"）；GSE161529只写明正常组织为新鲜；其余195个单位（11个来源）方法中没有写明。
+
+## 2026-11-01 用户新指令：先补14个单来源癌种，再复核现有来源，最后补验证来源
+
+### 环境（漏洞8）基本完成
+- 作业30615350：510个包为精确版本，余17个不一致。根因：ragg 1.2.6与当前freetype头文件不兼容；lme4 1.1-34不能用Matrix 1.6-5的CHOLMOD头文件编译；旧环境中部分Bioconductor包是3.17版本。
+- 修正作业30615876（`fix_R_full_env.sbatch`；第一次提交时`install_version`没有设置CRAN源而失败）：ragg用`-fpermissive`；lme4改用1.1-35.5，登记为版本偏差（`rebuild_report/R_version_deviations.tsv`）；安装脚本同时查3.17和3.18的源码包。结果：Seurat、CellChat、copykat、scATOMIC、infercnv、NMF、SingleR、GSVA全部LOAD_OK；GitHub包按commit安装（COSG、SingleR、sceasy为复制旧编译件）。presto已改回1.0.0。monocle3需要旧环境没有的`terra`，正在补装（作业30615917）。
+
+### 检索规格与候选（第1步）
+- [检索规格v1](../../../methods/tissue-source-search-spec-v1-20261101.md)在看结果之前冻结。
+- `search_tissue_sources_v1.py`：GEO E-utilities检索14个癌种，加CELLxGENE curation API。共969行（GEO 953、CXG 16），检索日志见`inventories/source_search/search_log_v1.json`。
+- `screen_tissue_candidates_v1.py`：第一层按系列级规则过滤（人、3–300个样本、非已知来源、非功能实验或bulk、有发表、有计数文件、标题为肿瘤组织）；第二层对每个癌种前20个逐个读GSM记录，看物种、患者/组织/治疗字段、分选/血液/非scRNA用词。共152个进入第二层，结果见`shortlist_auto_v1.tsv`。
+- 人工预判（依据标题与GSM字段，**尚未核原始矩阵与论文**）：[candidates_curated_v1.tsv](../../../inventories/source_search/candidates_curated_v1.tsv)，A/B/C三级，共63条。胶质瘤没有A级（自动检索偏向plate-based研究，需要定向补检）；PanNET、RMC只有B级。
+
+### 现有来源复核（第2步）
+[existing_source_fitness_v1.tsv](../../../inventories/data_gaps/existing_source_fitness_v1.tsv)：按冻结的必需字段（患者编号、取样部位、治疗状态、≥3名患者）复核。保留23个来源（449个单位/357名患者）；待补充表17个（302/255）——补不齐的排除；建议排除3个：GSE163558（患者无法配对）、CXG SPECTRUM卵巢（6个单位来自同1名患者）、GSE228501（患者与治疗都不明）。**尚未执行，等用户确认。**

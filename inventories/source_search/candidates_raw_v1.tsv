@@ -1,0 +1,970 @@
+repository	target	accession	title	n_samples	pubmed	date	supp	platform	flags
+GEO	Diffuse glioma	GSE287109	Single Cell multi-omics identifies VEGFA-mediated angiogenesis results in relapse in Sonic Hedgehog Medulloblastoma [snRNA-seq]	12		2026/10/27	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE287108	Single Cell multi-omics identifies VEGFA-mediated angiogenesis results in relapse in Sonic Hedgehog Medulloblastoma	13		2026/10/27	BED, CSV, MTX, TBI, TSV	24676	
+GEO	Diffuse glioma	GSE316186	Non-neoplastic PSMA expression precludes/limits effective PSMA-targeted theranostics in glioma	6		2026/10/25	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE344381	Molecular Characterization of the Immunological Landscape in Human Brain Tumors	20		2026/10/19	CSV, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE311451	Engineered in vitro microvascular model of the blood-brain-tumor barrier to probe vascular biology of pediatric diffuse midline glioma	6	42522141	2026/10/15	RDS, TAR	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE349606	Clinical-scale manufacturing of CD137+ enriched tumor-reactive T cells for glioblastoma in the CliniMACS Prodigy System	35		2026/10/07	CSV, MTX, TSV, TXT	30173;21697	
+GEO	Diffuse glioma	GSE346465	A Syngeneic Murine Glioma Model Recapitulates Key Molecular, Immunologic, and Functional Features of Human Glioblastoma Enabling Therapeutic Development	14		2026/10/05	H5AD, MTX, RDS, TSV, XLSX	24247;24676	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE349283	Shared molecular regulation of quiescence in neural and glioma stem cells reveals therapeutic vulnerabilities	4		2026/10/01	CSV, MTX, TSV, TXT	28038	title_suggests_nontissue
+GEO	Diffuse glioma	GSE339010	Ultrasound-Mediated BBB Opening Promotes Microglial Reprogramming and Enhanced Endothelial Interactions in the Human Peritumoral Brain [scRNA-Seq]	14		2026/10/01	MTX, TSV	34284	
+GEO	Diffuse glioma	GSE338996	Ultrasound-Mediated BBB Opening Promotes Microglial Reprogramming and Enhanced Endothelial Interactions in the Human Peritumoral Brain [Multiome_scATAC_RNAseq]	8		2026/10/01	H5, MTX, TBI, TSV	34284	
+GEO	Diffuse glioma	GSE185214	Single cell multi-modal analysis of GBO and CAR-T cell co-culture	58		2026/10/01	TXT	21697	title_suggests_nontissue
+GEO	Diffuse glioma	GSE348845	A multimodal precision oncology platform integrating genomics, single-cell transcriptomics, and functional drug screening expands therapeutic options in pediatric brain tumors	18		2026/09/30	MTX, TSV	24676;34281	
+GEO	Diffuse glioma	GSE347233	Integrated genetic screening identifies FEN1 as a selective vulnerability and mediator of temozolomide resistance in glioblastoma stem cells	4		2026/09/17	TXT	30173	
+GEO	Diffuse glioma	GSE294657	Chimeric antigen receptor-microglia targeting glioblastoma within cortical organoid	4		2026/09/15	MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE286944	Vimentin and compressive forces shape genome integrity and cell survival	6	42698021	2026/09/05	TXT	30173	
+GEO	Diffuse glioma	GSE339482	Decoding Plasticity Regulators and Transition Trajectories in Glioblastoma with Single-cell Multiomics [scRNA-Seq]	15		2026/08/24	H5AD	34284	
+GEO	Diffuse glioma	GSE336321	Decoding Plasticity Regulators and Transition Trajectories in Glioblastoma with Single-cell Multiomics [ATAC-seq]	80		2026/08/24	BIGWIG, CSV, XLS	30173	
+GEO	Diffuse glioma	GSE294940	Decoding Plasticity Regulators and Transition Trajectories in Glioblastoma with Single-cell Multiomics	181		2026/08/24	BIGWIG, XLS	24676;30173;34284	
+GEO	Diffuse glioma	GSE294939	Decoding Plasticity Regulators and Transition Trajectories in Glioblastoma with Single-cell Multiomics [RNA-seq]	74		2026/08/24	TSV	34284;24676	
+GEO	Diffuse glioma	GSE294518	Decoding Plasticity Regulators and Transition Trajectories in Glioblastoma with Single-cell Multiomics [CUT&RUN]	12		2026/08/24	BED, BIGWIG, NARROWPEAK	30173	
+GEO	Diffuse glioma	GSE344470	Reconstructing the single-cell spatiotemporal dynamics of glioblastoma invasion	12		2026/08/21	MTX, TSV	35268	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE301788	Uncovering glioblastoma (GBM) origin cells: Isolation and characterization from the subventricular zone (SVZ).	32	42562888	2026/08/18	H5	20795;24676	
+GEO	Diffuse glioma	GSE301111	Dissecting cellular state alterations critical for the synergistic response and therapy resistance of the combined Abemaciclib, Temozolomide, and Radiation in DIPG PDOX models	14	42532370	2026/08/07	MTX, TSV	34284;34290	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE319338	Distinct transcriptional and functional modules mediate resistance to targeted therapy in glioblastoma	13		2026/07/27	CSV, MTX, TSV	34328;34281	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE261042	Autophagy Inhibition Sensitizes Radiotherapy Responses in High-grade Mutant IDH1 Glioma	4	42760279	2026/07/09	MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE337246	Integrated single-cell profiling of RNA and DNA interactomes reveals targetable chromatin architectures in cancer [scRNA-Seq organoids]	35		2026/07/08	XLSX	16791	
+GEO	Diffuse glioma	GSE337829	Integrated single-cell profiling of RNA and DNA interactomes reveals targetable chromatin architectures in cancer [ChIP-Seq]	32		2026/07/07	BIGWIG	16791	
+GEO	Diffuse glioma	GSE305709	IVT-Free, in silico-synthesized protein-encoding RNA Oligonucleotides for rapid production of personalized cancer vaccines	21	42461762	2026/07/03	CSV	24247;24676	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE336326	CD99 Is a Novel Immunotherapy Target in Diffuse Midline Glioma: Fratricide-Resistant CAR T Cells Enable Durable Tumor Control	3		2026/06/30	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE296419	The critical role of the host endogenous immune compartment after intracerebroventricular CAR T cell therapy in recurrent GBM	143	42296961	2026/06/30	CSV, H5, RDS, TSV, XLSX	24676;18573;34281	
+GEO	Diffuse glioma	GSE318564	Mapping the spatial architecture of glioblastoma from core to edge delineates niche-specific tumor cell states and intercellular interactions [scRNA-seq]	13		2026/06/12	TAR	18573	
+GEO	Diffuse glioma	GSE301343	NQO1-Mediated Oxidative Stress Resistance and Tumor Microenvironment Remodeling in Glioblastoma	6	41738493	2026/05/27	TXT	30209	
+GEO	Diffuse glioma	GSE331374	Glioma-intrinsic MAPK/ERK signaling promotes immunotherapy efficacy through T cell infiltration and interferon responses	8	42350396	2026/05/21	H5, TAR	21697	
+GEO	Diffuse glioma	GSE328755	Overexpression of galectin-1 promotes cell invasion of unique migratory glioblastoma subpopulation in tumor-brain mechanical interface model	5		2026/05/01	H5AD	24676;30882	
+GEO	Diffuse glioma	GSE263652	Human cerebellar organoids to study medulloblastoma pathogenesis and treatment. [scRNA-Seq]	17		2026/04/30	MTX, TSV, TXT	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE324878	Elongin B orchestrates chromatin and transcriptional programs in H3K27M‑mutant diffuse midline glioma [XIII_ELOB_CUTandRUN]	21	42239282	2026/04/27	BIGWIG	20795	
+GEO	Diffuse glioma	GSE324873	Elongin B orchestrates chromatin and transcriptional programs in H3K27M‑mutant diffuse midline glioma [XIII_K27MKO_CUTandRUN]	10		2026/04/27	BIGWIG	20795	
+GEO	Diffuse glioma	GSE292130	Longitudinal changes in DNA methylation in IDH-mutant glioma fuel disease progression through altered cell state differentiation [scRNA-seq]	31	42332268	2026/04/27	RDS	24676;30173	
+GEO	Diffuse glioma	GSE324860	Acquired genetic and cell state changes in IDH-mutant glioma progression [organoids]	6	42236943	2026/04/23	MTX, TSV	34284	
+GEO	Diffuse glioma	GSE324714	Acquired genetic and cell state changes in IDH-mutant glioma progression [coculture experiments]	16	42236943	2026/04/20	MTX, TSV	34284;35012	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE324694	Acquired genetic and cell state changes in IDH-mutant glioma progression 	10	42236943	2026/04/20	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE324481	Acquired genetic and cell state changes in IDH-mutant glioma progression	4	42236943	2026/04/20	MTX, TSV	11154	
+GEO	Diffuse glioma	GSE327941	Exploring the immune environment of glioblastoma in humanized mouse models	3	41913047	2026/04/19	CSV, MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE328077	Cultured ex vivo human brain tissue maintains cell-type transcriptional identities	12	41958918	2026/04/16	H5	24676	
+GEO	Diffuse glioma	GSE302307	PP2A Regulates Senescence and Immunogenicity in Medulloblastoma	24	42085538	2026/04/11	CSV, TXT, XLSX	24676;24247	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE305549	Deciphering hypoxia related glioblastoma-associated macrophages and predicting prognostic markers by single-cell, spatially-resolved transcriptomics and experimental analysis	17		2026/04/10	MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE326484	Combined dopamine receptor inhibition and radiotherapy target mesothelioma-initiating cells and increase survival in a mouse model of mesothelioma [scRNA-Seq]	4		2026/04/04	MTX, TSV	18573	title_suggests_nontissue
+GEO	Diffuse glioma	GSE326187	Combined dopamine receptor inhibition and radiotherapy target mesothelioma-initiating cells and increase survival in a mouse model of mesothelioma	12		2026/04/01	TXT	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE315516	Glioblastoma cells imitate neuronal excitability in humans	82	41857760	2026/04/01	TSV	18573	
+GEO	Diffuse glioma	GSE292623	A longitudinal single-cell and spatial multiomic atlas of pediatric high-grade glioma	18	42030938	2026/03/11	TXT	24676	
+GEO	Diffuse glioma	GSE288463	AMBRA1 as a novel positive regulator of the SHH pathway in medulloblastoma [scRNA-seq]	2		2026/03/09	MTX, TSV	34281	
+GEO	Diffuse glioma	GSE282771	CD47 activates ROBO2 signaling to regulate glioblastoma cell plasticity and metabolism	6	41871254	2026/03/09	TSV	18573	
+GEO	Diffuse glioma	GSE205248	H3K27me3 spreading organizes canonical PRC1 chromatin architecture to regulate developmental programs [scRNA-seq]	11	42151415	2026/03/09	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE205246	H3K27me3 spreading organizes canonical PRC1 chromatin architecture to regulate developmental programs [RNA-seq]	25	42151415	2026/03/09	SF	24247;24676	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE205245	H3K27me3 spreading organizes canonical PRC1 chromatin architecture to regulate developmental programs [ChIP-seq]	105	42151415	2026/03/09	BROADPEAK, BW	16791;20301;24247;24676	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE310974	Hypatia: a statistical framework for single-cell RNA isoform data analysis	1	41648631	2026/03/05	GTF, TSV	26167	
+GEO	Diffuse glioma	GSE309579	Integrative Single-Cell RNA and ATAC Sequencing Uncovers Dosage-Sensitive, Cluster-Specific Regulatory Dynamics in Glioblastoma	6		2026/02/16	TSV	11154	
+GEO	Diffuse glioma	GSE292046	Adjuvant personalized multivalent neoantigen DNA vaccination for MGMT unmethylated glioblastoma: a phase I trial [scRNA-seq]	8	42120910	2026/02/10	H5	24676	KNOWN_SOURCE
+GEO	Diffuse glioma	GSE318286	Targeting SAGA/ATAC disrupts chromatin regulation and cholesterol metabolism in diffuse midline glioma [CUT&Run]	10		2026/02/05	BED, BIGWIG	24676	
+GEO	Diffuse glioma	GSE298718	Decoding glioblastoma invasion: single-cell profiling of environmental and cell cycle effects in tumour assembloids	7	41959666	2026/02/05	H5AD, MTX, TSV, TXT	24676;34284	
+GEO	Diffuse glioma	GSE303662	Cellular heterogeneity and therapeutic response profiling of human IDH+ glioma stem cell cultures	4	41423517	2026/01/28	MTX, TSV	18573	
+GEO	Diffuse glioma	GSE303069	Cellular heterogeneity and therapeutic response profiling of human IDH-wildtype glioma stem cell cultures	18	41423517	2026/01/28	TSV	18573	
+GEO	Diffuse glioma	GSE310935	Systemic immune correlates of long-term survival after Delta-24-RGD based on the therapeutic adenovirus for recurrent glioblastoma effect trial (TARGET)	14	41609523	2026/01/24	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE286518	Integrative CSF profiling identifies disease-specific immune responses in leptomeningeal disease	42	41794040	2026/01/20	CSV, TXT	24676	
+GEO	Diffuse glioma	GSE285564	Single-cell transcriptome comparison of myeloid cells’ in the retina in response to transplantation of human stem-cell derived neurons and to ocular damage reveals the reversibility of the microglia activation.	3		2025/12/12	LOOM, MTX, TSV	30173;30172	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE304030	oHSV-mediated JAG1 blockade induces glioma senescence-associated secretory phenotype to increase macrophage activation and sensitize to cetuximab-mediated senolysis	24		2025/12/11	CSV	25526	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE303830	oHSV-mediated JAG1 blockade induces glioma senescence-associated secretory phenotype to increase macrophage activation and sensitize to cetuximab-mediated senolysis I	8		2025/12/11	CSV	24676	
+GEO	Diffuse glioma	GSE300150	Single-cell multidimensional profiling of tumor cell heterogeneity in supratentorial ependymomas [scRNA-Seq]	55	41813893	2025/12/09	CSV, MTX, TSV	21697;35956	multi_species:Homo sapiens; Rattus norvegicus
+GEO	Diffuse glioma	GSE260452	Single-cell multidimensional profiling of tumor cell heterogeneity in supratentorial ependymomas	111	41813893	2025/12/09	CSV, MTX, PARQUET, TIFF, TSV	35956;21697;33762	multi_species:Homo sapiens; Rattus norvegicus
+GEO	Diffuse glioma	GSE303831	oHSV-mediated JAG1 blockade induces glioma senescence-associated secretory phenotype to increase macrophage activation and sensitize to cetuximab-mediated senolysis II	24		2025/12/05	CSV	24676	
+GEO	Diffuse glioma	GSE305987	A Tonic Signaling Code Governs CAR-T Cell Efficacy in Diffuse Midline Glioma	4	41256549	2025/12/04	MTX, TSV	34281	title_suggests_nontissue
+GEO	Diffuse glioma	GSE281796	A blueprint for local and distal glioblastoma invasion programs	23	41844611	2025/11/30	CSV, H5, JPG, JSON, MTX, PNG, TSV	30173;24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE275484	A functional subpopulation of human glioma associated macrophages linked to malignant glioma progression -RNA-seq	8		2025/11/30	CSV	24676	
+GEO	Diffuse glioma	GSE275225	A functional subpopulation of human glioma associated macrophages linked to malignant glioma progression [scRNA-seq]	20		2025/11/30	CSV, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE275224	A functional subpopulation of human glioma associated macrophages linked to malignant glioma progression [scATAC-seq]	21		2025/11/30	CSV, H5, TSV	24676	
+GEO	Diffuse glioma	GSE272216	A functional subpopulation of human glioma associated macrophages linked to malignant glioma progression	7		2025/11/30	BW, NARROWPEAK	24676	
+GEO	Diffuse glioma	GSE311464	Digital twins for in vivo metabolic flux estimations in patients with brain cancer II	7		2025/11/29	MTX, TSV	24247;25526	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE311151	Digital twins for in vivo metabolic flux estimations in patients with brain cancer	12	41330373	2025/11/28	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE289864	Role of MAIT cells in Glioblastoma	46	41030524	2025/11/14	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE290255	Key Regulatory Elements of the TGFβ-LRRC15 Axis Predict Disease Progression and Immunotherapy Resistance Across Cancer Types	12		2025/10/08	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE215245	Elimination of dormant cancer stem cells by disrupting glucocorticoid mediated lipid metabolism in glioblastoma	59		2025/10/05		20301;17021;11154	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE214858	Elimination of dormant cancer stem cells by disrupting glucocorticoid mediated lipid metabolism in glioblastoma I	24		2025/10/05	TXT	20301	
+GEO	Diffuse glioma	GSE303152	Neuronal-Activity Dependent Mechanisms of Small Cell Lung Cancer Pathogenesis	36	40931074	2025/09/10	H5, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE283621	Single-cell multi-omics analysis identifies metabolism-linked epigenetic reprogramming as a driver of therapy-resistant medulloblastoma	79	41290646	2025/09/01	BIGWIG, BW, NARROWPEAK	24676	
+GEO	Diffuse glioma	GSE283620	Single-cell multi-omics analysis identifies metabolism-linked epigenetic reprogramming as a driver of therapy-resistant medulloblastoma [scRNA-seq]	6	41290646	2025/09/01	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE283619	Single-cell multi-omics analysis identifies metabolism-linked epigenetic reprogramming as a driver of therapy-resistant medulloblastoma [Multiome]	30	41290646	2025/09/01	CSV, MATRIX	24676	
+GEO	Diffuse glioma	GSE283606	Single-cell multi-omics analysis identifies metabolism-linked epigenetic reprogramming as a driver of therapy-resistant medulloblastoma [PDX Multiome]	8	41290646	2025/09/01	TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE283603	Single-cell multi-omics analysis identifies metabolism-linked epigenetic reprogramming as a driver of therapy-resistant medulloblastoma [CUT&RUN]	29	41290646	2025/09/01	BED, BIGWIG	24676	
+GEO	Diffuse glioma	GSE283440	Single-cell multi-omics analysis identifies metabolism-linked epigenetic reprogramming as a driver of therapy-resistant medulloblastoma [ATAC_seq]	6	41290646	2025/09/01	BW, NARROWPEAK	24676	
+GEO	Diffuse glioma	GSE284269	Effect of fibulin-3 knockdown in glioblastoma stem cells	12		2025/08/18	TXT	11154	
+GEO	Diffuse glioma	GSE304761	Chronic IFN-γ Exposure Drives Divergent Cellular and Molecular Responses in Glioblastoma Subtypes	30		2025/08/12	CSV	24676	
+GEO	Diffuse glioma	GSE247824	Single-cell RNAseq analysis of peripheral blood and tumor infiltration immune cells in glioblastoma	37	40974256	2025/08/04	MTX, TSV, TXT	24676;21697	
+GEO	Diffuse glioma	GSE276283	A functional subpopulation of human glioma associated macrophages linked to malignant glioma progression [mtscATAC-seq]	6		2025/08/01	TSV	34281	
+GEO	Diffuse glioma	GSE229901	INSM1 governs a neuronal progenitor state that drives glioblastoma in a human stem cell model	15	41354838	2025/07/15	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE256066	Proneural-Mesenchymal hybrid glioblastoma cells are resistant to therapy and dependent on nuclear import_scRNAseq	1	40627673	2025/07/09	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE256065	Proneural-Mesenchymal hybrid glioblastoma cells are resistant to therapy and dependent on nuclear import_scChIPseq	4	40627673	2025/07/09	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE256064	Proneural-Mesenchymal hybrid glioblastoma cells are resistant to therapy and dependent on nuclear import-bulk RNAseq	56	40627673	2025/07/09	CSV	24676	
+GEO	Diffuse glioma	GSE253573	Single-nuclei ATAC-Seq profiles from Group 3 and Group 4 medulloblastomas [scATAC-Seq]	33	40335697	2025/07/09	TAR	24676	
+GEO	Diffuse glioma	GSE253557	Single-nuclei RNA-Seq profiles from Group 3 and Group 4 medulloblastomas [scRNA-Seq]	39	40335697	2025/07/09	TAR	24676	
+GEO	Diffuse glioma	GSE253648	Temporal multi-omic profiling reveals chemoradiotherapy-specific dualistic metabolic rewiring that supports glioblastoma tumor recurrence (scRNA-Seq)	5	39798085	2025/07/02	H5	30173	title_suggests_nontissue
+GEO	Diffuse glioma	GSE253464	Temporal multi-omic profiling reveals chemoradiotherapy-specific dualistic metabolic rewiring that supports glioblastoma tumor recurrence (Bulk RNA-Seq)	12	39798085	2025/07/02	CSV	18573	title_suggests_nontissue
+GEO	Diffuse glioma	GSE300210	Drug and single-cell gene expression integration identifies sensitive and resistant glioblastoma cell populations [RNA-Seq]	9	40462892,41501023	2025/06/23	CSV	18573	
+GEO	Diffuse glioma	GSE290468	STAMP: Single-Cell Transcriptomics Analysis and Multimodal Profiling through Imaging	169	40532697	2025/06/23	CSV, MTX, PARQUET, QS, TSV	34284;33484;33896;31217;33762	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus; synthetic construct
+GEO	Diffuse glioma	GSE199595	Single RNA-Seq on GBM cells from human GBM sample	1	36929001	2025/06/19	MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE270083	The invasion phenotypes of glioblastoma depend on plastic and reprogrammable cell states	24	40683881	2025/06/15	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE292732	A pilot trial of perioperative IDH Inhibition in treatment-naïve IDH-mutant glioma 	11	40841487	2025/06/02	TSV	34281	
+GEO	Diffuse glioma	GSE287372	Newly-diagnosed IDHwt MGMT unmethylated glioblastoma patients treated with standard radiation, nivolumab, and BMS-986205 [scRNA-seq]	3		2025/06/02	MTX, TSV	20301	
+GEO	Diffuse glioma	GSE232316	Multi-pronged analysis of Pediatric Low-Grade Glioma	30	40588233	2025/05/30	CSV, MTX, TIFF, TSV	24676	
+GEO	Diffuse glioma	GSE289368	Engineering Sonogenetic EchoBack-CAR T cells	2	40179881	2025/05/29	MTX, TSV	30173	
+GEO	Diffuse glioma	GSE248543	Optimized culturing yields high success rates and preserves molecular heterogeneity, enabling personalized screening for high-grade gliomas [scRNA-seq]	10	40425813	2025/05/27	TXT	18573	title_suggests_nontissue
+GEO	Diffuse glioma	GSE246293	Astrocyte-driven suppression of tumor-specific T-cell immunity in glioblastoma	102	40399681	2025/05/21	H5, TAR	20795;21273;24247	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE292705	Gene expression profile of CD8+ T cells in glioblastoma after ex vivo treatment of anti-PD-1 and/or galunisertib.	20		2025/05/12	CSV	11154	
+GEO	Diffuse glioma	GSE292704	Gene expression profile of CD8+ T cells sorted from single cell suspensions of tumors and peripheral blood of glioblastoma patients.	4		2025/05/12	TAR	24676	
+GEO	Diffuse glioma	GSE211376	Harmonized single-cell landscape, intercellular crosstalk and tumor architecture of glioblastoma	11	40312969	2025/05/09	CSV, TSV	21697	
+GEO	Diffuse glioma	GSE202174	Single-cell RNA-sequencing reveals enrichment of different macrophage subsets following radiation or anti-CD47 therapy in Diffuse Midline Glioma and Glioblastoma	9		2025/05/01	CSV, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE294545	Metabolic licensing of quiescent glioblastoma activation and immune evasion via astrocyte-mitochondria shuttle	20		2025/04/30	BW	24676	
+GEO	Diffuse glioma	GSE293771	H3F3A K27M Mutations Drive a Repressive Transcriptome by Modulating Chromatin Accessibility, Independent of H3K27me3 in Diffuse Midline Glioma [RNA-seq]	36	40287708	2025/04/30	CSV	24676	
+GEO	Diffuse glioma	GSE293770	H3F3A K27M Mutations Drive a Repressive Transcriptome by Modulating Chromatin Accessibility, Independent of H3K27me3 in Diffuse Midline Glioma [ATAC-seq]	6	40287708	2025/04/30	BED	24676	
+GEO	Diffuse glioma	GSE287630	Investigative needle core biopsies support multimodal deep-data generation in glioblastoma [scRNA-seq]	7	38234840,40295505	2025/04/28	H5	24676	
+GEO	Diffuse glioma	GSE287629	Investigative needle core biopsies support multimodal deep-data generation in glioblastoma [BulkRNA-seq]	8	38234840,40295505	2025/04/28	TSV	15520	
+GEO	Diffuse glioma	GSE263612	Bi-directional immunosuppressive interactions between astrocytes and glioblastoma cells identified by barcoded viral tracing [Human Single Cell Dataset]	12	40562937	2025/04/28	RDS	24676	
+GEO	Diffuse glioma	GSE214804	Whole proteome and transcriptome analysis of cancer-derived EVs overlap in specific pathways and distinct EV population	10		2025/04/22	TXT	24676	
+GEO	Diffuse glioma	GSE294744	Post-Radiotherapy GSCs EGR1-Induced GAL3 Upregulation and T Cell Exhaustion in GBM	12	41213464	2025/04/20	TXT	30209	
+GEO	Diffuse glioma	GSE294901	 Measles oncolytic virus as an immunotherapy for recurrent/refractory pediatric medulloblastoma and atypical teratoid rhabdoid tumor: results from PNOC005 	84	40540301	2025/04/17	TXT	19057;18573	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE217892	Intratumoral heterogeneity of glioblastoma is attributed to precancerous cells derived from neural stem cells	29	40233712	2025/04/10	MTX, TSV	21273;24676	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE290725	Neurodevelopmental hijacking of oligodendrocyte lineage programs drives glioblastoma infiltration [methylation]	279	40381621	2025/04/01	CSV, H5	34281	
+GEO	Diffuse glioma	GSE274987	Neurodevelopmental hijacking of oligodendrocyte lineage programs drives glioblastoma infiltration [snRNAseq]	3	40381621	2025/04/01	CSV, MTX, RDS	24676	
+GEO	Diffuse glioma	GSE274986	Neurodevelopmental hijacking of oligodendrocyte lineage programs drives glioblastoma infiltration [scMultiome]	26	40381621	2025/04/01	MTX, RDS, TSV	34281	
+GEO	Diffuse glioma	GSE292617	CREsted: modeling genomic and synthetic cell type-specific enhancers across tissues and species	6	41927920	2025/03/28	BW, NARROWPEAK	34281	
+GEO	Diffuse glioma	GSE271619	A novel Induced-recurrence PDX model recapitulates epi-genomic features of Glioblastoma recurrence [scRNA-seq]	12		2025/03/20	MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE283496	Genetically Engineered Brain Organoids Recapitulate Spatial and Developmental States of Glioblastoma Progression [scRNA-seq]	4	39836549	2025/03/19	CSV, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE268582	Glioblastoma progression is hindered by melatonin-primed mesenchymal stromal cells through dynamic intracellular and extracellular reorganizations	9	40083939	2025/03/19	CSV	18573	
+GEO	Diffuse glioma	GSE283747	17q21.31 locus regulates Parkinson’s disease relevant pathways through KANSL1 activity	54		2025/03/17	CSV, RDS	24676	
+GEO	Diffuse glioma	GSE261235	Expansion of endogenous T cells in CSF of pediatric and young adult CNS tumor patients undergoing locoregional delivery of IL13R⍺2-targeting CAR T cells: an interim analysis	37		2025/03/14	CSV, MTX, RDS, TSV, TXT, XLSX	24676	
+GEO	Diffuse glioma	GSE260907	Three-dimensional regulatory hubs support oncogenic programs in glioblastoma [scRNA-seq]	2	40147440	2025/03/06	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE262089	Three-dimensional regulatory hubs support oncogenic programs in glioblastoma	56	40147440	2025/03/04	BED, BEDPE, HIC, MTX, TSV, TXT	24676;34295;30173	
+GEO	Diffuse glioma	GSE227983	Immune and tumor cell landscape in pediatric high grade gliomas	15	40315846	2025/02/17	CSV	18573	
+GEO	Diffuse glioma	GSE231490	Drug and single-cell gene expression integration identifies sensitive and resistant glioblastoma cell populations	18	40462892,40661457,41501023	2025/01/31		24676;18573	
+GEO	Diffuse glioma	GSE231489	Drug and single-cell gene expression integration identifies sensitive and resistant glioblastoma cell populations [PDX GBM22 orthotopic xenografts]	3	40462892,41501023	2025/01/31	RDS, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE229779	Drug and single-cell gene expression integration identifies sensitive and resistant glioblastoma cell populations [patient glioblastoma tumors]	6	40661457,41501023	2025/01/31	RDS, TSV	18573	
+GEO	Diffuse glioma	GSE288052	TGFBR2-High mesenchymal glioma stem cells phenocopy regulatory T cells to suppress CD4+ and CD8+ T cell function	2		2025/01/27	CSV, H5	24676	
+GEO	Diffuse glioma	GSE278456	Distinct Myeloid Derived Suppressor Cell Populations in Human Glioblastoma	39	39818911	2025/01/23	H5, RDS	24676	
+GEO	Diffuse glioma	GSE276841	Distinct Myeloid Derived Suppressor Cell Populations in Human Glioblastoma	2	39818911	2025/01/23	CSV, H5, JPG, JSON, PNG, TIFF	24676	
+GEO	Diffuse glioma	GSE193525	TTFields plus TMZ treatment effects on newly diagnosed Glioblastoma patients in peripheral blood	24		2025/01/01	MTX, RDS, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE285545	Radiation-Induced Cellular Plasticity Primes Glioblastoma for Forskolin-Mediated Differentiation [bulk RNA-seq]	9	40009641	2024/12/30	CSV	24676	
+GEO	Diffuse glioma	GSE285544	Radiation-Induced Cellular Plasticity Primes Glioblastoma for Forskolin-Mediated Differentiation [Day21]	1	40009641	2024/12/30	CSV, MTX	18573	
+GEO	Diffuse glioma	GSE285543	Radiation-Induced Cellular Plasticity Primes Glioblastoma for Forskolin-Mediated Differentiation [Day 5]	1	40009641	2024/12/30	CSV, MTX	18573	
+GEO	Diffuse glioma	GSE274460	Brain-wide neuronal circuit connectome of human glioblastoma	3	39821165	2024/12/20	CSV, MTX, TSV	21697	title_suggests_nontissue
+GEO	Diffuse glioma	GSE273274	scRNA-seq of brain glioblastoma sample	6	39933531	2024/12/11	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE208074	Low-Intensity Pulsed Ultrasound Effects on the Human Blood Brain Barrier	12		2024/12/02	MTX, TSV	18573	
+GEO	Diffuse glioma	GSE268776	Multi-omics approaches reveal that Diffuse Midline Gliomas are susceptible to replication stress therapy and cholesterol biosynthesis inhibition [RNA-seq]	64	39707510	2024/11/20	TXT	24676	
+GEO	Diffuse glioma	GSE273013	SUV39H1 Maintains Cancer Stem Cells in Glioblastoma [ATAC-seq]	4	40059829	2024/11/06	BED, BW	21697	
+GEO	Diffuse glioma	GSE273012	SUV39H1 Maintains Cancer Stem Cells in Glioblastoma [RNA-seq]	8	40059829	2024/11/06	TAB, TXT	16791	
+GEO	Diffuse glioma	GSE276177	Divergence from the human astrocyte developmental trajectory in glioblastoma	10	39779941	2024/10/31	H5, TBI, TSV	24676	
+GEO	Diffuse glioma	GSE277301	Gliocidin is a nicotinamide mimetic prodrug that targets glioblastoma	16	39567689,40661457	2024/10/30	CSV, RDS	24247;24676	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE278450	Glioblastoma scRNA-seq shows treatment-induced, immune-dependent increase in mesenchymal cancer cells and structural variants in distal neural stem cells	22	35416251	2024/10/25	CSV, TSV	20301	
+GEO	Diffuse glioma	GSE244433	Human single cell RNA-sequencing reveals a targetable CD8+ exhausted T cell population that maintains murine low-grade glioma growth	16	39609412	2024/10/23	CSV, MTX, TSV	24247;24676	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE276838	Glioblastoma-cortical organoids recapitulate cell state heterogeneity and intercellular transfer	29		2024/10/01	TXT	30172;30173	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE271379	Single cell RNA sequencing of human primary glioblastoma	5		2024/10/01	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE268426	snPATHO-seq: unlocking the FFPE archives for single nucleus RNA profiling [snRNA-seq]	37	39414943	2024/10/01	H5	24676;21697	
+GEO	Diffuse glioma	GSE273621	Multi-omics Analysis Identifies Glioblastoma Dependency on H3K9me3 Methyltransferase Activity [ChIP-seq]	4		2024/09/22	BW	21697	
+GEO	Diffuse glioma	GSE273589	Multi-omics Analysis Identifies Glioblastoma Dependency on H3K9me3 Methyltransferase Activity	4		2024/09/22	CSV, TAB	16791	
+GEO	Diffuse glioma	GSE255536	In vivo dendritic cell reprogramming for cancer immunotherapy [organoid scRNA]	6	39236156	2024/09/05	TXT	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE253407	Droplet Hi-C enables scalable, single-cell profiling of chromatin architecture in heterogeneous tissues	24	39424717	2024/09/04	CSV, H5, PAIRS, TXT, XLS	30173;30172;24676;24247	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE275293	Tumor-Associated Microglia Secrete Extracellular ATP to Support Glioblastoma Progression	7		2024/08/30	TXT	24676	
+GEO	Diffuse glioma	GSE242044	Cerebrovasculature in brain malignancies from 13 surgical resected samples	13	39191260	2024/08/26	TAR	24676	
+GEO	Diffuse glioma	GSE241745	Single-cell  transcription and chromatin accessbility profiles of IDH mutant gliomas	14	39572850	2024/08/06	CSV, H5, TXT	18573	
+GEO	Diffuse glioma	GSE206899	Prtg+ve Rhombic Lip Ventricular Zone Stem Cells Initiate and Maintain Group 3 Medulloblastoma.	24	38971152	2024/08/06	TXT	24676;31136	multi_species:Homo sapiens; Mus
+GEO	Diffuse glioma	GSE206897	Prtg+ve Rhombic Lip Ventricular Zone Stem Cells Initiate and Maintain Group 3 Medulloblastoma [prtg_sort_scRNAseq]	6	38971152	2024/08/06	TXT	24676	
+GEO	Diffuse glioma	GSE237379	Prtg+ve Rhombic Lip Ventricular Zone Stem Cells Initiate and Maintain Group 3 Medulloblastoma [blood_vessels_PDXs_tumours_bulk]	10	38971152	2024/07/31	TXT	24676	
+GEO	Diffuse glioma	GSE162989	Single-cell/single-nucleus RNA-seq of diffuse hemispheric gliomas, H3G34-mutant.	9	39232581	2024/07/30	CSV	18573	
+GEO	Diffuse glioma	GSE214967	scRNA-Seq analysis of a glioblastoma patient sample after Vortioxetine or DMSO treatment	2	39304781	2024/07/29	MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE214966	scRNA-Seq analysis of adult glioblastoma patient samples	4	39304781	2024/07/25	MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE271961	Integrated electrophysiological and genomic profiles of single cells reveal spiking tumor cells in human glioma [Patch-Seq]	95		2024/07/23	MTX	24676	
+GEO	Diffuse glioma	GSE271959	Integrated electrophysiological and genomic profiles of single cells reveal spiking tumor cells in human glioma [scRNA-seq]	6		2024/07/23	MTX, TSV	18573	
+GEO	Diffuse glioma	GSE271618	Glioblastoma induces the recruitment and differentiation of hybrid neutrophils from skull bone marrow	2	39255776	2024/07/06	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE253080	Decoding Heterogeneous and Coordinated Tissue Architecture in Glioblastoma Using Spatial Transcriptomics	16	38947514,40867324	2024/07/03	CSV, JPG, JSON, MTX, PNG, TSV	24676	
+GEO	Diffuse glioma	GSE242966	METTL7B is an essential epigenetic regulator of lineage specification in glioblastoma [scRNAseq]	9	38848215	2024/07/01	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE242328	METTL7B is an essential epigenetic regulator of lineage specification in glioblastoma [RNAseq]	16	38848215	2024/07/01	CSV	24676	
+GEO	Diffuse glioma	GSE242326	METTL7B is an essential epigenetic regulator of lineage specification in glioblastoma [ChIPseq]	32	38848215	2024/07/01	BEDGRAPH, BW	24676	
+GEO	Diffuse glioma	GSE247977	Transcription factors ASCL1 and OLIG2 drive glioblastoma initiation and co-regulate tumor cell types and migration [ChIP-seq]	4	39609428	2024/06/30	BEDGRAPH	10999	
+GEO	Diffuse glioma	GSE270355	Spatial Transcriptome Assays Reveals Gliomas Heterogeneity	4	39257581	2024/06/23	PNG, TAR	24676	
+GEO	Diffuse glioma	GSE222520	Immune landscape of Isocitrate Dehydrogenase (IDH) stratified human gliomas [scRNA-seq]	21		2024/06/23	TAR	24676	
+GEO	Diffuse glioma	GSE222518	Immune landscape of Isocitrate Dehydrogenase (IDH) stratified human gliomas [RNA-Seq]	21		2024/06/23	TXT	20301	
+GEO	Diffuse glioma	GSE270109	Single-Cell Sequencing of IDH-Mutant Glioma	4	38989284	2024/06/21	TAR	24676	
+GEO	Diffuse glioma	GSE233304	Cranioencephalic functional lymphoid units in glioblastoma	55	39085419	2024/06/14	CSV, H5, MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE268576	Effect of BMP7 treatment overtime on H3.3K27M and H3.3 WT astrocytoma glioma cells (Res259)	18	39373720	2024/06/03	TSV	24676	
+GEO	Diffuse glioma	GSE261191	Epigenetic priming induces cancer testis antigens and human endogenous retroviruses in glioma for enhanced T cell responses at single cell resolution	44	38856710	2024/06/03	IDAT, MTX, TSV	23976;34284	
+GEO	Diffuse glioma	GSE261188	Epigenetic priming induces cancer testis antigens and human endogenous retroviruses in glioma for enhanced T cell responses at single cell resolution (scRNA-Seq)	4	38856710	2024/06/03	MTX, TSV	34284	
+GEO	Diffuse glioma	GSE261187	Epigenetic priming induces cancer testis antigens and human endogenous retroviruses in glioma for enhanced T cell responses at single cell resolution (bulk RNA-Seq)	20	38856710	2024/06/03	TXT	34284	
+GEO	Diffuse glioma	GSE222699	The OTX2-regulated alternative splicing landscape controls differentiation and reconstitutes the developmental origins of Group 3 medulloblastoma	8	39025928	2024/05/24	TXT	18573	
+GEO	Diffuse glioma	GSE263796	Gene expression profile at single level of 8 cell lines isolated from IDH1-mutant diffuse  glioma tumors	16	38659838	2024/05/17	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE262707	In vivo perturbomics identifies CALHM2 as a checkpoint of NK cell therapy [bulkRNAseq]	12	38918616	2024/05/09	TXT	24676	
+GEO	Diffuse glioma	GSE260997	Mutant IDH inhibitors induce lineage differentiation in IDH-mutant Oligodendroglioma III	2458		2024/05/01	TSV	30172;30173	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE260928	Mutant IDH inhibitors induce lineage differentiation in IDH-mutant Oligodendroglioma I	10	38579724	2024/05/01	TSV	30172;30173	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE259352	Pooled screening for CAR function in glioblastoma	4	39933837	2024/04/19		18573	title_suggests_nontissue
+GEO	Diffuse glioma	GSE208323	Exosomes targeting Myc reverse the proneural-mesenchymal transition and extend the survival of end-stage glioblastoma mice [DroNc-seq ]	4	37503329	2024/04/11	TSV	18573	
+GEO	Diffuse glioma	GSE261618	A heterogenous pharmaco-transcriptomic landscape induced by targeting a single oncogenic kinase	3	38645018	2024/04/09	CSV, MATRIX, RDS, TXT	18573	
+GEO	Diffuse glioma	GSE210736	 Chronic hypoxia remodels the tumor microenvironment to support glioma stem cell growth [scRNAseq+Multiome]	39	38528608	2024/04/03	H5, MTX, TSV, TXT, XLSX	24676	
+GEO	Diffuse glioma	GSE254917	Sonic hedgehog medulloblastoma cells in co-culture with cerebellar organoids converge towards in vivo malignant cell states	7	39896075	2024/04/01	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE234912	Targeting of REST with rationally-designed small-molecule compounds exhibits synergetic therapeutic potential in human glioblastoma cells	16	38609948	2024/03/27	TXT	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE207360	Mesenchymal glioma stem cells trigger vasectasia, a distinct neovascularization process mediated by extracellular vesicles carrying EGFR [scRNA-seq]	45	38570528	2024/03/04	DCC, PKC, RDS, TAR, XLSX	24247;26526;25431	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus; synthetic construct
+GEO	Diffuse glioma	GSE256493	Single-cell atlas of the human brain vasculature across development, adulthood and disease	118	38987604	2024/02/29	MTX, RDS, TSV, TXT, XLSX	24676	
+GEO	Diffuse glioma	GSE256492	Single-cell atlas of the human brain vasculature across development, adulthood and disease (bulk RNA-Seq)	31	38987604	2024/02/29	TXT	24676	
+GEO	Diffuse glioma	GSE256491	Single-cell atlas of the human brain vasculature across development, adulthood and disease (Extra Individuals)	16	38987604	2024/02/29	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE256490	Single-cell atlas of the human brain vasculature across development, adulthood and disease (scRNA-Seq)	71	38987604	2024/02/29	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE245674	Gene expression profile at single cell level of Anaplastic ependymoma (EPN) and H3K27M-mutant diffuse midline glioma (BG)	2	38383423	2024/02/28	MTX, TSV	20795	
+GEO	Diffuse glioma	GSE255850	Phase I Trial Evaluating Locoregionally-delivered IL13Rα2-targeting CAR T Cells in High-Grade Glioma	39	38454126	2024/02/20	CSV, MTX, RDS, TSV	24676	
+GEO	Diffuse glioma	GSE246057	Preclinical Optimization of the PI3K/Akt inhibitor Paxalisib for the Treatment of Diffuse Midline Glioma [ATAC-Seq]	6	38319732	2024/02/20	XLSX	24676	
+GEO	Diffuse glioma	GSE232725	Distinct responses of patient-derived GBM cell lines to hypoxia	12	38538643	2024/02/20	TXT	16791	
+GEO	Diffuse glioma	GSE242992	Transcriptomic and epigenetic dissection of spinal ependymomas (SP-EPN) identifies clinically relevant subtypes enriched for tumors with and without NF2 mutation [RNA-seq]	72	38265489	2024/01/26	CSV	24676	
+GEO	Diffuse glioma	GSE226726	Multiregional sampling of primary glioblastoma specimens	11		2024/01/18	CSV, H5, RDATA, TSV	24676	
+GEO	Diffuse glioma	GSE251908	Deciphering hypoxia related glioblastoma-associated macrophages and predicting prognostic markers by single-cell, spatially-resolved transcriptomics and experimental analysis	3		2024/01/02	TXT	24676	
+GEO	Diffuse glioma	GSE248420	Pycallingcards: an integrated environment for visualizing, analyzing, and interpreting Calling Cards data	22		2024/01/01	TXT	24676	
+GEO	Diffuse glioma	GSE248995	Identity and Nature of Neural Stem Cells in the Adult Human Subventricular Zone	15	38495819	2023/12/27	LOOM, TSV	20301	
+GEO	Diffuse glioma	GSE247380	Patient and xenograft-derived organoids recapitulate pediatric brain tumors features and patient treatments [scRNA-Seq]	3	38037472	2023/12/01	MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE230389	Single cell data from IDH mutant astroxytoma and IDH wildtype GBM tumor specimen	4	37938973	2023/12/01	MTX, TBI, TSV	24676	
+GEO	Diffuse glioma	GSE198522	KAT5 activity regulates quiescent-like states in human gliomas [scRNA-seq]	23		2023/12/01	MTX, TSV	11154	
+GEO	Diffuse glioma	GSE214469	Developmental Basis of SHH Medulloblastoma Heterogeneity	14	38191555	2023/11/21	H5	24676	
+GEO	Diffuse glioma	GSE197543	Single-cell characterization of human glioblastoma reveals regional differences in tumor-infiltrating leukocyte activation	14	38127790	2023/11/21	TAR, TXT	20301	title_suggests_nontissue
+GEO	Diffuse glioma	GSE247741	Single nuclei RNA-seq profiles from medulloblastoma tumors with extensive nodularity [methylation array]	9	38191550,40542418	2023/11/15	IDAT, TSV	21145;13534	
+GEO	Diffuse glioma	GSE247736	Spatial single cell RNA profiles from medulloblastoma tumors with extensive nodularity	5	38191550,40542418	2023/11/15	TIFF, TXT	33933	
+GEO	Diffuse glioma	GSE231860	Tumor and immune cell types interact to produce heterogeneous phenotypes of pediatric high grade glioma	37	37934854,40424183	2023/11/03	MTX, TSV, TXT	24676;16791	
+GEO	Diffuse glioma	GSE231859	Tumor and immune cell types interact to produce heterogeneous phenotypes of pediatric high grade glioma [scRNA-seq]	19	37934854,40424183	2023/11/03	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE239853	Single nuclei RNA-seq profiles from medulloblastoma tumors with extensive nodularity [bulk RNA-Seq]	26	38191550,40542418	2023/10/26	TXT	18573	
+GEO	Diffuse glioma	GSE214357	Single nuclei RNA-seq profiles from medulloblastoma tumors with extensive nodularity [scRNA-Seq]	15	38191550,40542418	2023/10/26	TSV	18573	
+GEO	Diffuse glioma	GSE226202	Genomic Exploration of Distinct Molecular Phenotypes Steering Temozolomide Resistance Development in  Patient-Derived Glioblastoma Cells	11	37958662	2023/10/24	TXT	18573	
+GEO	Diffuse glioma	GSE243501	Human cerebrospinal fluid impacts chemo-radiotherapy sensitivities in tumour cells from glioblastoma patients	14		2023/10/20	MTX, TSV, XLSX	24676;18573	
+GEO	Diffuse glioma	GSE237581	Dendritic Cell Vaccination in Conjunction with TLR Agonist Polarizes Interferon Immune Responses Associated with Long-term Survival in Malignant Glioma Patients	64	37790490	2023/10/11		24676	
+GEO	Diffuse glioma	GSE237579	Dendritic Cell Vaccination in Conjunction with TLR Agonist Polarizes Interferon Immune Responses Associated with Long-term Survival in Malignant Glioma Patients [scRNA-seq]	16	37790490	2023/10/11	MTX, RDS, TSV	24676	
+GEO	Diffuse glioma	GSE237562	Dendritic Cell Vaccination in Conjunction with TLR Agonist Polarizes Interferon Immune Responses Associated with Long-term Survival in Malignant Glioma Patients [Bulk RNA-seq]	48	37790490	2023/10/11	CSV, TXT	24676	
+GEO	Diffuse glioma	GSE214140	The Second Generation of CAR-iMACs with Enhanced Polarization, CAR-mediated Efferocytosis and Superior Potency against Solid Tumors	3		2023/09/29	TAR	18573	
+GEO	Diffuse glioma	GSE242790	Repeated peripheral infusions of anti-EGFRvIII CAR T cells in combination with pembrolizumab remodel the tumor microenvironment in de novo glioblastoma	30		2023/09/12	CSV, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE241037	spatiotemporal single-cell transcriptomics in mouse and human to investigate TAM evolution during GBM progression	51		2023/09/06	MTX, TSV	24247;19057;24676;18573	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE239651	Single-cell lineage tracing of ispinesib-resistant glioma cells	90	38652658	2023/09/01	TXT	24676;25526;18573	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE237673	scRNA of GBM tumors	11	39475570	2023/08/16	MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE224727	A cell state specific metabolic vulnerability to GPX4-dependent ferroptosis in glioblastoma	34	36865302	2023/08/16	TXT	18573;24676;19057	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE240822	Epigenetic regulation during cancer transitions across 11 tumour types.	91	37914932	2023/08/15	TAR, TSV	24676	
+GEO	Diffuse glioma	GSE237779	Tumor-associated monocytes promote mesenchymal transformation through EGFR signaling in glioma	11	37652019	2023/08/01	RDS	24676	
+GEO	Diffuse glioma	GSE162931	Single-cell RNA-seq analysis of IDH-wildtype glioblastoma in radiation time course	8	37451272	2023/07/17	TAR, XLSX	20301	
+GEO	Diffuse glioma	GSE234832	Single cell sequencing reveals the landscape of the brain metastatic microenvironment	5	37479733	2023/07/07	MTX, TSV	18573	
+GEO	Diffuse glioma	GSE224941	Restoring Tumor Immunogenicity with Dendritic Cell Reprogramming [scRNA-seq]	59	37418548,39236156	2023/07/07	TXT	24676	
+GEO	Diffuse glioma	GSE193745	Landscape of immune checkpoint blockade-induced immune alterations in the microenvironment of primary and metastatic brain tumors	18	37655659	2023/07/06	TXT, ZIP	24676	
+GEO	Diffuse glioma	GSE236082	Gene expression profile of T cells from Isocitrate Dehydrogenase (IDH) stratified human gliomas at single cell level	17	37248301	2023/06/29	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE235913	Siglec-9 acts as an immune checkpoint molecule on macrophages in glioblastoma, restricting T cell priming and immunotherapy response	51	37460871	2023/06/29	CSV, H5, JPG, JSON, MTX, PNG, TSV	21273;20795	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE235676	Siglec-9 acts as an immune checkpoint molecule on macrophages in glioblastoma, restricting T cell priming and immunotherapy response [scRNA-seq]	25	37460871	2023/06/29	MTX, RDS, TSV	20795;21273	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE222850	Drug-class specific gene-based MAPK sensitivity scores predict sensitivity to MAPK inhibitors in pediatric low-grade gliomas	6	37500667	2023/06/27	MTX, TSV	30173	
+GEO	Diffuse glioma	GSE231577	A designer peptide against the EAG2-Kvβ2 potassium channel targets the interaction of cancer cells and neurons to treat glioblastoma	8	37697045	2023/06/25	CSV, H5	16791	title_suggests_nontissue
+GEO	Diffuse glioma	GSE212559	Group-specific cellular metabolism in Medulloblastoma	6	37277823	2023/06/06	MTX, TSV	18573	
+GEO	Diffuse glioma	GSE222522	Immune landscape of Isocitrate Dehydrogenase (IDH) stratified human gliomas	59	37248301	2023/06/05	TAR, TXT	20301;24676	
+GEO	Diffuse glioma	GSE227644	A multicenter study of poor prognosis chromosome 1q gain and/or 6q loss in posterior fossa A ependymoma shows increased prevalence from 20% at diagnosis to 60% at first recurrence.	14	37246777	2023/06/01	CSV, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE210654	Translocator protein 18 kDa (TSPO) acts as an immune resistance gene involved in the T-cell mediated immune control of glioblastoma	12	37158962	2023/05/17	TXT	21697	
+GEO	Diffuse glioma	GSE219121	Spatiotemporal multi-omics decoding of the developing human spinal cord II	31	37095395	2023/04/25	H5	24676	
+GEO	Diffuse glioma	GSE219120	Spatiotemporal multi-omics decoding of the developing human spinal cord I	24	37095395	2023/04/25	H5, TAR	24676	
+GEO	Diffuse glioma	GSE227718	Single cell RNA-seq analysis of IDH-mutant gliomas	16	37055795	2023/03/25	TXT	24676	
+GEO	Diffuse glioma	GSE225775	Multiplex single-cell chemical genomics reveals the kinase dependence of the response to targeted anti-cancer therapy	4		2023/03/10	MATRIX, RDS, TXT	21697;30173;24676	
+GEO	Diffuse glioma	GSE226740	Identification of Human Pluripotent Stem Cell Derived Astrocytic Progenitors that Correlate with Glioblastoma Subtypes	2		2023/03/07	MTX, TSV	20301	
+GEO	Diffuse glioma	GSE222398	Patch-seq of human patient-derived diffuse midline glioma xenografts	134	37914930	2023/03/01	TXT	15520	
+GEO	Diffuse glioma	GSE199375	Transcriptome analysis of tumor and normal brain endothelial cells	8	36804058	2023/02/17	CSV	16791	
+GEO	Diffuse glioma	GSE224090	Single-cell RNA-seq characterization of glioblastoma	4		2023/01/31	H5	24676	
+GEO	Diffuse glioma	GSE195682	Characterization of the minimal residual disease state reveals distinct evlutionary trajectories of human glioblastoma [single-cell RNA-seq]	4	36170831	2023/01/23	CSV	16791	
+GEO	Diffuse glioma	GSE195681	Characterization of the minimal residual disease state reveals distinct evlutionary trajectories of human glioblastoma [Bulk RNA-seq]	5	36170831	2023/01/23	TAB	16791;24676	
+GEO	Diffuse glioma	GSE223063	Single-cell RNA sequencing of high- and low-functional connectivity glioblastomas	6	37138086,40404658	2023/01/20	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE167960	Single-cell RNA-seq data of human glioma	6	36599974	2023/01/11	TXT	20301	
+GEO	Diffuse glioma	GSE221534	Glioma epileptiform activity and progression are driven by IGSF3 mediated potassium dysregulation [human]	12		2023/01/01	MTX, TSV	18573	
+GEO	Diffuse glioma	GSE185269	scONE-seq: A one-tube single-cell multi-omics method enables simultaneous dissection of genotype and phenotype heterogeneity from frozen tumor samples	621	36598983	2022/12/31	CSV, TXT	18573;28038	
+GEO	Diffuse glioma	GSE217511	Single-nucleus transcriptomics atlas of middle and late prenatal human cortical development	36	36509746	2022/12/01	CSV, MTX, TSV, XLSX	24676	
+GEO	Diffuse glioma	GSE218331	SCOPE-seq Analysis of Intra-operative Labeling Specificity of 5-ALA for Glioblastoma	4		2022/11/30	TXT	18573	
+GEO	Diffuse glioma	GSE202371	Single-cell RNA sequencing reveals cellular and molecular reprograming landscape of brain tumors	14	36336787	2022/11/10	TSV, TXT	24676	
+GEO	Diffuse glioma	GSE184696	Chi3l1 is a modulator of glioma stem cell states and a therapeutic vulnerability for glioblastoma [scRNA-seq]	4		2022/10/24	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE184695	Chi3l1 is a modulator of glioma stem cell states and a therapeutic vulnerability for glioblastoma [RNA-seq]	4		2022/10/24	TXT	16791	
+GEO	Diffuse glioma	GSE195661	Spatial transcriptomics reveal unnresolved wound repair as potential driver of PFA Ependymoma progression	14	36215273	2022/10/13	H5, TIFF, TSV	24676	
+GEO	Diffuse glioma	GSE198565	Single cell transcriptional and chromatin accessibility profiling identify the cellular heterogeneity of human medulloblastoma	27	36450980	2022/10/08	BED, BW, HIC, MTX, RDS, TSV	18573;24676;16791	
+GEO	Diffuse glioma	GSE212782	BAF complex maintains glioma stem cells in pediatric H3K27M-glioma [scRNA-seq]	1728	36305736	2022/09/15	CSV	18573	
+GEO	Diffuse glioma	GSE207726	P300-mediated adaptive conversion of glioma stem cells to vascular-like cells in response to therapeutic stress promotes tumor recurrence­ [scRNA-seq in vivo]	2	36261421	2022/09/09	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE207725	P300-mediated adaptive conversion of glioma stem cells to vascular-like cells in response to therapeutic stress promotes tumor recurrence­ [scRNAseq in vitro]	3	36261421	2022/09/09	MTX, TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE210567	Multi-omic analysis of cell-of-origin and epigenomic state in pediatric H3K27M gliomas (scRNA-Seq)	37	40744913	2022/08/05	MTX, TSV, TXT	24676;20301	
+GEO	Diffuse glioma	GSE210566	Multi-omic analysis of cell-of-origin and epigenomic state in pediatric H3K27M gliomas (multiome)	20		2022/08/05	BW, MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE210565	Multi-omic analysis of cell-of-origin and epigenomic state in pediatric H3K27M gliomas (scATAC-Seq)	4		2022/08/05	BED, BW, MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE210568	Multi-omic analysis by single-cell sequencing of epigenomic state in pediatric H3K27M gliomas	61	36471070,40744913	2022/08/04	BED, BW, MTX, TSV	20301;24676	
+GEO	Diffuse glioma	GSE202096	Integrative and comparative single-cell analysis reveals the transcriptomic difference between tumefactive demyelinating lesion and glioma	2	36085357	2022/07/28	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE174554	A single cell atlas of human glioma under therapy	113	36539501	2022/07/05	BED, MTX, TAR, TSV, TXT, ZIP	24676;21697;24247	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE189650	A single-cell based precision medicine approach using glioblastoma patient specific models	3	35941215	2022/07/01	CSV, H5, MTX, TSV	24676;24247	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE188625	Multi-omic analysis of cell-of-origin and epigenomic state in pediatric H3K27M gliomas	110	36471070	2022/06/27	BW, MTX, TSV, TXT	21103;20301;24676;11154	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE189939	Single-Cell RNA Sequencing of Pediatric Ependymoma uncovers Subclonal Heterogeneity associated with Patient Survival	4	35844565	2022/06/15	CSV, TXT	24676	
+GEO	Diffuse glioma	GSE200001	Single-cell epigenetic analysis reveals principles of chromatin states in H3.3-K27M gliomas	6		2022/06/08	XLSX	18573	
+GEO	Diffuse glioma	GSE135045	Single cell RNA-seq analysis of human glioma	7	35669791	2022/06/08	TXT	20301	
+GEO	Diffuse glioma	GSE148196	Comparative single-cell RNA-sequencing profiling of BMP4-treated primary glioma cultures reveals therapeutic markers	4	35639831	2022/06/06	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE171287	The cellular origin of perivasuclar glioblastoma by scRNA-seq	2	35675414	2022/04/19	LOOM, TAB	24676	
+GEO	Diffuse glioma	GSE159416	The cellular origin and differentiation status of glioblastoma by scRNA-seq	18	35675414	2022/04/19	LOOM, TXT	11154	
+GEO	Diffuse glioma	GSE147526	A Zebrafish-Based Orthotopic Glioblastoma Xenograft Model for Preclinical Drug Screening and Clinical Drug Sensitivity Prediction	34	35199829	2022/04/12	CSV	23085;20795	title_suggests_nontissue;multi_species:Danio rerio; Homo sapiens
+GEO	Diffuse glioma	GSE129671	Single-cell based elucidation of molecularly distinct GBM states and drug sensitivity	8		2022/04/11	TXT	18573;24676	
+GEO	Diffuse glioma	GSE193884	Single-cell landscapes of primary glioblastomas and matched organoids and cell lines reveal variable retention of inter- and intra-tumor heterogeneity [multi-generation scRNA-seq]	11	35303420	2022/02/16	CSV, MTX, TSV	16791	
+GEO	Diffuse glioma	GSE173278	Single-cell landscapes of primary glioblastomas and matched organoids and cell lines reveal variable retention of inter- and intra-tumor heterogeneity [scRNA-seq]	99	35303420	2022/02/16	CSV, MTX, TSV	16791	
+GEO	Diffuse glioma	GSE173280	Single-cell landscapes of primary glioblastomas and matched organoids and cell lines reveal variable retention of inter- and intra-tumor heterogeneity.	126	35303420	2022/02/15		16791	
+GEO	Diffuse glioma	GSE186802	GD2-CAR T-cell therapy for H3K27M-mutated diffuse midline gliomas	1	35130560	2022/02/07	CSV, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE188620	Next Generation Sequencing Facilitates Quantitative Analysis of Transcriptomes and TCR repertoire in vaccinated PBMCs and tumors	23	34882581	2022/02/01	CSV, MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE192874	GPR56 (ADGRG1) and Transglutaminase (TG2) interaction in Regulation of Mesenchymal Transition in Glioblastoma	2	35600402	2022/01/25	GTF	20795	
+GEO	Diffuse glioma	GSE182282	A nuclear function for an oncogenic microRNA as a modulator of snRNA and splicing	14	35033060	2022/01/19		24676;16791	
+GEO	Diffuse glioma	GSE182280	A nuclear function for an oncogenic microRNA as a modulator of snRNA and splicing [RNA-Seq]	12	35033060	2022/01/19	TXT	24676	
+GEO	Diffuse glioma	GSE178116	ATRX loss in glioma results in epigenetic dysregulation of cell cycle phase transition	8	35021084	2022/01/18	MTX, TSV	24676;19057	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE178114	ATRX loss in glioma results in epigenetic dysregulation of cell cycle phase transition [scRNA-seq]	2	35021084	2022/01/18	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE159465	The H3K27M mutation alters stem cell growth, epigenetic regulation, and differentiation potential [MeDIP-Seq]	24		2021/12/31	XLSX	21290	
+GEO	Diffuse glioma	GSE159070	The H3K27M mutation alters stem cell growth, epigenetic regulation, and differentiation potential [RNA-Seq]	24		2021/12/31	TXT	21290	
+GEO	Diffuse glioma	GSE110066	Comparative transcriptomic analysis of Central Neurocytoma-derived tumor spheres as compared to its differentiated cells and fetal SVZ-derived neural stem cells.	4		2021/12/31	CEL, CHP, XLSX	570	
+GEO	Diffuse glioma	GSE182109	A glioma immune cell atlas identifies prognostic macrophage signatures and a novel immunotherapy target, S100A4	44	35140215,41490939	2021/12/15	MTX, TSV	20301;28038	KNOWN_SOURCE
+GEO	Diffuse glioma	GSE182685	Mitochondrial variant enrichment from high-throughput single-cell RNA-seq resolves clonal populations	22	35210612	2021/12/08	CSV, H5, RDS, TSV, TXT	18573;24676;15520	
+GEO	Diffuse glioma	GSE190129	Quiescent human glioblastoma cancer stem cells mediate tumor initiation, expansion, and recurrence following chemotherapy	36	35016005	2021/12/05	CSV, TXT	24676;21103;20301	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE173146	BET inhibitor UM-002 reduces GBM proliferation and invasion	4	34862404	2021/12/01	TSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE188887	A Functional Role of OLIG2 in Tumor Heterogeneity of MYC-amplified Medulloblastoma	12		2021/11/20	CSV	24676	title_suggests_nontissue
+GEO	Diffuse glioma	GSE185231	Single-cell transcriptomics revealed a critical role of SPP1/CD44-mediated crosstalk between macrophages and cancer cells in glioma	1	34805184	2021/10/31	FA, MTX, TSV	24676	
+GEO	Diffuse glioma	GSE163656	Single-cell ATAC-Seq of recurrent pediatric high-grade glioma	3	34644115	2021/10/20	BED, MTX, TSV	18573	
+GEO	Diffuse glioma	GSE163655	Single-cell ATAC-Seq of pediatric high-grade glioma	2	34644115	2021/10/20	BED, MTX, TSV	18573	
+GEO	Diffuse glioma	GSE155430	A single-cell epigenetic atlas of human IDH-mutant glioma	23	34763709	2021/10/20	BED, MTX, TSV, TXT	24247;24676	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE154795	Cellular and transcriptional immune responses induced by neoadjuvant PD-1 blockade in glioblastoma patients	40	34836966,41505256	2021/10/18	RDS, TXT	24676	
+GEO	Diffuse glioma	GSE163686	Interrogation of the microenvironmental landscape in spinal ependymomas reveals dual functions of tumor-associated macrophages	15	34824203	2021/09/28	CSV, MTX, TSV	20301	
+GEO	Diffuse glioma	GSE179115	Single-cell cloning of cancer cells secreting specific subsets of extracellular vesicles	2	34503207	2021/09/15	RDS	19415	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE169114	Charting oncogenicity of genes and variants across lineages via multiplexed screens in teratomas	64	34646987	2021/08/31	CSV, MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE144623	Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data	2	34291282	2021/07/22	CSV	16791	
+GEO	Diffuse glioma	GSE147275	Immune landscape of genetically-engineered murine models of glioma relative to human glioma by single-cell sequencing	21	34138753,35653194	2021/07/21	MTX, TSV, TXT	19057;18573	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE162631	Single cell RNA-seq of brain glioblastoma samples	8	34228647	2021/07/08	ZIP	24676	
+GEO	Diffuse glioma	GSE155446	Single-cell RNAseq of childhood medulloblastoma	35	34077540	2021/06/04	CSV	24676;24247	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE151506	Epigenetic encoding, heritability and plasticity of glioma transcriptional cell states	47	34594037	2021/05/31	CSV, TXT, XLSX	24676;16791	
+GEO	Diffuse glioma	GSE165238	Tumor-associated hematopoietic stem and progenitor cells positively linked to glioblastoma progression	16	34162860	2021/05/25	CSV, XLSX	24676	
+GEO	Diffuse glioma	GSE163715	CRISPR Screening of CAR T Cells and Cancer Stem Cells Reveals Critical Dependencies for Cell-Based Therapies [single-cell]	6	33328215	2021/05/19	CSV	16791	
+GEO	Diffuse glioma	GSE163401	CRISPR Screening of CAR T Cells and Cancer Stem Cells Reveals Critical Dependencies for Cell-Based Therapies [GSC]	10	33328215	2021/05/19	CSV	16791	
+GEO	Diffuse glioma	GSE163400	CRISPR Screening of CAR T Cells and Cancer Stem Cells Reveals Critical Dependencies for Cell-Based Therapies [bulk]	10	33328215	2021/05/19	CSV	16791	
+GEO	Diffuse glioma	GSE168004	Cancer - immune cell interactions drive transitions to mesenchymal-like states in glioblastoma	1595	34087162	2021/04/23	CSV	18573;19057	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE157910	Single-cell analysis of chromatin silencing programs in development and tumor progression	17	33846646,35941215	2021/04/12	PDF, TSV	16791;24676;18573	
+GEO	Diffuse glioma	GSE166420	Tryptophan metabolism drives dynamic immunosuppressive myeloid states in IDH-mutant gliomas	118	35609569,35121943	2021/03/04	CSV	21290;24247;21103	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE166418	Tryptophan metabolism drives dynamic immunosuppressive myeloid states in IDH-mutant gliomas [CEL-Seq2]	52	35121943	2021/03/04	CSV, RDATA	21290	
+GEO	Diffuse glioma	GSE149009	Proteogenomic anlalysis of glioblastoma (GBM)	68	33657365	2021/03/02	TXT	16791	
+GEO	Diffuse glioma	GSE163108	Inhibitory CD161 Receptor Identified in Glioma-infiltrating T cells by Single Cell Analysis	6	33592174	2021/02/17	CSV, H5	20795	
+GEO	Diffuse glioma	GSE132605	Analyzing the Effect of the K27M Mutation in Histone H3.3 on Chromatin Regulation in Pluripotent Stem Cells, Neural Stem Cells, and Oligodendroglial Progenitor Cells	16	33545065	2021/02/09	BW, XLSX	11154	
+GEO	Diffuse glioma	GSE139136	Single-cell ATAC-Seq of Adult GBM surgical specimens	4	33427645,34644115	2021/01/27	BED, MTX, TSV	18573	
+GEO	Diffuse glioma	GSE165037	Single Cell Analysis of Chromatin Accessibility Reveals Genetic and Regulatory Heterogeneity in Glioblastomas	12		2021/01/19	RDS	20301	
+GEO	Diffuse glioma	GSE158700	Identification of diverse tumor endothelial cell populations in malignant glioma	37	33367832	2021/01/17	TAR, TXT	19057;18573	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE141383	Single-cell characterization of macrophages in glioblastoma reveals MARCO as a mesenchymal pro-tumor marker	9	34011400	2020/12/23	TXT	18573	
+GEO	Diffuse glioma	GSE163120	Single-cell profiling of myeloid cells in glioblastoma across species and disease stage reveals macrophage competition and specialization	14	33782623,34917090	2020/12/15	CSV	20301;21103;24247	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE160003	An extracellular vesicle-related gene expression signature identifies high-risk patients in medulloblastoma	18	33175161	2020/12/11	TXT	19057;18573	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE159763	(bulk RNAseq) An extracellular vesicle-related gene expression signature identifies high-risk patients in medulloblastoma	14	33175161	2020/12/11	TXT	18573;19057	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE155434	The evolution of alternative splicing in glioblastoma under therapy.	37	33499924	2020/12/10	TXT	24676	
+GEO	Diffuse glioma	GSE148673	Delineating copy number and clonal substructure in human tumors from single-cell transcriptomes 	13	33462507	2020/12/03	TXT	24676	
+GEO	Diffuse glioma	GSE146731	Histone H3.3G34-mutant interneuron progenitors co-opt PDGFRA for gliomagenesis	80	33259802	2020/11/30	BEDPE, BW, TXT	20301;21103;24676;21273	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE157424	Single-cell sequencing of glioblastoma reveals central nervous system susceptibility to SARS-CoV-2	2	33312949	2020/11/12	CSV, TXT	20795	
+GEO	Diffuse glioma	GSE156043	Single cell RNA sequencing analysis of lnc-HLX-2-7 knock out in medulloblastoma	2		2020/10/30	MTX, TSV	21697	
+GEO	Diffuse glioma	GSE158803	A Single-Cell Tumor Immune Atlas for Precision Oncology	10	34548323	2020/10/27	CSV, MTX, TSV	24247;24676	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE158175	ScRNA-Seq of Fresh Mouse Glioblastoma Cells and Mouse Glioblastoma Cell line	2		2020/09/18	CSV	25526;24247	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE153489	Cerebral immune cells in the Interleukin-33 (IL-33) driven tumor microenvironment	21	33020472	2020/08/21	CEL, CHP, RCC	15207;19057;20885	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE125969	Ependymoma subpopulation lineages underlie clinical classification and outcome (scRNAseq data set)	26	32783945	2020/07/31	TSV	20301;24676	
+GEO	Diffuse glioma	GSE117891	Multiregional Glioma Single-Cell Transcriptomic Sequencing	137	34692159	2020/07/22	TSV, XLSX	20301	
+GEO	Diffuse glioma	GSE142168	Multimodal Single-Cell Analysis Reveals Two Distinct Radioresistant Stem-like and Progenitor Cell Populations in Murine Glioma	4	32621641	2020/07/21	MTX, RDS, TSV	24625;21626	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE141460	Single-cell RNA-seq of pediatric ependymoma	30	32663469	2020/07/13	TAR, TXT	18573	
+GEO	Diffuse glioma	GSE151137	Integrating single-cell RNA-seq and imaging with SCOPE-seq2	2	33173156	2020/06/28	TXT	18573;19415	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE142119	Single-cell lineage analysis reveals genetic and epigenetic interplay in glioblastoma drug resistance	74	32669109	2020/06/18	BEDGRAPH, TXT	18573	
+GEO	Diffuse glioma	GSE137758	An OTX2-PAX3 signaling axis regulates Group 3 medulloblastoma cell fate [scRNA-seq]	3	32686664	2020/06/11	MTX, TSV	18573	
+GEO	Diffuse glioma	GSE132558	An OTX2-PAX3 signaling axis regulates Group 3 medulloblastoma cell fate	18	32686664	2020/06/11	MTX, TSV, TXT	18573	
+GEO	Diffuse glioma	GSE140819	A single-cell and single-nucleus RNA-Seq toolbox for fresh and frozen human tumors	40	32405060	2020/05/11	CSV, H5	20795	
+GEO	Diffuse glioma	GSE148842	Deconvolution of Cell Type-Specific Drug Responses in Human Tumor Tissue with Single-Cell RNA-seq	43	33975634,38652658	2020/04/18	TXT	24676;18573	
+GEO	Diffuse glioma	GSE136974	Single-cell sequencing reveal  transformation of neural stem cells into tumor-promoting cells mediated by extracellular vesicles derived from glioblastoma	3		2020/03/12	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE141982	Ensemble learning for classifying single-cell data and projection across reference atlases	4	32105316	2020/03/01	MTX, TSV	24676	
+GEO	Diffuse glioma	GSE139533	Intratumoral heterogeneity and longitudinal changes in gene expression predict differential drug sensitivity in newly diagnosed and recurrent glioblastoma	155	32102350	2020/03/01	TAB	18573	
+GEO	Diffuse glioma	GSE136089	RETrace: simultaneous retrospective lineage tracing and methylation profiling of single cells	453	32127417	2020/02/23	TSV	16791;15520	title_suggests_nontissue
+GEO	Diffuse glioma	GSE130119	MAFG-driven astrocytes promote CNS inflammation	163	32051591,40537468	2020/02/12	BEDGRAPH, CSV, TXT	24247;20301;21103;24676;19057	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE130105	Genome-wide analysis of the transcriptional profile of the CNS in healthy control patients.	5	32051591,40537468	2020/02/12	CSV, TXT	20301;24676	
+GEO	Diffuse glioma	GSE139448	Characterization of tumor initiating cells from human glioblastoma multiforms by scRNA seq	3	32004492	2020/01/03	CSV	11154	
+GEO	Diffuse glioma	GSE141946	Single Cell RNA-seq of Glioblastoma Tumors and GBOs	12	31883794	2019/12/26	CSV, TXT	21697	
+GEO	Diffuse glioma	GSE135437	Mapping microglia diversity in the human brain through the integration of high-dimensional techniques	66	31740814	2019/11/18	TSV	21290	
+GEO	Diffuse glioma	GSE138794	A single cell atlas of human glioma	28	31554641	2019/10/12	BED, MTX, TSV, TXT	24676	
+GEO	Diffuse glioma	GSE117620	Systems-level analyses reveal a convergent pathway for progression of diffuse astrocytoma and potential role for resveratrol in delaying high-grade transformation	15	31420939	2019/10/07	CSV	20301	
+GEO	Diffuse glioma	GSE134269	Electrical and synaptic integration of glioma into neural circuits	384	31534222,39972132	2019/10/02	TXT	18573	
+GEO	Diffuse glioma	GSE110571	Re-programing chromatin with a bifunctional LSD1/HDAC inhibitor induces therapeutic differentiation in DIPG [RNA-seq]	12	31631026	2019/09/26	TXT	16791	
+GEO	Diffuse glioma	GSE110572	Re-programing chromatin with a bifunctional LSD1/HDAC inhibitor induces therapeutic differentiation in DIPG	30	31631026	2019/09/25	BED, BIGWIG, TXT	16791	
+GEO	Diffuse glioma	GSE110570	Re-programing chromatin with a bifunctional LSD1/HDAC inhibitor induces therapeutic differentiation in DIPG [ChIP-seq]	18	31631026	2019/09/25	BED, BIGWIG	16791	
+GEO	Diffuse glioma	GSE119926	Single cell RNA-seq analysis of medulloblastoma	36	31341285	2019/07/30	TXT	18573	
+GEO	Diffuse glioma	GSE131928	single cell RNA-seq analysis of adult and paediatric IDH-wildtype Glioblastomas	2	31327527	2019/07/07	TSV, XLSX	18573	
+GEO	Diffuse glioma	GSE133040	Glioblastoma epigenome profiling identifies SOX10 as a master regulator of molecular tumour subtype - cell line ATACseq	8	33339831,40611337	2019/06/20	BED, BIGWIG	11154	title_suggests_nontissue
+GEO	Diffuse glioma	GSE132172	Single-cell RNA sequencing reveals the impact of chromosomal instability on glioblastoma cancer stem cells	134	31151460	2019/06/05	TSV	21697	
+GEO	Diffuse glioma	GSE120261	In situ 10-cell RNA sequencing in tissue and tumor biopsy samples	168	30894605	2019/03/24	CSV	19057;18573	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE117599	scRNA-seq of pediatric glioblastoma patient-derived xenografts	2	30877103,32375678	2019/03/15	H5	18573	
+GEO	Diffuse glioma	GSE116621	De novo Gene Signature Identification from Single-Cell RNA-Seq with Hierarchical Poisson Factorization	3		2019/02/21	TXT	18573	
+GEO	Diffuse glioma	GSE125587	Ex vivo Dynamics of Human Glioblastoma Cells in a Microvasculature-on-a-Chip System Correlates with Tumor Heterogeneity and Subtypes	10	31016107	2019/02/15	TXT	16791	
+GEO	Diffuse glioma	GSE106810	LINE-2 transposable elements are a source of functional human microRNAs and target sites	49	30865625	2019/01/23	BW, TXT	17021;21290;16791	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE121721	Glioblastoma epigenome profiling identifies SOX10 as a master regulator of molecular tumour subtype - tumour methylation (WGBS) data	64	33339831,40611337	2018/11/05	BED, BIGWIG, TXT	11154	
+GEO	Diffuse glioma	GSE121720	Glioblastoma epigenome profiling identifies SOX10 as a master regulator of molecular tumour subtype - tumour rRNA-depleted total ssRNAseq data	64	33339831,40611337	2018/11/05	BIGWIG, CSV, TXT	11154	
+GEO	Diffuse glioma	GSE121719	Glioblastoma epigenome profiling identifies SOX10 as a master regulator of molecular tumour subtype - tumour ChIPseq data	119	33339831,40611337	2018/11/05	BED, BIGWIG	11154	
+GEO	Diffuse glioma	GSE121717	Glioblastoma epigenome profiling identifies SOX10 as a master regulator of molecular tumour subtype - cell line RNAseq experiments	4	33339831,40611337	2018/11/05	BIGWIG, TXT	11154	title_suggests_nontissue
+GEO	Diffuse glioma	GSE121716	Glioblastoma epigenome profiling identifies SOX10 as a master regulator of molecular tumour subtype - cell line ChIPseq experiments	20	33339831,40611337	2018/11/05	BED, BIGWIG, BW	11154	title_suggests_nontissue
+GEO	Diffuse glioma	GSE121655	Linking single-cell measurements of mass, growth rate, and gene expression	762	30482222	2018/10/26	TXT	18573;19057	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE111462	Single-cell transcriptome dynamics in stabilized pituitary gonadotrope cells	68	30357357	2018/10/09	H5, TXT	16791;17021	multi_species:Homo sapiens; Mus musculus
+GEO	Diffuse glioma	GSE111458	Single-cell transcriptome dynamics in stabilized pituitary gonadotrope cells [mini_dropseq]	2	30357357	2018/10/09	TXT	16791	
+GEO	Diffuse glioma	GSE115397	Non-inflammatory tumor microenvironment of Diffuse Intrinsic Pontine Glioma (DIPG)	13	29954445	2018/08/23	TXT	18573	
+GEO	Diffuse glioma	GSE111689	ZBTB24 is a transcriptional regulator that coordinates with DNMT3B to control DNA methylation	33	30085123	2018/07/31	BED, GTF, IDAT	11154;23976;16791	
+GEO	Diffuse glioma	GSE103224	Single-Cell Transcriptome Analysis of Lineage Diversity and Microenvironment in High-Grade Glioma	8	30041684	2018/07/02	TXT	18573	
+GEO	Diffuse glioma	GSE102130	Single cell RNA-seq analysis of K27M-mutant glioma	4058	29674595	2018/04/21	TXT	18573	
+GEO	Diffuse glioma	GSE98330	Changes in chromatin state reveal a central role for the transcription factor ARNT2, in the control of glioblastoma stem cell tumorigenicity	6	29149419	2018/02/23	BED	11154	
+GEO	Diffuse glioma	GSE84465	Single-Cell RNAseq analysis of diffuse neoplastic infiltrating cells at the migrating front of human glioblastoma	3589	29091775	2017/11/01	CSV	18573	
+GEO	Diffuse glioma	GSE97726	Cooperativity between EMT and non-EMT cells promotes breast cancer metastasis via paracrine GLI activation	36	28604738	2017/04/13	TXT	11154	
+GEO	Diffuse glioma	GSE89567	Single cell RNA-seq analysis of IDH-mutant astrocytoma	6341	28360267	2017/03/31	TXT	18573	
+GEO	Diffuse glioma	GSE70630	Single cell RNA-seq analysis of oligodendroglioma	4825	27806376	2016/11/06	TXT	18573	
+GEO	Diffuse glioma	GSE81287	Small-RNA transcriptome sequencing of individual cells	539	27798564	2016/10/17	TXT	11154;15228	multi_species:synthetic construct; Homo sapiens
+GEO	Diffuse glioma	GSE85575	An automatec microwell platform for large-scale single cell RNA-seq.	2	27670648	2016/08/13	TXT	19415;18573	multi_species:Mus musculus; Homo sapiens
+GEO	Diffuse glioma	GSE75189	High-Resolution CRISPR Screens Reveal Fitness Genes and Genotype-Specific Cancer Liabilities	5	26627737	2015/11/25	XLSX	18573;16791	
+GEO	Diffuse glioma	GSE70175	Identification of Global DNA Methylation Signatures in Glioblastoma-Derived Cancer Stem Cells	11	26233891	2015/06/24	BED	11154	
+GEO	Diffuse glioma	GSE66357	Scalable Microfluidics for Single Cell RNA Printing and Sequencing	643	26047807	2015/05/21	TXT	18573	
+GEO	Diffuse glioma	GSE57872	Single cell RNA-seq of primary human glioblastomas	875	24925914	2014/06/12	TXT	16791	
+GEO	Diffuse glioma	GSE40770	Genome-wide mapping of nucleosome positioning and DNA methylation within Individual DNA molecules	3	22960375	2012/09/12	WIG	11154	
+GEO	Diffuse glioma	GSE32970	Open Chromatin by DNaseI HS from ENCODE/OpenChrom(Duke University)	97	22955617,22955983	2011/10/14	BIGWIG, NARROWPEAK, TXT	9052	
+GEO	Diffuse glioma	GSE27584	DNA Methylation by Reduced Representation Bisulfite Seq from ENCODE/HudsonAlpha	202	22955980	2011/03/01	BED, BEDRRBS	9052;10999	
+GEO	Papillary thyroid carcinoma	GSE297164	RNA-seq profiling of radioiodine-treated differentiated thyroid cancer cells reveals DDR pathway regulation during iodine tolerance	8	42046098	2026/06/18	TXT	9052	
+GEO	Papillary thyroid carcinoma	GSE310793	PRECISE: A prognostic thyroid follicular-cell derived gene signature for papillary thyroid carcinoma	109	41480746	2026/02/18	TXT	24676	
+GEO	Papillary thyroid carcinoma	GSE250521	A Spatially Resolved Transcriptome Landscape during Thyroid Cancer Progression	25		2025/02/16	CSV, JSON, MTX, PNG, TSV	24676	
+GEO	Papillary thyroid carcinoma	GSE274674	Single-cell RNA sequencing reveals a novel CD4+T cell subset in papillary thyroid cancer	4		2025/02/06	CSV, TXT, XLSX	24676	
+GEO	Papillary thyroid carcinoma	GSE281736	Single-cell RNA Sequencing Reveals the Heterogeneity in Differentiation Trajectory and Tumor Microenvironment Leading to More Aggressive Phenotypes of Papillary Thyroid Cancer in Children and Young Adult Patients	12	40719066	2025/01/01	MTX, TSV	24676	
+GEO	Papillary thyroid carcinoma	GSE232237	Gene expression profile at single cell level of thyroid cells from thyroid cancer tissues	12	38331894	2023/10/17	TSV	20795	
+GEO	Papillary thyroid carcinoma	GSE241184	Single cell profiling of primary and paired metastatic lymph node tumors and adjacent normal thyroid in a papillary thyroid carcinoma patient	3	38061122	2023/08/18	MTX, TSV	20301	
+GEO	Papillary thyroid carcinoma	GSE193581	Anaplastic Transformation Model in Thyroid Cancer Revealed by Single Cell Lineage and Fate Analysis 	32	37053016	2023/04/14	TXT	24676	
+GEO	Papillary thyroid carcinoma	GSE191288	Dissecting the transcriptomic landscape of the human papillary thyroid carcinoma by single cell RNA-sequencing	7	35515000	2022/04/13	H5	24676	
+GEO	Papillary thyroid carcinoma	GSE184362	Single-cell sequencing of tumor ecosystems in papillary thyroid carcinoma	23	34663816,36523593,38609408	2021/09/19	MTX, TSV	24676	KNOWN_SOURCE
+GEO	Papillary thyroid carcinoma	GSE163203	Human papillary thyroid carcinoma landscape and its immunological link with Hashimoto's thyroiditis at single cell resolution	10	34805166	2021/07/01	TXT	20795	
+GEO	Papillary thyroid carcinoma	GSE158291	Single-cell transcriptomic landscape reveals the differences in cell differentiation and immune microenvironment of papillary thyroid carcinoma between male and female patients	3	33588924	2020/12/31	TXT	24676	
+GEO	Papillary thyroid carcinoma	GSE61844	Genome-wide detection of DNase I hypersensitive sites in single cells and FFPE tissue samples	46	26605532	2015/11/25	BED, BEDGRAPH, TXT	11154;13112	multi_species:Homo sapiens; Mus musculus
+GEO	Osteosarcoma	GSE318841	Next-GenerationPediatric Cancer Models: Patient-Matched Orthotopic Xenografts, 3D Organoids, 2D Cultures, and Cell Lines for Identification of Therapeutic Vulnerabilities in Pediatric Solid Tumors	277		2026/08/10	COUNTS	24676;34284	
+GEO	Osteosarcoma	GSE319124	Next-GenerationPediatric Cancer Models: Patient-Matched Orthotopic Xenografts, 3D Organoids, 2D Cultures, and Cell Lines for Identification of Therapeutic Vulnerabilities in Pediatric Solid Tumors [scRNAseq]	59		2026/08/06	MTX, TSV	24676;34284	
+GEO	Osteosarcoma	GSE337162	Single-cell variant landscape of the human mitochondrial genome reveals cell type-specific and disease-associated changes	6		2026/07/01	RDS	24676;29480;34678	
+GEO	Osteosarcoma	GSE318840	Single-Cell Fixed RNA Profiling of Osteosarcoma Evolution Reveals a Coordinated Multi-cellular Network Driving Metastasis	8		2026/06/30	MTX, TSV	35417	
+GEO	Osteosarcoma	GSE332630	Multimodal single-cell analyses reveal distinct fusion-regulated transcriptional programs in Ewing sarcoma	22	40667384	2026/05/20	H5, TSV	24676;30173	
+GEO	Osteosarcoma	GSE308184	Stress granule phase separation in stress-responsive cytosolic extract-in-oil droplets	15	42248842	2026/04/24	TXT	24676	
+GEO	Osteosarcoma	GSE293316	Deep Learning Models for Cell Cycle Phase Prediction from Single-Cell RNA Sequencing Data	10	42437449	2025/10/22	BED, H5, MTX, TSV	24676	
+GEO	Osteosarcoma	GSE216280	Single-cell RNA sequencing of peripheral blood mononuclear cell of human osteosarcoma	3		2025/10/17	MTX, TSV	20795	
+GEO	Osteosarcoma	GSE290255	Key Regulatory Elements of the TGFβ-LRRC15 Axis Predict Disease Progression and Immunotherapy Resistance Across Cancer Types	12		2025/10/08	MTX, TSV	24676	
+GEO	Osteosarcoma	GSE309031	Epigenetic heterogeneity and state-specific transcriptional programs determine differential drug response in osteosarcoma [CUT&Run]	85		2025/09/29	BEDGRAPH	34281	
+GEO	Osteosarcoma	GSE308957	Epigenetic heterogeneity and state-specific transcriptional programs determine differential drug response in osteosarcoma. [ATAC-Seq, cell line]	18		2025/09/29	BEDGRAPH	34281	title_suggests_nontissue
+GEO	Osteosarcoma	GSE307240	Epigenetic and transcriptional heterogeneity define osteosarcoma subtypes and establish targetable vulnerabilities [multiomics]	10		2025/09/29	H5, TSV	34281	
+GEO	Osteosarcoma	GSE270505	Epigenetic heterogeneity and state-specific transcriptional programs determine differential drug response in osteosarcoma [RNA-seq]	19		2025/09/29	TAB	20301;24676	
+GEO	Osteosarcoma	GSE270504	Epigenetic heterogeneity and state-specific transcriptional programs determine differential drug response in osteosarcoma [snRNAseq + snATACseq]	4		2025/09/29	H5, TSV	34281	
+GEO	Osteosarcoma	GSE270502	Epigenetic heterogeneity and state-specific transcriptional programs determine differential drug response in osteosarcoma [ATAC-seq]	87		2025/09/29	BEDGRAPH	20301	
+GEO	Osteosarcoma	GSE293148	Metastasis-initiating osteosarcoma subpopulations establish paracrine interactions with both lung and tumor cells to create a metastatic niche	4	40882022	2025/08/11	TAR	20301;25526	multi_species:Homo sapiens; Mus musculus
+GEO	Osteosarcoma	GSE299023	Immunosuppressive tumor microenvironment of osteosarcoma [scRNA-seq]	6	40647416	2025/07/15	MTX, TSV	24676	
+GEO	Osteosarcoma	GSE250303	Telomeric Repeat-Containing RNA Increases in Aged Human Cells	56	40637232	2025/06/09	BED, BIGWIG, BW, TXT	24106;34284;15520	
+GEO	Osteosarcoma	GSE284767	Cryptic mitochondrial DNA mutations coincide with mid-late life and are pathophysiologically informative in single cells across tissues and species	12	40050638	2025/02/10	CSV	21697	title_suggests_nontissue
+GEO	Osteosarcoma	GSE260551	Trabectedin Promotes Oncolytic Virus Antitumor Efficacy, Viral Gene Expression, and Immune Effector Function in Models of Bone Sarcoma	12	39492947	2024/10/11	TAR	25526;24676;24247	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Osteosarcoma	GSE270231	Aberrant activation of wound healing programs within the metastatic niche facilitates lung colonization by osteosarcoma cells	7	39540841	2024/06/19	TAR	24676	
+GEO	Osteosarcoma	GSE237070	Single-cell RNA sequencing of human various osteosarcoma tissues	9	38755647	2024/05/20	TIFF	24676	
+GEO	Osteosarcoma	GSE217243	N-terminal tagging of RNA Polymerase II shapes transcriptomes more than C-terminal alterations 	9	38799575	2024/05/12	MTX, TSV, TXT	18573	
+GEO	Osteosarcoma	GSE250015	Exploring the impact of PDGFD in osteosarcoma metastasis through single-cell sequencing analysis	2	38652223	2024/05/09	CSV	24676	
+GEO	Osteosarcoma	GSE229874	Genome-wide profiling of DNA repair proteins in single cells	55	39572529	2024/04/17	TSV	18573	
+GEO	Osteosarcoma	GSE263156	FOXO1 is a master regulator of CAR T memory programming [scRNA_FOXO1_NGFR]	2	38600391	2024/04/07	MTX, TSV	24676	
+GEO	Osteosarcoma	GSE261475	Engineered CD47 protects T cells for enhanced antitumor immunity	8	38750365	2024/03/13	H5, RDS	25526	multi_species:Homo sapiens; Mus musculus
+GEO	Osteosarcoma	GSE184118	Single-cell RNA sequencing analysis reveals CHOP as an early marker for conventional chondrosarcoma	11	38267611	2024/01/18	TAR	24676	
+GEO	Osteosarcoma	GSE234187	Gene expression profile at single cell level of cells from OS tissue of OS lung metastatic patient	1	38223729	2024/01/17	MTX, TSV	20795	
+GEO	Osteosarcoma	GSE200529	Dissociation Protocols used for Sarcoma Tissues Bias the Transcriptome observed in Single-cell and Single-nucleus RNA sequencing.	26	37254069,38575753,38775859,41040185	2023/07/21	CSV, H5	24676	
+GEO	Osteosarcoma	GSE212809	An epigenetic switch triggers alternative telomere lengthening and cellular immortalization in ATRX deficient cells	30	36805596	2023/02/21	MCOOL	24676	
+GEO	Osteosarcoma	GSE198896	Adolescent bone sarcomas have distinct immune signatures and intercellular communication networks	18	36074145	2022/08/31	TAR	21697;24676	
+GEO	Osteosarcoma	GSE162454	Single-cell RNA sequencing of human osteosarcoma	6	34367994,36507075,38755647,41413734	2021/08/19	MTX, TSV	24676	
+GEO	Osteosarcoma	GSE179681	Osteosarcoma tumors maintain intratumoral heterogeneity, even while adapting to environmental pressures that drive clonal selection	22	37106386	2021/07/09	TAR	21103;20301;24247	multi_species:Mus musculus; Homo sapiens
+GEO	Osteosarcoma	GSE152048	Single cell analysis of osteosarcoma tissues	76	33303760	2020/06/09		24676	KNOWN_SOURCE
+GEO	Osteosarcoma	GSE136805	Single-cell gene expression in Her2-specific CAR T cells in osteosarcoma mouse model.	2	31802004	2019/10/01	H5, HTML, RDS, TXT	20301	title_suggests_nontissue
+GEO	Osteosarcoma	GSE82070	Human Cactin interacts with DHX8 and SRRM2 to assure efficient pre-mRNA splicing and sister chromatid cohesion.	6	28062851	2016/06/01	TXT	11154	
+GEO	Osteosarcoma	GSE43152	A unique epigenetic signature is associated with active DNA replication loci in human embryonic stem cells	12	24172870	2013/11/05	BED, WIG	11154;10999	
+GEO	Nasopharyngeal carcinoma	GSE266679	 Characterizing resistant cellular states in nasopharyngeal carcinoma during EBV lytic induction	10	40133476	2025/03/20		18573;24676	
+GEO	Nasopharyngeal carcinoma	GSE231989	Single Cell RNA Sequencing of Primary Nasopharyngeal Organotypic Rafts infected with Epstein-Barr virus (EBV)	4		2024/12/31	MTX, TSV	18573	
+GEO	Nasopharyngeal carcinoma	GSE231689	Bulk-RNA and single-cell RNA sequencing of Nasopharyngeal Carcinoma Cell lines infected with Epstein-Barr virus (EBV) subjected to air-liquid interface (ALI)-induced reactivation	10		2024/12/31	CSV, MTX, TSV, TXT	18573	
+GEO	Nasopharyngeal carcinoma	GSE231688	Single cell RNA sequencing of Nasopharyngeal Carcinoma Cell lines infected with Epstein-Barr virus (EBV) subjected to air-liquid interface (ALI)-induced reactivation	4		2024/12/31	CSV, MTX, TSV	18573	title_suggests_nontissue
+GEO	Nasopharyngeal carcinoma	GSE280127	Nasopharyngeal carcinoma (NPC)-derived exosomes reconstitute tumor microenvironment	2		2024/11/23	TXT	24676	
+GEO	Nasopharyngeal carcinoma	GSE120926	Single-cell RNA sequencing defines the interplay between tumor cells, virus and microenvironment in nasopharyngeal carcinoma	56	32901110	2024/11/18	MATRIX, MTX, TSV, TXT	20795;11154	
+GEO	Nasopharyngeal carcinoma	GSE206245	Single-Cell and Spatial Transcriptome Analyses Reveal Tertiary Lymphoid Structures Linked to Tumour Progression and Immunotherapy Response in Nasopharyngeal Carcinoma	18	39231979	2024/09/11	CSV, JPG, JSON, MTX, PNG, TAR, TSV	24676;29480;20795	
+GEO	Nasopharyngeal carcinoma	GSE179224	A phase 2 Randomized Controlled Trial of Adjuvant Tumor-Infiltrating Lymphocytes for Pretreatment Epstein-Barr Virus DNA-selected High-Risk Nasopharyngeal Carcinoma Patients	4		2024/06/30	MTX, TSV	30209	
+GEO	Nasopharyngeal carcinoma	GSE249361	Single-cell transcriptomics reveals the role of antigen presentation in liver metastatic breast cancer	22	38318373,40594834	2024/01/23	MTX, TSV	24676	
+GEO	Nasopharyngeal carcinoma	GSE185269	scONE-seq: A one-tube single-cell multi-omics method enables simultaneous dissection of genotype and phenotype heterogeneity from frozen tumor samples	621	36598983	2022/12/31	CSV, TXT	18573;28038	
+GEO	Nasopharyngeal carcinoma	GSE202604	Single-cell RNA sequencing of right atrial blood mononuclear cells offers a novel approach to studying nasopharyngeal carcinoma.	8		2022/05/13	TXT	24676	
+GEO	Nasopharyngeal carcinoma	GSE150825	Comprehensive single-cell sequencing reveals the stromal dynamics and tumor-specific characteristics in the microenvironment of nasopharyngeal carcinoma	35	33750785	2021/01/11	CSV, FASTA, MTX, TSV	24676	
+GEO	Nasopharyngeal carcinoma	GSE162025	Tumour Heterogeneity and Intercellular Networks of Nasopharyngeal Carcinoma at Single Cell Resolution	40	33531485	2020/11/24	CSV	20795	KNOWN_SOURCE
+GEO	Nasopharyngeal carcinoma	GSE150430	Single-cell transcriptomics reveals regulators underlying immune cell diversity and immune subtypes associated with prognosis in nasopharyngeal carcinoma	16	32686767	2020/07/20	TXT	20795	
+GEO	Pancreatic ductal adenocarcinoma	GSE348821	Transcriptional response of primary human pancreatic cancer-associated fibroblasts to IFN-γ and lipopolysaccharide stimulation	9		2026/10/29	TXT	37505	
+GEO	Pancreatic ductal adenocarcinoma	GSE348745	Comparative Analysis of Primary and Liver Fibroblasts Reveals MET as a Potent Target in Pancreatic Cancer Metastasis [RNA-Seq]	9		2026/10/03	CSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE342309	Resistance to targeted therapy Sotorasib in MIA PaCa-2 Pancreatic cancer cell line	2		2026/10/01	MTX, TSV	30173	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE348275	Clonal lineage tracing and parallel multiomics profiling reveal transcriptional heterogeneity induced by ARID1A deficiency	35		2026/09/22	BW, MTX, NARROWPEAK, TSV	18573;21697	
+GEO	Pancreatic ductal adenocarcinoma	GSE348038	Single-cell RNA-seq profiling of ARID1A-loss-associated transcriptional heterogeneity and clonal diversification in pancreatic cancer cells	14		2026/09/22	CSV, MTX, TSV	21697	
+GEO	Pancreatic ductal adenocarcinoma	GSE347847	Single-cell ATAC-seq profiling of ARID1A-loss-associated chromatin accessibility heterogeneity in pancreatic cancer cells	15		2026/09/22	TSV	21697	
+GEO	Pancreatic ductal adenocarcinoma	GSE270300	N-glycans in non-malignant tumor microenvironment cells dampen CAR-T cell function in solid tumors [scRNA-seq]	1	42586609	2026/08/19	CSV, MTX, XLSX	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE309679	Addressing the multiple facets of ligand-receptor network inference	13	42444609	2026/07/22	TXT	19057;18573	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Pancreatic ductal adenocarcinoma	GSE316195	A Phase 1 clinical trial and single-cell correlates of motixafortide, cemiplimab, gemcitabine and nab-paclitaxel for metastatic treatment-naïve metastatic pancreatic ductal adenocarcinoma.	22	42811017	2026/07/13	H5	24676	KNOWN_SOURCE;title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE335452	Single-cell RNA-seq and spatial transcriptomics characterize CD8+ exhausted T cells in pancreatic ductal adenocarcinoma	15	42548877	2026/06/16	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE296818	Targeting addiction to HMGB2-driven transcriptional programs in pancreatic cancer [scATAC organoids]	8	42636797	2026/06/04	BED, MTX, TSV	21697	
+GEO	Pancreatic ductal adenocarcinoma	GSE296813	Targeting addiction to HMGB2-driven transcriptional programs in pancreatic cancer [scRNA organoids]	9	42636797	2026/06/04	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE296811	Targeting addiction to HMGB2-driven transcriptional programs in pancreatic cancer  [scRNA mouse]	1	42636797	2026/06/04	CSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE296809	Targeting addiction to HMGB2-driven transcriptional programs in pancreatic cancer [scATAC_Mice]	4	42636797	2026/06/04	BED, MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE296808	Targeting addiction to HMGB2-driven transcriptional programs in pancreatic cancer [RNAKD]	4	42636797	2026/06/04	TXT, XLSX	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE296832	Epigenetic Context Defines the Transcriptional Activity of Canonical and Noncanonical NF-kappaB Signaling in Pancreatic Cancer [RNA-seq]	30	41844578	2026/04/08	CSV, TABULAR	30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE296831	Epigenetic Context Defines the Transcriptional Activity of Canonical and Noncanonical NF-kappaB Signaling in Pancreatic Cancer [ChIP-Seq]	48	41844578	2026/04/08	BIGWIG, BROADPEAK, NARROWPEAK	30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE318413	Patient-derived orthotopic xenograft models recapitulate the peritoneal dissemination of pancreatic cancer and delineate its transcriptional and regulatory programs [scRNA-seq]	19	41673768	2026/03/25	MTX, TSV	21697	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE318412	Patient-derived orthotopic xenograft models recapitulate the peritoneal dissemination of pancreatic cancer and delineate its transcriptional and regulatory programs [scATAC-seq]	2	41673768	2026/03/25	TSV	21697	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE318411	Patient-derived orthotopic xenograft models recapitulate the peritoneal dissemination of pancreatic cancer and delineate its transcriptional and regulatory programs [RNA-seq]	11	41673768	2026/03/25	TAB	21697	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE318648	FGFBP2 p.T186S mutation in tumor associated fibroblasts supports progression of pancreatic cancer through autocrine and paracrine mechanisms	6		2026/02/28	TXT	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE313827	Dysregulation of the Hippo Pathway in Cancer Associated Fibroblasts is Associated with anti-PD-L1 atezolizumab Resistance	18	41784658	2026/02/20	TSV	34284	
+GEO	Pancreatic ductal adenocarcinoma	GSE312209	An oncogenic KRAS-driven secretome involving TNFα promotes niche preparation prior to pancreatic cancer onset [co-culture scRNA-seq]	15	41634803	2026/02/12	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE284392	An oncogenic KRAS-driven secretome involving TNFα promotes niche preparation prior to pancreatic cancer onset [time-series scRNA-Seq]	5	41634803	2026/02/12	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE284390	An oncogenic KRAS-driven secretome involving TNFα promotes niche preparation prior to pancreatic cancer onset [ATAC-Seq]	21	41634803	2026/02/12	NARROWPEAK	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE290274	KLF5 modulates epigenetic modifications driving human pancreatic ductal adenocarcinoma metastasis [Multiome]	16	41668133	2026/02/10	H5	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE290273	KLF5 modulates epigenetic modifications driving human pancreatic ductal adenocarcinoma metastasis [RNA-Seq]	8	41668133	2026/02/10	SF	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE316796	Spatial analysis of IPMNs defines a paradoxical KRT17-positive, low-grade epithelial population harboring malignant features [scRNA-seq]	2	41638478	2026/02/04	CSV, H5	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE312315	Multi-ome profiles of KP4 cells, a Pancreatic Ductal adenocarcinoma cell line	2	42649389	2026/01/16	MTX, TSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE160977	Single cell data from patient-derived xenograft model of PDAC tumor.	1	42649389	2026/01/16	CSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE314456	Adipose stromal cell-derived cancer-associated fibroblasts promote pancreatic adenocarcinoma through SFRP4 signaling	20	41595155	2026/01/12	XLSX	21697	
+GEO	Pancreatic ductal adenocarcinoma	GSE311789	DeCAF redefines fibroblast states uncovering multidimensional tumor-stroma relationships driving clinical tumor progression and immunotherapy response	142	41707654	2025/12/18	CSV, H5, JPG, JSON, MTX, PNG, TIFF, TSV	30173;18573;24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE311788	DeCAF redefines fibroblast states uncovering multidimensional tumor-stroma relationships driving clinical tumor progression and immunotherapy response [scRNA-Seq]	6	41707654	2025/12/18	MTX, TSV	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE310957	DeCAF redefines fibroblast states uncovering multidimensional tumor-stroma relationships driving clinical tumor progression and immunotherapy response [RNA-Seq]	129	41707654	2025/12/18	CSV	24676;18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE313101	FOLFIRINOX Plus Nivolumab Promotes Irregular Intra-Tumoral Lymphoid Aggregates in Borderline Resectable Pancreatic Adenocarcinoma: A Phase 1 Trial	37		2025/12/13	TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE292095	NFAT Mediates Pro-Tumorigenic Inflammation in Cancer-Associated Fibroblasts in Pancreatic Ductal Adenocarcinoma [human multiome]	12	41533513	2025/12/08	H5, TBI, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE310388	In situ multi-modal characterization of pancreatic cancer reveals tumor cell identity as a defining factor of the surrounding microenvironment. [RNA-Seq]	171	41533516	2025/12/03	TXT	30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE291124	snRNA-seq dataset of 17 treatment-naive human PDAC patient-derived tumors	17	41564862	2025/11/25	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE301398	Single-cell RNA-seq of patient-derived cancer-associated fibroblast in vitro cell line models from pancreatic ductal adenocarcinoma	16	41146557	2025/11/01	RDS	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE285972	A deep-learning tool for species-agnostic integration of cancer cell states	4	41223329	2025/10/21	H5AD, MTX, TSV	35268;34328	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Pancreatic ductal adenocarcinoma	GSE292513	Loss of NF2 drives malignant transformation of human pancreatic acinar cells and enhances cell fitness under nutrient deprivation and therapeutical stress [single_cell_RNAseq]	8	41480763	2025/10/07	CSV, MTX	34284	
+GEO	Pancreatic ductal adenocarcinoma	GSE266680	Architecture of the neutrophil compartment in mice	119	41339555	2025/09/30	CSV, H5, H5AD, JPG, JSON, MTX, PARQUET, PNG, RDS, TIFF, TSV	16791;34281;17021;21103;30172;24247	multi_species:Mus musculus; Homo sapiens
+GEO	Pancreatic ductal adenocarcinoma	GSE307914	Autologous multiantigen-targeted T cell therapy for pancreatic ductal adenocarcinoma: results of a Phase I, three-arm, nonrandomized clinical trial (TACTOPS)	24	41482561	2025/09/12	MTX, TSV	34281	
+GEO	Pancreatic ductal adenocarcinoma	GSE306853	Perturb-seq experiment on patient-derived cancer-associated fibroblast in vitro cell line models from pancreatic ductal adenocarcinoma	70	41146557	2025/09/12	RDS	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE300304	A platform for multisite immune profiling of premetastatic pancreatic cancer at single cell resolution	30	40848148	2025/09/02	CSV, H5	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE306772	Targeting myoferlin in ER/Golgi vesicle trafficking reprograms cancer-associated fibroblasts in pancreatic cancer.	8	41062852	2025/08/28	CSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE289399	Disruption of Fibroblast MYD88 Signaling Promotes Antitumor Immunity in Pancreatic Ductal Adenocarcinoma [BulkRNA-seq_LPSstim]	6		2025/08/19	TAR, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE295616	Targeting FGFR4 Abrogates HNF1A-driven Metastasis in Pancreatic Ductal Adenocarcinoma	6		2025/07/29	CSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE253429	Cellular states associated with metastatic organotropism and survival in patients with pancreatic ductal adenocarcinoma	21	41145870	2025/07/16	H5, ZIP	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE278477	Single cell analysis of an engineered organoid based model of pancreatic cancer identifies hypoxia as a contributing factor in the determination of transcriptional subtypes	6	40604231	2025/07/09	MTX, TSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE276061	Enhancing CAR T Cell Therapy in Patients with Pancreatic Cancer	5	40829595	2025/07/07	CLOUPE, MTX, TSV	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE278112	Regulation of pancreatic cancer migration by signal convergence in the epigenome [RNA-Seq]	36	40634284	2025/06/26	TXT	30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE278111	Regulation of pancreatic cancer migration by signal convergence in the epigenome [ChIP-Seq]	136	40634284	2025/06/26	BED, BIGWIG	20301;30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE283206	Combined Flt3L and CD40 agonism restores dendritic cell driven T cell immunity in mouse models and patients with pancreatic cancer [human]	8	40815670	2025/06/20	MTX, TSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE278694	Integrated Single-Cell and Spatial Transcriptomics Uncover Distinct Cellular Subtypes Involved in Neural Invasion in PDAC	88	40680743	2025/05/19	CSV, H5, TAR	24676	KNOWN_SOURCE
+GEO	Pancreatic ductal adenocarcinoma	GSE278689	Integrated Single-Cell and Spatial Transcriptomics Uncover Distinct Cellular Subtypes Involved in Neural Invasion in PDAC [snRNA-Seq]	8	40680743	2025/05/19	CSV, MTX, TSV	24676	same_PMID_as:GSE278694
+GEO	Pancreatic ductal adenocarcinoma	GSE278688	Integrated Single-Cell and Spatial Transcriptomics Uncover Distinct Cellular Subtypes Involved in Neural Invasion in PDAC [scRNA-Seq]	29	40680743	2025/05/19	CSV, MTX, TSV	24676	same_PMID_as:GSE278694
+GEO	Pancreatic ductal adenocarcinoma	GSE273492	Selective NSD2 Inhibition Reveals an Epigenetic Vulnerability of KRAS-Driven Cancers [RNA-Seq]	36		2025/04/12	TXT, XLSX	29480	
+GEO	Pancreatic ductal adenocarcinoma	GSE273490	Selective NSD2 Inhibition Reveals an Epigenetic Vulnerability of KRAS-Driven Cancers [CUT&Run]	120		2025/04/12	BW	30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE290654	Cancer-Associated Fibroblasts Shape a High-Lactate Microenvironment to Drive Perineural Invasion in Pancreatic Cancer via Histone Lactylation	4	40138590	2025/03/19	TXT	34284	
+GEO	Pancreatic ductal adenocarcinoma	GSE288533	Neoadjuvant BMS-813160, nivolumab, gemcitabine and nab-paclitaxel for pancreatic cancer	14	40125795	2025/03/11	CSV, RDS	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE290845	Cancer-Associated Fibroblasts Shape a High-Lactate Microenvironment to Drive Perineural Invasion in Pancreatic Cancer via Histone Lactylation [RNA-seq]	6	40138590	2025/03/05	XLSX	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE278383	Agrimoniin synergistically works with erlotinib to inhibit the proliferation of pancreatic cancer by remodeling the tumor microenvironment and suppressing lactic acid expression	4		2025/03/01	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE248800	scRNAseq Data Analysis Code Muscle Inflammation is Regulated by NF-kB From Multiple Cells to Control Distinct States of Wasting in Cancer Cachexia	17	39475511	2025/01/15	H5	24676;24247	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Pancreatic ductal adenocarcinoma	GSE272796	Glucocorticoid Receptor Suppresses GATA6-Mediated RNA Polymerase II Pause Release to Modulate Classical Subtype Identity in Pancreatic Cancer	2	39884837	2025/01/07	MTX, TSV	30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE271737	Glucocorticoid Receptor Suppresses GATA6-Mediated RNA Polymerase II Pause Release to Modulate Classical Subtype Identity in Pancreatic Cancer	110	39884837	2025/01/07	TXT	30173;20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE271732	Glucocorticoid Receptor Suppresses GATA6-Mediated RNA Polymerase II Pause Release to Modulate Classical Subtype Identity in Pancreatic Cancer	141	39884837	2025/01/07	BED, BIGWIG, BROADPEAK, NARROWPEAK	20301;30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE271731	Glucocorticoid Receptor Suppresses GATA6-Mediated RNA Polymerase II Pause Release to Modulate Classical Subtype Identity in Pancreatic Cancer	36	39884837	2025/01/07	BED, BIGWIG, NARROWPEAK	30173	
+GEO	Pancreatic ductal adenocarcinoma	GSE285264	Single-cell RNA sequencing combined with multiplex immunofluorescence probes the role of MFAP5+ fibroblasts in the microenvironment of pancreatic ductal adenocarcinoma	3		2024/12/28	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE279781	CD137 agonism enhances anti-PD1 induced activation of clonally expanded CD8+ T cells in a neoadjuvant pancreatic cancer clinical trial	30	39811671,41855192	2024/12/16	CSV, MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE246457	Differential Activity of MAPK signalling Defines Fibroblast Subtypes in Pancreatic Cancer (RNA-Seq)	37	39627211	2024/12/05	TSV	19057;18573;30173	multi_species:Homo sapiens; Mus musculus
+GEO	Pancreatic ductal adenocarcinoma	GSE249672	A novel pancreatic ductal adenocarcinoma organoid recapitulating tumor microenvironment reveals macrophage-driven enhanced cancer cell survival [RNA-Seq]	33	39348736	2024/12/01	CSV	17303	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE249670	A novel pancreatic ductal adenocarcinoma organoid recapitulating tumor microenvironment reveals macrophage-driven enhanced cancer cell survival [scRNA-Seq]	1	39348736	2024/12/01	MTX, TSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE223135	A decision-point between programmed cell death and transdifferentiation in  pancreatic cancer	2	39971907	2024/11/29	TSV	18573	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE275488	A decision-point between programmed cell death and transdifferentiation in  pancreatic cancer	1	39971907	2024/11/28	CSV	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE247635	Single-cell RNA-sequencing of human spleens reveals an IDO-1+ Tolerogenic Dendritic Cell subset in pancreatic cancer patients that is absent in normal individuals.	7	39547331	2024/11/14	MTX, TSV	21697	
+GEO	Pancreatic ductal adenocarcinoma	GSE268743	Effect of TNFα and RELA inhibition on gene expression in human PDAC cells	28	39110005	2024/10/25	TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE246812	Transfer learning associates CAFs with EMT and inflammation in tumor cells in human tumors and organoid co-culture in pancreatic ductal adenocarcinoma [MULTIseq]	1		2024/10/14	CSV, RDS	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE245319	Transfer learning associates CAFs with EMT and inflammation in tumor cells in human tumors and organoid co-culture in pancreatic ductal adenocarcinoma [Bulk RNA-seq]	6		2024/10/14	CSV, TSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE241182	Epithelial and mesenchymal pancreatic cancer cells exhibit different stem cell phenotypes being associated with different metastatic propensity	18	38398077	2024/08/14	CSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE184871	Single cell RNA sequencing of human PDAC-derived PDX	2	39163864	2024/07/26	TXT	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE271300	A classical epithelial state drives acute resistance to KRAS inhibition in pancreas cancer	16		2024/07/07	H5AD	20301;21103	multi_species:Homo sapiens; Mus musculus
+GEO	Pancreatic ductal adenocarcinoma	GSE267814	Blockade of IL-1b and PD-1 with combination chemotherapy reduces systemic myeloid suppression in metastatic pancreatic cancer with heterogeneous effects in the tumor	13	38990554	2024/07/01	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE267243	Scalable, compressed phenotypic screening using pooled perturbations  (PDAC screens)	54	36747859,39375446	2024/05/13	MTX, TSV	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE229006	New strategies for the identification of intronic variants related to splicing events in pancreas cancer [iCELL8]	10	38800828	2024/05/10	CSV	11154	
+GEO	Pancreatic ductal adenocarcinoma	GSE228844	New strategies for the identification of intronic variants related to splicing events in pancreas cancer [RNA-Seq]	24	38800828	2024/05/08	TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE263733	Single-cell transcriptome analysis reveals subtype-specific clonal evolution and microenvironmental changes in liver metastasis of pancreatic adenocarcinoma and their clinical implications	218	38702773	2024/04/25	TXT	20795	
+GEO	Pancreatic ductal adenocarcinoma	GSE243584	Mapping functional to morphological variation reveals the basis of regional extracellular matrix subversion and nerve invasion in pancreatic cancer [RNA-Seq3]	42	38518775,40910795	2024/03/25	TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE243583	Mapping functional to morphological variation reveals the basis of regional extracellular matrix subversion and nerve invasion in pancreatic cancer [RNA-Seq2]	4	38518775,40910795	2024/03/25	TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE208732	Mapping functional to morphological variation reveals the basis of regional extracellular matrix subversion and nerve invasion in pancreatic cancer [RNA-seq]	102	38518775,40910795	2024/03/25	TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE244326	Comparison of gene expression in CSCs (tumorspheres) vs non-CSCs (2D adherent condition) from A13A PDAC cell line [ATAC-seq]	6	38678032	2024/02/18	BED, TSV	18573	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE244287	Comparison of gene expression in CSCs (tumorspheres) vs non-CSCs (2D adherent condition) from A13A PDAC cell line [RNA-seq]	6	38678032	2024/02/18	TXT	18573	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE254250	Transcriptome-based identification of tumor-reactive and bystander CD8+ T cell receptor clonotypes in human pancreatic cancer	15	37967201	2024/01/26	CSV, H5	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE240649	Patient derived organoid established under hypoxic is preferrentially enriched for Moffitt, basal like subtype that corresponse to the dedifferentiate portion of the tumour section.	12	38374892	2024/01/25	TXT	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE249539	Extracellular niche and tumor microenvironment enhance the impact of KRAS inhibitors in pancreatic cancer models [RNA-seq]	12	38294344	2024/01/24	RESULTS	11154	
+GEO	Pancreatic ductal adenocarcinoma	GSE222952	BRD9-SMAD2/3 orchestrates stemness and tumorigenesis   in pancreatic ductal adenocarcinoma   drives human dilated cardiomyopathy	4	37739089	2024/01/01	CSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE243649	Incorporation of human iPS cell-derived stroma creates a pancreatic cancer organoid with heterogeneous cancer-associated fibroblasts [scRNA-Seq]	2	37955987	2023/11/13	MTX, TSV	24676	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE213387	Identification of a ΔNp63-dependent Basal-like A Subtype-specific Transcribed Enhancer Program (B-STEP) in Aggressive Pancreatic Ductal Adenocarcinoma [RNA-seq]	26	37279184	2023/09/19	CSV	20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE213385	Identification of a ΔNp63-dependent Basal-like A Subtype-specific Transcribed Enhancer Program (B-STEP) in Aggressive Pancreatic Ductal Adenocarcinoma [HiChIP]	2	37279184	2023/09/19	BEDPE	20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE213378	Identification of a ΔNp63-dependent Basal-like A Subtype-specific Transcribed Enhancer Program (B-STEP) in Aggressive Pancreatic Ductal Adenocarcinoma [ChIP-seq]	12	37279184	2023/09/19	BIGWIG	11154;20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE217845	IL-1b+ tumor-associated macrophages fuel pathogenic inflammation in pancreatic cancer - scRNAseq of human PDAC samples	16	37914939	2023/09/11	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE217847	IL-1b+ tumor-associated macrophages fuel pathogenic inflammation in pancreatic cancer	136	37914939	2023/09/07	CSV, JPG, JSON, MTX, PNG, TIFF, TSV, TXT	24247;24676;33597	multi_species:Mus musculus; Homo sapiens
+GEO	Pancreatic ductal adenocarcinoma	GSE242230	High-dimensional deconstruction of pancreatic cancer identifies tumor microenvironmental and developmental stemness features that predict survival	25	37857854	2023/09/06	MTX, TSV, TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE228611	IL6R-STAT3 oscillations produce stable heterogeneity of metabolic phenotype in pancreatic ductal adenocarcinoma cells	8	38141171	2023/09/01	CSV	20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE241563	Cell-in-cell-mediated entosis reveals a progressive mechanism in pancreatic cancer	3	37657757	2023/08/31	MTX, TSV	11154	
+GEO	Pancreatic ductal adenocarcinoma	GSE241233	RNA-seq analysis of bulk Human and single-cell Musashi2-CreER-MycT58A; R26-LSL-tdTomato Mouse Pancreas ASCP, PDAC, and ACC Tumors	10	37802055	2023/08/21	H5, JSON, MTX, TSV	21103;20301	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Pancreatic ductal adenocarcinoma	GSE241226	Bulk RNA-seq analysis of Human ASCP and ACC Pancreas Tumors	7	37802055	2023/08/21	H5, JSON, TSV, TXT	20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE238163	Plasma cells in human pancreatic ductal adenocarcinoma secrete antibodies to widely expressed self-antigens	13	37751306	2023/07/31	CSV, FASTA, MTX, TSV	18573;15520	
+GEO	Pancreatic ductal adenocarcinoma	GSE205354	Spatially resolved multi-omics single-cell analyses inform mechanisms of immune-dysfunction in pancreatic cancer	8	37263303	2023/07/20	MTX, TSV	21697	
+GEO	Pancreatic ductal adenocarcinoma	GSE205049	Spatially Resolved Multi-Omics Single-Cell Analyses Inform Mechanisms of Immune Dysfunction in Pancreatic Cancer	18	37263303	2023/07/20	CSV, MTX, TSV	20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE231535	Coordinated single cell tumor microenvironment dynamics reinforce pancreatic cancer subtype	2	37633924	2023/06/25	MTX, TSV	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE202742	Schwann Cells Shape Tumor Cells and Cancer-Associated Fibroblasts in the Pancreatic Ductal Adenocarcinoma Microenvironment [scRNA-seq]	4		2023/05/30	TSV, TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE202740	Schwann Cells Shape Tumor Cells and Cancer-Associated Fibroblasts in the Pancreatic Ductal Adenocarcinoma Microenvironment [ST]	4		2023/05/30	MTX, TIFF, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE201601	Schwann Cells Shape Tumor Cells and Cancer-Associated Fibroblasts in the Pancreatic Ductal Adenocarcinoma Microenvironment	10		2023/05/30	TXT	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE232549	Molecular profiling and specific targeting of gemcitabine-resistant subclones in heterogeneous pancreatic cancer cell populations	26	37719017	2023/05/20	TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE216036	Effect of Okadaic Acid on gene expression in human pancreatic cells	10	37170215	2023/05/16	XLSX	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE197177	A single-cell atlas of the tumor, stromal and immune microenvironments in pancreatic cancer liver metastasis	8	37612267	2023/04/20	MTX, TSV	18573	KNOWN_SOURCE
+GEO	Pancreatic ductal adenocarcinoma	GSE224411	Uncovering the spatial landscape of molecular interactions within the tumor microenvironment through latent spaces	4	37080163,37591207	2023/04/19	MTX, TAR, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE226762	Dysregulated miRNAs modulate tumor microenvironment associated signaling networks in pancreatic ductal adenocarcinoma	31	37007745	2023/04/05	CSV, MTX, TSV	21697;20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE226829	Analysis of donor pancreata defines the transcriptomic signature and microenvironment of early pre-neoplastic pancreatic lesions	277	37021392	2023/03/08	DCC, PKC, PNG, XLSX	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE210199	Tissue-resident memory T-cells in pancreatic ductal adenocarcinoma co-express PD-1 and TIGIT and inhibition is reversible by dual antibody blockade 	3	36689623,37350578	2023/01/24	CSV	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE205013	Effects of Chemotherapy on Human Pancreatic Adenocarcinoma and its Tumor Microenvironment	27	36781852,38975886,41364531	2023/01/09	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE202023	HNF1B induced three-dimensional genome analysis of patient-derived pancreas neoplasm organoids	15	36511816	2022/12/27	BW, HIC, NARROWPEAK, TXT	18573;24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE213096	Systemic Alterations in Type-2 Conventional Dendritic Cells Lead to Impaired Tumor Immunity in Pancreatic Cancer	12	37229629	2022/10/21	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE212966	Single-cell RNA-seq reveals immune landscape of pancreatic cancer	12	36944944,37251940,41534892	2022/09/13	MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE211644	Single cell transcriptomic and T cell repertoire analysis reveals trajectory of tumor - infiltrating lymphocyte states in pancreatic cancer	50	35849783,38975886	2022/09/06	CSV, MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE203612	Cancer cell states recur across tumor types and form specific interactions with the tumor microenvironment	31	35931863	2022/08/05	CSV, H5, JPG, JSON, MTX, PNG, TSV	18573;19057;19415	multi_species:Homo sapiens; Mus musculus
+GEO	Pancreatic ductal adenocarcinoma	GSE202051	Refined molecular taxonomy and treatment remodeling of pancreatic cancer using single-cell resolution	74	36185212,35902743,38975886	2022/05/18	H5AD	20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE173339	Occult polyclonality of preclinical pancreatic cancer models drives in vitro evolution.	13	35752636	2022/04/28	BED, CSV, H5, TAR	18573	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE186960	Profiling the Panc1 pancreatic cancer cell line following Gemcitabine treatment using single cell RNA sequencing	6	35476525	2022/03/21	RDS, TAR, TXT	24676;18573	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE197613	Multi-omics analyses of changes in the tumor microenvironment of pancreatic adenocarcinoma following neoadjuvant treatment with anti-PD-1 antibody	91	35404390	2022/03/07	TXT	21290	
+GEO	Pancreatic ductal adenocarcinoma	GSE156405	Elucidation of tumor-stromal heterogeneity and the ligand-receptor interactome by single cell transcriptomics in real-world pancreatic cancer biopsies	17	34426439	2021/08/25	TAR	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE166571	Spatially confined sub-tumor microenvironments orchestrate pancreatic cancer pathobiology	1	34644529	2021/08/23	CSV, MTX, TSV	24676	
+GEO	Pancreatic ductal adenocarcinoma	GSE174226	High-content single-cell combinatorial indexing	6	34226710	2021/05/28	BED, CSV, RDS, TSV, TXT	24247;24676	multi_species:Mus musculus; Homo sapiens
+GEO	Pancreatic ductal adenocarcinoma	GSE173433	Single-cell RNA-seq following APE1/Ref-1 knockdown in Pancreatic Ductal Adenocarcinoma	87	34376225	2021/04/28	TXT	16791	
+GEO	Pancreatic ductal adenocarcinoma	GSE155698	Multimodal Mapping of the Tumor and Peripheral Blood Immune Landscape in Human Pancreatic Cancer	41	34296197,36411320	2020/10/01	TAR	20301;24676	KNOWN_SOURCE
+GEO	Pancreatic ductal adenocarcinoma	GSE154778	Single-cell transcriptomics analysis of pancreatic primary tumor and metastatic biopsy tissues	16	32988401	2020/10/01	CSV, MTX, TSV	20301	
+GEO	Pancreatic ductal adenocarcinoma	GSE141017	Single cell transcriptomes of pancreatic pre-invasive lesions and cancer reveal acinar metaplastic cells’ heterogeneity	12	32908137,33649045	2020/07/31	CSV, TXT	19057;16791;17021	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Pancreatic ductal adenocarcinoma	GSE114704	Transcriptional dissection by single-cell RNASeq analysis of the metastasis settings from a highly metastatic Patient-Derived Xenograft model of pancreatic ductal adenocarcinoma	70	32499301	2020/07/24	TSV	16791	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE114454	Organoids derived from pancreatic adenocarcinoma patients share morphological and genetic features with the primary tumor [Drop-seq]	17		2020/06/01	TXT	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE111672	Integrating microarray-based spatial transcriptomics and single-cell RNA-seq reveals tissue architecture in pancreatic ductal adenocarcinomas	23	31932730	2020/01/13	JPG, RTF, TSV, TXT	18573	
+GEO	Pancreatic ductal adenocarcinoma	GSE113616	Stromal Fibroblasts Drive Single Cell Heterogeneity in Pancreatic Cancer	189	31155233	2019/04/24	CSV	16791	title_suggests_nontissue
+GEO	Pancreatic ductal adenocarcinoma	GSE99305	Single-cell RNA-seq following APE1/Ref-1 knockdown in Pancreatic Ductal Adenocarcinoma	96	28922540,33658640,34376225	2018/02/14	TXT	16791	
+GEO	Pancreatic ductal adenocarcinoma	GSE70971	Microenvironmental cues co-regulate pancreatic cancer metabolism and histone acetylation	8	28096419	2017/02/23	BEDGRAPH, TXT	16791	
+GEO	Pancreatic ductal adenocarcinoma	GSE60407	Human Pancreatic CTCs Express the ECM Protein SPARC	7	25242334	2014/09/22	XLS	16288	
+GEO	Pancreatic neuroendocrine tumor	GSE326458	AP-1 Family Member Transcription Factors Play a Critical Role in Human Beta Cell Replication and Differentiation [Multiome]	2		2026/10/29	MTX, TSV	34281	
+GEO	Pancreatic neuroendocrine tumor	GSE242549	Differentially expressed genes upon the overexpression of MENIN in QGP1 cells	6		2026/09/17	TXT	24676	
+GEO	Pancreatic neuroendocrine tumor	GSE300217	Leveraging Two Novel Droplet-Based Single-Cell RNA Sequencing Platforms: a Comparative Study With 10x Genomics	9	41327014	2025/11/17	MTX, TSV	35109;35959;24676	multi_species:Homo sapiens; Mus musculus
+GEO	Pancreatic neuroendocrine tumor	GSE284573	Single-cell transcriptome conservation in a multispecies comparative analysis of fresh and cryopreserved insulinoma cell lines	6	40438246	2025/06/04	MTX, TSV	24676;25947;25760;24247	multi_species:Homo sapiens; Mus musculus; Canis lupus familiaris; Rattus norvegicus
+GEO	Pancreatic neuroendocrine tumor	GSE296486	Tumor-derived Apolipoprotein E induces Tip endothelial cell to remodel tumor stroma ratio and promote pancreatic neuroendocrine tumor progression	34		2025/05/13	TXT	34284	
+GEO	Pancreatic neuroendocrine tumor	GSE279805	Pancreatic neuroendocrine tumor: case report of a patient with germline FANCD2 mutation and tumor analysis using single-cell RNA sequencing	1	39768544	2024/12/14	MTX, TSV	24676	
+GEO	Pancreatic neuroendocrine tumor	GSE267209	Multiparametric atlas of the pre-metastatic liver for prediction of metastatic outcome in early-stage pancreatic cancer	8	38942992	2024/06/28	H5, MTX, TSV	18573	
+GEO	Pancreatic neuroendocrine tumor	GSE256136	Single-cell sequencing reveals the heterogeneity of pancreatic neuroendocrine tumors under the pattern of genomic instability and histological grading	20	39310774,40623046	2024/02/27	MTX, TSV	24676	KNOWN_SOURCE
+GEO	Pancreatic neuroendocrine tumor	GSE162708	Single-cell RNA-sequencing of metastatic pancreatic neuroendocrine tumor	5	34671197	2021/08/24	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE351467	Study of LETT@MVs‑induced ferroptosis in tumor cells via supplementation of PUFA	4		2026/10/27	XLSX	24676	
+GEO	Hepatocellular carcinoma	GSE349540	Tumor-derived UCHL1 promotes tolerogenic DC maturation and crosstalk with Tregs to suppress anti-tumor immunity	10		2026/10/06	H5AD	24676	
+GEO	Hepatocellular carcinoma	GSE328985	CASP10-mediated suppression of GSDME-dependent pyroptosis shapes the tumor immune microenvironment in hepatocellular carcinoma	30		2026/10/01	TXT	21290	
+GEO	Hepatocellular carcinoma	GSE348104	Age-dependent differences in SARS-CoV-2 entry-factor expression and innate immune responses between pediatric and adult liver organoids	27		2026/09/26	XLS	37360	
+GEO	Hepatocellular carcinoma	GSE347432	Genetic variants within silencer elements contribute to human blood cell traits	20		2026/09/22	TSV, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE304188	Linoleic Acid Metabolic Reprogramming Enhances Immune Response in Hepatocellular Carcinoma	2	42643672	2026/09/01	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE319886	ICAM1 expression and associated clinical parameters as predictive biomarkers for acute celluar rejection	6		2026/06/30	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE335904	In Vivo CRISPR Screens Identify SLC1A5 as a Metabolic Checkpoint for Cancer Immunotherapy [ATAC]	4		2026/06/23	BW	30172;30173	multi_species:Mus musculus; Homo sapiens
+GEO	Hepatocellular carcinoma	GSE291757	Multiplexed transcriptomics to screen drug combination and define therapeutic mechanism of action at single-cell resolution	4		2026/05/28	TXT	29480	
+GEO	Hepatocellular carcinoma	GSE326201	Single-cell RNA sequencing of human hepatocellular carcinoma and adjacent non-tumour liver tissues reveals etiology-associated and etiology-independent tumour microenvironmental features	18	42374019	2026/05/27	H5	24676	
+GEO	Hepatocellular carcinoma	GSE332556	Tumor-associated Macrophage GnT-V Enhances Sensitivity to Antitumor Immunotherapy through Branched N-Glycosylation to Promote M1 Polarization	2		2026/05/25	MTX, TSV	29480	
+GEO	Hepatocellular carcinoma	GSE329526	Clonal lineage tracing reveals distinct invasive subpopulations in triple-negative breast cancer	10		2026/05/06	CSV, H5AD	24676	
+GEO	Hepatocellular carcinoma	GSE329449	Tumor cells with cholangiocytic phenotype form oncogenic niches with fibroblasts in hepatocellular carcinoma	6		2026/05/04	XLSX	24676	
+GEO	Hepatocellular carcinoma	GSE326605	Bile acid uptake activates STAT signaling and impairs natural killer cells in metabolic dysfunction–associated steatohepatitis	4		2026/04/05	MTX, TSV, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE320398	Pan-Cancer Analysis Reveals Mutation-Driven TE Dysregulation as a Contributor to Immune Suppression	28		2026/04/01	BW	34284	
+GEO	Hepatocellular carcinoma	GSE320262	Pan-Cancer Analysis Reveals Mutation-Driven TE Dysregulation as a Contributor to Immune Suppression [WGBS]	8		2026/04/01	BW	34284	
+GEO	Hepatocellular carcinoma	GSE320261	Pan-Cancer Analysis Reveals Mutation-Driven TE Dysregulation as a Contributor to Immune Suppression [CUT&Tag]	3		2026/04/01	BW	34284	
+GEO	Hepatocellular carcinoma	GSE320258	Pan-Cancer Analysis Reveals Mutation-Driven TE Dysregulation as a Contributor to Immune Suppression [ATAC-seq]	3		2026/04/01	BW	34284	
+GEO	Hepatocellular carcinoma	GSE320255	Pan-Cancer Analysis Reveals Mutation-Driven TE Dysregulation as a Contributor to Immune Suppression [RNA-seq]	14		2026/04/01	TXT	34284	
+GEO	Hepatocellular carcinoma	GSE300628	HER2 heterogeneous breast cancer models reveal novel therapeutic targets and subclonal dynamics during evolution to resistance to HER2-targeted therapies	60	41925564	2026/03/20	CSV, H5	18573;24676	
+GEO	Hepatocellular carcinoma	GSE290501	Tumor-secreted SPP1 activates CD44-Hedgehog signaling in hepatic stellate cells to promote fibrosis	4	41456866	2026/03/11	RESULTS	24676	
+GEO	Hepatocellular carcinoma	GSE312804	scRNAseq analysis of hepatocytes from liver cirrhosis patient	2	41580988	2026/03/02	MTX, TSV	28038	
+GEO	Hepatocellular carcinoma	GSE320155	scRNA‑seq of human intra‑hepatic CD4⁺ T cells reveals unique Treg transcriptional identities and two steady‑state tissue‑adaptation programs across healthy and HCC liver samples	60	42443155	2026/02/25	CSV	24676	
+GEO	Hepatocellular carcinoma	GSE319709	Single-cell transcriptomics reveals etiology-specific T-cell heterogeneity in hepatocellular carcinoma and implicates regulatory	18		2026/02/20	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE318418	Immunosuppressive monocytes are enriched in hepatocellular carcinoma patients with liver dysfunction in a phase II trial of combination sorafenib and nivolumab [scRNA-Seq]	16	41831609	2026/02/09	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE318420	Immunosuppressive monocytes are enriched in hepatocellular carcinoma patients with liver dysfunction in a phase II trial of combination sorafenib and nivolumab	210	41831609	2026/02/04	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE317443	Multi-Omics SMR and Experimental supportive analyses Decipher Causal Drivers Hepatocellular Carcinoma	20	41699549	2026/01/28	XLSX	29480	
+GEO	Hepatocellular carcinoma	GSE287386	Locoregional delivery of autologous PD-1 knockout T cell in patients with failed first-line therapy in advanced hepatocellular carcinoma	6		2026/01/18	MTX, TSV	18573	
+GEO	Hepatocellular carcinoma	GSE313791	Multi-Omics Integration Identifies a Prognostic Signature Guiding Precision Survival in Advanced HCC	6		2025/12/25	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE313642	Immunosuppressive monocytes are enriched in hepatocellular carcinoma patients with liver dysfunction in a phase II trial of combination sorafenib and nivolumab [CITE-Seq]	194	41831609	2025/12/12	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE278119	Clonally expanded effector CD4+ cytotoxic T lymphocytes are associated with severe neurological adverse events after immune checkpoint inhibitor therapy	44	41167637	2025/12/03	CSV, MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE290298	Integrative profiling of liver cancer reveals lysine metabolic reprogramming and patient stratification with distinct immune microenvironment and therapeutic responses	10	41107837	2025/12/02	CSV	24676	
+GEO	Hepatocellular carcinoma	GSE208307	Achieving CD8+ T cell-dependent lethality by targeting cancer USP14 in HCC [scRNA-seq]	2	40966278	2025/11/14	CSV, TAR	18573	
+GEO	Hepatocellular carcinoma	GSE249843	S100A6 drives lymphatic metastasis of liver cancer via activation of the RAGE/NF-kb/VEGF-D pathway	17	38350547	2025/10/07	MTX, TSV, XLSX	16791;18573	
+GEO	Hepatocellular carcinoma	GSE308145	Systematic benchmarking of imaging spatial transcriptomics platforms in FFPE tissues - scRNA-seq Data	1	41266321	2025/10/03	CSV, MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE278324	Gene regulatory network analysis on snRNAseq revealed key regulators for hepatocellular carcinoma progression	6		2025/09/26	TXT	24676	
+GEO	Hepatocellular carcinoma	GSE308994	RNA-sequencing profiles of HepG2 cells overexpressing human constitutive androstane receptor (CAR)	6	35367211	2025/09/24	TXT	20301	
+GEO	Hepatocellular carcinoma	GSE307831	Human peripheral and tissue Foxp3-high regulatory T cells in patients with hepatocellular carcinoma [CITE-seq]	33	40590861	2025/09/16	CSV, MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE299340	Single-cell RNA sequencing reveals B cell-related immunosuppressive landscape and a potential suppressor in hepatocellular carcinoma	10	40721811	2025/08/06	MTX, TSV	11154	KNOWN_SOURCE
+GEO	Hepatocellular carcinoma	GSE290891	Isolation of mitochondrial mutation-specific T-cell receptors	11	40587813	2025/08/05	CSV, H5, MTX, TSV	24676;32242	
+GEO	Hepatocellular carcinoma	GSE284796	Beneficial infections of the enterovirus genus in patients with liver cancer	8	40345802	2025/07/22	MTX, TSV	34284	
+GEO	Hepatocellular carcinoma	GSE281809	Enhancing single-cell ATAC sequencing with formaldehyde fixation, cryopreservation, and multiplexing for flexible analysis [scATAC-seq]	10	41116189	2025/07/01	CSV, TBI, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE281808	Enhancing single-cell ATAC sequencing with formaldehyde fixation, cryopreservation, and multiplexing for flexible analysis [ATAC-seq]	8	41116189	2025/07/01	BED, BW	24676	
+GEO	Hepatocellular carcinoma	GSE292298	Multi-omics Identifies Tumor-Intrinsic SREBP1 Driving Immune Exclusion in Hepatocellular Carcinoma	6	40518290	2025/06/24	TXT	34284	
+GEO	Hepatocellular carcinoma	GSE282343	Viral-Track integrated single-cell RNA-sequencing reveals HBV lymphotropism and immunosuppressive microenvironment in HBV-associated hepatocellular carcinoma	8	40634523	2025/06/11	TXT	24676	
+GEO	Hepatocellular carcinoma	GSE298054	Non-viral CISH locus-specific integrated IL-15-armored CAR-NK cells achieve potent anti-tumor efficacy via adaptive NK cell differentiation	6		2025/05/26	MTX, TSV	29480	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE292071	A Single-cell Atlas of Schwannoma Across Genetic Backgrounds and Anatomic Locations	151	40217315	2025/04/17	MTX	30173	
+GEO	Hepatocellular carcinoma	GSE290925	Single-Cell Transcriptomic Profiling of the Tumor Microenvironment in Treatment-Naive Hepatocellular Carcinoma Patients	12	40241752	2025/03/03	MTX, TSV	18573	KNOWN_SOURCE
+GEO	Hepatocellular carcinoma	GSE282234	Endogenous protein S100A14 stabilizes glutaminase to render hepatocellular carcinoma resistant to sorafenib	6	40217256	2025/03/02	TAR	24676	
+GEO	Hepatocellular carcinoma	GSE287896	G-quadruplex DNA suppresses transcription during DNA replication 	80		2025/01/29	BW, MTX, TSV, XLSX	29480;24676;24247	multi_species:Homo sapiens; Mus musculus
+GEO	Hepatocellular carcinoma	GSE196393	Targeting non-junctional Claudin-1 with monoclonal antibodies to treat hepatocellular carcinoma	33		2025/01/29		20301;18573	
+GEO	Hepatocellular carcinoma	GSE196392	Targeting non-junctional Claudin-1 with monoclonal antibodies to treat hepatocellular carcinoma [scRNA-seq]	2		2025/01/29	TSV	18573	
+GEO	Hepatocellular carcinoma	GSE196390	Targeting non-junctional Claudin-1 with monoclonal antibodies to treat hepatocellular carcinoma [RNA-seq]	31		2025/01/29	TSV	20301	
+GEO	Hepatocellular carcinoma	GSE281110	Molecular landscape of tumor-associated tissue-resident memory T cells in tumor microenvironment of hepatocellular carcinoma [HCC_scRNA]	7	39934824	2025/01/22	BEST, MTX, TSV	16791	
+GEO	Hepatocellular carcinoma	GSE282701	scRNAseq profile of hepatocellular carcinoma (HCC) tumors and adjacent tissues with or without hepatitis-B virus (HBV) infection	12		2025/01/01	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE265770	Gene expression profile at single cell level of CD56+ natural killer cells and CD8+ T cells from blood, spleen and HCC-PDX in humanized mice	3	39318093	2024/12/28	CSV	24676	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE265769	Effect of anti-PD-1 and/or anti-TIGIT antibodies on hepatocellular carcinoma-patient derived xenografts in humanized mice	12	39318093	2024/12/28	CSV	24676	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE224832	Active repression of cell fate plasticity by PROX1 safeguards hepatocyte identity and prevents liver tumorigenesis.	104	39948437	2024/12/18	BIGWIG, TSV	30173;21626;24247;21697;24676;30172	multi_species:Mus musculus; Homo sapiens
+GEO	Hepatocellular carcinoma	GSE235863	T cell populations correlate with response and resistance to anti-PD-1 plus lenvatinib combination therapy in hepatocellular carcinoma	69	39889705	2024/12/17	CSV, H5AD, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE278074	HKDC1 promotes liver cancer stemness under hypoxia via stabilizing β-catenin	12	39250463	2024/10/02	TAB	15520	
+GEO	Hepatocellular carcinoma	GSE246219	Cross-tissue human fibroblast atlas reveals myofibroblast subtypes with distinct roles in immune modulation	80	39303725	2024/09/19		24676;20795	
+GEO	Hepatocellular carcinoma	GSE246215	Cross-tissue human fibroblast atlas reveals myofibroblast subtypes with distinct roles in immune modulation [scRNA-seq]	38	39303725	2024/09/19	CSV	20795	
+GEO	Hepatocellular carcinoma	GSE272348	Late-stage tertiary lymphoid structures in hepatocellular carcinoma treated with neoadjuvant immune checkpoint blockade	31	39455893	2024/09/13	CSV, MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE272347	Late-stage tertiary lymphoid structures in hepatocellular carcinoma treated with neoadjuvant immune checkpoint blockade [scRNA-seq]	17	39455893	2024/09/13	CSV, MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE272346	Late-stage tertiary lymphoid structures in hepatocellular carcinoma treated with neoadjuvant immune checkpoint blockade [bulk RNA-seq]	14	39455893	2024/09/13	TSV	24676	
+GEO	Hepatocellular carcinoma	GSE212391	Towards the DNA methylation haplotype map of 11 common solid cancers	110		2024/08/23	BEDGRAPH, MHAP, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE248907	Macrophages Coated Tumor Cluster (MCTC) Aggravated Hepatoma Invasion and Immunotherapy Resistance via Entrapping Cytotoxic T Cells to Generate Local Immune Deprivation in a M2BP-dependent manner	6	38614095	2024/06/12	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE223204	Hepatocyte-macrophage crosstalk via the PGRN-EGFR axis modulates ADAR1-mediated immunity in the liver -HCC scRNAseq	2	38935501	2024/05/28	MTX, TSV	20795	
+GEO	Hepatocellular carcinoma	GSE255830	Gene expression and T cell repertoire profile at single cell level of peripheral blood T cells after treatment with a personalized neoantigen vaccine (GNOS-PV02) and Pembrolizumab for advanced hepatocellular carcinoma.	8	38584166	2024/05/17	CSV, MTX, TSV, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE245908	Identification of TREM1+CD163+ myeloid cells as a deleterious immune subset in HCC [Spatial Transcriptomics]	2	38350444,41270217	2024/02/04	CSV, H5, JPG, JSON, PNG, TIFF, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE245906	Identification of TREM1+CD163+ myeloid cells as a deleterious immune subset in HCC [scRNA-seq]	20	38350444	2024/02/04	TSV	24676	
+GEO	Hepatocellular carcinoma	GSE245905	Identification of TREM1+CD163+ myeloid cells as a deleterious immune subset in HCC [bulk_RNA-seq]	9	38350444	2024/02/04	TSV, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE249361	Single-cell transcriptomics reveals the role of antigen presentation in liver metastatic breast cancer	22	38318373,40594834	2024/01/23	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE222791	Synergistic immunochemotherapy exerts efficiently anti-hepatocellular carcinoma effect to induce SAMD4B-APOA2 axis for inhibition of tumor immune evasion	10	38886351	2024/01/08	MTX, TSV	24676;25526	multi_species:Homo sapiens; Mus musculus
+GEO	Hepatocellular carcinoma	GSE223743	Ultra-low error synthetic long-read single-cell sequencing reveals expressions of hypermutation clusters of isoforms in human liver cancer cells	12	38206124	2024/01/04	CSV, TXT, XLSX	24676	
+GEO	Hepatocellular carcinoma	GSE243572	Differential T-cell and monocyte responses in hepatocellular carcinoma treated with regorafenib plus nivolumab: an integrated clinical and biomarker analysis of the phase 2 RENOBATE trial	53	38374347	2023/12/31	CSV, H5	24676	
+GEO	Hepatocellular carcinoma	GSE189935	The fibroblast-centered cellular crosstalk in HBV-positive liver cancer revealed by single cell sequencing	28		2023/12/31	CSV, RDS, TSV	20301	
+GEO	Hepatocellular carcinoma	GSE229772	Lineage and ecology define liver tumor evolution in response to treatment	31	38280378	2023/12/22	TXT	20301;18573;24676	
+GEO	Hepatocellular carcinoma	GSE227265	Genome-wide profiling of transcription factor activity in primary liver cancer using single cell ATAC sequencing	16	37980571	2023/11/08	CSV, MTX, TBI, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE214140	The Second Generation of CAR-iMACs with Enhanced Polarization, CAR-mediated Efferocytosis and Superior Potency against Solid Tumors	3		2023/09/29	TAR	18573	
+GEO	Hepatocellular carcinoma	GSE243245	Crosstalk between myeloid and B cells shapes the distinct microenvironments of primary and secondary liver cancer	123	37352379	2023/09/17	CSV	20795	
+GEO	Hepatocellular carcinoma	GSE242889	Single-cell dissection of the multicellular ecosystem and molecular feature sunderlying microvascular invasion in hepatocellular carcinoma	10	37972953,42139279	2023/09/12	TAR	24676	
+GEO	Hepatocellular carcinoma	GSE220313	Gene expression profile and TCR sequencing data of CD45+ cells sorted from single cell suspensions of tumors after in vitro anti-CD3 stimulation and treatments	16		2023/09/01	TAR	16791	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE233807	RNA N6-methyladenosine methyltransferase METTL3 drives NAFLD-HCC and is a therapeutic target for boosting immunotherapy [m6A-seq]	8	37586322	2023/08/23	BW	24676	
+GEO	Hepatocellular carcinoma	GSE233806	RNA N6-methyladenosine methyltransferase METTL3 drives NAFLD-HCC and is a therapeutic target for boosting immunotherapy [RNA-Seq]	4	37586322	2023/08/23	CSV	20301	
+GEO	Hepatocellular carcinoma	GSE185839	Single-Cell RNA-Sequencing reveals cellular heterogeneity and traiectories of lineage specification of human primary HCC tumorspheres	1	37739936	2023/08/11	MTX, TSV, TXT	24676	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE155481	Single-Cell Map of Diverse Immune Phenotypes in Liver Microenvironment	2		2023/07/22	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE235057	Crosstalk between myeloid and B cells shapes the distinct microenvironments of primary and secondary liver cancer	29	37352379	2023/06/19	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE233405	Immunohistochemical scoring of LAG-3 in conjunction with CD8 in  the tumor microenvironment predicts response to immunotherapy in  hepatocellular carcinoma	6	37342338	2023/05/30	CSV	24676	
+GEO	Hepatocellular carcinoma	GSE224411	Uncovering the spatial landscape of molecular interactions within the tumor microenvironment through latent spaces	4	37080163,37591207	2023/04/19	MTX, TAR, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE216404	Multi-scale chromatin footprinting reveals wide-spread alterations to the structure of DNA regulatory elements [SHARE-Seq]	1	37034577,39843737	2023/03/29	BED, MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE216464	Single-cell multi-scale footprinting reveals the modular organization of DNA regulatory elements	41	37034577,39843737	2023/03/28	BED, MTX, TSV, TXT	24676;19057	multi_species:Homo sapiens; Mus musculus
+GEO	Hepatocellular carcinoma	GSE202642	Single-cell RNA sequencing shows the heterogeneity of cancer-associated fibroblast in HBV-related hepatocellular carcinoma	11	36878933,39837814,40315321	2023/03/13	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE217680	Multiplex profiling of developmental enhancers with quantitative, single-cell expression reporters [bulkMPRA_promoters_cell_lines]	12	38724692	2022/12/12	TXT	18573	
+GEO	Hepatocellular carcinoma	GSE217690	Multiplex profiling of developmental enhancers with quantitative, single-cell expression reporters	368	38724692	2022/12/11		30173;21222;19057;32081;30172;18573;28771	multi_species:Homo sapiens; Mus musculus; Escherichia coli
+GEO	Hepatocellular carcinoma	GSE155736	Isoformic PD-1 is tumorigenic in hepatocellular carcinoma through seemingly exhausted αβ T cells	5		2022/11/25	CSV	17769;24676	multi_species:Homo sapiens; synthetic construct
+GEO	Hepatocellular carcinoma	GSE215428	Single-cell RNA sequencing of immune landscape in hepatocellular carcinoma treated with sintilimab and sorafenib	3		2022/10/17	CSV	24676	
+GEO	Hepatocellular carcinoma	GSE189903	Multiregional single-cell transcriptomic analysis of liver cancer	34	36476645	2022/10/13	H5, MTX, TSV, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE162616	Single-Cell Transcriptomic Atlas of Human Hepatic ILCs Reveals the Enrichment of ILC2 in Liver Cancer	13	35856557	2022/09/26	MTX, TSV, TXT	24676	
+GEO	Hepatocellular carcinoma	GSE210337	Single cell RNA-seq and TCR-seq of T cell responses against DNAJB1-PRKACA	6	36302754	2022/09/12	CSV, H5	21697	
+GEO	Hepatocellular carcinoma	GSE212342	A genomic enhancer signature associates with Hepatocellular Carcinoma prognosis	87	37168287	2022/09/02	BW	20301	
+GEO	Hepatocellular carcinoma	GSE212047	Opposing Roles of Hepatic Stellate Cell Subpopulations in Hepatocarcinogenesis	64	36198802	2022/08/26	CEL, H5	6246;24247;24676	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Hepatocellular carcinoma	GSE212046	Single nuclei RNAseq from non-tumour and HCC human liver tissues	4	36198802	2022/08/26	H5	24676	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE210679	Comparison of single-nucleus and single-cell transcriptomes in hepatocellular carcinoma tissue	2	36111491	2022/08/09	TAR	20795	
+GEO	Hepatocellular carcinoma	GSE203612	Cancer cell states recur across tumor types and form specific interactions with the tumor microenvironment	31	35931863	2022/08/05	CSV, H5, JPG, JSON, MTX, PNG, TSV	18573;19057;19415	multi_species:Homo sapiens; Mus musculus
+GEO	Hepatocellular carcinoma	GSE195648	Checkpoint Inhibitors Modulate Plasticity of Innate Lymphoid Cells in Peripheral Blood of Patients with Hepatocellular Carcinoma	9	35833139	2022/06/23	CSV	18573	
+GEO	Hepatocellular carcinoma	GSE188289	Single-cell multi-omics dataset of hepatocellular carcinoma cell lines	10		2022/05/31	TSV, TXT, XLSX	29480;23227	
+GEO	Hepatocellular carcinoma	GSE174748	An imbalance of tumour-suppressing and tumour-promoting hepatic stellate cell populations in liver fibrosis contributes to hepatocarcinogenesis	4	36198802	2022/05/01	MTX, RDS, TSV	20301	
+GEO	Hepatocellular carcinoma	GSE197009	maxATAC: genome-scale transcription-factor binding prediction from ATAC-seq with deep neural networks	3		2022/02/21	BED	24676	
+GEO	Hepatocellular carcinoma	GSE190487	Gastrointestinal B-cells license metabolic T-cell activation in NASH microbiota anigen-independently and contribute to fibrosis by IgA-FcRy signalling	1		2022/02/01	MTX, TSV	20301	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE168933	Liver Stromal Cells Restrict Macrophage Maturation and Stromal IL-6 Limits the Differentiation of Cirrhosis-linked Macrophages	95	35074474	2022/01/31	CSV	18573	
+GEO	Hepatocellular carcinoma	GSE175793	Fingerprints of Hepatocellular Carcinoma-Infiltrated  γδT Cells Revealed by Single-Cell Sequencing	4		2021/12/31	TAR	30209	
+GEO	Hepatocellular carcinoma	GSE189175	Single-nucleus RNA-seq of NASH HCC liver tissue	6	35581624,37224770,38991381	2021/11/23	MTX, TSV	30982	
+GEO	Hepatocellular carcinoma	GSE175716	Activation of FcRn mediates a primary resistance response to sorafenib in hepatocellular carcinoma by single-cell RNA sequencing	7	34421602	2021/08/24	TSV, TXT	20795;24247	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Hepatocellular carcinoma	GSE179795	The Tumor Microenvironment Shapes Innate Lymphoid Cells in Patients with Hepatocellular Carcinoma	24	34340996,35833139	2021/08/11	CSV, MTX, TSV	18573	
+GEO	Hepatocellular carcinoma	GSE179746	The Tumor Microenvironment Shapes Innate Lymphoid Cells in Patients with Hepatocellular Carcinoma	58	34340996	2021/08/11	CSV	18573;24676	
+GEO	Hepatocellular carcinoma	GSE178756	Single-cell transcriptomic analyses of T cells in chronic HCV-infected patients dominated by DAA-induced interferon signaling changes	21	34370798	2021/07/19	MTX, TSV	24676	
+GEO	Hepatocellular carcinoma	GSE169084	A human liver cell-based system modeling a clinical prognostic liver signature combined with single-cell RNA-Seq for discovery of liver disease therapeutics	12	34535664	2021/07/19	TXT	21697	
+GEO	Hepatocellular carcinoma	GSE173671	A human liver cell-based system modeling a clinical prognostic liver signature combined with single-cell RNA-Seq for discovery of liver disease therapeutics	2	34535664	2021/07/01	TSV	18573	
+GEO	Hepatocellular carcinoma	GSE81040	High-throughput single-cell RNA-Seq profiling of DMSO-differentiated Huh7.5.1 undergoing or not long-term HCV infection	40	34535664	2021/07/01	TXT	21805	multi_species:Orthohepacivirus hominis; Homo sapiens
+GEO	Hepatocellular carcinoma	GSE66843	A cell-based model unravels drivers for hepatocarcinogenesis and targets for clinical chemoprevention	265	34535664	2021/06/28		21697;19886;17230;10558;18573;20084;21805	multi_species:Homo sapiens; Orthohepacivirus hominis; Rattus norvegicus
+GEO	Hepatocellular carcinoma	GSE162514	Single-cell microRNA sequencing method comparison and profiling of cell lines and circulating lung tumor cells	245	34262050	2021/05/25	TXT	15520	
+GEO	Hepatocellular carcinoma	GSE151530	Understanding tumor evolution and its clonality by single-cell transcriptomic analysis in liver cancer	46	34216724,31588021	2021/02/07	MTX, TSV, TXT	24676;18573;20301	
+GEO	Hepatocellular carcinoma	GSE154906	Single-cell analysis reveals the landscape of tumor heterogeneity and identifies MLXIPL as a potential biomarker in tumor evolution trajectory of hepatocellular carcinoma	405	33462196	2021/01/27	CSV	16791	
+GEO	Hepatocellular carcinoma	GSE146115	Single-cell transcriptomic analysis of human hepatocellular carcinoma	16	33531041	2021/01/25	TXT	20795	
+GEO	Hepatocellular carcinoma	GSE156625	Onco-fetal reprogramming of endothelial cells drives immunosuppressive macrophages in Hepatocellular Carcinoma (scRNA-seq)	78	32976798	2020/09/24	H5AD, MTX, RDATA, TSV	17021;16791	title_suggests_nontissue;multi_species:Mus musculus; Homo sapiens
+GEO	Hepatocellular carcinoma	GSE149614	A Single-Cell Atlas of the Multicellular Ecosystem of Primary and Metastatic Hepatocellular Carcinoma	21	35933472,38479553	2020/04/30	TXT	24676	
+GEO	Hepatocellular carcinoma	GSE144494	Deregulation of ribosomal protein expression and translation promotes breast cancer metastasis [rna-Seq CTCs 1]	135	32029688	2020/02/07	XLS	16288	
+GEO	Hepatocellular carcinoma	GSE112271	Single-cell RNA of multiregional sampling in hepatocellular carcinoma	7	31941899	2020/01/17	MTX, TSV	16791	
+GEO	Hepatocellular carcinoma	GSE140228	Landscape and Dynamics of Single Immune Cells in Hepatocellular Carcinoma	41	31675496	2019/11/13	CSV, MTX, TSV	20301	
+GEO	Hepatocellular carcinoma	GSE125449	Tumor cell biodiversity drives microenvironmental reprogramming in liver cancer	19	31588021	2019/10/06	MTX, TSV, TXT	18573;20301	in_project_records
+GEO	Hepatocellular carcinoma	GSE128560	DNA Analysis by Restriction Enzyme (DARE) enables concurrent genomic and epigenomic characterization of single cells	29	31418018	2019/08/14	BED	20301;15520	
+GEO	Hepatocellular carcinoma	GSE124395	A Human Liver Cell Atlas reveals Heterogeneity and Epithelial Progenitors 	319	31292543	2019/06/18	CSV, RDATA, TXT	16791	title_suggests_nontissue
+GEO	Hepatocellular carcinoma	GSE101061	Oncogenic Serine-Threonine Kinase Receptor Associated Protein Supports Hepatocellular Carcinoma Cell Growth by Enhancing Wnt/β-catenin Signaling	12	30257989	2018/09/03	XLSX	11154	
+GEO	Hepatocellular carcinoma	GSE107747	Single-cell RNA sequencing of circulating tumor cells in hepatocellular carcinoma	2	30068984	2018/08/06	MTX, TSV	16791	
+GEO	Hepatocellular carcinoma	GSE103867	Single cell analysis reveals cancer cell heterogeneities in hepatocellular carcinoma [Chromium 10X]	3	29315726	2018/06/11	MTX, TSV	18573	
+GEO	Hepatocellular carcinoma	GSE103866	Single cell analysis reveals cancer cell heterogeneities in hepatocellular carcinoma [SMART-seq]	138	29315726	2018/06/11	TXT	16791	
+GEO	Hepatocellular carcinoma	GSE103591	Single cell analysis reveals cancer cell heterogeneities in hepatcellular carcinoma	141	29315726	2018/06/11		18573;16791	
+GEO	Hepatocellular carcinoma	GSE98638	Landscape of infiltrating T cells in liver cancer revealed by single-cell sequencing	6	28622514	2017/05/17	TAB, TXT	16791	
+GEO	Hepatocellular carcinoma	GSE65364	Single Cell triple omics sequencing reveals genetic and epigenetic heterogeneity in hepatocellular carcinoma	95	26902283	2016/03/01	TXT	17021;11154;20795;16791	multi_species:Homo sapiens; Mus musculus
+GEO	Hepatocellular carcinoma	GSE54960	Dynamic and static maintenance of epigenetic memory in pluripotent and somatic cells	53	25043040	2014/07/14		17021;16791	multi_species:Homo sapiens; Mus musculus
+GEO	Hepatocellular carcinoma	GSE53610	Dynamic and static maintenance of epigenetic memory in pluripotent and somatic cells [human]	48	25043040	2014/07/13	TXT	16791	
+GEO	Hepatocellular carcinoma	GSE32970	Open Chromatin by DNaseI HS from ENCODE/OpenChrom(Duke University)	97	22955617,22955983	2011/10/14	BIGWIG, NARROWPEAK, TXT	9052	
+GEO	Hepatocellular carcinoma	GSE27584	DNA Methylation by Reduced Representation Bisulfite Seq from ENCODE/HudsonAlpha	202	22955980	2011/03/01	BED, BEDRRBS	9052;10999	
+GEO	Intrahepatic cholangiocarcinoma	GSE331276	Pan-cancer analysis reveals oncogenic roles of KCNQ3 in tumor progression, immune microenvironment remodeling, and its mechanistic dependence on ERK1/2 signaling in cholangiocarcinoma	6		2026/06/30	CSV	29480	
+GEO	Intrahepatic cholangiocarcinoma	GSE312713	Assessment of the effect of CLDN1 knockdown in cholangiocarcinoma patient-derived organoids	6	42234772	2026/06/08	TSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE312711	Assessment of the effect of CLDN1 knockout in cholangiocarcinoma cells in vivo	12	42234772	2026/06/08	TSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE312708	Assessment of the effect of CLDN1 knockout in cholangiocarcinoma cells in vitro	6	42234772	2026/06/08	TSV	24676	title_suggests_nontissue
+GEO	Intrahepatic cholangiocarcinoma	GSE298420	Treatment of cholangiocarcinoma using humanized monoclonal antibodies targeting Claudin-1 (RNA-Seq of HuCC-A1 CDX tumors short treatment)	12	42234772	2026/06/08	TSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE298419	Characterization of cholangiocarcinoma cell line-derived xenograft (CDX) tumors	15	42234772	2026/06/08	TSV	24676	title_suggests_nontissue
+GEO	Intrahepatic cholangiocarcinoma	GSE262166	Treatment of cholangiocarcinoma using humanized monoclonal antibodies targeting Claudin-1	77	42234772	2026/06/08	CSV, TAR	11154;33484;24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE261999	Treatment of cholangiocarcinoma using humanized monoclonal antibodies targeting Claudin-1(PDX tumors)	8	42234772	2026/06/08	TSV	11154	title_suggests_nontissue
+GEO	Intrahepatic cholangiocarcinoma	GSE261998	Treatment of cholangiocarcinoma using humanized monoclonal antibodies targeting Claudin-1(HuCC-A1 CDX tumors)	10	42234772	2026/06/08	TSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE261997	Treatment of cholangiocarcinoma using humanized monoclonal antibodies targeting Claudin-1(CCA organoids)	6	42234772	2026/06/08	CSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE317605	A Phase II Trial of Pembrolizumab plus Granulocyte Macrophage Colony Stimulating Factor in Advanced Biliary Cancer [CITE-Seq]	168	42599167	2026/03/01	MTX, TSV, XLSX	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE249843	S100A6 drives lymphatic metastasis of liver cancer via activation of the RAGE/NF-kb/VEGF-D pathway	17	38350547	2025/10/07	MTX, TSV, XLSX	16791;18573	
+GEO	Intrahepatic cholangiocarcinoma	GSE213452	Gene expression profile at single cell level of cells from cholangiocarcinoma(CCA) and adjacent tissues.	11		2025/09/14	MTX, TSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE301188	Envafolimab and Chidamide in combination with GEMOX as first-line treatment for advanced and metastatic biliary tract cancer (B-Enefits/SCOG-B001): A single-arm, exploratory, phase 2 trial	6		2025/07/31	H5	24676;24247	multi_species:Mus musculus; Homo sapiens
+GEO	Intrahepatic cholangiocarcinoma	GSE284205	Anti-VEGF treatment potentiates ICB responses through a BAFF and IL-12-dependent reprogramming of the TME	7	40088889	2025/03/16	H5	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE249974	Anti-VEGF treatment enhances antitumor responses by targeting regulatory T cells	14		2025/03/14	H5	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE278074	HKDC1 promotes liver cancer stemness under hypoxia via stabilizing β-catenin	12	39250463	2024/10/02	TAB	15520	
+GEO	Intrahepatic cholangiocarcinoma	GSE229772	Lineage and ecology define liver tumor evolution in response to treatment	31	38280378	2023/12/22	TXT	20301;18573;24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE181878	Single cell transcriptome of human intrahepatic cholangiocarcinoma	3	36563106	2022/12/31	TXT	20795	
+GEO	Intrahepatic cholangiocarcinoma	GSE189903	Multiregional single-cell transcriptomic analysis of liver cancer	34	36476645	2022/10/13	H5, MTX, TSV, TXT	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE201425	Single-cell atlas of diverse immune populations in the advanced biliary tract cancer microenvironment	32	35982235	2022/08/26	CSV, MTX, TSV	20301	
+GEO	Intrahepatic cholangiocarcinoma	GSE210066	Circulating monocytes associated with anti-PD-1 resistance in human biliary cancer induce T cell paralysis [scRNA-seq]	4	36130508	2022/08/01	MTX, TSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE171899	High-dimensional single cell analysis of T cells infiltrating human intrahepatic cholangiocarcinoma [scRNA-Seq]	12	35738508	2022/06/30	MTX, TSV	21697	
+GEO	Intrahepatic cholangiocarcinoma	GSE171895	High-dimensional single cell analysis of T cells infiltrating human intrahepatic cholangiocarcinoma [RNA-Seq]	6	35738508	2022/06/30	BW	21697	
+GEO	Intrahepatic cholangiocarcinoma	GSE179597	Human branching cholangiocyte organoids recapitulate embryogenic bile duct development and provide an unique model to study biliary diseases. scRNA-Seq	9	35523140,35597867	2022/05/04	TXT	18573	title_suggests_nontissue
+GEO	Intrahepatic cholangiocarcinoma	GSE166372	Transcriptional repression and apoptosis influence the effect of APOBEC3A/3B functional polymorphisms on biliary tract cancer risk	4		2022/01/07	BED, MTX, TSV	24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE158755	RNA sequencing data of differentially treated  cancer associated fibroblast, myeloid-derived supression cells, and ICC tumor cells in ICC patient	18		2022/01/01	TXT	23227	
+GEO	Intrahepatic cholangiocarcinoma	GSE154170	Promotion of Cholangiocarcinoma Growth by Diverse Cancer-associated Fibroblast Subpopulations	24	33930309	2021/04/28	CSV, MTX, TSV	24676;24247	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Intrahepatic cholangiocarcinoma	GSE160308	In-depth transcriptomic analyses investigating molecular mechanisms underlying diabetic retinopathy (smallRNA)	79	34006945	2021/04/19	TXT	20301	
+GEO	Intrahepatic cholangiocarcinoma	GSE160306	In-depth transcriptomic analyses investigating molecular mechanisms underlying diabetic retinopathy (totalRNA)	79	34006945	2021/04/19	TXT	20301	
+GEO	Intrahepatic cholangiocarcinoma	GSE151530	Understanding tumor evolution and its clonality by single-cell transcriptomic analysis in liver cancer	46	34216724,31588021	2021/02/07	MTX, TSV, TXT	24676;18573;20301	
+GEO	Intrahepatic cholangiocarcinoma	GSE146409	A single cell atlas of the human liver tumor microenvironment	151	33332768	2020/12/02	CSV, TXT	21697	
+GEO	Intrahepatic cholangiocarcinoma	GSE142784	Dissecting the transcriptomic landscape of the human intrahepatic cholangiocarcinoma by single cell RNA-sequencing analysis.	2		2020/06/06	CSV	20795;24676	
+GEO	Intrahepatic cholangiocarcinoma	GSE138709	Dissecting the transcriptomic landscape of the human intrahepatic cholangiocarcinoma by single cell RNA-sequencing	8		2020/06/06	CSV	24676;20795	KNOWN_SOURCE
+GEO	Intrahepatic cholangiocarcinoma	GSE125449	Tumor cell biodiversity drives microenvironmental reprogramming in liver cancer	19	31588021	2019/10/06	MTX, TSV, TXT	18573;20301	in_project_records
+GEO	Intrahepatic cholangiocarcinoma	GSE124395	A Human Liver Cell Atlas reveals Heterogeneity and Epithelial Progenitors 	319	31292543	2019/06/18	CSV, RDATA, TXT	16791	title_suggests_nontissue
+GEO	Bladder cancer	GSE310802	Morphological and Single-Cell Analyses of En Bloc Resected Non-Muscle invasive Bladder Cancer Reveal Structural and functional disruption of Tertiary lymphoid Structures	8	42671925	2026/08/18	TAR	24676	
+GEO	Bladder cancer	GSE318917	Epigenetic Subtypes of High-Grade T1 Bladder Cancer Reveal Intra-Tumor Heterogeneity and Distinct Interactions with Tumor Microenvironment [scATAC-Seq]	2	42244999	2026/06/10	H5	24676	
+GEO	Bladder cancer	GSE281743	Epigenetic Subtypes of High-Grade T1 Bladder Cancer Reveal Intra-Tumor Heterogeneity and Distinct Interactions with Tumor Microenvironment	41	42244999	2026/06/10	BW, H5	24676;34284	
+GEO	Bladder cancer	GSE314629	FGFR3-driven gene regulatory network analysis reveals a pro-tumoral role for p63 in luminal bladder tumors.	12	42544574	2026/06/02	CSV	18573	
+GEO	Bladder cancer	GSE333858	PD-1 regulates latent effector differentiation of thymic cytotoxic CD8+ T cells	74	42177167	2026/05/29	MTX, TSV	34281;34328	multi_species:Homo sapiens; Mus musculus
+GEO	Bladder cancer	GSE326225	A Single-Cell Atlas of Muscle-Invasive Bladder Cancer Reveals Lineage-Specific Vulnerabilities	8		2026/05/05	MTX, TSV	24676	
+GEO	Bladder cancer	GSE328930	The DUTRENEO trial: bulk prospective biomarker-guided therapy selection and spatial transcriptomic dissection of immunotherapy response in muscle-invasive bladder cancer	66	42335902	2026/04/24	TSV	21697	
+GEO	Bladder cancer	GSE326929	Chromatin accessibility profile at single cell level of different phenotypic tumors derived from the human non-muscle invasive bladder carcinoma cell line, MGH-U3	3	42203766	2026/04/07		24676	title_suggests_nontissue
+GEO	Bladder cancer	GSE326854	Gene expression profile at single cell level of different phenotypic tumors derived from human non-muscle invasive bladder carcinoma cell lines	6	42203766	2026/04/07	H5	24676	
+GEO	Bladder cancer	GSE322495	Divergent Macrophage-Regulated T cell States Determine Response to Bacillus Calmette-Guérin (BCG) in High-Risk Bladder Cancer	21	42081487	2026/03/30	RDS, TXT	34284	
+GEO	Bladder cancer	GSE324950	Potential of RAD51C as a hub gene and therapeutic target in bladder cancer	6		2026/03/19	CSV	24676	
+GEO	Bladder cancer	GSE313827	Dysregulation of the Hippo Pathway in Cancer Associated Fibroblasts is Associated with anti-PD-L1 atezolizumab Resistance	18	41784658	2026/02/20	TSV	34284	
+GEO	Bladder cancer	GSE301651	Single cell sequencing of bladder cancer patients	13	41706539	2026/02/10	MTX, TSV	24676;29480	
+GEO	Bladder cancer	GSE315628	Single-cell data for FGFR3-driven gene regulatory network analysis reveals a pro-tumoral role for p63 in luminal bladder tumors	6	42544574	2026/01/06	MTX, TSV	24676;25526	multi_species:Mus musculus; Homo sapiens
+GEO	Bladder cancer	GSE314908	Chip-seq data for FGFR3-driven gene regulatory network analysis reveals a pro-tumoral role for p63 in luminal bladder tumors.	10	42544574	2025/12/28	BROADPEAK, BW	18573	
+GEO	Bladder cancer	GSE311318	The Cartilage Oligomeric Matrix Protein (COMP) Gene Is Associated with High-Grade Bladder Cancer and Promotes Bladder Cancer Cell Proliferation	8		2025/11/28	CSV	24676	
+GEO	Bladder cancer	GSE308145	Systematic benchmarking of imaging spatial transcriptomics platforms in FFPE tissues - scRNA-seq Data	1	41266321	2025/10/03	CSV, MTX, TSV	24676	
+GEO	Bladder cancer	GSE269877	Single-cell RNA-sequencing of BCG naïve and recurrent non-muscle invasive bladder cancer reveals a CD6/ALCAM-mediated immune-suppressive pathway	38	41006678	2025/08/12	RDS	20795	
+GEO	Bladder cancer	GSE293189	Histologic variants in bladder cancer share aggressive molecular features including a CA125+ cell state and targetable TM4SF1 expression	67	40527915	2025/04/24	TXT	34281	
+GEO	Bladder cancer	GSE295308	Microbial cancer immunotherapy reprograms hematopoiesis to enhance myeloid-driven anti-tumor immunity [Human_Multiome_Cohort2	8	40446799	2025/04/22	H5AD, TSV	24676	
+GEO	Bladder cancer	GSE295277	Microbial cancer immunotherapy reprograms hematopoiesis to enhance myeloid-driven anti-tumor immunity [Human_Mulitome_Cohort1]	14	40446799	2025/04/22	H5AD, TSV	24676	
+GEO	Bladder cancer	GSE293860	Identification and regulation of circulating tumor TCR-matched cytotoxic CD4+ lymphocytes by KLRG1 in bladder cancer	106		2025/04/04	CSV, MTX, TSV	16791;24676	
+GEO	Bladder cancer	GSE277524	Single-cell dissection of multifocal bladder cancer reveals malignant and immune cells variation between primary and recurrence tumor lesions	10	39702554	2024/11/15	MTX, TSV	20301	
+GEO	Bladder cancer	GSE276612	Inhibition of JNK Signaling Overcomes Cancer-Associated Fibroblast-Mediated Immunosuppression and Enhances the Efficacy of Immunotherapy in Bladder Cancer [RNA-Seq]	2	39292817	2024/09/08	TXT	24676	
+GEO	Bladder cancer	GSE250523	Single-cell RNA sequencing of bladder Ewing sarcoma	4	39386756,40067823	2024/09/05	MTX, TSV	20301	
+GEO	Bladder cancer	GSE241298	Dual role of GRHL3 in bladder carcinogenesis is associated with histological subtypes	11	38429970	2024/06/20	TSV	18573	
+GEO	Bladder cancer	GSE267718	Single cell RNA sequencing (scRNAseq) of urine-derived cells, peripheral blood mononuclear (PBMC), and tumor cells from bladder cancer patients.	33	38847806	2024/05/17	MTX, TSV	24676	KNOWN_SOURCE;title_suggests_nontissue
+GEO	Bladder cancer	GSE252645	Next Generation Sequencing Quantitative Analysis of altered expression of genes in BCa cells-induced PDGFRα+ITGA11+ CAFs and other CAFs	6	38428409	2024/02/16	XLS	16791	same_PMID_as:GSE222315
+GEO	Bladder cancer	GSE222315	Gene expression profile at single cell level of bladder cancer and normal adjacent tissues	13	38428409	2024/02/16	MTX, TXT, XLS	24676	KNOWN_SOURCE
+GEO	Bladder cancer	GSE223971	Bulk RNAseq data for bladder cancer specimens [UC cohort]	14	38812546	2024/01/01	CSV	24676	
+GEO	Bladder cancer	GSE224099	A Population of Tumor-Infiltrating CD4+ T-cells Co-expressing CD38 and CD39  is Associated with Checkpoint Inhibitor Resistance	12	37505479	2023/07/17	TXT	24676	
+GEO	Bladder cancer	GSE224941	Restoring Tumor Immunogenicity with Dendritic Cell Reprogramming [scRNA-seq]	59	37418548,39236156	2023/07/07	TXT	24676	
+GEO	Bladder cancer	GSE217956	Bladder cancer organoids as a functional system to model different disease stages and therapy response	6	37072390	2023/02/01	H5	24676	
+GEO	Bladder cancer	GSE216037	TP53-related signature for predicting prognosis and tumor microenvironment characteristics in bladder cancer: a multi-omics study  1  microenvironment characteristic	52	36568387	2022/10/24	CSV	18573	
+GEO	Bladder cancer	GSE211388	Tumor-Infiltrating Myeloid Cells Confer de novo Resistance to PD-L1 Blockade through EMT-stromal and Tgf-beta Dependent Mechanisms	14		2022/10/17	TXT	18573	
+GEO	Bladder cancer	GSE176249	Genome-wide H3k27ac levels following FOXA1 KO in UMUC-1 human bladder cancer cells [scRNA-Seq]	1	36323682	2022/09/08	MTX, TSV	20301	
+GEO	Bladder cancer	GSE172433	Genome-wide H3k27ac levels following FOXA1 KO in UMUC-1 human bladder cancer cells	12	36323682	2022/09/08	MTX, TSV	20301;18573	
+GEO	Bladder cancer	GSE192575	Acquired semi-squamalization during chemotherapy suggests a differentiation therapy for bladder cancer	42		2022/07/09	CSV, GAPPEDPEAK, TAR	24247;24676	multi_species:Homo sapiens; Mus musculus
+GEO	Bladder cancer	GSE190888	Single-cell transcriptome comparison of bladder cancer revels its ecosystem	4	35265520	2022/04/13	CSV	20795	
+GEO	Bladder cancer	GSE186520	Targeting TIGIT Molecule Inhibits the Metastasis of Bladder Cancer through Suppressing IL-32	4	35069212	2022/01/31	TSV, TXT	24676	
+GEO	Bladder cancer	GSE135337	Transcriptomic Characterization of Local Invasion in Human Bladder Cancer by Single Cell RNA Sequencing	8	34480339	2021/11/11	TXT, XLS	24676	
+GEO	Bladder cancer	GSE171351	A new epithelial cell subpopulation predicts response to surgery, chemotherapy, and immunotherapy in bladder cancer	4	34385456,37344596	2021/06/04	H5AD, JPG	24676	
+GEO	Bladder cancer	GSE169379	A new epithelial cell subpopulation predicts response to surgery, chemotherapy, and immunotherapy in bladder cancer	30	34385456,37344596	2021/06/04	CSV, H5AD	24676	
+GEO	Bladder cancer	GSE164041	In vivo transcriptome profiling of control and GANAB-KD UMUC3 bladder carcinoma cells [scRNA-Seq]	2		2020/12/31	MTX, TSV	24676	
+GEO	Bladder cancer	GSE149652	Intratumoral CD4+ T cells mediate anti-tumor cytotoxicity in human bladder cancer	28	32497499	2020/06/01	CSV	16791	
+GEO	Bladder cancer	GSE145140	RNA sequencing of chemotherapy-resistant muscle-invasive urothelial bladder cancer	6	32460812	2020/03/26	TXT	27467;28146	multi_species:Homo sapiens; Mus musculus
+GEO	Bladder cancer	GSE145139	Whole transcriptome sequencing of chemotherapy-resistant muscle-invasive urothelial bladder cancer	3	32460812	2020/03/26	TXT	27467	title_suggests_nontissue
+GEO	Bladder cancer	GSE145137	Single-cell RNA sequencing of chemotherapy-resistant muscle-invasive urothelial bladder cancer	3	32460812	2020/03/26	TXT, XLSX	28146;27467	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Bladder cancer	GSE146137	Multi Lineage Heterogeneity and Plasticity in Urothelial Carcinoma of the Bladder	8	32439865	2020/03/01	TXT	18573;19057	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Bladder cancer	GSE145281	High gene expression of IL8 in peripheral blood mononuclear cells from bladder cancer patients is associated with nonresponders to atezolizumab	18	32405063	2020/02/14	TXT	20301	
+GEO	Bladder cancer	GSE135193	Triangular Correlation (TrC) between cancer aggressiveness, cell uptake capability and cell deformability	12	31998832	2020/01/24	XLSX	16791	
+GEO	Bladder cancer	GSE130001	Single cell RNA-seq profiling of two bladder cancer specimen	2	32111252,38812546	2019/09/01	MTX, TSV	16791	
+GEO	Bladder cancer	GSE129845	Single-cell transcriptomic map of the human and mouse bladders	5	31462402	2019/08/28	MTX, TSV	20795;21273	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Bladder cancer	GSE38495	Full-length mRNA-Seq from single-cell levels of RNA and individual circulating tumor cells	121	22820318	2012/07/22	BED, TXT	10999;11002;13112;15520	title_suggests_nontissue;multi_species:Homo sapiens; Mus musculus
+GEO	Esophageal cancer	GSE314906	CX3CR1⁺ CD8⁺ Cytotoxic T Cells Drive Tumor Killing in Esophageal Squamous Cell Carcinoma During Neoadjuvant Therapy	81	42768014	2026/08/10	CSV, H5AD	11154	
+GEO	Esophageal cancer	GSE304098	Profiling of histone modifications reveal tumor microenvironment-acquired super-enhancer regulates progression of esophageal squamous cell carcinoma	11		2026/07/31	BW	24676	
+GEO	Esophageal cancer	GSE290744	KLF4 promotes a KRT13+ hillock-like state in squamous lung cancer [BEAS_RNA-seq]	2	42314152	2026/05/27	CSV	24676	title_suggests_nontissue
+GEO	Esophageal cancer	GSE300573	ETS1 Orchestrates a Hybrid EMT Program Driving in vivo Metastasis and Immune Evasion	4	42153907	2026/05/08	CSV	24676	
+GEO	Esophageal cancer	GSE311820	Single cell mRNA sequencing on esophageal cells of human biopsies coming from subtotal esophagectomy	2	41862497	2026/02/03	H5	24676	
+GEO	Esophageal cancer	GSE308736	Single-cell transcriptomic analysis reveals epithelial and microenvironmental heterogeneity in small cell carcinoma of the esophagus	3	41132661	2025/12/02	TAR	24676	
+GEO	Esophageal cancer	GSE309393	Cancer-associated fibroblasts promote esophageal carcinogenesis and lung metastasis by CDH11-mediated extracellular matrix environment remodeling [RNA-Seq]	9		2025/09/29	TXT	34281	
+GEO	Esophageal cancer	GSE309392	Cancer-associated fibroblasts promote esophageal carcinogenesis and lung metastasis by CDH11-mediated extracellular matrix environment remodeling [scRNA-Seq]	23		2025/09/29	MTX, TSV	24676	
+GEO	Esophageal cancer	GSE273127	Comparative single-cell analysis of esophageal cancer subtypes reveals cellular distinctions explaining varied immunotherapy responses	11	40581834	2025/08/01	H5	20795	KNOWN_SOURCE
+GEO	Esophageal cancer	GSE298632	SOX2 regulates foregut squamous epithelial homeostasis and is lost during Barrett’s esophagus development [scRNA-seq]	4	40587339	2025/06/06	MTX, TSV, XLSX	24676	title_suggests_nontissue
+GEO	Esophageal cancer	GSE203067	Single-Cell Transcriptomic Analysis of Primary and Metastatic Tumor Ecosystems in Esophageal Squamous Cell Carcinoma	21	36709495	2025/05/08	MTX, TSV, TXT	20795	
+GEO	Esophageal cancer	GSE220108	FAO-fueled OXPHOS and NRF2-mediated stress resilience in MICs drive lymph node metastasis	5	40215279	2025/03/29	MTX, TSV	20795	
+GEO	Esophageal cancer	GSE292971	Concerted epithelial and stromal changes during progression of Barrett’s Esophagus to invasive adenocarcinoma exposed by multi-scale, multi-omics analysis	107		2025/03/27	H5AD	24676;28038	
+GEO	Esophageal cancer	GSE291080	Clonal cell states link gastroesophageal junction tissues, metaplasia, and cancer [scRNA-seq]	45	36747708,41360789	2025/03/05	MTX, TSV	18573	
+GEO	Esophageal cancer	GSE281371	SND1-SMARCA5 interaction strengthened by PIM promoted the proliferation, metastasis and chemoresistance of ESCC	2		2025/02/08	BIGWIG	16791	title_suggests_nontissue
+GEO	Esophageal cancer	GSE287855	Clonal cell states link gastroesophageal junction tissues, metaplasia, and cancer [MAESTER]	40	36747708,41360789	2025/01/27	RDS	21697	
+GEO	Esophageal cancer	GSE249058	Identification and characterization of metastasis-initiating cells in esophageal squamous cell carcinoma in a pulmonary metastasis mouse model	7	38864342	2024/08/21	MTX, TSV	18573;24676	title_suggests_nontissue
+GEO	Esophageal cancer	GSE249057	Identification and characterization of metastasis-initiating cells in esophageal squamous cell carcinoma in a pulmonary metastasis mouse model [scRNA-Seq]	5	38864342	2024/08/21	MTX, TSV	18573	title_suggests_nontissue
+GEO	Esophageal cancer	GSE249056	Identification and characterization of metastasis-initiating cells in esophageal squamous cell carcinoma in a pulmonary metastasis mouse model [bulk RNA-Seq]	2	38864342	2024/08/21	XLSX	24676	title_suggests_nontissue
+GEO	Esophageal cancer	GSE273848	Definition of a multi-omics signature for Esophageal Adenocarcinoma prognosis prediction [totalRNA-seq]	40	39123475	2024/08/02	TXT	21697	
+GEO	Esophageal cancer	GSE273847	Definition of a multi-omics signature for Esophageal Adenocarcinoma prognosis prediction [scRNA-seq]	5	39123475	2024/08/02	RDS	21697	
+GEO	Esophageal cancer	GSE232467	Single-cell Transcriptomic Analysis Reveals Landscape of Epithelial-Mesenchymal Transition Molecular Heterogeneity in Esophageal Squamous Cell Carcinoma	6	39905485	2024/04/09	TXT	16791	title_suggests_nontissue
+GEO	Esophageal cancer	GSE256301	Mutational signature-based identification of DNA repair deficient gastroesophageal adenocarcinomas for therapeutic targeting	2	38589664	2024/02/23	XLS, ZIP	24676	
+GEO	Esophageal cancer	GSE231539	Tumor-infiltrating Monocytic Myeloid-derived suppressor cells play a key role in forming immunosuppressive microenvironment in  human gastric cancer	18	38217732	2024/01/22	RDS	24676;28038	same_PMID_as:GSE201347
+GEO	Esophageal cancer	GSE251990	Concerted epithelial and stromal changes during progression of Barret’s Esophagus to invasive adenocarcinoma exposed by multi-scale, multi-omics analysis	22		2023/12/27	H5AD	28038;24676	
+GEO	Esophageal cancer	GSE209524	Enhancement of anti-tumor immunity by tertiary lymphoid structures in esophageal squamous cell carcinoma		37604932	2023/08/31	RDS		
+GEO	Esophageal cancer	GSE212890	A Pan-Cancer Single Cell Panorama of Natural Killer Cells	47	37607536	2023/08/22	CSV, MTX	20795	
+GEO	Esophageal cancer	GSE156585	Tumor fibroblast-derived FGF2 regulates SPRY1 expression in esophageal tumor-infiltrating T cells and plays a role in T cell exhaustion	2		2023/08/21	MTX, TSV	20301	KNOWN_SOURCE
+GEO	Esophageal cancer	GSE221561	Comprehensive Landscape of Resistance Mechanisms for Neoadjuvant Therapy in Esophageal Squamous Cell Carcinoma by single-cell Transcriptomics	11	37563120	2023/08/14	CSV, MTX, TSV	20795	
+GEO	Esophageal cancer	GSE210219	Comprehensive analyses of partially methylated domains and differentially methylated regions in esophageal cancer reveal both cell-type- and cancer-specific epigenetic regulation [ChIP-Seq]	3	37620896	2023/08/04	BROADPEAK, BW	20301	
+GEO	Esophageal cancer	GSE210218	Comprehensive analyses of partially methylated domains and differentially methylated regions in esophageal cancer reveal both cell-type- and cancer-specific epigenetic regulation [WGBS]	2	37620896	2023/08/04	BED, BW	16791	
+GEO	Esophageal cancer	GSE203115	Intra-tumoural Microbiota Remodels the Tumour Immune	12	37433041,40694273	2023/07/07	MTX, TSV	24676	
+GEO	Esophageal cancer	GSE234346	Histone 3 lysine 9 acetylation-specific reprogramming regulates esophageal squamous cell carcinoma progression and metastasis	12		2023/06/08	BW	24676	
+GEO	Esophageal cancer	GSE199619	Single-cell transcriptome analysis reveals functional changes in tumor-infiltrating B lymphocytes after chemotherapy in esophageal squamous cell carcinoma 	7		2023/05/17	RDS	24676;28038	
+GEO	Esophageal cancer	GSE197677	Single cell RNA-sequence reveals the effect of neoadjuvant chemotherapy on immune cells in human esophageal squamous cell carcinoma.	30	37091252	2023/03/31	RDS	24676;28038	
+GEO	Esophageal cancer	GSE222078	The single cell transcriptional landscape of esophageal adenocarcinoma and its modulation by neoadjuvant chemotherapy	10	36253784	2023/02/28	CSV	18573	
+GEO	Esophageal cancer	GSE196756	Profiling transcriptional heterogeneity of epithelium, fibroblasts and immune cells in esophageal squamous cell carcinoma by single-cell RNA sequencing	6		2023/02/14	MTX, TSV	24676	
+GEO	Esophageal cancer	GSE199654	Computational identification of preneoplastic cells displaying high stemness and risk of cancer progression	47	35536873,40691441	2022/04/01	TXT	24676	
+GEO	Esophageal cancer	GSE188900	The confused cell identity is associated with aggressiveness in esophageal squamous cell carcinoma [scRNA-Seq]	8	35418165	2022/03/16	TAR	24676	
+GEO	Esophageal cancer	GSE97178	Hybrid stomach-intestinal chromatin states underlie human Barrett’s metaplasia	40	34090884	2021/06/03	BED, BW, MTX, TSV	24676;18573	
+GEO	Esophageal cancer	GSE173950	Single Cell RNA sequencing (DropSeq) of esophageal adenocarcinoma and matched normal samples	79	40640495	2021/05/06	CSV, TXT	18573	
+GEO	Esophageal cancer	GSE173166	HOXA13 in etiology and oncogenic potential of Barrett’s esophagus [BAR-T]	6	34099670	2021/04/24	TXT	16791	
+GEO	Esophageal cancer	GSE160269	Dissecting esophageal squamous-cell carcinoma ecosystem by single-cell transcriptomic analysis	128	34489433,38097539,40691441,42050432	2020/10/29	CSV, TXT	24676	
+GEO	Esophageal cancer	GSE145370	Immune suppressive landscape in a human esophageal squamous cell carcinoma microenvironment	28	33293583,34414188	2020/10/19	CSV, TAR	24676	
+GEO	Esophageal cancer	GSE103111	Gene Expression Profiling Provides Insights into the Moleculor Mechanism of FGFR2+ Fibrocyte-to-Cancer Associated Fibroblast Differentiation in Esophageal Squamous Cell Carcinoma	4	35941662	2020/08/01	TXT	10999	
+GEO	Esophageal cancer	GSE132686	Master transcription factors form interconnected circuitry and orchestrate transcriptional networks in esophageal adenocarcinoma	56		2019/07/30	BIGWIG, BW	22790;20301	
+GEO	Esophageal cancer	GSE81812	Next generation sequencing of esophageal squamous cell carcinoma (ESCC) cell line KYSE-180 single cell transcriptomes for radio-resistance analysis	314	31638164	2017/06/01	TXT	16791	title_suggests_nontissue
+GEO	Basal cell carcinoma	GSE316922	Spatial biology reveals macrophage dysfunction in immunosuppressed non-melanoma skin cancer	36	42556334	2026/08/07	MTX, TSV	34284	
+GEO	Basal cell carcinoma	GSE308361	Spatial biology reveals macrophage dysfunction in immunosuppressed non-melanoma skin cancer	16	42556334	2026/08/07	H5, TBI, TSV	34284	
+GEO	Basal cell carcinoma	GSE337786	Integrated multi-omics reveals the cellular and molecular interactions governing the invasive niche in skin cancer II	2		2026/07/07	MTX, TSV	24676	
+GEO	Basal cell carcinoma	GSE242941	Transcriptional profiling of skin cancer NK cells reveals the elevated glucocorticoid receptor activity alters their pro-inflammatory features.	36	41082397	2026/01/14	TAR, TXT	24676	
+GEO	Basal cell carcinoma	GSE277669	Single-cell transcriptome landscape in colorectal cancer	1	39494327	2024/12/13	MTX, TSV	18573	
+GEO	Basal cell carcinoma	GSE268728	A neoadjuvant, phase II trial demonstrates efficacy and tolerability of Talimogene laherparepvec in cutaneous basal cell carcinoma (NeoBCC trial)	12	39820126	2024/09/11	MTX, TSV	24676	
+GEO	Basal cell carcinoma	GSE260461	Sex-dependent APOE4 Neutrophil-microglia interactions drive cognitive impairment in Alzheimer's Disease	39	38961225	2024/06/04	MTX, TSV	37309	
+GEO	Basal cell carcinoma	GSE254918	CAF variants control the tumor-immune microenvironment and predict skin cancer malignancy	15	39516494	2024/02/12	TXT	11154	
+GEO	Basal cell carcinoma	GSE221390	Comparative skin cancer atlas and interactome: A multi-modal spatial approach to uncovering the cells  and interactions underlying skin cancer diversity	8		2022/12/20	TAR	21697	
+GEO	Basal cell carcinoma	GSE208304	Differentiation-related epigenomic changes define clinically distinct keratinocyte cancer subclasses [methylation]	3	36121124	2022/11/28	BED	20301	
+GEO	Basal cell carcinoma	GSE207336	Differentiation-related epigenomic changes define clinically distinct keratinocyte cancer subclasses [scRNA-seq]	1	36121124	2022/08/30	RDS	20301	
+GEO	Basal cell carcinoma	GSE207335	Differentiation-related epigenomic changes define clinically distinct keratinocyte cancer subclasses [Multiome]	4	36121124	2022/08/30	CSV, H5, TBI, TSV	24676	
+GEO	Basal cell carcinoma	GSE181907	Integrated multi-omics reveals the cellular and molecular interactions governing the invasive niche in skin cancer	5	35986012,37327314	2022/06/29	MTX, TSV	24676;20301	
+GEO	Basal cell carcinoma	GSE156853	Genome-wide chromatin accessibility analysis of MRTF-active subpopulations in human basal cell carcinoma	10	33033234	2020/08/25	BEDGRAPH	11154	same_PMID_as:GSE141526
+GEO	Basal cell carcinoma	GSE156790	Genome-wide transcriptomic analysis of MRTF-active subpopulations in naïve human basal cell carcinoma	8	33033234	2020/08/25	TXT	11154	same_PMID_as:GSE141526
+GEO	Basal cell carcinoma	GSE141526	A transcriptome-based molecular census of human basal cell carcinoma subtypes at single cell resolution	6	33033234,35687691	2020/08/14	MTX, TSV	20301	KNOWN_SOURCE
+GEO	Basal cell carcinoma	GSE123813	Clonal replacement of tumor-specific T cells following PD-1 blockade [single cells]	86	31359002	2019/05/24	TXT	15520;20301;18573	KNOWN_SOURCE
+GEO	Basal cell carcinoma	GSE123812	Clonal replacement of tumor-specific T cells following PD-1 blockade [bulk RNA]	38	31359002	2019/05/24	TXT	16791	same_PMID_as:GSE123813
+GEO	Basal cell carcinoma	GSE129785	Massively parallel single-cell chromatin landscapes of human immune cell development and intratumoral T cell exhaustion	67	31375813	2019/04/16	MTX, TSV, TXT	16512;11154	multi_species:Mus musculus; Homo sapiens
+GEO	Basal cell carcinoma	GSE97726	Cooperativity between EMT and non-EMT cells promotes breast cancer metastasis via paracrine GLI activation	36	28604738	2017/04/13	TXT	11154	
+GEO	Acral melanoma	GSE311521	Single-cell multimodal profiling of pan-cancer cell lines uncovers gene regulatory principles underlying intrinsic cell states and environmental features	15	42282723,42493507	2026/03/02	CSV, H5AD, XLSX	30882	
+GEO	Acral melanoma	GSE242941	Transcriptional profiling of skin cancer NK cells reveals the elevated glucocorticoid receptor activity alters their pro-inflammatory features.	36	41082397	2026/01/14	TAR, TXT	24676	
+GEO	Acral melanoma	GSE243238	Identification of tumor-intrinsic drivers of immune exclusion in acral melanoma	20	37857525	2023/10/20	CSV	18573	
+GEO	Acral melanoma	GSE242477	Single-cell profiling of acral melanoma infiltrating lymphocytes reveals a suppressive tumor microenvironment	17	39630887,40631515	2023/09/06	CSV, MTX, TSV	24676	
+GEO	Acral melanoma	GSE215121	A single-cell analysis reveals tumor heterogeneity and immune environment of acral melanoma	68	36433984,38473271	2022/10/30	H5	20795;28038	
+GEO	Acral melanoma	GSE215120	A single-cell analysis reveals tumor heterogeneity and immune environment of acral melanoma [scRNA-Seq]	11	36433984,38473271	2022/10/30	H5	20795	
+GEO	Acral melanoma	GSE215119	A single-cell analysis reveals tumor heterogeneity and immune environment of acral melanoma [RNA-Seq]	57	36433984,38473271	2022/10/30	TXT	28038	
+GEO	Acral melanoma	GSE189889	Single cell characterization of the cellular landscape of acral melanoma identifies novel targets for immunotherapy	9	35247927	2022/02/14	H5	18573	KNOWN_SOURCE
+GEO	Acral melanoma	GSE189341	Integrative molecular and clinical profiling of acral melanoma links focal amplification of chr22q11.21 to metastasis	4	35197475	2021/12/14	TSV	16791;24676	
+GEO	Acral melanoma	GSE162682	Acral Melanoma	109	35197475	2021/12/14	TSV	24676;16791	
+GEO	Seminoma	GSE298368	CAIS molecular pathways unveil Testosterone/Estradiol ratio to germ cell tumor risk in non-obstructive azoospermia	1	40658795	2025/07/21	TSV	18573	
+GEO	Seminoma	GSE256162	Transcriptional and epigenetic changes from the genesis of the human male germline through to adulthood provide a map of prenatal and postnatal molecular drivers of differentiation and reveal the developmental origin of seminoma.	50	38861385	2024/07/10	CSV, H5, TBI, TSV	21697	
+GEO	Seminoma	GSE229823	Single-cell Multi-omics Analysis of Human Testicular Germ Cell Tumor Reveals its Molecular Features and Microenvironment II	3		2024/03/23	TAR	24676	title_suggests_nontissue
+GEO	Seminoma	GSE228501	Single-cell Multi-omics Analysis of Human Testicular Germ Cell Tumor Reveals its Molecular Features and Microenvironment	4	38123589	2024/03/23	TAR	24676	KNOWN_SOURCE;title_suggests_nontissue
+GEO	Seminoma	GSE261811	T cells in testicular germ cell tumors: new evidence of fundamental contributions by rare subsets	4	38649788	2024/03/21	TAR	16791	
+GEO	Seminoma	GSE223848	DUX4 expression in cancer induces a metastable early embryonic totipotent program	8	37691147	2023/08/09	MTX, TSV	24676	
+GEO	Seminoma	GSE197778	Single-cell RNA sequencing of metastatic testicular seminoma reveals the cellular and molecular characteristics of metastatic cell lineage	4	35494058	2022/03/25	TAR	20795	
+GEO	Renal medullary carcinoma	GSE289672	Single-Cell Transcriptomics Reveal Distinct Biological and Immunometabolic Landscapes in Renal Medullary Carcinoma Compared to Clear Cell Renal Cell Carcinoma	10		2026/03/28	MTX, TSV	24676	
+GEO	Renal medullary carcinoma	GSE306473	Phase II Trial of Ixazomib combined with Gemcitabine and Doxorubicin in Patients with SMARCB1-Deficient Renal Medullary Carcinoma	15	42007903	2026/01/13	MTX, TSV	24676	
+GEO	Renal medullary carcinoma	GSE256326	Myeloid mimicry mediates hyperprogression in patients with renal medullary carcinoma treated with nivolumab plus ipilimumab	15	41290625	2025/06/30	TSV	24676	KNOWN_SOURCE
+GEO	Renal medullary carcinoma	GSE181001	SMARCB1 regulates a TFCP2L1-MYC transcriptional switch promoting renal medullary carcinoma transformation and ferroptosis resistance.	40	37236926	2023/03/06	BED	25431;20301	multi_species:Mus musculus; Homo sapiens
+GEO	Renal medullary carcinoma	GSE181000	SMARCB1 regulates a TFCP2L1-MYC transcriptional switch promoting renal medullary carcinoma transformation and ferroptosis resistance.. [scRNAseq]	4	37236926	2023/03/06	TSV	20301;25431	multi_species:Homo sapiens; Mus musculus
+GEO	Renal medullary carcinoma	GSE180999	SMARCB1 regulates a TFCP2L1-MYC transcriptional switch promoting renal medullary carcinoma transformation and ferroptosis resistance. [RNAseq]	18	37236926	2023/03/06	XLSX	20301	
+GEO	Renal medullary carcinoma	GSE180998	SMARCB1 regulates a TFCP2L1-MYC transcriptional switch promoting renal medullary carcinoma transformation and ferroptosis resistance. [ChIPseq and Cut&Tag]	18	37236926	2023/03/06	BED	20301	
+CELLxGENE	Diffuse glioma	CXG_113a558a_e96e_4643_81db_140e95c58578	Single-cell RNA sequencing of glioblastoma cases with tissue sampled from tumor core to macroscopically normal cortex	0	10.1101/2023.09.01.555882	2025-05-06	10x 3' v3	cell / right temporal lobe	
+CELLxGENE	Diffuse glioma	CXG_10bf5c50_8d85_4c5f_94b4_22c1363d9f31	Intratumoral heterogeneity in recurrent pediatric pilocytic astrocytomas	0		2023-03-27	10x 3' v3	nucleus / cerebellum	
+CELLxGENE	Diffuse glioma	CXG_999f2a15_3d7e_440b_96ae_2c806799c08c	Harmonized single-cell landscape, intercellular crosstalk and tumor architecture of glioblastoma	0	10.1101/2022.08.27.505439	2022-08-29	10x 3' v2|10x 3' v3|10x 5' v1|BD Rhapsody Whole Transcriptome Analysis|CEL-seq2|Drop-seq|STRT-seq|Smart-seq2|microwell-seq	cell|nucleus / basal ganglion|brain|forebrain|frontal lobe|left frontal lobe|left parietal lobe|left temporal lobe|occipital lobe|parietal lobe|right frontal lobe|ri	
+CELLxGENE	Diffuse glioma	CXG_573e2e06_8af0_4d96_bfdd_7d64a4bb9c21	Immune Response mechanisms in the cerebrospinal fluid in leptomeningeal disease at single cell resolution	0	10.1016/j.xcrm.2026.102651	2025-07-08	10x 5' v2	cell / cerebrospinal fluid	
+CELLxGENE	Diffuse glioma	CXG_6d7d23d0_237d_4430_9200_92858abba2d8	Single-cell census of murine glioblastoma subtypes	0	10.1093/brain/awaf129	2025-04-28	10x 3' v3	cell / brain	
+CELLxGENE	Diffuse glioma	CXG_9ceda3d2_a55e_4b82_a91a_0190d947459a	HTAN CHOP - A longitudinal single-cell atlas of pediatric high-grade glioma.	0	10.1016/j.xcrm.2026.102766	2026-03-11	10x 3' v3	nucleus / cerebellum|cerebral hemisphere|dorsal plus ventral thalamus|temporal lobe	KNOWN_SOURCE
+CELLxGENE	Diffuse glioma	CXG_558385a4_b7b7_4eca_af0c_9e54d010e8dc	Single-Cell RNAseq analysis of diffuse neoplastic infiltrating cells at the migrating front of human glioblastoma	0	10.1016/j.celrep.2017.10.030	2021-03-16	Smart-seq2	cell / cerebral cortex	
+CELLxGENE	Diffuse glioma	CXG_384e373e_4db1_4605_812f_d9da7cfd246f	A Single-Cell and Spatial Transcriptomic Atlas Characterising Transcriptional and Immune Diversity in Adult-Type Diffuse Gliomas	0	10.1002/mco2.71022	2026-10-16	10x 3' v3	cell|nucleus / brain	
+CELLxGENE	Osteosarcoma	CXG_67d26b1d_2b78_4489_ac5e_0f33909a76cb	A convergent cell state of lethal disease in rhabdomyosarcoma	0	10.1158/0008-5472.CAN-25-4403	2026-07-10	10x multiome	nucleus / abdomen|craniocervical region|genitourinary system|limb|orbital region|pelvis connective tissue|thoracic segment connective tissue	
+CELLxGENE	Hepatocellular carcinoma	CXG_61e422dd_c9cd_460e_9b91_72d9517348ef	Integrated cancer cell-specific single-cell RNA-seq datasets of immune checkpoint blockade-treated patients	0	10.1038/s41597-025-04381-6	2025-01-24	10x 3' v2|10x 3' v3|10x 5' transcription profiling|Smart-seq2	cell / arm skin|brain|breast|kidney|liver|nose skin|skin of body|skin of calf|skin of cheek|skin of external ear|skin of forehead|skin of knee|skin of neck|s	
+CELLxGENE	Hepatocellular carcinoma	CXG_9a85c2f4_ba6b_4b7a_afc4_b3e2ec99c17c	Zonated Cholesterol Sensing by SIRT2 Drives MASLD-HCC	0	10.1016/j.cmet.2026.08.015	2026-09-21	10x 3' v3	cell / liver	
+CELLxGENE	Intrahepatic cholangiocarcinoma	CXG_61e422dd_c9cd_460e_9b91_72d9517348ef	Integrated cancer cell-specific single-cell RNA-seq datasets of immune checkpoint blockade-treated patients	0	10.1038/s41597-025-04381-6	2025-01-24	10x 3' v2|10x 3' v3|10x 5' transcription profiling|Smart-seq2	cell / arm skin|brain|breast|kidney|liver|nose skin|skin of body|skin of calf|skin of cheek|skin of external ear|skin of forehead|skin of knee|skin of neck|s	
+CELLxGENE	Bladder cancer	CXG_8a05eaf6_5680_41f2_9be7_eddc383b178a	Determinants of Sensitivity to HER2-targeted Antibody Drug Conjugates in Urothelial Cancer	0	10.1038/s41467-025-67643-2	2026-02-12	10x 3' v3	cell / urinary bladder	
+CELLxGENE	Esophageal cancer	CXG_a18474f4_ff1e_4864_af69_270b956cee5b	Single-cell RNA sequencing unifies developmental programs of Esophageal and Gastric Intestinal Metaplasia	0	10.1158/2159-8290.cd-22-0824	2023-03-15	10x 3' v2|10x 3' v3|10x 5' v1	cell / ascending colon epithelium|body of stomach|cardia of stomach|duodenum|epithelium of rectum|esophagogastric junction|ileal epithelium|lower esophagus|s	
+CELLxGENE	Basal cell carcinoma	CXG_61e422dd_c9cd_460e_9b91_72d9517348ef	Integrated cancer cell-specific single-cell RNA-seq datasets of immune checkpoint blockade-treated patients	0	10.1038/s41597-025-04381-6	2025-01-24	10x 3' v2|10x 3' v3|10x 5' transcription profiling|Smart-seq2	cell / arm skin|brain|breast|kidney|liver|nose skin|skin of body|skin of calf|skin of cheek|skin of external ear|skin of forehead|skin of knee|skin of neck|s	
+CELLxGENE	Basal cell carcinoma	CXG_34f12de7_c5e5_4813_a136_832677f98ac8	Multi-scale spatial mapping of cell populations across anatomical sites in healthy human skin and basal cell carcinoma	0	10.1073/pnas.2313326120	2024-04-02	10x 3' v1|10x 3' v2|10x 3' v3|Visium Spatial Gene Expression V1	cell|na / arm skin|nose skin|scalp|skin of abdomen|skin of cheek|skin of external ear|skin of forehead|skin of temple	

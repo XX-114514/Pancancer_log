@@ -1,0 +1,15 @@
+target	geo_hits	pass1	shortlist	clean
+Acral melanoma	10	7	7	1
+Basal cell carcinoma	20	9	9	0
+Bladder cancer	54	23	20	1
+Diffuse glioma	409	100	20	0
+Esophageal cancer	47	19	19	2
+Hepatocellular carcinoma	144	44	20	0
+Intrahepatic cholangiocarcinoma	36	14	14	0
+Nasopharyngeal carcinoma	14	5	5	0
+Osteosarcoma	38	7	7	0
+Pancreatic ductal adenocarcinoma	145	49	20	0
+Pancreatic neuroendocrine tumor	9	2	2	0
+Papillary thyroid carcinoma	13	8	8	0
+Renal medullary carcinoma	7	1	1	1
+Seminoma	7	3	3	0

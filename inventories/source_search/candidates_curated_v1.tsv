@@ -1,0 +1,64 @@
+target	accession	priority	note
+Diffuse glioma	GSE222522	B	IDH-stratified glioma immune landscape; check whether CD45-sorted
+Diffuse glioma	GSE117891	B	multiregional glioma; check platform (plate-based?)
+Diffuse glioma	GSE210736	B	GBM scRNA + multiome; check patient count
+Diffuse glioma	GSE154795	B	neoadjuvant anti-PD-1 GBM: treated cohort
+Diffuse glioma	GSE151506	C	plate-based cell-state/epigenetic study
+Papillary thyroid carcinoma	GSE163203	A	PTC landscape incl. Hashimoto; 10 samples
+Papillary thyroid carcinoma	GSE191288	A	PTC scRNA landscape; 7 samples
+Papillary thyroid carcinoma	GSE232237	B	thyroid cancer tissues; 12 samples; histology to confirm
+Papillary thyroid carcinoma	GSE281736	B	PTC differentiation/TME; 12 samples
+Papillary thyroid carcinoma	GSE241184	B	primary + paired LN metastasis; 3 samples
+Osteosarcoma	GSE162454	A	human osteosarcoma scRNA; 6 samples
+Osteosarcoma	GSE299023	A	OS immunosuppressive TME; 6 samples, patient field
+Osteosarcoma	GSE270231	B	lung metastatic niche; metastatic site only
+Osteosarcoma	GSE200529	C	dissociation-protocol methods study (mixed sarcomas)
+Nasopharyngeal carcinoma	GSE150430	A	NPC immune diversity; 16 samples
+Nasopharyngeal carcinoma	GSE206245	A	NPC scRNA + spatial TLS; 18 samples
+Nasopharyngeal carcinoma	GSE120926	B	NPC tumour/virus/TME; check sorting
+Pancreatic ductal adenocarcinoma	GSE205013	A	PDAC +/- chemotherapy; 27 samples; treatment recorded
+Pancreatic ductal adenocarcinoma	GSE242230	A	PDAC high-dimensional; 25 samples
+Pancreatic ductal adenocarcinoma	GSE211644	B	scRNA + TCR; 50 samples (TCR libraries inflate count)
+Pancreatic ductal adenocarcinoma	GSE156405	B	tumour-stroma; some blood samples
+Pancreatic ductal adenocarcinoma	GSE263733	B	subtype clonal evolution; 218 samples, check modality mix
+Pancreatic ductal adenocarcinoma	GSE202051	B	snRNA (separate branch); treatment remodeling
+Pancreatic ductal adenocarcinoma	GSE291124	B	snRNA, 17 treatment-naive PDAC (separate branch)
+Pancreatic neuroendocrine tumor	GSE162708	B	metastatic PanNET; 5 samples incl. blood
+Hepatocellular carcinoma	GSE149614	A	HCC primary + metastatic multi-site atlas; patient field
+Hepatocellular carcinoma	GSE125449	A	liver cancer HCC + ICC; 19 samples
+Hepatocellular carcinoma	GSE151530	A	liver cancer HCC + ICC evolution; 46 samples
+Hepatocellular carcinoma	GSE189903	A	multiregional liver cancer; 34 samples
+Hepatocellular carcinoma	GSE235057	B	primary vs secondary liver cancer
+Hepatocellular carcinoma	GSE229772	B	liver tumours after treatment
+Hepatocellular carcinoma	GSE326201	B	HCC + adjacent liver; 18 samples
+Intrahepatic cholangiocarcinoma	GSE125449	A	ICC subset of the HCC+ICC cohort (same study as above)
+Intrahepatic cholangiocarcinoma	GSE151530	A	ICC subset (same study as above)
+Intrahepatic cholangiocarcinoma	GSE189903	A	ICC subset (same study as above)
+Intrahepatic cholangiocarcinoma	GSE181878	B	ICC scRNA; 3 samples
+Intrahepatic cholangiocarcinoma	GSE146409	B	liver TME atlas; check ICC count
+Bladder cancer	GSE135337	A	local invasion in bladder cancer; 8 samples, patient field
+Bladder cancer	GSE277524	A	multifocal bladder cancer; 10 samples
+Bladder cancer	GSE301651	A	bladder cancer patients; 13 samples
+Bladder cancer	GSE310802	B	en bloc NMIBC; 8 samples
+Bladder cancer	GSE269877	B	BCG-naive and recurrent NMIBC; treatment recorded
+Bladder cancer	GSE293189	B	histologic variants; 67 samples, check modality
+Bladder cancer	GSE169379	B	epithelial subpopulation; 30 samples
+Bladder cancer	GSE149652	C	CD4 T-cell focused; likely sorted
+Esophageal cancer	GSE160269	A	ESCC ecosystem; CD45+ and CD45- fractions both provided (meets spec)
+Esophageal cancer	GSE203067	A	ESCC primary + metastatic; patient and treatment fields
+Esophageal cancer	GSE188900	A	ESCC; 8 samples, patient field
+Esophageal cancer	GSE173950	B	EAC + normal, Drop-seq
+Esophageal cancer	GSE197677	B	neoadjuvant chemotherapy ESCC: treated
+Esophageal cancer	GSE222078	B	EAC +/- neoadjuvant therapy
+Basal cell carcinoma	GSE254918	A	skin cancer CAF/TME; 15 samples
+Basal cell carcinoma	GSE316922	B	immunosuppressed non-melanoma skin cancer (BCC + cSCC); separate BCC
+Basal cell carcinoma	GSE156790	B	naive BCC MRTF; same lab as existing GSE141526 - check patient overlap
+Basal cell carcinoma	GSE268728	C	T-VEC neoadjuvant trial: treated, small
+Acral melanoma	GSE215120	A	acral melanoma scRNA subseries of GSE215121; 11 samples
+Acral melanoma	GSE243238	A	immune exclusion in acral melanoma; 20 samples, all fields
+Acral melanoma	GSE189341	B	acral melanoma clinical profiling; 4 samples
+Acral melanoma	GSE162682	B	109 samples; check platform (plate-based?)
+Acral melanoma	GSE242477	C	infiltrating lymphocytes: likely sorted
+Seminoma	GSE197778	A	metastatic testicular seminoma scRNA; 4 samples
+Seminoma	GSE261811	B	TGCT T cells; check sorting
+Renal medullary carcinoma	GSE306473	B	phase II trial in SMARCB1-deficient tumours: treated; check RMC count

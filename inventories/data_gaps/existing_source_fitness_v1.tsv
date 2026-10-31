@@ -1,0 +1,44 @@
+source	units	patients	treatment_resolved	patient_resolved	site_resolved	fresh_confirmed	analysis_main	sources_in_stratum	recommendation	reason
+GSE161529	41	32	1.0	1.0	1.0	0.0	Breast cancer	2	keep	all required fields resolved
+GSE305078	32	32	1.0	1.0	1.0	1.0	Breast cancer	2	keep	all required fields resolved
+GSE197461	8	8	1.0	1.0	1.0	1.0	Cervical cancer	2	keep	all required fields resolved
+GSE297041	18	10	1.0	1.0	1.0	1.0	Cervical cancer	2	keep	all required fields resolved
+GSE166555	13	12	1.0	1.0	1.0	1.0	Colorectal cancer	5	keep	all required fields resolved
+GSE178341	68	62	1.0	1.0	1.0	1.0	Colorectal cancer	5	keep	all required fields resolved
+GSE188711	6	6	1.0	1.0	1.0	0.0	Colorectal cancer	5	keep	all required fields resolved
+GSE200997	16	16	1.0	1.0	1.0	0.0	Colorectal cancer	5	keep	all required fields resolved
+GSE182109	44	18	1.0	1.0	1.0	1.0	Diffuse glioma	1	keep	all required fields resolved
+GSE201347	12	12	1.0	1.0	1.0	0.0	Gastric cancer	3	keep	all required fields resolved
+GSE299340	5	5	1.0	1.0	1.0	0.0	Hepatocellular carcinoma	1	keep	all required fields resolved
+GSE127465	18	7	1.0	1.0	1.0	1.0	NSCLC	8	keep	all required fields resolved
+GSE131907	32	32	1.0	1.0	1.0	0.0	NSCLC	8	keep	all required fields resolved
+GSE189357	9	9	1.0	1.0	1.0	1.0	NSCLC	8	keep	all required fields resolved
+GSE253013	11	3	1.0	1.0	1.0	1.0	NSCLC	8	keep	all required fields resolved
+GSE162025	10	10	1.0	1.0	1.0	1.0	Nasopharyngeal carcinoma	1	keep	all required fields resolved
+GSE184880	7	7	1.0	1.0	1.0	1.0	Ovarian cancer	2	keep	all required fields resolved
+GSE155698	16	15	1.0	1.0	1.0	0.0	Pancreatic ductal adenocarcinoma	1	keep	all required fields resolved
+GSE256136	17	17	1.0	1.0	1.0	0.0	Pancreatic neuroendocrine tumor	1	keep	all required fields resolved
+GSE184362	17	11	1.0	1.0	1.0	1.0	Papillary thyroid carcinoma	1	keep	all required fields resolved
+GSE178481	15	9	1.0	1.0	1.0	1.0	Renal cell carcinoma	3	keep	all required fields resolved
+GSE294109	25	15	1.0	1.0	1.0	0.0	Renal cell carcinoma	3	keep	all required fields resolved
+GSE256326	9	9	1.0	1.0	1.0	1.0	Renal medullary carcinoma	1	keep	all required fields resolved
+GSE189889	9	9	0.0	1.0	1.0	1.0	Acral melanoma	1	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE141526	4	4	0.0	1.0	1.0	0.0	Basal cell carcinoma	1	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE222315	9	9	0.0	1.0	1.0	1.0	Bladder cancer	1	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE132465	23	23	0.0	1.0	1.0	1.0	Colorectal cancer	5	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE273127	11	11	0.0	1.0	1.0	1.0	Esophageal cancer	1	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE183904	29	29	0.0	1.0	1.0	0.0	Gastric cancer	3	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE138709	5	4	0.0	1.0	1.0	1.0	Intrahepatic cholangiocarcinoma	1	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE148071	42	42	0.0	1.0	1.0	1.0	NSCLC	8	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE179994	46	36	1.0	1.0	0.0	1.0	NSCLC	8	pending_supplement	missing: sampling site (exclude if paper/supplement cannot fill)
+GSE274934	9	9	0.0	1.0	1.0	1.0	NSCLC	8	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE288479	8	4	0.0	1.0	1.0	1.0	NSCLC	8	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE152048	11	11	0.0	1.0	0.0	1.0	Osteosarcoma	1	pending_supplement	missing: treatment, sampling site (exclude if paper/supplement cannot fill)
+GSE176031	27	14	0.0	1.0	1.0	0.0	Prostate cancer	2	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE274229	44	25	0.0	1.0	1.0	1.0	Prostate cancer	2	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE159115	8	8	0.0	1.0	1.0	1.0	Renal cell carcinoma	3	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE138665	6	6	0.0	1.0	1.0	1.0	Uveal melanoma	2	pending_supplement	missing: treatment (exclude if paper/supplement cannot fill)
+GSE139829	11	11	0.0	1.0	0.27	0.0	Uveal melanoma	2	pending_supplement	missing: treatment, sampling site (exclude if paper/supplement cannot fill)
+GSE163558	9	0	1.0	0.0	1.0	1.0	Gastric cancer	3	recommend_exclude	patient identity unresolved and <3 patients identifiable
+CXG_b252b015_b488_4d5c_b16e_968c13e48a2c	6	1	1.0	1.0	0.33	1.0	Ovarian cancer	2	recommend_exclude	<3 patients
+GSE228501	4	0	0.0	0.0	1.0	1.0	Seminoma	1	recommend_exclude	patient identity unresolved and <3 patients identifiable

@@ -1,0 +1,95 @@
+{
+ "run_UTC": "2026-10-31T23:13:29.126206+00:00",
+ "queries": [
+  {
+   "repository": "GEO",
+   "target": "Diffuse glioma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (glioma[All Fields] OR glioblastoma[All Fields])",
+   "hits": 479
+  },
+  {
+   "repository": "GEO",
+   "target": "Papillary thyroid carcinoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND \"papillary thyroid\"[All Fields]",
+   "hits": 13
+  },
+  {
+   "repository": "GEO",
+   "target": "Osteosarcoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND osteosarcoma[All Fields]",
+   "hits": 46
+  },
+  {
+   "repository": "GEO",
+   "target": "Nasopharyngeal carcinoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND \"nasopharyngeal carcinoma\"[All Fields]",
+   "hits": 16
+  },
+  {
+   "repository": "GEO",
+   "target": "Pancreatic ductal adenocarcinoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (\"pancreatic ductal adenocarcinoma\"[All Fields] OR PDAC[All Fields])",
+   "hits": 177
+  },
+  {
+   "repository": "GEO",
+   "target": "Pancreatic neuroendocrine tumor",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (\"pancreatic neuroendocrine\"[All Fields] OR PanNET[All Fields])",
+   "hits": 9
+  },
+  {
+   "repository": "GEO",
+   "target": "Hepatocellular carcinoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (\"hepatocellular carcinoma\"[All Fields] OR HCC[All Fields])",
+   "hits": 156
+  },
+  {
+   "repository": "GEO",
+   "target": "Intrahepatic cholangiocarcinoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (cholangiocarcinoma[All Fields])",
+   "hits": 38
+  },
+  {
+   "repository": "GEO",
+   "target": "Bladder cancer",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (\"bladder cancer\"[All Fields] OR \"urothelial carcinoma\"[All Fields] OR \"bladder carcinoma\"[All Fields])",
+   "hits": 59
+  },
+  {
+   "repository": "GEO",
+   "target": "Esophageal cancer",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (\"esophageal squamous\"[All Fields] OR \"esophageal cancer\"[All Fields] OR \"esophageal adenocarcinoma\"[All Fields] OR \"oesophageal\"[All Fields])",
+   "hits": 50
+  },
+  {
+   "repository": "GEO",
+   "target": "Basal cell carcinoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND \"basal cell carcinoma\"[All Fields]",
+   "hits": 25
+  },
+  {
+   "repository": "GEO",
+   "target": "Acral melanoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND \"acral melanoma\"[All Fields]",
+   "hits": 11
+  },
+  {
+   "repository": "GEO",
+   "target": "Seminoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND (seminoma[All Fields] OR \"testicular germ cell\"[All Fields])",
+   "hits": 7
+  },
+  {
+   "repository": "GEO",
+   "target": "Renal medullary carcinoma",
+   "query": "\"Homo sapiens\"[Organism] AND gse[Entry Type] AND (\"single cell\"[All Fields] OR \"single-cell\"[All Fields] OR scRNA-seq[All Fields] OR \"scRNA seq\"[All Fields]) AND \"renal medullary carcinoma\"[All Fields]",
+   "hits": 7
+  },
+  {
+   "repository": "CELLxGENE",
+   "target": "all",
+   "query": "curation/v1/collections",
+   "hits": 404
+  }
+ ]
+}
