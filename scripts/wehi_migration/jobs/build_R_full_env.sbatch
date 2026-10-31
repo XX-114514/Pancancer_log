@@ -9,7 +9,9 @@
 #SBATCH --output=%x-%j.out
 # Usage: sbatch --export=ALL,MIG_CODE_ROOT=<repo>/scripts/wehi_migration,PC_ROOT=<root>,NAME=<env>[,RESUME=1] jobs/build_R_full_env.sbatch
 # Full old scrna_r R library on WEHI: conda-forge r-base 4.3.3 (same build as the old env) and the
-# system libraries the old env carried, in one solve; then every CRAN/Bioconductor package at its
+# system libraries the old env carried, in one solve. Pins (2026-10-31 dry runs): libxml2 2.13 as in the
+# old env (libxml2-devel exists only for >=2.14 and then clashes with libgdal-core); hdf5 1.14 and JAGS 4.3
+# for hdf5r 1.3.12 / rjags 4-17; imagemagick left out (needs ICU >=78, the r-base build needs 75.1); then every CRAN/Bioconductor package at its
 # old version (wehi_install_R_exact.R), then GitHub/other packages (wehi_install_R_github.R).
 set -euo pipefail
 echo "repo_commit $(git -C "${MIG_CODE_ROOT:?}" rev-parse HEAD) dirty $(git -C "$MIG_CODE_ROOT" status --porcelain | wc -l)"
@@ -22,9 +24,9 @@ if [ "${RESUME:-0}" = 1 ]; then
 else
   [ -e "$P" ] && { echo "exists $P" >&2; exit 2; }
   micromamba create -y -p "$P" -c conda-forge --override-channels "r-base=4.3.3=h5074ccb_16" \
-    compilers make pkg-config cmake glpk gmp mpfr gsl libxml2 libxml2-devel zlib liblzma-devel \
-    hdf5 jags gdal geos proj udunits2 fftw cairo harfbuzz fribidi freetype libpng libtiff libjpeg-turbo \
-    libgit2 libcurl openssl imagemagick r-remotes r-biocmanager
+    compilers make pkg-config cmake glpk gmp mpfr gsl "libxml2=2.13" zlib liblzma-devel "hdf5=1.14" "jags=4.3" \
+    libgdal-core geos proj libudunits2 cairo harfbuzz pango fribidi freetype libpng libtiff libjpeg-turbo \
+    libgit2 libcurl openssl r-remotes r-biocmanager
 fi
 mkdir -p "$P/rebuild_report"
 eval "$(micromamba shell hook -s bash)"; micromamba activate "$P"
