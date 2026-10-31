@@ -40,7 +40,20 @@ for (pass in 1:3) {
     if (is.na(v)) { rows[[p]] <- c(p, "", have, "not_in_old_env"); next }
     if (same(have, v)) { if (is.null(rows[[p]])) rows[[p]] <- c(p, v, have, "already_exact"); next }
     ok <- tryCatch({
-      if (grepl("Bioc", origin[p])) BiocManager::install(p, version = "3.18", update = FALSE, ask = FALSE, dependencies = FALSE)
+      if (grepl("Bioc", origin[p])) {
+        # BiocManager only offers the latest 3.18 patch; try the exact recorded tarball first.
+        base <- "https://bioconductor.org/packages/3.18"
+        urls <- c(sprintf("%s/%s/src/contrib/%s_%s.tar.gz", base, c("bioc", "data/annotation", "data/experiment"), p, v),
+                  sprintf("%s/%s/src/contrib/Archive/%s/%s_%s.tar.gz", base, c("bioc", "data/annotation", "data/experiment"), p, p, v))
+        done <- FALSE
+        for (u in urls) {
+          f <- tempfile(fileext = ".tar.gz")
+          if (!inherits(try(suppressWarnings(download.file(u, f, quiet = TRUE)), silent = TRUE), "try-error")) {
+            install.packages(f, repos = NULL, type = "source"); done <- TRUE; break
+          }
+        }
+        if (!done) BiocManager::install(p, version = "3.18", update = FALSE, ask = FALSE, dependencies = FALSE)
+      }
       else remotes::install_version(p, version = v, dependencies = FALSE, upgrade = "never", quiet = FALSE)
       TRUE
     }, error = function(e) { message(p, ": ", conditionMessage(e)); FALSE })

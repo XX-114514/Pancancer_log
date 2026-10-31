@@ -44,7 +44,7 @@ for spec in sys.argv[3:]:
         print(name, s + len(r), '/', len(rows), flush=True)
     parts.append(pd.DataFrame(recs, columns=['store', 'source', 'row', 'total', 'nnz', 'fp_full', 'fp_top50']))
 df = pd.concat(parts, ignore_index=True)
-df.to_parquet(os.path.join(out, 'cell_fingerprints.parquet'))
+df.to_csv(os.path.join(out, 'cell_fingerprints.tsv.gz'), sep='\t', index=False)
 summary = {'n_cells_fingerprinted': len(df), 'min_total': MIN_TOTAL, 'min_nnz': MIN_NNZ}
 for fp in ('fp_full', 'fp_top50'):
     multi = df.groupby(fp)['source'].nunique()
