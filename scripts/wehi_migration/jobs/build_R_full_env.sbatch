@@ -31,7 +31,8 @@ else
     xorg-libx11 xorg-xorgproto xorg-libxt xorg-libxrender xorg-libxext r-remotes r-biocmanager
 fi
 mkdir -p "$P/rebuild_report"
-eval "$(micromamba shell hook -s bash)"; micromamba activate "$P"
+# compiler activation scripts read unset variables, so relax -u around activation
+set +u; eval "$(micromamba shell hook -s bash)"; micromamba activate "$P"; set -u
 # systemfonts includes <ft2build.h> without pkg-config flags; units looks for udunits2.h
 export CPATH="$P/include/freetype2:$P/include${CPATH:+:$CPATH}"
 export UDUNITS2_INCLUDE=$P/include UDUNITS2_LIBS=$P/lib
