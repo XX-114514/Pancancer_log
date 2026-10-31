@@ -1,3 +1,7 @@
+## 2026-10-31 癌种名称统一v1完成；完整R环境重建作业已提交
+
+11:55 UTC：当前TME合格范围（770单位/43来源）的35个原始癌种写法，按OncoTree（stable 2025-10-03）和GEO标题/GSM特征映射到23个分析分层，770/770匹配。只有9个分层有≥2个独立来源；其余14个癌种是单来源，结论无法和来源效应分开。纠正：GSE182109不全是胶质母细胞瘤（含grade II/III）。完整scrna_r的R环境（CellChat、copykat、scATOMIC、infercnv等）首次提交因conda求解冲突失败，修正固定版本后重新提交（作业30614882），尚未完成。见[方法](methods/cancer-type-harmonization-v1-20261031.md)和[任务日志](logs/codex/2026/2026-10-31_data-gap-goals.md)。
+
 ## 2026-10-31 数据库存核查：WEHI目标端复核完成，core抗体特征精确分类
 
 11:23 UTC，源服务器交接清单的32项和50个依赖在WEHI上按PATH_MAP逐项核对：52项SHA一致，3个zarr目录及1个3 GB h5ad在迁移时已逐文件核对；只有GSE162498 raw/filtered和GSE278694 QC对象不在WEHI（未迁移，交接时就注明不需要）。按GEO发布的feature_types，core中的非RNA特征为GSE274229的229个Antibody Capture列。这些列在原生计数中全为0，对标准化没有影响；此前的214、222都不准确。新发现：GSE169609有5个TotalSeq-C特征计数真实存在（中位占细胞总计数5.7%）。该来源已处于duplicate-source hold，当前结果不受影响，但重新纳入前必须剔除。GSE299623和GSE169609的范围排除依据已追到冻结52-GSE输入；GSE169609与哪个来源重复、GSE278694的排除理由仍未解决。见[任务日志](logs/codex/2026/2026-10-31_WEHI-data-claim-target-verification.md)。

@@ -1,0 +1,44 @@
+source	source_label	analysis_main	analysis_fine	oncotree_code	oncotree_name	oncotree_main_type	oncotree_tissue	resolution	mixed_components	evidence	followup
+CXG_b252b015_b488_4d5c_b16e_968c13e48a2c	malignant ovarian serous tumor	Ovarian cancer	HGSOC	HGSOC	High-Grade Serous Ovarian Cancer	Ovarian Cancer	Ovary/Fallopian Tube	study_level		CELLxGENE disease 'malignant ovarian serous tumor'; datasets.tsv: MSK SPECTRUM ovarian cohort	confirm HGSOC from collection metadata
+GSE127465	Non-small cell lung cancer	NSCLC	NSCLC_mixed	NSCLC	Non-Small Cell Lung Cancer	Non-Small Cell Lung Cancer	Lung	parent_of_mixed	LUAD 16 GSM; LUSC 10 GSM (GEO histology-reduced)	GEO title/characteristics	unit-level LUAD/LUSC split
+GSE131907	Lung cancer	NSCLC	LUAD	LUAD	Lung Adenocarcinoma	Non-Small Cell Lung Cancer	Lung	exact		GEO title: lung adenocarcinoma	
+GSE132465	Colorectal cancer	Colorectal cancer	CRC	COADREAD	Colorectal Adenocarcinoma	Colorectal Cancer	Bowel	assumed_dominant_histology		GEO title: colorectal cancer	
+GSE138665	Uveal melanoma	Uveal melanoma	UM	UM	Uveal Melanoma	Melanoma	Eye	exact		GEO title: primary uveal melanomas	
+GSE138709	Intrahepatic cholangiocarcinoma	Intrahepatic cholangiocarcinoma	IHCH	IHCH	Intrahepatic Cholangiocarcinoma	Hepatobiliary Cancer	Biliary Tract	exact		GEO title	
+GSE139829	Uveal melanoma	Uveal melanoma	UM	UM	Uveal Melanoma	Melanoma	Eye	exact		GEO title	
+GSE141526	Basal cell carcinoma	Basal cell carcinoma	BCC	BCC	Basal Cell Carcinoma	Skin Cancer, Non-Melanoma	Skin	exact		GEO title: 4 BCC subtypes	
+GSE148071	Advanced non-small cell lung cancer	NSCLC	NSCLC_unresolved	NSCLC	Non-Small Cell Lung Cancer	Non-Small Cell Lung Cancer	Lung	parent_unresolved		GEO title: advanced NSCLC; no histology characteristic	histology from publication supplement
+GSE152048	Osteosarcoma	Osteosarcoma	OS	OS	Osteosarcoma	Bone Cancer	Bone	exact		GEO title	
+GSE155698	Pancreatic ductal adenocarcinoma	Pancreatic ductal adenocarcinoma	PDAC	PAAD	Pancreatic Adenocarcinoma	Pancreatic Cancer	Pancreas	exact		GEO summary: PDAC	
+GSE159115	Renal cell carcinoma	Renal cell carcinoma	RCC_mixed	RCC	Renal Cell Carcinoma	Renal Cell Carcinoma	Kidney	parent_of_mixed	ccRCC 7 GSM; chRCC 1 GSM	GEO characteristics tumor subtype	unit-level ccRCC/chRCC split
+GSE161529	Breast cancer	Breast cancer	BRCA_mixed_receptor	BRCA	Invasive Breast Carcinoma	Breast Cancer	Breast	parent_of_mixed	ER+ 26; HER2+ 6; TN 4; TN BRCA1 4; PR+ 1 GSM (plus normal/pre-neoplastic)	GEO characteristics cancer type	unit-level receptor subtype
+GSE162025	Nasopharyngeal carcinoma	Nasopharyngeal carcinoma	NPC	NPC	Nasopharyngeal Carcinoma	Head and Neck Cancer	Head and Neck	exact		GEO title	
+GSE163558	Gastric cancer	Gastric cancer	STAD	STAD	Stomach Adenocarcinoma	Esophagogastric Cancer	Esophagus/Stomach	assumed_dominant_histology		GEO title: primary and metastatic gastric cancer	
+GSE166555	CRC	Colorectal cancer	CRC	COADREAD	Colorectal Adenocarcinoma	Colorectal Cancer	Bowel	assumed_dominant_histology		GEO summary: CRC	
+GSE176031	Prostate cancer	Prostate cancer	PRAD_localized	PRAD	Prostate Adenocarcinoma	Prostate Cancer	Prostate	assumed_dominant_histology		GEO title: primary localized prostate cancer	
+GSE178341	Colorectal cancer	Colorectal cancer	CRC	COADREAD	Colorectal Adenocarcinoma	Colorectal Cancer	Bowel	assumed_dominant_histology		GEO title: MMRd/MMRp colorectal cancer	
+GSE178481	Clear cell renal cell carcinoma	Renal cell carcinoma	ccRCC	CCRCC	Renal Clear Cell Carcinoma	Renal Cell Carcinoma	Kidney	exact		GEO title	
+GSE179994	Lung cancer	NSCLC	NSCLC_unresolved	NSCLC	Non-Small Cell Lung Cancer	Non-Small Cell Lung Cancer	Lung	parent_unresolved		GEO disease state: NSCLC	histology from publication supplement
+GSE182109	Glioblastoma	Diffuse glioma	glioma_mixed_grade	DIFG	Diffuse Glioma	Glioma	CNS/Brain	parent_of_mixed	grade IV 35; grade II 8; grade III 1 GSM	GEO characteristics tumor grade; source label 'Glioblastoma' is incorrect for grade II/III	unit-level grade split (GB only for grade IV)
+GSE183904	Gastric cancer	Gastric cancer	STAD	STAD	Stomach Adenocarcinoma	Esophagogastric Cancer	Esophagus/Stomach	assumed_dominant_histology		GEO title: gastric cancer; includes peritoneal samples	
+GSE184362	Papillary thyroid carcinoma	Papillary thyroid carcinoma	PTC	THPA	Papillary Thyroid Cancer	Thyroid Cancer	Thyroid	exact		GEO title	
+GSE184880	High-grade serous ovarian cancer	Ovarian cancer	HGSOC	HGSOC	High-Grade Serous Ovarian Cancer	Ovarian Cancer	Ovary/Fallopian Tube	exact		GEO title	
+GSE188711	Left/right CRC	Colorectal cancer	CRC	COADREAD	Colorectal Adenocarcinoma	Colorectal Cancer	Bowel	assumed_dominant_histology		GEO title; left/right is tumour location, not cancer type	
+GSE189357	Lung cancer	NSCLC	LUAD	LUAD	Lung Adenocarcinoma	Non-Small Cell Lung Cancer	Lung	exact	AIS 3; MIA 3; IAC 3 GSM	GEO title/characteristics: LUAD AIS to IAC	preinvasive AIS/MIA flagged as material stage
+GSE189889	acral_melanoma	Acral melanoma	ACRM	ACRM	Acral Melanoma	Melanoma	Skin	exact		GEO title	
+GSE197461	Cervical SCC/adenocarcinoma	Cervical cancer	cervical_mixed	CERVIX	Cervix	Cervical Cancer	Cervix	parent_of_mixed	ADC 10; SCC 6 GSM	GEO characteristics histologic type	unit-level CESC/CEAD split
+GSE200997	CRC	Colorectal cancer	CRC	COADREAD	Colorectal Adenocarcinoma	Colorectal Cancer	Bowel	assumed_dominant_histology		GEO title	
+GSE201347	Gastric cancer	Gastric cancer	STAD	STAD	Stomach Adenocarcinoma	Esophagogastric Cancer	Esophagus/Stomach	assumed_dominant_histology		GEO title/characteristics: gastric cancer	
+GSE222315	Bladder cancer	Bladder cancer	BLCA	BLCA	Bladder Urothelial Carcinoma	Bladder Cancer	Bladder/Urinary Tract	assumed_dominant_histology		GEO title: bladder cancer	
+GSE228501	Seminoma	Seminoma	SEM	SEM	Seminoma	Germ Cell Tumor	Testis	exact		GEO title	
+GSE253013	LUAD	NSCLC	LUAD	LUAD	Lung Adenocarcinoma	Non-Small Cell Lung Cancer	Lung	exact		GEO title: lung adenocarcinoma	
+GSE256136	Pancreatic neuroendocrine tumor	Pancreatic neuroendocrine tumor	PanNET	PANET	Pancreatic Neuroendocrine Tumor	Pancreatic Cancer	Pancreas	exact		GEO title	
+GSE256326	RMC	Renal medullary carcinoma	RMC	MRC	Renal Medullary Carcinoma	Renal Cell Carcinoma	Kidney	exact		GEO title: renal medullary carcinoma	
+GSE273127	Esophageal cancer	Esophageal cancer	esophageal_mixed	STOMACH	Esophagus/Stomach	Esophageal/Stomach Cancer	Esophagus/Stomach	parent_of_mixed	ESCC 9; EAC 2 GSM	GEO characteristics tumor type	unit-level ESCC/EAC split
+GSE274229	Prostate cancer	Prostate cancer	PRAD_mCRPC	PRAD	Prostate Adenocarcinoma	Prostate Cancer	Prostate	assumed_dominant_histology		GEO summary: mCRPC	
+GSE274934	ALK-positive/negative LUAD	NSCLC	LUAD	LUAD	Lung Adenocarcinoma	Non-Small Cell Lung Cancer	Lung	exact	ALK+ LUAD 11; WT LUAD 12 GSM	GEO characteristics tumor type	ALK status is a molecular attribute
+GSE288479	Part-solid LUAD	NSCLC	LUAD	LUAD	Lung Adenocarcinoma	Non-Small Cell Lung Cancer	Lung	exact		GEO title	
+GSE294109	ccRCC	Renal cell carcinoma	ccRCC	CCRCC	Renal Clear Cell Carcinoma	Renal Cell Carcinoma	Kidney	exact		GEO title: metastatic ccRCC	
+GSE297041	CESC	Cervical cancer	cervical_unresolved	CERVIX	Cervix	Cervical Cancer	Cervix	parent_unresolved		GEO characteristics: primary cervical cancer; no histology field	histology from publication; 'CESC' label not verified
+GSE299340	HCC	Hepatocellular carcinoma	HCC	HCC	Hepatocellular Carcinoma	Hepatobiliary Cancer	Liver	exact		GEO title	
+GSE305078	TNBC	Breast cancer	TNBC	BRCA	Invasive Breast Carcinoma	Breast Cancer	Breast	exact		GEO summary: early/advanced TNBC	TNBC is a receptor subtype under BRCA
