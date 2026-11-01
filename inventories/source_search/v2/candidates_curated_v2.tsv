@@ -1,0 +1,32 @@
+target	accession	priority	note
+Head and neck squamous cell carcinoma	GSE181919	A	stepwise progression HNSCC; 37 samples
+Head and neck squamous cell carcinoma	GSE234933	A	HNSCC cohort; 52 samples, patient field
+Head and neck squamous cell carcinoma	GSE182227	A	HPV+ oropharyngeal carcinoma
+Head and neck squamous cell carcinoma	GSE173468	A	HPV+ HNSCC; patient field
+Head and neck squamous cell carcinoma	GSE198315	A	multiregional OSCC field cancerization
+Head and neck squamous cell carcinoma	GSE215403	A	OSCC gingivo-buccal
+Head and neck squamous cell carcinoma	GSE310797	A	OSCC by stage; scRNA + spatial
+Cutaneous melanoma	GSE215120	A	cutaneous samples of the already-downloaded acral study (CM1-3, CM1_lym)
+Cutaneous melanoma	GSE269936	A	metastatic melanoma; 38 samples
+Cutaneous melanoma	GSE222446	A	TIL-therapy response melanoma biopsies (series family GSE221553/GSE222750)
+Cutaneous melanoma	GSE244983	A	ICB resistance melanoma
+Ovarian cancer	GSE286057	A	ovarian cancer omentum metastasis
+Ovarian cancer	GSE266577	A	chemotherapy and T-cell exhaustion in ovarian cancer
+Ovarian cancer	GSE165897	A	known HGSOC pre/post chemotherapy scRNA (from memory; verify)
+Endometrial cancer	GSE173682	A	known endometrial/ovarian scRNA+ATAC (from memory; verify)
+Endometrial cancer	GSE251923	A	endometrial scRNA + spatial; 4 samples
+Diffuse glioma	GSE222522	A	IDH-stratified glioma immune landscape; check sorting
+Diffuse glioma	GSE210736	A	GBM scRNA + multiome
+Diffuse glioma	GSE154795	A	neoadjuvant PD-1 GBM
+Diffuse glioma	GSE131928	A	known Neftel GBM (from memory; check 10x part)
+Diffuse glioma	GSE162631	A	known GBM scRNA (from memory; verify)
+Soft tissue sarcoma	GSE212527	A	UPS and leiomyosarcoma
+Soft tissue sarcoma	GSE281096	A	UPS scRNA + spatial
+Soft tissue sarcoma	GSE221492	A	dedifferentiated liposarcoma
+Soft tissue sarcoma	GSE271517	A	synovial sarcoma subtypes
+Soft tissue sarcoma	GSE174376	A	pediatric rhabdomyosarcoma sc/sn atlas
+Diffuse large B-cell lymphoma	GSE182434	A	DLBCL tumour ecosystems
+Mesothelioma	GSE253973	A	mesothelioma fibroblast-like tumour cells
+Chromophobe and papillary RCC	GSE152938	A	multiple RCC pathologic types
+Testicular germ cell tumor	GSE261811	A	TGCT T cells; check sorting
+Nasopharyngeal carcinoma	GSE120926	A	NPC tumour/virus/TME
