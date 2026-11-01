@@ -1,0 +1,18 @@
+{
+ "Adrenocortical carcinoma": ["(\"adrenocortical carcinoma\"[All Fields] OR \"adrenocortical cancer\"[All Fields])", "adrenocortical"],
+ "Diffuse large B-cell lymphoma": ["(\"diffuse large B-cell lymphoma\"[All Fields] OR DLBCL[All Fields])", "diffuse large B"],
+ "Head and neck squamous cell carcinoma": ["(\"head and neck squamous\"[All Fields] OR HNSCC[All Fields] OR \"oral squamous cell carcinoma\"[All Fields] OR \"laryngeal\"[All Fields] OR \"oropharyngeal\"[All Fields])", "head and neck|oral cavity|tongue|laryn|pharyn"],
+ "Chromophobe and papillary RCC": ["(\"chromophobe renal\"[All Fields] OR \"papillary renal cell\"[All Fields] OR chRCC[All Fields] OR pRCC[All Fields])", "chromophobe|papillary renal"],
+ "Acute myeloid leukemia": ["(\"acute myeloid leukemia\"[All Fields] OR AML[All Fields])", "acute myeloid"],
+ "Mesothelioma": ["mesothelioma[All Fields]", "mesothelioma"],
+ "Pheochromocytoma and paraganglioma": ["(pheochromocytoma[All Fields] OR paraganglioma[All Fields])", "pheochromocytoma|paraganglioma"],
+ "Soft tissue sarcoma": ["(liposarcoma[All Fields] OR leiomyosarcoma[All Fields] OR \"synovial sarcoma\"[All Fields] OR \"undifferentiated pleomorphic sarcoma\"[All Fields] OR \"soft tissue sarcoma\"[All Fields] OR rhabdomyosarcoma[All Fields])", "liposarcoma|leiomyosarcoma|synovial sarcoma|pleomorphic sarcoma|soft tissue sarcoma|rhabdomyosarcoma"],
+ "Cutaneous melanoma": ["(\"cutaneous melanoma\"[All Fields] OR \"metastatic melanoma\"[All Fields] OR \"skin cutaneous melanoma\"[All Fields])", "^melanoma$|cutaneous melanoma|skin melanoma"],
+ "Testicular germ cell tumor": ["(\"testicular germ cell\"[All Fields] OR seminoma[All Fields] OR \"germ cell tumor\"[All Fields])", "seminoma|germ cell"],
+ "Thymoma and thymic carcinoma": ["(thymoma[All Fields] OR \"thymic carcinoma\"[All Fields] OR \"thymic epithelial tumor\"[All Fields])", "thymoma|thymic"],
+ "Endometrial cancer": ["(\"endometrial cancer\"[All Fields] OR \"endometrial carcinoma\"[All Fields] OR \"uterine corpus\"[All Fields])", "endometri"],
+ "Uterine carcinosarcoma": ["(carcinosarcoma[All Fields])", "carcinosarcoma"],
+ "Diffuse glioma": ["(glioblastoma[All Fields] OR \"lower grade glioma\"[All Fields] OR \"low-grade glioma\"[All Fields] OR astrocytoma[All Fields] OR oligodendroglioma[All Fields])", "glioma|glioblastoma|astrocytoma|oligodendroglioma"],
+ "Ovarian cancer": ["(\"ovarian cancer\"[All Fields] OR \"high-grade serous\"[All Fields] OR \"ovarian carcinoma\"[All Fields])", "ovarian|ovary"],
+ "Nasopharyngeal carcinoma": ["\"nasopharyngeal carcinoma\"[All Fields]", "nasopharyn"]
+}
