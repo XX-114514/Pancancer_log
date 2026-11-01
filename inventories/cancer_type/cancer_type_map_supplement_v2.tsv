@@ -1,0 +1,25 @@
+source	source_label	analysis_main	analysis_fine	oncotree_code	oncotree_name	oncotree_main_type	oncotree_tissue	resolution	mixed_components	evidence	followup
+GSE181919	HNSCC (oral cavity, oropharynx, larynx, hypopharynx)	Head and neck squamous cell carcinoma	HNSCC	HNSC	Head and Neck Squamous Cell Carcinoma	Head and Neck Cancer	Head and Neck	exact		GEO barcode metadata subsite	
+GSE234933	HNSCC	Head and neck squamous cell carcinoma	HNSCC	HNSC	Head and Neck Squamous Cell Carcinoma	Head and Neck Cancer	Head and Neck	exact		GEO series summary	
+GSE173468	HPV+ HNSCC	Head and neck squamous cell carcinoma	HNSCC	HNSC	Head and Neck Squamous Cell Carcinoma	Head and Neck Cancer	Head and Neck	exact		GEO tissue	
+GSE215403	OSCC gingivo-buccal	Head and neck squamous cell carcinoma	OSCC	OCSC	Oral Cavity Squamous Cell Carcinoma	Head and Neck Cancer	Head and Neck	exact		GEO tissue	
+GSE310797	OSCC	Head and neck squamous cell carcinoma	OSCC	OCSC	Oral Cavity Squamous Cell Carcinoma	Head and Neck Cancer	Head and Neck	exact		GEO tissue	
+GSE215120_CM	cutaneous melanoma	Cutaneous melanoma	SKCM	SKCM	Cutaneous Melanoma	Melanoma	Skin	exact		GEO genotype	
+GSE269936	metastatic melanoma	Cutaneous melanoma	melanoma_metastatic	MEL	Melanoma	Melanoma	Skin	parent_unresolved		GEO tissue: metastatic melanoma; primary subtype not stated	SKCM assumed by context, coded at MEL parent
+GSE222446	melanoma	Cutaneous melanoma	melanoma_metastatic	MEL	Melanoma	Melanoma	Skin	parent_unresolved		GEO tissue: melanoma (TIL-therapy cohort)	coded at MEL parent
+GSE165897	HGSOC	Ovarian cancer	HGSOC	HGSOC	High-Grade Serous Ovarian Cancer	Ovarian Cancer	Ovary/Fallopian Tube	exact		GEO	
+GSE286057	HGSOC omental metastasis	Ovarian cancer	HGSOC	HGSOC	High-Grade Serous Ovarian Cancer	Ovarian Cancer	Ovary/Fallopian Tube	exact		paper	
+GSE173682	endometrial / ovarian tumours	per sample: Endometrial cancer or Ovarian cancer	per_sample	UCEC	Endometrial Carcinoma	Endometrial Cancer	Uterus	per_sample	endometrium endometrioid 5; ovary serous/HGSOC/endometrioid/carcinosarcoma 5	GEO histology / tumor_site	analysis_main per sample; ovary samples coded OVARY tissue
+GSE212527	LMS / UPS	Soft tissue sarcoma	LMS_or_UPS	SOFT_TISSUE	Soft Tissue	Soft Tissue Cancer	Soft Tissue	parent_of_mixed	LMS 4 samples (3 patients); UPS 3	GEO tissue	
+GSE182434	DLBCL	Diffuse large B-cell lymphoma	DLBCL	DLBCLNOS	Diffuse Large B-Cell Lymphoma, NOS	Mature B-Cell Neoplasms	Lymphoid	exact		GEO cell annotation	
+GSE253973	pleural mesothelioma	Mesothelioma	PLMESO	PLMESO	Pleural Mesothelioma	Mesothelioma	Pleura	exact		GEO tissue	
+GSE117570	NSCLC (LUAD 3, LUSC 1)	NSCLC	NSCLC_mixed	NSCLC	Non-Small Cell Lung Cancer	Non-Small Cell Lung Cancer	Lung	parent_of_mixed	LUAD 3; LUSC 1	GEO diagnosis	
+GSE161277	CRC (MSS)	Colorectal cancer	CRC	COADREAD	Colorectal Adenocarcinoma	Colorectal Cancer	Bowel	assumed_dominant_histology		GEO	
+GSE167297	diffuse-type gastric cancer	Gastric cancer	STAD_diffuse	DSTAD	Diffuse Type Stomach Adenocarcinoma	Esophagogastric Cancer	Esophagus/Stomach	exact		GEO diagnosis	
+GSE173278	primary glioblastoma	Diffuse glioma	GBM	GB	Glioblastoma, IDH-Wildtype	Glioma	CNS/Brain	exact		GEO / paper title	
+GSE176078	breast cancer (ER+, HER2+, TNBC)	Breast cancer	BRCA_mixed_receptor	BRCA	Invasive Breast Carcinoma	Breast Cancer	Breast	parent_of_mixed		GEO clinical subtype	
+GSE180286	breast cancer (TNBC, luminal B, HER2)	Breast cancer	BRCA_mixed_receptor	BRCA	Invasive Breast Carcinoma	Breast Cancer	Breast	parent_of_mixed		GEO molecular typing	
+GSE190888	bladder cancer	Bladder cancer	BLCA	BLCA	Bladder Urothelial Carcinoma	Bladder Cancer	Bladder/Urinary Tract	assumed_dominant_histology		GEO	
+GSE205506	dMMR CRC	Colorectal cancer	CRC_dMMR	COADREAD	Colorectal Adenocarcinoma	Colorectal Cancer	Bowel	assumed_dominant_histology		GEO / title	
+GSE207422	NSCLC (squamous / adeno)	NSCLC	NSCLC_mixed	NSCLC	Non-Small Cell Lung Cancer	Non-Small Cell Lung Cancer	Lung	parent_of_mixed		GEO metadata pathology	
+GSE207493	ccRCC	Renal cell carcinoma	ccRCC	CCRCC	Renal Clear Cell Carcinoma	Renal Cell Carcinoma	Kidney	exact		GEO tissue	
