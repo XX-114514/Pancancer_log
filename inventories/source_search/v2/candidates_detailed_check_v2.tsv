@@ -1,0 +1,32 @@
+target	accession	verdict	reason
+Head and neck squamous cell carcinoma	GSE181919	pass	23 patients; integer UMI table; keep primary cancer + LN metastasis, drop normal and leukoplakia
+Head and neck squamous cell carcinoma	GSE234933	pass	52 fresh HNSCC tumours / 51 patients (paper); counts in archive - confirm after download
+Head and neck squamous cell carcinoma	GSE173468	pass	HPV+ HNSCC 15 tumour samples; integer mtx; adjacent normal dropped
+Head and neck squamous cell carcinoma	GSE215403	pass	12 OSCC-GB primary tumours; integer mtx
+Head and neck squamous cell carcinoma	GSE310797	pass	OSCC by stage; integer count tables; spatial samples dropped
+Head and neck squamous cell carcinoma	GSE198315	conditional	10 OSCC patients multiregional; series matrix non-integer - use per-sample files if integer
+Head and neck squamous cell carcinoma	GSE182227	fail	no count files on GEO; 4 patients with CD45+/- sorted fractions
+Cutaneous melanoma	GSE215120	pass	cutaneous melanoma samples CM1-3 (+CM1 LN) of the acral study; 3 patients; files already downloaded
+Cutaneous melanoma	GSE269936	pass	38 metastatic melanoma samples; 10x h5
+Cutaneous melanoma	GSE222446	pass	TIL-therapy cohort biopsies; patient/time fields; integer counts (viable cells)
+Cutaneous melanoma	GSE244983	pass	4 ICB-resistant melanoma biopsies; raw count table
+Ovarian cancer	GSE165897	pass	11 HGSOC patients, treatment-naive and post-NACT pairs; UMI count table
+Ovarian cancer	GSE286057	pass	omentum metastasis, 15 treatment-naive patients; keep tumour samples only
+Ovarian cancer	GSE266577	fail	no count files on GEO
+Endometrial cancer	GSE173682	pass	11 treatment-naive patients (endometrium + ovary); scRNA libraries only (ATAC dropped)
+Endometrial cancer	GSE251923	fail	2 scRNA samples (<3 patients)
+Diffuse glioma	GSE222522	conditional	IDH-stratified gliomas; mixed Smart-seq/10x and cell-type field - check sorting
+Diffuse glioma	GSE210736	fail	cerebral organoid model
+Diffuse glioma	GSE154795	fail	CD45+ TIL sorted
+Diffuse glioma	GSE131928	fail	main data Smart-seq2; 2 GSM
+Diffuse glioma	GSE162631	fail	CD31+ MACS enriched
+Soft tissue sarcoma	GSE212527	pass	4 leiomyosarcoma + 3 UPS; per-sample mtx
+Soft tissue sarcoma	GSE221492	conditional	11 untreated DDLPS (paper); GEO file is a bulk atlas matrix - check for single-cell counts
+Soft tissue sarcoma	GSE281096	conditional	UPS/AFX/PDS tumours; patient count to confirm
+Soft tissue sarcoma	GSE174376	conditional	mostly PDX; only patient-tumour samples usable
+Soft tissue sarcoma	GSE271517	fail	FFPE bulk RNA-seq
+Diffuse large B-cell lymphoma	GSE182434	pass	DLBCL 8 (+FL 6 kept separately or dropped) lymph-node biopsies; raw count matrix
+Mesothelioma	GSE253973	pass	5 treatment-naive mesothelioma biopsies; integer mtx; pleura and PDO dropped
+Chromophobe and papillary RCC	GSE152938	fail	1 papillary + 1 chromophobe sample
+Testicular germ cell tumor	GSE261811	conditional	4 testis samples; check T-cell focus / sorting
+Nasopharyngeal carcinoma	GSE120926	fail	FACS-sorted fractions + Smart-seq
