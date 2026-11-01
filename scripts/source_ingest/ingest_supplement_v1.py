@@ -283,6 +283,10 @@ if run('GSE277524'):
     info = {s['gsm']: s for s in j}
     parts = []
     for pre in sorted({re.sub(r'(barcodes|genes|features|matrix)\.(tsv|mtx)\.gz$', '', n) for n in mem}):
+        if 'P03_R2' in pre:
+            # GEO file GSM8523967_P03_R2_matrix.mtx.gz decompresses to null bytes (series tar and sample-level
+            # copy both checked 2026-11-01): sample cannot be read
+            continue
         X, bc, genes = read_mtx_triplet(lambda f: t.extractfile(mem[f]), pre)
         X, bc = floor_call(X, bc)  # GEO holds unfiltered matrices only
         g = pre.split('_')[0]; ch = info[g]['chars']; sample = re.sub(r'^GSM\d+_|_$', '', pre)
@@ -292,7 +296,7 @@ if run('GSE277524'):
                      treatment_status='on_or_after_treatment' if rec else 'untreated_or_pretreatment',
                      treatment_detail=('recurrent tumour after prior resection' if rec else 'primary, treatment-naive (PMID 39702554)') + f'; procedure {ch.get("treatment")}',
                      fresh_frozen='fresh', technology='Singleron GEXSCOPE', cell_calling='QC_floor_on_unfiltered_matrix')))
-    build('GSE277524', parts, 'Bladder cancer', {'evidence': 'GEO characteristics; PMID 39702554', 'note': 'P03_R1 is a ureter tumour (upper tract)'})
+    build('GSE277524', parts, 'Bladder cancer', {'evidence': 'GEO characteristics; PMID 39702554', 'note': 'P03_R1 is a ureter tumour (upper tract); P03_R2 skipped: GEO matrix file is null bytes upstream; cell calling = QC floor on unfiltered matrices'})
 
 # ---- Esophageal
 if run('GSE160269'):
