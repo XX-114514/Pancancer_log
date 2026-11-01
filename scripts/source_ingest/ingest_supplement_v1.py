@@ -37,10 +37,31 @@ def tar_members(path):
     return t, {m.name: m for m in t.getmembers()}
 
 
+def read_mm(fobj):
+    """MatrixMarket coordinate reader tolerant of blank '%' comment lines (Singleron); returns cells x genes"""
+    head = None
+    while True:
+        line = fobj.readline().decode().strip()
+        if line.startswith('%') or not line:
+            continue
+        head = [int(x) for x in line.split()]; break
+    nr, nc, nnz = head
+    t = pd.read_csv(fobj, sep=r'\s+', header=None, dtype={0: np.int32, 1: np.int32, 2: np.float64}, engine='c')
+    assert len(t) == nnz, (len(t), nnz)
+    return sp.csr_matrix((t[2].values, (t[1].values - 1, t[0].values - 1)), shape=(nc, nr))
+
+
+def floor_call(X, bc):
+    """cell calling for unfiltered matrices: keep barcodes passing the QC floor (>=200 genes, >=500 UMI)"""
+    X = sp.csr_matrix(X)
+    ok = (np.diff(X.indptr) >= 200) & (np.asarray(X.sum(1)).ravel() >= 500)
+    return X[ok], bc[ok]
+
+
 def read_mtx_triplet(open_fn, prefix):
     # file objects from tar members / open() are not decompressed automatically
     gz = lambda name: gzip.open(open_fn(name))
-    mtx = scipy.io.mmread(gz(prefix + 'matrix.mtx.gz')).T.tocsr()
+    mtx = read_mm(gz(prefix + 'matrix.mtx.gz'))
     bc = pd.read_csv(gz(prefix + 'barcodes.tsv.gz'), header=None, sep='\t')[0].astype(str).values
     ft = None
     for fname in ('features.tsv.gz', 'genes.tsv.gz'):
@@ -109,7 +130,7 @@ def build(src, parts, cancer_main, extra_uns):
 
 def common(**kw):
     base = {'treatment_status': 'unknown', 'treatment_detail': '', 'fresh_frozen': 'unknown',
-            'capture_scope': 'whole_tissue', 'suspension': 'cell'}
+            'capture_scope': 'whole_tissue', 'suspension': 'cell', 'cell_calling': 'author_filtered_matrix'}
     base.update(kw)
     return base
 
@@ -197,7 +218,10 @@ if run('GSE242230'):
         sample = re.sub(r'^GSM\d+_|_$', '', pre)
         a = ann[ann.sample_id == sample].set_index('cell_id')
         key = pd.Index([f'{sample}_{b}' for b in bc])
-        parts.append((X, bc, genes, common(sample_id=sample, gsm=pre.split('_')[0], patient_id=f'GSE242230:{sample}',
+        # matrices are unfiltered: keep only cells listed in the author annotation file
+        inann = key.isin(a.index)
+        X, bc, key = X[inann], bc[inann], key[inann]
+        parts.append((X, bc, genes, common(sample_id=sample, gsm=pre.split('_')[0], patient_id=f'GSE242230:{sample}', cell_calling='author_annotation_list',
                      sampling_site='primary_organ_site', material='EUS-FNB primary PDAC', treatment_status='untreated_or_pretreatment',
                      treatment_detail='treatment-naive at diagnosis (PMID 37857854)', fresh_frozen='fresh_or_cryopreserved_per_sample_unknown',
                      technology='10x', author_cell_type=a.reindex(key)['cell_type'].astype(str).values,
@@ -248,9 +272,9 @@ if run('GSE189903'):
     s2id = dict(zip(info['Sample'], info['S_ID']))
     tomain = lambda t: 'Hepatocellular carcinoma' if 'Hepato' in t else 'Intrahepatic cholangiocarcinoma'
     parts = nih_liver('GSE189903', ['GSE189903_'], 'Sample', 'Cell', lambda s: tomain(ctype[s2id[s]][0]),
-                      lambda s: s in s2id and 'Adjacent' not in ctype[s2id[s]][1], lambda s: re.match(r'(\d+)', s).group(1))
+                      lambda s: s in s2id and 'Adjacent' not in ctype[s2id[s]][1], lambda s: re.match(r'(\d+[CH])', s).group(1))
     build('GSE189903', parts, 'Hepatocellular carcinoma', {'evidence': 'GEO Info.txt cell->sample, GSM cancer/tissue type; adjacent non-tumour dropped; PMID 36476645',
-                                                           'note': 'patient = leading case number of sample name (7 cases, multiregional)'})
+                                                           'note': 'patient = case number + C (ICC) / H (HCC) of sample name: 3 ICC + 4 HCC = 7 cases as in the paper (multiregional)'})
 
 # ---- Bladder
 if run('GSE277524'):
@@ -260,13 +284,14 @@ if run('GSE277524'):
     parts = []
     for pre in sorted({re.sub(r'(barcodes|genes|features|matrix)\.(tsv|mtx)\.gz$', '', n) for n in mem}):
         X, bc, genes = read_mtx_triplet(lambda f: t.extractfile(mem[f]), pre)
+        X, bc = floor_call(X, bc)  # GEO holds unfiltered matrices only
         g = pre.split('_')[0]; ch = info[g]['chars']; sample = re.sub(r'^GSM\d+_|_$', '', pre)
         rec = ch.get('tumor stage') == 'Recurrence'
         parts.append((X, bc, genes, common(sample_id=sample, gsm=g, patient_id=f'GSE277524:{sample.split("_")[0]}',
                      sampling_site='primary_organ_site', material=f'{ch.get("tissue")} urothelial tumour ({ch.get("tumor stage")})',
                      treatment_status='on_or_after_treatment' if rec else 'untreated_or_pretreatment',
                      treatment_detail=('recurrent tumour after prior resection' if rec else 'primary, treatment-naive (PMID 39702554)') + f'; procedure {ch.get("treatment")}',
-                     fresh_frozen='fresh', technology='Singleron GEXSCOPE')))
+                     fresh_frozen='fresh', technology='Singleron GEXSCOPE', cell_calling='QC_floor_on_unfiltered_matrix')))
     build('GSE277524', parts, 'Bladder cancer', {'evidence': 'GEO characteristics; PMID 39702554', 'note': 'P03_R1 is a ureter tumour (upper tract)'})
 
 # ---- Esophageal
