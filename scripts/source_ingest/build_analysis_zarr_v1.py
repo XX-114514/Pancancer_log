@@ -94,7 +94,8 @@ def harmonise(o, src, batch):
         h['origin_cell_name'] = o['origin_barcode'].astype(str)
         h['doublet_method'] = o['doublet_method'].astype(str)
         h['author_cell_type'] = o['author_cell_type'].astype(str) if 'author_cell_type' in o else ''
-        h['qc_flag'] = 'low_depth_platform' if src == 'GSE163203' else 'qc_v1_pass'
+        h['qc_flag'] = {'GSE163203': 'low_depth_platform', 'GSE277524': 'floor_cell_calling_on_unfiltered_matrix',
+                        'GSE160269': 'sorted_fractions_recombined'}.get(src, 'qc_v1_pass')
     h['cancer_label_resolution'] = c['resolution']
     h['treatment_status'] = o['treatment_status'].astype(str)
     h['treatment_detail'] = o['treatment_detail'].astype(str)
