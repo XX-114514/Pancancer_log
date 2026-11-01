@@ -90,3 +90,15 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 
 ### A级候选详细核查（进行中）
 `detailed_check_candidates_v1.py`（Slurm `detailed_check_candidates_v1.sbatch`，作业30618920）：对22个A级编号逐一读取GEO系列与GSM完整记录（物种、技术、分选用词、样本来源、患者字段），列出补充文件（原始计数与标准化文件），下载1个<60 MB的计数文件检查是否为整数，并从PMC论文方法部分抽取治疗、新鲜/冻存、分选、患者数相关句子。第一次用nohup在会话shell中启动，进程无输出即消失，改为Slurm。
+
+### A级候选详细核查结果（2026-11-01）
+- 自动部分：作业30618920（4 min）。整数探针第一版有误（会选中`filelist.txt`），改为`count_file_probe_v1.py`：从GEO记录字段取文件名，只流式读取压缩文件的前几MB并解压检验。Slurm作业30619015里有9个系列没有解析到数值（可能是下载时的瞬时问题），直接重跑后全部有结果。
+- 人工汇总：[candidates_detailed_check_v1.tsv](../../../inventories/source_search/candidates_detailed_check_v1.tsv)。22个编号中，通过13个，有条件7个，不通过2个（GSE243238是bulk RNA-seq；GSE197778只有1名患者）。
+- 主要条件与风险：
+  - GSE150430：GEO上只有标准化矩阵，原始数据在CNGB，需要从FASTQ重新比对。
+  - GSE151530：很可能包含GSE125449的样本（同一NIH团队，论文引用了后者），GSE189903也来自同一团队，需要用细胞指纹去重。
+  - GSE206245：GEO只存放了论文队列的一部分；它与GSE150430、现有的GSE162025来自同一机构，需要查患者重叠。
+  - GSE301651：属于新辅助免疫化疗队列，scRNA患者的治疗状态未明。
+  - GSE254918：每个癌种只有3名患者，刚好达到下限。
+  - GSE160269：CD45+与CD45−两部分需要按患者合并。
+- 癌种覆盖（只算通过的）：PTC 2、骨肉瘤 2、PDAC 2、肝细胞癌 3（GSE149614、GSE125449、GSE189903）、ICC 2（GSE125449、GSE189903中的ICC部分）、膀胱癌 1（GSE277524）、食管癌 2、肢端黑色素瘤 1（GSE215120）。NPC、BCC只有有条件的候选；精原细胞瘤没有可用候选；胶质瘤、PanNET、RMC还没做A级核查（没有A级候选）。

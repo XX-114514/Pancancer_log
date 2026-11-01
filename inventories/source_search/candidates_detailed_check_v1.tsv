@@ -1,0 +1,23 @@
+target	accession	pmid	verdict	raw_counts	technology	patients	treatment	fresh_frozen	sorting	caveats
+Papillary thyroid carcinoma	GSE163203	34805166	pass	integer dge (Drop-seq)	Drop-seq	~8 PTC patients (10 samples incl. 2 adjacent)	not stated (thyroidectomy cohort)	fresh	none	Hashimoto-concurrent subgroup; treatment status to confirm
+Papillary thyroid carcinoma	GSE191288	35515000	pass	10x h5	10x	to derive (T1L/T1R = several samples per patient)	not stated	fresh	none	needs patient grouping from sample names
+Osteosarcoma	GSE162454	34367994	pass	integer mtx	10x	6	treatment-naive (paper title)	fresh	none	
+Osteosarcoma	GSE299023	40647416	pass	integer mtx	10x	6 samples; patient field shows 2 values - check	treatment-naive (paper)	part cryopreserved (CHCO biopsies)	viable-cell FACS only (not lineage)	fresh/cryopreserved mix
+Nasopharyngeal carcinoma	GSE150430	32686767	conditional	NO: GEO has only normalised matrix; raw reads at CNGB CNP0000428	10x	15	treatment-naive (paper)	fresh	none	needs re-alignment from FASTQ; same institution as existing GSE162025 - check patient overlap
+Nasopharyngeal carcinoma	GSE206245	39231979	conditional	integer mtx	10x + spatial	paper 56 patients; GEO holds 13 scRNA samples	not stated	fresh (scRNA); spatial fresh-frozen	none	GEO deposit is a subset of the paper cohort; spatial samples to be separated; same institution as GSE162025
+Pancreatic ductal adenocarcinoma	GSE205013	36781852	pass	integer mtx	10x	27	20 untreated, 7 chemotherapy before collection (per patient in Suppl. Table 1)	fresh	none	primary 17 + liver metastasis 10
+Pancreatic ductal adenocarcinoma	GSE242230	37857854	pass	integer mtx	10x	25	treatment-naive EUS-FNB biopsies	fresh or cryopreserved (both used)	none	fresh/cryopreserved per sample to obtain
+Hepatocellular carcinoma	GSE149614	35933472	pass	integer count table	10x	10	not stated	fresh	none	multi-site (primary, non-tumour liver, PVTT, LN met); raw reads at EGA
+Hepatocellular carcinoma; Intrahepatic cholangiocarcinoma	GSE125449	31588021	pass	integer mtx	10x	19	to confirm (NIH interventional cohort)	fresh	none	OVERLAP RISK with GSE151530 (same group; GSE151530 cites this study)
+Hepatocellular carcinoma; Intrahepatic cholangiocarcinoma	GSE151530	34216724	conditional	integer mtx	10x	37 patients / 46 biopsies	16 biopsies before/after treatment from 7 patients	fresh	none	likely contains GSE125449 samples - keep only one or de-duplicate by cell fingerprint
+Hepatocellular carcinoma; Intrahepatic cholangiocarcinoma	GSE189903	36476645	pass	integer mtx + 10x h5	10x	7 (multiregional, 34 samples)	not stated	fresh; cryopreserved suspension only for 3 FACS validations	none	same NIH group as GSE125449/GSE151530 - check overlap
+Bladder cancer	GSE135337	34480339	conditional	integer dense table	10x	7 tumours + 1 adjacent; patient field 2 values - check	not stated; no PMC full text	not stated	none	paper not in PMC
+Bladder cancer	GSE277524	39702554	pass	integer mtx	Singleron	5 treatment-naive patients (2 tumours each)	treatment-naive (paper)	fresh	none	Singleron platform (not 10x)
+Bladder cancer	GSE301651	41706539	conditional	integer mtx	10x / BD Rhapsody	11 MIBC (+1 LN, 1 PBMC sample)	neoadjuvant tislelizumab + chemo cohort; scRNA patients' status unclear	fresh	dead-cell removal only	treatment status of the scRNA patients to confirm
+Esophageal cancer	GSE160269	34489433	pass	integer UMI tables	10x	60	not stated (surgical cohort 2018)	fresh	CD45+ and CD45- libraries both provided (meets spec)	fractions must be recombined per patient; TCR libraries separate
+Esophageal cancer	GSE203067	36709495	pass	integer mtx	10x	4	no preoperative treatment (methods, PMC9982558)	not stated	none	primary + metastatic LN + adjacent
+Esophageal cancer	GSE188900	35418165	conditional	archives only (Patient*.tar.gz)	10x	8	not stated	not stated	none	open archives to confirm counts
+Basal cell carcinoma; Acral melanoma	GSE254918	39516494	conditional	integer mtx (txt)	10x (+ Smart-seq)	3 BCC, 3 acral lentiginous melanoma, 4 SCC, 5 healthy	not stated	fresh punch biopsies	none	only 3 patients per cancer (spec minimum); mixed technologies to separate
+Acral melanoma	GSE215120	36433984	pass	10x h5	10x	6 (acral + cutaneous melanoma)	not stated	fresh	none	keep acral samples only
+Acral melanoma	GSE243238	37857525	fail	non-integer bulk matrix	bulk RNA-seq	20	-	FFPE	-	not single-cell
+Seminoma	GSE197778	35494058	fail	archives	10x	1 (tumour, 2 LN, PBMC from one patient)	-	-	-	<3 patients
