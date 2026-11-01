@@ -330,7 +330,7 @@ if run('GSE215120'):
     t, mem = tar_members(R('GSE215120', 'GSE215120_RAW.tar'))
     parts = []
     for n in sorted(mem):
-        m = re.match(r'(GSM\d+)_AM(\d)(pre|post)?_filtered_feature_bc_matrix\.h5$', n)
+        m = re.match(r'(GSM\d+)_AM(\d)(?:_(pre|post))?_filtered_feature_bc_matrix\.h5$', n)
         if not m:
             continue
         X, bc, genes = read_10x_h5(io.BytesIO(t.extractfile(mem[n]).read()))
