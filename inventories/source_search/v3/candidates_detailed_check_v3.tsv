@@ -1,0 +1,28 @@
+target	accession	verdict	reason
+Breast cancer	GSE176078	pass	26 primary breast tumours (Wu et al. 2021); per-sample counts in BRCA_scRNASeq tar
+Breast cancer	GSE180286	pass	5 patients primary + lymph node metastasis (Singleron); integer
+Breast cancer	GSE148673	conditional	5 untreated TNBC + other material; not taken this round
+NSCLC	GSE117570	conditional_after_download	early NSCLC tumours; GEO file named processed - check integrality
+NSCLC	GSE207422	pass	15 NSCLC scRNA patients, neoadjuvant immunotherapy (BD Rhapsody); UMI matrix
+NSCLC	GSE150660	fail	cerebrospinal fluid (leptomeningeal metastasis), not tissue
+NSCLC	GSE153935	conditional	Drop-seq lung fibroblast niches; depth to check; not taken
+Colorectal cancer	GSE161277	pass	4 untreated MSS CRC patients; carcinoma samples only (normal/adenoma/blood dropped)
+Colorectal cancer	GSE205506	pass	19 dMMR CRC patients, PD-1 blockade cohort; integer mtx
+Colorectal cancer	GSE225857	pass	CRC primary + liver metastasis after neoadjuvant therapy; integer mtx
+Colorectal cancer	GSE144735	fail	same publication (PMID 32451460) as existing source GSE132465
+Gastric cancer	GSE167297	pass	5 patients, superficial and deep tumour layers; normal dropped
+Gastric cancer	GSE134520	fail	mostly premalignant gastric lesions
+Gastric cancer	GSE150290	fail	sorted gastric cancer epithelial cells
+Gastric cancer	GSE184198	fail	2 samples; EPCAM bead sorting
+Renal cell carcinoma	GSE207493	pass	19 ccRCC patients; scRNA archive (ATAC dropped)
+Renal cell carcinoma	GSE171306	fail	2 samples
+Prostate cancer	GSE185344	fail	no count files on GEO
+Prostate cancer	GSE141445	conditional	13 tumours in one GSM; patient labels to check; not taken
+Prostate cancer	GSE193337	conditional	FACS-sorted suspensions (purpose unclear); not taken
+Hepatocellular carcinoma	GSE156625	conditional	human + mouse; sorting to check; not taken
+Bladder cancer	GSE190888	pass	3 bladder cancers (2 primary, 1 recurrent; cystitis glandularis dropped), Singleron
+Bladder cancer	GSE211388	fail	sorted
+Cervical cancer	GSE168652	fail	1 tumour sample
+Cervical cancer	GSE208653	fail	shares publication (PMID 37794698) with existing source GSE197461
+Diffuse glioma	GSE173278	pass	primary GBM tissue (organoid / cell-line samples dropped); all-cells count matrix
+Diffuse glioma	GSE174554	fail	snRNA branch, non-integer matrix
