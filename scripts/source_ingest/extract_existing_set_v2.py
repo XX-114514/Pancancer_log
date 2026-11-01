@@ -62,7 +62,7 @@ def treatment_harmonised(r):
 summary = []
 for code, L in enumerate(lineage):
     src = L['source']
-    if src in excluded or (only and src not in only):
+    if src in excluded or (only and src not in only) or os.path.exists(os.path.join(out, f'{src}.h5ad')):
         continue
     sel = axes['source_code'] == code
     rows = axes['native_row'][sel]
@@ -129,6 +129,9 @@ for code, L in enumerate(lineage):
         o['cancer_' + c if c == 'resolution' else c] = cmap.loc[src, c]
     o['ambient_correction'] = 'available_in_origin_store' if L.get('has_adopted_ambient_delta') else 'none'
     o['data_batch'] = 'existing_analysis_set_v2'
+    for c in o.columns:
+        if o[c].dtype == object:
+            o[c] = o[c].fillna('').astype(str)
     o = o[keep].reset_index(drop=True)
     Xs = Xs[keep]
     o.index = o['cell_id'].values
