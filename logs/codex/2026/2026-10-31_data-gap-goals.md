@@ -81,3 +81,12 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 ### 现有来源复核（第2步）
 [existing_source_fitness_v1.tsv](../../../inventories/data_gaps/existing_source_fitness_v1.tsv)：按冻结的必需字段（患者编号、取样部位、治疗状态、≥3名患者）复核。保留23个来源（449个单位/357名患者）；待补充表17个（302/255）——补不齐的排除；建议排除3个：GSE163558（患者无法配对）、CXG SPECTRUM卵巢（6个单位来自同1名患者）、GSE228501（患者与治疗都不明）。**尚未执行，等用户确认。**
 - monocle3 1.3.1（GitHub tag）与presto 1.0.0均LOAD_OK（作业30615914/30615917，`jobs/fix2_monocle_presto.sbatch`）；为满足monocle3，新增旧环境没有的terra 1.9.50。偏差全部记录在`scrna_r_full/rebuild_report/R_version_deviations.tsv`：lme4、terra、monocle3来源。**漏洞8的R环境部分完成。**
+
+### 用户确认排除3个来源（2026-11-01）
+- 用户确认排除GSE163558、CXG SPECTRUM卵巢（`CXG_b252b015…`）、GSE228501，**不再整合**。登记于[source_exclusions_v1.tsv](../../../inventories/data_gaps/source_exclusions_v1.tsv)，`inventories/datasets.tsv`新增3行。
+- 分析集v2：751个单位、40个来源、2,893,337行（服务器`analysis/data_gaps/analysis_units_v2_private.tsv`，SHA256 `9cb95a79…c8eb`）。排除只体现在单位清单；冻结存储与原生数据不改动，也不物理删除（被排除的细胞与其他细胞在同一个zarr中）。
+- 影响：精原细胞瘤在分析集中没有来源了（只能靠新来源补）；卵巢癌、胃癌各剩1个、2个来源。
+- GSE163558的排除理由只依据GEO记录，没有查论文。
+
+### A级候选详细核查（进行中）
+`detailed_check_candidates_v1.py`（Slurm `detailed_check_candidates_v1.sbatch`，作业30618920）：对22个A级编号逐一读取GEO系列与GSM完整记录（物种、技术、分选用词、样本来源、患者字段），列出补充文件（原始计数与标准化文件），下载1个<60 MB的计数文件检查是否为整数，并从PMC论文方法部分抽取治疗、新鲜/冻存、分选、患者数相关句子。第一次用nohup在会话shell中启动，进程无输出即消失，改为Slurm。

@@ -1,0 +1,4 @@
+source	units	archive_rows	status	reason
+GSE163558	9	37719	excluded_2026-11-01	patient identity unresolved: primary and metastatic samples cannot be paired to patients from GEO records; fails spec v1 patient-ID requirement
+CXG_b252b015_b488_4d5c_b16e_968c13e48a2c	6	24761	excluded_2026-11-01	all 6 qualified units come from one patient (patient_candidate::14); fails spec v1 >=3 patients
+GSE228501	4	12551	excluded_2026-11-01	patient identity and treatment status unknown (4 samples 19355X1-4); fails spec v1 required fields
