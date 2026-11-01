@@ -109,3 +109,22 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 - 独立回读验证全部通过；跨来源完整指纹相同的细胞为0。
 - 构建后发现GSE125449的P编号在两个Set之间重复且对应不同癌种，不能作为患者ID，改为按样本计患者（只改obs）。
 - 未完成/限制：现有部分没有扣除环境RNA，补充部分没有估计环境RNA；GSE163203低深度；GSE277524只用QC下限识别细胞；GSE160269为分选后合并；精原细胞瘤没有来源；数据在scratch上，持久空间尚未落实。
+
+## 2026-11-01/02 用户指令：新来源去富集/低深度，统一QC+双细胞+环境RNA，整合降维出UMAP；扩充数据（覆盖TCGA大多数癌种，约500万细胞）
+
+### 新来源的排除规则（用户确定，适用于所有新来源）
+- 不使用富集数据：谱系分选（FACS/MACS/CD45±等）一律排除；只去死细胞的活细胞FACS不算富集，保留。
+- 深度与其他数据差异过大的排除：来源中位UMI低于各来源中位数之中位数（4,127）的1/3、或高于其3倍即排除（现有40个来源的范围为0.43–2.95倍）；测到的基因少于15,000的排除（作者已做过基因过滤）；少于3名患者的排除（检索规格既有条款）。
+- 据此排除：GSE160269（CD45±分选）、GSE163203（Microwell-seq，0.16倍）、GSE244983（11,622个基因）、GSE225857（免疫/非免疫分开计数，无法排除分选）、GSE117570（10,147个基因）、GSE190888（2名患者）。
+
+### 环境RNA统一处理
+- 现有来源原本不一致：core只有估计值没有校正矩阵；部分immune/public来源用了其他方法。现对**全部来源**统一做decontX：按单位快速聚类后调用项目既有worker（`scripts/decontx_library_worker.R`算法与参数不变；独立的decontX包需要rstan，编译失败，改用celda 1.18.2中的`decontX()`，复制为`decontx_library_worker_celda.R`）。
+- 原51个来源全部完成，没有单位失败；各来源中位污染率0.2%–32%（中位3.8%；最高为GSE138665 32%、GSE141526 17%、GSE179994 16%）。整合时去掉污染率≥0.5的细胞。
+
+### 数据扩充（检索v2/v3）
+- v2（TCGA缺失或不足的癌种）：31个候选，判定见`inventories/source_search/v2/candidates_detailed_check_v2.tsv`；读取14个（HNSCC 5、皮肤黑色素瘤 3、卵巢 2、子宫内膜/卵巢 1、软组织肉瘤 1、DLBCL 1、间皮瘤 1），全部通过深度和基因数检查，decontX运行中。
+- v3（常见癌种的独立来源）：27个候选，见`v3/candidates_detailed_check_v3.tsv`；读取11个，其中2个按上述规则排除，余9个在做QC。与现有来源属同一研究的排除（GSE144735与GSE132465同一论文；GSE208653与GSE197461同一论文）。
+- 读取中遇到的问题：GSE212527矩阵未过滤（改按作者细胞列表）；GSE181919材料字段拼接错误；GSE173278文件名不同；下载脚本第二次运行时重写只读的SHA256SUMS失败（已改为只给新目录写）。
+
+### 整合流程（integration v2，脚本`scripts/integration_v2/integrate_v2.py`）
+沿用此前TME标准整合配方：seurat_v3 HVG（按来源分别计算后合并排名，6500个候选→4000个，去掉技术基因），decontX计数normalize_total 1e4 + log1p，中心化ARPACK PCA 50个主成分，按来源做Harmony（theta 2，lambda 1，20轮），15近邻，UMAP。等全部来源完成decontX后在bigmem节点运行。
