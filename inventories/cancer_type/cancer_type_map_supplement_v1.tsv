@@ -1,0 +1,14 @@
+source	source_label	analysis_main	analysis_fine	oncotree_code	oncotree_name	oncotree_main_type	oncotree_tissue	resolution	mixed_components	evidence	followup
+GSE163203	papillary thyroid carcinoma	Papillary thyroid carcinoma	PTC	THPA	Papillary Thyroid Cancer	Thyroid Cancer	Thyroid	exact		GEO GSM disease state: papillary thyroid carcinoma	
+GSE191288	Papillary thyroid cancer	Papillary thyroid carcinoma	PTC	THPA	Papillary Thyroid Cancer	Thyroid Cancer	Thyroid	exact		GEO GSM titles	
+GSE162454	osteosarcoma	Osteosarcoma	OS	OS	Osteosarcoma	Bone Cancer	Bone	exact		GEO / PMID 34367994	
+GSE299023	Osteosarcoma	Osteosarcoma	OS	OS	Osteosarcoma	Bone Cancer	Bone	exact		GEO tissue: Osteosarcoma	
+GSE205013	PDAC	Pancreatic ductal adenocarcinoma	PDAC	PAAD	Pancreatic Adenocarcinoma	Pancreatic Cancer	Pancreas	exact		GEO tissue: Primary PDAC / PDAC liver met	
+GSE242230	Pancreas adenocarcinoma	Pancreatic ductal adenocarcinoma	PDAC_mixed	PAAD	Pancreatic Adenocarcinoma	Pancreatic Cancer	Pancreas	parent_of_mixed	Adenocarcinoma 24; Adenosquamous 1 GSM	GEO pathology field	adenosquamous sample wu07 kept under PAAD parent
+GSE149614	Hepatocellular carcinoma (HCC)	Hepatocellular carcinoma	HCC	HCC	Hepatocellular Carcinoma	Hepatobiliary Cancer	Liver	exact		GEO tumor field	
+GSE125449	HCC / iCCA	per sample: Hepatocellular carcinoma or Intrahepatic cholangiocarcinoma	HCC_or_ICC_per_sample	LIVER	Liver	Liver Cancer	Liver	per_sample	HCC 9; ICC 10 GSM	GEO GSM cancer type	analysis_main set per sample
+GSE189903	HCC / iCCA	per sample: Hepatocellular carcinoma or Intrahepatic cholangiocarcinoma	HCC_or_ICC_per_sample	LIVER	Liver	Liver Cancer	Liver	per_sample	HCC and ICC samples	GEO GSM cancer type	analysis_main set per sample
+GSE277524	bladder urothelial tumour	Bladder cancer	urothelial_mixed_site	BLADDER	Bladder/Urinary Tract	Bladder/Urinary Tract Cancer	Bladder/Urinary Tract	parent_of_mixed	bladder 9; ureter 1 GSM	GEO tissue field	ureter sample P03_R1 is upper tract urothelial
+GSE160269	ESCC	Esophageal cancer	ESCC	ESCC	Esophageal Squamous Cell Carcinoma	Esophagogastric Cancer	Esophagus/Stomach	exact		GEO / PMID 34489433	
+GSE203067	ESCC	Esophageal cancer	ESCC	ESCC	Esophageal Squamous Cell Carcinoma	Esophagogastric Cancer	Esophagus/Stomach	exact		GEO disease state: ESCC	
+GSE215120	acral melanoma	Acral melanoma	ACRM	ACRM	Acral Melanoma	Melanoma	Skin	exact		GEO genotype: acral melanoma	cutaneous samples dropped

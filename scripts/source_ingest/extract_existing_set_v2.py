@@ -1,6 +1,6 @@
 # Extract analysis set v2 (qualified fit cells of the 40 retained sources) from the three native
 # stores into one h5ad shard per source: raw integer counts, genes keyed by symbol (duplicates
-# summed, as in the core store), non-RNA features dropped, plus per-cell unit / patient /
+# summed, as in the core store), only genes measured by the source, non-RNA features dropped, plus per-cell unit / patient /
 # treatment / sampling-site / cancer-type metadata. Cell set = the cell axis of the current TME
 # standard integration run (20261029_TME_standard_HVG_PCA_Harmony_v1) minus excluded sources.
 # Usage: extract_existing_set_v2.py PC_ROOT REPO OUT_DIR [SOURCE ...]
@@ -80,12 +80,18 @@ for code, L in enumerate(lineage):
         raise SystemExit(f'{src}: non-integer counts in {L["counts_key"]}')
     sym = symbol_var(store, g)
     keep_cols = ~pd.Series(sym).str.upper().isin(nonrna).values
+    # keep only genes the source actually measured (stores zero-pad unmeasured genes)
+    if 'measured_in_source' in g['varm']:
+        order = re.findall(r"'([^']+)'", str(read_elem(g['uns']['source_order'])))
+        keep_cols &= np.asarray(read_elem(g['varm']['measured_in_source']))[:, order.index(src)]
+    else:
+        per = ad.read_h5ad(f'{pc}/Project_v3/annotation_rebuild/20260923_core_anndata_zarr_v1/objects/harmonized_per_gse/{src}_symbol_counts.h5ad', backed='r')
+        keep_cols &= np.isin(sym, per.var_names.astype(str))
     # sum duplicate symbols
     u, inv = np.unique(sym[keep_cols], return_inverse=True)
     agg = sp.csr_matrix((np.ones(keep_cols.sum()), (np.flatnonzero(keep_cols), inv)), shape=(len(sym), len(u)))
     Xs = (X @ agg).tocsr()
     Xs.data = np.rint(Xs.data).astype(np.int32); Xs = Xs.astype(np.int32)
-    measured = np.asarray((X[:, keep_cols] != 0).sum(0)).ravel() > -1  # all store columns are measured for the source
     # per-cell native identifiers and unit
     obs_names = np.asarray(read_elem(g['obs'][g['obs'].attrs['_index']]))[rows].astype(str)
     uv = np.load(f'{runs}/20261026_archive_expression_unit_views_v1/outputs/{src}_archive_unit_views_v1.npz')

@@ -38,12 +38,15 @@ def tar_members(path):
 
 
 def read_mtx_triplet(open_fn, prefix):
-    mtx = scipy.io.mmread(open_fn(prefix + 'matrix.mtx.gz')).T.tocsr()
-    bc = pd.read_csv(open_fn(prefix + 'barcodes.tsv.gz'), header=None, sep='\t')[0].astype(str).values
+    # file objects from tar members / open() are not decompressed automatically
+    gz = lambda name: gzip.open(open_fn(name))
+    mtx = scipy.io.mmread(gz(prefix + 'matrix.mtx.gz')).T.tocsr()
+    bc = pd.read_csv(gz(prefix + 'barcodes.tsv.gz'), header=None, sep='\t')[0].astype(str).values
+    ft = None
     for fname in ('features.tsv.gz', 'genes.tsv.gz'):
         try:
-            ft = pd.read_csv(open_fn(prefix + fname), header=None, sep='\t'); break
-        except KeyError:
+            ft = pd.read_csv(gz(prefix + fname), header=None, sep='\t'); break
+        except (KeyError, FileNotFoundError):
             continue
     if ft.shape[1] >= 3:
         ft = ft[ft[2].astype(str).str.contains('Gene Expression')] if (ft[2] != 'Gene Expression').any() else ft
