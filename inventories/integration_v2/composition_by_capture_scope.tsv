@@ -1,0 +1,5 @@
+capture_scope	cells	units	patients	sources
+source_gate_v7_qualified	2676846	748	611	40
+whole_tissue	1956932	492	387	30
+whole_tissue_viable_cell_FACS	22527	6	6	1
+whole_tissue_viable_cells	64626	12	10	1

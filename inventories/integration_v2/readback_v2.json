@@ -1,0 +1,29 @@
+{
+ "n_obs": 4720931,
+ "cell_id_unique": true,
+ "X_shape": [
+  4720931,
+  99071
+ ],
+ "layers": [
+  "counts",
+  "decontx"
+ ],
+ "obsm": {
+  "X_pca": [
+   4720931,
+   50
+  ],
+  "X_pca_harmony": [
+   4720931,
+   50
+  ],
+  "X_umap": [
+   4720931,
+   2
+  ]
+ },
+ "umap_finite": true,
+ "counts_integer_sample": true,
+ "n_selected_HVG": 4000
+}

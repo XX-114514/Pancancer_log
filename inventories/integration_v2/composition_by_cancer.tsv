@@ -1,0 +1,29 @@
+analysis_main	cells	units	patients	sources
+NSCLC	598822	190	157	9
+Breast cancer	530092	99	90	3
+Head and neck squamous cell carcinoma	406249	119	114	5
+Renal cell carcinoma	357665	67	51	4
+Cutaneous melanoma	317622	54	38	3
+Colorectal cancer	291910	156	142	7
+Pancreatic ductal adenocarcinoma	271427	65	64	3
+Diffuse glioma	239624	76	28	2
+Bladder cancer	193308	18	14	2
+Prostate cancer	162282	69	38	2
+Gastric cancer	159904	51	46	3
+Osteosarcoma	154610	23	23	3
+Ovarian cancer	125274	40	29	4
+Papillary thyroid carcinoma	118829	23	14	2
+Hepatocellular carcinoma	112203	42	26	4
+Esophageal cancer	107898	18	15	2
+Cervical cancer	91437	26	18	2
+Uveal melanoma	81980	17	17	2
+Nasopharyngeal carcinoma	80516	10	10	1
+Pancreatic neuroendocrine tumor	77517	17	17	1
+Acral melanoma	72011	16	15	2
+Intrahepatic cholangiocarcinoma	49077	24	16	3
+Endometrial cancer	30990	5	5	1
+Basal cell carcinoma	27528	4	4	1
+Renal medullary carcinoma	22030	9	9	1
+Soft tissue sarcoma	14537	7	6	1
+Diffuse large B-cell lymphoma	13161	8	4	1
+Mesothelioma	12428	5	5	1
