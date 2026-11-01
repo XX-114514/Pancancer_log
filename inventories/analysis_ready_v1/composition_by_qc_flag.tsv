@@ -1,0 +1,6 @@
+qc_flag	cells	units	patients	sources
+floor_cell_calling_on_unfiltered_matrix	150840	9	5	1
+inherited_fit_cell	2871696	748	611	40
+low_depth_platform	7987	8	8	1
+qc_v1_pass	599121	137	109	10
+sorted_fractions_recombined	188398	118	60	1

@@ -1,0 +1,56 @@
+source	data_batch	analysis_main	cells	units	patients	sources
+GSE125449	supplement_v1	Hepatocellular carcinoma	3525	8	8	1
+GSE125449	supplement_v1	Intrahepatic cholangiocarcinoma	5705	10	10	1
+GSE127465	existing_analysis_set_v2	NSCLC	21286	18	7	1
+GSE131907	existing_analysis_set_v2	NSCLC	102685	32	32	1
+GSE132465	existing_analysis_set_v2	Colorectal cancer	33874	23	23	1
+GSE138665	existing_analysis_set_v2	Uveal melanoma	10624	6	6	1
+GSE138709	existing_analysis_set_v2	Intrahepatic cholangiocarcinoma	13144	5	4	1
+GSE139829	existing_analysis_set_v2	Uveal melanoma	87080	11	11	1
+GSE141526	existing_analysis_set_v2	Basal cell carcinoma	31542	4	4	1
+GSE148071	existing_analysis_set_v2	NSCLC	70331	42	42	1
+GSE149614	supplement_v1	Hepatocellular carcinoma	41933	13	10	1
+GSE152048	existing_analysis_set_v2	Osteosarcoma	101497	11	11	1
+GSE155698	existing_analysis_set_v2	Pancreatic ductal adenocarcinoma	32043	16	15	1
+GSE159115	existing_analysis_set_v2	Renal cell carcinoma	14076	8	8	1
+GSE160269	supplement_v1	Esophageal cancer	188398	118	60	1
+GSE161529	existing_analysis_set_v2	Breast cancer	225597	41	32	1
+GSE162025	existing_analysis_set_v2	Nasopharyngeal carcinoma	82604	10	10	1
+GSE162454	supplement_v1	Osteosarcoma	43553	6	6	1
+GSE163203	supplement_v1	Papillary thyroid carcinoma	7987	8	8	1
+GSE166555	existing_analysis_set_v2	Colorectal cancer	27156	13	12	1
+GSE176031	existing_analysis_set_v2	Prostate cancer	16273	26	14	1
+GSE178341	existing_analysis_set_v2	Colorectal cancer	96761	67	62	1
+GSE178481	existing_analysis_set_v2	Renal cell carcinoma	77764	15	9	1
+GSE179994	existing_analysis_set_v2	NSCLC	140640	46	36	1
+GSE182109	existing_analysis_set_v2	Diffuse glioma	227269	44	18	1
+GSE183904	existing_analysis_set_v2	Gastric cancer	82969	29	29	1
+GSE184362	existing_analysis_set_v2	Papillary thyroid carcinoma	102666	17	11	1
+GSE184880	existing_analysis_set_v2	Ovarian cancer	22696	7	7	1
+GSE188711	existing_analysis_set_v2	Colorectal cancer	23019	6	6	1
+GSE189357	existing_analysis_set_v2	NSCLC	84173	9	9	1
+GSE189889	existing_analysis_set_v2	Acral melanoma	26839	9	9	1
+GSE189903	supplement_v1	Hepatocellular carcinoma	43910	16	4	1
+GSE189903	supplement_v1	Intrahepatic cholangiocarcinoma	33468	9	3	1
+GSE191288	supplement_v1	Papillary thyroid carcinoma	25396	6	3	1
+GSE197461	existing_analysis_set_v2	Cervical cancer	27224	8	8	1
+GSE200997	existing_analysis_set_v2	Colorectal cancer	28008	16	16	1
+GSE201347	existing_analysis_set_v2	Gastric cancer	60952	12	12	1
+GSE203067	supplement_v1	Esophageal cancer	51379	7	4	1
+GSE205013	supplement_v1	Pancreatic ductal adenocarcinoma	239194	27	27	1
+GSE215120	supplement_v1	Acral melanoma	57158	7	6	1
+GSE222315	existing_analysis_set_v2	Bladder cancer	69544	9	9	1
+GSE242230	supplement_v1	Pancreatic ductal adenocarcinoma	30628	22	22	1
+GSE253013	existing_analysis_set_v2	NSCLC	18614	11	3	1
+GSE256136	existing_analysis_set_v2	Pancreatic neuroendocrine tumor	83489	17	17	1
+GSE256326	existing_analysis_set_v2	Renal medullary carcinoma	22452	9	9	1
+GSE273127	existing_analysis_set_v2	Esophageal cancer	60922	11	11	1
+GSE274229	existing_analysis_set_v2	Prostate cancer	155418	43	24	1
+GSE274934	existing_analysis_set_v2	NSCLC	87641	9	9	1
+GSE277524	supplement_v1	Bladder cancer	150840	9	5	1
+GSE288479	existing_analysis_set_v2	NSCLC	23040	8	4	1
+GSE294109	existing_analysis_set_v2	Renal cell carcinoma	129662	25	15	1
+GSE297041	existing_analysis_set_v2	Cervical cancer	67723	18	10	1
+GSE299023	supplement_v1	Osteosarcoma	23272	6	6	1
+GSE299340	existing_analysis_set_v2	Hepatocellular carcinoma	29660	5	5	1
+GSE305078	existing_analysis_set_v2	Breast cancer	252739	32	32	1

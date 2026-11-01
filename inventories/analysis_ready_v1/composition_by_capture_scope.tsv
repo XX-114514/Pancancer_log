@@ -1,0 +1,6 @@
+capture_scope	cells	units	patients	sources
+CD45neg_sorted_fraction_recombined	83486	58	58	1
+CD45pos_sorted_fraction_recombined	104912	60	60	1
+source_gate_v7_qualified	2871696	748	611	40
+whole_tissue	734676	148	116	11
+whole_tissue_viable_cell_FACS	23272	6	6	1

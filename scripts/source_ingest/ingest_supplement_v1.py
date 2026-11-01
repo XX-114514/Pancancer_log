@@ -261,7 +261,7 @@ if run('GSE125449'):
     ctype = {s['title']: s['chars']['cancer type'] for s in j}
     tomain = lambda t: 'Hepatocellular carcinoma' if 'Hepato' in t else 'Intrahepatic cholangiocarcinoma'
     parts = nih_liver('GSE125449', ['GSE125449_Set1_', 'GSE125449_Set2_'], 'Sample', 'Cell Barcode',
-                      lambda s: tomain(ctype.get(s, '')), lambda s: s in ctype, lambda s: re.search(r'_(P\d+)_', s).group(1))
+                      lambda s: tomain(ctype.get(s, '')), lambda s: s in ctype, lambda s: s)  # P## repeats across Set1/Set2 with different cancer types: one sample = one patient (paper: 19 patients)
     build('GSE125449', parts, 'Hepatocellular carcinoma', {'evidence': 'GEO samples.txt cell->sample; GSM cancer type; PMID 31588021 fresh',
                                                            'note': 'barcodes are not unique across Set1/Set2; cell_id includes sample'})
 

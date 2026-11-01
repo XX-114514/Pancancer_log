@@ -1,0 +1,15 @@
+{
+ "n_obs": 3818042,
+ "n_var": 94200,
+ "cell_id_unique": true,
+ "X_dtype": "int32",
+ "X_shape": [
+  3818042,
+  94200
+ ],
+ "measured_mask_shape": [
+  94200,
+  53
+ ],
+ "all_ok": true
+}

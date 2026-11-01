@@ -1,0 +1,5 @@
+sampling_site	cells	units	patients	sources
+metastatic_site	351815	73	71	13
+primary_organ_site	3065433	867	670	48
+tumour_thrombus	5746	2	2	1
+unspecified	395048	78	67	5

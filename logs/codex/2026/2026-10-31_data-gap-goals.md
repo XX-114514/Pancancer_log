@@ -102,3 +102,10 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
   - GSE254918：每个癌种只有3名患者，刚好达到下限。
   - GSE160269：CD45+与CD45−两部分需要按患者合并。
 - 癌种覆盖（只算通过的）：PTC 2、骨肉瘤 2、PDAC 2、肝细胞癌 3（GSE149614、GSE125449、GSE189903）、ICC 2（GSE125449、GSE189903中的ICC部分）、膀胱癌 1（GSE277524）、食管癌 2、肢端黑色素瘤 1（GSE215120）。NPC、BCC只有有条件的候选；精原细胞瘤没有可用候选；胶质瘤、PanNET、RMC还没做A级核查（没有A级候选）。
+
+## 2026-11-01 下载、处理并构建分析就绪zarr（用户要求）
+
+- 13个"通过"的补充来源已下载、读取并完成QC，与现有分析集v2合并为`pancancer_analysis_ready_v1.zarr`：3,818,042个细胞、53个来源、1,020个单位、793名患者、22个癌种、12,498个共同基因。逐步记录见[run](../../../runs/20261101_analysis_ready_zarr_v1.md)，数据说明见[docs/ANALYSIS_READY_ZARR_V1.md](../../../docs/ANALYSIS_READY_ZARR_V1.md)。
+- 独立回读验证全部通过；跨来源完整指纹相同的细胞为0。
+- 构建后发现GSE125449的P编号在两个Set之间重复且对应不同癌种，不能作为患者ID，改为按样本计患者（只改obs）。
+- 未完成/限制：现有部分没有扣除环境RNA，补充部分没有估计环境RNA；GSE163203低深度；GSE277524只用QC下限识别细胞；GSE160269为分选后合并；精原细胞瘤没有来源；数据在scratch上，持久空间尚未落实。

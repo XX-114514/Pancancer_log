@@ -1,0 +1,10 @@
+{
+ "cells": 3818042,
+ "genes": 94200,
+ "sources": 53,
+ "units": 1020,
+ "patients": 793,
+ "genes_measured_in_all_sources": 12498,
+ "cancers": 22,
+ "patch": "GSE125449 patient_id = sample (2026-11-01)"
+}

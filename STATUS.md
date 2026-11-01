@@ -1,3 +1,7 @@
+## 2026-11-01 分析就绪数据集v1已构建：3,818,042个细胞 / 53个来源 / 22个癌种
+
+现有分析集v2（40个来源，排除3个来源后，当前TME分析使用的2,871,696个细胞）与13个新GEO来源（946,346个细胞，经QC v1）合并为`pancancer_analysis_ready_v1.zarr`。共1,020个单位、793名患者；X为原始整数计数，附基因×来源测量矩阵，没有标准化或整合。独立回读验证与跨来源查重通过。有≥2个来源的癌种由9个增至16个；胶质瘤、PanNET、鼻咽癌、BCC、卵巢癌、肾髓质癌仍只有1个来源；精原细胞瘤没有来源。见[数据说明](docs/ANALYSIS_READY_ZARR_V1.md)。数据在scratch上，持久空间待申请。
+
 ## 2026-11-01 完整R环境可用；补充来源检索与现有来源复核完成，待用户筛选
 
 完整scrna_r的R环境（`scrna_r_full`）中，Seurat、CellChat、copykat、scATOMIC、infercnv、NMF、SingleR、GSVA都能加载；lme4用1.1-35.5（登记为偏差），monocle3补装中。按冻结的检索规格，为14个单来源癌种在GEO/CELLxGENE检索到969条候选，筛到63条人工预判候选，等用户筛选。现有43个来源按必需字段复核：23个保留、17个待补充表、3个建议排除（GSE163558、CXG SPECTRUM卵巢、GSE228501），排除尚未执行。见[检索规格](methods/tissue-source-search-spec-v1-20261101.md)和[任务日志](logs/codex/2026/2026-10-31_data-gap-goals.md)。

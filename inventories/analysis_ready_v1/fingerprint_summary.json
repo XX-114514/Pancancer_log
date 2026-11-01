@@ -1,0 +1,15 @@
+{
+ "n_cells_fingerprinted": 3818042,
+ "min_total": 500,
+ "min_nnz": 200,
+ "fp_full": {
+  "cells_in_cross_source_groups": 0,
+  "source_pairs": 0,
+  "within_source_duplicate_cells": 0
+ },
+ "fp_top50": {
+  "cells_in_cross_source_groups": 210,
+  "source_pairs": 30,
+  "within_source_duplicate_cells": 130
+ }
+}
