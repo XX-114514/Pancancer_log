@@ -28,7 +28,7 @@ if run('GSE181919'):  # dense UMI table + barcode metadata in the same column or
     parts = [(X[ok], md.index.astype(str).values[ok], genes, common(sample_id=md['sample.id'].astype(str).values[ok], gsm='',
               patient_id='GSE181919:' + md['patient.id'].astype(str).values[ok],
               sampling_site=np.where(t[ok] == 'LN', 'metastatic_site', 'primary_organ_site'),
-              material=np.where(t[ok] == 'LN', 'HNSCC lymph node metastasis', 'HNSCC primary') + ' (' + md['subsite'].astype(str).values[ok] + ', ' + md['hpv'].astype(str).values[ok] + ')',
+              material=(pd.Series(np.where(t[ok] == 'LN', 'HNSCC lymph node metastasis', 'HNSCC primary')) + ' (' + md['subsite'].astype(str).values[ok] + ', ' + md['hpv'].astype(str).values[ok] + ')').values,
               technology='10x', author_cell_type=md['cell.type'].astype(str).values[ok]))]
     B('GSE181919', parts, 'Head and neck squamous cell carcinoma', {'evidence': 'GEO barcode metadata tissue.type; CA and LN kept, NL and LP dropped'})
 
@@ -195,11 +195,15 @@ if run('GSE173682'):
 # ---- Sarcoma, lymphoma, mesothelioma
 if run('GSE212527'):
     info = gsm_info('GSE212527'); t, mem = tar_members(R('GSE212527', 'GSE212527_RAW.tar'))
+    ann = pd.read_csv(R('GSE212527', 'GSE212527_Cell.Annotations.txt.gz'), sep='\t')
     parts = []
     for pre in prefixes(mem):
         g = pre.split('_')[0]; title = info[g]['title']
         X, bc, genes = read_mtx_triplet(lambda f: t.extractfile(mem[f]), pre)
-        parts.append((X, bc, genes, common(sample_id=title, gsm=g, patient_id=f'GSE212527:{title.split("_")[0]}',
+        cells = set(ann.loc[ann['Sample'].astype(str) == title, 'Cell_Barcode'].astype(str))
+        ok = np.isin(bc, list(cells))  # matrices are unfiltered: keep author-annotated cells
+        X, bc = X[ok], bc[ok]
+        parts.append((X, bc, genes, common(sample_id=title, gsm=g, patient_id=f'GSE212527:{title.split("_")[0]}', cell_calling='author_annotation_list',
                      sampling_site='unspecified', material=info[g]['chars']['tissue'], technology='10x')))
     B('GSE212527', parts, 'Soft tissue sarcoma', {'evidence': 'GEO tissue (LMS / UPS)', 'note': 'SRC242 biceps + pectoralis = one patient'})
 
