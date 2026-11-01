@@ -56,7 +56,11 @@ if run('GSE167297'):
 
 if run('GSE173278'):
     md = pd.read_csv(R('GSE173278', 'GSE173278_scRNAseq_all_cells_metadata.csv.gz'))
-    X, bc, genes = read_mtx_triplet(lambda f: open(R('GSE173278', f), 'rb'), 'GSE173278_scRNAseq_all_cells_')
+    P = lambda n: gzip.open(R('GSE173278', f'GSE173278_scRNAseq_all_cells_{n}'))
+    X = read_mm(P('counts_matrix.mtx.gz'))
+    bc = pd.read_csv(P('barcodes.tsv.gz'), header=None)[0].astype(str).values
+    gt = pd.read_csv(P('genes.tsv.gz'), header=None, sep='\t')
+    genes = (gt[1] if gt.shape[1] > 1 else gt[0]).astype(str).values
     assert len(bc) == len(md)
     ok = (md['source'].astype(str) == 'tis').values
     parts = [(X[ok], bc[ok], genes, common(sample_id=md['sample'].astype(str).values[ok], gsm='', patient_id='GSE173278:' + md['patient'].astype(str).values[ok],
