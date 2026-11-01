@@ -22,5 +22,5 @@ tail -n +2 download_manifest.tsv | while IFS=$'\t' read -r src name url bytes; d
   got=$(stat -c %s "$f"); [ "$bytes" = 0 ] || [ "$got" = "$bytes" ] || { echo "SIZE_MISMATCH $f $got $bytes"; exit 1; }
   echo "ok $src $name $got"
 done
-for s in raw/*/; do (cd "$s" && sha256sum * > SHA256SUMS && chmod a-w * ); done
+for s in raw/*/; do [ -e "$s/SHA256SUMS" ] || (cd "$s" && sha256sum * > SHA256SUMS && chmod a-w * ); done
 echo "done $(date -u +%FT%TZ)"
