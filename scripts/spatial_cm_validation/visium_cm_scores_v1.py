@@ -26,8 +26,10 @@ def main():
     out = Path(a.output); out.mkdir(parents=True, exist_ok=True)
     W, members, edges = load_cm(a.fit)
     cat = pd.read_csv(a.ct75, sep='\t'); pool = cat.node.tolist(); strata = cat.set_index('node').parent.to_dict()
-    spots = pd.read_csv(Path(a.c2l) / 'visium_spots_v1.tsv.gz', sep='\t', index_col=0)
-    ab = pd.read_csv(Path(a.c2l) / f'visium_{a.abundance}_abundance_v1.tsv.gz', sep='\t', index_col=0)
+    secs = sorted((Path(a.c2l) / 'sections').glob('GSM*')) or [Path(a.c2l)]
+    spots = pd.concat([pd.read_csv(d / 'visium_spots_v1.tsv.gz', sep='\t', index_col=0) for d in secs])
+    ab = pd.concat([pd.read_csv(d / f'visium_{a.abundance}_abundance_v1.tsv.gz', sep='\t', index_col=0) for d in secs])
+    assert ab.index.equals(spots.index) and ab.notna().all().all()
     names = ab.columns.tolist()
     act = scale_activity(cm_activity(ab, W, members))
     act_all = scale_activity(cm_activity(ab, W, {cm: [n for n in W.index] for cm in W.columns}))

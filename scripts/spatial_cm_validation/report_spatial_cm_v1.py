@@ -127,7 +127,7 @@ def main():
         fig.suptitle('GSE273952 ccRCC Visium, cell2location (CoVarNet method), 19 patients', fontsize=10); fig.tight_layout()
         fig.savefig(F / '02_visium_CM_scores.png', dpi=170); plt.close(fig)
         act = pd.read_csv(R / 'visium_scores/visium_CM_activity_v1.tsv.gz', sep='\t', index_col=0)
-        spots = pd.read_csv(R / 'visium_c2l/visium_spots_v1.tsv.gz', sep='\t', index_col=0)
+        spots = pd.concat([pd.read_csv(d / 'visium_spots_v1.tsv.gz', sep='\t', index_col=0) for d in sorted((R / 'visium_c2l/sections').glob('GSM*'))])
         show = sorted(spots['sample'].unique())[:4]
         fig, axs = plt.subplots(2, len(show), figsize=(3.3 * len(show), 6.4))
         for j, s in enumerate(show):
