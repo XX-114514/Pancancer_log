@@ -33,7 +33,7 @@ files = sorted(glob.glob(f'{sdir}/*.h5ad'))
 sources = [os.path.basename(f)[:-5] for f in files]
 missing = [s for s in sources if not os.path.exists(f'{mdir}/{s}.tsv.gz')]
 assert not missing, f'malignancy output missing for {missing}'
-MCOLS = ['cell_id', 'quick_cluster', 'lineage', 'scATOMIC_pred', 'scATOMIC_tumour', 'cnv_score', 'cnv_call', 'cnv_threshold',
+MCOLS = ['cell_id', 'quick_cluster', 'lineage', 'scATOMIC_pred', 'scATOMIC_tumour', 'cnv_score', 'cnv_corr', 'cnv_call', 'cnv_threshold',
          'malignancy_call', 'malignancy_rule']
 
 
