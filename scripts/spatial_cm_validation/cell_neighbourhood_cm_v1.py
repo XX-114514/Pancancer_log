@@ -12,7 +12,8 @@ pooled as rare_<parent>):
 3. Per-cell neighbourhood CM activity: W-weighted member counts within the radius.
 CM scores use only members the panel measures (held-out F1 >= --min-f1); a CM is
 scored when >= 2 members are measurable and present. Random size-matched member
-sets from measurable CT75 nodes give the null percentile.
+sets from measurable CT75 nodes give the null percentile; a second null keeps the
+members' parent-compartment composition (lineage-matched).
 
 Usage: cell_neighbourhood_cm_v1.py --annotation DIR --fit FIT_RUN --output DIR
 """
@@ -51,10 +52,12 @@ def main():
     ap.add_argument('--min-f1', type=float, default=0.5)
     ap.add_argument('--n-perm', type=int, default=200)
     ap.add_argument('--n-null', type=int, default=1000)
+    ap.add_argument('--ct75-catalogue', required=True, help='CT75 node catalogue (node, parent) for the lineage-matched null')
     a = ap.parse_args()
     out = Path(a.output); out.mkdir(parents=True, exist_ok=True)
     W, members, edges = load_cm(a.fit)
     ct75 = W.index.tolist()
+    strata = pd.read_csv(a.ct75_catalogue, sep='\t').set_index('node').parent.to_dict()
     rows, erows, mrows = [], [], []
     for f in sorted(glob.glob(str(Path(a.annotation) / '*.cells.tsv.gz'))):
         name = Path(f).name.replace('.cells.tsv.gz', '')
@@ -84,10 +87,14 @@ def main():
             pool = [n for n in measurable if n in names]
             for stat, mat in [('neighbourhood_enrichment_z', Z), ('pseudospot_colocalization_Spearman', C), ('pseudospot_aggregation_Moran', M)]:
                 score, r = coloc_score(mat, names, use) if len(use) >= 2 else (np.nan, np.nan)
-                null = random_member_null(mat, names, use, pool, a.n_null, seed=zlib.crc32(f'{name}|{cm}|{stat}'.encode())) if len(use) >= 2 else np.array([])
+                sd = zlib.crc32(f'{name}|{cm}|{stat}'.encode())
+                null = random_member_null(mat, names, use, pool, a.n_null, seed=sd) if len(use) >= 2 else np.array([])
+                lnull = random_member_null(mat, names, use, pool, a.n_null, seed=sd + 1, strata=strata) if len(use) >= 2 else np.array([])
                 rows.append(dict(unit, cm=cm, statistic=stat, members_used=';'.join(use), n_members_used=len(use), score=score,
                                  within_CM_median=r, null_median=float(np.median(null)) if len(null) else np.nan,
-                                 null_percentile=float((null < score).mean()) if len(null) else np.nan))
+                                 null_percentile=float((null < score).mean()) if len(null) else np.nan,
+                                 lineage_null_median=float(np.median(lnull)) if len(lnull) else np.nan,
+                                 lineage_null_percentile=float((lnull < score).mean()) if len(lnull) else np.nan))
             onehot = np.isin(lab_name, use).astype(float) * pd.Series(lab_name).map(W[cm]).fillna(0).to_numpy()
             act = A @ onehot
             mrows.append(dict(unit, cm=cm, n_members_used=len(use), mean_cell_neighbourhood_activity=float(act.mean()),

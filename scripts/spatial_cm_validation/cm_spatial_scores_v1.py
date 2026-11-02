@@ -87,14 +87,25 @@ def coloc_score(C, names, members):
     return float((S <= r).mean()), float(r)
 
 
-def random_member_null(C, names, members, pool, n_draw=1000, seed=0):
-    """Scores for size-matched random member sets drawn from `pool` (excluding real members)."""
+def random_member_null(C, names, members, pool, n_draw=1000, seed=0, strata=None):
+    """Scores for size-matched random member sets drawn from `pool` (excluding real members).
+
+    With `strata` (node -> parent compartment) each draw keeps the members'
+    parent composition, so same-lineage co-occurrence is controlled.
+    """
     rng = np.random.default_rng(seed)
-    k = len([m for m in members if m in names])
+    use = [m for m in members if m in names]
     cand = [p for p in pool if p in names and p not in members]
-    if k < 2 or len(cand) < k:
+    if len(use) < 2 or len(cand) < len(use):
         return np.array([])
-    return np.array([coloc_score(C, names, list(rng.choice(cand, k, replace=False)))[0] for _ in range(n_draw)])
+    if strata is None:
+        return np.array([coloc_score(C, names, list(rng.choice(cand, len(use), replace=False)))[0] for _ in range(n_draw)])
+    need = pd.Series([strata[m] for m in use]).value_counts()
+    by = {k: [c for c in cand if strata.get(c) == k] for k in need.index}
+    if any(len(by[k]) < n for k, n in need.items()):
+        return np.array([])
+    return np.array([coloc_score(C, names, [x for k, n in need.items() for x in rng.choice(by[k], n, replace=False)])[0]
+                     for _ in range(n_draw)])
 
 
 def edge_values(C, names, edges):

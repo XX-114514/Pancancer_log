@@ -24,12 +24,15 @@ def unit_of(section):
 def summarise(scores, unit_col):
     rows = []
     for (cm, stat), g in scores.groupby(['cm', 'statistic']):
-        u = g.groupby(unit_col)[['score', 'null_percentile', 'null_median']].mean().dropna(subset=['score'])
+        u = g.groupby(unit_col)[['score', 'null_percentile', 'null_median', 'lineage_null_percentile', 'lineage_null_median']].mean().dropna(subset=['score'])
         rows.append(dict(cm=cm, statistic=stat, n_units=len(u), median_score=u.score.median(),
                          n_units_score_gt_0_5=int((u.score > .5).sum()), median_null_score=u.null_median.median(),
                          median_null_percentile=u.null_percentile.median(), n_units_null_percentile_gt_0_5=int((u.null_percentile > .5).sum()),
                          wilcoxon_score_vs_0_5_p=wilcoxon(u.score - .5).pvalue if len(u) >= 5 else np.nan,
-                         wilcoxon_null_percentile_vs_0_5_p=wilcoxon(u.null_percentile - .5).pvalue if len(u) >= 5 else np.nan))
+                         wilcoxon_null_percentile_vs_0_5_p=wilcoxon(u.null_percentile - .5).pvalue if len(u) >= 5 else np.nan,
+                         median_lineage_null_score=u.lineage_null_median.median(), median_lineage_null_percentile=u.lineage_null_percentile.median(),
+                         n_units_lineage_null_percentile_gt_0_5=int((u.lineage_null_percentile > .5).sum()),
+                         wilcoxon_lineage_null_percentile_vs_0_5_p=wilcoxon(u.lineage_null_percentile.dropna() - .5).pvalue if u.lineage_null_percentile.notna().sum() >= 5 else np.nan))
     return pd.DataFrame(rows)
 
 
@@ -81,7 +84,7 @@ def main():
             continue
         sc = pd.read_csv(p, sep='\t'); sc['unit'] = [unit_of(s) if not str(pt).startswith('GSE300147') else pt for s, pt in zip(sc.section, sc.patient)]
         sc['source'] = sc.section.str.split('_').str[0]
-        sc.groupby(['source', 'unit', 'cm', 'statistic'])[['n_members_used', 'score', 'null_median', 'null_percentile']].mean().reset_index().to_csv(out / f'xenium_{tag}_unit_scores.tsv', sep='\t', index=False)
+        sc.groupby(['source', 'unit', 'cm', 'statistic'])[['n_members_used', 'score', 'null_median', 'null_percentile', 'lineage_null_median', 'lineage_null_percentile']].mean().reset_index().to_csv(out / f'xenium_{tag}_unit_scores.tsv', sep='\t', index=False)
         sm = summarise(sc, 'unit'); sm.to_csv(out / f'xenium_{tag}_summary.tsv', sep='\t', index=False)
         summary[f'xenium_{tag}'] = sm.to_dict('records')
         ed = pd.read_csv(R / f'neighbourhood_{tag}/neighbourhood_CM_edge_section_values_v1.tsv', sep='\t')

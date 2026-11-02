@@ -1,7 +1,8 @@
 #!/bin/bash -l
 #SBATCH --job-name=cmsp-c2ls
 #SBATCH --partition=gpuq
-#SBATCH --gres=gpu:A30:1
+#SBATCH --gres=gpu:1
+#SBATCH --constraint=A30|A100
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=48G
 #SBATCH --time=12:00:00

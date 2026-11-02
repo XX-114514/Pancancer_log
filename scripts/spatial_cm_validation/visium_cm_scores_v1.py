@@ -25,7 +25,7 @@ def main():
     a = ap.parse_args()
     out = Path(a.output); out.mkdir(parents=True, exist_ok=True)
     W, members, edges = load_cm(a.fit)
-    pool = pd.read_csv(a.ct75, sep='\t').node.tolist()
+    cat = pd.read_csv(a.ct75, sep='\t'); pool = cat.node.tolist(); strata = cat.set_index('node').parent.to_dict()
     spots = pd.read_csv(Path(a.c2l) / 'visium_spots_v1.tsv.gz', sep='\t', index_col=0)
     ab = pd.read_csv(Path(a.c2l) / f'visium_{a.abundance}_abundance_v1.tsv.gz', sep='\t', index_col=0)
     names = ab.columns.tolist()
@@ -39,10 +39,14 @@ def main():
         for cm, mem in members.items():
             for stat, mat in [('colocalization_Spearman', C), ('aggregation_bivariate_Moran', M)]:
                 score, r = coloc_score(mat, names, mem)
-                null = random_member_null(mat, names, mem, pool, a.n_null, seed=zlib.crc32(f"{s}|{cm}|{stat}".encode()))
+                sd = zlib.crc32(f"{s}|{cm}|{stat}".encode())
+                null = random_member_null(mat, names, mem, pool, a.n_null, seed=sd)
+                lnull = random_member_null(mat, names, mem, pool, a.n_null, seed=sd + 1, strata=strata)
                 rows.append(dict(sample=s, n_spots=len(idx), cm=cm, statistic=stat, n_members=len(mem), score=score,
                                  within_CM_median=r, null_median=float(np.median(null)) if len(null) else np.nan,
                                  null_percentile=float((null < score).mean()) if len(null) else np.nan,
+                                 lineage_null_median=float(np.median(lnull)) if len(lnull) else np.nan,
+                                 lineage_null_percentile=float((lnull < score).mean()) if len(lnull) else np.nan,
                                  mean_activity=float(act.loc[idx, cm].mean())))
             for e, v in edge_values(C, names, edges[cm]).items():
                 erows.append(dict(sample=s, cm=cm, edge=e, spearman=v, moran=edge_values(M, names, [tuple(e.split('~'))])[e]))
@@ -50,12 +54,14 @@ def main():
     er = pd.DataFrame(erows); er.to_csv(out / 'visium_CM_edge_section_values_v1.tsv', sep='\t', index=False)
     summ = []
     for (cm, stat), g in res.groupby(['cm', 'statistic']):
-        sc_ = g.score.dropna(); pc = g.null_percentile.dropna()
+        sc_ = g.score.dropna(); pc = g.null_percentile.dropna(); lp = g.lineage_null_percentile.dropna()
         summ.append(dict(cm=cm, statistic=stat, n_sections=len(sc_), median_score=float(sc_.median()),
                          n_sections_score_gt_0_5=int((sc_ > .5).sum()),
                          wilcoxon_vs_0_5_p=float(wilcoxon(sc_ - .5).pvalue) if len(sc_) >= 5 else np.nan,
                          median_null_percentile=float(pc.median()),
-                         wilcoxon_null_percentile_vs_0_5_p=float(wilcoxon(pc - .5).pvalue) if len(pc) >= 5 else np.nan))
+                         wilcoxon_null_percentile_vs_0_5_p=float(wilcoxon(pc - .5).pvalue) if len(pc) >= 5 else np.nan,
+                         median_lineage_null_percentile=float(lp.median()),
+                         wilcoxon_lineage_null_percentile_vs_0_5_p=float(wilcoxon(lp - .5).pvalue) if len(lp) >= 5 else np.nan))
     esum = []
     for (cm, e), g in er.groupby(['cm', 'edge']):
         v = g.spearman.dropna()
