@@ -4,8 +4,9 @@
 #    cluster lineage by marker means: immune (PTPRC), stromal = max of fibroblast (COL1A1/COL1A2/DCN),
 #    endothelial (PECAM1/VWF) and pericyte (RGS5) scores,
 #    else candidate. For DLBCL sources, B-cell clusters (MS4A1/CD79A/CD19) are candidates, not reference.
-#  2 R worker: scATOMIC on all cells; inferCNV with reference = up to 1500 immune/stromal cells, a
-#    held-out up to 500 of them scored as "control", observations = candidate cells.
+#  2 R worker: scATOMIC on all cells first; immune/stromal clusters that scATOMIC calls >=50% tumour
+#    are moved to candidates; then inferCNV with reference = up to 1500 remaining immune/stromal cells,
+#    a held-out up to 500 of them scored as "control", observations = candidate cells.
 #  3 CNV call: positive if a cell's score > 99th percentile of the control scores; candidate clusters
 #    are positive when their median score exceeds that threshold (cluster-level call used).
 #  4 consensus: immune/stromal lineage -> non_malignant; candidate with scATOMIC tumour and CNV
@@ -53,29 +54,39 @@ for u, idx in a.obs.groupby('unit_id', observed=True).indices.items():
         else:
             lin_cl[c] = 'candidate'
     lin = np.array([lin_cl[c] for c in cl])
+    d = os.path.join(work, f'u{len(units):04d}'); os.makedirs(d, exist_ok=True)
+    scipy.io.mmwrite(os.path.join(d, 'counts.mtx'), sub.T.tocoo())
+    open(os.path.join(d, 'genes.txt'), 'w').write('\n'.join(genes) + '\n')
+    cid = a.obs_names[idx].astype(str)
+    run_r = lambda mode: subprocess.run([rscript, worker, d, gene_pos, str(ncores), str(seed), mode], capture_output=True, text=True)
+    pd.DataFrame({'cell': cid, 'lineage': lin, 'infercnv_group': 'none'}).to_csv(os.path.join(d, 'cells.tsv'), sep='\t', index=False)
+    r1 = run_r('scatomic')
+    tumour = np.zeros(len(idx), bool); scat = None
+    if os.path.exists(os.path.join(d, 'scatomic.tsv')):
+        scat = pd.read_csv(os.path.join(d, 'scatomic.tsv'), sep='\t').set_index('cell').reindex(cid)
+        p_ = scat['scATOMIC_pred'].astype(str)
+        pc_ = scat['pan_cancer_cluster'].astype(str) if 'pan_cancer_cluster' in scat else pd.Series('', index=scat.index)
+        tumour = (pc_.eq('Cancer') | p_.str.contains('Cancer Cell|Tumor|Tumour|Neoplastic', case=False)).values
+    # immune/stromal clusters that scATOMIC calls mostly tumour are not trusted as CNV reference: they
+    # become candidates (observations) so their CNV is scored rather than used as baseline
+    tum_frac = pd.Series(tumour).groupby(cl).mean()
+    lin = np.array([('candidate_from_' + l) if (l in ('immune', 'stromal') and tum_frac[c] >= 0.5) else l for l, c in zip(lin, cl)])
     refpool = np.flatnonzero(np.isin(lin, ['immune', 'stromal']))
     rng.shuffle(refpool)
     ctrl, ref = refpool[:min(500, len(refpool) // 4)], refpool[min(500, len(refpool) // 4):][:1500]
     grp = np.array(['none'] * len(idx), dtype=object)
     grp[np.char.startswith(lin.astype(str), 'candidate')] = 'observation'
     grp[ref] = 'reference'; grp[ctrl] = 'control'
-    d = os.path.join(work, f'u{len(units):04d}'); os.makedirs(d, exist_ok=True)
-    scipy.io.mmwrite(os.path.join(d, 'counts.mtx'), sub.T.tocoo())
-    open(os.path.join(d, 'genes.txt'), 'w').write('\n'.join(genes) + '\n')
-    cid = a.obs_names[idx].astype(str)
     pd.DataFrame({'cell': cid, 'lineage': lin, 'infercnv_group': grp}).to_csv(os.path.join(d, 'cells.tsv'), sep='\t', index=False)
-    r = subprocess.run([rscript, worker, d, gene_pos, str(ncores), str(seed)], capture_output=True, text=True)
-    st = json.load(open(os.path.join(d, 'status.json'))) if os.path.exists(os.path.join(d, 'status.json')) else {'worker_error': r.stderr[-300:]}
+    r2 = run_r('infercnv')
+    st = json.load(open(os.path.join(d, 'status.json'))) if os.path.exists(os.path.join(d, 'status.json')) else {'worker_error': (r1.stderr + r2.stderr)[-300:]}
     df = pd.DataFrame({'cell_id': cid, 'unit_id': u, 'quick_cluster': cl, 'lineage': lin, 'infercnv_group': grp})
     # scATOMIC
-    if os.path.exists(os.path.join(d, 'scatomic.tsv')):
-        s = pd.read_csv(os.path.join(d, 'scatomic.tsv'), sep='\t').set_index('cell')
-        pred = s.reindex(cid)['scATOMIC_pred'].astype(str).values
+    if scat is not None:
+        pred = scat['scATOMIC_pred'].astype(str).values
         df['scATOMIC_pred'] = pred
-        pc = s.reindex(cid)['pan_cancer_cluster'].astype(str).values if 'pan_cancer_cluster' in s else np.array([''] * len(cid))
-        df['scATOMIC_pan_cancer_cluster'] = pc
-        df['scATOMIC_tumour'] = np.where(pd.Series(pc).eq('Cancer') | pd.Series(pred).str.contains('Cancer Cell|Tumor|Tumour|Neoplastic', case=False), 'tumour',
-                                         np.where(pd.Series(pred).isin(['nan', '', 'unclassified_any_cell', 'unclassified']), 'unclassified', 'normal'))
+        df['scATOMIC_pan_cancer_cluster'] = scat['pan_cancer_cluster'].astype(str).values if 'pan_cancer_cluster' in scat else ''
+        df['scATOMIC_tumour'] = np.where(tumour, 'tumour', np.where(pd.Series(pred).isin(['nan', '', 'unclassified_any_cell', 'unclassified']), 'unclassified', 'normal'))
     else:
         df['scATOMIC_pred'] = ''; df['scATOMIC_pan_cancer_cluster'] = ''; df['scATOMIC_tumour'] = 'not_run'
     # inferCNV

@@ -1,18 +1,21 @@
 #!/usr/bin/env Rscript
-# Per-unit malignancy evidence: scATOMIC (pan-cancer classifier, no CNV option) and inferCNV
+# Per-unit malignancy evidence, two modes called in turn by malignancy_source_v1.py: "scatomic"
+# (pan-cancer classifier, no CNV option) and then "infercnv"
 # (reference = immune/stromal cells of the same unit; a held-out part of the reference is scored as
 # "control" observations to calibrate the CNV threshold). Inputs written by malignancy_source_v1.py:
 #   counts.mtx (genes x cells, raw), genes.txt, cells.tsv (cell, lineage, infercnv_group)
 # infercnv_group: reference / control / observation / none. Outputs: scatomic.tsv, cnv_scores.tsv, status.json
 args <- commandArgs(trailingOnly = TRUE)
-d <- args[[1]]; gene_pos <- args[[2]]; ncores <- as.integer(args[[3]]); seed <- as.integer(args[[4]])
+d <- args[[1]]; gene_pos <- args[[2]]; ncores <- as.integer(args[[3]]); seed <- as.integer(args[[4]]); mode <- args[[5]]  # scatomic | infercnv
 suppressPackageStartupMessages({library(Matrix); library(jsonlite)})
 m <- as(readMM(file.path(d, "counts.mtx")), "CsparseMatrix")
 rownames(m) <- readLines(file.path(d, "genes.txt"))
 cells <- read.delim(file.path(d, "cells.tsv"), stringsAsFactors = FALSE)
 colnames(m) <- cells$cell
-st <- list()
+stf <- file.path(d, "status.json")
+st <- if (file.exists(stf)) fromJSON(stf) else list()
 
+if (mode == "scatomic") {
 # scATOMIC
 t0 <- Sys.time()
 r <- try({
@@ -26,7 +29,9 @@ r <- try({
 }, silent = TRUE)
 st$scatomic <- if (isTRUE(r)) "done" else paste("failed:", substr(as.character(r), 1, 300))
 st$scatomic_seconds <- as.numeric(difftime(Sys.time(), t0, units = "secs"))
+}
 
+if (mode == "infercnv") {
 # inferCNV
 t0 <- Sys.time()
 use <- cells$infercnv_group %in% c("reference", "control", "observation")
@@ -50,7 +55,8 @@ if (sum(cells$infercnv_group == "reference") < 50 || sum(cells$infercnv_group ==
   st$infercnv <- if (isTRUE(r)) "done" else paste("failed:", substr(as.character(r), 1, 300))
 }
 st$infercnv_seconds <- as.numeric(difftime(Sys.time(), t0, units = "secs"))
+unlink(file.path(d, "infercnv"), recursive = TRUE)
+}
 st$scATOMIC_version <- tryCatch(as.character(packageVersion("scATOMIC")), error = function(e) NA)
 st$infercnv_version <- tryCatch(as.character(packageVersion("infercnv")), error = function(e) NA)
-write_json(st, file.path(d, "status.json"), auto_unbox = TRUE, pretty = TRUE)
-unlink(file.path(d, "infercnv"), recursive = TRUE)
+write_json(st, stf, auto_unbox = TRUE, pretty = TRUE)
