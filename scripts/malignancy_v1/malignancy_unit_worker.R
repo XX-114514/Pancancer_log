@@ -17,7 +17,7 @@ st <- list()
 t0 <- Sys.time()
 r <- try({
   suppressPackageStartupMessages(library(scATOMIC))
-  pred <- run_scATOMIC(rna_counts = m, mc.cores = ncores, fixed_cores = ncores)
+  pred <- run_scATOMIC(rna_counts = m, mc.cores = ncores)
   res <- create_summary_matrix(prediction_list = pred, use_CNVs = FALSE, modify_results = TRUE,
                                mc.cores = ncores, raw_counts = m, min_prop = 0.5)
   res$cell <- rownames(res)
