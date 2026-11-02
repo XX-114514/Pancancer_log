@@ -1,0 +1,28 @@
+cancer_group	n_samples	n_cells	n_gse	median_cells_per_sample
+Seminoma	4	12551	1	3478.5
+Intrahepatic cholangiocarcinoma	8	27714	1	2831.5
+Acute myeloid leukemia	35	30623	1	739.0
+Pituitary neuroendocrine tumor	10	32587	1	3450.0
+Head and neck squamous cell carcinoma	14	33529	1	2386.0
+Ovarian cancer	12	42816	1	3405.0
+Basal cell carcinoma	6	55522	1	9426.0
+Esophageal cancer	11	61022	1	4454.0
+Pleural mesothelioma	13	79234	1	5872.0
+Nasopharyngeal carcinoma	10	82609	1	7953.5
+Pancreatic ductal adenocarcinoma	40	83709	1	1951.0
+Pancreatic neuroendocrine tumor	20	90979	1	3007.5
+Bladder cancer	13	92673	1	6695.0
+Endometrial carcinosarcoma	8	94028	1	11582.0
+Cervical cancer	26	95390	2	3212.5
+Osteosarcoma	11	101886	1	8856.0
+Renal cancer	46	123739	3	2076.0
+Papillary thyroid carcinoma	23	143204	1	6339.0
+Melanoma	62	158318	6	637.0
+Prostate cancer	80	179200	2	989.0
+Hepatocellular carcinoma	22	180189	2	6732.5
+Glioblastoma	44	233651	1	5507.0
+Lung adenocarcinoma	89	252414	1	2373.0
+Breast cancer	90	402371	2	3750.0
+Colorectal cancer	258	481530	7	1120.5
+Lung cancer	218	697210	8	2687.5
+Gastric cancer	149	808089	4	5293.0

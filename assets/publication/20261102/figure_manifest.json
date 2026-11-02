@@ -1,0 +1,70 @@
+{
+  "generated_by": "scripts/render_homepage_v2_figures.py",
+  "figures": [
+    {
+      "file": "fig1_concept_workflow.png",
+      "sha256": "36ea27c2e34db5207e9eaa149d0047b2dccf6043e94f4dad46390603fe154ef1",
+      "bytes": 342654
+    },
+    {
+      "file": "fig2_data_composition.png",
+      "sha256": "07c8b4f033cb70b6055f0b285085e1f728a1e3c6178c4c76c1cecfb19e593b93",
+      "bytes": 308578
+    },
+    {
+      "file": "fig3_atlas_umap_annotation.png",
+      "sha256": "d598ec37522d5dd218839eaa9f1cc1b1e1d8c132e8a97f473688da269aedfd35",
+      "bytes": 811594
+    },
+    {
+      "file": "fig4_cm_landscape.png",
+      "sha256": "48f4fdadd9aa991cd70034dbc8cb3294f928d56929c7ed082c87a4c65a9596ea",
+      "bytes": 436822
+    },
+    {
+      "file": "fig5_communication_axes.png",
+      "sha256": "a93fddba121c6693930471215f68d33af3ddeb968fa89c47a00436250452fb67",
+      "bytes": 564075
+    },
+    {
+      "file": "fig6_spatial_readouts.png",
+      "sha256": "bac9c5a7fbf1bf4d805b1ac9209aaa23cb0527a90189f774db5fa9b0ad01c68f",
+      "bytes": 325022
+    },
+    {
+      "file": "fig7_bulk_ici_readouts.png",
+      "sha256": "6a82f6b9260bff51ecdf74f0bda083d0e5c262ccdcfb980c7887a2ad2ec8b2a0",
+      "bytes": 384349
+    },
+    {
+      "file": "figS1_dataset_generations.png",
+      "sha256": "4feedd3eec53be602a9d80493d993d3134a25a4fa8f9641eb100c9301562766e",
+      "bytes": 261422
+    },
+    {
+      "file": "figS2_liana_cm.png",
+      "sha256": "6cb0154bded36d94b5883a1ae31b2b53ac7832273a82d43076a86972c8e9cc94",
+      "bytes": 312104
+    },
+    {
+      "file": "figS3_annotation_layers.png",
+      "sha256": "d0107a643ec609814d5968cc4d335b113e9bd852ca2b950dab5dcf87db3bba76",
+      "bytes": 230647
+    },
+    {
+      "file": "figS4_nsnmf_limits.png",
+      "sha256": "3ae4092aa718b43959b8652c69a37259bc7caf7180f55f14c9e41ba8ebd9816c",
+      "bytes": 189231
+    },
+    {
+      "file": "figS5_spatial_first_design.png",
+      "sha256": "f3090663f08e0cd74d2001ab4dc607dd66eb1c438f8b279de2e0c96a32ebec30",
+      "bytes": 145787
+    },
+    {
+      "file": "figS6_cm_improvement.png",
+      "sha256": "10980d02e7d590d29dcff51f94b883e2a072e6bc4a395f65c5074ffe9299ecea",
+      "bytes": 180737
+    }
+  ]
+}
