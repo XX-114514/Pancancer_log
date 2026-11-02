@@ -7,6 +7,7 @@ N_cells_per_location=5, detection_alpha=20, otherwise cell2location defaults
 (reference regression 250 epochs; spatial model 30,000 epochs, full batch).
 Reference subsets are all nodes of the CT_identity_cluster scheme with >=30
 cells in the CT75 work units, batch = atlas source; Visium batch = section.
+With --section-index each section gets its own full-batch spatial model.
 
 Usage: visium_cell2location_v1.py --reference REF.h5ad --visium-root RAW_DIR --output DIR [--stage ref|spatial|all]
 """
@@ -18,9 +19,11 @@ import scanpy as sc
 import anndata as ad
 
 
-def read_visium(root):
+def read_visium(root, only=None):
     parts = []
     for gsm in sorted(Path(root).glob('GSM*')):
+        if only is not None and gsm.name != only:
+            continue
         h5 = glob.glob(str(gsm / '*_filtered_feature_bc_matrix.h5'))[0]
         sample = Path(h5).name.split('_filtered')[0]
         a = sc.read_10x_h5(h5); a.var_names_make_unique()
@@ -47,6 +50,9 @@ def main():
     ap.add_argument('--output', required=True)
     ap.add_argument('--stage', default='all', choices=['ref', 'spatial', 'all'])
     ap.add_argument('--seed', type=int, default=20261102)
+    ap.add_argument('--section-index', type=int, default=None,
+                    help='fit one section (0-based, sorted GSM order) with its own full-batch model; '
+                         'used because all 19 sections in one full batch exceed a 40 GB GPU')
     a = ap.parse_args()
     import cell2location, scvi, torch
     from cell2location.models import RegressionModel
@@ -73,13 +79,17 @@ def main():
         print('reference done', inf.shape, flush=True)
     if a.stage in ('spatial', 'all'):
         inf = pd.read_csv(inf_path, sep='\t', index_col=0)
-        vis = read_visium(a.visium_root)
+        only = None
+        if a.section_index is not None:
+            only = sorted(p.name for p in Path(a.visium_root).glob('GSM*'))[a.section_index]
+            out = out / 'sections' / only; out.mkdir(parents=True, exist_ok=True)
+        vis = read_visium(a.visium_root, only)
         vis.var['MT'] = vis.var_names.str.startswith('MT-')
         vis = vis[:, ~vis.var.MT.to_numpy()].copy()
         shared = np.intersect1d(vis.var_names, inf.index)
         vis = vis[:, shared].copy(); inf = inf.loc[shared]
         vis.X = vis.X.astype(np.float32)
-        cell2location.models.Cell2location.setup_anndata(vis, batch_key='sample')
+        cell2location.models.Cell2location.setup_anndata(vis, batch_key='sample' if only is None else None)
         mod = cell2location.models.Cell2location(vis, cell_state_df=inf, N_cells_per_location=5, detection_alpha=20)
         mod.train(max_epochs=30000, batch_size=None, train_size=1, accelerator=acc)
         vis = mod.export_posterior(vis, sample_kwargs={'num_samples': 1000, 'batch_size': mod.adata.n_obs})
