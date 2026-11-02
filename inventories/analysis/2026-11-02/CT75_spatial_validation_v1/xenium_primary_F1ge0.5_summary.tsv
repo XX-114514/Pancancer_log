@@ -1,0 +1,7 @@
+cm	statistic	n_units	median_score	n_units_score_gt_0_5	median_null_score	median_null_percentile	n_units_null_percentile_gt_0_5	wilcoxon_score_vs_0_5_p	wilcoxon_null_percentile_vs_0_5_p	median_lineage_null_score	median_lineage_null_percentile	n_units_lineage_null_percentile_gt_0_5	wilcoxon_lineage_null_percentile_vs_0_5_p
+CM01	neighbourhood_enrichment_z	0		0			0					0	
+CM01	pseudospot_aggregation_Moran	0		0			0					0	
+CM01	pseudospot_colocalization_Spearman	0		0			0					0	
+CM02	neighbourhood_enrichment_z	0		0			0					0	
+CM02	pseudospot_aggregation_Moran	0		0			0					0	
+CM02	pseudospot_colocalization_Spearman	0		0			0					0	

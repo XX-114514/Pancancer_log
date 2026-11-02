@@ -1,0 +1,3 @@
+cm	n_sections	median_score	n_sections_score_gt_0_5	median_null_percentile	wilcoxon_null_p	median_lineage_null_percentile	wilcoxon_lineage_null_p
+CM01	19	0.388283378746594	0	0.255	5.340576171875e-05	0.258	0.0005378171261827
+CM02	19	0.4819672131147541	5	0.38	0.1133766174316406	0.453	0.4180412292480469

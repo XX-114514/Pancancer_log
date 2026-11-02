@@ -94,7 +94,7 @@ def main():
                                           n_units_z_gt_0=('nhood_z', lambda v: int((v > 0).sum())), median_pseudospot_spearman=('pseudospot_spearman', 'median')).reset_index()
         es.to_csv(out / f'xenium_{tag}_edge_summary.tsv', sep='\t', index=False)
         if tag.startswith('exploratory'):
-            u = sc.groupby(['source', 'unit', 'cm', 'statistic'])[['score', 'null_median']].mean().reset_index()
+            u = sc.groupby(['source', 'unit', 'cm', 'statistic'])[['score', 'null_median', 'lineage_null_median']].mean().reset_index()
             stats = sorted(u.statistic.unique()); fig, axs = plt.subplots(1, len(stats), figsize=(4.2 * len(stats), 3.8), sharey=True)
             for ax, st in zip(np.atleast_1d(axs), stats):
                 g = u[u.statistic == st]
@@ -102,9 +102,10 @@ def main():
                     h = g[g.cm == cm]; x = k + np.random.default_rng(k).uniform(-.12, .12, len(h))
                     for src, col in zip(sorted(u.source.unique()), plt.cm.tab10.colors):
                         m = h.source.to_numpy() == src; ax.scatter(x[m], h.score[m], s=22, color=col, label=src if k == 0 else None)
-                    ax.scatter([k + .3] * len(h), h.null_median, s=10, marker='_', color='grey')
+                    ax.scatter([k + .25] * len(h), h.null_median, s=14, marker='_', color='#BBBBBB')
+                    ax.scatter([k + .35] * len(h), h.lineage_null_median, s=14, marker='_', color='black')
                 ax.axhline(.5, ls='--', c='k', lw=.7); ax.set_xticks([0, 1], ['CM01', 'CM02']); ax.set_title(st.replace('_', ' '), fontsize=9)
-            np.atleast_1d(axs)[0].set_ylabel('CoVarNet-style score (grey: random-member null median)'); np.atleast_1d(axs)[-1].legend(fontsize=7, frameon=False)
+            np.atleast_1d(axs)[0].set_ylabel('Score per unit\n(dashes: light = random, black = lineage-matched null median)', fontsize=8); np.atleast_1d(axs)[-1].legend(fontsize=7, frameon=False)
             fig.suptitle('Xenium cellular neighbourhoods - EXPLORATORY (all members, regardless of annotation F1)', fontsize=10); fig.tight_layout()
             fig.savefig(F / '03_xenium_exploratory_neighbourhood_scores.png', dpi=170); plt.close(fig)
 
@@ -121,9 +122,10 @@ def main():
             g = sc[sc.statistic == st]
             for k, cm in enumerate(['CM01', 'CM02']):
                 h = g[g.cm == cm]; x = k + np.random.default_rng(k).uniform(-.12, .12, len(h))
-                ax.scatter(x, h.score, s=20, color='#3979B5'); ax.scatter([k + .3] * len(h), h.null_median, s=10, marker='_', color='grey')
+                ax.scatter(x, h.score, s=20, color='#3979B5'); ax.scatter([k + .25] * len(h), h.null_median, s=14, marker='_', color='#BBBBBB')
+                ax.scatter([k + .35] * len(h), h.lineage_null_median, s=14, marker='_', color='black')
             ax.axhline(.5, ls='--', c='k', lw=.7); ax.set_xticks([0, 1], ['CM01', 'CM02']); ax.set_title(st.replace('_', ' '), fontsize=9)
-        np.atleast_1d(axs)[0].set_ylabel('Score per patient section (grey: null median)')
+        np.atleast_1d(axs)[0].set_ylabel('Score per patient section\n(dashes: light = random, black = lineage-matched null median)', fontsize=8)
         fig.suptitle('GSE273952 ccRCC Visium, cell2location (CoVarNet method), 19 patients', fontsize=10); fig.tight_layout()
         fig.savefig(F / '02_visium_CM_scores.png', dpi=170); plt.close(fig)
         act = pd.read_csv(R / 'visium_scores/visium_CM_activity_v1.tsv.gz', sep='\t', index_col=0)
@@ -137,6 +139,20 @@ def main():
                 ax.set_aspect('equal'); ax.axis('off'); ax.set_title(f'{s.split("_", 1)[1]} {cm}', fontsize=8)
         fig.suptitle('CM activity (W-weighted member abundance; 99th percentile = 1)', fontsize=10); fig.tight_layout()
         fig.savefig(F / '04_visium_CM_activity_maps.png', dpi=150); plt.close(fig)
+        sc_dir = R / 'visium_signature_control'
+        if sc_dir.exists():
+            ss = pd.read_csv(sc_dir / 'visium_signature_adjusted_summary_v1.tsv', sep='\t'); ss.to_csv(out / 'visium_signature_adjusted_summary.tsv', sep='\t', index=False)
+            se = pd.read_csv(sc_dir / 'visium_signature_adjusted_edge_summary_v1.tsv', sep='\t'); se.to_csv(out / 'visium_signature_adjusted_edge_summary.tsv', sep='\t', index=False)
+            summary['visium_signature_adjusted'] = ss.to_dict('records'); summary['visium_signature_adjusted_edges'] = se.to_dict('records')
+            ev = pd.read_csv(sc_dir / 'visium_signature_adjusted_edge_values_v1.tsv', sep='\t')
+            fig, ax = plt.subplots(figsize=(7.5, 3.8)); es = sorted(ev.edge.unique())
+            for k, e in enumerate(es):
+                g = ev[ev.edge == e]; x = k + np.random.default_rng(k).uniform(-.15, .15, len(g))
+                ax.scatter(x, g.residual, s=16, color='#B43E3E' if g.residual.median() > 0 else '#3979B5')
+            ax.axhline(0, c='k', lw=.7); ax.set_xticks(range(len(es)), [lab(a) + '\n~ ' + lab(b) for a, b in (e.split('~') for e in es)], rotation=60, ha='right', fontsize=7)
+            ax.set_ylabel('Spot Spearman minus median of\nsignature-matched pairs (per patient)', fontsize=8)
+            ax.set_title('Visium CM edges after controlling reference-signature similarity (post hoc)', fontsize=9); fig.tight_layout()
+            fig.savefig(F / '05_visium_signature_adjusted_edges.png', dpi=170); plt.close(fig)
         sig = R / 'visium_c2l/reference_signatures_v1.tsv'
         if sig.exists():
             S = pd.read_csv(sig, sep='\t', index_col=0)[mem]; L = np.log1p(S / S.sum() * 1e4)
