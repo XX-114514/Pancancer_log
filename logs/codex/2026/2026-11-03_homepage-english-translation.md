@@ -36,7 +36,7 @@ Used read-only GitHub fetches, `git clone --depth 1`, `git status --short`, `git
 
 This is a translation and documentation-navigation change. Scientific analyses, source-paper claims, external websites, and downstream clinical results were not recomputed or independently revalidated. No patient records, expression matrices, or new scientific data were added. Historical methods and reports linked as supporting references are outside the seven-page translation scope.
 
-Next: commit only these documentation changes and verify ordinary publication against the remote branch. The unrelated baseline broken link remains open. Suggested commit message: `docs: translate current homepage and six companion pages into English`.
+Published the documentation as commit `78b2711b45b61660c7a1782f7e072dfeaf5a7237` by ordinary fast-forward push to `origin/main`. An independent `git ls-remote origin refs/heads/main` returned that exact SHA, and the GitHub connector independently read back the new English homepage title and navigation. The unrelated baseline broken link remains open. This publication receipt is a subsequent documentation-only commit.
 
 ## Time record
 
