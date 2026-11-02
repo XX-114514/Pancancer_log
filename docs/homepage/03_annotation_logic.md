@@ -1,6 +1,6 @@
 # 分页3｜0906的注释逻辑与后续调整
 
-[← 返回首页](../../README.md#4-整合处理与0906注释) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · **3 注释** · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md)
+[← 返回首页](../../README.md#4-整合处理与0906注释) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · **3 注释** · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md) · [English](03_annotation_logic.en.md)
 
 CM的节点就是注释得到的细胞亚群，因此注释决定了模块里“有什么”。本页依次说明0906版本使用的注释（V5身份与V7参考）、其后V8/V9的尝试，以及10月改用的cluster优先与分层策略。
 

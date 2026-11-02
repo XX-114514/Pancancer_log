@@ -1,6 +1,6 @@
 # 分页1｜数据集的选取和处理
 
-[← 返回首页](../../README.md#3-数据的组织) · 分页：**1 数据** · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md)
+[← 返回首页](../../README.md#3-数据的组织) · 分页：**1 数据** · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md) · [English](01_datasets.en.md)
 
 本页说明项目在不同时间段组织了哪些数据、每批数据用于回答什么问题，以及从“尽量多的细胞”转向“按材料和患者合格的数据”的过程。
 

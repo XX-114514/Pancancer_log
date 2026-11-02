@@ -1,6 +1,6 @@
 # 分页4｜CoVarNet所用nsNMF的局限与改进方向
 
-[← 返回首页](../../README.md#5-k9细胞模块图谱) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · **4 nsNMF** · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md)
+[← 返回首页](../../README.md#5-k9细胞模块图谱) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · **4 nsNMF** · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md) · [English](04_covarnet_nsnmf_limits.en.md)
 
 CoVarNet把“哪些细胞群一起增减”写成一个非负矩阵分解问题。这个设定简洁、可解释，但输入构造和求解细节会显著影响得到的模块。本页结合一个可复现的模拟和项目内真实拟合的诊断说明这些影响。
 

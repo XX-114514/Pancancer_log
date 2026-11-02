@@ -1,6 +1,6 @@
 # 分页6｜CM模块发掘的改进
 
-[← 返回首页](../../README.md#9-开放问题与六个延伸分页) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · **6 CM改进**
+[← 返回首页](../../README.md#9-开放问题与六个延伸分页) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · **6 CM改进** · [English](06_cm_discovery_improvements.en.md)
 
 0906的K=9把所有谱系（包括恶性上皮分层节点和未定节点）放进同一个频率矩阵。本页讨论两类改进：调整“哪些细胞进入模块发现”（移除或加入肿瘤/上皮），以及在免疫数据集中加入细胞状态层。部分设计已在10月的新数据范围上执行，相应结果在此一并展示。
 

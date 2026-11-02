@@ -1,6 +1,6 @@
 # 分页5｜模块识别之后直接在空间数据上验证并发掘通讯
 
-[← 返回首页](../../README.md#7-空间数据中的读出) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · **5 空间优先** · [6 CM改进](06_cm_discovery_improvements.md)
+[← 返回首页](../../README.md#7-空间数据中的读出) · 分页：[1 数据](01_datasets.md) · [2 LIANA与CM](02_liana_cm_communication.md) · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · **5 空间优先** · [6 CM改进](06_cm_discovery_improvements.md) · [English](05_spatial_first_validation.en.md)
 
 0906版本按“单细胞CM → 单细胞LIANA → 挑选轴 → 空间读出 → bulk代理”的顺序推进。空间数据出现在链条后段，只用来检验已经挑好的轴。本页讨论把空间验证提前：模块一旦识别，就先在空间数据中检验其成员是否真的在组织里相遇，再只在相遇的细胞对上发掘通讯。
 

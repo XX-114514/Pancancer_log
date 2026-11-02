@@ -1,6 +1,6 @@
 # 分页2｜LIANA通讯与CM模块的联系及潜藏的问题
 
-[← 返回首页](../../README.md#6-cm01cm07cm08的细胞通讯轴) · 分页：[1 数据](01_datasets.md) · **2 LIANA与CM** · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md)
+[← 返回首页](../../README.md#6-cm01cm07cm08的细胞通讯轴) · 分页：[1 数据](01_datasets.md) · **2 LIANA与CM** · [3 注释](03_annotation_logic.md) · [4 nsNMF](04_covarnet_nsnmf_limits.md) · [5 空间优先](05_spatial_first_validation.md) · [6 CM改进](06_cm_discovery_improvements.md) · [English](02_liana_cm_communication.en.md)
 
 0906版本中，通讯分析是连接“组成模块”和“机制解释”的桥。本页说明这座桥如何搭建，以及它在哪些地方承重不足。
 
