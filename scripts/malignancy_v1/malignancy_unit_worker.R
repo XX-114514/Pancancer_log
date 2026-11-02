@@ -48,7 +48,14 @@ if (sum(cells$infercnv_group == "reference") < 50 || sum(cells$infercnv_group ==
                          num_threads = ncores, write_expr_matrix = FALSE, save_rds = FALSE, save_final_rds = FALSE)
     x <- obj@expr.data
     score <- colMeans((x - 1)^2)
-    write.table(data.frame(cell = names(score), cnv_score = score), file.path(d, "cnv_scores.tsv"),
+    # CNV correlation (Tirosh 2016 / Neftel 2019): Pearson correlation of each cell's CNV profile with the
+    # mean profile of the top 5% scoring observation cells of the unit (clonal signal, sensitive where few
+    # large events give a modest mean-squared score)
+    obs_cells <- intersect(colnames(x), cells$cell[cells$infercnv_group == "observation"])
+    top <- obs_cells[score[obs_cells] >= quantile(score[obs_cells], 0.95)]
+    prof <- rowMeans(x[, top, drop = FALSE] - 1)
+    corr <- as.numeric(cor(x - 1, prof))
+    write.table(data.frame(cell = names(score), cnv_score = score, cnv_corr = corr), file.path(d, "cnv_scores.tsv"),
                 sep = "\t", quote = FALSE, row.names = FALSE)
     TRUE
   }, silent = TRUE)

@@ -12,8 +12,11 @@
 #    cells drawn from the other units of the same source (same technology and processing; flagged
 #    "ref_borrowed" in the unit record). Up to 1/4 of the pool (max 500) is held out and scored as
 #    "control"; the rest (max 1500) is the reference; observations = the unit's candidate cells.
-#  CNV call: threshold = 99th percentile of control scores (needs >= 20 controls); candidate clusters are
-#    positive when their median score exceeds it (cluster-level call used).
+#  CNV metrics per cell: score = mean squared deviation of the denoised inferCNV profile from 1;
+#    corr = correlation with the mean profile of the top 5% scoring observation cells (Tirosh/Neftel).
+#  CNV call: thresholds = 99th percentiles of the control cells' score and corr (needs >= 20 controls);
+#    a candidate cluster is positive when its median score or median corr exceeds its threshold
+#    (cluster-level call used).
 #  consensus: immune/stromal lineage -> non_malignant; candidate with scATOMIC tumour and CNV positive ->
 #    malignant; scATOMIC normal and CNV negative -> non_malignant; disagreement or CNV not evaluable ->
 #    uncertain (kept in the TME and flagged, per user decision).
@@ -143,19 +146,21 @@ for k, (u, idx) in enumerate(groups):
                        'scATOMIC_pan_cancer_cluster': p['scATOMIC_pan_cancer_cluster'].values, 'scATOMIC_tumour': p['scATOMIC_tumour'].values})
     thr = np.nan
     if os.path.exists(os.path.join(d, 'cnv_scores.tsv')):
-        cs = pd.read_csv(os.path.join(d, 'cnv_scores.tsv'), sep='\t').set_index('cell')['cnv_score']
-        df['cnv_score'] = cs.reindex(cid).values
+        cs = pd.read_csv(os.path.join(d, 'cnv_scores.tsv'), sep='\t').set_index('cell')
+        df['cnv_score'] = cs['cnv_score'].reindex(cid).values; df['cnv_corr'] = cs['cnv_corr'].reindex(cid).values
         ctrl_scores = cs.reindex(ctrl_cells).dropna()
         if len(ctrl_scores) >= 20:
-            thr = float(np.quantile(ctrl_scores, 0.99))
-            df['cnv_cell_positive'] = df['cnv_score'] > thr
+            thr = float(np.quantile(ctrl_scores['cnv_score'], 0.99)); thr_c = float(np.quantile(ctrl_scores['cnv_corr'], 0.99))
+            df['cnv_corr_threshold'] = thr_c
+            df['cnv_cell_positive'] = (df['cnv_score'] > thr) | (df['cnv_corr'] > thr_c)
             obs = df.infercnv_group == 'observation'
-            clmed = df[obs].groupby('quick_cluster')['cnv_score'].median()
-            df['cnv_call'] = np.where(obs, np.where(df['quick_cluster'].map(clmed) > thr, 'cnv_positive', 'cnv_negative'), 'reference_lineage')
+            clmed = df[obs].groupby('quick_cluster')[['cnv_score', 'cnv_corr']].median()
+            pos_cl = (clmed['cnv_score'] > thr) | (clmed['cnv_corr'] > thr_c)
+            df['cnv_call'] = np.where(obs, np.where(df['quick_cluster'].map(pos_cl).fillna(False).astype(bool), 'cnv_positive', 'cnv_negative'), 'reference_lineage')
         else:
             df['cnv_cell_positive'] = np.nan; df['cnv_call'] = np.where(df.infercnv_group == 'observation', 'not_evaluable', 'reference_lineage')
     else:
-        df['cnv_score'] = np.nan; df['cnv_cell_positive'] = np.nan
+        df['cnv_score'] = np.nan; df['cnv_corr'] = np.nan; df['cnv_cell_positive'] = np.nan
         df['cnv_call'] = np.where(df.infercnv_group == 'observation', 'not_evaluable', 'reference_lineage')
     df['cnv_threshold'] = thr
     cand = df['lineage'].str.startswith('candidate')
