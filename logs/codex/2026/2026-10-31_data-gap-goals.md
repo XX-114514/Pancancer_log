@@ -128,3 +128,11 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 
 ### 整合流程（integration v2，脚本`scripts/integration_v2/integrate_v2.py`）
 沿用此前TME标准整合配方：seurat_v3 HVG（按来源分别计算后合并排名，6500个候选→4000个，去掉技术基因），decontX计数normalize_total 1e4 + log1p，中心化ARPACK PCA 50个主成分，按来源做Harmony（theta 2，lambda 1，20轮），15近邻，UMAP。等全部来源完成decontX后在bigmem节点运行。
+
+## 2026-11-03 恶性细胞判定 v1 全量运行检查（UTC 11:35 / UTC+8 19:35）
+
+- 已观察：array 30645933 完成 68/72 个来源（1,162个单位）；无 Traceback；inferCNV 未运行的66个单位都没有候选细胞（全为免疫/基质），不属失败。160个单位借用了同来源的参考细胞。调用合计：non_malignant 3,003,312；malignant 1,025,620；uncertain 361,940（全部为 methods_disagree）。
+- 已观察：4个作业（GSE125449、GSE183904、GSE253013、GSE269936）在 scATOMIC 中停止进展超过20 h（最后写入在2026-11-02 08:54–12:51 UTC）。无法登录计算节点查看进程。已取消，R worker 增加超时（scATOMIC 2 h，单核重试 4 h；inferCNV 6 h）并按进程组终止，从 pass1 缓存续跑（job 30653005）。
+- 已观察：GSE299023（骨肉瘤）0% 恶性；GSE152048 3.3%；GSE182434（DLBCL）0.1% 恶性、22.9% uncertain，scATOMIC 把 CNV 阳性 B 细胞判为 "B Cell"。解释：肉瘤/间皮瘤的恶性细胞表达 COL1A1/DCN，被当成基质参考；scATOMIC 没有淋巴瘤类别。修正：DLBCL、骨肉瘤、软组织肉瘤、间皮瘤采用 CNV 主导模式。成纤维/周细胞样聚类改为候选，参考只用免疫和内皮细胞；CNV 阳性即判恶性。6个来源重跑（job 30653009），旧结果移到 `malignancy_v1/superseded_rule_v0/`。
+- 已观察：GSE179994 全部46个单位100%为免疫谱系，没有基质或上皮细胞；采样部位原本未解析。解释（假设：T 细胞分选设计）：属谱系富集数据，按用户"不用富集数据"的规则不进入 TME v1。保留在 integration v2，未删除。
+- 待办：剩余10个作业完成后运行 integrate_tme_v1、report_dataset_detail_v1，并补全 docs/MALIGNANCY_TME_V1.md。
