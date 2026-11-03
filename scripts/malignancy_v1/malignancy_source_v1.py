@@ -17,6 +17,9 @@
 #  CNV call: thresholds = 99th percentiles of the control cells' score and corr (needs >= 20 controls);
 #    a candidate cluster is positive when its median score or median corr exceeds its threshold
 #    (cluster-level call used).
+#  CNV-led tumour types (DLBCL, osteosarcoma, soft tissue sarcoma, mesothelioma; scATOMIC has no class for
+#    their malignant cells): fibroblast/pericyte-like clusters of mesenchymal tumours are candidates (reference
+#    = immune + endothelial), and a CNV-positive candidate is malignant without scATOMIC agreement.
 #  consensus: immune/stromal lineage -> non_malignant; candidate with scATOMIC tumour and CNV positive ->
 #    malignant; scATOMIC normal and CNV negative -> non_malignant; disagreement or CNV not evaluable ->
 #    uncertain (kept in the TME and flagged, per user decision).
@@ -34,6 +37,12 @@ a = ad.read_h5ad(shard)
 counts = a.layers['counts'].tocsr() if 'counts' in a.layers else a.X.tocsr()
 main = str(a.obs['analysis_main'].iloc[0])
 dlbcl = main == 'Diffuse large B-cell lymphoma'
+# mesenchymal tumours: malignant cells express fibroblast/pericyte markers, so those clusters are candidates
+# and only immune + endothelial cells are CNV reference; CNV-led tumours: scATOMIC has no class for the
+# malignant cells (lymphoma calls them "B Cell"; sarcoma/mesothelioma cells look like CAFs), so CNV decides
+MESENCHYMAL = {'Osteosarcoma', 'Soft tissue sarcoma', 'Mesothelioma'}
+mesench = main in MESENCHYMAL
+cnv_led = dlbcl or mesench
 groups = list(a.obs.groupby('unit_id', observed=True).indices.items())
 
 
@@ -87,7 +96,8 @@ for k, (u, idx) in enumerate(groups):
         gs = [g for g in gs if g in b.var_names]
         return pd.Series(np.asarray(b[:, gs].X.mean(1)).ravel() if gs else np.zeros(b.n_obs), index=range(b.n_obs)).groupby(cl).mean()
     sim, sb = mscore(IMM), mscore(BCELL)
-    sst = pd.concat([mscore(['COL1A1', 'COL1A2', 'DCN']), mscore(['PECAM1', 'VWF']), mscore(['RGS5'])], axis=1).max(1)  # fibroblast / endothelial / pericyte
+    sparts = pd.concat([mscore(['COL1A1', 'COL1A2', 'DCN']), mscore(['PECAM1', 'VWF']), mscore(['RGS5'])], axis=1, keys=['fib', 'endo', 'peri'])
+    sst = sparts.max(1)  # fibroblast / endothelial / pericyte
     lin_cl = {}
     for c in sim.index:
         if dlbcl and sb[c] > 1.0:
@@ -95,7 +105,7 @@ for k, (u, idx) in enumerate(groups):
         elif sim[c] >= 1.0 and sim[c] >= sst[c]:
             lin_cl[c] = 'immune'
         elif sst[c] >= 1.0:
-            lin_cl[c] = 'stromal'
+            lin_cl[c] = 'candidate_mesenchymal' if (mesench and sparts.loc[c].idxmax() != 'endo') else 'stromal'
         else:
             lin_cl[c] = 'candidate'
     lin = np.array([lin_cl[c] for c in cl])
@@ -184,12 +194,20 @@ for k, (u, idx) in enumerate(groups):
     df['cnv_threshold'] = thr
     cand = df['lineage'].str.startswith('candidate')
     tum, cnv = df['scATOMIC_tumour'], df['cnv_call']
-    df['malignancy_call'] = np.select(
-        [~cand, cand & (tum == 'tumour') & (cnv == 'cnv_positive'), cand & (tum.isin(['normal'])) & (cnv == 'cnv_negative')],
-        ['non_malignant', 'malignant', 'non_malignant'], 'uncertain')
-    df['malignancy_rule'] = np.select(
-        [~cand, df['malignancy_call'] == 'malignant', df['malignancy_call'] == 'non_malignant', cnv == 'not_evaluable'],
-        ['immune_or_stromal_lineage', 'scATOMIC_tumour_and_CNV_positive', 'scATOMIC_normal_and_CNV_negative', 'CNV_not_evaluable'], 'methods_disagree')
+    if cnv_led:
+        df['malignancy_call'] = np.select(
+            [~cand, cand & (cnv == 'cnv_positive'), cand & (tum.isin(['normal'])) & (cnv == 'cnv_negative')],
+            ['non_malignant', 'malignant', 'non_malignant'], 'uncertain')
+        df['malignancy_rule'] = np.select(
+            [~cand, df['malignancy_call'] == 'malignant', df['malignancy_call'] == 'non_malignant', cnv == 'not_evaluable'],
+            ['immune_or_stromal_lineage', 'CNV_positive_cnv_led_tumour_type', 'scATOMIC_normal_and_CNV_negative', 'CNV_not_evaluable'], 'methods_disagree')
+    else:
+        df['malignancy_call'] = np.select(
+            [~cand, cand & (tum == 'tumour') & (cnv == 'cnv_positive'), cand & (tum.isin(['normal'])) & (cnv == 'cnv_negative')],
+            ['non_malignant', 'malignant', 'non_malignant'], 'uncertain')
+        df['malignancy_rule'] = np.select(
+            [~cand, df['malignancy_call'] == 'malignant', df['malignancy_call'] == 'non_malignant', cnv == 'not_evaluable'],
+            ['immune_or_stromal_lineage', 'scATOMIC_tumour_and_CNV_positive', 'scATOMIC_normal_and_CNV_negative', 'CNV_not_evaluable'], 'methods_disagree')
     rows.append(df)
     rec = {'unit': u, 'cells': int(len(idx)), 'candidates': int(cand.sum()), 'own_reference_pool': int(len(own)), 'ref_borrowed': int(len(bgrp)),
            'reference': int(len(ref_cells)), 'control': int(len(ctrl_cells)), 'cnv_threshold': thr,
