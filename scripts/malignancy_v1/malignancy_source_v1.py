@@ -35,7 +35,26 @@ counts = a.layers['counts'].tocsr() if 'counts' in a.layers else a.X.tocsr()
 main = str(a.obs['analysis_main'].iloc[0])
 dlbcl = main == 'Diffuse large B-cell lymphoma'
 groups = list(a.obs.groupby('unit_id', observed=True).indices.items())
-run_r = lambda d, mode: subprocess.run([rscript, worker, d, gene_pos, str(ncores), str(seed), mode], capture_output=True, text=True)
+
+
+def run_r(d, mode, cores=None, timeout=None):
+    # own process group so a timeout also kills forked workers (scATOMIC/MAGIC hung >20 h on 4 units)
+    p = subprocess.Popen([rscript, worker, d, gene_pos, str(cores or ncores), str(seed), mode], stdout=subprocess.PIPE,
+                         stderr=subprocess.PIPE, text=True, start_new_session=True)
+    try:
+        o, e = p.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        os.killpg(p.pid, 9); o, e = p.communicate()
+        e = f'timeout after {timeout} s\n' + (e or '')
+    return subprocess.CompletedProcess(p.args, p.returncode, o, e)
+
+
+def run_scatomic(d):
+    # first try with all cores (2 h), then single-core (4 h); a unit that still fails keeps scATOMIC "failed"
+    r = run_r(d, 'scatomic', timeout=7200)
+    if not os.path.exists(os.path.join(d, 'scatomic.tsv')):
+        r = run_r(d, 'scatomic', cores=1, timeout=14400)
+    return r
 
 
 def write_unit(d, idx, cid, lin, grp):
@@ -81,7 +100,7 @@ for k, (u, idx) in enumerate(groups):
             lin_cl[c] = 'candidate'
     lin = np.array([lin_cl[c] for c in cl])
     write_unit(d, idx, cid, lin, 'none')
-    r1 = run_r(d, 'scatomic')
+    r1 = run_scatomic(d)
     df = pd.DataFrame({'cell': cid, 'quick_cluster': cl, 'lineage': lin})
     tumour = np.zeros(len(idx), bool)
     if os.path.exists(os.path.join(d, 'scatomic.tsv')):
@@ -137,7 +156,7 @@ for k, (u, idx) in enumerate(groups):
         os.remove(os.path.join(d, 'cnv_scores.tsv'))
     st0 = json.load(open(st_path)) if os.path.exists(st_path) else {}
     st0.pop('infercnv', None); json.dump(st0, open(st_path, 'w'))
-    r2 = run_r(d, 'infercnv')
+    r2 = run_r(d, 'infercnv', timeout=21600)
     st = json.load(open(st_path)) if os.path.exists(st_path) else {}
     if 'infercnv' not in st:
         st['infercnv'] = 'failed: worker error ' + r2.stderr[-300:]
