@@ -11,6 +11,7 @@ import numpy as np, pandas as pd, anndata as ad
 sdir, v2sum, mdir, tdir, out = sys.argv[1:6]
 os.makedirs(out, exist_ok=True)
 filt = json.load(open(v2sum))['filter']
+EXCLUDE = {'GSE179994': 'excluded_lineage_enriched_all_immune'}  # mirrors integrate_tme_v1.py
 dist = lambda s: '; '.join(f'{k}:{v}' for k, v in s.value_counts().items())
 rows = []
 for f in sorted(glob.glob(f'{sdir}/*.h5ad')):
@@ -25,7 +26,8 @@ for f in sorted(glob.glob(f'{sdir}/*.h5ad')):
          'cells_pre_decontX_filter': filt[s]['cells_in'], 'removed_contamination_ge_0.5': filt[s]['removed_high_contamination'],
          'cells_integration_v2': len(o), 'malignant': int(mc.get('malignant', 0)), 'uncertain': int(mc.get('uncertain', 0)),
          'non_malignant': int(mc.get('non_malignant', 0))}
-    r['cells_tme_v1'] = r['uncertain'] + r['non_malignant']
+    r['tme_v1_status'] = EXCLUDE.get(s, 'included')
+    r['cells_tme_v1'] = 0 if s in EXCLUDE else r['uncertain'] + r['non_malignant']
     r['pct_malignant'] = round(100 * r['malignant'] / len(o), 1)
     r['pct_uncertain_of_tme'] = round(100 * r['uncertain'] / max(r['cells_tme_v1'], 1), 1)
     rule = m.malignancy_rule.value_counts()
@@ -55,7 +57,8 @@ C = pd.concat(cc)
 P = C.groupby('analysis_main', observed=True).agg(sources=('source', 'nunique'), units=('unit_id', 'nunique'), patients=('patient_id', 'nunique'),
                                                    cells_integration_v2=('call', 'size'), malignant=('call', lambda x: (x == 'malignant').sum()),
                                                    uncertain=('call', lambda x: (x == 'uncertain').sum()), non_malignant=('call', lambda x: (x == 'non_malignant').sum()))
-P['cells_tme_v1'] = P.uncertain + P.non_malignant
+C['tme'] = (C['call'] != 'malignant') & ~C['source'].isin(list(EXCLUDE))
+P['cells_tme_v1'] = C.groupby('analysis_main', observed=True)['tme'].sum()
 P['oncotree_codes'] = C.groupby('analysis_main', observed=True)['oncotree_code'].agg(lambda x: ','.join(sorted(set(map(str, x)))))
 P.sort_values('cells_integration_v2', ascending=False).to_csv(f'{out}/dataset_detail_by_cancer.tsv', sep='\t')
 tsum = json.load(open(f'{tdir}/tme_summary.json')) if os.path.exists(f'{tdir}/tme_summary.json') else {}
