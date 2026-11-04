@@ -1,5 +1,5 @@
 analysis_main	sources	units	patients	cells_integration_v2	malignant	uncertain	non_malignant	cells_tme_v1	cells_covarnet_v1	oncotree_codes
-NSCLC	9	190	157	598822	78857	32825	487140	397172	364347	LUAD,NSCLC
+NSCLC	9	190	157	598822	78857	32825	487140	371564	339495	LUAD,NSCLC
 Breast cancer	3	99	90	530092	161531	38481	330080	368561	330080	BRCA
 Head and neck squamous cell carcinoma	5	119	114	406249	60345	38043	307861	345904	307861	HNSC,OCSC
 Renal cell carcinoma	4	67	51	357665	50031	13432	294202	307634	294202	CCRCC,RCC
@@ -25,5 +25,5 @@ Endometrial cancer	1	5	5	30990	7872	2849	20269	23118	20269	UCEC
 Basal cell carcinoma	1	4	4	27528	14089	10240	3199	13439	3199	BCC
 Renal medullary carcinoma	1	9	9	22030	1283	1456	19291	20747	19291	MRC
 Soft tissue sarcoma	1	7	6	14537	5530	0	9007	9007	9007	SOFT_TISSUE
-Diffuse large B-cell lymphoma	1	8	4	13161	3030	0	10131	10131	10131	DLBCLNOS
+Diffuse large B-cell lymphoma	1	8	4	13161	3030	0	10131	0	0	DLBCLNOS
 Mesothelioma	1	5	5	12428	6135	1174	5119	6293	5119	PLMESO

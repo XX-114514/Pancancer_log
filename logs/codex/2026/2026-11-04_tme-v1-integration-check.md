@@ -59,3 +59,21 @@
 - 产物：
   - 已提交：`inventories/source_registry/source_registry_v1.tsv`、`unit_flags_v1.tsv`。
   - 只留在服务器：`${PC_ROOT}/source_registry_v1/unit_registry_v1.tsv`（单位级）。
+
+## 2026-11-05 范围排除与去批次比较结论（UTC / UTC+8 见各条）
+
+- 用户决定（2026-11-05）：排除 GSE182434（B/非B 分选配对）和 GSE189357 的3个 AIS 样本（TD5、TD7、TD8）。
+  - 记录在 `inventories/tme_v1/scope_exclusions_v1.tsv`，与 GSE179994 放在同一张表；integrate_tme_v1.py、report_dataset_detail_v1.py 和 patch_tme_scope_v1.py 都读这张表。
+  - run_v1 zarr 已打补丁（job 30660289）：增加 scope_excluded 列，这些细胞的 covarnet_v1_include 设为 False。
+  - TME 共3,347,659个细胞；CoVarNet v1 共2,980,723个细胞（此前为3,015,706）。
+  - 数据集明细表已重新生成。run_v1 zarr 仍含被排除的35,739个细胞，所以 matches_sum=false；run_v2 不再包含这些细胞。
+- 去批次比较 v1 的结果（30万细胞子样本；指标以图为基础，包括 scib-metrics）：
+  - Harmony（来源 θ2）：同来源近邻0.154，来源 iLISI 5.64，细标签纯度0.701；scib 总分0.661，为最高。
+  - BBKNN（来源）：混合最强（同来源0.014，iLISI 7.56），但细标签纯度最低（0.633），粗标签纯度0.77。解释：71个组成很不均衡的批次被强行配邻，导致过度混合。
+  - Harmony→BBKNN：同样过度混合。
+  - scVI（单位）：0.212 / 4.62 / 0.703，总分0.621。scVI（来源）：0.335 / 3.67 / 0.709。两者都跑满400个 epoch，没有触发早停。
+  - ComBat：0.489 / 2.86，总分0.632。
+  - v1 方案（来源 θ2 + 单位 θ1）：子样本0.602，全数据0.782，最差，与此前发现一致。
+  - Scanorama：首次运行因 pip 版 annoy 在非 AVX512 节点上 Illegal instruction 失败，已加 AVX512 约束重跑（30660425），之后重新评估。
+  - 注意：生物学指标用的是标记基因标签，偏向未整合的表达空间（未整合的纯度最高），只适合用于方法间比较。
+- 决定：全数据 TME 重整合采用 Harmony 来源 θ2，并应用排除表。run_v2 job 30660430（bigmem）完成后由 30660431 写入决定补丁。

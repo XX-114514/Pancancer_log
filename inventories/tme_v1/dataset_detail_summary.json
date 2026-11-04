@@ -9,13 +9,13 @@
  "malignant": 1214740,
  "uncertain": 367692,
  "non_malignant": 3138499,
- "cells_tme_v1": 3383398,
- "cells_covarnet_v1": 3015706,
+ "cells_tme_v1": 3347659,
+ "cells_covarnet_v1": 2980723,
  "pct_malignant": 25.73,
  "units_scatomic_failed": 1,
  "units_infercnv_not_done": 62,
  "tme_v1_check": {
-  "cells_in_zarr": null,
-  "matches_sum": null
+  "cells_in_zarr": 3383398,
+  "matches_sum": false
  }
 }
