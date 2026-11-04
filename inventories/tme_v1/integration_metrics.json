@@ -1,0 +1,147 @@
+{
+ "X_pca|source": {
+  "lisi_median": 4.258675078864353,
+  "same_frac_median": 0.34831460674157305,
+  "by_compartment_lisi_median": {
+   "B_plasma": 4.286,
+   "T_NK": 4.816,
+   "endothelial": 5.088,
+   "epithelial_nonmalignant": 2.091,
+   "melanocytic_nonmalignant": 1.427,
+   "myeloid": 4.515,
+   "stromal": 4.299,
+   "unresolved": 2.293
+  },
+  "by_compartment_same_median": {
+   "B_plasma": 0.315,
+   "T_NK": 0.315,
+   "endothelial": 0.27,
+   "epithelial_nonmalignant": 0.629,
+   "melanocytic_nonmalignant": 0.82,
+   "myeloid": 0.337,
+   "stromal": 0.337,
+   "unresolved": 0.562
+  }
+ },
+ "X_pca|unit_id": {
+  "lisi_median": 13.775510204081632,
+  "same_frac_median": 0.0898876404494382,
+  "by_compartment_lisi_median": {
+   "B_plasma": 12.857,
+   "T_NK": 16.008,
+   "endothelial": 17.382,
+   "epithelial_nonmalignant": 7.377,
+   "melanocytic_nonmalignant": 2.824,
+   "myeloid": 14.211,
+   "stromal": 11.842,
+   "unresolved": 7.181
+  },
+  "by_compartment_same_median": {
+   "B_plasma": 0.09,
+   "T_NK": 0.079,
+   "endothelial": 0.067,
+   "epithelial_nonmalignant": 0.169,
+   "melanocytic_nonmalignant": 0.472,
+   "myeloid": 0.09,
+   "stromal": 0.112,
+   "unresolved": 0.18
+  }
+ },
+ "X_pca|compartment": {
+  "lisi_median": 1.0224690734662962,
+  "same_frac_median": 0.9887640449438202,
+  "by_compartment_lisi_median": {
+   "B_plasma": 1.045,
+   "T_NK": 1.0,
+   "endothelial": 1.0,
+   "epithelial_nonmalignant": 1.231,
+   "melanocytic_nonmalignant": 1.362,
+   "myeloid": 1.0,
+   "stromal": 1.069,
+   "unresolved": 1.528
+  },
+  "by_compartment_same_median": {
+   "B_plasma": 0.978,
+   "T_NK": 1.0,
+   "endothelial": 1.0,
+   "epithelial_nonmalignant": 0.888,
+   "melanocytic_nonmalignant": 0.843,
+   "myeloid": 1.0,
+   "stromal": 0.966,
+   "unresolved": 0.674
+  }
+ },
+ "X_pca_harmony|source": {
+  "lisi_median": 3.017883755588675,
+  "same_frac_median": 0.48314606741573035,
+  "by_compartment_lisi_median": {
+   "B_plasma": 2.874,
+   "T_NK": 3.456,
+   "endothelial": 3.766,
+   "epithelial_nonmalignant": 1.576,
+   "melanocytic_nonmalignant": 1.12,
+   "myeloid": 3.361,
+   "stromal": 2.919,
+   "unresolved": 1.75
+  },
+  "by_compartment_same_median": {
+   "B_plasma": 0.461,
+   "T_NK": 0.438,
+   "endothelial": 0.382,
+   "epithelial_nonmalignant": 0.775,
+   "melanocytic_nonmalignant": 0.944,
+   "myeloid": 0.461,
+   "stromal": 0.483,
+   "unresolved": 0.719
+  }
+ },
+ "X_pca_harmony|unit_id": {
+  "lisi_median": 17.920353982300885,
+  "same_frac_median": 0.0449438202247191,
+  "by_compartment_lisi_median": {
+   "B_plasma": 13.918,
+   "T_NK": 21.543,
+   "endothelial": 19.014,
+   "epithelial_nonmalignant": 10.176,
+   "melanocytic_nonmalignant": 6.496,
+   "myeloid": 19.565,
+   "stromal": 14.311,
+   "unresolved": 8.96
+  },
+  "by_compartment_same_median": {
+   "B_plasma": 0.056,
+   "T_NK": 0.045,
+   "endothelial": 0.045,
+   "epithelial_nonmalignant": 0.079,
+   "melanocytic_nonmalignant": 0.135,
+   "myeloid": 0.045,
+   "stromal": 0.067,
+   "unresolved": 0.09
+  }
+ },
+ "X_pca_harmony|compartment": {
+  "lisi_median": 1.0,
+  "same_frac_median": 1.0,
+  "by_compartment_lisi_median": {
+   "B_plasma": 1.0,
+   "T_NK": 1.0,
+   "endothelial": 1.0,
+   "epithelial_nonmalignant": 1.093,
+   "melanocytic_nonmalignant": 1.022,
+   "myeloid": 1.0,
+   "stromal": 1.022,
+   "unresolved": 1.199
+  },
+  "by_compartment_same_median": {
+   "B_plasma": 1.0,
+   "T_NK": 1.0,
+   "endothelial": 1.0,
+   "epithelial_nonmalignant": 0.955,
+   "melanocytic_nonmalignant": 0.989,
+   "myeloid": 1.0,
+   "stromal": 0.989,
+   "unresolved": 0.888
+  }
+ },
+ "note": "iLISI (source, unit_id): higher = better mixing (max = number of batches); cLISI (compartment): close to 1 = compartments kept separate; k=90 unweighted neighbours, 200k-cell subsample"
+}
