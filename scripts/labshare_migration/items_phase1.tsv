@@ -1,0 +1,12 @@
+# item	path (relative to SRC_ROOT and DST_ROOT)	excludes (comma-free ':' list, relative to the item path; empty = none)
+project_v5	pancancer/Project_v5	
+project_v3	pancancer/Project_v3	
+ingest	pancancer/ingest	
+spatial_xenium	spatial_xenium	
+gse274673_pilot	GSE274673_pilot	envs:mamba:cache
+integration_v2	pancancer/integration_v2	run_v2/shards
+analysis_ready_v1	pancancer/analysis_ready_v1	pancancer_analysis_ready_v1.zarr.shards
+migration	pancancer/migration	
+analysis	pancancer/analysis	
+malignancy_v1	pancancer/malignancy_v1	
+index	pancancer/index	
