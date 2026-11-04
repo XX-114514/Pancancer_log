@@ -1,0 +1,20 @@
+{
+ "sources": 72,
+ "cancers": 28,
+ "units": 1258,
+ "patients_v2": 1014,
+ "cells_pre_decontX_filter": 5073723,
+ "removed_contamination_ge_0.5": 352792,
+ "cells_integration_v2": 4720931,
+ "malignant": 1214740,
+ "uncertain": 367692,
+ "non_malignant": 3138499,
+ "cells_tme_v1": 3383398,
+ "pct_malignant": 25.73,
+ "units_scatomic_failed": 1,
+ "units_infercnv_not_done": 62,
+ "tme_v1_check": {
+  "cells_in_zarr": null,
+  "matches_sum": null
+ }
+}
