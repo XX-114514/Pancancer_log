@@ -1,0 +1,3 @@
+# name	source zarr (scratch originals; scratch copies are what the labshare copies were verified against)
+integration_v2	/vast/scratch/users/xiong.x/pancancer/integration_v2/run_v2/integration_v2.zarr
+pancancer_analysis_ready_v1	/vast/scratch/users/xiong.x/pancancer/analysis_ready_v1/pancancer_analysis_ready_v1.zarr
