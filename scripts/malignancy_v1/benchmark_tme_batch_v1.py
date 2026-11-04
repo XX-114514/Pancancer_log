@@ -46,7 +46,7 @@ for i, s in enumerate(sources):
     w = sub[(sub >= offs[i]) & (sub < offs[i + 1])] - offs[i]
     a = ad.read_h5ad(f'{run}/shards/{s}.h5ad', backed='r')
     assert a.n_obs == offs[i + 1] - offs[i]
-    X = a[w][:, genes].to_memory().X
+    X = a[w, genes].to_memory().X
     rows.append(pd.DataFrame(np.asarray(X.todense()), columns=genes))
 E = pd.concat(rows, ignore_index=True)
 S = pd.DataFrame({k: E[v].mean(1) for k, v in MK.items()})
