@@ -10,6 +10,7 @@
  "uncertain": 367692,
  "non_malignant": 3138499,
  "cells_tme_v1": 3383398,
+ "cells_covarnet_v1": 3015706,
  "pct_malignant": 25.73,
  "units_scatomic_failed": 1,
  "units_infercnv_not_done": 62,
