@@ -37,3 +37,25 @@
   - BBKNN 1.6.0 原本就在 scanpy 环境中。
 - 作业：prep 30658978 → cpu 30658979、scvi 30658980（A100）、scanorama 30658981 → eval 30658982。
 - 此前的 Harmony 子样本基准（30658795）因标记基因缺失报错，已被本比较取代并取消。
+
+## 来源、队列与样本组织来源登记 v1（2026-11-04 13:00 UTC / 21:00 UTC+8）
+
+- 用户要求：确定数据集来源、队列信息和样本的组织来源。
+- 方法：
+  - 2026-11-04 重新抓取71个 GEO family SOFT，放在 `${PC_ROOT}/resources/geo_soft_20261104/`，附 SHA256SUMS。
+  - 用 PubMed esummary 获取97个 PMID。GSE138709 在 GEO 中没有 PMID，按 GEO citation 用标题检索得到32505533（J Hepatol 2020）。
+  - 用 `scripts/source_registry/build_source_registry_v1.py` 把单位桥接到 GSM：先用 GSM 号，再用去 GSE 前缀并规范化后的标题、补充文件名、带词边界的标题、特征值。
+- 结果：
+  - 1,258个单位中1,103个唯一桥接到 GSM，没有重复使用的 GSM。
+  - 其余155个分布在14个来源（GSE179994、GSE182434、GSE189889、GSE200997、GSE207493、GSE256326、GSE297041 等），只有来源级描述。GSE256326 已按 material_detail 人工核对了部位。
+- 发现：
+  - GSE182434 是 CD19+/CD20+ B 细胞与 CD19−/CD20− 非 B 细胞的分选配对（GEO overall design），违反不用富集数据的规则。待用户决定。
+  - GSE189357 中 TD5、TD7、TD8 为 AIS（原位腺癌），按 WHO 2021 属前驱病变，与不用癌前病变的规则冲突。待用户决定。
+  - GSE191288 的淋巴结标记是"lymph node stage"引起的误报；GSE253973 的非肿瘤胸膜和 PDO 样本没有纳入。两者已核实无问题。
+- 待说明：
+  - 多化学并存的来源：GSE207422（10x 5′、10x 3′、BD Rhapsody）、GSE152048（10x 3′、GEXSCOPE）、GSE222446 和 GSE256326（5′、3′）。整合时应考虑以单位或化学为批次。
+  - GSE182109 的 GEO contact_institute 字段无效。
+  - 16个来源的 10x 版本在方案文本中没有写明。
+- 产物：
+  - 已提交：`inventories/source_registry/source_registry_v1.tsv`、`unit_flags_v1.tsv`。
+  - 只留在服务器：`${PC_ROOT}/source_registry_v1/unit_registry_v1.tsv`（单位级）。
