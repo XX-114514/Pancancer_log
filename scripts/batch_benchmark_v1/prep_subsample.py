@@ -4,9 +4,11 @@
 #   obsm X_pca (full-data TME PCA, subset) and X_v1_harmony (full-data v1 Harmony, subset)
 #   obs source, unit_id, analysis_main, leiden_tme, label_coarse / label_fine (per-cell marker labels from
 #   expression alone, independent of any embedding; 'ambiguous' when no clear winner)
+# Reading: per dataset shard, h5py CSR read in contiguous row blocks (no random row indexing), keeping only the
+# sampled rows and the needed gene columns (HVGs + marker genes).
 # Usage: prep_subsample.py TME_RUN_DIR OUT.h5ad N SEED
 import sys, json
-import numpy as np, pandas as pd, scipy.sparse as sp, anndata as ad, zarr
+import numpy as np, pandas as pd, scipy.sparse as sp, anndata as ad, zarr, h5py
 from anndata.io import read_elem
 
 run, outp, N, seed = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
@@ -27,20 +29,44 @@ sub = np.sort(rng.choice(len(obs), N, replace=False))
 sources = list(dict.fromkeys(obs['source'].astype(str)))
 src_arr = obs['source'].astype(str).values
 offs = {s: np.flatnonzero(src_arr == s) for s in sources}
+BLOCK = 50_000  # rows per contiguous read
+
+
+def read_rows_cols(grp, rows, cols, ncol_out):
+    # CSR group on disk -> csr (len(rows) x ncol_out). rows: sorted row positions; cols: per on-disk column, the
+    # output column or -1. Reads indptr once, then one contiguous indices/data slice per block of BLOCK rows
+    # that contains sampled rows; keeps only the sampled rows and the needed columns.
+    indptr = grp['indptr'][:]
+    out = []
+    for a in range(0, len(indptr) - 1, BLOCK):
+        b = min(a + BLOCK, len(indptr) - 1)
+        r = rows[(rows >= a) & (rows < b)]
+        if not len(r):
+            continue
+        lo, hi = int(indptr[a]), int(indptr[b])
+        ind = grp['indices'][lo:hi]; dat = grp['data'][lo:hi]
+        blk = sp.csr_matrix((dat, ind, indptr[a:b + 1] - lo), shape=(b - a, len(cols)))[r - a].tocoo()
+        keep = cols[blk.col] >= 0
+        out.append(sp.csr_matrix((blk.data[keep].astype(np.float32), (blk.row[keep], cols[blk.col[keep]])), shape=(len(r), ncol_out)))
+    return sp.vstack(out).tocsr()
+
+
+need = list(dict.fromkeys(hvg + mk))  # only these columns are kept
 C, L, M = [], [], []
 for s in sources:
     rows = offs[s]; w = np.flatnonzero(np.isin(rows, sub))
     if not len(w):
         continue
     assert np.all(np.diff(rows) == 1)
-    a = ad.read_h5ad(f'{run}/shards/{s}.h5ad', backed='r')
-    b = a[w].to_memory()
-    gi = b.var_names.get_indexer(hvg); assert (gi >= 0).all(), s
-    C.append(b.layers['counts'][:, gi].astype(np.float32)); L.append(sp.csr_matrix(b.X[:, gi], dtype=np.float32))
-    m = pd.DataFrame(0.0, index=range(b.n_obs), columns=mk)
-    have = [x for x in mk if x in b.var_names]
-    m[have] = np.asarray(b[:, have].X.todense())
-    M.append(m)
+    with h5py.File(f'{run}/shards/{s}.h5ad', 'r') as f:
+        vn = f['var'][f['var'].attrs['_index']].asstr()[:]
+        assert f['X'].attrs['shape'][0] == len(rows), s
+        pos = pd.Index(need).get_indexer(vn)  # on-disk column -> output column (-1 = not needed)
+        assert (pd.Index(vn).get_indexer(hvg) >= 0).all(), s
+        lg = read_rows_cols(f['X'], w, pos, len(need))
+        ct = read_rows_cols(f['layers/counts'], w, pos, len(need))
+    C.append(ct[:, :len(hvg)]); L.append(lg[:, :len(hvg)])
+    M.append(pd.DataFrame(lg[:, [need.index(x) for x in mk]].toarray(), columns=mk))  # markers absent from a shard stay 0
     print(s, len(w), flush=True)
 M = pd.concat(M, ignore_index=True)
 S = pd.DataFrame({k: M[v].mean(1) for k, v in COARSE.items()})
