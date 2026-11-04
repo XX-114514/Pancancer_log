@@ -10,8 +10,8 @@
 
 | 项目 | 值 |
 |---|---|
-| 路径 | `${PC_ROOT}/analysis_ready_v1/pancancer_analysis_ready_v1.zarr`（WEHI scratch；没有备份，30天未访问会被清理） |
-| 大小 | 19 GB，66,518个文件（zarr v2，元数据已consolidate） |
+| 路径 | `${PC_ROOT}/analysis_ready_v1/pancancer_analysis_ready_v1.zarr`（labshare /vast/projects/Spatial/xin，2026-11-04起） |
+| 大小 | 19 GB，4,320个文件（zarr v2，元数据已consolidate；2026-11-04 X重写为4,194,304元素的chunk以减少文件数，数值与原store逐值一致；原66,518个文件的版本仍在scratch） |
 | 细胞 × 基因 | 3,818,042 × 94,200 |
 | 所有53个来源都测到的基因 | 12,498 |
 | 读取 | `anndata.read_zarr(path)`，或按需用`zarr`/`anndata.io.read_elem`只读obs/var |

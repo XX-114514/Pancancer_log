@@ -10,7 +10,7 @@
 
 | 项目 | 内容 |
 |---|---|
-| 路径 | `${PC_ROOT}/integration_v2/run_v2/integration_v2.zarr`（WEHI scratch，107 GB，319,665个文件；没有备份，30天未访问会被清理） |
+| 路径 | `${PC_ROOT}/integration_v2/run_v2/integration_v2.zarr`（labshare /vast/projects/Spatial/xin，2026-11-04起；16,164个文件。数据数组已重写为约16 MiB的chunk（X/data等4,194,304个元素），数值与原store逐值一致；原小chunk版本（319,665个文件）仍在scratch） |
 | `X` | log1p(normalize_total 1e4)，基于decontX校正后的计数，float32 |
 | `layers['counts']` | 原始整数计数 |
 | `layers['decontx']` | decontX校正后的计数 |
