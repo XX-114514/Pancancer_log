@@ -1,0 +1,6 @@
+level	source	unit_id	reason	decision_status	decided_utc
+source	GSE179994		author_T_cell_subset_only (public data = authors' computational T-cell subset)	verified_2026-11-04	2026-11-04
+source	GSE182434		lineage_sorted_B_and_nonB_fractions (CD19+/CD20+ vs CD19-/CD20-)	user_confirmed_2026-11-05	2026-11-05
+unit	GSE189357	GSE189357::GSE189357|GSE189357__GSM5699781_TD5	AIS_precursor_lesion (GEO histolgical type: AIS)	user_confirmed_2026-11-05	2026-11-05
+unit	GSE189357	GSE189357::GSE189357|GSE189357__GSM5699783_TD7	AIS_precursor_lesion (GEO histolgical type: AIS)	user_confirmed_2026-11-05	2026-11-05
+unit	GSE189357	GSE189357::GSE189357|GSE189357__GSM5699784_TD8	AIS_precursor_lesion (GEO histolgical type: AIS)	user_confirmed_2026-11-05	2026-11-05

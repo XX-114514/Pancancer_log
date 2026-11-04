@@ -32,7 +32,9 @@ MARKERS = {'T': ['CD3D', 'CD3E', 'CD2'], 'NK': ['NKG7', 'GNLY', 'KLRD1'], 'B': [
 # sources left out of the TME: GSE179994 public data are only the authors' computational T-cell subset
 # (GEO protocol has no sorting; non-T cells not deposited), so its composition cannot enter sample-level
 # co-variation; kept in integration v2, not deleted (inventories/tme_v1/source_decisions_v1.tsv)
-EXCLUDE = {'GSE179994': 'author_T_cell_subset_only'}
+_ex = pd.read_csv(f'{repo}/inventories/tme_v1/scope_exclusions_v1.tsv', sep='\t', dtype=str).fillna('')  # source- and unit-level scope decisions
+EXCLUDE = {r.source: r.reason.split(' ')[0] for r in _ex.itertuples() if r.level == 'source'}
+EXCLUDE_UNITS = {r.unit_id: r.reason.split(' ')[0] for r in _ex.itertuples() if r.level == 'unit'}
 files = sorted(f for f in glob.glob(f'{sdir}/*.h5ad') if os.path.basename(f)[:-5] not in EXCLUDE)
 sources = [os.path.basename(f)[:-5] for f in files]
 missing = [s for s in sources if not os.path.exists(f'{mdir}/{s}.tsv.gz')]
@@ -49,7 +51,7 @@ def load(f, s):
     for c in m.columns:
         a.obs['malig_' + c if not c.startswith('malignancy') else c] = m[c].values
     a.obs['tme_flag'] = np.where(m['malignancy_call'].values == 'uncertain', 'uncertain_malignancy_kept', 'non_malignant')
-    return a, (m['malignancy_call'].values != 'malignant')
+    return a, (m['malignancy_call'].values != 'malignant') & ~a.obs['unit_id'].astype(str).isin(list(EXCLUDE_UNITS)).values
 
 
 common = sorted(set.intersection(*[set(ad.read_h5ad(f, backed='r').var_names.astype(str)) for f in files]))
@@ -222,7 +224,7 @@ del g['var']; write_elem(g, 'var', var)
 commit = subprocess.run(['git', '-C', repo, 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
 write_elem(g, 'uns', {'schema': 'pancancer_tme_v1', 'code_commit': commit, 'seed': str(seed),
                       'cells': 'integration v2 cells with malignancy_call != malignant (uncertain kept, tme_flag)',
-                      'excluded_sources': json.dumps(EXCLUDE),
+                      'excluded_sources': json.dumps(EXCLUDE), 'excluded_units': json.dumps(EXCLUDE_UNITS),
                       'X': 'log1p(normalize_total 1e4) of decontX-corrected counts', 'layers': 'counts = raw integer; decontx = decontX-corrected',
                       'hvg': f'seurat_v3 per source on TME raw counts of {len(common)} common genes; {N_CAND} -> {N_HVG} non-technical',
                       'pca': f'{N_PC} PCs, centred, ARPACK', 'harmony': 'vars source (theta 2) + unit_id (theta 1), lambda 1, max_iter 20',
