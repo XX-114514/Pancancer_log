@@ -29,10 +29,10 @@ MARKERS = {'T': ['CD3D', 'CD3E', 'CD2'], 'NK': ['NKG7', 'GNLY', 'KLRD1'], 'B': [
            'pericyte_SMC': ['RGS5', 'ACTA2', 'MYH11'], 'epithelial': ['EPCAM', 'KRT8', 'KRT18', 'KRT19'],
            'melanocytic': ['PMEL', 'MLANA', 'TYR'], 'glial_neural': ['GFAP', 'OLIG2', 'SOX2'], 'hepatocyte': ['ALB', 'APOA1'],
            'cycling': ['MKI67', 'TOP2A']}
-# lineage-enriched sources left out of the TME (user rule: no enriched data): GSE179994 is 100% PTPRC+
-# immune in all 46 samples (T-cell sorted design) and has no stromal/epithelial cells, which would distort
-# sample-level cell-type co-variation; kept in integration v2, not deleted
-EXCLUDE = {'GSE179994': 'lineage_enriched_all_immune'}
+# sources left out of the TME: GSE179994 public data are only the authors' computational T-cell subset
+# (GEO protocol has no sorting; non-T cells not deposited), so its composition cannot enter sample-level
+# co-variation; kept in integration v2, not deleted (inventories/tme_v1/source_decisions_v1.tsv)
+EXCLUDE = {'GSE179994': 'author_T_cell_subset_only'}
 files = sorted(f for f in glob.glob(f'{sdir}/*.h5ad') if os.path.basename(f)[:-5] not in EXCLUDE)
 sources = [os.path.basename(f)[:-5] for f in files]
 missing = [s for s in sources if not os.path.exists(f'{mdir}/{s}.tsv.gz')]

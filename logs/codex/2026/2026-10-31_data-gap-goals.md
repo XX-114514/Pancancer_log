@@ -136,3 +136,24 @@ Harmonise cancer-type labels to OncoTree for the 43 qualified sources; rebuild t
 - 已观察：GSE299023（骨肉瘤）0% 恶性；GSE152048 3.3%；GSE182434（DLBCL）0.1% 恶性、22.9% uncertain，scATOMIC 把 CNV 阳性 B 细胞判为 "B Cell"。解释：肉瘤/间皮瘤的恶性细胞表达 COL1A1/DCN，被当成基质参考；scATOMIC 没有淋巴瘤类别。修正：DLBCL、骨肉瘤、软组织肉瘤、间皮瘤采用 CNV 主导模式。成纤维/周细胞样聚类改为候选，参考只用免疫和内皮细胞；CNV 阳性即判恶性。6个来源重跑（job 30653009），旧结果移到 `malignancy_v1/superseded_rule_v0/`。
 - 已观察：GSE179994 全部46个单位100%为免疫谱系，没有基质或上皮细胞；采样部位原本未解析。解释（假设：T 细胞分选设计）：属谱系富集数据，按用户"不用富集数据"的规则不进入 TME v1。保留在 integration v2，未删除。
 - 待办：剩余10个作业完成后运行 integrate_tme_v1、report_dataset_detail_v1，并补全 docs/MALIGNANCY_TME_V1.md。
+
+## 2026-11-04 四个高免疫比例来源核查与决定（UTC 04:40 / UTC+8 12:40）
+
+- 用户要求（2026-11-04）：核实第一项；若确认未富集就先不排除；不确定细胞本次不进入 CoVarNet；所有决定标明清楚。用户提供了四个来源的原文方法证据。
+- 已观察（本分析对象）：
+  - GSE201347 只含12个肿瘤样本，GEO 的10个非肿瘤样本未纳入。
+  - GSE162025 只含10个肿瘤样本，无 PBMC，共80,516个细胞，与原文肿瘤82,622个接近。
+  - GSE189903 含 T1–T3（核心）和 B（边缘），N（癌旁）未纳入。
+  - 这四个来源的 author_cell_type 都为空，无法做作者标签映射核对。
+- 已观察（恶性比例偏低的原因）：共识规则要求 scATOMIC 和 CNV 同时为阳性。各来源"scATOMIC 正常 + CNV 阳性"的候选细胞数：GSE189357 3,808；GSE201347 5,030；GSE189903 1,296；GSE162025 1,197。
+  - 在共识规则下，这些细胞一部分归入 uncertain，一部分归入 non_malignant。
+  - GSE162025 的 malignant 加 uncertain 共3,176个，原文恶性上皮细胞为2,787个。
+  - 解释：比例偏低是共识规则保守所致，不是标签映射错误。所有百分比都是本分析对象中的值，不是原文报告值。
+- 决定：
+  - 四个来源都保留，标为"未报告免疫特异富集"。
+  - 处理信息分别记录：胃癌去死细胞；肝癌细胞悬液冻存复苏；NPC 活细胞（PI 阴性）分选，且有单独分离的配对 PBMC，PBMC 未纳入本对象。
+- 纠正：
+  - GSE189903 的 fresh_frozen 由 fresh 改为 cryopreserved_or_frozen。证据：PMC9729309 Methods 写明悬液在液氮中冻存，复苏后用于 10x 5′。旧记录有误。
+  - GSE179994 的排除理由改正。GEO 方案没有分选；公开文件只有作者的 T 细胞子集（all.Tcell.rawCounts）。此前写的"T 细胞分选设计"是未经验证的假设，是错的。仍不进入 TME v1 和 CoVarNet v1，但理由改为作者事后计算筛选。
+  - uncertain 细胞保留在 TME v1 zarr 中（covarnet_v1_include=False），不进入 CoVarNet v1。CoVarNet v1 共3,015,706个细胞。
+- 全部决定记录在 `inventories/tme_v1/source_decisions_v1.tsv`。TME zarr 在整合完成后用 patch_tme_decisions_v1.py 写入。
