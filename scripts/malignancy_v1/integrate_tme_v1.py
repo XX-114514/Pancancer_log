@@ -2,7 +2,8 @@
 # cells kept and flagged, per user decision 2026-11-02), re-integrated with the v2 recipe plus the
 # changes from the v2 UMAP review:
 #  - HVG recomputed on TME cells only (seurat_v3 per source on raw counts, 6500 -> 4000 non-technical)
-#  - Harmony on two batch variables: source (theta 2) and unit/sample (theta 1)
+#  - Harmony batch variables from env TME_HARMONY (v1 run: source theta 2 + unit theta 1; run v2 after the
+#    2026-11-05 benchmark: source theta 2 only)
 #  - Leiden clustering on the Harmony graph and a coarse marker-based compartment per cluster
 #  - integration metrics before/after Harmony (iLISI on source and unit, cLISI on compartment, same-
 #    source neighbour fraction) on a fixed subsample
@@ -100,8 +101,12 @@ log(step='matrix', shape=Y.shape)
 B = ad.AnnData(X=Y, obs=obs, var=pd.DataFrame(index=selected))
 sc.pp.pca(B, n_comps=N_PC, zero_center=True, svd_solver='arpack', random_state=seed, dtype='float32')
 log(step='pca_done')
-ho = hm.run_harmony(data_mat=np.asarray(B.obsm['X_pca'], np.float64), meta_data=B.obs[['source', 'unit_id']].astype(str),
-                    vars_use=['source', 'unit_id'], theta=[2.0, 1.0], lamb=1.0, max_iter_harmony=20, random_state=seed)
+# Harmony batch variables, env TME_HARMONY="var:theta,..." (default = v1 run: source 2 + unit_id 1). The
+# batch-correction benchmark v1 (2026-11-05) chose source:2 for the next run (inventories/tme_v1/batch_benchmark_v1/)
+HV = [(k, float(t)) for k, t in (x.split(':') for x in os.environ.get('TME_HARMONY', 'source:2,unit_id:1').split(','))]
+log(step='harmony_vars', vars=HV)
+ho = hm.run_harmony(data_mat=np.asarray(B.obsm['X_pca'], np.float64), meta_data=B.obs[[k for k, _ in HV]].astype(str),
+                    vars_use=[k for k, _ in HV], theta=[t for _, t in HV], lamb=1.0, max_iter_harmony=20, random_state=seed)
 Z = np.asarray(ho.Z_corr).T if ho.Z_corr.shape[0] == N_PC else np.asarray(ho.Z_corr)
 B.obsm['X_pca_harmony'] = Z.astype(np.float32); del ho; gc.collect()
 log(step='harmony_done')
@@ -227,7 +232,7 @@ write_elem(g, 'uns', {'schema': 'pancancer_tme_v1', 'code_commit': commit, 'seed
                       'excluded_sources': json.dumps(EXCLUDE), 'excluded_units': json.dumps(EXCLUDE_UNITS),
                       'X': 'log1p(normalize_total 1e4) of decontX-corrected counts', 'layers': 'counts = raw integer; decontx = decontX-corrected',
                       'hvg': f'seurat_v3 per source on TME raw counts of {len(common)} common genes; {N_CAND} -> {N_HVG} non-technical',
-                      'pca': f'{N_PC} PCs, centred, ARPACK', 'harmony': 'vars source (theta 2) + unit_id (theta 1), lambda 1, max_iter 20',
+                      'pca': f'{N_PC} PCs, centred, ARPACK', 'harmony': 'vars ' + ', '.join(f'{k} (theta {t:g})' for k, t in HV) + ', lambda 1, max_iter 20',
                       'graph': '15-NN on X_pca_harmony; Leiden 1.0 (leiden_tme); UMAP min_dist 0.3',
                       'compartment': 'per Leiden cluster, highest marker-set z-score >= 1 else unresolved'})
 zarr.consolidate_metadata(zpath)

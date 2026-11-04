@@ -1,0 +1,272 @@
+{
+ "combat": {
+  "same_source_median": 0.489,
+  "same_unit_median": 0.201,
+  "source_iLISI_median": 2.857,
+  "purity_coarse": 0.843,
+  "purity_fine": 0.728,
+  "graph_connectivity_mean": 0.985,
+  "same_source_by_label": {
+   "B": 0.461,
+   "T_NK": 0.367,
+   "endothelial": 0.577,
+   "epithelial": 0.831,
+   "fibroblast": 0.676,
+   "mast": 0.483,
+   "myeloid": 0.526,
+   "pericyte_SMC": 0.627,
+   "plasma": 0.732
+  },
+  "graph_connectivity": {
+   "B": 0.987,
+   "T_NK": 0.999,
+   "endothelial": 0.991,
+   "epithelial": 0.987,
+   "fibroblast": 0.99,
+   "mast": 0.975,
+   "myeloid": 0.997,
+   "pericyte_SMC": 0.986,
+   "plasma": 0.953
+  }
+ },
+ "harmony_source_t2": {
+  "same_source_median": 0.154,
+  "same_unit_median": 0.058,
+  "source_iLISI_median": 5.642,
+  "purity_coarse": 0.824,
+  "purity_fine": 0.701,
+  "graph_connectivity_mean": 0.984,
+  "same_source_by_label": {
+   "B": 0.105,
+   "T_NK": 0.094,
+   "endothelial": 0.17,
+   "epithelial": 0.452,
+   "fibroblast": 0.29,
+   "mast": 0.09,
+   "myeloid": 0.227,
+   "pericyte_SMC": 0.249,
+   "plasma": 0.152
+  },
+  "graph_connectivity": {
+   "B": 0.987,
+   "T_NK": 0.998,
+   "endothelial": 0.991,
+   "epithelial": 0.984,
+   "fibroblast": 0.984,
+   "mast": 0.979,
+   "myeloid": 0.997,
+   "pericyte_SMC": 0.985,
+   "plasma": 0.955
+  }
+ },
+ "harmony_source_unit": {
+  "same_source_median": 0.602,
+  "same_unit_median": 0.068,
+  "source_iLISI_median": 2.24,
+  "purity_coarse": 0.805,
+  "purity_fine": 0.656,
+  "graph_connectivity_mean": 0.979,
+  "same_source_by_label": {
+   "B": 0.669,
+   "T_NK": 0.472,
+   "endothelial": 0.653,
+   "epithelial": 0.908,
+   "fibroblast": 0.73,
+   "mast": 0.414,
+   "myeloid": 0.661,
+   "pericyte_SMC": 0.833,
+   "plasma": 0.647
+  },
+  "graph_connectivity": {
+   "B": 0.983,
+   "T_NK": 0.997,
+   "endothelial": 0.988,
+   "epithelial": 0.967,
+   "fibroblast": 0.978,
+   "mast": 0.977,
+   "myeloid": 0.996,
+   "pericyte_SMC": 0.966,
+   "plasma": 0.961
+  }
+ },
+ "scvi_source": {
+  "same_source_median": 0.335,
+  "same_unit_median": 0.136,
+  "source_iLISI_median": 3.673,
+  "purity_coarse": 0.825,
+  "purity_fine": 0.709,
+  "graph_connectivity_mean": 0.987,
+  "same_source_by_label": {
+   "B": 0.273,
+   "T_NK": 0.252,
+   "endothelial": 0.294,
+   "epithelial": 0.752,
+   "fibroblast": 0.501,
+   "mast": 0.305,
+   "myeloid": 0.393,
+   "pericyte_SMC": 0.417,
+   "plasma": 0.291
+  },
+  "graph_connectivity": {
+   "B": 0.988,
+   "T_NK": 0.999,
+   "endothelial": 0.993,
+   "epithelial": 0.991,
+   "fibroblast": 0.991,
+   "mast": 0.986,
+   "myeloid": 0.997,
+   "pericyte_SMC": 0.987,
+   "plasma": 0.953
+  }
+ },
+ "scvi_unit": {
+  "same_source_median": 0.212,
+  "same_unit_median": 0.055,
+  "source_iLISI_median": 4.623,
+  "purity_coarse": 0.821,
+  "purity_fine": 0.703,
+  "graph_connectivity_mean": 0.987,
+  "same_source_by_label": {
+   "B": 0.164,
+   "T_NK": 0.154,
+   "endothelial": 0.198,
+   "epithelial": 0.468,
+   "fibroblast": 0.337,
+   "mast": 0.201,
+   "myeloid": 0.244,
+   "pericyte_SMC": 0.267,
+   "plasma": 0.186
+  },
+  "graph_connectivity": {
+   "B": 0.987,
+   "T_NK": 0.999,
+   "endothelial": 0.992,
+   "epithelial": 0.991,
+   "fibroblast": 0.991,
+   "mast": 0.985,
+   "myeloid": 0.997,
+   "pericyte_SMC": 0.99,
+   "plasma": 0.954
+  }
+ },
+ "unintegrated": {
+  "same_source_median": 0.628,
+  "same_unit_median": 0.249,
+  "source_iLISI_median": 2.106,
+  "purity_coarse": 0.852,
+  "purity_fine": 0.738,
+  "graph_connectivity_mean": 0.985,
+  "same_source_by_label": {
+   "B": 0.578,
+   "T_NK": 0.571,
+   "endothelial": 0.549,
+   "epithelial": 0.93,
+   "fibroblast": 0.69,
+   "mast": 0.572,
+   "myeloid": 0.65,
+   "pericyte_SMC": 0.674,
+   "plasma": 0.5
+  },
+  "graph_connectivity": {
+   "B": 0.987,
+   "T_NK": 0.999,
+   "endothelial": 0.992,
+   "epithelial": 0.988,
+   "fibroblast": 0.991,
+   "mast": 0.979,
+   "myeloid": 0.996,
+   "pericyte_SMC": 0.976,
+   "plasma": 0.958
+  }
+ },
+ "v1_fulldata_harmony": {
+  "same_source_median": 0.782,
+  "same_unit_median": 0.109,
+  "source_iLISI_median": 1.556,
+  "purity_coarse": 0.798,
+  "purity_fine": 0.647,
+  "graph_connectivity_mean": 0.977,
+  "same_source_by_label": {
+   "B": 0.747,
+   "T_NK": 0.721,
+   "endothelial": 0.733,
+   "epithelial": 0.961,
+   "fibroblast": 0.798,
+   "mast": 0.671,
+   "myeloid": 0.809,
+   "pericyte_SMC": 0.877,
+   "plasma": 0.768
+  },
+  "graph_connectivity": {
+   "B": 0.984,
+   "T_NK": 0.997,
+   "endothelial": 0.987,
+   "epithelial": 0.968,
+   "fibroblast": 0.977,
+   "mast": 0.972,
+   "myeloid": 0.996,
+   "pericyte_SMC": 0.96,
+   "plasma": 0.955
+  }
+ },
+ "bbknn_source": {
+  "same_source_median": 0.014,
+  "same_unit_median": 0.007,
+  "source_iLISI_median": 7.557,
+  "purity_coarse": 0.77,
+  "purity_fine": 0.633,
+  "graph_connectivity_mean": 0.992,
+  "same_source_by_label": {
+   "B": 0.068,
+   "T_NK": 0.038,
+   "endothelial": 0.009,
+   "epithelial": 0.009,
+   "fibroblast": 0.009,
+   "mast": 0.009,
+   "myeloid": 0.009,
+   "pericyte_SMC": 0.009,
+   "plasma": 0.095
+  },
+  "graph_connectivity": {
+   "B": 0.991,
+   "T_NK": 0.995,
+   "endothelial": 0.994,
+   "epithelial": 0.994,
+   "fibroblast": 0.996,
+   "mast": 0.992,
+   "myeloid": 0.999,
+   "pericyte_SMC": 0.996,
+   "plasma": 0.972
+  }
+ },
+ "harmony_bbknn": {
+  "same_source_median": 0.049,
+  "same_unit_median": 0.009,
+  "source_iLISI_median": 6.841,
+  "purity_coarse": 0.759,
+  "purity_fine": 0.621,
+  "graph_connectivity_mean": 0.983,
+  "same_source_by_label": {
+   "B": 0.086,
+   "T_NK": 0.082,
+   "endothelial": 0.057,
+   "epithelial": 0.026,
+   "fibroblast": 0.019,
+   "mast": 0.066,
+   "myeloid": 0.018,
+   "pericyte_SMC": 0.041,
+   "plasma": 0.105
+  },
+  "graph_connectivity": {
+   "B": 0.987,
+   "T_NK": 0.997,
+   "endothelial": 0.992,
+   "epithelial": 0.983,
+   "fibroblast": 0.981,
+   "mast": 0.983,
+   "myeloid": 0.997,
+   "pericyte_SMC": 0.968,
+   "plasma": 0.956
+  }
+ }
+}
