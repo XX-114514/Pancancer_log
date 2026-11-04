@@ -1,0 +1,2 @@
+# item	path (relative to SRC_ROOT and DST_ROOT)	excludes (':' list relative to the item path)
+tme_v1	pancancer/tme_v1	

@@ -1,0 +1,3 @@
+# item	path (relative to SRC_ROOT and DST_ROOT)	excludes (':' list relative to the item path)
+resources	pancancer/resources	
+envs_noconda	pancancer/envs	conda:py_magic_venv
