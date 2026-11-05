@@ -1,5 +1,7 @@
 # TME v1 从头注释方案（v1，2026-11-05）
 
+> 已被 [v2（按 Lodi et al. 2025 设计）](tme-annotation-v2-lodi-workflow-20261105.md) 取代（2026-11-05）。本文保留为历史；面板已并入 [tme_annotation_panel_v2](../resources/annotation/tme_annotation_panel_v2/README.md)。
+
 对象：TME v1 run v2（`${PC_ROOT}/tme_v1/run_v2/tme_v1.zarr`，3,347,659个细胞，Harmony 只按来源，θ2）。
 
 用户决定（2026-11-05）：先从头注释，完成后再与2026年10月 CM（v20261010）的172节点标签对照。对照只做事后比较，十月标签不参与本次的聚类和命名。
