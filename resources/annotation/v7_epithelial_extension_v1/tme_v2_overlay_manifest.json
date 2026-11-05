@@ -1,0 +1,81 @@
+{
+  "source_v2_sha256": "799ed9676aad70fc359b1ac24574ca034942ea3c4ee5b7c2d14fe0ead97501d3",
+  "source_epithelial_sha256": "b86d81388094b163029fdd4473441542f9fb164dbbfbde246aa0e720d26b9dc3",
+  "output_sha256": "c23a96b51a2d3394020ebef1c326cc1621e8a3ad23055878bebb0cbba9765cfe",
+  "source_v2_panels": 179,
+  "reviewed_panels": 185,
+  "replaced_panels": 19,
+  "added_panels": 25,
+  "updated_retained_panels": [
+    "Epi_renal_tubular_like"
+  ],
+  "unchanged_panel_count": 159,
+  "lodi_author_code_and_profile_panels_preserved": 41,
+  "original_files_modified": false,
+  "cell_label_changes": 0,
+  "replacements": {
+    "Epi_colonocyte_like": [
+      "Epi_colonocyte_like"
+    ],
+    "Epi_goblet_like": [
+      "Epi_intestinal_goblet_like"
+    ],
+    "Epi_intestinal_stem_like": [
+      "Epi_intestinal_stem_like"
+    ],
+    "Epi_gastric_pit_mucous_like": [
+      "Epi_gastric_pit_like",
+      "Epi_gastric_gland_mucous_like"
+    ],
+    "Epi_gastric_chief_parietal_like": [
+      "Epi_gastric_chief_like",
+      "Epi_gastric_parietal_like"
+    ],
+    "Epi_enteroendocrine_like": [
+      "Epi_neuroendocrine_program"
+    ],
+    "Epi_pancreatic_acinar_like": [
+      "Epi_pancreatic_acinar_like"
+    ],
+    "Epi_pancreatic_ductal_like": [
+      "Epi_pancreatic_duct_like"
+    ],
+    "Epi_islet_like": [
+      "Epi_pancreatic_islet_like"
+    ],
+    "Epi_breast_luminal_like": [
+      "Epi_breast_LumHR_like",
+      "Epi_breast_LumSec_like"
+    ],
+    "Epi_breast_basal_myoepithelial_like": [
+      "Epi_breast_basal_myo_like"
+    ],
+    "Epi_prostate_basal_club_like": [
+      "Epi_prostate_basal_like",
+      "Epi_prostate_club_like"
+    ],
+    "Epi_urothelial_like": [
+      "Epi_urothelial_differentiated_like"
+    ],
+    "Epi_renal_distal_collecting_podocyte_like": [
+      "Epi_kidney_TAL_like",
+      "Epi_kidney_principal_like",
+      "Epi_kidney_podocyte_like"
+    ],
+    "Epi_thyroid_follicular_like": [
+      "Epi_thyroid_follicular_like"
+    ],
+    "Epi_mullerian_secretory_like": [
+      "Epi_fallopian_secretory_like"
+    ],
+    "Epi_endometrial_like": [
+      "Epi_endometrial_secretory_like"
+    ],
+    "Epi_squamous_suprabasal_like": [
+      "Epi_squamous_suprabasal_like"
+    ],
+    "Epi_keratinocyte_like": [
+      "Epi_keratinocyte_differentiated_like"
+    ]
+  }
+}

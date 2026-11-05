@@ -1,6 +1,6 @@
 ## 2026-11-05 组织上皮注释资源已扩展，细胞标签未改
 
-原26个组织上皮组合已映射为32个候选模块（新增25、复用7），合并V7资源137模块/473个不同正向基因；逐基因文献与未纳入原因见[完整资源](resources/annotation/v7_epithelial_extension_v1/README.md)。9项反例/重放检查通过。此为资源与语义修订，尚未运行全V7上皮重聚类/DEG或更新最终标签。
+原26个组织上皮组合已映射为32个候选模块（新增25、复用7），合并V7资源137模块/473个不同正向基因；逐基因文献与未纳入原因见[完整资源](resources/annotation/v7_epithelial_extension_v1/README.md)。11项反例/重放检查通过。已另提供[保留Lodi的185模块TME兼容版](resources/annotation/v7_epithelial_extension_v1/TME_V2_COMPATIBILITY.md)。此为资源与语义修订，尚未运行全V7上皮重聚类/DEG或更新最终标签。
 
 ## 2026-11-05 V7注释下首次重算CoVarNet：模块很大程度上反映样本类型；只含肿瘤样本的版本运行中
 

@@ -13,6 +13,7 @@ RESOURCE=ROOT/'resources/annotation/v7_epithelial_extension_v1'
 sys.path.insert(0,str(ROOT/'scripts/v7_panel_repair_v1'))
 from evidence_engine import evaluate, validate_registry
 from build import build
+from compose_tme_v2 import compose, write
 
 class ExtensionTests(unittest.TestCase):
     @classmethod
@@ -80,5 +81,23 @@ class ExtensionTests(unittest.TestCase):
             manifest=build(ROOT,out)
             for name in list(manifest['output_sha256'])+['manifest.json']:
                 self.assertEqual((RESOURCE/name).read_bytes(),(out/name).read_bytes(),name)
+
+    def test_concurrent_v2_preserves_author_panels_and_non_epithelial_work(self):
+        v2=json.loads((ROOT/'resources/annotation/tme_annotation_panel_v2/registry.json').read_text())
+        result=compose(v2,self.registry); byid=validate_registry(result)
+        self.assertEqual(len(byid),185)
+        author=[p for p in v2['panels'] if p.get('source_layer','').startswith('Lodi2025_')]
+        self.assertEqual(len(author),41)
+        for p in author:self.assertEqual(p,byid[p['id']])
+        unchanged=[p for p in v2['panels'] if p['id'] in byid and p==byid[p['id']]]
+        self.assertEqual(len(unchanged),159)
+        self.assertNotIn('Epi_gastric_chief_parietal_like',byid)
+        self.assertNotIn('Epi_renal_distal_collecting_podocyte_like',byid)
+        self.assertNotIn('SMOC2',byid['Epi_intestinal_stem_like']['positive_genes'])
+
+    def test_v2_overlay_byte_replay(self):
+        with tempfile.TemporaryDirectory() as temp:
+            out=Path(temp)/'overlay'; write(ROOT,out)
+            for p in out.iterdir():self.assertEqual(p.read_bytes(),(RESOURCE/p.name).read_bytes())
 
 if __name__=='__main__': unittest.main(verbosity=2)

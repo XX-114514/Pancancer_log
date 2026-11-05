@@ -1,6 +1,6 @@
 # PanCancer
 
-> **组织上皮面板扩展（2026-11-05）**：[完整32项基因与文献表](resources/annotation/v7_epithelial_extension_v1/ALL_PANELS.md) · [原始121条基因记录的逐项处置](resources/annotation/v7_epithelial_extension_v1/ORIGINAL_GENE_REVIEW.md)。原文件实际26组，拆分后新增25、复用7；合并资源137模块。资源与反例验证已完成，全V7细胞重新注释尚未完成。
+> **组织上皮面板扩展（2026-11-05）**：[完整32项基因与文献表](resources/annotation/v7_epithelial_extension_v1/ALL_PANELS.md) · [原始121条基因记录的逐项处置](resources/annotation/v7_epithelial_extension_v1/ORIGINAL_GENE_REVIEW.md) · [保留Lodi模块的185项TME兼容版](resources/annotation/v7_epithelial_extension_v1/TME_V2_COMPATIBILITY.md)。原文件实际26组，拆分后新增25、复用7；V7扩展对照版137模块。11项检查通过，全V7细胞重新注释尚未完成。
 
 > **V7 panel修复（2026-11-05）**：[完整112项基因表与162项旧规则迁移](resources/annotation/v7_panel_repair_v1/README.md) · [Excel](resources/annotation/v7_panel_repair_v1/V7_panel_repair_v1.xlsx) · [文献与算法说明](methods/V7-panel-repair-literature-workflow-20261105.md)。新版规则和验证已交付，全V7逐细胞重新注释仍待完成。
 

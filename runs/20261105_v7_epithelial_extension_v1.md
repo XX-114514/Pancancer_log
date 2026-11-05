@@ -15,3 +15,9 @@
 下一步：在既有V7谱系审阅流程中显式选用新registry，按来源检查实际测量、同细胞共表达、DEG与参考映射；补尚待核实的基因及原26项未覆盖的上皮类别。详见[方法](../methods/V7-epithelial-extension-20261105.md)和[任务日志](../logs/codex/2026/2026-11-05_v7-epithelial-extension.md)。
 
 执行环境：构建Python 3.9（仅标准库）；验证Python 3.12.14、pandas 2.2.3、numpy 2.3.5。合并registry SHA256：`b86d81388094b163029fdd4473441542f9fb164dbbfbde246aa0e720d26b9dc3`。
+
+## 并发TME v2兼容补充
+
+2026-11-05 07:09:54 UTC / 15:09:54 UTC+8取证：首次普通push因远端并发提交3400d49而被Git拒绝（non-fast-forward），正常fetch/merge保留双方历史。新TME v2的179模块中仍有混合上皮项目组合，因此另加compose_tme_v2.py和185模块兼容registry：19个项目上皮模块替换为25项，近端小管更新，159个模块内容保持相同，41个Lodi作者代码/参照模块逐字段保留。原v2 JSON不改，README增加新版本入口。两项兼容/字节重放测试加入，总计11/11通过。
+
+兼容registry SHA256为`c23a96b51a2d3394020ebef1c326cc1621e8a3ad23055878bebb0cbba9765cfe`；来源、替换映射与两个输入SHA见资源目录中的tme_v2_overlay_manifest.json。仅统一资源，没有切换正在运行的任务或更新任何细胞标签。

@@ -5,3 +5,9 @@
 新增25个候选模块，复用7个，合并资源137模块/473不同正向基因；胃、前列腺、肾脏混合身份拆开，乳腺管腔补分泌方向，正常性和器官唯一来源不自动推断。原121条基因记录完整保留，42条暂未导入对应目标；依据和原因见[逐项表](../../resources/annotation/v7_epithelial_extension_v1/ORIGINAL_GENE_REVIEW.md)。
 
 9项反例及字节重放检查通过；未重新注释全V7细胞。详见[run](../../runs/20261105_v7_epithelial_extension_v1.md)。
+
+## 并发TME v2兼容补充
+
+2026-11-05 07:09:54 UTC / 15:09:54 UTC+8取证：首次普通push因远端并发提交3400d49而被Git拒绝（non-fast-forward），正常fetch/merge保留双方历史。新TME v2的179模块中仍有混合上皮项目组合，因此另加compose_tme_v2.py和185模块兼容registry：19个项目上皮模块替换为25项，近端小管更新，159个模块内容保持相同，41个Lodi作者代码/参照模块逐字段保留。原v2 JSON不改，README增加新版本入口。两项兼容/字节重放测试加入，总计11/11通过。
+
+兼容registry SHA256为`c23a96b51a2d3394020ebef1c326cc1621e8a3ad23055878bebb0cbba9765cfe`；来源、替换映射与两个输入SHA见资源目录中的tme_v2_overlay_manifest.json。仅统一资源，没有切换正在运行的任务或更新任何细胞标签。

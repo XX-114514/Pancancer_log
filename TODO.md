@@ -1,6 +1,6 @@
 ## 2026-11-05 组织上皮注释扩展后续
 
-- [x] 完成原26组的拆分、25个新增候选、逐基因来源与9项反例检查，见[资源](resources/annotation/v7_epithelial_extension_v1/README.md)。
+- [x] 完成原26组的拆分、25个新增候选、逐基因来源与11项反例检查，见[资源](resources/annotation/v7_epithelial_extension_v1/README.md)。
 - [ ] 在V7上皮审阅中显式使用新registry，检查实际测量、同细胞共表达和完整DEG；补原候选待核实基因与未覆盖类型，不强制按面板数量分群。
 
 ## 2026-11-05 系统审计后的执行优先级

@@ -24,6 +24,10 @@
 
 现有 `scripts/v7_panel_repair_v1/evidence_engine.py` 兼容新registry，保留全部候选，无argmax、统一分差阈值或自动终判。`each_core_component_has_measured_gene`仅表示组件有测量记录，**即使表达全为零也可能为True**；`min_component_max_detection`是边际检出摘要，不能当同细胞共表达比例。这里未新增文献未验证的数值身份门槛。
 
+## 与TME注释v2共用
+
+远端并发加入179模块的TME v2后，本轮追加[185模块兼容资源](../resources/annotation/v7_epithelial_extension_v1/TME_V2_COMPATIBILITY.md)：保留41个Lodi模块与其他非上皮内容，将19个项目整理上皮组合替换为本次25项，另更新近端小管。沿用TME v2工作流时，把下方registry路径改为`resources/annotation/v7_epithelial_extension_v1/tme_v2_registry_reviewed.json`；下面的137模块示例是V7对照版本。
+
 ## 可复现入口
 
 从仓库根目录使用含pandas/numpy的Python环境。构建只读输入，输出目录必须不存在：
