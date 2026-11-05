@@ -1,0 +1,10 @@
+{
+  "run_version": "20261103_V7_downstream_v1",
+  "status": "INPUTS_UNAVAILABLE_NOT_RUN",
+  "annotation_version": "pancancer_annotation_v7_cnv_rerun_20260905",
+  "cm_primary": {"filter":"strict_major_eligible_v7 and not exclude_from_primary_major_v2 and strict_downstream_subtype_eligible_v7", "malignancy":"cluster_primary_nullable", "rank":9,"rank_reason":"controlled comparison to V5, not newly selected optimal rank", "nrun":30,"min_sample_cells":100,"normalization":"within_parent_frequency_then_feature_minmax"},
+  "cm_sensitivity": ["V7_all_display_labels_legacy_comparison", "strict_intersection_malignancy", "rank_survey", "leave_one_source_out"],
+  "liana": {"method":"rank_aggregate","resource":"consensus","min_cells":20,"expr_prop":0.1,"seed":1337,"scope":"all_eligible_state_pairs_per_sample_before_CM_annotation","thresholds":[0.01,0.05,0.1]},
+  "spatial": {"primary_bin_um":50,"sensitivity_bin_um":[25,100],"permutations":999,"seed":1337,"replicate":"patient","mapping":"V7_states_only_if_measurably_identifiable","multiplicity":"BH_over_LR_by_bin_per_section","hotspot_direction":"High-High","mode":"LR_category_specific_predeclared"},
+  "receiver": {"unit":"patient_by_receiver_state","covariates":["receiver_depth","sender_abundance","receiver_abundance","compartment","source"],"genes":"independent_downstream_targets_exclude_annotation_and_LR_genes","validation":"patient_or_source_heldout"}
+}
