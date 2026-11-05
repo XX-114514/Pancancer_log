@@ -2,6 +2,8 @@
 
 冻结输入SHA256：`e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e`。4676787细胞、26个major、106个最终标签。
 
+后续当前入口：[Mast扩展复核与带目标名称的15群图](Mast_source_review_v1/README.md)；[Tcell_6全子集来源敏感性诊断](T6_diagnostic_v1/README.md)。下列27群是保留的首轮初诊背景，新旧群编号不可互换。
+
 - [106标签原因与处理](V7_106标签原因与处理表.tsv)：含原cluster计数、旧门槛、父类修订、CellTypist大类聚合及当前处理；完整106行计数守恒。
 - [父类计数与待重建数](v7_major_reason_audit.tsv)：旧strict字段仅为历史判定，不能代替本轮验收。
 - [机器可读逐标签证据](v7_label_reason_audit.tsv)与[旧cluster crosswalk](v7_label_legacy_cluster_crosswalk.tsv)。

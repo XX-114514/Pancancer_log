@@ -1,0 +1,16 @@
+cluster	display_annotation	n_cells	n_sources	n_joint_doublet_candidates	doublet_percentile_median	decontx_contamination_median	n_T_program_review	n_B_program_review	n_Plasma_program_review	n_Myeloid_program_review	n_Stromal_program_review	n_Epithelial_program_review	n_Endothelial_program_review	n_Platelet_program_review
+0	Mast (coarse identity)	9311	41	1	0.169469599	0.0141420458	3	0	7	10	5	25	0	0
+1	Mast; NFKB1/VEGFA program [state]	7618	38	1	0.2102889936	0.012724299	1	3	5	8	3	50	2	0
+2	Mast; heat-shock/IEG program [state]	7098	39	0	0.2635561912	0.0112999287	0	0	6	10	3	55	0	0
+3	Mast; ITGA2B/RGS16 profile [review]	3347	39	4	0.2641337811	0.0179830082	6	1	7	9	2	47	0	3
+4	Mast (coarse identity)	1907	39	2	0.1507537688	0.0238956586	1	0	2	2	1	12	0	0
+5	Mast + T program [review]	1559	37	301	0.926577188	0.1540010422	620	7	7	6	1	12	0	0
+6	IFN-associated Mast [state]	1233	37	0	0.3131171977	0.0200922694	0	1	1	1	1	11	0	0
+7	Mast; PHGR1 profile [review]	965	34	28	0.3286977145	0.0500895418	8	2	4	5	7	153	0	0
+8	Mast; Ig-variable RNA [review]	593	14	3	0.3199279712	0.0562756695	16	0	42	0	0	6	0	0
+9	Mast + myeloid program [review]	567	34	189	0.9326640836	0.1712885499	26	3	3	281	2	5	0	0
+10	Cycling Mast [state]	503	35	9	0.5912646013	0.0416827835	11	1	6	2	3	22	1	1
+11	Mast + stromal/endo program [review]	498	31	46	0.7621046087	0.2668979764	37	2	7	23	45	14	65	0
+12	Mast; Ig-constant RNA [review]	386	23	29	0.473669924	0.0602869391	3	10	96	1	0	1	0	0
+13	Mast + B-cell program [review]	334	29	76	0.9037341299	0.1400877535	2	160	7	3	0	4	0	0
+14	Mast; KLF2/IGHG4 profile [review]	88	2	0	0.249300855	0.0099950852	0	0	0	0	0	0	0	0

@@ -1,0 +1,16 @@
+cluster	display_annotation	annotation_level
+0	Mast (coarse identity)	working_major_or_state_not_final_subtype
+1	Mast; NFKB1/VEGFA program [state]	working_major_or_state_not_final_subtype
+2	Mast; heat-shock/IEG program [state]	working_major_or_state_not_final_subtype
+3	Mast; ITGA2B/RGS16 profile [review]	working_major_or_state_not_final_subtype
+4	Mast (coarse identity)	working_major_or_state_not_final_subtype
+5	Mast + T program [review]	working_major_or_state_not_final_subtype
+6	IFN-associated Mast [state]	working_major_or_state_not_final_subtype
+7	Mast; PHGR1 profile [review]	working_major_or_state_not_final_subtype
+8	Mast; Ig-variable RNA [review]	working_major_or_state_not_final_subtype
+9	Mast + myeloid program [review]	working_major_or_state_not_final_subtype
+10	Cycling Mast [state]	working_major_or_state_not_final_subtype
+11	Mast + stromal/endo program [review]	working_major_or_state_not_final_subtype
+12	Mast; Ig-constant RNA [review]	working_major_or_state_not_final_subtype
+13	Mast + B-cell program [review]	working_major_or_state_not_final_subtype
+14	Mast; KLF2/IGHG4 profile [review]	working_major_or_state_not_final_subtype

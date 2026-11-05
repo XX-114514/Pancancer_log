@@ -1,0 +1,113 @@
+cluster	reference_field	label	n_cells	total_cluster_cells
+0	ev_celltypist_label	Regulatory T cells	47260	49866
+0	ev_celltypist_label	Tem/Effector helper T cells	1380	49866
+0	ev_celltypist_label	Type 17 helper T cells	396	49866
+0	ev_celltypist_label	Follicular helper T cells	188	49866
+0	ev_celltypist_label	Type 1 helper T cells	165	49866
+0	scatomic_full_label	T regulatory cells	31906	49866
+0	scatomic_full_label	CD4+ T cell	12201	49866
+0	scatomic_full_label	Effector/Memory CD4+ T cells	2135	49866
+0	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	808	49866
+0	scatomic_full_label	CD4 or CD8 T cell	761	49866
+1	ev_celltypist_label	Regulatory T cells	27414	28692
+1	ev_celltypist_label	Tem/Effector helper T cells	541	28692
+1	ev_celltypist_label	Type 17 helper T cells	354	28692
+1	ev_celltypist_label	Tem/Trm cytotoxic T cells	108	28692
+1	ev_celltypist_label	Type 1 helper T cells	95	28692
+1	scatomic_full_label	T regulatory cells	19718	28692
+1	scatomic_full_label	CD4+ T cell	4545	28692
+1	scatomic_full_label	Effector/Memory CD4+ T cells	1126	28692
+1	scatomic_full_label	CD4 or CD8 T cell	675	28692
+1	scatomic_full_label	CD8+ T cell	630	28692
+2	ev_celltypist_label	Regulatory T cells	23697	23856
+2	ev_celltypist_label	Tem/Effector helper T cells	51	23856
+2	ev_celltypist_label	Type 17 helper T cells	40	23856
+2	ev_celltypist_label	T(agonist)	21	23856
+2	ev_celltypist_label	Tem/Trm cytotoxic T cells	14	23856
+2	scatomic_full_label	T regulatory cells	21694	23856
+2	scatomic_full_label	CD4+ T cell	791	23856
+2	scatomic_full_label	CD4 or CD8 T cell	380	23856
+2	scatomic_full_label	CD8+ T cell	198	23856
+2	scatomic_full_label	Exhausted CD8+ T cells	155	23856
+3	ev_celltypist_label	Regulatory T cells	16188	18818
+3	ev_celltypist_label	Tem/Effector helper T cells	1088	18818
+3	ev_celltypist_label	Follicular helper T cells	884	18818
+3	ev_celltypist_label	Tem/Trm cytotoxic T cells	200	18818
+3	ev_celltypist_label	Treg(diff)	120	18818
+3	scatomic_full_label	CD4+ T cell	7998	18818
+3	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	7788	18818
+3	scatomic_full_label	T regulatory cells	1208	18818
+3	scatomic_full_label	Naive CD4+ T cells	372	18818
+3	scatomic_full_label	Effector/Memory CD4+ T cells	368	18818
+4	ev_celltypist_label	Regulatory T cells	12796	17666
+4	ev_celltypist_label	Tem/Effector helper T cells	2042	17666
+4	ev_celltypist_label	Type 17 helper T cells	1264	17666
+4	ev_celltypist_label	Type 1 helper T cells	667	17666
+4	ev_celltypist_label	Tem/Trm cytotoxic T cells	232	17666
+4	scatomic_full_label	CD4+ T cell	6434	17666
+4	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	4972	17666
+4	scatomic_full_label	Effector/Memory CD4+ T cells	2772	17666
+4	scatomic_full_label	T regulatory cells	1646	17666
+4	scatomic_full_label	CD4 or CD8 T cell	793	17666
+5	ev_celltypist_label	Regulatory T cells	8539	9330
+5	ev_celltypist_label	Tem/Effector helper T cells	540	9330
+5	ev_celltypist_label	Type 1 helper T cells	73	9330
+5	ev_celltypist_label	Type 17 helper T cells	61	9330
+5	ev_celltypist_label	Tem/Trm cytotoxic T cells	49	9330
+5	scatomic_full_label	T regulatory cells	6144	9330
+5	scatomic_full_label	CD4+ T cell	1302	9330
+5	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	671	9330
+5	scatomic_full_label	Effector/Memory CD4+ T cells	513	9330
+5	scatomic_full_label	CD4 or CD8 T cell	198	9330
+6	ev_celltypist_label	Regulatory T cells	2967	3167
+6	ev_celltypist_label	Tem/Effector helper T cells	80	3167
+6	ev_celltypist_label	Type 17 helper T cells	43	3167
+6	ev_celltypist_label	Type 1 helper T cells	21	3167
+6	ev_celltypist_label	Plasma cells	10	3167
+6	scatomic_full_label	T regulatory cells	1399	3167
+6	scatomic_full_label	CD4+ T cell	983	3167
+6	scatomic_full_label	Plasmablast	234	3167
+6	scatomic_full_label	Blood Cell	179	3167
+6	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	93	3167
+7	ev_celltypist_label	Regulatory T cells	1288	2232
+7	ev_celltypist_label	Tem/Trm cytotoxic T cells	537	2232
+7	ev_celltypist_label	Memory CD4+ cytotoxic T cells	261	2232
+7	ev_celltypist_label	Tem/Effector helper T cells	76	2232
+7	ev_celltypist_label	Type 1 helper T cells	20	2232
+7	scatomic_full_label	CD4+ T cell	772	2232
+7	scatomic_full_label	Effector/Memory CD4+ T cells	549	2232
+7	scatomic_full_label	CD4 or CD8 T cell	235	2232
+7	scatomic_full_label	T regulatory cells	178	2232
+7	scatomic_full_label	Effector/Memory CD8+ T cells	167	2232
+8	ev_celltypist_label	Regulatory T cells	1728	1837
+8	ev_celltypist_label	Type 17 helper T cells	49	1837
+8	ev_celltypist_label	Tem/Effector helper T cells	28	1837
+8	ev_celltypist_label	Follicular helper T cells	6	1837
+8	ev_celltypist_label	Tem/Trm cytotoxic T cells	6	1837
+8	scatomic_full_label	T regulatory cells	1060	1837
+8	scatomic_full_label	CD4+ T cell	345	1837
+8	scatomic_full_label	CD4 or CD8 T cell	116	1837
+8	scatomic_full_label	Effector/Memory CD4+ T cells	102	1837
+8	scatomic_full_label	Effector/Memory CD8+ T cells	69	1837
+9	ev_celltypist_label	Regulatory T cells	900	1027
+9	ev_celltypist_label	Macrophages	35	1027
+9	ev_celltypist_label	Tem/Effector helper T cells	32	1027
+9	ev_celltypist_label	Monocytes	14	1027
+9	ev_celltypist_label	Tem/Trm cytotoxic T cells	8	1027
+9	scatomic_full_label	T regulatory cells	219	1027
+9	scatomic_full_label	Blood Cell	124	1027
+9	scatomic_full_label	Macrophage or Dendritic Cell	119	1027
+9	scatomic_full_label	Phagocytosis Macrophage	102	1027
+9	scatomic_full_label	Pro-angiogenesis Macrophage	97	1027
+10	ev_celltypist_label	Regulatory T cells	129	138
+10	ev_celltypist_label	Treg(diff)	2	138
+10	ev_celltypist_label	Tem/Temra cytotoxic T cells	2	138
+10	ev_celltypist_label	Naive B cells	1	138
+10	ev_celltypist_label	Type 17 helper T cells	1	138
+10	scatomic_full_label	T regulatory cells	53	138
+10	scatomic_full_label	CD4+ T cell	38	138
+10	scatomic_full_label	Any Cell	11	138
+10	scatomic_full_label	Blood Cell	10	138
+10	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	6	138
+11	ev_celltypist_label	Regulatory T cells	2	2
+11	scatomic_full_label	T regulatory cells	2	2

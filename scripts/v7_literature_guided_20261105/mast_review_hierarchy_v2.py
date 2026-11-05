@@ -1,0 +1,19 @@
+import os,json
+from pathlib import Path
+from datetime import datetime,timezone
+import numpy as np,pandas as pd
+ROOT=Path(os.environ.get('PROJECT_ROOT',str(globals().get('PROJECT_ROOT',''))));r=ROOT/'annotation_rebuild/20261105_v7_literature_guided_reannotation_v1/stage_i_mast_extended_review_v1';o=r/'hierarchical_v2';o.mkdir(exist_ok=False)
+q=pd.read_pickle(r/'Mast_annotation_review_v1_PRIVATE.pkl.gz');base=q[['major_celltype_v7','final_annotation_v7','annotation_confidence_v7']].copy();parent=q.Mast_tryptase_plus_support_raw2.to_numpy();clear=q.review_route_v4.eq('marker_supported_Mast_coarse').to_numpy()
+base['parent_identity']=np.where(parent,'Mast_marker_supported_candidate','Mast_candidate_low_signal');base['parent_support']=np.where(parent,'tryptase_plus_second_Mast_component_each_ge2_raw_UMI','below_conservative_cross_functional_marker_rule')
+comps=['T','B','Plasma','Myeloid','Stromal','Epithelial','Endothelial','Platelet'];base['parent_conflicts']=[','.join(c for c in comps if q.iloc[i]['extended_'+c+'_program_review']) for i in range(len(q))]
+base['identity_subtype']=pd.NA;base['subtype_status']=np.where(clear,'coarse_Mast_endpoint_no_subtype_assigned','blocked_by_identity_or_QC_review')
+programs=['MCTC','MCT','cycling','IFN','HLAII'];base['state_programs']=[json.dumps([p for p in programs if q.iloc[i]['positive_'+p+'_marker_program']]) for i in range(len(q))]
+base['qc_review']=q.review_route_v4.to_numpy();base['admixture_hypothesis']=np.where(base.parent_conflicts.ne(''),'ambient_or_doublet_or_related_program_not_resolved','no_extended_competing_program_detected_under_this_rule')
+base['resolved_at_major']=clear;base['qc_pending']=base.parent_conflicts.ne('');base['parent_ambiguous']=~parent&base.parent_conflicts.ne('');base['parent_low_signal']=~parent
+base['published_QC_sensitivity_pass']=q.panMC_published_QC_pass.to_numpy();base['version']='V7_Mast_review_20261105_hierarchical_v2'
+base.to_pickle(o/'Mast_hierarchical_review_v2_PRIVATE.pkl.gz');back=pd.read_pickle(o/'Mast_hierarchical_review_v2_PRIVATE.pkl.gz');pd.testing.assert_frame_equal(base,back)
+assert len(base)==45036 and base.resolved_at_major.sum()==38959
+for c in ['major_celltype_v7','final_annotation_v7','annotation_confidence_v7']:assert base[c].equals(q[c])
+c=base.groupby(['parent_identity','qc_review','resolved_at_major','subtype_status'],dropna=False,observed=True).size().reset_index(name='n_cells');assert c.n_cells.sum()==45036;c.to_csv(o/'Mast_hierarchical_status_counts.tsv',sep='\t',index=False)
+schema={'parent_identity':'Candidate lineage evidence; not a purity assertion. Read together with parent_support and parent_conflicts.','identity_subtype':'No mature fine subtype assigned in this review.','state_programs':'Nonexclusive positive RNA marker programs; MC_T/MC_TC associations remain candidates.','qc_review':'Independent quality/mixture review route, not a lineage subtype.','resolved_at_major':'38959 marker-supported coarse Mast records under the expanded panel; not a final primary-analysis acceptance flag.','qc_pending':'Competing program detected; ambient, doublet and biological sharing remain to distinguish.','parent_low_signal':'Below conservative marker support rule; not evidence that Mast identity is false.','published_QC_sensitivity_pass':'Numeric pan-MC QC sensitivity, not universal final QC or patient/source acceptance.'}
+(o/'annotation_schema.json').write_text(json.dumps(schema,indent=2));res={'status':'completed_hierarchical_Mast_review_schema_v2','UTC':datetime.now(timezone.utc).isoformat(),'n_cells':len(base),'n_resolved_at_major':int(clear.sum()),'original_labels_exact':True,'fine_subtypes_assigned':0,'cell_level_data_private':True};(o/'complete.json').write_text(json.dumps(res,indent=2));print(json.dumps({'manifest':res,'counts':c.to_dict('records'),'schema':schema}))

@@ -1,0 +1,25 @@
+{
+  "status": "completed_source_robust_QC_sensitivity_refit",
+  "UTC_start": "2026-11-05 04:15:48 UTC",
+  "UTC_end": "2026-11-05 04:20:37 UTC",
+  "n_cells": 36007,
+  "n_RNA_features": 95038,
+  "n_model_feature_candidates": 17136,
+  "n_HVG": 2000,
+  "n_PCA": 50,
+  "graph_PCs": 30,
+  "source_covariate": "gse_id; explicit source sensitivity, Technology unverified",
+  "resolutions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "marker_resolution": 0.4,
+  "normalization": "Original full-library RNA LogNormalize preserved",
+  "regressed_variables": [],
+  "Seurat": "5.3.1",
+  "Harmony": "1.2.4",
+  "new_final_annotation_changes": 0
+}

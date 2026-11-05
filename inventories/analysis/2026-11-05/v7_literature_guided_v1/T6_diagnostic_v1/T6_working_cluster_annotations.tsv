@@ -1,0 +1,13 @@
+cluster	display_annotation	annotation_level
+0	Treg-enriched T (coarse)	working_identity_or_state_not_final_subtype
+1	Treg-enriched T (coarse)	working_identity_or_state_not_final_subtype
+2	Treg-enriched T; activation [state]	working_identity_or_state_not_final_subtype
+3	CD4 T; CXCL13/TCF7 [candidate]	working_identity_or_state_not_final_subtype
+4	CD4 T; CXCL13/GZMA [candidate]	working_identity_or_state_not_final_subtype
+5	Treg-enriched T; IFN [state]	working_identity_or_state_not_final_subtype
+6	T + Ig-constant RNA [review]	working_identity_or_state_not_final_subtype
+7	T; GZMK-enriched [state]	working_identity_or_state_not_final_subtype
+8	T + Ig-variable RNA [review]	working_identity_or_state_not_final_subtype
+9	T + myeloid program [review]	working_identity_or_state_not_final_subtype
+10	T candidate; low signal [review]	working_identity_or_state_not_final_subtype
+11	Tiny T candidate; n=2 [review]	working_identity_or_state_not_final_subtype

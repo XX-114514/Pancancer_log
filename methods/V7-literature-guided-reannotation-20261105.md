@@ -51,3 +51,21 @@ Mast的MC_T/MC_TC相关RNA panel参考[JCI2025原研究](https://www.jci.org/art
 图分为身份/候选亚型/状态、竞争谱系QC、文献参考panel三张，保留逐来源可测性分母。颜色为各基因内部标准化的log1p平均CP10K，点大小为可测细胞中检出比例；来源覆盖不足80%用×标识，不把未测量当0。
 
 Mast本轮继续使用原始样本与doublet_method分层的完整背景校准doublet分位；高分与多谱系共表达的联合条件只产生doublet候选。H敏感性采用pan-MC代码中的counts/feature/mt数值QC、跨功能Mast阳性marker及无强竞争程序，并以49个实际Mast来源中至少80%可测的基因作为模型候选。完整RNA assay和marker轴保留；按GSE做Harmony是明确的来源敏感性，不能冒称已复现未知Technology变量，也不能以混合更好作为生物学准确率。没有任何整群自动删除。
+
+## Mast扩展复核与层级输出
+
+H的初始竞争panel只有T、髓系、间质和上皮。来源敏感性RNA DEGs仍发现B/Ig程序，所以I补充B、浆细胞、内皮、血小板并扩展T/髓系panel。Ig单独不作为浆细胞身份；ITGA2B单独不作为血小板身份；共享TYROBP不作为异源髓系冲突。8类panel出现至少3个基因各≥1 raw UMI，或至少2个基因各≥2 raw UMI，触发复核。阈值是保守、可追溯的审阅规则，未训练成身份概率或双细胞准确率模型。
+
+Mast父类支持要求TPSAB1/TPSB2至少一个，加CPA3/KIT/MS4A2至少一个，各≥2 raw UMI；低于规则记录low signal，不据此否定真实Mast。竞争程序与原记录样本/方法内doublet分位≥95%联合时才记joint doublet candidate，仍不确诊双细胞或自动排除。记录样本单位不默认独立患者或经验证的独立建库。
+
+细胞级新overlay将`parent_identity`、`parent_support`、`parent_conflicts`、`identity_subtype`、`subtype_status`、`state_programs`、`qc_review`与`admixture_hypothesis`分开，保留全部旧字段。对应[panel语义审计](V7-panel-semantics-audit-20261105.md)的身份/状态/QC区分，`resolved_at_major`仅表示此轮规则下可停在Mast大类，不等于最终主分析纳入、谱系纯度或发表级验收。MC_T/MC_TC阳性RNA关联非互斥，仍是候选；未给任何细胞硬赋成熟亚型。
+
+[当前Mast证据与带目标名称的新版图](../inventories/analysis/2026-11-05/v7_literature_guided_v1/Mast_source_review_v1/README.md)包括全部45036细胞分流和36007细胞敏感性模型的15群。模型子集和全体复核的分母不同，群富集状态与单细胞双marker阳性数量也不同，不能互换。
+
+## Tcell_6的工作注释与阳性证据
+
+原T6全156631细胞单独重建只是诊断范围，不替代全部T/NK/ILC共同父类分析。Treg核心与共享checkpoint、CD4/CD8背景、Tfh/Tph候选和状态分别画图。完整Chu2023 Table S6 Treg功能签名作参考，其余组合注明本项目适配，不逐字冒称作者判定器。FOXP3加IL2RA/IKZF2/IKZF4的同细胞阳性、T身份支持、RNA DEGs和来源结构共同用于review，不凭TIGIT或自动模型多数票转Treg。
+
+阳性raw规则只给证据下界：严格T组件要求至少一个CD3D/E/G和至少一个TRAC/TRBC1/2各≥2 UMI，再查看FOXP3及至少一个第二核心marker。未测组件与低于正证据阈值分开记录，未通过不作Treg阴性，也不抹除其他T身份证据。功能/状态可以与多个身份共存；CD8耗竭必须先有CD8身份背景。跨分辨率最大重叠Jaccard仅为同图敏感性，不等同独立来源留出复现。
+
+K-00/01不为增加亚型数而强分resting/effector；K-03/04先用CD4+marker描述，保留Tfh/Tph候选；K-06/08/09保留独立混合程序/QC复核。K-11虽跨分辨率不变，但只有2细胞、无有效DE检验且原记录计数异常高，不能因稳定而命名新亚型。[完整表和带目标标题的四张图](../inventories/analysis/2026-11-05/v7_literature_guided_v1/T6_diagnostic_v1/README.md)。

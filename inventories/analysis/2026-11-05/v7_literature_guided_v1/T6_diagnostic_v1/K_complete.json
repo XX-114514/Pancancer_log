@@ -1,0 +1,23 @@
+{
+  "status": "completed_T6_source_robust_initial_diagnostic",
+  "UTC_start": "2026-11-05 04:36:08 UTC",
+  "UTC_end": "2026-11-05 05:10:55 UTC",
+  "n_cells": 156631,
+  "n_RNA_features": 95038,
+  "n_HVG": 2000,
+  "n_model_feature_candidates": 17252,
+  "n_PCA": 50,
+  "graph_PCs": 30,
+  "source_covariate": "gse_id; source sensitivity, not verified Technology",
+  "resolutions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "marker_resolution": 0.4,
+  "normalization": "Full-library RNA LogNormalize 10000",
+  "regressed_variables": [],
+  "reference_labels_used_in_fit": false,
+  "new_final_annotation_changes": 0
+}

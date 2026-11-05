@@ -2388,3 +2388,13 @@ Tcell_6旧winner排序遗漏完整Treg候选的原因已实证；补查841/842�
 ## V7 panel 规则审计（2026-11-05）
 
 [审计](methods/V7-panel-semantics-audit-20261105.md)完成 162 个候选及 17 组父类正负 panel 审查，373 个历史候选复算一致。共享程序被命名为污染、身份与状态混层、无效第一名遮蔽后续候选均有代码/聚合证据；9 群 323,669 个细胞为待复核范围，非纠正数。V7 标签未改。后续按父身份→分支→状态分别审查 T/NK/ILC，已 high/medium 标签也需抽查。见[run](runs/20261105_v7_panel_semantics_audit_v1.md)。
+
+### V7 marker对应类型图与Mast/Tcell_6复核（2026-11-05当前节点）
+
+截至05:22:13 UTC / 13:22:13 UTC+8，本轮已启动阶段均取得实际终端，无本轮已知活动拟合。新图同时标出marker对应身份/候选亚型/状态，以及每群工作注释和n。冻结4676787细胞V7标签不变，未发布最终全图谱修订。
+
+[Mast当前证据与三张图](inventories/analysis/2026-11-05/v7_literature_guided_v1/Mast_source_review_v1/README.md)：45036候选全保留，38959支持停在Mast大类（含18241原unresolved）；6077保留具体低信号/竞争/QC原因，其中1323只是联合doublet候选。36007细胞来源敏感性得到15工作群，不是15成熟亚型；1425表达记录/背景分位/来源HVG独立算术复核PASS。
+
+[Tcell_6当前证据与四张图](inventories/analysis/2026-11-05/v7_literature_guided_v1/T6_diagnostic_v1/README.md)：全156631细胞/95038基因重建实际exit0，12工作分区、1212 marker记录与156631背景分位独立算术复核PASS。36484细胞的CD4/CXCL13程序不能按CellTypist多数票全部转Treg；IFN、激活和GZMK等状态独立描述。25753细胞的必要marker组件不可测，已与低正证据分开；845联合doublet候选未确诊。极小群、Ig/髓系混合程序、完整T/NK/ILC边界和最终亚型仍待验收。
+
+以上为新阶段实测状态；较早27群或“仍在运行”节点仅是历史背景。具体参数、失败恢复、限制和下一步见[run](runs/20261105_v7_literature_guided_reannotation_v1.md)。

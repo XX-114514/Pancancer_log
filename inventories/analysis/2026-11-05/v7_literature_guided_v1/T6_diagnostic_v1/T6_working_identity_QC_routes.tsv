@@ -1,0 +1,41 @@
+cluster_annotation_working	qc_review	n_cells
+CD4 T; CXCL13/GZMA [candidate]	competing_program_review	281
+CD4 T; CXCL13/GZMA [candidate]	joint_doublet_candidate_review	26
+CD4 T; CXCL13/GZMA [candidate]	low_marker_support_review	5214
+CD4 T; CXCL13/GZMA [candidate]	no_extended_competitor_detected_under_this_rule	12145
+CD4 T; CXCL13/TCF7 [candidate]	competing_program_review	417
+CD4 T; CXCL13/TCF7 [candidate]	joint_doublet_candidate_review	74
+CD4 T; CXCL13/TCF7 [candidate]	low_marker_support_review	5355
+CD4 T; CXCL13/TCF7 [candidate]	no_extended_competitor_detected_under_this_rule	12972
+T + Ig-constant RNA [review]	competing_program_review	309
+T + Ig-constant RNA [review]	joint_doublet_candidate_review	147
+T + Ig-constant RNA [review]	low_marker_support_review	438
+T + Ig-constant RNA [review]	no_extended_competitor_detected_under_this_rule	2273
+T + Ig-variable RNA [review]	competing_program_review	297
+T + Ig-variable RNA [review]	joint_doublet_candidate_review	15
+T + Ig-variable RNA [review]	low_marker_support_review	897
+T + Ig-variable RNA [review]	no_extended_competitor_detected_under_this_rule	628
+T + myeloid program [review]	competing_program_review	311
+T + myeloid program [review]	joint_doublet_candidate_review	245
+T + myeloid program [review]	low_marker_support_review	205
+T + myeloid program [review]	no_extended_competitor_detected_under_this_rule	266
+T candidate; low signal [review]	low_marker_support_review	105
+T candidate; low signal [review]	no_extended_competitor_detected_under_this_rule	33
+T; GZMK-enriched [state]	competing_program_review	26
+T; GZMK-enriched [state]	joint_doublet_candidate_review	8
+T; GZMK-enriched [state]	low_marker_support_review	744
+T; GZMK-enriched [state]	no_extended_competitor_detected_under_this_rule	1454
+Tiny T candidate; n=2 [review]	competing_program_review	1
+Tiny T candidate; n=2 [review]	low_marker_support_review	1
+Treg-enriched T (coarse)	competing_program_review	1376
+Treg-enriched T (coarse)	joint_doublet_candidate_review	268
+Treg-enriched T (coarse)	low_marker_support_review	26011
+Treg-enriched T (coarse)	no_extended_competitor_detected_under_this_rule	50903
+Treg-enriched T; IFN [state]	competing_program_review	172
+Treg-enriched T; IFN [state]	joint_doublet_candidate_review	23
+Treg-enriched T; IFN [state]	low_marker_support_review	3524
+Treg-enriched T; IFN [state]	no_extended_competitor_detected_under_this_rule	5611
+Treg-enriched T; activation [state]	competing_program_review	821
+Treg-enriched T; activation [state]	joint_doublet_candidate_review	39
+Treg-enriched T; activation [state]	low_marker_support_review	7870
+Treg-enriched T; activation [state]	no_extended_competitor_detected_under_this_rule	15126

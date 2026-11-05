@@ -1,0 +1,14 @@
+{
+  "0": "Treg-enriched T (coarse)",
+  "1": "Treg-enriched T (coarse)",
+  "2": "Treg-enriched T; activation [state]",
+  "3": "CD4 T; CXCL13/TCF7 [candidate]",
+  "4": "CD4 T; CXCL13/GZMA [candidate]",
+  "5": "Treg-enriched T; IFN [state]",
+  "6": "T + Ig-constant RNA [review]",
+  "7": "T; GZMK-enriched [state]",
+  "8": "T + Ig-variable RNA [review]",
+  "9": "T + myeloid program [review]",
+  "10": "T candidate; low signal [review]",
+  "11": "Tiny T candidate; n=2 [review]"
+}
