@@ -1,0 +1,16 @@
+{
+  "schema": "V7_literature_guided_review_publication_v1",
+  "target": "https://github.com/XX-114514/Pancancer_log",
+  "content_commit_sha": "4fa722cdcb3c535997d2c3d267cc986b05ded957",
+  "base_main_sha": "29c5f8d473f5c318b5fda7ab8d2c4bf121711f90",
+  "UTC_remote_verification": "2026-11-05T03:02:32.127141+00:00",
+  "UTC8_remote_verification": "2026-11-05T11:02:32.127141+08:00",
+  "verification": "Ordinary push actual0 followed by independent git ls-remote origin refs/heads/main exact full-SHA match",
+  "n_content_files": 32,
+  "repository_validator": "0 errors, 1 pre-existing warning",
+  "owned_sensitive_pattern_hits": 0,
+  "diff_check": "PASS after explicit NA serialization for unmeasured expression fields; numeric readback unchanged",
+  "frozen_V7_SHA256": "e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e",
+  "whole_project_final_annotation_complete": false,
+  "cell_rows_matrices_credentials_published": false
+}

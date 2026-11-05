@@ -1,0 +1,94 @@
+{
+  "renderer": "scripts/render_current_work_figures.py",
+  "renderer_sha256": "e7615554750c1cdffa5e9e29163cf38503d87596aee61e6a48ee7db0baecfd0b",
+  "python": "3.9.6",
+  "packages": {
+    "matplotlib": "3.9.4",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3"
+  },
+  "figures": {
+    "fig1_data_scope": {
+      "scope": "integration_v2 plus current TME/CoVarNet scope; not 0906 or CT75",
+      "sources": [
+        "inventories/integration_v2/composition_by_cancer.tsv",
+        "inventories/integration_v2/composition_by_batch.tsv",
+        "inventories/server_analysis/2026-11-05/version_crosswalk.tsv"
+      ]
+    },
+    "fig3_batch_metrics": {
+      "scope": "TME v1 shared benchmark; graph and embedding metrics have different evaluation sets",
+      "sources": [
+        "inventories/server_analysis/2026-11-05/tables/batch_benchmark/graph_metrics.tsv",
+        "inventories/server_analysis/2026-11-05/tables/batch_benchmark/scib_metrics.tsv"
+      ]
+    },
+    "fig4_annotation_routes": {
+      "scope": "GSE138709 full-source routed annotation v2; not all 72 sources",
+      "sources": [
+        "inventories/server_analysis/2026-11-05/annotation_pilots.json"
+      ]
+    },
+    "fig5_cm_identifiability": {
+      "scope": "Historical V7 strict rank and nine-method scale sensitivity; no refitting",
+      "sources": [
+        "inventories/server_analysis/2026-11-05/tables/v7_cm/primary_strict/rank_survey_v1.tsv",
+        "inventories/server_analysis/2026-11-05/nmf_scale_sensitivity.tsv"
+      ]
+    },
+    "fig6_spatial_membership": {
+      "scope": "V7 50um exploratory positivity; independent of CT75 numbering",
+      "sources": [
+        "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261103_wtop10_bin50.tsv",
+        "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261103_network_bin50.tsv",
+        "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261104_wtop10_bin50.tsv",
+        "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261104_network_bin50.tsv"
+      ]
+    },
+    "figS2_v7_source_material": {
+      "scope": "Latest fa2d26a aggregate report; shared-node W correlations and material-level activity shares, not causal attribution",
+      "sources": [
+        "docs/reports/20261103_V7_CM_blisa/tables/v7_primary_K9_LOSO_r.tsv",
+        "docs/reports/20261103_V7_CM_blisa/tables/CM_activity_share_by_sample_class.tsv"
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "docs/reports/20261103_V7_CM_blisa/tables/CM_activity_share_by_sample_class.tsv": "0092ab8b34fd4d9a32b0394a4f30c1c0df74bb48314dcf381bc4791cea1b6d3c",
+    "docs/reports/20261103_V7_CM_blisa/tables/v7_primary_K9_LOSO_r.tsv": "8b08d938ef79da3d9fce227191032ebe6560044094bcafc48d0f236d1b5af16a",
+    "inventories/integration_v2/composition_by_batch.tsv": "292d1d8d3b67d88feda32b29e0efb80a72a08efc0fd696ecbd77212b4789bbc9",
+    "inventories/integration_v2/composition_by_cancer.tsv": "cb37f1d39e3e56bdd544396c0c1966e01345a0f930bb2f6070119158bdc5c64d",
+    "inventories/server_analysis/2026-11-05/annotation_pilots.json": "febade51a225518f393c1ed1402a00c4563cf1536a5be21b042266a6a7512a50",
+    "inventories/server_analysis/2026-11-05/nmf_scale_sensitivity.tsv": "b4d00cce945a8fc1235b1e8d202832eaaa67d9fd789e826c8cd54b2c32d106c0",
+    "inventories/server_analysis/2026-11-05/tables/batch_benchmark/graph_metrics.tsv": "a8d20db17e589c2bf2e7b1f5b5449173a7d7c3a17a645299eb6ffa48886ee730",
+    "inventories/server_analysis/2026-11-05/tables/batch_benchmark/scib_metrics.tsv": "1eca09a8f19d75c3b929f6e2057977dcce608a44c9c2c7dd7cb5d85f8ec02d95",
+    "inventories/server_analysis/2026-11-05/tables/v7_cm/primary_strict/rank_survey_v1.tsv": "6ed34017db6857e05408e69321e8e77a8e809cadd05ba5dadbf4af4feaeb5911",
+    "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261103_network_bin50.tsv": "13fcd6f43add606c8f128efea202b14bb865dc06b79ec04af06a2b773631b0e3",
+    "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261103_wtop10_bin50.tsv": "f4d297190b646a55f5e31639efa9c7449fd2571287c4dfb96d9071331b6cdb03",
+    "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261104_network_bin50.tsv": "df30bcdb6b58bd5e46c735235e65db70946a6a1fa58677e02260e852570b054f",
+    "inventories/server_analysis/2026-11-05/tables/v7_spatial/cm_blisa_primary_strict_K9only_seed20261104_wtop10_bin50.tsv": "01b87adcb038fb4cab35c0dc837ed12216854387bd22da29301c4c0556dc5a1c",
+    "inventories/server_analysis/2026-11-05/version_crosswalk.tsv": "c3c64d93408bbddc495f49a9e31e0ca4df7025c05845d6ad542c1478d0e5d135"
+  },
+  "outputs_sha256": {
+    "atlas_umap_markers.png": "df8c5fe36fa5921f3d4d3dee59888d0e8dd415d4de154f95ad7f47d50f862da9",
+    "atlas_umap_source.png": "ca84af1ac2ee3f6222827e9b3d2dc1be09190c06ae70c0b3bdb1f4b4353287c3",
+    "fig1_data_scope.pdf": "146ce117bc8540ebb7ab2913583ba77412566ae3dbd20bf2e0e92a1b67324509",
+    "fig1_data_scope.png": "65454624d762ec5e706fede6fc0a9c3e29c565fe4eca32e92ee4392a578eefd0",
+    "fig2_batch_umap.pdf": "fe08accb5f71e89e46959db2952804ceedf70d79da298eb9937714796ea94b9f",
+    "fig2_batch_umap.png": "ac837ddc25091b078208a9cc8722f70308cae42aab58caad52436fb03c5404f8",
+    "fig3_batch_metrics.pdf": "8ce6347f8031da1c492488234c2d442e9d108cef2bd09a0d7a80ec75afac5622",
+    "fig3_batch_metrics.png": "b715b479eba44a48ac34e74a2e09cfc4a9ae9b0312d72babb3a062d1f99c8693",
+    "fig4_annotation_routes.pdf": "d0bd64d97bf34c5dcbf96314708537db046a7d0fc8af73a39deeb3c1cd1cbcb2",
+    "fig4_annotation_routes.png": "7d36ba3ec8dbd433396ede6edf3e66017780552b9ae77b109ff9722832076266",
+    "fig5_cm_identifiability.pdf": "da1511a021f3dbe3d0c96792dd65736193ebef21c52029a491e1131063614877",
+    "fig5_cm_identifiability.png": "1f1b47fd892145eb869da758f4920668ed4f096c20c705bbc159ce22860b8ee4",
+    "fig6_spatial_membership.pdf": "1aad24e1b094da64bddf88bac18ef4dc4ff2891944b398721ac05072f9864fef",
+    "fig6_spatial_membership.png": "2b3512ef476f6185d03c81f64a27b017a0f7c1db7b56154125f155da8d83a070",
+    "figS1_source_legend.pdf": "e4d1b2c8af654f7c996c260f8f64c50cbb31ef651b3e62763c8e43f541e3f864",
+    "figS1_source_legend.png": "231c0442ef6b3bcde810828ce48241bbd4e7ba84b542dd523f8f5d0570223570",
+    "figS2_v7_source_material.pdf": "0d881a340a97cb58174fe23a77afc98ef686c9b62a6b1888fa348083f7a72231",
+    "figS2_v7_source_material.png": "c51891d57c91c109ec6372a7f37d082ccfdfc4bdc2f9aa1dd45e37d2068ddbae"
+  },
+  "new_statistical_tests": false,
+  "new_scientific_model_fits": false
+}

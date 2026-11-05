@@ -1,0 +1,23 @@
+{
+  "status": "ordinary_publication_independently_verified",
+  "verified_UTC": "2026-11-05T05:27:07+00:00",
+  "verified_UTC_plus_8": "2026-11-05T13:27:07+08:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "branch": "main",
+  "content_commit": "fefc2074b911101f40bb2803a15259ba67e4b0ad",
+  "independent_ls_remote_main": "fefc2074b911101f40bb2803a15259ba67e4b0ad",
+  "ordinary_push_actual_exit": 0,
+  "n_reviewed_content_files": 76,
+  "n_marker_figures": 7,
+  "n_exact_PNG_SVG_artifacts": 14,
+  "repository_validation": {
+    "errors": 0,
+    "warnings": 1,
+    "warning_scope": "pre-existing; no new private paths or secrets in the reviewed files"
+  },
+  "diff_check_exit": 0,
+  "private_cells_and_matrices_published": false,
+  "frozen_V7_rewritten": false,
+  "final_whole_atlas_annotation_complete": false,
+  "receipt_scope": "Verifies the 76-file Mast/T6 marker-review content node; this later receipt has its own commit."
+}

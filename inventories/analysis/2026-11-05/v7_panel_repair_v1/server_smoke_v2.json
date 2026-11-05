@@ -1,0 +1,78 @@
+{
+  "terminal": {
+    "start_UTC": "2026-11-05T06:12:28.707194+00:00",
+    "updated_UTC": "2026-11-05T06:12:47.711151+00:00",
+    "stages": [
+      {
+        "stage": "fixture",
+        "exit_code": 0
+      },
+      {
+        "stage": "workflow",
+        "exit_code": 0
+      },
+      {
+        "stage": "verify",
+        "exit_code": 0
+      }
+    ],
+    "complete": true
+  },
+  "audit": {
+    "status": "PASS",
+    "scope": "synthetic only",
+    "retained_cells": 356,
+    "expected_QC_excluded": 4,
+    "n_clusters": 3,
+    "expression_rows_checked": 1227,
+    "max_abs_cp10k_error": 4.6896e-13,
+    "same_cell_Treg_rows_checked": 6,
+    "source_missingness_checked": true,
+    "final_cell_labels_assigned": 0
+  },
+  "complete": {
+    "status": "evidence_complete_no_final_labels",
+    "start_UTC": "2026-11-05 06:12:33 UTC",
+    "end_UTC": "2026-11-05 06:12:42 UTC",
+    "n_cells": 356,
+    "n_features": 2100,
+    "qc": "reviewed_keep_manifest_applied_rebuild_from_counts",
+    "reduction": "pca",
+    "Seurat": "5.3.1",
+    "UCell": "not_requested",
+    "config": {
+      "registry": "${SMOKE_ROOT}/registry.json",
+      "seed": 191,
+      "n_hvg": 500,
+      "n_pcs": 20,
+      "graph_pcs": 10,
+      "resolutions": [
+        0.2,
+        0.4
+      ],
+      "marker_resolution": 0.4,
+      "min_model_source_coverage": 1,
+      "run_ucell": false,
+      "reviewed_keep_file": "${SMOKE_ROOT}/synthetic_QC.tsv"
+    },
+    "final_label_changes": 0,
+    "limitations": [
+      "Within-source DE is not independent patient replication",
+      "Human-reviewed subtype decision remains necessary",
+      "Pooled DEG excludes structurally unmeasured genes",
+      "No automatic source/IFN/stress regression",
+      "Source masks are not individual-cell dropout masks"
+    ]
+  },
+  "code_sha256": {
+    "run_smoke.py": "5f3244edd7477314d6d3ea14d01962188a80cc84e4288bdb9952d9311c16a0f2",
+    "test_evidence_engine.py": "c3dbf2cfe5e94c322105a139a3d2c4d8787ba51136492ee6683bc1f7b653ffec",
+    "verify_smoke.R": "21701d6c095bb0f01e8dc6cd763a2310c01ad0e940cac44bbcb72f7ef55f80f9",
+    "evidence_engine.py": "d9bf37abb981ea8f3bcd892d29f2b5a05f69e57afedeffe811d421b0c6629ee0",
+    "replay_aggregates.py": "6f9a57ab6f89947747b3d4395ae091a5b2993133f2224df70bd0d28194596ca8",
+    "lineage_workflow.R": "a5f847ed915c6673873e0a10cdc9ef190444304bcacaf6373111e05cd9f1f2fd",
+    "smoke_fixture.R": "653f8283d74be0dbea375d7df9a7cf9f2b6f1bf4ba15a21870d8585d78cfae4c",
+    "registry.json": "83f7f01a5072a325eb65dffaf65565e000df43677a8085f4fb6172079f203268"
+  },
+  "code_scope_note": "R workflow, fixture, smoke supervisor and independent verifier hashes identify the executed synthetic test. Python evidence engine was subsequently hardened and verified separately; final hashes in verification.json."
+}

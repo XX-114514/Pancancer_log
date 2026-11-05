@@ -1,3 +1,7 @@
+[当前研究总览图文展示](20261105_current_work_visualization_v1.md)：任务分层、六幅新增主文研究图、V7来源/材料补图和六方法同细胞UMAP；仅展示计算，不刷新科学验收状态。
+
+[当前研究总览WEHI实时补核](20261105_current_overview_wehi_readonly.md)：TME仍运行至Leiden 78簇；V7 K4有计算收据，来源等权与53来源留出运行中；只读取证，不新增科学计算。
+
 [APC组织问题的原始证据资格](20261022_CM02_APC_context_primary_abstracts_v1.md)：三篇正常公开摘要/图注完成，无新原生或统计，当前空间源继续。
 
 [CM02外部TDLN原始证据及原生资格](20261022_CM02_TDLN_external_qualification_v1.md)：公开关系已核，新有界读取实际开始，仅资格无新效果。
@@ -147,3 +151,11 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [全细胞分层注释与整合比较实施](20261023_full_context_hierarchical_annotation_v1.md)：原生全范围索引审计实际运行，新身份/A-B-C与物化待验收。
+
+- [2026-11-05服务器分析系统审计与交接](20261105_server_analysis_audit_v1.md)
+
+- [2026-11-05 V7 literature-guided reannotation](20261105_v7_literature_guided_reannotation_v1.md)
+
+- [2026-11-05 V7 panel 语义审计](20261105_v7_panel_semantics_audit_v1.md)：162 个候选/17 组父类 panel 审查，40 群/373 候选复算；规则缺陷暴露范围与新注释严格分开。
+
+- [2026-11-05 V7 全panel修复与文献引导算法](20261105_v7_panel_repair_v1.md)：112模块/409基因、162项迁移、合成QC重建与真实聚合回放；全V7最终重新注释未完成。

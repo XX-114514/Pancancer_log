@@ -1,0 +1,635 @@
+panel	gene	direction	direct_prior_author_table_hits	evidence_kinds	additional_primary_text_hit	additional_primary_locator	source_locator	status
+T	CD3D	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Table S4: TCR Signaling;Chu 2023:Table S6: TCR signaling;Lodi 2025:marker_genes.txt: cluster=CD4+ TH1	gene_occurrence_verified_not_automatic_classifier
+T	CD3E	positive	3	代码明确panel;作者完整功能签名	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Chu 2023:Table S4: TCR Signaling;Chu 2023:Table S6: TCR signaling	gene_occurrence_verified_not_automatic_classifier
+T	CD3G	positive	2	作者完整功能签名	False	NA	Chu 2023:Table S4: TCR Signaling;Chu 2023:Table S6: TCR signaling	gene_occurrence_verified_not_automatic_classifier
+T	TRAC	positive	1	DEG原表前10（非判定panel）	False	NA	Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5	gene_occurrence_verified_not_automatic_classifier
+T	TRBC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T	TRBC2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T	TRDC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T	TRGC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T	TRGC2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T	LCK	positive	2	作者完整功能签名	False	NA	Chu 2023:Table S4: TCR Signaling;Chu 2023:Table S6: TCR signaling	gene_occurrence_verified_not_automatic_classifier
+T	CD247	positive	2	作者完整功能签名	False	NA	Chu 2023:Table S4: TCR Signaling;Chu 2023:Table S6: TCR signaling	gene_occurrence_verified_not_automatic_classifier
+T	CD2	positive	2	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Costimulatory molecules;Lodi 2025:marker_genes.txt: cluster=CD4+ TH1	gene_occurrence_verified_not_automatic_classifier
+NK	NCR1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK	KLRD1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C3_CD8_ZNF683;Qian 2020:T-NK-cell: C4_CD8_CX3CR1	gene_occurrence_verified_not_automatic_classifier
+NK	KLRF1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C9_NK_FGFBP2	gene_occurrence_verified_not_automatic_classifier
+NK	NKG7	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Qian 2020:T-NK-cell: C9_NK_FGFBP2	gene_occurrence_verified_not_automatic_classifier
+NK	GNLY	positive	3	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C1_CD8_HAVCR2;Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Qian 2020:T-NK-cell: C10_NK_XCL1	gene_occurrence_verified_not_automatic_classifier
+NK	PRF1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Qian 2020:T-NK-cell: C9_NK_FGFBP2	gene_occurrence_verified_not_automatic_classifier
+NK	FCGR3A	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Qian 2020:T-NK-cell: C9_NK_FGFBP2	gene_occurrence_verified_not_automatic_classifier
+NK	NCAM1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK	XCL1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C10_NK_XCL1	gene_occurrence_verified_not_automatic_classifier
+NK	XCL2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C10_NK_XCL1	gene_occurrence_verified_not_automatic_classifier
+ILC	IL7R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	IL1R1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	GATA3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	RORC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	RORA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	TBX21	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	KIT	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	KLRB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	PTGDR2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC	IL1RL1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B	CD79A	positive	4	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Lodi 2025:marker_genes.txt: cluster=IgA immature;Lodi 2025:marker_genes.txt: cluster=GC B;Lodi 2025:marker_genes.txt: cluster=Breg	gene_occurrence_verified_not_automatic_classifier
+B	CD79B	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=GC B	gene_occurrence_verified_not_automatic_classifier
+B	MS4A1	positive	3	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IgA immature;Lodi 2025:marker_genes.txt: cluster=GC B;Lodi 2025:marker_genes.txt: cluster=Breg	gene_occurrence_verified_not_automatic_classifier
+B	CD19	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B	CD22	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=GC B	gene_occurrence_verified_not_automatic_classifier
+B	CD37	positive	2	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IgA immature;Lodi 2025:marker_genes.txt: cluster=Breg	gene_occurrence_verified_not_automatic_classifier
+B	BANK1	positive	2	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IgA immature;Lodi 2025:marker_genes.txt: cluster=Breg	gene_occurrence_verified_not_automatic_classifier
+B	CD74	positive	2	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=mQuiescDC;Lodi 2025:marker_genes.txt: cluster=Breg	gene_occurrence_verified_not_automatic_classifier
+B	CD40	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC	MZB1	positive	3	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IgA mature;Lodi 2025:marker_genes.txt: cluster=IgA immature;Lodi 2025:marker_genes.txt: cluster=Plasmablast	gene_occurrence_verified_not_automatic_classifier
+ASC	DERL3	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IgA immature	gene_occurrence_verified_not_automatic_classifier
+ASC	PRDM1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC	XBP1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC	SDC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC	TNFRSF17	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC	JCHAIN	positive	3	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IgA mature;Lodi 2025:marker_genes.txt: cluster=IgA immature;Lodi 2025:marker_genes.txt: cluster=Plasmablast	gene_occurrence_verified_not_automatic_classifier
+ASC	CD38	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Myeloid	LYZ	positive	4	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Lodi 2025:marker_genes.txt: cluster=IFN Mac;Lodi 2025:marker_genes.txt: cluster=LAM2;Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Myeloid	LST1	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Myeloid	SPI1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Myeloid	TYROBP	positive	2	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=LAM2;Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Myeloid	FCER1G	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Myeloid	CSF1R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Myeloid	CTSD	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Monocyte	FCN1	positive	3	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14;Qian 2020:Myeloid cell: C3_CCR2;Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Monocyte	CD14	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Monocyte	VCAN	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C10_COMP;Qian 2020:Myeloid cell: C1_CD14	gene_occurrence_verified_not_automatic_classifier
+Monocyte	LYZ	positive	5	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Qian 2020:Dentritic cell: C2_CLEC10A;Lodi 2025:marker_genes.txt: cluster=IFN Mac;Lodi 2025:marker_genes.txt: cluster=LAM2;Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Monocyte	LST1	positive	3	DEG原表前10（非判定panel）	False	NA	Qian 2020:Dentritic cell: C5_CD207;Qian 2020:Myeloid cell: C2_CD16;Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Monocyte	LILRB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Monocyte	S100A8	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14	gene_occurrence_verified_not_automatic_classifier
+Monocyte	S100A9	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14;Lodi 2025:marker_genes.txt: cluster=Mono-like Mac	gene_occurrence_verified_not_automatic_classifier
+Monocyte	CTSD	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C5_CCL18	gene_occurrence_verified_not_automatic_classifier
+Macrophage	C1QA	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IFN Mac	gene_occurrence_verified_not_automatic_classifier
+Macrophage	C1QB	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IFN Mac	gene_occurrence_verified_not_automatic_classifier
+Macrophage	C1QC	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C7_CX3CR1;Lodi 2025:marker_genes.txt: cluster=IFN Mac	gene_occurrence_verified_not_automatic_classifier
+Macrophage	APOE	positive	3	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C2_ADAMDEC1;Qian 2020:Fibroblast: C11_SERPINE1;Qian 2020:Myeloid cell: C5_CCL18	gene_occurrence_verified_not_automatic_classifier
+Macrophage	CSF1R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Macrophage	CD68	positive	2	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Lodi 2025:marker_genes.txt: cluster=LAM2	gene_occurrence_verified_not_automatic_classifier
+Macrophage	MSR1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Macrophage	MARCO	positive	2	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Lodi_Macrophage_monocyte_analysis.R:L6;Qian 2020:Myeloid cell: C8_PPARG	gene_occurrence_verified_not_automatic_classifier
+Macrophage	APOC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Macrophage	FOLR2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C9_LYVE1	gene_occurrence_verified_not_automatic_classifier
+DC	FLT3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC	HLA-DRA	positive	4	DEG原表前10（非判定panel）;正文完整功能签名	False	NA	Ma DC 2025:Methods: Gene signature scoring;Qian 2020:B-cell: C2_CD27+/IGHM+;Qian 2020:B-cell: C3_CD27+/IGHM-	gene_occurrence_verified_not_automatic_classifier
+DC	CD74	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:B-cell: C3_CD27+/IGHM-	gene_occurrence_verified_not_automatic_classifier
+DC	CLEC9A	positive	3	DEG原表前10（非判定panel）;正文明确panel	False	NA	Qian 2020:Methods p759, DC extraction;Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering;Qian 2020:Dentritic cell: C1_CLEC9A	gene_occurrence_verified_not_automatic_classifier
+DC	XCR1	positive	3	DEG原表前10（非判定panel）;正文明确panel	False	NA	Qian 2020:Methods p759, DC extraction;Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering;Qian 2020:Dentritic cell: C1_CLEC9A	gene_occurrence_verified_not_automatic_classifier
+DC	CD1C	positive	2	正文明确panel	False	NA	Qian 2020:Methods p759, DC extraction;Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC	FCER1A	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC	LILRA4	positive	3	DEG原表前10（非判定panel）;正文明确panel	False	NA	Qian 2020:Methods p759, DC extraction;Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering;Qian 2020:Dentritic cell: C4_LILRA4	gene_occurrence_verified_not_automatic_classifier
+DC	CLEC4C	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast	TPSAB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast	TPSB2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast	CPA3	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Mast cell: C1_CPA3	gene_occurrence_verified_not_automatic_classifier
+Mast	KIT	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast	MS4A2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast	HDC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast	HPGDS	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast	LTC4S	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Basophil	IL3RA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Basophil	FCER1A	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Basophil	CLC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Basophil	MS4A2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Basophil	HDC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Basophil	ENPP3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neutrophil	CSF3R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neutrophil	FCGR3B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neutrophil	S100A8	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14	gene_occurrence_verified_not_automatic_classifier
+Neutrophil	S100A9	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14	gene_occurrence_verified_not_automatic_classifier
+Neutrophil	FPR1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neutrophil	CXCR2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neutrophil	CEACAM8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Eosinophil	EPX	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Eosinophil	PRG2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Eosinophil	CLC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Eosinophil	SIGLEC8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Eosinophil	IL5RA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epithelial	KRT8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epithelial	KRT18	positive	1	代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354	gene_occurrence_verified_not_automatic_classifier
+Epithelial	KRT19	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epithelial	KRT7	positive	1	代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354	gene_occurrence_verified_not_automatic_classifier
+Epithelial	EPCAM	positive	1	代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354	gene_occurrence_verified_not_automatic_classifier
+Epithelial	KRT5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epithelial	KRT14	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epithelial	MUC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endothelial	PECAM1	positive	3	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Lodi 2025:Lodi_EC_analysis.R:L5;Qian 2020:B-cell: C5_IGHG1+/PRDM1high	gene_occurrence_verified_not_automatic_classifier
+Endothelial	CDH5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endothelial	VWF	positive	3	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Lodi 2025:Lodi_EC_analysis.R:L5;Qian 2020:capillary EC: C3_NEC2	gene_occurrence_verified_not_automatic_classifier
+Endothelial	KDR	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endothelial	FLT1	positive	1	代码明确panel	False	NA	Lodi 2025:Lodi_EC_analysis.R:L5	gene_occurrence_verified_not_automatic_classifier
+Endothelial	CLDN5	positive	2	DEG原表前10（非判定panel）;代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354;Lodi 2025:marker_genes.txt: cluster=Lymphatic	gene_occurrence_verified_not_automatic_classifier
+Endothelial	RAMP2	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=Lymphatic	gene_occurrence_verified_not_automatic_classifier
+Endothelial	EMCN	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:capillary EC: C3_NEC1	gene_occurrence_verified_not_automatic_classifier
+Endothelial	ESAM	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fibroblast	DCN	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C9_CFD	gene_occurrence_verified_not_automatic_classifier
+Fibroblast	LUM	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fibroblast	DPT	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C1_KCNN3	gene_occurrence_verified_not_automatic_classifier
+Fibroblast	COL1A1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C10_COMP;Qian 2020:Fibroblast: C11_SERPINE1	gene_occurrence_verified_not_automatic_classifier
+Fibroblast	COL1A2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C10_COMP	gene_occurrence_verified_not_automatic_classifier
+Fibroblast	COL3A1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C10_COMP;Qian 2020:Fibroblast: C11_SERPINE1	gene_occurrence_verified_not_automatic_classifier
+Fibroblast	PDGFRA	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C3_SOX6	gene_occurrence_verified_not_automatic_classifier
+Pericyte	RGS5	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C8_RGS5	gene_occurrence_verified_not_automatic_classifier
+Pericyte	CSPG4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Pericyte	PDGFRB	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C8_RGS5	gene_occurrence_verified_not_automatic_classifier
+Pericyte	MCAM	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C1_ESM1	gene_occurrence_verified_not_automatic_classifier
+Pericyte	NOTCH3	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C8_RGS5	gene_occurrence_verified_not_automatic_classifier
+Pericyte	COX4I2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C8_RGS5	gene_occurrence_verified_not_automatic_classifier
+Smooth_muscle	MYH11	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C7_MYH11	gene_occurrence_verified_not_automatic_classifier
+Smooth_muscle	CNN1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Smooth_muscle	DES	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Smooth_muscle	TAGLN	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C7_MYH11	gene_occurrence_verified_not_automatic_classifier
+Smooth_muscle	ACTA2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C7_MYH11	gene_occurrence_verified_not_automatic_classifier
+Mesothelial	MSLN	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C6_CALB2;Qian 2020:CRC_epithelial: C6_BEST4	gene_occurrence_verified_not_automatic_classifier
+Mesothelial	UPK3B	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C6_CALB2	gene_occurrence_verified_not_automatic_classifier
+Mesothelial	CALB2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C6_CALB2	gene_occurrence_verified_not_automatic_classifier
+Mesothelial	KRT8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mesothelial	KRT18	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C6_CALB2	gene_occurrence_verified_not_automatic_classifier
+Mesothelial	KRT19	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C6_CALB2	gene_occurrence_verified_not_automatic_classifier
+Erythroid	GYPA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	AHSP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	SLC4A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	GATA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	KLF1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	HBB	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	HBA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	HBA2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	TFRC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Erythroid	ALAS2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	GP9	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	ITGA2B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	GP1BA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	PF4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	PPBP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	TUBB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	RGS18	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocytic	NRGN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC	SPINK2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC	HLF	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC	MEIS1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC	CD34	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC	PROM1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC	GATA2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC	HOPX	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	SOX10	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	PLP1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	MPZ	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	SLC1A3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	MBP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	MOG	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	RBFOX3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	SNAP25	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_glial	S100B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Melanocytic	PMEL	positive	0	NA	True	Tirosh2016:正文MITF-high段落	NA	gene_occurrence_verified_not_automatic_classifier
+Melanocytic	MLANA	positive	0	NA	True	Tirosh2016:正文MITF-high段落	NA	gene_occurrence_verified_not_automatic_classifier
+Melanocytic	TYR	positive	0	NA	True	Tirosh2016:正文MITF-high段落	NA	gene_occurrence_verified_not_automatic_classifier
+Melanocytic	DCT	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Melanocytic	SOX10	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Melanocytic	MITF	positive	0	NA	True	Tirosh2016:正文MITF-high段落	NA	gene_occurrence_verified_not_automatic_classifier
+T_CD4	CD4	positive	3	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Table S6: TCR signaling;Chu 2023:Table S10: P_c1_CD4_CD40LG_IL7R	gene_occurrence_verified_not_automatic_classifier
+T_CD4	IL7R	positive	7	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Naïve;Chu 2023:Table S6: Naïve;Chu 2023:Table S3: CD8_c12_Trm;Chu 2023:Table S5: CD4_c0_Tcm;Chu 2023:Table S9: MAIT-like_c1;Chu 2023:Table S9: MAIT_c2;Chu 2023:Table S10: P_c1_CD4_CD40LG_IL7R	gene_occurrence_verified_not_automatic_classifier
+T_CD4	LTB	positive	6	DEG原表前10（非判定panel）	False	NA	Chu 2023:Table S3: CD8_c3_Tn;Chu 2023:Table S7: Treg_c4_TNFRSF13B;Chu 2023:Table S8: Tfh_c2_Transitional;Chu 2023:Table S9: MAIT-like_c1;Chu 2023:Table S9: MAIT_c2;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_CD8	CD8B	positive	1	代码明确panel	False	NA	Chu 2023:Chu_fig1.R:L215-L229	gene_occurrence_verified_not_automatic_classifier
+T_CD8	CD8A	positive	2	DEG原表前10（非判定panel）;代码明确panel	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5	gene_occurrence_verified_not_automatic_classifier
+T_Treg	FOXP3	positive	3	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_Treg	IL2RA	positive	6	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Cytokine/Cytokine receptor;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S7: Treg_c2_Activated;Chu 2023:Table S8: Tfh_c4_IL2RA;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_Treg	IKZF2	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature	gene_occurrence_verified_not_automatic_classifier
+T_Treg	IKZF4	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature	gene_occurrence_verified_not_automatic_classifier
+T_Treg	CTLA4	positive	8	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_Treg	TIGIT	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S9: NKT_c4	gene_occurrence_verified_not_automatic_classifier
+T_Treg	TNFRSF18	positive	4	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Costimulatory molecules;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S7: Treg_c2_Activated;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_Treg	TNFRSF4	positive	6	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Costimulatory molecules;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S7: Treg_c2_Activated;Chu 2023:Table S8: Tfh_c4_IL2RA;Chu 2023:Table S10: P_c1_CD4_CD40LG_IL7R;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_Tfh_like	BCL6	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_Tfh_like	CXCR5	positive	4	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S8: Tfh_c1_Mature	gene_occurrence_verified_not_automatic_classifier
+T_Tfh_like	CXCL13	positive	6	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S10: P_c5_CD8_CXCL13_CCL3/4/5_PD-1	gene_occurrence_verified_not_automatic_classifier
+T_Tfh_like	ICOS	positive	3	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature;Chu 2023:Table S6: Costimulatory molecules;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_Tfh_like	PDCD1	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S8: Tfh_c1_Mature	gene_occurrence_verified_not_automatic_classifier
+T_Tfh_like	TOX2	positive	2	DEG原表前10（非判定panel）	False	NA	Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S8: Tfh_c1_Mature	gene_occurrence_verified_not_automatic_classifier
+T_Tfh_like	SH2D1A	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S6: TCR signaling	gene_occurrence_verified_not_automatic_classifier
+T_Tph_like	CXCL13	positive	6	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	True	Rao2017:摘要/正文；PDCD1为PD-1对应基因	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S10: P_c5_CD8_CXCL13_CCL3/4/5_PD-1	gene_occurrence_verified_not_automatic_classifier
+T_Tph_like	PDCD1	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	True	Rao2017:摘要/正文；PDCD1为PD-1对应基因	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S8: Tfh_c1_Mature	gene_occurrence_verified_not_automatic_classifier
+T_Tph_like	ICOS	positive	3	DEG原表前10（非判定panel）;作者完整功能签名	True	Rao2017:摘要/正文；PDCD1为PD-1对应基因	Chu 2023:Table S6: Treg signature;Chu 2023:Table S6: Costimulatory molecules;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+T_Tph_like	MAF	positive	0	NA	True	Rao2017:摘要/正文；PDCD1为PD-1对应基因	NA	gene_occurrence_verified_not_automatic_classifier
+T_Tph_like	IL21	positive	1	作者完整功能签名	True	Rao2017:摘要/正文；PDCD1为PD-1对应基因	Chu 2023:Table S6: Cytokine/Cytokine receptor	gene_occurrence_verified_not_automatic_classifier
+T_Tph_like	CXCR5	lower_in_comparator	4	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	True	Rao2017:摘要/正文；PDCD1为PD-1对应基因	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S8: Tfh_c1_Mature	gene_occurrence_verified_not_automatic_classifier
+T_Th1_like	TBX21	positive	2	作者完整功能签名	False	NA	Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function	gene_occurrence_verified_not_automatic_classifier
+T_Th1_like	CXCR3	positive	3	代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor	gene_occurrence_verified_not_automatic_classifier
+T_Th1_like	IFNG	positive	3	代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Cytotoxicity;Chu 2023:Table S6: Cytotoxicity	gene_occurrence_verified_not_automatic_classifier
+T_Th1_like	IL12RB2	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S6: Cytokine/Cytokine receptor	gene_occurrence_verified_not_automatic_classifier
+T_Th1_like	STAT4	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S4: Activation:Effector function	gene_occurrence_verified_not_automatic_classifier
+T_Th17_like	RORC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_Th17_like	CCR6	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S6: Chemokine/Chemokine receptor	gene_occurrence_verified_not_automatic_classifier
+T_Th17_like	IL17A	positive	2	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Cytokine/Cytokine receptor;Chu 2023:Table S5: CD4_c8_Tf17	gene_occurrence_verified_not_automatic_classifier
+T_Th17_like	IL17F	positive	2	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Cytokine/Cytokine receptor;Chu 2023:Table S5: CD4_c8_Tf17	gene_occurrence_verified_not_automatic_classifier
+T_Th17_like	KLRB1	positive	8	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Chu 2023:Table S5: CD4_c0_Tcm;Chu 2023:Table S5: CD4_c8_Tf17;Chu 2023:Table S7: Treg_c0;Chu 2023:Table S8: Tfh_c2_Transitional;Chu 2023:Table S9: MAIT-like_c1	gene_occurrence_verified_not_automatic_classifier
+T_gd	TRDC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_gd	TRGC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_gd	TRGC2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_gd	KLRB1	positive	8	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Chu 2023:Table S5: CD4_c0_Tcm;Chu 2023:Table S5: CD4_c8_Tf17;Chu 2023:Table S7: Treg_c0;Chu 2023:Table S8: Tfh_c2_Transitional;Chu 2023:Table S9: MAIT-like_c1	gene_occurrence_verified_not_automatic_classifier
+T_gd	KLRG1	positive	3	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Chu 2023:Table S3: CD8_c10_Teff_CD244	gene_occurrence_verified_not_automatic_classifier
+T_MAIT	SLC4A10	positive	2	DEG原表前10（非判定panel）;代码明确panel	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Table S9: MAIT_c2	gene_occurrence_verified_not_automatic_classifier
+T_MAIT	TRAV1-2	positive	2	DEG原表前10（非判定panel）;代码明确panel	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Table S9: MAIT_c2	gene_occurrence_verified_not_automatic_classifier
+T_MAIT	KLRB1	positive	8	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Chu 2023:Table S5: CD4_c0_Tcm;Chu 2023:Table S5: CD4_c8_Tf17;Chu 2023:Table S7: Treg_c0;Chu 2023:Table S8: Tfh_c2_Transitional;Chu 2023:Table S9: MAIT-like_c1	gene_occurrence_verified_not_automatic_classifier
+T_MAIT	ZBTB16	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_MAIT	CXCR6	positive	5	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S5: CD4_c8_Tf17;Chu 2023:Table S7: Treg_c2_Activated;Chu 2023:Table S8: Tfh_c3_Cytotoxic	gene_occurrence_verified_not_automatic_classifier
+ILC1	TBX21	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC1	IFNG	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC1	IL12RB2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC1	CXCR3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC2	GATA3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC2	PTGDR2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC2	IL1RL1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC2	RORA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC2	IL5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC2	IL13	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC3	RORC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC3	IL23R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC3	CCR6	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC3	IL22	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC3	KIT	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ILC3	KLRB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_naive_like	TCL1A	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=GC B	gene_occurrence_verified_not_automatic_classifier
+B_naive_like	IGHD	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_naive_like	IGHM	positive	2	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=IgA mature;Lodi 2025:marker_genes.txt: cluster=Plasmablast	gene_occurrence_verified_not_automatic_classifier
+B_naive_like	IL4R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_memory_like	CD27	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_memory_like	TNFRSF13B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_memory_like	AIM2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_memory_like	BANK1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_memory_like	IGHG1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_memory_like	IGHA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_GC	BCL6	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_GC	AICDA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_GC	RGS13	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_GC	MEF2B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_GC	LMO2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_atypical_like	TBX21	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_atypical_like	ITGAX	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_atypical_like	FCRL5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_atypical_like	ZEB2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mono_classical	FCN1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14;Qian 2020:Myeloid cell: C3_CCR2	gene_occurrence_verified_not_automatic_classifier
+Mono_classical	CD14	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mono_classical	S100A8	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14	gene_occurrence_verified_not_automatic_classifier
+Mono_classical	S100A9	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14	gene_occurrence_verified_not_automatic_classifier
+Mono_classical	VCAN	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C10_COMP;Qian 2020:Myeloid cell: C1_CD14	gene_occurrence_verified_not_automatic_classifier
+Mono_classical	LYZ	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Dentritic cell: C2_CLEC10A	gene_occurrence_verified_not_automatic_classifier
+Mono_FCGR3A	FCGR3A	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Qian 2020:T-NK-cell: C9_NK_FGFBP2	gene_occurrence_verified_not_automatic_classifier
+Mono_FCGR3A	MS4A7	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Dentritic cell: C2_CLEC10A	gene_occurrence_verified_not_automatic_classifier
+Mono_FCGR3A	CX3CR1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C7_CX3CR1	gene_occurrence_verified_not_automatic_classifier
+Mono_FCGR3A	LST1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Dentritic cell: C5_CD207;Qian 2020:Myeloid cell: C2_CD16	gene_occurrence_verified_not_automatic_classifier
+Mono_intermediate	CD14	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mono_intermediate	FCGR3A	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Qian 2020:T-NK-cell: C9_NK_FGFBP2	gene_occurrence_verified_not_automatic_classifier
+Mono_intermediate	HLA-DRA	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:B-cell: C2_CD27+/IGHM+;Qian 2020:B-cell: C3_CD27+/IGHM-	gene_occurrence_verified_not_automatic_classifier
+Mono_intermediate	MS4A7	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Dentritic cell: C2_CLEC10A	gene_occurrence_verified_not_automatic_classifier
+DC_cDC1	CLEC9A	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_cDC1	XCR1	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_cDC1	CADM1	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_cDC1	BATF3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_cDC1	IRF8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_cDC2	CD1C	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_cDC2	FCER1A	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_cDC2	CLEC10A	positive	2	正文完整功能签名;正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering;Ma DC 2025:Methods: Gene signature scoring	gene_occurrence_verified_not_automatic_classifier
+DC_cDC2	CD1E	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_DC3	CD1C	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_DC3	CD14	positive	2	正文完整功能签名;正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering;Ma DC 2025:Methods: Gene signature scoring	gene_occurrence_verified_not_automatic_classifier
+DC_DC3	CD163	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_DC3	LILRB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_DC3	S100A8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_DC3	S100A9	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_pDC	LILRA4	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_pDC	CLEC4C	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_pDC	TCF4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_pDC	GZMB	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_pDC	JCHAIN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_pDC	IRF7	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_pDC	MZB1	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_AS	AXL	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_AS	SIGLEC6	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_AS	CD2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_AS	CD5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_LC_like	CD1A	positive	2	DEG原表前10（非判定panel）;正文明确panel	False	NA	Qian 2020:Methods p759, DC extraction;Qian 2020:Dentritic cell: C5_CD207	gene_occurrence_verified_not_automatic_classifier
+DC_LC_like	CD207	positive	1	正文明确panel	False	NA	Qian 2020:Methods p759, DC extraction	gene_occurrence_verified_not_automatic_classifier
+DC_LC_like	EPCAM	positive	2	正文完整功能签名;正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering;Ma DC 2025:Methods: Gene signature scoring	gene_occurrence_verified_not_automatic_classifier
+Endo_lymphatic	PROX1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C5_PROX1	gene_occurrence_verified_not_automatic_classifier
+Endo_lymphatic	FLT4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_lymphatic	LYVE1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C9_LYVE1	gene_occurrence_verified_not_automatic_classifier
+Endo_lymphatic	CCL21	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C5_PROX1	gene_occurrence_verified_not_automatic_classifier
+Endo_lymphatic	PDPN	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C5_PROX1	gene_occurrence_verified_not_automatic_classifier
+Endo_lymphatic	MMRN1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C5_PROX1	gene_occurrence_verified_not_automatic_classifier
+Endo_arterial	EFNB2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_arterial	GJA5	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C4_FBLN5	gene_occurrence_verified_not_automatic_classifier
+Endo_arterial	SOX17	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_arterial	HEY1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_arterial	DKK2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_venous	ACKR1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C2_ACKR1	gene_occurrence_verified_not_automatic_classifier
+Endo_venous	NR2F2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_venous	PLVAP	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C1_ESM1;Qian 2020:capillary EC: C3_TEC	gene_occurrence_verified_not_automatic_classifier
+Endo_capillary	CA4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_capillary	RGCC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_capillary	CD36	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_capillary	CLDN5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_capillary	EMCN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Schwann	MPZ	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Schwann	SOX10	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Schwann	PLP1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Schwann	S100B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Schwann	S100A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Oligodendrocyte	MBP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Oligodendrocyte	MOG	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Oligodendrocyte	PLP1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Oligodendrocyte	OLIG1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Oligodendrocyte	OLIG2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neuron	RBFOX3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neuron	SNAP25	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neuron	SYT1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neuron	TUBB3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_basal	KRT5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_basal	KRT14	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_basal	TP63	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_basal	KRT17	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_basal	SFN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT2	SFTPC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT2	SFTPB	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT2	ABCA3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT2	SFTPA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT2	SFTPA2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT1	AGER	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT1	CAV1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT1	EMP2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT1	CAV2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_AT1	PDPN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_club	SCGB1A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_club	SCGB3A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_club	KRT8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_club	KRT19	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_ciliated	FOXJ1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_ciliated	TPPP3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_ciliated	PIFO	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_ciliated	CAPS	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_ciliated	TUBB4B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_hepatocyte_like	ALB	positive	0	NA	True	Aizarani2019:Fig3/ExtendedData8正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_hepatocyte_like	ASGR1	positive	0	NA	True	Aizarani2019:Fig3/ExtendedData8正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_hepatocyte_like	HNF4A	positive	0	NA	True	Aizarani2019:Fig3/ExtendedData8正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_hepatocyte_like	HP	positive	0	NA	True	Aizarani2019:Fig3/ExtendedData8正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_hepatocyte_like	APOA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_hepatocyte_like	TTR	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_hepatocyte_like	APOA2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_hepatocyte_like	CYP3A4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_cholangiocyte_like	KRT19	positive	0	NA	True	Aizarani2019:Fig3正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_cholangiocyte_like	CFTR	positive	0	NA	True	Aizarani2019:Fig3正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_cholangiocyte_like	KRT7	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_cholangiocyte_like	EPCAM	positive	0	NA	True	Aizarani2019:Fig3正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_cholangiocyte_like	KRT8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_cholangiocyte_like	KRT18	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_cholangiocyte_like	MMP7	positive	0	NA	True	Aizarani2019:Fig3正文	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_renal_tubular_like	SLC34A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_renal_tubular_like	LRP2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_renal_tubular_like	CUBN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_renal_tubular_like	HAVCR1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_renal_tubular_like	EPCAM	positive	1	代码明确panel	False	NA	Lodi 2025:Cancer type analysis.R:L326-L354	gene_occurrence_verified_not_automatic_classifier
+Epi_prostate_luminal_like	KLK3	positive	0	NA	True	Henry2018:Fig4及正文DEG；ACPP映射ACP3	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_prostate_luminal_like	KLK2	positive	0	NA	True	Henry2018:Fig4及正文DEG；ACPP映射ACP3	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_prostate_luminal_like	ACP3	positive	0	NA	True	Henry2018:Fig4及正文DEG；ACPP映射ACP3	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_prostate_luminal_like	MSMB	positive	0	NA	True	Henry2018:Fig4及正文DEG；ACPP映射ACP3	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_prostate_luminal_like	NKX3-1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_prostate_luminal_like	EPCAM	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_prostate_luminal_like	KRT8	positive	0	NA	True	Henry2018:Fig4及正文DEG；ACPP映射ACP3	NA	gene_occurrence_verified_not_automatic_classifier
+Epi_prostate_luminal_like	KRT18	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Cytotoxic	PRF1	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Cytotoxicity;Chu 2023:Table S6: Cytotoxicity;Chu 2023:Table S10: P_c7_CD8_GZMK_NKG7_LAG3_PRF1	gene_occurrence_verified_not_automatic_classifier
+Cytotoxic	GZMB	positive	10	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Cytotoxicity;Chu 2023:Table S6: Cytotoxicity;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S8: Tfh_c3_Cytotoxic;Chu 2023:Table S9: NKT_c0_FCGR3A_GZMB;Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5	gene_occurrence_verified_not_automatic_classifier
+Cytotoxic	NKG7	positive	7	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S9: NKT_c0_FCGR3A_GZMB;Chu 2023:Table S10: P_c2_DNT;Chu 2023:Table S10: P_c5_CD8_CXCL13_CCL3/4/5_PD-1;Chu 2023:Table S10: P_c7_CD8_GZMK_NKG7_LAG3_PRF1	gene_occurrence_verified_not_automatic_classifier
+Cytotoxic	GNLY	positive	10	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Cytotoxicity;Chu 2023:Table S6: Cytotoxicity;Chu 2023:Table S3: CD8_c2_Teff;Chu 2023:Table S5: CD4_c8_Tf17;Chu 2023:Table S8: Tfh_c3_Cytotoxic;Chu 2023:Table S9: NKT_c0_FCGR3A_GZMB;Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5;Chu 2023:Table S10: P_c7_CD8_GZMK_NKG7_LAG3_PRF1	gene_occurrence_verified_not_automatic_classifier
+Cytotoxic	CCL5	positive	5	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S8: Tfh_c3_Cytotoxic;Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5	gene_occurrence_verified_not_automatic_classifier
+Cytotoxic	FGFBP2	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Chu 2023:Table S3: CD8_c2_Teff;Chu 2023:Table S3: CD8_c8_Teff_KLRG1;Chu 2023:Table S9: NKT_c0_FCGR3A_GZMB	gene_occurrence_verified_not_automatic_classifier
+Cytotoxic	GZMA	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Cytotoxicity;Chu 2023:Table S6: Cytotoxicity;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S8: Tfh_c3_Cytotoxic	gene_occurrence_verified_not_automatic_classifier
+GZMK_program	GZMK	positive	11	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Cytotoxicity;Chu 2023:Table S6: Cytotoxicity;Chu 2023:Table S3: CD8_c0_t-Teff;Chu 2023:Table S3: CD8_c11_Teff_SEMA4A;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S9: MAIT-like_c1;Chu 2023:Table S9: MAIT_c2;Chu 2023:Table S10: P_c3_DNT_GZMK+	gene_occurrence_verified_not_automatic_classifier
+GZMK_program	GZMA	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Cytotoxicity;Chu 2023:Table S6: Cytotoxicity;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S8: Tfh_c3_Cytotoxic	gene_occurrence_verified_not_automatic_classifier
+GZMK_program	CCL5	positive	5	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S8: Tfh_c3_Cytotoxic;Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5	gene_occurrence_verified_not_automatic_classifier
+GZMK_program	IL7R	positive	7	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Naïve;Chu 2023:Table S6: Naïve;Chu 2023:Table S3: CD8_c12_Trm;Chu 2023:Table S5: CD4_c0_Tcm;Chu 2023:Table S9: MAIT-like_c1;Chu 2023:Table S9: MAIT_c2;Chu 2023:Table S10: P_c1_CD4_CD40LG_IL7R	gene_occurrence_verified_not_automatic_classifier
+GZMK_program	CXCR3	positive	3	代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor	gene_occurrence_verified_not_automatic_classifier
+Naive_like	TCF7	positive	11	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Naïve;Chu 2023:Table S6: Naïve;Chu 2023:Table S3: CD8_c13_Tn_TCF7;Chu 2023:Table S5: CD4_c2_Tn;Chu 2023:Table S5: CD4_c6_Tn_FHIT;Chu 2023:Table S5: CD4_c7_Tn_TCEA3;Chu 2023:Table S5: CD4_c9_Tn_TCF7_SLC40A1;Chu 2023:Table S5: CD4_c10_Tn_LEF1_ANKRD55;Chu 2023:Table S7: Treg_c1_Naive-like	gene_occurrence_verified_not_automatic_classifier
+Naive_like	LEF1	positive	10	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Naïve;Chu 2023:Table S6: Naïve;Chu 2023:Table S3: CD8_c3_Tn;Chu 2023:Table S3: CD8_c13_Tn_TCF7;Chu 2023:Table S5: CD4_c2_Tn;Chu 2023:Table S5: CD4_c6_Tn_FHIT;Chu 2023:Table S5: CD4_c7_Tn_TCEA3;Chu 2023:Table S5: CD4_c9_Tn_TCF7_SLC40A1;Chu 2023:Table S5: CD4_c10_Tn_LEF1_ANKRD55;Chu 2023:Table S7: Treg_c1_Naive-like	gene_occurrence_verified_not_automatic_classifier
+Naive_like	CCR7	positive	9	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Table S4: Naïve;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Naïve;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S3: CD8_c3_Tn;Chu 2023:Table S5: CD4_c2_Tn;Chu 2023:Table S7: Treg_c1_Naive-like;Chu 2023:Table S7: Treg_c6_LRRC32	gene_occurrence_verified_not_automatic_classifier
+Naive_like	SELL	positive	14	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Naïve;Chu 2023:Table S4: Adhesion;Chu 2023:Table S6: Naïve;Chu 2023:Table S6: Adhesion;Chu 2023:Table S3: CD8_c3_Tn;Chu 2023:Table S3: CD8_c13_Tn_TCF7;Chu 2023:Table S5: CD4_c2_Tn;Chu 2023:Table S5: CD4_c6_Tn_FHIT;Chu 2023:Table S5: CD4_c9_Tn_TCF7_SLC40A1;Chu 2023:Table S5: CD4_c10_Tn_LEF1_ANKRD55;Chu 2023:Table S7: Treg_c1_Naive-like;Chu 2023:Table S9: Tgd_c3	gene_occurrence_verified_not_automatic_classifier
+Naive_like	MAL	positive	4	DEG原表前10（非判定panel）	False	NA	Chu 2023:Table S3: CD8_c3_Tn;Chu 2023:Table S5: CD4_c7_Tn_TCEA3;Chu 2023:Table S5: CD4_c9_Tn_TCF7_SLC40A1;Chu 2023:Table S10: P_c7_CD8_GZMK_NKG7_LAG3_PRF1	gene_occurrence_verified_not_automatic_classifier
+Naive_like	LTB	positive	6	DEG原表前10（非判定panel）	False	NA	Chu 2023:Table S3: CD8_c3_Tn;Chu 2023:Table S7: Treg_c4_TNFRSF13B;Chu 2023:Table S8: Tfh_c2_Transitional;Chu 2023:Table S9: MAIT-like_c1;Chu 2023:Table S9: MAIT_c2;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+Exhaustion_like	PDCD1	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S8: Tfh_c1_Mature	gene_occurrence_verified_not_automatic_classifier
+Exhaustion_like	HAVCR2	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex	gene_occurrence_verified_not_automatic_classifier
+Exhaustion_like	TOX	positive	3	代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion	gene_occurrence_verified_not_automatic_classifier
+Exhaustion_like	LAG3	positive	11	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S4: Anergy;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S7: Treg_c0;Chu 2023:Table S8: Tfh_c3_Cytotoxic;Chu 2023:Table S10: P_c7_CD8_GZMK_NKG7_LAG3_PRF1	gene_occurrence_verified_not_automatic_classifier
+Exhaustion_like	TIGIT	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S9: NKT_c4	gene_occurrence_verified_not_automatic_classifier
+Exhaustion_like	CXCL13	positive	6	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S10: P_c5_CD8_CXCL13_CCL3/4/5_PD-1	gene_occurrence_verified_not_automatic_classifier
+Exhaustion_like	ENTPD1	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex	gene_occurrence_verified_not_automatic_classifier
+Resident_like	ITGAE	positive	2	作者完整功能签名	False	NA	Chu 2023:Table S4: Adhesion;Chu 2023:Table S6: Adhesion	gene_occurrence_verified_not_automatic_classifier
+Resident_like	ZNF683	positive	2	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S9: Tgd_c3	gene_occurrence_verified_not_automatic_classifier
+Resident_like	CXCR6	positive	5	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S5: CD4_c8_Tf17;Chu 2023:Table S7: Treg_c2_Activated;Chu 2023:Table S8: Tfh_c3_Cytotoxic	gene_occurrence_verified_not_automatic_classifier
+Resident_like	CD69	positive	4	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Chu 2023:Table S9: MAIT_c2	gene_occurrence_verified_not_automatic_classifier
+Resident_like	RGS1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IFN_response	ISG15	positive	4	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: IFN Response;Chu 2023:Table S6: IFN response;Chu 2023:Table S3: CD8_c5_Tisg;Chu 2023:Table S5: CD4_c11_Tisg	gene_occurrence_verified_not_automatic_classifier
+IFN_response	IFIT1	positive	4	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Table S4: IFN Response;Chu 2023:Table S3: CD8_c5_Tisg;Chu 2023:Table S5: CD4_c11_Tisg	gene_occurrence_verified_not_automatic_classifier
+IFN_response	IFIT3	positive	3	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: IFN Response;Chu 2023:Table S3: CD8_c5_Tisg;Chu 2023:Table S5: CD4_c11_Tisg	gene_occurrence_verified_not_automatic_classifier
+IFN_response	MX1	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Table S4: IFN Response;Chu 2023:Table S6: IFN response;Chu 2023:Table S3: CD8_c5_Tisg;Chu 2023:Table S5: CD4_c11_Tisg	gene_occurrence_verified_not_automatic_classifier
+IFN_response	OAS1	positive	4	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: IFN Response;Chu 2023:Table S6: IFN response;Chu 2023:Table S3: CD8_c5_Tisg;Chu 2023:Table S5: CD4_c11_Tisg	gene_occurrence_verified_not_automatic_classifier
+IFN_response	IFIT2	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S4: IFN Response	gene_occurrence_verified_not_automatic_classifier
+Cycling	MKI67	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=Prolif T	gene_occurrence_verified_not_automatic_classifier
+Cycling	TOP2A	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Cycling	UBE2C	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Cycling	TYMS	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Cycling	STMN1	positive	1	DEG原表前10（非判定panel）	False	NA	Lodi 2025:marker_genes.txt: cluster=Prolif T	gene_occurrence_verified_not_automatic_classifier
+Inflammatory	IL1B	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C10_FCGR3B	gene_occurrence_verified_not_automatic_classifier
+Inflammatory	CXCL8	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C10_FCGR3B	gene_occurrence_verified_not_automatic_classifier
+Inflammatory	TNF	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Inflammatory	CCL3	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C1_CD8_HAVCR2	gene_occurrence_verified_not_automatic_classifier
+Inflammatory	CCL4	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:T-NK-cell: C2_CD8_GZMK	gene_occurrence_verified_not_automatic_classifier
+Inflammatory	CXCL2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+MHCII	HLA-DRA	positive	2	正文完整功能签名	False	NA	Ma DC 2025:Methods: Gene signature scoring	gene_occurrence_verified_not_automatic_classifier
+MHCII	HLA-DRB1	positive	1	正文完整功能签名	False	NA	Ma DC 2025:Methods: Gene signature scoring	gene_occurrence_verified_not_automatic_classifier
+MHCII	CD74	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+MHCII	CIITA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+MHCII	HLA-DPA1	positive	1	正文完整功能签名	False	NA	Ma DC 2025:Methods: Gene signature scoring	gene_occurrence_verified_not_automatic_classifier
+MHCII	HLA-DPB1	positive	1	正文完整功能签名	False	NA	Ma DC 2025:Methods: Gene signature scoring	gene_occurrence_verified_not_automatic_classifier
+DC_maturation	LAMP3	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_maturation	CCR7	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_maturation	FSCN1	positive	1	正文明确panel	False	NA	Ma DC 2025:Methods: scRNA-seq data processing, dimension reduction, and unsupervised clustering	gene_occurrence_verified_not_automatic_classifier
+DC_maturation	CCL19	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+DC_maturation	CD274	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mac_C1Q	C1QA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mac_C1Q	C1QB	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mac_C1Q	C1QC	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C7_CX3CR1	gene_occurrence_verified_not_automatic_classifier
+Mac_C1Q	APOE	positive	3	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C2_ADAMDEC1;Qian 2020:Fibroblast: C11_SERPINE1;Qian 2020:Myeloid cell: C5_CCL18	gene_occurrence_verified_not_automatic_classifier
+Mac_C1Q	FOLR2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C9_LYVE1	gene_occurrence_verified_not_automatic_classifier
+Mac_SPP1	SPP1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C5_CCL18;Qian 2020:Myeloid cell: C6_MMP9	gene_occurrence_verified_not_automatic_classifier
+Mac_SPP1	TREM2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mac_SPP1	GPNMB	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C5_CCL18	gene_occurrence_verified_not_automatic_classifier
+Mac_SPP1	APOC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mac_SPP1	LGALS3	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:capillary EC: C3_NEC4	gene_occurrence_verified_not_automatic_classifier
+Mac_SPP1	FABP5	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Alveolar: C2_SFTPC;Qian 2020:capillary EC: C3_TEC	gene_occurrence_verified_not_automatic_classifier
+Mac_MRC1	MRC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mac_MRC1	CD163	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mac_MRC1	FOLR2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C9_LYVE1	gene_occurrence_verified_not_automatic_classifier
+Mac_MRC1	SELENOP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_FCGR3A	FCGR3A	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_FCGR3A	FGFBP2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_FCGR3A	PRF1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_FCGR3A	GNLY	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_FCGR3A	GZMB	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_XCL	XCL1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_XCL	XCL2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_XCL	NCAM1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_XCL	KLRC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_XCL	GZMK	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_XCL	IL7R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_IL1RL1	IL1RL1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_IL1RL1	AREG	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_IL1RL1	LTC4S	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_IL1RL1	HDC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_CMA1	CMA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_CMA1	CPA3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_CMA1	TPSAB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_CMA1	TPSB2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_CPA3	CPA3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_CPA3	HPGDS	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mast_CPA3	HDC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_contractile	ACTA2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C7_MYH11	gene_occurrence_verified_not_automatic_classifier
+Fib_contractile	TAGLN	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C7_MYH11	gene_occurrence_verified_not_automatic_classifier
+Fib_contractile	MYL9	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C7_MYH11;Qian 2020:Alveolar: C1_AGER	gene_occurrence_verified_not_automatic_classifier
+Fib_contractile	POSTN	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C2_ACKR1;Qian 2020:Fibroblast: C10_COMP	gene_occurrence_verified_not_automatic_classifier
+Fib_contractile	TPM2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_contractile	COL11A1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C10_COMP	gene_occurrence_verified_not_automatic_classifier
+Fib_inflammatory	IL6	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:capillary EC: C3_NEC3	gene_occurrence_verified_not_automatic_classifier
+Fib_inflammatory	CXCL1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_inflammatory	CXCL2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_inflammatory	CCL2	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:capillary EC: C3_NEC3	gene_occurrence_verified_not_automatic_classifier
+Fib_inflammatory	CXCL12	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_inflammatory	CXCL14	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C2_ADAMDEC1;Qian 2020:Fibroblast: C3_SOX6	gene_occurrence_verified_not_automatic_classifier
+Fib_inflammatory	HAS1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_ECM	COL1A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_ECM	COL1A2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_ECM	FN1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_ECM	MMP11	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_ECM	THBS2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_ECM	COL3A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Fib_ECM	MMP2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_tip_like	ESM1	positive	1	DEG原表前10（非判定panel）	False	NA	Qian 2020:Endothelial: C1_ESM1	gene_occurrence_verified_not_automatic_classifier
+Endo_tip_like	APLN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_tip_like	KDR	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_tip_like	DLL4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Endo_tip_like	ANGPT2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_KRT19	KRT19	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_KRT19	KRT8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_KRT19	KRT18	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_KRT19	EPCAM	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_KRT19	MUC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_MSLN	MSLN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_MSLN	WFDC2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Epi_MSLN	MUC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+EMT_like	VIM	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+EMT_like	FN1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+EMT_like	ITGA5	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+EMT_like	LAMC2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+EMT_like	COL17A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_myeloid_primed	MPO	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_myeloid_primed	ELANE	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_myeloid_primed	CTSG	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_myeloid_primed	AZU1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_myeloid_primed	PRTN3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_ery_primed	GATA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_ery_primed	KLF1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_ery_primed	GYPA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_ery_primed	TFRC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_ery_primed	PPBP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_lymphoid_primed	DNTT	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_lymphoid_primed	IL7R	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_lymphoid_primed	TCF7	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_lymphoid_primed	LTB	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+HSPC_lymphoid_primed	CD7	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_early_like	GATA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_early_like	KLF1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_early_like	TFRC	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_early_like	CA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_late_like	AHSP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_late_like	SLC4A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_late_like	HBB	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_late_like	HBA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Ery_late_like	HBA2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_immature_like	MPO	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_immature_like	ELANE	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_immature_like	CTSG	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_immature_like	AZU1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_immature_like	PRTN3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_immature_like	CEACAM8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_OLR1_ARG1	OLR1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_OLR1_ARG1	ARG1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_OLR1_ARG1	S100A8	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neut_OLR1_ARG1	S100A9	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_progenitor_like	SOX2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_progenitor_like	NES	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_progenitor_like	FABP7	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Neural_progenitor_like	VIM	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_SDC1	SDC1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_SDC1	MZB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_SDC1	DERL3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_SDC1	PRDM1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_secretory	MZB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_secretory	DERL3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_secretory	XBP1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_secretory	PRDM1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_secretory	JCHAIN	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+ASC_secretory	SEC11C	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Stress_response	HSPA1A	positive	8	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_TCellMap.R:L47-L48;Chu 2023:Table S4: Stress response;Chu 2023:Table S6: Stress response;Chu 2023:Table S3: CD8_c4_Tstr;Chu 2023:Table S5: CD4_c4_Tstr;Chu 2023:Table S7: Treg_c5_Stressed;Chu 2023:Table S8: Tfh_c0_Naive-like	gene_occurrence_verified_not_automatic_classifier
+Stress_response	HSPA1B	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_TCellMap.R:L47-L48;Chu 2023:Table S4: Stress response;Chu 2023:Table S6: Stress response;Chu 2023:Table S3: CD8_c4_Tstr;Chu 2023:Table S3: CD8_c9_Tsen;Chu 2023:Table S5: CD4_c4_Tstr;Chu 2023:Table S7: Treg_c5_Stressed	gene_occurrence_verified_not_automatic_classifier
+Stress_response	DNAJB1	positive	6	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_TCellMap.R:L47-L48;Chu 2023:Table S4: Stress response;Chu 2023:Table S6: Stress response;Chu 2023:Table S3: CD8_c4_Tstr;Chu 2023:Table S5: CD4_c4_Tstr;Chu 2023:Table S7: Treg_c5_Stressed	gene_occurrence_verified_not_automatic_classifier
+Stress_response	HSPH1	positive	6	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_TCellMap.R:L47-L48;Chu 2023:Table S4: Stress response;Chu 2023:Table S6: Stress response;Chu 2023:Table S3: CD8_c4_Tstr;Chu 2023:Table S5: CD4_c4_Tstr;Chu 2023:Table S7: Treg_c5_Stressed	gene_occurrence_verified_not_automatic_classifier
+Stress_response	HSP90AA1	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_TCellMap.R:L47-L48;Chu 2023:Table S4: Stress response;Chu 2023:Table S6: Stress response;Chu 2023:Table S3: CD8_c4_Tstr;Chu 2023:Table S5: CD4_c4_Tstr;Chu 2023:Table S7: Treg_c5_Stressed;Chu 2023:Table S8: Tfh_c0_Naive-like	gene_occurrence_verified_not_automatic_classifier
+NK_adaptive_like	KLRC2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_adaptive_like	LAG3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_adaptive_like	FCER1G	lower_in_comparator	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_adaptive_like	SYK	lower_in_comparator	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_adaptive_like	SH2D1B	lower_in_comparator	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+NK_adaptive_like	ZBTB16	lower_in_comparator	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgA	IGHA1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgA	IGHA2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgG	IGHG1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgG	IGHG2	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgG	IGHG3	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgG	IGHG4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgM	IGHM	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgD	IGHD	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+IgE	IGHE	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_NK_boundary	CD3D	positive	3	代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Table S4: TCR Signaling;Chu 2023:Table S6: TCR signaling	gene_occurrence_verified_not_automatic_classifier
+T_NK_boundary	CD3E	positive	2	作者完整功能签名	False	NA	Chu 2023:Table S4: TCR Signaling;Chu 2023:Table S6: TCR signaling	gene_occurrence_verified_not_automatic_classifier
+T_NK_boundary	TRAC	positive	1	DEG原表前10（非判定panel）	False	NA	Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5	gene_occurrence_verified_not_automatic_classifier
+T_NK_boundary	NCR1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+T_NK_boundary	KLRD1	positive	6	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig1.R:L215-L229;Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Qian 2020:T-NK-cell: C3_CD8_ZNF683;Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Chu 2023:Table S10: P_c0_CD8_KLRD1_GZMB_CCL4/5	gene_occurrence_verified_not_automatic_classifier
+T_NK_boundary	NKG7	positive	9	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S4: Activation:Effector function;Chu 2023:Table S6: Activation/Effector function;Qian 2020:T-NK-cell: C4_CD8_CX3CR1;Qian 2020:T-NK-cell: C9_NK_FGFBP2;Chu 2023:Table S5: CD4_c5_CTL;Chu 2023:Table S9: NKT_c0_FCGR3A_GZMB;Chu 2023:Table S10: P_c2_DNT;Chu 2023:Table S10: P_c5_CD8_CXCL13_CCL3/4/5_PD-1;Chu 2023:Table S10: P_c7_CD8_GZMK_NKG7_LAG3_PRF1	gene_occurrence_verified_not_automatic_classifier
+B_ASC_transition	MS4A1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_ASC_transition	CD19	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_ASC_transition	MZB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+B_ASC_transition	PRDM1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mono_Mac_transition	FCN1	positive	2	DEG原表前10（非判定panel）	False	NA	Qian 2020:Myeloid cell: C1_CD14;Qian 2020:Myeloid cell: C3_CCR2	gene_occurrence_verified_not_automatic_classifier
+Mono_Mac_transition	CD14	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mono_Mac_transition	C1QA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Mono_Mac_transition	APOE	positive	3	DEG原表前10（非判定panel）	False	NA	Qian 2020:Fibroblast: C2_ADAMDEC1;Qian 2020:Fibroblast: C11_SERPINE1;Qian 2020:Myeloid cell: C5_CCL18	gene_occurrence_verified_not_automatic_classifier
+Megakaryocyte_review	ITGA2B	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocyte_review	GP1BA	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocyte_review	TUBB1	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocyte_review	PF4	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Megakaryocyte_review	PPBP	positive	0	NA	False	NA	NA	curated_gene_requires_gene_level_reference_review
+Chu_Treg_functional_14	FOXP3	positive	3	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	IKZF2	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	IKZF4	positive	1	作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	IL2RA	positive	6	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Cytokine/Cytokine receptor;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S7: Treg_c2_Activated;Chu 2023:Table S8: Tfh_c4_IL2RA;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	ENTPD1	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	CCR4	positive	5	代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Chemokine/Chemokine receptor;Chu 2023:Table S6: Chemokine/Chemokine receptor;Chu 2023:Table S6: Treg signature	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	ICOS	positive	3	DEG原表前10（非判定panel）;作者完整功能签名	False	NA	Chu 2023:Table S6: Treg signature;Chu 2023:Table S6: Costimulatory molecules;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	IL10RA	positive	3	作者完整功能签名	False	NA	Chu 2023:Table S4: Cytokine/Cytokine receptor;Chu 2023:Table S6: Cytokine/Cytokine receptor;Chu 2023:Table S6: Treg signature	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	TGFB1	positive	2	作者完整功能签名	False	NA	Chu 2023:Table S6: Cytokine/Cytokine receptor;Chu 2023:Table S6: Treg signature	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	TIGIT	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S9: NKT_c4	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	CTLA4	positive	8	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c1_Treg;Chu 2023:Table S10: P_c6_Treg	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	LAG3	positive	11	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S4: Anergy;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S7: Treg_c0;Chu 2023:Table S8: Tfh_c3_Cytotoxic;Chu 2023:Table S10: P_c7_CD8_GZMK_NKG7_LAG3_PRF1	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	HAVCR2	positive	5	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S3: CD8_c1_Tex	gene_occurrence_verified_not_automatic_classifier
+Chu_Treg_functional_14	PDCD1	positive	7	DEG原表前10（非判定panel）;代码明确panel;作者完整功能签名	False	NA	Chu 2023:Chu_fig2.R:L106-L110;Chu 2023:Chu_fig2.R:L469-L473;Chu 2023:Table S4: Exhaustion;Chu 2023:Table S6: Exhaustion;Chu 2023:Table S6: Treg signature;Chu 2023:Table S5: CD4_c3_Tfh;Chu 2023:Table S8: Tfh_c1_Mature	gene_occurrence_verified_not_automatic_classifier

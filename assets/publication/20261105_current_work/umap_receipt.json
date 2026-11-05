@@ -1,0 +1,176 @@
+{
+  "generated_at_utc": "2026-11-05T02:33:28.415545+00:00",
+  "scope": "TME v1 batch_benchmark_v1; not final TME run_v2",
+  "benchmark_cells": 300000,
+  "display_cells": 20000,
+  "seed": 20261105,
+  "selection": "uniform without replacement, same sorted row indices for all methods",
+  "row_index_sha256": "0b66c28da725f43386ae69d2a1d7b6d1f8bc60f48f9450ce503a0976200a4d78",
+  "obs_index_sha256": "0a32ba65bf988fd936bbf698d4a5431d369c4c75f40387ca1ba557c3f137b60a",
+  "source_count": 71,
+  "source_colors": {
+    "GSE125449": "#ff0000",
+    "GSE127465": "#ff1200",
+    "GSE131907": "#ff2900",
+    "GSE132465": "#ff3b00",
+    "GSE138665": "#ff5300",
+    "GSE138709": "#ff6a00",
+    "GSE139829": "#ff7c00",
+    "GSE141526": "#ff9400",
+    "GSE148071": "#ffa500",
+    "GSE149614": "#ffbd00",
+    "GSE152048": "#ffd500",
+    "GSE155698": "#ffe600",
+    "GSE159115": "#faf900",
+    "GSE161277": "#eeff00",
+    "GSE161529": "#d7ff00",
+    "GSE162025": "#bfff00",
+    "GSE162454": "#adff00",
+    "GSE165897": "#96ff00",
+    "GSE166555": "#84ff00",
+    "GSE167297": "#6cff00",
+    "GSE173278": "#55ff00",
+    "GSE173468": "#43ff00",
+    "GSE173682": "#2bff00",
+    "GSE176031": "#1aff00",
+    "GSE176078": "#06ff04",
+    "GSE178341": "#00ff16",
+    "GSE178481": "#00ff27",
+    "GSE181919": "#00ff3f",
+    "GSE182109": "#00ff51",
+    "GSE182434": "#00ff68",
+    "GSE183904": "#00ff80",
+    "GSE184362": "#00ff92",
+    "GSE184880": "#00ffa9",
+    "GSE188711": "#00ffbb",
+    "GSE189357": "#00ffd3",
+    "GSE189889": "#00ffea",
+    "GSE189903": "#00fffc",
+    "GSE191288": "#00eaff",
+    "GSE197461": "#00d3ff",
+    "GSE200997": "#00c1ff",
+    "GSE201347": "#00aaff",
+    "GSE203067": "#0098ff",
+    "GSE205013": "#0080ff",
+    "GSE205506": "#0069ff",
+    "GSE207422": "#0057ff",
+    "GSE207493": "#003fff",
+    "GSE212527": "#002dff",
+    "GSE215120": "#0016ff",
+    "GSE215120_CM": "#0604ff",
+    "GSE215403": "#1300ff",
+    "GSE222315": "#2b00ff",
+    "GSE222446": "#3d00ff",
+    "GSE234933": "#5400ff",
+    "GSE242230": "#6c00ff",
+    "GSE253013": "#7e00ff",
+    "GSE253973": "#9500ff",
+    "GSE256136": "#a700ff",
+    "GSE256326": "#bf00ff",
+    "GSE269936": "#d600ff",
+    "GSE273127": "#e800ff",
+    "GSE274229": "#fa00f9",
+    "GSE274934": "#ff00ed",
+    "GSE277524": "#ff00d5",
+    "GSE286057": "#ff00bd",
+    "GSE288479": "#ff00ac",
+    "GSE294109": "#ff0094",
+    "GSE297041": "#ff0082",
+    "GSE299023": "#ff006b",
+    "GSE299340": "#ff0053",
+    "GSE305078": "#ff0041",
+    "GSE310797": "#ff002a"
+  },
+  "display_label_counts": {
+    "T_NK": 5842,
+    "ambiguous": 5354,
+    "myeloid": 3314,
+    "B": 1220,
+    "epithelial": 1177,
+    "fibroblast": 1059,
+    "endothelial": 685,
+    "plasma": 639,
+    "pericyte_SMC": 425,
+    "mast": 285
+  },
+  "umap": {
+    "n_neighbors": 15,
+    "min_dist": 0.5,
+    "metric": "euclidean",
+    "n_epochs": 300,
+    "random_state": 20261105,
+    "n_jobs": 1
+  },
+  "interpretation": "Display-only induced 20k neighborhoods; not full-cohort UMAP, not paired trajectories, marker labels are not independent truth.",
+  "packages": {
+    "numpy": "1.26.4",
+    "umap-learn": "0.5.9.post2",
+    "matplotlib": "3.10.8",
+    "anndata": "0.11.4",
+    "h5py": "3.13.0"
+  },
+  "input_embeddings": {
+    "unintegrated": {
+      "logical_path": "tme_v1/batch_benchmark_v1/emb_unintegrated.npy",
+      "sha256": "cb3ba27886995c426ce7e3b5f2b992b9c5023f0a004a781219dbc0ff10fd63d1",
+      "shape": [
+        300000,
+        50
+      ]
+    },
+    "harmony_source_unit": {
+      "logical_path": "tme_v1/batch_benchmark_v1/emb_harmony_source_unit.npy",
+      "sha256": "9909731ea67e0e413949c435fd54a112bc7fab67649ecbb1fb1f61cec4550737",
+      "shape": [
+        300000,
+        50
+      ]
+    },
+    "harmony_source_t2": {
+      "logical_path": "tme_v1/batch_benchmark_v1/emb_harmony_source_t2.npy",
+      "sha256": "9727c1ee209719c4a4c7ddbafd827c08b1eed7a51ed05ac2d0bb1cfc31e77274",
+      "shape": [
+        300000,
+        50
+      ]
+    },
+    "scvi_source": {
+      "logical_path": "tme_v1/batch_benchmark_v1/emb_scvi_source.npy",
+      "sha256": "caf8d583e34244cdc81a58ae6e325669f9e66bfde3872a49a226b952aa34dda4",
+      "shape": [
+        300000,
+        30
+      ]
+    },
+    "scvi_unit": {
+      "logical_path": "tme_v1/batch_benchmark_v1/emb_scvi_unit.npy",
+      "sha256": "c930987f78c6e266bccd870bd40db90361a0cb29dc3f93d28434e8fda626e921",
+      "shape": [
+        300000,
+        30
+      ]
+    },
+    "scanorama": {
+      "logical_path": "tme_v1/batch_benchmark_v1/emb_scanorama.npy",
+      "sha256": "17e51a7c14e6503492b3ddfaf866c4227efb0c59e5aa2ec37984d544f62c0523",
+      "shape": [
+        300000,
+        50
+      ]
+    }
+  },
+  "method_order": [
+    "unintegrated",
+    "harmony_source_unit",
+    "harmony_source_t2",
+    "scvi_source",
+    "scvi_unit",
+    "scanorama"
+  ],
+  "outputs_sha256": {
+    "fig2_batch_umap.png": "ac837ddc25091b078208a9cc8722f70308cae42aab58caad52436fb03c5404f8",
+    "figS1_source_legend.png": "231c0442ef6b3bcde810828ce48241bbd4e7ba84b542dd523f8f5d0570223570",
+    "fig2_batch_umap.pdf": "fe08accb5f71e89e46959db2952804ceedf70d79da298eb9937714796ea94b9f",
+    "figS1_source_legend.pdf": "e4d1b2c8af654f7c996c260f8f64c50cbb31ef651b3e62763c8e43f541e3f864"
+  }
+}

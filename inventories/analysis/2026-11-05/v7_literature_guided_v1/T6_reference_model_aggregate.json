@@ -1,0 +1,182 @@
+[
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Regulatory T cells",
+    "n_cells": 142908
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Tem/Effector helper T cells",
+    "n_cells": 5858
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Type 17 helper T cells",
+    "n_cells": 2266
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Follicular helper T cells",
+    "n_cells": 1285
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Tem/Trm cytotoxic T cells",
+    "n_cells": 1281
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Type 1 helper T cells",
+    "n_cells": 1107
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Memory CD4+ cytotoxic T cells",
+    "n_cells": 514
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Treg(diff)",
+    "n_cells": 343
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "T(agonist)",
+    "n_cells": 117
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Trm cytotoxic T cells",
+    "n_cells": 112
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "gamma-delta T cells",
+    "n_cells": 96
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Tem/Temra cytotoxic T cells",
+    "n_cells": 66
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Naive B cells",
+    "n_cells": 61
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "Macrophages",
+    "n_cells": 60
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "ev_celltypist_label",
+    "label": "CD8a/a",
+    "n_cells": 57
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "T regulatory cells",
+    "n_cells": 85227
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "CD4+ T cell",
+    "n_cells": 35445
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Tfh/Th1 helper CD4+ T cells",
+    "n_cells": 15008
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Effector/Memory CD4+ T cells",
+    "n_cells": 7758
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "CD4 or CD8 T cell",
+    "n_cells": 3609
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "CD8+ T cell",
+    "n_cells": 1867
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Effector/Memory CD8+ T cells",
+    "n_cells": 1748
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Blood Cell",
+    "n_cells": 1503
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Exhausted CD8+ T cells",
+    "n_cells": 1217
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Naive CD4+ T cells",
+    "n_cells": 1211
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Normal Tissue Cell",
+    "n_cells": 289
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Plasmablast",
+    "n_cells": 263
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Any Cell",
+    "n_cells": 223
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "B Cell",
+    "n_cells": 178
+  },
+  {
+    "cluster_uid": "Tcell_6",
+    "field": "scatomic_full_label",
+    "label": "Pro-angiogenesis Macrophage",
+    "n_cells": 149
+  }
+]

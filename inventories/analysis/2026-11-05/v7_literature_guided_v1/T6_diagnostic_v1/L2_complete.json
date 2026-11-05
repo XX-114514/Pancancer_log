@@ -1,0 +1,30 @@
+{
+  "status": "completed_T6_marker_QC_aggregate_recovery_not_final_subtypes",
+  "UTC": "2026-11-05T05:17:09.666774+00:00",
+  "n_cells_retained": 156631,
+  "n_sources": 52,
+  "n_clusters": 12,
+  "n_marker_genes": 101,
+  "n_marker_records": 1212,
+  "genes_absent_from_full_native_axis": [],
+  "n_T_parent_supported_raw2": 104936,
+  "n_Treg_core_positive_raw1": 35287,
+  "n_Treg_core_positive_raw2": 15650,
+  "n_joint_doublet_candidates": 845,
+  "tiny_clusters_under3": [
+    {
+      "cluster": 11,
+      "n_cells": 2
+    }
+  ],
+  "old_fields_preserved": true,
+  "fine_final_label_changes": 0,
+  "recovery": "Stage L computed marker/percentile evidence and private overlay, then failed only when fillna(missing) on a categorical reference-label field. Reused intact evidence with exact input index/old-fields check. Cast reference labels to object before missing-label aggregation. No scientific fit restarted; failed stage preserved.",
+  "reused_private_overlay_sha256": "8117e7245b49ecebdee70a0b0f8677c58c0cf6b7cfcba4fcc7ae02987b8ea915",
+  "limits": [
+    "All outputs scoped to old V7 T6 only, not a whole-T or Treg census.",
+    "FOXP3 plus another core marker is positive RNA evidence, not a calibrated exclusive Treg classifier.",
+    "Competitor programs and doublet quantiles create review candidates only.",
+    "Quick-TRANSfer warnings in the fit remain for source/resolution stability review."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "UTC": "2026-11-05T02:45:24.695267+00:00",
+  "cluster_uid": "Tcell_6",
+  "n_cells": 156631,
+  "candidate": "CD4_Treg",
+  "legacy_full_panel_pass": 6,
+  "legacy_canonical_pass": 3,
+  "candidate_sample_n_evaluable": 842,
+  "candidate_sample_n_support": 841,
+  "candidate_sample_support_fraction": 0.998812351543943,
+  "n_ge2_Treg_canonical_genes": 57042,
+  "n_ge2_Treg_canonical_AND_ge2_T_identity": 53819,
+  "annotation_changes": 0,
+  "decision": "Treg-enriched candidate with within-cluster composition still to resolve; not an all-cell Treg assignment",
+  "sample_support_rule": "Within-sample T6 and other V7 T cells >=10; >=2 measured panel genes including >=1 canonical; mean log1p CP10K difference >0.10. Descriptive replication, not a hypothesis test."
+}

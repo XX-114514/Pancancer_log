@@ -1,0 +1,10 @@
+cluster_uid	major	n_cells	v7_n_cells	old_top	old_second	old_margin	top_pass_genes	top_canonical_genes	top_fails_minimal_gene_gate	lower_candidates_passing_minimal_gene_gate	lower_candidates_n	top_has_no_passing_genes	contamination_top	old_rescued	old_reason
+Dendritic_0	Dendritic	5001	5001	DC3	Myeloid_contamination	0.053002721	CD1C	CD1C	True	cDC2	1	False	False	False	expanded_panel_threshold_or_replication_not_met
+Dendritic_3	Dendritic	4881	4881	DC3	cDC2	0.0687981118	CD1C	CD1C	True	cDC2	1	False	False	False	expanded_panel_threshold_or_replication_not_met
+Endothelial_4	Endothelial	6158	6158	Venous_ACKR1	Blood	0.0509951781	PLVAP	PLVAP	True	Blood;Tip_angiogenic	2	False	False	False	expanded_panel_threshold_or_replication_not_met
+Endothelial_5	Endothelial	15117	15117	Venous_ACKR1	Blood	0.1794030172	PLVAP	PLVAP	True	Blood;Capillary;Tip_angiogenic	3	False	False	False	expanded_panel_threshold_or_replication_not_met
+ILC_3	ILC	5228	5228	ILC3	ILC2	0.0993676257	KIT,KLRB1	NA	True	ILC2	1	False	False	False	expanded_signal_without_canonical_anchor
+Plasma_1	Plasma	12534	12534	Bcell_contamination	Cycling_Plasma	0.0241647868	CD37	NA	True	Plasmablast;Mature_SDC1;IgG	3	False	True	False	top_expanded_panel_is_contamination_conflict
+Plasma_2	Plasma	69779	69779	Bcell_contamination	Plasmablast	0.1412086931	CD79A	CD79A	True	Plasmablast;Mature_SDC1;IgA	3	False	True	False	top_expanded_panel_is_contamination_conflict
+Plasma_3	Plasma	48340	48340	Plasmablast	IgA	0.0037431712	MZB1	MZB1	True	Mature_SDC1	1	False	False	False	expanded_panel_threshold_or_replication_not_met
+Tcell_6	Tcell	156631	156631	CD8_exhausted	CD4_Treg	0.1477979694	TIGIT	NA	True	CD4_Treg;Tissue_resident;CD4_Tfh;IFN_T	4	False	False	False	expanded_signal_without_canonical_anchor

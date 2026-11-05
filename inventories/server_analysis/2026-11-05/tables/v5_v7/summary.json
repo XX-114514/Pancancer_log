@@ -1,0 +1,14 @@
+{
+  "major_v5_to_v7_transition.tsv": {
+    "total": 4676787,
+    "exact_label_retained": 3905954,
+    "exact_label_changed": 770833,
+    "changed_pct": 16.48210619812277
+  },
+  "malignancy_v3_to_v7_transition.tsv": {
+    "total": 4676787,
+    "exact_label_retained": 3623216,
+    "exact_label_changed": 1053571,
+    "changed_pct": 22.527666964520726
+  }
+}

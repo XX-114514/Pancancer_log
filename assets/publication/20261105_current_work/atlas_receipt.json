@@ -1,0 +1,15 @@
+{
+  "scope": "integration_v2; historical full-data UMAP, not new TME run_v2",
+  "files": {
+    "umap_source.png": {
+      "logical_path": "integration_v2/run_v2/figures/umap_source.png",
+      "size": 269832,
+      "sha256": "ca84af1ac2ee3f6222827e9b3d2dc1be09190c06ae70c0b3bdb1f4b4353287c3"
+    },
+    "umap_markers.png": {
+      "logical_path": "integration_v2/run_v2/figures/umap_markers.png",
+      "size": 4082592,
+      "sha256": "df8c5fe36fa5921f3d4d3dee59888d0e8dd415d4de154f95ad7f47d50f862da9"
+    }
+  }
+}

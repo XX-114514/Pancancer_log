@@ -1,0 +1,12 @@
+{
+  "status": "completed_T6_marker_measurement_scope_and_overlay_readback",
+  "UTC": "2026-11-05T05:22:13.477875+00:00",
+  "n_cells": 156631,
+  "n_sources": 52,
+  "n_T_parent_positive_rule_not_evaluable": 25753,
+  "n_Treg_positive_rule_not_evaluable": 25753,
+  "n_Treg_core_positive_raw1_unchanged": 35287,
+  "n_T_parent_positive_raw2_unchanged": 104936,
+  "fine_final_labels_changed": 0,
+  "limits": "Unmeasured marker components are unknown, not negative. Other independent T evidence can still support major identity when this conservative cross-component rule cannot be evaluated."
+}

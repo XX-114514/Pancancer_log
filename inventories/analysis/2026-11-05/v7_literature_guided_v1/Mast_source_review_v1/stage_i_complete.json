@@ -1,0 +1,25 @@
+{
+  "status": "completed_extended_Mast_marker_review",
+  "UTC": "2026-11-05T04:39:35.168724+00:00",
+  "n_all_cells_retained": 45036,
+  "n_source_refit_cells": 36007,
+  "n_refit_clusters": 15,
+  "n_expanded_genes": 95,
+  "n_marker_cluster_records": 1425,
+  "route_counts": {
+    "marker_supported_Mast_coarse": 38959,
+    "Mast_with_competing_program_review": 2296,
+    "low_Mast_marker_review": 2115,
+    "joint_doublet_candidate_review": 1323,
+    "weak_Mast_with_competing_program_review": 343
+  },
+  "n_old_Mast_unresolved_now_marker_supported_coarse": 18241,
+  "old_V7_fields_preserved": true,
+  "final_fine_subtypes_assigned": 0,
+  "limits": [
+    "Expanded competitor review corrects the earlier T/myeloid/stromal/epithelial-only panel scope.",
+    "Three detected genes >=1 UMI or two genes >=2 UMI flags an extended competitor program; it is review evidence, not proof of a doublet.",
+    "Mast major identity is marker-supported within the old V7 Mast candidate pool; outside-parent recruitment and final atlas release are not complete.",
+    "No corrected full-gene decontX expression exists; raw competitor RNA may be ambient."
+  ]
+}

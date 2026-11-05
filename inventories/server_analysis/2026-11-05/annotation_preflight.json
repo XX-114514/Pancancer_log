@@ -1,0 +1,21 @@
+{
+  "created_utc": "20261103T024149Z",
+  "submitted": false,
+  "source_counts": {
+    "ready_to_submit": 67,
+    "reused_verified": 1,
+    "awaiting_malignancy": 4
+  },
+  "code_hashes": {
+    "check_output.py": "93e0927bd8ab2708cec3e04564dad7deded8da23d375d85b584726f0baa7fb5c",
+    "collect_sources.py": "4e1618101c2dc1ca77bc3d054b15a3258f4df989f8d429a05ea588494d77d914",
+    "marker_policy.py": "752688f0760ed457a464f17b6d3e63891028a6308288d6067dd3d7841c8e1aa1",
+    "predict_array.sbatch": "3654a84283b0c8467d91bf402f24d9e60d2ad3f2e386ca79d5c2157b22562e29",
+    "predict_routed_source.py": "23747190b53ac56855c68e3911799488adc12cc6786cfb378986c73b35db02b6",
+    "singler_hpca.R": "a27d8ddd71df20c0570b28f9fe79f5d81e50aa30a0998627825ab2b394e79811",
+    "submit_all.py": "e8f8b7b15a4ca1acfcfe7e9cabe8cb8b5a1bc64d17b65ad42c7f9d498730b699",
+    "test_collection.py": "3d3e3b97e1efb01756fc56b42a7432c351773156cc236e9e5b52d7f4f4004381",
+    "test_submission_flow.py": "1de9431dd0f50e1b79b40fd91492c05420325dc4844e7bb69bcfe9b356503d56"
+  },
+  "current_completion_not_inferred": true
+}

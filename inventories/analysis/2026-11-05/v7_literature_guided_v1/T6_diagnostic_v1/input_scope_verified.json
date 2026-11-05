@@ -1,0 +1,16 @@
+{
+  "status": "T6_input_scope_verified_and_model_features_prepared",
+  "UTC": "2026-11-05T04:34:45.236128+00:00",
+  "n_cells": 156631,
+  "n_genes": 95038,
+  "n_sources": 52,
+  "n_source_robust_model_genes": 17252,
+  "exact_frozen_V7_cluster_uid": "Tcell_6",
+  "exact_frozen_V7_major": "Tcell",
+  "frozen_scope_index_exact": true,
+  "legacy_template_input_scope_description": "Frozen V7 major_celltype_v7 == Tcell_6; candidate pool, not accepted identity",
+  "scope_correction": "The prior generic exporter wording used major==Tcell_6. The actual executed mask was cluster_uid==Tcell_6 AND major==Tcell; exact full-rowset equality is now independently verified. Raw matrix is unchanged.",
+  "full_input_policy": "All 156631 frozen T6 cells retained in the initial diagnostic; per-cluster QC/competitor review follows. No Treg reference prefilter.",
+  "model_feature_policy": "Measured in >=80% actual T6 sources; HB omitted from HVG candidates only. Full RNA assay retained.",
+  "new_final_label_changes": 0
+}

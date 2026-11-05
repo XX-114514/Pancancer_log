@@ -1,0 +1,9 @@
+{
+  "captured_utc": "2026-11-05T00:54:13.809301+00:00",
+  "expected_sources": 72,
+  "malignancy_sidecars_present": 72,
+  "sidecar_row_readback_repeated": false,
+  "full_routed_collection_receipt_found": false,
+  "full_routed_collection_search_scope": "historical task submissions and known annotation output root",
+  "known_annotation_output_root_exists": false
+}

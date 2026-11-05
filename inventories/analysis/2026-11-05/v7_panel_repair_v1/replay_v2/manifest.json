@@ -1,0 +1,38 @@
+{
+  "method": "all candidates, distinct axes, no ranking or automatic relabeling",
+  "results": {
+    "old40": {
+      "clusters": 40,
+      "cells_in_scope": 1073743,
+      "evidence_rows": 4480,
+      "measurement_rows": 1868,
+      "DEG": "not_supplied_legacy_statistic_not_reused",
+      "final_label_changes": 0
+    },
+    "T6_12": {
+      "clusters": 12,
+      "cells_in_scope": 156631,
+      "evidence_rows": 1344,
+      "measurement_rows": 1212,
+      "DEG": "top10_truncated_no_absence_inference",
+      "final_label_changes": 0
+    }
+  },
+  "code_sha256": {
+    "replay_aggregates.py": "a274014fccdf7f71eaec061f81c869aff230b33b8cc0354ac4c699e5d906f832",
+    "evidence_engine.py": "8a120b0ebceb0b10485147859fb6dbd00734eb4be14fa70a3295747f6092d220"
+  },
+  "inputs": {
+    "resources/annotation/v7_panel_repair_v1/registry.json": "83f7f01a5072a325eb65dffaf65565e000df43677a8085f4fb6172079f203268",
+    "inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/sources/expanded_panel_gene_evidence_v1.tsv.gz": "fc9cfbb1ff9d27aaf8d0f962f12f604a03f498c4699c499218a414c117c9709c",
+    "inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/inputs/legacy_expanded_cluster_gates.tsv": "79094455697cd55664abb36f2c52f416318f565ab4f02297299c7d9dd50a2dd2",
+    "inventories/analysis/2026-11-05/v7_literature_guided_v1/T6_diagnostic_v1/T6_measured_marker_expression.tsv": "68a0ec4ead0edf2ea8ef72a153729184ce5fa14abc68d6138f0ccf84f440266b",
+    "inventories/analysis/2026-11-05/v7_literature_guided_v1/T6_diagnostic_v1/T6_top10_RNA_DEG.tsv": "8a3c7b2a53925fc8229e2f26d18fce208e2b9f673f25a9d608c1bc58655cff3f"
+  },
+  "limitations": [
+    "Old40 and T6 scopes overlap: never sum their cell counts",
+    "New registry genes absent from old inputs are explicitly unmeasured/not supplied",
+    "These are aggregate replays, not new full-matrix biological fits",
+    "Top10 DEG is truncated, absence from it is not evidence of no enrichment"
+  ]
+}

@@ -1,0 +1,22 @@
+id	title	url	verified_scope
+Tirosh2016	Dissecting the multicellular ecosystem of metastatic melanoma	https://shaleklab.com/wp-content/uploads/2024/03/Tirosh-et-al-Science-2016.pdf	正文 MITF-high 程序含 TYR/PMEL/MLANA；AXL-high 可降低分化程序，不可据低表达排除黑色素来源
+Rao2017	Pathologically expanded peripheral T helper cell subset drives B cells in rheumatoid arthritis	https://www.nature.com/articles/nature20810	人体RA的PD-1hi CXCR5低/阴性CD4群、CXCL13/IL21/ICOS/MAF及功能实验；TME仅借鉴Tph-like候选逻辑
+Aizarani2019	A Human Liver Cell Atlas reveals Heterogeneity and Epithelial Progenitors	https://pmc.ncbi.nlm.nih.gov/articles/PMC6687507/	Fig3正文：ALB/ASGR1/HNF4A/HP肝细胞方向；KRT19/CFTR胆管方向；不能以EPCAM独判
+Henry2018	A Cellular Anatomy of the Normal Adult Human Prostate and Prostatic Urethra	https://pmc.ncbi.nlm.nih.gov/articles/PMC6411034/	正文Fig4及DEG：KLK3/ACPP(Mapped ACP3)/MSMB、KLK2；正常人前列腺参考，不能判恶性
+Lodi2025	Decoding tumor heterogeneity	https://github.com/lambrechtslab/Pan-cancer_Lodietal	作者 T/B/DC/EC/MM 代码；谱系内 QC/重建、RNA DEG、人工命名；MarkersToAdd 占位，非完整分类器
+Qian2020	A pan-cancer blueprint	https://www.qian-lab.org/assets/pdf/single-cell_pan-cancer_blueprint_2020.pdf	正文/Methods 与已取得 S5；共享/组织特异谱系，DC 跨父类召回；不把 top-DEG 表当自动 panel
+Chu2023	Pan-cancer T cell atlas	https://www.nature.com/articles/s41591-023-02371-y	作者代码 Coolgenome/TCM、Table S5-S10；CD4/CD8/非常规 T 与独立功能签名
+Ma2025	Pan-Cancer Analyses Refine the Single-Cell Portrait of Tumor-Infiltrating Dendritic Cells	https://pmc.ncbi.nlm.nih.gov/articles/PMC12485386/	Methods Cell clustering and annotation；正文 cDC1/cDC2/pDC/LAMP3 组合及亚群比较
+YangB2024	Pan-cancer single-cell dissection reveals phenotypically distinct B cell subtypes	https://doi.org/10.1016/j.cell.2024.06.038	已核实 GEO GSE233236 的20标签；完整作者判定 panel/代码未取得，不能称精确复制
+YangNK2019	Heterogeneity of human bone marrow and blood natural killer cells	https://pmc.ncbi.nlm.nih.gov/articles/PMC6718415/	NK 状态和 KLRC2-associated adaptive 表型；非泛癌全组织真值
+Schlums2015	Cytomegalovirus Infection Drives Adaptive Epigenetic Diversification of NK Cells	https://pmc.ncbi.nlm.nih.gov/articles/PMC4612277/	adaptive NK 的部分 FCER1G/SYK/SH2D1B/ZBTB16 降低；不是 universal negative gate
+Bjorklund2016	The heterogeneity of human CD127+ innate lymphoid cells	https://pubmed.ncbi.nlm.nih.gov/26878113/	人体 ILC1/2/3 与 NK 分支；原研究材料有限，分型组合是本项目整理
+Tauber2023	Landscape of mast cell populations across organs in mice and humans	https://pubmed.ncbi.nlm.nih.gov/37462672/	人体/小鼠分开解释；不直接将小鼠亚型转为人体标签
+Buechler2021	Cross-tissue organization of the fibroblast lineage	https://www.nature.com/articles/s41586-021-03549-5	跨物种/跨组织 fibroblast；人类分支须本数据验证，不照搬鼠签名
+Velten2017	Human haematopoietic stem cell lineage commitment is a continuous process	https://doi.org/10.1038/ncb3493	人体 HSPC 连续分化逻辑；不能由少量RNA证明正常祖细胞功能或多潜能
+Travaglini2020	A molecular cell atlas of the human lung	https://www.nature.com/articles/s41586-020-2922-4	肺内 epithelial/stromal 分型，不能跨器官直接套用
+Neftel2019	An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma	https://pmc.ncbi.nlm.nih.gov/articles/PMC6703186/	肿瘤神经发育样状态与正常身份分开；不以 SOX2/NES 证明正常祖细胞
+MDSC2016	Recommendations for myeloid-derived suppressor cell nomenclature	https://pmc.ncbi.nlm.nih.gov/articles/PMC4935811/	MDSC 功能性命名边界；RNA 候选不等于已证明抑制功能
+UCell2021	UCell: Robust and scalable single-cell gene signature scoring	https://doi.org/10.1016/j.csbj.2021.06.043	官方秩评分辅助；不是谱系概率或统一阈值分类器
+UCellDocs	Official UCell vignette	https://www.bioconductor.org/packages/release/bioc/vignettes/UCell/inst/doc/UCell_vignette_basic.html	官方 ScoreSignatures_UCell；版本/排名参数/全基因宇宙必须记录
+SeuratDocs	FindAllMarkers official documentation	https://satijalab.org/seurat/reference/findallmarkers	RNA data 上 Wilcoxon，avg_log2FC 与旧 mean-log 差不同；默认校正不冒称 BH
