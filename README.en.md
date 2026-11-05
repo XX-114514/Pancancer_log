@@ -1,5 +1,7 @@
 # PanCancer
 
+> **Current research overview (Chinese)**: [research progress, ongoing analyses, and next-stage priorities](docs/homepage/07_current_work.md), updated 2026-11-05. The historical 0906 narrative below is preserved.
+
 > **Server analysis audit, 2026-11-05**: [current analysis inventory, evidence and handoff (Chinese)](docs/reports/20261105_server_analysis_audit/README.md). This homepage describes the historical September 6 release. The audit separates subsequent V7 recomputation, expanded TME data, spatial validation limits and NMF stability.
 
 
