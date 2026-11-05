@@ -106,3 +106,5 @@ M于05:20:19 UTC / 13:20:19 UTC+8保存并读回工作overlay、深度QC和多�
 本轮已启动科学阶段均取得实际完成或失败终端，无本轮已知活动拟合作业。当前交付是可解释的Mast大类终点和T6工作注释证据，最终全图谱注释仍待后续逐类验收。准备公开仅显式审阅文件；完整raw对象、细胞行、内部路径与完整stdout均留私有。
 
 本节点公开清单76文件、约6.1MB；逐文件隐私检查和Python AST通过，14个PNG/SVG与各绘图manifest SHA精确一致。初次diff check发现Mast参考panel来源列为空造成末尾tab，已补上已核实的作者Fig1来源，无数值变化；v2 diff check exit0。完整仓库轻量验证0 errors/1既有warning，无断裂相对链接。仅显式76路径暂存；主工作区原15项tracked及其他untracked并发内容保留。普通push与独立远端SHA收据在成功后另记，不能以本段准备记录冒称已经同步。
+
+Publication independently verified at 2026-11-05T05:27:07Z UTC / 13:27:07 UTC+8: content commit `fefc2074b911101f40bb2803a15259ba67e4b0ad`, 76 reviewed files, ordinary push actual0, independent ls-remote exact full-SHA match. Seven marker figures / 14 PNG-SVG artifacts matched manifests; validator 0 errors / 1 pre-existing warning. This receipt records publication only; the whole-atlas final annotation remains incomplete.
