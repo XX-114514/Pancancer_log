@@ -1,0 +1,48 @@
+[
+  {
+    "path": "runs/20260725_120105_unified_pancancer_covarnet/scripts/pancancer_evidence_marker_specs.py",
+    "sha256": "5ba7f95b6657ef2d1e9e4998d04d5e19cc9d93f1ec863c4866f81c86ece6f5a9"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260823_corrected_evidence_v1/scripts/02_major_evidence_v3.py",
+    "sha256": "7a0769ef37564407be226674e050b48cd8269b0b3b0d3179da5e5f88e57654b4"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260823_corrected_evidence_v1/tables/lineage_specific_thresholds_v5.tsv",
+    "sha256": "673fc75198f24bafcd4143fabab9ca96eb9c1b6f3ad2a7174105dd5bda59410c"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260823_corrected_evidence_v1/tables/effective_lineage_annotation_policy_v5.tsv",
+    "sha256": "1ffef152cbd1c846af97161acc7ca0149d8c39f91db3c67578f2f7f8537b4f5f"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260905_uncertainty_resolution_v1/tables/expanded_panel_gene_evidence_v1.tsv.gz",
+    "sha256": "fc9cfbb1ff9d27aaf8d0f962f12f604a03f498c4699c499218a414c117c9709c"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260823_corrected_evidence_v1/scripts/06_finalize_evidence_annotation_v5.py",
+    "sha256": "04f4712b041498a1fba85c0930434caf120faa401c499b95794b389a3b2ccb5d"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260823_corrected_evidence_v1/scripts/04b_expand_marker_aliases.py",
+    "sha256": "f8cad21f5d90b579cc2cc49f6cb81957e31d575b333f492e43aec20c2bfee34e"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260823_corrected_evidence_v1/scripts/03_lineage_neighbors_leiden.py",
+    "sha256": "3a34a5469d98145f998e5da7e7a470af60e36fd32ee6554501c038abb4b64281"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260823_corrected_evidence_v1/scripts/05c_rebuild_selected_lineages_v3.py",
+    "sha256": "afe6b1f008f43e5fee07512c85215401b566cc9265417a1a7225ca19862b1c6e"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260905_uncertainty_resolution_v1/scripts/02_rescore_unresolved_with_expanded_panels.py",
+    "sha256": "08a420d22e5595238b9f33896f1aa3601651febb7d965b84b60558938675b4af",
+    "retrieval": "prior-stage saved source; reused this audit"
+  },
+  {
+    "path": "runs/20260818_pancancer_5M_merge_prep/07_fine_annotation/20260905_uncertainty_resolution_v1/scripts/04_integrate_uncertainty_and_subtype_overlays.py",
+    "sha256": "ab0a7776fdf6fe16842171142e73d1079c61fea8788769fd15ede22e11207f52",
+    "retrieval": "prior-stage saved source; reused this audit"
+  }
+]

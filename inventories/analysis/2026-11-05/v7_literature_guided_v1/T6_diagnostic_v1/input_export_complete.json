@@ -1,0 +1,40 @@
+{
+  "stage": "B_Tcell_6_fullgene_export_complete_not_annotation_complete",
+  "UTC_start": "2026-11-05T04:24:36.270998+00:00",
+  "UTC_end": "2026-11-05T04:28:00.688279+00:00",
+  "shape": [
+    156631,
+    95038
+  ],
+  "nnz": 248354875,
+  "n_read_blocks": 5040,
+  "input_axis_exact": true,
+  "n_annotation_changes": 0,
+  "scope": "Only V7 Tcell_6; no recruitment outside this parent yet",
+  "outputs": [
+    {
+      "name": "T6_v7_fullgene_raw.h5ad",
+      "size": 628881266,
+      "sha256": "e8fde24c0a52b37915935fb1d83062eeac7a80302db90f556d6f22fa4f34bb95",
+      "private_cell_or_matrix": true
+    },
+    {
+      "name": "T6_v7_fullgene_raw_10x.h5",
+      "size": 640446116,
+      "sha256": "25a68c3b0a10c9308cc9dfa8d454d12f78c991122732a91f2b6619bd512356b7",
+      "private_cell_or_matrix": true
+    },
+    {
+      "name": "T6_v7_metadata_PRIVATE.tsv.gz",
+      "size": 7864442,
+      "sha256": "f102346d5c5cd8bfb3204b3f914f512401f587bd5db22e7266d7cd3ff890bc54",
+      "private_cell_or_matrix": true
+    },
+    {
+      "name": "T6_v7_QC_aggregate.tsv",
+      "size": 1120,
+      "sha256": "f1c8a6ef7950d52a94a13f44c4d608fb704529be45014ef1ddc027c90b6acbd3",
+      "private_cell_or_matrix": false
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "lineage": "Tcell_6 source-refit",
+  "row_prefix": "K-",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 12,
+  "n_cells": 156631,
+  "n_marker_records": 1212,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "68a0ec4ead0edf2ea8ef72a153729184ce5fa14abc68d6138f0ccf84f440266b",
+  "panel_spec_sha256": "6e24de00e2fb01d9a7f3a66cc89141985eb16783e15a3f8060c818fcd7797817",
+  "outputs": [
+    {
+      "name": "T6_K_identity_subtype_v5.png",
+      "sha256": "f75ffa53488fcea0ebc0002c6ba3755b4e6d225a5f86f219bd841963907496b1"
+    },
+    {
+      "name": "T6_K_identity_subtype_v5.svg",
+      "sha256": "eca504ade93a5935e2aa9abd40a7e9086255b15fd5183cca154b5b2b9636dd6b"
+    },
+    {
+      "name": "T6_K_reference_states_v5.svg",
+      "sha256": "5935aa7902aae17a5dc2e6889a98fdd4839f5eefb71592657544ca20236f4dd3"
+    },
+    {
+      "name": "T6_K_competing_lineage_QC_v5.svg",
+      "sha256": "f4859cab92206f63bb20fddf62758f21dbd625fbcbe21abd22b484dc3691788c"
+    },
+    {
+      "name": "T6_K_state_programs_v5.png",
+      "sha256": "fd3c3870fd82ab4bac64b170b33b5e4d23aae8f39d85cc121b9e2a36ee0432fe"
+    },
+    {
+      "name": "T6_K_state_programs_v5.svg",
+      "sha256": "40efc6f7d4ca74791a0c3e26754a98b830d916c44bb9c4e55c2e1b34bb4db48f"
+    },
+    {
+      "name": "T6_K_competing_lineage_QC_v5.png",
+      "sha256": "f5833467465c32622f42f22e96ec3b7b31e282ec5beeb30233153211dc280622"
+    },
+    {
+      "name": "T6_K_reference_states_v5.png",
+      "sha256": "dd730cc32debfa0ff6ecf75412a3f049ace69e480436afebb36d30d0e349f8a2"
+    }
+  ]
+}

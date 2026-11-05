@@ -1,0 +1,20 @@
+# blisa hotspots + CCI for one Xenium section labelled with V7 groups.
+args <- commandArgs(trailingOnly=TRUE); dir <- args[[1]]; bin <- as.numeric(args[[2]]); threads <- as.integer(args[[3]])
+suppressPackageStartupMessages({library(blisa);library(Matrix);library(data.table)})
+set.seed(1337)
+cells <- fread(file.path(dir,'cells.tsv.gz'))
+M <- as(readMM(file.path(dir,'counts_genes_x_cells.mtx')),'CsparseMatrix')
+rownames(M) <- fread(file.path(dir,'genes.tsv'),header=FALSE)$V1; colnames(M) <- cells$cell
+stopifnot(ncol(M)==nrow(cells))
+coords <- data.frame(x_centroid=cells$x,y_centroid=cells$y,row.names=cells$cell)
+binned <- hexBinCells(coords_df=coords,counts_matrix=M,bin_size=bin,group=cells$group)
+LR_df <- readRDS(file.path(dirname(dirname(dir)),'inputs','CellChatDB_human_LR_df.rds'))
+res <- blisa(binned$counts_matrix,LR_df=LR_df,bins=binned$bins,bin_size=bin,nsim=999,n_cells_col='n_cells',
+             counts_by_group=binned$counts_by_group,cpu_threads=threads,species='human')
+out <- file.path(dir,sprintf('blisa_bin%d',bin)); dir.create(out,showWarnings=FALSE)
+saveRDS(res,file.path(out,'blisa_result.rds'))
+lr <- as.data.frame(res$LR_results); lr[]<-lapply(lr,function(v) if(is.list(v)) vapply(v,function(z)paste(z,collapse=';'),'') else v)
+fwrite(lr,file.path(out,'LR_results.tsv.gz'),sep='\t')
+if(!is.null(res$CCI_scores)) fwrite(as.data.frame(res$CCI_scores),file.path(out,'CCI_scores.tsv.gz'),sep='\t')
+n_bins <- nrow(res$bins); fwrite(data.table(section=basename(dir),bin_um=bin,n_bins=n_bins,n_cells=nrow(cells),n_LR_tested=nrow(lr)),file.path(out,'summary.tsv'),sep='\t')
+cat('BLISA_DONE',basename(dir),bin,n_bins,nrow(lr),'\n')

@@ -1,0 +1,23 @@
+{
+  "reproduced_files": [
+    "candidate_reconstruction.tsv",
+    "major_panel_catalogue.json",
+    "cluster_rule_audit.tsv",
+    "all_162_panel_reviews.tsv",
+    "panel_catalogue.json",
+    "shadowed_gene_supported_candidates.tsv",
+    "all_panel_reviews.md",
+    "within_lineage_panel_overlaps.tsv",
+    "audit_summary.json",
+    "all_17_major_panel_reviews.tsv"
+  ],
+  "n_reproduced_files": 10,
+  "normalized_tsv_equivalence": true,
+  "source_marker_sha256": "5ba7f95b6657ef2d1e9e4998d04d5e19cc9d93f1ec863c4866f81c86ece6f5a9",
+  "public_inputs_have_cell_or_patient_rows": false,
+  "new_cell_labels_published": false,
+  "all_40_second_candidates_scores_margins_and_top_gene_counts_match": true,
+  "repository_validation_errors": 0,
+  "repository_validation_warnings": 1,
+  "warning_scope": "pre-existing internal-path warnings; none in this payload"
+}

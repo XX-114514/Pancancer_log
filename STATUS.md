@@ -2,6 +2,26 @@
 
 此前没有有效的V7 CoVarNet（20260923 v7broad已降级，20261010用的是expression_v1标签）。在冻结的V7注释上重算K9（1,207样本×47节点），秩调查规则会选K4，K9作为与V5的受控比较分辨率（[ADR-0004](decisions/ADR-0004-v7-covarnet-rank-k9-comparison.md)）。5个模块在seed、来源等权和53次留一来源下都稳定；但最稳健的CM05（≈V5 CM01）是血液/骨髓模块，V5 CM08的对应模块富集于淋巴结。只有CM04（≈V5 CM07，myCAF＋恶性上皮＋内皮）偏向肿瘤组织，而它在留一来源下呈双峰。Xenium blisa（29切片/18单位）每切片可测LR少，对CM04的支持弱且依赖成员定义；myCAF标签在5,357个基因下也分不清。只含肿瘤组织样本的K9正在运行（job 30662894）。见[报告](docs/reports/20261103_V7_CM_blisa/README.md)。
 
+## 2026-11-05 WEHI现场补核：TME仍运行，V7 K4计算完成，来源敏感性正在推进
+
+01:50:36—01:52:26 UTC / 09:50:36—09:52:26 UTC+8的[只读收据](runs/20261105_current_overview_wehi_readonly.md)补充下方00:49 UTC审计，不代表自动刷新状态。
+
+- TME run_v2调度为RUNNING，01:27:57 UTC日志记录Leiden完成、78簇；最终zarr/summary尚未出现，后处理PENDING等待上游成功。未通过最终图谱验收。
+- V7 strict K4已有两种子NMF/作者网络计算完成报告（47节点、1,207观察、53来源）；纠正“缺K4收据”，尚不证明K4优于K9。
+- V7 K9来源等权及53来源LOSO已在运行。01:52:12 UTC有26份留出完成报告，其中1份仅43节点、25份47节点；来源等权无最终报告，整批科学稳定性未验收。先接收既有产出，不重复提交。
+- 主代码副本保留未跟踪内容，发布副本干净；服务器缓存origin/main未刷新，不能以0/0声称GitHub已同步。当前作业仍显式引用scratch。
+
+## 2026-11-05 服务器系统审计：数据层与计算已有结果，CM验证和新TME终验仍待完成
+
+最新取证见[系统报告](docs/reports/20261105_server_analysis_audit/README.md)及[运行交接](runs/20261105_server_analysis_audit_v1.md)，优先于下方较早的pending描述。本次未重跑生产分析。
+
+- 扩展integration_v2为72来源、4,720,931细胞；72恶性最终侧表均存在，但本次未重做逐细胞验收。当前范围为3,347,659 TME、2,980,723 CoVarNet v1合格细胞。旧run_v1仍保留范围外历史行。
+- 去批次基准支持Harmony来源θ2的当前选择。新run_v2日志到Harmony完成，缺最终summary/对象读回，不能称新图谱已完成。Scanorama重试已有图指标，缺scIB嵌入总分行。
+- V7 strict和legacy的rank survey与K9已有完成报告；K9受override控制。25/50/100µm各29份blisa摘要存在，早期C05 pending已过时。K4、V7 LIANA和接收端响应仍缺完成证据。
+- CT75主CM尚未空间验证；V7 CAF相关CM弱信号依赖W top10，换作者网络成员后消失，myCAF身份又未过面板资格。两条工作线不能互换编号或合并成验证成功。
+- 9种NMF×5seed已有45份任务记录；新尺度敏感性审计确认原W行归一匹配受等价因子缩放影响，部分模块对应需重核。主要跨seed稳定性差异保留，未重新拟合。
+- marker路由仅核到真实单来源候选试点及准备代码，未发现全量完成收据；不更新最终身份。批处理需按当前侧表刷新预检。
+
 ## 2026-11-03 CT75两个CM在独立空间数据上未获验证；一条跨谱系边有支持
 
 用CT75主方案（K=2）的CM在独立空间数据上验证，注释沿用同一方案（区室×cluster×CellTypist身份）。Visium（GSE273952 ccRCC，19名患者）按CoVarNet原文方法（cell2location＋共定位/聚集分数）时CM01很强，但这主要来自几个参考谱几乎相同的调节T相关节点被反卷积拆分；控制参考谱相似度后，CM01和CM02都不高于零分布。Xenium（6个来源、4种面板）上CM成员无法准确注释（F1多<0.5），按事先规则不可计分；探索性分析中CM02共定位高于谱系匹配零分布。单核（N_238）~调节T相关（N_44）这条边在Visium（16/19名患者）和Xenium（8/8单位）上一致为正，是值得单独追踪的候选关系。见[报告](docs/reports/20261102_CT75_spatial_validation/README.md)。
@@ -2358,3 +2378,23 @@ Actual65source metadata-field schemas inspected without individual rows or count
 Unit census producer actual0 completed02:18:29.988903UTC:65sources/9439479archive rows/2346native expression-unit keys. Full independent all-row/unit namespace, inherited review, patient-block and view-status audit completed02:22:16.071120UTC, supervisoractual0 at02:22:17.590541UTC; outputSHAdea2d519bc1cd14012f0ffdb0baa3dc5ec1b8e6b2520cd7f2eca9a88bd371cfb. Preserved121reviewed-identity units forming45source-scoped patient blocks; not a globally independent-patient count. Old1312metadata keys matched. All available native records retained, no expression read/copied.
 
 New formal expression/composition/clinical-view gates are still unknown/rejected because explicit priorQC/assay/finalannotation/sourcealias/material/phase/endpoint review has not been joined; unit-axis audit does not fill them. This is a current review boundary, not a statement that native measurements or prior accepted analyses are unusable. Known selection/product restrictions remain explicit. Full projection auditor originalexact process live,495numeric checkpoints at02:22:31UTC; final overlay qualification gated on actual0. Next unified readonly metadata/counts interface, biological fine/common-type coordination including unresolved boundary review, and source-scientific qualification. Private handoff v26saved; full objective active, no new final annotation or standaloneZarr claimed.
+
+### V7逐类注释首轮实查完成（2026-11-05）
+
+[V7复查run](runs/20261105_v7_literature_guided_reannotation_v1.md)已完成26父类/106标签全量原因审计、Mast全基因初诊及Tcell_6专项核查。原4676787细胞V7标签与CNV保留，481271细胞旧字段要求谱系内重建。Mast的45036细胞/95038基因重建得到27探索群，38350父身份支持候选、6686竞争程序/QC复查候选；不是最终QC排除或27亚型。49来源测量掩码及837 marker记录全量算术复核PASS，图和逐群表见[证据目录](inventories/analysis/2026-11-05/v7_literature_guided_v1/README.md)。
+
+Tcell_6旧winner排序遗漏完整Treg候选的原因已实证；补查841/842样本支持，CellTypist Regulatory T cells为142908/156631，仍需内部细分。首轮全部实际阶段终端已完成，本轮无仍在运行的科学作业；没有发布新最终注释。下一步Mast竞争群/来源特征与清理后敏感性，然后T/NK/ILC。此节点不替代十月图谱及其他并发任务状态。
+
+## V7 panel 规则审计（2026-11-05）
+
+[审计](methods/V7-panel-semantics-audit-20261105.md)完成 162 个候选及 17 组父类正负 panel 审查，373 个历史候选复算一致。共享程序被命名为污染、身份与状态混层、无效第一名遮蔽后续候选均有代码/聚合证据；9 群 323,669 个细胞为待复核范围，非纠正数。V7 标签未改。后续按父身份→分支→状态分别审查 T/NK/ILC，已 high/medium 标签也需抽查。见[run](runs/20261105_v7_panel_semantics_audit_v1.md)。
+
+### V7 marker对应类型图与Mast/Tcell_6复核（2026-11-05当前节点）
+
+截至05:22:13 UTC / 13:22:13 UTC+8，本轮已启动阶段均取得实际终端，无本轮已知活动拟合。新图同时标出marker对应身份/候选亚型/状态，以及每群工作注释和n。冻结4676787细胞V7标签不变，未发布最终全图谱修订。
+
+[Mast当前证据与三张图](inventories/analysis/2026-11-05/v7_literature_guided_v1/Mast_source_review_v1/README.md)：45036候选全保留，38959支持停在Mast大类（含18241原unresolved）；6077保留具体低信号/竞争/QC原因，其中1323只是联合doublet候选。36007细胞来源敏感性得到15工作群，不是15成熟亚型；1425表达记录/背景分位/来源HVG独立算术复核PASS。
+
+[Tcell_6当前证据与四张图](inventories/analysis/2026-11-05/v7_literature_guided_v1/T6_diagnostic_v1/README.md)：全156631细胞/95038基因重建实际exit0，12工作分区、1212 marker记录与156631背景分位独立算术复核PASS。36484细胞的CD4/CXCL13程序不能按CellTypist多数票全部转Treg；IFN、激活和GZMK等状态独立描述。25753细胞的必要marker组件不可测，已与低正证据分开；845联合doublet候选未确诊。极小群、Ig/髓系混合程序、完整T/NK/ILC边界和最终亚型仍待验收。
+
+以上为新阶段实测状态；较早27群或“仍在运行”节点仅是历史背景。具体参数、失败恢复、限制和下一步见[run](runs/20261105_v7_literature_guided_reannotation_v1.md)。

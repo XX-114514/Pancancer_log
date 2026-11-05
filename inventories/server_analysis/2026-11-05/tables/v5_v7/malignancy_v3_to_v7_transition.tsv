@@ -1,0 +1,6 @@
+malignancy_call_v3	cnv_no_malignancy_detected	malignant	not_candidate	not_evaluable	uncertain
+malignant	8484	390245	142415	403	138410
+non_malignant	61525	1703	101375	854	28134
+not_candidate	76	21183	2879069	196	4500
+not_evaluable	688	13108	3880	42764	2737
+uncertain	40113	88792	393928	1067	311138

@@ -1,0 +1,82 @@
+{
+  "status": "completed_marker_targets_and_sample_aware_review",
+  "UTC_start": "2026-11-05T04:11:45.169452+00:00",
+  "UTC_end": "2026-11-05T04:12:11.277769+00:00",
+  "n_cells": 45036,
+  "n_sources": 49,
+  "n_marker_genes": 60,
+  "n_marker_cluster_records": 1620,
+  "n_original_sample_method_groups_all_core": 1322,
+  "n_evaluable_doublet_calibration": 44818,
+  "n_joint_q95_doublet_candidates": 565,
+  "n_Mast_refit_candidates_published_QC": 38312,
+  "n_source_robust_model_genes": 17136,
+  "review_route_counts": {
+    "Mast_parent_supported_subtype_open": 43225,
+    "cross_program_without_joint_doublet_review": 896,
+    "joint_doublet_candidate_review": 565,
+    "Mast_parent_low_marker_review": 350
+  },
+  "new_final_annotation_changes": 0,
+  "limits": [
+    "Reference panels are not transferred labels.",
+    "Doublet percentiles are within original sample and method; joint flags remain candidates.",
+    "Published numeric QC is a sensitivity pool, not universal final QC.",
+    "No corrected full-gene decontX expression was assumed.",
+    "Source coverage filtering is for model features only; full library RNA and marker axes retained."
+  ],
+  "outputs": [
+    {
+      "name": "mast27_expanded_measured_markers.tsv",
+      "sha256": "440cbcd7caea1a122f5c9aa25e356679f5538b4bb44be8a6071f0d3c33233c41"
+    },
+    {
+      "name": "mast_cell_QC_marker_review_PRIVATE.pkl.gz",
+      "sha256": "2224446d9292255101afb30eeb1bc4652222d50bebfa04b2b317bd61d681467b"
+    },
+    {
+      "name": "source_feature_coverage_PRIVATE.tsv",
+      "sha256": "c9476e750cc522e539de767746e5194222be47cf9bedeb8b7a27d383a6436687"
+    },
+    {
+      "name": "source_robust_model_genes.tsv",
+      "sha256": "ee53a9cd8b5dc4f26b9331a5c7616d7e56810b7a71c63d40153fb449c4ffb419"
+    },
+    {
+      "name": "mast27_sample_aware_QC_review.tsv",
+      "sha256": "8571148d30868d29bba18faedfa95d6706680ddd349343e9ea6d42b00f1b9bb9"
+    },
+    {
+      "name": "mast_review_routes_v2.tsv",
+      "sha256": "214c4a9799468c62882a7e2b68f9abc4483cd2688edc318f53fd981fbc11a3ad"
+    },
+    {
+      "name": "positive_program_source_replication.tsv",
+      "sha256": "6fd4170677da236e5b22101e524691e9a938cbd8db3e2a8efa82db9f49b375e4"
+    },
+    {
+      "name": "mast27_display_annotation_v2.tsv",
+      "sha256": "a66e396580e55b0efae896d40b6ed8cdad5ce9703609b00a1de51a852b580579"
+    },
+    {
+      "name": "marker_to_type_state_map.tsv",
+      "sha256": "3b4862b0303c4e31ae36ffff308b682ac9b3491e2fb2c4a284f92084a2b28a0f"
+    },
+    {
+      "name": "Mast_marker_targets_v2.png",
+      "sha256": "90b8d5cb13079fc4195ca2be9dd753fe4430f4e6890a6a36820a1bd0895bb8c9"
+    },
+    {
+      "name": "Mast_marker_targets_v2.pdf",
+      "sha256": "7212bd198c61de2200ae15639e6a6f75f1ce435891488a363b69541c7e8bc511"
+    },
+    {
+      "name": "Mast_panMC_reference_compass_v2.png",
+      "sha256": "b13ff1c6d70cab633b7c0209fca4189db2d0218df7e070a4acd992ce1f148325"
+    },
+    {
+      "name": "Mast_panMC_reference_compass_v2.pdf",
+      "sha256": "63afd04ff8bed9b3a1aa578b1ddb034cd0ac79c04b4cf8dba051f9d0a2da7f18"
+    }
+  ]
+}

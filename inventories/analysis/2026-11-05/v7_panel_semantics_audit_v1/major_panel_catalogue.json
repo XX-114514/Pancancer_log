@@ -1,0 +1,215 @@
+{
+  "MAJOR_MARKERS": {
+    "Tcell": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "LCK",
+      "CD247"
+    ],
+    "NK": [
+      "NKG7",
+      "GNLY",
+      "KLRD1",
+      "KLRF1",
+      "FCGR3A"
+    ],
+    "Bcell": [
+      "CD79A",
+      "MS4A1",
+      "CD37",
+      "CD74",
+      "CD22"
+    ],
+    "Plasma": [
+      "MZB1",
+      "JCHAIN",
+      "SDC1",
+      "TNFRSF17",
+      "DERL3"
+    ],
+    "Monocyte": [
+      "S100A8",
+      "S100A9",
+      "FCN1",
+      "LILRB1",
+      "CTSD"
+    ],
+    "Macrophage": [
+      "C1QA",
+      "C1QB",
+      "C1QC",
+      "APOC1",
+      "MARCO"
+    ],
+    "Dendritic": [
+      "FCER1A",
+      "CD1C",
+      "CLEC10A",
+      "CLEC9A",
+      "GZMB"
+    ],
+    "Mast": [
+      "KIT",
+      "TPSAB1",
+      "TPSB2",
+      "CPA3",
+      "MS4A2"
+    ],
+    "Granulocyte": [
+      "FCGR3B",
+      "CSF3R",
+      "S100A8",
+      "S100A9",
+      "MNDA"
+    ],
+    "Epithelial": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "KRT7"
+    ],
+    "Endothelial": [
+      "PECAM1",
+      "VWF",
+      "KDR",
+      "EMCN",
+      "RAMP2"
+    ],
+    "Fibroblast": [
+      "DCN",
+      "LUM",
+      "COL1A1",
+      "COL1A2",
+      "COL3A1"
+    ],
+    "Erythroid": [
+      "HBB",
+      "HBA1",
+      "HBA2",
+      "AHSP",
+      "GYPA"
+    ],
+    "Platelet": [
+      "PPBP",
+      "PF4",
+      "GP9",
+      "NRGN",
+      "ITGA2B"
+    ],
+    "HSPC": [
+      "CD34",
+      "SPINK2",
+      "GATA2",
+      "HLF",
+      "MEIS1"
+    ],
+    "Neural": [
+      "S100B",
+      "SOX10",
+      "PLP1",
+      "MPZ",
+      "SLC1A3"
+    ],
+    "ILC": [
+      "IL7R",
+      "KIT",
+      "KLRB1",
+      "RORC",
+      "IL1R1"
+    ]
+  },
+  "MAJOR_EXCLUDE_MARKERS": {
+    "Tcell": [
+      "LST1",
+      "TYROBP",
+      "MS4A1",
+      "COL1A1",
+      "PECAM1"
+    ],
+    "NK": [
+      "CD3D",
+      "CD3E",
+      "MS4A1"
+    ],
+    "Bcell": [
+      "CD3D",
+      "CD3E",
+      "LST1",
+      "COL1A1"
+    ],
+    "Plasma": [
+      "CD3D",
+      "CD3E",
+      "MS4A1"
+    ],
+    "Monocyte": [
+      "CD3D",
+      "CD3E",
+      "MS4A1"
+    ],
+    "Macrophage": [
+      "CD3D",
+      "CD3E",
+      "MS4A1",
+      "EPCAM"
+    ],
+    "Dendritic": [
+      "CD3D",
+      "CD3E",
+      "MS4A1"
+    ],
+    "Mast": [
+      "CD3D",
+      "CD3E",
+      "MS4A1"
+    ],
+    "Granulocyte": [
+      "CD3D",
+      "CD3E",
+      "MS4A1"
+    ],
+    "Epithelial": [
+      "PTPRC",
+      "COL1A1",
+      "PECAM1"
+    ],
+    "Endothelial": [
+      "PTPRC",
+      "COL1A1"
+    ],
+    "Fibroblast": [
+      "PTPRC",
+      "EPCAM",
+      "PECAM1"
+    ],
+    "Erythroid": [
+      "PTPRC"
+    ],
+    "Platelet": [
+      "PTPRC"
+    ],
+    "HSPC": [
+      "CD3D",
+      "CD3E",
+      "MS4A1",
+      "PECAM1",
+      "VWF",
+      "COL1A1"
+    ],
+    "Neural": [
+      "PTPRC",
+      "EPCAM",
+      "PMEL",
+      "MLANA",
+      "TYR",
+      "DCT"
+    ],
+    "ILC": [
+      "CD3D",
+      "CD3E",
+      "MS4A1"
+    ]
+  }
+}

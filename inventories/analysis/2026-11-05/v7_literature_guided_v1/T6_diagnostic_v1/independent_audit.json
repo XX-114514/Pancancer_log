@@ -1,0 +1,13 @@
+{
+  "status": "PASS_T6_marker_QC_numeric_scope_audit",
+  "UTC": "2026-11-05T05:18:22.788643+00:00",
+  "n_cells": 156631,
+  "n_marker_records_recomputed": 1212,
+  "n_doublet_background_percentiles_recomputed": 156631,
+  "n_HVG_source_eligibility_checked": 2000,
+  "n_competitor_programs_checked": 8,
+  "n_joint_doublet_candidates": 845,
+  "old_export_fields_exact": true,
+  "counts_conserved": true,
+  "limits": "Arithmetic and evidence-scope acceptance only; not validated Treg identity, purity, doublet accuracy or source/resolution biological stability."
+}

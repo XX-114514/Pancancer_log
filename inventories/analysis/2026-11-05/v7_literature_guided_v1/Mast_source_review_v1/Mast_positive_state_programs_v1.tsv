@@ -1,0 +1,6 @@
+program	n_marker_supported_Mast_cells	n_sources	n_sample_units	status
+MCTC	1127	37	264	positive RNA marker program; not a mature subtype assignment
+MCT	894	32	204	positive RNA marker program; not a mature subtype assignment
+cycling	169	29	108	positive RNA marker program; not a mature subtype assignment
+IFN	373	31	138	positive RNA marker program; not a mature subtype assignment
+HLAII	4063	40	458	positive RNA marker program; not a mature subtype assignment

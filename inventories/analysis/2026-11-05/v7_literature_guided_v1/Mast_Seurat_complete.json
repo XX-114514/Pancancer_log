@@ -1,0 +1,33 @@
+{
+  "status": "completed_initial_diagnostic_only",
+  "UTC_start": "2026-11-05 02:40:05 UTC",
+  "UTC_end": "2026-11-05 02:47:10 UTC",
+  "n_cells": 45036,
+  "n_genes": 95038,
+  "HVG": 2000,
+  "PCA": 50,
+  "graph_PCs": 30,
+  "resolutions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1,
+    1.2,
+    1.6,
+    2
+  ],
+  "marker_resolution": 0.4,
+  "normalization": "full-library LogNormalize 10000",
+  "batch_correction": "none; technology not yet verified",
+  "regressed_variables": [],
+  "annotation_changes": 0,
+  "Seurat": "5.3.1",
+  "R": "R version 4.3.3 (2024-02-29)",
+  "limits": [
+    "Only V7 Mast parent included; no outside recruitment yet",
+    "Uncleaned initial QC/identity diagnostic, not accepted subtypes",
+    "No final subtype assignment from cluster IDs",
+    "Source-specific measurement mask required for negative-marker decisions"
+  ]
+}

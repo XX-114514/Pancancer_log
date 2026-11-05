@@ -1,0 +1,14 @@
+{
+  "status": "PASS_extended_Mast_review_numeric_and_scope_audit",
+  "UTC": "2026-11-05T04:57:34.804419+00:00",
+  "n_cells": 45036,
+  "n_sample_method_percentiles_independently_recomputed": 45036,
+  "n_Mast_cells_with_missing_or_placeholder_recorded_sampleID": 0,
+  "n_extended_parent_programs_checked": 8,
+  "n_marker_cluster_records_recomputed": 1425,
+  "n_HVG_source_eligibility_checked": 2000,
+  "n_marker_supported_Mast_coarse": 38959,
+  "n_joint_doublet_candidates": 1323,
+  "original_V7_label_fields_exact": true,
+  "scope": "Numeric and marker-evidence review acceptance only; no gold-standard doublet, purity, protein subtype or publication accuracy claim. Recorded sample units are not asserted independent patients."
+}

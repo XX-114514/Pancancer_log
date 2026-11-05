@@ -1,0 +1,27 @@
+{
+ "branch": "primary_strict",
+ "cells_in_filter": 2455424,
+ "cells_in_kept_samples": 2449945,
+ "samples": 1207,
+ "nodes_observed": 58,
+ "nodes_kept": 47,
+ "sources": 53,
+ "dropped_nodes": [
+  "Malignancy_not_evaluable::Neural_Neural_progenitor_SOX2",
+  "Malignancy_uncertain::Dendritic_pDC_LILRA4",
+  "Malignancy_uncertain::Erythroid_Cycling_Erythroid_TOP2A",
+  "Malignancy_uncertain::Monocyte_Classical_FCN1_FCN1",
+  "Malignancy_uncertain::Monocyte_Inflammatory_IL1B_IL1B",
+  "Malignancy_uncertain::Monocyte_Nonclassical_FCGR3A_FCGR3A",
+  "Malignant::Dendritic_pDC_LILRA4",
+  "Malignant::Erythroid_Cycling_Erythroid_TOP2A",
+  "Malignant::Monocyte_Classical_FCN1_FCN1",
+  "Malignant::Monocyte_Inflammatory_IL1B_IL1B",
+  "Malignant::Monocyte_Nonclassical_FCGR3A_FCGR3A"
+ ],
+ "min_sample_cells": 100,
+ "min_node_samples": 10,
+ "v7_checkpoint_sha256": "e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e",
+ "v7_index_sha256": "dbd6ed814be178f2a87cb5f675e5d2150007f1892ec7e47e59933c6a66b09d2a",
+ "frequency_sha256": "22eac206844640411ffa23c1e9c386114d285bd14602526160632e2b5403913e"
+}

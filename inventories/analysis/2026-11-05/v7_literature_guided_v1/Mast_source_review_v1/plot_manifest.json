@@ -1,0 +1,39 @@
+{
+  "lineage": "Mast H source-refit",
+  "row_prefix": "H-",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 15,
+  "n_cells": 36007,
+  "n_marker_records": 1425,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "a5f157e3c2624895fff71040d19e203e757b242e1a1ebb97722eaf6b790f2add",
+  "panel_spec_sha256": "ff7cb89bb5699295dc110d93a83a3fb1636ff29e61b58b8d490423db61263e68",
+  "outputs": [
+    {
+      "name": "Mast_H_identity_subtype_state_v4.png",
+      "sha256": "a38faa8f593bc6c9af0913af84361d49028fcb15c995594a2181ec0dccd1d9c4"
+    },
+    {
+      "name": "Mast_H_identity_subtype_state_v4.svg",
+      "sha256": "d2a62dc533cc30be36eca47eb52673f369e78f8bd55a3a224f12db20174c1dd5"
+    },
+    {
+      "name": "Mast_H_reference_states_v4.svg",
+      "sha256": "4b7d1eee8f924fa99910229ecbdab2ac773a7bd9f61ce55b3eda2752d1b86202"
+    },
+    {
+      "name": "Mast_H_competing_lineage_QC_v4.svg",
+      "sha256": "827dd6cd0250499a78f4a3d4b434537c0b7043427b9330701c916adac860e02d"
+    },
+    {
+      "name": "Mast_H_competing_lineage_QC_v4.png",
+      "sha256": "53298db5c33e8a66b08145c890bcb097791a5dccc2b29ba96546050a346b250d"
+    },
+    {
+      "name": "Mast_H_reference_states_v4.png",
+      "sha256": "eed7f8a05c494e0841006512e21388159217cdebbaaa22c17c826242a2a48f8f"
+    }
+  ]
+}
