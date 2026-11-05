@@ -13,6 +13,8 @@
 - [全部 panel 逐项审查](../inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/all_panel_reviews.md)：保留旧 marker、旧 canonical、问题及建议角色。另提供 [162 行机器可读表](../inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/all_162_panel_reviews.tsv)和[17 行父类审查](../inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/all_17_major_panel_reviews.tsv)。
 - [候选复算](../inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/candidate_reconstruction.tsv)、[逐群规则审查](../inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/cluster_rule_audit.tsv)、[源码校验和](../inventories/analysis/2026-11-05/v7_panel_semantics_audit_v1/source_manifest.json)。
 
+162 个 panel 是完整配置库，并非全部实际用于 V7 亚型赋值。已核实有效策略中 Epithelial 使用逐细胞 CNV 状态、不做该 marker 亚型判定；Platelet 因 rare-coarse 策略禁用细分。未触发的 panel 缺陷属于配置风险，不计为已发生误标。已量化的候选遮蔽结论仅来自明确复算的 40 群。
+
 ## 已确认的主要问题
 
 | 位置 | 旧规则或名称的问题 | 本次处理原则 |
