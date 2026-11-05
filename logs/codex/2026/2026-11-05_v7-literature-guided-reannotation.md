@@ -59,3 +59,6 @@ C2真实exit0于02:47:11.432208 UTC / 10:47:11.432208 UTC+8；F review完成02:5
 公开发布前发现远端有并发新提交29c5f8d，保留原隔离检出的改动，另从该最新main建立新隔离检出。首次受限网络无法补取promisor对象，失败目录保留；授权网络下建立v2新检出成功。不覆盖并发首页、当前工作或其他项目记录。新图已查看，标签及marker可读，无患者/样本行。
 
 早期未压缩aggregate回传最终SSH exit255、只收到部分stdout；它是传输失败，没有重启科学作业。独立压缩回传已经成功，解码JSON和所有计数/输出后才用于报告。此前pending段落是准备同步的本地快照，未在当时push；实际公共发布以最终32文件节点及独立远端SHA收据为准。公共TSV经聚合JSON重建，服务器原始artifact SHA作用于逻辑run路径；公共文件字节以本次Git blob为准。32文件人工diff/隐私扫描未命中内部路径、账户或凭据，约0.95MB；仓库完整轻量检查0 errors/1 warning，既有并发内容保留。
+
+
+Publication verified 2026-11-05T03:02:32.127141+00:00 UTC; content commit `4fa722cdcb3c535997d2c3d267cc986b05ded957`, 32 reviewed files, ordinary push actual0 and independent ls-remote exact full-SHA match. No concurrent work replaced. Final repository validator: 0 errors / 1 pre-existing warning. Diff whitespace check required explicit NA for unmeasured trailing TSV fields; 837-row numerical readback unchanged. Whole-project final annotation remains incomplete; first-stage review and its numeric audits are complete.
