@@ -5,3 +5,5 @@
 关键发现：Lodi先清理再重建谱系图并跨分辨率补标，但亚型panel有占位，公开marker文件只有21个唯一cluster；Chu提供完整36个T功能签名；Ma三轮注释与DCTypist版本差别已核查；Qian的C2_CMA1缺DEG列表；Yang完整代码与marker仍未取得。合理粗类终点与父身份冲突须分开，不以重命名代替混杂排查。
 
 未访问服务器、未修改V7或运行新注释。原始资料及工作簿留本地，公共同步仅脱敏记录。详细出处、执行、验证和边界见[任务日志](../../codex/2026/2026-11-05_pan-cancer-marker-panels-code-review.md)。
+
+00:26:58 UTC / 08:26:58 UTC+8追问澄清：Lodi在大类之前已有逐样本QC和DoubletFinder，谱系内为二轮复查；本项目前置QC没有顺序错误。比较V7规则化panel仲裁与Lodi群DEG/人工命名；补充Seurat DotPlot均值变换与本项目旧图缩放差别，以及本项目后续已实现的描述性marker对照和官方Wilcoxon，未混淆版本或声称重跑成功。

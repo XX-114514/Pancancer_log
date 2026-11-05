@@ -47,3 +47,23 @@ DEG摘录明确是原顺序前10，不等于完整DEG表或人工判定panel。�
 失败及修正：环境没有bs4，改用Python标准库HTMLParser；Nature下载页部分只含摘要/引用，未冒称读到缺失Methods，Qian改读作者公开PDF、Ma读正常开放PMC；Chu PMC验证码、Yang Cell403与Zenodo页面超时均未绕过，使用已有正常公开补充表/作者代码/归档。起初API_QUICK_START路径多写references，定位到artifact_tool_docs后正确读取。作者脚本中发现的不完整变量与命名差异保留为研究边界，未修补后冒称复现成功。
 
 仓库轻量validator实际exit0，0 errors / 1项既有warning，无失效本地相对Markdown链接；git diff --check通过。隔离检出基于远端7bf93091b1c6be1463f3d481f0c0dac9ab667875，仅准备本次两份脱敏日志，普通同步后独立ls-remote核验并另存本地收据。建议commit：`Review author marker panels and annotation code logic`。后续建议先以T/NK和B/ASC各选一组本项目cluster建立同一套证据审阅表，核对父身份、群DEG、竞争身份、状态、来源支持与细胞级参考预测；本次未启动该实验。
+
+## 追问：QC顺序、父标签与计算方法澄清
+
+2026-11-05 00:26:58 UTC / 08:26:58 UTC+8补充取证。用户追问Lodi先分大类后QC与本项目前置QC的区别，父标签为何需复查，以及marker计算差异。明确纠正前轮易误读的简写：Lodi的Cancer type analysis.R第162–194行在大类之前已经做表达量过滤、按orig.ident逐样本DoubletFinder及第二档表达过滤；谱系脚本后面的QC为二轮复查，主要检查已有pANN预测、质量分布及跨谱系表达，并非证明必须在合并谱系后重新运行doublet算法。前置QC与后置复查互补，本项目先QC本身没有错误，也无证据说明Lodi仅因该顺序就更准确。
+
+父标签不是不可修正的边界：Qian Methods明确pDC可与B共聚类、其他DC在髓系，需要用marker找回DC后再合并细分。对一个群同时有T/DC信号，必须区分不同细胞子群混在同群与同一barcode的竞争程序；不能仅凭群均值同时有两类marker就宣布doublet，也不能仅凭一个阴性marker或RNA dropout排除身份。
+
+读取本项目V7冻结方法、20260823注释总结、20260903 marker图口径与annotation_generation_followup，比较范围限定首页旧5M/V7，不把十月不同分支混为同一算法。V7有来源逐细胞标签、真实全库marker表达和CellTypist仲裁；已记录top score≥0.25、margin≥0.08、负marker与跨来源/样本门槛。旧谱系细分重建BBKNN/Leiden但复用共享PCA，不能说本项目没做谱系内聚类。V7面板展示359基因的群内比较不是全转录组DEG；V7后续有全基因描述性补名，二者不能混同。
+
+计算对照：Lodi的RNA LogNormalize和本项目log1p(CP10K)属于同一基础变换，只有相同基因宇宙和文库分母时才逐值可比。Lodi FindAllMarkers在RNA assay找群特征，人工结合canonical/竞争身份后RenameIdents；公开亚型panel有占位，未给完整自动身份打分公式。AddModuleScore为基因集均值减表达匹配对照均值，代码中主要用于IFN/应激/缺氧等功能，不等于最终身份分类器。不能未核旧评分源代码就声称V7分数与AddModuleScore数值相同。
+
+另外核查Seurat官方v4.3.0 DotPlot源码：avg.exp为mean(expm1(data))，显示颜色再log1p和按基因缩放；本项目旧v5图文档为平均logCP10K后逐基因min-max。mean(log1p(x))与log1p(mean(x))不相同，图色不能直接当注释正确性证据，也不冒称Lodi实际版本必为v4.3.0。官方NormalizeData/AddModuleScore/FindAllMarkers/DotPlot文档已查。
+
+本项目后续refine_immune_native_markers.py第74–99行有mean CP10K、delta detection、log2((mean+0.01)/(rest+0.01))及跨来源支持，是明确标作无p值的描述性命名；measure_TME_full_cluster_markers_v2.py第73行已经实现Scanpy官方Wilcoxon/BH/common-gene比较，故不能将项目整体概括为只有固定panel或从未实现DEG。这里只核代码存在，不刷新后续运行是否完成/被V7使用的状态。没有修改科学代码、工作簿、细胞标签或服务器作业。
+
+检索失败及边界：首次猜测marker审计文件目录失败，改由文件清单定位到07_fine_annotation；一次Seurat源码筛选正则转义错误在执行前失败，改正后只读成功。原V7评分全部聚合公式未在本轮本地冻结脚本中重新展开，因此只比较可核验的归一化、规则门槛和证据组织，不捏造精确权重。建议commit：`Clarify initial and lineage QC and marker annotation calculations`。
+
+补核[Seurat FindMarkers官方定义](https://satijalab.org/seurat/reference/findmarkers)与[Scanpy rank_genes_groups官方定义](https://scanpy.readthedocs.io/en/stable/generated/scanpy.tl.rank_genes_groups.html)：Seurat常规p_val_adj为按全基因数Bonferroni；本项目上述后续Scanpy代码显式使用BH，并非可直接逐值比较的同一输出。Scanpy文档也注明logfoldchanges为基于mean-log的近似；不得将其与所有Seurat版本或本项目CP10K+0.01描述性log-ratio强行等同。比较cluster背景（全TME其余 vs 同谱系其余）本身也影响marker排名；同谱系不显著的共享身份marker仍可为父身份提供表达证据。
+
+本次追问轻量validator再次实际exit0，0 errors / 1项既有warning；仅为新增澄清日志检查，不是重跑或验证科学注释。仅追加本任务Codex/daily记录，原工作簿和源代码不改。
