@@ -1,0 +1,18 @@
+{
+  "status": "PASS_independent_V7_doublet_provenance_audit",
+  "observed_UTC": "2026-11-05T06:16:51.715577+00:00",
+  "n_current_cells_multiset_exact_with_QC_objects": 4676787,
+  "n_current_sources": 54,
+  "all_source_cell_keys_unique": true,
+  "n_current_cells_score_exact_including_missing": 4676787,
+  "n_current_finite_historical_scores": 4647788,
+  "n_current_missing_scores": 28999,
+  "n_current_historical_predicted_positive": 0,
+  "n_current_historical_removed_flags": 0,
+  "n_old_raw_cell_ledger_rows_checked": 2148018,
+  "n_old_removed_by_doublet_rule": 5518,
+  "n_old_doublet_only_exclusions": 5177,
+  "n_new_doublet_removals_reconciled": 13821,
+  "total_doublet_rule_exclusions_including_old_QC_overlap": 19339,
+  "limits": "Verifies historical execution, filtering and membership. Does not validate biological singlet purity, independently rerun Scrublet, or assert all residual mixed RNA is a doublet."
+}

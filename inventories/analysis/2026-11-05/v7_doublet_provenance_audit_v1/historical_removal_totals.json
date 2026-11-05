@@ -1,0 +1,56 @@
+{
+  "status": "completed_original_removal_ledger_totals",
+  "observed_UTC": "2026-11-05T06:13:37.529793+00:00",
+  "old_summary": {
+    "old_all_33": {
+      "n_datasets": 33,
+      "n_pre_QC": 2252118,
+      "n_QC_pass": 2062230,
+      "n_all_QC_removed": 189888,
+      "n_sample_units": 797,
+      "n_successful_doublet_units": 695,
+      "n_skipped_small_units": 102,
+      "n_cap_applied_units": 0,
+      "n_predicted_doublets": 5609,
+      "n_doublet_rule_removed_including_QC_overlap": 5609,
+      "n_filter_reason_contains_doublet": 5609,
+      "n_filter_reason_doublet_only": 5265
+    },
+    "old_V7_included_sources": {
+      "n_datasets": 31,
+      "n_pre_QC": 2148018,
+      "n_QC_pass": 1963745,
+      "n_all_QC_removed": 184273,
+      "n_sample_units": 773,
+      "n_successful_doublet_units": 671,
+      "n_skipped_small_units": 102,
+      "n_cap_applied_units": 0,
+      "n_predicted_doublets": 5518,
+      "n_doublet_rule_removed_including_QC_overlap": 5518,
+      "n_filter_reason_contains_doublet": 5518,
+      "n_filter_reason_doublet_only": 5177
+    }
+  },
+  "new_summary": {
+    "n_cells_qc_pass": 2726863,
+    "n_predicted_doublets": 13821,
+    "n_doublets_removed": 13821,
+    "n_datasets": 23,
+    "n_input_cells": 3282991,
+    "n_output_cells": 2713042,
+    "n_sample_units": 549,
+    "n_scored_units": 536,
+    "n_small_skipped_units": 13,
+    "n_capped_units": 0,
+    "n_failed_units": 0
+  },
+  "excluded_old_GSEs": [
+    "GSE211602",
+    "GSE278694"
+  ],
+  "limits": [
+    "Old doublet removal overlaps other QC reasons; doublet-only counts shown separately.",
+    "Old original sample groups are recorded source units, not asserted independent physical libraries.",
+    "New output n_predicted_doublets=0 in skipped samples is a placeholder, not a negative test."
+  ]
+}

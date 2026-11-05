@@ -1,0 +1,5 @@
+scope	n_cells	n_previous_Scrublet_direct	n_previous_Scrublet_new	n_previous_not_run	n_previous_predicted_doublet	n_previous_doublet_removed
+all_T6	156631	75666	80179	786	0	0
+K09_all	1027	488	532	7	0	0
+K09_joint245	245	78	167	0	0	0
+all_Mast	45036	24124	20694	218	0	0

@@ -1,0 +1,5 @@
+cohort	doublet_method	doublet_status	historical_predicted_doublet	n_cells
+existing_2M	not_run	not_run	False	25757
+existing_2M	scrublet_direct	scrublet_success_direct	False	1937988
+new_20260818_v1	scrublet	not_run	False	3242
+new_20260818_v1	scrublet	scrublet_success_new_cohort_20260818	False	2709800

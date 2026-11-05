@@ -1,0 +1,80 @@
+{
+  "status": "PASS_full_V7_membership_and_legacy_doublet_call_audit",
+  "observed_UTC": "2026-11-05T06:12:30.799098+00:00",
+  "n_V7": 4676787,
+  "frozen_index_exact_with_core": true,
+  "n_sources": 54,
+  "n_all_cells_matched_QC_filtered": 4676787,
+  "n_historical_predicted_doublets_retained": 0,
+  "n_historical_removed_cells_reintroduced": 0,
+  "n_not_run_status": 28999,
+  "targets": [
+    {
+      "scope": "all_T6",
+      "n_cells": 156631,
+      "n_original_predicted_doublet": 0,
+      "n_original_doublet_removed": 0,
+      "original_status_counts": {
+        "scrublet_success_new_cohort_20260818": 80179,
+        "scrublet_success_direct": 75666,
+        "not_run": 786
+      },
+      "original_method_counts": {
+        "scrublet": 80224,
+        "scrublet_direct": 75666,
+        "not_run": 741
+      }
+    },
+    {
+      "scope": "K09_all",
+      "n_cells": 1027,
+      "n_original_predicted_doublet": 0,
+      "n_original_doublet_removed": 0,
+      "original_status_counts": {
+        "scrublet_success_new_cohort_20260818": 532,
+        "scrublet_success_direct": 488,
+        "not_run": 7
+      },
+      "original_method_counts": {
+        "scrublet": 532,
+        "scrublet_direct": 488,
+        "not_run": 7
+      }
+    },
+    {
+      "scope": "K09_joint245",
+      "n_cells": 245,
+      "n_original_predicted_doublet": 0,
+      "n_original_doublet_removed": 0,
+      "original_status_counts": {
+        "scrublet_success_new_cohort_20260818": 167,
+        "scrublet_success_direct": 78
+      },
+      "original_method_counts": {
+        "scrublet": 167,
+        "scrublet_direct": 78
+      }
+    },
+    {
+      "scope": "all_Mast",
+      "n_cells": 45036,
+      "n_original_predicted_doublet": 0,
+      "n_original_doublet_removed": 0,
+      "original_status_counts": {
+        "scrublet_success_direct": 24124,
+        "scrublet_success_new_cohort_20260818": 20694,
+        "not_run": 218
+      },
+      "original_method_counts": {
+        "scrublet_direct": 24124,
+        "scrublet": 20727,
+        "not_run": 185
+      }
+    }
+  ],
+  "scope_limits": [
+    "Doublet_status is execution provenance, not a singlet/doublet call; recovered calls come from original filtered-object predicted_doublet.",
+    "Full membership in QC-filtered objects verifies no historically removed cells reentered this V7/core axis.",
+    "No new doublet model or cell exclusion was run."
+  ]
+}

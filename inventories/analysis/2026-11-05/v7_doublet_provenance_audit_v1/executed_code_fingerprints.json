@@ -1,0 +1,22 @@
+[
+  {
+    "name": "audit_V7_doublet_membership_v1.py",
+    "source_body_sha256": "6926f76df9ba1f72ec608b8562662bc8533444a6203cbae1e0fa83fe780a6b20",
+    "execution": "PROJECT_ROOT supplied by a private transport bootstrap; body bytes exact."
+  },
+  {
+    "name": "collect_historical_removal_totals.py",
+    "source_body_sha256": "4828ae076e35c40e38ef9926d990cc2d9869b3cb1a5b0baae25bb0b943dbb4b7",
+    "execution": "PROJECT_ROOT supplied by a private transport bootstrap; body bytes exact."
+  },
+  {
+    "name": "independent_doublet_provenance_check.py",
+    "source_body_sha256": "07fb4a7afeed68a78f9b750450300c16e6f64b20e877459cdd56eb57a5ec0236",
+    "execution": "PROJECT_ROOT supplied by a private transport bootstrap; body bytes exact."
+  },
+  {
+    "name": "final_input_integrity_check.py",
+    "source_body_sha256": "8742ffbf394fbbac4a0e657aed9bdf9161056c4816742ed55b411a3db44a56ba",
+    "execution": "PROJECT_ROOT supplied by a private transport bootstrap; body bytes exact."
+  }
+]

@@ -48,3 +48,7 @@ K-05在res0.2/0.6/0.8的最大重叠Jaccard约0.899/0.898/0.832，支持IFN分�
 对照使用[Chu作者代码](https://github.com/Coolgenome/TCM)及其Table S6完整Treg签名；其余panel明确是本项目按文献整理的审阅组合，不冒称作者逐字分类器。Lodi的谱系内重查/QC/重新建模用于分析顺序，不能复制未知Technology或未定义回归参数。本轮未回归IFN/癌种、未按参考Treg预筛选，未硬分Tfh/Tph、resting/effector Treg或CD8耗竭亚型。
 
 下一步先复查K-03/04的CD4 helper边界、K-06/08/09混合RNA以及小群测量/QC，再回到整个T/NK/ILC父群共同重建。当前细胞级overlay仍是可审阅修订层，最终图谱注释未发布；原始V7完整保留。
+
+## 历史doublet处理补充核验（2026-11-05 06:19 UTC / 14:19 UTC+8）
+
+[V7全量原QC对象与账本审计](../../v7_doublet_provenance_audit_v1/README.md)已完成。K-09的245个新增候选全部原先运行过Scrublet：78旧直接、167新增分支，当时均未被工具判阳性；不是初始未检测或8% cap留下（原账本cap触发0）。K-09全体1027中另有7个未运行，T6全体156631中786个未运行。此前“尚未剔除”指本轮新增复查候选的二次清理，不意味着历史初筛没执行。旧V7全体19339个doublet规则排除已被后续合并继承，未发现重入；未运行记录不能当singlet。当前工作overlay和原V7均保持，未新增排除。

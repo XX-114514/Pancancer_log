@@ -1,0 +1,13 @@
+{
+  "status": "PASS_frozen_input_and_full_score_status_integrity",
+  "observed_UTC": "2026-11-05T06:19:50.670927+00:00",
+  "frozen_checkpoint_sha256": "e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e",
+  "n_cells": 4676787,
+  "n_finite_scores": 4647788,
+  "n_missing_scores": 28999,
+  "n_infinite_scores": 0,
+  "missing_score_exactly_equals_not_run_status": true,
+  "n_status_failure": 0,
+  "finite_min": 0.0005865102639296188,
+  "finite_max": 0.5623100303951363
+}

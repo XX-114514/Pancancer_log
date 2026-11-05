@@ -1,0 +1,3 @@
+cohort	n_sources	n_project_input_cells	doublet_model_input_stage	n_doublet_rule_excluded	n_doublet_only_excluded	n_overlap_other_QC	n_final_V7_cells	n_all_QC_excluded	n_final_scored	n_final_not_run	n_original_sample_units	n_Scrublet_success_units	n_small_skipped_units	n_cap_triggered_units
+existing_2M	31	2148018	before_basic_QC_exclusion	5518	5177	341	1963745	184273	1937988	25757	773	671	102	0
+new_20260818_v1	23	3282991	after_basic_QC_pass	13821	13821	0	2713042	569949	2709800	3242	549	536	13	0

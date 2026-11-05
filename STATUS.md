@@ -2398,3 +2398,7 @@ Tcell_6旧winner排序遗漏完整Treg候选的原因已实证；补查841/842�
 [Tcell_6当前证据与四张图](inventories/analysis/2026-11-05/v7_literature_guided_v1/T6_diagnostic_v1/README.md)：全156631细胞/95038基因重建实际exit0，12工作分区、1212 marker记录与156631背景分位独立算术复核PASS。36484细胞的CD4/CXCL13程序不能按CellTypist多数票全部转Treg；IFN、激活和GZMK等状态独立描述。25753细胞的必要marker组件不可测，已与低正证据分开；845联合doublet候选未确诊。极小群、Ig/髓系混合程序、完整T/NK/ILC边界和最终亚型仍待验收。
 
 以上为新阶段实测状态；较早27群或“仍在运行”节点仅是历史背景。具体参数、失败恢复、限制和下一步见[run](runs/20261105_v7_literature_guided_reannotation_v1.md)。
+
+### V7全量doublet历史核验完成（2026-11-05）
+
+截至06:19:50 UTC / 14:19:50 UTC+8，[全量审计](inventories/analysis/2026-11-05/v7_doublet_provenance_audit_v1/README.md)与独立复核PASS：54来源4676787细胞精确继承原QC过滤后全集及分数。旧31源doublet规则排除5518、新23源13821，合计19339（旧341与其他QC原因重叠），两批cap触发0；未发现旧工具阳性残留或已排除细胞重入。28999个not_run是真正未评分，不能将False占位当singlet。K-09的245新增候选全都原先测过但未判阳性。本次没有新模型、没有剔除候选，冻结V7 SHA不变；新TME版本的QC链单独保持其范围。
