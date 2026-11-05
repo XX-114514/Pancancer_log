@@ -37,3 +37,5 @@ K-09的245个本轮联合候选原来全部已运行Scrublet且未被判阳性�
 发布前实际检查：28个显式文件约409KB（含既有STATUS全文件大小），源码body SHA逐项记录、Python AST通过、隐私扫描无本机/服务器私有路径或凭据。完整仓库轻量验证0 errors/1既有warning，无断裂相对链接；git staged diff whitespace检查exit0。所有患者/样本/细胞行、矩阵和完整stdout留私有；源级汇总和代码单独暂存。普通push和独立远端SHA须在成功后另记，当前准备记录不冒称已发布。
 
 内容commit92aa7ca的首次普通push因并发main前进而non-fast-forward拒绝。fetch到790a51c后保留两边历史普通merge；部分检出首次在默认网络下缺promisor对象，网络授权后补取成功。STATUS与run索引均为双方尾部追加冲突，已逐段同时保留并断言两块文本完整，无删除/历史改写。合并后仓库再验0 errors/1既有warning。本任务相对最新远端的28文件diff whitespace为0；merge暂存差异另报告远端已存在的annotation_gene_panel_v1.tsv空末列tab，未擅改并发panel。科学证据与四份执行body不变，后续普通push和独立SHA另记。
+
+Publication verified 2026-11-05T06:30:32.564877+00:00 UTC: ordinary push actual0; published merge `d949bc3f82118b3859774f8f5dc0b96ebb5e630d` independently matched remote main full SHA. Original audit content commit `92aa7ca7b76266939fe4fe00faa718f1acb7e32b`; 28 reviewed task files, concurrent updates preserved. Post-merge repository validator 0 errors / 1 pre-existing warning; own diff against remote main whitespace check exit0. Frozen V7 and all scientific inputs unchanged.
