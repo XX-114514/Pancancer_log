@@ -33,3 +33,5 @@ Spreadsheets技能用于源TSV只读分析；输出为代码资源JSON和仓库M
 兼容registry SHA256为`c23a96b51a2d3394020ebef1c326cc1621e8a3ad23055878bebb0cbba9765cfe`；来源、替换映射与两个输入SHA见资源目录中的tme_v2_overlay_manifest.json。仅统一资源，没有切换正在运行的任务或更新任何细胞标签。
 
 兼容补充后重新验证：11/11测试通过；完整仓库检查仍为0错误/1既有警告；新资源/代码隐私扫描及暂存diff检查通过。
+
+独立发布核验（2026-11-05 07:11:42 UTC / 15:11:42 UTC+8取证）：内容及兼容提交`771024a5538ec9f64dd87a3a7b47cf9555d8f2b3`已普通push到用户指定public仓库。随后独立`git ls-remote origin refs/heads/main`与本地HEAD完整一致。发布包括原扩展提交1dd7b73、保留并发3400d49的正常合并及兼容修订；无force push或历史改写。公开资源完成不改变全V7最终注释仍待执行的状态。
