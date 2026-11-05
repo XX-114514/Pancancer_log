@@ -1,5 +1,8 @@
 # PanCancer
 
+> **Server analysis audit, 2026-11-05**: [current analysis inventory, evidence and handoff (Chinese)](docs/reports/20261105_server_analysis_audit/README.md). This homepage describes the historical September 6 release. The audit separates subsequent V7 recomputation, expanded TME data, spatial validation limits and NMF stability.
+
+
 **Cellular modules in the tumor microenvironment: organization, processing, and initial readouts of a pan-cancer single-cell atlas**
 
 [简体中文](README.md) · **English** · [Previous homepage: 2026-10-26 CM02 immune atlas](README_20261026_CM02.en.md)

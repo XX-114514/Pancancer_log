@@ -147,3 +147,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 [全细胞分层注释与整合比较实施](20261023_full_context_hierarchical_annotation_v1.md)：原生全范围索引审计实际运行，新身份/A-B-C与物化待验收。
+
+- [2026-11-05服务器分析系统审计与交接](20261105_server_analysis_audit_v1.md)

@@ -1,5 +1,8 @@
 # PanCancer
 
+> **服务器分析最新审计（2026-11-05）**：[系统总览、版本/证据与交接](docs/reports/20261105_server_analysis_audit/README.md)。本首页展示历史0906版本；V7重算、扩展72来源TME、空间验证限制和NMF稳定性请以上述新报告为准。
+
+
 **肿瘤微环境中的细胞模块：一个泛癌单细胞图谱的组织、处理与初步读出**
 
 [上一版首页（2026-10-26，CM02免疫图谱主线）](README_20261026_CM02.md) · [English](README.en.md) · [Previous English version (2026-10-26)](README_20261026_CM02.en.md)

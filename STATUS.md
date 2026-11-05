@@ -1,3 +1,14 @@
+## 2026-11-05 服务器系统审计：数据层与计算已有结果，CM验证和新TME终验仍待完成
+
+最新取证见[系统报告](docs/reports/20261105_server_analysis_audit/README.md)及[运行交接](runs/20261105_server_analysis_audit_v1.md)，优先于下方较早的pending描述。本次未重跑生产分析。
+
+- 扩展integration_v2为72来源、4,720,931细胞；72恶性最终侧表均存在，但本次未重做逐细胞验收。当前范围为3,347,659 TME、2,980,723 CoVarNet v1合格细胞。旧run_v1仍保留范围外历史行。
+- 去批次基准支持Harmony来源θ2的当前选择。新run_v2日志到Harmony完成，缺最终summary/对象读回，不能称新图谱已完成。Scanorama重试已有图指标，缺scIB嵌入总分行。
+- V7 strict和legacy的rank survey与K9已有完成报告；K9受override控制。25/50/100µm各29份blisa摘要存在，早期C05 pending已过时。K4、V7 LIANA和接收端响应仍缺完成证据。
+- CT75主CM尚未空间验证；V7 CAF相关CM弱信号依赖W top10，换作者网络成员后消失，myCAF身份又未过面板资格。两条工作线不能互换编号或合并成验证成功。
+- 9种NMF×5seed已有45份任务记录；新尺度敏感性审计确认原W行归一匹配受等价因子缩放影响，部分模块对应需重核。主要跨seed稳定性差异保留，未重新拟合。
+- marker路由仅核到真实单来源候选试点及准备代码，未发现全量完成收据；不更新最终身份。批处理需按当前侧表刷新预检。
+
 ## 2026-11-03 CT75两个CM在独立空间数据上未获验证；一条跨谱系边有支持
 
 用CT75主方案（K=2）的CM在独立空间数据上验证，注释沿用同一方案（区室×cluster×CellTypist身份）。Visium（GSE273952 ccRCC，19名患者）按CoVarNet原文方法（cell2location＋共定位/聚集分数）时CM01很强，但这主要来自几个参考谱几乎相同的调节T相关节点被反卷积拆分；控制参考谱相似度后，CM01和CM02都不高于零分布。Xenium（6个来源、4种面板）上CM成员无法准确注释（F1多<0.5），按事先规则不可计分；探索性分析中CM02共定位高于谱系匹配零分布。单核（N_238）~调节T相关（N_44）这条边在Visium（16/19名患者）和Xenium（8/8单位）上一致为正，是值得单独追踪的候选关系。见[报告](docs/reports/20261102_CT75_spatial_validation/README.md)。

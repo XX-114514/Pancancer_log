@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "t": "2026-11-04T23:51:37+00:00",
+      "step": "matrix",
+      "shape": [
+        3347659,
+        4000
+      ]
+    },
+    {
+      "t": "2026-11-05T00:02:54+00:00",
+      "step": "pca_done"
+    },
+    {
+      "t": "2026-11-05T00:02:54+00:00",
+      "step": "harmony_vars",
+      "vars": [
+        [
+          "source",
+          2.0
+        ]
+      ]
+    },
+    {
+      "t": "2026-11-05T00:31:34+00:00",
+      "step": "harmony_done"
+    }
+  ],
+  "final_summary_present": false,
+  "scheduler_status": "unverified"
+}

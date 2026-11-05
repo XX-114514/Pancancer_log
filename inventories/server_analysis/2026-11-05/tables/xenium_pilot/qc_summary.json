@@ -1,0 +1,17 @@
+{
+  "cells": 28375,
+  "counts_below_50": 1449,
+  "fraction_below_50": 0.051066079295154186,
+  "matrix_metadata_counts_match": true,
+  "median_area_low": 82.31984673812985,
+  "median_area_other": 142.24219266325235,
+  "pearson_area_counts": 0.6882104556716173,
+  "occupied_bins_ge30": 218,
+  "local_low_fraction_quantiles": [
+    0.0,
+    0.01977262943685673,
+    0.04332186424773225,
+    0.0885910815939279,
+    0.45161290322580644
+  ]
+}

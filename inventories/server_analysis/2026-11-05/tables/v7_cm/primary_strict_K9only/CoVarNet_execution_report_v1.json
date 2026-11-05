@@ -1,0 +1,23 @@
+{
+  "status": "COVARNET_SCHEME_NMF_AND_AUTHOR_NETWORK_EXECUTION_COMPLETE",
+  "analysis_role": "V7_primary_strict_K9_only_fast_path_same_seeds",
+  "selected_rank": 9,
+  "rank_at_survey_boundary": true,
+  "rank_selection": "first_0.02_cophenetic_drop_or_boundary_unless_frozen_common_rank",
+  "n_nodes": 47,
+  "n_analysis_observations": 1207,
+  "n_sources": 53,
+  "weight_mode": "unit",
+  "weight_sum": 1207,
+  "n_final_seed_models": 2,
+  "NMF_version": "0.28",
+  "psych_version": "2.6.3",
+  "psych_default_adjust": "holm",
+  "network_spe_cutoff_is_author_top_n_dependent": true,
+  "author_empty_table_serialization_only_fix": true,
+  "raw_W_and_effective_WS_separately_saved": true,
+  "clinical_outcomes_used": false,
+  "rows_are_not_automatically_independent_patients": true,
+  "author_pval_fdr_not_renamed_as_unadjusted_raw_BH": true,
+  "independent_source_patient_validation_not_claimed": true
+}

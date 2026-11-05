@@ -1,0 +1,553 @@
+{
+  "20261103_celltypist72_pilot/GSE138709_1000/summary.json": {
+    "source": "GSE138709",
+    "source_cells": 11381,
+    "predicted_cells": 1000,
+    "pilot": true,
+    "celltypist_version": "1.7.1",
+    "majority_voting": false,
+    "input": "v2 X: log1p decontX, total 1e4",
+    "interpretation": "candidate model labels only; no accepted identity",
+    "models": {
+      "Immune_All_High": {
+        "sha256": "a715fec36c2c421f7c4e31cf4cb4bea883eedab7fd7b20a4b76f091c22660448",
+        "features_shared": 5034,
+        "features_total": 6639,
+        "candidate_counts": {
+          "Epithelial cells": 653,
+          "Macrophages": 168,
+          "T cells": 65,
+          "Endothelial cells": 34,
+          "Monocytes": 29,
+          "ILC": 13,
+          "Plasma cells": 13,
+          "DC": 8,
+          "Fibroblasts": 6,
+          "B cells": 3,
+          "pDC": 3,
+          "Cycling cells": 2,
+          "Double-positive thymocytes": 2,
+          "ILC precursor": 1
+        }
+      },
+      "Immune_All_Low": {
+        "sha256": "290874d35dac039d4c9218c343fde4aac1077709b72a331ce7266f6828c36502",
+        "features_shared": 5034,
+        "features_total": 6639,
+        "candidate_counts": {
+          "Epithelial cells": 711,
+          "Macrophages": 97,
+          "Endothelial cells": 37,
+          "Tem/Effector helper T cells": 21,
+          "CD16- NK cells": 15,
+          "Classical monocytes": 15,
+          "Tem/Trm cytotoxic T cells": 12,
+          "Plasma cells": 12,
+          "NK cells": 11,
+          "Regulatory T cells": 8,
+          "Tcm/Naive helper T cells": 6,
+          "Monocytes": 5,
+          "DC": 5,
+          "Fibroblasts": 4,
+          "Intermediate macrophages": 4,
+          "Non-classical monocytes": 3,
+          "pDC": 3,
+          "Double-positive thymocytes": 3,
+          "MAIT cells": 3,
+          "CD16+ NK cells": 3,
+          "B cells": 2,
+          "Type 1 helper T cells": 2,
+          "Trm cytotoxic T cells": 2,
+          "Tem/Temra cytotoxic T cells": 2,
+          "DC2": 2,
+          "Kupffer cells": 2,
+          "Alveolar macrophages": 2,
+          "Tcm/Naive cytotoxic T cells": 1,
+          "Mono-mac": 1,
+          "CD8a/b(entry)": 1,
+          "Plasmablasts": 1,
+          "Erythrophagocytic macrophages": 1,
+          "Treg(diff)": 1,
+          "ILC precursor": 1,
+          "Type 17 helper T cells": 1
+        }
+      }
+    }
+  },
+  "20261103_marker_routed_annotation/GSE138709_v1/summary.json": {
+    "source": "GSE138709",
+    "source_cells": 11381,
+    "output_cells": 11381,
+    "pilot": false,
+    "marker_scope": "all source cells, unit-specific quick clusters",
+    "marker_thresholds": {
+      "min_mean_logexpr": 1.0,
+      "min_parent_gap": 0.25,
+      "min_markers_mean_ge_0.5": 2
+    },
+    "marker_panels": {
+      "T": [
+        "CD3D",
+        "CD3E",
+        "TRAC",
+        "CD2"
+      ],
+      "NK": [
+        "NKG7",
+        "GNLY",
+        "KLRD1"
+      ],
+      "B": [
+        "MS4A1",
+        "CD79A",
+        "CD19"
+      ],
+      "plasma": [
+        "JCHAIN",
+        "MZB1",
+        "IGHG1"
+      ],
+      "myeloid": [
+        "LST1",
+        "TYROBP",
+        "FCER1G",
+        "CSF1R"
+      ],
+      "mast": [
+        "TPSAB1",
+        "TPSB2",
+        "CPA3",
+        "KIT"
+      ],
+      "pDC": [
+        "LILRA4",
+        "IL3RA",
+        "GZMB"
+      ],
+      "fibroblast": [
+        "COL1A1",
+        "COL1A2",
+        "DCN",
+        "LUM"
+      ],
+      "endothelial": [
+        "PECAM1",
+        "VWF",
+        "CDH5",
+        "EMCN"
+      ],
+      "mural": [
+        "RGS5",
+        "PDGFRB",
+        "CSPG4",
+        "NOTCH3",
+        "MYH11"
+      ],
+      "epithelial": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ],
+      "hepatocyte": [
+        "ALB",
+        "APOA1",
+        "TTR",
+        "APOA2"
+      ],
+      "melanocytic": [
+        "PMEL",
+        "MLANA",
+        "TYR",
+        "DCT"
+      ],
+      "glial": [
+        "GFAP",
+        "OLIG1",
+        "OLIG2",
+        "SOX10"
+      ]
+    },
+    "malignancy_sha256": "42b8ad52c2e51423e4d2b024a576fd4868e5711db52bc580b7034dcc7e14b58c",
+    "script_sha256": "a7a32685cc89df3c26e28e02d595df2c9d29ef9ab46cc17f08122b01eca631e3",
+    "policy_sha256": "4d3c3232e97f8539eb40671cc4d174977638fa52a56045d8902dd2e63d4b939c",
+    "models": {
+      "Immune_All_High": {
+        "sha256": "a715fec36c2c421f7c4e31cf4cb4bea883eedab7fd7b20a4b76f091c22660448",
+        "input_cells": 2421,
+        "features_shared": 5034,
+        "candidate_counts": {
+          "Macrophages": 1237,
+          "T cells": 668,
+          "Monocytes": 250,
+          "DC": 121,
+          "ILC": 58,
+          "pDC": 38,
+          "B cells": 17,
+          "Plasma cells": 13,
+          "Cycling cells": 9,
+          "Mono-mac": 3,
+          "Endothelial cells": 3,
+          "Double-positive thymocytes": 3,
+          "ILC precursor": 1
+        }
+      },
+      "Immune_All_Low": {
+        "sha256": "290874d35dac039d4c9218c343fde4aac1077709b72a331ce7266f6828c36502",
+        "input_cells": 2421,
+        "features_shared": 5034,
+        "candidate_counts": {
+          "Macrophages": 1205,
+          "Tem/Effector helper T cells": 216,
+          "Classical monocytes": 125,
+          "Regulatory T cells": 122,
+          "Tem/Trm cytotoxic T cells": 115,
+          "DC": 79,
+          "Non-classical monocytes": 42,
+          "MAIT cells": 42,
+          "NK cells": 42,
+          "pDC": 39,
+          "Trm cytotoxic T cells": 37,
+          "Intermediate macrophages": 36,
+          "DC2": 27,
+          "Monocytes": 27,
+          "Tem/Temra cytotoxic T cells": 26,
+          "CD16- NK cells": 26,
+          "DC1": 23,
+          "CD16+ NK cells": 21,
+          "B cells": 19,
+          "Kupffer cells": 18,
+          "Alveolar macrophages": 17,
+          "Type 17 helper T cells": 14,
+          "Type 1 helper T cells": 14,
+          "Double-positive thymocytes": 13,
+          "Tcm/Naive helper T cells": 11,
+          "Plasma cells": 10,
+          "Tcm/Naive cytotoxic T cells": 6,
+          "Epithelial cells": 6,
+          "Cycling T cells": 6,
+          "ILC3": 5,
+          "Mono-mac": 5,
+          "gamma-delta T cells": 4,
+          "Plasmablasts": 4,
+          "Treg(diff)": 4,
+          "Endothelial cells": 3,
+          "CRTAM+ gamma-delta T cells": 3,
+          "Intestinal macrophages": 2,
+          "Follicular B cells": 1,
+          "NKT cells": 1,
+          "Erythrophagocytic macrophages": 1,
+          "T(agonist)": 1,
+          "Early erythroid": 1,
+          "ILC precursor": 1,
+          "MNP": 1
+        }
+      },
+      "Adult_Human_Vascular": {
+        "sha256": "2d48aa8b14b23dc576576b3ee7b6e157de2c37dd208b92e8a003c9da1001f967",
+        "input_cells": 299,
+        "features_shared": 3155,
+        "candidate_counts": {
+          "art_smc": 61,
+          "cap_pc": 45,
+          "endometrium_cap_ec": 32,
+          "uterine_pc": 24,
+          "art_ec_2": 21,
+          "periportal_cap_ec": 18,
+          "cap_ec": 13,
+          "pul_ven_ec": 12,
+          "pericentral_cap_ec": 12,
+          "art_ec_1": 10,
+          "ven_ec_2": 9,
+          "ven_ec_1": 8,
+          "smc_pc_intermediate": 6,
+          "kidney_cap_ec": 5,
+          "spleen_art_ec": 3,
+          "myo_cap_ec": 3,
+          "brain_art_smc": 2,
+          "cap_lec": 2,
+          "littoral_EC": 2,
+          "adip_cap_ec": 2,
+          "aorta_coronary_smc": 2,
+          "pul_art_ec": 2,
+          "pul_cap_ec": 2,
+          "floor_lec": 1,
+          "uterine_smc": 1,
+          "pul_pc": 1
+        }
+      },
+      "SingleR_HPCA": {
+        "input_cells": 1139,
+        "matrix_sha256": "803914d129a3645cd3119db17ea7cfb5a32f9d5a92c4e79709bc8cfe4c91ce94",
+        "labels_sha256": "bcf7ea6cf9ad8cdd39143d64aec2ce8527183c127f413a7a1660c048a9019e7b",
+        "worker_sha256": "a27d8ddd71df20c0570b28f9fe79f5d81e50aa30a0998627825ab2b394e79811",
+        "reference_label_alignment": "paired EH3492/EH3493 positional order; colData rownames absent",
+        "version_log": "SingleR 2.12.0 cells 1139 common_genes 14661"
+      }
+    },
+    "accepted_fine_identity": false,
+    "celltypist_version": "1.7.1",
+    "marker_parent_counts": {
+      "epithelial": 8107,
+      "immune": 2421,
+      "unresolved": 386,
+      "fibroblast": 168,
+      "endothelial": 156,
+      "mural": 143
+    },
+    "route_counts": {
+      "excluded_malignant": 7175,
+      "immune_celltypist": 2421,
+      "singler_hpca": 1139,
+      "unresolved_no_compatible_reference": 347,
+      "vascular_celltypist": 299
+    },
+    "reference_status_counts": {
+      "excluded_malignant": 7175,
+      "candidate_immune_parent_supported": 2409,
+      "reference_parent_conflict_or_pruned": 621,
+      "candidate_hpca_parent_supported": 518,
+      "unresolved_no_compatible_reference": 347,
+      "candidate_vascular_parent_supported": 298,
+      "reference_parent_conflict_or_unresolved": 13
+    }
+  },
+  "20261103_marker_routed_annotation/GSE138709_v2/summary.json": {
+    "source": "GSE138709",
+    "source_cells": 11381,
+    "output_cells": 11381,
+    "pilot": false,
+    "marker_scope": "all source cells, unit-specific quick clusters",
+    "marker_thresholds": {
+      "min_mean_logexpr": 1.0,
+      "min_parent_gap": 0.25,
+      "min_markers_mean_ge_0.5": 2
+    },
+    "marker_panels": {
+      "T": [
+        "CD3D",
+        "CD3E",
+        "TRAC",
+        "CD2"
+      ],
+      "NK": [
+        "NKG7",
+        "GNLY",
+        "KLRD1"
+      ],
+      "B": [
+        "MS4A1",
+        "CD79A",
+        "CD19"
+      ],
+      "plasma": [
+        "JCHAIN",
+        "MZB1",
+        "IGHG1"
+      ],
+      "myeloid": [
+        "LST1",
+        "TYROBP",
+        "FCER1G",
+        "CSF1R"
+      ],
+      "mast": [
+        "TPSAB1",
+        "TPSB2",
+        "CPA3",
+        "KIT"
+      ],
+      "pDC": [
+        "LILRA4",
+        "IL3RA",
+        "GZMB"
+      ],
+      "fibroblast": [
+        "COL1A1",
+        "COL1A2",
+        "DCN",
+        "LUM"
+      ],
+      "endothelial": [
+        "PECAM1",
+        "VWF",
+        "CDH5",
+        "EMCN"
+      ],
+      "mural": [
+        "RGS5",
+        "PDGFRB",
+        "CSPG4",
+        "NOTCH3",
+        "MYH11"
+      ],
+      "epithelial": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ],
+      "hepatocyte": [
+        "ALB",
+        "APOA1",
+        "TTR",
+        "APOA2"
+      ],
+      "melanocytic": [
+        "PMEL",
+        "MLANA",
+        "TYR",
+        "DCT"
+      ],
+      "glial": [
+        "GFAP",
+        "OLIG1",
+        "OLIG2",
+        "SOX10"
+      ]
+    },
+    "malignancy_sha256": "42b8ad52c2e51423e4d2b024a576fd4868e5711db52bc580b7034dcc7e14b58c",
+    "script_sha256": "23747190b53ac56855c68e3911799488adc12cc6786cfb378986c73b35db02b6",
+    "policy_sha256": "752688f0760ed457a464f17b6d3e63891028a6308288d6067dd3d7841c8e1aa1",
+    "models": {
+      "Immune_All_High": {
+        "sha256": "a715fec36c2c421f7c4e31cf4cb4bea883eedab7fd7b20a4b76f091c22660448",
+        "input_cells": 2421,
+        "features_shared": 5034,
+        "candidate_counts": {
+          "Macrophages": 1237,
+          "T cells": 668,
+          "Monocytes": 250,
+          "DC": 121,
+          "ILC": 58,
+          "pDC": 38,
+          "B cells": 17,
+          "Plasma cells": 13,
+          "Cycling cells": 9,
+          "Mono-mac": 3,
+          "Endothelial cells": 3,
+          "Double-positive thymocytes": 3,
+          "ILC precursor": 1
+        }
+      },
+      "Immune_All_Low": {
+        "sha256": "290874d35dac039d4c9218c343fde4aac1077709b72a331ce7266f6828c36502",
+        "input_cells": 2421,
+        "features_shared": 5034,
+        "candidate_counts": {
+          "Macrophages": 1205,
+          "Tem/Effector helper T cells": 216,
+          "Classical monocytes": 125,
+          "Regulatory T cells": 122,
+          "Tem/Trm cytotoxic T cells": 115,
+          "DC": 79,
+          "Non-classical monocytes": 42,
+          "MAIT cells": 42,
+          "NK cells": 42,
+          "pDC": 39,
+          "Trm cytotoxic T cells": 37,
+          "Intermediate macrophages": 36,
+          "DC2": 27,
+          "Monocytes": 27,
+          "Tem/Temra cytotoxic T cells": 26,
+          "CD16- NK cells": 26,
+          "DC1": 23,
+          "CD16+ NK cells": 21,
+          "B cells": 19,
+          "Kupffer cells": 18,
+          "Alveolar macrophages": 17,
+          "Type 17 helper T cells": 14,
+          "Type 1 helper T cells": 14,
+          "Double-positive thymocytes": 13,
+          "Tcm/Naive helper T cells": 11,
+          "Plasma cells": 10,
+          "Tcm/Naive cytotoxic T cells": 6,
+          "Epithelial cells": 6,
+          "Cycling T cells": 6,
+          "ILC3": 5,
+          "Mono-mac": 5,
+          "gamma-delta T cells": 4,
+          "Plasmablasts": 4,
+          "Treg(diff)": 4,
+          "Endothelial cells": 3,
+          "CRTAM+ gamma-delta T cells": 3,
+          "Intestinal macrophages": 2,
+          "Follicular B cells": 1,
+          "NKT cells": 1,
+          "Erythrophagocytic macrophages": 1,
+          "T(agonist)": 1,
+          "Early erythroid": 1,
+          "ILC precursor": 1,
+          "MNP": 1
+        }
+      },
+      "Adult_Human_Vascular": {
+        "sha256": "2d48aa8b14b23dc576576b3ee7b6e157de2c37dd208b92e8a003c9da1001f967",
+        "input_cells": 299,
+        "features_shared": 3155,
+        "candidate_counts": {
+          "art_smc": 61,
+          "cap_pc": 45,
+          "endometrium_cap_ec": 32,
+          "uterine_pc": 24,
+          "art_ec_2": 21,
+          "periportal_cap_ec": 18,
+          "cap_ec": 13,
+          "pul_ven_ec": 12,
+          "pericentral_cap_ec": 12,
+          "art_ec_1": 10,
+          "ven_ec_2": 9,
+          "ven_ec_1": 8,
+          "smc_pc_intermediate": 6,
+          "kidney_cap_ec": 5,
+          "spleen_art_ec": 3,
+          "myo_cap_ec": 3,
+          "brain_art_smc": 2,
+          "cap_lec": 2,
+          "littoral_EC": 2,
+          "adip_cap_ec": 2,
+          "aorta_coronary_smc": 2,
+          "pul_art_ec": 2,
+          "pul_cap_ec": 2,
+          "floor_lec": 1,
+          "uterine_smc": 1,
+          "pul_pc": 1
+        }
+      },
+      "SingleR_HPCA": {
+        "input_cells": 1139,
+        "matrix_sha256": "803914d129a3645cd3119db17ea7cfb5a32f9d5a92c4e79709bc8cfe4c91ce94",
+        "labels_sha256": "bcf7ea6cf9ad8cdd39143d64aec2ce8527183c127f413a7a1660c048a9019e7b",
+        "worker_sha256": "a27d8ddd71df20c0570b28f9fe79f5d81e50aa30a0998627825ab2b394e79811",
+        "reference_label_alignment": "paired EH3492/EH3493 positional order; colData rownames absent",
+        "version_log": "SingleR 2.12.0 cells 1139 common_genes 14661"
+      }
+    },
+    "accepted_fine_identity": false,
+    "celltypist_version": "1.7.1",
+    "marker_parent_counts": {
+      "epithelial": 8107,
+      "immune": 2421,
+      "unresolved": 386,
+      "fibroblast": 168,
+      "endothelial": 156,
+      "mural": 143
+    },
+    "route_counts": {
+      "excluded_malignant": 7175,
+      "immune_celltypist": 2421,
+      "singler_hpca": 1139,
+      "unresolved_no_compatible_reference": 347,
+      "vascular_celltypist": 299
+    },
+    "reference_status_counts": {
+      "excluded_malignant": 7175,
+      "candidate_immune_parent_supported": 2403,
+      "reference_parent_conflict_or_pruned": 621,
+      "candidate_hpca_parent_supported": 518,
+      "unresolved_no_compatible_reference": 347,
+      "candidate_vascular_parent_supported": 298,
+      "reference_parent_conflict_or_unresolved": 19
+    }
+  }
+}
