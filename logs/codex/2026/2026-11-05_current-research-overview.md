@@ -124,3 +124,8 @@
 
 
 发布前验证完成：`validate_repository.sh`为0错误、1条既有告警（历史spectra provenance文件的路径，非本次引入）；`validate_releases.sh`为0错误；原审计核验64项公开证据hash、43脚本hash、45任务通过。专项检查415处本次修改/新增Markdown相对链接、38个主要导航锚点、47个页面commit依据；14个作图输入hash、18个图件hash、4个UMAP收据hash及2个原atlas图hash均匹配。两绘图脚本语法检查、`git diff --check`、本次文件隐私路径扫描和单文件<5 MiB检查通过。README历史正文及01–06分页保持；未把新图交付当作科学验收。
+
+
+## 图文总览发布收据（2026-11-05）
+
+内容提交`6940a0da7f7cc03dfcb6b54967777523a0e83b99`已普通push至用户指定公开仓库main；独立`git ls-remote origin refs/heads/main`返回同一完整SHA，本地工作区干净。发布/核验发生于2026-11-05 02:43 UTC / 10:43 UTC+8分钟窗口。33个文件包含页面、README中英文导航、作图脚本、18份PNG/PDF、收据/来源说明及运行/索引/日志；原主checkout未改，未使用force/rebase。科学状态与图件交付继续分开维护。
