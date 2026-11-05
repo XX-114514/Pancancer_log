@@ -85,3 +85,15 @@
 - Scanorama 重跑完成（job 30660424，1,989 s）。同来源0.375，iLISI 3.38，细标签纯度0.744，scib 总分0.633，低于 Harmony（0.661）。
 - 发现：簇13（290,546个细胞，uncertain 占76.5%）把各来源的 uncertain 上皮/肿瘤样细胞汇在一起，自动标签为 unresolved（353,834个细胞）。
 - 下一步：粗区室人工核实（marker 点图），然后按区室细注释。是否沿用10月172节点分类作为骨架仍待用户决定。
+
+## 2026-11-05 2026年10月注释（v20261010）可否作为细注释骨架（06:30 UTC / 14:30 UTC+8）
+
+- 已观察：`Project_v3/annotation_rebuild/20261010_expression_annotation_downstream_v1/inputs/` 中有逐细胞标签。
+  - meta.tsv（4,534,433行：sampleID、majorCluster、subCluster）。
+  - exact_cell_roster.npz（global_position、172个 label、1,312个样本；SHA 在 run_contract.json 中）。
+- 已观察：global_position 等于 core store 的 origin_native_row。在 GSE138709 和 GSE161529 上，roster 命中率为100%，单位与 roster 样本100%一致，可以精确连接。
+- 覆盖：
+  - TME run v2 中1,550,200/3,347,659个细胞（46.3%）有十月标签，来自36个 core 来源。
+  - CoVarNet v1 中1,352,962/2,980,723个细胞（45.4%）有十月标签。
+  - 3个 immune store 来源和32个补充来源没有标签。
+- 方案（建议，未执行）：以十月172节点为骨架，在各区室的 Harmony 空间中把标签转移到未标注来源，并给出置信度；同时在各区室重新聚类，找出十月数据中没有的状态（新癌种、新来源）；两者交叉核对后定名。是否采用这一骨架由用户决定。
