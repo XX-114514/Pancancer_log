@@ -1720,3 +1720,9 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [x] New native fine-group review and independent author/axis/branch/native-reference replay accepted.
 - [x] New source-lineage comparison replay accepted in inherited and provisional-native contexts.
 - [ ] Apply equal per-cell conflict/confidence rules across ABC; group-level label coverage is not cell-level identity validation. Remaining feature/engine/holdout/full-mapping gates above remain open.
+
+## V7 panel 审计后续（2026-11-05）
+
+- [x] 审查 162 个旧候选与 17 组父类正负 panel；复算 40 群/373 候选，记录规则缺陷与证据边界。
+- [ ] 按[修订约束](methods/V7-panel-semantics-audit-20261105.md)先核 Tcell_4/Tcell_6 及已命名 CD4-naïve/CD8-cytotoxic 群；分别验收父身份、分支与状态。
+- [ ] 对 9 群被遮蔽的候选完成谱系适用性、群内混合和跨来源验证；不能把旧最低基因条件当成新标签验收。

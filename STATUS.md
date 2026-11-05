@@ -2384,3 +2384,7 @@ New formal expression/composition/clinical-view gates are still unknown/rejected
 [V7复查run](runs/20261105_v7_literature_guided_reannotation_v1.md)已完成26父类/106标签全量原因审计、Mast全基因初诊及Tcell_6专项核查。原4676787细胞V7标签与CNV保留，481271细胞旧字段要求谱系内重建。Mast的45036细胞/95038基因重建得到27探索群，38350父身份支持候选、6686竞争程序/QC复查候选；不是最终QC排除或27亚型。49来源测量掩码及837 marker记录全量算术复核PASS，图和逐群表见[证据目录](inventories/analysis/2026-11-05/v7_literature_guided_v1/README.md)。
 
 Tcell_6旧winner排序遗漏完整Treg候选的原因已实证；补查841/842样本支持，CellTypist Regulatory T cells为142908/156631，仍需内部细分。首轮全部实际阶段终端已完成，本轮无仍在运行的科学作业；没有发布新最终注释。下一步Mast竞争群/来源特征与清理后敏感性，然后T/NK/ILC。此节点不替代十月图谱及其他并发任务状态。
+
+## V7 panel 规则审计（2026-11-05）
+
+[审计](methods/V7-panel-semantics-audit-20261105.md)完成 162 个候选及 17 组父类正负 panel 审查，373 个历史候选复算一致。共享程序被命名为污染、身份与状态混层、无效第一名遮蔽后续候选均有代码/聚合证据；9 群 323,669 个细胞为待复核范围，非纠正数。V7 标签未改。后续按父身份→分支→状态分别审查 T/NK/ILC，已 high/medium 标签也需抽查。见[run](runs/20261105_v7_panel_semantics_audit_v1.md)。

@@ -1,0 +1,18 @@
+major	positive_genes	exclusion_genes	review
+Tcell	CD3D,CD3E,TRAC,LCK,CD247	LST1,TYROBP,MS4A1,COL1A1,PECAM1	保留 CD3D/CD3E/TRAC 身份模块；LCK/CD247 与 NK 共享，TYROBP 不宜一律作 T 反证。旧代码只要求来源含≥2基因，并未要求每个细胞实际检测≥2身份基因。
+NK	NKG7,GNLY,KLRD1,KLRF1,FCGR3A	CD3D,CD3E,MS4A1	旧正向面板主要细胞毒程序，需 NK 受体/谱系组合及 TCR/CD3 反证；排除面板缺 TRAC，不应以 RNA dropout 自动认定 TCR 阴性。
+Bcell	CD79A,MS4A1,CD37,CD74,CD22	CD3D,CD3E,LST1,COL1A1	CD74 为 APC 共享，CD37/CD79A 与 plasma 共享；需成熟 B 与 ASC 分支而非互相污染。
+Plasma	MZB1,JCHAIN,SDC1,TNFRSF17,DERL3	CD3D,CD3E,MS4A1	ASC 程序较合理；MS4A1 需结合分化/群内混合，不能忽略 plasmablast 连续谱。
+Monocyte	S100A8,S100A9,FCN1,LILRB1,CTSD	CD3D,CD3E,MS4A1	S100A8/A9 与 neutrophil 共享，LILRB1/CTSD 广泛髓系；应联合 monocyte 特异组合。
+Macrophage	C1QA,C1QB,C1QC,APOC1,MARCO	CD3D,CD3E,MS4A1,EPCAM	C1Q/APOC1/MARCO 偏成熟/部分状态，可能漏检炎症/单核来源群；补充髓系树与不同状态覆盖。
+Dendritic	FCER1A,CD1C,CLEC10A,CLEC9A,GZMB	CD3D,CD3E,MS4A1	将 cDC1/cDC2/pDC 标志混合平均会稀释某分支；旧 pDC 仅 GZMB 较直接，需分支 OR 结构后合并 DC 父身份。
+Mast	KIT,TPSAB1,TPSB2,CPA3,MS4A2	CD3D,CD3E,MS4A1	KIT/TPSAB1/B2/CPA3/MS4A2 组合可保留，核查 basophil 与 KIT+祖细胞；反证作为边界/QC，不等同 doublet。
+Granulocyte	FCGR3B,CSF3R,S100A8,S100A9,MNDA	CD3D,CD3E,MS4A1	旧面板偏 neutrophil，不能覆盖 eosinophil 等所有粒细胞；父类名应与实际覆盖一致。
+Epithelial	EPCAM,KRT8,KRT18,KRT19,KRT7	PTPRC,COL1A1,PECAM1	泛角蛋白/EPCAM 覆盖偏 epithelial；不覆盖 melanocyte，EMT 或低角蛋白肿瘤需独立判断。
+Endothelial	PECAM1,VWF,KDR,EMCN,RAMP2	PTPRC,COL1A1	KDR/VWF/PECAM1 等有分支差异，补充 lymphatic/organ-specific coverage；正负均需来源可测性。
+Fibroblast	DCN,LUM,COL1A1,COL1A2,COL3A1	PTPRC,EPCAM,PECAM1	ECM 正向面板偏常规 fibroblast，不涵盖 mural/mesothelial；PTPRC/EPCAM 等仅作边界证据。
+Erythroid	HBB,HBA1,HBA2,AHSP,GYPA	PTPRC	三个 HB 高表达可主导分数，需 AHSP/GYPA 等非 HB 证据；PTPRC 单项排除要区分有核前体/混合/环境 RNA。
+Platelet	PPBP,PF4,GP9,NRGN,ITGA2B	PTPRC	PPBP/PF4 易环境 RNA/附着；需组合、QC 与复杂度；可将大类作为合理终点。
+HSPC	CD34,SPINK2,GATA2,HLF,MEIS1	CD3D,CD3E,MS4A1,PECAM1,VWF,COL1A1	CD34/GATA2 不独占 HSPC，需祖细胞组合和血液疾病背景；旧 vascular guard 只降低假阳性，不证明剩余正常。
+Neural	S100B,SOX10,PLP1,MPZ,SLC1A3	PTPRC,EPCAM,PMEL,MLANA,TYR,DCT	旧大类偏 Schwann/glia，不能作为全部 neuron/oligodendrocyte 的共同正向 panel；与 Melanocytic 子型定义冲突。
+ILC	IL7R,KIT,KLRB1,RORC,IL1R1	CD3D,CD3E,MS4A1	IL7R/KIT/KLRB1/RORC/IL1R1 偏部分 ILC，并与 T/Mast 共享；须分支 OR、TCR/NK/Mast 对照，父类本身也需复核。

@@ -155,3 +155,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [2026-11-05服务器分析系统审计与交接](20261105_server_analysis_audit_v1.md)
 
 - [2026-11-05 V7 literature-guided reannotation](20261105_v7_literature_guided_reannotation_v1.md)
+
+- [2026-11-05 V7 panel 语义审计](20261105_v7_panel_semantics_audit_v1.md)：162 个候选/17 组父类 panel 审查，40 群/373 候选复算；规则缺陷暴露范围与新注释严格分开。
