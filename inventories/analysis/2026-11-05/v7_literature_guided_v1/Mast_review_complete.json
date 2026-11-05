@@ -1,0 +1,43 @@
+{
+  "status": "completed_Mast_parent_and_QC_review_not_final_annotation",
+  "UTC": "2026-11-05T02:52:12.736680+00:00",
+  "n_cells": 45036,
+  "n_clusters_at_exploratory_res0_4": 27,
+  "n_parent_supported_candidate_cells": 38350,
+  "n_competing_program_QC_review_cells": 6686,
+  "n_cycling_enriched_cluster_cells": 748,
+  "n_Mast_sources_with_native_headers": 49,
+  "original_V7_labels_preserved": true,
+  "new_final_label_changes": 0,
+  "limits": [
+    "Manual review routes are not final doublet decisions or automatic exclusion.",
+    "Unintegrated source/feature effects are substantial; do not name 27 subtypes.",
+    "No outside-parent recruitment or final cleaned lineage refit yet."
+  ],
+  "outputs": [
+    {
+      "name": "mast27_measured_marker_expression.tsv",
+      "sha256": "4523df7924ed8ee4b09633e5ffa67151a91c93ee0294cbe196e5b2386fa322fc"
+    },
+    {
+      "name": "mast27_cluster_review.tsv",
+      "sha256": "a274aef304684a76b67e4f88524fd1287d837d78243d393ae3620dc7fe104a12"
+    },
+    {
+      "name": "mast_cell_review_overlay_PRIVATE.pkl.gz",
+      "sha256": "3b05032c84890463ebc2ed6051d8785bbe10d99db227e62b8404a4487fcc6023"
+    },
+    {
+      "name": "mast_initial_DEG_with_measurement_scope.tsv",
+      "sha256": "ef3c7f81713c38ec887a23b3b06358eea5937c6ca69a4eddab687949d8e3e7c0"
+    },
+    {
+      "name": "source_header_manifest_PRIVATE.json",
+      "sha256": "81ec0b162cbec689db90d98318de101978c1a493f1bc4589a100ef1803832563"
+    },
+    {
+      "name": "Mast_marker_review.png",
+      "sha256": "2f7706aae04613fa4a0d513b3775175bf52a3915d75ea4f90569a888929fc465"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "D_completed_raw_marker_and_candidate_diagnostic",
+  "UTC": "2026-11-05T02:42:49.495295+00:00",
+  "n_mast_cells": 45036,
+  "n_annotation_changes": 0,
+  "negative_marker_policy": "Core raw source measurement mask not yet joined for extra genes; this stage uses positive detections only.",
+  "outputs": [
+    {
+      "name": "mast_raw_same_cell_marker_sensitivity.tsv",
+      "sha256": "b979141155daeec0f62d4d66008e5fa63b37e2959ea4e3b40e9d19a2d01eaaf6"
+    },
+    {
+      "name": "T4_T6_legacy_all_panel_gene_evidence.tsv",
+      "sha256": "218d580075b76726aede90f253c0b36cdf253d00d3b7a2f80feadca1a8e8dd2e"
+    },
+    {
+      "name": "T4_T6_all_panel_candidates.tsv",
+      "sha256": "61bc9544156f2b6b4018690e3aca26aae943d1492bcfc82c106db32ae408683b"
+    }
+  ]
+}
