@@ -80,3 +80,23 @@
 内容提交：`270d4e1a586f6a017cbb0715b3236dc8c2474134`。普通`git push origin HEAD:main`实际exit 0；随后独立`git ls-remote origin refs/heads/main`返回相同完整SHA，远端发布已核实。内容提交后隔离工作区干净，原本机分叉checkout未修改。
 
 远端核验完成记录时间：2026-11-05T01:32:40.152525+00:00 / 2026-11-05T09:32:40.152525+08:00。本收据另作常规追加提交；不改历史、不改页面的阅读基线。本次最终交付仅五个文档文件。
+
+## 后续：用户提供WEHI浏览器入口后的实时只读补核
+
+用户明确提供Edge School/Open OnDemand入口并手动登录，随后要求continue。本次承接原总览任务，补核实时运行和Git状态；未启动新科学任务。开始前隔离副本干净，HEAD和联网fetch的origin/main均为`b268012ef7c4678d49ce1117867a4e00a29a2aba`。重读AGENTS、当前状态/待办/路线、RUNTIME_SYNC及本任务交付。
+
+取证窗口：2026-11-05 01:50:36—01:52:26 UTC / 09:50:36—09:52:26 UTC+8。事件与读取时间分别列于[只读run](../../../runs/20261105_current_overview_wehi_readonly.md)及[结构化摘要](../../../inventories/runtime/2026-11-05/wehi_overview_followup.json)。通过浏览器终端执行`squeue`、`scontrol show job`、`sacct -X`、小JSON/日志/配置读取和SHA256、Git status/rev-parse/branch/rev-list/log；未加载大矩阵，也未从浏览器读取凭据。原审计目录的证据/hash保持不变。
+
+新增观察：TME调度仍运行，生产日志在01:27:57 UTC记录78簇，指定最终zarr/summary缺失，post等待依赖；K4两种子完成报告已存在，mtime 01:19:02 UTC不当作调度终态；来源等权和53来源留出正在运行，25→26份完成报告为不同读取时刻，26份有一个43节点分支。没有验收W/H、全53来源汇总、注释全量或新TME最终图。主代码副本有三个未跟踪入口，独立发布副本干净；两者缓存origin的0/0不等于远端当前状态。本次不覆盖或同步服务器工作区。
+
+失败/修正：WEHI未安装rg，限定文件读取改用Python标准库；首次终端多行输入被控件折叠导致SyntaxError，随后用单行安全引号包裹的Python exec字符串成功读取；没有写服务器文件。按`cm_K4`名称查询accounting无匹配，保留退出状态未核实。首次本机fetch遇sandbox DNS限制，按权限流程联网fetch成功。一次查询不存在的code_files.tsv文件名失败，目录清单确认实际索引为imported_code.tsv；未据错误路径作科学判断。
+
+修改原因：总览更新看板、A/C/G线、近期事件、优先级依赖及证据新鲜度；STATUS、TODO、ROADMAP同步当前运行边界；新增只读run、结构化摘要并链接run索引；追加同任务与daily日志。原README入口和历史分页保持。本次科学结论没有升级，下一步为接收现有产出后终验、身份准入和尺度不变匹配。建议提交`docs: refresh research overview with live WEHI evidence`。
+
+### 实时补核的验证与发布准备
+
+- 全仓库`validate_repository.sh`完成：0 errors / 1项既有路径warning；相对Markdown链接通过。
+- `validate_releases.sh`：0 errors；原`verify_snapshot.py`：PASS，64证据hash、43代码hash和45任务保持，未改原审计。
+- 临时文档检查通过261处相对链接、37处锚点、42个commit引用；历史中英文README正文及01–06保持。补核JSON的53任务状态总数、26份报告节点分布、K4两种子及78簇/未验收标志一致。
+- 九个本次变更文件的体积/凭据/内部路径检查及`git diff --check`通过；人工审阅diff和新增收据。新增摘要明确为终端观察的脱敏转录，未冒充原始导出。
+- 发布前联网fetch无并发新提交；只显式stage本次九个文件，普通push并独立检查远端SHA。科学终验和新增计算不属于本次文档验证。

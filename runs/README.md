@@ -1,3 +1,5 @@
+[当前研究总览WEHI实时补核](20261105_current_overview_wehi_readonly.md)：TME仍运行至Leiden 78簇；V7 K4有计算收据，来源等权与53来源留出运行中；只读取证，不新增科学计算。
+
 [APC组织问题的原始证据资格](20261022_CM02_APC_context_primary_abstracts_v1.md)：三篇正常公开摘要/图注完成，无新原生或统计，当前空间源继续。
 
 [CM02外部TDLN原始证据及原生资格](20261022_CM02_TDLN_external_qualification_v1.md)：公开关系已核，新有界读取实际开始，仅资格无新效果。

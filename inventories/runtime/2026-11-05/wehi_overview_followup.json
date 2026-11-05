@@ -1,0 +1,125 @@
+{
+  "schema": "manual_readonly_runtime_summary_v1",
+  "provenance": "Manually transcribed from authenticated Open OnDemand terminal observations; not a raw scheduler export; no scientific recomputation.",
+  "window_utc": [
+    "2026-11-05T01:50:36Z",
+    "2026-11-05T01:52:26Z"
+  ],
+  "window_utc_plus_8": [
+    "2026-11-05T09:50:36+08:00",
+    "2026-11-05T09:52:26+08:00"
+  ],
+  "observations_are_non_atomic": true,
+  "github_main_at_local_fetch": "b268012ef7c4678d49ce1117867a4e00a29a2aba",
+  "tme_run_v2": {
+    "job_id": "30660430",
+    "job_name": "integrate-tme-v1",
+    "scheduler_state_at_015036": "RUNNING",
+    "scope": "tme_v1/run_v2",
+    "harmony": "source:2",
+    "post_job_id": "30660431",
+    "post_state": "PENDING",
+    "post_dependency": "afterok:30660430",
+    "last_observed_progress_event": {
+      "utc": "2026-11-05T01:27:57Z",
+      "step": "leiden_done",
+      "clusters": 78
+    },
+    "final_summary_present_at_015212": false,
+    "final_zarr_present_at_015212": false,
+    "final_object_accepted": false
+  },
+  "v7_k4": {
+    "logical_report": "Project_v5/runs/20261103_V7_CM_blisa_v1/outputs/covarnet_primary_strict_K4/CoVarNet_execution_report_v1.json",
+    "observed_at_utc": "2026-11-05T01:52:26Z",
+    "source_mtime_utc": "2026-11-05T01:19:02.951572Z",
+    "mtime_is_not_scheduler_end_time": true,
+    "status": "COVARNET_SCHEME_NMF_AND_AUTHOR_NETWORK_EXECUTION_COMPLETE",
+    "selected_rank": 4,
+    "n_nodes": 47,
+    "n_analysis_observations": 1207,
+    "n_sources": 53,
+    "weight_mode": "unit",
+    "n_final_seed_models": 2,
+    "independent_source_patient_validation_not_claimed": true,
+    "scheduler_exit_code_verified": false,
+    "source_sha256": "65f238bf97fe441553d5accff4d37c64e415cafac5951b9e3dfd8d768bd1b872"
+  },
+  "v7_source_equal": {
+    "job_id": "30661687",
+    "state_at_015036": "RUNNING",
+    "rank_override": 9,
+    "final_seeds": [
+      20261103,
+      20261104
+    ],
+    "final_nrun": 30,
+    "final_max_iter": 2000,
+    "final_report_present_at_015226": false
+  },
+  "v7_loso": {
+    "array_job_id": "30661686",
+    "source_count": 53,
+    "array": "0-52%27",
+    "sampled_config": "GSE115978.json",
+    "sampled_rank_override": 9,
+    "sampled_final_seeds": [
+      20261103
+    ],
+    "sampled_final_nrun": 30,
+    "sampled_final_max_iter": 2000,
+    "sampled_weight_mode": "unit",
+    "accounting_at_015141": {
+      "COMPLETED_exit_0_0": 25,
+      "RUNNING": 27,
+      "PENDING": 1
+    },
+    "reports_at_015141": 25,
+    "reports_at_015212": 26,
+    "report_status_counts_at_015212": {
+      "COVARNET_SCHEME_NMF_AND_AUTHOR_NETWORK_EXECUTION_COMPLETE": 26
+    },
+    "rank_counts_at_015212": {
+      "9": 26
+    },
+    "node_counts_at_015212": {
+      "47": 25,
+      "43": 1
+    },
+    "source_counts_at_015212": {
+      "52": 26
+    },
+    "any_independent_validation_claimed": false,
+    "all_source_stability_accepted": false
+  },
+  "server_git": {
+    "main_checkout": {
+      "branch": "main",
+      "head": "e6cf388ff5ca53c4e00cd4fcaa7559d72028a71e",
+      "untracked_entries": [
+        "decisions/ADR-0004-v7-covarnet-rank-k9-comparison.md",
+        "scripts/nmf_benchmark/",
+        "scripts/v7_cm_blisa/"
+      ],
+      "ahead_cached_origin": 0,
+      "behind_cached_origin": 0
+    },
+    "publication_checkout": {
+      "head": "7617443f90cb42bf4e772d21774731cc9fc020c6",
+      "clean": true,
+      "ahead_cached_origin": 0,
+      "behind_cached_origin": 0
+    },
+    "server_fetch_performed": false
+  },
+  "source_sha256_at_015212": {
+    "tme_v1/run_v2/integrate-tme-v1-30660430.out": "f72c4008b05798fb0b380d5ed5480fec7e936b399bd66b013d235d06b4858a16",
+    "Project_v5/runs/20261103_V7_CM_blisa_v1/scripts/run_covarnet_loso.sbatch": "545534de2956e4246ff867135791dfaf29ffeb909c764cc2a6e6215718697487",
+    "Project_v5/runs/20261103_V7_CM_blisa_v1/scripts/run_TME_CoVarNet_scheme_v1.R": "73b54fda1dadc7108ec122aa50c0d64efe11f0982fccd4936f6dae1453579668",
+    "Project_v5/runs/20261103_V7_CM_blisa_v1/config/covarnet_primary_strict_K9_source_equal.json": "0e64f36ebabf47a4822a70ddc84b7246f3f422c07e38f1285d64e2086c87f203",
+    "Project_v5/runs/20261103_V7_CM_blisa_v1/config/loso/sources.txt": "c39751f9216cd3db29edd932beee090fa9948b4cb7c5d5c4320ced6d7822015d"
+  },
+  "source_hash_caveat": "Active log may change after observation; source files were not copied into this receipt.",
+  "scientific_validation_claimed": false,
+  "scientific_jobs_launched_by_this_task": 0
+}
