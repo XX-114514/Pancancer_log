@@ -1,3 +1,5 @@
+[当前研究总览图文展示](20261105_current_work_visualization_v1.md)：任务分层、六幅新增主文研究图、V7来源/材料补图和六方法同细胞UMAP；仅展示计算，不刷新科学验收状态。
+
 [当前研究总览WEHI实时补核](20261105_current_overview_wehi_readonly.md)：TME仍运行至Leiden 78簇；V7 K4有计算收据，来源等权与53来源留出运行中；只读取证，不新增科学计算。
 
 [APC组织问题的原始证据资格](20261022_CM02_APC_context_primary_abstracts_v1.md)：三篇正常公开摘要/图注完成，无新原生或统计，当前空间源继续。
