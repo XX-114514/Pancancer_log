@@ -41,3 +41,13 @@
 ## 验收与交付
 
 每一谱系交付旧标签→原因→证据→修订标签表、marker表达/DEG、QC和来源分布、必要嵌入图及分辨率对照。细胞级overlay留服务器；公共仓库只存审阅后汇总、通用代码和脱敏日志。原标签不覆盖，终端manifest及SHA后才能称运行完成；生物学验收另列。
+
+## Marker图的固定展示要求（用户2026-11-05补充）
+
+图中必须同时展示marker和对应的身份/亚型/状态：列上方按panel分组写明目标名称，底部保留基因名；行标签给出cluster编号、工作性身份或状态、review标志及细胞数。不能只给一排marker或只给数字cluster。亚型尚未确认时写candidate，状态与父身份分别标示；共享/竞争谱系marker明确写对应谱系。
+
+Mast的MC_T/MC_TC相关RNA panel参考[JCI2025原研究](https://www.jci.org/articles/view/174981)，仅为候选表型关联，不能凭CMA1未检出定义MC_T。[跨器官Mast原研究](https://rupress.org/jem/article/220/10/e20230570/214245)提示人类转录状态不能简单按传统二分法硬切。另以[泛癌pan-MC作者Fig1代码](https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R)的10个三基因panel作为参考图；Ref C0–C9不等于本项目cluster编号，也不直接迁移作者标签。panel到目标的映射和来源单独输出表。
+
+图分为身份/候选亚型/状态、竞争谱系QC、文献参考panel三张，保留逐来源可测性分母。颜色为各基因内部标准化的log1p平均CP10K，点大小为可测细胞中检出比例；来源覆盖不足80%用×标识，不把未测量当0。
+
+Mast本轮继续使用原始样本与doublet_method分层的完整背景校准doublet分位；高分与多谱系共表达的联合条件只产生doublet候选。H敏感性采用pan-MC代码中的counts/feature/mt数值QC、跨功能Mast阳性marker及无强竞争程序，并以49个实际Mast来源中至少80%可测的基因作为模型候选。完整RNA assay和marker轴保留；按GSE做Harmony是明确的来源敏感性，不能冒称已复现未知Technology变量，也不能以混合更好作为生物学准确率。没有任何整群自动删除。

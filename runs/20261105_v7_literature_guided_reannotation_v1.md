@@ -38,3 +38,13 @@ Tcell_6旧表中6个Treg marker、3个经典锚点均通过。旧算法先按通
 冻结SHA不变、计数守恒、panel与原生全基因精确细胞轴、阶段输出读回和独立算术复核已完成。C2/E/F有真实成功终端，工作性review overlay已经产生；尚未发布新最终注释。下一步复查Mast的7个竞争程序/QC群，核对源特征命名/可测性并完成清理后的谱系敏感性，再进入T/NK/ILC。允许身份明确的Mast大类终点，状态与亚型分开。
 
 初诊resolution0.4的27群不能视作27亚型：有明显来源/基因版本差异。cluster10的CD3D/E/TRBC1与Mast共存、doublet分数中位0.110；cluster15有LYZ/LST1/CSF1R及较高doublet/decontX；cluster13/25/26有间质或上皮竞争程序。均保留为待复查，不自动排除。cluster16共748细胞，Mast身份与TOP2A/BIRC5/RRM2增殖程序共存，作为cycling-enriched状态候选。
+
+## 继续阶段：对应类型图与逐细胞复查
+
+用户补充要求：marker和对应亚型同时展示。新版图列上方写身份/候选亚型/状态或竞争谱系，行写工作注释与细胞数；[三张v3图及panel映射](../inventories/analysis/2026-11-05/v7_literature_guided_v1/marker_targets_v3/README.md)分别展示身份/候选亚型/状态、竞争谱系QC、pan-MC文献参考panel。原图和F阶段不覆盖。
+
+G于04:12:11 UTC / 12:12:11 UTC+8完成，60基因/1620表达记录。decontX只有指标，raw RNA没有全基因去污染层。使用1322个原样本/方法背景组校准doublet分位，44818个Mast细胞可评估。H的跨功能Mast支持和原竞争panel工作性分流为41191无强竞争信号、559联合doublet候选、828竞争程序、2365低Mast marker、93弱Mast加竞争程序；均不是最终doublet/排除判决。
+
+H来源约束敏感性模型真实exit0于04:20:38 UTC / 12:20:38 UTC+8：36007细胞、RNA95038基因、17136个候选模型基因、2000HVG、50PC/30图PC；同池raw res0.4为24群，GSE-Harmony res0.4为15群。加权最大来源比例0.711→0.278，说明来源结构改变，不证明生物学准确率提高。RNA marker另发现B/Ig相关程序，提示原竞争panel范围不足；I已启动扩展B/Plasma/内皮/血小板及更宽T/髓系证据，不能把先前41191理解为完整排除了所有混杂。
+
+Tcell_6的全156631细胞×95038原生基因输入已于04:28:00 UTC / 12:28:00 UTC+8完成，248354875 nnz；K已核验其精确V7 cluster_uid/major集合，52来源、17252模型候选基因，未按Treg预测筛选。通用exporter的uns scope措辞不适用于该子集，已以K精确集合核验侧车补正，矩阵不改。K的24线程全子集诊断于04:36:04 UTC / 12:36:04 UTC+8真实启动；细分未完成，不能宣称已将156631全部注释为Treg。

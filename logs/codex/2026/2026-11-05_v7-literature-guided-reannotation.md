@@ -62,3 +62,21 @@ C2真实exit0于02:47:11.432208 UTC / 10:47:11.432208 UTC+8；F review完成02:5
 
 
 Publication verified 2026-11-05T03:02:32.127141+00:00 UTC; content commit `4fa722cdcb3c535997d2c3d267cc986b05ded957`, 32 reviewed files, ordinary push actual0 and independent ls-remote exact full-SHA match. No concurrent work replaced. Final repository validator: 0 errors / 1 pre-existing warning. Diff whitespace check required explicit NA for unmeasured trailing TSV fields; 837-row numerical readback unchanged. Whole-project final annotation remains incomplete; first-stage review and its numeric audits are complete.
+
+## 继续：marker图对应类型标注与Mast逐细胞复查
+
+用户要求marker图同时标出marker对应的亚型，并继续注释。2026-11-05 04:04 UTC / 12:04 UTC+8开始本节点；原15个tracked并发改动保留。新图将同时标列分组（父身份、候选亚型、状态和竞争谱系）与行的工作性身份/复查标签，原始图和F输出不覆盖。不能把marker的文献关联自动当作本数据已确认的亚型。
+
+已重读实际run/method/task/daily、当前项目首页和任务状态。补充读取泛癌Mast原论文作者pan-MC Fig1/2代码、JCI2025 MCT/MCTC原研究及JEM2023跨器官Mast研究，以公开原panel标注而非凭空命名。代码SHA留本地来源收据，公开记录只保留相关解释与引用。
+
+服务器输入合同明确：全基因X为raw source counts；obs中的decontX为污染指标，原生全基因层未做decontX，也不存在可直接复用的全基因校正层。不得把指标当成已校正表达。下一阶段用原生marker共表达、样本内doublet分位、深度/污染、来源复现逐细胞细分7个review群；保留全部细胞，既不整群自动删除，也不以一个marker强行命名。
+
+### Marker目标图与逐细胞QC实际完成
+
+G于04:12:11.277769 UTC / 12:12:11.277769 UTC+8完成：60基因/1620 marker-cluster记录、49来源；完整core的1322个原样本/方法背景组用于分位校准，Mast中44818细胞可评估。初始任意2/5 Mast marker规则得到565联合候选。H进一步要求一个tryptase（TPSAB1/TPSB2）加一个CPA3/KIT/MS4A2，均≥2 UMI，防止同一功能家族重复计为独立身份支持；42578细胞满足，41191无检测到的强竞争程序，559为联合doublet候选，828竞争程序复查，2365低marker复查，93为弱Mast但强竞争谱系复查。全部45036保留，没有最终排除或全项目最终标签发布。
+
+MCTC相关CMA1/CTSG阳性候选在raw≥2 UMI口径为1312细胞/40来源，MCT相关panel为1097/33来源；是非互斥的RNA marker关联候选，不视作蛋白定义亚型。pan-MC的C9参考panel与细胞毒淋巴程序共享基因，因此额外并排T身份panel，不能仅凭CCL5/IL32/GZMB赋Mast亚型。
+
+大图单包回传网络超时，科学producer均未重启；跳板独立登录成功。改为14KB块，逐块与整包SHA核验成功后本地重绘；聚合包SHA d9f78d346a791065e2ea99eef603a6f985fb95ba455860fd7685e5d495ee3fd8。3张v3图均已视觉检查：列有目标类型/候选亚型/状态，行有工作注释和n，marker仍保留。独立临时绘图环境Matplotlib3.10.7，不修改全局环境；初次本地缺库及py_compile用户缓存不可写已通过临时环境和AST检查解决。
+
+H输入准备04:15:06.569299 UTC / 12:15:06.569299 UTC+8；36007细胞进入保守QC敏感性模型，17136个来源可测性模型候选基因，RNA完整95038基因保留。H真实R exit0于04:20:38.264302 UTC / 12:20:38.264302 UTC+8，marker已生成。通用supervisor的stage字面沿用initial，R代码SHA/专属目录/实际complete均为H，以H实际manifest为准。Tcell_6全156631细胞原生输入提取已实际启动；尚未据此声称Treg细分完成。
