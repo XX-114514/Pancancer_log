@@ -97,3 +97,30 @@
   - CoVarNet v1 中1,352,962/2,980,723个细胞（45.4%）有十月标签。
   - 3个 immune store 来源和32个补充来源没有标签。
 - 方案（建议，未执行）：以十月172节点为骨架，在各区室的 Harmony 空间中把标签转移到未标注来源，并给出置信度；同时在各区室重新聚类，找出十月数据中没有的状态（新癌种、新来源）；两者交叉核对后定名。是否采用这一骨架由用户决定。
+
+## 2026-11-05 注释面板合并与 Lodi 式注释逻辑 v2（10:15 UTC / 18:15 UTC+8）
+
+- 用户要求：借鉴上传的 V7 Panel 工作簿（与仓库内 `resources/annotation/v7_panel_repair_v1/V7_panel_repair_v1.xlsx` 同为65,415字节），与本项目 v1 面板合并并给出文献依据；上传完整的面板和逻辑；读取 GitHub 上最新的注释策略修改；严格学习 Lodi et al. 的代码和论文。
+- 已读取：
+  - 远端 d61e0d9（V7 panel 修复）、44374b8（语义审计）、e6cf388（QC 和计算口径澄清）、92aa7ca（双细胞审计）、bacb550；
+  - Lodi 仓库 @35f054b：`Cancer type analysis.R`、5个 `Cell subtype annotations/*.R`、`marker_genes.txt`、Minor_2.0 词汇；
+  - Lodi 论文 PMC12629804 的 Methods。
+- 产物：
+  - `resources/annotation/tme_annotation_panel_v2/`：179个模块，通过 V7 validator，V7 测试15/15 通过。
+  - `scripts/annotation_v2/build_panel_registry_v2.py`。
+  - `methods/tme-annotation-v2-lodi-workflow-20261105.md`。
+  - v1 方法文档标注为已被取代。
+- 文献核对：
+  - 原计划用于膀胱图谱的 PMID 31462534 实为肌肉论文，未采用；改用 Crossref 核实的 Yu 2019 JASN DOI。
+  - NCBI esearch 和 Europe PMC 在本次会话中被限流或不可用，改用 Crossref DOI 核对标题。
+  - Lodi 引用的"Chen et al, Cell 2021"未能确认，标为 unresolved。
+- 关键设计变化：
+  - 按 Lodi，先在各癌种内确定大类，并识别后移出癌种特有群体；
+  - 跨癌种按谱系两轮分析（QC 轮，然后干净重建）；
+  - 上皮和成纤维不做跨癌种细分。
+  - 因此簇13的 v1 跨癌种子聚类（job 30667416）只作诊断。
+- 与 Lodi 的差异（已在方法文档中写明）：
+  - 批次变量用来源而不是 Technology（依据去批次比较 v1）；
+  - 样本回归用按样本去均值实现（数学上等价）；
+  - stress 列表不公开，用 V7 的 Stress_response 替代；
+  - DoubletFinder 未安装，需补算统一的双细胞旁证分数。

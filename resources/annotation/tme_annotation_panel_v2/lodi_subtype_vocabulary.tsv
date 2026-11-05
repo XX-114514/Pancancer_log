@@ -1,0 +1,74 @@
+Intermediatecelltype_annotation	Minorcelltype_annotation	Minorcelltype_annotation_2.0	source_locator
+TC	CD4+ TEM	CD4+ TEM	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	NK cyto	NK cyto	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	Naive mature	Naive mature	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ Tγδ	CD8+ Tγδ	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TN	CD8+ TN	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TN	CD4+ TN	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEM	CD8+ TEM	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TH1	CD4+ TH1	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	Memory IgM+	Memory IgM+	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	Prolif T	Prolif T	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8- Tγδ	CD8- Tγδ	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TREG	CD4+ S1PR1+ Treg	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ MAIT	CD8+ MAIT	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	Breg	Breg	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEX	GZMK+ Tex	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TRM	CD8+ TRM	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TREG	CD4+ TNFRSF9- Treg	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	IgG mature	IgG mature	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	LAM1	LAM1	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEX	Terminal Tex	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	NK inflam	NK inflam	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+Cancer/epithelial	Cancer/epithelial	Cancer/epithelial	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Inflam Mac	Inflam Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	MAIT	MAIT	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEMRA	CD8+ TEMRA	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	IgA immature	IgA immature	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Interm Mac	Interm Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Mono-like Mac	Mono-like Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	Memory IgM-	Memory IgM-	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	IgA mature	IgA mature	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	cDC2	cDC2	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	pDC	pDC	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TH17	CD4+ TH17	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Classical Mono	Classical Mono	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+Mast cell	Mast cell	Mast cell	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Non-classical Mono	Non-classical Mono	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+Fibroblast	Fibroblast	Fibroblast	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEX	CCL4+ Tex	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Perivasc Mac	Perivasc Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	Stalk	Stalk	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	Capillary	Capillary	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	mRegDC	mRegDC	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Prolif Mac	Prolif Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	MT Mac	MT Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	DC3	DC3	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	Tip	Tip	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Hypoxic Mac	Hypoxic Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Suppr Mac	Suppr Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Mono-like LAM	Mono-like LAM	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	Arterial	Arterial	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TREG	CD4+ TNFRSF9+ Treg	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	PCV	PCV	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	Venous	Venous	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TFH	CD4+ TFH	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	LAM2	LAM2	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	Lang-likeDC	Lang-likeDC	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	IFN Mac	IFN Mac	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	Lymphatic	Lymphatic	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TREG	CD8+ CCL5+ Treg	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	IgG immature	IgG immature	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	AXL_DC	AXL_DC	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	cDC1	cDC1	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	IFN EC	IFN EC	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEX	PKM+ Tex	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+DC	mQuiescDC	mQuiescDC	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEX	TCF7+ Tex	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	GC B	GC B	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+BC	Plasmablast	Plasmablast	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TREG	CD4+ ISG+ Treg	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+MM	Neutrophils	Neutrophils	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+EC	Prolif EC	Prolif EC	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD4+ TREG	CD4+ Prolif Treg	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
+TC	CD8+ TEX	Proliferative Tex	https://github.com/lambrechtslab/Pan-cancer_Lodietal/blob/35f054bb81e1b321718495e096171580b3bc130c/Master_files/Minor_2.0_Intermediatecelltype_annotation.csv
