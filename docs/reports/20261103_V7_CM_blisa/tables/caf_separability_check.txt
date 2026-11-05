@@ -1,0 +1,22 @@
+genes 5357
+Fibroblast_Cycling_Fibroblast_TOP2A    0.76
+Fibroblast_ECM_CAF_COL1A1              0.67
+Fibroblast_iCAF_CXCL12                 0.65
+Fibroblast_iCAF_IL6                    0.72
+Fibroblast_myCAF_ACTA2                 0.54
+Other_Fibroblast                       0.51
+                                     Fibroblast_Cycling_Fibroblast_TOP2A  Fibroblast_ECM_CAF_COL1A1  Fibroblast_iCAF_CXCL12  Fibroblast_iCAF_IL6  Fibroblast_myCAF_ACTA2  Other_Fibroblast
+Fibroblast_Cycling_Fibroblast_TOP2A                                 71.0                        6.0                     1.0                  5.0                     9.0               8.0
+Fibroblast_ECM_CAF_COL1A1                                            2.0                       69.0                     2.0                  6.0                    11.0               9.0
+Fibroblast_iCAF_CXCL12                                               1.0                        5.0                    64.0                  8.0                    14.0               7.0
+Fibroblast_iCAF_IL6                                                  3.0                        4.0                     8.0                 74.0                     2.0               9.0
+Fibroblast_myCAF_ACTA2                                               5.0                       10.0                    13.0                  1.0                    55.0              16.0
+Other_Fibroblast                                                     5.0                       12.0                     9.0                  9.0                    14.0              51.0
+                                     ACTA2  MYH11  RGS5  POSTN   FAP  CXCL12   IL6  TOP2A  MKI67
+label                                                                                           
+Fibroblast_Cycling_Fibroblast_TOP2A   1.41   0.16  0.53   1.61  0.67    0.55  0.38   0.74   0.61
+Fibroblast_ECM_CAF_COL1A1             1.26   0.28  0.49   2.06  0.89    1.17  0.08   0.18   0.15
+Fibroblast_iCAF_CXCL12                0.99   0.13  0.24   1.45  0.58    1.90  0.49   0.02   0.01
+Fibroblast_iCAF_IL6                   0.45   0.11  0.37   0.98  0.31    0.80  1.46   0.05   0.04
+Fibroblast_myCAF_ACTA2                2.95   0.88  2.02   1.81  0.81    0.94  0.21   0.06   0.04
+Other_Fibroblast                      1.78   0.51  1.33   1.41  0.34    0.68  0.23   0.13   0.09

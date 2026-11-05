@@ -1,0 +1,390 @@
+interaction_name	annotation	units_tested	units_nominal_hotspot	units_BH_hotspot
+CD86_CTLA4	Cell-Cell Contact	18	18	4
+CD80_CTLA4	Cell-Cell Contact	16	16	4
+PECAM1_PECAM1	Cell-Cell Contact	15	15	4
+CD80_CD274	Cell-Cell Contact	14	14	4
+CD86_CD28	Cell-Cell Contact	17	17	3
+SELL_CD34	Cell-Cell Contact	17	17	3
+CD80_CD28	Cell-Cell Contact	15	15	3
+CXCL12_CXCR4	Secreted Signaling	5	5	3
+CEACAM6_CEACAM6	Cell-Cell Contact	4	4	3
+CEACAM8_CEACAM6	Cell-Cell Contact	3	3	3
+CCL19_CCR7	Secreted Signaling	13	13	2
+EDN1_EDNRB	Secreted Signaling	12	12	2
+PTPRC_MRC1	Cell-Cell Contact	11	11	2
+CLEC2C_KLRB1	Cell-Cell Contact	10	10	2
+AREG_EGFR	Secreted Signaling	6	6	2
+CCL21_CCR7	Secreted Signaling	5	5	2
+LCK_CD8A_CD8B1	Cell-Cell Contact	5	5	2
+CCL13_CCR1	Secreted Signaling	4	4	2
+CCL14_CCR1	Secreted Signaling	4	4	2
+CCL8_CCR1	Secreted Signaling	4	4	2
+CSF1_CSF1R	Secreted Signaling	4	4	2
+ICOSL_CD28	Cell-Cell Contact	4	4	2
+ICOSL_CTLA4	Cell-Cell Contact	4	4	2
+AREG_EGFR_ERBB2	Secreted Signaling	3	3	2
+CCL5_CCR1	Secreted Signaling	3	3	2
+CCL5_CCR4	Secreted Signaling	3	3	2
+CCL7_CCR1	Secreted Signaling	3	3	2
+CEACAM1_CEACAM6	Cell-Cell Contact	3	3	2
+CEACAM1_CEACAM8	Cell-Cell Contact	3	3	2
+FN1_CD44	ECM-Receptor	3	3	2
+FN1_SDC1	ECM-Receptor	3	3	2
+HLA-B_CD8A	Cell-Cell Contact	3	3	2
+IL1B_IL1R1_IL1RAP	Secreted Signaling	3	3	2
+PECAM1_CD38	Cell-Cell Contact	3	3	2
+VEGFA_VEGFR1	Secreted Signaling	3	3	2
+CCL3L1_CCR1	Secreted Signaling	2	2	2
+CCL3_CCR1	Secreted Signaling	2	2	2
+CCL3_CCR5	Secreted Signaling	2	2	2
+CCL4_CCR5	Secreted Signaling	2	2	2
+CCL5_CCR5	Secreted Signaling	2	2	2
+CXCL16_CXCR6	Secreted Signaling	2	2	2
+CXCL1_CXCR2	Secreted Signaling	2	2	2
+CXCL3_CXCR2	Secreted Signaling	2	2	2
+CXCL5_CXCR2	Secreted Signaling	2	2	2
+CXCL6_CXCR2	Secreted Signaling	2	2	2
+HLA-B_CD8B	Cell-Cell Contact	2	2	2
+IL15_IL15RA_IL2RB	Secreted Signaling	2	2	2
+IL1A_IL1R1_IL1RAP	Secreted Signaling	2	2	2
+CCL5_ACKR1	Secreted Signaling	13	13	1
+CXCL10_ACKR1	Secreted Signaling	13	13	1
+CXCL6_ACKR1	Secreted Signaling	13	13	1
+CXCL9_ACKR1	Secreted Signaling	13	13	1
+PVR_TIGIT	Cell-Cell Contact	11	11	1
+CXCL2_ACKR1	Secreted Signaling	10	10	1
+HLA-DRA_CD4	Cell-Cell Contact	10	10	1
+PVR_CD226	Cell-Cell Contact	7	7	1
+CD40LG_CD40	Cell-Cell Contact	5	5	1
+CD70_CD27	Secreted Signaling	5	5	1
+CDH1_CDH1	Cell-Cell Contact	5	5	1
+CXCL13_CXCR5	Secreted Signaling	3	3	1
+FASL_FAS	Secreted Signaling	3	3	1
+CCL7_CCR2	Secreted Signaling	2	2	1
+CCL8_CCR2	Secreted Signaling	2	2	1
+IL2_IL2RA_IL2RB	Secreted Signaling	2	2	1
+IL2_IL2RB_IL2RG	Secreted Signaling	2	2	1
+CCL16_CCR1	Secreted Signaling	1	1	1
+CCL20_CCR6	Secreted Signaling	1	1	1
+CCL2_CCR2	Secreted Signaling	1	1	1
+CXCL1_CXCR1	Secreted Signaling	1	1	1
+CXCL2_CXCR2	Secreted Signaling	1	1	1
+CXCL3_CXCR1	Secreted Signaling	1	1	1
+CXCL5_CXCR1	Secreted Signaling	1	1	1
+CXCL6_CXCR1	Secreted Signaling	1	1	1
+CXCL8_CXCR1	Secreted Signaling	1	1	1
+EGF_EGFR	Secreted Signaling	1	1	1
+EGF_EGFR_ERBB2	Secreted Signaling	1	1	1
+IL1A_IL1R2	Secreted Signaling	1	1	1
+IL1B_IL1R2	Secreted Signaling	1	1	1
+PTN_SDC4	Secreted Signaling	1	1	1
+NCAM1_NCAM1	Cell-Cell Contact	5	5	0
+CD274_PDCD1	Cell-Cell Contact	4	4	0
+CD34_SELP	Cell-Cell Contact	4	4	0
+GJA5_GJA5	Cell-Cell Contact	4	4	0
+SELE_CD44	Cell-Cell Contact	4	4	0
+VEGFA_VEGFR2	Secreted Signaling	4	4	0
+CCL18_ACKR1	Secreted Signaling	3	3	0
+CCL2_ACKR1	Secreted Signaling	3	3	0
+CCL8_ACKR1	Secreted Signaling	3	3	0
+CXCL11_ACKR1	Secreted Signaling	3	3	0
+CXCL13_ACKR1	Secreted Signaling	3	3	0
+HLA-DRB1_CD4	Cell-Cell Contact	3	3	0
+NTN4_NTRK2	Cell-Cell Contact	3	3	0
+CXCL5_ACKR1	Secreted Signaling	2	2	0
+FCER2A_CR2	Cell-Cell Contact	2	2	0
+LAMC3_CD44	ECM-Receptor	2	2	0
+TNFSF9_TNFRSF9	Secreted Signaling	2	2	0
+5-HT-TPH1_SLC18A2_HTR2C	Non-protein Signaling	1	1	0
+5-HT-TPH1_SLC6A4_HTR2C	Non-protein Signaling	1	1	0
+ADM_CALCRL	Secreted Signaling	1	1	0
+ANGPT1_TEK	Secreted Signaling	1	1	0
+ANGPT2_TEK	Secreted Signaling	1	1	0
+ANGPTL2_PIRB	Secreted Signaling	1	1	0
+ANGPTL2_TLR4	Secreted Signaling	1	1	0
+ANGPTL4_CDH11	Secreted Signaling	1	1	0
+ANGPTL4_CDH5	Secreted Signaling	1	1	0
+ANGPTL4_ITGAV_ITGB3	Secreted Signaling	1	1	0
+ANGPTL4_SDC2	Secreted Signaling	1	1	0
+ANGPTL4_SDC4	Secreted Signaling	1	1	0
+ANGPTL7_PIRB	Secreted Signaling	1	1	0
+APLN_APLNR	Secreted Signaling	1	1	0
+APP_SORL1	Cell-Cell Contact	1	1	0
+APP_TNFRSF21	Cell-Cell Contact	1	1	0
+Adenosine-ADO-NT5E_SLC29A1_ADORA3	Non-protein Signaling	1	1	0
+Adenosine-ADO-NT5E_SLC29A3_ADORA3	Non-protein Signaling	1	1	0
+BMP2_BMPR1A_ACVR2A	Secreted Signaling	1	1	0
+BMP2_BMPR1A_BMPR2	Secreted Signaling	1	1	0
+BMP2_BMPR1B_ACVR2A	Secreted Signaling	1	1	0
+BMP2_BMPR1B_BMPR2	Secreted Signaling	1	1	0
+BMP5_BMPR1A_ACVR2A	Secreted Signaling	1	1	0
+BMP5_BMPR1A_BMPR2	Secreted Signaling	1	1	0
+BMP5_BMPR1B_ACVR2A	Secreted Signaling	1	1	0
+BMP5_BMPR1B_BMPR2	Secreted Signaling	1	1	0
+BMP6_BMPR1A_ACVR2A	Secreted Signaling	1	1	0
+BMP6_BMPR1A_BMPR2	Secreted Signaling	1	1	0
+BMP6_BMPR1B_ACVR2A	Secreted Signaling	1	1	0
+BMP6_BMPR1B_BMPR2	Secreted Signaling	1	1	0
+BMP7_BMPR1A_ACVR2A	Secreted Signaling	1	1	0
+BMP7_BMPR1A_BMPR2	Secreted Signaling	1	1	0
+BMP7_BMPR1B_ACVR2A	Secreted Signaling	1	1	0
+BMP7_BMPR1B_BMPR2	Secreted Signaling	1	1	0
+BTLA_TNFRSF14	Secreted Signaling	1	1	0
+C4A_C3AR1	Secreted Signaling	1	1	0
+C4A_CR2	Secreted Signaling	1	1	0
+CADM3_CADM3	Cell-Cell Contact	1	1	0
+CADM3_CADM4	Cell-Cell Contact	1	1	0
+CALCA_CALCRL	Secreted Signaling	1	1	0
+CCL15_CCR1	Secreted Signaling	1	1	0
+CCL17_CCR4	Secreted Signaling	1	1	0
+CCL22_CCR4	Secreted Signaling	1	1	0
+CCL27_CCR2	Secreted Signaling	1	1	0
+CD209_CEACAM1	Cell-Cell Contact	1	1	0
+CD40LG_ITGA2B_ITGB3	Secreted Signaling	1	1	0
+CD40LG_ITGAM_ITGB2	Secreted Signaling	1	1	0
+CD46_JAG1	Cell-Cell Contact	1	1	0
+CD55_ADGRE5	Cell-Cell Contact	1	1	0
+CD6_ALCAM	Cell-Cell Contact	1	1	0
+CD96_NECTIN1	Cell-Cell Contact	1	1	0
+CD96_PVR	Cell-Cell Contact	1	1	0
+CD99_CD99	Cell-Cell Contact	1	1	0
+CD99_PILRA	Cell-Cell Contact	1	1	0
+CDH1_ITGAE_ITGB7	Cell-Cell Contact	1	1	0
+CDH1_KLRG1	Cell-Cell Contact	1	1	0
+CDH2_CDH2	Cell-Cell Contact	1	1	0
+CDH3_CDH3	Cell-Cell Contact	1	1	0
+CDH5_CDH5	Cell-Cell Contact	1	1	0
+CLDN1_CLDN1	Cell-Cell Contact	1	1	0
+COL4A1_ADGRG6	Cell-Cell Contact	1	1	0
+COL4A1_CD44	ECM-Receptor	1	1	0
+COL4A1_SDC4	ECM-Receptor	1	1	0
+COL4A2_ADGRG6	Cell-Cell Contact	1	1	0
+COL4A2_CD44	ECM-Receptor	1	1	0
+COL4A2_SDC4	ECM-Receptor	1	1	0
+COL4A3_ADGRG6	Cell-Cell Contact	1	1	0
+COL4A3_CD44	ECM-Receptor	1	1	0
+COL4A3_SDC4	ECM-Receptor	1	1	0
+COL4A4_ADGRG6	Cell-Cell Contact	1	1	0
+COL4A4_CD44	ECM-Receptor	1	1	0
+COL4A4_SDC4	ECM-Receptor	1	1	0
+COL4A5_ADGRG6	Cell-Cell Contact	1	1	0
+COL4A5_CD44	ECM-Receptor	1	1	0
+COL4A5_SDC4	ECM-Receptor	1	1	0
+COMP_CD36	ECM-Receptor	1	1	0
+COMP_CD47	ECM-Receptor	1	1	0
+COMP_ITGAV_ITGB3	ECM-Receptor	1	1	0
+COMP_SDC4	ECM-Receptor	1	1	0
+CSF2_CSF2RA_CSF2RB	Secreted Signaling	1	1	0
+CSF3_CSF3R	Secreted Signaling	1	1	0
+CTSG_F2R	Secreted Signaling	1	1	0
+CTSG_F2RL1	Secreted Signaling	1	1	0
+CTSG_F2RL3	Secreted Signaling	1	1	0
+CTSG_FPR1	Secreted Signaling	1	1	0
+CTSG_PARD3	Secreted Signaling	1	1	0
+CXCL10_CXCR3	Secreted Signaling	1	1	0
+CXCL11_ACKR3	Secreted Signaling	1	1	0
+CXCL11_CXCR3	Secreted Signaling	1	1	0
+CXCL12_ACKR3	Secreted Signaling	1	1	0
+CXCL13_CXCR3	Secreted Signaling	1	1	0
+CXCL9_CXCR3	Secreted Signaling	1	1	0
+Cholesterol-Cholesterol-DHCR24_RORC	Non-protein Signaling	1	1	0
+Cholesterol-Cholesterol-DHCR7_RORC	Non-protein Signaling	1	1	0
+Cholesterol-Cholesterol-LIPA_RORC	Non-protein Signaling	1	1	0
+DLK1_NOTCH1	Cell-Cell Contact	1	1	0
+DLK1_NOTCH2	Cell-Cell Contact	1	1	0
+DLK1_NOTCH3	Cell-Cell Contact	1	1	0
+DLK1_NOTCH4	Cell-Cell Contact	1	1	0
+DLL1_NOTCH1	Cell-Cell Contact	1	1	0
+DLL1_NOTCH2	Cell-Cell Contact	1	1	0
+DLL1_NOTCH3	Cell-Cell Contact	1	1	0
+DLL1_NOTCH4	Cell-Cell Contact	1	1	0
+DLL4_NOTCH1	Cell-Cell Contact	1	1	0
+DLL4_NOTCH2	Cell-Cell Contact	1	1	0
+DLL4_NOTCH3	Cell-Cell Contact	1	1	0
+DLL4_NOTCH4	Cell-Cell Contact	1	1	0
+Desmosterol-Desmosterol-DHCR7_NR1H2	Non-protein Signaling	1	1	0
+Desmosterol-Desmosterol-DHCR7_NR1H3	Non-protein Signaling	1	1	0
+Dopamine-DOPA-DDC_SLC18A2_DRD2	Non-protein Signaling	1	1	0
+Dopamine-DOPA-DDC_SLC6A3_DRD2	Non-protein Signaling	1	1	0
+EDN1_EDNRA	Secreted Signaling	1	1	0
+EFNB2_EPHA4	Cell-Cell Contact	1	1	0
+EFNB2_EPHB2	Cell-Cell Contact	1	1	0
+ENTPD1_ADORA3	Cell-Cell Contact	1	1	0
+EREG_EGFR	Secreted Signaling	1	1	0
+EREG_EGFR_ERBB2	Secreted Signaling	1	1	0
+Estradiol-E2-CYP19A1_ESR2	Non-protein Signaling	1	1	0
+F11R_F11R	Cell-Cell Contact	1	1	0
+FCER2A_ITGAM_ITGB2	Cell-Cell Contact	1	1	0
+FCER2A_ITGAV_ITGB3	Cell-Cell Contact	1	1	0
+FCER2A_ITGAX_ITGB2	Cell-Cell Contact	1	1	0
+FGF1_FGFR1	Secreted Signaling	1	1	0
+FGF1_FGFR2	Secreted Signaling	1	1	0
+FGF1_FGFR3	Secreted Signaling	1	1	0
+FGF1_FGFR4	Secreted Signaling	1	1	0
+FGF7_FGFR1	Secreted Signaling	1	1	0
+FGF7_FGFR2	Secreted Signaling	1	1	0
+FLRT3_ADGRL1	Cell-Cell Contact	1	1	0
+FLRT3_FLRT3	Cell-Cell Contact	1	1	0
+GAS6_AXL	Secreted Signaling	1	1	0
+GAS6_MERTK	Secreted Signaling	1	1	0
+GDF11_TGFBR1_ACVR2A	Secreted Signaling	1	1	0
+GDF15_TGFBR2	Secreted Signaling	1	1	0
+GJA1_GJA1	Cell-Cell Contact	1	1	0
+GJA1_GJA5	Cell-Cell Contact	1	1	0
+GRN_SORT1	Secreted Signaling	1	1	0
+GZMA_F2R	Secreted Signaling	1	1	0
+GZMA_F2RL1	Secreted Signaling	1	1	0
+GZMA_F2RL3	Secreted Signaling	1	1	0
+GZMA_PARD3	Secreted Signaling	1	1	0
+Glutamate-Glu-SLC1A1_GLS_GRIK3	Non-protein Signaling	1	1	0
+HBEGF_EGFR	Secreted Signaling	1	1	0
+HBEGF_EGFR_ERBB2	Secreted Signaling	1	1	0
+HC_C5AR1	Secreted Signaling	1	1	0
+HGF_MET	Secreted Signaling	1	1	0
+HSPG2_DAG1	ECM-Receptor	1	1	0
+ICAM1_ITGAL	Cell-Cell Contact	1	1	0
+ICAM1_ITGAL_ITGB2	Cell-Cell Contact	1	1	0
+ICAM1_ITGAM_ITGB2	Cell-Cell Contact	1	1	0
+ICAM1_ITGAX_ITGB2	Cell-Cell Contact	1	1	0
+ICAM1_SPN	Cell-Cell Contact	1	1	0
+ICAM5_CD209	Cell-Cell Contact	1	1	0
+ICOSL_ICOS	Cell-Cell Contact	1	1	0
+IFNG_IFNGR1_IFNGR2	Secreted Signaling	1	1	0
+IGF1_IGF1R	Secreted Signaling	1	1	0
+IGF1_ITGA6_ITGB4	Secreted Signaling	1	1	0
+IGF1_ITGAV_ITGB3	Secreted Signaling	1	1	0
+IL16_CD4	Secreted Signaling	1	1	0
+IL21_IL21R_IL2RG	Secreted Signaling	1	1	0
+IL6_IL6R_IL6ST	Secreted Signaling	1	1	0
+INHBABB_ACVR1B_ACVR2A	Secreted Signaling	1	1	0
+INHBA_ACVR1B_ACVR2A	Secreted Signaling	1	1	0
+INHBB_ACVR1B_ACVR2A	Secreted Signaling	1	1	0
+ITGA4_ITGB7_VCAM1	Cell-Cell Contact	1	1	0
+ITGAV_ITGB3_ADGRA2	Cell-Cell Contact	1	1	0
+ITGAV_ITGB3_ADGRE2	Cell-Cell Contact	1	1	0
+ITGAV_ITGB3_ADGRE5	Cell-Cell Contact	1	1	0
+JAG1_NOTCH1	Cell-Cell Contact	1	1	0
+JAG1_NOTCH2	Cell-Cell Contact	1	1	0
+JAG1_NOTCH3	Cell-Cell Contact	1	1	0
+JAG1_NOTCH4	Cell-Cell Contact	1	1	0
+JAM1_ITGAL_ITGB2	Cell-Cell Contact	1	1	0
+JAM2_F11R	Cell-Cell Contact	1	1	0
+JAM2_JAM2	Cell-Cell Contact	1	1	0
+JAM2_JAM3	Cell-Cell Contact	1	1	0
+JAM3_F11R	Cell-Cell Contact	1	1	0
+JAM3_ITGAM_ITGB2	Cell-Cell Contact	1	1	0
+JAM3_JAM3	Cell-Cell Contact	1	1	0
+KITL_KIT	Secreted Signaling	1	1	0
+KLK6_F2R	Secreted Signaling	1	1	0
+KLK6_F2RL1	Secreted Signaling	1	1	0
+L1CAM_ITGA4_ITGB7	Cell-Cell Contact	1	1	0
+L1CAM_ITGAV_ITGB3	Cell-Cell Contact	1	1	0
+L1CAM_L1CAM	Cell-Cell Contact	1	1	0
+LAIR1_LILRB4	Cell-Cell Contact	1	1	0
+LAMA3_CD44	ECM-Receptor	1	1	0
+LAMA3_DAG1	ECM-Receptor	1	1	0
+LAMA3_ITGA6_ITGB4	ECM-Receptor	1	1	0
+LAMB3_CD44	ECM-Receptor	1	1	0
+LAMB3_DAG1	ECM-Receptor	1	1	0
+LAMB3_ITGA6_ITGB4	ECM-Receptor	1	1	0
+LAMC1_CD44	ECM-Receptor	1	1	0
+LAMC1_DAG1	ECM-Receptor	1	1	0
+LAMC1_ITGA6_ITGB4	ECM-Receptor	1	1	0
+LAMC2_CD44	ECM-Receptor	1	1	0
+LAMC2_DAG1	ECM-Receptor	1	1	0
+LAMC2_ITGA6_ITGB4	ECM-Receptor	1	1	0
+LGALS9_CD44	Secreted Signaling	1	1	0
+LGALS9_HAVCR2	Secreted Signaling	1	1	0
+LGALS9_P4HB	Secreted Signaling	1	1	0
+LIF_LIFR_IL6ST	Secreted Signaling	1	1	0
+LPAR3_ADGRE5	Cell-Cell Contact	1	1	0
+LTA_TNFRSF14	Secreted Signaling	1	1	0
+LTA_TNFRSF1A	Secreted Signaling	1	1	0
+LTA_TNFRSF1B	Secreted Signaling	1	1	0
+MPZL1_MPZL1	Cell-Cell Contact	1	1	0
+MPZ_MPZ	Cell-Cell Contact	1	1	0
+MPZ_MPZL1	Cell-Cell Contact	1	1	0
+NCAM1_FGFR1	Cell-Cell Contact	1	1	0
+NCAM1_L1CAM	Cell-Cell Contact	1	1	0
+NECTIN1_CADM3	Cell-Cell Contact	1	1	0
+NECTIN2_TIGIT	Cell-Cell Contact	1	1	0
+NPPA_NPR1	Secreted Signaling	1	1	0
+OCLN_OCLN	Cell-Cell Contact	1	1	0
+OSM_LIFR_IL6ST	Secreted Signaling	1	1	0
+PDGFA_PDGFRA	Secreted Signaling	1	1	0
+PDGFA_PDGFRB	Secreted Signaling	1	1	0
+PDGFC_PDGFRA	Secreted Signaling	1	1	0
+PGE2-PTGES3_PTGER2	Non-protein Signaling	1	1	0
+PGE2-PTGES3_PTGER4	Non-protein Signaling	1	1	0
+PGE2-PTGES_PTGER2	Non-protein Signaling	1	1	0
+PGE2-PTGES_PTGER4	Non-protein Signaling	1	1	0
+PGF2a-AKR1C3_PTGFR	Non-protein Signaling	1	1	0
+PGF2a-CBR1_PTGFR	Non-protein Signaling	1	1	0
+PGI2-PTGIS_PTGIR	Non-protein Signaling	1	1	0
+PLAU_PLAUR	Secreted Signaling	1	1	0
+POSTN_ITGAV_ITGB3	Secreted Signaling	1	1	0
+POSTN_ITGAV_ITGB5	Secreted Signaling	1	1	0
+PRNP_ADGRG6	Cell-Cell Contact	1	1	0
+PROS1_AXL	Secreted Signaling	1	1	0
+PROS1_MERTK	Secreted Signaling	1	1	0
+PTPRM_PTPRM	Cell-Cell Contact	1	1	0
+RETN_TLR4	Secreted Signaling	1	1	0
+SDC2_ADGRA2	Cell-Cell Contact	1	1	0
+SELE_CEACAM1	Cell-Cell Contact	1	1	0
+SELL_PODXL	Cell-Cell Contact	1	1	0
+SELPLG_SELE	Cell-Cell Contact	1	1	0
+SELPLG_SELL	Cell-Cell Contact	1	1	0
+SELPLG_SELP	Cell-Cell Contact	1	1	0
+SEMA4C_PLXNB2	Cell-Cell Contact	1	1	0
+SEMA4D_PLXNB2	Cell-Cell Contact	1	1	0
+SIGLEC1_SPN	Cell-Cell Contact	1	1	0
+SIRPG_CD47	Cell-Cell Contact	1	1	0
+SerotoninDopamin-5-HT-DOPA-DDC_DRD2	Non-protein Signaling	1	1	0
+SerotoninDopamin-5-HT-DOPA-DDC_HTR2C	Non-protein Signaling	1	1	0
+SerotoninDopamin-5-HT-DOPA-DDC_HTR3A	Non-protein Signaling	1	1	0
+TGFA_EGFR	Secreted Signaling	1	1	0
+TGFA_EGFR_ERBB2	Secreted Signaling	1	1	0
+TGFB2_ACVR1B_TGFBR2	Secreted Signaling	1	1	0
+TGFB2_TGFBR1_TGFBR2	Secreted Signaling	1	1	0
+TGFB3_ACVR1B_TGFBR2	Secreted Signaling	1	1	0
+TGFB3_TGFBR1_TGFBR2	Secreted Signaling	1	1	0
+THBS1_CD36	ECM-Receptor	1	1	0
+THBS1_CD47	ECM-Receptor	1	1	0
+THBS1_ITGAV_ITGB3	ECM-Receptor	1	1	0
+THBS1_SDC4	ECM-Receptor	1	1	0
+THBS2_CD36	ECM-Receptor	1	1	0
+THBS2_CD47	ECM-Receptor	1	1	0
+THBS2_ITGAV_ITGB3	ECM-Receptor	1	1	0
+THBS2_SDC4	ECM-Receptor	1	1	0
+THY1_ADGRE2	Cell-Cell Contact	1	1	0
+THY1_ADGRE5	Cell-Cell Contact	1	1	0
+THY1_ITGAM_ITGB2	Cell-Cell Contact	1	1	0
+THY1_ITGAV_ITGB3	Cell-Cell Contact	1	1	0
+THY1_ITGAX_ITGB2	Cell-Cell Contact	1	1	0
+TNC_ITGA2B_ITGB3	ECM-Receptor	1	1	0
+TNC_ITGAV_ITGB3	ECM-Receptor	1	1	0
+TNC_ITGAV_ITGB6	ECM-Receptor	1	1	0
+TNC_SDC4	ECM-Receptor	1	1	0
+TNFSF12_TNFRSF12A	Secreted Signaling	1	1	0
+TNFSF13B_TNFRSF13B	Secreted Signaling	1	1	0
+TNFSF13B_TNFRSF13C	Secreted Signaling	1	1	0
+TNFSF13B_TNFRSF17	Secreted Signaling	1	1	0
+TNFSF13_TNFRSF13B	Secreted Signaling	1	1	0
+TNFSF13_TNFRSF17	Secreted Signaling	1	1	0
+TNF_TNFRSF1B	Secreted Signaling	1	1	0
+TNXB_ITGA2B_ITGB3	ECM-Receptor	1	1	0
+TNXB_ITGAV_ITGB3	ECM-Receptor	1	1	0
+TNXB_ITGAV_ITGB6	ECM-Receptor	1	1	0
+TNXB_SDC4	ECM-Receptor	1	1	0
+VEGFC_VEGFR2	Secreted Signaling	1	1	0
+VEGFC_VEGFR2R3	Secreted Signaling	1	1	0
+VEGFC_VEGFR3	Secreted Signaling	1	1	0
+VEGFD_VEGFR2	Secreted Signaling	1	1	0
+VEGFD_VEGFR2R3	Secreted Signaling	1	1	0
+VEGFD_VEGFR3	Secreted Signaling	1	1	0
+WNT5A_FZD1	Secreted Signaling	1	1	0
+WNT5A_FZD3	Secreted Signaling	1	1	0
+WNT5A_FZD4	Secreted Signaling	1	1	0
+WNT5A_FZD6	Secreted Signaling	1	1	0
+WNT5A_MCAM	Secreted Signaling	1	1	0
+XCL2_XCR1	Secreted Signaling	1	1	0
