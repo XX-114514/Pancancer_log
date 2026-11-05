@@ -1,0 +1,210 @@
+[
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "alveolar_AT2",
+    "genes": "SFTPC,SFTPB,SFTPA1,NAPSA,LAMP3",
+    "role": "tissue",
+    "note": "lung"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "alveolar_AT1",
+    "genes": "AGER,CAV1,RTKN2,EMP2",
+    "role": "tissue",
+    "note": "lung"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "club_secretory",
+    "genes": "SCGB1A1,SCGB3A1,BPIFB1,MSMB",
+    "role": "tissue",
+    "note": "airway; MSMB also prostate"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "ciliated",
+    "genes": "FOXJ1,CAPS,TPPP3,RSPH1",
+    "role": "tissue",
+    "note": "airway / fallopian"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "colonocyte",
+    "genes": "CA1,CA2,SLC26A3,CEACAM7,GUCA2A",
+    "role": "tissue",
+    "note": "colon"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "goblet",
+    "genes": "MUC2,TFF3,SPINK4,CLCA1,FCGBP",
+    "role": "tissue",
+    "note": "intestine"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "intestinal_stem",
+    "genes": "LGR5,OLFM4,ASCL2,SMOC2",
+    "role": "tissue",
+    "note": "intestine"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "gastric_pit_mucous",
+    "genes": "MUC5AC,TFF1,GKN1,GKN2,MUC6",
+    "role": "tissue",
+    "note": "stomach"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "gastric_chief_parietal",
+    "genes": "PGC,PGA3,LIPF,ATP4A,GIF",
+    "role": "tissue",
+    "note": "stomach"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "enteroendocrine_neuroendocrine",
+    "genes": "CHGA,CHGB,SYP,SCG2,PCSK1N",
+    "role": "tissue",
+    "note": "also PanNET tumour cells"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "pancreatic_acinar",
+    "genes": "PRSS1,CPA1,CTRB1,CELA3A,PNLIP",
+    "role": "tissue",
+    "note": "ambient-prone in pancreas"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "pancreatic_ductal",
+    "genes": "CFTR,KRT19,SPP1,MMP7,SOX9",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "islet",
+    "genes": "INS,GCG,SST,PPY,TTR",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "cholangiocyte",
+    "genes": "KRT7,KRT19,SOX9,SPP1,ANXA4",
+    "role": "tissue",
+    "note": "liver"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "breast_luminal",
+    "genes": "KRT18,ESR1,PGR,ANKRD30A,AZGP1",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "breast_basal_myoepithelial",
+    "genes": "KRT5,KRT14,TP63,ACTA2,OXTR",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "prostate_luminal",
+    "genes": "KLK3,KLK2,AR,NKX3-1,ACPP",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "prostate_basal_club",
+    "genes": "KRT5,KRT15,TP63,PIGR,LTF",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "urothelial",
+    "genes": "UPK1B,UPK2,UPK3A,KRT13,GATA3",
+    "role": "tissue",
+    "note": "bladder / UTUC"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "kidney_tubule",
+    "genes": "UMOD,SLC34A1,LRP2,CUBN,SLC12A1",
+    "role": "tissue",
+    "note": "PT/TAL"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "kidney_collecting_podocyte",
+    "genes": "AQP2,NPHS1,NPHS2,PODXL",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "thyroid_follicular",
+    "genes": "TG,TPO,TSHR,PAX8",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "mullerian_secretory",
+    "genes": "PAX8,OVGP1,MSLN,WT1",
+    "role": "tissue",
+    "note": "ovary / fallopian / endometrium"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "endometrial",
+    "genes": "PAEP,MSX1,SOX17,MMP26",
+    "role": "tissue",
+    "note": ""
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "squamous_suprabasal",
+    "genes": "KRT4,KRT13,SPRR1A,SPRR3,CRNN",
+    "role": "tissue",
+    "note": "oesophagus / HNSC / cervix"
+  },
+  {
+    "tier": "L2",
+    "compartment": "epithelial",
+    "label": "keratinocyte",
+    "genes": "KRT1,KRT10,LOR,FLG",
+    "role": "tissue",
+    "note": "skin"
+  }
+]

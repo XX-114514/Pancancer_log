@@ -1,0 +1,86 @@
+{
+  "alveolar_AT2": [
+    "Epi_AT2"
+  ],
+  "alveolar_AT1": [
+    "Epi_AT1"
+  ],
+  "club_secretory": [
+    "Epi_club"
+  ],
+  "ciliated": [
+    "Epi_ciliated"
+  ],
+  "colonocyte": [
+    "Epi_colonocyte_like"
+  ],
+  "goblet": [
+    "Epi_intestinal_goblet_like"
+  ],
+  "intestinal_stem": [
+    "Epi_intestinal_stem_like"
+  ],
+  "gastric_pit_mucous": [
+    "Epi_gastric_pit_like",
+    "Epi_gastric_gland_mucous_like"
+  ],
+  "gastric_chief_parietal": [
+    "Epi_gastric_chief_like",
+    "Epi_gastric_parietal_like"
+  ],
+  "enteroendocrine_neuroendocrine": [
+    "Epi_neuroendocrine_program"
+  ],
+  "pancreatic_acinar": [
+    "Epi_pancreatic_acinar_like"
+  ],
+  "pancreatic_ductal": [
+    "Epi_pancreatic_duct_like"
+  ],
+  "islet": [
+    "Epi_pancreatic_islet_like"
+  ],
+  "cholangiocyte": [
+    "Epi_cholangiocyte_like"
+  ],
+  "breast_luminal": [
+    "Epi_breast_LumHR_like",
+    "Epi_breast_LumSec_like"
+  ],
+  "breast_basal_myoepithelial": [
+    "Epi_breast_basal_myo_like"
+  ],
+  "prostate_luminal": [
+    "Epi_prostate_luminal_like"
+  ],
+  "prostate_basal_club": [
+    "Epi_prostate_basal_like",
+    "Epi_prostate_club_like"
+  ],
+  "urothelial": [
+    "Epi_urothelial_differentiated_like"
+  ],
+  "kidney_tubule": [
+    "Epi_renal_tubular_like",
+    "Epi_kidney_TAL_like"
+  ],
+  "kidney_collecting_podocyte": [
+    "Epi_kidney_principal_like",
+    "Epi_kidney_podocyte_like"
+  ],
+  "thyroid_follicular": [
+    "Epi_thyroid_follicular_like"
+  ],
+  "mullerian_secretory": [
+    "Epi_fallopian_secretory_like"
+  ],
+  "endometrial": [
+    "Epi_endometrial_secretory_like"
+  ],
+  "squamous_suprabasal": [
+    "Epi_squamous_suprabasal_like"
+  ],
+  "keratinocyte": [
+    "Epi_keratinocyte_differentiated_like"
+  ]
+}

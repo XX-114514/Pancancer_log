@@ -1,0 +1,5404 @@
+{
+  "schema_version": "1.0",
+  "resource_version": "v7_epithelial_extension_v1",
+  "status": "evidence_registry_not_validated_cell_classifier",
+  "policy": {
+    "final_label_assignment": "reviewed multi-evidence decision; never top signature alone",
+    "unknown_is_not_negative": true,
+    "malignancy_separate": true,
+    "de_profile": "Lodi-like RNA Wilcoxon min.pct .10, min.diff.pct .25, logfc .25; settings describe detection tests, not identity thresholds",
+    "coverage": "source-specific measurements; no zero-fill negatives",
+    "UCell": "optional official implementation, complete measured signature and full source gene universe; no common acceptance cutoff",
+    "origin_assignment": "Context compatibility, not forced organ prediction. Collection site and primary organ remain distinct.",
+    "benign_assignment": "Never inferred from a normal-reference panel. Use independent CNV/genetic/pathology evidence.",
+    "source27_claim": "Source file contains 26 tissue rows; no invented 27th row."
+  },
+  "references": [
+    {
+      "id": "Tirosh2016",
+      "title": "Dissecting the multicellular ecosystem of metastatic melanoma",
+      "url": "https://shaleklab.com/wp-content/uploads/2024/03/Tirosh-et-al-Science-2016.pdf",
+      "verified_scope": "正文 MITF-high 程序含 TYR/PMEL/MLANA；AXL-high 可降低分化程序，不可据低表达排除黑色素来源"
+    },
+    {
+      "id": "Rao2017",
+      "title": "Pathologically expanded peripheral T helper cell subset drives B cells in rheumatoid arthritis",
+      "url": "https://www.nature.com/articles/nature20810",
+      "verified_scope": "人体RA的PD-1hi CXCR5低/阴性CD4群、CXCL13/IL21/ICOS/MAF及功能实验；TME仅借鉴Tph-like候选逻辑"
+    },
+    {
+      "id": "Aizarani2019",
+      "title": "A Human Liver Cell Atlas reveals Heterogeneity and Epithelial Progenitors",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6687507/",
+      "verified_scope": "Fig3正文：ALB/ASGR1/HNF4A/HP肝细胞方向；KRT19/CFTR胆管方向；不能以EPCAM独判"
+    },
+    {
+      "id": "Henry2018",
+      "title": "A Cellular Anatomy of the Normal Adult Human Prostate and Prostatic Urethra",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411034/",
+      "verified_scope": "正文Fig4及DEG：KLK3/ACPP(Mapped ACP3)/MSMB、KLK2；正常人前列腺参考，不能判恶性"
+    },
+    {
+      "id": "Lodi2025",
+      "title": "Decoding tumor heterogeneity",
+      "url": "https://github.com/lambrechtslab/Pan-cancer_Lodietal",
+      "verified_scope": "作者 T/B/DC/EC/MM 代码；谱系内 QC/重建、RNA DEG、人工命名；MarkersToAdd 占位，非完整分类器"
+    },
+    {
+      "id": "Qian2020",
+      "title": "A pan-cancer blueprint",
+      "url": "https://www.qian-lab.org/assets/pdf/single-cell_pan-cancer_blueprint_2020.pdf",
+      "verified_scope": "正文/Methods 与已取得 S5；共享/组织特异谱系，DC 跨父类召回；不把 top-DEG 表当自动 panel"
+    },
+    {
+      "id": "Chu2023",
+      "title": "Pan-cancer T cell atlas",
+      "url": "https://www.nature.com/articles/s41591-023-02371-y",
+      "verified_scope": "作者代码 Coolgenome/TCM、Table S5-S10；CD4/CD8/非常规 T 与独立功能签名"
+    },
+    {
+      "id": "Ma2025",
+      "title": "Pan-Cancer Analyses Refine the Single-Cell Portrait of Tumor-Infiltrating Dendritic Cells",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12485386/",
+      "verified_scope": "Methods Cell clustering and annotation；正文 cDC1/cDC2/pDC/LAMP3 组合及亚群比较"
+    },
+    {
+      "id": "YangB2024",
+      "title": "Pan-cancer single-cell dissection reveals phenotypically distinct B cell subtypes",
+      "url": "https://doi.org/10.1016/j.cell.2024.06.038",
+      "verified_scope": "已核实 GEO GSE233236 的20标签；完整作者判定 panel/代码未取得，不能称精确复制"
+    },
+    {
+      "id": "YangNK2019",
+      "title": "Heterogeneity of human bone marrow and blood natural killer cells",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6718415/",
+      "verified_scope": "NK 状态和 KLRC2-associated adaptive 表型；非泛癌全组织真值"
+    },
+    {
+      "id": "Schlums2015",
+      "title": "Cytomegalovirus Infection Drives Adaptive Epigenetic Diversification of NK Cells",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4612277/",
+      "verified_scope": "adaptive NK 的部分 FCER1G/SYK/SH2D1B/ZBTB16 降低；不是 universal negative gate"
+    },
+    {
+      "id": "Bjorklund2016",
+      "title": "The heterogeneity of human CD127+ innate lymphoid cells",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26878113/",
+      "verified_scope": "人体 ILC1/2/3 与 NK 分支；原研究材料有限，分型组合是本项目整理"
+    },
+    {
+      "id": "Tauber2023",
+      "title": "Landscape of mast cell populations across organs in mice and humans",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37462672/",
+      "verified_scope": "人体/小鼠分开解释；不直接将小鼠亚型转为人体标签"
+    },
+    {
+      "id": "Buechler2021",
+      "title": "Cross-tissue organization of the fibroblast lineage",
+      "url": "https://www.nature.com/articles/s41586-021-03549-5",
+      "verified_scope": "跨物种/跨组织 fibroblast；人类分支须本数据验证，不照搬鼠签名"
+    },
+    {
+      "id": "Velten2017",
+      "title": "Human haematopoietic stem cell lineage commitment is a continuous process",
+      "url": "https://doi.org/10.1038/ncb3493",
+      "verified_scope": "人体 HSPC 连续分化逻辑；不能由少量RNA证明正常祖细胞功能或多潜能"
+    },
+    {
+      "id": "Travaglini2020",
+      "title": "A molecular cell atlas of the human lung",
+      "url": "https://www.nature.com/articles/s41586-020-2922-4",
+      "verified_scope": "肺内 epithelial/stromal 分型，不能跨器官直接套用"
+    },
+    {
+      "id": "Neftel2019",
+      "title": "An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6703186/",
+      "verified_scope": "肿瘤神经发育样状态与正常身份分开；不以 SOX2/NES 证明正常祖细胞"
+    },
+    {
+      "id": "MDSC2016",
+      "title": "Recommendations for myeloid-derived suppressor cell nomenclature",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4935811/",
+      "verified_scope": "MDSC 功能性命名边界；RNA 候选不等于已证明抑制功能"
+    },
+    {
+      "id": "UCell2021",
+      "title": "UCell: Robust and scalable single-cell gene signature scoring",
+      "url": "https://doi.org/10.1016/j.csbj.2021.06.043",
+      "verified_scope": "官方秩评分辅助；不是谱系概率或统一阈值分类器"
+    },
+    {
+      "id": "UCellDocs",
+      "title": "Official UCell vignette",
+      "url": "https://www.bioconductor.org/packages/release/bioc/vignettes/UCell/inst/doc/UCell_vignette_basic.html",
+      "verified_scope": "官方 ScoreSignatures_UCell；版本/排名参数/全基因宇宙必须记录"
+    },
+    {
+      "id": "SeuratDocs",
+      "title": "FindAllMarkers official documentation",
+      "url": "https://satijalab.org/seurat/reference/findallmarkers",
+      "verified_scope": "RNA data 上 Wilcoxon，avg_log2FC 与旧 mean-log 差不同；默认校正不冒称 BH"
+    },
+    {
+      "id": "Burclaff2022",
+      "title": "A Proximal-to-Distal Survey of Healthy Adult Human Small Intestine and Colon Epithelium by Single-Cell Transcriptomics",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+      "verified_scope": "Human intestine; ISC, TA, Paneth and goblet distinctions; SMOC2 is not an exclusive human ISC marker."
+    },
+    {
+      "id": "HumanColonoid2023",
+      "title": "Physiological hypoxia improves growth and functional differentiation of human intestinal epithelial organoids",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9922616/",
+      "verified_scope": "Human colonoids, Fig. 4 absorptive markers; culture context, not an in-vivo pan-cancer classifier."
+    },
+    {
+      "id": "GastricCorpus2023",
+      "title": "Spatially resolved expression landscape and gene-regulatory network of human gastric corpus epithelium",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+      "verified_scope": "Human gastric corpus; figure marker lists distinguish surface, chief, parietal and endocrine populations."
+    },
+    {
+      "id": "GastricMucins2004",
+      "title": "Aberrant epithelial expression of trefoil family factor 2 and mucin 6 in Helicobacter pylori infected gastric antrum, incisura, and body and its association with antralisation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1770377/",
+      "verified_scope": "Human biopsy histology; MUC6/TFF2 glandular mucus, including disease-related redistribution; not a unique normal neck identity."
+    },
+    {
+      "id": "Muraro2016",
+      "title": "A Single-Cell Transcriptome Atlas of the Human Pancreas",
+      "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+      "verified_scope": "Human donor pancreas; Fig. 1D and Results pp. 387–388. Isolated islets with exocrine cells; not a TME abundance reference."
+    },
+    {
+      "id": "Kumar2023",
+      "title": "A spatially resolved single-cell genomic atlas of the adult human breast",
+      "url": "https://escholarship.org/content/qt81t478n0/qt81t478n0.pdf",
+      "verified_scope": "Normal human breast LumHR, LumSec and basal/myoepithelial; Results/Fig. 3 and spatial validation; KRT5 can occur in LumSec-basal states."
+    },
+    {
+      "id": "Yu2019",
+      "title": "Single-Cell Transcriptomic Map of the Human and Mouse Bladders",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6830796/",
+      "verified_scope": "Use human urothelial basal/intermediate/umbrella compartments; UPK-rich differentiated cells do not cover every basal cell."
+    },
+    {
+      "id": "KidneyProtein2014",
+      "title": "The Kidney Transcriptome and Proteome Defined by Transcriptomics and Antibody-Based Profiling",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0116125",
+      "verified_scope": "Human tissue RNA/protein localization, Table 1 and Fig. 4; not a single-cell clustering algorithm."
+    },
+    {
+      "id": "Lake2023",
+      "title": "An atlas of healthy and injured cell states and niches in the human kidney",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+      "verified_scope": "Human nephron segmentation and injury states; Fig. 3d p.589 marker labels in publisher PDF https://www.nature.com/articles/s41586-023-05769-3.pdf; adaptive states may lose mature markers."
+    },
+    {
+      "id": "ThyroidOrganoid2021",
+      "title": "Adult mouse and human organoids derived from thyroid follicular cells and modeling of Graves’ hyperthyroidism",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8713972/",
+      "verified_scope": "Human primary tissue/organoid comparisons in Fig. 2C,D and Fig. 4B,D–F; single-cell Fig. 3 is mouse and is not used as a human scRNA validation."
+    },
+    {
+      "id": "FallopianAtlas",
+      "title": "A cell atlas of the human fallopian tube throughout the menstrual cycle and menopause",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11698969/",
+      "verified_scope": "Human fallopian secretory epithelium; PAX8/KRT7 and OVGP1, with menstrual/menopause dependence; not all Müllerian organs."
+    },
+    {
+      "id": "GarciaAlonso2021",
+      "title": "Mapping the temporal and spatial dynamics of the human endometrium in vivo and in vitro",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8648563/",
+      "verified_scope": "Human endometrium: PAEP secretory phase, SCGB2A2 glandular, FOXJ1/PIFO ciliated; does not support a universal endometrial label from PAEP."
+    },
+    {
+      "id": "Esophagus2022",
+      "title": "Single-cell RNA-Seq of human esophageal epithelium in homeostasis and allergic inflammation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9208762/",
+      "verified_scope": "Human suprabasal differentiation: KRT4/KRT13; an epithelial differentiation direction, not a unique organ barcode."
+    },
+    {
+      "id": "EsophagusMapping2022",
+      "title": "Mapping the adult human esophagus in vivo and in vitro",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9720751/",
+      "verified_scope": "Human esophagus: KRT4 mid differentiation, CRNN terminal differentiation; stages need not coexpress in every cell."
+    },
+    {
+      "id": "Cheng2018",
+      "title": "Transcriptional Programming of Normal and Inflamed Human Epidermis at Single-Cell Resolution",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6367716/",
+      "verified_scope": "Human epidermis: KRT1/KRT10 spinous and LOR/FLG granular; distinct differentiation stages."
+    }
+  ],
+  "panels": [
+    {
+      "id": "T",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "CD3D",
+          "CD3E",
+          "CD3G"
+        ],
+        [
+          "TRAC",
+          "TRBC1",
+          "TRBC2",
+          "TRDC",
+          "TRGC1",
+          "TRGC2"
+        ]
+      ],
+      "positive_genes": [
+        "CD3D",
+        "CD3E",
+        "CD3G",
+        "TRAC",
+        "TRBC1",
+        "TRBC2",
+        "TRDC",
+        "TRGC1",
+        "TRGC2",
+        "LCK",
+        "CD247",
+        "CD2"
+      ],
+      "contrast_review_panels": [
+        "NK",
+        "B",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CD3与TCR组件分开；αβ/γδ均可；低覆盖不作阴性。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "NK",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "NCR1",
+          "KLRD1",
+          "KLRF1"
+        ],
+        [
+          "NKG7",
+          "GNLY",
+          "PRF1"
+        ]
+      ],
+      "positive_genes": [
+        "NCR1",
+        "KLRD1",
+        "KLRF1",
+        "NKG7",
+        "GNLY",
+        "PRF1",
+        "FCGR3A",
+        "NCAM1",
+        "XCL1",
+        "XCL2"
+      ],
+      "contrast_review_panels": [
+        "T",
+        "ILC",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangNK2019",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "NK受体与效应联合；TCR/CD3另核，绝不由细胞毒性直接定NK。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "IL7R",
+          "IL1R1"
+        ],
+        [
+          "GATA3",
+          "RORC",
+          "RORA",
+          "TBX21"
+        ]
+      ],
+      "positive_genes": [
+        "IL7R",
+        "IL1R1",
+        "GATA3",
+        "RORC",
+        "RORA",
+        "TBX21",
+        "KIT",
+        "KLRB1",
+        "PTGDR2",
+        "IL1RL1"
+      ],
+      "contrast_review_panels": [
+        "T",
+        "NK",
+        "Mast",
+        "Basophil"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "仅ILC候选入口；必须检查Lin/TCR与NK/Mast边界，不能单靠IL7R。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "CD79A",
+          "CD79B"
+        ],
+        [
+          "MS4A1",
+          "CD19",
+          "CD22",
+          "CD37",
+          "BANK1"
+        ]
+      ],
+      "positive_genes": [
+        "CD79A",
+        "CD79B",
+        "MS4A1",
+        "CD19",
+        "CD22",
+        "CD37",
+        "BANK1",
+        "CD74",
+        "CD40"
+      ],
+      "contrast_review_panels": [
+        "ASC",
+        "T",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "成熟B组合；CD79A/CD37与ASC共享。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ASC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "MZB1",
+          "DERL3"
+        ],
+        [
+          "PRDM1",
+          "XBP1",
+          "SDC1",
+          "TNFRSF17"
+        ]
+      ],
+      "positive_genes": [
+        "MZB1",
+        "DERL3",
+        "PRDM1",
+        "XBP1",
+        "SDC1",
+        "TNFRSF17",
+        "JCHAIN",
+        "CD38"
+      ],
+      "contrast_review_panels": [
+        "B",
+        "DC_pDC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "抗体分泌细胞入口；不由单个XBP1或JCHAIN判浆细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Myeloid",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "LYZ",
+          "LST1"
+        ],
+        [
+          "SPI1",
+          "TYROBP",
+          "FCER1G"
+        ]
+      ],
+      "positive_genes": [
+        "LYZ",
+        "LST1",
+        "SPI1",
+        "TYROBP",
+        "FCER1G",
+        "CSF1R",
+        "CTSD"
+      ],
+      "contrast_review_panels": [
+        "T",
+        "B"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "广义髓系入口而非单核亚型；部分DC/粒细胞须并行召回。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Monocyte",
+      "axis": "branch",
+      "parent_any": [
+        "Myeloid"
+      ],
+      "core_groups": [
+        [
+          "FCN1",
+          "CD14",
+          "VCAN"
+        ],
+        [
+          "LYZ",
+          "LST1",
+          "LILRB1"
+        ]
+      ],
+      "positive_genes": [
+        "FCN1",
+        "CD14",
+        "VCAN",
+        "LYZ",
+        "LST1",
+        "LILRB1",
+        "S100A8",
+        "S100A9",
+        "CTSD"
+      ],
+      "contrast_review_panels": [
+        "Macrophage",
+        "DC_cDC2",
+        "DC_DC3",
+        "Neutrophil"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "单核/巨噬连续谱；必须与粒细胞/DC比较。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Macrophage",
+      "axis": "branch",
+      "parent_any": [
+        "Myeloid"
+      ],
+      "core_groups": [
+        [
+          "C1QA",
+          "C1QB",
+          "C1QC",
+          "APOE"
+        ],
+        [
+          "CSF1R",
+          "CD68",
+          "MSR1",
+          "MARCO"
+        ]
+      ],
+      "positive_genes": [
+        "C1QA",
+        "C1QB",
+        "C1QC",
+        "APOE",
+        "CSF1R",
+        "CD68",
+        "MSR1",
+        "MARCO",
+        "APOC1",
+        "FOLR2"
+      ],
+      "contrast_review_panels": [
+        "Monocyte",
+        "DC_cDC2"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "允许炎症/单核来源群低C1Q；不得以此筛掉整个亚群。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "FLT3",
+          "HLA-DRA",
+          "CD74"
+        ]
+      ],
+      "positive_genes": [
+        "FLT3",
+        "HLA-DRA",
+        "CD74",
+        "CLEC9A",
+        "XCR1",
+        "CD1C",
+        "FCER1A",
+        "LILRA4",
+        "CLEC4C"
+      ],
+      "contrast_review_panels": [
+        "Monocyte",
+        "Macrophage",
+        "B",
+        "ASC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "DC父身份由下列分支并行核查后汇总；该粗模块不是所有DC必需的硬AND。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mast",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "TPSAB1",
+          "TPSB2",
+          "CPA3"
+        ],
+        [
+          "KIT",
+          "MS4A2",
+          "HDC"
+        ]
+      ],
+      "positive_genes": [
+        "TPSAB1",
+        "TPSB2",
+        "CPA3",
+        "KIT",
+        "MS4A2",
+        "HDC",
+        "HPGDS",
+        "LTC4S"
+      ],
+      "contrast_review_panels": [
+        "Basophil",
+        "HSPC",
+        "ILC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Tauber2023",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "先确认Mast；无稳定亚型时停大类，HDC/LTC4S不证明激活。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Basophil",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "IL3RA",
+          "FCER1A"
+        ],
+        [
+          "CLC",
+          "MS4A2",
+          "HDC"
+        ]
+      ],
+      "positive_genes": [
+        "IL3RA",
+        "FCER1A",
+        "CLC",
+        "MS4A2",
+        "HDC",
+        "ENPP3"
+      ],
+      "contrast_review_panels": [
+        "Mast",
+        "DC_pDC",
+        "Eosinophil"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "basophil邻近谱系候选，原Mast/Basophil_like移出；须完整对照。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neutrophil",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "CSF3R",
+          "FCGR3B"
+        ],
+        [
+          "S100A8",
+          "S100A9",
+          "FPR1"
+        ]
+      ],
+      "positive_genes": [
+        "CSF3R",
+        "FCGR3B",
+        "S100A8",
+        "S100A9",
+        "FPR1",
+        "CXCR2",
+        "CEACAM8"
+      ],
+      "contrast_review_panels": [
+        "Monocyte",
+        "HSPC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "成熟与未成熟分支并查；LYZ不是髓系污染。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Eosinophil",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "EPX",
+          "PRG2"
+        ],
+        [
+          "CLC",
+          "SIGLEC8",
+          "IL5RA"
+        ]
+      ],
+      "positive_genes": [
+        "EPX",
+        "PRG2",
+        "CLC",
+        "SIGLEC8",
+        "IL5RA"
+      ],
+      "contrast_review_panels": [
+        "Basophil",
+        "Mast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "嗜酸粒细胞与basophil/Mast组合对照；CLC非独占。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epithelial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "KRT8",
+          "KRT18",
+          "KRT19",
+          "KRT7"
+        ],
+        [
+          "EPCAM",
+          "KRT5",
+          "KRT14"
+        ]
+      ],
+      "positive_genes": [
+        "KRT8",
+        "KRT18",
+        "KRT19",
+        "KRT7",
+        "EPCAM",
+        "KRT5",
+        "KRT14",
+        "MUC1"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial",
+        "Melanocytic",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "允许组织/EMT例外；恶性另轴，不含melanocyte。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Endothelial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "PECAM1",
+          "CDH5"
+        ],
+        [
+          "VWF",
+          "KDR",
+          "FLT1",
+          "CLDN5"
+        ]
+      ],
+      "positive_genes": [
+        "PECAM1",
+        "CDH5",
+        "VWF",
+        "KDR",
+        "FLT1",
+        "CLDN5",
+        "RAMP2",
+        "EMCN",
+        "ESAM"
+      ],
+      "contrast_review_panels": [
+        "Pericyte",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "血管/淋巴分支并查，不要求所有亚型表达VWF。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Fibroblast",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "DCN",
+          "LUM",
+          "DPT"
+        ],
+        [
+          "COL1A1",
+          "COL1A2",
+          "COL3A1",
+          "PDGFRA"
+        ]
+      ],
+      "positive_genes": [
+        "DCN",
+        "LUM",
+        "DPT",
+        "COL1A1",
+        "COL1A2",
+        "COL3A1",
+        "PDGFRA"
+      ],
+      "contrast_review_panels": [
+        "Pericyte",
+        "Smooth_muscle",
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Buechler2021",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "先证实fibroblast；肿瘤来源才能考虑CAF名称。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Pericyte",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "RGS5",
+          "CSPG4"
+        ],
+        [
+          "PDGFRB",
+          "MCAM",
+          "NOTCH3"
+        ]
+      ],
+      "positive_genes": [
+        "RGS5",
+        "CSPG4",
+        "PDGFRB",
+        "MCAM",
+        "NOTCH3",
+        "COX4I2"
+      ],
+      "contrast_review_panels": [
+        "Smooth_muscle",
+        "Fibroblast",
+        "Endothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "mural谱系，不是fibroblast必然子型。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Smooth_muscle",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "MYH11"
+        ],
+        [
+          "CNN1",
+          "DES",
+          "TAGLN",
+          "ACTA2"
+        ]
+      ],
+      "positive_genes": [
+        "MYH11",
+        "CNN1",
+        "DES",
+        "TAGLN",
+        "ACTA2"
+      ],
+      "contrast_review_panels": [
+        "Pericyte",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "收缩程序不能独立证明SMC；MYH11及完整背景联合。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mesothelial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "MSLN",
+          "UPK3B"
+        ],
+        [
+          "CALB2",
+          "KRT8",
+          "KRT18",
+          "KRT19"
+        ]
+      ],
+      "positive_genes": [
+        "MSLN",
+        "UPK3B",
+        "CALB2",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ],
+      "contrast_review_panels": [
+        "Epithelial",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "独立邻近谱系，来源及腔面背景需要核查。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Erythroid",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "GYPA",
+          "AHSP",
+          "SLC4A1"
+        ],
+        [
+          "GATA1",
+          "KLF1",
+          "HBB",
+          "HBA1",
+          "HBA2"
+        ]
+      ],
+      "positive_genes": [
+        "GYPA",
+        "AHSP",
+        "SLC4A1",
+        "GATA1",
+        "KLF1",
+        "HBB",
+        "HBA1",
+        "HBA2",
+        "TFRC",
+        "ALAS2"
+      ],
+      "contrast_review_panels": [
+        "Megakaryocytic",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "不能只用HB；分化阶段可选，不强制亚型。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Megakaryocytic",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "GP9",
+          "ITGA2B",
+          "GP1BA"
+        ],
+        [
+          "PF4",
+          "PPBP",
+          "TUBB1"
+        ]
+      ],
+      "positive_genes": [
+        "GP9",
+        "ITGA2B",
+        "GP1BA",
+        "PF4",
+        "PPBP",
+        "TUBB1",
+        "RGS18",
+        "NRGN"
+      ],
+      "contrast_review_panels": [
+        "Erythroid",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "巨核/血小板共享入口；附着、环境RNA、核/复杂度另查。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "SPINK2",
+          "HLF",
+          "MEIS1"
+        ],
+        [
+          "CD34",
+          "PROM1",
+          "GATA2"
+        ]
+      ],
+      "positive_genes": [
+        "SPINK2",
+        "HLF",
+        "MEIS1",
+        "CD34",
+        "PROM1",
+        "GATA2",
+        "HOPX"
+      ],
+      "contrast_review_panels": [
+        "Endothelial",
+        "Fibroblast",
+        "Myeloid",
+        "T"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "造血祖细胞候选；AML不能自动叫正常HSC，成熟谱系排查。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neural_glial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "SOX10",
+          "PLP1",
+          "MPZ",
+          "SLC1A3",
+          "MBP",
+          "MOG",
+          "RBFOX3",
+          "SNAP25"
+        ]
+      ],
+      "positive_genes": [
+        "SOX10",
+        "PLP1",
+        "MPZ",
+        "SLC1A3",
+        "MBP",
+        "MOG",
+        "RBFOX3",
+        "SNAP25",
+        "S100B"
+      ],
+      "contrast_review_panels": [
+        "Melanocytic"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Neftel2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "仅广义神经/胶质入口，以Schwann/少突/神经元等分支OR复核；恶性独立。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Melanocytic",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "PMEL",
+          "MLANA"
+        ],
+        [
+          "TYR",
+          "DCT"
+        ]
+      ],
+      "positive_genes": [
+        "PMEL",
+        "MLANA",
+        "TYR",
+        "DCT",
+        "SOX10",
+        "MITF"
+      ],
+      "contrast_review_panels": [
+        "Neural_glial",
+        "Epithelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Tirosh2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "从Neural/Epithelial移出；MITF-low/AXL-high肿瘤可弱表达，低检出不排除来源；恶性另判。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_CD4",
+      "axis": "branch",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "CD4"
+        ]
+      ],
+      "positive_genes": [
+        "CD4",
+        "IL7R",
+        "LTB"
+      ],
+      "contrast_review_panels": [
+        "T_CD8",
+        "T_gd",
+        "T_MAIT"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CD4 RNA掉失时保持T分支待核；IL7R不代替CD4。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_CD8",
+      "axis": "branch",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "CD8B"
+        ],
+        [
+          "CD8A"
+        ]
+      ],
+      "positive_genes": [
+        "CD8B",
+        "CD8A"
+      ],
+      "contrast_review_panels": [
+        "T_CD4",
+        "T_gd",
+        "T_MAIT",
+        "NK"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CD8A/B分开检查；CD8A也见NK；不要求每个细胞同时检出。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_Treg",
+      "axis": "branch",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "FOXP3"
+        ],
+        [
+          "IL2RA",
+          "IKZF2",
+          "IKZF4"
+        ]
+      ],
+      "positive_genes": [
+        "FOXP3",
+        "IL2RA",
+        "IKZF2",
+        "IKZF4",
+        "CTLA4",
+        "TIGIT",
+        "TNFRSF18",
+        "TNFRSF4"
+      ],
+      "contrast_review_panels": [
+        "T_Tfh_like",
+        "T_Th1_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "FOXP3与配套调节组件；先T身份，不以TIGIT/CTLA4或模型多数票独定Treg。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_Tfh_like",
+      "axis": "branch",
+      "parent_any": [
+        "T_CD4"
+      ],
+      "core_groups": [
+        [
+          "BCL6",
+          "CXCR5"
+        ],
+        [
+          "CXCL13",
+          "ICOS"
+        ]
+      ],
+      "positive_genes": [
+        "BCL6",
+        "CXCR5",
+        "CXCL13",
+        "ICOS",
+        "PDCD1",
+        "TOX2",
+        "SH2D1A"
+      ],
+      "contrast_review_panels": [
+        "T_Treg",
+        "T_Tph_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "保留Tfh-like；与Treg/Tph/激活程序比较，不凭CXCL13命名Tfh。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_Tph_like",
+      "axis": "branch",
+      "parent_any": [
+        "T_CD4"
+      ],
+      "core_groups": [
+        [
+          "CXCL13"
+        ],
+        [
+          "PDCD1",
+          "ICOS"
+        ]
+      ],
+      "positive_genes": [
+        "CXCL13",
+        "PDCD1",
+        "ICOS",
+        "MAF",
+        "IL21"
+      ],
+      "contrast_review_panels": [
+        "T_Tfh_like",
+        "T_Treg"
+      ],
+      "expected_lower_genes": [
+        "CXCR5"
+      ],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Rao2017",
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "需CXCR5相对低及Tfh对照；RA功能结论不直接移植TME，仅Tph-like候选。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_Th1_like",
+      "axis": "branch",
+      "parent_any": [
+        "T_CD4"
+      ],
+      "core_groups": [
+        [
+          "TBX21",
+          "CXCR3"
+        ],
+        [
+          "IFNG",
+          "IL12RB2"
+        ]
+      ],
+      "positive_genes": [
+        "TBX21",
+        "CXCR3",
+        "IFNG",
+        "IL12RB2",
+        "STAT4"
+      ],
+      "contrast_review_panels": [
+        "NK",
+        "ILC1"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "方向程序，不由IFNG倒推CD4。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_Th17_like",
+      "axis": "branch",
+      "parent_any": [
+        "T_CD4"
+      ],
+      "core_groups": [
+        [
+          "RORC",
+          "CCR6"
+        ],
+        [
+          "IL17A",
+          "IL17F"
+        ]
+      ],
+      "positive_genes": [
+        "RORC",
+        "CCR6",
+        "IL17A",
+        "IL17F",
+        "KLRB1"
+      ],
+      "contrast_review_panels": [
+        "T_MAIT",
+        "ILC3"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "IL17低检出保留不确定；KLRB1不等于Th17。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_gd",
+      "axis": "branch",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "TRDC"
+        ],
+        [
+          "TRGC1",
+          "TRGC2"
+        ]
+      ],
+      "positive_genes": [
+        "TRDC",
+        "TRGC1",
+        "TRGC2",
+        "KLRB1",
+        "KLRG1"
+      ],
+      "contrast_review_panels": [
+        "T_MAIT",
+        "T_CD8"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "γδ TCR组合；VDJ可用时核查。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_MAIT",
+      "axis": "branch",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "SLC4A10",
+          "TRAV1-2"
+        ],
+        [
+          "KLRB1",
+          "ZBTB16"
+        ]
+      ],
+      "positive_genes": [
+        "SLC4A10",
+        "TRAV1-2",
+        "KLRB1",
+        "ZBTB16",
+        "CXCR6"
+      ],
+      "contrast_review_panels": [
+        "T_gd",
+        "T_CD8"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "MAIT-like候选；TCR/蛋白证据增强，不能凭KLRB1判定。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC1",
+      "axis": "branch",
+      "parent_any": [
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "TBX21"
+        ],
+        [
+          "IFNG",
+          "IL12RB2"
+        ]
+      ],
+      "positive_genes": [
+        "TBX21",
+        "IFNG",
+        "IL12RB2",
+        "CXCR3"
+      ],
+      "contrast_review_panels": [
+        "NK",
+        "T_Th1_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "ILC1与NK必须边界复核；无受体/谱系证据时停ILC-like。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC2",
+      "axis": "branch",
+      "parent_any": [
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "GATA3"
+        ],
+        [
+          "PTGDR2",
+          "IL1RL1"
+        ]
+      ],
+      "positive_genes": [
+        "GATA3",
+        "PTGDR2",
+        "IL1RL1",
+        "RORA",
+        "IL5",
+        "IL13"
+      ],
+      "contrast_review_panels": [
+        "T_CD4",
+        "Mast",
+        "Basophil"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "类型2程序配套受体；IL7R不能作为唯一类型证据。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC3",
+      "axis": "branch",
+      "parent_any": [
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "RORC"
+        ],
+        [
+          "IL23R",
+          "CCR6",
+          "IL22"
+        ]
+      ],
+      "positive_genes": [
+        "RORC",
+        "IL23R",
+        "CCR6",
+        "IL22",
+        "KIT",
+        "KLRB1"
+      ],
+      "contrast_review_panels": [
+        "T_Th17_like",
+        "Mast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "RORC/IL23R等联合；KIT/KLRB1仅辅助。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_naive_like",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "TCL1A"
+        ],
+        [
+          "IGHD",
+          "IGHM"
+        ]
+      ],
+      "positive_genes": [
+        "TCL1A",
+        "IGHD",
+        "IGHM",
+        "IL4R"
+      ],
+      "contrast_review_panels": [
+        "B_memory_like",
+        "B_GC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024",
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "naïve-like候选，MS4A1不再是亚型anchor。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_memory_like",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "CD27",
+          "TNFRSF13B"
+        ],
+        [
+          "AIM2",
+          "BANK1"
+        ]
+      ],
+      "positive_genes": [
+        "CD27",
+        "TNFRSF13B",
+        "AIM2",
+        "BANK1",
+        "IGHG1",
+        "IGHA1"
+      ],
+      "contrast_review_panels": [
+        "B_naive_like",
+        "B_GC",
+        "ASC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CD27阴性记忆也可能存在；类别转换另轴，需整体参考。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_GC",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "BCL6"
+        ],
+        [
+          "AICDA",
+          "RGS13",
+          "MEF2B"
+        ]
+      ],
+      "positive_genes": [
+        "BCL6",
+        "AICDA",
+        "RGS13",
+        "MEF2B",
+        "LMO2"
+      ],
+      "contrast_review_panels": [
+        "B_naive_like",
+        "B_memory_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "GC组合；不把cycling当GC身份。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_atypical_like",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "TBX21"
+        ],
+        [
+          "ITGAX",
+          "FCRL5"
+        ]
+      ],
+      "positive_genes": [
+        "TBX21",
+        "ITGAX",
+        "FCRL5",
+        "ZEB2"
+      ],
+      "contrast_review_panels": [
+        "B_memory_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "atypical-like/TBX21-FCRL5-associated；不推断年龄或TAAB功能。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mono_classical",
+      "axis": "branch",
+      "parent_any": [
+        "Monocyte"
+      ],
+      "core_groups": [
+        [
+          "FCN1",
+          "CD14"
+        ],
+        [
+          "S100A8",
+          "S100A9",
+          "VCAN"
+        ]
+      ],
+      "positive_genes": [
+        "FCN1",
+        "CD14",
+        "S100A8",
+        "S100A9",
+        "VCAN",
+        "LYZ"
+      ],
+      "contrast_review_panels": [
+        "Neutrophil",
+        "DC_DC3"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "组合支持，检查髓系连续谱。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mono_FCGR3A",
+      "axis": "branch",
+      "parent_any": [
+        "Monocyte"
+      ],
+      "core_groups": [
+        [
+          "FCGR3A"
+        ],
+        [
+          "MS4A7",
+          "CX3CR1"
+        ]
+      ],
+      "positive_genes": [
+        "FCGR3A",
+        "MS4A7",
+        "CX3CR1",
+        "LST1"
+      ],
+      "contrast_review_panels": [
+        "Macrophage",
+        "NK"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "FCGR3A"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "FCGR3A-associated单核；非经典终点须比较CD14程序。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mono_intermediate",
+      "axis": "branch",
+      "parent_any": [
+        "Monocyte"
+      ],
+      "core_groups": [
+        [
+          "CD14"
+        ],
+        [
+          "FCGR3A"
+        ]
+      ],
+      "positive_genes": [
+        "CD14",
+        "FCGR3A",
+        "HLA-DRA",
+        "MS4A7"
+      ],
+      "contrast_review_panels": [
+        "Mono_classical",
+        "Mono_FCGR3A"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "要求双程序的群内/同细胞证据，不由HLA-DRA独定。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC_cDC1",
+      "axis": "branch",
+      "parent_any": [
+        "DC"
+      ],
+      "core_groups": [
+        [
+          "CLEC9A",
+          "XCR1"
+        ],
+        [
+          "CADM1"
+        ]
+      ],
+      "positive_genes": [
+        "CLEC9A",
+        "XCR1",
+        "CADM1",
+        "BATF3",
+        "IRF8"
+      ],
+      "contrast_review_panels": [
+        "DC_cDC2"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "作者正文组合，分组件为本项目实现。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC_cDC2",
+      "axis": "branch",
+      "parent_any": [
+        "DC"
+      ],
+      "core_groups": [
+        [
+          "CD1C"
+        ],
+        [
+          "FCER1A",
+          "CLEC10A"
+        ]
+      ],
+      "positive_genes": [
+        "CD1C",
+        "FCER1A",
+        "CLEC10A",
+        "CD1E"
+      ],
+      "contrast_review_panels": [
+        "DC_DC3",
+        "Monocyte"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CD1C需配套证据；DC3另查。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC_DC3",
+      "axis": "branch",
+      "parent_any": [
+        "DC"
+      ],
+      "core_groups": [
+        [
+          "CD1C"
+        ],
+        [
+          "CD14",
+          "CD163",
+          "LILRB1"
+        ]
+      ],
+      "positive_genes": [
+        "CD1C",
+        "CD14",
+        "CD163",
+        "LILRB1",
+        "S100A8",
+        "S100A9"
+      ],
+      "contrast_review_panels": [
+        "DC_cDC2",
+        "Monocyte"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "DC3-like需CD1C+单核相关组合和鉴别；不能CD1C单项。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC_pDC",
+      "axis": "branch",
+      "parent_any": [
+        "DC"
+      ],
+      "core_groups": [
+        [
+          "LILRA4",
+          "CLEC4C"
+        ],
+        [
+          "TCF4"
+        ]
+      ],
+      "positive_genes": [
+        "LILRA4",
+        "CLEC4C",
+        "TCF4",
+        "GZMB",
+        "JCHAIN",
+        "IRF7",
+        "MZB1"
+      ],
+      "contrast_review_panels": [
+        "ASC",
+        "B",
+        "NK"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "LILRA4/CLEC4C与TCF4优先；GZMB/JCHAIN是共享辅助。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC_AS",
+      "axis": "branch",
+      "parent_any": [
+        "DC"
+      ],
+      "core_groups": [
+        [
+          "AXL"
+        ],
+        [
+          "SIGLEC6"
+        ]
+      ],
+      "positive_genes": [
+        "AXL",
+        "SIGLEC6",
+        "CD2",
+        "CD5"
+      ],
+      "contrast_review_panels": [
+        "DC_pDC",
+        "DC_cDC2"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "稀有AS-DC候选，需真实细胞与批次稳定性；不强制拆群。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC_LC_like",
+      "axis": "branch",
+      "parent_any": [
+        "DC"
+      ],
+      "core_groups": [
+        [
+          "CD1A"
+        ],
+        [
+          "CD207"
+        ]
+      ],
+      "positive_genes": [
+        "CD1A",
+        "CD207",
+        "EPCAM"
+      ],
+      "contrast_review_panels": [
+        "DC_cDC2",
+        "Epithelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "LC-like候选；EPCAM在此不是自动污染排除。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Endo_lymphatic",
+      "axis": "branch",
+      "parent_any": [
+        "Endothelial"
+      ],
+      "core_groups": [
+        [
+          "PROX1",
+          "FLT4"
+        ],
+        [
+          "LYVE1",
+          "CCL21"
+        ]
+      ],
+      "positive_genes": [
+        "PROX1",
+        "FLT4",
+        "LYVE1",
+        "CCL21",
+        "PDPN",
+        "MMRN1"
+      ],
+      "contrast_review_panels": [
+        "Macrophage",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "LYVE1/PDPN不独占；需内皮与淋巴组合。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Endo_arterial",
+      "axis": "branch",
+      "parent_any": [
+        "Endothelial"
+      ],
+      "core_groups": [
+        [
+          "EFNB2",
+          "GJA5"
+        ],
+        [
+          "SOX17",
+          "HEY1"
+        ]
+      ],
+      "positive_genes": [
+        "EFNB2",
+        "GJA5",
+        "SOX17",
+        "HEY1",
+        "DKK2"
+      ],
+      "contrast_review_panels": [
+        "Endo_venous",
+        "Endo_capillary"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "来源/器官层级验证。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Endo_venous",
+      "axis": "branch",
+      "parent_any": [
+        "Endothelial"
+      ],
+      "core_groups": [
+        [
+          "ACKR1"
+        ],
+        [
+          "NR2F2"
+        ]
+      ],
+      "positive_genes": [
+        "ACKR1",
+        "NR2F2",
+        "PLVAP"
+      ],
+      "contrast_review_panels": [
+        "Endo_capillary",
+        "Endo_arterial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "ACKR1"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "仅ACKR1-associated venous候选；PLVAP不能替代命名marker。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Endo_capillary",
+      "axis": "branch",
+      "parent_any": [
+        "Endothelial"
+      ],
+      "core_groups": [
+        [
+          "CA4",
+          "RGCC"
+        ],
+        [
+          "CD36",
+          "CLDN5"
+        ]
+      ],
+      "positive_genes": [
+        "CA4",
+        "RGCC",
+        "CD36",
+        "CLDN5",
+        "EMCN"
+      ],
+      "contrast_review_panels": [
+        "Endo_venous"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "器官特异，不能覆盖全部毛细血管类型。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Schwann",
+      "axis": "branch",
+      "parent_any": [
+        "Neural_glial"
+      ],
+      "core_groups": [
+        [
+          "MPZ"
+        ],
+        [
+          "SOX10",
+          "PLP1"
+        ]
+      ],
+      "positive_genes": [
+        "MPZ",
+        "SOX10",
+        "PLP1",
+        "S100B",
+        "S100A1"
+      ],
+      "contrast_review_panels": [
+        "Melanocytic"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "神经鞘候选；SOX10单项不够。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Oligodendrocyte",
+      "axis": "branch",
+      "parent_any": [
+        "Neural_glial"
+      ],
+      "core_groups": [
+        [
+          "MBP",
+          "MOG"
+        ],
+        [
+          "PLP1",
+          "OLIG1",
+          "OLIG2"
+        ]
+      ],
+      "positive_genes": [
+        "MBP",
+        "MOG",
+        "PLP1",
+        "OLIG1",
+        "OLIG2"
+      ],
+      "contrast_review_panels": [
+        "Schwann"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Neftel2019"
+      ],
+      "evidence_level": "curated_reference_gap",
+      "interpretation": "正常/恶性另判；脑参考需细化。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neuron",
+      "axis": "branch",
+      "parent_any": [
+        "Neural_glial"
+      ],
+      "core_groups": [
+        [
+          "RBFOX3",
+          "SNAP25"
+        ],
+        [
+          "SYT1",
+          "TUBB3"
+        ]
+      ],
+      "positive_genes": [
+        "RBFOX3",
+        "SNAP25",
+        "SYT1",
+        "TUBB3"
+      ],
+      "contrast_review_panels": [
+        "Epithelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Neftel2019"
+      ],
+      "evidence_level": "curated_reference_gap",
+      "interpretation": "神经元候选，不由TUBB3单项判定；需组织适配脑/外周神经参考。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_basal",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KRT5",
+          "KRT14"
+        ],
+        [
+          "TP63"
+        ]
+      ],
+      "positive_genes": [
+        "KRT5",
+        "KRT14",
+        "TP63",
+        "KRT17",
+        "SFN"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "KRT5"
+      ],
+      "required_context": "squamous_or_airway",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "器官/来源与良恶性单独核查；RNA不等于正常细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_AT2",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "SFTPC"
+        ],
+        [
+          "SFTPB",
+          "ABCA3"
+        ]
+      ],
+      "positive_genes": [
+        "SFTPC",
+        "SFTPB",
+        "ABCA3",
+        "SFTPA1",
+        "SFTPA2"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "SFTPC"
+      ],
+      "required_context": "lung",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "器官/来源与良恶性单独核查；RNA不等于正常细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_AT1",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "AGER"
+        ],
+        [
+          "CAV1",
+          "EMP2"
+        ]
+      ],
+      "positive_genes": [
+        "AGER",
+        "CAV1",
+        "EMP2",
+        "CAV2",
+        "PDPN"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "AGER"
+      ],
+      "required_context": "lung",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "器官/来源与良恶性单独核查；RNA不等于正常细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_club",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "SCGB1A1"
+        ],
+        [
+          "SCGB3A1"
+        ]
+      ],
+      "positive_genes": [
+        "SCGB1A1",
+        "SCGB3A1",
+        "KRT8",
+        "KRT19"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "SCGB1A1"
+      ],
+      "required_context": "lung",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "器官/来源与良恶性单独核查；RNA不等于正常细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_ciliated",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "FOXJ1"
+        ],
+        [
+          "TPPP3",
+          "PIFO"
+        ]
+      ],
+      "positive_genes": [
+        "FOXJ1",
+        "TPPP3",
+        "PIFO",
+        "CAPS",
+        "TUBB4B"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "FOXJ1"
+      ],
+      "required_context": "airway_or_ciliated_organ",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "器官/来源与良恶性单独核查；RNA不等于正常细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_hepatocyte_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "ALB"
+        ],
+        [
+          "ASGR1",
+          "HNF4A"
+        ]
+      ],
+      "positive_genes": [
+        "ALB",
+        "ASGR1",
+        "HNF4A",
+        "HP",
+        "APOA1",
+        "TTR",
+        "APOA2",
+        "CYP3A4"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "ALB"
+      ],
+      "required_context": "liver",
+      "reference_ids": [
+        "Aizarani2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "ALB与ASGR1/HNF4A肝细胞方向；环境ALB与去分化另核，不能由EPCAM缺失排除。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_cholangiocyte_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KRT19"
+        ],
+        [
+          "CFTR"
+        ]
+      ],
+      "positive_genes": [
+        "KRT19",
+        "CFTR",
+        "KRT7",
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "MMP7"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "KRT19"
+      ],
+      "required_context": "hepatobiliary",
+      "reference_ids": [
+        "Aizarani2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "KRT19与CFTR成熟胆管方向；KRT7不再独立定义，肿瘤和前体细胞可偏离。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_renal_tubular_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "SLC34A1"
+        ],
+        [
+          "LRP2",
+          "CUBN"
+        ]
+      ],
+      "positive_genes": [
+        "SLC34A1",
+        "LRP2",
+        "CUBN"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "SLC34A1"
+      ],
+      "required_context": "kidney",
+      "reference_ids": [
+        "KidneyProtein2014",
+        "Lake2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "仅近端小管成熟方向；HAVCR1从身份正向集移出，须作损伤轴独立审阅。人体RNA/蛋白及肾图谱补足旧参考缺口。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_prostate_luminal_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KLK3",
+          "KLK2"
+        ],
+        [
+          "ACP3",
+          "MSMB"
+        ]
+      ],
+      "positive_genes": [
+        "KLK3",
+        "KLK2",
+        "ACP3",
+        "MSMB",
+        "NKX3-1",
+        "EPCAM",
+        "KRT8",
+        "KRT18"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "KLK3"
+      ],
+      "required_context": "prostate",
+      "reference_ids": [
+        "Henry2018"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "前列腺组织内KLK3/KLK2与ACP3/MSMB方向；NKX3-1为项目辅助项，不能由此判良恶性或覆盖所有肿瘤状态。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Cytotoxic",
+      "axis": "state",
+      "parent_any": [
+        "T",
+        "NK",
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "PRF1",
+          "GZMB"
+        ],
+        [
+          "NKG7",
+          "GNLY",
+          "CCL5"
+        ]
+      ],
+      "positive_genes": [
+        "PRF1",
+        "GZMB",
+        "NKG7",
+        "GNLY",
+        "CCL5",
+        "FGFBP2",
+        "GZMA"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "细胞毒程序，不能确定CD8/NK。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "GZMK_program",
+      "axis": "state",
+      "parent_any": [
+        "T",
+        "NK"
+      ],
+      "core_groups": [
+        [
+          "GZMK"
+        ],
+        [
+          "GZMA",
+          "CCL5"
+        ]
+      ],
+      "positive_genes": [
+        "GZMK",
+        "GZMA",
+        "CCL5",
+        "IL7R",
+        "CXCR3"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "GZMK"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "GZMK-associated，不命名CD8。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Naive_like",
+      "axis": "state",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "TCF7",
+          "LEF1"
+        ],
+        [
+          "CCR7",
+          "SELL"
+        ]
+      ],
+      "positive_genes": [
+        "TCF7",
+        "LEF1",
+        "CCR7",
+        "SELL",
+        "MAL",
+        "LTB"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "naïve/central-memory边界需另判，CD4/CD8独立。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Exhaustion_like",
+      "axis": "state",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "PDCD1",
+          "HAVCR2"
+        ],
+        [
+          "TOX",
+          "LAG3"
+        ]
+      ],
+      "positive_genes": [
+        "PDCD1",
+        "HAVCR2",
+        "TOX",
+        "LAG3",
+        "TIGIT",
+        "CXCL13",
+        "ENTPD1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "exhausted-like程序；Treg/激活对照，功能耗竭未证明。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Resident_like",
+      "axis": "state",
+      "parent_any": [
+        "T",
+        "NK"
+      ],
+      "core_groups": [
+        [
+          "ITGAE",
+          "ZNF683"
+        ],
+        [
+          "CXCR6"
+        ]
+      ],
+      "positive_genes": [
+        "ITGAE",
+        "ZNF683",
+        "CXCR6",
+        "CD69",
+        "RGS1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "驻留样程序；CD69单项不证明驻留。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "IFN_response",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "ISG15",
+          "IFIT1",
+          "IFIT3"
+        ],
+        [
+          "MX1",
+          "OAS1"
+        ]
+      ],
+      "positive_genes": [
+        "ISG15",
+        "IFIT1",
+        "IFIT3",
+        "MX1",
+        "OAS1",
+        "IFIT2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "跨谱系状态，不作身份否决。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Cycling",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "MKI67",
+          "TOP2A"
+        ],
+        [
+          "UBE2C",
+          "TYMS"
+        ]
+      ],
+      "positive_genes": [
+        "MKI67",
+        "TOP2A",
+        "UBE2C",
+        "TYMS",
+        "STMN1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "增殖状态；不把platelet升级为megakaryocyte。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Inflammatory",
+      "axis": "state",
+      "parent_any": [
+        "Myeloid",
+        "Monocyte",
+        "Macrophage"
+      ],
+      "core_groups": [
+        [
+          "IL1B",
+          "CXCL8"
+        ],
+        [
+          "TNF",
+          "CCL3",
+          "CCL4"
+        ]
+      ],
+      "positive_genes": [
+        "IL1B",
+        "CXCL8",
+        "TNF",
+        "CCL3",
+        "CCL4",
+        "CXCL2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "炎症程序，可与C1Q/SPP1共存。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "MHCII",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "HLA-DRA",
+          "HLA-DRB1"
+        ],
+        [
+          "CD74",
+          "CIITA"
+        ]
+      ],
+      "positive_genes": [
+        "HLA-DRA",
+        "HLA-DRB1",
+        "CD74",
+        "CIITA",
+        "HLA-DPA1",
+        "HLA-DPB1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "呈递相关表达，不证明呈递功能；apCAF须先fibroblast。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC_maturation",
+      "axis": "state",
+      "parent_any": [
+        "DC"
+      ],
+      "core_groups": [
+        [
+          "LAMP3"
+        ],
+        [
+          "CCR7",
+          "FSCN1"
+        ]
+      ],
+      "positive_genes": [
+        "LAMP3",
+        "CCR7",
+        "FSCN1",
+        "CCL19",
+        "CD274"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "LAMP3"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "成熟迁移样状态；来源cDC身份可未知，不强行溯源。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mac_C1Q",
+      "axis": "state",
+      "parent_any": [
+        "Macrophage"
+      ],
+      "core_groups": [
+        [
+          "C1QA",
+          "C1QB",
+          "C1QC"
+        ],
+        [
+          "APOE"
+        ]
+      ],
+      "positive_genes": [
+        "C1QA",
+        "C1QB",
+        "C1QC",
+        "APOE",
+        "FOLR2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "C1Q/APOE-associated，不等于M2。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mac_SPP1",
+      "axis": "state",
+      "parent_any": [
+        "Macrophage"
+      ],
+      "core_groups": [
+        [
+          "SPP1"
+        ],
+        [
+          "TREM2",
+          "GPNMB"
+        ]
+      ],
+      "positive_genes": [
+        "SPP1",
+        "TREM2",
+        "GPNMB",
+        "APOC1",
+        "LGALS3",
+        "FABP5"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "SPP1"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "SPP1程序，不证明抑制功能。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mac_MRC1",
+      "axis": "state",
+      "parent_any": [
+        "Macrophage"
+      ],
+      "core_groups": [
+        [
+          "MRC1"
+        ],
+        [
+          "CD163",
+          "FOLR2"
+        ]
+      ],
+      "positive_genes": [
+        "MRC1",
+        "CD163",
+        "FOLR2",
+        "SELENOP"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "MRC1"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "marker-associated，不直接M2。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "NK_FCGR3A",
+      "axis": "state",
+      "parent_any": [
+        "NK"
+      ],
+      "core_groups": [
+        [
+          "FCGR3A"
+        ],
+        [
+          "FGFBP2",
+          "PRF1"
+        ]
+      ],
+      "positive_genes": [
+        "FCGR3A",
+        "FGFBP2",
+        "PRF1",
+        "GNLY",
+        "GZMB"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "FCGR3A"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangNK2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "FCGR3A相关，不作为NK父身份唯一证据。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "NK_XCL",
+      "axis": "state",
+      "parent_any": [
+        "NK"
+      ],
+      "core_groups": [
+        [
+          "XCL1",
+          "XCL2"
+        ],
+        [
+          "NCAM1",
+          "KLRC1"
+        ]
+      ],
+      "positive_genes": [
+        "XCL1",
+        "XCL2",
+        "NCAM1",
+        "KLRC1",
+        "GZMK",
+        "IL7R"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangNK2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "RNA称XCL-associated；不声称测得CD56蛋白bright。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mast_IL1RL1",
+      "axis": "state",
+      "parent_any": [
+        "Mast"
+      ],
+      "core_groups": [
+        [
+          "IL1RL1"
+        ]
+      ],
+      "positive_genes": [
+        "IL1RL1",
+        "AREG",
+        "LTC4S",
+        "HDC"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "IL1RL1"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Tauber2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "只描述IL1RL1相关表达，取消activated断言。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mast_CMA1",
+      "axis": "state",
+      "parent_any": [
+        "Mast"
+      ],
+      "core_groups": [
+        [
+          "CMA1"
+        ]
+      ],
+      "positive_genes": [
+        "CMA1",
+        "CPA3",
+        "TPSAB1",
+        "TPSB2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "CMA1"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Tauber2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CMA1与CPA3不同；不按RNA直接等同蛋白MCTC。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mast_CPA3",
+      "axis": "state",
+      "parent_any": [
+        "Mast"
+      ],
+      "core_groups": [
+        [
+          "CPA3"
+        ]
+      ],
+      "positive_genes": [
+        "CPA3",
+        "HPGDS",
+        "HDC"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "CPA3"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Tauber2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "描述marker，不强制Mast成熟亚型。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Fib_contractile",
+      "axis": "state",
+      "parent_any": [
+        "Fibroblast"
+      ],
+      "core_groups": [
+        [
+          "ACTA2",
+          "TAGLN"
+        ],
+        [
+          "MYL9",
+          "POSTN"
+        ]
+      ],
+      "positive_genes": [
+        "ACTA2",
+        "TAGLN",
+        "MYL9",
+        "POSTN",
+        "TPM2",
+        "COL11A1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Buechler2021"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "先排mural/SMC；肿瘤背景才可称myCAF-like。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Fib_inflammatory",
+      "axis": "state",
+      "parent_any": [
+        "Fibroblast"
+      ],
+      "core_groups": [
+        [
+          "IL6",
+          "CXCL1",
+          "CXCL2"
+        ],
+        [
+          "CCL2",
+          "CXCL12",
+          "CXCL14"
+        ]
+      ],
+      "positive_genes": [
+        "IL6",
+        "CXCL1",
+        "CXCL2",
+        "CCL2",
+        "CXCL12",
+        "CXCL14",
+        "HAS1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "多趋化子程序需保留差异，非所有CXCL12群均iCAF。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Fib_ECM",
+      "axis": "state",
+      "parent_any": [
+        "Fibroblast"
+      ],
+      "core_groups": [
+        [
+          "COL1A1",
+          "COL1A2"
+        ],
+        [
+          "FN1",
+          "MMP11",
+          "THBS2"
+        ]
+      ],
+      "positive_genes": [
+        "COL1A1",
+        "COL1A2",
+        "FN1",
+        "MMP11",
+        "THBS2",
+        "COL3A1",
+        "MMP2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Buechler2021"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "ECM状态与基础身份相关，CAF需来源。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Endo_tip_like",
+      "axis": "state",
+      "parent_any": [
+        "Endothelial"
+      ],
+      "core_groups": [
+        [
+          "ESM1",
+          "APLN"
+        ],
+        [
+          "KDR",
+          "DLL4"
+        ]
+      ],
+      "positive_genes": [
+        "ESM1",
+        "APLN",
+        "KDR",
+        "DLL4",
+        "ANGPT2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "血管生成/tip-like，不和血管分支互斥。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_KRT19",
+      "axis": "state",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KRT19"
+        ]
+      ],
+      "positive_genes": [
+        "KRT19",
+        "KRT8",
+        "KRT18",
+        "EPCAM",
+        "MUC1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "KRT19"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "取消泛癌luminal身份断言。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_MSLN",
+      "axis": "state",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "MSLN"
+        ]
+      ],
+      "positive_genes": [
+        "MSLN",
+        "WFDC2",
+        "MUC1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "MSLN"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "MSLN-associated，mesothelial需对照；非通用secretory身份。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "EMT_like",
+      "axis": "state",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "VIM",
+          "FN1"
+        ],
+        [
+          "ITGA5",
+          "LAMC2"
+        ]
+      ],
+      "positive_genes": [
+        "VIM",
+        "FN1",
+        "ITGA5",
+        "LAMC2",
+        "COL17A1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Neftel2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "上皮身份/同细胞证据及stromal混合另查。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC_myeloid_primed",
+      "axis": "state",
+      "parent_any": [
+        "HSPC"
+      ],
+      "core_groups": [
+        [
+          "MPO",
+          "ELANE"
+        ],
+        [
+          "CTSG",
+          "AZU1"
+        ]
+      ],
+      "positive_genes": [
+        "MPO",
+        "ELANE",
+        "CTSG",
+        "AZU1",
+        "PRTN3"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "myeloid-primed，不证明离散GMP或正常细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC_ery_primed",
+      "axis": "state",
+      "parent_any": [
+        "HSPC"
+      ],
+      "core_groups": [
+        [
+          "GATA1",
+          "KLF1"
+        ],
+        [
+          "GYPA",
+          "TFRC"
+        ]
+      ],
+      "positive_genes": [
+        "GATA1",
+        "KLF1",
+        "GYPA",
+        "TFRC",
+        "PPBP"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "分开红系/巨核方向，不证明双潜能MEP。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC_lymphoid_primed",
+      "axis": "state",
+      "parent_any": [
+        "HSPC"
+      ],
+      "core_groups": [
+        [
+          "DNTT"
+        ],
+        [
+          "IL7R",
+          "TCF7"
+        ]
+      ],
+      "positive_genes": [
+        "DNTT",
+        "IL7R",
+        "TCF7",
+        "LTB",
+        "CD7"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "需祖细胞身份，成熟淋巴对照。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Ery_early_like",
+      "axis": "state",
+      "parent_any": [
+        "Erythroid"
+      ],
+      "core_groups": [
+        [
+          "GATA1",
+          "KLF1"
+        ],
+        [
+          "TFRC"
+        ]
+      ],
+      "positive_genes": [
+        "GATA1",
+        "KLF1",
+        "TFRC",
+        "CA1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "可选分化阶段；TFRC非特异。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Ery_late_like",
+      "axis": "state",
+      "parent_any": [
+        "Erythroid"
+      ],
+      "core_groups": [
+        [
+          "AHSP",
+          "SLC4A1"
+        ],
+        [
+          "HBB",
+          "HBA1",
+          "HBA2"
+        ]
+      ],
+      "positive_genes": [
+        "AHSP",
+        "SLC4A1",
+        "HBB",
+        "HBA1",
+        "HBA2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "环境HB另核，不强分早晚。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neut_immature_like",
+      "axis": "state",
+      "parent_any": [
+        "Neutrophil"
+      ],
+      "core_groups": [
+        [
+          "MPO",
+          "ELANE"
+        ],
+        [
+          "CTSG",
+          "AZU1"
+        ]
+      ],
+      "positive_genes": [
+        "MPO",
+        "ELANE",
+        "CTSG",
+        "AZU1",
+        "PRTN3",
+        "CEACAM8"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "成熟程度程序，HSPC/AML对照。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neut_OLR1_ARG1",
+      "axis": "state",
+      "parent_any": [
+        "Neutrophil"
+      ],
+      "core_groups": [
+        [
+          "OLR1"
+        ],
+        [
+          "ARG1"
+        ]
+      ],
+      "positive_genes": [
+        "OLR1",
+        "ARG1",
+        "S100A8",
+        "S100A9"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "MDSC2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "取消PMN-MDSC终判；抑制功能需实验。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neural_progenitor_like",
+      "axis": "state",
+      "parent_any": [
+        "Neural_glial"
+      ],
+      "core_groups": [
+        [
+          "SOX2",
+          "NES"
+        ],
+        [
+          "FABP7"
+        ]
+      ],
+      "positive_genes": [
+        "SOX2",
+        "NES",
+        "FABP7",
+        "VIM"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Neftel2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "发育样/恶性状态另判，不能默认正常祖细胞。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ASC_SDC1",
+      "axis": "state",
+      "parent_any": [
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "SDC1"
+        ]
+      ],
+      "positive_genes": [
+        "SDC1",
+        "MZB1",
+        "DERL3",
+        "PRDM1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "SDC1"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "SDC1-associated，不单独证明成熟。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ASC_secretory",
+      "axis": "state",
+      "parent_any": [
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "MZB1",
+          "DERL3"
+        ],
+        [
+          "XBP1",
+          "PRDM1"
+        ]
+      ],
+      "positive_genes": [
+        "MZB1",
+        "DERL3",
+        "XBP1",
+        "PRDM1",
+        "JCHAIN",
+        "SEC11C"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "分泌程序不能独立区分plasmablast与plasma。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Stress_response",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "HSPA1A",
+          "HSPA1B"
+        ],
+        [
+          "DNAJB1",
+          "HSPH1"
+        ]
+      ],
+      "positive_genes": [
+        "HSPA1A",
+        "HSPA1B",
+        "DNAJB1",
+        "HSPH1",
+        "HSP90AA1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "应激另轴，不在身份panel全局blacklist后丢失该读出。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "NK_adaptive_like",
+      "axis": "state",
+      "parent_any": [
+        "NK"
+      ],
+      "core_groups": [
+        [
+          "KLRC2"
+        ]
+      ],
+      "positive_genes": [
+        "KLRC2",
+        "LAG3"
+      ],
+      "contrast_review_panels": [
+        "T_gd"
+      ],
+      "expected_lower_genes": [
+        "FCER1G",
+        "SYK",
+        "SH2D1B",
+        "ZBTB16"
+      ],
+      "naming_genes": [
+        "KLRC2"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "Schlums2015",
+        "YangNK2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "仅候选；降低组件需同NK对照，不要求所有adaptiveNK都降低；移除TRDC正向。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "IgA",
+      "axis": "isotype",
+      "parent_any": [
+        "B",
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "IGHA1",
+          "IGHA2"
+        ]
+      ],
+      "positive_genes": [
+        "IGHA1",
+        "IGHA2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "IGHA1",
+        "IGHA2"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "同种型直接转录证据；环境Ig、BCR和双细胞另核，不决定成熟/记忆身份。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "IgG",
+      "axis": "isotype",
+      "parent_any": [
+        "B",
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "IGHG1",
+          "IGHG2",
+          "IGHG3",
+          "IGHG4"
+        ]
+      ],
+      "positive_genes": [
+        "IGHG1",
+        "IGHG2",
+        "IGHG3",
+        "IGHG4"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "IGHG1",
+        "IGHG2",
+        "IGHG3",
+        "IGHG4"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "同种型直接转录证据；环境Ig、BCR和双细胞另核，不决定成熟/记忆身份。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "IgM",
+      "axis": "isotype",
+      "parent_any": [
+        "B",
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "IGHM"
+        ]
+      ],
+      "positive_genes": [
+        "IGHM"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "IGHM"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "同种型直接转录证据；环境Ig、BCR和双细胞另核，不决定成熟/记忆身份。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "IgD",
+      "axis": "isotype",
+      "parent_any": [
+        "B",
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "IGHD"
+        ]
+      ],
+      "positive_genes": [
+        "IGHD"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "IGHD"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "同种型直接转录证据；环境Ig、BCR和双细胞另核，不决定成熟/记忆身份。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "IgE",
+      "axis": "isotype",
+      "parent_any": [
+        "B",
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "IGHE"
+        ]
+      ],
+      "positive_genes": [
+        "IGHE"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "IGHE"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "同种型直接转录证据；环境Ig、BCR和双细胞另核，不决定成熟/记忆身份。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "T_NK_boundary",
+      "axis": "boundary",
+      "parent_any": [
+        "T",
+        "NK"
+      ],
+      "core_groups": [
+        [
+          "CD3D",
+          "CD3E",
+          "TRAC"
+        ],
+        [
+          "NCR1",
+          "KLRD1",
+          "NKG7"
+        ]
+      ],
+      "positive_genes": [
+        "CD3D",
+        "CD3E",
+        "TRAC",
+        "NCR1",
+        "KLRD1",
+        "NKG7"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "同细胞共享效应/真混合/错入父类分开；不叫NKT或污染。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_ASC_transition",
+      "axis": "boundary",
+      "parent_any": [
+        "B",
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "MS4A1",
+          "CD19"
+        ],
+        [
+          "MZB1",
+          "PRDM1"
+        ]
+      ],
+      "positive_genes": [
+        "MS4A1",
+        "CD19",
+        "MZB1",
+        "PRDM1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "连续分化或混合复核，绝不由CD79A/CD37判B污染。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mono_Mac_transition",
+      "axis": "boundary",
+      "parent_any": [
+        "Monocyte",
+        "Macrophage"
+      ],
+      "core_groups": [
+        [
+          "FCN1",
+          "CD14"
+        ],
+        [
+          "C1QA",
+          "APOE"
+        ]
+      ],
+      "positive_genes": [
+        "FCN1",
+        "CD14",
+        "C1QA",
+        "APOE"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "分化连续谱与混合两种解释分开。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Megakaryocyte_review",
+      "axis": "boundary",
+      "parent_any": [
+        "Megakaryocytic"
+      ],
+      "core_groups": [
+        [
+          "ITGA2B",
+          "GP1BA"
+        ],
+        [
+          "TUBB1",
+          "PF4"
+        ]
+      ],
+      "positive_genes": [
+        "ITGA2B",
+        "GP1BA",
+        "TUBB1",
+        "PF4",
+        "PPBP"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "有核巨核/血小板需要核状态、复杂度/组织证据，不由cycling自动升级。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Chu_Treg_functional_14",
+      "axis": "reference_state",
+      "parent_any": [
+        "T"
+      ],
+      "core_groups": [
+        [
+          "FOXP3",
+          "IKZF2",
+          "IKZF4",
+          "IL2RA",
+          "ENTPD1",
+          "CCR4",
+          "ICOS",
+          "IL10RA",
+          "TGFB1",
+          "TIGIT",
+          "CTLA4",
+          "LAG3",
+          "HAVCR2",
+          "PDCD1"
+        ]
+      ],
+      "positive_genes": [
+        "FOXP3",
+        "IKZF2",
+        "IKZF4",
+        "IL2RA",
+        "ENTPD1",
+        "CCR4",
+        "ICOS",
+        "IL10RA",
+        "TGFB1",
+        "TIGIT",
+        "CTLA4",
+        "LAG3",
+        "HAVCR2",
+        "PDCD1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "author_exact_signature",
+      "interpretation": "Table S6原14基因完整保留；功能签名分数不替代Treg身份组合。",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epi_colonocyte_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "CA1",
+          "CA2"
+        ],
+        [
+          "SLC26A3"
+        ]
+      ],
+      "positive_genes": [
+        "CA1",
+        "CA2",
+        "SLC26A3"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "colon",
+      "reference_ids": [
+        "HumanColonoid2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "来自人结肠类器官的吸收分化证据；需与原位结肠参考及肠化生对照。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_intestinal_goblet_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "MUC2"
+        ],
+        [
+          "CLCA1",
+          "TFF3"
+        ]
+      ],
+      "positive_genes": [
+        "MUC2",
+        "CLCA1",
+        "TFF3"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "intestine",
+      "reference_ids": [
+        "Burclaff2022"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "TFF3广泛分泌表达，须结合MUC2/CLCA1；肠化生不等于原发肠来源。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_intestinal_stem_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "LGR5",
+          "ASCL2"
+        ],
+        [
+          "SLC12A2",
+          "RGMB"
+        ]
+      ],
+      "positive_genes": [
+        "LGR5",
+        "ASCL2",
+        "SLC12A2",
+        "RGMB",
+        "OLFM4"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "intestine",
+      "reference_ids": [
+        "Burclaff2022"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "OLFM4仅辅助，结肠TA也可表达；SMOC2不进入正向核心，LGR5/ASCL2也须对照Paneth；不是功能性干细胞证明。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_gastric_pit_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "MUC5AC",
+          "TFF1"
+        ],
+        [
+          "GKN1",
+          "GKN2"
+        ]
+      ],
+      "positive_genes": [
+        "MUC5AC",
+        "TFF1",
+        "GKN1",
+        "GKN2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "stomach",
+      "reference_ids": [
+        "GastricCorpus2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "MUC6移至腺体黏液模块；胃型化生和肿瘤可表达该程序。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_gastric_gland_mucous_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "MUC6"
+        ],
+        [
+          "TFF2"
+        ]
+      ],
+      "positive_genes": [
+        "MUC6",
+        "TFF2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "stomach",
+      "reference_ids": [
+        "GastricMucins2004"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "覆盖胃体颈部/胃窦腺体方向，不能强称唯一颈细胞；十二指肠腺和化生亦需排查。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_gastric_chief_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "PGC",
+          "PGA3",
+          "PGA5"
+        ],
+        [
+          "LIPF"
+        ]
+      ],
+      "positive_genes": [
+        "PGC",
+        "PGA3",
+        "PGA5",
+        "LIPF"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "stomach",
+      "reference_ids": [
+        "GastricCorpus2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "与ATP4A/B壁细胞分开。原GIF未纳入；旧符号及人鼠表达差异另核。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_gastric_parietal_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "ATP4A"
+        ],
+        [
+          "ATP4B"
+        ]
+      ],
+      "positive_genes": [
+        "ATP4A",
+        "ATP4B"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "stomach",
+      "reference_ids": [
+        "GastricCorpus2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "胃酸分泌机器方向，不与主细胞消化酶混成一个身份。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_neuroendocrine_program",
+      "axis": "state",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "CHGA",
+          "CHGB"
+        ],
+        [
+          "SCG2",
+          "SCG3",
+          "SCG5"
+        ]
+      ],
+      "positive_genes": [
+        "CHGA",
+        "SCG3",
+        "SCG5",
+        "CHGB",
+        "SCG2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "GastricCorpus2023",
+        "Muraro2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "跨器官程序；须另审内分泌身份和器官。PanNET等肿瘤亦可阳性，不能据此判正常。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_pancreatic_acinar_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "PRSS1"
+        ],
+        [
+          "PNLIP"
+        ]
+      ],
+      "positive_genes": [
+        "PRSS1",
+        "PNLIP"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "pancreas",
+      "reference_ids": [
+        "Muraro2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "高丰度消化酶易形成环境RNA，需同细胞及来源内证据，孤立PRSS1不足终判。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_pancreatic_duct_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KRT19"
+        ],
+        [
+          "SPP1"
+        ]
+      ],
+      "positive_genes": [
+        "KRT19",
+        "SPP1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "pancreas",
+      "reference_ids": [
+        "Muraro2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "两者均非胰腺专一；必须审父身份、胆管等对照及胰腺材料/原发部位。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_pancreatic_islet_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "INS",
+          "GCG",
+          "SST",
+          "PPY"
+        ],
+        [
+          "CHGB",
+          "SCG2"
+        ]
+      ],
+      "positive_genes": [
+        "INS",
+        "GCG",
+        "SST",
+        "PPY",
+        "CHGB",
+        "SCG2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "pancreas",
+      "reference_ids": [
+        "Muraro2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "INS/GCG/SST/PPY分别指向β/α/δ/PP；此组为候选并集，不要求同一细胞全表达，也不在此强分四类。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_breast_LumHR_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "ESR1",
+          "PGR"
+        ],
+        [
+          "ANKRD30A",
+          "AR"
+        ]
+      ],
+      "positive_genes": [
+        "ESR1",
+        "PGR",
+        "ANKRD30A",
+        "AR"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "breast",
+      "reference_ids": [
+        "Kumar2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "正常乳腺LumHR参考；不覆盖全部管腔细胞，不凭受体判肿瘤正常。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_breast_LumSec_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "LTF",
+          "SLPI"
+        ],
+        [
+          "KRT15",
+          "KRT23"
+        ]
+      ],
+      "positive_genes": [
+        "LTF",
+        "SLPI",
+        "KRT15",
+        "KRT23",
+        "KRT17"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "breast",
+      "reference_ids": [
+        "Kumar2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "补充原面板漏掉的LumSec；KRT5/KRT15等不应单独把该方向改判基底。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_breast_basal_myo_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "TP63"
+        ],
+        [
+          "ACTA2"
+        ]
+      ],
+      "positive_genes": [
+        "TP63",
+        "ACTA2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "breast",
+      "reference_ids": [
+        "Kumar2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "需独立的上皮/位置证据和周细胞、平滑肌对照；低EPCAM不否定肌上皮。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_prostate_basal_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KRT5",
+          "KRT14"
+        ],
+        [
+          "TP63"
+        ]
+      ],
+      "positive_genes": [
+        "KRT5",
+        "KRT14",
+        "TP63"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "prostate",
+      "reference_ids": [
+        "Henry2018"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "与SCGB1A1 club样方向分开；通用基底程序不唯一指向前列腺。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_prostate_club_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "SCGB1A1"
+        ]
+      ],
+      "positive_genes": [
+        "SCGB1A1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "prostate",
+      "reference_ids": [
+        "Henry2018"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "当前仅一个直接核实锚点；必须结合完整DEG和参考映射，不能凭单marker终判，也不能自动当肺细胞。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_urothelial_differentiated_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "UPK1A",
+          "UPK1B"
+        ],
+        [
+          "UPK2",
+          "UPK3A",
+          "KRT20"
+        ]
+      ],
+      "positive_genes": [
+        "UPK1A",
+        "UPK1B",
+        "UPK2",
+        "UPK3A",
+        "KRT20",
+        "KRT13"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "urothelium",
+      "reference_ids": [
+        "Yu2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "UPK-rich方向偏伞/中间层，不覆盖所有尿路基底细胞；不是膀胱或上尿路的唯一定位。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_kidney_TAL_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "UMOD"
+        ],
+        [
+          "SLC12A1"
+        ]
+      ],
+      "positive_genes": [
+        "UMOD",
+        "SLC12A1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "kidney",
+      "reference_ids": [
+        "KidneyProtein2014",
+        "Lake2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "与近端小管分开；损伤时成熟转运程序可降低。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_kidney_principal_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "AQP2"
+        ],
+        [
+          "AQP3",
+          "FXYD4"
+        ]
+      ],
+      "positive_genes": [
+        "AQP2",
+        "AQP3",
+        "FXYD4"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "kidney",
+      "reference_ids": [
+        "KidneyProtein2014",
+        "Lake2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "主细胞候选，不覆盖集合系统所有闰细胞；与足细胞分开。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_kidney_podocyte_like",
+      "axis": "branch",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "NPHS2"
+        ],
+        [
+          "PODXL"
+        ]
+      ],
+      "positive_genes": [
+        "NPHS2",
+        "PODXL"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "kidney",
+      "reference_ids": [
+        "KidneyProtein2014",
+        "Lake2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "特殊上皮，不以EPCAM/KRT8阳性设硬门槛；PODXL也需排查内皮，结合肾小球证据。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_thyroid_follicular_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "TG"
+        ],
+        [
+          "TPO"
+        ]
+      ],
+      "positive_genes": [
+        "TG",
+        "TPO",
+        "TSHR",
+        "PAX8"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "thyroid",
+      "reference_ids": [
+        "ThyroidOrganoid2021"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "TG/TPO合成机器为关键，PAX8仅辅助且跨器官共享；本参考的人体证据含bulk/类器官，不冒称人单细胞验证。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_fallopian_secretory_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "PAX8"
+        ],
+        [
+          "OVGP1",
+          "KRT7"
+        ]
+      ],
+      "positive_genes": [
+        "PAX8",
+        "OVGP1",
+        "KRT7"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "fallopian_tube",
+      "reference_ids": [
+        "FallopianAtlas"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "缩窄原Müllerian泛标签；周期/绝经影响OVGP1，不覆盖所有卵巢/内膜细胞；MSLN/WT1不作普适核心。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_endometrial_secretory_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "PAEP"
+        ],
+        [
+          "SCGB2A2"
+        ]
+      ],
+      "positive_genes": [
+        "PAEP",
+        "SCGB2A2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "endometrium",
+      "reference_ids": [
+        "GarciaAlonso2021"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "特指分泌期腺体方向，PAEP阴性不能排除增殖期或基底层内膜上皮。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_squamous_suprabasal_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KRT4",
+          "KRT13",
+          "CRNN"
+        ]
+      ],
+      "positive_genes": [
+        "KRT4",
+        "KRT13",
+        "CRNN"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "squamous_organ",
+      "reference_ids": [
+        "Esophagus2022",
+        "EsophagusMapping2022"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "不同分化阶段并列审阅，不能仅由该程序判食管、头颈或宫颈来源。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    },
+    {
+      "id": "Epi_keratinocyte_differentiated_like",
+      "axis": "branch",
+      "parent_any": [
+        "Epithelial"
+      ],
+      "core_groups": [
+        [
+          "KRT1",
+          "KRT10",
+          "LOR",
+          "FLG"
+        ]
+      ],
+      "positive_genes": [
+        "KRT1",
+        "KRT10",
+        "LOR",
+        "FLG"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "skin_or_keratinizing_epithelium",
+      "reference_ids": [
+        "Cheng2018"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "棘层与颗粒层标记属于不同阶段；不要求每个细胞同时表达，不覆盖基底角质形成细胞。",
+      "auto_final_label": false,
+      "group_logic": "Components are separate review dimensions, never a universal AND/OR expression classifier; aggregate values do not establish same-cell coexpression.",
+      "negative_evidence_policy": "Unmeasured/dropout is not negative. Context mismatch requests review, never rejects a candidate."
+    }
+  ],
+  "aliases": {
+    "KIM1": "HAVCR1",
+    "SEPP1": "SELENOP",
+    "DARC": "ACKR1",
+    "IGJ": "JCHAIN",
+    "IL8": "CXCL8",
+    "ACPP": "ACP3"
+  },
+  "alias_policy": "Versioned explicit mapping only; reject primary+alias collisions without source stable-ID adjudication; never strip suffixes.",
+  "base_resource": {
+    "path": "resources/annotation/v7_panel_repair_v1/registry.json",
+    "sha256": "83f7f01a5072a325eb65dffaf65565e000df43677a8085f4fb6172079f203268"
+  }
+}

@@ -1,3 +1,5 @@
+[V7组织上皮文献扩展](V7-epithelial-extension-20261105.md)：原26组拆分、完整基因与来源、父身份/组织相容性/程序/良恶性分开。
+
 [原生档案成员与分析视图](native-archive-membership-and-analysis-views-20261024.md)：按所选来源补全原生行，区分冻结context、旧roster及单位门槛，保留原排除/QC证据。
 
 [全细胞图谱的分层注释与整合比较方案](full-context-atlas-hierarchical-annotation-plan-20261023.md)：完整目标与验收；当前已进入受控发现和来源留出验收，新身份和最终选型待。

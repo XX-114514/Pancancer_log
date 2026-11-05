@@ -1,3 +1,8 @@
+## 2026-11-05 组织上皮注释扩展后续
+
+- [x] 完成原26组的拆分、25个新增候选、逐基因来源与9项反例检查，见[资源](resources/annotation/v7_epithelial_extension_v1/README.md)。
+- [ ] 在V7上皮审阅中显式使用新registry，检查实际测量、同细胞共表达和完整DEG；补原候选待核实基因与未覆盖类型，不强制按面板数量分群。
+
 ## 2026-11-05 系统审计后的执行优先级
 
 依据[审计报告](docs/reports/20261105_server_analysis_audit/README.md)，保留以下历史待办。未勾选项仍为待验收/待执行；后续[WEHI现场补核](runs/20261105_current_overview_wehi_readonly.md)确认TME、V7来源等权/LOSO已在运行，K4已有计算收据，应接收现有产出，避免重复提交。

@@ -1,0 +1,35 @@
+{
+  "resource_version": "v7_epithelial_extension_v1",
+  "source_rows": 100,
+  "source_tissue_rows": 26,
+  "mapped_target_panels": 32,
+  "new_panels": 25,
+  "reused_panels": 7,
+  "base_panels": 112,
+  "merged_panels": 137,
+  "merged_unique_positive_genes": 473,
+  "original_gene_entries": 121,
+  "active_target_gene_entries": 119,
+  "directly_verified_target_gene_entries": 85,
+  "original_gene_entries_not_imported": 42,
+  "input_sha256": {
+    "source_tsv": "9311ff5fc7d3ae254759b2a2a9b91915513084fbf83cf948519a2b0260fde88d",
+    "base_registry": "83f7f01a5072a325eb65dffaf65565e000df43677a8085f4fb6172079f203268",
+    "base_gene_trace": "ad57b91ea6d82f0f3ddb519a6ba41588ba0e1682fb759b2cd86af0f9265fe7b5"
+  },
+  "altered_base_panels": [
+    "Epi_renal_tubular_like"
+  ],
+  "final_cell_label_changes": 0,
+  "author_exact_signature_claim": false,
+  "cell_level_annotation_executed": false,
+  "output_sha256": {
+    "ALL_PANELS.md": "10ceb349931e375915608208ae507299fb554f6fa6e9bc256be3b68bdd325b85",
+    "ORIGINAL_GENE_REVIEW.md": "88c17bb3e5d2d72f767beeca843022a9940c87c6402316654e71df96265f9518",
+    "active_gene_evidence.json": "56353a8fdebba640162f7aed96d941fd9e1ab5b326aa8ad7cd4057c4ea93391a",
+    "original_gene_disposition.json": "bd572f37c2506e1fa098e274754364e2dc8f88d361a39f7fae85352ea86f6ae7",
+    "registry_merged.json": "b86d81388094b163029fdd4473441542f9fb164dbbfbde246aa0e720d26b9dc3",
+    "source_tissue_rows.json": "4e20808135501ff498e8cad3d6e2930258c3f7fa1495185aae5ba3526995dd14",
+    "source_to_panels.json": "db0e7ce4d08650e135b9bcb4491834bfe494c2f1a5f4c022b511297642037fc1"
+  }
+}

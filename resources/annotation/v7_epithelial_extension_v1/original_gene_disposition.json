@@ -1,0 +1,2428 @@
+[
+  {
+    "source_label": "alveolar_AT2",
+    "original_gene": "SFTPC",
+    "canonical_gene": "SFTPC",
+    "target_panels": [
+      "Epi_AT2"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_AT2",
+        "gene": "SFTPC",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_AT2",
+          "gene": "SFTPC",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "alveolar_AT2",
+    "original_gene": "SFTPB",
+    "canonical_gene": "SFTPB",
+    "target_panels": [
+      "Epi_AT2"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_AT2",
+        "gene": "SFTPB",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_AT2",
+          "gene": "SFTPB",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "alveolar_AT2",
+    "original_gene": "SFTPA1",
+    "canonical_gene": "SFTPA1",
+    "target_panels": [
+      "Epi_AT2"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_AT2",
+        "gene": "SFTPA1",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_AT2",
+          "gene": "SFTPA1",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "alveolar_AT2",
+    "original_gene": "NAPSA",
+    "canonical_gene": "NAPSA",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "alveolar_AT2",
+    "original_gene": "LAMP3",
+    "canonical_gene": "LAMP3",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "alveolar_AT1",
+    "original_gene": "AGER",
+    "canonical_gene": "AGER",
+    "target_panels": [
+      "Epi_AT1"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_AT1",
+        "gene": "AGER",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_AT1",
+          "gene": "AGER",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "alveolar_AT1",
+    "original_gene": "CAV1",
+    "canonical_gene": "CAV1",
+    "target_panels": [
+      "Epi_AT1"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_AT1",
+        "gene": "CAV1",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_AT1",
+          "gene": "CAV1",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "alveolar_AT1",
+    "original_gene": "RTKN2",
+    "canonical_gene": "RTKN2",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "alveolar_AT1",
+    "original_gene": "EMP2",
+    "canonical_gene": "EMP2",
+    "target_panels": [
+      "Epi_AT1"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_AT1",
+        "gene": "EMP2",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_AT1",
+          "gene": "EMP2",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "club_secretory",
+    "original_gene": "SCGB1A1",
+    "canonical_gene": "SCGB1A1",
+    "target_panels": [
+      "Epi_club"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_club",
+        "gene": "SCGB1A1",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_club",
+          "gene": "SCGB1A1",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "club_secretory",
+    "original_gene": "SCGB3A1",
+    "canonical_gene": "SCGB3A1",
+    "target_panels": [
+      "Epi_club"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_club",
+        "gene": "SCGB3A1",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_club",
+          "gene": "SCGB3A1",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "club_secretory",
+    "original_gene": "BPIFB1",
+    "canonical_gene": "BPIFB1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "club_secretory",
+    "original_gene": "MSMB",
+    "canonical_gene": "MSMB",
+    "target_panels": [],
+    "disposition": "not_imported_into_airway_panel",
+    "evidence": [],
+    "reason": "Prostate luminal context; source note itself acknowledges sharing.",
+    "review_reference": {
+      "id": "Henry2018",
+      "title": "A Cellular Anatomy of the Normal Adult Human Prostate and Prostatic Urethra",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411034/",
+      "verified_scope": "正文Fig4及DEG：KLK3/ACPP(Mapped ACP3)/MSMB、KLK2；正常人前列腺参考，不能判恶性"
+    }
+  },
+  {
+    "source_label": "ciliated",
+    "original_gene": "FOXJ1",
+    "canonical_gene": "FOXJ1",
+    "target_panels": [
+      "Epi_ciliated"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_ciliated",
+        "gene": "FOXJ1",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_ciliated",
+          "gene": "FOXJ1",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "ciliated",
+    "original_gene": "CAPS",
+    "canonical_gene": "CAPS",
+    "target_panels": [
+      "Epi_ciliated"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_ciliated",
+        "gene": "CAPS",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_ciliated",
+          "gene": "CAPS",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "ciliated",
+    "original_gene": "TPPP3",
+    "canonical_gene": "TPPP3",
+    "target_panels": [
+      "Epi_ciliated"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_ciliated",
+        "gene": "TPPP3",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_ciliated",
+          "gene": "TPPP3",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "ciliated",
+    "original_gene": "RSPH1",
+    "canonical_gene": "RSPH1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "colonocyte",
+    "original_gene": "CA1",
+    "canonical_gene": "CA1",
+    "target_panels": [
+      "Epi_colonocyte_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_colonocyte_like",
+        "gene": "CA1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "HumanColonoid2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9922616/",
+            "locator": "Fig. 4 absorptive marker panel"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "colonocyte",
+    "original_gene": "CA2",
+    "canonical_gene": "CA2",
+    "target_panels": [
+      "Epi_colonocyte_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_colonocyte_like",
+        "gene": "CA2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "HumanColonoid2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9922616/",
+            "locator": "Fig. 4 absorptive marker panel"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "colonocyte",
+    "original_gene": "SLC26A3",
+    "canonical_gene": "SLC26A3",
+    "target_panels": [
+      "Epi_colonocyte_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_colonocyte_like",
+        "gene": "SLC26A3",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "HumanColonoid2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9922616/",
+            "locator": "Fig. 4 absorptive marker panel"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "colonocyte",
+    "original_gene": "CEACAM7",
+    "canonical_gene": "CEACAM7",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "colonocyte",
+    "original_gene": "GUCA2A",
+    "canonical_gene": "GUCA2A",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "goblet",
+    "original_gene": "MUC2",
+    "canonical_gene": "MUC2",
+    "target_panels": [
+      "Epi_intestinal_goblet_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_intestinal_goblet_like",
+        "gene": "MUC2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Burclaff2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+            "locator": "Goblet cell Results and marker plots"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "goblet",
+    "original_gene": "TFF3",
+    "canonical_gene": "TFF3",
+    "target_panels": [
+      "Epi_intestinal_goblet_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_intestinal_goblet_like",
+        "gene": "TFF3",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Burclaff2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+            "locator": "Goblet cell Results and marker plots"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "goblet",
+    "original_gene": "SPINK4",
+    "canonical_gene": "SPINK4",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "goblet",
+    "original_gene": "CLCA1",
+    "canonical_gene": "CLCA1",
+    "target_panels": [
+      "Epi_intestinal_goblet_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_intestinal_goblet_like",
+        "gene": "CLCA1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Burclaff2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+            "locator": "Goblet cell Results and marker plots"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "goblet",
+    "original_gene": "FCGBP",
+    "canonical_gene": "FCGBP",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "intestinal_stem",
+    "original_gene": "LGR5",
+    "canonical_gene": "LGR5",
+    "target_panels": [
+      "Epi_intestinal_stem_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_intestinal_stem_like",
+        "gene": "LGR5",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Burclaff2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+            "locator": "ISC/TA/Paneth comparison in Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "intestinal_stem",
+    "original_gene": "OLFM4",
+    "canonical_gene": "OLFM4",
+    "target_panels": [
+      "Epi_intestinal_stem_like"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_intestinal_stem_like",
+        "gene": "OLFM4",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Burclaff2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+            "locator": "ISC/TA/Paneth comparison in Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "intestinal_stem",
+    "original_gene": "ASCL2",
+    "canonical_gene": "ASCL2",
+    "target_panels": [
+      "Epi_intestinal_stem_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_intestinal_stem_like",
+        "gene": "ASCL2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Burclaff2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+            "locator": "ISC/TA/Paneth comparison in Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "intestinal_stem",
+    "original_gene": "SMOC2",
+    "canonical_gene": "SMOC2",
+    "target_panels": [],
+    "disposition": "excluded_from_identity_core",
+    "evidence": [],
+    "reason": "Human Paneth can show higher SMOC2; not an exclusive ISC marker.",
+    "review_reference": {
+      "id": "Burclaff2022",
+      "title": "A Proximal-to-Distal Survey of Healthy Adult Human Small Intestine and Colon Epithelium by Single-Cell Transcriptomics",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043569/",
+      "verified_scope": "Human intestine; ISC, TA, Paneth and goblet distinctions; SMOC2 is not an exclusive human ISC marker."
+    }
+  },
+  {
+    "source_label": "gastric_pit_mucous",
+    "original_gene": "MUC5AC",
+    "canonical_gene": "MUC5AC",
+    "target_panels": [
+      "Epi_gastric_pit_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_pit_like",
+        "gene": "MUC5AC",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_pit_mucous",
+    "original_gene": "TFF1",
+    "canonical_gene": "TFF1",
+    "target_panels": [
+      "Epi_gastric_pit_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_pit_like",
+        "gene": "TFF1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_pit_mucous",
+    "original_gene": "GKN1",
+    "canonical_gene": "GKN1",
+    "target_panels": [
+      "Epi_gastric_pit_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_pit_like",
+        "gene": "GKN1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_pit_mucous",
+    "original_gene": "GKN2",
+    "canonical_gene": "GKN2",
+    "target_panels": [
+      "Epi_gastric_pit_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_pit_like",
+        "gene": "GKN2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_pit_mucous",
+    "original_gene": "MUC6",
+    "canonical_gene": "MUC6",
+    "target_panels": [
+      "Epi_gastric_gland_mucous_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_gland_mucous_like",
+        "gene": "MUC6",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricMucins2004",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1770377/",
+            "locator": "Human biopsy localization and normal/microbial disease comparisons"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_chief_parietal",
+    "original_gene": "PGC",
+    "canonical_gene": "PGC",
+    "target_panels": [
+      "Epi_gastric_chief_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_chief_like",
+        "gene": "PGC",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_chief_parietal",
+    "original_gene": "PGA3",
+    "canonical_gene": "PGA3",
+    "target_panels": [
+      "Epi_gastric_chief_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_chief_like",
+        "gene": "PGA3",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_chief_parietal",
+    "original_gene": "LIPF",
+    "canonical_gene": "LIPF",
+    "target_panels": [
+      "Epi_gastric_chief_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_chief_like",
+        "gene": "LIPF",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_chief_parietal",
+    "original_gene": "ATP4A",
+    "canonical_gene": "ATP4A",
+    "target_panels": [
+      "Epi_gastric_parietal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_gastric_parietal_like",
+        "gene": "ATP4A",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Main epithelial marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "gastric_chief_parietal",
+    "original_gene": "GIF",
+    "canonical_gene": "GIF",
+    "target_panels": [],
+    "disposition": "symbol_and_species_review_pending",
+    "evidence": [],
+    "reason": "Do not transfer mouse chief-cell Gif logic to human; symbol update not silently applied.",
+    "review_reference": null
+  },
+  {
+    "source_label": "enteroendocrine_neuroendocrine",
+    "original_gene": "CHGA",
+    "canonical_gene": "CHGA",
+    "target_panels": [
+      "Epi_neuroendocrine_program"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_neuroendocrine_program",
+        "gene": "CHGA",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GastricCorpus2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10319429/",
+            "locator": "Endocrine marker figure"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "enteroendocrine_neuroendocrine",
+    "original_gene": "CHGB",
+    "canonical_gene": "CHGB",
+    "target_panels": [
+      "Epi_neuroendocrine_program"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_neuroendocrine_program",
+        "gene": "CHGB",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Results p.388 endocrine comparisons"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "enteroendocrine_neuroendocrine",
+    "original_gene": "SYP",
+    "canonical_gene": "SYP",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "enteroendocrine_neuroendocrine",
+    "original_gene": "SCG2",
+    "canonical_gene": "SCG2",
+    "target_panels": [
+      "Epi_neuroendocrine_program"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_neuroendocrine_program",
+        "gene": "SCG2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Results p.388 endocrine comparisons"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "enteroendocrine_neuroendocrine",
+    "original_gene": "PCSK1N",
+    "canonical_gene": "PCSK1N",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "pancreatic_acinar",
+    "original_gene": "PRSS1",
+    "canonical_gene": "PRSS1",
+    "target_panels": [
+      "Epi_pancreatic_acinar_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_acinar_like",
+        "gene": "PRSS1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D; Results p.388 coexpression"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "pancreatic_acinar",
+    "original_gene": "CPA1",
+    "canonical_gene": "CPA1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "pancreatic_acinar",
+    "original_gene": "CTRB1",
+    "canonical_gene": "CTRB1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "pancreatic_acinar",
+    "original_gene": "CELA3A",
+    "canonical_gene": "CELA3A",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "pancreatic_acinar",
+    "original_gene": "PNLIP",
+    "canonical_gene": "PNLIP",
+    "target_panels": [
+      "Epi_pancreatic_acinar_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_acinar_like",
+        "gene": "PNLIP",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D; Results p.388 coexpression"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "pancreatic_ductal",
+    "original_gene": "CFTR",
+    "canonical_gene": "CFTR",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "pancreatic_ductal",
+    "original_gene": "KRT19",
+    "canonical_gene": "KRT19",
+    "target_panels": [
+      "Epi_pancreatic_duct_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_duct_like",
+        "gene": "KRT19",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D and Results p.388 ductal cluster"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "pancreatic_ductal",
+    "original_gene": "SPP1",
+    "canonical_gene": "SPP1",
+    "target_panels": [
+      "Epi_pancreatic_duct_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_duct_like",
+        "gene": "SPP1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D and Results p.388 ductal cluster"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "pancreatic_ductal",
+    "original_gene": "MMP7",
+    "canonical_gene": "MMP7",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "pancreatic_ductal",
+    "original_gene": "SOX9",
+    "canonical_gene": "SOX9",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "islet",
+    "original_gene": "INS",
+    "canonical_gene": "INS",
+    "target_panels": [
+      "Epi_pancreatic_islet_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_islet_like",
+        "gene": "INS",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D and Results p.388"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "islet",
+    "original_gene": "GCG",
+    "canonical_gene": "GCG",
+    "target_panels": [
+      "Epi_pancreatic_islet_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_islet_like",
+        "gene": "GCG",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D and Results p.388"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "islet",
+    "original_gene": "SST",
+    "canonical_gene": "SST",
+    "target_panels": [
+      "Epi_pancreatic_islet_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_islet_like",
+        "gene": "SST",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D and Results p.388"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "islet",
+    "original_gene": "PPY",
+    "canonical_gene": "PPY",
+    "target_panels": [
+      "Epi_pancreatic_islet_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_pancreatic_islet_like",
+        "gene": "PPY",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Muraro2016",
+            "url": "https://www.hubrecht.eu/app/uploads/2017/11/VanOudenaarden_Key_2016-Muraro_A-single-cell-transcriptome-atlas-of-the-human-pancreas.pdf",
+            "locator": "Fig.1D and Results p.388"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "islet",
+    "original_gene": "TTR",
+    "canonical_gene": "TTR",
+    "target_panels": [],
+    "disposition": "not_imported_as_pan_islet_anchor",
+    "evidence": [],
+    "reason": "Not required across all endocrine subtypes; original source retained for later gene-context review.",
+    "review_reference": null
+  },
+  {
+    "source_label": "cholangiocyte",
+    "original_gene": "KRT7",
+    "canonical_gene": "KRT7",
+    "target_panels": [
+      "Epi_cholangiocyte_like"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_cholangiocyte_like",
+        "gene": "KRT7",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_cholangiocyte_like",
+          "gene": "KRT7",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "cholangiocyte",
+    "original_gene": "KRT19",
+    "canonical_gene": "KRT19",
+    "target_panels": [
+      "Epi_cholangiocyte_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_cholangiocyte_like",
+        "gene": "KRT19",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_cholangiocyte_like",
+          "gene": "KRT19",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "True",
+          "additional_primary_locator": "Aizarani2019:Fig3正文",
+          "source_locator": "NA",
+          "status": "gene_occurrence_verified_not_automatic_classifier"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "cholangiocyte",
+    "original_gene": "SOX9",
+    "canonical_gene": "SOX9",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "cholangiocyte",
+    "original_gene": "SPP1",
+    "canonical_gene": "SPP1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "cholangiocyte",
+    "original_gene": "ANXA4",
+    "canonical_gene": "ANXA4",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "breast_luminal",
+    "original_gene": "KRT18",
+    "canonical_gene": "KRT18",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "breast_luminal",
+    "original_gene": "ESR1",
+    "canonical_gene": "ESR1",
+    "target_panels": [
+      "Epi_breast_LumHR_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_breast_LumHR_like",
+        "gene": "ESR1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Kumar2023",
+            "url": "https://escholarship.org/content/qt81t478n0/qt81t478n0.pdf",
+            "locator": "Fig.3; smFISH spatial Results pp.7–8"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "breast_luminal",
+    "original_gene": "PGR",
+    "canonical_gene": "PGR",
+    "target_panels": [
+      "Epi_breast_LumHR_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_breast_LumHR_like",
+        "gene": "PGR",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Kumar2023",
+            "url": "https://escholarship.org/content/qt81t478n0/qt81t478n0.pdf",
+            "locator": "Fig.3; smFISH spatial Results pp.7–8"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "breast_luminal",
+    "original_gene": "ANKRD30A",
+    "canonical_gene": "ANKRD30A",
+    "target_panels": [
+      "Epi_breast_LumHR_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_breast_LumHR_like",
+        "gene": "ANKRD30A",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Kumar2023",
+            "url": "https://escholarship.org/content/qt81t478n0/qt81t478n0.pdf",
+            "locator": "Fig.3; smFISH spatial Results pp.7–8"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "breast_luminal",
+    "original_gene": "AZGP1",
+    "canonical_gene": "AZGP1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "breast_basal_myoepithelial",
+    "original_gene": "KRT5",
+    "canonical_gene": "KRT5",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "breast_basal_myoepithelial",
+    "original_gene": "KRT14",
+    "canonical_gene": "KRT14",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "breast_basal_myoepithelial",
+    "original_gene": "TP63",
+    "canonical_gene": "TP63",
+    "target_panels": [
+      "Epi_breast_basal_myo_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_breast_basal_myo_like",
+        "gene": "TP63",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Kumar2023",
+            "url": "https://escholarship.org/content/qt81t478n0/qt81t478n0.pdf",
+            "locator": "Results p.5 basal cells; Fig.3j"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "breast_basal_myoepithelial",
+    "original_gene": "ACTA2",
+    "canonical_gene": "ACTA2",
+    "target_panels": [
+      "Epi_breast_basal_myo_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_breast_basal_myo_like",
+        "gene": "ACTA2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Kumar2023",
+            "url": "https://escholarship.org/content/qt81t478n0/qt81t478n0.pdf",
+            "locator": "Results p.5 basal cells; Fig.3j"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "breast_basal_myoepithelial",
+    "original_gene": "OXTR",
+    "canonical_gene": "OXTR",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "prostate_luminal",
+    "original_gene": "KLK3",
+    "canonical_gene": "KLK3",
+    "target_panels": [
+      "Epi_prostate_luminal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_prostate_luminal_like",
+        "gene": "KLK3",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_prostate_luminal_like",
+          "gene": "KLK3",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "True",
+          "additional_primary_locator": "Henry2018:Fig4及正文DEG；ACPP映射ACP3",
+          "source_locator": "NA",
+          "status": "gene_occurrence_verified_not_automatic_classifier"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "prostate_luminal",
+    "original_gene": "KLK2",
+    "canonical_gene": "KLK2",
+    "target_panels": [
+      "Epi_prostate_luminal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_prostate_luminal_like",
+        "gene": "KLK2",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_prostate_luminal_like",
+          "gene": "KLK2",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "True",
+          "additional_primary_locator": "Henry2018:Fig4及正文DEG；ACPP映射ACP3",
+          "source_locator": "NA",
+          "status": "gene_occurrence_verified_not_automatic_classifier"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "prostate_luminal",
+    "original_gene": "AR",
+    "canonical_gene": "AR",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "prostate_luminal",
+    "original_gene": "NKX3-1",
+    "canonical_gene": "NKX3-1",
+    "target_panels": [
+      "Epi_prostate_luminal_like"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_prostate_luminal_like",
+        "gene": "NKX3-1",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_prostate_luminal_like",
+          "gene": "NKX3-1",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "False",
+          "additional_primary_locator": "NA",
+          "source_locator": "NA",
+          "status": "curated_gene_requires_gene_level_reference_review"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "prostate_luminal",
+    "original_gene": "ACPP",
+    "canonical_gene": "ACP3",
+    "target_panels": [
+      "Epi_prostate_luminal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_prostate_luminal_like",
+        "gene": "ACP3",
+        "status": "inherited_prior_trace",
+        "primary_hits": [],
+        "prior_trace": {
+          "panel": "Epi_prostate_luminal_like",
+          "gene": "ACP3",
+          "direction": "positive",
+          "direct_prior_author_table_hits": "0",
+          "evidence_kinds": "NA",
+          "additional_primary_text_hit": "True",
+          "additional_primary_locator": "Henry2018:Fig4及正文DEG；ACPP映射ACP3",
+          "source_locator": "NA",
+          "status": "gene_occurrence_verified_not_automatic_classifier"
+        },
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "prostate_basal_club",
+    "original_gene": "KRT5",
+    "canonical_gene": "KRT5",
+    "target_panels": [
+      "Epi_prostate_basal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_prostate_basal_like",
+        "gene": "KRT5",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Henry2018",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411034/",
+            "locator": "Basal epithelial identity in Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "prostate_basal_club",
+    "original_gene": "KRT15",
+    "canonical_gene": "KRT15",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "prostate_basal_club",
+    "original_gene": "TP63",
+    "canonical_gene": "TP63",
+    "target_panels": [
+      "Epi_prostate_basal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_prostate_basal_like",
+        "gene": "TP63",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Henry2018",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411034/",
+            "locator": "Basal epithelial identity in Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "prostate_basal_club",
+    "original_gene": "PIGR",
+    "canonical_gene": "PIGR",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "prostate_basal_club",
+    "original_gene": "LTF",
+    "canonical_gene": "LTF",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "urothelial",
+    "original_gene": "UPK1B",
+    "canonical_gene": "UPK1B",
+    "target_panels": [
+      "Epi_urothelial_differentiated_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_urothelial_differentiated_like",
+        "gene": "UPK1B",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Yu2019",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6830796/",
+            "locator": "Human epithelial marker table and umbrella/intermediate Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "urothelial",
+    "original_gene": "UPK2",
+    "canonical_gene": "UPK2",
+    "target_panels": [
+      "Epi_urothelial_differentiated_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_urothelial_differentiated_like",
+        "gene": "UPK2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Yu2019",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6830796/",
+            "locator": "Human epithelial marker table and umbrella/intermediate Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "urothelial",
+    "original_gene": "UPK3A",
+    "canonical_gene": "UPK3A",
+    "target_panels": [
+      "Epi_urothelial_differentiated_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_urothelial_differentiated_like",
+        "gene": "UPK3A",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Yu2019",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6830796/",
+            "locator": "Human epithelial marker table and umbrella/intermediate Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "urothelial",
+    "original_gene": "KRT13",
+    "canonical_gene": "KRT13",
+    "target_panels": [
+      "Epi_urothelial_differentiated_like"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_urothelial_differentiated_like",
+        "gene": "KRT13",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Yu2019",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6830796/",
+            "locator": "Human epithelial marker table and umbrella/intermediate Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "urothelial",
+    "original_gene": "GATA3",
+    "canonical_gene": "GATA3",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "kidney_tubule",
+    "original_gene": "UMOD",
+    "canonical_gene": "UMOD",
+    "target_panels": [
+      "Epi_kidney_TAL_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_kidney_TAL_like",
+        "gene": "UMOD",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "KidneyProtein2014",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0116125",
+            "locator": "Table 1 and Fig.4 protein localization"
+          },
+          {
+            "reference_id": "Lake2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+            "locator": "Fig.3d p.589 marker labels (healthy/altered Visium comparison) / TAL segmentation"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "kidney_tubule",
+    "original_gene": "SLC34A1",
+    "canonical_gene": "SLC34A1",
+    "target_panels": [
+      "Epi_renal_tubular_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_renal_tubular_like",
+        "gene": "SLC34A1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "KidneyProtein2014",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0116125",
+            "locator": "Table 1 and Fig.4 proximal luminal membrane"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "kidney_tubule",
+    "original_gene": "LRP2",
+    "canonical_gene": "LRP2",
+    "target_panels": [
+      "Epi_renal_tubular_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_renal_tubular_like",
+        "gene": "LRP2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Lake2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+            "locator": "Fig.3d p.589 marker labels (healthy/altered Visium comparison), PT"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "kidney_tubule",
+    "original_gene": "CUBN",
+    "canonical_gene": "CUBN",
+    "target_panels": [
+      "Epi_renal_tubular_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_renal_tubular_like",
+        "gene": "CUBN",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Lake2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+            "locator": "Fig.3d p.589 marker labels (healthy/altered Visium comparison), PT"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "kidney_tubule",
+    "original_gene": "SLC12A1",
+    "canonical_gene": "SLC12A1",
+    "target_panels": [
+      "Epi_kidney_TAL_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_kidney_TAL_like",
+        "gene": "SLC12A1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "KidneyProtein2014",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0116125",
+            "locator": "Table 1 and Fig.4 protein localization"
+          },
+          {
+            "reference_id": "Lake2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+            "locator": "Fig.3d p.589 marker labels (healthy/altered Visium comparison) / TAL segmentation"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "kidney_collecting_podocyte",
+    "original_gene": "AQP2",
+    "canonical_gene": "AQP2",
+    "target_panels": [
+      "Epi_kidney_principal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_kidney_principal_like",
+        "gene": "AQP2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "KidneyProtein2014",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0116125",
+            "locator": "Fig.4 collecting duct localization"
+          },
+          {
+            "reference_id": "Lake2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+            "locator": "Fig.3d p.589 marker labels (healthy/altered Visium comparison), PC"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "kidney_collecting_podocyte",
+    "original_gene": "NPHS1",
+    "canonical_gene": "NPHS1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "kidney_collecting_podocyte",
+    "original_gene": "NPHS2",
+    "canonical_gene": "NPHS2",
+    "target_panels": [
+      "Epi_kidney_podocyte_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_kidney_podocyte_like",
+        "gene": "NPHS2",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "KidneyProtein2014",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0116125",
+            "locator": "Highly kidney-enriched genes / glomerular localization"
+          },
+          {
+            "reference_id": "Lake2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+            "locator": "Fig.3d p.589 marker labels (healthy/altered Visium comparison), POD"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "kidney_collecting_podocyte",
+    "original_gene": "PODXL",
+    "canonical_gene": "PODXL",
+    "target_panels": [
+      "Epi_kidney_podocyte_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_kidney_podocyte_like",
+        "gene": "PODXL",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Lake2023",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10356613/",
+            "locator": "Fig.3d p.589 marker labels (healthy/altered Visium comparison), POD"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "thyroid_follicular",
+    "original_gene": "TG",
+    "canonical_gene": "TG",
+    "target_panels": [
+      "Epi_thyroid_follicular_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_thyroid_follicular_like",
+        "gene": "TG",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "ThyroidOrganoid2021",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8713972/",
+            "locator": "Human Fig.2C,D and Fig.4B,D–F"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "thyroid_follicular",
+    "original_gene": "TPO",
+    "canonical_gene": "TPO",
+    "target_panels": [
+      "Epi_thyroid_follicular_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_thyroid_follicular_like",
+        "gene": "TPO",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "ThyroidOrganoid2021",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8713972/",
+            "locator": "Human Fig.2C,D and Fig.4B,D–F"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "thyroid_follicular",
+    "original_gene": "TSHR",
+    "canonical_gene": "TSHR",
+    "target_panels": [
+      "Epi_thyroid_follicular_like"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_thyroid_follicular_like",
+        "gene": "TSHR",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "ThyroidOrganoid2021",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8713972/",
+            "locator": "Human Fig.2C,D and Fig.4B,D–F"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "thyroid_follicular",
+    "original_gene": "PAX8",
+    "canonical_gene": "PAX8",
+    "target_panels": [
+      "Epi_thyroid_follicular_like"
+    ],
+    "disposition": "retained_auxiliary_review",
+    "evidence": [
+      {
+        "panel": "Epi_thyroid_follicular_like",
+        "gene": "PAX8",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "ThyroidOrganoid2021",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8713972/",
+            "locator": "Human Fig.2C,D and Fig.4B,D–F"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "mullerian_secretory",
+    "original_gene": "PAX8",
+    "canonical_gene": "PAX8",
+    "target_panels": [
+      "Epi_fallopian_secretory_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_fallopian_secretory_like",
+        "gene": "PAX8",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "FallopianAtlas",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11698969/",
+            "locator": "Secretory epithelial populations and OVGP1 histological validation"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "mullerian_secretory",
+    "original_gene": "OVGP1",
+    "canonical_gene": "OVGP1",
+    "target_panels": [
+      "Epi_fallopian_secretory_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_fallopian_secretory_like",
+        "gene": "OVGP1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "FallopianAtlas",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11698969/",
+            "locator": "Secretory epithelial populations and OVGP1 histological validation"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "mullerian_secretory",
+    "original_gene": "MSLN",
+    "canonical_gene": "MSLN",
+    "target_panels": [],
+    "disposition": "not_imported_as_universal_mullerian_marker",
+    "evidence": [],
+    "reason": "Shared program, existing Epi_MSLN state remains separate.",
+    "review_reference": null
+  },
+  {
+    "source_label": "mullerian_secretory",
+    "original_gene": "WT1",
+    "canonical_gene": "WT1",
+    "target_panels": [],
+    "disposition": "not_imported_as_universal_mullerian_marker",
+    "evidence": [],
+    "reason": "Requires organ/cell-specific evidence; not a universal secretory identity.",
+    "review_reference": null
+  },
+  {
+    "source_label": "endometrial",
+    "original_gene": "PAEP",
+    "canonical_gene": "PAEP",
+    "target_panels": [
+      "Epi_endometrial_secretory_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_endometrial_secretory_like",
+        "gene": "PAEP",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "GarciaAlonso2021",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8648563/",
+            "locator": "Secretory-phase and spatial glandular Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "endometrial",
+    "original_gene": "MSX1",
+    "canonical_gene": "MSX1",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "endometrial",
+    "original_gene": "SOX17",
+    "canonical_gene": "SOX17",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "endometrial",
+    "original_gene": "MMP26",
+    "canonical_gene": "MMP26",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "squamous_suprabasal",
+    "original_gene": "KRT4",
+    "canonical_gene": "KRT4",
+    "target_panels": [
+      "Epi_squamous_suprabasal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_squamous_suprabasal_like",
+        "gene": "KRT4",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Esophagus2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9208762/",
+            "locator": "Human suprabasal epithelial Results"
+          },
+          {
+            "reference_id": "EsophagusMapping2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9720751/",
+            "locator": "Mid/terminal differentiation Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "squamous_suprabasal",
+    "original_gene": "KRT13",
+    "canonical_gene": "KRT13",
+    "target_panels": [
+      "Epi_squamous_suprabasal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_squamous_suprabasal_like",
+        "gene": "KRT13",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Esophagus2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9208762/",
+            "locator": "Human suprabasal epithelial Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "squamous_suprabasal",
+    "original_gene": "SPRR1A",
+    "canonical_gene": "SPRR1A",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "squamous_suprabasal",
+    "original_gene": "SPRR3",
+    "canonical_gene": "SPRR3",
+    "target_panels": [],
+    "disposition": "not_imported_pending_gene_context_review",
+    "evidence": []
+  },
+  {
+    "source_label": "squamous_suprabasal",
+    "original_gene": "CRNN",
+    "canonical_gene": "CRNN",
+    "target_panels": [
+      "Epi_squamous_suprabasal_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_squamous_suprabasal_like",
+        "gene": "CRNN",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "EsophagusMapping2022",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9720751/",
+            "locator": "Mid/terminal differentiation Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "keratinocyte",
+    "original_gene": "KRT1",
+    "canonical_gene": "KRT1",
+    "target_panels": [
+      "Epi_keratinocyte_differentiated_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_keratinocyte_differentiated_like",
+        "gene": "KRT1",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Cheng2018",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6367716/",
+            "locator": "Spinous/granular differentiation Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "keratinocyte",
+    "original_gene": "KRT10",
+    "canonical_gene": "KRT10",
+    "target_panels": [
+      "Epi_keratinocyte_differentiated_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_keratinocyte_differentiated_like",
+        "gene": "KRT10",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Cheng2018",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6367716/",
+            "locator": "Spinous/granular differentiation Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "keratinocyte",
+    "original_gene": "LOR",
+    "canonical_gene": "LOR",
+    "target_panels": [
+      "Epi_keratinocyte_differentiated_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_keratinocyte_differentiated_like",
+        "gene": "LOR",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Cheng2018",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6367716/",
+            "locator": "Spinous/granular differentiation Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  },
+  {
+    "source_label": "keratinocyte",
+    "original_gene": "FLG",
+    "canonical_gene": "FLG",
+    "target_panels": [
+      "Epi_keratinocyte_differentiated_like"
+    ],
+    "disposition": "retained_core_review",
+    "evidence": [
+      {
+        "panel": "Epi_keratinocyte_differentiated_like",
+        "gene": "FLG",
+        "status": "primary_gene_context_verified",
+        "primary_hits": [
+          {
+            "reference_id": "Cheng2018",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6367716/",
+            "locator": "Spinous/granular differentiation Results"
+          }
+        ],
+        "prior_trace": null,
+        "interpretation": "Gene occurrence/context only; not specificity, a validated cutoff or an exact author signature."
+      }
+    ]
+  }
+]
