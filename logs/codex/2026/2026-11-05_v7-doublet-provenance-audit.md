@@ -35,3 +35,5 @@ K-09的245个本轮联合候选原来全部已运行Scrublet且未被判阳性�
 发布使用独立干净worktree；fetch发现并发新TME提交，已普通fast-forward到432b8a6并保留全部变更。主工作区15项tracked并发修改保留。新增[结果目录](../../../inventories/analysis/2026-11-05/v7_doublet_provenance_audit_v1/README.md)、方法/run/daily及4份实际执行body代码；T6证据页追加历史处理澄清。隐私/diff/仓库检查和普通push收据在完成后追加。
 
 发布前实际检查：28个显式文件约409KB（含既有STATUS全文件大小），源码body SHA逐项记录、Python AST通过、隐私扫描无本机/服务器私有路径或凭据。完整仓库轻量验证0 errors/1既有warning，无断裂相对链接；git staged diff whitespace检查exit0。所有患者/样本/细胞行、矩阵和完整stdout留私有；源级汇总和代码单独暂存。普通push和独立远端SHA须在成功后另记，当前准备记录不冒称已发布。
+
+内容commit92aa7ca的首次普通push因并发main前进而non-fast-forward拒绝。fetch到790a51c后保留两边历史普通merge；部分检出首次在默认网络下缺promisor对象，网络授权后补取成功。STATUS与run索引均为双方尾部追加冲突，已逐段同时保留并断言两块文本完整，无删除/历史改写。合并后仓库再验0 errors/1既有warning。本任务相对最新远端的28文件diff whitespace为0；merge暂存差异另报告远端已存在的annotation_gene_panel_v1.tsv空末列tab，未擅改并发panel。科学证据与四份执行body不变，后续普通push和独立SHA另记。

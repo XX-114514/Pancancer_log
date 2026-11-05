@@ -1726,3 +1726,10 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [x] 审查 162 个旧候选与 17 组父类正负 panel；复算 40 群/373 候选，记录规则缺陷与证据边界。
 - [ ] 按[修订约束](methods/V7-panel-semantics-audit-20261105.md)先核 Tcell_4/Tcell_6 及已命名 CD4-naïve/CD8-cytotoxic 群；分别验收父身份、分支与状态。
 - [ ] 对 9 群被遮蔽的候选完成谱系适用性、群内混合和跨来源验证；不能把旧最低基因条件当成新标签验收。
+
+### V7 panel修复后的执行门槛（2026-11-05）
+
+- [x] 新版112模块/409基因、旧162完整迁移和逐基因依据；取消污染赢家/跨轴margin，完成代码反例与服务器合成QC测试。
+- [ ] 在T/NK/ILC共同范围提取新版完整基因证据，复核T6 helper/Treg及混合RNA；不能直接按新panel整群转标签。
+- [ ] 按谱系真实重建、来源/患者留出复现、人工命名验收；允许红系/HSPC/ILC等停在已验证大类。
+- [ ] 补齐368条逐基因原始参考核实及3个模块的参考适配缺口；需要UCell时先验证官方包/可选分支。
