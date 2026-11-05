@@ -1,0 +1,43 @@
+{
+  "registry_panels": 112,
+  "unique_genes": 409,
+  "old_panels_mapped": 162,
+  "python_tests_passed": 15,
+  "synthetic_audit": {
+    "status": "PASS",
+    "scope": "synthetic only",
+    "retained_cells": 356,
+    "expected_QC_excluded": 4,
+    "n_clusters": 3,
+    "expression_rows_checked": 1227,
+    "max_abs_cp10k_error": 4.6896e-13,
+    "same_cell_Treg_rows_checked": 6,
+    "source_missingness_checked": true,
+    "final_cell_labels_assigned": 0
+  },
+  "workbook_sheets_visually_reviewed": 4,
+  "formula_errors_found": 0,
+  "complete_V7_reannotation_executed": false,
+  "optional_R_UCell_executed": false,
+  "optional_Harmony_smoke_executed": false,
+  "code_sha256": {
+    "run_smoke.py": "5f3244edd7477314d6d3ea14d01962188a80cc84e4288bdb9952d9311c16a0f2",
+    "test_evidence_engine.py": "f34e45678f53607ac09c6ea0b34d3b89c851feee1b8c438c7911eeabac63d0a9",
+    "verify_smoke.R": "21701d6c095bb0f01e8dc6cd763a2310c01ad0e940cac44bbcb72f7ef55f80f9",
+    "README.md": "a6d649e80360bffc06c8fdc5d5b5050281a5aa669fcc3ae129367adf1b9ae426",
+    "evidence_engine.py": "12edaca87701ce374b3a48433812f81d7a1f621cc64ac8543f062f3f8fdbfe91",
+    "replay_aggregates.py": "a274014fccdf7f71eaec061f81c869aff230b33b8cc0354ac4c699e5d906f832",
+    "lineage_workflow.R": "a5f847ed915c6673873e0a10cdc9ef190444304bcacaf6373111e05cd9f1f2fd",
+    "smoke_fixture.R": "653f8283d74be0dbea375d7df9a7cf9f2b6f1bf4ba15a21870d8585d78cfae4c"
+  },
+  "resource_sha256": {
+    "registry.json": "83f7f01a5072a325eb65dffaf65565e000df43677a8085f4fb6172079f203268",
+    "V7_panel_repair_v1.xlsx": "c7b0a53aa10e6c5ea1497bf25988e8dd1141a486c9da58bb86ea5aa90976505e",
+    "ALL_PANELS.md": "a84a96b65c7901120c40578d6613582c668f25ceb956f39501286d68d87da106",
+    "README.md": "b1580b016c19dfd188bbee85ea704e85ce6074f8a598b7ac2b262191a3f15c9b",
+    "references.tsv": "9d9bf1099586808c19409d07451c3da410c22a49dccfcc8f59c81f778af177a3",
+    "gene_reference_trace.tsv": "ad57b91ea6d82f0f3ddb519a6ba41588ba0e1682fb759b2cd86af0f9265fe7b5",
+    "old162_to_new.tsv": "0b251704dee103703eb3e8069023aa1055949d3865cc52e6e2a1cf28915070d8",
+    "all_new_panels.tsv": "dac0eb80e15926937fed81da29888bc060236020184aa3597e1ccef672a34f1d"
+  }
+}

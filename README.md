@@ -1,5 +1,7 @@
 # PanCancer
 
+> **V7 panel修复（2026-11-05）**：[完整112项基因表与162项旧规则迁移](resources/annotation/v7_panel_repair_v1/README.md) · [Excel](resources/annotation/v7_panel_repair_v1/V7_panel_repair_v1.xlsx) · [文献与算法说明](methods/V7-panel-repair-literature-workflow-20261105.md)。新版规则和验证已交付，全V7逐细胞重新注释仍待完成。
+
 > **当前研究工作总览**：[当前研究进展、正在推进的分析与下一阶段任务](docs/homepage/07_current_work.md)（2026-11-05）。按研究依赖阅读任务、数据/UMAP/CM/空间与临床图件、验证边界及下一步；下文保留历史0906研究叙事。
 
 > **服务器分析最新审计（2026-11-05）**：[系统总览、版本/证据与交接](docs/reports/20261105_server_analysis_audit/README.md)。本首页展示历史0906版本；V7重算、扩展72来源TME、空间验证限制和NMF稳定性请以上述新报告为准。

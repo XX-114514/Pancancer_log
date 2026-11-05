@@ -2398,3 +2398,7 @@ Tcell_6旧winner排序遗漏完整Treg候选的原因已实证；补查841/842�
 [Tcell_6当前证据与四张图](inventories/analysis/2026-11-05/v7_literature_guided_v1/T6_diagnostic_v1/README.md)：全156631细胞/95038基因重建实际exit0，12工作分区、1212 marker记录与156631背景分位独立算术复核PASS。36484细胞的CD4/CXCL13程序不能按CellTypist多数票全部转Treg；IFN、激活和GZMK等状态独立描述。25753细胞的必要marker组件不可测，已与低正证据分开；845联合doublet候选未确诊。极小群、Ig/髓系混合程序、完整T/NK/ILC边界和最终亚型仍待验收。
 
 以上为新阶段实测状态；较早27群或“仍在运行”节点仅是历史背景。具体参数、失败恢复、限制和下一步见[run](runs/20261105_v7_literature_guided_reannotation_v1.md)。
+
+### V7全panel修复与可执行证据流程（2026-11-05）
+
+[新版112模块/409基因及162项完整迁移](resources/annotation/v7_panel_repair_v1/README.md)已交付，身份、状态、同种型、边界分开，43项contamination取消亚型赢家地位。15项反例测试、服务器356细胞合成QC重建与1227表达行独立算术审计通过；旧40群与最新T6 12群真实聚合回放完成。21项来源附适用范围，3个模块及368条逐基因依据仍保留明确复核缺口。R UCell未执行，未据此更改全V7最终标签。见[方法](methods/V7-panel-repair-literature-workflow-20261105.md)与[run](runs/20261105_v7_panel_repair_v1.md)。
