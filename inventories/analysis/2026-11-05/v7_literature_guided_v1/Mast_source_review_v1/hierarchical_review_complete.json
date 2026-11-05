@@ -1,0 +1,9 @@
+{
+  "status": "completed_hierarchical_Mast_review_schema_v2",
+  "UTC": "2026-11-05T05:07:08.546315+00:00",
+  "n_cells": 45036,
+  "n_resolved_at_major": 38959,
+  "original_labels_exact": true,
+  "fine_subtypes_assigned": 0,
+  "cell_level_data_private": true
+}

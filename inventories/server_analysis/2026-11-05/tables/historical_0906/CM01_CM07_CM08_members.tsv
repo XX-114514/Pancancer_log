@@ -1,0 +1,31 @@
+cm	rank	subCluster	majorCluster	weight	weight_fraction	review_flag	cm_class_heuristic	top10_review_fraction	n_available	n_gse	n_samples	identity_gene_support	recommendation	in_resolved_core
+CM01	1	Bcell_Naive_TCL1A	Bcell	0.150190658123398	0.150190658123398	False	conserved	0.4	129522.0	53.0	1047.0	0.0	keep_exact_label_watch_identity	True
+CM01	2	NK_FCGR3A_cytotoxic_FCGR3A	NK	0.14172450526574	0.14172450526574	False	conserved	0.4	60881.0	52.0	918.0	1.0	keep_exact_label	True
+CM01	3	ILC_unresolved	ILC	0.118261918786689	0.118261918786689	True	conserved	0.4						False
+CM01	4	Monocyte_Classical_FCN1_FCN1	Monocyte	0.114671187771176	0.114671187771176	False	conserved	0.4	16258.0	48.0	716.0	0.0	keep_exact_label_watch_identity	True
+CM01	5	Macrophage_SPP1_TREM2_SPP1	Macrophage	0.0804899259479998	0.0804899259479998	False	conserved	0.4	70223.0	52.0	855.0	0.0	keep_exact_label_watch_identity	True
+CM01	6	Plasma_unresolved	Plasma	0.0681071481158349	0.0681071481158349	True	conserved	0.4						False
+CM01	7	Tcell_unresolved	Tcell	0.0677744714259704	0.0677744714259704	True	conserved	0.4						False
+CM01	8	Tcell_CD4_naive_IL7R	Tcell	0.0626339683896403	0.0626339683896403	False	conserved	0.4	519131.0	53.0	1245.0	1.0	keep_exact_label	True
+CM01	9	Endothelial_Blood_PECAM1	Endothelial	0.058308321449165	0.058308321449165	False	conserved	0.4				0.0	collapse_to_background_recommended	False
+CM01	10	Dendritic_unresolved	Dendritic	0.0537124412021984	0.0537124412021984	True	conserved	0.4						False
+CM07	1	Granulocyte_unresolved	Granulocyte	0.194144831645863	0.1941448316458629	True	conserved	0.7						False
+CM07	2	Fibroblast_myCAF_ACTA2	Fibroblast	0.116412861117267	0.1164128611172669	False	conserved	0.7	71796.0	51.0	847.0	1.0	keep_exact_label	True
+CM07	3	Malignant::Epithelial	Epithelial	0.106660785199642	0.1066607851996419	False	conserved	0.7	212624.0	46.0	512.0	1.0	keep_exact_label	True
+CM07	4	Plasma_unresolved	Plasma	0.100133682688977	0.1001336826889769	True	conserved	0.7						False
+CM07	5	Mast_unresolved	Mast	0.0906596895852849	0.0906596895852848	True	conserved	0.7						False
+CM07	6	Monocyte_Inflammatory_IL1B_IL1B	Monocyte	0.0763529504935865	0.0763529504935864	False	conserved	0.7	40627.0	50.0	970.0	1.0	keep_exact_label	True
+CM07	7	Bcell_unresolved	Bcell	0.0713539608513538	0.0713539608513537	True	conserved	0.7						False
+CM07	8	Endothelial_unresolved	Endothelial	0.0529255077999218	0.0529255077999217	True	conserved	0.7						False
+CM07	9	Dendritic_unresolved	Dendritic	0.0507810730278828	0.0507810730278827	True	conserved	0.7						False
+CM07	10	Macrophage_unresolved	Macrophage	0.0329991654192094	0.0329991654192093	True	conserved	0.7						False
+CM08	1	Monocyte_Inflammatory_IL1B_IL1B	Monocyte	0.173208207659962	0.1732082076599622	False	conserved	0.0	40627.0	50.0	970.0	1.0	keep_exact_label	True
+CM08	2	Macrophage_Inflammatory_IL1B_IL1B	Macrophage	0.166362769658215	0.1663627696582152	False	conserved	0.0	140987.0	52.0	1045.0	1.0	keep_exact_label	True
+CM08	3	NK_XCL1_CD56bright_XCL1	NK	0.115327340588454	0.1153273405884541	False	conserved	0.0	37526.0	51.0	996.0	1.0	keep_exact_label	True
+CM08	4	Bcell_Naive_IGHD	Bcell	0.0757517022590637	0.0757517022590638	False	conserved	0.0	106404.0	53.0	702.0	0.0	keep_exact_label_watch_identity	True
+CM08	5	Endothelial_Blood_PECAM1	Endothelial	0.0662356313941439	0.0662356313941439	False	conserved	0.0				0.0	collapse_to_background_recommended	False
+CM08	6	Endothelial_Venous_ACKR1_ACKR1	Endothelial	0.0618653777759493	0.0618653777759493	False	conserved	0.0				0.0	collapse_to_background_recommended	False
+CM08	7	Tcell_CD8_cytotoxic_CCL5	Tcell	0.061211031900157	0.061211031900157	False	conserved	0.0	496996.0	52.0	1221.0	1.0	keep_exact_label	True
+CM08	8	Mast_Activated_IL1RL1_IL1RL1	Mast	0.0583304968001191	0.0583304968001191	False	conserved	0.0	10942.0	42.0	472.0	0.0	keep_exact_label_watch_identity	True
+CM08	9	Fibroblast_myCAF_ACTA2	Fibroblast	0.0500682009956942	0.0500682009956942	False	conserved	0.0	71796.0	51.0	847.0	1.0	keep_exact_label	True
+CM08	10	Dendritic_pDC_LILRA4	Dendritic	0.0472521259123557	0.0472521259123557	False	conserved	0.0	2054.0	47.0	464.0	1.0	keep_exact_label	True

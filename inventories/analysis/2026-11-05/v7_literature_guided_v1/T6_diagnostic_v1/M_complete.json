@@ -1,0 +1,11 @@
+{
+  "status": "completed_T6_hierarchical_working_overlay",
+  "UTC": "2026-11-05T05:20:19.039770+00:00",
+  "n_cells": 156631,
+  "n_clusters": 12,
+  "old_fields_preserved": true,
+  "n_final_subtypes_assigned": 0,
+  "n_Treg_positive_RNA_candidates": 35287,
+  "n_Treg_positive_RNA_sources": 44,
+  "limits": "Cluster labels are marker-guided review hypotheses, not labels transferred to every cell. Tfh/Tph, resting/effector Treg and CD8 exhaustion are not forced. Multiple-resolution overlap is diagnostic, not a held-out replication."
+}

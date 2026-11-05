@@ -1,0 +1,23 @@
+{
+ "cells": 3383398,
+ "sources": 71,
+ "units": 1211,
+ "patients": 978,
+ "tme_flag": {
+  "non_malignant": 3015706,
+  "uncertain_malignancy_kept": 367692
+ },
+ "compartment": {
+  "T_NK": 1455379,
+  "myeloid": 721207,
+  "B_plasma": 363070,
+  "stromal": 249765,
+  "epithelial_nonmalignant": 237278,
+  "endothelial": 163804,
+  "unresolved": 155989,
+  "melanocytic_nonmalignant": 36906
+ },
+ "clusters": 101,
+ "common_genes": 12563,
+ "hvg": 4000
+}

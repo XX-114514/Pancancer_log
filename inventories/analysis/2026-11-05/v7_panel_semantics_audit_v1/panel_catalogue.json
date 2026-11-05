@@ -1,0 +1,3737 @@
+[
+  {
+    "major": "Tcell",
+    "old_panel": "CD4_naive",
+    "genes": [
+      "IL7R",
+      "CCR7",
+      "TCF7",
+      "LEF1",
+      "SELL",
+      "MAL",
+      "LTB"
+    ],
+    "canonical": [
+      "IL7R",
+      "CCR7",
+      "TCF7"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD4_Tfh",
+    "genes": [
+      "BCL6",
+      "CXCL13",
+      "PDCD1",
+      "ICOS",
+      "TOX2",
+      "SH2D1A"
+    ],
+    "canonical": [
+      "BCL6",
+      "CXCL13",
+      "ICOS"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD4_Th1",
+    "genes": [
+      "TBX21",
+      "CXCR3",
+      "IFNG",
+      "STAT4",
+      "IL12RB2"
+    ],
+    "canonical": [
+      "TBX21",
+      "CXCR3",
+      "IFNG"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD4_Th17",
+    "genes": [
+      "RORC",
+      "CCR6",
+      "IL17A",
+      "IL17F",
+      "KLRB1"
+    ],
+    "canonical": [
+      "RORC",
+      "CCR6",
+      "IL17A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD4_Treg",
+    "genes": [
+      "FOXP3",
+      "IKZF2",
+      "IL2RA",
+      "TNFRSF4",
+      "CTLA4",
+      "TIGIT"
+    ],
+    "canonical": [
+      "FOXP3",
+      "IKZF2",
+      "IL2RA"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD8_naive",
+    "genes": [
+      "CCR7",
+      "SELL",
+      "TCF7",
+      "LEF1",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CCR7",
+      "SELL",
+      "TCF7"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD8_GZMK",
+    "genes": [
+      "GZMK",
+      "GZMA",
+      "CXCR3",
+      "IL7R",
+      "CCL5"
+    ],
+    "canonical": [
+      "GZMK",
+      "GZMA"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD8_cytotoxic",
+    "genes": [
+      "CCL5",
+      "NKG7",
+      "GZMB",
+      "PRF1",
+      "FGFBP2",
+      "GNLY"
+    ],
+    "canonical": [
+      "CCL5",
+      "GZMB",
+      "PRF1",
+      "FGFBP2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "CD8_exhausted",
+    "genes": [
+      "PDCD1",
+      "HAVCR2",
+      "LAG3",
+      "TIGIT",
+      "TOX",
+      "CXCL13"
+    ],
+    "canonical": [
+      "PDCD1",
+      "HAVCR2",
+      "CXCL13"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "Tissue_resident",
+    "genes": [
+      "CD69",
+      "ITGAE",
+      "CXCR6",
+      "ZNF683",
+      "RGS1"
+    ],
+    "canonical": [
+      "ITGAE",
+      "ZNF683",
+      "CXCR6"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "MAIT",
+    "genes": [
+      "KLRB1",
+      "SLC4A10",
+      "CXCR6",
+      "TRAV1-2",
+      "ZBTB16"
+    ],
+    "canonical": [
+      "SLC4A10",
+      "KLRB1",
+      "ZBTB16"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "gamma_delta",
+    "genes": [
+      "TRDC",
+      "TRGC1",
+      "TRGC2",
+      "KLRB1",
+      "KLRG1"
+    ],
+    "canonical": [
+      "TRDC",
+      "TRGC1",
+      "TRGC2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "IFN_T",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "Cycling_T",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1",
+      "TYMS"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "NK_contamination",
+    "genes": [
+      "GNLY",
+      "NKG7",
+      "KLRD1",
+      "FCGR3A",
+      "TYROBP"
+    ],
+    "canonical": [
+      "GNLY",
+      "KLRD1",
+      "TYROBP"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "Bcell_contamination",
+    "genes": [
+      "MS4A1",
+      "CD79A",
+      "CD79B",
+      "CD19",
+      "BANK1",
+      "CD37"
+    ],
+    "canonical": [
+      "MS4A1",
+      "CD79A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Tcell",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "NK",
+    "old_panel": "FCGR3A_cytotoxic",
+    "genes": [
+      "FCGR3A",
+      "FGFBP2",
+      "GNLY",
+      "PRF1",
+      "GZMB",
+      "KLRD1"
+    ],
+    "canonical": [
+      "FCGR3A",
+      "FGFBP2",
+      "GNLY",
+      "PRF1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "XCL1_CD56bright",
+    "genes": [
+      "XCL1",
+      "XCL2",
+      "KLRC1",
+      "NCAM1",
+      "GZMK",
+      "IL7R"
+    ],
+    "canonical": [
+      "XCL1",
+      "XCL2",
+      "KLRC1",
+      "NCAM1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "Tissue_resident",
+    "genes": [
+      "CD69",
+      "ITGAE",
+      "CXCR6",
+      "ZNF683",
+      "XCL1"
+    ],
+    "canonical": [
+      "ITGAE",
+      "CXCR6",
+      "ZNF683"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "Adaptive_KLRC2",
+    "genes": [
+      "KLRC2",
+      "FCER1G",
+      "TYROBP",
+      "KLRD1",
+      "TRDC"
+    ],
+    "canonical": [
+      "KLRC2",
+      "FCER1G"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "NKT_like",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "NKG7",
+      "KLRD1"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "IFN_NK",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "Cycling_NK",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1",
+      "TYMS"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "NK",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "ILC",
+    "old_panel": "ILC1",
+    "genes": [
+      "TBX21",
+      "IFNG",
+      "IL12RB2",
+      "CXCR3",
+      "KLRD1"
+    ],
+    "canonical": [
+      "TBX21",
+      "IFNG"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "ILC",
+    "old_panel": "ILC2",
+    "genes": [
+      "GATA3",
+      "IL1RL1",
+      "IL7R",
+      "PTGDR2",
+      "KLRB1",
+      "IL5",
+      "IL13"
+    ],
+    "canonical": [
+      "GATA3",
+      "IL1RL1",
+      "PTGDR2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "ILC",
+    "old_panel": "ILC3",
+    "genes": [
+      "RORC",
+      "IL22",
+      "IL23R",
+      "KIT",
+      "CCR6",
+      "KLRB1"
+    ],
+    "canonical": [
+      "RORC",
+      "IL23R",
+      "CCR6"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "ILC",
+    "old_panel": "NK_like",
+    "genes": [
+      "NKG7",
+      "GNLY",
+      "PRF1",
+      "KLRD1",
+      "XCL1"
+    ],
+    "canonical": [
+      "GNLY",
+      "KLRD1",
+      "XCL1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "ILC",
+    "old_panel": "Cycling_ILC",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "ILC",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "ILC",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Naive",
+    "genes": [
+      "MS4A1",
+      "CD79A",
+      "CD79B",
+      "IGHD",
+      "IGHM",
+      "TCL1A",
+      "IL4R"
+    ],
+    "canonical": [
+      "TCL1A",
+      "IGHD",
+      "MS4A1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Memory",
+    "genes": [
+      "MS4A1",
+      "CD27",
+      "TNFRSF13B",
+      "AIM2",
+      "BANK1",
+      "IGHG1"
+    ],
+    "canonical": [
+      "CD27",
+      "TNFRSF13B",
+      "IGHG1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Germinal_center",
+    "genes": [
+      "BCL6",
+      "AICDA",
+      "RGS13",
+      "MEF2B",
+      "LMO2"
+    ],
+    "canonical": [
+      "BCL6",
+      "AICDA",
+      "RGS13"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Age_associated",
+    "genes": [
+      "TBX21",
+      "ITGAX",
+      "FCRL5",
+      "ZEB2",
+      "CD27"
+    ],
+    "canonical": [
+      "TBX21",
+      "ITGAX",
+      "FCRL5"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "IFN_B",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Cycling_B",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1",
+      "TYMS"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Plasma_contamination",
+    "genes": [
+      "MZB1",
+      "JCHAIN",
+      "XBP1",
+      "SDC1",
+      "PRDM1"
+    ],
+    "canonical": [
+      "MZB1",
+      "JCHAIN",
+      "XBP1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Bcell",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Plasma",
+    "old_panel": "IgA",
+    "genes": [
+      "MZB1",
+      "JCHAIN",
+      "IGHA1",
+      "IGHA2",
+      "XBP1",
+      "PRDM1"
+    ],
+    "canonical": [
+      "IGHA1",
+      "IGHA2",
+      "JCHAIN"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Plasma",
+    "old_panel": "IgG",
+    "genes": [
+      "MZB1",
+      "JCHAIN",
+      "IGHG1",
+      "IGHG3",
+      "XBP1",
+      "PRDM1"
+    ],
+    "canonical": [
+      "IGHG1",
+      "IGHG3"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Plasma",
+    "old_panel": "Mature_SDC1",
+    "genes": [
+      "SDC1",
+      "MZB1",
+      "XBP1",
+      "PRDM1",
+      "DERL3"
+    ],
+    "canonical": [
+      "SDC1",
+      "MZB1",
+      "DERL3"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Plasma",
+    "old_panel": "Plasmablast",
+    "genes": [
+      "MZB1",
+      "JCHAIN",
+      "CD38",
+      "PRDM1",
+      "SEC11C"
+    ],
+    "canonical": [
+      "MZB1",
+      "JCHAIN",
+      "PRDM1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Plasma",
+    "old_panel": "IFN_Plasma",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Plasma",
+    "old_panel": "Cycling_Plasma",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Plasma",
+    "old_panel": "Bcell_contamination",
+    "genes": [
+      "MS4A1",
+      "CD79A",
+      "CD79B",
+      "CD19",
+      "BANK1",
+      "CD37"
+    ],
+    "canonical": [
+      "MS4A1",
+      "CD79A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Classical_FCN1",
+    "genes": [
+      "FCN1",
+      "S100A8",
+      "S100A9",
+      "VCAN",
+      "CD14",
+      "LYZ"
+    ],
+    "canonical": [
+      "FCN1",
+      "S100A8",
+      "S100A9"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Nonclassical_FCGR3A",
+    "genes": [
+      "FCGR3A",
+      "MS4A7",
+      "CX3CR1",
+      "LST1",
+      "IFITM3"
+    ],
+    "canonical": [
+      "FCGR3A",
+      "MS4A7",
+      "CX3CR1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Intermediate",
+    "genes": [
+      "CD14",
+      "FCGR3A",
+      "HLA-DRA",
+      "CD74",
+      "MS4A7"
+    ],
+    "canonical": [
+      "CD14",
+      "FCGR3A",
+      "HLA-DRA"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Inflammatory_IL1B",
+    "genes": [
+      "IL1B",
+      "CXCL8",
+      "CCL3",
+      "CCL4",
+      "TNF"
+    ],
+    "canonical": [
+      "IL1B",
+      "CXCL8"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "IFN_Monocyte",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Cycling_Monocyte",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Macrophage_contamination",
+    "genes": [
+      "C1QA",
+      "C1QB",
+      "C1QC",
+      "APOE",
+      "SPP1",
+      "MARCO"
+    ],
+    "canonical": [
+      "C1QA",
+      "APOE",
+      "SPP1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "DC_contamination",
+    "genes": [
+      "FCER1A",
+      "CLEC10A",
+      "CD1C",
+      "LILRA4",
+      "CLEC9A"
+    ],
+    "canonical": [
+      "CD1C",
+      "FCER1A",
+      "LILRA4"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Monocyte",
+    "old_panel": "Bcell_contamination",
+    "genes": [
+      "MS4A1",
+      "CD79A",
+      "CD79B",
+      "CD19",
+      "BANK1",
+      "CD37"
+    ],
+    "canonical": [
+      "MS4A1",
+      "CD79A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "C1QC_APOE",
+    "genes": [
+      "APOE",
+      "C1QA",
+      "C1QB",
+      "C1QC",
+      "CD68",
+      "MSR1",
+      "FOLR2"
+    ],
+    "canonical": [
+      "C1QA",
+      "C1QC",
+      "APOE"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "SPP1_TREM2",
+    "genes": [
+      "SPP1",
+      "TREM2",
+      "GPNMB",
+      "APOC1",
+      "LGALS3",
+      "FABP5"
+    ],
+    "canonical": [
+      "SPP1",
+      "TREM2",
+      "GPNMB"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "MRC1_CD163",
+    "genes": [
+      "MRC1",
+      "CD163",
+      "MSR1",
+      "SELENOP",
+      "FOLR2",
+      "C1QA"
+    ],
+    "canonical": [
+      "MRC1",
+      "CD163",
+      "FOLR2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "Inflammatory_IL1B",
+    "genes": [
+      "IL1B",
+      "CXCL8",
+      "CXCL2",
+      "CCL3",
+      "CCL4",
+      "TNF"
+    ],
+    "canonical": [
+      "IL1B",
+      "CXCL8"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "MHCII",
+    "genes": [
+      "HLA-DRA",
+      "HLA-DRB1",
+      "HLA-DPA1",
+      "HLA-DPB1",
+      "CD74",
+      "CIITA"
+    ],
+    "canonical": [
+      "HLA-DRA",
+      "CD74"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "IFN_Macrophage",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "Cycling_Macrophage",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "Monocyte_contamination",
+    "genes": [
+      "FCN1",
+      "S100A8",
+      "S100A9",
+      "VCAN",
+      "CD14"
+    ],
+    "canonical": [
+      "FCN1",
+      "S100A8",
+      "VCAN"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "DC_contamination",
+    "genes": [
+      "FCER1A",
+      "CLEC10A",
+      "CD1C",
+      "LILRA4",
+      "CLEC9A"
+    ],
+    "canonical": [
+      "CD1C",
+      "FCER1A",
+      "LILRA4"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Macrophage",
+    "old_panel": "Epithelial_contamination",
+    "genes": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "MUC1"
+    ],
+    "canonical": [
+      "EPCAM",
+      "KRT19"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "cDC1",
+    "genes": [
+      "CLEC9A",
+      "XCR1",
+      "BATF3",
+      "IRF8",
+      "CADM1"
+    ],
+    "canonical": [
+      "CLEC9A",
+      "XCR1",
+      "BATF3"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "cDC2",
+    "genes": [
+      "CD1C",
+      "FCER1A",
+      "CLEC10A",
+      "CD1E",
+      "CST3"
+    ],
+    "canonical": [
+      "CD1C",
+      "FCER1A",
+      "CLEC10A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "DC3",
+    "genes": [
+      "CD1C",
+      "LILRB1",
+      "S100A8",
+      "S100A9",
+      "CD14"
+    ],
+    "canonical": [
+      "CD1C",
+      "LILRB1",
+      "S100A8"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "pDC",
+    "genes": [
+      "GZMB",
+      "JCHAIN",
+      "TCF4",
+      "LILRA4",
+      "CLEC4C",
+      "IRF7"
+    ],
+    "canonical": [
+      "LILRA4",
+      "CLEC4C",
+      "GZMB"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "Migratory_LAMP3",
+    "genes": [
+      "LAMP3",
+      "CCR7",
+      "CCL19",
+      "FSCN1",
+      "CD274"
+    ],
+    "canonical": [
+      "LAMP3",
+      "CCR7",
+      "FSCN1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "MHCII",
+    "genes": [
+      "HLA-DRA",
+      "HLA-DRB1",
+      "HLA-DPA1",
+      "CD74",
+      "CIITA"
+    ],
+    "canonical": [
+      "HLA-DRA",
+      "CD74"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "IFN_DC",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "Cycling_DC",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "Bcell_contamination",
+    "genes": [
+      "MS4A1",
+      "CD79A",
+      "CD79B",
+      "CD19",
+      "BANK1",
+      "CD37"
+    ],
+    "canonical": [
+      "MS4A1",
+      "CD79A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Dendritic",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1",
+      "S100A8"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "Neutrophil_mature",
+    "genes": [
+      "FCGR3B",
+      "CSF3R",
+      "CXCR2",
+      "S100A8",
+      "S100A9",
+      "FPR1"
+    ],
+    "canonical": [
+      "FCGR3B",
+      "CSF3R",
+      "CXCR2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "Neutrophil_immature",
+    "genes": [
+      "MPO",
+      "ELANE",
+      "CTSG",
+      "AZU1",
+      "PRTN3",
+      "CEACAM8"
+    ],
+    "canonical": [
+      "MPO",
+      "ELANE",
+      "CTSG"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "PMN_MDSC",
+    "genes": [
+      "OLR1",
+      "ARG1",
+      "S100A8",
+      "S100A9",
+      "FCGR3B"
+    ],
+    "canonical": [
+      "OLR1",
+      "ARG1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "Eosinophil",
+    "genes": [
+      "CLC",
+      "EPX",
+      "PRG2",
+      "SIGLEC8",
+      "IL5RA"
+    ],
+    "canonical": [
+      "CLC",
+      "EPX",
+      "PRG2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "IFN_Granulocyte",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT3",
+      "MX1",
+      "OAS1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "Cycling_Granulocyte",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Granulocyte",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Mast",
+    "old_panel": "TPSAB1",
+    "genes": [
+      "TPSAB1",
+      "TPSB2",
+      "KIT",
+      "MS4A2",
+      "HDC"
+    ],
+    "canonical": [
+      "TPSAB1",
+      "TPSB2",
+      "KIT"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Mast",
+    "old_panel": "CPA3",
+    "genes": [
+      "CPA3",
+      "KIT",
+      "MS4A2",
+      "HPGDS",
+      "HDC"
+    ],
+    "canonical": [
+      "CPA3",
+      "HPGDS",
+      "HDC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Mast",
+    "old_panel": "Activated_IL1RL1",
+    "genes": [
+      "IL1RL1",
+      "HDC",
+      "LTC4S",
+      "AREG",
+      "KIT"
+    ],
+    "canonical": [
+      "IL1RL1",
+      "LTC4S",
+      "AREG"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Mast",
+    "old_panel": "Basophil_like",
+    "genes": [
+      "CLC",
+      "MS4A2",
+      "FCER1A",
+      "IL3RA",
+      "HDC"
+    ],
+    "canonical": [
+      "CLC",
+      "FCER1A",
+      "IL3RA"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Mast",
+    "old_panel": "Cycling_Mast",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Mast",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Mast",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Basal_squamous",
+    "genes": [
+      "KRT5",
+      "KRT14",
+      "KRT17",
+      "TP63",
+      "SFN"
+    ],
+    "canonical": [
+      "KRT5",
+      "KRT14",
+      "TP63"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Luminal_KRT19",
+    "genes": [
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "EPCAM",
+      "MUC1"
+    ],
+    "canonical": [
+      "KRT19",
+      "EPCAM",
+      "MUC1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Secretory_MSLN",
+    "genes": [
+      "MUC1",
+      "MSLN",
+      "WFDC2",
+      "KRT19",
+      "EPCAM"
+    ],
+    "canonical": [
+      "MSLN",
+      "WFDC2",
+      "MUC1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Alveolar_AT2",
+    "genes": [
+      "SFTPA1",
+      "SFTPA2",
+      "SFTPB",
+      "SFTPC",
+      "ABCA3"
+    ],
+    "canonical": [
+      "SFTPC",
+      "SFTPB",
+      "ABCA3"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Alveolar_AT1",
+    "genes": [
+      "AGER",
+      "CAV1",
+      "CAV2",
+      "PDPN",
+      "EMP2"
+    ],
+    "canonical": [
+      "AGER",
+      "CAV1",
+      "EMP2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Club",
+    "genes": [
+      "SCGB1A1",
+      "SCGB3A1",
+      "KRT19",
+      "KRT8"
+    ],
+    "canonical": [
+      "SCGB1A1",
+      "SCGB3A1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Ciliated",
+    "genes": [
+      "FOXJ1",
+      "TPPP3",
+      "PIFO",
+      "CAPS",
+      "TUBB4B"
+    ],
+    "canonical": [
+      "FOXJ1",
+      "TPPP3",
+      "PIFO"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Hepatocyte_like",
+    "genes": [
+      "ALB",
+      "APOA1",
+      "APOA2",
+      "TTR",
+      "CYP3A4"
+    ],
+    "canonical": [
+      "ALB",
+      "APOA1",
+      "TTR"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Cholangiocyte",
+    "genes": [
+      "KRT7",
+      "KRT19",
+      "EPCAM",
+      "KRT8",
+      "KRT18"
+    ],
+    "canonical": [
+      "KRT7",
+      "KRT19",
+      "EPCAM"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Renal_tubular",
+    "genes": [
+      "SLC34A1",
+      "KRT8",
+      "KRT18",
+      "EPCAM",
+      "KIM1"
+    ],
+    "canonical": [
+      "SLC34A1",
+      "EPCAM"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Prostate_luminal",
+    "genes": [
+      "KLK3",
+      "ACPP",
+      "NKX3-1",
+      "KLK2",
+      "EPCAM"
+    ],
+    "canonical": [
+      "KLK3",
+      "ACPP",
+      "NKX3-1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Melanocytic",
+    "genes": [
+      "PMEL",
+      "MLANA",
+      "TYR",
+      "DCT",
+      "SOX10"
+    ],
+    "canonical": [
+      "PMEL",
+      "MLANA",
+      "TYR"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "EMT",
+    "genes": [
+      "VIM",
+      "FN1",
+      "ITGA5",
+      "COL17A1",
+      "LAMC2"
+    ],
+    "canonical": [
+      "VIM",
+      "FN1",
+      "ITGA5"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "IFN_Epithelial",
+    "genes": [
+      "CXCL9",
+      "CXCL10",
+      "ISG15",
+      "IFIT1",
+      "MX1"
+    ],
+    "canonical": [
+      "CXCL10",
+      "IFIT1",
+      "ISG15"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Cycling_Epithelial",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1",
+      "TYMS"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Tcell_contamination",
+    "genes": [
+      "CD3D",
+      "CD3E",
+      "TRAC",
+      "CD2",
+      "CD4",
+      "CD8A",
+      "CD8B"
+    ],
+    "canonical": [
+      "CD3D",
+      "TRAC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Endothelial_contamination",
+    "genes": [
+      "PECAM1",
+      "VWF",
+      "KDR",
+      "FLT1",
+      "ESAM",
+      "CLDN5"
+    ],
+    "canonical": [
+      "PECAM1",
+      "VWF"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Epithelial",
+    "old_panel": "Fibroblast_contamination",
+    "genes": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "DCN",
+      "LUM",
+      "PDGFRA"
+    ],
+    "canonical": [
+      "COL1A1",
+      "DCN"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 1.0
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Blood",
+    "genes": [
+      "PECAM1",
+      "VWF",
+      "CDH5",
+      "KDR",
+      "FLT1",
+      "RAMP2",
+      "ESAM"
+    ],
+    "canonical": [
+      "PECAM1",
+      "VWF",
+      "CDH5"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Lymphatic",
+    "genes": [
+      "PROX1",
+      "LYVE1",
+      "PDPN",
+      "FLT4",
+      "CCL21",
+      "MMRN1"
+    ],
+    "canonical": [
+      "PROX1",
+      "LYVE1",
+      "CCL21"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Tip_angiogenic",
+    "genes": [
+      "KDR",
+      "ESM1",
+      "ANGPT2",
+      "APLN",
+      "DLL4"
+    ],
+    "canonical": [
+      "ESM1",
+      "KDR",
+      "APLN"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Venous_ACKR1",
+    "genes": [
+      "ACKR1",
+      "SELE",
+      "VCAM1",
+      "NR2F2",
+      "PLVAP"
+    ],
+    "canonical": [
+      "ACKR1",
+      "SELE",
+      "PLVAP"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Arterial",
+    "genes": [
+      "SOX17",
+      "EFNB2",
+      "GJA5",
+      "HEY1",
+      "DKK2"
+    ],
+    "canonical": [
+      "EFNB2",
+      "SOX17",
+      "GJA5"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Capillary",
+    "genes": [
+      "RGCC",
+      "CA4",
+      "CD36",
+      "CLDN5",
+      "IFI27"
+    ],
+    "canonical": [
+      "RGCC",
+      "CA4",
+      "CD36"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "IFN_Endothelial",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "MX1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Cycling_Endothelial",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Pericyte_contamination",
+    "genes": [
+      "RGS5",
+      "PDGFRB",
+      "CSPG4",
+      "MCAM",
+      "NOTCH3"
+    ],
+    "canonical": [
+      "RGS5",
+      "PDGFRB"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Fibroblast_contamination",
+    "genes": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "DCN",
+      "LUM",
+      "PDGFRA"
+    ],
+    "canonical": [
+      "COL1A1",
+      "DCN"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Epithelial_contamination",
+    "genes": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "MUC1"
+    ],
+    "canonical": [
+      "EPCAM",
+      "KRT19"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Endothelial",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.8
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "myCAF",
+    "genes": [
+      "ACTA2",
+      "TAGLN",
+      "MYL9",
+      "TPM2",
+      "CNN1",
+      "POSTN",
+      "COL11A1"
+    ],
+    "canonical": [
+      "ACTA2",
+      "TAGLN",
+      "MYL9",
+      "POSTN"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "iCAF",
+    "genes": [
+      "IL6",
+      "CXCL12",
+      "CXCL14",
+      "CXCL1",
+      "CXCL2",
+      "CCL2",
+      "HAS1"
+    ],
+    "canonical": [
+      "CXCL12",
+      "CXCL14",
+      "IL6"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "apCAF",
+    "genes": [
+      "HLA-DRA",
+      "HLA-DRB1",
+      "HLA-DPA1",
+      "HLA-DPB1",
+      "CD74",
+      "CIITA"
+    ],
+    "canonical": [
+      "HLA-DRA",
+      "CD74",
+      "CIITA"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "ECM_CAF",
+    "genes": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "FN1",
+      "MMP2",
+      "MMP11",
+      "THBS2"
+    ],
+    "canonical": [
+      "COL1A1",
+      "FN1",
+      "MMP11",
+      "THBS2"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "Pericyte",
+    "genes": [
+      "RGS5",
+      "PDGFRB",
+      "CSPG4",
+      "MCAM",
+      "NOTCH3",
+      "COX4I2"
+    ],
+    "canonical": [
+      "RGS5",
+      "PDGFRB",
+      "CSPG4"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "Smooth_muscle",
+    "genes": [
+      "ACTA2",
+      "TAGLN",
+      "MYH11",
+      "CNN1",
+      "DES"
+    ],
+    "canonical": [
+      "MYH11",
+      "CNN1",
+      "DES"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "Mesothelial",
+    "genes": [
+      "MSLN",
+      "KRT19",
+      "CALB2",
+      "KRT8",
+      "KRT18"
+    ],
+    "canonical": [
+      "MSLN",
+      "CALB2",
+      "KRT19"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "IFN_Fibroblast",
+    "genes": [
+      "ISG15",
+      "IFIT1",
+      "IFIT2",
+      "MX1",
+      "CXCL10"
+    ],
+    "canonical": [
+      "IFIT1",
+      "ISG15",
+      "CXCL10"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "Cycling_Fibroblast",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "Endothelial_contamination",
+    "genes": [
+      "PECAM1",
+      "VWF",
+      "KDR",
+      "FLT1",
+      "ESAM",
+      "CLDN5"
+    ],
+    "canonical": [
+      "PECAM1",
+      "VWF"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "Epithelial_contamination",
+    "genes": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "MUC1"
+    ],
+    "canonical": [
+      "EPCAM",
+      "KRT19"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Fibroblast",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.9
+  },
+  {
+    "major": "Erythroid",
+    "old_panel": "Early",
+    "genes": [
+      "GATA1",
+      "KLF1",
+      "GYPA",
+      "TFRC",
+      "CA1"
+    ],
+    "canonical": [
+      "GATA1",
+      "KLF1",
+      "TFRC"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.5
+  },
+  {
+    "major": "Erythroid",
+    "old_panel": "Late",
+    "genes": [
+      "HBB",
+      "HBA1",
+      "HBA2",
+      "AHSP",
+      "SLC4A1"
+    ],
+    "canonical": [
+      "HBB",
+      "HBA1",
+      "AHSP"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.5
+  },
+  {
+    "major": "Erythroid",
+    "old_panel": "Cycling_Erythroid",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.5
+  },
+  {
+    "major": "Erythroid",
+    "old_panel": "Megakaryocyte_contamination",
+    "genes": [
+      "PPBP",
+      "PF4",
+      "GP9",
+      "ITGA2B"
+    ],
+    "canonical": [
+      "PPBP",
+      "PF4"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.5
+  },
+  {
+    "major": "Erythroid",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.5
+  },
+  {
+    "major": "Platelet",
+    "old_panel": "Platelet_PPBP",
+    "genes": [
+      "PPBP",
+      "PF4",
+      "GP9",
+      "NRGN",
+      "RGS18"
+    ],
+    "canonical": [
+      "PPBP",
+      "PF4",
+      "GP9"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.4
+  },
+  {
+    "major": "Platelet",
+    "old_panel": "Megakaryocyte",
+    "genes": [
+      "ITGA2B",
+      "GP1BA",
+      "PF4",
+      "PPBP",
+      "TUBB1"
+    ],
+    "canonical": [
+      "ITGA2B",
+      "GP1BA",
+      "TUBB1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.4
+  },
+  {
+    "major": "Platelet",
+    "old_panel": "Cycling_Megakaryocyte",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.4
+  },
+  {
+    "major": "Platelet",
+    "old_panel": "Erythroid_contamination",
+    "genes": [
+      "HBB",
+      "HBA1",
+      "GYPA",
+      "AHSP"
+    ],
+    "canonical": [
+      "HBB",
+      "HBA1",
+      "GYPA"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.4
+  },
+  {
+    "major": "HSPC",
+    "old_panel": "HSC_MPP",
+    "genes": [
+      "CD34",
+      "SPINK2",
+      "HOPX",
+      "MEIS1",
+      "PROM1",
+      "GATA2"
+    ],
+    "canonical": [
+      "CD34",
+      "SPINK2",
+      "HOPX"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.7
+  },
+  {
+    "major": "HSPC",
+    "old_panel": "GMP",
+    "genes": [
+      "MPO",
+      "ELANE",
+      "CTSG",
+      "AZU1",
+      "PRTN3"
+    ],
+    "canonical": [
+      "MPO",
+      "ELANE",
+      "CTSG"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.7
+  },
+  {
+    "major": "HSPC",
+    "old_panel": "MEP",
+    "genes": [
+      "GATA1",
+      "KLF1",
+      "GYPA",
+      "TFRC",
+      "PPBP"
+    ],
+    "canonical": [
+      "GATA1",
+      "KLF1",
+      "GYPA"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.7
+  },
+  {
+    "major": "HSPC",
+    "old_panel": "Lymphoid_progenitor",
+    "genes": [
+      "IL7R",
+      "LTB",
+      "TCF7",
+      "CD7",
+      "DNTT"
+    ],
+    "canonical": [
+      "IL7R",
+      "DNTT",
+      "TCF7"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.7
+  },
+  {
+    "major": "HSPC",
+    "old_panel": "Cycling_HSPC",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.7
+  },
+  {
+    "major": "HSPC",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.7
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Oligodendrocyte",
+    "genes": [
+      "MBP",
+      "PLP1",
+      "MOG",
+      "OLIG1",
+      "OLIG2"
+    ],
+    "canonical": [
+      "MBP",
+      "PLP1",
+      "MOG"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Schwann",
+    "genes": [
+      "S100B",
+      "SOX10",
+      "MPZ",
+      "S100A1",
+      "PLP1"
+    ],
+    "canonical": [
+      "S100B",
+      "SOX10",
+      "MPZ"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Neural_progenitor",
+    "genes": [
+      "SOX2",
+      "NES",
+      "VIM",
+      "FABP7"
+    ],
+    "canonical": [
+      "SOX2",
+      "NES",
+      "FABP7"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Neuron",
+    "genes": [
+      "SNAP25",
+      "RBFOX3",
+      "SYT1",
+      "TUBB3"
+    ],
+    "canonical": [
+      "SNAP25",
+      "RBFOX3",
+      "TUBB3"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Melanocytic",
+    "genes": [
+      "PMEL",
+      "MLANA",
+      "TYR",
+      "DCT",
+      "SOX10"
+    ],
+    "canonical": [
+      "PMEL",
+      "MLANA",
+      "TYR"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Cycling_Neural",
+    "genes": [
+      "MKI67",
+      "TOP2A",
+      "UBE2C",
+      "STMN1"
+    ],
+    "canonical": [
+      "MKI67",
+      "TOP2A"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Epithelial_contamination",
+    "genes": [
+      "EPCAM",
+      "KRT8",
+      "KRT18",
+      "KRT19",
+      "MUC1"
+    ],
+    "canonical": [
+      "EPCAM",
+      "KRT19"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  },
+  {
+    "major": "Neural",
+    "old_panel": "Myeloid_contamination",
+    "genes": [
+      "LYZ",
+      "LST1",
+      "TYROBP",
+      "FCER1G",
+      "S100A8",
+      "S100A9"
+    ],
+    "canonical": [
+      "LYZ",
+      "LST1"
+    ],
+    "missing_from_legacy_object": [],
+    "blacklisted_genes": [],
+    "canonical_not_in_panel": [],
+    "min_pct": 0.25,
+    "min_log_difference": 0.25,
+    "min_delta_pct": 0.05,
+    "nominal_resolution": 0.6
+  }
+]

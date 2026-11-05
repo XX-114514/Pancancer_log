@@ -1,0 +1,10 @@
+{
+  "parent_identity": "Candidate lineage evidence; not a purity assertion. Read together with parent_support and parent_conflicts.",
+  "identity_subtype": "No mature fine subtype assigned in this review.",
+  "state_programs": "Nonexclusive positive RNA marker programs; MC_T/MC_TC associations remain candidates.",
+  "qc_review": "Independent quality/mixture review route, not a lineage subtype.",
+  "resolved_at_major": "38959 marker-supported coarse Mast records under the expanded panel; not a final primary-analysis acceptance flag.",
+  "qc_pending": "Competing program detected; ambient, doublet and biological sharing remain to distinguish.",
+  "parent_low_signal": "Below conservative marker support rule; not evidence that Mast identity is false.",
+  "published_QC_sensitivity_pass": "Numeric pan-MC QC sensitivity, not universal final QC or patient/source acceptance."
+}

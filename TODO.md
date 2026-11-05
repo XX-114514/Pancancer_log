@@ -1,3 +1,14 @@
+## 2026-11-05 系统审计后的执行优先级
+
+依据[审计报告](docs/reports/20261105_server_analysis_audit/README.md)，保留以下历史待办。未勾选项仍为待验收/待执行；后续[WEHI现场补核](runs/20261105_current_overview_wehi_readonly.md)确认TME、V7来源等权/LOSO已在运行，K4已有计算收据，应接收现有产出，避免重复提交。
+
+- [ ] P0 验收TME run_v2最终状态、对象/ID、范围排除、测量mask、图/UMAP和marker/来源指标；有终验后再更新图谱基座。
+- [ ] P0 从正常HPC终端对72来源marker路由重新预检，核对现有sidecar、旧试点hash、重复作业和资源；候选输出逐来源验收后才开展身份审阅。
+- [ ] P1 固定NMF因子尺度后重核模块匹配/H相关；结合rank survey与新增K4两种子收据审阅rank差异；接收现有53来源LOSO和来源等权结果，报告节点覆盖损失、H活动和网络稳定性，保留原K9受控分支。
+- [ ] P1 补V7空间myCAF/恶性身份及面板资格、TMA患者映射、来源平衡和完整多重比较；未达资格的轴保留不可测。
+- [ ] P1 补V5/V7逐细胞细分及重点CM成员流向，之后按冻结合同决定V7 LIANA和接收端响应。
+- [ ] P2 补Scanorama scIB嵌入行或明确不比较的理由；补CT75三个缺生成脚本子审查；分别验收持久数据与环境迁移。
+
 ## 工作线看板（2026-10-31，优先于下方所有较早条目）
 
 以[工作线看板](methods/workstream-board-20261031.md)为准；下方条目保留为历史。
@@ -1709,3 +1720,9 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [x] New native fine-group review and independent author/axis/branch/native-reference replay accepted.
 - [x] New source-lineage comparison replay accepted in inherited and provisional-native contexts.
 - [ ] Apply equal per-cell conflict/confidence rules across ABC; group-level label coverage is not cell-level identity validation. Remaining feature/engine/holdout/full-mapping gates above remain open.
+
+## V7 panel 审计后续（2026-11-05）
+
+- [x] 审查 162 个旧候选与 17 组父类正负 panel；复算 40 群/373 候选，记录规则缺陷与证据边界。
+- [ ] 按[修订约束](methods/V7-panel-semantics-audit-20261105.md)先核 Tcell_4/Tcell_6 及已命名 CD4-naïve/CD8-cytotoxic 群；分别验收父身份、分支与状态。
+- [ ] 对 9 群被遮蔽的候选完成谱系适用性、群内混合和跨来源验证；不能把旧最低基因条件当成新标签验收。

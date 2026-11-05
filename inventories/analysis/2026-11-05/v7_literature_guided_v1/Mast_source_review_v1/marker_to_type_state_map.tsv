@@ -1,0 +1,84 @@
+panel_id	target	level	gene	source
+mast_identity	Mast identity	parent	TPSAB1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+mast_identity	Mast identity	parent	TPSB2	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+mast_identity	Mast identity	parent	CPA3	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+mast_identity	Mast identity	parent	KIT	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+mast_identity	Mast identity	parent	MS4A2	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+MCTC	MC_TC-like / (candidate)	candidate_subtype	CMA1	https://www.jci.org/articles/view/174981
+MCTC	MC_TC-like / (candidate)	candidate_subtype	CTSG	https://www.jci.org/articles/view/174981
+MCT	MC_T-like / (candidate)	candidate_subtype	IL17RB	https://www.jci.org/articles/view/174981
+MCT	MC_T-like / (candidate)	candidate_subtype	GPR183	https://www.jci.org/articles/view/174981
+MCT	MC_T-like / (candidate)	candidate_subtype	CD38	https://www.jci.org/articles/view/174981
+IL1RL1	IL1RL1 / lipid / mediator axis	state_axis	IL1RL1	https://www.jci.org/articles/view/174981
+IL1RL1	IL1RL1 / lipid / mediator axis	state_axis	HDC	https://www.jci.org/articles/view/174981
+IL1RL1	IL1RL1 / lipid / mediator axis	state_axis	LTC4S	https://www.jci.org/articles/view/174981
+IL1RL1	IL1RL1 / lipid / mediator axis	state_axis	HPGDS	https://www.jci.org/articles/view/174981
+cycling	Cycling Mast / (state)	state	MKI67	https://www.jci.org/articles/view/174981
+cycling	Cycling Mast / (state)	state	TOP2A	https://www.jci.org/articles/view/174981
+cycling	Cycling Mast / (state)	state	BIRC5	https://www.jci.org/articles/view/174981
+IFN	IFN response / (state)	state	ISG15	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+IFN	IFN response / (state)	state	IFIT1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+IFN	IFN response / (state)	state	MX1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+HLAII	Antigen-presentation / program	state_program	CD74	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+HLAII	Antigen-presentation / program	state_program	HLA-DRA	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+HLAII	Antigen-presentation / program	state_program	HLA-DRB1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+T_competitor	T-cell competitor / (identity)	competing_parent	CD3D	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+T_competitor	T-cell competitor / (identity)	competing_parent	CD3E	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+T_competitor	T-cell competitor / (identity)	competing_parent	TRAC	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+myeloid_competitor	Myeloid competitor / (identity)	competing_parent	LST1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+myeloid_competitor	Myeloid competitor / (identity)	competing_parent	CSF1R	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+myeloid_competitor	Myeloid competitor / (identity)	competing_parent	CD14	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+stromal_competitor	Fibroblast competitor / (identity)	competing_parent	COL1A1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+stromal_competitor	Fibroblast competitor / (identity)	competing_parent	COL1A2	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+stromal_competitor	Fibroblast competitor / (identity)	competing_parent	DCN	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+epithelial_competitor	Epithelial competitor / (identity)	competing_parent	EPCAM	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+epithelial_competitor	Epithelial competitor / (identity)	competing_parent	KRT8	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+epithelial_competitor	Epithelial competitor / (identity)	competing_parent	KRT18	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+epithelial_competitor	Epithelial competitor / (identity)	competing_parent	KRT19	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+B_competitor	B cells / (competitor)	competing_parent	MS4A1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+B_competitor	B cells / (competitor)	competing_parent	CD79A	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+B_competitor	B cells / (competitor)	competing_parent	CD79B	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+B_competitor	B cells / (competitor)	competing_parent	CD19	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+B_competitor	B cells / (competitor)	competing_parent	BANK1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Plasma_competitor	Plasma cells / (competitor)	competing_parent	MZB1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Plasma_competitor	Plasma cells / (competitor)	competing_parent	JCHAIN	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Plasma_competitor	Plasma cells / (competitor)	competing_parent	SDC1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Plasma_competitor	Plasma cells / (competitor)	competing_parent	DERL3	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Endothelial_competitor	Endothelial cells / (competitor)	competing_parent	PECAM1	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Endothelial_competitor	Endothelial cells / (competitor)	competing_parent	VWF	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Endothelial_competitor	Endothelial cells / (competitor)	competing_parent	CLDN5	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Endothelial_competitor	Endothelial cells / (competitor)	competing_parent	KDR	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Platelet_competitor	Platelet program / (review)	competing_parent	PF4	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Platelet_competitor	Platelet program / (review)	competing_parent	PPBP	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Platelet_competitor	Platelet program / (review)	competing_parent	GP9	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Platelet_competitor	Platelet program / (review)	competing_parent	ITGA2B	https://github.com/lambrechtslab/Pan-cancer_Lodietal
+Ref_C0	Ref C0 / Ribosomal	published_reference_state	RPL31	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C0	Ref C0 / Ribosomal	published_reference_state	RPL27A	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C0	Ref C0 / Ribosomal	published_reference_state	RPL21	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C1	Ref C1 / Heat shock	published_reference_state	HSPA1A	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C1	Ref C1 / Heat shock	published_reference_state	HSPA1B	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C1	Ref C1 / Heat shock	published_reference_state	DNAJB1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C2	Ref C2 / NFKB1/NR4A3	published_reference_state	NFKB1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C2	Ref C2 / NFKB1/NR4A3	published_reference_state	NR4A3	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C2	Ref C2 / NFKB1/NR4A3	published_reference_state	VEGFA	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C3	Ref C3 / CD69/CMA1	published_reference_state	CD69	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C3	Ref C3 / CD69/CMA1	published_reference_state	RGS1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C3	Ref C3 / CD69/CMA1	published_reference_state	CMA1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C4	Ref C4 / PDIA3/ENO1	published_reference_state	PDIA3	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C4	Ref C4 / PDIA3/ENO1	published_reference_state	ENO1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C4	Ref C4 / PDIA3/ENO1	published_reference_state	MYDGF	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C5	Ref C5 / CREM/ANXA1	published_reference_state	CREM	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C5	Ref C5 / CREM/ANXA1	published_reference_state	FTH1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C5	Ref C5 / CREM/ANXA1	published_reference_state	ANXA1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C6	Ref C6 / MS4A2/LTC4S	published_reference_state	MS4A2	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C6	Ref C6 / MS4A2/LTC4S	published_reference_state	LTC4S	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C6	Ref C6 / MS4A2/LTC4S	published_reference_state	TXNIP	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C7	Ref C7 / HLA-II	published_reference_state	CD74	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C7	Ref C7 / HLA-II	published_reference_state	HLA-DRA	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C7	Ref C7 / HLA-II	published_reference_state	HLA-DRB1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C8	Ref C8 / FOSB/UBB	published_reference_state	UBB	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C8	Ref C8 / FOSB/UBB	published_reference_state	FOSB	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C8	Ref C8 / FOSB/UBB	published_reference_state	DNAJA1	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C9	Ref C9 / CCL5/IL32	published_reference_state	CCL5	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C9	Ref C9 / CCL5/IL32	published_reference_state	IL32	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R
+Ref_C9	Ref C9 / CCL5/IL32	published_reference_state	GZMB	https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R

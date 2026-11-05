@@ -1,0 +1,51 @@
+{
+  "n_subtype_panels": 162,
+  "n_major_positive": 17,
+  "n_major_exclusion": 17,
+  "n_contamination_panels": 43,
+  "n_ifn_cycling_panels": 28,
+  "n_gene_rows": 2052,
+  "n_reconstructed_candidates": 373,
+  "n_reconstructed_clusters": 40,
+  "all_scores_and_top_candidates_reproduced": true,
+  "shadow_clusters": [
+    "Dendritic_0",
+    "Dendritic_3",
+    "Endothelial_4",
+    "Endothelial_5",
+    "ILC_3",
+    "Plasma_1",
+    "Plasma_2",
+    "Plasma_3",
+    "Tcell_6"
+  ],
+  "shadow_cells": 323669,
+  "no_signal_clusters": [
+    "Bcell_5",
+    "Dendritic_1",
+    "Endothelial_1",
+    "Endothelial_2",
+    "Erythroid_1",
+    "Fibroblast_5",
+    "ILC_1",
+    "Macrophage_4",
+    "Mast_0",
+    "Mast_3",
+    "Monocyte_3",
+    "NK_1",
+    "NK_3",
+    "Neural_0",
+    "Plasma_0"
+  ],
+  "contamination_top_clusters": [
+    "Bcell_0",
+    "Granulocyte_1",
+    "HSPC_1",
+    "Macrophage_3",
+    "Plasma_1",
+    "Plasma_2"
+  ],
+  "missing_genes": {},
+  "blacklisted": {},
+  "note": "Minimal gene gate is only a diagnostic of the historical algorithm, not a biological validity test. Alternative-candidate sample replication is not recomputed here. V7 labels are unchanged."
+}

@@ -1,0 +1,25 @@
+{
+ "minimum_rank": 4,
+ "maximum_rank": 4,
+ "survey_nrun": 30,
+ "survey_seed": 20261103,
+ "survey_max_iter": 1000,
+ "cophenetic_drop": 0.02,
+ "rank_override": 4,
+ "final_seeds": [
+  20261103,
+  20261104
+ ],
+ "final_nrun": 30,
+ "final_max_iter": 2000,
+ "top_n": 10,
+ "minimum_positive_correlation": 0.2,
+ "network_FDR": 0.05,
+ "weight_mode": "unit",
+ "frequency": "${PC_ROOT}/Project_v5/runs/20261103_V7_CM_blisa_v1/inputs/primary_strict/frequency.tsv",
+ "metadata": "${PC_ROOT}/Project_v5/runs/20261103_V7_CM_blisa_v1/inputs/primary_strict/metadata.tsv",
+ "author_code": "${PC_ROOT}/Project_v5/runs/20261103_V7_CM_blisa_v1/scripts/frozen_author_CoVarNet_v1.R",
+ "output": "${PC_ROOT}/Project_v5/runs/20261103_V7_CM_blisa_v1/outputs/covarnet_primary_strict_K4",
+ "analysis_role": "V7_primary_strict_K4_cophenetic_rule_rank_sensitivity",
+ "synthetic_counterexamples": false
+}
