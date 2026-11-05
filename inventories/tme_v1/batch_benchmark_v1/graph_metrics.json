@@ -89,6 +89,36 @@
    "plasma": 0.961
   }
  },
+ "scanorama": {
+  "same_source_median": 0.375,
+  "same_unit_median": 0.162,
+  "source_iLISI_median": 3.382,
+  "purity_coarse": 0.857,
+  "purity_fine": 0.744,
+  "graph_connectivity_mean": 0.986,
+  "same_source_by_label": {
+   "B": 0.305,
+   "T_NK": 0.279,
+   "endothelial": 0.397,
+   "epithelial": 0.85,
+   "fibroblast": 0.532,
+   "mast": 0.355,
+   "myeloid": 0.432,
+   "pericyte_SMC": 0.504,
+   "plasma": 0.374
+  },
+  "graph_connectivity": {
+   "B": 0.987,
+   "T_NK": 0.999,
+   "endothelial": 0.992,
+   "epithelial": 0.986,
+   "fibroblast": 0.993,
+   "mast": 0.982,
+   "myeloid": 0.998,
+   "pericyte_SMC": 0.979,
+   "plasma": 0.957
+  }
+ },
  "scvi_source": {
   "same_source_median": 0.335,
   "same_unit_median": 0.136,

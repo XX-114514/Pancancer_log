@@ -1,4 +1,5 @@
 	same_source_median	same_unit_median	source_iLISI_median	purity_coarse	purity_fine	graph_connectivity_mean
+scanorama	0.375	0.162	3.382	0.857	0.744	0.986
 unintegrated	0.628	0.249	2.106	0.852	0.738	0.985
 combat	0.489	0.201	2.857	0.843	0.728	0.985
 scvi_source	0.335	0.136	3.673	0.825	0.709	0.987
