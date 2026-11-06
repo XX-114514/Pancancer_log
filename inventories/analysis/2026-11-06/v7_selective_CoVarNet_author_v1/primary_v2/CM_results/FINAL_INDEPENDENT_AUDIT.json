@@ -1,0 +1,72 @@
+{
+  "UTC": "2026-11-06T12:40:57.216226+00:00",
+  "all_atlas_or_biological_validation_claim": false,
+  "status": "PASS_independent_Pearson_author_Holm_then_BH_specificity_and_all_CM_members_edges",
+  "n_rank_models": 19,
+  "n_input_nodes": 45,
+  "n_samples": 164,
+  "selected_rank": 14,
+  "n_all_pairs": 990,
+  "n_global_edges": 18,
+  "n_multicellular_networks": 10,
+  "max_absolute_Pearson_error": 2.9698465908722937e-15,
+  "all_factor_top15_and_isolated_node_removal_exact": true,
+  "all_permutations_verified_by_independent_R": true,
+  "aggregate_files": [
+    {
+      "name": "rank_survey_and_paper_selection.tsv",
+      "bytes": 1095,
+      "sha256": "fd60a9b5af3ab88225bb6cf536a3a07316611c1f4049827dc9b177fb76ea4853"
+    },
+    {
+      "name": "all_pairs_author_and_raw_BH.tsv",
+      "bytes": 150141,
+      "sha256": "f3e6995524672560415495530c4e3e55cbd4ca95f1693c38829a5c84e7e29794"
+    },
+    {
+      "name": "global_node.tsv",
+      "bytes": 743,
+      "sha256": "7f7c9e447b46c24c43c8468b71a660bb3037e557795cbd03ee205e4f693b4546"
+    },
+    {
+      "name": "global_edge.tsv",
+      "bytes": 4097,
+      "sha256": "9ea0e0ac3d23c8e525af826a7af8dead28dc77bfa257373e23098328386dd763"
+    },
+    {
+      "name": "each_node.tsv",
+      "bytes": 1322,
+      "sha256": "d0db4a87f04ef8cee2b41612eae6beade5fa2d044ff08c99ad83e2279b5506ed"
+    },
+    {
+      "name": "each_edge.tsv",
+      "bytes": 4899,
+      "sha256": "0886cb2562b5fa93c14f7ae48413eb5e4196f74f602fe5e65dfc61d36648a1ca"
+    },
+    {
+      "name": "CM_members_after_author_network_filter.tsv",
+      "bytes": 1947,
+      "sha256": "1bfea12ecd3c4bc5b6966e210af5048d9cb8411130f76a8f4bb6833b0277c9b7"
+    },
+    {
+      "name": "factor_top15_candidates.tsv",
+      "bytes": 12251,
+      "sha256": "55836cc25c60d63826f42904927f2f0fa535d72b2325732e6871c90126ca4337"
+    },
+    {
+      "name": "CM_network_topology_and_permutation.tsv",
+      "bytes": 1160,
+      "sha256": "96882de8eaa365446fa6bcc41453824effda20c31f728c9e7fdbb1e0b5738118"
+    },
+    {
+      "name": "complete.json",
+      "bytes": 954,
+      "sha256": "550af3842c2378dd377f49af15578dde92385062585b3d9a8c5a79d875ccc7f3"
+    },
+    {
+      "name": "independent_R_audit.json",
+      "bytes": 442,
+      "sha256": "c905333965ee35298ceb4dbc900786c69af8c54d6321f01626e918039fd0cb37"
+    }
+  ]
+}

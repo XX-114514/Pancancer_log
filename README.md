@@ -1,5 +1,7 @@
 # PanCancer
 
+> **当前V4注释的CoVarNet原文CM发现（2026-11-06）**：[全部14因子、完整成员与15张图](inventories/analysis/2026-11-06/v7_selective_CoVarNet_author_v1/README.md)。13来源、164样本、560,871非上皮细胞、45节点；K2–20各30次，原文CCC规则选K14，独立核验通过。11个非空网络中10个含跨父类边；3个因子有近零W成员，部分成员重复，不能称14个独立有效生态系统。来源范围敏感性选K19，稳健性与空间验证待推进。
+
 > **V7保留既有亚型的注释修正（2026-11-06）**：[全部50个标签及恢复审计](inventories/analysis/2026-11-06/v7_selective_subtype_restore_v4/README.md)。2,843,051细胞沿用原亚型/分类名，只有1,218,888个未完成细分或已有父类纠错记录用大类＋marker；共4,061,939细胞。上一版20名称保留为大类诊断，不再作为完整注释展示。
 
 > **V7 B-unresolved与完整当前注释（2026-11-06）**：[16群与6张marker图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md) · [全部106冻结／142当前标签值](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/CURRENT_ALL_ANNOTATIONS.md) · [Excel](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/V7_current_annotation_20261106.xlsx)。B的157,888目标独立审计通过，101,299大类工作／56,589身份复查；全V7 4,676,787行完整保留，423,375个目标本周期重建，其余明确继承。QC-v4为8,237排除／238暂存／4,668,312保留；导出完整不代表全V7细分终验。

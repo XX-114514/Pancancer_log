@@ -1,0 +1,16 @@
+{
+  "status": "PASS_scientific_and_public_delivery_checks",
+  "UTC": "2026-11-06T12:49:48.152049+00:00",
+  "author_functions_and_all_executed_script_config_bytes_read_back": true,
+  "original_aggregate_files_byte_identical": 164,
+  "all_input_and_network_independent_audits_passed": true,
+  "PNG_figures": 15,
+  "full_label_marker_visual_QA": true,
+  "Python_AST": "PASS",
+  "public_scope": "nodes/edges/source aggregates and sanitized receipts only; no individual rows or matrices",
+  "repository_validation_exit": 0,
+  "repository_validation_errors": 0,
+  "repository_validation_existing_warnings": 1,
+  "repository_warning_scope": "preexisting 2026-10-13 provenance internal-path warning",
+  "scientific_source_seed_spatial_validation_claim": false
+}

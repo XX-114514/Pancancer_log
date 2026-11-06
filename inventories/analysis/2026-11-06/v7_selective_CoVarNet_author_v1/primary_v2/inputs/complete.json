@@ -1,0 +1,93 @@
+{
+  "status": "V4_fresh_reviewed_non_epithelial_input_written_pending_audit",
+  "UTC": "2026-11-06T12:37:01.868702+00:00",
+  "annotation_version": "V7_selective_subtype_marker_20261106_v4",
+  "n_V4_cells": 4061939,
+  "n_V4_samples": 1322,
+  "n_source_qualified_samples": 685,
+  "n_fresh_scRNA_samples_before_size": 210,
+  "n_admitted_samples": 164,
+  "n_admitted_sources": 13,
+  "n_non_epithelial_cells": 560871,
+  "n_non_epithelial_labels_before_variance_filter": 45,
+  "n_variable_input_nodes": 45,
+  "n_constant_nodes_removed": 0,
+  "n_frequency_parents": 12,
+  "n_single_node_parents": 4,
+  "annotation_labels_changed": false,
+  "retained_release_scope_hold": [
+    "GSE179994"
+  ],
+  "hold_basis": "Official GEO specifically lists all-T-cell expression/metadata releases; current whole-biopsy capture qualification alone does not certify retained whole-TME matrix scope. Hold before reviewing any CM effects.",
+  "weights": "unit weights; observations are existing sample units, not newly certified independent patients",
+  "fresh_frozen_unknown_not_treated_as_fresh": true,
+  "source_gate": "v7 exact reviewed unit alias; fresh and scRNA explicit in inherited technical material context",
+  "platform_10x_acceptance": "Not re-certified by the existing technical context table; report this limitation, not complete original dataset reproduction.",
+  "parent_map": {
+    "Bcell": "B_Plasma",
+    "Plasma": "B_Plasma",
+    "Macrophage": "Myeloid",
+    "Monocyte": "Myeloid",
+    "Myeloid": "Myeloid",
+    "Dendritic": "Myeloid",
+    "Granulocyte": "Myeloid",
+    "Mast": "Myeloid",
+    "Fibroblast": "Stromal",
+    "Mural": "Stromal"
+  },
+  "Tcell_not_forced_into_CD4_CD8": true,
+  "missing_parent_frequency": "Author convention 0 when parent total is 0; no enriched samples admitted to compensate",
+  "single_node_parents": "Presence-only/degenerate-parent diagnostics reported; not described as newly identified subtype programmes.",
+  "binding": {
+    "annotation_SHA256": "2a4bc82cb495d0fc2ffb40ecda6b1cbb53802eb2bf87efd2392746371653244c",
+    "source_core_SHA256": "4691bc2801c872b331cf390a41ed6f1e664033000a55b48e7353f70f7d41b7a4",
+    "technical_context_SHA256": "943d7935bd354cfb1e05172696bd68059f6b42c7a835f7ec78f3d4fc646345fe"
+  },
+  "files": [
+    {
+      "name": "sample_admission_PRIVATE.tsv",
+      "bytes": 242472,
+      "sha256": "5283bdc020457bb0aaa0af2efee091e8e57fca8457304b4b70c5a91721a7a10f"
+    },
+    {
+      "name": "all_node_variable_frequency_screen.tsv",
+      "bytes": 2611,
+      "sha256": "599d9a8527cc8e18874b9a598593d29c3c5ffc8389d5a356033c32bf08e9e49c"
+    },
+    {
+      "name": "frequency_PRIVATE.tsv",
+      "bytes": 97061,
+      "sha256": "658109555943bf290e687b8ca09b856019f1edc05989d587b995819efe5e531a"
+    },
+    {
+      "name": "counts_all_non_epithelial_PRIVATE.tsv",
+      "bytes": 26025,
+      "sha256": "c95b5b4402c5c5681d2a8ba650c641583aeb2a573b68e8763c8dc4a0e8c5f4b5"
+    },
+    {
+      "name": "parent_denominators_PRIVATE.tsv",
+      "bytes": 12315,
+      "sha256": "7aa96b31d740ecf5bc3b7e35c402c1e88243960c131577dd07cc0825c98d4d47"
+    },
+    {
+      "name": "selected_cell_annotation_and_sample_PRIVATE.pkl.gz",
+      "bytes": 6066845,
+      "sha256": "a568c9fd533facfb81112c018ff2f5fd2249d097d44c8f02d841bef6e468dcbc"
+    },
+    {
+      "name": "node_catalogue.tsv",
+      "bytes": 3165,
+      "sha256": "8d3fe213bafba80c1352a7923a3f9577af6a8f7220e686d4afc9247a3238b386"
+    },
+    {
+      "name": "source_admission_summary.tsv",
+      "bytes": 1292,
+      "sha256": "6b393da30c9f65191bb1e1220fbed7a7ead121af9c1c67ad82457407142d9103"
+    },
+    {
+      "name": "sample_admission_reason_counts.tsv",
+      "bytes": 371,
+      "sha256": "64113dfba5860daa1a462bb5bb794d14f482825a5dfe602c81f1188a7776bbad"
+    }
+  ]
+}

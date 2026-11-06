@@ -1,0 +1,15 @@
+{
+  "status": "PASS_full_cell_source_admission_and_within_parent_frequency_audit",
+  "UTC": "2026-11-06T12:33:17.935120+00:00",
+  "n_cells": 690421,
+  "n_samples": 210,
+  "n_nodes": 45,
+  "n_sources": 14,
+  "all_sample_alias_source_status_fresh_scRNA_and_size_rules_recomputed": true,
+  "all_original_cell_ids_labels_and_numerator_counts_exact": true,
+  "all_parent_denominators_and_author_zero_convention_exact": true,
+  "all_constant_row_decisions_exact": true,
+  "all_artifact_SHA_verified": true,
+  "platform_10x_not_newly_certified": true,
+  "new_patient_independence_or_annotation_validation_claim": false
+}

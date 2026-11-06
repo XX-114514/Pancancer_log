@@ -1,0 +1,15 @@
+cm	n_network_nodes	n_edges	n_components	cross_parent_network	max_factor_W	min_network_W	n_network_members_relative_W_lt_1e_6	near_zero_W_members	n_network_members_lt_50_input_cells	rare_input_members	single_node_parent_members	same_member_set_as	diagnostic_only_no_primary_filter_changed
+CM01	0	0	0	False	0.253306213321264		0		0				True
+CM02	0	0	0	False	0.184157934809472		0		0				True
+CM03	3	2	1	True	0.272128862717024	0.160923907174414	0		0				True
+CM04	4	2	2	True	0.164927633659775	0.0592412191821083	0		0				True
+CM05	0	0	0	False	0.313028106173502		0		0				True
+CM06	2	1	1	True	0.442795003900711	0.24209503702026	0		0			CM12; CM14	True
+CM07	2	1	1	True	0.272115077855567	0.0419591896563837	0		0				True
+CM08	3	2	1	False	0.225417747409673	0.0383324253206468	0		0				True
+CM09	5	3	2	True	0.314763325077136	0.0021915718764228	0		0				True
+CM10	2	1	1	True	0.266585040282946	3.3872379805443697e-41	1	Endothelial_Blood_PECAM1	0				True
+CM11	4	5	1	True	0.464749363316505	0.0006880483435249	0		0		Glial_GFAP_OLIG1		True
+CM12	2	1	1	True	0.468747492520418	2.9529185093436297e-103	2	Bcell_MS4A1_CD79A; Macrophage_Inflammatory_IL1B_IL1B	0			CM06; CM14	True
+CM13	4	2	2	True	0.144588172553258	0.023332421506872	0		0				True
+CM14	2	1	1	True	0.642564808665728	6.13734397927183e-63	1	Bcell_MS4A1_CD79A	0			CM06; CM12	True

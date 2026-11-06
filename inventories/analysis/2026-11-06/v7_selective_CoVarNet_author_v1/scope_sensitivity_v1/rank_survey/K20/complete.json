@@ -1,0 +1,14 @@
+{
+  "status": "PASS_rank_fit_written",
+  "UTC_start": "2026-11-06T12:35:20Z",
+  "UTC_end": "2026-11-06T12:37:43Z",
+  "rank": 20,
+  "nrun": 30,
+  "n_nodes": 45,
+  "n_samples": 210,
+  "theta": 0.5,
+  "maxIter": 2000,
+  "NMF_version": "0.28",
+  "cophenetic": 0.94363860589525295,
+  "effective_WS_reconstruction_verified": true
+}

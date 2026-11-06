@@ -1,3 +1,5 @@
+[V4注释CoVarNet原文CM发现](20261106_v7_selective_CoVarNet_author_v1.md)：13来源/164样本/45节点、570次nsNMF与独立核验、严格CCC选K14；完整输出与退化/范围敏感性诊断。
+
 [V7保留既有亚型修正](20261106_v7_selective_subtype_restore_v4.md)：原名保留＋选择性大类marker回退，完整标签/例外逐值核验。
 
 [CM07胶原—DDR1探索](20261106_CM07_DDR1_exploration_v1.md)：CosMx距离主要为密度假象；TCGA DDR1免疫冷大部分由纯度解释；探索性。

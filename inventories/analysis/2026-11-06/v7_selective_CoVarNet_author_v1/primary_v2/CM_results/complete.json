@@ -1,0 +1,24 @@
+{
+  "status": "AUTHOR_CONFIG_CM_IDENTIFICATION_COMPLETE_PENDING_INDEPENDENT_AUDIT",
+  "UTC": "2026-11-06T12:40:49Z",
+  "selected_rank": 14,
+  "paper_admissible_ranks": [14, 18],
+  "n_factors": 14,
+  "n_nonempty_networks": 11,
+  "n_multicellular_networks": 10,
+  "n_nodes": 45,
+  "n_samples": 164,
+  "top_n": 15,
+  "specificity_cutoff": 0.68965517241379315,
+  "permutations": 10000,
+  "permutation_definition": "Sample the same number of nodes from all measured input nodes; preserve global author-selected graph. Report all factors including empty and single-parent networks.",
+  "author_P_values": "psych default adjusted upper triangle followed by author BH; raw Pearson/BH separate diagnostics",
+  "rank_rule": "rho[k-2]<rho[k-1]<rho[k]>rho[k+1]; maximize admissible rho; smaller k only for exact ties",
+  "runtime": [
+    "NMF=0.28",
+    "dplyr=1.2.1",
+    "igraph=2.2.0",
+    "psych=2.6.3"
+  ],
+  "all_atlas_or_biological_validation_claim": false
+}

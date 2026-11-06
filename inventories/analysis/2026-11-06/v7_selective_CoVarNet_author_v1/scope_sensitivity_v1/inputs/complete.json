@@ -1,0 +1,89 @@
+{
+  "status": "V4_fresh_reviewed_non_epithelial_input_written_pending_audit",
+  "UTC": "2026-11-06T12:32:46.650362+00:00",
+  "annotation_version": "V7_selective_subtype_marker_20261106_v4",
+  "n_V4_cells": 4061939,
+  "n_V4_samples": 1322,
+  "n_source_qualified_samples": 685,
+  "n_fresh_scRNA_samples_before_size": 210,
+  "n_admitted_samples": 210,
+  "n_admitted_sources": 14,
+  "n_non_epithelial_cells": 690421,
+  "n_non_epithelial_labels_before_variance_filter": 45,
+  "n_variable_input_nodes": 45,
+  "n_constant_nodes_removed": 0,
+  "n_frequency_parents": 12,
+  "n_single_node_parents": 4,
+  "annotation_labels_changed": false,
+  "weights": "unit weights; observations are existing sample units, not newly certified independent patients",
+  "fresh_frozen_unknown_not_treated_as_fresh": true,
+  "source_gate": "v7 exact reviewed unit alias; fresh and scRNA explicit in inherited technical material context",
+  "platform_10x_acceptance": "Not re-certified by the existing technical context table; report this limitation, not complete original dataset reproduction.",
+  "parent_map": {
+    "Bcell": "B_Plasma",
+    "Plasma": "B_Plasma",
+    "Macrophage": "Myeloid",
+    "Monocyte": "Myeloid",
+    "Myeloid": "Myeloid",
+    "Dendritic": "Myeloid",
+    "Granulocyte": "Myeloid",
+    "Mast": "Myeloid",
+    "Fibroblast": "Stromal",
+    "Mural": "Stromal"
+  },
+  "Tcell_not_forced_into_CD4_CD8": true,
+  "missing_parent_frequency": "Author convention 0 when parent total is 0; no enriched samples admitted to compensate",
+  "single_node_parents": "Presence-only/degenerate-parent diagnostics reported; not described as newly identified subtype programmes.",
+  "binding": {
+    "annotation_SHA256": "2a4bc82cb495d0fc2ffb40ecda6b1cbb53802eb2bf87efd2392746371653244c",
+    "source_core_SHA256": "4691bc2801c872b331cf390a41ed6f1e664033000a55b48e7353f70f7d41b7a4",
+    "technical_context_SHA256": "943d7935bd354cfb1e05172696bd68059f6b42c7a835f7ec78f3d4fc646345fe"
+  },
+  "files": [
+    {
+      "name": "sample_admission_PRIVATE.tsv",
+      "bytes": 234513,
+      "sha256": "98254c51e07aaf4afb9d74edb35121623c2e2f2c78a7d58ac07587a5618f84b6"
+    },
+    {
+      "name": "all_node_variable_frequency_screen.tsv",
+      "bytes": 2554,
+      "sha256": "a57754ab85f0ce0647bea7ffbabd5a6bfacd1a0a00dfac8a4a3a52adbac9ad26"
+    },
+    {
+      "name": "frequency_PRIVATE.tsv",
+      "bytes": 111717,
+      "sha256": "d3a7b7af6232b6935ca635d09274959cd47ac363a682327584b46a572fafa9a4"
+    },
+    {
+      "name": "counts_all_non_epithelial_PRIVATE.tsv",
+      "bytes": 32045,
+      "sha256": "f6adad2653427beaa9f91382430d8e10497a77fa4ee4acb955510bdfd0bbe71e"
+    },
+    {
+      "name": "parent_denominators_PRIVATE.tsv",
+      "bytes": 14992,
+      "sha256": "564e95efa71865630a65351222746b3b27ea8cd3414768be3a7cb9b7e06b9739"
+    },
+    {
+      "name": "selected_cell_annotation_and_sample_PRIVATE.pkl.gz",
+      "bytes": 7278693,
+      "sha256": "64d06ab358771c883c8b689b0348f4f361d376dee2733d4d4e35234e6a016853"
+    },
+    {
+      "name": "node_catalogue.tsv",
+      "bytes": 3172,
+      "sha256": "8b3c15b09eafbda3a3efe72d082c18cca10cc976cba7d2b7318c87b054ebab3f"
+    },
+    {
+      "name": "source_admission_summary.tsv",
+      "bytes": 1293,
+      "sha256": "0ee61f043a3fc1c89975b0d1c1a87f21ae33e5b55880e84c545b99a1dc68af26"
+    },
+    {
+      "name": "sample_admission_reason_counts.tsv",
+      "bytes": 333,
+      "sha256": "7a6e6702034a5b5029e2e9e4300646ee373a1b8736f9491de46f91425df3c2dd"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_independent_R_saved_models_CCC_WSH_and_permutations",
+  "UTC": "2026-11-06T12:40:56Z",
+  "n_rank_models": 19,
+  "n_starts_per_rank": 30,
+  "paper_admissible_ranks": [14, 18],
+  "selected_rank": 14,
+  "no_rank_forced": true,
+  "all_CCC_recomputed_from_saved_consensus": true,
+  "all_WS_H_reconstructions_verified": true,
+  "all_topology_permutations_recomputed": true,
+  "all_atlas_or_biological_validation_claim": false
+}

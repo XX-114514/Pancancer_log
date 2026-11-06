@@ -1,0 +1,3 @@
+branch	n_cells	n_samples	n_sources	n_nodes	selected_rank	nonempty_networks	cross_parent_networks	empty_factors	single_parent_nonempty_networks
+primary_v2	560871	164	13	45	14	11	10	3	1
+scope_sensitivity_v1	690421	210	14	45	19	18	18	1	0

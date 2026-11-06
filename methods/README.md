@@ -1,3 +1,5 @@
+[V4注释CoVarNet原文配置](CoVarNet-V7-selective-author-CM-20261106.md)：来源范围、父分母、严格CCC、top15、作者P处理、全部CM及独立复算；适配与验证边界单列。
+
 [V7选择性保留亚型规则](V7-selective-subtype-preservation-20261106.md)：已有亚型保持原名，只回退未完成标签；真实父类反证另列例外，继承与新验收分开。
 
 [V7正式大类＋marker冻结](V7-major-marker-freeze-20261106.md)：全轴多组件、实际纳入后的marker命名与同身份合并、完整独立审计、状态/CNV分离和选择保留率。
