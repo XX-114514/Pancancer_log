@@ -1,0 +1,16 @@
+{
+  "UTC": "2026-11-06T11:49:38Z",
+  "repository_validation_exit": 0,
+  "errors": 0,
+  "warnings": 1,
+  "warning_scope": "Existing repository internal-path candidates; new result and code content passed scoped privacy scan.",
+  "validation_log_sha256": "72079daeb8e60fbc8aa4052bf153fbaa5597e241b981d08e4acedb1de87264a3",
+  "all_five_figures_visually_inspected": true,
+  "code_manifest_sha256_exact": true,
+  "public_evidence_commit": "479fc051",
+  "ordinary_merge_commit": "b5d63c9699c8ae9bf313b15cc6026b97b501b47b",
+  "remote_main_independently_verified": "b5d63c9699c8ae9bf313b15cc6026b97b501b47b",
+  "preexisting_main_tracked_dirty_files_preserved": 15,
+  "history_rewrite": false,
+  "all_atlas_publication_acceptance": false
+}
