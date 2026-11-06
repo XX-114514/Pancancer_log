@@ -1,0 +1,52 @@
+pool	cluster	r1_label	action	reason
+T_NK	11	CD8_effector_exhausted_like	keep	CD8A, GZMK, GZMB, LAG3, CCL4
+T_NK	7	CD4_memory_like	keep	IL7R, ANXA1, LTB, GPR183, CCR7
+T_NK	6	T_low_depth	keep_flag_low_depth	T detection 0.58, 743 genes, no markers; MT and contamination normal, so low depth alone is not low quality; re-examined in round 2
+T_NK	4	Treg_like	keep	FOXP3, CTLA4, TIGIT, TNFRSF4, BATF
+T_NK	3	CD8_GZMK_like	keep	GZMK, CCL5, CD8A
+T_NK	0	CD4_IL7R_low_depth	keep_flag_low_depth	IL7R only, 771 genes
+T_NK	8	NK_cytotoxic_like	keep	FGFBP2, FCGR3A, SPON2, KLRF1
+T_NK	10	NK_XCL_ILC_like	keep	XCL1, XCL2, KLRC1, AREG, KLRB1
+T_NK	5	Treg_activated_like	keep	IL2RA, FOXP3, LAIR2, TNFRSF18
+T_NK	15	T_with_other_lineage_RNA	remove_doublet_like	T detection only 0.33 with CALD1/CST3, doublet z 1.79, contamination 0.074, uncertain 0.26
+T_NK	2	Proliferating_T	keep_state	MKI67, TOP2A, STMN1; doublet z 1.18 explained by cycling
+T_NK	9	Naive_like	keep	CCR7, LEF1, TCF7, SELL
+T_NK	16	T_macrophage_doublet_like	remove_doublet_like	SPP1, APOE, C1Q with T detection 0.42, doublet z 1.70
+T_NK	1	T_nuclear_transcripts	remove_low_quality	only long nuclear transcripts (CBLB, ATXN1, PRKCH, LYST), no identity programme
+T_NK	13	T_with_tumour_RNA	set_aside_review	KRT18, NDUFA4L2, CRYAB, SERPINA1; T detection 0.41, uncertain 0.26, doublet z -0.4 (other-lineage genes without doublet evidence), so not called a doublet; left out of round 2
+T_NK	14	Not_T	set_aside_review	no T genes; IGFBP7, TM4SF1, TIMP1, mostly ovarian; doublet z -1.18
+T_NK	12	T_immediate_early_stress	keep_state	FOS, JUN, NR4A1, DUSP1
+Myeloid	3	Mac_C1Q_FOLR2_like	keep	C1Q, FOLR2, PLTP, CCL3
+Myeloid	4	Mac_low_depth	keep_flag_low_depth	C1Q only, 765 genes
+Myeloid	5	Mac_APOE_SLC40A1_like	keep	APOE, SLC40A1, LGMN, FOLR2
+Myeloid	0	Mono_Mac_inflammatory_like	keep	EREG, IL1B, CXCL3, VCAN, NLRP3
+Myeloid	2	cDC2_like	keep	CD1C, FCER1A, CLEC10A, CD1E
+Myeloid	8	Neutrophil	keep	FCGR3B, CSF3R, CXCR2
+Myeloid	1	LAM_SPP1_like	keep	SPP1, GPNMB, FABP5, APOC1
+Myeloid	9	Mono_classical_like	keep	FCN1, S100A8/9, VCAN, S100A12
+Myeloid	14	Mast	keep	TPSAB1, CPA3, KIT, HPGDS
+Myeloid	7	Mac_stress	keep_state	HSPA6, DNAJB1, HSPA1B; state, not a type
+Myeloid	6	T_myeloid_doublet_like	remove_doublet_like	CD3D, CD3E, CD2, NKG7 in a myeloid pool, doublet z 3.13
+Myeloid	10	Mono_DC_intermediate_like	keep	LYZ, FBP1, CLEC10A, FCN1, CPVL; resolved in round 2
+Myeloid	16	pDC	keep	LILRA4, IRF7, PLD4, TCF4
+Myeloid	12	Osteoclast_like	keep	CTSK, ACP5, MMP9, SIGLEC15; 79% osteosarcoma
+Myeloid	13	mregDC_like	keep	LAMP3, CCR7, FSCN1, CCL19, CCL22
+Myeloid	15	Proliferating_osteoclast_like	keep_state	SPP1, MMP9, MKI67; 98% osteosarcoma
+Myeloid	11	B_cycling_misplaced	remove_wrong_lineage	MS4A1, CD79A, CD79B, MKI67, 44 cells
+Endothelial	10	EC_venous_MHCII_like	keep	SELE, SELP, VCAM1, HLA-DR
+Endothelial	2	EC_capillary_like	keep	RGCC, KDR, FLT1
+Endothelial	1	EC_tip_like	keep	ESM1, ANGPT2, PGF, KCNE3
+Endothelial	4	EC_low_depth	keep_flag_low_depth	EC detection 0.62, 779 genes, no markers
+Endothelial	6	EC_low_depth	keep_flag_low_depth	EC detection 0.70, 964 genes, no markers
+Endothelial	0	EC_arterial_like	keep	GJA5, SEMA3G, EFNB2, FBLN5
+Endothelial	5	EC_venous_like	keep	SELP, NR2F2, CLU
+Endothelial	3	EC_activated_like	keep_state	SELE, ICAM1, SOD2, SERPINE1
+Endothelial	15	EC_with_mural_RNA	set_aside_review	RGS5, COL1A1, TAGLN, DCN, doublet z 0.64 (other-lineage genes without doublet evidence), so not called a doublet; left out of round 2
+Endothelial	7	EC_capillary_CA4_like	keep	CA4, BTNL9
+Endothelial	12	Lymphatic_EC	keep	CCL21, MMRN1, PROX1, PDPN
+Endothelial	8	EC_T_doublet_like	remove_doublet_like	CD3D, CD3E, PTPRC, doublet z 2.83
+Endothelial	9	EC_immediate_early	keep_state	EGR1, FOSB, SOCS3, KLF4
+Endothelial	13	Proliferating_EC	keep_state	MKI67, TOP2A, CENPF
+Endothelial	14	EC_macrophage_doublet_like	remove_doublet_like	C1Q, APOE, TYROBP, doublet z 1.71
+Endothelial	16	EC_epithelial_RNA	remove_wrong_lineage	KRT19, MUC1, PIGR, SFN, 77 cells
+Endothelial	11	EC_activated_small	keep_state	SELE, SOCS3, CXCL2, 43 cells, source restricted
