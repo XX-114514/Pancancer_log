@@ -136,3 +136,42 @@
    - 若与该癌种的恶性/uncertain 细胞同簇、又没有器官上皮身份证据，标为 `epithelial_tumour_adjacent_unresolved`，建议不进入 CoVarNet v1（待用户决定）；
    - 若显示为其他谱系、低质量或双细胞，按相应判据处理。
 3. **双细胞和低质量（约3–4千个）**：例如中性粒和鳞状上皮共表达的子簇、MT 高的子簇。在各癌种大类分析中按判据确认。
+
+## CoVarNet v1 的细胞纳入范围（用户决定，2026-11-06）
+
+本节是 CoVarNet v1 细胞范围的权威说明。决定记录见 [source_decisions_v1.tsv](../inventories/tme_v1/source_decisions_v1.tsv)，计数见 [inventories/annotation_v2/](../inventories/annotation_v2/)。
+
+| 细胞 | CoVarNet v1 | 说明 |
+|---|---|---|
+| 免疫、基质（成纤维、周细胞/平滑肌）、内皮谱系的非恶性细胞 | **纳入** | 须通过后续的谱系 QC 和节点丰度阈值 |
+| 上述谱系中的 uncertain 细胞（67,690个） | **纳入（回收）** | 见下文；保留 `rescued_uncertain_v1` 标记 |
+| 非恶性上皮细胞 | **暂不纳入** | 保留注释，不进入 CoVarNet v1 |
+| 肝细胞、黑色素细胞、胶质/神经、间皮 | **暂不纳入** | 保留注释，不进入 CoVarNet v1 |
+| 上皮及上述谱系中的 uncertain 细胞 | **不纳入** | 不回收 |
+| 恶性细胞 | 不纳入 | 不进入 TME |
+| 低质量、双细胞、红细胞、未分配的增殖细胞 | 不纳入 | 按判据剔除 |
+| GSE179994、GSE182434、GSE189357 的3个 AIS 样本 | 不纳入 | 见 scope_exclusions_v1.tsv |
+
+### uncertain 细胞的回收
+
+大类复核后发现，带有明确免疫、基质或内皮标签的簇中有67,690个 uncertain 细胞，按恶性判定证据分为：
+
+| scATOMIC \| inferCNV | 细胞数 |
+|---|---|
+| 正常 \| CNV 阳性 | 63,460 |
+| 肿瘤 \| CNV 阴性 | 4,143（其中 T/NK 2,864） |
+| 未运行 \| CNV 阳性（scATOMIC 失败的样本） | 87 |
+
+最多的是 B/浆细胞（30,411个）：在检查过的簇中，scATOMIC 判为 Plasmablast 或 B Cell，只有 inferCNV 判阳性。解释（未验证）：高表达的 Ig 基因可能造成 CNV 假阳性。
+
+判断依据是簇级的谱系身份，加上两种方法没有同时支持恶性。这些细胞在恶性判定中没有被改写：`malignancy_call` 仍为 uncertain，只在 CoVarNet 纳入层面回收，并按证据类别记录，可以单独做敏感性分析。上皮及其他实质谱系中的 uncertain 细胞（约29万个）不在回收范围内。
+
+### 成纤维细胞的跨癌种亚型
+
+用户决定（2026-11-06）对成纤维细胞做跨癌种亚型。这是对 Lodi 设计的扩展：Lodi 只把成纤维细胞作为大类。基质池（Fibroblast、Mural）因此也进入第二轮，命名使用面板中的 Fib_* 和 Pericyte/Smooth_muscle 模块。骨肉瘤、软组织肉瘤等 CNV 主导癌种中，恶性细胞已被判定移除，但间质样肿瘤细胞可能有残留，需逐簇核查癌种组成。
+
+## 第二轮参数（2026-11-06）
+
+Lodi 在干净对象上把 PC 从18提高到40，是为了分辨更细的亚型。本项目的 Kneedle 肘点在 QC 轮的各个池中都落在下限15，对亚型来说太粗。因此第二轮把下限设为30（上限40），HVG 候选取3,000个（候选集已排除技术、HB、IG V、TCR V 基因），分辨率 0.3、0.5、0.7、1、1.5、2、3，再按相邻 ARI 和 marker 可解释性选主分辨率。
+
+QC 轮的逐簇判定见 [lineage_r1_reviewed.tsv](../inventories/annotation_v2/lineage_r1_reviewed.tsv)。只有其他谱系 marker 而没有双细胞旁证（或相反）的簇记为 `set_aside_review`：不算双细胞，但不进入第二轮。低深度但 MT 和污染都正常、只是没有 marker 的簇保留并标记。

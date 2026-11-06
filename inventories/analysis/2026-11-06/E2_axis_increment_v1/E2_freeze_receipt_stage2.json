@@ -1,0 +1,21 @@
+{
+ "stage": 2,
+ "frozen_at_utc": "2026-11-06T11:01:42+00:00",
+ "new_effects_computed": false,
+ "note": "Frozen before the repro gate and all new effects. TCGA effects of the 4 published axes were already known; this is calibration, not blinded confirmation.",
+ "script_sha256": "f859be89974c298c56ecceae46b6c02cc32ecc6f861e805e59c5f45f5e0fc72f",
+ "config_sha256": "0fb16d92b4c9f9082b51e68baec657794d92c9c89739d7a0a73df822c5448108",
+ "plan_sha256": "92b1c523cd41d08b88bab02ae7b4fe800e9f0c9e808288c145b4dded6a9d2b1d",
+ "addendum_sha256": "63d8a86845f089ca82735c08db0014f0eaab81bf78caba6d866dfabdfbcc4268",
+ "stage1_receipt_sha256": "bccc472f69a233ad37e30ba5bd6745cd0c3f64071bd6ed6688f2124b0bf7a6d6",
+ "input_sha256": {
+  "axes.tsv": "fbd2434013b357640fee9ef42115c46a95ff72b3470b0b247b5e047311bed0ab",
+  "clin.tsv": "91556e82685029b85a08c1527db03363595133a31fd8d53833e44a70f9c5bf02",
+  "covariates.tsv": "9867a0f7c4eef8a5eb54f182d04fb3e64ab7ca5845e9380b490ef6a1b98e1488",
+  "lr_resource.tsv": "57ec99928b95c191a20288c9da18136dbf36ed491fdd93b65e79279f12d7698c",
+  "parent_genes.tsv": "be7bc60613bf1454117ae3ca08922ce0e6b413500df827b691ddc357ab25d8e7",
+  "parents.tsv": "ba8313a4bdd30b6d6a8059e9250424ef6ee072b5f0bc937306107b6bf9fc3905",
+  "published.tsv": "4005c8f2f842b537331130cdd14b1cab834f1cedac6e9ffb0a49778f8a96c255",
+  "expr.rds": "b5ea24da0f4d3b93eec14d0c12070b36101bfeffac6e1adbc37b8f401186404b"
+ }
+}
