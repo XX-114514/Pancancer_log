@@ -25,7 +25,7 @@ for row in members.itertuples():
  # Scanpy t-test uses Welch; keep that code behavior, document prose Student discrepancy.
  _,pv=ttest_ind_from_stats(mh,np.sqrt(vh),nh,ml,np.sqrt(vl),nl,equal_var=False);qv=bh(pv);lfc=np.log2((np.expm1(mh)+1e-9)/(np.expm1(ml)+1e-9));measured=(detect[high|low].sum(0)>0);up=set(genes[measured&(lfc>np.log2(1.2))&(qv<.05)]);down=set(genes[measured&(lfc<-np.log2(1.2))&(qv<.05)])
  d=pd.DataFrame({'gene':genes,'log2FC':lfc,'p':pv,'q':qv,'measurable':measured,'mean_high':mh,'mean_low':ml});d.to_csv(o/f'{row.cm}_{row.Index}_DE.tsv.gz',sep='\t',index=False)
- lib=sig[sig.sheet==typ];background=set(genes[measured]);annotated=set(lib.human_gene)&set(genes)
+ lib=sig[sig.sheet==typ];background=set(genes[measured]);annotated=set(lib.human_gene)
  for branch in ['author_unsigned_annotation_universe','project_directional_measured_universe']:
   U=annotated if branch.startswith('author') else background
   for (cyt,cys),t in lib.groupby(['cytokine','cytokine_symbol_mouse']):
@@ -37,6 +37,7 @@ for row in members.itertuples():
 a=pd.DataFrame(results);a['q_within_identity']=np.nan;a['q_full_family']=np.nan
 for key,g in a.groupby(['branch','cm','identity']):a.loc[g.index,'q_within_identity']=bh(g.p)
 for key,g in a.groupby('branch'):a.loc[g.index,'q_full_family']=bh(g.p)
+a.loc[a.status!='tested',['q_within_identity','q_full_family']]=np.nan
 a.to_csv(o/'response_full_family.tsv',sep='\t',index=False);pd.DataFrame(quals).to_csv(o/'identity_eligibility.tsv',sep='\t',index=False)
 # Minimum within-subset q is the author's descriptive CM display, not a valid CM-level q.
 a.groupby(['branch','cm','cytokine']).q_within_identity.min().reset_index(name='minimum_subset_q_descriptive').to_csv(o/'CM_response_minimum_q.tsv',sep='\t',index=False)

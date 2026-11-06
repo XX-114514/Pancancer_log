@@ -1,0 +1,1502 @@
+cm	group	variable	level	n_samples
+CM03	Low	immunotherapy_timing	unknown	1004
+CM03	Low	immunotherapy_timing	pre-treatment	80
+CM03	Low	immunotherapy_timing	post-treatment	27
+CM03	Low	immunotherapy_timing	on-treatment	7
+CM04	High	cancer_type	Glioblastoma	34
+CM04	High	cancer_type	Lung cancer	25
+CM04	High	cancer_type	Acute myeloid leukemia	16
+CM04	High	cancer_type	Uveal melanoma	14
+CM04	High	cancer_type	Osteosarcoma	5
+CM04	High	cancer_type	Pancreatic neuroendocrine tumor	4
+CM04	High	cancer_type	Acral melanoma	3
+CM04	High	cancer_type	Advanced non-small cell lung cancer	2
+CM04	High	cancer_type	Melanoma	1
+CM04	High	cancer_type	Papillary thyroid carcinoma	1
+CM04	High	cancer_type	Colorectal cancer	1
+CM04	High	cancer_type	Pleural mesothelioma	1
+CM04	High	cancer_type	Pituitary neuroendocrine tumor	1
+CM04	High	cancer_type	Gastric cancer	1
+CM04	High	cancer_type	SCLC	1
+CM04	High	cancer_type	Cervical cancer	1
+CM04	High	cancer_type	Endometrial carcinosarcoma	1
+CM01	High	cancer_type	Pancreatic ductal adenocarcinoma	21
+CM01	High	cancer_type	Gastric cancer	18
+CM01	High	cancer_type	Colorectal cancer	13
+CM01	High	cancer_type	SCLC	5
+CM01	High	cancer_type	Papillary thyroid carcinoma	5
+CM01	High	cancer_type	High-grade serous ovarian cancer	4
+CM01	High	cancer_type	Melanoma	4
+CM01	High	cancer_type	Lung cancer	4
+CM01	High	cancer_type	Pancreatic neuroendocrine tumor	3
+CM01	High	cancer_type	Nasopharyngeal carcinoma	1
+CM01	High	cancer_type	Breast cancer	1
+CM01	High	cancer_type	Pituitary neuroendocrine tumor	1
+CM01	High	cancer_type	Cervical cancer	1
+CM08	High	sample_class	primary_or_unspecified_tumor	95
+CM08	High	sample_class	normal_or_adjacent	24
+CM08	High	sample_class	unknown	18
+CM08	High	sample_class	metastatic_tumor	8
+CM08	High	sample_class	lymph_node	7
+CM09	Low	cancer_type	Colorectal cancer	207
+CM09	Low	cancer_type	Gastric cancer	149
+CM09	Low	cancer_type	Lung cancer	113
+CM09	Low	cancer_type	Breast cancer	76
+CM09	Low	cancer_type	Prostate cancer	64
+CM09	Low	cancer_type	INVASIVE ADENOCARCINOMA	47
+CM09	Low	cancer_type	Glioblastoma	44
+CM09	Low	cancer_type	Pancreatic ductal adenocarcinoma	39
+CM09	Low	cancer_type	Advanced non-small cell lung cancer	37
+CM09	Low	cancer_type	ADENOCARCINOMA	31
+CM09	Low	cancer_type	Melanoma	26
+CM09	Low	cancer_type	Clear cell renal cell carcinoma	25
+CM09	Low	cancer_type	HCC	22
+CM09	Low	cancer_type	CRC	22
+CM09	Low	cancer_type	Papillary thyroid carcinoma	22
+CM09	Low	cancer_type	Pancreatic neuroendocrine tumor	20
+CM09	Low	cancer_type	Non-small cell lung cancer	18
+CM09	Low	cancer_type	SCLC	18
+CM09	Low	cancer_type	Acute myeloid leukemia	17
+CM09	Low	cancer_type	Cervical cancer	17
+CM09	Low	cancer_type	Uveal melanoma	17
+CM09	Low	cancer_type	Part-solid LUAD	16
+CM09	Low	cancer_type	Head and neck squamous cell carcinoma	14
+CM09	Low	cancer_type	Renal cell carcinoma	14
+CM09	Low	cancer_type	Pleural mesothelioma	13
+CM09	Low	cancer_type	Bladder cancer	13
+CM09	Low	cancer_type	Rectal adenocarcinoma	12
+CM09	Low	cancer_type	High-grade serous ovarian cancer	12
+CM09	Low	cancer_type	Esophageal cancer	11
+CM09	Low	cancer_type	Osteosarcoma	11
+CM09	Low	cancer_type	Nasopharyngeal carcinoma	10
+CM09	Low	cancer_type	Pituitary neuroendocrine tumor	9
+CM09	Low	cancer_type	Acral melanoma	9
+CM09	Low	cancer_type	ALK-positive/negative LUAD	9
+CM09	Low	cancer_type	Endometrial carcinosarcoma	8
+CM09	Low	cancer_type	Cervical SCC/adenocarcinoma	8
+CM09	Low	cancer_type	Intrahepatic cholangiocarcinoma	7
+CM09	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	7
+CM09	Low	cancer_type	Left/right CRC	6
+CM09	Low	cancer_type	Basal cell carcinoma	5
+CM09	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM09	Low	cancer_type	Seminoma	4
+CM09	Low	cancer_type	ambiguous	2
+CM02	High	immunotherapy_timing	unknown	211
+CM02	High	immunotherapy_timing	pre-treatment	9
+CM02	High	immunotherapy_timing	post-treatment	2
+CM02	High	immunotherapy_timing	on-treatment	1
+CM08	Low	cancer_type	Colorectal cancer	189
+CM08	Low	cancer_type	Lung cancer	107
+CM08	Low	cancer_type	Gastric cancer	100
+CM08	Low	cancer_type	Breast cancer	81
+CM08	Low	cancer_type	Prostate cancer	75
+CM08	Low	cancer_type	INVASIVE ADENOCARCINOMA	45
+CM08	Low	cancer_type	Glioblastoma	44
+CM08	Low	cancer_type	Advanced non-small cell lung cancer	42
+CM08	Low	cancer_type	Pancreatic ductal adenocarcinoma	37
+CM08	Low	cancer_type	Clear cell renal cell carcinoma	32
+CM08	Low	cancer_type	ADENOCARCINOMA	31
+CM08	Low	cancer_type	Acute myeloid leukemia	30
+CM08	Low	cancer_type	Melanoma	25
+CM08	Low	cancer_type	CRC	23
+CM08	Low	cancer_type	Papillary thyroid carcinoma	22
+CM08	Low	cancer_type	Pancreatic neuroendocrine tumor	20
+CM08	Low	cancer_type	Cervical cancer	18
+CM08	Low	cancer_type	Non-small cell lung cancer	17
+CM08	Low	cancer_type	Uveal melanoma	17
+CM08	Low	cancer_type	SCLC	17
+CM08	Low	cancer_type	Part-solid LUAD	16
+CM08	Low	cancer_type	HCC	13
+CM08	Low	cancer_type	Bladder cancer	12
+CM08	Low	cancer_type	Rectal adenocarcinoma	12
+CM08	Low	cancer_type	Head and neck squamous cell carcinoma	12
+CM08	Low	cancer_type	Osteosarcoma	11
+CM08	Low	cancer_type	Pituitary neuroendocrine tumor	10
+CM08	Low	cancer_type	Renal cell carcinoma	10
+CM08	Low	cancer_type	Endometrial carcinosarcoma	8
+CM08	Low	cancer_type	Acral melanoma	8
+CM08	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	7
+CM08	Low	cancer_type	ALK-positive/negative LUAD	7
+CM08	Low	cancer_type	Pleural mesothelioma	7
+CM08	Low	cancer_type	Nasopharyngeal carcinoma	7
+CM08	Low	cancer_type	Cervical SCC/adenocarcinoma	7
+CM08	Low	cancer_type	High-grade serous ovarian cancer	7
+CM08	Low	cancer_type	Basal cell carcinoma	6
+CM08	Low	cancer_type	Left/right CRC	5
+CM08	Low	cancer_type	Intrahepatic cholangiocarcinoma	4
+CM08	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM08	Low	cancer_type	Seminoma	3
+CM08	Low	cancer_type	ambiguous	2
+CM08	Low	cancer_type	Esophageal cancer	1
+CM07	High	gse_id	GSE253013	26
+CM07	High	gse_id	GSE131907	17
+CM07	High	gse_id	GSE148071	13
+CM07	High	gse_id	GSE188737	6
+CM07	High	gse_id	GSE288479	6
+CM07	High	gse_id	GSE274934	6
+CM07	High	gse_id	GSE297041	5
+CM07	High	gse_id	GSE222315	4
+CM07	High	gse_id	GSE176031	3
+CM07	High	gse_id	GSE161529	3
+CM07	High	gse_id	GSE197461	3
+CM07	High	gse_id	GSE281740	3
+CM07	High	gse_id	GSE201347	2
+CM07	High	gse_id	GSE163558	2
+CM07	High	gse_id	GSE162025	2
+CM07	High	gse_id	GSE127465	1
+CM07	High	gse_id	GSE184362	1
+CM07	High	gse_id	GSE200997	1
+CM07	High	gse_id	GSE184880	1
+CM07	High	gse_id	GSE190597	1
+CM07	High	gse_id	GSE228501	1
+CM07	High	gse_id	GSE274229	1
+CM07	High	gse_id	GSE256136	1
+CM07	High	gse_id	GSE270680	1
+CM02	High	sample_class	primary_or_unspecified_tumor	106
+CM02	High	sample_class	normal_or_adjacent	60
+CM02	High	sample_class	unknown	38
+CM02	High	sample_class	metastatic_tumor	8
+CM02	High	sample_class	lymph_node	7
+CM02	High	sample_class	blood	4
+CM05	High	immunotherapy_timing	unknown	177
+CM05	High	immunotherapy_timing	pre-treatment	17
+CM05	High	immunotherapy_timing	post-treatment	7
+CM05	Low	sample_class	primary_or_unspecified_tumor	602
+CM05	Low	sample_class	unknown	197
+CM05	Low	sample_class	normal_or_adjacent	160
+CM05	Low	sample_class	metastatic_tumor	61
+CM05	Low	sample_class	blood	31
+CM05	Low	sample_class	bone_marrow	29
+CM05	Low	sample_class	lymph_node	22
+CM08	High	gse_id	GSE270680	26
+CM08	High	gse_id	GSE132465	19
+CM08	High	gse_id	GSE183904	13
+CM08	High	gse_id	GSE273127	10
+CM08	High	gse_id	GSE261774	8
+CM08	High	gse_id	GSE299340	8
+CM08	High	gse_id	GSE190597	6
+CM08	High	gse_id	GSE189357	6
+CM08	High	gse_id	GSE201347	6
+CM08	High	gse_id	GSE184880	5
+CM08	High	gse_id	GSE159115	4
+CM08	High	gse_id	GSE115978	4
+CM08	High	gse_id	GSE138709	4
+CM08	High	gse_id	GSE163558	4
+CM08	High	gse_id	GSE178341	3
+CM08	High	gse_id	GSE155698	3
+CM08	High	gse_id	GSE162025	3
+CM08	High	gse_id	GSE274934	2
+CM08	High	gse_id	GSE274229	2
+CM08	High	gse_id	GSE253013	2
+CM08	High	gse_id	GSE281740	2
+CM08	High	gse_id	GSE188737	2
+CM08	High	gse_id	GSE127465	1
+CM08	High	gse_id	GSE161529	1
+CM08	High	gse_id	GSE188711	1
+CM08	High	gse_id	GSE184362	1
+CM08	High	gse_id	GSE131907	1
+CM08	High	gse_id	GSE197461	1
+CM08	High	gse_id	GSE228501	1
+CM08	High	gse_id	GSE222315	1
+CM08	High	gse_id	GSE189889	1
+CM08	High	gse_id	GSE290925	1
+CM06	High	gse_id	GSE161529	36
+CM06	High	gse_id	GSE274229	25
+CM06	High	gse_id	GSE176031	15
+CM06	High	gse_id	GSE290925	9
+CM06	High	gse_id	GSE302903	9
+CM06	High	gse_id	GSE178481	7
+CM06	High	gse_id	GSE256136	7
+CM06	High	gse_id	GSE148071	6
+CM06	High	gse_id	GSE299623	6
+CM06	High	gse_id	GSE297041	6
+CM06	High	gse_id	GSE244101	5
+CM06	High	gse_id	GSE200997	5
+CM06	High	gse_id	GSE281740	4
+CM06	High	gse_id	GSE270680	4
+CM06	High	gse_id	GSE152048	4
+CM06	High	gse_id	GSE127465	3
+CM06	High	gse_id	GSE201347	3
+CM06	High	gse_id	GSE182109	3
+CM06	High	gse_id	GSE222315	3
+CM06	High	gse_id	GSE188711	2
+CM06	High	gse_id	GSE141526	2
+CM06	High	gse_id	GSE163558	2
+CM06	High	gse_id	GSE253013	2
+CM06	High	gse_id	GSE138665	1
+CM06	High	gse_id	GSE190597	1
+CM06	High	gse_id	GSE274934	1
+CM04	High	sample_class	primary_or_unspecified_tumor	65
+CM04	High	sample_class	unknown	26
+CM04	High	sample_class	bone_marrow	16
+CM04	High	sample_class	metastatic_tumor	3
+CM04	High	sample_class	normal_or_adjacent	1
+CM04	High	sample_class	lymph_node	1
+CM01	Low	cancer_type	Colorectal cancer	198
+CM01	Low	cancer_type	Gastric cancer	131
+CM01	Low	cancer_type	Lung cancer	110
+CM01	Low	cancer_type	Breast cancer	89
+CM01	Low	cancer_type	Prostate cancer	77
+CM01	Low	cancer_type	INVASIVE ADENOCARCINOMA	47
+CM01	Low	cancer_type	Glioblastoma	44
+CM01	Low	cancer_type	Advanced non-small cell lung cancer	42
+CM01	Low	cancer_type	Clear cell renal cell carcinoma	32
+CM01	Low	cancer_type	ADENOCARCINOMA	31
+CM01	Low	cancer_type	Acute myeloid leukemia	30
+CM01	Low	cancer_type	Melanoma	25
+CM01	Low	cancer_type	CRC	23
+CM01	Low	cancer_type	HCC	22
+CM01	Low	cancer_type	Pancreatic ductal adenocarcinoma	19
+CM01	Low	cancer_type	Non-small cell lung cancer	18
+CM01	Low	cancer_type	Papillary thyroid carcinoma	18
+CM01	Low	cancer_type	Pancreatic neuroendocrine tumor	17
+CM01	Low	cancer_type	Uveal melanoma	17
+CM01	Low	cancer_type	Cervical cancer	17
+CM01	Low	cancer_type	Part-solid LUAD	16
+CM01	Low	cancer_type	Head and neck squamous cell carcinoma	14
+CM01	Low	cancer_type	SCLC	14
+CM01	Low	cancer_type	Renal cell carcinoma	14
+CM01	Low	cancer_type	Pleural mesothelioma	13
+CM01	Low	cancer_type	Bladder cancer	13
+CM01	Low	cancer_type	Rectal adenocarcinoma	12
+CM01	Low	cancer_type	Osteosarcoma	11
+CM01	Low	cancer_type	Esophageal cancer	11
+CM01	Low	cancer_type	Nasopharyngeal carcinoma	9
+CM01	Low	cancer_type	Acral melanoma	9
+CM01	Low	cancer_type	ALK-positive/negative LUAD	9
+CM01	Low	cancer_type	Pituitary neuroendocrine tumor	9
+CM01	Low	cancer_type	Endometrial carcinosarcoma	8
+CM01	Low	cancer_type	Intrahepatic cholangiocarcinoma	8
+CM01	Low	cancer_type	High-grade serous ovarian cancer	8
+CM01	Low	cancer_type	Cervical SCC/adenocarcinoma	8
+CM01	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	7
+CM01	Low	cancer_type	Basal cell carcinoma	6
+CM01	Low	cancer_type	Left/right CRC	6
+CM01	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM01	Low	cancer_type	Seminoma	4
+CM01	Low	cancer_type	ambiguous	2
+CM03	High	immunotherapy_timing	unknown	174
+CM03	High	immunotherapy_timing	pre-treatment	8
+CM03	High	immunotherapy_timing	on-treatment	2
+CM03	High	immunotherapy_timing	post-treatment	1
+CM05	High	cancer_type	Colorectal cancer	65
+CM05	High	cancer_type	Lung cancer	36
+CM05	High	cancer_type	Melanoma	13
+CM05	High	cancer_type	Breast cancer	9
+CM05	High	cancer_type	Prostate cancer	9
+CM05	High	cancer_type	Gastric cancer	8
+CM05	High	cancer_type	Advanced non-small cell lung cancer	8
+CM05	High	cancer_type	Non-small cell lung cancer	4
+CM05	High	cancer_type	Glioblastoma	4
+CM05	High	cancer_type	CRC	4
+CM05	High	cancer_type	Left/right CRC	3
+CM05	High	cancer_type	Papillary thyroid carcinoma	3
+CM05	High	cancer_type	Acral melanoma	3
+CM05	High	cancer_type	INVASIVE ADENOCARCINOMA	3
+CM05	High	cancer_type	Clear cell renal cell carcinoma	2
+CM05	High	cancer_type	Uveal melanoma	2
+CM05	High	cancer_type	HCC	2
+CM05	High	cancer_type	Renal cell carcinoma	2
+CM05	High	cancer_type	Pancreatic ductal adenocarcinoma	2
+CM05	High	cancer_type	Cervical SCC/adenocarcinoma	2
+CM05	High	cancer_type	Pituitary neuroendocrine tumor	2
+CM05	High	cancer_type	Pancreatic neuroendocrine tumor	2
+CM05	High	cancer_type	ADENOCARCINOMA	2
+CM05	High	cancer_type	Pleural mesothelioma	2
+CM05	High	cancer_type	Part-solid LUAD	2
+CM05	High	cancer_type	Acute myeloid leukemia	1
+CM05	High	cancer_type	Head and neck squamous cell carcinoma	1
+CM05	High	cancer_type	Bladder cancer	1
+CM05	High	cancer_type	Seminoma	1
+CM05	High	cancer_type	Esophageal cancer	1
+CM05	High	cancer_type	SCLC	1
+CM05	High	cancer_type	Rectal adenocarcinoma	1
+CM02	Low	cancer_type	Colorectal cancer	182
+CM02	Low	cancer_type	Gastric cancer	101
+CM02	Low	cancer_type	Lung cancer	97
+CM02	Low	cancer_type	Breast cancer	80
+CM02	Low	cancer_type	Prostate cancer	69
+CM02	Low	cancer_type	Glioblastoma	44
+CM02	Low	cancer_type	Advanced non-small cell lung cancer	38
+CM02	Low	cancer_type	Pancreatic ductal adenocarcinoma	32
+CM02	Low	cancer_type	Acute myeloid leukemia	30
+CM02	Low	cancer_type	INVASIVE ADENOCARCINOMA	27
+CM02	Low	cancer_type	Clear cell renal cell carcinoma	25
+CM02	Low	cancer_type	Melanoma	25
+CM02	Low	cancer_type	HCC	20
+CM02	Low	cancer_type	Pancreatic neuroendocrine tumor	20
+CM02	Low	cancer_type	Papillary thyroid carcinoma	19
+CM02	Low	cancer_type	ADENOCARCINOMA	19
+CM02	Low	cancer_type	SCLC	19
+CM02	Low	cancer_type	Uveal melanoma	17
+CM02	Low	cancer_type	Cervical cancer	17
+CM02	Low	cancer_type	CRC	16
+CM02	Low	cancer_type	Renal cell carcinoma	13
+CM02	Low	cancer_type	Pleural mesothelioma	12
+CM02	Low	cancer_type	Rectal adenocarcinoma	11
+CM02	Low	cancer_type	Bladder cancer	11
+CM02	Low	cancer_type	Esophageal cancer	11
+CM02	Low	cancer_type	Non-small cell lung cancer	11
+CM02	Low	cancer_type	High-grade serous ovarian cancer	10
+CM02	Low	cancer_type	Head and neck squamous cell carcinoma	10
+CM02	Low	cancer_type	Osteosarcoma	10
+CM02	Low	cancer_type	Pituitary neuroendocrine tumor	10
+CM02	Low	cancer_type	ALK-positive/negative LUAD	9
+CM02	Low	cancer_type	Acral melanoma	9
+CM02	Low	cancer_type	Part-solid LUAD	9
+CM02	Low	cancer_type	Intrahepatic cholangiocarcinoma	7
+CM02	Low	cancer_type	Endometrial carcinosarcoma	7
+CM02	Low	cancer_type	Cervical SCC/adenocarcinoma	6
+CM02	Low	cancer_type	Nasopharyngeal carcinoma	6
+CM02	Low	cancer_type	Left/right CRC	6
+CM02	Low	cancer_type	Basal cell carcinoma	4
+CM02	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	4
+CM02	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM02	Low	cancer_type	Seminoma	3
+CM09	High	gse_id	GSE161529	14
+CM09	High	gse_id	GSE116256	13
+CM09	High	gse_id	GSE176031	11
+CM09	High	gse_id	GSE269826	7
+CM09	High	gse_id	GSE148071	5
+CM09	High	gse_id	GSE115978	3
+CM09	High	gse_id	GSE132465	3
+CM09	High	gse_id	GSE274229	2
+CM09	High	gse_id	GSE141526	1
+CM09	High	gse_id	GSE138709	1
+CM09	High	gse_id	GSE178341	1
+CM09	High	gse_id	GSE155698	1
+CM09	High	gse_id	GSE179994	1
+CM09	High	gse_id	GSE184362	1
+CM09	High	gse_id	GSE244101	1
+CM09	High	gse_id	GSE200997	1
+CM09	High	gse_id	GSE281740	1
+CM09	High	gse_id	GSE297041	1
+CM03	Low	cancer_type	Gastric cancer	138
+CM03	Low	cancer_type	Colorectal cancer	134
+CM03	Low	cancer_type	Lung cancer	107
+CM03	Low	cancer_type	Breast cancer	82
+CM03	Low	cancer_type	Prostate cancer	76
+CM03	Low	cancer_type	Glioblastoma	41
+CM03	Low	cancer_type	INVASIVE ADENOCARCINOMA	40
+CM03	Low	cancer_type	Advanced non-small cell lung cancer	38
+CM03	Low	cancer_type	Pancreatic ductal adenocarcinoma	35
+CM03	Low	cancer_type	Acute myeloid leukemia	30
+CM03	Low	cancer_type	Melanoma	29
+CM03	Low	cancer_type	Clear cell renal cell carcinoma	23
+CM03	Low	cancer_type	ADENOCARCINOMA	22
+CM03	Low	cancer_type	HCC	22
+CM03	Low	cancer_type	CRC	18
+CM03	Low	cancer_type	Uveal melanoma	17
+CM03	Low	cancer_type	Pancreatic neuroendocrine tumor	17
+CM03	Low	cancer_type	SCLC	17
+CM03	Low	cancer_type	Non-small cell lung cancer	16
+CM03	Low	cancer_type	Papillary thyroid carcinoma	16
+CM03	Low	cancer_type	Cervical cancer	15
+CM03	Low	cancer_type	Part-solid LUAD	15
+CM03	Low	cancer_type	Head and neck squamous cell carcinoma	13
+CM03	Low	cancer_type	High-grade serous ovarian cancer	12
+CM03	Low	cancer_type	Pleural mesothelioma	12
+CM03	Low	cancer_type	Rectal adenocarcinoma	11
+CM03	Low	cancer_type	Esophageal cancer	11
+CM03	Low	cancer_type	Bladder cancer	11
+CM03	Low	cancer_type	Pituitary neuroendocrine tumor	10
+CM03	Low	cancer_type	Osteosarcoma	10
+CM03	Low	cancer_type	Nasopharyngeal carcinoma	10
+CM03	Low	cancer_type	ALK-positive/negative LUAD	9
+CM03	Low	cancer_type	Cervical SCC/adenocarcinoma	8
+CM03	Low	cancer_type	Endometrial carcinosarcoma	8
+CM03	Low	cancer_type	Acral melanoma	7
+CM03	Low	cancer_type	Renal cell carcinoma	7
+CM03	Low	cancer_type	Intrahepatic cholangiocarcinoma	6
+CM03	Low	cancer_type	Left/right CRC	6
+CM03	Low	cancer_type	Basal cell carcinoma	5
+CM03	Low	cancer_type	Seminoma	4
+CM03	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM03	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	4
+CM03	Low	cancer_type	ambiguous	2
+CM08	Low	immunotherapy_timing	unknown	1036
+CM08	Low	immunotherapy_timing	pre-treatment	81
+CM08	Low	immunotherapy_timing	post-treatment	25
+CM08	Low	immunotherapy_timing	on-treatment	9
+CM06	Low	immunotherapy_timing	unknown	1015
+CM06	Low	immunotherapy_timing	pre-treatment	82
+CM06	Low	immunotherapy_timing	post-treatment	28
+CM06	Low	immunotherapy_timing	on-treatment	7
+CM01	Low	sample_class	primary_or_unspecified_tumor	657
+CM01	Low	sample_class	unknown	265
+CM01	Low	sample_class	normal_or_adjacent	171
+CM01	Low	sample_class	metastatic_tumor	74
+CM01	Low	sample_class	bone_marrow	30
+CM01	Low	sample_class	lymph_node	18
+CM01	Low	sample_class	blood	7
+CM06	High	sample_class	primary_or_unspecified_tumor	123
+CM06	High	sample_class	normal_or_adjacent	23
+CM06	High	sample_class	metastatic_tumor	17
+CM06	High	sample_class	unknown	7
+CM06	High	sample_class	lymph_node	1
+CM05	Low	cancer_type	Colorectal cancer	146
+CM05	Low	cancer_type	Gastric cancer	141
+CM05	Low	cancer_type	Breast cancer	81
+CM05	Low	cancer_type	Lung cancer	78
+CM05	Low	cancer_type	Prostate cancer	68
+CM05	Low	cancer_type	INVASIVE ADENOCARCINOMA	44
+CM05	Low	cancer_type	Glioblastoma	40
+CM05	Low	cancer_type	Pancreatic ductal adenocarcinoma	38
+CM05	Low	cancer_type	Advanced non-small cell lung cancer	34
+CM05	Low	cancer_type	Clear cell renal cell carcinoma	30
+CM05	Low	cancer_type	Acute myeloid leukemia	29
+CM05	Low	cancer_type	ADENOCARCINOMA	29
+CM05	Low	cancer_type	Papillary thyroid carcinoma	20
+CM05	Low	cancer_type	HCC	20
+CM05	Low	cancer_type	CRC	19
+CM05	Low	cancer_type	Cervical cancer	18
+CM05	Low	cancer_type	SCLC	18
+CM05	Low	cancer_type	Pancreatic neuroendocrine tumor	18
+CM05	Low	cancer_type	Melanoma	16
+CM05	Low	cancer_type	Uveal melanoma	15
+CM05	Low	cancer_type	Part-solid LUAD	14
+CM05	Low	cancer_type	Non-small cell lung cancer	14
+CM05	Low	cancer_type	Head and neck squamous cell carcinoma	13
+CM05	Low	cancer_type	High-grade serous ovarian cancer	12
+CM05	Low	cancer_type	Bladder cancer	12
+CM05	Low	cancer_type	Renal cell carcinoma	12
+CM05	Low	cancer_type	Osteosarcoma	11
+CM05	Low	cancer_type	Rectal adenocarcinoma	11
+CM05	Low	cancer_type	Pleural mesothelioma	11
+CM05	Low	cancer_type	Nasopharyngeal carcinoma	10
+CM05	Low	cancer_type	Esophageal cancer	10
+CM05	Low	cancer_type	ALK-positive/negative LUAD	9
+CM05	Low	cancer_type	Intrahepatic cholangiocarcinoma	8
+CM05	Low	cancer_type	Endometrial carcinosarcoma	8
+CM05	Low	cancer_type	Pituitary neuroendocrine tumor	8
+CM05	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	7
+CM05	Low	cancer_type	Basal cell carcinoma	6
+CM05	Low	cancer_type	Acral melanoma	6
+CM05	Low	cancer_type	Cervical SCC/adenocarcinoma	6
+CM05	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM05	Low	cancer_type	Left/right CRC	3
+CM05	Low	cancer_type	Seminoma	3
+CM05	Low	cancer_type	ambiguous	2
+CM05	Low	immunotherapy_timing	unknown	1001
+CM05	Low	immunotherapy_timing	pre-treatment	71
+CM05	Low	immunotherapy_timing	post-treatment	21
+CM05	Low	immunotherapy_timing	on-treatment	9
+CM04	Low	sample_class	primary_or_unspecified_tumor	618
+CM04	Low	sample_class	unknown	254
+CM04	Low	sample_class	normal_or_adjacent	176
+CM04	Low	sample_class	metastatic_tumor	76
+CM04	Low	sample_class	blood	32
+CM04	Low	sample_class	lymph_node	21
+CM04	Low	sample_class	bone_marrow	14
+CM04	Low	cancer_type	Colorectal cancer	210
+CM04	Low	cancer_type	Gastric cancer	148
+CM04	Low	cancer_type	Breast cancer	90
+CM04	Low	cancer_type	Lung cancer	89
+CM04	Low	cancer_type	Prostate cancer	77
+CM04	Low	cancer_type	INVASIVE ADENOCARCINOMA	47
+CM04	Low	cancer_type	Pancreatic ductal adenocarcinoma	40
+CM04	Low	cancer_type	Advanced non-small cell lung cancer	40
+CM04	Low	cancer_type	Clear cell renal cell carcinoma	32
+CM04	Low	cancer_type	ADENOCARCINOMA	31
+CM04	Low	cancer_type	Melanoma	28
+CM04	Low	cancer_type	CRC	23
+CM04	Low	cancer_type	Papillary thyroid carcinoma	22
+CM04	Low	cancer_type	HCC	22
+CM04	Low	cancer_type	SCLC	18
+CM04	Low	cancer_type	Non-small cell lung cancer	18
+CM04	Low	cancer_type	Cervical cancer	17
+CM04	Low	cancer_type	Pancreatic neuroendocrine tumor	16
+CM04	Low	cancer_type	Part-solid LUAD	16
+CM04	Low	cancer_type	Acute myeloid leukemia	14
+CM04	Low	cancer_type	Renal cell carcinoma	14
+CM04	Low	cancer_type	Head and neck squamous cell carcinoma	14
+CM04	Low	cancer_type	Bladder cancer	13
+CM04	Low	cancer_type	Rectal adenocarcinoma	12
+CM04	Low	cancer_type	Pleural mesothelioma	12
+CM04	Low	cancer_type	High-grade serous ovarian cancer	12
+CM04	Low	cancer_type	Esophageal cancer	11
+CM04	Low	cancer_type	Glioblastoma	10
+CM04	Low	cancer_type	Nasopharyngeal carcinoma	10
+CM04	Low	cancer_type	ALK-positive/negative LUAD	9
+CM04	Low	cancer_type	Pituitary neuroendocrine tumor	9
+CM04	Low	cancer_type	Cervical SCC/adenocarcinoma	8
+CM04	Low	cancer_type	Intrahepatic cholangiocarcinoma	8
+CM04	Low	cancer_type	Endometrial carcinosarcoma	7
+CM04	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	7
+CM04	Low	cancer_type	Acral melanoma	6
+CM04	Low	cancer_type	Osteosarcoma	6
+CM04	Low	cancer_type	Basal cell carcinoma	6
+CM04	Low	cancer_type	Left/right CRC	6
+CM04	Low	cancer_type	Seminoma	4
+CM04	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM04	Low	cancer_type	Uveal melanoma	3
+CM04	Low	cancer_type	ambiguous	2
+CM04	High	immunotherapy_timing	unknown	85
+CM04	High	immunotherapy_timing	pre-treatment	16
+CM04	High	immunotherapy_timing	post-treatment	11
+CM07	Low	cancer_type	Colorectal cancer	211
+CM07	Low	cancer_type	Gastric cancer	144
+CM07	Low	cancer_type	Lung cancer	97
+CM07	Low	cancer_type	Breast cancer	87
+CM07	Low	cancer_type	Prostate cancer	73
+CM07	Low	cancer_type	Glioblastoma	44
+CM07	Low	cancer_type	Pancreatic ductal adenocarcinoma	40
+CM07	Low	cancer_type	INVASIVE ADENOCARCINOMA	34
+CM07	Low	cancer_type	Clear cell renal cell carcinoma	32
+CM07	Low	cancer_type	Acute myeloid leukemia	30
+CM07	Low	cancer_type	Melanoma	29
+CM07	Low	cancer_type	Advanced non-small cell lung cancer	29
+CM07	Low	cancer_type	ADENOCARCINOMA	23
+CM07	Low	cancer_type	HCC	22
+CM07	Low	cancer_type	Papillary thyroid carcinoma	22
+CM07	Low	cancer_type	CRC	22
+CM07	Low	cancer_type	Pancreatic neuroendocrine tumor	19
+CM07	Low	cancer_type	Non-small cell lung cancer	17
+CM07	Low	cancer_type	Uveal melanoma	17
+CM07	Low	cancer_type	SCLC	16
+CM07	Low	cancer_type	Renal cell carcinoma	14
+CM07	Low	cancer_type	Cervical cancer	13
+CM07	Low	cancer_type	Rectal adenocarcinoma	12
+CM07	Low	cancer_type	Pleural mesothelioma	12
+CM07	Low	cancer_type	Osteosarcoma	11
+CM07	Low	cancer_type	Esophageal cancer	11
+CM07	Low	cancer_type	High-grade serous ovarian cancer	11
+CM07	Low	cancer_type	Part-solid LUAD	10
+CM07	Low	cancer_type	Pituitary neuroendocrine tumor	10
+CM07	Low	cancer_type	Acral melanoma	9
+CM07	Low	cancer_type	Bladder cancer	9
+CM07	Low	cancer_type	Intrahepatic cholangiocarcinoma	8
+CM07	Low	cancer_type	Endometrial carcinosarcoma	8
+CM07	Low	cancer_type	Nasopharyngeal carcinoma	8
+CM07	Low	cancer_type	Head and neck squamous cell carcinoma	8
+CM07	Low	cancer_type	Basal cell carcinoma	6
+CM07	Low	cancer_type	Left/right CRC	6
+CM07	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	6
+CM07	Low	cancer_type	Cervical SCC/adenocarcinoma	5
+CM07	Low	cancer_type	Seminoma	3
+CM07	Low	cancer_type	ALK-positive/negative LUAD	3
+CM07	Low	cancer_type	ambiguous	2
+CM06	Low	cancer_type	Colorectal cancer	211
+CM06	Low	cancer_type	Gastric cancer	140
+CM06	Low	cancer_type	Lung cancer	114
+CM06	Low	cancer_type	Breast cancer	54
+CM06	Low	cancer_type	INVASIVE ADENOCARCINOMA	45
+CM06	Low	cancer_type	Glioblastoma	41
+CM06	Low	cancer_type	Pancreatic ductal adenocarcinoma	40
+CM06	Low	cancer_type	Prostate cancer	37
+CM06	Low	cancer_type	Advanced non-small cell lung cancer	36
+CM06	Low	cancer_type	ADENOCARCINOMA	31
+CM06	Low	cancer_type	Acute myeloid leukemia	30
+CM06	Low	cancer_type	Melanoma	29
+CM06	Low	cancer_type	Clear cell renal cell carcinoma	25
+CM06	Low	cancer_type	Papillary thyroid carcinoma	23
+CM06	Low	cancer_type	CRC	18
+CM06	Low	cancer_type	Uveal melanoma	16
+CM06	Low	cancer_type	Part-solid LUAD	16
+CM06	Low	cancer_type	SCLC	15
+CM06	Low	cancer_type	Non-small cell lung cancer	15
+CM06	Low	cancer_type	Head and neck squamous cell carcinoma	14
+CM06	Low	cancer_type	Renal cell carcinoma	14
+CM06	Low	cancer_type	HCC	13
+CM06	Low	cancer_type	Pancreatic neuroendocrine tumor	13
+CM06	Low	cancer_type	Cervical cancer	12
+CM06	Low	cancer_type	Pleural mesothelioma	12
+CM06	Low	cancer_type	High-grade serous ovarian cancer	12
+CM06	Low	cancer_type	Esophageal cancer	11
+CM06	Low	cancer_type	Nasopharyngeal carcinoma	10
+CM06	Low	cancer_type	Bladder cancer	10
+CM06	Low	cancer_type	Acral melanoma	9
+CM06	Low	cancer_type	Intrahepatic cholangiocarcinoma	8
+CM06	Low	cancer_type	Cervical SCC/adenocarcinoma	8
+CM06	Low	cancer_type	ALK-positive/negative LUAD	8
+CM06	Low	cancer_type	INVASIVE MUCINOUS CARCINOMA	7
+CM06	Low	cancer_type	Osteosarcoma	7
+CM06	Low	cancer_type	Pituitary neuroendocrine tumor	5
+CM06	Low	cancer_type	Basal cell carcinoma	4
+CM06	Low	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM06	Low	cancer_type	Left/right CRC	4
+CM06	Low	cancer_type	Seminoma	4
+CM06	Low	cancer_type	Rectal adenocarcinoma	3
+CM06	Low	cancer_type	ambiguous	2
+CM06	Low	cancer_type	Endometrial carcinosarcoma	2
+CM01	High	gse_id	GSE155698	21
+CM01	High	gse_id	GSE270680	14
+CM01	High	gse_id	GSE178341	13
+CM01	High	gse_id	GSE184362	5
+CM01	High	gse_id	GSE281740	5
+CM01	High	gse_id	GSE184880	4
+CM01	High	gse_id	GSE131907	4
+CM01	High	gse_id	GSE115978	3
+CM01	High	gse_id	GSE256136	3
+CM01	High	gse_id	GSE201347	3
+CM01	High	gse_id	GSE161529	1
+CM01	High	gse_id	GSE139249	1
+CM01	High	gse_id	GSE163558	1
+CM01	High	gse_id	GSE162025	1
+CM01	High	gse_id	GSE244101	1
+CM01	High	gse_id	GSE297041	1
+CM04	Low	immunotherapy_timing	unknown	1093
+CM04	Low	immunotherapy_timing	pre-treatment	72
+CM04	Low	immunotherapy_timing	post-treatment	17
+CM04	Low	immunotherapy_timing	on-treatment	9
+CM08	Low	gse_id	GSE178341	173
+CM08	Low	gse_id	GSE253013	87
+CM08	Low	gse_id	GSE161529	68
+CM08	Low	gse_id	GSE131907	57
+CM08	Low	gse_id	GSE270680	51
+CM08	Low	gse_id	GSE179994	47
+CM08	Low	gse_id	GSE182109	44
+CM08	Low	gse_id	GSE148071	42
+CM08	Low	gse_id	GSE274229	41
+CM08	Low	gse_id	GSE155698	37
+CM08	Low	gse_id	GSE176031	34
+CM08	Low	gse_id	GSE116256	30
+CM08	Low	gse_id	GSE183904	27
+CM08	Low	gse_id	GSE178481	25
+CM08	Low	gse_id	GSE200997	23
+CM08	Low	gse_id	GSE184362	22
+CM08	Low	gse_id	GSE115978	21
+CM08	Low	gse_id	GSE256136	20
+CM08	Low	gse_id	GSE297041	18
+CM08	Low	gse_id	GSE281740	17
+CM08	Low	gse_id	GSE127465	17
+CM08	Low	gse_id	GSE288479	16
+CM08	Low	gse_id	GSE201347	16
+CM08	Low	gse_id	GSE132465	14
+CM08	Low	gse_id	GSE261774	13
+CM08	Low	gse_id	GSE188737	12
+CM08	Low	gse_id	GSE302903	12
+CM08	Low	gse_id	GSE222315	12
+CM08	Low	gse_id	GSE139829	11
+CM08	Low	gse_id	GSE290925	11
+CM08	Low	gse_id	GSE152048	11
+CM08	Low	gse_id	GSE159115	10
+CM08	Low	gse_id	GSE244101	10
+CM08	Low	gse_id	GSE299623	8
+CM08	Low	gse_id	GSE189889	8
+CM08	Low	gse_id	GSE197461	7
+CM08	Low	gse_id	GSE190597	7
+CM08	Low	gse_id	GSE162025	7
+CM08	Low	gse_id	GSE274934	7
+CM08	Low	gse_id	GSE269826	7
+CM08	Low	gse_id	GSE184880	7
+CM08	Low	gse_id	GSE138665	6
+CM08	Low	gse_id	GSE163558	6
+CM08	Low	gse_id	GSE141526	6
+CM08	Low	gse_id	GSE188711	5
+CM08	Low	gse_id	GSE138709	4
+CM08	Low	gse_id	GSE228501	3
+CM08	Low	gse_id	GSE189357	3
+CM08	Low	gse_id	GSE139249	2
+CM08	Low	gse_id	GSE166555	2
+CM08	Low	gse_id	GSE169609	2
+CM08	Low	gse_id	GSE179784	2
+CM08	Low	gse_id	GSE299340	2
+CM08	Low	gse_id	GSE273127	1
+CM04	High	gse_id	GSE182109	34
+CM04	High	gse_id	GSE179994	25
+CM04	High	gse_id	GSE116256	16
+CM04	High	gse_id	GSE139829	9
+CM04	High	gse_id	GSE152048	5
+CM04	High	gse_id	GSE138665	5
+CM04	High	gse_id	GSE256136	4
+CM04	High	gse_id	GSE189889	3
+CM04	High	gse_id	GSE148071	2
+CM04	High	gse_id	GSE115978	1
+CM04	High	gse_id	GSE184362	1
+CM04	High	gse_id	GSE178341	1
+CM04	High	gse_id	GSE190597	1
+CM04	High	gse_id	GSE244101	1
+CM04	High	gse_id	GSE270680	1
+CM04	High	gse_id	GSE281740	1
+CM04	High	gse_id	GSE297041	1
+CM04	High	gse_id	GSE299623	1
+CM07	High	immunotherapy_timing	unknown	103
+CM07	High	immunotherapy_timing	pre-treatment	5
+CM07	High	immunotherapy_timing	on-treatment	2
+CM01	High	sample_class	primary_or_unspecified_tumor	26
+CM01	High	sample_class	blood	25
+CM01	High	sample_class	unknown	15
+CM01	High	sample_class	normal_or_adjacent	6
+CM01	High	sample_class	metastatic_tumor	5
+CM01	High	sample_class	lymph_node	4
+CM08	Low	sample_class	primary_or_unspecified_tumor	588
+CM08	Low	sample_class	unknown	262
+CM08	Low	sample_class	normal_or_adjacent	153
+CM08	Low	sample_class	metastatic_tumor	71
+CM08	Low	sample_class	blood	32
+CM08	Low	sample_class	bone_marrow	30
+CM08	Low	sample_class	lymph_node	15
+CM07	Low	sample_class	primary_or_unspecified_tumor	604
+CM07	Low	sample_class	unknown	267
+CM07	Low	sample_class	normal_or_adjacent	174
+CM07	Low	sample_class	metastatic_tumor	64
+CM07	Low	sample_class	blood	32
+CM07	Low	sample_class	bone_marrow	30
+CM07	Low	sample_class	lymph_node	22
+CM07	Low	gse_id	GSE178341	176
+CM07	Low	gse_id	GSE270680	76
+CM07	Low	gse_id	GSE161529	66
+CM07	Low	gse_id	GSE253013	63
+CM07	Low	gse_id	GSE179994	47
+CM07	Low	gse_id	GSE182109	44
+CM07	Low	gse_id	GSE274229	42
+CM07	Low	gse_id	GSE131907	41
+CM07	Low	gse_id	GSE183904	40
+CM07	Low	gse_id	GSE155698	40
+CM07	Low	gse_id	GSE132465	33
+CM07	Low	gse_id	GSE176031	31
+CM07	Low	gse_id	GSE116256	30
+CM07	Low	gse_id	GSE148071	29
+CM07	Low	gse_id	GSE115978	25
+CM07	Low	gse_id	GSE178481	25
+CM07	Low	gse_id	GSE184362	22
+CM07	Low	gse_id	GSE200997	22
+CM07	Low	gse_id	GSE261774	21
+CM07	Low	gse_id	GSE201347	20
+CM07	Low	gse_id	GSE256136	19
+CM07	Low	gse_id	GSE127465	17
+CM07	Low	gse_id	GSE281740	16
+CM07	Low	gse_id	GSE159115	14
+CM07	Low	gse_id	GSE297041	13
+CM07	Low	gse_id	GSE302903	12
+CM07	Low	gse_id	GSE190597	12
+CM07	Low	gse_id	GSE290925	12
+CM07	Low	gse_id	GSE184880	11
+CM07	Low	gse_id	GSE273127	11
+CM07	Low	gse_id	GSE139829	11
+CM07	Low	gse_id	GSE152048	11
+CM07	Low	gse_id	GSE299340	10
+CM07	Low	gse_id	GSE244101	10
+CM07	Low	gse_id	GSE288479	10
+CM07	Low	gse_id	GSE189357	9
+CM07	Low	gse_id	GSE189889	9
+CM07	Low	gse_id	GSE222315	9
+CM07	Low	gse_id	GSE188737	8
+CM07	Low	gse_id	GSE299623	8
+CM07	Low	gse_id	GSE162025	8
+CM07	Low	gse_id	GSE138709	8
+CM07	Low	gse_id	GSE163558	8
+CM07	Low	gse_id	GSE269826	7
+CM07	Low	gse_id	GSE138665	6
+CM07	Low	gse_id	GSE141526	6
+CM07	Low	gse_id	GSE188711	6
+CM07	Low	gse_id	GSE197461	5
+CM07	Low	gse_id	GSE274934	3
+CM07	Low	gse_id	GSE228501	3
+CM07	Low	gse_id	GSE169609	2
+CM07	Low	gse_id	GSE166555	2
+CM07	Low	gse_id	GSE139249	2
+CM07	Low	gse_id	GSE179784	2
+CM02	Low	sample_class	primary_or_unspecified_tumor	577
+CM02	Low	sample_class	unknown	242
+CM02	Low	sample_class	normal_or_adjacent	117
+CM02	Low	sample_class	metastatic_tumor	71
+CM02	Low	sample_class	bone_marrow	30
+CM02	Low	sample_class	blood	28
+CM02	Low	sample_class	lymph_node	15
+CM09	High	sample_class	primary_or_unspecified_tumor	40
+CM09	High	sample_class	bone_marrow	13
+CM09	High	sample_class	normal_or_adjacent	10
+CM09	High	sample_class	unknown	2
+CM09	High	sample_class	metastatic_tumor	2
+CM09	High	sample_class	lymph_node	1
+CM08	High	immunotherapy_timing	unknown	142
+CM08	High	immunotherapy_timing	pre-treatment	7
+CM08	High	immunotherapy_timing	post-treatment	3
+CM03	High	cancer_type	Colorectal cancer	77
+CM03	High	cancer_type	Gastric cancer	11
+CM03	High	cancer_type	ADENOCARCINOMA	9
+CM03	High	cancer_type	Clear cell renal cell carcinoma	9
+CM03	High	cancer_type	Breast cancer	8
+CM03	High	cancer_type	INVASIVE ADENOCARCINOMA	7
+CM03	High	cancer_type	Renal cell carcinoma	7
+CM03	High	cancer_type	Lung cancer	7
+CM03	High	cancer_type	Papillary thyroid carcinoma	7
+CM03	High	cancer_type	Pancreatic ductal adenocarcinoma	5
+CM03	High	cancer_type	CRC	5
+CM03	High	cancer_type	Advanced non-small cell lung cancer	4
+CM03	High	cancer_type	Glioblastoma	3
+CM03	High	cancer_type	Pancreatic neuroendocrine tumor	3
+CM03	High	cancer_type	Cervical cancer	3
+CM03	High	cancer_type	INVASIVE MUCINOUS CARCINOMA	3
+CM03	High	cancer_type	SCLC	2
+CM03	High	cancer_type	Bladder cancer	2
+CM03	High	cancer_type	Non-small cell lung cancer	2
+CM03	High	cancer_type	Intrahepatic cholangiocarcinoma	2
+CM03	High	cancer_type	Acral melanoma	2
+CM03	High	cancer_type	Osteosarcoma	1
+CM03	High	cancer_type	Basal cell carcinoma	1
+CM03	High	cancer_type	Head and neck squamous cell carcinoma	1
+CM03	High	cancer_type	Pleural mesothelioma	1
+CM03	High	cancer_type	Prostate cancer	1
+CM03	High	cancer_type	Part-solid LUAD	1
+CM03	High	cancer_type	Rectal adenocarcinoma	1
+CM03	High	sample_class	unknown	78
+CM03	High	sample_class	primary_or_unspecified_tumor	68
+CM03	High	sample_class	normal_or_adjacent	33
+CM03	High	sample_class	metastatic_tumor	3
+CM03	High	sample_class	blood	2
+CM03	High	sample_class	lymph_node	1
+CM06	High	cancer_type	Prostate cancer	40
+CM06	High	cancer_type	Breast cancer	36
+CM06	High	cancer_type	Gastric cancer	9
+CM06	High	cancer_type	Rectal adenocarcinoma	9
+CM06	High	cancer_type	HCC	9
+CM06	High	cancer_type	Clear cell renal cell carcinoma	7
+CM06	High	cancer_type	Pancreatic neuroendocrine tumor	7
+CM06	High	cancer_type	Advanced non-small cell lung cancer	6
+CM06	High	cancer_type	Cervical cancer	6
+CM06	High	cancer_type	Endometrial carcinosarcoma	6
+CM06	High	cancer_type	Pituitary neuroendocrine tumor	5
+CM06	High	cancer_type	CRC	5
+CM06	High	cancer_type	SCLC	4
+CM06	High	cancer_type	Osteosarcoma	4
+CM06	High	cancer_type	Non-small cell lung cancer	3
+CM06	High	cancer_type	Glioblastoma	3
+CM06	High	cancer_type	Bladder cancer	3
+CM06	High	cancer_type	INVASIVE ADENOCARCINOMA	2
+CM06	High	cancer_type	Basal cell carcinoma	2
+CM06	High	cancer_type	Left/right CRC	2
+CM06	High	cancer_type	Uveal melanoma	1
+CM06	High	cancer_type	Pleural mesothelioma	1
+CM06	High	cancer_type	ALK-positive/negative LUAD	1
+CM06	Low	gse_id	GSE178341	176
+CM06	Low	gse_id	GSE253013	87
+CM06	Low	gse_id	GSE270680	73
+CM06	Low	gse_id	GSE131907	58
+CM06	Low	gse_id	GSE179994	47
+CM06	Low	gse_id	GSE182109	41
+CM06	Low	gse_id	GSE155698	40
+CM06	Low	gse_id	GSE183904	40
+CM06	Low	gse_id	GSE148071	36
+CM06	Low	gse_id	GSE161529	33
+CM06	Low	gse_id	GSE132465	33
+CM06	Low	gse_id	GSE116256	30
+CM06	Low	gse_id	GSE115978	25
+CM06	Low	gse_id	GSE184362	23
+CM06	Low	gse_id	GSE261774	21
+CM06	Low	gse_id	GSE201347	19
+CM06	Low	gse_id	GSE176031	19
+CM06	Low	gse_id	GSE178481	18
+CM06	Low	gse_id	GSE200997	18
+CM06	Low	gse_id	GSE274229	18
+CM06	Low	gse_id	GSE288479	16
+CM06	Low	gse_id	GSE127465	15
+CM06	Low	gse_id	GSE281740	15
+CM06	Low	gse_id	GSE188737	14
+CM06	Low	gse_id	GSE159115	14
+CM06	Low	gse_id	GSE256136	13
+CM06	Low	gse_id	GSE297041	12
+CM06	Low	gse_id	GSE184880	12
+CM06	Low	gse_id	GSE190597	12
+CM06	Low	gse_id	GSE273127	11
+CM06	Low	gse_id	GSE139829	11
+CM06	Low	gse_id	GSE162025	10
+CM06	Low	gse_id	GSE222315	10
+CM06	Low	gse_id	GSE299340	10
+CM06	Low	gse_id	GSE189889	9
+CM06	Low	gse_id	GSE189357	9
+CM06	Low	gse_id	GSE163558	8
+CM06	Low	gse_id	GSE138709	8
+CM06	Low	gse_id	GSE274934	8
+CM06	Low	gse_id	GSE197461	8
+CM06	Low	gse_id	GSE269826	7
+CM06	Low	gse_id	GSE152048	7
+CM06	Low	gse_id	GSE138665	5
+CM06	Low	gse_id	GSE244101	5
+CM06	Low	gse_id	GSE188711	4
+CM06	Low	gse_id	GSE141526	4
+CM06	Low	gse_id	GSE228501	4
+CM06	Low	gse_id	GSE302903	3
+CM06	Low	gse_id	GSE290925	3
+CM06	Low	gse_id	GSE139249	2
+CM06	Low	gse_id	GSE169609	2
+CM06	Low	gse_id	GSE166555	2
+CM06	Low	gse_id	GSE179784	2
+CM06	Low	gse_id	GSE299623	2
+CM07	Low	immunotherapy_timing	unknown	1075
+CM07	Low	immunotherapy_timing	pre-treatment	83
+CM07	Low	immunotherapy_timing	post-treatment	28
+CM07	Low	immunotherapy_timing	on-treatment	7
+CM09	Low	gse_id	GSE178341	175
+CM09	Low	gse_id	GSE253013	89
+CM09	Low	gse_id	GSE270680	77
+CM09	Low	gse_id	GSE131907	58
+CM09	Low	gse_id	GSE161529	55
+CM09	Low	gse_id	GSE179994	46
+CM09	Low	gse_id	GSE182109	44
+CM09	Low	gse_id	GSE274229	41
+CM09	Low	gse_id	GSE183904	40
+CM09	Low	gse_id	GSE155698	39
+CM09	Low	gse_id	GSE148071	37
+CM09	Low	gse_id	GSE132465	30
+CM09	Low	gse_id	GSE178481	25
+CM09	Low	gse_id	GSE176031	23
+CM09	Low	gse_id	GSE184362	22
+CM09	Low	gse_id	GSE115978	22
+CM09	Low	gse_id	GSE200997	22
+CM09	Low	gse_id	GSE201347	22
+CM09	Low	gse_id	GSE261774	21
+CM09	Low	gse_id	GSE256136	20
+CM09	Low	gse_id	GSE127465	18
+CM09	Low	gse_id	GSE281740	18
+CM09	Low	gse_id	GSE297041	17
+CM09	Low	gse_id	GSE116256	17
+CM09	Low	gse_id	GSE288479	16
+CM09	Low	gse_id	GSE159115	14
+CM09	Low	gse_id	GSE188737	14
+CM09	Low	gse_id	GSE190597	13
+CM09	Low	gse_id	GSE222315	13
+CM09	Low	gse_id	GSE184880	12
+CM09	Low	gse_id	GSE290925	12
+CM09	Low	gse_id	GSE302903	12
+CM09	Low	gse_id	GSE139829	11
+CM09	Low	gse_id	GSE152048	11
+CM09	Low	gse_id	GSE273127	11
+CM09	Low	gse_id	GSE162025	10
+CM09	Low	gse_id	GSE163558	10
+CM09	Low	gse_id	GSE299340	10
+CM09	Low	gse_id	GSE244101	9
+CM09	Low	gse_id	GSE274934	9
+CM09	Low	gse_id	GSE189357	9
+CM09	Low	gse_id	GSE189889	9
+CM09	Low	gse_id	GSE197461	8
+CM09	Low	gse_id	GSE299623	8
+CM09	Low	gse_id	GSE138709	7
+CM09	Low	gse_id	GSE138665	6
+CM09	Low	gse_id	GSE188711	6
+CM09	Low	gse_id	GSE141526	5
+CM09	Low	gse_id	GSE228501	4
+CM09	Low	gse_id	GSE166555	2
+CM09	Low	gse_id	GSE169609	2
+CM09	Low	gse_id	GSE139249	2
+CM09	Low	gse_id	GSE179784	2
+CM09	Low	immunotherapy_timing	unknown	1114
+CM09	Low	immunotherapy_timing	pre-treatment	87
+CM09	Low	immunotherapy_timing	post-treatment	26
+CM09	Low	immunotherapy_timing	on-treatment	8
+CM03	High	gse_id	GSE178341	74
+CM03	High	gse_id	GSE253013	19
+CM03	High	gse_id	GSE178481	9
+CM03	High	gse_id	GSE184362	7
+CM03	High	gse_id	GSE159115	7
+CM03	High	gse_id	GSE183904	6
+CM03	High	gse_id	GSE155698	5
+CM03	High	gse_id	GSE200997	5
+CM03	High	gse_id	GSE270680	5
+CM03	High	gse_id	GSE261774	4
+CM03	High	gse_id	GSE131907	4
+CM03	High	gse_id	GSE148071	4
+CM03	High	gse_id	GSE161529	4
+CM03	High	gse_id	GSE182109	3
+CM03	High	gse_id	GSE179994	3
+CM03	High	gse_id	GSE297041	3
+CM03	High	gse_id	GSE256136	3
+CM03	High	gse_id	GSE281740	2
+CM03	High	gse_id	GSE222315	2
+CM03	High	gse_id	GSE132465	2
+CM03	High	gse_id	GSE127465	2
+CM03	High	gse_id	GSE189889	2
+CM03	High	gse_id	GSE138709	2
+CM03	High	gse_id	GSE166555	1
+CM03	High	gse_id	GSE152048	1
+CM03	High	gse_id	GSE141526	1
+CM03	High	gse_id	GSE188737	1
+CM03	High	gse_id	GSE190597	1
+CM03	High	gse_id	GSE274229	1
+CM03	High	gse_id	GSE288479	1
+CM03	High	gse_id	GSE302903	1
+CM09	High	cancer_type	Breast cancer	14
+CM09	High	cancer_type	Acute myeloid leukemia	13
+CM09	High	cancer_type	Prostate cancer	13
+CM09	High	cancer_type	Clear cell renal cell carcinoma	7
+CM09	High	cancer_type	Advanced non-small cell lung cancer	5
+CM09	High	cancer_type	Colorectal cancer	4
+CM09	High	cancer_type	Melanoma	3
+CM09	High	cancer_type	Intrahepatic cholangiocarcinoma	1
+CM09	High	cancer_type	Pancreatic ductal adenocarcinoma	1
+CM09	High	cancer_type	Basal cell carcinoma	1
+CM09	High	cancer_type	Papillary thyroid carcinoma	1
+CM09	High	cancer_type	Lung cancer	1
+CM09	High	cancer_type	CRC	1
+CM09	High	cancer_type	Pituitary neuroendocrine tumor	1
+CM09	High	cancer_type	SCLC	1
+CM09	High	cancer_type	Cervical cancer	1
+CM01	Low	gse_id	GSE178341	163
+CM01	Low	gse_id	GSE253013	89
+CM01	Low	gse_id	GSE161529	68
+CM01	Low	gse_id	GSE270680	63
+CM01	Low	gse_id	GSE131907	54
+CM01	Low	gse_id	GSE179994	47
+CM01	Low	gse_id	GSE182109	44
+CM01	Low	gse_id	GSE274229	43
+CM01	Low	gse_id	GSE148071	42
+CM01	Low	gse_id	GSE183904	40
+CM01	Low	gse_id	GSE176031	34
+CM01	Low	gse_id	GSE132465	33
+CM01	Low	gse_id	GSE116256	30
+CM01	Low	gse_id	GSE178481	25
+CM01	Low	gse_id	GSE200997	23
+CM01	Low	gse_id	GSE115978	22
+CM01	Low	gse_id	GSE261774	21
+CM01	Low	gse_id	GSE155698	19
+CM01	Low	gse_id	GSE201347	19
+CM01	Low	gse_id	GSE127465	18
+CM01	Low	gse_id	GSE184362	18
+CM01	Low	gse_id	GSE297041	17
+CM01	Low	gse_id	GSE256136	17
+CM01	Low	gse_id	GSE288479	16
+CM01	Low	gse_id	GSE159115	14
+CM01	Low	gse_id	GSE281740	14
+CM01	Low	gse_id	GSE188737	14
+CM01	Low	gse_id	GSE190597	13
+CM01	Low	gse_id	GSE222315	13
+CM01	Low	gse_id	GSE302903	12
+CM01	Low	gse_id	GSE290925	12
+CM01	Low	gse_id	GSE152048	11
+CM01	Low	gse_id	GSE139829	11
+CM01	Low	gse_id	GSE273127	11
+CM01	Low	gse_id	GSE299340	10
+CM01	Low	gse_id	GSE274934	9
+CM01	Low	gse_id	GSE162025	9
+CM01	Low	gse_id	GSE163558	9
+CM01	Low	gse_id	GSE244101	9
+CM01	Low	gse_id	GSE189889	9
+CM01	Low	gse_id	GSE189357	9
+CM01	Low	gse_id	GSE184880	8
+CM01	Low	gse_id	GSE299623	8
+CM01	Low	gse_id	GSE138709	8
+CM01	Low	gse_id	GSE197461	8
+CM01	Low	gse_id	GSE269826	7
+CM01	Low	gse_id	GSE138665	6
+CM01	Low	gse_id	GSE188711	6
+CM01	Low	gse_id	GSE141526	6
+CM01	Low	gse_id	GSE228501	4
+CM01	Low	gse_id	GSE166555	2
+CM01	Low	gse_id	GSE169609	2
+CM01	Low	gse_id	GSE179784	2
+CM01	Low	gse_id	GSE139249	1
+CM09	High	immunotherapy_timing	unknown	64
+CM09	High	immunotherapy_timing	post-treatment	2
+CM09	High	immunotherapy_timing	pre-treatment	1
+CM09	High	immunotherapy_timing	on-treatment	1
+CM06	Low	sample_class	primary_or_unspecified_tumor	560
+CM06	Low	sample_class	unknown	273
+CM06	Low	sample_class	normal_or_adjacent	154
+CM06	Low	sample_class	metastatic_tumor	62
+CM06	Low	sample_class	blood	32
+CM06	Low	sample_class	bone_marrow	30
+CM06	Low	sample_class	lymph_node	21
+CM03	Low	gse_id	GSE178341	102
+CM03	Low	gse_id	GSE270680	72
+CM03	Low	gse_id	GSE253013	70
+CM03	Low	gse_id	GSE161529	65
+CM03	Low	gse_id	GSE131907	54
+CM03	Low	gse_id	GSE179994	44
+CM03	Low	gse_id	GSE274229	42
+CM03	Low	gse_id	GSE182109	41
+CM03	Low	gse_id	GSE148071	38
+CM03	Low	gse_id	GSE155698	35
+CM03	Low	gse_id	GSE183904	34
+CM03	Low	gse_id	GSE176031	34
+CM03	Low	gse_id	GSE132465	31
+CM03	Low	gse_id	GSE116256	30
+CM03	Low	gse_id	GSE115978	25
+CM03	Low	gse_id	GSE201347	22
+CM03	Low	gse_id	GSE200997	18
+CM03	Low	gse_id	GSE256136	17
+CM03	Low	gse_id	GSE261774	17
+CM03	Low	gse_id	GSE281740	17
+CM03	Low	gse_id	GSE178481	16
+CM03	Low	gse_id	GSE127465	16
+CM03	Low	gse_id	GSE184362	16
+CM03	Low	gse_id	GSE297041	15
+CM03	Low	gse_id	GSE288479	15
+CM03	Low	gse_id	GSE188737	13
+CM03	Low	gse_id	GSE290925	12
+CM03	Low	gse_id	GSE190597	12
+CM03	Low	gse_id	GSE184880	12
+CM03	Low	gse_id	GSE273127	11
+CM03	Low	gse_id	GSE222315	11
+CM03	Low	gse_id	GSE302903	11
+CM03	Low	gse_id	GSE139829	11
+CM03	Low	gse_id	GSE162025	10
+CM03	Low	gse_id	GSE152048	10
+CM03	Low	gse_id	GSE244101	10
+CM03	Low	gse_id	GSE299340	10
+CM03	Low	gse_id	GSE163558	10
+CM03	Low	gse_id	GSE274934	9
+CM03	Low	gse_id	GSE189357	9
+CM03	Low	gse_id	GSE299623	8
+CM03	Low	gse_id	GSE197461	8
+CM03	Low	gse_id	GSE269826	7
+CM03	Low	gse_id	GSE189889	7
+CM03	Low	gse_id	GSE159115	7
+CM03	Low	gse_id	GSE138665	6
+CM03	Low	gse_id	GSE138709	6
+CM03	Low	gse_id	GSE188711	6
+CM03	Low	gse_id	GSE141526	5
+CM03	Low	gse_id	GSE228501	4
+CM03	Low	gse_id	GSE139249	2
+CM03	Low	gse_id	GSE169609	2
+CM03	Low	gse_id	GSE179784	2
+CM03	Low	gse_id	GSE166555	1
+CM03	Low	sample_class	primary_or_unspecified_tumor	615
+CM03	Low	sample_class	unknown	202
+CM03	Low	sample_class	normal_or_adjacent	144
+CM03	Low	sample_class	metastatic_tumor	76
+CM03	Low	sample_class	bone_marrow	30
+CM03	Low	sample_class	blood	30
+CM03	Low	sample_class	lymph_node	21
+CM02	High	gse_id	GSE253013	35
+CM02	High	gse_id	GSE178341	26
+CM02	High	gse_id	GSE270680	24
+CM02	High	gse_id	GSE183904	17
+CM02	High	gse_id	GSE131907	13
+CM02	High	gse_id	GSE155698	8
+CM02	High	gse_id	GSE127465	7
+CM02	High	gse_id	GSE288479	7
+CM02	High	gse_id	GSE178481	7
+CM02	High	gse_id	GSE200997	7
+CM02	High	gse_id	GSE161529	7
+CM02	High	gse_id	GSE201347	6
+CM02	High	gse_id	GSE274229	5
+CM02	High	gse_id	GSE162025	4
+CM02	High	gse_id	GSE188737	4
+CM02	High	gse_id	GSE148071	4
+CM02	High	gse_id	GSE184362	4
+CM02	High	gse_id	GSE189357	3
+CM02	High	gse_id	GSE261774	3
+CM02	High	gse_id	GSE176031	3
+CM02	High	gse_id	GSE299340	2
+CM02	High	gse_id	GSE132465	2
+CM02	High	gse_id	GSE141526	2
+CM02	High	gse_id	GSE197461	2
+CM02	High	gse_id	GSE222315	2
+CM02	High	gse_id	GSE169609	2
+CM02	High	gse_id	GSE184880	2
+CM02	High	gse_id	GSE179784	2
+CM02	High	gse_id	GSE115978	1
+CM02	High	gse_id	GSE152048	1
+CM02	High	gse_id	GSE139249	1
+CM02	High	gse_id	GSE138709	1
+CM02	High	gse_id	GSE163558	1
+CM02	High	gse_id	GSE179994	1
+CM02	High	gse_id	GSE159115	1
+CM02	High	gse_id	GSE166555	1
+CM02	High	gse_id	GSE190597	1
+CM02	High	gse_id	GSE228501	1
+CM02	High	gse_id	GSE297041	1
+CM02	High	gse_id	GSE299623	1
+CM02	High	gse_id	GSE302903	1
+CM06	High	immunotherapy_timing	unknown	163
+CM06	High	immunotherapy_timing	pre-treatment	6
+CM06	High	immunotherapy_timing	on-treatment	2
+CM04	Low	gse_id	GSE178341	175
+CM04	Low	gse_id	GSE253013	89
+CM04	Low	gse_id	GSE270680	76
+CM04	Low	gse_id	GSE161529	69
+CM04	Low	gse_id	GSE131907	58
+CM04	Low	gse_id	GSE274229	43
+CM04	Low	gse_id	GSE183904	40
+CM04	Low	gse_id	GSE155698	40
+CM04	Low	gse_id	GSE148071	40
+CM04	Low	gse_id	GSE176031	34
+CM04	Low	gse_id	GSE132465	33
+CM04	Low	gse_id	GSE178481	25
+CM04	Low	gse_id	GSE115978	24
+CM04	Low	gse_id	GSE200997	23
+CM04	Low	gse_id	GSE179994	22
+CM04	Low	gse_id	GSE184362	22
+CM04	Low	gse_id	GSE201347	22
+CM04	Low	gse_id	GSE261774	21
+CM04	Low	gse_id	GSE281740	18
+CM04	Low	gse_id	GSE127465	18
+CM04	Low	gse_id	GSE297041	17
+CM04	Low	gse_id	GSE256136	16
+CM04	Low	gse_id	GSE288479	16
+CM04	Low	gse_id	GSE188737	14
+CM04	Low	gse_id	GSE116256	14
+CM04	Low	gse_id	GSE159115	14
+CM04	Low	gse_id	GSE222315	13
+CM04	Low	gse_id	GSE290925	12
+CM04	Low	gse_id	GSE302903	12
+CM04	Low	gse_id	GSE184880	12
+CM04	Low	gse_id	GSE190597	12
+CM04	Low	gse_id	GSE273127	11
+CM04	Low	gse_id	GSE162025	10
+CM04	Low	gse_id	GSE163558	10
+CM04	Low	gse_id	GSE182109	10
+CM04	Low	gse_id	GSE299340	10
+CM04	Low	gse_id	GSE274934	9
+CM04	Low	gse_id	GSE189357	9
+CM04	Low	gse_id	GSE244101	9
+CM04	Low	gse_id	GSE197461	8
+CM04	Low	gse_id	GSE138709	8
+CM04	Low	gse_id	GSE269826	7
+CM04	Low	gse_id	GSE299623	7
+CM04	Low	gse_id	GSE188711	6
+CM04	Low	gse_id	GSE152048	6
+CM04	Low	gse_id	GSE141526	6
+CM04	Low	gse_id	GSE189889	6
+CM04	Low	gse_id	GSE228501	4
+CM04	Low	gse_id	GSE139249	2
+CM04	Low	gse_id	GSE166555	2
+CM04	Low	gse_id	GSE139829	2
+CM04	Low	gse_id	GSE169609	2
+CM04	Low	gse_id	GSE179784	2
+CM04	Low	gse_id	GSE138665	1
+CM09	Low	sample_class	primary_or_unspecified_tumor	643
+CM09	Low	sample_class	unknown	278
+CM09	Low	sample_class	normal_or_adjacent	167
+CM09	Low	sample_class	metastatic_tumor	77
+CM09	Low	sample_class	blood	32
+CM09	Low	sample_class	lymph_node	21
+CM09	Low	sample_class	bone_marrow	17
+CM05	High	sample_class	unknown	83
+CM05	High	sample_class	primary_or_unspecified_tumor	81
+CM05	High	sample_class	metastatic_tumor	18
+CM05	High	sample_class	normal_or_adjacent	17
+CM05	High	sample_class	bone_marrow	1
+CM05	High	sample_class	blood	1
+CM01	Low	immunotherapy_timing	unknown	1119
+CM01	Low	immunotherapy_timing	pre-treatment	69
+CM01	Low	immunotherapy_timing	post-treatment	26
+CM01	Low	immunotherapy_timing	on-treatment	8
+CM08	High	cancer_type	Gastric cancer	49
+CM08	High	cancer_type	Colorectal cancer	22
+CM08	High	cancer_type	Esophageal cancer	10
+CM08	High	cancer_type	Breast cancer	9
+CM08	High	cancer_type	HCC	9
+CM08	High	cancer_type	Lung cancer	7
+CM08	High	cancer_type	Pleural mesothelioma	6
+CM08	High	cancer_type	High-grade serous ovarian cancer	5
+CM08	High	cancer_type	Melanoma	4
+CM08	High	cancer_type	Intrahepatic cholangiocarcinoma	4
+CM08	High	cancer_type	Renal cell carcinoma	4
+CM08	High	cancer_type	Pancreatic ductal adenocarcinoma	3
+CM08	High	cancer_type	Nasopharyngeal carcinoma	3
+CM08	High	cancer_type	ALK-positive/negative LUAD	2
+CM08	High	cancer_type	Prostate cancer	2
+CM08	High	cancer_type	INVASIVE ADENOCARCINOMA	2
+CM08	High	cancer_type	Head and neck squamous cell carcinoma	2
+CM08	High	cancer_type	SCLC	2
+CM08	High	cancer_type	Non-small cell lung cancer	1
+CM08	High	cancer_type	Papillary thyroid carcinoma	1
+CM08	High	cancer_type	Left/right CRC	1
+CM08	High	cancer_type	Cervical SCC/adenocarcinoma	1
+CM08	High	cancer_type	Acral melanoma	1
+CM08	High	cancer_type	Bladder cancer	1
+CM08	High	cancer_type	Seminoma	1
+CM05	Low	gse_id	GSE178341	118
+CM05	Low	gse_id	GSE253013	84
+CM05	Low	gse_id	GSE270680	75
+CM05	Low	gse_id	GSE161529	66
+CM05	Low	gse_id	GSE182109	40
+CM05	Low	gse_id	GSE131907	39
+CM05	Low	gse_id	GSE155698	38
+CM05	Low	gse_id	GSE183904	36
+CM05	Low	gse_id	GSE274229	36
+CM05	Low	gse_id	GSE148071	34
+CM05	Low	gse_id	GSE176031	32
+CM05	Low	gse_id	GSE179994	30
+CM05	Low	gse_id	GSE116256	29
+CM05	Low	gse_id	GSE132465	26
+CM05	Low	gse_id	GSE178481	23
+CM05	Low	gse_id	GSE201347	20
+CM05	Low	gse_id	GSE184362	20
+CM05	Low	gse_id	GSE200997	19
+CM05	Low	gse_id	GSE297041	18
+CM05	Low	gse_id	GSE281740	18
+CM05	Low	gse_id	GSE256136	18
+CM05	Low	gse_id	GSE261774	15
+CM05	Low	gse_id	GSE127465	14
+CM05	Low	gse_id	GSE288479	14
+CM05	Low	gse_id	GSE188737	13
+CM05	Low	gse_id	GSE159115	12
+CM05	Low	gse_id	GSE222315	12
+CM05	Low	gse_id	GSE184880	12
+CM05	Low	gse_id	GSE115978	12
+CM05	Low	gse_id	GSE302903	11
+CM05	Low	gse_id	GSE190597	11
+CM05	Low	gse_id	GSE152048	11
+CM05	Low	gse_id	GSE162025	10
+CM05	Low	gse_id	GSE299340	10
+CM05	Low	gse_id	GSE273127	10
+CM05	Low	gse_id	GSE290925	10
+CM05	Low	gse_id	GSE163558	10
+CM05	Low	gse_id	GSE139829	9
+CM05	Low	gse_id	GSE274934	9
+CM05	Low	gse_id	GSE189357	9
+CM05	Low	gse_id	GSE299623	8
+CM05	Low	gse_id	GSE244101	8
+CM05	Low	gse_id	GSE138709	8
+CM05	Low	gse_id	GSE269826	7
+CM05	Low	gse_id	GSE138665	6
+CM05	Low	gse_id	GSE141526	6
+CM05	Low	gse_id	GSE197461	6
+CM05	Low	gse_id	GSE189889	6
+CM05	Low	gse_id	GSE228501	3
+CM05	Low	gse_id	GSE188711	3
+CM05	Low	gse_id	GSE169609	2
+CM05	Low	gse_id	GSE166555	2
+CM05	Low	gse_id	GSE139249	2
+CM05	Low	gse_id	GSE179784	2
+CM02	Low	immunotherapy_timing	unknown	967
+CM02	Low	immunotherapy_timing	pre-treatment	79
+CM02	Low	immunotherapy_timing	post-treatment	26
+CM02	Low	immunotherapy_timing	on-treatment	8
+CM05	High	gse_id	GSE178341	58
+CM05	High	gse_id	GSE131907	19
+CM05	High	gse_id	GSE179994	17
+CM05	High	gse_id	GSE115978	13
+CM05	High	gse_id	GSE148071	8
+CM05	High	gse_id	GSE132465	7
+CM05	High	gse_id	GSE274229	7
+CM05	High	gse_id	GSE261774	6
+CM05	High	gse_id	GSE253013	5
+CM05	High	gse_id	GSE200997	4
+CM05	High	gse_id	GSE127465	4
+CM05	High	gse_id	GSE183904	4
+CM05	High	gse_id	GSE182109	4
+CM05	High	gse_id	GSE189889	3
+CM05	High	gse_id	GSE184362	3
+CM05	High	gse_id	GSE161529	3
+CM05	High	gse_id	GSE188711	3
+CM05	High	gse_id	GSE290925	2
+CM05	High	gse_id	GSE178481	2
+CM05	High	gse_id	GSE155698	2
+CM05	High	gse_id	GSE159115	2
+CM05	High	gse_id	GSE270680	2
+CM05	High	gse_id	GSE190597	2
+CM05	High	gse_id	GSE176031	2
+CM05	High	gse_id	GSE139829	2
+CM05	High	gse_id	GSE256136	2
+CM05	High	gse_id	GSE244101	2
+CM05	High	gse_id	GSE201347	2
+CM05	High	gse_id	GSE197461	2
+CM05	High	gse_id	GSE288479	2
+CM05	High	gse_id	GSE116256	1
+CM05	High	gse_id	GSE188737	1
+CM05	High	gse_id	GSE222315	1
+CM05	High	gse_id	GSE228501	1
+CM05	High	gse_id	GSE273127	1
+CM05	High	gse_id	GSE281740	1
+CM05	High	gse_id	GSE302903	1
+CM02	Low	gse_id	GSE178341	150
+CM02	Low	gse_id	GSE161529	62
+CM02	Low	gse_id	GSE253013	54
+CM02	Low	gse_id	GSE270680	53
+CM02	Low	gse_id	GSE179994	46
+CM02	Low	gse_id	GSE131907	45
+CM02	Low	gse_id	GSE182109	44
+CM02	Low	gse_id	GSE274229	38
+CM02	Low	gse_id	GSE148071	38
+CM02	Low	gse_id	GSE155698	32
+CM02	Low	gse_id	GSE132465	31
+CM02	Low	gse_id	GSE176031	31
+CM02	Low	gse_id	GSE116256	30
+CM02	Low	gse_id	GSE115978	24
+CM02	Low	gse_id	GSE183904	23
+CM02	Low	gse_id	GSE256136	20
+CM02	Low	gse_id	GSE184362	19
+CM02	Low	gse_id	GSE281740	19
+CM02	Low	gse_id	GSE178481	18
+CM02	Low	gse_id	GSE261774	18
+CM02	Low	gse_id	GSE297041	17
+CM02	Low	gse_id	GSE200997	16
+CM02	Low	gse_id	GSE201347	16
+CM02	Low	gse_id	GSE159115	13
+CM02	Low	gse_id	GSE290925	12
+CM02	Low	gse_id	GSE190597	12
+CM02	Low	gse_id	GSE273127	11
+CM02	Low	gse_id	GSE302903	11
+CM02	Low	gse_id	GSE139829	11
+CM02	Low	gse_id	GSE127465	11
+CM02	Low	gse_id	GSE222315	11
+CM02	Low	gse_id	GSE244101	10
+CM02	Low	gse_id	GSE184880	10
+CM02	Low	gse_id	GSE188737	10
+CM02	Low	gse_id	GSE152048	10
+CM02	Low	gse_id	GSE163558	9
+CM02	Low	gse_id	GSE274934	9
+CM02	Low	gse_id	GSE288479	9
+CM02	Low	gse_id	GSE189889	9
+CM02	Low	gse_id	GSE299340	8
+CM02	Low	gse_id	GSE269826	7
+CM02	Low	gse_id	GSE138709	7
+CM02	Low	gse_id	GSE299623	7
+CM02	Low	gse_id	GSE138665	6
+CM02	Low	gse_id	GSE189357	6
+CM02	Low	gse_id	GSE197461	6
+CM02	Low	gse_id	GSE188711	6
+CM02	Low	gse_id	GSE162025	6
+CM02	Low	gse_id	GSE141526	4
+CM02	Low	gse_id	GSE228501	3
+CM02	Low	gse_id	GSE166555	1
+CM02	Low	gse_id	GSE139249	1
+CM01	High	immunotherapy_timing	unknown	59
+CM01	High	immunotherapy_timing	pre-treatment	19
+CM01	High	immunotherapy_timing	post-treatment	2
+CM01	High	immunotherapy_timing	on-treatment	1
+CM02	High	cancer_type	Gastric cancer	48
+CM02	High	cancer_type	Colorectal cancer	29
+CM02	High	cancer_type	INVASIVE ADENOCARCINOMA	20
+CM02	High	cancer_type	Lung cancer	17
+CM02	High	cancer_type	ADENOCARCINOMA	12
+CM02	High	cancer_type	Breast cancer	10
+CM02	High	cancer_type	Pancreatic ductal adenocarcinoma	8
+CM02	High	cancer_type	Prostate cancer	8
+CM02	High	cancer_type	Part-solid LUAD	7
+CM02	High	cancer_type	CRC	7
+CM02	High	cancer_type	Non-small cell lung cancer	7
+CM02	High	cancer_type	Clear cell renal cell carcinoma	7
+CM02	High	cancer_type	Melanoma	4
+CM02	High	cancer_type	Nasopharyngeal carcinoma	4
+CM02	High	cancer_type	Advanced non-small cell lung cancer	4
+CM02	High	cancer_type	Head and neck squamous cell carcinoma	4
+CM02	High	cancer_type	Papillary thyroid carcinoma	4
+CM02	High	cancer_type	INVASIVE MUCINOUS CARCINOMA	3
+CM02	High	cancer_type	HCC	2
+CM02	High	cancer_type	ambiguous	2
+CM02	High	cancer_type	Basal cell carcinoma	2
+CM02	High	cancer_type	Bladder cancer	2
+CM02	High	cancer_type	Cervical SCC/adenocarcinoma	2
+CM02	High	cancer_type	High-grade serous ovarian cancer	2
+CM02	High	cancer_type	Renal cell carcinoma	1
+CM02	High	cancer_type	Osteosarcoma	1
+CM02	High	cancer_type	Intrahepatic cholangiocarcinoma	1
+CM02	High	cancer_type	Pleural mesothelioma	1
+CM02	High	cancer_type	Seminoma	1
+CM02	High	cancer_type	Cervical cancer	1
+CM02	High	cancer_type	Endometrial carcinosarcoma	1
+CM02	High	cancer_type	Rectal adenocarcinoma	1
+CM07	High	sample_class	primary_or_unspecified_tumor	79
+CM07	High	sample_class	metastatic_tumor	15
+CM07	High	sample_class	unknown	13
+CM07	High	sample_class	normal_or_adjacent	3
+CM07	High	cancer_type	Lung cancer	17
+CM07	High	cancer_type	Advanced non-small cell lung cancer	13
+CM07	High	cancer_type	INVASIVE ADENOCARCINOMA	13
+CM07	High	cancer_type	ADENOCARCINOMA	8
+CM07	High	cancer_type	Part-solid LUAD	6
+CM07	High	cancer_type	Head and neck squamous cell carcinoma	6
+CM07	High	cancer_type	ALK-positive/negative LUAD	6
+CM07	High	cancer_type	Gastric cancer	5
+CM07	High	cancer_type	Cervical cancer	5
+CM07	High	cancer_type	Prostate cancer	4
+CM07	High	cancer_type	INVASIVE MUCINOUS ADENOCARCINOMA	4
+CM07	High	cancer_type	Bladder cancer	4
+CM07	High	cancer_type	SCLC	3
+CM07	High	cancer_type	Cervical SCC/adenocarcinoma	3
+CM07	High	cancer_type	Breast cancer	3
+CM07	High	cancer_type	Nasopharyngeal carcinoma	2
+CM07	High	cancer_type	Papillary thyroid carcinoma	1
+CM07	High	cancer_type	Non-small cell lung cancer	1
+CM07	High	cancer_type	INVASIVE MUCINOUS CARCINOMA	1
+CM07	High	cancer_type	Pleural mesothelioma	1
+CM07	High	cancer_type	High-grade serous ovarian cancer	1
+CM07	High	cancer_type	Seminoma	1
+CM07	High	cancer_type	CRC	1
+CM07	High	cancer_type	Pancreatic neuroendocrine tumor	1

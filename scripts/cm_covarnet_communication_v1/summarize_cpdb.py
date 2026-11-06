@@ -32,7 +32,7 @@ for branch in ['network','old_top10']:
    mh=pd.read_csv(next((r/'results'/(cm+'_High')).glob('statistical_analysis_means_*.txt')),sep='\t').set_index('id_cp_interaction');ml=pd.read_csv(next((r/'results'/(cm+'_Low')).glob('statistical_analysis_means_*.txt')),sep='\t').set_index('id_cp_interaction')
    for s,tg in itertools.product(nodes,repeat=2):
     col=s+'|'+tg;ids=ah.index.union(al.index);hv=ah[col].reindex(ids) if col in ah else pd.Series(np.nan,index=ids);lv=al[col].reindex(ids) if col in al else pd.Series(np.nan,index=ids)
-    status=np.select([hv.notna()&lv.notna(),hv.notna(),lv.notna()],['both','High_only','Low_only'],default='neither');lr.append(pd.DataFrame({'cm':cm,'source':s,'target':tg,'id_cp_interaction':ids,'High_significant_mean':hv.values,'Low_significant_mean':lv.values,'High_mean':mh[col].reindex(ids).values if col in mh else np.nan,'Low_mean':ml[col].reindex(ids).values if col in ml else np.nan,'detection':status,'cellpair_present_both':col in ah and col in al}))
+    status=np.select([hv.notna()&lv.notna(),hv.notna(),lv.notna()],['both','High_only','Low_only'],default='neither');status=status.astype(object);status[:]='not_evaluable_missing_cellpair' if col not in ah or col not in al else status;status[~ids.isin(ah.index.intersection(al.index))]='not_evaluable_LR_not_retained_both_groups';lr.append(pd.DataFrame({'cm':cm,'source':s,'target':tg,'id_cp_interaction':ids,'High_significant_mean':hv.values,'Low_significant_mean':lv.values,'High_mean':mh[col].reindex(ids).values if col in mh else np.nan,'Low_mean':ml[col].reindex(ids).values if col in ml else np.nan,'detection':status,'cellpair_present_both':col in ah and col in al}))
    pd.concat(lr).to_csv(o/f'{cm}_LR_detection.tsv.gz',sep='\t',index=False)
 pairs=pd.DataFrame(allrows);pairs.to_csv(o/'all_CM_CCI_pairs.tsv',sep='\t',index=False);stats=[]
 for (branch,cm),g in pairs[~pairs.self_pair].groupby(['branch','cm']):
@@ -41,4 +41,10 @@ for (branch,cm),g in pairs[~pairs.self_pair].groupby(['branch','cm']):
   stats.append(dict(branch=branch,cm=cm,comparison=alt,n_cellpairs=len(x),n_patients='not_applicable',median_delta=d.median(),mean_delta=d.mean(),p_cellpair_Wilcoxon=p,status='evaluated_descriptive_pairs_dependent' if len(x) else 'pending_or_unmeasurable'))
 st=pd.DataFrame(stats);st['q_extension_all_CM']=np.nan
 for _,g in st.groupby(['branch','comparison']):st.loc[g.index,'q_extension_all_CM']=multipletests(g.p_cellpair_Wilcoxon.fillna(1),method='fdr_bh')[1]
+st.loc[st.p_cellpair_Wilcoxon.isna(),'q_extension_all_CM']=np.nan
 st.to_csv(o/'all_CM_CCI_tests.tsv',sep='\t',index=False);print(st.to_string(index=False))
+
+# Decompose only after the complete prespecified High/Low family is available.
+if all((r/'results'/f'CM{i:02d}_{g}'/'complete.json').exists() for i in range(1,10) for g in ['High','Low']):
+ import subprocess,sys
+ subprocess.run([sys.executable,str(r/'scripts/summarize_environment_drivers.py')],check=True)

@@ -935,4 +935,4 @@ A4是未来检验“哪些通讯特征对模块活动有额外解释”的方案
 
 ## 2026-11-06 历史通讯补分析分支
 
-V5/K9独立补分析：输入/方法冻结与真实小试已过→正式全局CPDB、CMT High/Low及Immune Dictionary响应→完整家族读回和图件→患者资料合格后稳健性。当前不新建V7扩展，不改注释/CM。见[报告](docs/reports/20261106_V5_CoVarNet_communication/README.md)。
+V5/K9独立补分析：输入/方法冻结、真实小试、全局CPDB与细胞级Immune Dictionary响应及其独立读回已完成→正在执行CMT High/Low全部18组→完整B家族读回/驱动分解/配对图→患者资料合格后稳健性。当前不新建V7扩展，不改注释/CM。见[报告](docs/reports/20261106_V5_CoVarNet_communication/README.md)。

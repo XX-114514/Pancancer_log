@@ -1,0 +1,8 @@
+{
+  "branch": "author_unsigned_annotation_universe",
+  "q_rule": "within_CM_identity_q_lt_0.05; implementation deviations documented",
+  "n_response_associations_within_q": 69,
+  "n_response_associations_full_family_q": 56,
+  "n_subunit_network_edges": 64,
+  "separate_subunits_not_complete_cytokine_proof": true
+}

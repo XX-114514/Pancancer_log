@@ -1,0 +1,44 @@
+{
+  "sample_key_audit": {
+    "original_samples": 1322,
+    "max_sources_per_sample_key": 1,
+    "max_cancer_labels_per_sample_key": 1,
+    "sample_keys_with_multiple_sources": 0,
+    "sample_keys_with_multiple_cancers": 0
+  },
+  "UTC": "2026-11-06T05:07:17.453933+00:00",
+  "input_source_additions": [
+    {
+      "path": "${PC_ROOT}/Project_v2/CoVarNet/outputs/Covarnet_5M_v5_malignancy_v1_20260825/rds/nmf_K09.rds",
+      "bytes": 1353753,
+      "sha256": "b02b29b69f8cdd25500b6ca8a0562c547749e2f9d01ba24b24e1246219c4b486"
+    },
+    {
+      "path": "${PC_ROOT}/Project_v5/frozen/covarnet/covarnet_each_edges.tsv",
+      "bytes": 16324,
+      "sha256": "70bc349c431560f041bdf580f123e4486ae57d1dfcb8c04bd7975270914c59c6"
+    }
+  ],
+  "versions": {
+    "scanpy": {
+      "python": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:29:10) [GCC 14.3.0]",
+      "numpy": "1.26.4",
+      "scipy": "1.11.4",
+      "pandas": "2.3.3",
+      "anndata": "0.11.4",
+      "scanpy": "1.11.5",
+      "statsmodels": "0.14.6",
+      "cellphonedb": null
+    },
+    "cpdb": {
+      "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) \n[GCC 13.3.0]",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "pandas": "2.0.3",
+      "anndata": "0.9.2",
+      "scanpy": "1.9.8",
+      "statsmodels": "0.14.1",
+      "cellphonedb": "5.0.1"
+    }
+  }
+}

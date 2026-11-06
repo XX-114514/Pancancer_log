@@ -1,0 +1,25 @@
+{
+  "status": "response_inference_readback_pass",
+  "hypergeometric_max_error": 1.1102230246251565e-16,
+  "n_tests": 1612,
+  "n_unqualified": 3164,
+  "response_full_family_q_lt_05": {
+    "author_unsigned_annotation_universe": 56,
+    "project_directional_measured_universe": 209
+  },
+  "n_network_edges": 137,
+  "actual_expression_probes": [
+    {
+      "identity": "Bcell_Naive_TCL1A",
+      "n_cells": 24348,
+      "max_mean_error": 2.7208433414749322e-05
+    },
+    {
+      "identity": "Macrophage_SPP1_TREM2_SPP1",
+      "n_cells": 3644,
+      "max_mean_error": 1.1091240151195336e-05
+    }
+  ],
+  "patient_inference": false,
+  "causal_inference": false
+}

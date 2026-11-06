@@ -1,0 +1,17 @@
+{
+  "UTC": "2026-11-06T04:59:46.450339+00:00",
+  "groups": [
+    {
+      "tag": "CM01_High",
+      "cells": 297271,
+      "LR_rows": 271,
+      "ordered_pairs": 3136,
+      "candidate_events": 53161,
+      "seconds": 2321.3289184570312,
+      "status": "SHA_and_significance_readback_pass"
+    }
+  ],
+  "expected_groups": 18,
+  "full_B_accepted": false,
+  "not_an_environment_difference_test": true
+}

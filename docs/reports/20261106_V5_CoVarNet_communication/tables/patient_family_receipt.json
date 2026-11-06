@@ -1,0 +1,6 @@
+{
+  "status": "eligibility_enumeration_only_not_fitted_models",
+  "rows": 2078253,
+  "sha256": "23bd8ce79c49004ffcd87fbc7241a8d5e554678d424b5bbcf4af9fec53fe64f9",
+  "logical_path": "${RUN_ROOT}/results/patient_extension/all_CM_pair_LR_not_estimable.tsv.gz"
+}

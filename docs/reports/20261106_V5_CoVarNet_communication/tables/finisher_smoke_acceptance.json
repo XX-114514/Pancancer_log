@@ -1,0 +1,11 @@
+{
+  "status": "technical_finisher_smoke_pass",
+  "fixture": "cropped_real_pilot_duplicated_groups; not_scientific_results",
+  "tested": [
+    "missing_pair_NA_not_zero",
+    "identical_groups_zero_effect",
+    "all_CM_family_p_and_q",
+    "driver_zero_for_identical_measurable_pairs"
+  ],
+  "fixture_directory": "summary_smoke_m_wfbasr"
+}

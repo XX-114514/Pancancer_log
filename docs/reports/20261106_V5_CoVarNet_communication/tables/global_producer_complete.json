@@ -1,0 +1,14 @@
+{
+  "mode": "global",
+  "iterations": 1000,
+  "seconds": 619.4474165439606,
+  "package": "5.0.1",
+  "outputs": {
+    "statistical_analysis_deconvoluted_global.txt": "49fc69ac3e15e4ea986187b26e708edfc07784e05df712166b28c298451c01ee",
+    "statistical_analysis_deconvoluted_percents_global.txt": "462525e564df2a7641d30b684c0e5f5ff7a5ccdf3633caca1a51405b51a57600",
+    "statistical_analysis_means_global.txt": "a9585beb8e75fc6528be5debd79ea7d47c05292106f3fac0a258cb3f01f12249",
+    "statistical_analysis_pvalues_global.txt": "4a0c11305681f19a1235e8dd9a9bdf71a78d305e0a8ed1037428a1f4c248867c",
+    "statistical_analysis_significant_means_global.txt": "fe66277a09f28825ed5500cfbe7f6513b01669dbbd1b64060dddefea38d9faeb"
+  },
+  "scientific_acceptance": false
+}

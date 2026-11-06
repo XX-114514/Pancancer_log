@@ -1,0 +1,19 @@
+{
+  "UTC": "2026-11-06T04:58:46.932584+00:00",
+  "B_complete_groups": [
+    {
+      "tag": "CM01_High",
+      "cells": 297271,
+      "seconds": 2321.3289184570312
+    }
+  ],
+  "B_expected_groups": 18,
+  "current_group_start": "START CM01_Low (4378190, 499)",
+  "latest_permutation_count": null,
+  "guardian_process_exists": true,
+  "B_all18_accepted": false,
+  "A": "independent_readback_pass",
+  "D": "cell_level_readback_pass",
+  "C": "not_estimable_frozen_design",
+  "progress_note": "previous 1000/1000 belonged to completed High; Low had just entered preparation at snapshot"
+}

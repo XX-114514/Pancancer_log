@@ -1,0 +1,5 @@
+{
+  "UTC": "2026-11-06T04:33:27.355273+00:00",
+  "action": "terminated only original supervisor timer; existing CPDB producer and workers untouched",
+  "reason": "18 full-cell groups exceed arbitrary 24-hour family timeout; no scientific setting changed"
+}

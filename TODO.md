@@ -1746,7 +1746,8 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 ## 2026-11-06 V5原文式通讯
 
 - [x] 冻结版本、方法、全部成员/CMT资格、资源与真实小试。
-- [ ] 接受同一run正式A/B/D终态、全部LR/阴性家族及图件，补驱动分解。
+- [x] 正式A与细胞级D独立读回，完整响应/阴性/不可检验表、全局驱动分解及图件已审核。
+- [ ] 等待同一run B全部18组终态、自动独立读回、完整LR与环境变化驱动分解及配对图；guardian已接续，不重复提交。
 - [ ] 患者资料桥补齐后按冻结家族执行C/pseudobulk；当前不可估计。
 
 见[报告](docs/reports/20261106_V5_CoVarNet_communication/README.md)。

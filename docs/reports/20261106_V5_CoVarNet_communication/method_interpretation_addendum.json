@@ -1,0 +1,12 @@
+{
+  "reason": "source interpretation clarification; existing frozen scientific parameters unchanged",
+  "database_author_evidence": "author code path contains v4.1.0/cellphonedb.zip; author archive checksum unavailable; official data tag is reconstruction, not byte identity proof",
+  "cytokine_subunits": "paper represents each subunit separately; 137 project-directional subunit edges retained; 136 complete-subunit edges are post hoc eligibility audit only",
+  "author_response": "unsigned annotation universe; within-identity q and minimum-subset CM display separate from full-family correction",
+  "implementation_deviations": [
+    "Welch sufficient statistics instead of direct Scanpy",
+    "strict reciprocal one-to-one contemporary MGI instead of archived duplicate-first map",
+    "Python hypergeometric and conservative prespecified family instead of exact clusterProfiler returned-set adjustment",
+    "exclude unresolved incompatible identity-signature mappings"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "technical_and_descriptive_readback_pass",
+  "database_measurable_rows": 271,
+  "ordered_pairs": 7569,
+  "candidate_events": 108417,
+  "nonzero_pairs": 7403,
+  "max_CCI": 95,
+  "permutation_p_not_environment_p": true
+}
