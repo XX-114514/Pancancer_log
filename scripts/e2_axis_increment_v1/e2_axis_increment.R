@@ -351,7 +351,7 @@ step_robust <- function(d) {
       }
       # 逐癌种与随机效应合并
       pc <- do.call(rbind, lapply(unique(st), function(ca) {
-        i <- y$ok & st == ca
+        i <- y$ok & st == ca & is.finite(age) & is.finite(px) & is.finite(par)  # v1.0.2: 年龄缺失逐行剔除
         if (sum(i) < cfg$min_cancer_n || sum(y$e[i]) < cfg$min_cancer_events) return(NULL)
         f <- tryCatch(cox_fit(cbind(parent = par[i], proxy = px[i], age = age[i]),
                               list(t = y$t[i], e = y$e[i]), rep(1L, sum(i))), error = function(e) NULL)
@@ -359,12 +359,14 @@ step_robust <- function(d) {
         data.frame(axis = a$axis_id, endpoint = ep, cancer = ca, n = f$n, events = f$events, b = f$beta[2], se = f$se[2])
       }))
       het[[length(het) + 1]] <- pc
+      # v1.0.2: 仍不收敛的癌种保留在 robust_per_cancer.tsv, 不进入合并
+      pc <- pc[is.finite(pc$b) & is.finite(pc$se), ]
       mm <- dl_meta(pc$b, pc$se)
       ends[[length(ends) + 1]] <- data.frame(axis = a$axis_id, endpoint = ep, term = "RE_per_cancer", t(mm),
         frac_same_dir = mean(sign(pc$b) == sign(log(mm[["HR"]]))))
       # 嵌套: 代理是否超出单端
       nest <- function(extra, lab) {
-        ok <- y$ok & is.finite(px) & is.finite(par)
+        ok <- y$ok & is.finite(px) & is.finite(par) & is.finite(age)  # v1.0.2
         base_x <- cbind(parent = par[ok], age = age[ok], extra[ok, , drop = FALSE])
         yy <- list(t = y$t[ok], e = y$e[ok])
         f0 <- cox_fit(base_x, yy, st[ok]); f1 <- cox_fit(cbind(base_x, proxy = px[ok]), yy, st[ok])

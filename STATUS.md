@@ -1,3 +1,7 @@
+## 2026-11-06 E2：V5/K9 bulk轴代理未通过“轴”层判定
+
+[运行记录](runs/20261106_E2_axis_increment_v1.md)：冻结方案后复现24/24；SPP1判定B（基因层稳健），LGALS1判定C，全轴特异性未通过（54.4% q<0.05）。观察性校准，不涉及通讯是否发生。
+
 ## 2026-11-06 V7大类marker身份与新冻结进行中
 
 [全量证据](inventories/analysis/2026-11-06/v7_marker_identity_freeze_v1/README.md)：4,676,787行、490基因、223审阅分区、109,270条统计独立PASS。进度占位不进入新正式身份，支持大类而无细分可按大类＋marker冻结；B coarse父类混杂、pDC共享分泌及粒细胞/胶质共享marker已登记。v2收紧三个组件，原counts/QC/CNV不变，23项反例通过；逐区新冻结正在写出/审计，未提前登记全V7发表接受。新TME/CoVarNet不变。
