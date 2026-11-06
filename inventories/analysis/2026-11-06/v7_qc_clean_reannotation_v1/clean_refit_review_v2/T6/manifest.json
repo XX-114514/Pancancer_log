@@ -1,0 +1,12 @@
+{
+  "status": "completed_clean_marker_aggregation_not_final_identity",
+  "UTC": "2026-11-06T01:15:46.122603+00:00",
+  "lineage": "T6",
+  "n_cells": 155786,
+  "n_clusters": 12,
+  "n_genes": 118,
+  "n_marker_records": 1416,
+  "measured_denominators_verified": true,
+  "reference_labels_used_in_fit": false,
+  "final_identity_pending": true
+}

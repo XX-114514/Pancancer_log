@@ -1,0 +1,1 @@
+{"Python": "3.10.19", "python_packages": {"scanpy": "1.11.5", "anndata": "0.11.4", "numpy": "1.26.4", "pandas": "2.3.3", "scrublet": "0.2.3", "doubletdetection": "4.3.0.post1"}, "R_packages": {"R": "R version 4.3.3 (2024-02-29)", "Seurat": "5.3.1", "harmony": "1.2.4"}}

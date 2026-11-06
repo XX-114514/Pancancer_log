@@ -1,0 +1,26 @@
+primary_QC_action	clean_lineage_model_eligible	working_parent_identity	working_parent_review	working_fine_subtype	working_cluster_context	n_cells
+exclude_primary_QC	False	outside_current_clean_model	not_in_clean_lineage_fit	not_assigned	not_in_clean_lineage_fit	783
+holdout_pending_review	False	outside_current_clean_model	not_in_clean_lineage_fit	not_assigned	not_in_clean_lineage_fit	62
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	CD4 T | CXCL13 / GZMA context	1554
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	CD4 T | CXCL13 / TCF7 context	2327
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	T + Ig-constant RNA [review]	161
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	T + Ig-variable RNA [review]	558
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	T | GZMK / CCL5 context	292
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	Treg-enriched T (coarse)	11225
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	Treg-enriched T | IFN context	1495
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	Treg-enriched | IKZF2 / FOXP3	3497
+retain_review_pool	True	T	T_candidate_not_positive_by_current_rules	not_assigned	Treg-enriched | activation context	1739
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	CD4 T | CXCL13 / GZMA context	17566
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	CD4 T | CXCL13 / TCF7 context	18204
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	T + Ig-constant RNA [review]	2210
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	T + Ig-variable RNA [review]	1663
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	T | GZMK / CCL5 context	2408
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	T | tiny partition [review]	2
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	Treg-enriched T (coarse)	40779
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	Treg-enriched T | IFN context	8074
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	Treg-enriched | IKZF2 / FOXP3	21482
+retain_review_pool	True	T	T_positive_RNA_support	not_assigned	Treg-enriched | activation context	19738
+retain_review_pool	True	T_candidate_low_information	T_candidate_not_positive_by_current_rules	not_assigned	T candidate | low support [review]	102
+retain_review_pool	True	T_candidate_low_information	T_positive_RNA_support	not_assigned	T candidate | low support [review]	48
+retain_review_pool	True	T_with_competing_RNA_review	T_candidate_not_positive_by_current_rules	not_assigned	T + myeloid RNA [review]	138
+retain_review_pool	True	T_with_competing_RNA_review	T_positive_RNA_support	not_assigned	T + myeloid RNA [review]	524

@@ -1,0 +1,9 @@
+{
+  "status": "completed_additional_RNA_context_review_flags_only",
+  "UTC": "2026-11-06T00:57:17.208966+00:00",
+  "n_cells": 38959,
+  "n_clusters": 18,
+  "n_aggregate_records": 90,
+  "no_new_QC_exclusions": true,
+  "limits": "Context programs are nonexclusive, not positive lineage classifiers. FCER1G/TYROBP shared with Mast are omitted from inflammatory positive flag. Pan-MC reference C9 itself includes CCL5/IL32/GZMB; lymphoid-like association is not automatically a doublet. Source-aware RNA fractions, old scores and further identity review are separate."
+}

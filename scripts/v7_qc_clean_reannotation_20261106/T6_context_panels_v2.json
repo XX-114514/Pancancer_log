@@ -1,0 +1,362 @@
+{
+  "schema": "T6_marker_targets_v1",
+  "notes": "Positive RNA evidence and candidate contexts; no forced subtype. Shared checkpoint or cytotoxic markers do not determine CD8 identity. NK-associated cytotoxicity is not an exclusive competing parent without TCR/CD3 context.",
+  "panels": [
+    {
+      "id": "T_identity",
+      "target": "T identity",
+      "level": "parent",
+      "genes": [
+        "CD3D",
+        "CD3E",
+        "CD3G",
+        "TRAC",
+        "TRBC1",
+        "TRBC2"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "CD4_context",
+      "target": "CD4 context",
+      "level": "candidate_subtype",
+      "genes": [
+        "CD4",
+        "CD40LG"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "CD8_context",
+      "target": "CD8 context",
+      "level": "candidate_subtype",
+      "genes": [
+        "CD8A",
+        "CD8B"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Treg_core",
+      "target": "Treg core\n(candidate)",
+      "level": "candidate_subtype",
+      "genes": [
+        "FOXP3",
+        "IKZF2",
+        "IKZF4",
+        "IL2RA"
+      ],
+      "source": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-023-02371-y/MediaObjects/41591_2023_2371_MOESM3_ESM.xlsx",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Treg_activation",
+      "target": "Treg-associated\nactivation [state]",
+      "level": "state",
+      "genes": [
+        "CTLA4",
+        "TNFRSF4",
+        "TNFRSF18",
+        "CCR8",
+        "TNFRSF9"
+      ],
+      "source": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-023-02371-y/MediaObjects/41591_2023_2371_MOESM3_ESM.xlsx",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "naive",
+      "target": "Naive / memory\n[state]",
+      "level": "state",
+      "genes": [
+        "CCR7",
+        "TCF7",
+        "LEF1",
+        "SELL",
+        "IL7R"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Tfh_Tph",
+      "target": "Tfh / Tph context\n[candidate]",
+      "level": "candidate_subtype",
+      "genes": [
+        "CXCL13",
+        "CXCR5",
+        "BCL6",
+        "ICOS",
+        "MAF"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Th17",
+      "target": "Th17 context\n[candidate]",
+      "level": "candidate_subtype",
+      "genes": [
+        "RORC",
+        "CCR6",
+        "KLRB1",
+        "IL23R"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "checkpoint",
+      "target": "Shared checkpoint\n[state]",
+      "level": "state",
+      "genes": [
+        "TIGIT",
+        "PDCD1",
+        "TOX",
+        "LAG3",
+        "HAVCR2",
+        "ENTPD1"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "cytotoxic",
+      "target": "Cytotoxic\n[state]",
+      "level": "state",
+      "genes": [
+        "NKG7",
+        "GNLY",
+        "PRF1",
+        "GZMK",
+        "GZMB",
+        "CCL5"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "unconventional",
+      "target": "Unconventional T\n[context]",
+      "level": "candidate_subtype",
+      "genes": [
+        "TRDC",
+        "TRGC1",
+        "TRGC2",
+        "TRAV1-2",
+        "SLC4A10",
+        "ZBTB16"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "cycling",
+      "target": "Cycling\n[state]",
+      "level": "state",
+      "genes": [
+        "MKI67",
+        "TOP2A",
+        "UBE2C"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "IFN",
+      "target": "IFN response\n[state]",
+      "level": "state",
+      "genes": [
+        "ISG15",
+        "IFIT1",
+        "MX1"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "stress",
+      "target": "Heat shock / IEG\n[state]",
+      "level": "state",
+      "genes": [
+        "HSPA1A",
+        "HSPA1B",
+        "DNAJB1",
+        "FOS",
+        "JUN"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "B_review",
+      "target": "B cells\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "MS4A1",
+        "CD79A",
+        "CD79B",
+        "CD19",
+        "BANK1"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Plasma_review",
+      "target": "Plasma cells\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "MZB1",
+        "JCHAIN",
+        "SDC1",
+        "DERL3"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Myeloid_review",
+      "target": "Myeloid\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "LST1",
+        "CSF1R",
+        "CD14",
+        "CD163",
+        "MS4A7",
+        "C1QA"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Mast_review",
+      "target": "Mast\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "TPSAB1",
+        "TPSB2",
+        "CPA3",
+        "KIT",
+        "MS4A2"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Epithelial_review",
+      "target": "Epithelial\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Stromal_review",
+      "target": "Fibroblasts\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "COL1A1",
+        "COL1A2",
+        "DCN",
+        "LUM"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Endothelial_review",
+      "target": "Endothelial\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "PECAM1",
+        "VWF",
+        "CLDN5",
+        "KDR"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Platelet_review",
+      "target": "Platelet\n[competitor]",
+      "level": "competing_parent",
+      "genes": [
+        "PF4",
+        "PPBP",
+        "GP9",
+        "ITGA2B"
+      ],
+      "source": "https://github.com/Coolgenome/TCM",
+      "provenance": "Project review combination guided by literature and original code; not a copied validated classifier."
+    },
+    {
+      "id": "Ig_constant_context",
+      "target": "Ig constant RNA\n[context review]",
+      "level": "competing_parent",
+      "genes": [
+        "IGHG1",
+        "IGLC3",
+        "IGHG3",
+        "IGLC2",
+        "IGKC",
+        "IGHA1",
+        "IGHM",
+        "IGHG4"
+      ],
+      "source": "Project diagnostic following old RNA DE and current source-qualified review",
+      "provenance": "Immunoglobulin RNA alone does not establish B/plasma identity or doublet; review together with B/plasma anchors and T components."
+    },
+    {
+      "id": "Ig_variable_context",
+      "target": "Ig variable RNA\n[source-context review]",
+      "level": "competing_parent",
+      "genes": [
+        "IGLV7-43",
+        "IGLV2-11",
+        "IGLV8-61",
+        "IGHV2-26",
+        "IGKV1-6",
+        "IGHV6-1",
+        "IGHV3-53",
+        "IGHV3-66",
+        "IGHV1-18"
+      ],
+      "source": "Project diagnostic following old RNA DE and current source-qualified review",
+      "provenance": "Immunoglobulin RNA alone does not establish B/plasma identity or doublet; review together with B/plasma anchors and T components."
+    }
+  ],
+  "reference_panels": [
+    {
+      "id": "Chu_S6_Treg",
+      "target": "Chu 2023 Table S6\nTreg signature [reference]",
+      "level": "published_reference_state",
+      "genes": [
+        "FOXP3",
+        "IKZF2",
+        "IKZF4",
+        "IL2RA",
+        "ENTPD1",
+        "CCR4",
+        "ICOS",
+        "IL10RA",
+        "TGFB1",
+        "TIGIT",
+        "CTLA4",
+        "LAG3",
+        "HAVCR2",
+        "PDCD1"
+      ],
+      "source": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-023-02371-y/MediaObjects/41591_2023_2371_MOESM3_ESM.xlsx",
+      "provenance": "Complete original 14-gene CD4 functional signature; not an exclusive identity classifier."
+    }
+  ]
+}

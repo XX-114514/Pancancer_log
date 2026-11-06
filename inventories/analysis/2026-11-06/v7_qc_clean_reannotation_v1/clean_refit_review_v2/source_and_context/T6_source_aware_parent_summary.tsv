@@ -1,0 +1,5 @@
+selection	n_cells	n_old_cross_component_positive	n_two_CD3_positive	n_source_aware_positive	n_additional_CD3_positive	n_Treg_core_positive_with_source_aware_parent	n_competing_anchor_and_T_positive
+all	156631	104936	107783	133543	28607	47111	3206
+primary_keep	155786	104091	107105	132698	28607	46705	2423
+K09_keep	782	437	455	607	170	296	204
+TCR_unavailable_keep	25753	0	16635	16635	16635	7670	229

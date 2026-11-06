@@ -1,0 +1,371 @@
+{
+  "schema": "Mast_marker_target_panel_v4_extended_competitors",
+  "notes": "Associations guide review; reference state IDs and genes are not transferred labels. Protein-defined MCT/MCTC remain RNA-based candidates. Extended contexts added after observed clean-fit DE; do not turn shared genes into hard lineage calls.",
+  "panels": [
+    {
+      "id": "mast_identity",
+      "target": "Mast identity",
+      "level": "parent",
+      "genes": [
+        "TPSAB1",
+        "TPSB2",
+        "CPA3",
+        "KIT",
+        "MS4A2"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "MCTC",
+      "target": "MC_TC-like\n(candidate)",
+      "level": "candidate_subtype",
+      "genes": [
+        "CMA1",
+        "CTSG"
+      ],
+      "source": "https://www.jci.org/articles/view/174981"
+    },
+    {
+      "id": "MCT",
+      "target": "MC_T-like\n(candidate)",
+      "level": "candidate_subtype",
+      "genes": [
+        "IL17RB",
+        "GPR183",
+        "CD38"
+      ],
+      "source": "https://www.jci.org/articles/view/174981"
+    },
+    {
+      "id": "IL1RL1",
+      "target": "IL1RL1 / lipid\nmediator axis",
+      "level": "state_axis",
+      "genes": [
+        "IL1RL1",
+        "HDC",
+        "LTC4S",
+        "HPGDS"
+      ],
+      "source": "https://www.jci.org/articles/view/174981"
+    },
+    {
+      "id": "cycling",
+      "target": "Cycling Mast\n(state)",
+      "level": "state",
+      "genes": [
+        "MKI67",
+        "TOP2A",
+        "BIRC5"
+      ],
+      "source": "https://www.jci.org/articles/view/174981"
+    },
+    {
+      "id": "IFN",
+      "target": "IFN response\n(state)",
+      "level": "state",
+      "genes": [
+        "ISG15",
+        "IFIT1",
+        "MX1"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "HLAII",
+      "target": "Antigen-presentation\nprogram",
+      "level": "state_program",
+      "genes": [
+        "CD74",
+        "HLA-DRA",
+        "HLA-DRB1"
+      ],
+      "source": "https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R"
+    },
+    {
+      "id": "T_competitor",
+      "target": "T-cell competitor\n(identity)",
+      "level": "competing_parent",
+      "genes": [
+        "CD3D",
+        "CD3E",
+        "TRAC"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "myeloid_competitor",
+      "target": "Myeloid competitor\n(identity)",
+      "level": "competing_parent",
+      "genes": [
+        "LST1",
+        "CSF1R",
+        "CD14"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "stromal_competitor",
+      "target": "Fibroblast competitor\n(identity)",
+      "level": "competing_parent",
+      "genes": [
+        "COL1A1",
+        "COL1A2",
+        "DCN"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "epithelial_competitor",
+      "target": "Epithelial competitor\n(identity)",
+      "level": "competing_parent",
+      "genes": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "B_competitor",
+      "target": "B cells\n(competitor)",
+      "level": "competing_parent",
+      "genes": [
+        "MS4A1",
+        "CD79A",
+        "CD79B",
+        "CD19",
+        "BANK1"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "Plasma_competitor",
+      "target": "Plasma cells\n(competitor)",
+      "level": "competing_parent",
+      "genes": [
+        "MZB1",
+        "JCHAIN",
+        "SDC1",
+        "DERL3"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "Endothelial_competitor",
+      "target": "Endothelial cells\n(competitor)",
+      "level": "competing_parent",
+      "genes": [
+        "PECAM1",
+        "VWF",
+        "CLDN5",
+        "KDR"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "Platelet_competitor",
+      "target": "Platelet program\n(review)",
+      "level": "competing_parent",
+      "genes": [
+        "PF4",
+        "PPBP",
+        "GP9",
+        "ITGA2B"
+      ],
+      "source": "https://github.com/lambrechtslab/Pan-cancer_Lodietal"
+    },
+    {
+      "id": "lymphoid_context",
+      "target": "Lymphoid / cytotoxic RNA\n[nonexclusive review]",
+      "level": "competing_parent",
+      "genes": [
+        "CD2",
+        "CD7",
+        "IL7R",
+        "KLRB1",
+        "NKG7",
+        "GNLY",
+        "PRF1",
+        "KLRD1",
+        "NCR1"
+      ],
+      "source": "Project diagnostic panel selected after clean RNA DE; not a literature classifier",
+      "provenance": "Nonexclusive RNA context, not proof of a competing parent or doublet."
+    },
+    {
+      "id": "myeloid_inflammatory_context",
+      "target": "Myeloid-associated RNA\n[nonexclusive review]",
+      "level": "competing_parent",
+      "genes": [
+        "LYZ",
+        "TYROBP",
+        "FCER1G",
+        "AIF1",
+        "S100A8",
+        "S100A9"
+      ],
+      "source": "Project diagnostic panel selected after clean RNA DE; not a literature classifier",
+      "provenance": "Nonexclusive RNA context, not proof of a competing parent or doublet."
+    },
+    {
+      "id": "acinar_context",
+      "target": "Acinar RNA context\n[review]",
+      "level": "competing_parent",
+      "genes": [
+        "CEL",
+        "PLA2G1B",
+        "CTRC",
+        "PRSS1",
+        "PRSS2",
+        "SPINK1"
+      ],
+      "source": "Project diagnostic panel selected after clean RNA DE; not a literature classifier",
+      "provenance": "Nonexclusive RNA context, not proof of a competing parent or doublet."
+    },
+    {
+      "id": "endocrine_context",
+      "target": "Neuroendocrine RNA\n[review]",
+      "level": "competing_parent",
+      "genes": [
+        "CHGA",
+        "CHGB",
+        "SYP",
+        "PCSK1N",
+        "CPE",
+        "FXYD2"
+      ],
+      "source": "Project diagnostic panel selected after clean RNA DE; not a literature classifier",
+      "provenance": "Nonexclusive RNA context, not proof of a competing parent or doublet."
+    },
+    {
+      "id": "neural_context",
+      "target": "Neural RNA context\n[review]",
+      "level": "competing_parent",
+      "genes": [
+        "MAPT",
+        "NEFL",
+        "NEFM",
+        "NCAM1",
+        "TACC2",
+        "CACNA1A"
+      ],
+      "source": "Project diagnostic panel selected after clean RNA DE; not a literature classifier",
+      "provenance": "Nonexclusive RNA context, not proof of a competing parent or doublet."
+    }
+  ],
+  "panMC_reference_panels": [
+    {
+      "id": "Ref_C0",
+      "target": "Ref C0\nRibosomal",
+      "genes": [
+        "RPL31",
+        "RPL27A",
+        "RPL21"
+      ]
+    },
+    {
+      "id": "Ref_C1",
+      "target": "Ref C1\nHeat shock",
+      "genes": [
+        "HSPA1A",
+        "HSPA1B",
+        "DNAJB1"
+      ]
+    },
+    {
+      "id": "Ref_C2",
+      "target": "Ref C2\nNFKB1/NR4A3",
+      "genes": [
+        "NFKB1",
+        "NR4A3",
+        "VEGFA"
+      ]
+    },
+    {
+      "id": "Ref_C3",
+      "target": "Ref C3\nCD69/CMA1",
+      "genes": [
+        "CD69",
+        "RGS1",
+        "CMA1"
+      ]
+    },
+    {
+      "id": "Ref_C4",
+      "target": "Ref C4\nPDIA3/ENO1",
+      "genes": [
+        "PDIA3",
+        "ENO1",
+        "MYDGF"
+      ]
+    },
+    {
+      "id": "Ref_C5",
+      "target": "Ref C5\nCREM/ANXA1",
+      "genes": [
+        "CREM",
+        "FTH1",
+        "ANXA1"
+      ]
+    },
+    {
+      "id": "Ref_C6",
+      "target": "Ref C6\nMS4A2/LTC4S",
+      "genes": [
+        "MS4A2",
+        "LTC4S",
+        "TXNIP"
+      ]
+    },
+    {
+      "id": "Ref_C7",
+      "target": "Ref C7\nHLA-II",
+      "genes": [
+        "CD74",
+        "HLA-DRA",
+        "HLA-DRB1"
+      ]
+    },
+    {
+      "id": "Ref_C8",
+      "target": "Ref C8\nFOSB/UBB",
+      "genes": [
+        "UBB",
+        "FOSB",
+        "DNAJA1"
+      ]
+    },
+    {
+      "id": "Ref_C9",
+      "target": "Ref C9\nCCL5/IL32",
+      "genes": [
+        "CCL5",
+        "IL32",
+        "GZMB"
+      ]
+    }
+  ],
+  "panMC_source": "https://github.com/xiaoyanger01/pan-MC/blob/main/Fig.%201.R",
+  "extra_review_genes": [
+    "CD3G",
+    "TRBC1",
+    "TRBC2",
+    "CD163",
+    "MS4A7",
+    "C1QA",
+    "CLEC7A",
+    "LUM",
+    "KRT14",
+    "KRT17",
+    "IGHG1",
+    "IGHG4",
+    "IGKC",
+    "IGLC2",
+    "PHGR1",
+    "SPARCL1",
+    "KLF2",
+    "RGS16",
+    "ITGA2B"
+  ]
+}

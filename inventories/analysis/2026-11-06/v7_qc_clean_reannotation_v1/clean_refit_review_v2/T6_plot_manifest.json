@@ -1,0 +1,37 @@
+{
+  "lineage": "T6-clean",
+  "row_prefix": "T",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 12,
+  "n_cells": 155786,
+  "n_marker_records": 1416,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "b9b2ca874b94e315cf04ad7d08d5fd67713ce90a2c763ade2c3ba9a12c2895b9",
+  "panel_spec_sha256": "18681d0715caf9e81e798192c24459e31c811994e2b57e6042e61a3fa40d7f22",
+  "outputs": [
+    {
+      "name": "T6_clean_reference_states_v7.png",
+      "sha256": "5bc5e6c9b5d69ea8bcb9e38ffa145292ed79200a9079ac87b9a0f0aa066a5906"
+    },
+    {
+      "name": "T6_clean_competing_lineage_QC_v7.png",
+      "sha256": "a6dc5ad14a96d60764039fcf6de2858800cdf9908269f10ee8e0086d2564a021"
+    },
+    {
+      "name": "T6_clean_state_programs_v7.png",
+      "sha256": "894b17b26083212149c214d336a2017a57b7630cde0a2966e23ea7686f189003"
+    },
+    {
+      "name": "T6_clean_identity_subtype_v7.png",
+      "sha256": "870045732a2b11e76ccedc5964fb377ebbbdc12060e7a301247630f3513d0b5a"
+    },
+    {
+      "name": "T6_clean_extended_RNA_context_v7.png",
+      "sha256": "53a296e4ce76bf46275bfc473505f698dab5241bb797374f67e694c11ecec3b1"
+    }
+  ],
+  "row_label_table_SHA256": "a3b36dc4e08463ac9f4e8703d6534dc61841f6413bbc7b6dd4ff8e9d3df8b57d",
+  "publication_scope": "Reviewed PNGs only; SVG exports remain in local workspace and were XML/readback checked."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T01:02:46.168943+00:00",
+  "n_fresh_raw_recomputed_additional_exclusions": 36,
+  "n_Mast_model": 38923,
+  "n_global_exclude": 2003,
+  "n_global_holdout": 236,
+  "n_global_keep": 4674548,
+  "exact_original_count_subset": true,
+  "calibrated_sample_method_background_required": true
+}

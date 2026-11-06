@@ -1,0 +1,118 @@
+{
+  "status": "NK_joint_evidence_profile_not_yet_excluded",
+  "UTC": "2026-11-06T01:00:38.085356+00:00",
+  "n_cells": 38959,
+  "n_three_component_positive": 57,
+  "n_joint_top95": 36,
+  "rule": "At least one KLRD1/NCR1 receptor + at least one GNLY/PRF1 effector + NKG7 each >=2 raw UMI, plus original same-unit doublet percentile >=.95. Parent-Mast model input already marker-supported. Project positive diagnostic, not validated exclusive classifier.",
+  "counts": [
+    {
+      "clean_cluster": 0,
+      "n_cells": 10993,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 1,
+      "n_cells": 7947,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 2,
+      "n_cells": 5805,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 3,
+      "n_cells": 3393,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 4,
+      "n_cells": 2475,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 5,
+      "n_cells": 1456,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 6,
+      "n_cells": 1267,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 7,
+      "n_cells": 985,
+      "n_NK_three_component_positive": 55,
+      "n_joint_top95": 36
+    },
+    {
+      "clean_cluster": 8,
+      "n_cells": 865,
+      "n_NK_three_component_positive": 1,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 9,
+      "n_cells": 658,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 10,
+      "n_cells": 650,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 11,
+      "n_cells": 613,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 12,
+      "n_cells": 544,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 13,
+      "n_cells": 534,
+      "n_NK_three_component_positive": 1,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 14,
+      "n_cells": 395,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 15,
+      "n_cells": 228,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 16,
+      "n_cells": 95,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    },
+    {
+      "clean_cluster": 17,
+      "n_cells": 56,
+      "n_NK_three_component_positive": 0,
+      "n_joint_top95": 0
+    }
+  ]
+}

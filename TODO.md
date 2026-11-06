@@ -1,3 +1,7 @@
+## 2026-11-06 V7逐类排查后续
+
+当前Mast/T6实际QC清理、重建和大类工作侧表见[结果](inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)。下一步优先T09髓系RNA、T07/T08 Ig RNA及Mast剩余父类／来源上下文；补来源与参数敏感性后再接受细分。其他谱系及其余T候选池尚未完成本轮复审。
+
 ## 2026-11-05 组织上皮注释扩展后续
 
 - [x] 完成原26组的拆分、25个新增候选、逐基因来源与11项反例检查，见[资源](resources/annotation/v7_epithelial_extension_v1/README.md)。

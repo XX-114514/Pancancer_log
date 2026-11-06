@@ -23,3 +23,11 @@ Rscript scripts/v7_qc_clean_reannotation_20261106/clean_lineage_refit_v1.R "${RU
 真实运行由detached supervisor记录退出和complete；不以PID消失、文件存在或CPU进度代替终验。aggregate_clean_markers.py在REVIEW_LINEAGE指定谱系且真实terminal0后运行。R模型不使用旧簇、CellTypist/scATOMIC标签作特征。
 
 已知纠正：C的初版旧簇聚合表holdout计数用了不一致的字符串；独立审计新表直接从掩码重算，掩码和模型输入本身正确。警告单元的1个候选reason13属于数值待审，不能沿初版泛化显示字符串误解为锚点不足。其余失败/警告和终验在后续同任务记录追加。
+
+## 后续实际完成（v2优先）
+
+Mast额外NK组件核对36个均校准有效：01:02:17 UTC / 09:02:17 UTC+8实际追加排除；独立raw重算和精确count子集通过，当前全局2003排除／236暂存／4674548保留。Mast-v2于01:03:15—01:09:07 UTC / 09:03:15—09:09:07 UTC+8，terminal0；T6于00:42:18—01:09:01 UTC / 08:42:18—09:09:01 UTC+8，terminal0。R4.3.3、Seurat5.3.1、Harmony1.2.4；Python3.10.19及版本见结果软件收据。
+
+两个模型各95038基因完整RNA轴；source-res.4为12 T6／18 Mast诊断簇，不等于细分数。T6共有11091基因DE，Mast12929。T6扩展118基因／1416条、Mast110基因／1980条marker均独立重算，CP10K误差<1.1e-12。当前无正向DE分区T6=0/7/10/11，Mast=1/5/7；T6初始化Quick-TRANSfer10条、tiny2 DE跳过。工作大类按多marker簇及来源人工复查，单细胞阳性规则作为独立证据，未要求每个细胞足量TCR。侧表01:19:39 UTC / 09:19:39 UTC+8写出并读回一致，fine final接受0。
+
+详细结果、原样TSV、工作标签、掩码合同、警告、转移表与10张图见[当前登记](../inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)。完整对象留私有，旧V7 SHA在最终取证再次匹配。最新Mast模型是stage_i_Mast_NK_clean_refit_v2，T6仍为stage_d_T6_clean_refit；v1各对象保留。

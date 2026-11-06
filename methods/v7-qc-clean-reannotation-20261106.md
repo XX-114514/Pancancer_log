@@ -11,3 +11,11 @@
 干净拟合：完整RNA库LogNormalize1e4；来源≥80%可测基因中VST2000HVG（沿前诊断的globin候选过滤）、50PCA、30PC图；来源gse_id作为Harmony敏感性校正变量（不冒充实测技术批次）；raw res.4与source res.2/.4/.6/.8，seed20261106；不回归细胞周期/状态，不使用旧身份建图。RNA Wilcoxon DE仅用100%保留来源可测基因，min.pct=.1/min.diff.pct=.25/logFC=.25/return.p=.01。稀有或未共有的marker仍可用来源限定正向表达复查，不能因未进全局DE而认定不存在。
 
 marker图必须上方标对应身份/候选亚型/状态，下方标marker，左侧标工作注释与n；点大小用来源可测细胞分母，颜色为基因内相对表达，覆盖<80%标×。MC_T/MC_TC蛋白定义只作为RNA候选；Treg需FOXP3等核心及T组件支持，分类器仅佐证；CXCL13或细胞毒程序不能单独决定Tfh或CD8身份。
+
+## 实际v2补充及大类注释逻辑
+
+本次扩展Mast NK竞争检查为至少一个KLRD1/NCR1、至少一个GNLY/PRF1、以及NKG7各raw≥2，并要求原校准有效及背景分位≥.95；36个实际追加排除并再次从counts重新建模。这是看到新RNA证据后的探索性QC扩展，不冒充文献统一阈值或预注册生物学检验。宽泛细胞毒／Ig／炎症RNA不自动当doublet。
+
+大类按簇中多marker及跨来源证据人工复核，单细胞严格阳性规则另存；来源缺测／dropout不自动变成unresolved。T6保留直接阳性132698与簇级T工作标签154974两个不同分母，662混杂／150低信息单列。状态上下文不是逐细胞功能结论，细分最终标签未接受。Mast无足够RNA依据时可保留coarse，不强分MC_T/MC_TC。
+
+当前候选／状态／marker对应表与结果见[完整复查](../inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)。公共代码增加环境PROJECT_ROOT引导，实际body SHA逐一登记；私有逐单元政策不公开。原始TSV文本及SHA传输，避免JSON浮点中转损失极小P值精度。

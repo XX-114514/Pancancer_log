@@ -1,0 +1,26 @@
+{
+  "status": "completed_clean_lineage_refit",
+  "UTC_start": "2026-11-06 00:42:23 UTC",
+  "UTC_end": "2026-11-06 01:08:57 UTC",
+  "lineage": "T6",
+  "n_cells": 155786,
+  "n_RNA_features": 95038,
+  "n_HVG": 2000,
+  "n_model_feature_candidates": 17252,
+  "n_common_measured_DE_features": 11091,
+  "n_PCA": 50,
+  "graph_PCs": 30,
+  "resolutions": [
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "marker_resolution": 0.4,
+  "normalization": "Full-library RNA LogNormalize 10000",
+  "source_covariate": "gse_id; source sensitivity, not verified physical technology",
+  "reference_labels_used_in_fit": false,
+  "regressed_variables": [],
+  "seed": 20261106,
+  "final_identity_assignment": "pending_marker_review"
+}

@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "n_figures": 10,
+  "figures": [
+    {
+      "lineage": "Mast",
+      "file": "Mast_clean_v2_competing_lineage_QC_v7.png",
+      "n_rows_verified": 18,
+      "n_cells": 38923,
+      "PNG_SHA256": "3f0d9e20d686754a02550b74cfa403cfc2f05cce0d9a9d34602af2e673f8e1ad",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "Mast",
+      "file": "Mast_clean_v2_extended_RNA_context_v7.png",
+      "n_rows_verified": 18,
+      "n_cells": 38923,
+      "PNG_SHA256": "182bf8a7331de6cea315b531cf83d9af12ff7b37e01f87c248aaae4d4d1daf46",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "Mast",
+      "file": "Mast_clean_v2_identity_subtype_v7.png",
+      "n_rows_verified": 18,
+      "n_cells": 38923,
+      "PNG_SHA256": "90d8628aec63857bf10d78667eeee83207e8e380876adf958b8f9477373682a8",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "Mast",
+      "file": "Mast_clean_v2_reference_states_v7.png",
+      "n_rows_verified": 18,
+      "n_cells": 38923,
+      "PNG_SHA256": "628dacf6f559790e9f9668874ea1b6f2dac6a657af87ba7ad93ab2fb642160e9",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "Mast",
+      "file": "Mast_clean_v2_state_programs_v7.png",
+      "n_rows_verified": 18,
+      "n_cells": 38923,
+      "PNG_SHA256": "0f50155ce9e8c77031723603ee478422094e0fa3d256f5cf4d411a0c6f74332d",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "T6",
+      "file": "T6_clean_competing_lineage_QC_v7.png",
+      "n_rows_verified": 12,
+      "n_cells": 155786,
+      "PNG_SHA256": "a6dc5ad14a96d60764039fcf6de2858800cdf9908269f10ee8e0086d2564a021",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "T6",
+      "file": "T6_clean_extended_RNA_context_v7.png",
+      "n_rows_verified": 12,
+      "n_cells": 155786,
+      "PNG_SHA256": "53a296e4ce76bf46275bfc473505f698dab5241bb797374f67e694c11ecec3b1",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "T6",
+      "file": "T6_clean_identity_subtype_v7.png",
+      "n_rows_verified": 12,
+      "n_cells": 155786,
+      "PNG_SHA256": "870045732a2b11e76ccedc5964fb377ebbbdc12060e7a301247630f3513d0b5a",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "T6",
+      "file": "T6_clean_reference_states_v7.png",
+      "n_rows_verified": 12,
+      "n_cells": 155786,
+      "PNG_SHA256": "5bc5e6c9b5d69ea8bcb9e38ffa145292ed79200a9079ac87b9a0f0aa066a5906",
+      "SVG_XML_and_all_row_labels_verified": true
+    },
+    {
+      "lineage": "T6",
+      "file": "T6_clean_state_programs_v7.png",
+      "n_rows_verified": 12,
+      "n_cells": 155786,
+      "PNG_SHA256": "894b17b26083212149c214d336a2017a57b7630cde0a2966e23ea7686f189003",
+      "SVG_XML_and_all_row_labels_verified": true
+    }
+  ],
+  "limits": "Marker arithmetic independently audited on server; this check verifies exact model scope, labels, input hashes and SVG readback. Manual visual review was also performed."
+}

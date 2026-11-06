@@ -27,3 +27,18 @@ B补测已使用独立detached supervisor真实启动，最多4 worker、各1线
 B实际terminal0，96单元×3种子均拟合完成；27单元稳定，69单元阈值/可检测性待审，19单元<100。17阳性单元直方图均检查；34采用、1数值警告暂存。C00:39:54 UTC实际完成1967排除/236暂存/4674584保留；独立重算名单、输入CSR及10x逐元素通过。发现初版聚合holdout字符串错误，新审计表纠正，不影响实际mask/input。D于00:42:18 UTC / 08:42:18 UTC+8真实启动两谱系，各16线程，R语法解析通过；终验尚待。
 
 公开检查点只复制本任务新增文件，在origin/main独立worktree上更新索引，保留原工作区15项tracked并发改动及其他untracked。检查代码AST、公共汇总无cell/sample行、diff及repository validator，普通push后独立核SHA。建议commit：Record authorized V7 QC cleanup and clean lineage refit launch。
+
+00:46 UTC公开push尝试被自动审批拒绝，理由为此前40+8文件授权不覆盖本轮25文件的私有分析衍生汇总及脚本；未执行网络push。已请求对已审阅本地commit84adfc6的明确授权，科学分析继续。普通推送仍待授权，不另行绕行。
+
+00:48 UTC用户明确授权公开25文件。普通push成功，独立ls-remote核到84adfc683cb6727e784179e0af1746d41b7fed6d。此前自动审批拦截已由本批明确授权解决。后续新结果未包含在该25文件提交中。
+Mast重拟合实际00:47:37 UTC terminal0，38959细胞；一组FindAllMarkers未过min.diff.pct，保持待marker解释。E首次汇总已写表但manifest因numpy.int64 JSON失败，不作完成；新v2目录转为Python int并重新汇总，保留失败历史。
+
+Mast扩展NK三组件后36个校准有效的联合候选于01:02:17 UTC实际排除，v2全局2003／236／4674548，独立重算/原始计数一致。两个当前模型于01:09:01／01:09:07 UTC正常terminal0；不同版本编号不继承身份。先读完整RNA DE再制定工作标签；T6补Ig面板到118基因，Mast110，共3396条marker独立复核。当前无正向DE分区T6 0/7/10/11、Mast1/5/7；T6有10条Quick-TRANSfer和2细胞DE跳过，明确未接受最终细分。
+
+大类标签按簇多marker和来源人工复核，不把逐细胞raw2阳性作为每个细胞的大类必需门槛。H于01:19:39 UTC / 09:19:39 UTC+8创建201667行两个原候选池工作侧表并读回完全一致；T6大类T154974、混杂662、低信息150；Mast模型38923，大类支持但其中2150上下文复查，另4754原候选父类/竞争RNA待复核。未改canonical V7，未自动替换CoVarNet输入。
+
+图全部显式marker对应类型／候选状态＋行工作注释／n，统计使用来源可测分母；10张图SHA、SVG XML及全部行标签读回通过，人工查过代表性身份、状态与扩展上下文图。E首次numpy.int64序列化失败保留，v2/v3新输出恢复；初次公共检查点命令一次相对cwd错误已改绝对路径，未影响分析。Pandas分片PerformanceWarning不影响写出/读回，记录不隐藏。
+
+当前公共结果包仅脱敏汇总、方法、通用代码与PNG；所有细胞/样本行、矩阵、PID和完整日志留私有。公共检查点25文件已授权并核远端84adfc683cb6727e784179e0af1746d41b7fed6d；其后结果属于追加内容，准备具体清单供授权。未把本地提交当云端同步成功。验证：全部脚本AST、逐表数值/守恒/范围、最终原V7 SHA、图读回、diff/privacy检查及repository validator。建议commit：Complete V7 QC v2 and marker-guided Mast T6 working annotation。
+
+最终公共检查实际结果：repository validator 0 errors／1个既有历史路径warning（2026-10-13旧provenance）；本批88文件privacy/schema/AST检查通过、无细胞/样本行或矩阵、diff --check通过。GitHub原25文件提交已独立核验；本追加79新文件＋9更新共88文件完成本地审阅，尚待本批明确公开授权。

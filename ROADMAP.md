@@ -1,3 +1,7 @@
+## 2026-11-06 V7逐类排查后续
+
+当前Mast/T6实际QC清理、重建和大类工作侧表见[结果](inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)。下一步优先T09髓系RNA、T07/T08 Ig RNA及Mast剩余父类／来源上下文；补来源与参数敏感性后再接受细分。其他谱系及其余T候选池尚未完成本轮复审。
+
 ## 2026-11-05 当前里程碑：先验收新TME，再锁定可识别且稳健的CM
 
 [服务器系统审计](docs/reports/20261105_server_analysis_audit/README.md)将现有结果分为数据构建、工程完成、候选身份、模块稳定性和独立验证。下一阶段顺序为：TME run_v2终验 → marker候选与父身份审阅 → NMF尺度/rank/来源留出 → 测量合格的空间/通讯/接收响应验证。CT75、历史V5/V7和扩展72来源的版本边界继续保留。已有V7 rank survey完成不等于K9最优；W top10空间方向性不等于CM验证。

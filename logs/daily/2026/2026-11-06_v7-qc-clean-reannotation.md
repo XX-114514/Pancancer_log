@@ -15,3 +15,7 @@ Mast另有4,754个QC保留细胞尚需父类/竞争RNA复查，暂不进入Mast�
 
 
 细节见[run](../../../runs/20261106_v7_QC_clean_reannotation_v1.md)。事件UTC/UTC+8记录于run；取证为本轮现场读取，未刷新其他并发图谱状态。
+
+## 后续v2与工作侧表
+
+01:02—01:19 UTC / 09:02—09:19 UTC+8完成NK追加36排除、Mast再次重建、两个真实terminal0、3396条marker复核、工作侧表读回和10张图。当前全局2003排除／236暂存／4674548保留；不是初始1967的旧节点。原V7不变，最终细分尚未接受。见[完整结果](../../../inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)。

@@ -1,0 +1,146 @@
+{
+  "scope": "Source feature-axis availability; not a verified absence of RNA or immune identity.",
+  "records": [
+    {
+      "gse_id": "GSE115978",
+      "n_T6": 388,
+      "n_kept": 388,
+      "n_source_features": 22454,
+      "CD3_available": "CD3D,CD3E,CD3G",
+      "TCR_available": "none",
+      "FOXP3_available": true,
+      "n_ENSG_like_features": 0,
+      "var_columns": [
+        "n_source_features_collapsed",
+        "has_ensembl_source"
+      ],
+      "CD3_alias_candidates": [
+        "CD3EAP",
+        "CD3G",
+        "CD3D",
+        "CD3E"
+      ]
+    },
+    {
+      "gse_id": "GSE116256",
+      "n_T6": 81,
+      "n_kept": 81,
+      "n_source_features": 27899,
+      "CD3_available": "CD3D,CD3E,CD3G",
+      "TCR_available": "none",
+      "FOXP3_available": true,
+      "n_ENSG_like_features": 0,
+      "var_columns": [
+        "n_source_features_collapsed",
+        "has_ensembl_source"
+      ],
+      "CD3_alias_candidates": [
+        "CD3D",
+        "CD3E",
+        "CD3EAP",
+        "CD3G"
+      ]
+    },
+    {
+      "gse_id": "GSE138709",
+      "n_T6": 375,
+      "n_kept": 375,
+      "n_source_features": 19783,
+      "CD3_available": "CD3D,CD3E,CD3G",
+      "TCR_available": "none",
+      "FOXP3_available": true,
+      "n_ENSG_like_features": 0,
+      "var_columns": [
+        "n_source_features_collapsed",
+        "has_ensembl_source"
+      ],
+      "CD3_alias_candidates": [
+        "CD3D",
+        "CD3E",
+        "CD3EAP",
+        "CD3G"
+      ]
+    },
+    {
+      "gse_id": "GSE152048",
+      "n_T6": 190,
+      "n_kept": 190,
+      "n_source_features": 32864,
+      "CD3_available": "CD3D,CD3E,CD3G",
+      "TCR_available": "none",
+      "FOXP3_available": true,
+      "n_ENSG_like_features": 0,
+      "var_columns": [
+        "n_source_features_collapsed",
+        "has_ensembl_source"
+      ],
+      "CD3_alias_candidates": [
+        "CD3E",
+        "CD3D",
+        "CD3G",
+        "CD3EAP"
+      ]
+    },
+    {
+      "gse_id": "GSE155698",
+      "n_T6": 955,
+      "n_kept": 955,
+      "n_source_features": 24530,
+      "CD3_available": "CD3D,CD3E,CD3G",
+      "TCR_available": "none",
+      "FOXP3_available": true,
+      "n_ENSG_like_features": 0,
+      "var_columns": [
+        "n_source_features_collapsed",
+        "has_ensembl_source"
+      ],
+      "CD3_alias_candidates": [
+        "CD3D",
+        "CD3E",
+        "CD3EAP",
+        "CD3G"
+      ]
+    },
+    {
+      "gse_id": "GSE178481",
+      "n_T6": 1541,
+      "n_kept": 1541,
+      "n_source_features": 21682,
+      "CD3_available": "CD3D,CD3E,CD3G",
+      "TCR_available": "none",
+      "FOXP3_available": true,
+      "n_ENSG_like_features": 0,
+      "var_columns": [
+        "n_source_features_collapsed",
+        "has_ensembl_source"
+      ],
+      "CD3_alias_candidates": [
+        "CD3D",
+        "CD3E",
+        "CD3EAP",
+        "CD3G"
+      ]
+    },
+    {
+      "gse_id": "GSE179994",
+      "n_T6": 22223,
+      "n_kept": 22223,
+      "n_source_features": 19790,
+      "CD3_available": "CD3D,CD3E,CD3G",
+      "TCR_available": "none",
+      "FOXP3_available": true,
+      "n_ENSG_like_features": 0,
+      "var_columns": [
+        "n_source_features_collapsed",
+        "has_ensembl_source"
+      ],
+      "CD3_alias_candidates": [
+        "CD3E",
+        "CD3D",
+        "CD3G",
+        "CD3EAP"
+      ]
+    }
+  ],
+  "n_T6_marker_component_missing": 25753
+}

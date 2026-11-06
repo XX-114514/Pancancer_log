@@ -1,0 +1,41 @@
+{
+  "status": "working_annotation_and_QC_overlays_created_readback_verified",
+  "UTC": "2026-11-06T01:19:39.828791+00:00",
+  "lineages": [
+    {
+      "lineage": "Mast",
+      "n_full_review_pool": 45036,
+      "n_model": 38923,
+      "n_primary_QC_keep": 43677,
+      "n_positive_parent_in_model": 38923,
+      "n_working_broad_T": 0,
+      "n_working_broad_Mast": 38923,
+      "n_T_with_competing_RNA_cluster_review": 0,
+      "n_T_candidate_low_information": 0,
+      "n_diagnostic_clusters": 18,
+      "n_cells_in_clusters_requiring_review": 2150,
+      "canonical_V7_changed": false,
+      "fine_final_labels_assigned": 0,
+      "private_overlay_SHA256": "b9c2ac1673ceef6515a3b5e8760fe7d4b6fa7bd034a7704f1256dad301e880e0",
+      "readback_exact": true
+    },
+    {
+      "lineage": "T6",
+      "n_full_review_pool": 156631,
+      "n_model": 155786,
+      "n_primary_QC_keep": 155786,
+      "n_positive_parent_in_model": 132698,
+      "n_working_broad_T": 154974,
+      "n_working_broad_Mast": 0,
+      "n_T_with_competing_RNA_cluster_review": 662,
+      "n_T_candidate_low_information": 150,
+      "n_diagnostic_clusters": 12,
+      "n_cells_in_clusters_requiring_review": 5406,
+      "canonical_V7_changed": false,
+      "fine_final_labels_assigned": 0,
+      "private_overlay_SHA256": "f812a30647af0f4a629f071cfffb7a9bb6832e9ab763b2c32e1c9350a22a5552",
+      "readback_exact": true
+    }
+  ],
+  "limits": "Working broad evidence and cluster marker contexts only. Review clusters remain explicit; no final subtype acceptance or automatic downstream CoVarNet input replacement."
+}

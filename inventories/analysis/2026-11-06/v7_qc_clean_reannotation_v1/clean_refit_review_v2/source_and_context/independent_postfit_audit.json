@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T00:55:10.670380+00:00",
+  "lineage": "Mast",
+  "n_cells": 38959,
+  "n_clusters_res0_4": 18,
+  "n_marker_records": 1980,
+  "max_absolute_mean_CP10K_recalculation_error": 7.105427357601002e-13,
+  "all_model_cells_exactly_QC_eligible": true,
+  "all_resolution_and_source_counts_recomputed": true,
+  "DE_restricted_to_common_measured_genes": true,
+  "HVG2000_subset_of_source_robust_candidates": true,
+  "clusters_no_positive_DE_padj05_under_current_settings": [
+    0,
+    4,
+    5,
+    12
+  ],
+  "final_fine_annotation_accepted": false
+}

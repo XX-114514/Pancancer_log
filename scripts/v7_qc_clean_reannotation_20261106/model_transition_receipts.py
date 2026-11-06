@@ -1,0 +1,15 @@
+import os
+from pathlib import Path
+PROJECT_ROOT=Path(os.environ["PROJECT_ROOT"])
+import json
+from datetime import datetime,timezone
+import numpy as np,pandas as pd
+run=PROJECT_ROOT/'runs/20261106_v7_QC_clean_reannotation_v1';o=run/'stage_k_model_transition_audit_v1';o.mkdir(exist_ok=False);receipts=[]
+for name,folder,tag in [('T6','stage_d_T6_clean_refit','T6'),('Mast_v1','stage_d_Mast_clean_refit','Mast'),('Mast_v2','stage_i_Mast_NK_clean_refit_v2','Mast_v2')]:
+ t=json.loads((run/'launch'/(tag+'_refit_terminal.json')).read_text());assert t['exit_code']==0;log=(run/'launch'/(tag+'_refit_stdout_stderr.log')).read_text(errors='replace');receipts.append({'model':name,'terminal':t,'complete':json.loads((run/folder/'complete.json').read_text()),'Quick_TRANSfer_warning_count':log.count('Quick-TRANSfer stage steps exceeded maximum'),'no_features_min_diff_warning_count':log.count('No features pass min.diff.pct threshold'),'tiny_group_warning_count':log.count('Cell group 1 has fewer than 3 cells'),'limits':'Computational completion is distinct from numerical sensitivity review and biological subtype acceptance.'})
+md=pd.read_csv(run/'stage_d_T6_clean_refit/metadata_PRIVATE.tsv.gz',sep='\t',index_col='cell_id');q=pd.read_pickle(run/'stage_c_clean_views/T6_source_aware_parent_review_PRIVATE.pkl.gz').loc[md.index];q['new_cluster']=md['source_snn_res.0.4'].to_numpy();rows=[]
+for old in [9,11]:
+ for cl,t in q[q.review_cluster_before_cleanup.eq(old)].groupby('new_cluster',observed=True):rows.append({'old_cluster':old,'new_cluster':int(cl),'n_cells':len(t),'n_T_positive_evidence':int(t.source_aware_T_positive_evidence.sum()),'n_myeloid_program':int(t.Myeloid_review_program_review.sum()),'n_distinct_competing_anchor':int(t.distinct_competing_anchor_supported.sum()),'doublet_percentile_median':float(pd.to_numeric(t.doublet_within_sample_method_percentile,errors='coerce').median()),'decontx_median':float(pd.to_numeric(t.decontx_contamination,errors='coerce').median())})
+pd.DataFrame(rows).to_csv(o/'T6_old_K09_K11_to_clean_clusters.tsv',sep='\t',index=False,na_rep='NA');assert sum(x['n_cells'] for x in rows if x['old_cluster']==9)==782
+old=pd.read_csv(run/'stage_d_Mast_clean_refit/metadata_PRIVATE.tsv.gz',sep='\t',index_col='cell_id');new=pd.read_csv(run/'stage_i_Mast_NK_clean_refit_v2/metadata_PRIVATE.tsv.gz',sep='\t',index_col='cell_id');assert len(new)==38923 and new.index.isin(old.index).all();cross=pd.crosstab(old.loc[new.index,'source_snn_res.0.4'],new['source_snn_res.0.4']).rename_axis(index='prior_Mast_clean_cluster',columns='new_Mast_v2_cluster').stack().reset_index(name='n_cells');cross=cross[cross.n_cells>0];assert cross.n_cells.sum()==38923;cross.to_csv(o/'Mast_clean_v1_to_v2_cluster_crosswalk.tsv',sep='\t',index=False)
+out={'status':'PASS_execution_and_transition_receipts','UTC':datetime.now(timezone.utc).isoformat(),'models':receipts,'n_K09_retained':782,'n_K09_in_new9':int(((q.review_cluster_before_cleanup==9)&(q.new_cluster==9)).sum()),'n_Mast_v2':len(new),'all_transitions_exact_on_cell_index':True,'fine_subtypes_accepted':False};(o/'complete.json').write_text(json.dumps(out,indent=2));print(json.dumps(out))

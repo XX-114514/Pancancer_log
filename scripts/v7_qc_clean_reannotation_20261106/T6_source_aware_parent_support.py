@@ -1,0 +1,16 @@
+import os
+from pathlib import Path
+PROJECT_ROOT=Path(os.environ["PROJECT_ROOT"])
+import json,hashlib
+from datetime import datetime,timezone
+import numpy as np,pandas as pd,anndata as ad
+r=PROJECT_ROOT;run=r/'runs/20261106_v7_QC_clean_reannotation_v1';c=run/'stage_c_clean_views';q=pd.read_pickle(c/'T6_cleaning_decisions_PRIVATE.pkl.gz');a=ad.read_h5ad(r/'annotation_rebuild/20261105_v7_literature_guided_reannotation_v1/stage_j_T6_fullgene/T6_v7_fullgene_raw.h5ad');assert a.obs_names.equals(q.index)
+genes=['CD3D','CD3E','CD3G','FOXP3','IL2RA','IKZF2','IKZF4'];ii=a.var_names.get_indexer(genes);assert (ii>=0).all();x=a.X[:,ii].toarray()
+two=(x[:,:3]>=2).sum(axis=1)>=2;old=q.T_parent_cross_component_raw2.to_numpy();parent=old|two;q['two_CD3_genes_raw2_positive']=two;q['source_aware_T_positive_evidence']=parent;q['additional_CD3_supported_T_evidence']=two&~old;q['source_aware_Treg_core_raw1_positive']=parent&(x[:,3]>=1)&(x[:,4:]>=1).any(axis=1)
+q['source_aware_parent_evidence_status']=np.select([old,two&~q.T_parent_panel_evaluable.to_numpy(),two],['CD3_and_TCR_components_positive','two_CD3_genes_positive_TCR_component_unavailable','two_CD3_genes_positive_original_TCR_rule_not_positive'],default='not_positive_by_these_rules_not_identity_negative')
+q.to_pickle(c/'T6_source_aware_parent_review_PRIVATE.pkl.gz');back=pd.read_pickle(c/'T6_source_aware_parent_review_PRIVATE.pkl.gz');pd.testing.assert_frame_equal(q,back)
+rows=[]
+for name,take in [('all',np.ones(len(q),bool)),('primary_keep',q.primary_QC_keep.to_numpy()),('K09_keep',(q.review_cluster_before_cleanup.eq(9)&q.primary_QC_keep).to_numpy()),('TCR_unavailable_keep',(~q.T_parent_panel_evaluable&q.primary_QC_keep).to_numpy())]:
+ t=q.iloc[np.flatnonzero(take)];rows.append({'selection':name,'n_cells':len(t),'n_old_cross_component_positive':int(t.T_parent_cross_component_raw2.sum()),'n_two_CD3_positive':int(t.two_CD3_genes_raw2_positive.sum()),'n_source_aware_positive':int(t.source_aware_T_positive_evidence.sum()),'n_additional_CD3_positive':int(t.additional_CD3_supported_T_evidence.sum()),'n_Treg_core_positive_with_source_aware_parent':int(t.source_aware_Treg_core_raw1_positive.sum()),'n_competing_anchor_and_T_positive':int((t.distinct_competing_anchor_supported&t.source_aware_T_positive_evidence).sum())})
+pd.DataFrame(rows).to_csv(c/'T6_source_aware_parent_summary.tsv',sep='\t',index=False)
+out={'UTC':datetime.now(timezone.utc).isoformat(),'status':'source_aware_positive_T_evidence_review_not_final_labels','rule':'Original CD3+TCR positive evidence OR >=2 CD3D/E/G genes each raw>=2. Numerical cutoff is a project diagnostic, not a copied paper classifier.','literature_basis':'Lodi Tcell_analysis.R uses CD3D/CD3E with CD4/CD8A and competing-major markers; no universal TRAC mandatory gate. Original downloaded code lines109-125 independently read this turn.','limits':['TCR absence at source is not negative T identity.','Positive CD3 evidence does not settle competing-RNA cells or Treg fine subtype.','This alternative evidence does not retroactively alter fixed phase1 QC exclusions or refit inputs.'],'final_V7_label_changes':0,'summary':rows};(c/'T6_source_aware_parent_complete.json').open('x').write(json.dumps(out,indent=2));print(json.dumps(out))

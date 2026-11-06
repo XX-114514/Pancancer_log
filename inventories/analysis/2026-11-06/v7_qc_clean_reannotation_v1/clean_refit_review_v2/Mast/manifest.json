@@ -1,0 +1,12 @@
+{
+  "status": "completed_clean_marker_aggregation_not_final_identity",
+  "UTC": "2026-11-06T01:11:08.872559+00:00",
+  "lineage": "Mast",
+  "n_cells": 38923,
+  "n_clusters": 18,
+  "n_genes": 110,
+  "n_marker_records": 1980,
+  "measured_denominators_verified": true,
+  "reference_labels_used_in_fit": false,
+  "final_identity_pending": true
+}

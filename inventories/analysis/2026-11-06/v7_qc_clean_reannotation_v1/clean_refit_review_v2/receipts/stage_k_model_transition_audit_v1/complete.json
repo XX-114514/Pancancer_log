@@ -1,0 +1,131 @@
+{
+  "status": "PASS_execution_and_transition_receipts",
+  "UTC": "2026-11-06T01:11:48.122032+00:00",
+  "models": [
+    {
+      "model": "T6",
+      "terminal": {
+        "UTC_start": "2026-11-06T00:42:18.444747+00:00",
+        "UTC_end": "2026-11-06T01:09:01.394226+00:00",
+        "exit_code": 0,
+        "lineage": "T6",
+        "complete_exists": true
+      },
+      "complete": {
+        "status": "completed_clean_lineage_refit",
+        "UTC_start": "2026-11-06 00:42:23 UTC",
+        "UTC_end": "2026-11-06 01:08:57 UTC",
+        "lineage": "T6",
+        "n_cells": 155786,
+        "n_RNA_features": 95038,
+        "n_HVG": 2000,
+        "n_model_feature_candidates": 17252,
+        "n_common_measured_DE_features": 11091,
+        "n_PCA": 50,
+        "graph_PCs": 30,
+        "resolutions": [
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ],
+        "marker_resolution": 0.4,
+        "normalization": "Full-library RNA LogNormalize 10000",
+        "source_covariate": "gse_id; source sensitivity, not verified physical technology",
+        "reference_labels_used_in_fit": false,
+        "regressed_variables": [],
+        "seed": 20261106,
+        "final_identity_assignment": "pending_marker_review"
+      },
+      "Quick_TRANSfer_warning_count": 10,
+      "no_features_min_diff_warning_count": 1,
+      "tiny_group_warning_count": 1,
+      "limits": "Computational completion is distinct from numerical sensitivity review and biological subtype acceptance."
+    },
+    {
+      "model": "Mast_v1",
+      "terminal": {
+        "UTC_start": "2026-11-06T00:42:18.455443+00:00",
+        "UTC_end": "2026-11-06T00:47:37.202546+00:00",
+        "exit_code": 0,
+        "lineage": "Mast",
+        "complete_exists": true
+      },
+      "complete": {
+        "status": "completed_clean_lineage_refit",
+        "UTC_start": "2026-11-06 00:42:22 UTC",
+        "UTC_end": "2026-11-06 00:47:36 UTC",
+        "lineage": "Mast",
+        "n_cells": 38959,
+        "n_RNA_features": 95038,
+        "n_HVG": 2000,
+        "n_model_feature_candidates": 17608,
+        "n_common_measured_DE_features": 12929,
+        "n_PCA": 50,
+        "graph_PCs": 30,
+        "resolutions": [
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ],
+        "marker_resolution": 0.4,
+        "normalization": "Full-library RNA LogNormalize 10000",
+        "source_covariate": "gse_id; source sensitivity, not verified physical technology",
+        "reference_labels_used_in_fit": false,
+        "regressed_variables": [],
+        "seed": 20261106,
+        "final_identity_assignment": "pending_marker_review"
+      },
+      "Quick_TRANSfer_warning_count": 0,
+      "no_features_min_diff_warning_count": 1,
+      "tiny_group_warning_count": 0,
+      "limits": "Computational completion is distinct from numerical sensitivity review and biological subtype acceptance."
+    },
+    {
+      "model": "Mast_v2",
+      "terminal": {
+        "UTC_start": "2026-11-06T01:03:15.175561+00:00",
+        "UTC_end": "2026-11-06T01:09:07.061216+00:00",
+        "exit_code": 0,
+        "lineage": "Mast_v2",
+        "complete_exists": true
+      },
+      "complete": {
+        "status": "completed_clean_lineage_refit",
+        "UTC_start": "2026-11-06 01:03:19 UTC",
+        "UTC_end": "2026-11-06 01:09:06 UTC",
+        "lineage": "Mast",
+        "n_cells": 38923,
+        "n_RNA_features": 95038,
+        "n_HVG": 2000,
+        "n_model_feature_candidates": 17608,
+        "n_common_measured_DE_features": 12929,
+        "n_PCA": 50,
+        "graph_PCs": 30,
+        "resolutions": [
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ],
+        "marker_resolution": 0.4,
+        "normalization": "Full-library RNA LogNormalize 10000",
+        "source_covariate": "gse_id; source sensitivity, not verified physical technology",
+        "reference_labels_used_in_fit": false,
+        "regressed_variables": [],
+        "seed": 20261106,
+        "final_identity_assignment": "pending_marker_review"
+      },
+      "Quick_TRANSfer_warning_count": 0,
+      "no_features_min_diff_warning_count": 2,
+      "tiny_group_warning_count": 0,
+      "limits": "Computational completion is distinct from numerical sensitivity review and biological subtype acceptance."
+    }
+  ],
+  "n_K09_retained": 782,
+  "n_K09_in_new9": 533,
+  "n_Mast_v2": 38923,
+  "all_transitions_exact_on_cell_index": true,
+  "fine_subtypes_accepted": false
+}

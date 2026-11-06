@@ -1,0 +1,37 @@
+{
+  "lineage": "Mast-clean-v2",
+  "row_prefix": "M",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 18,
+  "n_cells": 38923,
+  "n_marker_records": 1980,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "6daf895eb3af3a8480369e6170b8acf5171c215a313198f76030ac3a21edbe62",
+  "panel_spec_sha256": "b95c7d11346555226b48906e9b6c285203483a104b9b1d4473bf418d14a19b9a",
+  "outputs": [
+    {
+      "name": "Mast_clean_v2_reference_states_v7.png",
+      "sha256": "628dacf6f559790e9f9668874ea1b6f2dac6a657af87ba7ad93ab2fb642160e9"
+    },
+    {
+      "name": "Mast_clean_v2_competing_lineage_QC_v7.png",
+      "sha256": "3f0d9e20d686754a02550b74cfa403cfc2f05cce0d9a9d34602af2e673f8e1ad"
+    },
+    {
+      "name": "Mast_clean_v2_extended_RNA_context_v7.png",
+      "sha256": "182bf8a7331de6cea315b531cf83d9af12ff7b37e01f87c248aaae4d4d1daf46"
+    },
+    {
+      "name": "Mast_clean_v2_identity_subtype_v7.png",
+      "sha256": "90d8628aec63857bf10d78667eeee83207e8e380876adf958b8f9477373682a8"
+    },
+    {
+      "name": "Mast_clean_v2_state_programs_v7.png",
+      "sha256": "0f50155ce9e8c77031723603ee478422094e0fa3d256f5cf4d411a0c6f74332d"
+    }
+  ],
+  "row_label_table_SHA256": "f957025aa18f9ff9862f1d28e39e76a20c890a14541336d8a5bb77e11527240c",
+  "publication_scope": "Reviewed PNGs only; SVG exports remain in local workspace and were XML/readback checked."
+}

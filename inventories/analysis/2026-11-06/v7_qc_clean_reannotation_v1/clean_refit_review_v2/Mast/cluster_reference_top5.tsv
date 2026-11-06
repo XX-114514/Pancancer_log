@@ -1,0 +1,168 @@
+cluster	reference_field	label	n_cells	n_cluster
+0	ev_celltypist_label	Mast cells	3822	9945
+0	ev_celltypist_label	Type 1 helper T cells	969	9945
+0	ev_celltypist_label	CD16+ NK cells	849	9945
+0	ev_celltypist_label	Classical monocytes	839	9945
+0	ev_celltypist_label	ILC3	384	9945
+0	scatomic_full_label	Mast cell	9753	9945
+0	scatomic_full_label	Blood Cell	141	9945
+0	scatomic_full_label	Any Cell	26	9945
+0	scatomic_full_label	cDC2	8	9945
+0	scatomic_full_label	Effector/Memory CD4+ T cells	5	9945
+1	ev_celltypist_label	Mast cells	3545	9219
+1	ev_celltypist_label	Classical monocytes	890	9219
+1	ev_celltypist_label	CD16+ NK cells	603	9219
+1	ev_celltypist_label	Alveolar macrophages	508	9219
+1	ev_celltypist_label	Type 1 helper T cells	441	9219
+1	scatomic_full_label	Mast cell	8889	9219
+1	scatomic_full_label	Blood Cell	177	9219
+1	scatomic_full_label	Any Cell	60	9219
+1	scatomic_full_label	Normal Tissue Cell	22	9219
+1	scatomic_full_label	Effector/Memory CD4+ T cells	17	9219
+2	ev_celltypist_label	Mast cells	1736	6266
+2	ev_celltypist_label	Classical monocytes	733	6266
+2	ev_celltypist_label	CD16+ NK cells	591	6266
+2	ev_celltypist_label	Type 1 helper T cells	564	6266
+2	ev_celltypist_label	NK cells	378	6266
+2	scatomic_full_label	Mast cell	6040	6266
+2	scatomic_full_label	Blood Cell	136	6266
+2	scatomic_full_label	Any Cell	59	6266
+2	scatomic_full_label	cDC2	10	6266
+2	scatomic_full_label	B Cell	3	6266
+3	ev_celltypist_label	Mast cells	1080	3330
+3	ev_celltypist_label	Classical monocytes	382	3330
+3	ev_celltypist_label	Type 1 helper T cells	242	3330
+3	ev_celltypist_label	CD16+ NK cells	228	3330
+3	ev_celltypist_label	Alveolar macrophages	171	3330
+3	scatomic_full_label	Mast cell	3217	3330
+3	scatomic_full_label	Blood Cell	75	3330
+3	scatomic_full_label	Any Cell	15	3330
+3	scatomic_full_label	cDC2	7	3330
+3	scatomic_full_label	Normal Tissue Cell	3	3330
+4	ev_celltypist_label	Mast cells	1026	2562
+4	ev_celltypist_label	Classical monocytes	314	2562
+4	ev_celltypist_label	CD16+ NK cells	184	2562
+4	ev_celltypist_label	ILC3	101	2562
+4	ev_celltypist_label	Alveolar macrophages	100	2562
+4	scatomic_full_label	Mast cell	2485	2562
+4	scatomic_full_label	Blood Cell	46	2562
+4	scatomic_full_label	Any Cell	19	2562
+4	scatomic_full_label	Non Blood Cell	3	2562
+4	scatomic_full_label	Non Stromal Cell	3	2562
+5	ev_celltypist_label	Mast cells	471	1588
+5	ev_celltypist_label	Classical monocytes	155	1588
+5	ev_celltypist_label	Type 1 helper T cells	116	1588
+5	ev_celltypist_label	CD16+ NK cells	103	1588
+5	ev_celltypist_label	Alveolar macrophages	66	1588
+5	scatomic_full_label	Mast cell	1439	1588
+5	scatomic_full_label	Blood Cell	77	1588
+5	scatomic_full_label	Plasmablast	25	1588
+5	scatomic_full_label	Any Cell	12	1588
+5	scatomic_full_label	Normal Tissue Cell	8	1588
+6	ev_celltypist_label	Mast cells	283	1166
+6	ev_celltypist_label	Classical monocytes	140	1166
+6	ev_celltypist_label	Type 1 helper T cells	128	1166
+6	ev_celltypist_label	ILC3	98	1166
+6	ev_celltypist_label	CD16+ NK cells	83	1166
+6	scatomic_full_label	Mast cell	1109	1166
+6	scatomic_full_label	Blood Cell	41	1166
+6	scatomic_full_label	Any Cell	5	1166
+6	scatomic_full_label	Macrophage	4	1166
+6	scatomic_full_label	Effector/Memory CD4+ T cells	2	1166
+7	ev_celltypist_label	Mast cells	177	1012
+7	ev_celltypist_label	CD16+ NK cells	101	1012
+7	ev_celltypist_label	Classical monocytes	76	1012
+7	ev_celltypist_label	NK cells	64	1012
+7	ev_celltypist_label	Alveolar macrophages	64	1012
+7	scatomic_full_label	Mast cell	675	1012
+7	scatomic_full_label	Any Cell	63	1012
+7	scatomic_full_label	Normal Tissue Cell	47	1012
+7	scatomic_full_label	CAFmyo	36	1012
+7	scatomic_full_label	Endothelial Cells	25	1012
+8	ev_celltypist_label	Tem/Trm cytotoxic T cells	131	948
+8	ev_celltypist_label	CD16+ NK cells	128	948
+8	ev_celltypist_label	Type 1 helper T cells	119	948
+8	ev_celltypist_label	Tem/Effector helper T cells	79	948
+8	ev_celltypist_label	Mast cells	78	948
+8	scatomic_full_label	Mast cell	744	948
+8	scatomic_full_label	Blood Cell	164	948
+8	scatomic_full_label	Any Cell	10	948
+8	scatomic_full_label	CD4+ T cell	8	948
+8	scatomic_full_label	Effector/Memory CD8+ T cells	7	948
+9	ev_celltypist_label	Mast cells	265	762
+9	ev_celltypist_label	Classical monocytes	106	762
+9	ev_celltypist_label	CD16+ NK cells	49	762
+9	ev_celltypist_label	Alveolar macrophages	44	762
+9	ev_celltypist_label	Type 1 helper T cells	42	762
+9	scatomic_full_label	Mast cell	735	762
+9	scatomic_full_label	Blood Cell	16	762
+9	scatomic_full_label	Normal Tissue Cell	5	762
+9	scatomic_full_label	Any Cell	3	762
+9	scatomic_full_label	Pro-angiogenesis Macrophage	1	762
+10	ev_celltypist_label	Classical monocytes	122	652
+10	ev_celltypist_label	Mast cells	92	652
+10	ev_celltypist_label	Monocytes	54	652
+10	ev_celltypist_label	Macrophages	46	652
+10	ev_celltypist_label	Alveolar macrophages	38	652
+10	scatomic_full_label	Mast cell	446	652
+10	scatomic_full_label	Blood Cell	111	652
+10	scatomic_full_label	cDC2	23	652
+10	scatomic_full_label	Pro-angiogenesis Macrophage	20	652
+10	scatomic_full_label	Phagocytosis Macrophage	12	652
+11	ev_celltypist_label	NK cells	187	614
+11	ev_celltypist_label	Mast cells	88	614
+11	ev_celltypist_label	Double-positive thymocytes	64	614
+11	ev_celltypist_label	Classical monocytes	42	614
+11	ev_celltypist_label	Monocytes	33	614
+11	scatomic_full_label	Mast cell	533	614
+11	scatomic_full_label	Blood Cell	30	614
+11	scatomic_full_label	Any Cell	24	614
+11	scatomic_full_label	Macrophage or Dendritic Cell	6	614
+11	scatomic_full_label	Normal Tissue Cell	5	614
+12	ev_celltypist_label	Mast cells	54	309
+12	ev_celltypist_label	Classical monocytes	44	309
+12	ev_celltypist_label	CD16+ NK cells	28	309
+12	ev_celltypist_label	Monocytes	20	309
+12	ev_celltypist_label	NK cells	15	309
+12	scatomic_full_label	Mast cell	271	309
+12	scatomic_full_label	Any Cell	20	309
+12	scatomic_full_label	Blood Cell	15	309
+12	scatomic_full_label	Normal Tissue Cell	1	309
+12	scatomic_full_label	Effector/Memory CD4+ T cells	1	309
+13	ev_celltypist_label	Mast cells	126	234
+13	ev_celltypist_label	CD16+ NK cells	20	234
+13	ev_celltypist_label	Classical monocytes	18	234
+13	ev_celltypist_label	Type 1 helper T cells	13	234
+13	ev_celltypist_label	ILC3	12	234
+13	scatomic_full_label	Mast cell	223	234
+13	scatomic_full_label	Blood Cell	6	234
+13	scatomic_full_label	Any Cell	2	234
+13	scatomic_full_label	Effector/Memory CD4+ T cells	1	234
+13	scatomic_full_label	Non Blood Cell	1	234
+14	ev_celltypist_label	Mast cells	46	111
+14	ev_celltypist_label	Classical monocytes	16	111
+14	ev_celltypist_label	Type 1 helper T cells	12	111
+14	ev_celltypist_label	CD16+ NK cells	5	111
+14	ev_celltypist_label	Tcm/Naive helper T cells	4	111
+14	scatomic_full_label	Mast cell	111	111
+15	ev_celltypist_label	Mast cells	28	94
+15	ev_celltypist_label	Classical monocytes	18	94
+15	ev_celltypist_label	Monocytes	9	94
+15	ev_celltypist_label	CD16+ NK cells	6	94
+15	ev_celltypist_label	NK cells	5	94
+15	scatomic_full_label	Mast cell	94	94
+16	ev_celltypist_label	Mast cells	30	69
+16	ev_celltypist_label	Type 1 helper T cells	8	69
+16	ev_celltypist_label	CD16+ NK cells	7	69
+16	ev_celltypist_label	Classical monocytes	7	69
+16	ev_celltypist_label	ILC3	3	69
+16	scatomic_full_label	Mast cell	69	69
+17	ev_celltypist_label	Type 1 helper T cells	8	42
+17	ev_celltypist_label	Mast cells	7	42
+17	ev_celltypist_label	Monocytes	5	42
+17	ev_celltypist_label	Classical monocytes	4	42
+17	ev_celltypist_label	Alveolar macrophages	3	42
+17	scatomic_full_label	Mast cell	38	42
+17	scatomic_full_label	Any Cell	2	42
+17	scatomic_full_label	Phagocytosis Macrophage	1	42
+17	scatomic_full_label	Pro-angiogenesis Macrophage	1	42

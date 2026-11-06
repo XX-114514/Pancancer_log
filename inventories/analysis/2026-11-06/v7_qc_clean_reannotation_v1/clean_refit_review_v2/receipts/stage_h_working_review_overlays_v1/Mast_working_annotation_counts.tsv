@@ -1,0 +1,20 @@
+primary_QC_action	clean_lineage_model_eligible	working_parent_identity	working_parent_review	working_fine_subtype	working_cluster_context	n_cells
+exclude_primary_QC	False	outside_current_clean_model	not_in_clean_lineage_fit	not_assigned	not_in_clean_lineage_fit	1186
+holdout_pending_review	False	outside_current_clean_model	not_in_clean_lineage_fit	not_assigned	not_in_clean_lineage_fit	173
+retain_review_pool	False	outside_current_clean_model	not_in_clean_lineage_fit	not_assigned	not_in_clean_lineage_fit	4754
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast + acinar RNA [review]	234
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast + endocrine RNA [review]	94
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast + inflammatory RNA [review]	652
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast + lymphoid RNA [review]	948
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast + neural RNA [review]	42
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast coarse	11819
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast coarse | PKM context	762
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | HLA-II-enriched	6266
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | IFN-enriched	1166
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | ITGAV / NFKB1 context	309
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | NF-kB-associated	3330
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | TXNIP context	2562
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | cycling-enriched	614
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | heat-shock / IEG-enriched	9945
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | heat-shock / source [review]	69
+retain_review_pool	True	Mast	Mast_positive_RNA_support	not_assigned	Mast | source-only partition [review]	111

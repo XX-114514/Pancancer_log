@@ -1,0 +1,17 @@
+{
+  "status": "Mast_NK_cleanup_v2_applied_input_verified",
+  "UTC": "2026-11-06T01:02:17.702563+00:00",
+  "n_additional_excluded": 36,
+  "n_global_primary_excluded": 2003,
+  "n_global_QC_holdout": 236,
+  "n_global_primary_keep": 4674548,
+  "n_Mast_model": 38923,
+  "n_Mast_QC_keep": 43677,
+  "n_Mast_primary_excluded": 1186,
+  "n_Mast_QC_holdout": 173,
+  "n_sources": 46,
+  "calibration_evaluable_required": true,
+  "all_counts_and_index_exact": true,
+  "original_objects_modified": false,
+  "semantics": "Additional operational primary-QC exclusions, not proven ground-truth doublets. No whole-cluster deletion."
+}
