@@ -1,0 +1,141 @@
+cluster	reference_field	label	n_cells	n_cluster
+0	ev_celltypist_label	Tem/Effector helper T cells	3059	12867
+0	ev_celltypist_label	Type 1 helper T cells	1530	12867
+0	ev_celltypist_label	Tem/Trm cytotoxic T cells	1380	12867
+0	ev_celltypist_label	Trm cytotoxic T cells	1193	12867
+0	ev_celltypist_label	Type 17 helper T cells	1020	12867
+0	scatomic_full_label	Effector/Memory CD4+ T cells	3140	12867
+0	scatomic_full_label	CD4+ T cell	2834	12867
+0	scatomic_full_label	Effector/Memory CD8+ T cells	2596	12867
+0	scatomic_full_label	Naive CD4+ T cells	1933	12867
+0	scatomic_full_label	CD4 or CD8 T cell	780	12867
+1	ev_celltypist_label	Tem/Trm cytotoxic T cells	1252	9283
+1	ev_celltypist_label	Tem/Effector helper T cells	1153	9283
+1	ev_celltypist_label	Tcm/Naive helper T cells	913	9283
+1	ev_celltypist_label	Type 1 helper T cells	849	9283
+1	ev_celltypist_label	Trm cytotoxic T cells	830	9283
+1	scatomic_full_label	Naive CD4+ T cells	2186	9283
+1	scatomic_full_label	CD4+ T cell	1797	9283
+1	scatomic_full_label	Effector/Memory CD4+ T cells	1413	9283
+1	scatomic_full_label	Effector/Memory CD8+ T cells	1247	9283
+1	scatomic_full_label	Blood Cell	1074	9283
+2	ev_celltypist_label	Tem/Effector helper T cells	1925	8353
+2	ev_celltypist_label	Type 1 helper T cells	762	8353
+2	ev_celltypist_label	Tcm/Naive helper T cells	696	8353
+2	ev_celltypist_label	Trm cytotoxic T cells	631	8353
+2	ev_celltypist_label	Tem/Trm cytotoxic T cells	622	8353
+2	scatomic_full_label	CD4+ T cell	2053	8353
+2	scatomic_full_label	Naive CD4+ T cells	1970	8353
+2	scatomic_full_label	Effector/Memory CD4+ T cells	1635	8353
+2	scatomic_full_label	Effector/Memory CD8+ T cells	948	8353
+2	scatomic_full_label	CD4 or CD8 T cell	496	8353
+3	ev_celltypist_label	ILC3	2269	4758
+3	ev_celltypist_label	ILC	1531	4758
+3	ev_celltypist_label	Tem/Effector helper T cells	207	4758
+3	ev_celltypist_label	Type 17 helper T cells	123	4758
+3	ev_celltypist_label	NK cells	100	4758
+3	scatomic_full_label	Blood Cell	1860	4758
+3	scatomic_full_label	Natural killer cell	713	4758
+3	scatomic_full_label	Effector/Memory CD4+ T cells	626	4758
+3	scatomic_full_label	CD4+ T cell	545	4758
+3	scatomic_full_label	T or NK Cell	529	4758
+4	ev_celltypist_label	Tcm/Naive helper T cells	803	3352
+4	ev_celltypist_label	Tem/Effector helper T cells	623	3352
+4	ev_celltypist_label	Tem/Trm cytotoxic T cells	339	3352
+4	ev_celltypist_label	Type 17 helper T cells	272	3352
+4	ev_celltypist_label	Regulatory T cells	194	3352
+4	scatomic_full_label	Naive CD4+ T cells	1245	3352
+4	scatomic_full_label	Effector/Memory CD4+ T cells	599	3352
+4	scatomic_full_label	CD4+ T cell	562	3352
+4	scatomic_full_label	Effector/Memory CD8+ T cells	291	3352
+4	scatomic_full_label	CD4 or CD8 T cell	283	3352
+5	ev_celltypist_label	Macrophages	546	2509
+5	ev_celltypist_label	Epithelial cells	395	2509
+5	ev_celltypist_label	NK cells	252	2509
+5	ev_celltypist_label	Tcm/Naive helper T cells	110	2509
+5	ev_celltypist_label	Double-positive thymocytes	104	2509
+5	scatomic_full_label	Skin Cancer Cell	863	2509
+5	scatomic_full_label	Esophageal Cancer Cell	339	2509
+5	scatomic_full_label	CAFmyo	189	2509
+5	scatomic_full_label	Endothelial Cells	153	2509
+5	scatomic_full_label	Brain Cancer Cell	136	2509
+6	ev_celltypist_label	Epithelial cells	234	1881
+6	ev_celltypist_label	Tcm/Naive helper T cells	176	1881
+6	ev_celltypist_label	Memory B cells	172	1881
+6	ev_celltypist_label	Double-positive thymocytes	120	1881
+6	ev_celltypist_label	NK cells	95	1881
+6	scatomic_full_label	Skin Cancer Cell	439	1881
+6	scatomic_full_label	Normal Tissue Cell	210	1881
+6	scatomic_full_label	Lung Cancer Cell	92	1881
+6	scatomic_full_label	Brain Cancer Cell	84	1881
+6	scatomic_full_label	Blood Cell	79	1881
+7	ev_celltypist_label	Tem/Effector helper T cells	130	565
+7	ev_celltypist_label	Tem/Trm cytotoxic T cells	65	565
+7	ev_celltypist_label	Regulatory T cells	50	565
+7	ev_celltypist_label	Type 1 helper T cells	46	565
+7	ev_celltypist_label	ILC3	45	565
+7	scatomic_full_label	CD4+ T cell	160	565
+7	scatomic_full_label	Effector/Memory CD4+ T cells	102	565
+7	scatomic_full_label	Effector/Memory CD8+ T cells	69	565
+7	scatomic_full_label	Naive CD4+ T cells	47	565
+7	scatomic_full_label	CD4 or CD8 T cell	37	565
+8	ev_celltypist_label	Type 17 helper T cells	85	453
+8	ev_celltypist_label	Tem/Effector helper T cells	70	453
+8	ev_celltypist_label	Tem/Trm cytotoxic T cells	61	453
+8	ev_celltypist_label	Type 1 helper T cells	58	453
+8	ev_celltypist_label	CD16- NK cells	35	453
+8	scatomic_full_label	Effector/Memory CD4+ T cells	190	453
+8	scatomic_full_label	CD4+ T cell	50	453
+8	scatomic_full_label	Effector/Memory CD8+ T cells	36	453
+8	scatomic_full_label	Blood Cell	32	453
+8	scatomic_full_label	CD4 or CD8 T cell	27	453
+9	ev_celltypist_label	NK cells	58	414
+9	ev_celltypist_label	Double-positive thymocytes	37	414
+9	ev_celltypist_label	Tem/Trm cytotoxic T cells	35	414
+9	ev_celltypist_label	Type 1 helper T cells	34	414
+9	ev_celltypist_label	ILC3	29	414
+9	scatomic_full_label	Blood Cell	61	414
+9	scatomic_full_label	Effector/Memory CD4+ T cells	43	414
+9	scatomic_full_label	CD4+ T cell	42	414
+9	scatomic_full_label	Effector/Memory CD8+ T cells	31	414
+9	scatomic_full_label	Brain Cancer Cell	27	414
+10	ev_celltypist_label	Type 1 helper T cells	68	341
+10	ev_celltypist_label	Epithelial cells	45	341
+10	ev_celltypist_label	Tem/Effector helper T cells	20	341
+10	ev_celltypist_label	Macrophages	17	341
+10	ev_celltypist_label	Regulatory T cells	17	341
+10	scatomic_full_label	Skin Cancer Cell	178	341
+10	scatomic_full_label	Non Blood Cell	75	341
+10	scatomic_full_label	Effector/Memory CD4+ T cells	31	341
+10	scatomic_full_label	Esophageal Cancer Cell	16	341
+10	scatomic_full_label	Any Cell	12	341
+11	ev_celltypist_label	Macrophages	72	292
+11	ev_celltypist_label	Intermediate macrophages	51	292
+11	ev_celltypist_label	Alveolar macrophages	19	292
+11	ev_celltypist_label	Tem/Effector helper T cells	16	292
+11	ev_celltypist_label	Type 17 helper T cells	15	292
+11	scatomic_full_label	Pro-angiogenesis Macrophage	80	292
+11	scatomic_full_label	Phagocytosis Macrophage	27	292
+11	scatomic_full_label	Macrophage	21	292
+11	scatomic_full_label	cDC2	21	292
+11	scatomic_full_label	Effector/Memory CD4+ T cells	18	292
+12	ev_celltypist_label	Epithelial cells	50	155
+12	ev_celltypist_label	NK cells	19	155
+12	ev_celltypist_label	CD16+ NK cells	16	155
+12	ev_celltypist_label	Macrophages	13	155
+12	ev_celltypist_label	DC2	9	155
+12	scatomic_full_label	Skin Cancer Cell	132	155
+12	scatomic_full_label	Normal Tissue Cell	13	155
+12	scatomic_full_label	Cancer Associated Fibroblasts	4	155
+12	scatomic_full_label	CAFinfla	3	155
+12	scatomic_full_label	Brain Cancer Cell	1	155
+13	ev_celltypist_label	Tcm/Naive helper T cells	19	67
+13	ev_celltypist_label	Tem/Trm cytotoxic T cells	8	67
+13	ev_celltypist_label	Regulatory T cells	7	67
+13	ev_celltypist_label	Tem/Effector helper T cells	7	67
+13	ev_celltypist_label	Treg(diff)	4	67
+13	scatomic_full_label	Naive CD4+ T cells	23	67
+13	scatomic_full_label	CD4+ T cell	11	67
+13	scatomic_full_label	Effector/Memory CD4+ T cells	10	67
+13	scatomic_full_label	CD8+ T cell	5	67
+13	scatomic_full_label	Blood Cell	4	67

@@ -1,0 +1,205 @@
+{
+  "panels": [
+    {
+      "id": "hspc",
+      "target": "HSPC-like\nprimitive components",
+      "level": "parent",
+      "genes": [
+        "SPINK2",
+        "HLF",
+        "CD34",
+        "PROM1",
+        "GATA2",
+        "MEIS1",
+        "FLT3",
+        "KIT",
+        "PTPRC"
+      ]
+    },
+    {
+      "id": "myel_priming",
+      "target": "Myeloid priming\nnot GMP proof",
+      "level": "candidate_subtype",
+      "genes": [
+        "MPO",
+        "ELANE",
+        "CTSG",
+        "AZU1",
+        "PRTN3"
+      ]
+    },
+    {
+      "id": "lymph_priming",
+      "target": "Lymphoid priming\nnot CLP proof",
+      "level": "candidate_subtype",
+      "genes": [
+        "DNTT",
+        "IL7R",
+        "TCF7",
+        "CD7"
+      ]
+    },
+    {
+      "id": "ery_priming",
+      "target": "Ery / MK priming\nnot MEP proof",
+      "level": "candidate_subtype",
+      "genes": [
+        "GATA1",
+        "KLF1",
+        "GYPA",
+        "PPBP"
+      ]
+    },
+    {
+      "id": "endothelial_competitor",
+      "target": "Endothelial\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "CLDN5",
+        "VWF",
+        "PECAM1",
+        "KDR",
+        "EMCN"
+      ]
+    },
+    {
+      "id": "mural_competitor",
+      "target": "Mural / vascular wall\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "RGS5",
+        "PDGFRB",
+        "ACTA2",
+        "MYH11",
+        "TAGLN"
+      ]
+    },
+    {
+      "id": "T_competitor",
+      "target": "T apparatus\nidentity evidence",
+      "level": "competing_parent",
+      "genes": [
+        "CD3D",
+        "CD3E",
+        "CD3G",
+        "TRAC",
+        "TRBC2",
+        "TRDC"
+      ]
+    },
+    {
+      "id": "myeloid_competitor",
+      "target": "Myeloid\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "LYZ",
+        "LST1",
+        "TYROBP",
+        "SPI1",
+        "CSF1R",
+        "CD14"
+      ]
+    },
+    {
+      "id": "epithelial_competitor",
+      "target": "Epithelial\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ]
+    },
+    {
+      "id": "stromal_competitor",
+      "target": "Fibroblast\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "COL1A1",
+        "COL1A2",
+        "DCN",
+        "LUM"
+      ]
+    },
+    {
+      "id": "neural_context",
+      "target": "Neural / endocrine\nshared programme",
+      "level": "competing_parent",
+      "genes": [
+        "PCSK1N",
+        "CPE",
+        "CHGB",
+        "CHGA",
+        "SNAP25",
+        "NEFL"
+      ]
+    },
+    {
+      "id": "lymphoid_context",
+      "target": "B / ASC\ncomponent context",
+      "level": "competing_parent",
+      "genes": [
+        "MS4A1",
+        "CD79A",
+        "BANK1",
+        "MZB1",
+        "DERL3",
+        "JCHAIN"
+      ]
+    },
+    {
+      "id": "cycling",
+      "target": "Cell cycle\nstate",
+      "level": "state",
+      "genes": [
+        "MKI67",
+        "TOP2A",
+        "UBE2C",
+        "TYMS"
+      ]
+    },
+    {
+      "id": "S_phase",
+      "target": "S-phase RNA\ncontext",
+      "level": "state",
+      "genes": [
+        "MCM4",
+        "PCNA"
+      ]
+    },
+    {
+      "id": "IFN",
+      "target": "IFN response\nstate",
+      "level": "state",
+      "genes": [
+        "ISG15",
+        "IFIT1",
+        "IFIT3",
+        "MX1",
+        "OAS1"
+      ]
+    },
+    {
+      "id": "Stress",
+      "target": "Stress response\nstate",
+      "level": "state",
+      "genes": [
+        "HSPA1A",
+        "HSPA1B",
+        "DNAJB1",
+        "HSPH1"
+      ]
+    },
+    {
+      "id": "MHCII",
+      "target": "MHC-II RNA\nstate",
+      "level": "state",
+      "genes": [
+        "HLA-DRA",
+        "HLA-DRB1",
+        "CD74"
+      ]
+    }
+  ]
+}

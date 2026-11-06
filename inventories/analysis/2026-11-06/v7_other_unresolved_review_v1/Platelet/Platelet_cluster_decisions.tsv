@@ -1,0 +1,12 @@
+cluster	working_parent	identity_review_status	display_annotation	naming_markers	reason	state_context	final_fine_identity_accepted
+0	Mural	broad_working	Mural | RGS5/ACTA2	RGS5;PDGFRB;ACTA2;MYH11;TAGLN	Coherent mural apparatus across markers; NRGN alone does not establish platelet identity.	none_assigned	False
+1	Mural	broad_working	Mural | RGS5/ACTA2	RGS5;PDGFRB;ACTA2;MYH11;TAGLN	Coherent mural apparatus across markers; NRGN alone does not establish platelet identity.	none_assigned	False
+2	Mural	broad_working	Mural | RGS5/ACTA2	RGS5;PDGFRB;ACTA2;MYH11;TAGLN	Coherent mural apparatus across markers; NRGN alone does not establish platelet identity.	none_assigned	False
+3	Mixed_neural_Platelet	mixed_review	Neural / platelet [review]	NCAM1;PCSK1N;PPBP;PF4;ITGA2B	Both neural context and platelet components; no whole-cluster platelet or megakaryocyte call.	none_assigned	False
+4	Platelet_Megakaryocytic	broad_working	Platelet / MK lineage	PF4;PPBP;ITGA2B;GP9;GP1BA;TUBB1	Concordant secreted and structural platelet programme; RNA alone does not separate platelet from nucleated megakaryocyte.	none_assigned	False
+5	Epithelial_Ig_context	parent_review	Epithelial / Ig [review]	EPCAM;KRT18;KRT8;IGKC	Low-depth epithelial programme with PPBP and Ig RNA; no complete platelet apparatus.	none_assigned	False
+6	Mixed_myeloid_Platelet	mixed_review	Myeloid / platelet [review]	CD14;LST1;TYROBP;PF4;GP9	Coherent myeloid programme with platelet components; possible aggregates/ambient RNA, not proven doublets.	none_assigned	False
+7	Neural_neuroendocrine_like	parent_review	Neural / endocrine [review]	PCSK1N;CHGB;CPE;SNAP25;NEFL	Neural/endocrine programme predominates; no platelet structural identity.	none_assigned	False
+8	Mixed_T_Platelet	mixed_review	T / platelet [review]	CD3D;CD3E;TRBC2;PF4;GP9	T apparatus and platelet structural RNA coexist; preserve review route even if original doublet percentile is below the exclusion gate.	none_assigned	False
+9	Mural	broad_working	Mural | RGS5/ACTA2	RGS5;PDGFRB;ACTA2;MYH11;TAGLN	Coherent mural apparatus across markers; NRGN alone does not establish platelet identity.	none_assigned	False
+10	Mural	broad_working	Mural | RGS5/ACTA2	RGS5;PDGFRB;ACTA2;MYH11;TAGLN	Coherent mural apparatus across markers; NRGN alone does not establish platelet identity.	none_assigned	False

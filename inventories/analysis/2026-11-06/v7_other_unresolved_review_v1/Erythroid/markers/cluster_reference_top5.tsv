@@ -1,0 +1,178 @@
+cluster	reference_field	label	n_cells	n_cluster
+0	ev_celltypist_label	Tem/Trm cytotoxic T cells	353	1674
+0	ev_celltypist_label	Regulatory T cells	271	1674
+0	ev_celltypist_label	Tem/Effector helper T cells	238	1674
+0	ev_celltypist_label	Trm cytotoxic T cells	102	1674
+0	ev_celltypist_label	Tcm/Naive helper T cells	82	1674
+0	scatomic_full_label	Effector/Memory CD8+ T cells	459	1674
+0	scatomic_full_label	Effector/Memory CD4+ T cells	246	1674
+0	scatomic_full_label	CD4+ T cell	222	1674
+0	scatomic_full_label	T regulatory cells	115	1674
+0	scatomic_full_label	HSPC	105	1674
+1	ev_celltypist_label	Tcm/Naive helper T cells	342	1417
+1	ev_celltypist_label	Memory B cells	176	1417
+1	ev_celltypist_label	Tem/Trm cytotoxic T cells	102	1417
+1	ev_celltypist_label	Epithelial cells	86	1417
+1	ev_celltypist_label	Mid erythroid	86	1417
+1	scatomic_full_label	Normal Tissue Cell	144	1417
+1	scatomic_full_label	Non Blood Cell	136	1417
+1	scatomic_full_label	Blood Cell	132	1417
+1	scatomic_full_label	cDC2	118	1417
+1	scatomic_full_label	CD4+ T cell	108	1417
+2	ev_celltypist_label	Epithelial cells	246	1257
+2	ev_celltypist_label	Macrophages	229	1257
+2	ev_celltypist_label	Mid erythroid	133	1257
+2	ev_celltypist_label	Double-positive thymocytes	95	1257
+2	ev_celltypist_label	Tcm/Naive helper T cells	73	1257
+2	scatomic_full_label	Esophageal Cancer Cell	163	1257
+2	scatomic_full_label	Cancer Associated Fibroblasts	151	1257
+2	scatomic_full_label	Normal Tissue Cell	121	1257
+2	scatomic_full_label	HSPC	104	1257
+2	scatomic_full_label	Blood Cell	100	1257
+3	ev_celltypist_label	Memory B cells	137	888
+3	ev_celltypist_label	Mid erythroid	136	888
+3	ev_celltypist_label	Double-positive thymocytes	119	888
+3	ev_celltypist_label	Epithelial cells	86	888
+3	ev_celltypist_label	Tcm/Naive helper T cells	79	888
+3	scatomic_full_label	Breast/Lung/Prostate	168	888
+3	scatomic_full_label	Blood Cell	105	888
+3	scatomic_full_label	Lung Cancer Cell	72	888
+3	scatomic_full_label	Normal Tissue Cell	63	888
+3	scatomic_full_label	cDC2	45	888
+4	ev_celltypist_label	Macrophages	218	709
+4	ev_celltypist_label	Classical monocytes	76	709
+4	ev_celltypist_label	Alveolar macrophages	61	709
+4	ev_celltypist_label	DC2	51	709
+4	ev_celltypist_label	Non-classical monocytes	33	709
+4	scatomic_full_label	Phagocytosis Macrophage	264	709
+4	scatomic_full_label	Macrophage	128	709
+4	scatomic_full_label	Pro-angiogenesis Macrophage	103	709
+4	scatomic_full_label	cDC2	92	709
+4	scatomic_full_label	Any Cell	38	709
+5	ev_celltypist_label	Epithelial cells	84	535
+5	ev_celltypist_label	Tcm/Naive helper T cells	57	535
+5	ev_celltypist_label	Macrophages	40	535
+5	ev_celltypist_label	Memory B cells	39	535
+5	ev_celltypist_label	NK cells	38	535
+5	scatomic_full_label	Esophageal Cancer Cell	132	535
+5	scatomic_full_label	Normal Tissue Cell	101	535
+5	scatomic_full_label	Brain Cancer Cell	90	535
+5	scatomic_full_label	Lung Cancer Cell	29	535
+5	scatomic_full_label	Colon/Colorectal Cancer Cell	27	535
+6	ev_celltypist_label	Plasma cells	72	423
+6	ev_celltypist_label	Memory B cells	59	423
+6	ev_celltypist_label	Tem/Trm cytotoxic T cells	29	423
+6	ev_celltypist_label	Naive B cells	20	423
+6	ev_celltypist_label	Tem/Effector helper T cells	19	423
+6	scatomic_full_label	B Cell	72	423
+6	scatomic_full_label	Blood Cell	50	423
+6	scatomic_full_label	Plasmablast	47	423
+6	scatomic_full_label	Any Cell	34	423
+6	scatomic_full_label	Effector/Memory CD8+ T cells	29	423
+7	ev_celltypist_label	NK cells	136	388
+7	ev_celltypist_label	Tcm/Naive helper T cells	37	388
+7	ev_celltypist_label	Macrophages	28	388
+7	ev_celltypist_label	Alveolar macrophages	28	388
+7	ev_celltypist_label	Double-positive thymocytes	21	388
+7	scatomic_full_label	CAFmyo	238	388
+7	scatomic_full_label	Cancer Associated Fibroblasts	37	388
+7	scatomic_full_label	Normal Fibroblast	23	388
+7	scatomic_full_label	Non Blood Cell	23	388
+7	scatomic_full_label	CAFinfla	20	388
+8	ev_celltypist_label	Epithelial cells	64	357
+8	ev_celltypist_label	Tem/Trm cytotoxic T cells	43	357
+8	ev_celltypist_label	Macrophages	33	357
+8	ev_celltypist_label	Tem/Temra cytotoxic T cells	24	357
+8	ev_celltypist_label	Alveolar macrophages	22	357
+8	scatomic_full_label	Liver Cancer Cell	147	357
+8	scatomic_full_label	Normal Tissue Cell	122	357
+8	scatomic_full_label	Any Cell	22	357
+8	scatomic_full_label	Non Blood Cell	19	357
+8	scatomic_full_label	Effector/Memory CD8+ T cells	15	357
+9	ev_celltypist_label	Epithelial cells	61	354
+9	ev_celltypist_label	Classical monocytes	35	354
+9	ev_celltypist_label	Macrophages	30	354
+9	ev_celltypist_label	Tcm/Naive helper T cells	29	354
+9	ev_celltypist_label	Memory B cells	26	354
+9	scatomic_full_label	Esophageal Cancer Cell	106	354
+9	scatomic_full_label	Normal Tissue Cell	66	354
+9	scatomic_full_label	Lung Cancer Cell	53	354
+9	scatomic_full_label	Non Blood Cell	31	354
+9	scatomic_full_label	Normal Fibroblast	20	354
+10	ev_celltypist_label	Endothelial cells	119	261
+10	ev_celltypist_label	Tem/Trm cytotoxic T cells	25	261
+10	ev_celltypist_label	Tcm/Naive helper T cells	18	261
+10	ev_celltypist_label	Macrophages	15	261
+10	ev_celltypist_label	NK cells	13	261
+10	scatomic_full_label	Endothelial Cells	212	261
+10	scatomic_full_label	Any Cell	18	261
+10	scatomic_full_label	Normal Tissue Cell	7	261
+10	scatomic_full_label	Non Blood Cell	5	261
+10	scatomic_full_label	Stromal Cell	5	261
+11	ev_celltypist_label	Classical monocytes	82	201
+11	ev_celltypist_label	Monocytes	22	201
+11	ev_celltypist_label	Intermediate macrophages	19	201
+11	ev_celltypist_label	Tcm/Naive helper T cells	12	201
+11	ev_celltypist_label	Macrophages	9	201
+11	scatomic_full_label	Pro-angiogenesis Macrophage	113	201
+11	scatomic_full_label	Macrophage	18	201
+11	scatomic_full_label	Macrophage or Monocyte	18	201
+11	scatomic_full_label	CD14 Monocyte	15	201
+11	scatomic_full_label	Phagocytosis Macrophage	11	201
+12	ev_celltypist_label	Mid erythroid	100	189
+12	ev_celltypist_label	Double-positive thymocytes	40	189
+12	ev_celltypist_label	Tcm/Naive helper T cells	13	189
+12	ev_celltypist_label	Tcm/Naive cytotoxic T cells	8	189
+12	ev_celltypist_label	Tem/Trm cytotoxic T cells	6	189
+12	scatomic_full_label	Lung Cancer Cell	80	189
+12	scatomic_full_label	Blood Cell	26	189
+12	scatomic_full_label	Any Cell	20	189
+12	scatomic_full_label	Plasmablast	14	189
+12	scatomic_full_label	Normal Tissue Cell	11	189
+13	ev_celltypist_label	Macrophages	32	142
+13	ev_celltypist_label	Epithelial cells	24	142
+13	ev_celltypist_label	Alveolar macrophages	18	142
+13	ev_celltypist_label	Regulatory T cells	14	142
+13	ev_celltypist_label	Tem/Trm cytotoxic T cells	11	142
+13	scatomic_full_label	Esophageal Cancer Cell	66	142
+13	scatomic_full_label	Normal Tissue Cell	52	142
+13	scatomic_full_label	Non Stromal Cell	10	142
+13	scatomic_full_label	Brain Cancer Cell	5	142
+13	scatomic_full_label	Breast Cancer Cell	3	142
+14	ev_celltypist_label	Epithelial cells	25	114
+14	ev_celltypist_label	Double-negative thymocytes	13	114
+14	ev_celltypist_label	NK cells	11	114
+14	ev_celltypist_label	Memory B cells	8	114
+14	ev_celltypist_label	Classical monocytes	7	114
+14	scatomic_full_label	Brain Cancer Cell	41	114
+14	scatomic_full_label	Endometrial Cancer Cell	30	114
+14	scatomic_full_label	Lung Cancer Cell	18	114
+14	scatomic_full_label	Normal Tissue Cell	8	114
+14	scatomic_full_label	Breast/Lung/Prostate	4	114
+15	ev_celltypist_label	Epithelial cells	23	112
+15	ev_celltypist_label	Memory B cells	19	112
+15	ev_celltypist_label	T(agonist)	8	112
+15	ev_celltypist_label	Tcm/Naive helper T cells	7	112
+15	ev_celltypist_label	Macrophages	6	112
+15	scatomic_full_label	Skin Cancer Cell	89	112
+15	scatomic_full_label	Normal Tissue Cell	7	112
+15	scatomic_full_label	Non Blood Cell	5	112
+15	scatomic_full_label	Brain Cancer Cell	4	112
+15	scatomic_full_label	Any Cell	2	112
+16	ev_celltypist_label	Tcm/Naive helper T cells	16	48
+16	ev_celltypist_label	Plasma cells	5	48
+16	ev_celltypist_label	Tcm/Naive cytotoxic T cells	3	48
+16	ev_celltypist_label	Type 17 helper T cells	2	48
+16	ev_celltypist_label	Myelocytes	2	48
+16	scatomic_full_label	Normal Tissue Cell	33	48
+16	scatomic_full_label	Lung Cancer Cell	5	48
+16	scatomic_full_label	Any Cell	2	48
+16	scatomic_full_label	Pancreatic Cancer Cell	2	48
+16	scatomic_full_label	Breast Cancer Cell	1	48
+17	ev_celltypist_label	T(agonist)	5	29
+17	ev_celltypist_label	Double-positive thymocytes	4	29
+17	ev_celltypist_label	Naive B cells	4	29
+17	ev_celltypist_label	Macrophages	3	29
+17	ev_celltypist_label	Epithelial cells	3	29
+17	scatomic_full_label	Lung Cancer Cell	26	29
+17	scatomic_full_label	Normal Tissue Cell	3	29

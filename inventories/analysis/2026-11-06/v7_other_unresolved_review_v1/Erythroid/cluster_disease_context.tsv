@@ -1,0 +1,19 @@
+cluster	n_cells	n_hematologic_context	top_cancer_contexts
+0	1674	210	Lung cancer:326;HCC:251;Acute myeloid leukemia:210
+1	1417	340	Prostate cancer:403;Acute myeloid leukemia:340;Advanced non-small cell lung cancer:245
+2	1257	319	Acute myeloid leukemia:319;Advanced non-small cell lung cancer:232;Renal cell carcinoma:204
+3	888	265	Acute myeloid leukemia:265;Prostate cancer:217;Advanced non-small cell lung cancer:87
+4	709	17	Advanced non-small cell lung cancer:227;HCC:129;Glioblastoma:59
+5	535	21	Advanced non-small cell lung cancer:191;Osteosarcoma:58;Endometrial carcinosarcoma:57
+6	423	32	Advanced non-small cell lung cancer:89;Gastric cancer:80;Lung cancer:49
+7	388	0	Renal cell carcinoma:90;Prostate cancer:54;Breast cancer:42
+8	357	0	HCC:351;Pancreatic neuroendocrine tumor:4;Renal cell carcinoma:2
+9	354	0	Advanced non-small cell lung cancer:145;ADENOCARCINOMA:52;Prostate cancer:30
+10	261	0	HCC:90;Prostate cancer:45;Gastric cancer:29
+11	201	12	Advanced non-small cell lung cancer:100;Cervical cancer:36;HCC:24
+12	189	135	Acute myeloid leukemia:135;Lung cancer:17;Advanced non-small cell lung cancer:13
+13	142	4	Advanced non-small cell lung cancer:124;Glioblastoma:4;Acute myeloid leukemia:4
+14	114	2	Glioblastoma:46;Pancreatic neuroendocrine tumor:41;HCC:7
+15	112	0	Uveal melanoma:95;Glioblastoma:4;Acral melanoma:4
+16	48	1	Pancreatic ductal adenocarcinoma:39;Pancreatic neuroendocrine tumor:6;Breast cancer:1
+17	29	0	Advanced non-small cell lung cancer:29

@@ -1,0 +1,12 @@
+{
+  "status": "completed_post_QC_marker_review_not_identity_acceptance",
+  "UTC": "2026-11-06T04:17:10.739615+00:00",
+  "lineage": "HSPC",
+  "n_cells": 14072,
+  "n_clusters": 16,
+  "n_marker_genes": 260,
+  "n_marker_records": 4160,
+  "measured_source_denominators_verified": true,
+  "canonical_V7_changed": false,
+  "fine_identity_accepted": false
+}

@@ -1,0 +1,165 @@
+{
+  "panels": [
+    {
+      "id": "plate_structural",
+      "target": "Platelet / MK\nstructural",
+      "level": "parent",
+      "genes": [
+        "ITGA2B",
+        "GP9",
+        "GP1BA",
+        "GP1BB",
+        "TUBB1"
+      ]
+    },
+    {
+      "id": "plate_secreted",
+      "target": "Platelet RNA\nsecreted/shared",
+      "level": "candidate_subtype",
+      "genes": [
+        "PF4",
+        "PPBP",
+        "NRGN",
+        "RGS18"
+      ]
+    },
+    {
+      "id": "mural_competitor",
+      "target": "Mural / vascular wall\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "RGS5",
+        "PDGFRB",
+        "ACTA2",
+        "MYH11",
+        "TAGLN"
+      ]
+    },
+    {
+      "id": "T_competitor",
+      "target": "T apparatus\nidentity evidence",
+      "level": "competing_parent",
+      "genes": [
+        "CD3D",
+        "CD3E",
+        "CD3G",
+        "TRAC",
+        "TRBC2",
+        "TRDC"
+      ]
+    },
+    {
+      "id": "myeloid_competitor",
+      "target": "Myeloid\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "LYZ",
+        "LST1",
+        "TYROBP",
+        "SPI1",
+        "CSF1R",
+        "CD14"
+      ]
+    },
+    {
+      "id": "epithelial_competitor",
+      "target": "Epithelial\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ]
+    },
+    {
+      "id": "neural_context",
+      "target": "Neural / endocrine\nshared programme",
+      "level": "competing_parent",
+      "genes": [
+        "PCSK1N",
+        "CPE",
+        "CHGB",
+        "CHGA",
+        "SNAP25",
+        "NEFL"
+      ]
+    },
+    {
+      "id": "acinar_context",
+      "target": "Acinar RNA\ncontext",
+      "level": "competing_parent",
+      "genes": [
+        "PRSS1",
+        "PRSS2",
+        "CPA1",
+        "CTRC",
+        "CEL"
+      ]
+    },
+    {
+      "id": "Ig_constant_context",
+      "target": "Immunoglobulin RNA\nnot B / ASC alone",
+      "level": "competing_parent",
+      "genes": [
+        "IGKC",
+        "IGLC2",
+        "IGHA1",
+        "IGHG1"
+      ]
+    },
+    {
+      "id": "cycling",
+      "target": "Cell cycle\nstate",
+      "level": "state",
+      "genes": [
+        "MKI67",
+        "TOP2A",
+        "UBE2C",
+        "TYMS"
+      ]
+    },
+    {
+      "id": "S_phase",
+      "target": "S-phase RNA\ncontext",
+      "level": "state",
+      "genes": [
+        "MCM4",
+        "PCNA"
+      ]
+    },
+    {
+      "id": "IFN",
+      "target": "IFN response\nstate",
+      "level": "state",
+      "genes": [
+        "ISG15",
+        "IFIT1",
+        "IFIT3",
+        "MX1",
+        "OAS1"
+      ]
+    },
+    {
+      "id": "Stress",
+      "target": "Stress response\nstate",
+      "level": "state",
+      "genes": [
+        "HSPA1A",
+        "HSPA1B",
+        "DNAJB1",
+        "HSPH1"
+      ]
+    },
+    {
+      "id": "MHCII",
+      "target": "MHC-II RNA\nstate",
+      "level": "state",
+      "genes": [
+        "HLA-DRA",
+        "HLA-DRB1",
+        "CD74"
+      ]
+    }
+  ]
+}

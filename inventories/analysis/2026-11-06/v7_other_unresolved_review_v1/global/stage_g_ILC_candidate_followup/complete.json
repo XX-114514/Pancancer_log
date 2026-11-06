@@ -1,0 +1,13 @@
+{
+  "status": "candidate_positive_programmes_readback_verified_not_final_ILC_annotation",
+  "UTC": "2026-11-06T04:31:30.552807+00:00",
+  "n_candidates": 166,
+  "n_sources": 32,
+  "n_type2_programme": 67,
+  "n_type3_programme": 99,
+  "n_both": 0,
+  "all_have_PTPRC_raw_ge2": true,
+  "n_current_T_positive": 0,
+  "no_Lin_negative_proof_from_dropout": true,
+  "final_ILC_subtype_accepted": false
+}

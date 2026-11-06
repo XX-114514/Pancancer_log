@@ -1,4 +1,8 @@
-## 2026-11-06 V7逐类排查后续
+## 2026-11-06 V7其他unresolved四类里程碑
+
+红系/血小板/HSPC/ILC从counts完成59个诊断分区、260 marker复核及工作侧表；QC-v3与冻结轴继承独立通过，见[结果](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)。当前重点由“给每群强配亚型”转为纠正父身份、验证混合RNA与来源/疾病语境，分别验收大类、状态和细分；43,704身份复查记录及其他未重建背景仍开放。此里程碑不是全V7发表注释完成，不替换干净TME/CoVarNet线。
+
+## 2026-11-06 较早Mast/T6逐类排查后续
 
 当前Mast/T6实际QC清理、重建和大类工作侧表见[结果](inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)。下一步优先T09髓系RNA、T07/T08 Ig RNA及Mast剩余父类／来源上下文；补来源与参数敏感性后再接受细分。其他谱系及其余T候选池尚未完成本轮复审。
 

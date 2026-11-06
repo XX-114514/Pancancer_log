@@ -1,0 +1,19 @@
+cluster	working_parent	identity_review_status	display_annotation	naming_markers	reason	state_context	final_fine_identity_accepted
+0	T	broad_working	T | globin-rich RNA	CD3D;CD3E;CD3G;TRBC2;LCK	Concordant T apparatus and positive DE; HB alone does not establish erythroid identity.	none_assigned	False
+1	Erythroid_candidate	parent_review	Ery candidate [review]	AHSP;SLC4A1;GYPA;ALAS2	Non-HB support is present in a subset, with low library depth and competing lymphoid signal; do not accept all cells from aggregate HB.	none_assigned	False
+2	Mixed_Ery_Epithelial	mixed_review	Ery / epithelial [review]	AHSP;GYPA;EPCAM;KRT8;KRT18	Both erythroid and epithelial components occur in this partition; separate cells rather than force a maturation subtype.	none_assigned	False
+3	Erythroid_candidate	parent_review	Ery candidate [review]	AHSP;GYPA;RHAG;ALAS2	Non-HB erythroid programme enriched but heterogeneous; no positive DE under current thresholds.	none_assigned	False
+4	Myeloid	broad_working	Myeloid | C1Q/CD14	CSF1R;C1QA;MS4A7;CD14	Concordant myeloid programme and DE; globin signal is a separate RNA context.	none_assigned	False
+5	Epithelial	broad_working	Epithelial | KRT/EPCAM	EPCAM;KRT8;KRT18;KRT19	Epithelial components and ELF3/CLDN4/TSPAN1 DE; no erythroid structural programme.	none_assigned	False
+6	B_ASC_context	mixed_review	B / ASC context [review]	CD74;MZB1;JCHAIN;IGKC	Ig abundance alone cannot establish B or ASC; lineage components and mixed lymphoid cells require review.	none_assigned	False
+7	Mural	broad_working	Mural | RGS5/MYH11	RGS5;PDGFRB;ACTA2;MYH11	Vascular mural programme and coherent DE; not an erythroid subtype.	none_assigned	False
+8	Hepatocyte_like	broad_working	Hepatocyte-like | ALB/HPX	ALB;APOA1;HPX;ASGR1	Coherent hepatic RNA and DE, HCC context; does not establish benign versus malignant status.	none_assigned	False
+9	Epithelial	broad_working	Epithelial | KRT19/MUC1	KRT19;KRT18;EPCAM;MUC1	Epithelial RNA and NAPSA/SFTA2/MUC1 DE; tissue subtype not accepted.	none_assigned	False
+10	Endothelial	broad_working	Endothelial | CLDN5/VWF	CLDN5;VWF;PECAM1;KDR	Concordant endothelial markers and positive DE; CD34 is not sufficient for HSPC.	none_assigned	False
+11	Myeloid	broad_working	Myeloid | CSF3R/FPR1	CSF3R;FPR1;TYROBP;S100A8	Granulocytic/inflammatory myeloid context; no forced discrete neutrophil subtype.	none_assigned	False
+12	Erythroid	broad_working	Erythroid | cycling	GYPA;SLC4A1;RHAG;AHSP;ALAS2	Strong non-HB structural and synthesis support with compatible DE; no forced early/late subtype.	Cycling_MKI67_TOP2A	False
+13	Epithelial	broad_working	Epithelial | cilia context	EPCAM;KRT8;KRT18;FOXJ1;RSPH4A	Epithelial identity with cilia-related DE; source-concentrated, no accepted tissue subtype.	none_assigned	False
+14	Neural_neuroendocrine_like	parent_review	Neural / endocrine [review]	PCSK1N;CPE;CHGB;SNAP25	Shared neural and neuroendocrine programme; tissue-compatible parent and malignancy remain unresolved.	none_assigned	False
+15	Melanocytic	broad_working	Melanocytic | PMEL/MLANA	PMEL;MLANA;MITF;TYR	Concordant melanocytic RNA and DE; no malignancy call from this panel.	none_assigned	False
+16	Acinar_like	parent_review	Acinar-like [review]	PRSS1;PRSS2;CPA1;CTRC;CEL	Acinar DE and RNA context, small source-concentrated cluster; validate whole-cell identity against ambient digestive RNA.	none_assigned	False
+17	Unknown	low_information	Small source cluster [review]	TNFRSF11B;SYT1;SOSTDC1	Only 29 cells from one source; positive DE does not establish a stable parent.	none_assigned	False

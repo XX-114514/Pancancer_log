@@ -14,6 +14,9 @@
 #    log2(mean(expm1)+1) difference; Bonferroni p_val_adj), expression detection over measured cells, and the V7
 #    evidence engine on the merged registry v2 (no winner); plus QC, doublet evidence (A0), malignancy, source mix
 # Outputs (OUT/<cancer_slug>/): object.h5ad, clusters.tsv, review.tsv, de.tsv, expression.tsv, evidence/, figures/
+# Lineage QC round (step B2): with env LINEAGE_POOL="label,label" and CELL_LABELS=<cell_major_labels.tsv.gz> the object is
+# that pool of reviewed major labels across all cancer types (argument CANCER is then the pool name), and env
+# STATE_REGRESS="S,G2M,IFN,stress" chooses the regressed state scores for the lineage.
 # Usage: major_by_cancer_v1.py RUN_DIR CANCER OUT_ROOT REGISTRY_DIR DOUBLET_DIR REPO SEED
 import sys, os, re, json, datetime, subprocess
 import numpy as np, pandas as pd, scipy.sparse as sp, anndata as ad, scanpy as sc, harmonypy as hm, zarr, h5py
@@ -56,7 +59,14 @@ STATES = {'S': list(cc.gene[cc.phase == 'S']), 'G2M': list(cc.gene[cc.phase == '
 # ---- select and read ----
 g = zarr.open(f'{run}/tme_v1.zarr', 'r')
 obs_all = read_elem(g['obs'])
-sel_all = (obs_all['analysis_main'].astype(str) == cancer).values
+POOL = [x for x in os.environ.get('LINEAGE_POOL', '').split(',') if x]
+if POOL:
+    cl_ = pd.read_csv(os.environ['CELL_LABELS'], sep='\t', usecols=['cell_id', 'major_label']).set_index('cell_id')['major_label'].reindex(obs_all.index.astype(str))
+    assert cl_.notna().all()
+    sel_all = cl_.isin(POOL).values
+    obs_all['major_label'] = cl_.values
+else:
+    sel_all = (obs_all['analysis_main'].astype(str) == cancer).values
 common = list(pd.read_csv(f'{run}/report/hvg_tme_v1.tsv', sep='\t', index_col=0).index)
 genes = list(dict.fromkeys(common + pgenes + [x for v in STATES.values() for x in v]))
 log(step='select', cancer=cancer, cells=int(sel_all.sum()), genes=len(genes), contexts=ctx)
@@ -113,11 +123,12 @@ B = ad.AnnData(X=A.layers['counts'][:, cand], obs=A.obs[['hvg_batch']].copy(), v
 nb = A.obs['hvg_batch'].nunique()
 sc.pp.highly_variable_genes(B, n_top_genes=N_HVG, flavor='seurat_v3', batch_key='hvg_batch' if nb > 1 else None)
 hvg = list(B.var_names[B.var['highly_variable']]); del B
+REG = [x for x in os.environ.get('STATE_REGRESS', ','.join(STATES)).split(',') if x]
 for k, gs in STATES.items():
     gs = [x for x in gs if x in A.var_names]
     sc.tl.score_genes(A, gs, score_name=f'score_{k}', random_state=seed, use_raw=False)
 Y = A[:, hvg].X.toarray().astype(np.float32)
-Dm = np.column_stack([np.ones(A.n_obs)] + [A.obs[f'score_{k}'].values for k in STATES]).astype(np.float32)
+Dm = np.column_stack([np.ones(A.n_obs)] + [A.obs[f'score_{k}'].values for k in REG]).astype(np.float32)
 beta, *_ = np.linalg.lstsq(Dm, Y, rcond=None)
 Y -= Dm @ beta
 Y = (Y - Y.mean(0)) / np.maximum(Y.std(0), 1e-6); np.clip(Y, -10, 10, out=Y)
@@ -195,6 +206,8 @@ S = pd.DataFrame({'cells': grp.size(), 'non_malignant': grp['tme_flag'].agg(lamb
                   'global_c13_share': grp['leiden_tme'].agg(lambda x: (x.astype(str) == '13').mean()).round(3),
                   'sources': grp['source'].nunique(), 'units': grp['unit_id'].nunique(),
                   'top_source_share': grp['source'].agg(lambda x: x.value_counts(normalize=True).iloc[0]).round(3),
+                  'cancers': grp['analysis_main'].nunique(), 'top_cancer': grp['analysis_main'].agg(lambda x: x.value_counts().index[0]),
+                  'top_cancer_share': grp['analysis_main'].agg(lambda x: x.value_counts(normalize=True).iloc[0]).round(3),
                   'median_genes': grp['n_genes'].median(), 'median_umi': grp['total_counts'].median(), 'median_pct_mt': grp['pct_mt'].median().round(2),
                   'median_contamination': grp['decontX_contamination'].median().round(3),
                   'doublet_score_mean': grp['doublet_score'].mean().round(3), 'scrublet_pred_frac': grp['scrublet_predicted'].mean().round(3),
@@ -259,7 +272,7 @@ ax.set_yticklabels([f'{c} (n={S.loc[c, "cells"]:,}; unc {S.loc[c, "uncertain_sha
 ax.invert_yaxis(); fig.savefig(f'{out}/figures/dotplot_major.png', dpi=150, bbox_inches='tight'); plt.close(fig)
 
 A.uns['params'] = json.dumps({'cancer': cancer, 'hvg': len(hvg), 'n_pc': n_pc, 'resolutions': RES, 'main': MAIN, 'adjacent_ARI': ari, 'contexts': ctx,
-                              'regressed': list(STATES), 'harmony': 'source theta 2', 'seed': seed})
+                              'regressed': REG, 'pool': POOL, 'harmony': 'source theta 2', 'seed': seed})
 A.write_h5ad(f'{out}/object.h5ad')
 pd.set_option('display.width', 250); pd.set_option('display.max_colwidth', 80)
 print(S[['cells', 'uncertain_share', 'global_c13_share', 'sources', 'median_genes', 'doublet_score_z', 'V7_parents_ge0.3', 'top_markers']].to_string(), flush=True)

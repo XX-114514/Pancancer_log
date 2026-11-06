@@ -1,0 +1,15 @@
+cluster	n_cells	n_hematologic_context	top_cancer_contexts
+0	12867	18	Gastric cancer:6034;Prostate cancer:837;HCC:797
+1	9283	21	Gastric cancer:6389;HCC:496;Breast cancer:347
+2	8353	13	Gastric cancer:2199;Breast cancer:914;Prostate cancer:737
+3	4758	1	Gastric cancer:1499;Colorectal cancer:556;Lung cancer:274
+4	3352	12	Gastric cancer:2128;HCC:344;Prostate cancer:131
+5	2509	1	Uveal melanoma:931;Basal cell carcinoma:333;Prostate cancer:186
+6	1881	1	Uveal melanoma:489;Prostate cancer:243;Gastric cancer:183
+7	565	2	Gastric cancer:132;Breast cancer:89;Nasopharyngeal carcinoma:54
+8	453	0	HCC:402;Intrahepatic cholangiocarcinoma:12;Gastric cancer:10
+9	414	5	Gastric cancer:97;HCC:56;Glioblastoma:37
+10	341	0	Uveal melanoma:304;Basal cell carcinoma:16;Acral melanoma:8
+11	292	0	Gastric cancer:50;HCC:42;Colorectal cancer:26
+12	155	0	Uveal melanoma:152;Glioblastoma:1;Gastric cancer:1
+13	67	0	Melanoma:67

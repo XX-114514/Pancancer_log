@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T04:07:32.049944+00:00",
+  "n_new_exclude": 913,
+  "n_new_holdout": 2,
+  "n_global_exclude": 2916,
+  "n_global_holdout": 238,
+  "n_global_keep": 4673633,
+  "models": [
+    {
+      "lineage": "Erythroid",
+      "n_model": 9098,
+      "n_source": 49,
+      "n_genes": 95038,
+      "exact_source_raw_count_subset": true,
+      "exact_10x_buffers_and_metadata_axis": true
+    },
+    {
+      "lineage": "Platelet",
+      "n_model": 2318,
+      "n_source": 47,
+      "n_genes": 95038,
+      "exact_source_raw_count_subset": true,
+      "exact_10x_buffers_and_metadata_axis": true
+    },
+    {
+      "lineage": "HSPC",
+      "n_model": 14072,
+      "n_source": 51,
+      "n_genes": 95038,
+      "exact_source_raw_count_subset": true,
+      "exact_10x_buffers_and_metadata_axis": true
+    },
+    {
+      "lineage": "ILC",
+      "n_model": 45290,
+      "n_source": 52,
+      "n_genes": 95038,
+      "exact_source_raw_count_subset": true,
+      "exact_10x_buffers_and_metadata_axis": true
+    }
+  ],
+  "original_QC_v2_exclusions_preserved": true,
+  "no_primary_keep_reentry": true
+}

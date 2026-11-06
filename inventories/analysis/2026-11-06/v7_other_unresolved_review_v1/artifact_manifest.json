@@ -1,0 +1,665 @@
+{
+  "n_files": 132,
+  "files": [
+    {
+      "path": "ALL_CLUSTER_REVIEW.md",
+      "bytes": 10976,
+      "sha256": "b63e9ab909b5ee47f951259decc181b603498a600bf160d49dab80c68f46e0d4"
+    },
+    {
+      "path": "Erythroid/Erythroid_cluster_decisions.tsv",
+      "bytes": 3536,
+      "sha256": "cbcb22fe760ca634e507b78fd6d0d664af64136d41c9a2439c389058a4ec9aa4"
+    },
+    {
+      "path": "Erythroid/Erythroid_plot_panels.json",
+      "bytes": 4196,
+      "sha256": "4b9908a11b2316383f59ae4e1c19772061366606f2240b8ce2b2dfe2f62289b4"
+    },
+    {
+      "path": "Erythroid/cluster_disease_context.tsv",
+      "bytes": 1468,
+      "sha256": "b2674779c5ae61916c2e849f4693fbe8d7a23445be81df418731e82f6e99940c"
+    },
+    {
+      "path": "Erythroid/cluster_review_with_evidence.tsv",
+      "bytes": 8048,
+      "sha256": "6b267e3975346b5e13d12f3166d170a9de474cb6c05c4fbe8a1d688212ef010b"
+    },
+    {
+      "path": "Erythroid/markers/cluster_marker_QC_summary.tsv",
+      "bytes": 3464,
+      "sha256": "1c1cf344e9630e7fa9644ee6c40ee9330d3c0ee97acf2156690870736f026f8f"
+    },
+    {
+      "path": "Erythroid/markers/cluster_reference_top5.tsv",
+      "bytes": 8448,
+      "sha256": "479661c36d4fca89db54fc6462e6f3f6b77db42410398cb70e27e8b5e0ef885e"
+    },
+    {
+      "path": "Erythroid/markers/complete.json",
+      "bytes": 353,
+      "sha256": "2af856755198ed78406441f55f9e7f936e624ac842aa06f073e18cd499389b3f"
+    },
+    {
+      "path": "Erythroid/markers/independent_postfit_audit.json",
+      "bytes": 568,
+      "sha256": "298b407f0ec527609bb388b5ac62d593271d8e241f5ee88be903f7a90f1cd471"
+    },
+    {
+      "path": "Erythroid/markers/measured_marker_expression.tsv",
+      "bytes": 274152,
+      "sha256": "48347ca280985a3b16994ecc8be4cb0d9e3d67712dcb63bf094db7b955e794df"
+    },
+    {
+      "path": "Erythroid/markers/module_component_evidence.tsv",
+      "bytes": 20116,
+      "sha256": "d2aa3d9f55cd3dcd0e52f1a6f8cfc90864b02105d584f818e504b39e3a76d25b"
+    },
+    {
+      "path": "Erythroid/markers/top15_RNA_DEG.tsv",
+      "bytes": 17921,
+      "sha256": "f9b28e977a363392ee0f7efafb854a3527e3f5d75c9a980e702b0a180b2f70b6"
+    },
+    {
+      "path": "Erythroid/model/cluster_resolution_counts.tsv",
+      "bytes": 2531,
+      "sha256": "f7e2a9bee6c6886a9639f9da14f3cfb4ecc38fb054854e9080b599891ab65cec"
+    },
+    {
+      "path": "Erythroid/model/cluster_source_concentration.tsv",
+      "bytes": 4461,
+      "sha256": "241942f35e30a32ddae294581cd6d7816d607e3bfd7eba92eb924dc1e413550d"
+    },
+    {
+      "path": "Erythroid/model/complete.json",
+      "bytes": 691,
+      "sha256": "2faf9247b381be88113a0985fb0aba74600b1432827a3a6f34fcc4e1e9482fbf"
+    },
+    {
+      "path": "Erythroid/model/old_to_clean_cluster_crosswalk.tsv",
+      "bytes": 2570,
+      "sha256": "9e317e243567edf923241887c5b39e10e97c27fa88326662711208004fde19a6"
+    },
+    {
+      "path": "Erythroid/model/refit_config.json",
+      "bytes": 817,
+      "sha256": "53fbd81633a1e8e1989311f2eb67eabbe5c5d84a6546d778e3b8f72ca9691563"
+    },
+    {
+      "path": "Erythroid/model/terminal.json",
+      "bytes": 173,
+      "sha256": "e20e70a3bfb0077e3a50f2c1361a9bd55cf37b073b05e49a870c4dc82f285dd2"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_competing_lineage_QC_v7.png",
+      "bytes": 443283,
+      "sha256": "acbc76416606b87270bc1edb1d7a5cbb66d971ec08e69d5e1dbc5767674dbaac"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_competing_lineage_QC_v7.svg",
+      "bytes": 417004,
+      "sha256": "e867bb8014d913a960fb1a60747a04ad59313e0774e53f0eee89fe7d0fc5c757"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_extended_RNA_context_v7.png",
+      "bytes": 449580,
+      "sha256": "68a52ab67546d87e5222cc0d14cefed8bfd8679f8ec66d807a3a0461f04a3d0d"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_extended_RNA_context_v7.svg",
+      "bytes": 441078,
+      "sha256": "ebcbae115b3ee6b3aa4d9c63504f0d3407201d64e9fe636b53120b0e3318129b"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_identity_subtype_v7.png",
+      "bytes": 367595,
+      "sha256": "484a377b087d89af9f61cf4b4bf8cba91cad677ba55fee162afb067824e1b265"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_identity_subtype_v7.svg",
+      "bytes": 184511,
+      "sha256": "527d469bdb5012006bdff297132c64a77060b8378435388edfde6061a5e994de"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_state_programs_v7.png",
+      "bytes": 441374,
+      "sha256": "ff6c2355644469cf4df9e7a41465980b4e42a6b66c1fdf108a4feee692721ede"
+    },
+    {
+      "path": "Erythroid/plots/Erythroid_state_programs_v7.svg",
+      "bytes": 329680,
+      "sha256": "6d93d664a9932a92c85e3404378d3f5840edde076caea956b2fc605da140b55d"
+    },
+    {
+      "path": "Erythroid/plots/plot_manifest.json",
+      "bytes": 1642,
+      "sha256": "7b778708334091ce529d234fe8b9f9aafc0b5797303740f447137443d6d95717"
+    },
+    {
+      "path": "HSPC/HSPC_cluster_decisions.tsv",
+      "bytes": 3667,
+      "sha256": "031bc1eb335608c2fde04f3a16d23abbf93250ffe87258a1890c4afcf07fbaea"
+    },
+    {
+      "path": "HSPC/HSPC_plot_panels.json",
+      "bytes": 3817,
+      "sha256": "7aa3ec054864fb24314856e0e6da39b6bb1a949d9055d0c363a8a4962d3c8694"
+    },
+    {
+      "path": "HSPC/cluster_disease_context.tsv",
+      "bytes": 1384,
+      "sha256": "6d5d95fa984e0d52dc68e9500c77cb257a0d7b0e65f71f707b9acff28fd74892"
+    },
+    {
+      "path": "HSPC/cluster_review_with_evidence.tsv",
+      "bytes": 7619,
+      "sha256": "66c35a11016711718a648a39fa9f324aa0734dd044574fd828189058a7edc98d"
+    },
+    {
+      "path": "HSPC/markers/cluster_marker_QC_summary.tsv",
+      "bytes": 2934,
+      "sha256": "61a6303debdcf53ecd473f3b27d95472130a79f984b50f2a6d045e500a22b9f9"
+    },
+    {
+      "path": "HSPC/markers/cluster_reference_top5.tsv",
+      "bytes": 7326,
+      "sha256": "26c2c554ffc58f26a203c4075fdf2677bb29a46485982f98756c6d665d52d2c6"
+    },
+    {
+      "path": "HSPC/markers/complete.json",
+      "bytes": 349,
+      "sha256": "a4cb0a6b2487d96711d897eb11a08f8702e61d8125de0a44e91cd79afb66922d"
+    },
+    {
+      "path": "HSPC/markers/independent_postfit_audit.json",
+      "bytes": 570,
+      "sha256": "e24dd7d04f710e613111518260e951a356f9cadb4d63f50066b9288f12bd11c9"
+    },
+    {
+      "path": "HSPC/markers/measured_marker_expression.tsv",
+      "bytes": 240437,
+      "sha256": "f1c359a6380f51bc02c20916b39175b660973f20c26c81094b6155a50dc06127"
+    },
+    {
+      "path": "HSPC/markers/module_component_evidence.tsv",
+      "bytes": 17972,
+      "sha256": "8436189992bd0f961b1016b6cd0830a10059051d62ed855c05f25059362223e0"
+    },
+    {
+      "path": "HSPC/markers/top15_RNA_DEG.tsv",
+      "bytes": 15356,
+      "sha256": "293837e40f49e6fcf39119fde6555e549fb6a180e217c8766ba991e3e3aee5b0"
+    },
+    {
+      "path": "HSPC/model/cluster_resolution_counts.tsv",
+      "bytes": 2247,
+      "sha256": "6717be449dca7b3c63f4c9be51fd94ce54a432c48e668293d24bb86fed1b3a24"
+    },
+    {
+      "path": "HSPC/model/cluster_source_concentration.tsv",
+      "bytes": 3939,
+      "sha256": "c032dde5a5c1280ace0a0981ca959d83ab9c2b4c0907fc90341202185b7b9db0"
+    },
+    {
+      "path": "HSPC/model/complete.json",
+      "bytes": 687,
+      "sha256": "a2889b8214952a61cc3e4f5f990af310e52cf8ebc5fc1c11e8aea6b1f94fff6b"
+    },
+    {
+      "path": "HSPC/model/old_to_clean_cluster_crosswalk.tsv",
+      "bytes": 1893,
+      "sha256": "e13d6972b651d69213f239666194463f1d841daea1498d77de13a8de56ae2e31"
+    },
+    {
+      "path": "HSPC/model/refit_config.json",
+      "bytes": 778,
+      "sha256": "c66293a12b65780f9cc9ff28cf499b5474ae3e497e4cf3f02fd5e54b6853b4fe"
+    },
+    {
+      "path": "HSPC/model/terminal.json",
+      "bytes": 168,
+      "sha256": "f5d026590a3118a5ad8eceb1b4036dad589a316c45a436a69c8bf4a1aec54c74"
+    },
+    {
+      "path": "HSPC/plots/HSPC_competing_lineage_QC_v7.png",
+      "bytes": 460641,
+      "sha256": "7eb8ab42c8270a5fbc346708d359f75d9dea44df5ae6b41d850afc49990d50db"
+    },
+    {
+      "path": "HSPC/plots/HSPC_competing_lineage_QC_v7.svg",
+      "bytes": 421119,
+      "sha256": "699076c7c14f28504d0516ea1ace8c99228449d3d8af32956ce7950c3769752c"
+    },
+    {
+      "path": "HSPC/plots/HSPC_extended_RNA_context_v7.png",
+      "bytes": 371543,
+      "sha256": "8d20d28a7b4b3621f9537a0f7e8b47b2c4eb4d3d8d46a5355a00fa99fab68a1d"
+    },
+    {
+      "path": "HSPC/plots/HSPC_extended_RNA_context_v7.svg",
+      "bytes": 244952,
+      "sha256": "eff003379f6904d2e3a66e4fda4cc2583682ccdb544cda6899d8b6705bc652c8"
+    },
+    {
+      "path": "HSPC/plots/HSPC_identity_subtype_v7.png",
+      "bytes": 368697,
+      "sha256": "0319a440e7a945b965e60c0f04d10c663b8cd4c27bd18d14bc5f68f054963a87"
+    },
+    {
+      "path": "HSPC/plots/HSPC_identity_subtype_v7.svg",
+      "bytes": 256567,
+      "sha256": "eb93c8fd584ad895970263745074824450165430fdc5a6438e2db22269fd6910"
+    },
+    {
+      "path": "HSPC/plots/HSPC_state_programs_v7.png",
+      "bytes": 426761,
+      "sha256": "9fee60410302a676931d24c08a3f191175e59de4718b344c1bf9c0129b460ada"
+    },
+    {
+      "path": "HSPC/plots/HSPC_state_programs_v7.svg",
+      "bytes": 312475,
+      "sha256": "418abd6edbd60a8206aa09caf0e106ec549f3c3b95b375898d32685c78d2e1a0"
+    },
+    {
+      "path": "HSPC/plots/plot_manifest.json",
+      "bytes": 1598,
+      "sha256": "bb94674697c6e50abdf586757cfa2ce1fff4406ce291f444c02698d9e0e9adab"
+    },
+    {
+      "path": "ILC/ILC_cluster_decisions.tsv",
+      "bytes": 3299,
+      "sha256": "6d79b957b05243bd59c88ffd2002c04e8134eb9be478a7d6459dfc21b37aac25"
+    },
+    {
+      "path": "ILC/ILC_plot_panels.json",
+      "bytes": 4238,
+      "sha256": "4f84adefac6cd1e4af6d9c802b921a6883b9b0f0ce5d00b93957bde098ade38e"
+    },
+    {
+      "path": "ILC/cluster_disease_context.tsv",
+      "bytes": 900,
+      "sha256": "cf43c27eaae7424f2ccdc34891bb3ae330d234ef11b9484380467a5d12f1f6d7"
+    },
+    {
+      "path": "ILC/cluster_review_with_evidence.tsv",
+      "bytes": 7019,
+      "sha256": "6444ab93e1d2dc5fcdeb055b86a1c9ff3ea6e615684800f524a52f01b5fd6148"
+    },
+    {
+      "path": "ILC/markers/cluster_marker_QC_summary.tsv",
+      "bytes": 2806,
+      "sha256": "7399d3d011a036fa40800df53dfbbbee93d96d2c7734890585782f2c6683ba83"
+    },
+    {
+      "path": "ILC/markers/cluster_reference_top5.tsv",
+      "bytes": 7062,
+      "sha256": "48df4ec84ae83d6992a1f96c32bc5d24b3a51b2bd0452168a82b239d1cac1a31"
+    },
+    {
+      "path": "ILC/markers/complete.json",
+      "bytes": 348,
+      "sha256": "864a902837c93333f96f240f385b208d48ccc9bfb7ff0ebc62d6e7fb4d3968a3"
+    },
+    {
+      "path": "ILC/markers/independent_postfit_audit.json",
+      "bytes": 563,
+      "sha256": "ba8abc5c0a9f990f8dd3456b72561a1f8009ec4a478a26921c0ecf86c336ebf6"
+    },
+    {
+      "path": "ILC/markers/measured_marker_expression.tsv",
+      "bytes": 233503,
+      "sha256": "91e4a457136d47c17dad2499e5c37416e4de7913599ce393e10c852cff36b332"
+    },
+    {
+      "path": "ILC/markers/module_component_evidence.tsv",
+      "bytes": 16243,
+      "sha256": "fd26153b48ba47c2f6794cefd2a5d23710f0e6d202287679e6f29c78b32aa567"
+    },
+    {
+      "path": "ILC/markers/top15_RNA_DEG.tsv",
+      "bytes": 10853,
+      "sha256": "74cc6051063f3df5089c9c196b0cb1130c34cec653334f378b2a22b022c16fe5"
+    },
+    {
+      "path": "ILC/model/cluster_resolution_counts.tsv",
+      "bytes": 2054,
+      "sha256": "82e082da2b43cbe7ad95c47d2e75e2201c6fb4ba71d6ddd3e5ddb99a5da2219d"
+    },
+    {
+      "path": "ILC/model/cluster_source_concentration.tsv",
+      "bytes": 3667,
+      "sha256": "c49997e46a2362f0a3e48a4905121cafe64cee2ebb3252d54ba794c67c783f21"
+    },
+    {
+      "path": "ILC/model/complete.json",
+      "bytes": 686,
+      "sha256": "e7f7f1e668742996c6fd6cfaa373c01036327b6775083f2bded6e44d5c149755"
+    },
+    {
+      "path": "ILC/model/old_to_clean_cluster_crosswalk.tsv",
+      "bytes": 2429,
+      "sha256": "369b041e4d5beb21fe67e0c9138d3d76f2858d14711695003afdf834632d3610"
+    },
+    {
+      "path": "ILC/model/refit_config.json",
+      "bytes": 770,
+      "sha256": "598e2e68097af8a61eddbd6a5b7b43581ccd35e0e8f09f2559f403cf2d4a63df"
+    },
+    {
+      "path": "ILC/model/terminal.json",
+      "bytes": 167,
+      "sha256": "fd00ef3039ef90bfe881e11a19a66782141c06ddfb8e2e25a7fee2bd11d405f6"
+    },
+    {
+      "path": "ILC/plots/ILC_competing_lineage_QC_v7.png",
+      "bytes": 442492,
+      "sha256": "5dbce0477229ce0c480204c5e04ef9b51e8e7cbf9d5dcd2d5417d67afe881f7b"
+    },
+    {
+      "path": "ILC/plots/ILC_competing_lineage_QC_v7.svg",
+      "bytes": 374143,
+      "sha256": "e30d1a52f597716ed50bb98b066f0a85035cd552eb49c575c58ca222dcc17df1"
+    },
+    {
+      "path": "ILC/plots/ILC_extended_RNA_context_v7.png",
+      "bytes": 378281,
+      "sha256": "7a86a65655ed4bcd5aa11b5312cf778be3e9ff614d1c60f47cf9a93683b14deb"
+    },
+    {
+      "path": "ILC/plots/ILC_extended_RNA_context_v7.svg",
+      "bytes": 255319,
+      "sha256": "6810172e0c9a312d48ff83d49e2352c11ca8393f8748f25974213c5bfea3fa41"
+    },
+    {
+      "path": "ILC/plots/ILC_identity_subtype_v7.png",
+      "bytes": 356466,
+      "sha256": "e099c9a44b8b36b5b250882bb99fdbda2e8af1ae75f6bf590e2e4b4292c6fbfd"
+    },
+    {
+      "path": "ILC/plots/ILC_identity_subtype_v7.svg",
+      "bytes": 201408,
+      "sha256": "343b9489adbb30144adcbda8d15a2d30a69a0744b390667e7684b980d450be17"
+    },
+    {
+      "path": "ILC/plots/ILC_state_programs_v7.png",
+      "bytes": 401181,
+      "sha256": "2e991d03dd4ec3e719a1306d0d06587d12d97e5d4bb81cc447de606b34839ab8"
+    },
+    {
+      "path": "ILC/plots/ILC_state_programs_v7.svg",
+      "bytes": 240114,
+      "sha256": "2a4e7a8d8e22cc5ee768c8c828acf99e2089a45c813da9bd21810efd35bbfe9e"
+    },
+    {
+      "path": "ILC/plots/plot_manifest.json",
+      "bytes": 1589,
+      "sha256": "6d154dd1e57333a18e4ca7272ca40003c81eb1e063fc759f40c8c11d71d63c0f"
+    },
+    {
+      "path": "Platelet/Platelet_cluster_decisions.tsv",
+      "bytes": 2314,
+      "sha256": "8471d4c22e6b0c10da2e51cf68310d9c3a99d635f407aa693f6e4e7a5c924960"
+    },
+    {
+      "path": "Platelet/Platelet_plot_panels.json",
+      "bytes": 3052,
+      "sha256": "5d70b8d13493f46d9026df4185eb89f2b57404ea17d86e501b744647c60be2ca"
+    },
+    {
+      "path": "Platelet/cluster_disease_context.tsv",
+      "bytes": 991,
+      "sha256": "39d4d9b849d1e03e2a27a2fb71187dc12b4b21ed00acbdf6f4ed5d41b18bbe1b"
+    },
+    {
+      "path": "Platelet/cluster_review_with_evidence.tsv",
+      "bytes": 5258,
+      "sha256": "133a5464a43cdc0db5071fd7301d407fe2608bc7c77b9d9a79e4bec436bbd307"
+    },
+    {
+      "path": "Platelet/markers/cluster_marker_QC_summary.tsv",
+      "bytes": 2301,
+      "sha256": "77191868e4c531e8c3e312d21688a346d1cd1ec45a5656431a9f9c6c5e96f645"
+    },
+    {
+      "path": "Platelet/markers/cluster_reference_top5.tsv",
+      "bytes": 4985,
+      "sha256": "7cf442febc91e816823a1b5ed1f82ff29c3b6afa1ce427194d3bad33f232aa7d"
+    },
+    {
+      "path": "Platelet/markers/complete.json",
+      "bytes": 352,
+      "sha256": "344c4556e7b527a5400832eeb37e59473a36c3aefaa63eada58142970ffd6577"
+    },
+    {
+      "path": "Platelet/markers/independent_postfit_audit.json",
+      "bytes": 551,
+      "sha256": "935190f6acb7f0030a488eb273bef6ba5d352449750097d24aa53cd91088dd44"
+    },
+    {
+      "path": "Platelet/markers/measured_marker_expression.tsv",
+      "bytes": 144028,
+      "sha256": "b3878c15f385c61bfe0a07dbac77a369c5c338eb1036626203105d3d09548234"
+    },
+    {
+      "path": "Platelet/markers/module_component_evidence.tsv",
+      "bytes": 11687,
+      "sha256": "c1979c65a29bbe2ca67e79f49da533bb6545a84810f9aefa50539d9e50c742be"
+    },
+    {
+      "path": "Platelet/markers/top15_RNA_DEG.tsv",
+      "bytes": 13604,
+      "sha256": "7240f890d90b7e7f3bd40c0377fafd11ef7e3101616edbf9c835b7c9bba37a72"
+    },
+    {
+      "path": "Platelet/model/cluster_resolution_counts.tsv",
+      "bytes": 1354,
+      "sha256": "b23948a2728eaf4eb314bb61ddda5f61c2ce310c0a341b8056b2743cb3974d23"
+    },
+    {
+      "path": "Platelet/model/cluster_source_concentration.tsv",
+      "bytes": 2421,
+      "sha256": "8827249a2f494c472baa3f2eaece464478b27255f8248c3a87224e8c2b360335"
+    },
+    {
+      "path": "Platelet/model/complete.json",
+      "bytes": 690,
+      "sha256": "189dbb229be196b8912d5172ecc2e2e0bf0b87d795e8aa733bdcbea71b4ef1f9"
+    },
+    {
+      "path": "Platelet/model/old_to_clean_cluster_crosswalk.tsv",
+      "bytes": 1024,
+      "sha256": "e42e2500c242fc09866bb8a4f92cae592e1b08eaed33ef8555fda09c62c82cd6"
+    },
+    {
+      "path": "Platelet/model/refit_config.json",
+      "bytes": 809,
+      "sha256": "fe92e36316622ab963a6f8bb10a41c990d2560226a11466bcee16abf7a59ef37"
+    },
+    {
+      "path": "Platelet/model/terminal.json",
+      "bytes": 172,
+      "sha256": "8c9331c3b20cdf2ca626f45d37d7e06e4ed13a7246bc97bb4e4df6fcd5b142b6"
+    },
+    {
+      "path": "Platelet/plots/Platelet_competing_lineage_QC_v7.png",
+      "bytes": 324462,
+      "sha256": "4d08b0b2c80cd4359a541d54b37f58b6da7825aa46d03c2a678aca24dabd2c10"
+    },
+    {
+      "path": "Platelet/plots/Platelet_competing_lineage_QC_v7.svg",
+      "bytes": 198790,
+      "sha256": "f87ea400ef9bf686793cd796b43e07991a5c0716ce595dd94643b57ec3547f7e"
+    },
+    {
+      "path": "Platelet/plots/Platelet_extended_RNA_context_v7.png",
+      "bytes": 304430,
+      "sha256": "f8fb9eb2375d8e4977d33117e4368f90e0db49bfaf88edf1fecad95e34f483c2"
+    },
+    {
+      "path": "Platelet/plots/Platelet_extended_RNA_context_v7.svg",
+      "bytes": 139168,
+      "sha256": "df9097e09396dcc0637bc1871bcda7b5a3211835b2d8e1af9ed1109ef05f1f19"
+    },
+    {
+      "path": "Platelet/plots/Platelet_identity_subtype_v7.png",
+      "bytes": 268491,
+      "sha256": "46f8bddce3b5a5c98b49623ebb8eacf0d66fd451d770f82ebab4408647aed286"
+    },
+    {
+      "path": "Platelet/plots/Platelet_identity_subtype_v7.svg",
+      "bytes": 81705,
+      "sha256": "dc058a8cffaf8c3c8e91d877ed6507886cb0a9ce7283c7fbfbb2f51bc80f99ba"
+    },
+    {
+      "path": "Platelet/plots/Platelet_state_programs_v7.png",
+      "bytes": 325913,
+      "sha256": "30ad87895f1044e62df7e733d1face0324a865c5b2960328440ddfacd7f7b89e"
+    },
+    {
+      "path": "Platelet/plots/Platelet_state_programs_v7.svg",
+      "bytes": 187644,
+      "sha256": "ca95478effd1965777ead3a4a9774d38308b6c85cca82f4c05525d2837f5c13c"
+    },
+    {
+      "path": "Platelet/plots/plot_manifest.json",
+      "bytes": 1633,
+      "sha256": "0a1be7e02223e32968aea82f761387f820f3afca55832c75f518b8f5aedd256b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9292,
+      "sha256": "4c1da1d6acf12ab6fc8200d415419950a80e2b3c3c69c25c9451af7f164a0b35"
+    },
+    {
+      "path": "all_59_cluster_review_with_evidence.tsv",
+      "bytes": 25682,
+      "sha256": "18aa66cf9905fec9654817a78f3d033f1170d776570faf2140ea395ec0f2aeeb"
+    },
+    {
+      "path": "analysis_view_contract.json",
+      "bytes": 1327,
+      "sha256": "b48519f4731b1abbec485b0080f41b5e0152358100d68ac440e0b05106d33b37"
+    },
+    {
+      "path": "code_delivery_sha256.tsv",
+      "bytes": 1968,
+      "sha256": "abb520f9af7d75881ac1cb0cfd50a31b10d9eadd83c738146ebafb2e03568ee3"
+    },
+    {
+      "path": "four_model_review_summary.tsv",
+      "bytes": 417,
+      "sha256": "251d8aa8a004294b6c692cb1069a76ff40555035fa2a8dc4508035b976e1d5ae"
+    },
+    {
+      "path": "global/stage_a_candidates/old_label_positive_evidence_summary.tsv",
+      "bytes": 1577,
+      "sha256": "728f7a5c820365f968dea31f5de2b8c9a04a765c13873761efafcd4d8deba011"
+    },
+    {
+      "path": "global/stage_b_disjoint_QC_review/QC_actions_by_origin_and_model.tsv",
+      "bytes": 688,
+      "sha256": "81969b0bfb796a84be4ecd886792e0966e5ecbcc1d234ad8026a5af482fa5579"
+    },
+    {
+      "path": "global/stage_b_disjoint_QC_review/complete.json",
+      "bytes": 404,
+      "sha256": "9882fb9a2a54a04028c06a6261abcb2a9f6ac4b00e9544576e2ee2f008d2b536"
+    },
+    {
+      "path": "global/stage_b_disjoint_QC_review/disjoint_pair_QC_summary.tsv",
+      "bytes": 4108,
+      "sha256": "5bb22d3d05b92245c6ee24c473a4ee6d98e0888cb002f88bbacd1cb9aed51ad5"
+    },
+    {
+      "path": "global/stage_c_QC_views/complete.json",
+      "bytes": 1935,
+      "sha256": "02500f6321b52c4e13f393a73530ea5a0041ba0464a3f98d2acda817955be966"
+    },
+    {
+      "path": "global/stage_c_QC_views/global_QC_action_counts.tsv",
+      "bytes": 72453,
+      "sha256": "83b0e345974cd4ae061b051721b4946c39b88e1412782318411bd7b04ac7edbf"
+    },
+    {
+      "path": "global/stage_c_QC_views/independent_input_audit.json",
+      "bytes": 1114,
+      "sha256": "dbad28d1f4c2ffd0c7dc16d6a68e76ad2316867d02502b012b10b040731d278c"
+    },
+    {
+      "path": "global/stage_c_QC_views/model_input_counts.tsv",
+      "bytes": 410,
+      "sha256": "0a4d4e1a254fa1a0fe0d77aea606b06c17fe46df908a016e2c193fde740da33d"
+    },
+    {
+      "path": "global/stage_f_working_annotations/all_cluster_annotation_review.tsv",
+      "bytes": 13507,
+      "sha256": "0f992b51db57d5837ba25714dd42b321d7fbf173f396bcbf8f7adc28f8759299"
+    },
+    {
+      "path": "global/stage_f_working_annotations/candidate_route_counts.tsv",
+      "bytes": 182,
+      "sha256": "9b09942b1de49f51c3cc0a18722e649f707f8206b38bf2ca3c2075d33b40dc05"
+    },
+    {
+      "path": "global/stage_f_working_annotations/complete.json",
+      "bytes": 2210,
+      "sha256": "4bd538de04459398f70a325a9e166449882a9ef6d5df5e8467b45b4e776b8157"
+    },
+    {
+      "path": "global/stage_f_working_annotations/independent_sidecar_audit.json",
+      "bytes": 2144,
+      "sha256": "6751527514e62e6eb0a5af21d472ee035e534c81bb2a622b487b509f6b5c71c6"
+    },
+    {
+      "path": "global/stage_f_working_annotations/old_to_working_identity_crosswalk.tsv",
+      "bytes": 12297,
+      "sha256": "615500287ad134a43efad328157d0ff6632c6105cd27f0f8625771769694f6b6"
+    },
+    {
+      "path": "global/stage_f_working_annotations/working_identity_counts.tsv",
+      "bytes": 6312,
+      "sha256": "3b668fb7afafbdddd8ed7992d9e32f9d897952d3f2b3be28b4dad4d9e7ef9c92"
+    },
+    {
+      "path": "global/stage_g_ILC_candidate_followup/candidate_positive_RNA_counts.tsv",
+      "bytes": 7574,
+      "sha256": "60d7c44ce66c1c33f330226325432090bde3ceca3df4400a57c081977bdc29c3"
+    },
+    {
+      "path": "global/stage_g_ILC_candidate_followup/candidate_programme_summary.tsv",
+      "bytes": 339,
+      "sha256": "7ba8491b0d75b9f9ece8b36208d4b035e17d37a70a61f24a909cda719c3e6d1f"
+    },
+    {
+      "path": "global/stage_g_ILC_candidate_followup/candidate_programmes_by_partition.tsv",
+      "bytes": 561,
+      "sha256": "63efed8ec0c083b711b562bd3a9a8438fa81c54339b24c48b8e59c8ed28b09f8"
+    },
+    {
+      "path": "global/stage_g_ILC_candidate_followup/complete.json",
+      "bytes": 394,
+      "sha256": "7a1b211dc3a342d367a2c884ef01ddf045940a5f6fdbea197409f4ab4488e48d"
+    },
+    {
+      "path": "policies/QC_adjudication_v1.json",
+      "bytes": 625,
+      "sha256": "080e61938234f66b03cf09b7e010f35229237138badb65a160344a9791445b25"
+    },
+    {
+      "path": "policies/QC_pair_policy_v1.json",
+      "bytes": 3228,
+      "sha256": "f15327da146469069c9e0a4a8d5b5c065c4b48b9c6b0b4c7307ac179d5dfac1a"
+    },
+    {
+      "path": "policies/review_policy_v1.json",
+      "bytes": 42524,
+      "sha256": "c9229f1442ac910acf338139f387963253f066a4b715c00ac72d3adb4575b6ed"
+    },
+    {
+      "path": "runtime_versions.json",
+      "bytes": 333,
+      "sha256": "7212e39b32095d2c2d3b116719bc838552c5c0b117110d76e78a29468b2bc2f6"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+cluster	n_cells	n_hematologic_context	top_cancer_contexts
+0	3171	2263	Acute myeloid leukemia:2263;Prostate cancer:370;Endometrial carcinosarcoma:134
+1	2881	1926	Acute myeloid leukemia:1926;Prostate cancer:335;Clear cell renal cell carcinoma:151
+2	2510	1798	Acute myeloid leukemia:1798;Prostate cancer:290;Endometrial carcinosarcoma:164
+3	1288	642	Acute myeloid leukemia:642;Endometrial carcinosarcoma:206;Prostate cancer:189
+4	1101	838	Acute myeloid leukemia:838;Endometrial carcinosarcoma:146;HCC:26
+5	748	701	Acute myeloid leukemia:701;Prostate cancer:19;Endometrial carcinosarcoma:10
+6	598	189	Acute myeloid leukemia:189;Breast cancer:137;Prostate cancer:57
+7	526	159	Acute myeloid leukemia:159;Clear cell renal cell carcinoma:117;Prostate cancer:78
+8	277	247	Acute myeloid leukemia:247;Endometrial carcinosarcoma:17;Glioblastoma:6
+9	271	263	Acute myeloid leukemia:263;Gastric cancer:2;Breast cancer:2
+10	173	139	Acute myeloid leukemia:139;Endometrial carcinosarcoma:34
+11	160	4	Pancreatic neuroendocrine tumor:89;Pituitary neuroendocrine tumor:17;Glioblastoma:14
+12	126	120	Acute myeloid leukemia:120;Endometrial carcinosarcoma:5;Colorectal cancer:1
+13	120	94	Acute myeloid leukemia:94;Endometrial carcinosarcoma:14;Glioblastoma:5
+14	84	0	Endometrial carcinosarcoma:63;Basal cell carcinoma:16;Prostate cancer:4
+15	38	0	Osteosarcoma:32;Breast cancer:3;Endometrial carcinosarcoma:2

@@ -1,0 +1,63 @@
+{
+  "status": "QC_v3_applied_and_clean_refit_inputs_exported",
+  "UTC": "2026-11-06T04:06:13.625469+00:00",
+  "n_reviewed_current_scope": 298674,
+  "n_new_exclude": 913,
+  "n_new_holdout": 2,
+  "n_global_exclude": 2916,
+  "n_global_holdout": 238,
+  "n_global_keep": 4673633,
+  "frozen_index_hash": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16",
+  "canonical_V7_changed": false,
+  "models": [
+    {
+      "lineage": "Erythroid",
+      "n_before": 9115,
+      "n_exclude": 15,
+      "n_holdout": 2,
+      "n_model": 9098,
+      "n_external_candidates_kept": 75,
+      "n_sources": 49,
+      "n_model_feature_candidates": 17370,
+      "n_common_measured_DE_genes": 12246,
+      "model_gene_library_fraction_median": 0.9588825863081715
+    },
+    {
+      "lineage": "Platelet",
+      "n_before": 2323,
+      "n_exclude": 5,
+      "n_holdout": 0,
+      "n_model": 2318,
+      "n_external_candidates_kept": 78,
+      "n_sources": 47,
+      "n_model_feature_candidates": 17447,
+      "n_common_measured_DE_genes": 11281,
+      "model_gene_library_fraction_median": 0.9605339274562128
+    },
+    {
+      "lineage": "HSPC",
+      "n_before": 14073,
+      "n_exclude": 1,
+      "n_holdout": 0,
+      "n_model": 14072,
+      "n_external_candidates_kept": 15,
+      "n_sources": 51,
+      "n_model_feature_candidates": 17423,
+      "n_common_measured_DE_genes": 11023,
+      "model_gene_library_fraction_median": 0.9076183638811762
+    },
+    {
+      "lineage": "ILC",
+      "n_before": 45317,
+      "n_exclude": 27,
+      "n_holdout": 0,
+      "n_model": 45290,
+      "n_external_candidates_kept": 402,
+      "n_sources": 52,
+      "n_model_feature_candidates": 17099,
+      "n_common_measured_DE_genes": 10569,
+      "model_gene_library_fraction_median": 0.9674418604651163
+    }
+  ],
+  "limits": "Operational mixed-RNA exclusion is not proof of artificial doublets. Related lineage/state overlaps were not auto-excluded."
+}
