@@ -115,14 +115,22 @@ else:
 log(step='loaded', shape=A.shape, doublet_scored=int(A.obs['doublet_score'].notna().sum()))
 
 # ---- HVG (per source, merged ranks), state scores, regression, scale, PCA ----
-A.obs['hvg_batch'] = A.obs['source'].astype(str)
-vc = A.obs['hvg_batch'].value_counts()
-A.obs.loc[A.obs['hvg_batch'].isin(vc.index[vc < MIN_SRC]), 'hvg_batch'] = 'pooled_small_sources'
 cand = np.isin(genes, common) & ~np.array([excluded(x) for x in genes])
-B = ad.AnnData(X=A.layers['counts'][:, cand], obs=A.obs[['hvg_batch']].copy(), var=pd.DataFrame(index=np.array(genes)[cand]))
-nb = A.obs['hvg_batch'].nunique()
-sc.pp.highly_variable_genes(B, n_top_genes=N_HVG, flavor='seurat_v3', batch_key='hvg_batch' if nb > 1 else None)
+vc = A.obs['source'].astype(str).value_counts()
+min_src = MIN_SRC
+while True:  # the seurat_v3 loess can be singular on a small batch: pool more small sources and retry, threshold is logged
+    A.obs['hvg_batch'] = A.obs['source'].astype(str)
+    A.obs.loc[A.obs['hvg_batch'].isin(vc.index[vc < min_src]), 'hvg_batch'] = 'pooled_small_sources'
+    B = ad.AnnData(X=A.layers['counts'][:, cand], obs=A.obs[['hvg_batch']].copy(), var=pd.DataFrame(index=np.array(genes)[cand]))
+    nb = A.obs['hvg_batch'].nunique()
+    try:
+        sc.pp.highly_variable_genes(B, n_top_genes=N_HVG, flavor='seurat_v3', batch_key='hvg_batch' if nb > 1 else None)
+        break
+    except ValueError as e:
+        log(step='hvg_retry', min_src=min_src, error=str(e)[:80])
+        min_src *= 2
 hvg = list(B.var_names[B.var['highly_variable']]); del B
+log(step='hvg_done', min_src=min_src, batches=nb)
 REG = [x for x in os.environ.get('STATE_REGRESS', ','.join(STATES)).split(',') if x]
 for k, gs in STATES.items():
     gs = [x for x in gs if x in A.var_names]
