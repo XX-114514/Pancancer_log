@@ -1,0 +1,28 @@
+{
+ "stage": 1,
+ "scope": "decision rules, thresholds, analysis script; synthetic validation only",
+ "frozen_at_utc": "2026-11-06T10:37:58+00:00",
+ "approved_by": "user in session 2026-11-06: 按建议值冻结",
+ "evidence_baseline": "XX-114514/Pancancer_log main@4163d3f7",
+ "real_data_touched": false,
+ "new_effects_computed": false,
+ "known_disclosures": [
+  "TCGA effects of the 4 axes were seen before this freeze; this is calibration, not blinded confirmation",
+  "equivalence margin proposed after the DDR1 point estimate (0.95) was known"
+ ],
+ "pending_stage2": [
+  "axis gene definitions",
+  "139 priority axes table",
+  "input and covariate tables",
+  "public timestamp commit"
+ ],
+ "sha256": {
+  "E2_冻结方案_v1.0.md": "92b1c523cd41d08b88bab02ae7b4fe800e9f0c9e808288c145b4dded6a9d2b1d",
+  "e2_axis_increment.R": "f859be89974c298c56ecceae46b6c02cc32ecc6f861e805e59c5f45f5e0fc72f",
+  "E2_config_template.R": "dc179956e374cbfa914763fd9937bb20368b3be08e4067452f7877151b4e4cb8",
+  "test/make_synthetic.R": "bf4cf27f1ee4feaef56a998bf90c45e63b4d21ad13285c827abc57d225be5276",
+  "test/config_synthetic.R": "b6e9ad74b056b411040e7dcd3f143f2cb14101a33bd18def603dee5d3cc2391d",
+  "test/run_tests.sh": "6dd652023050cd5c426c77e9c74892d8bfb945b3103a2f4f6b5070c93065815b",
+  "test/test_output_stage1.txt": "7acf7b324632f1cb6c6fc4e48d4536cc03f4b5a69aa1a1c0b509f271668668cb"
+ }
+}

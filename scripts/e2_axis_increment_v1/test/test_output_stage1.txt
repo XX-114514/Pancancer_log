@@ -1,0 +1,45 @@
+### T1 未过复现门时拒绝计算新效应
+PASS
+### T2 已发表值被改动时复现门拦截
+PASS
+### T3 完整流程(埋入答案)
+        axis        p_N2a        p_N2b        p_N3L        p_N3R p_axis_holm
+1    AX_TRUE 0.0004997501 0.0004997501 0.0004997501 0.0004997501   0.0019990
+2 AX_LIGONLY 0.0004997501 0.0004997501 0.4982508746 0.0004997501   0.9965017
+3    AX_NULL 0.5462268866 0.4782608696 0.4792603698 0.6166916542   0.9965017
+4    AX_CONF 0.0004997501 0.0004997501 0.0004997501 0.0004997501   0.0019990
+  nested_pass S4_retained S4_pass LOCO_all_same RE_pass
+1        TRUE   1.0208255    TRUE          TRUE    TRUE
+2       FALSE   1.0326753    TRUE          TRUE    TRUE
+3       FALSE   0.2849174   FALSE         FALSE   FALSE
+4        TRUE   0.2553800   FALSE          TRUE    TRUE
+                                tier
+1                      A_axis_robust
+2                B_gene_level_robust
+3                   C_not_above_null
+4 A_minus_axis_confounding_sensitive
+         axis  HR_proxy        lrt_p HR_parent_A HR_parent_C
+1     AX_TRUE 1.3515476 4.997313e-50   0.9097648   0.8066919
+2  AX_LIGONLY 1.1884241 3.735035e-22   0.9097648   0.9067905
+3     AX_NULL 0.9974765 8.963100e-01   0.9097648   0.9097064
+4     AX_CONF 1.2696447 1.682673e-51   0.9097648   0.9044421
+5 AX_SUBSUMED 1.0408781 1.181903e-01   1.2683775   1.2303133
+6   AX_ABSORB 1.2183457 9.392885e-23   1.1079248   0.9931591
+                     class
+1                decoupled
+2          increment_other
+3                no_signal
+4          increment_other
+5 subsumed_equivalence_met
+6                 absorbed
+  n_axes frac_q05_adverse frac_q05_any specificity_flag
+1     40                0            0            FALSE
+2026-11-06T21:36:38+1100 done 
+### T4 输出不覆盖
+PASS
+### T5 假阳性校准: 30 条随机轴
+  family p_emp.frac05 p_emp.median
+1    N2a   0.03333333   0.46307385
+2    N2b   0.03333333   0.46307385
+3    N3L   0.06666667   0.39321357
+4    N3R   0.00000000   0.49201597
