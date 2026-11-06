@@ -50,3 +50,40 @@ Endothelial	13	Proliferating_EC	keep_state	MKI67, TOP2A, CENPF
 Endothelial	14	EC_macrophage_doublet_like	remove_doublet_like	C1Q, APOE, TYROBP, doublet z 1.71
 Endothelial	16	EC_epithelial_RNA	remove_wrong_lineage	KRT19, MUC1, PIGR, SFN, 77 cells
 Endothelial	11	EC_activated_small	keep_state	SELE, SOCS3, CXCL2, 43 cells, source restricted
+B_Plasma	10	B_activated_like	keep	CD69, CD83, NR4A1/2, BANK1
+B_Plasma	3	B_low_depth	keep_flag_low_depth	MS4A1 only, 757 genes
+B_Plasma	8	B_naive_like	keep	FCER2, CXCR4, BANK1, MS4A1
+B_Plasma	9	B_memory_like	keep	TNFRSF13B, BANK1, CD82
+B_Plasma	5	Plasma	keep	MZB1, DERL3, XBP1, FKBP11; uncertain 0.21
+B_Plasma	0	Plasma_low_depth	keep_flag_low_depth	MZB1, DERL3, 845 genes
+B_Plasma	2	Plasma_stress_like	keep	MZB1, PRDM1, GADD45A, DUSP5
+B_Plasma	1	Plasma_low_depth	keep_flag_low_depth	MZB1, DERL3, 526 genes
+B_Plasma	6	B_T_doublet_like	remove_doublet_like	CD3D, CD3E, IL32, doublet z 3.31
+B_Plasma	11	B_germinal_center_like	keep	RGS13, LMO2, NEIL1, HMGB2
+B_Plasma	12	B_low_depth	keep_flag_low_depth	B detection 0.55, 895 genes, no markers
+B_Plasma	15	B_metallothionein_ambient	set_aside_review	MT2A, MT1X, SLC30A1, contamination 0.205; 1,789 of 3,132 cells from one sample (GSE184362 PTC2_LeftLN)
+B_Plasma	13	B_one_dataset	keep_flag_source_restricted	MS4A1, HLA-DQA2; 99% GSE184362; check in round 2
+B_Plasma	4	Plasma_ER_cycling	keep_state	HSP90B1, HSPA5, RRM2, MZB1
+B_Plasma	16	pDC_misplaced	move_to_Myeloid	LILRA4, IRF7, PLD4, GZMB; pDC can co-cluster with B cells (Qian 2020)
+B_Plasma	14	B_low_depth	keep_flag_low_depth	B detection 0.79, 776 genes, no markers
+B_Plasma	7	Plasma_metallothionein	keep_state	MT1E, MT2A, DERL3, MZB1
+Stromal	0	Pericyte_like	keep	RGS5, NOTCH3, KCNJ8, NDUFA4L2
+Stromal	14	Fibroblast_adventitial_inflammatory_like	keep	CFD, APOD, C3, CXCL12, DCN
+Stromal	4	Smooth_muscle_like	keep	MYH11, ACTG2, ACTA2, TAGLN
+Stromal	9	CAF_matrix_low_depth	keep	CTHRC1, COL10A1, THBS2, 1,245 genes
+Stromal	16	CAF_inflammatory_like	keep	CXCL1, MMP1, CXCL3, INHBA, TNFAIP6
+Stromal	1	Pericyte_like	keep	RGS5, NOTCH3, STEAP4, COL4A1
+Stromal	2	Stromal_low_depth	keep_flag_low_depth	fibroblast detection 0.56, 708 genes, no markers
+Stromal	10	CAF_matrix_like	keep	MMP11, COL10A1, CTHRC1, INHBA
+Stromal	6	Fibroblast_low_depth	keep_flag_low_depth	APOD, CFD, MFAP4, 1,163 genes
+Stromal	8	Stromal_with_epithelial_mesothelial_RNA	set_aside_review	KRT19/KRT8 about 0.45, MSLN 0.20, UPK3B 0.14, COL1A1 0.76, doublet z -0.35: mixed, not a clean population, no doublet evidence
+Stromal	13	CAF_SFRP4_like	keep	SFRP4, ITGBL1, COL10A1, ASPN
+Stromal	3	Vascular_mural_fibroblast_like	keep	COL4A1, COL18A1, THY1, NOTCH3; RGS5 0.66 with COL1A1 0.98; resolved in round 2
+Stromal	17	Stromal_T_doublet_like	remove_doublet_like	CD3D, PTPRC, NKG7, doublet z 2.41
+Stromal	15	Fibroblast_subepithelial_like	keep	PLAT, F3, BMP4, FOXF1, WNT5A
+Stromal	7	Fibroblast_PI16_universal_like	keep	PI16, MFAP5, IGFBP6, PRG4
+Stromal	11	Proliferating_fibroblast	keep_state	TOP2A, MKI67, TYMS; doublet z 1.03 explained by cycling
+Stromal	18	Stromal_macrophage_doublet_like	remove_doublet_like	C1Q, HLA-DR, TYROBP, SPP1, doublet z 2.65
+Stromal	5	Stromal_low_depth	keep_flag_low_depth	fibroblast detection 0.59, no markers
+Stromal	19	Fibroblast_one_sample	keep_flag_source_restricted	MMP1, TNFAIP6, TWIST1; 1,055 of 1,136 cells from one sample (GSE173682 3E5CFL); check in round 2
+Stromal	12	Endometrial_stroma_like	keep_flag_source_restricted	HOXA10, ESR1, WFDC1, 97.5% endometrial, 315 cells
