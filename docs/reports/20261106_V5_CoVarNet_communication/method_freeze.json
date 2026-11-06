@@ -1,0 +1,43 @@
+{
+  "version": "20261106_v1_pre_effect",
+  "historical_branch": "20260825_V5_K9",
+  "scope": "all_CM01_to_CM09; no_refit",
+  "paper": {
+    "global_cap_per_identity": 1000,
+    "comparison": "CMT_argmax_H_vs_all_other_CMT_samples",
+    "fig3g_code_alternative": "CCI_at_CMT_m_vs_median_CCI_across_other_CMTs",
+    "members": "frozen_covarnet_each_nodes; old_LIANA_top10_separate",
+    "database": "v4.1.0_from_author_code; checksum_required",
+    "cpdb_package_author": "unspecified",
+    "cpdb_explicit_author_args": {"pvalue":0.05,"subsampling":false,"counts_data":"hgnc_symbol","threads":12},
+    "iterations_author": "not_explicit_in_paper_or_code",
+    "threshold_author": "not_explicit_in_paper_or_code",
+    "pair_test": "two_sided_paired_Wilcoxon_nonself_ordered_pairs",
+    "cytokine_DE": "Scanpy_t_test_log2FC_gt_log2_1.2_FDR_lt_0.05",
+    "signature": "Immune_Dictionary_S3_cell_type_specific; MGI_one_to_one",
+    "cytokine_network": "producer_normalized_mean_gt_0.1_in_nonresponsive_member",
+    "author_code_defects": ["sig_means_file read but sig_means used", "hardcoded 12 CMTs", "missing pairs zero-filled", "MGI duplicate-first removal does not establish reciprocal one-to-one", "enricher universe not explicit"]
+  },
+  "implementation_choices_not_claimed_as_author": {
+    "seed":1337,"iterations":1000,"threshold":0.1,"threads":4,
+    "normalization":"verified_native_counts_total_1e4_log1p",
+    "CMT":"argmax raw frozen H; column normalization invariant; no per-CM scaling",
+    "ties":"exclude if maxima isclose(rtol=1e-10,atol=1e-12) multiple; missing/nonfinite/negative/zero-total excluded",
+    "absent_pair":"NA not zero; keep full eligibility",
+    "global_overlap":"directed cellpair-LR counted once globally; separate CM memberships inclusive, nonadditive; union totals deduplicate",
+    "self_pairs":"retained in LR outputs, excluded Fig3g test",
+    "comparison_cap":"no cap for formal High/Low; technical pilot explicitly separate",
+    "family":"all frozen CM by eligible ordered cell pairs by full DB LR; no old rank filtering"
+  },
+  "project_extension": {
+    "biological_unit":"verified patient; unknown patient not silently sample-as-patient",
+    "strata":["cancer","material","timepoint","source"],
+    "min_patients_per_group":10,"min_cells_per_identity_sample":20,
+    "estimability":"both groups within comparable stratum; full-rank design; no complete source confounding",
+    "readout":"continuous native expression LR, secondary LIANA ranks/support; continuous H complementary",
+    "covariates":["log_cell_numbers","library_detection","parent_lineage_composition"],
+    "uncertainty":"patient-cluster resampling or valid patient-level model; 95% CI; complete family BH",
+    "source_check":"within-source effects and leave-one-source-out where estimable",
+    "response":"separate patient pseudobulk; measured gene universe; preserve up/down signatures; no pathway substitution"
+  }
+}

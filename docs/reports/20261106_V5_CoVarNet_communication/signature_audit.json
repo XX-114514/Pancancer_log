@@ -1,0 +1,29 @@
+{
+  "reciprocal_one_to_one_mappings": 17092,
+  "mapped_signature_rows": 60095,
+  "original_directions": {
+    "up": 51804,
+    "down": 20183
+  },
+  "unmapped_by_type": {
+    "B cell": 680,
+    "cDC1": 1191,
+    "cDC2": 1929,
+    "eTAC": 24,
+    "ILC": 106,
+    "Langerhans": 283,
+    "Macrophage": 792,
+    "Mast cell": 155,
+    "MigDC": 581,
+    "Monocyte": 661,
+    "Neutrophil": 130,
+    "NK cell": 1112,
+    "pDC": 641,
+    "CD4+ T cell": 813,
+    "CD8+ T cell": 997,
+    "\u03b3\u03b4 T cell": 1130,
+    "Treg": 667
+  },
+  "orthology_source": "current_MGI_20261106_not_author_archived_snapshot",
+  "author_direction_handling": "code selects Cytokine,Gene only; project preserves signs"
+}

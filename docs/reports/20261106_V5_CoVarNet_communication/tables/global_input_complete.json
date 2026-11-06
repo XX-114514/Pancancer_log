@@ -1,0 +1,10 @@
+{
+  "n_cells": 71329,
+  "n_genes": 10432,
+  "n_identities": 87,
+  "seconds": 357.83625507354736,
+  "counts_integer_verified_on_blocks": true,
+  "normalization": "total_1e4_then_log1p",
+  "selection_sha256": "3c99f432f9a3d66bea93b8b67dd91a20b66a783ef9fb880113245cd802641c9a",
+  "h5ad_sha256": "778c2ec6d3b54a13ebccb4416036a5d575c1dab3fb692f6cbcbb7408078da83d"
+}

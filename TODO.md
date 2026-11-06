@@ -1742,3 +1742,11 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [ ] 在T/NK/ILC共同范围提取新版完整基因证据，复核T6 helper/Treg及混合RNA；不能直接按新panel整群转标签。
 - [ ] 按谱系真实重建、来源/患者留出复现、人工命名验收；允许红系/HSPC/ILC等停在已验证大类。
 - [ ] 补齐368条逐基因原始参考核实及3个模块的参考适配缺口；需要UCell时先验证官方包/可选分支。
+
+## 2026-11-06 V5原文式通讯
+
+- [x] 冻结版本、方法、全部成员/CMT资格、资源与真实小试。
+- [ ] 接受同一run正式A/B/D终态、全部LR/阴性家族及图件，补驱动分解。
+- [ ] 患者资料桥补齐后按冻结家族执行C/pseudobulk；当前不可估计。
+
+见[报告](docs/reports/20261106_V5_CoVarNet_communication/README.md)。

@@ -1,0 +1,11 @@
+{
+  "status": "technical_pass",
+  "rows": 271,
+  "ordered_pair_columns": 7569,
+  "all_output_sha_verified": true,
+  "pvalue_range": [
+    0.0,
+    1.0
+  ],
+  "pilot_not_scientific_result": true
+}

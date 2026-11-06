@@ -1,0 +1,43 @@
+{
+  "UTC": "2026-11-06T03:54:46.160551+00:00",
+  "W_shape": [
+    87,
+    9
+  ],
+  "H_shape": [
+    9,
+    1303
+  ],
+  "H_nonfinite": 0,
+  "H_sum_range": [
+    4.0,
+    19.24345509353689
+  ],
+  "ties": 0,
+  "CMT_counts": {
+    "CM02": 223,
+    "CM05": 201,
+    "CM03": 185,
+    "CM06": 171,
+    "CM08": 152,
+    "CM04": 112,
+    "CM07": 110,
+    "CM01": 81,
+    "CM09": 68
+  },
+  "network_members": {
+    "CM01": 6,
+    "CM02": 9,
+    "CM03": 10,
+    "CM04": 7,
+    "CM05": 10,
+    "CM06": 8,
+    "CM07": 10,
+    "CM08": 10,
+    "CM09": 9
+  },
+  "cells": 4676787,
+  "identity_labels": 87,
+  "index_equal": true,
+  "patient_mapping": "not_yet_verified"
+}

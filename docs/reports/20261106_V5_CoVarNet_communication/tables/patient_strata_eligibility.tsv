@@ -1,0 +1,28 @@
+cm	source	cancer	material	timing	n_high_patients	n_low_patients	status
+CM01	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	2	12	insufficient_or_confounded
+CM01	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	1	5	insufficient_or_confounded
+CM01	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	0	9	insufficient_or_confounded
+CM02	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	1	13	insufficient_or_confounded
+CM02	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	1	5	insufficient_or_confounded
+CM02	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	0	9	insufficient_or_confounded
+CM03	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	0	14	insufficient_or_confounded
+CM03	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	2	4	insufficient_or_confounded
+CM03	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	1	8	insufficient_or_confounded
+CM04	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	1	13	insufficient_or_confounded
+CM04	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	0	5	insufficient_or_confounded
+CM04	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	1	8	insufficient_or_confounded
+CM05	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	5	9	insufficient_or_confounded
+CM05	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	0	5	insufficient_or_confounded
+CM05	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	0	9	insufficient_or_confounded
+CM06	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	0	14	insufficient_or_confounded
+CM06	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	2	5	insufficient_or_confounded
+CM06	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	4	5	insufficient_or_confounded
+CM07	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	0	14	insufficient_or_confounded
+CM07	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	1	4	insufficient_or_confounded
+CM07	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	3	6	insufficient_or_confounded
+CM08	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	3	11	insufficient_or_confounded
+CM08	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	0	5	insufficient_or_confounded
+CM08	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	0	9	insufficient_or_confounded
+CM09	GSE115978	Melanoma	primary_or_unspecified_tumor	post-treatment	2	12	insufficient_or_confounded
+CM09	GSE297041	Cervical cancer	primary_or_unspecified_tumor	on-treatment	1	5	insufficient_or_confounded
+CM09	GSE297041	Cervical cancer	primary_or_unspecified_tumor	pre-treatment	0	9	insufficient_or_confounded

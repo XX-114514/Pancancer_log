@@ -932,3 +932,7 @@ A4是未来检验“哪些通讯特征对模块活动有额外解释”的方案
 
 
 2026-10-23T18:10:19.794994+00:00 UTC: both new source-lineage numerical gates are now accepted. Move from group proposals to equal per-cell confidence/rare-unknown handling, then qualified lineage features, reference selection and full-archive mapping. Preserve full-scope acceptance gates and separate identity/state evidence.
+
+## 2026-11-06 历史通讯补分析分支
+
+V5/K9独立补分析：输入/方法冻结与真实小试已过→正式全局CPDB、CMT High/Low及Immune Dictionary响应→完整家族读回和图件→患者资料合格后稳健性。当前不新建V7扩展，不改注释/CM。见[报告](docs/reports/20261106_V5_CoVarNet_communication/README.md)。

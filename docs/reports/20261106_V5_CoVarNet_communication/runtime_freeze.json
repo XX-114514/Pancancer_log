@@ -1,0 +1,11 @@
+{
+  "UTC": "2026-11-06T03:54:59.330070+00:00",
+  "cpdb_package": "5.0.1",
+  "author_package_version": "not_specified",
+  "db": "v4.1.0",
+  "db_sha256": "bac6dc33a959f39a79465e0d09b556094da4e154825e50f1470b909a6a62188c",
+  "formal_iterations": 1000,
+  "pilot_iterations": 20,
+  "pilot_cap": 100,
+  "pilot_selection": "global per-identity fixed seed, all identities; not scientific result"
+}
