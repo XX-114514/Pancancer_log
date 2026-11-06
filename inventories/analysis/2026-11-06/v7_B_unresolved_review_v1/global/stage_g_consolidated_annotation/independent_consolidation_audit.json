@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T05:57:49.171116+00:00",
+  "n_frozen_cells": 4676787,
+  "n_frozen_labels": 106,
+  "n_refit_reviewed_targets": 423375,
+  "n_primary_QC_keep": 4668312,
+  "n_QC_excluded": 8237,
+  "n_QC_holdout": 238,
+  "all_original_labels_and_strict_flags_preserved": true,
+  "all_frozen_malignancy_columns_preserved_not_rerun": true,
+  "all_overlay_target_sets_disjoint_and_exact": true,
+  "B_reference_controls_not_overlaid": 8565,
+  "all_public_aggregate_counts_recomputed": true,
+  "full_private_TSV_stream_axis_and_values_verified": true,
+  "all_private_artifact_SHA_verified": true,
+  "frozen_V7_SHA256_unchanged": "e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e",
+  "fine_identity_final_accepted_this_cycle": false
+}

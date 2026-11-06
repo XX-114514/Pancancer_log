@@ -1,6 +1,6 @@
 # PanCancer
 
-> **V7 B-unresolved实查（2026-11-06）**：[16群完整表与6张marker对应身份图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)。157,888目标完成counts重建和工作旁表独立审计，101,299大类工作／56,589身份待复查；发现B细分不足与旧父类混杂并存。QC-v4累计8,237排除／238暂存／4,668,312保留。全V7当前注释合并正在导出，细分终验仍待。
+> **V7 B-unresolved与完整当前注释（2026-11-06）**：[16群与6张marker图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md) · [全部106冻结／142当前标签值](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/CURRENT_ALL_ANNOTATIONS.md) · [Excel](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/V7_current_annotation_20261106.xlsx)。B的157,888目标独立审计通过，101,299大类工作／56,589身份复查；全V7 4,676,787行完整保留，423,375个目标本周期重建，其余明确继承。QC-v4为8,237排除／238暂存／4,668,312保留；导出完整不代表全V7细分终验。
 
 > **V7其他unresolved实查（2026-11-06）**：[红系、血小板、HSPC、ILC的59群完整工作表与16张marker图](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)。实际清理后70,778细胞重建，发现父类误标与共享程序；27,074大类工作记录、43,704身份待复查。QC-v3累计2,916排除／238暂存／4,673,633保留；冻结V7不改，最终细分未接受。
 

@@ -2,7 +2,7 @@
 
 - 157,888目标、8,565参考、16诊断群；327 marker单独统计目标，交付6张明确marker对应身份/候选/状态的图。
 - QC-v4累计8,237排除／238暂存／4,668,312保留；101,299大类工作、56,589身份复查，所有输入/marker/旁表独立核验。
-- [B结果与文献边界](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)，完整轴导出进行中，最终细分及全V7发表验收仍待。
+- [B结果与文献边界](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)及[完整V7注释](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/CURRENT_ALL_ANNOTATIONS.md)：全部4,676,787行、106旧标签、142当前标签值、105诊断群和五页Excel完整交付并独立核验。未重建标签显式继承，最终细分及全V7发表验收仍待。
 
 ## 2026-11-06 V7其他unresolved四类复查
 

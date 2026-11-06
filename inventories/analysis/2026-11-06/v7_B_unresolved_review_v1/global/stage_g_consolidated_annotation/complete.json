@@ -1,0 +1,74 @@
+{
+  "status": "full_axis_working_annotation_written_and_readback_verified",
+  "UTC": "2026-11-06T05:55:44.678902+00:00",
+  "n_frozen_cells": 4676787,
+  "n_frozen_labels": 106,
+  "n_current_parent_categories": 53,
+  "n_current_annotation_labels": 142,
+  "n_current_label_status_records": 263,
+  "n_primary_QC_keep": 4668312,
+  "n_QC_exclude": 8237,
+  "n_QC_holdout": 238,
+  "n_refit_reviewed_targets": 423375,
+  "n_broad_working_refit_targets": 322270,
+  "n_refit_identity_review_required": 101105,
+  "n_B_context_controls_overlaid": 0,
+  "n_parent_changed_malignancy_context_recheck": 144308,
+  "frozen_malignancy_axis_preserved_not_rerun": true,
+  "index_hash": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16",
+  "canonical_V7_changed": false,
+  "final_fine_identity_accepted_this_cycle": false,
+  "state_semantics": "Cluster-associated RNA context, not a per-cell functional state confirmation.",
+  "files": [
+    {
+      "name": "current_annotation_all_cells_PRIVATE.pkl.gz",
+      "bytes": 43717274,
+      "sha256": "c9c4d447645e135481739928be6d1e22cee104c7f2e38c9be75c7d8c753a2f73"
+    },
+    {
+      "name": "current_annotation_all_cells_PRIVATE.tsv.gz",
+      "bytes": 119414104,
+      "sha256": "e5b4c55b30a85fff329e751fc0675f88d7065aefcff1d50427535ecfc5cd6fb1"
+    },
+    {
+      "name": "review_layer_counts.tsv",
+      "bytes": 173,
+      "sha256": "5858a0d0ea3f8c66fd8b24a51558f2f7f3eb97b57a258791343fd38f3ce05230"
+    },
+    {
+      "name": "current_annotation_label_counts.tsv",
+      "bytes": 36307,
+      "sha256": "317bda962e59eff33a152e7f8756bfc53fcb7c34553924e7e0a435a92b322257"
+    },
+    {
+      "name": "frozen_to_current_crosswalk.tsv",
+      "bytes": 47492,
+      "sha256": "6dc41ecb04cfa9156507c717a0fad4dafd7ec71252c2bcbc289a4cb578ba01e1"
+    },
+    {
+      "name": "current_parent_summary.tsv",
+      "bytes": 2651,
+      "sha256": "f2fbaac13c9b7e00ec410a2416f73c0e0a6fd4bb7f00b8ee3081005eaabdf47b"
+    },
+    {
+      "name": "all_106_frozen_labels_current_status.tsv",
+      "bytes": 34362,
+      "sha256": "b8b3d9273d383e3796174a5b2c31b88bd2e4fab16fa53e2813cbc4a2cf165086"
+    },
+    {
+      "name": "frozen_malignancy_axis_current_context_counts.tsv",
+      "bytes": 39561,
+      "sha256": "fa02fa0112e0ba2d046f7d73748ea4b6067bd8cc5e5d8b014b340aa32513eae6"
+    },
+    {
+      "name": "frozen_confidence_counts.tsv",
+      "bytes": 6444,
+      "sha256": "6b13e31e5fdd037d59cdd5934766e652e1c3ca3cb20ed2afc2b7524cace665a4"
+    },
+    {
+      "name": "all_reviewed_cluster_inventory.tsv",
+      "bytes": 27355,
+      "sha256": "46fa66becae80fa4a75d63425c063a73aeb0ca91f152994c335e1907b97e0aab"
+    }
+  ]
+}

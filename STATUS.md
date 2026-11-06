@@ -1,6 +1,6 @@
-## 2026-11-06 V7 B未定群工作侧表完成，完整轴导出进行中
+## 2026-11-06 V7 B工作侧表与完整当前视图已独立核验
 
-[16群全表、327 marker及6张图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)：157,888目标＋8,565正向表达参考从counts重建，R terminal0；目标marker单独统计，主表/补充表/工作旁表独立审计PASS。101,299大类工作记录（含84,447个B）、56,589身份待复查，未接受最终细分。B00/01/12分别有memory/naive/GC-like候选，B11为B＋IFN背景；B06/07髓系及DC方向，B14内皮，混合与低信息继续父类复查。QC-v4实际8,237排除／238暂存／4,668,312保留，冻结V7未改。完整4.67M轴正在合并此前各轮侧表，导出验收以独立审计为准；新TME和CoVarNet输入不变。
+[16群全表、327 marker及6张图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)：157,888目标＋8,565正向表达参考从counts重建，R terminal0；主表/补充表/工作旁表独立审计PASS。101,299大类工作记录（B 84,447）、56,589身份复查；B00/01/12为memory/naive/GC-like候选，B11为B＋IFN背景，B06/07髓系及DC方向、B14内皮。全V7[完整标签与Excel](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/CURRENT_ALL_ANNOTATIONS.md)已合并4,676,787行，05:57:49 UTC独立审计PASS：423,375重建目标，322,270大类工作／候选、101,105身份复查，4,244,937个QC保留细胞沿用旧标。53父类／待核类别与142标签值包含占位及历史，不是新细胞类型数。QC-v4为8,237排除／238暂存／4,668,312保留，原标签/strict/CNV七列和冻结SHA保留；未接受本周期最终细分。B coarse的111,535保留记录及其他未重建标签仍待；新TME和CoVarNet输入不变。
 
 ## 2026-11-06 V7其他unresolved四类较早QC-v3工作复查
 

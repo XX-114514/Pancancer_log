@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "sheets": [
+    "当前总览",
+    "当前标签",
+    "冻结V7",
+    "已复核群",
+    "冻结CNV轴"
+  ],
+  "cached_formula_headlines_equal_verified_scientific_aggregates": true,
+  "all_detail_cells_exactly_equal_verified_aggregate_sources": 7342,
+  "native_formula_count": 441,
+  "no_native_error_cells_or_external_workbook_links": true,
+  "four_native_filtered_tables": true,
+  "all_detail_sheets_freeze_five_rows_two_columns": true,
+  "xlsx_bytes": 64173,
+  "xlsx_sha256": "a9fc1a4f9ae546c580714548b0aa1e91b2a042e82ac8acb772ce53350a27c3a6",
+  "all_five_sheets_visually_reviewed": true,
+  "source_count_change_and_restore_recalculation_verified": true,
+  "formula_headlines": {
+    "frozen": 4676787,
+    "keep": 4668312,
+    "exclude": 8237,
+    "hold": 238,
+    "refit": 423375,
+    "broad": 322270,
+    "review": 101105,
+    "B": 157888
+  },
+  "created_with": "oai_artifact_tool",
+  "scientific_scope": "Aggregate workbook; no cell or patient rows, no matrices."
+}
