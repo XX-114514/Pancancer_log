@@ -8,5 +8,12 @@
   "all_original_name_and_fallback_masks_independently_verified": true,
   "all_private_TSV_cells_and_labels_stream_verified": true,
   "new_fallback_marker_support_independently_verified": true,
-  "all_atlas_publication_acceptance": false
+  "all_atlas_publication_acceptance": false,
+  "postmerge_validation_errors": 0,
+  "postmerge_validation_warnings": 1,
+  "postmerge_validation_log_sha256": "86955daddae05c652fb9c6ec071e56579bde023769961feb7ff6b834e10ae4ff",
+  "content_commit": "16c1d9af",
+  "ordinary_merge_commit": "e7ab6e8100eca7c5b299f6467d2ceea57d7a7ce8",
+  "remote_main_independently_verified": "e7ab6e8100eca7c5b299f6467d2ceea57d7a7ce8",
+  "UTC_verified": "2026-11-06T12:12:19Z"
 }
