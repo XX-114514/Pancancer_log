@@ -163,3 +163,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [2026-11-05 V7 全panel修复与文献引导算法](20261105_v7_panel_repair_v1.md)：112模块/409基因、162项迁移、合成QC重建与真实聚合回放；全V7最终重新注释未完成。
 
 - [2026-11-05 V7全量doublet历史核验](20261105_v7_doublet_provenance_audit_v1.md)：54来源全4676787细胞及原过滤账本，非新增模型/排除。
+
+- [20261106 V7授权QC清理和谱系重建](20261106_v7_QC_clean_reannotation_v1.md)：实际mask/input已审计、Mast/T6重拟合已启动，最终身份待验。

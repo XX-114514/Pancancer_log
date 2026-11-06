@@ -1,0 +1,23 @@
+[
+  {
+    "low_detectable": true,
+    "high_call_fraction": false,
+    "unstable_call_fraction": false,
+    "n_units": 60,
+    "n_cells": 18414
+  },
+  {
+    "low_detectable": true,
+    "high_call_fraction": false,
+    "unstable_call_fraction": true,
+    "n_units": 7,
+    "n_cells": 1270
+  },
+  {
+    "low_detectable": true,
+    "high_call_fraction": true,
+    "unstable_call_fraction": true,
+    "n_units": 2,
+    "n_cells": 278
+  }
+]

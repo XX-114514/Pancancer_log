@@ -1,0 +1,38 @@
+{
+  "status": "cleaning_masks_applied_and_exact_refit_inputs_exported",
+  "UTC": "2026-11-06T00:39:54.239465+00:00",
+  "n_frozen": 4676787,
+  "n_primary_excluded": 1967,
+  "n_QC_holdout": 236,
+  "n_primary_keep": 4674584,
+  "n_joint_anchor_excluded": 1933,
+  "n_supplement_excluded": 34,
+  "n_supplement_proposed_but_not_adopted": 1,
+  "frozen_index_pandas_hash": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16",
+  "original_V7_modified": false,
+  "exclusion_semantics": "Operational primary-QC exclusion, not ground-truth doublet confirmation. Holdouts are distinct from exclusion.",
+  "lineages": [
+    {
+      "lineage": "T6",
+      "n_before": 156631,
+      "n_exclude_joint_anchor": 783,
+      "n_exclude_supplement": 0,
+      "n_joint_anchor_holdout": 62,
+      "n_QC_keep": 155786,
+      "n_model_eligible": 155786,
+      "n_parent_or_competing_holdout_for_fine_analysis": 0,
+      "n_sources": 52
+    },
+    {
+      "lineage": "Mast",
+      "n_before": 45036,
+      "n_exclude_joint_anchor": 1150,
+      "n_exclude_supplement": 0,
+      "n_joint_anchor_holdout": 173,
+      "n_QC_keep": 43713,
+      "n_model_eligible": 38959,
+      "n_parent_or_competing_holdout_for_fine_analysis": 4754,
+      "n_sources": 46
+    }
+  ]
+}

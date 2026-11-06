@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "frozen_index_hash": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16",
+  "n_frozen": 4676787,
+  "n_excluded": 1967,
+  "n_holdout": 236,
+  "n_keep": 4674584,
+  "lineages": [
+    {
+      "lineage": "T6",
+      "n_before": 156631,
+      "n_exclude": 783,
+      "n_holdout": 62,
+      "n_fit": 155786,
+      "n_sources": 52,
+      "model_gene_candidates": 17252,
+      "DE_common_measured_genes": 11091,
+      "exact_counts": true
+    },
+    {
+      "lineage": "Mast",
+      "n_before": 45036,
+      "n_exclude": 1150,
+      "n_holdout": 173,
+      "n_fit": 38959,
+      "n_sources": 46,
+      "model_gene_candidates": 17608,
+      "DE_common_measured_genes": 12929,
+      "exact_counts": true
+    }
+  ],
+  "count_table_correction": "Original old_cluster_cleanup_counts.tsv holdout count used a mismatched label. Audited table uses exact independent masks. No mask or input error."
+}

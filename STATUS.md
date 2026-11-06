@@ -1,3 +1,7 @@
+## 2026-11-06 V7新增QC视图已审计，Mast/T6干净重建已启动
+
+[本轮登记](inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/README.md)：在冻结4,676,787细胞V7上新增1,967个主分析QC剔除、236个暂存，保留4,674,584；原对象/标签保留。T6输入155,786、Mast精细输入38,959，逐元素审计通过，00:42:18 UTC真实启动重建。未称新亚型已接受；其余谱系仍待逐类复审。这是旧V7排查，与新TME数据工作线分开。
+
 ## 2026-11-05 组织上皮注释资源已扩展，细胞标签未改
 
 原26个组织上皮组合已映射为32个候选模块（新增25、复用7），合并V7资源137模块/473个不同正向基因；逐基因文献与未纳入原因见[完整资源](resources/annotation/v7_epithelial_extension_v1/README.md)。11项反例/重放检查通过。已另提供[保留Lodi的185模块TME兼容版](resources/annotation/v7_epithelial_extension_v1/TME_V2_COMPATIBILITY.md)。此为资源与语义修订，尚未运行全V7上皮重聚类/DEG或更新最终标签。

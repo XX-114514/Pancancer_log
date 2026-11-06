@@ -1,0 +1,16 @@
+{
+  "status": "completed_legacy_unscored_supplement_candidate_review",
+  "UTC_start": "2026-11-06T00:30:26.440474+00:00",
+  "UTC_end": "2026-11-06T00:31:33.779847+00:00",
+  "n_cells": 28999,
+  "n_units": 115,
+  "n_fitted_units": 96,
+  "status_counts": {
+    "model_or_threshold_review": 19962,
+    "scored_stable_unit": 7711,
+    "not_evaluable_lt100": 1326
+  },
+  "n_consensus_exclusion_candidates": 35,
+  "histogram_adjudication_pending": true,
+  "old_scores_and_labels_modified": false
+}

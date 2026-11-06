@@ -1,0 +1,3 @@
+lineage	n_before	n_exclude_joint_anchor	n_exclude_supplement	n_joint_anchor_holdout	n_QC_keep	n_model_eligible	n_parent_or_competing_holdout_for_fine_analysis	n_sources
+T6	156631	783	0	62	155786	155786	0	52
+Mast	45036	1150	0	173	43713	38959	4754	46

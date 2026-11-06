@@ -1,0 +1,17 @@
+lineage	competing_program	n_joint_candidates	n_joint_with_distinct_anchor	n_not_joint_with_distinct_anchor
+T6	B	403	362	593
+T6	Plasma	145	144	922
+T6	Myeloid	257	242	507
+T6	Stromal	13	11	209
+T6	Epithelial	68	38	617
+T6	Endothelial	13	13	13
+T6	Platelet	1	0	1
+T6	Mast	13	13	58
+Mast	T	623	548	727
+Mast	B	110	95	122
+Mast	Plasma	56	55	204
+Mast	Myeloid	320	305	280
+Mast	Stromal	57	50	156
+Mast	Epithelial	254	145	538
+Mast	Endothelial	40	39	51
+Mast	Platelet	0	0	5
