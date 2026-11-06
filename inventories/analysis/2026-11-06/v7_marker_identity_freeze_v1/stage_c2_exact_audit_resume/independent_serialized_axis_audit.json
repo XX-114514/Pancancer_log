@@ -1,0 +1,17 @@
+{
+  "status": "PASS_full_axis_exact_value_and_complete_membership_audit",
+  "UTC_start": "2026-11-06T11:20:43.720674+00:00",
+  "UTC_end": "2026-11-06T11:21:42.457092+00:00",
+  "n_all_axis": 4676787,
+  "n_QC_keep": 4668312,
+  "n_frozen": 3918715,
+  "n_QC_keep_outside_identity_freeze": 749597,
+  "n_final_labels": 68,
+  "n_final_parents": 18,
+  "all_original_fields_and_CNV_exact": true,
+  "all_names_rule_ids_parents_and_inclusion_mask_exactly_recomputed_from_all_manual_decisions": true,
+  "source_full_axis_file_bytes": 50826220,
+  "source_full_axis_sha256": "67ae40da487ff246c3ad1df08add82d0f4a34202dfaaed5ebb42dd7f0d0e796c",
+  "source_file_unchanged_during_audit": true,
+  "no_missing_identity_assigned_a_biological_name": true
+}

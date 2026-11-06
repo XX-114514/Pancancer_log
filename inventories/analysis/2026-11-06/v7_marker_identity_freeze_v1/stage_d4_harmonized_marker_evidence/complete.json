@@ -1,0 +1,10 @@
+{
+  "status": "frozen_marker_expression_aggregated_not_new_fine_subtype_acceptance",
+  "UTC": "2026-11-06T11:40:11.462960+00:00",
+  "n_frozen_cells": 3918715,
+  "n_labels": 20,
+  "n_genes": 490,
+  "n_records": 9800,
+  "source_denominators_preserved": true,
+  "all_naming_markers_have_positive_measured_support": true
+}

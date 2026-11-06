@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T11:25:30.310420+00:00",
+  "n_all_axis": 4676787,
+  "n_frozen": 3918715,
+  "n_QC_keep_not_frozen": 749597,
+  "n_labels": 68,
+  "all_full_axis_and_complete_membership_proof_reused_by_exact_file_SHA": true,
+  "all_frozen_derivative_cells_and_all_columns_exact": true,
+  "all_frozen_identity_counts_recomputed": true,
+  "complete_private_TSV_axis_and_values_verified": true,
+  "all_artifact_hashes_verified": true,
+  "all_frozen_labels_have_no_progress_placeholders": true,
+  "all_registered_competitor_rules_after_related_axis_exceptions_verified_in_source_audit": true,
+  "all_atlas_publication_acceptance": false
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS_formal_annotation_freeze_export_and_exact_readback",
+  "UTC": "2026-11-06T11:42:51.292890+00:00",
+  "annotation_version": "V7_marker_identity_20261106_v3",
+  "n_frozen_cells": 3918715,
+  "n_final_label_values": 20,
+  "n_major_cell_types": 18,
+  "n_original_axis": 4676787,
+  "n_QC_keep_outside_identity_freeze": 749597,
+  "identity_column": "final_annotation",
+  "legacy_progress_label_columns_present_in_formal_view": false,
+  "all_identity_labels_free_of_progress_placeholders": true,
+  "all_CNV_columns_and_state_positive_flags_preserved_separately": true,
+  "private_TSV_complete_stream_readback": true,
+  "identity_granularity": "major-plus-marker; no new fine subtype or normality/function claim",
+  "original_V7_history": "Preserved separately in stage_c4_harmonized_identity_freeze/annotation_all_cells_with_release_status_PRIVATE.pkl.gz; not a formal identity column.",
+  "all_atlas_publication_acceptance": false,
+  "source_frozen_identity_file_sha256": "3b892178ec117d82e0f94c6822d1b0d7eacb5fbb4ab9951b10579dc1edf979f0",
+  "files": [
+    {
+      "name": "annotation_frozen_V7_marker_20261106_v3_PRIVATE.pkl.gz",
+      "bytes": 36380518,
+      "sha256": "5c11651c3882fdf9c1c07bf936df9e0e5a89c3666c594aa62718c4507080fbf4"
+    },
+    {
+      "name": "annotation_frozen_V7_marker_20261106_v3_PRIVATE.tsv.gz",
+      "bytes": 59996817,
+      "sha256": "f93e179dcbd60df163ad9c04b7353dd2a53acf5a980803626b2e1fed96c38c24"
+    },
+    {
+      "name": "formal_frozen_label_counts.tsv",
+      "bytes": 1006,
+      "sha256": "03553cb313c6003c205a0581b0c2de90f43ed8d6ad25fc51761df6860beb43f2"
+    }
+  ]
+}

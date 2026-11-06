@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T11:40:42.121012+00:00",
+  "n_frozen_cells": 3918715,
+  "n_labels": 20,
+  "n_all_marker_records": 9800,
+  "n_naming_marker_records": 40,
+  "n_distinct_naming_genes": 40,
+  "all_naming_gene_counts_denominators_CP10K_and_source_concentration_independently_verified": true,
+  "max_absolute_naming_marker_CP10K_error": 1.9184653865522705e-13,
+  "no_fine_subtype_or_function_inferred_from_names": true
+}

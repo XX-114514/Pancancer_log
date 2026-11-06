@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T11:39:03.861161+00:00",
+  "n_all_axis": 4676787,
+  "n_frozen": 3918715,
+  "n_labels": 20,
+  "n_parents": 18,
+  "all_membership_QC_CNV_state_parent_rule_and_provenance_fields_exactly_unchanged": true,
+  "all_names_match_harmonized_registry": true,
+  "all_private_TSV_rows_and_label_values_verified": true,
+  "all_artifact_hashes_verified": true,
+  "all_atlas_publication_acceptance": false
+}

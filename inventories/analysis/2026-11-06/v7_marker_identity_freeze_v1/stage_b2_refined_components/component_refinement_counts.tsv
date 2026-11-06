@@ -1,0 +1,4 @@
+rule_id	parent	v1_positive_QC_keep	v2_positive_QC_keep	meaning
+3	Plasma	148486	106360	Conservative component refinement after shared-marker review; not QC deletion or negative identity.
+10	Granulocyte	118082	35505	Conservative component refinement after shared-marker review; not QC deletion or negative identity.
+18	Glial	120776	46837	Conservative component refinement after shared-marker review; not QC deletion or negative identity.

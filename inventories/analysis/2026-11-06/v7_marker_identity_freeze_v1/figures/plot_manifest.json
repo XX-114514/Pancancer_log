@@ -1,0 +1,54 @@
+{
+  "lineage": "V7",
+  "Matplotlib": "3.10.7",
+  "n_frozen_label_values": 20,
+  "n_cells": 3918715,
+  "n_marker_records": 9800,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "identity_resolution_explicit": "major_plus_marker",
+  "input_marker_sha256": "5b9d3caf5ea49d739df2b95d798c7ae70860b8c3fcc2be4f0b5312bf0ad956fd",
+  "panel_spec_sha256": "82aae105e3d32e325056e9ace190bbbe88ade124904e5b3ab3922fcc7c72b220",
+  "outputs": [
+    {
+      "name": "frozen_state_programmes_separate.png",
+      "sha256": "8baf7322a5938b68981e4d6ddf32c04fdbc98701a9e0c8285d0f3f8a92ec91b7"
+    },
+    {
+      "name": "frozen_stromal_epithelial_neural.svg",
+      "sha256": "03e92d291cdb6f1885e32ec001c99c4e92bb2ba763018bd2bd34f1a113fbc0a9"
+    },
+    {
+      "name": "frozen_stromal_epithelial_neural.png",
+      "sha256": "fbf8586a12f75803d4e55446a54113e5df4233bc4121413e6382bec908c7b4f8"
+    },
+    {
+      "name": "frozen_state_programmes_separate.svg",
+      "sha256": "1835e2f60aecd045783fc0bceec1d2e1618d75aba75147fd8d92aec3ae995fce"
+    },
+    {
+      "name": "frozen_hematopoietic_rare.svg",
+      "sha256": "63b1e2db6a9a4ec23bb088d1e89850a4b6f715b439d5e448b892a0c8ffcf3fe0"
+    },
+    {
+      "name": "frozen_myeloid_granulocyte_Mast.png",
+      "sha256": "c0bcb60fbc979f29eb5afd27b596766806685023aa318dfc96a6992f906ee32f"
+    },
+    {
+      "name": "frozen_lymphoid_ASC_DC.png",
+      "sha256": "44dd5546624ec42c22659b985827f584e5ec5f899f0cf2ac0e3e355b2a1036a9"
+    },
+    {
+      "name": "frozen_myeloid_granulocyte_Mast.svg",
+      "sha256": "b04baff253e78b7f69239ee8501c85e497a896290ad625a5714b68320489e73e"
+    },
+    {
+      "name": "frozen_lymphoid_ASC_DC.svg",
+      "sha256": "c53997d786eb2c3639c3a388d24caaf3eb79a72036d3046f9d128b0ef5055691"
+    },
+    {
+      "name": "frozen_hematopoietic_rare.png",
+      "sha256": "d352eabd6d7bb2b79af110e2abc81ed27e68d85667c0fc7d953a4e5f3d52aa90"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T10:50:41.164433+00:00",
+  "n_all_cells": 4676787,
+  "n_rules": 22,
+  "only_three_registered_positive_rules_changed": true,
+  "all_positive_and_measurable_components_recomputed": true,
+  "all_group_component_counts_verified": true,
+  "underlying_raw_profile_audit_retained": true,
+  "original_QC_preserved": true
+}

@@ -1,0 +1,7 @@
+freeze_status	QC_action	n_cells
+broad_identity_marker_frozen	primary_QC_keep	3918715
+identity_evidence_incomplete	primary_QC_keep	578604
+outside_primary_QC	QC_holdout	238
+outside_primary_QC	exclude_primary_QC	8237
+positive_competing_lineage_programmes	primary_QC_keep	170637
+related_parent_identity_not_separated	primary_QC_keep	356

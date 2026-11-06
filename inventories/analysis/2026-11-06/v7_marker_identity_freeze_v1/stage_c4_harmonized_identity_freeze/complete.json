@@ -1,0 +1,58 @@
+{
+  "status": "harmonized_names_written_pending_independent_audit",
+  "UTC": "2026-11-06T11:37:45.861103+00:00",
+  "annotation_version": "V7_marker_identity_20261106_v3",
+  "n_frozen": 3918715,
+  "n_labels": 20,
+  "n_parents": 18,
+  "membership_or_parent_decisions_changed": false,
+  "reason": "Consolidate synonymous group-based marker names by previously accepted identity route; name markers are subsequently verified on actual retained cells. The two-cell GP1BB name failed the previous terminal check; that failed release was never accepted.",
+  "all_atlas_publication_acceptance": false,
+  "files": [
+    {
+      "name": "harmonized_name_registry.tsv",
+      "bytes": 943,
+      "sha256": "a283b291721afbeb9f2b9252b7b959b3ba70f2386383824b41b2d79329b8f7de"
+    },
+    {
+      "name": "name_consolidation_audit.tsv",
+      "bytes": 3275,
+      "sha256": "b694c8f042d64c044e9b2aa4dfb81440c6b1c6ee2be81cdf68bd09b21f503438"
+    },
+    {
+      "name": "annotation_all_cells_with_release_status_PRIVATE.pkl.gz",
+      "bytes": 64392773,
+      "sha256": "03763aceedf1b8b374d507c6aa29e2dbf229aaca6ec633114472f5a97bc98b93"
+    },
+    {
+      "name": "marker_identity_frozen_cells_PRIVATE.pkl.gz",
+      "bytes": 49525901,
+      "sha256": "3b892178ec117d82e0f94c6822d1b0d7eacb5fbb4ab9951b10579dc1edf979f0"
+    },
+    {
+      "name": "marker_identity_frozen_cells_PRIVATE.tsv.gz",
+      "bytes": 118520701,
+      "sha256": "10e989ac5e08b4ae786e03c9e6b8b289b79d6ec460279dda82eaea8adf60dac4"
+    },
+    {
+      "name": "frozen_identity_counts.tsv",
+      "bytes": 4755,
+      "sha256": "4f73442ed1127ad341ce6cfac58b949845949153e4b3c487d22ad85716138226"
+    },
+    {
+      "name": "all_cell_release_status_counts.tsv",
+      "bytes": 333,
+      "sha256": "59aadf138f53976bb4a88ce551936001b4e2f180cbe05a2d2cf0c9cda72c6b11"
+    },
+    {
+      "name": "historical_to_new_identity_counts.tsv",
+      "bytes": 45642,
+      "sha256": "0a5f14545217e1e022d69229bd33db0653f71fdf5d03800737f20ba829d34093"
+    },
+    {
+      "name": "frozen_group_counts.tsv",
+      "bytes": 22714,
+      "sha256": "87ee001591beff72475d2cd9f16bad8e1eb69ff8083c2659fd4889addd0b9b57"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "marker_identity_freeze_written_exact_readback_verified",
+  "UTC": "2026-11-06T11:24:52.163202+00:00",
+  "n_original_axis": 4676787,
+  "n_QC_keep": 4668312,
+  "n_marker_identity_frozen": 3918715,
+  "n_QC_keep_not_yet_in_freeze": 749597,
+  "n_final_label_values": 68,
+  "n_final_parent_values": 18,
+  "n_formally_new_fine_subtype_claims": 0,
+  "forbidden_progress_tokens_in_final_labels": false,
+  "frozen_old_V7_changed": false,
+  "current_QC_changed": false,
+  "new_malignancy_calls": false,
+  "all_atlas_publication_accepted": false,
+  "source_exact_full_membership_audit": "stage_c2_exact_audit_resume/independent_serialized_axis_audit.json",
+  "source_full_axis_sha256": "67ae40da487ff246c3ad1df08add82d0f4a34202dfaaed5ebb42dd7f0d0e796c",
+  "recovery": "Reuse closed serialized sidecar with complete independent value and membership proof; no identity decisions or raw counts rerun. Compare category codes and values exactly, avoiding generic approximate comparison.",
+  "files": [
+    {
+      "name": "annotation_all_cells_with_release_status_PRIVATE.pkl.gz",
+      "bytes": 50826220,
+      "sha256": "67ae40da487ff246c3ad1df08add82d0f4a34202dfaaed5ebb42dd7f0d0e796c"
+    },
+    {
+      "name": "marker_identity_frozen_cells_PRIVATE.pkl.gz",
+      "bytes": 50332373,
+      "sha256": "1c04a4f784bfbf2018d4b9d883c730d3a25edf8c7837c6cfaea58f005ae35970"
+    },
+    {
+      "name": "marker_identity_frozen_cells_PRIVATE.tsv.gz",
+      "bytes": 120563783,
+      "sha256": "6950e5410856ed04ff464650cf45acf9cee7a7bf407102a9a2a12bc6fee30933"
+    },
+    {
+      "name": "frozen_identity_counts.tsv",
+      "bytes": 12433,
+      "sha256": "e64d042c1f17cdf3c61eea3428d9a7aea2f89ef46706d4a88c073aa5ed103345"
+    },
+    {
+      "name": "all_cell_release_status_counts.tsv",
+      "bytes": 333,
+      "sha256": "59aadf138f53976bb4a88ce551936001b4e2f180cbe05a2d2cf0c9cda72c6b11"
+    },
+    {
+      "name": "historical_to_new_identity_counts.tsv",
+      "bytes": 54893,
+      "sha256": "965d51de99527cdc9dcc1f5818513f24a90586f465a500ba80c0e1547f8f38d2"
+    },
+    {
+      "name": "frozen_group_counts.tsv",
+      "bytes": 22718,
+      "sha256": "eb2148b03b7db3bb6beeb4639d4c68965e763c8874bc31b82e12aff85226eb7d"
+    }
+  ]
+}

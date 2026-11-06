@@ -1,0 +1,7 @@
+{
+  "n_groups_reviewed": 223,
+  "n_manual_rule_group_decisions": 352,
+  "n_whole_group_coherent_parent_decisions": 60,
+  "basis": "Explicit group selections reviewed against all-group marker components, source/depth, prior audited context and existing reference predictions; no highest-score automatic final labelling.",
+  "normality_function_and_new_subtypes_not_claimed": true
+}

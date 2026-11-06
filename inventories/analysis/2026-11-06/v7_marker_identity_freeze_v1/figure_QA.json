@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "five_PNGs_visually_inspected": true,
+  "all_marker_and_target_labels_visible": true,
+  "all_SVGs_parse": true,
+  "all_plot_output_SHA_verified": true,
+  "n_cells": 3918715,
+  "n_names": 20,
+  "meaning": "Scientific identity contrasts; state colours are gene-relative, not functional acceptance."
+}

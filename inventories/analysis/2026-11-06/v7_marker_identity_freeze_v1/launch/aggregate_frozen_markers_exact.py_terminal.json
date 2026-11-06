@@ -1,0 +1,6 @@
+{
+  "stage": "aggregate_frozen_markers_exact.py",
+  "UTC_start": "2026-11-06T11:25:31.123383+00:00",
+  "UTC_end": "2026-11-06T11:26:43.225306+00:00",
+  "exit_code": 1
+}

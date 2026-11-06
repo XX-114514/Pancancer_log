@@ -1,4 +1,4 @@
-[V7大类marker身份新冻结](20261106_v7_publication_marker_annotation_v1.md)：全4,676,787行/490基因/223分区独立审计；新正式标签无进度占位，逐区纳入及marker审计进行中。
+[V7正式大类marker身份冻结](20261106_v7_publication_marker_annotation_v1.md)：3,918,715细胞、18大类/20名称，最终marker及私有导出独立通过；749,597个QC保留记录仍待身份处理。
 
 [E2轴增量校准](20261106_E2_axis_increment_v1.md)：V5/K9 bulk轴代理的全轴零分布与混杂校正；方案已在新效应前冻结，结果待产生。
 

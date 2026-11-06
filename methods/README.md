@@ -1,4 +1,4 @@
-[V7正式大类＋marker冻结](V7-major-marker-freeze-20261106.md)：全量身份证据、共享组件复查、无进度占位的名称、纳入范围与独立冻结审计。
+[V7正式大类＋marker冻结](V7-major-marker-freeze-20261106.md)：全轴多组件、实际纳入后的marker命名与同身份合并、完整独立审计、状态/CNV分离和选择保留率。
 
 [V7 B未定群与全注释视图](V7-B-unresolved-current-annotation-20261106.md)：来源感知327 marker、IgV/globin模型排除、B/ASC/髓系父类复查与冻结信息保留；候选/状态/最终细分分开。
 

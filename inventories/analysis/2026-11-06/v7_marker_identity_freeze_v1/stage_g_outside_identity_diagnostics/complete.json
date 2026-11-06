@@ -1,0 +1,9 @@
+{
+  "status": "PASS_outside_identity_accounting",
+  "UTC": "2026-11-06T11:41:41.304720+00:00",
+  "n_QC_keep_outside_identity_release": 749597,
+  "n_group_reason_records": 342,
+  "counts_conserved": true,
+  "positive_programmes_are_overlapping_not_cell_type_proportions": true,
+  "not_new_QC_or_doublet_exclusions": true
+}

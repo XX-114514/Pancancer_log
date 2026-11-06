@@ -1,0 +1,14 @@
+{
+  "status": "refined_components_complete",
+  "UTC": "2026-11-06T10:49:56.117275+00:00",
+  "n_all_axis": 4676787,
+  "n_QC_keep": 4668312,
+  "n_rules": 22,
+  "raw_counts_and_original_marker_tables_reused_unchanged": true,
+  "no_QC_or_canonical_labels_changed": true,
+  "changed_rules": [
+    3,
+    10,
+    18
+  ]
+}

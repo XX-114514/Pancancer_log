@@ -1,0 +1,14 @@
+{
+  "status": "PASS_retention_accounting",
+  "UTC": "2026-11-06T11:41:28.944493+00:00",
+  "n_QC_keep": 4668312,
+  "n_frozen": 3918715,
+  "n_sources": 54,
+  "files": [
+    "source_retention.tsv",
+    "historical_parent_retention.tsv",
+    "source_by_historical_parent_retention.tsv",
+    "historical_cancer_context_retention.tsv"
+  ],
+  "meaning": "Selection retention only; not unbiased population abundances or source/identity final publication acceptance. No sample or patient rows exported."
+}

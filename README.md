@@ -1,6 +1,6 @@
 # PanCancer
 
-> **V7正式身份命名重整（2026-11-06）**：[全量490基因、223分区身份审计及大类＋marker冻结进展](inventories/analysis/2026-11-06/v7_marker_identity_freeze_v1/README.md)。全部4,676,787行原始计数/测量分母独立核验；名称去掉注释进度词，状态与良恶性分列。B coarse有父类混杂，不能整群机械改名；新冻结以实际独立审计与纳入范围为准。
+> **V7正式大类＋marker身份冻结（2026-11-06）**：[20个完整名称、细胞数与5张marker图](inventories/analysis/2026-11-06/v7_marker_identity_freeze_v1/README.md)。3,918,715细胞、18大类，正式身份无注释进度词；全轴/marker/私有导出独立审计通过。749,597个QC保留细胞仍在审计层，来源保留率完整报告；不将该身份子集等同全V7发表注释完成。
 
 > **V7 B-unresolved与完整当前注释（2026-11-06）**：[16群与6张marker图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md) · [全部106冻结／142当前标签值](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/CURRENT_ALL_ANNOTATIONS.md) · [Excel](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/V7_current_annotation_20261106.xlsx)。B的157,888目标独立审计通过，101,299大类工作／56,589身份复查；全V7 4,676,787行完整保留，423,375个目标本周期重建，其余明确继承。QC-v4为8,237排除／238暂存／4,668,312保留；导出完整不代表全V7细分终验。
 
