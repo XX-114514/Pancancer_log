@@ -31,3 +31,9 @@
 164份服务器原始聚合文件与发布副本逐字节一致，代码/配置与绘图产物SHA核对、Python AST、新文件的物理路径/凭据及逐样本/患者/细胞标识列检查全部通过。15图接触表和代表图视觉复查通过，完整身份与marker可读；图中文字换行不拆基因名。`bash scripts/validate_repository.sh`退出0，0 errors/1 existing warning（2026-10-13旧来源路径文件，本批无新增）。非TSV `git diff --check`通过；TSV末尾合法空字段按列结构验证，保留原始科学聚合字节。主工作区15个既有tracked修改在复制前保存SHA；仅复制本任务唯一新路径，公共首页/STATUS等已有未提交文件不覆盖。
 
 最终服务器只读补核全部38个秩terminal0，实际执行的输入/审计/R网络代码、作者源及两套配置SHA与公开脚本/配置匹配；公开`executed_server_code_binding.json`及`technical_acceptance.json`。初次stage检查发现Matplotlib SVG行末格式空白，已仅清理生成SVG行末空白并同步绘图脚本，科学表/PNG/原始证据不改；再次非TSV检查通过。完整聚合manifest按最终文件重新生成，不自包含自身SHA。
+
+## GitHub发布
+
+2026-11-06 12:50:51 UTC/20:50:51 UTC+8取证：内容commit`e75ff97cb60b16f154e1a54541d541f6e0791691`（212文件）已普通push，独立`git ls-remote origin refs/heads/main`核对完整SHA一致。[发布收据](../../../runs/20261106_v7_selective_CoVarNet_publication_receipt_v1.json)。遵循本次用户任务与仓库持续公开同步授权，无force/history改写，公开范围经审查；矩阵和个体行均留私有。此后仅补录发布及本地保留检查，不回写原科学收据。
+
+发布后向主工作区只复制7个本任务新增路径（含完整结果/脚本目录及method/run/receipt/task/daily），原有15个tracked修改逐项SHA比对完全保留。主工作区共享首页/STATUS等未覆盖；GitHub当前入口在独立发布副本正常更新。本任务交付完成，后续来源/种子/空间验证仍按TODO明确待做。

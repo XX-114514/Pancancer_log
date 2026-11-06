@@ -1,0 +1,14 @@
+{
+  "status": "PUBLIC_CONTENT_PUSHED_AND_REMOTE_MAIN_INDEPENDENTLY_VERIFIED",
+  "evidence_UTC": "2026-11-06T12:50:51Z",
+  "evidence_UTC_plus_8": "2026-11-06T20:50:51+08:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "content_commit": "e75ff97cb60b16f154e1a54541d541f6e0791691",
+  "remote_main_observed": "e75ff97cb60b16f154e1a54541d541f6e0791691",
+  "verification": "Ordinary git push HEAD:main succeeded; independent git ls-remote origin refs/heads/main matched the complete content SHA",
+  "authorization": "User task instruction and standing repository public-publication authorization",
+  "public_scope": "Aggregate CM nodes, edges, source counts, rank/permutation summaries, generic code, methods, figures and sanitized logs",
+  "private_scope_excluded": "Individual cell/sample/patient rows, frequency and W/H/S matrices, expression objects, credentials, connection configuration and full execution logs",
+  "biological_or_source_robustness_validation_claim": false,
+  "note": "This receipt is a later publication record; it does not assert that its own future commit SHA equals the content commit."
+}
