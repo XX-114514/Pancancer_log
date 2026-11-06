@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "n_counterexamples": 19,
+  "meaning": "Positive components only; this is not accuracy calibration or publication acceptance.",
+  "cases": [
+    {
+      "case": "HLA_CST3_not_B_or_DC",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "DNAJB1_stress_not_B",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "IFN_not_B_subtype",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "cycling_not_identity",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "Ig_JCHAIN_not_ASC",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "B_distinct_components",
+      "expected_positive_parents": [
+        "Bcell"
+      ],
+      "observed_positive_parents": [
+        "Bcell"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "ASC_multiple_components",
+      "expected_positive_parents": [
+        "Plasma"
+      ],
+      "observed_positive_parents": [
+        "Plasma"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "pDC_specific_not_just_secretory",
+      "expected_positive_parents": [
+        "Dendritic"
+      ],
+      "observed_positive_parents": [
+        "Dendritic"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "T_not_NK_from_NKG7",
+      "expected_positive_parents": [
+        "Tcell"
+      ],
+      "observed_positive_parents": [
+        "Tcell"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "T_NK_shared_is_related",
+      "expected_positive_parents": [
+        "NK",
+        "Tcell"
+      ],
+      "observed_positive_parents": [
+        "NK",
+        "Tcell"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "B_ASC_related_axis_kept_separate",
+      "expected_positive_parents": [
+        "Bcell",
+        "Plasma"
+      ],
+      "observed_positive_parents": [
+        "Bcell",
+        "Plasma"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "HB_not_erythroid",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "nonHB_erythroid",
+      "expected_positive_parents": [
+        "Erythroid"
+      ],
+      "observed_positive_parents": [
+        "Erythroid"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "NRGN_not_platelet",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "platelet_structural_plus_secreted",
+      "expected_positive_parents": [
+        "Platelet_Megakaryocytic"
+      ],
+      "observed_positive_parents": [
+        "Platelet_Megakaryocytic"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "SPINK2_only_not_HSPC",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "HSPC_no_normality_claim",
+      "expected_positive_parents": [
+        "HSPC"
+      ],
+      "observed_positive_parents": [
+        "HSPC"
+      ],
+      "PASS": true
+    },
+    {
+      "case": "SOX2_only_not_neural",
+      "expected_positive_parents": [],
+      "observed_positive_parents": [],
+      "PASS": true
+    },
+    {
+      "case": "positive_T_B_competition",
+      "expected_positive_parents": [
+        "Bcell",
+        "Tcell"
+      ],
+      "observed_positive_parents": [
+        "Bcell",
+        "Tcell"
+      ],
+      "PASS": true
+    }
+  ]
+}

@@ -1,0 +1,2202 @@
+audit_group	reference_field	label	n_cells	n_group
+Ambiguous|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	4149	21611
+Ambiguous|L1_Ambiguous_unresolved	ev_celltypist_label	Epithelial cells	2102	21611
+Ambiguous|L1_Ambiguous_unresolved	ev_celltypist_label	Endothelial cells	1954	21611
+Ambiguous|L1_Ambiguous_unresolved	ev_celltypist_label	pDC	1740	21611
+Ambiguous|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	1197	21611
+Ambiguous|L1_Ambiguous_unresolved	scatomic_full_label	Endothelial Cells	2308	21611
+Ambiguous|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	1948	21611
+Ambiguous|L1_Ambiguous_unresolved	scatomic_full_label	Normal Tissue Cell	1919	21611
+Ambiguous|L1_Ambiguous_unresolved	scatomic_full_label	pDC	1632	21611
+Ambiguous|L1_Ambiguous_unresolved	scatomic_full_label	Lung Cancer Cell	1545	21611
+Ambiguous|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	10731	53279
+Ambiguous|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	7883	53279
+Ambiguous|L1_Unknown_unresolved	ev_celltypist_label	NK cells	4961	53279
+Ambiguous|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	3044	53279
+Ambiguous|L1_Unknown_unresolved	ev_celltypist_label	Memory B cells	2440	53279
+Ambiguous|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	7310	53279
+Ambiguous|L1_Unknown_unresolved	scatomic_full_label	Skin Cancer Cell	6234	53279
+Ambiguous|L1_Unknown_unresolved	scatomic_full_label	Brain Cancer Cell	5343	53279
+Ambiguous|L1_Unknown_unresolved	scatomic_full_label	Lung Cancer Cell	4642	53279
+Ambiguous|L1_Unknown_unresolved	scatomic_full_label	Endothelial Cells	3608	53279
+B_unresolved_targets|C_0	ev_celltypist_label	Memory B cells	36241	41402
+B_unresolved_targets|C_0	ev_celltypist_label	Naive B cells	2017	41402
+B_unresolved_targets|C_0	ev_celltypist_label	Age-associated B cells	1385	41402
+B_unresolved_targets|C_0	ev_celltypist_label	B cells	780	41402
+B_unresolved_targets|C_0	ev_celltypist_label	Tem/Effector helper T cells	92	41402
+B_unresolved_targets|C_0	scatomic_full_label	B Cell	40266	41402
+B_unresolved_targets|C_0	scatomic_full_label	Blood Cell	455	41402
+B_unresolved_targets|C_0	scatomic_full_label	Any Cell	102	41402
+B_unresolved_targets|C_0	scatomic_full_label	cDC2	90	41402
+B_unresolved_targets|C_0	scatomic_full_label	Phagocytosis Macrophage	72	41402
+B_unresolved_targets|C_1	ev_celltypist_label	Naive B cells	14741	23127
+B_unresolved_targets|C_1	ev_celltypist_label	Memory B cells	5770	23127
+B_unresolved_targets|C_1	ev_celltypist_label	B cells	1498	23127
+B_unresolved_targets|C_1	ev_celltypist_label	Age-associated B cells	413	23127
+B_unresolved_targets|C_1	ev_celltypist_label	Treg(diff)	116	23127
+B_unresolved_targets|C_1	scatomic_full_label	B Cell	22843	23127
+B_unresolved_targets|C_1	scatomic_full_label	Blood Cell	122	23127
+B_unresolved_targets|C_1	scatomic_full_label	Any Cell	35	23127
+B_unresolved_targets|C_1	scatomic_full_label	cDC2	24	23127
+B_unresolved_targets|C_1	scatomic_full_label	Phagocytosis Macrophage	16	23127
+B_unresolved_targets|C_10	ev_celltypist_label	Macrophages	961	3804
+B_unresolved_targets|C_10	ev_celltypist_label	Double-positive thymocytes	339	3804
+B_unresolved_targets|C_10	ev_celltypist_label	Epithelial cells	310	3804
+B_unresolved_targets|C_10	ev_celltypist_label	NK cells	308	3804
+B_unresolved_targets|C_10	ev_celltypist_label	Memory B cells	188	3804
+B_unresolved_targets|C_10	scatomic_full_label	Lung Cancer Cell	476	3804
+B_unresolved_targets|C_10	scatomic_full_label	Phagocytosis Macrophage	411	3804
+B_unresolved_targets|C_10	scatomic_full_label	B Cell	338	3804
+B_unresolved_targets|C_10	scatomic_full_label	cDC2	321	3804
+B_unresolved_targets|C_10	scatomic_full_label	Normal Tissue Cell	299	3804
+B_unresolved_targets|C_11	ev_celltypist_label	Memory B cells	2029	3115
+B_unresolved_targets|C_11	ev_celltypist_label	Naive B cells	384	3115
+B_unresolved_targets|C_11	ev_celltypist_label	Age-associated B cells	111	3115
+B_unresolved_targets|C_11	ev_celltypist_label	Endothelial cells	73	3115
+B_unresolved_targets|C_11	ev_celltypist_label	Macrophages	72	3115
+B_unresolved_targets|C_11	scatomic_full_label	B Cell	2583	3115
+B_unresolved_targets|C_11	scatomic_full_label	Endothelial Cells	105	3115
+B_unresolved_targets|C_11	scatomic_full_label	Phagocytosis Macrophage	54	3115
+B_unresolved_targets|C_11	scatomic_full_label	Non Blood Cell	52	3115
+B_unresolved_targets|C_11	scatomic_full_label	Blood Cell	45	3115
+B_unresolved_targets|C_12	ev_celltypist_label	Memory B cells	260	896
+B_unresolved_targets|C_12	ev_celltypist_label	Germinal center B cells	255	896
+B_unresolved_targets|C_12	ev_celltypist_label	Naive B cells	190	896
+B_unresolved_targets|C_12	ev_celltypist_label	Age-associated B cells	88	896
+B_unresolved_targets|C_12	ev_celltypist_label	B cells	25	896
+B_unresolved_targets|C_12	scatomic_full_label	B Cell	849	896
+B_unresolved_targets|C_12	scatomic_full_label	Blood Cell	10	896
+B_unresolved_targets|C_12	scatomic_full_label	Any Cell	7	896
+B_unresolved_targets|C_12	scatomic_full_label	pDC	5	896
+B_unresolved_targets|C_12	scatomic_full_label	Macrophage or Dendritic Cell	4	896
+B_unresolved_targets|C_13	ev_celltypist_label	Epithelial cells	104	580
+B_unresolved_targets|C_13	ev_celltypist_label	Macrophages	99	580
+B_unresolved_targets|C_13	ev_celltypist_label	Tcm/Naive helper T cells	57	580
+B_unresolved_targets|C_13	ev_celltypist_label	Alveolar macrophages	54	580
+B_unresolved_targets|C_13	ev_celltypist_label	Memory B cells	23	580
+B_unresolved_targets|C_13	scatomic_full_label	Endometrial Cancer Cell	153	580
+B_unresolved_targets|C_13	scatomic_full_label	Pro-angiogenesis Macrophage	58	580
+B_unresolved_targets|C_13	scatomic_full_label	Phagocytosis Macrophage	57	580
+B_unresolved_targets|C_13	scatomic_full_label	B Cell	50	580
+B_unresolved_targets|C_13	scatomic_full_label	Ovarian Cancer Cell	44	580
+B_unresolved_targets|C_14	ev_celltypist_label	Endothelial cells	90	251
+B_unresolved_targets|C_14	ev_celltypist_label	Tem/Trm cytotoxic T cells	22	251
+B_unresolved_targets|C_14	ev_celltypist_label	Kupffer cells	18	251
+B_unresolved_targets|C_14	ev_celltypist_label	Alveolar macrophages	14	251
+B_unresolved_targets|C_14	ev_celltypist_label	NK cells	11	251
+B_unresolved_targets|C_14	scatomic_full_label	Endothelial Cells	221	251
+B_unresolved_targets|C_14	scatomic_full_label	Stromal Cell	7	251
+B_unresolved_targets|C_14	scatomic_full_label	Non Blood Cell	5	251
+B_unresolved_targets|C_14	scatomic_full_label	Lung Cancer Cell	5	251
+B_unresolved_targets|C_14	scatomic_full_label	Normal Tissue Cell	3	251
+B_unresolved_targets|C_15	ev_celltypist_label	Memory B cells	30	157
+B_unresolved_targets|C_15	ev_celltypist_label	Macrophages	30	157
+B_unresolved_targets|C_15	ev_celltypist_label	Epithelial cells	12	157
+B_unresolved_targets|C_15	ev_celltypist_label	Classical monocytes	11	157
+B_unresolved_targets|C_15	ev_celltypist_label	Naive B cells	10	157
+B_unresolved_targets|C_15	scatomic_full_label	B Cell	36	157
+B_unresolved_targets|C_15	scatomic_full_label	Normal Tissue Cell	36	157
+B_unresolved_targets|C_15	scatomic_full_label	Any Cell	21	157
+B_unresolved_targets|C_15	scatomic_full_label	Liver Cancer Cell	14	157
+B_unresolved_targets|C_15	scatomic_full_label	Phagocytosis Macrophage	10	157
+B_unresolved_targets|C_2	ev_celltypist_label	Memory B cells	3563	21812
+B_unresolved_targets|C_2	ev_celltypist_label	Epithelial cells	2239	21812
+B_unresolved_targets|C_2	ev_celltypist_label	Macrophages	1982	21812
+B_unresolved_targets|C_2	ev_celltypist_label	Endothelial cells	1421	21812
+B_unresolved_targets|C_2	ev_celltypist_label	Tcm/Naive helper T cells	1382	21812
+B_unresolved_targets|C_2	scatomic_full_label	Normal Tissue Cell	5713	21812
+B_unresolved_targets|C_2	scatomic_full_label	Endothelial Cells	2358	21812
+B_unresolved_targets|C_2	scatomic_full_label	B Cell	1861	21812
+B_unresolved_targets|C_2	scatomic_full_label	Lung Cancer Cell	1740	21812
+B_unresolved_targets|C_2	scatomic_full_label	Colon/Colorectal Cancer Cell	1197	21812
+B_unresolved_targets|C_3	ev_celltypist_label	Memory B cells	11701	15066
+B_unresolved_targets|C_3	ev_celltypist_label	Naive B cells	1001	15066
+B_unresolved_targets|C_3	ev_celltypist_label	B cells	905	15066
+B_unresolved_targets|C_3	ev_celltypist_label	Age-associated B cells	188	15066
+B_unresolved_targets|C_3	ev_celltypist_label	Macrophages	113	15066
+B_unresolved_targets|C_3	scatomic_full_label	B Cell	13747	15066
+B_unresolved_targets|C_3	scatomic_full_label	Blood Cell	294	15066
+B_unresolved_targets|C_3	scatomic_full_label	Phagocytosis Macrophage	227	15066
+B_unresolved_targets|C_3	scatomic_full_label	Any Cell	167	15066
+B_unresolved_targets|C_3	scatomic_full_label	cDC2	140	15066
+B_unresolved_targets|C_4	ev_celltypist_label	Macrophages	2864	14761
+B_unresolved_targets|C_4	ev_celltypist_label	Epithelial cells	2706	14761
+B_unresolved_targets|C_4	ev_celltypist_label	Endothelial cells	1981	14761
+B_unresolved_targets|C_4	ev_celltypist_label	NK cells	816	14761
+B_unresolved_targets|C_4	ev_celltypist_label	Monocytes	784	14761
+B_unresolved_targets|C_4	scatomic_full_label	Normal Tissue Cell	3066	14761
+B_unresolved_targets|C_4	scatomic_full_label	Endothelial Cells	2518	14761
+B_unresolved_targets|C_4	scatomic_full_label	Lung Cancer Cell	1626	14761
+B_unresolved_targets|C_4	scatomic_full_label	Skin Cancer Cell	1520	14761
+B_unresolved_targets|C_4	scatomic_full_label	Non Blood Cell	686	14761
+B_unresolved_targets|C_5	ev_celltypist_label	Plasma cells	2398	5529
+B_unresolved_targets|C_5	ev_celltypist_label	Memory B cells	736	5529
+B_unresolved_targets|C_5	ev_celltypist_label	Naive B cells	353	5529
+B_unresolved_targets|C_5	ev_celltypist_label	Tem/Trm cytotoxic T cells	257	5529
+B_unresolved_targets|C_5	ev_celltypist_label	B cells	142	5529
+B_unresolved_targets|C_5	scatomic_full_label	Plasmablast	2424	5529
+B_unresolved_targets|C_5	scatomic_full_label	B Cell	1067	5529
+B_unresolved_targets|C_5	scatomic_full_label	Blood Cell	1021	5529
+B_unresolved_targets|C_5	scatomic_full_label	B cell or Plasmablast	206	5529
+B_unresolved_targets|C_5	scatomic_full_label	Any Cell	183	5529
+B_unresolved_targets|C_6	ev_celltypist_label	Macrophages	3436	8486
+B_unresolved_targets|C_6	ev_celltypist_label	DC2	1554	8486
+B_unresolved_targets|C_6	ev_celltypist_label	DC1	600	8486
+B_unresolved_targets|C_6	ev_celltypist_label	DC	495	8486
+B_unresolved_targets|C_6	ev_celltypist_label	Alveolar macrophages	370	8486
+B_unresolved_targets|C_6	scatomic_full_label	cDC2	3002	8486
+B_unresolved_targets|C_6	scatomic_full_label	Phagocytosis Macrophage	1285	8486
+B_unresolved_targets|C_6	scatomic_full_label	Pro-angiogenesis Macrophage	994	8486
+B_unresolved_targets|C_6	scatomic_full_label	Macrophage	595	8486
+B_unresolved_targets|C_6	scatomic_full_label	cDC1	535	8486
+B_unresolved_targets|C_7	ev_celltypist_label	Migratory DCs	1959	8245
+B_unresolved_targets|C_7	ev_celltypist_label	Macrophages	1476	8245
+B_unresolved_targets|C_7	ev_celltypist_label	DC2	803	8245
+B_unresolved_targets|C_7	ev_celltypist_label	DC	391	8245
+B_unresolved_targets|C_7	ev_celltypist_label	Memory B cells	368	8245
+B_unresolved_targets|C_7	scatomic_full_label	LAMP3 cDC	2520	8245
+B_unresolved_targets|C_7	scatomic_full_label	cDC2	1159	8245
+B_unresolved_targets|C_7	scatomic_full_label	Phagocytosis Macrophage	1042	8245
+B_unresolved_targets|C_7	scatomic_full_label	Pro-angiogenesis Macrophage	847	8245
+B_unresolved_targets|C_7	scatomic_full_label	B Cell	437	8245
+B_unresolved_targets|C_8	ev_celltypist_label	Tem/Trm cytotoxic T cells	979	6027
+B_unresolved_targets|C_8	ev_celltypist_label	Tcm/Naive helper T cells	608	6027
+B_unresolved_targets|C_8	ev_celltypist_label	Regulatory T cells	608	6027
+B_unresolved_targets|C_8	ev_celltypist_label	Tem/Effector helper T cells	606	6027
+B_unresolved_targets|C_8	ev_celltypist_label	Type 1 helper T cells	318	6027
+B_unresolved_targets|C_8	scatomic_full_label	Naive CD4+ T cells	1135	6027
+B_unresolved_targets|C_8	scatomic_full_label	Effector/Memory CD8+ T cells	926	6027
+B_unresolved_targets|C_8	scatomic_full_label	CD4+ T cell	847	6027
+B_unresolved_targets|C_8	scatomic_full_label	Effector/Memory CD4+ T cells	658	6027
+B_unresolved_targets|C_8	scatomic_full_label	Blood Cell	638	6027
+B_unresolved_targets|C_9	ev_celltypist_label	Memory B cells	687	4630
+B_unresolved_targets|C_9	ev_celltypist_label	Tcm/Naive helper T cells	518	4630
+B_unresolved_targets|C_9	ev_celltypist_label	Epithelial cells	412	4630
+B_unresolved_targets|C_9	ev_celltypist_label	Macrophages	353	4630
+B_unresolved_targets|C_9	ev_celltypist_label	Naive B cells	292	4630
+B_unresolved_targets|C_9	scatomic_full_label	Normal Tissue Cell	817	4630
+B_unresolved_targets|C_9	scatomic_full_label	B Cell	599	4630
+B_unresolved_targets|C_9	scatomic_full_label	Naive CD4+ T cells	470	4630
+B_unresolved_targets|C_9	scatomic_full_label	Endothelial Cells	301	4630
+B_unresolved_targets|C_9	scatomic_full_label	Breast Cancer Cell	226	4630
+Bcell_Naive_IGHD|L1_Bcell_2	ev_celltypist_label	Memory B cells	65689	105825
+Bcell_Naive_IGHD|L1_Bcell_2	ev_celltypist_label	Naive B cells	33604	105825
+Bcell_Naive_IGHD|L1_Bcell_2	ev_celltypist_label	Age-associated B cells	2863	105825
+Bcell_Naive_IGHD|L1_Bcell_2	ev_celltypist_label	B cells	1856	105825
+Bcell_Naive_IGHD|L1_Bcell_2	ev_celltypist_label	Tem/Effector helper T cells	313	105825
+Bcell_Naive_IGHD|L1_Bcell_2	scatomic_full_label	B Cell	104795	105825
+Bcell_Naive_IGHD|L1_Bcell_2	scatomic_full_label	Blood Cell	544	105825
+Bcell_Naive_IGHD|L1_Bcell_2	scatomic_full_label	Any Cell	90	105825
+Bcell_Naive_IGHD|L1_Bcell_2	scatomic_full_label	Plasmablast	70	105825
+Bcell_Naive_IGHD|L1_Bcell_2	scatomic_full_label	Naive CD4+ T cells	47	105825
+Bcell_Naive_TCL1A|L1_Bcell_1	ev_celltypist_label	Memory B cells	48310	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	ev_celltypist_label	Naive B cells	23094	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	ev_celltypist_label	B cells	5991	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	ev_celltypist_label	Age-associated B cells	1904	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	ev_celltypist_label	Germinal center B cells	1307	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	scatomic_full_label	B Cell	81423	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	scatomic_full_label	Blood Cell	747	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	scatomic_full_label	Any Cell	360	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	scatomic_full_label	cDC2	143	83087
+Bcell_Naive_TCL1A|L1_Bcell_1	scatomic_full_label	Normal Tissue Cell	59	83087
+Bcell_Naive_TCL1A|L1_Bcell_4	ev_celltypist_label	Memory B cells	21307	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	ev_celltypist_label	Germinal center B cells	6361	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	ev_celltypist_label	Naive B cells	5491	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	ev_celltypist_label	Age-associated B cells	5249	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	ev_celltypist_label	Proliferative germinal center B cells	3474	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	scatomic_full_label	B Cell	43226	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	scatomic_full_label	Any Cell	693	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	scatomic_full_label	Blood Cell	636	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	scatomic_full_label	Normal Tissue Cell	349	45711
+Bcell_Naive_TCL1A|L1_Bcell_4	scatomic_full_label	Plasmablast	167	45711
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	8228	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	5553	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	5052	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	pDC	4147	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	DC2	2262	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	6672	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	4378	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	pDC	3667	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	CD4+ T cell	2411	34856
+Bcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	T regulatory cells	2284	34856
+Bcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	6117	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	DC2	4315	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	3742	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Effector helper T cells	2942	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	2486	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	cDC2	7969	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Naive CD4+ T cells	4145	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	3868	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	B Cell	3490	41850
+Bcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Phagocytosis Macrophage	2737	41850
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	7510	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	DC2	2592	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	2389	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Endothelial cells	1722	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Effector helper T cells	1516	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	5790	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	2680	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Endothelial Cells	2422	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Phagocytosis Macrophage	2114	34829
+Bcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	B Cell	2063	34829
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	DC2	522	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	pDC	362	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Classical monocytes	192	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	171	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	DC1	150	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	962	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	480	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	pDC	281	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC1	125	2335
+Dendritic_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	LAMP3 cDC	124	2335
+Dendritic_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	DC2	115	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	71	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	DC	38	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	27	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Trm cytotoxic T cells	26	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	cDC2	222	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	63	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD4 or CD8 T cell	15	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Blood Cell	10	388
+Dendritic_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD8+ T cell	9	388
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	61	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	26	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	23	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	DC2	19	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Trm cytotoxic T cells	16	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	81	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CAFmyo	57	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	42	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Colon/Colorectal Cancer Cell	12	272
+Dendritic_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CD4 or CD8 T cell	12	272
+Dendritic_pDC_LILRA4|L1_Dendritic_2	ev_celltypist_label	pDC	1699	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	ev_celltypist_label	DC2	97	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	ev_celltypist_label	Macrophages	62	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	ev_celltypist_label	Regulatory T cells	56	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	ev_celltypist_label	Tem/Trm cytotoxic T cells	26	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	scatomic_full_label	pDC	1553	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	scatomic_full_label	cDC2	230	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	scatomic_full_label	Blood Cell	100	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	scatomic_full_label	B Cell	30	2072
+Dendritic_pDC_LILRA4|L1_Dendritic_2	scatomic_full_label	Normal Tissue Cell	28	2072
+Dendritic_unresolved_CD83|L1_Dendritic_3	ev_celltypist_label	DC2	2922	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	ev_celltypist_label	Macrophages	987	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	ev_celltypist_label	DC	584	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	ev_celltypist_label	DC1	91	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	ev_celltypist_label	Monocytes	63	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	scatomic_full_label	cDC2	4339	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	scatomic_full_label	Macrophage or Dendritic Cell	145	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	scatomic_full_label	cDC1	81	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	scatomic_full_label	cDC	72	4881
+Dendritic_unresolved_CD83|L1_Dendritic_3	scatomic_full_label	LAMP3 cDC	52	4881
+Dendritic_unresolved_SPI1|L1_Dendritic_0	ev_celltypist_label	DC2	3652	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	ev_celltypist_label	Macrophages	517	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	ev_celltypist_label	DC	450	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	ev_celltypist_label	DC1	170	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	ev_celltypist_label	pDC	32	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	scatomic_full_label	cDC2	4244	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	scatomic_full_label	Macrophage or Dendritic Cell	179	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	scatomic_full_label	cDC1	147	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	scatomic_full_label	Phagocytosis Macrophage	107	5001
+Dendritic_unresolved_SPI1|L1_Dendritic_0	scatomic_full_label	cDC	53	5001
+Dendritic_unresolved|L1_Dendritic_1	ev_celltypist_label	DC2	1834	4696
+Dendritic_unresolved|L1_Dendritic_1	ev_celltypist_label	DC	681	4696
+Dendritic_unresolved|L1_Dendritic_1	ev_celltypist_label	pDC	384	4696
+Dendritic_unresolved|L1_Dendritic_1	ev_celltypist_label	Macrophages	367	4696
+Dendritic_unresolved|L1_Dendritic_1	ev_celltypist_label	Classical monocytes	193	4696
+Dendritic_unresolved|L1_Dendritic_1	scatomic_full_label	cDC2	3028	4696
+Dendritic_unresolved|L1_Dendritic_1	scatomic_full_label	pDC	315	4696
+Dendritic_unresolved|L1_Dendritic_1	scatomic_full_label	Blood Cell	240	4696
+Dendritic_unresolved|L1_Dendritic_1	scatomic_full_label	Macrophage or Dendritic Cell	190	4696
+Dendritic_unresolved|L1_Dendritic_1	scatomic_full_label	Phagocytosis Macrophage	134	4696
+Endothelial_Blood_PECAM1|L1_Endothelial_0	ev_celltypist_label	Endothelial cells	19705	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	ev_celltypist_label	Macrophages	985	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	ev_celltypist_label	NK cells	746	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	ev_celltypist_label	Epithelial cells	41	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	ev_celltypist_label	Naive B cells	40	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	scatomic_full_label	Endothelial Cells	20836	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	scatomic_full_label	Normal Tissue Cell	567	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	scatomic_full_label	Non Blood Cell	87	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	scatomic_full_label	Skin Cancer Cell	57	21745
+Endothelial_Blood_PECAM1|L1_Endothelial_0	scatomic_full_label	Stromal Cell	54	21745
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	ev_celltypist_label	Endothelial cells	13640	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	ev_celltypist_label	NK cells	805	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	ev_celltypist_label	Macrophages	451	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	ev_celltypist_label	Kupffer cells	390	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	ev_celltypist_label	Tem/Trm cytotoxic T cells	256	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	scatomic_full_label	Endothelial Cells	15917	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	scatomic_full_label	Normal Tissue Cell	63	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	scatomic_full_label	Any Cell	47	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	scatomic_full_label	CAFmyo	46	16237
+Endothelial_Venous_ACKR1_ACKR1|L1_Endothelial_3	scatomic_full_label	Non Blood Cell	36	16237
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	89	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	29	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	CD16- NK cells	16	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	15	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Plasma cells	8	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Endothelial Cells	69	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	33	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Any Cell	14	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	CD4+ T cell	11	199
+Endothelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD4+ T cells	8	199
+Endothelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Endothelial cells	2797	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	NK cells	490	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	384	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	115	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Naive B cells	58	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Endothelial Cells	4023	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Stromal Cell	56	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Non Blood Cell	38	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	37	4250
+Endothelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CAFendmt	21	4250
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	635	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	106	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Kupffer cells	96	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Endothelial cells	88	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	83	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Endothelial Cells	947	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CAFmyo	133	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Skin Cancer Cell	101	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Kidney Cancer Cell	38	1508
+Endothelial_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Endometrial Cancer Cell	34	1508
+Endothelial_unresolved_INSR|L1_Endothelial_4	ev_celltypist_label	Endothelial cells	5243	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	ev_celltypist_label	NK cells	346	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	ev_celltypist_label	Macrophages	163	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	ev_celltypist_label	Tcm/Naive helper T cells	123	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	ev_celltypist_label	Naive B cells	98	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	scatomic_full_label	Endothelial Cells	6051	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	scatomic_full_label	Normal Tissue Cell	53	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	scatomic_full_label	Non Blood Cell	20	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	scatomic_full_label	CAFendmt	12	6157
+Endothelial_unresolved_INSR|L1_Endothelial_4	scatomic_full_label	Any Cell	4	6157
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	ev_celltypist_label	Endothelial cells	14234	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	ev_celltypist_label	NK cells	412	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	ev_celltypist_label	Macrophages	196	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	ev_celltypist_label	Naive B cells	59	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	ev_celltypist_label	Tcm/Naive helper T cells	48	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	scatomic_full_label	Endothelial Cells	14798	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	scatomic_full_label	Normal Tissue Cell	231	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	scatomic_full_label	Non Blood Cell	26	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	scatomic_full_label	CAFendmt	23	15116
+Endothelial_unresolved_PLVAP|L1_Endothelial_5	scatomic_full_label	Colon/Colorectal Cancer Cell	10	15116
+Endothelial_unresolved|L1_Endothelial_1	ev_celltypist_label	Endothelial cells	11743	16435
+Endothelial_unresolved|L1_Endothelial_1	ev_celltypist_label	NK cells	1205	16435
+Endothelial_unresolved|L1_Endothelial_1	ev_celltypist_label	Macrophages	459	16435
+Endothelial_unresolved|L1_Endothelial_1	ev_celltypist_label	Tem/Trm cytotoxic T cells	389	16435
+Endothelial_unresolved|L1_Endothelial_1	ev_celltypist_label	Kupffer cells	303	16435
+Endothelial_unresolved|L1_Endothelial_1	scatomic_full_label	Endothelial Cells	14171	16435
+Endothelial_unresolved|L1_Endothelial_1	scatomic_full_label	Skin Cancer Cell	786	16435
+Endothelial_unresolved|L1_Endothelial_1	scatomic_full_label	CAFmyo	527	16435
+Endothelial_unresolved|L1_Endothelial_1	scatomic_full_label	Normal Tissue Cell	266	16435
+Endothelial_unresolved|L1_Endothelial_1	scatomic_full_label	Non Blood Cell	169	16435
+Endothelial_unresolved|L1_Endothelial_2	ev_celltypist_label	Endothelial cells	13910	24942
+Endothelial_unresolved|L1_Endothelial_2	ev_celltypist_label	Tcm/Naive helper T cells	1579	24942
+Endothelial_unresolved|L1_Endothelial_2	ev_celltypist_label	NK cells	1560	24942
+Endothelial_unresolved|L1_Endothelial_2	ev_celltypist_label	Kupffer cells	1123	24942
+Endothelial_unresolved|L1_Endothelial_2	ev_celltypist_label	Tem/Trm cytotoxic T cells	863	24942
+Endothelial_unresolved|L1_Endothelial_2	scatomic_full_label	Endothelial Cells	21251	24942
+Endothelial_unresolved|L1_Endothelial_2	scatomic_full_label	CAFmyo	651	24942
+Endothelial_unresolved|L1_Endothelial_2	scatomic_full_label	Endometrial Cancer Cell	455	24942
+Endothelial_unresolved|L1_Endothelial_2	scatomic_full_label	Lung Cancer Cell	389	24942
+Endothelial_unresolved|L1_Endothelial_2	scatomic_full_label	Normal Tissue Cell	386	24942
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	ev_celltypist_label	Epithelial cells	23745	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	6083	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	3553	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	2858	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	ev_celltypist_label	Double-positive thymocytes	2840	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	scatomic_full_label	Normal Tissue Cell	20590	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	scatomic_full_label	Colon/Colorectal Cancer Cell	15499	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	scatomic_full_label	Kidney Cancer Cell	3591	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	scatomic_full_label	Ovarian Cancer Cell	2604	53386
+Epithelial_coarse_CNV_not_recomputed|L1_Ambiguous_unresolved	scatomic_full_label	Lung Cancer Cell	1943	53386
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Double-positive thymocytes	797	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	389	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	326	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	232	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Memory B cells	161	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Colon/Colorectal Cancer Cell	505	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Breast Cancer Cell	373	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Lung Cancer Cell	297	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Normal Tissue Cell	230	2552
+Epithelial_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	175	2552
+Epithelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	13703	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	4868	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	NK cells	3504	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	1450	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Double-positive thymocytes	857	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Breast Cancer Cell	7280	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Lung Cancer Cell	3937	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	3404	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Esophageal Cancer Cell	2763	31223
+Epithelial_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Brain Cancer Cell	2587	31223
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	ev_celltypist_label	Epithelial cells	122196	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	ev_celltypist_label	Macrophages	28498	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	ev_celltypist_label	NK cells	19718	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	ev_celltypist_label	Double-positive thymocytes	7930	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	ev_celltypist_label	Tcm/Naive helper T cells	6478	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	scatomic_full_label	Lung Cancer Cell	43337	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	scatomic_full_label	Normal Tissue Cell	37142	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	scatomic_full_label	Breast Cancer Cell	35317	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	scatomic_full_label	Colon/Colorectal Cancer Cell	25861	229472
+Epithelial_malignancy_discordant|L1_Epithelial_coarse	scatomic_full_label	Esophageal Cancer Cell	19587	229472
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	ev_celltypist_label	Epithelial cells	72159	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	ev_celltypist_label	Alveolar macrophages	10478	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	ev_celltypist_label	Tcm/Naive helper T cells	10444	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	ev_celltypist_label	Macrophages	8663	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	ev_celltypist_label	Double-positive thymocytes	8085	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	scatomic_full_label	Colon/Colorectal Cancer Cell	45176	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	scatomic_full_label	Breast Cancer Cell	35452	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	scatomic_full_label	Lung Cancer Cell	27236	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	scatomic_full_label	Normal Tissue Cell	23538	163426
+Epithelial_malignancy_not_evaluable|L1_Epithelial_coarse	scatomic_full_label	Pancreatic Cancer Cell	7073	163426
+Erythroid|C_0	ev_celltypist_label	Tem/Trm cytotoxic T cells	353	1674
+Erythroid|C_0	ev_celltypist_label	Regulatory T cells	271	1674
+Erythroid|C_0	ev_celltypist_label	Tem/Effector helper T cells	238	1674
+Erythroid|C_0	ev_celltypist_label	Trm cytotoxic T cells	102	1674
+Erythroid|C_0	ev_celltypist_label	Tcm/Naive helper T cells	82	1674
+Erythroid|C_0	scatomic_full_label	Effector/Memory CD8+ T cells	459	1674
+Erythroid|C_0	scatomic_full_label	Effector/Memory CD4+ T cells	246	1674
+Erythroid|C_0	scatomic_full_label	CD4+ T cell	222	1674
+Erythroid|C_0	scatomic_full_label	T regulatory cells	115	1674
+Erythroid|C_0	scatomic_full_label	HSPC	105	1674
+Erythroid|C_1	ev_celltypist_label	Tcm/Naive helper T cells	342	1417
+Erythroid|C_1	ev_celltypist_label	Memory B cells	176	1417
+Erythroid|C_1	ev_celltypist_label	Tem/Trm cytotoxic T cells	102	1417
+Erythroid|C_1	ev_celltypist_label	Epithelial cells	86	1417
+Erythroid|C_1	ev_celltypist_label	Mid erythroid	86	1417
+Erythroid|C_1	scatomic_full_label	Normal Tissue Cell	144	1417
+Erythroid|C_1	scatomic_full_label	Non Blood Cell	136	1417
+Erythroid|C_1	scatomic_full_label	Blood Cell	132	1417
+Erythroid|C_1	scatomic_full_label	cDC2	118	1417
+Erythroid|C_1	scatomic_full_label	CD4+ T cell	108	1417
+Erythroid|C_10	ev_celltypist_label	Endothelial cells	119	261
+Erythroid|C_10	ev_celltypist_label	Tem/Trm cytotoxic T cells	25	261
+Erythroid|C_10	ev_celltypist_label	Tcm/Naive helper T cells	18	261
+Erythroid|C_10	ev_celltypist_label	Macrophages	15	261
+Erythroid|C_10	ev_celltypist_label	NK cells	13	261
+Erythroid|C_10	scatomic_full_label	Endothelial Cells	212	261
+Erythroid|C_10	scatomic_full_label	Any Cell	18	261
+Erythroid|C_10	scatomic_full_label	Normal Tissue Cell	7	261
+Erythroid|C_10	scatomic_full_label	Non Blood Cell	5	261
+Erythroid|C_10	scatomic_full_label	Stromal Cell	5	261
+Erythroid|C_11	ev_celltypist_label	Classical monocytes	82	201
+Erythroid|C_11	ev_celltypist_label	Monocytes	22	201
+Erythroid|C_11	ev_celltypist_label	Intermediate macrophages	19	201
+Erythroid|C_11	ev_celltypist_label	Tcm/Naive helper T cells	12	201
+Erythroid|C_11	ev_celltypist_label	Macrophages	9	201
+Erythroid|C_11	scatomic_full_label	Pro-angiogenesis Macrophage	113	201
+Erythroid|C_11	scatomic_full_label	Macrophage	18	201
+Erythroid|C_11	scatomic_full_label	Macrophage or Monocyte	18	201
+Erythroid|C_11	scatomic_full_label	CD14 Monocyte	15	201
+Erythroid|C_11	scatomic_full_label	Phagocytosis Macrophage	11	201
+Erythroid|C_12	ev_celltypist_label	Mid erythroid	100	189
+Erythroid|C_12	ev_celltypist_label	Double-positive thymocytes	40	189
+Erythroid|C_12	ev_celltypist_label	Tcm/Naive helper T cells	13	189
+Erythroid|C_12	ev_celltypist_label	Tcm/Naive cytotoxic T cells	8	189
+Erythroid|C_12	ev_celltypist_label	Tem/Trm cytotoxic T cells	6	189
+Erythroid|C_12	scatomic_full_label	Lung Cancer Cell	80	189
+Erythroid|C_12	scatomic_full_label	Blood Cell	26	189
+Erythroid|C_12	scatomic_full_label	Any Cell	20	189
+Erythroid|C_12	scatomic_full_label	Plasmablast	14	189
+Erythroid|C_12	scatomic_full_label	Normal Tissue Cell	11	189
+Erythroid|C_13	ev_celltypist_label	Macrophages	32	142
+Erythroid|C_13	ev_celltypist_label	Epithelial cells	24	142
+Erythroid|C_13	ev_celltypist_label	Alveolar macrophages	18	142
+Erythroid|C_13	ev_celltypist_label	Regulatory T cells	14	142
+Erythroid|C_13	ev_celltypist_label	Tem/Trm cytotoxic T cells	11	142
+Erythroid|C_13	scatomic_full_label	Esophageal Cancer Cell	66	142
+Erythroid|C_13	scatomic_full_label	Normal Tissue Cell	52	142
+Erythroid|C_13	scatomic_full_label	Non Stromal Cell	10	142
+Erythroid|C_13	scatomic_full_label	Brain Cancer Cell	5	142
+Erythroid|C_13	scatomic_full_label	Breast Cancer Cell	3	142
+Erythroid|C_14	ev_celltypist_label	Epithelial cells	25	114
+Erythroid|C_14	ev_celltypist_label	Double-negative thymocytes	13	114
+Erythroid|C_14	ev_celltypist_label	NK cells	11	114
+Erythroid|C_14	ev_celltypist_label	Memory B cells	8	114
+Erythroid|C_14	ev_celltypist_label	Classical monocytes	7	114
+Erythroid|C_14	scatomic_full_label	Brain Cancer Cell	41	114
+Erythroid|C_14	scatomic_full_label	Endometrial Cancer Cell	30	114
+Erythroid|C_14	scatomic_full_label	Lung Cancer Cell	18	114
+Erythroid|C_14	scatomic_full_label	Normal Tissue Cell	8	114
+Erythroid|C_14	scatomic_full_label	Breast/Lung/Prostate	4	114
+Erythroid|C_15	ev_celltypist_label	Epithelial cells	23	112
+Erythroid|C_15	ev_celltypist_label	Memory B cells	19	112
+Erythroid|C_15	ev_celltypist_label	T(agonist)	8	112
+Erythroid|C_15	ev_celltypist_label	Tcm/Naive helper T cells	7	112
+Erythroid|C_15	ev_celltypist_label	Macrophages	6	112
+Erythroid|C_15	scatomic_full_label	Skin Cancer Cell	89	112
+Erythroid|C_15	scatomic_full_label	Normal Tissue Cell	7	112
+Erythroid|C_15	scatomic_full_label	Non Blood Cell	5	112
+Erythroid|C_15	scatomic_full_label	Brain Cancer Cell	4	112
+Erythroid|C_15	scatomic_full_label	Any Cell	2	112
+Erythroid|C_16	ev_celltypist_label	Tcm/Naive helper T cells	16	48
+Erythroid|C_16	ev_celltypist_label	Plasma cells	5	48
+Erythroid|C_16	ev_celltypist_label	Tcm/Naive cytotoxic T cells	3	48
+Erythroid|C_16	ev_celltypist_label	Type 17 helper T cells	2	48
+Erythroid|C_16	ev_celltypist_label	Myelocytes	2	48
+Erythroid|C_16	scatomic_full_label	Normal Tissue Cell	33	48
+Erythroid|C_16	scatomic_full_label	Lung Cancer Cell	5	48
+Erythroid|C_16	scatomic_full_label	Any Cell	2	48
+Erythroid|C_16	scatomic_full_label	Pancreatic Cancer Cell	2	48
+Erythroid|C_16	scatomic_full_label	Breast Cancer Cell	1	48
+Erythroid|C_17	ev_celltypist_label	T(agonist)	5	29
+Erythroid|C_17	ev_celltypist_label	Double-positive thymocytes	4	29
+Erythroid|C_17	ev_celltypist_label	Naive B cells	4	29
+Erythroid|C_17	ev_celltypist_label	Macrophages	3	29
+Erythroid|C_17	ev_celltypist_label	Epithelial cells	3	29
+Erythroid|C_17	scatomic_full_label	Lung Cancer Cell	26	29
+Erythroid|C_17	scatomic_full_label	Normal Tissue Cell	3	29
+Erythroid|C_2	ev_celltypist_label	Epithelial cells	246	1257
+Erythroid|C_2	ev_celltypist_label	Macrophages	229	1257
+Erythroid|C_2	ev_celltypist_label	Mid erythroid	133	1257
+Erythroid|C_2	ev_celltypist_label	Double-positive thymocytes	95	1257
+Erythroid|C_2	ev_celltypist_label	Tcm/Naive helper T cells	73	1257
+Erythroid|C_2	scatomic_full_label	Esophageal Cancer Cell	163	1257
+Erythroid|C_2	scatomic_full_label	Cancer Associated Fibroblasts	151	1257
+Erythroid|C_2	scatomic_full_label	Normal Tissue Cell	121	1257
+Erythroid|C_2	scatomic_full_label	HSPC	104	1257
+Erythroid|C_2	scatomic_full_label	Blood Cell	100	1257
+Erythroid|C_3	ev_celltypist_label	Memory B cells	137	888
+Erythroid|C_3	ev_celltypist_label	Mid erythroid	136	888
+Erythroid|C_3	ev_celltypist_label	Double-positive thymocytes	119	888
+Erythroid|C_3	ev_celltypist_label	Epithelial cells	86	888
+Erythroid|C_3	ev_celltypist_label	Tcm/Naive helper T cells	79	888
+Erythroid|C_3	scatomic_full_label	Breast/Lung/Prostate	168	888
+Erythroid|C_3	scatomic_full_label	Blood Cell	105	888
+Erythroid|C_3	scatomic_full_label	Lung Cancer Cell	72	888
+Erythroid|C_3	scatomic_full_label	Normal Tissue Cell	63	888
+Erythroid|C_3	scatomic_full_label	cDC2	45	888
+Erythroid|C_4	ev_celltypist_label	Macrophages	218	709
+Erythroid|C_4	ev_celltypist_label	Classical monocytes	76	709
+Erythroid|C_4	ev_celltypist_label	Alveolar macrophages	61	709
+Erythroid|C_4	ev_celltypist_label	DC2	51	709
+Erythroid|C_4	ev_celltypist_label	Non-classical monocytes	33	709
+Erythroid|C_4	scatomic_full_label	Phagocytosis Macrophage	264	709
+Erythroid|C_4	scatomic_full_label	Macrophage	128	709
+Erythroid|C_4	scatomic_full_label	Pro-angiogenesis Macrophage	103	709
+Erythroid|C_4	scatomic_full_label	cDC2	92	709
+Erythroid|C_4	scatomic_full_label	Any Cell	38	709
+Erythroid|C_5	ev_celltypist_label	Epithelial cells	84	535
+Erythroid|C_5	ev_celltypist_label	Tcm/Naive helper T cells	57	535
+Erythroid|C_5	ev_celltypist_label	Macrophages	40	535
+Erythroid|C_5	ev_celltypist_label	Memory B cells	39	535
+Erythroid|C_5	ev_celltypist_label	NK cells	38	535
+Erythroid|C_5	scatomic_full_label	Esophageal Cancer Cell	132	535
+Erythroid|C_5	scatomic_full_label	Normal Tissue Cell	101	535
+Erythroid|C_5	scatomic_full_label	Brain Cancer Cell	90	535
+Erythroid|C_5	scatomic_full_label	Lung Cancer Cell	29	535
+Erythroid|C_5	scatomic_full_label	Colon/Colorectal Cancer Cell	27	535
+Erythroid|C_6	ev_celltypist_label	Plasma cells	72	423
+Erythroid|C_6	ev_celltypist_label	Memory B cells	59	423
+Erythroid|C_6	ev_celltypist_label	Tem/Trm cytotoxic T cells	29	423
+Erythroid|C_6	ev_celltypist_label	Naive B cells	20	423
+Erythroid|C_6	ev_celltypist_label	Tem/Effector helper T cells	19	423
+Erythroid|C_6	scatomic_full_label	B Cell	72	423
+Erythroid|C_6	scatomic_full_label	Blood Cell	50	423
+Erythroid|C_6	scatomic_full_label	Plasmablast	47	423
+Erythroid|C_6	scatomic_full_label	Any Cell	34	423
+Erythroid|C_6	scatomic_full_label	Effector/Memory CD8+ T cells	29	423
+Erythroid|C_7	ev_celltypist_label	NK cells	136	388
+Erythroid|C_7	ev_celltypist_label	Tcm/Naive helper T cells	37	388
+Erythroid|C_7	ev_celltypist_label	Macrophages	28	388
+Erythroid|C_7	ev_celltypist_label	Alveolar macrophages	28	388
+Erythroid|C_7	ev_celltypist_label	Double-positive thymocytes	21	388
+Erythroid|C_7	scatomic_full_label	CAFmyo	238	388
+Erythroid|C_7	scatomic_full_label	Cancer Associated Fibroblasts	37	388
+Erythroid|C_7	scatomic_full_label	Normal Fibroblast	23	388
+Erythroid|C_7	scatomic_full_label	Non Blood Cell	23	388
+Erythroid|C_7	scatomic_full_label	CAFinfla	20	388
+Erythroid|C_8	ev_celltypist_label	Epithelial cells	64	357
+Erythroid|C_8	ev_celltypist_label	Tem/Trm cytotoxic T cells	43	357
+Erythroid|C_8	ev_celltypist_label	Macrophages	33	357
+Erythroid|C_8	ev_celltypist_label	Tem/Temra cytotoxic T cells	24	357
+Erythroid|C_8	ev_celltypist_label	Alveolar macrophages	22	357
+Erythroid|C_8	scatomic_full_label	Liver Cancer Cell	147	357
+Erythroid|C_8	scatomic_full_label	Normal Tissue Cell	122	357
+Erythroid|C_8	scatomic_full_label	Any Cell	22	357
+Erythroid|C_8	scatomic_full_label	Non Blood Cell	19	357
+Erythroid|C_8	scatomic_full_label	Effector/Memory CD8+ T cells	15	357
+Erythroid|C_9	ev_celltypist_label	Epithelial cells	61	354
+Erythroid|C_9	ev_celltypist_label	Classical monocytes	35	354
+Erythroid|C_9	ev_celltypist_label	Macrophages	30	354
+Erythroid|C_9	ev_celltypist_label	Tcm/Naive helper T cells	29	354
+Erythroid|C_9	ev_celltypist_label	Memory B cells	26	354
+Erythroid|C_9	scatomic_full_label	Esophageal Cancer Cell	106	354
+Erythroid|C_9	scatomic_full_label	Normal Tissue Cell	66	354
+Erythroid|C_9	scatomic_full_label	Lung Cancer Cell	53	354
+Erythroid|C_9	scatomic_full_label	Non Blood Cell	31	354
+Erythroid|C_9	scatomic_full_label	Normal Fibroblast	20	354
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	ev_celltypist_label	Macrophages	11145	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	ev_celltypist_label	NK cells	10934	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	ev_celltypist_label	Double-positive thymocytes	4262	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	ev_celltypist_label	T(agonist)	1915	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	ev_celltypist_label	Epithelial cells	1705	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	scatomic_full_label	Cancer Associated Fibroblasts	11816	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	scatomic_full_label	CAFinfla	11455	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	scatomic_full_label	Brain Cancer Cell	8760	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	scatomic_full_label	Normal Fibroblast	1314	39720
+Fibroblast_Cycling_Fibroblast_TOP2A|L1_Fibroblast_1	scatomic_full_label	Phagocytosis Macrophage	1235	39720
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	ev_celltypist_label	NK cells	6413	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	ev_celltypist_label	Tcm/Naive helper T cells	4161	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	ev_celltypist_label	Epithelial cells	2755	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	ev_celltypist_label	Fibroblasts	2253	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	ev_celltypist_label	Macrophages	2053	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	scatomic_full_label	Cancer Associated Fibroblasts	9099	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	scatomic_full_label	CAFinfla	7372	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	scatomic_full_label	Normal Fibroblast	2758	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	scatomic_full_label	Non Blood Cell	2622	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_6	scatomic_full_label	Normal Tissue Cell	2465	29549
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	ev_celltypist_label	NK cells	6409	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	ev_celltypist_label	Macrophages	3810	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	ev_celltypist_label	Fibroblasts	2638	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	ev_celltypist_label	Epithelial cells	2041	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	ev_celltypist_label	Tcm/Naive helper T cells	1290	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	scatomic_full_label	Cancer Associated Fibroblasts	8473	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	scatomic_full_label	CAFinfla	5413	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	scatomic_full_label	Non Blood Cell	1923	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	scatomic_full_label	Brain Cancer Cell	1551	19280
+Fibroblast_ECM_CAF_COL1A1|L1_Fibroblast_7	scatomic_full_label	Normal Tissue Cell	565	19280
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	491	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	327	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	172	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Double-positive thymocytes	137	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	119	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Phagocytosis Macrophage	322	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Normal Fibroblast	237	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	200	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Cancer Associated Fibroblasts	155	1676
+Fibroblast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Any Cell	128	1676
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	NK cells	5931	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	4757	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	4428	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	2023	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Double-positive thymocytes	994	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Cancer Associated Fibroblasts	6822	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Non Blood Cell	3728	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CAFinfla	2787	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	2185	24539
+Fibroblast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Brain Cancer Cell	1880	24539
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	7187	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	3839	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Alveolar macrophages	1028	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	CD16+ NK cells	974	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Double-positive thymocytes	938	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CAFmyo	9022	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Cancer Associated Fibroblasts	2994	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CAFinfla	2966	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Normal Fibroblast	2315	21626
+Fibroblast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CAFadi	1099	21626
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	ev_celltypist_label	Fibroblasts	10895	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	ev_celltypist_label	NK cells	9200	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	ev_celltypist_label	Macrophages	3469	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	ev_celltypist_label	Classical monocytes	1488	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	ev_celltypist_label	Tem/Effector helper T cells	1351	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	scatomic_full_label	CAFadi	15138	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	scatomic_full_label	Cancer Associated Fibroblasts	8126	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	scatomic_full_label	Normal Fibroblast	7279	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	scatomic_full_label	CAFinfla	4209	35918
+Fibroblast_iCAF_CXCL12|L1_Fibroblast_8	scatomic_full_label	CAFmyo	538	35918
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	ev_celltypist_label	Fibroblasts	5280	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	ev_celltypist_label	T(agonist)	2948	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	ev_celltypist_label	Intermediate macrophages	2456	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	ev_celltypist_label	Macrophages	2333	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	ev_celltypist_label	NK cells	2288	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	scatomic_full_label	Normal Fibroblast	12848	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	scatomic_full_label	Cancer Associated Fibroblasts	6767	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	scatomic_full_label	CAFinfla	2531	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	scatomic_full_label	CAFadi	1758	26748
+Fibroblast_iCAF_IL6|L1_Fibroblast_3	scatomic_full_label	CAFmyo	675	26748
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	ev_celltypist_label	NK cells	17067	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	ev_celltypist_label	Macrophages	2174	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	ev_celltypist_label	CD16+ NK cells	1996	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	ev_celltypist_label	Alveolar macrophages	1647	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	ev_celltypist_label	Tcm/Naive helper T cells	1340	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	scatomic_full_label	CAFmyo	28097	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	scatomic_full_label	Cancer Associated Fibroblasts	1475	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	scatomic_full_label	CAFinfla	572	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	scatomic_full_label	Normal Tissue Cell	365	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_0	scatomic_full_label	Endothelial Cells	248	31452
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	ev_celltypist_label	NK cells	10629	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	ev_celltypist_label	Macrophages	4222	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	ev_celltypist_label	Fibroblasts	3234	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	ev_celltypist_label	Double-positive thymocytes	2393	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	ev_celltypist_label	Tem/Effector helper T cells	1800	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	scatomic_full_label	CAFinfla	18110	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	scatomic_full_label	Cancer Associated Fibroblasts	8005	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	scatomic_full_label	CAFadi	3061	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	scatomic_full_label	Normal Fibroblast	2061	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_2	scatomic_full_label	CAFmyo	766	32695
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	ev_celltypist_label	NK cells	9080	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	ev_celltypist_label	Macrophages	7207	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	ev_celltypist_label	Fibroblasts	3436	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	ev_celltypist_label	Epithelial cells	925	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	ev_celltypist_label	CD16+ NK cells	715	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	scatomic_full_label	Cancer Associated Fibroblasts	9228	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	scatomic_full_label	CAFinfla	8983	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	scatomic_full_label	CAFadi	4667	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	scatomic_full_label	Normal Fibroblast	769	24975
+Fibroblast_myCAF_ACTA2|L1_Fibroblast_4	scatomic_full_label	CAFmyo	753	24975
+Fibroblast_unresolved|L1_Fibroblast_5	ev_celltypist_label	NK cells	5219	37318
+Fibroblast_unresolved|L1_Fibroblast_5	ev_celltypist_label	Double-positive thymocytes	2805	37318
+Fibroblast_unresolved|L1_Fibroblast_5	ev_celltypist_label	Macrophages	2515	37318
+Fibroblast_unresolved|L1_Fibroblast_5	ev_celltypist_label	Alveolar macrophages	2381	37318
+Fibroblast_unresolved|L1_Fibroblast_5	ev_celltypist_label	T(agonist)	2167	37318
+Fibroblast_unresolved|L1_Fibroblast_5	scatomic_full_label	CAFinfla	9642	37318
+Fibroblast_unresolved|L1_Fibroblast_5	scatomic_full_label	Normal Fibroblast	9101	37318
+Fibroblast_unresolved|L1_Fibroblast_5	scatomic_full_label	Cancer Associated Fibroblasts	8918	37318
+Fibroblast_unresolved|L1_Fibroblast_5	scatomic_full_label	Phagocytosis Macrophage	1516	37318
+Fibroblast_unresolved|L1_Fibroblast_5	scatomic_full_label	CAFadi	1468	37318
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	ev_celltypist_label	Classical monocytes	6673	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	ev_celltypist_label	Monocytes	2913	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	ev_celltypist_label	Macrophages	658	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	ev_celltypist_label	Myelocytes	530	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	ev_celltypist_label	Intermediate macrophages	357	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	scatomic_full_label	Pro-angiogenesis Macrophage	11456	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	scatomic_full_label	CD14 Monocyte	954	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	scatomic_full_label	Macrophage	330	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	scatomic_full_label	Macrophage or Monocyte	305	13977
+Granulocyte_Neutrophil_mature_FCGR3B|L1_Granulocyte_0	scatomic_full_label	Phagocytosis Macrophage	272	13977
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	1131	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Intermediate macrophages	194	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Alveolar macrophages	172	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	149	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Non-classical monocytes	109	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	1018	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Phagocytosis Macrophage	273	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage	225	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	199	2325
+Granulocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage or Dendritic Cell	145	2325
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Classical monocytes	253	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Monocytes	161	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	149	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	133	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Regulatory T cells	72	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	386	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Blood Cell	190	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	88	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	86	1206
+Granulocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD14 Monocyte	53	1206
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Classical monocytes	6734	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Monocytes	1598	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	904	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Intermediate macrophages	238	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Alveolar macrophages	149	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	6280	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CD14 Monocyte	2052	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage	546	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage or Monocyte	327	10779
+Granulocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Phagocytosis Macrophage	247	10779
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	ev_celltypist_label	Macrophages	1217	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	ev_celltypist_label	Epithelial cells	1056	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	ev_celltypist_label	Classical monocytes	667	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	ev_celltypist_label	Monocytes	617	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	ev_celltypist_label	Alveolar macrophages	244	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	scatomic_full_label	Pro-angiogenesis Macrophage	1113	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	scatomic_full_label	Lung Cancer Cell	767	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	scatomic_full_label	Normal Tissue Cell	554	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	scatomic_full_label	Bladder Cancer Cell	316	5540
+Granulocyte_unresolved_S100A10|L1_Granulocyte_1	scatomic_full_label	Esophageal Cancer Cell	308	5540
+HSPC|C_0	ev_celltypist_label	Classical monocytes	358	3171
+HSPC|C_0	ev_celltypist_label	Double-negative thymocytes	271	3171
+HSPC|C_0	ev_celltypist_label	Tcm/Naive helper T cells	270	3171
+HSPC|C_0	ev_celltypist_label	Naive B cells	193	3171
+HSPC|C_0	ev_celltypist_label	Epithelial cells	161	3171
+HSPC|C_0	scatomic_full_label	HSPC	1355	3171
+HSPC|C_0	scatomic_full_label	Blood Cell	452	3171
+HSPC|C_0	scatomic_full_label	CD14 Monocyte	282	3171
+HSPC|C_0	scatomic_full_label	cDC2	174	3171
+HSPC|C_0	scatomic_full_label	Colon/Colorectal Cancer Cell	128	3171
+HSPC|C_1	ev_celltypist_label	Double-negative thymocytes	320	2881
+HSPC|C_1	ev_celltypist_label	Naive B cells	245	2881
+HSPC|C_1	ev_celltypist_label	HSC/MPP	234	2881
+HSPC|C_1	ev_celltypist_label	Classical monocytes	187	2881
+HSPC|C_1	ev_celltypist_label	Memory B cells	158	2881
+HSPC|C_1	scatomic_full_label	HSPC	1232	2881
+HSPC|C_1	scatomic_full_label	Blood Cell	614	2881
+HSPC|C_1	scatomic_full_label	CAFmyo	160	2881
+HSPC|C_1	scatomic_full_label	Endothelial Cells	119	2881
+HSPC|C_1	scatomic_full_label	Breast/Lung/Prostate	118	2881
+HSPC|C_10	ev_celltypist_label	Double-negative thymocytes	24	173
+HSPC|C_10	ev_celltypist_label	HSC/MPP	18	173
+HSPC|C_10	ev_celltypist_label	CD8a/b(entry)	14	173
+HSPC|C_10	ev_celltypist_label	NK cells	12	173
+HSPC|C_10	ev_celltypist_label	Classical monocytes	10	173
+HSPC|C_10	scatomic_full_label	HSPC	117	173
+HSPC|C_10	scatomic_full_label	Normal Tissue Cell	17	173
+HSPC|C_10	scatomic_full_label	Brain Cancer Cell	15	173
+HSPC|C_10	scatomic_full_label	cDC2	11	173
+HSPC|C_10	scatomic_full_label	Blood Cell	9	173
+HSPC|C_11	ev_celltypist_label	Epithelial cells	34	160
+HSPC|C_11	ev_celltypist_label	Memory B cells	27	160
+HSPC|C_11	ev_celltypist_label	NK cells	20	160
+HSPC|C_11	ev_celltypist_label	Double-positive thymocytes	17	160
+HSPC|C_11	ev_celltypist_label	Tcm/Naive helper T cells	12	160
+HSPC|C_11	scatomic_full_label	Lung Cancer Cell	88	160
+HSPC|C_11	scatomic_full_label	Brain Cancer Cell	22	160
+HSPC|C_11	scatomic_full_label	Endometrial Cancer Cell	11	160
+HSPC|C_11	scatomic_full_label	Non Stromal Cell	8	160
+HSPC|C_11	scatomic_full_label	Normal Tissue Cell	8	160
+HSPC|C_12	ev_celltypist_label	Double-positive thymocytes	15	126
+HSPC|C_12	ev_celltypist_label	Classical monocytes	12	126
+HSPC|C_12	ev_celltypist_label	HSC/MPP	9	126
+HSPC|C_12	ev_celltypist_label	Double-negative thymocytes	9	126
+HSPC|C_12	ev_celltypist_label	Tcm/Naive helper T cells	6	126
+HSPC|C_12	scatomic_full_label	HSPC	85	126
+HSPC|C_12	scatomic_full_label	Blood Cell	16	126
+HSPC|C_12	scatomic_full_label	cDC2	11	126
+HSPC|C_12	scatomic_full_label	CD14 Monocyte	7	126
+HSPC|C_12	scatomic_full_label	Normal Tissue Cell	3	126
+HSPC|C_13	ev_celltypist_label	Classical monocytes	51	120
+HSPC|C_13	ev_celltypist_label	Monocytes	15	120
+HSPC|C_13	ev_celltypist_label	Tcm/Naive helper T cells	5	120
+HSPC|C_13	ev_celltypist_label	NK cells	5	120
+HSPC|C_13	ev_celltypist_label	Double-negative thymocytes	4	120
+HSPC|C_13	scatomic_full_label	CD14 Monocyte	71	120
+HSPC|C_13	scatomic_full_label	Normal Tissue Cell	13	120
+HSPC|C_13	scatomic_full_label	cDC2	9	120
+HSPC|C_13	scatomic_full_label	HSPC	6	120
+HSPC|C_13	scatomic_full_label	Macrophage or Dendritic Cell	4	120
+HSPC|C_14	ev_celltypist_label	Epithelial cells	19	84
+HSPC|C_14	ev_celltypist_label	Tcm/Naive helper T cells	15	84
+HSPC|C_14	ev_celltypist_label	NK cells	14	84
+HSPC|C_14	ev_celltypist_label	Double-positive thymocytes	9	84
+HSPC|C_14	ev_celltypist_label	Macrophages	8	84
+HSPC|C_14	scatomic_full_label	Non Blood Cell	43	84
+HSPC|C_14	scatomic_full_label	Esophageal Cancer Cell	17	84
+HSPC|C_14	scatomic_full_label	Normal Tissue Cell	12	84
+HSPC|C_14	scatomic_full_label	Cancer Associated Fibroblasts	4	84
+HSPC|C_14	scatomic_full_label	Ovarian Cancer Cell	3	84
+HSPC|C_15	ev_celltypist_label	Macrophages	21	38
+HSPC|C_15	ev_celltypist_label	Alveolar macrophages	9	38
+HSPC|C_15	ev_celltypist_label	Non-classical monocytes	2	38
+HSPC|C_15	ev_celltypist_label	Tcm/Naive cytotoxic T cells	2	38
+HSPC|C_15	ev_celltypist_label	DC precursor	1	38
+HSPC|C_15	scatomic_full_label	Phagocytosis Macrophage	26	38
+HSPC|C_15	scatomic_full_label	Pro-angiogenesis Macrophage	8	38
+HSPC|C_15	scatomic_full_label	Normal Tissue Cell	3	38
+HSPC|C_15	scatomic_full_label	Macrophage	1	38
+HSPC|C_2	ev_celltypist_label	Double-negative thymocytes	266	2510
+HSPC|C_2	ev_celltypist_label	Epithelial cells	228	2510
+HSPC|C_2	ev_celltypist_label	NK cells	211	2510
+HSPC|C_2	ev_celltypist_label	Classical monocytes	180	2510
+HSPC|C_2	ev_celltypist_label	Naive B cells	174	2510
+HSPC|C_2	scatomic_full_label	HSPC	1080	2510
+HSPC|C_2	scatomic_full_label	Blood Cell	495	2510
+HSPC|C_2	scatomic_full_label	Endometrial Cancer Cell	159	2510
+HSPC|C_2	scatomic_full_label	CD14 Monocyte	146	2510
+HSPC|C_2	scatomic_full_label	Prostate Cancer Cell	138	2510
+HSPC|C_3	ev_celltypist_label	Tcm/Naive helper T cells	183	1288
+HSPC|C_3	ev_celltypist_label	Double-negative thymocytes	140	1288
+HSPC|C_3	ev_celltypist_label	Epithelial cells	139	1288
+HSPC|C_3	ev_celltypist_label	Naive B cells	106	1288
+HSPC|C_3	ev_celltypist_label	NK cells	71	1288
+HSPC|C_3	scatomic_full_label	HSPC	492	1288
+HSPC|C_3	scatomic_full_label	Endometrial Cancer Cell	191	1288
+HSPC|C_3	scatomic_full_label	Normal Tissue Cell	130	1288
+HSPC|C_3	scatomic_full_label	Blood Cell	101	1288
+HSPC|C_3	scatomic_full_label	Prostate Cancer Cell	67	1288
+HSPC|C_4	ev_celltypist_label	Classical monocytes	113	1101
+HSPC|C_4	ev_celltypist_label	NK cells	110	1101
+HSPC|C_4	ev_celltypist_label	Double-positive thymocytes	99	1101
+HSPC|C_4	ev_celltypist_label	Double-negative thymocytes	73	1101
+HSPC|C_4	ev_celltypist_label	Monocytes	73	1101
+HSPC|C_4	scatomic_full_label	HSPC	401	1101
+HSPC|C_4	scatomic_full_label	CD14 Monocyte	199	1101
+HSPC|C_4	scatomic_full_label	Blood Cell	188	1101
+HSPC|C_4	scatomic_full_label	Endometrial Cancer Cell	135	1101
+HSPC|C_4	scatomic_full_label	Normal Tissue Cell	37	1101
+HSPC|C_5	ev_celltypist_label	Double-negative thymocytes	266	748
+HSPC|C_5	ev_celltypist_label	HSC/MPP	142	748
+HSPC|C_5	ev_celltypist_label	Naive B cells	53	748
+HSPC|C_5	ev_celltypist_label	ETP	43	748
+HSPC|C_5	ev_celltypist_label	NK cells	38	748
+HSPC|C_5	scatomic_full_label	HSPC	695	748
+HSPC|C_5	scatomic_full_label	Prostate Cancer Cell	8	748
+HSPC|C_5	scatomic_full_label	Lung Cancer Cell	7	748
+HSPC|C_5	scatomic_full_label	Normal Tissue Cell	7	748
+HSPC|C_5	scatomic_full_label	Endometrial Cancer Cell	7	748
+HSPC|C_6	ev_celltypist_label	Endothelial cells	176	598
+HSPC|C_6	ev_celltypist_label	Macrophages	36	598
+HSPC|C_6	ev_celltypist_label	Classical monocytes	33	598
+HSPC|C_6	ev_celltypist_label	Naive B cells	32	598
+HSPC|C_6	ev_celltypist_label	Tcm/Naive helper T cells	32	598
+HSPC|C_6	scatomic_full_label	Endothelial Cells	309	598
+HSPC|C_6	scatomic_full_label	HSPC	91	598
+HSPC|C_6	scatomic_full_label	Blood Cell	50	598
+HSPC|C_6	scatomic_full_label	Non Blood Cell	24	598
+HSPC|C_6	scatomic_full_label	CD14 Monocyte	19	598
+HSPC|C_7	ev_celltypist_label	NK cells	158	526
+HSPC|C_7	ev_celltypist_label	Alveolar macrophages	38	526
+HSPC|C_7	ev_celltypist_label	Tcm/Naive helper T cells	31	526
+HSPC|C_7	ev_celltypist_label	Double-negative thymocytes	27	526
+HSPC|C_7	ev_celltypist_label	Classical monocytes	26	526
+HSPC|C_7	scatomic_full_label	CAFmyo	318	526
+HSPC|C_7	scatomic_full_label	HSPC	110	526
+HSPC|C_7	scatomic_full_label	Blood Cell	39	526
+HSPC|C_7	scatomic_full_label	Cancer Associated Fibroblasts	16	526
+HSPC|C_7	scatomic_full_label	Endothelial Cells	8	526
+HSPC|C_8	ev_celltypist_label	Double-negative thymocytes	82	277
+HSPC|C_8	ev_celltypist_label	HSC/MPP	38	277
+HSPC|C_8	ev_celltypist_label	Naive B cells	25	277
+HSPC|C_8	ev_celltypist_label	ETP	18	277
+HSPC|C_8	ev_celltypist_label	NK cells	15	277
+HSPC|C_8	scatomic_full_label	HSPC	218	277
+HSPC|C_8	scatomic_full_label	Blood Cell	16	277
+HSPC|C_8	scatomic_full_label	Normal Tissue Cell	13	277
+HSPC|C_8	scatomic_full_label	Brain Cancer Cell	10	277
+HSPC|C_8	scatomic_full_label	cDC2	9	277
+HSPC|C_9	ev_celltypist_label	Double-negative thymocytes	85	271
+HSPC|C_9	ev_celltypist_label	HSC/MPP	43	271
+HSPC|C_9	ev_celltypist_label	Naive B cells	23	271
+HSPC|C_9	ev_celltypist_label	ETP	17	271
+HSPC|C_9	ev_celltypist_label	Classical monocytes	13	271
+HSPC|C_9	scatomic_full_label	HSPC	232	271
+HSPC|C_9	scatomic_full_label	Blood Cell	17	271
+HSPC|C_9	scatomic_full_label	cDC2	16	271
+HSPC|C_9	scatomic_full_label	Any Cell	1	271
+HSPC|C_9	scatomic_full_label	Brain Cancer Cell	1	271
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Classical monocytes	476	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Monocytes	124	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Myelocytes	63	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Double-positive thymocytes	39	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	24	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	scatomic_full_label	CD14 Monocyte	550	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	scatomic_full_label	HSPC	216	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	147	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	109	1035
+Hematopoietic_differentiation_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage or Dendritic Cell	10	1035
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	ev_celltypist_label	Classical monocytes	21	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	20	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	ev_celltypist_label	NK cells	19	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	19	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	15	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	scatomic_full_label	CAFmyo	32	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	22	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	22	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	scatomic_full_label	Esophageal Cancer Cell	16	192
+Hematopoietic_differentiation_boundary|L1_Unknown_unresolved	scatomic_full_label	Endometrial Cancer Cell	13	192
+ILC|C_0	ev_celltypist_label	Tem/Effector helper T cells	3059	12867
+ILC|C_0	ev_celltypist_label	Type 1 helper T cells	1530	12867
+ILC|C_0	ev_celltypist_label	Tem/Trm cytotoxic T cells	1380	12867
+ILC|C_0	ev_celltypist_label	Trm cytotoxic T cells	1193	12867
+ILC|C_0	ev_celltypist_label	Type 17 helper T cells	1020	12867
+ILC|C_0	scatomic_full_label	Effector/Memory CD4+ T cells	3140	12867
+ILC|C_0	scatomic_full_label	CD4+ T cell	2834	12867
+ILC|C_0	scatomic_full_label	Effector/Memory CD8+ T cells	2596	12867
+ILC|C_0	scatomic_full_label	Naive CD4+ T cells	1933	12867
+ILC|C_0	scatomic_full_label	CD4 or CD8 T cell	780	12867
+ILC|C_1	ev_celltypist_label	Tem/Trm cytotoxic T cells	1252	9283
+ILC|C_1	ev_celltypist_label	Tem/Effector helper T cells	1153	9283
+ILC|C_1	ev_celltypist_label	Tcm/Naive helper T cells	913	9283
+ILC|C_1	ev_celltypist_label	Type 1 helper T cells	849	9283
+ILC|C_1	ev_celltypist_label	Trm cytotoxic T cells	830	9283
+ILC|C_1	scatomic_full_label	Naive CD4+ T cells	2186	9283
+ILC|C_1	scatomic_full_label	CD4+ T cell	1797	9283
+ILC|C_1	scatomic_full_label	Effector/Memory CD4+ T cells	1413	9283
+ILC|C_1	scatomic_full_label	Effector/Memory CD8+ T cells	1247	9283
+ILC|C_1	scatomic_full_label	Blood Cell	1074	9283
+ILC|C_10	ev_celltypist_label	Type 1 helper T cells	68	341
+ILC|C_10	ev_celltypist_label	Epithelial cells	45	341
+ILC|C_10	ev_celltypist_label	Tem/Effector helper T cells	20	341
+ILC|C_10	ev_celltypist_label	Macrophages	17	341
+ILC|C_10	ev_celltypist_label	Regulatory T cells	17	341
+ILC|C_10	scatomic_full_label	Skin Cancer Cell	178	341
+ILC|C_10	scatomic_full_label	Non Blood Cell	75	341
+ILC|C_10	scatomic_full_label	Effector/Memory CD4+ T cells	31	341
+ILC|C_10	scatomic_full_label	Esophageal Cancer Cell	16	341
+ILC|C_10	scatomic_full_label	Any Cell	12	341
+ILC|C_11	ev_celltypist_label	Macrophages	72	292
+ILC|C_11	ev_celltypist_label	Intermediate macrophages	51	292
+ILC|C_11	ev_celltypist_label	Alveolar macrophages	19	292
+ILC|C_11	ev_celltypist_label	Tem/Effector helper T cells	16	292
+ILC|C_11	ev_celltypist_label	Type 17 helper T cells	15	292
+ILC|C_11	scatomic_full_label	Pro-angiogenesis Macrophage	80	292
+ILC|C_11	scatomic_full_label	Phagocytosis Macrophage	27	292
+ILC|C_11	scatomic_full_label	Macrophage	21	292
+ILC|C_11	scatomic_full_label	cDC2	21	292
+ILC|C_11	scatomic_full_label	Effector/Memory CD4+ T cells	18	292
+ILC|C_12	ev_celltypist_label	Epithelial cells	50	155
+ILC|C_12	ev_celltypist_label	NK cells	19	155
+ILC|C_12	ev_celltypist_label	CD16+ NK cells	16	155
+ILC|C_12	ev_celltypist_label	Macrophages	13	155
+ILC|C_12	ev_celltypist_label	DC2	9	155
+ILC|C_12	scatomic_full_label	Skin Cancer Cell	132	155
+ILC|C_12	scatomic_full_label	Normal Tissue Cell	13	155
+ILC|C_12	scatomic_full_label	Cancer Associated Fibroblasts	4	155
+ILC|C_12	scatomic_full_label	CAFinfla	3	155
+ILC|C_12	scatomic_full_label	Brain Cancer Cell	1	155
+ILC|C_13	ev_celltypist_label	Tcm/Naive helper T cells	19	67
+ILC|C_13	ev_celltypist_label	Tem/Trm cytotoxic T cells	8	67
+ILC|C_13	ev_celltypist_label	Regulatory T cells	7	67
+ILC|C_13	ev_celltypist_label	Tem/Effector helper T cells	7	67
+ILC|C_13	ev_celltypist_label	Treg(diff)	4	67
+ILC|C_13	scatomic_full_label	Naive CD4+ T cells	23	67
+ILC|C_13	scatomic_full_label	CD4+ T cell	11	67
+ILC|C_13	scatomic_full_label	Effector/Memory CD4+ T cells	10	67
+ILC|C_13	scatomic_full_label	CD8+ T cell	5	67
+ILC|C_13	scatomic_full_label	Blood Cell	4	67
+ILC|C_2	ev_celltypist_label	Tem/Effector helper T cells	1925	8353
+ILC|C_2	ev_celltypist_label	Type 1 helper T cells	762	8353
+ILC|C_2	ev_celltypist_label	Tcm/Naive helper T cells	696	8353
+ILC|C_2	ev_celltypist_label	Trm cytotoxic T cells	631	8353
+ILC|C_2	ev_celltypist_label	Tem/Trm cytotoxic T cells	622	8353
+ILC|C_2	scatomic_full_label	CD4+ T cell	2053	8353
+ILC|C_2	scatomic_full_label	Naive CD4+ T cells	1970	8353
+ILC|C_2	scatomic_full_label	Effector/Memory CD4+ T cells	1635	8353
+ILC|C_2	scatomic_full_label	Effector/Memory CD8+ T cells	948	8353
+ILC|C_2	scatomic_full_label	CD4 or CD8 T cell	496	8353
+ILC|C_3	ev_celltypist_label	ILC3	2269	4758
+ILC|C_3	ev_celltypist_label	ILC	1531	4758
+ILC|C_3	ev_celltypist_label	Tem/Effector helper T cells	207	4758
+ILC|C_3	ev_celltypist_label	Type 17 helper T cells	123	4758
+ILC|C_3	ev_celltypist_label	NK cells	100	4758
+ILC|C_3	scatomic_full_label	Blood Cell	1860	4758
+ILC|C_3	scatomic_full_label	Natural killer cell	713	4758
+ILC|C_3	scatomic_full_label	Effector/Memory CD4+ T cells	626	4758
+ILC|C_3	scatomic_full_label	CD4+ T cell	545	4758
+ILC|C_3	scatomic_full_label	T or NK Cell	529	4758
+ILC|C_4	ev_celltypist_label	Tcm/Naive helper T cells	803	3352
+ILC|C_4	ev_celltypist_label	Tem/Effector helper T cells	623	3352
+ILC|C_4	ev_celltypist_label	Tem/Trm cytotoxic T cells	339	3352
+ILC|C_4	ev_celltypist_label	Type 17 helper T cells	272	3352
+ILC|C_4	ev_celltypist_label	Regulatory T cells	194	3352
+ILC|C_4	scatomic_full_label	Naive CD4+ T cells	1245	3352
+ILC|C_4	scatomic_full_label	Effector/Memory CD4+ T cells	599	3352
+ILC|C_4	scatomic_full_label	CD4+ T cell	562	3352
+ILC|C_4	scatomic_full_label	Effector/Memory CD8+ T cells	291	3352
+ILC|C_4	scatomic_full_label	CD4 or CD8 T cell	283	3352
+ILC|C_5	ev_celltypist_label	Macrophages	546	2509
+ILC|C_5	ev_celltypist_label	Epithelial cells	395	2509
+ILC|C_5	ev_celltypist_label	NK cells	252	2509
+ILC|C_5	ev_celltypist_label	Tcm/Naive helper T cells	110	2509
+ILC|C_5	ev_celltypist_label	Double-positive thymocytes	104	2509
+ILC|C_5	scatomic_full_label	Skin Cancer Cell	863	2509
+ILC|C_5	scatomic_full_label	Esophageal Cancer Cell	339	2509
+ILC|C_5	scatomic_full_label	CAFmyo	189	2509
+ILC|C_5	scatomic_full_label	Endothelial Cells	153	2509
+ILC|C_5	scatomic_full_label	Brain Cancer Cell	136	2509
+ILC|C_6	ev_celltypist_label	Epithelial cells	234	1881
+ILC|C_6	ev_celltypist_label	Tcm/Naive helper T cells	176	1881
+ILC|C_6	ev_celltypist_label	Memory B cells	172	1881
+ILC|C_6	ev_celltypist_label	Double-positive thymocytes	120	1881
+ILC|C_6	ev_celltypist_label	NK cells	95	1881
+ILC|C_6	scatomic_full_label	Skin Cancer Cell	439	1881
+ILC|C_6	scatomic_full_label	Normal Tissue Cell	210	1881
+ILC|C_6	scatomic_full_label	Lung Cancer Cell	92	1881
+ILC|C_6	scatomic_full_label	Brain Cancer Cell	84	1881
+ILC|C_6	scatomic_full_label	Blood Cell	79	1881
+ILC|C_7	ev_celltypist_label	Tem/Effector helper T cells	130	565
+ILC|C_7	ev_celltypist_label	Tem/Trm cytotoxic T cells	65	565
+ILC|C_7	ev_celltypist_label	Regulatory T cells	50	565
+ILC|C_7	ev_celltypist_label	Type 1 helper T cells	46	565
+ILC|C_7	ev_celltypist_label	ILC3	45	565
+ILC|C_7	scatomic_full_label	CD4+ T cell	160	565
+ILC|C_7	scatomic_full_label	Effector/Memory CD4+ T cells	102	565
+ILC|C_7	scatomic_full_label	Effector/Memory CD8+ T cells	69	565
+ILC|C_7	scatomic_full_label	Naive CD4+ T cells	47	565
+ILC|C_7	scatomic_full_label	CD4 or CD8 T cell	37	565
+ILC|C_8	ev_celltypist_label	Type 17 helper T cells	85	453
+ILC|C_8	ev_celltypist_label	Tem/Effector helper T cells	70	453
+ILC|C_8	ev_celltypist_label	Tem/Trm cytotoxic T cells	61	453
+ILC|C_8	ev_celltypist_label	Type 1 helper T cells	58	453
+ILC|C_8	ev_celltypist_label	CD16- NK cells	35	453
+ILC|C_8	scatomic_full_label	Effector/Memory CD4+ T cells	190	453
+ILC|C_8	scatomic_full_label	CD4+ T cell	50	453
+ILC|C_8	scatomic_full_label	Effector/Memory CD8+ T cells	36	453
+ILC|C_8	scatomic_full_label	Blood Cell	32	453
+ILC|C_8	scatomic_full_label	CD4 or CD8 T cell	27	453
+ILC|C_9	ev_celltypist_label	NK cells	58	414
+ILC|C_9	ev_celltypist_label	Double-positive thymocytes	37	414
+ILC|C_9	ev_celltypist_label	Tem/Trm cytotoxic T cells	35	414
+ILC|C_9	ev_celltypist_label	Type 1 helper T cells	34	414
+ILC|C_9	ev_celltypist_label	ILC3	29	414
+ILC|C_9	scatomic_full_label	Blood Cell	61	414
+ILC|C_9	scatomic_full_label	Effector/Memory CD4+ T cells	43	414
+ILC|C_9	scatomic_full_label	CD4+ T cell	42	414
+ILC|C_9	scatomic_full_label	Effector/Memory CD8+ T cells	31	414
+ILC|C_9	scatomic_full_label	Brain Cancer Cell	27	414
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	ev_celltypist_label	Macrophages	15526	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	ev_celltypist_label	DC	101	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	ev_celltypist_label	Alveolar macrophages	101	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	ev_celltypist_label	DC2	83	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	ev_celltypist_label	Monocytes	78	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	scatomic_full_label	Phagocytosis Macrophage	10456	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	scatomic_full_label	Pro-angiogenesis Macrophage	1851	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	scatomic_full_label	Macrophage	1429	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	scatomic_full_label	Normal Tissue Cell	778	16129
+Macrophage_Cycling_Macrophage_MKI67|L1_Macrophage_6	scatomic_full_label	cDC2	512	16129
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	ev_celltypist_label	Macrophages	67172	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	ev_celltypist_label	Alveolar macrophages	3450	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	ev_celltypist_label	Kupffer cells	1402	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	ev_celltypist_label	Intermediate macrophages	932	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	ev_celltypist_label	Monocytes	682	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	scatomic_full_label	Phagocytosis Macrophage	42920	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	scatomic_full_label	Pro-angiogenesis Macrophage	17148	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	scatomic_full_label	Macrophage	9317	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	scatomic_full_label	cDC2	2821	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_1	scatomic_full_label	Macrophage or Dendritic Cell	1814	75412
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	ev_celltypist_label	Macrophages	47407	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	ev_celltypist_label	DC	3112	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	ev_celltypist_label	Alveolar macrophages	2598	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	ev_celltypist_label	Intermediate macrophages	2364	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	ev_celltypist_label	Kupffer cells	1864	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	scatomic_full_label	Phagocytosis Macrophage	49534	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	scatomic_full_label	Pro-angiogenesis Macrophage	6999	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	scatomic_full_label	Macrophage	5295	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	scatomic_full_label	Normal Tissue Cell	988	65573
+Macrophage_Inflammatory_IL1B_IL1B|L1_Macrophage_5	scatomic_full_label	Macrophage or Dendritic Cell	894	65573
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	ev_celltypist_label	Macrophages	66910	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	ev_celltypist_label	DC	1472	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	ev_celltypist_label	Mono-mac	373	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	ev_celltypist_label	Kupffer cells	361	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	ev_celltypist_label	Alveolar macrophages	358	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	scatomic_full_label	Phagocytosis Macrophage	67593	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	scatomic_full_label	Macrophage	886	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	scatomic_full_label	Macrophage or Dendritic Cell	462	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	scatomic_full_label	Normal Tissue Cell	349	70223
+Macrophage_SPP1_TREM2_SPP1|L1_Macrophage_2	scatomic_full_label	Any Cell	333	70223
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	451	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	372	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	261	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	DC2	205	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	CD16- NK cells	167	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Phagocytosis Macrophage	480	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	378	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	365	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	189	2362
+Macrophage_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	129	2362
+Macrophage_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	4126	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Alveolar macrophages	657	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	414	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	DC	376	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	249	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Phagocytosis Macrophage	4324	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Macrophage	738	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	694	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	432	8875
+Macrophage_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Skin Cancer Cell	387	8875
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	6958	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Epithelial cells	1454	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	DC	1291	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	880	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Classical monocytes	629	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Normal Tissue Cell	4717	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Phagocytosis Macrophage	4012	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	1472	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	1246	17534
+Macrophage_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Liver Cancer Cell	1246	17534
+Macrophage_unresolved_CD52|L1_Macrophage_3	ev_celltypist_label	Alveolar macrophages	34951	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	ev_celltypist_label	Macrophages	32928	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	ev_celltypist_label	Intermediate macrophages	278	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	ev_celltypist_label	Mono-mac	243	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	ev_celltypist_label	Monocytes	238	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	scatomic_full_label	Pro-angiogenesis Macrophage	34603	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	scatomic_full_label	Phagocytosis Macrophage	26327	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	scatomic_full_label	Macrophage	7655	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	scatomic_full_label	Normal Tissue Cell	345	69587
+Macrophage_unresolved_CD52|L1_Macrophage_3	scatomic_full_label	Macrophage or Dendritic Cell	305	69587
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	ev_celltypist_label	Macrophages	7332	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	ev_celltypist_label	Epithelial cells	3582	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	ev_celltypist_label	Double-positive thymocytes	2706	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	ev_celltypist_label	NK cells	2520	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	ev_celltypist_label	Memory B cells	2284	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	scatomic_full_label	Skin Cancer Cell	22159	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	scatomic_full_label	Normal Tissue Cell	2078	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	scatomic_full_label	Brain Cancer Cell	1725	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	scatomic_full_label	Liver Cancer Cell	1415	32047
+Macrophage_unresolved_SERPINE2|L1_Macrophage_0	scatomic_full_label	Phagocytosis Macrophage	1347	32047
+Macrophage_unresolved|L1_Macrophage_4	ev_celltypist_label	Macrophages	30081	61309
+Macrophage_unresolved|L1_Macrophage_4	ev_celltypist_label	Alveolar macrophages	9307	61309
+Macrophage_unresolved|L1_Macrophage_4	ev_celltypist_label	Erythrophagocytic macrophages	3227	61309
+Macrophage_unresolved|L1_Macrophage_4	ev_celltypist_label	DC	1598	61309
+Macrophage_unresolved|L1_Macrophage_4	ev_celltypist_label	Mono-mac	1161	61309
+Macrophage_unresolved|L1_Macrophage_4	scatomic_full_label	Phagocytosis Macrophage	39786	61309
+Macrophage_unresolved|L1_Macrophage_4	scatomic_full_label	Pro-angiogenesis Macrophage	4739	61309
+Macrophage_unresolved|L1_Macrophage_4	scatomic_full_label	Macrophage	3786	61309
+Macrophage_unresolved|L1_Macrophage_4	scatomic_full_label	Normal Tissue Cell	2981	61309
+Macrophage_unresolved|L1_Macrophage_4	scatomic_full_label	Skin Cancer Cell	2441	61309
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	ev_celltypist_label	Epithelial cells	124612	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	ev_celltypist_label	Macrophages	30790	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	ev_celltypist_label	NK cells	12329	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	ev_celltypist_label	Double-positive thymocytes	2924	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	ev_celltypist_label	Tcm/Naive helper T cells	2078	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	scatomic_full_label	Lung Cancer Cell	46540	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	scatomic_full_label	Breast Cancer Cell	39197	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	scatomic_full_label	Esophageal Cancer Cell	18083	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	scatomic_full_label	Colon/Colorectal Cancer Cell	14779	185305
+Malignant_Epithelial_high_specificity|L1_Epithelial_coarse	scatomic_full_label	Normal Tissue Cell	12311	185305
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	ev_celltypist_label	Type 1 helper T cells	72	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	ev_celltypist_label	Mast cells	58	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	ev_celltypist_label	Tem/Trm cytotoxic T cells	30	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	ev_celltypist_label	CD16+ NK cells	26	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	ev_celltypist_label	NK cells	26	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	scatomic_full_label	Mast cell	304	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	scatomic_full_label	Blood Cell	35	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	scatomic_full_label	Phagocytosis Macrophage	20	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	scatomic_full_label	Pro-angiogenesis Macrophage	9	404
+Mast_Activated_IL1RL1_IL1RL1|L1_Mast_1	scatomic_full_label	Macrophage or Dendritic Cell	7	404
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	ev_celltypist_label	NK cells	126	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	ev_celltypist_label	Mast cells	117	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	ev_celltypist_label	Macrophages	91	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	ev_celltypist_label	Epithelial cells	82	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	ev_celltypist_label	Type 1 helper T cells	80	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	scatomic_full_label	Mast cell	617	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	scatomic_full_label	Blood Cell	72	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	scatomic_full_label	Any Cell	56	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	scatomic_full_label	Esophageal Cancer Cell	37	1024
+Mast_Activated_IL1RL1_LTC4S|L1_Mast_2	scatomic_full_label	Normal Tissue Cell	31	1024
+Mast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	25	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	17	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	11	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Plasma cells	8	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Effector helper T cells	5	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	17	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	11	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	10	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Plasmablast	8	98
+Mast_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Any Cell	8	98
+Mast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	117	585
+Mast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Regulatory T cells	56	585
+Mast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Type 1 helper T cells	45	585
+Mast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Effector helper T cells	44	585
+Mast_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	NK cells	36	585
+Mast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Mast cell	282	585
+Mast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Blood Cell	105	585
+Mast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	36	585
+Mast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	24	585
+Mast_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Any Cell	24	585
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	56	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	43	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	33	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Alveolar macrophages	30	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Monocytes	28	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Any Cell	58	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CAFmyo	45	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	41	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	38	461
+Mast_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Endothelial Cells	31	461
+Mast_unresolved|L1_Mast_0	ev_celltypist_label	Mast cells	231	1541
+Mast_unresolved|L1_Mast_0	ev_celltypist_label	Classical monocytes	140	1541
+Mast_unresolved|L1_Mast_0	ev_celltypist_label	Alveolar macrophages	116	1541
+Mast_unresolved|L1_Mast_0	ev_celltypist_label	CD16+ NK cells	84	1541
+Mast_unresolved|L1_Mast_0	ev_celltypist_label	Epithelial cells	73	1541
+Mast_unresolved|L1_Mast_0	scatomic_full_label	Mast cell	750	1541
+Mast_unresolved|L1_Mast_0	scatomic_full_label	Blood Cell	107	1541
+Mast_unresolved|L1_Mast_0	scatomic_full_label	Any Cell	94	1541
+Mast_unresolved|L1_Mast_0	scatomic_full_label	Colon/Colorectal Cancer Cell	88	1541
+Mast_unresolved|L1_Mast_0	scatomic_full_label	Normal Tissue Cell	77	1541
+Mast_unresolved|L1_Mast_3	ev_celltypist_label	Tem/Trm cytotoxic T cells	56	641
+Mast_unresolved|L1_Mast_3	ev_celltypist_label	Type 1 helper T cells	54	641
+Mast_unresolved|L1_Mast_3	ev_celltypist_label	Mast cells	48	641
+Mast_unresolved|L1_Mast_3	ev_celltypist_label	Tem/Effector helper T cells	40	641
+Mast_unresolved|L1_Mast_3	ev_celltypist_label	Alveolar macrophages	37	641
+Mast_unresolved|L1_Mast_3	scatomic_full_label	Mast cell	268	641
+Mast_unresolved|L1_Mast_3	scatomic_full_label	Blood Cell	124	641
+Mast_unresolved|L1_Mast_3	scatomic_full_label	Any Cell	63	641
+Mast_unresolved|L1_Mast_3	scatomic_full_label	Normal Fibroblast	26	641
+Mast_unresolved|L1_Mast_3	scatomic_full_label	Macrophage or Dendritic Cell	22	641
+Mast|C_0	ev_celltypist_label	Mast cells	3822	9945
+Mast|C_0	ev_celltypist_label	Type 1 helper T cells	969	9945
+Mast|C_0	ev_celltypist_label	CD16+ NK cells	849	9945
+Mast|C_0	ev_celltypist_label	Classical monocytes	839	9945
+Mast|C_0	ev_celltypist_label	ILC3	384	9945
+Mast|C_0	scatomic_full_label	Mast cell	9753	9945
+Mast|C_0	scatomic_full_label	Blood Cell	141	9945
+Mast|C_0	scatomic_full_label	Any Cell	26	9945
+Mast|C_0	scatomic_full_label	cDC2	8	9945
+Mast|C_0	scatomic_full_label	Effector/Memory CD4+ T cells	5	9945
+Mast|C_1	ev_celltypist_label	Mast cells	3545	9219
+Mast|C_1	ev_celltypist_label	Classical monocytes	890	9219
+Mast|C_1	ev_celltypist_label	CD16+ NK cells	603	9219
+Mast|C_1	ev_celltypist_label	Alveolar macrophages	508	9219
+Mast|C_1	ev_celltypist_label	Type 1 helper T cells	441	9219
+Mast|C_1	scatomic_full_label	Mast cell	8889	9219
+Mast|C_1	scatomic_full_label	Blood Cell	177	9219
+Mast|C_1	scatomic_full_label	Any Cell	60	9219
+Mast|C_1	scatomic_full_label	Normal Tissue Cell	22	9219
+Mast|C_1	scatomic_full_label	Effector/Memory CD4+ T cells	17	9219
+Mast|C_10	ev_celltypist_label	Classical monocytes	122	652
+Mast|C_10	ev_celltypist_label	Mast cells	92	652
+Mast|C_10	ev_celltypist_label	Monocytes	54	652
+Mast|C_10	ev_celltypist_label	Macrophages	46	652
+Mast|C_10	ev_celltypist_label	Alveolar macrophages	38	652
+Mast|C_10	scatomic_full_label	Mast cell	446	652
+Mast|C_10	scatomic_full_label	Blood Cell	111	652
+Mast|C_10	scatomic_full_label	cDC2	23	652
+Mast|C_10	scatomic_full_label	Pro-angiogenesis Macrophage	20	652
+Mast|C_10	scatomic_full_label	Phagocytosis Macrophage	12	652
+Mast|C_11	ev_celltypist_label	NK cells	187	614
+Mast|C_11	ev_celltypist_label	Mast cells	88	614
+Mast|C_11	ev_celltypist_label	Double-positive thymocytes	64	614
+Mast|C_11	ev_celltypist_label	Classical monocytes	42	614
+Mast|C_11	ev_celltypist_label	Monocytes	33	614
+Mast|C_11	scatomic_full_label	Mast cell	533	614
+Mast|C_11	scatomic_full_label	Blood Cell	30	614
+Mast|C_11	scatomic_full_label	Any Cell	24	614
+Mast|C_11	scatomic_full_label	Macrophage or Dendritic Cell	6	614
+Mast|C_11	scatomic_full_label	Normal Tissue Cell	5	614
+Mast|C_12	ev_celltypist_label	Mast cells	54	309
+Mast|C_12	ev_celltypist_label	Classical monocytes	44	309
+Mast|C_12	ev_celltypist_label	CD16+ NK cells	28	309
+Mast|C_12	ev_celltypist_label	Monocytes	20	309
+Mast|C_12	ev_celltypist_label	NK cells	15	309
+Mast|C_12	scatomic_full_label	Mast cell	271	309
+Mast|C_12	scatomic_full_label	Any Cell	20	309
+Mast|C_12	scatomic_full_label	Blood Cell	15	309
+Mast|C_12	scatomic_full_label	Normal Tissue Cell	1	309
+Mast|C_12	scatomic_full_label	Effector/Memory CD4+ T cells	1	309
+Mast|C_13	ev_celltypist_label	Mast cells	126	234
+Mast|C_13	ev_celltypist_label	CD16+ NK cells	20	234
+Mast|C_13	ev_celltypist_label	Classical monocytes	18	234
+Mast|C_13	ev_celltypist_label	Type 1 helper T cells	13	234
+Mast|C_13	ev_celltypist_label	ILC3	12	234
+Mast|C_13	scatomic_full_label	Mast cell	223	234
+Mast|C_13	scatomic_full_label	Blood Cell	6	234
+Mast|C_13	scatomic_full_label	Any Cell	2	234
+Mast|C_13	scatomic_full_label	Effector/Memory CD4+ T cells	1	234
+Mast|C_13	scatomic_full_label	Non Blood Cell	1	234
+Mast|C_14	ev_celltypist_label	Mast cells	46	111
+Mast|C_14	ev_celltypist_label	Classical monocytes	16	111
+Mast|C_14	ev_celltypist_label	Type 1 helper T cells	12	111
+Mast|C_14	ev_celltypist_label	CD16+ NK cells	5	111
+Mast|C_14	ev_celltypist_label	Tcm/Naive helper T cells	4	111
+Mast|C_14	scatomic_full_label	Mast cell	111	111
+Mast|C_15	ev_celltypist_label	Mast cells	28	94
+Mast|C_15	ev_celltypist_label	Classical monocytes	18	94
+Mast|C_15	ev_celltypist_label	Monocytes	9	94
+Mast|C_15	ev_celltypist_label	CD16+ NK cells	6	94
+Mast|C_15	ev_celltypist_label	NK cells	5	94
+Mast|C_15	scatomic_full_label	Mast cell	94	94
+Mast|C_16	ev_celltypist_label	Mast cells	30	69
+Mast|C_16	ev_celltypist_label	Type 1 helper T cells	8	69
+Mast|C_16	ev_celltypist_label	CD16+ NK cells	7	69
+Mast|C_16	ev_celltypist_label	Classical monocytes	7	69
+Mast|C_16	ev_celltypist_label	ILC3	3	69
+Mast|C_16	scatomic_full_label	Mast cell	69	69
+Mast|C_17	ev_celltypist_label	Type 1 helper T cells	8	42
+Mast|C_17	ev_celltypist_label	Mast cells	7	42
+Mast|C_17	ev_celltypist_label	Monocytes	5	42
+Mast|C_17	ev_celltypist_label	Classical monocytes	4	42
+Mast|C_17	ev_celltypist_label	Alveolar macrophages	3	42
+Mast|C_17	scatomic_full_label	Mast cell	38	42
+Mast|C_17	scatomic_full_label	Any Cell	2	42
+Mast|C_17	scatomic_full_label	Phagocytosis Macrophage	1	42
+Mast|C_17	scatomic_full_label	Pro-angiogenesis Macrophage	1	42
+Mast|C_2	ev_celltypist_label	Mast cells	1736	6266
+Mast|C_2	ev_celltypist_label	Classical monocytes	733	6266
+Mast|C_2	ev_celltypist_label	CD16+ NK cells	591	6266
+Mast|C_2	ev_celltypist_label	Type 1 helper T cells	564	6266
+Mast|C_2	ev_celltypist_label	NK cells	378	6266
+Mast|C_2	scatomic_full_label	Mast cell	6040	6266
+Mast|C_2	scatomic_full_label	Blood Cell	136	6266
+Mast|C_2	scatomic_full_label	Any Cell	59	6266
+Mast|C_2	scatomic_full_label	cDC2	10	6266
+Mast|C_2	scatomic_full_label	B Cell	3	6266
+Mast|C_3	ev_celltypist_label	Mast cells	1080	3330
+Mast|C_3	ev_celltypist_label	Classical monocytes	382	3330
+Mast|C_3	ev_celltypist_label	Type 1 helper T cells	242	3330
+Mast|C_3	ev_celltypist_label	CD16+ NK cells	228	3330
+Mast|C_3	ev_celltypist_label	Alveolar macrophages	171	3330
+Mast|C_3	scatomic_full_label	Mast cell	3217	3330
+Mast|C_3	scatomic_full_label	Blood Cell	75	3330
+Mast|C_3	scatomic_full_label	Any Cell	15	3330
+Mast|C_3	scatomic_full_label	cDC2	7	3330
+Mast|C_3	scatomic_full_label	Normal Tissue Cell	3	3330
+Mast|C_4	ev_celltypist_label	Mast cells	1026	2562
+Mast|C_4	ev_celltypist_label	Classical monocytes	314	2562
+Mast|C_4	ev_celltypist_label	CD16+ NK cells	184	2562
+Mast|C_4	ev_celltypist_label	ILC3	101	2562
+Mast|C_4	ev_celltypist_label	Alveolar macrophages	100	2562
+Mast|C_4	scatomic_full_label	Mast cell	2485	2562
+Mast|C_4	scatomic_full_label	Blood Cell	46	2562
+Mast|C_4	scatomic_full_label	Any Cell	19	2562
+Mast|C_4	scatomic_full_label	Non Blood Cell	3	2562
+Mast|C_4	scatomic_full_label	Non Stromal Cell	3	2562
+Mast|C_5	ev_celltypist_label	Mast cells	471	1588
+Mast|C_5	ev_celltypist_label	Classical monocytes	155	1588
+Mast|C_5	ev_celltypist_label	Type 1 helper T cells	116	1588
+Mast|C_5	ev_celltypist_label	CD16+ NK cells	103	1588
+Mast|C_5	ev_celltypist_label	Alveolar macrophages	66	1588
+Mast|C_5	scatomic_full_label	Mast cell	1439	1588
+Mast|C_5	scatomic_full_label	Blood Cell	77	1588
+Mast|C_5	scatomic_full_label	Plasmablast	25	1588
+Mast|C_5	scatomic_full_label	Any Cell	12	1588
+Mast|C_5	scatomic_full_label	Normal Tissue Cell	8	1588
+Mast|C_6	ev_celltypist_label	Mast cells	283	1166
+Mast|C_6	ev_celltypist_label	Classical monocytes	140	1166
+Mast|C_6	ev_celltypist_label	Type 1 helper T cells	128	1166
+Mast|C_6	ev_celltypist_label	ILC3	98	1166
+Mast|C_6	ev_celltypist_label	CD16+ NK cells	83	1166
+Mast|C_6	scatomic_full_label	Mast cell	1109	1166
+Mast|C_6	scatomic_full_label	Blood Cell	41	1166
+Mast|C_6	scatomic_full_label	Any Cell	5	1166
+Mast|C_6	scatomic_full_label	Macrophage	4	1166
+Mast|C_6	scatomic_full_label	Effector/Memory CD4+ T cells	2	1166
+Mast|C_7	ev_celltypist_label	Mast cells	177	1012
+Mast|C_7	ev_celltypist_label	CD16+ NK cells	101	1012
+Mast|C_7	ev_celltypist_label	Classical monocytes	76	1012
+Mast|C_7	ev_celltypist_label	NK cells	64	1012
+Mast|C_7	ev_celltypist_label	Alveolar macrophages	64	1012
+Mast|C_7	scatomic_full_label	Mast cell	675	1012
+Mast|C_7	scatomic_full_label	Any Cell	63	1012
+Mast|C_7	scatomic_full_label	Normal Tissue Cell	47	1012
+Mast|C_7	scatomic_full_label	CAFmyo	36	1012
+Mast|C_7	scatomic_full_label	Endothelial Cells	25	1012
+Mast|C_8	ev_celltypist_label	Tem/Trm cytotoxic T cells	131	948
+Mast|C_8	ev_celltypist_label	CD16+ NK cells	128	948
+Mast|C_8	ev_celltypist_label	Type 1 helper T cells	119	948
+Mast|C_8	ev_celltypist_label	Tem/Effector helper T cells	79	948
+Mast|C_8	ev_celltypist_label	Mast cells	78	948
+Mast|C_8	scatomic_full_label	Mast cell	744	948
+Mast|C_8	scatomic_full_label	Blood Cell	164	948
+Mast|C_8	scatomic_full_label	Any Cell	10	948
+Mast|C_8	scatomic_full_label	CD4+ T cell	8	948
+Mast|C_8	scatomic_full_label	Effector/Memory CD8+ T cells	7	948
+Mast|C_9	ev_celltypist_label	Mast cells	265	762
+Mast|C_9	ev_celltypist_label	Classical monocytes	106	762
+Mast|C_9	ev_celltypist_label	CD16+ NK cells	49	762
+Mast|C_9	ev_celltypist_label	Alveolar macrophages	44	762
+Mast|C_9	ev_celltypist_label	Type 1 helper T cells	42	762
+Mast|C_9	scatomic_full_label	Mast cell	735	762
+Mast|C_9	scatomic_full_label	Blood Cell	16	762
+Mast|C_9	scatomic_full_label	Normal Tissue Cell	5	762
+Mast|C_9	scatomic_full_label	Any Cell	3	762
+Mast|C_9	scatomic_full_label	Pro-angiogenesis Macrophage	1	762
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	5560	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	ev_celltypist_label	Memory B cells	2808	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	2373	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	ev_celltypist_label	T(agonist)	1616	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive cytotoxic T cells	1239	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	scatomic_full_label	Skin Cancer Cell	21042	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	scatomic_full_label	Non Blood Cell	1642	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	1009	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	scatomic_full_label	Esophageal Cancer Cell	199	24017
+Melanocytic_coarse_subtype_pending|L1_Unknown_unresolved	scatomic_full_label	CAFinfla	87	24017
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	ev_celltypist_label	Classical monocytes	10313	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	ev_celltypist_label	Non-classical monocytes	5169	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	ev_celltypist_label	Monocytes	476	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	ev_celltypist_label	Macrophages	443	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	ev_celltypist_label	DC2	58	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	scatomic_full_label	CD14 Monocyte	8493	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	scatomic_full_label	CD16 Monocyte	3301	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	scatomic_full_label	Pro-inflammatory Macrophage	925	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	scatomic_full_label	Macrophage	886	16626
+Monocyte_Classical_FCN1_FCN1|L1_Monocyte_0	scatomic_full_label	cDC2	799	16626
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	ev_celltypist_label	Classical monocytes	7601	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	ev_celltypist_label	Macrophages	5892	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	ev_celltypist_label	Monocytes	4785	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	ev_celltypist_label	Non-classical monocytes	3337	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	ev_celltypist_label	Intermediate macrophages	980	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	scatomic_full_label	Pro-angiogenesis Macrophage	6597	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	scatomic_full_label	Pro-inflammatory Macrophage	4560	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	scatomic_full_label	Macrophage	3803	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	scatomic_full_label	Macrophage or Dendritic Cell	2263	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_1	scatomic_full_label	cDC2	2155	23826
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	ev_celltypist_label	Classical monocytes	10054	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	ev_celltypist_label	Monocytes	2178	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	ev_celltypist_label	Macrophages	1722	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	ev_celltypist_label	Non-classical monocytes	1484	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	ev_celltypist_label	Intermediate macrophages	760	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	scatomic_full_label	Pro-angiogenesis Macrophage	4611	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	scatomic_full_label	Pro-inflammatory Macrophage	3905	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	scatomic_full_label	CD14 Monocyte	2809	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	scatomic_full_label	Macrophage	2266	16905
+Monocyte_Inflammatory_IL1B_IL1B|L1_Monocyte_2	scatomic_full_label	Macrophage or Monocyte	1041	16905
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	ev_celltypist_label	Non-classical monocytes	5943	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	ev_celltypist_label	Classical monocytes	2225	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	ev_celltypist_label	Macrophages	748	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	ev_celltypist_label	Monocytes	726	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	ev_celltypist_label	Regulatory T cells	256	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	scatomic_full_label	Pro-angiogenesis Macrophage	2778	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	scatomic_full_label	CD16 Monocyte	2119	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	scatomic_full_label	Macrophage	1773	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	scatomic_full_label	cDC2	827	11681
+Monocyte_Nonclassical_FCGR3A_FCGR3A|L1_Monocyte_4	scatomic_full_label	Pro-inflammatory Macrophage	816	11681
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	58	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	51	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	36	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	CD16- NK cells	30	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	16	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage or Dendritic Cell	37	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	37	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	35	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	25	298
+Monocyte_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage	23	298
+Monocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	488	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Classical monocytes	253	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Monocytes	237	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Non-classical monocytes	87	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Intermediate macrophages	85	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	352	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Macrophage or Dendritic Cell	273	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	cDC2	263	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Macrophage	212	1614
+Monocyte_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD14 Monocyte	120	1614
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	5558	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Intermediate macrophages	1757	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Classical monocytes	1554	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Monocytes	1010	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Non-classical monocytes	524	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	5535	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage	1849	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Pro-inflammatory Macrophage	1223	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	893	11782
+Monocyte_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage or Dendritic Cell	703	11782
+Monocyte_unresolved|L1_Monocyte_3	ev_celltypist_label	Classical monocytes	9806	15695
+Monocyte_unresolved|L1_Monocyte_3	ev_celltypist_label	Non-classical monocytes	1611	15695
+Monocyte_unresolved|L1_Monocyte_3	ev_celltypist_label	NK cells	1098	15695
+Monocyte_unresolved|L1_Monocyte_3	ev_celltypist_label	Monocytes	532	15695
+Monocyte_unresolved|L1_Monocyte_3	ev_celltypist_label	Macrophages	358	15695
+Monocyte_unresolved|L1_Monocyte_3	scatomic_full_label	CD14 Monocyte	6972	15695
+Monocyte_unresolved|L1_Monocyte_3	scatomic_full_label	CAFmyo	2070	15695
+Monocyte_unresolved|L1_Monocyte_3	scatomic_full_label	Pro-angiogenesis Macrophage	1186	15695
+Monocyte_unresolved|L1_Monocyte_3	scatomic_full_label	cDC2	1114	15695
+Monocyte_unresolved|L1_Monocyte_3	scatomic_full_label	CD16 Monocyte	950	15695
+Myeloid_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Classical monocytes	29083	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	7387	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Non-classical monocytes	2771	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Intermediate macrophages	1636	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Monocytes	1231	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	scatomic_full_label	CD14 Monocyte	20266	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	11649	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Macrophage	2511	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	scatomic_full_label	CD16 Monocyte	2476	44071
+Myeloid_boundary|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	1582	44071
+Myeloid_boundary|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	26755	82137
+Myeloid_boundary|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	9350	82137
+Myeloid_boundary|L1_Unknown_unresolved	ev_celltypist_label	Classical monocytes	7492	82137
+Myeloid_boundary|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	5308	82137
+Myeloid_boundary|L1_Unknown_unresolved	ev_celltypist_label	Monocytes	3328	82137
+Myeloid_boundary|L1_Unknown_unresolved	scatomic_full_label	Esophageal Cancer Cell	31132	82137
+Myeloid_boundary|L1_Unknown_unresolved	scatomic_full_label	Bladder Cancer Cell	11877	82137
+Myeloid_boundary|L1_Unknown_unresolved	scatomic_full_label	Lung Cancer Cell	8735	82137
+Myeloid_boundary|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	7990	82137
+Myeloid_boundary|L1_Unknown_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	5615	82137
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	ev_celltypist_label	CD16+ NK cells	35388	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	ev_celltypist_label	NK cells	632	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	ev_celltypist_label	CD16- NK cells	476	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	ev_celltypist_label	Tem/Temra cytotoxic T cells	326	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	ev_celltypist_label	NKT cells	50	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	scatomic_full_label	Natural killer cell	34172	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	scatomic_full_label	Effector/Memory CD8+ T cells	1556	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	scatomic_full_label	CD8 T or NK cell	1118	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	scatomic_full_label	Normal Tissue Cell	31	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_4	scatomic_full_label	CD8+ T cell	24	36941
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	ev_celltypist_label	CD16+ NK cells	18132	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	ev_celltypist_label	NK cells	635	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	ev_celltypist_label	Tem/Temra cytotoxic T cells	539	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	ev_celltypist_label	CD16- NK cells	457	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	ev_celltypist_label	Tem/Trm cytotoxic T cells	91	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	scatomic_full_label	Natural killer cell	17863	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	scatomic_full_label	Effector/Memory CD8+ T cells	1146	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	scatomic_full_label	CD8 T or NK cell	1063	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	scatomic_full_label	Blood Cell	14	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_5	scatomic_full_label	Normal Tissue Cell	9	20125
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	ev_celltypist_label	CD16+ NK cells	3006	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	ev_celltypist_label	CD16- NK cells	240	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	ev_celltypist_label	NK cells	210	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	ev_celltypist_label	Tem/Temra cytotoxic T cells	184	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	ev_celltypist_label	Tem/Trm cytotoxic T cells	51	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	scatomic_full_label	Natural killer cell	3305	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	scatomic_full_label	Effector/Memory CD8+ T cells	218	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	scatomic_full_label	CD8 T or NK cell	191	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	scatomic_full_label	CD4 or CD8 T cell	25	3815
+NK_FCGR3A_cytotoxic_FCGR3A|L1_NK_7	scatomic_full_label	Effector/Memory CD4+ T cells	19	3815
+NK_XCL1_CD56bright_XCL1|L1_NK_2	ev_celltypist_label	CD16- NK cells	13639	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	ev_celltypist_label	CD16+ NK cells	6506	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	ev_celltypist_label	NK cells	2411	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	ev_celltypist_label	Tem/Trm cytotoxic T cells	632	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	ev_celltypist_label	gamma-delta T cells	481	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	scatomic_full_label	Natural killer cell	21575	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	scatomic_full_label	Effector/Memory CD8+ T cells	1507	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	scatomic_full_label	CD8 T or NK cell	1131	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	scatomic_full_label	Blood Cell	286	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_2	scatomic_full_label	Endothelial Cells	134	25243
+NK_XCL1_CD56bright_XCL1|L1_NK_6	ev_celltypist_label	CD16- NK cells	4646	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	ev_celltypist_label	NK cells	3410	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	ev_celltypist_label	CD16+ NK cells	2642	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	ev_celltypist_label	gamma-delta T cells	447	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	ev_celltypist_label	Tem/Trm cytotoxic T cells	256	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	scatomic_full_label	Natural killer cell	10164	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	scatomic_full_label	Effector/Memory CD8+ T cells	796	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	scatomic_full_label	CD8 T or NK cell	416	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	scatomic_full_label	Exhausted CD8+ T cells	274	12283
+NK_XCL1_CD56bright_XCL1|L1_NK_6	scatomic_full_label	Normal Tissue Cell	194	12283
+NK_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Non-classical monocytes	370	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	179	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	CD16- NK cells	90	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Intermediate macrophages	21	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	pDC	18	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	CD16 Monocyte	207	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	153	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Natural killer cell	128	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Phagocytosis Macrophage	60	822
+NK_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	50	822
+NK_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Temra cytotoxic T cells	4171	26102
+NK_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	CD16+ NK cells	3945	26102
+NK_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	NK cells	3905	26102
+NK_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	3901	26102
+NK_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Trm cytotoxic T cells	2066	26102
+NK_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	11151	26102
+NK_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Natural killer cell	8355	26102
+NK_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD8 T or NK cell	1677	26102
+NK_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD4 or CD8 T cell	663	26102
+NK_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD8+ T cell	647	26102
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Temra cytotoxic T cells	2727	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	CD16+ NK cells	2162	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	2107	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	1956	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	CD16- NK cells	1533	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Natural killer cell	5514	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	5456	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CD8 T or NK cell	1073	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Exhausted CD8+ T cells	493	15388
+NK_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CAFmyo	433	15388
+NK_unresolved_CST3|L1_NK_1	ev_celltypist_label	NK cells	1080	4091
+NK_unresolved_CST3|L1_NK_1	ev_celltypist_label	Macrophages	529	4091
+NK_unresolved_CST3|L1_NK_1	ev_celltypist_label	Epithelial cells	429	4091
+NK_unresolved_CST3|L1_NK_1	ev_celltypist_label	CD16+ NK cells	325	4091
+NK_unresolved_CST3|L1_NK_1	ev_celltypist_label	Alveolar macrophages	175	4091
+NK_unresolved_CST3|L1_NK_1	scatomic_full_label	CAFmyo	898	4091
+NK_unresolved_CST3|L1_NK_1	scatomic_full_label	Normal Fibroblast	440	4091
+NK_unresolved_CST3|L1_NK_1	scatomic_full_label	Normal Tissue Cell	359	4091
+NK_unresolved_CST3|L1_NK_1	scatomic_full_label	Brain Cancer Cell	242	4091
+NK_unresolved_CST3|L1_NK_1	scatomic_full_label	Natural killer cell	228	4091
+NK_unresolved_DNAJB1|L1_NK_0	ev_celltypist_label	CD16+ NK cells	4095	12273
+NK_unresolved_DNAJB1|L1_NK_0	ev_celltypist_label	CD16- NK cells	3600	12273
+NK_unresolved_DNAJB1|L1_NK_0	ev_celltypist_label	NK cells	1189	12273
+NK_unresolved_DNAJB1|L1_NK_0	ev_celltypist_label	Tem/Trm cytotoxic T cells	864	12273
+NK_unresolved_DNAJB1|L1_NK_0	ev_celltypist_label	Trm cytotoxic T cells	426	12273
+NK_unresolved_DNAJB1|L1_NK_0	scatomic_full_label	Natural killer cell	7201	12273
+NK_unresolved_DNAJB1|L1_NK_0	scatomic_full_label	Effector/Memory CD8+ T cells	1833	12273
+NK_unresolved_DNAJB1|L1_NK_0	scatomic_full_label	CD8 T or NK cell	965	12273
+NK_unresolved_DNAJB1|L1_NK_0	scatomic_full_label	Blood Cell	431	12273
+NK_unresolved_DNAJB1|L1_NK_0	scatomic_full_label	Endothelial Cells	419	12273
+NK_unresolved|L1_NK_3	ev_celltypist_label	CD16+ NK cells	17639	35925
+NK_unresolved|L1_NK_3	ev_celltypist_label	CD16- NK cells	7066	35925
+NK_unresolved|L1_NK_3	ev_celltypist_label	NK cells	5192	35925
+NK_unresolved|L1_NK_3	ev_celltypist_label	Tem/Temra cytotoxic T cells	1307	35925
+NK_unresolved|L1_NK_3	ev_celltypist_label	Trm cytotoxic T cells	946	35925
+NK_unresolved|L1_NK_3	scatomic_full_label	Natural killer cell	26821	35925
+NK_unresolved|L1_NK_3	scatomic_full_label	Effector/Memory CD8+ T cells	6089	35925
+NK_unresolved|L1_NK_3	scatomic_full_label	CD8 T or NK cell	1759	35925
+NK_unresolved|L1_NK_3	scatomic_full_label	CD4 or CD8 T cell	241	35925
+NK_unresolved|L1_NK_3	scatomic_full_label	Normal Tissue Cell	142	35925
+Neural_Neural_progenitor_SOX2|L1_Neural_1	ev_celltypist_label	NK cells	12897	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	ev_celltypist_label	T(agonist)	11471	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	ev_celltypist_label	Epithelial cells	9490	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	ev_celltypist_label	Double-negative thymocytes	4122	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	ev_celltypist_label	Macrophages	4050	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	scatomic_full_label	Brain Cancer Cell	50508	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	scatomic_full_label	Normal Tissue Cell	4764	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	scatomic_full_label	Skin Cancer Cell	2640	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	scatomic_full_label	Oligodendrocytes	2468	62127
+Neural_Neural_progenitor_SOX2|L1_Neural_1	scatomic_full_label	Non Blood Cell	1270	62127
+Neural_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	DC2	84	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive cytotoxic T cells	75	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Double-positive thymocytes	42	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	39	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	27	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	109	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Brain Cancer Cell	85	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Naive CD8+ T cells	40	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	38	437
+Neural_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Lung Cancer Cell	26	437
+Neural_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	842	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	CD16+ NK cells	387	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	258	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Memory B cells	163	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	NK cells	152	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Skin Cancer Cell	2061	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Lung Cancer Cell	252	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	136	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Non Blood Cell	55	2569
+Neural_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Brain Cancer Cell	38	2569
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Epithelial cells	306	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	296	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	DC2	193	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	179	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Fibroblasts	159	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Non Blood Cell	369	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Skin Cancer Cell	351	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Brain Cancer Cell	347	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Glial Cells	338	2423
+Neural_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	cDC2	208	2423
+Neural_unresolved|L1_Neural_0	ev_celltypist_label	NK cells	2688	20560
+Neural_unresolved|L1_Neural_0	ev_celltypist_label	Epithelial cells	2514	20560
+Neural_unresolved|L1_Neural_0	ev_celltypist_label	T(agonist)	2425	20560
+Neural_unresolved|L1_Neural_0	ev_celltypist_label	Tcm/Naive cytotoxic T cells	2063	20560
+Neural_unresolved|L1_Neural_0	ev_celltypist_label	Double-positive thymocytes	1018	20560
+Neural_unresolved|L1_Neural_0	scatomic_full_label	Brain Cancer Cell	12428	20560
+Neural_unresolved|L1_Neural_0	scatomic_full_label	Oligodendrocytes	2477	20560
+Neural_unresolved|L1_Neural_0	scatomic_full_label	Lung Cancer Cell	2087	20560
+Neural_unresolved|L1_Neural_0	scatomic_full_label	Normal Tissue Cell	1222	20560
+Neural_unresolved|L1_Neural_0	scatomic_full_label	Non Blood Cell	1007	20560
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	ev_celltypist_label	Epithelial cells	84444	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	ev_celltypist_label	Macrophages	18668	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	ev_celltypist_label	NK cells	16256	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	ev_celltypist_label	Tcm/Naive helper T cells	9826	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	ev_celltypist_label	Alveolar macrophages	9259	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	scatomic_full_label	Normal Tissue Cell	39487	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	scatomic_full_label	Breast Cancer Cell	37482	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	scatomic_full_label	Lung Cancer Cell	27094	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	scatomic_full_label	Esophageal Cancer Cell	25099	199186
+Nonmalignant_Epithelial_CNV_negative|L1_Epithelial_coarse	scatomic_full_label	Colon/Colorectal Cancer Cell	16706	199186
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	pDC	2118	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	796	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	646	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Trm cytotoxic T cells	235	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Effector helper T cells	151	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	pDC	1887	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Plasmablast	711	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	695	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	397	4661
+Plasma_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	CD4+ T cell	187	4661
+Plasma_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Plasma cells	1851	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	1445	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Trm cytotoxic T cells	1015	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Regulatory T cells	720	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Type 1 helper T cells	714	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Plasmablast	3332	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Blood Cell	2266	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	1851	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD4 or CD8 T cell	618	11413
+Plasma_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD4+ T cells	586	11413
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	547	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Plasma cells	292	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	284	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Trm cytotoxic T cells	278	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Epithelial cells	243	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Blood Cell	808	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Plasmablast	805	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	282	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Endothelial Cells	247	4416
+Plasma_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Normal Tissue Cell	247	4416
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	ev_celltypist_label	Plasma cells	69692	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	ev_celltypist_label	Plasmablasts	28	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	ev_celltypist_label	Macrophages	9	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	ev_celltypist_label	T(agonist)	6	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	ev_celltypist_label	Epithelial cells	5	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	scatomic_full_label	Plasmablast	68197	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	scatomic_full_label	Any Cell	558	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	scatomic_full_label	Blood Cell	335	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	scatomic_full_label	B Cell	299	69779
+Plasma_unresolved_KRTCAP2|L1_Plasma_2	scatomic_full_label	Normal Tissue Cell	114	69779
+Plasma_unresolved_PFN1|L1_Plasma_1	ev_celltypist_label	Plasma cells	9163	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	ev_celltypist_label	Plasmablasts	1613	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	ev_celltypist_label	Macrophages	390	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	ev_celltypist_label	Epithelial cells	172	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	ev_celltypist_label	NK cells	157	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	scatomic_full_label	Plasmablast	9623	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	scatomic_full_label	Blood Cell	643	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	scatomic_full_label	Any Cell	394	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	scatomic_full_label	Normal Tissue Cell	335	12534
+Plasma_unresolved_PFN1|L1_Plasma_1	scatomic_full_label	Skin Cancer Cell	250	12534
+Plasma_unresolved|L1_Plasma_0	ev_celltypist_label	Plasma cells	16396	32745
+Plasma_unresolved|L1_Plasma_0	ev_celltypist_label	Epithelial cells	1477	32745
+Plasma_unresolved|L1_Plasma_0	ev_celltypist_label	Tem/Trm cytotoxic T cells	1388	32745
+Plasma_unresolved|L1_Plasma_0	ev_celltypist_label	Tcm/Naive helper T cells	1090	32745
+Plasma_unresolved|L1_Plasma_0	ev_celltypist_label	Trm cytotoxic T cells	860	32745
+Plasma_unresolved|L1_Plasma_0	scatomic_full_label	Plasmablast	15415	32745
+Plasma_unresolved|L1_Plasma_0	scatomic_full_label	Blood Cell	4567	32745
+Plasma_unresolved|L1_Plasma_0	scatomic_full_label	Any Cell	1833	32745
+Plasma_unresolved|L1_Plasma_0	scatomic_full_label	Normal Tissue Cell	1706	32745
+Plasma_unresolved|L1_Plasma_0	scatomic_full_label	Esophageal Cancer Cell	1523	32745
+Plasma_unresolved|L1_Plasma_3	ev_celltypist_label	Plasma cells	47947	48339
+Plasma_unresolved|L1_Plasma_3	ev_celltypist_label	Plasmablasts	138	48339
+Plasma_unresolved|L1_Plasma_3	ev_celltypist_label	Macrophages	37	48339
+Plasma_unresolved|L1_Plasma_3	ev_celltypist_label	Tem/Effector helper T cells	26	48339
+Plasma_unresolved|L1_Plasma_3	ev_celltypist_label	Regulatory T cells	21	48339
+Plasma_unresolved|L1_Plasma_3	scatomic_full_label	Plasmablast	45744	48339
+Plasma_unresolved|L1_Plasma_3	scatomic_full_label	Any Cell	891	48339
+Plasma_unresolved|L1_Plasma_3	scatomic_full_label	Blood Cell	624	48339
+Plasma_unresolved|L1_Plasma_3	scatomic_full_label	B Cell	280	48339
+Plasma_unresolved|L1_Plasma_3	scatomic_full_label	Normal Tissue Cell	268	48339
+Platelet|C_0	ev_celltypist_label	NK cells	222	538
+Platelet|C_0	ev_celltypist_label	Alveolar macrophages	75	538
+Platelet|C_0	ev_celltypist_label	Tcm/Naive helper T cells	32	538
+Platelet|C_0	ev_celltypist_label	CD16+ NK cells	30	538
+Platelet|C_0	ev_celltypist_label	Macrophages	23	538
+Platelet|C_0	scatomic_full_label	CAFmyo	520	538
+Platelet|C_0	scatomic_full_label	Cancer Associated Fibroblasts	9	538
+Platelet|C_0	scatomic_full_label	Endothelial Cells	3	538
+Platelet|C_0	scatomic_full_label	Stromal Cell	2	538
+Platelet|C_0	scatomic_full_label	CAFinfla	1	538
+Platelet|C_1	ev_celltypist_label	NK cells	124	448
+Platelet|C_1	ev_celltypist_label	Tcm/Naive helper T cells	61	448
+Platelet|C_1	ev_celltypist_label	Classical monocytes	60	448
+Platelet|C_1	ev_celltypist_label	Alveolar macrophages	27	448
+Platelet|C_1	ev_celltypist_label	CD16+ NK cells	27	448
+Platelet|C_1	scatomic_full_label	CAFmyo	353	448
+Platelet|C_1	scatomic_full_label	Colon/Colorectal Cancer Cell	57	448
+Platelet|C_1	scatomic_full_label	Cancer Associated Fibroblasts	13	448
+Platelet|C_1	scatomic_full_label	Normal Tissue Cell	11	448
+Platelet|C_1	scatomic_full_label	Non Blood Cell	4	448
+Platelet|C_10	ev_celltypist_label	NK cells	12	23
+Platelet|C_10	ev_celltypist_label	Tcm/Naive helper T cells	3	23
+Platelet|C_10	ev_celltypist_label	Double-positive thymocytes	1	23
+Platelet|C_10	ev_celltypist_label	B cells	1	23
+Platelet|C_10	ev_celltypist_label	Treg(diff)	1	23
+Platelet|C_10	scatomic_full_label	CAFmyo	23	23
+Platelet|C_2	ev_celltypist_label	NK cells	129	411
+Platelet|C_2	ev_celltypist_label	Tcm/Naive helper T cells	60	411
+Platelet|C_2	ev_celltypist_label	Alveolar macrophages	54	411
+Platelet|C_2	ev_celltypist_label	CD16+ NK cells	35	411
+Platelet|C_2	ev_celltypist_label	Double-positive thymocytes	24	411
+Platelet|C_2	scatomic_full_label	CAFmyo	397	411
+Platelet|C_2	scatomic_full_label	Endothelial Cells	5	411
+Platelet|C_2	scatomic_full_label	Cancer Associated Fibroblasts	4	411
+Platelet|C_2	scatomic_full_label	Normal Fibroblast	2	411
+Platelet|C_2	scatomic_full_label	Any Cell	1	411
+Platelet|C_3	ev_celltypist_label	NK cells	33	309
+Platelet|C_3	ev_celltypist_label	Macrophages	28	309
+Platelet|C_3	ev_celltypist_label	Double-positive thymocytes	28	309
+Platelet|C_3	ev_celltypist_label	Tcm/Naive helper T cells	28	309
+Platelet|C_3	ev_celltypist_label	Epithelial cells	27	309
+Platelet|C_3	scatomic_full_label	Brain Cancer Cell	107	309
+Platelet|C_3	scatomic_full_label	Lung Cancer Cell	36	309
+Platelet|C_3	scatomic_full_label	HSPC	33	309
+Platelet|C_3	scatomic_full_label	Colon/Colorectal Cancer Cell	32	309
+Platelet|C_3	scatomic_full_label	Normal Tissue Cell	30	309
+Platelet|C_4	ev_celltypist_label	Megakaryocytes/platelets	122	149
+Platelet|C_4	ev_celltypist_label	Classical monocytes	11	149
+Platelet|C_4	ev_celltypist_label	Double-negative thymocytes	3	149
+Platelet|C_4	ev_celltypist_label	Macrophages	3	149
+Platelet|C_4	ev_celltypist_label	Double-positive thymocytes	2	149
+Platelet|C_4	scatomic_full_label	Any Cell	63	149
+Platelet|C_4	scatomic_full_label	Blood Cell	26	149
+Platelet|C_4	scatomic_full_label	Lung Cancer Cell	17	149
+Platelet|C_4	scatomic_full_label	Effector/Memory CD4+ T cells	6	149
+Platelet|C_4	scatomic_full_label	HSPC	6	149
+Platelet|C_5	ev_celltypist_label	Epithelial cells	23	123
+Platelet|C_5	ev_celltypist_label	Tcm/Naive helper T cells	14	123
+Platelet|C_5	ev_celltypist_label	Memory B cells	13	123
+Platelet|C_5	ev_celltypist_label	Tcm/Naive cytotoxic T cells	12	123
+Platelet|C_5	ev_celltypist_label	Alveolar macrophages	8	123
+Platelet|C_5	scatomic_full_label	Colon/Colorectal Cancer Cell	102	123
+Platelet|C_5	scatomic_full_label	Normal Tissue Cell	5	123
+Platelet|C_5	scatomic_full_label	Non Blood Cell	4	123
+Platelet|C_5	scatomic_full_label	Breast/Lung/Prostate	3	123
+Platelet|C_5	scatomic_full_label	Lung Cancer Cell	3	123
+Platelet|C_6	ev_celltypist_label	Intermediate macrophages	45	120
+Platelet|C_6	ev_celltypist_label	Macrophages	31	120
+Platelet|C_6	ev_celltypist_label	Classical monocytes	18	120
+Platelet|C_6	ev_celltypist_label	Megakaryocytes/platelets	6	120
+Platelet|C_6	ev_celltypist_label	Alveolar macrophages	5	120
+Platelet|C_6	scatomic_full_label	Pro-angiogenesis Macrophage	81	120
+Platelet|C_6	scatomic_full_label	CD14 Monocyte	14	120
+Platelet|C_6	scatomic_full_label	Macrophage	9	120
+Platelet|C_6	scatomic_full_label	Phagocytosis Macrophage	5	120
+Platelet|C_6	scatomic_full_label	Any Cell	4	120
+Platelet|C_7	ev_celltypist_label	Memory B cells	13	77
+Platelet|C_7	ev_celltypist_label	CD8a/b(entry)	8	77
+Platelet|C_7	ev_celltypist_label	Classical monocytes	6	77
+Platelet|C_7	ev_celltypist_label	Double-negative thymocytes	6	77
+Platelet|C_7	ev_celltypist_label	Epithelial cells	5	77
+Platelet|C_7	scatomic_full_label	Brain Cancer Cell	28	77
+Platelet|C_7	scatomic_full_label	Normal Tissue Cell	16	77
+Platelet|C_7	scatomic_full_label	Unclassified Soft Tissue or Neuro Cancer Cell	13	77
+Platelet|C_7	scatomic_full_label	Lung Cancer Cell	8	77
+Platelet|C_7	scatomic_full_label	Endometrial Cancer Cell	8	77
+Platelet|C_8	ev_celltypist_label	Tcm/Naive helper T cells	10	61
+Platelet|C_8	ev_celltypist_label	NK cells	8	61
+Platelet|C_8	ev_celltypist_label	Megakaryocytes/platelets	7	61
+Platelet|C_8	ev_celltypist_label	Tem/Temra cytotoxic T cells	6	61
+Platelet|C_8	ev_celltypist_label	Tem/Trm cytotoxic T cells	5	61
+Platelet|C_8	scatomic_full_label	Effector/Memory CD8+ T cells	17	61
+Platelet|C_8	scatomic_full_label	Naive CD4+ T cells	14	61
+Platelet|C_8	scatomic_full_label	CD4+ T cell	6	61
+Platelet|C_8	scatomic_full_label	Blood Cell	4	61
+Platelet|C_8	scatomic_full_label	Effector/Memory CD4+ T cells	4	61
+Platelet|C_9	ev_celltypist_label	NK cells	30	59
+Platelet|C_9	ev_celltypist_label	Classical monocytes	7	59
+Platelet|C_9	ev_celltypist_label	CD16+ NK cells	4	59
+Platelet|C_9	ev_celltypist_label	Tem/Trm cytotoxic T cells	3	59
+Platelet|C_9	ev_celltypist_label	Regulatory T cells	3	59
+Platelet|C_9	scatomic_full_label	CAFmyo	56	59
+Platelet|C_9	scatomic_full_label	Cancer Associated Fibroblasts	1	59
+Platelet|C_9	scatomic_full_label	Non Blood Cell	1	59
+Platelet|C_9	scatomic_full_label	Endothelial Cells	1	59
+Related_lineage_boundary|L1_Unknown_unresolved	ev_celltypist_label	Plasma cells	692	4970
+Related_lineage_boundary|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	640	4970
+Related_lineage_boundary|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	545	4970
+Related_lineage_boundary|L1_Unknown_unresolved	ev_celltypist_label	Monocytes	446	4970
+Related_lineage_boundary|L1_Unknown_unresolved	ev_celltypist_label	Classical monocytes	248	4970
+Related_lineage_boundary|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	888	4970
+Related_lineage_boundary|L1_Unknown_unresolved	scatomic_full_label	Plasmablast	802	4970
+Related_lineage_boundary|L1_Unknown_unresolved	scatomic_full_label	Pro-angiogenesis Macrophage	421	4970
+Related_lineage_boundary|L1_Unknown_unresolved	scatomic_full_label	Macrophage or Dendritic Cell	365	4970
+Related_lineage_boundary|L1_Unknown_unresolved	scatomic_full_label	Blood Cell	294	4970
+Stromal_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Endothelial cells	30	75
+Stromal_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	18	75
+Stromal_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	5	75
+Stromal_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Alveolar macrophages	4	75
+Stromal_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Macrophages	2	75
+Stromal_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Endothelial Cells	41	75
+Stromal_boundary|L1_Ambiguous_unresolved	scatomic_full_label	CAFmyo	10	75
+Stromal_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Stromal Cell	9	75
+Stromal_boundary|L1_Ambiguous_unresolved	scatomic_full_label	CAFendmt	8	75
+Stromal_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Cancer Associated Fibroblasts	4	75
+Stromal_boundary|L1_Unknown_unresolved	ev_celltypist_label	NK cells	192	738
+Stromal_boundary|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	166	738
+Stromal_boundary|L1_Unknown_unresolved	ev_celltypist_label	Endothelial cells	148	738
+Stromal_boundary|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	51	738
+Stromal_boundary|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	21	738
+Stromal_boundary|L1_Unknown_unresolved	scatomic_full_label	Endothelial Cells	370	738
+Stromal_boundary|L1_Unknown_unresolved	scatomic_full_label	Stromal Cell	82	738
+Stromal_boundary|L1_Unknown_unresolved	scatomic_full_label	CAFmyo	59	738
+Stromal_boundary|L1_Unknown_unresolved	scatomic_full_label	Cancer Associated Fibroblasts	55	738
+Stromal_boundary|L1_Unknown_unresolved	scatomic_full_label	CAFendmt	48	738
+T6|C_0	ev_celltypist_label	Regulatory T cells	49772	52004
+T6|C_0	ev_celltypist_label	Tem/Effector helper T cells	1178	52004
+T6|C_0	ev_celltypist_label	Type 17 helper T cells	368	52004
+T6|C_0	ev_celltypist_label	Type 1 helper T cells	166	52004
+T6|C_0	ev_celltypist_label	Follicular helper T cells	142	52004
+T6|C_0	scatomic_full_label	T regulatory cells	34474	52004
+T6|C_0	scatomic_full_label	CD4+ T cell	12075	52004
+T6|C_0	scatomic_full_label	Effector/Memory CD4+ T cells	2009	52004
+T6|C_0	scatomic_full_label	CD4 or CD8 T cell	769	52004
+T6|C_0	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	679	52004
+T6|C_1	ev_celltypist_label	Regulatory T cells	24407	24979
+T6|C_1	ev_celltypist_label	Tem/Effector helper T cells	322	24979
+T6|C_1	ev_celltypist_label	Tem/Trm cytotoxic T cells	64	24979
+T6|C_1	ev_celltypist_label	Type 17 helper T cells	56	24979
+T6|C_1	ev_celltypist_label	Treg(diff)	35	24979
+T6|C_1	scatomic_full_label	T regulatory cells	19067	24979
+T6|C_1	scatomic_full_label	CD4+ T cell	3269	24979
+T6|C_1	scatomic_full_label	Effector/Memory CD4+ T cells	563	24979
+T6|C_1	scatomic_full_label	CD4 or CD8 T cell	484	24979
+T6|C_1	scatomic_full_label	CD8+ T cell	459	24979
+T6|C_10	ev_celltypist_label	Regulatory T cells	136	150
+T6|C_10	ev_celltypist_label	Treg(diff)	3	150
+T6|C_10	ev_celltypist_label	Tem/Temra cytotoxic T cells	3	150
+T6|C_10	ev_celltypist_label	Tem/Effector helper T cells	2	150
+T6|C_10	ev_celltypist_label	Type 17 helper T cells	2	150
+T6|C_10	scatomic_full_label	T regulatory cells	60	150
+T6|C_10	scatomic_full_label	CD4+ T cell	41	150
+T6|C_10	scatomic_full_label	Blood Cell	11	150
+T6|C_10	scatomic_full_label	Any Cell	10	150
+T6|C_10	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	9	150
+T6|C_11	ev_celltypist_label	Regulatory T cells	2	2
+T6|C_11	scatomic_full_label	CD4+ T cell	1	2
+T6|C_11	scatomic_full_label	T regulatory cells	1	2
+T6|C_2	ev_celltypist_label	Regulatory T cells	21271	21477
+T6|C_2	ev_celltypist_label	Tem/Effector helper T cells	63	21477
+T6|C_2	ev_celltypist_label	Type 17 helper T cells	46	21477
+T6|C_2	ev_celltypist_label	T(agonist)	30	21477
+T6|C_2	ev_celltypist_label	Tem/Trm cytotoxic T cells	26	21477
+T6|C_2	scatomic_full_label	T regulatory cells	19018	21477
+T6|C_2	scatomic_full_label	CD4+ T cell	736	21477
+T6|C_2	scatomic_full_label	CD4 or CD8 T cell	399	21477
+T6|C_2	scatomic_full_label	Exhausted CD8+ T cells	307	21477
+T6|C_2	scatomic_full_label	CD8+ T cell	278	21477
+T6|C_3	ev_celltypist_label	Regulatory T cells	17591	20531
+T6|C_3	ev_celltypist_label	Tem/Effector helper T cells	1274	20531
+T6|C_3	ev_celltypist_label	Follicular helper T cells	940	20531
+T6|C_3	ev_celltypist_label	Tem/Trm cytotoxic T cells	196	20531
+T6|C_3	ev_celltypist_label	Treg(diff)	140	20531
+T6|C_3	scatomic_full_label	CD4+ T cell	8864	20531
+T6|C_3	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	7768	20531
+T6|C_3	scatomic_full_label	T regulatory cells	1867	20531
+T6|C_3	scatomic_full_label	Effector/Memory CD4+ T cells	520	20531
+T6|C_3	scatomic_full_label	Naive CD4+ T cells	439	20531
+T6|C_4	ev_celltypist_label	Regulatory T cells	13811	19120
+T6|C_4	ev_celltypist_label	Tem/Effector helper T cells	2168	19120
+T6|C_4	ev_celltypist_label	Type 17 helper T cells	1521	19120
+T6|C_4	ev_celltypist_label	Type 1 helper T cells	702	19120
+T6|C_4	ev_celltypist_label	Tem/Trm cytotoxic T cells	234	19120
+T6|C_4	scatomic_full_label	CD4+ T cell	6690	19120
+T6|C_4	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	5261	19120
+T6|C_4	scatomic_full_label	Effector/Memory CD4+ T cells	3134	19120
+T6|C_4	scatomic_full_label	T regulatory cells	1949	19120
+T6|C_4	scatomic_full_label	CD4 or CD8 T cell	883	19120
+T6|C_5	ev_celltypist_label	Regulatory T cells	8790	9569
+T6|C_5	ev_celltypist_label	Tem/Effector helper T cells	530	9569
+T6|C_5	ev_celltypist_label	Type 1 helper T cells	70	9569
+T6|C_5	ev_celltypist_label	Type 17 helper T cells	64	9569
+T6|C_5	ev_celltypist_label	Tem/Trm cytotoxic T cells	46	9569
+T6|C_5	scatomic_full_label	T regulatory cells	6357	9569
+T6|C_5	scatomic_full_label	CD4+ T cell	1301	9569
+T6|C_5	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	679	9569
+T6|C_5	scatomic_full_label	Effector/Memory CD4+ T cells	535	9569
+T6|C_5	scatomic_full_label	CD4 or CD8 T cell	197	9569
+T6|C_6	ev_celltypist_label	Regulatory T cells	1621	2700
+T6|C_6	ev_celltypist_label	Tem/Trm cytotoxic T cells	597	2700
+T6|C_6	ev_celltypist_label	Memory CD4+ cytotoxic T cells	287	2700
+T6|C_6	ev_celltypist_label	Tem/Effector helper T cells	102	2700
+T6|C_6	ev_celltypist_label	Type 1 helper T cells	34	2700
+T6|C_6	scatomic_full_label	CD4+ T cell	902	2700
+T6|C_6	scatomic_full_label	Effector/Memory CD4+ T cells	660	2700
+T6|C_6	scatomic_full_label	CD4 or CD8 T cell	277	2700
+T6|C_6	scatomic_full_label	T regulatory cells	253	2700
+T6|C_6	scatomic_full_label	Effector/Memory CD8+ T cells	196	2700
+T6|C_7	ev_celltypist_label	Regulatory T cells	2051	2371
+T6|C_7	ev_celltypist_label	Tem/Effector helper T cells	147	2371
+T6|C_7	ev_celltypist_label	Type 17 helper T cells	63	2371
+T6|C_7	ev_celltypist_label	Type 1 helper T cells	36	2371
+T6|C_7	ev_celltypist_label	Tem/Trm cytotoxic T cells	14	2371
+T6|C_7	scatomic_full_label	CD4+ T cell	1113	2371
+T6|C_7	scatomic_full_label	T regulatory cells	555	2371
+T6|C_7	scatomic_full_label	Tfh/Th1 helper CD4+ T cells	172	2371
+T6|C_7	scatomic_full_label	Plasmablast	141	2371
+T6|C_7	scatomic_full_label	Blood Cell	128	2371
+T6|C_8	ev_celltypist_label	Regulatory T cells	2113	2221
+T6|C_8	ev_celltypist_label	Type 17 helper T cells	53	2221
+T6|C_8	ev_celltypist_label	Tem/Effector helper T cells	28	2221
+T6|C_8	ev_celltypist_label	Follicular helper T cells	5	2221
+T6|C_8	ev_celltypist_label	Tem/Trm cytotoxic T cells	5	2221
+T6|C_8	scatomic_full_label	T regulatory cells	1404	2221
+T6|C_8	scatomic_full_label	CD4+ T cell	365	2221
+T6|C_8	scatomic_full_label	CD4 or CD8 T cell	137	2221
+T6|C_8	scatomic_full_label	Effector/Memory CD4+ T cells	101	2221
+T6|C_8	scatomic_full_label	Effector/Memory CD8+ T cells	63	2221
+T6|C_9	ev_celltypist_label	Regulatory T cells	580	662
+T6|C_9	ev_celltypist_label	Macrophages	26	662
+T6|C_9	ev_celltypist_label	Tem/Effector helper T cells	19	662
+T6|C_9	ev_celltypist_label	Monocytes	10	662
+T6|C_9	ev_celltypist_label	Type 1 helper T cells	8	662
+T6|C_9	scatomic_full_label	T regulatory cells	168	662
+T6|C_9	scatomic_full_label	Blood Cell	70	662
+T6|C_9	scatomic_full_label	Pro-angiogenesis Macrophage	58	662
+T6|C_9	scatomic_full_label	Macrophage or Dendritic Cell	52	662
+T6|C_9	scatomic_full_label	cDC2	46	662
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	CD16+ NK cells	9607	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	7926	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Effector helper T cells	6577	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Temra cytotoxic T cells	5044	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	ev_celltypist_label	CD16- NK cells	4134	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Natural killer cell	17795	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	13147	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD4+ T cells	5426	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	scatomic_full_label	CD4+ T cell	4744	52042
+T_NK_ILC_boundary|L1_Ambiguous_unresolved	scatomic_full_label	Naive CD4+ T cells	3921	52042
+T_NK_ILC_boundary|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	7254	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	ev_celltypist_label	Tem/Temra cytotoxic T cells	6796	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	ev_celltypist_label	Trm cytotoxic T cells	4592	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	ev_celltypist_label	Tem/Effector helper T cells	4147	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	ev_celltypist_label	NK cells	3670	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	22342	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD4+ T cells	4461	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	scatomic_full_label	CD4+ T cell	3466	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	scatomic_full_label	Naive CD4+ T cells	2734	45144
+T_NK_ILC_boundary|L1_Unknown_unresolved	scatomic_full_label	CD8+ T cell	2681	45144
+Tcell_CD4_naive_IL7R|L1_Tcell_1	ev_celltypist_label	Regulatory T cells	50489	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	ev_celltypist_label	Tem/Effector helper T cells	45229	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	ev_celltypist_label	Tcm/Naive helper T cells	25731	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	ev_celltypist_label	Tem/Trm cytotoxic T cells	16056	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	ev_celltypist_label	Follicular helper T cells	12020	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	scatomic_full_label	CD4+ T cell	59722	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	scatomic_full_label	Naive CD4+ T cells	55627	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	scatomic_full_label	Effector/Memory CD4+ T cells	30784	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	scatomic_full_label	Effector/Memory CD8+ T cells	13268	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_1	scatomic_full_label	T regulatory cells	9566	193614
+Tcell_CD4_naive_IL7R|L1_Tcell_2	ev_celltypist_label	Tem/Effector helper T cells	51989	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	ev_celltypist_label	Tcm/Naive helper T cells	43764	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	ev_celltypist_label	Regulatory T cells	15372	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	ev_celltypist_label	Tcm/Naive cytotoxic T cells	7024	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	ev_celltypist_label	Tem/Trm cytotoxic T cells	5920	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	scatomic_full_label	Naive CD4+ T cells	60085	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	scatomic_full_label	CD4+ T cell	34420	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	scatomic_full_label	Effector/Memory CD4+ T cells	26297	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	scatomic_full_label	Naive CD8+ T cells	9394	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_2	scatomic_full_label	CD4 or CD8 T cell	4483	144260
+Tcell_CD4_naive_IL7R|L1_Tcell_7	ev_celltypist_label	Tem/Effector helper T cells	87181	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	ev_celltypist_label	Regulatory T cells	19121	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	ev_celltypist_label	Tcm/Naive helper T cells	13920	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	ev_celltypist_label	Tem/Trm cytotoxic T cells	11813	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	ev_celltypist_label	Follicular helper T cells	11255	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	scatomic_full_label	Effector/Memory CD4+ T cells	63484	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	scatomic_full_label	CD4+ T cell	54164	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	scatomic_full_label	Naive CD4+ T cells	29879	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	scatomic_full_label	Naive CD8+ T cells	9101	181257
+Tcell_CD4_naive_IL7R|L1_Tcell_7	scatomic_full_label	Effector/Memory CD8+ T cells	7349	181257
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	ev_celltypist_label	Tem/Trm cytotoxic T cells	85057	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	ev_celltypist_label	Trm cytotoxic T cells	21921	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	ev_celltypist_label	Tem/Temra cytotoxic T cells	6536	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	ev_celltypist_label	Regulatory T cells	6244	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	ev_celltypist_label	Tem/Effector helper T cells	5872	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	scatomic_full_label	Effector/Memory CD8+ T cells	106224	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	scatomic_full_label	CD4 or CD8 T cell	10723	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	scatomic_full_label	Effector/Memory CD4+ T cells	9301	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	scatomic_full_label	CD8+ T cell	7165	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_3	scatomic_full_label	Exhausted CD8+ T cells	6863	149969
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	ev_celltypist_label	Tem/Trm cytotoxic T cells	115402	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	ev_celltypist_label	Trm cytotoxic T cells	22694	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	ev_celltypist_label	Regulatory T cells	10090	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	ev_celltypist_label	gamma-delta T cells	7745	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	ev_celltypist_label	Tem/Temra cytotoxic T cells	7178	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	scatomic_full_label	Effector/Memory CD8+ T cells	120515	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	scatomic_full_label	Exhausted CD8+ T cells	26222	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	scatomic_full_label	CD8+ T cell	15812	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	scatomic_full_label	Effector/Memory CD4+ T cells	6966	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_5	scatomic_full_label	CD4 or CD8 T cell	6537	186621
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	ev_celltypist_label	Tem/Trm cytotoxic T cells	81303	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	ev_celltypist_label	Trm cytotoxic T cells	38954	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	ev_celltypist_label	Type 1 helper T cells	13468	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	ev_celltypist_label	Tem/Effector helper T cells	5758	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	ev_celltypist_label	MAIT cells	4116	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	scatomic_full_label	Effector/Memory CD8+ T cells	122500	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	scatomic_full_label	Effector/Memory CD4+ T cells	12199	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	scatomic_full_label	CD4 or CD8 T cell	9738	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	scatomic_full_label	CD8+ T cell	5920	160405
+Tcell_CD8_cytotoxic_CCL5|L1_Tcell_8	scatomic_full_label	CD4+ T cell	2976	160405
+Tcell_Cycling_T_MKI67|L1_Tcell_0	ev_celltypist_label	Regulatory T cells	13487	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	ev_celltypist_label	Tem/Trm cytotoxic T cells	9713	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	ev_celltypist_label	NK cells	2941	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	ev_celltypist_label	Tem/Effector helper T cells	1740	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	ev_celltypist_label	Double-positive thymocytes	1589	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	scatomic_full_label	Effector/Memory CD8+ T cells	6688	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	scatomic_full_label	Exhausted CD8+ T cells	5986	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	scatomic_full_label	T regulatory cells	4370	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	scatomic_full_label	CD4+ T cell	3040	41868
+Tcell_Cycling_T_MKI67|L1_Tcell_0	scatomic_full_label	Normal Tissue Cell	2769	41868
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	3703	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	2185	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Effector helper T cells	1370	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Type 1 helper T cells	353	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	342	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	3183	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	CD4+ T cell	1372	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD4+ T cells	1294	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	T regulatory cells	1156	10314
+Tcell_coarse_provisional|L1_Ambiguous_unresolved	scatomic_full_label	Naive CD4+ T cells	666	10314
+Tcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	1698	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tem/Effector helper T cells	1036	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Regulatory T cells	1007	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	693	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	ev_celltypist_label	Trm cytotoxic T cells	589	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	2249	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Naive CD4+ T cells	1089	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD4+ T cell	985	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	Effector/Memory CD4+ T cells	812	9258
+Tcell_coarse_provisional|L1_Unknown_unresolved	scatomic_full_label	CD4 or CD8 T cell	512	9258
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Trm cytotoxic T cells	2656	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Regulatory T cells	2024	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	NK cells	1399	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Trm cytotoxic T cells	1354	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	ev_celltypist_label	Tem/Temra cytotoxic T cells	1084	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD8+ T cells	6077	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Exhausted CD8+ T cells	2179	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	CD4+ T cell	666	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Effector/Memory CD4+ T cells	547	14080
+Tcell_coarse_subtype_pending|L1_Ambiguous_unresolved	scatomic_full_label	Natural killer cell	513	14080
+Tcell_unresolved_NKG7|L1_Tcell_4	ev_celltypist_label	Tem/Trm cytotoxic T cells	36026	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	ev_celltypist_label	Tem/Temra cytotoxic T cells	32274	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	ev_celltypist_label	Trm cytotoxic T cells	5091	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	ev_celltypist_label	Regulatory T cells	2400	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	ev_celltypist_label	gamma-delta T cells	2307	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	scatomic_full_label	Effector/Memory CD8+ T cells	64718	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	scatomic_full_label	CD8+ T cell	5652	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	scatomic_full_label	Exhausted CD8+ T cells	4743	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	scatomic_full_label	Natural killer cell	2964	86794
+Tcell_unresolved_NKG7|L1_Tcell_4	scatomic_full_label	CD4 or CD8 T cell	2859	86794
+Unknown|L1_Unknown_unresolved	ev_celltypist_label	Epithelial cells	8119	53678
+Unknown|L1_Unknown_unresolved	ev_celltypist_label	Memory B cells	6597	53678
+Unknown|L1_Unknown_unresolved	ev_celltypist_label	Tcm/Naive helper T cells	4821	53678
+Unknown|L1_Unknown_unresolved	ev_celltypist_label	Macrophages	3518	53678
+Unknown|L1_Unknown_unresolved	ev_celltypist_label	Double-positive thymocytes	3435	53678
+Unknown|L1_Unknown_unresolved	scatomic_full_label	Skin Cancer Cell	18120	53678
+Unknown|L1_Unknown_unresolved	scatomic_full_label	Brain Cancer Cell	6633	53678
+Unknown|L1_Unknown_unresolved	scatomic_full_label	Lung Cancer Cell	4863	53678
+Unknown|L1_Unknown_unresolved	scatomic_full_label	Normal Tissue Cell	3541	53678
+Unknown|L1_Unknown_unresolved	scatomic_full_label	CAFmyo	2660	53678

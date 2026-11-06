@@ -1,3 +1,7 @@
+## 2026-11-06 V7大类marker身份与新冻结进行中
+
+[全量证据](inventories/analysis/2026-11-06/v7_marker_identity_freeze_v1/README.md)：4,676,787行、490基因、223审阅分区、109,270条统计独立PASS。进度占位不进入新正式身份，支持大类而无细分可按大类＋marker冻结；B coarse父类混杂、pDC共享分泌及粒细胞/胶质共享marker已登记。v2收紧三个组件，原counts/QC/CNV不变，23项反例通过；逐区新冻结正在写出/审计，未提前登记全V7发表接受。新TME/CoVarNet不变。
+
 ## 2026-11-06 V7 B工作侧表与完整当前视图已独立核验
 
 [16群全表、327 marker及6张图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)：157,888目标＋8,565正向表达参考从counts重建，R terminal0；主表/补充表/工作旁表独立审计PASS。101,299大类工作记录（B 84,447）、56,589身份复查；B00/01/12为memory/naive/GC-like候选，B11为B＋IFN背景，B06/07髓系及DC方向、B14内皮。全V7[完整标签与Excel](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/CURRENT_ALL_ANNOTATIONS.md)已合并4,676,787行，05:57:49 UTC独立审计PASS：423,375重建目标，322,270大类工作／候选、101,105身份复查，4,244,937个QC保留细胞沿用旧标。53父类／待核类别与142标签值包含占位及历史，不是新细胞类型数。QC-v4为8,237排除／238暂存／4,668,312保留，原标签/strict/CNV七列和冻结SHA保留；未接受本周期最终细分。B coarse的111,535保留记录及其他未重建标签仍待；新TME和CoVarNet输入不变。

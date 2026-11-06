@@ -1,0 +1,33 @@
+{
+  "version":"V7_marker_identity_20261106_v1",
+  "meaning":"Operational positive RNA identity rules for broad naming; no universal publication-grade probability is claimed. Missing counts are not negative lineage proof.",
+  "raw_UMI_per_component_gene":2,
+  "rules":[
+    {"parent":"Tcell","name":"Tcell_CD3D_CD3E","groups":[["CD3D","CD3E","CD3G"],["TRAC","TRBC1","TRBC2","TRDC","TRGC1","TRGC2"]],"family":"T_NK","aliases":["Tcell","T"]},
+    {"parent":"NK","name":"NK_KLRD1_NKG7","groups":[["KLRD1","NCR1"],["NKG7","GNLY","PRF1"]],"family":"T_NK","aliases":["NK"]},
+    {"parent":"Bcell","name":"Bcell_MS4A1_CD79A","groups":[["MS4A1","CD19","BANK1"],["CD79A","CD79B"]],"family":"B_ASC","aliases":["Bcell","B"]},
+    {"parent":"Plasma","name":"Plasma_MZB1_DERL3","groups":[["MZB1","DERL3"],["JCHAIN","SDC1"],["XBP1","PRDM1","TNFRSF17","IRF4"]],"family":"B_ASC","aliases":["Plasma","ASC"]},
+    {"parent":"Myeloid","name":"Myeloid_LST1_CSF1R","groups":[["CSF1R","CD14","CD163","C1QA"],["LST1","MS4A7"],["TYROBP","FCER1G","SPI1"]],"family":"Myeloid_DC","aliases":["Myeloid","Macrophage","Monocyte","Dendritic","DC"]},
+    {"parent":"Dendritic","name":"Dendritic_CLEC4C_LILRA4","groups":[["CLEC4C","LILRA4"],["TCF4"],["IL3RA","GZMB"]],"family":"Myeloid_DC","aliases":["Dendritic","DC"]},
+    {"parent":"Dendritic","name":"Dendritic_CLEC9A_XCR1","groups":[["CLEC9A","XCR1"],["BATF3","CADM1"],["FLT3","HLA-DRA","CD74"]],"family":"Myeloid_DC","aliases":["Dendritic","DC"]},
+    {"parent":"Dendritic","name":"Dendritic_CD1C_CLEC10A","groups":[["CD1C"],["FCER1A","CLEC10A","CD1E"],["FLT3","IRF4","HLA-DRA"]],"family":"Myeloid_DC","aliases":["Dendritic","DC"]},
+    {"parent":"Mast","name":"Mast_TPSAB1_CPA3","groups":[["TPSAB1","TPSB2"],["CPA3"],["KIT","MS4A2","HDC"]],"family":"Mast_Baso","aliases":["Mast"]},
+    {"parent":"Basophil","name":"Basophil_CLC_IL3RA","groups":[["CLC"],["IL3RA","ENPP3"],["MS4A2","HDC"]],"family":"Mast_Baso","aliases":["Basophil"]},
+    {"parent":"Granulocyte","name":"Granulocyte_FCGR3B_CSF3R","groups":[["FCGR3B","CSF3R"],["S100A8","S100A9","FPR1","CXCR2"]],"family":"Myeloid_DC","aliases":["Granulocyte","Neutrophil"]},
+    {"parent":"Eosinophil","name":"Eosinophil_EPX_PRG2","groups":[["EPX","PRG2"],["SIGLEC8","IL5RA","CLC"]],"family":"Mast_Baso","aliases":["Granulocyte","Eosinophil"]},
+    {"parent":"Endothelial","name":"Endothelial_CLDN5_PECAM1","groups":[["CLDN5","VWF"],["PECAM1","KDR","CDH5"]],"family":"Vascular","aliases":["Endothelial"]},
+    {"parent":"Mural","name":"Mural_RGS5_PDGFRB","groups":[["RGS5","CSPG4","MYH11"],["PDGFRB","MCAM","NOTCH3","ACTA2"]],"family":"Vascular","aliases":["Mural","Pericyte","Smooth_muscle"]},
+    {"parent":"Fibroblast","name":"Fibroblast_COL1A1_DCN","groups":[["COL1A1","COL1A2","COL3A1"],["DCN","LUM","DPT"]],"family":"Stromal","aliases":["Fibroblast"]},
+    {"parent":"Epithelial","name":"Epithelial_EPCAM_KRT19","groups":[["EPCAM","KRT5","KRT14"],["KRT8","KRT18","KRT19","KRT7"]],"family":"Epithelial","aliases":["Epithelial"]},
+    {"parent":"Melanocytic","name":"Melanocytic_PMEL_MLANA","groups":[["PMEL","MLANA","TYR"],["SOX10","MITF","DCT"]],"family":"Melanocytic","aliases":["Melanocytic"]},
+    {"parent":"Neural","name":"Neural_SNAP25_RBFOX3","groups":[["SNAP25","STMN2","TUBB3"],["RBFOX3","MAP2","SYT1","NEFL"]],"family":"Neural","aliases":["Neural"]},
+    {"parent":"Glial","name":"Glial_GFAP_SOX10","groups":[["GFAP","AQP4","PLP1","MBP"],["SOX10","OLIG1","OLIG2","SLC1A3"]],"family":"Neural","aliases":["Neural","Glial"]},
+    {"parent":"HSPC","name":"HSPC_SPINK2_CD34","groups":[["SPINK2","HLF","DNTT","MEIS1"],["CD34","PROM1","GATA2"],["PTPRC"]],"family":"Hematopoietic_primitive","aliases":["HSPC","HSPC_like"]},
+    {"parent":"Erythroid","name":"Erythroid_GYPA_ALAS2","groups":[["GYPA","SLC4A1","RHAG","GYPB","EPB42"],["AHSP","ALAS2","KLF1"]],"family":"Erythroid","aliases":["Erythroid"]},
+    {"parent":"Platelet_Megakaryocytic","name":"Platelet_Megakaryocytic_PPBP_PF4","groups":[["PF4","PPBP"],["ITGA2B","GP9","GP1BA","GP1BB","TUBB1"]],"family":"Platelet","aliases":["Platelet","Platelet_Megakaryocytic"]}
+  ],
+  "related_axes_not_automatic_doublets":[["Tcell","NK"],["Bcell","Plasma"],["Myeloid","Dendritic"],["HSPC","Myeloid"],["Endothelial","Mural"]],
+  "final_label_prohibited_words":["unresolved","coarse","provisional","pending","review","candidate","boundary","unknown","ambiguous"],
+  "status_and_state_are_separate_fields":true,
+  "malignancy_not_in_identity_name":true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "full_axis_marker_name_proposals_not_freeze_acceptance",
+  "UTC": "2026-11-06T10:09:25.390131+00:00",
+  "n_groups": 223,
+  "n_rule_group_records": 4906,
+  "n_manual_review_entries": 324,
+  "formal_freeze_created": false,
+  "automatic_screen_is_not_manual_acceptance": true
+}

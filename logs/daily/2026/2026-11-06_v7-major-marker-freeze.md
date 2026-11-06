@@ -1,0 +1,7 @@
+# V7大类marker命名及冻结
+
+用户要求正式标签去掉注释进度占位，无可靠细分时大类＋身份marker即可。09:54 UTC起取证，09:58—10:08 UTC全量4,676,787行/490基因/223分区扫描真实exit0，10:14 UTC全轴counts/组件/来源测量及109,270条统计独立PASS。QC-v4保留4,668,312，原标签/CNV/旧对象不覆盖。
+
+10:36起逐区人工核查全量证据，发现B coarse不能整群保留B、pDC与ASC共享分泌、CSF3R/S100不独占粒细胞、SOX10/MBP不能独自判胶质；10:44登记v2收紧三个正向组件并独立复算。未因表达共享直接自动删除或强定亚型。23项反例检查通过，命名建议与最终冻结分开。
+
+[结果与运行状态](../../../inventories/analysis/2026-11-06/v7_marker_identity_freeze_v1/README.md) · [正式run](../../../runs/20261106_v7_publication_marker_annotation_v1.md) · [持续任务记录](../../codex/2026/2026-11-06_v7-publication-marker-freeze.md)。UTC+8按UTC加8小时；原始行/矩阵和私有配置不公开，主工作区并发15项tracked修改保留。

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T10:14:00.859541+00:00",
+  "n_all_cells_raw_verified": 4676787,
+  "n_QC_keep": 4668312,
+  "n_genes": 490,
+  "n_groups": 223,
+  "n_marker_records": 109270,
+  "all_original_counts_and_raw_library_totals_exact": true,
+  "all_positive_components_and_evaluable_flags_recomputed": true,
+  "all_source_measured_gene_axes_rechecked": true,
+  "all_marker_statistics_independently_recomputed": true,
+  "max_absolute_CP10K_error": 6.821210263296962e-13
+}

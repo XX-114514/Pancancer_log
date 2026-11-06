@@ -1,3 +1,7 @@
+## 2026-11-06 正式大类marker身份冻结
+
+[新命名与全量身份核查](inventories/analysis/2026-11-06/v7_marker_identity_freeze_v1/README.md)以支持的大类或可靠亚型＋marker替代正式标签中的注释进度词，状态与CNV独立。490基因/223审阅分区/全4.67M轴独立通过；先纠正父类混杂及共享程序边界，再验收新冻结。冻结范围、分辨率、纳入偏倚与整个图谱发表资格分开，不以格式统一代替证据。
+
 ## 2026-11-06 B工作注释与完整当前视图
 
 [B逐群结果](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)完成157,888目标/16诊断群、327 marker与工作旁表独立核验。优先把父身份错误、低信息、共享B–ASC轴及状态与真正B细分分开；56,589身份复查及来源内纯化仍开放。[完整V7视图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/CURRENT_ALL_ANNOTATIONS.md)已合并此前各轮旁表、读回全部4,676,787行并独立核验；105诊断群、106旧标签、142当前标签值及Excel完整交付。423,375实际重建、其他标签显式继承，不以导出完成替代全V7发表验收。不替换干净TME/CoVarNet输入。
