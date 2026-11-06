@@ -1,0 +1,8 @@
+{
+  "UTC_review": "2026-11-06T04:01:00Z",
+  "adopt_registered_disjoint_nonhematologic_candidates": true,
+  "n_adopted_exclusions": 913,
+  "n_context_holdouts": 2,
+  "basis": "Reviewed all pair-level expression fractions, n/source and original unit-calibrated high scores; each pair requires positive independent components. Preserve hematologic-context mixed programs as holdout; no T+NK/T+ILC/shared-priming exclusions. Not a ground-truth doublet call.",
+  "timestamp_interpretation": "UTC_review is a nominal preparation timestamp, not independently captured exact adjudication time; actual execution uses producer UTC."
+}

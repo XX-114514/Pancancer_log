@@ -1,0 +1,47 @@
+{
+  "lineage": "Erythroid",
+  "row_prefix": "E",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 18,
+  "n_cells": 9098,
+  "n_marker_records": 4680,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "48347ca280985a3b16994ecc8be4cb0d9e3d67712dcb63bf094db7b955e794df",
+  "panel_spec_sha256": "4b9908a11b2316383f59ae4e1c19772061366606f2240b8ce2b2dfe2f62289b4",
+  "outputs": [
+    {
+      "name": "Erythroid_identity_subtype_v7.png",
+      "sha256": "484a377b087d89af9f61cf4b4bf8cba91cad677ba55fee162afb067824e1b265"
+    },
+    {
+      "name": "Erythroid_competing_lineage_QC_v7.png",
+      "sha256": "acbc76416606b87270bc1edb1d7a5cbb66d971ec08e69d5e1dbc5767674dbaac"
+    },
+    {
+      "name": "Erythroid_competing_lineage_QC_v7.svg",
+      "sha256": "e867bb8014d913a960fb1a60747a04ad59313e0774e53f0eee89fe7d0fc5c757"
+    },
+    {
+      "name": "Erythroid_identity_subtype_v7.svg",
+      "sha256": "527d469bdb5012006bdff297132c64a77060b8378435388edfde6061a5e994de"
+    },
+    {
+      "name": "Erythroid_state_programs_v7.png",
+      "sha256": "ff6c2355644469cf4df9e7a41465980b4e42a6b66c1fdf108a4feee692721ede"
+    },
+    {
+      "name": "Erythroid_extended_RNA_context_v7.svg",
+      "sha256": "ebcbae115b3ee6b3aa4d9c63504f0d3407201d64e9fe636b53120b0e3318129b"
+    },
+    {
+      "name": "Erythroid_extended_RNA_context_v7.png",
+      "sha256": "68a52ab67546d87e5222cc0d14cefed8bfd8679f8ec66d807a3a0461f04a3d0d"
+    },
+    {
+      "name": "Erythroid_state_programs_v7.svg",
+      "sha256": "6d93d664a9932a92c85e3404378d3f5840edde076caea956b2fc605da140b55d"
+    }
+  ]
+}

@@ -1,8 +1,12 @@
+## 2026-11-06 V7其他unresolved四类工作复查完成，最终细分待验收
+
+[59群完整表与16张图](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)：实际QC-v3增量913排除／2暂存，累计2,916排除／238暂存／4,673,633保留。Ery9,098、Platelet2,318、HSPC14,072、ILC45,290从counts重建，四terminal0；260 marker、来源/分辨率及70,778行工作侧表独立审计通过，冻结V7 SHA未变。27,074大类工作记录，43,704身份待复查；ILC候选池6,363正向T路由、166个ILC-like候选，Platelet候选1,479个血管壁簇级工作记录。HSPC-like不证明正常HSC，未接受ILC1/2/3或其他最终细分。另226,981背景入口未做身份重建，其他谱系、来源/参数敏感性与全V7发表终验仍待；CoVarNet及新TME输入未改。
+
 ## 2026-11-06 历史V5/K9通讯补分析已实际启动
 
 [输入与执行报告](docs/reports/20261106_V5_CoVarNet_communication/README.md)：87节点/1303个H样本/全部九CM，网络成员与旧top10分表；71329细胞真实CPDB小试及数值审计通过，正式1000置换与全样本提取执行中。患者可比层当前为0；正式A/B/D尚未终验，不是科学完成。V5不升级为最新注释。
 
-## 2026-11-06 V7实际清理v2完成，Mast/T6大类工作侧表与marker已读回
+## 2026-11-06 较早QC-v2：Mast/T6大类工作侧表与marker已读回
 
 [完整表与10张图](inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)：全V7新视图2,003个主分析QC排除、236个暂存、保留4,674,548；原对象不变。T6的155,786、Mast的38,923已从counts重新建模，真实terminal0，全部marker/来源计数独立审计通过。侧表已写出并读回：T6簇级T大类工作标签154,974，另662混杂／150低信息；Mast大类38,923，另4,754候选待父类复核。状态/细分候选与QC分开；尚未接受最终细分或全V7发表终验，T6初始化警告保留。旧V7排查与新TME／CoVarNet线分开。
 

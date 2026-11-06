@@ -1,0 +1,160 @@
+cluster	reference_field	label	n_cells	n_cluster
+0	ev_celltypist_label	Classical monocytes	358	3171
+0	ev_celltypist_label	Double-negative thymocytes	271	3171
+0	ev_celltypist_label	Tcm/Naive helper T cells	270	3171
+0	ev_celltypist_label	Naive B cells	193	3171
+0	ev_celltypist_label	Epithelial cells	161	3171
+0	scatomic_full_label	HSPC	1355	3171
+0	scatomic_full_label	Blood Cell	452	3171
+0	scatomic_full_label	CD14 Monocyte	282	3171
+0	scatomic_full_label	cDC2	174	3171
+0	scatomic_full_label	Colon/Colorectal Cancer Cell	128	3171
+1	ev_celltypist_label	Double-negative thymocytes	320	2881
+1	ev_celltypist_label	Naive B cells	245	2881
+1	ev_celltypist_label	HSC/MPP	234	2881
+1	ev_celltypist_label	Classical monocytes	187	2881
+1	ev_celltypist_label	Memory B cells	158	2881
+1	scatomic_full_label	HSPC	1232	2881
+1	scatomic_full_label	Blood Cell	614	2881
+1	scatomic_full_label	CAFmyo	160	2881
+1	scatomic_full_label	Endothelial Cells	119	2881
+1	scatomic_full_label	Breast/Lung/Prostate	118	2881
+2	ev_celltypist_label	Double-negative thymocytes	266	2510
+2	ev_celltypist_label	Epithelial cells	228	2510
+2	ev_celltypist_label	NK cells	211	2510
+2	ev_celltypist_label	Classical monocytes	180	2510
+2	ev_celltypist_label	Naive B cells	174	2510
+2	scatomic_full_label	HSPC	1080	2510
+2	scatomic_full_label	Blood Cell	495	2510
+2	scatomic_full_label	Endometrial Cancer Cell	159	2510
+2	scatomic_full_label	CD14 Monocyte	146	2510
+2	scatomic_full_label	Prostate Cancer Cell	138	2510
+3	ev_celltypist_label	Tcm/Naive helper T cells	183	1288
+3	ev_celltypist_label	Double-negative thymocytes	140	1288
+3	ev_celltypist_label	Epithelial cells	139	1288
+3	ev_celltypist_label	Naive B cells	106	1288
+3	ev_celltypist_label	NK cells	71	1288
+3	scatomic_full_label	HSPC	492	1288
+3	scatomic_full_label	Endometrial Cancer Cell	191	1288
+3	scatomic_full_label	Normal Tissue Cell	130	1288
+3	scatomic_full_label	Blood Cell	101	1288
+3	scatomic_full_label	Prostate Cancer Cell	67	1288
+4	ev_celltypist_label	Classical monocytes	113	1101
+4	ev_celltypist_label	NK cells	110	1101
+4	ev_celltypist_label	Double-positive thymocytes	99	1101
+4	ev_celltypist_label	Double-negative thymocytes	73	1101
+4	ev_celltypist_label	Monocytes	73	1101
+4	scatomic_full_label	HSPC	401	1101
+4	scatomic_full_label	CD14 Monocyte	199	1101
+4	scatomic_full_label	Blood Cell	188	1101
+4	scatomic_full_label	Endometrial Cancer Cell	135	1101
+4	scatomic_full_label	Normal Tissue Cell	37	1101
+5	ev_celltypist_label	Double-negative thymocytes	266	748
+5	ev_celltypist_label	HSC/MPP	142	748
+5	ev_celltypist_label	Naive B cells	53	748
+5	ev_celltypist_label	ETP	43	748
+5	ev_celltypist_label	NK cells	38	748
+5	scatomic_full_label	HSPC	695	748
+5	scatomic_full_label	Prostate Cancer Cell	8	748
+5	scatomic_full_label	Lung Cancer Cell	7	748
+5	scatomic_full_label	Normal Tissue Cell	7	748
+5	scatomic_full_label	Endometrial Cancer Cell	7	748
+6	ev_celltypist_label	Endothelial cells	176	598
+6	ev_celltypist_label	Macrophages	36	598
+6	ev_celltypist_label	Classical monocytes	33	598
+6	ev_celltypist_label	Naive B cells	32	598
+6	ev_celltypist_label	Tcm/Naive helper T cells	32	598
+6	scatomic_full_label	Endothelial Cells	309	598
+6	scatomic_full_label	HSPC	91	598
+6	scatomic_full_label	Blood Cell	50	598
+6	scatomic_full_label	Non Blood Cell	24	598
+6	scatomic_full_label	CD14 Monocyte	19	598
+7	ev_celltypist_label	NK cells	158	526
+7	ev_celltypist_label	Alveolar macrophages	38	526
+7	ev_celltypist_label	Tcm/Naive helper T cells	31	526
+7	ev_celltypist_label	Double-negative thymocytes	27	526
+7	ev_celltypist_label	Classical monocytes	26	526
+7	scatomic_full_label	CAFmyo	318	526
+7	scatomic_full_label	HSPC	110	526
+7	scatomic_full_label	Blood Cell	39	526
+7	scatomic_full_label	Cancer Associated Fibroblasts	16	526
+7	scatomic_full_label	Endothelial Cells	8	526
+8	ev_celltypist_label	Double-negative thymocytes	82	277
+8	ev_celltypist_label	HSC/MPP	38	277
+8	ev_celltypist_label	Naive B cells	25	277
+8	ev_celltypist_label	ETP	18	277
+8	ev_celltypist_label	NK cells	15	277
+8	scatomic_full_label	HSPC	218	277
+8	scatomic_full_label	Blood Cell	16	277
+8	scatomic_full_label	Normal Tissue Cell	13	277
+8	scatomic_full_label	Brain Cancer Cell	10	277
+8	scatomic_full_label	cDC2	9	277
+9	ev_celltypist_label	Double-negative thymocytes	85	271
+9	ev_celltypist_label	HSC/MPP	43	271
+9	ev_celltypist_label	Naive B cells	23	271
+9	ev_celltypist_label	ETP	17	271
+9	ev_celltypist_label	Classical monocytes	13	271
+9	scatomic_full_label	HSPC	232	271
+9	scatomic_full_label	Blood Cell	17	271
+9	scatomic_full_label	cDC2	16	271
+9	scatomic_full_label	Any Cell	1	271
+9	scatomic_full_label	Brain Cancer Cell	1	271
+10	ev_celltypist_label	Double-negative thymocytes	24	173
+10	ev_celltypist_label	HSC/MPP	18	173
+10	ev_celltypist_label	CD8a/b(entry)	14	173
+10	ev_celltypist_label	NK cells	12	173
+10	ev_celltypist_label	Classical monocytes	10	173
+10	scatomic_full_label	HSPC	117	173
+10	scatomic_full_label	Normal Tissue Cell	17	173
+10	scatomic_full_label	Brain Cancer Cell	15	173
+10	scatomic_full_label	cDC2	11	173
+10	scatomic_full_label	Blood Cell	9	173
+11	ev_celltypist_label	Epithelial cells	34	160
+11	ev_celltypist_label	Memory B cells	27	160
+11	ev_celltypist_label	NK cells	20	160
+11	ev_celltypist_label	Double-positive thymocytes	17	160
+11	ev_celltypist_label	Tcm/Naive helper T cells	12	160
+11	scatomic_full_label	Lung Cancer Cell	88	160
+11	scatomic_full_label	Brain Cancer Cell	22	160
+11	scatomic_full_label	Endometrial Cancer Cell	11	160
+11	scatomic_full_label	Non Stromal Cell	8	160
+11	scatomic_full_label	Normal Tissue Cell	8	160
+12	ev_celltypist_label	Double-positive thymocytes	15	126
+12	ev_celltypist_label	Classical monocytes	12	126
+12	ev_celltypist_label	HSC/MPP	9	126
+12	ev_celltypist_label	Double-negative thymocytes	9	126
+12	ev_celltypist_label	Tcm/Naive helper T cells	6	126
+12	scatomic_full_label	HSPC	85	126
+12	scatomic_full_label	Blood Cell	16	126
+12	scatomic_full_label	cDC2	11	126
+12	scatomic_full_label	CD14 Monocyte	7	126
+12	scatomic_full_label	Normal Tissue Cell	3	126
+13	ev_celltypist_label	Classical monocytes	51	120
+13	ev_celltypist_label	Monocytes	15	120
+13	ev_celltypist_label	Tcm/Naive helper T cells	5	120
+13	ev_celltypist_label	NK cells	5	120
+13	ev_celltypist_label	Double-negative thymocytes	4	120
+13	scatomic_full_label	CD14 Monocyte	71	120
+13	scatomic_full_label	Normal Tissue Cell	13	120
+13	scatomic_full_label	cDC2	9	120
+13	scatomic_full_label	HSPC	6	120
+13	scatomic_full_label	Macrophage or Dendritic Cell	4	120
+14	ev_celltypist_label	Epithelial cells	19	84
+14	ev_celltypist_label	Tcm/Naive helper T cells	15	84
+14	ev_celltypist_label	NK cells	14	84
+14	ev_celltypist_label	Double-positive thymocytes	9	84
+14	ev_celltypist_label	Macrophages	8	84
+14	scatomic_full_label	Non Blood Cell	43	84
+14	scatomic_full_label	Esophageal Cancer Cell	17	84
+14	scatomic_full_label	Normal Tissue Cell	12	84
+14	scatomic_full_label	Cancer Associated Fibroblasts	4	84
+14	scatomic_full_label	Ovarian Cancer Cell	3	84
+15	ev_celltypist_label	Macrophages	21	38
+15	ev_celltypist_label	Alveolar macrophages	9	38
+15	ev_celltypist_label	Non-classical monocytes	2	38
+15	ev_celltypist_label	Tcm/Naive cytotoxic T cells	2	38
+15	ev_celltypist_label	DC precursor	1	38
+15	scatomic_full_label	Phagocytosis Macrophage	26	38
+15	scatomic_full_label	Pro-angiogenesis Macrophage	8	38
+15	scatomic_full_label	Normal Tissue Cell	3	38
+15	scatomic_full_label	Macrophage	1	38

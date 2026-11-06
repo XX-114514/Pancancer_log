@@ -1,0 +1,5 @@
+lineage	n_model_cells	n_clusters	n_identity_review_required	n_broad_working_without_positive_competitor_review	n_positive_T_routed	n_direct_nonHB_Ery_routed	n_ILC_like_candidates	normal_HSC_identity_established	fine_identity_accepted
+Erythroid	9098	18	3603	5495	149	605	0	False	False
+Platelet	2318	11	693	1625	4	0	0	False	False
+HSPC	14072	16	955	13117	2	0	0	False	False
+ILC	45290	14	38453	6837	6363	0	166	False	False

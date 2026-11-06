@@ -1,3 +1,5 @@
+[V7其他unresolved来源感知复查](V7-other-unresolved-source-aware-review-20261106.md)：实际QC、父身份、RNA背景与最终细分分开；完整counts重建、独立复算及工作侧表。
+
 [V7组织上皮文献扩展](V7-epithelial-extension-20261105.md)：原26组拆分、完整基因与来源、父身份/组织相容性/程序/良恶性分开。
 
 [原生档案成员与分析视图](native-archive-membership-and-analysis-views-20261024.md)：按所选来源补全原生行，区分冻结context、旧roster及单位门槛，保留原排除/QC证据。

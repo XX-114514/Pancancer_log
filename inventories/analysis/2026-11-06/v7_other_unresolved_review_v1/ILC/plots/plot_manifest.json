@@ -1,0 +1,47 @@
+{
+  "lineage": "ILC",
+  "row_prefix": "I",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 14,
+  "n_cells": 45290,
+  "n_marker_records": 3640,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "91e4a457136d47c17dad2499e5c37416e4de7913599ce393e10c852cff36b332",
+  "panel_spec_sha256": "4f84adefac6cd1e4af6d9c802b921a6883b9b0f0ce5d00b93957bde098ade38e",
+  "outputs": [
+    {
+      "name": "ILC_identity_subtype_v7.svg",
+      "sha256": "343b9489adbb30144adcbda8d15a2d30a69a0744b390667e7684b980d450be17"
+    },
+    {
+      "name": "ILC_competing_lineage_QC_v7.svg",
+      "sha256": "e30d1a52f597716ed50bb98b066f0a85035cd552eb49c575c58ca222dcc17df1"
+    },
+    {
+      "name": "ILC_competing_lineage_QC_v7.png",
+      "sha256": "5dbce0477229ce0c480204c5e04ef9b51e8e7cbf9d5dcd2d5417d67afe881f7b"
+    },
+    {
+      "name": "ILC_identity_subtype_v7.png",
+      "sha256": "e099c9a44b8b36b5b250882bb99fdbda2e8af1ae75f6bf590e2e4b4292c6fbfd"
+    },
+    {
+      "name": "ILC_state_programs_v7.png",
+      "sha256": "2e991d03dd4ec3e719a1306d0d06587d12d97e5d4bb81cc447de606b34839ab8"
+    },
+    {
+      "name": "ILC_extended_RNA_context_v7.png",
+      "sha256": "7a86a65655ed4bcd5aa11b5312cf778be3e9ff614d1c60f47cf9a93683b14deb"
+    },
+    {
+      "name": "ILC_extended_RNA_context_v7.svg",
+      "sha256": "6810172e0c9a312d48ff83d49e2352c11ca8393f8748f25974213c5bfea3fa41"
+    },
+    {
+      "name": "ILC_state_programs_v7.svg",
+      "sha256": "2a4e7a8d8e22cc5ee768c8c828acf99e2089a45c813da9bd21810efd35bbfe9e"
+    }
+  ]
+}

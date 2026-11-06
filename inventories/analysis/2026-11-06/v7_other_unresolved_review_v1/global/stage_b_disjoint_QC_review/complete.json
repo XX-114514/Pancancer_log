@@ -1,0 +1,10 @@
+{
+  "status": "disjoint_pair_QC_evidence_profile_not_applied",
+  "UTC": "2026-11-06T03:59:48.088855+00:00",
+  "n_scope": 298674,
+  "n_joint_candidates": 915,
+  "n_proposed_operational_exclude": 913,
+  "n_hematologic_context_holdout": 2,
+  "pair_counts_overlap": true,
+  "scope": "Four rare candidate pools, two related boundary pools, Ambiguous and Unknown; no T+NK, T+ILC or priming-based exclusions."
+}

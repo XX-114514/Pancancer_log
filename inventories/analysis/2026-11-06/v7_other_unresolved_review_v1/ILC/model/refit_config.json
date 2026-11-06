@@ -1,0 +1,15 @@
+{
+  "lineage": "ILC",
+  "n_cells": 45290,
+  "n_genes": 95038,
+  "input_10x": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/ILC/ILC_clean_model_raw_10x.h5",
+  "input_meta": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/ILC/ILC_clean_metadata_PRIVATE.tsv.gz",
+  "model_genes": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/ILC/model_genes.tsv",
+  "DE_genes": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/ILC/DE_measured_all_sources_genes.tsv",
+  "output": "runs/20261106_v7_other_unresolved_review_v1/stage_d_ILC_refit",
+  "n_sources": 52,
+  "n_model_candidates": 17099,
+  "n_global_DE_candidates": 10569,
+  "globin_excluded_from_model": false,
+  "normalization": "Full raw-library RNA LogNormalize 10000"
+}

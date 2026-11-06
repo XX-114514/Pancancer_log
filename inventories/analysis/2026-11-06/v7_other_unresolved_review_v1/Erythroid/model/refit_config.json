@@ -1,0 +1,15 @@
+{
+  "lineage": "Erythroid",
+  "n_cells": 9098,
+  "n_genes": 95038,
+  "input_10x": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/Erythroid/Erythroid_clean_model_raw_10x.h5",
+  "input_meta": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/Erythroid/Erythroid_clean_metadata_PRIVATE.tsv.gz",
+  "model_genes": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/Erythroid/model_genes.tsv",
+  "DE_genes": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/Erythroid/DE_measured_all_sources_genes.tsv",
+  "output": "runs/20261106_v7_other_unresolved_review_v1/stage_d_Erythroid_refit",
+  "n_sources": 49,
+  "n_model_candidates": 17370,
+  "n_global_DE_candidates": 12246,
+  "globin_excluded_from_model": false,
+  "normalization": "Full raw-library RNA LogNormalize 10000"
+}

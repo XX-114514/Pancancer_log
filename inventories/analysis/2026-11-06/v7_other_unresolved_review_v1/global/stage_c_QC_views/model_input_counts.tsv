@@ -1,0 +1,5 @@
+lineage	n_before	n_exclude	n_holdout	n_model	n_external_candidates_kept	n_sources	n_model_feature_candidates	n_common_measured_DE_genes	model_gene_library_fraction_median
+Erythroid	9115	15	2	9098	75	49	17370	12246	0.9588825863081715
+Platelet	2323	5	0	2318	78	47	17447	11281	0.9605339274562128
+HSPC	14073	1	0	14072	15	51	17423	11023	0.9076183638811762
+ILC	45317	27	0	45290	402	52	17099	10569	0.9674418604651163

@@ -1,4 +1,12 @@
-## 2026-11-06 V7逐类排查后续
+## 2026-11-06 四类其他unresolved之后
+
+- [x] Ery/Platelet/HSPC/ILC候选及边界298,674细胞扫描；实际913排除＋2暂存，四clean counts模型与59群marker/工作侧表独立审计，见[结果](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)。
+- [ ] ILC优先正向T路由后的共享淋巴边界及166个ILC-like候选：按来源、RNA质量与非造血竞争核查后再子集重建；不把TCR未检出当Lin阴性。
+- [ ] 红系弱非HB与Ery/上皮混合、血小板/神经/髓系/T混合分区：区分环境RNA/附着/残余混合并补来源内重建，不强作亚型。
+- [ ] HSPC-like连接AML等疾病语境与恶性/基因型证据、匹配参考，区分primitive/priming与正常祖细胞功能；完成来源及参数稳定性。
+- [ ] 对226,981背景入口及其余谱系逐步完成身份重建；验收最终细分后才考虑更新冻结注释或CoVarNet正式输入。
+
+## 2026-11-06 较早Mast/T6逐类排查后续
 
 当前Mast/T6实际QC清理、重建和大类工作侧表见[结果](inventories/analysis/2026-11-06/v7_qc_clean_reannotation_v1/clean_refit_review_v2/README.md)。下一步优先T09髓系RNA、T07/T08 Ig RNA及Mast剩余父类／来源上下文；补来源与参数敏感性后再接受细分。其他谱系及其余T候选池尚未完成本轮复审。
 

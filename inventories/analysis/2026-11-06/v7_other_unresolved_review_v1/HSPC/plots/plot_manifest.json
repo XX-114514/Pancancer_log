@@ -1,0 +1,47 @@
+{
+  "lineage": "HSPC",
+  "row_prefix": "H",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 16,
+  "n_cells": 14072,
+  "n_marker_records": 4160,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "f1c359a6380f51bc02c20916b39175b660973f20c26c81094b6155a50dc06127",
+  "panel_spec_sha256": "7aa3ec054864fb24314856e0e6da39b6bb1a949d9055d0c363a8a4962d3c8694",
+  "outputs": [
+    {
+      "name": "HSPC_extended_RNA_context_v7.png",
+      "sha256": "8d20d28a7b4b3621f9537a0f7e8b47b2c4eb4d3d8d46a5355a00fa99fab68a1d"
+    },
+    {
+      "name": "HSPC_extended_RNA_context_v7.svg",
+      "sha256": "eff003379f6904d2e3a66e4fda4cc2583682ccdb544cda6899d8b6705bc652c8"
+    },
+    {
+      "name": "HSPC_state_programs_v7.png",
+      "sha256": "9fee60410302a676931d24c08a3f191175e59de4718b344c1bf9c0129b460ada"
+    },
+    {
+      "name": "HSPC_competing_lineage_QC_v7.svg",
+      "sha256": "699076c7c14f28504d0516ea1ace8c99228449d3d8af32956ce7950c3769752c"
+    },
+    {
+      "name": "HSPC_identity_subtype_v7.svg",
+      "sha256": "eb93c8fd584ad895970263745074824450165430fdc5a6438e2db22269fd6910"
+    },
+    {
+      "name": "HSPC_identity_subtype_v7.png",
+      "sha256": "0319a440e7a945b965e60c0f04d10c663b8cd4c27bd18d14bc5f68f054963a87"
+    },
+    {
+      "name": "HSPC_competing_lineage_QC_v7.png",
+      "sha256": "7eb8ab42c8270a5fbc346708d359f75d9dea44df5ae6b41d850afc49990d50db"
+    },
+    {
+      "name": "HSPC_state_programs_v7.svg",
+      "sha256": "418abd6edbd60a8206aa09caf0e106ec549f3c3b95b375898d32685c78d2e1a0"
+    }
+  ]
+}

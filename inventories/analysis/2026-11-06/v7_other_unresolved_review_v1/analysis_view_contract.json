@@ -1,0 +1,20 @@
+{
+  "version": "20261106_QC_v3_and_four_rare_working_annotations_v1",
+  "frozen_n_cells": 4676787,
+  "frozen_V7_SHA256": "e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e",
+  "QC_masks_logical_path": "${PROJECT_ROOT}/runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/global_QC_view_v3_masks_PRIVATE.npz",
+  "global_primary_exclude": 2916,
+  "global_QC_holdout": 238,
+  "global_primary_keep": 4673633,
+  "new_exclusion_reason_code": 20,
+  "new_hematologic_holdout_reason_code": 21,
+  "annotation_sidecars_logical_path": "${PROJECT_ROOT}/runs/20261106_v7_other_unresolved_review_v1/stage_f_working_annotations/",
+  "annotation_scope_n": 70778,
+  "unrefit_background_scope_n": 226981,
+  "use_for_analysis": "Explicit opt-in view only; exclude identity-review records for analyses requiring accepted broad identity. Never equate primary_QC_keep with identity acceptance.",
+  "canonical_V7_changed": false,
+  "CoVarNet_inputs_changed": false,
+  "final_fine_annotation_accepted": false,
+  "prior_Mast_T6_compatibility": "Selected pools are disjoint from prior Mast and old Tcell_6; prior QC is inherited. Prior working annotations remain separately versioned.",
+  "scope_limit": "No new full-V7 doublet-tool refit or whole-atlas reannotation; this is incremental QC and four diagnostic candidate pools."
+}

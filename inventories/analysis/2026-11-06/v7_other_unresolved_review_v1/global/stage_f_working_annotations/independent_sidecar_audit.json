@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T04:23:41.231117+00:00",
+  "n_review_scope": 298674,
+  "n_model_cells": 70778,
+  "n_diagnostic_clusters": 59,
+  "exact_old_labels_and_axes_preserved": true,
+  "four_models_disjoint_and_exactly_eligible": true,
+  "all_aggregate_counts_recomputed": true,
+  "all_sidecar_SHA256_verified": true,
+  "frozen_V7_SHA256_unchanged": "e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e",
+  "QC_v3_exclude": 2916,
+  "QC_v3_holdout": 238,
+  "QC_v3_keep": 4673633,
+  "models": [
+    {
+      "lineage": "Erythroid",
+      "n_model_cells": 9098,
+      "n_clusters": 18,
+      "n_identity_review_required": 3603,
+      "n_broad_working_without_positive_competitor_review": 5495,
+      "n_positive_T_routed": 149,
+      "n_direct_nonHB_Ery_routed": 605,
+      "n_ILC_like_candidates": 0,
+      "normal_HSC_identity_established": false,
+      "fine_identity_accepted": false
+    },
+    {
+      "lineage": "Platelet",
+      "n_model_cells": 2318,
+      "n_clusters": 11,
+      "n_identity_review_required": 693,
+      "n_broad_working_without_positive_competitor_review": 1625,
+      "n_positive_T_routed": 4,
+      "n_direct_nonHB_Ery_routed": 0,
+      "n_ILC_like_candidates": 0,
+      "normal_HSC_identity_established": false,
+      "fine_identity_accepted": false
+    },
+    {
+      "lineage": "HSPC",
+      "n_model_cells": 14072,
+      "n_clusters": 16,
+      "n_identity_review_required": 955,
+      "n_broad_working_without_positive_competitor_review": 13117,
+      "n_positive_T_routed": 2,
+      "n_direct_nonHB_Ery_routed": 0,
+      "n_ILC_like_candidates": 0,
+      "normal_HSC_identity_established": false,
+      "fine_identity_accepted": false
+    },
+    {
+      "lineage": "ILC",
+      "n_model_cells": 45290,
+      "n_clusters": 14,
+      "n_identity_review_required": 38453,
+      "n_broad_working_without_positive_competitor_review": 6837,
+      "n_positive_T_routed": 6363,
+      "n_direct_nonHB_Ery_routed": 0,
+      "n_ILC_like_candidates": 166,
+      "normal_HSC_identity_established": false,
+      "fine_identity_accepted": false
+    }
+  ],
+  "final_fine_annotation_accepted": false
+}

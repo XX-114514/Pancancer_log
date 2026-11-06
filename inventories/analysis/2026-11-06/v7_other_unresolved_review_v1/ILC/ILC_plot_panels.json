@@ -1,0 +1,226 @@
+{
+  "panels": [
+    {
+      "id": "ilc_shared",
+      "target": "ILC / T shared\nnot ILC proof",
+      "level": "parent",
+      "genes": [
+        "IL7R",
+        "IL1R1",
+        "GATA3",
+        "RORA",
+        "KLRB1"
+      ]
+    },
+    {
+      "id": "ilc2",
+      "target": "ILC2-like programme\nrequires parent review",
+      "level": "candidate_subtype",
+      "genes": [
+        "GATA3",
+        "PTGDR2",
+        "IL1RL1",
+        "IL5",
+        "IL13"
+      ]
+    },
+    {
+      "id": "ilc3",
+      "target": "ILC3-like programme\nrequires parent review",
+      "level": "candidate_subtype",
+      "genes": [
+        "RORC",
+        "IL23R",
+        "CCR6",
+        "IL22",
+        "KIT"
+      ]
+    },
+    {
+      "id": "ilc1",
+      "target": "Type 1 programme\nshared with T / NK",
+      "level": "candidate_subtype",
+      "genes": [
+        "TBX21",
+        "IFNG",
+        "IL12RB2",
+        "CXCR3"
+      ]
+    },
+    {
+      "id": "T_competitor",
+      "target": "T apparatus\nidentity evidence",
+      "level": "competing_parent",
+      "genes": [
+        "CD3D",
+        "CD3E",
+        "CD3G",
+        "TRAC",
+        "TRBC2",
+        "TRDC"
+      ]
+    },
+    {
+      "id": "NK_competitor",
+      "target": "NK receptor\nplus effector",
+      "level": "competing_parent",
+      "genes": [
+        "KLRD1",
+        "NCR1",
+        "KLRF1",
+        "NKG7",
+        "GNLY",
+        "PRF1"
+      ]
+    },
+    {
+      "id": "myeloid_competitor",
+      "target": "Myeloid\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "LYZ",
+        "LST1",
+        "TYROBP",
+        "SPI1",
+        "CSF1R",
+        "CD14"
+      ]
+    },
+    {
+      "id": "lymphoid_context",
+      "target": "B / ASC\ncomponent context",
+      "level": "competing_parent",
+      "genes": [
+        "MS4A1",
+        "CD79A",
+        "BANK1",
+        "MZB1",
+        "DERL3",
+        "JCHAIN"
+      ]
+    },
+    {
+      "id": "epithelial_competitor",
+      "target": "Epithelial\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ]
+    },
+    {
+      "id": "endothelial_competitor",
+      "target": "Endothelial\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "CLDN5",
+        "VWF",
+        "PECAM1",
+        "KDR",
+        "EMCN"
+      ]
+    },
+    {
+      "id": "mural_competitor",
+      "target": "Mural / vascular wall\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "RGS5",
+        "PDGFRB",
+        "ACTA2",
+        "MYH11",
+        "TAGLN"
+      ]
+    },
+    {
+      "id": "melanocytic_context",
+      "target": "Melanocytic\nidentity context",
+      "level": "competing_parent",
+      "genes": [
+        "PMEL",
+        "MLANA",
+        "MITF",
+        "TYR"
+      ]
+    },
+    {
+      "id": "neural_context",
+      "target": "Neural / endocrine\nshared programme",
+      "level": "competing_parent",
+      "genes": [
+        "PCSK1N",
+        "CPE",
+        "CHGB",
+        "CHGA",
+        "SNAP25",
+        "NEFL"
+      ]
+    },
+    {
+      "id": "hepatic_context",
+      "target": "Hepatic RNA\ncontext",
+      "level": "competing_parent",
+      "genes": [
+        "ALB",
+        "APOA1",
+        "HPX",
+        "ASGR1"
+      ]
+    },
+    {
+      "id": "cycling",
+      "target": "Cell cycle\nstate",
+      "level": "state",
+      "genes": [
+        "MKI67",
+        "TOP2A",
+        "UBE2C",
+        "TYMS"
+      ]
+    },
+    {
+      "id": "S_phase",
+      "target": "S-phase RNA\ncontext",
+      "level": "state",
+      "genes": [
+        "MCM4",
+        "PCNA"
+      ]
+    },
+    {
+      "id": "IFN",
+      "target": "IFN response\nstate",
+      "level": "state",
+      "genes": [
+        "ISG15",
+        "IFIT1",
+        "IFIT3",
+        "MX1",
+        "OAS1"
+      ]
+    },
+    {
+      "id": "Stress",
+      "target": "Stress response\nstate",
+      "level": "state",
+      "genes": [
+        "HSPA1A",
+        "HSPA1B",
+        "DNAJB1",
+        "HSPH1"
+      ]
+    },
+    {
+      "id": "MHCII",
+      "target": "MHC-II RNA\nstate",
+      "level": "state",
+      "genes": [
+        "HLA-DRA",
+        "HLA-DRB1",
+        "CD74"
+      ]
+    }
+  ]
+}

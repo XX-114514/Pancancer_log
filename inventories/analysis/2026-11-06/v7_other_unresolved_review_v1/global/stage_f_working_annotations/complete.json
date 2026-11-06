@@ -1,0 +1,65 @@
+{
+  "status": "working_sidecars_written_and_readback_verified",
+  "UTC": "2026-11-06T04:23:00.691009+00:00",
+  "n_review_scope": 298674,
+  "n_model_cells": 70778,
+  "n_diagnostic_clusters": 59,
+  "n_identity_review_required": 43704,
+  "n_broad_working_without_positive_competitor_review": 27074,
+  "canonical_V7_changed": false,
+  "normal_HSC_identity_established": false,
+  "final_fine_identity_accepted": false,
+  "annotation_masks_change_global_QC": false,
+  "files": [
+    {
+      "name": "Erythroid_working_annotation_PRIVATE.pkl.gz",
+      "bytes": 114410,
+      "sha256": "f824b76933913b4e0e3c69d9c3399410354c47179ce2b6e93fffc9f7acda2cb4"
+    },
+    {
+      "name": "Platelet_working_annotation_PRIVATE.pkl.gz",
+      "bytes": 31433,
+      "sha256": "4a52a2497a7ed1f24e6a0bc36ce4b7c89c7d84630c08eac0a34630d9005b6bea"
+    },
+    {
+      "name": "HSPC_working_annotation_PRIVATE.pkl.gz",
+      "bytes": 126879,
+      "sha256": "89bc6d0be1ed3d431edb4846d4f531201f6b8b85decbd9f44230b2d26bfb38d6"
+    },
+    {
+      "name": "ILC_working_annotation_PRIVATE.pkl.gz",
+      "bytes": 434163,
+      "sha256": "00652291e31890aa726ed77557ac0edf2bdfeea1088bb121c9b8af1cff363837"
+    },
+    {
+      "name": "four_models_working_annotation_PRIVATE.pkl.gz",
+      "bytes": 696777,
+      "sha256": "2d8abd452d10e744cad612ad5f7e020ab17701f1d19a8cc26760f55aa26d873b"
+    },
+    {
+      "name": "all_candidate_review_routes_PRIVATE.pkl.gz",
+      "bytes": 1967257,
+      "sha256": "5abda9c584067dbe080afb8a2e2d2af22e5dc2e2d5fe7bb74ad51e113d02a556"
+    },
+    {
+      "name": "working_identity_counts.tsv",
+      "bytes": 6312,
+      "sha256": "3b668fb7afafbdddd8ed7992d9e32f9d897952d3f2b3be28b4dad4d9e7ef9c92"
+    },
+    {
+      "name": "old_to_working_identity_crosswalk.tsv",
+      "bytes": 12297,
+      "sha256": "615500287ad134a43efad328157d0ff6632c6105cd27f0f8625771769694f6b6"
+    },
+    {
+      "name": "all_cluster_annotation_review.tsv",
+      "bytes": 13507,
+      "sha256": "0f992b51db57d5837ba25714dd42b321d7fbf173f396bcbf8f7adc28f8759299"
+    },
+    {
+      "name": "candidate_route_counts.tsv",
+      "bytes": 182,
+      "sha256": "9b09942b1de49f51c3cc0a18722e649f707f8206b38bf2ca3c2075d33b40dc05"
+    }
+  ]
+}

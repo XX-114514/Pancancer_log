@@ -1,0 +1,47 @@
+{
+  "lineage": "Platelet",
+  "row_prefix": "P",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 11,
+  "n_cells": 2318,
+  "n_marker_records": 2860,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "b3878c15f385c61bfe0a07dbac77a369c5c338eb1036626203105d3d09548234",
+  "panel_spec_sha256": "5d70b8d13493f46d9026df4185eb89f2b57404ea17d86e501b744647c60be2ca",
+  "outputs": [
+    {
+      "name": "Platelet_extended_RNA_context_v7.png",
+      "sha256": "f8fb9eb2375d8e4977d33117e4368f90e0db49bfaf88edf1fecad95e34f483c2"
+    },
+    {
+      "name": "Platelet_identity_subtype_v7.png",
+      "sha256": "46f8bddce3b5a5c98b49623ebb8eacf0d66fd451d770f82ebab4408647aed286"
+    },
+    {
+      "name": "Platelet_identity_subtype_v7.svg",
+      "sha256": "dc058a8cffaf8c3c8e91d877ed6507886cb0a9ce7283c7fbfbb2f51bc80f99ba"
+    },
+    {
+      "name": "Platelet_extended_RNA_context_v7.svg",
+      "sha256": "df9097e09396dcc0637bc1871bcda7b5a3211835b2d8e1af9ed1109ef05f1f19"
+    },
+    {
+      "name": "Platelet_competing_lineage_QC_v7.svg",
+      "sha256": "f87ea400ef9bf686793cd796b43e07991a5c0716ce595dd94643b57ec3547f7e"
+    },
+    {
+      "name": "Platelet_state_programs_v7.svg",
+      "sha256": "ca95478effd1965777ead3a4a9774d38308b6c85cca82f4c05525d2837f5c13c"
+    },
+    {
+      "name": "Platelet_state_programs_v7.png",
+      "sha256": "30ad87895f1044e62df7e733d1face0324a865c5b2960328440ddfacd7f7b89e"
+    },
+    {
+      "name": "Platelet_competing_lineage_QC_v7.png",
+      "sha256": "4d08b0b2c80cd4359a541d54b37f58b6da7825aa46d03c2a678aca24dabd2c10"
+    }
+  ]
+}

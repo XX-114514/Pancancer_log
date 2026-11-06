@@ -1,0 +1,12 @@
+cluster	n_cells	n_sources	max_source_fraction	decontx_median	raw_library_median	original_doublet_percentile_median	n_external_candidates	dominant_old_label	dominant_old_label_fraction	n_T_positive_source_aware	n_NK_receptor_effector_positive	n_B_distinct_components_positive	n_ASC_distinct_components_positive	n_Myeloid_mature_components_positive	n_Endothelial_distinct_components_positive	n_Epithelial_distinct_components_positive	n_Fibroblast_distinct_components_positive	n_Ery_structural_synthesis_nonHB_positive	n_Ery_nonHB_multigene_positive	n_Platelet_secreted_structural_positive	n_HSPC_primitive_components_positive	n_HSPC_hematopoietic_components_positive	n_ILC2_or_ILC3_specific_program_positive
+0	538	27	0.3048327137546468	0.006320384331047535	4672.5	0.36	0	Platelet_coarse_subtype_pending	0.6319702602230484	0	0	0	0	0	0	0	0	0	0	1	0	0	0
+1	448	22	0.6272321428571429	0.0368652418255806	1394.5	0.4430709984087573	0	Platelet_coarse_subtype_pending	0.6785714285714286	0	0	0	0	0	0	0	0	0	0	1	0	0	0
+2	411	27	0.44525547445255476	0.012506336905062199	2284.0	0.38912460920053593	0	Platelet_coarse_subtype_pending	0.6472019464720195	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+3	309	29	0.40129449838187703	0.030477840453386307	3159.0	0.40118198626518753	53	Platelet_coarse	0.7281553398058253	0	1	0	0	0	5	5	5	0	0	62	4	0	0
+4	149	17	0.35570469798657717	0.011986574158072472	1894.0	0.7944614010273208	12	Platelet_coarse	0.8859060402684564	3	0	1	1	0	4	0	0	0	0	144	3	0	0
+5	123	8	0.8536585365853658	0.07560404390096664	901.0	0.6171281822242073	0	Platelet_coarse	0.7886178861788617	1	0	0	0	0	0	1	0	0	0	0	0	0	0
+6	120	23	0.15	0.07817824929952621	4107.5	0.4249121779859485	8	Platelet_coarse	0.43333333333333335	0	0	1	0	30	1	0	1	0	0	33	0	0	0
+7	77	7	0.45454545454545453	0.014112904667854309	3006.0	0.23074277854195324	0	Platelet_coarse	0.961038961038961	0	0	0	0	0	0	1	0	0	0	4	0	0	0
+8	61	17	0.5737704918032787	0.2201818823814392	3444.0	0.7242684157416751	5	Platelet_coarse	0.6065573770491803	32	9	2	1	0	0	0	0	0	0	46	0	0	0
+9	59	15	0.6271186440677966	0.023616943508386612	2689.0	0.5542659149635893	0	Platelet_coarse_subtype_pending	0.6949152542372882	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+10	23	2	0.7391304347826086	0.012571305967867374	9558.0	0.5154782608695652	0	Platelet_coarse_subtype_pending	0.7391304347826086	0	0	0	0	0	0	0	0	0	0	0	0	0	0

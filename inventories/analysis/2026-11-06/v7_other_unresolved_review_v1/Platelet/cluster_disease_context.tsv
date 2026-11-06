@@ -1,0 +1,12 @@
+cluster	n_cells	n_hematologic_context	top_cancer_contexts
+0	538	0	Clear cell renal cell carcinoma:164;Pancreatic ductal adenocarcinoma:111;Colorectal cancer:59
+1	448	0	Clear cell renal cell carcinoma:281;Rectal adenocarcinoma:70;Breast cancer:26
+2	411	0	Clear cell renal cell carcinoma:183;Colorectal cancer:64;Prostate cancer:46
+3	309	41	Glioblastoma:124;Acute myeloid leukemia:41;Rectal adenocarcinoma:30
+4	149	11	Pancreatic ductal adenocarcinoma:53;Gastric cancer:52;Acute myeloid leukemia:11
+5	123	0	Rectal adenocarcinoma:105;Colorectal cancer:5;Clear cell renal cell carcinoma:4
+6	120	2	Glioblastoma:18;Pituitary neuroendocrine tumor:17;Cervical cancer:17
+7	77	0	Glioblastoma:35;Pituitary neuroendocrine tumor:22;Pancreatic neuroendocrine tumor:11
+8	61	2	Gastric cancer:37;Pancreatic ductal adenocarcinoma:7;Prostate cancer:2
+9	59	0	Clear cell renal cell carcinoma:37;Pancreatic neuroendocrine tumor:4;HCC:3
+10	23	0	Pancreatic ductal adenocarcinoma:17;Pancreatic neuroendocrine tumor:6
