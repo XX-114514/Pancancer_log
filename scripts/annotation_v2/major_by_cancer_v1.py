@@ -206,8 +206,10 @@ S['doublet_score_z'] = ((S['doublet_score_mean'] - S['doublet_score_mean'].mean(
 ok = (DE['avg_log2FC'] >= .25) & (DE['pct.1'] >= .10) & ((DE['pct.1'] - DE['pct.2']) >= .25) & (DE['p_val_adj'] < .01)
 S['top_markers'] = DE[ok].sort_values('avg_log2FC', ascending=False).groupby('cluster')['gene'].agg(lambda x: ','.join(x.head(15))).reindex(S.index)
 # Lodi major-type detection (max pct among the set) and V7 parent evidence (min over core components of max detection)
-lm = EV[EV.panel.str.startswith('Lodi_major_')].pivot(index='cluster', columns='panel', values='min_component_max_detection')
-lm.columns = [c.replace('Lodi_major_', 'Lodi:') for c in lm.columns]
+# Lodi sets mix alternatives (CD4 vs CD8A), so show the best-detected gene of each set, not the minimum over genes
+ep = EXP.pivot(index='cluster', columns='gene', values='pct_expressing_measured')
+lm = pd.DataFrame({p['id'].replace('Lodi_major_', 'Lodi:'): ep[[x for x in p['positive_genes'] if x in ep.columns]].max(1)
+                   for p in R['panels'] if p['id'].startswith('Lodi_major_')})
 par = EV[(EV.axis == 'parent')].pivot(index='cluster', columns='panel', values='min_component_max_detection')
 par_deg = EV[(EV.axis == 'parent')].set_index(['cluster', 'panel'])['positive_DEG_genes']
 S = S.join(lm.round(2))
