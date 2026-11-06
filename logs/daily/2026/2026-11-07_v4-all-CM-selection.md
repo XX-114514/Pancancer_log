@@ -5,3 +5,5 @@
 首选进一步验证CM03：IGHD B—PECAM1内皮—XCL1 NK；额外seed谱中位0.990，原边5/5；LOSO谱中位0.984、原边10/13，但严格三节点仅5/13。CM06备选，去GSE182109后核心相关≈0.027；CM09的SPP1因子换种子谱不稳（中位0.196），CM11有单节点Glial分母及组织信号问题。原输出、失败历史、NA与范围边界全部保留。
 
 [全部14取舍与三图](../../../inventories/analysis/2026-11-07/v4_CM_selection_v1/README.md) · [run](../../../runs/20261107_v4_all_CM_selection_v1.md) · [任务日志](../../codex/2026/2026-11-07_v4-all-CM-selection.md)。本轮选择研究候选，尚未完成独立身份/空间/状态机制验证。
+
+22:28:20 UTC/2026-11-07 06:28:20 UTC+8独立核实普通push后的main为`f5f79001c646088c14b4bab319d118acfee5fdd6`，保留并发谱系QC更新；合并后仓库检查0 errors/1既有warning。[发布收据](../../../runs/20261107_v4_CM_selection_publication_receipt_v1.json)。主工作区既有15个tracked修改SHA保留。

@@ -23,3 +23,9 @@
 `bash scripts/validate_repository.sh`实际退出0，0 errors/1项既有警告（旧2026-10-13 provenance路径，本批无新增），本地Markdown相对链接均通过。非TSV diff空白检查通过；TSV合法末尾空字段保留原字节、列数检查通过。仅改任务相关首页/STATUS/ROADMAP/TODO/CHANGELOG、method/run与索引、daily/task及新结果目录；原科学输出不改，主工作区15个既有tracked修改SHA保留。公开同步使用独立干净副本、普通commit/push；SHA收据随后补录。
 
 实际调用包括经既有跳板执行诊断/有限R队列与摘要/独立审核、固定白名单压缩包传输+逐SHA检查、原CM03全部筛选阶段数组复算、本地聚合报告/科学图生成和仓库验证。私有bootstrap/SSH配置及完整日志不公开。未验证内容仍为身份近邻细分、独立空间与蛋白、状态/通讯/临床和独立患者层因果，不能因选择完成写成已证实。建议commit：`Compare all V4 CMs and prioritize CM03 using source and refit diagnostics`。
+
+内容已提交`bb53ba1163de2641aafa22fbe5cdec232e50ccb5`。首次普通push因远端并发谱系QC提交`84c00103`而non-fast-forward拒绝；未force或改写历史。检查其3个独立路径后普通merge，保留双方内容，合并commit`f5f79001c646088c14b4bab319d118acfee5fdd6`无冲突；合并后重新做仓库检查。本次CM输入仍是原固定V4，不把并发新注释工作线自动替换入本轮分析。发布收据待远端独立核验后登记。
+
+合并后仓库检查再次退出0、0 errors/1项既有路径警告；科学产物manifest全部SHA再次匹配。2026-11-06 22:28:20 UTC／2026-11-07 06:28:20 UTC+8（Melbourne 09:28:20）普通push成功，独立`git ls-remote`核验remote main完整SHA为`f5f79001c646088c14b4bab319d118acfee5fdd6`；见[发布收据](../../../runs/20261107_v4_CM_selection_publication_receipt_v1.json)。公开同步沿用用户任务与AGENTS持续授权，122个本轮内容文件均已审查。
+
+主工作区只复制本任务5个唯一新路径（含111项结果目录），原有15个tracked修改逐SHA保留，共享README/STATUS等本地既有修改不覆盖。任务完成：全14已比较，CM03首选验证、CM06备选；后续身份/空间/状态机制仍待，不在本次结果里提前接受。此次收据及日志为后补发布记录，不修改已接受的科学表或原始run。

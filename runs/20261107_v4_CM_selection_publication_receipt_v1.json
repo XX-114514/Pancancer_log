@@ -1,0 +1,17 @@
+{
+  "status": "PUBLIC_CONTENT_PUSHED_REMOTE_MAIN_INDEPENDENTLY_VERIFIED",
+  "evidence_UTC": "2026-11-06T22:28:20Z",
+  "evidence_UTC_plus_8": "2026-11-07T06:28:20+08:00",
+  "evidence_Australia_Melbourne": "2026-11-07T09:28:20+11:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "analysis_content_commit": "bb53ba1163de2641aafa22fbe5cdec232e50ccb5",
+  "concurrent_annotation_commit_preserved": "84c00103694704cbb6140438d528f0810e7920b6",
+  "published_merge_commit": "f5f79001c646088c14b4bab319d118acfee5fdd6",
+  "remote_main_observed": "f5f79001c646088c14b4bab319d118acfee5fdd6",
+  "verification": "Ordinary push succeeded after ordinary merge; independent git ls-remote matched complete remote main SHA",
+  "combined_repository_validation": "Exit 0; 0 errors; 1 preexisting historical path warning",
+  "scope": "All14 CM/source aggregate diagnostics, 18 refit receipts and 252 factor comparisons, 3 scientific figures, generic code and sanitized records",
+  "individual_rows_matrices_models_credentials_included": false,
+  "biological_or_publication_ready_validation_claim": false,
+  "note": "Later publication receipt; its own future commit is not claimed to equal the content or merge SHA."
+}
