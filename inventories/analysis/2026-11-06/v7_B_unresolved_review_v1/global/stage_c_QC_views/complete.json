@@ -1,0 +1,28 @@
+{
+  "status": "QC_v4_applied_and_B_clean_inputs_exported",
+  "UTC": "2026-11-06T04:58:02.502059+00:00",
+  "n_reviewed_current_scope": 693254,
+  "n_new_exclude": 5321,
+  "n_new_holdout": 0,
+  "n_global_exclude": 8237,
+  "n_global_holdout": 238,
+  "n_global_keep": 4668312,
+  "frozen_index_hash": "3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16",
+  "canonical_V7_changed": false,
+  "models": [
+    {
+      "lineage": "B_unresolved",
+      "n_before": 166822,
+      "n_exclude": 369,
+      "n_holdout": 0,
+      "n_model": 166453,
+      "n_annotation_targets": 157888,
+      "n_context_controls": 8565,
+      "n_sources": 54,
+      "n_model_feature_candidates": 16975,
+      "n_common_measured_DE_genes": 10569,
+      "model_gene_library_fraction_median": 0.9675024108003857
+    }
+  ],
+  "limits": "Operational mixed-RNA exclusion is not proof of artificial doublets. Related lineage/state overlaps were not auto-excluded."
+}

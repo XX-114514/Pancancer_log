@@ -1,0 +1,14 @@
+{
+  "status": "B_marker_aggregation_complete_not_identity_acceptance",
+  "UTC": "2026-11-06T05:33:49.399533+00:00",
+  "n_model_cells": 166453,
+  "n_annotation_targets": 157888,
+  "n_context_controls": 8565,
+  "n_diagnostic_clusters": 16,
+  "n_clusters_with_targets": 16,
+  "n_marker_genes": 304,
+  "all_source_measured_denominators_verified": true,
+  "controls_not_counted_as_annotation_targets": true,
+  "canonical_V7_changed": false,
+  "fine_identity_accepted": false
+}

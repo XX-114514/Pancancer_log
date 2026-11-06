@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T05:34:45.443515+00:00",
+  "lineage": "B_unresolved",
+  "n_cells": 166453,
+  "n_clusters_res0_4": 16,
+  "n_marker_records": 9728,
+  "n_annotation_targets": 157888,
+  "n_context_controls": 8565,
+  "IG_variable_and_globin_absent_from_HVG": true,
+  "target_and_all_model_marker_tables_independently_verified": true,
+  "max_absolute_mean_CP10K_recalculation_error": 3.865352482534945e-12,
+  "all_model_cells_exactly_QC_eligible": true,
+  "all_resolution_and_source_counts_recomputed": true,
+  "DE_restricted_to_common_measured_genes": true,
+  "HVG2000_subset_of_source_robust_candidates": true,
+  "clusters_no_positive_DE_padj05_under_current_settings": [
+    3,
+    9
+  ],
+  "final_fine_annotation_accepted": false
+}

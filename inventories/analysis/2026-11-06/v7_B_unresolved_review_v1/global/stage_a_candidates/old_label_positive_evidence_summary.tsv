@@ -1,0 +1,14 @@
+label_v7	major	n_cells	n_sources	n_joint_disjoint_QC_candidates	n_T_positive_source_aware	n_NK_receptor_effector_positive	n_B_distinct_components_positive	n_ASC_distinct_components_positive	n_Myeloid_mature_components_positive	n_Endothelial_distinct_components_positive	n_Epithelial_distinct_components_positive	n_Fibroblast_distinct_components_positive	n_Ery_structural_synthesis_nonHB_positive	n_Ery_nonHB_multigene_positive	n_Platelet_secreted_structural_positive	n_HSPC_hematopoietic_components_positive	n_ILC2_or_ILC3_specific_program_positive
+B_Plasma_boundary	B_Plasma_boundary	4839	47	26	129	20	403	1406	18	7	8	0	1	1	1	0	1
+Bcell_Naive_IGHD	Bcell	106404	53	579	1088	123	88462	1425	26	16	51	15	0	0	1	0	4
+Bcell_Naive_TCL1A	Bcell	129521	53	723	1906	397	90715	4666	62	14	152	14	1	1	13	5	7
+Bcell_coarse_provisional	Bcell	79964	54	2973	13905	1497	5661	2823	12800	74	156	186	1	1	3	4	74
+Bcell_coarse_subtype_pending	Bcell	35221	53	352	1303	321	1999	374	5687	238	292	64	2	3	3	11	22
+Bcell_unresolved	Bcell	42344	52	25	468	103	9910	329	223	2	7	1	1	1	2	0	2
+Bcell_unresolved_CST3	Bcell	55407	53	168	297	70	1272	261	4685	660	1259	313	0	0	1	7	13
+Bcell_unresolved_DNAJB1	Bcell	55667	51	52	183	7	32279	322	12	1	74	10	0	0	1	0	0
+Plasma_coarse_provisional	Plasma	16074	50	540	1815	311	105	5571	70	6	23	9	0	0	0	3	19
+Plasma_coarse_subtype_pending	Plasma	4416	50	113	71	21	29	925	101	18	59	28	0	0	0	0	0
+Plasma_unresolved	Plasma	81084	48	113	372	100	673	54936	66	48	491	148	1	1	0	0	22
+Plasma_unresolved_KRTCAP2	Plasma	69779	48	206	538	61	6012	68527	54	24	484	97	0	0	1	8	1
+Plasma_unresolved_PFN1	Plasma	12534	48	2061	5170	1006	1469	11643	336	78	471	119	0	0	1	15	13

@@ -1,0 +1,321 @@
+cluster	population	reference_field	label	n_cells	n_cluster
+0	all_model	ev_celltypist_label	Memory B cells	38234	43779
+0	all_model	ev_celltypist_label	Naive B cells	2074	43779
+0	all_model	ev_celltypist_label	Age-associated B cells	1634	43779
+0	all_model	ev_celltypist_label	B cells	816	43779
+0	all_model	ev_celltypist_label	Tem/Effector helper T cells	100	43779
+0	all_model	scatomic_full_label	B Cell	42551	43779
+0	all_model	scatomic_full_label	Blood Cell	500	43779
+0	all_model	scatomic_full_label	Any Cell	113	43779
+0	all_model	scatomic_full_label	cDC2	100	43779
+0	all_model	scatomic_full_label	Phagocytosis Macrophage	74	43779
+0	annotation_targets	ev_celltypist_label	Memory B cells	36241	41402
+0	annotation_targets	ev_celltypist_label	Naive B cells	2017	41402
+0	annotation_targets	ev_celltypist_label	Age-associated B cells	1385	41402
+0	annotation_targets	ev_celltypist_label	B cells	780	41402
+0	annotation_targets	ev_celltypist_label	Tem/Effector helper T cells	92	41402
+0	annotation_targets	scatomic_full_label	B Cell	40266	41402
+0	annotation_targets	scatomic_full_label	Blood Cell	455	41402
+0	annotation_targets	scatomic_full_label	Any Cell	102	41402
+0	annotation_targets	scatomic_full_label	cDC2	90	41402
+0	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	72	41402
+1	all_model	ev_celltypist_label	Naive B cells	15639	24386
+1	all_model	ev_celltypist_label	Memory B cells	6014	24386
+1	all_model	ev_celltypist_label	B cells	1567	24386
+1	all_model	ev_celltypist_label	Age-associated B cells	445	24386
+1	all_model	ev_celltypist_label	Treg(diff)	121	24386
+1	all_model	scatomic_full_label	B Cell	24073	24386
+1	all_model	scatomic_full_label	Blood Cell	138	24386
+1	all_model	scatomic_full_label	Any Cell	41	24386
+1	all_model	scatomic_full_label	cDC2	25	24386
+1	all_model	scatomic_full_label	Phagocytosis Macrophage	17	24386
+1	annotation_targets	ev_celltypist_label	Naive B cells	14741	23127
+1	annotation_targets	ev_celltypist_label	Memory B cells	5770	23127
+1	annotation_targets	ev_celltypist_label	B cells	1498	23127
+1	annotation_targets	ev_celltypist_label	Age-associated B cells	413	23127
+1	annotation_targets	ev_celltypist_label	Treg(diff)	116	23127
+1	annotation_targets	scatomic_full_label	B Cell	22843	23127
+1	annotation_targets	scatomic_full_label	Blood Cell	122	23127
+1	annotation_targets	scatomic_full_label	Any Cell	35	23127
+1	annotation_targets	scatomic_full_label	cDC2	24	23127
+1	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	16	23127
+2	all_model	ev_celltypist_label	Memory B cells	3566	21827
+2	all_model	ev_celltypist_label	Epithelial cells	2240	21827
+2	all_model	ev_celltypist_label	Macrophages	1982	21827
+2	all_model	ev_celltypist_label	Endothelial cells	1421	21827
+2	all_model	ev_celltypist_label	Tcm/Naive helper T cells	1382	21827
+2	all_model	scatomic_full_label	Normal Tissue Cell	5713	21827
+2	all_model	scatomic_full_label	Endothelial Cells	2358	21827
+2	all_model	scatomic_full_label	B Cell	1866	21827
+2	all_model	scatomic_full_label	Lung Cancer Cell	1741	21827
+2	all_model	scatomic_full_label	Colon/Colorectal Cancer Cell	1197	21827
+2	annotation_targets	ev_celltypist_label	Memory B cells	3563	21812
+2	annotation_targets	ev_celltypist_label	Epithelial cells	2239	21812
+2	annotation_targets	ev_celltypist_label	Macrophages	1982	21812
+2	annotation_targets	ev_celltypist_label	Endothelial cells	1421	21812
+2	annotation_targets	ev_celltypist_label	Tcm/Naive helper T cells	1382	21812
+2	annotation_targets	scatomic_full_label	Normal Tissue Cell	5713	21812
+2	annotation_targets	scatomic_full_label	Endothelial Cells	2358	21812
+2	annotation_targets	scatomic_full_label	B Cell	1861	21812
+2	annotation_targets	scatomic_full_label	Lung Cancer Cell	1740	21812
+2	annotation_targets	scatomic_full_label	Colon/Colorectal Cancer Cell	1197	21812
+3	all_model	ev_celltypist_label	Memory B cells	11901	15323
+3	all_model	ev_celltypist_label	Naive B cells	1011	15323
+3	all_model	ev_celltypist_label	B cells	936	15323
+3	all_model	ev_celltypist_label	Age-associated B cells	195	15323
+3	all_model	ev_celltypist_label	Macrophages	113	15323
+3	all_model	scatomic_full_label	B Cell	13980	15323
+3	all_model	scatomic_full_label	Blood Cell	299	15323
+3	all_model	scatomic_full_label	Phagocytosis Macrophage	227	15323
+3	all_model	scatomic_full_label	Any Cell	175	15323
+3	all_model	scatomic_full_label	cDC2	142	15323
+3	annotation_targets	ev_celltypist_label	Memory B cells	11701	15066
+3	annotation_targets	ev_celltypist_label	Naive B cells	1001	15066
+3	annotation_targets	ev_celltypist_label	B cells	905	15066
+3	annotation_targets	ev_celltypist_label	Age-associated B cells	188	15066
+3	annotation_targets	ev_celltypist_label	Macrophages	113	15066
+3	annotation_targets	scatomic_full_label	B Cell	13747	15066
+3	annotation_targets	scatomic_full_label	Blood Cell	294	15066
+3	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	227	15066
+3	annotation_targets	scatomic_full_label	Any Cell	167	15066
+3	annotation_targets	scatomic_full_label	cDC2	140	15066
+4	all_model	ev_celltypist_label	Macrophages	2875	14792
+4	all_model	ev_celltypist_label	Epithelial cells	2710	14792
+4	all_model	ev_celltypist_label	Endothelial cells	1981	14792
+4	all_model	ev_celltypist_label	NK cells	816	14792
+4	all_model	ev_celltypist_label	Monocytes	784	14792
+4	all_model	scatomic_full_label	Normal Tissue Cell	3069	14792
+4	all_model	scatomic_full_label	Endothelial Cells	2518	14792
+4	all_model	scatomic_full_label	Lung Cancer Cell	1627	14792
+4	all_model	scatomic_full_label	Skin Cancer Cell	1520	14792
+4	all_model	scatomic_full_label	Non Blood Cell	687	14792
+4	annotation_targets	ev_celltypist_label	Macrophages	2864	14761
+4	annotation_targets	ev_celltypist_label	Epithelial cells	2706	14761
+4	annotation_targets	ev_celltypist_label	Endothelial cells	1981	14761
+4	annotation_targets	ev_celltypist_label	NK cells	816	14761
+4	annotation_targets	ev_celltypist_label	Monocytes	784	14761
+4	annotation_targets	scatomic_full_label	Normal Tissue Cell	3066	14761
+4	annotation_targets	scatomic_full_label	Endothelial Cells	2518	14761
+4	annotation_targets	scatomic_full_label	Lung Cancer Cell	1626	14761
+4	annotation_targets	scatomic_full_label	Skin Cancer Cell	1520	14761
+4	annotation_targets	scatomic_full_label	Non Blood Cell	686	14761
+5	all_model	ev_celltypist_label	Plasma cells	5793	9152
+5	all_model	ev_celltypist_label	Memory B cells	740	9152
+5	all_model	ev_celltypist_label	Naive B cells	355	9152
+5	all_model	ev_celltypist_label	Tem/Trm cytotoxic T cells	266	9152
+5	all_model	ev_celltypist_label	Plasmablasts	148	9152
+5	all_model	scatomic_full_label	Plasmablast	5231	9152
+5	all_model	scatomic_full_label	Blood Cell	1230	9152
+5	all_model	scatomic_full_label	B Cell	1200	9152
+5	all_model	scatomic_full_label	Any Cell	392	9152
+5	all_model	scatomic_full_label	B cell or Plasmablast	236	9152
+5	annotation_targets	ev_celltypist_label	Plasma cells	2398	5529
+5	annotation_targets	ev_celltypist_label	Memory B cells	736	5529
+5	annotation_targets	ev_celltypist_label	Naive B cells	353	5529
+5	annotation_targets	ev_celltypist_label	Tem/Trm cytotoxic T cells	257	5529
+5	annotation_targets	ev_celltypist_label	B cells	142	5529
+5	annotation_targets	scatomic_full_label	Plasmablast	2424	5529
+5	annotation_targets	scatomic_full_label	B Cell	1067	5529
+5	annotation_targets	scatomic_full_label	Blood Cell	1021	5529
+5	annotation_targets	scatomic_full_label	B cell or Plasmablast	206	5529
+5	annotation_targets	scatomic_full_label	Any Cell	183	5529
+6	all_model	ev_celltypist_label	Macrophages	3437	8906
+6	all_model	ev_celltypist_label	DC2	1554	8906
+6	all_model	ev_celltypist_label	pDC	636	8906
+6	all_model	ev_celltypist_label	DC1	600	8906
+6	all_model	ev_celltypist_label	DC	495	8906
+6	all_model	scatomic_full_label	cDC2	3019	8906
+6	all_model	scatomic_full_label	Phagocytosis Macrophage	1287	8906
+6	all_model	scatomic_full_label	Pro-angiogenesis Macrophage	995	8906
+6	all_model	scatomic_full_label	Macrophage	595	8906
+6	all_model	scatomic_full_label	pDC	557	8906
+6	annotation_targets	ev_celltypist_label	Macrophages	3436	8486
+6	annotation_targets	ev_celltypist_label	DC2	1554	8486
+6	annotation_targets	ev_celltypist_label	DC1	600	8486
+6	annotation_targets	ev_celltypist_label	DC	495	8486
+6	annotation_targets	ev_celltypist_label	Alveolar macrophages	370	8486
+6	annotation_targets	scatomic_full_label	cDC2	3002	8486
+6	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	1285	8486
+6	annotation_targets	scatomic_full_label	Pro-angiogenesis Macrophage	994	8486
+6	annotation_targets	scatomic_full_label	Macrophage	595	8486
+6	annotation_targets	scatomic_full_label	cDC1	535	8486
+7	all_model	ev_celltypist_label	Migratory DCs	1960	8264
+7	all_model	ev_celltypist_label	Macrophages	1477	8264
+7	all_model	ev_celltypist_label	DC2	803	8264
+7	all_model	ev_celltypist_label	DC	391	8264
+7	all_model	ev_celltypist_label	Memory B cells	372	8264
+7	all_model	scatomic_full_label	LAMP3 cDC	2520	8264
+7	all_model	scatomic_full_label	cDC2	1159	8264
+7	all_model	scatomic_full_label	Phagocytosis Macrophage	1042	8264
+7	all_model	scatomic_full_label	Pro-angiogenesis Macrophage	847	8264
+7	all_model	scatomic_full_label	B Cell	445	8264
+7	annotation_targets	ev_celltypist_label	Migratory DCs	1959	8245
+7	annotation_targets	ev_celltypist_label	Macrophages	1476	8245
+7	annotation_targets	ev_celltypist_label	DC2	803	8245
+7	annotation_targets	ev_celltypist_label	DC	391	8245
+7	annotation_targets	ev_celltypist_label	Memory B cells	368	8245
+7	annotation_targets	scatomic_full_label	LAMP3 cDC	2520	8245
+7	annotation_targets	scatomic_full_label	cDC2	1159	8245
+7	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	1042	8245
+7	annotation_targets	scatomic_full_label	Pro-angiogenesis Macrophage	847	8245
+7	annotation_targets	scatomic_full_label	B Cell	437	8245
+8	all_model	ev_celltypist_label	Tem/Trm cytotoxic T cells	980	6053
+8	all_model	ev_celltypist_label	Tem/Effector helper T cells	612	6053
+8	all_model	ev_celltypist_label	Regulatory T cells	612	6053
+8	all_model	ev_celltypist_label	Tcm/Naive helper T cells	608	6053
+8	all_model	ev_celltypist_label	Type 1 helper T cells	319	6053
+8	all_model	scatomic_full_label	Naive CD4+ T cells	1135	6053
+8	all_model	scatomic_full_label	Effector/Memory CD8+ T cells	927	6053
+8	all_model	scatomic_full_label	CD4+ T cell	848	6053
+8	all_model	scatomic_full_label	Effector/Memory CD4+ T cells	659	6053
+8	all_model	scatomic_full_label	Blood Cell	648	6053
+8	annotation_targets	ev_celltypist_label	Tem/Trm cytotoxic T cells	979	6027
+8	annotation_targets	ev_celltypist_label	Tcm/Naive helper T cells	608	6027
+8	annotation_targets	ev_celltypist_label	Regulatory T cells	608	6027
+8	annotation_targets	ev_celltypist_label	Tem/Effector helper T cells	606	6027
+8	annotation_targets	ev_celltypist_label	Type 1 helper T cells	318	6027
+8	annotation_targets	scatomic_full_label	Naive CD4+ T cells	1135	6027
+8	annotation_targets	scatomic_full_label	Effector/Memory CD8+ T cells	926	6027
+8	annotation_targets	scatomic_full_label	CD4+ T cell	847	6027
+8	annotation_targets	scatomic_full_label	Effector/Memory CD4+ T cells	658	6027
+8	annotation_targets	scatomic_full_label	Blood Cell	638	6027
+9	all_model	ev_celltypist_label	Memory B cells	690	4637
+9	all_model	ev_celltypist_label	Tcm/Naive helper T cells	518	4637
+9	all_model	ev_celltypist_label	Epithelial cells	412	4637
+9	all_model	ev_celltypist_label	Macrophages	354	4637
+9	all_model	ev_celltypist_label	Naive B cells	292	4637
+9	all_model	scatomic_full_label	Normal Tissue Cell	818	4637
+9	all_model	scatomic_full_label	B Cell	601	4637
+9	all_model	scatomic_full_label	Naive CD4+ T cells	470	4637
+9	all_model	scatomic_full_label	Endothelial Cells	301	4637
+9	all_model	scatomic_full_label	Breast Cancer Cell	226	4637
+9	annotation_targets	ev_celltypist_label	Memory B cells	687	4630
+9	annotation_targets	ev_celltypist_label	Tcm/Naive helper T cells	518	4630
+9	annotation_targets	ev_celltypist_label	Epithelial cells	412	4630
+9	annotation_targets	ev_celltypist_label	Macrophages	353	4630
+9	annotation_targets	ev_celltypist_label	Naive B cells	292	4630
+9	annotation_targets	scatomic_full_label	Normal Tissue Cell	817	4630
+9	annotation_targets	scatomic_full_label	B Cell	599	4630
+9	annotation_targets	scatomic_full_label	Naive CD4+ T cells	470	4630
+9	annotation_targets	scatomic_full_label	Endothelial Cells	301	4630
+9	annotation_targets	scatomic_full_label	Breast Cancer Cell	226	4630
+10	all_model	ev_celltypist_label	Macrophages	962	4011
+10	all_model	ev_celltypist_label	Double-positive thymocytes	351	4011
+10	all_model	ev_celltypist_label	NK cells	311	4011
+10	all_model	ev_celltypist_label	Epithelial cells	311	4011
+10	all_model	ev_celltypist_label	Memory B cells	209	4011
+10	all_model	scatomic_full_label	Lung Cancer Cell	477	4011
+10	all_model	scatomic_full_label	B Cell	454	4011
+10	all_model	scatomic_full_label	Phagocytosis Macrophage	412	4011
+10	all_model	scatomic_full_label	cDC2	322	4011
+10	all_model	scatomic_full_label	Normal Tissue Cell	309	4011
+10	annotation_targets	ev_celltypist_label	Macrophages	961	3804
+10	annotation_targets	ev_celltypist_label	Double-positive thymocytes	339	3804
+10	annotation_targets	ev_celltypist_label	Epithelial cells	310	3804
+10	annotation_targets	ev_celltypist_label	NK cells	308	3804
+10	annotation_targets	ev_celltypist_label	Memory B cells	188	3804
+10	annotation_targets	scatomic_full_label	Lung Cancer Cell	476	3804
+10	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	411	3804
+10	annotation_targets	scatomic_full_label	B Cell	338	3804
+10	annotation_targets	scatomic_full_label	cDC2	321	3804
+10	annotation_targets	scatomic_full_label	Normal Tissue Cell	299	3804
+11	all_model	ev_celltypist_label	Memory B cells	2104	3243
+11	all_model	ev_celltypist_label	Naive B cells	409	3243
+11	all_model	ev_celltypist_label	Age-associated B cells	128	3243
+11	all_model	ev_celltypist_label	Endothelial cells	73	3243
+11	all_model	ev_celltypist_label	Macrophages	72	3243
+11	all_model	scatomic_full_label	B Cell	2700	3243
+11	all_model	scatomic_full_label	Endothelial Cells	105	3243
+11	all_model	scatomic_full_label	Phagocytosis Macrophage	54	3243
+11	all_model	scatomic_full_label	Non Blood Cell	52	3243
+11	all_model	scatomic_full_label	Blood Cell	51	3243
+11	annotation_targets	ev_celltypist_label	Memory B cells	2029	3115
+11	annotation_targets	ev_celltypist_label	Naive B cells	384	3115
+11	annotation_targets	ev_celltypist_label	Age-associated B cells	111	3115
+11	annotation_targets	ev_celltypist_label	Endothelial cells	73	3115
+11	annotation_targets	ev_celltypist_label	Macrophages	72	3115
+11	annotation_targets	scatomic_full_label	B Cell	2583	3115
+11	annotation_targets	scatomic_full_label	Endothelial Cells	105	3115
+11	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	54	3115
+11	annotation_targets	scatomic_full_label	Non Blood Cell	52	3115
+11	annotation_targets	scatomic_full_label	Blood Cell	45	3115
+12	all_model	ev_celltypist_label	Germinal center B cells	348	1056
+12	all_model	ev_celltypist_label	Memory B cells	294	1056
+12	all_model	ev_celltypist_label	Naive B cells	201	1056
+12	all_model	ev_celltypist_label	Age-associated B cells	103	1056
+12	all_model	ev_celltypist_label	B cells	27	1056
+12	all_model	scatomic_full_label	B Cell	1002	1056
+12	all_model	scatomic_full_label	Blood Cell	13	1056
+12	all_model	scatomic_full_label	Any Cell	9	1056
+12	all_model	scatomic_full_label	pDC	6	1056
+12	all_model	scatomic_full_label	Macrophage or Dendritic Cell	4	1056
+12	annotation_targets	ev_celltypist_label	Memory B cells	260	896
+12	annotation_targets	ev_celltypist_label	Germinal center B cells	255	896
+12	annotation_targets	ev_celltypist_label	Naive B cells	190	896
+12	annotation_targets	ev_celltypist_label	Age-associated B cells	88	896
+12	annotation_targets	ev_celltypist_label	B cells	25	896
+12	annotation_targets	scatomic_full_label	B Cell	849	896
+12	annotation_targets	scatomic_full_label	Blood Cell	10	896
+12	annotation_targets	scatomic_full_label	Any Cell	7	896
+12	annotation_targets	scatomic_full_label	pDC	5	896
+12	annotation_targets	scatomic_full_label	Macrophage or Dendritic Cell	4	896
+13	all_model	ev_celltypist_label	Epithelial cells	104	582
+13	all_model	ev_celltypist_label	Macrophages	99	582
+13	all_model	ev_celltypist_label	Tcm/Naive helper T cells	57	582
+13	all_model	ev_celltypist_label	Alveolar macrophages	54	582
+13	all_model	ev_celltypist_label	Memory B cells	23	582
+13	all_model	scatomic_full_label	Endometrial Cancer Cell	153	582
+13	all_model	scatomic_full_label	Pro-angiogenesis Macrophage	58	582
+13	all_model	scatomic_full_label	Phagocytosis Macrophage	57	582
+13	all_model	scatomic_full_label	B Cell	51	582
+13	all_model	scatomic_full_label	Ovarian Cancer Cell	44	582
+13	annotation_targets	ev_celltypist_label	Epithelial cells	104	580
+13	annotation_targets	ev_celltypist_label	Macrophages	99	580
+13	annotation_targets	ev_celltypist_label	Tcm/Naive helper T cells	57	580
+13	annotation_targets	ev_celltypist_label	Alveolar macrophages	54	580
+13	annotation_targets	ev_celltypist_label	Memory B cells	23	580
+13	annotation_targets	scatomic_full_label	Endometrial Cancer Cell	153	580
+13	annotation_targets	scatomic_full_label	Pro-angiogenesis Macrophage	58	580
+13	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	57	580
+13	annotation_targets	scatomic_full_label	B Cell	50	580
+13	annotation_targets	scatomic_full_label	Ovarian Cancer Cell	44	580
+14	all_model	ev_celltypist_label	Endothelial cells	90	251
+14	all_model	ev_celltypist_label	Tem/Trm cytotoxic T cells	22	251
+14	all_model	ev_celltypist_label	Kupffer cells	18	251
+14	all_model	ev_celltypist_label	Alveolar macrophages	14	251
+14	all_model	ev_celltypist_label	NK cells	11	251
+14	all_model	scatomic_full_label	Endothelial Cells	221	251
+14	all_model	scatomic_full_label	Stromal Cell	7	251
+14	all_model	scatomic_full_label	Non Blood Cell	5	251
+14	all_model	scatomic_full_label	Lung Cancer Cell	5	251
+14	all_model	scatomic_full_label	Normal Tissue Cell	3	251
+14	annotation_targets	ev_celltypist_label	Endothelial cells	90	251
+14	annotation_targets	ev_celltypist_label	Tem/Trm cytotoxic T cells	22	251
+14	annotation_targets	ev_celltypist_label	Kupffer cells	18	251
+14	annotation_targets	ev_celltypist_label	Alveolar macrophages	14	251
+14	annotation_targets	ev_celltypist_label	NK cells	11	251
+14	annotation_targets	scatomic_full_label	Endothelial Cells	221	251
+14	annotation_targets	scatomic_full_label	Stromal Cell	7	251
+14	annotation_targets	scatomic_full_label	Non Blood Cell	5	251
+14	annotation_targets	scatomic_full_label	Lung Cancer Cell	5	251
+14	annotation_targets	scatomic_full_label	Normal Tissue Cell	3	251
+15	all_model	ev_celltypist_label	Macrophages	43	191
+15	all_model	ev_celltypist_label	Memory B cells	32	191
+15	all_model	ev_celltypist_label	Classical monocytes	12	191
+15	all_model	ev_celltypist_label	Epithelial cells	12	191
+15	all_model	ev_celltypist_label	Naive B cells	10	191
+15	all_model	scatomic_full_label	Normal Tissue Cell	60	191
+15	all_model	scatomic_full_label	B Cell	39	191
+15	all_model	scatomic_full_label	Any Cell	21	191
+15	all_model	scatomic_full_label	Liver Cancer Cell	15	191
+15	all_model	scatomic_full_label	Non Blood Cell	11	191
+15	annotation_targets	ev_celltypist_label	Memory B cells	30	157
+15	annotation_targets	ev_celltypist_label	Macrophages	30	157
+15	annotation_targets	ev_celltypist_label	Epithelial cells	12	157
+15	annotation_targets	ev_celltypist_label	Classical monocytes	11	157
+15	annotation_targets	ev_celltypist_label	Naive B cells	10	157
+15	annotation_targets	scatomic_full_label	B Cell	36	157
+15	annotation_targets	scatomic_full_label	Normal Tissue Cell	36	157
+15	annotation_targets	scatomic_full_label	Any Cell	21	157
+15	annotation_targets	scatomic_full_label	Liver Cancer Cell	14	157
+15	annotation_targets	scatomic_full_label	Phagocytosis Macrophage	10	157

@@ -1,0 +1,22 @@
+{
+  "status": "completed_candidate_export_and_marker_QC_profile_not_identity_acceptance",
+  "UTC_start": "2026-11-06T04:45:25.275860+00:00",
+  "UTC_end": "2026-11-06T04:49:56.986717+00:00",
+  "n_candidates": 693254,
+  "n_marker_genes": 267,
+  "n_panels": 42,
+  "n_read_blocks": 4712,
+  "n_QC_joint_candidates": 7931,
+  "exports": [
+    {
+      "lineage": "B_unresolved",
+      "n_cells": 166822,
+      "n_targets": 158257,
+      "n_context_controls": 8565,
+      "n_sources": 54,
+      "n_joint_disjoint_QC_candidates": 273
+    }
+  ],
+  "gene_axis": 95038,
+  "canonical_V7_changed": false
+}

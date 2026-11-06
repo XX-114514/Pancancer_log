@@ -1,0 +1,19 @@
+# V7 B-unresolved复核与完整当前注释视图
+
+[任务记录](../logs/codex/2026/2026-11-06_v7-B-unresolved-and-current-annotation.md)。本轮在冻结V7上推进，不替换新TME或CoVarNet输入。事件时间与后补发布记录分开；UTC+8比UTC加8小时，Melbourne加11小时。
+
+04:43:27 UTC预检：冻结4,676,787细胞、106标签，QC-v3为2,916排除/238暂存/4,673,633保留。B/Plasma/边界当前693,254行；三个B-unresolved共153,418，B–ASC边界4,839，初始注释目标158,257。按来源加入8,565个正向B-naive/ASC表达对照，仅辅助定位，不作为身份真值，不覆盖其原标签。
+
+A于04:45:23—04:50:02 UTC真实运行并exit0：267 marker/42组件模块、完整95,038基因counts。B于04:52:07 UTC结束：在旧B及B–ASC边界509,367行作用域登记5,321个操作性混合RNA排除，无血液疾病语境暂存；Plasma的3,038个范围外候选仅标记，不应用。T+B为最多的重叠配对（4,163），不能对不同配对求和。原工具同来源/样本/方法内经验95百分位不是doublet概率；B–ASC连续程序不作自动doublet对。
+
+C于04:58:02 UTC完成，04:59:04 UTC独立输入审计PASS：QC-v4为8,237排除/238暂存/4,668,312保留。新模型166,453行＝157,888注释目标＋8,565对照，369目标在重建前排除。全部counts/10x/metadata/细胞轴和基因轴为精确子集，无旧QC排除重新进入。
+
+D于05:00:45—05:31:21 UTC真实terminal0，R producer从05:00:51至05:31:18。全库RNA LogNormalize1e4；16,975候选特征中VST选2,000 HVG，50 PCA、前30PC图，来源gse_id Harmony，res0.2/.4/.6/.8，主诊断res0.4，seed20261106；全RNA保留95,038基因，RNA Wilcoxon仅使用10,569个各来源共同可测基因。HVG屏蔽IGLV/IGKV/IGHV与10个globin，但不屏蔽Ig常数区、不回归状态。gse_id不是经验证的物理技术；不声称精确复现作者Technology-CCA或已通过整合终验。locale和UMAP默认实现提示保留，不将terminal0当最终身份接受。
+
+E于05:31:24—05:33:50 UTC实际聚合304 marker、16诊断群；05:33:50—05:34:46独立审计terminal0，9,728个目标/全模型marker统计最大CP10K误差3.87e-12。B03/B09当前无过阈值正向DE。E2补充23个DC/髓系/状态marker及原QC指标于05:36:57完成，05:38:17独立审计PASS，736条统计最大误差2.45e-13。主图只画目标的327 marker，不让对照抬高身份支持。
+
+F于05:42:03 UTC写出并读回158,257行目标旁表（包括369排除历史），05:42:34独立审计PASS：157,888实际目标中101,299大类工作、56,589身份待复查，无参考覆盖。工作大类中84,447个B，另16,026髓系、251内皮、575正向T路由。1,278正向B个体从开放分区路由；654个相关B+ASC程序记录不自动当doublet或过渡。16群人工决策与6张PNG/SVG均完成，候选细分、群级状态、逐细胞竞争复查分列，最终细分FALSE。见[完整结果](../inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)。
+
+随后按冻结轴合并此前Mast/T6/四稀有谱系与本轮B工作旁表，完整轴导出/审计尚在推进，不能提前记成功。G精确启动时刻未单独捕获；05:45:44 UTC取证已有私有pickle正在写入。所有逐细胞和矩阵文件留在`${PROJECT_ROOT}/runs/20261106_v7_B_unresolved_review_v1`私有目录，公开只包含审查后的群级聚合、方法及通用代码。
+
+冻结V7 SHA256 `e4fda365b2bfa9ea6f82b9b48c4ce6009a0bf31dcfb5a57e7e94cab6d8d3981e`；索引hash `3f802eb8cc52f04beb27fa2987d2ffe3ddf75f4b4f51dec8e6448b26df8d1f16`。D代码SHA `3c8dadc8819623e07e736fe137ff09f9bb5a044021a6744ec3c18b7a963338fc`。执行环境scanpy Python3.10.19/anndata0.11.4/pandas2.3.3/numpy1.26.4/scipy1.11.4，R4.3.3/Seurat5.3.1/Harmony1.2.4；发布副本基于`4183ecf390a884cab3cc693f17fb0c5610167be9`，新增脚本独立哈希登记，不冒充执行前已在该提交内。

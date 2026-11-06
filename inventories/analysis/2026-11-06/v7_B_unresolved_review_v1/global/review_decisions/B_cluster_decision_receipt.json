@@ -1,0 +1,8 @@
+{
+  "recorded_UTC": "2026-11-06T05:41:32.006853+00:00",
+  "status": "16_clusters_manually_reviewed_working_not_final",
+  "sha256": "9203f93d3fb0b49dee6e77ffcb95dcd3986aeb49cf078a982d72f10cb96d7780",
+  "source_tables": "independent_audits_PASS_main304_plus_additional23_markers_target_only",
+  "n_clusters": 16,
+  "final_fine_identity_accepted": false
+}

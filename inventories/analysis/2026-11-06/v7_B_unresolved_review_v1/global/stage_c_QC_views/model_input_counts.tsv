@@ -1,0 +1,2 @@
+lineage	n_before	n_exclude	n_holdout	n_model	n_annotation_targets	n_context_controls	n_sources	n_model_feature_candidates	n_common_measured_DE_genes	model_gene_library_fraction_median
+B_unresolved	166822	369	0	166453	157888	8565	54	16975	10569	0.9675024108003857

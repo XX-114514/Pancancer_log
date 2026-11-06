@@ -1,0 +1,6 @@
+old_major	model_pool	n_cells	n_proposed_operational_exclude	n_hematologic_context_holdout
+B_Plasma_boundary	B_unresolved	4839	26	0
+Bcell	B_unresolved	157765	343	0
+Bcell	not_in_focus_models	346763	4952	0
+Plasma	B_unresolved	4218	0	0
+Plasma	not_in_focus_models	179669	0	0

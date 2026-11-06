@@ -1,3 +1,5 @@
+[V7 B未定群与全注释视图](V7-B-unresolved-current-annotation-20261106.md)：来源感知327 marker、IgV/globin模型排除、B/ASC/髓系父类复查与冻结信息保留；候选/状态/最终细分分开。
+
 [V7其他unresolved来源感知复查](V7-other-unresolved-source-aware-review-20261106.md)：实际QC、父身份、RNA背景与最终细分分开；完整counts重建、独立复算及工作侧表。
 
 [V7组织上皮文献扩展](V7-epithelial-extension-20261105.md)：原26组拆分、完整基因与来源、父身份/组织相容性/程序/良恶性分开。

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T04:59:04.427186+00:00",
+  "n_new_exclude": 5321,
+  "n_new_holdout": 0,
+  "n_global_exclude": 8237,
+  "n_global_holdout": 238,
+  "n_global_keep": 4668312,
+  "models": [
+    {
+      "lineage": "B_unresolved",
+      "n_model": 166453,
+      "n_source": 54,
+      "n_genes": 95038,
+      "exact_source_raw_count_subset": true,
+      "exact_10x_buffers_and_metadata_axis": true
+    }
+  ],
+  "original_QC_v3_exclusions_preserved": true,
+  "no_primary_keep_reentry": true
+}

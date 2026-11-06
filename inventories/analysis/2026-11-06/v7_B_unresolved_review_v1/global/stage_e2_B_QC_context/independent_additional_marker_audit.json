@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T05:38:17.772722+00:00",
+  "n_model_cells": 166453,
+  "n_marker_records": 736,
+  "n_additional_markers": 23,
+  "max_absolute_CP10K_error": 2.4513724383723456e-13,
+  "source_measured_denominators_verified": true,
+  "original_QC_summary_medians_verified": true,
+  "graph_context_ARI_independently_verified": true
+}

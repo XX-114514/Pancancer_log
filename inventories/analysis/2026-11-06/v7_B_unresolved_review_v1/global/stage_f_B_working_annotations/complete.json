@@ -1,0 +1,16 @@
+{
+  "status": "B_target_working_sidecar_written_and_readback_verified",
+  "UTC": "2026-11-06T05:42:03.343144+00:00",
+  "n_target_records": 158257,
+  "n_targets_in_clean_model": 157888,
+  "n_QC_excluded_before_refit": 369,
+  "n_broad_working_targets": 101299,
+  "n_identity_review_required_in_model": 56589,
+  "n_direct_B_routes": 1278,
+  "n_direct_T_routes": 575,
+  "n_related_B_ASC_programme_cells": 654,
+  "n_controls_overlaid": 0,
+  "canonical_V7_changed": false,
+  "fine_identity_final_accepted": false,
+  "sidecar_sha256": "a7a6079f9c56564fa686081ae4769f8c86126d56bb0f65728f1d488b27450d2c"
+}

@@ -1,3 +1,7 @@
+## 2026-11-06 B工作注释与完整当前视图
+
+[B逐群结果](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)完成157,888目标/16诊断群、327 marker与工作旁表独立核验。优先把父身份错误、低信息、共享B–ASC轴及状态与真正B细分分开；56,589身份复查及来源内纯化仍开放。完整V7视图正在整合此前Mast/T6/四稀有谱系与B旁表，未重建标签显式继承，不以导出完成替代全V7发表验收。不替换干净TME/CoVarNet输入。
+
 ## 2026-11-06 V7其他unresolved四类里程碑
 
 红系/血小板/HSPC/ILC从counts完成59个诊断分区、260 marker复核及工作侧表；QC-v3与冻结轴继承独立通过，见[结果](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)。当前重点由“给每群强配亚型”转为纠正父身份、验证混合RNA与来源/疾病语境，分别验收大类、状态和细分；43,704身份复查记录及其他未重建背景仍开放。此里程碑不是全V7发表注释完成，不替换干净TME/CoVarNet线。

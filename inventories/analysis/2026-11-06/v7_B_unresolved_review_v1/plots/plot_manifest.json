@@ -1,0 +1,63 @@
+{
+  "lineage": "B",
+  "row_prefix": "B",
+  "Matplotlib": "3.10.7",
+  "n_clusters": 16,
+  "n_cells": 157888,
+  "n_marker_records": 5232,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "candidate_status_explicit": true,
+  "input_marker_sha256": "d703c520eee209b2effda6485c298674090739ddf34d472469959ad20af07508",
+  "panel_spec_sha256": "66b1e62570eb418b8cb9eaf26b1284287acd953231fe4fc89d612bfa813c9f41",
+  "outputs": [
+    {
+      "name": "B_nonhematopoietic_context_v7.png",
+      "sha256": "bd53a91854e41939fb9051f80d76f10ebb726a284ca9a0b4fb98464a9da605f7"
+    },
+    {
+      "name": "B_identity_subtype_v7.png",
+      "sha256": "a3c85fb2e1a3fea302ffe3312ca128bede1530b702264d619c582ba2205288f4"
+    },
+    {
+      "name": "B_isotype_precursor_context_v7.svg",
+      "sha256": "6f9411eb7bf2ca08d6b9c311e758f777a155b1f9cc1735537fe00c4083acf1c5"
+    },
+    {
+      "name": "B_isotype_precursor_context_v7.png",
+      "sha256": "ea05ebe6bc016dc032d83ca245dbc0b6df6316eee18a7f715a515c5e479cd7ff"
+    },
+    {
+      "name": "B_identity_subtype_v7.svg",
+      "sha256": "e86b4f868d5c9d1f863ea90fd0e1bc589ba521325b6291fd7dc4e3d1afdcf242"
+    },
+    {
+      "name": "B_nonhematopoietic_context_v7.svg",
+      "sha256": "e40e5987eac5ded66c8838b1bef8fb4c2e7c896470d8495372ff2270819bd9f4"
+    },
+    {
+      "name": "B_DC_myeloid_context_v7.svg",
+      "sha256": "3dff4a7205b5f0c54d061ef8350c62578aa8c61efe64010056dc5550bb721a74"
+    },
+    {
+      "name": "B_state_programs_v7.svg",
+      "sha256": "a57df57e8d376d5d588788d6349bb49eed290dfa34d7eb0d7016ef4072f556ba"
+    },
+    {
+      "name": "B_lymphoid_competitors_v7.svg",
+      "sha256": "efc850d0ecf74b696c253356b069e6b7081461c47ddf86a00211469224a650a1"
+    },
+    {
+      "name": "B_lymphoid_competitors_v7.png",
+      "sha256": "51af5ff005b11248ab9c4c9b4dd1d9ccface3b2b8d1ea49da3e021615b6182ea"
+    },
+    {
+      "name": "B_state_programs_v7.png",
+      "sha256": "96883446759ccc0f0463369bab58429808fae51f9bb184a7aaad6cf726af7bee"
+    },
+    {
+      "name": "B_DC_myeloid_context_v7.png",
+      "sha256": "47f0ac59e7a64affcad7a2b825eb245ffd3b070ec8441eb8a6bed15f14906c6b"
+    }
+  ]
+}

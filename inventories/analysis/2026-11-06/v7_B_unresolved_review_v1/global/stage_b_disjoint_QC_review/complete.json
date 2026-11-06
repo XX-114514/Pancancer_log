@@ -1,0 +1,12 @@
+{
+  "status": "disjoint_pair_QC_evidence_profile_not_applied",
+  "UTC": "2026-11-06T04:52:07.669319+00:00",
+  "n_scope": 693254,
+  "n_QC_action_scope": 509367,
+  "n_outside_scope_joint_candidates_not_applied": 3038,
+  "n_joint_candidates": 5321,
+  "n_proposed_operational_exclude": 5321,
+  "n_hematologic_context_holdout": 0,
+  "pair_counts_overlap": true,
+  "scope": "All old B and B-ASC boundary cells eligible for incremental QC; Plasma is diagnostic context only. No B+ASC/T+NK/T+ILC/priming exclusions."
+}

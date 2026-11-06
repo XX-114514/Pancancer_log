@@ -1,4 +1,8 @@
-## 2026-11-06 V7其他unresolved四类工作复查完成，最终细分待验收
+## 2026-11-06 V7 B未定群工作侧表完成，完整轴导出进行中
+
+[16群全表、327 marker及6张图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)：157,888目标＋8,565正向表达参考从counts重建，R terminal0；目标marker单独统计，主表/补充表/工作旁表独立审计PASS。101,299大类工作记录（含84,447个B）、56,589身份待复查，未接受最终细分。B00/01/12分别有memory/naive/GC-like候选，B11为B＋IFN背景；B06/07髓系及DC方向，B14内皮，混合与低信息继续父类复查。QC-v4实际8,237排除／238暂存／4,668,312保留，冻结V7未改。完整4.67M轴正在合并此前各轮侧表，导出验收以独立审计为准；新TME和CoVarNet输入不变。
+
+## 2026-11-06 V7其他unresolved四类较早QC-v3工作复查
 
 [59群完整表与16张图](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)：实际QC-v3增量913排除／2暂存，累计2,916排除／238暂存／4,673,633保留。Ery9,098、Platelet2,318、HSPC14,072、ILC45,290从counts重建，四terminal0；260 marker、来源/分辨率及70,778行工作侧表独立审计通过，冻结V7 SHA未变。27,074大类工作记录，43,704身份待复查；ILC候选池6,363正向T路由、166个ILC-like候选，Platelet候选1,479个血管壁簇级工作记录。HSPC-like不证明正常HSC，未接受ILC1/2/3或其他最终细分。另226,981背景入口未做身份重建，其他谱系、来源/参数敏感性与全V7发表终验仍待；CoVarNet及新TME输入未改。
 

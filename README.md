@@ -1,5 +1,7 @@
 # PanCancer
 
+> **V7 B-unresolved实查（2026-11-06）**：[16群完整表与6张marker对应身份图](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)。157,888目标完成counts重建和工作旁表独立审计，101,299大类工作／56,589身份待复查；发现B细分不足与旧父类混杂并存。QC-v4累计8,237排除／238暂存／4,668,312保留。全V7当前注释合并正在导出，细分终验仍待。
+
 > **V7其他unresolved实查（2026-11-06）**：[红系、血小板、HSPC、ILC的59群完整工作表与16张marker图](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)。实际清理后70,778细胞重建，发现父类误标与共享程序；27,074大类工作记录、43,704身份待复查。QC-v3累计2,916排除／238暂存／4,673,633保留；冻结V7不改，最终细分未接受。
 
 > **组织上皮面板扩展（2026-11-05）**：[完整32项基因与文献表](resources/annotation/v7_epithelial_extension_v1/ALL_PANELS.md) · [原始121条基因记录的逐项处置](resources/annotation/v7_epithelial_extension_v1/ORIGINAL_GENE_REVIEW.md) · [保留Lodi模块的185项TME兼容版](resources/annotation/v7_epithelial_extension_v1/TME_V2_COMPATIBILITY.md)。原文件实际26组，拆分后新增25、复用7；V7扩展对照版137模块。11项检查通过，全V7细胞重新注释尚未完成。

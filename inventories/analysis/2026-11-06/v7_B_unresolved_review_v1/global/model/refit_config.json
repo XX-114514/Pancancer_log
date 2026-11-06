@@ -1,0 +1,17 @@
+{
+  "lineage": "B_unresolved",
+  "n_cells": 166453,
+  "n_genes": 95038,
+  "input_10x": "runs/20261106_v7_B_unresolved_review_v1/stage_c_QC_views/B_unresolved/B_unresolved_clean_model_raw_10x.h5",
+  "input_meta": "runs/20261106_v7_B_unresolved_review_v1/stage_c_QC_views/B_unresolved/B_unresolved_clean_metadata_PRIVATE.tsv.gz",
+  "model_genes": "runs/20261106_v7_B_unresolved_review_v1/stage_c_QC_views/B_unresolved/model_genes.tsv",
+  "DE_genes": "runs/20261106_v7_B_unresolved_review_v1/stage_c_QC_views/B_unresolved/DE_measured_all_sources_genes.tsv",
+  "output": "runs/20261106_v7_B_unresolved_review_v1/stage_d_B_unresolved_refit",
+  "n_sources": 54,
+  "n_model_candidates": 16975,
+  "n_global_DE_candidates": 10569,
+  "globin_excluded_from_model": true,
+  "IG_variable_excluded_from_model": true,
+  "full_RNA_features_retained_for_expression_and_DE": true,
+  "normalization": "Full raw-library RNA LogNormalize 10000"
+}

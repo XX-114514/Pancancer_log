@@ -1,0 +1,12 @@
+{
+  "recorded_UTC": "2026-11-06T04:53:46.156413+00:00",
+  "adopt_registered_disjoint_nonhematologic_candidates": true,
+  "n_adopted_exclusions": 5321,
+  "n_context_holdouts": 0,
+  "QC_action_scope_majors": [
+    "Bcell",
+    "B_Plasma_boundary"
+  ],
+  "outside_scope_Plasma_joint_candidates_not_applied": 3038,
+  "basis": "Reviewed all registered pair summaries, source counts, original within-unit score ranks and raw RNA fractions; distinct mature lineages only. No B+ASC exclusion; preserve all historical rows and ledger. This is operational mixed-RNA QC, not ground-truth artificial doublet confirmation."
+}

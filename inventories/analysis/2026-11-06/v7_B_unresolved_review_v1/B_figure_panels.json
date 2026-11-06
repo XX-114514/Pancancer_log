@@ -1,0 +1,56 @@
+{
+  "figures": [
+    {"name":"B_identity_subtype_v7","title":"V7 unresolved B targets | B and ASC identity / subtype candidates","panels":[
+      {"target":"B identity","level":"parent","genes":["CD79A","CD79B","MS4A1","CD19","BANK1","PAX5"]},
+      {"target":"Naive B\n(candidate)","level":"candidate_subtype","genes":["TCL1A","IGHD","IGHM","FCER2","IL4R"]},
+      {"target":"Memory B\n(candidate)","level":"candidate_subtype","genes":["CD27","TNFRSF13B","AIM2","FCRL2","CD80"]},
+      {"target":"GC B\n(candidate)","level":"candidate_subtype","genes":["BCL6","AICDA","RGS13","MEF2B"]},
+      {"target":"Atypical B\n(candidate)","level":"candidate_subtype","genes":["TBX21","ITGAX","FCRL5","FCRL4"]},
+      {"target":"ASC identity\n(B / pDC contrast)","level":"parent","genes":["MZB1","DERL3","JCHAIN","SDC1","TNFRSF17","PRDM1","IRF4","XBP1"]}
+    ]},
+    {"name":"B_DC_myeloid_context_v7","title":"V7 unresolved B targets | specific DC / myeloid contrasts","panels":[
+      {"target":"B identity","level":"parent","genes":["MS4A1","CD79A","BANK1"]},
+      {"target":"pDC-like\n(candidate)","level":"competing_parent","genes":["TCF4","CLEC4C","LILRA4","IL3RA","GZMB"]},
+      {"target":"cDC1-like\n(candidate)","level":"competing_parent","genes":["CLEC9A","XCR1","BATF3","CADM1"]},
+      {"target":"cDC2-like\n(candidate)","level":"competing_parent","genes":["CD1C","FCER1A","CLEC10A","CD1E"]},
+      {"target":"LAMP3 DC\n(state candidate)","level":"state","genes":["LAMP3","CCR7","FSCN1"]},
+      {"target":"Mature myeloid /\nmacrophage","level":"competing_parent","genes":["LST1","TYROBP","CSF1R","CD163","C1QA","C1QB","APOE","SPP1"]},
+      {"target":"Monocyte /\ninflammatory","level":"competing_parent","genes":["CD14","FCN1","S100A8","S100A9","S100A12"]}
+    ]},
+    {"name":"B_lymphoid_competitors_v7","title":"V7 unresolved B targets | lymphoid and secretory contrasts","panels":[
+      {"target":"B identity","level":"parent","genes":["MS4A1","CD19","CD79A","BANK1"]},
+      {"target":"T identity\nCD3 + TCR","level":"competing_parent","genes":["CD3D","CD3E","CD3G","TRAC","TRBC1","TRBC2","TRDC","TRGC1"]},
+      {"target":"NK apparatus /\neffector","level":"competing_parent","genes":["NCR1","KLRD1","NKG7","GNLY","PRF1"]},
+      {"target":"ASC secretory /\nidentity context","level":"parent","genes":["MZB1","DERL3","PRDM1","XBP1","SDC1","TNFRSF17"]},
+      {"target":"pDC-specific\ncontrast","level":"competing_parent","genes":["TCF4","CLEC4C","LILRA4","IL3RA","GZMB"]},
+      {"target":"Mast\ncontrast","level":"competing_parent","genes":["TPSAB1","TPSB2","CPA3","KIT"]}
+    ]},
+    {"name":"B_nonhematopoietic_context_v7","title":"V7 unresolved B targets | nonhematopoietic identity review","panels":[
+      {"target":"B identity","level":"parent","genes":["MS4A1","CD79A","BANK1"]},
+      {"target":"Epithelial","level":"competing_parent","genes":["EPCAM","KRT8","KRT18","KRT19","MUC1"]},
+      {"target":"Endothelial","level":"competing_parent","genes":["CLDN5","PECAM1","VWF","KDR","FLT1"]},
+      {"target":"Mural /\nvascular wall","level":"competing_parent","genes":["RGS5","PDGFRB","ACTA2","MYH11"]},
+      {"target":"Fibroblast","level":"competing_parent","genes":["DCN","LUM","COL1A1","COL1A2"]},
+      {"target":"Melanocytic","level":"competing_parent","genes":["PMEL","MLANA","TYR","SOX10"]},
+      {"target":"Neural /\nendocrine context","level":"competing_parent","genes":["PCSK1N","CPE","CHGA","CHGB","NEFL"]},
+      {"target":"Acinar / hepatic\nRNA context","level":"competing_parent","genes":["PRSS1","CPA1","ALB","ASGR1"]}
+    ]},
+    {"name":"B_state_programs_v7","title":"V7 unresolved B targets | state programs separate from identity","panels":[
+      {"target":"B / ASC\nidentity contrast","level":"parent","genes":["MS4A1","CD79A","BANK1","MZB1","DERL3"]},
+      {"target":"Heat shock / stress\n(state)","level":"state","genes":["DNAJB1","HSPA1A","HSPA1B","HSP90AA1","FOS","JUN"]},
+      {"target":"IFN response\n(state)","level":"state","genes":["ISG15","IFIT1","IFIT3","MX1","OAS1"]},
+      {"target":"Cycling\n(state)","level":"state","genes":["MKI67","TOP2A","UBE2C","CENPF","MCM4","PCNA"]},
+      {"target":"HLA-II\n(shared antigen presentation)","level":"state","genes":["HLA-DRA","HLA-DPB1","CD74"]},
+      {"target":"Secretory / UPR\n(shared context)","level":"state","genes":["XBP1","HSPA5","HSP90B1","SEC11C","SSR4"]}
+    ]},
+    {"name":"B_isotype_precursor_context_v7","title":"V7 unresolved B targets | immunoglobulin and precursor contexts","panels":[
+      {"target":"B / ASC\nidentity contrast","level":"parent","genes":["MS4A1","BANK1","MZB1","DERL3","PRDM1"]},
+      {"target":"IgM / IgD\n(context)","level":"state","genes":["IGHM","IGHD"]},
+      {"target":"IgA constant\n(context)","level":"state","genes":["IGHA1","IGHA2"]},
+      {"target":"IgG constant\n(context)","level":"state","genes":["IGHG1","IGHG2","IGHG3","IGHG4"]},
+      {"target":"Light chain\n(context)","level":"state","genes":["IGKC","IGLC2","IGLC3"]},
+      {"target":"B precursor\n(candidate)","level":"candidate_subtype","genes":["VPREB1","VPREB3","IGLL1","DNTT","CD34","SPINK2"]},
+      {"target":"B identity /\ndifferentiation context","level":"parent","genes":["PAX5","EBF1","BACH2","IRF4","IRF8","BCL2"]}
+    ]}
+  ]
+}

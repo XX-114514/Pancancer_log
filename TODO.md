@@ -1,3 +1,10 @@
+## 2026-11-06 B未定群之后
+
+- [x] B/ASC 693,254行诊断、实际增量QC 5,321排除；157,888目标重新建模、16群327 marker及B工作旁表独立审计，见[结果](inventories/analysis/2026-11-06/v7_B_unresolved_review_v1/README.md)。
+- [ ] 验收全V7当前侧表和106标签/当前全部标签/Excel导出：冻结轴及CNV列不变、所有模型目标不重叠、参考不覆盖、私有TSV全流式读回。
+- [ ] B02/B04/B09/B10等先做父类及来源内纯化；B05的B/ASC边界与B08低T组件逐细胞复核，不把整个混合群强命名。
+- [ ] 真正B大类内部验证naive/memory/GC-like候选、来源/分辨率敏感性及状态分离；不能仅用原分类器预测或一次来源Harmony验收细分。
+
 ## 2026-11-06 四类其他unresolved之后
 
 - [x] Ery/Platelet/HSPC/ILC候选及边界298,674细胞扫描；实际913排除＋2暂存，四clean counts模型与59群marker/工作侧表独立审计，见[结果](inventories/analysis/2026-11-06/v7_other_unresolved_review_v1/README.md)。

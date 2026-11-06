@@ -1,3 +1,5 @@
+[V7 B未定群及当前完整注释](20261106_v7_B_unresolved_review_v1.md)：QC-v4、157,888目标/16群/327 marker和工作侧表独立审计，完整轴合并正在导出，最终细分待。
+
 [V7其他unresolved四类复查](20261106_v7_other_unresolved_review_v1.md)：QC-v3、四counts模型、59群marker与工作侧表独立审计，父类误标/共享边界分开，最终细分待。
 
 [V7组织上皮面板扩展](20261105_v7_epithelial_extension_v1.md)：原26组映射32候选，合并137模块；11项检查通过，无新细胞标签。

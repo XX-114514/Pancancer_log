@@ -1,0 +1,1990 @@
+{
+  "version": "20261106_B_unresolved_positive_component_review_v1",
+  "scope_majors": [
+    "Bcell",
+    "Plasma",
+    "B_Plasma_boundary"
+  ],
+  "panels": [
+    {
+      "id": "T",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "CD3D",
+          "CD3E",
+          "CD3G"
+        ],
+        [
+          "TRAC",
+          "TRBC1",
+          "TRBC2",
+          "TRDC",
+          "TRGC1",
+          "TRGC2"
+        ]
+      ],
+      "positive_genes": [
+        "CD3D",
+        "CD3E",
+        "CD3G",
+        "TRAC",
+        "TRBC1",
+        "TRBC2",
+        "TRDC",
+        "TRGC1",
+        "TRGC2",
+        "LCK",
+        "CD247",
+        "CD2"
+      ],
+      "contrast_review_panels": [
+        "NK",
+        "B",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CD3\u4e0eTCR\u7ec4\u4ef6\u5206\u5f00\uff1b\u03b1\u03b2/\u03b3\u03b4\u5747\u53ef\uff1b\u4f4e\u8986\u76d6\u4e0d\u4f5c\u9634\u6027\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "NK",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "NCR1",
+          "KLRD1",
+          "KLRF1"
+        ],
+        [
+          "NKG7",
+          "GNLY",
+          "PRF1"
+        ]
+      ],
+      "positive_genes": [
+        "NCR1",
+        "KLRD1",
+        "KLRF1",
+        "NKG7",
+        "GNLY",
+        "PRF1",
+        "FCGR3A",
+        "NCAM1",
+        "XCL1",
+        "XCL2"
+      ],
+      "contrast_review_panels": [
+        "T",
+        "ILC",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangNK2019",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "NK\u53d7\u4f53\u4e0e\u6548\u5e94\u8054\u5408\uff1bTCR/CD3\u53e6\u6838\uff0c\u7edd\u4e0d\u7531\u7ec6\u80de\u6bd2\u6027\u76f4\u63a5\u5b9aNK\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "IL7R",
+          "IL1R1"
+        ],
+        [
+          "GATA3",
+          "RORC",
+          "RORA",
+          "TBX21"
+        ]
+      ],
+      "positive_genes": [
+        "IL7R",
+        "IL1R1",
+        "GATA3",
+        "RORC",
+        "RORA",
+        "TBX21",
+        "KIT",
+        "KLRB1",
+        "PTGDR2",
+        "IL1RL1"
+      ],
+      "contrast_review_panels": [
+        "T",
+        "NK",
+        "Mast",
+        "Basophil"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u4ec5ILC\u5019\u9009\u5165\u53e3\uff1b\u5fc5\u987b\u68c0\u67e5Lin/TCR\u4e0eNK/Mast\u8fb9\u754c\uff0c\u4e0d\u80fd\u5355\u9760IL7R\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "CD79A",
+          "CD79B"
+        ],
+        [
+          "MS4A1",
+          "CD19",
+          "CD22",
+          "CD37",
+          "BANK1"
+        ]
+      ],
+      "positive_genes": [
+        "CD79A",
+        "CD79B",
+        "MS4A1",
+        "CD19",
+        "CD22",
+        "CD37",
+        "BANK1",
+        "CD74",
+        "CD40"
+      ],
+      "contrast_review_panels": [
+        "ASC",
+        "T",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u6210\u719fB\u7ec4\u5408\uff1bCD79A/CD37\u4e0eASC\u5171\u4eab\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ASC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "MZB1",
+          "DERL3"
+        ],
+        [
+          "PRDM1",
+          "XBP1",
+          "SDC1",
+          "TNFRSF17"
+        ]
+      ],
+      "positive_genes": [
+        "MZB1",
+        "DERL3",
+        "PRDM1",
+        "XBP1",
+        "SDC1",
+        "TNFRSF17",
+        "JCHAIN",
+        "CD38"
+      ],
+      "contrast_review_panels": [
+        "B",
+        "DC_pDC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u6297\u4f53\u5206\u6ccc\u7ec6\u80de\u5165\u53e3\uff1b\u4e0d\u7531\u5355\u4e2aXBP1\u6216JCHAIN\u5224\u6d46\u7ec6\u80de\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Myeloid",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "LYZ",
+          "LST1"
+        ],
+        [
+          "SPI1",
+          "TYROBP",
+          "FCER1G"
+        ]
+      ],
+      "positive_genes": [
+        "LYZ",
+        "LST1",
+        "SPI1",
+        "TYROBP",
+        "FCER1G",
+        "CSF1R",
+        "CTSD"
+      ],
+      "contrast_review_panels": [
+        "T",
+        "B"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5e7f\u4e49\u9ad3\u7cfb\u5165\u53e3\u800c\u975e\u5355\u6838\u4e9a\u578b\uff1b\u90e8\u5206DC/\u7c92\u7ec6\u80de\u987b\u5e76\u884c\u53ec\u56de\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "DC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "FLT3",
+          "HLA-DRA",
+          "CD74"
+        ]
+      ],
+      "positive_genes": [
+        "FLT3",
+        "HLA-DRA",
+        "CD74",
+        "CLEC9A",
+        "XCR1",
+        "CD1C",
+        "FCER1A",
+        "LILRA4",
+        "CLEC4C"
+      ],
+      "contrast_review_panels": [
+        "Monocyte",
+        "Macrophage",
+        "B",
+        "ASC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "DC\u7236\u8eab\u4efd\u7531\u4e0b\u5217\u5206\u652f\u5e76\u884c\u6838\u67e5\u540e\u6c47\u603b\uff1b\u8be5\u7c97\u6a21\u5757\u4e0d\u662f\u6240\u6709DC\u5fc5\u9700\u7684\u786cAND\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mast",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "TPSAB1",
+          "TPSB2",
+          "CPA3"
+        ],
+        [
+          "KIT",
+          "MS4A2",
+          "HDC"
+        ]
+      ],
+      "positive_genes": [
+        "TPSAB1",
+        "TPSB2",
+        "CPA3",
+        "KIT",
+        "MS4A2",
+        "HDC",
+        "HPGDS",
+        "LTC4S"
+      ],
+      "contrast_review_panels": [
+        "Basophil",
+        "HSPC",
+        "ILC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Tauber2023",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5148\u786e\u8ba4Mast\uff1b\u65e0\u7a33\u5b9a\u4e9a\u578b\u65f6\u505c\u5927\u7c7b\uff0cHDC/LTC4S\u4e0d\u8bc1\u660e\u6fc0\u6d3b\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Basophil",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "IL3RA",
+          "FCER1A"
+        ],
+        [
+          "CLC",
+          "MS4A2",
+          "HDC"
+        ]
+      ],
+      "positive_genes": [
+        "IL3RA",
+        "FCER1A",
+        "CLC",
+        "MS4A2",
+        "HDC",
+        "ENPP3"
+      ],
+      "contrast_review_panels": [
+        "Mast",
+        "DC_pDC",
+        "Eosinophil"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "basophil\u90bb\u8fd1\u8c31\u7cfb\u5019\u9009\uff0c\u539fMast/Basophil_like\u79fb\u51fa\uff1b\u987b\u5b8c\u6574\u5bf9\u7167\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neutrophil",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "CSF3R",
+          "FCGR3B"
+        ],
+        [
+          "S100A8",
+          "S100A9",
+          "FPR1"
+        ]
+      ],
+      "positive_genes": [
+        "CSF3R",
+        "FCGR3B",
+        "S100A8",
+        "S100A9",
+        "FPR1",
+        "CXCR2",
+        "CEACAM8"
+      ],
+      "contrast_review_panels": [
+        "Monocyte",
+        "HSPC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u6210\u719f\u4e0e\u672a\u6210\u719f\u5206\u652f\u5e76\u67e5\uff1bLYZ\u4e0d\u662f\u9ad3\u7cfb\u6c61\u67d3\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Eosinophil",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "EPX",
+          "PRG2"
+        ],
+        [
+          "CLC",
+          "SIGLEC8",
+          "IL5RA"
+        ]
+      ],
+      "positive_genes": [
+        "EPX",
+        "PRG2",
+        "CLC",
+        "SIGLEC8",
+        "IL5RA"
+      ],
+      "contrast_review_panels": [
+        "Basophil",
+        "Mast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u55dc\u9178\u7c92\u7ec6\u80de\u4e0ebasophil/Mast\u7ec4\u5408\u5bf9\u7167\uff1bCLC\u975e\u72ec\u5360\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Epithelial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "KRT8",
+          "KRT18",
+          "KRT19",
+          "KRT7"
+        ],
+        [
+          "EPCAM",
+          "KRT5",
+          "KRT14"
+        ]
+      ],
+      "positive_genes": [
+        "KRT8",
+        "KRT18",
+        "KRT19",
+        "KRT7",
+        "EPCAM",
+        "KRT5",
+        "KRT14",
+        "MUC1"
+      ],
+      "contrast_review_panels": [
+        "Mesothelial",
+        "Melanocytic",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5141\u8bb8\u7ec4\u7ec7/EMT\u4f8b\u5916\uff1b\u6076\u6027\u53e6\u8f74\uff0c\u4e0d\u542bmelanocyte\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Endothelial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "PECAM1",
+          "CDH5"
+        ],
+        [
+          "VWF",
+          "KDR",
+          "FLT1",
+          "CLDN5"
+        ]
+      ],
+      "positive_genes": [
+        "PECAM1",
+        "CDH5",
+        "VWF",
+        "KDR",
+        "FLT1",
+        "CLDN5",
+        "RAMP2",
+        "EMCN",
+        "ESAM"
+      ],
+      "contrast_review_panels": [
+        "Pericyte",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u8840\u7ba1/\u6dcb\u5df4\u5206\u652f\u5e76\u67e5\uff0c\u4e0d\u8981\u6c42\u6240\u6709\u4e9a\u578b\u8868\u8fbeVWF\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Fibroblast",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "DCN",
+          "LUM",
+          "DPT"
+        ],
+        [
+          "COL1A1",
+          "COL1A2",
+          "COL3A1",
+          "PDGFRA"
+        ]
+      ],
+      "positive_genes": [
+        "DCN",
+        "LUM",
+        "DPT",
+        "COL1A1",
+        "COL1A2",
+        "COL3A1",
+        "PDGFRA"
+      ],
+      "contrast_review_panels": [
+        "Pericyte",
+        "Smooth_muscle",
+        "Mesothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Buechler2021",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5148\u8bc1\u5b9efibroblast\uff1b\u80bf\u7624\u6765\u6e90\u624d\u80fd\u8003\u8651CAF\u540d\u79f0\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Pericyte",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "RGS5",
+          "CSPG4"
+        ],
+        [
+          "PDGFRB",
+          "MCAM",
+          "NOTCH3"
+        ]
+      ],
+      "positive_genes": [
+        "RGS5",
+        "CSPG4",
+        "PDGFRB",
+        "MCAM",
+        "NOTCH3",
+        "COX4I2"
+      ],
+      "contrast_review_panels": [
+        "Smooth_muscle",
+        "Fibroblast",
+        "Endothelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "mural\u8c31\u7cfb\uff0c\u4e0d\u662ffibroblast\u5fc5\u7136\u5b50\u578b\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Smooth_muscle",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "MYH11"
+        ],
+        [
+          "CNN1",
+          "DES",
+          "TAGLN",
+          "ACTA2"
+        ]
+      ],
+      "positive_genes": [
+        "MYH11",
+        "CNN1",
+        "DES",
+        "TAGLN",
+        "ACTA2"
+      ],
+      "contrast_review_panels": [
+        "Pericyte",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Qian2020",
+        "Travaglini2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u6536\u7f29\u7a0b\u5e8f\u4e0d\u80fd\u72ec\u7acb\u8bc1\u660eSMC\uff1bMYH11\u53ca\u5b8c\u6574\u80cc\u666f\u8054\u5408\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Mesothelial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "MSLN",
+          "UPK3B"
+        ],
+        [
+          "CALB2",
+          "KRT8",
+          "KRT18",
+          "KRT19"
+        ]
+      ],
+      "positive_genes": [
+        "MSLN",
+        "UPK3B",
+        "CALB2",
+        "KRT8",
+        "KRT18",
+        "KRT19"
+      ],
+      "contrast_review_panels": [
+        "Epithelial",
+        "Fibroblast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Travaglini2020",
+        "Qian2020"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u72ec\u7acb\u90bb\u8fd1\u8c31\u7cfb\uff0c\u6765\u6e90\u53ca\u8154\u9762\u80cc\u666f\u9700\u8981\u6838\u67e5\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Erythroid",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "GYPA",
+          "AHSP",
+          "SLC4A1"
+        ],
+        [
+          "GATA1",
+          "KLF1",
+          "HBB",
+          "HBA1",
+          "HBA2"
+        ]
+      ],
+      "positive_genes": [
+        "GYPA",
+        "AHSP",
+        "SLC4A1",
+        "GATA1",
+        "KLF1",
+        "HBB",
+        "HBA1",
+        "HBA2",
+        "TFRC",
+        "ALAS2"
+      ],
+      "contrast_review_panels": [
+        "Megakaryocytic",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u4e0d\u80fd\u53ea\u7528HB\uff1b\u5206\u5316\u9636\u6bb5\u53ef\u9009\uff0c\u4e0d\u5f3a\u5236\u4e9a\u578b\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Megakaryocytic",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "GP9",
+          "ITGA2B",
+          "GP1BA"
+        ],
+        [
+          "PF4",
+          "PPBP",
+          "TUBB1"
+        ]
+      ],
+      "positive_genes": [
+        "GP9",
+        "ITGA2B",
+        "GP1BA",
+        "PF4",
+        "PPBP",
+        "TUBB1",
+        "RGS18",
+        "NRGN"
+      ],
+      "contrast_review_panels": [
+        "Erythroid",
+        "Myeloid"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5de8\u6838/\u8840\u5c0f\u677f\u5171\u4eab\u5165\u53e3\uff1b\u9644\u7740\u3001\u73af\u5883RNA\u3001\u6838/\u590d\u6742\u5ea6\u53e6\u67e5\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "SPINK2",
+          "HLF",
+          "MEIS1"
+        ],
+        [
+          "CD34",
+          "PROM1",
+          "GATA2"
+        ]
+      ],
+      "positive_genes": [
+        "SPINK2",
+        "HLF",
+        "MEIS1",
+        "CD34",
+        "PROM1",
+        "GATA2",
+        "HOPX"
+      ],
+      "contrast_review_panels": [
+        "Endothelial",
+        "Fibroblast",
+        "Myeloid",
+        "T"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u9020\u8840\u7956\u7ec6\u80de\u5019\u9009\uff1bAML\u4e0d\u80fd\u81ea\u52a8\u53eb\u6b63\u5e38HSC\uff0c\u6210\u719f\u8c31\u7cfb\u6392\u67e5\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Neural_glial",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "SOX10",
+          "PLP1",
+          "MPZ",
+          "SLC1A3",
+          "MBP",
+          "MOG",
+          "RBFOX3",
+          "SNAP25"
+        ]
+      ],
+      "positive_genes": [
+        "SOX10",
+        "PLP1",
+        "MPZ",
+        "SLC1A3",
+        "MBP",
+        "MOG",
+        "RBFOX3",
+        "SNAP25",
+        "S100B"
+      ],
+      "contrast_review_panels": [
+        "Melanocytic"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Neftel2019"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u4ec5\u5e7f\u4e49\u795e\u7ecf/\u80f6\u8d28\u5165\u53e3\uff0c\u4ee5Schwann/\u5c11\u7a81/\u795e\u7ecf\u5143\u7b49\u5206\u652fOR\u590d\u6838\uff1b\u6076\u6027\u72ec\u7acb\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Melanocytic",
+      "axis": "parent",
+      "parent_any": [],
+      "core_groups": [
+        [
+          "PMEL",
+          "MLANA"
+        ],
+        [
+          "TYR",
+          "DCT"
+        ]
+      ],
+      "positive_genes": [
+        "PMEL",
+        "MLANA",
+        "TYR",
+        "DCT",
+        "SOX10",
+        "MITF"
+      ],
+      "contrast_review_panels": [
+        "Neural_glial",
+        "Epithelial"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Tirosh2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u4eceNeural/Epithelial\u79fb\u51fa\uff1bMITF-low/AXL-high\u80bf\u7624\u53ef\u5f31\u8868\u8fbe\uff0c\u4f4e\u68c0\u51fa\u4e0d\u6392\u9664\u6765\u6e90\uff1b\u6076\u6027\u53e6\u5224\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC1",
+      "axis": "branch",
+      "parent_any": [
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "TBX21"
+        ],
+        [
+          "IFNG",
+          "IL12RB2"
+        ]
+      ],
+      "positive_genes": [
+        "TBX21",
+        "IFNG",
+        "IL12RB2",
+        "CXCR3"
+      ],
+      "contrast_review_panels": [
+        "NK",
+        "T_Th1_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "ILC1\u4e0eNK\u5fc5\u987b\u8fb9\u754c\u590d\u6838\uff1b\u65e0\u53d7\u4f53/\u8c31\u7cfb\u8bc1\u636e\u65f6\u505cILC-like\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC2",
+      "axis": "branch",
+      "parent_any": [
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "GATA3"
+        ],
+        [
+          "PTGDR2",
+          "IL1RL1"
+        ]
+      ],
+      "positive_genes": [
+        "GATA3",
+        "PTGDR2",
+        "IL1RL1",
+        "RORA",
+        "IL5",
+        "IL13"
+      ],
+      "contrast_review_panels": [
+        "T_CD4",
+        "Mast",
+        "Basophil"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u7c7b\u578b2\u7a0b\u5e8f\u914d\u5957\u53d7\u4f53\uff1bIL7R\u4e0d\u80fd\u4f5c\u4e3a\u552f\u4e00\u7c7b\u578b\u8bc1\u636e\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ILC3",
+      "axis": "branch",
+      "parent_any": [
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "RORC"
+        ],
+        [
+          "IL23R",
+          "CCR6",
+          "IL22"
+        ]
+      ],
+      "positive_genes": [
+        "RORC",
+        "IL23R",
+        "CCR6",
+        "IL22",
+        "KIT",
+        "KLRB1"
+      ],
+      "contrast_review_panels": [
+        "T_Th17_like",
+        "Mast"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Bjorklund2016"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "RORC/IL23R\u7b49\u8054\u5408\uff1bKIT/KLRB1\u4ec5\u8f85\u52a9\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Cytotoxic",
+      "axis": "state",
+      "parent_any": [
+        "T",
+        "NK",
+        "ILC"
+      ],
+      "core_groups": [
+        [
+          "PRF1",
+          "GZMB"
+        ],
+        [
+          "NKG7",
+          "GNLY",
+          "CCL5"
+        ]
+      ],
+      "positive_genes": [
+        "PRF1",
+        "GZMB",
+        "NKG7",
+        "GNLY",
+        "CCL5",
+        "FGFBP2",
+        "GZMA"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u7ec6\u80de\u6bd2\u7a0b\u5e8f\uff0c\u4e0d\u80fd\u786e\u5b9aCD8/NK\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "IFN_response",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "ISG15",
+          "IFIT1",
+          "IFIT3"
+        ],
+        [
+          "MX1",
+          "OAS1"
+        ]
+      ],
+      "positive_genes": [
+        "ISG15",
+        "IFIT1",
+        "IFIT3",
+        "MX1",
+        "OAS1",
+        "IFIT2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u8de8\u8c31\u7cfb\u72b6\u6001\uff0c\u4e0d\u4f5c\u8eab\u4efd\u5426\u51b3\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Cycling",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "MKI67",
+          "TOP2A"
+        ],
+        [
+          "UBE2C",
+          "TYMS"
+        ]
+      ],
+      "positive_genes": [
+        "MKI67",
+        "TOP2A",
+        "UBE2C",
+        "TYMS",
+        "STMN1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u589e\u6b96\u72b6\u6001\uff1b\u4e0d\u628aplatelet\u5347\u7ea7\u4e3amegakaryocyte\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "MHCII",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "HLA-DRA",
+          "HLA-DRB1"
+        ],
+        [
+          "CD74",
+          "CIITA"
+        ]
+      ],
+      "positive_genes": [
+        "HLA-DRA",
+        "HLA-DRB1",
+        "CD74",
+        "CIITA",
+        "HLA-DPA1",
+        "HLA-DPB1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Ma2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5448\u9012\u76f8\u5173\u8868\u8fbe\uff0c\u4e0d\u8bc1\u660e\u5448\u9012\u529f\u80fd\uff1bapCAF\u987b\u5148fibroblast\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC_myeloid_primed",
+      "axis": "state",
+      "parent_any": [
+        "HSPC"
+      ],
+      "core_groups": [
+        [
+          "MPO",
+          "ELANE"
+        ],
+        [
+          "CTSG",
+          "AZU1"
+        ]
+      ],
+      "positive_genes": [
+        "MPO",
+        "ELANE",
+        "CTSG",
+        "AZU1",
+        "PRTN3"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "myeloid-primed\uff0c\u4e0d\u8bc1\u660e\u79bb\u6563GMP\u6216\u6b63\u5e38\u7ec6\u80de\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC_ery_primed",
+      "axis": "state",
+      "parent_any": [
+        "HSPC"
+      ],
+      "core_groups": [
+        [
+          "GATA1",
+          "KLF1"
+        ],
+        [
+          "GYPA",
+          "TFRC"
+        ]
+      ],
+      "positive_genes": [
+        "GATA1",
+        "KLF1",
+        "GYPA",
+        "TFRC",
+        "PPBP"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5206\u5f00\u7ea2\u7cfb/\u5de8\u6838\u65b9\u5411\uff0c\u4e0d\u8bc1\u660e\u53cc\u6f5c\u80fdMEP\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "HSPC_lymphoid_primed",
+      "axis": "state",
+      "parent_any": [
+        "HSPC"
+      ],
+      "core_groups": [
+        [
+          "DNTT"
+        ],
+        [
+          "IL7R",
+          "TCF7"
+        ]
+      ],
+      "positive_genes": [
+        "DNTT",
+        "IL7R",
+        "TCF7",
+        "LTB",
+        "CD7"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u9700\u7956\u7ec6\u80de\u8eab\u4efd\uff0c\u6210\u719f\u6dcb\u5df4\u5bf9\u7167\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Ery_early_like",
+      "axis": "state",
+      "parent_any": [
+        "Erythroid"
+      ],
+      "core_groups": [
+        [
+          "GATA1",
+          "KLF1"
+        ],
+        [
+          "TFRC"
+        ]
+      ],
+      "positive_genes": [
+        "GATA1",
+        "KLF1",
+        "TFRC",
+        "CA1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u53ef\u9009\u5206\u5316\u9636\u6bb5\uff1bTFRC\u975e\u7279\u5f02\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Ery_late_like",
+      "axis": "state",
+      "parent_any": [
+        "Erythroid"
+      ],
+      "core_groups": [
+        [
+          "AHSP",
+          "SLC4A1"
+        ],
+        [
+          "HBB",
+          "HBA1",
+          "HBA2"
+        ]
+      ],
+      "positive_genes": [
+        "AHSP",
+        "SLC4A1",
+        "HBB",
+        "HBA1",
+        "HBA2"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Velten2017"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u73af\u5883HB\u53e6\u6838\uff0c\u4e0d\u5f3a\u5206\u65e9\u665a\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "Stress_response",
+      "axis": "state",
+      "parent_any": [
+        "*"
+      ],
+      "core_groups": [
+        [
+          "HSPA1A",
+          "HSPA1B"
+        ],
+        [
+          "DNAJB1",
+          "HSPH1"
+        ]
+      ],
+      "positive_genes": [
+        "HSPA1A",
+        "HSPA1B",
+        "DNAJB1",
+        "HSPH1",
+        "HSP90AA1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "Chu2023"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5e94\u6fc0\u53e6\u8f74\uff0c\u4e0d\u5728\u8eab\u4efdpanel\u5168\u5c40blacklist\u540e\u4e22\u5931\u8be5\u8bfb\u51fa\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_naive_like",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "TCL1A"
+        ],
+        [
+          "IGHD",
+          "IGHM"
+        ]
+      ],
+      "positive_genes": [
+        "TCL1A",
+        "IGHD",
+        "IGHM",
+        "IL4R"
+      ],
+      "contrast_review_panels": [
+        "B_memory_like",
+        "B_GC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024",
+        "Lodi2025"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "na\u00efve-like\u5019\u9009\uff0cMS4A1\u4e0d\u518d\u662f\u4e9a\u578banchor\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_memory_like",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "CD27",
+          "TNFRSF13B"
+        ],
+        [
+          "AIM2",
+          "BANK1"
+        ]
+      ],
+      "positive_genes": [
+        "CD27",
+        "TNFRSF13B",
+        "AIM2",
+        "BANK1",
+        "IGHG1",
+        "IGHA1"
+      ],
+      "contrast_review_panels": [
+        "B_naive_like",
+        "B_GC",
+        "ASC"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "CD27\u9634\u6027\u8bb0\u5fc6\u4e5f\u53ef\u80fd\u5b58\u5728\uff1b\u7c7b\u522b\u8f6c\u6362\u53e6\u8f74\uff0c\u9700\u6574\u4f53\u53c2\u8003\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_GC",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "BCL6"
+        ],
+        [
+          "AICDA",
+          "RGS13",
+          "MEF2B"
+        ]
+      ],
+      "positive_genes": [
+        "BCL6",
+        "AICDA",
+        "RGS13",
+        "MEF2B",
+        "LMO2"
+      ],
+      "contrast_review_panels": [
+        "B_naive_like",
+        "B_memory_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "GC\u7ec4\u5408\uff1b\u4e0d\u628acycling\u5f53GC\u8eab\u4efd\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_atypical_like",
+      "axis": "branch",
+      "parent_any": [
+        "B"
+      ],
+      "core_groups": [
+        [
+          "TBX21"
+        ],
+        [
+          "ITGAX",
+          "FCRL5"
+        ]
+      ],
+      "positive_genes": [
+        "TBX21",
+        "ITGAX",
+        "FCRL5",
+        "ZEB2"
+      ],
+      "contrast_review_panels": [
+        "B_memory_like"
+      ],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "atypical-like/TBX21-FCRL5-associated\uff1b\u4e0d\u63a8\u65ad\u5e74\u9f84\u6216TAAB\u529f\u80fd\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ASC_SDC1",
+      "axis": "state",
+      "parent_any": [
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "SDC1"
+        ]
+      ],
+      "positive_genes": [
+        "SDC1",
+        "MZB1",
+        "DERL3",
+        "PRDM1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [
+        "SDC1"
+      ],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "SDC1-associated\uff0c\u4e0d\u5355\u72ec\u8bc1\u660e\u6210\u719f\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "ASC_secretory",
+      "axis": "state",
+      "parent_any": [
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "MZB1",
+          "DERL3"
+        ],
+        [
+          "XBP1",
+          "PRDM1"
+        ]
+      ],
+      "positive_genes": [
+        "MZB1",
+        "DERL3",
+        "XBP1",
+        "PRDM1",
+        "JCHAIN",
+        "SEC11C"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u5206\u6ccc\u7a0b\u5e8f\u4e0d\u80fd\u72ec\u7acb\u533a\u5206plasmablast\u4e0eplasma\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    },
+    {
+      "id": "B_ASC_transition",
+      "axis": "boundary",
+      "parent_any": [
+        "B",
+        "ASC"
+      ],
+      "core_groups": [
+        [
+          "MS4A1",
+          "CD19"
+        ],
+        [
+          "MZB1",
+          "PRDM1"
+        ]
+      ],
+      "positive_genes": [
+        "MS4A1",
+        "CD19",
+        "MZB1",
+        "PRDM1"
+      ],
+      "contrast_review_panels": [],
+      "expected_lower_genes": [],
+      "naming_genes": [],
+      "required_context": "",
+      "reference_ids": [
+        "YangB2024"
+      ],
+      "evidence_level": "curated_literature_informed",
+      "interpretation": "\u8fde\u7eed\u5206\u5316\u6216\u6df7\u5408\u590d\u6838\uff0c\u7edd\u4e0d\u7531CD79A/CD37\u5224B\u6c61\u67d3\u3002",
+      "auto_final_label": false,
+      "group_logic": "Each core group is inspected separately; no universal AND/OR numeric classifier is claimed.",
+      "negative_evidence_policy": "Missing genes or dropout are not negative; competitors prompt review, never deletion."
+    }
+  ],
+  "genes": [
+    "CD3D",
+    "CD3E",
+    "CD3G",
+    "TRAC",
+    "TRBC1",
+    "TRBC2",
+    "TRDC",
+    "TRGC1",
+    "TRGC2",
+    "LCK",
+    "CD247",
+    "CD2",
+    "NCR1",
+    "KLRD1",
+    "KLRF1",
+    "NKG7",
+    "GNLY",
+    "PRF1",
+    "FCGR3A",
+    "NCAM1",
+    "XCL1",
+    "XCL2",
+    "IL7R",
+    "IL1R1",
+    "GATA3",
+    "RORC",
+    "RORA",
+    "TBX21",
+    "KIT",
+    "KLRB1",
+    "PTGDR2",
+    "IL1RL1",
+    "CD79A",
+    "CD79B",
+    "MS4A1",
+    "CD19",
+    "CD22",
+    "CD37",
+    "BANK1",
+    "CD74",
+    "CD40",
+    "MZB1",
+    "DERL3",
+    "PRDM1",
+    "XBP1",
+    "SDC1",
+    "TNFRSF17",
+    "JCHAIN",
+    "CD38",
+    "LYZ",
+    "LST1",
+    "SPI1",
+    "TYROBP",
+    "FCER1G",
+    "CSF1R",
+    "CTSD",
+    "FLT3",
+    "HLA-DRA",
+    "CLEC9A",
+    "XCR1",
+    "CD1C",
+    "FCER1A",
+    "LILRA4",
+    "CLEC4C",
+    "TPSAB1",
+    "TPSB2",
+    "CPA3",
+    "MS4A2",
+    "HDC",
+    "HPGDS",
+    "LTC4S",
+    "IL3RA",
+    "CLC",
+    "ENPP3",
+    "CSF3R",
+    "FCGR3B",
+    "S100A8",
+    "S100A9",
+    "FPR1",
+    "CXCR2",
+    "CEACAM8",
+    "EPX",
+    "PRG2",
+    "SIGLEC8",
+    "IL5RA",
+    "KRT8",
+    "KRT18",
+    "KRT19",
+    "KRT7",
+    "EPCAM",
+    "KRT5",
+    "KRT14",
+    "MUC1",
+    "PECAM1",
+    "CDH5",
+    "VWF",
+    "KDR",
+    "FLT1",
+    "CLDN5",
+    "RAMP2",
+    "EMCN",
+    "ESAM",
+    "DCN",
+    "LUM",
+    "DPT",
+    "COL1A1",
+    "COL1A2",
+    "COL3A1",
+    "PDGFRA",
+    "RGS5",
+    "CSPG4",
+    "PDGFRB",
+    "MCAM",
+    "NOTCH3",
+    "COX4I2",
+    "MYH11",
+    "CNN1",
+    "DES",
+    "TAGLN",
+    "ACTA2",
+    "MSLN",
+    "UPK3B",
+    "CALB2",
+    "GYPA",
+    "AHSP",
+    "SLC4A1",
+    "GATA1",
+    "KLF1",
+    "HBB",
+    "HBA1",
+    "HBA2",
+    "TFRC",
+    "ALAS2",
+    "GP9",
+    "ITGA2B",
+    "GP1BA",
+    "PF4",
+    "PPBP",
+    "TUBB1",
+    "RGS18",
+    "NRGN",
+    "SPINK2",
+    "HLF",
+    "MEIS1",
+    "CD34",
+    "PROM1",
+    "GATA2",
+    "HOPX",
+    "SOX10",
+    "PLP1",
+    "MPZ",
+    "SLC1A3",
+    "MBP",
+    "MOG",
+    "RBFOX3",
+    "SNAP25",
+    "S100B",
+    "PMEL",
+    "MLANA",
+    "TYR",
+    "DCT",
+    "MITF",
+    "IFNG",
+    "IL12RB2",
+    "CXCR3",
+    "IL5",
+    "IL13",
+    "IL23R",
+    "CCR6",
+    "IL22",
+    "GZMB",
+    "CCL5",
+    "FGFBP2",
+    "GZMA",
+    "ISG15",
+    "IFIT1",
+    "IFIT3",
+    "MX1",
+    "OAS1",
+    "IFIT2",
+    "MKI67",
+    "TOP2A",
+    "UBE2C",
+    "TYMS",
+    "STMN1",
+    "HLA-DRB1",
+    "CIITA",
+    "HLA-DPA1",
+    "HLA-DPB1",
+    "MPO",
+    "ELANE",
+    "CTSG",
+    "AZU1",
+    "PRTN3",
+    "DNTT",
+    "TCF7",
+    "LTB",
+    "CD7",
+    "CA1",
+    "HSPA1A",
+    "HSPA1B",
+    "DNAJB1",
+    "HSPH1",
+    "HSP90AA1",
+    "RHAG",
+    "GYPB",
+    "EPB42",
+    "GP1BB",
+    "PTPRC",
+    "CD14",
+    "CD163",
+    "C1QA",
+    "MS4A7",
+    "TCL1A",
+    "IGHD",
+    "IGHM",
+    "IL4R",
+    "CD27",
+    "TNFRSF13B",
+    "AIM2",
+    "IGHG1",
+    "IGHA1",
+    "BCL6",
+    "AICDA",
+    "RGS13",
+    "MEF2B",
+    "LMO2",
+    "ITGAX",
+    "FCRL5",
+    "ZEB2",
+    "SEC11C",
+    "IGKC",
+    "IGLC1",
+    "IGLC2",
+    "IGLC3",
+    "IGHG2",
+    "IGHG3",
+    "IGHG4",
+    "IGHA2",
+    "IGHE",
+    "PAX5",
+    "EBF1",
+    "BACH2",
+    "IRF4",
+    "IRF8",
+    "CD24",
+    "CR2",
+    "CD83",
+    "CD69",
+    "CD86",
+    "CD72",
+    "FCRL2",
+    "FCRL3",
+    "FCRL4",
+    "SERPINA9",
+    "CCL3",
+    "CCL4",
+    "TNFAIP3",
+    "NFKBIA",
+    "CST3",
+    "TCF4",
+    "IRF7",
+    "P2RY12",
+    "TNFRSF13C",
+    "HSPA5",
+    "SSR4",
+    "TENT5C"
+  ],
+  "candidate_gene_coverage": 0.8,
+  "global_DE_gene_coverage": 1.0,
+  "globin_HVG_exclusion": false,
+  "normalization": "Full raw RNA library CP10K; input integer counts, not assumed UMI for non-UMI studies.",
+  "evidence_thresholds": [
+    1,
+    2
+  ],
+  "QC_joint_percentile": 0.95,
+  "QC_background_min_n": 100,
+  "coarse_allowed": true,
+  "fine_labels_automatic": false,
+  "limits": [
+    "ILC/T/NK shared states are not doublet evidence.",
+    "HSPC-related priming does not define normal HSC/MPP or discrete GMP/MEP.",
+    "HB alone and PF4/PPBP alone do not establish whole-cell identity.",
+    "Numerical thresholds are project diagnostics, not author-validated universal gates."
+  ],
+  "prior_QC_mask": "runs/20261106_v7_other_unresolved_review_v1/stage_c_QC_views/global_QC_view_v3_masks_PRIVATE.npz",
+  "target_labels": [
+    "Bcell_unresolved",
+    "Bcell_unresolved_CST3",
+    "Bcell_unresolved_DNAJB1",
+    "B_Plasma_boundary"
+  ],
+  "control_per_source_per_role": 100,
+  "control_seed": 20261106,
+  "control_semantics": "Source-stratified positive-component B-naive/ASC context, not truth labels or unbiased abundance; only targets receive working annotation updates."
+}

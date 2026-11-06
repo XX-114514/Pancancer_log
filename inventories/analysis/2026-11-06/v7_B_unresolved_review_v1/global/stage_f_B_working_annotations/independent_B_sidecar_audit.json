@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T05:42:34.336780+00:00",
+  "n_target_records": 158257,
+  "n_model_targets": 157888,
+  "n_excluded_targets": 369,
+  "n_broad_working_targets": 101299,
+  "n_parent_review_targets": 56589,
+  "n_controls_overlaid": 0,
+  "all_target_axes_and_old_labels_preserved": true,
+  "all_public_identity_counts_recomputed": true,
+  "fine_identity_final_accepted": false
+}

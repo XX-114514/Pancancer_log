@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "B_targets": 157888,
+  "B_broad_working": 101299,
+  "B_identity_review": 56589,
+  "diagnostic_clusters": 16,
+  "marker_genes": 327,
+  "target_marker_records": 5232,
+  "plots_visually_reviewed": 6,
+  "SVG_all_target_labels_counts_and_genes_verified": true,
+  "code_AST_and_no_private_literals": true,
+  "no_cell_rows_or_matrices_in_public_delivery": true
+}
