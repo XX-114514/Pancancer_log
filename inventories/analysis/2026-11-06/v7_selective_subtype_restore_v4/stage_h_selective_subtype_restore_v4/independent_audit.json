@@ -1,0 +1,18 @@
+{
+  "status": "PASS_selective_subtype_preservation_and_complete_export",
+  "UTC": "2026-11-06T12:04:12.796571+00:00",
+  "n_all_axis": 4676787,
+  "n_selected": 4061939,
+  "n_labels": 50,
+  "n_retained_previous_names": 2843051,
+  "n_fallback_major_marker": 1218888,
+  "n_QC_keep_outside": 606373,
+  "all_prior_names_outside_explicit_refit_exceptions_preserved_exactly": true,
+  "fallback_restricted_to_unfinished_labels_or_explicit_prior_refit_exceptions": true,
+  "no_broad_gate_applied_to_unchanged_named_subtypes": true,
+  "all_QC_original_fields_CNV_state_and_axis_preserved": true,
+  "private_TSV_all_rows_and_labels_verified": true,
+  "all_aggregate_counts_and_artifact_SHA_verified": true,
+  "new_subtype_validation_claims": 0,
+  "all_atlas_publication_acceptance": false
+}

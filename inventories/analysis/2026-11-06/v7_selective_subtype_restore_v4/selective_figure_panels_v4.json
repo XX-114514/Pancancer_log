@@ -1,0 +1,459 @@
+{
+  "figures": [
+    {
+      "name": "selective_v4_lymphoid_ASC_DC",
+      "title": "V7 retained subtypes + marker fallback | lymphoid / ASC / DC contrasts",
+      "parents": [
+        "Tcell",
+        "NK",
+        "Bcell",
+        "Plasma",
+        "Dendritic"
+      ],
+      "panels": [
+        {
+          "target": "T apparatus",
+          "level": "parent",
+          "genes": [
+            "CD3D",
+            "CD3E",
+            "TRAC",
+            "TRBC2"
+          ]
+        },
+        {
+          "target": "NK receptor /\neffector",
+          "level": "parent",
+          "genes": [
+            "NCR1",
+            "KLRD1",
+            "NKG7",
+            "GNLY"
+          ]
+        },
+        {
+          "target": "B identity",
+          "level": "parent",
+          "genes": [
+            "MS4A1",
+            "CD79A",
+            "CD79B"
+          ]
+        },
+        {
+          "target": "ASC identity /\nsecretory context",
+          "level": "parent",
+          "genes": [
+            "MZB1",
+            "JCHAIN",
+            "PRDM1",
+            "TNFRSF17"
+          ]
+        },
+        {
+          "target": "pDC-specific\ncontrast",
+          "level": "parent",
+          "genes": [
+            "LILRA4",
+            "CLEC4C",
+            "TCF4",
+            "IL3RA"
+          ]
+        },
+        {
+          "target": "cDC1 / cDC2\ncontrasts",
+          "level": "parent",
+          "genes": [
+            "CLEC9A",
+            "XCR1",
+            "BATF3",
+            "CD1C",
+            "FCER1A"
+          ]
+        },
+        {
+          "target": "CD4 naive\n(previous label)",
+          "level": "candidate_subtype",
+          "genes": [
+            "IL7R",
+            "CCR7",
+            "TCF7",
+            "LEF1"
+          ]
+        },
+        {
+          "target": "CD8 cytotoxic\n(previous label)",
+          "level": "candidate_subtype",
+          "genes": [
+            "CD8A",
+            "CD8B",
+            "CCL5"
+          ]
+        },
+        {
+          "target": "Naive B\n(previous labels)",
+          "level": "candidate_subtype",
+          "genes": [
+            "IGHD",
+            "IGHM",
+            "TCL1A",
+            "FCER2"
+          ]
+        },
+        {
+          "target": "NK subtypes\n(previous labels)",
+          "level": "candidate_subtype",
+          "genes": [
+            "FCGR3A",
+            "NCAM1",
+            "XCL1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selective_v4_myeloid_granulocyte_Mast",
+      "title": "V7 retained subtypes + marker fallback | myeloid and granular lineages",
+      "parents": [
+        "Myeloid",
+        "Dendritic",
+        "Granulocyte",
+        "Mast",
+        "Basophil",
+        "Eosinophil",
+        "Macrophage",
+        "Monocyte"
+      ],
+      "panels": [
+        {
+          "target": "Mature myeloid\ncontext",
+          "level": "parent",
+          "genes": [
+            "CSF1R",
+            "LST1",
+            "MS4A7",
+            "CD14",
+            "C1QA",
+            "CD163"
+          ]
+        },
+        {
+          "target": "DC-specific\ncontrasts",
+          "level": "parent",
+          "genes": [
+            "CD1C",
+            "FCER1A",
+            "CLEC10A",
+            "CLEC9A",
+            "XCR1",
+            "LILRA4",
+            "CLEC4C"
+          ]
+        },
+        {
+          "target": "Granulocyte\nstructural + effector",
+          "level": "parent",
+          "genes": [
+            "FCGR3B",
+            "CSF3R",
+            "CEACAM8",
+            "FPR1",
+            "CXCR2",
+            "S100A9"
+          ]
+        },
+        {
+          "target": "Mast identity",
+          "level": "parent",
+          "genes": [
+            "TPSAB1",
+            "TPSB2",
+            "CPA3",
+            "KIT"
+          ]
+        },
+        {
+          "target": "Basophil\ncontrast",
+          "level": "parent",
+          "genes": [
+            "CLC",
+            "IL3RA",
+            "ENPP3",
+            "MS4A2"
+          ]
+        },
+        {
+          "target": "Eosinophil\ncontrast",
+          "level": "parent",
+          "genes": [
+            "EPX",
+            "PRG2",
+            "SIGLEC8",
+            "IL5RA"
+          ]
+        },
+        {
+          "target": "Macrophage\nIL1B / SPP1",
+          "level": "candidate_subtype",
+          "genes": [
+            "IL1B",
+            "SPP1",
+            "TREM2"
+          ]
+        },
+        {
+          "target": "Monocyte\nFCN1 /\nFCGR3A",
+          "level": "candidate_subtype",
+          "genes": [
+            "FCN1",
+            "FCGR3A"
+          ]
+        },
+        {
+          "target": "Activated Mast\nIL1RL1/LTC4S",
+          "level": "candidate_subtype",
+          "genes": [
+            "IL1RL1",
+            "LTC4S"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selective_v4_stromal_epithelial_neural",
+      "title": "V7 retained subtypes + marker fallback | vascular / stromal / tissue lineages",
+      "parents": [
+        "Endothelial",
+        "Mural",
+        "Fibroblast",
+        "Epithelial",
+        "Melanocytic",
+        "Neural",
+        "Glial"
+      ],
+      "panels": [
+        {
+          "target": "Endothelial",
+          "level": "parent",
+          "genes": [
+            "CLDN5",
+            "PECAM1",
+            "VWF",
+            "CDH5",
+            "KDR"
+          ]
+        },
+        {
+          "target": "Mural /\nvascular wall",
+          "level": "parent",
+          "genes": [
+            "RGS5",
+            "PDGFRB",
+            "MCAM",
+            "MYH11"
+          ]
+        },
+        {
+          "target": "Fibroblast",
+          "level": "parent",
+          "genes": [
+            "COL1A1",
+            "COL1A2",
+            "DCN",
+            "LUM",
+            "DPT"
+          ]
+        },
+        {
+          "target": "Epithelial",
+          "level": "parent",
+          "genes": [
+            "EPCAM",
+            "KRT8",
+            "KRT18",
+            "KRT19",
+            "KRT5",
+            "KRT14"
+          ]
+        },
+        {
+          "target": "Melanocytic",
+          "level": "parent",
+          "genes": [
+            "PMEL",
+            "MLANA",
+            "MITF",
+            "SOX10"
+          ]
+        },
+        {
+          "target": "Neural",
+          "level": "parent",
+          "genes": [
+            "SNAP25",
+            "RBFOX3",
+            "MAP2",
+            "TUBB3"
+          ]
+        },
+        {
+          "target": "Glial / OLIG\ncontrast",
+          "level": "parent",
+          "genes": [
+            "GFAP",
+            "AQP4",
+            "PLP1",
+            "OLIG1",
+            "OLIG2"
+          ]
+        },
+        {
+          "target": "Venous\nACKR1",
+          "level": "candidate_subtype",
+          "genes": [
+            "ACKR1"
+          ]
+        },
+        {
+          "target": "CAF labels\n(previous)",
+          "level": "candidate_subtype",
+          "genes": [
+            "ACTA2",
+            "TAGLN",
+            "CXCL12",
+            "IL6"
+          ]
+        },
+        {
+          "target": "Neural prog.\nSOX2",
+          "level": "candidate_subtype",
+          "genes": [
+            "SOX2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selective_v4_hematopoietic_rare",
+      "title": "V7 retained subtypes + marker fallback | primitive / erythroid / platelet contexts",
+      "parents": [
+        "HSPC",
+        "Erythroid",
+        "Platelet_Megakaryocytic"
+      ],
+      "panels": [
+        {
+          "target": "Primitive hematopoietic\nRNA (normality separate)",
+          "level": "parent",
+          "genes": [
+            "SPINK2",
+            "CD34",
+            "GATA2",
+            "DNTT",
+            "HLF",
+            "PTPRC"
+          ]
+        },
+        {
+          "target": "Erythroid\nnon-globin identity",
+          "level": "parent",
+          "genes": [
+            "GYPA",
+            "SLC4A1",
+            "AHSP",
+            "ALAS2",
+            "KLF1"
+          ]
+        },
+        {
+          "target": "Platelet / megakaryocytic\nsecreted + structural",
+          "level": "parent",
+          "genes": [
+            "PF4",
+            "PPBP",
+            "ITGA2B",
+            "GP9",
+            "TUBB1"
+          ]
+        },
+        {
+          "target": "Lymphoid /\nmyeloid contrast",
+          "level": "competing_parent",
+          "genes": [
+            "CD3D",
+            "TRAC",
+            "MS4A1",
+            "CD79A",
+            "LST1",
+            "CSF1R"
+          ]
+        },
+        {
+          "target": "Cycling Erythroid\n(previous label)",
+          "level": "state",
+          "genes": [
+            "TOP2A",
+            "MKI67"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selective_v4_state_programmes_separate",
+      "title": "V7 retained annotations | separate RNA programmes, not identity names",
+      "parents": [
+        "Tcell",
+        "NK",
+        "Bcell",
+        "Plasma",
+        "Dendritic",
+        "Myeloid",
+        "Mast",
+        "Macrophage",
+        "Monocyte"
+      ],
+      "panels": [
+        {
+          "target": "Heat shock / stress\nRNA programme",
+          "level": "state",
+          "genes": [
+            "DNAJB1",
+            "HSPA1A",
+            "HSPA1B",
+            "FOS",
+            "JUN"
+          ]
+        },
+        {
+          "target": "IFN-response\nRNA programme",
+          "level": "state",
+          "genes": [
+            "ISG15",
+            "IFIT1",
+            "IFIT3",
+            "MX1"
+          ]
+        },
+        {
+          "target": "Cycling\nRNA programme",
+          "level": "state",
+          "genes": [
+            "MKI67",
+            "TOP2A",
+            "UBE2C",
+            "CENPF"
+          ]
+        },
+        {
+          "target": "Shared HLA-II\nantigen presentation",
+          "level": "state",
+          "genes": [
+            "HLA-DRA",
+            "HLA-DPA1",
+            "CD74"
+          ]
+        }
+      ]
+    }
+  ]
+}

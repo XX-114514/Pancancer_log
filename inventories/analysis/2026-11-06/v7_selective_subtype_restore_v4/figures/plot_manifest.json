@@ -1,0 +1,54 @@
+{
+  "lineage": "V7_selective_v4",
+  "Matplotlib": "3.10.7",
+  "n_frozen_label_values": 50,
+  "n_cells": 4061939,
+  "n_marker_records": 24500,
+  "row_labels_explicit": true,
+  "marker_target_labels_explicit": true,
+  "identity_resolution_explicit": "retained_previous_subtypes_plus_selective_major_marker_fallback",
+  "input_marker_sha256": "5bf97689d41fcf0e972f974a1557d8a30dba9666698513def51476881e8a7a0c",
+  "panel_spec_sha256": "89e5c5e31087eb132e39c96f808e7da87b36ea1802ef14a4789b3ebe1b574a36",
+  "outputs": [
+    {
+      "name": "selective_v4_state_programmes_separate.svg",
+      "sha256": "923dbbfe7733e144be082b0118c50e8e85f8fc8263e1bba447b576865949705c"
+    },
+    {
+      "name": "selective_v4_stromal_epithelial_neural.png",
+      "sha256": "c67e426be97d8f77b6f5d6d7d84aa7a29ab071ca5009bfceb46fd4da3ffccdd7"
+    },
+    {
+      "name": "selective_v4_stromal_epithelial_neural.svg",
+      "sha256": "610be6688404bcd7bbf907fb78669a0c94161c7c07ac1d152268ccf329bba5ec"
+    },
+    {
+      "name": "selective_v4_state_programmes_separate.png",
+      "sha256": "b93c3d47366fcaa8b5b93a845d31a8055f702687134660708ef441ca8489e1d0"
+    },
+    {
+      "name": "selective_v4_lymphoid_ASC_DC.png",
+      "sha256": "f0fad3215a598fbe7bbfae0ce13a98c48758af9afa19b03cf10f480eef1ade41"
+    },
+    {
+      "name": "selective_v4_myeloid_granulocyte_Mast.svg",
+      "sha256": "935efbb6da8a6b1f5897b5a92cd07382dfa1dadccc3365dc5bef19508238f58e"
+    },
+    {
+      "name": "selective_v4_hematopoietic_rare.svg",
+      "sha256": "648ef221c1864557b2951e1ef30c4a4f6f68082d49a61093fdd6826e00ee2645"
+    },
+    {
+      "name": "selective_v4_hematopoietic_rare.png",
+      "sha256": "1fc6a2ecc9f1bd1519db45b31448593b853005114165d6a4a32ee1d211e4d800"
+    },
+    {
+      "name": "selective_v4_myeloid_granulocyte_Mast.png",
+      "sha256": "fd00ac03958c3cb7738a302602511426fb67a15d1861a665b353f26de3a43562"
+    },
+    {
+      "name": "selective_v4_lymphoid_ASC_DC.svg",
+      "sha256": "0001c4b2063143936febf3fa637c4f7423caf38d641307b19fcf9f9f001bc162"
+    }
+  ]
+}

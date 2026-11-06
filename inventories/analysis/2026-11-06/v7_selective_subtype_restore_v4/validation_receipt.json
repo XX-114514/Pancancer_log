@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "repository_errors": 0,
+  "repository_warnings": 1,
+  "warning_scope": "Preexisting internal-path candidates; scoped new content passed privacy checks.",
+  "validation_log_sha256": "78dfea027b44b4754050b4822642ea7d53f60090617e2a7cf83e3adfa7544d95",
+  "all_five_final_figures_visually_inspected": true,
+  "all_original_name_and_fallback_masks_independently_verified": true,
+  "all_private_TSV_cells_and_labels_stream_verified": true,
+  "new_fallback_marker_support_independently_verified": true,
+  "all_atlas_publication_acceptance": false
+}

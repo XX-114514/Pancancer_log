@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "UTC": "2026-11-06T12:05:58.798496+00:00",
+  "n_frozen_cells": 4061939,
+  "n_labels": 50,
+  "n_all_marker_records": 24500,
+  "n_naming_marker_records": 40,
+  "n_distinct_naming_genes": 40,
+  "all_naming_gene_counts_denominators_CP10K_and_source_concentration_independently_verified": true,
+  "max_absolute_naming_marker_CP10K_error": 4.547473508864641e-13,
+  "legacy_subtypes_retained_not_newly_validated": true,
+  "fallback_marker_support_only_not_legacy_subtype_requalification": true
+}

@@ -1,3 +1,5 @@
+[V7选择性保留亚型规则](V7-selective-subtype-preservation-20261106.md)：已有亚型保持原名，只回退未完成标签；真实父类反证另列例外，继承与新验收分开。
+
 [V7正式大类＋marker冻结](V7-major-marker-freeze-20261106.md)：全轴多组件、实际纳入后的marker命名与同身份合并、完整独立审计、状态/CNV分离和选择保留率。
 
 [V7 B未定群与全注释视图](V7-B-unresolved-current-annotation-20261106.md)：来源感知327 marker、IgV/globin模型排除、B/ASC/髓系父类复查与冻结信息保留；候选/状态/最终细分分开。

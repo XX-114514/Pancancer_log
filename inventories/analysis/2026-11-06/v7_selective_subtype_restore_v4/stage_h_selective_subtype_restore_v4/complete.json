@@ -1,0 +1,52 @@
+{
+  "status": "selective_subtype_restore_written_pending_independent_audit",
+  "UTC": "2026-11-06T12:02:42.167481+00:00",
+  "annotation_version": "V7_selective_subtype_marker_20261106_v4",
+  "n_original_axis": 4676787,
+  "n_QC_keep": 4668312,
+  "n_previous_named_QC_keep": 2845073,
+  "n_previous_named_annotation_retained": 2843051,
+  "n_prior_refit_parent_exceptions": 2022,
+  "n_retained_outside_previous_broad_v3_mask": 143224,
+  "n_major_marker_fallback": 1218888,
+  "n_selected": 4061939,
+  "n_final_labels": 50,
+  "n_QC_keep_outside_corrected_view": 606373,
+  "n_previously_named_labels_retained": 30,
+  "n_new_subtype_validation_claims": 0,
+  "QC_changed": false,
+  "all_atlas_publication_acceptance": false,
+  "v3_role": "Historical broad-identity diagnostic layer only; superseded as complete-annotation display.",
+  "files": [
+    {
+      "name": "all_axis_selective_annotation_with_history_PRIVATE.pkl.gz",
+      "bytes": 76667396,
+      "sha256": "ffd9ccc4ca85efda29110813c5baa7f5c3156ab4f85685c9b2df3656b0dd9101"
+    },
+    {
+      "name": "annotation_frozen_V7_selective_subtype_20261106_v4_PRIVATE.pkl.gz",
+      "bytes": 40648745,
+      "sha256": "2a4bc82cb495d0fc2ffb40ecda6b1cbb53802eb2bf87efd2392746371653244c"
+    },
+    {
+      "name": "annotation_frozen_V7_selective_subtype_20261106_v4_PRIVATE.tsv.gz",
+      "bytes": 81954564,
+      "sha256": "8a8e5fed5805d16a0e048b8f89226123c8813b76500a0ff6de3af1f85a55d761"
+    },
+    {
+      "name": "corrected_final_label_counts.tsv",
+      "bytes": 6987,
+      "sha256": "f0b90f4cbb1af1a260a738e64a2a2a87ffa6f0c499803ca2f5127984be74263e"
+    },
+    {
+      "name": "all_previous_labels_correction_crosswalk.tsv",
+      "bytes": 50840,
+      "sha256": "6fb718e4285efaf9369e28dc9cfecc7f9e4a8ccb8b5ad184e93d14e7377ad0d5"
+    },
+    {
+      "name": "previous_named_annotation_preservation_audit.tsv",
+      "bytes": 1853,
+      "sha256": "f067f0259c324fe729444e5ab6ae6e427722d186e993551cf9cbbfb7580542c9"
+    }
+  ]
+}

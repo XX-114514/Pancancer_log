@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "n_final_annotation_labels": 50,
+  "n_cells": 4061939,
+  "marker_and_corresponding_lineage_or_retained_subtype_targets_labeled": true,
+  "inherited_subtype_versus_fallback_scope_explicit": true,
+  "all_SVG_and_plot_SHA_verified": true,
+  "header_spacing_corrected": true,
+  "figure_semantics": "Retained original annotations, not new subtype or function validation.",
+  "all_five_final_PNGs_visually_inspected": true
+}

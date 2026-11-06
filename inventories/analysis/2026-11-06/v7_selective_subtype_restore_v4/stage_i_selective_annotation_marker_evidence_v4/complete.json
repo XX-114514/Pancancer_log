@@ -1,0 +1,10 @@
+{
+  "status": "selective_annotation_expression_aggregated_no_new_subtype_acceptance",
+  "UTC": "2026-11-06T12:05:28.999842+00:00",
+  "n_frozen_cells": 4061939,
+  "n_labels": 50,
+  "n_genes": 490,
+  "n_records": 24500,
+  "source_denominators_preserved": true,
+  "all_fallback_naming_markers_have_positive_measured_support": true
+}
