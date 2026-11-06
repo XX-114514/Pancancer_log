@@ -30,7 +30,10 @@ slug = re.sub(r'[^A-Za-z0-9]+', '_', cancer).strip('_')
 out = f'{outroot}/{slug}'
 os.makedirs(f'{out}/figures', exist_ok=True)
 log = lambda **k: print(json.dumps({'t': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds'), **k}, default=str), flush=True)
-BLOCK, MIN_SRC, N_HVG, RES, MAIN = 50_000, 200, 2000, (0.3, 0.6, 1.0, 1.5), 1.0
+BLOCK, MIN_SRC, MAIN = 50_000, 200, 1.0
+# round 2 of the lineage analysis sets N_HVG=3000, PC_MIN=30, RESOLUTIONS=0.3,0.5,0.7,1,1.5,2,3 (finer structure on clean cells)
+N_HVG = int(os.environ.get('N_HVG', 2000)); PC_MIN = int(os.environ.get('PC_MIN', 15))
+RES = tuple(float(x) for x in os.environ.get('RESOLUTIONS', '0.3,0.6,1,1.5').split(','))
 excluded = lambda g: g.upper() == 'MALAT1' or bool(re.search(r'^(MT-|RP[SL][0-9]|HB[ABDEGQMZ][0-9]?$|HB[ABDEGQMZ][0-9]|IG[HKL]V|TR[ABGD]V)', g, re.I))
 CONTEXT = {  # registry required_context strings that apply to each cancer type's primary organ
     'NSCLC': ['lung', 'lung (NSCLC)', 'squamous_or_airway', 'airway_or_ciliated_organ'], 'Breast cancer': ['breast'],
@@ -145,7 +148,7 @@ sc.pp.pca(Bp, n_comps=50, svd_solver='arpack', random_state=seed)
 vr = Bp.uns['pca']['variance_ratio']
 xs = np.arange(len(vr)); ys = (vr - vr.min()) / (vr.max() - vr.min())
 line = 1 - xs / xs[-1]
-n_pc = int(np.clip(np.argmax(line - ys) + 1, 15, 40))
+n_pc = int(np.clip(np.argmax(line - ys) + 1, PC_MIN, 40))
 A.obsm['X_pca'] = Bp.obsm['X_pca'][:, :n_pc]; del Y, Bp
 if A.obs['source'].nunique() > 1:
     h = hm.run_harmony(np.asarray(A.obsm['X_pca'], np.float64), A.obs[['source']].astype(str), vars_use=['source'], theta=2.0, lamb=1.0, max_iter_harmony=20, random_state=seed)
