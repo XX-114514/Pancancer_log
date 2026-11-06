@@ -1,0 +1,15 @@
+{
+  "status": "PASS_controlled_K14_refit",
+  "UTC_start": "2026-11-06T22:16:27Z",
+  "UTC_end": "2026-11-06T22:17:10Z",
+  "job": "LOSO_04",
+  "kind": "LOSO",
+  "held_source": "GSE182109",
+  "seed": 20261120,
+  "nrun": 30,
+  "n_samples": 120,
+  "n_nodes": 44,
+  "removed_constant_nodes": "Erythroid_Cycling_Erythroid_TOP2A",
+  "CCC": 0.9056,
+  "rank_reoptimized": false
+}

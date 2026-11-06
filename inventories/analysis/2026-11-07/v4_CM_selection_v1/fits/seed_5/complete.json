@@ -1,0 +1,15 @@
+{
+  "status": "PASS_controlled_K14_refit",
+  "UTC_start": "2026-11-06T22:15:11Z",
+  "UTC_end": "2026-11-06T22:16:25Z",
+  "job": "seed_5",
+  "kind": "seed",
+  "held_source": "",
+  "seed": 2026110705,
+  "nrun": 30,
+  "n_samples": 164,
+  "n_nodes": 45,
+  "removed_constant_nodes": [],
+  "CCC": 0.9423,
+  "rank_reoptimized": false
+}

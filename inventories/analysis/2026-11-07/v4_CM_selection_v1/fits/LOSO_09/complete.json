@@ -1,0 +1,15 @@
+{
+  "status": "PASS_controlled_K14_refit",
+  "UTC_start": "2026-11-06T22:17:28Z",
+  "UTC_end": "2026-11-06T22:18:31Z",
+  "job": "LOSO_09",
+  "kind": "LOSO",
+  "held_source": "GSE253013",
+  "seed": 20261120,
+  "nrun": 30,
+  "n_samples": 153,
+  "n_nodes": 45,
+  "removed_constant_nodes": [],
+  "CCC": 0.9476,
+  "rank_reoptimized": false
+}

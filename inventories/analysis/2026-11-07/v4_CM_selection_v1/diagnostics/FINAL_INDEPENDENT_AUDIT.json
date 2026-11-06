@@ -1,0 +1,74 @@
+{
+  "status": "PASS_independent_all14_source_denominator_activity_and_252_refit_match_checks",
+  "UTC": "2026-11-06T22:20:01.864306+00:00",
+  "n_CM": 14,
+  "n_global_edges": 18,
+  "n_refit_jobs": 18,
+  "n_starts": 540,
+  "n_refit_matches": 252,
+  "scale_invariant_activity_verified": true,
+  "all_original_CM_definitions_unchanged": true,
+  "no_postselection_or_biological_validation_claim": true,
+  "files": [
+    {
+      "name": "all_global_edge_source_diagnostics.tsv",
+      "sha256": "5756cfe597641aacb35d291dc14cb3550047e2a0b227b4b9043c09a5e46b94c6",
+      "bytes": 3821
+    },
+    {
+      "name": "all_global_edge_within_source.tsv",
+      "sha256": "794febf652d5ee0c8504e45b6d4a84ff6957b9cf1c83c150d182b208989b25f2",
+      "bytes": 18817
+    },
+    {
+      "name": "node_coverage_source_diagnostics.tsv",
+      "sha256": "8cd3610f355e6b366fc02d4538cbe28089888c97e7a7c6935091936246db0add",
+      "bytes": 4838
+    },
+    {
+      "name": "all_CM_quality_diagnostics.tsv",
+      "sha256": "16ee5fe97915937494feb9766223a2c009f65c205950b7bad8d83822c9ef71b7",
+      "bytes": 3370
+    },
+    {
+      "name": "all_CM_source_activity.tsv",
+      "sha256": "b2de90617fffb4fcebf18b0f710eb90efb7335b6e68201a6701e5261bc98bced",
+      "bytes": 14933
+    },
+    {
+      "name": "diagnostic_complete.json",
+      "sha256": "418c124d6d8ebadeb8be5b7cc7d52b9dd2fc50116cbbdfb5936de87d87259dac",
+      "bytes": 781
+    },
+    {
+      "name": "all_CM_refit_matches.tsv",
+      "sha256": "b98fbd0393c6c76cfd84dc3a706a53191d7aa87117c2f7b63c2f2247a056608a",
+      "bytes": 36005
+    },
+    {
+      "name": "all_CM_refit_stability_summary.tsv",
+      "sha256": "65fe8b54ac27b8fda4e2d8322c35873ff2c0850388b6be6f983558fcf35fe4cb",
+      "bytes": 6304
+    },
+    {
+      "name": "refit_complete.json",
+      "sha256": "4c6ebedd90a8b61104e45fd0e4de52bd1eba65cbf7b752cb785b5e8da0330add",
+      "bytes": 5581
+    },
+    {
+      "name": "all_global_edge_LOSO_detail.tsv",
+      "sha256": "ad04baad88e3e23a55825d077dc4533440530918ed88345dcc2602492b19f217",
+      "bytes": 19881
+    },
+    {
+      "name": "all_18_refit_CCC_precision_readback.tsv",
+      "sha256": "f72a89af07e8c85f3a1c4894144ed4c494f587d57ba363ff9bd17b719d9fea9d",
+      "bytes": 1402
+    },
+    {
+      "name": "independent_R_audit.json",
+      "sha256": "7e54636c3b0621175ad6049bb7c4f28b5e482f52c650cc7870db3775a6b9fbd2",
+      "bytes": 303
+    }
+  ]
+}

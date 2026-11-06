@@ -1,0 +1,16 @@
+cm	subCluster	majorCluster
+F01	Dendritic_CD1C_FCER1A	Myeloid
+F01	Dendritic_LILRA4_TCF4	Myeloid
+F01	Dendritic_pDC_LILRA4	Myeloid
+F02	Bcell_Naive_IGHD	B_Plasma
+F02	Endothelial_Blood_PECAM1	Endothelial
+F06	Glial_GFAP_OLIG1	Glial
+F06	Macrophage_SPP1_TREM2_SPP1	Myeloid
+F06	Neural_Neural_progenitor_SOX2	Neural
+F10	Granulocyte_FCGR3B_CSF3R	Myeloid
+F10	Granulocyte_Neutrophil_mature_FCGR3B	Myeloid
+F12	Mast_Activated_IL1RL1_IL1RL1	Myeloid
+F12	Mast_Activated_IL1RL1_LTC4S	Myeloid
+F14	Fibroblast_Cycling_Fibroblast_TOP2A	Stromal
+F14	Macrophage_SPP1_TREM2_SPP1	Myeloid
+F14	Macrophage_Cycling_Macrophage_MKI67	Myeloid

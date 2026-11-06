@@ -1,0 +1,140 @@
+{
+  "status": "PASS_all_18_refits_540_starts_all_14_factors_compared",
+  "UTC": "2026-11-06T22:18:49.760091+00:00",
+  "n_jobs": 18,
+  "n_matches": 252,
+  "rank": 14,
+  "nrun_per_job": 30,
+  "all_assignments_independently_optimal_DP": true,
+  "profiles": "W and A=W*S column-L2 cosine; missing constant nodes zero-filled",
+  "primary_match": "W-optimal one-to-one assignment; independently A-optimal assignment also reported",
+  "input_binding": [
+    {
+      "job": "seed_1",
+      "complete_sha256": "111524ce7a85faac8bba4a0ded5e527f7a40fc9c0024745ef83766743fa1cfae",
+      "model_sha256": "24a1bc1b0c463e1e26c3a86ef23fc84334923767d467c30758b3c7881711b94e",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "seed_2",
+      "complete_sha256": "f501634a292e152bd3f1d7f20db894a638109311bd8be4072f23d3e4c671f94e",
+      "model_sha256": "4e5890d4744cdaf5f20d99427c363e4ddbd1bc3748210e22188ff7c4d82ad971",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "seed_3",
+      "complete_sha256": "8764262769ac8c1fa635698ef014dbf661b5de7ddbdbd5377b9cfbde4451290a",
+      "model_sha256": "9b57c831ca9e978aa14a83df2fcc07daa03cb9576c479dff9cc1db62cf064848",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "seed_4",
+      "complete_sha256": "75bcdbea9a4690189e5ab0f8ebf9d40ffca494c3b0bcbea91e47b35a640659be",
+      "model_sha256": "8c430f238d269eddef542f7931bcb4947940c5e5f1bc75e20f2bbbbbede21ada",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "seed_5",
+      "complete_sha256": "364ee59f69da1d26f3e8235cbf100c5f7719e073ab72831405bee376134a9e07",
+      "model_sha256": "f363b4a9fe8a2c381d20cce39e91d8d8758daa611a479eced91aadb4be58f4df",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_01",
+      "complete_sha256": "f02ecc3de5c09a6d5d650c46b3e00b9cdc3537e0cc7325b3dce7d51efa92d544",
+      "model_sha256": "35c8cf3c2043518bb042d04d9d1722e8bc592208f0a9746be9e75ba013cade84",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_02",
+      "complete_sha256": "63575cddf84d194963c026bf3d23b437de4f61912768045e4ca651ce1a3a7145",
+      "model_sha256": "4da12e24ac3d01066281db3d076631d60002c72b2c27ec7772a0868569de3d18",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_03",
+      "complete_sha256": "4ee1d3ebb184fd70b3c97d68b3ed6bf402f8941a43f221fa25cbf98efa68f154",
+      "model_sha256": "f4d284e8026874b176b34459bbeca20d2f8b88dc6c13510ff96197998b108e9f",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_04",
+      "complete_sha256": "8852a8b55ed904143391e99565cec8845bc988fff82d02519a1ba4ae220861b3",
+      "model_sha256": "f48349f938c453887ebace396d85e9398a896250519902fb93b329c1c358e8d3",
+      "n_nodes": 44,
+      "removed_constant_nodes": "Erythroid_Cycling_Erythroid_TOP2A"
+    },
+    {
+      "job": "LOSO_05",
+      "complete_sha256": "6cb373a52d78e7b437299704bc7da82afbaae69d7acc4d74c844d20ee81b99a7",
+      "model_sha256": "4a6bfa40e2bf0d57da20e396bc116c91ee5af926582d9ac2459c5e7634a8c7fe",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_06",
+      "complete_sha256": "2b0f5ac3e751ee87ca0590dbdcf09dcbb67dab74fe185e2cbf1ac80da551300f",
+      "model_sha256": "b83a9018e9daf8e5885359f71c78beb82db78fb33418f7b2a4a1269c88319370",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_07",
+      "complete_sha256": "a707e5bc4add788ff65909c32f8a8989464f20757567eeea9ca70e451f41e19d",
+      "model_sha256": "575e93a2d02a091e6e8c09b8b4add5499fad65e28c4be886c45e0084fca0b16e",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_08",
+      "complete_sha256": "f30aa480d212623562e146d5ed0f7b12141c5c31bf93be4c48b68b71b823ea74",
+      "model_sha256": "84dfb5d45076f7295ef2dcd6543f9a1b177f645e2c9a736ca5167d715886fc9e",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_09",
+      "complete_sha256": "be83de564da584c14df29e871ee92dfb1087b6f2e49b091335b5299246b2f89b",
+      "model_sha256": "a608e4da6da51a543b1492154b43c3d0d88bb7b40fe33ddc066ba947f97e365b",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_10",
+      "complete_sha256": "d48eea0737f93307aef10124df0bb75e8a8cb3fbd3a26230cfd014406b15f816",
+      "model_sha256": "00b71f3f275faa5c56334b023301eb4230cbb093704063314978786825af38c0",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_11",
+      "complete_sha256": "f3118385e9dfef13cfe73b83558fdade1fa8fffd90f3c5fb59e443d9809f1e16",
+      "model_sha256": "31ad3b4583778607e6487b927cff30cf62809176b20c7f69cace42c7748e5de5",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_12",
+      "complete_sha256": "6de278dabcbe3ab7eba57ee94039542d66b3458180938711c3935407cb1bd8fa",
+      "model_sha256": "28d386ca7d8f97dfad41e9cd62984b855d769b65cc60c2926a2fdc39fb8d1921",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    },
+    {
+      "job": "LOSO_13",
+      "complete_sha256": "2859a58507a8c5b35aacb6d7c8d4f24c822eb91a32d105069b0046c0e35d185c",
+      "model_sha256": "9a7ad3286600dfa6d089bcd3465b976d3ff06b46bae5cec8a716727c7c49f850",
+      "n_nodes": 45,
+      "removed_constant_nodes": []
+    }
+  ],
+  "limitation": "Controlled fixed-rank sensitivity, not rank re-selection, independent cohort validation or patient-block inference"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "path": "audit_selection.R",
+    "bytes": 1122,
+    "sha256": "054c08986639b7924b0fdc1178e121c15713f0338267951e48fcb21c93c0888b",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  },
+  {
+    "path": "audit_selection.py",
+    "bytes": 4827,
+    "sha256": "0365426e6c7c077cc73d8031977ff96de89bff305096ddecd7026c160c7627b1",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  },
+  {
+    "path": "audit_selection_v2.R",
+    "bytes": 1626,
+    "sha256": "021219c2cbc02528f348e63ab1387ba848d614b837ad8764bc5ce36a59894934",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  },
+  {
+    "path": "diagnose_all_CM.py",
+    "bytes": 8548,
+    "sha256": "76bfe252da6cb17996aebc898c393f79d44c609ea57984204085cb63f67bc0de",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  },
+  {
+    "path": "export_edge_LOSO.py",
+    "bytes": 957,
+    "sha256": "bb06c5f41fe3ba52e023a5ce665800f450a135c1f60bed3a8544821b71581820",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  },
+  {
+    "path": "refit_CM.R",
+    "bytes": 2770,
+    "sha256": "9b705de84930922a4ff5b55f669eeafc90d4081d9b0b858ef7b8c95172f78ff6",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  },
+  {
+    "path": "render_selection_report.py",
+    "bytes": 17208,
+    "sha256": "85a8ca6ab7b66630f823a620202a98da11e4549fe11a03f29af92fc4762b6303",
+    "role": "aggregate rendering"
+  },
+  {
+    "path": "summarize_refits.py",
+    "bytes": 5209,
+    "sha256": "605306dd162eadc3bbac8505abccfb18c78ed1c971c9a78f77ecbbba259d8412",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  },
+  {
+    "path": "trace_CM03_edges.py",
+    "bytes": 2999,
+    "sha256": "51952692f7a9c5fa2246eeaba2fd917c6705031a5983b1f9031753ba856927f4",
+    "role": "server scientific/supplement script; failed original R audit retained and v2 accepted"
+  }
+]

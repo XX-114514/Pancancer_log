@@ -1,0 +1,110 @@
+[
+  {
+    "job": "seed_1",
+    "kind": "seed",
+    "held_source": "",
+    "seed": 2026110701
+  },
+  {
+    "job": "seed_2",
+    "kind": "seed",
+    "held_source": "",
+    "seed": 2026110702
+  },
+  {
+    "job": "seed_3",
+    "kind": "seed",
+    "held_source": "",
+    "seed": 2026110703
+  },
+  {
+    "job": "seed_4",
+    "kind": "seed",
+    "held_source": "",
+    "seed": 2026110704
+  },
+  {
+    "job": "seed_5",
+    "kind": "seed",
+    "held_source": "",
+    "seed": 2026110705
+  },
+  {
+    "job": "LOSO_01",
+    "kind": "LOSO",
+    "held_source": "GSE138665",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_02",
+    "kind": "LOSO",
+    "held_source": "GSE138709",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_03",
+    "kind": "LOSO",
+    "held_source": "GSE163558",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_04",
+    "kind": "LOSO",
+    "held_source": "GSE182109",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_05",
+    "kind": "LOSO",
+    "held_source": "GSE184362",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_06",
+    "kind": "LOSO",
+    "held_source": "GSE189889",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_07",
+    "kind": "LOSO",
+    "held_source": "GSE197461",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_08",
+    "kind": "LOSO",
+    "held_source": "GSE222315",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_09",
+    "kind": "LOSO",
+    "held_source": "GSE253013",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_10",
+    "kind": "LOSO",
+    "held_source": "GSE273127",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_11",
+    "kind": "LOSO",
+    "held_source": "GSE274934",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_12",
+    "kind": "LOSO",
+    "held_source": "GSE288479",
+    "seed": 20261120
+  },
+  {
+    "job": "LOSO_13",
+    "kind": "LOSO",
+    "held_source": "GSE297041",
+    "seed": 20261120
+  }
+]

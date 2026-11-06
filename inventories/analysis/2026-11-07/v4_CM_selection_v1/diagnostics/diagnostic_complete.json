@@ -1,0 +1,17 @@
+{
+  "status": "ALL_14_CM_DESCRIPTIVE_DIAGNOSTICS_COMPLETE",
+  "UTC": "2026-11-06T22:15:09.178995+00:00",
+  "n_samples": 164,
+  "n_sources": 13,
+  "n_nodes": 45,
+  "n_global_edges": 18,
+  "n_factors": 14,
+  "n_followup_jobs": 18,
+  "inference": "Descriptive selection diagnostics, no postselection biological validation or independent-patient inference",
+  "input_files": {
+    "inputs/frequency_PRIVATE.tsv": "658109555943bf290e687b8ca09b856019f1edc05989d587b995819efe5e531a",
+    "CM_results/W_PRIVATE.tsv": "5a8d3e93d46651eda7f7b7749465e2687ef064800ed8311cb38eb0c664bba085",
+    "CM_results/H_PRIVATE.tsv": "7fffe83e629a55edbf60b61cf846eb972c80087aa11e213644fdec212302ca5f",
+    "CM_results/A_PRIVATE.tsv": "cd0be0b032ffe412e60b743b6f8966f4e9d1c7bbd3da94403b47e6e020e06a7e"
+  }
+}

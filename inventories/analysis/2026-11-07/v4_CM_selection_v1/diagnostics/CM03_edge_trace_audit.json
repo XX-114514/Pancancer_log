@@ -1,0 +1,6 @@
+{
+  "status": "PASS_all26_CM03_edge_filter_stages_independently_reconstructed",
+  "n_edge_opportunities": 26,
+  "input": "all13_LOSO original CM03 edges; original author filters reconstructed independently",
+  "sha256": "bf04d49ff9019ccca08dae00aa9b074399102951a80e2021d66a72ebc15a80f1"
+}

@@ -1,3 +1,5 @@
+[V4全部14CM评估与选择](20261107_v4_all_CM_selection_v1.md)：额外540次、252因子对应及全部来源/分母独立核验；CM03优先、CM06备选，CM09/11问题单列。
+
 [V4注释CoVarNet原文CM发现](20261106_v7_selective_CoVarNet_author_v1.md)：13来源/164样本/45节点、570次nsNMF与独立核验、严格CCC选K14；完整输出与退化/范围敏感性诊断。
 
 [V7保留既有亚型修正](20261106_v7_selective_subtype_restore_v4.md)：原名保留＋选择性大类marker回退，完整标签/例外逐值核验。

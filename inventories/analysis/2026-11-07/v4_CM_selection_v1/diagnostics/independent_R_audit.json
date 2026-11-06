@@ -1,0 +1,10 @@
+{
+  "status": "PASS_independent_R_all_18_models_540_starts_CCC_WSH_and_exports",
+  "UTC": "2026-11-06T22:20:00Z",
+  "n_jobs": 18,
+  "n_starts_each": 30,
+  "rank": 14,
+  "CCC_independent_vs_saved_model_tolerance": 1e-10,
+  "producer_JSON_digits": 4,
+  "producer_rounding_bound": 5.0000000000000002e-05
+}
