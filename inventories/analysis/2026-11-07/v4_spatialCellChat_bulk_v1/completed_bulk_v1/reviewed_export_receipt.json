@@ -1,0 +1,41 @@
+{
+  "status": "PASS_REVIEWED_AGGREGATE_ONLY_COMPLETE_BULK_FAMILIES_EXPORT",
+  "UTC": "2026-11-07T08:22:51.591048+00:00",
+  "n_clinical_slots": 2100,
+  "n_immune_slots": 4620,
+  "n_numeric_designs_accepted": 395,
+  "n_immune_statistics_accepted": 1305,
+  "family_summary": [
+    {
+      "family": "ICI_response",
+      "n_planned": 84,
+      "n_estimable": 20,
+      "n_BH05": 0,
+      "n_BY05": 0
+    },
+    {
+      "family": "ICI_survival",
+      "n_planned": 168,
+      "n_estimable": 25,
+      "n_BH05": 0,
+      "n_BY05": 0
+    },
+    {
+      "family": "TCGA_survival",
+      "n_planned": 1848,
+      "n_estimable": 350,
+      "n_BH05": 5,
+      "n_BY05": 2
+    },
+    {
+      "family": "TCGA_immune",
+      "n_planned": 4620,
+      "n_estimable": 1305,
+      "n_BH05": 795,
+      "n_BY05": 675
+    }
+  ],
+  "unavailable_q_displayed_NA_full_internal_P1_denominator_preserved": true,
+  "no_patient_rows_scores_designs_or_expression_exported": true,
+  "no_cell_module_or_treatment_prediction_validation_claim": true
+}

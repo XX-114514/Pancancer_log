@@ -1,0 +1,16 @@
+{
+  "status": "PASS_EXACT_SOURCE_C1_C6_MAPPING_AND_COMPLETE4620_FAMILY_HARMONIZATION_INDEPENDENT_H_KRUSKAL_BH_BY",
+  "UTC": "2026-11-07T08:28:21.381595+00:00",
+  "original_immune_table_SHA256": "1ed802f52c27fab100de5ee4220765d85d7cc0e8329211c9fbd6f1eeb29715bc",
+  "n_total_immune_slots": 4620,
+  "n_immune_estimable": 1325,
+  "n_category_estimable": 20,
+  "n_BH05": 814,
+  "n_BY05": 688,
+  "n_category_BH05": 15,
+  "max_independent_H_or_p_error": 2.2737367544323206e-13,
+  "original_RNA_statistics_and_P_unchanged": true,
+  "clinical_models_unchanged": true,
+  "no_group_count_gene_or_P_threshold_relaxed": true,
+  "descriptive_category_summaries_not_added_to_inferential_family": true
+}

@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-11-07T07:59:09.632729+00:00",
+  "clinical_effects_read_or_computed": false,
+  "reason": "full public author TPM transfer slow; exact frozen88gene projection preserves all requested152RNA columns and all requested gene values",
+  "source_full_TPM_SHA256": "892f8687ed42eb017894aa9c99d4d4a04f5af52037f88709ee7913df36166160",
+  "selected_TPM_SHA256": "f3091a5a9dc6d14c22acb336926d34911f3dc24db19508695382b2ad76af39b5",
+  "full_source_retained_local": true,
+  "partial_full_transfer_preserved_not_analysed": true,
+  "no_gene_score_or_endpoint_change": true,
+  "old34gene_panel_not_reused": true,
+  "Seurat_FC_formula_verified_from_installed5_3_1": "log2((sum(exp(data)-1)+1)/n_high)-log2((sum(exp(data)-1)+1)/n_low); auditor follows same definition independently"
+}

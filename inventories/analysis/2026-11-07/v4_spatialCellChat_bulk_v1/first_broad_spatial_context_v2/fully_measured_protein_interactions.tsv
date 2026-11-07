@@ -1,0 +1,16 @@
+interaction	category	n_required_components	missing_components	complete_measured	protein
+CXCL12_CXCR4	Secreted Signaling	2		True	True
+PTN_SDC4	Secreted Signaling	2		True	True
+EDN1_EDNRB	Secreted Signaling	2		True	True
+PTPRC_MRC1	Cell-Cell Contact	2		True	True
+CD80_CD274	Cell-Cell Contact	2		True	True
+CD80_CTLA4	Cell-Cell Contact	2		True	True
+CD86_CTLA4	Cell-Cell Contact	2		True	True
+CDH1_CDH1	Cell-Cell Contact	1		True	True
+CLEC2C_KLRB1	Cell-Cell Contact	2		True	True
+NCAM1_NCAM1	Cell-Cell Contact	1		True	True
+CD274_PDCD1	Cell-Cell Contact	2		True	True
+PDCD1LG2_PDCD1	Cell-Cell Contact	2		True	True
+PECAM1_PECAM1	Cell-Cell Contact	1		True	True
+CEACAM6_CEACAM6	Cell-Cell Contact	1		True	True
+CEACAM8_CEACAM6	Cell-Cell Contact	2		True	True

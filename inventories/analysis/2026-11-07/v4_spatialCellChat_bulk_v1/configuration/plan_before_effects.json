@@ -1,0 +1,200 @@
+{
+  "run_id": "20261107_v4_spatialCellChat_bulk_v1",
+  "UTC_frozen_before_new_spatial_or_clinical_effects": "2026-11-07T07:44:57.762934+00:00",
+  "CM_version": "2026-11-06_V4_primary_v2",
+  "annotation_SHA256": "2a4bc82cb495d0fc2ffb40ecda6b1cbb53802eb2bf87efd2392746371653244c",
+  "all_CM": [
+    "CM01",
+    "CM02",
+    "CM03",
+    "CM04",
+    "CM05",
+    "CM06",
+    "CM07",
+    "CM08",
+    "CM09",
+    "CM10",
+    "CM11",
+    "CM12",
+    "CM13",
+    "CM14"
+  ],
+  "priority_CM": [
+    "CM03",
+    "CM06"
+  ],
+  "empty_network_CM": [
+    "CM01",
+    "CM02",
+    "CM05"
+  ],
+  "no_change_original_CM_or_annotation": true,
+  "imaging": {
+    "existing_Xenium_units": 5,
+    "existing_CosMx_NSCLC_archives": 8,
+    "scope": "all inventoried units and raw archives; no selection by spatial or clinical effect",
+    "unit": "separate tissue or source FOV, no cross-FOV neighbors",
+    "classifier": "same50label reference, independent train/heldout replay on native common genes; multinomial logistic L2 C1 class_weight balanced seed2026110703",
+    "heldout_label_gate": {
+      "precision": 0.7,
+      "F1": 0.7,
+      "support": 20
+    },
+    "cell_assignment_gate": {
+      "probability": 0.7,
+      "top_two_margin": 0.2,
+      "minimum_detected_common_genes": 20
+    },
+    "coarse_fallback": "same-major reference diagnostic at same gate, explicitly broad context not exact CM subtype replication",
+    "spatial_CellChat": {
+      "version": "2.2.0",
+      "datatype": "spatial",
+      "raw_use": true,
+      "distance_use": true,
+      "interaction_range_um": 250,
+      "contact_range_um": 10,
+      "tolerance_um": 5,
+      "scale_distance": 0.01,
+      "type": "truncatedMean",
+      "trim": 0.1,
+      "nboot": 100,
+      "min_cells": 10,
+      "k_min": 10,
+      "seed": 2026110703,
+      "protein_only": true,
+      "fully_measured_ligand_receptor_complex_subunits_required": true,
+      "do_DE": false
+    },
+    "distance_sensitivity_um": [
+      100,
+      250
+    ],
+    "contact_sensitivity_um": [
+      10,
+      20
+    ],
+    "parameter_sensitivity_not_selected_by_effect": true,
+    "replicate_handling": "technical replicates retained, not independent patients",
+    "exact_CM_qualification": "all original member identities pass panel replay and cell marker evidence; full Visium family confirmation still pending",
+    "spatial_recurrence_scope": "descriptive reference-conditioned replication first; no claim of contact or causality from CellChat alone"
+  },
+  "bulk": {
+    "TCGA_cancers": [
+      "ACC",
+      "BLCA",
+      "BRCA",
+      "CESC",
+      "CHOL",
+      "COAD",
+      "DLBC",
+      "ESCA",
+      "GBM",
+      "HNSC",
+      "KICH",
+      "KIRC",
+      "KIRP",
+      "LAML",
+      "LGG",
+      "LIHC",
+      "LUAD",
+      "LUSC",
+      "MESO",
+      "OV",
+      "PAAD",
+      "PCPG",
+      "PRAD",
+      "READ",
+      "SARC",
+      "SKCM",
+      "STAD",
+      "TGCT",
+      "THCA",
+      "THYM",
+      "UCEC",
+      "UCS",
+      "UVM"
+    ],
+    "ICI_cohorts": [
+      "IMvigor210",
+      "Riaz2017",
+      "Hugo2016",
+      "Jung2019",
+      "Rose2021",
+      "SU2C_MARK"
+    ],
+    "program_derivation": "current same164sample CMT pseudobulk mean native CP10K then log1p, Seurat sample-level Wilcoxon; top10 positive avg_log2FC after adjP<.05 logFC>.25; no clinical outcomes",
+    "minimum_CMT_high_samples": 3,
+    "score": "mean gene-wise within-cancer/cohort patient percentile of all10 frozen genes; no missing-gene substitution, no high-low cutpoint",
+    "bulk_proxy_not_exact_cell_module": true,
+    "paper_relation": "paper CMT pseudobulk signature concept; clinical percentile scoring explicit project extension, not exact author AddModuleScore classification",
+    "TCGA_material": "01 primary solid tumour only; patient collapse and conflicting clinical records excluded",
+    "TCGA_endpoints": [
+      "PFI",
+      "OS"
+    ],
+    "TCGA_models": [
+      "clinical_basic",
+      "stage_sensitivity"
+    ],
+    "TCGA_gate": "n>=60; events>=max(20,10*p); overall stage coverage>=70%; full rank; condition number<=1e6",
+    "ICI_endpoints": [
+      "response",
+      "OS",
+      "PFS"
+    ],
+    "ICI_gate": "n>=30; response minority>=10; survival events>=max(10,5*p)",
+    "ICI_response_definition": "CR/PR vs SD/PD; NE and unknown missing; only verified pre-treatment for Riaz/Hugo, Rose archived timing separate",
+    "adjustment": "pan-T for ICI, age/sex/pan-T and stage sensitivity for TCGA",
+    "TCGA_immune": "cancer-specific C1-C6 omnibus Kruskal; disjoint-gene checkpoint/CYT/PTPRC associations; no pooled cancer P",
+    "immune_panels": {
+      "pan_T": [
+        "CD3D",
+        "CD3E",
+        "TRAC"
+      ],
+      "cytotoxic": [
+        "GZMA",
+        "PRF1"
+      ],
+      "leukocyte": [
+        "PTPRC"
+      ],
+      "endothelial": [
+        "PECAM1",
+        "VWF"
+      ],
+      "PDCD1": [
+        "PDCD1"
+      ],
+      "CD274": [
+        "CD274"
+      ],
+      "CTLA4": [
+        "CTLA4"
+      ],
+      "LAG3": [
+        "LAG3"
+      ],
+      "TIGIT": [
+        "TIGIT"
+      ],
+      "HAVCR2": [
+        "HAVCR2"
+      ]
+    },
+    "FDR": "BH/BY complete separate TCGA_survival(1848), ICI_response(84), ICI_survival(168), TCGA_immune(4620); unavailable slots p1 in correction and NA shown",
+    "TCGA_immune_slots_per_CM_cancer": 10,
+    "no_optimization_or_clinical_prediction_claim": true,
+    "SU2C_rule": "full author public expression and exact Keep QC required; 34gene old panel insufficient for new CM programs, retain pending slots if absent",
+    "source_overlap_and_patient_bridge": "not yet certified; no formal independent clinical validation claim"
+  },
+  "execution": {
+    "new_run_only": true,
+    "CPU_workers": 2,
+    "GPU_jobs_unchanged": true,
+    "disk_reserve_GB": 500,
+    "output_budget_GB": 20,
+    "no_deletion_or_shared_environment_changes": true,
+    "no_automatic_public_push": true
+  }
+}

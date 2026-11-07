@@ -1,0 +1,147 @@
+{
+  "UTC": "2026-11-07T08:35:34.153448+00:00",
+  "status": "REVIEWED_GENERIC_SCIENTIFIC_CODE_WITH_PRESERVED_ORIGINAL_VERSIONS",
+  "files": [
+    {
+      "name": "prepare_V4_extension.py",
+      "sha256": "e6060d5b5ce90b8fbf2dac59137dd8cc3d2f804c5ee91fb794285cdbda61cfe2",
+      "bytes": 2721
+    },
+    {
+      "name": "derive_V4_CMT_signatures.R",
+      "sha256": "1b53169488d8fc8cf0bfb7d8ae1b94d74a79ca4669256881587b8e8289e66334",
+      "bytes": 2230
+    },
+    {
+      "name": "export_CellChat_DB.R",
+      "sha256": "6bfa0357b9ee21436904ca0aa80034b44503a56373d103a73fa8b75dcee47258",
+      "bytes": 614
+    },
+    {
+      "name": "clinical_helpers_v4.py",
+      "sha256": "a9601264a661da4d55c0cf2f3f73c35b527d45e1c8dd6872ccffcd22f3bceb48",
+      "bytes": 11314
+    },
+    {
+      "name": "run_V4_bulk.py",
+      "sha256": "4d00f2b1d91b8a4c251dc461cc4324551e7268441579f86af67db88fb482bb62",
+      "bytes": 8277
+    },
+    {
+      "name": "run_V4_bulk_v2.py",
+      "sha256": "8290377968ac132de3d371b280890d05022adfa3e44ba8c5a7922cc20acb9e39",
+      "bytes": 8524
+    },
+    {
+      "name": "audit_V4_bulk_models.py",
+      "sha256": "9c51f0e182eace3cb3994d62888904b51301dd8869f8c5907831e96fad699cef",
+      "bytes": 5258
+    },
+    {
+      "name": "audit_V4_bulk_measurement.py",
+      "sha256": "6b8f5266cd3d071e690678e40402a165b72bf5262edc903c00395b2606b16421",
+      "bytes": 5482
+    },
+    {
+      "name": "audit_V4_bulk_measurement_v2.py",
+      "sha256": "2f3946c5413904e4fd72ab1989e17d865e820e698edbe5d1849979edbd9037fe",
+      "bytes": 5636
+    },
+    {
+      "name": "audit_V4_bulk_measurement_v3.py",
+      "sha256": "5702e86a3bac73b04b0b5c24d06742776b86e93975c62fab9625d8b4b145bfe4",
+      "bytes": 5727
+    },
+    {
+      "name": "harmonize_C1C6_and_audit_V4.py",
+      "sha256": "d6348010691cd51bf8689080a3788b34afa7587ee9a4b5722ae6432887263be0",
+      "bytes": 5636
+    },
+    {
+      "name": "prepare_imaging_V4.py",
+      "sha256": "6b73febd47e52c4a57dd5d61df8d85ecf080eb5c5945c39ef9ec2b2d9b5a6735",
+      "bytes": 10428
+    },
+    {
+      "name": "prepare_imaging_V4_original_v1.py",
+      "sha256": "5a0b1415bcd80f20f12ca97f3695959dfc1941c5903577424cea24eccf17f58d",
+      "bytes": 9551
+    },
+    {
+      "name": "prepare_imaging_V4_v2.py",
+      "sha256": "34d1f75d753ac300f71e636d63c927fea035d829c4f678db7e31ff84076a5fbe",
+      "bytes": 10321
+    },
+    {
+      "name": "prepare_imaging_V4_cache_v2.py",
+      "sha256": "34d1f75d753ac300f71e636d63c927fea035d829c4f678db7e31ff84076a5fbe",
+      "bytes": 10321
+    },
+    {
+      "name": "prepare_imaging_V4_nativeIO_v3.py",
+      "sha256": "6b73febd47e52c4a57dd5d61df8d85ecf080eb5c5945c39ef9ec2b2d9b5a6735",
+      "bytes": 10428
+    },
+    {
+      "name": "run_spatial_CellChat_V4.R",
+      "sha256": "b5002b704c61687948bf401961a375a857413af46485ea47df7c8d212f5bde6d",
+      "bytes": 7368
+    },
+    {
+      "name": "run_spatial_CellChat_V4_original_v1.R",
+      "sha256": "573360b1ee07ef735cdb47bd517935d8161e7e70b34071b426994f908b8abd0f",
+      "bytes": 7348
+    },
+    {
+      "name": "run_spatial_CellChat_V4_v2.R",
+      "sha256": "b5002b704c61687948bf401961a375a857413af46485ea47df7c8d212f5bde6d",
+      "bytes": 7368
+    },
+    {
+      "name": "audit_spatial_CellChat_V4.R",
+      "sha256": "4566ca81342d32192866cdf8c7c4ccf156cc3451084e862382e5b20e14fcb237",
+      "bytes": 1658
+    },
+    {
+      "name": "audit_spatial_CellChat_V4_original_v1.R",
+      "sha256": "788fc782b62bc894fa27738f8149950698289be9b0d8db8678a763d03e9debeb",
+      "bytes": 1658
+    },
+    {
+      "name": "audit_spatial_CellChat_V4_v2.R",
+      "sha256": "4566ca81342d32192866cdf8c7c4ccf156cc3451084e862382e5b20e14fcb237",
+      "bytes": 1658
+    },
+    {
+      "name": "measure_imaging_broad_CM_context.py",
+      "sha256": "1ca961886f55a66a3c61fb306dc1d24c02df1336cd3869c9f60b1d1dbda295dd",
+      "bytes": 3680
+    },
+    {
+      "name": "measure_imaging_broad_CM_context_original_v1.py",
+      "sha256": "6b79250246062724b9f70232d1e6256a2b37da49ab47aa41d02799f9103dd480",
+      "bytes": 3663
+    },
+    {
+      "name": "measure_imaging_broad_CM_context_v2.py",
+      "sha256": "1ca961886f55a66a3c61fb306dc1d24c02df1336cd3869c9f60b1d1dbda295dd",
+      "bytes": 3680
+    },
+    {
+      "name": "finite_V4_extension_controller.py",
+      "sha256": "efd1810485982a1f63b765481f0cb6a4153d895734f941af0ab1d4bd6dcb4e0a",
+      "bytes": 3466
+    },
+    {
+      "name": "finite_V4_interface_recovery.py",
+      "sha256": "7ca333d430a0aa570c6d8c3c01af6430f74153de96c9ddceae126a7241f21aec",
+      "bytes": 2585
+    },
+    {
+      "name": "render_V4_bulk_aggregates.py",
+      "sha256": "c0b465d4309588766514416b6cec57fafb6fed0249b9f31a2874d71732bca3da",
+      "bytes": 5854
+    }
+  ],
+  "no_private_transfer_or_connection_scripts_included": true
+}

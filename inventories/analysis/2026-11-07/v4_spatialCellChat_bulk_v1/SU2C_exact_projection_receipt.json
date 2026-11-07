@@ -1,0 +1,15 @@
+{
+  "status": "EXACT_FROZEN_V4_GENE_PROJECTION_FROM_CRC_SHA_ACCEPTED_FULL_PUBLIC_AUTHOR_TPM",
+  "UTC": "2026-11-07T07:58:32.125755+00:00",
+  "full_author_TPM_SHA256": "892f8687ed42eb017894aa9c99d4d4a04f5af52037f88709ee7913df36166160",
+  "frozen_signature_SHA256": "f9ba34301c1471cb4d45c968fe7faa96c903f3312a37decd0d2358bf73fec2a2",
+  "selected_TPM_SHA256": "f3091a5a9dc6d14c22acb336926d34911f3dc24db19508695382b2ad76af39b5",
+  "n_source_RNA_samples": 152,
+  "n_requested_genes": 88,
+  "n_selected_unique_genes": 88,
+  "missing_or_ambiguous_genes": [],
+  "selection_uses_clinical_outcomes": false,
+  "full_author_TPM_retained_local": true,
+  "old34_gene_panel_reused": false,
+  "source_record": "https://zenodo.org/records/11179623"
+}

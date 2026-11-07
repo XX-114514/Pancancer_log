@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-11-07T08:04:38.440685+00:00",
+  "status": "CONTEXT_INTEGER_PRECISION_CORRECTION_ORIGINAL_SOURCE_PRESERVED",
+  "original_SHA256": "6b79250246062724b9f70232d1e6256a2b37da49ab47aa41d02799f9103dd480",
+  "current_SHA256": "1ca961886f55a66a3c61fb306dc1d24c02df1336cd3869c9f60b1d1dbda295dd",
+  "reason": "pandas categorical codes int8 can overflow labelsA*K+labelsB for >=12 observed major groups; use int64 before multiplication",
+  "threshold_seed_graph_or_cell_selection_changed": false,
+  "classification_CellChat_or_clinical_outputs_rerun": false
+}

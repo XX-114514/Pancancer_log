@@ -1,0 +1,29 @@
+{
+  "status": "PASS_AGGREGATE_FIGURES_VISUALLY_REVIEWED",
+  "UTC": "2026-11-07T08:32:13.776078+00:00",
+  "figures": [
+    {
+      "name": "all14_TCGA_PFI_OS",
+      "caption": "All33 cancers and14 factors. Basic Cox model; BH across complete1848-slot family; unavailable retained. Displayed log2 HR per population SD, colors clipped; no cutpoint. Full stage sensitivity is in tables."
+    },
+    {
+      "name": "all14_six_ICI_endpoints",
+      "caption": "Complete6 cohorts and14 factors in response/OS/PFS. No BH-positive associations in either complete family; grey denotes unavailable. Gene-program proxy, not validated prediction or treatment-specific benefit."
+    },
+    {
+      "name": "CM03_six_ICI_forest",
+      "caption": "All6 cohorts and3 prespecified ICI endpoints for CM03 program. Pan-T adjusted; displayed Wald CI and complete-family BH, unavailable retained. No ICI support for this frozen program; not evidence that every possible module assay has no clinical association."
+    }
+  ],
+  "files": {
+    "CM03_six_ICI_forest.png": "a382b4402ef21c854ccdb230999cb19bb218cc83815b2c29d51a37de856096c8",
+    "all14_six_ICI_endpoints.svg": "e3cc057292ae5734b1b505de7821e90a87e588e64032498a1474a019757ad13a",
+    "all14_six_ICI_endpoints.png": "d1c36c0c58d5116362674ae274d7a9e23d3dfcab77e215bf7e9f29ff73316a51",
+    "CM03_six_ICI_forest.svg": "569c812b322329d87d59fbecd516311414ae240ba0e72ccbf38aece60ad6eabb",
+    "all14_TCGA_PFI_OS.png": "f473080ca2a7603d21b994dcf4fdab660feee5e7af0d3811a08e87cdb46e854a",
+    "all14_TCGA_PFI_OS.svg": "720bbda9ebf397cbc1c2677f6c9dff79676e9c71d847b31d1586329f3b83d261"
+  },
+  "no_patient_ids_or_rows": true,
+  "visual_QA_UTC": "2026-11-07T08:35:34.154795+00:00",
+  "visual_QA": "All3 plots inspected; repeated ICI row labels removed to prevent colorbar overlap; final data and all NA unchanged"
+}

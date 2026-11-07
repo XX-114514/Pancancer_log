@@ -1,0 +1,5 @@
+interaction_range_um	contact_range_um	n_full_typepair_LR_hypotheses	n_raw_software_nominal_candidates	n_raw_software_BH_candidates	n_add1_floor_BH_candidates	n_positive_probability_zero_coded_P	MC_floor	minimum_add1_BH
+100	10	1815	273	265	0	265	0.0099009900990099	0.0678124416215206
+100	20	1815	314	303	0	303	0.0099009900990099	0.0593079109891187
+250	10	1815	273	265	0	265	0.0099009900990099	0.0678124416215206
+250	20	1815	314	303	0	303	0.0099009900990099	0.0593079109891187

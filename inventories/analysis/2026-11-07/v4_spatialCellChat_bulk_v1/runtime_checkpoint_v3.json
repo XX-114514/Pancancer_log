@@ -1,0 +1,78 @@
+{
+  "UTC": "2026-11-07T09:00:11.326689+00:00",
+  "units": {
+    "I001": {
+      "independent_audit.json": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T08:36:27Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      },
+      "progress.json": {
+        "n_completed_variants": 4,
+        "n_requested_variants": 4
+      }
+    },
+    "I002": {
+      "independent_audit.json": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T08:51:23Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      },
+      "progress.json": {
+        "n_completed_variants": 4,
+        "n_requested_variants": 4
+      }
+    },
+    "I003": {},
+    "I004": {},
+    "I005": {
+      "independent_audit.json": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T08:40:23Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      },
+      "progress.json": {
+        "n_completed_variants": 4,
+        "n_requested_variants": 4
+      }
+    },
+    "I006": {
+      "progress.json": {
+        "n_completed_variants": 10,
+        "n_requested_variants": 112
+      }
+    },
+    "I007": {},
+    "I008": {},
+    "I009": {},
+    "I010": {},
+    "I011": {},
+    "I012": {},
+    "I013": {}
+  },
+  "controllers": {
+    "extension_v1": {
+      "alive": true,
+      "children": [
+        {
+          "executable_basename": "R",
+          "cpu_seconds": 677.0600000000001,
+          "status": "running"
+        }
+      ]
+    },
+    "interface_recovery_v2": {
+      "alive": true,
+      "children": [
+        {
+          "executable_basename": "R",
+          "cpu_seconds": 526.67,
+          "status": "running"
+        }
+      ]
+    }
+  }
+}

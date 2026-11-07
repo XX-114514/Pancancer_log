@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-11-07T08:09:13.318842+00:00",
+  "status": "EXACT_REFERENCE_PANEL_MODEL_REUSE_ENABLED_ORIGINAL_SOURCE_PRESERVED",
+  "original_SHA256": "5a0b1415bcd80f20f12ca97f3695959dfc1941c5903577424cea24eccf17f58d",
+  "current_SHA256": "34d1f75d753ac300f71e636d63c927fea035d829c4f678db7e31ff84076a5fbe",
+  "reuse_rule": "same run complete preparation, same native/common gene order, same source reference and fixed parameters; re-evaluate heldout diagnostics for each unit",
+  "cell_selection_hyperparameters_or_labels_changed": false,
+  "active_first_unit_restarted": false
+}

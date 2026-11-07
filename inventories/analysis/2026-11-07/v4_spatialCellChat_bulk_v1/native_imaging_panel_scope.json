@@ -1,0 +1,47 @@
+{
+  "UTC_evidence": "2026-11-07",
+  "scope": [
+    {
+      "dataset": "XENIUM_BREAST_10X",
+      "platform": "Xenium",
+      "n_native_units": 2,
+      "n_panel_genes": 313,
+      "IGHD_measured": false,
+      "XCL1_measured": false,
+      "PECAM1_measured": true,
+      "exact_CM03_identity_measurable": false
+    },
+    {
+      "dataset": "Xenium_V1_Human_Colorectal_Cancer_Addon_FFPE",
+      "platform": "Xenium",
+      "n_native_units": 1,
+      "n_panel_genes": 480,
+      "IGHD_measured": false,
+      "XCL1_measured": false,
+      "PECAM1_measured": true,
+      "exact_CM03_identity_measurable": false
+    },
+    {
+      "dataset": "Xenium_V1_Human_Lung_Cancer_Addon_FFPE",
+      "platform": "Xenium",
+      "n_native_units": 1,
+      "n_panel_genes": 480,
+      "IGHD_measured": false,
+      "XCL1_measured": false,
+      "PECAM1_measured": true,
+      "exact_CM03_identity_measurable": false
+    },
+    {
+      "dataset": "Xenium_V1_Human_Ovarian_Cancer_Addon_FFPE",
+      "platform": "Xenium",
+      "n_native_units": 1,
+      "n_panel_genes": 480,
+      "IGHD_measured": false,
+      "XCL1_measured": false,
+      "PECAM1_measured": true,
+      "exact_CM03_identity_measurable": false
+    }
+  ],
+  "CosMx_eight_archives_panel_qualification": "pending_native_archive_read",
+  "missing_is_not_negative": true
+}
