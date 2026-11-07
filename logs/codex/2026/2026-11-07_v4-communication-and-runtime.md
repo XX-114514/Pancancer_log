@@ -41,3 +41,12 @@
 本继续阶段只接收已完成产物、独立审计与生成审阅图，原CMT队列和GPU保持；新增审阅表、代码、固定状态、原始失败恢复均保留。公开前重新进行隐私/大小/全TSV/JSON/AST/链接与仓库验证，普通提交推送并独立核远端SHA。后续接收25CMT/CellChat和剩余空间，尚未通过独立患者、接触、干预或机制验证。建议commit：`Publish independently audited V4 global communication and response results`。
 
 06:05:44 UTC／14:05:44 UTC+8／墨尔本17:05:44固定快照：CM01/02 High的模型和输出审核均exit0，活跃CM03 High；正式全局及响应与独立读回已通过，CellChat尚无完成收据，完整25CMT未结束。当前新增审核/聚合表和图件59文件约1.22MB，全部隐私/凭据/样本ID模式扫描、Python AST、JSON、TSV列数和新相对链接通过；仓库验证exit0、0错误/1同前历史内部路径警告。两图检查图例、字样与脚注重叠并修正；CCI图轴改为有序身份A/B，不假定聚合次序就是生物学发送方向。公开不含模型/矩阵/个体行，未因本轮读取/审核重跑成功模型；最后提交前stage/diff审阅及普通远端核验另保存。
+
+
+CellChat较晚终态：05:46:02–06:06:29 UTC执行exit0，实际约20分21秒；06:10:12 UTC／14:10:12 UTC+8从保存模型独立重算概率/P阈值计数，45×45身份对、31,161个身份对×互作候选明细完全对应，所有概率有限非负、P在[0,1]。实际CellChat2.2.0、triMean/raw.use TRUE/population.size FALSE/nboot100/min.cells10；Non-protein Signaling854条单列，不当蛋白LR。数据库总3,233行的原收据误名eligible，审阅字段改为total，原收据及SHA保留、模型/科学值不变；该数不代表测量合格互作。数据库与版本差异明确，不要求候选数等于CPDB，不升级为真实接触或因果。
+
+06:13:53 UTC／14:13:53 UTC+8同注册有限控制器仍运行，CM01/02/03 High执行和审核均通过，25组中3组完成，CM04 High活跃；尚无完整Low/环境对比。06:14:16 UTC／14:14:16 UTC+8空间仍6/53完整通过、另2张拟合、0主模型失败、niche53/53接受。通讯规划余18–30小时、空间33–50小时保留，等待首个大Low及跨来源实测后再校正。未重跑成功数据、改变置换/epoch/并发或干预活跃队列。
+
+本节点轻量检查：新文件及新增内容的隐私/凭据/个体ID扫描、JSON/TSV/AST/相对链接和R审计脚本/原收据SHA均通过。首轮将整个历史STATUS/TODO/CHANGELOG一并扫出既有路径，改按新增diff与新任务完整文件检查后无新增命中，未改历史。上次内容提交18583c30已普通推送并独立核SHA；本次CellChat审阅及状态另作新提交。建议commit：`Publish independently audited V4 CellChat and queue checkpoint`。
+
+本节点完整仓库验证实际exit0、0错误/1既有历史路径警告；18文件stage已人工审阅，非TSV diff whitespace检查通过，TSV空缺单元格保留。未公开模型、矩阵、样本/细胞/spot行或内部路径。

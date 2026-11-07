@@ -1,0 +1,210 @@
+{
+  "UTC": "2026-11-07T06:13:53.669027+00:00",
+  "run_id": "20261107_V4_CoVarNet_communication_v1",
+  "files": {
+    "inputs/complete.json": {
+      "text": "{\n  \"status\": \"SAME_V4_COMMUNICATION_INPUTS_PREPARED_PENDING_INDEPENDENT_AUDIT\",\n  \"UTC\": \"2026-11-07T05:35:13.402489+00:00\",\n  \"seconds\": 469.05814909935,\n  \"n_cells\": 560871,\n  \"n_samples\": 164,\n  \"n_sources\": 13,\n  \"n_original_CM\": 14,\n  \"n_labels\": 45,\n  \"n_common_measured_genes\": 14051,\n  \"n_CPDB_measured_genes\": 939,\n  \"n_global_cells\": 38711,\n  \"global_cap\": 1000,\n  \"normalization\": \"full native library total 1e4 then log1p; only genes measured in all retained 13 sources admitted\",\n  \"source_or_label_or_CM_changed\": false,\n  \"patient_independence_certified\": false,\n  \"annotation_SHA256\": \"2a4bc82cb495d0fc2ffb40ecda6b1cbb53802eb2bf87efd2392746371653244c\",\n  \"base_H_SHA256\": \"7fffe83e629a55edbf60b61cf846eb972c80087aa11e213644fdec212302ca5f\",\n  \"selected_rows_SHA256\": \"f2d7456ff1ac59cb4cad5f26a68b279f2e5d7225819cd7e9fb3c4caecb734229\",\n  \"global_input_SHA256\": \"058263efc073dd5d37b0b852f77516213386d3bc3204198605837d6111f4c13e\"\n}",
+      "sha256": "ca8d202ccc3a07044e92601a2d4a89a1ab41dd1e137467ad985be64873a5b346"
+    },
+    "inputs/progress.json": {
+      "text": "{\"UTC\": \"2026-11-07T05:30:09.044432+00:00\", \"raw_rows_scanned\": 4620000, \"selected_rows_completed\": 560871, \"selected_rows_total\": 560871}",
+      "sha256": "839fb27645b67f2e85b979317e24d4a65be3ebffc24a4104c73b5dd7187d355b"
+    },
+    "audit/input_independent_audit.json": {
+      "text": "{\n  \"status\": \"PASS_independent_sameV4_cells_labels_CMT_and_native_count_normalization\",\n  \"UTC\": \"2026-11-07T05:35:29.537937+00:00\",\n  \"n_cells\": 560871,\n  \"n_labels\": 45,\n  \"n_samples\": 164,\n  \"n_CM\": 14,\n  \"n_independent_original_count_rows_checked\": 245,\n  \"maximum_expression_error\": 2.991899066273618e-07,\n  \"n_common_measured_genes\": 14051,\n  \"n_global_cells\": 38711,\n  \"source_sample_as_patient_claim\": false\n}",
+      "sha256": "83cf27687dd018bf2063c287d6ea91fc6da4b22e040b389acecff23fa31f3d8b"
+    },
+    "audit/CM_comparison_eligibility.tsv": {
+      "text": "cm\tn_network_members\tn_high_samples\tn_low_samples\tn_high_sources\tlargest_high_source_fraction\tn_high_cells\tn_low_cells\tstatus\nCM01\t0\t15\t149\t5\t0.5333333333333333\t47188\t513683\tORIGINAL_EMPTY_NETWORK_NO_WITHIN_CM_TEST\nCM02\t0\t6\t158\t2\t0.8333333333333334\t13981\t546890\tORIGINAL_EMPTY_NETWORK_NO_WITHIN_CM_TEST\nCM03\t3\t19\t145\t8\t0.3157894736842105\t52188\t508683\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM04\t4\t14\t150\t4\t0.5\t55947\t504924\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM05\t0\t19\t145\t6\t0.3157894736842105\t54449\t506422\tORIGINAL_EMPTY_NETWORK_NO_WITHIN_CM_TEST\nCM06\t2\t8\t156\t2\t0.875\t24450\t536421\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM07\t2\t10\t154\t2\t0.6\t24083\t536788\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM08\t3\t9\t155\t4\t0.5555555555555556\t18412\t542459\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM09\t5\t9\t155\t1\t1.0\t41932\t518939\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM10\t2\t8\t156\t2\t0.625\t31955\t528916\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM11\t4\t30\t134\t6\t0.8\t144443\t416428\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM12\t2\t6\t158\t3\t0.5\t16088\t544783\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM13\t4\t9\t155\t6\t0.3333333333333333\t26051\t534820\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\nCM14\t2\t2\t162\t2\t0.5\t9704\t551167\tEXPLORATORY_NO_SPATIAL_GATE_ACCEPTANCE_YET\n",
+      "sha256": "2e78242556cd945bf36d935529d22712bc63bb469a9dc4a08c56dc3862ff97f0"
+    },
+    "audit/CMT_source_sample_counts.tsv": {
+      "text": "cm\tGSE138665\tGSE138709\tGSE163558\tGSE182109\tGSE184362\tGSE189889\tGSE197461\tGSE222315\tGSE253013\tGSE273127\tGSE274934\tGSE288479\tGSE297041\nCM01\t0\t1\t0\t1\t4\t0\t0\t0\t8\t0\t0\t1\t0\nCM02\t0\t0\t0\t0\t5\t0\t0\t1\t0\t0\t0\t0\t0\nCM03\t0\t3\t4\t0\t1\t0\t1\t0\t0\t6\t2\t1\t1\nCM04\t0\t0\t4\t1\t0\t0\t0\t0\t0\t0\t2\t0\t7\nCM05\t0\t0\t1\t0\t0\t0\t3\t6\t3\t0\t2\t0\t4\nCM06\t0\t0\t0\t7\t1\t0\t0\t0\t0\t0\t0\t0\t0\nCM07\t6\t0\t0\t0\t0\t4\t0\t0\t0\t0\t0\t0\t0\nCM08\t0\t1\t0\t0\t0\t5\t2\t0\t0\t0\t0\t1\t0\nCM09\t0\t0\t0\t9\t0\t0\t0\t0\t0\t0\t0\t0\t0\nCM10\t0\t0\t0\t0\t5\t0\t0\t0\t0\t3\t0\t0\t0\nCM11\t0\t0\t0\t24\t0\t0\t1\t1\t0\t0\t1\t1\t2\nCM12\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t3\t1\nCM13\t0\t0\t0\t0\t0\t0\t1\t1\t0\t2\t1\t1\t3\nCM14\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t1\t0\t0\n",
+      "sha256": "1f92a29468c546c62a65ed8bdbf324786a63a293280eb84dff3cb2de033bf2f2"
+    },
+    "audit/native_measurement_scope.tsv": {
+      "text": "source\tn_native_genes\tn_common_measured_genes\nGSE138665\t33694\t14051\nGSE138709\t19783\t14051\nGSE163558\t33538\t14051\nGSE182109\t38224\t14051\nGSE184362\t24189\t14051\nGSE189889\t22269\t14051\nGSE197461\t20615\t14051\nGSE222315\t37431\t14051\nGSE253013\t30860\t14051\nGSE273127\t26494\t14051\nGSE274934\t36601\t14051\nGSE288479\t24617\t14051\nGSE297041\t26456\t14051\n",
+      "sha256": "ee6454f82844da6574d477b20c26a395dcea739694e641199fac239e9ead1460"
+    },
+    "results/pilot/independent_audit.json": {
+      "text": "{\n  \"status\": \"PASS_independent_CPDB_hash_ID_pair_scope_p_range_and_significant_mean_readback\",\n  \"UTC\": \"2026-11-07T05:37:28.168977+00:00\",\n  \"tag\": \"pilot\",\n  \"n_cellpairs\": 2025,\n  \"n_retained_database_interactions\": 1329,\n  \"n_candidate_cellpair_LR_events\": 54181,\n  \"iterations\": 20,\n  \"pilot_not_scientific_result\": true,\n  \"patient_or_contact_or_causal_claim\": false\n}",
+      "sha256": "15ea8f54c3f373b9dbe670e1973ace6f8c47a8b8b318b146b7431a7991a2675a"
+    },
+    "results/global/independent_audit.json": {
+      "text": "{\n  \"status\": \"PASS_independent_CPDB_hash_ID_pair_scope_p_range_and_significant_mean_readback\",\n  \"UTC\": \"2026-11-07T05:46:02.399428+00:00\",\n  \"tag\": \"global\",\n  \"n_cellpairs\": 2025,\n  \"n_retained_database_interactions\": 1356,\n  \"n_candidate_cellpair_LR_events\": 57450,\n  \"iterations\": 1000,\n  \"pilot_not_scientific_result\": false,\n  \"patient_or_contact_or_causal_claim\": false\n}",
+      "sha256": "0300158d9547f23a1f9832c64eb257c8057a01c94823cf25f1a52ea383f353a0"
+    },
+    "results/cytokine/complete.json": {
+      "text": "{\n  \"status\": \"DIRECT_SCANPY_CELL_LEVEL_RESPONSE_FINISHED_PENDING_INDEPENDENT_AUDIT\",\n  \"UTC\": \"2026-11-07T05:48:06.263594+00:00\",\n  \"scanpy\": \"1.11.5\",\n  \"n_tests\": 3195,\n  \"n_eligible_CM_members\": 21,\n  \"n_production_response_subunit_edges\": 38,\n  \"patient_or_intervention_claim\": false,\n  \"primary_DE\": \"direct Scanpy method=t-test implementation Welch; positive log2FC>log2(1.2), gene BH<.05\",\n  \"enrichment\": \"scipy exact hypergeometric reconstructed, clusterProfiler not installed; 10<=signature<=500\",\n  \"orthology\": \"reuse audited reciprocal one-to-one current MGI mapping, not authors historical snapshot\"\n}",
+      "sha256": "6ccb116d46f2126392944fa98ac1ba40109b91644d893bdc64209695662edfd7"
+    },
+    "results/CellChat_global/complete.json": {
+      "text": "{\n  \"status\": \"CELLCHAT_ALTERNATIVE_ALGORITHM_FINISHED_PENDING_REVIEW\",\n  \"UTC\": \"2026-11-07T06:06:28Z\",\n  \"seconds\": 1221.0963,\n  \"package\": \"2.2.0\",\n  \"n_cells\": 38711,\n  \"n_labels\": 45,\n  \"nboot\": 100,\n  \"min_cells\": 10,\n  \"raw_use\": true,\n  \"population_size\": false,\n  \"no_spatial_contact_or_patient_inference\": true,\n  \"paper_exact_version_or_parameters_claim\": false\n}\n",
+      "sha256": "fee02b5ddbfa5662489506d42f736b393d7c856b7423dbe2a8642f4feedcae00"
+    }
+  },
+  "stage_receipts": {
+    "prepare_V4_communication.py_terminal": {
+      "stage": "prepare_V4_communication.py",
+      "UTC_start": "2026-11-07T05:27:21.000039+00:00",
+      "UTC_end": "2026-11-07T05:35:16.733724+00:00",
+      "exit_code": 0
+    },
+    "audit_V4_communication_inputs.py_terminal": {
+      "stage": "audit_V4_communication_inputs.py",
+      "UTC_start": "2026-11-07T05:35:16.733923+00:00",
+      "UTC_end": "2026-11-07T05:35:30.413003+00:00",
+      "exit_code": 0
+    },
+    "CPDB_pilot_terminal": {
+      "stage": "CPDB_pilot",
+      "UTC_start": "2026-11-07T05:35:30.413245+00:00",
+      "UTC_end": "2026-11-07T05:35:43.091887+00:00",
+      "exit_code": 0
+    },
+    "audit_CPDB_pilot_terminal": {
+      "stage": "audit_CPDB_pilot",
+      "UTC_start": "2026-11-07T05:35:43.092140+00:00",
+      "UTC_end": "2026-11-07T05:35:44.313084+00:00",
+      "exit_code": 1
+    },
+    "audit_CPDB_pilot_v2_terminal": {
+      "stage": "audit_CPDB_pilot_v2",
+      "UTC_start": "2026-11-07T05:37:26.703204+00:00",
+      "UTC_end": "2026-11-07T05:37:28.275159+00:00",
+      "exit_code": 0
+    },
+    "CPDB_global_terminal": {
+      "stage": "CPDB_global",
+      "UTC_start": "2026-11-07T05:37:28.275439+00:00",
+      "UTC_end": "2026-11-07T05:46:01.104115+00:00",
+      "exit_code": 0
+    },
+    "audit_CPDB_global_terminal": {
+      "stage": "audit_CPDB_global",
+      "UTC_start": "2026-11-07T05:46:01.104344+00:00",
+      "UTC_end": "2026-11-07T05:46:02.474178+00:00",
+      "exit_code": 0
+    },
+    "cytokine_response_terminal": {
+      "stage": "cytokine_response",
+      "UTC_start": "2026-11-07T05:46:02.476210+00:00",
+      "UTC_end": "2026-11-07T05:48:08.726309+00:00",
+      "exit_code": 0
+    },
+    "CPDB_CM01_High_terminal": {
+      "stage": "CPDB_CM01_High",
+      "UTC_start": "2026-11-07T05:46:02.734645+00:00",
+      "UTC_end": "2026-11-07T05:57:22.198632+00:00",
+      "exit_code": 0
+    },
+    "audit_CPDB_CM01_High_terminal": {
+      "stage": "audit_CPDB_CM01_High",
+      "UTC_start": "2026-11-07T05:57:22.199281+00:00",
+      "UTC_end": "2026-11-07T05:57:23.369659+00:00",
+      "exit_code": 0
+    },
+    "audit_completed_global_response_terminal": {
+      "UTC_start": "2026-11-07T05:55:37.365814+00:00",
+      "UTC_end": "2026-11-07T05:57:41.904494+00:00",
+      "exit_code": 0
+    },
+    "CPDB_CM02_High_terminal": {
+      "stage": "CPDB_CM02_High",
+      "UTC_start": "2026-11-07T05:57:23.369916+00:00",
+      "UTC_end": "2026-11-07T06:01:01.688506+00:00",
+      "exit_code": 0
+    },
+    "audit_CPDB_CM02_High_terminal": {
+      "stage": "audit_CPDB_CM02_High",
+      "UTC_start": "2026-11-07T06:01:01.688735+00:00",
+      "UTC_end": "2026-11-07T06:01:02.607563+00:00",
+      "exit_code": 0
+    },
+    "CellChat_global_terminal": {
+      "stage": "CellChat_global",
+      "UTC_start": "2026-11-07T05:46:02.475941+00:00",
+      "UTC_end": "2026-11-07T06:06:29.173750+00:00",
+      "exit_code": 0
+    },
+    "audit_completed_CellChat_terminal": {
+      "UTC_start": "2026-11-07T06:09:59.082290+00:00",
+      "UTC_end": "2026-11-07T06:10:12.415777+00:00",
+      "exit_code": 0
+    },
+    "CPDB_CM03_High_terminal": {
+      "stage": "CPDB_CM03_High",
+      "UTC_start": "2026-11-07T06:01:02.607797+00:00",
+      "UTC_end": "2026-11-07T06:13:46.664352+00:00",
+      "exit_code": 0
+    },
+    "audit_CPDB_CM03_High_terminal": {
+      "stage": "audit_CPDB_CM03_High",
+      "UTC_start": "2026-11-07T06:13:46.664600+00:00",
+      "UTC_end": "2026-11-07T06:13:47.834529+00:00",
+      "exit_code": 0
+    }
+  },
+  "controller_same_process_alive": true,
+  "deployed_code_readback": [
+    {
+      "name": "prepare_V4_communication.py",
+      "sha256": "e8cdd8e21100e2dfba1e6b2006802a2ba447ef4d0c416939d39befd9e6d92ccf",
+      "bytes": 7548
+    },
+    {
+      "name": "audit_V4_communication_inputs.py",
+      "sha256": "4de373247484e63dd482f5104b360da2e22e84f9e4fc7c7243dd0be57acb3ca9",
+      "bytes": 2725
+    },
+    {
+      "name": "run_V4_CPDB.py",
+      "sha256": "fb73ab68fa09d885e576a58d5e0a945c1c4222be217a371abd099d809764eb50",
+      "bytes": 2520
+    },
+    {
+      "name": "audit_V4_CPDB.py",
+      "sha256": "cec5d4c82e9bee73eb2ee2190f0c1c132559cb95a19ee2e6dcc4bd9403f50f8b",
+      "bytes": 2144
+    },
+    {
+      "name": "run_V4_CellChat.R",
+      "sha256": "89e621d115a76b5e512981a6d27481ddd18ca7d1424d763cca6a3630fad3b710",
+      "bytes": 2466
+    },
+    {
+      "name": "run_V4_cytokine_response.py",
+      "sha256": "271dd0a7be43a984ea9e7c0601ca1d5c8c1d802bb25b7c36ea5230fac9950c25",
+      "bytes": 8845
+    },
+    {
+      "name": "summarize_V4_communication.py",
+      "sha256": "61f339783d13bf1707adcda79339cd63e7d4d60ed3df929e5ec23e2b1fc8611c",
+      "bytes": 4603
+    },
+    {
+      "name": "audit_V4_communication_cohort.py",
+      "sha256": "1af3bd163bfbbffa7b861f52f9e561ce6d9671639d253d42b43334db8e7ee580",
+      "bytes": 3561
+    },
+    {
+      "name": "finite_V4_communication_controller.py",
+      "sha256": "43e17cc23fdff569a22472251be614c7fddc26d09b60d127f8bb4b64989e7260",
+      "bytes": 3132
+    },
+    {
+      "name": "audit_V4_CPDB_v2.py",
+      "sha256": "98e0cebc16df0b8afc091f52e2390a3e36f0f8b1eee74edf18e554c40837662b",
+      "bytes": 2270
+    },
+    {
+      "name": "finite_V4_communication_controller_v2.py",
+      "sha256": "6ea54f45842dda22e0432395847a006aa01daf372d2bc41b22a0eadb22ef02c5",
+      "bytes": 3286
+    }
+  ],
+  "active_CPDB_tags": [
+    "CM04_High"
+  ],
+  "review_note": "Historical failed ID-row-order assertion retained privately and in earlier sanitized logs; successful outputs reused. Terminal receipts are historical, not all current stage states."
+}

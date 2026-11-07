@@ -1,12 +1,30 @@
 # 当前V4通讯分析与空间队列进度
 
-本页为带时间检查点：**空间主模型6/53已完整拟合、原文评分及独立审核通过，另2张运行；CellCharter全部53张拟合及逐张审核通过。当前V4全局1,000次置换CPDB和细胞因子响应已完成并独立读回，完整25组High/Low仍在进行，尚无完整通讯或CM空间验证结论。**
+本页为带时间检查点：**空间主模型6/53已完整拟合、原文评分及独立审核通过，另2张运行；CellCharter全部53张拟合及逐张审核通过。当前V4全局1,000次置换CPDB、细胞因子响应和CellChat已完成并独立读回；25组High/Low已完成及审核3组，正在CM04_High，尚无完整通讯或CM空间验证结论。**
 
 06时前后继续后的较晚证据：[正式全局/响应独立审核](completed_global_response_v1/complete.json) · [全14CM候选均值](completed_global_response_v1/global_all14_CM_by_CM_candidate_CCI.tsv) · [所有2,923个数据库互作的组分覆盖](completed_global_response_v1/full_database_component_measurement.tsv) · [全部响应检验](completed_global_response_v1/response_full_family.tsv) · [各身份资格](completed_global_response_v1/CM_member_signature_eligibility.tsv) · [最新空间6/53](spatial_runtime_checkpoint_v2.json) · [通讯时间修正](communication_ETA_v2.json)。原先4–12小时为未标定暂估，现按全局/首个High正式耗时与25组细胞访问量修正为**剩余约18–30小时**，待首个大Low组实际完成再标定；没有为了赶时间截短正式置换或丢掉Low细胞。
 
+## 最新CellChat审核与队列检查点
+
+[06:13:53 UTC通讯快照](runtime_checkpoint_v6.json)确认有限控制器仍为原注册进程，CM01/02/03 High执行及输出审核均通过，25组中3组完成，正在CM04 High；尚未产生完整pooled-Low/median-CMT-Low比较。06:14:16 UTC的[空间快照](spatial_runtime_checkpoint_v3.json)仍为6/53全流程通过、另2张拟合、0主模型失败；CellCharter接受53/53。剩余通讯18–30小时、空间33–50小时仍是规划区间，首个大Low及后续空间来源实测后再标定。以下早期带时点记录仅作历史，当前状态以本段及首段为准。
+
+CellChat全局05:46:02–06:06:29 UTC执行exit0，约20分21秒；06:10:12 UTC从保存RDS独立重算`prob>0 & p<0.05`，模型计数、候选明细及全部45×45身份对逐项相符。[独立审核收据](completed_CellChat_v1/complete.json) · [全部身份对计数](completed_CellChat_v1/audited_identity_pair_counts.tsv) · [信号分类](completed_CellChat_v1/signaling_category_summary.tsv) · [部署代码SHA](completed_CellChat_v1/code_binding.json)。共31,161个身份对×数据库互作候选事件；拟合模型LR轴包含1,561项，不是31,161种分子。
+
+| CellChat数据库分类 | 身份对×互作候选事件 |
+|---|---:|
+| Cell-Cell Contact | 10,975 |
+| ECM-Receptor | 8,232 |
+| Secreted Signaling | 11,100 |
+| Non-protein Signaling（单列，不计作蛋白LR） | 854 |
+| 合计 | 31,161 |
+
+本轮实际CellChat2.2.0、triMean、raw.use=TRUE、population.size=FALSE、nboot=100、min.cells=10，使用与CPDB相同38,711细胞/45标签全局输入。模型保存的数据库总表有3,233行，该数是数据库总量，**不代表全部组分可测的合格互作数**；保留[原R审核收据](completed_CellChat_v1/receipt_raw_from_R.json)，审阅版仅纠正字段名，数值不变。CellChat版本/数据库并非宣称作者逐字节历史环境；候选数量不要求等于CPDB的57,450，也不能据两种算法都有候选就称通讯被验证。完整High/Low环境效应、来源内可比及空间支持仍待。
+
+[上一批公开内容独立同步核验](publication_checkpoint_v2.json)绑定提交18583c30；公开成功与科学验收分别记录，矩阵/模型/个体行继续私有。
+
 ## 已有真实结果与边界
 
-全局38,711个平衡抽样细胞、45标签、1,000置换已独立通过，共57,450个“有序细胞身份对×LR”候选事件，不是57,450个不同分子或真实通讯。数据库2,923互作中1,356具备本轮完整组分测量覆盖，正式CPDB保留恰为这1,356，未发现保留互作存在组分缺测；其余不可测不能称阴性。全局任务约8分33秒，首个正式CMT High约11分18秒。完整CMT家族与CellChat仍以实际终态审阅，不从当前全局计数推环境效应。
+全局38,711个平衡抽样细胞、45标签、1,000置换已独立通过，共57,450个“有序细胞身份对×LR”候选事件，不是57,450个不同分子或真实通讯。数据库2,923互作中1,356具备本轮完整组分测量覆盖，正式CPDB保留恰为这1,356，未发现保留互作存在组分缺测；其余不可测不能称阴性。全局任务约8分33秒，首个正式CMT High约11分18秒。CellChat已另行独立通过，完整CMT家族仍以实际终态审阅，不从当前全局计数推环境效应。
 
 ![全部V4全局候选图谱](figures/global_CM_candidate_CCI.png)
 

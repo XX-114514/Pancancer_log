@@ -1,3 +1,8 @@
+## 2026-11-07 V4 CellChat独立审核完成
+
+- 同38,711细胞/45标签的CellChat全局替代算法及保存模型计数审核通过，31,161个身份对×互作候选；854非蛋白信号单列。
+- 正式25组已有3组High审核通过，CM04 High在跑；6/53空间主模型完整通过。结果和原始字段名修正见[任务报告](inventories/analysis/2026-11-07/v4_communication_author_v1/README.md)，原输出保留。
+
 ## 2026-11-07 V4全局通讯/响应结果独立完成
 
 - [全局/响应全表及两图](inventories/analysis/2026-11-07/v4_communication_author_v1/README.md)：正式CPDB1,000置换、57,450身份对×LR候选、1,356完整组分可测互作；21个CM—免疫身份DE及生产—响应关联独立复核通过。

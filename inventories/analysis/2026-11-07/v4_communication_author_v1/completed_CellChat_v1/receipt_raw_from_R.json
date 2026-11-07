@@ -1,0 +1,13 @@
+{
+  "status": "PASS_independent_CellChat_saved_model_prob_p_and_complete45_by45_candidate_counts",
+  "UTC": "2026-11-07T06:10:12Z",
+  "CellChat": "2.2.0",
+  "n_identity_pairs": 2025,
+  "n_identity_pair_LR_events": 31161,
+  "n_LR_types_in_fitted_model": 1561,
+  "n_eligible_database_interactions": 3233,
+  "p_threshold": 0.05,
+  "nboot": 100,
+  "nonnegative_finite_model_and_p_range": true,
+  "no_independent_patient_or_contact_or_causal_claim": true
+}

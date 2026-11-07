@@ -1,0 +1,19 @@
+{
+  "status": "PUBLIC_CONTENT_COMMIT_ORDINARY_PUSH_INDEPENDENTLY_VERIFIED",
+  "UTC_verified": null,
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "branch": "main",
+  "content_commit": "18583c302e904ffa597181067d9727bf89d6d04c",
+  "verification": "ordinary git push exit0 and independent git ls-remote exact full SHA",
+  "scope": "45 reviewed aggregate/code/figure/log files, no individual rows or matrices",
+  "repository_check": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "warning": "existing historical internal-path patterns"
+  },
+  "science_state": "global CPDB and response independently accepted; complete25-group cohort and full53-section spatial results pending",
+  "no_automatic_public_push": true,
+  "verification_time_note": "Exact earlier git command time unavailable in this handoff; successful push and independent full remote SHA match observed before 2026-11-07T06:13:26Z",
+  "UTC_recorded": "2026-11-07T06:15:12.864519+00:00"
+}
