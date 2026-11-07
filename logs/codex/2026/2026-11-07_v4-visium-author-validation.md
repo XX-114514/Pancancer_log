@@ -45,3 +45,5 @@
 01:43:33 UTC／09:43:33 UTC+8新检查点：niche原4张＋恢复1张共5张均拟合/独立审核通过，恢复仅3/1,863个spot为HVG零信息、不做niche身份，1,860个实际建模成功；原轴/主模型不改。主cell2location仍两张活跃、0完成/0失败，原文真实分数及全范围结论待产出。全部失败和版本保留，未把该恢复当全数据QC合格证明。
 
 本里程碑再次执行仓库验证exit0（0错误、1项同前历史内部路径警告），52个本任务代码/清单文件约290KB扫描未命中实体服务器路径/样本ID/凭据，全部Python AST、JSON与TSV列数通过；新增参考留出和混淆均为标签/面板聚合，无逐细胞行或矩阵。另执行非TSV staged diff检查与本次变更人工审阅，更新状态/任务板和run索引。建议commit：`Audit fitted V4 reference and launch independent Visium niche validation`。下一步只接收现有有限队列的完整实际模型与指标、按全14CM/来源审阅；不因等待重启。
+
+内容提交`3981a3fb94d09cab24a21f88ca5c797b6e5c3b04`已普通push，独立ls-remote精确匹配。[第二里程碑发布收据](../../../inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/publication_checkpoint_v2.json)记录范围与验证。01:46:11 UTC／09:46:11 UTC+8／Melbourne12:46:11交接快照：主模型两张活跃，0完成/0失败，niche原7张＋恢复1张共8张独立通过；6个有限控制器身份核验存活。此为固定取证快照，没有自动推送/发消息或新的长期定时任务。主工作区本任务56个独立路径已更新，15个原tracked修改SHA再次不变；共享首页等仅在干净发布副本更新，未覆盖本机旧未提交工作。

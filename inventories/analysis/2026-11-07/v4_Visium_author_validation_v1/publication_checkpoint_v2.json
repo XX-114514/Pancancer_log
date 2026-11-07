@@ -1,0 +1,21 @@
+{
+  "status": "REFERENCE_COMPLETE_NICHE_IN_PROGRESS_PUBLIC_MILESTONE_INDEPENDENTLY_VERIFIED",
+  "UTC_verified": "2026-11-07T01:46:48.276617+00:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "branch": "main",
+  "content_commit": "3981a3fb94d09cab24a21f88ca5c797b6e5c3b04",
+  "verification": "ordinary push exit0 and separate git ls-remote refs/heads/main exact full SHA",
+  "scope": "38 reviewed files: reference and same-label heldout aggregates, generic code, methods and sanitized checkpoint records; no individual rows or matrices",
+  "repository_check": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "warning": "preexisting historical internal-path patterns only"
+  },
+  "latest_evidence_UTC": "2026-11-07T01:46:11.673462+00:00",
+  "main_spatial_fits_complete": 0,
+  "main_spatial_fits_active": 2,
+  "independently_audited_niche_sections": 8,
+  "all14_CM_real_spatial_validation_conclusion": "PENDING",
+  "no_automatic_public_push": true
+}

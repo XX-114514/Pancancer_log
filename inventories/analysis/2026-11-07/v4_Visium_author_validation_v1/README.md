@@ -2,6 +2,8 @@
 
 **同V4参考已完成250轮回归/1,000后验并通过独立审核；两张真实空间模型正在GPU拟合，53张全范围及最终CM空间结论尚未完成。** 本页是带时间的检查点，不是成功验证报告。对象是2026-11-06 V4 CM01–CM14，优先解释CM03，其余完整对照，原注释/CM定义不改。
 
+最新固定快照为[01:46:11 UTC／Melbourne 12:46:11](runtime_checkpoint_v6.json)：两张主模型仍拟合，0完成/0失败；**8张CellCharter niche已通过独立审核**，来源级技术汇总见[新表](niches/early_independent_audit_by_source_v2.tsv)。这仍不是任何CM的最终空间支持结论。[本里程碑公开同步收据](publication_checkpoint_v2.json)绑定已核验内容提交；服务器有限队列继续运行，本页不是实时监控。
+
 [实际运行状态](runtime_checkpoint_v1.json) · [参考独立核验](audit/reference_input_audit.json) · [原生输入范围](inputs/source_scope_summary.tsv) · [50标签参考覆盖](reference/node_reference_coverage.tsv) · [来源实测资格](reference/source_measurement_qualification.tsv) · [方法](../../../../methods/V4-Visium-CoVarNet-author-validation-20261107.md) · [run](../../../../runs/20261107_v4_Visium_author_validation_v1.md) · [代码](../../../../scripts/v4_visium_author_validation_20261107/)。
 
 最新取证为[01:24:56 UTC快照](runtime_checkpoint_v2.json)：参考回归仍在真实GPU生产，空间模型0完成/0失败。[13份部署代码独立SHA读回](audit/server_code_binding.json)与公开代码逐字节一致，包含尚未执行、仅在最终真实审核后生成报告的有限接续器；原检查点保留。

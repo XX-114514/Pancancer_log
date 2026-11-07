@@ -1,0 +1,94 @@
+{
+  "UTC": "2026-11-07T01:46:11.673462+00:00",
+  "run_id": "20261107_v4_Visium_author_validation_v2",
+  "stage_receipts": {
+    "fit_reference_retry2": {
+      "stage": "fit_reference_retry2",
+      "UTC_start": "2026-11-07T01:12:46.914689+00:00",
+      "UTC_end": "2026-11-07T01:29:49.010759+00:00",
+      "exit_code": 0
+    },
+    "measure_reference_separability": {
+      "stage": "measure_reference_separability",
+      "UTC_start": "2026-11-07T01:29:55.319122+00:00",
+      "UTC_end": "2026-11-07T01:30:16.076235+00:00",
+      "exit_code": 0
+    },
+    "all_models": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "all_scores": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "all_niches": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "all_niches_accepted_v2": {
+      "status": "no_terminal_receipt_yet"
+    }
+  },
+  "fit_S": {
+    "completed_successfully": 0,
+    "failed": 0
+  },
+  "niche_fit_S": {
+    "completed_successfully": 7,
+    "failed": 1
+  },
+  "niche_audit_S": {
+    "completed_successfully": 7,
+    "failed": 0
+  },
+  "score_S": {
+    "completed_successfully": 0,
+    "failed": 0
+  },
+  "audit_S": {
+    "completed_successfully": 0,
+    "failed": 0
+  },
+  "niche_retry2_fit_S": {
+    "completed_successfully": 1,
+    "failed": 0
+  },
+  "niche_retry2_audit_S": {
+    "completed_successfully": 1,
+    "failed": 0
+  },
+  "controllers": [
+    {
+      "role": "model_retry2",
+      "same_registered_process_alive": true
+    },
+    {
+      "role": "scoring_retry3",
+      "same_registered_process_alive": true
+    },
+    {
+      "role": "final",
+      "same_registered_process_alive": true
+    },
+    {
+      "role": "report",
+      "same_registered_process_alive": true
+    },
+    {
+      "role": "niches",
+      "same_registered_process_alive": true
+    },
+    {
+      "role": "niche_recovery",
+      "same_registered_process_alive": true
+    }
+  ],
+  "task_active_reference_fits": 0,
+  "task_active_section_fits": 2,
+  "task_active_niche_fits": 2,
+  "niche_zero_HVG_recovery_input_summary": [
+    {
+      "n_requested_spots": 1863,
+      "n_niche_eligible": 1860,
+      "n_zero_HVG_unassessable_for_niche": 3
+    }
+  ]
+}
