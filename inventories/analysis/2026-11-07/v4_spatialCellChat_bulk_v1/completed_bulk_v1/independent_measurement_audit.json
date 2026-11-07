@@ -1,0 +1,12 @@
+{
+  "status": "PASS_all_frozen_patient_scores_model_design_bindings_immune_statistics_full_FDR_and_signature_FC",
+  "UTC": "2026-11-07T08:20:17.137052+00:00",
+  "n_patient_score_entries_checked": 236136,
+  "n_model_designs_bound": 395,
+  "n_immune_slots": 4620,
+  "n_immune_tested": 1305,
+  "maximum_score_error": 0.0,
+  "maximum_immune_statistic_p_error": 3.3306690738754696e-16,
+  "maximum_signature_FC_error": 6.217248937900877e-15,
+  "independent_collection_or_clinical_validation_claim": false
+}

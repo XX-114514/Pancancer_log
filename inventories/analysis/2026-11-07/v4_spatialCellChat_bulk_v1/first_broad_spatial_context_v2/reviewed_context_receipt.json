@@ -1,0 +1,12 @@
+{
+  "status": "FIRST_NATIVE_IMAGING_INPUT_FULL4VARIANTS_ARRAY_AUDIT_AND_BROAD_CLASSIFIER_CONVERGENCE_ACCEPTED",
+  "UTC": "2026-11-07T08:53:57.437408+00:00",
+  "dataset": "XENIUM_BREAST_10X",
+  "n_native_inputs_in_this_partial_snapshot": 1,
+  "n_variants": 4,
+  "n_full_component_measured_protein_interactions": 15,
+  "exact_CM03_eligible": false,
+  "missing_IGHD_XCL1_not_negative": true,
+  "broad_context_only_not_independent_patient_or_contact_claim": true,
+  "no_cell_coordinate_patient_FOV_rows_exported": true
+}

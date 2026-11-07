@@ -1,3 +1,5 @@
+[V4成像空间与TCGA/六ICI](20261107_v4_spatialCellChat_bulk_v1.md)：13机会、同164样本程序、2100临床/4620免疫槽有限运行，测量限制与失败保留。
+
 [当前V4通讯正式运行](20261107_V4_CoVarNet_communication_v1.md)：同发现输入CPU准备已启动，独立审核/小试后全局和25CMT组，替代算法/响应及总审核接续；空间实测预计另报，未混用V5/K9。
 
 [V4 CM的Visium生产](20261107_v4_Visium_author_validation_v1.md)：53张准入，参考250轮/1000posterior及50标签×3面板留出诊断已完成并独立审核；主切片GPU拟合、CellCharter CPU正交分支有限接续，首批5张niche技术审核通过，全14CM真实空间结论尚待。

@@ -1,0 +1,5 @@
+n_cells	n_labels	n_candidate_identity_pair_LR_events	n_BH_identity_pair_LR_events	n_interactions_in_model	interaction_range_um	contact_range_um	scale_distance	seconds
+133517	11	273	265	15	100	10	0.0503	263.3738
+133517	11	314	303	15	100	20	0.0503	256.1779
+133517	11	273	265	15	250	10	0.0503	269.5892
+133517	11	314	303	15	250	20	0.0503	253.167

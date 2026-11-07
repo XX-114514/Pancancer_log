@@ -1,0 +1,9 @@
+{
+  "status": "ALL2100_CLINICAL_AND4620_IMMUNE_SLOTS_WRITTEN_PENDING_INDEPENDENT_AUDIT",
+  "UTC": "2026-11-07T08:08:31.079483+00:00",
+  "n_slots": 2100,
+  "n_immune_slots": 4620,
+  "n_fitted": 395,
+  "program_not_exact_NMF_activity": true,
+  "independent_patient_or_prediction_claim": false
+}

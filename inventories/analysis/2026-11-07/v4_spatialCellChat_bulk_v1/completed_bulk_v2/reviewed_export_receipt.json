@@ -1,0 +1,38 @@
+{
+  "status": "CURRENT_IMMUNE_CATEGORY_CANONICAL_VIEW_FULL4620_CORRECTION_ACCEPTED",
+  "UTC": "2026-11-07T08:31:32.383962+00:00",
+  "clinical_tables_reused_unchanged": "completed_bulk_v1/all2100_clinical_slots.tsv",
+  "original_RNA_P_unchanged_BH_BY_recomputed_full_family": true,
+  "n_immune_estimable": 1325,
+  "family_summary": [
+    {
+      "family": "ICI_response",
+      "n_planned": 84,
+      "n_estimable": 20,
+      "n_BH05": 0,
+      "n_BY05": 0
+    },
+    {
+      "family": "ICI_survival",
+      "n_planned": 168,
+      "n_estimable": 25,
+      "n_BH05": 0,
+      "n_BY05": 0
+    },
+    {
+      "family": "TCGA_survival",
+      "n_planned": 1848,
+      "n_estimable": 350,
+      "n_BH05": 5,
+      "n_BY05": 2
+    },
+    {
+      "family": "TCGA_immune",
+      "n_planned": 4620,
+      "n_estimable": 1325,
+      "n_BH05": 814,
+      "n_BY05": 688
+    }
+  ],
+  "no_patient_rows": true
+}

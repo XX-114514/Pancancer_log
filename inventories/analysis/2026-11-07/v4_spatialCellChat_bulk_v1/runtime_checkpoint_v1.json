@@ -1,0 +1,515 @@
+{
+  "UTC_evidence": "2026-11-07T08:19:36.834202+00:00",
+  "stages": {
+    "prepare_terminal": {
+      "stage": "prepare",
+      "UTC_start": "2026-11-07T07:49:48.074324+00:00",
+      "UTC_end": "2026-11-07T07:51:15.871456+00:00",
+      "exit_code": 0
+    },
+    "signatures_terminal": {
+      "stage": "signatures",
+      "UTC_start": "2026-11-07T07:51:15.871802+00:00",
+      "UTC_end": "2026-11-07T07:51:51.257961+00:00",
+      "exit_code": 0
+    },
+    "CellChat_DB_terminal": {
+      "stage": "CellChat_DB",
+      "UTC_start": "2026-11-07T07:51:51.258364+00:00",
+      "UTC_end": "2026-11-07T07:51:56.941821+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_prepare_terminal": {
+      "stage": "imaging_I001_prepare",
+      "UTC_start": "2026-11-07T07:59:33.612702+00:00",
+      "UTC_end": "2026-11-07T08:03:11.483232+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_broad_context_terminal": {
+      "stage": "imaging_I001_broad_context",
+      "UTC_start": "2026-11-07T08:03:11.483813+00:00",
+      "UTC_end": "2026-11-07T08:03:12.697016+00:00",
+      "exit_code": 1
+    },
+    "imaging_I001_CellChat_terminal": {
+      "stage": "imaging_I001_CellChat",
+      "UTC_start": "2026-11-07T08:03:12.697549+00:00",
+      "UTC_end": "2026-11-07T08:03:31.678622+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_CellChat_audit_terminal": {
+      "stage": "imaging_I001_CellChat_audit",
+      "UTC_start": "2026-11-07T08:03:31.679007+00:00",
+      "UTC_end": "2026-11-07T08:03:32.002727+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_prepare_terminal": {
+      "stage": "imaging_I002_prepare",
+      "UTC_start": "2026-11-07T08:03:32.003204+00:00",
+      "UTC_end": "2026-11-07T08:06:32.917334+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_broad_context_terminal": {
+      "stage": "imaging_I002_broad_context",
+      "UTC_start": "2026-11-07T08:06:32.917970+00:00",
+      "UTC_end": "2026-11-07T08:06:38.787368+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_CellChat_terminal": {
+      "stage": "imaging_I002_CellChat",
+      "UTC_start": "2026-11-07T08:06:38.787903+00:00",
+      "UTC_end": "2026-11-07T08:06:53.714923+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_CellChat_audit_terminal": {
+      "stage": "imaging_I002_CellChat_audit",
+      "UTC_start": "2026-11-07T08:06:53.715327+00:00",
+      "UTC_end": "2026-11-07T08:06:54.054129+00:00",
+      "exit_code": 0
+    },
+    "bulk_analysis_v1_terminal": {
+      "stage": "bulk_analysis_v1",
+      "UTC_start": "2026-11-07T08:06:34.031749+00:00",
+      "UTC_end": "2026-11-07T08:08:31.306746+00:00",
+      "exit_code": 0
+    },
+    "bulk_measurement_audit_v1_terminal": {
+      "stage": "bulk_measurement_audit_v1",
+      "UTC_start": "2026-11-07T08:08:31.307438+00:00",
+      "UTC_end": "2026-11-07T08:08:32.235945+00:00",
+      "exit_code": 1
+    },
+    "bulk_models_audit_v1_terminal": {
+      "stage": "bulk_models_audit_v1",
+      "UTC_start": "2026-11-07T08:08:32.236511+00:00",
+      "UTC_end": "2026-11-07T08:09:35.840566+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_prepare_terminal": {
+      "stage": "imaging_I003_prepare",
+      "UTC_start": "2026-11-07T08:06:54.055064+00:00",
+      "UTC_end": "2026-11-07T08:11:52.883974+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_broad_context_terminal": {
+      "stage": "imaging_I003_broad_context",
+      "UTC_start": "2026-11-07T08:11:52.884591+00:00",
+      "UTC_end": "2026-11-07T08:12:29.062625+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_CellChat_terminal": {
+      "stage": "imaging_I003_CellChat",
+      "UTC_start": "2026-11-07T08:12:29.062985+00:00",
+      "UTC_end": "2026-11-07T08:12:52.496922+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_CellChat_audit_terminal": {
+      "stage": "imaging_I003_CellChat_audit",
+      "UTC_start": "2026-11-07T08:12:52.497451+00:00",
+      "UTC_end": "2026-11-07T08:12:52.761270+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_prepare_terminal": {
+      "stage": "imaging_I004_prepare",
+      "UTC_start": "2026-11-07T08:12:52.762339+00:00",
+      "UTC_end": "2026-11-07T08:13:22.349683+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_broad_context_terminal": {
+      "stage": "imaging_I004_broad_context",
+      "UTC_start": "2026-11-07T08:13:22.350295+00:00",
+      "UTC_end": "2026-11-07T08:13:29.689686+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_CellChat_terminal": {
+      "stage": "imaging_I004_CellChat",
+      "UTC_start": "2026-11-07T08:13:29.690676+00:00",
+      "UTC_end": "2026-11-07T08:13:46.380476+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_CellChat_audit_terminal": {
+      "stage": "imaging_I004_CellChat_audit",
+      "UTC_start": "2026-11-07T08:13:46.381033+00:00",
+      "UTC_end": "2026-11-07T08:13:46.813160+00:00",
+      "exit_code": 0
+    },
+    "imaging_I005_prepare_terminal": {
+      "stage": "imaging_I005_prepare",
+      "UTC_start": "2026-11-07T08:13:46.814145+00:00",
+      "UTC_end": "2026-11-07T08:14:14.772133+00:00",
+      "exit_code": 0
+    },
+    "imaging_I005_broad_context_terminal": {
+      "stage": "imaging_I005_broad_context",
+      "UTC_start": "2026-11-07T08:14:14.772675+00:00",
+      "UTC_end": "2026-11-07T08:14:21.814005+00:00",
+      "exit_code": 0
+    },
+    "bulk_measurement_audit_v2_terminal": {
+      "stage": "bulk_measurement_audit_v2",
+      "UTC_start": "2026-11-07T08:14:54.915816+00:00",
+      "UTC_end": "2026-11-07T08:14:59.293244+00:00",
+      "exit_code": 1
+    },
+    "imaging_I001_int64_context_recovery_v2_terminal": {
+      "stage": "imaging_I001_int64_context_recovery_v2",
+      "UTC_start": "2026-11-07T08:14:59.294457+00:00",
+      "UTC_end": "2026-11-07T08:15:15.755830+00:00",
+      "exit_code": 0
+    }
+  },
+  "imaging": [
+    {
+      "unit_code": "I001",
+      "prepare_complete.json": {
+        "status": "NATIVE_IMAGING_BROAD_INPUT_PREPARED_PENDING_CELLCHAT_AND_AUDIT",
+        "UTC": "2026-11-07T08:03:10.454758+00:00",
+        "dataset": "XENIUM_BREAST_10X",
+        "platform": "Xenium",
+        "n_original_cells": 167780,
+        "n_measured_genes": 313,
+        "n_reference_common_genes": 264,
+        "n_QC_cells": 152351,
+        "n_broad_accepted_cells": 133532,
+        "n_broad_groups": 14,
+        "n_source_FOV": 1,
+        "CM03_exact_eligible": false,
+        "original_annotation_changed": false,
+        "reference_replay_not_independent_truth": true,
+        "coordinate_unit": "micrometre",
+        "cross_FOV_neighbors_forbidden": true
+      },
+      "context_complete.json": {
+        "status": "ALL14_BROAD_PARENT_SPATIAL_CONTEXT_MEASURED_PENDING_INDEPENDENT_REVIEW",
+        "UTC": "2026-11-07T08:15:15.680774+00:00",
+        "n_permutations": 999,
+        "neighbors": 6,
+        "maximum_edge_distance_um": 100,
+        "n_directed_edges": 801063,
+        "n_assessable_CM_contexts": 8,
+        "fixed_FOV_label_counts": true,
+        "segmented_cell_contact_or_exact_CM_or_patient_claim": false
+      },
+      "fine_converged": false,
+      "fine_n_iter": [
+        1000
+      ],
+      "broad_converged": true,
+      "broad_n_iter": [
+        693
+      ],
+      "reviewed_CM03_exact_eligible": false
+    },
+    {
+      "unit_code": "I002",
+      "prepare_complete.json": {
+        "status": "NATIVE_IMAGING_BROAD_INPUT_PREPARED_PENDING_CELLCHAT_AND_AUDIT",
+        "UTC": "2026-11-07T08:06:32.239340+00:00",
+        "dataset": "XENIUM_BREAST_10X",
+        "platform": "Xenium",
+        "n_original_cells": 118752,
+        "n_measured_genes": 313,
+        "n_reference_common_genes": 264,
+        "n_QC_cells": 111626,
+        "n_broad_accepted_cells": 97255,
+        "n_broad_groups": 14,
+        "n_source_FOV": 1,
+        "CM03_exact_eligible": false,
+        "original_annotation_changed": false,
+        "reference_replay_not_independent_truth": true,
+        "coordinate_unit": "micrometre",
+        "cross_FOV_neighbors_forbidden": true
+      },
+      "context_complete.json": {
+        "status": "ALL14_BROAD_PARENT_SPATIAL_CONTEXT_MEASURED_PENDING_INDEPENDENT_REVIEW",
+        "UTC": "2026-11-07T08:06:38.709631+00:00",
+        "n_permutations": 999,
+        "neighbors": 6,
+        "maximum_edge_distance_um": 100,
+        "n_directed_edges": 583132,
+        "n_assessable_CM_contexts": 8,
+        "fixed_FOV_label_counts": true,
+        "segmented_cell_contact_or_exact_CM_or_patient_claim": false
+      },
+      "fine_converged": false,
+      "fine_n_iter": [
+        1000
+      ],
+      "broad_converged": true,
+      "broad_n_iter": [
+        693
+      ],
+      "reviewed_CM03_exact_eligible": false
+    },
+    {
+      "unit_code": "I003",
+      "prepare_complete.json": {
+        "status": "NATIVE_IMAGING_BROAD_INPUT_PREPARED_PENDING_CELLCHAT_AND_AUDIT",
+        "UTC": "2026-11-07T08:11:51.876813+00:00",
+        "dataset": "Xenium_V1_Human_Colorectal_Cancer_Addon_FFPE",
+        "platform": "Xenium",
+        "n_original_cells": 388175,
+        "n_measured_genes": 480,
+        "n_reference_common_genes": 414,
+        "n_QC_cells": 282441,
+        "n_broad_accepted_cells": 256222,
+        "n_broad_groups": 15,
+        "n_source_FOV": 1,
+        "CM03_exact_eligible": false,
+        "original_annotation_changed": false,
+        "reference_replay_not_independent_truth": true,
+        "coordinate_unit": "micrometre",
+        "cross_FOV_neighbors_forbidden": true
+      },
+      "context_complete.json": {
+        "status": "ALL14_BROAD_PARENT_SPATIAL_CONTEXT_MEASURED_PENDING_INDEPENDENT_REVIEW",
+        "UTC": "2026-11-07T08:12:28.924526+00:00",
+        "n_permutations": 999,
+        "neighbors": 6,
+        "maximum_edge_distance_um": 100,
+        "n_directed_edges": 1536925,
+        "n_assessable_CM_contexts": 9,
+        "fixed_FOV_label_counts": true,
+        "segmented_cell_contact_or_exact_CM_or_patient_claim": false
+      },
+      "fine_converged": false,
+      "fine_n_iter": [
+        1000
+      ],
+      "broad_converged": false,
+      "broad_n_iter": [
+        1000
+      ],
+      "reviewed_CM03_exact_eligible": false
+    },
+    {
+      "unit_code": "I004",
+      "prepare_complete.json": {
+        "status": "NATIVE_IMAGING_BROAD_INPUT_PREPARED_PENDING_CELLCHAT_AND_AUDIT",
+        "UTC": "2026-11-07T08:13:21.322615+00:00",
+        "dataset": "Xenium_V1_Human_Lung_Cancer_Addon_FFPE",
+        "platform": "Xenium",
+        "n_original_cells": 161000,
+        "n_measured_genes": 480,
+        "n_reference_common_genes": 414,
+        "n_QC_cells": 140374,
+        "n_broad_accepted_cells": 104197,
+        "n_broad_groups": 15,
+        "n_source_FOV": 1,
+        "CM03_exact_eligible": false,
+        "original_annotation_changed": false,
+        "reference_replay_not_independent_truth": true,
+        "coordinate_unit": "micrometre",
+        "cross_FOV_neighbors_forbidden": true
+      },
+      "context_complete.json": {
+        "status": "ALL14_BROAD_PARENT_SPATIAL_CONTEXT_MEASURED_PENDING_INDEPENDENT_REVIEW",
+        "UTC": "2026-11-07T08:13:29.564972+00:00",
+        "n_permutations": 999,
+        "neighbors": 6,
+        "maximum_edge_distance_um": 100,
+        "n_directed_edges": 625088,
+        "n_assessable_CM_contexts": 10,
+        "fixed_FOV_label_counts": true,
+        "segmented_cell_contact_or_exact_CM_or_patient_claim": false
+      },
+      "fine_converged": false,
+      "fine_n_iter": [
+        1000
+      ],
+      "broad_converged": false,
+      "broad_n_iter": [
+        1000
+      ],
+      "reviewed_CM03_exact_eligible": false
+    },
+    {
+      "unit_code": "I005",
+      "prepare_complete.json": {
+        "status": "NATIVE_IMAGING_BROAD_INPUT_PREPARED_PENDING_CELLCHAT_AND_AUDIT",
+        "UTC": "2026-11-07T08:14:13.680763+00:00",
+        "dataset": "Xenium_V1_Human_Ovarian_Cancer_Addon_FFPE",
+        "platform": "Xenium",
+        "n_original_cells": 247636,
+        "n_measured_genes": 480,
+        "n_reference_common_genes": 414,
+        "n_QC_cells": 140453,
+        "n_broad_accepted_cells": 105480,
+        "n_broad_groups": 15,
+        "n_source_FOV": 1,
+        "CM03_exact_eligible": false,
+        "original_annotation_changed": false,
+        "reference_replay_not_independent_truth": true,
+        "coordinate_unit": "micrometre",
+        "cross_FOV_neighbors_forbidden": true
+      },
+      "context_complete.json": {
+        "status": "ALL14_BROAD_PARENT_SPATIAL_CONTEXT_MEASURED_PENDING_INDEPENDENT_REVIEW",
+        "UTC": "2026-11-07T08:14:21.733498+00:00",
+        "n_permutations": 999,
+        "neighbors": 6,
+        "maximum_edge_distance_um": 100,
+        "n_directed_edges": 632372,
+        "n_assessable_CM_contexts": 6,
+        "fixed_FOV_label_counts": true,
+        "segmented_cell_contact_or_exact_CM_or_patient_claim": false
+      },
+      "fine_converged": false,
+      "fine_n_iter": [
+        1000
+      ],
+      "broad_converged": false,
+      "broad_n_iter": [
+        1000
+      ],
+      "reviewed_CM03_exact_eligible": false
+    }
+  ],
+  "code_readback": [
+    {
+      "name": "audit_V4_bulk_measurement.py",
+      "sha256": "6b8f5266cd3d071e690678e40402a165b72bf5262edc903c00395b2606b16421",
+      "bytes": 5482
+    },
+    {
+      "name": "audit_V4_bulk_measurement_v2.py",
+      "sha256": "2f3946c5413904e4fd72ab1989e17d865e820e698edbe5d1849979edbd9037fe",
+      "bytes": 5636
+    },
+    {
+      "name": "audit_V4_bulk_models.py",
+      "sha256": "9c51f0e182eace3cb3994d62888904b51301dd8869f8c5907831e96fad699cef",
+      "bytes": 5258
+    },
+    {
+      "name": "audit_spatial_CellChat_V4.R",
+      "sha256": "4566ca81342d32192866cdf8c7c4ccf156cc3451084e862382e5b20e14fcb237",
+      "bytes": 1658
+    },
+    {
+      "name": "audit_spatial_CellChat_V4_original_v1.R",
+      "sha256": "788fc782b62bc894fa27738f8149950698289be9b0d8db8678a763d03e9debeb",
+      "bytes": 1658
+    },
+    {
+      "name": "audit_spatial_CellChat_V4_v2.R",
+      "sha256": "4566ca81342d32192866cdf8c7c4ccf156cc3451084e862382e5b20e14fcb237",
+      "bytes": 1658
+    },
+    {
+      "name": "clinical_helpers_v4.py",
+      "sha256": "a9601264a661da4d55c0cf2f3f73c35b527d45e1c8dd6872ccffcd22f3bceb48",
+      "bytes": 11314
+    },
+    {
+      "name": "derive_V4_CMT_signatures.R",
+      "sha256": "1b53169488d8fc8cf0bfb7d8ae1b94d74a79ca4669256881587b8e8289e66334",
+      "bytes": 2230
+    },
+    {
+      "name": "export_CellChat_DB.R",
+      "sha256": "6bfa0357b9ee21436904ca0aa80034b44503a56373d103a73fa8b75dcee47258",
+      "bytes": 614
+    },
+    {
+      "name": "measure_imaging_broad_CM_context.py",
+      "sha256": "1ca961886f55a66a3c61fb306dc1d24c02df1336cd3869c9f60b1d1dbda295dd",
+      "bytes": 3680
+    },
+    {
+      "name": "measure_imaging_broad_CM_context_original_v1.py",
+      "sha256": "6b79250246062724b9f70232d1e6256a2b37da49ab47aa41d02799f9103dd480",
+      "bytes": 3663
+    },
+    {
+      "name": "measure_imaging_broad_CM_context_v2.py",
+      "sha256": "1ca961886f55a66a3c61fb306dc1d24c02df1336cd3869c9f60b1d1dbda295dd",
+      "bytes": 3680
+    },
+    {
+      "name": "prepare_V4_extension.py",
+      "sha256": "e6060d5b5ce90b8fbf2dac59137dd8cc3d2f804c5ee91fb794285cdbda61cfe2",
+      "bytes": 2721
+    },
+    {
+      "name": "prepare_imaging_V4.py",
+      "sha256": "34d1f75d753ac300f71e636d63c927fea035d829c4f678db7e31ff84076a5fbe",
+      "bytes": 10321
+    },
+    {
+      "name": "prepare_imaging_V4_original_v1.py",
+      "sha256": "5a0b1415bcd80f20f12ca97f3695959dfc1941c5903577424cea24eccf17f58d",
+      "bytes": 9551
+    },
+    {
+      "name": "prepare_imaging_V4_v2.py",
+      "sha256": "34d1f75d753ac300f71e636d63c927fea035d829c4f678db7e31ff84076a5fbe",
+      "bytes": 10321
+    },
+    {
+      "name": "run_V4_bulk.py",
+      "sha256": "4d00f2b1d91b8a4c251dc461cc4324551e7268441579f86af67db88fb482bb62",
+      "bytes": 8277
+    },
+    {
+      "name": "run_V4_bulk_v2.py",
+      "sha256": "8290377968ac132de3d371b280890d05022adfa3e44ba8c5a7922cc20acb9e39",
+      "bytes": 8524
+    },
+    {
+      "name": "run_spatial_CellChat_V4.R",
+      "sha256": "b5002b704c61687948bf401961a375a857413af46485ea47df7c8d212f5bde6d",
+      "bytes": 7368
+    },
+    {
+      "name": "run_spatial_CellChat_V4_original_v1.R",
+      "sha256": "573360b1ee07ef735cdb47bd517935d8161e7e70b34071b426994f908b8abd0f",
+      "bytes": 7348
+    },
+    {
+      "name": "run_spatial_CellChat_V4_v2.R",
+      "sha256": "b5002b704c61687948bf401961a375a857413af46485ea47df7c8d212f5bde6d",
+      "bytes": 7368
+    }
+  ],
+  "config/context_integer_precision_recovery_v3.json": {
+    "UTC": "2026-11-07T08:04:38.440685+00:00",
+    "status": "CONTEXT_INTEGER_PRECISION_CORRECTION_ORIGINAL_SOURCE_PRESERVED",
+    "original_SHA256": "6b79250246062724b9f70232d1e6256a2b37da49ab47aa41d02799f9103dd480",
+    "current_SHA256": "1ca961886f55a66a3c61fb306dc1d24c02df1336cd3869c9f60b1d1dbda295dd",
+    "reason": "pandas categorical codes int8 can overflow labelsA*K+labelsB for >=12 observed major groups; use int64 before multiplication",
+    "threshold_seed_graph_or_cell_selection_changed": false,
+    "classification_CellChat_or_clinical_outputs_rerun": false
+  },
+  "config/imaging_cache_readback_v4.json": {
+    "UTC": "2026-11-07T08:09:13.318842+00:00",
+    "status": "EXACT_REFERENCE_PANEL_MODEL_REUSE_ENABLED_ORIGINAL_SOURCE_PRESERVED",
+    "original_SHA256": "5a0b1415bcd80f20f12ca97f3695959dfc1941c5903577424cea24eccf17f58d",
+    "current_SHA256": "34d1f75d753ac300f71e636d63c927fea035d829c4f678db7e31ff84076a5fbe",
+    "reuse_rule": "same run complete preparation, same native/common gene order, same source reference and fixed parameters; re-evaluate heldout diagnostics for each unit",
+    "cell_selection_hyperparameters_or_labels_changed": false,
+    "active_first_unit_restarted": false
+  },
+  "config/geometry_IO_code_binding_v5.json": {
+    "UTC": "2026-11-07T08:13:51.717238+00:00",
+    "status": "PASS_geometry_group_interface_and_lexical_ID_auditor_code_SHA_readback",
+    "new_code": [
+      {
+        "name": "audit_V4_bulk_measurement_v2.py",
+        "sha256": "2f3946c5413904e4fd72ab1989e17d865e820e698edbe5d1849979edbd9037fe"
+      },
+      {
+        "name": "run_spatial_CellChat_V4_v2.R",
+        "sha256": "b5002b704c61687948bf401961a375a857413af46485ea47df7c8d212f5bde6d"
+      },
+      {
+        "name": "audit_spatial_CellChat_V4_v2.R",
+        "sha256": "4566ca81342d32192866cdf8c7c4ccf156cc3451084e862382e5b20e14fcb237"
+      },
+      {
+        "name": "geometry_and_audit_IO_recovery_before_LR_v5.json",
+        "sha256": "6e49b87c81036235b8954ee817042fe8e6233f63f3bec92fc871f217c79f8183"
+      }
+    ]
+  }
+}

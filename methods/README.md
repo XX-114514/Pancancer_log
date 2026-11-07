@@ -1,3 +1,5 @@
+[当前V4成像CellChat及TCGA/六ICI](V4-spatial-CellChat-TCGA-ICI-20261107.md)：原生面板身份/几何、独立邻近背景、冻结表达程序及完整临床免疫家族。
+
 [当前V4原文通讯计划](V4-CoVarNet-communication-plan-20261107.md)：同14CM/164样本、全局CPDB、两种CMT Low定义、CellChat及免疫响应/生产网络，完整家族/缺测/来源/非患者边界。
 
 [当前V4全部CM的Visium原文方法检验](V4-Visium-CoVarNet-author-validation-20261107.md)：同标签实测参考、原生切片准入、真实cell2location N5/alpha20、作者60近邻有向Moran及独立审核；运行中与科学验证分开。

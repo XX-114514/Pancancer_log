@@ -1,0 +1,151 @@
+family	cohort	axis	endpoint	model	status	n	events	reason	log_effect	se	effect	CI_low	CI_high	p	BH_q	BY_q	predictors
+ICI_response	IMvigor210	CM03	response	pan_T_adjusted	exploratory_model_numeric_audit_pass	298	68		-0.11794055061446865	0.1634841906406536	0.8887488866193284	0.6450873375684876	1.224445958657864	0.4698200755551759	1.0	1.0	joint;pan_T
+ICI_survival	IMvigor210	CM03	OS	pan_T_adjusted	exploratory_model_numeric_audit_pass	347	231		0.08697385307333196	0.08001195285273426	1.0908681564956897	0.9325340862452474	1.276085617039148	0.27756494142550353	1.0	1.0	joint;pan_T
+ICI_survival	IMvigor210	CM03	PFS	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_response	Riaz2017	CM03	response	pan_T_adjusted	exploratory_model_numeric_audit_pass	49	10		-0.346807442550463	0.4108649460041002	0.7069414419935143	0.3159716651322768	1.5816804402339357	0.39733766889015687	1.0	1.0	joint;pan_T
+ICI_survival	Riaz2017	CM03	OS	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_survival	Riaz2017	CM03	PFS	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_response	Hugo2016	CM03	response	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_survival	Hugo2016	CM03	OS	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_survival	Hugo2016	CM03	PFS	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_response	Jung2019	CM03	response	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_survival	Jung2019	CM03	OS	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_survival	Jung2019	CM03	PFS	pan_T_adjusted	unavailable	0	0	insufficient_patients_or_events									
+ICI_response	Rose2021	CM03	response	pan_T_adjusted	exploratory_model_numeric_audit_pass	87	16		0.19795500603506003	0.2943019382569107	1.2189075491042818	0.6846299587087492	2.170129417160751	0.4978335920495056	1.0	1.0	joint;pan_T
+ICI_survival	Rose2021	CM03	OS	pan_T_adjusted	exploratory_model_numeric_audit_pass	88	57		-0.1448602408319858	0.13364433005684168	0.8651431963552118	0.6657752500759551	1.124212337593389	0.2801200389286544	1.0	1.0	joint;pan_T
+ICI_survival	Rose2021	CM03	PFS	pan_T_adjusted	exploratory_model_numeric_audit_pass	87	77		-0.2037723085746059	0.11471513539129807	0.8156480661167129	0.6514113424048207	1.0212928827795775	0.07705015037082732	1.0	1.0	joint;pan_T
+ICI_response	SU2C_MARK	CM03	response	pan_T_adjusted	exploratory_model_numeric_audit_pass	123	48		-0.12542318976282946	0.19333755176764664	0.8821235179415446	0.6038890492429266	1.2885511036855104	0.515874665059991	1.0	1.0	joint;pan_T
+ICI_survival	SU2C_MARK	CM03	OS	pan_T_adjusted	exploratory_model_numeric_audit_pass	127	60		-0.08506304508280055	0.12124383662307318	0.9184543785437929	0.7241903803607257	1.164829675100187	0.48687242302568057	1.0	1.0	joint;pan_T
+ICI_survival	SU2C_MARK	CM03	PFS	pan_T_adjusted	exploratory_model_numeric_audit_pass	123	94		-0.06083814186317601	0.10004249413773425	0.9409755319972157	0.7734289794045693	1.1448173981004726	0.5462553835679674	1.0	1.0	joint;pan_T
+TCGA_survival	ACC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	77	40		0.44796668045192367	0.1832880499728023	1.5651265454755388	1.092776934154127	2.241647885117875	0.00945795033002392	0.4965480389990958	1.0	joint;pan_T;age;sex
+TCGA_survival	ACC	CM03	PFI	stage_sensitivity	unavailable	75	39	insufficient_patients_or_events									
+TCGA_survival	ACC	CM03	OS	clinical_basic	unavailable	77	27	insufficient_patients_or_events									
+TCGA_survival	ACC	CM03	OS	stage_sensitivity	unavailable	75	26	insufficient_patients_or_events									
+TCGA_survival	BLCA	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	406	174		0.061235314358800204	0.08089917542378552	1.0631490589938346	0.9072592208070557	1.245824672505424	0.44874625874237273	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	BLCA	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	404	174		0.06503153891971322	0.08452043215961665	1.0671926819577429	0.904268899055766	1.259470741074248	0.44114989388795267	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	BLCA	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	405	177		0.06078241493783605	0.08073925276560032	1.0626676684196024	0.9071327114126831	1.2448703032059631	0.4513032692412857	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	BLCA	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	403	176		0.07660176255329362	0.08317192793919101	1.0796120488259855	0.9172133103111612	1.270764567922406	0.3566267281407498	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	BRCA	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	1077	145		0.06509922646643634	0.08696374027588598	1.0672649200570477	0.9000097301177705	1.265602327916306	0.45306852386844565	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	BRCA	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	1053	136		0.08469905881493991	0.0899887839179116	1.0883894761893618	0.9123980209223659	1.298327730568968	0.34526368560997256	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	BRCA	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	1077	151		0.2208989396356137	0.08605994346324215	1.24719738197303	1.0536090388739359	1.476355319865945	0.009673013746735633	0.4965480389990958	1.0	joint;pan_T;age;sex
+TCGA_survival	BRCA	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	1053	140		0.2969000810789769	0.08911490239338613	1.3456808337534258	1.1300194809878932	1.60250060888173	0.000776960464296551	0.08446017282470743	0.6840721169362011	joint;pan_T;age;sex;stage
+TCGA_survival	CESC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	291	71		0.12093604355697582	0.12903901158842201	1.12855273184067	0.8763581547433982	1.4533227786508867	0.3459616208767513	1.0	1.0	joint;pan_T;age
+TCGA_survival	CESC	CM03	PFI	stage_sensitivity	unavailable	304	0	overall_stage_availability_below70pct									
+TCGA_survival	CESC	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	291	71		0.0712703492918563	0.1307918226019551	1.0738715070294063	0.8310364493890002	1.387664782281777	0.5845736592452557	1.0	1.0	joint;pan_T;age
+TCGA_survival	CESC	CM03	OS	stage_sensitivity	unavailable	304	0	overall_stage_availability_below70pct									
+TCGA_survival	CHOL	CM03	PFI	clinical_basic	unavailable	36	20	insufficient_patients_or_events									
+TCGA_survival	CHOL	CM03	PFI	stage_sensitivity	unavailable	36	20	insufficient_patients_or_events									
+TCGA_survival	CHOL	CM03	OS	clinical_basic	unavailable	36	18	insufficient_patients_or_events									
+TCGA_survival	CHOL	CM03	OS	stage_sensitivity	unavailable	36	18	insufficient_patients_or_events									
+TCGA_survival	COAD	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	281	82		0.21493225742588906	0.1285806904114211	1.2397779083744531	0.9635933631902026	1.5951223003493618	0.09222296315701814	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	COAD	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	271	79		0.04143129790459611	0.1339747438160043	1.0423015510909943	0.8015890571739865	1.3552985955631487	0.756769529577626	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	COAD	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	282	69		0.052105850590383626	0.13662112650865596	1.0534872488590077	0.8059999831617951	1.3769670058240366	0.7024185935825578	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	COAD	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	272	64		-0.14805944010736188	0.1447291733112278	0.8623798534674899	0.6493855831657364	1.145234866535068	0.30854481603307227	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	DLBC	CM03	PFI	clinical_basic	unavailable	46	12	insufficient_patients_or_events									
+TCGA_survival	DLBC	CM03	PFI	stage_sensitivity	unavailable	40	10	insufficient_patients_or_events									
+TCGA_survival	DLBC	CM03	OS	clinical_basic	unavailable	46	9	insufficient_patients_or_events									
+TCGA_survival	DLBC	CM03	OS	stage_sensitivity	unavailable	40	7	insufficient_patients_or_events									
+TCGA_survival	ESCA	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	181	85		0.04697640041466564	0.11438879247671842	1.0480972741267298	0.8375907752153219	1.311509066882315	0.6811848173111004	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	ESCA	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	175	83		0.057136519845780304	0.1168851932447284	1.0588003477893564	0.8420141506243333	1.3314006369698475	0.6249764578399603	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	ESCA	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	181	76		0.15042947586870323	0.12024781124037062	1.1623333296641942	0.9182769603259096	1.4712541287856737	0.2084592377931119	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	ESCA	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	175	74		0.13708481768400818	0.12337442531324819	1.1469254239531912	0.9005684932264801	1.4606750491540832	0.26519619797658434	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	GBM	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	152	119		0.09310640435772116	0.10627816936920241	1.0975785161920362	0.8911889511519844	1.3517656358386163	0.37898865136397386	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	GBM	CM03	PFI	stage_sensitivity	unavailable	152	0	overall_stage_availability_below70pct									
+TCGA_survival	GBM	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	152	120		0.04682369074017292	0.09718197726929327	1.0479372317534816	0.8661882764902119	1.2678218714122254	0.6292698706970059	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	GBM	CM03	OS	stage_sensitivity	unavailable	152	0	overall_stage_availability_below70pct									
+TCGA_survival	HNSC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	517	197		-0.07752837480786377	0.07582331929644645	0.9254007659551685	0.7976047694274541	1.0736728395507709	0.30796759066247054	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	HNSC	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	517	197		-0.1060039807285548	0.07598107549716604	0.8994210677176708	0.7749731551824296	1.0438532633610582	0.1645339528529189	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	HNSC	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	517	220		0.004583081226230287	0.07250166925324633	1.004593599605717	0.8715167534516756	1.1579907057113512	0.9495878473226639	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	HNSC	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	517	220		-0.0319588970248366	0.0725313456029042	0.9685463913993215	0.8401957871136044	1.1165041847154704	0.6598679514431757	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	KICH	CM03	PFI	clinical_basic	unavailable	65	11	insufficient_patients_or_events									
+TCGA_survival	KICH	CM03	PFI	stage_sensitivity	unavailable	65	11	insufficient_patients_or_events									
+TCGA_survival	KICH	CM03	OS	clinical_basic	unavailable	65	9	insufficient_patients_or_events									
+TCGA_survival	KICH	CM03	OS	stage_sensitivity	unavailable	65	9	insufficient_patients_or_events									
+TCGA_survival	KIRC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	526	158		-0.2375178306072292	0.08036437770894976	0.7885828299450102	0.673658474478357	0.9231129767433213	0.00326616119610647	0.2514944121001982	1.0	joint;pan_T;age;sex
+TCGA_survival	KIRC	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	523	157		-0.10726755776385646	0.08641836798855089	0.8982852976290537	0.7583217136655559	1.0640819870976206	0.21433109670826803	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	KIRC	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	528	173		-0.21493039626479443	0.07773844505275558	0.8065975804279242	0.6926033926717459	0.9393538403594399	0.005864574039908668	0.40139751206485996	1.0	joint;pan_T;age;sex
+TCGA_survival	KIRC	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	525	172		-0.13564808692229374	0.08303918305217105	0.8731498512798562	0.7420008533822648	1.0274794958992666	0.10263834602535336	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	KIRP	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	281	54		-0.006278989615546927	0.1403163127408275	0.9937406820454961	0.7548026439936815	1.3083162214791002	0.9643113206234702	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	KIRP	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	263	51		0.2527484382995424	0.15927933931838895	1.287559335474847	0.9422929488001244	1.759335082024558	0.11085437474531716	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	KIRP	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	283	44		0.1600973214749326	0.155898891270903	1.173625084358241	0.8646205788770399	1.5930639083606308	0.30278544891911263	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	KIRP	CM03	OS	stage_sensitivity	unavailable	265	39	insufficient_patients_or_events									
+TCGA_survival	LAML	CM03	PFI	clinical_basic	unavailable	0	0	insufficient_patients_or_events									
+TCGA_survival	LAML	CM03	PFI	stage_sensitivity	unavailable	0	0	overall_stage_availability_below70pct									
+TCGA_survival	LAML	CM03	OS	clinical_basic	unavailable	0	0	insufficient_patients_or_events									
+TCGA_survival	LAML	CM03	OS	stage_sensitivity	unavailable	0	0	overall_stage_availability_below70pct									
+TCGA_survival	LGG	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	504	189		0.28817901713663324	0.08574033922331906	1.333996090909758	1.1276411265784285	1.5781133985083917	0.0006231735788779162	0.07677498491775928	0.6218271251876096	joint;pan_T;age;sex
+TCGA_survival	LGG	CM03	PFI	stage_sensitivity	unavailable	508	0	overall_stage_availability_below70pct									
+TCGA_survival	LGG	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	504	122		0.4635357159230603	0.10877494261536233	1.5896847337682916	1.284457985757171	1.9674427507928756	1.1027268362127316e-05	0.006792797311070427	0.055017212031362873	joint;pan_T;age;sex
+TCGA_survival	LGG	CM03	OS	stage_sensitivity	unavailable	508	0	overall_stage_availability_below70pct									
+TCGA_survival	LIHC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	364	179		0.14184069630318485	0.08367588014172453	1.1523930534401072	0.9780797886634669	1.357772407741624	0.08913531932542734	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	LIHC	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	340	163		0.10300175657508222	0.0861497325929615	1.1084933562261055	0.9362696847167402	1.3123969950700312	0.23104808062433854	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	LIHC	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	363	128		0.15209267009033844	0.09662897955314395	1.1642681242653012	0.963386950789319	1.407036148942689	0.11408907660017867	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	LIHC	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	339	114		0.09426585653978176	0.09996423411918039	1.098851844036344	0.9033329823366301	1.3366891265485796	0.3445529344446566	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	LUAD	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	490	200		0.12769433796180682	0.07167859571398001	1.1362056546779975	0.9872858073951161	1.3075882181760239	0.07402202051963082	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	LUAD	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	482	197		0.10602557537530238	0.07220541251015375	1.1118503121319163	0.9651255976138449	1.280881078736509	0.14094185880644322	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	LUAD	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	490	179		0.09880097063349322	0.0732865582754664	1.103846579808766	0.9561498000563705	1.2743581305812894	0.17670434167904114	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	LUAD	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	482	177		0.08763043794254377	0.07331448672366955	1.091584639211665	0.9454767739338495	1.2602710689604188	0.2313792081893782	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	LUSC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	487	143		0.17983115569467983	0.087342037312837	1.1970152368522315	1.0086782017069047	1.4205179360788363	0.03777304815923771	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	LUSC	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	483	141		0.18753170754483853	0.08937873622310429	1.2062684966270592	1.0124259530636206	1.437224798072189	0.03405067728919373	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	LUSC	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	486	211		0.12613382621301492	0.071760486987444	1.1344339751277377	0.9855881313979127	1.305758869172647	0.07715645999509574	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	LUSC	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	482	209		0.1138796813332689	0.07283817533202347	1.1206172855947554	0.9715299885763405	1.2925829521885943	0.11600736461365237	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	MESO	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	83	59		0.18499169317901024	0.15111066551073118	1.2032084452490146	0.8947730115783886	1.6179640467304381	0.22053829101115247	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	MESO	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	83	59		0.14777361704379643	0.15421240825166377	1.159250432115576	0.8568583129812262	1.5683591370952763	0.3376757413980823	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	MESO	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	85	73		0.11495604942267046	0.13658354428897723	1.1218241316701858	0.858346257500422	1.466179145537834	0.3995286985721913	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	MESO	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	85	73		0.1080733373886805	0.13855254776598094	1.1141294497349348	0.8491752826277255	1.4617528985600987	0.4350863687168057	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	OV	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	418	302		-0.02299453917398619	0.060530422256715344	0.9772678204482421	0.8679387192146993	1.1003684612063138	0.7040862474604055	1.0	1.0	joint;pan_T;age
+TCGA_survival	OV	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	415	302		0.010003868909797988	0.06144355728601483	1.0100540748847153	0.8954530359375708	1.1393218775823608	0.870646803814797	1.0	1.0	joint;pan_T;age;stage
+TCGA_survival	OV	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	418	262		0.04029277491941059	0.06595393164482484	1.0411155420949463	0.9148666782948671	1.1847863712905926	0.5409662320371754	1.0	1.0	joint;pan_T;age
+TCGA_survival	OV	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	415	261		0.048675881256299465	0.06599167038378628	1.0498800097977563	0.922500101817745	1.1948486865215588	0.4603462986569897	1.0	1.0	joint;pan_T;age;stage
+TCGA_survival	PAAD	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	177	104		0.3311579453401799	0.12433614979514018	1.3925797264175699	1.091397616354128	1.7768760581569678	0.00697034845093742	0.4253575597544607	1.0	joint;pan_T;age;sex
+TCGA_survival	PAAD	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	174	104		0.2508170467340279	0.12524345691626493	1.285074954163052	1.0053541537012094	1.6426227829640723	0.042393830948366996	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	PAAD	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	177	93		0.36914785062428457	0.1306670741898128	1.4465014540084014	1.1196771504348946	1.8687230114821236	0.003829099821203605	0.2764415947183379	1.0	joint;pan_T;age;sex
+TCGA_survival	PAAD	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	174	93		0.32097703951624784	0.13088382211120214	1.3784739301021216	1.066566646866418	1.78159553512569	0.012009054384144636	0.5690444231256228	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	PCPG	CM03	PFI	clinical_basic	unavailable	176	20	insufficient_patients_or_events									
+TCGA_survival	PCPG	CM03	PFI	stage_sensitivity	unavailable	177	0	overall_stage_availability_below70pct									
+TCGA_survival	PCPG	CM03	OS	clinical_basic	unavailable	177	6	insufficient_patients_or_events									
+TCGA_survival	PCPG	CM03	OS	stage_sensitivity	unavailable	177	0	overall_stage_availability_below70pct									
+TCGA_survival	PRAD	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	495	92		0.022802147900959895	0.11949978343159363	1.023064104141286	0.8094361153558394	1.2930732164357226	0.8485527132672754	1.0	1.0	joint;pan_T;age
+TCGA_survival	PRAD	CM03	PFI	stage_sensitivity	unavailable	495	0	overall_stage_availability_below70pct									
+TCGA_survival	PRAD	CM03	OS	clinical_basic	unavailable	495	10	insufficient_patients_or_events									
+TCGA_survival	PRAD	CM03	OS	stage_sensitivity	unavailable	495	0	overall_stage_availability_below70pct									
+TCGA_survival	READ	CM03	PFI	clinical_basic	unavailable	90	19	insufficient_patients_or_events									
+TCGA_survival	READ	CM03	PFI	stage_sensitivity	unavailable	81	18	insufficient_patients_or_events									
+TCGA_survival	READ	CM03	OS	clinical_basic	unavailable	91	16	insufficient_patients_or_events									
+TCGA_survival	READ	CM03	OS	stage_sensitivity	unavailable	82	13	insufficient_patients_or_events									
+TCGA_survival	SARC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	258	137		0.004885403187321888	0.09306594311378276	1.004897356226685	0.8373410324364358	1.2059825775085713	0.9581351164829686	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	SARC	CM03	PFI	stage_sensitivity	unavailable	258	0	overall_stage_availability_below70pct									
+TCGA_survival	SARC	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	258	98		-0.02337571338069624	0.1089484385079128	0.9768953821484857	0.7890586290441621	1.2094469948564797	0.8302238230046007	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	SARC	CM03	OS	stage_sensitivity	unavailable	258	0	overall_stage_availability_below70pct									
+TCGA_survival	SKCM	CM03	PFI	clinical_basic	unavailable	101	36	insufficient_patients_or_events									
+TCGA_survival	SKCM	CM03	PFI	stage_sensitivity	unavailable	96	32	insufficient_patients_or_events									
+TCGA_survival	SKCM	CM03	OS	clinical_basic	unavailable	101	28	insufficient_patients_or_events									
+TCGA_survival	SKCM	CM03	OS	stage_sensitivity	unavailable	96	26	insufficient_patients_or_events									
+TCGA_survival	STAD	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	387	134		0.01979384737119157	0.0904289255529812	1.0199910445158265	0.8543222224362318	1.2177861040833953	0.826667734515925	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	STAD	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	372	128		0.015974245642265926	0.09285823655142886	1.0161025160014165	0.8470226036244237	1.218933613585372	0.8633577980258962	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	STAD	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	385	156		-0.004139702478652386	0.08491421286938185	0.9958688542781057	0.84318274956285	1.1762038246576607	0.9611202013730591	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	STAD	CM03	OS	stage_sensitivity	exploratory_model_numeric_audit_pass	370	146		-0.06071285526908966	0.08825053626719497	0.9410934310021664	0.7916119998769321	1.1188016932703369	0.4922432888919581	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	TGCT	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	132	33		0.050066537356418576	0.18621519667943912	1.0513410475028118	0.729850727858068	1.5144439211674774	0.7876741419341693	1.0	1.0	joint;pan_T;age
+TCGA_survival	TGCT	CM03	PFI	stage_sensitivity	unavailable	132	0	overall_stage_availability_below70pct									
+TCGA_survival	TGCT	CM03	OS	clinical_basic	unavailable	132	4	insufficient_patients_or_events									
+TCGA_survival	TGCT	CM03	OS	stage_sensitivity	unavailable	132	0	overall_stage_availability_below70pct									
+TCGA_survival	THCA	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	503	52		0.0767105724009302	0.13830813077884624	1.0797295276398349	0.8233504375221482	1.4159412562721578	0.5776795780394053	1.0	1.0	joint;pan_T;age;sex
+TCGA_survival	THCA	CM03	PFI	stage_sensitivity	exploratory_model_numeric_audit_pass	501	52		0.10275568386489793	0.13959606083858397	1.1082206198195872	0.8429458184233736	1.4569773232761496	0.4588244614976027	1.0	1.0	joint;pan_T;age;sex;stage
+TCGA_survival	THCA	CM03	OS	clinical_basic	unavailable	503	16	insufficient_patients_or_events									
+TCGA_survival	THCA	CM03	OS	stage_sensitivity	unavailable	501	16	insufficient_patients_or_events									
+TCGA_survival	THYM	CM03	PFI	clinical_basic	unavailable	118	21	insufficient_patients_or_events									
+TCGA_survival	THYM	CM03	PFI	stage_sensitivity	unavailable	116	21	insufficient_patients_or_events									
+TCGA_survival	THYM	CM03	OS	clinical_basic	unavailable	118	8	insufficient_patients_or_events									
+TCGA_survival	THYM	CM03	OS	stage_sensitivity	unavailable	116	8	insufficient_patients_or_events									
+TCGA_survival	UCEC	CM03	PFI	clinical_basic	exploratory_model_numeric_audit_pass	176	45		-0.21047953485117915	0.1545324818394671	0.8101956357579446	0.5984793848595025	1.096807985049174	0.17954966564178698	1.0	1.0	joint;pan_T;age
+TCGA_survival	UCEC	CM03	PFI	stage_sensitivity	unavailable	160	39	insufficient_patients_or_events									
+TCGA_survival	UCEC	CM03	OS	clinical_basic	exploratory_model_numeric_audit_pass	176	33		-0.10996082756656861	0.18812890171166188	0.8958692279868873	0.619592376189855	1.2953382005589673	0.5618572566506108	1.0	1.0	joint;pan_T;age
+TCGA_survival	UCEC	CM03	OS	stage_sensitivity	unavailable	160	29	insufficient_patients_or_events									
+TCGA_survival	UCS	CM03	PFI	clinical_basic	unavailable	56	37	insufficient_patients_or_events									
+TCGA_survival	UCS	CM03	PFI	stage_sensitivity	unavailable	46	31	insufficient_patients_or_events									
+TCGA_survival	UCS	CM03	OS	clinical_basic	unavailable	56	35	insufficient_patients_or_events									
+TCGA_survival	UCS	CM03	OS	stage_sensitivity	unavailable	46	28	insufficient_patients_or_events									
+TCGA_survival	UVM	CM03	PFI	clinical_basic	unavailable	78	28	insufficient_patients_or_events									
+TCGA_survival	UVM	CM03	PFI	stage_sensitivity	unavailable	78	28	insufficient_patients_or_events									
+TCGA_survival	UVM	CM03	OS	clinical_basic	unavailable	79	22	insufficient_patients_or_events									
+TCGA_survival	UVM	CM03	OS	stage_sensitivity	unavailable	79	22	insufficient_patients_or_events									

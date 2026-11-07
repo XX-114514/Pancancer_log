@@ -1,0 +1,260 @@
+{
+  "UTC": "2026-11-07T08:40:25.718577+00:00",
+  "proof": {
+    "bulk/immune_category_review_v2/independent_audit.json": {
+      "status": "PASS_EXACT_SOURCE_C1_C6_MAPPING_AND_COMPLETE4620_FAMILY_HARMONIZATION_INDEPENDENT_H_KRUSKAL_BH_BY",
+      "UTC": "2026-11-07T08:28:21.381595+00:00",
+      "original_immune_table_SHA256": "1ed802f52c27fab100de5ee4220765d85d7cc0e8329211c9fbd6f1eeb29715bc",
+      "n_total_immune_slots": 4620,
+      "n_immune_estimable": 1325,
+      "n_category_estimable": 20,
+      "n_BH05": 814,
+      "n_BY05": 688,
+      "n_category_BH05": 15,
+      "max_independent_H_or_p_error": 2.2737367544323206e-13,
+      "original_RNA_statistics_and_P_unchanged": true,
+      "clinical_models_unchanged": true,
+      "no_group_count_gene_or_P_threshold_relaxed": true,
+      "descriptive_category_summaries_not_added_to_inferential_family": true
+    },
+    "audit/bulk_measurement_audit_v3.json": {
+      "status": "PASS_all_frozen_patient_scores_model_design_bindings_immune_statistics_full_FDR_and_signature_FC",
+      "UTC": "2026-11-07T08:20:17.137052+00:00",
+      "n_patient_score_entries_checked": 236136,
+      "n_model_designs_bound": 395,
+      "n_immune_slots": 4620,
+      "n_immune_tested": 1305,
+      "maximum_score_error": 0.0,
+      "maximum_immune_statistic_p_error": 3.3306690738754696e-16,
+      "maximum_signature_FC_error": 6.217248937900877e-15,
+      "independent_collection_or_clinical_validation_claim": false
+    }
+  },
+  "stages": {
+    "prepare_terminal": {
+      "stage": "prepare",
+      "UTC_start": "2026-11-07T07:49:48.074324+00:00",
+      "UTC_end": "2026-11-07T07:51:15.871456+00:00",
+      "exit_code": 0
+    },
+    "signatures_terminal": {
+      "stage": "signatures",
+      "UTC_start": "2026-11-07T07:51:15.871802+00:00",
+      "UTC_end": "2026-11-07T07:51:51.257961+00:00",
+      "exit_code": 0
+    },
+    "CellChat_DB_terminal": {
+      "stage": "CellChat_DB",
+      "UTC_start": "2026-11-07T07:51:51.258364+00:00",
+      "UTC_end": "2026-11-07T07:51:56.941821+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_prepare_terminal": {
+      "stage": "imaging_I001_prepare",
+      "UTC_start": "2026-11-07T07:59:33.612702+00:00",
+      "UTC_end": "2026-11-07T08:03:11.483232+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_broad_context_terminal": {
+      "stage": "imaging_I001_broad_context",
+      "UTC_start": "2026-11-07T08:03:11.483813+00:00",
+      "UTC_end": "2026-11-07T08:03:12.697016+00:00",
+      "exit_code": 1
+    },
+    "imaging_I001_CellChat_terminal": {
+      "stage": "imaging_I001_CellChat",
+      "UTC_start": "2026-11-07T08:03:12.697549+00:00",
+      "UTC_end": "2026-11-07T08:03:31.678622+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_CellChat_audit_terminal": {
+      "stage": "imaging_I001_CellChat_audit",
+      "UTC_start": "2026-11-07T08:03:31.679007+00:00",
+      "UTC_end": "2026-11-07T08:03:32.002727+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_prepare_terminal": {
+      "stage": "imaging_I002_prepare",
+      "UTC_start": "2026-11-07T08:03:32.003204+00:00",
+      "UTC_end": "2026-11-07T08:06:32.917334+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_broad_context_terminal": {
+      "stage": "imaging_I002_broad_context",
+      "UTC_start": "2026-11-07T08:06:32.917970+00:00",
+      "UTC_end": "2026-11-07T08:06:38.787368+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_CellChat_terminal": {
+      "stage": "imaging_I002_CellChat",
+      "UTC_start": "2026-11-07T08:06:38.787903+00:00",
+      "UTC_end": "2026-11-07T08:06:53.714923+00:00",
+      "exit_code": 0
+    },
+    "imaging_I002_CellChat_audit_terminal": {
+      "stage": "imaging_I002_CellChat_audit",
+      "UTC_start": "2026-11-07T08:06:53.715327+00:00",
+      "UTC_end": "2026-11-07T08:06:54.054129+00:00",
+      "exit_code": 0
+    },
+    "bulk_analysis_v1_terminal": {
+      "stage": "bulk_analysis_v1",
+      "UTC_start": "2026-11-07T08:06:34.031749+00:00",
+      "UTC_end": "2026-11-07T08:08:31.306746+00:00",
+      "exit_code": 0
+    },
+    "bulk_measurement_audit_v1_terminal": {
+      "stage": "bulk_measurement_audit_v1",
+      "UTC_start": "2026-11-07T08:08:31.307438+00:00",
+      "UTC_end": "2026-11-07T08:08:32.235945+00:00",
+      "exit_code": 1
+    },
+    "bulk_models_audit_v1_terminal": {
+      "stage": "bulk_models_audit_v1",
+      "UTC_start": "2026-11-07T08:08:32.236511+00:00",
+      "UTC_end": "2026-11-07T08:09:35.840566+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_prepare_terminal": {
+      "stage": "imaging_I003_prepare",
+      "UTC_start": "2026-11-07T08:06:54.055064+00:00",
+      "UTC_end": "2026-11-07T08:11:52.883974+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_broad_context_terminal": {
+      "stage": "imaging_I003_broad_context",
+      "UTC_start": "2026-11-07T08:11:52.884591+00:00",
+      "UTC_end": "2026-11-07T08:12:29.062625+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_CellChat_terminal": {
+      "stage": "imaging_I003_CellChat",
+      "UTC_start": "2026-11-07T08:12:29.062985+00:00",
+      "UTC_end": "2026-11-07T08:12:52.496922+00:00",
+      "exit_code": 0
+    },
+    "imaging_I003_CellChat_audit_terminal": {
+      "stage": "imaging_I003_CellChat_audit",
+      "UTC_start": "2026-11-07T08:12:52.497451+00:00",
+      "UTC_end": "2026-11-07T08:12:52.761270+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_prepare_terminal": {
+      "stage": "imaging_I004_prepare",
+      "UTC_start": "2026-11-07T08:12:52.762339+00:00",
+      "UTC_end": "2026-11-07T08:13:22.349683+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_broad_context_terminal": {
+      "stage": "imaging_I004_broad_context",
+      "UTC_start": "2026-11-07T08:13:22.350295+00:00",
+      "UTC_end": "2026-11-07T08:13:29.689686+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_CellChat_terminal": {
+      "stage": "imaging_I004_CellChat",
+      "UTC_start": "2026-11-07T08:13:29.690676+00:00",
+      "UTC_end": "2026-11-07T08:13:46.380476+00:00",
+      "exit_code": 0
+    },
+    "imaging_I004_CellChat_audit_terminal": {
+      "stage": "imaging_I004_CellChat_audit",
+      "UTC_start": "2026-11-07T08:13:46.381033+00:00",
+      "UTC_end": "2026-11-07T08:13:46.813160+00:00",
+      "exit_code": 0
+    },
+    "imaging_I005_prepare_terminal": {
+      "stage": "imaging_I005_prepare",
+      "UTC_start": "2026-11-07T08:13:46.814145+00:00",
+      "UTC_end": "2026-11-07T08:14:14.772133+00:00",
+      "exit_code": 0
+    },
+    "imaging_I005_broad_context_terminal": {
+      "stage": "imaging_I005_broad_context",
+      "UTC_start": "2026-11-07T08:14:14.772675+00:00",
+      "UTC_end": "2026-11-07T08:14:21.814005+00:00",
+      "exit_code": 0
+    },
+    "bulk_measurement_audit_v2_terminal": {
+      "stage": "bulk_measurement_audit_v2",
+      "UTC_start": "2026-11-07T08:14:54.915816+00:00",
+      "UTC_end": "2026-11-07T08:14:59.293244+00:00",
+      "exit_code": 1
+    },
+    "imaging_I001_int64_context_recovery_v2_terminal": {
+      "stage": "imaging_I001_int64_context_recovery_v2",
+      "UTC_start": "2026-11-07T08:14:59.294457+00:00",
+      "UTC_end": "2026-11-07T08:15:15.755830+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_geometry_interface_recovery_v2_terminal": {
+      "stage": "imaging_I001_geometry_interface_recovery_v2",
+      "UTC_start": "2026-11-07T08:15:15.756895+00:00",
+      "UTC_end": "2026-11-07T08:36:26.688455+00:00",
+      "exit_code": 0
+    },
+    "imaging_I001_geometry_interface_audit_v2_terminal": {
+      "stage": "imaging_I001_geometry_interface_audit_v2",
+      "UTC_start": "2026-11-07T08:36:26.689065+00:00",
+      "UTC_end": "2026-11-07T08:36:27.059686+00:00",
+      "exit_code": 0
+    },
+    "imaging_I005_CellChat_terminal": {
+      "stage": "imaging_I005_CellChat",
+      "UTC_start": "2026-11-07T08:14:21.814557+00:00",
+      "UTC_end": "2026-11-07T08:40:23.334011+00:00",
+      "exit_code": 0
+    },
+    "imaging_I005_CellChat_audit_terminal": {
+      "stage": "imaging_I005_CellChat_audit",
+      "UTC_start": "2026-11-07T08:40:23.334491+00:00",
+      "UTC_end": "2026-11-07T08:40:23.799613+00:00",
+      "exit_code": 0
+    }
+  },
+  "I001": {
+    "progress.json": {
+      "n_completed_variants": 4,
+      "n_requested_variants": 4
+    },
+    "independent_audit.json": {
+      "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+      "UTC": "2026-11-07T08:36:27Z",
+      "n_variants_checked": 4,
+      "patient_contact_or_causality_claim": false
+    },
+    "complete_PRIVATE.json": {
+      "status": "ALL_FIXED_SPATIAL_CELLCHAT_VARIANTS_FINISHED_ARRAY_READBACK_PASS",
+      "UTC": "2026-11-07T08:36:26Z",
+      "n_FOV_requested": 1,
+      "n_FOV_eligible": 1,
+      "n_variants": 4,
+      "scale_distance": 0.0503,
+      "scale_selected_only_from_geometry": true,
+      "p_values_are_CellChat_expression_permutations_not_spatial_null": true
+    }
+  },
+  "I005": {
+    "progress.json": {
+      "n_completed_variants": 4,
+      "n_requested_variants": 4
+    },
+    "independent_audit.json": {
+      "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+      "UTC": "2026-11-07T08:40:23Z",
+      "n_variants_checked": 4,
+      "patient_contact_or_causality_claim": false
+    },
+    "complete_PRIVATE.json": {
+      "status": "ALL_FIXED_SPATIAL_CELLCHAT_VARIANTS_FINISHED_ARRAY_READBACK_PASS",
+      "UTC": "2026-11-07T08:40:22Z",
+      "n_FOV_requested": 1,
+      "n_FOV_eligible": 1,
+      "n_variants": 4,
+      "scale_distance": 0.0569,
+      "scale_selected_only_from_geometry": true,
+      "p_values_are_CellChat_expression_permutations_not_spatial_null": true
+    }
+  },
+  "I006": {}
+}

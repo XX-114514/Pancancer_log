@@ -1,0 +1,11 @@
+{
+  "UTC": "2026-11-07T08:45:04.324800+00:00",
+  "status": "SAME_L2_OBJECTIVE_OPTIMIZER_BUDGET_EXTENDED_FOR_LATER_INPUTS",
+  "old_SHA256": "6b73febd47e52c4a57dd5d61df8d85ecf080eb5c5945c39ef9ec2b2d9b5a6735",
+  "current_SHA256": "9b0f137a0ae22a30c5cac0ee41d45e24f958ad42279f1ea94f7622a33ab65696",
+  "old_max_iter": 1000,
+  "new_max_iter": 5000,
+  "only_unconverged_cached_fit_warm_started": true,
+  "C_class_weight_gene_split_label_and_annotation_threshold_changed": false,
+  "existing_cells_predictions_models_or_spatial_results_overwritten": false
+}

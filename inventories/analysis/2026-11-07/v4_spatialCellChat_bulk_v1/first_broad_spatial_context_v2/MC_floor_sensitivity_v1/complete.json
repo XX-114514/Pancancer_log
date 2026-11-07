@@ -1,0 +1,8 @@
+{
+  "status": "FULL4_VARIANT_NONZERO_MC_FLOOR_SENSITIVITY_REVIEWED_RAW_MODELS_UNCHANGED",
+  "UTC": "2026-11-07T08:57:18Z",
+  "n_variants": 4,
+  "nboot": 100,
+  "scope": "(b*p+1)/(b+1) floor diagnostic and whole-model BH; not a new spatial null or full tie-handling calibration; original software p values retained",
+  "cell_selection_or_model_rerun": false
+}

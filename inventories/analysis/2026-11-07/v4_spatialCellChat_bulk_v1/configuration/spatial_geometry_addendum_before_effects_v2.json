@@ -1,0 +1,11 @@
+{
+  "UTC_frozen": "2026-11-07T07:55:02.403336+00:00",
+  "reason": "installed CellChat requires minimum scaled regional distance >=1; geometry scale must suit micrometre single-cell inputs",
+  "scientific_effects_seen": false,
+  "scale_distance": "1.5 divided by minimum positive finite off-diagonal regional distance across qualified FOVs within each native input, shared across all four variants; no cross-input weight comparison",
+  "variants": "all2x2 interaction ranges100/250um and contact10/20um, same100permutations each",
+  "strict_component_qualification": "ligand/receptor complexes and optional agonist/antagonist/co-receptor subunits all measured, protein categories only",
+  "additional_spatial_null": "all14 broad-parent context, six nearest neighbors capped100um,999label permutations within source FOV preserving counts; enrichment P with full14 BH; no exact subtype or physical contact claim",
+  "original_plan_retained": true,
+  "original_CM_or_annotation_changed": false
+}

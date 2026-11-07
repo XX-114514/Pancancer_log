@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-11-07T08:13:47.211125+00:00",
+  "status": "INSTALLED_INTERFACE_AND_CSV_ID_TYPE_CORRECTIONS_ORIGINAL_OUTPUTS_PRESERVED",
+  "geometry_reason": "installed computeRegionDistance reads meta$group, not meta$labels; preflight returned0x0 although valid native coordinates and15measurable protein interactions",
+  "geometry_fix": "supply group factor equal labels in preflight; use new CellChat_v2 outputs; preserve v1 unassessable receipts",
+  "no_distance_gene_or_P_threshold_change": true,
+  "audit_reason": "CSV infers numeric patient index types while expression axis preserves source type; force lexical first-column read and verify exact ordered unique string keys",
+  "no_patient_remapping_or_successful_model_refit": true
+}

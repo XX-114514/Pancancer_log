@@ -1,0 +1,5 @@
+family	n_planned	n_estimable	n_BH05	n_BY05
+ICI_response	84	20	0	0
+ICI_survival	168	25	0	0
+TCGA_survival	1848	350	5	2
+TCGA_immune	4620	1325	814	688

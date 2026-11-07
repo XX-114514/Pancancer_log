@@ -1,0 +1,255 @@
+[
+  {
+    "conflicting_patients_excluded": 0,
+    "eligible_samples": 347,
+    "unique_patients": 347,
+    "cohort": "IMvigor210",
+    "time_status": "pretreatment_source_design",
+    "age_sex_adjustment_available": false
+  },
+  {
+    "conflicting_patients_excluded": 0,
+    "eligible_samples": 51,
+    "unique_patients": 51,
+    "cohort": "Riaz2017",
+    "time_status": "pretreatment_source_design",
+    "age_sex_adjustment_available": false
+  },
+  {
+    "conflicting_patients_excluded": 0,
+    "eligible_samples": 27,
+    "unique_patients": 26,
+    "cohort": "Hugo2016",
+    "time_status": "pretreatment_source_design",
+    "age_sex_adjustment_available": false
+  },
+  {
+    "conflicting_patients_excluded": 0,
+    "eligible_samples": 27,
+    "unique_patients": 27,
+    "cohort": "Jung2019",
+    "time_status": "pretreatment_source_design",
+    "age_sex_adjustment_available": false
+  },
+  {
+    "conflicting_patients_excluded": 0,
+    "eligible_samples": 88,
+    "unique_patients": 88,
+    "cohort": "Rose2021",
+    "time_status": "archival_tumor_individual_sampling_time_not_verified_no_baseline_prediction_claim",
+    "age_sex_adjustment_available": false,
+    "expression_samples_without_exact_clinical_key_excluded": 4
+  },
+  {
+    "conflicting_patients_excluded": 0,
+    "eligible_samples": 136,
+    "unique_patients": 136,
+    "time_status": "author_Keep_pretreatment_RNA",
+    "cohort": "SU2C_MARK"
+  },
+  {
+    "cohort": "TCGA",
+    "unique_patients": 9164,
+    "clinical_conflicting_patients_excluded": 0,
+    "sample_type": "01 primary solid tumour",
+    "ambiguous_requested_symbols": []
+  },
+  {
+    "n_patients": 77,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_ACC"
+  },
+  {
+    "n_patients": 407,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_BLCA"
+  },
+  {
+    "n_patients": 1091,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_BRCA"
+  },
+  {
+    "n_patients": 304,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_CESC"
+  },
+  {
+    "n_patients": 36,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_CHOL"
+  },
+  {
+    "n_patients": 286,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_COAD"
+  },
+  {
+    "n_patients": 47,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_DLBC"
+  },
+  {
+    "n_patients": 181,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_ESCA"
+  },
+  {
+    "n_patients": 152,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_GBM"
+  },
+  {
+    "n_patients": 518,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_HNSC"
+  },
+  {
+    "n_patients": 66,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_KICH"
+  },
+  {
+    "n_patients": 530,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_KIRC"
+  },
+  {
+    "n_patients": 288,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_KIRP"
+  },
+  {
+    "n_patients": 0,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_LAML"
+  },
+  {
+    "n_patients": 508,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_LGG"
+  },
+  {
+    "n_patients": 369,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_LIHC"
+  },
+  {
+    "n_patients": 513,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_LUAD"
+  },
+  {
+    "n_patients": 498,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_LUSC"
+  },
+  {
+    "n_patients": 87,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_MESO"
+  },
+  {
+    "n_patients": 420,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_OV"
+  },
+  {
+    "n_patients": 178,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_PAAD"
+  },
+  {
+    "n_patients": 177,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_PCPG"
+  },
+  {
+    "n_patients": 495,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_PRAD"
+  },
+  {
+    "n_patients": 91,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_READ"
+  },
+  {
+    "n_patients": 258,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_SARC"
+  },
+  {
+    "n_patients": 102,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_SKCM"
+  },
+  {
+    "n_patients": 414,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_STAD"
+  },
+  {
+    "n_patients": 132,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_TGCT"
+  },
+  {
+    "n_patients": 504,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_THCA"
+  },
+  {
+    "n_patients": 119,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_THYM"
+  },
+  {
+    "n_patients": 180,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_UCEC"
+  },
+  {
+    "n_patients": 57,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_UCS"
+  },
+  {
+    "n_patients": 79,
+    "scope": "01_primary_solid_tumour",
+    "purity_adjustment": "not_available_in_this_input",
+    "cohort": "TCGA_UVM"
+  }
+]

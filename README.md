@@ -1,5 +1,7 @@
 # PanCancer
 
+> **当前V4的TCGA/ICI与免疫结果已独立审核，成像通讯继续（2026-11-07）**：[完整结果、三图及状态](inventories/analysis/2026-11-07/v4_spatialCellChat_bulk_v1/README.md)。395临床模型、1325免疫检验完成；六ICI完整家族无BH显著，CM03仅见LGG OS探索线索，不能称泛癌/ICI标志物。13成像机会接续，5个Xenium均缺IGHD/XCL1，不作精确亚型复现；原注释/CM不改。
+
 > **当前V4通讯已有全局/响应结果，完整环境比较继续（2026-11-07）**：[完整结果、两张图及运行预计](inventories/analysis/2026-11-07/v4_communication_author_v1/README.md)。正式全局CPDB1,000置换、21个CM—免疫身份响应及CellChat替代算法已完成并独立核验；CM03在作者式响应分支未获q<0.05支持，方向/实测背景分支单列，不混为原文阳性。空间6/53完整通过、niche53/53通过；25组比较3组High已审核，正在CM04 High，通讯剩余规划18–30小时，尚无完整通讯/空间机制结论。
 
 > **V4空间实测进度与原文通讯已启动（2026-11-07）**：[状态、预计与完整计划](inventories/analysis/2026-11-07/v4_communication_author_v1/README.md)。53张CellCharter逐张审核全通过；空间去卷积4/53完整模型/原文打分/独立审核通过、另2张运行，实测80–87分钟/张，两并行剩余规划35–50小时。当前V4通讯CPU流程已从同560,871细胞启动准备：全局CPDB→25CMT比较、CellChat及细胞因子响应；还没有完整通讯或空间支持结论。
