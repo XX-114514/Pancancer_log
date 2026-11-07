@@ -27,3 +27,5 @@
 本检查点执行输入载荷SHA、13份代码SHA、全部公开TSV列数与Python AST核验均通过。更新README/STATUS/ROADMAP/TODO/CHANGELOG和method/run索引，明确真实生产中而非科学成功；仓库轻量检查与普通push收据另登记。建议commit：`Start same-V4 Visium author-method validation with audited inputs`。待解决为完整模型、原文真实分数、全范围独立审核和图件审阅，不以脚本已部署替代结果。
 
 01:26 UTC补核参考进程仍running、CPU约99.8%、内存约2.02GiB；不是仅凭排队登记判断运行。仓库`bash scripts/validate_repository.sh`退出0：0错误、1项历史内部路径模式警告，命中均为既有历史文件，本轮30个新增文件扫描未命中实体服务器路径/样本ID/凭据。原始完整验证日志私有保留。TSV末尾空字段作为有效缺测保留，非TSV执行diff检查；本轮新记录/脚本总约102KB，不含逐个体行或矩阵。
+
+37文件内容提交`7cb1cab2e2f6a21bc62b76ea9c514cbd6199bb4c`已普通push并独立`git ls-remote origin refs/heads/main`精确匹配；见[发布收据](../../../inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/publication_checkpoint_v1.json)。此为运行中检查点公开成功，科学结论仍待。01:28 UTC再核参考训练无终态、空间0完成/0失败，未因SSH/等待重启或更改科学参数。

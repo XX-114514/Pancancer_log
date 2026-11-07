@@ -6,6 +6,8 @@
 
 最新取证为[01:24:56 UTC快照](runtime_checkpoint_v2.json)：参考回归仍在真实GPU生产，空间模型0完成/0失败。[13份部署代码独立SHA读回](audit/server_code_binding.json)与公开代码逐字节一致，包含尚未执行、仅在最终真实审核后生成报告的有限接续器；原检查点保留。
 
+[公开同步收据](publication_checkpoint_v1.json)绑定已独立核验的内容提交；同步成功不表示空间检验已完成。
+
 ## 实际输入范围
 
 | 来源 | 本轮准入切片 | 现有spots | 说明 |

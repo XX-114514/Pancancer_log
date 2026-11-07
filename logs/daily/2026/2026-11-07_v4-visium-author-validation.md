@@ -7,3 +7,4 @@
 每张后续30,000epoch/N5/alpha20/1000posterior，原作者60近邻有向inverse-square Moran与Spearman主分数、same-label测量/谱系与参考谱诊断、独立审核及全14家族汇总均注册为有期限接续。合成100spot公式测试通过，不冒充真实样本。CellCharter、独立身份/病例/机制尚未完成。
 
 [检查点](../../../inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/README.md) · [run](../../../runs/20261107_v4_Visium_author_validation_v1.md) · [任务日志](../../codex/2026/2026-11-07_v4-visium-author-validation.md)。失败及兼容修正保留；矩阵和个体行私有，公开汇总与通用代码。
+公开检查点内容提交`7cb1cab2e2f6a21bc62b76ea9c514cbd6199bb4c`已普通push，独立ls-remote精确核验，见[收据](../../../inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/publication_checkpoint_v1.json)。仓库0错误/1项既有历史警告，新30文件扫描与13份部署代码SHA核对通过。01:28 UTC参考仍实际训练，真实空间结论未产生。

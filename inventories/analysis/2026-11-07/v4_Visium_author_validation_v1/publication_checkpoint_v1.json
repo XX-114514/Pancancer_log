@@ -1,0 +1,17 @@
+{
+  "status": "REVIEWED_PENDING_SCIENCE_CHECKPOINT_PUBLIC_PUSH_INDEPENDENTLY_VERIFIED",
+  "UTC_verified": "2026-11-07T01:28:05.497051+00:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "branch": "main",
+  "content_commit": "7cb1cab2e2f6a21bc62b76ea9c514cbd6199bb4c",
+  "verification": "ordinary git push exit0 and separate git ls-remote origin refs/heads/main exact match",
+  "scope": "37 reviewed files: methods, generic code, aggregate reference/scope checks, sanitized task records; no cell/patient/spot rows or matrices",
+  "science_state": "reference GPU fit active; full real Visium cohort and spatial conclusions pending",
+  "repository_check": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "warning": "existing historical internal-path patterns; no new task files hit private path/secret/sample-ID scan"
+  },
+  "no_automatic_push_controller": true
+}
