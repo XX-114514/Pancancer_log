@@ -1,0 +1,164 @@
+{
+  "UTC": "2026-11-07T12:56:55.246239+00:00",
+  "audited_sections": 14,
+  "requested_sections": 53,
+  "parent_labels": [],
+  "aggregates": [
+    {
+      "dataset": "GSE175540",
+      "posterior": "means",
+      "statistic": "aggregation",
+      "n_sections": 4,
+      "median_score": 0.4457364341085271,
+      "min_score": 0.3565891472868217,
+      "max_score": 0.5348837209302325
+    },
+    {
+      "dataset": "GSE175540",
+      "posterior": "means",
+      "statistic": "colocalization",
+      "n_sections": 4,
+      "median_score": 0.26744186046511625,
+      "min_score": 0.2403100775193798,
+      "max_score": 0.4031007751937984
+    },
+    {
+      "dataset": "GSE175540",
+      "posterior": "q05",
+      "statistic": "aggregation",
+      "n_sections": 4,
+      "median_score": 0.49224806201550386,
+      "min_score": 0.3837209302325581,
+      "max_score": 0.5852713178294574
+    },
+    {
+      "dataset": "GSE175540",
+      "posterior": "q05",
+      "statistic": "colocalization",
+      "n_sections": 4,
+      "median_score": 0.33333333333333326,
+      "min_score": 0.3100775193798449,
+      "max_score": 0.5116279069767442
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "means",
+      "statistic": "aggregation",
+      "n_sections": 10,
+      "median_score": 0.37209302325581395,
+      "min_score": 0.1007751937984496,
+      "max_score": 0.6589147286821705
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "means",
+      "statistic": "colocalization",
+      "n_sections": 10,
+      "median_score": 0.4069767441860465,
+      "min_score": 0.1007751937984496,
+      "max_score": 0.5116279069767442
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "q05",
+      "statistic": "aggregation",
+      "n_sections": 10,
+      "median_score": 0.3313953488372092,
+      "min_score": 0.1511627906976744,
+      "max_score": 0.4689922480620155
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "q05",
+      "statistic": "colocalization",
+      "n_sections": 10,
+      "median_score": 0.4031007751937985,
+      "min_score": 0.1162790697674418,
+      "max_score": 0.5271317829457365
+    }
+  ],
+  "edges": [
+    {
+      "dataset": "GSE175540",
+      "posterior": "means",
+      "node1": "Bcell_Naive_IGHD",
+      "node2": "Endothelial_Blood_PECAM1",
+      "n_sections": 4,
+      "median_spearman": -0.0160261514002881,
+      "median_moran_forward": -0.0350841697153879,
+      "median_moran_reverse": -0.033571079839044254
+    },
+    {
+      "dataset": "GSE175540",
+      "posterior": "means",
+      "node1": "Endothelial_Blood_PECAM1",
+      "node2": "NK_XCL1_CD56bright_XCL1",
+      "n_sections": 4,
+      "median_spearman": 0.12597027677959405,
+      "median_moran_forward": 0.09510575622135255,
+      "median_moran_reverse": 0.0931903884538337
+    },
+    {
+      "dataset": "GSE175540",
+      "posterior": "q05",
+      "node1": "Bcell_Naive_IGHD",
+      "node2": "Endothelial_Blood_PECAM1",
+      "n_sections": 4,
+      "median_spearman": -0.0173029935668693,
+      "median_moran_forward": -0.042470818715634,
+      "median_moran_reverse": -0.04101021554439355
+    },
+    {
+      "dataset": "GSE175540",
+      "posterior": "q05",
+      "node1": "Endothelial_Blood_PECAM1",
+      "node2": "NK_XCL1_CD56bright_XCL1",
+      "n_sections": 4,
+      "median_spearman": 0.108231057761315,
+      "median_moran_forward": 0.05904011179177915,
+      "median_moran_reverse": 0.05970313257764245
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "means",
+      "node1": "Bcell_Naive_IGHD",
+      "node2": "Endothelial_Blood_PECAM1",
+      "n_sections": 10,
+      "median_spearman": 0.32691303794879567,
+      "median_moran_forward": 0.055414000097268,
+      "median_moran_reverse": 0.0547517368396125
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "means",
+      "node1": "Endothelial_Blood_PECAM1",
+      "node2": "NK_XCL1_CD56bright_XCL1",
+      "n_sections": 10,
+      "median_spearman": 0.44224685251244744,
+      "median_moran_forward": 0.09886628592419305,
+      "median_moran_reverse": 0.0948450132754471
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "q05",
+      "node1": "Bcell_Naive_IGHD",
+      "node2": "Endothelial_Blood_PECAM1",
+      "n_sections": 10,
+      "median_spearman": 0.2966077240249926,
+      "median_moran_forward": 0.0186699239651143,
+      "median_moran_reverse": 0.018381850496308548
+    },
+    {
+      "dataset": "GSE203612",
+      "posterior": "q05",
+      "node1": "Endothelial_Blood_PECAM1",
+      "node2": "NK_XCL1_CD56bright_XCL1",
+      "n_sections": 10,
+      "median_spearman": 0.4227539327861948,
+      "median_moran_forward": 0.071149788277259,
+      "median_moran_reverse": 0.0686280689202173
+    }
+  ],
+  "model_success": 14,
+  "model_failure": 0
+}

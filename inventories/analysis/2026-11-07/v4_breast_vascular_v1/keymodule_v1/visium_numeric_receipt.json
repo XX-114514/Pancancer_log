@@ -1,0 +1,51 @@
+{
+  "UTC": "2026-11-07T12:58:32.878866+00:00",
+  "n_audited_sections": 14,
+  "requested_sections": 53,
+  "status": "DESCRIPTIVE_COMPOSITION_EXTENSION_NUMERIC_CHECKS_PASS_NOT_PATIENT_LEVEL_REPLICATION",
+  "input_audit_sha256": [
+    {
+      "audit_sha256": "b1b1153487be5e9d621a00c93f5b8c0c52d02606aa55c92a74c482eab70abe9c"
+    },
+    {
+      "audit_sha256": "692bd5fcba0ce3bb8c62e262d0b6fc8631934efe893c4269e9f9ffb918a61960"
+    },
+    {
+      "audit_sha256": "eb19bd3d6f9e2d31125657c167aca46dd972508a1558e48bba434f721981dfe4"
+    },
+    {
+      "audit_sha256": "c1a8479d72c4af075df18fe4a8e78a7bda2e0b486c5bc5c99aba98417e33cc19"
+    },
+    {
+      "audit_sha256": "5d4f43761ff100212441b63f8daee6393d1886ea591e62f4899c22b6c4223d63"
+    },
+    {
+      "audit_sha256": "14cd71ea67066b451873213e0110038a3ebcd9b44d844a20b02e567adacb73a8"
+    },
+    {
+      "audit_sha256": "a77af82fe76ffe32b7c39d6c7f2bff2c805c3285112bdf72b912fdf1d0ee9a66"
+    },
+    {
+      "audit_sha256": "402a0d54e0ab263c50f79ffce609eaf2e114a08fc9e60faf8f68c79e857245c8"
+    },
+    {
+      "audit_sha256": "280bde77577f3c3f8210885a311c980d083430912fa77419124ba823356868fa"
+    },
+    {
+      "audit_sha256": "f8d0e4a452696f7ce836d451d0fd6b6af4e3c6823aa6fd7de2620729d4bacdf0"
+    },
+    {
+      "audit_sha256": "37c38bf34c9d81530758ed9970fbbee61f4248d806e7664d30fcc9dfca549892"
+    },
+    {
+      "audit_sha256": "b02135f21bc31b2f8efb1de2568290edbbde8a113e4c60eaf5659b1e08e8327e"
+    },
+    {
+      "audit_sha256": "fee7e3c78de20d92bb33cc50e7614337f5ecb466a4a86bca6e57dcb2a2866c27"
+    },
+    {
+      "audit_sha256": "afe3ec99ee435bdd854bde7761aebf212464603c51de733036a1a3656bcf77f9"
+    }
+  ],
+  "code_sha256": "36a23d2e68aa098c131572e93cc80edaeb75906b3ec0e3a2e2c4c9e2d11e49c1"
+}

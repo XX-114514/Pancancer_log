@@ -1,3 +1,5 @@
+> **关键组成空间推进**：[CM03大类关系结果](inventories/analysis/2026-11-07/v4_breast_vascular_v1/keymodule_v1/README.md)。14/53张Visium审核通过并新增大类边计算；来源差异明显，不称普遍复现。缺IGHD/XCL1不阻断组成分析；新18份Xenium映射接受、原生矩阵截断后有限恢复中。
+
 # PanCancer
 
 > **研究主线收束为乳腺癌血管相关免疫组成（2026-11-07）**：[空间资源、算法审核与I-SPY2完整结果](inventories/analysis/2026-11-07/v4_breast_vascular_v1/README.md)。状态分析不作前置。新Xenium适合血管/募集轴但缺IGHD/XCL1；I-SPY2 69联合治疗+179对照已核，独立审核18模型、两完整家族均0 BH，原CM03程序缺测保留NA。空间原生获取/身份审核仍待。

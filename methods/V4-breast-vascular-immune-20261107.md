@@ -13,3 +13,8 @@ I-SPY2：复用官方完整处理表达及元数据SHA，精确原始患者键�
 主21槽及增量3槽分别BH/BY，NA以P1留在分母、展示NA；模型、完整病例、rank/conditioning、收敛/分离、CI均显式审查。生产用本机R4.5.2 base glm未惩罚logistic，maxit100/epsilon1e-10；独立Python NumPy从原SOFT及原矩阵重新读键、明确平均并列秩、重新建全部设计，再直接似然Newton/线搜索重拟全部18设计与完整FDR。无共享环境安装。source、score、设计和患者逐行文件只私有；公共仅通用代码/汇总/图/脱敏收据。
 
 当前18设计通过，但主/增量两家族均0 BH。对照同期资格及适应性随机化限制保留，治疗交互不称已证明的治疗特异获益。原CM相关RNA代理、组成代理与真实空间结构分开，不因阴性切换marker、来源或阈值。
+
+
+## 关键组成尺度扩展
+
+已按用户允许的大类尺度在14张审核通过的Visium上真实计算两条原CM03边及一条探索边，保留原CM结果。方法、来源汇总和Xenium通讯边界见[新增报告](../inventories/analysis/2026-11-07/v4_breast_vascular_v1/keymodule_v1/README.md)。

@@ -260,3 +260,6 @@
 ## 2026-08-16 07:00 补充
 
 - 复核三项 extension：免疫和下载证据未变化；CM 严格完成仍为 580/721。`USER002` group-quota 余量已从约 2.50 GiB 增至约 101.588 GiB，但仍低于 129–157 GiB 需求外推和 200 GiB 重启门槛，因此保持资源阻断且未提交新 recovery。
+
+
+2026-11-07 UTC关键组成扩展：[14张Visium实测结果和成像接续](inventories/analysis/2026-11-07/v4_breast_vascular_v1/keymodule_v1/README.md)。缺IGHD/XCL1不再阻断大类；原两条边优先、第三边探索，不改原CM。完整53张和Xenium身份/通讯继续。

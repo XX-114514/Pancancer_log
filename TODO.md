@@ -1843,3 +1843,6 @@ Stage1 structure and inherited labels independently accepted; native-marker supe
 - [ ] 患者资料桥补齐后按冻结家族执行C/pseudobulk；当前不可估计。
 
 见[报告](docs/reports/20261106_V5_CoVarNet_communication/README.md)。
+
+
+2026-11-07 UTC关键组成扩展：[14张Visium实测结果和成像接续](inventories/analysis/2026-11-07/v4_breast_vascular_v1/keymodule_v1/README.md)。缺IGHD/XCL1不再阻断大类；原两条边优先、第三边探索，不改原CM。完整53张和Xenium身份/通讯继续。

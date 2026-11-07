@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-11-07T12:59:05.120540+00:00",
+  "n_available_context_units": 8,
+  "n_eligible": 7,
+  "n_nominal_within_unit_BH_all14_positive": 4,
+  "n_not_eligible": 1,
+  "n_CellChat_array_audits_complete": 7,
+  "scope": "existing 6NN capped100um FOV-fixed label null; CM parent-average includes B-NK exploratory edge; not proof both original edges replicate; identity convergence and tissue/TLS null not uniformly qualified; within-unit BH not across all units; NOT new atlas results"
+}
