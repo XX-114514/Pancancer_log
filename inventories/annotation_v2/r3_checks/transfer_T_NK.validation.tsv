@@ -1,0 +1,11 @@
+true	cells	median_genes	accuracy	confident_share	accuracy_if_confident
+CD4_CXCL13_Tfh_like	5713.0	684.0	0.799	0.736	0.903
+CD4_memory_IL7R_like	17942.0	776.0	0.923	0.852	0.972
+CD8_GZMK_like	5883.0	540.0	0.963	0.917	0.989
+CD8_effector_exhausted_like	19803.0	707.0	0.928	0.854	0.974
+CD8_memory_ANXA1_GZMK_like	12174.0	683.0	0.855	0.736	0.943
+NK_XCL1_KLRC1_like	7165.0	550.0	0.946	0.918	0.979
+NK_cytotoxic_like	10482.0	574.0	0.984	0.969	0.996
+T_naive_CM_like	6620.0	584.0	0.89	0.83	0.947
+Treg_like	14945.0	576.0	0.979	0.96	0.993
+ALL (macro)	100727.0	629.0	0.919	0.867	0.966

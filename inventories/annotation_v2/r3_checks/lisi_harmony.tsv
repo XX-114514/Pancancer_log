@@ -1,0 +1,13 @@
+pool	rep	source_lisi_median	source_lisi_mean	source_n	sample_id_lisi_median	sample_id_lisi_mean	sample_id_n	ARI_r1_vs_run	clusters_r1
+Endothelial	X_pca	1.46	2.41	64	3.37	4.55	998		
+Endothelial	X_emb	6.26	6.21	64	8.28	8.2	998		
+Endothelial	X_emb_no_early_stop	6.35	6.29	64	8.35	8.27	998	0.433	19.0
+Stromal	X_pca	1.17	1.94	69	2.39	3.48	1083		
+Stromal	X_emb	4.86	5.02	69	6.62	6.66	1086		
+B_Plasma	X_pca	1.92	2.51	68	4.12	4.91	1065		
+B_Plasma	X_emb	6.57	6.46	68	9.0	9.0	1078		
+Myeloid	X_pca	2.08	2.82	70	4.48	5.45	1175		
+Myeloid	X_emb	6.12	6.12	70	8.52	8.51	1177		
+Myeloid	X_emb_no_early_stop	6.19	6.18	70	8.59	8.6	1173	0.421	24.0
+T_NK	X_pca	2.64	3.16	70	6.07	6.59	1114		
+T_NK	X_emb	7.73	7.6	70	10.38	10.39	1118		

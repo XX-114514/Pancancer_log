@@ -1,0 +1,182 @@
+pool	cluster	r2_label	action	reason
+T_NK	9	CD8_effector_exhausted_like	keep	CD8A 0.82, LAG3, PDCD1 0.37, HAVCR2 0.38, GZMB, CCL3/4
+T_NK	7	CD4_memory_IL7R_like	keep	IL7R 0.87, LTB, KLRB1, ANXA1, AQP3, RORA; CD8A 0.13
+T_NK	4	T_low_depth	keep_flag_low_depth	626 genes, no markers, CD3D 0.54; 70% flagged low depth in round 1
+T_NK	0	T_naive_CM_like	keep	CCR7, LTB, IL7R, SELL 0.41, TCF7 0.37, LEF1 0.32; 885 genes, 63% flagged low depth in round 1 (those cells go through label transfer)
+T_NK	2	CD8_memory_ANXA1_GZMK_like	keep	CD8A 0.67, ANXA1, DUSP2, GZMK, IL7R 0.54
+T_NK	8	Treg_like	keep	FOXP3 0.55, IL2RA, CTLA4, TNFRSF4, RTKN2
+T_NK	11	NK_cytotoxic_like	keep	FGFBP2, FCGR3A, SPON2, KLRF1 0.44; CD3D 0.46 and CD8A 0.31, so T-EMRA-like cells are mixed in; split at higher resolution
+T_NK	10	NK_XCL1_KLRC1_like	keep	XCL1/2, KLRC1, AREG, TYROBP; CD3D 0.15, TRDC 0.64
+T_NK	1	CD8_GZMK_like	keep	GZMK 0.73, CD8A/B, CCL5, GZMA
+T_NK	3	CD4_CXCL13_Tfh_like	keep	CXCL13 0.58, PDCD1 0.40, MAF, TSHZ2, CD4 0.39
+T_NK	5	Proliferating_T	keep_state	MKI67 0.78, TOP2A; doublet z 0.82
+T_NK	12	T_naive_CM_metallothionein	keep_flag_source_restricted	MT1X/E/G, CCR7, IL7R; 55% one source, contamination 0.10
+T_NK	6	T_B_doublet_like	remove_doublet_like	CD79A, MS4A1 0.56, MZB1, CD3D 0.31, doublet z 2.67
+T_NK	13	T_naive_one_dataset	keep_flag_source_restricted	CCR7, SELL, IL7R; 99% one source (papillary thyroid); 3,690 cells
+T_NK	14	T_stress_one_sample	keep_flag_sample_specific	HSPA1A 0.95, DNAJA1; top sample 0.70, 92% one source
+T_NK	16	Proliferating_non_T	set_aside_review	CD3D 0.13, MKI67 0.66, uncertain 0.71, 96% one source; no T identity
+T_NK	15	T_with_epithelial_RNA_one_sample	set_aside_review	SPINK1, KRT19, KRT18 0.64 with CD8A 0.66, doublet z -0.77, top sample 0.86; other-lineage genes without doublet evidence
+B_Plasma	13	B_memory_activated_like	keep	TNFRSF13B, GPR183, CD83, NR4A2, CD27 0.40
+B_Plasma	6	B_low_depth	keep_flag_low_depth	722 genes, no markers
+B_Plasma	7	B_naive_like	keep	FCER2, TCL1A 0.59, IGHD 0.63, SELL, CD72
+B_Plasma	1	Plasma	keep	MZB1 0.99, XBP1, DERL3, SDC1 0.58; uncertain 0.22
+B_Plasma	0	Plasma	keep	MZB1 0.98, DERL3, TNFRSF17; 1,062 genes, 54% flagged low depth in round 1 (those cells go through label transfer)
+B_Plasma	5	B_memory_atypical_like	keep	ITGB1, DUSP4, CD99, ITGAX 0.14, TNFRSF13B 0.52
+B_Plasma	2	Plasma_low_depth	keep_flag_low_depth	516 genes, MZB1 0.80, 99% flagged low depth in round 1
+B_Plasma	8	B_immediate_early	keep_state	EGR1, FOSB, NR4A2, DUSP1
+B_Plasma	9	B_GC_proliferating	keep_state	MKI67 0.36, RGS13 0.43, TCL1A 0.57, HMGB2
+B_Plasma	12	B_germinal_center_like	keep	RGS13 0.76, NEIL1, LMO2, TCL1A 0.82, BCL6 0.38
+B_Plasma	3	B_low_depth_with_ambient	keep_flag_low_depth	848 genes, CST3, S100A6, MS4A1 0.51, contamination 0.07, 90% flagged low depth in round 1
+B_Plasma	16	B_high_MT_nuclear	remove_low_quality	MT 11.5% against 2-6% in the pool, MATR3, MBNL1, 867 genes, 54% one cancer
+B_Plasma	15	B_metallothionein_ambient	set_aside_review	MT1X, MT2A, contamination 0.19, uncertain 0.85, 85% one source; same population set aside in round 1
+B_Plasma	10	B_stress	keep_state	HSPA1A 0.94, HSPA6, DNAJB1
+B_Plasma	4	Plasma_with_other_RNA	set_aside_review	MZB1 0.99 with COL1A1 0.33, LYZ 0.35, KRT18 0.32, TIMP1; doublet z 0.36, so no doublet evidence
+B_Plasma	17	B_naive_one_dataset	keep_flag_source_restricted	MS4A1, FCER2, HLA-DQA2; 99% one source
+B_Plasma	14	mregDC_misplaced	move_to_Myeloid	LAMP3, CCL19, CCL22, IDO1, FSCN1; MS4A1 0.19, CD79A 0.20
+B_Plasma	11	B_IFN	keep_state	IFIT1/2/3, ISG15, MX1; IFN score 0.72
+B_Plasma	18	Plasma_one_dataset	keep_flag_source_restricted	MZB1, DERL3; 73 cells, 96% one source
+Stromal	3	CAF_matrix_like	keep	MMP11, CTHRC1, COL10A1, THBS2, POSTN 0.86
+Stromal	5	Pericyte_RGS5_STEAP4_like	keep	RGS5 0.94, STEAP4, NOTCH3, MCAM
+Stromal	1	Fibroblast_low_depth	keep_flag_low_depth	711 genes, no markers, DCN 0.72
+Stromal	6	Vascular_SMC_MYH11_like	keep	MYH11 0.86, ACTA2, TAGLN, SORBS2
+Stromal	4	Pericyte_COL4A1_NOTCH3_like	keep	COL4A1/2, RGS5 0.84, NOTCH3, COL18A1
+Stromal	12	CAF_inflammatory_hypoxic_like	keep	MMP1 0.42, CXCL1, INHBA, ADM, BNIP3, NDRG1
+Stromal	9	Fibroblast_adventitial_APOD_like	keep	APOD, PTGDS, CFD, IGF1, CXCL12
+Stromal	10	Fibroblast_PI16_universal_like	keep	PI16 0.58, CFD, MFAP5, IGFBP6, C3
+Stromal	13	Fibroblast_CCL19_C3_like	keep	CCL19, C3, CCL2, CXCL12, APOD
+Stromal	0	Pericyte_low_depth	keep_flag_low_depth	885 genes, RGS5 0.78, NDUFA4L2
+Stromal	14	Fibroblast_subepithelial_like	keep	CXCL14, PLAT, F3, BMP4, FOXF1, PDGFRA 0.84
+Stromal	11	CAF_matrix_COL12A1_like	keep	COL12A1, COL5A1/2, ITGA11, THBS2, COL10A1
+Stromal	7	Fibroblast_low_depth_CXCL2	keep_flag_low_depth	1,302 genes, CXCL2 only, 49% flagged low depth in round 1, 45% one source
+Stromal	2	Stromal_with_epithelial_RNA	set_aside_review	KRT17, S100A2, PERP, SFN, COL1A1 0.49, doublet z 0.03, uncertain 0.10; other-lineage genes without doublet evidence
+Stromal	16	Proliferating_stromal	keep_state	MKI67 0.74, TOP2A; doublet z 0.92
+Stromal	21	Fibroblast_ovarian_one_dataset	keep_flag_source_restricted	IER3, CXCL1/2/3, INHBA; 96% one source, top sample 0.67
+Stromal	18	Fibroblast_one_sample_18	keep_flag_sample_specific	endometrial, top sample 0.86, KRT19, SERPINE1
+Stromal	8	SMC_visceral_ACTG2_like	keep	ACTG2, MYH11 0.93, MYLK, SYNPO2
+Stromal	23	Fibroblast_one_sample_23	keep_flag_sample_specific	ovarian, top sample 0.82, TNFAIP6, MMP1, TWIST1
+Stromal	17	Stromal_T_doublet_like	remove_doublet_like	PTPRC, CD3D 0.44, CCL5, CD2, doublet z 3.03
+Stromal	24	Fibroblast_one_sample_24	keep_flag_sample_specific	ovarian, top sample 0.99, PTX3, CCL20
+Stromal	20	Pericyte_one_sample_20	keep_flag_sample_specific	bladder, top sample 0.97, COL4A1, NOTCH3 0.99
+Stromal	19	Osteoblastic_stromal	set_aside_review	SPP1, ALPL, OMD, CLEC11A, 93% osteosarcoma, doublet z 0.83; could be residual tumour, kept out pending review
+Stromal	25	Pericyte_one_sample_25	keep_flag_sample_specific	endometrial, top sample 0.78, ESR1 0.50, RGS5 0.86
+Stromal	15	Stromal_EC_doublet_like	remove_doublet_like	PLVAP, VWF, FLT1, PECAM1 0.78 with RGS5 0.82, doublet z 2.68
+Stromal	22	Fibroblast_one_sample_22	keep_flag_sample_specific	gastric, top sample 0.74, 190 cells
+Stromal	26	CAF_one_sample_26	keep_flag_sample_specific	breast, top sample 0.97, 159 cells
+Stromal	27	Stromal_with_epithelial_mesothelial_RNA	set_aside_review	KRT18 0.61, MSLN 0.19, doublet z -1.77, 105 cells; no doublet evidence
+Stromal	28	Stromal_EC_one_sample	set_aside_review	PLVAP, VWF with RGS5 0.97, contamination 0.47, doublet z 1.49, top sample 0.97, 30 cells
+Myeloid	9	interim_TAM_C1Q_TREM2	keep	rerun with rerouted cells; named after the rerun
+Myeloid	12	interim_Mac_Mono_low_depth	keep_flag_low_depth	653 genes, no markers; 76% flagged low depth in round 1
+Myeloid	10	interim_TAM_C1Q_lower_depth	keep	rerun; named after the rerun
+Myeloid	0	interim_Mono_FCN1_FCGR3A	keep	rerun; named after the rerun
+Myeloid	4	interim_cDC2	keep	rerun; named after the rerun
+Myeloid	3	interim_Neutrophil	keep	rerun; named after the rerun
+Myeloid	8	interim_Mac_CCL3_CCL4_IL1B	keep	rerun; named after the rerun
+Myeloid	15	interim_Mast	keep	rerun; named after the rerun
+Myeloid	2	interim_Mono_classical	keep	rerun; named after the rerun
+Myeloid	7	interim_Mono_Mac_CXCL5_CXCL1	keep	rerun; named after the rerun
+Myeloid	11	interim_LAM	keep	rerun; named after the rerun
+Myeloid	14	interim_Mac_FOLR2_F13A1	keep	rerun; named after the rerun
+Myeloid	1	interim_stress	keep_state	rerun; named after the rerun
+Myeloid	17	interim_MT_hypoxic_SPP1	keep_state	rerun; named after the rerun
+Myeloid	6	interim_Mac_C1Q_IEG	keep_state	rerun; named after the rerun
+Myeloid	20	interim_pDC	keep	rerun; named after the rerun
+Myeloid	13	interim_Osteoclast_like	keep	rerun; named after the rerun
+Myeloid	16	interim_mregDC	keep	rerun; named after the rerun
+Myeloid	5	interim_Proliferating	keep_state	rerun; named after the rerun
+Myeloid	18	interim_cDC1	keep	rerun; named after the rerun
+Myeloid	22	interim_Mac_one_sample	keep_flag_sample_specific	GSE176078 CID3838, 289 of 310 cells
+Myeloid	19	Myeloid_stromal_doublet_like	remove_doublet_like	IGFBP7, RGS5 0.32, COL1A2, COL1A1 0.33, doublet z 3.40
+Myeloid	21	B_misplaced	move_to_B_Plasma	MS4A1 0.53, CD79A 0.57, BANK1, doublet z -0.17; counted in the B/plasma total, no subtype because that pool is not rerun
+Myeloid	23	Small_one_source	set_aside_review	21 cells, one source
+Endothelial	2	interim_EC_low_depth	keep_flag_low_depth	868 genes, no markers
+Endothelial	1	interim_EC_capillary_PLVAP	keep	rerun; named after the rerun
+Endothelial	7	interim_EC_venous_SELP_VCAM1	keep	rerun; named after the rerun
+Endothelial	5	interim_EC_venous_lower_depth	keep	rerun; named after the rerun
+Endothelial	3	interim_EC_arterial	keep	rerun; named after the rerun
+Endothelial	9	interim_EC_activated_SELE	keep_state	rerun; named after the rerun
+Endothelial	0	interim_EC_tip_arterial	keep	rerun; named after the rerun
+Endothelial	10	interim_EC_venous_IEG	keep_state	rerun; named after the rerun
+Endothelial	14	interim_EC_tip_PGF	keep	rerun; named after the rerun
+Endothelial	4	interim_EC_capillary_CA4	keep	rerun; named after the rerun
+Endothelial	13	interim_Lymphatic_EC	keep	rerun; named after the rerun
+Endothelial	12	interim_EC_lung_capillary_like	keep	rerun; named after the rerun
+Endothelial	8	interim_Proliferating_EC	keep_state	rerun; named after the rerun
+Endothelial	11	interim_EC_stress_HMOX1	keep_state	rerun; named after the rerun
+Endothelial	6	interim_EC_sinusoid_like	keep	rerun; CLEC4G 0.54, DNASE1L3, MRC1 across 32 sources; review after the rerun
+Endothelial	15	interim_EC_brain_like	keep_flag_source_restricted	99% glioma, 175 cells
+Kupffer	15	Kupffer	keep_tissue	TIMD4 0.48, VCAM1 0.93, CETP 0.76, MARCO 0.69; the only cluster with TIMD4 above 0.1
+Kupffer	5	Mac_liver_VCAM1	move_to_Myeloid	VCAM1 0.56, SLC40A1, FOLR2 but TIMD4 0.02, MARCO 0.14: shared resident markers only
+Kupffer	3	Mac_liver_stress	move_to_Myeloid	HSPA6, TIMD4 0.01, uncertain 0.70
+Kupffer	4	Mac_liver	move_to_Myeloid	CD9, HLA-DQA2, TIMD4 0.01; top sample 0.75
+Kupffer	16	Mac_liver_one_sample	move_to_Myeloid	TIMD4 0.06, long-gene transcripts, 1,092 of 1,226 from one GSE299340 sample
+Kupffer	0	Mono_liver	move_to_Myeloid	S100A8 0.95, FCN1 0.87, RETN
+Kupffer	6	Mac_liver_low_depth	move_to_Myeloid	1,222 genes, no markers, TIMD4 0.01
+Kupffer	10	cDC2_liver	move_to_Myeloid	FCER1A, CD1C 0.40, CLEC10A
+Kupffer	2	Mac_liver_F13A1	move_to_Myeloid	F13A1, CCL2, CHIT1, TREM2
+Kupffer	1	Mac_liver_long_genes	move_to_Myeloid	long-gene transcripts, TIMD4 0.02, top sample 0.69
+Kupffer	17	Mac_with_hepatocyte_RNA	set_aside_review	MT1G, APOA1, CES1, AKR1C1, ALB 0.98, contamination 0.22, doublet z -0.60; no doublet evidence
+Kupffer	11	Mac_liver_long_genes	move_to_Myeloid	long-gene transcripts, HSP high, TIMD4 0.02
+Kupffer	12	Mac_liver_stress	move_to_Myeloid	HSPA6, BAG3, top sample 0.79
+Kupffer	14	LAM_liver	move_to_Myeloid	SPP1 0.92, MMP9, CD9, TIMD4 0.01
+Kupffer	8	Mac_liver_IFN	move_to_Myeloid	CXCL9/10, GBP1, STAT1
+Kupffer	9	Mono_liver_inflammatory	move_to_Myeloid	EREG, S100A8/9, IL1B, FCN1 0.79
+Kupffer	7	Mac_liver_F13A1	move_to_Myeloid	F13A1, SPP1, STAB1
+Kupffer	13	Mac_T_doublet_like	remove_doublet_like	CD3D 0.80, IL7R, CCL5, doublet z 3.16
+Sinusoidal_EC	11	Sinusoidal_EC	keep_tissue	CLEC4G 0.85, CLEC4M 0.67, CLEC1B 0.80, FCN2 0.87; every other cluster below 0.3
+Sinusoidal_EC	3	EC_liver_capillary	move_to_Endothelial	RGCC, KDR, ESM1; CLEC4G 0.06
+Sinusoidal_EC	5	EC_liver_arterial	move_to_Endothelial	SEMA3G, HEY1, SOX17, GJA5 0.37
+Sinusoidal_EC	2	EC_liver_DNASE1L3	move_to_Endothelial	DNASE1L3 0.91, KLF4; CLEC4G 0.03
+Sinusoidal_EC	12	EC_liver_venous	move_to_Endothelial	SELE, SELP, VCAM1, ACKR1 0.54
+Sinusoidal_EC	4	EC_liver_arterial	move_to_Endothelial	GJA5 0.81, FBLN5
+Sinusoidal_EC	1	EC_liver	move_to_Endothelial	no markers, CLEC4G 0.03
+Sinusoidal_EC	6	EC_liver_low_depth	move_to_Endothelial	915 genes, no markers
+Sinusoidal_EC	9	EC_liver_long_genes	move_to_Endothelial	long-gene transcripts, top sample 0.69
+Sinusoidal_EC	7	EC_liver_CA4	move_to_Endothelial	CA4, ENPP2; CLEC4G 0.00
+Sinusoidal_EC	13	EC_liver_tip	move_to_Endothelial	PGF, ESM1, ANGPT2
+Sinusoidal_EC	0	EC_liver_COL15A1	move_to_Endothelial	COL15A1, RGCC
+Sinusoidal_EC	14	Lymphatic_EC_liver	move_to_Endothelial	CCL21, PROX1 0.83, PDPN
+Sinusoidal_EC	8	EC_with_mural_RNA	set_aside_review	RGS5, ACTA2, COL1A1, doublet z 0.93; no doublet evidence
+Sinusoidal_EC	15	EC_T_doublet_like	remove_doublet_like	CD3D 0.65, NKG7, doublet z 1.60
+Sinusoidal_EC	10	EC_macrophage_doublet_like	remove_doublet_like	C1Q 0.88, TYROBP, doublet z 2.95
+Alveolar_macrophage	11	Alveolar_macrophage	keep_tissue	MARCO 0.97, FABP4 0.74, PPARG 0.83, INHBA 0.70; the only cluster with FABP4 above 0.3
+Alveolar_macrophage	6	Mac_lung_low_depth	move_to_Myeloid	901 genes, no markers, FABP4 0.05
+Alveolar_macrophage	1	Mac_lung_inflammatory	move_to_Myeloid	CCL4, IL1B, NR4A, FABP4 0.03
+Alveolar_macrophage	10	Mac_lung_FN1	move_to_Myeloid	FN1, CLEC5A, FABP4 0.03
+Alveolar_macrophage	0	Mac_lung	move_to_Myeloid	AREG, NR4A2, FABP4 0.03
+Alveolar_macrophage	13	Mac_lung_FOLR2_CCL18	move_to_Myeloid	CCL18, FOLR2 0.92, F13A1 0.64, FABP4 0.05
+Alveolar_macrophage	5	Mac_lung_CCL2	move_to_Myeloid	CCL2, MARCO 0.70, FABP4 0.08
+Alveolar_macrophage	14	Mac_lung_CHIT1_CCL18	move_to_Myeloid	CHIT1, CCL18, MARCO 0.85, PPARG 0.58, FABP4 0.11: partial; reversible through origin_pool
+Alveolar_macrophage	4	Mac_lung_HAMP	move_to_Myeloid	HAMP, SDS, FABP4 0.02
+Alveolar_macrophage	12	Mac_lung_IFN	move_to_Myeloid	CXCL9/10, GBP1, STAT1
+Alveolar_macrophage	7	Mac_lung_hypoxic_SPP1	move_to_Myeloid	SPP1 0.93, BNIP3, HK2
+Alveolar_macrophage	2	Mac_lung_F13A1	move_to_Myeloid	F13A1, LPAR6, STAB1, FABP4 0.01
+Alveolar_macrophage	8	Mac_lung_CHI3L1	move_to_Myeloid	CHI3L1, CHIT1, LPL, MARCO 0.79, PPARG 0.56, FABP4 0.12: partial; reversible through origin_pool
+Alveolar_macrophage	9	Mono_lung	move_to_Myeloid	FCN1 0.66, S100A8, RETN, MARCO 0.84, PPARG 0.55, FABP4 0.22: partial; reversible through origin_pool
+Alveolar_macrophage	16	Mac_lung_proliferating	move_to_Myeloid	MKI67, MARCO 0.75, FABP4 0.30
+Alveolar_macrophage	3	Mac_lung_TNF	move_to_Myeloid	CCL4L2, TNF, EGR1, FABP4 0.01
+Alveolar_macrophage	15	Mac_T_doublet_like	remove_doublet_like	CD3D 0.55, CD2, IL32, doublet z 3.65
+Alveolar_macrophage	17	Mac_with_epithelial_RNA	set_aside_review	KRT18 0.39, SCGB3A1, EPCAM, top sample 0.93, doublet z -1.16; no doublet evidence
+Microglia	0	Microglia	keep_tissue	P2RY12 0.67, TMEM119 0.62, TGFBI 0.13
+Microglia	3	Microglia	keep_tissue	P2RY12 0.57, TMEM119 0.38, TGFBI 0.04
+Microglia	5	Microglia_stress	keep_tissue	P2RY12 0.35, TMEM119 0.37, TGFBI 0.04, MRC1 0.04
+Microglia	8	Microglia_IFN	keep_tissue	P2RY12 0.44, TMEM119 0.51, TGFBI 0.45
+Microglia	13	Microglia_S100A8	keep_tissue	P2RY12 0.65, TMEM119 0.78, TGFBI 0.38
+Microglia	10	Microglia	keep_tissue	P2RY12 0.77, TMEM119 0.77, top sample 0.95
+Microglia	17	Microglia	keep_tissue	P2RY12 0.67, TMEM119 0.61, top sample 0.96
+Microglia	22	Microglia_stress	keep_tissue	P2RY12 0.36, TMEM119 0.49, top sample 0.97
+Microglia	18	Microglia_inflammatory	keep_tissue	P2RY12 0.78, TMEM119 0.73, top sample 0.97
+Microglia	14	Microglia	keep_tissue	P2RY12 0.74, TMEM119 0.77
+Microglia	19	Microglia_IFN	keep_tissue	P2RY12 0.60, TMEM119 0.57, top sample 0.91
+Microglia	23	Microglia_S100A8	keep_tissue	P2RY12 0.74, TMEM119 0.80
+Microglia	15	Microglia_proliferating	keep_tissue	MKI67, P2RY12 0.36, TMEM119 0.35
+Microglia	2	Microglia_low_depth	keep_flag_low_depth	1,145 genes, P2RY12 0.16, TGFBI 0.05: label transfer inside this pool decides microglia or macrophage
+Microglia	9	Microglia_low_depth	keep_flag_low_depth	1,141 genes, P2RY12 0.15, TGFBI 0.02
+Microglia	4	Microglia_low_depth	keep_flag_low_depth	1,343 genes, P2RY12 0.17, TGFBI 0.11
+Microglia	11	Microglia_low_depth	keep_flag_low_depth	708 genes, P2RY12 0.14, TGFBI 0.07
+Microglia	12	Mac_glioma_TGFBI	move_to_Myeloid	TGFBI 0.78, CD163 0.94, P2RY12 0.20
+Microglia	6	Mac_glioma_TGFBI	move_to_Myeloid	TGFBI 0.72, FN1 0.62, CD163 0.81, P2RY12 0.04
+Microglia	16	Mac_glioma_TGFBI	move_to_Myeloid	TGFBI 0.91, CD163 0.99, P2RY12 0.06
+Microglia	7	Mac_glioma_F13A1	move_to_Myeloid	F13A1 0.76, MRC1 0.58, TGFBI 0.83, P2RY12 0.10
+Microglia	21	Mac_glioma_MRC1	move_to_Myeloid	MRC1 0.93, F13A1 0.93, TGFBI 0.77, P2RY12 0.09
+Microglia	20	Microglia_T_doublet_like	remove_doublet_like	CD3D 0.81, IL7R, CD2, doublet z 2.35
+Microglia	1	Microglia_neural_doublet_like	remove_doublet_like	PTN, GPM6B, PDGFRA, MT3, doublet z 3.51, uncertain 0.60
