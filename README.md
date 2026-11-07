@@ -1,5 +1,7 @@
 # PanCancer
 
+> **V4空间实测进度与原文通讯已启动（2026-11-07）**：[状态、预计与完整计划](inventories/analysis/2026-11-07/v4_communication_author_v1/README.md)。53张CellCharter逐张审核全通过；空间去卷积4/53完整模型/原文打分/独立审核通过、另2张运行，实测80–87分钟/张，两并行剩余规划35–50小时。当前V4通讯CPU流程已从同560,871细胞启动准备：全局CPDB→25CMT比较、CellChat及细胞因子响应；还没有完整通讯或空间支持结论。
+
 > **当前V4全部CM的Visium检验生产中（2026-11-07，尚无最终结论）**：[输入、运行状态、留出诊断与方法](inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/README.md)。3来源53张合格人类切片；同50标签参考已完成250轮回归/1,000后验并独立核验，前两张切片正在GPU拟合。全部14CM将完整比较原文共定位/60近邻有向Moran，并接独立表达—空间CellCharter niche。XCL1 NK留出重放F1约0.64–0.67，仍有近邻身份混淆；不能把运行中或同标签诊断称空间验证成功。
 
 > **全部V4 CM比较与选择（2026-11-07）**：[14模块完整取舍、来源/分母及重拟合证据](inventories/analysis/2026-11-07/v4_CM_selection_v1/README.md)。新增540次受控nsNMF、252因子对应独立核验；优先验证CM03（IGHD B—PECAM1内皮—XCL1 NK），CM06备选。CM09的SPP1因子换种子不稳，CM11受组织/单节点分母影响；当前没有模块完成独立空间与机制验证。

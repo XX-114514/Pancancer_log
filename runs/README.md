@@ -1,3 +1,5 @@
+[当前V4通讯正式运行](20261107_V4_CoVarNet_communication_v1.md)：同发现输入CPU准备已启动，独立审核/小试后全局和25CMT组，替代算法/响应及总审核接续；空间实测预计另报，未混用V5/K9。
+
 [V4 CM的Visium生产](20261107_v4_Visium_author_validation_v1.md)：53张准入，参考250轮/1000posterior及50标签×3面板留出诊断已完成并独立审核；主切片GPU拟合、CellCharter CPU正交分支有限接续，首批5张niche技术审核通过，全14CM真实空间结论尚待。
 
 [V4全部14CM评估与选择](20261107_v4_all_CM_selection_v1.md)：额外540次、252因子对应及全部来源/分母独立核验；CM03优先、CM06备选，CM09/11问题单列。

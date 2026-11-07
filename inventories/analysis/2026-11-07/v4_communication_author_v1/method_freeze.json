@@ -1,0 +1,96 @@
+{
+  "version": "20261107_V4_CoVarNet_communication_v1",
+  "paper_DOI": "10.1038/s41586-025-09053-4",
+  "base_CM_run": "20261106_v7_selective_CoVarNet_paper_v2",
+  "annotation_version": "V7_selective_subtype_marker_20261106_v4",
+  "scope": {
+    "n_CM": 14,
+    "n_samples": 164,
+    "n_sources": 13,
+    "n_cells": 560871,
+    "n_labels": 45
+  },
+  "no_original_CM_or_annotation_changes": true,
+  "CMT": "argmax original frozen H, normalize H column only; not independent per-CM rescaling; near ties excluded pre-effect",
+  "global_cap_per_identity": 1000,
+  "global_selection_seed": 2026110702,
+  "expression": "native library total 1e4 then log1p; primary all13 sources commonly measured genes only; preserve complete unavailable-gene diagnostics",
+  "CPDB": {
+    "software": "existing5.0.1",
+    "database": "fixed v4.1.0 snapshot, same author path version but original zip identity unproven",
+    "iterations_formal": 1000,
+    "iterations_pilot": 20,
+    "pilot_cap": 100,
+    "threshold": 0.1,
+    "pvalue": 0.05,
+    "threads": 4,
+    "subsampling": false,
+    "counts_data": "hgnc_symbol",
+    "no_cap_for_formal_CMT_groups": true,
+    "explicit_choices_not_all_parameters_reported_by_paper": true
+  },
+  "comparators": [
+    "paper prose CMT=m all cells versus pooled other CMT samples",
+    "author notebook per-CMT outputs, compare CMT=m with other-CMT median; missing pair NA and available-CMT denominator shown"
+  ],
+  "n_CPDB_groups": 25,
+  "empty_networks": [
+    "CM01",
+    "CM02",
+    "CM05"
+  ],
+  "spatial_gate": "final Visium evidence pending; all11 nonempty networks registered as exploratory family, never claim all14 spatially accepted or hardcode authors six CM numbers",
+  "CellChat": "same balanced global cells; installed human DB snapshot, triMean raw.use true population.size false nboot100 min.cells10; implementation choices explicit",
+  "response": "direct Scanpy t-test High vsLow within exact immune identity; log2FC>log2(1.2), geneBH<.05; matched ImmuneDictionary S3/MGI reciprocal1to1; unsigned annotation-universe and directional measured-universe separate, full-familyBH; minimum memberq descriptive only",
+  "producer_network": "non-responsive original member normalized mean>0.1, subunits separate and complete-subunit flag; uncertain cytokine aliases remain unassessable",
+  "patient_source_controls": "source/CMT imbalance and sample-count tables first; source-stratified and patient-level inference requires qualified bridge, not certified here",
+  "CPU_queue_finite": true,
+  "automatic_publication_or_message": false,
+  "codes": [
+    {
+      "name": "prepare_V4_communication.py",
+      "sha256": "e8cdd8e21100e2dfba1e6b2006802a2ba447ef4d0c416939d39befd9e6d92ccf",
+      "bytes": 7548
+    },
+    {
+      "name": "audit_V4_communication_inputs.py",
+      "sha256": "4de373247484e63dd482f5104b360da2e22e84f9e4fc7c7243dd0be57acb3ca9",
+      "bytes": 2725
+    },
+    {
+      "name": "run_V4_CPDB.py",
+      "sha256": "fb73ab68fa09d885e576a58d5e0a945c1c4222be217a371abd099d809764eb50",
+      "bytes": 2520
+    },
+    {
+      "name": "audit_V4_CPDB.py",
+      "sha256": "cec5d4c82e9bee73eb2ee2190f0c1c132559cb95a19ee2e6dcc4bd9403f50f8b",
+      "bytes": 2144
+    },
+    {
+      "name": "run_V4_CellChat.R",
+      "sha256": "89e621d115a76b5e512981a6d27481ddd18ca7d1424d763cca6a3630fad3b710",
+      "bytes": 2466
+    },
+    {
+      "name": "run_V4_cytokine_response.py",
+      "sha256": "271dd0a7be43a984ea9e7c0601ca1d5c8c1d802bb25b7c36ea5230fac9950c25",
+      "bytes": 8845
+    },
+    {
+      "name": "summarize_V4_communication.py",
+      "sha256": "61f339783d13bf1707adcda79339cd63e7d4d60ed3df929e5ec23e2b1fc8611c",
+      "bytes": 4603
+    },
+    {
+      "name": "audit_V4_communication_cohort.py",
+      "sha256": "1af3bd163bfbbffa7b861f52f9e561ce6d9671639d253d42b43334db8e7ee580",
+      "bytes": 3561
+    },
+    {
+      "name": "finite_V4_communication_controller.py",
+      "sha256": "43e17cc23fdff569a22472251be614c7fddc26d09b60d127f8bb4b64989e7260",
+      "bytes": 3132
+    }
+  ]
+}

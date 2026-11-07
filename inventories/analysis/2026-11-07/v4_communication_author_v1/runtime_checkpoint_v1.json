@@ -1,0 +1,54 @@
+{
+  "UTC": "2026-11-07T05:28:00.552316+00:00",
+  "run_id": "20261107_V4_CoVarNet_communication_v1",
+  "stage_receipts": {},
+  "controller_same_process_alive": true,
+  "deployed_code_readback": [
+    {
+      "name": "prepare_V4_communication.py",
+      "sha256": "e8cdd8e21100e2dfba1e6b2006802a2ba447ef4d0c416939d39befd9e6d92ccf",
+      "bytes": 7548
+    },
+    {
+      "name": "audit_V4_communication_inputs.py",
+      "sha256": "4de373247484e63dd482f5104b360da2e22e84f9e4fc7c7243dd0be57acb3ca9",
+      "bytes": 2725
+    },
+    {
+      "name": "run_V4_CPDB.py",
+      "sha256": "fb73ab68fa09d885e576a58d5e0a945c1c4222be217a371abd099d809764eb50",
+      "bytes": 2520
+    },
+    {
+      "name": "audit_V4_CPDB.py",
+      "sha256": "cec5d4c82e9bee73eb2ee2190f0c1c132559cb95a19ee2e6dcc4bd9403f50f8b",
+      "bytes": 2144
+    },
+    {
+      "name": "run_V4_CellChat.R",
+      "sha256": "89e621d115a76b5e512981a6d27481ddd18ca7d1424d763cca6a3630fad3b710",
+      "bytes": 2466
+    },
+    {
+      "name": "run_V4_cytokine_response.py",
+      "sha256": "271dd0a7be43a984ea9e7c0601ca1d5c8c1d802bb25b7c36ea5230fac9950c25",
+      "bytes": 8845
+    },
+    {
+      "name": "summarize_V4_communication.py",
+      "sha256": "61f339783d13bf1707adcda79339cd63e7d4d60ed3df929e5ec23e2b1fc8611c",
+      "bytes": 4603
+    },
+    {
+      "name": "audit_V4_communication_cohort.py",
+      "sha256": "1af3bd163bfbbffa7b861f52f9e561ce6d9671639d253d42b43334db8e7ee580",
+      "bytes": 3561
+    },
+    {
+      "name": "finite_V4_communication_controller.py",
+      "sha256": "43e17cc23fdff569a22472251be614c7fddc26d09b60d127f8bb4b64989e7260",
+      "bytes": 3132
+    }
+  ],
+  "status": "REAL_CPU_INPUT_PREPARATION_IN_PROGRESS_NO_COMMUNICATION_RESULTS_YET"
+}

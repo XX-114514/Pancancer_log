@@ -1,0 +1,26 @@
+{
+  "UTC_observed": "2026-11-07T05:20:11+00:00",
+  "timezone_user": "Australia/Melbourne UTC+11",
+  "requested_sections": 53,
+  "complete_fitted_scored_and_independently_audited": 4,
+  "active_fits": 2,
+  "failed_fits": 0,
+  "completed_model_minutes": [
+    80.39,
+    82.54,
+    84.68,
+    86.79
+  ],
+  "median_completed_minutes": 83.61,
+  "n_independently_audited_niche_sections": 53,
+  "niche_completed_UTC": "2026-11-07T03:10:48.822847+00:00",
+  "nominal_remaining_fit_hours_unadjusted": 34.13686801923611,
+  "remaining_fit_hours_planning_interval": [
+    35,
+    50
+  ],
+  "estimated_finish_user_local": "2026-11-09 early morning through evening",
+  "estimate_method": "4 observed full 30000-epoch/1000posterior elapsed fits, two parallel; broaden for later datasets and larger spots; no representative late-source timing yet",
+  "scientific_all_CM_spatial_validation_conclusion": "PENDING",
+  "no_GPU_concurrency_or_epoch_changes": true
+}
