@@ -1,0 +1,22 @@
+{
+  "UTC": "2026-11-07T12:44:20.549676+00:00",
+  "scope": "new breast branch technical status, not scientific acceptance",
+  "new_native_downloads_complete": [],
+  "new_native_qualifications_complete": [],
+  "mapping_v4": {
+    "complete_archive_selection": false,
+    "individually_CRC_SHA_accepted_members": 0,
+    "partial_and_complete_written_bytes": 0
+  },
+  "transport_v4_active": true,
+  "local_first_native": {
+    "UTC": "2026-11-07T12:45:32.068232+00:00",
+    "three_author_mapping_members_CRC_SHA_accepted": 3,
+    "mapping_uncompressed_bytes": 45945685,
+    "matrix_written_bytes_partial_only": 85983232,
+    "matrix_expected_bytes": 442743536,
+    "matrix_complete_CRC_SHA_accepted": false,
+    "finite_native_qualification_waiting_for_complete_receipts": true,
+    "scientific_native_identity_or_distance_result_accepted": false
+  }
+}

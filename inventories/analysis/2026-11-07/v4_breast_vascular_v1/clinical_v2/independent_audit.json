@@ -1,0 +1,14 @@
+{
+  "UTC": "2026-11-07T12:26:43.435059+00:00",
+  "status": "PASS_INDEPENDENT_RAW_KEYS_RANKS_DESIGNS_NUMPY_LIKELIHOOD_AND_FULL_FDR",
+  "n_eligible_patients": 248,
+  "n_designs_refitted": 18,
+  "n_primary_slots": 21,
+  "n_secondary_slots": 3,
+  "max_native_rank_score_error": 2.220446049250313e-16,
+  "max_coefficient_covariance_OR_CI_P_error": 1.1819678569224834e-10,
+  "max_abs_gradient": 5.501821220832426e-11,
+  "plan_sha256": "35e23fed52068af4396e838c067ee707708e30ab9eeb57b964afd755d9718350",
+  "measurement_addendum_sha256": "d26436298fbcced43b1468cd6442819cb86f0715448e420d7f8aa4f281ef9d3f",
+  "source_patient_design_and_expression_not_public": true
+}

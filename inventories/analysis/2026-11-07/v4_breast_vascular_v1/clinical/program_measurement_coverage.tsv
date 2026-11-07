@@ -1,0 +1,10 @@
+program	required_genes	unique_measured_genes	missing_or_ambiguous
+CM03	10	9	NCR3LG1
+CM04	10	10	
+CM07	10	10	
+CM09	10	8	C1QL4;DMRTA2
+CM11	10	10	
+B	3	3	
+EC	3	3	
+NK	3	3	
+panT	3	2	TRAC

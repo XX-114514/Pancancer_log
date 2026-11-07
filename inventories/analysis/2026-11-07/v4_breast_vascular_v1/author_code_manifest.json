@@ -1,0 +1,83 @@
+{
+  "commit": "177e35ffed015b5a6155319c830e03616efc8659",
+  "files": [
+    {
+      "path": "config/sample_sheet_xenium.csv",
+      "sha256": "6a2ca4d40e5e8017f3fc4cab45a5ee16d80daaffa3000a9ba6d982f3fcd31bc0",
+      "bytes": 334,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/config/sample_sheet_xenium.csv"
+    },
+    {
+      "path": "scripts/01_preprocessing/xenium/01_make_objects/01a_make_adata_objects.py",
+      "sha256": "e0e503bce168068faa803db09aa66158f2bd063ac43e2de4a62d13db4dbd14e5",
+      "bytes": 3840,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/01_preprocessing/xenium/01_make_objects/01a_make_adata_objects.py"
+    },
+    {
+      "path": "scripts/01_preprocessing/xenium/02_handle_images/01_make_adata_objects_with_images.py",
+      "sha256": "f3a7abe781c1c681200e212ad0373acdee638270cd5f939cd237a10a3f1f953e",
+      "bytes": 5788,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/01_preprocessing/xenium/02_handle_images/01_make_adata_objects_with_images.py"
+    },
+    {
+      "path": "scripts/02_cell_type_mapping/xenium_label_transfer/02_label_transfer_sc_ref.py",
+      "sha256": "8fa3b0a843eb82186241e9de31ee61af9a95253d36e4afb429d1f8d7e278eac7",
+      "bytes": 4776,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/02_cell_type_mapping/xenium_label_transfer/02_label_transfer_sc_ref.py"
+    },
+    {
+      "path": "scripts/04_vascular_microenvironment/02_identify_all_vasculature/01_classify_vessels.py",
+      "sha256": "769cfffa338cc8fe48e31a0574ff69b0bbc722f440dfddc0ba97351fa2084613",
+      "bytes": 35562,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/04_vascular_microenvironment/02_identify_all_vasculature/01_classify_vessels.py"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/02_identify_HEV_regions/01_identify_HEV.py",
+      "sha256": "9665a44b139ee58a936fbae89970c10127e50fa33646cc1f14d891a9e8b2c896",
+      "bytes": 27994,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/02_identify_HEV_regions/01_identify_HEV.py"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/03_HEV_microenvironment/01_calculate_distance_HEV.py",
+      "sha256": "63e05d9f59c004c435f00bd76f8db51ce98576a17821380ab1ad2bab21b6c40a",
+      "bytes": 15579,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/03_HEV_microenvironment/01_calculate_distance_HEV.py"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/09_chemokine_sources/README.md",
+      "sha256": "e720af701cccba787a09763cb9fcf80f92aa0ab90d749aa00d3afe6a42121787",
+      "bytes": 3486,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/09_chemokine_sources/README.md"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/09_chemokine_sources/01_reference_producers.py",
+      "sha256": "db633134c50b290bc3cb3465df8f7f2318677119ce45c62f5aa01549387aa116",
+      "bytes": 28265,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/09_chemokine_sources/01_reference_producers.py"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/09_chemokine_sources/03_impvl_vs_icaf.py",
+      "sha256": "f54dc9150329a4510685f3d82126f4a42653ff8021f7c719e4a1b583b4840971",
+      "bytes": 17080,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/09_chemokine_sources/03_impvl_vs_icaf.py"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/09_chemokine_sources/05_chemokine_gradients.py",
+      "sha256": "824faba189efc94354561df786fcce6b7798a5c5ba241cfe2905c77d36d2d832",
+      "bytes": 42192,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/09_chemokine_sources/05_chemokine_gradients.py"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/11_SPP1_venous_specificity/01_SPP1_across_venous_groups.py",
+      "sha256": "ffa52f4593ef5b1c84648f97e4a7699c439ac8cfbffa5cccf9f66b80b72d30ae",
+      "bytes": 12433,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/11_SPP1_venous_specificity/01_SPP1_across_venous_groups.py"
+    },
+    {
+      "path": "scripts/05_xenium_mechanisms/README.md",
+      "sha256": "a65ce007c5889da32b6e5ac67ae0e54952af67b6ab5e3b489d0737dd6c72a902",
+      "bytes": 2376,
+      "source": "https://github.com/swarbricklab/P08-breast-tme-spatial-atlas/blob/177e35ffed015b5a6155319c830e03616efc8659/scripts/05_xenium_mechanisms/README.md"
+    }
+  ]
+}

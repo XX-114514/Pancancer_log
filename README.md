@@ -1,5 +1,7 @@
 # PanCancer
 
+> **研究主线收束为乳腺癌血管相关免疫组成（2026-11-07）**：[空间资源、算法审核与I-SPY2完整结果](inventories/analysis/2026-11-07/v4_breast_vascular_v1/README.md)。状态分析不作前置。新Xenium适合血管/募集轴但缺IGHD/XCL1；I-SPY2 69联合治疗+179对照已核，独立审核18模型、两完整家族均0 BH，原CM03程序缺测保留NA。空间原生获取/身份审核仍待。
+
 > **当前V4的TCGA/ICI与免疫结果已独立审核，成像通讯继续（2026-11-07）**：[完整结果、三图及状态](inventories/analysis/2026-11-07/v4_spatialCellChat_bulk_v1/README.md)。395临床模型、1325免疫检验完成；六ICI完整家族无BH显著，CM03仅见LGG OS探索线索，不能称泛癌/ICI标志物。13成像机会接续，5个Xenium均缺IGHD/XCL1，不作精确亚型复现；原注释/CM不改。
 
 > **当前V4通讯已有全局/响应结果，完整环境比较继续（2026-11-07）**：[完整结果、两张图及运行预计](inventories/analysis/2026-11-07/v4_communication_author_v1/README.md)。正式全局CPDB1,000置换、21个CM—免疫身份响应及CellChat替代算法已完成并独立核验；CM03在作者式响应分支未获q<0.05支持，方向/实测背景分支单列，不混为原文阳性。空间6/53完整通过、niche53/53通过；25组比较3组High已审核，正在CM04 High，通讯剩余规划18–30小时，尚无完整通讯/空间机制结论。

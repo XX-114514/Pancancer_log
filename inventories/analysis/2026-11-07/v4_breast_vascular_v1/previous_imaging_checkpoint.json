@@ -1,0 +1,71 @@
+{
+  "UTC": "2026-11-07T12:19:55.041737+00:00",
+  "previous_imaging_audited_units": [
+    {
+      "unit": "I001",
+      "audit": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T08:36:27Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      }
+    },
+    {
+      "unit": "I002",
+      "audit": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T08:51:23Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      }
+    },
+    {
+      "unit": "I003",
+      "audit": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T09:55:43Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      }
+    },
+    {
+      "unit": "I004",
+      "audit": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T10:24:00Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      }
+    },
+    {
+      "unit": "I005",
+      "audit": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T08:40:23Z",
+        "n_variants_checked": 4,
+        "patient_contact_or_causality_claim": false
+      }
+    },
+    {
+      "unit": "I006",
+      "audit": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T10:25:53Z",
+        "n_variants_checked": 112,
+        "patient_contact_or_causality_claim": false
+      }
+    },
+    {
+      "unit": "I007",
+      "audit": {
+        "status": "PASS_all_available_native_spatial_CellChat_saved_arrays_counts_and_full_BH",
+        "UTC": "2026-11-07T11:46:44Z",
+        "n_variants_checked": 80,
+        "patient_contact_or_causality_claim": false
+      }
+    }
+  ],
+  "free_GB_at_qualification": 3786.467598336,
+  "available_memory_GB_at_qualification": 813.591543808,
+  "original_queues_unchanged": true
+}

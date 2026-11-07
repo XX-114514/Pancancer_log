@@ -1,0 +1,30 @@
+{
+  "UTC": "2026-11-07T12:25:04.912932+00:00",
+  "status": "EXACT_KEYS_AND_OUTCOME_BLIND_SCORE_MEASUREMENT_COMPLETE",
+  "n_source_arrays": 988,
+  "n_unique_expression_keys": 988,
+  "n_metadata_records": 988,
+  "n_unique_metadata_patient_keys": 987,
+  "n_duplicated_metadata_keys": 1,
+  "n_duplicate_expression_keys": 0,
+  "n_eligible_patients": 248,
+  "duplicate_policy": "all duplicate keys excluded before arm selection, no averaging or suffix stripping",
+  "missing_eligible_expression_keys": 0,
+  "n_native_genes": 19134,
+  "source_files": [
+    {
+      "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194040&targ=gsm&form=text&view=full",
+      "bytes": 7723428,
+      "sha256": "0c3cca5b5b269a4c359f9c5f02f1ae1439e38a72e8915794d4e91d4d6b44a7bb"
+    },
+    {
+      "source": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE194nnn/GSE194040/suppl/GSE194040_ISPY2ResID_AgilentGeneExp_990_FrshFrzn_meanCol_geneLevel_n988.txt.gz",
+      "bytes": 49349197,
+      "sha256": "9d8d1d35dc7f9ccee367cf37ae3403335eca3d7665a498e3037f4a4614b972c4"
+    }
+  ],
+  "plan_sha256": "35e23fed52068af4396e838c067ee707708e30ab9eeb57b964afd755d9718350",
+  "signature_sha256": "f9ba34301c1471cb4d45c968fe7faa96c903f3312a37decd0d2358bf73fec2a2",
+  "private_analysis_input_sha256": "17b2587061804026e182748acf5c66f8aedc8b4e4fc402cb65848f996715e646",
+  "patient_scores_not_public": true
+}

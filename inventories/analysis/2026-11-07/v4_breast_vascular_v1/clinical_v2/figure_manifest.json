@@ -1,0 +1,15 @@
+{
+  "scope": "all24 slots from aggregate tables; no individual data",
+  "files": [
+    {
+      "name": "figures/ISPY2_all24_target_terms.png",
+      "sha256": "544ec676dc1b8f3e3c3a262ccfe9154973044b047ba7e871499bede9a9422ebf",
+      "bytes": 180336
+    },
+    {
+      "name": "figures/ISPY2_all24_target_terms.svg",
+      "sha256": "bd727504c9c876a1ebea552d7e3dea2b58b60aba178cfdf98b50803cb54ca75b",
+      "bytes": 63899
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-11-07T12:26:05.448757+00:00",
+  "reason": "all original 24 slots unestimable because strict 3-gene panT includes unmeasured TRAC; no clinical effect estimates had been generated",
+  "original_plan_sha256": "35e23fed52068af4396e838c067ee707708e30ab9eeb57b964afd755d9718350",
+  "new_separate_analysis": "measurement_v2_CD3D_CD3E_control",
+  "change": "panT_2 measured CD3D/CD3E percentile mean, both required, pooled cohort SD",
+  "unchanged": "all original program genes, B/EC/NK panels, patients, endpoints, models, cutpoint prohibition and 21+3 complete FDR families",
+  "CM03": "original NCR3LG1 absent, remains unavailable; do not replace or call 9-gene fragment original CM03",
+  "CM09": "C1QL4/DMRTA2 absent, remains unavailable",
+  "scope": "breast vascular-composition RNA proxies; no cell fraction or spatial niche equivalence",
+  "effects_observed_before_addendum": false
+}

@@ -1,0 +1,77 @@
+{
+  "frozen_utc": "2026-11-07T12:22:31.249228+00:00",
+  "scope": "2026-11-06 V4 CM03-derived breast vascular immune composition; state analysis optional, not prerequisite",
+  "original_definition_unchanged": true,
+  "spatial_source": "https://zenodo.org/records/18917100",
+  "acquisition": "Six Xenium AnnData and all three author label-transfer levels only, selected by platform and lexical source order; complete members CRC/SHA; whole archive MD5 not certified",
+  "budget": {
+    "download_GB_max": 6,
+    "output_GB_max": 30,
+    "reserve_disk_GB": 500,
+    "parallel_CPU_workers": 1,
+    "GPU": 0
+  },
+  "spatial_identity": "Author major/minor/subset labels retained as external reference evidence; first qualify barcode joins, native expression scale, original micron coordinates and mapping score semantics. Multi-marker review before biological inference. No synthetic IGHD/XCL1 labels on missing targets.",
+  "hypotheses": [
+    "Vascular-associated B and NK composition beyond total vascular and lymphoid abundance",
+    "Vascular proximity and B/NK coupling versus TLS/lymphoid aggregate background",
+    "Measured ligand and receptor sources are spatially adjacent",
+    "Composition proxies associated with pCR with explicit chemotherapy comparator and treatment interaction"
+  ],
+  "spatial_distance_um": [
+    0,
+    25,
+    50,
+    100,
+    200,
+    400
+  ],
+  "spatial_unit": "six source tumors/patients subject to actual identity bridge; cells/vessels not independent patients",
+  "vessel_labels": "ACKR1+ blood endothelial, other blood endothelial, lymphatic endothelial separately; ACKR1 alone does not establish HEV. Mural/PVL and fibroblast populations separately; CCL19/21 source not hard coded as mural.",
+  "chemokine_axes": [
+    "CCL19-CCR7",
+    "CCL21-CCR7",
+    "CXCL12-CXCR4"
+  ],
+  "spatial_inference": "First release descriptive QC and native-distance lineage profiles only; formal patient-level and compartment-constrained null tests require separate outcome-blind eligibility/geometry addendum. No cell-level pseudo-replication or causal migration claim.",
+  "clinical_source": "GSE194040 official processed 19134-gene Agilent expression and GEO metadata; reuse locally verified complete public source without redownload",
+  "clinical_preexisting_plan": "Seven outcome-blind scores: five complete original CM03/04/07/09/11 programs plus equal mean and minimum of B/EC/NK marker percentile means; 21 primary target terms across pembro/control/treatment-interaction",
+  "clinical_marker_panels": {
+    "B": [
+      "IGHD",
+      "MS4A1",
+      "CD79A"
+    ],
+    "EC": [
+      "PECAM1",
+      "VWF",
+      "CDH5"
+    ],
+    "NK": [
+      "XCL1",
+      "NCR1",
+      "KLRD1"
+    ],
+    "panT": [
+      "CD3D",
+      "CD3E",
+      "TRAC"
+    ]
+  },
+  "clinical_measurement": "All panel genes required; complete-patient within eligible pooled HER2-negative cohort gene percentile means, no outcome-based cuts; pooled SD so arm effects use same unit. These are RNA proxies, not fractions or spatial niches.",
+  "clinical_eligibility": "Exact patient key; pretreatment author expression; HER2-negative pembro+paclitaxel or paclitaxel control only; exclude duplicate/conflicting patient keys, unknown HR/pCR; n>=30, minority>=10, full rank, condition number<=1e6, unpenalized logistic convergence, finite estimates and 95% Wald CI. No optimization of cutpoints/markers.",
+  "clinical_models": {
+    "within_arm": "pCR ~ score + panT + HR",
+    "pooled": "pCR ~ score + treatment + score:treatment + panT + HR"
+  },
+  "clinical_incremental_secondary": {
+    "target": "minimum-component proxy beyond vascular and total B/NK RNA proxies",
+    "within_arm": "pCR ~ min_component + EC + mean_B_NK + panT + HR",
+    "pooled": "pCR ~ min_component + EC + mean_B_NK + panT + HR + treatment + treatment:(min_component + EC + mean_B_NK + panT + HR)",
+    "family": "3 fixed target terms, separate BH/BY; exploratory, possible small-sample/collinearity limitations"
+  },
+  "FDR": "21 primary and 3 secondary target slots separately BH and BY, unavailable P1 denominators and NA display; full outputs retained",
+  "clinical_limits": "Adaptive platform trial; concurrent-control eligibility not certified from GEO fields alone; treatment interaction is exploratory, not proven treatment-specific benefit. Source 988 arrays and 987 patients described in publication must be reconciled by exact keys, not forced.",
+  "no_individual_data_publication": true,
+  "previous_six_ICI": "No breast cohort and different frozen gene-program proxy; negative results cannot directly refute the breast vascular-composition route; also do not provide positive evidence for it."
+}

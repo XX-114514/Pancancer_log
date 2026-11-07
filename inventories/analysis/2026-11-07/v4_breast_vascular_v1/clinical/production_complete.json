@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-11-07T12:25:05Z",
+  "status": "PRODUCTION_ENDED_INDEPENDENT_AUDIT_PENDING",
+  "R": "R version 4.5.2 (2025-10-31)",
+  "n_slots": 24,
+  "n_estimable": 0,
+  "n_primary_BH": 0,
+  "n_secondary_BH": 0
+}

@@ -1,0 +1,60 @@
+{
+  "UTC": "2026-11-07T12:30:28.388370+00:00",
+  "files": [
+    {
+      "name": "audit_ISPY2_models.py",
+      "sha256": "550d42f96705ab51522ce2d70563559f026b63f5d62284ebf3480c4daebc10c9",
+      "bytes": 6750
+    },
+    {
+      "name": "finite_breast_acquisition.py",
+      "sha256": "e8f7a34f331da9ba0aa6ab128f93062b4967cf9c8c1529f5be7221d9824fe2bc",
+      "bytes": 1536
+    },
+    {
+      "name": "finite_breast_acquisition_relay_v2.py",
+      "sha256": "ea73f6383939de168964723398bb341c622c80ff77c4f03ccb197a7716f8cb49",
+      "bytes": 1591
+    },
+    {
+      "name": "prepare_ISPY2_inputs.py",
+      "sha256": "a085878c0d42934396d1ca7707c075838805e280554aa8e8982bc9a9dc650d2c",
+      "bytes": 4524
+    },
+    {
+      "name": "prepare_ISPY2_inputs_v2.py",
+      "sha256": "60230c41ac6e8c8081b3a2fb10e2718f926bb45f85a0da8061afcaf299d790a2",
+      "bytes": 4709
+    },
+    {
+      "name": "qualify_breast_xenium.py",
+      "sha256": "d382f87d1b34d7346a6c7b8d7e8c772fd4d498a31f8fbcefb66d279f334e5d58",
+      "bytes": 6719
+    },
+    {
+      "name": "qualify_breast_xenium_v2.py",
+      "sha256": "70d0071bc075995dcdc983c7f4835090a2adf5217bf8ea7d96c202279be2656a",
+      "bytes": 6751
+    },
+    {
+      "name": "render_ISPY2_aggregate.py",
+      "sha256": "cf71611dd6cf1ded253e9071b3dd5bd4eb27f7eae538311fbcf87c64074e1b07",
+      "bytes": 3189
+    },
+    {
+      "name": "run_ISPY2_logistic.R",
+      "sha256": "479e96cd402cf1d6b6af6ba5a71cdaa3037f6f366c1598bb6cba961f8c2227fd",
+      "bytes": 4432
+    },
+    {
+      "name": "selective_public_zip.py",
+      "sha256": "7cf7a447f0dfb81805746901ce39432e1bad4bbecf19ba4b47f647cb788d2411",
+      "bytes": 3705
+    },
+    {
+      "name": "temporary_public_range_relay.py",
+      "sha256": "779bd60b39380710dd77c0dfc095996fae7886f96e728c9d74a2d002930dba55",
+      "bytes": 2824
+    }
+  ]
+}

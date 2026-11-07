@@ -1,0 +1,36 @@
+{
+  "UTC": "2026-11-07T12:40:13.735779+00:00",
+  "record": "https://zenodo.org/records/18917100",
+  "current_API_access_right": "open",
+  "license": "cc-by-4.0",
+  "metadata_updated": "2026-11-03T06:57:26.372358+00:00",
+  "files": [
+    {
+      "public_archive": "cell_type_mapping.zip",
+      "bytes": 961391516,
+      "published_checksum": "md5:0a630367ae5893f3298eb4d5f5668b34"
+    },
+    {
+      "public_archive": "spatialdata_objects.zip",
+      "bytes": 28138420273,
+      "published_checksum": "md5:4108cdaca4b0dda64cddc5aa9025ef51"
+    },
+    {
+      "public_archive": "anndata_objects.zip",
+      "bytes": 20089465855,
+      "published_checksum": "md5:a37b8ebcf9361fd1d094531fbab39078"
+    },
+    {
+      "public_archive": "pathology_annotations.zip",
+      "bytes": 15715020,
+      "published_checksum": "md5:8aad4ad7fac5f18749e9000111bb3fc8"
+    }
+  ],
+  "selected_Xenium_members": 6,
+  "selected_Xenium_compressed_bytes": 3213011340,
+  "selected_Xenium_uncompressed_bytes": 3414931740,
+  "selected_mapping_members": 18,
+  "source_selection": "all6_Xenium_and_all18_Xenium_label_tables_lexical_order_not_effect_selected",
+  "whole_archive_MD5_certified": false,
+  "controlled_reads_not_requested": true
+}
