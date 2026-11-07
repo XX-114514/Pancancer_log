@@ -1,0 +1,41 @@
+{
+  "scope": "SYNTHETIC_SOFTWARE_VERIFICATION_ONLY_NOT_BIOLOGICAL_VALIDATION",
+  "evidence_UTC": "2026-11-07T13:39:33.195033+00:00",
+  "checks": {
+    "AST_current9_scripts": "PASS",
+    "native_log1p_UMI_full_matrix_integer_checks_and_native_not_image_coordinates": "PASS",
+    "all3_author_hierarchy_barcode_joins_and_source_binding": "PASS",
+    "T_CD3E_CD3G_and_NK_without_effector_state_gate": "PASS",
+    "native_adapter_output_shapes_12_27_27": "PASS",
+    "regional_total_RNA_not_tautological_lineage_only_product": "PASS",
+    "observed_zero_negative_conditional_excess_retained": "PASS",
+    "no_cross_FOV_edges": "PASS",
+    "patient_families_2_10_27_27_and_NA_denominators": "PASS",
+    "known6_patient_exact_P_1_over64_and_BH_1_over32": "PASS",
+    "one_patient_no_formal_P_repeated_cases_or_donors_rejected": "PASS",
+    "renderer_marker_identity_and_all3_RNA_axes": "GENERATED_SYNTHETIC_ONLY",
+    "representative_synthetic_LR_map_visually_inspected": "PASS_nonbiological_narrow_fixture_geometry_not_for_scientific_display"
+  },
+  "failed_attempts_preserved": {
+    "adapter_prototypes_v1_v2": "receipt_dictionary_SyntaxError_caught_before_native_RNA; corrected_in_v3_and_retained_privately",
+    "old_native_download": "truncated_body_retained_not_accepted; bounded_body_length_range_CRC_SHA_retry",
+    "activation_in_sandbox": "process_inspection_blocked_by_sandbox; same_scoped_activation_allowed_with_escalation"
+  },
+  "code_sha256": {
+    "vascular_spatial_controls_v2.py": "5cd88433b8ad25041980dc29064ea41a76b83a5bb8caf1fb4e81884f7cfde979",
+    "run_native_vascular_controls_v5.py": "a4d808b7be95a3f1f3c0e58e582820e2bfbb6d40c02b88a986c345278df48794",
+    "finite_native_vascular_controls_v5.py": "1fb518ca910f403d1bd34dd4800136ce205ac820d081feb70097f1c224e78f7a",
+    "finite_local_breast_acquisition_v2.py": "62ddd8fb29d53499972dcc1626331a8c000c0bed06d279c45ac7735b7fc66a91",
+    "render_vascular_identity_review_v3.py": "4a0ef01c1abb64cb7961dbf5a32a36a94d332e0a4e581d2cb3916ca7ed885051",
+    "test_vascular_controls_invariants_v2.py": "47cf0d99616a25980876610ad79fdea1bd7d198ff012bcc39dafe4ab0386b3b7",
+    "test_native_vascular_end_to_end_v4.py": "e7413aee727fa3ec926fc861264000990d90c5498554c4830073afa37ab70120",
+    "test_patient_level_families_v1.py": "6659cdb9b0358ac9a3f9930a44ec8e252113da139799000d99caee28db27a27b",
+    "selective_public_zip_v3.py": "2a9cfae5e87b0deb256330f57b5606a7094ccdac3a0b9670d66dd2b7055fe698"
+  },
+  "publication_checks": {
+    "repository_validator": "PASS_0_errors_1_preexisting_path_warning",
+    "new_task_privacy_size_and_relative_links": "PASS",
+    "git_diff_check": "PASS",
+    "public_payload": "current_generic_code_frozen_parameters_and_aggregate_technical_receipts_no_native_rows_matrices_or_synthetic_scientific_figures"
+  }
+}

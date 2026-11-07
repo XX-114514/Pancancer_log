@@ -1,0 +1,23 @@
+{
+  "evidence_UTC": "2026-11-07T13:39:33.195033+00:00",
+  "evidence_UTC_plus8": "2026-11-07T21:39:33.195033+08:00",
+  "evidence_Melbourne": "2026-11-08T00:39:33.195033+11:00",
+  "native_plan_version": "v5",
+  "native_plan_sha256": "4dd09cc72aa4ef5d7fe789066656261241629b3b6290d229ac279aa1561a80d7",
+  "fixed_Xenium_donors_requested": 6,
+  "author_mapping_members_CRC_SHA_accepted": 18,
+  "mapping_receipt_sha256": "373c1d344c9d02e7265b2adcf37c7706a4fa5b886ae4421c8fb94665d9ade677",
+  "first_native_full_receipt_present": false,
+  "first_native_retry_bytes_written": 384827392,
+  "first_native_expected_bytes": 442743536,
+  "native_cases_with_complete_receipt": 0,
+  "new_biological_results_reviewed": 0,
+  "finite_native_stage": "waiting_for_verified_source",
+  "finite_acquisition": "existing_first_retry_plus_sequential_remaining5",
+  "bounded_hours": 18,
+  "automatic_Git_or_notifications": false,
+  "original_Visium_CPDB_queues": "preserved_not_refreshed_by_this_local_snapshot",
+  "strict_original_CM03_on_new_panel": "unavailable_IGHD_XCL1_absent",
+  "centroid_neighborhood_scope": "ACKR1_detected_vs_undetected_blood_EC_proxy_not_distinct_segmented_vessel_types",
+  "all66_hypotheses_retained": true
+}

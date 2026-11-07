@@ -1,3 +1,5 @@
+[V4血管空间对照与患者级通讯](V4-vascular-spatial-controls-20261108.md)：固定原CM、marker身份、三组区域/条件零分布与66完整假设。
+
 [V4乳腺癌血管免疫组成](V4-breast-vascular-immune-20261107.md)：状态非前置、原生坐标/身份、血管/TLS背景、I-SPY2测量及完整家族。
 
 [当前V4成像CellChat及TCGA/六ICI](V4-spatial-CellChat-TCGA-ICI-20261107.md)：原生面板身份/几何、独立邻近背景、冻结表达程序及完整临床免疫家族。

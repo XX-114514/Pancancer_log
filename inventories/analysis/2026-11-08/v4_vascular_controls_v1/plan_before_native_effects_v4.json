@@ -1,0 +1,110 @@
+{
+  "frozen_utc": "2026-11-07T13:30:02.385739+00:00",
+  "local_date": "2026-11-08 Australia/Melbourne",
+  "parent_discovery": "2026-11-06 V4 CM03 unchanged; exact subtype projection stays separate from broad composition extension",
+  "status": "FROZEN_BEFORE_NEW_NATIVE_SPATIAL_EFFECTS",
+  "input": "same six fixed Xenium source tumors, all18 author mappings CRC/SHA complete; source order unchanged",
+  "state_analysis": "optional_not_prerequisite",
+  "measurement_addendum": {
+    "T_identity": [
+      "CD3E",
+      "CD3G"
+    ],
+    "why": "both measured; TRAC/TRBC1/TRBC2 absent; original T rule using TRBC kept as historical diagnostic only",
+    "fibroblast_review": "DCN/PDGFRA measured; COL1A1/COL1A2 missing and shown unavailable, never0",
+    "no_imputed_IGHD_XCL1": true,
+    "author_Tangram_mass": "not calibrated probability; no0.7 mass threshold",
+    "NK_identity": [
+      "NCR1",
+      "KLRD1"
+    ],
+    "NK_effector_genes": "PRF1/FCGR3A plotted only, never required to defineNK; avoid excluding non-cytotoxic NK by a state gate"
+  },
+  "QC": {
+    "native_UMI_min": 50,
+    "native_detected_genes_min": 20,
+    "unrelated_B_T_endothelial_program_conflicts": "exclude primary analysis view, retain source and review record; not automatically proven doublets",
+    "counts": "independently invert log1p and check integer consistency across full native X",
+    "coordinates": "native microns only, separateFOV, centroid distance not contact or vessel-wall distance"
+  },
+  "vascular_target": "multi-marker blood endothelial after lymphatic exclusion, ACKR1>=1 UMI vs ACKR1 undetected; no automatic HEV/arterial classification",
+  "neighborhood": {
+    "nearest_endothelial": "closest within sameFOV, non-overlapping target/control assignment",
+    "primary": "B andNK at50um, two hypotheses",
+    "secondary": "T at50um andB/T/NK at25/100/200um, ten hypotheses",
+    "effect": "patient log-odds difference of receiver fraction among QC nonendothelial cells, Jeffreys .5 continuity correction; conditional B/T/NK fraction also described",
+    "minimum_support": "20 targetEC and20 otherEC;100 nonEC in each group;20 receiver cells in full source; zeros within neighborhoods retained",
+    "no_area_density_without_valid_tissue_mask": true
+  },
+  "regional_LR": {
+    "senders": [
+      "Mural",
+      "Fibroblast",
+      "Blood_EC"
+    ],
+    "receivers": [
+      "B",
+      "T",
+      "NK"
+    ],
+    "axes": [
+      "CCL19-CCR7",
+      "CCL21-CCR7",
+      "CXCL12-CXCR4"
+    ],
+    "full_family": 27,
+    "bins_um": 100,
+    "vascular_band_um": 100,
+    "cell_presence": "A>=2,B>=2 joint; A>=2/B0 or B>=2/A0 solo; ambiguous1-cell states excluded and counted",
+    "gene_co_detection": "total regional nativeRNA, both genes>=1 UMI, independent of sender/receiver membership definition; source lineage expression checked separately",
+    "minimum_support": "atleast5 bins in each of three groups andcommon log2RNA x log2cellcount strata",
+    "depth_standardization": "common strata weighted by minimum group count; does not claim all mixture confounding removed",
+    "effect": "ES_AB-ES_A andES_AB-ES_B separately; P=max(P_A,P_B) across paired patients",
+    "avoid_tautology": "lineage-restricted L+R cannot be scored against regions missing one lineage; conditional edge null is a separate question"
+  },
+  "conditional_edges": {
+    "radius_um": 50,
+    "same_FOV_only": true,
+    "geometry_and_cell_type_fixed": true,
+    "expression_label_permutation": "within sender/receiver identity, FOV,250um tile and log2nativeRNA stratum",
+    "nboot": 999,
+    "P": "(1+count(null>=observed))/(1000), ties included; never0",
+    "observed_zero": "still simulate when positive partners exist; negative excess retained",
+    "family": 27,
+    "role": "within-case conditional spatial expression support; not independent patient replication or causal recruitment"
+  },
+  "patient_inference": {
+    "bridge": "actual author sample_sheet_xenium donor_id, unique donors required; no section/FOV pseudo-replication",
+    "minimum_pairs": 5,
+    "test": "predefined one-sided exact paired signed-rank sign enumeration, ties retained; magnitude, signs andeligibleN shown",
+    "BH_BY_families": {
+      "neighborhood_primary": 2,
+      "neighborhood_secondary": 10,
+      "regional_LR": 27,
+      "conditional_edges": 27
+    },
+    "unavailable": "P1 in full denominator, displayedNA; no radius ormarker effect selection",
+    "power": "only6 donors; limited resolution andwide uncertainty, not equivalence evidence"
+  },
+  "scRNA_candidates": "two genuinely distinct datasets/subjects; algorithm agreement on same pooled cells is not independent replication; double-source CellChat support currently pending",
+  "CellChat_prob_001": "author score threshold in two scRNA datasets, not P threshold andnot transplanted automatically onto spatial scores",
+  "clinical_next": "derive andfreeze a spatially anchored measurable signature without ICI outcomes; I-SPY2 already used for preliminary exploration, newsignature testing there remains exploratory; untouched external cohort needed for confirmation",
+  "original_Visium": "reuse original fixedNMF weights, cell2location, Spearman colocalization and60-neighbor directed bivariate Moran; no refit; broad keymodule branch separate",
+  "code_sha256": {
+    "vascular_spatial_controls_v2.py": "5cd88433b8ad25041980dc29064ea41a76b83a5bb8caf1fb4e81884f7cfde979",
+    "run_native_vascular_controls_v4.py": "a268719f1f32dbac2c903c359b4077825ef44d96f2d25729eca2a16cf7066d90",
+    "finite_native_vascular_controls_v4.py": "0e01e2cc63f202fa6fedcc8aced6d1eab74a978f67a4fbf815ffbf044f954734",
+    "finite_local_breast_acquisition_v2.py": "62ddd8fb29d53499972dcc1626331a8c000c0bed06d279c45ac7735b7fc66a91",
+    "render_vascular_identity_review_v2.py": "fea4e02a6603f5261908e0683aa8aee9a8011ee4cd5383a1be87735d36cfb911",
+    "test_vascular_controls_invariants_v2.py": "47cf0d99616a25980876610ad79fdea1bd7d198ff012bcc39dafe4ab0386b3b7",
+    "test_native_vascular_end_to_end_v3.py": "f67c6b9b49f9d9d0374f3729d76fbca9e4b44d662901c3a584489f4c74fd6b48",
+    "test_patient_level_families_v1.py": "6659cdb9b0358ac9a3f9930a44ec8e252113da139799000d99caee28db27a27b",
+    "selective_public_zip_v3.py": "2a9cfae5e87b0deb256330f57b5606a7094ccdac3a0b9670d66dd2b7055fe698"
+  },
+  "parent_plan_sha256": "f617ac02e8819e6378ee82f408898f285490cd00364f7094c9cab6982df2450f",
+  "version": "v4_source_patient_binding_and_matrix_vs_assay_coverage_clarification_same_hypotheses",
+  "coverage": "input matrix unavailable is distinct from not assayed; filtered-out genes are never filled0",
+  "RNA_total": "available original count-matrix genes after author filtering, not unfiltered full-library totals",
+  "new_mechanism_participants": "Mural andFibroblast are candidate spatial organizers, not retroactively added to original CM03",
+  "target_control_limit": "ACKR1 detected/undetected endothelial-centroid neighborhoods are a first proxy; do not call undetected EC arterial or distinct segmented vessels"
+}
