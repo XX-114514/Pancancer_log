@@ -1,0 +1,18 @@
+{
+  "status": "REVIEWED_V4_RUNTIME_AND_COMMUNICATION_PLAN_PUBLIC_PUSH_INDEPENDENTLY_VERIFIED",
+  "UTC_verified": "2026-11-07T05:34:43.772354+00:00",
+  "repository": "https://github.com/XX-114514/Pancancer_log",
+  "branch": "main",
+  "content_commit": "06ef23e0c02211bc921669ec539cf034dd2dd2f0",
+  "verification": "ordinary push exit0, independent git ls-remote refs/heads/main exact full SHA",
+  "scope": "32 reviewed files, generic scientific code, aggregate source/type qualification, methods and sanitized task logs; no individual rows or matrices",
+  "repository_check": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 1,
+    "warning": "existing historical internal-path patterns; new task files no private-path/secret/sample-ID hits"
+  },
+  "science_state": "native input rows extracted and artifacts being written; independent input audit, pilot and formal communication still pending",
+  "spatial_state": "4 full fits and author score audits passed, 2 fits active, 53 independently audited niches",
+  "no_automatic_public_push": true
+}

@@ -19,3 +19,5 @@
 初步CPU窗口4–12小时为规划估计，尚未用本轮小试/正式耗时标定，完整Low/CellChat可能更久，最终空间对齐及人工图件审阅另算。建议commit：`Report measured Visium ETA and start same-V4 CoVarNet communication analysis`。
 
 05:30:09 UTC原始抽取完成560,871目标（原轴实际扫描至4,620,000）；05:32:29仍在对象写出阶段、有限控制器身份存活，无阶段失败或正式结果。13来源共同实测14,051基因；未测身份marker不被当0，本轮LR主背景的身份沿用已冻结标签，仍需空间/近邻诊断。R现有解释器解析CellChat脚本39条表达式通过。仓库验证exit0（0错误/1项既有历史内部路径模式警告），本轮25个新文件约70KB隐私/凭据/样本ID模式扫描、全部Python AST/JSON/TSV列数/相对链接及9份部署代码SHA通过。主工作区15个旧tracked修改已保存SHA，仅复制新的任务路径。
+
+内容提交`06ef23e0c02211bc921669ec539cf034dd2dd2f0`已普通push，独立ls-remote main完整SHA精确一致；[收据](../../../inventories/analysis/2026-11-07/v4_communication_author_v1/publication_checkpoint_v1.json)记录发布范围和科学边界。主工作区仅复制25个本轮新路径，15个既有tracked修改SHA不变。05:33:40只读任务进程仍running、自产对象写入约2.5GiB、RSS约18.5GiB，确认写出活性，相关矩阵/metadata均私有。05:34:44 UTC／13:34:44 UTC+8／墨尔本16:34:44最终固定快照仍在对象写出，正式CellPhoneDB尚无终态；有限CPU接续保持，不宣称小试/正式科学通过。本次时间估计、方法和启动均已落实，后续以实际输出和独立审计更新。

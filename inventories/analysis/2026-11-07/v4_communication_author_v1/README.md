@@ -2,6 +2,8 @@
 
 本页为带时间检查点：**空间主模型4/53已完整拟合、原文评分及独立审核通过，另2张运行；CellCharter全部53张拟合及逐张审核通过。当前V4通讯流程已真实启动输入准备，还没有正式通讯结论。**
 
+较晚[05:34:44 UTC检查点](runtime_checkpoint_v2.json)确认有限控制器仍实际存活，原始目标560,871行已全部抽出，正在写出分析对象；[较晚输入进度](inputs/progress_v2.json)与早期记录分开保留。尚无输入独立审核/正式通讯收据。[公开同步核验](publication_checkpoint_v1.json)绑定本轮已推送内容提交，公开同步成功不等于科学推断完成。
+
 [空间实际状态](spatial_runtime_checkpoint_v1.json) · [耗时与预计](spatial_runtime_ETA_v1.json) · [全部53张niche来源汇总](all53_niche_audit_by_source.tsv) · [通讯实际状态/代码SHA](runtime_checkpoint_v1.json) · [冻结配置](method_freeze.json) · [方法](../../../../methods/V4-CoVarNet-communication-plan-20261107.md) · [run](../../../../runs/20261107_V4_CoVarNet_communication_v1.md) · [代码](../../../../scripts/v4_communication_author_20261107/)。
 
 05:19–05:20 UTC／墨尔本16:19–16:20取证，已完成4张均为GSE203612，每张完整30,000轮/1,000posterior，耗时80.39/82.54/84.68/86.79分钟。四张均通过作者共定位/60近邻有向Moran与独立核验。按两并行估算剩余49张名义约34小时；考虑后续来源/spot数差异，规划区间为**35–50小时，墨尔本11月9日凌晨至傍晚**。仅4张同来源时间标定，尚不能承诺精确完成时刻；故障、后续来源速度和资源变化会影响估计，不为压缩时间改变epoch或GPU并发。
