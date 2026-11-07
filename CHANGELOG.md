@@ -1,3 +1,8 @@
+## 2026-11-07 V4 CM的Visium原文方法生产启动
+
+- 53张人类Visium、同50标签45,385参考＋9,000留出独立核验；真实GPU参考模型运行，全部14CM逐切片完整生产/评分/独立审核有限接续。
+- [方法、代码和脱敏检查点](inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/README.md)明确作者60近邻有向inverse-square权重，mean主结果/q05敏感性及所有失败/不可估计分母。尚无最终空间支持结论，原CM/注释不改。
+
 ## 2026-11-07 全部V4 CM分析与优先级
 
 - [全部14模块评估](inventories/analysis/2026-11-07/v4_CM_selection_v1/README.md)：新增540次受控拟合、252对应、来源/分母/载荷诊断独立通过，优先验证CM03、CM06备选。

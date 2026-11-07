@@ -1,0 +1,49 @@
+{
+  "status": "REAL_VISIUM_VALIDATION_IN_PROGRESS_NO_FINAL_SPATIAL_CONCLUSION",
+  "evidence_UTC": "2026-11-07T01:24:56.763708+00:00",
+  "run_id": "20261107_v4_Visium_author_validation_v2",
+  "stage_receipts": {
+    "prepare_reference": {
+      "UTC_start": "2026-11-07T01:04:54.431444+00:00",
+      "UTC_end": "2026-11-07T01:10:31.901843+00:00",
+      "exit_code": 0
+    },
+    "audit_reference_V4": {
+      "stage": "audit_reference_V4",
+      "UTC_start": "2026-11-07T01:10:32.485456+00:00",
+      "UTC_end": "2026-11-07T01:10:53.046680+00:00",
+      "exit_code": 0
+    },
+    "fit_reference": {
+      "stage": "fit_reference",
+      "UTC_start": "2026-11-07T01:10:53.047444+00:00",
+      "UTC_end": "2026-11-07T01:11:17.785786+00:00",
+      "exit_code": 1
+    },
+    "fit_reference_retry2": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "measure_reference_separability": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "all_models": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "all_scores": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "summarize_Visium_validation.py": {
+      "status": "no_terminal_receipt_yet"
+    },
+    "audit_Visium_cohort.py": {
+      "status": "no_terminal_receipt_yet"
+    }
+  },
+  "spatial_model_counts": {
+    "completed": 0,
+    "failed": 0
+  },
+  "active_task_reference_processes": 1,
+  "active_task_section_processes": 0,
+  "host_GPU_snapshot_not_task_only": "Tesla V100-PCIE-32GB, 6 %, 2592 MiB, 32768 MiB"
+}

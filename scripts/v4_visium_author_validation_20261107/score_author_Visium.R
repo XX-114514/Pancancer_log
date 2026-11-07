@@ -1,0 +1,19 @@
+# Literal fixed-author primary metrics; 60-neighbour inverse-square spatial weights.
+args<-commandArgs(trailingOnly=TRUE);r<-normalizePath(args[1]);base<-normalizePath(args[2]);section<-args[3];out<-file.path(r,'sections',section);stopifnot(file.exists(file.path(out,'complete.json')))
+suppressPackageStartupMessages({library(dplyr);library(reshape2);library(spdep);library(sp)})
+author<-new.env(parent=globalenv());defs<-parse(file.path(r,'author/CoVarNet.R'))
+for(name in c('colocalization','bvMoranI')){i<-which(vapply(defs,function(x)is.call(x)&&length(x)>=3&&identical(x[[1]],as.name('<-'))&&identical(x[[2]],as.name(name)),logical(1)));stopifnot(length(i)==1L);eval(defs[[i]],author)}
+ref<-list(filter=read.delim(file.path(base,'CM_results/CM_members_after_author_network_filter.tsv'),check.names=FALSE));allcm<-sprintf('CM%02d',1:14);fq<-read.delim(file.path(base,'inputs/frequency_PRIVATE.tsv'),row.names=1,check.names=FALSE);pool<-rownames(fq);coords<-as.matrix(read.delim(gzfile(file.path(out,'coordinates_PRIVATE.tsv.gz')),row.names=1,check.names=FALSE));stopifnot(nrow(coords)>60,all(is.finite(coords)),!anyDuplicated(data.frame(coords)));rows<-list();ix<-1
+for(posterior in c('means','q05')){
+ a<-read.delim(gzfile(file.path(out,paste0(posterior,'_abundance_PRIVATE.tsv.gz'))),row.names=1,check.names=FALSE);stopifnot(identical(rownames(a),rownames(coords)),all(pool%in%colnames(a)),all(is.finite(as.matrix(a))),all(as.matrix(a)>=0));a<-a[,pool,drop=FALSE];variable<-vapply(a,function(x)sd(x)>0,logical(1));
+ # Undefined correlations from constant posterior columns remain NA in literal author output.
+ col<-tryCatch(author$colocalization(a,ref,method='spearman'),error=function(e){writeLines(conditionMessage(e),file.path(out,paste0(posterior,'_colocalization_error.txt')));NULL})
+ mor<-tryCatch(author$bvMoranI(coords,a,ref),error=function(e){writeLines(conditionMessage(e),file.path(out,paste0(posterior,'_aggregation_error.txt')));NULL})
+ for(cm in allcm){mem<-as.character(ref$filter$subCluster[ref$filter$cm==cm]);for(stat in c('colocalization','aggregation')){res<-if(stat=='colocalization')col else mor;score<-if(!is.null(res)&&cm%in%res$cm)res$score[res$cm==cm]else NA_real_;rows[[ix]]<-data.frame(section_code=section,cm=cm,posterior=posterior,statistic=stat,n_spots=nrow(a),n_original_network_members=length(mem),n_variable_original_members=sum(variable[mem]),author_score=score,status=if(!length(mem))'EMPTY_ORIGINAL_AUTHOR_NETWORK'else if(any(!variable[mem]))'CONSTANT_ORIGINAL_MEMBER_UNDEFINED'else if(!is.finite(score))'AUTHOR_SCORE_UNDEFINED_OR_ERROR'else 'AUTHOR_METRIC_COMPUTED_NOT_BIOLOGICAL_VALIDATION',stringsAsFactors=FALSE);ix<-ix+1}}
+ # Export exact installed-package neighbour weights and T0 for independent array audit.
+ if(posterior=='means'){
+  nb<-spdep::knn2nb(spdep::knearneigh(coords,k=60));w<-spdep::nb2listwdist(nb,sp::SpatialPoints(coords),type='idw',style='W',alpha=2);pairs<-do.call(rbind,lapply(seq_along(w$neighbours),function(i)data.frame(i=i,j=w$neighbours[[i]],weight=w$weights[[i]])));write.table(pairs,file.path(out,'author_weights60_PRIVATE.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
+  bodytext<-paste(deparse(spdep::moran_bv),collapse='\n');writeLines(bodytext,file.path(r,'audit/moran_bv_installed_body.txt'))
+ }
+}
+write.table(do.call(rbind,rows),file.path(out,'author_CM_scores_PRIVATE.tsv'),sep='\t',quote=FALSE,row.names=FALSE,na='NA');jsonlite::write_json(list(status='LITERAL_AUTHOR_ALL14_MEAN_AND_Q05_METRICS_FINISHED_PENDING_INDEPENDENT_AUDIT',UTC=format(Sys.time(),'%Y-%m-%dT%H:%M:%SZ',tz='UTC'),section_code=section,neighbors=60,type='idw',alpha=2,style='W',posterior_variants=c('means','q05'),background='45 original non-epithelial CM input nodes; 5 epithelial nuisance reference labels fit but not scored',spdep=as.character(packageVersion('spdep')),CoVarNet_author_commit='e59b314941e73c8a6eb008ee537cfd461c7e10bd'),file.path(out,'score_complete.json'),pretty=TRUE,auto_unbox=TRUE)

@@ -1,0 +1,20 @@
+"""Held-out same-label reference replay on each native gene panel; diagnostic only."""
+import json,hashlib
+from datetime import datetime,timezone
+import numpy as np,pandas as pd,scipy.sparse as sp,anndata as ad,h5py
+from anndata.io import read_elem
+from sklearn.metrics import precision_recall_fscore_support
+r=PROJECT_ROOT/'runs/20261107_v4_Visium_author_validation_v2';a=ad.read_h5ad(r/'reference/reference_and_heldout_PRIVATE.h5ad');inf=pd.read_csv(r/'reference/signatures_PRIVATE.tsv',sep='\t',index_col=0);jobs=json.loads((r/'inputs/section_jobs_PRIVATE.json').read_text());nodes=sorted(a.obs.node.astype(str).unique());nodeidx=pd.Index(nodes);train=a.obs['split'].eq('reference').to_numpy();test=~train;truth=a.obs.node.astype(str).to_numpy();total=np.asarray(a.X.sum(axis=1)).ravel();cp=a.X.multiply(10000/np.maximum(total,1)[:,None]).tocsr();cp.data=np.log1p(cp.data);codes=nodeidx.get_indexer(truth);H=sp.csr_matrix((np.ones(train.sum()),(codes[train],np.arange(train.sum()))),shape=(len(nodes),train.sum()));means=np.asarray((H@cp[train]).toarray())/np.bincount(codes[train],minlength=len(nodes))[:,None];all_genes=pd.Index(a.var_names);seen={};rows=[];panelrows=[];conf=[]
+for job in jobs:
+ with h5py.File(job['input_path'],'r') as f:v=read_elem(f['var'])
+ shared=sorted(set(v.index)&set(inf.index));panel=hashlib.sha256('\n'.join(shared).encode()).hexdigest()[:16];panelrows.append({'section_code':job['section_code'],'dataset':job['dataset'],'gene_panel_key':panel,'n_model_genes_available':len(shared)})
+ if panel in seen:continue
+ seen[panel]=True;cols=all_genes.get_indexer(shared);variance=np.var(means[:,cols],axis=0);chosen=cols[np.argsort(-variance,kind='stable')[:min(2000,len(cols))]];M=means[:,chosen];center=M.mean(axis=0);scale=np.maximum(M.std(axis=0),.2);centroid=(M-center)/scale;centroid/=np.maximum(np.linalg.norm(centroid,axis=1,keepdims=True),1e-12);pred=[]
+ for start in range(0,test.sum(),500):
+  block=cp[test][start:start+500,chosen].toarray();z=(block-center)/scale;z/=np.maximum(np.linalg.norm(z,axis=1,keepdims=True),1e-12);pred.extend(np.argmax(z@centroid.T,axis=1))
+ actual=codes[test];pred=np.asarray(pred);precision,recall,F1,support=precision_recall_fscore_support(actual,pred,labels=np.arange(len(nodes)),zero_division=0)
+ for i,node in enumerate(nodes):
+  naming=sorted(set(node.split('_'))&set(all_genes));measured=[g for g in naming if g in shared];rows.append({'gene_panel_key':panel,'node':node,'n_native_model_genes':len(shared),'n_classifier_train_selected_genes':len(chosen),'heldout_cells':int(support[i]),'precision':float(precision[i]) if support[i] else np.nan,'recall':float(recall[i]) if support[i] else np.nan,'F1':float(F1[i]) if support[i] else np.nan,'diagnostic_F1_ge_0_5':bool(support[i]>=20 and F1[i]>=.5),'naming_genes_measured':';'.join(measured),'naming_genes_not_measured':';'.join(g for g in naming if g not in shared),'meaning':'Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim'})
+ for i,node in enumerate(nodes):
+  for j in np.unique(pred[actual==i]):conf.append({'gene_panel_key':panel,'true_node':node,'predicted_node':nodes[j],'n_heldout_cells':int(((actual==i)&(pred==j)).sum())})
+out=r/'reference';pd.DataFrame(rows).to_csv(out/'all_panel_label_heldout_separability.tsv',sep='\t',index=False);pd.DataFrame(conf).to_csv(out/'all_panel_label_confusion.tsv',sep='\t',index=False);pd.DataFrame(panelrows).to_csv(out/'section_gene_panel_map_PRIVATE.tsv',sep='\t',index=False);(out/'separability_complete.json').open('x').write(json.dumps({'status':'HELDOUT_SAME_ANNOTATION_SEPARABILITY_DIAGNOSTICS_COMPLETE','UTC':datetime.now(timezone.utc).isoformat(),'n_panels':len(seen),'n_labels':len(nodes),'n_heldout_cells':int(test.sum()),'classifier':'train-only top2000 intercentroid-variance genes; logCP10K, centroid-standardized cosine nearest centroid','diagnostic_flag':'at least20 heldout cells and F1>=0.5; not a paper rule or proof of deconvolution accuracy','source_or_patient_blocked_holdout':False,'original_labels_or_CM_changed':False},indent=2));print(json.dumps({'status':'heldout_separability_complete','n_panels':len(seen)}))

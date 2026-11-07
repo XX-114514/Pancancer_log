@@ -1,0 +1,12 @@
+{
+  "status": "PASS_independent_sameV4_reference_labels_membership_source_and_raw_count_sample",
+  "UTC": "2026-11-07T01:10:50.867593+00:00",
+  "n_labels": 50,
+  "n_reference_cells": 45385,
+  "n_heldout_cells": 9000,
+  "n_genes": 13548,
+  "n_independently_read_raw_rows": 500,
+  "all_gene_count_entries_finite_nonnegative_integer": true,
+  "no_original_CM_or_label_changes": true,
+  "reference_SHA256": "1a7dda223118211c1a78aa51b9eb7ea9ea71de5df9b4bd343e707e499804daff"
+}

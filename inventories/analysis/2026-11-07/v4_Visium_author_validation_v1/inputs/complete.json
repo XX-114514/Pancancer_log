@@ -1,0 +1,30 @@
+{
+  "status": "SAME_V4_REFERENCE_AND_OBSERVED_VISIUM_SCOPE_PREPARED_PENDING_AUDIT",
+  "UTC": "2026-11-07T01:10:29.006658+00:00",
+  "annotation_SHA256": "2a4bc82cb495d0fc2ffb40ecda6b1cbb53802eb2bf87efd2392746371653244c",
+  "reference_labels": 50,
+  "reference_cells": 45385,
+  "heldout_cells": 9000,
+  "reference_sources": 41,
+  "reference_common_measured_genes": 13548,
+  "reference_source_rule": "core identity genes all measured; full common measured gene set; no spatial effects used",
+  "core_identity_genes": [
+    "CD79A",
+    "EPCAM",
+    "GNLY",
+    "IGHD",
+    "KLRD1",
+    "KRT18",
+    "MS4A1",
+    "PECAM1",
+    "SPP1",
+    "TCL1A",
+    "VWF",
+    "XCL1"
+  ],
+  "CM_nodes_or_original_annotation_changed": false,
+  "eligible_sections": 53,
+  "eligible_sources": 3,
+  "patient_independence_certified": false,
+  "all_label_identifiability_claim": false
+}

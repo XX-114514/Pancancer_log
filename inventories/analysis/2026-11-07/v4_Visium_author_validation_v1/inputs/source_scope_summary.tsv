@@ -1,0 +1,7 @@
+dataset	status	n_sections	n_spots
+GSE175540	eligible	24	74220.0
+GSE203612	PDX_not_human_native_TME	2	5595.0
+GSE203612	eligible	10	19934.0
+GSE238264	canonical_QC_h5ad_not_present	1	0.0
+GSE273952	eligible	19	71398.0
+GSE301720	canonical_QC_h5ad_not_present	1	0.0

@@ -1,3 +1,5 @@
+[当前V4全部CM的Visium原文方法检验](V4-Visium-CoVarNet-author-validation-20261107.md)：同标签实测参考、原生切片准入、真实cell2location N5/alpha20、作者60近邻有向Moran及独立审核；运行中与科学验证分开。
+
 [全部V4 CM选择与来源敏感性](V4-CM-selection-source-stability-20261107.md)：网络载荷质量、来源中心化/充分分母、缩放不变活动、固定K14种子/LOSO及全部对应，探索性选择与独立验证分开。
 
 [V4注释CoVarNet原文配置](CoVarNet-V7-selective-author-CM-20261106.md)：来源范围、父分母、严格CCC、top15、作者P处理、全部CM及独立复算；适配与验证边界单列。

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_literal_author_vs_independent_Spearman_and_directed_60NN_bivariate_Moran_math",
+  "UTC": "2026-11-07T01:10:29.204365+00:00",
+  "fixture_only_not_real_spatial_validation": true,
+  "n_synthetic_spots": 100,
+  "n_real_label_names": 45,
+  "n_nonempty_CM_scores_checked": 22,
+  "maximum_score_error": 4.440892098500626e-16,
+  "neighbors": 60,
+  "weights": "inverse square row normalized directed",
+  "moran_definition": "Z_transpose W Z /(n-1); n-1 sample standardization exact installed spdep T0"
+}

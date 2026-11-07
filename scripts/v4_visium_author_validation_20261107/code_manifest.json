@@ -1,0 +1,80 @@
+[
+  {
+    "name": "prepare_visium_reference.py",
+    "sha256": "f9358985604578c05009abaf049b0005e9a5e482c0e0268e2bf64e0fa4d67b0c",
+    "bytes": 8057,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "audit_reference_V4.py",
+    "sha256": "8813be718369dbfdff171fc07944cf648ae09b8527f6ec0fc1675c1b2a459b92",
+    "bytes": 2616,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "cell2location_V4.py",
+    "sha256": "b9b4b1f3609c1dc0933f82d43419adcaaf46169d95628af023092f3747b9af00",
+    "bytes": 6133,
+    "status": "original_devices_keyword_failed_before_any_epoch"
+  },
+  {
+    "name": "cell2location_V4_v2.py",
+    "sha256": "fa8ffa7937acebcc14c8ea008b2df42b88a6640bafadb7d4ec2946e0247a5e50",
+    "bytes": 6113,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "measure_reference_separability.py",
+    "sha256": "bdde2fbc41c23ac2e1b2764ab1d58a751e5820a5c074e8f3b06205cc1e2663e0",
+    "bytes": 4153,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "score_author_Visium.R",
+    "sha256": "6ed7783e228afb473b4f8fde5b7303973a1221b4788b35d33c6ddfa56ee525f1",
+    "bytes": 3955,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "audit_score_Visium.py",
+    "sha256": "c3f6669950e870d6224ce50b991363d594e65d8113ab06eaa988f3a4e0be3da5",
+    "bytes": 7739,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "summarize_Visium_validation.py",
+    "sha256": "0db658b35eebd5020f3b7a7e62e728262ce54af77c15670fcd9cad3d2faa16cf",
+    "bytes": 7412,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "audit_Visium_cohort.py",
+    "sha256": "c94ec3f4e33a83c877d87c8605d335e923c89f788b4fc8e4f0dd28b2ff75a87c",
+    "bytes": 3478,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "spatial_math_fixture.R",
+    "sha256": "ec1cc7dcf4f902a3f92b2474a28e01deb670ca41f1fca33566eb2d5eeaaab5cb",
+    "bytes": 1511,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "test_author_spatial_math.py",
+    "sha256": "65c9002d3b5915133dbf09208932e9f60575067e5995ccdc0f138826ca3c8929",
+    "bytes": 2102,
+    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+  },
+  {
+    "name": "render_Visium_report.py",
+    "sha256": "05a9421885bf9155f6f60fb5bfc2cbc342d6ac5f71c2dcf6220a0b8712f13dc0",
+    "bytes": 8102,
+    "status": "registered finite private report output after final real audit; not yet executed"
+  },
+  {
+    "name": "finite_report_controller.py",
+    "sha256": "ee9f5e01b12c7b673352acd427c5d37ca1230b29c63931a3606e72d652646291",
+    "bytes": 1338,
+    "status": "registered finite private report output after final real audit; not yet executed"
+  }
+]
