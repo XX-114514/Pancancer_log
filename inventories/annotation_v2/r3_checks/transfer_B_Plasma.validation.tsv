@@ -1,0 +1,7 @@
+true	cells	median_genes	accuracy	confident_share	accuracy_if_confident
+B_germinal_center_like	663.0	681.0	0.878	0.894	0.931
+B_memory_activated_like	4984.0	710.0	0.971	0.947	0.986
+B_memory_atypical_like	1908.0	729.0	0.703	0.731	0.773
+B_naive_like	3449.0	643.0	0.983	0.963	0.993
+Plasma	5227.0	572.0	0.999	1.0	1.0
+ALL (macro)	16231.0	647.0	0.907	0.94	0.937

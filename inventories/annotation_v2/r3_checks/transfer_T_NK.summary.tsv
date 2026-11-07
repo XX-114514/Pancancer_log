@@ -1,0 +1,11 @@
+transfer_label	transfer_status	cells
+T_naive_CM_like	transferred	155680
+T_NK_unresolved_low_depth	unresolved	70279
+CD8_memory_ANXA1_GZMK_like	transferred	44680
+CD4_memory_IL7R_like	transferred	24586
+CD8_GZMK_like	transferred	23197
+Treg_like	transferred	18871
+CD8_effector_exhausted_like	transferred	11429
+NK_cytotoxic_like	transferred	7508
+NK_XCL1_KLRC1_like	transferred	5411
+CD4_CXCL13_Tfh_like	transferred	2555

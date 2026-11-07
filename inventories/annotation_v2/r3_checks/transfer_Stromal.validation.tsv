@@ -1,0 +1,13 @@
+true	cells	median_genes	accuracy	confident_share	accuracy_if_confident
+CAF_inflammatory_hypoxic_like	1382.0	1040.5	0.92	0.89	0.955
+CAF_matrix_COL12A1_like	507.0	585.0	0.968	0.949	0.992
+CAF_matrix_like	3280.0	957.0	0.976	0.932	0.993
+Fibroblast_CCL19_C3_like	1168.0	1207.5	0.866	0.748	0.942
+Fibroblast_PI16_universal_like	1271.0	1261.0	0.896	0.821	0.97
+Fibroblast_adventitial_APOD_like	999.0	1167.0	0.786	0.705	0.901
+Fibroblast_subepithelial_like	718.0	1274.5	0.741	0.616	0.882
+Pericyte_COL4A1_NOTCH3_like	2040.0	640.0	0.987	0.971	0.996
+Pericyte_RGS5_STEAP4_like	2892.0	948.0	0.912	0.874	0.954
+SMC_visceral_ACTG2_like	160.0	1030.5	0.725	0.781	0.752
+Vascular_SMC_MYH11_like	2613.0	702.0	0.991	0.984	0.997
+ALL (macro)	17030.0	903.0	0.888	0.883	0.939

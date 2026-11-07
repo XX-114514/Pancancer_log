@@ -2,6 +2,10 @@
 
 [当前报告](inventories/analysis/2026-11-07/v4_breast_vascular_v1/README.md)：组成—空间组织—募集通讯—治疗关联，状态不是前置。原V4 CM03不改，三者同血管周组织化是待检验扩展。新图谱6 Xenium/18映射已选，实际面板缺IGHD/XCL1；原生文件和身份仍须验收。I-SPY2实测248位（69/179），原CM03缺NCR3LG1不可评估，独立CD3D/CD3E控制v2的18模型通过原始测量/设计/数值/FDR审核，主21/增量3家族均0 BH；不能称治疗预测器或空间路线已否定。既有全空间/CPDB队列保持。
 
+## 2026-11-07 注释 v2：第二轮审阅、第三轮重跑、标签转移、多种子共识（进行中）
+
+[方法与问题](methods/tme-annotation-v2-lineage-rounds-20261107.md)：组织特异池只保留有特异 marker 的细胞（Kupffer 857、LSEC 387、AM 8,048、Microglia 36,467），其余并入 Myeloid 和 Endothelial 重跑。低深度细胞做标签转移，留出验证准确率上限 0.89–0.92。关键发现：分辨率 1 的 Leiden 只换种子，约 30% 细胞的标签会变（Harmony 提前停止不是主因），所以亚型改由多种子共识定稿，第一步在运行。所有亚型标签都还不是最终版本。[运行记录](runs/20261107_annotation_v2_lineage_r2_r3_v1.md)
+
 ## 2026-11-07 V4成像空间与TCGA/六ICI新分支
 
 [当前结果与三图](inventories/analysis/2026-11-07/v4_spatialCellChat_bulk_v1/README.md)：2100临床槽/395拟合及4620免疫槽/1325检验已独立审核；ICI应答/生存完整家族0 BH显著。CM03免疫RNA关联较广，LGG OS基础模型BH q≈0.00679、BY≈0.055，尚非独立临床标志物。原C1–C6完整标签精确映射已修正，RNA统计和临床模型未改。

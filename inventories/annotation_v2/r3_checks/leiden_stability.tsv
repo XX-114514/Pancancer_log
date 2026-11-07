@@ -1,0 +1,11 @@
+pool	variant	clusters	ARI_clusters	NMI_clusters	ARI_labels	label_agreement
+Endothelial	same_embedding_same_seed	17	0.854	0.879	0.898	0.951
+Endothelial	same_embedding_seed_1	16	0.507	0.641	0.501	0.682
+Endothelial	same_embedding_seed_2	18	0.442	0.632	0.513	0.688
+Endothelial	no_early_stop_same_seed	18	0.401	0.574	0.478	0.659
+Endothelial	no_early_stop_seed_1	16	0.471	0.584	0.473	0.641
+Stromal	same_embedding_same_seed	29	0.889	0.892	0.889	0.929
+Stromal	same_embedding_seed_1	30	0.52	0.694	0.549	0.696
+Stromal	same_embedding_seed_2	28	0.498	0.69	0.549	0.699
+Stromal	no_early_stop_same_seed	32	0.469	0.619	0.504	0.649
+Stromal	no_early_stop_seed_1	30	0.491	0.616	0.501	0.653
