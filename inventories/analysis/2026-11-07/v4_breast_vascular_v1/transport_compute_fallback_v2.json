@@ -1,0 +1,15 @@
+{
+  "UTC": "2026-11-07T12:48:25.498450+00:00",
+  "server_large_file_transport": "FAILED_direct_and_temporary_channel_reads_or_SSH_timeout_original_files_preserved",
+  "local_main_execution": "ALL_SIX_FROZEN_XENIUM_AND_18_MAPPINGS_FINITE_FALLBACK_STARTED",
+  "existing_first_native_and_three_mapping_members_reused": true,
+  "source_and_scientific_parameters_unchanged": true,
+  "states_are_not_prerequisite": true,
+  "no_environment_or_original_server_queue_changes": true,
+  "no_Git_or_notifications_in_finite_controller": true,
+  "first_native_complete": false,
+  "first_mapping_complete": true,
+  "first_native_partial_bytes": 127926272,
+  "first_native_expected_bytes": 442743536,
+  "new_spatial_biology_claim": false
+}
