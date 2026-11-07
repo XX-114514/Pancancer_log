@@ -1,0 +1,29 @@
+{
+  "UTC_evidence": "2026-11-07T05:57:50.136597+00:00",
+  "n_groups_requested": 25,
+  "n_completed_formal_comparison_groups": 1,
+  "completed_groups": [
+    {
+      "tag": "CM01_High",
+      "exit_code": 0,
+      "n_cells": 47188,
+      "n_labels": 36,
+      "seconds": 678.2068400382996
+    }
+  ],
+  "global_1000_permutation_seconds": 511.27875232696533,
+  "global_balanced_cells": 38711,
+  "formal_group_total_cell_visits": 6285199,
+  "remaining_cell_visits": 6238011,
+  "linear_cell_volume_remaining_hours": 24.90429374955352,
+  "remaining_CCI_planning_hours": [
+    18,
+    30
+  ],
+  "basis": "formal global and first formal CMT High timing; no Low timing yet, near-linear cell-volume planning only, not a deadline",
+  "supersedes_initial_unscaled_hours": [
+    4,
+    12
+  ],
+  "GPU_pipeline_changed": false
+}

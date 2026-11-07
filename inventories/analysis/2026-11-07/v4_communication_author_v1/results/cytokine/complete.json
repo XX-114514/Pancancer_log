@@ -1,0 +1,12 @@
+{
+  "status": "DIRECT_SCANPY_CELL_LEVEL_RESPONSE_FINISHED_PENDING_INDEPENDENT_AUDIT",
+  "UTC": "2026-11-07T05:48:06.263594+00:00",
+  "scanpy": "1.11.5",
+  "n_tests": 3195,
+  "n_eligible_CM_members": 21,
+  "n_production_response_subunit_edges": 38,
+  "patient_or_intervention_claim": false,
+  "primary_DE": "direct Scanpy method=t-test implementation Welch; positive log2FC>log2(1.2), gene BH<.05",
+  "enrichment": "scipy exact hypergeometric reconstructed, clusterProfiler not installed; 10<=signature<=500",
+  "orthology": "reuse audited reciprocal one-to-one current MGI mapping, not authors historical snapshot"
+}

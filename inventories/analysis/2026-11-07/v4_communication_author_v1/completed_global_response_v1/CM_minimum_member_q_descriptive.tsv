@@ -1,0 +1,1475 @@
+branch	cm	cytokine	minimum_member_q_descriptive_not_CM_adjusted_q
+author_unsigned_annotation_universe	CM03	4-1BBL	1.0
+author_unsigned_annotation_universe	CM03	APRIL	1.0
+author_unsigned_annotation_universe	CM03	AdipoQ	
+author_unsigned_annotation_universe	CM03	BAFF	1.0
+author_unsigned_annotation_universe	CM03	C5a	
+author_unsigned_annotation_universe	CM03	CD30L	
+author_unsigned_annotation_universe	CM03	CD40L	1.0
+author_unsigned_annotation_universe	CM03	CT-1	
+author_unsigned_annotation_universe	CM03	Decorin	
+author_unsigned_annotation_universe	CM03	EGF	1.0
+author_unsigned_annotation_universe	CM03	FGF-β	
+author_unsigned_annotation_universe	CM03	FLT3L	
+author_unsigned_annotation_universe	CM03	FasL	1.0
+author_unsigned_annotation_universe	CM03	G-CSF	
+author_unsigned_annotation_universe	CM03	GDNF	
+author_unsigned_annotation_universe	CM03	GITRL	
+author_unsigned_annotation_universe	CM03	GM-CSF	1.0
+author_unsigned_annotation_universe	CM03	HGF	
+author_unsigned_annotation_universe	CM03	IFN-α1	
+author_unsigned_annotation_universe	CM03	IFN-β	
+author_unsigned_annotation_universe	CM03	IFN-γ	1.0
+author_unsigned_annotation_universe	CM03	IFN-ε	1.0
+author_unsigned_annotation_universe	CM03	IFN-κ	0.16376454642286126
+author_unsigned_annotation_universe	CM03	IFN-λ2	
+author_unsigned_annotation_universe	CM03	IGF-1	
+author_unsigned_annotation_universe	CM03	IL-10	1.0
+author_unsigned_annotation_universe	CM03	IL-11	1.0
+author_unsigned_annotation_universe	CM03	IL-12	1.0
+author_unsigned_annotation_universe	CM03	IL-13	
+author_unsigned_annotation_universe	CM03	IL-15	1.0
+author_unsigned_annotation_universe	CM03	IL-17A	
+author_unsigned_annotation_universe	CM03	IL-17B	
+author_unsigned_annotation_universe	CM03	IL-17D	
+author_unsigned_annotation_universe	CM03	IL-17E	1.0
+author_unsigned_annotation_universe	CM03	IL-17F	
+author_unsigned_annotation_universe	CM03	IL-18	1.0
+author_unsigned_annotation_universe	CM03	IL-1Ra	
+author_unsigned_annotation_universe	CM03	IL-1α	0.544840795164434
+author_unsigned_annotation_universe	CM03	IL-1β	0.08967488556818634
+author_unsigned_annotation_universe	CM03	IL-2	1.0
+author_unsigned_annotation_universe	CM03	IL-20	
+author_unsigned_annotation_universe	CM03	IL-21	1.0
+author_unsigned_annotation_universe	CM03	IL-22	
+author_unsigned_annotation_universe	CM03	IL-23	1.0
+author_unsigned_annotation_universe	CM03	IL-24	
+author_unsigned_annotation_universe	CM03	IL-27	1.0
+author_unsigned_annotation_universe	CM03	IL-3	1.0
+author_unsigned_annotation_universe	CM03	IL-30	
+author_unsigned_annotation_universe	CM03	IL-33	1.0
+author_unsigned_annotation_universe	CM03	IL-36Ra	1.0
+author_unsigned_annotation_universe	CM03	IL-36α	0.27354874502590354
+author_unsigned_annotation_universe	CM03	IL-4	1.0
+author_unsigned_annotation_universe	CM03	IL-5	1.0
+author_unsigned_annotation_universe	CM03	IL-6	
+author_unsigned_annotation_universe	CM03	IL-7	1.0
+author_unsigned_annotation_universe	CM03	IL-9	
+author_unsigned_annotation_universe	CM03	IL-Y	
+author_unsigned_annotation_universe	CM03	LIF	
+author_unsigned_annotation_universe	CM03	LT-α1/β2	1.0
+author_unsigned_annotation_universe	CM03	LT-α2/β1	
+author_unsigned_annotation_universe	CM03	M-CSF	
+author_unsigned_annotation_universe	CM03	NP	
+author_unsigned_annotation_universe	CM03	Noggin	
+author_unsigned_annotation_universe	CM03	OSM	1.0
+author_unsigned_annotation_universe	CM03	OX40L	
+author_unsigned_annotation_universe	CM03	PSPN	
+author_unsigned_annotation_universe	CM03	RANKL	1.0
+author_unsigned_annotation_universe	CM03	SCF	1.0
+author_unsigned_annotation_universe	CM03	TGF-β1	1.0
+author_unsigned_annotation_universe	CM03	TL1A	1.0
+author_unsigned_annotation_universe	CM03	TNF-α	1.0
+author_unsigned_annotation_universe	CM03	TRAIL	
+author_unsigned_annotation_universe	CM03	TSLP	1.0
+author_unsigned_annotation_universe	CM03	TWEAK	
+author_unsigned_annotation_universe	CM03	VEGF	
+author_unsigned_annotation_universe	CM04	4-1BBL	1.0
+author_unsigned_annotation_universe	CM04	APRIL	0.24389682658354062
+author_unsigned_annotation_universe	CM04	BAFF	0.24389682658354062
+author_unsigned_annotation_universe	CM04	C5a	
+author_unsigned_annotation_universe	CM04	CD30L	
+author_unsigned_annotation_universe	CM04	CD40L	1.0
+author_unsigned_annotation_universe	CM04	CT-1	
+author_unsigned_annotation_universe	CM04	EGF	
+author_unsigned_annotation_universe	CM04	FGF-β	
+author_unsigned_annotation_universe	CM04	FLT3L	
+author_unsigned_annotation_universe	CM04	FasL	0.0460928994677284
+author_unsigned_annotation_universe	CM04	G-CSF	
+author_unsigned_annotation_universe	CM04	GITRL	
+author_unsigned_annotation_universe	CM04	GM-CSF	0.881418912255542
+author_unsigned_annotation_universe	CM04	HGF	
+author_unsigned_annotation_universe	CM04	IFN-α1	0.07537745518405849
+author_unsigned_annotation_universe	CM04	IFN-β	
+author_unsigned_annotation_universe	CM04	IFN-γ	0.881418912255542
+author_unsigned_annotation_universe	CM04	IFN-ε	0.24389682658354062
+author_unsigned_annotation_universe	CM04	IFN-κ	1.0
+author_unsigned_annotation_universe	CM04	IFN-λ2	
+author_unsigned_annotation_universe	CM04	IGF-1	
+author_unsigned_annotation_universe	CM04	IL-10	1.0
+author_unsigned_annotation_universe	CM04	IL-11	1.0
+author_unsigned_annotation_universe	CM04	IL-12	
+author_unsigned_annotation_universe	CM04	IL-13	
+author_unsigned_annotation_universe	CM04	IL-15	1.0
+author_unsigned_annotation_universe	CM04	IL-17B	
+author_unsigned_annotation_universe	CM04	IL-17E	1.0
+author_unsigned_annotation_universe	CM04	IL-17F	
+author_unsigned_annotation_universe	CM04	IL-18	0.881418912255542
+author_unsigned_annotation_universe	CM04	IL-1Ra	
+author_unsigned_annotation_universe	CM04	IL-1α	0.008331682332236077
+author_unsigned_annotation_universe	CM04	IL-1β	0.7317803875318075
+author_unsigned_annotation_universe	CM04	IL-2	
+author_unsigned_annotation_universe	CM04	IL-20	
+author_unsigned_annotation_universe	CM04	IL-21	
+author_unsigned_annotation_universe	CM04	IL-22	
+author_unsigned_annotation_universe	CM04	IL-23	
+author_unsigned_annotation_universe	CM04	IL-24	
+author_unsigned_annotation_universe	CM04	IL-27	1.0
+author_unsigned_annotation_universe	CM04	IL-3	0.7055067516599844
+author_unsigned_annotation_universe	CM04	IL-30	
+author_unsigned_annotation_universe	CM04	IL-33	1.0
+author_unsigned_annotation_universe	CM04	IL-36α	1.0
+author_unsigned_annotation_universe	CM04	IL-4	1.0
+author_unsigned_annotation_universe	CM04	IL-5	1.0
+author_unsigned_annotation_universe	CM04	IL-6	
+author_unsigned_annotation_universe	CM04	IL-7	1.0
+author_unsigned_annotation_universe	CM04	IL-9	
+author_unsigned_annotation_universe	CM04	IL-Y	
+author_unsigned_annotation_universe	CM04	LIF	
+author_unsigned_annotation_universe	CM04	LT-α1/β2	
+author_unsigned_annotation_universe	CM04	LT-α2/β1	
+author_unsigned_annotation_universe	CM04	M-CSF	
+author_unsigned_annotation_universe	CM04	NP	
+author_unsigned_annotation_universe	CM04	Noggin	
+author_unsigned_annotation_universe	CM04	OSM	1.0
+author_unsigned_annotation_universe	CM04	OX40L	
+author_unsigned_annotation_universe	CM04	PSPN	
+author_unsigned_annotation_universe	CM04	RANKL	0.24389682658354062
+author_unsigned_annotation_universe	CM04	SCF	1.0
+author_unsigned_annotation_universe	CM04	TGF-β1	1.0
+author_unsigned_annotation_universe	CM04	TL1A	1.0
+author_unsigned_annotation_universe	CM04	TNF-α	1.0
+author_unsigned_annotation_universe	CM04	TRAIL	
+author_unsigned_annotation_universe	CM04	TSLP	1.0
+author_unsigned_annotation_universe	CM04	TWEAK	
+author_unsigned_annotation_universe	CM04	VEGF	
+author_unsigned_annotation_universe	CM06	4-1BBL	1.0
+author_unsigned_annotation_universe	CM06	AdipoQ	
+author_unsigned_annotation_universe	CM06	BAFF	
+author_unsigned_annotation_universe	CM06	C5a	
+author_unsigned_annotation_universe	CM06	CD40L	1.0
+author_unsigned_annotation_universe	CM06	CT-1	1.0
+author_unsigned_annotation_universe	CM06	Decorin	
+author_unsigned_annotation_universe	CM06	EGF	0.024342773430191082
+author_unsigned_annotation_universe	CM06	FGF-β	
+author_unsigned_annotation_universe	CM06	FLT3L	
+author_unsigned_annotation_universe	CM06	FasL	
+author_unsigned_annotation_universe	CM06	G-CSF	
+author_unsigned_annotation_universe	CM06	GDNF	
+author_unsigned_annotation_universe	CM06	GITRL	
+author_unsigned_annotation_universe	CM06	GM-CSF	1.0
+author_unsigned_annotation_universe	CM06	HGF	
+author_unsigned_annotation_universe	CM06	IFN-α1	1.0
+author_unsigned_annotation_universe	CM06	IFN-β	1.0
+author_unsigned_annotation_universe	CM06	IFN-γ	1.0
+author_unsigned_annotation_universe	CM06	IFN-ε	0.16774846707999802
+author_unsigned_annotation_universe	CM06	IFN-κ	1.0
+author_unsigned_annotation_universe	CM06	IFN-λ2	
+author_unsigned_annotation_universe	CM06	IGF-1	
+author_unsigned_annotation_universe	CM06	IL-10	1.0
+author_unsigned_annotation_universe	CM06	IL-11	
+author_unsigned_annotation_universe	CM06	IL-12	1.0
+author_unsigned_annotation_universe	CM06	IL-13	1.0
+author_unsigned_annotation_universe	CM06	IL-15	1.0
+author_unsigned_annotation_universe	CM06	IL-17A	
+author_unsigned_annotation_universe	CM06	IL-17B	
+author_unsigned_annotation_universe	CM06	IL-17D	
+author_unsigned_annotation_universe	CM06	IL-17E	1.0
+author_unsigned_annotation_universe	CM06	IL-17F	
+author_unsigned_annotation_universe	CM06	IL-18	0.9283125566894128
+author_unsigned_annotation_universe	CM06	IL-1α	0.05148694587423739
+author_unsigned_annotation_universe	CM06	IL-1β	0.16774846707999802
+author_unsigned_annotation_universe	CM06	IL-2	1.0
+author_unsigned_annotation_universe	CM06	IL-21	1.0
+author_unsigned_annotation_universe	CM06	IL-22	
+author_unsigned_annotation_universe	CM06	IL-23	1.0
+author_unsigned_annotation_universe	CM06	IL-24	
+author_unsigned_annotation_universe	CM06	IL-27	
+author_unsigned_annotation_universe	CM06	IL-3	1.0
+author_unsigned_annotation_universe	CM06	IL-31	1.0
+author_unsigned_annotation_universe	CM06	IL-33	1.0
+author_unsigned_annotation_universe	CM06	IL-36Ra	0.37021881492352626
+author_unsigned_annotation_universe	CM06	IL-36α	1.0
+author_unsigned_annotation_universe	CM06	IL-4	1.0
+author_unsigned_annotation_universe	CM06	IL-5	1.0
+author_unsigned_annotation_universe	CM06	IL-7	1.0
+author_unsigned_annotation_universe	CM06	IL-9	
+author_unsigned_annotation_universe	CM06	LIF	1.0
+author_unsigned_annotation_universe	CM06	LT-α1/β2	0.04825164974879384
+author_unsigned_annotation_universe	CM06	LT-α2/β1	
+author_unsigned_annotation_universe	CM06	Leptin	
+author_unsigned_annotation_universe	CM06	M-CSF	1.0
+author_unsigned_annotation_universe	CM06	Noggin	
+author_unsigned_annotation_universe	CM06	OSM	
+author_unsigned_annotation_universe	CM06	PRL	1.0
+author_unsigned_annotation_universe	CM06	PSPN	
+author_unsigned_annotation_universe	CM06	RANKL	
+author_unsigned_annotation_universe	CM06	SCF	
+author_unsigned_annotation_universe	CM06	TGF-β1	
+author_unsigned_annotation_universe	CM06	TL1A	
+author_unsigned_annotation_universe	CM06	TNF-α	0.33134649028133956
+author_unsigned_annotation_universe	CM06	TPO	
+author_unsigned_annotation_universe	CM06	TRAIL	
+author_unsigned_annotation_universe	CM06	TSLP	
+author_unsigned_annotation_universe	CM06	VEGF	
+author_unsigned_annotation_universe	CM07	CT-1	1.0
+author_unsigned_annotation_universe	CM07	Decorin	
+author_unsigned_annotation_universe	CM07	GM-CSF	0.6583412306668385
+author_unsigned_annotation_universe	CM07	IFN-α1	1.0
+author_unsigned_annotation_universe	CM07	IFN-β	1.0
+author_unsigned_annotation_universe	CM07	IFN-γ	1.0
+author_unsigned_annotation_universe	CM07	IFN-ε	1.0
+author_unsigned_annotation_universe	CM07	IFN-κ	1.0
+author_unsigned_annotation_universe	CM07	IL-10	
+author_unsigned_annotation_universe	CM07	IL-11	
+author_unsigned_annotation_universe	CM07	IL-12	1.0
+author_unsigned_annotation_universe	CM07	IL-13	0.8385157543031172
+author_unsigned_annotation_universe	CM07	IL-15	1.0
+author_unsigned_annotation_universe	CM07	IL-17F	
+author_unsigned_annotation_universe	CM07	IL-18	1.0
+author_unsigned_annotation_universe	CM07	IL-1α	0.6583412306668385
+author_unsigned_annotation_universe	CM07	IL-1β	1.0
+author_unsigned_annotation_universe	CM07	IL-2	1.0
+author_unsigned_annotation_universe	CM07	IL-3	1.0
+author_unsigned_annotation_universe	CM07	IL-31	1.0
+author_unsigned_annotation_universe	CM07	IL-33	1.0
+author_unsigned_annotation_universe	CM07	IL-36Ra	
+author_unsigned_annotation_universe	CM07	IL-36α	0.6583412306668385
+author_unsigned_annotation_universe	CM07	IL-4	0.8385157543031172
+author_unsigned_annotation_universe	CM07	IL-5	
+author_unsigned_annotation_universe	CM07	IL-7	1.0
+author_unsigned_annotation_universe	CM07	LIF	1.0
+author_unsigned_annotation_universe	CM07	Leptin	
+author_unsigned_annotation_universe	CM07	M-CSF	0.6583412306668385
+author_unsigned_annotation_universe	CM07	OSM	
+author_unsigned_annotation_universe	CM07	PRL	1.0
+author_unsigned_annotation_universe	CM07	PSPN	
+author_unsigned_annotation_universe	CM07	SCF	
+author_unsigned_annotation_universe	CM07	TGF-β1	
+author_unsigned_annotation_universe	CM07	TNF-α	0.8385157543031172
+author_unsigned_annotation_universe	CM07	TPO	
+author_unsigned_annotation_universe	CM08	4-1BBL	
+author_unsigned_annotation_universe	CM08	APRIL	
+author_unsigned_annotation_universe	CM08	CD30L	
+author_unsigned_annotation_universe	CM08	CD40L	1.0
+author_unsigned_annotation_universe	CM08	CT-1	
+author_unsigned_annotation_universe	CM08	EGF	
+author_unsigned_annotation_universe	CM08	FGF-β	
+author_unsigned_annotation_universe	CM08	FLT3L	1.0
+author_unsigned_annotation_universe	CM08	FasL	
+author_unsigned_annotation_universe	CM08	GITRL	
+author_unsigned_annotation_universe	CM08	GM-CSF	1.0
+author_unsigned_annotation_universe	CM08	IFN-α1	
+author_unsigned_annotation_universe	CM08	IFN-β	1.0
+author_unsigned_annotation_universe	CM08	IFN-γ	1.0
+author_unsigned_annotation_universe	CM08	IFN-ε	1.0
+author_unsigned_annotation_universe	CM08	IFN-κ	1.0
+author_unsigned_annotation_universe	CM08	IFN-λ2	
+author_unsigned_annotation_universe	CM08	IGF-1	
+author_unsigned_annotation_universe	CM08	IL-10	1.0
+author_unsigned_annotation_universe	CM08	IL-12	
+author_unsigned_annotation_universe	CM08	IL-13	
+author_unsigned_annotation_universe	CM08	IL-15	1.0
+author_unsigned_annotation_universe	CM08	IL-17A	
+author_unsigned_annotation_universe	CM08	IL-17E	1.0
+author_unsigned_annotation_universe	CM08	IL-18	1.0
+author_unsigned_annotation_universe	CM08	IL-19	
+author_unsigned_annotation_universe	CM08	IL-1α	1.0
+author_unsigned_annotation_universe	CM08	IL-1β	1.0
+author_unsigned_annotation_universe	CM08	IL-2	1.0
+author_unsigned_annotation_universe	CM08	IL-20	
+author_unsigned_annotation_universe	CM08	IL-21	
+author_unsigned_annotation_universe	CM08	IL-22	
+author_unsigned_annotation_universe	CM08	IL-23	
+author_unsigned_annotation_universe	CM08	IL-27	
+author_unsigned_annotation_universe	CM08	IL-3	1.0
+author_unsigned_annotation_universe	CM08	IL-30	
+author_unsigned_annotation_universe	CM08	IL-33	
+author_unsigned_annotation_universe	CM08	IL-34	
+author_unsigned_annotation_universe	CM08	IL-36α	1.0
+author_unsigned_annotation_universe	CM08	IL-4	1.0
+author_unsigned_annotation_universe	CM08	IL-5	
+author_unsigned_annotation_universe	CM08	IL-6	
+author_unsigned_annotation_universe	CM08	IL-7	1.0
+author_unsigned_annotation_universe	CM08	IL-9	
+author_unsigned_annotation_universe	CM08	LIF	1.0
+author_unsigned_annotation_universe	CM08	LT-α1/β2	
+author_unsigned_annotation_universe	CM08	NP	
+author_unsigned_annotation_universe	CM08	Noggin	
+author_unsigned_annotation_universe	CM08	OSM	
+author_unsigned_annotation_universe	CM08	RANKL	
+author_unsigned_annotation_universe	CM08	SCF	
+author_unsigned_annotation_universe	CM08	TL1A	
+author_unsigned_annotation_universe	CM08	TNF-α	1.0
+author_unsigned_annotation_universe	CM08	TSLP	
+author_unsigned_annotation_universe	CM08	TWEAK	
+author_unsigned_annotation_universe	CM09	4-1BBL	1.0
+author_unsigned_annotation_universe	CM09	APRIL	1.0
+author_unsigned_annotation_universe	CM09	BAFF	1.0
+author_unsigned_annotation_universe	CM09	C5a	
+author_unsigned_annotation_universe	CM09	CD30L	
+author_unsigned_annotation_universe	CM09	CD40L	1.0
+author_unsigned_annotation_universe	CM09	CT-1	1.0
+author_unsigned_annotation_universe	CM09	Decorin	
+author_unsigned_annotation_universe	CM09	EGF	
+author_unsigned_annotation_universe	CM09	FGF-β	
+author_unsigned_annotation_universe	CM09	FLT3L	
+author_unsigned_annotation_universe	CM09	FasL	1.0
+author_unsigned_annotation_universe	CM09	G-CSF	
+author_unsigned_annotation_universe	CM09	GITRL	
+author_unsigned_annotation_universe	CM09	GM-CSF	1.0
+author_unsigned_annotation_universe	CM09	HGF	
+author_unsigned_annotation_universe	CM09	IFN-α1	1.0
+author_unsigned_annotation_universe	CM09	IFN-β	1.0
+author_unsigned_annotation_universe	CM09	IFN-γ	1.0
+author_unsigned_annotation_universe	CM09	IFN-ε	1.0
+author_unsigned_annotation_universe	CM09	IFN-κ	1.0
+author_unsigned_annotation_universe	CM09	IFN-λ2	
+author_unsigned_annotation_universe	CM09	IGF-1	
+author_unsigned_annotation_universe	CM09	IL-10	1.0
+author_unsigned_annotation_universe	CM09	IL-11	1.0
+author_unsigned_annotation_universe	CM09	IL-12	1.0
+author_unsigned_annotation_universe	CM09	IL-13	1.0
+author_unsigned_annotation_universe	CM09	IL-15	1.0
+author_unsigned_annotation_universe	CM09	IL-17B	
+author_unsigned_annotation_universe	CM09	IL-17E	1.0
+author_unsigned_annotation_universe	CM09	IL-17F	
+author_unsigned_annotation_universe	CM09	IL-18	1.0
+author_unsigned_annotation_universe	CM09	IL-1Ra	
+author_unsigned_annotation_universe	CM09	IL-1α	1.0
+author_unsigned_annotation_universe	CM09	IL-1β	1.0
+author_unsigned_annotation_universe	CM09	IL-2	1.0
+author_unsigned_annotation_universe	CM09	IL-20	
+author_unsigned_annotation_universe	CM09	IL-21	
+author_unsigned_annotation_universe	CM09	IL-22	
+author_unsigned_annotation_universe	CM09	IL-23	
+author_unsigned_annotation_universe	CM09	IL-24	
+author_unsigned_annotation_universe	CM09	IL-27	1.0
+author_unsigned_annotation_universe	CM09	IL-3	1.0
+author_unsigned_annotation_universe	CM09	IL-30	
+author_unsigned_annotation_universe	CM09	IL-31	1.0
+author_unsigned_annotation_universe	CM09	IL-33	1.0
+author_unsigned_annotation_universe	CM09	IL-36Ra	
+author_unsigned_annotation_universe	CM09	IL-36α	1.0
+author_unsigned_annotation_universe	CM09	IL-4	1.0
+author_unsigned_annotation_universe	CM09	IL-5	1.0
+author_unsigned_annotation_universe	CM09	IL-6	
+author_unsigned_annotation_universe	CM09	IL-7	1.0
+author_unsigned_annotation_universe	CM09	IL-9	
+author_unsigned_annotation_universe	CM09	IL-Y	
+author_unsigned_annotation_universe	CM09	LIF	1.0
+author_unsigned_annotation_universe	CM09	LT-α1/β2	
+author_unsigned_annotation_universe	CM09	LT-α2/β1	
+author_unsigned_annotation_universe	CM09	Leptin	
+author_unsigned_annotation_universe	CM09	M-CSF	1.0
+author_unsigned_annotation_universe	CM09	NP	
+author_unsigned_annotation_universe	CM09	Noggin	
+author_unsigned_annotation_universe	CM09	OSM	1.0
+author_unsigned_annotation_universe	CM09	OX40L	
+author_unsigned_annotation_universe	CM09	PRL	0.20261558409286673
+author_unsigned_annotation_universe	CM09	PSPN	
+author_unsigned_annotation_universe	CM09	RANKL	1.0
+author_unsigned_annotation_universe	CM09	SCF	1.0
+author_unsigned_annotation_universe	CM09	TGF-β1	1.0
+author_unsigned_annotation_universe	CM09	TL1A	1.0
+author_unsigned_annotation_universe	CM09	TNF-α	1.0
+author_unsigned_annotation_universe	CM09	TPO	
+author_unsigned_annotation_universe	CM09	TRAIL	
+author_unsigned_annotation_universe	CM09	TSLP	1.0
+author_unsigned_annotation_universe	CM09	TWEAK	
+author_unsigned_annotation_universe	CM09	VEGF	
+author_unsigned_annotation_universe	CM10	4-1BBL	1.0
+author_unsigned_annotation_universe	CM10	APRIL	1.0
+author_unsigned_annotation_universe	CM10	BAFF	0.14864188361011008
+author_unsigned_annotation_universe	CM10	C5a	
+author_unsigned_annotation_universe	CM10	CD30L	
+author_unsigned_annotation_universe	CM10	CD40L	1.0
+author_unsigned_annotation_universe	CM10	CT-1	
+author_unsigned_annotation_universe	CM10	EGF	
+author_unsigned_annotation_universe	CM10	FGF-β	
+author_unsigned_annotation_universe	CM10	FLT3L	
+author_unsigned_annotation_universe	CM10	FasL	0.343763862392956
+author_unsigned_annotation_universe	CM10	G-CSF	
+author_unsigned_annotation_universe	CM10	GITRL	
+author_unsigned_annotation_universe	CM10	GM-CSF	0.2546835513483618
+author_unsigned_annotation_universe	CM10	HGF	
+author_unsigned_annotation_universe	CM10	IFN-α1	
+author_unsigned_annotation_universe	CM10	IFN-β	
+author_unsigned_annotation_universe	CM10	IFN-γ	0.14864188361011008
+author_unsigned_annotation_universe	CM10	IFN-ε	0.343763862392956
+author_unsigned_annotation_universe	CM10	IFN-κ	1.0
+author_unsigned_annotation_universe	CM10	IFN-λ2	
+author_unsigned_annotation_universe	CM10	IGF-1	
+author_unsigned_annotation_universe	CM10	IL-10	0.14864188361011008
+author_unsigned_annotation_universe	CM10	IL-11	1.0
+author_unsigned_annotation_universe	CM10	IL-12	
+author_unsigned_annotation_universe	CM10	IL-13	
+author_unsigned_annotation_universe	CM10	IL-15	
+author_unsigned_annotation_universe	CM10	IL-17B	
+author_unsigned_annotation_universe	CM10	IL-17E	0.7743958412809261
+author_unsigned_annotation_universe	CM10	IL-17F	
+author_unsigned_annotation_universe	CM10	IL-18	
+author_unsigned_annotation_universe	CM10	IL-1Ra	
+author_unsigned_annotation_universe	CM10	IL-1α	0.343763862392956
+author_unsigned_annotation_universe	CM10	IL-1β	0.22349385689631676
+author_unsigned_annotation_universe	CM10	IL-2	
+author_unsigned_annotation_universe	CM10	IL-20	
+author_unsigned_annotation_universe	CM10	IL-21	
+author_unsigned_annotation_universe	CM10	IL-22	
+author_unsigned_annotation_universe	CM10	IL-23	
+author_unsigned_annotation_universe	CM10	IL-24	
+author_unsigned_annotation_universe	CM10	IL-27	1.0
+author_unsigned_annotation_universe	CM10	IL-3	0.8265444136397676
+author_unsigned_annotation_universe	CM10	IL-30	
+author_unsigned_annotation_universe	CM10	IL-33	1.0
+author_unsigned_annotation_universe	CM10	IL-36α	0.343763862392956
+author_unsigned_annotation_universe	CM10	IL-4	0.06887212717604994
+author_unsigned_annotation_universe	CM10	IL-5	1.0
+author_unsigned_annotation_universe	CM10	IL-6	
+author_unsigned_annotation_universe	CM10	IL-7	0.14864188361011008
+author_unsigned_annotation_universe	CM10	IL-9	
+author_unsigned_annotation_universe	CM10	IL-Y	
+author_unsigned_annotation_universe	CM10	LIF	
+author_unsigned_annotation_universe	CM10	LT-α1/β2	
+author_unsigned_annotation_universe	CM10	LT-α2/β1	
+author_unsigned_annotation_universe	CM10	M-CSF	
+author_unsigned_annotation_universe	CM10	NP	
+author_unsigned_annotation_universe	CM10	Noggin	
+author_unsigned_annotation_universe	CM10	OSM	1.0
+author_unsigned_annotation_universe	CM10	OX40L	
+author_unsigned_annotation_universe	CM10	PSPN	
+author_unsigned_annotation_universe	CM10	RANKL	0.6547418406391642
+author_unsigned_annotation_universe	CM10	SCF	1.0
+author_unsigned_annotation_universe	CM10	TGF-β1	0.14864188361011008
+author_unsigned_annotation_universe	CM10	TL1A	0.343763862392956
+author_unsigned_annotation_universe	CM10	TNF-α	0.14864188361011008
+author_unsigned_annotation_universe	CM10	TRAIL	
+author_unsigned_annotation_universe	CM10	TSLP	1.0
+author_unsigned_annotation_universe	CM10	TWEAK	
+author_unsigned_annotation_universe	CM10	VEGF	
+author_unsigned_annotation_universe	CM11	4-1BBL	
+author_unsigned_annotation_universe	CM11	ADSF	
+author_unsigned_annotation_universe	CM11	APRIL	
+author_unsigned_annotation_universe	CM11	AdipoQ	
+author_unsigned_annotation_universe	CM11	BAFF	
+author_unsigned_annotation_universe	CM11	C3a	
+author_unsigned_annotation_universe	CM11	C5a	
+author_unsigned_annotation_universe	CM11	CD30L	
+author_unsigned_annotation_universe	CM11	CD40L	
+author_unsigned_annotation_universe	CM11	CT-1	1.0
+author_unsigned_annotation_universe	CM11	Decorin	
+author_unsigned_annotation_universe	CM11	EGF	
+author_unsigned_annotation_universe	CM11	FGF-β	
+author_unsigned_annotation_universe	CM11	FLT3L	
+author_unsigned_annotation_universe	CM11	FasL	
+author_unsigned_annotation_universe	CM11	G-CSF	
+author_unsigned_annotation_universe	CM11	GDNF	
+author_unsigned_annotation_universe	CM11	GITRL	
+author_unsigned_annotation_universe	CM11	GM-CSF	1.0
+author_unsigned_annotation_universe	CM11	HGF	
+author_unsigned_annotation_universe	CM11	IFN-α1	1.0
+author_unsigned_annotation_universe	CM11	IFN-β	1.0
+author_unsigned_annotation_universe	CM11	IFN-γ	1.0
+author_unsigned_annotation_universe	CM11	IFN-ε	1.0
+author_unsigned_annotation_universe	CM11	IFN-κ	1.0
+author_unsigned_annotation_universe	CM11	IGF-1	
+author_unsigned_annotation_universe	CM11	IL-10	
+author_unsigned_annotation_universe	CM11	IL-11	
+author_unsigned_annotation_universe	CM11	IL-12	1.0
+author_unsigned_annotation_universe	CM11	IL-13	1.0
+author_unsigned_annotation_universe	CM11	IL-15	1.0
+author_unsigned_annotation_universe	CM11	IL-17A	
+author_unsigned_annotation_universe	CM11	IL-17B	
+author_unsigned_annotation_universe	CM11	IL-17C	
+author_unsigned_annotation_universe	CM11	IL-17D	0.0002471548483223429
+author_unsigned_annotation_universe	CM11	IL-17E	
+author_unsigned_annotation_universe	CM11	IL-17F	
+author_unsigned_annotation_universe	CM11	IL-18	1.0
+author_unsigned_annotation_universe	CM11	IL-1Ra	
+author_unsigned_annotation_universe	CM11	IL-1α	0.036902850181085425
+author_unsigned_annotation_universe	CM11	IL-1β	0.05023712722525377
+author_unsigned_annotation_universe	CM11	IL-2	1.0
+author_unsigned_annotation_universe	CM11	IL-20	
+author_unsigned_annotation_universe	CM11	IL-21	1.0
+author_unsigned_annotation_universe	CM11	IL-22	
+author_unsigned_annotation_universe	CM11	IL-23	
+author_unsigned_annotation_universe	CM11	IL-27	0.8266748640384437
+author_unsigned_annotation_universe	CM11	IL-3	1.0
+author_unsigned_annotation_universe	CM11	IL-31	1.0
+author_unsigned_annotation_universe	CM11	IL-33	1.0
+author_unsigned_annotation_universe	CM11	IL-34	
+author_unsigned_annotation_universe	CM11	IL-36Ra	
+author_unsigned_annotation_universe	CM11	IL-36α	1.0
+author_unsigned_annotation_universe	CM11	IL-4	1.0
+author_unsigned_annotation_universe	CM11	IL-5	
+author_unsigned_annotation_universe	CM11	IL-7	1.0
+author_unsigned_annotation_universe	CM11	IL-Y	
+author_unsigned_annotation_universe	CM11	LIF	1.0
+author_unsigned_annotation_universe	CM11	LIGHT	
+author_unsigned_annotation_universe	CM11	LT-α1/β2	
+author_unsigned_annotation_universe	CM11	Leptin	
+author_unsigned_annotation_universe	CM11	M-CSF	1.0
+author_unsigned_annotation_universe	CM11	NP	
+author_unsigned_annotation_universe	CM11	Noggin	
+author_unsigned_annotation_universe	CM11	OSM	0.8992272709600723
+author_unsigned_annotation_universe	CM11	OX40L	
+author_unsigned_annotation_universe	CM11	PRL	1.0
+author_unsigned_annotation_universe	CM11	PSPN	
+author_unsigned_annotation_universe	CM11	RANKL	
+author_unsigned_annotation_universe	CM11	SCF	
+author_unsigned_annotation_universe	CM11	TGF-β1	
+author_unsigned_annotation_universe	CM11	TL1A	0.4540544729737355
+author_unsigned_annotation_universe	CM11	TNF-α	0.07319400930505546
+author_unsigned_annotation_universe	CM11	TPO	
+author_unsigned_annotation_universe	CM11	TRAIL	
+author_unsigned_annotation_universe	CM11	TSLP	1.0
+author_unsigned_annotation_universe	CM11	TWEAK	
+author_unsigned_annotation_universe	CM11	VEGF	
+author_unsigned_annotation_universe	CM12	4-1BBL	1.0
+author_unsigned_annotation_universe	CM12	AdipoQ	
+author_unsigned_annotation_universe	CM12	BAFF	
+author_unsigned_annotation_universe	CM12	C5a	
+author_unsigned_annotation_universe	CM12	CD40L	1.0
+author_unsigned_annotation_universe	CM12	CT-1	1.0
+author_unsigned_annotation_universe	CM12	Decorin	
+author_unsigned_annotation_universe	CM12	EGF	0.04584061681215614
+author_unsigned_annotation_universe	CM12	FGF-β	
+author_unsigned_annotation_universe	CM12	FLT3L	
+author_unsigned_annotation_universe	CM12	FasL	
+author_unsigned_annotation_universe	CM12	G-CSF	
+author_unsigned_annotation_universe	CM12	GDNF	
+author_unsigned_annotation_universe	CM12	GITRL	
+author_unsigned_annotation_universe	CM12	GM-CSF	1.0
+author_unsigned_annotation_universe	CM12	HGF	
+author_unsigned_annotation_universe	CM12	IFN-α1	0.24675839028635446
+author_unsigned_annotation_universe	CM12	IFN-β	0.3347688989268804
+author_unsigned_annotation_universe	CM12	IFN-γ	1.0
+author_unsigned_annotation_universe	CM12	IFN-ε	0.012186433806031238
+author_unsigned_annotation_universe	CM12	IFN-κ	0.0017769864631047476
+author_unsigned_annotation_universe	CM12	IFN-λ2	
+author_unsigned_annotation_universe	CM12	IGF-1	
+author_unsigned_annotation_universe	CM12	IL-10	1.0
+author_unsigned_annotation_universe	CM12	IL-11	
+author_unsigned_annotation_universe	CM12	IL-12	0.18014218784461147
+author_unsigned_annotation_universe	CM12	IL-13	1.0
+author_unsigned_annotation_universe	CM12	IL-15	0.3347688989268804
+author_unsigned_annotation_universe	CM12	IL-17A	
+author_unsigned_annotation_universe	CM12	IL-17B	
+author_unsigned_annotation_universe	CM12	IL-17D	
+author_unsigned_annotation_universe	CM12	IL-17E	1.0
+author_unsigned_annotation_universe	CM12	IL-17F	
+author_unsigned_annotation_universe	CM12	IL-18	0.18014218784461147
+author_unsigned_annotation_universe	CM12	IL-1α	0.034894868187081825
+author_unsigned_annotation_universe	CM12	IL-1β	0.09374888585887868
+author_unsigned_annotation_universe	CM12	IL-2	0.9986313292235227
+author_unsigned_annotation_universe	CM12	IL-21	1.0
+author_unsigned_annotation_universe	CM12	IL-22	
+author_unsigned_annotation_universe	CM12	IL-23	0.07920265931994751
+author_unsigned_annotation_universe	CM12	IL-24	
+author_unsigned_annotation_universe	CM12	IL-27	
+author_unsigned_annotation_universe	CM12	IL-3	0.08880786594234928
+author_unsigned_annotation_universe	CM12	IL-31	1.0
+author_unsigned_annotation_universe	CM12	IL-33	0.43887916612083155
+author_unsigned_annotation_universe	CM12	IL-36Ra	0.2980781826041223
+author_unsigned_annotation_universe	CM12	IL-36α	1.0
+author_unsigned_annotation_universe	CM12	IL-4	1.0
+author_unsigned_annotation_universe	CM12	IL-5	1.0
+author_unsigned_annotation_universe	CM12	IL-7	0.3347688989268804
+author_unsigned_annotation_universe	CM12	IL-9	
+author_unsigned_annotation_universe	CM12	LIF	0.3347688989268804
+author_unsigned_annotation_universe	CM12	LT-α1/β2	0.005847932077291348
+author_unsigned_annotation_universe	CM12	LT-α2/β1	
+author_unsigned_annotation_universe	CM12	Leptin	
+author_unsigned_annotation_universe	CM12	M-CSF	1.0
+author_unsigned_annotation_universe	CM12	Noggin	
+author_unsigned_annotation_universe	CM12	OSM	
+author_unsigned_annotation_universe	CM12	PRL	1.0
+author_unsigned_annotation_universe	CM12	PSPN	
+author_unsigned_annotation_universe	CM12	RANKL	
+author_unsigned_annotation_universe	CM12	SCF	
+author_unsigned_annotation_universe	CM12	TGF-β1	
+author_unsigned_annotation_universe	CM12	TL1A	
+author_unsigned_annotation_universe	CM12	TNF-α	1.0
+author_unsigned_annotation_universe	CM12	TPO	
+author_unsigned_annotation_universe	CM12	TRAIL	
+author_unsigned_annotation_universe	CM12	TSLP	
+author_unsigned_annotation_universe	CM12	VEGF	
+author_unsigned_annotation_universe	CM13	4-1BBL	0.0071878155840028116
+author_unsigned_annotation_universe	CM13	APRIL	0.03782973344636216
+author_unsigned_annotation_universe	CM13	AdipoQ	1.0
+author_unsigned_annotation_universe	CM13	BAFF	0.007655884362149899
+author_unsigned_annotation_universe	CM13	C5a	
+author_unsigned_annotation_universe	CM13	CD30L	
+author_unsigned_annotation_universe	CM13	CD40L	1.0
+author_unsigned_annotation_universe	CM13	CT-1	
+author_unsigned_annotation_universe	CM13	EGF	
+author_unsigned_annotation_universe	CM13	FGF-β	1.0
+author_unsigned_annotation_universe	CM13	FLT3L	
+author_unsigned_annotation_universe	CM13	FasL	0.20987542594218098
+author_unsigned_annotation_universe	CM13	G-CSF	
+author_unsigned_annotation_universe	CM13	GITRL	
+author_unsigned_annotation_universe	CM13	GM-CSF	0.01860958141260364
+author_unsigned_annotation_universe	CM13	HGF	
+author_unsigned_annotation_universe	CM13	IFN-α1	0.8905058827479583
+author_unsigned_annotation_universe	CM13	IFN-β	1.0
+author_unsigned_annotation_universe	CM13	IFN-γ	0.0032621508894086957
+author_unsigned_annotation_universe	CM13	IFN-ε	2.6594592955599307e-06
+author_unsigned_annotation_universe	CM13	IFN-κ	0.012970886071268785
+author_unsigned_annotation_universe	CM13	IFN-λ2	
+author_unsigned_annotation_universe	CM13	IGF-1	
+author_unsigned_annotation_universe	CM13	IL-10	1.8898356387783904e-06
+author_unsigned_annotation_universe	CM13	IL-11	1.0
+author_unsigned_annotation_universe	CM13	IL-12	
+author_unsigned_annotation_universe	CM13	IL-13	
+author_unsigned_annotation_universe	CM13	IL-15	1.0
+author_unsigned_annotation_universe	CM13	IL-17B	
+author_unsigned_annotation_universe	CM13	IL-17E	0.22451272413170406
+author_unsigned_annotation_universe	CM13	IL-17F	
+author_unsigned_annotation_universe	CM13	IL-18	0.8905058827479583
+author_unsigned_annotation_universe	CM13	IL-19	
+author_unsigned_annotation_universe	CM13	IL-1Ra	
+author_unsigned_annotation_universe	CM13	IL-1α	2.979053326124189e-05
+author_unsigned_annotation_universe	CM13	IL-1β	1.918517582248737e-05
+author_unsigned_annotation_universe	CM13	IL-2	
+author_unsigned_annotation_universe	CM13	IL-20	
+author_unsigned_annotation_universe	CM13	IL-21	
+author_unsigned_annotation_universe	CM13	IL-22	
+author_unsigned_annotation_universe	CM13	IL-23	
+author_unsigned_annotation_universe	CM13	IL-24	
+author_unsigned_annotation_universe	CM13	IL-27	0.8575388345863916
+author_unsigned_annotation_universe	CM13	IL-3	1.918517582248737e-05
+author_unsigned_annotation_universe	CM13	IL-30	
+author_unsigned_annotation_universe	CM13	IL-33	0.4153583030505671
+author_unsigned_annotation_universe	CM13	IL-36α	0.20987542594218098
+author_unsigned_annotation_universe	CM13	IL-4	0.0030227975267399076
+author_unsigned_annotation_universe	CM13	IL-5	0.7745365982412884
+author_unsigned_annotation_universe	CM13	IL-6	
+author_unsigned_annotation_universe	CM13	IL-7	1.7573202912822353e-06
+author_unsigned_annotation_universe	CM13	IL-9	
+author_unsigned_annotation_universe	CM13	IL-Y	
+author_unsigned_annotation_universe	CM13	LIF	
+author_unsigned_annotation_universe	CM13	LIGHT	
+author_unsigned_annotation_universe	CM13	LT-α1/β2	
+author_unsigned_annotation_universe	CM13	LT-α2/β1	
+author_unsigned_annotation_universe	CM13	M-CSF	1.0
+author_unsigned_annotation_universe	CM13	NP	
+author_unsigned_annotation_universe	CM13	Noggin	
+author_unsigned_annotation_universe	CM13	OSM	0.4153583030505671
+author_unsigned_annotation_universe	CM13	OX40L	
+author_unsigned_annotation_universe	CM13	PSPN	
+author_unsigned_annotation_universe	CM13	RANKL	0.06514372408402
+author_unsigned_annotation_universe	CM13	SCF	1.0
+author_unsigned_annotation_universe	CM13	TGF-β1	0.011780743212606467
+author_unsigned_annotation_universe	CM13	TL1A	0.03782973344636216
+author_unsigned_annotation_universe	CM13	TNF-α	1.918517582248737e-05
+author_unsigned_annotation_universe	CM13	TPO	
+author_unsigned_annotation_universe	CM13	TRAIL	1.0
+author_unsigned_annotation_universe	CM13	TSLP	1.0
+author_unsigned_annotation_universe	CM13	TWEAK	
+author_unsigned_annotation_universe	CM13	VEGF	
+author_unsigned_annotation_universe	CM14	4-1BBL	1.0
+author_unsigned_annotation_universe	CM14	AdipoQ	
+author_unsigned_annotation_universe	CM14	BAFF	
+author_unsigned_annotation_universe	CM14	C5a	
+author_unsigned_annotation_universe	CM14	CD40L	1.0
+author_unsigned_annotation_universe	CM14	CT-1	0.8744040936741673
+author_unsigned_annotation_universe	CM14	Decorin	
+author_unsigned_annotation_universe	CM14	EGF	1.0
+author_unsigned_annotation_universe	CM14	FGF-β	
+author_unsigned_annotation_universe	CM14	FLT3L	
+author_unsigned_annotation_universe	CM14	FasL	
+author_unsigned_annotation_universe	CM14	G-CSF	
+author_unsigned_annotation_universe	CM14	GDNF	
+author_unsigned_annotation_universe	CM14	GITRL	
+author_unsigned_annotation_universe	CM14	GM-CSF	1.0
+author_unsigned_annotation_universe	CM14	HGF	
+author_unsigned_annotation_universe	CM14	IFN-α1	0.6524010163703697
+author_unsigned_annotation_universe	CM14	IFN-β	0.9242692466860359
+author_unsigned_annotation_universe	CM14	IFN-γ	0.05083162696911962
+author_unsigned_annotation_universe	CM14	IFN-ε	0.41407589852282084
+author_unsigned_annotation_universe	CM14	IFN-κ	0.4772543330875233
+author_unsigned_annotation_universe	CM14	IFN-λ2	
+author_unsigned_annotation_universe	CM14	IGF-1	
+author_unsigned_annotation_universe	CM14	IL-10	0.14500333064721857
+author_unsigned_annotation_universe	CM14	IL-11	
+author_unsigned_annotation_universe	CM14	IL-12	0.24720558297974332
+author_unsigned_annotation_universe	CM14	IL-13	0.6524010163703697
+author_unsigned_annotation_universe	CM14	IL-15	0.14500333064721857
+author_unsigned_annotation_universe	CM14	IL-17A	
+author_unsigned_annotation_universe	CM14	IL-17B	
+author_unsigned_annotation_universe	CM14	IL-17D	
+author_unsigned_annotation_universe	CM14	IL-17E	0.551319470444587
+author_unsigned_annotation_universe	CM14	IL-17F	
+author_unsigned_annotation_universe	CM14	IL-18	0.06597201760942872
+author_unsigned_annotation_universe	CM14	IL-1α	0.00026630889504596116
+author_unsigned_annotation_universe	CM14	IL-1β	0.551319470444587
+author_unsigned_annotation_universe	CM14	IL-2	0.2552838846224756
+author_unsigned_annotation_universe	CM14	IL-21	0.04662475095615623
+author_unsigned_annotation_universe	CM14	IL-22	
+author_unsigned_annotation_universe	CM14	IL-23	1.0
+author_unsigned_annotation_universe	CM14	IL-24	
+author_unsigned_annotation_universe	CM14	IL-27	
+author_unsigned_annotation_universe	CM14	IL-3	1.0
+author_unsigned_annotation_universe	CM14	IL-31	0.4294150388149903
+author_unsigned_annotation_universe	CM14	IL-33	0.21735226311532144
+author_unsigned_annotation_universe	CM14	IL-36Ra	1.0
+author_unsigned_annotation_universe	CM14	IL-36α	0.023889983195928343
+author_unsigned_annotation_universe	CM14	IL-4	0.9242692466860359
+author_unsigned_annotation_universe	CM14	IL-5	0.551319470444587
+author_unsigned_annotation_universe	CM14	IL-7	0.4772543330875233
+author_unsigned_annotation_universe	CM14	IL-9	
+author_unsigned_annotation_universe	CM14	LIF	1.0
+author_unsigned_annotation_universe	CM14	LT-α1/β2	0.551319470444587
+author_unsigned_annotation_universe	CM14	LT-α2/β1	
+author_unsigned_annotation_universe	CM14	Leptin	
+author_unsigned_annotation_universe	CM14	M-CSF	0.023889983195928343
+author_unsigned_annotation_universe	CM14	Noggin	
+author_unsigned_annotation_universe	CM14	OSM	
+author_unsigned_annotation_universe	CM14	PRL	0.9242692466860359
+author_unsigned_annotation_universe	CM14	PSPN	
+author_unsigned_annotation_universe	CM14	RANKL	
+author_unsigned_annotation_universe	CM14	SCF	
+author_unsigned_annotation_universe	CM14	TGF-β1	
+author_unsigned_annotation_universe	CM14	TL1A	
+author_unsigned_annotation_universe	CM14	TNF-α	0.14500333064721857
+author_unsigned_annotation_universe	CM14	TPO	
+author_unsigned_annotation_universe	CM14	TRAIL	
+author_unsigned_annotation_universe	CM14	TSLP	
+author_unsigned_annotation_universe	CM14	VEGF	
+directional_measured_universe	CM03	4-1BBL	1.0
+directional_measured_universe	CM03	APRIL	
+directional_measured_universe	CM03	AdipoQ	
+directional_measured_universe	CM03	BAFF	0.04633113726146477
+directional_measured_universe	CM03	C5a	
+directional_measured_universe	CM03	CD30L	
+directional_measured_universe	CM03	CD40L	0.0832776267129092
+directional_measured_universe	CM03	CT-1	
+directional_measured_universe	CM03	Decorin	
+directional_measured_universe	CM03	EGF	1.0
+directional_measured_universe	CM03	FGF-β	
+directional_measured_universe	CM03	FLT3L	
+directional_measured_universe	CM03	FasL	0.06120591341277418
+directional_measured_universe	CM03	G-CSF	
+directional_measured_universe	CM03	GDNF	
+directional_measured_universe	CM03	GITRL	
+directional_measured_universe	CM03	GM-CSF	0.5156075803937492
+directional_measured_universe	CM03	HGF	
+directional_measured_universe	CM03	IFN-α1	4.292700240474725e-11
+directional_measured_universe	CM03	IFN-β	7.64146474190342e-09
+directional_measured_universe	CM03	IFN-γ	0.0007331395577098099
+directional_measured_universe	CM03	IFN-ε	0.06120591341277418
+directional_measured_universe	CM03	IFN-κ	6.898945778162692e-07
+directional_measured_universe	CM03	IFN-λ2	
+directional_measured_universe	CM03	IGF-1	
+directional_measured_universe	CM03	IL-10	0.13261647709194982
+directional_measured_universe	CM03	IL-11	1.0
+directional_measured_universe	CM03	IL-12	7.296766970324622e-08
+directional_measured_universe	CM03	IL-13	
+directional_measured_universe	CM03	IL-15	1.213791817074578e-05
+directional_measured_universe	CM03	IL-17A	
+directional_measured_universe	CM03	IL-17B	
+directional_measured_universe	CM03	IL-17D	
+directional_measured_universe	CM03	IL-17E	1.0
+directional_measured_universe	CM03	IL-17F	
+directional_measured_universe	CM03	IL-18	4.252928228502394e-06
+directional_measured_universe	CM03	IL-1Ra	
+directional_measured_universe	CM03	IL-1α	0.00023608081076013633
+directional_measured_universe	CM03	IL-1β	0.0001280790789840939
+directional_measured_universe	CM03	IL-2	0.000490795115261752
+directional_measured_universe	CM03	IL-20	
+directional_measured_universe	CM03	IL-21	0.0832776267129092
+directional_measured_universe	CM03	IL-22	
+directional_measured_universe	CM03	IL-23	0.9271885619792171
+directional_measured_universe	CM03	IL-24	
+directional_measured_universe	CM03	IL-27	0.9821817588034797
+directional_measured_universe	CM03	IL-3	0.03889679440115912
+directional_measured_universe	CM03	IL-30	
+directional_measured_universe	CM03	IL-33	1.0
+directional_measured_universe	CM03	IL-36Ra	
+directional_measured_universe	CM03	IL-36α	0.0010118702381809856
+directional_measured_universe	CM03	IL-4	0.0021703780075136045
+directional_measured_universe	CM03	IL-5	1.0
+directional_measured_universe	CM03	IL-6	
+directional_measured_universe	CM03	IL-7	0.04633113726146477
+directional_measured_universe	CM03	IL-9	
+directional_measured_universe	CM03	IL-Y	
+directional_measured_universe	CM03	LIF	
+directional_measured_universe	CM03	LT-α1/β2	1.0
+directional_measured_universe	CM03	LT-α2/β1	
+directional_measured_universe	CM03	M-CSF	
+directional_measured_universe	CM03	NP	
+directional_measured_universe	CM03	Noggin	
+directional_measured_universe	CM03	OSM	0.47136800825105735
+directional_measured_universe	CM03	OX40L	
+directional_measured_universe	CM03	PSPN	
+directional_measured_universe	CM03	RANKL	0.03889679440115912
+directional_measured_universe	CM03	SCF	1.0
+directional_measured_universe	CM03	TGF-β1	1.0
+directional_measured_universe	CM03	TL1A	0.31542954070692314
+directional_measured_universe	CM03	TNF-α	0.002480416262884305
+directional_measured_universe	CM03	TRAIL	
+directional_measured_universe	CM03	TSLP	1.0
+directional_measured_universe	CM03	TWEAK	
+directional_measured_universe	CM03	VEGF	
+directional_measured_universe	CM04	4-1BBL	1.0
+directional_measured_universe	CM04	APRIL	
+directional_measured_universe	CM04	BAFF	1.0
+directional_measured_universe	CM04	C5a	
+directional_measured_universe	CM04	CD30L	
+directional_measured_universe	CM04	CD40L	1.0
+directional_measured_universe	CM04	CT-1	
+directional_measured_universe	CM04	EGF	
+directional_measured_universe	CM04	FGF-β	
+directional_measured_universe	CM04	FLT3L	
+directional_measured_universe	CM04	FasL	1.0
+directional_measured_universe	CM04	G-CSF	
+directional_measured_universe	CM04	GITRL	
+directional_measured_universe	CM04	GM-CSF	1.0
+directional_measured_universe	CM04	HGF	
+directional_measured_universe	CM04	IFN-α1	3.4110706245284684e-07
+directional_measured_universe	CM04	IFN-β	3.630855528850445e-06
+directional_measured_universe	CM04	IFN-γ	0.007812679530745771
+directional_measured_universe	CM04	IFN-ε	0.3316686739930668
+directional_measured_universe	CM04	IFN-κ	0.3698204215696316
+directional_measured_universe	CM04	IFN-λ2	
+directional_measured_universe	CM04	IGF-1	
+directional_measured_universe	CM04	IL-10	0.02562160171677082
+directional_measured_universe	CM04	IL-11	1.0
+directional_measured_universe	CM04	IL-12	3.236637431264121e-06
+directional_measured_universe	CM04	IL-13	
+directional_measured_universe	CM04	IL-15	3.630855528850445e-06
+directional_measured_universe	CM04	IL-17B	
+directional_measured_universe	CM04	IL-17E	1.0
+directional_measured_universe	CM04	IL-17F	
+directional_measured_universe	CM04	IL-18	3.4110706245284684e-07
+directional_measured_universe	CM04	IL-1Ra	
+directional_measured_universe	CM04	IL-1α	1.1062887999884464e-05
+directional_measured_universe	CM04	IL-1β	3.011507574112727e-06
+directional_measured_universe	CM04	IL-2	0.00020429637886814914
+directional_measured_universe	CM04	IL-20	
+directional_measured_universe	CM04	IL-21	
+directional_measured_universe	CM04	IL-22	
+directional_measured_universe	CM04	IL-23	
+directional_measured_universe	CM04	IL-24	
+directional_measured_universe	CM04	IL-27	0.3698204215696316
+directional_measured_universe	CM04	IL-3	0.2265760017571002
+directional_measured_universe	CM04	IL-30	
+directional_measured_universe	CM04	IL-33	1.0
+directional_measured_universe	CM04	IL-36α	0.0007162355456118251
+directional_measured_universe	CM04	IL-4	1.0221638363134107e-05
+directional_measured_universe	CM04	IL-5	1.0
+directional_measured_universe	CM04	IL-6	
+directional_measured_universe	CM04	IL-7	0.0754622004691866
+directional_measured_universe	CM04	IL-9	
+directional_measured_universe	CM04	IL-Y	
+directional_measured_universe	CM04	LIF	
+directional_measured_universe	CM04	LT-α1/β2	
+directional_measured_universe	CM04	LT-α2/β1	
+directional_measured_universe	CM04	M-CSF	
+directional_measured_universe	CM04	NP	
+directional_measured_universe	CM04	Noggin	
+directional_measured_universe	CM04	OSM	1.0
+directional_measured_universe	CM04	OX40L	
+directional_measured_universe	CM04	PSPN	
+directional_measured_universe	CM04	RANKL	0.42907764043077906
+directional_measured_universe	CM04	SCF	1.0
+directional_measured_universe	CM04	TGF-β1	1.0
+directional_measured_universe	CM04	TL1A	1.0
+directional_measured_universe	CM04	TNF-α	0.00892041958504321
+directional_measured_universe	CM04	TRAIL	
+directional_measured_universe	CM04	TSLP	1.0
+directional_measured_universe	CM04	TWEAK	
+directional_measured_universe	CM04	VEGF	
+directional_measured_universe	CM06	4-1BBL	1.0
+directional_measured_universe	CM06	AdipoQ	
+directional_measured_universe	CM06	BAFF	
+directional_measured_universe	CM06	C5a	
+directional_measured_universe	CM06	CD40L	1.0
+directional_measured_universe	CM06	CT-1	1.0
+directional_measured_universe	CM06	Decorin	
+directional_measured_universe	CM06	EGF	1.0
+directional_measured_universe	CM06	FGF-β	
+directional_measured_universe	CM06	FLT3L	
+directional_measured_universe	CM06	FasL	
+directional_measured_universe	CM06	G-CSF	
+directional_measured_universe	CM06	GDNF	
+directional_measured_universe	CM06	GITRL	
+directional_measured_universe	CM06	GM-CSF	1.0
+directional_measured_universe	CM06	HGF	
+directional_measured_universe	CM06	IFN-α1	6.772780500915202e-07
+directional_measured_universe	CM06	IFN-β	6.099043122061697e-07
+directional_measured_universe	CM06	IFN-γ	1.0
+directional_measured_universe	CM06	IFN-ε	1.0
+directional_measured_universe	CM06	IFN-κ	1.0
+directional_measured_universe	CM06	IFN-λ2	
+directional_measured_universe	CM06	IGF-1	
+directional_measured_universe	CM06	IL-10	1.0
+directional_measured_universe	CM06	IL-11	
+directional_measured_universe	CM06	IL-12	1.0
+directional_measured_universe	CM06	IL-13	1.0
+directional_measured_universe	CM06	IL-15	1.0
+directional_measured_universe	CM06	IL-17A	
+directional_measured_universe	CM06	IL-17B	
+directional_measured_universe	CM06	IL-17D	
+directional_measured_universe	CM06	IL-17E	1.0
+directional_measured_universe	CM06	IL-17F	
+directional_measured_universe	CM06	IL-18	0.8564056359304506
+directional_measured_universe	CM06	IL-1α	0.12404530435714714
+directional_measured_universe	CM06	IL-1β	1.0
+directional_measured_universe	CM06	IL-2	1.0
+directional_measured_universe	CM06	IL-21	1.0
+directional_measured_universe	CM06	IL-22	
+directional_measured_universe	CM06	IL-23	1.0
+directional_measured_universe	CM06	IL-24	
+directional_measured_universe	CM06	IL-27	
+directional_measured_universe	CM06	IL-3	1.0
+directional_measured_universe	CM06	IL-31	1.0
+directional_measured_universe	CM06	IL-33	1.0
+directional_measured_universe	CM06	IL-36Ra	
+directional_measured_universe	CM06	IL-36α	1.0
+directional_measured_universe	CM06	IL-4	0.09753293958993382
+directional_measured_universe	CM06	IL-5	1.0
+directional_measured_universe	CM06	IL-7	1.0
+directional_measured_universe	CM06	IL-9	
+directional_measured_universe	CM06	LIF	1.0
+directional_measured_universe	CM06	LT-α1/β2	1.0
+directional_measured_universe	CM06	LT-α2/β1	
+directional_measured_universe	CM06	Leptin	
+directional_measured_universe	CM06	M-CSF	1.0
+directional_measured_universe	CM06	Noggin	
+directional_measured_universe	CM06	OSM	
+directional_measured_universe	CM06	PRL	1.0
+directional_measured_universe	CM06	PSPN	
+directional_measured_universe	CM06	RANKL	
+directional_measured_universe	CM06	SCF	
+directional_measured_universe	CM06	TGF-β1	
+directional_measured_universe	CM06	TL1A	
+directional_measured_universe	CM06	TNF-α	1.0
+directional_measured_universe	CM06	TPO	
+directional_measured_universe	CM06	TRAIL	
+directional_measured_universe	CM06	TSLP	
+directional_measured_universe	CM06	VEGF	
+directional_measured_universe	CM07	CT-1	1.0
+directional_measured_universe	CM07	Decorin	
+directional_measured_universe	CM07	GM-CSF	0.6050572856928579
+directional_measured_universe	CM07	IFN-α1	1.0
+directional_measured_universe	CM07	IFN-β	1.0
+directional_measured_universe	CM07	IFN-γ	0.46322340493788944
+directional_measured_universe	CM07	IFN-ε	1.0
+directional_measured_universe	CM07	IFN-κ	1.0
+directional_measured_universe	CM07	IL-10	
+directional_measured_universe	CM07	IL-11	
+directional_measured_universe	CM07	IL-12	1.0
+directional_measured_universe	CM07	IL-13	1.0
+directional_measured_universe	CM07	IL-15	1.0
+directional_measured_universe	CM07	IL-17F	
+directional_measured_universe	CM07	IL-18	0.46322340493788944
+directional_measured_universe	CM07	IL-1α	0.6050572856928579
+directional_measured_universe	CM07	IL-1β	0.6050572856928579
+directional_measured_universe	CM07	IL-2	1.0
+directional_measured_universe	CM07	IL-3	1.0
+directional_measured_universe	CM07	IL-31	1.0
+directional_measured_universe	CM07	IL-33	1.0
+directional_measured_universe	CM07	IL-36Ra	
+directional_measured_universe	CM07	IL-36α	0.6050572856928579
+directional_measured_universe	CM07	IL-4	1.0
+directional_measured_universe	CM07	IL-5	
+directional_measured_universe	CM07	IL-7	1.0
+directional_measured_universe	CM07	LIF	1.0
+directional_measured_universe	CM07	Leptin	
+directional_measured_universe	CM07	M-CSF	0.5507480250780544
+directional_measured_universe	CM07	OSM	
+directional_measured_universe	CM07	PRL	1.0
+directional_measured_universe	CM07	PSPN	
+directional_measured_universe	CM07	SCF	
+directional_measured_universe	CM07	TGF-β1	
+directional_measured_universe	CM07	TNF-α	0.5507480250780544
+directional_measured_universe	CM07	TPO	
+directional_measured_universe	CM08	4-1BBL	
+directional_measured_universe	CM08	APRIL	
+directional_measured_universe	CM08	CD30L	
+directional_measured_universe	CM08	CD40L	1.0
+directional_measured_universe	CM08	CT-1	
+directional_measured_universe	CM08	EGF	
+directional_measured_universe	CM08	FGF-β	
+directional_measured_universe	CM08	FLT3L	0.599994353127297
+directional_measured_universe	CM08	FasL	
+directional_measured_universe	CM08	GITRL	
+directional_measured_universe	CM08	GM-CSF	0.21241006565666207
+directional_measured_universe	CM08	IFN-α1	0.001340607898061854
+directional_measured_universe	CM08	IFN-β	0.4314488771154792
+directional_measured_universe	CM08	IFN-γ	1.0
+directional_measured_universe	CM08	IFN-ε	1.0
+directional_measured_universe	CM08	IFN-κ	1.0
+directional_measured_universe	CM08	IFN-λ2	
+directional_measured_universe	CM08	IGF-1	
+directional_measured_universe	CM08	IL-10	0.21241006565666207
+directional_measured_universe	CM08	IL-12	
+directional_measured_universe	CM08	IL-13	
+directional_measured_universe	CM08	IL-15	0.060498651794510486
+directional_measured_universe	CM08	IL-17A	
+directional_measured_universe	CM08	IL-17E	1.0
+directional_measured_universe	CM08	IL-18	1.0
+directional_measured_universe	CM08	IL-19	
+directional_measured_universe	CM08	IL-1α	1.0
+directional_measured_universe	CM08	IL-1β	1.0
+directional_measured_universe	CM08	IL-2	1.0
+directional_measured_universe	CM08	IL-20	
+directional_measured_universe	CM08	IL-21	
+directional_measured_universe	CM08	IL-22	
+directional_measured_universe	CM08	IL-23	
+directional_measured_universe	CM08	IL-27	
+directional_measured_universe	CM08	IL-3	0.6808386473202808
+directional_measured_universe	CM08	IL-30	
+directional_measured_universe	CM08	IL-33	
+directional_measured_universe	CM08	IL-34	
+directional_measured_universe	CM08	IL-36α	1.0
+directional_measured_universe	CM08	IL-4	1.0
+directional_measured_universe	CM08	IL-5	
+directional_measured_universe	CM08	IL-6	
+directional_measured_universe	CM08	IL-7	1.0
+directional_measured_universe	CM08	IL-9	
+directional_measured_universe	CM08	LIF	1.0
+directional_measured_universe	CM08	LT-α1/β2	
+directional_measured_universe	CM08	NP	
+directional_measured_universe	CM08	Noggin	
+directional_measured_universe	CM08	OSM	
+directional_measured_universe	CM08	RANKL	
+directional_measured_universe	CM08	SCF	
+directional_measured_universe	CM08	TL1A	
+directional_measured_universe	CM08	TNF-α	1.0
+directional_measured_universe	CM08	TSLP	
+directional_measured_universe	CM08	TWEAK	
+directional_measured_universe	CM09	4-1BBL	1.0
+directional_measured_universe	CM09	APRIL	
+directional_measured_universe	CM09	BAFF	1.0
+directional_measured_universe	CM09	C5a	
+directional_measured_universe	CM09	CD30L	
+directional_measured_universe	CM09	CD40L	1.0
+directional_measured_universe	CM09	CT-1	1.0
+directional_measured_universe	CM09	Decorin	
+directional_measured_universe	CM09	EGF	
+directional_measured_universe	CM09	FGF-β	
+directional_measured_universe	CM09	FLT3L	
+directional_measured_universe	CM09	FasL	1.0
+directional_measured_universe	CM09	G-CSF	
+directional_measured_universe	CM09	GITRL	
+directional_measured_universe	CM09	GM-CSF	1.0
+directional_measured_universe	CM09	HGF	
+directional_measured_universe	CM09	IFN-α1	1.0
+directional_measured_universe	CM09	IFN-β	1.0
+directional_measured_universe	CM09	IFN-γ	1.0
+directional_measured_universe	CM09	IFN-ε	1.0
+directional_measured_universe	CM09	IFN-κ	1.0
+directional_measured_universe	CM09	IFN-λ2	
+directional_measured_universe	CM09	IGF-1	
+directional_measured_universe	CM09	IL-10	1.0
+directional_measured_universe	CM09	IL-11	1.0
+directional_measured_universe	CM09	IL-12	1.0
+directional_measured_universe	CM09	IL-13	1.0
+directional_measured_universe	CM09	IL-15	0.0475334467743845
+directional_measured_universe	CM09	IL-17B	
+directional_measured_universe	CM09	IL-17E	1.0
+directional_measured_universe	CM09	IL-17F	
+directional_measured_universe	CM09	IL-18	1.0
+directional_measured_universe	CM09	IL-1Ra	
+directional_measured_universe	CM09	IL-1α	0.3793779135995467
+directional_measured_universe	CM09	IL-1β	0.5480483309049041
+directional_measured_universe	CM09	IL-2	1.0
+directional_measured_universe	CM09	IL-20	
+directional_measured_universe	CM09	IL-21	
+directional_measured_universe	CM09	IL-22	
+directional_measured_universe	CM09	IL-23	
+directional_measured_universe	CM09	IL-24	
+directional_measured_universe	CM09	IL-27	1.0
+directional_measured_universe	CM09	IL-3	1.0
+directional_measured_universe	CM09	IL-30	
+directional_measured_universe	CM09	IL-31	1.0
+directional_measured_universe	CM09	IL-33	1.0
+directional_measured_universe	CM09	IL-36Ra	
+directional_measured_universe	CM09	IL-36α	1.0
+directional_measured_universe	CM09	IL-4	1.0
+directional_measured_universe	CM09	IL-5	1.0
+directional_measured_universe	CM09	IL-6	
+directional_measured_universe	CM09	IL-7	1.0
+directional_measured_universe	CM09	IL-9	
+directional_measured_universe	CM09	IL-Y	
+directional_measured_universe	CM09	LIF	0.9470563887207745
+directional_measured_universe	CM09	LT-α1/β2	
+directional_measured_universe	CM09	LT-α2/β1	
+directional_measured_universe	CM09	Leptin	
+directional_measured_universe	CM09	M-CSF	1.0
+directional_measured_universe	CM09	NP	
+directional_measured_universe	CM09	Noggin	
+directional_measured_universe	CM09	OSM	1.0
+directional_measured_universe	CM09	OX40L	
+directional_measured_universe	CM09	PRL	0.1618010299636022
+directional_measured_universe	CM09	PSPN	
+directional_measured_universe	CM09	RANKL	1.0
+directional_measured_universe	CM09	SCF	1.0
+directional_measured_universe	CM09	TGF-β1	1.0
+directional_measured_universe	CM09	TL1A	1.0
+directional_measured_universe	CM09	TNF-α	0.5332152835543712
+directional_measured_universe	CM09	TPO	
+directional_measured_universe	CM09	TRAIL	
+directional_measured_universe	CM09	TSLP	1.0
+directional_measured_universe	CM09	TWEAK	
+directional_measured_universe	CM09	VEGF	
+directional_measured_universe	CM10	4-1BBL	0.503830992811291
+directional_measured_universe	CM10	APRIL	
+directional_measured_universe	CM10	BAFF	0.04516805996089011
+directional_measured_universe	CM10	C5a	
+directional_measured_universe	CM10	CD30L	
+directional_measured_universe	CM10	CD40L	0.7316935331072932
+directional_measured_universe	CM10	CT-1	
+directional_measured_universe	CM10	EGF	
+directional_measured_universe	CM10	FGF-β	
+directional_measured_universe	CM10	FLT3L	
+directional_measured_universe	CM10	FasL	0.503830992811291
+directional_measured_universe	CM10	G-CSF	
+directional_measured_universe	CM10	GITRL	
+directional_measured_universe	CM10	GM-CSF	0.0002464661193324188
+directional_measured_universe	CM10	HGF	
+directional_measured_universe	CM10	IFN-α1	1.592740722057546e-08
+directional_measured_universe	CM10	IFN-β	3.246158499320854e-05
+directional_measured_universe	CM10	IFN-γ	4.013674236838524e-05
+directional_measured_universe	CM10	IFN-ε	0.18221587772817638
+directional_measured_universe	CM10	IFN-κ	0.1747386685696014
+directional_measured_universe	CM10	IFN-λ2	
+directional_measured_universe	CM10	IGF-1	
+directional_measured_universe	CM10	IL-10	0.023788758523046384
+directional_measured_universe	CM10	IL-11	1.0
+directional_measured_universe	CM10	IL-12	1.0
+directional_measured_universe	CM10	IL-13	
+directional_measured_universe	CM10	IL-15	0.17995198572790766
+directional_measured_universe	CM10	IL-17B	
+directional_measured_universe	CM10	IL-17E	0.03991359636138208
+directional_measured_universe	CM10	IL-17F	
+directional_measured_universe	CM10	IL-18	0.012030542999520215
+directional_measured_universe	CM10	IL-1Ra	
+directional_measured_universe	CM10	IL-1α	0.0760444619846913
+directional_measured_universe	CM10	IL-1β	0.21931781024044936
+directional_measured_universe	CM10	IL-2	0.028133099228028074
+directional_measured_universe	CM10	IL-20	
+directional_measured_universe	CM10	IL-21	
+directional_measured_universe	CM10	IL-22	
+directional_measured_universe	CM10	IL-23	
+directional_measured_universe	CM10	IL-24	
+directional_measured_universe	CM10	IL-27	0.1399454622559925
+directional_measured_universe	CM10	IL-3	0.2284450957969626
+directional_measured_universe	CM10	IL-30	
+directional_measured_universe	CM10	IL-33	0.503830992811291
+directional_measured_universe	CM10	IL-36α	0.2284450957969626
+directional_measured_universe	CM10	IL-4	4.6495935512642626e-11
+directional_measured_universe	CM10	IL-5	0.2284450957969626
+directional_measured_universe	CM10	IL-6	
+directional_measured_universe	CM10	IL-7	0.0008106937220568102
+directional_measured_universe	CM10	IL-9	
+directional_measured_universe	CM10	IL-Y	
+directional_measured_universe	CM10	LIF	
+directional_measured_universe	CM10	LT-α1/β2	
+directional_measured_universe	CM10	LT-α2/β1	
+directional_measured_universe	CM10	M-CSF	
+directional_measured_universe	CM10	NP	
+directional_measured_universe	CM10	Noggin	
+directional_measured_universe	CM10	OSM	0.6695321938556916
+directional_measured_universe	CM10	OX40L	
+directional_measured_universe	CM10	PSPN	
+directional_measured_universe	CM10	RANKL	0.029043196032734826
+directional_measured_universe	CM10	SCF	1.0
+directional_measured_universe	CM10	TGF-β1	0.007912375780389874
+directional_measured_universe	CM10	TL1A	0.503830992811291
+directional_measured_universe	CM10	TNF-α	5.3468114340929354e-05
+directional_measured_universe	CM10	TRAIL	
+directional_measured_universe	CM10	TSLP	0.2284450957969626
+directional_measured_universe	CM10	TWEAK	
+directional_measured_universe	CM10	VEGF	
+directional_measured_universe	CM11	4-1BBL	
+directional_measured_universe	CM11	ADSF	
+directional_measured_universe	CM11	APRIL	
+directional_measured_universe	CM11	AdipoQ	
+directional_measured_universe	CM11	BAFF	
+directional_measured_universe	CM11	C3a	
+directional_measured_universe	CM11	C5a	
+directional_measured_universe	CM11	CD30L	
+directional_measured_universe	CM11	CD40L	
+directional_measured_universe	CM11	CT-1	1.0
+directional_measured_universe	CM11	Decorin	
+directional_measured_universe	CM11	EGF	
+directional_measured_universe	CM11	FGF-β	
+directional_measured_universe	CM11	FLT3L	
+directional_measured_universe	CM11	FasL	
+directional_measured_universe	CM11	G-CSF	
+directional_measured_universe	CM11	GDNF	
+directional_measured_universe	CM11	GITRL	
+directional_measured_universe	CM11	GM-CSF	0.8344902616499736
+directional_measured_universe	CM11	HGF	
+directional_measured_universe	CM11	IFN-α1	1.0
+directional_measured_universe	CM11	IFN-β	1.0
+directional_measured_universe	CM11	IFN-γ	1.0
+directional_measured_universe	CM11	IFN-ε	1.0
+directional_measured_universe	CM11	IFN-κ	1.0
+directional_measured_universe	CM11	IGF-1	
+directional_measured_universe	CM11	IL-10	
+directional_measured_universe	CM11	IL-11	
+directional_measured_universe	CM11	IL-12	1.0
+directional_measured_universe	CM11	IL-13	0.9185465639304776
+directional_measured_universe	CM11	IL-15	0.9828596081648645
+directional_measured_universe	CM11	IL-17A	
+directional_measured_universe	CM11	IL-17B	
+directional_measured_universe	CM11	IL-17C	
+directional_measured_universe	CM11	IL-17D	1.0
+directional_measured_universe	CM11	IL-17E	
+directional_measured_universe	CM11	IL-17F	
+directional_measured_universe	CM11	IL-18	1.0
+directional_measured_universe	CM11	IL-1Ra	
+directional_measured_universe	CM11	IL-1α	0.46215895023402215
+directional_measured_universe	CM11	IL-1β	0.40539871262084154
+directional_measured_universe	CM11	IL-2	1.0
+directional_measured_universe	CM11	IL-20	
+directional_measured_universe	CM11	IL-21	1.0
+directional_measured_universe	CM11	IL-22	
+directional_measured_universe	CM11	IL-23	
+directional_measured_universe	CM11	IL-27	1.0
+directional_measured_universe	CM11	IL-3	0.8344902616499736
+directional_measured_universe	CM11	IL-31	1.0
+directional_measured_universe	CM11	IL-33	1.0
+directional_measured_universe	CM11	IL-34	
+directional_measured_universe	CM11	IL-36Ra	
+directional_measured_universe	CM11	IL-36α	1.0
+directional_measured_universe	CM11	IL-4	0.7964662110351073
+directional_measured_universe	CM11	IL-5	
+directional_measured_universe	CM11	IL-7	0.7964662110351073
+directional_measured_universe	CM11	IL-Y	
+directional_measured_universe	CM11	LIF	1.0
+directional_measured_universe	CM11	LIGHT	
+directional_measured_universe	CM11	LT-α1/β2	
+directional_measured_universe	CM11	Leptin	
+directional_measured_universe	CM11	M-CSF	0.9185465639304776
+directional_measured_universe	CM11	NP	
+directional_measured_universe	CM11	Noggin	
+directional_measured_universe	CM11	OSM	
+directional_measured_universe	CM11	OX40L	
+directional_measured_universe	CM11	PRL	1.0
+directional_measured_universe	CM11	PSPN	
+directional_measured_universe	CM11	RANKL	
+directional_measured_universe	CM11	SCF	
+directional_measured_universe	CM11	TGF-β1	
+directional_measured_universe	CM11	TL1A	1.0
+directional_measured_universe	CM11	TNF-α	0.016235259494513793
+directional_measured_universe	CM11	TPO	
+directional_measured_universe	CM11	TRAIL	
+directional_measured_universe	CM11	TSLP	1.0
+directional_measured_universe	CM11	TWEAK	
+directional_measured_universe	CM11	VEGF	
+directional_measured_universe	CM12	4-1BBL	1.0
+directional_measured_universe	CM12	AdipoQ	
+directional_measured_universe	CM12	BAFF	
+directional_measured_universe	CM12	C5a	
+directional_measured_universe	CM12	CD40L	1.0
+directional_measured_universe	CM12	CT-1	0.3479431004730225
+directional_measured_universe	CM12	Decorin	
+directional_measured_universe	CM12	EGF	1.0
+directional_measured_universe	CM12	FGF-β	
+directional_measured_universe	CM12	FLT3L	
+directional_measured_universe	CM12	FasL	
+directional_measured_universe	CM12	G-CSF	
+directional_measured_universe	CM12	GDNF	
+directional_measured_universe	CM12	GITRL	
+directional_measured_universe	CM12	GM-CSF	0.19929851335096616
+directional_measured_universe	CM12	HGF	
+directional_measured_universe	CM12	IFN-α1	1.2947843147437275e-07
+directional_measured_universe	CM12	IFN-β	1.2947843147437275e-07
+directional_measured_universe	CM12	IFN-γ	0.005335439177511272
+directional_measured_universe	CM12	IFN-ε	6.868925788316875e-05
+directional_measured_universe	CM12	IFN-κ	4.983727486949674e-07
+directional_measured_universe	CM12	IFN-λ2	
+directional_measured_universe	CM12	IGF-1	
+directional_measured_universe	CM12	IL-10	1.0
+directional_measured_universe	CM12	IL-11	
+directional_measured_universe	CM12	IL-12	0.01833715343371284
+directional_measured_universe	CM12	IL-13	0.3529073251614717
+directional_measured_universe	CM12	IL-15	1.4975616838777863e-09
+directional_measured_universe	CM12	IL-17A	
+directional_measured_universe	CM12	IL-17B	
+directional_measured_universe	CM12	IL-17D	
+directional_measured_universe	CM12	IL-17E	1.0
+directional_measured_universe	CM12	IL-17F	
+directional_measured_universe	CM12	IL-18	0.00018658165373037605
+directional_measured_universe	CM12	IL-1α	0.01833715343371284
+directional_measured_universe	CM12	IL-1β	0.007963097616496528
+directional_measured_universe	CM12	IL-2	0.17113913190601304
+directional_measured_universe	CM12	IL-21	1.0
+directional_measured_universe	CM12	IL-22	
+directional_measured_universe	CM12	IL-23	0.31368954374756614
+directional_measured_universe	CM12	IL-24	
+directional_measured_universe	CM12	IL-27	
+directional_measured_universe	CM12	IL-3	0.003369309750930634
+directional_measured_universe	CM12	IL-31	1.0
+directional_measured_universe	CM12	IL-33	0.11305535459150354
+directional_measured_universe	CM12	IL-36Ra	
+directional_measured_universe	CM12	IL-36α	0.6522431605600051
+directional_measured_universe	CM12	IL-4	0.26063992026934213
+directional_measured_universe	CM12	IL-5	1.0
+directional_measured_universe	CM12	IL-7	0.0009864433473395497
+directional_measured_universe	CM12	IL-9	
+directional_measured_universe	CM12	LIF	0.0009864433473395497
+directional_measured_universe	CM12	LT-α1/β2	1.0
+directional_measured_universe	CM12	LT-α2/β1	
+directional_measured_universe	CM12	Leptin	
+directional_measured_universe	CM12	M-CSF	1.0
+directional_measured_universe	CM12	Noggin	
+directional_measured_universe	CM12	OSM	
+directional_measured_universe	CM12	PRL	0.3529073251614717
+directional_measured_universe	CM12	PSPN	
+directional_measured_universe	CM12	RANKL	
+directional_measured_universe	CM12	SCF	
+directional_measured_universe	CM12	TGF-β1	
+directional_measured_universe	CM12	TL1A	
+directional_measured_universe	CM12	TNF-α	0.18145355707835872
+directional_measured_universe	CM12	TPO	
+directional_measured_universe	CM12	TRAIL	
+directional_measured_universe	CM12	TSLP	
+directional_measured_universe	CM12	VEGF	
+directional_measured_universe	CM13	4-1BBL	0.0006427876195701742
+directional_measured_universe	CM13	APRIL	
+directional_measured_universe	CM13	AdipoQ	1.0
+directional_measured_universe	CM13	BAFF	1.0
+directional_measured_universe	CM13	C5a	
+directional_measured_universe	CM13	CD30L	
+directional_measured_universe	CM13	CD40L	0.7729767847163427
+directional_measured_universe	CM13	CT-1	
+directional_measured_universe	CM13	EGF	
+directional_measured_universe	CM13	FGF-β	
+directional_measured_universe	CM13	FLT3L	
+directional_measured_universe	CM13	FasL	1.0
+directional_measured_universe	CM13	G-CSF	
+directional_measured_universe	CM13	GITRL	
+directional_measured_universe	CM13	GM-CSF	1.9397656076682572e-06
+directional_measured_universe	CM13	HGF	
+directional_measured_universe	CM13	IFN-α1	1.8194143251863096e-16
+directional_measured_universe	CM13	IFN-β	4.87463932661622e-16
+directional_measured_universe	CM13	IFN-γ	5.3595980121633275e-09
+directional_measured_universe	CM13	IFN-ε	2.957675119635729e-08
+directional_measured_universe	CM13	IFN-κ	2.4206996387788305e-08
+directional_measured_universe	CM13	IFN-λ2	
+directional_measured_universe	CM13	IGF-1	
+directional_measured_universe	CM13	IL-10	3.601035902815723e-08
+directional_measured_universe	CM13	IL-11	0.5071607589284935
+directional_measured_universe	CM13	IL-12	1.0
+directional_measured_universe	CM13	IL-13	
+directional_measured_universe	CM13	IL-15	5.8868132280872114e-05
+directional_measured_universe	CM13	IL-17B	
+directional_measured_universe	CM13	IL-17E	0.003257633390267462
+directional_measured_universe	CM13	IL-17F	
+directional_measured_universe	CM13	IL-18	1.1054800028617445e-05
+directional_measured_universe	CM13	IL-19	
+directional_measured_universe	CM13	IL-1Ra	
+directional_measured_universe	CM13	IL-1α	0.1424935498859776
+directional_measured_universe	CM13	IL-1β	1.0
+directional_measured_universe	CM13	IL-2	0.0008100630569044854
+directional_measured_universe	CM13	IL-20	
+directional_measured_universe	CM13	IL-21	
+directional_measured_universe	CM13	IL-22	
+directional_measured_universe	CM13	IL-23	
+directional_measured_universe	CM13	IL-24	
+directional_measured_universe	CM13	IL-27	0.088225842168434
+directional_measured_universe	CM13	IL-3	1.0
+directional_measured_universe	CM13	IL-30	
+directional_measured_universe	CM13	IL-33	0.1398804071851005
+directional_measured_universe	CM13	IL-36α	0.20066928931392777
+directional_measured_universe	CM13	IL-4	8.880699943068486e-12
+directional_measured_universe	CM13	IL-5	0.7729767847163427
+directional_measured_universe	CM13	IL-6	
+directional_measured_universe	CM13	IL-7	5.392618377104629e-16
+directional_measured_universe	CM13	IL-9	
+directional_measured_universe	CM13	IL-Y	
+directional_measured_universe	CM13	LIF	
+directional_measured_universe	CM13	LIGHT	
+directional_measured_universe	CM13	LT-α1/β2	
+directional_measured_universe	CM13	LT-α2/β1	
+directional_measured_universe	CM13	M-CSF	1.0
+directional_measured_universe	CM13	NP	
+directional_measured_universe	CM13	Noggin	
+directional_measured_universe	CM13	OSM	0.7357534301242955
+directional_measured_universe	CM13	OX40L	
+directional_measured_universe	CM13	PSPN	
+directional_measured_universe	CM13	RANKL	0.0025101565074208843
+directional_measured_universe	CM13	SCF	0.807134051129598
+directional_measured_universe	CM13	TGF-β1	0.002741698311205855
+directional_measured_universe	CM13	TL1A	1.0
+directional_measured_universe	CM13	TNF-α	1.9397656076682572e-06
+directional_measured_universe	CM13	TPO	
+directional_measured_universe	CM13	TRAIL	1.0
+directional_measured_universe	CM13	TSLP	1.0
+directional_measured_universe	CM13	TWEAK	
+directional_measured_universe	CM13	VEGF	
+directional_measured_universe	CM14	4-1BBL	1.0
+directional_measured_universe	CM14	AdipoQ	
+directional_measured_universe	CM14	BAFF	
+directional_measured_universe	CM14	C5a	
+directional_measured_universe	CM14	CD40L	2.3570567060236357e-06
+directional_measured_universe	CM14	CT-1	0.22119126342346612
+directional_measured_universe	CM14	Decorin	
+directional_measured_universe	CM14	EGF	0.0009285823910828375
+directional_measured_universe	CM14	FGF-β	
+directional_measured_universe	CM14	FLT3L	
+directional_measured_universe	CM14	FasL	
+directional_measured_universe	CM14	G-CSF	
+directional_measured_universe	CM14	GDNF	
+directional_measured_universe	CM14	GITRL	
+directional_measured_universe	CM14	GM-CSF	0.06255712423696386
+directional_measured_universe	CM14	HGF	
+directional_measured_universe	CM14	IFN-α1	2.8287801965395423e-18
+directional_measured_universe	CM14	IFN-β	1.2954805640502986e-15
+directional_measured_universe	CM14	IFN-γ	6.747122354027821e-13
+directional_measured_universe	CM14	IFN-ε	0.0018712509576027105
+directional_measured_universe	CM14	IFN-κ	5.214523428176095e-05
+directional_measured_universe	CM14	IFN-λ2	
+directional_measured_universe	CM14	IGF-1	
+directional_measured_universe	CM14	IL-10	4.2259774301564865e-05
+directional_measured_universe	CM14	IL-11	
+directional_measured_universe	CM14	IL-12	0.007791731309538417
+directional_measured_universe	CM14	IL-13	0.10413018188756798
+directional_measured_universe	CM14	IL-15	3.095884256377405e-16
+directional_measured_universe	CM14	IL-17A	
+directional_measured_universe	CM14	IL-17B	
+directional_measured_universe	CM14	IL-17D	
+directional_measured_universe	CM14	IL-17E	0.0190147015675476
+directional_measured_universe	CM14	IL-17F	
+directional_measured_universe	CM14	IL-18	7.80703954966866e-08
+directional_measured_universe	CM14	IL-1α	1.023966657851794e-06
+directional_measured_universe	CM14	IL-1β	9.592225291977136e-05
+directional_measured_universe	CM14	IL-2	0.0015496389352417715
+directional_measured_universe	CM14	IL-21	7.837495506131737e-14
+directional_measured_universe	CM14	IL-22	
+directional_measured_universe	CM14	IL-23	0.5217216306526122
+directional_measured_universe	CM14	IL-24	
+directional_measured_universe	CM14	IL-27	
+directional_measured_universe	CM14	IL-3	0.37078662138516044
+directional_measured_universe	CM14	IL-31	0.11812168417287254
+directional_measured_universe	CM14	IL-33	0.0009285823910828375
+directional_measured_universe	CM14	IL-36Ra	
+directional_measured_universe	CM14	IL-36α	8.121343437314893e-11
+directional_measured_universe	CM14	IL-4	0.22119126342346612
+directional_measured_universe	CM14	IL-5	0.002735570521502216
+directional_measured_universe	CM14	IL-7	0.0018712509576027105
+directional_measured_universe	CM14	IL-9	
+directional_measured_universe	CM14	LIF	0.322025537731855
+directional_measured_universe	CM14	LT-α1/β2	0.22736116474477938
+directional_measured_universe	CM14	LT-α2/β1	
+directional_measured_universe	CM14	Leptin	
+directional_measured_universe	CM14	M-CSF	3.50644164209972e-06
+directional_measured_universe	CM14	Noggin	
+directional_measured_universe	CM14	OSM	
+directional_measured_universe	CM14	PRL	0.14970031517189747
+directional_measured_universe	CM14	PSPN	
+directional_measured_universe	CM14	RANKL	
+directional_measured_universe	CM14	SCF	
+directional_measured_universe	CM14	TGF-β1	
+directional_measured_universe	CM14	TL1A	
+directional_measured_universe	CM14	TNF-α	1.025843190846501e-08
+directional_measured_universe	CM14	TPO	
+directional_measured_universe	CM14	TRAIL	
+directional_measured_universe	CM14	TSLP	
+directional_measured_universe	CM14	VEGF	

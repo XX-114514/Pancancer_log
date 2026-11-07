@@ -1,0 +1,13 @@
+{
+  "status": "PASS_canonical_IL17E_IL25_alias_review_no_DE_or_enrichment_refit",
+  "UTC": "2026-11-07T06:01:21.527233+00:00",
+  "primary_NCBI_HGNC_source": "https://www.ncbi.nlm.nih.gov/gene/64806",
+  "canonical_IL25_measured_in_all13_source_common_input": false,
+  "n_original_subunit_edges": 38,
+  "n_alias_added_edges": 0,
+  "n_reviewed_subunit_edges": 38,
+  "original_outputs_preserved": true,
+  "n_DE_or_enrichment_models_rerun": 0,
+  "direction_semantics": "up/down refer to the gene-signature direction in cytokine perturbation; down-signature concordance is not proof of decreased cytokine activity",
+  "causal_or_protein_claim": false
+}

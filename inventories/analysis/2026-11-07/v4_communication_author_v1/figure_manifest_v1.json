@@ -1,0 +1,22 @@
+{
+  "status": "PASS_assistant_visual_review_after_legend_overlap_correction",
+  "UTC": "2026-11-07T06:07:08.058304+00:00",
+  "data_source": "completed_global_response_v1/complete.json",
+  "figures": [
+    {
+      "name": "global_CM_candidate_CCI.png",
+      "bytes": 209780,
+      "sha256": "acf2569b910e73cab59620a6ad34c129adf8c86d58e3c9d09d6d77e7ef51a2be"
+    },
+    {
+      "name": "CM_response_branch_comparison.png",
+      "bytes": 157536,
+      "sha256": "48135827aea11bf7a170486c0528870f38f0941b0810dbfa88b6a9af1a00c7c3"
+    }
+  ],
+  "contains_patient_or_cell_or_spot_rows": false,
+  "family_scope": "all14 originalCM; empty networks NA; original and alternative response definitions separate",
+  "figure_meaning": "global pooled expression candidates / cell-level response diagnostics, not full HighLow or spatial validation",
+  "renderer_sha256": "e0a39ba1667858909bd861dbd9336d8e0dad4fc845f119b7bc9eb0be979b8a63",
+  "ordered_pair_orientation_note": "A|B order must not be treated as ligand-to-receptor biological signaling direction"
+}

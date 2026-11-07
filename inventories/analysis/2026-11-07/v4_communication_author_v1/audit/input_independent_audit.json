@@ -1,0 +1,13 @@
+{
+  "status": "PASS_independent_sameV4_cells_labels_CMT_and_native_count_normalization",
+  "UTC": "2026-11-07T05:35:29.537937+00:00",
+  "n_cells": 560871,
+  "n_labels": 45,
+  "n_samples": 164,
+  "n_CM": 14,
+  "n_independent_original_count_rows_checked": 245,
+  "maximum_expression_error": 2.991899066273618e-07,
+  "n_common_measured_genes": 14051,
+  "n_global_cells": 38711,
+  "source_sample_as_patient_claim": false
+}

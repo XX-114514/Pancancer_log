@@ -1,0 +1,20 @@
+{
+  "status": "PASS_independent_formal_global_and_direct_DE_enrichment_and_producer_expression_readback",
+  "UTC": "2026-11-07T05:57:39.601145+00:00",
+  "n_global_cells": 38711,
+  "n_global_labels": 45,
+  "iterations": 1000,
+  "n_candidate_cellpair_LR_events": 57450,
+  "n_database_interactions": 2923,
+  "n_full_component_measurable_interactions": 1356,
+  "n_CPDB_retained_interactions": 1356,
+  "n_retained_with_incomplete_component_measurement": 0,
+  "n_CM_member_DE_rows_audited": 295071,
+  "n_CM_member_DE_models_audited": 21,
+  "maximum_DE_P_error": 5.639050043165783e-07,
+  "maximum_DE_log2FC_error": 1.892654488244716e-06,
+  "hypergeometric_maximum_error": 1.1102230246251565e-16,
+  "n_production_response_subunit_edges_checked": 38,
+  "full25_CMT_family_complete": false,
+  "independent_patient_or_contact_or_causal_or_spatial_CM_validation_claim": false
+}

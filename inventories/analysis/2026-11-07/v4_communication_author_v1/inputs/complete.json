@@ -1,0 +1,21 @@
+{
+  "status": "SAME_V4_COMMUNICATION_INPUTS_PREPARED_PENDING_INDEPENDENT_AUDIT",
+  "UTC": "2026-11-07T05:35:13.402489+00:00",
+  "seconds": 469.05814909935,
+  "n_cells": 560871,
+  "n_samples": 164,
+  "n_sources": 13,
+  "n_original_CM": 14,
+  "n_labels": 45,
+  "n_common_measured_genes": 14051,
+  "n_CPDB_measured_genes": 939,
+  "n_global_cells": 38711,
+  "global_cap": 1000,
+  "normalization": "full native library total 1e4 then log1p; only genes measured in all retained 13 sources admitted",
+  "source_or_label_or_CM_changed": false,
+  "patient_independence_certified": false,
+  "annotation_SHA256": "2a4bc82cb495d0fc2ffb40ecda6b1cbb53802eb2bf87efd2392746371653244c",
+  "base_H_SHA256": "7fffe83e629a55edbf60b61cf846eb972c80087aa11e213644fdec212302ca5f",
+  "selected_rows_SHA256": "f2d7456ff1ac59cb4cad5f26a68b279f2e5d7225819cd7e9fb3c4caecb734229",
+  "global_input_SHA256": "058263efc073dd5d37b0b852f77516213386d3bc3204198605837d6111f4c13e"
+}

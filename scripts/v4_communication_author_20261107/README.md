@@ -9,3 +9,7 @@
 CellChat独立算法和直接Scanpy/Immune Dictionary响应同时保留；超几何为等价重建、签名映射/方向/背景与CM最小q的含义分开。主空间结果尚未全范围完成，通讯执行是预登记探索，不自动获得高共定位CM主结论资格。
 
 模型、h5ad、mtx、个体行、患者/样本桥与完整日志留私有。此目录是可审阅科学代码，不包含私有输入，不能仅凭本代码宣称Cloud已复算真实结果。
+
+实际使用`audit_V4_CPDB_v2.py`：先核对唯一互作ID集合完全相同，再将means/significant_means按pvalues的ID顺序重排；原版同序assert失败保留。`finite_V4_communication_controller_v2.py`复用成功输入审核和技术小试，重新审核既有小试输出后从正式global接续，不重跑已成功科学阶段、不改参数；见检查点的`execution_code_recovery_v2.json`。初始冻结code_manifest保留，恢复另行绑定SHA。
+
+`audit_completed_global_response.py`独立审核真实全局资源覆盖、全部可用身份的直接Scanpy DE/超几何/BH和生产表达；`review_cytokine_symbol_aliases.py`只做IL17E/IL25 canonical符号审阅、不重跑DE；两者部署SHA另在聚合审核目录绑定。`render_completed_communication.py`在本机读取公开聚合目录，设置`CCI_REVIEW_ROOT`后生成两张静态科学图，不访问私有数据；输出图已独立视觉检查，初版图例遮挡修正后重新渲染。

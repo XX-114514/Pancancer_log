@@ -1,0 +1,11 @@
+{
+  "status": "PASS_independent_CPDB_hash_ID_pair_scope_p_range_and_significant_mean_readback",
+  "UTC": "2026-11-07T05:46:02.399428+00:00",
+  "tag": "global",
+  "n_cellpairs": 2025,
+  "n_retained_database_interactions": 1356,
+  "n_candidate_cellpair_LR_events": 57450,
+  "iterations": 1000,
+  "pilot_not_scientific_result": false,
+  "patient_or_contact_or_causal_claim": false
+}

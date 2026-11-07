@@ -1,0 +1,197 @@
+source_CM	target_CM	n_identity_pairs	mean_candidate_CCI	meaning
+CM01	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM03	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM04	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM06	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM07	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM08	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM09	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM10	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM11	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM12	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM13	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM01	CM14	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM03	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM04	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM06	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM07	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM08	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM09	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM10	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM11	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM12	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM13	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM02	CM14	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM03	9	42.888888888888886	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM04	12	38.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM06	6	27.833333333333332	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM07	6	61.166666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM08	9	34.55555555555556	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM09	15	56.06666666666667	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM10	6	55.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM11	12	35.916666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM12	6	27.833333333333332	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM13	12	37.083333333333336	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM03	CM14	6	27.833333333333332	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM03	12	38.166666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM04	16	35.4375	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM06	8	26.625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM07	8	53.625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM08	12	33.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM09	20	49.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM10	8	48.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM11	16	31.6875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM12	8	26.625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM13	16	32.625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM04	CM14	8	26.625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM03	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM04	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM06	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM07	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM08	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM09	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM10	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM11	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM12	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM13	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM05	CM14	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM03	6	30.166666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM04	8	29.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM06	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM07	4	42.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM08	6	29.166666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM09	10	39.9	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM10	4	36.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM11	8	26.375	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM12	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM13	8	26.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM06	CM14	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM03	6	78.66666666666667	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM04	8	69.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM06	4	45.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM07	4	119.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM08	6	54.833333333333336	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM09	10	104.4	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM10	4	103.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM11	8	65.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM12	4	45.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM13	8	67.625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM07	CM14	4	45.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM03	9	34.111111111111114	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM04	12	32.166666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM06	6	28.666666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM07	6	45.166666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM08	9	33.44444444444444	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM09	15	44.06666666666667	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM10	6	41.333333333333336	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM11	12	29.833333333333332	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM12	6	28.666666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM13	12	30.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM08	CM14	6	28.666666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM03	15	61.733333333333334	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM04	20	55.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM06	10	39.2	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM07	10	93.8	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM08	15	47.53333333333333	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM09	25	82.8	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM10	10	79.9	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM11	20	52.4	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM12	10	39.2	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM13	20	53.15	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM09	CM14	10	39.2	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM03	6	53.166666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM04	8	47.625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM06	4	33.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM07	4	80.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM08	6	43.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM09	10	71.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM10	4	68.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM11	8	45.875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM12	4	33.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM13	8	46.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM10	CM14	4	33.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM03	12	40.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM04	16	36.6875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM06	8	26.875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM07	8	60.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM08	12	32.166666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM09	20	53.9	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM10	8	52.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM11	16	37.5625	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM12	8	26.875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM13	16	34.875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM11	CM14	8	26.875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM03	6	30.166666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM04	8	29.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM06	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM07	4	42.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM08	6	29.166666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM09	10	39.9	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM10	4	36.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM11	8	26.375	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM12	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM13	8	26.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM12	CM14	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM03	12	42.416666666666664	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM04	16	38.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM06	8	30.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM07	8	62.875	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM08	12	36.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM09	20	57.35	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM10	8	54.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM11	16	35.4375	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM12	8	30.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM13	16	37.5	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM13	CM14	8	30.125	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM01	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM02	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM03	6	30.166666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM04	8	29.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM05	0		global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM06	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM07	4	42.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM08	6	29.166666666666668	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM09	10	39.9	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM10	4	36.0	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM11	8	26.375	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM12	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM13	8	26.25	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation
+CM14	CM14	4	26.75	global expression-specificity candidates, inclusive memberships; not CM environment or interaction validation

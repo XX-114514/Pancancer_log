@@ -1,0 +1,18 @@
+{
+  "status": "PASS_deployed_ID_alignment_recovery_code_SHA_readback",
+  "new_files": [
+    {
+      "name": "audit_V4_CPDB_v2.py",
+      "sha256": "98e0cebc16df0b8afc091f52e2390a3e36f0f8b1eee74edf18e554c40837662b",
+      "bytes": 2270
+    },
+    {
+      "name": "finite_V4_communication_controller_v2.py",
+      "sha256": "6ea54f45842dda22e0432395847a006aa01daf372d2bc41b22a0eadb22ef02c5",
+      "bytes": 3286
+    }
+  ],
+  "scientific_parameters_or_original_inputs_changed": false,
+  "original_failed_audit_preserved": true,
+  "successful_preparation_input_audit_and_pilot_reused": true
+}
