@@ -39,7 +39,7 @@
     "name": "audit_score_Visium.py",
     "sha256": "c3f6669950e870d6224ce50b991363d594e65d8113ab06eaa988f3a4e0be3da5",
     "bytes": 7739,
-    "status": "prepared_or_executing; actual execution state in checkpoint receipts"
+    "status": "superseded before any real score: trusted own-producer loss object-array dtype requires v2 numeric reader"
   },
   {
     "name": "summarize_Visium_validation.py",
@@ -76,5 +76,83 @@
     "sha256": "ee9f5e01b12c7b673352acd427c5d37ca1230b29c63931a3606e72d652646291",
     "bytes": 1338,
     "status": "registered finite private report output after final real audit; not yet executed"
+  },
+  {
+    "name": "audit_fitted_reference.py",
+    "sha256": "d0cf5bd1f2a0a807a176a00c6cd9777f9c54b393a53018969cb1fefcd864fa08",
+    "bytes": 2382,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "audit_fitted_reference_v2.py",
+    "sha256": "d0f1b7a70d96a79d506c2eff9837180085e58953371bba0bc46d67d3f740f14e",
+    "bytes": 2426,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "audit_score_Visium_v2.py",
+    "sha256": "842bc261b9f1a65e84042138e72adc8e190fc65ad2dba8fa1b706a3eaf58cd7e",
+    "bytes": 7781,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "fit_CellCharter_Visium.py",
+    "sha256": "35b887dabb20b3285bf84f144ac8ec1b833c78df69896de8ea4bc10d5d635bda",
+    "bytes": 5695,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "audit_CellCharter_Visium.py",
+    "sha256": "bda1a603ccba1f3714fb36b2aa9c2b909677b98f6621d90a79148bd9b37d072c",
+    "bytes": 3193,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "summarize_CellCharter_Visium.py",
+    "sha256": "c214f4f3c3b35cdd20598adf2d22b9baaa13b95b5755b1d4e0bae02fd6bbd2a8",
+    "bytes": 5104,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "audit_CellCharter_cohort.py",
+    "sha256": "15e5496c87e1f91898299186b31fc2e85d58134c9926b614722dc05059d7c7ea",
+    "bytes": 2959,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "finite_CellCharter_controller.py",
+    "sha256": "8ddc34e8a20a8d324ec59bd9aa553b7e20ad25895fb18745929fa94111857007",
+    "bytes": 2667,
+    "status": "see actual milestone checkpoint; no science completion inferred from code installation"
+  },
+  {
+    "name": "fit_CellCharter_Visium_v2.py",
+    "sha256": "8f04283e875c44c66e6ff6d5df7d81eb944d451fa5e7429362d18d8596367de2",
+    "bytes": 6137,
+    "status": "registered qualified niche-only recovery; successful original fits reused; actual status in checkpoint"
+  },
+  {
+    "name": "audit_CellCharter_Visium_v2.py",
+    "sha256": "80c2f9feaf5973b9016872804af27ff8131fac210019a7993320fa84d56faf8a",
+    "bytes": 3583,
+    "status": "registered qualified niche-only recovery; successful original fits reused; actual status in checkpoint"
+  },
+  {
+    "name": "summarize_CellCharter_Visium_v2.py",
+    "sha256": "01bad0bd688e9bd63f90e216d5daa884717118e1d24d9a9c48719a042faa8b13",
+    "bytes": 6205,
+    "status": "registered qualified niche-only recovery; successful original fits reused; actual status in checkpoint"
+  },
+  {
+    "name": "audit_CellCharter_cohort_v2.py",
+    "sha256": "a86858ab9b5c5c469be0860c1371eadf079651f2c6808242a2d7f0902efc6a91",
+    "bytes": 3179,
+    "status": "registered qualified niche-only recovery; successful original fits reused; actual status in checkpoint"
+  },
+  {
+    "name": "finite_CellCharter_recovery_controller.py",
+    "sha256": "1efd55251c135ffe536c343c486fba2c5209dc450770925347c64b7b2a9eb2c1",
+    "bytes": 4078,
+    "status": "registered qualified niche-only recovery; successful original fits reused; actual status in checkpoint"
   }
 ]

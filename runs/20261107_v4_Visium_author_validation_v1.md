@@ -14,4 +14,10 @@ GPU环境真实导入和CUDA矩阵乘法已通过，旧CPU环境未使用。首�
 
 复现：Python准备/输入审核/资格/汇总脚本通过`runpy.run_path`注入`PROJECT_ROOT: Path`；`cell2location_V4_v2.py RUN_ROOT reference|section [SECTION_CODE]`；`score_author_Visium.R RUN_ROOT BASE_CM_RUN SECTION_CODE`；`audit_score_Visium.py`同样参数。`BASE_CM_RUN`为原主v2。作者R从固定commit获取并放入`${RUN_ROOT}/author/CoVarNet.R`。不要把失败的原devices版本当已接受生产版本；实际阶段是否完成以较晚真实终态为准。
 
-当前为生产中，尚无真实全范围空间结论，亦未完成CellCharter、独立身份、病例层、接触或机制验证。
+## 后续真实里程碑（UTC）
+
+01:29:45参考完成、01:29:49进程exit0：250epoch、1000posterior、50标签/12,729筛选后基因，签名SHA`29228fb77ef70c7779a104e5b82cd5809c5d2f6eedd7980f5a35219c5f32ed54`。01:33:10独立读回审核通过，全部有限/非负，ELBO初306,178,976、末264,288,208，末20轮相对前20轮均值变化−0.0141%；该收敛诊断不单独授予形式验收。审核器初版不能直接读pandas object类型npy，改成只读本任务自产可信数组后显式转float，原文件/代码保留；未重跑任何模型。逐切片审核同步使用v2读取器，已完成留出重放复用，原评分等待器被精确身份核验后替换，GPU模型未中断。
+
+01:30:16留出诊断结束，3原生基因面板，每面板完整50标签。01:37:11快照两个空间模型正在运行、0完成/0失败；原文指标/空间结论还未产生。CM03 B/内皮/NK的F1范围0.811–0.843/0.787–0.818/0.637–0.670，NK与其他NK/T混淆须保留；不是来源留出或独立身份真值。
+
+01:36启动CellCharter CPU独立队列，固定表达/位置参数见方法与配置，全部53请求不按效果选择。首个HVG内零计数spot引起的训练前失败保留；单worker有限恢复只对该原因建立非零HVG合格视图，低信息spot保留原轴/主模型，其他成功模型不重拟合。主分支、旧niche与合格niche视图分别登记，最终正交汇总逻辑路径为`${RUN_ROOT}/niches_final_v2`，需完整独立审核后审阅。当前为生产中，尚无真实全范围空间结论，独立身份、病例层、接触和机制验证未完成。

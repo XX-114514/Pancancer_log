@@ -14,3 +14,7 @@
 准备/审核/资格/汇总通过`runpy.run_path`注入`PROJECT_ROOT: pathlib.Path`；GPU脚本参数为`RUN_ROOT reference`或`RUN_ROOT section SECTION_CODE`；R指标及独立分数审核接收`RUN_ROOT BASE_CM_RUN SECTION_CODE`。私有`section_jobs_PRIVATE.json`绑定已资格化的实际输入，不能擅自换原始矩阵仍称同一运行。
 
 运行版本v2保留原50标签（5个上皮仅背景参考）、原45 CM背景节点。输入参考已通过不等于模型/评分/总体审核已结束。任务PID、连接、物理服务器路径、矩阵/模型、逐细胞/spot/患者行和完整日志不公开。有限controller仅串接科学阶段，没有自动发消息、自动公开推送或长期计划任务。
+
+后续：`audit_fitted_reference_v2.py`已对真实250轮/50标签签名独立读回通过；首版读本任务自产pandas object类型npy失败，v2明确转float，原文件与失败代码保留。逐切片正式审核改用`audit_score_Visium_v2.py`同一读取兼容修复，主模型/科学参数不改。
+
+`fit_CellCharter_Visium.py`、`audit_CellCharter_Visium.py`和有限controller为独立表达—位置niche分支，不用CM效应训练。v2 fitter/audit仅为首版训练前零HVG spot失败建立合格niche视图；低信息spot仍保留原轴/主模型。有限recovery复用成功模型、只重试已识别的该类训练前失败；`summarize_CellCharter_Visium_v2.py`/`audit_CellCharter_cohort_v2.py`以实际接受分支和合格spot对齐，全范围新汇总写入`niches_final_v2`。原分支/失败/代码和原53请求均保留。模型/指标/审核的执行状态以较晚检查点为准。

@@ -39,4 +39,12 @@
 
 按来源汇总全部14CM×两posterior×两指标及全部原网络边，保留请求/拟合/审核/可估计分母。重复患者与技术重复未重新完整认证，不按spot或切片扩充独立患者做P值；活动来源、技术、组织区室和密度仍可能混杂。空间spot共处不等于细胞接触、通讯或因果。
 
-原文的CellCharter正交niche验证尚未执行，不因两项主指标完成而称整个正交验证已通过。CM03仍需身份近邻控制、独立血管邻域背景和状态/机制增量。若参考不能区分标签，即使原始分数高，也须明确身份测量限制。
+## 原文CellCharter正交分支
+
+已验证服务器已有CellCharter0.3.7/scvi-tools1.4.1/Squidpy1.6.3专用环境，无共享包变更。按原文每切片独立执行表达与位置niche；依据[官方教程](https://cellcharter.readthedocs.io/en/latest/notebooks/cosmx_human_nsclc.html)、[聚合API](https://cellcharter.readthedocs.io/en/stable/generated/cellcharter.gr.aggregate_neighbors.html)及[AutoK接口](https://cellcharter.readthedocs.io/en/stable/generated/cellcharter.tl.ClusterAutoK.html)，固定本轮实现选择：原生raw counts的非MT/总计数≥3基因、Seurat-v3 top≤2,000 HVG；每切片scVI latent10、最多400轮且early stopping、90/10训练验证划分、batch128。仅用CPU，与主GPU模型分开；这不是把最大400轮强称全部400轮。
+
+Visium niche构建6近邻图，聚合自身及1/2/3层平均特征成为40维，AutoK候选K2–10、最多10轮、稳定性容差0.001；已安装版本还拟合K1/11边界辅助，不把辅助K当可选最终K。原文未报告上述全部细节，本轮明确登记为实现选择，在CM真实空间效应前冻结，不冒称作者精确空间对象复现。**niche图6近邻与作者聚集评分60近邻职责不同，不能混淆。** 不输入V4细胞标签、CM成员、去卷积丰度/活动或临床结局来训练niche。
+
+若所选HVG内有零计数spot，则其niche身份不可评估；初次训练前失败保留，恢复仅对这一类失败保留非零HVG的合格niche视图，原轴/主模型不改。逐spot纳入记录留私有，公开只按来源汇总前后数量；成功模型复用，其他失败不盲目重复。独立审核按最短有向图距离重算1/2/3层特征、6近邻距离、稳定性最高K与保存损失。模型完成后与主模型按实际合格spot索引对齐；报告全14CM×mean/q05的活动组间方差比例、活动峰niche的最弱成员富集和成员峰是否一致，均为描述性投射，不是新P值或独立亚型真值。
+
+正交分支启动和代码注册不等于已通过全范围验收。CM03仍需身份近邻控制、独立血管邻域背景和状态/机制增量。若参考不能区分标签，即使原始分数高，也须明确身份测量限制。

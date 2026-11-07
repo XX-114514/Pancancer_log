@@ -8,3 +8,5 @@
 
 [检查点](../../../inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/README.md) · [run](../../../runs/20261107_v4_Visium_author_validation_v1.md) · [任务日志](../../codex/2026/2026-11-07_v4-visium-author-validation.md)。失败及兼容修正保留；矩阵和个体行私有，公开汇总与通用代码。
 公开检查点内容提交`7cb1cab2e2f6a21bc62b76ea9c514cbd6199bb4c`已普通push，独立ls-remote精确核验，见[收据](../../../inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/publication_checkpoint_v1.json)。仓库0错误/1项既有历史警告，新30文件扫描与13份部署代码SHA核对通过。01:28 UTC参考仍实际训练，真实空间结论未产生。
+
+后续01:29:45 UTC／09:29:45 UTC+8参考250轮/1000posterior完成，01:33:10独立读回通过；完整50标签×3面板留出诊断交付，CM03 NK F1约0.64–0.67且与其他NK/T混淆，不能当独立身份真值。01:42:08 UTC主模型两张仍拟合、0完成/0失败；CellCharter独立CPU分支三张完成且独立审核通过，另保留一张HVG零信息导致的训练前失败及限定恢复。26份部署代码SHA一致；主模型/原CM/标签不改，全范围空间和机制结论仍待。

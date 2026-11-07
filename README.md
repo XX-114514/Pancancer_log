@@ -1,6 +1,6 @@
 # PanCancer
 
-> **当前V4全部CM的Visium检验已进入真实GPU生产（2026-11-07，尚无最终结论）**：[输入、运行状态与方法](inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/README.md)。3来源53张合格人类切片；同50标签参考45,385训练＋9,000留出，独立输入核验通过。按原文N5/alpha20进行cell2location，接续全部14CM的共定位及60近邻有向Moran与独立审核；不能把运行中检查点称空间验证成功。
+> **当前V4全部CM的Visium检验生产中（2026-11-07，尚无最终结论）**：[输入、运行状态、留出诊断与方法](inventories/analysis/2026-11-07/v4_Visium_author_validation_v1/README.md)。3来源53张合格人类切片；同50标签参考已完成250轮回归/1,000后验并独立核验，前两张切片正在GPU拟合。全部14CM将完整比较原文共定位/60近邻有向Moran，并接独立表达—空间CellCharter niche。XCL1 NK留出重放F1约0.64–0.67，仍有近邻身份混淆；不能把运行中或同标签诊断称空间验证成功。
 
 > **全部V4 CM比较与选择（2026-11-07）**：[14模块完整取舍、来源/分母及重拟合证据](inventories/analysis/2026-11-07/v4_CM_selection_v1/README.md)。新增540次受控nsNMF、252因子对应独立核验；优先验证CM03（IGHD B—PECAM1内皮—XCL1 NK），CM06备选。CM09的SPP1因子换种子不稳，CM11受组织/单节点分母影响；当前没有模块完成独立空间与机制验证。
 

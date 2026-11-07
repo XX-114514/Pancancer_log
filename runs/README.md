@@ -1,4 +1,4 @@
-[V4 CM的Visium生产](20261107_v4_Visium_author_validation_v1.md)：53张准入、同50标签参考输入审核通过，真实GPU参考回归与有限接续；全14CM真实空间结论尚待。
+[V4 CM的Visium生产](20261107_v4_Visium_author_validation_v1.md)：53张准入，参考250轮/1000posterior及50标签×3面板留出诊断已完成并独立审核；主切片GPU拟合、CellCharter CPU正交分支有限接续，首批5张niche技术审核通过，全14CM真实空间结论尚待。
 
 [V4全部14CM评估与选择](20261107_v4_all_CM_selection_v1.md)：额外540次、252因子对应及全部来源/分母独立核验；CM03优先、CM06备选，CM09/11问题单列。
 

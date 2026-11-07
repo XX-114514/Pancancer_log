@@ -1,0 +1,15 @@
+{
+  "status": "PASS_independent_fitted_reference_50_labels_250_epoch_finite_signatures_saved_loss_and_panel_scope",
+  "UTC": "2026-11-07T01:33:10.414226+00:00",
+  "n_reference_labels": 50,
+  "n_model_genes": 12729,
+  "epochs_readback": 250,
+  "posterior_samples_requested_by_executed_code": 1000,
+  "ELBO_initial": 306178976.0,
+  "ELBO_final": 264288208.0,
+  "ELBO_last20_mean_relative_to_previous20": -0.00014074412613673815,
+  "n_native_gene_panels": 3,
+  "signatures_SHA256": "29228fb77ef70c7779a104e5b82cd5809c5d2f6eedd7980f5a35219c5f32ed54",
+  "posterior_mean_signature_finite_nonnegative": true,
+  "formal_convergence_or_independent_subtype_accuracy_claim": false
+}

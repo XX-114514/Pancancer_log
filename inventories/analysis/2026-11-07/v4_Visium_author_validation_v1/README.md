@@ -1,6 +1,6 @@
 # V4 CM的Visium原文方法检验：生产中
 
-**已通过同V4参考的独立输入审核，GPU参考回归正在运行；53个真实空间模型及最终CM空间验证尚未完成。** 本页是带时间的检查点，不是成功验证报告。对象是2026-11-06 V4 CM01–CM14，优先解释CM03，其余完整对照，原注释/CM定义不改。
+**同V4参考已完成250轮回归/1,000后验并通过独立审核；两张真实空间模型正在GPU拟合，53张全范围及最终CM空间结论尚未完成。** 本页是带时间的检查点，不是成功验证报告。对象是2026-11-06 V4 CM01–CM14，优先解释CM03，其余完整对照，原注释/CM定义不改。
 
 [实际运行状态](runtime_checkpoint_v1.json) · [参考独立核验](audit/reference_input_audit.json) · [原生输入范围](inputs/source_scope_summary.tsv) · [50标签参考覆盖](reference/node_reference_coverage.tsv) · [来源实测资格](reference/source_measurement_qualification.tsv) · [方法](../../../../methods/V4-Visium-CoVarNet-author-validation-20261107.md) · [run](../../../../runs/20261107_v4_Visium_author_validation_v1.md) · [代码](../../../../scripts/v4_visium_author_validation_20261107/)。
 
@@ -9,6 +9,20 @@
 [公开同步收据](publication_checkpoint_v1.json)绑定已独立核验的内容提交；同步成功不表示空间检验已完成。
 
 ## 实际输入范围
+
+较晚里程碑：[01:31参考完成/两张GPU拟合](runtime_checkpoint_v3.json) · [01:37双分支状态](runtime_checkpoint_v4.json) · [拟合参考独立审核](audit/fitted_reference_audit.json) · [全部50标签×3面板留出诊断](reference/all_panel_label_heldout_separability.tsv) · [完整聚合混淆表](reference/all_panel_label_confusion.tsv) · [来源—面板对应](reference/native_gene_panel_source_scope.tsv)。
+
+最新[01:43:33 UTC检查点](runtime_checkpoint_v5.json)：主模型两张仍真实拟合、0完成/0失败；niche原分支4张＋合格恢复1张均通过独立审核。恢复切片的1,863个原spot中仅3个在HVG内零信息，对niche不评估，1,860个完成；原轴/主模型完整保留。见[来源级早期审核汇总](niches/early_independent_audit_by_source.tsv)和[26份部署代码SHA](audit/server_code_binding_v2.json)。这些是技术/表达—空间建模结果，尚无CM最终空间支持结论。
+
+| CM03成员 | 三种面板留出F1范围 | 主要错误去向 |
+|---|---:|---|
+| Bcell_Naive_IGHD | 0.811–0.843 | TCL1A naive B、MS4A1/CD79A B |
+| Endothelial_Blood_PECAM1 | 0.787–0.818 | ACKR1静脉内皮等 |
+| NK_XCL1_CD56bright_XCL1 | 0.637–0.670 | FCGR3A NK、KLRD1/GNLY NK、细胞毒T等 |
+
+每标签有200个留出细胞；这是继承标签的同标签重放，未按来源/患者隔离，不是独立亚型真值或spot去卷积准确率。命名基因在三面板中可测，仍不排除邻近类型混淆。最终须完整保留这些诊断。
+
+CellCharter0.3.7专用环境导入/API与依赖实查通过，独立CPU队列已启动，按切片原生表达scVI→6近邻/3层→AutoK执行，不输入CM标签、丰度、活动或结局。参数在真实CM空间效应前冻结，见[配置](niches/configuration_pre_effect.json)；具体HVG/epoch/K选择是本轮明确实现，不冒称CoVarNet未报告的精确参数。S002因所选HVG内存在零计数spot在训练前失败；有限恢复只对该类失败建立有逐spot记录的niche合格视图，低信息spot仍在原轴和主模型，成功拟合不重复。53请求分母和失败均保留，niche最终以新接受清单和独立审核为准。
 
 | 来源 | 本轮准入切片 | 现有spots | 说明 |
 |---|---:|---:|---|
@@ -36,4 +50,4 @@ GSE238264/GSE301720在本轮已知canonical QC对象位置尚未取得，明确�
 
 同父类随机成员对照、参考谱混淆控制、各基因面板留出同标签重放将与原文分数分开。累计≤对照比例包含并列，不当作P值或严格超过95%的成功率。若类型参考不可区分，即使空间原始分数高也不能认定精确亚型共处。
 
-不把spot当单细胞接触、不按spot扩充患者做检验、不从共变推出通讯机制。原文的CellCharter正交niche步骤尚未执行；本次两项主指标完成也不自动等于完整正交空间验证成功。模型、矩阵、逐spot/细胞/患者表及原始日志私有，公开限汇总、代码和脱敏收据。
+不把spot当单细胞接触、不按spot扩充患者做检验、不从共变推出通讯机制。原文CellCharter正交niche步骤已经启动，尚未全范围验收；两项主指标或niche拟合完成也不自动等于生物学验证成功。模型、矩阵、逐spot/细胞/患者表及原始日志私有，公开限汇总、代码和脱敏收据。

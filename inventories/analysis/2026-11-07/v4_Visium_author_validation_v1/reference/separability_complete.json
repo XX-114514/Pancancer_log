@@ -1,0 +1,11 @@
+{
+  "status": "HELDOUT_SAME_ANNOTATION_SEPARABILITY_DIAGNOSTICS_COMPLETE",
+  "UTC": "2026-11-07T01:30:15.482894+00:00",
+  "n_panels": 3,
+  "n_labels": 50,
+  "n_heldout_cells": 9000,
+  "classifier": "train-only top2000 intercentroid-variance genes; logCP10K, centroid-standardized cosine nearest centroid",
+  "diagnostic_flag": "at least20 heldout cells and F1>=0.5; not a paper rule or proof of deconvolution accuracy",
+  "source_or_patient_blocked_holdout": false,
+  "original_labels_or_CM_changed": false
+}

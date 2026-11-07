@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_BEFORE_CM_SPATIAL_EFFECTS_CPU_NICHE_RUN_REQUEST",
+  "n_sections_requested": 53,
+  "n_clusters_eligible": [
+    2,
+    10
+  ],
+  "max_runs": 10,
+  "convergence_tol": 0.001,
+  "seed": 2026110701,
+  "features": "raw-count seurat_v3 top2000 HVG; per-section scVI latent10, max400 with early stopping, 90/10 split; no CM/outcome input",
+  "graph": "Visium 6NN; three mean neighbor layers plus own expression; distinct from 60NN directed Moran evaluation",
+  "implementation_choices_not_exact_CoVarNet_parameters": true,
+  "reference": "CoVarNet Methods Cellular niches; official CellCharter tutorial and API",
+  "no_automatic_public_push": true
+}
