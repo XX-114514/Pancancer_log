@@ -30,3 +30,6 @@ job COMPLETED（exit 0，41:47，MaxRSS 17 GB）。本地 main 落后 origin；�
 
 ## 建议 commit message
 Cluster 13 subcluster diagnostic: manual label draft and residual-tumour review
+
+## 文字更正（2026-11-08，用户要求）
+更新 methods/tme-annotation-v2-lodi-workflow-20261105.md 的簇13诊断段：子簇10改为管腔祖细胞样，子簇33、18 不再列为中性粒双细胞，计数按复核分类修正，并加更正说明保留原文措辞。未改细胞标签、恶性判定或 CoVarNet v1 范围。
