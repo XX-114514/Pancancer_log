@@ -1,0 +1,65 @@
+sub_r1	cells	non_malignant	uncertain_share	cnv_corr_median	scatomic_tumour_share	top_source_share	manual_label_draft	manual_class	residual_review	evidence
+23	30839	11435	0.629	0.432	0.172	0.089	program_stress_IEG_low_depth	program_mixed	program_no_identity	JUN,FOS,HSPA1A,FOSB,DNAJB1; median genes 852; auto plasma_IgG wrong
+16	22685	6035	0.734	0.502	0.196	0.067	program_stress_IEG	program_mixed	program_no_identity	JUN,EGR1,FOS,DNAJB1,ATF3; auto enteroendocrine wrong
+24	21593	5268	0.756	0.466	0.168	0.071	program_low_depth_ambient	program_mixed	program_no_identity	NEAT1 with discordant MLANA,ALB,PMEL; median genes 626; auto plasma_IgG wrong
+4	26827	5093	0.81	0.477	0.31	0.106	program_ribosomal_glycolytic	program_mixed	program_no_identity	GAPDH,RPLP0,MIF,FTL; auto Kupffer wrong
+3	23267	4867	0.791	0.436	0.308	0.121	program_housekeeping_MHC	program_mixed	program_no_identity	GAPDH,FTL,B2M,HLA-A,LGALS1; auto endometrial wrong
+2	20395	3559	0.825	0.497	0.364	0.07	program_OXPHOS_glycolytic	program_mixed	program_no_identity	GAPDH,COX5B,TPI1,UQCRH; auto endometrial wrong
+17	16886	3020	0.821	0.426	0.289	0.103	program_MHC_interferon	program_mixed	program_no_identity	HLA-A/B/C,CD74,HLA-DRA,IFI27,IFI6; auto macrophage_IL1B wrong
+28	16627	2586	0.844	0.473	0.194	0.114	program_generic_epithelial_LGALS3_CLDN4	program_mixed	program_no_identity	LGALS3,ELF3,CLDN4,S100A6; 33% CRC; organ identity not established; auto colonocyte not supported
+33	12560	2227	0.823	0.581	0.218	0.221	squamous_KRT6A_S100A8_S100A9	tumour_like	likely_residual_tumour	KRT6A 74%,KRT5 69%,S100A8 80%,S100A9 84%,PI3,GJB2; CSF3R 1%,FCGR3B 0%,CXCR2 0%: no neutrophil evidence, auto doublet not supported; 53% HNSCC, CNV corr 0.58
+0	9121	2032	0.777	0.511	0.438	0.173	program_translation_ribosomal	program_mixed	program_no_identity	RPLP0,NPM1,EEF1B2,EEF2; auto enteroendocrine wrong
+31	7669	1634	0.787	0.553	0.279	0.377	squamous_partial_EMT_FN1_INHBA	tumour_like	likely_residual_tumour	FN1,INHBA,TNC,LAMC2,COL17A1,ITGA6; 42% HNSCC; CNV corr 0.55
+7	6236	1600	0.743	0.209	0.575	0.862	prostate_luminal_club_like_WFDC2_TMPRSS2	organ_epithelium	identity_with_flag	PPP1R1B,TMPRSS2,WFDC2,RARRES1,ZG16B; CNV corr 0.21 but scATOMIC tumour 0.58, uncertain 0.74; auto Th17 wrong
+13	8109	1479	0.818	0.555	0.42	0.08	program_proliferation	program_mixed	program_no_identity	TOP2A,UBE2C,BIRC5,MKI67 panel; cycling z 6.06; 34/34 sources; auto endometrial wrong
+19	3421	1266	0.63	0.306	0.051	0.318	colonic_goblet_MUC2_TFF3	organ_epithelium	identity_with_flag	MUC2,TFF3,FCGBP,SPINK4; 8/8 sources; flag driven by uncertain 0.63 and CNV corr 0.31
+30	6229	1219	0.804	0.486	0.12	0.272	program_low_information_MHC_lncRNA	program_mixed	program_no_identity	HLA-A/B,CCSER1,NEAT1,MAPK10; MT 11.5%; auto Treg wrong
+14	6460	1188	0.816	0.603	0.363	0.206	program_hypoxia_glycolysis	program_mixed	program_no_identity	NDRG1,PGK1,SLC2A1,BNIP3; auto endo_tip wrong
+43	6607	755	0.886	0.193	0.86	0.697	breast_luminal_HR_ANKRD30A_ESR1	tumour_like	likely_residual_tumour	ANKRD30A,ESR1,GATA3,TRPS1; scATOMIC tumour 0.86, uncertain 0.89 although CNV corr 0.19
+18	1403	445	0.683	0.597	0.345	0.584	squamous_KRT5_KRT6A_stromal_admixture	tumour_like	likely_residual_tumour	KRT5 91%,KRT6A 91%,COL1A1 56%,RGS5 23%; CSF3R 1%,FCGR3B 0%: no neutrophil evidence, auto doublet not supported; stromal doublet possible
+39	1655	363	0.781	0.309	0.657	0.782	erythroid_contaminated_epithelial	ambient_or_doublet	technical_not_a_tumour_call	erythroid z 6.65 above any L1; S100A9/CSTA epithelial background; 80% NSCLC
+21	1467	289	0.803	0.405	0.224	0.192	airway_club_SCGB3A1_BPIFB1	organ_epithelium	identity_with_flag	SCGB3A1,BPIFB1,WFDC2,SLPI; 8/8 sources; uncertain 0.80
+52	2627	235	0.911	0.431	0.797	0.734	basal_like_KRT17_FHL2	tumour_like	likely_residual_tumour	KRT17,FHL2,TNFRSF12A,TAGLN,CAV1; 73% BCC; scATOMIC tumour 0.80; auto myCAF not supported
+37	1087	219	0.799	0.26	0.628	0.833	basal_like_KRT14_AREG	tumour_like	likely_residual_tumour	KRT14,KRT17,SFN,AREG,CXCL8; 83% BCC; scATOMIC tumour 0.63
+9	344	163	0.526	0.437	0.192	0.968	prostate_luminal_KLK3_MSMB	organ_epithelium	identity_with_flag	KLK3,KLK2,MSMB,ACPP; MT 22% but specific markers so not low_quality; source share 0.968
+27	410	111	0.729	0.743	0.117	0.976	breast_tumour_like_PEG10_MDK	tumour_like	likely_residual_tumour	CNV score 0.0084, CNV corr 0.74; source share 0.976; auto PI16 fibroblast wrong
+54	953	109	0.886	0.654	0.239	0.575	thyroid_follicular_FN1_HOPX	tumour_like	likely_residual_tumour	TG,PAX8,FN1,HOPX; FN1 reads as PTC-associated (interpretation); CNV corr 0.65
+59	287	100	0.652	0.208	0.648	0.993	pancreatic_duct_CFTR_SLC4A4	organ_epithelium	identity_with_flag	CFTR,SLC4A4,ANXA4,FXYD2,DCDC2 ahead of PRSS1/PNLIP (acinar transcripts read as ambient, interpretation); auto acinar not supported; source share 0.993
+53	1067	75	0.93	0.511	0.734	0.849	melanoma_like_VIM_S100A1	tumour_like	likely_residual_tumour	85% cutaneous melanoma; uncertain 0.93; scATOMIC tumour 0.73; auto CD4_naive_CM wrong
+49	533	71	0.867	0.355	0.094	0.809	program_housekeeping_PDAC	program_mixed	program_no_identity	top DE CYBA,S100A6,MIF,RPLP1,UBA52,RPLP2; 71 non-malignant cells; uncertain 0.867, CNV corr 0.355
+29	277	64	0.769	0.363	0.191	0.578	gastric_foveolar_MUC5AC_TFF1	organ_epithelium	identity_with_flag	MUC5AC,TFF1,CTSE,VSIG1; auto chief_parietal not supported
+61	433	56	0.871	0.697	0.051	0.792	melanocytic_MLANA_MITF	tumour_like	likely_residual_tumour	MLANA,MITF; 79% uveal melanoma; uncertain 0.87, CNV corr 0.70
+6	548	53	0.903	0.78	0.022	0.447	hepatic_intestinal_tumour_like_SPINK1_CES2	tumour_like	likely_residual_tumour	top DE FTL,SPINK1,TMEM176A,LGALS4,FTH1,CES2; 53 non-malignant cells; uncertain 0.903, CNV corr 0.78
+51	513	47	0.908	0.459	0.027	0.994	low_quality_51	low_quality	technical_not_a_tumour_call	top DE SPINK1,HSP90AA1,DNAJB1,HSPB1,NEAT1,HSPH1; 47 non-malignant cells; uncertain 0.908, CNV corr 0.459
+65	641	44	0.931	0.409	0.722	0.774	doublet_like_squamous_fibroblast	ambient_or_doublet	likely_residual_tumour	KRT14 90%,COL1A1 89%,COL3A1,SPARC; co-detection at cell level not measured, partial EMT alternative
+57	1063	43	0.96	0.527	0.044	0.978	urothelial_tumour_like_AQP3_S100P	tumour_like	likely_residual_tumour	top DE PPP1R15A,NFKBIA,CCT2,JUN,HES1,AQP3; 43 non-malignant cells; uncertain 0.96, CNV corr 0.527
+69	859	36	0.958	0.369	0.952	0.993	thyroid_like_CHI3L1_TIMP1	tumour_like	likely_residual_tumour	99% PTC; scATOMIC tumour 0.95; auto gamma_delta wrong
+62	847	24	0.972	0.635	0.021	0.934	breast_tumour_like_KRT15_ribosomal	tumour_like	likely_residual_tumour	top DE RPLP0,RPSA,RPLP1,RPLP2,EIF3L,KRT15; 24 non-malignant cells; uncertain 0.972, CNV corr 0.635
+32	2526	13	0.995	0.642	0.982	0.979	low_quality_32	low_quality	technical_not_a_tumour_call	top DE COX6C,KRT19,EEF1D,ADIRF,S100A14,IGFBP5; 13 non-malignant cells; uncertain 0.995, CNV corr 0.642
+55	415	9	0.978	0.568	0.224	0.692	colon_epithelial_tumour_like_MUC2_LGALS4	tumour_like	likely_residual_tumour	top DE KRT18,SLC12A2,KRT8,LGALS4,MUC2,SERPINB6; 9 non-malignant cells; uncertain 0.978, CNV corr 0.568
+26	705	8	0.989	0.497	0.01	0.946	low_quality_26_ambient	low_quality	technical_not_a_tumour_call	top DE MTRNR2L8,S100A8,KRT15,MTRNR2L12,CSTB,HSPB1; 8 non-malignant cells; uncertain 0.989, CNV corr 0.497
+5	311	7	0.977	0.49	0.1	0.534	gastrointestinal_epithelial_tumour_like_LGALS4_TFF1	tumour_like	likely_residual_tumour	top DE COX5B,LGALS4,NDUFS7,TFF1,CHCHD10,KRT18; 7 non-malignant cells; uncertain 0.977, CNV corr 0.49
+8	327	7	0.979	0.644	0.012	0.453	epithelial_tumour_like_ISG15_EPCAM	tumour_like	likely_residual_tumour	top DE ISG15,TMSB10,S100P,S100A6,IFI27,CYBA; 7 non-malignant cells; uncertain 0.979, CNV corr 0.644
+40	1994	6	0.997	0.35	0.982	0.987	breast_luminal_tumour_like_GATA3_TRPS1	tumour_like	likely_residual_tumour	top DE KRT19,CXCL14,XBP1,TRPS1,ADIRF,PTMA; 6 non-malignant cells; uncertain 0.997, CNV corr 0.35
+60	712	5	0.993	0.619	0.003	0.959	breast_tumour_like_SFRP1_MGP	tumour_like	likely_residual_tumour	top DE TPD52L1,MGP,UBA52,KDELR2,MFGE8,TMEM123; 5 non-malignant cells; uncertain 0.993, CNV corr 0.619
+25	397	4	0.99	0.791	0.305	0.665	hepatocyte_tumour_like_APOA1_ALB	tumour_like	likely_residual_tumour	top DE APOC1,APOE,APOA1,HP,CES1,LEAP2; 4 non-malignant cells; uncertain 0.99, CNV corr 0.791
+12	120	3	0.975	0.302	0.967	0.933	bladder_tumour_like_S100P_CCND1	tumour_like	likely_residual_tumour	top DE RBFOX2,ID1,RPLP0,MIF,SNCG,DHRS2; 3 non-malignant cells; uncertain 0.975, CNV corr 0.302
+1	84	3	0.964	0.712	0.0	0.988	thyroid_tumour_like_TG	tumour_like	likely_residual_tumour	top DE TG,CST6,UACA,LCN12,IGFBP5,PLCG2; 3 non-malignant cells; uncertain 0.964, CNV corr 0.712
+50	910	3	0.997	0.475	0.004	0.982	basal_like_BCC_KRT17	tumour_like	likely_residual_tumour	top DE CEBPB,SLC3A2,CYGB,TUBB,EIF1,TNFRSF12A; 3 non-malignant cells; uncertain 0.997, CNV corr 0.475
+56	586	3	0.995	0.531	0.988	0.981	breast_tumour_like_CRABP2	tumour_like	likely_residual_tumour	top DE FTH1,PSMA7,PPP1R14B,CRABP2,GUK1,ECHS1; 3 non-malignant cells; uncertain 0.995, CNV corr 0.531
+34	383	2	0.995	0.563	0.021	0.499	renal_pancreatic_tumour_like_PDZK1IP1	tumour_like	likely_residual_tumour	top DE ANXA4,PDZK1IP1,IL32,UBC,LDHA,CAMK2N1; 2 non-malignant cells; uncertain 0.995, CNV corr 0.563
+66	424	2	0.995	0.817	0.005	0.922	breast_tumour_like_CRABP2_PRRX1	tumour_like	likely_residual_tumour	top DE SPTSSA,CRABP2,PGM2L1,PRRX1,EIF4B,RPSA; 2 non-malignant cells; uncertain 0.995, CNV corr 0.817
+72	1695	2	0.999	0.552	0.001	0.999	pancreatic_tumour_like_AKR1C2_S100P	tumour_like	likely_residual_tumour	top DE AKR1C2,S100P,RAP1B,SLPI,KRT7,MYL6; 2 non-malignant cells; uncertain 0.999, CNV corr 0.552
+11	256	1	0.996	0.673	0.0	0.996	breast_tumour_like_CTNNB1_SOX4	tumour_like	likely_residual_tumour	top DE CTNNB1,HNRNPH1,PPP1CB,SET,MIF,CALR; 1 non-malignant cells; uncertain 0.996, CNV corr 0.673
+48	15	1	0.933	0.653	0.133	1.0	unresolved_48_15_cells	ambient_or_doublet	technical_not_a_tumour_call	top DE MDK,CST3,PPP1R15A,UQCRFS1,ERGIC3,CXCL3; 1 non-malignant cells; uncertain 0.933, CNV corr 0.653
+71	212	1	0.995	0.547	0.0	1.0	renal_tumour_like_NDUFA4L2	tumour_like	likely_residual_tumour	top DE TMEM91,NDUFA4L2,HMGN3,DEFB1,VIM,EEF1A1; 1 non-malignant cells; uncertain 0.995, CNV corr 0.547
+36	100	0	1.0	0.635	0.0	1.0	squamous_tumour_like_KRT6A_MYC	tumour_like	likely_residual_tumour	top DE NRARP,TMEM123,BIRC2,DCUN1D5,KRT6A,ADM; 0 non-malignant cells; uncertain 1.0, CNV corr 0.635
+45	38	0	1.0	0.675	0.0	1.0	renal_tumour_like_SPP1_VCAN	tumour_like	likely_residual_tumour	top DE SPP1,BICC1,CRYAB,VCAN,IGFBP7,CLU; 0 non-malignant cells; uncertain 1.0, CNV corr 0.675
+41	33	0	1.0	0.157	1.0	0.97	prostate_tumour_like_IEG	tumour_like	likely_residual_tumour	top DE MTRNR2L12,JUNB,ZFP36,FOS,EFNA1,FOSB; 0 non-malignant cells; uncertain 1.0, CNV corr 0.157
+22	76	0	1.0	0.82	0.0	1.0	breast_tumour_like_KRT81_GABRP	tumour_like	likely_residual_tumour	top DE RBP7,ERP27,KRT81,TTYH1,URI1,GNL3L; 0 non-malignant cells; uncertain 1.0, CNV corr 0.82
+64	58	0	1.0	0.61	0.0	1.0	pancreatic_tumour_like_MSLN	tumour_like	likely_residual_tumour	top DE SYT8,SNCG,SRCAP,LYPD6B,PLBD1,CAMK2N1; 0 non-malignant cells; uncertain 1.0, CNV corr 0.61
+63	141	0	1.0	0.629	0.0	0.993	hepatocyte_tumour_like_SERPINA1_ALB	tumour_like	likely_residual_tumour	top DE SERPINA1,ALB,SPINK1,FTL,TF,TTR; 0 non-malignant cells; uncertain 1.0, CNV corr 0.629
+67	135	0	1.0	0.734	0.0	0.993	colon_epithelial_tumour_like_TFF3_CLDN3	tumour_like	likely_residual_tumour	top DE S100A6,TFF3,TMSB4X,TFF1,CLDN3,CST3; 0 non-malignant cells; uncertain 1.0, CNV corr 0.734
+70	112	0	1.0	0.814	0.0	0.991	gastric_epithelial_tumour_like_EPCAM	tumour_like	likely_residual_tumour	top DE TPT1,CD55,EPCAM,EFNA1,RHOA,HLA-C; 0 non-malignant cells; uncertain 1.0, CNV corr 0.814
+47	102	0	1.0	0.638	0.01	0.961	squamous_suprabasal_tumour_like_KRT13_SPRR3	tumour_like	likely_residual_tumour	top DE SPRR3,SPRR1A,CNFN,MAL,PPDPF,CSTB; 0 non-malignant cells; uncertain 1.0, CNV corr 0.638
+15	29	0	1.0	0.84	1.0	1.0	prostate_tumour_like_FOLH1_FASN	tumour_like	likely_residual_tumour	top DE PTP4A3,DCXR,RAC3,TM7SF2,HEXB,GRINA; 0 non-malignant cells; uncertain 1.0, CNV corr 0.84
