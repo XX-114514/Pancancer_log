@@ -9,4 +9,7 @@ Five-pool consensus computation finished with 1,387,936 main-subtype candidate c
 ## Working sidecar acceptance
 At 2026-11-08 06:22:10 UTC / 14:22:10 UTC+8 / 17:22:10 Melbourne, all 3,347,659 unique IDs and exact 1,387,936 main-candidate memberships passed readback. Six pools contain 535,749 transferred and 122,572 unresolved low-depth cells, all outside main candidates. The 48,210,892-byte sidecar SHA256 is d25fcbcbbdb75737dd011922546d6704cc5a0fef28aa5c922643113781912097. Source data were not overwritten. Biological final acceptance remains false; historical-field/transfer-value provenance replay is recorded separately.
 
-Final provenance readback passed: all 11 historical label columns match for all 3,347,659 cells; all 658,321 six-pool transfer records match labels/confidence/status, with no silent lineage reassignment. Public sync remains blocked pending the requested specific authorization.
+Final provenance readback passed: all 11 historical label columns match for all 3,347,659 cells; all 658,321 six-pool transfer records match labels/confidence/status, with no silent lineage reassignment. Public sync initially awaited specific authorization; the user subsequently approved this batch.
+
+## Publication receipt
+Code and de-identified records were published in commit `2d8dfef596f74e1c5ae56cf30784ab688978bce1`; a subsequent `git ls-remote` verified the remote main SHA. Per-cell tables and matrices remain on the research server.

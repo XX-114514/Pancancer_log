@@ -35,3 +35,6 @@ Final provenance readback passed: all 11 historical label columns match for all 
 
 ## Specific publication authorization
 The user explicitly approved publishing this task’s code and de-identified records to XX-114514/Pancancer_log on 2026-11-08. The completed batch includes the eight initially prepared scripts plus the final provenance validator, aggregate acceptance JSON and methods/run logs. No per-cell data, matrices, patient records, credentials or internal server paths are included. The earlier automatic-review rejection is retained as history; publication is now authorized.
+
+## Verified publication
+After explicit user approval, ordinary push succeeded for content commit `2d8dfef596f74e1c5ae56cf30784ab688978bce1`; independent ls-remote matched the full SHA. The earlier automatic-review block is resolved. A server publication receipt and current run status were updated separately. An unrelated local sync-client sidecar was left untouched and not staged.
