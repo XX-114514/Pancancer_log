@@ -1,3 +1,6 @@
+## 2026-11-08 ccRCC空间检查点
+
+[肾透明细胞癌面板与空间试分析](methods/V4-ccRCC-spatial-pilot-20261108.md)：新数据最小下载及本地空间试分析完成；服务器保存待接收。
 > **失败原生下载恢复（2026-11-08）**：[持久缓存与实际进度](inventories/analysis/2026-11-08/v4_download_recovery_v1/README.md)。18映射/首矩阵复用，其余5份HTTP截断失败已重下；256KiB磁盘缓存、有限重试及CRC/SHA后才ready，两端故障测试通过。下载仍运行。
 
 > **Xenium坐标修复（2026-11-08）**：[六源全量核对与服务器重放](inventories/analysis/2026-11-08/v4_coordinate_fix_v1/README.md)。作者um字段实际为像素，单位合同已修正，326万原生坐标通过；旧六例断言失败无结果，新服务器阶段等核验输入。

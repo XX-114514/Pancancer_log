@@ -1,0 +1,12 @@
+{
+  "audit_pass": true,
+  "checks": [
+    "690322 input cells",
+    "QC counts",
+    "384 independently brute-force Euclidean nearest distances",
+    "full B NK T distance median recomputation",
+    "source member CRC and SHA checked by producer"
+  ],
+  "max_abs_distance_error_um": 0.0,
+  "scope": "software and arithmetic audit; identity and biological validation remain pending"
+}

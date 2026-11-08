@@ -1,0 +1,33 @@
+{
+  "evidence_UTC": "2026-11-08T12:22:53.997550+00:00",
+  "evidence_UTC8": "2026-11-08T20:22:53.997550+08:00",
+  "Visium_individual_audits": 46,
+  "Visium_requested": 53,
+  "CPDB_HighLow_individual_audits": 25,
+  "CPDB_HighLow_requested": 25,
+  "CPDB_family_final_audit_rechecked": false,
+  "new_ccrcc_download": "6 minimal archive members fully CRC/SHA verified; panel and custom group MD5 match vendor",
+  "ccrcc_analysis_location": "temporary local fallback while server transfer pending",
+  "server_transfer": "in_progress_not_accepted",
+  "new_communication_started": false,
+  "breast_native_accepted": 1,
+  "breast_native_requested": 6,
+  "code_sha256": {
+    "audit_ccrcc_pilot_v1.py": "d1e8fc414cc91e7c63564c2a4be6f4b6cd33e9317658dd362ddd804da41d8c8c",
+    "ccrcc_ackr1_descriptive_v1.py": "d275c6eba0e09ed986130124a921f640e1762297acc20b6fd81b2a1e8a12634f",
+    "ccrcc_spatial_pilot_v1.py": "5b4ec3709941fd1ea5161b04f467471799662cc3df08055d37926d1ec9e2dea8",
+    "ccrcc_protein_audit_v1.py": "0967645d6201fa270a68bb36f2ec7201474414366c2184683bb6a6aac7a9d744",
+    "selective_public_zip.py": "7cf7a447f0dfb81805746901ce39432e1bad4bbecf19ba4b47f647cb788d2411"
+  },
+  "server_finite_controller": {
+    "stage": "wait_verified_input_then_spatial_only",
+    "max_wait_hours": 8
+  },
+  "local_pilot_aggregate_saved_to_server": true,
+  "cloud_check": {
+    "tests_run": 590,
+    "errors_missing_dependencies": 23,
+    "skipped": 42,
+    "pass": false
+  }
+}

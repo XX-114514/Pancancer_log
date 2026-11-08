@@ -1,0 +1,3 @@
+identity_candidate	radius_um	tile_um	n_permutations	observed_fraction	null_mean	difference	p_one_sided_conditional	interpretation
+B	50	250	999	0.8382592190889371	0.8454195790150237	-0.007160359926086657	0.992	single-section exploratory; fixed local immune counts; no patient-level inference
+NK	50	250	999	0.864951768488746	0.8766338685952832	-0.011682100106537252	0.95	single-section exploratory; fixed local immune counts; no patient-level inference

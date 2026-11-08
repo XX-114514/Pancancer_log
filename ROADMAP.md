@@ -1,3 +1,6 @@
+## 2026-11-08 ccRCC空间检查点
+
+当前优先空间身份、组织结构及患者复制；新通讯和队列分析继续后置。[肾透明细胞癌面板与空间试分析](methods/V4-ccRCC-spatial-pilot-20261108.md)
 ## 2026-11-08 输入恢复门槛
 
 [持久缓存恢复](methods/V4-Xenium-resumable-download-recovery-20261108.md)保留相同来源及科学参数，先通过五份CRC/长度/SHA/坐标ready，再核对分析consumer和全66结果完整性。

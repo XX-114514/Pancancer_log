@@ -199,3 +199,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [2026-11-06 V5/K9原文式通讯补分析](20261106_V5_K9_CoVarNet_communication_v1.md)
 
 - [WEHI R3 continuation v1](20261108_WEHI_R3_continuation_v1.md)
+
+- [ccRCC空间试分析](20261108_ccRCC_spatial_only_v1.md)
