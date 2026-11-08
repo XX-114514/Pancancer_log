@@ -195,3 +195,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [20261106 V7授权QC清理和谱系重建](20261106_v7_QC_clean_reannotation_v1.md)：实际清理v2、Mast/T6重拟合与工作侧表读回完成，最终细分未接受。
 
 - [2026-11-06 V5/K9原文式通讯补分析](20261106_V5_K9_CoVarNet_communication_v1.md)
+
+- [WEHI R3 continuation v1](20261108_WEHI_R3_continuation_v1.md)

@@ -1,0 +1,191 @@
+{
+  "input_acceptance": {
+    "status": "passed",
+    "utc": "2026-11-08T06:10:38.479807+00:00",
+    "manifest_files": 159,
+    "label_rows": 3347659,
+    "objects": [
+      {
+        "object": "r2_Alveolar_macrophage",
+        "cells": 61053,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_B_Plasma",
+        "cells": 297478,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_Endothelial",
+        "cells": 132319,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_Kupffer",
+        "cells": 15305,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_Microglia",
+        "cells": 45837,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_Myeloid",
+        "cells": 588117,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_Sinusoidal_EC",
+        "cells": 5336,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_Stromal",
+        "cells": 243620,
+        "alignment": "pass"
+      },
+      {
+        "object": "r2_T_NK",
+        "cells": 1415387,
+        "alignment": "pass"
+      },
+      {
+        "object": "r3_Endothelial",
+        "cells": 137014,
+        "alignment": "pass"
+      },
+      {
+        "object": "r3_Myeloid",
+        "cells": 656808,
+        "alignment": "pass"
+      }
+    ],
+    "r3_label_sha256": "74b0973cf492e2fc7b9e6831e3547891bb08e95f153c9e223b7324230b96f5c7",
+    "full_expression_values_checked": false
+  },
+  "consensus": [
+    {
+      "pool": "T_NK",
+      "cells": 1415387,
+      "retained": 1409873,
+      "stable": 1112503,
+      "main_subtype_cells": 811800,
+      "components": 17,
+      "merged_pairs": 0,
+      "tied_modes": 55895
+    },
+    {
+      "pool": "B_Plasma",
+      "cells": 297478,
+      "retained": 291052,
+      "stable": 238504,
+      "main_subtype_cells": 95472,
+      "components": 16,
+      "merged_pairs": 2,
+      "tied_modes": 8690
+    },
+    {
+      "pool": "Stromal",
+      "cells": 243620,
+      "retained": 236895,
+      "stable": 183771,
+      "main_subtype_cells": 101013,
+      "components": 26,
+      "merged_pairs": 3,
+      "tied_modes": 8292
+    },
+    {
+      "pool": "Myeloid",
+      "cells": 656808,
+      "retained": 656420,
+      "stable": 452373,
+      "main_subtype_cells": 328756,
+      "components": 21,
+      "merged_pairs": 1,
+      "tied_modes": 29997
+    },
+    {
+      "pool": "Endothelial",
+      "cells": 137014,
+      "retained": 135998,
+      "stable": 99893,
+      "main_subtype_cells": 50895,
+      "components": 17,
+      "merged_pairs": 1,
+      "tied_modes": 7324
+    }
+  ],
+  "consensus_replay": {
+    "status": "passed",
+    "checks": [
+      {
+        "pool": "T_NK",
+        "rows": 1415387,
+        "independent_crosstab_replay": "passed"
+      },
+      {
+        "pool": "B_Plasma",
+        "rows": 297478,
+        "independent_crosstab_replay": "passed"
+      },
+      {
+        "pool": "Stromal",
+        "rows": 243620,
+        "independent_crosstab_replay": "passed"
+      },
+      {
+        "pool": "Myeloid",
+        "rows": 656808,
+        "independent_crosstab_replay": "passed"
+      },
+      {
+        "pool": "Endothelial",
+        "rows": 137014,
+        "independent_crosstab_replay": "passed"
+      }
+    ]
+  },
+  "new_transfers": [
+    {
+      "pool": "Microglia",
+      "reference": 32904,
+      "query": 12361,
+      "unresolved": 997,
+      "validation_macro_accuracy": 0.9445021927029489,
+      "seed": 2026110704,
+      "k": 30,
+      "min_conf": 0.6,
+      "threads": 4,
+      "scope": "inferred sensitivity only; validation is a higher-depth upper bound",
+      "microglia_mac_predictions_do_not_change_pool": true
+    },
+    {
+      "pool": "Endothelial",
+      "reference": 88226,
+      "query": 32088,
+      "unresolved": 10750,
+      "validation_macro_accuracy": 0.845277130571851,
+      "seed": 2026110704,
+      "k": 30,
+      "min_conf": 0.6,
+      "threads": 4,
+      "scope": "inferred sensitivity only; validation is a higher-depth upper bound",
+      "microglia_mac_predictions_do_not_change_pool": false
+    },
+    {
+      "pool": "Myeloid",
+      "reference": 505162,
+      "query": 84617,
+      "unresolved": 18373,
+      "validation_macro_accuracy": 0.8713087574561731,
+      "seed": 2026110704,
+      "k": 30,
+      "min_conf": 0.6,
+      "threads": 4,
+      "scope": "inferred sensitivity only; validation is a higher-depth upper bound",
+      "microglia_mac_predictions_do_not_change_pool": false
+    }
+  ],
+  "scientific_final": false
+}

@@ -212,3 +212,5 @@
 
 
 [来源留出的冻结参考诊断](full-context-source-heldout-reference-20261024.md)：训练/查询信息隔离、Symphony压缩及相同锚点RNA诊断，不以输入标签验证身份。
+
+- [WEHI R3 continuation](TME-WEHI-R3-consensus-continuation-20261108.md)

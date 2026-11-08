@@ -1,0 +1,50 @@
+{
+  "status": "accepted_working_sidecar",
+  "utc": "2026-11-08T06:22:10.936483+00:00",
+  "rows": 3347659,
+  "main_subtype_candidates": 1387936,
+  "cell_id_set_preserved": true,
+  "consensus_main_membership_exact": true,
+  "status_counts": {
+    "unstable_or_nonidentity_component": 545445,
+    "observed_stable": 1387936,
+    "state": 129893,
+    "transferred": 535749,
+    "excluded_qc": 145738,
+    "outside_refined_pools": 391171,
+    "unresolved_low_depth": 122572,
+    "sample_specific": 6693,
+    "reassigned_lineage_subtype_pending": 2384,
+    "set_aside_review": 32369,
+    "source_restricted": 14311,
+    "observed_tissue_no_seed_consensus": 33398
+  },
+  "scientific_final": false,
+  "files": [
+    {
+      "path": "cell_labels_working_v1.tsv.gz",
+      "bytes": 48210892,
+      "sha256": "d25fcbcbbdb75737dd011922546d6704cc5a0fef28aa5c922643113781912097"
+    },
+    {
+      "path": "rare_candidates.tsv",
+      "bytes": 116,
+      "sha256": "42ef2b6f8f7c31f06a486ff611ffb4626476cce9dbcafafd346e66b557f93047"
+    },
+    {
+      "path": "status_summary.tsv",
+      "bytes": 2420,
+      "sha256": "d8c1ad76985fa9a7b511dbd71285c96b9642fae263245c2a3e8c9c0db3ca4dc4"
+    },
+    {
+      "path": "subtype_summary.tsv",
+      "bytes": 12762,
+      "sha256": "c40b7f0d6ff197fa3ac7a352dea3592431c4f160c01ece5368e6b38c980fd000"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 992,
+      "sha256": "1595782d1031b60bb226ea288a8d974480447b2691bb472d0aca931ffaac349c"
+    }
+  ]
+}
