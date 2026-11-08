@@ -1,0 +1,67 @@
+{
+  "evidence_UTC": "2026-11-08T12:19:30.401105+00:00",
+  "source_selection": "same6 native Xenium and18 author mappings; only5failed native inputs redownloaded",
+  "cause": "truncated HTTP range body despite3 prior body retries; in-memory-only cache discarded on exit",
+  "recovery_started_UTC": "2026-11-08T12:11:42.245915+00:00",
+  "persistent_cache": {
+    "block_bytes": 262144,
+    "identity": "exact URL hash plus expected archive size and block layout",
+    "block_acceptance": "HTTP206 exact start/end/total, identity encoding, exact body length, persisted independent SHA256",
+    "reuse": "recheck persisted block size/SHA; corrupt blocks retained and refetched; no deletion",
+    "inflation": "restart ZIP inflation into a new attempt using prior compressed blocks; do not append deflated input to a truncated h5ad"
+  },
+  "retry": {
+    "attempts_per_range": 6,
+    "timeout_seconds": 60,
+    "delay": "exponential plus jitter, bounded30seconds; numeric Retry-After considered",
+    "rounds_per_invocation": 3,
+    "default_invocation_hours": 18,
+    "maximum_allowed_hours": 48,
+    "attempted_range_bytes_per_reader_cap": 8589934592,
+    "transient_HTTP": [
+      408,
+      425,
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "permanent_review_HTTP": [
+      401,
+      403,
+      404,
+      410
+    ]
+  },
+  "acceptance": [
+    "ZIP member inventory size andCRC",
+    "full ZIP member CRC verification",
+    "independently known native-file SHA256",
+    "original micron-coordinate contract",
+    "atomic complete andready metadata after acceptance"
+  ],
+  "restart": "repeat same command; previously accepted sources are fully rechecked/reused; compressed disk blocks resume",
+  "concurrency": "nonblocking POSIX writer locks reject another writer; no duplicate source writers",
+  "status": "exit0 only all6 accepted; exit2 if still incomplete; no false success",
+  "storage": "cache/native/partial outputs stay on existing research server; no local new matrices; no deletions",
+  "scientific_parameters": "unchanged annotation/CM/radii/all66 hypotheses; download recovery is not biological acceptance",
+  "code_sha256": {
+    "recover_xenium_downloads_v1.py": "e2e4898bc1974a9da969d1c49e4707e44917f015b3a46959108ba587c42b84c7",
+    "test_resumable_public_zip_v1.py": "51714296f433c54f124ffb021b556ebebf04da8378418a2a25b1a4684606d405",
+    "resumable_public_zip_v1.py": "8bbbf2981ff699fbac535dbbe28b9d57bff3a2df88363b44dd7dae48d42ff7b0",
+    "native_coordinate_contract_v1.py": "ed8551dd78f3832b7a9184fa45af0e79ae615ce168db502d327345bc3c8aa172",
+    "supervise_download_recovery_v1.py": "07a8f644bb67c2f82ebdf5c80524f20a2f2f6523a2adad77b0f60e80412e411b",
+    "test_download_supervision_v1.py": "782f461d666dc3df08cc1596398c41fe7e72da08162c0a6093edcaa0413e50b5"
+  },
+  "finite_supervision": {
+    "launched_UTC": "2026-11-08T12:22:10.829981+00:00",
+    "hours": 48,
+    "maximum_additional_worker_launches": 3,
+    "active_worker": "preserved_wait_on_writer_lock",
+    "completion": "only all6 accepted receipt permits success",
+    "access_failure": "known source_or_access_review flag stops further launches",
+    "incomplete": "exit2 retains cache; no infinite daemon or calendar task",
+    "restart_after_worker_exit": "same cached blocks and accepted sources reused"
+  }
+}

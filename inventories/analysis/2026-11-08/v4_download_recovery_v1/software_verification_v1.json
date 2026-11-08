@@ -1,0 +1,43 @@
+{
+  "evidence_UTC": "2026-11-08T12:19:30.401105+00:00",
+  "scope": "SYNTHETIC_SOFTWARE_FAILURE_INJECTION_NOT_BIOLOGICAL_RESULTS",
+  "local": "PASS",
+  "server": "PASS",
+  "tests": [
+    "truncated body retried at same exactrange",
+    "429 transient retries",
+    "interruption preserves verified disk blocks and resumes without rerequesting prefix",
+    "corrupt cached block detected by SHA and refetched without deleting oldblock",
+    "ZIP CRC+length+independent SHA acceptance",
+    "accepted member reuse without any additional HTTP request",
+    "wrong whole-member SHA refuses complete receipt and preserves attempt",
+    "full ZIP extraction interruption and repeated command reuse cached compressed stream",
+    "wrongrange/changed archive total rejected",
+    "403 terminates immediately without bypass",
+    "changed URL cannot reuse oldcache",
+    "nonblocking concurrent writer refusal"
+  ],
+  "code_sha256": {
+    "recover_xenium_downloads_v1.py": "e2e4898bc1974a9da969d1c49e4707e44917f015b3a46959108ba587c42b84c7",
+    "test_resumable_public_zip_v1.py": "51714296f433c54f124ffb021b556ebebf04da8378418a2a25b1a4684606d405",
+    "resumable_public_zip_v1.py": "8bbbf2981ff699fbac535dbbe28b9d57bff3a2df88363b44dd7dae48d42ff7b0",
+    "native_coordinate_contract_v1.py": "ed8551dd78f3832b7a9184fa45af0e79ae615ce168db502d327345bc3c8aa172",
+    "supervise_download_recovery_v1.py": "07a8f644bb67c2f82ebdf5c80524f20a2f2f6523a2adad77b0f60e80412e411b",
+    "test_download_supervision_v1.py": "782f461d666dc3df08cc1596398c41fe7e72da08162c0a6093edcaa0413e50b5"
+  },
+  "real_server_independent_process_cached_block_reuse_with_zero_network_budget": "PASS",
+  "finite_supervision_local_server_tests": [
+    "incomplete worker reexecuted then complete",
+    "already complete no new worker",
+    "active writer waited without termination",
+    "access review prevents further launch",
+    "finite launch cap enforced",
+    "unfinished trailing event does not break recovery"
+  ],
+  "publication_checks": {
+    "repository_validation": "PASS_0_errors_1_existing_sensitive_path_warning",
+    "six_code_sha_AST_JSON_TSV_privacy_size_local_links": "PASS",
+    "exact23_staged_payload_machine_configs_excluded": "PASS",
+    "git_diff_check": "PASS"
+  }
+}

@@ -1,3 +1,5 @@
+[五份失败原生下载恢复](20261108_v4_failed_download_recovery_v1.md)：18映射+首矩阵复用，服务器持久缓存已开始写入，完整五份接受仍待。
+
 [Xenium坐标修复服务器重放](20261108_v4_Xenium_coordinate_fix_v1.md)：旧六例断言失败；v6两端测试通过，输入副本校验中。
 
 [V4血管免疫有限空间对照](20261108_v4_vascular_spatial_controls_v1.md)：18映射接受、原生源待、软件合成通过，真实生物学仍待。

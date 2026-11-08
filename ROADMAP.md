@@ -1,3 +1,7 @@
+## 2026-11-08 输入恢复门槛
+
+[持久缓存恢复](methods/V4-Xenium-resumable-download-recovery-20261108.md)保留相同来源及科学参数，先通过五份CRC/长度/SHA/坐标ready，再核对分析consumer和全66结果完整性。
+
 ## 2026-11-08 坐标修复里程碑
 
 [显式单位合同](methods/V4-Xenium-coordinate-units-fix-20261108.md)通过全六源；下一门槛为服务器完整输入接受→原66假设重放→身份/组织与患者重复审核。

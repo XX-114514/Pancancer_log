@@ -1,0 +1,22 @@
+{
+  "evidence_UTC": "2026-11-08T12:23:03.275616+00:00",
+  "requested_native_inputs": 6,
+  "original_failed_native_inputs": 5,
+  "mapping_members_revalidated_reused": 18,
+  "original_accepted_native_revalidated_reused": 1,
+  "ready_native_inputs": 1,
+  "newly_recovered_native_inputs": 0,
+  "persistent_block_size_bytes": 262144,
+  "persistent_verified_blocks": 48,
+  "persistent_verified_bytes": 12381183,
+  "range_retries_observed": 0,
+  "native_analysis_computed": 1,
+  "scientific_or_visual_acceptance_claim": false,
+  "terminal_present": false,
+  "recovery_scope": "same_failed5_no_new_sources_or_scientific_parameters",
+  "local_deletions": 0,
+  "finite_supervision_launched_UTC": "2026-11-08T12:22:10.829981+00:00",
+  "finite_supervision_hours": 48,
+  "additional_worker_launches_max": 3,
+  "active_download_terminated": false
+}

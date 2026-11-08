@@ -1,3 +1,5 @@
+[Xenium持久下载恢复](V4-Xenium-resumable-download-recovery-20261108.md)：缓存重启复用、有限退避、全CRC/SHA、原子ready及故障注入验证。
+
 [Xenium坐标单位修复](V4-Xenium-coordinate-units-fix-20261108.md)：明确原生微米、原生像素与H&E对齐像素；六源全量验证。
 
 [V4血管空间对照与患者级通讯](V4-vascular-spatial-controls-20261108.md)：固定原CM、marker身份、三组区域/条件零分布与66完整假设。
