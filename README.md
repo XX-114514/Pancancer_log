@@ -1,3 +1,5 @@
+> **Xenium坐标修复（2026-11-08）**：[六源全量核对与服务器重放](inventories/analysis/2026-11-08/v4_coordinate_fix_v1/README.md)。作者um字段实际为像素，单位合同已修正，326万原生坐标通过；旧六例断言失败无结果，新服务器阶段等核验输入。
+
 > **2026-11-08 血管空间验证的对照已落实**：[方法、技术检查点与全66比较](inventories/analysis/2026-11-08/v4_vascular_controls_v1/README.md)。状态不作前置；目标/对照EC邻域、共同/单方区域LR及患者级统计已通过合成验证，18作者映射接受。原生矩阵仍待完整接受，尚无新增空间生物学结果；精确CM投射与大类扩展分开。
 
 > **关键组成空间推进**：[CM03大类关系结果](inventories/analysis/2026-11-07/v4_breast_vascular_v1/keymodule_v1/README.md)。14/53张Visium审核通过并新增大类边计算；来源差异明显，不称普遍复现。缺IGHD/XCL1不阻断组成分析；新18份Xenium映射接受、原生矩阵截断后有限恢复中。

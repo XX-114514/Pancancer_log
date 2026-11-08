@@ -1,0 +1,23 @@
+{
+  "evidence_UTC": "2026-11-08T00:45:44.029029+00:00",
+  "evidence_UTC_plus8": "2026-11-08T08:45:44.029029+08:00",
+  "server_code_deployed": true,
+  "server_synthetic_tests_pass": true,
+  "server_finite_replay_stage_started": true,
+  "server_source_files_verified": 0,
+  "server_input_files_requested": 24,
+  "server_source_transfer_bytes_requested": 3804678373,
+  "server_stage_last_confirmed_status": "WAITING_VERIFIED_INPUTS",
+  "replayed_real_cases_accepted": 0,
+  "local_source_deletions": 0,
+  "large_outputs_destination": "existing_research_server_formal_project_run",
+  "old_v5_source_and_failure_records_preserved": true,
+  "no_public_patient_cell_rows_matrices_or_coordinates": true,
+  "server_direct_public_range_probe": "PASS_206_exact4096_bytes_in0.98sec",
+  "server_direct_source_stage": "launched_separate_inputs_outputs_old_active_upload_preserved",
+  "old_upload_termination": "automatic_review_rejected_not_executed",
+  "transport_code_sha256": {
+    "acquire_coordinate_fix_sources_v1.py": "a1edc87b77f677c701df2ff97f4a4c31a124d3638799bdc0027872bcd7f6ca9e",
+    "run_coordinate_fixed_cohort_v2.py": "0d0dc18351751bf97c6ce9d2309bcc056801bdfb36a6114fff01f3a6fb77e553"
+  }
+}

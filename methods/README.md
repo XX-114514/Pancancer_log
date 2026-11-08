@@ -1,3 +1,5 @@
+[Xenium坐标单位修复](V4-Xenium-coordinate-units-fix-20261108.md)：明确原生微米、原生像素与H&E对齐像素；六源全量验证。
+
 [V4血管空间对照与患者级通讯](V4-vascular-spatial-controls-20261108.md)：固定原CM、marker身份、三组区域/条件零分布与66完整假设。
 
 [V4乳腺癌血管免疫组成](V4-breast-vascular-immune-20261107.md)：状态非前置、原生坐标/身份、血管/TLS背景、I-SPY2测量及完整家族。

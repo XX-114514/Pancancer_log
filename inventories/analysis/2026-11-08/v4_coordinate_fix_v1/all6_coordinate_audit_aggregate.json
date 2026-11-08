@@ -1,0 +1,19 @@
+{
+  "evidence_UTC": "2026-11-08T00:39:42.402019+00:00",
+  "scope": "all6 accepted native Xenium inputs, coordinates only; not biological results",
+  "sources_checked": 6,
+  "coordinate_rows_checked": 3262951,
+  "sources_with_author_native_pixel_legacy_key": 6,
+  "author_micrometres_per_pixel": 0.2125,
+  "legacy_key_scale_relative_to_native_microns": 4.705882352941177,
+  "maximum_absolute_coordinate_crosscheck_error_um": 1.8189894035458565e-12,
+  "nearest_neighbor_queries_per_source": 1000,
+  "maximum_nearest_neighbor_distance_crosscheck_error_um": 2.0330404026935867e-12,
+  "native_obs_coordinates_modified": false,
+  "aligned_HE_image_spatial_used_for_distance": false,
+  "legacy_v5_cases_failed_before_spatial_outputs": 6,
+  "legacy_v5_spatial_results": 0,
+  "all66_hypotheses_and_radii_unchanged": true,
+  "author_code_commit": "177e35ffed015b5a6155319c830e03616efc8659",
+  "author_preprocessing_sha256": "f3a7abe781c1c681200e212ad0373acdee638270cd5f939cd237a10a3f1f953e"
+}

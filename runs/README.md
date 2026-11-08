@@ -1,3 +1,5 @@
+[Xenium坐标修复服务器重放](20261108_v4_Xenium_coordinate_fix_v1.md)：旧六例断言失败；v6两端测试通过，输入副本校验中。
+
 [V4血管免疫有限空间对照](20261108_v4_vascular_spatial_controls_v1.md)：18映射接受、原生源待、软件合成通过，真实生物学仍待。
 
 [乳腺癌血管免疫组成独立分支](20261107_V4_breast_vascular_v1.md)：6 Xenium/18映射获取与资格、I-SPY2 248位及18模型独立审核，空间机制尚待。
