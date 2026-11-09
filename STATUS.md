@@ -1,3 +1,7 @@
+## 2026-11-09 ccRCC优先补充探索
+
+[当前实际状态](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)：隔离依赖和新控制器部署；六核心与新增轮廓最小恢复中，旧作业不改。ACKR1独立EC规则、蛋白缩放纠正、RNA-only聚类与完整96局部检验已落实代码，新结果待。
+
 ## 2026-11-09 CM验证完整审阅
 
 [当前权威报告](inventories/analysis/2026-11-09/v4_CM_validation_review_v1/README.md)：53主空间/53niche/25通讯组/13成像单元完成对应数值审核。下载6原生+18映射全接受；旧consumer到期仅算2例，本轮补4至6/6，66项P/FDR独立通过。ACKR1 EC邻域B/NK主比较及T次比较正向，内部B组成增量更明显；区域/条件通讯两27家族均0 BH/BY。身份/组织学及临床增量待，不把旧pending快照当现状。

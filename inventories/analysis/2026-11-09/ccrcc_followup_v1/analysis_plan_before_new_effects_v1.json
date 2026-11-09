@@ -1,0 +1,74 @@
+{
+  "UTC_frozen": "2026-11-09T07:25:27.534635+00:00",
+  "scope": "single-donor ccRCC spatial follow-up to2026-11-06 V4 CM03, not exact IGHD/XCL1 subtype replication",
+  "inference": "exploratory_followup_oldACKR1_description_already_seen; no patient replication or confirmatory clinical claim",
+  "input_members": "same6 core inputs independently bound to prior SHA plus cell_boundaries.parquet inventoryCRC+newSHA; no full56.7GB archive download",
+  "QC": "RNA-only>=50 UMI and>=20genes; preserve original source and baseline replay",
+  "exposure_independent_EC_gate": [
+    "atleast2 ofPECAM1,VWF,EMCN",
+    "exclude>=2 ofPROX1,LYVE1,PDPN frombloodEC",
+    "ACKR1 excluded from identity gate, RNA-only clustering and QC counts used as biological identity support"
+  ],
+  "target": "ACKR1>=1 nativeRNA UMI vsundetected among fixed bloodEC; never automatically arterial/HEV subtype",
+  "protein": "feature_type separation, remove stored protein_scaling_factor, compare within antibody; no protein-to-RNA UMI pooling, no data-tuned identity thresholds",
+  "identity_review_clustering": {
+    "pools": [
+      "immune_program_pool includingQC-conflicts",
+      "vascular_stromal_program_pool includingQC-conflicts"
+    ],
+    "features": "measuredRNA only; excludeACKR1 and allprotein/location/vendor spatiallabels",
+    "normalization": "CP10K+log1p then PCA30",
+    "neighbors": 30,
+    "Leiden_resolution": 0.5,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "purpose": "review-level marker/protein crosscheck; no automatic frozen fine labels"
+  },
+  "spatial": {
+    "geometry": [
+      "nearest ECcentroid",
+      "distance tosegmented ECcell polygon region, not complete vessel wall"
+    ],
+    "radii_um": [
+      25,
+      50,
+      100,
+      200
+    ],
+    "receivers": [
+      "B",
+      "T",
+      "NK"
+    ],
+    "denominators": [
+      "allQC_nonEC",
+      "B_T_NK_only"
+    ],
+    "local_null_tile_um": [
+      250,
+      500
+    ],
+    "null": "fixed positions/identity, permuteACKR1 withinEC x/y tile xlog2RNA-depth strata; preserve within-stratum target counts",
+    "permutations": 999,
+    "P": "(1+null>=obs)/1000 tiesincluded; noP0",
+    "complete_family_hypotheses": 96,
+    "BH_BY": "one complete96-slot family; missing geometry/identity retainsNA andP1denominator",
+    "boundary_ties": "exclude all nonunique nearestEC polygons and interior overlaps independently of targetlabel fromboundarysensitivity; record counts",
+    "interpretation": "within-one-section conditional exploratory tests only; no vessel/FOV/cell pseudo-patient n"
+  },
+  "remaining_limits": [
+    "no histologyTLS labels, no spatial-label-based identity",
+    "477RNA/27protein limitedpanel, noIGHD/XCL1/NCR1/CCL21",
+    "protein spillover and cell segmentation need review"
+  ],
+  "not_in_this_stage": [
+    "newLRcommunication fit",
+    "TCGA",
+    "ICI",
+    "cellstate prerequisite"
+  ],
+  "storage": "new raw/cache/analysis objects on existingresearchserver; oldupload/data preserved, no localdeletion"
+}

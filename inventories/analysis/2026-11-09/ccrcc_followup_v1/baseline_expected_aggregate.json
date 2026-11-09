@@ -1,0 +1,99 @@
+{
+  "cells_input": 690322,
+  "QC_pass": 358841,
+  "candidate_counts": {
+    "B": 7376,
+    "T": 57230,
+    "NK": 1244,
+    "Blood_EC": 49600,
+    "Lymphatic": 1682,
+    "Mural": 34701
+  },
+  "feature_types": {
+    "Gene Expression": 477,
+    "Negative Control Codeword": 41,
+    "Protein Expression": 27,
+    "Negative Control Probe": 20,
+    "Unassigned Codeword": 3
+  },
+  "distance": [
+    {
+      "identity_candidate": "B",
+      "n": 7376,
+      "median_nearest_EC_centroid_um": 24.61735069886353,
+      "fraction_within_25um": 0.5081344902386117,
+      "fraction_within_50um": 0.8382592190889371,
+      "fraction_within_100um": 0.9807483731019523,
+      "fraction_within_200um": 0.9989154013015185
+    },
+    {
+      "identity_candidate": "NK",
+      "n": 1244,
+      "median_nearest_EC_centroid_um": 22.0242690071444,
+      "fraction_within_25um": 0.5667202572347267,
+      "fraction_within_50um": 0.864951768488746,
+      "fraction_within_100um": 0.977491961414791,
+      "fraction_within_200um": 0.9967845659163987
+    },
+    {
+      "identity_candidate": "T",
+      "n": 57230,
+      "median_nearest_EC_centroid_um": 22.646314855993623,
+      "fraction_within_25um": 0.5567010309278351,
+      "fraction_within_50um": 0.8822295998602132,
+      "fraction_within_100um": 0.9828935872793989,
+      "fraction_within_200um": 0.9976585706797134
+    },
+    {
+      "identity_candidate": "Mural",
+      "n": 34701,
+      "median_nearest_EC_centroid_um": 26.707317079044234,
+      "fraction_within_25um": 0.47577879600011524,
+      "fraction_within_50um": 0.7262038557966629,
+      "fraction_within_100um": 0.9168611855566122,
+      "fraction_within_200um": 0.9927955966686839
+    },
+    {
+      "identity_candidate": "Other",
+      "n": 207008,
+      "median_nearest_EC_centroid_um": 23.364177568665742,
+      "fraction_within_25um": 0.5406409414128922,
+      "fraction_within_50um": 0.8801785438243933,
+      "fraction_within_100um": 0.9816770366362653,
+      "fraction_within_200um": 0.998309244087185
+    }
+  ],
+  "conditional_null": [
+    {
+      "identity_candidate": "B",
+      "radius_um": 50,
+      "tile_um": 250,
+      "n_permutations": 999,
+      "observed_fraction": 0.8382592190889371,
+      "null_mean": 0.8454195790150237,
+      "difference": -0.007160359926086657,
+      "p_one_sided_conditional": 0.992,
+      "interpretation": "single-section exploratory; fixed local immune counts; no patient-level inference"
+    },
+    {
+      "identity_candidate": "NK",
+      "radius_um": 50,
+      "tile_um": 250,
+      "n_permutations": 999,
+      "observed_fraction": 0.864951768488746,
+      "null_mean": 0.8766338685952832,
+      "difference": -0.011682100106537252,
+      "p_one_sided_conditional": 0.95,
+      "interpretation": "single-section exploratory; fixed local immune counts; no patient-level inference"
+    }
+  ],
+  "status": "pilot_complete_annotation_not_frozen",
+  "caveats": [
+    "one donor",
+    "RNA marker candidates require cluster/protein review",
+    "no vendor spatial labels used for inference",
+    "nearest EC centroid, not vessel boundary",
+    "TLS and histological confounding not excluded"
+  ],
+  "communications_run": false
+}

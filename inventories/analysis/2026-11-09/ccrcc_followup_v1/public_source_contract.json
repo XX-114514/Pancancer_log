@@ -1,0 +1,69 @@
+{
+  "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/xenium/4.0.0/Xenium_V1_Human_Clear_Cell_Renal_Cell_Carcinoma_FFPE_Protein/Xenium_V1_Human_Clear_Cell_Renal_Cell_Carcinoma_FFPE_Protein_outs.zip",
+  "archive_bytes": 56667227629,
+  "members": [
+    {
+      "member": "cell_feature_matrix.h5",
+      "bytes": 48241152,
+      "compressed_bytes": 47735307,
+      "CRC32": 1401451401,
+      "sha256": "5a0db6e75999b9aeb8d797c717a4af24d69826675bf5f93f6268d72c92b64bc9",
+      "alias": "M00",
+      "local_name": "member_000_PRIVATE.h5"
+    },
+    {
+      "member": "cells.parquet",
+      "bytes": 13337399,
+      "compressed_bytes": 12125083,
+      "CRC32": 3513107004,
+      "sha256": "fd77da58ec457b2e9b9eaf5f9b5ae00a79e1e996e3fafb234f28849224079b94",
+      "alias": "M01",
+      "local_name": "member_001_PRIVATE.parquet"
+    },
+    {
+      "member": "protein_panel.json",
+      "bytes": 10131,
+      "compressed_bytes": 1672,
+      "CRC32": 2269308228,
+      "sha256": "c9dfe100f99f91cdc77a8e80826f8dc082b95c3f38a3e35eb2ec20583d29c92b",
+      "alias": "M02",
+      "local_name": "member_002_PRIVATE.json"
+    },
+    {
+      "member": "gene_panel.json",
+      "bytes": 256276,
+      "compressed_bytes": 9092,
+      "CRC32": 3242670309,
+      "sha256": "27644ac3d2c46bc7c3b88ea5307754171298781daeb593ebbdebd62ee7f1d820",
+      "alias": "M03",
+      "local_name": "member_003_PRIVATE.json"
+    },
+    {
+      "member": "experiment.xenium",
+      "bytes": 3130,
+      "compressed_bytes": 1224,
+      "CRC32": 1310594514,
+      "sha256": "369847241265431b81d60cccef6c58d5107e313fb91cc874a65bab11d53ac3d9",
+      "alias": "M04",
+      "local_name": "member_004_PRIVATE.xenium"
+    },
+    {
+      "member": "metrics_summary.csv",
+      "bytes": 2160,
+      "compressed_bytes": 826,
+      "CRC32": 338770860,
+      "sha256": "f23702715fadd6fdfd909bac01c976901ce2b1834ec5828842712db3571c1686",
+      "alias": "M05",
+      "local_name": "member_005_PRIVATE.csv"
+    },
+    {
+      "member": "cell_boundaries.parquet",
+      "bytes": 58569848,
+      "compressed_bytes": 57377888,
+      "CRC32": 2287761391,
+      "alias": "M06",
+      "local_name": "cell_boundaries_PRIVATE.parquet",
+      "sha256": null
+    }
+  ]
+}

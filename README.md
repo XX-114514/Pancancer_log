@@ -1,3 +1,5 @@
+> **2026-11-09 ccRCC优先随访启动**：[独立身份、蛋白与局部血管邻域](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)。旧EC门槛含ACKR1，新分析改用独立EC marker；服务器新输入恢复及有限复算部署，实际新结果待。
+
 > **CM完整验证更新（2026-11-09）**：[任务、全量结果和后续分析](inventories/analysis/2026-11-09/v4_CM_validation_review_v1/README.md)。53/53 Visium、53/53 niche、25/25通讯组、13/13成像数组审核完成；六例乳腺输入/计算齐备。ACKR1邻域组成有支持，精确三方特异、通讯机制和临床增量尚未成立。
 
 ## 2026-11-08 ccRCC空间检查点
