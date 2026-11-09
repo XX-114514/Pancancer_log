@@ -299,6 +299,21 @@ Myeloid、Endothelial 等第三轮审阅完成后再做；Microglia 在自己的
 
 第二轮的结果表和细胞标签已经同步到旧服务器（`object.h5ad` 按用户决定不传），见运行记录。
 
+## 7A. 四个组织池的十种子共识（2026-11-09，用户决定）
+
+用 2026-11-08 接续方法的同一 `consensus()`、同一 10 个种子（2026110800–809）、合并阈值 0.25、稳定阈值 0.7，作用于第二轮对象和第二轮审阅标签。作业 30716245–248，全部 COMPLETED。脚本：[consensus_tissue_pools_v1.py](../scripts/annotation_v2/consensus_tissue_pools_v1.py)；汇总：[tissue_consensus_v1](../inventories/annotation_v2/tissue_consensus_v1/)。
+
+| 池 | 对象细胞 | 保留 | 保留且稳定 | 符合主分析条件 |
+|---|---:|---:|---:|---:|
+| Kupffer | 15,305 | 857 | 848 | 846 |
+| Microglia | 45,837 | 36,467 | 34,196 | 21,982 |
+| Alveolar_macrophage | 61,053 | 8,048 | 7,809 | 7,788 |
+| Sinusoidal_EC | 5,336 | 387 | 386 | 386 |
+
+- 工作版里 `observed_tissue_no_seed_consensus` 的33,398个细胞中，31,002个符合条件；工作版文件尚未更新。
+- 已观察：Microglia_proliferating（355个）只有14个保持原标签且都不稳定；Microglia_S100A8 有728个（约26%）众数归入 Microglia。
+- 边界：Kupffer、AM、Sinusoidal_EC 各只有一个保留标签，这里只检验该簇边界，不验证其内部亚型。这是工作结果，不是最终注释。
+
 ## 8. 未完成和下一步（建议）
 
 1. 多种子共识第二步：按 §2.10 写定的规则合并亚型、计算每个细胞的稳定性。

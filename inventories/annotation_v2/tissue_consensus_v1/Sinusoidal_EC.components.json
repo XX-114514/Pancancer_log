@@ -1,0 +1,47 @@
+{
+  "EC_T_doublet_like": [
+    "EC_T_doublet_like"
+  ],
+  "EC_liver": [
+    "EC_liver"
+  ],
+  "EC_liver_CA4": [
+    "EC_liver_CA4"
+  ],
+  "EC_liver_COL15A1": [
+    "EC_liver_COL15A1"
+  ],
+  "EC_liver_DNASE1L3": [
+    "EC_liver_DNASE1L3"
+  ],
+  "EC_liver_arterial": [
+    "EC_liver_arterial"
+  ],
+  "EC_liver_capillary": [
+    "EC_liver_capillary"
+  ],
+  "EC_liver_long_genes": [
+    "EC_liver_long_genes"
+  ],
+  "EC_liver_low_depth": [
+    "EC_liver_low_depth"
+  ],
+  "EC_liver_tip": [
+    "EC_liver_tip"
+  ],
+  "EC_liver_venous": [
+    "EC_liver_venous"
+  ],
+  "EC_macrophage_doublet_like": [
+    "EC_macrophage_doublet_like"
+  ],
+  "EC_with_mural_RNA": [
+    "EC_with_mural_RNA"
+  ],
+  "Lymphatic_EC_liver": [
+    "Lymphatic_EC_liver"
+  ],
+  "Sinusoidal_EC": [
+    "Sinusoidal_EC"
+  ]
+}

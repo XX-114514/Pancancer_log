@@ -1,0 +1,28 @@
+tier	lin	fate	cells	lineage_marker_share	epithelial_2of4_share	cnv_corr_median
+identity_with_flag	r3_Myeloid	retained_main_like	1	1.0	0.0	0.182
+identity_with_flag	r3_Stromal	retained_flagged	2	0.5	0.0	
+identity_with_flag	r3_Stromal	retained_low_depth	2	0.0	0.0	0.43
+identity_with_flag	r3_Stromal	retained_main_like	2	1.0	0.5	0.145
+likely_residual_tumour	r3_B_Plasma	retained_low_depth	1	0.0	0.0	0.646
+likely_residual_tumour	r3_Endothelial	retained_low_depth	4	0.25	0.0	0.418
+likely_residual_tumour	r3_Endothelial	retained_main_like	2	0.5	0.0	-0.031
+likely_residual_tumour	r3_Myeloid	retained_low_depth	8	0.75	0.0	0.418
+likely_residual_tumour	r3_Myeloid	retained_main_like	2	0.5	0.0	0.102
+likely_residual_tumour	r3_Stromal	retained_flagged	5	0.8	0.0	-0.086
+likely_residual_tumour	r3_Stromal	retained_low_depth	25	0.76	0.24	0.124
+likely_residual_tumour	r3_Stromal	retained_main_like	21	0.905	0.286	-0.018
+program_no_identity	r3_B_Plasma	retained_low_depth	720	0.765	0.135	0.187
+program_no_identity	r3_B_Plasma	retained_main_like	269	0.862	0.045	0.15
+program_no_identity	r3_Endothelial	retained_low_depth	403	0.308	0.047	0.112
+program_no_identity	r3_Endothelial	retained_main_like	69	0.551	0.087	0.095
+program_no_identity	r3_Microglia	retained_low_depth	2	0.0	0.0	0.057
+program_no_identity	r3_Myeloid	retained_low_depth	498	0.719	0.046	0.253
+program_no_identity	r3_Myeloid	retained_main_like	1367	0.876	0.034	0.211
+program_no_identity	r3_Stromal	retained_flagged	68	0.912	0.074	0.023
+program_no_identity	r3_Stromal	retained_low_depth	1603	0.749	0.096	0.107
+program_no_identity	r3_Stromal	retained_main_like	931	0.936	0.231	-0.0
+program_no_identity	r3_T_NK	retained_flagged	1	0.0	0.0	
+program_no_identity	r3_T_NK	retained_low_depth	1325	0.56	0.018	0.096
+program_no_identity	r3_T_NK	retained_main_like	458	0.882	0.009	0.121
+technical_not_a_tumour_call	r3_B_Plasma	retained_low_depth	1	0.0	1.0	0.174
+technical_not_a_tumour_call	r3_T_NK	retained_low_depth	3	0.0	0.0	0.091

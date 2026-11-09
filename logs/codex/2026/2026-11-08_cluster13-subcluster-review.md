@@ -33,3 +33,9 @@ Cluster 13 subcluster diagnostic: manual label draft and residual-tumour review
 
 ## 文字更正（2026-11-08，用户要求）
 更新 methods/tme-annotation-v2-lodi-workflow-20261105.md 的簇13诊断段：子簇10改为管腔祖细胞样，子簇33、18 不再列为中性粒双细胞，计数按复核分类修正，并加更正说明保留原文措辞。未改细胞标签、恶性判定或 CoVarNet v1 范围。
+
+## 交叉表与四个组织池共识（2026-11-09，用户要求"12都做"）
+已观察：68,374个细胞无缺失连接 v2 标签；保留8,011个，其中 likely_residual_tumour 68个；145个呈上皮信号且无谱系 marker。作业 30716245–248（Kupffer、Microglia、Alveolar_macrophage、Sinusoidal_EC）COMPLETED，第二步写入 scratch `lineage_r3/consensus/tissue_v1`。符合主分析条件：846、21,982、7,788、386，合计31,002。
+脚本：scripts/annotation_v1/cluster13_v2_crosstab_join_v1.py、cluster13_v2_crosstab_evidence_v1.py（需先运行 join，输出 m.pkl 与 draft.tsv 同目录）、scripts/annotation_v2/consensus_tissue_pools_v1.py。
+失败或修正：无失败。之前说"约1.37万细胞归入免疫或基质"，其中含已剔除或搁置的细胞；实际仍保留在谱系池的是8,011个。
+未验证：工作版 sidecar 在旧服务器，未更新；单标签组织池只检验簇边界；未作单细胞恶性复判。

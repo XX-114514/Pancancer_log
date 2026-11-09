@@ -1,0 +1,54 @@
+{
+  "Alveolar_macrophage": [
+    "Alveolar_macrophage"
+  ],
+  "Mac_T_doublet_like": [
+    "Mac_T_doublet_like"
+  ],
+  "Mac_lung": [
+    "Mac_lung"
+  ],
+  "Mac_lung_CCL2": [
+    "Mac_lung_CCL2"
+  ],
+  "Mac_lung_CHI3L1": [
+    "Mac_lung_CHI3L1"
+  ],
+  "Mac_lung_CHIT1_CCL18": [
+    "Mac_lung_CHIT1_CCL18"
+  ],
+  "Mac_lung_F13A1|Mac_lung_inflammatory": [
+    "Mac_lung_F13A1",
+    "Mac_lung_inflammatory"
+  ],
+  "Mac_lung_FN1": [
+    "Mac_lung_FN1"
+  ],
+  "Mac_lung_FOLR2_CCL18": [
+    "Mac_lung_FOLR2_CCL18"
+  ],
+  "Mac_lung_HAMP": [
+    "Mac_lung_HAMP"
+  ],
+  "Mac_lung_IFN": [
+    "Mac_lung_IFN"
+  ],
+  "Mac_lung_TNF": [
+    "Mac_lung_TNF"
+  ],
+  "Mac_lung_hypoxic_SPP1": [
+    "Mac_lung_hypoxic_SPP1"
+  ],
+  "Mac_lung_low_depth": [
+    "Mac_lung_low_depth"
+  ],
+  "Mac_lung_proliferating": [
+    "Mac_lung_proliferating"
+  ],
+  "Mac_with_epithelial_RNA": [
+    "Mac_with_epithelial_RNA"
+  ],
+  "Mono_lung": [
+    "Mono_lung"
+  ]
+}

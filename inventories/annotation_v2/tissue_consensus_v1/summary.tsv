@@ -1,0 +1,5 @@
+pool	object_cells	retained	retained_stable	retained_stability_median	keep_tissue_cells	main_subtype_cells	components	merged_pairs	tied_majorities	modal_ties
+Kupffer	15305	857	848	1.0	857	846	14	1	0	189
+Microglia	45837	36467	34196	1.0	24106	21982	12	0	0	1539
+Alveolar_macrophage	61053	8048	7809	1.0	8048	7788	17	1	0	2023
+Sinusoidal_EC	5336	387	386	1.0	387	386	15	0	0	54

@@ -1,3 +1,7 @@
+## 2026-11-09 四个组织池十种子共识
+
+[方法与结果](methods/tme-annotation-v2-lineage-rounds-20261107.md)：Kupffer、Microglia、AM、Sinusoidal_EC 的十种子共识已完成，31,002个细胞符合主分析条件；工作版 sidecar（33,398个无种子共识细胞）尚未更新。簇13经疑似残留肿瘤子簇进入谱系池的细胞仅68个。
+
 ## 2026-11-08 ccRCC空间检查点
 
 截至2026-11-08 12:22:54 UTC：Visium逐张审核46/53；CPDB High/Low逐比较25/25。新ccRCC单例空间候选试分析完成，未见局部条件下额外B/NK血管富集；身份/分割、服务器保存、跨患者复制待验收。[肾透明细胞癌面板与空间试分析](methods/V4-ccRCC-spatial-pilot-20261108.md)

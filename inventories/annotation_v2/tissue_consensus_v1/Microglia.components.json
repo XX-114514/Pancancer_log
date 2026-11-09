@@ -1,0 +1,38 @@
+{
+  "Mac_glioma_F13A1": [
+    "Mac_glioma_F13A1"
+  ],
+  "Mac_glioma_MRC1": [
+    "Mac_glioma_MRC1"
+  ],
+  "Mac_glioma_TGFBI": [
+    "Mac_glioma_TGFBI"
+  ],
+  "Microglia": [
+    "Microglia"
+  ],
+  "Microglia_IFN": [
+    "Microglia_IFN"
+  ],
+  "Microglia_S100A8": [
+    "Microglia_S100A8"
+  ],
+  "Microglia_T_doublet_like": [
+    "Microglia_T_doublet_like"
+  ],
+  "Microglia_inflammatory": [
+    "Microglia_inflammatory"
+  ],
+  "Microglia_low_depth": [
+    "Microglia_low_depth"
+  ],
+  "Microglia_neural_doublet_like": [
+    "Microglia_neural_doublet_like"
+  ],
+  "Microglia_proliferating": [
+    "Microglia_proliferating"
+  ],
+  "Microglia_stress": [
+    "Microglia_stress"
+  ]
+}

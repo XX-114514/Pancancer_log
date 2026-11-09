@@ -1,0 +1,65 @@
+sub_r1	cells	non_malignant	manual_label_draft	manual_class	residual_review	parenchymal	removed_or_set_aside	retained_flagged	retained_low_depth	retained_main_like	retained	lin_marker	epi2
+23	30839	11435	program_stress_IEG_low_depth	program_mixed	program_no_identity	7092	1565	4	2248	526	2778.0	0.661	0.041
+16	22685	6035	program_stress_IEG	program_mixed	program_no_identity	4413	986	31	292	313	636.0	0.844	0.212
+24	21593	5268	program_low_depth_ambient	program_mixed	program_no_identity	3938	452	0	642	236	878.0	0.696	0.044
+4	26827	5093	program_ribosomal_glycolytic	program_mixed	program_no_identity	3306	911	0	489	387	876.0	0.646	0.055
+3	23267	4867	program_housekeeping_MHC	program_mixed	program_no_identity	3567	536	0	383	381	764.0	0.857	0.052
+10	4938	4445	breast_luminal_progenitor_SAA1_LTF	organ_epithelium	not_flagged	4427	14	0	3	1	4.0	0.75	0.5
+2	20395	3559	program_OXPHOS_glycolytic	program_mixed	program_no_identity	2401	535	10	103	510	623.0	0.926	0.14
+17	16886	3020	program_MHC_interferon	program_mixed	program_no_identity	2339	361	13	67	240	320.0	0.884	0.222
+35	5620	2978	prostate_basal_KRT15_SLC14A1	organ_epithelium	not_flagged	2903	58	0	4	13	17.0	0.706	0.882
+28	16627	2586	program_generic_epithelial_LGALS3_CLDN4	program_mixed	program_no_identity	2539	34	0	9	4	13.0	0.769	0.308
+33	12560	2227	squamous_KRT6A_S100A8_S100A9	tumour_like	likely_residual_tumour	2111	104	0	11	1	12.0	0.583	0.083
+0	9121	2032	program_translation_ribosomal	program_mixed	program_no_identity	1105	471	4	230	222	456.0	0.84	0.037
+31	7669	1634	squamous_partial_EMT_FN1_INHBA	tumour_like	likely_residual_tumour	1456	144	4	16	14	34.0	0.853	0.235
+7	6236	1600	prostate_luminal_club_like_WFDC2_TMPRSS2	organ_epithelium	identity_with_flag	1588	8	2	0	2	4.0	0.75	0.25
+20	2497	1480	alveolar_AT2_SFTPB_NAPSA	organ_epithelium	not_flagged	1479	1	0	0	0			
+13	8109	1479	program_proliferation	program_mixed	program_no_identity	1218	83	4	26	148	178.0	0.882	0.129
+19	3421	1266	colonic_goblet_MUC2_TFF3	organ_epithelium	identity_with_flag	1263	1	0	1	1	2.0	0.5	0.0
+30	6229	1219	program_low_information_MHC_lncRNA	program_mixed	program_no_identity	1103	78	0	20	18	38.0	0.711	0.053
+14	6460	1188	program_hypoxia_glycolysis	program_mixed	program_no_identity	402	638	3	36	109	148.0	0.905	0.169
+43	6607	755	breast_luminal_HR_ANKRD30A_ESR1	tumour_like	likely_residual_tumour	755	0	0	0	0			
+42	874	618	low_quality_42	low_quality	not_flagged	371	233	0	12	2	14.0	0.429	0.0
+18	1403	445	squamous_KRT5_KRT6A_stromal_admixture	tumour_like	likely_residual_tumour	420	24	0	1	0	1.0	0.0	0.0
+39	1655	363	erythroid_contaminated_epithelial	ambient_or_doublet	technical_not_a_tumour_call	352	9	0	2	0	2.0	0.0	0.5
+58	498	351	pancreatic_duct_reactive_MMP7_KRT7	organ_epithelium	not_flagged	351	0	0	0	0			
+21	1467	289	airway_club_SCGB3A1_BPIFB1	organ_epithelium	identity_with_flag	289	0	0	0	0			
+38	294	251	unresolved_38_low_information_nuclear	ambient_or_doublet	not_flagged	23	63	0	127	38	165.0	0.473	0.0
+52	2627	235	basal_like_KRT17_FHL2	tumour_like	likely_residual_tumour	199	28	1	1	6	8.0	0.625	0.0
+37	1087	219	basal_like_KRT14_AREG	tumour_like	likely_residual_tumour	215	4	0	0	0			
+68	181	178	mesothelial_ITLN1_C1S	non_epithelial_parenchyma	not_flagged	171	4	0	3	0	3.0	1.0	0.667
+9	344	163	prostate_luminal_KLK3_MSMB	organ_epithelium	identity_with_flag	161	1	0	1	0	1.0	0.0	0.0
+44	137	137	unresolved_44_multilineage_ambient	ambient_or_doublet	not_flagged	136	1	0	0	0			
+27	410	111	breast_tumour_like_PEG10_MDK	tumour_like	likely_residual_tumour	104	2	0	4	1	5.0	1.0	0.6
+54	953	109	thyroid_follicular_FN1_HOPX	tumour_like	likely_residual_tumour	109	0	0	0	0			
+59	287	100	pancreatic_duct_CFTR_SLC4A4	organ_epithelium	identity_with_flag	99	1	0	0	0			
+53	1067	75	melanoma_like_VIM_S100A1	tumour_like	likely_residual_tumour	69	4	0	1	1	2.0	1.0	0.0
+49	533	71	program_housekeeping_PDAC	program_mixed	program_no_identity	61	4	0	6	0	6.0	0.833	0.0
+29	277	64	gastric_foveolar_MUC5AC_TFF1	organ_epithelium	identity_with_flag	64	0	0	0	0			
+61	433	56	melanocytic_MLANA_MITF	tumour_like	likely_residual_tumour	55	1	0	0	0			
+6	548	53	hepatic_intestinal_tumour_like_SPINK1_CES2	tumour_like	likely_residual_tumour	48	4	0	1	0	1.0	1.0	0.0
+51	513	47	low_quality_51	low_quality	technical_not_a_tumour_call	38	7	0	2	0	2.0	0.0	0.0
+65	641	44	doublet_like_squamous_fibroblast	ambient_or_doublet	likely_residual_tumour	43	1	0	0	0			
+57	1063	43	urothelial_tumour_like_AQP3_S100P	tumour_like	likely_residual_tumour	42	0	0	1	0	1.0	0.0	0.0
+69	859	36	thyroid_like_CHI3L1_TIMP1	tumour_like	likely_residual_tumour	35	1	0	0	0			
+46	36	26	retinal_pigment_epithelium_BEST1_RDH5	non_epithelial_parenchyma	not_flagged	0	11	0	15	0	15.0	0.0	0.133
+62	847	24	breast_tumour_like_KRT15_ribosomal	tumour_like	likely_residual_tumour	21	1	0	2	0	2.0	0.5	0.0
+73	30	20	cholangiocyte_like_DCDC2_FGFR2	organ_epithelium	not_flagged	19	1	0	0	0			
+32	2526	13	low_quality_32	low_quality	technical_not_a_tumour_call	11	2	0	0	0			
+55	415	9	colon_epithelial_tumour_like_MUC2_LGALS4	tumour_like	likely_residual_tumour	8	1	0	0	0			
+26	705	8	low_quality_26_ambient	low_quality	technical_not_a_tumour_call	8	0	0	0	0			
+5	311	7	gastrointestinal_epithelial_tumour_like_LGALS4_TFF1	tumour_like	likely_residual_tumour	7	0	0	0	0			
+8	327	7	epithelial_tumour_like_ISG15_EPCAM	tumour_like	likely_residual_tumour	7	0	0	0	0			
+40	1994	6	breast_luminal_tumour_like_GATA3_TRPS1	tumour_like	likely_residual_tumour	6	0	0	0	0			
+60	712	5	breast_tumour_like_SFRP1_MGP	tumour_like	likely_residual_tumour	5	0	0	0	0			
+25	397	4	hepatocyte_tumour_like_APOA1_ALB	tumour_like	likely_residual_tumour	3	0	0	0	1	1.0	1.0	0.0
+12	120	3	bladder_tumour_like_S100P_CCND1	tumour_like	likely_residual_tumour	3	0	0	0	0			
+1	84	3	thyroid_tumour_like_TG	tumour_like	likely_residual_tumour	3	0	0	0	0			
+50	910	3	basal_like_BCC_KRT17	tumour_like	likely_residual_tumour	2	1	0	0	0			
+56	586	3	breast_tumour_like_CRABP2	tumour_like	likely_residual_tumour	2	1	0	0	0			
+34	383	2	renal_pancreatic_tumour_like_PDZK1IP1	tumour_like	likely_residual_tumour	1	0	0	0	1	1.0	0.0	0.0
+66	424	2	breast_tumour_like_CRABP2_PRRX1	tumour_like	likely_residual_tumour	2	0	0	0	0			
+72	1695	2	pancreatic_tumour_like_AKR1C2_S100P	tumour_like	likely_residual_tumour	2	0	0	0	0			
+11	256	1	breast_tumour_like_CTNNB1_SOX4	tumour_like	likely_residual_tumour	1	0	0	0	0			
+48	15	1	unresolved_48_15_cells	ambient_or_doublet	technical_not_a_tumour_call	1	0	0	0	0			
+71	212	1	renal_tumour_like_NDUFA4L2	tumour_like	likely_residual_tumour	0	1	0	0	0			

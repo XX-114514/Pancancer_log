@@ -1,0 +1,45 @@
+{
+  "Kupffer": [
+    "Kupffer"
+  ],
+  "LAM_liver": [
+    "LAM_liver"
+  ],
+  "Mac_T_doublet_like": [
+    "Mac_T_doublet_like"
+  ],
+  "Mac_liver": [
+    "Mac_liver"
+  ],
+  "Mac_liver_F13A1": [
+    "Mac_liver_F13A1"
+  ],
+  "Mac_liver_IFN": [
+    "Mac_liver_IFN"
+  ],
+  "Mac_liver_VCAM1": [
+    "Mac_liver_VCAM1"
+  ],
+  "Mac_liver_long_genes": [
+    "Mac_liver_long_genes"
+  ],
+  "Mac_liver_low_depth": [
+    "Mac_liver_low_depth"
+  ],
+  "Mac_liver_one_sample": [
+    "Mac_liver_one_sample"
+  ],
+  "Mac_liver_stress": [
+    "Mac_liver_stress"
+  ],
+  "Mac_with_hepatocyte_RNA": [
+    "Mac_with_hepatocyte_RNA"
+  ],
+  "Mono_liver": [
+    "Mono_liver"
+  ],
+  "Mono_liver_inflammatory|cDC2_liver": [
+    "Mono_liver_inflammatory",
+    "cDC2_liver"
+  ]
+}

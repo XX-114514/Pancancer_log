@@ -34,3 +34,24 @@
 - 未使用细胞级共表达检验双细胞；子簇65、18 的双细胞解释未确认。
 - 恶性判定未更改；"tumour_like"是基于聚合证据的解释，不是恶性判定。
 - 未与 v2 逐细胞标签做子簇交叉表。
+
+## 与 v2 标签的交叉表（2026-11-09）
+
+68,374个非恶性细胞按 cell_id 与 `cell_labels_r3.tsv.gz` 一一连接，无缺失。文件：`c13_subcluster_by_v2_fate.tsv`、`c13_subcluster_by_v2_label.tsv`、`c13_retained_lineage_evidence.tsv`。
+
+| 人工分层 | 实质 | 剔除或搁置 | 保留：标记 | 保留：低深度 | 保留：主分析样 | 合计 |
+|---|---:|---:|---:|---:|---:|---:|
+| likely_residual_tumour | 5,734 | 322 | 5 | 38 | 25 | 6,124 |
+| identity_with_flag | 3,464 | 11 | 2 | 2 | 3 | 3,482 |
+| program_no_identity | 33,484 | 6,654 | 69 | 4,551 | 3,094 | 47,852 |
+| technical_not_a_tumour_call | 410 | 18 | 0 | 4 | 0 | 432 |
+| not_flagged | 9,880 | 386 | 0 | 164 | 54 | 10,484 |
+| 合计 | 52,972 | 7,391 | 76 | 4,759 | 3,176 | 68,374 |
+
+"保留"指 v2 中仍在 T/NK、髓系、B/浆、基质、内皮或小胶质池（`r3_*`），共8,011个。"主分析样"只按 r1/r2 action 近似，不等于旧服务器工作版的 `include_main_subtype`。
+
+- 已观察：8,011个保留细胞中，likely_residual_tumour 只有68个（主分析样25个）。145个（1.8%）至少检出 EPCAM、KRT8、KRT18、KRT19 中两个、又没有对应谱系 marker，其中137个来自 program_no_identity，没有一个来自 likely_residual_tumour。
+- 解释：簇13经疑似残留肿瘤子簇进入 CoVarNet 候选的细胞量可忽略。
+- 未验证：低深度细胞本来 marker 检出就少；CNV 中位数在各分层差异不大，未作单细胞恶性复判。
+
+未改动任何标签。
