@@ -1,4 +1,8 @@
-## 2026-11-09 ccRCC优先补充探索
+## 2026-11-09 ccRCC沿用现有身份
+
+[当前主报告](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)：7输入/旧重放已接受；按用户要求身份复查后置。原358,841 QC身份未改，12组成/108 LR完成并审计；EC—NK部分支持，三方未支持，五条Mural/B/T或EC/T方向有表达耦合支持。CellChat四参数运行，最终数组验收待。
+
+## 2026-11-09 ccRCC早期启动快照（已由上方主线接续）
 
 [当前实际状态](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)：隔离依赖和新控制器部署；六核心与新增轮廓最小恢复中，旧作业不改。ACKR1独立EC规则、蛋白缩放纠正、RNA-only聚类与完整96局部检验已落实代码，新结果待。
 

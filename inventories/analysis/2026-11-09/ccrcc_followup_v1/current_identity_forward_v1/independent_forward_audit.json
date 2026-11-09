@@ -1,0 +1,17 @@
+{
+  "UTC": "2026-11-09T08:40:21.501863+00:00",
+  "audit_pass": true,
+  "identity_source_SHA_preserved": "d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "original_identity_changed": false,
+  "checks": [
+    "source identity SHA/QC/names unchanged",
+    "full graph Euclidean distances and 16 brute-force nearest6 sets",
+    "12 CM composition observed counts and exact plus-one P",
+    "108 LR counts/missing slots/P",
+    "independent complete-family BH/BY",
+    "151833 CellChat input labels match existing identities"
+  ],
+  "max_graph_error_um": 0.0,
+  "max_FDR_error": 1.0061396160665481e-16,
+  "scope": "Numerical audit, not reannotation or patient-level/causal validation"
+}

@@ -1,0 +1,60 @@
+{
+  "UTC_evidence": "2026-11-09T08:53:03.733507+00:00",
+  "identity": "original spatial_pilot_v1",
+  "identity_source_SHA": "d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "identity_changed": false,
+  "identity_review_prerequisite": false,
+  "CellChat": "2.2.0",
+  "cells": 151833,
+  "native_RNA_genes": 477,
+  "requested_variants": 4,
+  "completed_variants": 2,
+  "controller_live": true,
+  "worker_roles": [
+    {
+      "role": "R",
+      "status": "running",
+      "CPU_seconds": 818.1
+    }
+  ],
+  "variant_results": [
+    {
+      "status": "SPATIAL_CELLCHAT_NATIVE_UNIT_VARIANT_FINISHED_AND_ARRAY_READBACK_PASS",
+      "UTC": "2026-11-09T08:46:41Z",
+      "seconds": 281.4917,
+      "n_cells": 151833,
+      "n_labels": 6,
+      "n_candidate_identity_pair_LR_events": 184,
+      "n_BH_identity_pair_LR_events": 178,
+      "n_interactions_in_model": 36,
+      "interaction_range_um": 100,
+      "contact_range_um": 10,
+      "scale_distance": 0.0579,
+      "nboot": 100,
+      "CellChat": "2.2.0",
+      "protein_only_and_all_optional_components_measured": true,
+      "broad_context_not_exact_CM_replication": true,
+      "no_contact_causal_patient_claim": true
+    },
+    {
+      "status": "SPATIAL_CELLCHAT_NATIVE_UNIT_VARIANT_FINISHED_AND_ARRAY_READBACK_PASS",
+      "UTC": "2026-11-09T08:51:22Z",
+      "seconds": 280.6505,
+      "n_cells": 151833,
+      "n_labels": 6,
+      "n_candidate_identity_pair_LR_events": 184,
+      "n_BH_identity_pair_LR_events": 178,
+      "n_interactions_in_model": 36,
+      "interaction_range_um": 250,
+      "contact_range_um": 10,
+      "scale_distance": 0.0579,
+      "nboot": 100,
+      "CellChat": "2.2.0",
+      "protein_only_and_all_optional_components_measured": true,
+      "broad_context_not_exact_CM_replication": true,
+      "no_contact_causal_patient_claim": true
+    }
+  ],
+  "LR_pairs_entering_model": 36,
+  "status": "RUNNING"
+}

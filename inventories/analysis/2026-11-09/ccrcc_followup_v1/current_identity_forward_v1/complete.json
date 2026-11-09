@@ -1,0 +1,24 @@
+{
+  "UTC": "2026-11-09T08:39:15.892355+00:00",
+  "status": "EXISTING_IDENTITY_FORWARD_COMPUTED_CELLCHAT_INPUT_READY",
+  "identity": {
+    "B": 7376,
+    "T": 57230,
+    "NK": 1244,
+    "Blood_EC": 49600,
+    "Lymphatic": 1682,
+    "Mural": 34701
+  },
+  "original_QC_keep": 358841,
+  "CellChat_cells": 151833,
+  "composition_hypotheses": 12,
+  "composition_BH_lt05": 4,
+  "LR_hypotheses": 108,
+  "LR_measured_slots": 72,
+  "LR_BH_lt05": 26,
+  "LR_BY_lt05": 22,
+  "gene_panel": 477,
+  "identity_changed": false,
+  "reannotation_prerequisite": false,
+  "no_patient_causal_or_receptor_activation_claim": true
+}

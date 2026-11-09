@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "equal_fields": [
+    "cells_input",
+    "QC_pass",
+    "candidate_counts",
+    "distance",
+    "conditional_null"
+  ],
+  "UTC": "2026-11-09T07:47:11.931479+00:00"
+}

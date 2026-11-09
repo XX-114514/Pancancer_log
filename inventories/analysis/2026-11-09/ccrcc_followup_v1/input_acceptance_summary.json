@@ -1,0 +1,68 @@
+{
+  "UTC": "2026-11-09T08:04:32.275386+00:00",
+  "core6_previous_independent_SHA": true,
+  "boundary_CRC_validated": true,
+  "whole_archive_MD5_verified": false,
+  "accepted_member_count": 7,
+  "uncompressed_selected_bytes": 120420096,
+  "member_evidence": [
+    {
+      "member": "cell_feature_matrix.h5",
+      "bytes": 48241152,
+      "sha256": "5a0db6e75999b9aeb8d797c717a4af24d69826675bf5f93f6268d72c92b64bc9",
+      "CRC32": 1401451401,
+      "member_CRC_validated": true,
+      "independent_previous_SHA_match": true
+    },
+    {
+      "member": "cells.parquet",
+      "bytes": 13337399,
+      "sha256": "fd77da58ec457b2e9b9eaf5f9b5ae00a79e1e996e3fafb234f28849224079b94",
+      "CRC32": 3513107004,
+      "member_CRC_validated": true,
+      "independent_previous_SHA_match": true
+    },
+    {
+      "member": "protein_panel.json",
+      "bytes": 10131,
+      "sha256": "c9dfe100f99f91cdc77a8e80826f8dc082b95c3f38a3e35eb2ec20583d29c92b",
+      "CRC32": 2269308228,
+      "member_CRC_validated": true,
+      "independent_previous_SHA_match": true
+    },
+    {
+      "member": "gene_panel.json",
+      "bytes": 256276,
+      "sha256": "27644ac3d2c46bc7c3b88ea5307754171298781daeb593ebbdebd62ee7f1d820",
+      "CRC32": 3242670309,
+      "member_CRC_validated": true,
+      "independent_previous_SHA_match": true
+    },
+    {
+      "member": "experiment.xenium",
+      "bytes": 3130,
+      "sha256": "369847241265431b81d60cccef6c58d5107e313fb91cc874a65bab11d53ac3d9",
+      "CRC32": 1310594514,
+      "member_CRC_validated": true,
+      "independent_previous_SHA_match": true
+    },
+    {
+      "member": "metrics_summary.csv",
+      "bytes": 2160,
+      "sha256": "f23702715fadd6fdfd909bac01c976901ce2b1834ec5828842712db3571c1686",
+      "CRC32": 338770860,
+      "member_CRC_validated": true,
+      "independent_previous_SHA_match": true
+    },
+    {
+      "member": "cell_boundaries.parquet",
+      "bytes": 58569848,
+      "sha256": "54eb23295e19b760fcf8f5f27f127bc42e48c95ca4bc8b5d152776a50963fe83",
+      "CRC32": 2287761391,
+      "member_CRC_validated": true,
+      "independent_previous_SHA_match": false
+    }
+  ],
+  "old_tasks_and_local_sources_preserved": true,
+  "source_cache_blocks": 119
+}

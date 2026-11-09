@@ -1,0 +1,14 @@
+{
+  "renderer_Matplotlib": "3.10.9",
+  "input_audit_pass": true,
+  "new_hypothesis_tests": 0,
+  "identity_changed": false,
+  "input_tables": {
+    "CM03_existing_identity_spatial12.tsv": "a0817feaddb8ba8e1d4b95d86aa13e8c9a8a1b3911a4a591c424c1a8c83567fe",
+    "spatial_expression_communication_complete108.tsv": "1d1787c35ce0a1b9e0899f1ad9641c7a6c72183fb0e838c8c2e5364fd9ff689f"
+  },
+  "figures": {
+    "CM03_current_identity_spatial12.png": "bf395fdf68bfd72801e52767abede3ff3121495399babdfd0b7a81f3b2dc095a",
+    "current_identity_spatial_LR108.png": "6165b50cc8ea4be6f6bd0213c21d70e2ed9835fbc36a253c0be7f7a401db0b36"
+  }
+}

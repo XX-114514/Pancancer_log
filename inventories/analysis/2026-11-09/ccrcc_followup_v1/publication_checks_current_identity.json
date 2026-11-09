@@ -1,0 +1,11 @@
+{
+  "repository_validation": "0 errors;1 preexisting historical path warning",
+  "current_identity_data_audit": "PASS original358841QC, current labels/source SHA unchanged",
+  "families": "complete12 and complete108; missing36 retained",
+  "new_code_AST_JSON_TSV_links_privacy_size": "PASS",
+  "figures_v2": "visually checked; input table SHA unchanged; independent colourbar position",
+  "public_contains": "reviewed aggregate groups/parameters, code, methods, sanitized logs",
+  "public_excludes": "cell/patient/coordinate rows, matrices, raw models/logs, actual server/account paths",
+  "existing_main_tracked_edits_preserved": 15,
+  "CellChat_checkpoint": "2/4 at 08:53:03 UTC; final whole-model audit pending"
+}

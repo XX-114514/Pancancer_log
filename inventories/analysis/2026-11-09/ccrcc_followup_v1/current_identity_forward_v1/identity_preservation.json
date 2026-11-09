@@ -1,0 +1,14 @@
+{
+  "original_identity_SHA": "d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "QC_keep": 358841,
+  "identity_counts": {
+    "B": 7376,
+    "T": 57230,
+    "NK": 1244,
+    "Blood_EC": 49600,
+    "Lymphatic": 1682,
+    "Mural": 34701
+  },
+  "new_identity_or_cluster_filters": 0,
+  "positions_rescaled": false
+}

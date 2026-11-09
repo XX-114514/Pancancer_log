@@ -1,0 +1,6 @@
+issue	topic	observation_or_question	disposition
+I01	B/ASC跨模态信号	RNA ASC样程序伴较高CD3E/CD31蛋白；技术混合、邻细胞信号或抗体背景尚不能区分	记录后置；本轮不据此剔除或改身份
+I02	B/ASC诊断池中的其他程序	出现IL3RA/LILRA4/TCF4/IRF8等pDC样程序；不能把诊断池全部视作B	记录后置；不转成当前身份的误注数量
+I03	内皮程序异质性	二marker规则与完整RNA程序不完全一致；原门槛计入ACKR1，ACKR1分层存在选择依赖	保留现有身份；作为相关分层解释限制
+I04	T状态与身份混淆风险	单一细簇跨种子匹配可过滤仍属T大类的状态；诊断v3/v4另存	不作为空间或通讯主线前置；不替换主表
+I05	面板缺测	IGHD/XCL1/NCR1/CCL21未实测	按可测大类推进；CCL21记NA而非0

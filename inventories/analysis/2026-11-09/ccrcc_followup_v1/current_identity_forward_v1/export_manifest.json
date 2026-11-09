@@ -1,0 +1,30 @@
+{
+  "design.json": {
+    "sha256": "7a62661dfbebdb716bb6cdf164322046552992af6f2b71c3de537bcd9bb90edc",
+    "bytes": 1306
+  },
+  "identity_preservation.json": {
+    "sha256": "749662dd628e3636a4677b64ab031d048e73aaa065d8a61b687d1a6c1451b718",
+    "bytes": 330
+  },
+  "composition_complete.json": {
+    "sha256": "0353f883a67f84a0a8e7d41dfd770d56153b0091df18053a9d68a1143a434d6f",
+    "bytes": 93
+  },
+  "complete.json": {
+    "sha256": "34ef808d563c44b8210b341a2876696a859a5cb3b9147cdcda201d55a2410090",
+    "bytes": 607
+  },
+  "independent_forward_audit.json": {
+    "sha256": "2a08519c0ddfa9fbcc1e006d9a6d923f3b7c7c4e3437ce9161d825896dc1c5e6",
+    "bytes": 702
+  },
+  "CM03_existing_identity_spatial12.tsv": {
+    "sha256": "a0817feaddb8ba8e1d4b95d86aa13e8c9a8a1b3911a4a591c424c1a8c83567fe",
+    "bytes": 1279
+  },
+  "spatial_expression_communication_complete108.tsv": {
+    "sha256": "1d1787c35ce0a1b9e0899f1ad9641c7a6c72183fb0e838c8c2e5364fd9ff689f",
+    "bytes": 17601
+  }
+}

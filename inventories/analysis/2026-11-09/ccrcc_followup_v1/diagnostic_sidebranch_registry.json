@@ -1,0 +1,12 @@
+{
+  "primary_identity": "Original spatial_pilot_v1; SHA d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "user_steering": "Defer identity review and proceed with existing identities",
+  "branches": {
+    "followup_v1": "ACKR1-independent marker diagnostic96 and broad RNA pools; numerical pass; not adopted as current primary identity",
+    "identity_refinement_v2": "T/NK and B/ASC diagnostics; numerical pass; no frozen labels",
+    "program_concordance_v3": "Exact cluster-overlap sensitivity; arithmetic pass; overstrict T-state filtering recognized; archived diagnostic only",
+    "program_mapping_v4": "Coarse-program correction launched before user steering; retained separately; not a dependency or replacement for primary analysis"
+  },
+  "raw_and_models_location": "Private ${RUN_ROOT}; no cell/patient/coordinate rows published",
+  "no_more_identity_jobs_started_after_steering": true
+}

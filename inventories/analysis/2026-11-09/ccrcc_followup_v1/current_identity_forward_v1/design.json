@@ -1,0 +1,17 @@
+{
+  "UTC_before_forward_effects": "2026-11-09T08:37:02.254565+00:00",
+  "identity": "Existing original ccRCC spatial_pilot_v1; no new identity gates",
+  "identity_source_SHA": "d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "user_steering": "Record identity concerns; continue with existing identities",
+  "identity_review_is_prerequisite": false,
+  "identity_or_V4_labels_changed": false,
+  "graph": "Each B/T/NK receiver: 6 nearest original-QC cells, exclude self; retain edges <=50/100um",
+  "composition_family": "EC-B, EC-NK, same EC has B AND NK; 2 radii x2 tile/depth nulls =12",
+  "composition_null": "999 within-tile x floor(log2 RNA depth) immune-identity shuffles; EC/positions fixed",
+  "communication_family": "3 senders x3 receivers x3 axes x2 radii x2 local grids =108",
+  "communication_null": "999 whole measured 4-gene binary profile shuffles within identity x tile x RNA-depth; geometry fixed",
+  "P": "(1+null>=observed)/1000; ties included; missing CCL21 retained NA/P1",
+  "families": "Complete12 composition and complete108 LR, each BH/BY; one donor conditional exploration",
+  "CellChat": "Original identity six groups, original 477RNA CP10K/log1p; native micrometre geometry; no protein-as-UMI",
+  "no_causal_or_independent_patient_replication_claim": true
+}
