@@ -1,0 +1,41 @@
+{
+  "status": "PASS_independent_full14_CM_all_source_scope_summary_readback",
+  "UTC": "2026-11-08T18:19:10.305741+00:00",
+  "n_requested_sections": 53,
+  "n_accepted_sections": 53,
+  "n_failed_or_unassessable_sections": 0,
+  "n_CM_source_posterior_statistic_rows_checked": 168,
+  "original_empty_CMs_not_reported_as_zero_or_success": true,
+  "all_counts_and_medians_independently_rebuilt": true,
+  "all_original_CM_and_annotation_definitions_preserved": true,
+  "source_accession_or_spot_count_not_independent_patient_inference": true,
+  "CellCharter_orthogonal_validation_done": false,
+  "biology_or_mechanism_validation_claim": false,
+  "aggregate_files": [
+    {
+      "name": "all_section_technical_terminal_scope.tsv",
+      "bytes": 5345,
+      "sha256": "727b14ea54e5a56d51c89d7dd6063eb2bc512a5f78d5c9e46796fabcd68820c7"
+    },
+    {
+      "name": "all_CM_by_source_author_and_control_summary.tsv",
+      "bytes": 52620,
+      "sha256": "2a47b447d9cfcba40c2aae37b373783778223e93016bb4efa3485225dd8e7c59"
+    },
+    {
+      "name": "all_original_CM_edges_by_source_summary.tsv",
+      "bytes": 23246,
+      "sha256": "da95fd26ba6755e53804a1242680940a636c4443ed73829804fcbd9f9a623012"
+    },
+    {
+      "name": "all_CM_activity_by_source_summary.tsv",
+      "bytes": 4754,
+      "sha256": "f5887a4f02451b545d9e7ca40fe0bd854609ba559a972560dd6c8d779b5517d6"
+    },
+    {
+      "name": "complete.json",
+      "bytes": 869,
+      "sha256": "819a3dd9cd7eecd88a05badd30233b17b29439c3aa17370182c3327721a2d87d"
+    }
+  ]
+}

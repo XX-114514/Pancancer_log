@@ -1,3 +1,7 @@
+## 2026-11-09 CM验证完整审阅
+
+[当前权威报告](inventories/analysis/2026-11-09/v4_CM_validation_review_v1/README.md)：53主空间/53niche/25通讯组/13成像单元完成对应数值审核。下载6原生+18映射全接受；旧consumer到期仅算2例，本轮补4至6/6，66项P/FDR独立通过。ACKR1 EC邻域B/NK主比较及T次比较正向，内部B组成增量更明显；区域/条件通讯两27家族均0 BH/BY。身份/组织学及临床增量待，不把旧pending快照当现状。
+
 ## 2026-11-09 四个组织池十种子共识
 
 [方法与结果](methods/tme-annotation-v2-lineage-rounds-20261107.md)：Kupffer、Microglia、AM、Sinusoidal_EC 的十种子共识已完成，31,002个细胞符合主分析条件；工作版 sidecar（33,398个无种子共识细胞）尚未更新。簇13经疑似残留肿瘤子簇进入谱系池的细胞仅68个。

@@ -1,3 +1,5 @@
+[V4 CM完整审阅与六例接续](20261109_v4_CM_validation_evidence_review_v1.md)：53/25/13完成，新输入6+18全接受，补4复用2，66项独立审核。
+
 [五份失败原生下载恢复](20261108_v4_failed_download_recovery_v1.md)：18映射+首矩阵复用，服务器持久缓存已开始写入，完整五份接受仍待。
 
 [Xenium坐标修复服务器重放](20261108_v4_Xenium_coordinate_fix_v1.md)：旧六例断言失败；v6两端测试通过，输入副本校验中。

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_all_original_CM_CPDB_family_and_available_secondary_outputs_independent_readback",
+  "UTC": "2026-11-08T04:45:58.750384+00:00",
+  "n_original_CM": 14,
+  "n_CPDB_comparison_groups": 25,
+  "n_CM_comparator_rows": 28,
+  "n_cellpair_comparison_rows": 111,
+  "response_status": "PASS_hypergeometric_complete_family_BH_and_subunit_threshold_readback",
+  "CellChat_status": "PASS_CellChat_saved_candidate_rows_and_pair_counts_readback",
+  "all_complete_family_science_success": true,
+  "spatial_gate_accepted_by_this_receipt": false,
+  "patient_independence_or_intervention_or_mechanism_claim": false
+}

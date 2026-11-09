@@ -1,0 +1,9 @@
+{
+  "status": "PASS_independent_all_requested_source_14_CM_niche_activity_variance_and_summary_readback",
+  "UTC": "2026-11-08T18:19:35.330020+00:00",
+  "n_requested_sections": 53,
+  "n_sections_both_workflows": 53,
+  "n_section_CM_activity_rows_recomputed": 1484,
+  "n_source_CM_posterior_rows": 84,
+  "no_independent_subtype_truth_or_contact_or_causal_or_significance_claim": true
+}

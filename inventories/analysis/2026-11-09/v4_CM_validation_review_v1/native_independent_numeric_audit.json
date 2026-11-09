@@ -1,0 +1,63 @@
+{
+  "UTC": "2026-11-09T06:01:12.964318+00:00",
+  "status": "PASS_independent6_source66_hypothesis_scope_exact_P_and_complete_FDR",
+  "sources": 6,
+  "unique_donor_keys": 6,
+  "original_coordinate_contracts_checked": 6,
+  "hypotheses": 66,
+  "maximum_numeric_error": 1.1102230246251565e-16,
+  "families": [
+    {
+      "family": "neighborhood_primary2",
+      "planned": 2,
+      "estimable": 2,
+      "BH05": 2,
+      "BY05": 2
+    },
+    {
+      "family": "neighborhood_sensitivity10",
+      "planned": 10,
+      "estimable": 10,
+      "BH05": 10,
+      "BY05": 10
+    },
+    {
+      "family": "regional_LR27",
+      "planned": 27,
+      "estimable": 18,
+      "BH05": 0,
+      "BY05": 0
+    },
+    {
+      "family": "conditional_edge_LR27",
+      "planned": 27,
+      "estimable": 27,
+      "BH05": 0,
+      "BY05": 0
+    }
+  ],
+  "conditional_lymphocyte_fraction_at50um_descriptive": [
+    {
+      "receiver": "B",
+      "n_sources": 6,
+      "median_fraction_difference": 0.04617108589425084,
+      "positive_differences": 5,
+      "descriptive_only_no_new_P": true
+    },
+    {
+      "receiver": "T",
+      "n_sources": 6,
+      "median_fraction_difference": -0.04717603009443169,
+      "positive_differences": 1,
+      "descriptive_only_no_new_P": true
+    },
+    {
+      "receiver": "NK",
+      "n_sources": 6,
+      "median_fraction_difference": 0.0007328789636042994,
+      "positive_differences": 4,
+      "descriptive_only_no_new_P": true
+    }
+  ],
+  "identity_visual_causal_or_clinical_acceptance_claim": false
+}

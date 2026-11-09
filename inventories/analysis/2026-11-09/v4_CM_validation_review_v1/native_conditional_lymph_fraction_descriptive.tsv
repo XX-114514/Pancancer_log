@@ -1,0 +1,4 @@
+receiver	n_sources	median_fraction_difference	positive_differences	descriptive_only_no_new_P
+B	6	0.04617108589425084	5	True
+T	6	-0.04717603009443169	1	True
+NK	6	0.0007328789636042994	4	True

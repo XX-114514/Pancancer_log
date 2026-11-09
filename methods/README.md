@@ -1,3 +1,5 @@
+[V4 CM完整证据解释](V4-CM-evidence-interpretation-20261109.md)：组成、特异空间、通讯与临床分层；六例患者结果及完整阴性保留。
+
 [Xenium持久下载恢复](V4-Xenium-resumable-download-recovery-20261108.md)：缓存重启复用、有限退避、全CRC/SHA、原子ready及故障注入验证。
 
 [Xenium坐标单位修复](V4-Xenium-coordinate-units-fix-20261108.md)：明确原生微米、原生像素与H&E对齐像素；六源全量验证。

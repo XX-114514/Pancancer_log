@@ -1,0 +1,32 @@
+{
+  "evidence_UTC": "2026-11-09T06:05:25.520308+00:00",
+  "base_commit": "afecb2d6",
+  "code_sha256": {
+    "resume_ready_native_cases_v1.py": "ccc314e9450a739650eac5880b129c64a8410ab5918fe3a2ce5f139c23352737",
+    "audit_resumed_native_cohort_v1.py": "e1ba8386475305217fb0c6b4995fac3e325c4a4bad28a3ed688d4de29e9e97cc"
+  },
+  "verification": "actual6_case_execution_and_independent66_P_FDR_PASS",
+  "max_numeric_error": 1.1102230246251565e-16,
+  "scientific_identity_visual_histology_acceptance_pending": true,
+  "public_missing_value_display_normalization": [
+    {
+      "table": "all14_CCI_comparisons.tsv",
+      "source_text_sha256": "4806566ac38851413f05c158af5f678e8ffb476f5a6432ecba44ee4c6b948df2",
+      "public_text_sha256": "a79bc7eb7274dca7128667454cfa4a863f7f8df8d3735cf9ea425077f1eae501",
+      "change": "empty_fields_to_NA_only_no_value_row_or_denominator_change"
+    },
+    {
+      "table": "native_all66_patient_aggregate_hypotheses.tsv",
+      "source_text_sha256": "ff27bd2e13c74098f21f8bce86ae36f7c3641ea39332e610293a8640d2dfd79e",
+      "public_text_sha256": "81db2fb3940a83b56a0744ac25eaeb631116351e99ebfb98b1b9b39828eb73da",
+      "change": "empty_fields_to_NA_only_no_value_row_or_denominator_change"
+    }
+  ],
+  "publication_checks": {
+    "repository_validation": "PASS_0_errors_1_existing_path_warning",
+    "new_code_SHA_AST_JSON_TSV_privacy_size_links": "PASS",
+    "original_and_public_missing_field_display_comparison": "PASS_empty_to_NA_only",
+    "git_diff_check": "PASS",
+    "payload": "38reviewed_files_no_machine_configs_patient_rows_or_matrices"
+  }
+}
