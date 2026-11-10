@@ -1,3 +1,9 @@
+## 2026-11-10 ccRCC现身份定位
+
+- [x] 原身份12/108原零模型精确期望、区域贡献及独立算术核对。
+- [x] 聚合密度/marker-身份/区域效应图v2，统一原点和尺度。
+- [ ] 在合格独立ccRCC成像样本检验Mural→B/T CXCL12–CXCR4及EC—NK；病理图像/真实组织区室尚缺，身份问题继续后置。[当前结果](inventories/analysis/2026-11-10/ccrcc_localization_v1/README.md)。
+
 ## 2026-11-09 ccRCC现身份主线
 
 - [x] 7输入/旧基线服务器验收，原身份SHA保留。

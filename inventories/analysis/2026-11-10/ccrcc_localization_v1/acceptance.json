@@ -1,0 +1,13 @@
+{
+  "status": "ACCEPTED_numeric_and_visual_localization_existing_identity",
+  "UTC": "2026-11-10T10:51:23.459950+00:00",
+  "numerical_audit": "PASS full72LR expectations,12/108 regional sums,80 sharedEC checks+enumeration",
+  "visual_QA": "all3 final images viewed; identity+marker names visible; no clipping/overlap; consistent origin/mm extent/direction",
+  "image_SHA": "all3 source manifest matches",
+  "original_identity_changed": false,
+  "new_inference_P_values": 0,
+  "original_CellChat_conclusion_changed": false,
+  "no_patient_replication_claim": true,
+  "no_pathology_image_or_vessel_wall_claim": true,
+  "no_cell_or_region_coordinate_rows_published": true
+}

@@ -1,0 +1,22 @@
+{
+  "complete.json": {
+    "bytes": 723,
+    "sha256": "bd01028bd335d136027b9aa9aef8694aa9f17b20d147bd8e1a18c00953d5b35e"
+  },
+  "independent_audit.json": {
+    "bytes": 667,
+    "sha256": "443a9a1fe12e0d0aed17fb37f0fe7df6e47b6397a7ce1d893bee25f812784a4b"
+  },
+  "LR108_exact_expectation_block_robustness.tsv": {
+    "bytes": 23079,
+    "sha256": "949f7c881a85a38080dacd30110c6554dfbb33de9ad2b1c2b4f47da219797786"
+  },
+  "CM12_exact_expectation_block_robustness.tsv": {
+    "bytes": 3293,
+    "sha256": "e824f98a623733b3546a1657d1b19546ce206f9079827bb0372d2fc21bf96888"
+  },
+  "figures/manifest.json": {
+    "bytes": 579,
+    "sha256": "91200b4dc591324ac3bf6865b584d0669859942d1854a4be2f5b7333d267fa53"
+  }
+}

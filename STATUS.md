@@ -1,3 +1,7 @@
+## 2026-11-10 ccRCC现身份定位完成
+
+[当前报告](inventories/analysis/2026-11-10/ccrcc_localization_v1/README.md)：12/108精确期望和区域贡献数值审核通过，原身份/图不变，无新P。EC—NK/五轴删单块方向保留但存在空间异质性；Mural→B/T CXCL12–CXCR4作优先复现候选，原CellChat联合校正与精确三方未支持结论保留。
+
 ## 2026-11-09 ccRCC沿用现有身份
 
 [当前主报告](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)：7输入/旧重放已接受；按用户要求身份复查后置。原358,841 QC身份未改，12组成/108 LR完成并审计；EC—NK部分支持，三方未支持，五条Mural/B/T或EC/T方向有表达耦合支持。CellChat四参数已完成，2026-11-10仅修复浮点容差后审核通过；5,184槽有限MC联合BH/BY均无正概率q<0.05，保留局部表达候选。

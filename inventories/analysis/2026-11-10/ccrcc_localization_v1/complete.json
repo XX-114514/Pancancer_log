@@ -1,0 +1,18 @@
+{
+  "status": "COMPUTED_EXISTING_IDENTITY_LOCALIZATION_AUDIT_PENDING",
+  "UTC": "2026-11-10T10:38:34.786505+00:00",
+  "identity_sha256": "d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "original_QC_cells": 358841,
+  "six_original_identity_cells": 151833,
+  "composition_slots": 12,
+  "communication_slots": 108,
+  "new_P_values": 0,
+  "identity_changed": false,
+  "coordinates_rescaled": false,
+  "shuffle_model_changed": false,
+  "expectation": "exact marginal means for distinct-identity LR; multivariate hypergeometric inclusion-exclusion for shared EC",
+  "localization_block_um": 500,
+  "raster_um": 100,
+  "pathology_image_in_downloaded_members": false,
+  "no_patient_replication_claim": true
+}

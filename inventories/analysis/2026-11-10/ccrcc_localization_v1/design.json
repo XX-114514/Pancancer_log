@@ -1,0 +1,15 @@
+{
+  "UTC_before_new_localization_results": "2026-11-10T10:35:24.943027+00:00",
+  "identity": "original frozen ccRCC spatial_pilot_v1; no new identity review",
+  "identity_sha256": "d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "use_existing_geometry": true,
+  "new_inference_P_values": false,
+  "objective": "Localize existing CM/LR effects across tissue and quantify spatial concentration without relabeling",
+  "local_expression_null": "Exact expectation of the prior profile-permutation null. Distinct sender and receiver identities make their strata permutations independent; sum products of stratum detection fractions on the fixed graph.",
+  "analysis": "All 3 sender x3 receiver x3 axes x2 radius x2 shuffle grids retained. Decompose into 500um receiver-location blocks. All measured effects vs exact expectation, descriptive leave-one-block-out.",
+  "visualization": "100um aggregate count/detection density and 500um effect-contribution maps; raw cell/coordinates remain server",
+  "independence": "one donor; blocks and parameters are not patients",
+  "external_bridge": "reuse audited GSE273952 source aggregates; no new independent replicate claim",
+  "no_new_identity_gate": true,
+  "no_new_CellChat_fit": true
+}

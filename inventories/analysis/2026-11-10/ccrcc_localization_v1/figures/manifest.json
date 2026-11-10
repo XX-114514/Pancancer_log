@@ -1,0 +1,19 @@
+{
+  "raster_bin_um": 100,
+  "effect_block_um": 500,
+  "all_per_cell_data_private": true,
+  "files": {
+    "01_existing_identity_density.png": {
+      "bytes": 256829,
+      "sha256": "97005caf98b24854bc9e9993f4bbff7d98ea2413208991d2a54b50085287b298"
+    },
+    "02_sender_receiver_marker_density.png": {
+      "bytes": 228512,
+      "sha256": "b22eac7352da4c1199d4f2fe50c908e97b525483f00eb0871eeca78af011ce11"
+    },
+    "03_exact_null_regional_effects.png": {
+      "bytes": 222128,
+      "sha256": "6c7c2550da7c82cb3d9052f15ea9b82e0175a4a6a4b238fb6a1a26ab30085d8b"
+    }
+  }
+}

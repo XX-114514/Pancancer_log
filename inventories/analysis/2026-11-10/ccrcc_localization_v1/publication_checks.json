@@ -1,0 +1,10 @@
+{
+  "numerical_audit": "PASS existing identity, full72 LR means,12/108 regional sums,80 sharedEC+exhaustive toy",
+  "source_and_figure_hashes": "PASS all reviewed exports+3 images",
+  "visual_QA": "PASS all3 final figures; same physical origin/extent/direction; marker and identity shown",
+  "scope": "Aggregate statistics/images and generic code only; no cell/patient/region coordinate rows or matrices",
+  "existing_main_tracked_edits": "15 original SHA values unchanged",
+  "initial_repository_check": "1 error: final image not yet received when link check ran; retained as transfer-timing failure",
+  "final_scoped_links_syntax_privacy_size": "PASS after last figure SHA acceptance",
+  "full_repository_recheck": "PASS 0 errors,1 preexisting historical path warning"
+}

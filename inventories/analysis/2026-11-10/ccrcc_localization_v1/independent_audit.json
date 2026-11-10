@@ -1,0 +1,16 @@
+{
+  "status": "PASS_frozen_identity_region_sums_exact_LR_and_hypergeometric_checks",
+  "UTC": "2026-11-10T10:38:40.826093+00:00",
+  "LR108_slots": 108,
+  "CM12_slots": 12,
+  "CCL21_missing_slots": 36,
+  "independent_LR_expectations_checked": 72,
+  "shared_EC_integer_combination_checks": 80,
+  "shared_EC_exhaustive_toy_PASS": true,
+  "maximum_arithmetic_error": 2.7284841053187847e-12,
+  "max_LR_exact_expectation_difference_from_prior_MC_mean_in_MC_SE": 2.364089764714214,
+  "identity_sha256": "d65cbcb6f8508f2598934d9de3c95a072fde4a53ba2871a13689728a8e262bde",
+  "new_P_values": 0,
+  "no_new_identity_gates": true,
+  "not_histology_or_patient_replication": true
+}
