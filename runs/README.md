@@ -1,4 +1,4 @@
-[ccRCC现有身份CM与通讯](20261109_ccRCC_current_identity_forward_v1.md)：12/108完成审核，CellChat四参数运行；身份问题后置。
+[ccRCC现有身份CM与通讯](20261109_ccRCC_current_identity_forward_v1.md)：12/108及CellChat四参数完成审核，有限MC联合校正未通过；身份问题后置。
 
 [ccRCC独立身份和局部血管邻域随访](20261109_ccRCC_followup_v1.md)：新目录恢复/部署，独立EC、蛋白和96槽；结果待。
 

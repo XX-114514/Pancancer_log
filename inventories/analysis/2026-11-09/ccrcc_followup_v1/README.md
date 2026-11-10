@@ -7,7 +7,7 @@
 - 服务器最小7成员完整验收：原6成员独立SHA/CRC匹配，新增细胞轮廓CRC/大小及新SHA接受；[输入回执](input_acceptance_summary.json)。未下载完整56.7GB，未声称整包MD5验证。
 - [原试跑完整重放](baseline_replay_audit.json)一致；358,841个QC保留细胞中B7,376、T57,230、NK1,244、血EC49,600、淋巴管1,682、Mural34,701。[身份未改变回执](current_identity_forward_v1/identity_preservation.json)。
 - 新增CM空间**12槽**和LR空间表达**108槽**均完成，[独立数值审核通过](current_identity_forward_v1/independent_forward_audit.json)。
-- 原身份六类共151,833细胞的477基因输入已交给空间CellChat2.2.0，四个固定距离参数变体已完成2/4（08:53:03 UTC取证，前两项各约4.7分钟）；全模型有限MC及最终独立数组审核尚待，不能把直接LR检验当CellChat已完成。
+- 原身份六类共151,833细胞的477基因输入已交给空间CellChat2.2.0，四个固定距离参数变体已于2026-11-09 09:00:42 UTC全部完成；2026-11-10 08:41:58 UTC有限MC独立数值审核通过。4/4原生数组及全模型敏感性均已验收，身份未变。
 
 ## CM03：目前是哪一部分得到支持
 
@@ -43,7 +43,7 @@
 
 [身份问题登记](identity_issues_deferred.tsv)和[旁支留档](diagnostic_sidebranch_registry.json)保留发现与代码；用户要求后置，本轮没有据此删除细胞或增加身份门槛。IGHD/XCL1缺测，因此此处是大类组成扩展；单例不提供跨患者复现。
 
-接续余下两项空间CellChat、保存数组与全模型有限MC敏感性审核，再把它与上述局部表达候选交叉整理。展示以CM近邻与完整LR对照图为主；身份诊断图作后续可选补充。优先比较已有支持的Mural—B/T及EC—NK线索，保留B—EC/三方聚集和NK受体轴阴性结果。
+空间CellChat四参数及保存数组审核已完成。后续优先围绕Mural—B/T的表达耦合候选与EC—NK邻域线索检查组织位置和跨样本重复；保留B—EC、同一EC三方及NK接收轴的未支持结果。身份诊断图继续后置，不启动新注释作为前置。
 
 [当前主方法](../../../../methods/V4-ccRCC-current-identity-communication-20261109.md) · [运行](../../../../runs/20261109_ccRCC_current_identity_forward_v1.md)。
 
@@ -55,4 +55,14 @@
 
 ![现有身份空间LR完整108比较](current_identity_forward_v1/figures_v2/current_identity_spatial_LR108.png)
 
-[CellChat实际进度回执](current_identity_forward_v1/CellChat_runtime_checkpoint.json)：原生候选计数只是工具输出，最终有限MC及全模型审核完成前不当作确认互作。
+## 空间CellChat最终结果与解释
+
+[完成回执](current_identity_forward_v1/CellChat/complete.json)：4/4变体，各151,833细胞、6类、36条全组件可测蛋白LR，共5,184个发送—接收—LR—参数槽。保留[全部原生值与有限MC敏感性](current_identity_forward_v1/CellChat/all_variants_finite_MC_sensitivity.tsv)，不只展示显著项。
+
+100次原生表达重采样有712槽P=0；按保存超越计数加一得到最小P=1/101，四变体共同BH/BY后，正概率互作均无q<0.05。[敏感性摘要](current_identity_forward_v1/CellChat/finite_MC_sensitivity_summary.json)。这说明当前采样分辨率与全模型校正下缺少工具层面的稳健支持，不能把原生P=0解读为确定通讯，也不能据此证明信号不存在。该敏感性无法重建工具原生并列规则，并非新空间零模型；前述108检验仍是独立的局部空间表达证据。
+
+[固定身份的靶轴读出](current_identity_forward_v1/CellChat/target_axes_readout.tsv)中，CCL19–CCR7的36个可测方向/参数槽prob均为0；[检测率](current_identity_forward_v1/CellChat/current_identity_axis_detection.tsv)显示CCL19在血EC/Mural/淋巴管分别为4.82%/6.65%/7.43%。这与trim0.1在稀疏表达下压低群平均的机制一致，属对工具与局部表达检验差异的解释，未直接验证全部零值成因。CXCL12–CXCR4有正工具分数但未过上述联合敏感性校正。CCL21缺测，不能据此判生物学阴性。目标轴四参数分数相同，因此四参数不提供四份独立重复证据。
+
+原生数组计数与BH读回已通过；原审核末段因CSV舍入使P较1/101小1.73e-18而失败。保留[原退出回执](current_identity_forward_v1/CellChat/controller_terminal.json)，仅将审核容差设为1e-12后重审，[恢复回执](current_identity_forward_v1/CellChat/audit_recovery_v2.json)通过，最大P/BH/BY误差均<5e-16；没有重跑模型或更改身份。[原生数组v2审核](current_identity_forward_v1/CellChat/independent_audit_v2.json)及[有限MC审核](current_identity_forward_v1/CellChat/finite_MC_independent_audit_v2.json)。
+
+[原2/4进度回执](current_identity_forward_v1/CellChat_runtime_checkpoint.json)只作历史快照。当前结论仍是单例探索：部分EC—NK空间关系与Mural→B/T表达候选，尚不能称完整CM03或功能通讯验证通过。

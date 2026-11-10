@@ -1,0 +1,21 @@
+{
+  "status": "PASS_audit_recovery_no_refit",
+  "original_CellChat_exit": 0,
+  "original_audit_exit": 1,
+  "audit_v2_exit": 0,
+  "model_refitted": false,
+  "identity_changed": false,
+  "finite_MC_audit": {
+    "status": "PASS_finite_MC_saved_count_sensitivity_and_joint_adjustments",
+    "UTC": "2026-11-10T08:41:58Z",
+    "rows": 5184,
+    "tolerance": 1e-12,
+    "minimum_P": 0.0099009900990099,
+    "lower_bound_roundtrip_shortfall": 1.734723475976807e-18,
+    "max_P_error": 4.996003610813204e-16,
+    "max_BH_error": 4.996003610813204e-16,
+    "max_BY_error": 4.440892098500626e-16,
+    "model_refitted": false,
+    "identity_changed": false
+  }
+}

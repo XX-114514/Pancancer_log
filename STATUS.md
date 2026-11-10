@@ -1,6 +1,6 @@
 ## 2026-11-09 ccRCC沿用现有身份
 
-[当前主报告](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)：7输入/旧重放已接受；按用户要求身份复查后置。原358,841 QC身份未改，12组成/108 LR完成并审计；EC—NK部分支持，三方未支持，五条Mural/B/T或EC/T方向有表达耦合支持。CellChat四参数运行，最终数组验收待。
+[当前主报告](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)：7输入/旧重放已接受；按用户要求身份复查后置。原358,841 QC身份未改，12组成/108 LR完成并审计；EC—NK部分支持，三方未支持，五条Mural/B/T或EC/T方向有表达耦合支持。CellChat四参数已完成，2026-11-10仅修复浮点容差后审核通过；5,184槽有限MC联合BH/BY均无正概率q<0.05，保留局部表达候选。
 
 ## 2026-11-09 ccRCC早期启动快照（已由上方主线接续）
 

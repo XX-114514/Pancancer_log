@@ -1,0 +1,13 @@
+{
+  "status": "PASS_finite_MC_saved_count_sensitivity_and_joint_adjustments",
+  "UTC": "2026-11-10T08:41:58Z",
+  "rows": 5184,
+  "tolerance": 9.9999999999999998e-13,
+  "minimum_P": 0.0099009900990098994,
+  "lower_bound_roundtrip_shortfall": 1.7347234759768071e-18,
+  "max_P_error": 4.9960036108132044e-16,
+  "max_BH_error": 4.9960036108132044e-16,
+  "max_BY_error": 4.4408920985006262e-16,
+  "model_refitted": false,
+  "identity_changed": false
+}

@@ -1,0 +1,42 @@
+{
+  "CellChat/complete.json": {
+    "sha256": "b93ae0c449e1adaf6d3fee46d5870c1e4a14754c4d5a1a10fab2bb0b0f1924e3",
+    "bytes": 2955
+  },
+  "CellChat/finite_MC_sensitivity_summary.json": {
+    "sha256": "4ecd5c393571211c746c9be8a65967ec3a9156a88a38ca01bff685d6b3c82681",
+    "bytes": 404
+  },
+  "CellChat/independent_audit_v2.json": {
+    "sha256": "727ab11cefdada68c5ebdf531f85e5ab6c8cfd4c53a3a37dcb1ce2a027a38244",
+    "bytes": 200
+  },
+  "CellChat/finite_MC_independent_audit_v2.json": {
+    "sha256": "c78d4c2fe952cf9bdf0c1462dd4190385dbe2c4e889321493c28600d14f021eb",
+    "bytes": 447
+  },
+  "CellChat/all_variants_finite_MC_sensitivity.tsv": {
+    "sha256": "8ddf4f4b4002f4c57e896f3a59f3d303613444d134d830c2fb11084610f6785b",
+    "bytes": 259560
+  },
+  "CellChat/controller_terminal.json": {
+    "sha256": "0f74e12ca41e670001ec04d8027537bb7e2eaf2ae0266e4734af8e89334c5806",
+    "bytes": 168
+  },
+  "CellChat/audit_recovery_v2.json": {
+    "sha256": "2f1eabaeeab46a5c2f43ccbe98d35baefcb2cb69cf3c563ca3cecbd27a2d40a3",
+    "bytes": 653
+  },
+  "CellChat/target_axes_readout.tsv": {
+    "sha256": "2ae2ae60e4887c903fcd37e77ce3226fa006922c2de73cc53e24af9d0a045b1d",
+    "bytes": 12151
+  },
+  "CellChat/measurement_summary.json": {
+    "sha256": "6dd2a4c3019239ad87cf936fd1575e5a165fd175afdcbe3ce12b2122daf5687f",
+    "bytes": 256
+  },
+  "CellChat/current_identity_axis_detection.tsv": {
+    "sha256": "96360e500ea9af97b77a4d10144a68a29a03f39d75e4e8d933ca4c2bda1dbee3",
+    "bytes": 1398
+  }
+}

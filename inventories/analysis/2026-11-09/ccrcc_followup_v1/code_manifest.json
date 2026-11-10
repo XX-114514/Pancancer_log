@@ -23,5 +23,6 @@
   "run_ccrcc_followup_v1.py": "381106f7c5537d61806f246c1d0b713748f89cc2dfea014e71bea39d79a25d70",
   "run_current_identity_CellChat_v1.py": "4a431d0a25fca423d4c7da82543ee03bd127a42c1620502ab13d15a21bfd10e9",
   "run_current_identity_CellChat_v2.py": "a149ed11b5133014a07f279d8835972baee3e292696da386c68d4a96897a38fc",
-  "test_ccrcc_edge_cases_v1.py": "c7c373e3ecaac2facc36ca0e4049d1a9c909021a6d0c0688d420019207ebbd48"
+  "test_ccrcc_edge_cases_v1.py": "c7c373e3ecaac2facc36ca0e4049d1a9c909021a6d0c0688d420019207ebbd48",
+  "audit_ccrcc_current_identity_CellChat_v2.R": "349d3ce3aeeb40d2386447d02a8a417f849b48c3627fb5d419326efc61044d5c"
 }

@@ -1,0 +1,9 @@
+{
+  "database_interactions": 3233,
+  "fully_measured_protein_interactions": 36,
+  "full_model_slots": 5184,
+  "target_readout_rows": 108,
+  "unmodeled_is_not_biological_zero": true,
+  "frozen_identity_changed": false,
+  "no_reannotation_performed": true
+}

@@ -25,3 +25,5 @@
 同一供者、同一切片；细胞/EC/半径/网格/四个变体不是患者重复。有限面板缺IGHD/XCL1/CCL21，不能声称精确IGHD-B或XCL1-NK模块及CCL21信号复现。现有身份的潜在混合会影响解释，按用户要求后续独立复核。
 
 实际结果：[ccRCC主报告](../inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)。代码在`scripts/ccrcc_followup_20261109/`；主入口`ccrcc_current_identity_forward_v1.py`，未来CellChat接续用`run_current_identity_CellChat_v2.py`（等待不创建生产目录，避免启动竞态）；v1控制器历史保留，现有模型不重启。矩阵/细胞/边/坐标/模型仅在${RUN_ROOT}。
+
+执行补录2026-11-10：四变体全部完成；审核v1严格下界因表格舍入差1.73e-18失败，v2仅增加1e-12数值容差并复核全部5,184槽P/联合BH/BY，误差<5e-16；无模型重拟合或标签更改，失败回执保留。当前全模型有限MC联合校正无通过项，不据此否定局部表达候选或断言无信号。

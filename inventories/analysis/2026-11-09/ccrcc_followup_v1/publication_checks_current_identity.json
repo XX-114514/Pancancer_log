@@ -7,5 +7,6 @@
   "public_contains": "reviewed aggregate groups/parameters, code, methods, sanitized logs",
   "public_excludes": "cell/patient/coordinate rows, matrices, raw models/logs, actual server/account paths",
   "existing_main_tracked_edits_preserved": 15,
-  "CellChat_checkpoint": "2/4 at 08:53:03 UTC; final whole-model audit pending"
+  "CellChat_checkpoint": "4/4 native arrays PASS; finite-MC joint adjustments audited via v2; no model refit or identity change",
+  "finite_MC_audit": "roundtrip lower-bound shortfall1.73e-18; tolerance1e-12; max error<5e-16"
 }

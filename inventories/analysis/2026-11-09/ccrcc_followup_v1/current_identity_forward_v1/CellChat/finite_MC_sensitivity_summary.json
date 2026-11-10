@@ -1,0 +1,12 @@
+{
+  "n_all_model_slots": 5184,
+  "n_native_zero_P": 712,
+  "min_plus_one_P": 0.0099,
+  "n_positive_probability_joint_BH": 0,
+  "n_positive_probability_joint_BY": 0,
+  "raw_CellChat_values_preserved": true,
+  "plus_one_is_saved_exceedance_count_sensitivity": true,
+  "native_tool_tie_rule_not_reconstructed": true,
+  "expression_bootstrap_not_a_spatial_null": true,
+  "original_identity_changed": false
+}
