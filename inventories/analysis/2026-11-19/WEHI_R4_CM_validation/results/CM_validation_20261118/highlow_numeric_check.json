@@ -1,0 +1,6 @@
+{
+  "status": "PASS_independent_statsmodels_HC3_formula_check",
+  "synthetic_genes": 7,
+  "max_se_error": 2.220446049250313e-16,
+  "scope": "numerical implementation only; does not validate biological independence"
+}

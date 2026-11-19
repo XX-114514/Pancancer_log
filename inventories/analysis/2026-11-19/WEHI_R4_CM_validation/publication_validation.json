@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL_PUBLISHED_FILE_HASHES_FORMATS_SIZE_AND_SCOPED_PRIVACY_SCAN",
+  "UTC": "2026-11-19T05:35:33.248711+00:00",
+  "server_export_files_verified": 1233,
+  "local_candidates_verified": 422,
+  "files": 1662,
+  "total_bytes": 440856165,
+  "text_files_scanned": 1568,
+  "tables_checked": 1009,
+  "table_rows_checked": 10841255,
+  "json_checked": 384,
+  "limitations": "Hash, parsing, identifier-column and pattern checks; not a new biological analysis. Excluded individual/model/raw outputs remain server-only per inventory. Source and published bytes differ where paths were redacted."
+}

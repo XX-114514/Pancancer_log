@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL_COHORTS_SPLIT_RISKSETS_EFRON_COEFFICIENTS_SE_LOG_LIKELIHOOD_PERIOD_CI_P_AND_JOINT_BH",
+  "planned_models": 3690,
+  "independent_refits": 3150,
+  "joint_tests": 13140,
+  "max_beta_error": 2.7260848056709364e-07,
+  "max_SE_error": 1.3416295918666776e-07,
+  "max_loglik_error": 6.366462912410498e-12,
+  "max_score_change_covariance_error": 1.90837591562687e-09,
+  "seconds": 295.5284700393677,
+  "association_sha256": "6af23833837eb4d0b05cdc3da3fa95dc177697a4c2e82a4b158a4f1e6c64cee4",
+  "scope": "All successful models independently fitted with PHReg delayed-entry intervals, all insufficient designs reconstructed. Prior clinical mapping/score audit separate. One-year sensitivity only, no correction of other non-PH covariates, no external prediction validation."
+}

@@ -1,0 +1,80 @@
+{
+  "status": "two_CosMx_samples_complete",
+  "receipts": [
+    {
+      "sample": "Lung12",
+      "archive_sha256": "1034d9ccd6ec8e9f1cae48a8876f8df63a469089a41f743c0473eced21518425",
+      "md5_matches_existing_manifest": false,
+      "members_sha256": {
+        "fov": "a9839a3906b33b54933a29abc71e4498fd64a9a2763a8419d864b388bdbf1678",
+        "expression": "ce4954d63843dd0b6eb259599322bb3097c9390a08bde53279b582fca8666747",
+        "metadata": "5d3be3916428e864b7dfa7f220e63ffc3b84ef5fa1f68c311924e7cc2b7d260a"
+      },
+      "n_input": 73997,
+      "QC_cells": 52834,
+      "n_candidate_identities": 7,
+      "dropped_non_gene_columns": [
+        "NegPrb3",
+        "NegPrb5",
+        "NegPrb6",
+        "NegPrb7",
+        "NegPrb8",
+        "NegPrb9",
+        "NegPrb10",
+        "NegPrb11",
+        "NegPrb12",
+        "NegPrb13",
+        "NegPrb14",
+        "NegPrb15",
+        "NegPrb16",
+        "NegPrb17",
+        "NegPrb18",
+        "NegPrb19",
+        "NegPrb20",
+        "NegPrb21",
+        "NegPrb22",
+        "NegPrb23"
+      ],
+      "n_fovs": 28,
+      "exact_cellkey_join": true
+    },
+    {
+      "sample": "Lung13",
+      "archive_sha256": "64d15151b7f758be3c5bb156c5bb24814b3d8da38a94daf487a4d36a3949af04",
+      "md5_matches_existing_manifest": false,
+      "members_sha256": {
+        "fov": "5c76d3ac4829a455e631dc18c130feae5fe555d8e90fbeaa90ad80934fe9da0e",
+        "expression": "b822c828dce17fdb0fdc4584f1bd0d21f72adf238f1a965d0ac66b643004f41f",
+        "metadata": "72bf9f197f26a0f557d7c237d723afea8c089efa52020709277b1c01eafa8d55"
+      },
+      "n_input": 82843,
+      "QC_cells": 60958,
+      "n_candidate_identities": 7,
+      "dropped_non_gene_columns": [
+        "NegPrb3",
+        "NegPrb5",
+        "NegPrb6",
+        "NegPrb7",
+        "NegPrb8",
+        "NegPrb9",
+        "NegPrb10",
+        "NegPrb11",
+        "NegPrb12",
+        "NegPrb13",
+        "NegPrb14",
+        "NegPrb15",
+        "NegPrb16",
+        "NegPrb17",
+        "NegPrb18",
+        "NegPrb19",
+        "NegPrb20",
+        "NegPrb21",
+        "NegPrb22",
+        "NegPrb23"
+      ],
+      "n_fovs": 20,
+      "exact_cellkey_join": true
+    }
+  ],
+  "FOVs_not_independent_patients": true
+}

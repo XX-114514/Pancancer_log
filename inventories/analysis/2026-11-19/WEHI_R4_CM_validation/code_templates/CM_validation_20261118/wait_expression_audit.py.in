@@ -1,0 +1,14 @@
+from pathlib import Path
+import json,time,subprocess,sys,fcntl
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');f=(R/'audit_watcher.lock').open('w');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);deadline=time.time()+8*3600
+try:
+ while not (R/'inputs/expression_complete.json').exists():
+  pid=json.loads((R/'expression_launch.json').read_text())['pid'];p=Path('/proc')/str(pid)/'cmdline'
+  if not p.exists() or b'extract_R4.py' not in p.read_bytes():raise RuntimeError('Extraction PID missing or replaced without completion; preserve files and inspect log')
+  if time.time()>deadline:raise TimeoutError('Audit observer deadline; extraction not terminated')
+  time.sleep(30)
+ with (R/'expression_audit.log').open('w') as log:r=subprocess.run([sys.executable,str(R/'audit_expression.py')],stdout=log,stderr=subprocess.STDOUT)
+ assert r.returncode==0,('audit_failed',r.returncode)
+ (R/'audit_watcher_status.json').write_text(json.dumps({'status':'audit_complete','time':time.time()}))
+except Exception as e:
+ (R/'audit_watcher_status.json').write_text(json.dumps({'status':'needs_inspection','error':str(e),'time':time.time()}));raise

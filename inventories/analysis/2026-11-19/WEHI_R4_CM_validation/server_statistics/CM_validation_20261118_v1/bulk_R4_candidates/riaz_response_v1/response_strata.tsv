@@ -1,0 +1,9 @@
+version	endpoint	cohort	patients	responders
+riaz_inputs_v2	CRPR_vs_SDPD	NIV3-NAIVE	23	6
+riaz_inputs_v2	CRPR_vs_SDPD	NIV3-PROG	26	4
+riaz_inputs_v2	CRPR_vs_PD	NIV3-NAIVE	18	6
+riaz_inputs_v2	CRPR_vs_PD	NIV3-PROG	15	4
+riaz_inputs_v1	CRPR_vs_SDPD	NIV3-NAIVE	23	6
+riaz_inputs_v1	CRPR_vs_SDPD	NIV3-PROG	26	4
+riaz_inputs_v1	CRPR_vs_PD	NIV3-NAIVE	18	6
+riaz_inputs_v1	CRPR_vs_PD	NIV3-PROG	15	4

@@ -1,0 +1,24 @@
+"""All eight sections and all three pre-existing CM12 core edges."""
+from pathlib import Path
+import pandas as pd,numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+O=R/'integrated_evidence_review';O.mkdir(exist_ok=True)
+t=pd.read_csv(R/'spatial_melanoma/primary_N30_review/edge_density_all_sections.tsv',sep='\t')
+pairs=[('Endo_tip_ESM1','Str_Pericyte_RGS5','ESM1 / RGS5'),('Endo_tip_ESM1','Mye_Mac_FOLR2','ESM1 / FOLR2'),('Mye_Mac_FOLR2','Str_Pericyte_RGS5','FOLR2 / RGS5')]
+sections=['mel%d_rep%d_N30'%(i,j) for i in range(1,5) for j in (1,2)]
+fig,axs=plt.subplots(1,3,figsize=(13,6),sharey=True,layout='constrained')
+for ax,(u,v,label) in zip(axs,pairs):
+ for post,offset,marker,color in [('means',-.12,'o','#126c9b'),('q05',.12,'s','#c26622')]:
+  s=t[(t.cm=='CM12')&(t.node1==u)&(t.node2==v)&(t.posterior==post)].set_index('section').loc[sections]
+  assert len(s)==8
+  ax.scatter(s.partial_rank_total_melanoma_other_nuisance,np.arange(8)+offset,marker=marker,color=color,label=post,s=42)
+ ax.axvline(0,color='grey',lw=.8);ax.set_xlim(-.15,.75);ax.set_title(label);ax.set_xlabel('Composition-adjusted rank correlation')
+ ax.set_yticks(range(8),[s.replace('_N30','') for s in sections]);ax.grid(axis='x',alpha=.2)
+axs[0].invert_yaxis();axs[2].legend(title='Abundance summary',loc='lower right',fontsize=9)
+fig.suptitle('CM12 three-edge comparison | all 8 preselected legacy-ST sections | assumed N=30')
+fig.supxlabel('Controls: total modeled abundance, melanoma fraction, other nuisance fraction. q05 is sensitivity, not a correlation CI.\nDescriptive only: no independent-patient, direct marker, cell-contact or three-way hub validation claim.',fontsize=9)
+fig.savefig(O/'CM12_three_edges.png',dpi=170);plt.close(fig)
+print('THREE_EDGE_FIGURE_WRITTEN')

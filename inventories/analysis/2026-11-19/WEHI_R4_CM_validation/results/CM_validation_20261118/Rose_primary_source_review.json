@@ -1,0 +1,22 @@
+{
+  "cohort": "GSE176307",
+  "primary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8548561/",
+  "doi": "10.1038/s41416-021-01488-6",
+  "paper_RNA_patients": 89,
+  "response_definition": "RECIST1.1 objective response: CR+PR versus SD+PD; deaths before imaging or clear clinical progression without post-treatment imaging classified nonresponders by authors",
+  "clinical_benefit_distinct": "CR or PR or SD lasting at least 6 months; cannot derive from io.response alone",
+  "baseline_tissue_timing": "not verified per sample by paper passage inspected; archived primary/metastatic FFPE",
+  "unmatched_GEO_samples": [
+    "GSM5362510 / BACI165_1",
+    "GSM5362511 / BACI165_2"
+  ],
+  "expression_columns_absent_from_sample_key": [
+    "RS-03238964",
+    "RS-03239044",
+    "RS-03239001",
+    "RS-03238998"
+  ],
+  "mapping_action": "retain unmatched; no guessed suffix mapping",
+  "survival_time_unit_and_time_origin": "not yet independently verified",
+  "state": "partial clinical provenance audit; not confirmation-ready"
+}

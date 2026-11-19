@@ -1,0 +1,15 @@
+{
+  "status": "JOINT_BH_COMPLETE_WITH_INDEPENDENT_SORTED_REPLAY_ALL_THREE_INPUT_ANALYSES_AUDITED",
+  "sources": 3,
+  "total_rows": 698100,
+  "variable_tests": 45821,
+  "q05": 0,
+  "input_hashes": {
+    "${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/differential_LR_GSE234933_v1/differential_scores_joint.tsv.gz": "0416d6cc929e25b467749f0f63ee77827e1997eb0cc1153cf5ec0ba901e41027",
+    "${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/differential_LR_GSE234933_v1/renal_scores_joint_update.tsv.gz": "408f7ec8ba8a8fb83e6f1b77286d2dcab4ba1f94720dd6abe7477cbdbd8d4fe4",
+    "${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/differential_LR_CM12_GSE149614_primary_v1/differential_scores.tsv.gz": "64b7c07c1b0b220196093d03260e3c0a7887609dc230dd1e4c59aa7c5b3e48ab"
+  },
+  "interpretation": "All qualified tests from three currently source-verified datasets, keeping source-specific estimands. No pooled biological contrast. Includes headneck context/HPV primary and unrestricted sensitivity, renal unrestricted, liver primary-tumour-only. Exact/MonteCarlo limitations retained; four unresolved headneck units excluded; liver repeated tissues not independent.",
+  "core_axis": "ESM1-RGS5 CM12 pair qualified only in renal9high10low. No eligible liver or headneck core-axis differential validation; other CM12 pairs cannot substitute.",
+  "remaining": "Not a global correction across all original sources; unverified sources and remaining CPDB modules are separate pending work. No-significance does not establish absence or equivalence."
+}

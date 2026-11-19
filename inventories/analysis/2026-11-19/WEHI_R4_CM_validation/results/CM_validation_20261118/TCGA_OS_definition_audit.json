@@ -1,0 +1,20 @@
+{
+  "status": "OS_DEFINITION_AND_DAY_FIELD_CROSSCHECK_COMPLETE",
+  "primary_source": "https://escholarship.org/content/qt9ng938g3/qt9ng938g3.pdf",
+  "DOI": "10.1016/j.cell.2018.02.052",
+  "source_location": "author manuscript page19, endpoint definitions; Table3 and discussion for endpoint suitability",
+  "endpoint": "all-cause death",
+  "origin": "initial diagnosis",
+  "censoring": "last contact",
+  "time_unit": "days; checked against explicit death_days_to and last_contact_days_to columns",
+  "comparable_records": 12522,
+  "exact_day_matches": 12516,
+  "discrepant_records": 6,
+  "published_cautions": {
+    "BRCA_OS": "caution; limited follow-up",
+    "PRAD_OS": "not recommended in this TCGA-CDR assessment"
+  },
+  "complete_cancer_endpoint_recommendation_transcription_pending": true,
+  "interpretation": "do not replace curated OS fields with raw day fields; discrepancies retained for inspection; clinical suitability is separate from nonmissing data",
+  "clinical_file_sha256": "a5e704158bb5c51cded8a368accd999dfb259d428e88bbb0c4386078c5df9617"
+}

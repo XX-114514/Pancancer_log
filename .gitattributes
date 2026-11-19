@@ -28,3 +28,8 @@ inventories/analysis/2026-10-16/state_spatial_calibration_completed_v2/*.svg whi
 
 # Preserve reviewed spatial descriptor figure SHA.
 inventories/analysis/2026-10-16/GSE273952_spatial_RNA_completed_v1/figures_v1/*.svg whitespace=-blank-at-eol
+
+# Preserve SHA-bound WEHI R4 archive bytes and meaningful empty table fields.
+inventories/analysis/2026-11-19/WEHI_R4_CM_validation/** -text
+inventories/analysis/2026-11-19/WEHI_R4_CM_validation/**/*.tsv whitespace=-blank-at-eol
+inventories/analysis/2026-11-19/WEHI_R4_CM_validation/**/statistical_analysis_*.txt whitespace=-blank-at-eol

@@ -1,0 +1,61 @@
+"""Add an explicitly separate cutaneous melanoma nuisance identity to R4.
+
+Use existing scATOMIC tumour AND CNV-positive calls; no spatial outcome selection.
+The old R4 44 identities and five epithelial nuisance identities are preserved.
+"""
+from pathlib import Path
+import json,time,hashlib,fcntl,os
+import numpy as np,pandas as pd,scipy.sparse as sp,zarr,anndata as ad
+from anndata.io import read_elem
+B=Path('${PROJECT_ARCHIVE_ROOT}')
+R=B/'CM_validation_20261118_v1/spatial_melanoma/reference';R.mkdir(exist_ok=True)
+lock=(R/'preparation.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+assert not (R/'preparation.json').exists()
+oldroot=B/'spatial_CoVarNet_R4_20261115_v1/reference'
+assert json.loads((oldroot/'independent_input_fit_audit.json').read_text())['status'].startswith('PASS_')
+old=ad.read_h5ad(oldroot/'reference_and_heldout_PRIVATE.h5ad')
+genes=old.var_names;assert genes.is_unique and old.obs.node.nunique()==49
+sources=['GSE215120_CM','GSE222446','GSE269936'];rng=np.random.default_rng(2026111803)
+parts=[];provenance=[]
+for source in sources:
+ path=B/'w2o_records_tree/malignancy_v1'/(source+'.tsv.gz')
+ d=pd.read_csv(path,sep='\t');assert d.cell_id.is_unique
+ d=d[d.malignancy_call.eq('malignant')&d.malignancy_rule.eq('scATOMIC_tumour_and_CNV_positive')&d.scATOMIC_pred.eq('Skin Cancer Cell')].copy()
+ # Cap each original unit before source-balanced random sampling.
+ pool=pd.concat([v.iloc[rng.choice(len(v),min(100,len(v)),replace=False)] for _,v in d.groupby('unit_id',sort=True)])
+ chosen=pool.iloc[rng.choice(len(pool),min(1100,len(pool)),replace=False)].copy()
+ held=min(100,len(chosen)//5);chosen['split']=['heldout']*held+['reference']*(len(chosen)-held)
+ chosen['source']=source;parts.append(chosen)
+ provenance.append(dict(source=source,consensus_skin_malignant_candidates=len(d),selected=len(chosen),units=chosen.unit_id.nunique(),heldout=held,call_file_sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
+q=pd.concat(parts).set_index('cell_id');assert q.index.is_unique and not q.index.isin(old.obs_names).any()
+assert q.groupby('source').size().ge(200).all()
+z=zarr.open_group(str(B/'zarr/integration_v2.zarr'),mode='r');axis=pd.Index(z['obs/_index'][:]);var=pd.Index(z['var/_index'][:])
+q['raw_row']=axis.get_indexer(q.index);assert q.raw_row.ge(0).all();q=q.sort_values('raw_row')
+native_source=np.asarray(read_elem(z['obs/source'])).astype(str)
+assert np.array_equal(native_source[q.raw_row],q.source.astype(str))
+mp,=B.glob('r3_handoff_20261108/*/p2/measured_gene_mask_by_source.tsv.gz')
+mask=pd.read_csv(mp,sep='\t',index_col=0)
+assert mask.loc[genes,sources].all().all() and genes.isin(var).all()
+q.to_csv(R/'selected_melanoma_cells_PRIVATE.tsv.gz',sep='\t')
+mat=z['layers/counts'];ptr=mat['indptr'][:];positions=q.raw_row.to_numpy();cols=var.get_indexer(genes);blocks=[];started=time.time()
+for lo in range(0,len(axis),20000):
+ hi=min(len(axis),lo+20000);a,b=np.searchsorted(positions,[lo,hi])
+ if a==b:continue
+ left,right=int(ptr[lo]),int(ptr[hi])
+ raw=sp.csr_matrix((mat['data'][left:right],mat['indices'][left:right],ptr[lo:hi+1]-left),shape=(hi-lo,len(var)))
+ x=raw[positions[a:b]-lo][:,cols].astype(np.float32)
+ assert np.isfinite(x.data).all() and (x.data>=0).all() and np.array_equal(x.data,np.rint(x.data))
+ blocks.append(x)
+ (R/'progress.json').write_text(json.dumps(dict(pid=os.getpid(),selected_completed=int(b),selected_total=len(q),seconds=time.time()-started)))
+X=sp.vstack(blocks,format='csr');assert (np.asarray(X.sum(axis=1)).ravel()>0).all()
+obs=q[['source','split']].copy();obs['node']='nuisance:Cutaneous_melanoma_consensus';obs['major']='Melanoma_nuisance'
+new=ad.AnnData(X,obs=obs,var=pd.DataFrame(index=genes));ref=ad.concat([old,new],join='inner');ref.obs=ref.obs.astype(str)
+assert ref.n_vars==old.n_vars and ref.obs.node.nunique()==50
+ref.write_h5ad(R/'reference_and_heldout_PRIVATE.h5ad',compression='gzip')
+ref.obs.groupby(['node','source','split'],observed=True).size().rename('cells').reset_index().to_csv(R/'node_source_coverage.tsv',sep='\t',index=False)
+proof=dict(status='MELANOMA_REFERENCE_PREPARED_PENDING_INDEPENDENT_RAW_REPLAY',cells=ref.n_obs,genes=ref.n_vars,labels=50,
+           new_melanoma_cells=len(q),sources=provenance,original_R4_reference_preserved=True,
+           original_reference_sha256=hashlib.sha256((oldroot/'reference_and_heldout_PRIVATE.h5ad').read_bytes()).hexdigest(),
+           selection='three cutaneous melanoma sources; exact consensus malignant+Skin Cancer Cell; <=100 cells/unit; <=1100/source including <=100 heldout; seed2026111803',
+           limitations='nuisance identity, not a new R4 CM member; independent count and marker/separability audits pending; no verified patient independence')
+(R/'preparation.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

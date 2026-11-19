@@ -1,0 +1,54 @@
+"""Outcome-blind bridge and exploratory within-cancer methylation-LF association."""
+from pathlib import Path
+import hashlib,json
+import numpy as np,pandas as pd
+from scipy.stats import spearmanr
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+O=R/'bulk_R4_candidates/TCGA_leukocyte_association';O.mkdir(exist_ok=False)
+plan=dict(status='FROZEN_BEFORE_ASSOCIATIONS',source='https://gdc.cancer.gov/about-data/publications/panimmune',
+ primary='single aliquot per TCGA sample15; finite fraction in [0,1]; exact cancer and sample key; no OS eligibility filter',
+ sensitivity='median of valid aliquots within sample15; no cancer conflicts; no clipping invalid fractions',
+ resolution='TCGA expression sample IDs are 15 chars; this is sample-level cross-assay matching, not verified same vial/portion',
+ statistic='within-cancer Spearman, at least 30 unique patients and variable scores/fractions',
+ multiplicity='BH over all assessed cancer x 15 CM x 2 branches x 2 aliquot policies; retain raw p',
+ limitations='exploratory composition associations; no purity adjustment yet; no external validation; RNA scores may reflect immune-cell abundance; not a predictive biomarker')
+(O/'plan.json').open('x').write(json.dumps(plan,indent=2))
+p=R/'sources/panimmune/leukocyte_fraction.tsv';sha=hashlib.sha256(p.read_bytes()).hexdigest()
+assert sha=='5a8268caedbf8dc98a75be0528d583238d7355761d9fc746e42002f223a982d9'
+a=pd.read_csv(p,sep='\t',header=None,names=['lf_cancer','aliquot','fraction'])
+assert len(a)==10817 and a.aliquot.is_unique
+assert a.aliquot.str.match(r'^TCGA-[A-Z0-9]{2}-[A-Z0-9]{4}-[0-9]{2}[A-Z]-').all()
+a['sample']=a.aliquot.str[:15];a['valid']=np.isfinite(a.fraction)&a.fraction.between(0,1)
+a.to_csv(O/'aliquot_audit_PRIVATE.tsv.gz',sep='\t',index=False)
+rows=[]
+for sample,g in a.groupby('sample'):
+ valid=g[g.valid];conflict=g.lf_cancer.nunique()!=1
+ rows.append(dict(sample=sample,lf_cancer=g.lf_cancer.iloc[0],aliquots=len(g),valid_aliquots=len(valid),cancer_conflict=conflict,
+                  LF_single=float(g.fraction.iloc[0]) if len(g)==1 and g.valid.all() and not conflict else np.nan,
+                  LF_median=float(valid.fraction.median()) if len(valid) and not conflict else np.nan,
+                  LF_min=float(valid.fraction.min()) if len(valid) else np.nan,LF_max=float(valid.fraction.max()) if len(valid) else np.nan))
+b=pd.DataFrame(rows)
+s=pd.read_csv(R/'bulk_R4_candidates/TCGA_scores/scores_PRIVATE.tsv.gz',sep='\t')
+assert json.loads((R/'bulk_R4_candidates/TCGA_scores/independent_audit.json').read_text())['status'].startswith('PASS_')
+cohort=s[['sample','patient','cancer']].drop_duplicates();assert cohort['sample'].is_unique and cohort.patient.is_unique
+assert cohort['sample'].str.len().eq(15).all()
+b=cohort.merge(b,on='sample',how='left',validate='one_to_one');b['cancer_match']=b.cancer.eq(b.lf_cancer)
+for c in ['LF_single','LF_median']:b.loc[~b.cancer_match,c]=np.nan
+b.to_csv(O/'sample_bridge_PRIVATE.tsv.gz',sep='\t',index=False)
+x=s.merge(b[['sample','LF_single','LF_median']],on='sample',validate='many_to_one');results=[]
+for (cancer,branch,cm),g in x.groupby(['cancer','branch','cm']):
+ for policy in ['LF_single','LF_median']:
+  q=g[['score',policy]].dropna();n=len(q)
+  ok=n>=30 and q.score.nunique()>1 and q[policy].nunique()>1
+  rho,pv=spearmanr(q.score,q[policy]) if ok else (np.nan,np.nan)
+  results.append(dict(cancer=cancer,branch=branch,cm=cm,policy=policy,patients=n,rho=rho,p=pv,status='ASSESSED' if ok else 'INSUFFICIENT_OR_CONSTANT'))
+t=pd.DataFrame(results);mask=t.p.notna();t['q_all_assessed_tests']=np.nan;t.loc[mask,'q_all_assessed_tests']=multipletests(t.loc[mask,'p'],method='fdr_bh')[1]
+t.to_csv(O/'associations.tsv',sep='\t',index=False)
+b.groupby('cancer').agg(scored_samples=('sample','size'),single_aliquot=('LF_single','count'),median_aliquot=('LF_median','count')).to_csv(O/'cancer_coverage.tsv',sep='\t')
+proof=dict(status='ASSOCIATIONS_WRITTEN_PENDING_INDEPENDENT_AUDIT',source_sha256=sha,source_records=len(a),invalid_fraction_records=int((~a.valid).sum()),
+ scored_patients=len(b),single_aliquot_eligible=int(b.LF_single.notna().sum()),median_eligible=int(b.LF_median.notna().sum()),
+ cancer_discordances=int((b.lf_cancer.notna()&~b.cancer_match).sum()),assessed_tests=int(mask.sum()),
+ limitations=plan['limitations'],resolution=plan['resolution'])
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))
+print(t[(t.cm=='CM12')&(t.branch=='original_network_members')&(t.policy=='LF_single')][['cancer','patients','rho','q_all_assessed_tests']].to_string(index=False))

@@ -1,0 +1,52 @@
+"""Outcome-blind R4 adaptation of the existing bulk signature recipe.
+
+These are candidate gene sets, not validated cell abundance estimators.
+"""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+B=Path('${PROJECT_ARCHIVE_ROOT}')
+R=B/'CM_validation_20261118_v1';O=R/'bulk_R4_candidates';O.mkdir(exist_ok=False)
+P=B/'spatial_CoVarNet_R4_20261115_v1';S=P/'reference/signatures_PRIVATE.tsv'
+assert json.loads((P/'reference/independent_input_fit_audit.json').read_text())['status'].startswith('PASS_')
+wp=P/'adapter/CM_results/W_PRIVATE.tsv';ep=P/'adapter/CM_results/CM_members_after_author_network_filter.tsv'
+sig=pd.read_csv(S,sep='\t',index_col=0).sort_index();W=pd.read_csv(wp,sep='\t',index_col=0);members=pd.read_csv(ep,sep='\t')
+assert W.shape==(44,15) and W.index.is_unique and set(W.index)<=set(sig.columns)
+assert np.isfinite(W).all().all() and (W>=0).all().all()
+states=W.index.tolist();A=sig[states];rel=A.div(A.sum(axis=1).replace(0,np.nan),axis=0).fillna(0)
+assert np.allclose(rel.sum(axis=1),1)
+rows=[];summaries=[]
+for branch in ['all_W_nodes_previous_recipe','original_network_members']:
+ weights=W.copy()
+ if branch=='original_network_members':
+  for cm in W.columns:weights.loc[~weights.index.isin(members.loc[members.cm.eq(cm),'subCluster']),cm]=0
+ active=weights.sum(axis=0)>0;weights=weights.loc[:,active];weights=weights.div(weights.sum(axis=0),axis=1)
+ assert np.allclose(weights.sum(axis=0),1)
+ loading=pd.DataFrame(rel.to_numpy()@weights.to_numpy(),index=A.index,columns=weights.columns)
+ sets={cm:set(loading[cm].sort_values(ascending=False,kind='stable').head(60).index) for cm in loading}
+ hits=pd.Series(0,index=A.index)
+ for genes in sets.values():hits.loc[list(genes)]+=1
+ excluded=set(hits[hits>=3].index)
+ for cm in W.columns:
+  if cm not in loading:
+   summaries.append(dict(branch=branch,cm=cm,genes=0,status='NO_ORIGINAL_NETWORK_WEIGHT'));continue
+  ser=loading[cm].sort_values(ascending=False,kind='stable');ser=ser[(ser>0)&~ser.index.isin(excluded)].head(60)
+  assert ser.index.is_unique and len(ser)==60
+  for gene,value in ser.items():rows.append(dict(branch=branch,cm=cm,gene=gene,raw_loading=float(value),weight=float(value/ser.sum())))
+  summaries.append(dict(branch=branch,cm=cm,genes=len(ser),status='FROZEN_CANDIDATE_NOT_VALIDATED',nonspecific_excluded=len(excluded)))
+ loading.to_csv(O/(branch+'_loadings.tsv.gz'),sep='\t')
+ weights.to_csv(O/(branch+'_node_weights.tsv'),sep='\t')
+d=pd.DataFrame(rows);d.to_csv(O/'candidate_signatures.tsv',sep='\t',index=False);pd.DataFrame(summaries).to_csv(O/'signature_summary.tsv',sep='\t',index=False)
+mapping=pd.read_csv(R/'clinical/TCGA_gene_mapping.tsv.gz',sep='\t');available=set(mapping.loc[mapping.unique_symbol_mapping,'gene'])
+coverage=d.assign(unique_TCGA_mapping=d.gene.isin(available)).groupby(['branch','cm']).agg(total_genes=('gene','size'),uniquely_mapped_genes=('unique_TCGA_mapping','sum')).reset_index()
+coverage.to_csv(O/'TCGA_candidate_coverage.tsv',sep='\t',index=False)
+proof=dict(status='R4_BULK_CANDIDATE_SIGNATURES_FROZEN_PENDING_BIOLOGICAL_AND_SCORE_VALIDATION',modules=15,branches=2,genes_per_signature=60,
+           method='row-normalized R4 fitted reference over 44 CM identities x column-normalized frozen W; top60; exclude genes initially top60 in >=3 modules and refill',
+           primary_interpretation_branch='original_network_members; matches spatial activity member restriction',
+           sensitivity_branch='all_W_nodes_previous_recipe; retains previous local bulk recipe',
+           clinical_outcomes_used_for_gene_selection=False,
+           limitations='not original-paper bulk validation; gene ranking can favor low-expression specific genes; immune-member modules include immune composition; no clinical association, predictive accuracy, source robustness or independent patient validation claimed',
+           required_next='heldout identity/mixture validation, source robustness and immune-overlap controls; freeze scoring universe/coverage rules before clinical testing; include all branches in multiplicity accounting',
+           input_sha256={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in [S,wp,ep]},
+           signatures_sha256=hashlib.sha256((O/'candidate_signatures.tsv').read_bytes()).hexdigest())
+(O/'freeze.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(coverage.to_string(index=False))

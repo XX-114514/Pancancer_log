@@ -1,0 +1,8 @@
+{
+  "status": "DESCRIPTIVE_SENSITIVITY_FOR_ALL_SUCCESSFUL_ADJUSTED_MODELS",
+  "selection": "all FIT_OK models other than base, both branches and all 15 modules; not selected by significance or CM12",
+  "method": "fit age/sex baseline on exactly the same patients as each adjusted model; original outcome-blind module score SD retained",
+  "decomposition": "adjusted beta minus original full-cohort base beta = matched-base minus full-base (sample restriction) + adjusted minus matched-base (covariate conditioning); algebraic descriptive decomposition, not causal mediation",
+  "inference": "no new hypothesis tests, p-values or significance claims; existing 3690-model BH retained as provenance only; no comparison of p-values across unequal cohorts",
+  "limitations": "cannot prove missing-at-random, causal adjustment, incremental prediction or proportional hazards; full and restricted estimates correlated; no interval on beta differences"
+}

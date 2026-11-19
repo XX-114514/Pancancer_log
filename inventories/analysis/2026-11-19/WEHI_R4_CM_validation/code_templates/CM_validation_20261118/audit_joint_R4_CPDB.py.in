@@ -1,0 +1,25 @@
+"""Independent full-vector statsmodels BH from raw CPDB files."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'communication_joint15_v2';receipt=json.loads((O/'complete.json').read_text());assert receipt['modules']==15
+for name,h in receipt['output_sha256'].items():assert hashlib.sha256((O/name).read_bytes()).hexdigest()==h
+cov=pd.read_csv(R/'CPDB_interaction_measurement.tsv',sep='\t').set_index('id_cp_interaction');arrays=[];inputs={};offsets={};n=0
+for src in receipt['sources']:
+ cm=src['cm'];d=R/'communication'/cm;f=d/src['file'];assert hashlib.sha256(f.read_bytes()).hexdigest()==src['sha256'];original=json.loads((d/'complete.json').read_text());assert original['files'][f.name]==src['sha256'] and original['iterations']==1000
+ t=pd.read_csv(f,sep='\t').set_index('id_cp_interaction');cols=[x for x in t if '|' in x];assert set(cols)=={a+'|'+b for a in original['label_cell_counts'] for b in original['label_cell_counts']};keep=cov.loc[t.index,'all_required_components_measured'].eq(True).to_numpy();raw=t[cols].to_numpy(float);p=((raw[keep]*1000+1)/1001).ravel();assert np.isfinite(p).all() and ((p>0)&(p<=1)).all();arrays.append(p);offsets[cm]=(n,n+len(p));n+=len(p);inputs[cm]=(t.index,cols,keep,raw,t.interacting_pair.to_numpy())
+allp=np.concatenate(arrays);del arrays;assert len(allp)==receipt['total_tests'];print('full-vector BH',len(allp),flush=True);q=multipletests(allp,method='fdr_bh')[1];del allp
+summary=pd.read_csv(O/'module_summary.tsv',sep='\t').set_index('cm');pairs=pd.read_csv(O/'pair_summary.tsv',sep='\t');cores=pd.read_csv(O/'core_edges_all_CMT.tsv.gz',sep='\t');assert not cores.duplicated(['CMT','core_module','source_identity','target_identity','id_cp_interaction']).any();maxerr=0.;events=0;corerows=0
+for cm,(index,cols,keep,raw,labels) in inputs.items():
+ qtab=pd.read_csv(O/(cm+'_q_joint15.tsv.gz'),sep='\t',index_col=0);assert qtab.index.equals(index) and list(qtab.columns)==cols;got=qtab.to_numpy(float);start,end=offsets[cm];expected=q[start:end].reshape(keep.sum(),len(cols));err=float(np.max(np.abs(got[keep]-expected)));maxerr=max(maxerr,err);assert err<1e-12 and np.isnan(got[~keep]).all()
+ old=pd.read_csv(R/'communication'/cm/'MC_corrected_BH_within_CMT.tsv.gz',sep='\t',index_col=0).loc[index,cols].to_numpy(float);sig=got<=.05;previous=old<=.05;assert int(sig.sum())==summary.loc[cm,'joint15_events'];assert int((previous&~sig).sum())==summary.loc[cm,'lost_after_joint'];assert int((~previous&sig).sum())==summary.loc[cm,'gained_after_joint'];events+=int(sig.sum())
+ pt=pairs[pairs.cm==cm].copy();pt['col']=pt.source_identity+'|'+pt.target_identity;assert set(pt.col)==set(cols);assert np.array_equal(pt.set_index('col').loc[cols,'joint15_events'],sig.sum(axis=0))
+ ct=cores[cores.CMT==cm]
+ base=[('Endo_tip_ESM1','Str_Pericyte_RGS5'),('Endo_tip_ESM1','Mye_Mac_FOLR2'),('Str_Pericyte_RGS5','Mye_Mac_FOLR2'),('Endo_venous_ACKR1','Str_Fib_PI16'),('Endo_arterial_GJA5','Str_SMC_MYH11')];wanted={(u,v) for a,b in base for u,v in [(a,b),(b,a)] if u+'|'+v in cols};assert set(zip(ct.source_identity,ct.target_identity))==wanted and len(ct)==len(wanted)*len(index)
+ for (a,b),v in ct.groupby(['source_identity','target_identity']):
+  v=v.set_index('id_cp_interaction').loc[index];j=cols.index(a+'|'+b);assert np.allclose(v.raw_p,raw[:,j],atol=1e-15);assert np.allclose(v.q_joint15,got[:,j],equal_nan=True,atol=1e-12);assert np.array_equal(v.interacting_pair,labels);assert np.array_equal(v.complete_components,keep);corerows+=len(v)
+ print(cm,'all values and summaries PASS',flush=True)
+assert corerows==len(cores)
+proof=dict(status='PASS_all15_raw_CPDB_hashes_all_eligible_MC_P_full_vector_BH_all_q_tables_and_core_summaries',tests=n,joint_significant_events=events,core_rows=corerows,max_q_error=maxerr,summary_sha256=hashlib.sha256((O/'module_summary.tsv').read_bytes()).hexdigest(),scope='all input-complete interactions x ordered identity pairs x15 CMT; count-histogram production checked against full-vector statsmodels BH',limitations='finite-permutation sensitivity only; pooled cells not independent patients; no highlow differential LR inference, causal or directional-signaling claim; source-level measurement eligibility unresolved')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

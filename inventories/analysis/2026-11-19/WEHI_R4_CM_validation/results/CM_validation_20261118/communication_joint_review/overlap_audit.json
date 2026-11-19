@@ -1,0 +1,6 @@
+{
+  "status": "PASS_full_set_and_boolean_matrix_overlap_replay",
+  "core_pairs": 10,
+  "inputs": "audited all134250 core entries",
+  "limitations": "same LR can occur in multiple CMT and pair entries; thresholded exclusivity is not a test of CMT differences"
+}

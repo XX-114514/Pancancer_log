@@ -1,0 +1,11 @@
+{
+  "status": "PASS_all192new_tests_raw_identity_counts_exact_combinatorial_null_and_joint_BH",
+  "new_planned": 192,
+  "new_tested": 178,
+  "joint_planned": 288,
+  "joint_tested": 274,
+  "joint_q05": 89,
+  "max_exact_p_error": 2.0650148258027912e-14,
+  "joint_sha256": "29b032d860e02805c0afe4fc6c1482a470447de61e7c2d7aede518b661616021",
+  "interpretation": "same-cohort exploratory identity sensitivity; MYH11 zero is observed RNA zero, not proven biological absence; prior q_family retained for prior96 family only; no selection based on new outcome"
+}

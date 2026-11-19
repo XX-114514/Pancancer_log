@@ -1,0 +1,13 @@
+{
+  "primary": "PI16-positive reviewed fibroblasts near ACKR1-positive reviewed blood EC",
+  "radius_um": 50,
+  "sensitivity_radii_um": [
+    25,
+    100,
+    200
+  ],
+  "null": "permute PI16 positivity among reviewed fibroblasts within 500um tiles and native-total quartiles; 999 permutations",
+  "LR": "native ligand/receptor co-detection descriptive only",
+  "exact_R4_projection": false,
+  "clinical": "not evaluated; no frozen validated subtype expression signature"
+}

@@ -1,0 +1,25 @@
+{
+  "modules": [
+    "CM01",
+    "CM12",
+    "CM04"
+  ],
+  "primary": "CM01",
+  "comparison": "CM12",
+  "vascular_control": "CM04",
+  "scope": "all original edges of the three fixed modules, no outcome-driven edge selection",
+  "main": "both endpoint parent denominators >=20; undefined denominator remains NA",
+  "sensitivity": [
+    "defined parents >0",
+    "both parents >=50",
+    "leave-one-source-out fixed edge correlation"
+  ],
+  "inference": "within source x cancer rank-centered correlation; 1999 within-stratum permutations; BH over all selected unique edges",
+  "limitations": [
+    "discovery-data sensitivity, not independent validation",
+    "unit IDs not verified patient IDs",
+    "LOSO correlations do not refit nsNMF or author network",
+    "no spatial or causal claim"
+  ],
+  "utc": "2026-11-15T08:54:55.532965+00:00"
+}

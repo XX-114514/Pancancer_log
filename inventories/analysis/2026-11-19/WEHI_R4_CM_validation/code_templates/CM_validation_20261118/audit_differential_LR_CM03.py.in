@@ -1,0 +1,48 @@
+"""Independent reconstruction and permutation/BH audit of patient LR contrasts."""
+from pathlib import Path
+import json,itertools,math,hashlib
+import numpy as np,pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+O=R/'differential_LR_CM03_GSE207493_v1';I=R/'patient_LR_v1'
+t=pd.read_csv(O/'differential_scores.tsv.gz',sep='\t');d=pd.read_csv(O/'patient_pair_design_PRIVATE.tsv',sep='\t');v=pd.read_csv(O/'interaction_components.tsv',sep='\t')
+m=pd.read_csv(I/'unit_node_metadata_PRIVATE.tsv',sep='\t');g=pd.read_csv(I/'genes.tsv',sep='\t').gene.tolist();a=np.load(I/'expression_PRIVATE.npz');packed=np.load(O/'unit_pair_scores_PRIVATE.npz')['scores'];lookup={(r.unit,r.node):i for i,r in enumerate(m.itertuples())}
+bridge=pd.read_csv(R/'patient_bridge_GEO_v2/source_verified_patient_bridge_PRIVATE.tsv',sep='\t').set_index('unit')
+expr=a['mean_log_expression'];det=a['detection_fraction'];rng=np.random.default_rng(2026111903);maxerr=0.;pvals=[];paircount=0
+for (n1,n2),sub in t.groupby(['node1','node2'],sort=False):
+ design=d[(d.node1==n1)&(d.node2==n2)];units=design.unit.tolist();assert units==sorted(units)
+ h=design.high.to_numpy(dtype=bool);n=len(h);nh=h.sum();nl=n-nh
+ assert min(nh,nl)>=3 and design.patient.is_unique
+ assert bridge.loc[units,'source_patient_key'].tolist()==design.patient.tolist()
+ assert bridge.loc[units,'CMT'].eq('CM03').tolist()==h.tolist()
+ assert bridge.loc[units,'source'].eq('GSE207493').all()
+ rows1=[lookup[(u,n1)] for u in units];rows2=[lookup[(u,n2)] for u in units]
+ assert m.iloc[rows1+rows2].cells.ge(10).all()
+ y=np.zeros((n,len(v)))
+ for j,row in enumerate(v.itertuples()):
+  ga=[g.index(x) for x in row.partner_a_genes.split('|')];gb=[g.index(x) for x in row.partner_b_genes.split('|')]
+  for k,(r1,r2) in enumerate(zip(rows1,rows2)):
+   ea=min(expr[r1,ga]);eb=min(expr[r2,gb])
+   if min(det[r1,ga])>.1 and min(det[r2,gb])>.1 and ea>0 and eb>0:y[k,j]=(ea+eb)*.5
+ assert np.allclose(y,packed[design.matrix_row],atol=1e-12,rtol=0)
+ obs=np.average(y[h],axis=0)-np.average(y[~h],axis=0)
+ maxerr=max(maxerr,float(np.max(np.abs(obs-sub.high_minus_low.to_numpy()))))
+ assert np.allclose(obs,sub.high_minus_low,atol=1e-12,rtol=0)
+ assert sub.interaction.tolist()==v.interaction.tolist()
+ exact=math.comb(n,int(nh))<=9999
+ assignments=np.array(list(itertools.combinations(range(n),int(nh)))) if exact else np.array([rng.choice(n,nh,replace=False) for _ in range(9999)])
+ extreme=np.zeros(len(v),int)
+ for start in range(0,len(assignments),64):
+  ix=assignments[start:start+64];s=y[ix].sum(axis=1);stat=s/nh-(y.sum(axis=0)-s)/nl
+  extreme+=(abs(stat)>=abs(obs)-1e-12).sum(axis=0)
+ p=extreme/len(assignments) if exact else (extreme+1)/(len(assignments)+1)
+ variable=np.ptp(y,axis=0)>1e-12;p[~variable]=np.nan
+ assert np.array_equal(variable,sub.variable.to_numpy())
+ assert np.allclose(p,sub.p.to_numpy(),atol=1e-12,rtol=0,equal_nan=True)
+ assert sub.assignments.eq(len(assignments)).all()
+ pvals.extend(p);paircount+=1
+ print('PASS',paircount,n1,n2,flush=True)
+pvals=np.array(pvals);mask=np.isfinite(pvals);pv=pvals[mask];order=np.argsort(pv);qsort=np.minimum.accumulate((pv[order]*len(pv)/np.arange(1,len(pv)+1))[::-1])[::-1];q=np.empty(len(pv));q[order]=np.minimum(1,qsort)
+assert np.allclose(q,t.loc[mask,'q_within_CM03_source_PROVISIONAL'],atol=1e-12,rtol=0)
+assert paircount==49 and len(t)==49*895
+out=dict(status='PASS_ALL_PATIENT_DESIGNS_COMPONENT_SCORE_RECONSTRUCTION_PERMUTATION_AND_BH',pairs=paircount,interaction_pair_rows=len(t),nonconstant_tests=int(mask.sum()),q05=int((q<.05).sum()),max_score_contrast_error=maxerr,score_table_sha256=hashlib.sha256((O/'differential_scores.tsv.gz').read_bytes()).hexdigest(),scope='All saved component expressions and patient labels independently reconstructed; all permutations replayed by indexed sums, same prespecified random assignments; explicit BH. Component table mapping to database not independently rederived in this audit; upstream gene normalization audit separate. Cross-CM/source correction pending; not physical communication proof.')
+(O/'independent_audit.json').write_text(json.dumps(out,indent=2));print(json.dumps(out),flush=True)

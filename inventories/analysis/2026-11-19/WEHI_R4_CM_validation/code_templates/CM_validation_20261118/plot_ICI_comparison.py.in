@@ -1,0 +1,31 @@
+"""Compare fixed-direction primary analyses; no reorientation or pooled AUC."""
+from pathlib import Path
+import json
+import numpy as np,pandas as pd,anndata as ad
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates');O=R/'riaz_response_v1'
+assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_')
+hs=pd.read_csv(R/'hugo_response_v1/scores_PRIVATE.tsv',sep='\t');hs=hs[(hs.policy=='patient_mean_FPKM')&(hs.branch=='original_network_members')]
+rs=pd.read_csv(O/'scores_PRIVATE.tsv.gz',sep='\t');rs=rs[(rs.input_version=='riaz_inputs_v2')&(rs.branch=='original_network_members')]
+obs=ad.read_h5ad(R/'riaz_inputs_v2/baseline_candidate_expression_PRIVATE.h5ad').obs;obs=obs[obs.eligible_baseline_response];obs['response']=obs.BOR.astype(str).isin(['CR','PR']).astype(int);rs=rs.merge(obs[['response']],left_on='sample',right_index=True,validate='many_to_one')
+h=pd.read_csv(O/'Hugo_response_joint_q.tsv',sep='\t');h=h[(h.policy=='patient_mean_FPKM')&(h.branch=='original_network_members')].set_index('cm')
+r=pd.read_csv(O/'response_associations.tsv',sep='\t');r=r[(r.input_version=='riaz_inputs_v2')&(r.endpoint=='CRPR_vs_SDPD')&(r.branch=='original_network_members')].set_index('cm')
+rows=[]
+for cohort,s,t,qcol in [('Hugo',hs,h,'q_ICI_joint_stratified'),('Riaz',rs,r,'q_ICI_joint_prior_ipi')]:
+ for cm,g in s.groupby('cm'):
+  assert g.patient.is_unique
+  pos=g.loc[g.response.eq(1),'score'].to_numpy();neg=g.loc[g.response.eq(0),'score'].to_numpy();pair=(pos[:,None]>neg).astype(float)+.5*(pos[:,None]==neg)
+  rng=np.random.default_rng(2026111820);i=rng.integers(len(pos),size=(5000,len(pos)));j=rng.integers(len(neg),size=(5000,len(neg)));bs=pair[i[:,:,None],j[:,None,:]].mean(axis=(1,2));lo,hi=np.quantile(bs,[.025,.975]);auc=pair.mean();assert np.isclose(auc,t.loc[cm,'auc_higher_score_response'])
+  rows.append(dict(cohort=cohort,cm=cm,patients=len(g),responders=len(pos),auc=auc,CI_low=lo,CI_high=hi,q_stratified_joint=t.loc[cm,qcol]))
+a=pd.DataFrame(rows);a.to_csv(O/'primary_cohort_comparison.tsv',sep='\t',index=False)
+fig,ax=plt.subplots(figsize=(9,8),layout='constrained');mods=['CM%02d'%i for i in range(1,16)]
+for name,color,offset in [('Hugo','#a64e37',-.13),('Riaz','#24678b',.13)]:
+ g=a[a.cohort==name].set_index('cm').loc[mods];y=np.arange(15)+offset
+ ax.errorbar(g.auc,y,xerr=[g.auc-g.CI_low,g.CI_high-g.auc],fmt='o',markersize=4,capsize=2,color=color,label=name+' (n='+str(g.patients.iloc[0])+')')
+ax.axvline(.5,color='gray',linestyle='--',linewidth=1);ax.set_yticks(range(15),mods);ax.invert_yaxis();ax.set_xlim(0,1);ax.set_xlabel('Fixed direction: higher score associated with response (empirical AUC)');ax.set_title('Baseline R4 module scores and anti-PD-1 response\nPrimary signature and endpoint; no score-direction flipping');ax.legend(loc='lower right');ax.grid(axis='x',alpha=.15)
+fig.supxlabel('Bars: descriptive 95% patient bootstrap intervals, 5,000 resamples within response groups.\nScores held fixed; not external predictive performance. No module passes joint ICI BH q < 0.05.',fontsize=9)
+fig.savefig(O/'Hugo_Riaz_primary_comparison.png',dpi=180);plt.close(fig)
+(O/'comparison_bootstrap_method.json').write_text(json.dumps(dict(seed=2026111820,replicates=5000,method='fixed-score patient bootstrap separately within response strata; no pooled AUC',limitations='does not propagate score-standardization uncertainty; intervals unadjusted and descriptive; gene panels/normalization differ across cohorts'),indent=2))
+print(a[a.cm=='CM12'].to_string(index=False))

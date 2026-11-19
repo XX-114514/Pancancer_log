@@ -1,0 +1,77 @@
+{
+  "status": "PASS_ALL138_FROZEN_MEMBER_COMPARISONS_AND17_MISSING_UNIT_COMPARISONS_EXPLAINED",
+  "comparisons": 138,
+  "planned_model_comparisons": 276,
+  "included": 259,
+  "unassessable_unit_comparisons": [
+    [
+      "CM04",
+      "ILC_NK-CD56dim_FCGR3A"
+    ],
+    [
+      "CM04",
+      "Mye_cDC1_CLEC9A"
+    ],
+    [
+      "CM08",
+      "CD4T_Treg_FOXP3"
+    ],
+    [
+      "CM08",
+      "CD8T_Temra_GZMH"
+    ],
+    [
+      "CM08",
+      "ILC_NK-CD56bright_XCL1"
+    ],
+    [
+      "CM08",
+      "ILC_NK-CD56dim_FCGR3A"
+    ],
+    [
+      "CM08",
+      "Mye_Mono_VCAN"
+    ],
+    [
+      "CM08",
+      "Mye_cDC1_CLEC9A"
+    ],
+    [
+      "CM08",
+      "Mye_cDC2_CD1C"
+    ],
+    [
+      "CM13",
+      "CD4T_prolif_MKI67"
+    ],
+    [
+      "CM13",
+      "Mye_cDC1_CLEC9A"
+    ],
+    [
+      "CM13",
+      "Mye_mregDC_LAMP3"
+    ],
+    [
+      "CM14",
+      "Mye_cDC1_CLEC9A"
+    ],
+    [
+      "CM15",
+      "CD4T_Treg_FOXP3"
+    ],
+    [
+      "CM15",
+      "CD8T_Tex_LAG3"
+    ],
+    [
+      "CM15",
+      "Mye_Mono_VCAN"
+    ],
+    [
+      "CM15",
+      "Mye_cDC1_CLEC9A"
+    ]
+  ],
+  "eligibility_sha256": "6d3c46c4f19cecfb10914441c9d0f881b408b857b91e3a5bf99f0ac40337f925"
+}

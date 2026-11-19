@@ -1,0 +1,10 @@
+{
+  "status": "PURITY_SENSITIVITY_PENDING_INDEPENDENT_AUDIT",
+  "purity_input_rows": 10786,
+  "purity_input_eligible": 9820,
+  "scored_patients": 9120,
+  "scored_purity_matched": 8262,
+  "new_tests": 3600,
+  "joint_tests": 5400,
+  "limitations": "conditional descriptive sensitivity; purity and immune fractions are compositionally coupled, adjustment may remove biology or introduce selection/collider bias; not causal effect, independent biomarker or clinical validation"
+}

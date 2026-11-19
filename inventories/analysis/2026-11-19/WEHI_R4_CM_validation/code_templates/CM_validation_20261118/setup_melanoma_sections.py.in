@@ -1,0 +1,33 @@
+from pathlib import Path
+import json,shutil,hashlib
+import pandas as pd
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1/spatial_melanoma';old=B/'spatial_CoVarNet_R4_20261115_v1'
+assert json.loads((R/'reference/separability_complete.json').read_text())['status']=='FIT_STRUCTURE_AUDITED_AND_HELDOUT_DIAGNOSTICS_COMPLETE'
+assert not (R/'section_plan.json').exists()
+for name in ['inputs','sections','author','audit']:(R/name).mkdir(exist_ok=True)
+shutil.copytree(old/'adapter',R/'adapter');shutil.copy2(old/'author/CoVarNet.R',R/'author/CoVarNet.R')
+fit=(R/'code/fit_50labels.py').read_text();assert fit.count('N_cells_per_location=5')==1 and fit.count("'N_cells_per_location':5")==1
+fit=fit.replace('N_cells_per_location=5',"N_cells_per_location=job['N_cells_per_location']").replace("'N_cells_per_location':5","'N_cells_per_location':job['N_cells_per_location']")
+(R/'code/fit_sections.py').open('x').write(fit)
+audit=(old/'code/score_audit.py').read_text();assert "receipt['n_reference_labels']==49" in audit
+audit=audit.replace("receipt['n_reference_labels']==49","receipt['n_reference_labels']==50").replace('all_49_reference_labels_retained','all_50_reference_labels_retained')
+(R/'code/score_audit.py').open('x').write(audit)
+score=(old/'code/score.R').read_text().replace('ALL14_MEAN','ALL15_MEAN').replace('5 epithelial nuisance reference labels','6 nuisance reference labels')
+(R/'code/score.R').open('x').write(score)
+input_audit=pd.read_csv(R/'input_audit.tsv',sep='\t');assert len(input_audit)==8
+source=Path('${PANCANCER_ROOT}/Project_v5/spatial_expansion_20260904/processed')
+jobs=[]
+for n in [30,5,60]:
+ for sample in sorted(input_audit['sample']):
+  p=source/('melanoma_thrane__'+sample+'.raw_spatial.h5ad')
+  expected=input_audit.set_index('sample').loc[sample,'h5ad_sha256'];assert hashlib.sha256(p.read_bytes()).hexdigest()==expected
+  jobs.append(dict(section_code=sample+'_N'+str(n),sample=sample,dataset='Thrane2018_melanoma_legacy_ST',input_path=str(p),group_column=None,group_value=None,counts_layer='counts',coordinates='obsm/spatial',N_cells_per_location=n))
+(R/'inputs/section_jobs_PRIVATE.json').open('x').write(json.dumps(jobs,indent=2))
+plan=dict(status='FROZEN_BEFORE_SECTION_FITTING',sections=8,models=24,primary_N_cells_per_location=30,sensitivity_N_cells_per_location=[5,60],epochs_per_fit=30000,posterior_samples=1000,
+          N_cells_basis='30 reproduces prior legacy-ST assumption; 5 and 60 bracket uncertainty; no measured nuclear count available; not fitted to CM outcome',
+          scoring='frozen R4 15 modules; means primary and q05 sensitivity; literal author colocalization and 60NN inverse-square aggregation; independent score replay',
+          diagnostic_review='Endo_tip_ESM1 F1 .786-.800, RGS5 .790-.796, melanoma .942-.950; source-heldout melanoma recall .76-.99, no ESM1/RGS5 misassignment observed',
+          limitations='inherited label diagnostics are not spatial accuracy; six nuisance labels; ESM1 naming marker absent from reference gene scope; 60NN spans large tissue fractions in small legacy-ST sections; local-neighbour and density controls still required; previously explored sections, patient independence unverified',
+          selection='all eight audited archived sections retained irrespective of ESM1 detection',
+          files_sha256={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [R/'code/fit_sections.py',R/'code/score.R',R/'code/score_audit.py',R/'reference/signatures_PRIVATE.tsv']})
+(R/'section_plan.json').open('x').write(json.dumps(plan,indent=2));print(json.dumps(plan))

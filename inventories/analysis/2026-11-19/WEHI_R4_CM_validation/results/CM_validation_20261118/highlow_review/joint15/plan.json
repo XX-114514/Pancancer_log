@@ -1,0 +1,27 @@
+{
+  "modules": [
+    "CM01",
+    "CM02",
+    "CM03",
+    "CM04",
+    "CM05",
+    "CM06",
+    "CM07",
+    "CM08",
+    "CM09",
+    "CM10",
+    "CM11",
+    "CM12",
+    "CM13",
+    "CM14",
+    "CM15"
+  ],
+  "scope": "All genes and all original eligible members, never significant-only selection",
+  "families": [
+    "all cell Welch tests across 15 modules",
+    "all unit HC3 tests across 15 modules",
+    "union of both model families as additional sensitivity"
+  ],
+  "nonassessable": "Missing comparisons not imputed. Existing zero-variance HC3 p=1 retained conservatively, with variance_assessable flag.",
+  "interpretation": "Exploratory same-identity High=CMT equals CM versus other assigned CMTs. Units not verified independent patients. No differential LR conclusion. Upstream audits tracked separately."
+}

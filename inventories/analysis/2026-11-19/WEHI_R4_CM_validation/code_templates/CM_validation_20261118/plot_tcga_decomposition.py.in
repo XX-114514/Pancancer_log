@@ -1,0 +1,24 @@
+from pathlib import Path
+import json
+import pandas as pd,numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates/TCGA_reference_decomposition_v2_nonredacted')
+assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_')
+f=pd.read_csv(O/'component_qualification.tsv',sep='\t');f=f[f.branch.eq('original_network_members')];cats=['endothelial','mural','other_stromal','immune'];colors=['#2787bd','#ed9543','#968bc2','#52a078'];mods=['CM%02d'%i for i in range(1,16)]
+fig,ax=plt.subplots(figsize=(11,5),layout='constrained');bottom=np.zeros(15)
+for cat,color in zip(cats,colors):
+ v=f[f.component.eq(cat)].set_index('cm').loc[mods,'mean_gene_mass'].to_numpy()*100;ax.bar(mods,v,bottom=bottom,label=cat.replace('_',' '),color=color);bottom+=v
+ax.set_ylim(0,105);ax.set_ylabel('Mean reference attribution across signature genes (%)');ax.legend(ncol=4,loc='upper center',bbox_to_anchor=(.5,1.2));ax.set_title('Frozen 60-gene module signatures: reference attribution',pad=48)
+fig.supxlabel('Original network-member branch. These are reference loading fractions, NOT measured cell proportions.',fontsize=10);fig.savefig(O/'all15_reference_attribution.png',dpi=170);plt.close(fig)
+r=pd.read_csv(O/'descriptive_LF_associations.tsv',sep='\t');r=r[r.branch.eq('original_network_members')&r.cm.eq('CM12')];columns=['full_score','endothelial','mural','immune'];cancers=sorted(r.cancer.unique());matrix=r.pivot(index='cancer',columns='component',values='partial_spearman').reindex(index=cancers,columns=columns)
+fig,ax=plt.subplots(figsize=(7,11),layout='constrained');cmap=plt.get_cmap('RdBu_r').copy();cmap.set_bad('#dddddd');im=ax.imshow(matrix,vmin=-1,vmax=1,cmap=cmap,aspect='auto');ax.set_xticks(range(4),['Full score','Endothelial','Mural','Immune']);ax.set_yticks(range(len(cancers)),cancers)
+for i in range(len(cancers)):
+ for j in range(4):
+  x=matrix.iloc[i,j]
+  if np.isfinite(x):ax.text(j,i,f'{x:.2f}',ha='center',va='center',fontsize=8,color='white' if abs(x)>.6 else 'black')
+fig.colorbar(im,ax=ax,label='Partial rank correlation',shrink=.6);ax.set_title('CM12 components and methylation leukocyte fraction\nConditioned on purity, age and sex; descriptive only',fontsize=12)
+fig.supxlabel('Grey = insufficient reference attribution (mass <5% or effective genes <5).\nSame patients within each cancer; no new P values or independence/causality claim.',fontsize=9);fig.savefig(O/'CM12_component_LF_descriptive.png',dpi=170);plt.close(fig)
+r.to_csv(O/'CM12_component_LF_descriptive.tsv',sep='\t',index=False)
+print('FIGURES_WRITTEN')

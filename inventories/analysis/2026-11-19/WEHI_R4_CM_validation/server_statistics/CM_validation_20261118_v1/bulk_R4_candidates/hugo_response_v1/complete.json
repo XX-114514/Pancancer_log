@@ -1,0 +1,8 @@
+{
+  "status": "HUGO_RESPONSE_WRITTEN_PENDING_INDEPENDENT_REPLAY",
+  "input_sha256": "ae3b044f23a0a4cd2859da36726a220856c35216a169c17f93dfc3bd20b04de6",
+  "baseline_samples": 27,
+  "baseline_patients": 26,
+  "tests": 120,
+  "limitations": "small previously used cohort, not untouched validation; retrospective response association not treatment-specific predictive effect; no untreated comparator; no survival analysis"
+}

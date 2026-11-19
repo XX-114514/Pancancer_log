@@ -1,0 +1,15 @@
+{
+  "status": "TCGA_CANDIDATE_EXPRESSION_PREPARED_PENDING_INDEPENDENT_READBACK",
+  "samples": 10535,
+  "genes": 854,
+  "RGS5_coding_row": "ENSG00000143248.12",
+  "RGS5_antisense_row_excluded_from_coding_score": "ENSG00000232995.7",
+  "gene_resolution": "unique record, or exactly one protein_coding record among same-symbol records; otherwise unresolved; no sum or averaging",
+  "gene_resolution_is_outcome_blind": true,
+  "expression_unit": "log2(TPM + 0.001)",
+  "all_selected_values_finite": true,
+  "lowest_value": -9.965800285339355,
+  "seconds": 20.355622053146362,
+  "GENCODE23_compressed_annotation_sha256": "adfda26c291cfb68ae13b54b285f1c0023abc2dfc703b8871f43b9655ab64a56",
+  "limitations": "same-symbol resolution is a coding-focused analysis choice; does not prove original single-cell harmonizer retained coding-only RGS5; clinical scores/models and heldout signature validation still pending"
+}

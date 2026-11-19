@@ -1,0 +1,15 @@
+{
+  "status": "PASS_EXACT_EXPRESSION_ROW_AND_VERSIONED_ENSEMBL_MAPPING_AUDIT",
+  "expression_rows": 60498,
+  "expression_samples": 10535,
+  "exact_mapped_rows": 60498,
+  "unmatched_rows": 0,
+  "ambiguous_symbol_rows": 2270,
+  "unique_usable_symbols": 58228,
+  "R4_fitted_reference_genes": 11600,
+  "R4_genes_with_unique_mapping": 11588,
+  "mapping_sha256": "6783ea58791ae876efb697889a042cc7be8e32e40fc01191c622ef25d9416931",
+  "seconds": 23.727741479873657,
+  "policy": "Exact full versioned IDs only; ambiguous symbol rows flagged for explicit decision, not silently summed or averaged",
+  "limitations": "checked every row width and ID, not every numerical value; no R4 signature, score, clinical fit or gene-alias rescue yet"
+}

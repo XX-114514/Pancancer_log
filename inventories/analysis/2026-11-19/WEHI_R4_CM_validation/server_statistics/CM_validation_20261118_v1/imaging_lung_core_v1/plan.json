@@ -1,0 +1,19 @@
+{
+  "stage": "frozen_before_new_lung_proximity_results",
+  "donors": 1,
+  "platform": "XeniumPrime5K",
+  "scope": "single-section marker-supported spatial sensitivity; not untouched multicohort clinical validation",
+  "basic_QC": "gene-expression counts>=50 and detected gene-expression features>=20; finite native centroids and positive cell area",
+  "nuclear_policies": [
+    "nucleus_count>=1 primary",
+    "all cells passing other QC sensitivity including3121 zero-nucleus boundary-segmented cells"
+  ],
+  "EC": ">=2 primary or>=3 sensitivity among PECAM1/CDH5/KDR/ERG/CLDN5 AND CDH5 or ERG detected; exclude >=2 PROX1/PDPN/FLT4 lymphatic program",
+  "PC": ">=2 ABCC9/KCNJ8/CSPG4/PDGFRB AND ABCC9 or KCNJ8 detected; MYH11/ACTA2/TAGLN/CNN1 unmeasured so no contractile exclusion possible",
+  "MF": "both CD68 and CSF1R detected; myeloid proxy, not exact macrophage subtype",
+  "conflicts": "exclude EPCAM>=2 RNA or both CD3E/CD3G or>=2 CD79A/CD79B/MS4A1; exclude overlap of EC/PC/MF support masks",
+  "auxiliary_threshold": ">=1RNA unless explicitly stated; ESM1/RGS5/FOLR2 never used in identity gate",
+  "tests": "all6 ordered pairs of3 core proxies x2 marker thresholds(1,2) x2 radii(30,50um) x2 tiles(200,400um) x2 EC gates x2 nuclear policies=192 planned; exact blocked-label conditional null as prior breast; joint BH with audited prior274 tests, all exclusions retained",
+  "interpretation": "two-way proximity tests do not prove simultaneous three-cell hub or ligand receptor signaling; absent contractile markers prevent precise pericyte exclusion",
+  "coordinate_documentation": "https://www.10xgenomics.com/support/software/xenium-onboard-analysis/3.2/analysis/xoa-output-understanding-outputs"
+}

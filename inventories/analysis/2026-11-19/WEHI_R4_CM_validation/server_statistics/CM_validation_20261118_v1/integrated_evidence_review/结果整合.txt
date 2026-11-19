@@ -1,0 +1,65 @@
+CM12及其他CM模块：当前证据整合（2026-11-19）
+这是已完成结果的可追溯综合，不新增P值、不合并不同平台的效应量，不将缺测当阴性。尚有空间N敏感性和部分high/low原始数值审计未完成。
+
+1. 通讯检出不等于差异通讯
+15CMT联合校正后，CM12 ESM1相关内皮→RGS5相关周细胞检出78个配体受体事件，其中77个在其他CMT也检出；逆向108个中108个共享。箭头是输入身份有序对，并不证明体内信号方向。
+三个来源已核实的患者级差异LR分析共有45821项可变检验，联合校正无q<.05；核心ESM1/RGS5双向仅肾癌9 high/10 low满足资格。其他来源未达资格不能当阴性，也不能由非核心身份结果替代。
+CM12七个固定标记在来源×癌种调整的单元级模型中，跨15CM本模型BH均未通过q<.05：
+  Endo_tip_ESM1 / ESM1: effect=0.0499, q=0.9964
+  Endo_tip_ESM1 / KDR: effect=0.0179, q=1.0000
+  Endo_tip_ESM1 / PDGFB: effect=-0.0468, q=0.9567
+  Endo_tip_ESM1 / VEGFA: effect=0.0659, q=0.4518
+  Str_Pericyte_RGS5 / CXCL12: effect=-0.0763, q=0.4844
+  Str_Pericyte_RGS5 / PDGFRB: effect=-0.0577, q=0.9121
+  Str_Pericyte_RGS5 / RGS5: effect=-0.0749, q=0.9502
+这些单元不是全部核实的独立患者；表达DE不能替代LR差异。细胞级和单元级混合BH可能降低单元q，主要解释保留本模型校正。
+
+2. 空间证据：核心轴比三方hub更一致
+  四张乳腺/肾癌Visium切片 CM12 Endo_tip_ESM1—Str_Pericyte_RGS5: 总丰度及上皮比例调整rho 0.443至0.569。模型控制项与下述黑色素瘤不同，不合并估计。
+  四张乳腺/肾癌Visium切片 CM01 Endo_venous_ACKR1—Str_Fib_PI16: 总丰度及上皮比例调整rho 0.043至0.165。模型控制项与下述黑色素瘤不同，不合并估计。
+  Endo_tip_ESM1—Str_Pericyte_RGS5 (means): rho 0.221至0.630，8/8片为正。
+  Endo_tip_ESM1—Str_Pericyte_RGS5 (q05): rho 0.161至0.620，8/8片为正。
+  Endo_tip_ESM1—Mye_Mac_FOLR2 (means): rho -0.068至0.506，6/8片为正。
+  Endo_tip_ESM1—Mye_Mac_FOLR2 (q05): rho -0.048至0.525，4/8片为正。
+  Mye_Mac_FOLR2—Str_Pericyte_RGS5 (means): rho 0.039至0.648，8/8片为正。
+  Mye_Mac_FOLR2—Str_Pericyte_RGS5 (q05): rho -0.010至0.663，7/8片为正。
+八片是legacy ST，不是Visium或成像；患者逐片身份尚未核实。q05是后验丰度摘要敏感性，不是相关性置信区间。参考矩阵缺ESM1，身份为多基因推断。按上级谱系比例分析时，ESM1/RGS5仍有一片负相关，不能宣称组成无关。
+乳腺成像主设置（>=1 RNA、30um、200um空间块）PC低MYH11代理的显著结果：
+  S02 ESM1_EC_to_RGS5_mural: 邻近比例差=0.0464, 466检验联合q=2.2001e-09
+  S05 RGS5_mural_to_ESM1_EC: 邻近比例差=0.0103, 466检验联合q=0.046073
+  S06 ESM1_EC_to_RGS5_mural: 邻近比例差=0.0091, 466检验联合q=0.043048
+未见一张乳腺切片在该PC主设置两个方向都通过；检测不到MYH11不等于生物学缺失。肺癌单供体192个设置联合校正均未通过。主设置：
+  EC_to_PC: 比例差=0.0016, q=1.0000
+  EC_to_MF: 比例差=0.0024, q=1.0000
+  PC_to_EC: 比例差=0.0035, q=0.5780
+  PC_to_MF: 比例差=-0.0023, q=1.0000
+  MF_to_EC: 比例差=-0.0007, q=0.9338
+  MF_to_PC: 比例差=0.0049, q=0.1830
+条件邻近控制空间块和源谱系深度，属于两两空间富集；不是直接接触、三方共定位检验、因果或配体受体方向。
+
+3. 免疫浸润和bulk指标的解释
+  TCGA PRAD, n=463: 纯度/年龄/性别调整rho=0.429, 联合q=2.998e-21
+  TCGA PAAD, n=142: 纯度/年龄/性别调整rho=0.396, 联合q=3.173e-06
+  TCGA KIRC, n=323: 纯度/年龄/性别调整rho=-0.424, 联合q=8.619e-15
+  TCGA SKCM, n=102: 纯度/年龄/性别调整rho=-0.078, 联合q=0.4996
+方向依癌种而变，不宜作为泛癌统一免疫指标。参考表达分解的CM12权重贡献为：endothelial 13.7%, mural 85.8%, immune 0.5%；它们不是实测细胞比例。bulk CM12主要反映壁细胞相关表达，不能当作均衡三方hub读出。
+
+4. 治疗响应与预后
+  Hugo: n=26, response AUC=0.274, 分层联合q=0.8970, 取材时序=baseline_verified
+  Riaz: n=49, response AUC=0.556, 分层联合q=0.9717, 取材时序=baseline_verified
+  Rose: n=88, response AUC=0.361, 分层联合q=0.8970, 取材时序=UNKNOWN_ARCHIVED_NOT_BASELINE_VALIDATION
+三队列全部15CM、两种签名等480项检验无q<.05。Rose取材相对ICI时间未知，三队列均不能证明治疗特异预测性能；不翻转分数方向或合并AUC。
+CM12原网络签名在更新13140检验family后仍q<.05的常数HR模型：
+  KIRP OS base: HR=1.577, q=0.0450
+  KIRP PFI composition: HR=1.901, q=0.0193
+CM12没有通过校正的早晚效应差异；部分事件不足模型不能评估分段。上述模型特定关联未形成跨癌种、跨调整一致且外部验证的指标。
+其他模块线索：LIHC CM13 OS一年分段分析，原网络签名四调整设置：
+  base: early HR=2.223, late HR=1.111, change q=0.0317
+  stage: early HR=2.041, late HR=1.021, change q=0.0404
+  composition: early HR=2.265, late HR=1.124, change q=0.0348
+  stage_composition: early HR=2.076, late HR=1.028, change q=0.0423
+四个设置来自同一队列，不是四次独立验证；固定一年切点仍不能保证全部比例风险假设成立。该线索不能归因于CM12血管机制。
+
+5. 当前结论与剩余工作
+保留CM12 ESM1相关内皮—RGS5相关周细胞轴作为有部分空间支持、需继续验证的候选；完整FOLR2三方hub、CM特异差异通讯和稳定治疗响应指标尚未建立。CM01等模块必须逐条边/逐来源评估，不能由CM12结果外推。
+剩余：完成已启动的24空间模型与全high/low审计，统一N敏感性比较及最终证据回执；发现失败先核验实际进程和原因，不重复启动。

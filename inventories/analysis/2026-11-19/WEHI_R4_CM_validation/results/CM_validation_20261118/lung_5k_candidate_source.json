@@ -1,0 +1,15 @@
+{
+  "official_url": "https://www.10xgenomics.com/datasets/xenium-human-lung-cancer-post-xenium-technote",
+  "official_page_verified": "2026-11-19",
+  "experiment": "2 Xenium Prime 5K",
+  "cells_detected": 278328,
+  "donors": 1,
+  "license": "CC BY 4.0",
+  "disease": "lung adenocarcinoma",
+  "status": "spatial_core_192_tests_complete_and_independent_audit_PASS",
+  "attempt": "server default proxy failed; direct official page returned HTTP429; no bypass or repeated retries",
+  "next": "integrate with breast/Visium/legacyST and patient-level communication; retain missing contractile marker and single-donor limitations",
+  "download_location": "${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/sources/lung_prime5k_10x",
+  "analysis_location": "${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/imaging_lung_core_v1",
+  "result": "no lung q<0.05 in466test joint imaging family; single-donor marker-proxy analysis, not proof of absence"
+}

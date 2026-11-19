@@ -1,0 +1,52 @@
+"""All feasible head/neck CM contrasts, context/HPV conditional primary."""
+from pathlib import Path
+import json,hashlib,itertools,math,time,os
+import pandas as pd,numpy as np
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');D=R/'patient_LR_headneck_design_v1';O=R/'differential_LR_GSE234933_v1';O.mkdir(exist_ok=False);I=R/'patient_LR_v1'
+plan=json.loads((D/'plan.json').read_text());(O/'plan.json').write_text(json.dumps(plan,indent=2));context=pd.read_csv(D/'patient_context_PRIVATE.tsv',sep='\t').set_index('unit');f=pd.read_csv(D/'pair_design_feasibility.tsv',sep='\t');assert len(context)==48 and context.source_patient_key.is_unique
+v=pd.read_csv(R/'differential_LR_CM12_GSE207493_v1/interaction_components.tsv',sep='\t');assert len(v)==895;assert json.loads((R/'differential_LR_CM12_GSE207493_v1/component_independent_audit.json').read_text())['status'].startswith('PASS_')
+v.to_csv(O/'interaction_components.tsv',sep='\t',index=False)
+genes=pd.read_csv(I/'genes.tsv',sep='\t').gene.tolist();a=np.load(I/'expression_PRIVATE.npz');mean=a['mean_log_expression'];det=a['detection_fraction'];m=pd.read_csv(I/'unit_node_metadata_PRIVATE.tsv',sep='\t');m=m[m.source.eq('GSE234933')].copy()
+# Original dataframe indices retain expression row positions.
+pm={};pdetection={}
+for col in ['partner_a_genes','partner_b_genes']:
+ for key in v[col].unique():
+  idx=[genes.index(g) for g in key.split('|')];pm[key]=mean[:,idx].min(axis=1);pdetection[key]=det[:,idx].min(axis=1)
+A=np.column_stack([pm[x] for x in v.partner_a_genes]);B=np.column_stack([pm[x] for x in v.partner_b_genes]);AD=np.column_stack([pdetection[x] for x in v.partner_a_genes]);BD=np.column_stack([pdetection[x] for x in v.partner_b_genes])
+results=[];packed=[];design=[];offset=0;started=time.time()
+for pair_no,r in enumerate(f.itertuples()):
+ one=m[m.node.eq(r.node1)&m.cells.ge(10)];two=m[m.node.eq(r.node2)&m.cells.ge(10)];units=sorted(set(one.unit)&set(two.unit));h=context.loc[units,'CMT'].eq(r.cm).to_numpy();blocks=context.loc[units,'block'].to_numpy();n=len(h);assert h.sum()==r.high_patients and (~h).sum()==r.low_patients
+ ix1=one.reset_index().set_index('unit').loc[units,'index'].to_numpy();ix2=two.reset_index().set_index('unit').loc[units,'index'].to_numpy();Y=np.where((AD[ix1]>.1)&(BD[ix2]>.1)&(A[ix1]>0)&(B[ix2]>0),(A[ix1]+B[ix2])/2,0);variable=np.ptp(Y,axis=0)>1e-12
+ pair=r.cm+'__'+r.node1+'__'+r.node2;packed.append(Y)
+ design.extend(dict(pair=pair,cm=r.cm,node1=r.node1,node2=r.node2,unit=u,patient=context.loc[u,'source_patient_key'],high=bool(h[j]),block=blocks[j],matrix_row=offset+j) for j,u in enumerate(units));offset+=n
+ for mode in ['context_HPV','unrestricted']:
+  if mode=='context_HPV' and not r.conditional_eligible:continue
+  strata=[np.flatnonzero(blocks==b) for b in sorted(set(blocks))] if mode=='context_HPV' else [np.arange(n)]
+  counts=[int(h[ix].sum()) for ix in strata];center=np.zeros(n)
+  for ix,k in zip(strata,counts):center[ix]=k/len(ix)
+  residual=h.astype(float)-center;den=residual@residual;assert den>0
+  observed=residual@Y/den;smallY=Y[:,variable];obs=observed[variable];extreme=np.zeros(variable.sum(),dtype=int)
+  total=math.prod(math.comb(len(ix),k) for ix,k in zip(strata,counts));exact=total<=9999;draws=total if exact else 9999
+  seed=int.from_bytes(hashlib.sha256(('2026111904|'+pair+'|'+mode).encode()).digest()[:8],'little');rng=np.random.default_rng(seed)
+  choices=itertools.product(*[list(itertools.combinations(ix,k)) for ix,k in zip(strata,counts)]) if exact else None
+  for start in range(0,draws,128):
+   size=min(128,draws-start);H=np.zeros((size,n))
+   if exact:
+    for row in range(size):
+     for chosen in next(choices):H[row,list(chosen)]=1
+   else:
+    for row in range(size):
+     for ix,k in zip(strata,counts):
+      if k==len(ix):H[row,ix]=1
+      elif k>0:H[row,rng.choice(ix,k,replace=False)]=1
+   perm=(H-center)@smallY/den;extreme+=(abs(perm)>=abs(obs)[None,:]-1e-12).sum(axis=0)
+  pv=np.full(895,np.nan);pv[variable]=extreme/draws if exact else (extreme+1)/(draws+1)
+  for j,ident in enumerate(v.interaction):results.append(dict(source='GSE234933',cm=r.cm,node1=r.node1,node2=r.node2,mode=mode,interaction=ident,patients=n,high_patients=int(h.sum()),low_patients=int((~h).sum()),informative_high_patients=r.informative_high_patients if mode=='context_HPV' else int(h.sum()),informative_low_patients=r.informative_low_patients if mode=='context_HPV' else int((~h).sum()),mean_high=float(Y[h,j].mean()),mean_low=float(Y[~h,j].mean()),contrast=float(observed[j]),variable=bool(variable[j]),p=float(pv[j]),permutation_mode='exact' if exact else 'monte_carlo_plus_one',assignments=int(draws),seed=seed))
+ (O/'progress.json').write_text(json.dumps(dict(pid=os.getpid(),pairs_done=pair_no+1,pairs_total=len(f),seconds=time.time()-started)))
+ if (pair_no+1)%25==0:print('PAIRS',pair_no+1,flush=True)
+t=pd.DataFrame(results);t.to_csv(O/'differential_scores.tsv.gz',sep='\t',index=False);np.savez_compressed(O/'unit_pair_scores_PRIVATE.npz',scores=np.vstack(packed));pd.DataFrame(design).to_csv(O/'patient_pair_design_PRIVATE.tsv',sep='\t',index=False)
+old=pd.read_csv(R/'differential_LR_GSE207493_joint_v1/differential_scores_joint.tsv.gz',sep='\t');old['mode']='unrestricted';oldmask=old.p.notna();mask=t.p.notna();allp=np.r_[old.loc[oldmask,'p'],t.loc[mask,'p']];q=multipletests(allp,method='fdr_bh')[1];old['q_joint_renal_headneck']=np.nan;t['q_joint_renal_headneck']=np.nan;old.loc[oldmask,'q_joint_renal_headneck']=q[:oldmask.sum()];t.loc[mask,'q_joint_renal_headneck']=q[oldmask.sum():]
+old.to_csv(O/'renal_scores_joint_update.tsv.gz',sep='\t',index=False);t.to_csv(O/'differential_scores_joint.tsv.gz',sep='\t',index=False)
+summary=t.groupby(['cm','mode']).agg(rows=('interaction','size'),tests=('p','count'),minimum_p=('p','min'),minimum_joint_q=('q_joint_renal_headneck','min'));summary['joint_q05']=t.assign(sig=t.q_joint_renal_headneck.lt(.05)).groupby(['cm','mode']).sig.sum();summary.to_csv(O/'module_summary.tsv',sep='\t')
+proof=dict(status='HEADNECK_CONDITIONAL_AND_UNRESTRICTED_TESTS_WITH_RENAL_JOINT_BH_PENDING_INDEPENDENT_AUDIT',pairs=len(f),patient_sources=2,headneck_rows=len(t),headneck_tests=int(mask.sum()),prior_renal_tests=int(oldmask.sum()),joint_tests=len(allp),joint_q05=int((q<.05).sum()),seconds=time.time()-started,limitations=plan['limitations']);(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

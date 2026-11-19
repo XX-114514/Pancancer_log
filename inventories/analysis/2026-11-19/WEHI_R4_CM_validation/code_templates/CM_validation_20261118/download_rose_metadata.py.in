@@ -1,0 +1,10 @@
+from pathlib import Path
+import urllib.request,hashlib,json,time
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'sources/rose_metadata';O.mkdir(exist_ok=True);receipts=[]
+for accession in ['GSM5362510','GSM5362511','GSE176307']:
+ url='https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc='+accession+'&targ=self&form=text&view=full';dest=O/(accession+'.soft.txt')
+ try:
+  request=urllib.request.Request(url,headers={'User-Agent':'ResearchReproducibility/1.0'});data=urllib.request.urlopen(request,timeout=40).read();text=data.decode('utf-8');assert ('^SAMPLE = '+accession in text or '^SERIES = '+accession in text),'response is not accession-specific SOFT metadata';dest.write_bytes(data);receipts.append({'accession':accession,'url':url,'status':'downloaded_validated_SOFT','bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'path':str(dest)})
+ except Exception as e:receipts.append({'accession':accession,'url':url,'status':'failed','error':repr(e)})
+ time.sleep(1)
+(O/'download_receipt.json').write_text(json.dumps(receipts,indent=2));print(json.dumps(receipts,indent=2))

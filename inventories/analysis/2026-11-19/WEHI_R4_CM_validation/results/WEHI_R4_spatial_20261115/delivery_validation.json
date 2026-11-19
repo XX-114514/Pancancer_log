@@ -1,0 +1,7 @@
+{
+  "status": "PASS_delivered_manifest_all_240_scores_four_full_fits_and_HTML_local_links",
+  "files_verified": 61,
+  "Visium_spots": 10160,
+  "local_report_references_checked": 31,
+  "archive_sha256_matches_server": "4d242a5f6338a379079284e79d8721dea0ad517954f363a12832c47e51c75dc8"
+}

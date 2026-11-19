@@ -1,0 +1,11 @@
+{
+  "status": "FIT_STRUCTURE_AUDITED_AND_HELDOUT_DIAGNOSTICS_COMPLETE",
+  "panels": 8,
+  "labels": 50,
+  "reference_epochs": 250,
+  "posterior_samples": 1000,
+  "classifier": "train-only top2000 intercentroid-variance genes; logCP10K reference scope; standardized cosine centroid",
+  "source_holdout": "exclude one melanoma source from ALL label training; test its heldout melanoma cells",
+  "limitations": "inherited labels; same-unit train/test possible in ordinary split; no patient-independent validation; no simulated mixed-spot accuracy or proof of spatial deconvolution accuracy",
+  "spatial_fit_authorization": "diagnostic review required, no automatic pass from successful execution"
+}

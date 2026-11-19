@@ -1,0 +1,32 @@
+[
+  {
+    "unit": "S01",
+    "status": "marker_proxy_complete",
+    "native_sha256": "1c3e526044c44798cdafe3aff21c07db51c886234d61d0240a191ea8b735a31d"
+  },
+  {
+    "unit": "S02",
+    "status": "marker_proxy_complete",
+    "native_sha256": "e986f430a4717990e1316e0fa937409591ac05c851812d79ec7598697bc7811e"
+  },
+  {
+    "unit": "S03",
+    "status": "marker_proxy_complete",
+    "native_sha256": "d22247ab7203e97abacdc174c0acf991bbeb0417ee4fa3ac2c3d2dd884bb7baa"
+  },
+  {
+    "unit": "S04",
+    "status": "marker_proxy_complete",
+    "native_sha256": "eca71dfa4f2e92292e7cc40abea51d38dd77a9d7a350edb310a313d2420d93ea"
+  },
+  {
+    "unit": "S05",
+    "status": "marker_proxy_complete",
+    "native_sha256": "e19d854e91786dfa00c371fa6c8405a0758cd3d68e3bdfdc41f8fafce3cd9bc9"
+  },
+  {
+    "unit": "S06",
+    "status": "marker_proxy_complete",
+    "native_sha256": "674185b504bb253bbd15d4ed4eb964b755d87aa138f211b107af6b03ba8dff8c"
+  }
+]

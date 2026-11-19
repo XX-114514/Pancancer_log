@@ -1,0 +1,26 @@
+{
+  "status": "PASS_ALL_SOURCE_HASHES_ALL_OUTPUT_ROWS_THREE_BH_FAMILIES_AND_SUMMARIES",
+  "n_tests": 3253817,
+  "n_comparisons": 259,
+  "max_q_error": 3.3306690738754696e-16,
+  "upstream_audits_now": {
+    "CM01": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM02": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM03": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM04": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM05": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM06": "PENDING",
+    "CM07": "PENDING",
+    "CM08": "PENDING",
+    "CM09": "PENDING",
+    "CM10": "PENDING",
+    "CM11": "PENDING",
+    "CM12": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM13": "PENDING",
+    "CM14": "PENDING",
+    "CM15": "PENDING"
+  },
+  "all_upstream_audits_complete": false,
+  "scope": "Full joint correction verification; does NOT extend upstream sampled numeric replay to all genes, verify patient independence, or establish differential LR.",
+  "summary_sha256": "ed9418e0bb74a499c751eabe01e098bf605826aacd34beb3fe0f338ed29035db"
+}

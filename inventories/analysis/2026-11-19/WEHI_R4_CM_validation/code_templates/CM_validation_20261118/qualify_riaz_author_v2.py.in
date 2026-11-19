@@ -1,0 +1,36 @@
+"""Exact author BAM/sample-to-subject clinical bridge; no silent response overwrite."""
+from pathlib import Path
+import json,hashlib,csv,gzip
+import pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');S=R/'sources/riaz_author';O=R/'clinical/riaz_author_v2';O.mkdir(exist_ok=False)
+receipt=json.loads((S/'verified_receipt.json').read_text())
+for r in receipt:
+ b=(S/r['path'].replace('/','_')).read_bytes();assert hashlib.sha256(b).hexdigest()==r['sha256'];assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==r['git_blob_sha']
+a=pd.read_csv(S/'data_SampleTableCorrected.9.19.16.csv',keep_default_na=False);assert a.BamName.is_unique
+# Duplicate header Response and Response.1 have different endpoints, kept separate.
+a=a.rename(columns={'Response':'author_response_group','Response.1':'author_longterm_benefit'})
+a['expression_key_original']=a.BamName.str.removesuffix('.bam')
+a['expression_key']=a.expression_key_original.str.replace(r'\.(\d+)$',r'-\1',regex=True)
+a['terminal_separator_normalized']=a.expression_key.ne(a.expression_key_original)
+assert a.expression_key.is_unique
+a=a.set_index('expression_key')
+d=pd.read_csv(R/'clinical/riaz2017_sample_bridge_PRIVATE.tsv',sep='\t');assert d.expression_key.is_unique
+c=pd.read_csv(S/'data_bms038_clinical_data.csv',keep_default_na=False);assert c.PatientID.is_unique;c=c.set_index('PatientID')
+b=d.merge(a[['PatientID','USUBJID','PreOn','expression_key_original','terminal_separator_normalized','BOR','author_response_group','author_longterm_benefit','Cohort']],left_on='expression_key',right_index=True,how='left',validate='one_to_one')
+b['author_exact_bam_match']=b.PatientID.notna();matched=b[b.author_exact_bam_match]
+assert matched.patient_candidate.eq(matched.PatientID).all();assert matched['visit (pre or on treatment)'].eq(matched.PreOn).all()
+b['author_clinical_BOR']=b.PatientID.map(c.BOR);b['author_clinical_cohort']=b.PatientID.map(c.Cohort)
+b['response_agrees']=b.response.eq(b.author_response_group)|(b.response.eq('UNK')&b.author_response_group.eq('NA')&b.BOR.eq('NE'))
+b['clinical_agrees']=b.BOR.eq(b.author_clinical_BOR)&b.Cohort.eq(b.author_clinical_cohort)
+b['response_binary_author']=b.BOR.map({'CR':1,'PR':1,'PD':0,'SD':0})
+b['eligible_baseline_response']=b.baseline_verified&b.author_exact_bam_match&b.response_agrees&b.clinical_agrees&b.response_binary_author.notna()
+b['patient_identity_verified_author']=b.author_exact_bam_match&b.USUBJID.notna()
+assert not b[b.eligible_baseline_response].PatientID.duplicated().any()
+b.to_csv(O/'sample_bridge_PRIVATE.tsv',sep='\t',index=False)
+b[~b.author_exact_bam_match|~b.response_agrees|~b.clinical_agrees].to_csv(O/'discordances_PRIVATE.tsv',sep='\t',index=False)
+path=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/riaz2017/GSE91061_raw_counts.csv.gz')
+with gzip.open(path,'rt') as f:
+ reader=csv.reader(f);columns=next(reader);first=next(reader)
+assert set(columns[1:])==set(d.expression_key)
+proof=dict(status='AUTHOR_BRIDGE_WRITTEN_PENDING_REVIEW',GEO_samples=len(d),author_BAM_matches_after_terminal_separator_normalization=int(b.author_exact_bam_match.sum()),terminal_separator_normalized_rows=int(b.terminal_separator_normalized.fillna(False).sum()),matched_response_discordances=int((b.author_exact_bam_match&~b.response_agrees).sum()),matched_clinical_discordances=int((b.author_exact_bam_match&~b.clinical_agrees).sum()),eligible_baseline_patients=int(b.eligible_baseline_response.sum()),response_counts=b.loc[b.eligible_baseline_response,'response_binary_author'].value_counts().to_dict(),first_count_gene=first[0],first_count_values=first[1:4],limitations='author subject bridge with documented terminal library separator normalization; unknown UNK/NA/NE retained unknown; unmatched/conflicting rows preserved; no response borrowing from on-treatment; survival censoring semantics not yet established')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(b[~b.author_exact_bam_match|~b.response_agrees|~b.clinical_agrees][['title','PatientID','response','author_response_group','BOR','author_clinical_BOR']].to_string(index=False))

@@ -1,0 +1,5 @@
+{
+  "pid": 151776,
+  "script": "run_melanoma_density_queue.py",
+  "scope": "dependent diagnostics, no fit launch"
+}

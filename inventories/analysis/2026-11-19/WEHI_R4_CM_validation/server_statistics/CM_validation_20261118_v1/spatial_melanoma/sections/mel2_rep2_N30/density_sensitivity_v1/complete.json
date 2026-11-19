@@ -1,0 +1,29 @@
+{
+  "status": "DESCRIPTIVE_DENSITY_AND_KNN_SENSITIVITY_WITH_INDEPENDENT_OLS_REPLAY_PASS",
+  "section": "mel2_rep2_N30",
+  "posteriors": [
+    "means",
+    "q05"
+  ],
+  "edges": 148,
+  "density_rows": 296,
+  "neighborhood_rows": 1184,
+  "max_OLS_replay_error": 5.684341886080801e-13,
+  "covariates": [
+    "rank_total_abundance",
+    "rank_melanoma_fraction",
+    "rank_other_nuisance_fraction"
+  ],
+  "neighbors": [
+    6,
+    12,
+    30,
+    60
+  ],
+  "limitations": "modeled composition and native coordinate proximity; not direct marker, contact, significance or patient-independent validation; 60 neighbors covers substantial part of small legacy-ST section; N30 assumed, N5/N60 pending; q05 is sensitivity not confidence interval",
+  "input_hashes": {
+    "means_abundance_PRIVATE.tsv.gz": "1263f2c0c93809543009096d0c109c09d8bbba1e35bf1ae18b3cadf19922f50e",
+    "q05_abundance_PRIVATE.tsv.gz": "0915a6b31c304f06ae8cbc6b4d7f04691e6d17158de64ece3db1cc51a9a647fa",
+    "coordinates_PRIVATE.tsv.gz": "1224fd1e5699c3a5021d6194e4b671cfa6d2f2bd85ff3db35bb7ae0768de1e75"
+  }
+}

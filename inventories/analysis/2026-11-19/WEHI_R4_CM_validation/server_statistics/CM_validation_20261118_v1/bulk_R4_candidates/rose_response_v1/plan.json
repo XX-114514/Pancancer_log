@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN_BEFORE_ROSE_RESPONSE_TESTS",
+  "role": "Retrospective archived-cohort response association; biopsy timing UNKNOWN, NOT pretreatment predictive validation",
+  "signatures": "fixed15CM x2branches; no selected genes, direction or thresholds",
+  "score": "exact unique gene symbols only; log2(submittedTPM+.001), per-gene patient z ddof1, mean>=48 mapped variable signature genes; no gene remapping or new normalization",
+  "policies": [
+    "mean_explicit_repeat_TPM",
+    "exclude_explicit_repeat_patient"
+  ],
+  "unknown_response": "retain in outcome-blind scoring cohort, exclude from response tests; do not impute",
+  "tests": "two-sided exact MWU if no ties; fixed-direction AUC (higher score associated with response), plus9999 response-label permutations within exact ICI drug x treatment line(1,2,3+) strata, centered within strata",
+  "family": "joint480 planned tests: previous360 Hugo/Riaz plus120 Rose; retain and label differing cohort timing qualification, no pooled cohort effect",
+  "seed": 2026111906,
+  "limitations": "Unresolved biopsy-to-ICI timing prevents baseline prediction claims. No untreated comparator, external prospective validation or survival analysis. Clinical covariates and tissue site may confound; previously used cohort, not untouched validation."
+}

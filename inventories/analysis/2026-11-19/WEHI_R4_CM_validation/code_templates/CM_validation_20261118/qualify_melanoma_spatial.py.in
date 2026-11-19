@@ -1,0 +1,42 @@
+"""Replay eight archived legacy-ST inputs against their native count tables."""
+from pathlib import Path
+import json,hashlib,re
+import numpy as np,pandas as pd,scipy.sparse as sp,anndata as ad
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+B=Path('${PANCANCER_ROOT}/Project_v5/spatial_expansion_20260904')
+out=R/'spatial_melanoma';out.mkdir(exist_ok=True)
+markers=['ESM1','RGS5','FOLR2','ACKR1','PI16','PECAM1','VWF','KDR','PDGFRB','CSPG4','MCAM','ACTA2','PDGFB','VEGFA','ANGPT1','ANGPT2','TEK']
+rows=[];coverage=[]
+paths=sorted((B/'processed').glob('melanoma_thrane__*.raw_spatial.h5ad'));assert len(paths)==8
+for path in paths:
+ sample=path.name.split('__')[1].split('.raw_spatial')[0]
+ raw=B/'raw/thrane_melanoma'/('ST_'+sample+'_counts.tsv')
+ frame=pd.read_csv(raw,sep='\t',index_col=0);a=ad.read_h5ad(path)
+ expected_names=ad.utils.make_index_unique(pd.Index([str(x).split()[0] for x in frame.index]))
+ assert a.var_names.equals(expected_names)
+ assert list(a.obs.barcode.astype(str))==list(frame.columns)
+ X=a.layers['counts'];values=X.data if sp.issparse(X) else X.ravel()
+ assert np.isfinite(values).all() and (values>=0).all() and np.array_equal(values,np.rint(values))
+ delta=X-sp.csr_matrix(frame.T.values);assert delta.nnz==0
+ coords=np.array([[float(x) for x in str(c).split('x')] for c in frame.columns])[:,::-1]
+ assert np.array_equal(a.obsm['spatial'],coords) and np.isfinite(coords).all()
+ assert len(np.unique(coords,axis=0))==len(coords)
+ totals=np.asarray(X.sum(axis=1)).ravel();assert (totals>0).all()
+ row=dict(sample=sample,spots=a.n_obs,genes=a.n_vars,median_counts=float(np.median(totals)),
+          raw_counts_exact_match=True,coordinates_exact_native_grid_match=True,
+          patient_identity_verified=False,replicate_group_from_filename=sample.split('_')[0],
+          platform='legacy spatial transcriptomics; not Visium or single-cell imaging',
+          native_sha256=hashlib.sha256(raw.read_bytes()).hexdigest(),h5ad_sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+ rows.append(row)
+ for gene in markers:
+  present=gene in a.var_names
+  v=np.asarray(X[:,a.var_names.get_loc(gene)].toarray()).ravel() if present else np.zeros(a.n_obs)
+  coverage.append(dict(sample=sample,gene=gene,present=present,positive_spots=int((v>0).sum()) if present else None,positive_fraction=float((v>0).mean()) if present else None))
+pd.DataFrame(rows).to_csv(out/'input_audit.tsv',sep='\t',index=False)
+pd.DataFrame(coverage).to_csv(out/'vascular_marker_coverage.tsv',sep='\t',index=False)
+proof=dict(status='PASS_FULL_NATIVE_COUNTS_AND_COORDINATE_REPLAY',sections=len(rows),spots=sum(x['spots'] for x in rows),
+           prior_use='Existing 20260904_melanoma_cm_v1 script and run directory: previously explored data, not untouched validation',
+           candidate_use='R4 reanalysis for cross-tissue spatial robustness; independent patient identity and tissue annotations pending',
+           clinical_endpoint='Not established; do not infer treatment timing or response from previous harmonizer defaults',
+           limitations='spot-level mixed expression; marker coverage alone does not establish cell identities, colocalization, or module activity')
+(out/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(pd.DataFrame(rows)[['sample','spots','genes']].to_string(index=False))

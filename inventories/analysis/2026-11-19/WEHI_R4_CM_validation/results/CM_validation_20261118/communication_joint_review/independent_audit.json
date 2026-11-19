@@ -1,0 +1,10 @@
+{
+  "status": "PASS_all15_raw_CPDB_hashes_all_eligible_MC_P_full_vector_BH_all_q_tables_and_core_summaries",
+  "tests": 25912935,
+  "joint_significant_events": 798786,
+  "core_rows": 134250,
+  "max_q_error": 1.1102230246251565e-16,
+  "summary_sha256": "6f6893e921dda9f2ae672ae7ca1414749e33770a4effd3a23950400f6e54168e",
+  "scope": "all input-complete interactions x ordered identity pairs x15 CMT; count-histogram production checked against full-vector statsmodels BH",
+  "limitations": "finite-permutation sensitivity only; pooled cells not independent patients; no highlow differential LR inference, causal or directional-signaling claim; source-level measurement eligibility unresolved"
+}

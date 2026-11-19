@@ -1,0 +1,4 @@
+cm	network_nodes	edges	network_weight_fraction	top5
+CM01	9	10	0.9221000563816344	Endo_venous_ACKR1:0.582; Str_Fib_PI16:0.183; Mye_cDC2_CD1C:0.075; Mye_Mono_VCAN:0.066; CD8T_Tem_GZMK:0.043
+CM12	11	10	0.9321087139326841	Str_Pericyte_RGS5:0.505; Endo_tip_ESM1:0.306; Mye_Mac_FOLR2:0.121; Endo_capven_COL15A1:0.058; Mye_Mac_LGMN:0.008
+CM04	11	10	0.9340086599991722	Endo_arterial_GJA5:0.374; Str_SMC_MYH11:0.366; ILC_NK-CD56bright_XCL1:0.123; Mye_Mac_FOLR2:0.066; Mye_cDC2_CD1C:0.066

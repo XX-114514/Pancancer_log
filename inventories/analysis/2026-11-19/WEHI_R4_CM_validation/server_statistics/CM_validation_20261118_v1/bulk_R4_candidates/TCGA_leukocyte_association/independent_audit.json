@@ -1,0 +1,9 @@
+{
+  "status": "PASS_RAW_ALIQUOT_BRIDGE_ALL_RANK_CORRELATIONS_AND_GLOBAL_BH_REPLAY",
+  "sample_bridges": 9163,
+  "assessed_tests": 1800,
+  "max_rho_error": 2.220446049250313e-16,
+  "max_p_error": 3.3306690738754696e-16,
+  "associations_sha256": "df153aa29fec2edbbb92a4efb1431647faa2ca68a2a7682548546a827d9ef3f7",
+  "scope": "numerical replay and bridge only; no purity control, clinical validity, causal inference or external validation"
+}

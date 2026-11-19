@@ -1,0 +1,41 @@
+"""Per-section descriptive composition and neighborhood sensitivity; no spot p-values."""
+from pathlib import Path
+import json,sys,hashlib
+import numpy as np,pandas as pd
+from scipy.stats import rankdata,spearmanr
+from scipy.spatial.distance import cdist
+import statsmodels.api as sm
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/spatial_melanoma');key=sys.argv[1];S=R/'sections'/key;O=S/'density_sensitivity_v1';O.mkdir(exist_ok=False)
+assert json.loads((S/'independent_audit.json').read_text())['status'].startswith('PASS_')
+parents=pd.read_csv(R/'adapter/inputs/frequency_PRIVATE.tsv',sep='\t',index_col=0).majorCluster;edges=pd.read_csv(R/'adapter/CM_results/each_edge.tsv',sep='\t');xy=pd.read_csv(S/'coordinates_PRIVATE.tsv.gz',sep='\t',index_col=0)
+assert len(parents)==44 and xy.index.is_unique
+D=cdist(xy[['x','y']],xy[['x','y']]);np.fill_diagonal(D,np.inf);assert (D>0).all();order=np.argsort(D,axis=1,kind='stable');rows=[];neighbor=[];maxerr=0.
+for posterior in ['means','q05']:
+ a=pd.read_csv(S/(posterior+'_abundance_PRIVATE.tsv.gz'),sep='\t',index_col=0);assert a.index.equals(xy.index) and len(a.columns)==50 and np.isfinite(a).all().all() and (a>=0).all().all()
+ total=a.sum(axis=1);mel=a['nuisance:Cutaneous_melanoma_consensus']/total;other=a[[x for x in a if x.startswith('nuisance:') and x!='nuisance:Cutaneous_melanoma_consensus']].sum(axis=1)/total
+ # Keep malignant melanocyte background separate from epithelial nuisance.
+ C=np.column_stack([np.ones(len(a)),rankdata(total),rankdata(mel),rankdata(other)]);assert np.linalg.matrix_rank(C)==4
+ Y=rankdata(a[parents.index].to_numpy(),axis=0);res=Y-C@np.linalg.lstsq(C,Y,rcond=None)[0]
+ replay=np.column_stack([sm.OLS(Y[:,i],C).fit().resid for i in range(Y.shape[1])]);err=float(np.max(np.abs(replay-res)));assert err<1e-8;maxerr=max(maxerr,err)
+ partial=np.corrcoef(res.T);fraction=a[parents.index].copy()
+ for parent in parents.unique():
+  ns=parents.index[parents==parent];den=fraction[ns].sum(axis=1);fraction[ns]=fraction[ns].div(den.replace(0,np.nan),axis=0)
+ idx={n:i for i,n in enumerate(parents.index)}
+ for e in edges.itertuples():
+  u,v=e.subCluster1,e.subCluster2;i,j=idx[u],idx[v]
+  rows.append(dict(section=key,posterior=posterior,cm=e.cm,node1=u,node2=v,n_spots=len(a),raw_spearman=spearmanr(a[u],a[v]).statistic,partial_rank_total_melanoma_other_nuisance=partial[i,j],parent_fraction_spearman=spearmanr(fraction[u],fraction[v],nan_policy='omit').statistic))
+ for k in [6,12,30,60]:
+  assert k<len(a);W=np.zeros_like(D);ni=order[:,:k];rr=np.arange(len(a))[:,None];W[rr,ni]=1/np.square(D[rr,ni]);W/=W.sum(axis=1,keepdims=True)
+  assert np.allclose(W.sum(axis=1),1) and np.allclose(np.diag(W),0)
+  # Pearson correlation between rank residual at source and weighted neighboring rank residual at target.
+  smooth=W@res
+  for e in edges.itertuples():
+   i,j=idx[e.subCluster1],idx[e.subCluster2]
+   neighbor.append(dict(section=key,posterior=posterior,cm=e.cm,node1=e.subCluster1,node2=e.subCluster2,k=k,neighbor_fraction=k/(len(a)-1),forward_residual_neighbor_correlation=np.corrcoef(res[:,i],smooth[:,j])[0,1],reverse_residual_neighbor_correlation=np.corrcoef(res[:,j],smooth[:,i])[0,1]))
+pd.DataFrame(rows).to_csv(O/'edge_density.tsv',sep='\t',index=False);pd.DataFrame(neighbor).to_csv(O/'edge_neighborhood.tsv',sep='\t',index=False)
+proof=dict(status='DESCRIPTIVE_DENSITY_AND_KNN_SENSITIVITY_WITH_INDEPENDENT_OLS_REPLAY_PASS',section=key,posteriors=['means','q05'],edges=len(edges),density_rows=len(rows),neighborhood_rows=len(neighbor),max_OLS_replay_error=maxerr,
+ covariates=['rank_total_abundance','rank_melanoma_fraction','rank_other_nuisance_fraction'],neighbors=[6,12,30,60],
+ limitations='modeled composition and native coordinate proximity; not direct marker, contact, significance or patient-independent validation; 60 neighbors covers substantial part of small legacy-ST section; N30 assumed, N5/N60 pending; q05 is sensitivity not confidence interval',
+ input_hashes={f:hashlib.sha256((S/f).read_bytes()).hexdigest() for f in ['means_abundance_PRIVATE.tsv.gz','q05_abundance_PRIVATE.tsv.gz','coordinates_PRIVATE.tsv.gz']})
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))
+t=pd.DataFrame(rows);print(t[(t.posterior=='means')&(((t.node1=='Endo_tip_ESM1')&(t.node2=='Str_Pericyte_RGS5'))|((t.node1=='Endo_venous_ACKR1')&(t.node2=='Str_Fib_PI16')))].to_string(index=False))

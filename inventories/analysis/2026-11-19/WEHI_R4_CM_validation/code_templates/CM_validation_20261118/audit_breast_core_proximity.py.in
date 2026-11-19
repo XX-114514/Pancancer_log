@@ -1,0 +1,37 @@
+from pathlib import Path
+import math,json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+from scipy.spatial import cKDTree
+from scipy import sparse
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/imaging_breast_core_cells_v1')
+P=Path('${PANCANCER_ROOT}/Project_v3/runs/20261108_V4_native_coordinate_fix_v1')
+t=pd.read_csv(O/'proximity_tests.tsv',sep='\t');blocks=pd.read_csv(O/'null_blocks.tsv.gz',sep='\t');errors=[]
+for unit in ['S01','S02','S03','S04','S05','S06']:
+ z=np.load(O/(unit+'_core_PRIVATE.npz'));paths=list(P.glob('outputs*/spatial_controls_v1/'+unit+'/cell_identity_view_PRIVATE.tsv.gz'));assert len(paths)==1;c=pd.read_csv(paths[0],sep='\t');f=P/'inputs_direct_v1'/unit/'native_PRIVATE.h5ad';receipt=json.loads((paths[0].parent/'complete.json').read_text());assert hashlib.sha256(f.read_bytes()).hexdigest()==receipt['native_source_file_sha256']
+ a=ad.read_h5ad(f,backed='r');assert hashlib.sha256('\n'.join(a.obs_names.astype(str)).encode()).hexdigest()==receipt['native_cell_axis_SHA256'];names=pd.Index(a.var.gene_symbol if 'gene_symbol' in a.var else a.var_names);genes=['ESM1','RGS5','PDGFRB','ACTA2','TAGLN','MYH11','PECAM1','VWF','CDH5','KDR','EMCN'];idx=sorted(names.get_loc(g) for g in genes if g in names);x=a[:,idx].X;x=x.toarray() if sparse.issparse(x) else x;x=np.rint(np.expm1(x.astype(float)));raw=pd.DataFrame(x,columns=names[idx]);a.file.close()
+ for g in ['ESM1','RGS5']:assert np.array_equal(raw[g],z[g])
+ assert np.array_equal(c[['x_um','y_um']],z['xy']) and np.array_equal(c.native_total,z['depth'])
+ qc=c.QC_keep.astype(str).str.lower().eq('true');ec=qc&c.cell_type.eq('Blood_EC');mural=qc&c.author_major.str.lower().str.contains('pvl|mural|perivascular|smooth')&(raw[['PDGFRB','ACTA2','TAGLN','MYH11']].gt(0).sum(axis=1)>=2)&~ec
+ assert np.array_equal(ec,z['ec']) and np.array_equal(mural,z['mural']);assert raw.loc[ec,[g for g in ['PECAM1','VWF','CDH5','KDR','EMCN'] if g in raw]].gt(0).sum(axis=1).ge(2).all()
+ for r in t[t.section==unit].itertuples():
+  forward=r.direction.startswith('ESM1');src=ec if forward else mural;tgt=(mural&raw.RGS5.ge(r.threshold)) if forward else (ec&raw.ESM1.ge(r.threshold));pos=raw.loc[src,'ESM1' if forward else 'RGS5'].ge(r.threshold).to_numpy();coords=c.loc[src,['x_um','y_um']].to_numpy();near=cKDTree(c.loc[tgt,['x_um','y_um']]).query_ball_point(coords,r.radii_um if hasattr(r,'radii_um') else r.radius_um,return_length=True)>0
+  tiles=np.floor(coords/r.tile_um).astype(int);design=pd.DataFrame(dict(tx=tiles[:,0],ty=tiles[:,1],depth=c.loc[src,'native_total'].to_numpy(),pos=pos,near=near));expectedblocks=[]
+  for _,g in design.groupby(['tx','ty'],sort=True):
+   cuts=g.depth.quantile([.25,.5,.75]).to_numpy();q=(g.depth.to_numpy()[:,None]>=cuts[None,:]).sum(axis=1)
+   for lev in sorted(set(q)):
+    h=g.iloc[np.flatnonzero(q==lev)];expectedblocks.append((len(h),int(h.pos.sum()),int(h.near.sum()),int((h.pos&h.near).sum())))
+  got=blocks[blocks.key==r.key][['n','k','near','observed']];assert expectedblocks==list(got.itertuples(index=False,name=None))
+  distribution=np.array([1.]);mu=0.;infop=infon=0
+  for n,k,h,obs in expectedblocks:
+   denom=math.comb(n,k);v=np.zeros(k+1)
+   for j in range(max(0,k-(n-h)),min(k,h)+1):v[j]=math.comb(h,j)*math.comb(n-h,k-j)/denom
+   distribution=np.convolve(distribution,v);mu+=k*h/n
+   if 0<k<n:infop+=k;infon+=n-k
+  observed=int((pos&near).sum());assert observed==r.observed_count and abs(mu-r.expected_count)<1e-9
+  eligible=len(pos)>=20 and tgt.sum()>=10 and infop>=10 and infon>=10;assert eligible==(r.status=='TESTED');assert abs(distribution.sum()-1)<1e-10
+  if eligible:
+   prob=sum(v for j,v in enumerate(distribution) if abs(j-mu)>=abs(observed-mu)-1e-10);errors.append(abs(min(1,prob)-r.p_exact));assert errors[-1]<1e-10
+ print(unit,'raw counts, identities, all blocks, exact combinatorial distributions PASS',flush=True)
+good=t.status.eq('TESTED');p=t.loc[good,'p_exact'].to_numpy();order=np.argsort(p);q=np.minimum.accumulate((p[order]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1].clip(0,1);assert np.allclose(q,t.loc[good,'q_family'].to_numpy()[order],atol=1e-12,rtol=1e-10)
+r=dict(status='PASS_all_six_raw_core_markers_identity_coordinates_all96_designs_exact_combinatorial_null_and_BH',max_p_error=max(errors),tested=int(good.sum()),association_sha256=hashlib.sha256((O/'proximity_tests.tsv').read_bytes()).hexdigest(),limitation='reuses previously audited broad identity/QC and native coordinate contract; marker-supported proxies not exact R4 subtypes; no segmentation-image review')
+(O/'independent_audit.json').write_text(json.dumps(r,indent=2));print(json.dumps(r))

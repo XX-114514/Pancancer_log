@@ -1,0 +1,11 @@
+{
+  "status": "FROZEN_BEFORE_ASSOCIATIONS",
+  "source": "https://gdc.cancer.gov/about-data/publications/panimmune",
+  "quality": "exact methylation aliquot must have official Do_not_use=False; RNA sample15 must have at least one official RNAseq record and no flagged RNAseq aliquots; conservative sample-level proxy, not exact Toil aliquot QC",
+  "primary": "single aliquot per TCGA sample15; finite fraction in [0,1]; exact cancer and sample key; no OS eligibility filter",
+  "sensitivity": "median of valid aliquots within sample15; no cancer conflicts; no clipping invalid fractions",
+  "resolution": "TCGA expression sample IDs are 15 chars; this is sample-level cross-assay matching, not verified same vial/portion",
+  "statistic": "within-cancer Spearman, at least 30 unique patients and variable scores/fractions",
+  "multiplicity": "BH over all assessed cancer x 15 CM x 2 branches x 2 aliquot policies; retain raw p",
+  "limitations": "exploratory composition associations; no purity adjustment yet; no external validation; RNA scores may reflect immune-cell abundance; not a predictive biomarker"
+}

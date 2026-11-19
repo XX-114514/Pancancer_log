@@ -1,0 +1,7 @@
+{
+  "rose_seed": 2026111907,
+  "replicates": 5000,
+  "interval": "resample within response classes with fixed scores; percentile interval, no score-standardization uncertainty; not a trained classifier",
+  "older_intervals": "retained from previously audited Hugo/Riaz comparison; updated q values use480test family",
+  "timing": "Rose explicitly kept separate and labeled unknown"
+}

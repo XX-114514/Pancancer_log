@@ -1,0 +1,9 @@
+from pathlib import Path
+import json
+import pandas as pd,numpy as np
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/communication_joint15_v2');assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_');t=pd.read_csv(O/'core_edges_all_CMT.tsv.gz',sep='\t');rows=[]
+for (module,a,b),c in t.groupby(['core_module','source_identity','target_identity'],sort=True):
+ p=c.pivot(index='id_cp_interaction',columns='CMT',values='q_joint15');assert p.shape==(895,15) and p.notna().all().all();sig=p.le(.05);sets={cm:set(p.index[sig[cm]]) for cm in p};focal=sets[module];other=set().union(*(v for k,v in sets.items() if k!=module));all15=set.intersection(*sets.values());union=set.union(*sets.values());exclusive=focal-other
+ assert len(exclusive)==int((sig[module] & ~sig.drop(columns=module).any(axis=1)).sum());assert len(all15)==int(sig.all(axis=1).sum());assert len(union)==int(sig.any(axis=1).sum())
+ rows.append(dict(core_module=module,source_identity=a,target_identity=b,focal_significant=len(focal),focal_shared_with_other=len(focal&other),focal_only_significant=len(exclusive),all15_shared_significant=len(all15),any_CMT_significant=len(union),median_descriptive_Jaccard_to_other=float(np.median([len(focal&v)/len(focal|v) if focal|v else np.nan for k,v in sets.items() if k!=module])),interpretation='set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof'))
+r=pd.DataFrame(rows);r.to_csv(O/'core_overlap_summary.tsv',sep='\t',index=False);(O/'overlap_audit.json').write_text(json.dumps(dict(status='PASS_full_set_and_boolean_matrix_overlap_replay',core_pairs=len(r),inputs='audited all134250 core entries',limitations='same LR can occur in multiple CMT and pair entries; thresholded exclusivity is not a test of CMT differences'),indent=2));print(r.to_string(index=False))

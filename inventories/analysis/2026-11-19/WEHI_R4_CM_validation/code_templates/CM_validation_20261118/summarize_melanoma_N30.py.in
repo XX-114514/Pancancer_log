@@ -1,0 +1,76 @@
+"""Consolidate all eight preselected primary sections; no new hypothesis tests."""
+from pathlib import Path
+import hashlib,json
+import numpy as np,pandas as pd
+from scipy.stats import rankdata,spearmanr
+import statsmodels.api as sm
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/spatial_melanoma')
+O=R/'primary_N30_review';O.mkdir(exist_ok=True)
+keys=['mel%d_rep%d_N30'%(i,j) for i in range(1,5) for j in (1,2)]
+parents=pd.read_csv(R/'adapter/inputs/frequency_PRIVATE.tsv',sep='\t',index_col=0).majorCluster
+scores=[];edges=[];receipts=[];maxerr=0.
+metrics=['raw_spearman','partial_rank_total_melanoma_other_nuisance','parent_fraction_spearman']
+for key in keys:
+ s=R/'sections'/key
+ au=json.loads((s/'independent_audit.json').read_text())
+ de=json.loads((s/'density_sensitivity_v1/complete.json').read_text())
+ assert au['status'].startswith('PASS_') and de['status'].endswith('_PASS')
+ for f,h in de['input_hashes'].items():
+  assert hashlib.sha256((s/f).read_bytes()).hexdigest()==h
+ t=pd.read_csv(s/'density_sensitivity_v1/edge_density.tsv',sep='\t')
+ z=pd.read_csv(s/'author_CM_scores_PRIVATE.tsv',sep='\t')
+ assert len(t)==296 and len(z)==60 and z.cm.nunique()==15
+ assert not z.duplicated(['cm','posterior','statistic']).any()
+ assert (z.section_code==key).all() and (t.section==key).all()
+ # Independently replay every reported edge, including both posterior summaries.
+ for post in ['means','q05']:
+  a=pd.read_csv(s/(post+'_abundance_PRIVATE.tsv.gz'),sep='\t',index_col=0)
+  total=a.sum(axis=1)
+  mel=a['nuisance:Cutaneous_melanoma_consensus']/total
+  other=a[[c for c in a if c.startswith('nuisance:') and c!='nuisance:Cutaneous_melanoma_consensus']].sum(axis=1)/total
+  X=np.column_stack([np.ones(len(a)),rankdata(total),rankdata(mel),rankdata(other)])
+  residual={c:sm.OLS(rankdata(a[c]),X).fit().resid for c in parents.index}
+  frac={c:a[c]/a[parents.index[parents==parents[c]]].sum(axis=1) for c in parents.index}
+  for row in t[t.posterior==post].itertuples():
+   u,v=row.node1,row.node2
+   vnew=[spearmanr(a[u],a[v]).statistic,np.corrcoef(residual[u],residual[v])[0,1],spearmanr(frac[u],frac[v],nan_policy='omit').statistic]
+   vold=[getattr(row,c) for c in metrics]
+   assert np.allclose(vnew,vold,atol=1e-10,rtol=0,equal_nan=True)
+   maxerr=max(maxerr,float(np.nanmax(np.abs(np.array(vnew)-vold))))
+ scores.append(z);edges.append(t)
+ receipts.append(dict(section=key,n_spots=au['n_spots'],scores=60,edges_replayed=296))
+scores=pd.concat(scores,ignore_index=True);edges=pd.concat(edges,ignore_index=True)
+scores.to_csv(O/'author_scores_all_sections.tsv',sep='\t',index=False)
+edges.to_csv(O/'edge_density_all_sections.tsv',sep='\t',index=False)
+core=edges[((edges.cm=='CM12')&(edges.node1=='Endo_tip_ESM1')&(edges.node2=='Str_Pericyte_RGS5'))|((edges.cm=='CM01')&(edges.node1=='Endo_venous_ACKR1')&(edges.node2=='Str_Fib_PI16'))].copy()
+assert len(core)==32
+core.to_csv(O/'core_density.tsv',sep='\t',index=False)
+fig,axs=plt.subplots(1,2,figsize=(13,5.5),layout='constrained')
+for ax,stat in zip(axs,['colocalization','aggregation']):
+ p=scores[(scores.posterior=='means')&(scores.statistic==stat)].pivot(index='section_code',columns='cm',values='author_score').loc[keys]
+ im=ax.imshow(p,vmin=0,vmax=1,cmap='viridis',aspect='auto')
+ ax.set_xticks(range(15),p.columns,rotation=90);ax.set_yticks(range(8),[k.replace('_N30','') for k in keys]);ax.set_title(stat)
+ fig.colorbar(im,ax=ax,shrink=.7,label='Author percentile (not p-value)')
+fig.suptitle('All 8 preselected melanoma legacy-ST sections | N=30 assumed')
+fig.supxlabel('Posterior means; all 15 modules retained. Patient mapping unverified; sections are not independent patient replicates.',fontsize=9)
+fig.savefig(O/'author_scores.png',dpi=170);plt.close(fig)
+fig,axs=plt.subplots(1,2,figsize=(13,6),layout='constrained')
+for ax,cm in zip(axs,['CM01','CM12']):
+ t=core[(core.cm==cm)&(core.posterior=='means')].set_index('section').loc[keys]
+ for offset,col,label in zip([-.2,0,.2],metrics,['Raw','Composition adjusted','Within-parent fraction']):
+  ax.scatter(t[col],np.arange(8)+offset,label=label,s=35)
+ ax.axvline(0,color='grey',lw=.7);ax.set_xlim(-1,1);ax.set_yticks(range(8),[k.replace('_N30','') for k in keys]);ax.invert_yaxis();ax.set_xlabel('Descriptive rank correlation');ax.set_title(cm+(' | ACKR1 / PI16' if cm=='CM01' else ' | ESM1 / RGS5'))
+axs[0].legend(fontsize=8,loc='lower left')
+fig.suptitle('Core-edge sensitivity across all 8 primary models')
+fig.supxlabel('Inferred cell identities; no direct ESM1 validation, contact or significance claim. N=5/60 sensitivity remains separate.',fontsize=9)
+fig.savefig(O/'core_density.png',dpi=170);plt.close(fig)
+proof=dict(status='PASS_existing_author_audits_input_hashes_and_all2368_edge_replays',sections=receipts,n_author_scores=len(scores),n_edges=len(edges),max_edge_error=maxerr,patient_identity_verified=False,limitations='Legacy ST, not Visium or imaging. No pooled patient inference. Author scores checked by existing per-section audits; edge metrics independently replayed here. N30 only; q05 sensitivity is not a correlation confidence interval.')
+for f,df in [('author_scores_all_sections.tsv',scores),('edge_density_all_sections.tsv',edges),('core_density.tsv',core)]:
+ pd.testing.assert_frame_equal(pd.read_csv(O/f,sep='\t'),df.reset_index(drop=True),check_exact=False,rtol=1e-12,atol=1e-12)
+proof['output_hashes']={f:hashlib.sha256((O/f).read_bytes()).hexdigest() for f in ['author_scores_all_sections.tsv','edge_density_all_sections.tsv','core_density.tsv']}
+(O/'audit.json').write_text(json.dumps(proof,indent=2))
+print(json.dumps(proof))
+print(core[core.posterior=='means'].to_string(index=False))

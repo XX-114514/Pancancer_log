@@ -1,0 +1,15 @@
+{
+  "status": "AUTHOR_ARCHIVE_DISCOVERED_NOT_DOWNLOADED_PATIENT_MAPPING_UNRESOLVED",
+  "source_page": "https://www.spatialresearch.org/resources-published-datasets/doi-10-1158-0008-5472-can-18-0747/",
+  "image_archive_record": "https://zenodo.org/records/8215682",
+  "preview": "https://zenodo.org/records/8215682/preview/Thrane_et_al_2018_CAN_RES.zip?include_deleted=0",
+  "download_url": "https://zenodo.org/records/8215682/files/Thrane_et_al_2018_CAN_RES.zip?download=1",
+  "published_archive_md5": "a7aa24ddaa699f75c19b0c96a6a33a8a",
+  "approx_bytes": 942000000,
+  "archive_preview_contents": "8 count matrices, 8 H&E JPEGs, 8 aligned spot JPEGs, Mac metadata; no patient mapping file listed",
+  "existing_server_archive": "${PANCANCER_ROOT}/Project_v5/spatial_expansion_20260904/raw/ST_Melanoma_Thrane2018.zip",
+  "existing_archive_verified_listing": "8 count TSV files only, sum uncompressed bytes 78108864",
+  "download_observation": "web tool direct official download returned HTTP429; no bypass or alternate downloader attempted",
+  "patient_identity_verified": false,
+  "scope": "Source discovery and archive inventory only; no downloaded image inspection, spatial registration verification, or patient identity bridge."
+}

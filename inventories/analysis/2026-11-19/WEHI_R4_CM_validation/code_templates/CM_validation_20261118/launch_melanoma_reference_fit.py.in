@@ -1,0 +1,29 @@
+from pathlib import Path
+import json,hashlib,subprocess,os
+import pandas as pd
+B=Path('${PROJECT_ARCHIVE_ROOT}')
+R=B/'CM_validation_20261118_v1/spatial_melanoma';old=B/'spatial_CoVarNet_R4_20261115_v1'
+assert json.loads((R/'reference/independent_input_audit.json').read_text())['status'].startswith('PASS_')
+assert not (R/'reference_fit_launch.json').exists()
+markers=pd.read_csv(R/'reference/melanoma_marker_audit.tsv',sep='\t')
+# Observed review checks only, not an independently calibrated cell classifier.
+for gene in ['PMEL','MITF']:
+ d=markers[markers.gene.eq(gene)];assert len(d)==6 and d.positive_fraction.gt(.5).all()
+for d in ['code','logs']:(R/d).mkdir(exist_ok=True)
+src=old/'code/fit.py';text=src.read_text()
+assert text.count('a.obs.node.nunique()==49')==1 and text.count('len(inf.columns)==49')==1
+text=text.replace('a.obs.node.nunique()==49','a.obs.node.nunique()==50').replace('len(inf.columns)==49','len(inf.columns)==50')
+dest=R/'code/fit_50labels.py';dest.open('x').write(text)
+review=dict(status='INPUT_COUNTS_AUDITED_AND_MARKER_PROFILE_REVIEWED_FOR_REFERENCE_FITTING',
+            melanoma_label='nuisance:Cutaneous_melanoma_consensus',reference_labels=50,
+            observed_PMEL_positive_fraction_range=[.671,.88125],
+            limitations='common reference gene scope excludes MLANA/SOX10/TYR/TYRP1/ESM1/PECAM1; model relies on remaining multigene signatures; heldout separability and cross-source checks still required before spatial interpretation',
+            R4_44_module_nodes_unchanged=True,old_reference_cells_preserved=True,
+            source_fit_code_sha256=hashlib.sha256(src.read_bytes()).hexdigest(),adapted_fit_code_sha256=hashlib.sha256(dest.read_bytes()).hexdigest(),
+            adaptation='only expected reference label count 49 to 50; reference 250 epochs and 1000 posterior samples unchanged')
+(R/'reference/identity_review.json').write_text(json.dumps(review,indent=2))
+env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='4',OMP_NUM_THREADS='4',PYTHONUNBUFFERED='1',MPLCONFIGDIR=str(R/'mpl_cache'))
+f=(R/'logs/reference_fit.log').open('x')
+p=subprocess.Popen(['${ENV_ROOT}/scvi/bin/python',str(dest),str(R),'reference'],stdout=f,stderr=subprocess.STDOUT,env=env,start_new_session=True)
+receipt=dict(pid=p.pid,script=str(dest),status='FIT_LAUNCHED_PENDING_COMPLETION_AND_AUDIT',reference_input_sha256=json.loads((R/'reference/independent_input_audit.json').read_text())['reference_sha256'])
+(R/'reference_fit_launch.json').write_text(json.dumps(receipt,indent=2));print(json.dumps(receipt))

@@ -1,0 +1,26 @@
+from pathlib import Path
+import os,json,time,subprocess,fcntl
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');lock=(R/'R4_audit_queue.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+assert json.loads((R/'analysis_queue_status.json').read_text())['stage']=='ALL_OUTPUTS_WRITTEN_PENDING_INDEPENDENT_ANALYSIS_AUDIT'
+names={'audit_R4_CPDB_output.py','audit_R4_highlow.py'}
+for p in Path('/proc').glob('[0-9]*/cmdline'):
+ try:argv=p.read_bytes().split(b'\0')
+ except (FileNotFoundError,PermissionError,ProcessLookupError):continue
+ assert not any(Path(x.decode(errors='replace')).name in names for x in argv if x),'Existing audit process: '+str(p)
+E='${ENV_ROOT}/scanpy/bin/python';env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1');deadline=time.monotonic()+24*3600
+logs=R/'R4_audit_queue_logs';logs.mkdir(exist_ok=True)
+def status(**kw):
+ kw.update(pid=os.getpid(),timestamp=time.time());tmp=R/'R4_audit_queue_status.tmp';tmp.write_text(json.dumps(kw,indent=2));tmp.replace(R/'R4_audit_queue_status.json')
+for kind,script in [('communication','audit_R4_CPDB_output.py'),('highlow','audit_R4_highlow.py')]:
+ for n in range(1,16):
+  cm='CM%02d'%n;directory=R/kind/cm;receipt=directory/'independent_audit.json'
+  if receipt.exists():
+   assert json.loads(receipt.read_text())['status'].startswith('PASS');continue
+  assert (directory/'complete.json').exists(),str(directory)
+  if time.monotonic()>deadline:status(stage='TIME_LIMIT',kind=kind,cm=cm);raise SystemExit(1)
+  log=logs/(kind+'_'+cm+'.log')
+  with log.open('x') as f:
+   p=subprocess.Popen([E,str(R/script),cm],stdout=f,stderr=subprocess.STDOUT,env=env);status(stage='running',kind=kind,cm=cm,child_pid=p.pid);rc=p.wait()
+  if rc:status(stage='FAILED_NEEDS_INSPECTION',kind=kind,cm=cm,exit_code=rc);raise SystemExit(rc)
+  assert json.loads(receipt.read_text())['status'].startswith('PASS')
+status(stage='ALL15_CPDB_AND_HIGHLOW_INDEPENDENT_AUDITS_COMPLETE_CROSS_CM_CORRECTION_STILL_PENDING')

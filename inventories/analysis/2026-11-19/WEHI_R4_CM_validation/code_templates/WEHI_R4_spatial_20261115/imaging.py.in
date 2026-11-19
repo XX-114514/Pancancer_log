@@ -1,0 +1,69 @@
+"""Imaging marker-density projection, explicitly separate from exact R4 abundance."""
+from pathlib import Path
+import sys,json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+from scipy import sparse
+from scipy.spatial import cKDTree
+from scipy.stats import spearmanr,rankdata
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+BASE=Path('${PROJECT_ARCHIVE_ROOT}');R=BASE/'spatial_CoVarNet_R4_20261115_v1';S=BASE/'w2o_annotation_r4_covarnet_k15_20261115_v1';OUT=R/'imaging';OUT.mkdir(exist_ok=True)
+P=Path('${PANCANCER_ROOT}/Project_v3/runs');BREAST=P/'20261108_V4_native_coordinate_fix_v1';RENAL=P/'20261109_ccRCC_followup_v1'
+W=pd.read_csv(S/'covarnet/paper/cm_node_weights.tsv',sep='\t',index_col=0);E=pd.read_csv(S/'covarnet/export/module_edges.tsv',sep='\t')
+core={'CM01':['Endo_venous_ACKR1','Str_Fib_PI16'],'CM12':['Endo_tip_ESM1','Str_Pericyte_RGS5','Mye_Mac_FOLR2'],'CM04':['Endo_arterial_GJA5','Str_SMC_MYH11']}
+marker={n:n.split('_')[-1] for n in W.index};needed=sorted(set(marker.values()))
+(OUT/'plan.json').write_text(json.dumps({'grid_um':[100,200],'minimum_QC_cells_per_grid':10,'scale':'sum native RNA per grid / summed total native RNA *10000','complete_network_activity':'only when every original network naming gene is measured; transcript-density proxy, not exact subtype abundance','core_activity':'retains original W on prespecified 2/3 core nodes; does not rename full CM','statistics':'Spearman between core gene-density vectors and directed inverse-square 60-neighbour Moran; section descriptive only','render':'all retained grid locations; separately scaled plots; no cross-platform magnitude comparison'},indent=2))
+availability=[];results=[];edgeout=[];receipts=[]
+def analyse(key,xy,X,genes,total,qc,platform):
+    assert len(xy)==len(total)==len(qc)==X.shape[0]
+    assert np.isfinite(xy).all()
+    measured=set(genes);geneindex={g:i for i,g in enumerate(genes)}
+    for n,g in marker.items():availability.append({'section':key,'platform':platform,'node':n,'gene':g,'measured':g in measured})
+    for size in [100,200]:
+        tiles=np.floor(xy[qc]/size).astype(int);unique,inv=np.unique(tiles,axis=0,return_inverse=True);counts=np.bincount(inv);depth=np.bincount(inv,weights=total[qc]);valid=(counts>=10)&(depth>0);centers=(unique[valid]+.5)*size
+        density={g:np.bincount(inv,weights=np.asarray(X[qc,geneindex[g]].toarray()).ravel() if sparse.issparse(X) else X[qc,geneindex[g]],minlength=len(unique))[valid]/depth[valid]*10000 for g in needed if g in measured}
+        if len(centers)<=60:receipts.append({'section':key,'grid':size,'status':'insufficient_grids'});continue
+        dd,jj=cKDTree(centers).query(centers,k=61);ww=1/dd[:,1:]**2;ww/=ww.sum(axis=1,keepdims=True);G=sparse.csr_matrix((ww.ravel(),(np.repeat(np.arange(len(centers)),60),jj[:,1:].ravel())),shape=(len(centers),len(centers)))
+        activities={}
+        for cm in W.columns:
+            es=E[E.cm==cm];nodes=sorted(set(es.subCluster1)|set(es.subCluster2));missing=sorted({marker[n] for n in nodes}-measured)
+            if not nodes:status='empty_network'
+            elif missing:status='unmeasured_network_markers'
+            else:status='complete_naming_gene_proxy_not_exact_celltypes'
+            value=sum(W.loc[n,cm]*density[marker[n]] for n in nodes) if nodes and not missing else None
+            results.append({'section':key,'platform':platform,'grid_um':size,'cm':cm,'scope':'full_network_naming_gene_proxy','n_grids':len(centers),'missing':','.join(missing),'status':status,'mean_activity':float(value.mean()) if value is not None else None})
+        for cm,nodes in core.items():
+            missing=sorted({marker[n] for n in nodes}-measured)
+            values=None if missing else sum(W.loc[n,cm]*density[marker[n]] for n in nodes)
+            results.append({'section':key,'platform':platform,'grid_um':size,'cm':cm,'scope':'prespecified_core_proxy','n_grids':len(centers),'missing':','.join(missing),'status':'unmeasured_core_markers' if missing else 'core_marker_proxy_only','mean_activity':float(values.mean()) if values is not None else None,'retained_W_fraction':float(W.loc[nodes,cm].sum()/W[cm].sum())})
+            if values is None:continue
+            activities[cm]=values
+            for i,a in enumerate(nodes):
+                for b in nodes[i+1:]:
+                    x=density[marker[a]];y=density[marker[b]]
+                    if np.std(x)==0 or np.std(y)==0:rho=mi=mj=np.nan
+                    else:
+                        rho=float(spearmanr(x,y).statistic);zx=(x-x.mean())/x.std(ddof=1);zy=(y-y.mean())/y.std(ddof=1);mi=float(zx@(G@zy)/(len(x)-1));mj=float(zy@(G@zx)/(len(x)-1))
+                    edgeout.append({'section':key,'platform':platform,'grid_um':size,'cm':cm,'a':a,'b':b,'n_grids':len(centers),'Spearman':rho,'Moran_forward':mi,'Moran_reverse':mj,'interpretation':'marker_density_not_cell_abundance_or_contact'})
+        dest=OUT/key;dest.mkdir(exist_ok=True)
+        pd.DataFrame({'x_um':centers[:,0],'y_um':centers[:,1],'QC_cells':counts[valid],**activities}).to_csv(dest/f'grid{size}_activity_PRIVATE.tsv.gz',sep='\t',index=False)
+        if size==100:
+            fig,axs=plt.subplots(1,3,figsize=(12,4))
+            for ax,cm in zip(axs,core):
+                val=activities.get(cm)
+                if val is None:ax.text(.5,.5,'Not measurable',ha='center',transform=ax.transAxes)
+                else:
+                    q=np.quantile(val,.99);sc=ax.scatter(centers[:,0],centers[:,1],c=val/max(q,1e-12),s=5,cmap='magma',vmin=0,vmax=1);fig.colorbar(sc,ax=ax,shrink=.65)
+                ax.set_title(cm+' core marker proxy');ax.set_aspect('equal');ax.invert_yaxis();ax.set_xlabel('um');ax.set_ylabel('um')
+            fig.suptitle(key+' | 100 um grids | each panel / own p99');fig.tight_layout();fig.savefig(dest/'core_activity.png',dpi=160);plt.close(fig)
+    print('DONE',key,flush=True)
+for unit in ['S01','S02','S03','S04','S05','S06']:
+    p,=BREAST.glob('outputs*/spatial_controls_v1/'+unit+'/cell_identity_view_PRIVATE.tsv.gz');c=pd.read_csv(p,sep='\t');receipt=json.loads((p.parent/'complete.json').read_text());native=BREAST/'inputs_direct_v1'/unit/'native_PRIVATE.h5ad';h=hashlib.sha256(native.read_bytes()).hexdigest();assert h==receipt['native_source_file_sha256']
+    a=ad.read_h5ad(native,backed='r');assert hashlib.sha256('\n'.join(a.obs_names.astype(str)).encode()).hexdigest()==receipt['native_cell_axis_SHA256'];symbols=pd.Index(a.var.gene_symbol.astype(str) if 'gene_symbol' in a.var else a.var_names);ix=sorted(symbols.get_loc(g) for g in needed if g in symbols);x=a[:,ix].X;x=x.toarray() if sparse.issparse(x) else np.asarray(x);x=np.expm1(x.astype(float));assert np.allclose(x,np.rint(x),atol=.001,rtol=.00001);x=np.rint(x);a.file.close()
+    analyse('breast_'+unit,c[['x_um','y_um']].to_numpy(),x,list(symbols[ix]),c.native_total.to_numpy(),c.QC_keep.astype(str).str.lower().eq('true').to_numpy(),'Xenium_5k');receipts.append({'section':'breast_'+unit,'sha256':h,'axis_verified':True})
+sys.path[:0]=[str(RENAL/'code'),str(RENAL/'pydeps')]
+import ccrcc_followup_v1 as renal
+ids,c,xy,x,rn,xp,pn,scale,total,ng,_=renal.load(RENAL);identity=pd.read_csv(RENAL/'spatial_pilot_v1/identity_candidates_PRIVATE.tsv.gz',sep='\t',index_col=0);assert list(identity.index)==list(ids)
+analyse('renal_Xenium',xy,x,list(rn),total,identity.QC_keep.to_numpy(bool),'Xenium_477RNA_27protein');receipts.append({'section':'renal_Xenium','native_files_verified_by_original_loader':True,'protein_not_used_as_RNA':True})
+pd.DataFrame(availability).to_csv(OUT/'marker_availability.tsv',sep='\t',index=False);pd.DataFrame(results).to_csv(OUT/'activity_qualification.tsv',sep='\t',index=False);pd.DataFrame(edgeout).to_csv(OUT/'core_marker_spatial_edges.tsv',sep='\t',index=False);(OUT/'complete.json').write_text(json.dumps({'status':'imaging_marker_density_complete','sections':7,'receipts':receipts,'exact_R4_celltype_mapping':False},indent=2))

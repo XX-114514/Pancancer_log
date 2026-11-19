@@ -1,0 +1,40 @@
+"""Independent raw CSV bridge, rank-Pearson and explicit BH replay."""
+from pathlib import Path
+import csv,gzip,json,hashlib
+from collections import defaultdict
+import numpy as np,pandas as pd
+from scipy.stats import rankdata,t as student_t
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/TCGA_leukocyte_association_QC_v3'
+raw=defaultdict(list);quality=defaultdict(list);rna=defaultdict(list)
+with (R/'sources/panimmune/sample_quality.tsv').open() as f:
+ for row in csv.DictReader(f,delimiter='\t'):
+  if row['platform'] in ['HumanMethylation450','HumanMethylation27']:
+   quality[row['aliquot_barcode']].append(row['Do_not_use'])
+  if row['platform'] in ['IlluminaHiSeq_RNASeqV2','IlluminaGA_RNASeqV2']:rna[row['aliquot_barcode'][:15]].append(row['Do_not_use'])
+with (R/'sources/panimmune/leukocyte_fraction.tsv').open() as f:
+ for cancer,aliquot,value in csv.reader(f,delimiter='\t'):raw[aliquot[:15]].append((cancer,float(value),aliquot))
+bridge=pd.read_csv(O/'sample_bridge_PRIVATE.tsv.gz',sep='\t').set_index('sample');groups=defaultdict(list);maxrho=0.;maxp=0.
+for sample,row in bridge.iterrows():
+ entries=raw[sample];valid=[v for c,v,ali in entries if np.isfinite(v) and 0<=v<=1 and bool(quality[ali]) and all(flag=='False' for flag in quality[ali])]
+ compatible=bool(entries) and {c for c,v,ali in entries}=={row.cancer} and bool(rna[sample]) and all(flag=='False' for flag in rna[sample])
+ expected=[entries[0][1] if compatible and len(entries)==1 and len(valid)==1 else np.nan,np.median(valid) if compatible and valid else np.nan]
+ assert np.allclose(expected,[row.LF_single,row.LF_median],equal_nan=True)
+with gzip.open(R/'bulk_R4_candidates/TCGA_scores/scores_PRIVATE.tsv.gz','rt') as f:
+ for row in csv.DictReader(f,delimiter='\t'):
+  key=(row['cancer'],row['branch'],row['cm']);groups[key].append((row['sample'],float(row['score'])))
+a=pd.read_csv(O/'associations.tsv',sep='\t')
+for row in a.itertuples():
+ vals=[(score,bridge.loc[sample,row.policy]) for sample,score in groups[(row.cancer,row.branch,row.cm)]]
+ xy=np.array([(x,y) for x,y in vals if np.isfinite(x) and np.isfinite(y)])
+ assert len(xy)==row.patients
+ if row.status!='ASSESSED':assert len(xy)<30 or len(np.unique(xy[:,0]))<2 or len(np.unique(xy[:,1]))<2;continue
+ ranks=np.column_stack([rankdata(xy[:,0]),rankdata(xy[:,1])]);ranks-=ranks.mean(axis=0)
+ rho=np.sum(ranks[:,0]*ranks[:,1])/np.sqrt(np.sum(ranks[:,0]**2)*np.sum(ranks[:,1]**2))
+ pv=2*student_t.sf(abs(rho)*np.sqrt((len(xy)-2)/(1-rho*rho)),len(xy)-2)
+ maxrho=max(maxrho,abs(rho-row.rho));maxp=max(maxp,abs(pv-row.p))
+ assert np.isclose(rho,row.rho,atol=1e-12) and np.isclose(pv,row.p,atol=1e-12,rtol=1e-9)
+mask=a.p.notna();p=a.loc[mask,'p'].to_numpy();order=np.argsort(p);q=np.empty(len(p));q[order]=np.minimum(1,np.minimum.accumulate((p[order]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1])
+assert np.allclose(q,a.loc[mask,'q_all_assessed_tests'],atol=1e-12)
+proof=dict(status='PASS_RAW_ALIQUOT_BRIDGE_ALL_RANK_CORRELATIONS_AND_GLOBAL_BH_REPLAY',sample_bridges=len(bridge),assessed_tests=len(p),max_rho_error=maxrho,max_p_error=maxp,
+ associations_sha256=hashlib.sha256((O/'associations.tsv').read_bytes()).hexdigest(),scope='numerical replay and bridge only; no purity control, clinical validity, causal inference or external validation')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

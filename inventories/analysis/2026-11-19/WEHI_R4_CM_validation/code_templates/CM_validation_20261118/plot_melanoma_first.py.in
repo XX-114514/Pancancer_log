@@ -1,0 +1,21 @@
+from pathlib import Path
+import json
+import pandas as pd,numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/spatial_melanoma/sections/mel1_rep1_N30');O=R/'density_sensitivity_v1'
+assert json.loads((R/'independent_audit.json').read_text())['status'].startswith('PASS_')
+a=pd.read_csv(R/'means_CM_activity_PRIVATE.tsv.gz',sep='\t',index_col=0);xy=pd.read_csv(R/'coordinates_PRIVATE.tsv.gz',sep='\t',index_col=0);assert a.index.equals(xy.index)
+s=pd.read_csv(R/'author_CM_scores_PRIVATE.tsv',sep='\t');s=s[s.posterior=='means']
+fig,axs=plt.subplots(1,3,figsize=(15,5),layout='constrained')
+for ax,cm in zip(axs[:2],['CM01','CM12']):
+ p=ax.scatter(xy.x,xy.y,c=a[cm],s=23,cmap='magma',vmin=0,vmax=1);ax.invert_yaxis();ax.set_aspect('equal');ax.set_title(cm+' | frozen W activity');ax.set_xlabel('Native x');ax.set_ylabel('Native y');fig.colorbar(p,ax=ax,shrink=.6)
+ax=axs[2];mods=sorted(s.cm.unique());x=np.arange(len(mods))
+for shift,stat in [(-.18,'colocalization'),(.18,'aggregation')]:
+ values=s[s.statistic==stat].set_index('cm').loc[mods,'author_score'];ax.bar(x+shift,values,width=.35,label=stat)
+ax.set_xticks(x,mods,rotation=90);ax.set_ylim(0,1);ax.set_ylabel('Author percentile score (not a p-value)');ax.legend(fontsize=8);ax.set_title('All 15 original modules')
+fig.suptitle('mel1_rep1 | legacy ST | 279 spots | N=30 assumed | 30,000 epochs / 1,000 posterior draws',fontsize=13)
+fig.supxlabel('First of 8 sections; N=5/N=60 sensitivity pending. Inferred identities, not direct ESM1 detection or cell contact.\nCM activity uses the existing common all-CM p99 scale within this section; not comparable to absolute cell fractions.',fontsize=10)
+fig.savefig(O/'first_section_review.png',dpi=170);plt.close(fig)
+print('FIRST_SECTION_FIGURE_WRITTEN')

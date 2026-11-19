@@ -1,0 +1,34 @@
+"""Preserve raw Entrez axis; direct, unambiguous HGNC symbol mapping only."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/riaz_inputs_v1';O.mkdir(exist_ok=False)
+plan=dict(status='INPUT_RULES_FROZEN_BEFORE_RESPONSE_ANALYSIS',mapping='exact current approved HGNC symbol to single Entrez ID also unique in raw matrix; reject multi-symbol Entrez and aliases; keep missing list, no aggregation',
+ normalization='log2(1 + CPM), denominator all raw matrix genes per sample; no length inference, not TPM/FPKM',
+ score_reference_cohort='all author-matched pretreatment patients including unknown response; no on-treatment samples in gene z standardization',min_variable_genes=48,limitations='current HGNC snapshot not original 2017 annotation; previous cohort use and assay differences remain; no response analysis performed here')
+(O/'plan.json').open('x').write(json.dumps(plan,indent=2))
+p=R/'sources/riaz_author/hgnc_complete_set.txt';assert hashlib.sha256(p.read_bytes()).hexdigest()=='6df77ac3cbaeb86a6dce5e17d851ebb27b6b3cdcd2471a211a3d8464f00c54c4'
+h=pd.read_csv(p,sep='\t',dtype=str,keep_default_na=False);h=h[h.status.eq('Approved')&h.entrez_id.ne('')]
+path=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/riaz2017/GSE91061_raw_counts.csv.gz')
+x=pd.read_csv(path,index_col=0);x.index=x.index.astype(str);assert x.index.is_unique and x.columns.is_unique
+X=x.to_numpy();assert np.isfinite(X).all() and (X>=0).all() and np.equal(X,np.floor(X)).all();lib=x.sum(axis=0).astype(float);assert lib.gt(0).all()
+sig=pd.read_csv(R/'bulk_R4_candidates/candidate_signatures.tsv',sep='\t');assert hashlib.sha256((R/'bulk_R4_candidates/candidate_signatures.tsv').read_bytes()).hexdigest()=='98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2'
+rows=[]
+for gene in sorted(set(sig.gene)):
+ g=h[h.symbol.eq(gene)];ids=set(g.entrez_id);eid=next(iter(ids)) if len(ids)==1 else ''
+ unique=bool(eid) and h[h.entrez_id.eq(eid)].symbol.nunique()==1
+ status='MAPPED' if unique and eid in x.index else 'MISSING_OR_AMBIGUOUS'
+ rows.append(dict(gene=gene,entrez_id=eid,hgnc_ids=';'.join(g.hgnc_id),status=status))
+m=pd.DataFrame(rows);m.to_csv(O/'gene_mapping.tsv',sep='\t',index=False);mapped=m[m.status.eq('MAPPED')];assert mapped.entrez_id.is_unique
+b=pd.read_csv(R/'clinical/riaz_author_v2/sample_bridge_PRIVATE.tsv',sep='\t');assert json.loads((R/'clinical/riaz_author_v2/independent_audit.json').read_text())['status'].startswith('PASS_')
+assert set(b.expression_key)==set(x.columns);baseline=b[b.baseline_verified&b.author_exact_bam_match].copy().set_index('expression_key').sort_index();assert baseline.PatientID.is_unique
+expr=np.log2(1+x.loc[mapped.entrez_id,baseline.index].T.to_numpy()/lib.loc[baseline.index].to_numpy()[:,None]*1e6)
+a=ad.AnnData(expr.astype(np.float64),obs=baseline[['PatientID','USUBJID','Cohort','BOR','eligible_baseline_response']].copy(),var=mapped.set_index('gene')[['entrez_id','hgnc_ids']].copy());a.obs['library_total_all_genes']=lib.loc[a.obs_names].to_numpy();a.uns['normalization']=plan['normalization'];a.write_h5ad(O/'baseline_candidate_expression_PRIVATE.h5ad',compression='gzip')
+coverage=[]
+for (branch,cm),g in sig.groupby(['branch','cm']):
+ cols=a.var_names.get_indexer(g.gene);cols=cols[cols>=0];variable=np.std(a.X[:,cols],axis=0,ddof=1)>1e-8
+ coverage.append(dict(branch=branch,cm=cm,mapped_genes=len(cols),variable_mapped_genes=int(variable.sum()),missing=';'.join(v for v in g.gene if v not in a.var_names)))
+pd.DataFrame(coverage).to_csv(O/'signature_coverage.tsv',sep='\t',index=False)
+proof=dict(status='RIAZ_EXPRESSION_PREPARED_PENDING_RAW_REPLAY',raw_genes=x.shape[0],raw_samples=x.shape[1],baseline_patients=a.n_obs,response_eligible=int(baseline.eligible_baseline_response.sum()),mapped_signature_genes=a.n_vars,
+ raw_counts_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),output_sha256=hashlib.sha256((O/'baseline_candidate_expression_PRIVATE.h5ad').read_bytes()).hexdigest(),limitations=plan['limitations'])
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(pd.DataFrame(coverage).to_string(index=False))

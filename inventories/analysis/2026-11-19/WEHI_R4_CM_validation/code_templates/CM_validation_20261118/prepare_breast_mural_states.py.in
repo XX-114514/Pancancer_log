@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+from scipy import sparse
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'imaging_breast_mural_states_v1';O.mkdir(exist_ok=True);old=R/'imaging_breast_core_cells_v1'
+assert json.loads((old/'independent_audit.json').read_text())['status'].startswith('PASS_')
+P=Path('${PANCANCER_ROOT}/Project_v3/runs/20261108_V4_native_coordinate_fix_v1')
+plan=dict(source='https://www.nature.com/articles/s41591-024-03376-x',interpretation='exploratory identity sensitivity after prior broad-mural results; same six previously used sections; no claim of exact R4 identity or lineage',parent='prior native QC and author major contains pvl/mural/perivascular/smooth; excludes prior blood EC; does NOT require prior contractile-heavy mural gate',pc_program='>=2 detected among ABCC9,KCNJ8,CSPG4,PDGFRB AND >=1 of ABCC9,KCNJ8; independent of RGS5',pc_low_MYH11='parent AND pc_program AND MYH11 RNA ==0 (not proof of biological absence)',MYH11_contractile='parent AND MYH11>=1 AND >=1 detected among ACTA2,TAGLN,CNN1; includes pc_program-positive intermediate cells, recorded separately',untested='all other parent cells preserved as unresolved; not forced into categories',tests='same 96 settings per state; all192new planned plus old96 joint BH; no direction or threshold selection',thresholds='all independent auxiliary genes >=1 RNA; ESM1/RGS5 positivity1 and2 from previous frozen test plan')
+(O/'plan.json').write_text(json.dumps(plan,indent=2));rows=[];availability=[]
+genes=['ABCC9','KCNJ8','CSPG4','PDGFRB','MYH11','ACTA2','TAGLN','CNN1','NOTCH3','MCAM','HIGD1B','RGS5','ESM1'];states=['pc_low_MYH11','MYH11_contractile']
+for s in states:(O/s).mkdir(exist_ok=True)
+for unit in ['S01','S02','S03','S04','S05','S06']:
+ z=np.load(old/(unit+'_core_PRIVATE.npz'));cf,=P.glob('outputs*/spatial_controls_v1/'+unit+'/cell_identity_view_PRIVATE.tsv.gz');c=pd.read_csv(cf,sep='\t');receipt=json.loads((cf.parent/'complete.json').read_text());f=P/'inputs_direct_v1'/unit/'native_PRIVATE.h5ad';assert hashlib.sha256(f.read_bytes()).hexdigest()==receipt['native_source_file_sha256']
+ a=ad.read_h5ad(f,backed='r');assert hashlib.sha256('\n'.join(a.obs_names.astype(str)).encode()).hexdigest()==receipt['native_cell_axis_SHA256'];names=pd.Index(a.var.gene_symbol.astype(str) if 'gene_symbol' in a.var else a.var_names);ix=sorted(names.get_loc(g) for g in genes if g in names);x=a[:,ix].X;x=x.toarray() if sparse.issparse(x) else x;x=np.expm1(x.astype(float));assert np.allclose(x,np.rint(x),atol=.001,rtol=1e-5);x=np.rint(x);g={n:x[:,j] for j,n in enumerate(names[ix])};a.file.close()
+ availability.extend(dict(section=unit,gene=n,measured=n in g) for n in genes);assert np.array_equal(g['ESM1'],z['ESM1']) and np.array_equal(g['RGS5'],z['RGS5']);assert np.array_equal(c[['x_um','y_um']],z['xy'])
+ parent=c.QC_keep.astype(str).str.lower().eq('true').to_numpy()&c.author_major.str.contains('pvl|mural|perivascular|smooth',case=False,regex=True).to_numpy()&~z['ec']
+ pc=(sum(g[n]>0 for n in ['ABCC9','KCNJ8','CSPG4','PDGFRB'])>=2)&((g['ABCC9']>0)|(g['KCNJ8']>0));contractile=(g['MYH11']>0)&((g['ACTA2']>0)|(g['TAGLN']>0)|(g['CNN1']>0));masks={'pc_low_MYH11':parent&pc&(g['MYH11']==0),'MYH11_contractile':parent&contractile};assert not (masks[states[0]]&masks[states[1]]).any()
+ np.savez_compressed(O/(unit+'_markers_PRIVATE.npz'),counts=x,genes=np.array(names[ix]),parent=parent,pc_program=pc)
+ for state,mask in masks.items():
+  np.savez_compressed(O/state/(unit+'_core_PRIVATE.npz'),xy=z['xy'],depth=z['depth'],ec=z['ec'],mural=mask,ESM1=z['ESM1'],RGS5=z['RGS5'])
+  for k in [1,2]:rows.append(dict(section=unit,state=state,threshold=k,parent=int(parent.sum()),state_cells=int(mask.sum()),RGS5_positive=int((mask&(g['RGS5']>=k)).sum()),ESM1_EC=int((z['ec']&(g['ESM1']>=k)).sum()),overlap_old_mural=int((mask&z['mural']).sum()),pc_program_in_state=int((mask&pc).sum()),unresolved_parent=int((parent&~masks[states[0]]&~masks[states[1]]).sum())))
+ print(unit,'qualified',flush=True)
+pd.DataFrame(rows).to_csv(O/'qualification.tsv',sep='\t',index=False);pd.DataFrame(availability).to_csv(O/'marker_availability.tsv',sep='\t',index=False);(O/'preparation_complete.json').write_text(json.dumps(dict(status='complete_native_hash_axis_marker_and_state_qualification',states=states,planned_new_tests=192),indent=2))

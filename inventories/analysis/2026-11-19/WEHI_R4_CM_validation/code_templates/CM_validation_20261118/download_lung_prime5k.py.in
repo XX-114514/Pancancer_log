@@ -1,0 +1,25 @@
+from pathlib import Path
+import requests,hashlib,json,time
+import h5py,pandas as pd,numpy as np
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'sources/lung_prime5k_10x';O.mkdir(parents=True,exist_ok=True)
+prefix='https://cf.10xgenomics.com/samples/xenium/3.0.0/Xenium_Prime_Human_Lung_Cancer_FFPE/Xenium_Prime_Human_Lung_Cancer_FFPE_';s=requests.Session();s.trust_env=False;files=[]
+for name in ['gene_panel.json','cell_feature_matrix.h5','cells.csv.gz']:
+ p=O/name
+ if p.exists():
+  previous=json.loads((O/'download_progress.json').read_text());record,=[v for v in previous if v['file']==name];assert p.stat().st_size==record['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==record['sha256'];files.append(record);print(name,'existing receipt hash verified',flush=True);continue
+ tmp=O/(name+'.partial');assert not tmp.exists(),'Do not overwrite partial download without inspection'
+ with s.get(prefix+name,stream=True,timeout=(20,60)) as r:
+  r.raise_for_status();h=hashlib.sha256();n=0
+  with tmp.open('xb') as f:
+   for chunk in r.iter_content(1024*1024):
+    if chunk:f.write(chunk);h.update(chunk);n+=len(chunk)
+  length=r.headers.get('content-length');assert length is None or n==int(length)
+  files.append(dict(file=name,url=prefix+name,bytes=n,sha256=h.hexdigest(),content_type=r.headers.get('content-type'),etag=r.headers.get('etag')))
+ tmp.replace(p);(O/'download_progress.json').write_text(json.dumps(files,indent=2));print(name,n,'downloaded',flush=True)
+panel=json.loads((O/'gene_panel.json').read_text());print('panel_top_keys',list(panel),flush=True)
+with h5py.File(O/'cell_feature_matrix.h5') as f:
+ m=f['matrix'];shape=tuple(map(int,m['shape'][:]));barcodes=m['barcodes'].asstr()[:];genes=m['features/name'].asstr()[:];types=m['features/feature_type'].asstr()[:];print('matrix',shape,'feature_types',pd.Series(types).value_counts().to_dict(),flush=True)
+ assert shape[1]==278328 and len(set(barcodes))==len(barcodes);assert len(set(genes))==len(genes);assert np.isfinite(m['data'][:]).all() and (m['data'][:]>=0).all()
+c=pd.read_csv(O/'cells.csv.gz');assert c.cell_id.is_unique and len(c)==len(barcodes) and set(c.cell_id)==set(barcodes);assert np.isfinite(c[['x_centroid','y_centroid']]).all().all();coverage={g:bool(g in set(genes[types=='Gene Expression'])) for g in ['ESM1','RGS5','ABCC9','KCNJ8','CSPG4','PDGFRB','MYH11','ACTA2','TAGLN','CNN1','PECAM1','VWF','CDH5','KDR','EMCN','FOLR2','CD68','C1QA','ACKR1','PI16']}
+proof=dict(status='downloaded_and_h5_csv_barcode_coordinate_qualified_NOT_ANALYZED',official_page='https://www.10xgenomics.com/datasets/xenium-human-lung-cancer-post-xenium-technote',download_host='official cf.10xgenomics.com; candidate individual paths verified HTTP200 and parsed formats',experiment=2,donors=1,cells=len(c),matrix_shape=shape,panel_top_keys=list(panel),marker_coverage=coverage,files=files,license='CC BY 4.0 per official dataset page',caveats='single donor; no author cell annotations downloaded; prior-use inventory found different V1 addon dataset, not thisPrime5K; no claim of untouched external validation; ETag recorded not interpreted as MD5')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

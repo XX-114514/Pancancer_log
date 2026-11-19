@@ -1,0 +1,49 @@
+{
+  "status": "FROZEN_BEFORE_COX_MODELS",
+  "endpoints": [
+    "OS",
+    "PFI"
+  ],
+  "endpoint_policy": "Table3 unstarred recommendation only; no caution endpoints in primary fits; PRAD OS excluded",
+  "models": {
+    "base": [
+      "age10",
+      "sex"
+    ],
+    "stage": [
+      "age10",
+      "sex",
+      "stage_late"
+    ],
+    "composition": [
+      "age10",
+      "sex",
+      "purity10",
+      "LF10"
+    ],
+    "stage_composition": [
+      "age10",
+      "sex",
+      "stage_late",
+      "purity10",
+      "LF10"
+    ]
+  },
+  "score": "continuous HR per one SD of frozen module score in all nonredacted primary patients of same cancer, before endpoint/complete-case filtering; genes and direction unchanged",
+  "branches": [
+    "original_network_members",
+    "all_W_nodes_previous_recipe"
+  ],
+  "modules": 15,
+  "min_patients": 100,
+  "min_events": 30,
+  "min_events_per_coefficient": 10,
+  "stage": "strict Roman I-IV with optional A/B/C and 1/2 substage; early I/II versus late III/IV; per cancer pathologic stage if >=50% interpretable else clinical stage if >=50% else unavailable; no patient-level fallback; raw fields and source retained; IS/Stage X/discrepancy/unknown/I-II NOS excluded",
+  "time": "curated OS.time/PFI.time in days from initial diagnosis, finite >0; event exactly 0/1; PFI inclusive TCGA-CDR definition, not treatment-specific PFS",
+  "fit": "R survival coxph Efron, no penalizer, no intercept, ordinary model covariance, unique patients, iter.max=100; warnings/errors/nonfinite or rank deficient fits are unqualified",
+  "PH": "cox.zph km transform, global and each term; retain flags even when primary association significant; nonsignificant PH test does not prove proportionality",
+  "multiplicity": "joint BH of CM Wald p over all successful cancers/endpoints/models/branches/modules; separate BH across all PH term/global diagnostic tests; failures and exclusions retained",
+  "constants": "omit constant covariates explicitly and record names; reject constant score or rank deficient design; require at least 10 events per retained coefficient",
+  "validation": "all source/score keys and redaction audit; independent Python PHReg Efron refit and numerical p/BH replay before interpretation",
+  "limitations": "exploratory previously used cohort, no external prognosis validation; complete-case selection and compositional conditioning may bias associations; no treatment-specific prediction; stage absent in several cancers and binary stage omits clinical detail; PH violations require follow-up, not a stable HR claim"
+}

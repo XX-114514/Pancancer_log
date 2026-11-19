@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CLINICAL_DESIGN_ALL_EFRON_COX_COEFFICIENTS_SE_LOGLIK_P_AND_JOINT_BH",
+  "models_replayed": 3690,
+  "max_beta_error": 7.94073812149243e-07,
+  "max_se_error": 3.9145291852449304e-07,
+  "max_loglik_error": 6.59383658785373e-12,
+  "seconds": 307.30626368522644,
+  "PH_scope": "R cox.zph statistic-to-p, term/global linkage and BH readback only; PH score statistic itself not independently recomputed",
+  "association_sha256": "d8bf2b4e9d8c4c7266fcb2bd99c7f5b62ad47ef12f11719d6ead1482c5f23903",
+  "limitations": "numerical and linkage audit, not external prognostic validity; no proof of proportional hazards from nonsignificant diagnostic"
+}

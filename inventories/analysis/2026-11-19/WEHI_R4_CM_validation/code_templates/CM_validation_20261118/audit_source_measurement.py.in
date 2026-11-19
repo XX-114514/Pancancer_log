@@ -1,0 +1,67 @@
+"""Source-specific gene/complex coverage and feasible CM12 comparisons."""
+from pathlib import Path
+import json,zipfile,hashlib
+import numpy as np,pandas as pd,zarr
+B=Path('${PROJECT_ARCHIVE_ROOT}')
+R=B/'CM_validation_20261118_v1'
+mp,=B.glob('r3_handoff_20261108/*/p2/measured_gene_mask_by_source.tsv.gz')
+mask=pd.read_csv(mp,sep='\t',index_col=0)
+q=pd.read_csv(R/'inputs/R4_communication_cells_PRIVATE.tsv.gz',sep='\t',dtype={'unit':str})
+sources=sorted(q.source.unique());assert set(sources)<=set(mask.columns)
+z=zarr.open_group(str(B/'zarr/tme_v1.zarr'),mode='r');native=set(z['var/_index'][:])
+mask=mask.loc[mask.index.isin(native),sources]
+assert mask.isin([True,False,0,1]).all().all()
+mask=mask.astype(bool)
+common=set(pd.read_csv(R/'inputs/common_genes.tsv',sep='\t').gene)
+assert common==set(mask.index[mask.all(axis=1)])
+db=R/'sources/cellphonedb_v4.1.0.zip'
+with zipfile.ZipFile(db) as f:
+ g=pd.read_csv(f.open('gene_table.csv'));p=pd.read_csv(f.open('protein_table.csv'))
+ cc=pd.read_csv(f.open('complex_composition_table.csv'));it=pd.read_csv(f.open('interaction_table.csv'))
+gp=g.merge(p[['id_protein','protein_multidata_id']],left_on='protein_id',right_on='id_protein',validate='many_to_one')
+symbols={int(k):set(v.hgnc_symbol.dropna()) for k,v in gp.groupby('protein_multidata_id')}
+components={int(k):set(v.protein_multidata_id) for k,v in cc.groupby('complex_multidata_id')}
+proteins=set(p.protein_multidata_id)
+def needed(mid):
+ return {int(mid)} if mid in proteins else components[int(mid)]
+requirements=[needed(row.multidata_1_id)|needed(row.multidata_2_id) for row in it.itertuples()]
+def eligibility(genes):
+ available={k for k,v in symbols.items() if v&genes}
+ return np.array([r<=available for r in requirements])
+baseline=eligibility(common);coverage=[];matrix=pd.DataFrame({'id_cp_interaction':it.id_cp_interaction})
+markers=['ESM1','RGS5','FOLR2','ACKR1','PI16','KDR','PECAM1','VWF','PDGFRB','CSPG4','MCAM','ACTA2','PDGFB','VEGFA','VEGFB','ANGPT1','ANGPT2','TEK','CXCL12','CXCR4']
+markerrows=[]
+for source in sources:
+ genes=set(mask.index[mask[source]]);eligible=eligibility(genes);matrix[source]=eligible
+ coverage.append(dict(source=source,known_measured_genes_in_lineage_mask=len(genes),complete_interactions_lower_bound=int(eligible.sum()),
+                      recovered_vs_all_source_intersection=int((eligible&~baseline).sum()),
+                      genes_lost_by_this_source=int((~mask[source]&mask.drop(columns=source).all(axis=1)).sum())))
+ for gene in markers:markerrows.append(dict(source=source,gene=gene,measured=(gene in genes) if gene in mask.index else None,in_common_intersection=gene in common,
+                                           measurement_status=('MEASURED' if gene in genes else 'NOT_MEASURED_IN_SHARD' if gene in mask.index else 'UNKNOWN_OUTSIDE_LINEAGE_MASK')))
+pd.DataFrame(coverage).to_csv(R/'source_CPDB_coverage.tsv',sep='\t',index=False)
+matrix.to_csv(R/'source_CPDB_interaction_measurement.tsv.gz',sep='\t',index=False)
+pd.DataFrame(markerrows).to_csv(R/'source_vascular_marker_measurement.tsv',sep='\t',index=False)
+# Match high/low inside original identities, never substitute pooled cell counts for units.
+counts=q.groupby(['name','source','cancer','unit','CMT'],observed=True).size().rename('cells').reset_index()
+assert not counts.groupby(['name','unit'],observed=True).size().gt(1).any()
+# Use the frozen actual node labels rather than guessing names.
+members=pd.read_csv(R/'R4_member_comparison_eligibility.tsv',sep='\t')
+nodes=members.loc[members.cm.eq('CM12'),'node'].tolist()
+rows=[]
+for node in nodes:
+ d=counts[counts.name.eq(node)&counts.cells.ge(10)].copy();d['high']=d.CMT.eq('CM12')
+ for (source,cancer),v in d.groupby(['source','cancer']):
+  nh=int(v.high.sum());nl=int((~v.high).sum())
+  rows.append(dict(node=node,source=source,cancer=cancer,high_units=nh,low_units=nl,
+                   eligible_ge3_each=nh>=3 and nl>=3,patient_verified=False))
+d=pd.DataFrame(rows).merge(pd.DataFrame(coverage),on='source',validate='many_to_one')
+d.to_csv(R/'CM12_source_specific_feasibility.tsv',sep='\t',index=False)
+proof=dict(status='PASS_SOURCE_MASK_AND_UNIT_COMPARISON_AUDIT',sources=len(sources),common_genes=len(common),
+           common_complete_interactions=int(baseline.sum()),source_complete_interaction_lower_bound_range=[min(x['complete_interactions_lower_bound'] for x in coverage),max(x['complete_interactions_lower_bound'] for x in coverage)],
+           CM12_member_source_cancer_comparisons_ge3_each=int(d.eligible_ge3_each.sum()),
+           mask_sha256=hashlib.sha256(mp.read_bytes()).hexdigest(),
+           source_coverage_is_lower_bound=True,
+           mask_scope='lineage-object gene union only, NOT the full native shard feature universe; absent mask rows are unknown, not unmeasured',
+           limitations='coverage is limited to supplied mask genes; source counts are lower bounds; no source-specific expression extraction or communication result yet; units are not confirmed patients')
+(R/'source_measurement_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))
+print(d[d.eligible_ge3_each & d.node.str.contains('ESM1|RGS5')].to_string(index=False))

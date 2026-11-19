@@ -1,0 +1,12 @@
+{
+  "status": "PIECEWISE_MODELS_WRITTEN_PENDING_INDEPENDENT_AUDIT",
+  "planned": 3690,
+  "fitted": 3150,
+  "status_counts": {
+    "FIT_OK": 3150,
+    "INSUFFICIENT_PERIOD_EVENTS": 540
+  },
+  "joint_tests": 13140,
+  "time_change_joint_q05": 9,
+  "limitations": "Exploratory fixed-cut sensitivity, not optimized change point, treatment response or causal effect. Other covariates still assumed proportional; this does not fix all global PH violations. Late effects conditional on survival/risk-set composition. No external validation or prediction claim."
+}

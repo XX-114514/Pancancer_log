@@ -1,0 +1,354 @@
+[
+  {
+    "cohort": "riaz2017",
+    "metadata_path": "${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/riaz2017/GSE91061_series_matrix.txt.gz",
+    "metadata_sha256": "f3ebd04d019afab9f12af0b92cfcafa516bb2b170f5b45d22d5e330e2eebdca0",
+    "GEO_samples": 109,
+    "fields": {
+      "response": {
+        "n_values": 109,
+        "unique_values": 4,
+        "missing": 4,
+        "value_counts": {
+          "PD": 48,
+          "SD": 34,
+          "UNK": 4,
+          "PRCR": 23
+        }
+      },
+      "tissue": {
+        "n_values": 109,
+        "unique_values": 1,
+        "missing": 0
+      },
+      "visit (pre or on treatment)": {
+        "n_values": 109,
+        "unique_values": 2,
+        "missing": 0,
+        "value_counts": {
+          "Pre": 51,
+          "On": 58
+        }
+      }
+    },
+    "eligibility": "not_yet_expression_joined_or_patient_baseline_verified"
+  },
+  {
+    "cohort": "hugo2016",
+    "metadata_path": "${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/hugo2016/GSE78220_series_matrix.txt.gz",
+    "metadata_sha256": "b2d7829dac364e7773390255252adb5c42f07104136a1f93d2a767e9522c086f",
+    "GEO_samples": 28,
+    "fields": {
+      "age (yrs)": {
+        "n_values": 28,
+        "unique_values": 22,
+        "missing": 0
+      },
+      "anatomical location": {
+        "n_values": 28,
+        "unique_values": 25,
+        "missing": 0
+      },
+      "anti-pd-1 response": {
+        "n_values": 28,
+        "unique_values": 3,
+        "missing": 0,
+        "value_counts": {
+          "Progressive Disease": 13,
+          "Partial Response": 10,
+          "Complete Response": 5
+        }
+      },
+      "biopsy time": {
+        "n_values": 28,
+        "unique_values": 2,
+        "missing": 0,
+        "value_counts": {
+          "pre-treatment": 27,
+          "on-treatment": 1
+        }
+      },
+      "braf": {
+        "n_values": 28,
+        "unique_values": 6,
+        "missing": 14
+      },
+      "disease status": {
+        "n_values": 28,
+        "unique_values": 4,
+        "missing": 0
+      },
+      "gender": {
+        "n_values": 28,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "nf1": {
+        "n_values": 28,
+        "unique_values": 7,
+        "missing": 22
+      },
+      "nras": {
+        "n_values": 28,
+        "unique_values": 6,
+        "missing": 22
+      },
+      "overall survival (days)": {
+        "n_values": 28,
+        "unique_values": 26,
+        "missing": 1
+      },
+      "patient id": {
+        "n_values": 28,
+        "unique_values": 27,
+        "missing": 0
+      },
+      "previous mapki": {
+        "n_values": 28,
+        "unique_values": 2,
+        "missing": 0,
+        "value_counts": {
+          "N": 16,
+          "Y": 12
+        }
+      },
+      "stranded/unstranded rnaseq": {
+        "n_values": 28,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "study site": {
+        "n_values": 28,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "tissue": {
+        "n_values": 28,
+        "unique_values": 1,
+        "missing": 0
+      },
+      "treatment": {
+        "n_values": 28,
+        "unique_values": 1,
+        "missing": 0,
+        "value_counts": {
+          "Pembrolizumab": 28
+        }
+      },
+      "vital status": {
+        "n_values": 28,
+        "unique_values": 2,
+        "missing": 0
+      }
+    },
+    "eligibility": "not_yet_expression_joined_or_patient_baseline_verified"
+  },
+  {
+    "cohort": "jung2019_nsclc",
+    "metadata_path": "${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/jung2019_nsclc/series_matrix.txt.gz",
+    "metadata_sha256": "df7dfda28692cca0daf5797cc6e39c8f6c0d5505506371f218526dd5e3cf37ef",
+    "GEO_samples": 27,
+    "fields": {
+      "age": {
+        "n_values": 27,
+        "unique_values": 18,
+        "missing": 0
+      },
+      "gender": {
+        "n_values": 27,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "pfs.time": {
+        "n_values": 27,
+        "unique_values": 26,
+        "missing": 0
+      },
+      "progression-free survival (pfs)": {
+        "n_values": 27,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "subject status": {
+        "n_values": 27,
+        "unique_values": 1,
+        "missing": 0
+      },
+      "tissue": {
+        "n_values": 27,
+        "unique_values": 1,
+        "missing": 0
+      }
+    },
+    "eligibility": "not_yet_expression_joined_or_patient_baseline_verified"
+  },
+  {
+    "cohort": "rose2021_urothelial",
+    "metadata_path": "${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/rose2021_urothelial/series_matrix.txt.gz",
+    "metadata_sha256": "8f01d22b604ba89d965e02751e080d50448fbf7d14f4279cdc59547f3c328bb9",
+    "GEO_samples": 90,
+    "fields": {
+      "age": {
+        "n_values": 90,
+        "unique_values": 34,
+        "missing": 0
+      },
+      "alive": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "d.stage.at.diagnosis": {
+        "n_values": 90,
+        "unique_values": 4,
+        "missing": 1
+      },
+      "duration.of.io.tx": {
+        "n_values": 90,
+        "unique_values": 56,
+        "missing": 0
+      },
+      "ecog": {
+        "n_values": 90,
+        "unique_values": 5,
+        "missing": 18
+      },
+      "ethnicity": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "fgfr.mutation.yn": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "gender": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "histology": {
+        "n_values": 90,
+        "unique_values": 3,
+        "missing": 0
+      },
+      "histology.other.description": {
+        "n_values": 90,
+        "unique_values": 18,
+        "missing": 62
+      },
+      "io.lot": {
+        "n_values": 90,
+        "unique_values": 4,
+        "missing": 0
+      },
+      "io.response": {
+        "n_values": 90,
+        "unique_values": 5,
+        "missing": 1,
+        "value_counts": {
+          "CR": 7,
+          "SD": 4,
+          "PD": 69,
+          "PR": 9,
+          "NA": 1
+        }
+      },
+      "io.therapy": {
+        "n_values": 90,
+        "unique_values": 5,
+        "missing": 0,
+        "value_counts": {
+          "Atezolizumab": 35,
+          "Pembrolizumab": 47,
+          "Nivolumab": 5,
+          "Durvalumab": 2,
+          "Avelumab": 1
+        }
+      },
+      "met.bone.cumul": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "met.liver.cumul": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "met.lung.cumul": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "met.other.cumul": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "n.stage.at.diagnosis": {
+        "n_values": 90,
+        "unique_values": 6,
+        "missing": 1
+      },
+      "overall survival": {
+        "n_values": 90,
+        "unique_values": 81,
+        "missing": 0
+      },
+      "pack.years": {
+        "n_values": 90,
+        "unique_values": 35,
+        "missing": 0
+      },
+      "pfs": {
+        "n_values": 90,
+        "unique_values": 71,
+        "missing": 1
+      },
+      "primary tumor location": {
+        "n_values": 90,
+        "unique_values": 2,
+        "missing": 0
+      },
+      "progressed": {
+        "n_values": 90,
+        "unique_values": 3,
+        "missing": 1
+      },
+      "race": {
+        "n_values": 90,
+        "unique_values": 4,
+        "missing": 3
+      },
+      "smoking status": {
+        "n_values": 90,
+        "unique_values": 4,
+        "missing": 0
+      },
+      "t.stage.at.diagnosis": {
+        "n_values": 90,
+        "unique_values": 6,
+        "missing": 1
+      },
+      "tmb": {
+        "n_values": 90,
+        "unique_values": 41,
+        "missing": 1
+      },
+      "tmb.interpretation": {
+        "n_values": 90,
+        "unique_values": 4,
+        "missing": 0,
+        "value_counts": {
+          "High": 20,
+          "Low": 35,
+          "Intermediate": 34,
+          "FAIL": 1
+        }
+      }
+    },
+    "eligibility": "not_yet_expression_joined_or_patient_baseline_verified"
+  }
+]

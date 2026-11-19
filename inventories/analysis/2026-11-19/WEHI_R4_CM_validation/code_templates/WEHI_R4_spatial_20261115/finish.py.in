@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,time,subprocess,sys,os,tarfile,hashlib,fcntl
+R=Path('${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1')
+lock=(R/'finish.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+deadline=time.time()+8*3600
+def wait_for(path):
+    while not path.exists():
+        state=json.loads((R/'STATUS.json').read_text()) if (R/'STATUS.json').exists() else {}
+        if state.get('state')=='failed':raise RuntimeError(state)
+        if time.time()>deadline:raise TimeoutError(str(path))
+        time.sleep(30)
+def run(name):
+    with (R/'logs'/f'{name}.log').open('w') as f:p=subprocess.run([sys.executable,str(R/'code'/f'{name}.py')],stdout=f,stderr=subprocess.STDOUT)
+    assert p.returncode==0,(name,p.returncode)
+try:
+    wait_for(R/'reference/complete.json');run('separability')
+    for key in ['S001','S002','S037','S038']:wait_for(R/'sections'/key/'independent_audit.json')
+    wait_for(R/'cosmx_broad/complete.json');run('summarize')
+    files=[p for p in (R/'review').rglob('*') if p.is_file()]
+    manifest={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files};(R/'review_manifest.json').write_text(json.dumps(manifest,indent=2))
+    with tarfile.open(R/'review_delivery.tar.gz','w:gz') as t:
+        for p in files+[R/'review_manifest.json',R/'plan.json',R/'inputs/Visium_source_receipt.json',R/'reference/preparation.json',R/'reference/complete.json',R/'reference/separability_complete.json']:
+            t.add(p,arcname=str(p.relative_to(R)),recursive=False)
+    (R/'DELIVERY_STATUS.json').write_text(json.dumps({'status':'complete','review_files':len(files),'archive_sha256':hashlib.sha256((R/'review_delivery.tar.gz').read_bytes()).hexdigest(),'completed_epoch':time.time()},indent=2))
+except Exception as e:
+    (R/'DELIVERY_STATUS.json').write_text(json.dumps({'status':'failed','error':str(e),'epoch':time.time()},indent=2));raise

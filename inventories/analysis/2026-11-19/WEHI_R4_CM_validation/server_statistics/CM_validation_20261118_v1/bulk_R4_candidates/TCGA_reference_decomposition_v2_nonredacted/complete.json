@@ -1,0 +1,12 @@
+{
+  "status": "EXACT_SCORE_DECOMPOSITION_AND_DESCRIPTIVE_ASSOCIATIONS_PENDING_INDEPENDENT_AUDIT",
+  "scored_patients": 9120,
+  "score_rows": 273600,
+  "components": 4,
+  "maximum_full_score_reconstruction_error": 6.217248937900877e-15,
+  "clinical_descriptive_rows": 4500,
+  "new_P_values": 0,
+  "signature_sha256": "98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2",
+  "reference_sha256": "d08cd772afb6360f92bf7c0ddfb1f726cfaacba316dd95207a8ec467dfa81061",
+  "limitations": "Reference attribution not measured lineage expression or cell abundance. Shared genes remain shared; not immune-free scores, causal mediation, independent effects or clinical validation. Prior reference trained on inherited labels; no external validation."
+}

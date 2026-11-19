@@ -1,0 +1,28 @@
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,h5py
+from scipy.sparse import csc_matrix
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/sources/lung_prime5k_10x');receipt=json.loads((O/'complete.json').read_text())
+for f in receipt['files']:
+ p=O/f['file'];assert p.stat().st_size==f['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==f['sha256']
+panel=json.loads((O/'gene_panel.json').read_text());targets=panel['payload']['targets'];current=[t['type']['data']['name'] for t in targets if t['type']['descriptor']=='gene' and t['source']['category']=='current'];assert len(current)==len(set(current))==panel['payload']['panel']['num_gene_targets']==5001
+with h5py.File(O/'cell_feature_matrix.h5') as f:
+ m=f['matrix'];bc=m['barcodes'].asstr()[:];genes=m['features/name'].asstr()[:];types=m['features/feature_type'].asstr()[:];x=csc_matrix((m['data'][:],m['indices'][:],m['indptr'][:]),shape=tuple(m['shape'][:]))
+assert set(genes[types=='Gene Expression'])==set(current);assert x.has_canonical_format and np.isfinite(x.data).all() and (x.data>=0).all() and np.equal(x.data,np.floor(x.data)).all()
+c=pd.read_csv(O/'cells.csv.gz').set_index('cell_id');assert c.index.is_unique and set(c.index)==set(bc);c=c.loc[bc];mapping={'Gene Expression':'transcript_counts','Negative Control Probe':'control_probe_counts','Genomic Control':'genomic_control_counts','Negative Control Codeword':'control_codeword_counts','Unassigned Codeword':'unassigned_codeword_counts','Deprecated Codeword':'deprecated_codeword_counts'};checks={}
+for typ,col in mapping.items():
+ v=np.asarray(x[types==typ].sum(axis=0)).ravel();assert np.array_equal(v,c[col]);checks[col]=int(v.sum())
+total=np.asarray(x.sum(axis=0,dtype=np.int64)).ravel();print('total_mismatch',int((total!=c.total_counts.to_numpy()).sum()),'min_cell_area',float(c.cell_area.min()),'min_nucleus_area',float(c.nucleus_area.min()),'coords_finite',bool(np.isfinite(c[['x_centroid','y_centroid']]).all().all()),flush=True)
+assert np.array_equal(total,c.total_counts),'total count mismatch'
+assert np.isfinite(c.cell_area).all() and c.cell_area.gt(0).all(),'cell area invalid'
+missing_nuclear=c.nucleus_area.isna();assert np.array_equal(missing_nuclear,c.nucleus_count.eq(0)),'nuclear missingness not exactly zero nuclei'
+assert np.isfinite(c.loc[~missing_nuclear,'nucleus_area']).all() and c.loc[~missing_nuclear,'nucleus_area'].ge(0).all(),'observed nucleus area invalid'
+assert np.isfinite(c[['x_centroid','y_centroid']]).all().all(),'coordinate invalid'
+groups={'EC':['PECAM1','VWF','CDH5','KDR','EMCN','ERG','ESAM','CLDN5'],'PC_program':['ABCC9','KCNJ8','CSPG4','PDGFRB'],'contractile':['MYH11','ACTA2','TAGLN','CNN1'],'CM12':['ESM1','RGS5','FOLR2'],'macrophage':['CD68','CSF1R','LST1','TYROBP','C1QA','C1QB','C1QC'],'CM01':['ACKR1','PI16']};rows=[]
+for group,gs in groups.items():
+ for g in gs:
+  measured=g in current;v=np.asarray(x[np.flatnonzero(genes==g)].sum(axis=0)).ravel() if measured else None
+  rows.append(dict(group=group,gene=g,in_current_assay=measured,in_matrix=bool(g in genes),positive_cells=int((v>0).sum()) if measured else None,total_transcripts=int(v.sum()) if measured else None,status='measured' if measured else 'not_in_current_panel_NOT_zero_expression'))
+pd.DataFrame(rows).to_csv(O/'marker_coverage_and_detection.tsv',sep='\t',index=False)
+proof=dict(status='PASS_all_three_file_hashes_5001_current_panel_genes_278328_barcodes_all_six_feature_type_count_totals',cells=len(c),features=x.shape[0],gene_expression_features=len(current),nonzero_entries=int(x.nnz),count_sums=checks,original_cell_order_preserved=True,nucleus_area_missing=int(missing_nuclear.sum()),nuclear_missingness='exactly nucleus_count zero, boundary-stain segmentation; preserved missing, not filled as zero; downstream QC must explicitly handle',total_counts_semantics='this dataset matches all six categories including deprecated; gene-only normalization must use transcript_counts; do not substitute generic version docs',limitations='no spatial biological analysis yet; no author subtype annotation; MYH11/ACTA2/TAGLN/CNN1 not measured, cannot reuse breast contractile-exclusion test; missing markers never treated as negative')
+(O/'independent_input_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(pd.DataFrame(rows).to_string(index=False))

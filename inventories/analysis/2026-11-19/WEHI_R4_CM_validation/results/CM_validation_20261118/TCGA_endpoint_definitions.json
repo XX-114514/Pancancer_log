@@ -1,0 +1,30 @@
+{
+  "status": "PRIMARY_SOURCE_ENDPOINT_DEFINITIONS_REVIEWED",
+  "source": "https://sfera.unife.it/bitstream/11392/2437475/4/nihms978596.pdf",
+  "DOI": "10.1016/j.cell.2018.02.052",
+  "pages": [
+    19,
+    20
+  ],
+  "time_unit": "days in supplied TCGA-CDR clinical fields; OS independently crosschecked against explicit day fields",
+  "OS": {
+    "origin": "initial diagnosis",
+    "event": "death from any cause",
+    "censor": "last contact"
+  },
+  "PFI": {
+    "origin": "initial diagnosis",
+    "event": "earliest new tumour event including progression, locoregional recurrence, distant metastasis, new primary tumour, or death with tumour",
+    "censor": "last contact if event-free; death date if died without tumour",
+    "field": "PFI and PFI.time; not PFI.1 or PFI.2",
+    "limitation": "curated inclusive PFI definition, not treatment-specific trial PFS; underlying special-case event dates not fully reconstructed"
+  },
+  "DFI": "not selected for primary analyses; disease-free eligibility differs from OS/PFI",
+  "DSS": "not selected for primary analyses; approximate for most cancers",
+  "source_internal_conflicts": [
+    "PRAD OS Table3 caution versus prose not recommended",
+    "PFI aggregate recommendation counts disagree with literal Table3",
+    "definition paragraph says DLBC PFI unavailable whereas Table3 lists caution; DLBC excluded from primary by recommendation gate"
+  ],
+  "score_revision": "exclude 43 explicitly redacted patients before within-cancer gene standardization; old score and association outputs retained as superseded"
+}

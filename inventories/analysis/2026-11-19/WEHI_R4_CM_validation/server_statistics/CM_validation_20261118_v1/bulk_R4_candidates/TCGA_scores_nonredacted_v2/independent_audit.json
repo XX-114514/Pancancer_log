@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_TCGA_SCORES_INDEPENDENT_PANDAS_REPLAY_AND_OUTCOME_BLIND_COHORT_AUDIT",
+  "patients": 9120,
+  "score_values_checked": 273600,
+  "max_absolute_score_error": 3.552713678800501e-15,
+  "all_32_cancer_gene_standardization_parameters_checked": true,
+  "no_survival_eligibility_filter_in_scoring": true,
+  "score_file_sha256": "92f8bf7415aed929674df8fe000e84cdbd7cfb2ce9f2dea4402e33a117d7a7f1",
+  "scope": "numerical scores and sample membership only; not clinical/biological validity or prediction"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "FULL_30000_EPOCH_SPATIAL_FIT_COMPLETE_PENDING_AUDIT",
+  "UTC_start": "2026-11-18T20:19:13.813927+00:00",
+  "UTC_end": "2026-11-18T21:05:14.874589+00:00",
+  "section_code": "mel4_rep2_N30",
+  "dataset": "Thrane2018_melanoma_legacy_ST",
+  "n_spots": 248,
+  "n_genes": 11126,
+  "n_reference_labels": 50,
+  "N_cells_per_location": 30,
+  "detection_alpha": 20,
+  "epochs_requested": 30000,
+  "epochs_recorded": 30000,
+  "posterior_samples": 1000,
+  "mean_and_q05_exported": true,
+  "ELBO_final": 1970893.0,
+  "coordinate_duplicates": 0,
+  "raw_counts_integer_nonnegative": true,
+  "spot_independence_or_clinical_inference": false,
+  "version": {
+    "torch": "2.5.1.post207",
+    "cell2location": "0.1.5",
+    "scvi": "1.4.1"
+  },
+  "reference_signature_sha256": "e32ca01c6781608d61b5b42bcfa6a5ac9db669fad9b22e2b8ce71a5abec17972"
+}

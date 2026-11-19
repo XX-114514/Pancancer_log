@@ -1,0 +1,29 @@
+group	gene	in_current_assay	in_matrix	positive_cells	total_transcripts	status
+EC	PECAM1	True	True	47153.0	83072.0	measured
+EC	VWF	False	False			not_in_current_panel_NOT_zero_expression
+EC	CDH5	True	True	16463.0	22015.0	measured
+EC	KDR	True	True	10274.0	13098.0	measured
+EC	EMCN	False	False			not_in_current_panel_NOT_zero_expression
+EC	ERG	True	True	8523.0	9559.0	measured
+EC	ESAM	False	False			not_in_current_panel_NOT_zero_expression
+EC	CLDN5	True	True	27744.0	56370.0	measured
+PC_program	ABCC9	True	True	5928.0	6581.0	measured
+PC_program	KCNJ8	True	True	4859.0	5625.0	measured
+PC_program	CSPG4	True	True	6947.0	8973.0	measured
+PC_program	PDGFRB	True	True	25829.0	38362.0	measured
+contractile	MYH11	False	False			not_in_current_panel_NOT_zero_expression
+contractile	ACTA2	False	False			not_in_current_panel_NOT_zero_expression
+contractile	TAGLN	False	False			not_in_current_panel_NOT_zero_expression
+contractile	CNN1	False	False			not_in_current_panel_NOT_zero_expression
+CM12	ESM1	True	True	1748.0	2516.0	measured
+CM12	RGS5	True	True	5587.0	7172.0	measured
+CM12	FOLR2	True	True	7675.0	10245.0	measured
+macrophage	CD68	True	True	33783.0	110629.0	measured
+macrophage	CSF1R	True	True	15140.0	23488.0	measured
+macrophage	LST1	False	False			not_in_current_panel_NOT_zero_expression
+macrophage	TYROBP	False	False			not_in_current_panel_NOT_zero_expression
+macrophage	C1QA	False	False			not_in_current_panel_NOT_zero_expression
+macrophage	C1QB	False	False			not_in_current_panel_NOT_zero_expression
+macrophage	C1QC	False	False			not_in_current_panel_NOT_zero_expression
+CM01	ACKR1	False	False			not_in_current_panel_NOT_zero_expression
+CM01	PI16	True	True	3932.0	8614.0	measured

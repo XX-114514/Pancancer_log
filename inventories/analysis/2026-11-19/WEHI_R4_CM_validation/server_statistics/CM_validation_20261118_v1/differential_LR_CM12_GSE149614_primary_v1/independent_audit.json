@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_PATIENT_DESIGNS_COMPONENT_SCORE_RECONSTRUCTION_PERMUTATION_AND_BH",
+  "pairs": 16,
+  "interaction_pair_rows": 14320,
+  "nonconstant_tests": 1596,
+  "q05": 0,
+  "max_score_contrast_error": 2.220446049250313e-16,
+  "score_table_sha256": "64b7c07c1b0b220196093d03260e3c0a7887609dc230dd1e4c59aa7c5b3e48ab",
+  "scope": "All saved component expressions and patient labels independently reconstructed; all permutations replayed by indexed sums, same prespecified random assignments; explicit BH. Component table mapping to database not independently rederived in this audit; upstream gene normalization audit separate. Cross-CM/source correction pending; not physical communication proof."
+}

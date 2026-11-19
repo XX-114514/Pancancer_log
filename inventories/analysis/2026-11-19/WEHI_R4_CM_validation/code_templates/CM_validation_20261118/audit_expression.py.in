@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,hashlib,zipfile
+import numpy as np,pandas as pd,anndata as ad,zarr,scipy.sparse as sp
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1';O=R/'inputs'
+receipt=json.loads((O/'expression_complete.json').read_text());assert receipt['status']=='EXPRESSION_PREPARED_PENDING_INDEPENDENT_RAW_REPLAY'
+a=ad.read_h5ad(O/'full_common_PRIVATE.h5ad',backed='r');lr=ad.read_h5ad(O/'full_LR_PRIVATE.h5ad',backed='r');glob=ad.read_h5ad(O/'global_1000_PRIVATE.h5ad',backed='r')
+q=pd.read_csv(O/'R4_communication_cells_PRIVATE.tsv.gz',sep='\t',index_col=0,dtype={'unit':str});assert a.obs_names.is_unique and set(a.obs_names)==set(q.index);q=q.loc[a.obs_names]
+for source,target in [('name','subCluster'),('CMT','CMT'),('source','source'),('cancer','cancer'),('unit','unit')]:assert np.array_equal(q[source].astype(str),a.obs[target].astype(str)),target
+z=zarr.open_group(str(B/'zarr/tme_v1.zarr'),mode='r');axis=pd.Index(z['obs/_index'][:]);genes=pd.Index(z['var/_index'][:]);positions=axis.get_indexer(a.obs_names);assert (positions>=0).all() and np.array_equal(positions,a.obs.raw_row)
+mp,=B.glob('r3_handoff_20261108/*/p2/measured_gene_mask_by_source.tsv.gz');mask=pd.read_csv(mp,sep='\t',index_col=0);expected=sorted(set(mask.index[mask[sorted(q.source.unique())].all(axis=1)])&set(genes));assert list(a.var_names)==expected
+assert lr.obs_names.equals(a.obs_names)
+with zipfile.ZipFile(R/'sources/cellphonedb_v4.1.0.zip') as f:dbgenes=set(pd.read_csv(f.open('gene_table.csv')).hgnc_symbol.dropna())
+assert list(lr.var_names)==[g for g in a.var_names if g in dbgenes]
+rng=np.random.default_rng(2026111802);sample=set(rng.choice(a.n_obs,32,replace=False).tolist())
+for cm in sorted(a.obs.CMT.unique()):sample.add(int(rng.choice(np.flatnonzero(a.obs.CMT==cm))))
+mat=z['layers/counts'];ptr=mat['indptr'][:];col=genes.get_indexer(a.var_names);lrcol=a.var_names.get_indexer(lr.var_names);errors=[]
+for i in sorted(sample):
+ row=int(positions[i]);start,end=int(ptr[row]),int(ptr[row+1]);v=np.asarray(mat['data'][start:end]);ix=np.asarray(mat['indices'][start:end]);assert (v>=0).all() and np.allclose(v,np.rint(v));total=float(v.sum());raw=np.zeros(len(genes));np.add.at(raw,ix,v);expected=np.log1p(raw[col]/total*1e4);actual=a[i,:].X.toarray().ravel();assert np.isclose(a.obs.iloc[i].native_total,total,rtol=1e-10);err=float(np.max(np.abs(actual-expected)));errors.append(err);assert np.allclose(actual,expected,atol=2e-6,rtol=2e-6);assert np.allclose(lr[i,:].X.toarray().ravel(),actual[lrcol],atol=1e-7)
+for lo in range(0,a.n_obs,20000):
+ x=a[lo:min(lo+20000,a.n_obs),:].X;assert np.isfinite(x.data).all() and (x.data>=0).all()
+assert glob.obs_names.is_unique and glob.obs_names.isin(a.obs_names).all() and glob.var_names.equals(a.var_names)
+assert glob.obs.subCluster.value_counts().le(1000).all() and glob.obs.subCluster.nunique()==44
+for i in rng.choice(glob.n_obs,20,replace=False):
+ j=a.obs_names.get_loc(glob.obs_names[i]);assert np.allclose(glob[int(i),:].X.toarray(),a[j,:].X.toarray(),atol=1e-7)
+proof={'status':'PASS_independent_exact_cell_metadata_gene_scope_full_matrix_values_and_sampled_native_replay','cells':a.n_obs,'common_genes':a.n_vars,'LR_genes':lr.n_vars,'global_cells':glob.n_obs,'native_rows_replayed':len(sample),'maximum_normalization_error':max(errors),'all_full_matrix_entries_finite_nonnegative':True,'patient_independence':False,'file_sizes':{p.name:p.stat().st_size for p in O.glob('*.h5ad')},'code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()};(R/'expression_independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)
+for x in [a,lr,glob]:x.file.close()

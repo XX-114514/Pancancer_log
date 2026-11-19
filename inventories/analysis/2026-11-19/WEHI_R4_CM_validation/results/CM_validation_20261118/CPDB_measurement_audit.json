@@ -1,0 +1,10 @@
+{
+  "status": "PASS_DATABASE_COMPONENT_MEASUREMENT_AUDIT",
+  "database_sha256": "bac6dc33a959f39a79465e0d09b556094da4e154825e50f1470b909a6a62188c",
+  "interactions": 2923,
+  "all_components_measured": 895,
+  "excluded_missing_components": 2028,
+  "rule": "every partner protein and every complex component must have at least one database-mapped HGNC symbol in the all-source measured gene universe",
+  "scope": "eligibility in the current common-gene analysis input only, not detected expression, complex assembly or interaction significance",
+  "excluded_interpretation": "outside current analysis input, NOT evidence of biological absence or native unmeasured status; the supplied lineage mask is a restricted gene universe"
+}

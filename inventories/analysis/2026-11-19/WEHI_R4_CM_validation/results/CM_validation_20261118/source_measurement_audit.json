@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SOURCE_MASK_AND_UNIT_COMPARISON_AUDIT",
+  "sources": 70,
+  "common_genes": 12563,
+  "common_complete_interactions": 895,
+  "source_complete_interaction_lower_bound_range": [
+    915,
+    936
+  ],
+  "CM12_member_source_cancer_comparisons_ge3_each": 69,
+  "mask_sha256": "79cbe6fb78e47a7c4e58411f025fe3c6024379925b5feec1a47259acc57a58a1",
+  "source_coverage_is_lower_bound": true,
+  "mask_scope": "lineage-object gene union only, NOT the full native shard feature universe; absent mask rows are unknown, not unmeasured",
+  "limitations": "coverage is limited to supplied mask genes; source counts are lower bounds; no source-specific expression extraction or communication result yet; units are not confirmed patients"
+}

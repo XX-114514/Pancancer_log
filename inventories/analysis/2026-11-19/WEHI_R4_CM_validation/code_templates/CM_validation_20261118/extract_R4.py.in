@@ -1,0 +1,34 @@
+from pathlib import Path
+import json,hashlib,zipfile,shutil,time,fcntl,os
+import numpy as np,pandas as pd,scipy.sparse as sp,zarr,anndata as ad
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1';O=R/'inputs';lock=(R/'expression.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+assert not (O/'expression_complete.json').exists()
+assert json.loads((R/'cell_bridge_audit.json').read_text())['status'].startswith('PASS_')
+old=Path('${PANCANCER_ROOT}/Project_v3/runs/20261107_V4_CoVarNet_communication_v1/sources')
+db=old/'cellphonedb_v4.1.0.zip';assert hashlib.sha256(db.read_bytes()).hexdigest()=='bac6dc33a959f39a79465e0d09b556094da4e154825e50f1470b909a6a62188c';shutil.copy2(db,R/'sources'/db.name)
+q=pd.read_csv(O/'R4_communication_cells_PRIVATE.tsv.gz',sep='\t',index_col=0,dtype={'unit':str});assert q.index.is_unique
+z=zarr.open_group(str(B/'zarr/tme_v1.zarr'),mode='r');axis=pd.Index(z['obs/_index'][:]);genes=pd.Index(z['var/_index'][:]);assert axis.is_unique and genes.is_unique
+q['raw_row']=axis.get_indexer(q.index);assert q.raw_row.ge(0).all();q=q.sort_values('raw_row');pos=q.raw_row.to_numpy();assert (np.diff(pos)>0).all()
+mp,=B.glob('r3_handoff_20261108/*/p2/measured_gene_mask_by_source.tsv.gz');mask=pd.read_csv(mp,sep='\t',index_col=0);assert set(q.source)<=set(mask.columns)
+common=sorted(set(mask.index[mask[list(sorted(q.source.unique()))].all(axis=1)])&set(genes));assert len(common)>10000;cols=genes.get_indexer(common)
+with zipfile.ZipFile(db) as f:dbgenes=pd.read_csv(f.open('gene_table.csv')).hgnc_symbol.dropna().unique()
+lrflag=pd.Index(common).isin(dbgenes);pd.DataFrame({'gene':dbgenes,'measured_in_all_retained_sources':pd.Index(dbgenes).isin(common)}).to_csv(R/'CPDB_gene_measurement.tsv',sep='\t',index=False)
+pd.Series(common,name='gene').to_csv(O/'common_genes.tsv',sep='\t',index=False)
+plan={'cells':len(q),'genes':len(common),'LR_genes':int(lrflag.sum()),'sources':int(q.source.nunique()),'normalization':'log1p(1e4 * native gene counts / FULL native row total), before restriction denominator preserved','missing_genes':'excluded not zero imputed','scope':'all 15 R4 CMTs, all 44 identities, no cell cap for formal inputs','status':'extracting','pid':os.getpid()};(R/'expression_plan.json').write_text(json.dumps(plan,indent=2))
+mat=z['layers/counts'];ptr=mat['indptr'][:];blocks=[];totals=[];started=time.time()
+for lo in range(0,len(axis),20000):
+ hi=min(len(axis),lo+20000);a,b=np.searchsorted(pos,[lo,hi])
+ if a==b:continue
+ left,right=int(ptr[lo]),int(ptr[hi]);raw=sp.csr_matrix((mat['data'][left:right],mat['indices'][left:right],ptr[lo:hi+1]-left),shape=(hi-lo,len(genes)))[pos[a:b]-lo]
+ assert np.isfinite(raw.data).all() and (raw.data>=0).all() and np.allclose(raw.data,np.rint(raw.data))
+ total=np.asarray(raw.sum(axis=1)).ravel().astype(float);assert (total>0).all();x=raw[:,cols].astype(np.float32);x.data*=np.repeat(1e4/total,np.diff(x.indptr));np.log1p(x.data,out=x.data);blocks.append(x);totals.append(total)
+ (O/'expression_progress.json').write_text(json.dumps({'pid':os.getpid(),'axis_row':hi,'cells_completed':int(b),'total_cells':len(q),'seconds':time.time()-started,'stage':'extracting'}))
+X=sp.vstack(blocks,format='csr');del blocks;q['native_total']=np.concatenate(totals);q=q.rename(columns={'name':'subCluster'})
+a=ad.AnnData(X,obs=q,var=pd.DataFrame(index=pd.Index(common,name='gene')));a.uns['log1p']={'base':None};(O/'expression_progress.json').write_text(json.dumps({'pid':os.getpid(),'stage':'writing_h5ad','cells_completed':len(q)}))
+a.write_h5ad(O/'full_common_PRIVATE.h5ad',compression='gzip');a[:,lrflag].copy().write_h5ad(O/'full_LR_PRIVATE.h5ad',compression='gzip')
+rng=np.random.default_rng(20261118);ids=[]
+for node in sorted(q.subCluster.unique()):
+ loc=np.flatnonzero(q.subCluster==node);ids.extend(rng.choice(loc,min(1000,len(loc)),replace=False))
+a[np.sort(ids)].copy().write_h5ad(O/'global_1000_PRIVATE.h5ad',compression='gzip')
+plan.update(status='EXPRESSION_PREPARED_PENDING_INDEPENDENT_RAW_REPLAY',seconds=time.time()-started,global_cells=len(ids),raw_row_sha256=hashlib.sha256(pos.tobytes()).hexdigest(),cell_bridge_sha256=hashlib.sha256((O/'R4_communication_cells_PRIVATE.tsv.gz').read_bytes()).hexdigest())
+(O/'expression_complete.json').write_text(json.dumps(plan,indent=2));print(json.dumps(plan),flush=True)

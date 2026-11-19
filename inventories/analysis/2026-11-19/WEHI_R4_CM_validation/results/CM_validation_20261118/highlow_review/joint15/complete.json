@@ -1,0 +1,28 @@
+{
+  "status": "CORRECTION_WRITTEN_PENDING_INDEPENDENT_JOINT_AUDIT",
+  "n_tests": 3253817,
+  "family_counts": {
+    "cell": 1733694,
+    "unit": 1520123
+  },
+  "n_comparisons": 259,
+  "upstream_audits_at_run": {
+    "CM01": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM02": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM03": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM04": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM05": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM06": "PENDING",
+    "CM07": "PENDING",
+    "CM08": "PENDING",
+    "CM09": "PENDING",
+    "CM10": "PENDING",
+    "CM11": "PENDING",
+    "CM12": "PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY",
+    "CM13": "PENDING",
+    "CM14": "PENDING",
+    "CM15": "PENDING"
+  },
+  "all_upstream_audits_complete": false,
+  "limitations": "Exploratory same-identity High=CMT equals CM versus other assigned CMTs. Units not verified independent patients. No differential LR conclusion. Upstream audits tracked separately."
+}

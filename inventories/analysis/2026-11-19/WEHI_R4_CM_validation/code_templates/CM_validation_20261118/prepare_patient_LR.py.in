@@ -1,0 +1,42 @@
+"""Patient-linked sample x identity expression for differential LR analysis."""
+from pathlib import Path
+import json,hashlib
+import pandas as pd,numpy as np,scipy.sparse as sp,anndata as ad
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'patient_LR_v1';O.mkdir(exist_ok=False)
+assert json.loads((R/'expression_independent_audit.json').read_text())['status'].startswith('PASS_')
+assert json.loads((R/'patient_bridge_GEO_v2/independent_audit.json').read_text())['status'].startswith('PASS_')
+u=pd.read_csv(R/'patient_bridge_GEO_v2/source_verified_patient_bridge_PRIVATE.tsv',sep='\t').set_index('unit');u=u[u.patient_identity_source_verified];assert len(u)==80 and u.index.is_unique
+plan=dict(status='PATIENT_LINKED_EXPRESSION_PREPARATION',sources=sorted(u.source.unique()),verified_units=80,unresolved_head_neck_units_excluded=4,
+ aggregation='mean existing log1p(1e4*raw counts/full native cell library) per unit and exact R4 identity, plus nonzero detection fraction; no downsampling, no LR-only library normalization',
+ patient='source-GEO bridge; retain all samples and repeated patients, including cross-CMT patient; do not pool different-CMT units into a patient mean',
+ eligibility='>=10 cells of each partner identity in same unit; >=3 unique patients per high/low group within source x cancer is a feasibility threshold, not proof of adequate inference',
+ scope='all 44 identities, all 15 original network-member pairs, ordered including self; no communication significance or directionality inferred from expression',
+ next='freeze complex and ligand/receptor scoring, patient-cluster or paired resampling accounting for repeated units; source/cancer and sample context sensitivity; joint multiplicity')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+a=ad.read_h5ad(R/'inputs/full_LR_PRIVATE.h5ad');obs=a.obs.copy();keep=obs.unit.astype(str).isin(u.index);x=a.X[keep.to_numpy()].tocsr().astype(np.float64);obs=obs[keep].copy();obs['unit']=obs.unit.astype(str);obs['subCluster']=obs.subCluster.astype(str)
+assert obs.groupby('unit',observed=True).source.nunique().eq(1).all()
+assert obs.source.astype(str).eq(obs.unit.map(u.source)).all() and obs.CMT.astype(str).eq(obs.unit.map(u.CMT)).all()
+keys=pd.MultiIndex.from_frame(obs[['unit','subCluster']]);codes,levels=pd.factorize(keys,sort=True);n=np.bincount(codes);A=sp.csr_matrix((1/n[codes],(codes,np.arange(len(obs)))),shape=(len(levels),len(obs)))
+means=np.asarray((A@x).toarray());positive=x.copy();positive.data=np.ones_like(positive.data);detection=np.asarray((A@positive).toarray());assert np.isfinite(means).all() and (means>=0).all() and (detection>=0).all() and (detection<=1+1e-12).all()
+meta=levels.to_frame(index=False);meta.columns=['unit','node'];meta['cells']=n
+for col in ['source','cancer','CMT','source_patient_key','gsm','GEO_sample_attributes']:meta[col]=meta.unit.map(u[col])
+assert meta.source_patient_key.notna().all();meta.to_csv(O/'unit_node_metadata_PRIVATE.tsv',sep='\t',index=False);pd.Series(a.var_names,name='gene').to_csv(O/'genes.tsv',sep='\t',index=False)
+np.savez_compressed(O/'expression_PRIVATE.npz',mean_log_expression=means,detection_fraction=detection,cells=n)
+# Independent grouping replay for all genes of fixed random unit-node groups.
+rng=np.random.default_rng(2026111901);chosen=rng.choice(len(levels),min(30,len(levels)),replace=False);err=0.
+for i in chosen:
+ b=x[np.flatnonzero(codes==i)];m=np.asarray(b.sum(axis=0)).ravel()/b.shape[0];d=np.asarray((b>0).sum(axis=0)).ravel()/b.shape[0];err=max(err,float(np.max(abs(m-means[i]))),float(np.max(abs(d-detection[i]))));assert np.allclose(m,means[i],atol=1e-12) and np.allclose(d,detection[i],atol=1e-12)
+counts=meta.pivot(index='unit',columns='node',values='cells').fillna(0);members=pd.read_csv(R/'R4_member_comparison_eligibility.tsv',sep='\t');rows=[]
+for cm,g in members.groupby('cm'):
+ nodes=sorted(g.node)
+ for node1 in nodes:
+  for node2 in nodes:
+   if node1 not in counts or node2 not in counts:continue
+   eligible=counts.index[(counts[node1]>=10)&(counts[node2]>=10)];design=u.loc[eligible].copy()
+   for (source,cancer),v in design.groupby(['source','cancer']):
+    high=v.CMT.eq(cm);hp=set(v.loc[high,'source_patient_key']);lp=set(v.loc[~high,'source_patient_key'])
+    rows.append(dict(cm=cm,node1=node1,node2=node2,source=source,cancer=cancer,high_units=int(high.sum()),low_units=int((~high).sum()),high_patients=len(hp),low_patients=len(lp),patients_in_both_groups=len(hp&lp),eligible_patient_count_only=bool(min(len(hp),len(lp))>=3)))
+f=pd.DataFrame(rows);f.to_csv(O/'all15_pair_feasibility.tsv',sep='\t',index=False)
+proof=dict(status='PATIENT_LINKED_UNIT_NODE_EXPRESSION_COMPLETE_WITH_SAMPLED_ALL_GENE_AGGREGATION_REPLAY',cells=len(obs),unit_node_groups=len(meta),genes=a.n_vars,units=meta.unit.nunique(),source_patient_keys=meta.source_patient_key.nunique(),sampled_groups=len(chosen),all_genes_per_sampled_group=True,max_replay_error=err,pair_strata=len(f),feasible_pair_strata=int(f.eligible_patient_count_only.sum()),
+ bridge_sha256=hashlib.sha256((R/'patient_bridge_GEO_v2/source_verified_patient_bridge_PRIVATE.tsv').read_bytes()).hexdigest(),expression_sha256=hashlib.sha256((O/'expression_PRIVATE.npz').read_bytes()).hexdigest(),limitations='feasibility and expression only; repeated patients retained; not differential LR test or biological communication validation')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

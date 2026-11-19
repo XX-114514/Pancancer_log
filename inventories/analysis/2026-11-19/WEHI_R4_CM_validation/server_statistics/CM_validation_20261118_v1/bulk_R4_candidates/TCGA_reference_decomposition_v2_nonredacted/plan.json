@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_BEFORE_CLINICAL_COMPONENT_ASSOCIATIONS",
+  "branches": [
+    "original_network_members",
+    "all_W_nodes_previous_recipe"
+  ],
+  "modules": 15,
+  "groups": [
+    "endothelial",
+    "mural",
+    "other_stromal",
+    "immune"
+  ],
+  "recipe": "For each existing signature gene: reference expression * frozen normalized module node weight; group sum divided by total loading gives four nonnegative fractions. Component score = mean of original within-cancer gene z times attribution fraction. Do not reselect genes or restandardize component scores; sum exactly equals original score.",
+  "qualification": "descriptive component rank association only if among original mapped variable genes in each cancer, mean gene attribution mass >=0.05 and Kish effective genes >=5, outcome-blind; preserve all components for algebra regardless of qualification",
+  "clinical": "LF_single only; complete cases for purity age sex; n>=30. Partial Spearman uses rank component and rank LF residualized against rank purity, rank age and binary sex. No P values or new significance calls.",
+  "additive": "Residualize unranked component scores and rank LF using same covariates; covariance contribution divided by full-score residual SD and LF residual SD. Components sum to full unranked-score/ranked-LF partial Pearson, NOT to full partial Spearman. No covariance-share division near zero.",
+  "limitations": "Reference attribution not measured lineage expression or cell abundance. Shared genes remain shared; not immune-free scores, causal mediation, independent effects or clinical validation. Prior reference trained on inherited labels; no external validation."
+}

@@ -1,0 +1,23 @@
+from pathlib import Path
+import subprocess,json,time,os,fcntl
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/spatial_melanoma')
+E=Path('${ENV_ROOT}')
+lock=(R/'section_queue.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+plan=json.loads((R/'section_plan.json').read_text());assert plan['models']==24
+jobs=json.loads((R/'inputs/section_jobs_PRIVATE.json').read_text());assert len(jobs)==24
+env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='4',OMP_NUM_THREADS='4',PYTHONUNBUFFERED='1',MPLCONFIGDIR=str(R/'mpl_cache'))
+def status(**kw):
+ kw.update(pid=os.getpid(),epoch=time.time());p=R/'section_queue_status.tmp';p.write_text(json.dumps(kw,indent=2));p.replace(R/'section_queue_status.json')
+for job in jobs:
+ key=job['section_code']
+ if (R/'sections'/key).exists():
+  status(stage='NEEDS_INSPECTION',section=key,reason='section output already exists; not overwritten');raise SystemExit(1)
+ for stage,command in [
+  ('fit',[str(E/'scvi/bin/python'),str(R/'code/fit_sections.py'),str(R),'section',key]),
+  ('score',[str(E/'scrna_r/bin/Rscript'),'--vanilla',str(R/'code/score.R'),str(R),str(R/'adapter'),key]),
+  ('audit',[str(E/'scanpy/bin/python'),str(R/'code/score_audit.py'),str(R),str(R/'adapter'),key])]:
+  with (R/'logs'/(key+'_'+stage+'.log')).open('x') as f:
+   p=subprocess.Popen(command,stdout=f,stderr=subprocess.STDOUT,env=env);status(stage=stage,section=key,child_pid=p.pid);rc=p.wait()
+  if rc:
+   status(stage='NEEDS_INSPECTION',section=key,failed_stage=stage,exit_code=rc);raise SystemExit(rc)
+status(stage='ALL_24_FITS_AND_LITERAL_SCORES_AUDITED_PENDING_SPATIAL_SENSITIVITY_AND_INTERPRETATION')

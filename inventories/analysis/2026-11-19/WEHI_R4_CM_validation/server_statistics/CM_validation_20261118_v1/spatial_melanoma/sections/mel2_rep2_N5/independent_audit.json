@@ -1,0 +1,14 @@
+{
+  "status": "PASS_independent_literal_author_scores_60NN_inverse_square_weights_and_full_epoch_posterior_checks",
+  "UTC": "2026-11-19T00:13:12.368582+00:00",
+  "section_code": "mel2_rep2_N5",
+  "dataset": "Thrane2018_melanoma_legacy_ST",
+  "n_spots": 380,
+  "n_CM": 15,
+  "n_scores_checked": 60,
+  "paper_primary_posterior": "means expected abundance; q05 sensitivity",
+  "all_50_reference_labels_retained": true,
+  "all_44_R4_CM_background_nodes_retained": true,
+  "epoch_history_finite_full_30000": true,
+  "no_spot_independence_or_contact_or_mechanism_claim": true
+}

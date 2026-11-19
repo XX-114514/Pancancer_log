@@ -1,0 +1,17 @@
+{
+  "status": "HELDOUT_SYNTHETIC_MIXTURE_DIAGNOSTICS_COMPLETE_PENDING_INTERPRETATION",
+  "heldout_cells": 4300,
+  "mixtures": 1200,
+  "modules": 15,
+  "available_heldout_identities": 43,
+  "unavailable_heldout_identities": [
+    "Plasma_IgD_IGHD"
+  ],
+  "scoring": "mean gene z-score, matching previous local TCGA recipe; gene standardization within each target-CM simulation scenario; >=48/60 variable mapped genes",
+  "simulation": "10 seeded repetitions x 5 member fractions x 200 cells; with replacement; native heldout counts summed; denominator all 12431 reference genes; log2(CPM+.001)",
+  "lineage_control": "same parent-lineage counts held fixed across dose within repetition; unavailable nonmember parents explicitly unassessable",
+  "limitations": "background limited to identities with >=20 heldout cells; modules missing a required member are unassessable; inherited annotation holdout, not patient/source-independent; simulations are not biological replicates; no P values; RNA depth and TME-only mixing do not validate tumour purity, gene length/TPM transfer, clinical prediction or physical niche",
+  "candidates_refit_after_diagnostic": false,
+  "signature_sha256": "98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2",
+  "seconds": 5.427924871444702
+}

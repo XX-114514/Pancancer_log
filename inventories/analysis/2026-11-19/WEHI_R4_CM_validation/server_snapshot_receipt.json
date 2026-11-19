@@ -1,0 +1,12 @@
+{
+  "status": "SERVER_SNAPSHOT_CREATED_NOT_GITHUB_UPLOADED",
+  "snapshot_started_UTC": "2026-11-19T05:25:19.947521+00:00",
+  "snapshot_finished_UTC": "2026-11-19T05:26:19.744363+00:00",
+  "archive": "all_existing_results_snapshot.tar.gz",
+  "archive_bytes": 1258586452,
+  "archive_sha256": "c8bc3998a97a7218566acca05e2c38fcbcc54493321948e30054c370d3aa457c",
+  "inventory_rows": 2431,
+  "archived_files": 2377,
+  "mutable_during_read": [],
+  "limits": "Input/source directories and external symlink targets are indexed but not copied. Historical and incomplete outputs remain labelled by their original receipts. This is a point-in-time snapshot, not final completion or public-release approval."
+}

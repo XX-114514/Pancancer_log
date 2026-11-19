@@ -1,0 +1,15 @@
+{
+  "status": "ASSOCIATIONS_WRITTEN_PENDING_INDEPENDENT_AUDIT",
+  "source_sha256": "5a8268caedbf8dc98a75be0528d583238d7355761d9fc746e42002f223a982d9",
+  "source_records": 10817,
+  "invalid_fraction_records": 1,
+  "methylation_quality_excluded_records": 260,
+  "RNA_sample_quality_excluded": 299,
+  "scored_patients": 9163,
+  "single_aliquot_eligible": 8602,
+  "median_eligible": 8647,
+  "cancer_discordances": 0,
+  "assessed_tests": 1800,
+  "limitations": "exploratory composition associations; no purity adjustment yet; no external validation; RNA scores may reflect immune-cell abundance; not a predictive biomarker",
+  "resolution": "TCGA expression sample IDs are 15 chars; this is sample-level cross-assay matching, not verified same vial/portion"
+}

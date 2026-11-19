@@ -1,0 +1,17 @@
+"""Separate primary-tumour patient contrasts from non-independent tissue repeats."""
+from pathlib import Path
+import json,math
+import pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'patient_LR_liver_design_v1';O.mkdir(exist_ok=False)
+b=pd.read_csv(R/'patient_bridge_GEO_v2/source_verified_patient_bridge_PRIVATE.tsv',sep='\t');b=b[b.source.eq('GSE149614')&b.patient_identity_source_verified].copy();b['tissue']=b.GEO_sample_attributes.map(lambda x:json.loads(x)['tissue']);assert len(b)==13 and b.source_patient_key.nunique()==10
+primary=b[b.tissue.eq('primary tumor')].copy();assert len(primary)==10 and primary.source_patient_key.is_unique;primary[['unit','source_patient_key','CMT','tissue']].to_csv(O/'primary_patient_design_PRIVATE.tsv',sep='\t',index=False)
+repeats=b[b.source_patient_key.duplicated(keep=False)].sort_values(['source_patient_key','tissue']);repeats[['unit','source_patient_key','CMT','tissue']].to_csv(O/'repeated_tissues_PRIVATE.tsv',sep='\t',index=False)
+m=pd.read_csv(R/'patient_LR_v1/unit_node_metadata_PRIVATE.tsv',sep='\t');m=m[m.unit.isin(primary.unit)];members=pd.read_csv(R/'R4_member_comparison_eligibility.tsv',sep='\t');rows=[]
+for cm,g in members.groupby('cm'):
+ for n1 in sorted(g.node):
+  for n2 in sorted(g.node):
+   a=set(m.loc[m.node.eq(n1)&m.cells.ge(10),'unit']);c=set(m.loc[m.node.eq(n2)&m.cells.ge(10),'unit']);u=primary[primary.unit.isin(a&c)];h=int(u.CMT.eq(cm).sum());l=len(u)-h
+   rows.append(dict(cm=cm,node1=n1,node2=n2,high_patients=h,low_patients=l,eligible=min(h,l)>=3,assignments=math.comb(len(u),h)))
+f=pd.DataFrame(rows);f.to_csv(O/'all15_primary_pair_feasibility.tsv',sep='\t',index=False)
+plan=dict(status='PRIMARY_TUMOUR_PATIENT_DESIGN_FROZEN_BEFORE_LR_TESTS',source='GSE149614',units_all_tissues=13,unique_patients=10,primary_tumour_units=10,paired_tissue_patients=3,paired_CMT_discordant_patients=int(sum(g.CMT.nunique()>1 for _,g in repeats.groupby('source_patient_key'))),primary_estimand='CM-high versus other-CM in primary liver tumour only; choose tissue by exact source metadata, not outcome or expression; one primary per patient',repeated_tissue_scope='All non-primary units preserved. Two primary/PVTT pairs retain same CMT; one primary/metastatic-LN pair changes CMT. Only one within-patient high/low discordance, below >=3 paired patients; no paired inferential LR test justified. Mixed tissue pooling cannot supply independent patient replication.',method='Same CPDB-style expression score and >=10cells per identity/sample; >=3patients per high/low; enumerate all patient label assignments (<=252 for10patients); two-sided mean difference',multiplicity='Append all eligible variable liver primary tests to existing44225 renal/headneck tests for joint BH; no pooled source contrast',limitations='Primary-only target does not estimate PVTT/LN or within-patient CM transition effects. Very small patient groups and coarse exact P resolution. No independent confirmation of ESM1/RGS5 core if identity counts fail.')
+plan['eligible_pairs']=int(f.eligible.sum());plan['eligible_modules']=sorted(f.loc[f.eligible,'cm'].unique());(O/'plan.json').write_text(json.dumps(plan,indent=2));print(json.dumps(plan));print(f[f.eligible].groupby('cm').size())

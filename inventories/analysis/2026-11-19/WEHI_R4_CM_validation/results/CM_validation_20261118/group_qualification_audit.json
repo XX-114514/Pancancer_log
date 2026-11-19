@@ -1,0 +1,11 @@
+{
+  "status": "PASS_bijective_declared_unit_serialization_bridge_and_counts_join",
+  "units_assigned": 1194,
+  "all_units_single_source_and_cancer": true,
+  "thresholds": ">=10 cells per node per unit; >=3 units each group within source x cancer; feasibility only, not patient independence",
+  "sha256": {
+    "${PROJECT_ARCHIVE_ROOT}/w2o_annotation_r4_covarnet_k15_20261115_v1/covarnet/unit_metadata.tsv": "6843da58f97c2e5d92cc06e57fdcfef5e03dd72bf8a2a2b7b69124929663582d",
+    "${PROJECT_ARCHIVE_ROOT}/w2o_annotation_r4_covarnet_k15_20261115_v1/covarnet/refined_counts.tsv": "a695c659571a727a70624de718450ff69cfa50403ce8409f7808ee1c51f20d82",
+    "${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/R4_CMT_assignment_PRIVATE.tsv": "dd1f0348781c69a944fc0f032df38df631c26335334ebd4cab97097a45e60799"
+  }
+}

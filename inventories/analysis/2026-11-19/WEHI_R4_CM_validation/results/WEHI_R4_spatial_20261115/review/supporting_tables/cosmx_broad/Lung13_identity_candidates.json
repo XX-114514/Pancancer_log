@@ -1,0 +1,53 @@
+{
+  "panels_measured": {
+    "Blood_EC": [
+      "PECAM1",
+      "VWF",
+      "CDH5"
+    ],
+    "Fibroblast": [
+      "DCN",
+      "LUM",
+      "COL1A1",
+      "COL1A2",
+      "PDGFRA"
+    ],
+    "Mural": [
+      "RGS5",
+      "PDGFRB",
+      "ACTA2",
+      "MYH11"
+    ],
+    "Myeloid": [
+      "TYROBP",
+      "CD68",
+      "CD163"
+    ],
+    "B": [
+      "CD19",
+      "MS4A1",
+      "CD79A"
+    ],
+    "T": [
+      "CD3D",
+      "CD3E",
+      "CD3G"
+    ],
+    "NK": [
+      "NKG7",
+      "GNLY"
+    ]
+  },
+  "raw_QC_cells": 76544,
+  "overlapping_candidate_exclusions": 15586,
+  "candidate_counts": {
+    "Blood_EC": 523,
+    "Fibroblast": 25078,
+    "Mural": 348,
+    "Myeloid": 8908,
+    "B": 257,
+    "T": 1236,
+    "NK": 158
+  },
+  "RNA_genes": 960
+}

@@ -1,0 +1,12 @@
+{
+  "status": "reference_prepared",
+  "cells": 52622,
+  "genes": 12431,
+  "labels": 49,
+  "R4_nodes": 44,
+  "nuisance_labels": 5,
+  "all_counts_integer": true,
+  "all_genes_measured_in_all70_R4_sources": true,
+  "R4_source_SHA": "2be90d97421192ba77c2b7bcb506246baeeb57b3d1fb7a01e76ec3a321e40b86",
+  "reference_sha256": "17919ed492ab744e35500b42b653c7f877f6752c83fdd4471dfeae9c03866daa"
+}

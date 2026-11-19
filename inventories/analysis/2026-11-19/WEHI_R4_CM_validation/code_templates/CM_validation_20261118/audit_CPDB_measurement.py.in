@@ -1,0 +1,37 @@
+"""Independent database structural coverage, before expression significance."""
+from pathlib import Path
+import pandas as pd,json,zipfile,hashlib
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+db=R/'sources/cellphonedb_v4.1.0.zip'
+measured=set(pd.read_csv(R/'inputs/common_genes.tsv',sep='\t').gene)
+with zipfile.ZipFile(db) as z:
+ def read(name):return pd.read_csv(z.open(name+'_table.csv'))
+ g=read('gene');p=read('protein');c=read('complex');cc=read('complex_composition');m=read('multidata');it=read('interaction')
+assert p.id_protein.is_unique and p.protein_multidata_id.is_unique and m.id_multidata.is_unique
+assert g.protein_id.isin(p.id_protein).all()
+gp=g.merge(p[['id_protein','protein_multidata_id']],left_on='protein_id',right_on='id_protein',validate='many_to_one')
+symbols={int(k):set(v.hgnc_symbol.dropna()) for k,v in gp.groupby('protein_multidata_id')}
+proteins=set(p.protein_multidata_id);complexes=set(c.complex_multidata_id)
+assert proteins.isdisjoint(complexes) and cc.protein_multidata_id.isin(proteins).all()
+components={int(k):set(v.protein_multidata_id) for k,v in cc.groupby('complex_multidata_id')}
+def assess(mid):
+ mid=int(mid)
+ required={mid} if mid in proteins else components.get(mid,set())
+ assert required,mid
+ missing=[x for x in sorted(required) if not (symbols.get(x,set())&measured)]
+ return len(required),missing
+rows=[]
+for row in it.itertuples():
+ na,ma=assess(row.multidata_1_id);nb,mb=assess(row.multidata_2_id)
+ rows.append(dict(id_cp_interaction=row.id_cp_interaction,partner_a_required_proteins=na,partner_b_required_proteins=nb,
+                  partner_a_missing_protein_ids=';'.join(map(str,ma)),partner_b_missing_protein_ids=';'.join(map(str,mb)),
+                  all_required_components_measured=not(ma or mb)))
+d=pd.DataFrame(rows);assert d.id_cp_interaction.is_unique
+d.to_csv(R/'CPDB_interaction_measurement.tsv',sep='\t',index=False)
+proof=dict(status='PASS_DATABASE_COMPONENT_MEASUREMENT_AUDIT',database_sha256=hashlib.sha256(db.read_bytes()).hexdigest(),
+           interactions=len(d),all_components_measured=int(d.all_required_components_measured.sum()),
+           excluded_missing_components=int((~d.all_required_components_measured).sum()),
+           rule='every partner protein and every complex component must have at least one database-mapped HGNC symbol in the all-source measured gene universe',
+           scope='eligibility in the current common-gene analysis input only, not detected expression, complex assembly or interaction significance',
+           excluded_interpretation='outside current analysis input, NOT evidence of biological absence or native unmeasured status; the supplied lineage mask is a restricted gene universe')
+(R/'CPDB_measurement_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

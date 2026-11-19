@@ -1,0 +1,8 @@
+{
+  "status": "RIAZ_RESPONSE_PENDING_INDEPENDENT_AUDIT",
+  "baseline_scoring_patients": 51,
+  "Riaz_tests": 240,
+  "Hugo_tests": 120,
+  "joint_ICI_tests": 360,
+  "limitations": "previously used retrospective cohorts, no untreated comparator, small responder count; no response-trained genes/threshold or classifier; not validated treatment-specific prediction"
+}

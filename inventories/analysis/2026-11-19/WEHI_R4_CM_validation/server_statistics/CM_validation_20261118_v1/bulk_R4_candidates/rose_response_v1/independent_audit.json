@@ -1,0 +1,12 @@
+{
+  "status": "PASS_RAW_GEO_CSV_PATIENT_REPEAT_RECONCILIATION_ALL_SCORES_EXACT_U_PERMUTATION_AND_JOINT_BH",
+  "patients": 89,
+  "clinical_samples": 90,
+  "score_values": 5310,
+  "comparisons": 60,
+  "joint_tests": 480,
+  "joint_q05": 0,
+  "max_score_error": 8.881784197001252e-16,
+  "association_sha256": "2e6d11c7f63e91897537721b1a1c71e957f4eedc576087396b94fbfd9ec61de9",
+  "limitation": "Timing remains unknown; numerical/identity audit does not establish pretreatment prediction or prospective external validation."
+}

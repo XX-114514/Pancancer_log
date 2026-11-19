@@ -1,0 +1,55 @@
+"""One audited R4 CMT, matching the author Figure 3g grouping.
+
+Run sequentially for CM01..CM15. This is descriptive cell-level permutation
+inference, not a patient-level High-versus-Low differential interaction test.
+"""
+import sys, json, time, hashlib, fcntl
+from pathlib import Path
+from importlib.metadata import version
+import anndata as ad
+from cellphonedb.src.core.methods import cpdb_statistical_analysis_method as cpdb
+
+R = Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+cm = sys.argv[1]
+assert cm in ['CM%02d' % n for n in range(1, 16)]
+audit = R/'expression_independent_audit.json'
+assert json.loads(audit.read_text())['status'].startswith('PASS_')
+db = R/'sources/cellphonedb_v4.1.0.zip'
+db_hash = hashlib.sha256(db.read_bytes()).hexdigest()
+assert db_hash == 'bac6dc33a959f39a79465e0d09b556094da4e154825e50f1470b909a6a62188c'
+assert version('cellphonedb') == '5.0.1'
+root = R/'communication'; root.mkdir(exist_ok=True)
+lock = (root/(cm+'.lock')).open('w')
+fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+out = root/cm; out.mkdir(exist_ok=False)
+start = time.time()
+a = ad.read_h5ad(R/'inputs/full_LR_PRIVATE.h5ad', backed='r')
+classes = a.obs.class8.astype(str)
+# The frozen R4 44-node input excludes epithelial cells upstream. Check again.
+assert not classes.str.contains('epithel|malignan', case=False, regex=True).any()
+mask = a.obs.CMT.astype(str).eq(cm).to_numpy()
+b = a[mask, :].to_memory(); a.file.close()
+assert b.n_obs > 0 and b.obs_names.is_unique
+counts = b.obs.subCluster.value_counts(); counts = counts[counts > 0]
+assert len(counts) >= 2
+meta = b.obs[['subCluster']].copy(); meta.columns = ['cell_type']
+meta.index.name = 'Cell'; meta.to_csv(out/'metadata_PRIVATE.tsv', sep='\t')
+plan = dict(CMT=cm, cells=b.n_obs, genes=b.n_vars, identities=len(counts),
+            iterations=1000, threshold=0.1, pvalue=0.05, threads=4,
+            seed=20261118, subsampling=False, database_sha256=db_hash,
+            input_audit_sha256=hashlib.sha256(audit.read_bytes()).hexdigest(),
+            normalization='native full-library log1p(1e4 counts/total)',
+            scope='author Figure3g CMT-specific analysis; all available cells',
+            limitation='pooled cell permutations; not patient-independent or causal; missing complex subunits require output audit',
+            label_cell_counts={str(k):int(v) for k,v in counts.items()})
+(out/'plan.json').write_text(json.dumps(plan, indent=2))
+cpdb.call(cpdb_file_path=str(db), meta_file_path=str(out/'metadata_PRIVATE.tsv'),
+          counts_file_path=b, counts_data='hgnc_symbol', iterations=1000,
+          threshold=0.1, threads=4, debug_seed=20261118, pvalue=0.05,
+          subsampling=False, output_path=str(out), output_suffix=cm)
+files = {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in out.glob('*.txt')}
+assert files
+plan.update(status='CPDB_OUTPUT_WRITTEN_PENDING_INDEPENDENT_AUDIT',
+            seconds=time.time()-start, files=files)
+(out/'complete.json').write_text(json.dumps(plan, indent=2))
+print(json.dumps(plan), flush=True)

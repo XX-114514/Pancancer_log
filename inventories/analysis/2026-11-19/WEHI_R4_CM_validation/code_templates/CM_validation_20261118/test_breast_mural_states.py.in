@@ -1,0 +1,34 @@
+"""Exact blocked source-label null; no cell-independent asymptotic P values."""
+from pathlib import Path
+import json,sys
+import numpy as np,pandas as pd
+from scipy.spatial import cKDTree
+from scipy.stats import hypergeom
+from statsmodels.stats.multitest import multipletests
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/imaging_breast_mural_states_v1')/sys.argv[1]
+plan=dict(radii_um=[30,50],tile_um=[200,400],positive_transcripts=[1,2],directions=['ESM1_EC_to_RGS5_mural','RGS5_mural_to_ESM1_EC'],primary='30um radius,200um tile,>=1 transcript; both directions',null='fix target cells and coordinates; permute source marker labels within source lineage, spatial tile and within-tile depth quartile; exact convolution of hypergeometric counts',statistic='fraction of marker-positive source cells with >=1 fixed marker-positive target within radius; count-based exact two-sided tail around null expectation',minimum='20 source-lineage cells;10 target-positive cells;10 positive and10 negative source cells in mixed blocks',family='all 6 sections x2 directions x2 radii x2 tiles x2 marker thresholds=96 planned tests; BH over qualified tests, all exclusions retained',interpretation='conditional marker-specific proximity only; not ligand receptor signaling, contact, exact R4 identity or patient-independent replication')
+(O/'test_plan.json').write_text(json.dumps(plan,indent=2));rows=[];blockrows=[]
+for unit in ['S01','S02','S03','S04','S05','S06']:
+ z=np.load(O/(unit+'_core_PRIVATE.npz'));xy=z['xy'];dep=z['depth']
+ for threshold in [1,2]:
+  for direction in plan['directions']:
+   forward=direction.startswith('ESM1');source=z['ec'] if forward else z['mural'];target=(z['mural']&(z['RGS5']>=threshold)) if forward else (z['ec']&(z['ESM1']>=threshold));si=np.flatnonzero(source);pos=(z['ESM1'] if forward else z['RGS5'])[si]>=threshold
+   distance=cKDTree(xy[target]).query(xy[si],k=1)[0] if target.any() else np.full(len(si),np.inf)
+   for tile in [200,400]:
+    tiles=np.floor(xy[si]/tile).astype(int);_,tid=np.unique(tiles,axis=0,return_inverse=True);strata=np.zeros(len(si),int)
+    for j in np.unique(tid):
+     ix=np.flatnonzero(tid==j);cuts=np.quantile(dep[si[ix]],[.25,.5,.75]);strata[ix]=j*4+np.searchsorted(cuts,dep[si[ix]],side='right')
+    for radius in [30,50]:
+     key=f'{unit}|{direction}|{threshold}|{tile}|{radius}';near=distance<=radius;dist=np.array([1.]);mu=0.;infop=0;infon=0
+     for b in np.unique(strata):
+      ids=np.flatnonzero(strata==b);n=len(ids);k=int(pos[ids].sum());h=int(near[ids].sum());obs=int((pos[ids]&near[ids]).sum());mu+=k*h/n
+      if 0<k<n:infop+=k;infon+=n-k
+      mass=hypergeom.pmf(np.arange(k+1),n,h,k);dist=np.convolve(dist,mass)
+      blockrows.append(dict(key=key,block=int(b),n=n,k=k,near=h,observed=obs))
+     observed=int((pos&near).sum());npositive=int(pos.sum());qualified=len(si)>=20 and target.sum()>=10 and infop>=10 and infon>=10
+     p=float(dist[np.abs(np.arange(len(dist))-mu)>=abs(observed-mu)-1e-10].sum()) if qualified else np.nan
+     rows.append(dict(key=key,section=unit,direction=direction,threshold=threshold,tile_um=tile,radius_um=radius,n_source=len(si),n_positive=npositive,n_target=int(target.sum()),informative_positive=infop,informative_negative=infon,observed_count=observed,expected_count=mu,observed_fraction=observed/npositive if npositive else np.nan,expected_fraction=mu/npositive if npositive else np.nan,effect_fraction=(observed-mu)/npositive if npositive else np.nan,p_exact=min(p,1.) if qualified else np.nan,status='TESTED' if qualified else 'INSUFFICIENT',null_mass=float(dist.sum())))
+ print(unit,'done',flush=True)
+t=pd.DataFrame(rows);good=t.status.eq('TESTED');t.loc[good,'q_family']=multipletests(t.loc[good,'p_exact'],method='fdr_bh')[1] if good.any() else []
+t.to_csv(O/'proximity_tests.tsv',sep='\t',index=False);pd.DataFrame(blockrows).to_csv(O/'null_blocks.tsv.gz',sep='\t',index=False)
+(O/'test_complete.json').write_text(json.dumps(dict(planned=len(t),tested=int(good.sum()),q05=int((t.q_family<.05).sum()),interpretation=plan['interpretation']),indent=2));print('completed',O,len(t),'qualified',int(good.sum()))

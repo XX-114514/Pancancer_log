@@ -1,0 +1,9 @@
+{
+  "status": "PASS_NEW_CM06_AUDIT_LINKED_TO_ALL20_ALREADY_CORRECTED_INPUT_FILES",
+  "cm": "CM06",
+  "members": 10,
+  "numerically_replayed_gene_comparisons": 230,
+  "matched_input_files": 20,
+  "audit_sha256": "8df021a2eb6d10e62cf9f3ca9c263da53961000941ddc1d7c1a988311d10eca6",
+  "scope": "Receipt and SHA linkage only; original audit numerically covers 23 fixed genes per member, not all genes; no patient independence claim"
+}

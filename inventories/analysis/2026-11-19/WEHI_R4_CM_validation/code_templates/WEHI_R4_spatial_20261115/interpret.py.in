@@ -1,0 +1,33 @@
+"""Synthesize all preselected sections; no refitting or outcome-based selection."""
+from pathlib import Path
+import json,hashlib
+import pandas as pd,numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1');O=R/'review'
+e=pd.read_csv(O/'Visium_all_original_edges.tsv',sep='\t');s=pd.read_csv(O/'Visium_density_sensitivity.tsv',sep='\t');n=pd.read_csv(O/'CellCharter_R4_association.tsv',sep='\t');scores=pd.read_csv(O/'Visium_all15_scores.tsv',sep='\t')
+pairs=[('CM01','Endo_venous_ACKR1','Str_Fib_PI16'),('CM12','Endo_tip_ESM1','Str_Pericyte_RGS5'),('CM12','Endo_tip_ESM1','Mye_Mac_FOLR2'),('CM12','Mye_Mac_FOLR2','Str_Pericyte_RGS5'),('CM04','Endo_arterial_GJA5','Str_SMC_MYH11')]
+rows=[]
+for key in ['S001','S002','S037','S038']:
+ for cm,a,b in pairs:
+  edge=e[(e.section_code==key)&(e.posterior=='means')&(e.cm==cm)&(e.node1==a)&(e.node2==b)];sen=s[(s.section==key)&(s.cm==cm)&(s.a==a)&(s.b==b)];assert len(edge)==len(sen)==1;edge=edge.iloc[0];sen=sen.iloc[0]
+  rows.append({'section':key,'cancer':'breast' if key in ['S001','S002'] else 'ccRCC','cm':cm,'node1':a,'node2':b,'raw_Spearman':edge.Spearman,'partial_rank_total_and_epithelial_fraction':sen.partial_rank_correlation_control_total_and_epithelial_fraction,'modeled_parent_fraction_Spearman':sen.modeled_parent_fraction_Spearman,'Moran_forward':edge.Moran_forward,'Moran_reverse':edge.Moran_reverse,'difference_from_signature_matched_pair_median':edge.reference_adjusted_Spearman,'full_CM_colocalization_score':scores[(scores.section_code==key)&(scores.posterior=='means')&(scores.cm==cm)&(scores.statistic=='colocalization')].iloc[0].author_score,'full_CM_aggregation_score':scores[(scores.section_code==key)&(scores.posterior=='means')&(scores.cm==cm)&(scores.statistic=='aggregation')].iloc[0].author_score,'independent_niche_eta_squared_descriptive':n[(n.section==key)&(n.cm==cm)].iloc[0].eta_squared_descriptive})
+d=pd.DataFrame(rows);d.to_csv(O/'Visium_core_evidence.tsv',sep='\t',index=False)
+fig,axs=plt.subplots(1,4,figsize=(15,4),sharex=True,sharey=True)
+for ax,(cm,a,b) in zip(axs,[pairs[0],pairs[1],pairs[2],pairs[4]]):
+ t=d[(d.cm==cm)&(d.node1==a)&(d.node2==b)];y=np.arange(len(t));raw=t.raw_Spearman.to_numpy();partial=t.partial_rank_total_and_epithelial_fraction.to_numpy()
+ for yy,x1,x2 in zip(y,raw,partial):ax.plot([x1,x2],[yy,yy],color='#9aa6ad',lw=2)
+ ax.scatter(raw,y,color='#236eaa',s=50,label='Raw Spearman',zorder=3);ax.scatter(partial,y,color='#d97919',s=50,label='Partial rank: total + epithelial fraction',zorder=3);ax.set_yticks(y,t.section);ax.set_xlim(-.05,1);ax.axvline(0,color='#dddddd',lw=1);ax.grid(axis='x',alpha=.2);ax.set_title(cm+' | '+a.split('_')[-1]+'–'+b.split('_')[-1]);ax.set_xlabel('Correlation (descriptive)')
+axs[0].invert_yaxis();handles,labels=axs[0].get_legend_handles_labels();fig.legend(handles,labels,loc='lower center',ncol=2,frameon=False);fig.suptitle('All four preselected Visium sections | fixed R4 core edges');fig.tight_layout(rect=[0,.13,1,.94]);fig.savefig(O/'figures/core_density_sensitivity.png',dpi=180);plt.close(fig)
+compact=d[['section','cancer','cm','node1','node2','raw_Spearman','partial_rank_total_and_epithelial_fraction','modeled_parent_fraction_Spearman','Moran_forward']]
+block='''<section id="main-findings"><h2>主要结果与解释</h2><p><strong>已完成4张Visium（乳腺2张、肾透明细胞癌2张，共10,160 spots）及9份成像型数据。CM01应保留为候选血管相关组成模块，目前尚不足以称为稳定、已验证的空间hub。</strong></p>
+<p>CM01完整网络共定位分数为0.809、0.681、0.735、0.607；聚集分数为0.813、0.668、0.792、0.429（依次S001、S002、S037、S038）。ACKR1–PI16原始相关为0.459、0.706、0.292、0.121，控制总推断细胞丰度与上皮背景比例后降至0.165、0.043、0.121、0.046。模型父类内比例相关仍为0.150–0.363，提示尚有组成关联，但核心边双变量Moran仅约0.003–0.052。调整敏感性不是因果校正，也不证明该生态位在所有组织中不存在。</p>
+<p><strong>较一致的线索是CM12的ESM1–RGS5内皮–周细胞轴：</strong>四张切片的密度调整后相关为0.569、0.488、0.443、0.490；父类内比例相关为0.272、0.059、0.237、0.248，亚型特异性仍有不确定性。FOLR2相关边较弱或不一致，且S038完整CM12共定位/聚集分数仅0.452/0.492；不能把一个较稳定的核心轴外推为完整三方hub。独立拟合CellCharter生态位与CM12活动的描述性η²为0.080–0.267，CM01为0.023–0.081；这是同切片的关联，不是患者独立验证。</p>
+<p>成像方面，六张乳腺Xenium的ACKR1–PI16在100μm网格呈弱正相关（0.012–0.196），此前细胞级条件邻近检验仍为阴性（六切片BH q≥0.888）。低面板肾癌Xenium与肺癌CosMx缺少关键标记，精确核心不可测；CosMx另立的大类血管候选关联总体较弱。区域RNA共变、完整网络活动和细胞接触应分别解释。</p>
+<p>q05敏感性保留在全量表中；S038的CM01共定位分数由means的0.607变为q05的0.712，聚集由0.429变为0.519，提示对后验汇总方式敏感。参考签名匹配诊断是“该边相关减去相似签名其他边的中位数”，不是去混叠后的真实相关；ACKR1–PI16该差值四张均为负。模块层面的参考匹配分数因完整背景覆盖不足留为NA，不能解释为0。</p>
+<p>后续可优先围绕ESM1内皮–RGS5壁细胞轴开展多marker身份确认和条件距离检验，同时检验FOLR2是否在同一局部区域参与；当前不作细胞接触、方向性、机制或临床治疗结论。</p>
+<img src="figures/core_density_sensitivity.png" alt="四张Visium核心边的原始与密度调整后相关对照">
+<h3>核心边证据总表</h3>'''+compact.to_html(index=False,float_format=lambda x:f'{x:.3f}',border=0)+'''<p>结果表：<a href="Visium_core_evidence.tsv">核心边整合表</a> · <a href="Visium_all15_scores.tsv">全部15模块及means/q05分数</a> · <a href="Visium_density_sensitivity.tsv">全部原边密度敏感性</a> · <a href="Visium_posterior_sensitivity.tsv">后验敏感性</a> · <a href="CellCharter_R4_association.tsv">CellCharter关联</a></p></section>'''
+f=O/'report.html';text=f.read_text();assert 'id="main-findings"' not in text;text=text.replace('<h2>样本与技术验收</h2>',block+'<h2>样本与技术验收</h2>',1);f.write_text(text)
+proof={'status':'reviewed_all_four_sections_and_imaging_with_qualified_interpretation','Visium_spots':10160,'core_evidence_rows':len(d),'main_finding':'CM01 core density-sensitive; ESM1–RGS5 partial rank correlation more consistent; no full spatial hub or contact proof','all_four_30000_epoch_fits_and_240_scores_audited':True,'matrix_and_model_storage':'server_only'};(O/'scientific_review.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2));print(json.dumps(proof,ensure_ascii=False))

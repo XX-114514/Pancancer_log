@@ -1,0 +1,19 @@
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/imaging_breast_core_cells_v1')
+assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_')
+t=pd.read_csv(O/'proximity_tests.tsv',sep='\t');primary=t[(t.threshold==1)&(t.tile_um==200)&(t.radius_um==30)].copy();primary.to_csv(O/'primary_summary.tsv',sep='\t',index=False)
+fig,axes=plt.subplots(1,2,figsize=(12,5.5),sharey=True,layout='constrained')
+for ax,d,title in zip(axes,['ESM1_EC_to_RGS5_mural','RGS5_mural_to_ESM1_EC'],['ESM1+ blood EC near RGS5+ mural','RGS5+ mural near ESM1+ blood EC']):
+ for i,s in enumerate(['S01','S02','S03','S04','S05','S06']):
+  a=t[(t.section==s)&(t.direction==d)];a=a.sort_values(['threshold','tile_um','radius_um']);ax.scatter(a.effect_fraction*100,i+np.linspace(-.18,.18,len(a)),s=18,color='#a6b5c3',alpha=.85)
+  r=primary[(primary.section==s)&(primary.direction==d)].iloc[0];ax.scatter(r.effect_fraction*100,i,s=80,marker='D',color='#c45e2a' if r.q_family<.05 else '#2a6587',zorder=3)
+ ax.axvline(0,color='gray',ls='--');ax.set_title(title);ax.set_xlabel('Observed minus conditional-null proximity (percentage points)');ax.set_yticks(range(6),['S01','S02','S03','S04','S05','S06']);ax.set_ylim(5.5,-.5);ax.grid(axis='x',alpha=.2)
+fig.suptitle('Six breast Xenium sections | CM12 core marker-supported cell proxies')
+fig.supxlabel('Diamonds: 30 um / 200 um blocks / >=1 transcript; orange = q<0.05 across all 96 tests.\nSmall gray dots: all prespecified sensitivity settings. Marker proximity is not signaling or physical contact.\nDepth quartiles within spatial blocks; target fixed, source marker labels randomized within lineage. No pooled patient claim.',fontsize=10)
+fig.savefig(O/'core_proximity_review.png',dpi=170);plt.close(fig)
+print(t.groupby(['section','direction']).agg(tests=('p_exact','count'),q05=('q_family',lambda x:int((x<.05).sum())),min_effect=('effect_fraction','min'),max_effect=('effect_fraction','max')).to_string())

@@ -1,0 +1,50 @@
+"""Full schema/BH and sampled raw-matrix Welch/HC3 replay; no patient claim."""
+from pathlib import Path
+import sys,json,hashlib
+import numpy as np,pandas as pd,anndata as ad,statsmodels.api as sm
+from scipy.stats import ttest_ind
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');cm=sys.argv[1];O=R/'highlow'/cm
+proof=json.loads((O/'complete.json').read_text());assert proof['cm']==cm
+summary=pd.read_csv(O/'member_summary.tsv',sep='\t');a=ad.read_h5ad(R/'inputs/full_common_PRIVATE.h5ad',backed='r')
+rng=np.random.default_rng(2026111812);genes=sorted(set(rng.choice(a.var_names,16,replace=False))|({'RGS5','FOLR2','ACKR1','PDGFRB','VEGFA','KDR','PDGFB','CXCL12'}&set(a.var_names)))
+cols=a.var_names.get_indexer(genes);rows=[];hashes={};oldp=[];unitp=[]
+for row in summary.itertuples():
+ node=row.node;ix=np.flatnonzero(a.obs.subCluster.astype(str).eq(node));obs=a.obs.iloc[ix].copy();high=obs.CMT.astype(str).eq(cm).to_numpy()
+ assert high.sum()==row.high_cells and (~high).sum()==row.low_cells
+ de=pd.read_csv(O/(node+'_cell_DE.tsv.gz'),sep='\t').set_index('names');assert de.index.is_unique and set(de.index)==set(a.var_names)
+ assert de.pvals.between(0,1).all();assert np.allclose(multipletests(de.pvals,method='fdr_bh')[1],de.pvals_adj)
+ oldp.append(de.pvals.to_numpy());hashes[node+'_cell_DE.tsv.gz']=hashlib.sha256((O/(node+'_cell_DE.tsv.gz')).read_bytes()).hexdigest()
+ # Explicit gene projection first limits memory; all cells of each identity retained.
+ X=a[ix,cols].X.toarray().astype(np.float64);stat,p=ttest_ind(X[high],X[~high],equal_var=False,axis=0)
+ p=np.nan_to_num(p,nan=1.);stat=np.nan_to_num(stat,nan=0.)
+ assert np.allclose(stat,de.loc[genes,'scores'],atol=3e-5,rtol=3e-5)
+ assert np.allclose(p,de.loc[genes,'pvals'],atol=3e-7,rtol=1e-3)
+ u=pd.read_csv(O/(node+'_unit_design_PRIVATE.tsv'),sep='\t',index_col=0);obs['unit']=obs.unit.astype(str)
+ means=pd.DataFrame(X,index=obs.index,columns=genes).groupby(obs.unit,observed=True).mean()
+ counts=obs.groupby('unit',observed=True).size();assert counts.reindex(u.index).eq(u.cells).all()
+ for field in ['source','cancer','CMT']:
+  assert obs.groupby('unit',observed=True)[field].nunique().eq(1).all()
+  check=obs.drop_duplicates('unit').set_index('unit')[field].astype(str).reindex(u.index)
+  assert check.eq(u[field].astype(str)).all()
+ expected_high=u.CMT.eq(cm).astype(int);assert expected_high.eq(u.high).all()
+ good=u.cells.ge(10);cross=pd.crosstab(u.loc[good,'stratum'],u.loc[good,'high']).reindex(columns=[0,1],fill_value=0)
+ strata=cross.index[(cross[0]>=3)&(cross[1]>=3)];keep=good&u.stratum.isin(strata)
+ assert keep.eq(u.included_source_adjusted_sensitivity).all();max_beta=max_se=0.
+ if keep.any():
+  v=u[keep];D=np.column_stack([np.ones(len(v)),v.high,pd.get_dummies(v.stratum,drop_first=True,dtype=float)])
+  t=pd.read_csv(O/(node+'_unit_source_adjusted.tsv.gz'),sep='\t').set_index('gene');assert set(t.index)==set(a.var_names)
+  assert np.allclose(multipletests(t.p,method='fdr_bh')[1],t.q_within_comparison);unitp.append(t.p.to_numpy())
+  for gene in genes:
+   fit=sm.OLS(means.loc[v.index,gene],D).fit(cov_type='HC3',use_t=True);r=t.loc[gene]
+   assert np.isclose(fit.params.iloc[1],r.high_minus_low_mean_log_expression,atol=2e-6,rtol=1e-4)
+   assert np.isclose(fit.bse.iloc[1],r.HC3_se,atol=2e-6,rtol=1e-4)
+   if r.variance_assessable:assert np.isclose(fit.pvalues.iloc[1],r.p,atol=1e-5,rtol=1e-3)
+   max_beta=max(max_beta,abs(fit.params.iloc[1]-r.high_minus_low_mean_log_expression));max_se=max(max_se,abs(fit.bse.iloc[1]-r.HC3_se))
+  hashes[node+'_unit_source_adjusted.tsv.gz']=hashlib.sha256((O/(node+'_unit_source_adjusted.tsv.gz')).read_bytes()).hexdigest()
+ rows.append(dict(node=node,cells=len(obs),sampled_genes=len(genes),max_welch_stat_error=float(np.max(np.abs(stat-de.loc[genes,'scores']))),max_unit_beta_error=max_beta,max_unit_se_error=max_se))
+ print(node,'PASS',flush=True)
+a.file.close();pd.DataFrame(rows).to_csv(O/'independent_replay_summary.tsv',sep='\t',index=False)
+report=dict(status='PASS_FULL_OUTPUT_SCHEMA_WITHIN_COMPARISON_BH_AND_SAMPLED_RAW_WELCH_HC3_REPLAY',cm=cm,members=len(rows),sampled_genes=genes,comparisons_checked=len(rows)*len(genes),hashes=hashes,
+ scope='all identities and all cells but only listed genes numerically replayed; full-gene axes/p ranges and BH audited; units not verified patients; no cross-CM correction or differential LR conclusion')
+(O/'independent_audit.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='hashes'}))

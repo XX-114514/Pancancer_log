@@ -1,0 +1,35 @@
+"""Audit native patient provenance without equating supplied IDs with verified people."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad,zarr
+from anndata.io import read_elem
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1';O=R/'patient_bridge_v1';O.mkdir(exist_ok=False)
+a=ad.read_h5ad(R/'inputs/full_common_PRIVATE.h5ad',backed='r');q=a.obs.copy();a.file.close();z=zarr.open_group(str(B/'zarr/tme_v1.zarr'),mode='r');pos=q.raw_row.to_numpy(int);axis=np.asarray(z['obs/_index'][:]).astype(str);assert np.array_equal(axis[pos],q.index.astype(str))
+for field in ['source','unit_id','patient_id','patient_id_rule','sample_id','treatment_status','treatment_rule']:
+ vals=np.asarray(read_elem(z['obs'][field])).astype(str)[pos];q['native_'+field]=vals
+assert q.source.astype(str).eq(q.native_source).all()
+def canon(x):
+ x=str(x);x=x[5:] if x.startswith('unit:') else x
+ return str(int(x)) if x.isdigit() else x
+assert q.unit.astype(str).eq(q.native_unit_id.map(canon)).all()
+q['patient_nonmissing']=~q.native_patient_id.str.strip().str.lower().isin(['','nan','none','na','n/a','unknown','unresolved','<na>'])
+rows=[]
+for unit,g in q.groupby('unit',observed=True,sort=True):
+ ids=sorted(g.native_patient_id.unique());rules=sorted(g.native_patient_id_rule.unique());sources=g.source.astype(str).unique();cancers=g.cancer.astype(str).unique();cm=g.CMT.astype(str).unique();assert len(sources)==len(cancers)==len(cm)==1
+ rows.append(dict(unit=str(unit),source=sources[0],cancer=cancers[0],CMT=cm[0],cells=len(g),native_patient_ids='|'.join(ids),native_patient_rules='|'.join(rules),n_native_patients=len(ids),all_patient_nonmissing=bool(g.patient_nonmissing.all()),n_samples=g.native_sample_id.nunique(),treatment_status='|'.join(sorted(g.native_treatment_status.unique())),treatment_rule='|'.join(sorted(g.native_treatment_rule.unique()))))
+u=pd.DataFrame(rows);u['single_nonmissing_patient']=u.n_native_patients.eq(1)&u.all_patient_nonmissing;u['recorded_id_candidate']=u.single_nonmissing_patient&u.native_patient_rules.eq('recorded');u['patient_key']=u.source+'||'+u.native_patient_ids
+# IDs derived from source rules / GEO sample records need source-document verification too.
+p=u[u.single_nonmissing_patient].groupby('patient_key').agg(source=('source','first'),cancer_count=('cancer','nunique'),units=('unit','size'),CMT_count=('CMT','nunique'),rules=('native_patient_rules',lambda x:'|'.join(sorted(set(x)))))
+u['patient_CMT_count']=u.patient_key.map(p.CMT_count);u['patient_unit_count']=u.patient_key.map(p.units);u['author_patient_verified']=False
+u.to_csv(O/'unit_patient_bridge_PRIVATE.tsv',sep='\t',index=False);p.to_csv(O/'patient_repeats_PRIVATE.tsv',sep='\t')
+u.groupby(['source','native_patient_rules'],dropna=False).agg(units=('unit','size'),recorded_candidates=('recorded_id_candidate','sum'),ambiguous_units=('single_nonmissing_patient',lambda x:int((~x).sum()))).to_csv(O/'source_rule_coverage.tsv',sep='\t')
+counts=q.groupby(['unit','subCluster'],observed=True).size().rename('cells').reset_index();counts['unit']=counts.unit.astype(str);counts=counts.merge(u[['unit','source','cancer','CMT','patient_key','recorded_id_candidate','patient_CMT_count']],on='unit',validate='many_to_one');eligible=counts[counts.recorded_id_candidate&counts.patient_CMT_count.eq(1)]
+patientcounts=eligible.groupby(['patient_key','source','cancer','CMT','subCluster'],observed=True).cells.sum().reset_index();patientcounts=patientcounts[patientcounts.cells>=10];members=pd.read_csv(R/'R4_member_comparison_eligibility.tsv',sep='\t');feas=[]
+for m in members.itertuples():
+ g=patientcounts[patientcounts.subCluster.astype(str).eq(m.node)].copy();g['high']=g.CMT.astype(str).eq(m.cm)
+ for (source,cancer),v in g.groupby(['source','cancer']):
+  nh=int(v.high.sum());nl=len(v)-nh;feas.append(dict(cm=m.cm,node=m.node,source=source,cancer=cancer,high_recorded_id_candidates=nh,low_recorded_id_candidates=nl,at_least_three_each=bool(min(nh,nl)>=3),author_patient_verified=False))
+pd.DataFrame(feas).to_csv(O/'recorded_id_feasibility.tsv',sep='\t',index=False)
+proof=dict(status='PASS_EXACT_NATIVE_CELL_AXIS_SOURCE_UNIT_AND_PATIENT_PROVENANCE_INVENTORY',cells=len(q),units=len(u),single_nonmissing_patient_units=int(u.single_nonmissing_patient.sum()),recorded_id_candidate_units=int(u.recorded_id_candidate.sum()),native_rule_unit_counts=u.native_patient_rules.value_counts().to_dict(),unique_nonmissing_source_patient_keys=len(p),keys_spanning_multiple_units=int(p.units.gt(1).sum()),keys_spanning_multiple_CMTs=int(p.CMT_count.gt(1).sum()),feasible_recorded_id_strata=sum(f['at_least_three_each'] for f in feas),
+ limitations='recorded ID provenance candidates are not author-document-verified patients; assumed one unit per patient never accepted as patient proof; sample/GEO/source rules need original bridge; do not replace current units or claim patient-independent inference yet')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

@@ -1,0 +1,26 @@
+WEHI R4 / CoVarNet K15 空间下游分析 | 2026-11-15 | 已完成
+
+服务器主目录：
+${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1/
+
+最终报告（本地小型汇总副本）：
+${LOCAL_WORKSPACE}/analysis/WEHI_R4_spatial_20261115/review/report.html
+最终服务器报告：review/report.html
+
+预选 Visium：
+S001 / GSE203612 / GSM6177599 / NYU_BRCA0 / 2384 spots
+S002 / GSE203612 / GSM6177601 / NYU_BRCA1 / 1863 spots
+S037 / GSE273952 / GSM8440294 / ccRCC P_1 / 1159 spots
+S038 / GSE273952 / GSM8440295 / ccRCC P_2 / 4754 spots
+合计10160 spots；四张均完成30000轮cell2location及1000次后验抽样；全部240条作者分数独立复核通过。
+
+成像数据：六张乳腺Xenium 5k、一份肾癌Xenium RNA+蛋白、肺癌CosMx Lung12与Lung13。
+低面板缺测保留不可测；CosMx大类候选另列，不重命名为原CM。
+
+主要结果：CM01 ACKR1–PI16对密度/上皮背景调整敏感（四片偏秩相关0.043–0.165），仍为候选组成模块。
+CM12 ESM1–RGS5轴较一致（0.443–0.569），但不支持将其扩展为已验证的完整FOLR2三方hub。
+六张乳腺Xenium的区域RNA弱共变不替代此前阴性的细胞级条件邻近检验。
+
+服务器DELIVERY_STATUS.json及review/complete.json为完成回执。
+最终归档SHA256：4d242a5f6338a379079284e79d8721dea0ad517954f363a12832c47e51c75dc8
+本地只保留代码、索引和小型汇总图表；模型、细胞矩阵、spot级结果均保存在服务器。

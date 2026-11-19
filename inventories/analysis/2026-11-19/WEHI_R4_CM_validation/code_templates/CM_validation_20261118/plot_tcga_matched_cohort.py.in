@@ -1,0 +1,18 @@
+from pathlib import Path
+import json
+import pandas as pd,numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates/TCGA_survival_v1_nonredacted/matched_cohort_sensitivity_v1')
+assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_')
+a=pd.read_csv(O/'matched_comparisons.tsv',sep='\t');a=a[(a.cm=='CM12')&(a.branch=='original_network_members')];a.to_csv(O/'CM12_matched_comparisons.tsv',sep='\t',index=False)
+fig,axes=plt.subplots(1,2,figsize=(12,9),layout='constrained')
+for ax,endpoint in zip(axes,['OS','PFI']):
+ d=a[(a.endpoint==endpoint)&(a.model=='composition')].sort_values('cancer');y=np.arange(len(d))
+ for i,row in enumerate(d.itertuples()):ax.plot([row.full_base_HR,row.matched_base_HR,row.adjusted_HR],[i,i,i],color='#999999',lw=1,zorder=1)
+ for col,label,color,shift in [('full_base_HR','Base: full eligible cohort','#888888',-.12),('matched_base_HR','Base: identical patients','#2166ac',0),('adjusted_HR','+ purity and leukocyte fraction','#b2182b',.12)]:ax.scatter(d[col],y+shift,label=label,color=color,s=22,zorder=2)
+ ax.set_yticks(y,[f'{r.cancer} ({r.full_base_patients} to {r.matched_patients})' for r in d.itertuples()]);ax.axvline(1,c='black',lw=.7,ls='--');ax.set_xscale('log');ax.set_xlim(.7,2.05);ax.set_xticks([.75,1,1.25,1.5,2],['0.75','1.00','1.25','1.50','2.00']);ax.xaxis.set_minor_locator(matplotlib.ticker.NullLocator());ax.set_xlabel('HR per 1 SD CM12 score (log axis)');ax.set_title(endpoint);ax.invert_yaxis()
+axes[1].legend(loc='best',fontsize=8);fig.suptitle('CM12: sample restriction versus covariate conditioning',fontsize=15)
+fig.supxlabel('All qualified composition models, primary signature. Same outcome-blind score scale.\nPoint-estimate sensitivity only: no new tests or confidence intervals for differences; not causal decomposition or predictive validation.',fontsize=10)
+fig.savefig(O/'CM12_matched_cohort_sensitivity.png',dpi=170);plt.close(fig);print('FIGURE_AND_CM12_TABLE_WRITTEN')

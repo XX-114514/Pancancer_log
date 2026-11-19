@@ -1,0 +1,149 @@
+{
+  "status": "COMPUTED_PENDING_INDEPENDENT_AUDIT",
+  "modules": 15,
+  "total_tests": 25912935,
+  "sources": [
+    {
+      "cm": "CM01",
+      "file": "statistical_analysis_pvalues_CM01.txt",
+      "sha256": "9b8c15b8ae21013fcdc8a63383d0964e42934998ccd0fe9af3ae260613b8434a",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM02",
+      "file": "statistical_analysis_pvalues_CM02.txt",
+      "sha256": "4d8c84dd086b924a0520d52d14e1f19add8ca679c0bd5d843137d75710a2b8b5",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM03",
+      "file": "statistical_analysis_pvalues_CM03.txt",
+      "sha256": "4290383545711159bf551681b74e6bbe64e31dc85e5b0bd2248f3fe06ae28eb4",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM04",
+      "file": "statistical_analysis_pvalues_CM04.txt",
+      "sha256": "094d0688f57e2fb6a9a822d5b2086ac813a1a7bfa4c116f8c0b4282762de61df",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM05",
+      "file": "statistical_analysis_pvalues_CM05.txt",
+      "sha256": "ae94402ac135bb9331deafee3022494986f80ad9599e5ed8df8fc0c18f6e11c3",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM06",
+      "file": "statistical_analysis_pvalues_CM06.txt",
+      "sha256": "b2033184c15037304885e29b986d9a71f4a211eba7a92420251324c537be7fa1",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM07",
+      "file": "statistical_analysis_pvalues_CM07.txt",
+      "sha256": "6457962cf40a84e6e1f7b0422faf16d35b96570f61fd2ff8d5e957bbde8d5a39",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM08",
+      "file": "statistical_analysis_pvalues_CM08.txt",
+      "sha256": "bb831dd7b73548f98ecffc8f0e2fb0c8461b6238524d0c4808770798926e9c55",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1849,
+      "tests": 1654855
+    },
+    {
+      "cm": "CM09",
+      "file": "statistical_analysis_pvalues_CM09.txt",
+      "sha256": "abbe0fdb1d65f7d52d6b90e35d50d8d7de894548effff96b0bcc57fc1aa870f0",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM10",
+      "file": "statistical_analysis_pvalues_CM10.txt",
+      "sha256": "bbbc7028f2cd1539e1d12ce5643f8dee19e49c6100224e018a8191267de7b4c8",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM11",
+      "file": "statistical_analysis_pvalues_CM11.txt",
+      "sha256": "840821b91cf63f61af01695cc4f6db211f4fe325976444ab162fa336fc0b84df",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM12",
+      "file": "statistical_analysis_pvalues_CM12.txt",
+      "sha256": "ec0bba244b40953599f2ce2b6851a1699cc58eb3500240afda22f0d2b7c8950a",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM13",
+      "file": "statistical_analysis_pvalues_CM13.txt",
+      "sha256": "8bdd6548bc693eaaa3ae1cc64b85988178cc463795cdfb8ea570c5663bceec60",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM14",
+      "file": "statistical_analysis_pvalues_CM14.txt",
+      "sha256": "d52c6352e394a11758cf674ca7d6a36c255c2f56f791a3fd08b01c8ec6995463",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    },
+    {
+      "cm": "CM15",
+      "file": "statistical_analysis_pvalues_CM15.txt",
+      "sha256": "5bb95c8faab4cc2465dcf477d933c93acc802cd69e54ebbfe1c0bd34f6b9f613",
+      "eligible_interactions": 895,
+      "ordered_pairs": 1936,
+      "tests": 1732720
+    }
+  ],
+  "output_sha256": {
+    "null_count_q_lookup.tsv": "6cd36e225a7c2ff150e30d2cdbc494e988c9fb1eccc760ba290bc1ee84dcb3cd",
+    "CM01_q_joint15.tsv.gz": "8ca85e3a0fa766f1c4ba9515b742a7d8f3eb65ae98e8d96562ee759b244444d9",
+    "CM02_q_joint15.tsv.gz": "720fe66c99b218d6a441a5ba1e1292e543fc9e6a9f3efe821c622397594780dd",
+    "CM03_q_joint15.tsv.gz": "38e011b58459e68578249bce6095bbc15132df5a6d239f69a3364ac6ee18f98d",
+    "CM04_q_joint15.tsv.gz": "7acd1721861df85e288cbc3ad4ec5d8a2a5727c8c0eb10ff5c3622a8556558ed",
+    "CM05_q_joint15.tsv.gz": "841ffa1e971da2e7a89732543783765125bc2bc19bd96331887a1114cf7124b9",
+    "CM06_q_joint15.tsv.gz": "05849a5aa2fbcba49325950daa77c1ea9831cab9ec5215e7946e1f53413e0b7f",
+    "CM07_q_joint15.tsv.gz": "68b331a7c30960be4a28cc0021884f88d83dfda746338031e1ea28f1d4930542",
+    "CM08_q_joint15.tsv.gz": "48ce1e31d3b9b8d097d25a0719b867a37344e1783d8258da9691714673164f7a",
+    "CM09_q_joint15.tsv.gz": "6d14238607ba19fb0acff4b5f64c0b93d8bb34da5a4f6ec894149fa12a00fbdc",
+    "CM10_q_joint15.tsv.gz": "f392b8c8713e27b31dc571c986a67b17fd2a37ce755ab57f2eabce7f961ddc8a",
+    "CM11_q_joint15.tsv.gz": "68a4ec3c9d8123edd68148a6f936c0ab09242e12f09da6421c2a5d2ed9d6d74c",
+    "CM12_q_joint15.tsv.gz": "2e05d3684deb1a50402250e99c42aabe97d7e0b26b65350da0bd204d49e7e5d8",
+    "CM13_q_joint15.tsv.gz": "41a762b06ea997ac02c822cfed1bd0c092f4ff9c0f768871d3523ac10ca18d7b",
+    "CM14_q_joint15.tsv.gz": "f86382093d3f5bbd6c30d01c7f5c9338941097512e9a4e2c836e8c1295cb263a",
+    "CM15_q_joint15.tsv.gz": "aee344bfad10cbe369dbc85a3ce9c83a4da04a2a3bf3868788b7a7737d36425c",
+    "unassessable_core_pairs.tsv": "88f1f800daf3e0a76d4f7aee30a8618b49fb6668b1750a9ef88423e330d029a3",
+    "module_summary.tsv": "6f6893e921dda9f2ae672ae7ca1414749e33770a4effd3a23950400f6e54168e",
+    "pair_summary.tsv": "f6400cccdeabe763617661876c6aa5a04f9db853b8b8389b6a2dea3d9c214ff5",
+    "core_edges_all_CMT.tsv.gz": "8abd49e1ca157cb7f3fe7cad05ee2dc8133fb7682ec8bb2434e4eaf9da89cd9d"
+  }
+}

@@ -1,0 +1,32 @@
+"""Explicit source-key and repeated-sequencing reconciliation; timing stays unknown."""
+from pathlib import Path
+import json,hashlib,re,csv,gzip
+import pandas as pd,numpy as np
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/rose2021_urothelial');O=R/'clinical/rose_patients_v2';O.mkdir(exist_ok=False)
+series=(R/'sources/rose_metadata/GSE176307.soft.txt').read_text();assert 'Sample BACI165 was sequenced twice.' in series
+key=pd.read_csv(B/'sample_key.csv.gz',dtype=str);assert key['Sample ID'].is_unique and len(key)==89
+mapping={}
+for row in key.itertuples(index=False,name=None):
+ patient,raw=row;cols=[s.strip() for s in raw.split(',')]
+ for col in cols:assert col not in mapping;mapping[col]=patient
+assert len(mapping)==90
+meta=pd.read_csv(R/'clinical/rose2021_urothelial_sample_bridge_PRIVATE.tsv',sep='\t',dtype=str,keep_default_na=False);assert len(meta)==90 and meta.expression_key.is_unique
+meta['patient']=meta.expression_key.map(mapping);assert meta.patient.notna().all()
+for row in meta.itertuples():
+ expected='Patient sample '+row.patient
+ if row.patient=='BACI165':assert row.title in [expected+'_1',expected+'_2']
+ else:assert row.title==expected
+assert meta.patient.nunique()==89 and meta.groupby('patient').size().value_counts().to_dict()=={1:88,2:1}
+rep=meta[meta.patient.eq('BACI165')];exclude={'GSM','title','expression_key','expression_key_basis','patient_candidate'}
+clinical_fields=['gender','race','ethnicity','age','smoking status','io.lot','io.therapy','io.response','overall survival','alive','pfs','progressed','tmb']
+assert all(rep[k].nunique()==1 for k in clinical_fields)
+x=pd.read_csv(B/'GSE176307_salmon_tpm.tsv.gz',sep='\t',index_col=0);assert x.shape[1]==92 and x.columns.is_unique;assert set(mapping)<=set(x.columns)
+extra=sorted(set(x.columns)-set(mapping));pd.DataFrame({'expression_column':extra,'status':'NO_SOURCE_PATIENT_OR_CLINICAL_MAPPING_EXCLUDED_NOT_ASSUMED_CONTROL'}).to_csv(O/'excluded_expression_columns.tsv',sep='\t',index=False)
+values=x.to_numpy(float);assert np.isfinite(values).all() and (values>=0).all();dup=x.index.duplicated(keep=False);pd.Series(x.index[dup],name='duplicate_gene_symbol').value_counts().rename('rows').to_csv(O/'duplicate_gene_symbols.tsv',sep='\t')
+meta['patient_identity_source_verified']=True;meta['patient_identity_evidence']='author sample key exact RNA column; GEO Patient sample title; explicit BACI165 sequenced twice in Series design';meta['biopsy_relative_to_ICI']='UNKNOWN';meta['baseline_verified']=False
+meta.to_csv(O/'sample_patient_bridge_PRIVATE.tsv',sep='\t',index=False)
+patients=meta.drop_duplicates('patient').set_index('patient');patients['RNA_columns']=patients.index.map(lambda p:'|'.join(sorted(meta.loc[meta.patient.eq(p),'expression_key'])));patients['RNA_column_count']=patients.index.map(meta.groupby('patient').size());patients.to_csv(O/'patient_clinical_PRIVATE.tsv',sep='\t')
+# Candidate coverage: retain only exact, unique symbols; ambiguity must not be silently summed.
+sig=pd.read_csv(R/'bulk_R4_candidates/candidate_signatures.tsv',sep='\t');unique=set(x.index[~dup]);coverage=sig.assign(exact_unique_expression=sig.gene.isin(unique)).groupby(['branch','cm']).agg(signature_genes=('gene','size'),exact_unique_genes=('exact_unique_expression','sum'));coverage.to_csv(O/'candidate_gene_coverage.tsv',sep='\t')
+plan=dict(status='SOURCE_PATIENT_AND_EXPRESSION_RECONCILIATION_COMPLETE_TIMING_UNRESOLVED',expression_rows=len(x),expression_columns=x.shape[1],metadata_samples=len(meta),patients=len(patients),repeated_sequencing_patient='BACI165',repeated_samples=2,unmapped_expression_columns=extra,duplicate_gene_rows=int(dup.sum()),unique_gene_symbols=len(unique),sample_column_TPM_sum_range=[float(values.sum(axis=0).min()),float(values.sum(axis=0).max())],response_counts=patients['io.response'].value_counts().to_dict(),therapy_counts=patients['io.therapy'].value_counts().to_dict(),primary_policy='For descriptive response associations, average the two explicit repeat TPM columns for BACI165 before log1p and patient-level gene standardization; sensitivity exclude BACI165. Do not count repeats as independent patients.',timing='No verified sample-to-ICI time. Archived FFPE and clinical annotation at therapy initiation do not prove pretreatment biopsy; not eligible as confirmed baseline predictive validation.',survival='Units and treatment-relative time origin not verified per source data; keep raw, no survival fit yet.',input_hashes={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in [B/'sample_key.csv.gz',B/'GSE176307_salmon_tpm.tsv.gz',R/'sources/rose_metadata/GSE176307.soft.txt',R/'clinical/rose2021_urothelial_sample_bridge_PRIVATE.tsv']})
+(O/'complete.json').write_text(json.dumps(plan,indent=2));print(json.dumps(plan),flush=True)

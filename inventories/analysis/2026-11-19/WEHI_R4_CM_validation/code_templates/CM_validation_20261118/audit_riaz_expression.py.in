@@ -1,0 +1,23 @@
+from pathlib import Path
+import csv,gzip,json,hashlib
+from collections import defaultdict
+import numpy as np,anndata as ad,pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/riaz_inputs_v1'
+a=ad.read_h5ad(O/'baseline_candidate_expression_PRIVATE.h5ad');lookup=defaultdict(set);reverse=defaultdict(set)
+with (R/'sources/riaz_author/hgnc_complete_set.txt').open() as f:
+ for r in csv.DictReader(f,delimiter='\t'):
+  if r['status']=='Approved' and r['entrez_id']:lookup[r['symbol']].add(r['entrez_id']);reverse[r['entrez_id']].add(r['symbol'])
+for gene,row in a.var.iterrows():assert lookup[gene]=={row.entrez_id} and reverse[row.entrez_id]=={gene}
+rawpath=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/riaz2017/GSE91061_raw_counts.csv.gz');selected={v:i for i,v in enumerate(a.var.entrez_id)};counts=np.zeros(a.shape);totals=np.zeros(a.n_obs,dtype=np.int64);seen=set();found=set()
+with gzip.open(rawpath,'rt') as f:
+ reader=csv.reader(f);header=next(reader);cols=[header.index(sample) for sample in a.obs_names]
+ for r in reader:
+  assert r[0] not in seen;seen.add(r[0]);v=np.array([int(r[i]) for i in cols]);assert (v>=0).all();totals+=v
+  if r[0] in selected:counts[:,selected[r[0]]]=v;found.add(r[0])
+assert set(selected)==found;assert np.array_equal(totals,a.obs.library_total_all_genes)
+expect=np.log2(1+counts*1e6/totals[:,None]);assert np.allclose(expect,a.X,atol=1e-12)
+b=pd.read_csv(R/'clinical/riaz_author_v2/sample_bridge_PRIVATE.tsv',sep='\t');b=b[b.baseline_verified&b.author_exact_bam_match].set_index('expression_key').sort_index();assert b.index.equals(a.obs_names)
+for col in ['PatientID','USUBJID','Cohort','BOR']:assert b[col].astype(str).equals(a.obs[col].astype(str))
+assert np.array_equal(b.eligible_baseline_response,a.obs.eligible_baseline_response)
+proof=dict(status='PASS_ALL_SELECTED_GENES_ALL_BASELINE_SAMPLES_RAW_COUNT_REPLAY_FULL_LIBRARY_DENOMINATORS_AND_GENE_PATIENT_AXES',baseline_patients=a.n_obs,signature_genes=a.n_vars,raw_gene_rows=len(seen),replayed_values=int(a.n_obs*a.n_vars),max_error=float(np.max(abs(expect-a.X))),output_sha256=hashlib.sha256((O/'baseline_candidate_expression_PRIVATE.h5ad').read_bytes()).hexdigest(),limitations='input qualification only; no outcome model or prediction validation')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

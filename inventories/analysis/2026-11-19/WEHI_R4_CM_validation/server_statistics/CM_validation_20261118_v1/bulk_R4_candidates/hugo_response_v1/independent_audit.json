@@ -1,0 +1,8 @@
+{
+  "status": "PASS_RAW_XLSX_XML_GEO_PATIENT_BRIDGE_ALL_SCORES_EXACT_U_DISTRIBUTION_PERMUTATIONS_AND_BH",
+  "score_values": 1530,
+  "response_tests": 120,
+  "max_score_error": 5.551115123125783e-16,
+  "association_sha256": "378d7377b8ddab305dcc9d8bbe68bb97ccadc68b0856817ea168dba8023ff33f",
+  "limitations": "replay only; previous use and small cohort preclude confirmatory prediction claim"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "FROZEN_BEFORE_SECTION_FITTING",
+  "sections": 8,
+  "models": 24,
+  "primary_N_cells_per_location": 30,
+  "sensitivity_N_cells_per_location": [
+    5,
+    60
+  ],
+  "epochs_per_fit": 30000,
+  "posterior_samples": 1000,
+  "N_cells_basis": "30 reproduces prior legacy-ST assumption; 5 and 60 bracket uncertainty; no measured nuclear count available; not fitted to CM outcome",
+  "scoring": "frozen R4 15 modules; means primary and q05 sensitivity; literal author colocalization and 60NN inverse-square aggregation; independent score replay",
+  "diagnostic_review": "Endo_tip_ESM1 F1 .786-.800, RGS5 .790-.796, melanoma .942-.950; source-heldout melanoma recall .76-.99, no ESM1/RGS5 misassignment observed",
+  "limitations": "inherited label diagnostics are not spatial accuracy; six nuisance labels; ESM1 naming marker absent from reference gene scope; 60NN spans large tissue fractions in small legacy-ST sections; local-neighbour and density controls still required; previously explored sections, patient independence unverified",
+  "selection": "all eight audited archived sections retained irrespective of ESM1 detection",
+  "files_sha256": {
+    "code/fit_sections.py": "08ed45f47367a915262097152d424d728ee823a2fda2504d6f519c4659ab86c2",
+    "code/score.R": "05f38da31795744b48bdd87a44f8995ac872035e5081f27440f9c017fe71eeae",
+    "code/score_audit.py": "a746ae4246d23dd6b915f5a48c27a7fb75238db70ab0a56313e2a7d1005cbe19",
+    "reference/signatures_PRIVATE.tsv": "e32ca01c6781608d61b5b42bcfa6a5ac9db669fad9b22e2b8ce71a5abec17972"
+  }
+}

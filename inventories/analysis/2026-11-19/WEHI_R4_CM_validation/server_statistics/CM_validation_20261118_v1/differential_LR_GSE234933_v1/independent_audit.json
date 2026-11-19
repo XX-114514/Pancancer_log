@@ -1,0 +1,12 @@
+{
+  "status": "PASS_RAW_GEO_CONTEXT_ALL_PATIENT_SCORE_CONTRAST_PERMUTATION_AND_CROSS_SOURCE_BH_REPLAY",
+  "pairs": 303,
+  "headneck_tests": 32770,
+  "joint_tests": 44225,
+  "joint_q05": 0,
+  "max_score_error": 0.0,
+  "max_OLS_contrast_error": 2.398081733190338e-14,
+  "seconds": 87.09070444107056,
+  "score_table_sha256": "0416d6cc929e25b467749f0f63ee77827e1997eb0cc1153cf5ec0ba901e41027",
+  "scope": "All48 GEO contexts, all303 pairs, all eligible conditional and unrestricted895interaction contrasts. Scores reconstructed from expression; observed contrasts independently fitted with dummy-block OLS; all assignments replayed with indexed sums; explicit global BH. Other clinical confounders remain; no contact or causal inference."
+}

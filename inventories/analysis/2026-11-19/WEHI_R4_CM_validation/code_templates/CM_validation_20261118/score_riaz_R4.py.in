@@ -1,0 +1,42 @@
+"""Frozen R4 scores in Riaz baseline patients; joint exploratory ICI family."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+from scipy.stats import rankdata,mannwhitneyu
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=R/'bulk_R4_candidates';O=B/'riaz_response_v1';O.mkdir(exist_ok=False)
+plan=dict(status='FROZEN_BEFORE_RIAZ_RESPONSE_RESULTS',primary_input='riaz_inputs_v2 approved plus unique previous symbols',sensitivity_input='riaz_inputs_v1 current-symbol exact only',
+ scores='51 baseline patients including 2 unknown-response; mean within-baseline gene z of log2(1+CPM), ddof1, >=48 variable mapped genes; fixed 15 CM x 2 branches',
+ primary_response='CR/PR vs SD/PD, 49 author-verified patients',secondary_response='CR/PR vs PD only; omit SD, explicitly different clinical contrast',
+ testing='fixed direction higher score predicts response; exact two-sided MWU unless ties; 9999 label permutations within prior-ipilimumab cohort, centered on stratum-specific null expectation',
+ family='joint BH across all Riaz input versions/response contrasts/CM/branches/test methods and prior 120 Hugo tests; separate ICI family from TCGA immune-fraction hypotheses',
+ seed=2026111819,limitations='previously used retrospective cohorts, no untreated comparator, small responder count; no response-trained genes/threshold or classifier; not validated treatment-specific prediction')
+(O/'plan.json').open('x').write(json.dumps(plan,indent=2))
+sig=pd.read_csv(B/'candidate_signatures.tsv',sep='\t');assert hashlib.sha256((B/'candidate_signatures.tsv').read_bytes()).hexdigest()=='98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2'
+rows=[];score_rows=[];design=[]
+for version in ['riaz_inputs_v2','riaz_inputs_v1']:
+ I=B/version;assert json.loads((I/'independent_audit.json').read_text())['status'].startswith('PASS_')
+ a=ad.read_h5ad(I/'baseline_candidate_expression_PRIVATE.h5ad');assert a.n_obs==51 and a.obs.PatientID.is_unique
+ mu=a.X.mean(axis=0);sd=a.X.std(axis=0,ddof=1);valid=sd>1e-8;Z=np.divide(a.X-mu,sd,out=np.zeros_like(a.X),where=valid)
+ pd.DataFrame(dict(gene=a.var_names,mean=mu,sd=sd)).to_csv(O/(version+'_standardization.tsv'),sep='\t',index=False)
+ for endpoint in ['CRPR_vs_SDPD','CRPR_vs_PD']:
+  use=a.obs.eligible_baseline_response.to_numpy(bool).copy()
+  if endpoint=='CRPR_vs_PD':use&=a.obs.BOR.astype(str).ne('SD').to_numpy()
+  m=a.obs[use];assert set(m.Cohort.astype(str))=={'NIV3-PROG','NIV3-NAIVE'}
+  y=m.BOR.astype(str).isin(['CR','PR']).to_numpy(int);n1=int(y.sum());n0=len(y)-n1;assert min(n1,n0)>=5
+  strata=m.Cohort.astype(str).to_numpy();blocks=[np.flatnonzero(strata==v) for v in sorted(set(strata))];Y=np.tile(y,(9999,1));rng=np.random.default_rng(plan['seed'])
+  for ix in blocks:
+   for k in range(len(Y)):Y[k,ix]=rng.permutation(y[ix])
+  for stratum,g in m.groupby('Cohort',observed=True):design.append(dict(version=version,endpoint=endpoint,cohort=stratum,patients=len(g),responders=int(g.BOR.astype(str).isin(['CR','PR']).sum())))
+  for (branch,cm),s in sig.groupby(['branch','cm']):
+   cols=a.var_names.get_indexer(s.gene);cols=cols[cols>=0];cols=cols[valid[cols]];assert len(cols)>=48
+   score=Z[:,cols].mean(axis=1);v=score[use];rank=rankdata(v);method='exact' if len(set(v))==len(v) else 'asymptotic';mw=mannwhitneyu(v[y==1],v[y==0],alternative='two-sided',method=method)
+   center=sum(rank[ix].sum()*y[ix].mean() for ix in blocks);stat=float(rank@y-center);null=Y@rank-center;pperm=float((1+(abs(null)>=abs(stat)-1e-10).sum())/10000)
+   rows.append(dict(input_version=version,endpoint=endpoint,branch=branch,cm=cm,patients=len(y),responders=n1,nonresponders=n0,genes=len(cols),auc_higher_score_response=float(mw.statistic/(n1*n0)),p_MWU=float(mw.pvalue),MWU_method=method,p_prior_ipi_permutation=pperm))
+   if endpoint=='CRPR_vs_SDPD':score_rows.extend(dict(input_version=version,branch=branch,cm=cm,sample=sample,patient=a.obs.loc[sample,'PatientID'],score=float(value)) for sample,value in zip(a.obs_names,score))
+a=pd.DataFrame(rows);h=pd.read_csv(B/'hugo_response_v1/response_associations.tsv',sep='\t');assert json.loads((B/'hugo_response_v1/independent_audit.json').read_text())['status'].startswith('PASS_')
+hp=h[['p_MWU','p_stratified_permutation']].to_numpy().ravel();rp=a[['p_MWU','p_prior_ipi_permutation']].to_numpy().ravel();p=np.r_[hp,rp];assert np.isfinite(p).all();q=multipletests(p,method='fdr_bh')[1]
+h[['q_ICI_joint_MWU','q_ICI_joint_stratified']]=q[:len(hp)].reshape(-1,2);a[['q_ICI_joint_MWU','q_ICI_joint_prior_ipi']]=q[len(hp):].reshape(-1,2)
+a.to_csv(O/'response_associations.tsv',sep='\t',index=False);h.to_csv(O/'Hugo_response_joint_q.tsv',sep='\t',index=False);pd.DataFrame(score_rows).to_csv(O/'scores_PRIVATE.tsv.gz',sep='\t',index=False);pd.DataFrame(design).to_csv(O/'response_strata.tsv',sep='\t',index=False)
+proof=dict(status='RIAZ_RESPONSE_PENDING_INDEPENDENT_AUDIT',baseline_scoring_patients=51,Riaz_tests=len(rp),Hugo_tests=len(hp),joint_ICI_tests=len(p),limitations=plan['limitations'])
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(a[(a.cm=='CM12')&(a.branch=='original_network_members')].to_string(index=False));print('MIN_JOINT_Q',a[['q_ICI_joint_MWU','q_ICI_joint_prior_ipi']].min().to_dict())

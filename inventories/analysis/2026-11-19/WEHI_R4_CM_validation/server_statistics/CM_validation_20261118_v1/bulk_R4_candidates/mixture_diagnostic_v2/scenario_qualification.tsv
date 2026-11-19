@@ -1,0 +1,31 @@
+cm	scenario	status	missing_parents
+CM01	all_other_nodes	SIMULATED	
+CM01	lineage_matched_other_nodes	UNASSESSABLE_NO_NONMEMBER_WITHIN_PARENT	ILC
+CM02	all_other_nodes	SIMULATED	
+CM02	lineage_matched_other_nodes	SIMULATED	
+CM03	all_other_nodes	SIMULATED	
+CM03	lineage_matched_other_nodes	SIMULATED	
+CM04	all_other_nodes	SIMULATED	
+CM04	lineage_matched_other_nodes	UNASSESSABLE_NO_NONMEMBER_WITHIN_PARENT	ILC
+CM05	all_other_nodes	SIMULATED	
+CM05	lineage_matched_other_nodes	UNASSESSABLE_NO_NONMEMBER_WITHIN_PARENT	ILC
+CM06	all_other_nodes	SIMULATED	
+CM06	lineage_matched_other_nodes	UNASSESSABLE_NO_NONMEMBER_WITHIN_PARENT	ILC
+CM07	all_other_nodes	SIMULATED	
+CM07	lineage_matched_other_nodes	SIMULATED	
+CM08	all_other_nodes	SIMULATED	
+CM08	lineage_matched_other_nodes	UNASSESSABLE_NO_NONMEMBER_WITHIN_PARENT	ILC
+CM09	all_other_nodes	SIMULATED	
+CM09	lineage_matched_other_nodes	UNASSESSABLE_NO_NONMEMBER_WITHIN_PARENT	ILC
+CM10	all_other_nodes	SIMULATED	
+CM10	lineage_matched_other_nodes	SIMULATED	
+CM11	all_other_nodes	SIMULATED	
+CM11	lineage_matched_other_nodes	SIMULATED	
+CM12	all_other_nodes	SIMULATED	
+CM12	lineage_matched_other_nodes	SIMULATED	
+CM13	all_other_nodes	SIMULATED	
+CM13	lineage_matched_other_nodes	SIMULATED	
+CM14	all_other_nodes	SIMULATED	
+CM14	lineage_matched_other_nodes	SIMULATED	
+CM15	all_other_nodes	SIMULATED	
+CM15	lineage_matched_other_nodes	SIMULATED	

@@ -1,0 +1,15 @@
+{
+  "status": "PIECEWISE_ANALYSIS_INDEPENDENTLY_AUDITED_AND_FAMILY_UPDATE_RECORDED",
+  "constant_models": 3690,
+  "prior_q05_old_family": 154,
+  "prior_q05_extended_family": 125,
+  "constant_q05_decisions_changed": 29,
+  "CM12_primary_piecewise_fitted": 105,
+  "CM12_primary_time_change_q05": 0,
+  "CM12_primary_old_constant_q05": 4,
+  "CM12_primary_extended_constant_q05": 2,
+  "new_time_change_model_combinations_q05": 9,
+  "joint_tests": 13140,
+  "audit_sha256": "bff1e88ea56170c7c863c097512f5ef7a3cf85e80e10680a973dde7b4009b20d",
+  "scope": "Older3690-model q values remain valid for that original family and are retained. For combined constant+piecewise claims use q_joint_piecewise/q_joint_early/late/change over13140 tests. PH diagnostic family remains separate. Model-combination positives are not independent biomarkers or external validation."
+}

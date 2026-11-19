@@ -1,0 +1,20 @@
+{
+  "status": "REFERENCE_REGRESSION_AND_1000_POSTERIOR_SAMPLES_COMPLETE_PENDING_AUDIT",
+  "UTC_start": "2026-11-15T09:11:29.964732+00:00",
+  "UTC_end": "2026-11-15T09:21:48.661220+00:00",
+  "n_reference_cells": 48322,
+  "n_reference_labels": 49,
+  "n_genes_after_recommended_filter": 11600,
+  "epochs_requested": 250,
+  "epochs_recorded": 250,
+  "posterior_samples": 1000,
+  "version": {
+    "torch": "2.5.1.post207",
+    "cell2location": "0.1.5",
+    "scvi": "1.4.1"
+  },
+  "gpu": "Tesla V100-PCIE-32GB",
+  "ELBO_final": 277310432.0,
+  "all_signatures_finite_nonnegative": true,
+  "signatures_sha256": "d08cd772afb6360f92bf7c0ddfb1f726cfaacba316dd95207a8ec467dfa81061"
+}

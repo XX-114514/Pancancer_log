@@ -1,0 +1,26 @@
+{
+  "selection": "first two available accession-ordered primary breast sections from GSE203612; first two ccRCC sections from GSE273952; no current R4 spatial outcome used",
+  "sections": [
+    "S001",
+    "S002",
+    "S037",
+    "S038"
+  ],
+  "primary_modules": [
+    "CM01",
+    "CM12",
+    "CM04"
+  ],
+  "all_modules_reported": 15,
+  "reference": "R4 A/B/B2/C1; exact Plasma overlay; <=1000 cells per node; old epithelial nuisance labels only, separate provenance",
+  "cell2location": {
+    "reference_epochs": 250,
+    "spatial_epochs": 30000,
+    "N_cells_per_location": 5,
+    "detection_alpha": 20,
+    "posterior_samples": 1000
+  },
+  "metrics": "frozen W weighted activity / global p99; author Spearman colocalization and directed 60NN inverse-square Moran aggregation; means primary q05 sensitivity",
+  "imaging": "six breast Xenium 5k and one renal Xenium RNA+protein; measured-marker proxies only, no missing-as-zero",
+  "inference": "descriptive section-level replication; no pooled spot P values or patient independence assumption"
+}

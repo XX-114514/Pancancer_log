@@ -1,0 +1,27 @@
+from pathlib import Path
+import csv,json,html
+R=Path(__file__).parent
+def rows(name):
+ p=R/name
+ return list(csv.DictReader(p.open(),delimiter='\t')) if p.exists() else []
+def table(data,columns=None):
+ if not data:return '<p>未完成或不可估计，见状态记录。</p>'
+ columns=columns or list(data[0]);s='<table><thead><tr>'+''.join('<th>'+html.escape(k)+'</th>' for k in columns)+'</tr></thead><tbody>'
+ for row in data:
+  s+='<tr>'+''.join('<td>'+html.escape(str(row.get(k,'')))+'</td>' for k in columns)+'</tr>'
+ return s+'</tbody></table>'
+edge=rows('edge_stratified_tests.tsv');sp=rows('spatial_marker_proxy.tsv');lr=rows('native_LR_descriptive.tsv')
+focus=[r for r in edge if r['a'].startswith('Endo_') or r['b']=='Endo_venous_ACKR1' or (r['a']=='Mye_Mac_FOLR2' and r['b']=='Str_Pericyte_RGS5')]
+parts=['''<!doctype html><html lang="zh"><meta charset="utf-8"><title>WEHI R4 血管生态位下游分析</title><style>body{font:16px/1.65 system-ui;margin:40px auto;max-width:1200px;padding:0 24px;color:#20303a}table{border-collapse:collapse;font-size:13px;display:block;overflow-x:auto}td,th{padding:9px;border:1px solid #ccd5db;text-align:left}th{background:#eaf0f4}h1,h2{color:#123d51}.note{padding:16px;background:#fff3d6}code{overflow-wrap:anywhere}</style><h1>WEHI R4：CM01 血管生态位下游分析</h1><p>2026-11-15 · 新批次接收验收、组成稳健性、原生空间 marker 代理及募集轴共检出。</p>
+<p>主轴为 ACKR1 内皮—PI16 成纤维细胞，CM12 tip 内皮—周细胞—巨噬细胞作比较，CM04 动脉内皮—平滑肌作血管对照。沿用旧内皮–NK–B hub 的“组成→空间→通讯→临床”顺序，但不复用旧模块身份。</p><p class="note">首轮结论：ACKR1–PI16 的组成关联稳健；六张乳腺切片的50μm空间代理检验均未通过BH（q≥0.888）。当前应称候选血管相关组成模块，尚非已验证的空间hub。空间阴性限定于本代理、数据及零模型，不代表否定所有组织中的生态位。</p>
+<h2>接收与独立验收</h2><p>95 个交接文件 SHA256 全部重新通过。R4 的 2,779,785 个细胞 ID 唯一；92,329 条 Plasma overlay 的键唯一且均为 R4 精确子集。1,196 单元、70 来源、44 节点；44 个频率列均可从 refined_counts 与实际父类分母独立重建。新分析未修改源文件或旧分析。</p>
+<h2>模块权重与原网络</h2>''',table(rows('module_weight_audit.tsv')),
+'''<h2>组成主分析</h2><p>预先选定三个模块的全部原边，去重后共15边。主分析要求边两端父类各≥20细胞，另做≥1和≥50敏感性。来源×癌种内取秩并中心化，保留每组至少4单元且双方非恒定的层；1999次层内置换，15边统一BH。层内秩协方差汇总会更重视较大来源；这是发现数据的稳健性分析，不是独立复现。1,196个单元不能直接当成1,196名患者。</p>
+<p>ACKR1–PI16：主分析521单元、64来源；原始Spearman 0.484，分层相关0.465，BH 0.00094。逐来源留出后的固定边相关范围0.472–0.498。此处没有重拟合每个留出集的nsNMF，也不声称作者网络阈值逐来源全部通过。</p>
+<p>GZMK CD8 T–ACKR1 的分层支持较弱且靠近阈值（BH约0.049），不应据此宣称已建立免疫募集hub。CM12 的周细胞–FOLR2巨噬细胞分层相关约0.017，BH约0.764，三方协同尚不成立。</p>''',table(focus),
+'''<h2>原生空间检验</h2><p>复用六张既有乳腺Xenium切片的已审核大类身份/QC、原生微米坐标与细胞顺序；逐文件重新核对哈希。定义ACKR1阳性的血内皮和PI16阳性的成纤维细胞作为marker代理，不能等同于精确R4亚型或完整CM01投射。</p><p>主半径50μm；25/100/200μm仅作描述性敏感性。以500μm空间块×测量深度四分位为层，在成纤维细胞中置换PI16阳性标签999次；按完成切片统一BH。该零模型控制局部空间块和深度，不完全控制组织学区室/TLS。距离是细胞质心距离，不是真实血管壁接触。切片内P值不代表患者级复制。</p>''',table([r for r in sp if r['radius_um']=='50']),
+'''<h2>募集通讯证据边界</h2><p>本轮仅检验PI16阳性成纤维细胞中的CCL19/CCL21/CXCL12与B/T/NK细胞中CCR7/CXCR4的原生RNA检出及50μm邻近。以下全量结果包括零值；没有把这些计数称作显著配体–受体互作、方向性或因果。正式CellChat/双来源scRNA支持与配体受体条件零模型尚未完成。</p>''',table(lr),
+'''<h2>临床与后续验收</h2><p>本轮未运行临床/ICI模型。当前单marker空间代理不能直接替代固定的亚型表达签名；既往I-SPY2结果已被探索，不能作为新签名的独立确认。完成多marker亚型验证、患者/切片映射、组织学/TLS校正和冻结跨平台可测签名后，再检验相对于总EC、总成纤维、pan-T和TLS的增量关联及治疗交互。</p>
+<h2>结果保存位置</h2><code>${PROJECT_ARCHIVE_ROOT}/vascular_downstream_20261115_v1/</code><p>原交接目录：w2o_annotation_r4_covarnet_k15_20261115_v1。代码、冻结方案、输入验收及详细汇总保留服务器；本地只保留代码和小型聚合结果。无公共仓库发布。</p></html>''']
+(R/'report.html').write_text(''.join(parts))
+print(R/'report.html')

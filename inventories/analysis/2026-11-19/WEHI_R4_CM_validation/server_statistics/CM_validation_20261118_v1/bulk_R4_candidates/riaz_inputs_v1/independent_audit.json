@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_SELECTED_GENES_ALL_BASELINE_SAMPLES_RAW_COUNT_REPLAY_FULL_LIBRARY_DENOMINATORS_AND_GENE_PATIENT_AXES",
+  "baseline_patients": 51,
+  "signature_genes": 848,
+  "raw_gene_rows": 22187,
+  "replayed_values": 43248,
+  "max_error": 1.7763568394002505e-15,
+  "output_sha256": "b3b1de5b42ee0308f6ed2f98c0ad42be520764e6fdaa20a00c73fdb2c7bce48a",
+  "limitations": "input qualification only; no outcome model or prediction validation"
+}

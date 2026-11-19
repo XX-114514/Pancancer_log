@@ -1,0 +1,43 @@
+"""Readback plus measured-component and within-CMT multiplicity sensitivity."""
+from pathlib import Path
+import json,sys,hashlib
+import numpy as np,pandas as pd
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+cm=sys.argv[1];assert cm in ['CM%02d'%i for i in range(1,16)]
+out=R/'communication'/cm;proof=json.loads((out/'complete.json').read_text())
+assert proof['iterations']==1000 and proof['CMT']==cm and proof['subsampling'] is False
+for name,digest in proof['files'].items():assert hashlib.sha256((out/name).read_bytes()).hexdigest()==digest
+def read(kind):
+ paths=list(out.glob('statistical_analysis_'+kind+'_*.txt'));assert len(paths)==1
+ t=pd.read_csv(paths[0],sep='\t');assert t.id_cp_interaction.is_unique
+ return t.set_index('id_cp_interaction')
+p=read('pvalues');m=read('means');s=read('significant_means')
+assert set(p.index)==set(m.index)==set(s.index);m=m.loc[p.index];s=s.loc[p.index]
+cols=[c for c in p.columns if '|' in c]
+assert set(cols)=={a+'|'+b for a in proof['label_cell_counts'] for b in proof['label_cell_counts']}
+pv=p[cols].to_numpy(float);mu=m[cols].to_numpy(float);sig=s[cols].to_numpy(float)
+assert np.isfinite(pv).all() and ((pv>=0)&(pv<=1)).all() and np.isfinite(mu).all()
+assert np.all(np.isnan(sig)|(np.abs(sig-mu)<1e-6))
+assert np.array_equal(np.isfinite(sig),pv<=.05)
+coverage=pd.read_csv(R/'CPDB_interaction_measurement.tsv',sep='\t').set_index('id_cp_interaction')
+assert p.index.isin(coverage.index).all();eligible=coverage.loc[p.index,'all_required_components_measured'].to_numpy(bool)
+# Sensitivity only: avoid interpreting finite-permutation zero as an exact zero.
+assert np.allclose(pv*1000,np.rint(pv*1000),atol=1e-5)
+mc=(pv*1000+1)/1001
+q=np.full_like(pv,np.nan)
+q[eligible]=multipletests(mc[eligible].ravel(),method='fdr_bh')[1].reshape(eligible.sum(),len(cols))
+pd.DataFrame(q,index=p.index,columns=cols).to_csv(out/'MC_corrected_BH_within_CMT.tsv.gz',sep='\t')
+rows=[]
+for j,col in enumerate(cols):
+ a,b=col.split('|')
+ rows.append(dict(source_identity=a,target_identity=b,author_raw_p_le_0_05_events=int((pv[:,j]<=.05).sum()),
+                  raw_p_le_0_05_complete_input_components=int(((pv[:,j]<=.05)&eligible).sum()),
+                  MC_corrected_BH_within_CMT_events=int((q[:,j]<=.05).sum())))
+pd.DataFrame(rows).to_csv(out/'audited_pair_counts.tsv',sep='\t',index=False)
+audit=dict(status='PASS_CPDB_OUTPUT_HASH_ID_SCOPE_P_AND_SIGNIFICANCE_READBACK',cm=cm,cellpairs=len(cols),retained_database_interactions=len(p),
+           rows_with_complete_components_in_current_input=int(eligible.sum()),rows_without_complete_components_in_current_input=int((~eligible).sum()),
+           raw_significant_events=int((pv<=.05).sum()),MC_BH_significant_events=int((q<=.05).sum()),
+           MC_sensitivity='(p*1000+1)/1001 then BH across all input-complete interaction x ordered identity-pair entries within this CMT',
+           limitations='raw author output retained; pooled-cell permutation, not patient-level inference; no correction across 15 CMTs yet; High/Low differential communication not established; source-target labels do not prove directional signalling')
+(out/'independent_audit.json').write_text(json.dumps(audit,indent=2));print(json.dumps(audit))

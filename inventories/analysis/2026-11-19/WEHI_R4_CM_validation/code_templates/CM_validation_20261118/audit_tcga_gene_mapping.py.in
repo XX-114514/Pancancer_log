@@ -1,0 +1,32 @@
+"""Exact versioned Ensembl mapping; never silently collapse ambiguous symbols."""
+from pathlib import Path
+import gzip,json,hashlib,time
+import pandas as pd,numpy as np
+B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/tcga')
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+mp=B/'gencode.v23.annotation.gene.probemap';mapping=pd.read_csv(mp,sep='\t',dtype=str);assert mapping.id.is_unique
+ids=[];ncols=None;started=time.time()
+with gzip.open(B/'tcga_RSEM_gene_tpm.gz','rt',encoding='utf-8') as f:
+ header=f.readline().rstrip('\n').split('\t');ncols=len(header)-1
+ for line in f:
+  identifier,values=line.split('\t',1);assert values.count('\t')+1==ncols
+  ids.append(identifier)
+  if len(ids)%10000==0:(R/'clinical/TCGA_gene_mapping_progress.json').write_text(json.dumps(dict(rows_scanned=len(ids),seconds=time.time()-started)))
+assert len(ids)==len(set(ids))
+d=pd.DataFrame({'expression_row':np.arange(len(ids)),'expression_gene_id':ids})
+d=d.merge(mapping[['id','gene']],left_on='expression_gene_id',right_on='id',how='left',validate='one_to_one')
+d['exact_versioned_id_matched']=d.id.notna();d['gene_symbol_usable']=d.gene.notna()&d.gene.str.strip().ne('')
+frequency=d.loc[d.gene_symbol_usable,'gene'].value_counts();d['expression_rows_per_symbol']=d.gene.map(frequency)
+d['unique_symbol_mapping']=d.gene_symbol_usable&d.expression_rows_per_symbol.eq(1)
+d.to_csv(R/'clinical/TCGA_gene_mapping.tsv.gz',sep='\t',index=False)
+symbols=set(d.loc[d.unique_symbol_mapping,'gene'])
+reference=pd.read_csv(R.parent/'spatial_CoVarNet_R4_20261115_v1/reference/signatures_PRIVATE.tsv',sep='\t',index_col=0)
+pd.DataFrame({'gene':reference.index,'unique_TCGA_mapping':reference.index.isin(symbols)}).to_csv(R/'clinical/TCGA_R4_reference_gene_coverage.tsv',sep='\t',index=False)
+summary=dict(status='PASS_EXACT_EXPRESSION_ROW_AND_VERSIONED_ENSEMBL_MAPPING_AUDIT',expression_rows=len(d),expression_samples=ncols,
+             exact_mapped_rows=int(d.exact_versioned_id_matched.sum()),unmatched_rows=int((~d.exact_versioned_id_matched).sum()),
+             ambiguous_symbol_rows=int((d.gene_symbol_usable&~d.unique_symbol_mapping).sum()),unique_usable_symbols=len(symbols),
+             R4_fitted_reference_genes=len(reference),R4_genes_with_unique_mapping=int(reference.index.isin(symbols).sum()),
+             mapping_sha256=hashlib.sha256(mp.read_bytes()).hexdigest(),seconds=time.time()-started,
+             policy='Exact full versioned IDs only; ambiguous symbol rows flagged for explicit decision, not silently summed or averaged',
+             limitations='checked every row width and ID, not every numerical value; no R4 signature, score, clinical fit or gene-alias rescue yet')
+(R/'clinical/TCGA_gene_mapping_audit.json').write_text(json.dumps(summary,indent=2));print(json.dumps(summary))

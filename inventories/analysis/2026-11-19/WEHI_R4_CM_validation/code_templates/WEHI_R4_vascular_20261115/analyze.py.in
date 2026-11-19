@@ -1,0 +1,87 @@
+"""Versioned R4 vascular composition audit; server-only private inputs/outputs."""
+from pathlib import Path
+import json, hashlib, datetime, warnings
+import numpy as np
+import pandas as pd
+from scipy.stats import spearmanr, rankdata
+
+ROOT=Path('${PROJECT_ARCHIVE_ROOT}')
+SRC=ROOT/'w2o_annotation_r4_covarnet_k15_20261115_v1'
+OUT=ROOT/'vascular_downstream_20261115_v1'
+OUT.mkdir(exist_ok=True)
+plan={'modules':['CM01','CM12','CM04'], 'primary':'CM01', 'comparison':'CM12', 'vascular_control':'CM04',
+ 'scope':'all original edges of the three fixed modules, no outcome-driven edge selection',
+ 'main':'both endpoint parent denominators >=20; undefined denominator remains NA',
+ 'sensitivity':['defined parents >0','both parents >=50','leave-one-source-out fixed edge correlation'],
+ 'inference':'within source x cancer rank-centered correlation; 1999 within-stratum permutations; BH over all selected unique edges',
+ 'limitations':['discovery-data sensitivity, not independent validation','unit IDs not verified patient IDs','LOSO correlations do not refit nsNMF or author network','no spatial or causal claim'],
+ 'utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+(OUT/'frozen_plan.json').write_text(json.dumps(plan,indent=2))
+checks=[]
+for line in (SRC/'SHA256SUMS').read_text().splitlines():
+    h,name=line.split(maxsplit=1); name=name.lstrip('*')
+    p=SRC/name
+    got=hashlib.sha256(p.read_bytes()).hexdigest()
+    checks.append({'path':name,'match':got==h,'sha256':got})
+assert all(c['match'] for c in checks)
+(OUT/'input_acceptance.json').write_text(json.dumps({'files':checks,'verified':True},indent=2))
+def read(name,**kw): return pd.read_csv(SRC/name,sep='\t',**kw)
+freq=read('covarnet/parent_frequencies.tsv',index_col=0)
+audit=read('covarnet/unit_audit.tsv',index_col=0).reindex(freq.index)
+mapping=read('covarnet/node_mapping.tsv').set_index('node').majorCluster.to_dict()
+edges=read('covarnet/export/module_edges.tsv')
+edges=edges[edges.cm.isin(plan['modules'])].copy()
+edges.to_csv(OUT/'fixed_module_edges.tsv',sep='\t',index=False)
+weights=read('covarnet/paper/cm_node_weights.tsv',index_col=0)
+module=[]
+for cm in plan['modules']:
+    es=edges[edges.cm==cm]; nodes=set(es.subCluster1)|set(es.subCluster2)
+    w=weights[cm]; total=w.sum()
+    module.append({'cm':cm,'network_nodes':len(nodes),'edges':len(es),'network_weight_fraction':w.reindex(list(nodes)).sum()/total,
+      'top5':'; '.join(f'{n}:{v/total:.3f}' for n,v in w.nlargest(5).items())})
+pd.DataFrame(module).to_csv(OUT/'module_weight_audit.tsv',sep='\t',index=False)
+rng=np.random.default_rng(20261115)
+rows=[]; bygroup=[]; losos=[]
+def corr(x,y):
+    if len(x)<4 or np.std(x)==0 or np.std(y)==0:return np.nan
+    return float(spearmanr(x,y).statistic)
+for (a,b), ee in edges.groupby(['subCluster1','subCluster2'],sort=True):
+    base={'a':a,'b':b,'modules':','.join(sorted(ee.cm.unique()))}
+    for threshold in [1,20,50]:
+        mask=(audit['main_'+mapping[a]]>=threshold)&(audit['main_'+mapping[b]]>=threshold)&freq[a].notna()&freq[b].notna()
+        d=audit.loc[mask,['source','cancer']].copy(); d['x']=freq.loc[mask,a];d['y']=freq.loc[mask,b]
+        r={**base,'min_parent':threshold,'n_units':len(d),'n_sources':d.source.nunique(),'rho':corr(d.x,d.y)}
+        if threshold==20:
+            for kind in ['source','cancer']:
+                for label,g in d.groupby(kind):
+                    bygroup.append({**base,'kind':kind,'group':label,'n':len(g),'rho':corr(g.x,g.y)})
+            for s in d.source.unique():
+                g=d[d.source!=s];losos.append({**base,'excluded_source':s,'n':len(g),'rho':corr(g.x,g.y)})
+            # Ranks within each source/cancer stratum prevent between-stratum confounding.
+            xs=[];ys=[];groups=[];offset=0
+            for _,g in d.groupby(['source','cancer']):
+                if len(g)<4 or g.x.nunique()<2 or g.y.nunique()<2:continue
+                x=rankdata(g.x);y=rankdata(g.y);x-=x.mean();y-=y.mean()
+                xs.extend(x);ys.extend(y);groups.append(np.arange(offset,offset+len(g)));offset+=len(g)
+            x=np.array(xs);y=np.array(ys);den=np.linalg.norm(x)*np.linalg.norm(y)
+            r['stratified_n']=len(x);r['strata']=len(groups)
+            r['stratified_rho']=float(x@y/den) if den else np.nan
+            if den:
+                hit=0
+                for _ in range(1999):
+                    yp=y.copy()
+                    for ix in groups:yp[ix]=rng.permutation(y[ix])
+                    hit+=abs(x@yp/den)>=abs(r['stratified_rho'])
+                r['permutation_p']=(hit+1)/2000
+        rows.append(r)
+res=pd.DataFrame(rows);main=res[res.min_parent==20].copy()
+p=main.permutation_p.fillna(1).to_numpy();order=np.argsort(p);q=np.minimum.accumulate((p[order]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1]
+main['BH']=np.nan;main.iloc[order,main.columns.get_loc('BH')]=np.minimum(q,1)
+res.to_csv(OUT/'edge_threshold_sensitivity.tsv',sep='\t',index=False)
+main.to_csv(OUT/'edge_stratified_tests.tsv',sep='\t',index=False)
+pd.DataFrame(bygroup).to_csv(OUT/'edge_by_source_cancer.tsv',sep='\t',index=False)
+pd.DataFrame(losos).to_csv(OUT/'fixed_edge_LOSO.tsv',sep='\t',index=False)
+summary={'status':'composition_audit_complete','verified_payload_files':len(checks),'units':len(freq),'nodes':len(freq.columns),'tested_unique_edges':len(main),'BH_significant':int((main.BH<.05).sum()),'modules':module,'limits':plan['limitations']}
+(OUT/'summary.json').write_text(json.dumps(summary,indent=2))
+print(json.dumps(summary,indent=2))
+print(main.to_string(index=False))

@@ -1,0 +1,5 @@
+{
+  "before_sha256": "5b393c8d13def941a4e1e27210791a621b4060bf27be88d73987cd317d2ebd9f",
+  "after_sha256": "1c1c1c9033f03b46b2c9c2837e03b2da833169441a7e7ce0e7ebaa2585247999",
+  "change": "barcode ndarray object to Unicode from original verified h5; all numerical arrays bit-identical; no pickle loaded"
+}

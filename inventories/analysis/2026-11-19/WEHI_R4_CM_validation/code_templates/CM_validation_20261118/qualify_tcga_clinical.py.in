@@ -1,0 +1,42 @@
+"""Exact sample-key qualification; no expression scores or survival models yet."""
+from pathlib import Path
+import gzip,csv,json,hashlib
+import pandas as pd,numpy as np
+B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/tcga')
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/clinical')
+scale_path=R.parent/'sources/tcga_metadata/tcga_RSEM_gene_tpm.json'
+scale=json.loads(scale_path.read_text());assert scale['unit']=='log2(tpm+0.001)'
+with gzip.open(B/'tcga_RSEM_gene_tpm.gz','rt',encoding='utf-8') as f:columns=next(csv.reader(f,delimiter='\t'))[1:]
+assert len(columns)==len(set(columns))
+surv=pd.read_csv(B/'TCGA_survival_S1.tsv',sep='\t');ph=pd.read_csv(B/'TCGA_phenotype.tsv.gz',sep='\t');immune=pd.read_csv(B/'TCGA_immune_subtype.txt.gz',sep='\t')
+for table in [surv,ph,immune]:assert table['sample'].is_unique
+d=pd.DataFrame({'sample':columns}).merge(ph,on='sample',how='left',validate='one_to_one').merge(surv,on='sample',how='left',validate='one_to_one').merge(immune,on='sample',how='left',validate='one_to_one')
+d['expression_matched']=True;d['clinical_matched']=d._PATIENT.notna()
+matched=d[d.clinical_matched];assert matched['sample'].str[:12].eq(matched._PATIENT).all()
+d['primary_tumor']=d.sample_type.eq('Primary Tumor')
+d['OS_valid']=d.OS.isin([0,1])&pd.to_numeric(d['OS.time'],errors='coerce').gt(0)
+candidate=d.primary_tumor&d.clinical_matched&d.OS_valid
+counts=d.loc[candidate,'_PATIENT'].value_counts()
+d['duplicate_patient_primary_candidates']=d._PATIENT.map(counts).fillna(0).gt(1)
+d['provisional_OS_candidate']=candidate&~d.duplicate_patient_primary_candidates
+d['eligible_for_confirmatory_model']=False
+d.to_csv(R/'TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t',index=False)
+rows=[]
+for cancer,v in d[d.provisional_OS_candidate].groupby('cancer type abbreviation'):
+ rows.append(dict(cancer=cancer,patients=v._PATIENT.nunique(),OS_events=int(v.OS.sum()),
+                  age_available=int(pd.to_numeric(v.age_at_initial_pathologic_diagnosis,errors='coerce').notna().sum()),
+                  sex_available=int(v.gender.isin(['MALE','FEMALE']).sum()),
+                  immune_subtype_available=int(v.Subtype_Immune_Model_Based.notna().sum())))
+pd.DataFrame(rows).to_csv(R/'TCGA_primary_OS_feasibility.tsv',sep='\t',index=False)
+proof=dict(status='PASS_EXACT_SAMPLE_CLINICAL_KEYS_PATIENT_PREFIX_AND_OS_CODING',expression_samples=len(d),phenotype_matched=int(d.sample_type.notna().sum()),
+           clinical_matched=int(d.clinical_matched.sum()),sample_types=d.sample_type.fillna('UNMATCHED').value_counts().to_dict(),
+           primary_tumor_samples=int(d.primary_tumor.sum()),provisional_OS_candidates=int(d.provisional_OS_candidate.sum()),
+           duplicate_patient_primary_candidate_rows=int(d.duplicate_patient_primary_candidates.sum()),
+           OS_nonpositive_or_missing_excluded=int((d.primary_tumor&d.clinical_matched&~d.OS_valid).sum()),
+           cancers_with_candidates=len(rows),eligible_for_confirmatory_model=False,
+           metadata_hashes={name:hashlib.sha256((B/name).read_bytes()).hexdigest() for name in ['TCGA_survival_S1.tsv','TCGA_phenotype.tsv.gz','TCGA_immune_subtype.txt.gz']},
+           expression_header_sha256=hashlib.sha256('\n'.join(columns).encode()).hexdigest(),
+           expression_unit=scale['unit'],expression_metadata_sha256=hashlib.sha256(scale_path.read_bytes()).hexdigest(),
+           linear_TPM_inverse='2**value - 0.001; small negative rounding artifacts require explicit tolerance, not interpreting file values as linear TPM',
+           limitations='gene mapping pending; OS time origin/units primary-source verification pending; frozen R4 signature and covariates pending; immune subtype is not continuous immune infiltration; prior TCGA analyses exist, not untouched validation')
+(R/'TCGA_clinical_bridge_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

@@ -1,0 +1,99 @@
+gene_panel_key	node	n_native_model_genes	n_classifier_train_selected_genes	heldout_cells	precision	recall	F1	diagnostic_F1_ge_0_5	naming_genes_measured	naming_genes_not_measured	meaning
+6cf061ee1b778512	B_GC_RGS13	11600	2000	100	0.9634146341463414	0.79	0.8681318681318682	True	RGS13		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	B_atypical_ZEB2	11600	2000	100	0.8571428571428571	0.78	0.8167539267015707	True	ZEB2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	B_mem_GPR183	11600	2000	100	0.7641509433962265	0.81	0.7864077669902912	True	GPR183		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	B_naive_FCER2	11600	2000	100	0.8256880733944955	0.9	0.861244019138756	True	FCER2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD4T_Tfh-like_CXCL13	11600	2000	100	0.7971014492753623	0.55	0.650887573964497	True	CXCL13		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD4T_Tm_IL7R	11600	2000	100	0.5740740740740741	0.62	0.5961538461538461	True	IL7R		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD4T_Treg_FOXP3	11600	2000	100	0.9295774647887324	0.66	0.7719298245614035	True	FOXP3		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD4T_naive_CCR7	11600	2000	100	0.4	0.56	0.4666666666666667	False	CCR7		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD4T_prolif_MKI67	11600	2000	100	0.7049180327868853	0.86	0.7747747747747747	True	MKI67		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD8T_Tem_GZMK	11600	2000	100	0.475	0.57	0.5181818181818182	True	GZMK		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD8T_Temra_GZMH	11600	2000	100	0.7294117647058823	0.62	0.6702702702702703	True	GZMH		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD8T_Tex_LAG3	11600	2000	100	0.71875	0.69	0.7040816326530612	True	LAG3		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD8T_naive_CCR7	11600	2000	100	0.49206349206349204	0.62	0.5486725663716814	True	CCR7		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	CD8T_prolif_MKI67	11600	2000	100	0.6219512195121951	0.51	0.5604395604395604	True	MKI67		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Endo_arterial_GJA5	11600	2000	100	0.925	0.74	0.8222222222222222	True	GJA5		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Endo_capillary_CA4	11600	2000	100	0.6576576576576577	0.73	0.6919431279620853	True	CA4		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Endo_capven_COL15A1	11600	2000	100	0.6574074074074074	0.71	0.6826923076923077	True	COL15A1		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Endo_lymphatic_CCL21	11600	2000	100	1.0	0.88	0.9361702127659575	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Endo_tip_ESM1	11600	2000	100	0.8080808080808081	0.8	0.8040201005025126	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Endo_venous_ACKR1	11600	2000	100	0.8333333333333334	0.8	0.8163265306122449	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	ILC_NK-CD56bright_XCL1	11600	2000	100	0.875	0.63	0.7325581395348837	True	XCL1		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	ILC_NK-CD56dim_FCGR3A	11600	2000	100	0.8	0.84	0.8195121951219512	True	FCGR3A		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_Mac_FOLR2	11600	2000	100	0.6666666666666666	0.56	0.6086956521739131	True	FOLR2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_Mac_LGMN	11600	2000	100	0.6886792452830188	0.73	0.7087378640776699	True	LGMN		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_Mac_MARCO	11600	2000	100	0.7222222222222222	0.78	0.75	True	MARCO		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_Mast_TPSAB1	11600	2000	100	1.0	0.88	0.9361702127659575	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_Mono_VCAN	11600	2000	100	0.8181818181818182	0.81	0.8140703517587939	True	VCAN		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_Neutrophil_G0S2	11600	2000	100	0.4685714285714286	0.82	0.5963636363636363	True	G0S2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_cDC1_CLEC9A	11600	2000	100	1.0	0.92	0.9583333333333334	True	CLEC9A		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_cDC2_CD1C	11600	2000	100	0.8210526315789474	0.78	0.8	True	CD1C		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_mregDC_LAMP3	11600	2000	100	0.9680851063829787	0.91	0.9381443298969072	True	LAMP3		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Mye_pDC_LILRA4	11600	2000	100	1.0	0.94	0.9690721649484536	True	LILRA4		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Plasma_IgA_IGHA1	11600	2000	100	0.5268817204301075	0.49	0.5077720207253886	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Plasma_IgD_IGHD	11600	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Plasma_IgG_IGHG1	11600	2000	100	0.5769230769230769	0.45	0.5056179775280899	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Plasma_IgM_IGHM	11600	2000	100	0.6727272727272727	0.37	0.4774193548387097	False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_CAF-inflam_CXCL8	11600	2000	100	0.7244897959183674	0.71	0.7171717171717171	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_CAF-matrix_COL11A1	11600	2000	100	0.5537190082644629	0.67	0.6063348416289592	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_Fib-subepithelial_PDGFRA	11600	2000	100	0.7582417582417582	0.69	0.7225130890052356	True	PDGFRA		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_Fib_APOD	11600	2000	100	0.7263157894736842	0.69	0.7076923076923077	True	APOD		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_Fib_CCL19	11600	2000	100	0.5729166666666666	0.55	0.5612244897959183	True	CCL19		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_Fib_PI16	11600	2000	100	0.7676767676767676	0.76	0.7638190954773869	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_Pericyte_RGS5	11600	2000	100	0.8041237113402062	0.78	0.7918781725888325	True	RGS5		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	Str_SMC_MYH11	11600	2000	100	0.8804347826086957	0.81	0.84375	True	MYH11		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	nuisance:Epithelial_EPCAM_KRT18	11600	2000	0				False	EPCAM;KRT18		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	nuisance:Epithelial_malignancy_discordant	11600	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	nuisance:Epithelial_malignancy_not_evaluable	11600	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	nuisance:Malignant_Epithelial_high_specificity	11600	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+6cf061ee1b778512	nuisance:Nonmalignant_Epithelial_CNV_negative	11600	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	B_GC_RGS13	11597	2000	100	0.9634146341463414	0.79	0.8681318681318682	True	RGS13		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	B_atypical_ZEB2	11597	2000	100	0.8571428571428571	0.78	0.8167539267015707	True	ZEB2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	B_mem_GPR183	11597	2000	100	0.7641509433962265	0.81	0.7864077669902912	True	GPR183		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	B_naive_FCER2	11597	2000	100	0.8256880733944955	0.9	0.861244019138756	True	FCER2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD4T_Tfh-like_CXCL13	11597	2000	100	0.7971014492753623	0.55	0.650887573964497	True	CXCL13		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD4T_Tm_IL7R	11597	2000	100	0.5740740740740741	0.62	0.5961538461538461	True	IL7R		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD4T_Treg_FOXP3	11597	2000	100	0.9295774647887324	0.66	0.7719298245614035	True	FOXP3		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD4T_naive_CCR7	11597	2000	100	0.4	0.56	0.4666666666666667	False	CCR7		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD4T_prolif_MKI67	11597	2000	100	0.7049180327868853	0.86	0.7747747747747747	True	MKI67		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD8T_Tem_GZMK	11597	2000	100	0.475	0.57	0.5181818181818182	True	GZMK		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD8T_Temra_GZMH	11597	2000	100	0.7294117647058823	0.62	0.6702702702702703	True	GZMH		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD8T_Tex_LAG3	11597	2000	100	0.71875	0.69	0.7040816326530612	True	LAG3		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD8T_naive_CCR7	11597	2000	100	0.49206349206349204	0.62	0.5486725663716814	True	CCR7		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	CD8T_prolif_MKI67	11597	2000	100	0.6219512195121951	0.51	0.5604395604395604	True	MKI67		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Endo_arterial_GJA5	11597	2000	100	0.925	0.74	0.8222222222222222	True	GJA5		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Endo_capillary_CA4	11597	2000	100	0.6576576576576577	0.73	0.6919431279620853	True	CA4		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Endo_capven_COL15A1	11597	2000	100	0.6574074074074074	0.71	0.6826923076923077	True	COL15A1		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Endo_lymphatic_CCL21	11597	2000	100	1.0	0.88	0.9361702127659575	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Endo_tip_ESM1	11597	2000	100	0.8080808080808081	0.8	0.8040201005025126	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Endo_venous_ACKR1	11597	2000	100	0.8333333333333334	0.8	0.8163265306122449	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	ILC_NK-CD56bright_XCL1	11597	2000	100	0.875	0.63	0.7325581395348837	True	XCL1		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	ILC_NK-CD56dim_FCGR3A	11597	2000	100	0.8	0.84	0.8195121951219512	True	FCGR3A		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_Mac_FOLR2	11597	2000	100	0.6666666666666666	0.56	0.6086956521739131	True	FOLR2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_Mac_LGMN	11597	2000	100	0.6886792452830188	0.73	0.7087378640776699	True	LGMN		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_Mac_MARCO	11597	2000	100	0.7222222222222222	0.78	0.75	True	MARCO		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_Mast_TPSAB1	11597	2000	100	1.0	0.88	0.9361702127659575	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_Mono_VCAN	11597	2000	100	0.8181818181818182	0.81	0.8140703517587939	True	VCAN		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_Neutrophil_G0S2	11597	2000	100	0.4685714285714286	0.82	0.5963636363636363	True	G0S2		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_cDC1_CLEC9A	11597	2000	100	1.0	0.92	0.9583333333333334	True	CLEC9A		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_cDC2_CD1C	11597	2000	100	0.8210526315789474	0.78	0.8	True	CD1C		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_mregDC_LAMP3	11597	2000	100	0.9680851063829787	0.91	0.9381443298969072	True	LAMP3		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Mye_pDC_LILRA4	11597	2000	100	1.0	0.94	0.9690721649484536	True	LILRA4		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Plasma_IgA_IGHA1	11597	2000	100	0.5268817204301075	0.49	0.5077720207253886	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Plasma_IgD_IGHD	11597	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Plasma_IgG_IGHG1	11597	2000	100	0.5769230769230769	0.45	0.5056179775280899	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Plasma_IgM_IGHM	11597	2000	100	0.6727272727272727	0.37	0.4774193548387097	False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_CAF-inflam_CXCL8	11597	2000	100	0.7244897959183674	0.71	0.7171717171717171	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_CAF-matrix_COL11A1	11597	2000	100	0.5537190082644629	0.67	0.6063348416289592	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_Fib-subepithelial_PDGFRA	11597	2000	100	0.7582417582417582	0.69	0.7225130890052356	True	PDGFRA		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_Fib_APOD	11597	2000	100	0.7263157894736842	0.69	0.7076923076923077	True	APOD		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_Fib_CCL19	11597	2000	100	0.5729166666666666	0.55	0.5612244897959183	True	CCL19		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_Fib_PI16	11597	2000	100	0.7676767676767676	0.76	0.7638190954773869	True			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_Pericyte_RGS5	11597	2000	100	0.8041237113402062	0.78	0.7918781725888325	True	RGS5		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	Str_SMC_MYH11	11597	2000	100	0.8804347826086957	0.81	0.84375	True	MYH11		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	nuisance:Epithelial_EPCAM_KRT18	11597	2000	0				False	EPCAM;KRT18		Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	nuisance:Epithelial_malignancy_discordant	11597	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	nuisance:Epithelial_malignancy_not_evaluable	11597	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	nuisance:Malignant_Epithelial_high_specificity	11597	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim
+fef2258a7883b39b	nuisance:Nonmalignant_Epithelial_CNV_negative	11597	2000	0				False			Same inherited annotation replay; no independent subtype or spot-deconvolution accuracy claim

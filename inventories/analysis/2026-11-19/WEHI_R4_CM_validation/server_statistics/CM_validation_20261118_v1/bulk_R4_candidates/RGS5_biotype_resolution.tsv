@@ -1,0 +1,3 @@
+expression_row	expression_gene_id	id	gene	exact_versioned_id_matched	gene_symbol_usable	expression_rows_per_symbol	unique_symbol_mapping	gene_id	gene_name	gene_type	chrom	start	end	strand	selected_for_gene_symbol	resolution
+44198	ENSG00000143248.12	ENSG00000143248.12	RGS5	True	True	2	False	ENSG00000143248.12	RGS5	protein_coding	chr1	163111121	163321791	-	True	single_protein_coding_record_among_same_symbol_records
+57395	ENSG00000232995.7	ENSG00000232995.7	RGS5	True	True	2	False	ENSG00000232995.7	RGS5	antisense	chr1	163244505	163321894	-	False	unresolved_multiple_records

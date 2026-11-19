@@ -1,0 +1,27 @@
+"""Finite dependent diagnostics queue; never starts/restarts a spatial fit."""
+from pathlib import Path
+import os,time,json,hashlib,subprocess,fcntl
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');M=R/'spatial_melanoma';lock=(M/'density_queue.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+jobs=json.loads((M/'inputs/section_jobs_PRIVATE.json').read_text());deadline=time.monotonic()+48*3600
+E='${ENV_ROOT}/scanpy/bin/python';env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1')
+def status(**kw):
+ kw.update(pid=os.getpid(),timestamp=time.time());p=M/'density_queue_status.tmp';p.write_text(json.dumps(kw,indent=2));p.replace(M/'density_queue_status.json')
+def main_alive():
+ try:
+  cmd=Path('/proc/274734/cmdline').read_bytes();return b'run_melanoma_sections.py' in cmd
+ except FileNotFoundError:return False
+for job in jobs:
+ key=job['section_code'];s=M/'sections'/key;out=s/'density_sensitivity_v1'
+ if (out/'complete.json').exists():
+  receipt=json.loads((out/'complete.json').read_text());assert receipt['status'].endswith('_PASS')
+  assert all(hashlib.sha256((s/f).read_bytes()).hexdigest()==v for f,v in receipt['input_hashes'].items());continue
+ while not (s/'independent_audit.json').exists():
+  if time.monotonic()>deadline:status(stage='TIME_LIMIT',section=key);raise SystemExit(1)
+  if not main_alive():status(stage='NEEDS_INSPECTION_MAIN_QUEUE_NOT_LIVE',section=key);raise SystemExit(1)
+  status(stage='waiting_section_independent_audit',section=key,main_queue_pid=274734);time.sleep(30)
+ assert json.loads((s/'independent_audit.json').read_text())['status'].startswith('PASS_')
+ if out.exists():status(stage='NEEDS_INSPECTION_EXISTING_INCOMPLETE_OUTPUT',section=key);raise SystemExit(1)
+ with (M/'logs'/(key+'_density.log')).open('x') as log:
+  p=subprocess.Popen([E,str(R/'melanoma_density_sensitivity.py'),key],env=env,stdout=log,stderr=subprocess.STDOUT);status(stage='running',section=key,child_pid=p.pid);rc=p.wait()
+ if rc:status(stage='NEEDS_INSPECTION_DIAGNOSTIC_FAILURE',section=key,exit_code=rc);raise SystemExit(rc)
+status(stage='ALL_24_DENSITY_AND_NEIGHBORHOOD_SENSITIVITIES_COMPLETE_PENDING_CROSS_SECTION_INTERPRETATION')

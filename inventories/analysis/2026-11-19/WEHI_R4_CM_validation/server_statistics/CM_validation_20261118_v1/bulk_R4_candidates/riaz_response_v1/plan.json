@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_BEFORE_RIAZ_RESPONSE_RESULTS",
+  "primary_input": "riaz_inputs_v2 approved plus unique previous symbols",
+  "sensitivity_input": "riaz_inputs_v1 current-symbol exact only",
+  "scores": "51 baseline patients including 2 unknown-response; mean within-baseline gene z of log2(1+CPM), ddof1, >=48 variable mapped genes; fixed 15 CM x 2 branches",
+  "primary_response": "CR/PR vs SD/PD, 49 author-verified patients",
+  "secondary_response": "CR/PR vs PD only; omit SD, explicitly different clinical contrast",
+  "testing": "fixed direction higher score predicts response; exact two-sided MWU unless ties; 9999 label permutations within prior-ipilimumab cohort, centered on stratum-specific null expectation",
+  "family": "joint BH across all Riaz input versions/response contrasts/CM/branches/test methods and prior 120 Hugo tests; separate ICI family from TCGA immune-fraction hypotheses",
+  "seed": 2026111819,
+  "limitations": "previously used retrospective cohorts, no untreated comparator, small responder count; no response-trained genes/threshold or classifier; not validated treatment-specific prediction"
+}

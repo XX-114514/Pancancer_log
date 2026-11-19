@@ -1,0 +1,46 @@
+"""Freeze outcome-blind survival design; no model estimates used in qualification."""
+from pathlib import Path
+import pandas as pd,numpy as np,json,hashlib,re
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=R/'bulk_R4_candidates';O=B/'TCGA_survival_v1_nonredacted';O.mkdir(exist_ok=False)
+for name in ['TCGA_scores_nonredacted_v2','TCGA_leukocyte_purity_v3_nonredacted']:
+ assert json.loads((B/name/'independent_audit.json').read_text())['status'].startswith('PASS_')
+assert json.loads((R/'clinical/TCGA_Table3_independent_audit.json').read_text())['status'].startswith('PASS_')
+plan=dict(status='FROZEN_BEFORE_COX_MODELS',endpoints=['OS','PFI'],endpoint_policy='Table3 unstarred recommendation only; no caution endpoints in primary fits; PRAD OS excluded',
+ models={'base':['age10','sex'],'stage':['age10','sex','stage_late'],'composition':['age10','sex','purity10','LF10'],'stage_composition':['age10','sex','stage_late','purity10','LF10']},
+ score='continuous HR per one SD of frozen module score in all nonredacted primary patients of same cancer, before endpoint/complete-case filtering; genes and direction unchanged',
+ branches=['original_network_members','all_W_nodes_previous_recipe'],modules=15,min_patients=100,min_events=30,min_events_per_coefficient=10,
+ stage='strict Roman I-IV with optional A/B/C and 1/2 substage; early I/II versus late III/IV; per cancer pathologic stage if >=50% interpretable else clinical stage if >=50% else unavailable; no patient-level fallback; raw fields and source retained; IS/Stage X/discrepancy/unknown/I-II NOS excluded',
+ time='curated OS.time/PFI.time in days from initial diagnosis, finite >0; event exactly 0/1; PFI inclusive TCGA-CDR definition, not treatment-specific PFS',
+ fit='R survival coxph Efron, no penalizer, no intercept, ordinary model covariance, unique patients, iter.max=100; warnings/errors/nonfinite or rank deficient fits are unqualified',
+ PH='cox.zph km transform, global and each term; retain flags even when primary association significant; nonsignificant PH test does not prove proportionality',
+ multiplicity='joint BH of CM Wald p over all successful cancers/endpoints/models/branches/modules; separate BH across all PH term/global diagnostic tests; failures and exclusions retained',
+ constants='omit constant covariates explicitly and record names; reject constant score or rank deficient design; require at least 10 events per retained coefficient',
+ validation='all source/score keys and redaction audit; independent Python PHReg Efron refit and numerical p/BH replay before interpretation',
+ limitations='exploratory previously used cohort, no external prognosis validation; complete-case selection and compositional conditioning may bias associations; no treatment-specific prediction; stage absent in several cancers and binary stage omits clinical detail; PH violations require follow-up, not a stable HR claim')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+s=pd.read_csv(B/'TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz',sep='\t');d=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t').set_index('sample');c=s[['sample','patient','cancer']].drop_duplicates().set_index('sample');assert c.index.is_unique and c.patient.is_unique
+clin=d.loc[c.index];assert clin.Redaction.isna().all() and clin.primary_tumor.all() and clin._PATIENT.eq(c.patient).all()
+for col in ['OS','OS.time','PFI','PFI.time','ajcc_pathologic_tumor_stage','clinical_stage','gender','age_at_initial_pathologic_diagnosis']:c[col]=clin[col]
+c['age10']=pd.to_numeric(c.age_at_initial_pathologic_diagnosis,errors='coerce');c.loc[~c.age10.between(0,120),'age10']=np.nan;c.age10=(c.age10-60)/10
+c['sex']=c.gender.map({'MALE':1.,'FEMALE':0.})
+def stage(x):
+ if pd.isna(x):return np.nan
+ m=re.fullmatch(r'(?:STAGE\s+)?(IV|III|II|I)(?:[ABC](?:[12])?)?',str(x).strip().upper())
+ return {'I':1.,'II':2.,'III':3.,'IV':4.}[m[1]] if m else np.nan
+c['path_stage']=c.ajcc_pathologic_tumor_stage.map(stage);c['clin_stage']=c.clinical_stage.map(stage);c['stage_late']=np.nan;c['stage_source']='unavailable';stage_rows=[]
+for cancer,g in c.groupby('cancer'):
+ path=g.path_stage.notna().mean();clinical=g.clin_stage.notna().mean();source='path_stage' if path>=.5 else 'clin_stage' if clinical>=.5 else None
+ if source:
+  c.loc[g.index,'stage_source']=source;c.loc[g.index,'stage_late']=g[source].map(lambda x: float(x>=3) if pd.notna(x) else np.nan)
+ stage_rows.append(dict(cancer=cancer,n=len(g),path_fraction=path,clinical_fraction=clinical,chosen=source or 'unavailable'))
+pd.DataFrame(stage_rows).to_csv(O/'stage_coverage.tsv',sep='\t',index=False)
+purity=pd.read_csv(B/'TCGA_leukocyte_purity_v3_nonredacted/analysis_bridge_PRIVATE.tsv.gz',sep='\t').set_index('sample');assert purity.index.equals(c.index) or set(purity.index)==set(c.index)
+c['purity10']=purity.purity.reindex(c.index)/.1;c['LF10']=purity.LF_single.reindex(c.index)/.1
+params=[]
+for (cancer,branch,cm),g in s.groupby(['cancer','branch','cm']):
+ mu=g.score.mean();sd=g.score.std(ddof=1);assert np.isfinite(sd) and sd>1e-8
+ s.loc[g.index,'score_sd']=(g.score-mu)/sd;params.append(dict(cancer=cancer,branch=branch,cm=cm,mean=mu,sd=sd,n=len(g)))
+s.to_csv(O/'scores_PRIVATE.tsv.gz',sep='\t',index=False);c.to_csv(O/'clinical_PRIVATE.tsv',sep='\t');pd.DataFrame(params).to_csv(O/'module_scaling.tsv',sep='\t',index=False)
+rec=pd.read_csv(R/'clinical/endpoint_qualification_v2_nonredacted/Table3_recommendations.tsv',sep='\t');rec.to_csv(O/'endpoint_recommendations.tsv',sep='\t',index=False)
+proof=dict(status='SURVIVAL_INPUTS_AND_PLAN_FROZEN_PENDING_FIT',patients=len(c),score_rows=len(s),models=plan['models'],input_hashes={str(f.relative_to(R)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [B/'TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz',R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',B/'TCGA_leukocyte_purity_v3_nonredacted/analysis_bridge_PRIVATE.tsv.gz']})
+(O/'input_complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

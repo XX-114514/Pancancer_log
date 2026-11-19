@@ -1,0 +1,83 @@
+"""Traceable synthesis of existing results; no new statistical testing."""
+from pathlib import Path
+import csv,json,hashlib,math
+R=Path(__file__).resolve().parent;O=R/'integrated_evidence_review';O.mkdir(exist_ok=True)
+manifest={}
+def read(name):
+ p=R/name;manifest[name]=hashlib.sha256(p.read_bytes()).hexdigest()
+ return list(csv.DictReader(p.open(),delimiter='\t'))
+def one(rows,**where):
+ s=[x for x in rows if all(x[k]==v for k,v in where.items())];assert len(s)==1,(where,len(s));return s[0]
+def number(row,key):
+ n=float(row[key]);assert math.isfinite(n);return n
+def save(name,rows):
+ with (O/name).open('w') as f:
+  w=csv.DictWriter(f,fieldnames=list(rows[0]),delimiter='\t');w.writeheader();w.writerows(rows)
+edges=read('melanoma_review/all_eight_N30/edge_density_all_sections.tsv')
+visium=read('../WEHI_R4_spatial_20261115/review/Visium_density_sensitivity.tsv')
+pairs=[('Endo_tip_ESM1','Str_Pericyte_RGS5'),('Endo_tip_ESM1','Mye_Mac_FOLR2'),('Mye_Mac_FOLR2','Str_Pericyte_RGS5')]
+triad=[];selected=[]
+for u,v in pairs:
+ for post in ['means','q05']:
+  s=[x for x in edges if x['cm']=='CM12' and x['node1']==u and x['node2']==v and x['posterior']==post]
+  assert len(s)==8 and len({x['section'] for x in s})==8
+  selected.extend(s)
+  for metric in ['raw_spearman','partial_rank_total_melanoma_other_nuisance','parent_fraction_spearman']:
+   values=[number(x,metric) for x in s]
+   triad.append(dict(node1=u,node2=v,posterior=post,metric=metric,n_sections=8,min_rho=min(values),max_rho=max(values),positive_sections=sum(x>0 for x in values),interpretation='Descriptive signs, not significance or independent patients'))
+save('CM12_three_edges_summary.tsv',triad);save('CM12_three_edges_all_sections.tsv',selected)
+overlap=read('communication_joint_review/core_overlap_summary.tsv')
+cp=one(overlap,core_module='CM12',source_identity=pairs[0][0],target_identity=pairs[0][1])
+rev=one(overlap,core_module='CM12',source_identity=pairs[0][1],target_identity=pairs[0][0])
+immune=read('immune_review_nonredacted/primary_branch_purity_age_sex.tsv')
+im=[one(immune,cancer=c,cm='CM12',branch='original_network_members',policy='LF_single',model='purity_age_sex') for c in ['PRAD','PAAD','KIRC','SKCM']]
+ici=read('ICI_review/three_cohort/three_cohort_descriptive_comparison.tsv')
+ic=[one(ici,cohort=c,cm='CM12') for c in ['Hugo','Riaz','Rose']]
+survival=read('survival_review/piecewise/CM12_prior_models_updated_joint_q.tsv')
+sv=[x for x in survival if x['branch']=='original_network_members' and x['status']=='FIT_OK' and number(x,'q_joint_piecewise')<.05]
+piece=read('survival_review/piecewise/piecewise_associations.tsv')
+cm13=[x for x in piece if x['branch']=='original_network_members' and x['cm']=='CM13' and x['cancer']=='LIHC' and x['endpoint']=='OS' and x['status']=='FIT_OK']
+assert len(cm13)==4
+component=read('component_review/component_qualification.tsv')
+at=[one(component,branch='original_network_members',cm='CM12',component=c) for c in ['endothelial','mural','immune']]
+lung=read('lung_core_review/primary_joint_summary.tsv')
+assert len(lung)==6
+breast=read('lung_core_review/breast_primary_updated_q.tsv')
+pc=[x for x in breast if x['current_state']=='pc_low_MYH11' and x['status']=='TESTED' and number(x,'q_joint_imaging')<.05]
+de=read('highlow_review/joint15/fixed_marker_results.tsv')
+dem=[x for x in de if x['cm']=='CM12' and x['family']=='unit' and ((x['node']=='Endo_tip_ESM1' and x['gene'] in ['ESM1','KDR','VEGFA','PDGFB']) or (x['node']=='Str_Pericyte_RGS5' and x['gene'] in ['RGS5','PDGFRB','CXCL12']))]
+assert len(dem)==7
+report=['CM12及其他CM模块：当前证据整合（2026-11-19）','这是已完成结果的可追溯综合，不新增P值、不合并不同平台的效应量，不将缺测当阴性。尚有空间N敏感性和部分high/low原始数值审计未完成。','',
+'1. 通讯检出不等于差异通讯',
+f"15CMT联合校正后，CM12 ESM1相关内皮→RGS5相关周细胞检出{cp['focal_significant']}个配体受体事件，其中{cp['focal_shared_with_other']}个在其他CMT也检出；逆向{rev['focal_significant']}个中{rev['focal_shared_with_other']}个共享。箭头是输入身份有序对，并不证明体内信号方向。",
+'三个来源已核实的患者级差异LR分析共有45821项可变检验，联合校正无q<.05；核心ESM1/RGS5双向仅肾癌9 high/10 low满足资格。其他来源未达资格不能当阴性，也不能由非核心身份结果替代。',
+'CM12七个固定标记在来源×癌种调整的单元级模型中，跨15CM本模型BH均未通过q<.05：']
+report += [f"  {x['node']} / {x['gene']}: effect={number(x,'high_minus_low_mean_log_expression'):.4f}, q={number(x,'q_joint15_model'):.4f}" for x in dem]
+report += ['这些单元不是全部核实的独立患者；表达DE不能替代LR差异。细胞级和单元级混合BH可能降低单元q，主要解释保留本模型校正。','','2. 空间证据：核心轴比三方hub更一致']
+for cm,u,v in [('CM12','Endo_tip_ESM1','Str_Pericyte_RGS5'),('CM01','Endo_venous_ACKR1','Str_Fib_PI16')]:
+ s=[x for x in visium if x['cm']==cm and x['a']==u and x['b']==v];assert len(s)==4
+ vals=[number(x,'partial_rank_correlation_control_total_and_epithelial_fraction') for x in s]
+ report.append(f'  四张乳腺/肾癌Visium切片 {cm} {u}—{v}: 总丰度及上皮比例调整rho {min(vals):.3f}至{max(vals):.3f}。模型控制项与下述黑色素瘤不同，不合并估计。')
+for x in triad:
+ if x['metric']=='partial_rank_total_melanoma_other_nuisance':
+  report.append(f"  {x['node1']}—{x['node2']} ({x['posterior']}): rho {x['min_rho']:.3f}至{x['max_rho']:.3f}，{x['positive_sections']}/8片为正。")
+report += ['八片是legacy ST，不是Visium或成像；患者逐片身份尚未核实。q05是后验丰度摘要敏感性，不是相关性置信区间。参考矩阵缺ESM1，身份为多基因推断。按上级谱系比例分析时，ESM1/RGS5仍有一片负相关，不能宣称组成无关。',
+'乳腺成像主设置（>=1 RNA、30um、200um空间块）PC低MYH11代理的显著结果：']
+report += [f"  {x['section']} {x['direction']}: 邻近比例差={number(x,'effect_fraction'):.4f}, 466检验联合q={number(x,'q_joint_imaging'):.5g}" for x in pc]
+report += ['未见一张乳腺切片在该PC主设置两个方向都通过；检测不到MYH11不等于生物学缺失。肺癌单供体192个设置联合校正均未通过。主设置：']
+report += [f"  {x['direction']}: 比例差={number(x,'effect_fraction'):.4f}, q={number(x,'q_joint_imaging'):.4f}" for x in lung]
+report += ['条件邻近控制空间块和源谱系深度，属于两两空间富集；不是直接接触、三方共定位检验、因果或配体受体方向。','','3. 免疫浸润和bulk指标的解释']
+report += [f"  TCGA {x['cancer']}, n={x['patients']}: 纯度/年龄/性别调整rho={number(x,'partial_rho'):.3f}, 联合q={number(x,'q_joint_with_unadjusted'):.4g}" for x in im]
+report += ['方向依癌种而变，不宜作为泛癌统一免疫指标。参考表达分解的CM12权重贡献为：'+', '.join(f"{x['component']} {number(x,'mean_gene_mass'):.1%}" for x in at)+'；它们不是实测细胞比例。bulk CM12主要反映壁细胞相关表达，不能当作均衡三方hub读出。','','4. 治疗响应与预后']
+report += [f"  {x['cohort']}: n={x['patients']}, response AUC={number(x,'auc'):.3f}, 分层联合q={number(x,'q_stratified_joint'):.4f}, 取材时序={x['timing']}" for x in ic]
+report += ['三队列全部15CM、两种签名等480项检验无q<.05。Rose取材相对ICI时间未知，三队列均不能证明治疗特异预测性能；不翻转分数方向或合并AUC。','CM12原网络签名在更新13140检验family后仍q<.05的常数HR模型：']
+report += [f"  {x['cancer']} {x['endpoint']} {x['model']}: HR={number(x,'HR'):.3f}, q={number(x,'q_joint_piecewise'):.4f}" for x in sv]
+report += ['CM12没有通过校正的早晚效应差异；部分事件不足模型不能评估分段。上述模型特定关联未形成跨癌种、跨调整一致且外部验证的指标。','其他模块线索：LIHC CM13 OS一年分段分析，原网络签名四调整设置：']
+report += [f"  {x['model']}: early HR={number(x,'HR_early'):.3f}, late HR={number(x,'HR_late'):.3f}, change q={number(x,'q_joint_change'):.4f}" for x in cm13]
+report += ['四个设置来自同一队列，不是四次独立验证；固定一年切点仍不能保证全部比例风险假设成立。该线索不能归因于CM12血管机制。','','5. 当前结论与剩余工作','保留CM12 ESM1相关内皮—RGS5相关周细胞轴作为有部分空间支持、需继续验证的候选；完整FOLR2三方hub、CM特异差异通讯和稳定治疗响应指标尚未建立。CM01等模块必须逐条边/逐来源评估，不能由CM12结果外推。','剩余：完成已启动的24空间模型与全high/low审计，统一N敏感性比较及最终证据回执；发现失败先核验实际进程和原因，不重复启动。']
+# Include provenance of non-tabular prior evidence, explicitly without claiming reanalysis.
+for name in ['patient_LR_review/three_source/complete.json','melanoma_review/all_eight_N30/audit.json','highlow_review/joint15/independent_audit.json','lung_core_review/independent_audit.json','survival_review/piecewise/independent_audit.json']:
+ p=R/name;manifest[name]=hashlib.sha256(p.read_bytes()).hexdigest();assert json.loads(p.read_text()).get('status')
+(O/'结果整合.txt').write_text('\n'.join(report)+'\n')
+(O/'source_manifest.json').write_text(json.dumps(dict(scope='Source hashes and exact row selection for synthesis, not a new raw-data audit or goal completion',source_files=manifest,outputs={f:hashlib.sha256((O/f).read_bytes()).hexdigest() for f in ['结果整合.txt','CM12_three_edges_summary.tsv','CM12_three_edges_all_sections.tsv']}),indent=2))
+print('INTEGRATED_REVIEW_WRITTEN',len(manifest),'sources',len(selected),'core edge rows')

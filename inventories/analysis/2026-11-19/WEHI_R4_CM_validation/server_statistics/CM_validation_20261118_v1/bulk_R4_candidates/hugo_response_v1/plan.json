@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN_BEFORE_HUGO_OUTCOMES",
+  "cohort": "GSE78220; explicit GEO patient id and pre-treatment biopsy only; exclude Pt16 OnTx",
+  "signatures": "unchanged 15 modules x 2 branches; no outcome-selected genes, directions or thresholds",
+  "patient_policy": "primary mean linear FPKM across baseline biopsies per patient before log; sensitivity exclude patients with multiple baseline biopsies",
+  "score": "log2(FPKM+.001), gene z within baseline patient cohort ddof1, mean >=48 variable uniquely mapped genes; FPKM score not directly comparable to TCGA TPM",
+  "response": "CR/PR vs PD/SD using explicit GEO response; no response imputation",
+  "statistic": "two-sided Mann Whitney U exact if no ties, asymptotic with ties; signed AUC=P(score responder > score nonresponder)+0.5 ties, never flip direction",
+  "sensitivity": "9999 response-label permutations within previous MAPKi x study site x library strandedness strata; strata without mixed responses contribute no exchange",
+  "family": "BH across all 15 CM x 2 branches x 2 biopsy policies x 2 tests within this cohort; cross-cohort correction pending",
+  "seed": 2026111817,
+  "limitations": "small previously used cohort, not untouched validation; retrospective response association not treatment-specific predictive effect; no untreated comparator; no survival analysis"
+}

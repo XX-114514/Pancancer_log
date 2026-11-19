@@ -1,0 +1,12 @@
+{
+  "status": "PASS_raw_gene_matrix_all_identity_masks_and192_exact_tests_and_joint_imaging_BH",
+  "lung_planned": 192,
+  "lung_tested": 192,
+  "prior_tested": 274,
+  "joint_planned": 480,
+  "joint_tested": 466,
+  "lung_joint_q05": 0,
+  "max_exact_p_error": 3.863576125695545e-14,
+  "joint_sha256": "7000b75ce639d8e9acbaa102eb13a6c962e911036d9b98671fe2f170477ae314",
+  "limitations": "one lung donor; marker proxies without author identities and absent contractile markers; conditional exchangeability assumption; two-way tests do not establish three-way simultaneous hub; no contact or signaling inference"
+}

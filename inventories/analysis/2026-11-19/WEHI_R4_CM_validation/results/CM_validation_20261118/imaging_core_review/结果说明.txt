@@ -1,0 +1,26 @@
+乳腺Xenium CM12核心细胞邻近检验（2026-11-19）
+状态：计算及全部96项独立审计完成，见independent_audit.json；精确P重算最大误差1.17e-14。
+范围：6张已使用切片，不假设6位独立患者。
+身份：沿用native坐标/QC及author broad identity；内皮至少2个实测辅助marker，不用ESM1作身份门槛；壁细胞至少2个PDGFRB/ACTA2/TAGLN/MYH11，不用RGS5作身份门槛。壁细胞可能含SMC，不等同精确R4周细胞。
+主设定：>=1 RNA，30um半径，200um空间块，块内深度四分位。固定target，置换source同谱系目标marker标签且保持块内阳性数。用超几何分布精确卷积求双侧P。
+敏感性：>=2 RNA、50um、400um。2方向×2阈值×2半径×2块×6切片=96项，全部合格且联合BH；54组合q<0.05，不是54个独立发现。
+效应为观察邻近比例减条件零分布期望（百分点）。方向只表示哪个标签被置换，不是信号方向。
+主设定结果：
+S01 ESM1_EC_to_RGS5_mural: effect 0.317 pp; q=0.362844
+S01 RGS5_mural_to_ESM1_EC: effect 1.230 pp; q=4.4451e-05
+S02 ESM1_EC_to_RGS5_mural: effect 2.969 pp; q=4.43462e-05
+S02 RGS5_mural_to_ESM1_EC: effect 1.642 pp; q=1.7166e-05
+S03 ESM1_EC_to_RGS5_mural: effect -0.122 pp; q=0.867006
+S03 RGS5_mural_to_ESM1_EC: effect 0.879 pp; q=0.374689
+S04 ESM1_EC_to_RGS5_mural: effect 0.510 pp; q=0.3832
+S04 RGS5_mural_to_ESM1_EC: effect 0.040 pp; q=0.925224
+S05 ESM1_EC_to_RGS5_mural: effect 1.491 pp; q=0.0147665
+S05 RGS5_mural_to_ESM1_EC: effect 2.626 pp; q=1.73315e-06
+S06 ESM1_EC_to_RGS5_mural: effect 1.131 pp; q=0.00290732
+S06 RGS5_mural_to_ESM1_EC: effect 2.546 pp; q=8.5066e-10
+S02两个方向均8/8设置支持；S06内皮到壁细胞8/8、反向7/8。S03/S04主设定不显著，但部分反向敏感性显著，不能说所有设置阴性。
+限制：分层exchangeability是检验假设，不保证消除局部组织混杂。没有分割图像人工复核。不能推出精确R4亚型、物理接触、配体受体机制或临床预测；FOLR2未在本次二方检验内，不能外推完整CM12 hub。
+
+更新：新增身份敏感性已完成，联合274检验q见mural_states/joint_identity_tests.tsv的q_joint_identity_family；结合身份敏感性解释不得沿用本页旧96-family q。详见mural_states/结果说明.txt。
+
+最新更新：加入肺癌192项后，成像联合检验现为466项，乳腺89显著组合变84。联合解释应采用lung_core_review/joint_imaging_tests.tsv的q_joint_imaging；本文件及旧图保留原校正范围。新说明见lung_core_review/结果说明.txt。

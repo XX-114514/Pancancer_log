@@ -1,0 +1,33 @@
+from pathlib import Path
+import gzip,json,hashlib
+import pandas as pd,numpy as np,anndata as ad
+B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/tcga')
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates'
+a=ad.read_h5ad(O/'TCGA_candidate_expression_PRIVATE.h5ad');assert a.obs_names.is_unique and a.var_names.is_unique
+assert a.uns['expression_unit']=='log2(TPM + 0.001)' and np.isfinite(a.X).all()
+genes=pd.read_csv(R/'sources/gencode23/gencode_v23_gene_metadata.tsv.gz',sep='\t').set_index('gene_id')
+mapping=pd.read_csv(B/'gencode.v23.annotation.gene.probemap',sep='\t').set_index('id')
+for symbol,row in a.var.iterrows():
+ assert mapping.loc[row.expression_gene_id,'gene']==symbol
+ group=mapping[mapping.gene.eq(symbol)]
+ if len(group)>1:
+  coding=[g for g in group.index if genes.loc[g,'gene_type']=='protein_coding']
+  assert coding==[row.expression_gene_id]
+assert a.var.loc['RGS5','expression_gene_id']=='ENSG00000143248.12'
+rng=np.random.default_rng(2026111810);chosen=set(rng.choice(a.n_vars,24,replace=False).tolist())|{a.var_names.get_loc('RGS5')}
+ids={a.var.iloc[i].expression_gene_id:i for i in chosen};seen=set()
+with gzip.open(B/'tcga_RSEM_gene_tpm.gz','rt',encoding='utf-8') as f:
+ columns=f.readline().rstrip('\n').split('\t')[1:];assert list(a.obs_names)==columns
+ for line in f:
+  identifier,values=line.split('\t',1)
+  if identifier not in ids:continue
+  expected=np.asarray(values.strip().split('\t'),dtype=np.float64).astype(np.float32)
+  assert np.array_equal(expected,a.X[:,ids[identifier]]);seen.add(identifier)
+assert seen==set(ids)
+bridge=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t');assert list(bridge['sample'])==list(a.obs_names)
+proof=dict(status='PASS_INDEPENDENT_GENE_BIOTYPE_SAMPLE_AXIS_AND_NATIVE_VALUE_READBACK',samples=a.n_obs,genes=a.n_vars,
+           independently_replayed_genes=len(seen),samples_replayed_per_gene=a.n_obs,all_values_finite=True,
+           RGS5_coding_and_antisense_kept_distinct=True,clinical_sample_axis_exact=True,
+           expression_sha256=hashlib.sha256((O/'TCGA_candidate_expression_PRIVATE.h5ad').read_bytes()).hexdigest(),
+           limitation='input audit only; no clinical association or biological score validation')
+(O/'TCGA_expression_independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

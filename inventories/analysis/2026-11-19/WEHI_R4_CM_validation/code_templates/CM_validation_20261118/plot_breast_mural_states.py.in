@@ -1,0 +1,23 @@
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/imaging_breast_mural_states_v1');proof=json.loads((O/'independent_audit.json').read_text());assert proof['status'].startswith('PASS_');t=pd.read_csv(O/'joint_identity_tests.tsv',sep='\t');primary=t[(t.threshold==1)&(t.tile_um==200)&(t.radius_um==30)].copy();primary.to_csv(O/'primary_joint_summary.tsv',sep='\t',index=False)
+states=['original_broad_mural','pc_low_MYH11','MYH11_contractile'];titles=['Original broad mural proxy','Pericyte program + MYH11 RNA zero','MYH11 + contractile program'];directions=['ESM1_EC_to_RGS5_mural','RGS5_mural_to_ESM1_EC'];fig,axes=plt.subplots(2,3,figsize=(15,9),sharex=True,sharey=True,layout='constrained')
+for j,state in enumerate(states):
+ for k,d in enumerate(directions):
+  ax=axes[k,j]
+  for i,unit in enumerate(['S01','S02','S03','S04','S05','S06']):
+   a=t[(t.state==state)&(t.direction==d)&(t.section==unit)].sort_values(['threshold','tile_um','radius_um']);valid=a.status.eq('TESTED');offset=np.linspace(-.18,.18,len(a));ax.scatter(a.loc[valid,'effect_fraction']*100,i+offset[valid],s=16,color='#a8b5c2',alpha=.8)
+   r=primary[(primary.state==state)&(primary.direction==d)&(primary.section==unit)].iloc[0]
+   if r.status=='TESTED':ax.scatter(r.effect_fraction*100,i,marker='D',s=65,color='#c2612e' if r.q_joint_identity_family<.05 else '#2b6584',zorder=3)
+   else:ax.text(.98,i,'insufficient',transform=ax.get_yaxis_transform(),ha='right',va='center',fontsize=8)
+  ax.axvline(0,ls='--',color='gray');ax.set_ylim(5.5,-.5);ax.set_yticks(range(6),['S01','S02','S03','S04','S05','S06']);ax.grid(axis='x',alpha=.15);ax.set_title(titles[j] if k==0 else '')
+  if j==0:ax.set_ylabel('ESM1+ EC near RGS5+ state' if k==0 else 'RGS5+ state near ESM1+ EC')
+  if k==1:ax.set_xlabel('Excess proximity (percentage points)')
+fig.suptitle('CM12 cellular core | identity sensitivity across all six breast Xenium sections')
+fig.supxlabel(f'Diamonds: primary 30 um / 200 um blocks / >=1 RNA; orange: q<0.05 in joint {proof["joint_tested"]}-test family.\nGray dots: qualified prespecified sensitivity settings. New identity tests are exploratory after broad-mural analysis.\nMYH11 RNA zero does not prove biological absence. Proximity is not signaling, contact, or exact R4 identity.',fontsize=10)
+fig.savefig(O/'mural_identity_sensitivity.png',dpi=170);plt.close(fig)
+print(primary[['state','section','direction','effect_fraction','q_joint_identity_family','status']].to_string(index=False))

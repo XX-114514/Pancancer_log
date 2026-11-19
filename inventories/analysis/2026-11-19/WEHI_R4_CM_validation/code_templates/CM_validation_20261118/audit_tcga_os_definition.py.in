@@ -1,0 +1,22 @@
+from pathlib import Path
+import json,hashlib
+import pandas as pd,numpy as np
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/tcga')
+d=pd.read_csv(B/'TCGA_survival_S1.tsv',sep='\t')
+event=pd.to_numeric(d.OS,errors='coerce');time=pd.to_numeric(d['OS.time'],errors='coerce')
+days=pd.Series(np.where(event.eq(1),pd.to_numeric(d.death_days_to,errors='coerce'),pd.to_numeric(d.last_contact_days_to,errors='coerce')),index=d.index)
+check=event.isin([0,1])&time.notna()&days.notna();difference=time-days
+bad=check&difference.ne(0)
+d.loc[bad,['sample','_PATIENT','OS','OS.time','death_days_to','last_contact_days_to','vital_status']].to_csv(R/'clinical/TCGA_OS_day_field_discrepancies_PRIVATE.tsv',sep='\t',index=False)
+status=d.vital_status.fillna('MISSING').astype(str);cross=pd.crosstab(status,event,dropna=False)
+cross.to_csv(R/'clinical/TCGA_OS_vital_status_crosscheck.tsv',sep='\t')
+record=dict(status='OS_DEFINITION_AND_DAY_FIELD_CROSSCHECK_COMPLETE',
+            primary_source='https://escholarship.org/content/qt9ng938g3/qt9ng938g3.pdf',DOI='10.1016/j.cell.2018.02.052',source_location='author manuscript page19, endpoint definitions; Table3 and discussion for endpoint suitability',
+            endpoint='all-cause death',origin='initial diagnosis',censoring='last contact',time_unit='days; checked against explicit death_days_to and last_contact_days_to columns',
+            comparable_records=int(check.sum()),exact_day_matches=int((check&difference.eq(0)).sum()),discrepant_records=int(bad.sum()),
+            published_cautions={'BRCA_OS':'caution; limited follow-up','PRAD_OS':'not recommended in this TCGA-CDR assessment'},
+            complete_cancer_endpoint_recommendation_transcription_pending=True,
+            interpretation='do not replace curated OS fields with raw day fields; discrepancies retained for inspection; clinical suitability is separate from nonmissing data',
+            clinical_file_sha256=hashlib.sha256((B/'TCGA_survival_S1.tsv').read_bytes()).hexdigest())
+(R/'clinical/TCGA_OS_definition_audit.json').write_text(json.dumps(record,indent=2));print(json.dumps(record))

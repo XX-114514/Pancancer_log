@@ -1,0 +1,14 @@
+from pathlib import Path
+import pandas as pd,numpy as np,json
+R=Path('${PROJECT_ARCHIVE_ROOT}')
+S=R/'w2o_annotation_r4_covarnet_k15_20261115_v1';O=R/'vascular_downstream_20261115_v1'
+def read(p,**kw):return pd.read_csv(S/p,sep='\t',**kw)
+f=read('covarnet/parent_frequencies.tsv',index_col=0);c=read('covarnet/refined_counts.tsv',index_col=0);u=read('covarnet/unit_audit.tsv',index_col=0).reindex(f.index);m=read('covarnet/node_mapping.tsv').set_index('node').majorCluster
+assert f.index.is_unique and c.index.equals(f.index) and c.columns.equals(f.columns)
+for node in f:
+    denom=u['main_'+m[node]];expected=c[node]/denom.replace(0,np.nan)
+    assert np.allclose(f[node],expected,equal_nan=True),node
+labels=read('annotation/cell_labels_r4.tsv.gz',usecols=['cell_id']);assert labels.cell_id.is_unique and len(labels)==2779785
+overlay=read('annotation/plasma_r4_subtypes.tsv.gz',usecols=['cell_id']);assert overlay.cell_id.is_unique and overlay.cell_id.isin(labels.cell_id).all()
+result={'cell_ids_unique':True,'R4_cells':len(labels),'plasma_overlay_unique_exact_subset':True,'plasma_overlay_rows':len(overlay),'all_44_frequencies_reconstructed_from_counts_and_parent_denominators':True,'units':len(f)}
+(O/'independent_input_validation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))

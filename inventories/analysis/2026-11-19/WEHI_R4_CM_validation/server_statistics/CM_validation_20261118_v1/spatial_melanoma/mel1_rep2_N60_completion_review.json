@@ -1,0 +1,47 @@
+{
+  "section": "mel1_rep2_N60",
+  "author_audit": {
+    "status": "PASS_independent_literal_author_scores_60NN_inverse_square_weights_and_full_epoch_posterior_checks",
+    "UTC": "2026-11-19T04:57:52.516242+00:00",
+    "section_code": "mel1_rep2_N60",
+    "dataset": "Thrane2018_melanoma_legacy_ST",
+    "n_spots": 293,
+    "n_CM": 15,
+    "n_scores_checked": 60,
+    "paper_primary_posterior": "means expected abundance; q05 sensitivity",
+    "all_50_reference_labels_retained": true,
+    "all_44_R4_CM_background_nodes_retained": true,
+    "epoch_history_finite_full_30000": true,
+    "no_spot_independence_or_contact_or_mechanism_claim": true
+  },
+  "density_audit": {
+    "status": "DESCRIPTIVE_DENSITY_AND_KNN_SENSITIVITY_WITH_INDEPENDENT_OLS_REPLAY_PASS",
+    "section": "mel1_rep2_N60",
+    "posteriors": [
+      "means",
+      "q05"
+    ],
+    "edges": 148,
+    "density_rows": 296,
+    "neighborhood_rows": 1184,
+    "max_OLS_replay_error": 6.252776074688882e-13,
+    "covariates": [
+      "rank_total_abundance",
+      "rank_melanoma_fraction",
+      "rank_other_nuisance_fraction"
+    ],
+    "neighbors": [
+      6,
+      12,
+      30,
+      60
+    ],
+    "limitations": "modeled composition and native coordinate proximity; not direct marker, contact, significance or patient-independent validation; 60 neighbors covers substantial part of small legacy-ST section; N30 assumed, N5/N60 pending; q05 is sensitivity not confidence interval",
+    "input_hashes": {
+      "means_abundance_PRIVATE.tsv.gz": "3adf795682ed281adaf4fb7dd4fda10bf5a2498d5c26afc01d108078533a37f7",
+      "q05_abundance_PRIVATE.tsv.gz": "ad1dc87e274b2fff440390e2a52e80608c15168b5f8deeb6ea24b2c52dbd90d2",
+      "coordinates_PRIVATE.tsv.gz": "660b996a0403b79da00c0cb1bb3a53a332fa2117212e491a1a32d31c68c99636"
+    }
+  },
+  "current_input_hashes_match": true
+}

@@ -1,0 +1,61 @@
+"""Panel-matched heldout annotation replay and melanoma leave-source-out recall."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,scipy.sparse as sp,anndata as ad,h5py
+from anndata.io import read_elem
+from sklearn.metrics import precision_recall_fscore_support
+B=Path('${PROJECT_ARCHIVE_ROOT}')
+R=B/'CM_validation_20261118_v1/spatial_melanoma';out=R/'reference'
+fit=json.loads((out/'complete.json').read_text());assert fit['epochs_recorded']==250 and fit['posterior_samples']==1000
+assert json.loads((out/'independent_input_audit.json').read_text())['status'].startswith('PASS_')
+history=np.asarray(np.load(out/'ELBO_history_PRIVATE.npy',allow_pickle=True),dtype=float);assert len(history)==250 and np.isfinite(history).all()
+inf=pd.read_csv(out/'signatures_PRIVATE.tsv',sep='\t',index_col=0)
+assert hashlib.sha256((out/'signatures_PRIVATE.tsv').read_bytes()).hexdigest()==fit['signatures_sha256']
+a=ad.read_h5ad(out/'reference_and_heldout_PRIVATE.h5ad');nodes=sorted(a.obs.node.unique());ni=pd.Index(nodes)
+assert len(nodes)==50 and set(inf.columns)==set(nodes) and inf.index.is_unique and inf.index.isin(a.var_names).all()
+assert np.isfinite(inf).all().all() and (inf>=0).all().all()
+tot=np.asarray(a.X.sum(axis=1)).ravel();X=a.X.multiply((1e4/tot)[:,None]).tocsr();X.data=np.log1p(X.data)
+truth=ni.get_indexer(a.obs.node);train=a.obs.split.eq('reference').to_numpy();test=a.obs.split.eq('heldout').to_numpy()
+source=a.obs.source.astype(str).to_numpy();mel='nuisance:Cutaneous_melanoma_consensus';melcode=ni.get_loc(mel)
+def predict(trainmask,testmask,shared):
+ codes=truth[trainmask];support=np.bincount(codes,minlength=len(nodes));assert (support>0).all()
+ H=sp.csr_matrix((np.ones(len(codes)),(codes,np.arange(len(codes)))),shape=(len(nodes),len(codes)))
+ means=(H@X[trainmask]).toarray()/support[:,None]
+ cols=a.var_names.get_indexer(shared);var=np.var(means[:,cols],axis=0);cols=cols[np.argsort(-var,kind='stable')[:min(2000,len(cols))]]
+ M=means[:,cols];center=M.mean(axis=0);scale=np.maximum(M.std(axis=0),.2)
+ cent=(M-center)/scale;cent/=np.maximum(np.linalg.norm(cent,axis=1,keepdims=True),1e-12)
+ predictions=[];ids=np.flatnonzero(testmask)
+ for start in range(0,len(ids),500):
+  block=X[ids[start:start+500]][:,cols].toarray();v=(block-center)/scale
+  v/=np.maximum(np.linalg.norm(v,axis=1,keepdims=True),1e-12);predictions.extend(np.argmax(v@cent.T,axis=1))
+ return np.asarray(predictions),len(cols)
+root=Path('${PANCANCER_ROOT}/Project_v5/spatial_expansion_20260904/processed')
+rows=[];cross=[];conf=[];panels=[]
+for path in sorted(root.glob('melanoma_thrane__*.raw_spatial.h5ad')):
+ section=path.name.split('__')[1].split('.raw_spatial')[0]
+ with h5py.File(path,'r') as h:genes=read_elem(h['var']).index
+ shared=sorted(set(genes)&set(inf.index));assert len(shared)>500
+ panels.append(dict(section=section,model_genes_available=len(shared),signature_genes=len(inf),shared_genes_sha256=hashlib.sha256('\n'.join(shared).encode()).hexdigest()))
+ pred,k=predict(train,test,shared);actual=truth[test]
+ precision,recall,f1,support=precision_recall_fscore_support(actual,pred,labels=np.arange(len(nodes)),zero_division=0)
+ for j,node in enumerate(nodes):
+  rows.append(dict(section=section,node=node,heldout_cells=int(support[j]),precision=float(precision[j]) if support[j] else None,recall=float(recall[j]) if support[j] else None,F1=float(f1[j]) if support[j] else None,train_selected_genes=k))
+  for target in np.unique(pred[actual==j]):conf.append(dict(section=section,mode='same_annotation_heldout',source='all',true_node=node,predicted_node=nodes[target],cells=int(((actual==j)&(pred==target)).sum())))
+ for s in sorted(set(source[truth==melcode])):
+  tr=train&(source!=s);te=test&(source==s)&(truth==melcode);assert te.sum()>0
+  pred,k=predict(tr,te,shared)
+  cross.append(dict(section=section,heldout_source=s,heldout_melanoma_cells=int(te.sum()),melanoma_recall=float((pred==melcode).mean()),misassigned_ESM1=float((pred==ni.get_loc('Endo_tip_ESM1')).mean()),misassigned_RGS5=float((pred==ni.get_loc('Str_Pericyte_RGS5')).mean()),meaning='melanoma-only source-heldout recall; precision not estimable from this subset'))
+  for target in np.unique(pred):conf.append(dict(section=section,mode='melanoma_leave_source_out',source=s,true_node=mel,predicted_node=nodes[target],cells=int((pred==target).sum())))
+ (out/'separability_progress.json').write_text(json.dumps(dict(sections_done=len(panels),sections_total=8)))
+assert len(panels)==8
+pd.DataFrame(rows).to_csv(out/'panel_heldout_separability.tsv',sep='\t',index=False)
+pd.DataFrame(cross).to_csv(out/'melanoma_leave_source_out.tsv',sep='\t',index=False)
+pd.DataFrame(conf).to_csv(out/'panel_confusion.tsv',sep='\t',index=False)
+pd.DataFrame(panels).to_csv(out/'panel_gene_coverage.tsv',sep='\t',index=False)
+proof=dict(status='FIT_STRUCTURE_AUDITED_AND_HELDOUT_DIAGNOSTICS_COMPLETE',panels=8,labels=50,reference_epochs=250,posterior_samples=1000,
+           classifier='train-only top2000 intercentroid-variance genes; logCP10K reference scope; standardized cosine centroid',
+           source_holdout='exclude one melanoma source from ALL label training; test its heldout melanoma cells',
+           limitations='inherited labels; same-unit train/test possible in ordinary split; no patient-independent validation; no simulated mixed-spot accuracy or proof of spatial deconvolution accuracy',
+           spatial_fit_authorization='diagnostic review required, no automatic pass from successful execution')
+(out/'separability_complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))
+print(pd.DataFrame(cross).groupby('heldout_source').melanoma_recall.agg(['min','max']).to_string())

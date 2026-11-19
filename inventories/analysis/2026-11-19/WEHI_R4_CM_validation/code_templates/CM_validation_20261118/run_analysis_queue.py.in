@@ -1,0 +1,35 @@
+"""Finite sequential queue; never restarts extraction or failed analyses."""
+from pathlib import Path
+import subprocess, json, os, time, fcntl
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+E=Path('${ENV_ROOT}')
+lock=(R/'analysis_queue.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+status=R/'analysis_queue_status.json'
+def save(**kw):
+ kw.update(pid=os.getpid(),timestamp=time.time())
+ tmp=status.with_suffix('.tmp');tmp.write_text(json.dumps(kw,indent=2));tmp.replace(status)
+started=time.time();watcher=37897
+save(stage='waiting_independent_expression_audit',audit_watcher_pid=watcher)
+while not (R/'expression_independent_audit.json').exists():
+ try:cmd=Path('/proc/%d/cmdline'%watcher).read_bytes()
+ except FileNotFoundError:cmd=b''
+ if b'wait_expression_audit.py' not in cmd:
+  save(stage='NEEDS_INSPECTION',reason='audit watcher absent without PASS; no restart');raise SystemExit(1)
+ if time.time()-started>8*3600:
+  save(stage='NEEDS_INSPECTION',reason='finite audit wait expired; no restart');raise SystemExit(1)
+ time.sleep(30)
+assert json.loads((R/'expression_independent_audit.json').read_text())['status'].startswith('PASS_')
+assert json.loads((R/'highlow_numeric_check.json').read_text())['status'].startswith('PASS_')
+order=['CM12','CM01']+['CM%02d'%i for i in range(2,16) if i!=12]
+for cm in order:
+ for kind,env,script in [('communication','cpdb','run_R4_CPDB.py'),('highlow','scanpy','run_R4_highlow.py')]:
+  # Existing results need human/agent inspection; never silently reuse or overwrite.
+  if (R/kind/cm).exists():
+   save(stage='NEEDS_INSPECTION',cm=cm,kind=kind,reason='result directory already exists');raise SystemExit(1)
+  with (R/('queue_'+cm+'_'+kind+'.log')).open('x') as log:
+   p=subprocess.Popen([str(E/env/'bin/python'),str(R/script),cm],stdout=log,stderr=subprocess.STDOUT)
+   save(stage='running',cm=cm,kind=kind,child_pid=p.pid)
+   rc=p.wait()
+  if rc:
+   save(stage='NEEDS_INSPECTION',cm=cm,kind=kind,exit_code=rc);raise SystemExit(rc)
+save(stage='ALL_OUTPUTS_WRITTEN_PENDING_INDEPENDENT_ANALYSIS_AUDIT',modules=order)

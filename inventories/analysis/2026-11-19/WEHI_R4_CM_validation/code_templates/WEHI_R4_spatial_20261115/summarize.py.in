@@ -1,0 +1,114 @@
+from pathlib import Path
+import json,hashlib,html
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
+from scipy.stats import rankdata,spearmanr
+R=Path('${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1');OLD=Path('${PANCANCER_ROOT}/Project_v3/runs/20261107_v4_Visium_author_validation_v2')
+O=R/'review';O.mkdir(exist_ok=True);(O/'figures').mkdir(exist_ok=True)
+assert json.loads((R/'reference/independent_input_fit_audit.json').read_text())['status'].startswith('PASS_')
+jobs=json.loads((R/'inputs/section_jobs_PRIVATE.json').read_text());scores=[];edges=[];niches=[];quality=[];tech=[];sensitivity=[]
+parents=pd.read_csv(R/'adapter/inputs/frequency_PRIVATE.tsv',sep='\t',index_col=0).majorCluster
+original_edges=pd.read_csv(R/'adapter/CM_results/each_edge.tsv',sep='\t')
+for job in jobs:
+    key=job['section_code'];p=R/'sections'/key;proof=json.loads((p/'independent_audit.json').read_text());assert proof['status'].startswith('PASS_')
+    c=json.loads((p/'complete.json').read_text());hist=np.asarray(np.load(p/'ELBO_history_PRIVATE.npy',allow_pickle=True),float).ravel();assert len(hist)==30000 and np.isfinite(hist).all()
+    tech.append({'section':key,'dataset':job['dataset'],'accession':job['group_value'],'spots':c['n_spots'],'genes':c['n_genes'],'epochs':len(hist),'audit':proof['status'],'last10pct_relative_ELBO_change':float((np.median(hist[-1500:])-np.median(hist[-3000:-1500]))/abs(np.median(hist[-3000:-1500])))})
+    fig,axs=plt.subplots(1,2,figsize=(9,3))
+    axs[0].plot(np.arange(1,len(hist)+1),hist,lw=.5);axs[0].set_title(key+' | full training history')
+    axs[1].plot(np.arange(len(hist)-2999,len(hist)+1),hist[-3000:],lw=.5);axs[1].set_title('Final 3,000 epochs')
+    for ax in axs:ax.set_xlabel('Epoch');ax.set_ylabel('Recorded ELBO loss')
+    fig.tight_layout();fig.savefig(O/'figures'/f'{key}_training.png',dpi=140);plt.close(fig)
+    d=pd.read_csv(p/'audited_CM_diagnostics_PRIVATE.tsv',sep='\t');scores.append(d);edges.append(pd.read_csv(p/'audited_edge_diagnostics_PRIVATE.tsv',sep='\t'))
+    xy=pd.read_csv(p/'coordinates_PRIVATE.tsv.gz',sep='\t',index_col=0);a=pd.read_csv(p/'means_CM_activity_PRIVATE.tsv.gz',sep='\t',index_col=0);assert a.index.equals(xy.index)
+    abundance=pd.read_csv(p/'means_abundance_PRIVATE.tsv.gz',sep='\t',index_col=0);assert abundance.index.equals(xy.index)
+    total=abundance.sum(axis=1).to_numpy();epi=abundance.loc[:,abundance.columns.str.startswith('nuisance:')].sum(axis=1).to_numpy()/total
+    design=np.column_stack([np.ones(len(total)),rankdata(total),rankdata(epi)]);ranked=rankdata(abundance[parents.index].to_numpy(),axis=0);residual=ranked-design@np.linalg.lstsq(design,ranked,rcond=None)[0];partial=np.corrcoef(residual.T)
+    fraction=abundance[parents.index].copy()
+    for parent in parents.unique():
+        ns=parents.index[parents==parent];fraction[ns]=fraction[ns].div(fraction[ns].sum(axis=1),axis=0)
+    idx={n:i for i,n in enumerate(parents.index)}
+    for edge in original_edges.itertuples():
+        n1,n2=edge.subCluster1,edge.subCluster2;sensitivity.append({'section':key,'cm':edge.cm,'a':n1,'b':n2,'partial_rank_correlation_control_total_and_epithelial_fraction':partial[idx[n1],idx[n2]],'modeled_parent_fraction_Spearman':float(spearmanr(fraction[n1],fraction[n2]).statistic),'design_rank':int(np.linalg.matrix_rank(design)),'inference':'descriptive sensitivity; modeled parent fractions do not include unresolved celltypes'})
+    for prefix in ['niches_retry2','niches']:
+        npath=OLD/prefix/key
+        if (npath/'complete.json').exists() and (npath/'spot_niches_PRIVATE.tsv.gz').exists():break
+    if (npath/'complete.json').exists():
+        assert json.loads((npath/'independent_audit.json').read_text())['status'].startswith('PASS_')
+        nr=json.loads((npath/'complete.json').read_text());npth=npath/'spot_niches_PRIVATE.tsv.gz';assert not nr['uses_CM_labels_abundance_activity_or_clinical_outcomes_to_fit'];assert hashlib.sha256(npth.read_bytes()).hexdigest()==nr['spot_labels_SHA256']
+        nt=pd.read_csv(npth,sep='\t',index_col=0);assert nt.index.is_unique;original_niche_spots=len(nt);nt=nt.loc[nt.index.isin(xy.index)];assert len(nt)>0;assert np.allclose(nt[['x','y']],xy.loc[nt.index,['x','y']]);aa=a.loc[nt.index]
+        for cm in a:
+            grouped=aa[cm].groupby(nt.niche);gm=grouped.mean();gn=grouped.size();grand=aa[cm].mean();sst=((aa[cm]-grand)**2).sum();eta=float((gn*(gm-grand)**2).sum()/sst) if sst>0 else np.nan
+            for label in gm.index:niches.append({'section':key,'cm':cm,'niche':label,'n_spots':int(gn[label]),'original_niche_spots':original_niche_spots,'matched_niche_spots':len(nt),'mean_activity':float(gm[label]),'eta_squared_descriptive':eta,'label_file_SHA256':nr['spot_labels_SHA256'],'source':str(npath),'inference':'independent_input_niche_fit_not_independent_dataset'})
+    fig,axs=plt.subplots(1,3,figsize=(12,4))
+    for ax,cm in zip(axs,['CM01','CM12','CM04']):
+        sc=ax.scatter(xy.x,xy.y,c=a[cm],s=7,cmap='magma',vmin=0,vmax=1);fig.colorbar(sc,ax=ax,shrink=.65,pad=.08);ax.set_title(cm);ax.set_aspect('equal');ax.invert_yaxis();ax.set_xlabel('native coordinate');ax.set_ylabel('native coordinate');ax.xaxis.set_major_locator(MaxNLocator(4));ax.yaxis.set_major_locator(MaxNLocator(4));ax.tick_params(labelsize=9)
+    fig.suptitle(key+' '+job['dataset']+' | frozen R4 W | common all-CM p99');fig.tight_layout();fig.savefig(O/'figures'/f'{key}_activity.png',dpi=170);plt.close(fig)
+allscore=pd.concat(scores);alledge=pd.concat(edges);pd.DataFrame(tech).to_csv(O/'Visium_technical.tsv',sep='\t',index=False);allscore.to_csv(O/'Visium_all15_scores.tsv',sep='\t',index=False);alledge.to_csv(O/'Visium_all_original_edges.tsv',sep='\t',index=False);pd.DataFrame(niches).to_csv(O/'CellCharter_R4_association.tsv',sep='\t',index=False)
+pd.DataFrame(sensitivity).to_csv(O/'Visium_density_sensitivity.tsv',sep='\t',index=False)
+for key,nt in pd.DataFrame(niches).groupby('section') if niches else []:
+    tab=nt.pivot(index='cm',columns='niche',values='mean_activity').sort_index();fig,ax=plt.subplots(figsize=(max(6,len(tab.columns)*.55),6))
+    im=ax.imshow(tab,aspect='auto',cmap='magma',vmin=0,vmax=1);ax.set_xticks(range(len(tab.columns)),tab.columns);ax.set_yticks(range(len(tab)),tab.index);ax.set_xlabel('Independent CellCharter niche label');ax.set_title(key+' | mean frozen R4 activity');fig.colorbar(im,ax=ax,label='Common all-CM p99 scaled activity');fig.tight_layout();fig.savefig(O/'figures'/f'{key}_niches.png',dpi=170);plt.close(fig)
+focus=allscore[(allscore.cm.isin(['CM01','CM12','CM04']))&(allscore.posterior=='means')]
+posterior_check=allscore.pivot(index=['section_code','cm','statistic'],columns='posterior',values='author_score').reset_index()
+posterior_check['q05_minus_means']=posterior_check.q05-posterior_check.means
+posterior_check.to_csv(O/'Visium_posterior_sensitivity.tsv',sep='\t',index=False)
+for stat in ['colocalization','aggregation']:
+    tab=focus[focus.statistic==stat].pivot(index='section_code',columns='cm',values='author_score').reindex(columns=['CM01','CM12','CM04']);fig,ax=plt.subplots(figsize=(5,3));im=ax.imshow(tab.to_numpy(),vmin=0,vmax=1,cmap='viridis');ax.set_xticks(range(3),tab.columns);ax.set_yticks(range(len(tab)),tab.index)
+    for i in range(len(tab)):
+        for j in range(3):ax.text(j,i,f'{tab.iloc[i,j]:.2f}',ha='center',va='center',color='white' if tab.iloc[i,j]<.6 else 'black')
+    ax.set_title('Author '+stat+' score (not P value)');fig.colorbar(im,ax=ax);fig.tight_layout();fig.savefig(O/'figures'/f'{stat}.png',dpi=170);plt.close(fig)
+def table(df):return df.to_html(index=False,border=0,float_format=lambda x:f'{x:.4g}',escape=True)
+sep=pd.read_csv(R/'reference/all_panel_label_heldout_separability.tsv',sep='\t');coverage=pd.read_csv(R/'reference/node_coverage.tsv',sep='\t')
+imaging=pd.read_csv(R/'imaging/activity_qualification.tsv',sep='\t');imedge=pd.read_csv(R/'imaging/core_marker_spatial_edges.tsv',sep='\t')
+parts=['''<!doctype html><html lang="zh"><meta charset="utf-8"><title>R4 CoVarNet：Visium 与成像数据分析</title><style>body{font:16px/1.7 system-ui;max-width:1250px;margin:35px auto;padding:0 24px;color:#20343f}table{border-collapse:collapse;font-size:12px;display:block;overflow:auto}td,th{border:1px solid #d2dce1;padding:8px}th{background:#e8f0f4}img{max-width:100%}.note{background:#fff3d4;padding:16px}code{overflow-wrap:anywhere}</style><h1>R4 CoVarNet：Visium 与成像型数据</h1><p>2026-11-15。固定新版K15模块；重点CM01 ACKR1–PI16、CM12 tip–周细胞–巨噬细胞与CM04动脉–平滑肌对照。按样本编号预选，所有15个模块均保留结果。</p><h2>样本与技术验收</h2>''',table(pd.DataFrame(tech)),
+'''<p>Visium：GSE203612乳腺前两张、GSE273952肾透明细胞癌前两张。仅做切片级描述；不将spot作为独立患者。成像：六张乳腺Xenium 5k及一份肾癌477 RNA＋27蛋白Xenium，蛋白强度未混作RNA计数。</p><h2>方法与参考边界</h2><p>44个R4节点按A/B/B2/C1和精确Plasma覆盖抽样，每节点最多1000训练细胞，另留出最多100；5类上皮背景来自既有独立参考，单列为nuisance。仅使用共同实测基因。cell2location参考250 epochs，空间30000 epochs，N=5，α=20，1000次后验抽样。means主分析、q05敏感性。完整轮数和有限损失已核验，不等于所有细亚型均可识别。</p><p>固定原网络成员和W加权活动，每张切片以所有CM活动共同99百分位缩放。共定位：模块内Spearman中位数在“至少一端属于模块”的背景边中的百分位；聚集：同定义替换为有向60邻居、反平方行归一化的双变量Moran。调用冻结作者R函数，并用独立数组公式逐值复核。作者分数不是P值，0.95不是显著性阈值。</p><p>额外提供相同父类组成随机模块与参考签名相似性诊断。CellCharter复用同切片原生表达＋空间独立拟合的标签，核对标签哈希、spot键和坐标；其与R4活动关联为描述性，不是独立队列验证。</p><h2>主要模块：作者分数与对照</h2>''',table(focus[['section_code','cm','n_original_members','statistic','author_score','lineage_null_percentile_le','reference_similarity_adjusted_score']]),'<img src="figures/colocalization.png"><img src="figures/aggregation.png">',
+'''<h2>Visium 固定模块活动图</h2><p>所有图使用各切片共同全CM p99；不能跨平台直接比较绝对数值。</p>''']
+for j in jobs:parts.append(f'<img src="figures/{j["section_code"]}_activity.png">')
+network_members=pd.read_csv(R/'adapter/CM_results/CM_members_after_author_network_filter.tsv',sep='\t')
+parts+=['<h2>重点模块的完整原网络成员</h2><p>内皮–基质核心便于解释，但主分析使用完整原网络。核心边的支持不等于全部成员同时构成同一个局部生态位。</p>',table(network_members[network_members.cm.isin(['CM01','CM12','CM04'])])]
+parts+=['<h2>后验汇总敏感性与原网络边</h2><p>means为作者方法的预期丰度主结果，q05为逐亚型后验5%分位数重算的敏感性分析；两者的分数差不是分数置信区间。下表保留重点模块全部原网络边，不能用某一条正相关代表整个模块。</p>',table(posterior_check[posterior_check.cm.isin(['CM01','CM12','CM04'])]),table(alledge[(alledge.posterior=='means')&alledge.cm.isin(['CM01','CM12','CM04'])].drop(columns=['posterior','dataset']))]
+parts+=['<h2>独立拟合空间生态位与训练诊断</h2><p>生态位标签仅在各自切片内部定义，相同数字不表示跨切片同一种生态位。图中为固定R4活动的生态位内均值；关联效应量与匹配spot数保存在CellCharter_R4_association.tsv。损失曲线用于检查优化过程，不能单独证明亚型空间解卷积准确。</p>']
+for j in jobs:
+    key=j['section_code']
+    if (O/'figures'/f'{key}_niches.png').exists():parts.append(f'<img src="figures/{key}_niches.png">')
+    parts.append(f'<img src="figures/{key}_training.png">')
+sens=pd.DataFrame(sensitivity);parts+=['<h2>细胞密度与上皮背景敏感性</h2><p>控制总推断细胞丰度和上皮背景比例后的残差秩相关，以及模型父类内比例相关，均为描述性敏感性检查。它们不替换作者主分数；模型内父类比例没有包含未建模的未解析细胞。</p>',table(sens[sens.a.str.startswith('Endo_')|sens.b.eq('Endo_venous_ACKR1')].drop(columns=['inference']))]
+parts+=['<h2>留出可分辨性诊断</h2><p>同注释标签的技术性留出重放，非来源/患者独立验证；F1低的亚型空间解释需谨慎。</p>',table(sep[sep.node.isin(['Endo_venous_ACKR1','Str_Fib_PI16','Endo_tip_ESM1','Str_Pericyte_RGS5','Mye_Mac_FOLR2','Endo_arterial_GJA5','Str_SMC_MYH11'])][['gene_panel_key','node','heldout_cells','F1','naming_genes_not_measured']]),
+'''<h2>成像数据：可测性与核心marker密度</h2><p>100/200μm网格、至少10个QC细胞；原生RNA按网格实测总RNA归一化。完整网络只在全部命名marker实测时计算marker代理。核心2/3节点另立投射，保留其原W，不冒充完整CM或精确R4细胞丰度。多marker亚型身份、细胞接触、方向性、因果均未由这些图证明。</p>''',table(imaging[(imaging.scope=='prespecified_core_proxy')&(imaging.grid_um==100)][['section','cm','status','missing','retained_W_fraction']]),table(imedge[imedge.grid_um==100][['section','cm','a','b','Spearman','Moran_forward','Moran_reverse']]),
+'''<p>前一轮六乳腺切片的条件PI16阳性细胞邻近检验仍保持阴性；本轮marker密度共变使用不同测量和空间尺度，不能替代或推翻该条件检验。</p>''']
+prior=R.parent/'vascular_downstream_20261115_v1/spatial_marker_proxy.tsv'
+assert hashlib.sha256(prior.read_bytes()).hexdigest()=='f326b3824152e635bd843888a24d238365e3a487c9291aaafebb22db5707b247'
+prior_table=pd.read_csv(prior,sep='\t')
+parts+=['<h3>前轮细胞级条件邻近检验：保留阴性证据</h3><p>50μm质心邻近；在500μm空间块×测量深度四分位内置换PI16标签999次，六切片BH校正。此处为先前已冻结并核对哈希的结果，不是本轮新拟合。该零模型尚未完全控制组织学区室。</p>',table(prior_table[prior_table.radius_um==50])]
+import shutil
+prior_dest=O/'supporting_tables/prior_cell_neighborhood';prior_dest.mkdir(parents=True,exist_ok=True);shutil.copy2(prior,prior_dest/prior.name)
+for key in ['breast_S01','breast_S02','breast_S03','breast_S04','breast_S05','breast_S06','renal_Xenium']:
+    import shutil
+    shutil.copy2(R/'imaging'/key/'core_activity.png',O/'figures'/f'{key}.png');parts.append(f'<img src="figures/{key}.png">')
+cosmx=json.loads((R/'cosmx/complete.json').read_text());assert cosmx['status']=='two_CosMx_samples_complete'
+parts+=['<h2>额外跨平台：肺癌 CosMx Lung12 / Lung13</h2><p>按归档名称预选两个非Rep命名样本。细胞ID与FOV联合键精确连接；排除背景cell_ID=0、阴性探针、系统对照和导出索引列；RNA≥50且检出基因≥20。25/50μm网格至少3个QC细胞。双变量Moran仅在同一FOV且超过60个合格网格时计算；FOV不是独立患者，不构建跨FOV边。坐标采用制造商公开的0.12028μm/px平台规范转换；这属于平台标定假设，并非从本批归档独立测得。<a href="https://www.brukerspatialbiology.com/wp-content/uploads/2024/11/MK6578_CosMx_Human_Lymph_Node_FFPE_Dataset_webpage.html">制造商坐标说明</a>。</p>',table(pd.read_csv(R/'cosmx/core_qualification.tsv',sep='\t'))]
+if (R/'cosmx/sample_core_edge_summary.tsv').exists():parts.append(table(pd.read_csv(R/'cosmx/sample_core_edge_summary.tsv',sep='\t')))
+for key in ['Lung12','Lung13']:
+    shutil.copy2(R/'cosmx'/key/'core_activity.png',O/'figures'/f'CosMx_{key}.png');parts.append(f'<img src="figures/CosMx_{key}.png">')
+assert json.loads((R/'cosmx_broad/complete.json').read_text())['status']=='two_CosMx_samples_complete'
+parts+=['<h2>CosMx 大类血管对照：另立指标</h2><p>因为PI16等细亚型marker缺测，额外采用≥2个实测marker定义Blood EC、Fibroblast、Mural、Myeloid等大类候选；排除多类重叠候选，保留QC阈值。特征为网格内候选细胞比例；血内皮与三类伙伴分别以等权展示。这里没有使用原R4模块权重，也不称为CM01/12/04复现。所有空间图为候选身份，非已完成生物学精细注释。</p>',table(pd.read_csv(R/'cosmx_broad/sample_core_edge_summary.tsv',sep='\t'))]
+for key in ['Lung12','Lung13']:
+    diag=json.loads((R/'cosmx_broad'/(key+'_identity_candidates.json')).read_text());parts.append('<p>'+html.escape(key+': '+json.dumps(diag,ensure_ascii=False))+'</p>')
+    shutil.copy2(R/'cosmx_broad'/key/'core_activity.png',O/'figures'/f'CosMx_broad_{key}.png');parts.append(f'<img src="figures/CosMx_broad_{key}.png">')
+parts+=['''<h2>来源与结果位置</h2><p><a href="https://www.nature.com/articles/s41586-025-09053-4">CoVarNet原文</a> · <a href="https://github.com/QiangShiPKU/CoVarNet">作者代码</a> · <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203612">GSE203612</a> · <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273952">GSE273952</a></p><code>''',str(R),'''</code><p>逐细胞、逐spot矩阵和模型均留服务器。完整15模块、所有原边、means/q05、CellCharter关联、面板可测性与代码均保留；无临床/治疗因果推断。</p></html>''']
+(O/'report.html').write_text(''.join(parts))
+# Deliver small aggregate tables and verification receipts, keeping raw matrices on the server.
+for group in ['imaging','cosmx','cosmx_broad','reference']:
+    dest=O/'supporting_tables'/group;dest.mkdir(parents=True,exist_ok=True)
+    allowed=(['marker_availability.tsv','activity_qualification.tsv','core_marker_spatial_edges.tsv','independent_audit.json','complete.json','plan.json'] if group=='imaging' else
+             ['marker_availability.tsv','core_qualification.tsv','all_FOV_core_edges.tsv','sample_core_edge_summary.tsv','complete.json','broad_extension_plan.json','Lung12_identity_candidates.json','Lung13_identity_candidates.json'] if group.startswith('cosmx') else
+             ['node_coverage.tsv','all_panel_label_heldout_separability.tsv','independent_input_fit_audit.json','preparation.json','complete.json'])
+    for name in allowed:
+        if (R/group/name).exists():shutil.copy2(R/group/name,dest/name)
+source_hashes={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for folder in ['code','author','adapter'] for p in (R/folder).rglob('*') if p.is_file() and '__pycache__' not in str(p)}
+(O/'analysis_code_and_frozen_module_SHA256.json').write_text(json.dumps(source_hashes,indent=2))
+(O/'complete.json').write_text(json.dumps({'status':'review_complete','Visium_sections':4,'Visium_modules':15,'imaging_sections':9,'all_Visium_literal_author_independent_audits_pass':True,'CellCharter_sections':len({v['section'] for v in niches})},indent=2))
+print(focus[['section_code','cm','statistic','author_score','lineage_null_percentile_le']].to_string(index=False),flush=True)

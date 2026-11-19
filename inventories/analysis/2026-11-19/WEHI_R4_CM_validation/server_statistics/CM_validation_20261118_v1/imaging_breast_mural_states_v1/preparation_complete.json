@@ -1,0 +1,8 @@
+{
+  "status": "complete_native_hash_axis_marker_and_state_qualification",
+  "states": [
+    "pc_low_MYH11",
+    "MYH11_contractile"
+  ],
+  "planned_new_tests": 192
+}

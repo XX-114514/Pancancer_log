@@ -1,3 +1,7 @@
+## 2026-11-19
+
+补录WEHI R4 K15目标自发布以来的完整分析、探索及当前快照；见[归档](inventories/analysis/2026-11-19/WEHI_R4_CM_validation/README.md)。保留旧统计和失败记录，不宣称总体目标完成。
+
 ## 2026-11-10 ccRCC既有身份区域定位
 
 完成12/108精确期望和留一块方向检查，增加聚合空间图v2；优先Mural→B/T CXCL12–CXCR4独立复现。原身份、P/q及CellChat结论不变。

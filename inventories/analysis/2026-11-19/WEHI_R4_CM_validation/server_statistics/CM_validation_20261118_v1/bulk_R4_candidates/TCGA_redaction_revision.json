@@ -1,0 +1,20 @@
+{
+  "status": "OLD_TCGA_CLINICAL_ASSOCIATIONS_SUPERSEDED_BY_REDACTION_CORRECTION",
+  "reason": "43 explicitly Redacted records were included in old outcome-blind standardization; remove before restandardization and all clinical associations",
+  "old_to_new": {
+    "TCGA_scores": "TCGA_scores_nonredacted_v2",
+    "TCGA_leukocyte_association_QC_v3": "TCGA_leukocyte_association_QC_v4_nonredacted",
+    "TCGA_leukocyte_purity_v2": "TCGA_leukocyte_purity_v3_nonredacted"
+  },
+  "completion_rule": "each replacement requires its own independent_audit.json PASS; old outputs preserved for audit, not final findings",
+  "signature_genes_unchanged": true,
+  "ICI_and_spatial_analyses_affected": false,
+  "replacement_audits": {
+    "TCGA_scores_nonredacted_v2": "PASS_ALL_TCGA_SCORES_INDEPENDENT_PANDAS_REPLAY_AND_OUTCOME_BLIND_COHORT_AUDIT",
+    "TCGA_leukocyte_association_QC_v4_nonredacted": "PASS_RAW_ALIQUOT_BRIDGE_ALL_RANK_CORRELATIONS_AND_GLOBAL_BH_REPLAY",
+    "TCGA_leukocyte_purity_v3_nonredacted": "PASS_RAW_PURITY_BRIDGE_CLINICAL_COVARIATES_ALL_STATSMODELS_PARTIAL_CORRELATION_AND_JOINT_BH"
+  },
+  "all_replacements_verified": true,
+  "max_absolute_partial_rho_change": 0.022374670282787723,
+  "q05_decisions_changed": 12
+}

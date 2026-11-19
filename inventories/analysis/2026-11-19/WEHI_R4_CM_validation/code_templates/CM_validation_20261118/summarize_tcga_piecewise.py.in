@@ -1,0 +1,13 @@
+"""Preserve original testing scope; publish revised combined-family q values."""
+from pathlib import Path
+import json,hashlib
+import pandas as pd
+P=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates/TCGA_survival_v1_nonredacted');O=P/'piecewise_one_year_v1'
+audit=json.loads((O/'independent_audit.json').read_text());assert audit['status'].startswith('PASS_')
+a=pd.read_csv(O/'piecewise_associations.tsv',sep='\t');prior=pd.read_csv(O/'prior_associations_joint_q.tsv',sep='\t');prior=prior[prior.status.eq('FIT_OK')].copy();prior['q05_old_family']=prior.q_all_survival_models.lt(.05);prior['q05_extended_family']=prior.q_joint_piecewise.lt(.05)
+cols=['id','cancer','branch','cm','endpoint','model','patients','events','HR','CI_low','CI_high','p','q_all_survival_models','q_joint_piecewise','q05_old_family','q05_extended_family'];prior[cols].to_csv(O/'constant_model_family_update.tsv',sep='\t',index=False)
+summary=a.groupby(['branch','cm']).agg(planned=('id','size'),fitted=('p_change','count'));summary['time_change_q05']=a.assign(sig=a.q_joint_change.lt(.05)).groupby(['branch','cm']).sig.sum();summary.to_csv(O/'all_module_piecewise_summary.tsv',sep='\t')
+cm=a[a.branch.eq('original_network_members')&a.cm.eq('CM12')];p12=prior[prior.branch.eq('original_network_members')&prior.cm.eq('CM12')]
+proof=dict(status='PIECEWISE_ANALYSIS_INDEPENDENTLY_AUDITED_AND_FAMILY_UPDATE_RECORDED',constant_models=len(prior),prior_q05_old_family=int(prior.q05_old_family.sum()),prior_q05_extended_family=int(prior.q05_extended_family.sum()),constant_q05_decisions_changed=int(prior.q05_old_family.ne(prior.q05_extended_family).sum()),CM12_primary_piecewise_fitted=int(cm.status.eq('FIT_OK').sum()),CM12_primary_time_change_q05=int(cm.q_joint_change.lt(.05).sum()),CM12_primary_old_constant_q05=int(p12.q05_old_family.sum()),CM12_primary_extended_constant_q05=int(p12.q05_extended_family.sum()),new_time_change_model_combinations_q05=int(a.q_joint_change.lt(.05).sum()),joint_tests=audit['joint_tests'],audit_sha256=hashlib.sha256((O/'independent_audit.json').read_bytes()).hexdigest(),scope='Older3690-model q values remain valid for that original family and are retained. For combined constant+piecewise claims use q_joint_piecewise/q_joint_early/late/change over13140 tests. PH diagnostic family remains separate. Model-combination positives are not independent biomarkers or external validation.')
+(O/'review_complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)
+print(p12[p12.q05_old_family][['cancer','endpoint','model','HR','q_all_survival_models','q_joint_piecewise']].to_string(index=False))

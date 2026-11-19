@@ -1,0 +1,16 @@
+{
+  "status": "COX_MODELS_AND_PH_DIAGNOSTICS_WRITTEN_PENDING_INDEPENDENT_AUDIT",
+  "survival_version": "3.8.3",
+  "R": "R version 4.3.3 (2024-02-29)",
+  "planned_combinations": 7680,
+  "successful_models": 3690,
+  "status_counts": {
+    "ENDPOINT_NOT_PRIMARY_RECOMMENDED": 1560,
+    "FIT_OK": 3690,
+    "INSUFFICIENT_PATIENTS_OR_EVENTS": 2430
+  },
+  "association_q05": 154,
+  "PH_tests": 18960,
+  "PH_global_nominal_flags": 754,
+  "limitations": "exploratory associations; no external validation or predictive performance; PH flag means constant HR requires caution"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "INPUT_RULES_FROZEN_BEFORE_RESPONSE_ANALYSIS",
+  "mapping": "exact current approved HGNC symbol to single Entrez ID also unique in raw matrix; reject multi-symbol Entrez and aliases; keep missing list, no aggregation",
+  "normalization": "log2(1 + CPM), denominator all raw matrix genes per sample; no length inference, not TPM/FPKM",
+  "score_reference_cohort": "all author-matched pretreatment patients including unknown response; no on-treatment samples in gene z standardization",
+  "min_variable_genes": 48,
+  "limitations": "current HGNC snapshot not original 2017 annotation; previous cohort use and assay differences remain; no response analysis performed here"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "downloaded_and_h5_csv_barcode_coordinate_qualified_NOT_ANALYZED",
+  "official_page": "https://www.10xgenomics.com/datasets/xenium-human-lung-cancer-post-xenium-technote",
+  "download_host": "official cf.10xgenomics.com; candidate individual paths verified HTTP200 and parsed formats",
+  "experiment": 2,
+  "donors": 1,
+  "cells": 278328,
+  "matrix_shape": [
+    10029,
+    278328
+  ],
+  "panel_top_keys": [
+    "metadata",
+    "payload"
+  ],
+  "marker_coverage": {
+    "ESM1": true,
+    "RGS5": true,
+    "ABCC9": true,
+    "KCNJ8": true,
+    "CSPG4": true,
+    "PDGFRB": true,
+    "MYH11": false,
+    "ACTA2": false,
+    "TAGLN": false,
+    "CNN1": false,
+    "PECAM1": true,
+    "VWF": false,
+    "CDH5": true,
+    "KDR": true,
+    "EMCN": false,
+    "FOLR2": true,
+    "CD68": true,
+    "C1QA": false,
+    "ACKR1": false,
+    "PI16": true
+  },
+  "files": [
+    {
+      "file": "gene_panel.json",
+      "url": "https://cf.10xgenomics.com/samples/xenium/3.0.0/Xenium_Prime_Human_Lung_Cancer_FFPE/Xenium_Prime_Human_Lung_Cancer_FFPE_gene_panel.json",
+      "bytes": 4478940,
+      "sha256": "a507dedd8ae03e6ef8f858c58b6149dbf43b80b0fcc841d32c85878e80167a5d",
+      "content_type": "application/json",
+      "etag": "W/\"eaec5325ae3454d39f998a150b3b0851\""
+    },
+    {
+      "file": "cell_feature_matrix.h5",
+      "url": "https://cf.10xgenomics.com/samples/xenium/3.0.0/Xenium_Prime_Human_Lung_Cancer_FFPE/Xenium_Prime_Human_Lung_Cancer_FFPE_cell_feature_matrix.h5",
+      "bytes": 103878075,
+      "sha256": "f8e2727f495284cd821750e7fd45a89682867168527f00caef10d7e9e58dd116",
+      "content_type": "application/x-hdf5",
+      "etag": "\"40479c8879a90f866acc9c538c8c3877-13\""
+    },
+    {
+      "file": "cells.csv.gz",
+      "url": "https://cf.10xgenomics.com/samples/xenium/3.0.0/Xenium_Prime_Human_Lung_Cancer_FFPE/Xenium_Prime_Human_Lung_Cancer_FFPE_cells.csv.gz",
+      "bytes": 16632012,
+      "sha256": "e91d9a50cc1152bda13408cea8a2e1c0feedfab4534dc43d98c93f5587ebbee9",
+      "content_type": "text/csv",
+      "etag": "\"c8b504394caaa4f73030cbcdbd3d06db-2\""
+    }
+  ],
+  "license": "CC BY 4.0 per official dataset page",
+  "caveats": "single donor; no author cell annotations downloaded; prior-use inventory found different V1 addon dataset, not thisPrime5K; no claim of untouched external validation; ETag recorded not interpreted as MD5"
+}

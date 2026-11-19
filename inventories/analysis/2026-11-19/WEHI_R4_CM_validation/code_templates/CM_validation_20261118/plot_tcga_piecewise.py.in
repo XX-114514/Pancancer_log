@@ -1,0 +1,32 @@
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.ticker import FixedLocator,FuncFormatter
+P=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates/TCGA_survival_v1_nonredacted');O=P/'piecewise_one_year_v1'
+assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_')
+a=pd.read_csv(O/'piecewise_associations.tsv',sep='\t');s=a[a.branch.eq('original_network_members')];cm=s[s.cm.eq('CM12')];cm.to_csv(O/'CM12_primary_all_piecewise.tsv',sep='\t',index=False)
+prior=pd.read_csv(O/'prior_associations_joint_q.tsv',sep='\t');prior[prior.branch.eq('original_network_members')&prior.cm.eq('CM12')].to_csv(O/'CM12_prior_models_updated_joint_q.tsv',sep='\t',index=False)
+colors=['#2679af','#e18338']
+def forest(ax,t,labels,title):
+ t=t.reset_index(drop=True);n=len(t)
+ for j,(period,color) in enumerate(zip(['early','late'],colors)):
+  y=np.arange(n)+(j-.5)*.26;valid=t.status.eq('FIT_OK');x=t.loc[valid,'HR_'+period];lo=t.loc[valid,'CI_'+period+'_low'];hi=t.loc[valid,'CI_'+period+'_high'];ax.errorbar(x,y[valid],xerr=np.vstack([x-lo,hi-x]),fmt='o',ms=3.5,lw=1,color=color,label='<=1 year' if period=='early' else '>1 year',capsize=2)
+ for i,row in t.iterrows():
+  if row.status!='FIT_OK':ax.text(1,i,'insufficient events',ha='center',va='center',fontsize=7,color='#777777')
+ ax.axvline(1,color='#999999',lw=1,ls='--');ax.set_xscale('log');ax.set_yticks(range(n),labels);ax.set_ylim(n-.55,-.55);ax.set_title(title,fontsize=11);ax.grid(axis='x',alpha=.2);ax.set_xlabel('HR per original 1 SD score (95% CI)')
+ lo,hi=ax.get_xlim();ticks=[x for x in [.125,.25,.5,.75,1,1.5,2,3,4,6,8,12,16] if lo<=x<=hi];ax.xaxis.set_major_locator(FixedLocator(ticks));ax.xaxis.set_minor_locator(FixedLocator([]));ax.xaxis.set_major_formatter(FuncFormatter(lambda x,pos:f'{x:g}'))
+for model in ['base','stage','composition','stage_composition']:
+ t=cm[cm.model.eq(model)];fig,axes=plt.subplots(1,2,figsize=(13,10),layout='constrained')
+ for ax,ep in zip(axes,['OS','PFI']):
+  z=t[t.endpoint.eq(ep)].sort_values('cancer');labels=[f'{r.cancer} (n={r.patients}, events={r.early_events}/{r.late_events})' for r in z.itertuples()];forest(ax,z,labels,ep)
+ axes[0].legend(loc='best');fig.suptitle('CM12: prespecified one-year score sensitivity | '+model,fontsize=13);fig.supxlabel('Original network-member branch; all previously qualified cancer/endpoint models shown.\nEvents are early/late. Period-specific significance alone does not establish a time difference. No causal/predictive claim.',fontsize=9);fig.savefig(O/('CM12_piecewise_'+model+'.png'),dpi=150);plt.close(fig)
+selected=s[s.q_joint_change.lt(.05)][['cancer','cm','endpoint']].drop_duplicates();selected.to_csv(O/'time_change_primary_candidates.tsv',sep='\t',index=False)
+if len(selected):
+ fig,axes=plt.subplots(1,len(selected),figsize=(7*len(selected),5),squeeze=False,layout='constrained')
+ for ax,row in zip(axes[0],selected.itertuples()):
+  z=s[s.cancer.eq(row.cancer)&s.cm.eq(row.cm)&s.endpoint.eq(row.endpoint)].copy();order={x:i for i,x in enumerate(['base','stage','composition','stage_composition'])};z=z.assign(order=z.model.map(order)).sort_values('order');labels=[f'{r.model}\nchange q={r.q_joint_change:.3g}' if r.status=='FIT_OK' else r.model for r in z.itertuples()];forest(ax,z,labels,row.cancer+' '+row.cm+' '+row.endpoint)
+ fig.suptitle('Exploratory time-change candidates: all available adjustment models',fontsize=13);fig.supxlabel('Blue: <=1 year; orange: >1 year.\nSelected by >=1 primary-branch change q<0.05; 13,140-test joint BH family. Not independent discoveries across models.\nOne-year cut was fixed before sensitivity fitting; no optimized cutoff or external validation.',fontsize=9);fig.savefig(O/'time_change_candidates_all_adjustments.png',dpi=160);plt.close(fig)
+print('PIECEWISE_FIGURES_WRITTEN')

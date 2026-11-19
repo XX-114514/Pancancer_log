@@ -1,3 +1,7 @@
+## 2026-11-19 WEHI R4 K15 完整任务归档
+
+本版沿既有冻结方案完成CM15审计和剩余N60模型，再进行全部24模型匹配参数比较及完整目标验收。患者桥接、病理图像和外部预测证据缺口单列，不能用已有细胞相关替代。[完整归档](inventories/analysis/2026-11-19/WEHI_R4_CM_validation/README.md)。
+
 ## 2026-11-10 ccRCC空间位置与外部复现
 
 现身份区域贡献与留一块影响诊断已完成，沿Mural→B/T CXCL12–CXCR4及EC—NK开展组织展示/独立成像复现；身份问题后置，病理与跨患者仍待。[结果](inventories/analysis/2026-11-10/ccrcc_localization_v1/README.md)。

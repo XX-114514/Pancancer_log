@@ -1,0 +1,16 @@
+{
+  "status": "SCORING_FROZEN_BEFORE_CLINICAL_ASSOCIATION",
+  "cohort": "primary tumour samples with exact clinical cancer and patient keys; do not require survival follow-up",
+  "min_samples_per_cancer": 30,
+  "min_variable_mapped_genes_per_signature": 48,
+  "scoring": "mean of within-cancer gene z-scores on log2(TPM+.001), sample SD ddof=1; same unweighted scoring recipe as previous local TCGA pipeline",
+  "branches": [
+    "original_network_members",
+    "all_W_nodes_previous_recipe"
+  ],
+  "modules": 15,
+  "weights": "frozen gene loadings used for gene selection, not clinical-score weighting",
+  "interpretation": "cohort-relative composition-associated candidates, not cell fractions or a trained clinical predictor",
+  "no_outcome_selection": true,
+  "no_median_split": true
+}

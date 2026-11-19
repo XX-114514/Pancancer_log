@@ -1,0 +1,33 @@
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+from scipy.spatial import cKDTree
+from scipy.stats import hypergeom
+from statsmodels.stats.multitest import multipletests
+O=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/imaging_lung_core_v1')
+assert (O/'preparation_complete.json').exists()
+markers={'EC':'ESM1','PC':'RGS5','MF':'FOLR2'};rows=[];blockrows=[]
+for setting in ['EC2_nucleated','EC2_all_QC','EC3_nucleated','EC3_all_QC']:
+ z=np.load(O/(setting+'_cells_PRIVATE.npz'));xy=z['xy'];dep=z['depth']
+ for threshold in [1,2]:
+  for source_node,target_node in [(a,b) for a in markers for b in markers if a!=b]:
+   direction=source_node+'_to_'+target_node;source=z[source_node];target=z[target_node]&(z[markers[target_node]]>=threshold);si=np.flatnonzero(source);pos=z[markers[source_node]][si]>=threshold
+   distance=cKDTree(xy[target]).query(xy[si],k=1)[0] if target.any() else np.full(len(si),np.inf)
+   for tile in [200,400]:
+    tiles=np.floor(xy[si]/tile).astype(int);_,tid=np.unique(tiles,axis=0,return_inverse=True);strata=np.zeros(len(si),int)
+    for j in np.unique(tid):
+     ix=np.flatnonzero(tid==j);cuts=np.quantile(dep[si[ix]],[.25,.5,.75]);strata[ix]=j*4+np.searchsorted(cuts,dep[si[ix]],side='right')
+    for radius in [30,50]:
+     key=f'{setting}|{direction}|{threshold}|{tile}|{radius}';near=distance<=radius;dist=np.array([1.]);mu=0.;infop=0;infon=0
+     for b in np.unique(strata):
+      ids=np.flatnonzero(strata==b);n=len(ids);k=int(pos[ids].sum());h=int(near[ids].sum());obs=int((pos[ids]&near[ids]).sum());mu+=k*h/n
+      if 0<k<n:infop+=k;infon+=n-k
+      mass=hypergeom.pmf(np.arange(k+1),n,h,k);dist=np.convolve(dist,mass)
+      blockrows.append(dict(key=key,block=int(b),n=n,k=k,near=h,observed=obs))
+     observed=int((pos&near).sum());npositive=int(pos.sum());qualified=len(si)>=20 and target.sum()>=10 and infop>=10 and infon>=10
+     p=float(dist[np.abs(np.arange(len(dist))-mu)>=abs(observed-mu)-1e-10].sum()) if qualified else np.nan
+     rows.append(dict(key=key,section="lung_prime5k",setting=setting,direction=direction,threshold=threshold,tile_um=tile,radius_um=radius,n_source=len(si),n_positive=npositive,n_target=int(target.sum()),informative_positive=infop,informative_negative=infon,observed_count=observed,expected_count=mu,observed_fraction=observed/npositive if npositive else np.nan,expected_fraction=mu/npositive if npositive else np.nan,effect_fraction=(observed-mu)/npositive if npositive else np.nan,p_exact=min(p,1.) if qualified else np.nan,status='TESTED' if qualified else 'INSUFFICIENT',null_mass=float(dist.sum())))
+ print(setting,'done',flush=True)
+t=pd.DataFrame(rows);assert len(t)==192;good=t.status.eq('TESTED');t.loc[good,'q_lung_only']=multipletests(t.loc[good,'p_exact'],method='fdr_bh')[1] if good.any() else []
+t.to_csv(O/'proximity_tests.tsv',sep='\t',index=False);pd.DataFrame(blockrows).to_csv(O/'null_blocks.tsv.gz',sep='\t',index=False)
+(O/'test_complete.json').write_text(json.dumps(dict(status='computed_pending_independent_audit_and_cross_imaging_family',planned=len(t),tested=int(good.sum())),indent=2));print(t[(t.setting=='EC2_nucleated')&(t.threshold==1)&(t.radius_um==30)&(t.tile_um==200)].to_string(index=False))

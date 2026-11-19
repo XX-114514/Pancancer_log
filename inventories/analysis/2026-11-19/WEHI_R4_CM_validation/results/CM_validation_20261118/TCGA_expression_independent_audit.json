@@ -1,0 +1,12 @@
+{
+  "status": "PASS_INDEPENDENT_GENE_BIOTYPE_SAMPLE_AXIS_AND_NATIVE_VALUE_READBACK",
+  "samples": 10535,
+  "genes": 854,
+  "independently_replayed_genes": 25,
+  "samples_replayed_per_gene": 10535,
+  "all_values_finite": true,
+  "RGS5_coding_and_antisense_kept_distinct": true,
+  "clinical_sample_axis_exact": true,
+  "expression_sha256": "cefbb3eb0f4021f624ea28c72dc79ed50ca5148211d39c167429aa36a34693aa",
+  "limitation": "input audit only; no clinical association or biological score validation"
+}

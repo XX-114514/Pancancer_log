@@ -1,0 +1,20 @@
+"""Keep timing-unresolved archived cohort visibly separate from baseline cohorts."""
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+B=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates');O=B/'rose_response_v1'
+assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_')
+old=pd.read_csv(B/'riaz_response_v1/primary_cohort_comparison.tsv',sep='\t');h=pd.read_csv(O/'Hugo_response_joint_update.tsv',sep='\t');h=h[h.policy.eq('patient_mean_FPKM')&h.branch.eq('original_network_members')].set_index('cm');r=pd.read_csv(O/'Riaz_response_joint_update.tsv',sep='\t');r=r[r.input_version.eq('riaz_inputs_v2')&r.endpoint.eq('CRPR_vs_SDPD')&r.branch.eq('original_network_members')].set_index('cm');rows=[]
+for row in old.itertuples():
+ t=h if row.cohort=='Hugo' else r;qcol='q_three_ICI_stratified' if row.cohort=='Hugo' else 'q_three_ICI_prior_ipi';assert np.isclose(row.auc,t.loc[row.cm,'auc_higher_score_response']);rows.append(dict(cohort=row.cohort,cm=row.cm,patients=row.patients,responders=row.responders,auc=row.auc,CI_low=row.CI_low,CI_high=row.CI_high,q_stratified_joint=t.loc[row.cm,qcol],timing='baseline_verified'))
+s=pd.read_csv(O/'scores_PRIVATE.tsv.gz',sep='\t');s=s[s.policy.eq('mean_explicit_repeat_TPM')&s.branch.eq('original_network_members')&s.response.notna()];a=pd.read_csv(O/'response_associations.tsv',sep='\t');a=a[a.policy.eq('mean_explicit_repeat_TPM')&a.branch.eq('original_network_members')].set_index('cm')
+for cm,g in s.groupby('cm'):
+ assert g.patient.is_unique;pos=g[g.response.eq(1)].score.to_numpy();neg=g[g.response.eq(0)].score.to_numpy();pair=(pos[:,None]>neg).astype(float)+.5*(pos[:,None]==neg);rng=np.random.default_rng(2026111907);i=rng.integers(len(pos),size=(5000,len(pos)));j=rng.integers(len(neg),size=(5000,len(neg)));bs=pair[i[:,:,None],j[:,None,:]].mean(axis=(1,2));lo,hi=np.quantile(bs,[.025,.975]);auc=pair.mean();assert np.isclose(auc,a.loc[cm,'auc_higher_score_response']);rows.append(dict(cohort='Rose',cm=cm,patients=len(g),responders=len(pos),auc=auc,CI_low=lo,CI_high=hi,q_stratified_joint=a.loc[cm,'q_three_ICI_stratified'],timing='UNKNOWN_ARCHIVED_NOT_BASELINE_VALIDATION'))
+t=pd.DataFrame(rows);t.to_csv(O/'three_cohort_descriptive_comparison.tsv',sep='\t',index=False);mods=['CM%02d'%i for i in range(1,16)];fig,axes=plt.subplots(1,3,figsize=(14,8),sharey=True,layout='constrained')
+for ax,name,color in zip(axes,['Hugo','Riaz','Rose'],['#a6503b','#2875a0','#777777']):
+ g=t[t.cohort.eq(name)].set_index('cm').loc[mods];ax.errorbar(g.auc,np.arange(15),xerr=np.vstack([g.auc-g.CI_low,g.CI_high-g.auc]),fmt='o',ms=4,color=color,capsize=2);ax.axvline(.5,ls='--',lw=1,color='#aaaaaa');ax.set_xlim(0,1);ax.set_yticks(range(15),mods);ax.set_ylim(14.7,-.7);ax.grid(axis='x',alpha=.15);ax.set_title(name+f' (n={g.patients.iloc[0]}, responders={g.responders.iloc[0]})\n'+('Baseline samples' if name!='Rose' else 'Archived; biopsy timing UNKNOWN'),fontsize=11);ax.set_xlabel('Higher score associated with response: AUC')
+fig.suptitle('Fixed R4 module scores: three separate retrospective cohorts',fontsize=14);fig.supxlabel('95% descriptive patient bootstrap intervals; scores held fixed, no direction flipping or pooled AUC.\n480-test joint BH: no q<0.05. Rose cannot establish pretreatment prediction; none is prospective predictive validation.',fontsize=10);fig.savefig(O/'three_cohort_descriptive_comparison.png',dpi=170);plt.close(fig)
+(O/'comparison_method.json').write_text(json.dumps(dict(rose_seed=2026111907,replicates=5000,interval='resample within response classes with fixed scores; percentile interval, no score-standardization uncertainty; not a trained classifier',older_intervals='retained from previously audited Hugo/Riaz comparison; updated q values use480test family',timing='Rose explicitly kept separate and labeled unknown'),indent=2));print(t[t.cm.eq('CM12')].to_string(index=False))

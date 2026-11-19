@@ -1,0 +1,17 @@
+from pathlib import Path
+import json,numpy as np,pandas as pd,anndata as ad,zarr
+from scipy import sparse
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'spatial_CoVarNet_R4_20261115_v1';S=B/'w2o_annotation_r4_covarnet_k15_20261115_v1'
+a=ad.read_h5ad(R/'reference/reference_and_heldout_PRIVATE.h5ad');assert a.obs_names.is_unique and a.var_names.is_unique;assert np.isfinite(a.X.data).all() and (a.X.data>=0).all() and np.allclose(a.X.data,np.rint(a.X.data))
+lab=pd.read_csv(S/'annotation/cell_labels_r4.tsv.gz',sep='\t',usecols=['cell_id','name','tier','source']).set_index('cell_id');over=pd.read_csv(S/'annotation/plasma_r4_subtypes.tsv.gz',sep='\t',usecols=['cell_id','refined_name']).set_index('cell_id');lab.loc[over.index,'name']=over.refined_name
+main=~a.obs.node.str.startswith('nuisance:');selected=lab.loc[a.obs_names[main]];assert selected.name.tolist()==a.obs.node[main].tolist();assert selected.tier.isin(['A','B','B2','C1']).all();assert selected.source.tolist()==a.obs.source[main].tolist()
+g=zarr.open_group(str(B/'zarr/tme_v1.zarr'),mode='r');axis=pd.Index(g['obs/_index'][:]);genes=pd.Index(g['var/_index'][:]);ix=axis.get_indexer(a.obs_names[main]);assert (ix>=0).all();source=g['obs/source'];assert np.array_equal(np.asarray(source['categories'][:])[source['codes'][:][ix]],selected.source.to_numpy())
+mp,=B.glob('r3_handoff_20261108/*/p2/measured_gene_mask_by_source.tsv.gz');mask=pd.read_csv(mp,sep='\t').set_index('gene');assert mask.loc[a.var_names].all().all()
+rng=np.random.default_rng(241115);check=rng.choice(np.where(main)[0],20,replace=False);cols=genes.get_indexer(a.var_names);mat=g['layers/counts'];errors=[]
+for i in check:
+    row=axis.get_loc(a.obs_names[i]);lo,hi=map(int,mat['indptr'][row:row+2]);x=sparse.csr_matrix((mat['data'][lo:hi],mat['indices'][lo:hi],[0,hi-lo]),shape=(1,len(genes)))[:,cols]
+    errors.append(float(np.max(np.abs((x-a.X[i]).toarray()))))
+assert max(errors)==0
+sig=pd.read_csv(R/'reference/signatures_PRIVATE.tsv',sep='\t',index_col=0);receipt=json.loads((R/'reference/complete.json').read_text());history=np.asarray(np.load(R/'reference/ELBO_history_PRIVATE.npy',allow_pickle=True),float).ravel();assert len(history)==250 and np.isfinite(history).all();assert set(sig.columns)==set(a.obs.node) and np.isfinite(sig).all().all() and (sig>=0).all().all()
+z={'status':'PASS_independent_R4_reference_key_tier_source_measurement_count_and_fitted_signature_audit','R4_cells':int(main.sum()),'nuisance_cells':int((~main).sum()),'raw_rows_independently_replayed':20,'maximum_count_difference':max(errors),'source_exact':True,'all_common_genes_measured':True,'fit_epochs':len(history),'n_labels':len(sig.columns),'model_genes':len(sig)}
+(R/'reference/independent_input_fit_audit.json').write_text(json.dumps(z,indent=2));print(json.dumps(z))

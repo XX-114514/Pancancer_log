@@ -1,0 +1,10 @@
+{
+  "status": "PASS_all_1196x44_frozen_counts_rebuilt_from_exact_cell_labels_and_plasma_overlay",
+  "cells_scanned": 2779785,
+  "eligible_assigned_cells": 1974301,
+  "units": 1194,
+  "nodes": 44,
+  "input_sha256": "fd0c51fca990a6b39f905098716112a3fb65dff4ed562aa58a73cecac1c3742d",
+  "patient_identity": "not_assumed_from_unit",
+  "next": "extract native expression on exact cell IDs; measured-gene mask; retain source/cancer strata"
+}

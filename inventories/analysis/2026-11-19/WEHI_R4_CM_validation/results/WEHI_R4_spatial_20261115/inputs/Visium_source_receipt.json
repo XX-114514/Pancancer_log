@@ -1,0 +1,23 @@
+[
+  {
+    "path": "${PANCANCER_ROOT}/Project_v2/Downstream/0716_Data/raw_geo_supplements/QC_adata/GSE273952_QC_adata.h5ad",
+    "bytes": 1123406183,
+    "mtime_ns": 1784589987047051376,
+    "sha256": "9035a38d47f82167f9ff69051ca4f9872f2efce6737df6ee121328d363c92c3f",
+    "stable_during_hash": true
+  },
+  {
+    "path": "${PANCANCER_ROOT}/Project_v5/spatial_expansion_20260903/processed/GSE203612/GSM6177599_NYU_BRCA0.raw_spatial.h5ad",
+    "bytes": 90997038,
+    "mtime_ns": 1788422766957252583,
+    "sha256": "2a234b5b3f00bb28ca8f8678627d2d715fa1804761f1000c13fb46abb248258d",
+    "stable_during_hash": true
+  },
+  {
+    "path": "${PANCANCER_ROOT}/Project_v5/spatial_expansion_20260903/processed/GSE203612/GSM6177601_NYU_BRCA1.raw_spatial.h5ad",
+    "bytes": 22018054,
+    "mtime_ns": 1788422767376252571,
+    "sha256": "f50855e619d276db81eedf65b0a42db8cac4ff0b28bb65324a8afd8ca41ff37e",
+    "stable_during_hash": true
+  }
+]

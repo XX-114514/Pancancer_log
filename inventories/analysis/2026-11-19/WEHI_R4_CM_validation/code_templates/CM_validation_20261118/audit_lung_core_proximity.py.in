@@ -1,0 +1,48 @@
+from pathlib import Path
+import json,math,hashlib
+import numpy as np,pandas as pd,h5py
+from scipy.sparse import csc_matrix
+from scipy.spatial import cKDTree
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'imaging_lung_core_v1';I=R/'sources/lung_prime5k_10x';old=R/'imaging_breast_mural_states_v1'
+t=pd.read_csv(O/'proximity_tests.tsv',sep='\t');blocks=pd.read_csv(O/'null_blocks.tsv.gz',sep='\t');qualification=pd.read_csv(O/'qualification.tsv',sep='\t');assert len(t)==192;errors=[]
+def verify(z,r,bt):
+ a,b=r.direction.split('_to_');markers={'EC':'ESM1','PC':'RGS5','MF':'FOLR2'};src=z[a];tgt=z[b]&(z[markers[b]]>=r.threshold);pos=z[markers[a]][src]>=r.threshold;coords=z['xy'][src];near=cKDTree(z['xy'][tgt]).query_ball_point(coords,r.radius_um,return_length=True)>0 if tgt.any() else np.zeros(len(coords),bool)
+ tiles=np.floor(coords/r.tile_um).astype(int);design=pd.DataFrame(dict(tx=tiles[:,0],ty=tiles[:,1],depth=z['depth'][src],pos=pos,near=near));expected=[]
+ for _,g in design.groupby(['tx','ty'],sort=True):
+  cuts=g.depth.quantile([.25,.5,.75]).to_numpy();q=(g.depth.to_numpy()[:,None]>=cuts).sum(axis=1)
+  for lev in sorted(set(q)):
+   h=g.iloc[np.flatnonzero(q==lev)];expected.append((len(h),int(h.pos.sum()),int(h.near.sum()),int((h.pos&h.near).sum())))
+ assert expected==list(bt[bt.key==r.key][['n','k','near','observed']].itertuples(index=False,name=None))
+ dist=np.array([1.]);mu=0.;infop=infon=0
+ for n,k,h,obs in expected:
+  v=np.zeros(k+1);denom=math.comb(n,k)
+  for j in range(max(0,k-n+h),min(k,h)+1):v[j]=math.comb(h,j)*math.comb(n-h,k-j)/denom
+  dist=np.convolve(dist,v);mu+=k*h/n
+  if 0<k<n:infop+=k;infon+=n-k
+ observed=int((pos&near).sum());assert observed==r.observed_count and abs(mu-r.expected_count)<1e-9;assert r.n_positive==int(pos.sum()) and r.n_target==int(tgt.sum());assert abs(dist.sum()-1)<1e-10
+ eligible=len(pos)>=20 and tgt.sum()>=10 and infop>=10 and infon>=10;assert eligible==(r.status=='TESTED')
+ if eligible:
+  p=min(1.,sum(v for j,v in enumerate(dist) if abs(j-mu)>=abs(observed-mu)-1e-10));errors.append(abs(p-r.p_exact));assert errors[-1]<1e-10
+
+receipt=json.loads((I/'complete.json').read_text())
+for f in receipt['files']:assert hashlib.sha256((I/f['file']).read_bytes()).hexdigest()==f['sha256']
+with h5py.File(I/'cell_feature_matrix.h5') as f:
+ m=f['matrix'];bc=m['barcodes'].asstr()[:];names=m['features/name'].asstr()[:];typ=m['features/feature_type'].asstr()[:];matrix=csc_matrix((m['data'][:],m['indices'][:],m['indptr'][:]),shape=tuple(m['shape'][:]))
+c=pd.read_csv(I/'cells.csv.gz').set_index('cell_id').loc[bc];assert c.index.is_unique
+selected=np.load(O/'selected_counts_PRIVATE.npz');assert np.array_equal(selected['barcodes'],bc);ix=[int(np.flatnonzero(names==g)[0]) for g in selected['genes']];raw=pd.DataFrame(matrix[ix].toarray().T,columns=selected['genes']);assert np.array_equal(raw,selected['counts']);geneCSR=matrix[typ=='Gene Expression'].T.tocsr();geneCSR.eliminate_zeros();depth=np.asarray(geneCSR.sum(axis=1,dtype=np.int64)).ravel();detected=geneCSR.getnnz(axis=1);assert np.array_equal(depth,selected['depth']) and np.array_equal(detected,selected['detected']) and np.array_equal(depth,c.transcript_counts)
+base=(depth>=50)&(detected>=20)&np.isfinite(c[['x_centroid','y_centroid']]).all(axis=1).to_numpy()&c.cell_area.gt(0).to_numpy();T=raw[['CD3E','CD3G']].gt(0).all(axis=1);B=raw[['CD79A','CD79B','MS4A1']].gt(0).sum(axis=1).ge(2);exclude=raw.EPCAM.ge(2)|T|B;lymph=raw[['PROX1','PDPN','FLT4']].gt(0).sum(axis=1).ge(2);pc=raw[['ABCC9','KCNJ8','CSPG4','PDGFRB']].gt(0).sum(axis=1).ge(2)&raw[['ABCC9','KCNJ8']].gt(0).any(axis=1);mf=raw[['CD68','CSF1R']].gt(0).all(axis=1)
+for gate in [2,3]:
+ ec=raw[['PECAM1','CDH5','KDR','ERG','CLDN5']].gt(0).sum(axis=1).ge(gate)&raw[['CDH5','ERG']].gt(0).any(axis=1)&~lymph;conflict=(ec&pc)|(ec&mf)|(pc&mf)
+ for policy in ['nucleated','all_QC']:
+  setting=f'EC{gate}_{policy}';qc=base&~exclude.to_numpy()&~conflict.to_numpy();qc=qc&(c.nucleus_count.to_numpy()>=1) if policy=='nucleated' else qc;z=np.load(O/(setting+'_cells_PRIVATE.npz'));assert np.array_equal(z['xy'],c[['x_centroid','y_centroid']]) and np.array_equal(z['depth'],depth)
+  for node,mask,marker in [('EC',ec,'ESM1'),('PC',pc,'RGS5'),('MF',mf,'FOLR2')]:
+   wanted=mask.to_numpy()&qc;assert np.array_equal(z[node],wanted);assert np.array_equal(z[marker],raw[marker])
+   for k in [1,2]:
+    q=qualification[(qualification.setting==setting)&(qualification.node==node)&(qualification.threshold==k)].iloc[0];assert q.lineage_cells==wanted.sum() and q.marker_positive==(wanted&raw[marker].ge(k)).sum() and q.kept_QC==qc.sum()
+  for r in t[t.setting==setting].itertuples():verify(z,r,blocks)
+  print(setting,'all raw identities and48 exact tests PASS',flush=True)
+priorproof=json.loads((old/'independent_audit.json').read_text());assert priorproof['status'].startswith('PASS_');assert hashlib.sha256((old/'joint_identity_tests.tsv').read_bytes()).hexdigest()==priorproof['joint_sha256'];prior=pd.read_csv(old/'joint_identity_tests.tsv',sep='\t');prior['platform_cohort']='breast';prior['current_state']=prior.state
+new=t.copy();new['platform_cohort']='lung';new['current_state']=new.setting;j=pd.concat([prior,new],ignore_index=True);assert len(j)==480;good=j.status.eq('TESTED');p=j.loc[good,'p_exact'].to_numpy();order=np.argsort(p);q=np.minimum.accumulate((p[order]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1].clip(0,1);unorder=np.empty_like(q);unorder[order]=q;assert np.allclose(unorder,multipletests(p,method='fdr_bh')[1],atol=1e-12);j.loc[good,'q_joint_imaging']=unorder;j.to_csv(O/'joint_imaging_tests.tsv',sep='\t',index=False)
+proof=dict(status='PASS_raw_gene_matrix_all_identity_masks_and192_exact_tests_and_joint_imaging_BH',lung_planned=len(t),lung_tested=int(t.status.eq('TESTED').sum()),prior_tested=int(prior.status.eq('TESTED').sum()),joint_planned=len(j),joint_tested=int(good.sum()),lung_joint_q05=int(((j.platform_cohort=='lung')&j.q_joint_imaging.lt(.05)).sum()),max_exact_p_error=max(errors),joint_sha256=hashlib.sha256((O/'joint_imaging_tests.tsv').read_bytes()).hexdigest(),limitations='one lung donor; marker proxies without author identities and absent contractile markers; conditional exchangeability assumption; two-way tests do not establish three-way simultaneous hub; no contact or signaling inference')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(j[(j.platform_cohort=='lung')&(j.setting=='EC2_nucleated')&(j.threshold==1)&(j.radius_um==30)&(j.tile_um==200)][['direction','n_positive','n_target','effect_fraction','p_exact','q_joint_imaging','status']].to_string(index=False))

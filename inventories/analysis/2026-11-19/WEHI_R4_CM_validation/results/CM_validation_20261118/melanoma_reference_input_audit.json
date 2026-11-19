@@ -1,0 +1,12 @@
+{
+  "status": "PASS_OLD_REFERENCE_EXACT_PRESERVATION_AND_MELANOMA_NATIVE_REPLAY",
+  "original_cells": 52622,
+  "new_cells": 2400,
+  "labels": 50,
+  "replayed_native_rows": 48,
+  "all_values_integer_finite_nonnegative": true,
+  "source_unit_caps_verified": true,
+  "reference_sha256": "a5ccdf44c172cd16abc1ea2cbed12691c32ee81f2eecb59f7dcdf9044bbec297",
+  "identity_review": "marker_audit written; interpretation and heldout separability pending",
+  "patient_independence": false
+}

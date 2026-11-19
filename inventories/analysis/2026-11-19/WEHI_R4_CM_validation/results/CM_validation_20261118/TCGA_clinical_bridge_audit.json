@@ -1,0 +1,32 @@
+{
+  "status": "PASS_EXACT_SAMPLE_CLINICAL_KEYS_PATIENT_PREFIX_AND_OS_CODING",
+  "expression_samples": 10535,
+  "phenotype_matched": 10534,
+  "clinical_matched": 10496,
+  "sample_types": {
+    "Primary Tumor": 9185,
+    "Solid Tissue Normal": 727,
+    "Metastatic": 392,
+    "Primary Blood Derived Cancer - Peripheral Blood": 173,
+    "Recurrent Tumor": 45,
+    "Additional - New Primary": 11,
+    "UNMATCHED": 1,
+    "Additional Metastatic": 1
+  },
+  "primary_tumor_samples": 9185,
+  "provisional_OS_candidates": 9055,
+  "duplicate_patient_primary_candidate_rows": 0,
+  "OS_nonpositive_or_missing_excluded": 108,
+  "cancers_with_candidates": 32,
+  "eligible_for_confirmatory_model": false,
+  "metadata_hashes": {
+    "TCGA_survival_S1.tsv": "a5e704158bb5c51cded8a368accd999dfb259d428e88bbb0c4386078c5df9617",
+    "TCGA_phenotype.tsv.gz": "ac3923bb155ada3391b653a811f6c8c9c4734593b0c2b0a1555728928d83e5a2",
+    "TCGA_immune_subtype.txt.gz": "d8c6da1fd2f73ed1c5c0639c66c3928679026dcacd85b52edf3265c65eff6aa5"
+  },
+  "expression_header_sha256": "8bbb9a734b477a0572d4656a841777efb4243f053ef85deeae56c50680ebc696",
+  "expression_unit": "log2(tpm+0.001)",
+  "expression_metadata_sha256": "bff785a204d5c9691ecc1ef653f1454fd1c883fd865d4697dc217702aed0c452",
+  "linear_TPM_inverse": "2**value - 0.001; small negative rounding artifacts require explicit tolerance, not interpreting file values as linear TPM",
+  "limitations": "gene mapping pending; OS time origin/units primary-source verification pending; frozen R4 signature and covariates pending; immune subtype is not continuous immune infiltration; prior TCGA analyses exist, not untouched validation"
+}

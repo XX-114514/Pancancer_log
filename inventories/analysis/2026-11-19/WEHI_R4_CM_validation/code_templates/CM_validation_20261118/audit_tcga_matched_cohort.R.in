@@ -1,0 +1,24 @@
+suppressPackageStartupMessages(library(survival));suppressPackageStartupMessages(library(jsonlite))
+p <- '${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates/TCGA_survival_v1_nonredacted';o<-file.path(p,'matched_cohort_sensitivity_v1')
+stopifnot(file.exists(file.path(o,'complete.json')))
+a<-read.delim(file.path(p,'associations.tsv'),stringsAsFactors=FALSE,check.names=FALSE);x<-read.delim(file.path(o,'matched_comparisons.tsv'),stringsAsFactors=FALSE,check.names=FALSE);coefstored<-read.delim(file.path(o,'matched_coefficients.tsv'),stringsAsFactors=FALSE)
+c<-read.delim(file.path(p,'clinical_PRIVATE.tsv'),stringsAsFactors=FALSE,check.names=FALSE);s<-read.delim(gzfile(file.path(p,'scores_PRIVATE.tsv.gz')),stringsAsFactors=FALSE,check.names=FALSE)
+models<-list(stage=c('age10','sex','stage_late'),composition=c('age10','sex','purity10','LF10'),stage_composition=c('age10','sex','stage_late','purity10','LF10'))
+expected<-a$id[a$status=='FIT_OK' & a$model!='base'];stopifnot(setequal(x$id,expected),!anyDuplicated(x$id))
+maxbeta<-0;maxse<-0;maxll<-0
+for(i in seq_len(nrow(x))) {
+ r<-x[i,];sg<-s[s$cancer==r$cancer & s$branch==r$branch & s$cm==r$cm,];g<-c[match(sg$sample,c$sample),];stopifnot(all(g$sample==sg$sample));g$score_sd<-sg$score_sd;g$time<-g[[paste0(r$endpoint,'.time')]];g$event<-g[[r$endpoint]]
+ fields<-c('time','event','score_sd',models[[r$model]]);z<-g[complete.cases(g[,fields]) & g$time>0 & g$event %in% c(0,1),]
+ cols<-c('score_sd','age10','sex');cols<-cols[vapply(cols,function(k)length(unique(z[[k]]))>1,logical(1))]
+ stopifnot(nrow(z)==r$matched_patients,sum(z$event)==r$matched_events,!anyDuplicated(z$patient),paste(cols,collapse='|')==r$matched_columns)
+ fit<-coxph(as.formula(paste('Surv(time,event) ~',paste(cols,collapse='+'))),data=z,ties='efron',robust=FALSE,singular.ok=FALSE,control=coxph.control(iter.max=100,eps=1e-10))
+ got<-coefstored[coefstored$id==r$id,];got<-got[match(names(coef(fit)),got$term),]
+ eb<-max(abs(coef(fit)-got$beta));es<-max(abs(sqrt(diag(vcov(fit)))-got$se));el<-abs(tail(fit$loglik,1)-r$matched_loglik)
+ stopifnot(eb<1e-5,es<1e-5,el<1e-5,abs(coef(fit)['score_sd']-r$matched_base_beta)<1e-5,abs(exp(r$matched_base_beta)-r$matched_base_HR)<1e-12)
+ original<-a[a$id==r$id,];base<-a[a$id==paste(r$cancer,r$branch,r$cm,r$endpoint,'base',sep='__'),]
+ stopifnot(nrow(original)==1,nrow(base)==1,base$patients==r$full_base_patients,abs(base$beta-r$full_base_beta)<1e-12,abs(original$beta-r$adjusted_beta)<1e-12)
+ stopifnot(abs(r$beta_shift_sample_restriction-(r$matched_base_beta-r$full_base_beta))<1e-12,abs(r$beta_shift_covariate_conditioning-(r$adjusted_beta-r$matched_base_beta))<1e-12)
+ maxbeta<-max(maxbeta,eb);maxse<-max(maxse,es);maxll<-max(maxll,el)
+}
+proof<-list(status='PASS_ALL_MATCHED_PATIENT_DESIGNS_INDEPENDENT_R_EFRON_REFITS_AND_BETA_DECOMPOSITION',models=nrow(x),max_beta_error=maxbeta,max_se_error=maxse,max_loglik_error=maxll,new_hypothesis_tests=0,scope='numerical and cohort sensitivity, not causal decomposition or prediction')
+write_json(proof,file.path(o,'independent_audit.json'),pretty=TRUE,auto_unbox=TRUE);cat(toJSON(proof,auto_unbox=TRUE),'\n')

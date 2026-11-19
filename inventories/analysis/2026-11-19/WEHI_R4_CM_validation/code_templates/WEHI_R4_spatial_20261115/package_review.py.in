@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,hashlib,tarfile,time
+R=Path('${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1')
+assert json.loads((R/'review/complete.json').read_text())['status']=='review_complete'
+files=sorted(p for p in (R/'review').rglob('*') if p.is_file())
+manifest={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files};(R/'review_manifest.json').write_text(json.dumps(manifest,indent=2))
+with tarfile.open(R/'review_delivery.tar.gz','w:gz') as t:
+    for p in files+[R/'review_manifest.json',R/'plan.json',R/'inputs/Visium_source_receipt.json',R/'reference/preparation.json',R/'reference/complete.json',R/'reference/separability_complete.json']:t.add(p,arcname=str(p.relative_to(R)),recursive=False)
+status={'status':'complete','review_files':len(files),'archive_sha256':hashlib.sha256((R/'review_delivery.tar.gz').read_bytes()).hexdigest(),'completed_epoch':time.time()};(R/'DELIVERY_STATUS.json').write_text(json.dumps(status,indent=2));print(json.dumps(status))

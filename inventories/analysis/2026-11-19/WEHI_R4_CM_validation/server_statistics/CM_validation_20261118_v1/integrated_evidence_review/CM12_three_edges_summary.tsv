@@ -1,0 +1,19 @@
+node1	node2	posterior	metric	n_sections	min_rho	max_rho	positive_sections	interpretation
+Endo_tip_ESM1	Str_Pericyte_RGS5	means	raw_spearman	8	0.2488307971134613	0.7405119805101436	8	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Str_Pericyte_RGS5	means	partial_rank_total_melanoma_other_nuisance	8	0.2205470888000134	0.6295499198595962	8	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Str_Pericyte_RGS5	means	parent_fraction_spearman	8	-0.0890797100577675	0.7976339163464723	7	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Str_Pericyte_RGS5	q05	raw_spearman	8	0.2229845616594282	0.793203043759233	8	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Str_Pericyte_RGS5	q05	partial_rank_total_melanoma_other_nuisance	8	0.160823747177386	0.6195066981246958	8	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Str_Pericyte_RGS5	q05	parent_fraction_spearman	8	-0.1626676959783582	0.8219679007233359	7	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Mye_Mac_FOLR2	means	raw_spearman	8	0.106840585351772	0.5625752323647468	8	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Mye_Mac_FOLR2	means	partial_rank_total_melanoma_other_nuisance	8	-0.0675585788011374	0.5064282910759714	6	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Mye_Mac_FOLR2	means	parent_fraction_spearman	8	-0.4473339300909503	0.2647567421879034	5	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Mye_Mac_FOLR2	q05	raw_spearman	8	0.0296542853898771	0.6279942014602143	8	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Mye_Mac_FOLR2	q05	partial_rank_total_melanoma_other_nuisance	8	-0.0478528415426335	0.5247860059628735	4	Descriptive signs, not significance or independent patients
+Endo_tip_ESM1	Mye_Mac_FOLR2	q05	parent_fraction_spearman	8	-0.4692586944269468	0.2423287666739199	6	Descriptive signs, not significance or independent patients
+Mye_Mac_FOLR2	Str_Pericyte_RGS5	means	raw_spearman	8	0.2161845412983979	0.7103667613861072	8	Descriptive signs, not significance or independent patients
+Mye_Mac_FOLR2	Str_Pericyte_RGS5	means	partial_rank_total_melanoma_other_nuisance	8	0.0394822124227472	0.647802410745061	8	Descriptive signs, not significance or independent patients
+Mye_Mac_FOLR2	Str_Pericyte_RGS5	means	parent_fraction_spearman	8	-0.3448828034346716	0.4859893391248479	6	Descriptive signs, not significance or independent patients
+Mye_Mac_FOLR2	Str_Pericyte_RGS5	q05	raw_spearman	8	0.2154562959868872	0.7948452298069378	8	Descriptive signs, not significance or independent patients
+Mye_Mac_FOLR2	Str_Pericyte_RGS5	q05	partial_rank_total_melanoma_other_nuisance	8	-0.0098905562153633	0.663448377351088	7	Descriptive signs, not significance or independent patients
+Mye_Mac_FOLR2	Str_Pericyte_RGS5	q05	parent_fraction_spearman	8	-0.4159831581739217	0.571436749005509	6	Descriptive signs, not significance or independent patients

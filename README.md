@@ -1,3 +1,7 @@
+## 2026-11-19 WEHI R4 K15 完整任务归档
+
+[完整总结、代码、统计表及审计清单](inventories/analysis/2026-11-19/WEHI_R4_CM_validation/README.md)。2026-11-18扩展目标仍进行中：通讯和临床/成像已完成当前分析；high/low审计14/15、空间模型18/24，完整N敏感性待完成。CM12有部分空间核心轴支持，尚未建立完整hub、CM特异患者差异通讯或稳定ICI预测指标。历史CM编号与本版不可互换。
+
 > **ccRCC现身份空间定位（2026-11-10）**：[区域贡献、三张空间图与后续优先级](inventories/analysis/2026-11-10/ccrcc_localization_v1/README.md)。身份复查后置，EC—NK及五条表达候选在固定分区删一块后方向保留；优先Mural→B/T CXCL12–CXCR4外部复现，未升级为机制证明。
 
 > **ccRCC按现有身份推进（2026-11-09）**：[CM邻域与空间通讯结果](inventories/analysis/2026-11-09/ccrcc_followup_v1/README.md)。身份问题仅登记后置；原身份12组成/108 LR已审核，空间CellChat四参数完成并审核；有限MC联合校正未通过，候选与确认分开。

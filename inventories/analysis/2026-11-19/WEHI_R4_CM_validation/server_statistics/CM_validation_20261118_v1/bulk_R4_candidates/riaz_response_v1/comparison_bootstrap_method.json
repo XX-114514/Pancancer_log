@@ -1,0 +1,6 @@
+{
+  "seed": 2026111820,
+  "replicates": 5000,
+  "method": "fixed-score patient bootstrap separately within response strata; no pooled AUC",
+  "limitations": "does not propagate score-standardization uncertainty; intervals unadjusted and descriptive; gene panels/normalization differ across cohorts"
+}

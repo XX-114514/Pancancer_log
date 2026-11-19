@@ -1,0 +1,54 @@
+"""All-module DE multiplicity correction, preserving original results.
+
+Correction verification is distinct from upstream numerical audits and from
+patient-level differential ligand-receptor inference.
+"""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+O=R/'highlow_joint15_v1';O.mkdir(exist_ok=False)
+plan=dict(modules=['CM%02d'%i for i in range(1,16)],scope='All genes and all original eligible members, never significant-only selection',families=['all cell Welch tests across 15 modules','all unit HC3 tests across 15 modules','union of both model families as additional sensitivity'],nonassessable='Missing comparisons not imputed. Existing zero-variance HC3 p=1 retained conservatively, with variance_assessable flag.',interpretation='Exploratory same-identity High=CMT equals CM versus other assigned CMTs. Units not verified independent patients. No differential LR conclusion. Upstream audits tracked separately.')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+frames=[];inventory=[];audit_status={}
+for cm in plan['modules']:
+ s=R/'highlow'/cm
+ complete=json.loads((s/'complete.json').read_text());assert complete['cm']==cm
+ summary=pd.read_csv(s/'member_summary.tsv',sep='\t')
+ assert len(summary)==complete['members'] and not summary.node.duplicated().any()
+ au=s/'independent_audit.json'
+ audit_status[cm]=json.loads(au.read_text())['status'] if au.exists() else 'PENDING'
+ for row in summary.itertuples():
+  for family,suffix,pc,gc in [('cell','_cell_DE.tsv.gz','pvals','names'),('unit','_unit_source_adjusted.tsv.gz','p','gene')]:
+   f=s/(row.node+suffix)
+   if not f.exists():
+    inventory.append(dict(cm=cm,node=row.node,family=family,status='MISSING_UNASSESSABLE',upstream_status=row.status if family=='cell' else row.unit_sensitivity_status));continue
+   t=pd.read_csv(f,sep='\t');assert len(t)==12563 and t[gc].is_unique and t[pc].between(0,1).all()
+   h=hashlib.sha256(f.read_bytes()).hexdigest()
+   if au.exists():assert json.loads(au.read_text())['hashes'][f.name]==h
+   t=t.rename(columns={gc:'gene',pc:'p_raw'})
+   t.insert(0,'family',family);t.insert(0,'node',row.node);t.insert(0,'cm',cm)
+   frames.append(t)
+   inventory.append(dict(cm=cm,node=row.node,family=family,status='INCLUDED',n_genes=len(t),sha256=h,path=str(f)))
+alltests=pd.concat(frames,ignore_index=True)
+assert not alltests.duplicated(['cm','node','family','gene']).any()
+alltests['q_joint_both_models']=multipletests(alltests.p_raw,method='fdr_bh')[1]
+alltests['q_joint15_model']=np.nan
+for family in ['cell','unit']:
+ ix=alltests.family.eq(family)
+ alltests.loc[ix,'q_joint15_model']=multipletests(alltests.loc[ix,'p_raw'],method='fdr_bh')[1]
+summ=[]
+for (cm,node,family),t in alltests.groupby(['cm','node','family'],sort=True):
+ o=O/cm;o.mkdir(exist_ok=True)
+ # Preserve every row and its existing within-comparison q values.
+ t.to_csv(o/(node+'_'+family+'_joint.tsv.gz'),sep='\t',index=False)
+ valid=t.variance_assessable.eq(True) if family=='unit' else pd.Series(True,index=t.index)
+ effect=t.high_minus_low_mean_log_expression if family=='unit' else t.logfoldchanges
+ summ.append(dict(cm=cm,node=node,family=family,n_tests=len(t),n_variance_assessable=int(valid.sum()),q_model05=int((t.q_joint15_model.lt(.05)&valid).sum()),q_both05=int((t.q_joint_both_models.lt(.05)&valid).sum()),positive_q_both05=int((t.q_joint_both_models.lt(.05)&valid&effect.gt(0)).sum()),negative_q_both05=int((t.q_joint_both_models.lt(.05)&valid&effect.lt(0)).sum())))
+pd.DataFrame(summ).to_csv(O/'comparison_summary.tsv',sep='\t',index=False)
+pd.DataFrame(inventory).to_csv(O/'input_inventory.tsv',sep='\t',index=False)
+markers=['ESM1','RGS5','FOLR2','ACKR1','PI16','GJA5','MYH11','PDGFRB','PDGFB','VEGFA','KDR','CXCL12']
+alltests[alltests.gene.isin(markers)].to_csv(O/'fixed_marker_results.tsv',sep='\t',index=False)
+proof=dict(status='CORRECTION_WRITTEN_PENDING_INDEPENDENT_JOINT_AUDIT',n_tests=len(alltests),family_counts=alltests.groupby('family').size().to_dict(),n_comparisons=len(summ),upstream_audits_at_run=audit_status,all_upstream_audits_complete=all(v.startswith('PASS_') for v in audit_status.values()),limitations=plan['interpretation'])
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

@@ -1,0 +1,22 @@
+"""Verify the small delivered result package independently of the modeling code."""
+from pathlib import Path
+from html.parser import HTMLParser
+import csv,json,hashlib,math,sys
+root=Path(sys.argv[1]).resolve();review=root/'review'
+m=json.loads((root/'review_manifest.json').read_text())
+assert all(hashlib.sha256((root/k).read_bytes()).hexdigest()==v for k,v in m.items())
+def rows(name):
+    with (review/name).open() as f:return list(csv.DictReader(f,delimiter='\t'))
+tech=rows('Visium_technical.tsv');assert len(tech)==4 and {x['section'] for x in tech}=={'S001','S002','S037','S038'}
+assert all(int(x['epochs'])==30000 and x['audit'].startswith('PASS_') for x in tech)
+scores=rows('Visium_all15_scores.tsv');assert len(scores)==240
+keys={(x['section_code'],x['cm'],x['posterior'],x['statistic']) for x in scores};assert len(keys)==240
+assert {x['cm'] for x in scores}=={f'CM{i:02d}' for i in range(1,16)}
+assert all(0<=float(x['author_score'])<=1 for x in scores if x['author_score'])
+class Links(HTMLParser):
+    def __init__(self):super().__init__();self.files=[]
+    def handle_starttag(self,tag,attrs):
+        for key,value in attrs:
+            if key in ('src','href') and value and not value.startswith(('http:','https:','#','data:')):self.files.append(value)
+p=Links();p.feed((review/'report.html').read_text());assert all((review/f).is_file() for f in p.files)
+print(json.dumps({'status':'PASS_delivered_manifest_all_240_scores_four_full_fits_and_HTML_local_links','files_verified':len(m),'Visium_spots':sum(int(x['spots']) for x in tech),'local_report_references_checked':len(p.files)},indent=2))

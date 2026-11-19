@@ -1,0 +1,39 @@
+from pathlib import Path
+import json,hashlib,gc
+import numpy as np,pandas as pd,scipy.sparse as sp,zarr,anndata as ad
+BASE=Path('${PROJECT_ARCHIVE_ROOT}')
+SRC=BASE/'w2o_annotation_r4_covarnet_k15_20261115_v1'
+RUN=BASE/'spatial_CoVarNet_R4_20261115_v1'
+OLD=Path('${PANCANCER_ROOT}/Project_v3/runs/20261107_v4_Visium_author_validation_v2')
+for d in ['reference','inputs','sections','scores','logs','imaging','code']:(RUN/d).mkdir(parents=True,exist_ok=True)
+plan={'selection':'first two available accession-ordered primary breast sections from GSE203612; first two ccRCC sections from GSE273952; no current R4 spatial outcome used', 'sections':['S001','S002','S037','S038'],'primary_modules':['CM01','CM12','CM04'],'all_modules_reported':15,'reference':'R4 A/B/B2/C1; exact Plasma overlay; <=1000 cells per node; old epithelial nuisance labels only, separate provenance','cell2location':{'reference_epochs':250,'spatial_epochs':30000,'N_cells_per_location':5,'detection_alpha':20,'posterior_samples':1000},'metrics':'frozen W weighted activity / global p99; author Spearman colocalization and directed 60NN inverse-square Moran aggregation; means primary q05 sensitivity','imaging':'six breast Xenium 5k and one renal Xenium RNA+protein; measured-marker proxies only, no missing-as-zero','inference':'descriptive section-level replication; no pooled spot P values or patient independence assumption'}
+(RUN/'plan.json').write_text(json.dumps(plan,indent=2))
+jobs=[j for j in json.loads((OLD/'inputs/section_jobs_PRIVATE.json').read_text()) if j['section_code'] in plan['sections']]
+assert len(jobs)==4
+(RUN/'inputs/section_jobs_PRIVATE.json').write_text(json.dumps(jobs,indent=2))
+lab=pd.read_csv(SRC/'annotation/cell_labels_r4.tsv.gz',sep='\t',usecols=['cell_id','source','name','tier','class8']).set_index('cell_id')
+overlay=pd.read_csv(SRC/'annotation/plasma_r4_subtypes.tsv.gz',sep='\t').set_index('cell_id');lab.loc[overlay.index,'name']=overlay.refined_name
+nodes=pd.read_csv(SRC/'covarnet/node_mapping.tsv',sep='\t').node.tolist()
+lab=lab[lab.tier.isin(['A','B','B2','C1']) & lab.name.isin(nodes)].copy();assert set(lab.name)==set(nodes)
+g=zarr.open_group(str(BASE/'zarr/tme_v1.zarr'),mode='r');axis=pd.Index(g['obs/_index'][:]);var=pd.Index(g['var/_index'][:]);assert axis.is_unique and var.is_unique
+maskpath,=BASE.glob('r3_handoff_20261108/*/p2/measured_gene_mask_by_source.tsv.gz');mask=pd.read_csv(maskpath,sep='\t').set_index('gene')
+old=ad.read_h5ad(OLD/'reference/reference_and_heldout_PRIVATE.h5ad');old=old[(old.obs.major=='Epithelial') & (old.obs.split=='reference')].copy();assert old.obs.node.nunique()==5
+genes=sorted(set(mask.index[mask.all(axis=1)])&set(var)&set(old.var_names));genes=[v for v in genes if not v.startswith('MT-')];assert len(genes)>5000
+rng=np.random.default_rng(20261115);parts=[]
+for node,df in lab.groupby('name',sort=True):
+    n=min(1000,len(df));held=min(100,len(df)-n);chosen=df.iloc[rng.choice(len(df),n+held,replace=False)].copy();chosen['split']=['reference']*n+['heldout']*held;parts.append(chosen)
+selected=pd.concat(parts);selected['row']=axis.get_indexer(selected.index);assert selected.row.ge(0).all();selected=selected.sort_values('row');sel=selected.row.to_numpy();cols=var.get_indexer(genes)
+mat=g['layers/counts'];ptr=mat['indptr'][:];blocks=[]
+for lo in range(0,len(axis),20000):
+    hi=min(len(axis),lo+20000);a,b=np.searchsorted(sel,[lo,hi])
+    if a==b:continue
+    start,end=int(ptr[lo]),int(ptr[hi]);data=mat['data'][start:end];ix=mat['indices'][start:end];x=sp.csr_matrix((data,ix,ptr[lo:hi+1]-start),shape=(hi-lo,len(var)));x=x[sel[a:b]-lo][:,cols].astype('float32');assert (x.data>=0).all() and np.allclose(x.data,np.rint(x.data));blocks.append(x)
+    (RUN/'reference/progress.json').write_text(json.dumps({'axis_rows':hi,'selected_completed':int(b),'selected_total':len(sel)}))
+X=sp.vstack(blocks,format='csr');obs=selected.rename(columns={'name':'node','class8':'major'})[['node','source','split','major']];new=ad.AnnData(X,obs=obs,var=pd.DataFrame(index=genes))
+old=old[:,genes].copy();old.obs=old.obs[['node','source','split','major']].copy();old.obs['node']='nuisance:'+old.obs.node.astype(str)
+assert not set(old.obs_names)&set(new.obs_names)
+ref=ad.concat([new,old],join='inner');ref.obs=ref.obs.astype(str);ref.write_h5ad(RUN/'reference/reference_and_heldout_PRIVATE.h5ad',compression='gzip')
+ref.obs.groupby(['node','split'],observed=True).size().rename('cells').reset_index().to_csv(RUN/'reference/node_coverage.tsv',sep='\t',index=False)
+pd.DataFrame({'gene':genes}).to_csv(RUN/'reference/measured_common_genes.tsv',sep='\t',index=False)
+result={'status':'reference_prepared','cells':ref.n_obs,'genes':ref.n_vars,'labels':ref.obs.node.nunique(),'R4_nodes':len(nodes),'nuisance_labels':5,'all_counts_integer':True,'all_genes_measured_in_all70_R4_sources':True,'R4_source_SHA':hashlib.sha256((SRC/'annotation/cell_labels_r4.tsv.gz').read_bytes()).hexdigest(),'reference_sha256':hashlib.sha256((RUN/'reference/reference_and_heldout_PRIVATE.h5ad').read_bytes()).hexdigest()}
+(RUN/'reference/preparation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result),flush=True)

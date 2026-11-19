@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ALL_RIAZ_SCORES_PATIENT_GROUPS_EXACT_U_PERMUTATION_AND_CROSS_COHORT_BH",
+  "score_values": 3060,
+  "Riaz_tests": 240,
+  "joint_tests": 360,
+  "max_score_error": 8.881784197001252e-16,
+  "association_sha256": "aabe720ddcde9c13d8596db123adcaf414c950cb2f4a02ed3a390604e11c625b",
+  "limitations": "numerical replay only; not independent external predictive validation"
+}

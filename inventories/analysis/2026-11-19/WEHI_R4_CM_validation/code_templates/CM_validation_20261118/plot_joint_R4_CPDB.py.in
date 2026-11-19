@@ -1,0 +1,18 @@
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'communication_joint15_v2';a=json.loads((O/'independent_audit.json').read_text());assert a['status'].startswith('PASS_')
+c=pd.read_csv(O/'core_edges_all_CMT.tsv.gz',sep='\t');c['pair']=c.source_identity.str.split('_').str[-1]+' -> '+c.target_identity.str.split('_').str[-1];order=['ESM1 -> RGS5','RGS5 -> ESM1','ESM1 -> FOLR2','FOLR2 -> ESM1','RGS5 -> FOLR2','FOLR2 -> RGS5','ACKR1 -> PI16','PI16 -> ACKR1','GJA5 -> MYH11','MYH11 -> GJA5'];mods=['CM%02d'%n for n in range(1,16)];g=c.assign(significant=c.q_joint15.le(.05)).groupby(['CMT','pair']).significant.sum().unstack().reindex(index=mods,columns=order);g.to_csv(O/'core_pair_event_counts.tsv',sep='\t')
+fig,ax=plt.subplots(figsize=(12,8),layout='constrained');im=ax.imshow(g.to_numpy(),cmap='Blues',aspect='auto',vmin=0);fig.colorbar(im,ax=ax,label='LR entries with joint q <= 0.05',shrink=.7)
+ax.set_xticks(range(10),order,rotation=40,ha='right');ax.set_yticks(range(15),mods)
+for i in range(15):
+ for j in range(10):
+  val=g.iloc[i,j]
+  ax.text(j,i,'NA' if pd.isna(val) else str(int(val)),ha='center',va='center',fontsize=8,color='white' if pd.notna(val) and val>np.nanmax(g.to_numpy())*.65 else 'black')
+ax.set_title('Prespecified CM12 / CM01 / CM04 core pairs across all 15 CMT groups')
+fig.supxlabel(f'Joint BH across {a["tests"]:,} eligible interaction x ordered-pair x CMT entries.\nCounts are pooled-cell CPDB entries, not independent LR discoveries or patient-level high/low contrasts.\nArrows denote CPDB ordered pairs, not proven signaling direction. All retained entries occupy the same finite-permutation P bin.',fontsize=10)
+fig.savefig(O/'core_pair_event_counts.png',dpi=170);plt.close(fig)
+summary=pd.read_csv(O/'module_summary.tsv',sep='\t');print(summary.to_string(index=False));print(g.to_string())

@@ -1,0 +1,34 @@
+{
+  "status": "SURVIVAL_INPUTS_AND_PLAN_FROZEN_PENDING_FIT",
+  "patients": 9120,
+  "score_rows": 273600,
+  "models": {
+    "base": [
+      "age10",
+      "sex"
+    ],
+    "stage": [
+      "age10",
+      "sex",
+      "stage_late"
+    ],
+    "composition": [
+      "age10",
+      "sex",
+      "purity10",
+      "LF10"
+    ],
+    "stage_composition": [
+      "age10",
+      "sex",
+      "stage_late",
+      "purity10",
+      "LF10"
+    ]
+  },
+  "input_hashes": {
+    "bulk_R4_candidates/TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz": "92f8bf7415aed929674df8fe000e84cdbd7cfb2ce9f2dea4402e33a117d7a7f1",
+    "clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv": "8e1bb0f086fd9218b41d630602f30679ce923713ff198dc46592d4115d9e6f08",
+    "bulk_R4_candidates/TCGA_leukocyte_purity_v3_nonredacted/analysis_bridge_PRIVATE.tsv.gz": "f64842420c54046fc1d9a945bfb4d65bf093d01594360e374953901584e2cf6e"
+  }
+}

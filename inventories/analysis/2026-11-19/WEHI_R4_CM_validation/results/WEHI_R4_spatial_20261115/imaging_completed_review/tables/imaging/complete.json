@@ -1,0 +1,42 @@
+{
+  "status": "imaging_marker_density_complete",
+  "sections": 7,
+  "receipts": [
+    {
+      "section": "breast_S01",
+      "sha256": "1c3e526044c44798cdafe3aff21c07db51c886234d61d0240a191ea8b735a31d",
+      "axis_verified": true
+    },
+    {
+      "section": "breast_S02",
+      "sha256": "e986f430a4717990e1316e0fa937409591ac05c851812d79ec7598697bc7811e",
+      "axis_verified": true
+    },
+    {
+      "section": "breast_S03",
+      "sha256": "d22247ab7203e97abacdc174c0acf991bbeb0417ee4fa3ac2c3d2dd884bb7baa",
+      "axis_verified": true
+    },
+    {
+      "section": "breast_S04",
+      "sha256": "eca71dfa4f2e92292e7cc40abea51d38dd77a9d7a350edb310a313d2420d93ea",
+      "axis_verified": true
+    },
+    {
+      "section": "breast_S05",
+      "sha256": "e19d854e91786dfa00c371fa6c8405a0758cd3d68e3bdfdc41f8fafce3cd9bc9",
+      "axis_verified": true
+    },
+    {
+      "section": "breast_S06",
+      "sha256": "674185b504bb253bbd15d4ed4eb964b755d87aa138f211b107af6b03ba8dff8c",
+      "axis_verified": true
+    },
+    {
+      "section": "renal_Xenium",
+      "native_files_verified_by_original_loader": true,
+      "protein_not_used_as_RNA": true
+    }
+  ],
+  "exact_R4_celltype_mapping": false
+}

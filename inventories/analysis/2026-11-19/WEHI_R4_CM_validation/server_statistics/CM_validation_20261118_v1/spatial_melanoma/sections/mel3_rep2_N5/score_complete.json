@@ -1,0 +1,13 @@
+{
+  "status": "LITERAL_AUTHOR_ALL15_MEAN_AND_Q05_METRICS_FINISHED_PENDING_INDEPENDENT_AUDIT",
+  "UTC": "2026-11-19T01:50:37Z",
+  "section_code": "mel3_rep2_N5",
+  "neighbors": 60,
+  "type": "idw",
+  "alpha": 2,
+  "style": "W",
+  "posterior_variants": ["means", "q05"],
+  "background": "44 R4 non-epithelial CM input nodes; 6 nuisance reference labels fit but not scored",
+  "spdep": "1.4.1",
+  "CoVarNet_author_commit": "e59b314941e73c8a6eb008ee537cfd461c7e10bd"
+}

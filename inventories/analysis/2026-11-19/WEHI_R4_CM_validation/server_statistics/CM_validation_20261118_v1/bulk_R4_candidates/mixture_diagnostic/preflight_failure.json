@@ -1,0 +1,5 @@
+{
+  "status": "STOPPED_PREFLIGHT_NO_COMPUTATION",
+  "reason": "assumed all 44 identities had heldout cells; actual IgD plasma has none",
+  "resolution": "v2 explicitly marks unavailable members and lineage controls; no training cells added to test"
+}

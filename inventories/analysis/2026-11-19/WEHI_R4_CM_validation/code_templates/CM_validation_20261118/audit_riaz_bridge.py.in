@@ -1,0 +1,28 @@
+from pathlib import Path
+import csv,re,json
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');S=R/'sources/riaz_author';O=R/'clinical/riaz_author_v2'
+with (S/'data_SampleTableCorrected.9.19.16.csv').open(newline='') as f:
+ rows=list(csv.reader(f));header=rows.pop(0);assert header.count('Response')==2
+ ix={name:header.index(name) for name in ['BamName','PatientID','PreOn','USUBJID','BOR','Cohort']};ix['response']=header.index('Response');mapping={}
+ for r in rows:
+  name=r[ix['BamName']];assert name.endswith('.bam');name=name[:-4]
+  # Explicit library-token parsing, preserving every other character.
+  m=re.fullmatch(r'(Pt[0-9]+_(?:Pre|On)_[A-Z0-9]+)\.([0-9]+)',name)
+  key=m.group(1)+'-'+m.group(2) if m else name
+  assert key not in mapping;mapping[key]={k:r[v] for k,v in ix.items()}
+with (S/'data_bms038_clinical_data.csv').open(newline='') as f:clinical={r['PatientID']:r for r in csv.DictReader(f)}
+with (R/'clinical/riaz2017_sample_bridge_PRIVATE.tsv').open() as f:geo={r['expression_key']:r for r in csv.DictReader(f,delimiter='\t')}
+with (O/'sample_bridge_PRIVATE.tsv').open() as f:result=list(csv.DictReader(f,delimiter='\t'))
+assert len(result)==len(geo)==109;eligible=[]
+for r in result:
+ key=r['expression_key'];g=geo[key];a=mapping.get(key);ok=False
+ if a:
+  assert a['PatientID']==g['patient_candidate'] and a['PreOn']==g['visit (pre or on treatment)'];assert r['USUBJID']==a['USUBJID']
+  assert r['PatientID']==a['PatientID'];c=clinical.get(a['PatientID'])
+  agrees=g['response']==a['response'] or (g['response']=='UNK' and a['response']=='NA' and a['BOR']=='NE')
+  ok=a['PreOn']=='Pre' and agrees and c is not None and c['BOR']==a['BOR'] and c['Cohort']==a['Cohort'] and a['BOR'] in ['CR','PR','PD','SD']
+ assert ok==(r['eligible_baseline_response']=='True')
+ if ok:eligible.append(a)
+assert len({r['PatientID'] for r in eligible})==len(eligible)==len({r['USUBJID'] for r in eligible})
+proof=dict(status='PASS_AUTHOR_BAM_SUBJECT_TIMEPOINT_RESPONSE_BRIDGE_INDEPENDENT_CSV_REPLAY',samples=109,baseline_patients=len(eligible),responders=sum(r['BOR'] in ['CR','PR'] for r in eligible),nonresponders=sum(r['BOR'] in ['PD','SD'] for r in eligible),limitations='title library separator normalized explicitly; no survival coding or treatment predictive effect verified')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

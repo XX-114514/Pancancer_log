@@ -1,0 +1,6 @@
+{
+  "seed": 2026111818,
+  "replicates": 5000,
+  "method": "resample patients within each response class; percentile 95% CI for frozen-direction empirical AUC",
+  "limitations": "descriptive uncertainty, not cross-validated discrimination; ignores gene-score standardization uncertainty and does not prove generalization"
+}

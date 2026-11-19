@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN_BEFORE_PURITY_ASSOCIATIONS",
+  "purity_rule": "call status exactly called, finite 0<purity<=1, unique array sample15, exact SNP6 aliquot in official quality file with all flags False; no fallback for noncanonical IDs",
+  "models": [
+    "purity",
+    "purity_age_sex"
+  ],
+  "cohort": "QC_v3 LF cohort, complete cases separately per model; no survival filter",
+  "method": "rank score and LF; regress both ranks on intercept, rank purity (+ rank age and binary sex); correlate residuals; t approximation df=n-rank(design)-1",
+  "sample_min": 30,
+  "sex": "MALE/FEMALE only; omit constant covariates; age 0-120",
+  "family": "BH jointly across prior QC_v3 unadjusted tests and both new models, both branches and LF policies; matched-cohort unadjusted rho descriptive only",
+  "interpretation": "conditional descriptive sensitivity; purity and immune fractions are compositionally coupled, adjustment may remove biology or introduce selection/collider bias; not causal effect, independent biomarker or clinical validation"
+}

@@ -1,0 +1,19 @@
+"""Link newly completed upstream audits to frozen joint-correction inputs."""
+from pathlib import Path
+import csv,json,hashlib,datetime
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+O=R/'highlow_joint15_v1'
+inventory=list(csv.DictReader((O/'input_inventory.tsv').open(),delimiter='\t'))
+records=[]
+for i in range(1,16):
+ cm='CM%02d'%i;p=R/'highlow'/cm/'independent_audit.json'
+ if not p.exists():records.append(dict(cm=cm,status='PENDING_UPSTREAM_AUDIT'));continue
+ a=json.loads(p.read_text());assert a['cm']==cm and a['status'].startswith('PASS_')
+ rows=[r for r in inventory if r['cm']==cm and r['status']=='INCLUDED']
+ assert set(a['hashes'])=={Path(r['path']).name for r in rows}
+ for row in rows:
+  f=Path(row['path']);h=hashlib.sha256(f.read_bytes()).hexdigest()
+  assert h==row['sha256']==a['hashes'][f.name]
+ records.append(dict(cm=cm,status='PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE',members=a['members'],sampled_gene_comparisons=a['comparisons_checked'],matched_files=len(rows),audit_sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+proof=dict(UTC=datetime.datetime.now(datetime.timezone.utc).isoformat(),status='CURRENT_LINKAGE_SNAPSHOT_NOT_ALL_COMPLETE' if any(r['status'].startswith('PENDING') for r in records) else 'ALL15_UPSTREAM_AUDITS_LINKED',modules_pass=sum(r['status'].startswith('PASS') for r in records),records=records,scope='Actual input SHA verification and existing upstream audit linkage; original Welch/HC3 numeric replay remains restricted to fixed genes, not all genes or verified patients.')
+(O/'upstream_audit_linkage_current.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

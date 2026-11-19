@@ -1,0 +1,12 @@
+{
+  "status": "HEADNECK_CONDITIONAL_AND_UNRESTRICTED_TESTS_WITH_RENAL_JOINT_BH_PENDING_INDEPENDENT_AUDIT",
+  "pairs": 303,
+  "patient_sources": 2,
+  "headneck_rows": 531630,
+  "headneck_tests": 32770,
+  "prior_renal_tests": 11455,
+  "joint_tests": 44225,
+  "joint_q05": 0,
+  "seconds": 71.88747763633728,
+  "limitations": "Observational conditional exchangeability only. Grouping distant sites does not adjust organ-specific effects. Age, sex, smoking, primary site and treatment remain possible confounders. No patient repeats in these48 verified samples; four unresolved cases excluded rather than guessed. No contact, directionality or causal claims."
+}

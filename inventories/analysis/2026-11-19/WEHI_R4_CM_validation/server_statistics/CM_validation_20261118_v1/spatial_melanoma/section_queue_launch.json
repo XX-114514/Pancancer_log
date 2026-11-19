@@ -1,0 +1,6 @@
+{
+  "pid": 274734,
+  "script": "run_melanoma_sections.py",
+  "models": 24,
+  "automatic_retry": false
+}

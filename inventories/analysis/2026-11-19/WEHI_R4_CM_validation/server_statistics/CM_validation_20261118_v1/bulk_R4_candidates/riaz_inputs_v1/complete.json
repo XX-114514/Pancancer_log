@@ -1,0 +1,11 @@
+{
+  "status": "RIAZ_EXPRESSION_PREPARED_PENDING_RAW_REPLAY",
+  "raw_genes": 22187,
+  "raw_samples": 109,
+  "baseline_patients": 51,
+  "response_eligible": 49,
+  "mapped_signature_genes": 848,
+  "raw_counts_sha256": "11f69d1cee7771304732c88a5bfa79fdb4fc364d840e75e77e3baa833d08a07a",
+  "output_sha256": "b3b1de5b42ee0308f6ed2f98c0ad42be520764e6fdaa20a00c73fdb2c7bce48a",
+  "limitations": "current HGNC snapshot not original 2017 annotation; previous cohort use and assay differences remain; no response analysis performed here"
+}

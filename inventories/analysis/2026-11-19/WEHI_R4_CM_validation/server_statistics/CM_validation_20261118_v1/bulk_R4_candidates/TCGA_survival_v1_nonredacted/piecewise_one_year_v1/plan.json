@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_ALL_QUALIFIED_MODELS_ONE_YEAR_SCORE_SENSITIVITY",
+  "selection": "All prior FIT_OK models, both branches/all15CM/all four adjustment sets. No p-value or PH-flag selection.",
+  "cut_days": 365.25,
+  "model": "Same complete-case patients and original outcome-blind score SD. Cox start-stop intervals at365.25days: score_sd + score_late(score_sd when interval starts at cutoff) + original covariates, Efron/model covariance. Early HR exp(beta_score), late HR exp(beta_score+beta_late); interaction tests time difference.",
+  "minimum": "Original n>=100 retained; total events>=max(30,10*(original coefficients+1)); >=20events in each period; >=20patients followed beyond cutoff.",
+  "multiplicity": "Joint BH over all prior3690 constant-HR score tests and all successful early/late/change Wald tests. Prior PH diagnostic tests remain their separate diagnostic family. No cutpoint search.",
+  "limitations": "Exploratory fixed-cut sensitivity, not optimized change point, treatment response or causal effect. Other covariates still assumed proportional; this does not fix all global PH violations. Late effects conditional on survival/risk-set composition. No external validation or prediction claim."
+}

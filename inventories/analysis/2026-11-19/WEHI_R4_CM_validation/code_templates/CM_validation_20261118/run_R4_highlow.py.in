@@ -1,0 +1,83 @@
+"""Author-style same-identity DE plus equal-unit source/cancer sensitivity.
+
+Unit means are means of log-normalized expression, not raw-count pseudobulk.
+Units have NOT been verified as independent patients; results are exploratory.
+"""
+from pathlib import Path
+import sys, json, time, hashlib, fcntl
+import numpy as np
+import pandas as pd
+import scipy.sparse as sp
+from scipy.stats import t
+from statsmodels.stats.multitest import multipletests
+import anndata as ad
+import scanpy as sc
+
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+cm=sys.argv[1];assert cm in ['CM%02d'%i for i in range(1,16)]
+assert json.loads((R/'expression_independent_audit.json').read_text())['status'].startswith('PASS_')
+root=R/'highlow';root.mkdir(exist_ok=True)
+lock=(root/(cm+'.lock')).open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+out=root/cm;out.mkdir(exist_ok=False);start=time.time()
+members=pd.read_csv(R/'R4_member_comparison_eligibility.tsv',sep='\t')
+members=members[members.cm.eq(cm)];assert len(members)>0
+a=ad.read_h5ad(R/'inputs/full_common_PRIVATE.h5ad',backed='r')
+summaries=[]
+for node in members.node:
+ b=a[a.obs.subCluster.astype(str).eq(node).to_numpy(),:].to_memory()
+ b.obs['comparison']=pd.Categorical(np.where(b.obs.CMT.astype(str).eq(cm),'High','Low'))
+ nh=int((b.obs.comparison=='High').sum());nl=b.n_obs-nh
+ row=dict(cm=cm,node=node,high_cells=nh,low_cells=nl,patient_independence=False)
+ if min(nh,nl)<2:
+  row['status']='UNASSESSABLE_FEWER_THAN_TWO_CELLS_PER_GROUP';summaries.append(row);continue
+ b.uns['log1p']={'base':None}
+ sc.tl.rank_genes_groups(b,groupby='comparison',groups=['High'],reference='Low',
+                         method='t-test',use_raw=False,corr_method='benjamini-hochberg')
+ de=sc.get.rank_genes_groups_df(b,group='High')
+ de.to_csv(out/(node+'_cell_DE.tsv.gz'),sep='\t',index=False)
+ # A unit must have a unique source, cancer and CMT, checked before aggregation.
+ obs=b.obs.copy();obs['unit']=obs.unit.astype(str)
+ for field in ['source','cancer','CMT']:
+  assert obs.groupby('unit',observed=True)[field].nunique().eq(1).all()
+ codes,units=pd.factorize(obs.unit,sort=True);n=np.bincount(codes)
+ aggregator=sp.csr_matrix((1/n[codes],(codes,np.arange(b.n_obs))),shape=(len(units),b.n_obs))
+ means=np.asarray((aggregator@b.X).toarray(),dtype=np.float64)
+ u=obs.drop_duplicates('unit').set_index('unit').loc[units,['source','cancer','CMT']].copy()
+ u['cells']=n;u['high']=u.CMT.astype(str).eq(cm).astype(int)
+ u['stratum']=u.source.astype(str)+'||'+u.cancer.astype(str)
+ eligible=u.cells.ge(10)
+ sizes=u[eligible].groupby(['stratum','high'],observed=True).size().unstack(fill_value=0).reindex(columns=[0,1],fill_value=0)
+ strata=sizes.index[(sizes[0]>=3)&(sizes[1]>=3)]
+ keep=eligible&u.stratum.isin(strata)
+ u['included_source_adjusted_sensitivity']=keep
+ u.to_csv(out/(node+'_unit_design_PRIVATE.tsv'),sep='\t')
+ row.update(high_units=int((keep&u.high.eq(1)).sum()),low_units=int((keep&u.high.eq(0)).sum()),matched_strata=len(strata))
+ if len(strata):
+  v=u[keep];Y=means[keep.to_numpy()]
+  dummy=pd.get_dummies(v.stratum,drop_first=True,dtype=float).to_numpy()
+  D=np.column_stack([np.ones(len(v)),v.high.to_numpy(),dummy])
+  assert np.linalg.matrix_rank(D)==D.shape[1]
+  inv=np.linalg.inv(D.T@D);pinv=inv@D.T;coef=pinv@Y
+  resid=Y-D@coef;leverage=np.einsum('ij,ji->i',D,pinv)
+  assert (leverage<1-1e-8).all()
+  variance=((pinv[1]/(1-leverage))**2)@(resid**2)
+  se=np.sqrt(np.maximum(variance,0));valid=se>1e-12
+  stat=np.divide(coef[1],se,out=np.zeros_like(se),where=valid)
+  p=np.ones(len(se));p[valid]=2*t.sf(np.abs(stat[valid]),len(v)-D.shape[1])
+  # Zero variance is left unassessable, never treated as infinitely significant.
+  q=multipletests(p,method='fdr_bh')[1]
+  table=pd.DataFrame(dict(gene=b.var_names,high_minus_low_mean_log_expression=coef[1],HC3_se=se,p=p,q_within_comparison=q,variance_assessable=valid))
+  table.to_csv(out/(node+'_unit_source_adjusted.tsv.gz'),sep='\t',index=False)
+  row['unit_sensitivity_status']='EXPLORATORY_EQUAL_UNIT_SOURCE_CANCER_FIXED_EFFECT_HC3'
+ else:row['unit_sensitivity_status']='UNASSESSABLE_NO_STRATUM_WITH_THREE_UNITS_EACH_GROUP'
+ row['status']='OUTPUT_PENDING_INDEPENDENT_AUDIT';summaries.append(row)
+ (out/'progress.json').write_text(json.dumps(dict(cm=cm,members_done=len(summaries),members_total=len(members))))
+ del b,means
+a.file.close()
+pd.DataFrame(summaries).to_csv(out/'member_summary.tsv',sep='\t',index=False)
+proof=dict(status='HIGHLOW_OUTPUT_PENDING_INDEPENDENT_AUDIT',cm=cm,members=len(summaries),seconds=time.time()-start,
+           scanpy=sc.__version__,author_comparison='same original subCluster; High=CMT equals CM; Low=other assigned CMTs; Welch t-test',
+           sensitivity='equal unit means of log-normalized expression, >=10 cells/unit, source x cancer fixed effects, >=3 units/group/stratum, HC3 SE with residual t degrees of freedom',
+           limitations='unit is not verified patient; gene BH within each comparison only; across-module correction pending; not causal or differential ligand-receptor inference',
+           script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+(out/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

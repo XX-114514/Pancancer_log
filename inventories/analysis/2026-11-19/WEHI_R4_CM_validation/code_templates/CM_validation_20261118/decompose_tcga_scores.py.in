@@ -1,0 +1,61 @@
+"""Outcome-blind fractional reference attribution of existing unweighted scores.
+Exact algebra, not cell fractions, immune-free expression or causal mediation.
+"""
+from pathlib import Path
+import json,hashlib
+import pandas as pd,numpy as np,anndata as ad
+from scipy.stats import rankdata
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=R/'bulk_R4_candidates';O=B/'TCGA_reference_decomposition_v2_nonredacted';O.mkdir(exist_ok=False)
+plan=dict(status='FROZEN_BEFORE_CLINICAL_COMPONENT_ASSOCIATIONS',branches=['original_network_members','all_W_nodes_previous_recipe'],modules=15,groups=['endothelial','mural','other_stromal','immune'],recipe='For each existing signature gene: reference expression * frozen normalized module node weight; group sum divided by total loading gives four nonnegative fractions. Component score = mean of original within-cancer gene z times attribution fraction. Do not reselect genes or restandardize component scores; sum exactly equals original score.',qualification='descriptive component rank association only if among original mapped variable genes in each cancer, mean gene attribution mass >=0.05 and Kish effective genes >=5, outcome-blind; preserve all components for algebra regardless of qualification',clinical='LF_single only; complete cases for purity age sex; n>=30. Partial Spearman uses rank component and rank LF residualized against rank purity, rank age and binary sex. No P values or new significance calls.',additive='Residualize unranked component scores and rank LF using same covariates; covariance contribution divided by full-score residual SD and LF residual SD. Components sum to full unranked-score/ranked-LF partial Pearson, NOT to full partial Spearman. No covariance-share division near zero.',limitations='Reference attribution not measured lineage expression or cell abundance. Shared genes remain shared; not immune-free scores, causal mediation, independent effects or clinical validation. Prior reference trained on inherited labels; no external validation.')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+sigpath=B/'candidate_signatures.tsv';assert hashlib.sha256(sigpath.read_bytes()).hexdigest()=='98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2'
+sigs=pd.read_csv(sigpath,sep='\t');refpath=R.parent/'spatial_CoVarNet_R4_20261115_v1/reference/signatures_PRIVATE.tsv';ref=pd.read_csv(refpath,sep='\t',index_col=0)
+groups=plan['groups'];rows=[];matrices={};qualification={}
+def group(n):
+ if n.startswith('Endo_'):return 'endothelial'
+ if n in ['Str_Pericyte_RGS5','Str_SMC_MYH11']:return 'mural'
+ if n.startswith('Str_'):return 'other_stromal'
+ assert n.startswith(('B_','CD4T_','CD8T_','ILC_','Mye_','Plasma_')),n
+ return 'immune'
+for branch in plan['branches']:
+ w=pd.read_csv(B/(branch+'_node_weights.tsv'),sep='\t',index_col=0);a=ref[w.index];rel=a.div(a.sum(axis=1),axis=0);labels=np.array([group(n) for n in w.index]);saved=pd.read_csv(B/(branch+'_loadings.tsv.gz'),sep='\t',index_col=0)
+ for cm in w.columns:
+  genes=sigs[(sigs.branch==branch)&(sigs.cm==cm)].gene.tolist();assert len(genes)==60
+  values=rel.loc[genes].to_numpy()*w[cm].to_numpy()[None,:];total=values.sum(axis=1)
+  assert np.allclose(total,saved.loc[genes,cm],rtol=1e-10,atol=1e-14)
+  fractions=np.column_stack([values[:,labels==k].sum(axis=1)/total for k in groups]);assert np.allclose(fractions.sum(axis=1),1,atol=1e-14)
+  matrices[(branch,cm)]=(genes,fractions)
+  for k,cat in enumerate(groups):
+   mass=float(fractions[:,k].mean());den=float((fractions[:,k]**2).sum());neff=float(fractions[:,k].sum()**2/den) if den>0 else 0.
+   qualification[(branch,cm,cat)]=(mass,neff,mass>=.05 and neff>=5)
+   rows.extend(dict(branch=branch,cm=cm,gene=gene,component=cat,fraction=float(fractions[j,k])) for j,gene in enumerate(genes))
+pd.DataFrame(rows).to_csv(O/'gene_reference_attribution.tsv',sep='\t',index=False)
+pd.DataFrame([dict(branch=k[0],cm=k[1],component=k[2],mean_gene_mass=v[0],effective_genes=v[1],qualified=v[2]) for k,v in qualification.items()]).to_csv(O/'component_qualification.tsv',sep='\t',index=False)
+a=ad.read_h5ad(B/'TCGA_candidate_expression_PRIVATE.h5ad');params=pd.read_csv(B/'TCGA_scores_nonredacted_v2/gene_standardization_parameters.tsv.gz',sep='\t');old=pd.read_csv(B/'TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz',sep='\t');assert old['sample'].nunique()==9120
+out=[];err=0.;cohort_qualification={}
+for cancer,z in old.groupby('cancer'):
+ samples=sorted(z['sample'].unique());ix=a.obs_names.get_indexer(samples);assert (ix>=0).all();p=params[params.cancer.eq(cancer)].set_index('gene').loc[a.var_names];valid=p.variable.to_numpy(bool);X=a.X[ix].astype(float);Z=np.divide(X-p['mean'].to_numpy(),p.sd.to_numpy(),out=np.zeros_like(X),where=valid)
+ for (branch,cm),(genes,F) in matrices.items():
+  cols=a.var_names.get_indexer(genes);keep=cols>=0;keep[keep]=valid[cols[keep]];assert keep.sum()>=48
+  for j,cat in enumerate(groups):
+   f=F[keep,j];mass=float(f.mean());den=float((f*f).sum());neff=float(f.sum()**2/den) if den>0 else 0.
+   cohort_qualification[(cancer,branch,cm,cat)]=(mass,neff,mass>=.05 and neff>=5)
+  C=Z[:,cols[keep]]@F[keep]/keep.sum();expected=z[(z.branch==branch)&(z.cm==cm)].set_index('sample').loc[samples,'score'].to_numpy();err=max(err,float(np.max(abs(C.sum(axis=1)-expected))));assert np.allclose(C.sum(axis=1),expected,atol=1e-12,rtol=0)
+  t=pd.DataFrame(C,columns=groups);t['sample']=samples;t['cancer']=cancer;t['branch']=branch;t['cm']=cm;t['full_score']=expected;out.append(t)
+pd.DataFrame([dict(cancer=k[0],branch=k[1],cm=k[2],component=k[3],mean_gene_mass=v[0],effective_genes=v[1],qualified=v[2]) for k,v in cohort_qualification.items()]).to_csv(O/'cohort_component_qualification.tsv',sep='\t',index=False)
+scores=pd.concat(out,ignore_index=True);scores.to_csv(O/'component_scores_PRIVATE.tsv.gz',sep='\t',index=False)
+bridge=pd.read_csv(B/'TCGA_leukocyte_purity_v3_nonredacted/analysis_bridge_PRIVATE.tsv.gz',sep='\t');scores=scores.merge(bridge[['sample','LF_single','purity','age','sex']],on='sample',validate='many_to_one');results=[]
+for (cancer,branch,cm),z in scores.groupby(['cancer','branch','cm']):
+ z=z.dropna(subset=['LF_single','purity','age','sex']);n=len(z)
+ if n<30:continue
+ C=np.column_stack([np.ones(n)]+[z[x].to_numpy() if x=='sex' else rankdata(z[x]) for x in ['purity','age','sex'] if z[x].nunique()>1]);assert np.linalg.matrix_rank(C)==C.shape[1]
+ def residual(Y):return Y-C@np.linalg.lstsq(C,Y,rcond=None)[0]
+ y=residual(rankdata(z.LF_single));X=residual(z[groups].to_numpy());full=residual(z.full_score.to_numpy());den=np.linalg.norm(full)*np.linalg.norm(y);assert den>1e-12
+ contributions=X.T@y/den;fullmixed=float(full@y/den);assert np.allclose(contributions.sum(),fullmixed,atol=1e-12)
+ for j,cat in enumerate(groups+['full_score']):
+  mass,neff,qualified=cohort_qualification[(cancer,branch,cm,cat)] if cat!='full_score' else (1.,60.,True)
+  x=residual(rankdata(z[cat]));rho=float(x@y/(np.linalg.norm(x)*np.linalg.norm(y))) if qualified and np.linalg.norm(x)>1e-10 else np.nan
+  results.append(dict(cancer=cancer,branch=branch,cm=cm,component=cat,patients=n,mean_gene_mass=mass,effective_genes=neff,qualified=qualified,partial_spearman=rho,additive_covariance_contribution=float(contributions[j]) if cat!='full_score' else fullmixed))
+t=pd.DataFrame(results);t.to_csv(O/'descriptive_LF_associations.tsv',sep='\t',index=False)
+proof=dict(status='EXACT_SCORE_DECOMPOSITION_AND_DESCRIPTIVE_ASSOCIATIONS_PENDING_INDEPENDENT_AUDIT',scored_patients=scores['sample'].nunique(),score_rows=len(scores),components=4,maximum_full_score_reconstruction_error=err,clinical_descriptive_rows=len(t),new_P_values=0,signature_sha256=hashlib.sha256(sigpath.read_bytes()).hexdigest(),reference_sha256=hashlib.sha256(refpath.read_bytes()).hexdigest(),limitations=plan['limitations'])
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

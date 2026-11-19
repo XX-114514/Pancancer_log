@@ -1,0 +1,29 @@
+"""Freeze context-stratified patient contrasts before head/neck LR inference."""
+from pathlib import Path
+import json,math,hashlib
+import pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'patient_LR_headneck_design_v1';O.mkdir(exist_ok=False)
+b=pd.read_csv(R/'patient_bridge_GEO_v2/source_verified_patient_bridge_PRIVATE.tsv',sep='\t');b=b[b.source.eq('GSE234933')&b.patient_identity_source_verified].copy();assert len(b)==48 and b.source_patient_key.is_unique
+attrs=b.GEO_sample_attributes.map(json.loads)
+# Keys preserve GEO source spelling; values below are explicit mappings, no substring guesses.
+print(sorted(set(k for d in attrs for k in d)),flush=True)
+loc='anatomic location_of_scrna-seq_specimen';b['specimen_context_raw']=attrs.map(lambda d:d[loc]);b['HPV']=attrs.map(lambda d:d['hpv-status'])
+mapping={'Primary':'primary','Locoregional recurrence':'locoregional_recurrence','Unknown primary of the head and neck':'unknown_primary','Distant metastasis (Lung)':'distant_metastasis','Distant metastasis (sternum)':'distant_metastasis','Distant metastasis (skin)':'distant_metastasis','Distant metastasis (pleura)':'distant_metastasis','Distant metastasis (Liver)':'distant_metastasis'}
+assert set(b.specimen_context_raw)<=set(mapping) and set(b.HPV)<= {'Positive','Negative'}
+b['context']=b.specimen_context_raw.map(mapping);b['block']=b.context+'|HPV_'+b.HPV
+b[['unit','source_patient_key','CMT','specimen_context_raw','context','HPV','block']].to_csv(O/'patient_context_PRIVATE.tsv',sep='\t',index=False)
+b.groupby(['CMT','context','HPV']).size().rename('patients').reset_index().to_csv(O/'CM_context_counts.tsv',sep='\t',index=False)
+m=pd.read_csv(R/'patient_LR_v1/unit_node_metadata_PRIVATE.tsv',sep='\t');m=m[m.source.eq('GSE234933')];f=pd.read_csv(R/'patient_LR_v1/all15_pair_feasibility.tsv',sep='\t');f=f[f.source.eq('GSE234933')&f.eligible_patient_count_only];assert len(f)==303
+rows=[]
+for r in f.itertuples():
+ one=set(m.loc[m.node.eq(r.node1)&m.cells.ge(10),'unit']);two=set(m.loc[m.node.eq(r.node2)&m.cells.ge(10),'unit']);z=b[b.unit.isin(one&two)].copy();z['high']=z.CMT.eq(r.cm);nh=int(z.high.sum());nl=len(z)-nh;assert min(nh,nl)>=3
+ informative=[];assignments=1;blocks=[]
+ for block,v in z.groupby('block'):
+  h=int(v.high.sum());l=len(v)-h
+  if min(h,l)>0:informative.extend(v.unit);assignments*=math.comb(len(v),h)
+  blocks.append(dict(block=block,high=h,low=l))
+ informative=z[z.unit.isin(informative)];ih=int(informative.high.sum());il=len(informative)-ih
+ rows.append(dict(cm=r.cm,node1=r.node1,node2=r.node2,patients=len(z),high_patients=nh,low_patients=nl,informative_high_patients=ih,informative_low_patients=il,context_HPV_assignments=assignments,conditional_eligible=min(ih,il)>=3 and assignments>1,blocks=json.dumps(blocks)))
+pd.DataFrame(rows).to_csv(O/'pair_design_feasibility.tsv',sep='\t',index=False)
+plan=dict(status='HEADNECK_PATIENT_CONTEXT_DESIGN_FROZEN_BEFORE_LR_TESTING',patients=48,patient_repeats=0,unresolved_units_excluded=4,source='GSE234933',primary='Within context class x HPV label permutations; statistic fixed-block OLS high coefficient = sum((high-block_high_fraction)*score)/sum((high-block_high_fraction)**2); uninformative single-group blocks contribute zero; require >=3 informative patients per group',secondary='Unrestricted patient-label permutation of high-minus-low score; same nominal eligibility as prior renal analysis; explicitly unadjusted for specimen context',permutations='exact all assignments if total combinations<=9999, otherwise9999 plus-one Monte Carlo; two-sided absolute statistic; preserve original observed high counts per block; seed from SHA256 cm/node1/node2/mode plus fixed salt',interactions='all895 audited input-complete DB4.1 interactions, same full-library normalized unit-identity scores and strict detection >.1 gate; no outcome-selected interaction subset',multiplicity='joint BH across all nonconstant qualified primary and secondary headneck tests and all11455 prior renal tests; record constant or insufficient contrasts, not negative',limitations='Observational conditional exchangeability only. Grouping distant sites does not adjust organ-specific effects. Age, sex, smoking, primary site and treatment remain possible confounders. No patient repeats in these48 verified samples; four unresolved cases excluded rather than guessed. No contact, directionality or causal claims.')
+plan['eligible_pairs_unrestricted']=len(rows);plan['eligible_pairs_conditional']=sum(x['conditional_eligible'] for x in rows);plan['context_bridge_sha256']=hashlib.sha256((O/'patient_context_PRIVATE.tsv').read_bytes()).hexdigest();(O/'plan.json').write_text(json.dumps(plan,indent=2));print(json.dumps(plan),flush=True)

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_all_three_file_hashes_5001_current_panel_genes_278328_barcodes_all_six_feature_type_count_totals",
+  "cells": 278328,
+  "features": 10029,
+  "gene_expression_features": 5001,
+  "nonzero_entries": 78464610,
+  "count_sums": {
+    "transcript_counts": 122498017,
+    "control_probe_counts": 522,
+    "genomic_control_counts": 3083,
+    "control_codeword_counts": 1583,
+    "unassigned_codeword_counts": 2489,
+    "deprecated_codeword_counts": 266694
+  },
+  "original_cell_order_preserved": true,
+  "nucleus_area_missing": 3121,
+  "nuclear_missingness": "exactly nucleus_count zero, boundary-stain segmentation; preserved missing, not filled as zero; downstream QC must explicitly handle",
+  "total_counts_semantics": "this dataset matches all six categories including deprecated; gene-only normalization must use transcript_counts; do not substitute generic version docs",
+  "limitations": "no spatial biological analysis yet; no author subtype annotation; MYH11/ACTA2/TAGLN/CNN1 not measured, cannot reuse breast contractile-exclusion test; missing markers never treated as negative"
+}

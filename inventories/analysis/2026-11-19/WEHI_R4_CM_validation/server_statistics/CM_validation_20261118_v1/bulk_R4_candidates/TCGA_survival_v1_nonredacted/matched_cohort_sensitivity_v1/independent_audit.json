@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ALL_MATCHED_PATIENT_DESIGNS_INDEPENDENT_R_EFRON_REFITS_AND_BETA_DECOMPOSITION",
+  "models": 2550,
+  "max_beta_error": 2.3451e-08,
+  "max_se_error": 1.1523e-08,
+  "max_loglik_error": 2.7285e-12,
+  "new_hypothesis_tests": 0,
+  "scope": "numerical and cohort sensitivity, not causal decomposition or prediction"
+}

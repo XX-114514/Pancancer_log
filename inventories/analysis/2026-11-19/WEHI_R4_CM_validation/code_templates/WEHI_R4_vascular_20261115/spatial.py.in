@@ -1,0 +1,63 @@
+"""Native marker-proxy spatial follow-up; never relabel as exact R4 subtype."""
+from pathlib import Path
+import json,hashlib
+import numpy as np
+import pandas as pd
+OUT=Path('${PROJECT_ARCHIVE_ROOT}/vascular_downstream_20261115_v1')
+import anndata as ad
+from scipy import sparse
+from scipy.spatial import cKDTree
+OLD=Path('${PANCANCER_ROOT}/Project_v3/runs/20261108_V4_native_coordinate_fix_v1')
+genes=['ACKR1','PI16','ESM1','RGS5','FOLR2','GJA5','MYH11','CCL19','CCR7','CXCL12','CXCR4','CCL21']
+cfg={'primary':'PI16-positive reviewed fibroblasts near ACKR1-positive reviewed blood EC', 'radius_um':50,'sensitivity_radii_um':[25,100,200], 'null':'permute PI16 positivity among reviewed fibroblasts within 500um tiles and native-total quartiles; 999 permutations', 'LR':'native ligand/receptor co-detection descriptive only','exact_R4_projection':False,'clinical':'not evaluated; no frozen validated subtype expression signature'}
+(OUT/'spatial_plan.json').write_text(json.dumps(cfg,indent=2))
+rng=np.random.default_rng(15112026); rows=[];avail=[];lr=[];receipts=[]
+for unit in ['S01','S02','S03','S04','S05','S06']:
+    paths=list(OLD.glob('outputs*/spatial_controls_v1/'+unit+'/cell_identity_view_PRIVATE.tsv.gz'))
+    if len(paths)!=1:
+        receipts.append({'unit':unit,'status':'ambiguous_or_missing_identity','matches':len(paths)});continue
+    p=paths[0]; receipt=json.loads((p.parent/'complete.json').read_text());c=pd.read_csv(p,sep='\t')
+    native=OLD/'inputs_direct_v1'/unit/'native_PRIVATE.h5ad'
+    h=hashlib.sha256(native.read_bytes()).hexdigest()
+    assert h==receipt['native_source_file_sha256']
+    a=ad.read_h5ad(native,backed='r');assert len(c)==a.n_obs
+    assert hashlib.sha256('\n'.join(a.obs_names.astype(str)).encode()).hexdigest()==receipt['native_cell_axis_SHA256']
+    symbols=pd.Index(a.var['gene_symbol'].astype(str) if 'gene_symbol' in a.var else a.var_names.astype(str))
+    present=[g for g in genes if g in symbols]
+    ix=sorted(symbols.get_loc(g) for g in present);v=a[:,ix].X;v=v.toarray() if sparse.issparse(v) else np.asarray(v)
+    v=np.expm1(v.astype(float));assert np.allclose(v,np.rint(v),atol=.001,rtol=.00001);v=np.rint(v)
+    x=pd.DataFrame(v,columns=symbols[ix]);a.file.close()
+    qc=c.QC_keep.astype(str).str.lower().eq('true').to_numpy()
+    for g in genes:avail.append({'unit':unit,'gene':g,'measured':g in present,'positive_QC':int(((x[g]>0)&qc).sum()) if g in present else None})
+    if not {'ACKR1','PI16'}.issubset(present):
+        receipts.append({'unit':unit,'status':'primary_marker_unavailable'});continue
+    ec=qc&c.cell_type.eq('Blood_EC').to_numpy()&(x.ACKR1.to_numpy()>0)
+    fib=qc&c.cell_type.eq('Fibroblast').to_numpy();fi=np.where(fib)[0];positive=x.PI16.to_numpy()[fi]>0
+    if ec.sum()<10 or positive.sum()<10 or (~positive).sum()<10:
+        receipts.append({'unit':unit,'status':'insufficient_marker_supported_cells','EC':int(ec.sum()),'PI16_fib':int(positive.sum())});continue
+    coords=c[['x_um','y_um']].to_numpy();dist=cKDTree(coords[ec]).query(coords[fi])[0]
+    depth=pd.qcut(c.native_total.iloc[fi].rank(method='first'),4,labels=False).to_numpy()
+    tile=np.floor(coords[fi]/500).astype(int);strata=pd.DataFrame({'tx':tile[:,0],'ty':tile[:,1],'depth':depth})
+    groups=[np.array(z) for z in strata.groupby(['tx','ty','depth']).indices.values()]
+    near=dist<=50;obs=float(near[positive].mean());null=[]
+    for _ in range(999):
+        label=positive.copy()
+        for ii in groups: label[ii]=rng.permutation(positive[ii])
+        null.append(float(near[label].mean()))
+    null=np.array(null);pval=(1+np.sum(np.abs(null-null.mean())>=abs(obs-null.mean())))/1000
+    for radius in [25,50,100,200]:
+        rows.append({'unit':unit,'radius_um':radius,'ACKR1_EC':int(ec.sum()),'PI16_fib':int(positive.sum()),'other_fib':int((~positive).sum()),'PI16_near_fraction':float((dist[positive]<=radius).mean()),'other_fib_near_fraction':float((dist[~positive]<=radius).mean()),'PI16_median_distance_um':float(np.median(dist[positive])),'null_mean_50':float(null.mean()) if radius==50 else None,'excess_50':float(obs-null.mean()) if radius==50 else None,'permutation_p_50':pval if radius==50 else None,'null_sd_50':float(null.std()) if radius==50 else None})
+    for ligand,receptor in [('CCL19','CCR7'),('CCL21','CCR7'),('CXCL12','CXCR4')]:
+        if ligand not in present or receptor not in present:continue
+        sender=fi[positive];receiver=np.where(qc&c.cell_type.isin(['B','T','NK']).to_numpy())[0]
+        lp=sender[x[ligand].to_numpy()[sender]>0];rp=receiver[x[receptor].to_numpy()[receiver]>0]
+        lr.append({'unit':unit,'ligand':ligand,'receptor':receptor,'PI16_fib_ligand_positive':len(lp),'immune_receptor_positive':len(rp),'receptor_cells_with_ligand_sender_50um':int((cKDTree(coords[lp]).query(coords[rp])[0]<=50).sum()) if len(lp) and len(rp) else 0,'status':'descriptive_native_codetection_not_interaction_test'})
+    receipts.append({'unit':unit,'status':'marker_proxy_complete','native_sha256':h})
+result=pd.DataFrame(rows)
+if len(result):
+    sel=result.radius_um==50;p=result.loc[sel,'permutation_p_50'].to_numpy();o=np.argsort(p);q=np.minimum.accumulate((p[o]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1];qs=np.empty(len(p));qs[o]=np.minimum(q,1);result.loc[sel,'BH_across_sections']=qs
+result.to_csv(OUT/'spatial_marker_proxy.tsv',sep='\t',index=False)
+pd.DataFrame(avail).to_csv(OUT/'spatial_marker_availability.tsv',sep='\t',index=False)
+pd.DataFrame(lr).to_csv(OUT/'native_LR_descriptive.tsv',sep='\t',index=False)
+(OUT/'spatial_receipts.json').write_text(json.dumps(receipts,indent=2))
+print(json.dumps(receipts,indent=2));print(result.to_string(index=False))

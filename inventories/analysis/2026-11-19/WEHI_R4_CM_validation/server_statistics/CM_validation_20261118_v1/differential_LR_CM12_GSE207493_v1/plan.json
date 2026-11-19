@@ -1,0 +1,17 @@
+{
+  "status": "FROZEN_BEFORE_DIFFERENTIAL_LR_TESTS",
+  "cm": "CM12",
+  "source": "GSE207493",
+  "group": "High=unit CMT CM12, Low=other assigned CMT; source has one verified RNA sample per patient",
+  "nodes": "all 11 original CM12 network members, all 121 ordered identity pairs including self",
+  "score": "CPDB5.0.1 structural recipe on unit-identity mean log-normalized expression: each complex=min required protein means; pair=(a+b)/2 if both positive; gated to zero unless BOTH partner minimum component detection fractions >0.1",
+  "library": "full native gene library normalization already audited, not LR-only library normalization",
+  "genes": "all DB4.1 interactions with all components in current 787-gene LR input; ambiguous protein-symbol map not silently averaged",
+  "inference": "two-sided patient-label permutation of high-minus-low mean score; all assignments if choose(n,nHigh)<=9999, otherwise 9999 draws with plus-one correction; sample labels jointly permuted across interactions within a cell pair",
+  "min_cells_per_identity_per_unit": 10,
+  "min_unique_patients_each_group": 3,
+  "permutations": 9999,
+  "seed": 2026111902,
+  "multiplicity": "BH across all nonconstant interaction x ordered cell-pair tests in this CM/source only; PROVISIONAL, cross-CM and cross-source correction still pending",
+  "limitations": "observational label-exchangeability assumption; module membership derived from cell composition, not randomized exposure; score difference is expression potential, not physical contact or directional signaling; same-celltype pairs not necessarily same cells; no patient repeats in this source; other sources require repeat-aware designs"
+}

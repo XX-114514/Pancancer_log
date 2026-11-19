@@ -1,0 +1,22 @@
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'imaging_lung_core_v1';a=json.loads((O/'independent_audit.json').read_text());assert a['status'].startswith('PASS_');j=pd.read_csv(O/'joint_imaging_tests.tsv',sep='\t');t=j[j.platform_cohort=='lung'];primary=t[(t.setting=='EC2_nucleated')&(t.threshold==1)&(t.tile_um==200)&(t.radius_um==30)];primary.to_csv(O/'primary_joint_summary.tsv',sep='\t',index=False)
+dirs=['EC_to_PC','PC_to_EC','EC_to_MF','MF_to_EC','PC_to_MF','MF_to_PC'];labels=['ESM1+ EC near RGS5+ PC proxy','RGS5+ PC proxy near ESM1+ EC','ESM1+ EC near FOLR2+ MF proxy','FOLR2+ MF proxy near ESM1+ EC','RGS5+ PC proxy near FOLR2+ MF proxy','FOLR2+ MF proxy near RGS5+ PC proxy']
+fig,ax=plt.subplots(figsize=(11,6),layout='constrained')
+for i,d in enumerate(dirs):
+ sub=t[t.direction==d].sort_values(['setting','threshold','tile_um','radius_um']);valid=sub.status.eq('TESTED');offset=np.linspace(-.2,.2,len(sub));ax.scatter(sub.loc[valid,'effect_fraction']*100,i+offset[valid],s=16,color='#a3b7c5',alpha=.8);p=primary[primary.direction==d].iloc[0]
+ if p.status=='TESTED':ax.scatter(p.effect_fraction*100,i,s=90,marker='D',color='#bf5d2b' if p.q_joint_imaging<.05 else '#2d6a89',zorder=3)
+ else:ax.text(.98,i,'insufficient',transform=ax.get_yaxis_transform(),ha='right')
+ax.axvline(0,color='gray',ls='--');ax.set_yticks(range(6),labels);ax.set_ylim(5.5,-.5);ax.set_xlabel('Observed minus conditional-null proximity (percentage points)');ax.grid(axis='x',alpha=.2);ax.set_title('One lung adenocarcinoma section | full prespecified identity / QC / spatial sensitivity')
+fig.supxlabel(f'Diamonds: EC2 / nucleated / >=1 RNA / 30 um / 200 um blocks; orange if joint q<0.05.\nGray dots: all qualified lung settings; joint BH over {a["joint_tested"]} breast + lung tests.\nMarker-supported proxies; no author subtype labels; contractile markers unmeasured; no contact or three-way hub claim.',fontsize=10);fig.savefig(O/'proximity_sensitivity.png',dpi=170);plt.close(fig)
+z=np.load(O/'EC2_nucleated_cells_PRIVATE.npz');fig,axes=plt.subplots(1,3,figsize=(13,5),sharex=True,sharey=True,layout='constrained');colors=['#ce6340','#417ca2','#795a9c'];flow=[]
+for ax,node,marker,color in zip(axes,['EC','PC','MF'],['ESM1','RGS5','FOLR2'],colors):
+ ax.scatter(z['xy'][:,0],z['xy'][:,1],s=.05,color='#d5d5d5',rasterized=True);mask=z[node]&(z[marker]>=1);ax.scatter(z['xy'][mask,0],z['xy'][mask,1],s=3,color=color,rasterized=True);ax.set_aspect('equal');ax.invert_yaxis();ax.set_title(f'{marker}+ {node} proxy (n={mask.sum()})');ax.set_xlabel('Native centroid x (um)')
+ for assigned in ['EC','PC','MF']:
+  flow.append(dict(marker=marker,positive_all_cells=int((z[marker]>=1).sum()),assigned_proxy=assigned,positive_in_proxy=int((z[assigned]&(z[marker]>=1)).sum())))
+axes[0].set_ylabel('Native centroid y (um)');fig.suptitle('Primary marker-positive cell centroids | no segmentation boundaries or histology shown');fig.savefig(O/'primary_cell_centroids.png',dpi=170);plt.close(fig);pd.DataFrame(flow).to_csv(O/'marker_identity_assignment.tsv',sep='\t',index=False)
+old=j[j.platform_cohort=='breast'];old.assign(old_positive=old.q_joint_identity_family.lt(.05),new_positive=old.q_joint_imaging.lt(.05)).groupby('current_state')[['old_positive','new_positive']].sum().to_csv(O/'breast_joint_q_update_counts.tsv',sep='\t');print(a);print(primary[['direction','effect_fraction','q_joint_imaging']].to_string(index=False))

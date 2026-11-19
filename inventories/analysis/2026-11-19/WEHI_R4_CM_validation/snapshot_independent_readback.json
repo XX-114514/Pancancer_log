@@ -1,0 +1,8 @@
+{
+  "status": "PASS_ARCHIVE_SHA_AND_ALL_MEMBER_BYTES_SHA_READBACK",
+  "UTC": "2026-11-19T05:27:09.916839+00:00",
+  "verified_files": 2377,
+  "archive_sha256": "c8bc3998a97a7218566acca05e2c38fcbcc54493321948e30054c370d3aa457c",
+  "archive_bytes": 1258586452,
+  "scope": "Archive integrity only; does not upgrade any scientific audit or establish GitHub upload."
+}

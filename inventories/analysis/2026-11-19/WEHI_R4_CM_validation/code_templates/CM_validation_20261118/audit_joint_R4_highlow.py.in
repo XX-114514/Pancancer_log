@@ -1,0 +1,45 @@
+"""Independent explicit sorted-rank BH, all rows and source hashes."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+O=R/'highlow_joint15_v1'
+inventory=pd.read_csv(O/'input_inventory.tsv',sep='\t');tables=[]
+for row in inventory[inventory.status.eq('INCLUDED')].itertuples():
+ f=Path(row.path);assert hashlib.sha256(f.read_bytes()).hexdigest()==row.sha256
+ raw=pd.read_csv(f,sep='\t').rename(columns={'names':'gene','pvals':'p_raw','p':'p_raw'})
+ out=pd.read_csv(O/row.cm/(row.node+'_'+row.family+'_joint.tsv.gz'),sep='\t')
+ assert len(out)==len(raw)==12563
+ for col in raw.columns:
+  pd.testing.assert_series_equal(raw[col],out[col],check_names=False,check_exact=False,rtol=1e-12,atol=1e-14)
+ assert out.cm.eq(row.cm).all() and out.node.eq(row.node).all() and out.family.eq(row.family).all()
+ tables.append(out)
+t=pd.concat(tables,ignore_index=True)
+def bh(p):
+ p=np.asarray(p);ix=np.argsort(p,kind='stable');rank=np.arange(1,len(p)+1)
+ q=np.clip(np.minimum.accumulate((p[ix]*len(p)/rank)[::-1])[::-1],0,1)
+ result=np.empty(len(p));result[ix]=q;return result
+errors=[float(np.max(np.abs(bh(t.p_raw)-t.q_joint_both_models)))]
+for family in ['cell','unit']:
+ v=t[t.family==family];errors.append(float(np.max(np.abs(bh(v.p_raw)-v.q_joint15_model))))
+assert max(errors)<1e-12
+summary=pd.read_csv(O/'comparison_summary.tsv',sep='\t')
+for row in summary.itertuples():
+ v=t[t.cm.eq(row.cm)&t.node.eq(row.node)&t.family.eq(row.family)]
+ valid=v.variance_assessable.eq(True) if row.family=='unit' else pd.Series(True,index=v.index)
+ effect=v.high_minus_low_mean_log_expression if row.family=='unit' else v.logfoldchanges
+ assert row.n_tests==len(v) and row.n_variance_assessable==valid.sum()
+ assert row.q_model05==(v.q_joint15_model.lt(.05)&valid).sum()
+ assert row.q_both05==(v.q_joint_both_models.lt(.05)&valid).sum()
+ assert row.positive_q_both05==(v.q_joint_both_models.lt(.05)&valid&effect.gt(0)).sum()
+ assert row.negative_q_both05==(v.q_joint_both_models.lt(.05)&valid&effect.lt(0)).sum()
+markers=pd.read_csv(O/'fixed_marker_results.tsv',sep='\t')
+key=['cm','node','family','gene']
+expect=t[t.gene.isin(['ESM1','RGS5','FOLR2','ACKR1','PI16','GJA5','MYH11','PDGFRB','PDGFB','VEGFA','KDR','CXCL12'])]
+pd.testing.assert_frame_equal(markers.sort_values(key).reset_index(drop=True),expect.sort_values(key).reset_index(drop=True),check_exact=False,rtol=1e-12,atol=1e-14)
+upstream={}
+for i in range(1,16):
+ cm='CM%02d'%i;f=R/'highlow'/cm/'independent_audit.json'
+ upstream[cm]=json.loads(f.read_text())['status'] if f.exists() else 'PENDING'
+proof=dict(status='PASS_ALL_SOURCE_HASHES_ALL_OUTPUT_ROWS_THREE_BH_FAMILIES_AND_SUMMARIES',n_tests=len(t),n_comparisons=len(summary),max_q_error=max(errors),upstream_audits_now=upstream,all_upstream_audits_complete=all(v.startswith('PASS_') for v in upstream.values()),scope='Full joint correction verification; does NOT extend upstream sampled numeric replay to all genes, verify patient independence, or establish differential LR.',summary_sha256=hashlib.sha256((O/'comparison_summary.tsv').read_bytes()).hexdigest())
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

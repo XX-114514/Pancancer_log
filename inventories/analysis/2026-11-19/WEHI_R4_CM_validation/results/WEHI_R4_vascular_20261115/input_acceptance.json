@@ -1,0 +1,480 @@
+{
+  "files": [
+    {
+      "path": "READ_ME_FIRST.txt",
+      "match": true,
+      "sha256": "6f9b235c09e7ce4c31da3def9d8f7a385bf6a55a74a39432d2dd1db002f38653"
+    },
+    {
+      "path": "annotation/acceptance_r4.json",
+      "match": true,
+      "sha256": "33d81c77d11dc0af4ec43524421716d2b1087cc1f8e48cfd47f84ecc2bc70aa9"
+    },
+    {
+      "path": "annotation/cell_labels_r4.tsv.gz",
+      "match": true,
+      "sha256": "2be90d97421192ba77c2b7bcb506246baeeb57b3d1fb7a01e76ec3a321e40b86"
+    },
+    {
+      "path": "annotation/final_tier_by_class.tsv",
+      "match": true,
+      "sha256": "da5363fb3dffb712cc2d5ff3d2470afe66558e44257ea6e5175d5f76e027d0f4"
+    },
+    {
+      "path": "annotation/node_table_r4.tsv",
+      "match": true,
+      "sha256": "221f553b0cac911be80fc365a903b7ee12ec752a8a9a858ef3db6071b44c99f7"
+    },
+    {
+      "path": "annotation/plasma_evidence.tsv",
+      "match": true,
+      "sha256": "99b33bd41d87235e498c417c8f7bb1a1ad4c77445e8f52ecf1c88a86691c8f1e"
+    },
+    {
+      "path": "annotation/plasma_igd_vs_naive.tsv",
+      "match": true,
+      "sha256": "9996e2b5d45bd65283a95bc15fed7a758576a1a6edb8f20085848c9a417139e8"
+    },
+    {
+      "path": "annotation/plasma_r4_subtypes.tsv.gz",
+      "match": true,
+      "sha256": "7bee64f62f226d22b949f2e7d9e447f8d795b27746f5834c04fa567c0e28f84a"
+    },
+    {
+      "path": "annotation/tcall_validation.tsv",
+      "match": true,
+      "sha256": "c55f18decfc591e32e67b9a5538f866640baac1724cf1d82d0eb068dbe7267f2"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Alveolar_macrophage.cells.tsv.gz",
+      "match": true,
+      "sha256": "e6d439924c022919c3e3bf9b9787dee27fa8a07d4b033aec159efbf24077210f"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Alveolar_macrophage.components.json",
+      "match": true,
+      "sha256": "ec46adc2649f444c9d27d9ab17df12558e7605c4e4dbbc051c5dca8c1ea7d280"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Alveolar_macrophage.pairs.tsv",
+      "match": true,
+      "sha256": "b3e1e9f0b47c4c251611211131f79db1d48eb1e3f91baaee7b4d69479f2691ea"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Alveolar_macrophage.summary.tsv",
+      "match": true,
+      "sha256": "b3833c6e34e168092262c1d5ee8fcc0d12011ce2a7986b6cab0dff53927aba76"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/DONE.json",
+      "match": true,
+      "sha256": "7d43d8b00db36ec0af568db57202a60a07190f304cfe3afcfd1fdb5657b8d5c8"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Kupffer.cells.tsv.gz",
+      "match": true,
+      "sha256": "86142d8d88a4b1ccb0d7af5bfd5e0523919baed1d5a8b3b43ca826196973fa83"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Kupffer.components.json",
+      "match": true,
+      "sha256": "bab79824441a4203bb5bff4b4bf23a7b5a0329a003907e0653a2c20453acf700"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Kupffer.pairs.tsv",
+      "match": true,
+      "sha256": "78eebc6c30f18b3d6dde4cfe1768b1b82855c02c8d1043d70a5ad4c9d5b93eb2"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Kupffer.summary.tsv",
+      "match": true,
+      "sha256": "7901b3c7a5f44b16916e69d0f8fe3eed68ba02eb156afdb3f29b6de0cd97f825"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Microglia.cells.tsv.gz",
+      "match": true,
+      "sha256": "a1063a8573699a1c903166f40e023294665d9f01f59e7cc230e43ef067b39758"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Microglia.components.json",
+      "match": true,
+      "sha256": "b1465de202038d22e1c438a5a89fd4081244abeef8679a2875aad479f8c64fe9"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Microglia.pairs.tsv",
+      "match": true,
+      "sha256": "62ea5bc4b879484961b22c3ad8e2efcef8964a98c91340daa9383bfe777e928d"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Microglia.summary.tsv",
+      "match": true,
+      "sha256": "b95d882dd7bc374fc755a39ef18f09579d2d4015b9e26cfc9fb3ffa74c9cd341"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Sinusoidal_EC.cells.tsv.gz",
+      "match": true,
+      "sha256": "3d76541c68f7e7794426a6afe138a836f7f0211a306e7b009095acaff2953945"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Sinusoidal_EC.components.json",
+      "match": true,
+      "sha256": "27d2c3f9588742fc9dfd9c501b018287dfe5f40f4488db2c4a38978de0bc7741"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Sinusoidal_EC.pairs.tsv",
+      "match": true,
+      "sha256": "74b61be36445a6036a59800589dc24a52d918bd7824c1a5afd0fd07de75c07cf"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/Sinusoidal_EC.summary.tsv",
+      "match": true,
+      "sha256": "9eaa7b0ac85adddcdf4063868b7a7212154e359ceeed2bb51f595adb38ab2756"
+    },
+    {
+      "path": "annotation/tissue_consensus_r3_reference/summary.tsv",
+      "match": true,
+      "sha256": "785a6eb5269b18c994e1283b7517927e71e216a53617510b04410ff35b072ecd"
+    },
+    {
+      "path": "covarnet/K15.rds",
+      "match": true,
+      "sha256": "9869c155fc9e7f5414bfc50b66bd22ea2563ce0dd98e23572948c0d5c7903bac"
+    },
+    {
+      "path": "covarnet/export/H.tsv",
+      "match": true,
+      "sha256": "e76330bfd966ffffdf62f831395fb2932a63c22b399a01bce0152e2eff6c04e4"
+    },
+    {
+      "path": "covarnet/export/W.tsv",
+      "match": true,
+      "sha256": "9c2701da11aec0f093d7352334dc4667aac85b47b2d5ebcc6abe71a23cbf2daf"
+    },
+    {
+      "path": "covarnet/export/all_pairs.tsv",
+      "match": true,
+      "sha256": "01fb89dc9be1c61f1c9e603d0509a28d6aea4d4f22fda9f6a92ac00a63778db9"
+    },
+    {
+      "path": "covarnet/export/consensus_f64.bin",
+      "match": true,
+      "sha256": "50f89afb2446f7efd9919c783b52f5da61256f3682bc7b4c8c35a789ac619049"
+    },
+    {
+      "path": "covarnet/export/consensus_order.txt",
+      "match": true,
+      "sha256": "ec0f7883b93de7e1ad3566882351cf792e0773b9c28c4543b0c6bebf97fe11ef"
+    },
+    {
+      "path": "covarnet/export/global_edges.tsv",
+      "match": true,
+      "sha256": "28e93697a9c98bcd93fe16306d93296be6b96438810c407756e99f365c6a4ef9"
+    },
+    {
+      "path": "covarnet/export/module_edges.tsv",
+      "match": true,
+      "sha256": "9957156cfe0f7e14de7e37df803804f3df2c7fb23fa3e9cf54fa88b843a3359b"
+    },
+    {
+      "path": "covarnet/export/module_network_nodes.tsv",
+      "match": true,
+      "sha256": "e27b66d87230bf134a10b2695f08ec16d092000829ca3a4cf74796dfbfa4a0c7"
+    },
+    {
+      "path": "covarnet/export/rank_survey.tsv",
+      "match": true,
+      "sha256": "b2ae9676bb6e9cd014ea9d074b1a74574e50eb0581a05e4fc6a34186121d4521"
+    },
+    {
+      "path": "covarnet/frequency_author_zero.tsv",
+      "match": true,
+      "sha256": "69a7d9d73f9622652fa1d0e441888ccd8adcc7ea588e9de61e66276aba70c061"
+    },
+    {
+      "path": "covarnet/input_summary.json",
+      "match": true,
+      "sha256": "40e9ad67c51309c29840fe184291a7bf13e080703af67d7d8ad26105edd82ff5"
+    },
+    {
+      "path": "covarnet/node_mapping.tsv",
+      "match": true,
+      "sha256": "80e8484f346aa0fe1ab86334ff3179ec3eb3bcd75f23b80a73c5b3a177678672"
+    },
+    {
+      "path": "covarnet/paper/cm_activity_by_cancer.tsv",
+      "match": true,
+      "sha256": "391b029880430000d1d7cab9192fb2ca6088eed98ebff1c8c5ad3fca2258463c"
+    },
+    {
+      "path": "covarnet/paper/cm_activity_by_unit.tsv",
+      "match": true,
+      "sha256": "2b20428a0bec68fe12c03a3fc9040d56336e50f3a5a70f41ad07bcf85da381cf"
+    },
+    {
+      "path": "covarnet/paper/cm_edge_review.tsv",
+      "match": true,
+      "sha256": "550a5d58493649ab51a642d4924c0f1d9ffadb8424c7880bf980d704f3f9c7b2"
+    },
+    {
+      "path": "covarnet/paper/cm_missing_denominator_sensitivity.tsv",
+      "match": true,
+      "sha256": "795f0a6001b1ad8c65642b919eeca6933cdda367916f2ca224ef64475328e6d3"
+    },
+    {
+      "path": "covarnet/paper/cm_node_weights.tsv",
+      "match": true,
+      "sha256": "29706417c7715137b4125ce16c1aa15442483497f1352d0d75dc4ca19b9b2ae5"
+    },
+    {
+      "path": "covarnet/paper/cm_review.tsv",
+      "match": true,
+      "sha256": "53e3e10d217d8e404da1d5d073a71bf9bce0881ddcc0be674223ed8c885bfd11"
+    },
+    {
+      "path": "covarnet/paper/cm_top15_nodes.tsv",
+      "match": true,
+      "sha256": "ea73df4fb3a139f72dc67ac3b24ded1ea2ddd77f13051a88351c87caf8d1a68f"
+    },
+    {
+      "path": "covarnet/paper/covarnet_activity_sensitivity.png",
+      "match": true,
+      "sha256": "7910b0e75364546f001479296c3c0ef2a642c224d0c36cec877cb2398001ac1b"
+    },
+    {
+      "path": "covarnet/paper/covarnet_figures.pdf",
+      "match": true,
+      "sha256": "53ffb7c3c60f6470e847c395f9fe50d7b521c11ca68d0cb59b1c8cf7737aa1ef"
+    },
+    {
+      "path": "covarnet/paper/covarnet_networks_01.png",
+      "match": true,
+      "sha256": "9b236caf0bb14412df091ba587ff61b922584318446c0892afc02fd791a4265e"
+    },
+    {
+      "path": "covarnet/paper/covarnet_networks_10.png",
+      "match": true,
+      "sha256": "5e40b1ab9e5580770d0ab51d9d5d9923b00cd2f33231132795abe2bed124de30"
+    },
+    {
+      "path": "covarnet/paper/covarnet_node_weights.png",
+      "match": true,
+      "sha256": "c3943d1fa15ba9e24e714f598edd14c6e5647a4a1c83e3d0134af7f731a7395c"
+    },
+    {
+      "path": "covarnet/paper/covarnet_rank_consensus.png",
+      "match": true,
+      "sha256": "a01b315cb1529560bd4136018b968b89f23308871d8c3c4f6a43a6f5a82af2f3"
+    },
+    {
+      "path": "covarnet/paper/rank_survey.tsv",
+      "match": true,
+      "sha256": "435e4d752891d6a50b9069165e6300128df658e7d7e1db61e50a95344d61e2e6"
+    },
+    {
+      "path": "covarnet/paper/verification.json",
+      "match": true,
+      "sha256": "d3e8ef97c08414034b82090d7b0fb4ba597c6a5cd59c3167bcd970ab8facedbc"
+    },
+    {
+      "path": "covarnet/parent_frequencies.tsv",
+      "match": true,
+      "sha256": "10f0d7bc631b12673ae8ce46450a657372133a6ebf4ef4979cb912dce8c54545"
+    },
+    {
+      "path": "covarnet/prior_registry_overlap.tsv",
+      "match": true,
+      "sha256": "e9026ad6346f3aac067f3ea918d6e927f383b043f1faaa8c32b29013a56153cb"
+    },
+    {
+      "path": "covarnet/refined_counts.tsv",
+      "match": true,
+      "sha256": "a695c659571a727a70624de718450ff69cfa50403ce8409f7808ee1c51f20d82"
+    },
+    {
+      "path": "covarnet/unit_audit.tsv",
+      "match": true,
+      "sha256": "82806d3459d5dfdee2b4ed6310088fc52afb1a10a1f0214fd2742ae650134c47"
+    },
+    {
+      "path": "covarnet/unit_metadata.tsv",
+      "match": true,
+      "sha256": "6843da58f97c2e5d92cc06e57fdcfef5e03dd72bf8a2a2b7b69124929663582d"
+    },
+    {
+      "path": "covarnet/unit_shortfalls_by_cell_yield.tsv",
+      "match": true,
+      "sha256": "61deefd200fcd70e763ba3e757a72a5b941ffee35f18ff6ecafc4bfa751d9f1e"
+    },
+    {
+      "path": "covarnet/unit_shortfalls_by_class.tsv",
+      "match": true,
+      "sha256": "901306f017622c4eca2156df8ac847148f810bc78d7c9439b9f337924323a0ad"
+    },
+    {
+      "path": "provenance/code/frozen_author_CoVarNet_v1.R",
+      "match": true,
+      "sha256": "917c60c48af649fa41dc1d99f96f61e9a9d2988f082d910a8b906754d654894d"
+    },
+    {
+      "path": "provenance/code/r4_paper_export.R",
+      "match": true,
+      "sha256": "9d9b3b7967bb23354364fa018965772627d66dd540a4c710b963acb797aba4f9"
+    },
+    {
+      "path": "provenance/code/r4_paper_rank.R",
+      "match": true,
+      "sha256": "93c292b068a2d78cdc9768a08c38c28eb5721cba3677b85eb8ff5367da633d4c"
+    },
+    {
+      "path": "provenance/code/r4_paper_rank.sbatch",
+      "match": true,
+      "sha256": "b4fc179ccfef8b53e1fa8a5f66ca220284c641b74489ca20c57a20c8d7710e66"
+    },
+    {
+      "path": "provenance/code/r4_paper_review.py",
+      "match": true,
+      "sha256": "caabb25ddf44567e6fbcb08c3e2a52233a971bdafe1c7e3cddb19b2d5a003b5f"
+    },
+    {
+      "path": "provenance/code/r4_plasma_igd_audit.py",
+      "match": true,
+      "sha256": "a3c7882c8f66eddd313f0e63a1a321520b8e3779eb9a8d7e2156551c88d59223"
+    },
+    {
+      "path": "provenance/code/r4_plasma_prepare.py",
+      "match": true,
+      "sha256": "f37a358dd20fe1455132d0755cf1a98577667fee5372aa78d6a8ee1f2d2a006a"
+    },
+    {
+      "path": "provenance/r4_logs/r4_finalize_v1.log",
+      "match": true,
+      "sha256": "4ae233ae183f3e8dd970bd634bbdf07756d8bcb7e977f6b4c612880575a50b4e"
+    },
+    {
+      "path": "provenance/r4_logs/r4_nodes_v1.log",
+      "match": true,
+      "sha256": "4692e25d981d0f5ac1a80be5bfa8fb050d7d7dfac08aa5832bf47723e6378364"
+    },
+    {
+      "path": "provenance/r4_original_code/object.sbatch",
+      "match": true,
+      "sha256": "b19781fb08ec565996cc07c11a5fb9cf40ed68fdb94b90cffc9d694f40dd559f"
+    },
+    {
+      "path": "provenance/r4_original_code/r4_bulk.py",
+      "match": true,
+      "sha256": "58e8f3305f11b52dee02b56e518ebda3c14a7d1d69cdb88503a66b7fccc6c225"
+    },
+    {
+      "path": "provenance/r4_original_code/r4_finalize_v1.py",
+      "match": true,
+      "sha256": "0dee54fe489ae65382f8c95ac44cf56ccac18afd48b595bebc95693541843909"
+    },
+    {
+      "path": "provenance/r4_original_code/r4_nodes_v1.py",
+      "match": true,
+      "sha256": "6fa2e46e203b80a37e1d26f8338c79a202b7a61f704d53840acad39eede5cfed"
+    },
+    {
+      "path": "provenance/r4_original_code/r4_object_v1.py",
+      "match": true,
+      "sha256": "c0880c524551f13c6a863c414a96ecbb8388ee1a879e0240baa7aea1d9f31c4c"
+    },
+    {
+      "path": "provenance/rank_logs/rank-10.out",
+      "match": true,
+      "sha256": "c1644cf20b9ea9651e78d2f7cccf460430d977ec3ef365eeb69481840b1d7767"
+    },
+    {
+      "path": "provenance/rank_logs/rank-11.out",
+      "match": true,
+      "sha256": "48a6b5c7d5d4360017bde8bfcd1ddb0c6c2382db7eccc7239271becb5b68bc48"
+    },
+    {
+      "path": "provenance/rank_logs/rank-12.out",
+      "match": true,
+      "sha256": "68d9004c65c8ca578326a9e9631a938aec8b75cf8bcd783d00a036f37ca1ec1d"
+    },
+    {
+      "path": "provenance/rank_logs/rank-13.out",
+      "match": true,
+      "sha256": "6a73df7e55669343bff9996cb607684c3fb7ac1d61b07e99a7838eb181175879"
+    },
+    {
+      "path": "provenance/rank_logs/rank-14.out",
+      "match": true,
+      "sha256": "070cf6608f65cd9cccd89f5c1b9f4673bfd75cd311eb974af611b5d8f0d504f1"
+    },
+    {
+      "path": "provenance/rank_logs/rank-15.out",
+      "match": true,
+      "sha256": "fe3b9d82d855ee27ef2134abcaf8469c5308ff2b38da01b7096b67e9247eabeb"
+    },
+    {
+      "path": "provenance/rank_logs/rank-16.out",
+      "match": true,
+      "sha256": "54e6f96d94f60cb8d53641481eee6e156eb215b267e10605637ef4741674a999"
+    },
+    {
+      "path": "provenance/rank_logs/rank-17.out",
+      "match": true,
+      "sha256": "d127e7e68b70b059e88370d23d58c65107c88f00c207d5e74d33b9b6662e2097"
+    },
+    {
+      "path": "provenance/rank_logs/rank-18.out",
+      "match": true,
+      "sha256": "196e430a9725a665db8ee7efc30a5098a993e077c57ab7818f79dfe7c3aa7f2b"
+    },
+    {
+      "path": "provenance/rank_logs/rank-19.out",
+      "match": true,
+      "sha256": "21eedda5a8d285b23f8b34837d680243eb8016328d6b2d208a8883f6dee9aebd"
+    },
+    {
+      "path": "provenance/rank_logs/rank-2.out",
+      "match": true,
+      "sha256": "7b0b686270ac2e774bff978af7ab8229a4c6390b416452ce50cdbea3c22de2e9"
+    },
+    {
+      "path": "provenance/rank_logs/rank-20.out",
+      "match": true,
+      "sha256": "b3ea775fe9636db66db2bc0aa16effd53d5ab7ce673f3f7a4cc4fc060e022cfa"
+    },
+    {
+      "path": "provenance/rank_logs/rank-3.out",
+      "match": true,
+      "sha256": "6cbab54ed4582b8c8d42603f3b865b1b94ba661f9fd2496250aa8e9933ca81d8"
+    },
+    {
+      "path": "provenance/rank_logs/rank-4.out",
+      "match": true,
+      "sha256": "18ff572bec26a04daa68f9af65e354b7ff85c1c481e3fccbd3915004b3b42917"
+    },
+    {
+      "path": "provenance/rank_logs/rank-5.out",
+      "match": true,
+      "sha256": "6ff6a67ad5eff3620d60dc63ca048dbd7cac55b59e550c2291dea16b13e26a96"
+    },
+    {
+      "path": "provenance/rank_logs/rank-6.out",
+      "match": true,
+      "sha256": "6ef1f362bc3a68e8e048963ac763ef667586e82d913bbae0d3d508bdc633232e"
+    },
+    {
+      "path": "provenance/rank_logs/rank-7.out",
+      "match": true,
+      "sha256": "f11d13ccc2d08c8266c3dcd7b52837c7cd1c21712d2334b153b8b5f9d41f8213"
+    },
+    {
+      "path": "provenance/rank_logs/rank-8.out",
+      "match": true,
+      "sha256": "14ebf260bd333d511116950ae888133b9d1ef808b8c8ddb89e087619d64d591b"
+    },
+    {
+      "path": "provenance/rank_logs/rank-9.out",
+      "match": true,
+      "sha256": "91e2ed4608b94b3b7cbac7aa8e6f910dbeaf1b54cddc6833c8108240a68e2195"
+    }
+  ],
+  "verified": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PASS_all_six_breast_native_axis_coordinate_depth_and_sampled_raw_activity_replay",
+  "checks": [
+    {
+      "section": "breast_S01",
+      "all_coordinates_match_native_centroids": true,
+      "all_RNA_totals_match_native_transcript_counts": true,
+      "random_grids_independently_replayed": 24,
+      "max_activity_difference": 8.881784197001252e-16
+    },
+    {
+      "section": "breast_S02",
+      "all_coordinates_match_native_centroids": true,
+      "all_RNA_totals_match_native_transcript_counts": true,
+      "random_grids_independently_replayed": 24,
+      "max_activity_difference": 1.7763568394002505e-15
+    },
+    {
+      "section": "breast_S03",
+      "all_coordinates_match_native_centroids": true,
+      "all_RNA_totals_match_native_transcript_counts": true,
+      "random_grids_independently_replayed": 24,
+      "max_activity_difference": 3.552713678800501e-15
+    },
+    {
+      "section": "breast_S04",
+      "all_coordinates_match_native_centroids": true,
+      "all_RNA_totals_match_native_transcript_counts": true,
+      "random_grids_independently_replayed": 24,
+      "max_activity_difference": 3.552713678800501e-15
+    },
+    {
+      "section": "breast_S05",
+      "all_coordinates_match_native_centroids": true,
+      "all_RNA_totals_match_native_transcript_counts": true,
+      "random_grids_independently_replayed": 24,
+      "max_activity_difference": 8.326672684688674e-17
+    },
+    {
+      "section": "breast_S06",
+      "all_coordinates_match_native_centroids": true,
+      "all_RNA_totals_match_native_transcript_counts": true,
+      "random_grids_independently_replayed": 24,
+      "max_activity_difference": 2.220446049250313e-16
+    }
+  ]
+}

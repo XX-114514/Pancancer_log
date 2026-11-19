@@ -1,0 +1,11 @@
+{
+  "status": "HIGHLOW_OUTPUT_PENDING_INDEPENDENT_AUDIT",
+  "cm": "CM15",
+  "members": 10,
+  "seconds": 676.7886636257172,
+  "scanpy": "1.11.5",
+  "author_comparison": "same original subCluster; High=CMT equals CM; Low=other assigned CMTs; Welch t-test",
+  "sensitivity": "equal unit means of log-normalized expression, >=10 cells/unit, source x cancer fixed effects, >=3 units/group/stratum, HC3 SE with residual t degrees of freedom",
+  "limitations": "unit is not verified patient; gene BH within each comparison only; across-module correction pending; not causal or differential ligand-receptor inference",
+  "script_sha256": "3882d7194ec4d421561178adac4b66a92e223708d3db6a3cc8325ad284c19161"
+}

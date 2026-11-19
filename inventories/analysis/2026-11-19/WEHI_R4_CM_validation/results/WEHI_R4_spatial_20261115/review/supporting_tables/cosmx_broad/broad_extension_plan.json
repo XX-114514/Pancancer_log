@@ -1,0 +1,49 @@
+{
+  "reason": "fine R4 core markers absent in CosMx; separate broad vascular analysis, never relabel as CM01/12/04",
+  "identity_panels": {
+    "Blood_EC": [
+      "PECAM1",
+      "VWF",
+      "EMCN",
+      "CDH5"
+    ],
+    "Fibroblast": [
+      "DCN",
+      "LUM",
+      "COL1A1",
+      "COL1A2",
+      "PDGFRA"
+    ],
+    "Mural": [
+      "RGS5",
+      "PDGFRB",
+      "ACTA2",
+      "MYH11"
+    ],
+    "Myeloid": [
+      "LST1",
+      "TYROBP",
+      "CD68",
+      "CD163"
+    ],
+    "B": [
+      "CD19",
+      "MS4A1",
+      "CD79A"
+    ],
+    "T": [
+      "CD3D",
+      "CD3E",
+      "CD3G"
+    ],
+    "NK": [
+      "KLRD1",
+      "NKG7",
+      "GNLY"
+    ]
+  },
+  "gates": ">=2 detected measured markers; NK excludes T markers, EC excludes >=2 lymphatic markers; all overlapping candidate identities excluded",
+  "features": "candidate identity cell proportions per 10000 QC cells in grid",
+  "activity": "equal weighted broad candidate pairs, not CoVarNet R4 weights",
+  "inference": "descriptive within-FOV, no significance/causality claim"
+}

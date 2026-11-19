@@ -1,0 +1,45 @@
+"""Independent purity bridge and statsmodels regression equivalence audit."""
+from pathlib import Path
+import csv,json,hashlib,re
+from collections import defaultdict
+import numpy as np,pandas as pd,statsmodels.api as sm
+from scipy.stats import rankdata
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=R/'bulk_R4_candidates';O=B/'TCGA_leukocyte_purity_v2'
+flags=defaultdict(list)
+with (R/'sources/panimmune/sample_quality.tsv').open() as f:
+ for r in csv.DictReader(f,delimiter='\t'):
+  if r['platform']=='Genome_Wide_SNP_6':flags[r['aliquot_barcode']].append(r['Do_not_use'])
+purity={}
+with (R/'sources/panimmune/TCGA_mastercalls.abs_tables_JSedit.fixed.txt').open() as f:
+ for r in csv.DictReader(f,delimiter='\t'):
+  try:v=float(r['purity'])
+  except ValueError:continue
+  if re.fullmatch(r'TCGA-[A-Z0-9]{2}-[A-Z0-9]{4}-[0-9]{2}',r['array']) and r['call status']=='called' and np.isfinite(v) and 0<v<=1 and flags[r['sample']] and set(flags[r['sample']])=={'False'}:
+   assert r['array'] not in purity;purity[r['array']]=v
+c=pd.read_csv(O/'analysis_bridge_PRIVATE.tsv.gz',sep='\t').set_index('sample')
+prior=pd.read_csv(B/'TCGA_leukocyte_association_QC_v3/sample_bridge_PRIVATE.tsv.gz',sep='\t').set_index('sample')
+clinical=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t').set_index('sample')
+assert c.index.equals(prior.index)
+assert np.allclose(c[['LF_single','LF_median']],prior[['LF_single','LF_median']],equal_nan=True)
+for sample,row in c.iterrows():
+ assert np.allclose(row.purity,purity.get(sample,np.nan),equal_nan=True)
+ age=pd.to_numeric(clinical.loc[sample,'age_at_initial_pathologic_diagnosis'],errors='coerce');age=age if 0<=age<=120 else np.nan
+ assert np.allclose(row.age,age,equal_nan=True)
+ assert np.allclose(row.sex,{'MALE':1.,'FEMALE':0.}.get(clinical.loc[sample,'gender'],np.nan),equal_nan=True)
+s=pd.read_csv(B/'TCGA_scores/scores_PRIVATE.tsv.gz',sep='\t');groups={k:g for k,g in s.groupby(['cancer','branch','cm'])}
+a=pd.read_csv(O/'adjusted_associations.tsv',sep='\t');maxp=0.;maxrho=0.;checked=0
+for row in a.itertuples():
+ g=groups[(row.cancer,row.branch,row.cm)].set_index('sample').join(c[['purity','age','sex',row.policy]])
+ covars=['purity'] if row.model=='purity' else ['purity','age','sex'];z=g[['score',row.policy]+covars].dropna();assert len(z)==row.patients
+ if row.status!='ASSESSED':continue
+ X=np.column_stack([np.ones(len(z)),rankdata(z.score)]+[z[v].to_numpy() if v=='sex' else rankdata(z[v]) for v in covars if z[v].nunique()>1])
+ fit=sm.OLS(rankdata(z[row.policy]),X).fit()
+ partial=float(np.sign(fit.tvalues[1])*np.sqrt(fit.tvalues[1]**2/(fit.tvalues[1]**2+fit.df_resid)))
+ assert fit.df_resid==row.df
+ assert np.isclose(partial,row.partial_rho,atol=1e-10)
+ assert np.isclose(fit.pvalues[1],row.p,atol=1e-10,rtol=1e-7)
+ maxp=max(maxp,abs(fit.pvalues[1]-row.p));maxrho=max(maxrho,abs(partial-row.partial_rho));checked+=1
+old=pd.read_csv(O/'prior_associations_joint_q.tsv',sep='\t');o=old.p.notna();n=a.p.notna();p=np.r_[old.loc[o,'p'],a.loc[n,'p']];order=np.argsort(p);q=np.empty(len(p));q[order]=np.minimum(1,np.minimum.accumulate((p[order]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1])
+assert np.allclose(q,np.r_[old.loc[o,'q_joint_with_purity_models'],a.loc[n,'q_joint_with_unadjusted']],atol=1e-12)
+proof=dict(status='PASS_RAW_PURITY_BRIDGE_CLINICAL_COVARIATES_ALL_STATSMODELS_PARTIAL_CORRELATION_AND_JOINT_BH',samples=len(c),models_checked=checked,joint_tests=len(p),max_rho_error=maxrho,max_p_error=maxp,association_sha256=hashlib.sha256((O/'adjusted_associations.tsv').read_bytes()).hexdigest(),scope='numerical equivalence and linkage, not causal or predictive validity')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

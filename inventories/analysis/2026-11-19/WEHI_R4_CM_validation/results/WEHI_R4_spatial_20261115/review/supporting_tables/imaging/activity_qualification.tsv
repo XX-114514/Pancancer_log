@@ -1,0 +1,253 @@
+section	platform	grid_um	cm	scope	n_grids	missing	status	mean_activity	retained_W_fraction
+breast_S01	Xenium_5k	100	CM01	full_network_naming_gene_proxy	8306	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM02	full_network_naming_gene_proxy	8306	XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM03	full_network_naming_gene_proxy	8306	IL7R,VCAN	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM04	full_network_naming_gene_proxy	8306	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM05	full_network_naming_gene_proxy	8306	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM06	full_network_naming_gene_proxy	8306	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM07	full_network_naming_gene_proxy	8306	IGHG1,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM08	full_network_naming_gene_proxy	8306	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM09	full_network_naming_gene_proxy	8306	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM10	full_network_naming_gene_proxy	8306	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM11	full_network_naming_gene_proxy	8306	XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM12	full_network_naming_gene_proxy	8306	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM13	full_network_naming_gene_proxy	8306	XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM14	full_network_naming_gene_proxy	8306	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM15	full_network_naming_gene_proxy	8306	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	100	CM01	prespecified_core_proxy	8306		core_marker_proxy_only	1.1862979442016808	0.7657944590562642
+breast_S01	Xenium_5k	100	CM12	prespecified_core_proxy	8306		core_marker_proxy_only	1.4470468267475174	0.9321081797960036
+breast_S01	Xenium_5k	100	CM04	prespecified_core_proxy	8306		core_marker_proxy_only	0.9073418090887523	0.7393401859014329
+breast_S01	Xenium_5k	200	CM01	full_network_naming_gene_proxy	2407	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM02	full_network_naming_gene_proxy	2407	XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM03	full_network_naming_gene_proxy	2407	IL7R,VCAN	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM04	full_network_naming_gene_proxy	2407	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM05	full_network_naming_gene_proxy	2407	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM06	full_network_naming_gene_proxy	2407	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM07	full_network_naming_gene_proxy	2407	IGHG1,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM08	full_network_naming_gene_proxy	2407	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM09	full_network_naming_gene_proxy	2407	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM10	full_network_naming_gene_proxy	2407	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM11	full_network_naming_gene_proxy	2407	XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM12	full_network_naming_gene_proxy	2407	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM13	full_network_naming_gene_proxy	2407	XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM14	full_network_naming_gene_proxy	2407	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM15	full_network_naming_gene_proxy	2407	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S01	Xenium_5k	200	CM01	prespecified_core_proxy	2407		core_marker_proxy_only	1.8289623861613822	0.7657944590562642
+breast_S01	Xenium_5k	200	CM12	prespecified_core_proxy	2407		core_marker_proxy_only	1.363625107837602	0.9321081797960036
+breast_S01	Xenium_5k	200	CM04	prespecified_core_proxy	2407		core_marker_proxy_only	0.940985641613649	0.7393401859014329
+breast_S02	Xenium_5k	100	CM01	full_network_naming_gene_proxy	5118	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM02	full_network_naming_gene_proxy	5118	XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM03	full_network_naming_gene_proxy	5118	IL7R,VCAN	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM04	full_network_naming_gene_proxy	5118	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM05	full_network_naming_gene_proxy	5118	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM06	full_network_naming_gene_proxy	5118	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM07	full_network_naming_gene_proxy	5118	IGHG1,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM08	full_network_naming_gene_proxy	5118	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM09	full_network_naming_gene_proxy	5118	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM10	full_network_naming_gene_proxy	5118	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM11	full_network_naming_gene_proxy	5118	XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM12	full_network_naming_gene_proxy	5118	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM13	full_network_naming_gene_proxy	5118	XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM14	full_network_naming_gene_proxy	5118	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM15	full_network_naming_gene_proxy	5118	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	100	CM01	prespecified_core_proxy	5118		core_marker_proxy_only	3.9492829586466933	0.7657944590562642
+breast_S02	Xenium_5k	100	CM12	prespecified_core_proxy	5118		core_marker_proxy_only	0.68814731353274	0.9321081797960036
+breast_S02	Xenium_5k	100	CM04	prespecified_core_proxy	5118		core_marker_proxy_only	1.2536903720518682	0.7393401859014329
+breast_S02	Xenium_5k	200	CM01	full_network_naming_gene_proxy	1904	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM02	full_network_naming_gene_proxy	1904	XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM03	full_network_naming_gene_proxy	1904	IL7R,VCAN	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM04	full_network_naming_gene_proxy	1904	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM05	full_network_naming_gene_proxy	1904	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM06	full_network_naming_gene_proxy	1904	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM07	full_network_naming_gene_proxy	1904	IGHG1,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM08	full_network_naming_gene_proxy	1904	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM09	full_network_naming_gene_proxy	1904	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM10	full_network_naming_gene_proxy	1904	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM11	full_network_naming_gene_proxy	1904	XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM12	full_network_naming_gene_proxy	1904	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM13	full_network_naming_gene_proxy	1904	XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM14	full_network_naming_gene_proxy	1904	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM15	full_network_naming_gene_proxy	1904	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S02	Xenium_5k	200	CM01	prespecified_core_proxy	1904		core_marker_proxy_only	3.991674996311047	0.7657944590562642
+breast_S02	Xenium_5k	200	CM12	prespecified_core_proxy	1904		core_marker_proxy_only	0.6808091815900851	0.9321081797960036
+breast_S02	Xenium_5k	200	CM04	prespecified_core_proxy	1904		core_marker_proxy_only	1.237042290041807	0.7393401859014329
+breast_S03	Xenium_5k	100	CM01	full_network_naming_gene_proxy	7205	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM02	full_network_naming_gene_proxy	7205	XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM03	full_network_naming_gene_proxy	7205	IL7R,VCAN	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM04	full_network_naming_gene_proxy	7205	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM05	full_network_naming_gene_proxy	7205	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM06	full_network_naming_gene_proxy	7205	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM07	full_network_naming_gene_proxy	7205	IGHG1,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM08	full_network_naming_gene_proxy	7205	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM09	full_network_naming_gene_proxy	7205	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM10	full_network_naming_gene_proxy	7205	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM11	full_network_naming_gene_proxy	7205	XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM12	full_network_naming_gene_proxy	7205	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM13	full_network_naming_gene_proxy	7205	XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM14	full_network_naming_gene_proxy	7205	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM15	full_network_naming_gene_proxy	7205	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	100	CM01	prespecified_core_proxy	7205		core_marker_proxy_only	5.761982512073449	0.7657944590562642
+breast_S03	Xenium_5k	100	CM12	prespecified_core_proxy	7205		core_marker_proxy_only	0.9222038667870568	0.9321081797960036
+breast_S03	Xenium_5k	100	CM04	prespecified_core_proxy	7205		core_marker_proxy_only	2.032325059731214	0.7393401859014329
+breast_S03	Xenium_5k	200	CM01	full_network_naming_gene_proxy	2644	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM02	full_network_naming_gene_proxy	2644	XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM03	full_network_naming_gene_proxy	2644	IL7R,VCAN	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM04	full_network_naming_gene_proxy	2644	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM05	full_network_naming_gene_proxy	2644	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM06	full_network_naming_gene_proxy	2644	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM07	full_network_naming_gene_proxy	2644	IGHG1,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM08	full_network_naming_gene_proxy	2644	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM09	full_network_naming_gene_proxy	2644	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM10	full_network_naming_gene_proxy	2644	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM11	full_network_naming_gene_proxy	2644	XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM12	full_network_naming_gene_proxy	2644	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM13	full_network_naming_gene_proxy	2644	XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM14	full_network_naming_gene_proxy	2644	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM15	full_network_naming_gene_proxy	2644	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S03	Xenium_5k	200	CM01	prespecified_core_proxy	2644		core_marker_proxy_only	5.8113059234147	0.7657944590562642
+breast_S03	Xenium_5k	200	CM12	prespecified_core_proxy	2644		core_marker_proxy_only	0.9726808424418455	0.9321081797960036
+breast_S03	Xenium_5k	200	CM04	prespecified_core_proxy	2644		core_marker_proxy_only	2.0764600279626215	0.7393401859014329
+breast_S04	Xenium_5k	100	CM01	full_network_naming_gene_proxy	6145	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM02	full_network_naming_gene_proxy	6145	XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM03	full_network_naming_gene_proxy	6145	IL7R,VCAN	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM04	full_network_naming_gene_proxy	6145	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM05	full_network_naming_gene_proxy	6145	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM06	full_network_naming_gene_proxy	6145	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM07	full_network_naming_gene_proxy	6145	IGHG1,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM08	full_network_naming_gene_proxy	6145	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM09	full_network_naming_gene_proxy	6145	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM10	full_network_naming_gene_proxy	6145	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM11	full_network_naming_gene_proxy	6145	XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM12	full_network_naming_gene_proxy	6145	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM13	full_network_naming_gene_proxy	6145	XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM14	full_network_naming_gene_proxy	6145	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM15	full_network_naming_gene_proxy	6145	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	100	CM01	prespecified_core_proxy	6145		core_marker_proxy_only	0.9045779804110611	0.7657944590562642
+breast_S04	Xenium_5k	100	CM12	prespecified_core_proxy	6145		core_marker_proxy_only	0.5690491784884689	0.9321081797960036
+breast_S04	Xenium_5k	100	CM04	prespecified_core_proxy	6145		core_marker_proxy_only	0.5639094518063507	0.7393401859014329
+breast_S04	Xenium_5k	200	CM01	full_network_naming_gene_proxy	1709	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM02	full_network_naming_gene_proxy	1709	XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM03	full_network_naming_gene_proxy	1709	IL7R,VCAN	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM04	full_network_naming_gene_proxy	1709	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM05	full_network_naming_gene_proxy	1709	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM06	full_network_naming_gene_proxy	1709	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM07	full_network_naming_gene_proxy	1709	IGHG1,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM08	full_network_naming_gene_proxy	1709	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM09	full_network_naming_gene_proxy	1709	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM10	full_network_naming_gene_proxy	1709	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM11	full_network_naming_gene_proxy	1709	XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM12	full_network_naming_gene_proxy	1709	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM13	full_network_naming_gene_proxy	1709	XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM14	full_network_naming_gene_proxy	1709	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM15	full_network_naming_gene_proxy	1709	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S04	Xenium_5k	200	CM01	prespecified_core_proxy	1709		core_marker_proxy_only	1.0203497413607492	0.7657944590562642
+breast_S04	Xenium_5k	200	CM12	prespecified_core_proxy	1709		core_marker_proxy_only	0.5444725546732101	0.9321081797960036
+breast_S04	Xenium_5k	200	CM04	prespecified_core_proxy	1709		core_marker_proxy_only	0.6106637646589357	0.7393401859014329
+breast_S05	Xenium_5k	100	CM01	full_network_naming_gene_proxy	7721	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM02	full_network_naming_gene_proxy	7721	XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM03	full_network_naming_gene_proxy	7721	IL7R,VCAN	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM04	full_network_naming_gene_proxy	7721	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM05	full_network_naming_gene_proxy	7721	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM06	full_network_naming_gene_proxy	7721	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM07	full_network_naming_gene_proxy	7721	IGHG1,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM08	full_network_naming_gene_proxy	7721	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM09	full_network_naming_gene_proxy	7721	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM10	full_network_naming_gene_proxy	7721	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM11	full_network_naming_gene_proxy	7721	XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM12	full_network_naming_gene_proxy	7721	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM13	full_network_naming_gene_proxy	7721	XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM14	full_network_naming_gene_proxy	7721	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM15	full_network_naming_gene_proxy	7721	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	100	CM01	prespecified_core_proxy	7721		core_marker_proxy_only	2.7326532612376853	0.7657944590562642
+breast_S05	Xenium_5k	100	CM12	prespecified_core_proxy	7721		core_marker_proxy_only	0.7284498276072843	0.9321081797960036
+breast_S05	Xenium_5k	100	CM04	prespecified_core_proxy	7721		core_marker_proxy_only	1.4117989163965436	0.7393401859014329
+breast_S05	Xenium_5k	200	CM01	full_network_naming_gene_proxy	2364	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM02	full_network_naming_gene_proxy	2364	XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM03	full_network_naming_gene_proxy	2364	IL7R,VCAN	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM04	full_network_naming_gene_proxy	2364	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM05	full_network_naming_gene_proxy	2364	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM06	full_network_naming_gene_proxy	2364	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM07	full_network_naming_gene_proxy	2364	IGHG1,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM08	full_network_naming_gene_proxy	2364	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM09	full_network_naming_gene_proxy	2364	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM10	full_network_naming_gene_proxy	2364	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM11	full_network_naming_gene_proxy	2364	XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM12	full_network_naming_gene_proxy	2364	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM13	full_network_naming_gene_proxy	2364	XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM14	full_network_naming_gene_proxy	2364	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM15	full_network_naming_gene_proxy	2364	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S05	Xenium_5k	200	CM01	prespecified_core_proxy	2364		core_marker_proxy_only	2.4572619176324815	0.7657944590562642
+breast_S05	Xenium_5k	200	CM12	prespecified_core_proxy	2364		core_marker_proxy_only	0.6581441581713688	0.9321081797960036
+breast_S05	Xenium_5k	200	CM04	prespecified_core_proxy	2364		core_marker_proxy_only	1.2951223816381465	0.7393401859014329
+breast_S06	Xenium_5k	100	CM01	full_network_naming_gene_proxy	9399	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM02	full_network_naming_gene_proxy	9399	XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM03	full_network_naming_gene_proxy	9399	IL7R,VCAN	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM04	full_network_naming_gene_proxy	9399	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM05	full_network_naming_gene_proxy	9399	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM06	full_network_naming_gene_proxy	9399	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM07	full_network_naming_gene_proxy	9399	IGHG1,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM08	full_network_naming_gene_proxy	9399	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM09	full_network_naming_gene_proxy	9399	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM10	full_network_naming_gene_proxy	9399	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM11	full_network_naming_gene_proxy	9399	XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM12	full_network_naming_gene_proxy	9399	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM13	full_network_naming_gene_proxy	9399	XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM14	full_network_naming_gene_proxy	9399	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM15	full_network_naming_gene_proxy	9399	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	100	CM01	prespecified_core_proxy	9399		core_marker_proxy_only	0.8080087499025281	0.7657944590562642
+breast_S06	Xenium_5k	100	CM12	prespecified_core_proxy	9399		core_marker_proxy_only	0.5445493958929593	0.9321081797960036
+breast_S06	Xenium_5k	100	CM04	prespecified_core_proxy	9399		core_marker_proxy_only	0.33873657228420945	0.7393401859014329
+breast_S06	Xenium_5k	200	CM01	full_network_naming_gene_proxy	2567	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM02	full_network_naming_gene_proxy	2567	XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM03	full_network_naming_gene_proxy	2567	IL7R,VCAN	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM04	full_network_naming_gene_proxy	2567	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM05	full_network_naming_gene_proxy	2567	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM06	full_network_naming_gene_proxy	2567	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM07	full_network_naming_gene_proxy	2567	IGHG1,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM08	full_network_naming_gene_proxy	2567	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM09	full_network_naming_gene_proxy	2567	GPR183,IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM10	full_network_naming_gene_proxy	2567	IGHA1,IL7R,TPSAB1,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM11	full_network_naming_gene_proxy	2567	XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM12	full_network_naming_gene_proxy	2567	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM13	full_network_naming_gene_proxy	2567	XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM14	full_network_naming_gene_proxy	2567	IL7R,TPSAB1,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM15	full_network_naming_gene_proxy	2567	IL7R,VCAN,XCL1	unmeasured_network_markers		
+breast_S06	Xenium_5k	200	CM01	prespecified_core_proxy	2567		core_marker_proxy_only	0.9426019134647429	0.7657944590562642
+breast_S06	Xenium_5k	200	CM12	prespecified_core_proxy	2567		core_marker_proxy_only	0.5240160310328604	0.9321081797960036
+breast_S06	Xenium_5k	200	CM04	prespecified_core_proxy	2567		core_marker_proxy_only	0.3550765530189998	0.7393401859014329
+renal_Xenium	Xenium_477RNA_27protein	100	CM01	full_network_naming_gene_proxy	8489	PI16,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM02	full_network_naming_gene_proxy	8489	CLEC9A,CXCL13,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM03	full_network_naming_gene_proxy	8489	GZMH	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM04	full_network_naming_gene_proxy	8489	CLEC9A,GJA5,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM05	full_network_naming_gene_proxy	8489	CXCL13,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM06	full_network_naming_gene_proxy	8489	FCER2,GZMH,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM07	full_network_naming_gene_proxy	8489	CLEC9A,CXCL13,IGHG1,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM08	full_network_naming_gene_proxy	8489	CLEC9A,GZMH,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM09	full_network_naming_gene_proxy	8489	XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM10	full_network_naming_gene_proxy	8489	CXCL13,IGHA1,TPSAB1,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM11	full_network_naming_gene_proxy	8489	CXCL13,ESM1,FOLR2,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM12	full_network_naming_gene_proxy	8489	CLEC9A,ESM1,FOLR2,RGS5,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM13	full_network_naming_gene_proxy	8489	CLEC9A,CXCL13,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM14	full_network_naming_gene_proxy	8489	CCL21,CLEC9A,CXCL13,TPSAB1,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM15	full_network_naming_gene_proxy	8489	CLEC9A,FOLR2,RGS5,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	100	CM01	prespecified_core_proxy	8489	PI16	unmeasured_core_markers		0.7657944590562642
+renal_Xenium	Xenium_477RNA_27protein	100	CM12	prespecified_core_proxy	8489	ESM1,FOLR2,RGS5	unmeasured_core_markers		0.9321081797960036
+renal_Xenium	Xenium_477RNA_27protein	100	CM04	prespecified_core_proxy	8489	GJA5	unmeasured_core_markers		0.7393401859014329
+renal_Xenium	Xenium_477RNA_27protein	200	CM01	full_network_naming_gene_proxy	2504	PI16,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM02	full_network_naming_gene_proxy	2504	CLEC9A,CXCL13,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM03	full_network_naming_gene_proxy	2504	GZMH	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM04	full_network_naming_gene_proxy	2504	CLEC9A,GJA5,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM05	full_network_naming_gene_proxy	2504	CXCL13,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM06	full_network_naming_gene_proxy	2504	FCER2,GZMH,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM07	full_network_naming_gene_proxy	2504	CLEC9A,CXCL13,IGHG1,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM08	full_network_naming_gene_proxy	2504	CLEC9A,GZMH,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM09	full_network_naming_gene_proxy	2504	XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM10	full_network_naming_gene_proxy	2504	CXCL13,IGHA1,TPSAB1,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM11	full_network_naming_gene_proxy	2504	CXCL13,ESM1,FOLR2,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM12	full_network_naming_gene_proxy	2504	CLEC9A,ESM1,FOLR2,RGS5,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM13	full_network_naming_gene_proxy	2504	CLEC9A,CXCL13,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM14	full_network_naming_gene_proxy	2504	CCL21,CLEC9A,CXCL13,TPSAB1,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM15	full_network_naming_gene_proxy	2504	CLEC9A,FOLR2,RGS5,XCL1	unmeasured_network_markers		
+renal_Xenium	Xenium_477RNA_27protein	200	CM01	prespecified_core_proxy	2504	PI16	unmeasured_core_markers		0.7657944590562642
+renal_Xenium	Xenium_477RNA_27protein	200	CM12	prespecified_core_proxy	2504	ESM1,FOLR2,RGS5	unmeasured_core_markers		0.9321081797960036
+renal_Xenium	Xenium_477RNA_27protein	200	CM04	prespecified_core_proxy	2504	GJA5	unmeasured_core_markers		0.7393401859014329

@@ -1,0 +1,8 @@
+{
+  "status": "reviewed_all_four_sections_and_imaging_with_qualified_interpretation",
+  "Visium_spots": 10160,
+  "core_evidence_rows": 20,
+  "main_finding": "CM01 core density-sensitive; ESM1–RGS5 partial rank correlation more consistent; no full spatial hub or contact proof",
+  "all_four_30000_epoch_fits_and_240_scores_audited": true,
+  "matrix_and_model_storage": "server_only"
+}

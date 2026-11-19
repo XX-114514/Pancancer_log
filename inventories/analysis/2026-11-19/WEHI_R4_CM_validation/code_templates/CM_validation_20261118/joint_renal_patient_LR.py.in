@@ -1,0 +1,24 @@
+"""All feasible original CM pairs in one verified renal source; joint BH."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'differential_LR_GSE207493_joint_v1';O.mkdir(exist_ok=False)
+f=pd.read_csv(R/'patient_LR_v1/all15_pair_feasibility.tsv',sep='\t');f=f[f.source.eq('GSE207493')&f.eligible_patient_count_only]
+assert set(f.cm)=={'CM03','CM12'} and len(f)==170
+frames=[];inputs={}
+for cm in sorted(f.cm.unique()):
+ d=R/('differential_LR_'+cm+'_GSE207493_v1')
+ for file in ['independent_audit.json','component_independent_audit.json']:assert json.loads((d/file).read_text())['status'].startswith('PASS_')
+ t=pd.read_csv(d/'differential_scores.tsv.gz',sep='\t');expected=set(map(tuple,f[f.cm.eq(cm)][['node1','node2']].to_numpy()));assert set(map(tuple,t[['node1','node2']].to_numpy()))==expected
+ t=t.rename(columns={'q_within_'+cm+'_source_PROVISIONAL':'q_within_CM_source_previous'})
+ frames.append(t);inputs[cm]=hashlib.sha256((d/'differential_scores.tsv.gz').read_bytes()).hexdigest()
+t=pd.concat(frames,ignore_index=True);mask=t.p.notna();pv=t.loc[mask,'p'].to_numpy();q=multipletests(pv,method='fdr_bh')[1]
+order=np.argsort(pv);ranked=pv[order]*len(pv)/np.arange(1,len(pv)+1);check=np.minimum.accumulate(ranked[::-1])[::-1].clip(0,1);assert np.allclose(q[order],check,atol=1e-14)
+t['q_all_feasible_CM_in_GSE207493']=np.nan;t.loc[mask,'q_all_feasible_CM_in_GSE207493']=q;t.to_csv(O/'differential_scores_joint.tsv.gz',sep='\t',index=False)
+summary=[]
+for (cm,n1,n2),g in t.groupby(['cm','node1','node2']):
+ z=g[g.p.notna()];summary.append(dict(cm=cm,node1=n1,node2=n2,patients=g.patients.iloc[0],high_patients=g.high_patients.iloc[0],low_patients=g.low_patients.iloc[0],database_interactions=len(g),variable_tests=len(z),nominal_p05=int(z.p.lt(.05).sum()),joint_q05=int(z.q_all_feasible_CM_in_GSE207493.lt(.05).sum()),minimum_p=z.p.min(),minimum_joint_q=z.q_all_feasible_CM_in_GSE207493.min()))
+pd.DataFrame(summary).to_csv(O/'pair_summary.tsv',sep='\t',index=False)
+proof=dict(status='COMPLETE_ALL_FEASIBLE_RENAL_CM_PATIENT_CONTRASTS_WITH_JOINT_BH_AND_INDEPENDENT_BH_REPLAY',source='GSE207493',modules=sorted(f.cm.unique()),pairs=len(summary),interaction_pair_rows=len(t),nonconstant_tests=int(mask.sum()),joint_q05=int((q<.05).sum()),input_score_hashes=inputs,scope='All 15 original modules screened for >=3 verified patients per group and >=10 cells per partner per sample; only CM03 and CM12 qualified. Joint BH includes all qualified modules and ordered pairs in this source, not other sources. Patient randomization is observational exchangeability, not proof of communication, causality, or absent biological effect.')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

@@ -1,0 +1,12 @@
+{
+  "grid_um": [
+    100,
+    200
+  ],
+  "minimum_QC_cells_per_grid": 10,
+  "scale": "sum native RNA per grid / summed total native RNA *10000",
+  "complete_network_activity": "only when every original network naming gene is measured; transcript-density proxy, not exact subtype abundance",
+  "core_activity": "retains original W on prespecified 2/3 core nodes; does not rename full CM",
+  "statistics": "Spearman between core gene-density vectors and directed inverse-square 60-neighbour Moran; section descriptive only",
+  "render": "all retained grid locations; separately scaled plots; no cross-platform magnitude comparison"
+}

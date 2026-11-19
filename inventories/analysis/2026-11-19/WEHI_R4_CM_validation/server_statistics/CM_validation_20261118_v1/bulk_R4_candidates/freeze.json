@@ -1,0 +1,18 @@
+{
+  "status": "R4_BULK_CANDIDATE_SIGNATURES_FROZEN_PENDING_BIOLOGICAL_AND_SCORE_VALIDATION",
+  "modules": 15,
+  "branches": 2,
+  "genes_per_signature": 60,
+  "method": "row-normalized R4 fitted reference over 44 CM identities x column-normalized frozen W; top60; exclude genes initially top60 in >=3 modules and refill",
+  "primary_interpretation_branch": "original_network_members; matches spatial activity member restriction",
+  "sensitivity_branch": "all_W_nodes_previous_recipe; retains previous local bulk recipe",
+  "clinical_outcomes_used_for_gene_selection": false,
+  "limitations": "not original-paper bulk validation; gene ranking can favor low-expression specific genes; immune-member modules include immune composition; no clinical association, predictive accuracy, source robustness or independent patient validation claimed",
+  "required_next": "heldout identity/mixture validation, source robustness and immune-overlap controls; freeze scoring universe/coverage rules before clinical testing; include all branches in multiplicity accounting",
+  "input_sha256": {
+    "${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1/reference/signatures_PRIVATE.tsv": "d08cd772afb6360f92bf7c0ddfb1f726cfaacba316dd95207a8ec467dfa81061",
+    "${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1/adapter/CM_results/W_PRIVATE.tsv": "741c2802f3b088800b284a85353d8ab11c3118ede9e4d1074ed4dd979a90614a",
+    "${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1/adapter/CM_results/CM_members_after_author_network_filter.tsv": "6a8d562414d650a56d6f795f39352fa9ac74a47382df689316e043eb65498428"
+  },
+  "signatures_sha256": "98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2"
+}

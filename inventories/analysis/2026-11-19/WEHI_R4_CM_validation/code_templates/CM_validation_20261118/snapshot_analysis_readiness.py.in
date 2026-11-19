@@ -1,0 +1,15 @@
+"""Read-only evidence inventory for finite analyses already launched."""
+from pathlib import Path
+import json,hashlib,time
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');rows=[]
+def record(stage,key,path):
+ if path.exists():
+  value=json.loads(path.read_text());status=value.get('status',value.get('stage','UNSPECIFIED'));digest=hashlib.sha256(path.read_bytes()).hexdigest()
+ else:status='MISSING';digest=None
+ rows.append(dict(stage=stage,key=key,evidence=str(path.relative_to(R)),status=status,sha256=digest))
+for cm in ['CM%02d'%n for n in range(1,16)]:
+ for stage in ['communication','highlow']:record(stage,cm,R/stage/cm/'independent_audit.json')
+for job in json.loads((R/'spatial_melanoma/inputs/section_jobs_PRIVATE.json').read_text()):
+ s=job['section_code'];record('melanoma_author_scores',s,R/'spatial_melanoma/sections'/s/'independent_audit.json');record('melanoma_density',s,R/'spatial_melanoma/sections'/s/'density_sensitivity_v1/complete.json')
+for key,p in [('CPDB_joint15','communication_joint15_v2/independent_audit.json'),('breast_mural_identity','imaging_breast_mural_states_v1/independent_audit.json'),('lung_core','imaging_lung_core_v1/independent_audit.json'),('lung_input','sources/lung_prime5k_10x/independent_input_audit.json')]:record('cross_analysis',key,R/p)
+O=R/'analysis_readiness_snapshot.json';O.write_text(json.dumps(dict(timestamp=time.time(),scope='inventory only; does not independently prove scientific correctness or goal completion; pending tasks are not failure without checking PID',records=rows),indent=2));print('evidence_records',len(rows));print('missing',[(x['stage'],x['key']) for x in rows if x['status']=='MISSING'])

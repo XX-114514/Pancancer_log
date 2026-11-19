@@ -1,0 +1,12 @@
+{
+  "status": "PASS_CPDB_OUTPUT_HASH_ID_SCOPE_P_AND_SIGNIFICANCE_READBACK",
+  "cm": "CM13",
+  "cellpairs": 1936,
+  "retained_database_interactions": 895,
+  "rows_with_complete_components_in_current_input": 895,
+  "rows_without_complete_components_in_current_input": 0,
+  "raw_significant_events": 44347,
+  "MC_BH_significant_events": 41961,
+  "MC_sensitivity": "(p*1000+1)/1001 then BH across all input-complete interaction x ordered identity-pair entries within this CMT",
+  "limitations": "raw author output retained; pooled-cell permutation, not patient-level inference; no correction across 15 CMTs yet; High/Low differential communication not established; source-target labels do not prove directional signalling"
+}

@@ -1,0 +1,20 @@
+{
+  "report.html": "18995198a0ede12d7ca668fb4fce0b6f4e9a583e92a2bee9eb0dbf3abe5a115e",
+  "figures/breast_S01.png": "464e55d43df1806e50377d028b964788c37076496e987dc880039b3210fc0390",
+  "figures/breast_S02.png": "cf13004be45c13e8221ef5fe891997373ee1158e5b40746136ae00fd6de1804c",
+  "figures/breast_S03.png": "606f8d4d444e07c4855580e99633ca0c9e397404c32afb971d098d0ca4080e17",
+  "figures/breast_S04.png": "757a5b9fc28cc09601a3f08d59204008425ccaabf62fb0079e23ade35c504ec6",
+  "figures/breast_S05.png": "947569292fc997a62099b66afad71c4d922e7e6cdd9915212bed2ea166f739b9",
+  "figures/breast_S06.png": "21caff4a122a8d6c68d64d8013397efd90bb37e45837f4083458f6c03fc62eb4",
+  "figures/renal_Xenium.png": "c613154eb1e183ea0bdb5c62dc5030470500f9db90b18ce7f4908be2b5902ccb",
+  "figures/Lung12.png": "0f6faf5359973f4a50ae9156c05a29ba67fc5c7a1f6bcb9c5d12b57f3eb7e84c",
+  "figures/Lung13.png": "5c14a52681d4e50179e72d1223a7afc00fbd06d693da0382568691bdefcc944e",
+  "tables/imaging/core_marker_spatial_edges.tsv": "f0b290e896f476bf16148c4bdb35e35a1b46f5618ddc4c3584b21d652cde9bcd",
+  "tables/imaging/activity_qualification.tsv": "6d2c8d0dc8f8d71963a50c5458e96f2b44967f89e45c450a187f9ff969d3077e",
+  "tables/imaging/marker_availability.tsv": "a7853f0624b5696099679eb0fc2588b93782450a1684b6348154eca5d3d1d476",
+  "tables/imaging/independent_audit.json": "f7882ea86c263b2749561c1a3141caaed98560a722d521695307c33a840f8c7d",
+  "tables/imaging/complete.json": "5d1dc7a5502b0558bba8a1ad9540f0c89084f6c96282a3bcf39426da427c8992",
+  "tables/cosmx_broad/sample_core_edge_summary.tsv": "8330437a62b1979467cc1d685baaf15c6013fdf210d3bfdb51708ae18c3d96cf",
+  "tables/cosmx_broad/marker_availability.tsv": "065a375edc9aa78b6ed26e0223d0c478f348a75e10a65f41492b297c793c01cc",
+  "tables/cosmx_broad/complete.json": "3af04b3ef11fd98557f1b7bdbac5134f9b7ffaff5f019847e202d2c30c6bbd4b"
+}

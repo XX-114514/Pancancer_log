@@ -1,0 +1,10 @@
+{
+  "status": "PASS_RAW_PURITY_BRIDGE_CLINICAL_COVARIATES_ALL_STATSMODELS_PARTIAL_CORRELATION_AND_JOINT_BH",
+  "samples": 9163,
+  "models_checked": 3600,
+  "joint_tests": 5400,
+  "max_rho_error": 1.3036446921965705e-12,
+  "max_p_error": 1.608979616207762e-11,
+  "association_sha256": "7b1550658280a0cac76bf6172f6bef5c86433d9d6fd4703932106e2746e52611",
+  "scope": "numerical equivalence and linkage, not causal or predictive validity"
+}

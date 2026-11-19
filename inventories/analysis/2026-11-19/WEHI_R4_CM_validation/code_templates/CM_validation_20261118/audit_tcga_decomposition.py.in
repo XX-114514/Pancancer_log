@@ -1,0 +1,47 @@
+"""Independent reference fractions, direct z-score reconstruction, OLS replay."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad,statsmodels.api as sm
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=R/'bulk_R4_candidates';O=B/'TCGA_reference_decomposition_v2_nonredacted'
+a=ad.read_h5ad(B/'TCGA_candidate_expression_PRIVATE.h5ad');s=pd.read_csv(O/'component_scores_PRIVATE.tsv.gz',sep='\t');f=pd.read_csv(O/'gene_reference_attribution.tsv',sep='\t');ref=pd.read_csv(R.parent/'spatial_CoVarNet_R4_20261115_v1/reference/signatures_PRIVATE.tsv',sep='\t',index_col=0);sig=pd.read_csv(B/'candidate_signatures.tsv',sep='\t');groups=['endothelial','mural','other_stromal','immune'];maxfraction=0.;maxscore=0.;maxrho=0.;maxcov=0.
+# Independent explicit identity partition with exhaustive coverage.
+for branch in s.branch.unique():
+ w=pd.read_csv(B/(branch+'_node_weights.tsv'),sep='\t',index_col=0)
+ sets={'endothelial':[x for x in w.index if x.startswith('Endo_')],'mural':['Str_Pericyte_RGS5','Str_SMC_MYH11'],'other_stromal':[x for x in w.index if x.startswith('Str_') and x not in ['Str_Pericyte_RGS5','Str_SMC_MYH11']]}
+ sets['immune']=[x for x in w.index if x.startswith(('B_','CD4T_','CD8T_','ILC_','Mye_','Plasma_'))];assert sorted(sum(sets.values(),[]))==sorted(w.index)
+ for cm in w.columns:
+  z=f[(f.branch==branch)&(f.cm==cm)].pivot(index='gene',columns='component',values='fraction');weighted=ref.loc[z.index,w.index].mul(w[cm],axis=1);den=weighted.sum(axis=1)
+  # Row normalization of reference cancels in fractions; use raw reference instead.
+  for cat in groups:
+   expected=weighted[sets[cat]].sum(axis=1)/den;err=np.max(abs(expected-z[cat]));maxfraction=max(maxfraction,float(err));assert err<1e-12
+q=pd.read_csv(O/'cohort_component_qualification.tsv',sep='\t').set_index(['cancer','branch','cm','component'])
+for cancer,sub in s.groupby('cancer'):
+ samples=sorted(sub['sample'].unique());X=pd.DataFrame(a.X[a.obs_names.get_indexer(samples)].astype(np.float64),index=samples,columns=a.var_names);sd=X.std(ddof=1);Z=(X-X.mean())/sd
+ for (branch,cm),t in sub.groupby(['branch','cm']):
+  genes=sig[(sig.branch==branch)&(sig.cm==cm)].gene;genes=[g for g in genes if g in Z.columns and sd[g]>1e-8];assert len(genes)>=48
+  frac=f[(f.branch==branch)&(f.cm==cm)].pivot(index='gene',columns='component',values='fraction').loc[genes];t=t.set_index('sample').loc[samples]
+  for cat in groups:
+   expected=Z[genes].mul(frac[cat],axis=1).sum(axis=1)/len(genes);err=np.max(abs(expected-t[cat]));maxscore=max(maxscore,float(err));assert err<1e-11
+   mass=frac[cat].mean();den=(frac[cat]**2).sum();neff=frac[cat].sum()**2/den if den>0 else 0.;row=q.loc[(cancer,branch,cm,cat)];assert np.allclose([mass,neff],[row.mean_gene_mass,row.effective_genes],atol=1e-10);assert row.qualified==bool(mass>=.05 and neff>=5)
+  assert np.allclose(t[groups].sum(axis=1),t.full_score,atol=1e-11)
+bridge=pd.read_csv(B/'TCGA_leukocyte_purity_v3_nonredacted/analysis_bridge_PRIVATE.tsv.gz',sep='\t');s=s.merge(bridge[['sample','LF_single','purity','age','sex']],on='sample',validate='many_to_one');r=pd.read_csv(O/'descriptive_LF_associations.tsv',sep='\t');count=0
+for (cancer,branch,cm),t in s.groupby(['cancer','branch','cm']):
+ t=t.dropna(subset=['LF_single','purity','age','sex']);v=r[(r.cancer==cancer)&(r.branch==branch)&(r.cm==cm)]
+ if len(t)<30:assert v.empty;continue
+ assert len(v)==5
+ C=pd.DataFrame({'const':np.ones(len(t))},index=t.index)
+ for col in ['purity','age','sex']:
+  if t[col].nunique()>1:C[col]=t[col] if col=='sex' else t[col].rank()
+ y=sm.OLS(t.LF_single.rank(),C).fit().resid;full=sm.OLS(t.full_score,C).fit().resid;den=np.linalg.norm(full)*np.linalg.norm(y);covs=[]
+ for row in v.itertuples():
+  assert row.patients==len(t)
+  x=sm.OLS(t[row.component].rank(),C).fit().resid;qual=True if row.component=='full_score' else bool(q.loc[(cancer,branch,cm,row.component),'qualified']);assert qual==row.qualified
+  if qual:
+   rho=np.corrcoef(x,y)[0,1];err=abs(rho-row.partial_spearman);maxrho=max(maxrho,float(err));assert err<1e-9
+  else:assert pd.isna(row.partial_spearman)
+  raw=sm.OLS(t[row.component],C).fit().resid;cov=float(raw@y/den);err=abs(cov-row.additive_covariance_contribution);maxcov=max(maxcov,float(err));assert err<1e-9
+  if row.component!='full_score':covs.append(cov)
+  count+=1
+ assert np.allclose(sum(covs),float(full@y/den),atol=1e-10)
+proof=dict(status='PASS_ALL_REFERENCE_FRACTIONS_RAW_GENE_Z_COMPONENT_SCORES_AND_OLS_ASSOCIATIONS',score_rows=len(s),descriptive_rows=count,max_fraction_error=maxfraction,max_component_score_error=maxscore,max_partial_rho_error=maxrho,max_additive_covariance_error=maxcov,component_score_sha256=hashlib.sha256((O/'component_scores_PRIVATE.tsv.gz').read_bytes()).hexdigest(),scope='All four contributions, all 30 signatures, all 9120 nonredacted scored patients. Direct raw-reference ratios; independent pandas gene standardization; statsmodels OLS rank residual and additive covariance replay. Descriptive only; does not establish immune independence or true lineage abundance.')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

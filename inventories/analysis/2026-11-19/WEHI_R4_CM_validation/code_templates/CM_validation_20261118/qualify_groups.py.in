@@ -1,0 +1,24 @@
+from pathlib import Path
+import pandas as pd,numpy as np,json,hashlib
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1';S=B/'w2o_annotation_r4_covarnet_k15_20261115_v1/covarnet'
+a=pd.read_csv(R/'R4_CMT_assignment_PRIVATE.tsv',sep='\t',dtype={'unit':str}).set_index('unit');m=pd.read_csv(S/'unit_metadata.tsv',sep='\t',dtype={'sampleID':str}).set_index('sampleID');c=pd.read_csv(S/'refined_counts.tsv',sep='\t',dtype={'unit_id':str}).set_index('unit_id');e=pd.read_csv(S/'export/module_edges.tsv',sep='\t')
+# H export uses an explicit unit: wrapper and zero-padded numeric IDs.
+def canon(v):
+ v=str(v);v=v[5:] if v.startswith('unit:') else v
+ return str(int(v)) if v.isdigit() else v
+bridge=pd.DataFrame({'H_export_unit':a.index,'metadata_unit':[canon(v) for v in a.index]})
+assert bridge.metadata_unit.is_unique
+bridge.to_csv(R/'H_to_metadata_unit_bridge_PRIVATE.tsv',sep='\t',index=False)
+a.index=pd.Index(bridge.metadata_unit,name='unit');m.index=pd.Index([canon(v) for v in m.index]);c.index=pd.Index([canon(v) for v in c.index])
+assert a.index.is_unique and m.index.is_unique and c.index.is_unique and a.index.isin(m.index).all() and a.index.isin(c.index).all();m=m.loc[a.index];c=c.loc[a.index];assert (m.n_sources==1).all() and (m.n_cancers==1).all();d=a.join(m);d=d[d.CMT.notna()];rows=[];strata=[]
+for cm in sorted(e.cm.unique()):
+ members=sorted(set(e.loc[e.cm==cm,'subCluster1'])|set(e.loc[e.cm==cm,'subCluster2']));hi=d.CMT==cm;counts=d.loc[hi,'source'].value_counts()
+ for (source,cancer),g in d.groupby(['source','cancer']):
+  h=g.CMT==cm;strata.append({'cm':cm,'source':source,'cancer':cancer,'high_units':int(h.sum()),'low_units':int((~h).sum()),'both_at_least3_units':bool(h.sum()>=3 and (~h).sum()>=3)})
+ for node in members:
+  qualified=c.loc[d.index,node]>=10;nh=int((hi&qualified).sum());nl=int((~hi&qualified).sum());matched=0
+  for _,g in d[qualified].groupby(['source','cancer']):
+   h=g.CMT==cm;matched+=int(h.sum()>=3 and (~h).sum()>=3)
+  rows.append({'cm':cm,'node':node,'high_units_with_ge10_cells':nh,'low_units_with_ge10_cells':nl,'high_cells':int(c.loc[d.index[hi],node].sum()),'low_cells':int(c.loc[d.index[~hi],node].sum()),'source_cancer_strata_ge3_each_with_node':matched,'high_sources':len(counts),'largest_high_source_fraction':counts.max()/counts.sum(),'patient_level_gate':'unverified'})
+pd.DataFrame(strata).to_csv(R/'CMT_source_cancer_balance.tsv',sep='\t',index=False);out=pd.DataFrame(rows);out.to_csv(R/'R4_member_comparison_eligibility.tsv',sep='\t',index=False)
+d.to_csv(R/'R4_CMT_metadata_PRIVATE.tsv',sep='\t');proof={'status':'PASS_bijective_declared_unit_serialization_bridge_and_counts_join','units_assigned':len(d),'all_units_single_source_and_cancer':True,'thresholds':'>=10 cells per node per unit; >=3 units each group within source x cancer; feasibility only, not patient independence','sha256':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in [S/'unit_metadata.tsv',S/'refined_counts.tsv',R/'R4_CMT_assignment_PRIVATE.tsv']}};(R/'group_qualification_audit.json').write_text(json.dumps(proof,indent=2));print(out[out.cm=='CM12'].to_string(index=False))

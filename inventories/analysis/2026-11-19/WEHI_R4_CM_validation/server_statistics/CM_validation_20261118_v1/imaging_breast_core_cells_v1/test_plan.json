@@ -1,0 +1,24 @@
+{
+  "radii_um": [
+    30,
+    50
+  ],
+  "tile_um": [
+    200,
+    400
+  ],
+  "positive_transcripts": [
+    1,
+    2
+  ],
+  "directions": [
+    "ESM1_EC_to_RGS5_mural",
+    "RGS5_mural_to_ESM1_EC"
+  ],
+  "primary": "30um radius,200um tile,>=1 transcript; both directions",
+  "null": "fix target cells and coordinates; permute source marker labels within source lineage, spatial tile and within-tile depth quartile; exact convolution of hypergeometric counts",
+  "statistic": "fraction of marker-positive source cells with >=1 fixed marker-positive target within radius; count-based exact two-sided tail around null expectation",
+  "minimum": "20 source-lineage cells;10 target-positive cells;10 positive and10 negative source cells in mixed blocks",
+  "family": "all 6 sections x2 directions x2 radii x2 tiles x2 marker thresholds=96 planned tests; BH over qualified tests, all exclusions retained",
+  "interpretation": "conditional marker-specific proximity only; not ligand receptor signaling, contact, exact R4 identity or patient-independent replication"
+}

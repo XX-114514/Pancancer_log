@@ -1,0 +1,59 @@
+"""All saved head/neck designs, scores and permutations independently replayed."""
+from pathlib import Path
+import json,hashlib,itertools,math,gzip,re,time
+import numpy as np,pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'differential_LR_GSE234933_v1';D=R/'patient_LR_headneck_design_v1';I=R/'patient_LR_v1'
+ctx=pd.read_csv(D/'patient_context_PRIVATE.tsv',sep='\t').set_index('unit');bridge=pd.read_csv(R/'patient_bridge_GEO_v2/source_verified_patient_bridge_PRIVATE.tsv',sep='\t').set_index('unit')
+raw=gzip.open(R/'sources/patient_GEO/GSE234933_family.soft.gz','rt').read();records={}
+for section in re.split(r'(?m)^\^SAMPLE = ',raw)[1:]:
+ lines=section.splitlines();records[lines[0].strip()]={}
+ for line in lines:
+  if line.startswith('!Sample_characteristics_ch1 = '):
+   k,v=line.split(' = ',1)[1].split(':',1);records[lines[0].strip()][k.lower().strip()]=v.strip()
+for unit,r in ctx.iterrows():
+ g=records[bridge.loc[unit,'gsm']];assert g['anatomic location_of_scrna-seq_specimen']==r.specimen_context_raw and g['hpv-status']==r.HPV
+ actual='distant_metastasis' if r.specimen_context_raw in {'Distant metastasis (Lung)','Distant metastasis (sternum)','Distant metastasis (skin)','Distant metastasis (pleura)','Distant metastasis (Liver)'} else {'Primary':'primary','Locoregional recurrence':'locoregional_recurrence','Unknown primary of the head and neck':'unknown_primary'}[r.specimen_context_raw]
+ assert r.context==actual and r.block==actual+'|HPV_'+r.HPV and r.source_patient_key==bridge.loc[unit,'source_patient_key'] and r.CMT==bridge.loc[unit,'CMT']
+assert len(ctx)==48 and ctx.source_patient_key.is_unique
+m=pd.read_csv(I/'unit_node_metadata_PRIVATE.tsv',sep='\t');arr=np.load(I/'expression_PRIVATE.npz');mean=arr['mean_log_expression'];det=arr['detection_fraction'];genes=pd.read_csv(I/'genes.tsv',sep='\t').gene.tolist();lookup={(r.unit,r.node):i for i,r in enumerate(m.itertuples())}
+v=pd.read_csv(O/'interaction_components.tsv',sep='\t');assert (O/'interaction_components.tsv').read_bytes()==(R/'differential_LR_CM12_GSE207493_v1/interaction_components.tsv').read_bytes()
+d=pd.read_csv(O/'patient_pair_design_PRIVATE.tsv',sep='\t');packed=np.load(O/'unit_pair_scores_PRIVATE.npz')['scores'];t=pd.read_csv(O/'differential_scores_joint.tsv.gz',sep='\t',dtype={'seed':str});feas=pd.read_csv(D/'pair_design_feasibility.tsv',sep='\t').set_index(['cm','node1','node2'])
+maxscore=0.;maxstat=0.;pcount=0;paircount=0;started=time.time()
+for pair,design in d.groupby('pair',sort=False):
+ units=design.unit.tolist();assert units==sorted(units);cm=design.cm.iloc[0];n1=design.node1.iloc[0];n2=design.node2.iloc[0];n=len(units);h=ctx.loc[units,'CMT'].eq(cm).to_numpy();blocks=ctx.loc[units,'block'].to_numpy();assert np.array_equal(h,design.high) and np.array_equal(blocks,design.block);assert ctx.loc[units,'source_patient_key'].tolist()==design.patient.tolist()
+ one=[lookup[(u,n1)] for u in units];two=[lookup[(u,n2)] for u in units];assert m.iloc[one+two].cells.ge(10).all();Y=np.zeros((n,895))
+ for j,r in enumerate(v.itertuples()):
+  ga=[genes.index(g) for g in r.partner_a_genes.split('|')];gb=[genes.index(g) for g in r.partner_b_genes.split('|')]
+  ma=np.min(mean[np.ix_(one,ga)],axis=1);mb=np.min(mean[np.ix_(two,gb)],axis=1);pa=np.min(det[np.ix_(one,ga)],axis=1);pb=np.min(det[np.ix_(two,gb)],axis=1);Y[:,j]=np.where((pa>.1)&(pb>.1)&(ma>0)&(mb>0),(ma+mb)/2,0)
+ err=np.max(abs(Y-packed[design.matrix_row]));maxscore=max(maxscore,float(err));assert err<1e-12
+ sub=t[t.cm.eq(cm)&t.node1.eq(n1)&t.node2.eq(n2)];expected={'unrestricted','context_HPV'} if feas.loc[(cm,n1,n2),'conditional_eligible'] else {'unrestricted'};assert set(sub['mode'])==expected
+ for mode,g in sub.groupby('mode',sort=False):
+  assert g.interaction.tolist()==v.interaction.tolist()
+  labels=blocks if mode=='context_HPV' else np.array(['all']*n);ixs=[np.flatnonzero(labels==s) for s in sorted(set(labels))];counts=[int(h[ix].sum()) for ix in ixs]
+  active=np.concatenate([ix for ix,k in zip(ixs,counts) if 0<k<len(ix)]);assert int(h[active].sum())==g.informative_high_patients.iloc[0] and int((~h[active]).sum())==g.informative_low_patients.iloc[0]
+  design_matrix=pd.get_dummies(labels,dtype=float).to_numpy();design_matrix=np.column_stack([design_matrix,h.astype(float)]);assert np.linalg.matrix_rank(design_matrix)==design_matrix.shape[1]
+  obs=np.linalg.lstsq(design_matrix,Y,rcond=None)[0][-1];maxstat=max(maxstat,float(np.max(abs(obs-g.contrast))));assert np.allclose(obs,g.contrast,atol=1e-11,rtol=0)
+  center=np.zeros(n)
+  for ix,k in zip(ixs,counts):center[ix]=k/len(ix)
+  denom=float(np.sum((h-center)**2));var=np.ptp(Y,axis=0)>1e-12;assert np.array_equal(var,g.variable);y=Y[:,var];baseline=center@y;threshold=abs(g.contrast.to_numpy()[var]);ncomb=math.prod(math.comb(len(ix),k) for ix,k in zip(ixs,counts));exact=ncomb<=9999;draws=ncomb if exact else 9999;assert g.assignments.eq(draws).all()
+  seed=int.from_bytes(hashlib.sha256(('2026111904|'+pair+'|'+mode).encode()).digest()[:8],'little');assert g.seed.eq(str(seed)).all();rng=np.random.default_rng(seed)
+  if exact:choice_iter=itertools.product(*[list(itertools.combinations(ix,k)) for ix,k in zip(ixs,counts)])
+  extreme=np.zeros(var.sum(),int)
+  for start in range(0,draws,64):
+   choices=[]
+   for b in range(min(64,draws-start)):
+    if exact:chosen=list(itertools.chain.from_iterable(next(choice_iter)))
+    else:
+     chosen=[]
+     for ix,k in zip(ixs,counts):
+      if k==len(ix):chosen.extend(ix)
+      elif k>0:chosen.extend(rng.choice(ix,k,replace=False))
+    choices.append(chosen)
+   total=y[np.asarray(choices,dtype=int)].sum(axis=1);stats=(total-baseline)/denom;extreme+=(abs(stats)>=threshold[None,:]-1e-12).sum(axis=0)
+  p=np.full(895,np.nan);p[var]=extreme/draws if exact else (extreme+1)/(draws+1);assert np.allclose(p,g.p,atol=1e-12,rtol=0,equal_nan=True);pcount+=int(var.sum())
+ paircount+=1
+ if paircount%25==0:print('AUDIT_PAIRS',paircount,flush=True)
+old=pd.read_csv(O/'renal_scores_joint_update.tsv.gz',sep='\t');prior=pd.read_csv(R/'differential_LR_GSE207493_joint_v1/differential_scores_joint.tsv.gz',sep='\t');assert np.allclose(old.p,prior.p,equal_nan=True);om=old.p.notna();tm=t.p.notna();pv=np.r_[old.loc[om,'p'],t.loc[tm,'p']];q=np.r_[old.loc[om,'q_joint_renal_headneck'],t.loc[tm,'q_joint_renal_headneck']];order=np.argsort(pv);expected=np.minimum.accumulate((pv[order]*len(pv)/np.arange(1,len(pv)+1))[::-1])[::-1].clip(0,1);assert np.allclose(q[order],expected,atol=1e-12)
+assert paircount==303 and pcount==int(tm.sum())
+proof=dict(status='PASS_RAW_GEO_CONTEXT_ALL_PATIENT_SCORE_CONTRAST_PERMUTATION_AND_CROSS_SOURCE_BH_REPLAY',pairs=paircount,headneck_tests=pcount,joint_tests=len(pv),joint_q05=int((q<.05).sum()),max_score_error=maxscore,max_OLS_contrast_error=maxstat,seconds=time.time()-started,score_table_sha256=hashlib.sha256((O/'differential_scores_joint.tsv.gz').read_bytes()).hexdigest(),scope='All48 GEO contexts, all303 pairs, all eligible conditional and unrestricted895interaction contrasts. Scores reconstructed from expression; observed contrasts independently fitted with dummy-block OLS; all assignments replayed with indexed sums; explicit global BH. Other clinical confounders remain; no contact or causal inference.')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

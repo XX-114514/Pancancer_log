@@ -1,0 +1,7 @@
+{
+  "scope": "all15 CMT x all44x44 ordered identity pairs x all input-complete CPDB interactions; no selection on CM membership or old significance",
+  "MC": "k=round(raw_p*1000); sensitivity p=(k+1)/1001; does not reconstruct unavailable permutation tail convention",
+  "multiplicity": "single BH across every eligible entry; raw and withinCM q preserved separately",
+  "inference": "pooled cells within each CMT; not patient-level differential LR, not causal or physical directional signaling",
+  "limitations": "input-wide component presence does not establish measured panel in each underlying source; source/cancer/patient confounding remains; comparison of q across CMT is not a differential test"
+}

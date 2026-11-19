@@ -1,0 +1,124 @@
+{
+  "UTC": "2026-11-19T05:14:16.718666+00:00",
+  "status": "CURRENT_LINKAGE_SNAPSHOT_NOT_ALL_COMPLETE",
+  "modules_pass": 14,
+  "records": [
+    {
+      "cm": "CM01",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 9,
+      "sampled_gene_comparisons": 207,
+      "matched_files": 18,
+      "audit_sha256": "b3c23f482e57047472e689cdca9c06f5843c8706740a64290c1f4d716fa8116b"
+    },
+    {
+      "cm": "CM02",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 7,
+      "sampled_gene_comparisons": 161,
+      "matched_files": 14,
+      "audit_sha256": "157021e7adbae3c9e33b4a2bbee50d46f0095444f3f6cb49ae64ec0dd6815e4b"
+    },
+    {
+      "cm": "CM03",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 7,
+      "sampled_gene_comparisons": 161,
+      "matched_files": 14,
+      "audit_sha256": "527ee22454e90e606379ff64a630bf27bca68d274bfcbba1dac049fc35ab9758"
+    },
+    {
+      "cm": "CM04",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 11,
+      "sampled_gene_comparisons": 253,
+      "matched_files": 20,
+      "audit_sha256": "7773678b5416a32b204f5d6e49237531448bd242e9d26f6db39d1a010e99887a"
+    },
+    {
+      "cm": "CM05",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 8,
+      "sampled_gene_comparisons": 184,
+      "matched_files": 16,
+      "audit_sha256": "bb89c64790eae608be6947b1d0979f06291716ae53d0882c26348eb1c2551b73"
+    },
+    {
+      "cm": "CM06",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 10,
+      "sampled_gene_comparisons": 230,
+      "matched_files": 20,
+      "audit_sha256": "8df021a2eb6d10e62cf9f3ca9c263da53961000941ddc1d7c1a988311d10eca6"
+    },
+    {
+      "cm": "CM07",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 9,
+      "sampled_gene_comparisons": 207,
+      "matched_files": 18,
+      "audit_sha256": "6fe91c6e1f46993bf86ed3138fcb823dfd3641c76d21c80f63865c54aeca1d1c"
+    },
+    {
+      "cm": "CM08",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 10,
+      "sampled_gene_comparisons": 230,
+      "matched_files": 13,
+      "audit_sha256": "e2223b6defb7b293427001cbbb2af4b9e0606cc07b0da69a9ee2898217abb84f"
+    },
+    {
+      "cm": "CM09",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 8,
+      "sampled_gene_comparisons": 184,
+      "matched_files": 16,
+      "audit_sha256": "a602c5cca06bbee4cf4e9ea44c865e79e09c2e0a5a945f76ea64b3d0835eee60"
+    },
+    {
+      "cm": "CM10",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 10,
+      "sampled_gene_comparisons": 230,
+      "matched_files": 20,
+      "audit_sha256": "f56650a664c98d7612f21fbab5e3f8e2e693a75915084be1a10ea6565fb89a33"
+    },
+    {
+      "cm": "CM11",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 7,
+      "sampled_gene_comparisons": 161,
+      "matched_files": 14,
+      "audit_sha256": "375b24679fe9dd7ef262824f70240e9e9360ba4d30aca42e649790f2d0a411df"
+    },
+    {
+      "cm": "CM12",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 11,
+      "sampled_gene_comparisons": 253,
+      "matched_files": 22,
+      "audit_sha256": "5001be5aeb0271e9b2e96a5f9fa4d06c7db318afc0807c262b9b84735a76ac5f"
+    },
+    {
+      "cm": "CM13",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 9,
+      "sampled_gene_comparisons": 207,
+      "matched_files": 15,
+      "audit_sha256": "569761771d7f50ae146278a2d9fe11fb310d20dd8aadb4c5dcb22f06c7b694f8"
+    },
+    {
+      "cm": "CM14",
+      "status": "PASS_SOURCE_HASHES_AND_UPSTREAM_AUDIT_LINKAGE",
+      "members": 12,
+      "sampled_gene_comparisons": 276,
+      "matched_files": 23,
+      "audit_sha256": "0ea933365a6e5b142131b636f5fea1cda98cdb2a6ccec96663dca69f2f9bb2c0"
+    },
+    {
+      "cm": "CM15",
+      "status": "PENDING_UPSTREAM_AUDIT"
+    }
+  ],
+  "scope": "Actual input SHA verification and existing upstream audit linkage; original Welch/HC3 numeric replay remains restricted to fixed genes, not all genes or verified patients."
+}

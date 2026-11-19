@@ -1,0 +1,11 @@
+core_module	source_identity	target_identity	focal_significant	focal_shared_with_other	focal_only_significant	all15_shared_significant	any_CMT_significant	median_descriptive_Jaccard_to_other	interpretation
+CM01	Endo_venous_ACKR1	Str_Fib_PI16	77	77	0	22	184	0.63073317710077	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM01	Str_Fib_PI16	Endo_venous_ACKR1	128	127	1	68	215	0.765914585012087	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM04	Endo_arterial_GJA5	Str_SMC_MYH11	47	46	1	27	107	0.651201923076923	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM04	Str_SMC_MYH11	Endo_arterial_GJA5	67	66	1	28	139	0.46983739837398375	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM12	Endo_tip_ESM1	Mye_Mac_FOLR2	69	66	3	31	105	0.776701400195376	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM12	Endo_tip_ESM1	Str_Pericyte_RGS5	78	77	1	42	136	0.779801559177888	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM12	Mye_Mac_FOLR2	Endo_tip_ESM1	51	51	0	20	109	0.7236074270557029	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM12	Mye_Mac_FOLR2	Str_Pericyte_RGS5	42	42	0	22	88	0.7009084556254368	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM12	Str_Pericyte_RGS5	Endo_tip_ESM1	108	108	0	54	160	0.7800179211469533	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof
+CM12	Str_Pericyte_RGS5	Mye_Mac_FOLR2	64	64	0	31	88	0.777391304347826	set overlap of q-thresholded entries, NOT statistical differential communication or specificity proof

@@ -1,0 +1,14 @@
+"""Descriptive fixed-direction, within-response-group patient bootstrap."""
+from pathlib import Path
+import json
+import numpy as np,pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates/hugo_response_v1')
+assert json.loads((R/'independent_audit.json').read_text())['status'].startswith('PASS_')
+s=pd.read_csv(R/'scores_PRIVATE.tsv',sep='\t');a=pd.read_csv(R/'response_associations.tsv',sep='\t');rows=[]
+for (policy,branch,cm),g in s.groupby(['policy','branch','cm']):
+ pos=g.loc[g.response.eq(1),'score'].to_numpy();neg=g.loc[g.response.eq(0),'score'].to_numpy();pair=(pos[:,None]>neg).astype(float)+.5*(pos[:,None]==neg)
+ rng=np.random.default_rng(2026111818);i=rng.integers(len(pos),size=(5000,len(pos)));j=rng.integers(len(neg),size=(5000,len(neg)));bs=pair[i[:,:,None],j[:,None,:]].mean(axis=(1,2));lo,hi=np.quantile(bs,[.025,.975])
+ rows.append(dict(policy=policy,branch=branch,cm=cm,auc_bootstrap_low=lo,auc_bootstrap_high=hi))
+a.merge(pd.DataFrame(rows),on=['policy','branch','cm'],validate='one_to_one').to_csv(R/'response_with_descriptive_CI.tsv',sep='\t',index=False)
+(R/'bootstrap_method.json').write_text(json.dumps(dict(seed=2026111818,replicates=5000,method='resample patients within each response class; percentile 95% CI for frozen-direction empirical AUC',limitations='descriptive uncertainty, not cross-validated discrimination; ignores gene-score standardization uncertainty and does not prove generalization'),indent=2))
+print('DESCRIPTIVE_AUC_INTERVALS_WRITTEN')

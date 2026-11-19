@@ -1,0 +1,54 @@
+"""Purity-conditioned rank associations; sensitivity, not causal adjustment."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+from scipy.stats import rankdata,t,spearmanr
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=R/'bulk_R4_candidates';O=B/'TCGA_leukocyte_purity_v3_nonredacted';O.mkdir(exist_ok=False)
+plan=dict(status='FROZEN_BEFORE_PURITY_ASSOCIATIONS',purity_rule='call status exactly called, finite 0<purity<=1, unique array sample15, exact SNP6 aliquot in official quality file with all flags False; no fallback for noncanonical IDs',
+ models=['purity','purity_age_sex'],cohort='QC_v3 LF cohort, complete cases separately per model; no survival filter',
+ method='rank score and LF; regress both ranks on intercept, rank purity (+ rank age and binary sex); correlate residuals; t approximation df=n-rank(design)-1',
+ sample_min=30,sex='MALE/FEMALE only; omit constant covariates; age 0-120',
+ family='BH jointly across prior QC_v3 unadjusted tests and both new models, both branches and LF policies; matched-cohort unadjusted rho descriptive only',
+ interpretation='conditional descriptive sensitivity; purity and immune fractions are compositionally coupled, adjustment may remove biology or introduce selection/collider bias; not causal effect, independent biomarker or clinical validation')
+(O/'plan.json').open('x').write(json.dumps(plan,indent=2))
+paths=R/'sources/panimmune';pp=paths/'TCGA_mastercalls.abs_tables_JSedit.fixed.txt'
+assert hashlib.sha256(pp.read_bytes()).hexdigest()=='f430a975433d82e0098d7405619d4f12a0c765fcd97e7d63cc9b1de7f2d763cd'
+p=pd.read_csv(pp,sep='\t',dtype=str,keep_default_na=False);assert p['array'].is_unique
+p['canonical_array']=p['array'].str.match(r'^TCGA-[A-Z0-9]{2}-[A-Z0-9]{4}-[0-9]{2}$')
+q=pd.read_csv(paths/'sample_quality.tsv',sep='\t',dtype=str,keep_default_na=False);q=q[q.platform.eq('Genome_Wide_SNP_6')]
+flags=q.groupby('aliquot_barcode').Do_not_use.agg(lambda a:bool((a=='False').all()))
+p['purity_numeric']=pd.to_numeric(p.purity,errors='coerce');p['SNP6_exact_quality_pass']=p['sample'].map(flags).eq(True)
+p['eligible']=p.canonical_array&p['call status'].eq('called')&p.purity_numeric.gt(0)&p.purity_numeric.le(1)&p.SNP6_exact_quality_pass
+p.to_csv(O/'purity_input_audit_PRIVATE.tsv.gz',sep='\t',index=False)
+prior=B/'TCGA_leukocyte_association_QC_v4_nonredacted';assert json.loads((prior/'independent_audit.json').read_text())['status'].startswith('PASS_')
+c=pd.read_csv(prior/'sample_bridge_PRIVATE.tsv.gz',sep='\t');assert c['sample'].is_unique
+p=p.set_index('array');c['purity']=c['sample'].map(p.loc[p.eligible,'purity_numeric'])
+d=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t').set_index('sample');assert d.index.is_unique
+c['age']=pd.to_numeric(c['sample'].map(d.age_at_initial_pathologic_diagnosis),errors='coerce');c.loc[~c.age.between(0,120),'age']=np.nan
+c['sex']=c['sample'].map(d.gender).map({'MALE':1.,'FEMALE':0.})
+c.to_csv(O/'analysis_bridge_PRIVATE.tsv.gz',sep='\t',index=False)
+s=pd.read_csv(B/'TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz',sep='\t').merge(c[['sample','LF_single','LF_median','purity','age','sex']],on='sample',validate='many_to_one')
+rows=[]
+for (cancer,branch,cm),g in s.groupby(['cancer','branch','cm']):
+ for policy in ['LF_single','LF_median']:
+  for model,covars in [('purity',['purity']),('purity_age_sex',['purity','age','sex'])]:
+   z=g[['score',policy]+covars].dropna();n=len(z);row=dict(cancer=cancer,branch=branch,cm=cm,policy=policy,model=model,patients=n,status='INSUFFICIENT_OR_CONSTANT',partial_rho=np.nan,p=np.nan,matched_unadjusted_rho=np.nan,design_rank=np.nan,df=np.nan)
+   if n>=30 and z.score.nunique()>1 and z[policy].nunique()>1:
+    columns=[np.ones(n)]+[z[v].to_numpy() if v=='sex' else rankdata(z[v]) for v in covars if z[v].nunique()>1]
+    C=np.column_stack(columns);rank=np.linalg.matrix_rank(C);df=n-rank-1
+    if rank==C.shape[1] and df>0:
+     Y=np.column_stack([rankdata(z.score),rankdata(z[policy])]);res=Y-C@np.linalg.lstsq(C,Y,rcond=None)[0]
+     den=np.linalg.norm(res[:,0])*np.linalg.norm(res[:,1])
+     if den>1e-10:
+      rho=float(np.clip(res[:,0]@res[:,1]/den,-1,1));pv=float(2*t.sf(abs(rho)*np.sqrt(df/max(1-rho*rho,1e-15)),df))
+      row.update(status='ASSESSED',partial_rho=rho,p=pv,matched_unadjusted_rho=float(spearmanr(z.score,z[policy]).statistic),design_rank=rank,df=df)
+   rows.append(row)
+a=pd.DataFrame(rows);old=pd.read_csv(prior/'associations.tsv',sep='\t');newmask=a.p.notna();oldmask=old.p.notna();values=np.r_[old.loc[oldmask,'p'],a.loc[newmask,'p']]
+adjusted=multipletests(values,method='fdr_bh')[1];old['q_joint_with_purity_models']=np.nan;a['q_joint_with_unadjusted']=np.nan
+old.loc[oldmask,'q_joint_with_purity_models']=adjusted[:oldmask.sum()];a.loc[newmask,'q_joint_with_unadjusted']=adjusted[oldmask.sum():]
+a.to_csv(O/'adjusted_associations.tsv',sep='\t',index=False);old.to_csv(O/'prior_associations_joint_q.tsv',sep='\t',index=False)
+c.groupby('cancer').agg(scored_patients=('sample','size'),purity_matched=('purity','count')).to_csv(O/'coverage.tsv',sep='\t')
+proof=dict(status='PURITY_SENSITIVITY_PENDING_INDEPENDENT_AUDIT',purity_input_rows=len(p),purity_input_eligible=int(p.eligible.sum()),scored_patients=len(c),scored_purity_matched=int(c.purity.notna().sum()),new_tests=int(newmask.sum()),joint_tests=len(values),limitations=plan['interpretation'])
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))
+print(a[(a.cm=='CM12')&(a.branch=='original_network_members')&(a.policy=='LF_single')&(a.model=='purity_age_sex')][['cancer','patients','matched_unadjusted_rho','partial_rho','q_joint_with_unadjusted']].to_string(index=False))

@@ -1,0 +1,29 @@
+from pathlib import Path
+import re,gzip,json,hashlib
+import pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'patient_bridge_GEO_v2';d=pd.read_csv(O/'source_verified_patient_bridge_PRIVATE.tsv',sep='\t');u=pd.read_csv(R/'patient_bridge_v1/unit_patient_bridge_PRIVATE.tsv',sep='\t').set_index('unit');n=0;unresolved=[]
+for source,g in d.groupby('source'):
+ blob=(R/'sources/patient_GEO'/(source+'_family.soft.gz')).read_bytes();assert g.source_sha256.eq(hashlib.sha256(blob).hexdigest()).all();text=gzip.decompress(blob).decode();lookup={}
+ for block in re.split(r'^\^SAMPLE = ',text,flags=re.M)[1:]:
+  gsm=block.splitlines()[0];title=re.search(r'^!Sample_title = (.+)$',block,re.M).group(1)
+  if source=='GSE149614':key=title;patient=re.search(r'^!Sample_characteristics_ch1 = patient: (.+)$',block,re.M).group(1)
+  elif source=='GSE234933':
+   patient=re.search(r'^!Sample_characteristics_ch1 = subject: patient (.+)$',block,re.M).group(1);key=patient;assert title.endswith('patient '+patient)
+  else:
+   if not title.startswith('scRNA-seq_'):continue
+   key=title[len('scRNA-seq_'):];patient=key
+  assert key not in lookup;lookup[key]=(gsm,title,patient)
+ if source=='GSE207493':assert len(lookup)==19 and 'ccRCC samples from 19 patients were used for both single-cell RNA sequencing and single-cell ATAC sequencing' in text
+ for row in g.itertuples():
+  prefix,key=row.unit.split('|',1);assert prefix==source and u.loc[row.unit,'native_patient_ids']==row.native_patient_id
+  if key not in lookup:
+   assert not row.patient_identity_source_verified and pd.isna(row.source_patient_key);unresolved.append(row.unit);continue
+  gsm,title,patient=lookup[key];assert row.patient_identity_source_verified and (row.gsm,row.GEO_title,row.GEO_patient)==(gsm,title,patient)
+  assert row.source_patient_key==source+'||'+patient and row.native_patient_id==source+':'+patient;n+=1
+assert n==80 and len(unresolved)==4
+proof=dict(status='PASS_ALL_84_NATIVE_UNIT_GEO_RECORDS_WITH_80_EXACT_PATIENT_BRIDGES_AND_4_EXPLICIT_UNRESOLVED',verified_units=n,unresolved_units=len(unresolved),source_specific_evidence='sample patient/subject characteristics for GSE149614/GSE234933; series design plus unique scRNA labels for GSE207493',bridge_sha256=hashlib.sha256((O/'source_verified_patient_bridge_PRIVATE.tsv').read_bytes()).hexdigest(),limitation='not permission to drop suffixes or treat repeated samples as independent')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2))
+c=json.loads((O/'complete.json').read_text())
+for item in c['sources']:
+ item['GEO_records_parsed']=item.pop('GEO_matched_sample_records',item.get('GEO_records_parsed'));item['R4_units_considered']=item.pop('R4_units_matched',item.get('R4_units_considered'));v=d[d.source.eq(item['source'])];item['R4_units_exact_matched']=int(v.patient_identity_source_verified.sum());item['R4_units_unresolved']=int((~v.patient_identity_source_verified).sum())
+(O/'complete.json').write_text(json.dumps(c,indent=2));print(json.dumps(proof))

@@ -1,0 +1,57 @@
+suppressPackageStartupMessages(library(survival))
+suppressPackageStartupMessages(library(jsonlite))
+root <- '${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/bulk_R4_candidates/TCGA_survival_v1_nonredacted'
+stopifnot(file.exists(file.path(root,'input_complete.json')), !file.exists(file.path(root,'associations.tsv')))
+clinical <- read.delim(file.path(root,'clinical_PRIVATE.tsv'),check.names=FALSE,stringsAsFactors=FALSE)
+scores <- read.delim(gzfile(file.path(root,'scores_PRIVATE.tsv.gz')),check.names=FALSE,stringsAsFactors=FALSE)
+rec <- read.delim(file.path(root,'endpoint_recommendations.tsv'),stringsAsFactors=FALSE)
+models <- list(base=c('age10','sex'),stage=c('age10','sex','stage_late'),composition=c('age10','sex','purity10','LF10'),stage_composition=c('age10','sex','stage_late','purity10','LF10'))
+stopifnot(!anyDuplicated(clinical$sample),!anyDuplicated(clinical$patient))
+out <- list();termsout <- list();phout <- list();counter <- 0L
+for(cancer in sort(unique(scores$cancer))) {
+ for(branch in sort(unique(scores$branch))) for(cm in sort(unique(scores$cm))) {
+  gs <- scores[scores$cancer==cancer & scores$branch==branch & scores$cm==cm,]
+  g <- clinical[match(gs$sample,clinical$sample),];stopifnot(all(g$sample==gs$sample));g$score_sd <- gs$score_sd
+  for(endpoint in c('OS','PFI')) for(model in names(models)) {
+   counter <- counter+1L; id <- paste(cancer,branch,cm,endpoint,model,sep='__')
+   row <- data.frame(id=id,cancer=cancer,branch=branch,cm=cm,endpoint=endpoint,model=model,patients=0L,events=0L,coefficients=0L,columns='',omitted_constants='',status='NOT_RUN',warnings='',beta=NA_real_,se=NA_real_,HR=NA_real_,CI_low=NA_real_,CI_high=NA_real_,p=NA_real_,loglik=NA_real_,iterations=NA_integer_,ph_score_p=NA_real_,ph_global_p=NA_real_,ph_status='NOT_RUN',stringsAsFactors=FALSE)
+   permit <- rec$primary_endpoint_permitted[rec$cancer==cancer & rec$endpoint==endpoint]
+   if(length(permit)!=1 || !as.character(permit) %in% c('True','TRUE')) {row$status <- 'ENDPOINT_NOT_PRIMARY_RECOMMENDED';out[[counter]]<-row;next}
+   g$time <- suppressWarnings(as.numeric(g[[paste0(endpoint,'.time')]]));g$event <- suppressWarnings(as.numeric(g[[endpoint]]))
+   fields <- c('time','event','score_sd',models[[model]])
+   ok <- complete.cases(g[,fields,drop=FALSE]) & g$time>0 & g$event %in% c(0,1)
+   z <- g[ok,,drop=FALSE];row$patients<-nrow(z);row$events<-sum(z$event)
+   cols <- c('score_sd',models[[model]]);constant <- cols[vapply(cols,function(k) length(unique(z[[k]]))<=1,logical(1))]
+   row$omitted_constants <- paste(constant,collapse='|');cols <- setdiff(cols,constant);row$columns<-paste(cols,collapse='|');row$coefficients<-length(cols)
+   if(nrow(z)<100 || row$events<max(30,10*length(cols))) {row$status<-'INSUFFICIENT_PATIENTS_OR_EVENTS';out[[counter]]<-row;next}
+   if('score_sd' %in% constant) {row$status<-'CONSTANT_SCORE';out[[counter]]<-row;next}
+   if(any(!is.finite(as.matrix(z[,fields,drop=FALSE])))) {row$status<-'NONFINITE_INPUT';out[[counter]]<-row;next}
+   X <- cbind(1,as.matrix(z[,cols,drop=FALSE]))
+   if(qr(X)$rank<ncol(X) || kappa(X)>1e8) {row$status<-'RANK_DEFICIENT_OR_ILL_CONDITIONED';out[[counter]]<-row;next}
+   warns <- character();failure <- NULL
+   fit <- tryCatch(withCallingHandlers(coxph(as.formula(paste('Surv(time,event) ~',paste(cols,collapse='+'))),data=z,ties='efron',robust=FALSE,singular.ok=FALSE,x=TRUE,y=TRUE,model=TRUE,control=coxph.control(iter.max=100,eps=1e-9)),warning=function(w){warns<<-c(warns,conditionMessage(w));invokeRestart('muffleWarning')}),error=function(e){failure<<-conditionMessage(e);NULL})
+   row$warnings <- paste(c(warns,failure),collapse='; ')
+   if(is.null(fit)||length(warns)>0) {row$status<-'FIT_ERROR_OR_WARNING';out[[counter]]<-row;next}
+   co <- coef(fit);se <- sqrt(diag(vcov(fit)))
+   if(any(!is.finite(c(co,se,fit$loglik))) || any(se<=0) || fit$iter>=100) {row$status<-'NONFINITE_OR_NONCONVERGED';out[[counter]]<-row;next}
+   row$status<-'FIT_OK';row$beta<-co['score_sd'];row$se<-se['score_sd'];row$HR<-exp(row$beta);row$CI_low<-exp(row$beta-qnorm(.975)*row$se);row$CI_high<-exp(row$beta+qnorm(.975)*row$se);row$p<-2*pnorm(-abs(row$beta/row$se));row$loglik<-tail(fit$loglik,1);row$iterations<-fit$iter
+   termsout[[length(termsout)+1L]]<-data.frame(id=id,term=names(co),beta=as.numeric(co),se=as.numeric(se),p=2*pnorm(-abs(co/se)),stringsAsFactors=FALSE)
+   pherror<-NULL
+   ph<-tryCatch(cox.zph(fit,transform='km',terms=TRUE,global=TRUE),error=function(e){pherror<<-conditionMessage(e);NULL})
+   if(is.null(ph)){row$ph_status<-'FAILED';row$warnings<-paste(row$warnings,pherror)} else {
+    row$ph_status<-'CHECKED';row$ph_score_p<-ph$table['score_sd','p'];row$ph_global_p<-ph$table['GLOBAL','p']
+    phout[[length(phout)+1L]]<-data.frame(id=id,term=rownames(ph$table),chisq=ph$table[,'chisq'],df=ph$table[,'df'],p=ph$table[,'p'],stringsAsFactors=FALSE)
+   }
+   out[[counter]]<-row
+  }
+ }
+ cat(cancer,'completed',counter,'planned combinations\n');flush.console()
+ write_json(list(stage='running',cancer=cancer,combinations=counter,pid=Sys.getpid()),file.path(root,'progress.json'),auto_unbox=TRUE)
+}
+a<-do.call(rbind,out);a$q_all_survival_models<-NA_real_;valid<-is.finite(a$p);a$q_all_survival_models[valid]<-p.adjust(a$p[valid],'BH')
+a$PH_score_nominal_flag<-a$ph_score_p<.05;a$PH_global_nominal_flag<-a$ph_global_p<.05
+write.table(a,file.path(root,'associations.tsv'),sep='\t',row.names=FALSE,quote=FALSE,na='NA')
+co<-do.call(rbind,termsout);write.table(co,file.path(root,'all_coefficients.tsv'),sep='\t',row.names=FALSE,quote=FALSE,na='NA')
+ph<-do.call(rbind,phout);ph$q_all_PH_diagnostics<-p.adjust(ph$p,'BH');write.table(ph,file.path(root,'PH_diagnostics.tsv'),sep='\t',row.names=FALSE,quote=FALSE,na='NA')
+write_json(list(status='COX_MODELS_AND_PH_DIAGNOSTICS_WRITTEN_PENDING_INDEPENDENT_AUDIT',survival_version=as.character(packageVersion('survival')),R=R.version.string,planned_combinations=nrow(a),successful_models=sum(valid),status_counts=as.list(table(a$status)),association_q05=sum(a$q_all_survival_models<.05,na.rm=TRUE),PH_tests=nrow(ph),PH_global_nominal_flags=sum(a$PH_global_nominal_flag,na.rm=TRUE),limitations='exploratory associations; no external validation or predictive performance; PH flag means constant HR requires caution'),file.path(root,'complete.json'),pretty=TRUE,auto_unbox=TRUE)
+cat('ALL_MODELS_WRITTEN\n')

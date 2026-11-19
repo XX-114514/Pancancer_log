@@ -1,0 +1,26 @@
+from pathlib import Path
+import zipfile,json,hashlib
+import pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'differential_LR_CM12_GSE207493_v1'
+with zipfile.ZipFile(R/'sources/cellphonedb_v4.1.0.zip') as z:
+ g=pd.read_csv(z.open('gene_table.csv'));p=pd.read_csv(z.open('protein_table.csv')).set_index('protein_multidata_id');c=pd.read_csv(z.open('complex_composition_table.csv'));inter=pd.read_csv(z.open('interaction_table.csv')).set_index('id_cp_interaction')
+available=set(pd.read_csv(R/'patient_LR_v1/genes.tsv',sep='\t').gene)
+def symbols(mid):
+ ids=[p.loc[mid,'id_protein']] if mid in p.index else p.loc[c.loc[c.complex_multidata_id.eq(mid),'protein_multidata_id'],'id_protein'].tolist()
+ assert len(ids)>0
+ result=[]
+ for ident in ids:
+  names=set(g.loc[g.protein_id.eq(ident),'hgnc_symbol']) & available
+  if len(names)!=1:return None
+  result.extend(names)
+ return sorted(result)
+expected={}
+for ident,row in inter.iterrows():
+ a=symbols(row.multidata_1_id);b=symbols(row.multidata_2_id)
+ if a is not None and b is not None:expected[ident]=(a,b)
+v=pd.read_csv(O/'interaction_components.tsv',sep='\t');assert set(v.interaction)==set(expected)
+for r in v.itertuples():
+ assert (sorted(r.partner_a_genes.split('|')),sorted(r.partner_b_genes.split('|')))==expected[r.interaction]
+ assert r.partner_a==inter.loc[r.interaction,'multidata_1_id'] and r.partner_b==inter.loc[r.interaction,'multidata_2_id']
+proof=dict(status='PASS_ALL_COMPONENTS_FROM_RAW_DATABASE',complete_interactions=len(expected),database_sha256=hashlib.sha256((R/'sources/cellphonedb_v4.1.0.zip').read_bytes()).hexdigest())
+(O/'component_independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

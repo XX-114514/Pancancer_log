@@ -1,0 +1,43 @@
+"""Freeze and compute outcome-blind, within-cancer mean-gene-z candidate scores."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/TCGA_scores_nonredacted_v2';O.mkdir(exist_ok=False)
+assert json.loads((O.parent/'TCGA_expression_independent_audit.json').read_text())['status'].startswith('PASS_')
+plan=dict(status='SCORING_FROZEN_BEFORE_CLINICAL_ASSOCIATION',cohort='primary tumour samples with exact clinical cancer and patient keys; do not require survival follow-up',
+          min_samples_per_cancer=30,min_variable_mapped_genes_per_signature=48,
+          scoring='mean of within-cancer gene z-scores on log2(TPM+.001), sample SD ddof=1; same unweighted scoring recipe as previous local TCGA pipeline',
+          branches=['original_network_members','all_W_nodes_previous_recipe'],modules=15,
+          weights='frozen gene loadings used for gene selection, not clinical-score weighting',
+          interpretation='cohort-relative composition-associated candidates, not cell fractions or a trained clinical predictor',
+          no_outcome_selection=True,no_median_split=True,redaction='exclude clinical Redacted before within-cancer gene standardization; previous v1 superseded')
+(O/'plan.json').open('x').write(json.dumps(plan,indent=2))
+a=ad.read_h5ad(O.parent/'TCGA_candidate_expression_PRIVATE.h5ad');d=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t').set_index('sample')
+assert a.obs_names.equals(d.index);sigs=pd.read_csv(O.parent/'candidate_signatures.tsv',sep='\t')
+assert set(d.Redaction.dropna())=={'Redacted'}
+redacted=d.Redaction.eq('Redacted');eligible=d.primary_tumor&d.clinical_matched&~redacted;counts=d.loc[eligible,'_PATIENT'].value_counts();duplicate=d._PATIENT.map(counts).fillna(0)>1
+eligible&=~duplicate;results=[];coverage=[];params=[]
+for cancer,g in d[eligible].groupby('cancer type abbreviation'):
+ idx=a.obs_names.get_indexer(g.index);assert (idx>=0).all()
+ if len(idx)<30:
+  coverage.append(dict(cancer=cancer,branch='all',cm='all',samples=len(idx),status='UNASSESSABLE_FEWER_THAN_30_SAMPLES'));continue
+ X=a.X[idx].astype(np.float64);mu=X.mean(axis=0);sd=X.std(axis=0,ddof=1);valid=sd>1e-8
+ Z=np.divide(X-mu,sd,out=np.zeros_like(X),where=valid)
+ params.extend(dict(cancer=cancer,gene=gene,mean=float(mu[i]),sd=float(sd[i]),variable=bool(valid[i]),samples=len(idx)) for i,gene in enumerate(a.var_names))
+ for (branch,cm),s in sigs.groupby(['branch','cm']):
+  cols=a.var_names.get_indexer(s.gene);cols=cols[cols>=0];cols=cols[valid[cols]]
+  status='SCORED' if len(cols)>=48 else 'UNASSESSABLE_FEWER_THAN_48_VARIABLE_MAPPED_GENES'
+  coverage.append(dict(cancer=cancer,branch=branch,cm=cm,samples=len(idx),mapped_variable_genes=len(cols),status=status))
+  score=Z[:,cols].mean(axis=1) if status=='SCORED' else np.full(len(idx),np.nan)
+  if status=='SCORED':assert abs(score.mean())<1e-10
+  results.extend(dict(sample=sample,patient=g.loc[sample,'_PATIENT'],cancer=cancer,branch=branch,cm=cm,score=float(value)) for sample,value in zip(g.index,score))
+table=pd.DataFrame(results);assert not table.duplicated(['sample','branch','cm']).any()
+table.to_csv(O/'scores_PRIVATE.tsv.gz',sep='\t',index=False)
+pd.DataFrame(coverage).to_csv(O/'score_coverage.tsv',sep='\t',index=False)
+pd.DataFrame(params).to_csv(O/'gene_standardization_parameters.tsv.gz',sep='\t',index=False)
+proof=dict(redacted_primary_excluded=int((d.primary_tumor&d.clinical_matched&redacted).sum()),status='TCGA_R4_SCORES_WRITTEN_PENDING_INDEPENDENT_REPLAY',samples=table['sample'].nunique(),patients=table.patient.nunique(),cancers=table.cancer.nunique(),
+           score_rows=len(table),finite_scores=int(np.isfinite(table.score).sum()),primary_clinical_samples_before_duplicate_filter=int((d.primary_tumor&d.clinical_matched).sum()),duplicate_patient_rows_excluded=int((eligible|duplicate)[duplicate].sum()),
+           signatures_sha256=hashlib.sha256((O.parent/'candidate_signatures.tsv').read_bytes()).hexdigest(),
+           expression_sha256=json.loads((O.parent/'TCGA_expression_independent_audit.json').read_text())['expression_sha256'],
+           limitations='score computation only; inherited-label mixture tests are not patient/source-independent validation; full CM scores can reflect immune composition; no clinical association or prediction claimed')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

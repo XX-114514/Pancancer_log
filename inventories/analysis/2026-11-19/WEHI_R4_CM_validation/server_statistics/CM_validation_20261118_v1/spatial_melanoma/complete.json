@@ -1,0 +1,9 @@
+{
+  "status": "PASS_FULL_NATIVE_COUNTS_AND_COORDINATE_REPLAY",
+  "sections": 8,
+  "spots": 2345,
+  "prior_use": "Existing 20260904_melanoma_cm_v1 script and run directory: previously explored data, not untouched validation",
+  "candidate_use": "R4 reanalysis for cross-tissue spatial robustness; independent patient identity and tissue annotations pending",
+  "clinical_endpoint": "Not established; do not infer treatment timing or response from previous harmonizer defaults",
+  "limitations": "spot-level mixed expression; marker coverage alone does not establish cell identities, colocalization, or module activity"
+}

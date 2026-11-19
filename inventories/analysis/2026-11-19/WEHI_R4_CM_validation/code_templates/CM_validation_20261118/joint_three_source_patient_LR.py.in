@@ -1,0 +1,21 @@
+"""Joint multiplicity ledger, preserving separate source/context estimands."""
+from pathlib import Path
+import json,hashlib
+import pandas as pd,numpy as np
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'differential_LR_three_source_joint_v1';O.mkdir(exist_ok=False)
+head=R/'differential_LR_GSE234933_v1';liver=R/'differential_LR_CM12_GSE149614_primary_v1'
+for d in [head,liver]:assert json.loads((d/'independent_audit.json').read_text())['status'].startswith('PASS_')
+assert json.loads((liver/'component_independent_audit.json').read_text())['status'].startswith('PASS_')
+paths=[head/'differential_scores_joint.tsv.gz',head/'renal_scores_joint_update.tsv.gz',liver/'differential_scores.tsv.gz'];frames=[];hashes={}
+for p in paths:
+ t=pd.read_csv(p,sep='\t');hashes[str(p)]=hashlib.sha256(p.read_bytes()).hexdigest()
+ if p.parent==liver:t['mode']='primary_tumour_unrestricted'
+ if 'contrast' not in t:t['contrast']=t.high_minus_low
+ cols=['source','cm','node1','node2','mode','interaction','patients','high_patients','low_patients','contrast','p','permutation_mode','assignments'];frames.append(t[cols])
+t=pd.concat(frames,ignore_index=True);assert not t.duplicated(['source','cm','node1','node2','mode','interaction']).any();mask=t.p.notna();pv=t.loc[mask,'p'].to_numpy();assert len(pv)==45821
+q=multipletests(pv,method='fdr_bh')[1];order=np.argsort(pv);expected=np.minimum.accumulate((pv[order]*len(pv)/np.arange(1,len(pv)+1))[::-1])[::-1].clip(0,1);assert np.allclose(q[order],expected,atol=1e-12)
+t['q_three_source_all_tested_modes']=np.nan;t.loc[mask,'q_three_source_all_tested_modes']=q;t.to_csv(O/'joint_tests.tsv.gz',sep='\t',index=False)
+s=t.groupby(['source','cm','mode']).agg(interaction_pair_rows=('interaction','size'),tested_variable_scores=('p','count'),minimum_p=('p','min'),minimum_q=('q_three_source_all_tested_modes','min'));s['q05']=t.assign(sig=t.q_three_source_all_tested_modes.lt(.05)).groupby(['source','cm','mode']).sig.sum();s.to_csv(O/'source_module_summary.tsv',sep='\t')
+proof=dict(status='JOINT_BH_COMPLETE_WITH_INDEPENDENT_SORTED_REPLAY_ALL_THREE_INPUT_ANALYSES_AUDITED',sources=3,total_rows=len(t),variable_tests=int(mask.sum()),q05=int((q<.05).sum()),input_hashes=hashes,interpretation='All qualified tests from three currently source-verified datasets, keeping source-specific estimands. No pooled biological contrast. Includes headneck context/HPV primary and unrestricted sensitivity, renal unrestricted, liver primary-tumour-only. Exact/MonteCarlo limitations retained; four unresolved headneck units excluded; liver repeated tissues not independent.',core_axis='ESM1-RGS5 CM12 pair qualified only in renal9high10low. No eligible liver or headneck core-axis differential validation; other CM12 pairs cannot substitute.',remaining='Not a global correction across all original sources; unverified sources and remaining CPDB modules are separate pending work. No-significance does not establish absence or equivalence.')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

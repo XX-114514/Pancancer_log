@@ -1,0 +1,25 @@
+from pathlib import Path
+import pandas as pd,numpy as np,json,hashlib,time
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1';S=B/'w2o_annotation_r4_covarnet_k15_20261115_v1'
+(R/'inputs').mkdir(exist_ok=True)
+def canon(x):
+ x=str(x);x=x[5:] if x.startswith('unit:') else x
+ return str(int(x)) if x.isdigit() else x
+m=pd.read_csv(R/'R4_CMT_metadata_PRIVATE.tsv',sep='\t',index_col=0,dtype={'unit':str});m.index=m.index.map(canon);assert m.index.is_unique
+expected=pd.read_csv(S/'covarnet/refined_counts.tsv',sep='\t',index_col=0,dtype={'unit_id':str});expected.index=expected.index.map(canon)
+over=pd.read_csv(S/'annotation/plasma_r4_subtypes.tsv.gz',sep='\t',usecols=['cell_id','refined_name']).set_index('cell_id');assert over.index.is_unique
+parts=[];counts=[];seen=set();total=0
+for a in pd.read_csv(S/'annotation/cell_labels_r4.tsv.gz',sep='\t',chunksize=250000,dtype={'unit_id':str},usecols=['cell_id','unit_id','source','cancer','name','tier','class8']):
+ assert a.cell_id.is_unique and not seen.intersection(a.cell_id);seen.update(a.cell_id);total+=len(a)
+ a=a.set_index('cell_id');hit=a.index.intersection(over.index);a.loc[hit,'name']=over.loc[hit,'refined_name'];a['unit']=a.unit_id.map(canon)
+ a=a[a.tier.isin(['A','B','B2','C1'])&a.name.isin(expected.columns)].copy();assert a.unit.isin(expected.index).all()
+ counts.append(a.groupby(['unit','name']).size());a=a[a.unit.isin(m.index)].copy();a['CMT']=a.unit.map(m.CMT)
+ assert (a.source.to_numpy()==m.loc[a.unit,'source'].to_numpy()).all();assert (a.cancer.to_numpy()==m.loc[a.unit,'cancer'].to_numpy()).all();parts.append(a)
+ (R/'cell_bridge_progress.json').write_text(json.dumps({'cells_scanned':total,'retained':sum(len(p) for p in parts),'epoch':time.time()}))
+actual=pd.concat(counts).groupby(level=[0,1]).sum().unstack(fill_value=0).reindex(index=expected.index,columns=expected.columns,fill_value=0)
+diff=actual-expected
+if (diff!=0).any().any():
+ diff.loc[(diff!=0).any(axis=1)].to_csv(R/'cell_count_mismatch.tsv',sep='\t');raise AssertionError('Raw label replay differs from frozen refined_counts; stop before expression extraction')
+obs=pd.concat(parts);assert obs.index.is_unique and obs.CMT.notna().all();obs.to_csv(R/'inputs/R4_communication_cells_PRIVATE.tsv.gz',sep='\t')
+obs.groupby(['CMT','name','source','cancer']).size().rename('n_cells').reset_index().to_csv(R/'R4_CMT_cell_coverage.tsv',sep='\t',index=False)
+receipt={'status':'PASS_all_1196x44_frozen_counts_rebuilt_from_exact_cell_labels_and_plasma_overlay','cells_scanned':total,'eligible_assigned_cells':len(obs),'units':obs.unit.nunique(),'nodes':obs.name.nunique(),'input_sha256':hashlib.sha256((R/'inputs/R4_communication_cells_PRIVATE.tsv.gz').read_bytes()).hexdigest(),'patient_identity':'not_assumed_from_unit','next':'extract native expression on exact cell IDs; measured-gene mask; retain source/cancer strata'};(R/'cell_bridge_audit.json').write_text(json.dumps(receipt,indent=2));print(json.dumps(receipt),flush=True)

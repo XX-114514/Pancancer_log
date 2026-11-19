@@ -1,0 +1,72 @@
+"""Outcome-blind synthetic composition diagnostic; no biological replicate P values."""
+from pathlib import Path
+import json,time,hashlib
+import numpy as np,pandas as pd,anndata as ad
+from scipy.stats import spearmanr
+B=Path('${PROJECT_ARCHIVE_ROOT}')
+R=B/'CM_validation_20261118_v1';O=R/'bulk_R4_candidates/mixture_diagnostic_v2';O.mkdir(exist_ok=False)
+P=B/'spatial_CoVarNet_R4_20261115_v1';a=ad.read_h5ad(P/'reference/reference_and_heldout_PRIVATE.h5ad')
+mapping=pd.read_csv(P/'adapter/inputs/frequency_PRIVATE.tsv',sep='\t').set_index('node').majorCluster.to_dict()
+held=a.obs.split.eq('heldout')&a.obs.node.isin(mapping);a=a[held].copy()
+W=pd.read_csv(R/'bulk_R4_candidates/original_network_members_node_weights.tsv',sep='\t',index_col=0)
+signatures=pd.read_csv(R/'bulk_R4_candidates/candidate_signatures.tsv',sep='\t')
+clinical=ad.read_h5ad(R/'bulk_R4_candidates/TCGA_candidate_expression_PRIVATE.h5ad',backed='r')
+genes=clinical.var_names.tolist();clinical.file.close();assert set(genes)<=set(a.var_names)
+X=a[:,genes].X.tocsr();tot=np.asarray(a.X.sum(axis=1)).ravel();assert (tot>0).all()
+cells={node:np.flatnonzero(a.obs.node.eq(node)) for node in W.index}
+available=[node for node,v in cells.items() if len(v)>=20]
+pd.DataFrame([dict(node=node,heldout_cells=len(v),eligible_ge20=len(v)>=20) for node,v in cells.items()]).to_csv(O/'heldout_identity_coverage.tsv',sep='\t',index=False)
+rng=np.random.default_rng(2026111811);metadata=[];expr=[];qualification=[];started=time.time()
+def draw(nodes,n,prob=None):
+ labels=rng.choice(nodes,n,replace=True,p=prob)
+ return np.array([rng.choice(cells[label]) for label in labels],dtype=int)
+for cm in W.columns:
+ w=W[cm];w=w[w>0];w=w/w.sum();members=w.index.tolist()
+ parents=sorted(set(mapping[n] for n in members))
+ parentweights=np.array([sum(w[n] for n in members if mapping[n]==p) for p in parents])
+ for scenario in ['all_other_nodes','lineage_matched_other_nodes']:
+  absent=[n for n in members if n not in available]
+  if absent:
+   qualification.append(dict(cm=cm,scenario=scenario,status='UNASSESSABLE_NO_HELDOUT_MEMBER',missing_parents='',missing_members=';'.join(absent)));continue
+  others={p:[n for n in available if n not in members and mapping[n]==p] for p in parents}
+  missing=[p for p in parents if not others[p]]
+  if scenario.startswith('lineage') and missing:
+   qualification.append(dict(cm=cm,scenario=scenario,status='UNASSESSABLE_NO_NONMEMBER_WITHIN_PARENT',missing_parents=';'.join(missing)));continue
+  qualification.append(dict(cm=cm,scenario=scenario,status='SIMULATED',missing_parents=''))
+  for rep in range(10):
+   parentcounts=rng.multinomial(200,parentweights)
+   for fraction in [0.,.25,.5,.75,1.]:
+    if scenario=='all_other_nodes':
+     nm=int(round(200*fraction));chosen=np.r_[draw(members,nm,w.to_numpy()),draw([n for n in available if n not in members],200-nm)]
+    else:
+     chunks=[]
+     for parent,n in zip(parents,parentcounts):
+      nodes=[v for v in members if mapping[v]==parent];prob=w[nodes].to_numpy();prob=prob/prob.sum();nm=int(round(n*fraction))
+      chunks.extend([draw(nodes,nm,prob),draw(others[parent],n-nm)])
+     chosen=np.concatenate(chunks)
+    counts=np.asarray(X[chosen].sum(axis=0)).ravel();expression=np.log2(counts/tot[chosen].sum()*1e6+.001)
+    actual=float(a.obs.iloc[chosen].node.isin(members).mean())
+    expr.append(expression);metadata.append(dict(target_cm=cm,scenario=scenario,simulation=rep,requested_member_fraction=fraction,actual_member_fraction=actual,cells=200))
+ (O/'progress.json').write_text(json.dumps(dict(modules_completed=len({x['target_cm'] for x in metadata}),mixtures=len(metadata),seconds=time.time()-started)))
+meta=pd.DataFrame(metadata);Y=np.asarray(expr);geneidx=pd.Index(genes);scores=[];summaries=[]
+for (target,scenario),idx in meta.groupby(['target_cm','scenario']).indices.items():
+ sub=Y[idx];sd=sub.std(axis=0,ddof=1);valid=sd>1e-8;Z=np.divide(sub-sub.mean(axis=0),sd,out=np.zeros_like(sub),where=valid)
+ for (branch,cm),sig in signatures.groupby(['branch','cm']):
+  cols=geneidx.get_indexer(sig.gene);cols=cols[cols>=0];cols=cols[valid[cols]]
+  score=Z[:,cols].mean(axis=1) if len(cols)>=48 else np.full(len(idx),np.nan)
+  rho=float(spearmanr(meta.iloc[idx].actual_member_fraction,score).statistic) if np.isfinite(score).all() and score.std()>0 else None
+  summaries.append(dict(target_cm=target,scenario=scenario,signature_branch=branch,signature_cm=cm,variable_genes=len(cols),mixtures=len(idx),fraction_score_Spearman=rho,is_target_signature=target==cm))
+  for i,v in zip(idx,score):scores.append(dict(mixture_id=int(i),signature_branch=branch,signature_cm=cm,score=float(v)))
+meta.to_csv(O/'mixture_design.tsv',sep='\t',index_label='mixture_id')
+pd.DataFrame(qualification).to_csv(O/'scenario_qualification.tsv',sep='\t',index=False)
+pd.DataFrame(scores).to_csv(O/'mixture_scores.tsv.gz',sep='\t',index=False)
+pd.DataFrame(summaries).to_csv(O/'composition_response_summary.tsv',sep='\t',index=False)
+proof=dict(status='HELDOUT_SYNTHETIC_MIXTURE_DIAGNOSTICS_COMPLETE_PENDING_INTERPRETATION',heldout_cells=a.n_obs,mixtures=len(meta),modules=15,
+           available_heldout_identities=len(available),unavailable_heldout_identities=[n for n in W.index if n not in available],
+           scoring='mean gene z-score, matching previous local TCGA recipe; gene standardization within each target-CM simulation scenario; >=48/60 variable mapped genes',
+           simulation='10 seeded repetitions x 5 member fractions x 200 cells; with replacement; native heldout counts summed; denominator all 12431 reference genes; log2(CPM+.001)',
+           lineage_control='same parent-lineage counts held fixed across dose within repetition; unavailable nonmember parents explicitly unassessable',
+           limitations='background limited to identities with >=20 heldout cells; modules missing a required member are unassessable; inherited annotation holdout, not patient/source-independent; simulations are not biological replicates; no P values; RNA depth and TME-only mixing do not validate tumour purity, gene length/TPM transfer, clinical prediction or physical niche',
+           candidates_refit_after_diagnostic=False,signature_sha256=hashlib.sha256((R/'bulk_R4_candidates/candidate_signatures.tsv').read_bytes()).hexdigest(),seconds=time.time()-started)
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))
+print(pd.DataFrame(summaries).query('target_cm == "CM12" and is_target_signature').to_string(index=False))

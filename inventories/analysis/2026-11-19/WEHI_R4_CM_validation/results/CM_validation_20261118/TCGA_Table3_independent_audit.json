@@ -1,0 +1,8 @@
+{
+  "status": "PASS_ALL_132_TABLE3_CODES_INDEPENDENT_PDF_TEXT_PARSE_AND_TWO_PAGE_VISUAL_REVIEW",
+  "cancers": 33,
+  "endpoint_codes": 132,
+  "PDF_sha256": "33405711cbae2c92c0fe1910380d59b0884f18d294050a43a5f9d9e25a775e65",
+  "PRAD_OS": "Table3 caution; prose not recommended; conflict retained",
+  "scope": "published recommendations, not model or clinical data validity"
+}

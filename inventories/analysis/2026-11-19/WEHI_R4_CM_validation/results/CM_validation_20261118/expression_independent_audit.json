@@ -1,0 +1,17 @@
+{
+  "status": "PASS_independent_exact_cell_metadata_gene_scope_full_matrix_values_and_sampled_native_replay",
+  "cells": 1974301,
+  "common_genes": 12563,
+  "LR_genes": 787,
+  "global_cells": 43322,
+  "native_rows_replayed": 46,
+  "maximum_normalization_error": 2.882095220257952e-07,
+  "all_full_matrix_entries_finite_nonnegative": true,
+  "patient_independence": false,
+  "file_sizes": {
+    "full_common_PRIVATE.h5ad": 6866769371,
+    "full_LR_PRIVATE.h5ad": 516867756,
+    "global_1000_PRIVATE.h5ad": 178693101
+  },
+  "code_sha256": "461360a77fae1ab95f63384826fe330f909e6252eccf9574f68c9b48c801dd92"
+}

@@ -1,0 +1,30 @@
+"""Full 15-CMT family; finite-permutation sensitivity, not high/low LR test."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'communication_joint15_v2';O.mkdir(exist_ok=False)
+coverage=pd.read_csv(R/'CPDB_interaction_measurement.tsv',sep='\t').set_index('id_cp_interaction');cache={};hist=np.zeros(1001,dtype=np.int64);sources=[]
+plan=dict(scope='all15 CMT x all observed ordered identity pairs per CMT x all input-complete CPDB interactions; absent identities unassessable, no fabricated P=1; no selection on CM membership or old significance',MC='k=round(raw_p*1000); sensitivity p=(k+1)/1001; does not reconstruct unavailable permutation tail convention',multiplicity='single BH across every eligible entry; raw and withinCM q preserved separately',inference='pooled cells within each CMT; not patient-level differential LR, not causal or physical directional signaling',limitations='input-wide component presence does not establish measured panel in each underlying source; source/cancer/patient confounding remains; comparison of q across CMT is not a differential test')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+for n in range(1,16):
+ cm='CM%02d'%n;d=R/'communication'/cm;proof=json.loads((d/'complete.json').read_text());audit=json.loads((d/'independent_audit.json').read_text());assert audit['status'].startswith('PASS_') and proof['iterations']==1000
+ f,=d.glob('statistical_analysis_pvalues_*.txt');digest=hashlib.sha256(f.read_bytes()).hexdigest();assert proof['files'][f.name]==digest
+ t=pd.read_csv(f,sep='\t').set_index('id_cp_interaction');cols=[c for c in t if '|' in c];assert t.index.is_unique and set(cols)=={a+'|'+b for a in proof['label_cell_counts'] for b in proof['label_cell_counts']};eligible=coverage.loc[t.index,'all_required_components_measured'].to_numpy(bool);pv=t[cols].to_numpy(float);assert np.isfinite(pv).all() and (pv>=0).all() and (pv<=1).all();assert np.max(abs(pv*1000-np.rint(pv*1000)))<1e-5;k=np.rint(pv*1000).astype(np.uint16);hist+=np.bincount(k[eligible].ravel(),minlength=1001);cache[cm]=(t,cols,eligible,k);sources.append(dict(cm=cm,file=f.name,sha256=digest,eligible_interactions=int(eligible.sum()),ordered_pairs=len(cols),tests=int(eligible.sum()*len(cols))))
+ print(cm,'read',flush=True)
+N=int(hist.sum());present=hist>0;rank=np.cumsum(hist)[present];p=(np.flatnonzero(present)+1)/1001;q=np.minimum.accumulate((p*N/rank)[::-1])[::-1].clip(0,1);qbins=np.full(1001,np.nan);qbins[present]=q
+pd.DataFrame(dict(permutation_exceedance_count=np.arange(1001),hypotheses=hist,MC_p=(np.arange(1001)+1)/1001,q_joint15=qbins)).to_csv(O/'null_count_q_lookup.tsv',sep='\t',index=False)
+global_labels=set(v for _,cols,_,_ in cache.values() for col in cols for v in col.split('|'));missing_core=[];summary=[];pairrows=[];core=[];corepairs=[('CM12','Endo_tip_ESM1','Str_Pericyte_RGS5'),('CM12','Endo_tip_ESM1','Mye_Mac_FOLR2'),('CM12','Str_Pericyte_RGS5','Mye_Mac_FOLR2'),('CM01','Endo_venous_ACKR1','Str_Fib_PI16'),('CM04','Endo_arterial_GJA5','Str_SMC_MYH11')]
+for cm,(t,cols,eligible,k) in cache.items():
+ qv=np.full(k.shape,np.nan);qv[eligible]=qbins[k[eligible]];assert np.isfinite(qv[eligible]).all();pd.DataFrame(qv,index=t.index,columns=cols).to_csv(O/(cm+'_q_joint15.tsv.gz'),sep='\t')
+ old=pd.read_csv(R/'communication'/cm/'MC_corrected_BH_within_CMT.tsv.gz',sep='\t',index_col=0).loc[t.index,cols].to_numpy(float);within=(old<=.05);joint=(qv<=.05);summary.append(dict(cm=cm,observed_identities=len(set(v for col in cols for v in col.split('|'))),missing_identities=','.join(sorted(global_labels-set(v for col in cols for v in col.split('|')))),tests=int(eligible.sum()*len(cols)),within_CM_events=int(within.sum()),joint15_events=int(joint.sum()),lost_after_joint=int((within&~joint).sum()),gained_after_joint=int((~within&joint).sum())))
+ for j,col in enumerate(cols):
+  a,b=col.split('|');pairrows.append(dict(cm=cm,source_identity=a,target_identity=b,within_CM_events=int(within[:,j].sum()),joint15_events=int(joint[:,j].sum())))
+ for module,a,b in corepairs:
+  for u,v in [(a,b),(b,a)]:
+   col=u+'|'+v
+   if col not in cols:missing_core.append(dict(CMT=cm,core_module=module,source_identity=u,target_identity=v,status='identity_absent_unassessable'));continue
+   j=cols.index(col);raw=t[col].to_numpy(float);labels=t.interacting_pair.to_numpy()
+   for i,interaction in enumerate(t.index):core.append(dict(CMT=cm,core_module=module,source_identity=u,target_identity=v,id_cp_interaction=interaction,interacting_pair=labels[i],raw_p=float(raw[i]),q_within_CM=float(old[i,j]),q_joint15=float(qv[i,j]),complete_components=bool(eligible[i])))
+pd.DataFrame(missing_core,columns=['CMT','core_module','source_identity','target_identity','status']).to_csv(O/'unassessable_core_pairs.tsv',sep='\t',index=False)
+pd.DataFrame(summary).to_csv(O/'module_summary.tsv',sep='\t',index=False);pd.DataFrame(pairrows).to_csv(O/'pair_summary.tsv',sep='\t',index=False);pd.DataFrame(core).to_csv(O/'core_edges_all_CMT.tsv.gz',sep='\t',index=False)
+(O/'complete.json').write_text(json.dumps(dict(status='COMPUTED_PENDING_INDEPENDENT_AUDIT',modules=15,total_tests=N,sources=sources,output_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in O.glob('*.tsv*')}),indent=2));print(pd.DataFrame(summary).to_string(index=False),flush=True)

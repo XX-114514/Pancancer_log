@@ -1,0 +1,7 @@
+{
+  "status": "PASS_all_six_raw_core_markers_identity_coordinates_all96_designs_exact_combinatorial_null_and_BH",
+  "max_p_error": 1.1712852909795402e-14,
+  "tested": 96,
+  "association_sha256": "5210062d9407e215532d68186d025a97a495fcfc83e243b316e82c6f11175eb9",
+  "limitation": "reuses previously audited broad identity/QC and native coordinate contract; marker-supported proxies not exact R4 subtypes; no segmentation-image review"
+}

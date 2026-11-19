@@ -1,0 +1,57 @@
+"""Patient-label differential CPDB-style expression score, one verified source.
+Not the CPDB cell-label interaction-specificity test and not contact evidence.
+"""
+from pathlib import Path
+import json,zipfile,itertools,math,hashlib,time,os
+import pandas as pd,numpy as np
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');I=R/'patient_LR_v1';O=R/'differential_LR_CM12_GSE207493_v1';O.mkdir(exist_ok=False)
+cm='CM12';source='GSE207493';B=9999;seed=2026111902
+assert json.loads((I/'complete.json').read_text())['status'].startswith('PATIENT_LINKED_')
+plan=dict(status='FROZEN_BEFORE_DIFFERENTIAL_LR_TESTS',cm=cm,source=source,group='High=unit CMT CM12, Low=other assigned CMT; source has one verified RNA sample per patient',nodes='all 11 original CM12 network members, all 121 ordered identity pairs including self',
+ score='CPDB5.0.1 structural recipe on unit-identity mean log-normalized expression: each complex=min required protein means; pair=(a+b)/2 if both positive; gated to zero unless BOTH partner minimum component detection fractions >0.1',
+ library='full native gene library normalization already audited, not LR-only library normalization',
+ genes='all DB4.1 interactions with all components in current 787-gene LR input; ambiguous protein-symbol map not silently averaged',
+ inference='two-sided patient-label permutation of high-minus-low mean score; all assignments if choose(n,nHigh)<=9999, otherwise 9999 draws with plus-one correction; sample labels jointly permuted across interactions within a cell pair',
+ min_cells_per_identity_per_unit=10,min_unique_patients_each_group=3,permutations=B,seed=seed,
+ multiplicity='BH across all nonconstant interaction x ordered cell-pair tests in this CM/source only; PROVISIONAL, cross-CM and cross-source correction still pending',
+ limitations='observational label-exchangeability assumption; module membership derived from cell composition, not randomized exposure; score difference is expression potential, not physical contact or directional signaling; same-celltype pairs not necessarily same cells; no patient repeats in this source; other sources require repeat-aware designs')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+meta=pd.read_csv(I/'unit_node_metadata_PRIVATE.tsv',sep='\t');genes=pd.read_csv(I/'genes.tsv',sep='\t').gene;arr=np.load(I/'expression_PRIVATE.npz');means=arr['mean_log_expression'];detect=arr['detection_fraction'];assert means.shape==detect.shape==(len(meta),len(genes))
+db=R/'sources/cellphonedb_v4.1.0.zip';assert hashlib.sha256(db.read_bytes()).hexdigest()=='bac6dc33a959f39a79465e0d09b556094da4e154825e50f1470b909a6a62188c'
+with zipfile.ZipFile(db) as z:
+ g=pd.read_csv(z.open('gene_table.csv'));p=pd.read_csv(z.open('protein_table.csv'));cc=pd.read_csv(z.open('complex_composition_table.csv'));it=pd.read_csv(z.open('interaction_table.csv'))
+g=g[g.hgnc_symbol.isin(genes)].merge(p[['id_protein','protein_multidata_id']],left_on='protein_id',right_on='id_protein');assert g.groupby('protein_multidata_id').hgnc_symbol.nunique().eq(1).all();symbol=g.groupby('protein_multidata_id').hgnc_symbol.first().to_dict();gi={s:i for i,s in enumerate(genes)}
+components={int(k):sorted(set(v.protein_multidata_id)) for k,v in cc.groupby('complex_multidata_id')};protein=set(p.protein_multidata_id)
+def required(mid):return [int(mid)] if mid in protein else components[int(mid)]
+valid=[];partners={}
+for r in it.itertuples():
+ aa=required(r.multidata_1_id);bb=required(r.multidata_2_id)
+ if all(x in symbol for x in aa+bb):
+  valid.append(dict(interaction=r.id_cp_interaction,partner_a=int(r.multidata_1_id),partner_b=int(r.multidata_2_id),partner_a_genes='|'.join(symbol[x] for x in aa),partner_b_genes='|'.join(symbol[x] for x in bb)))
+  for mid,cs in [(int(r.multidata_1_id),aa),(int(r.multidata_2_id),bb)]:partners[mid]=[gi[symbol[x]] for x in cs]
+v=pd.DataFrame(valid);assert len(v)==895 and v.interaction.is_unique;v.to_csv(O/'interaction_components.tsv',sep='\t',index=False)
+partnerids=sorted(partners);pi={x:i for i,x in enumerate(partnerids)};pm=np.column_stack([means[:,partners[x]].min(axis=1) for x in partnerids]);pdetection=np.column_stack([detect[:,partners[x]].min(axis=1) for x in partnerids]);aidx=np.array([pi[x] for x in v.partner_a]);bidx=np.array([pi[x] for x in v.partner_b])
+member=pd.read_csv(R/'R4_member_comparison_eligibility.tsv',sep='\t');nodes=sorted(member[member.cm.eq(cm)].node);assert len(nodes)==11
+unitmeta=meta[meta.source.eq(source)].drop_duplicates('unit').set_index('unit');assert len(unitmeta)==19 and unitmeta.source_patient_key.is_unique
+out=[];packed=[];designs=[];rng=np.random.default_rng(seed);started=time.time()
+for n1 in nodes:
+ for n2 in nodes:
+  one=meta[(meta.source==source)&(meta.node==n1)&(meta.cells>=10)];two=meta[(meta.source==source)&(meta.node==n2)&(meta.cells>=10)];units=sorted(set(one.unit)&set(two.unit));hi=unitmeta.loc[units,'CMT'].eq(cm).to_numpy();nh=int(hi.sum());nl=len(units)-nh
+  if min(nh,nl)<3:continue
+  r1=one.reset_index().set_index('unit').loc[units,'index'].to_numpy();r2=two.reset_index().set_index('unit').loc[units,'index'].to_numpy();aa=pm[r1][:,aidx];bb=pm[r2][:,bidx];gate=(pdetection[r1][:,aidx]>.1)&(pdetection[r2][:,bidx]>.1);Y=np.where(gate&(aa>0)&(bb>0),(aa+bb)/2,0)
+  pair=n1+'__'+n2;offset=sum(len(x) for x in packed);packed.append(Y)
+  designs.extend(dict(pair=pair,node1=n1,node2=n2,unit=u,patient=unitmeta.loc[u,'source_patient_key'],high=bool(h),matrix_row=offset+i) for i,(u,h) in enumerate(zip(units,hi)))
+  delta=Y[hi].mean(axis=0)-Y[~hi].mean(axis=0);variable=np.ptp(Y,axis=0)>1e-12;extreme=np.zeros(len(v),dtype=int);n=len(units);ncomb=math.comb(n,nh);exact=ncomb<=B
+  if exact:assignments=np.array(list(itertools.combinations(range(n),nh)),dtype=int)
+  else:assignments=np.array([rng.choice(n,nh,replace=False) for _ in range(B)],dtype=int)
+  total=Y.sum(axis=0)
+  for start in range(0,len(assignments),256):
+   ix=assignments[start:start+256];W=np.zeros((len(ix),n));W[np.arange(len(ix))[:,None],ix]=1;hs=W@Y;ds=hs/nh-(total-hs)/nl;extreme+=(np.abs(ds)>=np.abs(delta)[None,:]-1e-12).sum(axis=0)
+  pv=extreme/len(assignments) if exact else (extreme+1)/(len(assignments)+1)
+  for j,r in enumerate(v.itertuples()):out.append(dict(cm=cm,source=source,node1=n1,node2=n2,interaction=r.interaction,patients=n,high_patients=nh,low_patients=nl,mean_high=float(Y[hi,j].mean()),mean_low=float(Y[~hi,j].mean()),high_minus_low=float(delta[j]),variable=bool(variable[j]),p=float(pv[j]) if variable[j] else np.nan,permutation_mode='exact' if exact else 'monte_carlo_plus_one',assignments=len(assignments)))
+  (O/'progress.json').write_text(json.dumps(dict(pid=os.getpid(),pairs_done=len(packed),seconds=time.time()-started)))
+t=pd.DataFrame(out);mask=t.p.notna();t['q_within_CM12_source_PROVISIONAL']=np.nan;t.loc[mask,'q_within_CM12_source_PROVISIONAL']=multipletests(t.loc[mask,'p'],method='fdr_bh')[1];t.to_csv(O/'differential_scores.tsv.gz',sep='\t',index=False)
+np.savez_compressed(O/'unit_pair_scores_PRIVATE.npz',scores=np.vstack(packed));pd.DataFrame(designs).to_csv(O/'patient_pair_design_PRIVATE.tsv',sep='\t',index=False)
+proof=dict(status='PATIENT_DIFFERENTIAL_LR_EXPRESSION_SCORES_WRITTEN_PENDING_INDEPENDENT_AUDIT',pairs=len(packed),database_interactions=len(v),tests=int(mask.sum()),constant_unassessable=int((~mask).sum()),provisional_q05=int(t.q_within_CM12_source_PROVISIONAL.lt(.05).sum()),seconds=time.time()-started,limitations=plan['limitations']+'; cross-CM/source multiplicity pending')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

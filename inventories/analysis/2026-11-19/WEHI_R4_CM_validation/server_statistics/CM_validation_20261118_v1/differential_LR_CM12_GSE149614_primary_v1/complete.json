@@ -1,0 +1,10 @@
+{
+  "status": "PATIENT_DIFFERENTIAL_LR_EXPRESSION_SCORES_WRITTEN_PENDING_INDEPENDENT_AUDIT",
+  "pairs": 16,
+  "database_interactions": 895,
+  "tests": 1596,
+  "constant_unassessable": 12724,
+  "provisional_q05": 0,
+  "seconds": 0.7521088123321533,
+  "limitations": "observational label-exchangeability assumption; module membership derived from cell composition, not randomized exposure; score difference is expression potential, not physical contact or directional signaling; same-celltype pairs not necessarily same cells; no patient repeats in the selected primary-tumour estimand; paired non-primary tissues retained separately and not independently pooled; cross-CM/source multiplicity pending"
+}

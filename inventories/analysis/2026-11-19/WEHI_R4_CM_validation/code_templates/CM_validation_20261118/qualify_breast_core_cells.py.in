@@ -1,0 +1,26 @@
+"""Outcome-blind qualification of marker-supported cellular core proxies."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+from scipy import sparse
+B=Path('${PROJECT_ARCHIVE_ROOT}')
+O=B/'CM_validation_20261118_v1/imaging_breast_core_cells_v1';O.mkdir(exist_ok=True)
+P=Path('${PANCANCER_ROOT}/Project_v3/runs/20261108_V4_native_coordinate_fix_v1')
+genes=['ESM1','RGS5','PECAM1','VWF','CDH5','KDR','EMCN','PDGFRB','ACTA2','TAGLN','MYH11']
+rows=[]
+for unit in ['S01','S02','S03','S04','S05','S06']:
+ matches=list(P.glob('outputs*/spatial_controls_v1/'+unit+'/cell_identity_view_PRIVATE.tsv.gz'));assert len(matches)==1;d=matches[0].parent;c=pd.read_csv(d/'cell_identity_view_PRIVATE.tsv.gz',sep='\t');receipt=json.loads((d/'complete.json').read_text());f=P/'inputs_direct_v1'/unit/'native_PRIVATE.h5ad'
+ h=hashlib.sha256(f.read_bytes()).hexdigest();assert h==receipt['native_source_file_sha256']
+ a=ad.read_h5ad(f,backed='r');assert hashlib.sha256('\n'.join(a.obs_names.astype(str)).encode()).hexdigest()==receipt['native_cell_axis_SHA256']
+ symbols=pd.Index(a.var.gene_symbol.astype(str) if 'gene_symbol' in a.var else a.var_names);assert symbols.is_unique
+ present=[g for g in genes if g in symbols];ix=sorted(symbols.get_loc(g) for g in present);x=a[:,ix].X;x=x.toarray() if sparse.issparse(x) else np.asarray(x);x=np.expm1(x.astype(float));assert np.allclose(x,np.rint(x),atol=.001,rtol=1e-5);x=np.rint(x);gx={g:x[:,j] for j,g in enumerate(symbols[ix])};a.file.close()
+ qc=c.QC_keep.astype(str).str.lower().eq('true').to_numpy();ec=qc&c.cell_type.eq('Blood_EC').to_numpy()
+ auxiliary=[g for g in ['PDGFRB','ACTA2','TAGLN','MYH11'] if g in gx]
+ mural=qc&c.author_major.str.contains('pvl|mural|perivascular|smooth',case=False,regex=True).to_numpy()&(np.sum([gx[g]>=1 for g in auxiliary],axis=0)>=2)&~ec
+ assert not (ec&mural).any()
+ for k in [1,2]:
+  rows.append(dict(section=unit,threshold=k,QC=int(qc.sum()),blood_EC=int(ec.sum()),mural_without_RGS5_gate=int(mural.sum()),ESM1_EC=int((ec&(gx['ESM1']>=k)).sum()),RGS5_mural=int((mural&(gx['RGS5']>=k)).sum()),available_auxiliary=','.join(auxiliary),source_sha256=h))
+ np.savez_compressed(O/(unit+'_core_PRIVATE.npz'),xy=c[['x_um','y_um']].to_numpy(),depth=c.native_total.to_numpy(),ec=ec,mural=mural,ESM1=gx['ESM1'],RGS5=gx['RGS5'])
+ print(unit,rows[-2:],flush=True)
+pd.DataFrame(rows).to_csv(O/'qualification.tsv',sep='\t',index=False)
+(O/'qualification_complete.json').write_text(json.dumps(dict(status='qualified_native_counts_and_exact_cell_axis',identity='author broad identity plus independent auxiliary markers; RGS5 excluded from mural support; ESM1 excluded from EC support; proxy not exact R4 subtype',cells='kept on server only',source='previously used breast Xenium six sections; patient independence not assumed'),indent=2))

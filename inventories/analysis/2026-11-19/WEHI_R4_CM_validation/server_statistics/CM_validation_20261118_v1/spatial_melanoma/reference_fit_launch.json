@@ -1,0 +1,6 @@
+{
+  "pid": 150588,
+  "script": "${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1/spatial_melanoma/code/fit_50labels.py",
+  "status": "FIT_LAUNCHED_PENDING_COMPLETION_AND_AUDIT",
+  "reference_input_sha256": "a5ccdf44c172cd16abc1ea2cbed12691c32ee81f2eecb59f7dcdf9044bbec297"
+}

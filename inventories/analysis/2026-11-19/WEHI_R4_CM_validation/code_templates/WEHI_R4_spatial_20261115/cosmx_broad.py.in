@@ -1,0 +1,84 @@
+"""Two accession-ordered non-replicate CosMx lung samples; no cross-FOV edges."""
+from pathlib import Path
+import tarfile,io,json,hashlib,re
+import numpy as np,pandas as pd
+from scipy.stats import spearmanr
+from scipy.spatial import cKDTree
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+BASE=Path('${PROJECT_ARCHIVE_ROOT}');R=BASE/'spatial_CoVarNet_R4_20261115_v1';O=R/'cosmx_broad';O.mkdir(exist_ok=True)
+RAW=Path('${PANCANCER_ROOT}/Project_v5/xenium_cosmx_20260904/raw/cosmx_nsclc')
+W=pd.read_csv(BASE/'w2o_annotation_r4_covarnet_k15_20261115_v1/covarnet/paper/cm_node_weights.tsv',sep='\t',index_col=0)
+PANELS={'Blood_EC':['PECAM1','VWF','EMCN','CDH5'],'Fibroblast':['DCN','LUM','COL1A1','COL1A2','PDGFRA'],'Mural':['RGS5','PDGFRB','ACTA2','MYH11'],'Myeloid':['LST1','TYROBP','CD68','CD163'],'B':['CD19','MS4A1','CD79A'],'T':['CD3D','CD3E','CD3G'],'NK':['KLRD1','NKG7','GNLY']}
+core={'EC_Fibro':['Blood_EC','Fibroblast'],'EC_Mural':['Blood_EC','Mural'],'EC_Myeloid':['Blood_EC','Myeloid']};marker={n:n for n in PANELS};W=pd.DataFrame(0.,index=list(PANELS),columns=list(core))
+for k,ns in core.items():W.loc[ns,k]=.5
+(O/'plan.json').write_text(json.dumps({'samples':['Lung12','Lung13'],'selection':'lexicographically first two archives, no replicate suffix; before core effects','QC':'cell_ID>0, RNA>=50, detected genes>=20; negative/control/export-index columns excluded','grid_um':[25,50],'minimum_cells_per_bin':3,'aggregation':'60NN inverse-square normalized, strictly within each FOV; <61 bins or constant markers => NA','pixel_to_um':0.12028,'coordinate_reference':'https://www.brukerspatialbiology.com/wp-content/uploads/2024/11/MK6578_CosMx_Human_Lymph_Node_FFPE_Dataset_webpage.html','interpretation':'broad candidate identity proportions, not exact R4 abundance or cell contact'},indent=2))
+(O/'broad_extension_plan.json').write_text(json.dumps({'reason':'fine R4 core markers absent in CosMx; separate broad vascular analysis, never relabel as CM01/12/04','identity_panels':PANELS,'gates':'>=2 detected measured markers; NK excludes T markers, EC excludes >=2 lymphatic markers; all overlapping candidate identities excluded','features':'candidate identity cell proportions per 10000 QC cells in grid','activity':'equal weighted broad candidate pairs, not CoVarNet R4 weights','inference':'descriptive within-FOV, no significance/causality claim'},indent=2))
+availability=[];rows=[];receipts=[];qual=[]
+for sample in ['Lung12','Lung13']:
+    p=RAW/(sample+'_flat.tar.gz');h=hashlib.sha256();md=hashlib.md5()
+    with p.open('rb') as f:
+        for block in iter(lambda:f.read(8*1024*1024),b''):h.update(block);md.update(block)
+    expected=[]
+    for line in (RAW/'md5sums.txt').read_text().splitlines():
+        if line.strip().endswith(p.name):expected.append(line.split()[0])
+    if expected:assert len(expected)==1 and md.hexdigest()==expected[0]
+    tables={};memberhash={}
+    with tarfile.open(p,'r|gz') as t:
+        for m in t:
+            for label,suffix in [('expression','exprMat_file.csv'),('metadata','metadata_file.csv'),('fov','fov_positions_file.csv')]:
+                if m.isfile() and m.name.endswith(suffix):
+                    assert label not in tables;data=t.extractfile(m).read();memberhash[label]=hashlib.sha256(data).hexdigest();tables[label]=pd.read_csv(io.BytesIO(data))
+    e=tables['expression'];m=tables['metadata'];key=['fov','cell_ID']
+    background_expression=int((e.cell_ID<=0).sum());background_metadata=int((m.cell_ID<=0).sum())
+    e=e[e.cell_ID>0].copy();m=m[m.cell_ID>0].copy()
+    diagnostic={'sample':sample,'background_expression_rows_removed':background_expression,'background_metadata_rows_removed':background_metadata,'duplicate_positive_expression_keys':int(e.duplicated(key).sum()),'duplicate_positive_metadata_keys':int(m.duplicated(key).sum())}
+    assert not e.duplicated(key).any() and not m.duplicated(key).any(),diagnostic
+    e=e.set_index(key);m=m.set_index(key);diagnostic['positive_expression_keys_missing_metadata']=int((~e.index.isin(m.index)).sum());(O/(sample+'_join_diagnostic.json')).write_text(json.dumps(diagnostic,indent=2));assert e.index.isin(m.index).all(),diagnostic;m=m.reindex(e.index)
+    invalid=[c for c in e if re.search(r'^(?:Unnamed:)|NegPrb|Negative|SystemControl|FalseCode',c,re.I) or c in ['Run_Tissue_name','cell_id','cell_ID','fov']];genes=[c for c in e if c not in invalid];x=e[genes].to_numpy('float32');assert np.isfinite(x).all() and (x>=0).all() and np.allclose(x,np.rint(x));total=x.sum(axis=1);detected=(x>0).sum(axis=1);qc=(e.index.get_level_values('cell_ID').to_numpy()>0)&(total>=50)&(detected>=20);xy=m[['CenterX_global_px','CenterY_global_px']].to_numpy(float)*.12028;assert np.isfinite(xy).all()
+    rawgenes=genes.copy();rawcounts=x;rawqc=qc.copy();present={k:[g for g in gs if g in rawgenes] for k,gs in PANELS.items()}
+    def detected_panel(gs):return sum((rawcounts[:,rawgenes.index(g)]>0).astype(int) for g in gs if g in rawgenes)
+    candidates={k:detected_panel(gs)>=2 for k,gs in present.items() if len(gs)>=2}
+    if 'Blood_EC' in candidates:candidates['Blood_EC']&=detected_panel(['PROX1','PDPN','LYVE1','FLT4'])<2
+    if 'NK' in candidates:candidates['NK']&=detected_panel(PANELS['T'])==0
+    overlap=np.sum(list(candidates.values()),axis=0)>1;qc&=~overlap;genes=list(candidates);x=np.column_stack([candidates[k] for k in genes]).astype('float32');total=np.ones(len(x))
+    (O/(sample+'_identity_candidates.json')).write_text(json.dumps({'panels_measured':present,'raw_QC_cells':int(rawqc.sum()),'overlapping_candidate_exclusions':int((rawqc&overlap).sum()),'candidate_counts':{k:int((qc&v).sum()) for k,v in candidates.items()},'RNA_genes':len(rawgenes)},indent=2))
+    for n,g in marker.items():availability.append({'sample':sample,'node':n,'gene':g,'measured':g in genes})
+    for cm,nodes in core.items():qual.append({'sample':sample,'cm':cm,'missing':','.join(sorted(set(marker[n] for n in nodes)-set(genes))),'broad_pair_weight_sum':float(W.loc[nodes,cm].sum()/W[cm].sum()),'QC_cells':int(qc.sum())})
+    grids=[]
+    fovs=e.index.get_level_values('fov').to_numpy()
+    for fov in np.unique(fovs):
+        mask=qc&(fovs==fov)
+        for size in [25,50]:
+            tile=np.floor(xy[mask]/size).astype(int);uni,inv=np.unique(tile,axis=0,return_inverse=True);nc=np.bincount(inv);tot=np.bincount(inv,weights=total[mask]);keep=(nc>=3)&(tot>0);coords=(uni[keep]+.5)*size
+            density={g:np.bincount(inv,weights=x[mask,genes.index(g)],minlength=len(uni))[keep]/tot[keep]*10000 for g in set(marker.values())&set(genes)}
+            G=None
+            if len(coords)>60:
+                dd,jj=cKDTree(coords).query(coords,k=61);weights=1/dd[:,1:]**2;weights/=weights.sum(axis=1,keepdims=True)
+                G=(jj[:,1:],weights)
+            activities={}
+            for cm,nodes in core.items():
+                if not all(marker[n] in density for n in nodes):continue
+                activities[cm]=sum(W.loc[n,cm]*density[marker[n]] for n in nodes)
+                for i,a in enumerate(nodes):
+                    for b in nodes[i+1:]:
+                        xx=density[marker[a]];yy=density[marker[b]];rho=mi=mj=np.nan
+                        if len(xx)>=4 and np.std(xx)>0 and np.std(yy)>0:
+                            rho=float(spearmanr(xx,yy).statistic)
+                            if G is not None:
+                                zx=(xx-xx.mean())/xx.std(ddof=1);zy=(yy-yy.mean())/yy.std(ddof=1);nb,ww=G;mi=float(zx@(zy[nb]*ww).sum(axis=1)/(len(xx)-1));mj=float(zy@(zx[nb]*ww).sum(axis=1)/(len(xx)-1))
+                        rows.append({'sample':sample,'fov':fov,'grid_um':size,'cm':cm,'a':a,'b':b,'bins':len(coords),'Spearman':rho,'Moran_forward':mi,'Moran_reverse':mj,'cross_FOV_edges':0})
+            if size==50:grids.append(pd.DataFrame({'x_um':coords[:,0],'y_um':coords[:,1],'fov':fov,**activities}))
+    grid=pd.concat(grids,ignore_index=True);dest=O/sample;dest.mkdir(exist_ok=True);grid.to_csv(dest/'grid50_PRIVATE.tsv.gz',sep='\t',index=False)
+    fig,axs=plt.subplots(1,3,figsize=(12,4))
+    for ax,cm in zip(axs,core):
+        if cm in grid:
+            v=grid[cm].to_numpy();q=np.nanquantile(v,.99);sc=ax.scatter(grid.x_um,grid.y_um,c=v/max(q,1e-12),s=4,cmap='magma',vmin=0,vmax=1);fig.colorbar(sc,ax=ax,shrink=.65)
+        else:ax.text(.5,.5,'Required marker absent',ha='center',transform=ax.transAxes)
+        ax.set_title(cm+' broad candidate abundance');ax.set_aspect('equal');ax.invert_yaxis();ax.set_xlabel('um');ax.set_ylabel('um')
+    fig.suptitle('CosMx '+sample+' | 50um | no cross-FOV graph edges');fig.tight_layout();fig.savefig(dest/'core_activity.png',dpi=160);plt.close(fig)
+    receipts.append({'sample':sample,'archive_sha256':h.hexdigest(),'md5_matches_existing_manifest':bool(expected),'members_sha256':memberhash,'n_input':len(e),'QC_cells':int(qc.sum()),'n_candidate_identities':len(genes),'dropped_non_gene_columns':invalid,'n_fovs':len(np.unique(fovs)),'exact_cellkey_join':True});print('DONE',sample,qual[-3:],flush=True)
+pd.DataFrame(availability).to_csv(O/'marker_availability.tsv',sep='\t',index=False);pd.DataFrame(qual).to_csv(O/'core_qualification.tsv',sep='\t',index=False);df=pd.DataFrame(rows);df.to_csv(O/'all_FOV_core_edges.tsv',sep='\t',index=False)
+if len(df):df.groupby(['sample','grid_um','cm','a','b']).agg(n_FOVs=('fov','size'),n_estimable_Spearman=('Spearman','count'),median_Spearman=('Spearman','median'),n_estimable_Moran=('Moran_forward','count'),median_Moran_forward=('Moran_forward','median'),median_Moran_reverse=('Moran_reverse','median')).reset_index().to_csv(O/'sample_core_edge_summary.tsv',sep='\t',index=False)
+(O/'complete.json').write_text(json.dumps({'status':'two_CosMx_samples_complete','receipts':receipts,'FOVs_not_independent_patients':True},indent=2))

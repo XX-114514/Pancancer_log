@@ -1,0 +1,57 @@
+from pathlib import Path
+import gzip,csv,json,hashlib,re
+import pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'clinical';O.mkdir(exist_ok=True)
+B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk');summaries=[]
+expr={'riaz2017':'GSE91061_raw_counts.csv.gz','hugo2016':'GSE78220_FPKM.xlsx','jung2019_nsclc':'GSE135222_exp.tsv.gz','rose2021_urothelial':'GSE176307_salmon_tpm.tsv.gz'}
+for cohort in expr:
+ p=next((B/cohort).glob('*series_matrix*.gz'));rows=[];chars=[]
+ with gzip.open(p,'rt',encoding='utf-8') as f:
+  for line in f:
+   if line.startswith('!series_matrix_table_begin'):break
+   if not line.startswith('!Sample_'):continue
+   row=next(csv.reader([line],delimiter='\t'));key=row[0];v=row[1:]
+   if key=='!Sample_title':titles=v
+   elif key=='!Sample_geo_accession':gsm=v
+   elif key=='!Sample_characteristics_ch1':chars.append(v)
+ assert len(titles)==len(gsm) and len(set(gsm))==len(gsm)
+ records=[{'GSM':g,'title':t} for g,t in zip(gsm,titles)]
+ for values in chars:
+  assert len(values)==len(records)
+  for d,v in zip(records,values):
+   if ':' not in v:continue
+   k,value=v.split(':',1);k=k.strip();value=value.strip();assert k not in d or d[k]==value;d[k]=value
+ d=pd.DataFrame(records);path=B/cohort/expr[cohort]
+ if path.suffix=='.xlsx':columns=list(pd.read_excel(path,nrows=0).columns)[1:]
+ else:
+  with gzip.open(path,'rt',encoding='utf-8') as f:columns=next(csv.reader(f,delimiter=',' if cohort=='riaz2017' else '\t'))[1:]
+ assert len(columns)==len(set(columns));d['baseline_verified']=False;d['patient_identity_verified']=False
+ if cohort=='riaz2017':
+  d['expression_key']=d.title;match=d.title.str.extract(r'^(Pt[0-9]+)_(Pre|On)_');assert match.notna().all().all();d['patient_candidate']=match[0];assert (match[1].str.lower()==d['visit (pre or on treatment)'].str.lower()).all();d['baseline_verified']=match[1]=='Pre';d['patient_identity_basis']='title-encoded patient; independent clinical cross-check pending';response=d.response
+ elif cohort=='hugo2016':
+  suffix=d['biopsy time'].map({'pre-treatment':'.baseline','on-treatment':'.OnTx'});assert suffix.notna().all();d['expression_key']=d.title+suffix;d['patient_candidate']=d['patient id'];d['patient_identity_verified']=True;d['patient_identity_basis']='explicit GEO patient id';d['baseline_verified']=d['biopsy time']=='pre-treatment';response=d['anti-pd-1 response']
+ elif cohort=='jung2019_nsclc':
+  assert d.title.str.fullmatch(r'NSCLC [0-9]+').all();d['expression_key']=d.title.str.replace('NSCLC ','NSCLC',regex=False);d['patient_candidate']='';d['patient_identity_basis']='sample title only; patient and biopsy timing unverified';response=pd.Series('',index=d.index)
+ else:
+  key=pd.read_csv(B/cohort/'sample_key.csv.gz',dtype=str);assert key['Sample ID'].is_unique and key.iloc[:,1].is_unique;assert d.title.str.startswith('Patient sample ').all();ids=d.title.str.removeprefix('Patient sample ');d['expression_key']=ids.map(key.set_index('Sample ID').iloc[:,0]);d['patient_candidate']=ids;d['patient_identity_basis']='sample-key ID; independent patient and biopsy timing unverified';response=d['io.response']
+ if cohort=='rose2021_urothelial':
+  d['expression_key_basis']='submitted sample_key exact Sample ID'
+  receipt=json.loads((R/'sources/rose_metadata/receipt.json').read_text())
+  for accession in ['GSM5362510','GSM5362511']:
+   soft=R/'sources/rose_metadata'/(accession+'.soft.txt')
+   record,=[x for x in receipt if x['accession']==accession]
+   assert record['status']=='validated' and hashlib.sha256(soft.read_bytes()).hexdigest()==record['sha256']
+   text=soft.read_text(encoding='utf-8');assert '^SAMPLE = '+accession in text
+   title,=re.findall(r'^!Sample_title = (.+)$',text,re.M)
+   expression_key,=re.findall(r'^!Sample_description = (.+)$',text,re.M)
+   ix=d.index[d.GSM.eq(accession)];assert len(ix)==1 and d.loc[ix[0],'title']==title
+   assert expression_key in columns and pd.isna(d.loc[ix[0],'expression_key'])
+   d.loc[ix,'expression_key']=expression_key
+   d.loc[ix,'expression_key_basis']='accession-specific GEO SOFT Sample_description; SHA256 '+hashlib.sha256(soft.read_bytes()).hexdigest()
+ d['response_raw']=response;d['response_binary']=response.map({'PD':0,'SD':0,'PRCR':1,'CR':1,'PR':1,'Progressive Disease':0,'Partial Response':1,'Complete Response':1});d['expression_matched']=d.expression_key.isin(columns);d['duplicate_expression_key']=d.expression_key.duplicated(keep=False)&d.expression_key.notna()
+ base=d.baseline_verified&d.expression_matched;counts=d.loc[base,'patient_candidate'].value_counts();d['multiple_baseline_samples_same_candidate']=d.patient_candidate.map(counts).fillna(0)>1
+ d['baseline_response_candidate']=base&d.response_binary.notna()&~d.multiple_baseline_samples_same_candidate&~d.duplicate_expression_key
+ d['eligible_for_confirmatory_model']=False
+ d.to_csv(O/(cohort+'_sample_bridge_PRIVATE.tsv'),sep='\t',index=False)
+ summary={'cohort':cohort,'metadata_samples':len(d),'expression_columns':len(columns),'matched_metadata_samples':int(d.expression_matched.sum()),'unmatched_expression_columns':len(set(columns)-set(d.expression_key.dropna())),'duplicate_expression_key_rows':int(d.duplicate_expression_key.sum()),'verified_baseline_samples':int(d.baseline_verified.sum()),'multiple_baseline_candidate_rows':int(d.multiple_baseline_samples_same_candidate.sum()),'baseline_response_candidates':int(d.baseline_response_candidate.sum()),'response_counts_baseline_candidates':d.loc[d.baseline_response_candidate,'response_binary'].value_counts().to_dict(),'eligible_for_confirmatory_model':False,'metadata_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'limitations':'patient/timepoint/clinical provenance and previous-use audit pending; response binary exploratory; survival times/events retained raw, not inferred'};summaries.append(summary)
+(O/'clinical_bridge_audit.json').write_text(json.dumps(summaries,indent=2));print(json.dumps(summaries,indent=2))

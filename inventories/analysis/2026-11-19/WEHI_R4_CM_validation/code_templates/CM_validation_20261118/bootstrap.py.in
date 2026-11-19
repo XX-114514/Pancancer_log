@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,hashlib,urllib.request,subprocess,datetime
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1';R.mkdir(exist_ok=True);(R/'sources').mkdir(exist_ok=True)
+P=Path('${PANCANCER_ROOT}')
+result={'utc':datetime.datetime.utcnow().isoformat(),'previous_turn':'progress: completed spatial analyses; new expanded goal now being qualified','downloads':[],'inventory':{},'live_processes':subprocess.run(['pgrep','-af','[c]ellphonedb|[d]ownload_recovery|[c]ell2location'],stdout=subprocess.PIPE,universal_newlines=True).stdout}
+for root in [B/'w2o_annotation_r4_covarnet_k15_20261115_v1',P/'Project_v3/runs',P/'Project_v5']:
+ result['inventory'][str(root)]=[str(p.relative_to(root)) for p in root.iterdir()] if root.exists() else []
+for pattern in ['covarnet/paper/*','covarnet/export/*','annotation/*']:
+ root=B/'w2o_annotation_r4_covarnet_k15_20261115_v1';result['inventory'][pattern]=[{'path':str(p),'bytes':p.stat().st_size} for p in root.glob(pattern) if p.is_file()]
+try:
+ req=urllib.request.Request('https://api.github.com/repos/QiangShiPKU/CoVarNet/commits/HEAD',headers={'User-Agent':'research-reproducibility'})
+ meta=json.load(urllib.request.urlopen(req,timeout=45));sha=meta['sha'];(R/'sources/author_commit.json').write_text(json.dumps(meta,indent=2))
+ url='https://api.github.com/repos/QiangShiPKU/CoVarNet/git/trees/'+sha+'?recursive=1';data=urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'research-reproducibility'}),timeout=45).read();(R/'sources/author_tree.json').write_bytes(data)
+ result['downloads'].append({'url':url,'sha256':hashlib.sha256(data).hexdigest(),'commit':sha,'status':'downloaded'})
+ tree=json.loads(data)['tree'];candidates=[x for x in tree if x['type']=='blob' and ('Figure3g' in x['path'] or 'Figure3h' in x['path'] or 'README' in x['path'])]
+ for item in candidates:
+  url='https://raw.githubusercontent.com/QiangShiPKU/CoVarNet/'+sha+'/'+urllib.parse.quote(item['path']);data=urllib.request.urlopen(url,timeout=45).read();dest=R/'sources'/item['path'];dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(data);result['downloads'].append({'url':url,'path':str(dest),'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'status':'downloaded'})
+except Exception as e:result['download_error']=repr(e)
+(R/'bootstrap_receipt.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))

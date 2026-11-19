@@ -1,0 +1,8 @@
+{
+  "status": "ROSE_TIMING_UNRESOLVED_RESPONSE_ASSOCIATIONS_PENDING_INDEPENDENT_AUDIT",
+  "score_rows": 5310,
+  "Rose_tests": 120,
+  "joint_tests": 480,
+  "joint_q05": 0,
+  "limitations": "Unresolved biopsy-to-ICI timing prevents baseline prediction claims. No untreated comparator, external prospective validation or survival analysis. Clinical covariates and tissue site may confound; previously used cohort, not untouched validation."
+}

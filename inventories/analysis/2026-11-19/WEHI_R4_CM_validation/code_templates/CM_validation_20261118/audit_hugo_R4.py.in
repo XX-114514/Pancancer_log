@@ -1,0 +1,75 @@
+"""Read original XLSX XML, raw GEO metadata and independently replay scores/statistics."""
+from pathlib import Path
+import zipfile,xml.etree.ElementTree as ET,gzip,csv,json,hashlib
+import numpy as np,pandas as pd
+from scipy.stats import rankdata
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/hugo_response_v1'
+P=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/hugo2016')
+sig=pd.read_csv(R/'bulk_R4_candidates/candidate_signatures.tsv',sep='\t');wanted=set(sig.gene)
+ns={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'};tag='{'+ns['s']+'}'
+with zipfile.ZipFile(P/'GSE78220_FPKM.xlsx') as z:
+ wb=ET.fromstring(z.read('xl/workbook.xml'));assert [s.attrib['name'] for s in wb.find('s:sheets',ns)]==['FPKM']
+ strings=[''.join(si.itertext()) for si in ET.fromstring(z.read('xl/sharedStrings.xml'))];expr={};names=[];cols=None
+ with z.open('xl/worksheets/sheet1.xml') as f:
+  for event,row in ET.iterparse(f,events=['end']):
+   if row.tag!=tag+'row':continue
+   cells={}
+   for c in row:
+    if c.tag!=tag+'c':continue
+    assert c.find('s:f',ns) is None
+    v=c.find('s:v',ns)
+    if v is not None:cells[c.attrib['r'].rstrip('0123456789')]=strings[int(v.text)] if c.attrib.get('t')=='s' else v.text
+   if cols is None:
+    cols=list(cells);headers=[cells[k] for k in cols];assert headers[0]=='Gene'
+   else:
+    gene=cells.get('A');names.append(gene)
+    if gene in wanted:expr[gene]=[float(cells[k]) for k in cols[1:]]
+   row.clear()
+assert len(names)==25268 and len(set(names))==25268
+X=pd.DataFrame.from_dict(expr,orient='index',columns=headers[1:])
+chars=[]
+with gzip.open(P/'GSE78220_series_matrix.txt.gz','rt') as f:
+ for line in f:
+  if line.startswith('!series_matrix_table_begin'):break
+  if not line.startswith('!Sample_'):continue
+  row=next(csv.reader([line],delimiter='\t'))
+  if row[0]=='!Sample_geo_accession':gsm=row[1:]
+  elif row[0]=='!Sample_title':titles=row[1:]
+  elif row[0]=='!Sample_characteristics_ch1':chars.append(row[1:])
+meta=[]
+for i,accession in enumerate(gsm):
+ d={'GSM':accession,'title':titles[i]}
+ for values in chars:
+  if ':' not in values[i]:
+   assert not values[i].strip();continue
+  k,v=values[i].split(':',1);d[k.strip()]=v.strip()
+ if d['biopsy time']=='pre-treatment':meta.append(d)
+m=pd.DataFrame(meta);assert len(m)==27
+scores=pd.read_csv(O/'scores_PRIVATE.tsv',sep='\t');a=pd.read_csv(O/'response_associations.tsv',sep='\t');rng=np.random.default_rng(2026111817);maxerr=0.
+def exact_p(n1,n0,u):
+ dist={(0,j):np.array([1.]) for j in range(n0+1)}
+ for i in range(1,n1+1):
+  dist[i,0]=np.array([1.])
+  for j in range(1,n0+1):
+   v=np.zeros(i*j+1);v[j:j+len(dist[i-1,j])]+=dist[i-1,j];v[:len(dist[i,j-1])]+=dist[i,j-1];dist[i,j]=v
+ d=dist[n1,n0];return min(1.,2*d[:int(min(u,n1*n0-u))+1].sum()/d.sum())
+for policy in ['patient_mean_FPKM','single_baseline_only']:
+ b=m if policy=='patient_mean_FPKM' else m[~m['patient id'].duplicated(keep=False)]
+ patients=sorted(b['patient id'].unique());raw=np.stack([X[[v+'.baseline' for v in b.loc[b['patient id']==pt,'title']]].mean(axis=1).to_numpy() for pt in patients]);L=np.log2(raw+.001);Z=(L-L.mean(axis=0))/L.std(axis=0,ddof=1);valid=L.std(axis=0,ddof=1)>1e-8
+ md=b.drop_duplicates('patient id').set_index('patient id').loc[patients];y=md['anti-pd-1 response'].map({'Complete Response':1,'Partial Response':1,'Progressive Disease':0,'Stable Disease':0}).to_numpy();assert np.isfinite(y).all();y=y.astype(int)
+ strata=md[['previous mapki','study site','stranded/unstranded rnaseq']].agg('|'.join,axis=1).to_numpy();indices=[np.flatnonzero(strata==s) for s in sorted(set(strata))];Y=np.tile(y,(9999,1))
+ for ix in indices:
+  for k in range(len(Y)):Y[k,ix]=rng.permutation(y[ix])
+ for (branch,cm),g in sig.groupby(['branch','cm']):
+  ix=X.index.get_indexer(g.gene);ix=ix[ix>=0];ix=ix[valid[ix]];assert len(ix)>=48
+  v=Z[:,ix].mean(axis=1);out=scores[(scores.policy==policy)&(scores.branch==branch)&(scores.cm==cm)].set_index('patient').loc[patients]
+  assert np.allclose(v,out.score,atol=1e-12);assert np.array_equal(y,out.response)
+  maxerr=max(maxerr,float(np.max(abs(v-out.score))))
+  comparisons=v[y==1,None]-v[y==0][None,:];u=float((comparisons>0).sum()+.5*(comparisons==0).sum());auc=u/comparisons.size
+  result=a[(a.policy==policy)&(a.branch==branch)&(a.cm==cm)].iloc[0];assert np.isclose(auc,result.auc_higher_score_response)
+  assert result.MWU_method=='exact' and len(set(v))==len(v);assert np.isclose(exact_p(int(y.sum()),int((1-y).sum()),u),result.p_MWU,atol=1e-12)
+  ranks=rankdata(v);center=sum(ranks[ix].sum()*y[ix].mean() for ix in indices);stat=ranks@y-center;pv=(1+(abs(Y@ranks-center)>=abs(stat)-1e-10).sum())/10000
+  assert np.isclose(pv,result.p_stratified_permutation)
+p=a[['p_MWU','p_stratified_permutation']].to_numpy().ravel();idx=np.argsort(p);q=np.empty(len(p));q[idx]=np.minimum(1,np.minimum.accumulate((p[idx]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1]);assert np.allclose(q,a[['q_joint_MWU','q_joint_stratified']].to_numpy().ravel())
+proof=dict(status='PASS_RAW_XLSX_XML_GEO_PATIENT_BRIDGE_ALL_SCORES_EXACT_U_DISTRIBUTION_PERMUTATIONS_AND_BH',score_values=len(scores),response_tests=len(p),max_score_error=maxerr,association_sha256=hashlib.sha256((O/'response_associations.tsv').read_bytes()).hexdigest(),limitations='replay only; previous use and small cohort preclude confirmatory prediction claim')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

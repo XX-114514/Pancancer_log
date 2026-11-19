@@ -1,0 +1,12 @@
+{
+  "status": "PASS_independent_R4_reference_key_tier_source_measurement_count_and_fitted_signature_audit",
+  "R4_cells": 47622,
+  "nuisance_cells": 5000,
+  "raw_rows_independently_replayed": 20,
+  "maximum_count_difference": 0.0,
+  "source_exact": true,
+  "all_common_genes_measured": true,
+  "fit_epochs": 250,
+  "n_labels": 49,
+  "model_genes": 11600
+}

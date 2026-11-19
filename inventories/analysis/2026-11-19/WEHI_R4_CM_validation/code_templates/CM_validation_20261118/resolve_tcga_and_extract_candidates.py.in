@@ -1,0 +1,51 @@
+"""Historical biotype resolution, fixed before outcome association testing."""
+from pathlib import Path
+import gzip,json,hashlib,time
+import pandas as pd,numpy as np,anndata as ad
+B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/tcga')
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates'
+mp=R/'sources/gencode23/gencode_v23_gene_metadata.tsv.gz';receipt=json.loads((mp.parent/'receipt.json').read_text())
+assert hashlib.sha256(mp.read_bytes()).hexdigest()==receipt['gene_table_sha256']
+gtf=pd.read_csv(mp,sep='\t');assert gtf.gene_id.is_unique
+m=pd.read_csv(R/'clinical/TCGA_gene_mapping.tsv.gz',sep='\t')
+m=m.merge(gtf,left_on='expression_gene_id',right_on='gene_id',how='left',validate='one_to_one')
+assert m.gene_type.notna().all()
+m['selected_for_gene_symbol']=False;m['resolution']='unresolved_multiple_records'
+for symbol,group in m[m.gene_symbol_usable].groupby('gene'):
+ if len(group)==1:chosen=group.index;rule='unique_versioned_record'
+ else:
+  coding=group[group.gene_type.eq('protein_coding')]
+  if len(coding)!=1:continue
+  chosen=coding.index;rule='single_protein_coding_record_among_same_symbol_records'
+ m.loc[chosen,'selected_for_gene_symbol']=True;m.loc[chosen,'resolution']=rule
+selected=m[m.selected_for_gene_symbol].copy();assert selected.gene.is_unique
+rgs=m[m.gene.eq('RGS5')];assert len(rgs)==2
+assert selected.set_index('gene').loc['RGS5','expression_gene_id']=='ENSG00000143248.12'
+assert rgs.set_index('expression_gene_id').loc['ENSG00000232995.7','gene_type']=='antisense'
+m.to_csv(R/'clinical/TCGA_gene_mapping_biotype_resolved.tsv.gz',sep='\t',index=False)
+rgs.to_csv(O/'RGS5_biotype_resolution.tsv',sep='\t',index=False)
+candidates=pd.read_csv(O/'candidate_signatures.tsv',sep='\t');genes=sorted(set(candidates.gene)&set(selected.gene))
+lookup=selected.set_index('gene').loc[genes];ids=dict(zip(lookup.expression_gene_id,genes));arrays={};start=time.time()
+with gzip.open(B/'tcga_RSEM_gene_tpm.gz','rt',encoding='utf-8') as f:
+ samples=f.readline().rstrip('\n').split('\t')[1:]
+ for line in f:
+  identifier,values=line.split('\t',1)
+  if identifier not in ids:continue
+  vals=np.fromstring(values,sep='\t',dtype=np.float64);assert len(vals)==len(samples) and np.isfinite(vals).all()
+  assert vals.min()>=np.log2(.001)-.000051
+  arrays[ids[identifier]]=vals
+assert set(arrays)==set(genes)
+X=np.column_stack([arrays[g] for g in genes]).astype(np.float32)
+obs=pd.DataFrame(index=pd.Index(samples,name='sample'));var=lookup[['expression_gene_id','gene_type','resolution']].copy();var.index.name='gene'
+a=ad.AnnData(X,obs=obs,var=var);a.uns['expression_unit']='log2(TPM + 0.001)';a.uns['not_linear_TPM']=True
+a.write_h5ad(O/'TCGA_candidate_expression_PRIVATE.h5ad',compression='gzip')
+coverage=candidates.assign(resolved=candidates.gene.isin(genes)).groupby(['branch','cm']).agg(total_genes=('gene','size'),resolved_genes=('resolved','sum')).reset_index()
+coverage.to_csv(O/'TCGA_biotype_resolved_candidate_coverage.tsv',sep='\t',index=False)
+proof=dict(status='TCGA_CANDIDATE_EXPRESSION_PREPARED_PENDING_INDEPENDENT_READBACK',samples=a.n_obs,genes=a.n_vars,
+           RGS5_coding_row='ENSG00000143248.12',RGS5_antisense_row_excluded_from_coding_score='ENSG00000232995.7',
+           gene_resolution='unique record, or exactly one protein_coding record among same-symbol records; otherwise unresolved; no sum or averaging',
+           gene_resolution_is_outcome_blind=True,expression_unit='log2(TPM + 0.001)',all_selected_values_finite=True,
+           lowest_value=float(X.min()),seconds=time.time()-start,
+           GENCODE23_compressed_annotation_sha256=receipt['full_download_sha256'],
+           limitations='same-symbol resolution is a coding-focused analysis choice; does not prove original single-cell harmonizer retained coding-only RGS5; clinical scores/models and heldout signature validation still pending')
+(O/'TCGA_expression_preparation.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(coverage.to_string(index=False))

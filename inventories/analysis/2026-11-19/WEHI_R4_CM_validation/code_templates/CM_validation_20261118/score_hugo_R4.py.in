@@ -1,0 +1,53 @@
+"""Frozen signatures in pretreatment Hugo samples, patient-level exploratory response."""
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd
+from scipy.stats import mannwhitneyu,rankdata
+from statsmodels.stats.multitest import multipletests
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/hugo_response_v1';O.mkdir(exist_ok=False)
+plan=dict(status='FROZEN_BEFORE_HUGO_OUTCOMES',cohort='GSE78220; explicit GEO patient id and pre-treatment biopsy only; exclude Pt16 OnTx',
+ signatures='unchanged 15 modules x 2 branches; no outcome-selected genes, directions or thresholds',
+ patient_policy='primary mean linear FPKM across baseline biopsies per patient before log; sensitivity exclude patients with multiple baseline biopsies',
+ score='log2(FPKM+.001), gene z within baseline patient cohort ddof1, mean >=48 variable uniquely mapped genes; FPKM score not directly comparable to TCGA TPM',
+ response='CR/PR vs PD/SD using explicit GEO response; no response imputation',
+ statistic='two-sided Mann Whitney U exact if no ties, asymptotic with ties; signed AUC=P(score responder > score nonresponder)+0.5 ties, never flip direction',
+ sensitivity='9999 response-label permutations within previous MAPKi x study site x library strandedness strata; strata without mixed responses contribute no exchange',
+ family='BH across all 15 CM x 2 branches x 2 biopsy policies x 2 tests within this cohort; cross-cohort correction pending',
+ seed=2026111817,limitations='small previously used cohort, not untouched validation; retrospective response association not treatment-specific predictive effect; no untreated comparator; no survival analysis')
+(O/'plan.json').open('x').write(json.dumps(plan,indent=2))
+p=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk/hugo2016/GSE78220_FPKM.xlsx')
+x=pd.read_excel(p,sheet_name='FPKM',index_col=0);assert x.shape==(25268,28) and x.index.is_unique and x.columns.is_unique
+assert np.isfinite(x.to_numpy()).all() and (x.to_numpy()>=0).all()
+d=pd.read_csv(R/'clinical/hugo2016_sample_bridge_PRIVATE.tsv',sep='\t');assert d.expression_key.is_unique and set(d.expression_key)==set(x.columns)
+assert d['patient_identity_verified'].all();base=d[d['biopsy time'].eq('pre-treatment')].copy();assert len(base)==27
+for field in ['response_raw','response_binary','previous mapki','study site','stranded/unstranded rnaseq']:
+ assert base.groupby('patient_candidate')[field].nunique(dropna=False).eq(1).all()
+meta=base.drop_duplicates('patient_candidate').set_index('patient_candidate').sort_index();assert len(meta)==26
+sigs=pd.read_csv(R/'bulk_R4_candidates/candidate_signatures.tsv',sep='\t');assert hashlib.sha256((R/'bulk_R4_candidates/candidate_signatures.tsv').read_bytes()).hexdigest()=='98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2'
+counts=base.patient_candidate.value_counts();results=[];scores=[];cover=[];rng=np.random.default_rng(plan['seed'])
+for policy in ['patient_mean_FPKM','single_baseline_only']:
+ b=base if policy=='patient_mean_FPKM' else base[base.patient_candidate.map(counts).eq(1)]
+ expr=x[b.expression_key].T;expr.index=b.patient_candidate.to_numpy();expr=expr.groupby(level=0).mean().sort_index();m=meta.loc[expr.index].copy();m['policy']=policy
+ m.to_csv(O/(policy+'_patients_PRIVATE.tsv'),sep='\t');expr.to_csv(O/(policy+'_FPKM_PRIVATE.tsv.gz'),sep='\t')
+ log=np.log2(expr+.001);sd=log.std(ddof=1);valid=sd>1e-8;Z=(log-log.mean())/sd
+ y=m.response_binary.to_numpy(float);assert set(y)=={0.,1.};y=y.astype(int);n1=y.sum();n0=len(y)-n1
+ stratum=m[['previous mapki','study site','stranded/unstranded rnaseq']].astype(str).agg('|'.join,axis=1).to_numpy();indices=[np.flatnonzero(stratum==v) for v in sorted(set(stratum))]
+ Y=np.tile(y,(9999,1))
+ for ix in indices:
+  for k in range(len(Y)):Y[k,ix]=rng.permutation(y[ix])
+ mixed=sum(len(ix) for ix in indices if len(set(y[ix]))==2);null_unique=int(np.unique(Y,axis=0).shape[0])
+ for (branch,cm),sg in sigs.groupby(['branch','cm']):
+  genes=[v for v in sg.gene if v in Z.columns and valid[v]];cover.append(dict(policy=policy,branch=branch,cm=cm,mapped_variable_genes=len(genes),missing_genes=';'.join(v for v in sg.gene if v not in x.index)))
+  if len(genes)<48:continue
+  value=Z[genes].mean(axis=1).to_numpy();ranks=rankdata(value);u=float(ranks@y-n1*(n1+1)/2);auc=u/(n1*n0)
+  method='exact' if len(np.unique(value))==len(value) else 'asymptotic';mw=mannwhitneyu(value[y==1],value[y==0],alternative='two-sided',method=method)
+  assert np.isclose(u,mw.statistic)
+  # Center within each permutation stratum; expectation need not equal global zero.
+  expected=sum(ranks[ix].sum()*y[ix].mean() for ix in indices);observed=float(ranks@y-expected);permuted=Y@ranks-expected
+  pp=(1+np.count_nonzero(np.abs(permuted)>=abs(observed)-1e-10))/10000 if mixed else np.nan
+  results.append(dict(policy=policy,branch=branch,cm=cm,patients=len(y),responders=int(n1),nonresponders=int(n0),auc_higher_score_response=auc,p_MWU=mw.pvalue,MWU_method=method,p_stratified_permutation=pp,mixed_stratum_patients=mixed,unique_permuted_labelings=null_unique))
+  scores.extend(dict(policy=policy,branch=branch,cm=cm,patient=patient,score=float(v),response=int(yy)) for patient,v,yy in zip(m.index,value,y))
+a=pd.DataFrame(results);cols=['p_MWU','p_stratified_permutation'];flat=a[cols].to_numpy().ravel();ok=np.isfinite(flat);q=np.full(len(flat),np.nan);q[ok]=multipletests(flat[ok],method='fdr_bh')[1];a[['q_joint_MWU','q_joint_stratified']]=q.reshape(-1,2)
+a.to_csv(O/'response_associations.tsv',sep='\t',index=False);pd.DataFrame(scores).to_csv(O/'scores_PRIVATE.tsv',sep='\t',index=False);pd.DataFrame(cover).to_csv(O/'gene_coverage.tsv',sep='\t',index=False)
+proof=dict(status='HUGO_RESPONSE_WRITTEN_PENDING_INDEPENDENT_REPLAY',input_sha256=hashlib.sha256(p.read_bytes()).hexdigest(),baseline_samples=len(base),baseline_patients=len(meta),tests=int(ok.sum()),limitations=plan['limitations'])
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof));print(a[a.cm=='CM12'].to_string(index=False))

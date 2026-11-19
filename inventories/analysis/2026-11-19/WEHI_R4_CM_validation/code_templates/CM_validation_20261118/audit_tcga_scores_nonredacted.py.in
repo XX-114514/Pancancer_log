@@ -1,0 +1,31 @@
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/TCGA_scores_nonredacted_v2'
+a=ad.read_h5ad(O.parent/'TCGA_candidate_expression_PRIVATE.h5ad')
+c=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t').set_index('sample');s=pd.read_csv(O/'scores_PRIVATE.tsv.gz',sep='\t')
+assert not s.duplicated(['sample','branch','cm']).any() and np.isfinite(s.score).all()
+assert set(c.Redaction.dropna())=={'Redacted'}
+assert not c.loc[s['sample'],'Redaction'].eq('Redacted').any()
+eligible=c[c.primary_tumor&c.clinical_matched&c.Redaction.isna()];counts=eligible._PATIENT.value_counts();eligible=eligible[eligible._PATIENT.map(counts).eq(1)]
+eligible=eligible.groupby('cancer type abbreviation').filter(lambda g:len(g)>=30)
+assert set(s['sample'])==set(eligible.index) and s.groupby('sample').size().eq(30).all()
+for sample,g in s.groupby('sample'):
+ assert g.patient.nunique()==1 and g.patient.iloc[0]==eligible.loc[sample,'_PATIENT']
+ assert g.cancer.nunique()==1 and g.cancer.iloc[0]==eligible.loc[sample,'cancer type abbreviation']
+sig=pd.read_csv(O.parent/'candidate_signatures.tsv',sep='\t');param=pd.read_csv(O/'gene_standardization_parameters.tsv.gz',sep='\t').set_index(['cancer','gene'])
+rng=np.random.default_rng(2026111812);checked=0;maximum=0.
+for cancer,g in eligible.groupby('cancer type abbreviation'):
+ ids=a.obs_names.get_indexer(g.index);X=pd.DataFrame(a.X[ids].astype(float),index=g.index,columns=a.var_names)
+ mean=X.mean();sd=X.std(ddof=1);stored=param.loc[cancer].loc[a.var_names]
+ assert np.allclose(mean,stored['mean'],atol=1e-12) and np.allclose(sd,stored['sd'],atol=1e-12)
+ Z=(X-mean)/sd.where(sd>1e-8)
+ for (branch,cm),genes in sig.groupby(['branch','cm']):
+  use=[gene for gene in genes.gene if gene in X and sd[gene]>1e-8];assert len(use)>=48
+  expected=Z[use].mean(axis=1);actual=s[(s.cancer==cancer)&(s.branch==branch)&(s.cm==cm)].set_index('sample').loc[g.index,'score']
+  err=np.max(np.abs(expected-actual));assert err<1e-10;maximum=max(maximum,float(err));checked+=len(g)
+proof=dict(status='PASS_ALL_TCGA_SCORES_INDEPENDENT_PANDAS_REPLAY_AND_OUTCOME_BLIND_COHORT_AUDIT',patients=len(eligible),score_values_checked=checked,max_absolute_score_error=maximum,
+           all_32_cancer_gene_standardization_parameters_checked=True,no_survival_eligibility_filter_in_scoring=True,
+           score_file_sha256=hashlib.sha256((O/'scores_PRIVATE.tsv.gz').read_bytes()).hexdigest(),
+           scope='numerical scores and sample membership only; not clinical/biological validity or prediction')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

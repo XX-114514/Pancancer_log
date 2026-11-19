@@ -1,0 +1,11 @@
+{
+  "source": "https://www.nature.com/articles/s41591-024-03376-x",
+  "interpretation": "exploratory identity sensitivity after prior broad-mural results; same six previously used sections; no claim of exact R4 identity or lineage",
+  "parent": "prior native QC and author major contains pvl/mural/perivascular/smooth; excludes prior blood EC; does NOT require prior contractile-heavy mural gate",
+  "pc_program": ">=2 detected among ABCC9,KCNJ8,CSPG4,PDGFRB AND >=1 of ABCC9,KCNJ8; independent of RGS5",
+  "pc_low_MYH11": "parent AND pc_program AND MYH11 RNA ==0 (not proof of biological absence)",
+  "MYH11_contractile": "parent AND MYH11>=1 AND >=1 detected among ACTA2,TAGLN,CNN1; includes pc_program-positive intermediate cells, recorded separately",
+  "untested": "all other parent cells preserved as unresolved; not forced into categories",
+  "tests": "same 96 settings per state; all192new planned plus old96 joint BH; no direction or threshold selection",
+  "thresholds": "all independent auxiliary genes >=1 RNA; ESM1/RGS5 positivity1 and2 from previous frozen test plan"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "HEADNECK_PATIENT_CONTEXT_DESIGN_FROZEN_BEFORE_LR_TESTING",
+  "patients": 48,
+  "patient_repeats": 0,
+  "unresolved_units_excluded": 4,
+  "source": "GSE234933",
+  "primary": "Within context class x HPV label permutations; statistic fixed-block OLS high coefficient = sum((high-block_high_fraction)*score)/sum((high-block_high_fraction)**2); uninformative single-group blocks contribute zero; require >=3 informative patients per group",
+  "secondary": "Unrestricted patient-label permutation of high-minus-low score; same nominal eligibility as prior renal analysis; explicitly unadjusted for specimen context",
+  "permutations": "exact all assignments if total combinations<=9999, otherwise9999 plus-one Monte Carlo; two-sided absolute statistic; preserve original observed high counts per block; seed from SHA256 cm/node1/node2/mode plus fixed salt",
+  "interactions": "all895 audited input-complete DB4.1 interactions, same full-library normalized unit-identity scores and strict detection >.1 gate; no outcome-selected interaction subset",
+  "multiplicity": "joint BH across all nonconstant qualified primary and secondary headneck tests and all11455 prior renal tests; record constant or insufficient contrasts, not negative",
+  "limitations": "Observational conditional exchangeability only. Grouping distant sites does not adjust organ-specific effects. Age, sex, smoking, primary site and treatment remain possible confounders. No patient repeats in these48 verified samples; four unresolved cases excluded rather than guessed. No contact, directionality or causal claims.",
+  "eligible_pairs_unrestricted": 303,
+  "eligible_pairs_conditional": 291,
+  "context_bridge_sha256": "2e10a81e3b2de08ee47162af2c5d53925b7667cf303d46f6c8235db83412d032"
+}

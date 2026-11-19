@@ -1,0 +1,97 @@
+"""Literal Table 3 endpoint qualification, kept separate from model fitting."""
+from pathlib import Path
+import json,hashlib
+import pandas as pd,numpy as np
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1')
+O=R/'clinical/endpoint_qualification_v2_nonredacted';O.mkdir(exist_ok=False)
+# Column order OS PFI DFI DSS. R=check; C=check+asterisk; X=cross; N=NA.
+# Literal author manuscript Table 3 (printed pp37-38); do not silently reconcile prose.
+raw='''ACC R R C R
+BLCA R R R R
+BRCA C R R C
+CESC R R R R
+CHOL R R C C
+COAD R R R R
+DLBC X C X X
+ESCA R R R R
+GBM R R X R
+HNSC R R R R
+KICH C C X C
+KIRC R R C R
+KIRP R R R R
+LAML R N N N
+LGG C R R C
+LIHC R R R C
+LUAD R R R R
+LUSC R R R R
+MESO R R X R
+OV R R R R
+PAAD R R R R
+PCPG X X X X
+PRAD C R R X
+READ C R X C
+SARC R R R R
+SKCM R R N R
+STAD R R R R
+TGCT X R R X
+THCA C R R X
+THYM X R N X
+UCEC R R R R
+UCS R R C R
+UVM R R N R'''
+rows=[]
+for line in raw.splitlines():
+ cancer,*codes=line.split()
+ for endpoint,code in zip(['OS','PFI','DFI','DSS'],codes):
+  rows.append(dict(cancer=cancer,endpoint=endpoint,table3_code=code,
+   recommendation={'R':'recommended','C':'caution','X':'not_recommended','N':'unavailable'}[code],
+   manuscript_page=37 if cancer in [s.split()[0] for s in raw.splitlines()[:21]] else 38,
+   definition_precision=('accurate' if cancer in ['CESC','PAAD','UVM'] else 'approximate') if endpoint=='DSS' and code not in ['X','N'] else ('not_applicable' if code=='N' else 'see_source'),
+   table_prose_conflict=bool(cancer=='PRAD' and endpoint=='OS'),
+   primary_endpoint_permitted=bool(code=='R' and endpoint in ['OS','PFI']),
+   source='https://escholarship.org/content/qt9ng938g3/qt9ng938g3.pdf'))
+rec=pd.DataFrame(rows);assert len(rec)==132 and not rec.duplicated(['cancer','endpoint']).any()
+rec.to_csv(O/'Table3_recommendations.tsv',sep='\t',index=False)
+plan=dict(status='ENDPOINT_QUALIFICATION_BEFORE_SURVIVAL_MODELS',primary_endpoints=['OS','PFI'],
+ min_patients=100,min_events=30,min_events_per_fitted_coefficient=10,
+ endpoint_gate='Table3 unstarred recommended only; excludes all caution, cross and unavailable endpoints from primary analyses',
+ score='existing outcome-blind within-cancer frozen 15 CM scores, primary original-network branch; continuous scores, no optimized cutpoint',
+ population='exact clinically matched unique primary tumour patients in audited score cohort; no metastatic samples',
+ redaction_gate='all clinical Redacted patients excluded before gene standardization and scoring; remaining Redaction field must be missing',
+ covariates='age and sex base model; stage, ABSOLUTE purity and methylation leukocyte fraction sensitivity require separate complete-case, rank and event-count qualification',
+ multiple_testing='joint BH across all tested CM x cancer x endpoint x branch x model combinations; no cherry-picking CM12 or favorable cancer',
+ model_checks='convergence, finite estimates, PH diagnostics and independent numerical replay required; no model fitted in this script',
+ source_conflicts=['PRAD OS Table3 caution whereas manuscript p9-10 says not recommended; both retained and primary excluded',
+ 'PFI prose aggregate 27 recommended plus 5 caution is inconsistent with literal Table3; use explicit per-cancer entries, not inferred counts'],
+ limitations='existing TCGA cohort is exploratory, not untouched validation; endpoint sample availability is not clinical prognostic validation')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+audit=json.loads((R/'bulk_R4_candidates/TCGA_scores_nonredacted_v2/independent_audit.json').read_text());assert audit['status'].startswith('PASS_')
+scores=pd.read_csv(R/'bulk_R4_candidates/TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz',sep='\t')
+s=scores[['sample','patient','cancer']].drop_duplicates();assert s['sample'].is_unique and s.patient.is_unique
+clinical=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t')
+d=s.merge(clinical,on='sample',validate='one_to_one');assert d.patient.eq(d._PATIENT).all() and d.cancer.eq(d['cancer type abbreviation']).all()
+assert d.Redaction.isna().all()
+out=[]
+for cancer,g in d.groupby('cancer'):
+ age=pd.to_numeric(g.age_at_initial_pathologic_diagnosis,errors='coerce')
+ ageok=np.isfinite(age)&age.between(0,120);sexok=g.gender.isin(['MALE','FEMALE'])
+ for endpoint in ['OS','PFI','DFI','DSS']:
+  e=pd.to_numeric(g[endpoint],errors='coerce');t=pd.to_numeric(g[endpoint+'.time'],errors='coerce')
+  valid=e.isin([0,1])&np.isfinite(t)&t.gt(0)
+  row=rec[(rec.cancer==cancer)&(rec.endpoint==endpoint)].iloc[0]
+  for strategy,ok in [('endpoint_only',valid),('age_sex_complete',valid&ageok&sexok)]:
+   n=int(ok.sum());events=int(e[ok].sum());p=1+int(age[ok].nunique()>1)+int(g.loc[ok,'gender'].nunique()>1)
+   enough=n>=100 and events>=max(30,10*p)
+   out.append(dict(cancer=cancer,endpoint=endpoint,strategy=strategy,scored_patients=len(g),patients=n,events=events,
+    missing_or_invalid_endpoint=int((~valid).sum()),base_coefficients=p,table3_code=row.table3_code,
+    passes_endpoint_and_size_gate=bool(row.primary_endpoint_permitted and enough),
+    model_ready=False,pending='endpoint origin audit for PFI, covariate design, PH checks'))
+summary=pd.DataFrame(out);summary.to_csv(O/'endpoint_feasibility.tsv',sep='\t',index=False)
+red=d.Redaction.fillna('MISSING').astype(str).value_counts().to_dict()
+proof=dict(status='TABLE3_TRANSCRIBED_AND_ENDPOINT_FEASIBILITY_COMPUTED_NOT_MODELS',recommendation_rows=len(rec),scored_patients=len(d),
+ cancers=int(d.cancer.nunique()),redaction_values=red,
+ base_age_sex_pass_counts=summary[(summary.strategy=='age_sex_complete')&summary.passes_endpoint_and_size_gate].groupby('endpoint').size().to_dict(),
+ input_score_sha256=hashlib.sha256((R/'bulk_R4_candidates/TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz').read_bytes()).hexdigest(),
+ clinical_sha256=hashlib.sha256((R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv').read_bytes()).hexdigest(),
+ source_pdf_sha256=hashlib.sha256((R/'sources/tcga_metadata/Liu2018_author.pdf').read_bytes()).hexdigest())
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

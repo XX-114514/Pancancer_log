@@ -1,0 +1,33 @@
+"""Separate sample restriction from covariate conditioning, for every qualified model."""
+from pathlib import Path
+import json,time,hashlib,os,warnings
+import pandas as pd,numpy as np
+from statsmodels.duration.hazard_regression import PHReg
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');P=R/'bulk_R4_candidates/TCGA_survival_v1_nonredacted';O=P/'matched_cohort_sensitivity_v1';O.mkdir(exist_ok=False)
+assert json.loads((P/'independent_audit.json').read_text())['status'].startswith('PASS_')
+plan=dict(status='DESCRIPTIVE_SENSITIVITY_FOR_ALL_SUCCESSFUL_ADJUSTED_MODELS',selection='all FIT_OK models other than base, both branches and all 15 modules; not selected by significance or CM12',
+ method='fit age/sex baseline on exactly the same patients as each adjusted model; original outcome-blind module score SD retained',
+ decomposition='adjusted beta minus original full-cohort base beta = matched-base minus full-base (sample restriction) + adjusted minus matched-base (covariate conditioning); algebraic descriptive decomposition, not causal mediation',
+ inference='no new hypothesis tests, p-values or significance claims; existing 3690-model BH retained as provenance only; no comparison of p-values across unequal cohorts',
+ limitations='cannot prove missing-at-random, causal adjustment, incremental prediction or proportional hazards; full and restricted estimates correlated; no interval on beta differences')
+(O/'plan.json').write_text(json.dumps(plan,indent=2))
+a=pd.read_csv(P/'associations.tsv',sep='\t');clinical=pd.read_csv(P/'clinical_PRIVATE.tsv',sep='\t').set_index('sample');scores=pd.read_csv(P/'scores_PRIVATE.tsv.gz',sep='\t');groups={k:g.set_index('sample') for k,g in scores.groupby(['cancer','branch','cm'])};old=a.set_index('id');models=json.loads((P/'plan.json').read_text())['models'];results=[];coefficients=[];start=time.time()
+selected=a[(a.status=='FIT_OK')&a.model.ne('base')]
+for row in selected.itertuples():
+ g=groups[(row.cancer,row.branch,row.cm)];z=clinical.loc[g.index].copy();z['score_sd']=g.score_sd;z['time']=pd.to_numeric(z[row.endpoint+'.time'],errors='coerce');z['event']=pd.to_numeric(z[row.endpoint],errors='coerce');fields=['score_sd']+models[row.model]
+ z=z[z['time'].gt(0)&z.event.isin([0,1])].dropna(subset=['time','event']+fields)
+ assert len(z)==row.patients and z.event.sum()==row.events and z.patient.is_unique
+ cols=[x for x in ['score_sd','age10','sex'] if z[x].nunique()>1]
+ fullid='__'.join([row.cancer,row.branch,row.cm,row.endpoint,'base']);base=old.loc[fullid];assert base.status=='FIT_OK'
+ with warnings.catch_warnings(record=True) as ws:
+  fit=PHReg(z['time'].to_numpy(float),z[cols].to_numpy(float),status=z.event.to_numpy(int),ties='efron').fit(disp=0,maxiter=100,tol=1e-10)
+ assert not ws and np.isfinite(fit.params).all() and np.isfinite(fit.bse).all()
+ matched=float(fit.params[0]);restriction=matched-base.beta;conditioning=row.beta-matched
+ record=dict(id=row.id,cancer=row.cancer,branch=row.branch,cm=row.cm,endpoint=row.endpoint,model=row.model,full_base_patients=int(base.patients),matched_patients=len(z),matched_events=int(z.event.sum()),matched_columns='|'.join(cols),full_base_beta=base.beta,matched_base_beta=matched,adjusted_beta=row.beta,full_base_HR=base.HR,matched_base_HR=float(np.exp(matched)),adjusted_HR=row.HR,beta_shift_sample_restriction=restriction,beta_shift_covariate_conditioning=conditioning,previous_adjusted_q=row.q_all_survival_models,matched_loglik=float(fit.llf),patient_keys_sha256=hashlib.sha256('\n'.join(sorted(z.index)).encode()).hexdigest())
+ assert abs(restriction+conditioning-(row.beta-base.beta))<1e-12
+ results.append(record);coefficients.extend(dict(id=row.id,term=col,beta=float(beta),se=float(se)) for col,beta,se in zip(cols,fit.params,fit.bse))
+ if len(results)%100==0:
+  p=dict(pid=os.getpid(),completed=len(results),total=len(selected),seconds=time.time()-start);(O/'progress.json').write_text(json.dumps(p));print(json.dumps(p),flush=True)
+pd.DataFrame(results).to_csv(O/'matched_comparisons.tsv',sep='\t',index=False);pd.DataFrame(coefficients).to_csv(O/'matched_coefficients.tsv',sep='\t',index=False)
+proof=dict(status='MATCHED_BASE_MODELS_COMPLETE_PENDING_INDEPENDENT_R_AUDIT',comparisons=len(results),seconds=time.time()-start,new_hypothesis_tests=0,input_sha256={f:hashlib.sha256((P/f).read_bytes()).hexdigest() for f in ['associations.tsv','clinical_PRIVATE.tsv','scores_PRIVATE.tsv.gz']})
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

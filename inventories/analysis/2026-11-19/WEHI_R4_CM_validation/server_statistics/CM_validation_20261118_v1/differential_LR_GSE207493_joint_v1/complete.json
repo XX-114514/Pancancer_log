@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_ALL_FEASIBLE_RENAL_CM_PATIENT_CONTRASTS_WITH_JOINT_BH_AND_INDEPENDENT_BH_REPLAY",
+  "source": "GSE207493",
+  "modules": [
+    "CM03",
+    "CM12"
+  ],
+  "pairs": 170,
+  "interaction_pair_rows": 152150,
+  "nonconstant_tests": 11455,
+  "joint_q05": 0,
+  "input_score_hashes": {
+    "CM03": "dadfb8619d4079964a9a5160efead54a6d317e7aec46c242903867cbff049edd",
+    "CM12": "f9c4aa3c7fb89c460bf8fe2d28eba1a10622bfef9f0e775623a69143fbb0aedb"
+  },
+  "scope": "All 15 original modules screened for >=3 verified patients per group and >=10 cells per partner per sample; only CM03 and CM12 qualified. Joint BH includes all qualified modules and ordered pairs in this source, not other sources. Patient randomization is observational exchangeability, not proof of communication, causality, or absent biological effect."
+}

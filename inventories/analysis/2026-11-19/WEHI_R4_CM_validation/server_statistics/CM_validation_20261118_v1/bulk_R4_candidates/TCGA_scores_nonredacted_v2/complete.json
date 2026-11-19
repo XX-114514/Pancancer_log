@@ -1,0 +1,14 @@
+{
+  "redacted_primary_excluded": 43,
+  "status": "TCGA_R4_SCORES_WRITTEN_PENDING_INDEPENDENT_REPLAY",
+  "samples": 9120,
+  "patients": 9120,
+  "cancers": 32,
+  "score_rows": 273600,
+  "finite_scores": 273600,
+  "primary_clinical_samples_before_duplicate_filter": 9163,
+  "duplicate_patient_rows_excluded": 0,
+  "signatures_sha256": "98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2",
+  "expression_sha256": "cefbb3eb0f4021f624ea28c72dc79ed50ca5148211d39c167429aa36a34693aa",
+  "limitations": "score computation only; inherited-label mixture tests are not patient/source-independent validation; full CM scores can reflect immune composition; no clinical association or prediction claimed"
+}

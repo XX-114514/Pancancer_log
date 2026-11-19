@@ -1,0 +1,25 @@
+from pathlib import Path
+import json
+import pandas as pd,numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');O=R/'bulk_R4_candidates/TCGA_survival_v1_nonredacted'
+assert json.loads((O/'independent_audit.json').read_text())['status'].startswith('PASS_')
+a=pd.read_csv(O/'associations.tsv',sep='\t');a=a[a.branch=='original_network_members'].copy();a['log2_HR']=a.beta/np.log(2);a.loc[a.status!='FIT_OK','log2_HR']=np.nan
+cancers=sorted(a.cancer.unique());mods=['CM%02d'%i for i in range(1,16)];cmap=plt.get_cmap('RdBu_r').copy();cmap.set_bad('#dddddd')
+def panel(ax,sub,columns,columnkey,title):
+ mat=sub.pivot(index='cancer',columns=columnkey,values='log2_HR').reindex(index=cancers,columns=columns)
+ im=ax.imshow(mat,cmap=cmap,vmin=-1,vmax=1,aspect='auto');ax.set_xticks(range(len(columns)),columns,rotation=90);ax.set_yticks(range(len(cancers)),cancers);ax.set_title(title)
+ q=sub.pivot(index='cancer',columns=columnkey,values='q_all_survival_models').reindex(index=cancers,columns=columns)
+ ph=sub.assign(flag=sub.ph_score_p.lt(.05)|sub.ph_global_p.lt(.05)).pivot(index='cancer',columns=columnkey,values='flag').reindex(index=cancers,columns=columns).fillna(False)
+ y,x=np.where(q.to_numpy()<.05);ax.scatter(x,y,s=14,c='black',marker='o')
+ y,x=np.where(ph.to_numpy());ax.scatter(x,y,s=18,c='black',marker='x',linewidths=.7)
+ return im
+fig,axes=plt.subplots(1,2,figsize=(14,12),layout='constrained')
+for ax,endpoint in zip(axes,['OS','PFI']):im=panel(ax,a[(a.endpoint==endpoint)&(a.model=='base')],mods,'cm',endpoint+' | age and sex')
+fig.colorbar(im,ax=axes,shrink=.5,label='log2 HR per 1 SD module score (color clipped at +/-1)');fig.suptitle('TCGA exploratory prognosis: all 15 frozen R4 modules',fontsize=15);fig.supxlabel('Dots: joint BH q < .05 over all 3,690 fitted models. Crosses: nominal score or global PH p < .05.\nGrey: endpoint not recommended or insufficient complete-case patients/events. No external predictive validation.',fontsize=10);fig.savefig(O/'all15_base_OS_PFI.png',dpi=160);plt.close(fig)
+c=a[a.cm=='CM12'].copy();c['model_endpoint']=c.endpoint+' / '+c.model;cols=[e+' / '+m for e in ['OS','PFI'] for m in ['base','stage','composition','stage_composition']]
+fig,ax=plt.subplots(figsize=(11,13),layout='constrained');im=panel(ax,c,cols,'model_endpoint','CM12 | all predeclared covariate models');fig.colorbar(im,ax=ax,shrink=.5,label='log2 HR per 1 SD (color clipped at +/-1)');fig.supxlabel('Dots: joint BH q < .05. Crosses: nominal PH warning. Grey: not assessable.\nComposition = ABSOLUTE purity + methylation leukocyte fraction; stage = recorded I/II vs III/IV.\nModel-specific complete cases differ; these are associations, not validated risk predictions.',fontsize=10);fig.savefig(O/'CM12_all_models.png',dpi=160);plt.close(fig)
+c.to_csv(O/'CM12_primary_branch_all_models.tsv',sep='\t',index=False);a.to_csv(O/'all15_primary_branch_models.tsv',sep='\t',index=False)
+print('SURVIVAL_FIGURES_AND_FULL_PRIMARY_TABLES_WRITTEN')

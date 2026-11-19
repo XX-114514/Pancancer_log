@@ -1,0 +1,34 @@
+"""Independent split risk sets and all successful Efron PHReg refits."""
+from pathlib import Path
+import json,hashlib,time,os,warnings
+import numpy as np,pandas as pd
+from scipy.stats import norm
+from statsmodels.duration.hazard_regression import PHReg
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');P=R/'bulk_R4_candidates/TCGA_survival_v1_nonredacted';O=P/'piecewise_one_year_v1'
+a=pd.read_csv(O/'piecewise_associations.tsv',sep='\t');old=pd.read_csv(P/'associations.tsv',sep='\t').set_index('id');clinical=pd.read_csv(P/'clinical_PRIVATE.tsv',sep='\t').set_index('sample');scores=pd.read_csv(P/'scores_PRIVATE.tsv.gz',sep='\t');groups={k:g.set_index('sample') for k,g in scores.groupby(['cancer','branch','cm'])};models=json.loads((P/'plan.json').read_text())['models'];terms=pd.read_csv(O/'all_coefficients.tsv',sep='\t');coefs={k:g.set_index('term') for k,g in terms.groupby('id')};assert set(a.id)==set(old.index[old.status.eq('FIT_OK')]);maxbeta=0.;maxse=0.;maxll=0.;maxcov=0.;fits=0;started=time.time();numeric=[]
+for i,row in enumerate(a.itertuples()):
+ base=old.loc[row.id];g=groups[(row.cancer,row.branch,row.cm)];z=clinical.loc[g.index].copy();z['score_sd']=g.score_sd;z['time']=pd.to_numeric(z[row.endpoint+'.time']);z['event']=pd.to_numeric(z[row.endpoint]);fields=['score_sd']+models[row.model];z=z[z.time.gt(0)&z.event.isin([0,1])].dropna(subset=['time','event']+fields)
+ assert len(z)==row.patients==base.patients and z.event.sum()==row.events==base.events and z.patient.is_unique
+ early=z.time.le(365.25);late=~early;ne=int(z.loc[early,'event'].sum());nl=int(z.loc[late,'event'].sum());assert ne==row.early_events and nl==row.late_events and late.sum()==row.patients_beyond_cut
+ cols=base['columns'].split('|');eligible=z.event.sum()>=max(30,10*(len(cols)+1)) and min(ne,nl)>=20 and late.sum()>=20
+ if not eligible:assert row.status=='INSUFFICIENT_PERIOD_EVENTS';continue
+ if row.status!='FIT_OK':raise AssertionError('Eligible model needs explicit review: '+row.id+' '+row.status)
+ # Independently construct first interval for all, plus late interval for survivors.
+ first=z[cols].to_numpy(float);second=z.loc[late,cols].to_numpy(float);X=np.vstack([np.column_stack([first,np.zeros(len(z))]),np.column_stack([second,z.loc[late,'score_sd'].to_numpy()])]);end=np.r_[np.minimum(z.time.to_numpy(),365.25),z.loc[late,'time']];entry=np.r_[np.zeros(len(z)),np.full(late.sum(),365.25)];event=np.r_[np.where(early,z.event,0),z.loc[late,'event']].astype(int);names=cols+['score_late'];assert event.sum()==z.event.sum() and np.all(end>entry)
+ with warnings.catch_warnings(record=True) as ws:
+  fit=PHReg(end,X,status=event,entry=entry,ties='efron').fit(disp=0,maxiter=100,tol=1e-10)
+ assert not ws and np.isfinite(fit.params).all() and np.isfinite(fit.bse).all(),(row.id,[str(w.message) for w in ws])
+ expected=coefs[row.id].loc[names];eb=np.max(abs(fit.params-expected.beta));es=np.max(abs(fit.bse-expected.se));el=abs(fit.llf-row.loglik);maxbeta=max(maxbeta,float(eb));maxse=max(maxse,float(es));maxll=max(maxll,float(el));assert eb<5e-5 and es<5e-5 and el<1e-6,(row.id,eb,es,el)
+ j=names.index('score_sd');k=names.index('score_late');V=fit.cov_params();be=fit.params[j];delta=fit.params[k];bl=be+delta;see=fit.bse[j];sed=fit.bse[k];sel=np.sqrt(V[j,j]+V[k,k]+2*V[j,k]);maxcov=max(maxcov,abs(V[j,k]-row.cov_score_change));assert abs(V[j,k]-row.cov_score_change)<5e-5
+ for suffix,b,se in [('early',be,see),('late',bl,sel),('change',delta,sed)]:
+  assert abs(b-getattr(row,'beta_'+suffix))<1e-4 and abs(se-getattr(row,'se_'+suffix))<1e-4
+  p=2*norm.sf(abs(b/se));assert abs(p-getattr(row,'p_'+suffix))<1e-5
+  if suffix!='change':
+   assert np.allclose([np.exp(b),np.exp(b-1.959963984540054*se),np.exp(b+1.959963984540054*se)],[getattr(row,'HR_'+suffix),getattr(row,'CI_'+suffix+'_low'),getattr(row,'CI_'+suffix+'_high')],rtol=1e-4,atol=1e-5)
+ fits+=1;numeric.append(dict(id=row.id,max_beta_error=eb,max_se_error=es,loglik_error=el))
+ if fits%50==0:
+  progress=dict(pid=os.getpid(),models_checked=i+1,fits_replayed=fits,total_models=len(a),seconds=time.time()-started);(O/'audit_progress.json').write_text(json.dumps(progress));print(json.dumps(progress),flush=True)
+prior=pd.read_csv(O/'prior_associations_joint_q.tsv',sep='\t');orig=old.loc[prior.id];assert np.allclose(prior.p,orig.p,equal_nan=True);ok=a.status.eq('FIT_OK');mask=prior.p.notna();p=np.r_[prior.loc[mask,'p'],a.loc[ok,'p_early'],a.loc[ok,'p_late'],a.loc[ok,'p_change']];q=np.r_[prior.loc[mask,'q_joint_piecewise'],a.loc[ok,'q_joint_early'],a.loc[ok,'q_joint_late'],a.loc[ok,'q_joint_change']];order=np.argsort(p);explicit=np.minimum.accumulate((p[order]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1].clip(0,1);assert np.allclose(explicit,q[order],atol=1e-12)
+pd.DataFrame(numeric).to_csv(O/'independent_numeric_replay.tsv',sep='\t',index=False)
+proof=dict(status='PASS_ALL_COHORTS_SPLIT_RISKSETS_EFRON_COEFFICIENTS_SE_LOG_LIKELIHOOD_PERIOD_CI_P_AND_JOINT_BH',planned_models=len(a),independent_refits=fits,joint_tests=len(p),max_beta_error=maxbeta,max_SE_error=maxse,max_loglik_error=maxll,max_score_change_covariance_error=maxcov,seconds=time.time()-started,association_sha256=hashlib.sha256((O/'piecewise_associations.tsv').read_bytes()).hexdigest(),scope='All successful models independently fitted with PHReg delayed-entry intervals, all insufficient designs reconstructed. Prior clinical mapping/score audit separate. One-year sensitivity only, no correction of other non-PH covariates, no external prediction validation.')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

@@ -1,0 +1,74 @@
+"""Independent clinical design reconstruction and Python Efron Cox numerical replay."""
+from pathlib import Path
+import json,hashlib,time,os,warnings
+import numpy as np,pandas as pd
+from scipy.stats import norm,chi2
+from statsmodels.duration.hazard_regression import PHReg
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=R/'bulk_R4_candidates';O=B/'TCGA_survival_v1_nonredacted'
+assert (O/'complete.json').exists()
+start=time.time();raw=pd.read_csv(B/'TCGA_scores_nonredacted_v2/scores_PRIVATE.tsv.gz',sep='\t');clin=pd.read_csv(R/'clinical/TCGA_sample_clinical_bridge_PRIVATE.tsv',sep='\t').set_index('sample');mix=pd.read_csv(B/'TCGA_leukocyte_purity_v3_nonredacted/analysis_bridge_PRIVATE.tsv.gz',sep='\t').set_index('sample')
+cohort=raw[['sample','patient','cancer']].drop_duplicates().set_index('sample');assert cohort.index.is_unique and cohort.patient.is_unique and clin.loc[cohort.index,'Redaction'].isna().all()
+d=cohort.join(clin[['OS','OS.time','PFI','PFI.time','age_at_initial_pathologic_diagnosis','gender','ajcc_pathologic_tumor_stage','clinical_stage']]);d['age10']=(pd.to_numeric(d.age_at_initial_pathologic_diagnosis,errors='coerce').where(lambda a:a.between(0,120))-60)/10;d['sex']=d.gender.map({'MALE':1.,'FEMALE':0.})
+valid_stage={base+suffix:level for level,base in enumerate(['I','II','III','IV'],1) for suffix in ['','A','B','C','A1','A2','B1','B2','C1','C2']}
+def parse_stage(v):
+ if pd.isna(v):return np.nan
+ v=str(v).strip().upper()
+ if v.startswith('STAGE '):v=v[6:].strip()
+ return valid_stage.get(v,np.nan)
+d['stage_late']=np.nan;stagechoices={}
+for cancer,g in d.groupby('cancer'):
+ path=g.ajcc_pathologic_tumor_stage.map(parse_stage);cl=g.clinical_stage.map(parse_stage)
+ if path.notna().mean()>=.5:stagechoices[cancer]='path_stage';stage=path
+ elif cl.notna().mean()>=.5:stagechoices[cancer]='clin_stage';stage=cl
+ else:stagechoices[cancer]='unavailable';stage=pd.Series(np.nan,index=g.index)
+ d.loc[g.index,'stage_late']=stage.where(stage.isna(),stage.ge(3).astype(float))
+d['purity10']=mix.purity.reindex(d.index)*10;d['LF10']=mix.LF_single.reindex(d.index)*10
+stored=pd.read_csv(O/'clinical_PRIVATE.tsv',sep='\t').set_index('sample');assert set(stored.index)==set(d.index)
+for col in ['age10','sex','stage_late','purity10','LF10']:
+ assert np.allclose(stored.loc[d.index,col],d[col],equal_nan=True,atol=1e-12)
+assert stored.stage_source.eq(stored.cancer.map(stagechoices)).all()
+ss=pd.read_csv(O/'scores_PRIVATE.tsv.gz',sep='\t').set_index(['sample','branch','cm']);groups={}
+for key,g in raw.groupby(['cancer','branch','cm']):
+ g=g.set_index('sample');expected=(g.score-g.score.mean())/g.score.std(ddof=1);actual=ss.loc[[(i,key[1],key[2]) for i in g.index],'score_sd'].to_numpy();assert np.allclose(expected,actual,atol=1e-12)
+ groups[key]=expected
+plan=json.loads((O/'plan.json').read_text());a=pd.read_csv(O/'associations.tsv',sep='\t');co=pd.read_csv(O/'all_coefficients.tsv',sep='\t').set_index(['id','term']);rec=pd.read_csv(O/'endpoint_recommendations.tsv',sep='\t').set_index(['cancer','endpoint']);assert not a.id.duplicated().any() and len(a)==32*2*15*2*4
+checks=[];maxbeta=maxse=maxll=0.;done=0
+for row in a.itertuples():
+ allowed=bool(rec.loc[(row.cancer,row.endpoint),'primary_endpoint_permitted'])
+ if not allowed:
+  assert row.status=='ENDPOINT_NOT_PRIMARY_RECOMMENDED';continue
+ z=d[d.cancer==row.cancer].copy();z['score_sd']=groups[(row.cancer,row.branch,row.cm)].reindex(z.index);z['time']=pd.to_numeric(z[row.endpoint+'.time'],errors='coerce');z['event']=pd.to_numeric(z[row.endpoint],errors='coerce');fields=['score_sd']+plan['models'][row.model]
+ z=z[z['time'].gt(0)&z.event.isin([0,1])].dropna(subset=['time','event']+fields)
+ cols=[c for c in fields if z[c].nunique()>1];assert row.patients==len(z) and row.events==z.event.sum() and row.coefficients==len(cols)
+ assert (row.columns if pd.notna(row.columns) else '')=='|'.join(cols)
+ if row.status!='FIT_OK':
+  assert pd.isna(row.p)
+  if row.status=='INSUFFICIENT_PATIENTS_OR_EVENTS':assert len(z)<100 or z.event.sum()<max(30,10*len(cols))
+  continue
+ assert len(z)>=100 and z.event.sum()>=max(30,10*len(cols)) and 'score_sd' in cols
+ X=z[cols].to_numpy(float);model=PHReg(z['time'].to_numpy(float),X,status=z.event.to_numpy(int),ties='efron')
+ with warnings.catch_warnings(record=True) as ws:
+  fit=model.fit(disp=0,maxiter=100,tol=1e-10)
+ assert not ws,[str(w.message) for w in ws]
+ expected=co.loc[[(row.id,c) for c in cols]];errbeta=float(np.max(np.abs(fit.params-expected.beta.to_numpy())));errse=float(np.max(np.abs(fit.bse-expected.se.to_numpy())));errll=abs(float(fit.llf)-row.loglik)
+ assert errbeta<1e-5 and errse<1e-5 and errll<1e-5,(row.id,errbeta,errse,errll)
+ assert np.allclose([row.beta,row.se],[fit.params[0],fit.bse[0]],atol=1e-5)
+ p=float(2*norm.sf(abs(row.beta/row.se)));assert abs(p-row.p)<1e-12
+ assert np.allclose([row.HR,row.CI_low,row.CI_high],np.exp(row.beta+np.array([0,-1,1])*norm.ppf(.975)*row.se),rtol=1e-10)
+ maxbeta=max(maxbeta,errbeta);maxse=max(maxse,errse);maxll=max(maxll,errll);done+=1
+ checks.append(dict(id=row.id,patients=len(z),events=int(z.event.sum()),max_beta_error=errbeta,max_se_error=errse,loglik_error=errll))
+ if done%30==0:
+  progress=dict(status='AUDIT_RUNNING',pid=os.getpid(),models_checked=done,total_models=int(a.status.eq('FIT_OK').sum()),seconds=time.time()-start,max_beta_error=maxbeta)
+  (O/'audit_progress.json').write_text(json.dumps(progress));print(json.dumps(progress),flush=True)
+def bh(p):
+ p=np.asarray(p);order=np.argsort(p,kind='stable');q=np.minimum.accumulate((p[order]*len(p)/np.arange(1,len(p)+1))[::-1])[::-1];out=np.empty_like(q);out[order]=np.clip(q,0,1);return out
+valid=a.p.notna();assert np.allclose(bh(a.loc[valid,'p']),a.loc[valid,'q_all_survival_models'],atol=1e-12)
+ph=pd.read_csv(O/'PH_diagnostics.tsv',sep='\t');assert np.allclose(chi2.sf(ph.chisq,ph.df),ph.p,atol=1e-12);assert np.allclose(bh(ph.p),ph.q_all_PH_diagnostics,atol=1e-12)
+for row in a[a.status=='FIT_OK'].itertuples():
+ if row.ph_status=='CHECKED':
+  x=ph[ph.id==row.id].set_index('term');assert np.isclose(row.ph_score_p,x.loc['score_sd','p']) and np.isclose(row.ph_global_p,x.loc['GLOBAL','p'])
+pd.DataFrame(checks).to_csv(O/'independent_numeric_replay.tsv',sep='\t',index=False)
+proof=dict(status='PASS_CLINICAL_DESIGN_ALL_EFRON_COX_COEFFICIENTS_SE_LOGLIK_P_AND_JOINT_BH',models_replayed=done,max_beta_error=maxbeta,max_se_error=maxse,max_loglik_error=maxll,seconds=time.time()-start,
+ PH_scope='R cox.zph statistic-to-p, term/global linkage and BH readback only; PH score statistic itself not independently recomputed',
+ association_sha256=hashlib.sha256((O/'associations.tsv').read_bytes()).hexdigest(),limitations='numerical and linkage audit, not external prognostic validity; no proof of proportional hazards from nonsignificant diagnostic')
+(O/'independent_audit.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof),flush=True)

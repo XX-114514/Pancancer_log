@@ -1,0 +1,38 @@
+"""Source-specific explicit GEO patient bridge for three CM12 sources."""
+from pathlib import Path
+import gzip,json,hashlib,re
+import pandas as pd
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');S=R/'sources/patient_GEO';O=R/'patient_bridge_GEO_v1';O.mkdir(exist_ok=False)
+u=pd.read_csv(R/'patient_bridge_v1/unit_patient_bridge_PRIVATE.tsv',sep='\t',dtype={'unit':str});receipt=json.loads((S/'receipt.json').read_text());rows=[];sourceproof=[]
+for source in ['GSE149614','GSE207493','GSE234933']:
+ rr=next(x for x in receipt if x['accession']==source);p=S/(source+'_family.soft.gz');assert hashlib.sha256(p.read_bytes()).hexdigest()==rr['sha256']
+ text=gzip.decompress(p.read_bytes()).decode();records=[]
+ for block in text.split('^SAMPLE = ')[1:]:
+  lines=block.splitlines();d={'gsm':lines[0]};attrs={}
+  for line in lines[1:]:
+   if line.startswith('!Sample_title = '):d['title']=line.split(' = ',1)[1]
+   if line.startswith('!Sample_characteristics_ch1 = '):
+    k,v=line.split(' = ',1)[1].split(':',1);assert k.strip().lower() not in attrs;attrs[k.strip().lower()]=v.strip()
+  d['attributes']=attrs;records.append(d)
+ if source=='GSE149614':
+  for d in records:d.update(sample_key=d['title'],patient=d['attributes']['patient'],basis='explicit_GEO_sample_patient_characteristic')
+ elif source=='GSE234933':
+  for d in records:
+   subject=d['attributes']['subject'];assert subject.startswith('patient ');patient=subject[len('patient '):];assert d['title'].endswith('patient '+patient)
+   d.update(sample_key=patient,patient=patient,basis='explicit_GEO_subject_and_matching_title')
+ else:
+  assert '!Series_overall_design = ccRCC samples from 19 patients were used for both single-cell RNA sequencing and single-cell ATAC sequencing by 10X Genomics.' in text
+  records=[d for d in records if d['title'].startswith('scRNA-seq_')];assert len(records)==19
+  for d in records:
+   key=d['title'][len('scRNA-seq_'):];assert re.fullmatch('RCC[0-9]+',key);d.update(sample_key=key,patient=key,basis='GEO_explicit_19_patient_design_plus_19_unique_scRNA_sample_titles')
+ assert len({d['sample_key'] for d in records})==len(records)
+ lookup={d['sample_key']:d for d in records};units=u[u.source.eq(source)]
+ for row in units.itertuples():
+  assert row.unit.startswith(source+'|');key=row.unit[len(source)+1:];d=lookup[key];expected=source+':'+d['patient'];assert expected==row.native_patient_ids and row.n_native_patients==1
+  rows.append(dict(unit=row.unit,source=source,cancer=row.cancer,CMT=row.CMT,gsm=d['gsm'],GEO_title=d['title'],GEO_patient=d['patient'],source_patient_key=source+'||'+d['patient'],native_patient_id=row.native_patient_ids,patient_identity_source_verified=True,evidence_basis=d['basis'],GEO_sample_attributes=json.dumps(d['attributes'],sort_keys=True),source_sha256=rr['sha256']))
+ sourceproof.append(dict(source=source,GEO_matched_sample_records=len(records),GEO_unique_patient_labels=len({d['patient'] for d in records}),R4_units_matched=len(units),evidence_basis=records[0]['basis']))
+v=pd.DataFrame(rows);assert len(v)==84 and v.unit.is_unique;v.to_csv(O/'source_verified_patient_bridge_PRIVATE.tsv',sep='\t',index=False)
+p=v.groupby('source_patient_key').agg(source=('source','first'),units=('unit','size'),CMTs=('CMT','nunique'));p.to_csv(O/'source_verified_repeats_PRIVATE.tsv',sep='\t')
+proof=dict(status='PASS_NATIVE_UNIT_TO_SOURCE_GEO_PATIENT_BRIDGE_FOR_THREE_CM12_SOURCES',sources=sourceproof,units=len(v),source_patient_keys=len(p),patients_with_multiple_units=int(p.units.gt(1).sum()),patients_spanning_multiple_CMTs=int(p.CMTs.gt(1).sum()),
+ limitations='author-supplied anonymized patient identity, not clinical identity verification; GSE207493 patient-level evidence is series design plus exact one-RNA-sample mapping rather than individual patient characteristic; repeated samples must be clustered/paired, not treated as independent; other sources unverified; preserve primary/recurrent/metastatic sample context')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps(proof))

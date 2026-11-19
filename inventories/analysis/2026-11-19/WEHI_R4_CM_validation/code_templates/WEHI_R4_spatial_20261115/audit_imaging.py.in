@@ -1,0 +1,29 @@
+from pathlib import Path
+import json
+import numpy as np,pandas as pd,anndata as ad
+from scipy import sparse
+R=Path('${PROJECT_ARCHIVE_ROOT}/spatial_CoVarNet_R4_20261115_v1')
+P=Path('${PANCANCER_ROOT}/Project_v3/runs/20261108_V4_native_coordinate_fix_v1')
+W=pd.read_csv(R/'adapter/CM_results/W_PRIVATE.tsv',sep='\t',index_col=0)
+core={'CM01':['Endo_venous_ACKR1','Str_Fib_PI16'],'CM12':['Endo_tip_ESM1','Str_Pericyte_RGS5','Mye_Mac_FOLR2'],'CM04':['Endo_arterial_GJA5','Str_SMC_MYH11']}
+genes=sorted({n.split('_')[-1] for ns in core.values() for n in ns});rng=np.random.default_rng(2026111502);checks=[]
+for unit in ['S01','S02','S03','S04','S05','S06']:
+    a=ad.read_h5ad(P/'inputs_direct_v1'/unit/'native_PRIVATE.h5ad',backed='r')
+    f,=P.glob('outputs*/spatial_controls_v1/'+unit+'/cell_identity_view_PRIVATE.tsv.gz');c=pd.read_csv(f,sep='\t')
+    assert len(c)==a.n_obs
+    xy=a.obs[['x_centroid','y_centroid']].to_numpy(float)
+    assert np.allclose(xy,c[['x_um','y_um']].to_numpy(),rtol=0,atol=1e-7)
+    total=a.obs.transcript_counts.to_numpy(float);assert np.array_equal(total,c.native_total.to_numpy())
+    qc=c.QC_keep.astype(str).str.lower().eq('true').to_numpy();symbols=pd.Index(a.var.gene_symbol.astype(str) if 'gene_symbol' in a.var else a.var_names);assert symbols.is_unique
+    ix=sorted(symbols.get_loc(g) for g in genes);ordered=list(symbols[ix]);maxerr=0.;tested=0
+    for size in [100,200]:
+        d=pd.read_csv(R/'imaging'/('breast_'+unit)/f'grid{size}_activity_PRIVATE.tsv.gz',sep='\t');tiles=np.floor(xy/size).astype(int)
+        for k in rng.choice(len(d),min(12,len(d)),replace=False):
+            row=d.iloc[k];tile=np.floor(row[['x_um','y_um']].to_numpy(float)/size).astype(int);rows=np.flatnonzero(qc&(tiles==tile).all(axis=1));assert len(rows)==row.QC_cells
+            x=a[rows,ix].X;x=x.toarray() if sparse.issparse(x) else np.asarray(x);raw=np.expm1(x.astype(float));assert np.allclose(raw,np.rint(raw),atol=.001,rtol=.00001);sums=np.rint(raw).sum(axis=0);density=dict(zip(ordered,sums/total[rows].sum()*1e4))
+            for cm,ns in core.items():
+                expected=sum(W.loc[n,cm]*density[n.split('_')[-1]] for n in ns);error=abs(expected-row[cm]);maxerr=max(maxerr,error);assert np.isclose(expected,row[cm],rtol=1e-10,atol=1e-8)
+            tested+=1
+    a.file.close();checks.append({'section':'breast_'+unit,'all_coordinates_match_native_centroids':True,'all_RNA_totals_match_native_transcript_counts':True,'random_grids_independently_replayed':tested,'max_activity_difference':maxerr})
+receipt={'status':'PASS_all_six_breast_native_axis_coordinate_depth_and_sampled_raw_activity_replay','checks':checks}
+(R/'imaging/independent_audit.json').write_text(json.dumps(receipt,indent=2));print(json.dumps(receipt))

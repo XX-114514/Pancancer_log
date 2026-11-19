@@ -1,0 +1,43 @@
+from pathlib import Path
+import json,hashlib
+import numpy as np,pandas as pd,anndata as ad,zarr,scipy.sparse as sp
+B=Path('${PROJECT_ARCHIVE_ROOT}');R=B/'CM_validation_20261118_v1/spatial_melanoma/reference'
+proof=json.loads((R/'preparation.json').read_text());assert proof['status']=='MELANOMA_REFERENCE_PREPARED_PENDING_INDEPENDENT_RAW_REPLAY'
+a=ad.read_h5ad(R/'reference_and_heldout_PRIVATE.h5ad');old=ad.read_h5ad(B/'spatial_CoVarNet_R4_20261115_v1/reference/reference_and_heldout_PRIVATE.h5ad')
+assert a.var_names.equals(old.var_names) and a.obs_names.is_unique
+assert a.obs_names[:old.n_obs].equals(old.obs_names)
+assert (a.X[:old.n_obs]-old.X).nnz==0
+for col in old.obs:assert np.array_equal(a.obs.iloc[:old.n_obs][col].astype(str),old.obs[col].astype(str))
+q=pd.read_csv(R/'selected_melanoma_cells_PRIVATE.tsv.gz',sep='\t',index_col=0)
+new=a[old.n_obs:].copy();assert new.obs_names.equals(q.index)
+assert q.groupby(['source','unit_id']).size().le(100).all()
+assert q.groupby('source').size().le(1100).all()
+assert new.obs.node.eq('nuisance:Cutaneous_melanoma_consensus').all()
+for source,v in q.groupby('source'):
+ original=pd.read_csv(B/'w2o_records_tree/malignancy_v1'/(source+'.tsv.gz'),sep='\t',index_col='cell_id').loc[v.index]
+ assert original.malignancy_call.eq('malignant').all() and original.malignancy_rule.eq('scATOMIC_tumour_and_CNV_positive').all() and original.scATOMIC_pred.eq('Skin Cancer Cell').all()
+z=zarr.open_group(str(B/'zarr/integration_v2.zarr'),mode='r');axis=pd.Index(z['obs/_index'][:]);var=pd.Index(z['var/_index'][:]);positions=axis.get_indexer(new.obs_names);assert np.array_equal(positions,q.raw_row)
+mat=z['layers/counts'];ptr=mat['indptr'][:];cols=var.get_indexer(a.var_names);rng=np.random.default_rng(2026111804);checked=0
+for source in sorted(q.source.unique()):
+ for split in ['reference','heldout']:
+  loc=np.flatnonzero(q.source.eq(source)&q.split.eq(split));assert len(loc)
+  for i in rng.choice(loc,min(8,len(loc)),replace=False):
+   row=int(positions[i]);left,right=int(ptr[row]),int(ptr[row+1]);v=mat['data'][left:right];ix=mat['indices'][left:right]
+   raw=np.zeros(len(var));np.add.at(raw,ix,v)
+   assert np.array_equal(raw[cols],new.X[i].toarray().ravel());checked+=1
+assert np.isfinite(a.X.data).all() and (a.X.data>=0).all() and np.array_equal(a.X.data,np.rint(a.X.data))
+markers=['PMEL','MLANA','SOX10','MITF','TYR','TYRP1','PTPRC','PECAM1','VWF','RGS5','ESM1','COL1A1','EPCAM','KRT18']
+rows=[]
+for (source,split),idx in new.obs.groupby(['source','split'],observed=True).indices.items():
+ X=new.X[idx];tot=np.asarray(X.sum(axis=1)).ravel()
+ for gene in markers:
+  if gene in new.var_names:
+   v=X[:,new.var_names.get_loc(gene)].toarray().ravel()
+   rows.append(dict(source=source,split=split,gene=gene,in_reference_gene_scope=True,positive_fraction=float((v>0).mean()),mean_log1p_10k_reference_scope=float(np.log1p(1e4*v/tot).mean())))
+  else:rows.append(dict(source=source,split=split,gene=gene,in_reference_gene_scope=False,positive_fraction=None,mean_log1p_10k_reference_scope=None))
+pd.DataFrame(rows).to_csv(R/'melanoma_marker_audit.tsv',sep='\t',index=False)
+result=dict(status='PASS_OLD_REFERENCE_EXACT_PRESERVATION_AND_MELANOMA_NATIVE_REPLAY',original_cells=old.n_obs,new_cells=new.n_obs,labels=a.obs.node.nunique(),replayed_native_rows=checked,
+            all_values_integer_finite_nonnegative=True,source_unit_caps_verified=True,
+            reference_sha256=hashlib.sha256((R/'reference_and_heldout_PRIVATE.h5ad').read_bytes()).hexdigest(),
+            identity_review='marker_audit written; interpretation and heldout separability pending',patient_independence=False)
+(R/'independent_input_audit.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))

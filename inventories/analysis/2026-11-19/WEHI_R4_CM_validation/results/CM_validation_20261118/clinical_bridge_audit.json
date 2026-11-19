@@ -1,0 +1,68 @@
+[
+  {
+    "cohort": "riaz2017",
+    "metadata_samples": 109,
+    "expression_columns": 109,
+    "matched_metadata_samples": 109,
+    "unmatched_expression_columns": 0,
+    "duplicate_expression_key_rows": 0,
+    "verified_baseline_samples": 51,
+    "multiple_baseline_candidate_rows": 0,
+    "baseline_response_candidates": 49,
+    "response_counts_baseline_candidates": {
+      "0.0": 39,
+      "1.0": 10
+    },
+    "eligible_for_confirmatory_model": false,
+    "metadata_sha256": "f3ebd04d019afab9f12af0b92cfcafa516bb2b170f5b45d22d5e330e2eebdca0",
+    "limitations": "patient/timepoint/clinical provenance and previous-use audit pending; response binary exploratory; survival times/events retained raw, not inferred"
+  },
+  {
+    "cohort": "hugo2016",
+    "metadata_samples": 28,
+    "expression_columns": 28,
+    "matched_metadata_samples": 28,
+    "unmatched_expression_columns": 0,
+    "duplicate_expression_key_rows": 0,
+    "verified_baseline_samples": 27,
+    "multiple_baseline_candidate_rows": 2,
+    "baseline_response_candidates": 25,
+    "response_counts_baseline_candidates": {
+      "1": 13,
+      "0": 12
+    },
+    "eligible_for_confirmatory_model": false,
+    "metadata_sha256": "b2d7829dac364e7773390255252adb5c42f07104136a1f93d2a767e9522c086f",
+    "limitations": "patient/timepoint/clinical provenance and previous-use audit pending; response binary exploratory; survival times/events retained raw, not inferred"
+  },
+  {
+    "cohort": "jung2019_nsclc",
+    "metadata_samples": 27,
+    "expression_columns": 27,
+    "matched_metadata_samples": 27,
+    "unmatched_expression_columns": 0,
+    "duplicate_expression_key_rows": 0,
+    "verified_baseline_samples": 0,
+    "multiple_baseline_candidate_rows": 0,
+    "baseline_response_candidates": 0,
+    "response_counts_baseline_candidates": {},
+    "eligible_for_confirmatory_model": false,
+    "metadata_sha256": "df7dfda28692cca0daf5797cc6e39c8f6c0d5505506371f218526dd5e3cf37ef",
+    "limitations": "patient/timepoint/clinical provenance and previous-use audit pending; response binary exploratory; survival times/events retained raw, not inferred"
+  },
+  {
+    "cohort": "rose2021_urothelial",
+    "metadata_samples": 90,
+    "expression_columns": 92,
+    "matched_metadata_samples": 90,
+    "unmatched_expression_columns": 2,
+    "duplicate_expression_key_rows": 0,
+    "verified_baseline_samples": 0,
+    "multiple_baseline_candidate_rows": 0,
+    "baseline_response_candidates": 0,
+    "response_counts_baseline_candidates": {},
+    "eligible_for_confirmatory_model": false,
+    "metadata_sha256": "8f01d22b604ba89d965e02751e080d50448fbf7d14f4279cdc59547f3c328bb9",
+    "limitations": "patient/timepoint/clinical provenance and previous-use audit pending; response binary exploratory; survival times/events retained raw, not inferred"
+  }
+]

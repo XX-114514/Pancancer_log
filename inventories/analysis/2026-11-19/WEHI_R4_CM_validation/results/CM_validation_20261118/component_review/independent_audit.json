@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ALL_REFERENCE_FRACTIONS_RAW_GENE_Z_COMPONENT_SCORES_AND_OLS_ASSOCIATIONS",
+  "score_rows": 273600,
+  "descriptive_rows": 4500,
+  "max_fraction_error": 6.661338147750939e-16,
+  "max_component_score_error": 3.552713678800501e-15,
+  "max_partial_rho_error": 1.1102230246251565e-15,
+  "max_additive_covariance_error": 7.771561172376096e-16,
+  "component_score_sha256": "e1e87e6c6f69964e84ce400e3fabb3ba8638a8c42b34f486ed3ea977ec31e4e2",
+  "scope": "All four contributions, all 30 signatures, all 9120 nonredacted scored patients. Direct raw-reference ratios; independent pandas gene standardization; statsmodels OLS rank residual and additive covariance replay. Descriptive only; does not establish immune independence or true lineage abundance."
+}

@@ -1,0 +1,27 @@
+from pathlib import Path
+import gzip,csv,json,collections,hashlib
+R=Path('${PROJECT_ARCHIVE_ROOT}/CM_validation_20261118_v1');B=Path('${PANCANCER_ROOT}/Project_v5/bulk_cohorts_20260904/ici_bulk')
+out=[]
+for cohort in ['riaz2017','hugo2016','jung2019_nsclc','rose2021_urothelial']:
+ files=list((B/cohort).glob('*series_matrix*.gz'));assert len(files)==1,(cohort,files);p=files[0];fields={};ns=None
+ with gzip.open(p,'rt',encoding='utf-8') as f:
+  for line in f:
+   if line.startswith('!series_matrix_table_begin'):break
+   if not line.startswith('!Sample_'):continue
+   items=next(csv.reader([line],delimiter='\t'));key=items[0];values=items[1:]
+   if key=='!Sample_geo_accession':ns=len(values)
+   if key=='!Sample_characteristics_ch1':
+    if 'sample_fields' not in locals():sample_fields=[{} for _ in values]
+    assert len(sample_fields)==len(values)
+    for i,v in enumerate(values):
+     if ':' not in v:continue
+     name,value=v.split(':',1);name=name.strip();value=value.strip()
+     assert name not in sample_fields[i] or sample_fields[i][name]==value,(cohort,i,name)
+     sample_fields[i][name]=value
+ for name in sorted(set(k for d in sample_fields for k in d)):
+  parts=[d.get(name,'') for d in sample_fields];c=collections.Counter(parts);info={'n_values':len(parts),'unique_values':len(c),'missing':sum(v.upper() in ['', 'NA','N/A','UNKNOWN','UNK'] for v in parts)}
+  if any(term in name.lower() for term in ['response','treatment','timepoint','time point','pre','post','therapy','biopsy']):info['value_counts']=dict(c) if len(c)<20 else 'too_many_values_not_displayed'
+  fields[name]=info
+ del sample_fields
+ out.append({'cohort':cohort,'metadata_path':str(p),'metadata_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'GEO_samples':ns,'fields':fields,'eligibility':'not_yet_expression_joined_or_patient_baseline_verified'})
+(R/'ICI_metadata_field_audit.json').write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))

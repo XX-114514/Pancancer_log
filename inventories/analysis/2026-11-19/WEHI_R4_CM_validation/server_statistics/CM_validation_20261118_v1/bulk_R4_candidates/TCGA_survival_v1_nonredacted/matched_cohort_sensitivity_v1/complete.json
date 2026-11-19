@@ -1,0 +1,11 @@
+{
+  "status": "MATCHED_BASE_MODELS_COMPLETE_PENDING_INDEPENDENT_R_AUDIT",
+  "comparisons": 2550,
+  "seconds": 188.74233102798462,
+  "new_hypothesis_tests": 0,
+  "input_sha256": {
+    "associations.tsv": "d8bf2b4e9d8c4c7266fcb2bd99c7f5b62ad47ef12f11719d6ead1482c5f23903",
+    "clinical_PRIVATE.tsv": "64c0dc84e9aaa3297077be0c3a388800a88db87226f9abbec4f39403db7ff16e",
+    "scores_PRIVATE.tsv.gz": "e9cca46269dedc165d41b4c7fca4e51e25b1865d8c7659d822ec1e66ec22ffcb"
+  }
+}

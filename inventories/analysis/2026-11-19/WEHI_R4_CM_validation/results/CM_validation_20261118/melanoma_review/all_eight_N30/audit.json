@@ -1,0 +1,63 @@
+{
+  "status": "PASS_existing_author_audits_input_hashes_and_all2368_edge_replays",
+  "sections": [
+    {
+      "section": "mel1_rep1_N30",
+      "n_spots": 279,
+      "scores": 60,
+      "edges_replayed": 296
+    },
+    {
+      "section": "mel1_rep2_N30",
+      "n_spots": 293,
+      "scores": 60,
+      "edges_replayed": 296
+    },
+    {
+      "section": "mel2_rep1_N30",
+      "n_spots": 383,
+      "scores": 60,
+      "edges_replayed": 296
+    },
+    {
+      "section": "mel2_rep2_N30",
+      "n_spots": 380,
+      "scores": 60,
+      "edges_replayed": 296
+    },
+    {
+      "section": "mel3_rep1_N30",
+      "n_spots": 256,
+      "scores": 60,
+      "edges_replayed": 296
+    },
+    {
+      "section": "mel3_rep2_N30",
+      "n_spots": 294,
+      "scores": 60,
+      "edges_replayed": 296
+    },
+    {
+      "section": "mel4_rep1_N30",
+      "n_spots": 212,
+      "scores": 60,
+      "edges_replayed": 296
+    },
+    {
+      "section": "mel4_rep2_N30",
+      "n_spots": 248,
+      "scores": 60,
+      "edges_replayed": 296
+    }
+  ],
+  "n_author_scores": 480,
+  "n_edges": 2368,
+  "max_edge_error": 1.4432899320127035e-15,
+  "patient_identity_verified": false,
+  "limitations": "Legacy ST, not Visium or imaging. No pooled patient inference. Author scores checked by existing per-section audits; edge metrics independently replayed here. N30 only; q05 sensitivity is not a correlation confidence interval.",
+  "output_hashes": {
+    "author_scores_all_sections.tsv": "654975c6e8eac19f7df337e630a2425fd32e2e14e7b917ea6c35b10719677a14",
+    "edge_density_all_sections.tsv": "11076526447c400b061b6ab455702a7822637b3fe485d31e716c5eb5b3347582",
+    "core_density.tsv": "ea706226879c967520e44fbc22a0c2c23c5e61b740fc5467559fe4c3e090a280"
+  }
+}
