@@ -1,0 +1,14 @@
+{
+  "status": "CONTENT_COMMIT_PUSHED_AND_INDEPENDENTLY_VERIFIED",
+  "repository": "XX-114514/Pancancer_log",
+  "content_commit": "db062bd7012f10f5f265b6c41848574dac2baa3c",
+  "archive_files_in_commit": 1664,
+  "changed_files_in_commit": 1673,
+  "public_archive_path": "inventories/analysis/2026-11-19/WEHI_R4_CM_validation",
+  "server_snapshot_sha256": "c8bc3998a97a7218566acca05e2c38fcbcc54493321948e30054c370d3aa457c",
+  "not_uploaded": "Individual records, raw inputs and large model objects remain on the research server; complete inventory is public.",
+  "verified_UTC": "2026-11-19T05:45:50.776387+00:00",
+  "remote_main_verified": "db062bd7012f10f5f265b6c41848574dac2baa3c",
+  "github_connector_readme_blob_sha": "27f003ce32b158153aab58d5a9d827659be91a14",
+  "verification": "git ls-remote main matched content commit; independent GitHub connector fetched committed README and blob SHA matched local Git object; all1664 archive blobs were byte-verified before push"
+}
