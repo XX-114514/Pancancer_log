@@ -1,3 +1,7 @@
+## 2026-11-20 Thrane auxiliary provenance
+
+[Four-slice derivative bridge](inventories/analysis/2026-11-20/WEHI_R4_spatialGE_bridge/README.md): all 19,150,573 count values and 1,180 barcode coordinates match author originals; independent replay passed. Four derivative clinical rows are available server-side, but primary patient identity and H&E registration remain unverified. No new model or subset selection.
+
 ## 2026-11-20 R4 CM13 external LIHC qualification
 
 [Expression and clinical eligibility audit](inventories/analysis/2026-11-20/WEHI_R4_external_LIHC/README.md): GSE14520 GPL3921 has 225 tumor / 220 non-tumor samples; exact unambiguous coverage is 47/60 main and 40/60 sensitivity genes. All 120 gene coverage rows independently replayed. Patient/OS bridge and time origin remain unqualified; no external survival fit performed.

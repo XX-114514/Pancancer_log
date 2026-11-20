@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "All four expression arrays, symbols, duplicate counts and barcode coordinate values; does not verify primary clinical identity or image registration",
+  "numeric_values": 19150573,
+  "spots": 1180,
+  "slices": 4,
+  "complete_sha256": "c5f7a83b0893a74c134899b325bd02ad9324bb02976180e08c54952569bccbe3",
+  "time_utc": "2026-11-20T02:25:34.507326+00:00"
+}

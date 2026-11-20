@@ -1,0 +1,83 @@
+{
+  "status": "DERIVATIVE_BRIDGE_AUDITED_NOT_PRIMARY_PATIENT_VERIFIED",
+  "time_utc": "2026-11-20T02:24:55.137391+00:00",
+  "archive_sha256": "c7957972360dd4753d6d49764d98d8a7f63c070ec2de4e4d968f2fc51881f32c",
+  "archive_bytes": 3400344,
+  "zip_crc": "PASS",
+  "samples": [
+    {
+      "sample": "ST_mel1_rep2",
+      "spots": 293,
+      "genes": 16148,
+      "numeric_values": 4731364,
+      "all_count_rows_exact": true,
+      "all_symbols_match_after_ensembl_suffix_removal": true,
+      "coordinates_exact_barcode_integer_grid": true,
+      "duplicate_symbols": 19,
+      "original_count_sha256": "051628f68b50996653246deefb54a38c3063611295402ab207054cfd0160cc08",
+      "derivative_count_sha256": "59496e679be4b15e2a96862cd76389fcce62e0c153361c3fa93be54d492e7ef7",
+      "mapping_sha256": "66a9f25b4e70fde2bf991168d84e742a7de0d3f0bcfd1a2cabda1396e20d2a4d"
+    },
+    {
+      "sample": "ST_mel2_rep1",
+      "spots": 383,
+      "genes": 16831,
+      "numeric_values": 6446273,
+      "all_count_rows_exact": true,
+      "all_symbols_match_after_ensembl_suffix_removal": true,
+      "coordinates_exact_barcode_integer_grid": true,
+      "duplicate_symbols": 23,
+      "original_count_sha256": "0c30400d8d27a6f0c152301541ba385446761e3f332b2467510f9eb8bd32b7ef",
+      "derivative_count_sha256": "32f3a031dd614f197b300465d7beaa95f35c1db24ed17c15c470173e1af52624",
+      "mapping_sha256": "aad70522c2d16b505b2ae726477447a43b8102ec0947aff72c614806cd72b312"
+    },
+    {
+      "sample": "ST_mel3_rep1",
+      "spots": 256,
+      "genes": 15653,
+      "numeric_values": 4007168,
+      "all_count_rows_exact": true,
+      "all_symbols_match_after_ensembl_suffix_removal": true,
+      "coordinates_exact_barcode_integer_grid": true,
+      "duplicate_symbols": 23,
+      "original_count_sha256": "270e3dc7ad3bb93f208d613ca442d23011534e5c4cbb1b86e46d50a28f02c4fa",
+      "derivative_count_sha256": "e28b2366e0b3dd0b8a006e2dfb3a730d303e3619567530d28778f4cacd4a0328",
+      "mapping_sha256": "598bbd6eca990072bb2da0dc5d1d9b18baf5ef575e15fc83dafdd97d4f22e417"
+    },
+    {
+      "sample": "ST_mel4_rep2",
+      "spots": 248,
+      "genes": 15991,
+      "numeric_values": 3965768,
+      "all_count_rows_exact": true,
+      "all_symbols_match_after_ensembl_suffix_removal": true,
+      "coordinates_exact_barcode_integer_grid": true,
+      "duplicate_symbols": 18,
+      "original_count_sha256": "fc1803a98b50a25e358a64a5de168c8f2978b80590dd339d74b292c3a1e590b1",
+      "derivative_count_sha256": "e87a2230be7bd9eb861972476c195eda097c741ccfd2e9ab70de8a0a998a1ace",
+      "mapping_sha256": "0141850d726af7b657ba7e20eb57f0143e9b01623e41f647f82cf07db9246c90"
+    }
+  ],
+  "clinical_rows": 4,
+  "distinct_derivative_patient_labels": 4,
+  "clinical_fields": [
+    "sampleID",
+    "patient",
+    "slice",
+    "gender",
+    "BRAF_status",
+    "NRAS_status",
+    "CDKN2A_status",
+    "survival",
+    "survival_months",
+    "RIN"
+  ],
+  "clinical_member_sha256": "d3aeaf162f21f5c9c64d969b95f8bd3ac96fa8a37dd9d4a2dab27836432dd769",
+  "primary_patient_bridge_verified": false,
+  "image_registration_provided": false,
+  "includes_images": false,
+  "clinical_outcomes_used": false,
+  "other_four_sections_patient_bridge": false,
+  "source": "https://github.com/FridleyLab/spatialGE_Data",
+  "scope": "All four packaged slices, all counts and coordinates; no extrapolation to absent slices"
+}
