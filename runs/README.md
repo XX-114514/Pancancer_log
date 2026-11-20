@@ -211,3 +211,6 @@ bash scripts/new_run_record.sh "phase07 annotation"
 - [WEHI R3 continuation v1](20261108_WEHI_R3_continuation_v1.md)
 
 - [ccRCC空间试分析](20261108_ccRCC_spatial_only_v1.md)
+
+
+- [2026-11-20 历史TME与免疫资料综合审阅稿](20261120_integrated_TME_immune_preprint_v1.md)：私有科学图文，公共代码与技术轨迹。
