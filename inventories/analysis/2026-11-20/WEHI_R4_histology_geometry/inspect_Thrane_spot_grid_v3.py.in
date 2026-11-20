@@ -1,0 +1,46 @@
+"""Image-only fiducial candidate inventory. Does not assign count-grid transforms."""
+from pathlib import Path
+import io,zipfile,json,hashlib,datetime
+import numpy as np
+from PIL import Image,ImageDraw
+from scipy import ndimage
+R=Path('${ANALYSIS_ROOT}')
+S=R/'sources/Thrane2018_histology_v1';O=R/'spatial_melanoma/spot_grid_inventory_v3';O.mkdir(exist_ok=False)
+audit=json.loads((S/'download_audit.json').read_text());p=S/'Thrane_et_al_2018_CAN_RES.zip'
+assert hashlib.sha256(p.read_bytes()).hexdigest()==audit['sha256']
+Image.MAX_IMAGE_PIXELS=2_000_000_000
+rows=[];canvas=Image.new('RGB',(1600,4*850),'white');draw=ImageDraw.Draw(canvas)
+def groups(vals):
+ order=np.argsort(vals);g=[]
+ for ix in order:
+  if not g or vals[ix]-vals[g[-1][-1]]>12:g.append([int(ix)])
+  else:g[-1].append(int(ix))
+ return [dict(n=len(a),mean=float(vals[a].mean()),span=float(np.ptp(vals[a]))) for a in g]
+with zipfile.ZipFile(p) as z:
+ for si,sample in enumerate(['mel%d_rep%d'%(i,j) for i in range(1,5) for j in [1,2]]):
+  member='Thrane_et_al_2018_CAN_RES/Images/ST_'+sample+'_spots.jpg';b=z.read(member)
+  with Image.open(io.BytesIO(b)) as im:
+   original=im.size;im.draft('RGB',(2500,2500));im=im.convert('RGB');im.thumbnail((2500,2500));a=np.asarray(im).astype(float)
+  r,g,blue=a[:,:,0],a[:,:,1],a[:,:,2]
+  score=np.minimum(r,g)-blue
+  local=score-ndimage.gaussian_filter(score,sigma=15)
+  mask=(np.minimum(r,g)>80)&(score>40)&(local>20)
+  labels,n=ndimage.label(mask);objects=ndimage.find_objects(labels);centers=[]
+  for label,sl in enumerate(objects,1):
+   if sl is None:continue
+   hh=sl[0].stop-sl[0].start;ww=sl[1].stop-sl[1].start
+   if not (2<=hh<=45 and 2<=ww<=45):continue
+   yy,xx=np.where(labels[sl]==label);area=len(xx)
+   if 10<=area<=700 and max(hh,ww)/min(hh,ww)<=2.5 and area/(hh*ww)>=.35:
+    centers.append([float(xx.mean()+sl[1].start),float(yy.mean()+sl[0].start),area])
+  c=np.array(centers);assert len(c)>20
+  row=dict(sample=sample,original_size=list(original),working_size=list(im.size),image_sha256=hashlib.sha256(b).hexdigest(),candidate_components=len(c),row_groups=[x for x in groups(c[:,1]) if x['n']>=10],column_groups=[x for x in groups(c[:,0]) if x['n']>=10],candidate_centers=c.tolist())
+  rows.append(row)
+  thumb=im.copy();thumb.thumbnail((780,780));d=ImageDraw.Draw(thumb);scale=thumb.width/im.width
+  for x,y,area in c:
+   x*=scale;y*=scale;d.ellipse((x-2,y-2,x+2,y+2),outline='red',width=1)
+  cx=si%2*800;cy=si//2*850;draw.text((cx+10,cy+5),sample+' | '+str(len(c))+' yellow-component candidates',fill='black');canvas.paste(thumb,(cx+10,cy+30))
+  print(sample,'rows',row['row_groups'],'cols',row['column_groups'],flush=True)
+canvas.save(O/'fiducial_candidate_review.jpg',quality=90)
+result=dict(status='IMAGE_ONLY_FIDUCIAL_CANDIDATES_NOT_REGISTERED',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),parameters=dict(working_max_side=2500,min_RG=80,min_RG_minus_B=40,min_local_contrast=20,background_gaussian_sigma=15,min_bbox_fill=.35,area_range=[10,700],bbox_range=[2,45],max_bbox_ratio=2.5,group_consecutive_gap=12),sections=rows,scope='Color components only. Candidate rows/columns not automatically accepted as full lattice. No RNA/CM values used; no native-grid index assignment or HE registration.')
+(O/'complete.json').write_text(json.dumps(result,indent=2))

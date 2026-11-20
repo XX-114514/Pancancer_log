@@ -1,0 +1,38 @@
+"""Stdlib replay of serialized relative geometry; not image ground truth."""
+from pathlib import Path
+import math,json,hashlib,datetime
+R=Path(__file__).resolve().parent;O=R/'melanoma_review/relative_lattice';j=json.loads((O/'complete.json').read_text())
+for v,h in j['input_sha256'].items():
+ p=R/'melanoma_review/spot_grid'/('complete.json' if v=='v1' else 'complete_'+v+'.json');assert hashlib.sha256(p.read_bytes()).hexdigest()==h
+
+def solve(A,b):
+ a=[list(row)+[v] for row,v in zip(A,b)]
+ for c in range(3):
+  p=max(range(c,3),key=lambda k:abs(a[k][c]));a[p],a[c]=a[c],a[p];assert abs(a[c][c])>1e-8
+  div=a[c][c];a[c]=[v/div for v in a[c]]
+  for r in range(3):
+   if r!=c:
+    m=a[r][c];a[r]=[v-m*w for v,w in zip(a[r],a[c])]
+ return [r[3] for r in a]
+def fit(A,xy):
+ ata=[[sum(r[i]*r[k] for r in A) for k in range(3)] for i in range(3)]
+ cols=[solve(ata,[sum(r[i]*y[d] for r,y in zip(A,xy)) for i in range(3)]) for d in [0,1]]
+ return list(zip(*cols))
+def err(a,y,c):return math.sqrt(sum((sum(a[k]*c[k][d] for k in range(3))-y[d])**2 for d in [0,1]))
+checked=0;maxerror=0
+for section in j['sections']:
+ if 'selected' not in section:assert section['rejected'];continue
+ for d in section['all_geometric_candidates']:
+  ij=d['matched_relative_indices'];xy=d['matched_working_pixels'];A=[[1,*v] for v in ij];coef=d['pixel_affine_rows'];assert len(ij)==len({tuple(x) for x in ij})==d['accepted_border_nodes']
+  residual=[err(a,y,coef) for a,y in zip(A,xy)]
+  assert abs(math.sqrt(sum(x*x for x in residual)/len(residual))-d['rms_working_pixels'])<1e-9
+  assert abs(max(residual)-d['max_residual_working_pixels'])<1e-9
+  masks=[[a[axis]==val for a in ij] for axis,val in [(0,0),(0,32),(1,0),(1,34)]]
+  assert [sum(m) for m in masks]==d['side_support'] and min(d['side_support'])>=20
+  hold=[]
+  for m in masks:
+   co=fit([a for a,b in zip(A,m) if not b],[y for y,b in zip(xy,m) if not b]);hold.extend(err(a,y,co) for a,y,b in zip(A,xy,m) if b)
+  delta=abs(max(hold)-d['max_leave_edge_out_pixels']);maxerror=max(maxerror,delta);assert delta<1e-8;checked+=1
+assert len(j['summary'])==8 and sum('selected' in s for s in j['sections'])==6
+result=dict(status='PASS_SERIALIZED_GEOMETRY_AND_INDEPENDENT_NORMAL_EQUATION_LEAVE_EDGE_REPLAY',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),sections=8,relative_fits=6,unaccepted=2,geometric_candidates_replayed=checked,max_leave_edge_error=maxerror,source_sha256=hashlib.sha256((O/'complete.json').read_bytes()).hexdigest(),scope='Replays derived geometry only. Not raw-image fiducial truth, barcode mapping, HE registration, patient identity, or biological validation.')
+(O/'independent_readback.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))

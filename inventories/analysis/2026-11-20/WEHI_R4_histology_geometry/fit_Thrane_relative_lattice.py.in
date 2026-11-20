@@ -1,0 +1,45 @@
+"""Fit relative border geometry only; no barcode origin/orientation assignment."""
+from pathlib import Path
+import json,hashlib,datetime
+import numpy as np,pandas as pd
+R=Path('${ANALYSIS_ROOT}/spatial_melanoma')
+O=R/'relative_lattice_review_v1';O.mkdir(exist_ok=False)
+versions={v:json.loads((R/('spot_grid_inventory_'+v)/'complete.json').read_text()) for v in ['v1','v2']}
+rows=[];details=[]
+for ix in range(8):
+ candidates=[]
+ for v,proof in versions.items():
+  s=proof['sections'][ix];rg=[r for r in s['row_groups'] if r['n']>=25 and r['span']<40];cg=[r for r in s['column_groups'] if r['n']>=25 and r['span']<40]
+  if len(rg)<2 or len(cg)<2:continue
+  rg=sorted(rg,key=lambda r:r['mean']);cg=sorted(cg,key=lambda r:r['mean']);xmin,xmax=cg[0]['mean'],cg[-1]['mean'];ymin,ymax=rg[0]['mean'],rg[-1]['mean'];sx=(xmax-xmin)/32;sy=(ymax-ymin)/34
+  if min(sx,sy)<25 or max(sx,sy)>60 or abs(sx/sy-1)>.08:continue
+  c=np.array(s['candidate_centers'])[:,:2];ij=np.rint((c-[xmin,ymin])/[sx,sy]).astype(int)
+  expected=np.array([xmin,ymin])+ij*np.array([sx,sy]);d=np.linalg.norm(c-expected,axis=1)
+  border=((ij[:,0]==0)|(ij[:,0]==32)|(ij[:,1]==0)|(ij[:,1]==34))&(ij[:,0]>=0)&(ij[:,0]<=32)&(ij[:,1]>=0)&(ij[:,1]<=34)
+  keep=border&(d<.22*min(sx,sy))
+  # One component per relative lattice node; choose closest geometric residual.
+  unique={}
+  for k in np.where(keep)[0]:
+   node=tuple(ij[k])
+   if node not in unique or d[k]<d[unique[node]]:unique[node]=k
+  k=np.array(list(unique.values()));xy=c[k];grid=ij[k];A=np.c_[np.ones(len(k)),grid]
+  if len(k)<80:continue
+  coef=np.linalg.lstsq(A,xy,rcond=None)[0]
+  for it in range(3):
+   residual=np.linalg.norm(xy-A@coef,axis=1);ok=residual<.15*min(sx,sy);coef=np.linalg.lstsq(A[ok],xy[ok],rcond=None)[0]
+  residual=np.linalg.norm(xy-A@coef,axis=1);ok=residual<.15*min(sx,sy)
+  side_masks=[grid[:,0]==0,grid[:,0]==32,grid[:,1]==0,grid[:,1]==34];support=[int((ok&m).sum()) for m in side_masks]
+  if min(support)<20:continue
+  hold=[]
+  for mask in side_masks:
+   train=ok&(~mask);test=ok&mask;cc=np.linalg.lstsq(A[train],xy[train],rcond=None)[0];hold.extend(np.linalg.norm(xy[test]-A[test]@cc,axis=1).tolist())
+  candidate=dict(sample=s['sample'],version=v,accepted_border_nodes=int(ok.sum()),side_support=support,rms_working_pixels=float(np.sqrt(np.mean(residual[ok]**2))),max_residual_working_pixels=float(residual[ok].max()),max_leave_edge_out_pixels=float(max(hold)),relative_grid_extent=[33,35],working_size=s['working_size'],pixel_affine_rows=coef.tolist(),matched_relative_indices=grid[ok].tolist(),matched_working_pixels=xy[ok].tolist(),scope='Relative image lattice only; 33x35 is candidate image-derived extent, not verified barcode indexing. Leave-edge-out reuses geometric node assignments, not independent registration ground truth.')
+  candidates.append(candidate)
+ if not candidates:
+  rows.append(dict(sample=s['sample'],status='NO_COMPLETE_BORDER_SEED',detector='',nodes=0,left=0,right=0,top=0,bottom=0,rms_pixels=None,max_leave_edge_out_pixels=None));details.append(dict(sample=s['sample'],status='NO_COMPLETE_BORDER_SEED',reason='Neither fixed image detector yields both pairs of boundary groups; no forced mapping.'));continue
+ # Choose geometric evidence, no expression/CM used. Retain alternative diagnostics.
+ candidates.sort(key=lambda d:(-min(d['side_support']),-d['accepted_border_nodes'],d['rms_working_pixels']))
+ d=candidates[0];rows.append(dict(sample=d['sample'],status='RELATIVE_LATTICE_FIT_NOT_REGISTERED',detector=d['version'],nodes=d['accepted_border_nodes'],**dict(zip(['left','right','top','bottom'],d['side_support'])),rms_pixels=d['rms_working_pixels'],max_leave_edge_out_pixels=d['max_leave_edge_out_pixels']));details.append(dict(selected=d,all_geometric_candidates=candidates))
+pd.DataFrame(rows).to_csv(O/'relative_lattice_summary.tsv',sep='\t',index=False)
+proof=dict(status='IMAGE_GEOMETRY_REVIEW_NOT_BARCODE_OR_HE_REGISTRATION',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),input_sha256={v:hashlib.sha256((R/('spot_grid_inventory_'+v)/'complete.json').read_bytes()).hexdigest() for v in versions},summary=rows,sections=details,limitations='Not a verified native barcode transform. No patient identities, cell identities, tissue compartments, HE warp, or molecular effect claim. Failed sections retained. No RNA/CM values loaded.')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(pd.DataFrame(rows).to_string(index=False))

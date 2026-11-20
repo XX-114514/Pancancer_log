@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SERIALIZED_GEOMETRY_AND_INDEPENDENT_NORMAL_EQUATION_LEAVE_EDGE_REPLAY",
+  "utc": "2026-11-20T02:07:16.716796+00:00",
+  "sections": 8,
+  "relative_fits": 6,
+  "unaccepted": 2,
+  "geometric_candidates_replayed": 12,
+  "max_leave_edge_error": 5.508482558980177e-12,
+  "source_sha256": "4bd06d26844bbff6cb79c8e7e00e433aeba96de5330350c7d921b76db962161a",
+  "scope": "Replays derived geometry only. Not raw-image fiducial truth, barcode mapping, HE registration, patient identity, or biological validation."
+}
