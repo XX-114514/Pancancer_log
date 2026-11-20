@@ -2,6 +2,10 @@
 
 [全部切片与失败记录](inventories/analysis/2026-11-20/WEHI_R4_histology_geometry/README.md)：6片相对网格可拟合、2片未通过固定门槛；尚未建立有效条码/H&E配准，未作血管病理定位声明。三种纯图像检测与独立几何重放均记录。
 
+## 2026-11-20 R4下游验证组织
+
+[全15CM证据登记](inventories/analysis/2026-11-20/R4_downstream_organization_v1/README.md)已完成当前哈希和独立聚合复核。下一步以CM12组织内空间资格为主，CM01/CM04作结构对照，CM13/LIHC临床资格独立推进；完整三方hub及治疗预测仍未建立。
+
 ## 2026-11-20 直接标记测量补充
 
 [原始RNA网格图、计数及独立复核](inventories/analysis/2026-11-20/WEHI_R4_direct_markers/README.md)：ESM1在部分切片仅1–2个阳性spot，另1片缺少该基因行；23个可用标记行、22个可用成对比较全部重放通过。原始标记检出与去卷积状态分开，不据此声称细胞接触。

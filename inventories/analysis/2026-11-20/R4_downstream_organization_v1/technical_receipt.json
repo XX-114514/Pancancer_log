@@ -1,0 +1,39 @@
+{
+  "status": "PASS_EXISTING_AGGREGATE_EVIDENCE_REGISTER_WITH_CURRENT_HASH_CHECKS",
+  "UTC": "2026-11-20T01:52:13.927628+00:00",
+  "cm_version": "2026-11-15_R4_K15",
+  "modules": 15,
+  "current_linked_upstream_audits": 15,
+  "spatial_fits": 24,
+  "hash_checked_artifacts": 336,
+  "script_sha256": "4ac61f22cb881ac41a7ac62cc2959d3f2952a0c989ce9ccb6e4e96191dc8117a",
+  "output_sha256": {
+    "module_evidence.tsv": "d35d898351e435596eccb6ca2d44993f40e93d328aa3a51975af524f9bdd3711",
+    "spatial_edge_setting_coverage.tsv": "032b28da0ba4769287f7547bd1095a271f00e9077ff1cf84e9ad07ba762695fd",
+    "spatial_N_sensitivity_existing_summary.tsv": "df4576a7eabe45652db20c9168cfdcb15729bc3ed4e2b79285ba2170920f4e3d"
+  },
+  "scope": "Existing aggregate results only. No native rows exported; no new fitting, BH family, P value, endpoint selection or causal claim.",
+  "unverified": [
+    "raw numerical replay beyond upstream audited scope",
+    "universal patient independence",
+    "histology/segmentation validation",
+    "external clinical prediction"
+  ],
+  "server_receipt_sha256": "b9a43d3072ef0b341d65fc5a543740ea94dc18fd5392686b02576449a9cd0ca6",
+  "independent_audit_status": "PASS_INDEPENDENT_NETWORK_COUNTS_ALL15_UNIT_DE_TOTAL_AND_ALL_SPATIAL_SIGN_DENOMINATORS",
+  "independent_audit_UTC": "2026-11-20T01:52:52.326921+00:00",
+  "independent_audit_sha256": "3568735ecc1123c14aed4693b7d8eb9b223e094fea002356ba1654f20522c938",
+  "spatial_qualification_status": "EXISTING_QUALIFICATION_AUDITS_RECONCILED_IMAGE_AND_PATIENT_GATES_OPEN",
+  "spatial_qualification_sha256": "532370dbb104c71a061afc5a28dd360d7ba3bb2624f034dab78d1dfc85646733",
+  "storage": "scientific tables and detailed receipts remain on research server; no raw native or patient rows exported",
+  "spatial_qualification_v2": {
+    "status": "HISTOLOGY_INTEGRITY_AND_DIRECT_MARKERS_UPDATED_REGISTRATION_AND_PATIENT_GATES_OPEN",
+    "sha256": "b8e7e916c4f295ef218304f80d2b3657a25f0ee161ad1d7640056cc8a00af47c",
+    "UTC": "2026-11-20T02:05:51.765968+00:00"
+  },
+  "runtime_environment": {
+    "name": "scanpy",
+    "Python": "3.10.19",
+    "execution_identity": "script SHA; no pre-run science Git checkout claimed"
+  }
+}

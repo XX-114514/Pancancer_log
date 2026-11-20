@@ -11,3 +11,5 @@
 取证：2026-11-20T02:08:45.750778+00:00 / 2026-11-20T10:08:45.750778+08:00。新代码/回执保存服务器，发布经路径/凭据/大小/哈希、diff和仓库检查后普通push并远端核验。建议提交：Audit author spot-grid geometry without overstating registration。
 
 发布检查完成：全仓validate_repository.sh 0错误/1项既有历史路径警告；新增文件SHA/大小/真实路径与凭据扫描、git diff --cached --check通过。原始JPEG及叠图均未加入公开提交。
+
+并发发布处理：首次普通push因远端224d7d8新增R4下游六工作包计划而被Git non-fast-forward拒绝，不是自动审批拒绝。已fetch并完整阅读工作计划与日志，普通merge仅STATUS顶部冲突，保留双方小节；不rebase、不force、不重写历史。当前几何诊断属于WP1资料资格的部分探索，不宣称WP1验收；WP4及WP2/3/5依赖按新计划保持。
