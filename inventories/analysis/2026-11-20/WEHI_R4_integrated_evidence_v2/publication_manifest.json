@@ -1,0 +1,11 @@
+{
+  "CM12_core_source_coverage.tsv": "bc378b5e7dc85d5b0452c4cbbfa6e4f82dd059df378d3a1427dec62e8efda25b",
+  "CM12_three_edges_all_sections.tsv": "bc026a1108039b1f12b4080ed9ed25f6b0c96d06bb550f9a0e21f7611b273d8c",
+  "CM12_three_edges_summary.tsv": "3c92025c1efc7d9de78e19b425b2c0823f21e73610cfcccc6104b9256f69ef2b",
+  "README.md": "493a2298d51335376b691340d799d8864c343cd60dbb7133611e2f96848024c4",
+  "audit_CM_goal_coverage.py.in": "f3525468cdb017ef78005fb9b396b1e57a993eb7bac3a6986c463fbf9ab8511d",
+  "build_CM_evidence_review_v2.py.in": "8e56260b0d5bc781ef31cda61abbab3f59c5ed0a24fe917b132f72e936a065f0",
+  "objective_evidence_register.json": "eec14e5d5eaec9ce14fb7119e5b186dabf46a838f8dbdaad1da17a6b0b7be505",
+  "source_manifest.json": "304b4bb3ffa6590bedcfb29d3985dbd8405e6d7569be32a85f2bdf4d587de19f",
+  "结果整合.txt": "8c869390a72a6f3211d0094d0a6d3b3c9a566fae41b8197126332e14a9a0238e"
+}

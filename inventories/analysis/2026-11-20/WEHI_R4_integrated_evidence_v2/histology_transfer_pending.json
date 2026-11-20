@@ -1,0 +1,13 @@
+{
+  "status": "DOWNLOAD_IN_PROGRESS_NOT_VERIFIED",
+  "record": "https://zenodo.org/records/8215682",
+  "official_url": "https://zenodo.org/records/8215682/files/Thrane_et_al_2018_CAN_RES.zip?download=1",
+  "expected_bytes": 942045418,
+  "expected_md5": "a7aa24ddaa699f75c19b0c96a6a33a8a",
+  "observation_utc": "2026-11-20T01:52:28.678922+00:00",
+  "server_direct": "Proxy CONNECT aborted; configuration unchanged",
+  "local_official_head": "HTTP200",
+  "transfer": "Streamed via existing authorized SSH connection directly to server .part; no large local file",
+  "observed_server_bytes": 18857984,
+  "remaining": "Wait actual transfer session; verify full byte count, MD5, SHA256 and all ZIP CRC before accepting. No image or patient registration claim."
+}

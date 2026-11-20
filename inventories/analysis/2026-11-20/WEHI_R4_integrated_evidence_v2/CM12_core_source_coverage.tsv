@@ -1,0 +1,69 @@
+source	cancer	endo_high	endo_low	pc_high	pc_low	both_nodes_marginally_eligible	scope
+GSE125449	Hepatocellular_carcinoma	0	2	1	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE125449	Intrahepatic_cholangiocarcinoma			0	1	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE127465	NSCLC			0	1	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE131907	NSCLC	0	2	1	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE132465	Colorectal_cancer	0	3	0	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE138665	Uveal_melanoma			1	1	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE139829	Uveal_melanoma			1	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE141526	Basal_cell_carcinoma	0	4	0	3	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE148071	NSCLC	1	4	1	6	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE149614	Hepatocellular_carcinoma	3	4	3	5	True	Marginal unit counts only; not joint-pair or patient qualification
+GSE152048	Osteosarcoma	1	5	2	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE155698	Pancreatic_ductal_adenocarcinoma	0	1	0	3	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE159115	Renal_cell_carcinoma	3	0	4	0	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE161529	Breast_cancer	0	4	1	19	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE162454	Osteosarcoma	0	4	0	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE165897	Ovarian_cancer			0	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE166555	Colorectal_cancer	0	1	0	6	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE167297	Gastric_cancer	0	1	0	1	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE173278	Diffuse_glioma	4	0	9	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE173468	Head_and_neck_squamous_cell_carcinoma	1	5	1	11	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE173682	Endometrial_cancer	1	4	1	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE173682	Ovarian_cancer	0	4	1	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE176031	Prostate_cancer			0	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE176078	Breast_cancer	2	12	3	18	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE178341	Colorectal_cancer	2	14	1	15	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE178481	Renal_cell_carcinoma	1	8	3	11	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE181919	Head_and_neck_squamous_cell_carcinoma	0	1	0	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE182109	Diffuse_glioma	1	3	1	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE183904	Gastric_cancer	1	10	2	19	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE184362	Papillary_thyroid_carcinoma	0	5	0	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE184880	Ovarian_cancer	0	2	0	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE188711	Colorectal_cancer	0	2	0	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE189357	NSCLC	0	2	0	1	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE189889	Acral_melanoma	0	2	0	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE189903	Hepatocellular_carcinoma	1	1	1	7	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE189903	Intrahepatic_cholangiocarcinoma	0	1	0	3	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE191288	Papillary_thyroid_carcinoma	0	5	0	6	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE197461	Cervical_cancer	0	1	0	5	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE200997	Colorectal_cancer	0	2	0	3	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE201347	Gastric_cancer	0	4	0	7	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE203067	Esophageal_cancer	1	1	1	3	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE205013	Pancreatic_ductal_adenocarcinoma	0	8	0	14	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE205506	Colorectal_cancer	2	13	1	11	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE207422	NSCLC	0	1	0	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE207493	Renal_cell_carcinoma	9	10	9	10	True	Marginal unit counts only; not joint-pair or patient qualification
+GSE212527	Soft_tissue_sarcoma	1	2	2	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE215120	Acral_melanoma	1	2	1	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE215120_CM	Cutaneous_melanoma	1	2	1	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE215403	Head_and_neck_squamous_cell_carcinoma	0	6	0	8	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE222315	Bladder_cancer	2	4	2	7	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE222446	Cutaneous_melanoma	0	2	0	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE234933	Head_and_neck_squamous_cell_carcinoma	3	17	1	11	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE242230	Pancreatic_ductal_adenocarcinoma			0	1	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE253013	NSCLC			0	3	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE256136	Pancreatic_neuroendocrine_tumor	1	6	0	9	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE256326	Renal_medullary_carcinoma	0	2	0	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE269936	Cutaneous_melanoma	2	6	4	17	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE273127	Esophageal_cancer	0	4	0	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE274229	Prostate_cancer	1	3	1	10	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE274934	NSCLC	0	2	0	4	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE277524	Bladder_cancer	2	6	2	7	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE286057	Ovarian_cancer			0	1	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE294109	Renal_cell_carcinoma	1	8	3	10	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE297041	Cervical_cancer	1	3	1	12	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE299023	Osteosarcoma	1	1	1	2	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE299340	Hepatocellular_carcinoma	1	3	1	3	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE305078	Breast_cancer	0	10	0	28	False	Marginal unit counts only; not joint-pair or patient qualification
+GSE310797	Head_and_neck_squamous_cell_carcinoma	0	12	0	15	False	Marginal unit counts only; not joint-pair or patient qualification

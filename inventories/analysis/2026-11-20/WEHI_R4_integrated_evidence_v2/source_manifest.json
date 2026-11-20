@@ -1,0 +1,30 @@
+{
+  "scope": "Source hashes and exact row selection for synthesis, not a new raw-data audit or goal completion",
+  "source_files": {
+    "melanoma_review/all_eight_N30/edge_density_all_sections.tsv": "11076526447c400b061b6ab455702a7822637b3fe485d31e716c5eb5b3347582",
+    "../WEHI_R4_spatial_20261115/review/Visium_density_sensitivity.tsv": "1b20d4e3d5200dfd0bdde1fbc6ee1035a0bd43c94f04c0ab42d1ea867609c78f",
+    "communication_joint_review/core_overlap_summary.tsv": "2a76e04985327007b6fb882782fc9b203ff6f2a3cd1c7906469b8be6dc1d03bb",
+    "immune_review_nonredacted/primary_branch_purity_age_sex.tsv": "dd4b046d9e50bc3d95c4d8f7365d18b0ca941024841da133510dbeb32197d9b4",
+    "ICI_review/three_cohort/three_cohort_descriptive_comparison.tsv": "48fe3e44dc6066a2cf7d7bd87cca11d97aee2c6155607de734d83d6245c19bef",
+    "survival_review/piecewise/CM12_prior_models_updated_joint_q.tsv": "348fbef6a4a2621f528d96a44ccf2b827e3abaa3506527567c141d43a40e1be6",
+    "survival_review/piecewise/piecewise_associations.tsv": "6af23833837eb4d0b05cdc3da3fa95dc177697a4c2e82a4b158a4f1e6c64cee4",
+    "component_review/component_qualification.tsv": "6627de1681085a6401d23f5099d405e15f178835d342055b6c0b10755eb9d7e9",
+    "lung_core_review/primary_joint_summary.tsv": "1f2240dacb12fd8fd06d8cbe1af38c4973584de3df476558badbf1ca849776e8",
+    "lung_core_review/breast_primary_updated_q.tsv": "41bf0c1381c9d827ae3c2f143faba248f1ff9e83939986f8ad3b272bd8d48519",
+    "highlow_review/joint15/fixed_marker_results.tsv": "364f9c9e2e004c4a57115b624e28a98060e81a1f36c813c2c80e201ebc7b750a",
+    "melanoma_review/all24_N_sensitivity/core_edge_ranges.tsv": "0dbf10d2fa0110f1babd46e1affa3ea5c8f40a5b229809175dfd5c744f50efd0",
+    "melanoma_review/all24_N_sensitivity/complete.json": "7eba56844baebf2a403c103f45e45dff506e10cb094ab12434d408cee3862a92",
+    "melanoma_review/all24_N_sensitivity/independent_readback.json": "5068580e8c5289ea40afae5e9da70b856940c4276ca2302052c5d6fbde676c0b",
+    "highlow_review/joint15/upstream_audit_linkage_current.json": "69412951984898eb2afffad1d6aedd0a618d2b12dcba7a2fb8df7d3383ed5713",
+    "patient_LR_review/three_source/complete.json": "a9fefb5d55bbe058bdacdf2adccd08072ee5cec24a4fe0bc168debbd461ee0fa",
+    "melanoma_review/all_eight_N30/audit.json": "fbd1edc76a96290b942ec37763612d6326ba9b8fdfe45e062cc9dd8071141626",
+    "highlow_review/joint15/independent_audit.json": "954628ac749328cbf52e5473a340611e929c859f4514efa7602593ee3749e6a0",
+    "lung_core_review/independent_audit.json": "0821177a2f6e5701f4b19770ba5a8cac2cb8e1499c2deefd9ce5258d0badcbc8",
+    "survival_review/piecewise/independent_audit.json": "bff1e88ea56170c7c863c097512f5ef7a3cf85e80e10680a973dde7b4009b20d"
+  },
+  "outputs": {
+    "\u7ed3\u679c\u6574\u5408.txt": "8c869390a72a6f3211d0094d0a6d3b3c9a566fae41b8197126332e14a9a0238e",
+    "CM12_three_edges_summary.tsv": "3c92025c1efc7d9de78e19b425b2c0823f21e73610cfcccc6104b9256f69ef2b",
+    "CM12_three_edges_all_sections.tsv": "bc026a1108039b1f12b4080ed9ed25f6b0c96d06bb550f9a0e21f7611b273d8c"
+  }
+}

@@ -1,0 +1,41 @@
+"""Audit evidence coverage and core source feasibility, without upgrading claims."""
+from pathlib import Path
+import csv,json,hashlib,datetime
+from collections import defaultdict
+R=Path(__file__).resolve().parent;O=R/'integrated_evidence_review_v2'
+manifest=json.loads((O/'source_manifest.json').read_text())
+for name,h in manifest['source_files'].items():assert hashlib.sha256((R/name).read_bytes()).hexdigest()==h,name
+for name,h in manifest['outputs'].items():assert hashlib.sha256((O/name).read_bytes()).hexdigest()==h,name
+source=R/'CM12_source_specific_feasibility.tsv';rows=list(csv.DictReader(source.open(),delimiter='\t'))
+by=defaultdict(dict)
+for r in rows:
+ if r['node'] in ['Endo_tip_ESM1','Str_Pericyte_RGS5']:
+  k=(r['source'],r['cancer']);assert r['node'] not in by[k];by[k][r['node']]=r
+out=[]
+for (src,cancer),nodes in sorted(by.items()):
+ counts={node:(int(v['high_units']),int(v['low_units'])) for node,v in nodes.items()}
+ eligible=len(counts)==2 and all(min(v)>=3 for v in counts.values())
+ out.append(dict(source=src,cancer=cancer,endo_high=counts.get('Endo_tip_ESM1',('', ''))[0],endo_low=counts.get('Endo_tip_ESM1',('', ''))[1],pc_high=counts.get('Str_Pericyte_RGS5',('', ''))[0],pc_low=counts.get('Str_Pericyte_RGS5',('', ''))[1],both_nodes_marginally_eligible=eligible,scope='Marginal unit counts only; not joint-pair or patient qualification'))
+assert {r['source'] for r in out if r['both_nodes_marginally_eligible']}=={'GSE149614','GSE207493'}
+with (O/'CM12_core_source_coverage.tsv').open('w') as f:
+ w=csv.DictWriter(f,fieldnames=list(out[0]),delimiter='\t',lineterminator='\n');w.writeheader();w.writerows(out)
+def evidence(name):
+ p=R/name
+ if p.suffix!='.json':return dict(path=name,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),scope='Aggregate result table; not fresh raw-input replay')
+ j=json.loads(p.read_text());return dict(path=name,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),recorded_status=j.get('status'),scope=j.get('scope',j.get('limitations',j.get('interpretation','See source receipt'))))
+items=[
+ ('data','Download and qualify relevant data','Current selected inputs qualified; broader validation resources remain open',['lung_prime5k_review/independent_input_audit.json','melanoma_reference_input_audit.json'],'Histology and explicit legacy-ST patient mapping remain unverified.'),
+ ('communication','Reproduce CoVarNet communication and CM high/low comparisons','All15 pooled CPDB and high/low completed within declared audits; patient LR limited to qualified sources',['communication_joint_review/independent_audit.json','highlow_review/joint15/independent_audit.json','highlow_review/joint15/upstream_audit_linkage_current.json','patient_LR_review/three_source/complete.json'],'Pooled detection is not differential signaling. Fixed23-gene numerical audit is not full-gene replay. Patient LR joint q05=0; core-axis qualification only renal.'),
+ ('spatial','Validate CM12 vascular axis and compare other CM modules spatially','Selected Visium, legacy-ST and imaging analyses completed; biological validation partial',['melanoma_review/all24_N_sensitivity/complete.json','melanoma_review/all24_N_sensitivity/independent_readback.json','imaging_core_review/independent_audit.json','imaging_core_review/mural_states/independent_audit.json','lung_core_review/independent_audit.json'],'Conditional imaging association varies by sample; no direct contact, independent-patient replication or three-way hub proof.'),
+ ('immune','Associate CM candidates with immune infiltration','Nonredacted immune analysis represented in synthesis; cancer-dependent associations','immune_review_nonredacted/primary_branch_purity_age_sex.tsv','No universal pan-cancer direction or causal interpretation.'),
+ ('clinical','Explore treatment response/prognosis as candidate indicators','Current survival and ICI exploration represented; independent predictive validity unproven',['survival_review/piecewise/independent_audit.json','ICI_review/three_cohort/three_cohort_descriptive_comparison.tsv'],'ICI480 tests lack joint q05 evidence; Rose timing unresolved; prognosis evidence is cancer/model-specific. External validation remains.'),
+ ('integration','Integrate all analyses without selecting positive results','Updated synthesis includes all24 N and all15 audit linkage',['melanoma_review/all24_N_sensitivity/complete.json','highlow_review/joint15/upstream_audit_linkage_current.json'],'Existing numerical/clinical negatives retained; no new pooled effect or significance calculation.')]
+register=[]
+for key,requirement,status,paths,remaining in items:
+ if isinstance(paths,str):
+  p=R/paths;ev=[dict(path=paths,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),scope='Aggregate result table; not fresh raw-input replay')]
+ else:ev=[evidence(p) for p in paths]
+ register.append(dict(id=key,requirement=requirement,assessment=status,evidence=ev,unproven_or_remaining=remaining))
+proof=dict(status='PASS_CURRENT_SYNTHESIS_HASHES_AND_COMPLETE_CORE_SOURCE_SCREEN_NOT_GOAL_COMPLETION',reviewed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),source_files=len(manifest['source_files']),source_screen=dict(rows=len(out),marginally_eligible_sources=2,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),limitation='No unit-level intersection inferred from separate identity counts; missing rows not negative'),requirements=register,overall='ACTIVE: current computational checkpoints passed, full requested validation not established; no positive-result requirement imposed.')
+(O/'objective_evidence_register.json').write_text(json.dumps(proof,indent=2))
+print(proof['status'],len(out),'source-cancer combinations')
