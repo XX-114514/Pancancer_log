@@ -1,3 +1,8 @@
+## 2026-11-20 双语预印本审阅交付
+
+- [x] 冻结输入核对、科研图和双语稿构建、逐页核验、服务器副本验证。
+- [ ] 作者复核科学解释并提供作者/单位/基金/贡献/利益冲突及公开资料方案；此项不代表已投稿。见[技术交付](runs/20261120_R4_preprint_review_v1.md)。
+
 ## 2026-11-20 CM13 external qualification
 
 - [x] Audit existing GSE14520 expression and frozen CM13 probe coverage; independent replay passed.

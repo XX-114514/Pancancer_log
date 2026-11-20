@@ -1,0 +1,22 @@
+{
+  "recorded_UTC": "2026-11-20T04:07:01.335468+00:00",
+  "recorded_UTC_plus_8": "2026-11-20T12:07:01.335468+08:00",
+  "status": "REVIEW_PACKAGE_COMPLETED_SERVER_COPY_VERIFIED",
+  "scope": "Frozen-input figure and bilingual manuscript construction; no new inferential tests",
+  "English_figures": true,
+  "complete_Chinese_translation": true,
+  "main_figures": 7,
+  "supplementary_figures": 10,
+  "English_pages": 17,
+  "Chinese_pages": 16,
+  "all_final_pages_visually_reviewed": true,
+  "independent_numerical_replay": "PASS",
+  "private_scientific_files_in_public_commit": false,
+  "individual_records_or_weights_in_public_commit": false,
+  "author_information_invented": false,
+  "preprint_submitted": false,
+  "public_scientific_release": false,
+  "scoped_check": "AST, document build, canonical rendering, per-page visual QA, checksums and local links",
+  "global_repository_check": "Existing two broken links plus internal-path warning; unchanged by this task",
+  "scientific_code_and_content": "Retained privately with server release; public commit contains only generic document builders"
+}
