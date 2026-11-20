@@ -1,0 +1,15 @@
+{
+  "status": "PRIVATE_REVIEW_PACKAGE_AND_PUBLIC_TECHNICAL_CONTENT_VERIFIED",
+  "UTC": "2026-11-20T07:44:39.825425+00:00",
+  "public_content_commit": "16af924d65f1bf5e1cb4719145192b3e3f9454a3",
+  "remote_main_independently_checked": true,
+  "scientific_publication_performed": false,
+  "private_scientific_package_uploaded_to_public_git": false,
+  "public_scope_files": 9,
+  "document_render_QA": "PASS: all pages reviewed in both languages and supplementary PDF",
+  "aggregate_equation_and_family_reconstruction": "PASS; no new inferential model fitted",
+  "server_archive_SHA_and_ZIP_CRC": "PASS",
+  "private_package_SHA256": "7d8740c906ed1454447dd1c96ff913dbb35226569cf828e02344476bc3cba232",
+  "original_dirty_worktree_preserved": true,
+  "whole_repository_validation": "Existing unrelated broken relative links and internal-path warning remain; current scope passes"
+}
