@@ -1,0 +1,18 @@
+"""Verify official archive before accepting counts/images for registration review."""
+from pathlib import Path
+import hashlib,zipfile,json,datetime
+R=Path('${HISTOLOGY_ARCHIVE_ROOT}')
+p=R/'Thrane_et_al_2018_CAN_RES.zip.part'
+md5=hashlib.md5();sha=hashlib.sha256()
+with p.open('rb') as f:
+ for b in iter(lambda:f.read(4*1024*1024),b''):md5.update(b);sha.update(b)
+assert p.stat().st_size==942045418
+assert md5.hexdigest()=='a7aa24ddaa699f75c19b0c96a6a33a8a'
+with zipfile.ZipFile(p) as z:
+ assert z.testzip() is None
+ rows=[dict(name=i.filename,bytes=i.file_size,compressed_bytes=i.compress_size,crc32=i.CRC,is_directory=i.is_dir()) for i in z.infolist()]
+assert not (R/'Thrane_et_al_2018_CAN_RES.zip').exists()
+p.rename(R/'Thrane_et_al_2018_CAN_RES.zip')
+proof=dict(status='PASS_OFFICIAL_SIZE_MD5_SHA256_AND_ALL_ZIP_MEMBER_CRC',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),url='https://zenodo.org/records/8215682/files/Thrane_et_al_2018_CAN_RES.zip?download=1',bytes=942045418,md5=md5.hexdigest(),sha256=sha.hexdigest(),members=rows,scope='Archive integrity only; no image registration or patient mapping validation yet.')
+(R/'download_audit.json').write_text(json.dumps(proof,indent=2))
+print(json.dumps({k:v for k,v in proof.items() if k!='members'}));print('members',len(rows))

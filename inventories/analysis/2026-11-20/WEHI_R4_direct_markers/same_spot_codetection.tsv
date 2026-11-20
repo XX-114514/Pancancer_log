@@ -1,0 +1,25 @@
+sample	gene1	gene2	both_rows_available	spots	gene1_only	gene2_only	both_detected	neither_detected	scope
+mel1_rep1	ESM1	RGS5	True	279	0.0	128.0	1.0	150.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel1_rep1	ESM1	FOLR2	True	279	0.0	30.0	1.0	248.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel1_rep1	RGS5	FOLR2	True	279	115.0	17.0	14.0	133.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel1_rep2	ESM1	RGS5	True	293	1.0	153.0	1.0	138.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel1_rep2	ESM1	FOLR2	True	293	2.0	33.0	0.0	258.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel1_rep2	RGS5	FOLR2	True	293	133.0	12.0	21.0	127.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel2_rep1	ESM1	RGS5	True	383	2.0	24.0	0.0	357.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel2_rep1	ESM1	FOLR2	True	383	1.0	152.0	1.0	229.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel2_rep1	RGS5	FOLR2	True	383	13.0	142.0	11.0	217.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel2_rep2	ESM1	RGS5	False	380					Same mixed spot detection only; not cell identity, contact or enrichment
+mel2_rep2	ESM1	FOLR2	False	380					Same mixed spot detection only; not cell identity, contact or enrichment
+mel2_rep2	RGS5	FOLR2	True	380	11.0	146.0	4.0	219.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel3_rep1	ESM1	RGS5	True	256	14.0	17.0	2.0	223.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel3_rep1	ESM1	FOLR2	True	256	16.0	11.0	0.0	229.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel3_rep1	RGS5	FOLR2	True	256	18.0	10.0	1.0	227.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel3_rep2	ESM1	RGS5	True	294	12.0	29.0	1.0	252.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel3_rep2	ESM1	FOLR2	True	294	9.0	15.0	4.0	266.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel3_rep2	RGS5	FOLR2	True	294	27.0	16.0	3.0	248.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel4_rep1	ESM1	RGS5	True	212	9.0	15.0	0.0	188.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel4_rep1	ESM1	FOLR2	True	212	6.0	51.0	3.0	152.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel4_rep1	RGS5	FOLR2	True	212	10.0	49.0	5.0	148.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel4_rep2	ESM1	RGS5	True	248	28.0	10.0	2.0	208.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel4_rep2	ESM1	FOLR2	True	248	8.0	128.0	22.0	90.0	Same mixed spot detection only; not cell identity, contact or enrichment
+mel4_rep2	RGS5	FOLR2	True	248	3.0	141.0	9.0	95.0	Same mixed spot detection only; not cell identity, contact or enrichment

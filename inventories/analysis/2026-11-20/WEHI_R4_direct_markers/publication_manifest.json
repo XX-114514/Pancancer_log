@@ -1,0 +1,15 @@
+{
+  "README.md": "9595c0e8830c5f323f0e518fbe0026c794eb0505ac0441643ad1b13b174985e5",
+  "audit_Thrane_histology_archive.py.in": "e159c0a1a2558bec626ca08549fe7c4beba9f332cd8394a01d6db17f33f273c5",
+  "audit_melanoma_direct_markers.py.in": "2981b288d3e13a9ea6762add3f231a28af943c774720aa6322c7032d21549e2d",
+  "complete.json": "33712a3d28ce65928ec14bcb919cf9d07539c329c8fea101da3f2e89978a8af1",
+  "direct_marker_coverage.tsv": "33c8a5d746d823cdb453ea3a4f8f63b0bf5d34b285fb8896a750d65730ced0c6",
+  "direct_marker_native_grid.png": "a661899c9909d9d89b3c2932d598a27762ac91ae5cc1048d76e3bc80aca1ed8b",
+  "histology_count_image_inventory.json": "987cc10c92b731e99545671c311df021a08adf206a4be759548d6b50f61bd16f",
+  "histology_download_audit.json": "e08ddc5891aac170d5e22d7600908e1cb9d9c1a79d1b74fb630bec328e12f77b",
+  "independent_audit.json": "40d2a7256ec68143ea11137b23cab515b381d6df288e85af993855664d0526d0",
+  "review_Thrane_histology_inventory.py.in": "61fde5dfd65549d26a948e10435103f5602e5d4cb3493b3b7145e3a0a7f2a578",
+  "review_melanoma_direct_markers.py.in": "f95f6e027deb722abb2cf7afe7e71ff215dfddcf791311048a5550078a911b04",
+  "same_spot_codetection.tsv": "b72265b81e5a3f4a8dc4b66b018aa2721763d19ef9f60559d06f48ee3443c5cd",
+  "结果说明.txt": "644b7d69b73d3da8de99a4b4fb27bce8a65163c00b7703a0311aea617f2693cb"
+}

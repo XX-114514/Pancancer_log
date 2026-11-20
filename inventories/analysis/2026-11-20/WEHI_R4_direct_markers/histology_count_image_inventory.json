@@ -1,0 +1,243 @@
+{
+  "status": "PASS_ALL8_COUNT_FILES_BYTE_IDENTICAL_AND_ALL16_AUTHOR_JPEGS_DECODED",
+  "utc": "2026-11-20T01:59:17.050469+00:00",
+  "archive_sha256": "8adc48e90b50c196fb9b8efffcd9cf8d72bc005bcdfcc50ab806a00627bb2c1e",
+  "count_files": [
+    {
+      "sample": "mel1_rep1",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel1_rep1_counts.tsv",
+      "bytes": 9118652,
+      "sha256": "92c55c099b45135330669918e8ab4ffce0271520f619577c34ff8416ff95cd85",
+      "exact_native_bytes_match": true
+    },
+    {
+      "sample": "mel1_rep2",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel1_rep2_counts.tsv",
+      "bytes": 9860645,
+      "sha256": "051628f68b50996653246deefb54a38c3063611295402ab207054cfd0160cc08",
+      "exact_native_bytes_match": true
+    },
+    {
+      "sample": "mel2_rep1",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel2_rep1_counts.tsv",
+      "bytes": 13294145,
+      "sha256": "0c30400d8d27a6f0c152301541ba385446761e3f332b2467510f9eb8bd32b7ef",
+      "exact_native_bytes_match": true
+    },
+    {
+      "sample": "mel2_rep2",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel2_rep2_counts.tsv",
+      "bytes": 13014578,
+      "sha256": "99f09e6e1f22fc37dd33853ae704ea1fda7b4f01b8d209dd0806ce4867aaaf67",
+      "exact_native_bytes_match": true
+    },
+    {
+      "sample": "mel3_rep1",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel3_rep1_counts.tsv",
+      "bytes": 8386785,
+      "sha256": "270e3dc7ad3bb93f208d613ca442d23011534e5c4cbb1b86e46d50a28f02c4fa",
+      "exact_native_bytes_match": true
+    },
+    {
+      "sample": "mel3_rep2",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel3_rep2_counts.tsv",
+      "bytes": 9649859,
+      "sha256": "ecf7fe5c41f2acc9cc495276d0e2338587e7fc8f8713d49a34166870c91ed205",
+      "exact_native_bytes_match": true
+    },
+    {
+      "sample": "mel4_rep1",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel4_rep1_counts.tsv",
+      "bytes": 6447074,
+      "sha256": "586c321709a083ad88315d4a1124007a6e21009724f9f544fd8dbe2ca1e512d0",
+      "exact_native_bytes_match": true
+    },
+    {
+      "sample": "mel4_rep2",
+      "member": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel4_rep2_counts.tsv",
+      "bytes": 8337126,
+      "sha256": "fc1803a98b50a25e358a64a5de168c8f2978b80590dd339d74b292c3a1e590b1",
+      "exact_native_bytes_match": true
+    }
+  ],
+  "images": [
+    {
+      "sample": "mel1_rep1",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep1_HE.jpg",
+      "width": 32870,
+      "height": 29299,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "049eef847ee443137aa16f32bdf62ba4358bebf2ba97260423944141d34fab1a",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel1_rep1",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep1_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "b87e6afcb08ae4c241b61e0e4778c15b2349395372ddc3b05d2ff7a1bec1f751",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel1_rep2",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep2_HE.jpg",
+      "width": 32768,
+      "height": 29184,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "f9af090dd125d44e998b26d667c1cc0fb060e3a2ab2de1d6d7fd17643d27f42a",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel1_rep2",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep2_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "bf3bde31e03453df65efc239868c89d268ec0ec4aa22f0e361a542ad03856881",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel2_rep1",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep1_HE.jpg",
+      "width": 32768,
+      "height": 29184,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "50e77a68cff061dc7fbe0940c2719eb542543cbbbe54a5b66772558ab137b176",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel2_rep1",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep1_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "960db9434313e71c6a574d75ba28eab0f7ae210a96ed691710fcb8a6dc33c7e3",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel2_rep2",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep2_HE.jpg",
+      "width": 32768,
+      "height": 28672,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "ab6eaa66c5a3bbacb482f710f68ee7274e446614b79b9d2b1bc721169a497e53",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel2_rep2",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep2_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "5b36e004d03ac8a349dc2b23096975396ad0cbe795a294276a469b2df30dfb73",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel3_rep1",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep1_HE.jpg",
+      "width": 32768,
+      "height": 28672,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "ed11f8e7e6f57087dfdd027573563100dbf3ad87265f4b2b1e1677fcfda15a47",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel3_rep1",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep1_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "75cbde3519c98d4825dfa2d1afdedb050f5062729085110a5d9dfadf2a0a0b29",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel3_rep2",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep2_HE.jpg",
+      "width": 32768,
+      "height": 28672,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "47480ea0b4ebf19ec818d2ab2ba658af8f62c49afd1109da02c03ebbd308da16",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel3_rep2",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep2_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "e1b7e0b0a459e2af94686ae66934561002b315d9363364d144617c013020c4b4",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel4_rep1",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep1_HE.jpg",
+      "width": 32768,
+      "height": 29184,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "0c7350e7a8cb6edbc38694bab0fa064f1cb094740e58cddef305bf96191e3ce9",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel4_rep1",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep1_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "9fbf6b2593278b5652e9f288b5175a6891576c82f87d071bf1af80c6ce4b29c1",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel4_rep2",
+      "kind": "HE",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep2_HE.jpg",
+      "width": 32768,
+      "height": 28672,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "69792026ef2af766f3a781446e949f582ad5a60b5af4523f589de800f7f96173",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    },
+    {
+      "sample": "mel4_rep2",
+      "kind": "spots",
+      "member": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep2_spots.jpg",
+      "width": 20000,
+      "height": 20000,
+      "exif_orientation": 1,
+      "mode": "RGB",
+      "sha256": "d36a218e4197b25b3d5c999d580f6f8551a93e9f9d75d78d837579d7e59ad28f",
+      "scope": "Filename pair in same author archive; no quantitative transform or tissue annotation validated"
+    }
+  ],
+  "contact_sheet_sha256": "dde2e8db7d549a7f1d5565358af31bea7bc3633c3d61e3657c1c80588cede576",
+  "scope": "Count-file identity bridges this archive to current eight sections; filenames pair HE/spots but do not establish registration transform, numeric grid correspondence or patient identity. Contact sheet is for visual inventory only. Original high-resolution images remain inside server archive."
+}

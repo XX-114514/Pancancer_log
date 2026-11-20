@@ -1,0 +1,45 @@
+"""Direct archived-count coverage/maps. No test, label or image-registration claim."""
+from pathlib import Path
+import hashlib,json,datetime
+import numpy as np,pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.colors import Normalize
+B=Path('${NATIVE_COUNTS_ROOT}')
+R=Path('${SPATIAL_RESULTS_ROOT}')
+O=R/'direct_marker_review_v1';O.mkdir(exist_ok=False)
+audit=pd.read_csv(R/'input_audit.tsv',sep='\t').set_index('sample');old=pd.read_csv(R/'vascular_marker_coverage.tsv',sep='\t')
+genes=['ESM1','RGS5','FOLR2'];samples=sorted(audit.index);assert len(samples)==8
+coverage=[];pairs=[];plots=[];hashes={}
+for sample in samples:
+ p=B/('ST_'+sample+'_counts.tsv');h=hashlib.sha256(p.read_bytes()).hexdigest();assert h==audit.loc[sample,'native_sha256'];hashes[p.name]=h
+ frame=pd.read_csv(p,sep='\t',index_col=0);names=[str(x).split()[0] for x in frame.index]
+ assert frame.shape[1]==audit.loc[sample,'spots']
+ totals=frame.sum(axis=0).to_numpy();assert (totals>0).all()
+ xy=np.array([[float(x) for x in str(c).split('x')] for c in frame.columns])[:,::-1]
+ vec={}
+ for gene in genes:
+  pos=[i for i,n in enumerate(names) if n==gene];assert len(pos)<=1
+  present=bool(pos);v=frame.iloc[pos[0]].to_numpy() if present else None;vec[gene]=v
+  prev=old[(old['sample']==sample)&(old.gene==gene)];assert len(prev)==1 and bool(prev.iloc[0]['present'])==present
+  if present:assert int((v>0).sum())==int(prev.iloc[0].positive_spots)
+  coverage.append(dict(sample=sample,gene=gene,listed_in_count_table=present,spots=len(totals),positive_spots=int((v>0).sum()) if present else None,total_gene_counts=int(v.sum()) if present else None,positive_fraction=float((v>0).mean()) if present else None,scope='Listed/detected in archived table; absent row is unknown, not a measured zero'))
+  plots.append((sample,gene,xy,np.log1p(v/totals*10000) if present else None))
+ for a,b in [('ESM1','RGS5'),('ESM1','FOLR2'),('RGS5','FOLR2')]:
+  x=vec[a];y=vec[b];valid=x is not None and y is not None
+  pairs.append(dict(sample=sample,gene1=a,gene2=b,both_rows_available=valid,spots=len(totals),gene1_only=int(((x>0)&(y==0)).sum()) if valid else None,gene2_only=int(((x==0)&(y>0)).sum()) if valid else None,both_detected=int(((x>0)&(y>0)).sum()) if valid else None,neither_detected=int(((x==0)&(y==0)).sum()) if valid else None,scope='Same mixed spot detection only; not cell identity, contact or enrichment'))
+  if valid:assert sum(pairs[-1][k] for k in ['gene1_only','gene2_only','both_detected','neither_detected'])==len(totals)
+pd.DataFrame(coverage).to_csv(O/'direct_marker_coverage.tsv',sep='\t',index=False);pd.DataFrame(pairs).to_csv(O/'same_spot_codetection.tsv',sep='\t',index=False)
+fig,axs=plt.subplots(8,3,figsize=(12,25),layout='constrained');vmax=max(float(v.max()) for s,g,xy,v in plots if v is not None);norm=Normalize(0,vmax)
+for ax,(sample,gene,xy,v) in zip(axs.ravel(),plots):
+ ax.scatter(xy[:,0],xy[:,1],s=5,color='#dddddd')
+ if v is not None:
+  m=v>0;artist=ax.scatter(xy[m,0],xy[m,1],c=v[m],s=14,cmap='viridis',norm=norm);subtitle=str(int(m.sum()))+'/'+str(len(v))+' detected'
+ else:subtitle='ROW ABSENT: unknown, not zero'
+ ax.set_title(sample+' | '+gene+' | '+subtitle,fontsize=10);ax.set_aspect('equal');ax.set_xticks([]);ax.set_yticks([])
+fig.colorbar(artist,ax=axs.ravel().tolist(),shrink=.35,label='log1p(count / all-gene spot total * 10,000)')
+fig.suptitle('Direct archived marker expression | all 8 legacy-ST sections\nStored native grid only; not registered to H&E. Grey = no listed count when row exists.',fontsize=13)
+fig.savefig(O/'direct_marker_native_grid.png',dpi=135);plt.close(fig)
+proof=dict(status='PASS_ALL8_NATIVE_HASHES_COVERAGE_REPLAY_AND_ALL24_CONTINGENCY_TOTALS',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),source_hashes=hashes,coverage_rows=len(coverage),pair_rows=len(pairs),scope='Descriptive direct archived RNA, not marker-defined cell identities. No new P values or inferred patient independence. No H&E registration. Missing gene row retained unknown.',output_hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in O.iterdir() if p.is_file()})
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps({k:v for k,v in proof.items() if k not in ['source_hashes','output_hashes']}))
