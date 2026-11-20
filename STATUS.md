@@ -1,3 +1,7 @@
+## 2026-11-20 R4 CM13 external LIHC qualification
+
+[Expression and clinical eligibility audit](inventories/analysis/2026-11-20/WEHI_R4_external_LIHC/README.md): GSE14520 GPL3921 has 225 tumor / 220 non-tumor samples; exact unambiguous coverage is 47/60 main and 40/60 sensitivity genes. All 120 gene coverage rows independently replayed. Patient/OS bridge and time origin remain unqualified; no external survival fit performed.
+
 ## 2026-11-20 作者图像几何检查
 
 [全部切片与失败记录](inventories/analysis/2026-11-20/WEHI_R4_histology_geometry/README.md)：6片相对网格可拟合、2片未通过固定门槛；尚未建立有效条码/H&E配准，未作血管病理定位声明。三种纯图像检测与独立几何重放均记录。

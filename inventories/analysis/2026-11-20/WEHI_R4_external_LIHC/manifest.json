@@ -1,0 +1,7 @@
+{
+  "qualification.json": "bc73e09b06faaaba5cd16e22e3e94ca51c2415cc9500a00565c1074dde657f0d",
+  "CM13_probe_coverage.tsv": "98883a5b0e82d888d380721cbead4bc56700f52ab5b3fa322afaa2ffbd80fc4c",
+  "audit_GSE14520_qualification.py": "680ebda0b0082433afb80844ffee63b179f23f561dc0759784de9b548c9bef92",
+  "replay_GSE14520_coverage.py": "81e3cd7f3196f30c6a8df016b2d41042f627c7b6024b68ce8e5e85b5e79cc85a",
+  "independent_replay.json": "c494867d10b1a656450eea4101a98cca7a79acd2c92656535a311afb085706e4"
+}

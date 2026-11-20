@@ -1,0 +1,85 @@
+{
+  "status": "EXPRESSION_AUDITED_CLINICAL_NOT_QUALIFIED",
+  "time_utc": "2026-11-20T02:19:00.264494+00:00",
+  "inputs": {
+    "GSE14520-GPL3921_series_matrix.txt.gz": {
+      "sha256": "03e1c64abf40f9fd09d52870efdcb23bb4a2ca7582810fe27cacdf83fefe1a60",
+      "bytes": 21301282
+    },
+    "GPL3921.annot.gz": {
+      "sha256": "72ddaac9e503b262b8389298820eaa84dd5d520754a83cc653cc81f51d83405e",
+      "bytes": 4551278
+    },
+    "candidate_signatures.tsv": {
+      "sha256": "98907c4931b027282fde7a0a5a347b7ba36e5945f992ccad522555f31bddd5b2",
+      "bytes": 140822
+    }
+  },
+  "samples": 445,
+  "probe_rows": 22268,
+  "all_values_finite": true,
+  "characteristic_fields": {
+    "tissue": 445,
+    "disease state": 445,
+    "individual": 445
+  },
+  "tissue_counts": {
+    "liver tumor tissue": 225,
+    "liver non-tumor tissue": 220
+  },
+  "unique_individual_labels": 445,
+  "individual_labels_are_not_verified_clinical_bridge": true,
+  "coverage": {
+    "all_W_nodes_previous_recipe": {
+      "planned": 60,
+      "unambiguous": 40,
+      "missing": [
+        "RTKN2",
+        "CDCA7",
+        "FBXO43",
+        "KIF15",
+        "ACY3",
+        "CDCA5",
+        "NUF2",
+        "DEPDC1B",
+        "MND1",
+        "CDCA2",
+        "CKAP2L",
+        "FANK1",
+        "SPC24",
+        "FAM111B",
+        "SAPCD2",
+        "SKA3",
+        "JAKMIP1",
+        "TNFRSF18",
+        "ARHGEF39",
+        "ESCO2"
+      ]
+    },
+    "original_network_members": {
+      "planned": 60,
+      "unambiguous": 47,
+      "missing": [
+        "KIF15",
+        "JAKMIP1",
+        "FBXO43",
+        "CKAP2L",
+        "DEPDC1B",
+        "CDCA5",
+        "SKA3",
+        "CDCA2",
+        "NUF2",
+        "SPC24",
+        "APOBEC3H",
+        "ESCO2",
+        "UBE2C"
+      ]
+    }
+  },
+  "clinical_endpoint_available_in_matrix": false,
+  "clinical_patient_join_verified": false,
+  "survival_model_run": false,
+  "previously_explored_dataset": true,
+  "annotation_policy": "Exact official gene symbol; multi-symbol probes excluded; no alias rescue or outcome-based probe choice",
+  "output_sha256": "98883a5b0e82d888d380721cbead4bc56700f52ab5b3fa322afaa2ffbd80fc4c"
+}

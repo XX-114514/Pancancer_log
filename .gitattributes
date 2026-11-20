@@ -46,3 +46,5 @@ inventories/analysis/2026-11-20/WEHI_R4_direct_markers/*.tsv whitespace=cr-at-eo
 
 inventories/analysis/2026-11-20/WEHI_R4_histology_geometry/** -text
 inventories/analysis/2026-11-20/WEHI_R4_histology_geometry/*.tsv whitespace=cr-at-eol,-blank-at-eol
+
+inventories/analysis/2026-11-20/WEHI_R4_external_LIHC/** -text

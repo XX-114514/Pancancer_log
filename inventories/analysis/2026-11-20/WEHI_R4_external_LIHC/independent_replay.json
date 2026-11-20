@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Independent pandas probe membership and all 120 gene coverage rows; source hashes and expression axes. Not clinical validation.",
+  "rows": 120,
+  "shape": [
+    22268,
+    445
+  ],
+  "qualification_sha256": "bc73e09b06faaaba5cd16e22e3e94ca51c2415cc9500a00565c1074dde657f0d",
+  "time_utc": "2026-11-20T02:19:37.457527+00:00"
+}

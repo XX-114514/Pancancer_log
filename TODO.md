@@ -1,3 +1,8 @@
+## 2026-11-20 CM13 external qualification
+
+- [x] Audit existing GSE14520 expression and frozen CM13 probe coverage; independent replay passed.
+- [ ] Obtain original clinical mapping, endpoint coding/time origin and freeze platform coverage policy before any external fit. See [qualification](inventories/analysis/2026-11-20/WEHI_R4_external_LIHC/README.md).
+
 ## R4/K15当前工作包（2026-11-20）
 
 - [x] 全15CM证据登记及当前SHA/独立聚合复核。
