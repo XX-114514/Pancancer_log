@@ -1,3 +1,7 @@
+## 2026-11-20 Breast embedded-image qualification
+
+[Six-slice image and analysis-scope review](inventories/analysis/2026-11-20/WEHI_R4_breast_image_scope/README.md): embedded RGB images found and visually reviewed; source hashes and 72 population counts replayed. S01 has 517 raw centroids outside image bounds, including 7 ESM1+ EC and 1 RGS5+ mural in the pc_low_MYH11 branch. Other slices have none. No new biological test; segmentation and independent registration remain open.
+
 ## 2026-11-20 Thrane auxiliary provenance
 
 [Four-slice derivative bridge](inventories/analysis/2026-11-20/WEHI_R4_spatialGE_bridge/README.md): all 19,150,573 count values and 1,180 barcode coordinates match author originals; independent replay passed. Four derivative clinical rows are available server-side, but primary patient identity and H&E registration remain unverified. No new model or subset selection.

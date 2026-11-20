@@ -1,0 +1,729 @@
+{
+  "status": "PASS_EXISTING_SOURCE_HASHES_NATIVE_COORDINATES_AND_ALL_GROUP_COUNTS",
+  "time_utc": "2026-11-20T02:33:51.597805+00:00",
+  "complete_sha256": "78fd8d8d4bc030e9b86cebf8a90025ccc0581209bb51a34de5dfb200b7d186d2",
+  "rows": [
+    {
+      "section": "S01",
+      "state": "broad_mural",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 11750,
+      "out_image": 7,
+      "zero_nuclei": 10,
+      "nuclei_gt1": 11
+    },
+    {
+      "section": "S01",
+      "state": "broad_mural",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 11509,
+      "out_image": 11,
+      "zero_nuclei": 6,
+      "nuclei_gt1": 3
+    },
+    {
+      "section": "S01",
+      "state": "broad_mural",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3623,
+      "out_image": 7,
+      "zero_nuclei": 5,
+      "nuclei_gt1": 6
+    },
+    {
+      "section": "S01",
+      "state": "broad_mural",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3746,
+      "out_image": 2,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 1
+    },
+    {
+      "section": "S01",
+      "state": "pc_low_MYH11",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 11750,
+      "out_image": 7,
+      "zero_nuclei": 10,
+      "nuclei_gt1": 11
+    },
+    {
+      "section": "S01",
+      "state": "pc_low_MYH11",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3601,
+      "out_image": 1,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S01",
+      "state": "pc_low_MYH11",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3623,
+      "out_image": 7,
+      "zero_nuclei": 5,
+      "nuclei_gt1": 6
+    },
+    {
+      "section": "S01",
+      "state": "pc_low_MYH11",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 2003,
+      "out_image": 1,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S01",
+      "state": "MYH11_contractile",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 11750,
+      "out_image": 7,
+      "zero_nuclei": 10,
+      "nuclei_gt1": 11
+    },
+    {
+      "section": "S01",
+      "state": "MYH11_contractile",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 2775,
+      "out_image": 1,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S01",
+      "state": "MYH11_contractile",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3623,
+      "out_image": 7,
+      "zero_nuclei": 5,
+      "nuclei_gt1": 6
+    },
+    {
+      "section": "S01",
+      "state": "MYH11_contractile",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 515,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S02",
+      "state": "broad_mural",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 12611,
+      "out_image": 0,
+      "zero_nuclei": 19,
+      "nuclei_gt1": 15
+    },
+    {
+      "section": "S02",
+      "state": "broad_mural",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 7090,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 20
+    },
+    {
+      "section": "S02",
+      "state": "broad_mural",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1408,
+      "out_image": 0,
+      "zero_nuclei": 6,
+      "nuclei_gt1": 1
+    },
+    {
+      "section": "S02",
+      "state": "broad_mural",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1667,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 8
+    },
+    {
+      "section": "S02",
+      "state": "pc_low_MYH11",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 12611,
+      "out_image": 0,
+      "zero_nuclei": 19,
+      "nuclei_gt1": 15
+    },
+    {
+      "section": "S02",
+      "state": "pc_low_MYH11",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 2907,
+      "out_image": 0,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 5
+    },
+    {
+      "section": "S02",
+      "state": "pc_low_MYH11",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1408,
+      "out_image": 0,
+      "zero_nuclei": 6,
+      "nuclei_gt1": 1
+    },
+    {
+      "section": "S02",
+      "state": "pc_low_MYH11",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1263,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 3
+    },
+    {
+      "section": "S02",
+      "state": "MYH11_contractile",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 12611,
+      "out_image": 0,
+      "zero_nuclei": 19,
+      "nuclei_gt1": 15
+    },
+    {
+      "section": "S02",
+      "state": "MYH11_contractile",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 2364,
+      "out_image": 0,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 4
+    },
+    {
+      "section": "S02",
+      "state": "MYH11_contractile",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1408,
+      "out_image": 0,
+      "zero_nuclei": 6,
+      "nuclei_gt1": 1
+    },
+    {
+      "section": "S02",
+      "state": "MYH11_contractile",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 263,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S03",
+      "state": "broad_mural",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 5779,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 7
+    },
+    {
+      "section": "S03",
+      "state": "broad_mural",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 4780,
+      "out_image": 0,
+      "zero_nuclei": 3,
+      "nuclei_gt1": 27
+    },
+    {
+      "section": "S03",
+      "state": "broad_mural",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 525,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S03",
+      "state": "broad_mural",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 254,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 4
+    },
+    {
+      "section": "S03",
+      "state": "pc_low_MYH11",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 5779,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 7
+    },
+    {
+      "section": "S03",
+      "state": "pc_low_MYH11",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 891,
+      "out_image": 0,
+      "zero_nuclei": 3,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S03",
+      "state": "pc_low_MYH11",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 525,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S03",
+      "state": "pc_low_MYH11",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 149,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 1
+    },
+    {
+      "section": "S03",
+      "state": "MYH11_contractile",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 5779,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 7
+    },
+    {
+      "section": "S03",
+      "state": "MYH11_contractile",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 2159,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 8
+    },
+    {
+      "section": "S03",
+      "state": "MYH11_contractile",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 525,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S03",
+      "state": "MYH11_contractile",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 48,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 1
+    },
+    {
+      "section": "S04",
+      "state": "broad_mural",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 6175,
+      "out_image": 0,
+      "zero_nuclei": 14,
+      "nuclei_gt1": 18
+    },
+    {
+      "section": "S04",
+      "state": "broad_mural",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 4513,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 16
+    },
+    {
+      "section": "S04",
+      "state": "broad_mural",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 988,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S04",
+      "state": "broad_mural",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1283,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S04",
+      "state": "pc_low_MYH11",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 6175,
+      "out_image": 0,
+      "zero_nuclei": 14,
+      "nuclei_gt1": 18
+    },
+    {
+      "section": "S04",
+      "state": "pc_low_MYH11",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1563,
+      "out_image": 0,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 3
+    },
+    {
+      "section": "S04",
+      "state": "pc_low_MYH11",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 988,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S04",
+      "state": "pc_low_MYH11",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 691,
+      "out_image": 0,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S04",
+      "state": "MYH11_contractile",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 6175,
+      "out_image": 0,
+      "zero_nuclei": 14,
+      "nuclei_gt1": 18
+    },
+    {
+      "section": "S04",
+      "state": "MYH11_contractile",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1482,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 4
+    },
+    {
+      "section": "S04",
+      "state": "MYH11_contractile",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 988,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 2
+    },
+    {
+      "section": "S04",
+      "state": "MYH11_contractile",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 302,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 1
+    },
+    {
+      "section": "S05",
+      "state": "broad_mural",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 13852,
+      "out_image": 0,
+      "zero_nuclei": 21,
+      "nuclei_gt1": 10
+    },
+    {
+      "section": "S05",
+      "state": "broad_mural",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 11985,
+      "out_image": 0,
+      "zero_nuclei": 69,
+      "nuclei_gt1": 154
+    },
+    {
+      "section": "S05",
+      "state": "broad_mural",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1400,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S05",
+      "state": "broad_mural",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1218,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 4
+    },
+    {
+      "section": "S05",
+      "state": "pc_low_MYH11",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 13852,
+      "out_image": 0,
+      "zero_nuclei": 21,
+      "nuclei_gt1": 10
+    },
+    {
+      "section": "S05",
+      "state": "pc_low_MYH11",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3932,
+      "out_image": 0,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 3
+    },
+    {
+      "section": "S05",
+      "state": "pc_low_MYH11",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1400,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S05",
+      "state": "pc_low_MYH11",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1079,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S05",
+      "state": "MYH11_contractile",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 13852,
+      "out_image": 0,
+      "zero_nuclei": 21,
+      "nuclei_gt1": 10
+    },
+    {
+      "section": "S05",
+      "state": "MYH11_contractile",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 4842,
+      "out_image": 0,
+      "zero_nuclei": 30,
+      "nuclei_gt1": 68
+    },
+    {
+      "section": "S05",
+      "state": "MYH11_contractile",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1400,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 0
+    },
+    {
+      "section": "S05",
+      "state": "MYH11_contractile",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 172,
+      "out_image": 0,
+      "zero_nuclei": 0,
+      "nuclei_gt1": 3
+    },
+    {
+      "section": "S06",
+      "state": "broad_mural",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 13142,
+      "out_image": 0,
+      "zero_nuclei": 21,
+      "nuclei_gt1": 31
+    },
+    {
+      "section": "S06",
+      "state": "broad_mural",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 11598,
+      "out_image": 0,
+      "zero_nuclei": 8,
+      "nuclei_gt1": 25
+    },
+    {
+      "section": "S06",
+      "state": "broad_mural",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3013,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 6
+    },
+    {
+      "section": "S06",
+      "state": "broad_mural",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 2708,
+      "out_image": 0,
+      "zero_nuclei": 3,
+      "nuclei_gt1": 6
+    },
+    {
+      "section": "S06",
+      "state": "pc_low_MYH11",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 13142,
+      "out_image": 0,
+      "zero_nuclei": 21,
+      "nuclei_gt1": 31
+    },
+    {
+      "section": "S06",
+      "state": "pc_low_MYH11",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 5148,
+      "out_image": 0,
+      "zero_nuclei": 4,
+      "nuclei_gt1": 17
+    },
+    {
+      "section": "S06",
+      "state": "pc_low_MYH11",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3013,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 6
+    },
+    {
+      "section": "S06",
+      "state": "pc_low_MYH11",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 1830,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 9
+    },
+    {
+      "section": "S06",
+      "state": "MYH11_contractile",
+      "population": "EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 13142,
+      "out_image": 0,
+      "zero_nuclei": 21,
+      "nuclei_gt1": 31
+    },
+    {
+      "section": "S06",
+      "state": "MYH11_contractile",
+      "population": "mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 2652,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 4
+    },
+    {
+      "section": "S06",
+      "state": "MYH11_contractile",
+      "population": "ESM1_EC",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 3013,
+      "out_image": 0,
+      "zero_nuclei": 2,
+      "nuclei_gt1": 6
+    },
+    {
+      "section": "S06",
+      "state": "MYH11_contractile",
+      "population": "RGS5_mural",
+      "coordinate_max_error_um": 2.842170943040401e-14,
+      "cells": 457,
+      "out_image": 0,
+      "zero_nuclei": 1,
+      "nuclei_gt1": 0
+    }
+  ],
+  "scope": "All six source hashes match prior accepted receipts; all native coordinates agree with previously analyzed arrays within 1e-10 um; source rows and group counts replayed. No independent histology ground truth.",
+  "new_biological_tests": false
+}

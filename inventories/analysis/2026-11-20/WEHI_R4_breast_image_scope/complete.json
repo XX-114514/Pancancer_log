@@ -1,0 +1,309 @@
+{
+  "status": "EMBEDDED_IMAGES_AND_COORDINATE_DIAGNOSTIC_ONLY",
+  "time_utc": "2026-11-20T02:32:18.859649+00:00",
+  "rows": [
+    {
+      "section": "S01",
+      "cells": 385109,
+      "image_shape": [
+        3696,
+        3948,
+        3
+      ],
+      "scales": {
+        "microns_per_pixel": 0.2125,
+        "spot_diameter_fullres": 188.23529411764707,
+        "tissue_hires_scalef": 0.0625,
+        "tissue_lowres_scalef": 0.03125
+      },
+      "input_sha256": "1c3e526044c44798cdafe3aff21c07db51c886234d61d0240a191ea8b735a31d",
+      "image_array_sha256": "ff780543460b88dabd318929845a71143d56f4b36dc8453164ec702f8df45ada",
+      "in_image": 384592,
+      "out_image": 517,
+      "affine_coefficients": [
+        [
+          0.015031254877067404,
+          4.520223917536756
+        ],
+        [
+          -4.520223917536761,
+          0.015031254877063915
+        ],
+        [
+          59789.93065632202,
+          5250.289718830182
+        ]
+      ],
+      "affine_rms_hires_pixels": 1.2587708579964499e-12,
+      "affine_max_hires_pixels": 3.0505379675102492e-12,
+      "um_label_times_pixel_size_vs_native_max": 1.8189894035458565e-12,
+      "cell_area_nonpositive": 0,
+      "cell_area_nonfinite": 0,
+      "nuclear_area_missing": 4795,
+      "zero_nuclei": 4795,
+      "nuclei_gt1": 3826,
+      "nuclear_area_gt_cell": 0,
+      "cell_area_quantiles": [
+        2.664218846708536,
+        12.824375465512276,
+        64.75406485050917,
+        298.0764170698821,
+        1008.1584740951656
+      ],
+      "target_markers_used": false
+    },
+    {
+      "section": "S02",
+      "cells": 430541,
+      "image_shape": [
+        3537,
+        3526,
+        3
+      ],
+      "scales": {
+        "microns_per_pixel": 0.2125,
+        "spot_diameter_fullres": 188.23529411764707,
+        "tissue_hires_scalef": 0.0625,
+        "tissue_lowres_scalef": 0.0078125
+      },
+      "input_sha256": "e986f430a4717990e1316e0fa937409591ac05c851812d79ec7598697bc7811e",
+      "image_array_sha256": "43300de6f72b541910153cdad59a19587e82238d7f8830a6a9c05f3a5224bcd8",
+      "in_image": 430541,
+      "out_image": 0,
+      "affine_coefficients": [
+        [
+          0.01150855875388616,
+          4.519542178733075
+        ],
+        [
+          -4.519542178733078,
+          0.011508558753881626
+        ],
+        [
+          52829.50547274349,
+          2400.0851538321313
+        ]
+      ],
+      "affine_rms_hires_pixels": 2.5843358573632022e-12,
+      "affine_max_hires_pixels": 5.475883235154604e-12,
+      "um_label_times_pixel_size_vs_native_max": 9.094947017729282e-13,
+      "cell_area_nonpositive": 0,
+      "cell_area_nonfinite": 0,
+      "nuclear_area_missing": 7445,
+      "zero_nuclei": 7445,
+      "nuclei_gt1": 6544,
+      "nuclear_area_gt_cell": 0,
+      "cell_area_quantiles": [
+        2.844843853265047,
+        10.069844115525484,
+        45.33687664568424,
+        234.9479772783816,
+        870.8383128605783
+      ],
+      "target_markers_used": false
+    },
+    {
+      "section": "S03",
+      "cells": 622529,
+      "image_shape": [
+        4048,
+        4217,
+        3
+      ],
+      "scales": {
+        "microns_per_pixel": 0.2125,
+        "spot_diameter_fullres": 188.23529411764707,
+        "tissue_hires_scalef": 0.0625,
+        "tissue_lowres_scalef": 0.0078125
+      },
+      "input_sha256": "d22247ab7203e97abacdc174c0acf991bbeb0417ee4fa3ac2c3d2dd884bb7baa",
+      "image_array_sha256": "997f84bceab164798b285f38990810f13f5c9bc106415ae921366b5dc1396033",
+      "in_image": 622529,
+      "out_image": 0,
+      "affine_coefficients": [
+        [
+          0.022496529842607898,
+          4.51979049609043
+        ],
+        [
+          -4.519790496090425,
+          0.022496529842612523
+        ],
+        [
+          64953.56184275938,
+          5916.1391789588815
+        ]
+      ],
+      "affine_rms_hires_pixels": 2.9712680879190488e-12,
+      "affine_max_hires_pixels": 5.752149554916067e-12,
+      "um_label_times_pixel_size_vs_native_max": 9.094947017729282e-13,
+      "cell_area_nonpositive": 0,
+      "cell_area_nonfinite": 0,
+      "nuclear_area_missing": 5753,
+      "zero_nuclei": 5753,
+      "nuclei_gt1": 10183,
+      "nuclear_area_gt_cell": 0,
+      "cell_area_quantiles": [
+        3.838281389325857,
+        13.592031743377447,
+        49.6718768030405,
+        231.01938338577747,
+        789.6022161617875
+      ],
+      "target_markers_used": false
+    },
+    {
+      "section": "S04",
+      "cells": 556687,
+      "image_shape": [
+        3541,
+        3540,
+        3
+      ],
+      "scales": {
+        "microns_per_pixel": 0.2125,
+        "spot_diameter_fullres": 188.23529411764707,
+        "tissue_hires_scalef": 0.0625,
+        "tissue_lowres_scalef": 0.0078125
+      },
+      "input_sha256": "eca71dfa4f2e92292e7cc40abea51d38dd77a9d7a350edb310a313d2420d93ea",
+      "image_array_sha256": "04641a3390b97bb85ff4a6841b719e77399f191b73b1c4959aaad6ea2859bd1d",
+      "in_image": 556687,
+      "out_image": 0,
+      "affine_coefficients": [
+        [
+          0.019231662016200128,
+          4.5189923706613495
+        ],
+        [
+          -4.518992370661344,
+          0.019231662016200857
+        ],
+        [
+          46327.074728464926,
+          2168.4486263205104
+        ]
+      ],
+      "affine_rms_hires_pixels": 1.8156048896466042e-12,
+      "affine_max_hires_pixels": 4.192563418333924e-12,
+      "um_label_times_pixel_size_vs_native_max": 9.094947017729282e-13,
+      "cell_area_nonpositive": 0,
+      "cell_area_nonfinite": 0,
+      "nuclear_area_missing": 5501,
+      "zero_nuclei": 5501,
+      "nuclei_gt1": 9512,
+      "nuclear_area_gt_cell": 0,
+      "cell_area_quantiles": [
+        2.528750091791153,
+        10.792344141751528,
+        51.38781436532736,
+        268.7248535044492,
+        827.7140925452113
+      ],
+      "target_markers_used": false
+    },
+    {
+      "section": "S05",
+      "cells": 624619,
+      "image_shape": [
+        3472,
+        3472,
+        3
+      ],
+      "scales": {
+        "microns_per_pixel": 0.2125,
+        "spot_diameter_fullres": 188.23529411764707,
+        "tissue_hires_scalef": 0.0625,
+        "tissue_lowres_scalef": 0.0078125
+      },
+      "input_sha256": "e19d854e91786dfa00c371fa6c8405a0758cd3d68e3bdfdc41f8fafce3cd9bc9",
+      "image_array_sha256": "4bfad71d2fe937d1af5122686a22461ceaf2e804a10397505511a510337a5926",
+      "in_image": 624619,
+      "out_image": 0,
+      "affine_coefficients": [
+        [
+          0.022719344583467097,
+          4.518909645313933
+        ],
+        [
+          -4.518909645313935,
+          0.022719344583470247
+        ],
+        [
+          50880.59625653354,
+          2267.6984001960227
+        ]
+      ],
+      "affine_rms_hires_pixels": 4.115282531564264e-12,
+      "affine_max_hires_pixels": 8.134767913360665e-12,
+      "um_label_times_pixel_size_vs_native_max": 9.094947017729282e-13,
+      "cell_area_nonpositive": 0,
+      "cell_area_nonfinite": 0,
+      "nuclear_area_missing": 12970,
+      "zero_nuclei": 12970,
+      "nuclei_gt1": 20699,
+      "nuclear_area_gt_cell": 0,
+      "cell_area_quantiles": [
+        2.9351563565433025,
+        11.92125043272972,
+        53.19406443089247,
+        175.29656886309385,
+        707.7339319400489
+      ],
+      "target_markers_used": false
+    },
+    {
+      "section": "S06",
+      "cells": 643466,
+      "image_shape": [
+        3557,
+        3477,
+        3
+      ],
+      "scales": {
+        "microns_per_pixel": 0.2125,
+        "spot_diameter_fullres": 188.23529411764707,
+        "tissue_hires_scalef": 0.0625,
+        "tissue_lowres_scalef": 0.0078125
+      },
+      "input_sha256": "674185b504bb253bbd15d4ed4eb964b755d87aa138f211b107af6b03ba8dff8c",
+      "image_array_sha256": "264e414c31e229eb48fcfecb09b70be749ba727945d682aacd0a9775ac3a0753",
+      "in_image": 643466,
+      "out_image": 0,
+      "affine_coefficients": [
+        [
+          0.01693534098156927,
+          4.519011411829061
+        ],
+        [
+          -4.519011411829057,
+          0.016935340981563907
+        ],
+        [
+          51359.37675139979,
+          2379.058680709636
+        ]
+      ],
+      "affine_rms_hires_pixels": 2.0199279734613717e-12,
+      "affine_max_hires_pixels": 5.084229945850415e-12,
+      "um_label_times_pixel_size_vs_native_max": 9.094947017729282e-13,
+      "cell_area_nonpositive": 0,
+      "cell_area_nonfinite": 0,
+      "nuclear_area_missing": 25791,
+      "zero_nuclei": 25791,
+      "nuclei_gt1": 14305,
+      "nuclear_area_gt_cell": 0,
+      "cell_area_quantiles": [
+        1.9417188204824924,
+        12.101875439286232,
+        67.7343774586916,
+        340.0265748426318,
+        913.6012831628324
+      ],
+      "target_markers_used": false
+    }
+  ],
+  "scope": "All six pre-existing arrays; no cell boundaries or pathology labels; no target-driven ROI selection",
+  "coordinate_policy": "Overlay stored obsm/spatial with stored hires scale. Affine fit is a consistency diagnostic, not independently validated ground truth.",
+  "biological_tests_run": false
+}

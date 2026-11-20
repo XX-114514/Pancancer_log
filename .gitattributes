@@ -50,3 +50,5 @@ inventories/analysis/2026-11-20/WEHI_R4_histology_geometry/*.tsv whitespace=cr-a
 inventories/analysis/2026-11-20/WEHI_R4_external_LIHC/** -text
 
 inventories/analysis/2026-11-20/WEHI_R4_spatialGE_bridge/** -text
+
+inventories/analysis/2026-11-20/WEHI_R4_breast_image_scope/** -text
