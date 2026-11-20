@@ -1,0 +1,30 @@
+"""Inspect author archive/count identity and generate low-resolution image index."""
+from pathlib import Path
+import io,json,hashlib,zipfile,datetime
+from PIL import Image,ImageDraw
+R=Path('${ANALYSIS_ROOT}')
+S=R/'sources/Thrane2018_histology_v1';O=R/'spatial_melanoma/author_histology_inventory_v1';O.mkdir(exist_ok=False)
+B=Path('${NATIVE_COUNTS_ROOT}')
+audit=json.loads((S/'download_audit.json').read_text());assert audit['status']=='PASS_OFFICIAL_SIZE_MD5_SHA256_AND_ALL_ZIP_MEMBER_CRC'
+p=S/'Thrane_et_al_2018_CAN_RES.zip';assert hashlib.sha256(p.read_bytes()).hexdigest()==audit['sha256']
+# Trusted, hash-verified author JPEGs; decode using JPEG draft before thumbnailing.
+Image.MAX_IMAGE_PIXELS=2_000_000_000
+samples=['mel%d_rep%d'%(i,j) for i in range(1,5) for j in [1,2]];images=[];counts=[]
+canvas=Image.new('RGB',(1400,8*520),'white');draw=ImageDraw.Draw(canvas)
+with zipfile.ZipFile(p) as z:
+ for row,sample in enumerate(samples):
+  name='ST_'+sample+'_counts.tsv';member='Thrane_et_al_2018_CAN_RES/Count_data/'+name
+  b=z.read(member);native=(B/name).read_bytes();assert b==native
+  counts.append(dict(sample=sample,member=member,bytes=len(b),sha256=hashlib.sha256(b).hexdigest(),exact_native_bytes_match=True))
+  for col,kind in enumerate(['HE','spots']):
+   member='Thrane_et_al_2018_CAN_RES/Images/ST_'+sample+'_'+kind+'.jpg';b=z.read(member)
+   with Image.open(io.BytesIO(b)) as im:
+    width,height=im.size;orientation=im.getexif().get(274);mode=im.mode;assert im.format=='JPEG'
+    assert width*height<2_000_000_000
+    im.draft('RGB',(700,480));im.thumbnail((680,480));thumb=im.convert('RGB')
+    draw.text((col*700+10,row*520+5),sample+' '+kind+' | '+str(width)+'x'+str(height),fill='black')
+    canvas.paste(thumb,(col*700+(700-thumb.width)//2,row*520+30+(480-thumb.height)//2))
+   images.append(dict(sample=sample,kind=kind,member=member,width=width,height=height,exif_orientation=orientation,mode=mode,sha256=hashlib.sha256(b).hexdigest(),scope='Filename pair in same author archive; no quantitative transform or tissue annotation validated'))
+canvas.save(O/'author_image_contact_sheet.jpg',quality=90)
+proof=dict(status='PASS_ALL8_COUNT_FILES_BYTE_IDENTICAL_AND_ALL16_AUTHOR_JPEGS_DECODED',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),archive_sha256=audit['sha256'],count_files=counts,images=images,contact_sheet_sha256=hashlib.sha256((O/'author_image_contact_sheet.jpg').read_bytes()).hexdigest(),scope='Count-file identity bridges this archive to current eight sections; filenames pair HE/spots but do not establish registration transform, numeric grid correspondence or patient identity. Contact sheet is for visual inventory only. Original high-resolution images remain inside server archive.')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps({k:v for k,v in proof.items() if k not in ['images','count_files']}))

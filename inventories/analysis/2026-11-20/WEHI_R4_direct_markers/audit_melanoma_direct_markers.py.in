@@ -1,0 +1,38 @@
+"""Independent csv-stream replay of native marker rows and co-detection cells."""
+from pathlib import Path
+import csv,json,hashlib,datetime
+B=Path('${NATIVE_COUNTS_ROOT}')
+O=Path('${SPATIAL_RESULTS_ROOT}/direct_marker_review_v1')
+proof=json.loads((O/'complete.json').read_text())
+for name,h in proof['output_hashes'].items():assert hashlib.sha256((O/name).read_bytes()).hexdigest()==h
+coverage=list(csv.DictReader((O/'direct_marker_coverage.tsv').open(),delimiter='\t'));pairs=list(csv.DictReader((O/'same_spot_codetection.tsv').open(),delimiter='\t'))
+lookup={};sizes={}
+for filename,h in proof['source_hashes'].items():
+ p=B/filename;assert hashlib.sha256(p.read_bytes()).hexdigest()==h
+ sample=filename.removeprefix('ST_').removesuffix('_counts.tsv')
+ with p.open() as f:
+  reader=csv.reader(f,delimiter='\t');header=next(reader);sizes[sample]=len(header)-1
+  for row in reader:
+   gene=row[0].split()[0]
+   if gene in ['ESM1','RGS5','FOLR2']:
+    k=(sample,gene);assert k not in lookup
+    values=[float(x) for x in row[1:]];assert all(v>=0 and v==int(v) for v in values);lookup[k]=[int(v) for v in values]
+for r in coverage:
+ x=lookup.get((r['sample'],r['gene']));assert (r['listed_in_count_table']=='True')==(x is not None)
+ assert int(r['spots'])==sizes[r['sample']]
+ if x is None:assert r['positive_spots']==r['total_gene_counts']==r['positive_fraction']==''
+ else:
+  assert int(float(r['positive_spots']))==sum(v>0 for v in x) and int(float(r['total_gene_counts']))==sum(x)
+  assert abs(float(r['positive_fraction'])-sum(v>0 for v in x)/len(x))<1e-14
+available=0
+for r in pairs:
+ x=lookup.get((r['sample'],r['gene1']));y=lookup.get((r['sample'],r['gene2']));valid=x is not None and y is not None
+ assert (r['both_rows_available']=='True')==valid
+ cols=['gene1_only','gene2_only','both_detected','neither_detected']
+ if not valid:assert all(r[k]=='' for k in cols);continue
+ available+=1;counts=[0]*4
+ for a,b in zip(x,y):counts[0 if a>0 and b==0 else 1 if a==0 and b>0 else 2 if a>0 and b>0 else 3]+=1
+ assert all(int(float(r[k]))==v for k,v in zip(cols,counts)) and sum(counts)==int(r['spots'])
+assert len(coverage)==len(pairs)==24 and available==22
+result=dict(status='PASS_INDEPENDENT_NATIVE_CSV_REPLAY_23_AVAILABLE_MARKER_ROWS_22_AVAILABLE_PAIRS',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),coverage_rows=24,available_gene_rows=len(lookup),planned_pairs=24,available_pairs=22,unavailable_pairs=2,producer_status_clarification='ALL24 in producer status denotes planned rows; only22 pairs have both gene rows and numerical contingency totals,2 retained missing. This explicit audit is authoritative for scope.',scope='Native count rows and complete aggregate contingency cells replayed; normalization image not independently pixel-reconstructed; no enrichment test or H&E registration.')
+(O/'independent_audit.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))

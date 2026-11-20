@@ -1,0 +1,11 @@
+{
+  "status": "PASS_INDEPENDENT_NATIVE_CSV_REPLAY_23_AVAILABLE_MARKER_ROWS_22_AVAILABLE_PAIRS",
+  "utc": "2026-11-20T01:56:09.401113+00:00",
+  "coverage_rows": 24,
+  "available_gene_rows": 23,
+  "planned_pairs": 24,
+  "available_pairs": 22,
+  "unavailable_pairs": 2,
+  "producer_status_clarification": "ALL24 in producer status denotes planned rows; only22 pairs have both gene rows and numerical contingency totals,2 retained missing. This explicit audit is authoritative for scope.",
+  "scope": "Native count rows and complete aggregate contingency cells replayed; normalization image not independently pixel-reconstructed; no enrichment test or H&E registration."
+}

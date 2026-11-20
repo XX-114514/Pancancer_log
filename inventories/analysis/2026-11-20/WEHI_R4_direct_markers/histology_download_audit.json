@@ -1,0 +1,382 @@
+{
+  "status": "PASS_OFFICIAL_SIZE_MD5_SHA256_AND_ALL_ZIP_MEMBER_CRC",
+  "utc": "2026-11-20T01:57:54.457063+00:00",
+  "url": "https://zenodo.org/records/8215682/files/Thrane_et_al_2018_CAN_RES.zip?download=1",
+  "bytes": 942045418,
+  "md5": "a7aa24ddaa699f75c19b0c96a6a33a8a",
+  "sha256": "8adc48e90b50c196fb9b8efffcd9cf8d72bc005bcdfcc50ab806a00627bb2c1e",
+  "members": [
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "crc32": 0,
+      "is_directory": true
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/.DS_Store",
+      "bytes": 6148,
+      "compressed_bytes": 472,
+      "crc32": 629083806,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/._.DS_Store",
+      "bytes": 120,
+      "compressed_bytes": 53,
+      "crc32": 952141835,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "crc32": 0,
+      "is_directory": true
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "crc32": 0,
+      "is_directory": true
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep1_HE.jpg",
+      "bytes": 122485230,
+      "compressed_bytes": 119610395,
+      "crc32": 975588171,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel1_rep1_HE.jpg",
+      "bytes": 332,
+      "compressed_bytes": 179,
+      "crc32": 1997615645,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep2_spots.jpg",
+      "bytes": 27463533,
+      "compressed_bytes": 20933984,
+      "crc32": 3078133268,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel1_rep2_spots.jpg",
+      "bytes": 333,
+      "compressed_bytes": 209,
+      "crc32": 1981776826,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep1_HE.jpg",
+      "bytes": 62925716,
+      "compressed_bytes": 54638663,
+      "crc32": 1819137946,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel4_rep1_HE.jpg",
+      "bytes": 490,
+      "compressed_bytes": 346,
+      "crc32": 550221870,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep2_spots.jpg",
+      "bytes": 26533736,
+      "compressed_bytes": 19373798,
+      "crc32": 3872276522,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel3_rep2_spots.jpg",
+      "bytes": 333,
+      "compressed_bytes": 210,
+      "crc32": 249782660,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep2_spots.jpg",
+      "bytes": 17960470,
+      "compressed_bytes": 10044285,
+      "crc32": 3999140806,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel4_rep2_spots.jpg",
+      "bytes": 490,
+      "compressed_bytes": 362,
+      "crc32": 3420660811,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep2_HE.jpg",
+      "bytes": 88762438,
+      "compressed_bytes": 85343113,
+      "crc32": 1315940078,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel3_rep2_HE.jpg",
+      "bytes": 333,
+      "compressed_bytes": 197,
+      "crc32": 353845714,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep1_HE.jpg",
+      "bytes": 65788458,
+      "compressed_bytes": 58997823,
+      "crc32": 731777556,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel2_rep1_HE.jpg",
+      "bytes": 490,
+      "compressed_bytes": 347,
+      "crc32": 3156018712,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep2_spots.jpg",
+      "bytes": 29869967,
+      "compressed_bytes": 23334535,
+      "crc32": 2123598168,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel2_rep2_spots.jpg",
+      "bytes": 333,
+      "compressed_bytes": 210,
+      "crc32": 4249464775,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep1_spots.jpg",
+      "bytes": 63204191,
+      "compressed_bytes": 57260012,
+      "crc32": 3218589081,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel3_rep1_spots.jpg",
+      "bytes": 333,
+      "compressed_bytes": 210,
+      "crc32": 607328482,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep1_spots.jpg",
+      "bytes": 20212251,
+      "compressed_bytes": 13139214,
+      "crc32": 4107186477,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel4_rep1_spots.jpg",
+      "bytes": 333,
+      "compressed_bytes": 210,
+      "crc32": 959407496,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel4_rep2_HE.jpg",
+      "bytes": 100785948,
+      "compressed_bytes": 96738090,
+      "crc32": 1949259758,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel4_rep2_HE.jpg",
+      "bytes": 490,
+      "compressed_bytes": 347,
+      "crc32": 1699893145,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep2_HE.jpg",
+      "bytes": 116805873,
+      "compressed_bytes": 113774385,
+      "crc32": 148967505,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel1_rep2_HE.jpg",
+      "bytes": 490,
+      "compressed_bytes": 346,
+      "crc32": 3284988415,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep1_spots.jpg",
+      "bytes": 29322597,
+      "compressed_bytes": 22818634,
+      "crc32": 3664854046,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel2_rep1_spots.jpg",
+      "bytes": 333,
+      "compressed_bytes": 210,
+      "crc32": 2949076814,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel3_rep1_HE.jpg",
+      "bytes": 158285211,
+      "compressed_bytes": 156399008,
+      "crc32": 3522607666,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel3_rep1_HE.jpg",
+      "bytes": 490,
+      "compressed_bytes": 346,
+      "crc32": 3308113879,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel2_rep2_HE.jpg",
+      "bytes": 71096086,
+      "compressed_bytes": 64135114,
+      "crc32": 3986744675,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel2_rep2_HE.jpg",
+      "bytes": 490,
+      "compressed_bytes": 346,
+      "crc32": 3729924564,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Images/ST_mel1_rep1_spots.jpg",
+      "bytes": 25134722,
+      "compressed_bytes": 18546370,
+      "crc32": 60003177,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Images/._ST_mel1_rep1_spots.jpg",
+      "bytes": 333,
+      "compressed_bytes": 209,
+      "crc32": 1106249371,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel3_rep2_counts.tsv",
+      "bytes": 9649859,
+      "compressed_bytes": 841221,
+      "crc32": 2056597327,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel3_rep2_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel4_rep2_counts.tsv",
+      "bytes": 8337126,
+      "compressed_bytes": 970649,
+      "crc32": 2802918367,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel4_rep2_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel1_rep1_counts.tsv",
+      "bytes": 9118652,
+      "compressed_bytes": 813174,
+      "crc32": 2126754389,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel1_rep1_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel2_rep2_counts.tsv",
+      "bytes": 13014578,
+      "compressed_bytes": 942864,
+      "crc32": 3198462144,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel2_rep2_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel2_rep1_counts.tsv",
+      "bytes": 13294145,
+      "compressed_bytes": 1049709,
+      "crc32": 2773800222,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel2_rep1_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel4_rep1_counts.tsv",
+      "bytes": 6447074,
+      "compressed_bytes": 596108,
+      "crc32": 4084861568,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel4_rep1_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel1_rep2_counts.tsv",
+      "bytes": 9860645,
+      "compressed_bytes": 947084,
+      "crc32": 3583344644,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel1_rep2_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    },
+    {
+      "name": "Thrane_et_al_2018_CAN_RES/Count_data/ST_mel3_rep1_counts.tsv",
+      "bytes": 8386785,
+      "compressed_bytes": 777117,
+      "crc32": 434464616,
+      "is_directory": false
+    },
+    {
+      "name": "__MACOSX/Thrane_et_al_2018_CAN_RES/Count_data/._ST_mel3_rep1_counts.tsv",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "crc32": 195986467,
+      "is_directory": false
+    }
+  ],
+  "scope": "Archive integrity only; no image registration or patient mapping validation yet."
+}

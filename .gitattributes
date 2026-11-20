@@ -37,3 +37,9 @@ inventories/analysis/2026-11-19/WEHI_R4_CM_validation/**/statistical_analysis_*.
 inventories/analysis/2026-11-20/WEHI_R4_melanoma_all24/** -text
 # Preserve csv-writer CRLF and SHA-bound missing fields in reviewed aggregates.
 inventories/analysis/2026-11-20/WEHI_R4_melanoma_all24/*.tsv whitespace=cr-at-eol,-blank-at-eol
+
+inventories/analysis/2026-11-20/WEHI_R4_integrated_evidence_v2/** -text
+inventories/analysis/2026-11-20/WEHI_R4_integrated_evidence_v2/*.tsv whitespace=cr-at-eol,-blank-at-eol
+
+inventories/analysis/2026-11-20/WEHI_R4_direct_markers/** -text
+inventories/analysis/2026-11-20/WEHI_R4_direct_markers/*.tsv whitespace=cr-at-eol,-blank-at-eol

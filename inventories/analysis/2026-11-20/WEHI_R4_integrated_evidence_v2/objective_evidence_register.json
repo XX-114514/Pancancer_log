@@ -1,0 +1,156 @@
+{
+  "status": "PASS_CURRENT_SYNTHESIS_HASHES_AND_COMPLETE_CORE_SOURCE_SCREEN_NOT_GOAL_COMPLETION",
+  "reviewed_utc": "2026-11-20T01:49:05.088516+00:00",
+  "source_files": 20,
+  "source_screen": {
+    "rows": 68,
+    "marginally_eligible_sources": 2,
+    "source_sha256": "e0b7ec4734c50bf9f48eb60f3db4ef14d7c7573ccedff1fc06a4262011b3d62b",
+    "limitation": "No unit-level intersection inferred from separate identity counts; missing rows not negative"
+  },
+  "requirements": [
+    {
+      "id": "data",
+      "requirement": "Download and qualify relevant data",
+      "assessment": "Current selected inputs qualified; broader validation resources remain open",
+      "evidence": [
+        {
+          "path": "lung_prime5k_review/independent_input_audit.json",
+          "sha256": "b43a1f01ee43a158e54e5192f4811a005376cc9efaf0a88ddafba440058afdd4",
+          "recorded_status": "PASS_all_three_file_hashes_5001_current_panel_genes_278328_barcodes_all_six_feature_type_count_totals",
+          "scope": "no spatial biological analysis yet; no author subtype annotation; MYH11/ACTA2/TAGLN/CNN1 not measured, cannot reuse breast contractile-exclusion test; missing markers never treated as negative"
+        },
+        {
+          "path": "melanoma_reference_input_audit.json",
+          "sha256": "0a19fefde92edab2daacaed820e370b172f017242323407052312d946d280c22",
+          "recorded_status": "PASS_OLD_REFERENCE_EXACT_PRESERVATION_AND_MELANOMA_NATIVE_REPLAY",
+          "scope": "See source receipt"
+        }
+      ],
+      "unproven_or_remaining": "Histology and explicit legacy-ST patient mapping remain unverified."
+    },
+    {
+      "id": "communication",
+      "requirement": "Reproduce CoVarNet communication and CM high/low comparisons",
+      "assessment": "All15 pooled CPDB and high/low completed within declared audits; patient LR limited to qualified sources",
+      "evidence": [
+        {
+          "path": "communication_joint_review/independent_audit.json",
+          "sha256": "e35321247dc40c7de2325286bf1a21fa52570d4f669e6eed81191391fec1b9f8",
+          "recorded_status": "PASS_all15_raw_CPDB_hashes_all_eligible_MC_P_full_vector_BH_all_q_tables_and_core_summaries",
+          "scope": "all input-complete interactions x ordered identity pairs x15 CMT; count-histogram production checked against full-vector statsmodels BH"
+        },
+        {
+          "path": "highlow_review/joint15/independent_audit.json",
+          "sha256": "954628ac749328cbf52e5473a340611e929c859f4514efa7602593ee3749e6a0",
+          "recorded_status": "PASS_ALL_SOURCE_HASHES_ALL_OUTPUT_ROWS_THREE_BH_FAMILIES_AND_SUMMARIES",
+          "scope": "Full joint correction verification; does NOT extend upstream sampled numeric replay to all genes, verify patient independence, or establish differential LR."
+        },
+        {
+          "path": "highlow_review/joint15/upstream_audit_linkage_current.json",
+          "sha256": "69412951984898eb2afffad1d6aedd0a618d2b12dcba7a2fb8df7d3383ed5713",
+          "recorded_status": "ALL15_UPSTREAM_AUDITS_LINKED",
+          "scope": "Actual input SHA verification and existing upstream audit linkage; original Welch/HC3 numeric replay remains restricted to fixed genes, not all genes or verified patients."
+        },
+        {
+          "path": "patient_LR_review/three_source/complete.json",
+          "sha256": "a9fefb5d55bbe058bdacdf2adccd08072ee5cec24a4fe0bc168debbd461ee0fa",
+          "recorded_status": "JOINT_BH_COMPLETE_WITH_INDEPENDENT_SORTED_REPLAY_ALL_THREE_INPUT_ANALYSES_AUDITED",
+          "scope": "All qualified tests from three currently source-verified datasets, keeping source-specific estimands. No pooled biological contrast. Includes headneck context/HPV primary and unrestricted sensitivity, renal unrestricted, liver primary-tumour-only. Exact/MonteCarlo limitations retained; four unresolved headneck units excluded; liver repeated tissues not independent."
+        }
+      ],
+      "unproven_or_remaining": "Pooled detection is not differential signaling. Fixed23-gene numerical audit is not full-gene replay. Patient LR joint q05=0; core-axis qualification only renal."
+    },
+    {
+      "id": "spatial",
+      "requirement": "Validate CM12 vascular axis and compare other CM modules spatially",
+      "assessment": "Selected Visium, legacy-ST and imaging analyses completed; biological validation partial",
+      "evidence": [
+        {
+          "path": "melanoma_review/all24_N_sensitivity/complete.json",
+          "sha256": "7eba56844baebf2a403c103f45e45dff506e10cb094ab12434d408cee3862a92",
+          "recorded_status": "PASS_ALL24_INPUT_AUDITS_HASHES_MATCHED_COORDINATES_AND_ROW_WISE_CONTRAST_REPLAY",
+          "scope": "Descriptive assumption sensitivity only. N is assumed cells per spot, not measured nuclei. No new P values, no patient independence, no q05 confidence interval claim. No selection of favorable N."
+        },
+        {
+          "path": "melanoma_review/all24_N_sensitivity/independent_readback.json",
+          "sha256": "5068580e8c5289ea40afae5e9da70b856940c4276ca2302052c5d6fbde676c0b",
+          "recorded_status": "PASS_INDEPENDENT_SERIALIZED_15168_CONTRASTS_AND_SIGN_DOMAIN",
+          "scope": "Serialized aggregate table replay, not independent re-fitting or raw spatial validation."
+        },
+        {
+          "path": "imaging_core_review/independent_audit.json",
+          "sha256": "6f7fadb7374cba0f40462edf54a274c00d4091baa58689a80c3fda77eba45511",
+          "recorded_status": "PASS_all_six_raw_core_markers_identity_coordinates_all96_designs_exact_combinatorial_null_and_BH",
+          "scope": "See source receipt"
+        },
+        {
+          "path": "imaging_core_review/mural_states/independent_audit.json",
+          "sha256": "302b7612be82c24032263d3e5a440a9fa656745896d78bdd53291d714f86a638",
+          "recorded_status": "PASS_all192new_tests_raw_identity_counts_exact_combinatorial_null_and_joint_BH",
+          "scope": "same-cohort exploratory identity sensitivity; MYH11 zero is observed RNA zero, not proven biological absence; prior q_family retained for prior96 family only; no selection based on new outcome"
+        },
+        {
+          "path": "lung_core_review/independent_audit.json",
+          "sha256": "0821177a2f6e5701f4b19770ba5a8cac2cb8e1499c2deefd9ce5258d0badcbc8",
+          "recorded_status": "PASS_raw_gene_matrix_all_identity_masks_and192_exact_tests_and_joint_imaging_BH",
+          "scope": "one lung donor; marker proxies without author identities and absent contractile markers; conditional exchangeability assumption; two-way tests do not establish three-way simultaneous hub; no contact or signaling inference"
+        }
+      ],
+      "unproven_or_remaining": "Conditional imaging association varies by sample; no direct contact, independent-patient replication or three-way hub proof."
+    },
+    {
+      "id": "immune",
+      "requirement": "Associate CM candidates with immune infiltration",
+      "assessment": "Nonredacted immune analysis represented in synthesis; cancer-dependent associations",
+      "evidence": [
+        {
+          "path": "immune_review_nonredacted/primary_branch_purity_age_sex.tsv",
+          "sha256": "dd4b046d9e50bc3d95c4d8f7365d18b0ca941024841da133510dbeb32197d9b4",
+          "scope": "Aggregate result table; not fresh raw-input replay"
+        }
+      ],
+      "unproven_or_remaining": "No universal pan-cancer direction or causal interpretation."
+    },
+    {
+      "id": "clinical",
+      "requirement": "Explore treatment response/prognosis as candidate indicators",
+      "assessment": "Current survival and ICI exploration represented; independent predictive validity unproven",
+      "evidence": [
+        {
+          "path": "survival_review/piecewise/independent_audit.json",
+          "sha256": "bff1e88ea56170c7c863c097512f5ef7a3cf85e80e10680a973dde7b4009b20d",
+          "recorded_status": "PASS_ALL_COHORTS_SPLIT_RISKSETS_EFRON_COEFFICIENTS_SE_LOG_LIKELIHOOD_PERIOD_CI_P_AND_JOINT_BH",
+          "scope": "All successful models independently fitted with PHReg delayed-entry intervals, all insufficient designs reconstructed. Prior clinical mapping/score audit separate. One-year sensitivity only, no correction of other non-PH covariates, no external prediction validation."
+        },
+        {
+          "path": "ICI_review/three_cohort/three_cohort_descriptive_comparison.tsv",
+          "sha256": "48fe3e44dc6066a2cf7d7bd87cca11d97aee2c6155607de734d83d6245c19bef",
+          "scope": "Aggregate result table; not fresh raw-input replay"
+        }
+      ],
+      "unproven_or_remaining": "ICI480 tests lack joint q05 evidence; Rose timing unresolved; prognosis evidence is cancer/model-specific. External validation remains."
+    },
+    {
+      "id": "integration",
+      "requirement": "Integrate all analyses without selecting positive results",
+      "assessment": "Updated synthesis includes all24 N and all15 audit linkage",
+      "evidence": [
+        {
+          "path": "melanoma_review/all24_N_sensitivity/complete.json",
+          "sha256": "7eba56844baebf2a403c103f45e45dff506e10cb094ab12434d408cee3862a92",
+          "recorded_status": "PASS_ALL24_INPUT_AUDITS_HASHES_MATCHED_COORDINATES_AND_ROW_WISE_CONTRAST_REPLAY",
+          "scope": "Descriptive assumption sensitivity only. N is assumed cells per spot, not measured nuclei. No new P values, no patient independence, no q05 confidence interval claim. No selection of favorable N."
+        },
+        {
+          "path": "highlow_review/joint15/upstream_audit_linkage_current.json",
+          "sha256": "69412951984898eb2afffad1d6aedd0a618d2b12dcba7a2fb8df7d3383ed5713",
+          "recorded_status": "ALL15_UPSTREAM_AUDITS_LINKED",
+          "scope": "Actual input SHA verification and existing upstream audit linkage; original Welch/HC3 numeric replay remains restricted to fixed genes, not all genes or verified patients."
+        }
+      ],
+      "unproven_or_remaining": "Existing numerical/clinical negatives retained; no new pooled effect or significance calculation."
+    }
+  ],
+  "overall": "ACTIVE: current computational checkpoints passed, full requested validation not established; no positive-result requirement imposed."
+}
