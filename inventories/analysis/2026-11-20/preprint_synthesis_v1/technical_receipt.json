@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_REGISTRY_READBACK_COUNTS_DUPLICATES_ROLES_AND_HASH",
+  "observed_UTC": "2026-11-20T02:43:52.166517+00:00",
+  "registry_records": 1509,
+  "status_receipts_indexed": 1160,
+  "registry_SHA256": "0b077dd29fbd8fe0b7524c33d7549df1c97f1c64156eff1ed6cf8995c18aa4ca",
+  "script_SHA256": "f35c508d85335afe3b5aa162a3e44e9bed5037d8d9aa898a674fa75d2863d340",
+  "curated_source_groups": 13,
+  "curated_source_files": 38,
+  "curated_sources_SHA256": "2fd06a27bb1ea8522ed901f653e75055bc61616705824baadbf64e29178d0c6b",
+  "private_draft_SHA256": "a78e91b4f71fbb9977ead72cc7df69a5cabb16115ffde0fe1ed1df60f8da2804",
+  "scope": "Directory navigation, receipt fingerprints and independent serialized readback; no claim all raw outputs re-audited. Private scientific synthesis stays outside the public repository."
+}
