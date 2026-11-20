@@ -214,3 +214,5 @@ bash scripts/new_run_record.sh "phase07 annotation"
 
 
 - [2026-11-20 历史TME与免疫资料综合审阅稿](20261120_integrated_TME_immune_preprint_v1.md)：私有科学图文，公共代码与技术轨迹。
+
+- [Manuscript narrative and portable plot sources v2](20261120_manuscript_launch_and_plot_sources_v2.md)

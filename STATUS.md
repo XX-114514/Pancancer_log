@@ -2583,3 +2583,8 @@ Tcell_6旧winner排序遗漏完整Treg候选的原因已实证；补查841/842�
 ## 2026-11-20 历史TME与免疫资料综合审阅稿
 
 本次在既有R4稿基础上纳入历史TME及免疫线，保留版本命名空间、原比较家族和历史纠正；双语稿与图表为私有审阅产物。来源范围、构建、数字复核及服务器归档见[独立运行记录](runs/20261120_integrated_TME_immune_preprint_v1.md)，[技术日志](logs/codex/2026/2026-11-20_integrated-TME-immune-preprint.md)记录实际核验与同步状态。没有预印本投稿或新增机制验收。
+
+
+## 2026-11-20 Manuscript narrative and portable plotting v2
+
+The bilingual manuscript has been reorganized by biological argument, with exact plot inputs and code supplied privately. Full rendering and editing checks are recorded in the [current run](runs/20261120_manuscript_launch_and_plot_sources_v2.md); scientific interpretation and full families remain in the private review package.

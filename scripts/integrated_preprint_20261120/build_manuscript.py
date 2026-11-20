@@ -76,7 +76,7 @@ def build(content,figures,output):
             if pic:pic[0].set('descr',legend)
             p=d.add_paragraph(legend,'Caption');p.paragraph_format.widow_control=True;p.paragraph_format.keep_together=True
         d.add_page_break();d.add_heading('Supplementary figure legends' if lang=='en' else '补充图图注',1)
-        d.add_paragraph('Supplementary figures are supplied as PDFs and high-resolution images. Archived RNA-program panels retain their raster provenance.' if lang=='en' else '补充图以PDF和高分辨率图片保存在图包中；存档RNA程序图保留其栅格来源。科研图使用英文。')
+        d.add_paragraph(content.get('supplementary_intro_'+lang, 'Supplementary figures are supplied as PDFs and high-resolution images. Archived RNA-program panels retain their raster provenance.' if lang=='en' else '补充图以PDF和高分辨率图片保存在图包中；存档RNA程序图保留其栅格来源。科研图使用英文。'))
         for item in content['supplementary_figures']:
             p=d.add_paragraph(item['id'].split('_')[0].replace('FigureS','Figure S' if lang=='en' else '图S'),'Heading 2');p.paragraph_format.keep_with_next=True;p.paragraph_format.space_before=Pt(6);p.paragraph_format.space_after=Pt(4)
             p=d.add_paragraph(text(item[lang]));p.paragraph_format.line_spacing=1.0;p.paragraph_format.space_after=Pt(4)

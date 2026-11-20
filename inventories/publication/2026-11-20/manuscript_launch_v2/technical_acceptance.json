@@ -1,0 +1,20 @@
+{
+  "status": "PASS_PRIVATE_REVIEW_AND_PORTABLE_PLOT_DELIVERY",
+  "evidence_UTC": "2026-11-20T13:35:02.830892+00:00",
+  "manuscript_pages_per_language": 17,
+  "main_figures": 7,
+  "supplementary_figures": 12,
+  "plot_output_files_verified": 57,
+  "plot_input_files_verified": 96,
+  "editing_register_entries": 196,
+  "figure_source_TSV_tables": 28,
+  "complete_comparison_TSV_tables": 37,
+  "prior_comparison_table_bytes_unchanged": true,
+  "new_inferential_tests": false,
+  "private_archive_sha256": "1edef3a0773dfe79d003603072d527b337500bcd4626506d96870986b4597ebd",
+  "private_archive_bytes": 165151555,
+  "private_archive_disk_readback": "PASS",
+  "private_archive_ZIP_CRC": "PASS",
+  "scientific_payload_in_public_git": false,
+  "repository_validation": "two pre-existing unrelated broken links and one warning; scoped checks pass"
+}

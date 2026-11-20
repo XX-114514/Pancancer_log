@@ -57,6 +57,52 @@ def clean(ax):
     for s in ax.spines.values():s.set_visible(False)
 
 
+def render_vascular(spat,v,read,save,export):
+    # Figure 4: original-coordinate Visium maps, all12 section effects and all N.
+    technical=read(spat/'review/Visium_technical.tsv')
+    density=read(spat/'review/Visium_density_sensitivity.tsv')
+    ncore=read(v/'spatial_melanoma/N_sensitivity_all24_v1/core_edges_all24.tsv')
+    fig=plt.figure(figsize=(8.4,10.1));gs=fig.add_gridspec(3,4,height_ratios=[1,1.25,1.05],hspace=.65,wspace=.58)
+    for j,row in technical.sort_values('section').reset_index(drop=True).iterrows():
+        xy0=read(spat/f'sections/{row.section}/coordinates_PRIVATE.tsv.gz',index_col=0)
+        ab=read(spat/f'sections/{row.section}/means_abundance_PRIVATE.tsv.gz',index_col=0).loc[xy0.index]
+        a=ab[TIP].to_numpy();p=ab[PC].to_numpy()
+        a=np.clip(a/max(np.quantile(a,.99),1e-9),0,1);p=np.clip(p/max(np.quantile(p,.99),1e-9),0,1)
+        rgb=np.column_stack([1-.6*p,1-.75*np.maximum(a,p),1-.6*a])
+        ax=fig.add_subplot(gs[0,j]);ax.scatter(xy0.x,xy0.y,c=rgb,s=6,linewidths=0,rasterized=True);ax.set_aspect('equal');ax.invert_yaxis();clean(ax)
+        ax.set_title(f'{row.dataset}\n{row.section}',fontsize=8)
+        if j==0:ax.text(-.2,1.35,'a',transform=ax.transAxes,fontweight='bold',fontsize=13)
+    fig.text(.13,.66,'Native capture coordinates | inferred tip EC (red), pericyte (blue), overlap (purple)\nWithin-section 99th-percentile scaling of reference-inferred cell abundance.',fontsize=7)
+    ax=fig.add_subplot(gs[1,:2]);core=density[(density.cm=='CM12')&(((density.a==TIP)&(density.b==PC))|((density.b==TIP)&(density.a==PC)))].copy()
+    vals=core.groupby('section').partial_rank_correlation_control_total_and_epithelial_fraction.mean()
+    ax.scatter(vals.values,range(len(vals)),color='#AD604D',s=35);ax.set_yticks(range(len(vals)),vals.index);ax.axvline(0,color='#B7BDC3',lw=.8);ax.set_xlim(-.1,.8);ax.set_xlabel('Composition-adjusted rank correlation');panel(ax,'b','Visium vascular core')
+    ax=fig.add_subplot(gs[1,2:]);sel=ncore[(ncore.cm=='CM12')&(ncore.posterior=='means')&(((ncore.node1==TIP)&(ncore.node2==PC))|((ncore.node2==TIP)&(ncore.node1==PC)))]
+    for j,n in enumerate([5,30,60]):
+        q=sel[sel.assumed_N==n].sort_values('sample');x=j+np.linspace(-.18,.18,len(q));ax.scatter(x,q.partial_rank_total_melanoma_other_nuisance,color=['#93A7BB','#AD604D','#7D7896'][j],s=22)
+    ax.axhline(0,color='#B7BDC3',lw=.8);ax.set_xticks(range(3),['N = 5','N = 30','N = 60']);ax.set_ylim(-.35,.8);ax.set_ylabel('Composition-adjusted rank correlation');panel(ax,'c','All eight legacy ST sections')
+    ax=fig.add_subplot(gs[2,:2]);pairs=[(TIP,PC,'Tip EC - pericyte'),(TIP,MAC,'Tip EC - FOLR2 macrophage'),(MAC,PC,'FOLR2 macrophage - pericyte')]
+    rows=[]
+    for i,(a,b,label) in enumerate(pairs):
+        q=ncore[(ncore.cm=='CM12')&(ncore.posterior=='means')&(ncore.assumed_N==30)&(((ncore.node1==a)&(ncore.node2==b))|((ncore.node2==a)&(ncore.node1==b)))]
+        yy=i+np.linspace(-.17,.17,len(q));ax.scatter(q.partial_rank_total_melanoma_other_nuisance,yy,s=22,color=['#AD604D','#C39B5F','#7D7896'][i]);rows.extend(q.to_dict('records'))
+    ax.axvline(0,color='#B7BDC3',lw=.8);ax.set_yticks(range(3),[x[2] for x in pairs],fontsize=7);ax.set_xlim(-.25,.8);ax.set_xlabel('Composition-adjusted rank correlation');panel(ax,'d','Core and macrophage-associated edges')
+    ax=fig.add_subplot(gs[2,2:]);q=sel[sel.assumed_N==30];ax.scatter(q.partial_rank_total_melanoma_other_nuisance,q.parent_fraction_spearman,c='#6B8796',s=25);ax.axhline(0,color='#B7BDC3',lw=.8);ax.axvline(0,color='#B7BDC3',lw=.8);ax.set_xlabel('Composition-adjusted correlation');ax.set_ylabel('Within-parent fraction correlation');panel(ax,'e','Alternative abundance denominator')
+    save(fig,'Figure4_spatial_organization','Four Visium maps and full melanoma parameter sensitivity; section-level descriptive effects, not independent-patient tests.')
+    export('Figure4_Visium_density_effects',density);export('Figure4_legacy_ST_core_edges_all24',ncore)
+    return ncore,pairs
+
+
+def render_vascular_only(root,output):
+    output.mkdir(parents=True,exist_ok=False)
+    tables=output/"source_tables";tables.mkdir()
+    def read(p,**kw):return pd.read_csv(p,sep="\t",**kw)
+    def export(name,data):data.to_csv(tables/(name+".tsv"),sep="\t",index=False)
+    def save(fig,name,description):
+        for suffix in ["png","pdf","svg"]:fig.savefig(output/(name+"."+suffix),dpi=360,bbox_inches="tight",pad_inches=.13)
+        plt.close(fig);print("RENDERED",name,flush=True)
+    render_vascular(root/"spatial_CoVarNet_R4_20261115_v1",root/"CM_validation_20261118_v1",read,save,export)
+
+
 def render(root, run, output):
     output.mkdir(parents=True,exist_ok=False)
     tables=output/'source_tables';tables.mkdir()
@@ -202,37 +248,7 @@ def render(root, run, output):
     fig.subplots_adjust(wspace=.2,hspace=.25);fig.suptitle('All R4 module networks | identity numbers match Figure S02',fontsize=15)
     save(fig,'FigureS03_all_module_networks','Frozen topology, constant node sizes and parent colors; no model loadings exported as node sizes.')
 
-    # Figure 4: original-coordinate Visium maps, all12 section effects and all N.
-    technical=read(spat/'review/Visium_technical.tsv')
-    density=read(spat/'review/Visium_density_sensitivity.tsv')
-    ncore=read(v/'spatial_melanoma/N_sensitivity_all24_v1/core_edges_all24.tsv')
-    fig=plt.figure(figsize=(8.4,10.1));gs=fig.add_gridspec(3,4,height_ratios=[1,1.25,1.05],hspace=.65,wspace=.58)
-    for j,row in technical.sort_values('section').reset_index(drop=True).iterrows():
-        xy0=read(spat/f'sections/{row.section}/coordinates_PRIVATE.tsv.gz',index_col=0)
-        ab=read(spat/f'sections/{row.section}/means_abundance_PRIVATE.tsv.gz',index_col=0).loc[xy0.index]
-        a=ab[TIP].to_numpy();p=ab[PC].to_numpy()
-        a=np.clip(a/max(np.quantile(a,.99),1e-9),0,1);p=np.clip(p/max(np.quantile(p,.99),1e-9),0,1)
-        rgb=np.column_stack([1-.6*p,1-.75*np.maximum(a,p),1-.6*a])
-        ax=fig.add_subplot(gs[0,j]);ax.scatter(xy0.x,xy0.y,c=rgb,s=6,linewidths=0,rasterized=True);ax.set_aspect('equal');ax.invert_yaxis();clean(ax)
-        ax.set_title(f'{row.dataset}\n{row.section}',fontsize=8)
-        if j==0:ax.text(-.2,1.35,'a',transform=ax.transAxes,fontweight='bold',fontsize=13)
-    fig.text(.13,.66,'Native capture coordinates | inferred tip EC (red), pericyte (blue), overlap (purple)\nWithin-section 99th-percentile display scaling; no H&E registration or contact inference.',fontsize=7)
-    ax=fig.add_subplot(gs[1,:2]);core=density[(density.cm=='CM12')&(((density.a==TIP)&(density.b==PC))|((density.b==TIP)&(density.a==PC)))].copy()
-    vals=core.groupby('section').partial_rank_correlation_control_total_and_epithelial_fraction.mean()
-    ax.scatter(vals.values,range(len(vals)),color='#AD604D',s=35);ax.set_yticks(range(len(vals)),vals.index);ax.axvline(0,color='#B7BDC3',lw=.8);ax.set_xlim(-.1,.8);ax.set_xlabel('Composition-adjusted rank correlation');panel(ax,'b','Visium vascular core')
-    ax=fig.add_subplot(gs[1,2:]);sel=ncore[(ncore.cm=='CM12')&(ncore.posterior=='means')&(((ncore.node1==TIP)&(ncore.node2==PC))|((ncore.node2==TIP)&(ncore.node1==PC)))]
-    for j,n in enumerate([5,30,60]):
-        q=sel[sel.assumed_N==n].sort_values('sample');x=j+np.linspace(-.18,.18,len(q));ax.scatter(x,q.partial_rank_total_melanoma_other_nuisance,color=['#93A7BB','#AD604D','#7D7896'][j],s=22)
-    ax.axhline(0,color='#B7BDC3',lw=.8);ax.set_xticks(range(3),['N = 5','N = 30','N = 60']);ax.set_ylim(-.35,.8);ax.set_ylabel('Composition-adjusted rank correlation');panel(ax,'c','All eight legacy ST sections')
-    ax=fig.add_subplot(gs[2,:2]);pairs=[(TIP,PC,'Tip EC - pericyte'),(TIP,MAC,'Tip EC - FOLR2 macrophage'),(MAC,PC,'FOLR2 macrophage - pericyte')]
-    rows=[]
-    for i,(a,b,label) in enumerate(pairs):
-        q=ncore[(ncore.cm=='CM12')&(ncore.posterior=='means')&(ncore.assumed_N==30)&(((ncore.node1==a)&(ncore.node2==b))|((ncore.node2==a)&(ncore.node1==b)))]
-        yy=i+np.linspace(-.17,.17,len(q));ax.scatter(q.partial_rank_total_melanoma_other_nuisance,yy,s=22,color=['#AD604D','#C39B5F','#7D7896'][i]);rows.extend(q.to_dict('records'))
-    ax.axvline(0,color='#B7BDC3',lw=.8);ax.set_yticks(range(3),[x[2] for x in pairs],fontsize=7);ax.set_xlim(-.25,.8);ax.set_xlabel('Composition-adjusted rank correlation');panel(ax,'d','Core and macrophage-associated edges')
-    ax=fig.add_subplot(gs[2,2:]);q=sel[sel.assumed_N==30];ax.scatter(q.partial_rank_total_melanoma_other_nuisance,q.parent_fraction_spearman,c='#6B8796',s=25);ax.axhline(0,color='#B7BDC3',lw=.8);ax.axvline(0,color='#B7BDC3',lw=.8);ax.set_xlabel('Composition-adjusted correlation');ax.set_ylabel('Within-parent fraction correlation');panel(ax,'e','Alternative abundance denominator')
-    save(fig,'Figure4_spatial_organization','Four Visium maps and full melanoma parameter sensitivity; section-level descriptive effects, not independent-patient tests.')
-    export('Figure4_Visium_density_effects',density);export('Figure4_legacy_ST_core_edges_all24',ncore)
+    ncore,pairs=render_vascular(spat,v,read,save,export)
 
     # Figure 5: actual imaging coordinates and all primary comparison directions.
     imaging=read(v/'imaging_lung_core_v1/joint_imaging_tests.tsv')
@@ -366,5 +382,5 @@ def render(root, run, output):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--run',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    a=p.parse_args();render(a.root,a.run,a.output)
+    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--vascular-only',action='store_true');p.add_argument('--run',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+    a=p.parse_args();render_vascular_only(a.root,a.output) if a.vascular_only else render(a.root,a.run,a.output)
