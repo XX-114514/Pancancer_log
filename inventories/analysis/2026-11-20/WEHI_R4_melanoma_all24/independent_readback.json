@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INDEPENDENT_SERIALIZED_15168_CONTRASTS_AND_SIGN_DOMAIN",
+  "reviewed_at_utc": "2026-11-20T01:42:43.321835+00:00",
+  "rows": {
+    "author": 1440,
+    "edge": 7104,
+    "contrasts": 15168,
+    "core": 192
+  },
+  "hashes": {
+    "all_author_scores.tsv": "9ad84422405e02939c115727cd866ef7f429152209d300945c21840f3e791971",
+    "all_edge_metrics.tsv": "ca9201a8d3f346f047ba4b1648f762ae41b467b9ef04cf348889fe0502282f48",
+    "all_matched_N_contrasts.tsv.gz": "dcec3029842d98bfdd60a482510071657dcc83bfa5ec40515a47164ae25344dd",
+    "all_module_sensitivity_summary.tsv": "df4576a7eabe45652db20c9168cfdcb15729bc3ed4e2b79285ba2170920f4e3d",
+    "complete.json": "7eba56844baebf2a403c103f45e45dff506e10cb094ab12434d408cee3862a92",
+    "core_edge_ranges.tsv": "0dbf10d2fa0110f1babd46e1affa3ea5c8f40a5b229809175dfd5c744f50efd0",
+    "core_edges_all24.tsv": "13365ca63b37b62cc8706187f78ef9c641e50c586aa16d4c04ca1385fd97d5bd"
+  },
+  "scope": "Serialized aggregate table replay, not independent re-fitting or raw spatial validation."
+}

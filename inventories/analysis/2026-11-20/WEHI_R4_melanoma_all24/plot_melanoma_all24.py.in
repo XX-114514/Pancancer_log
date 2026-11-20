@@ -1,0 +1,22 @@
+"""Display all selected sections and N assumptions without selecting effects."""
+from pathlib import Path
+import sys
+import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+O=Path(sys.argv[1]);t=pd.read_csv(O/'core_edges_all24.tsv',sep='\t')
+pairs=list(t[['cm','node1','node2']].drop_duplicates().itertuples(index=False,name=None))
+fig,axs=plt.subplots(2,4,figsize=(16,9),sharey=True,sharex=True,layout='constrained')
+for col,(cm,a,b) in enumerate(pairs):
+ for row,post in enumerate(['means','q05']):
+  ax=axs[row,col]
+  for n,color in [(5,'#16837a'),(30,'#2475b0'),(60,'#d17627')]:
+   s=t[(t.cm==cm)&(t.node1==a)&(t.node2==b)&(t.posterior==post)&(t.assumed_N==n)].sort_values('sample');assert len(s)==8
+   offset={5:-.2,30:0,60:.2}[n]
+   ax.scatter(s.partial_rank_total_melanoma_other_nuisance,[i+offset for i in range(8)],s=27,color=color,label='N='+str(n))
+  ax.axvline(0,color='gray',lw=.8);ax.grid(axis='x',alpha=.2);ax.set_yticks(range(8),s['sample']);ax.set_title(cm+' '+a.split('_')[-1]+' / '+b.split('_')[-1]+' | '+post)
+  ax.set_xlim(-.3,.85)
+axs[0,0].invert_yaxis();axs[0,-1].legend(loc='lower right');fig.suptitle('WEHI R4 K15 | all 24 legacy-ST fits | composition-adjusted rank correlation',fontsize=15)
+fig.supxlabel('N is assumed cells per spot. q05 is an abundance sensitivity, not a correlation CI.\nDescriptive associations; no independent-patient, direct marker, cell-contact or three-way hub claim.',fontsize=11)
+fig.savefig(O/'core_N_sensitivity.png',dpi=170);plt.close(fig)

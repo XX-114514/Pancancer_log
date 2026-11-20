@@ -1,0 +1,75 @@
+"""Complete 8-section x 3-N comparison. Never selects completed subsets.
+
+Use --check to inspect readiness without creating analysis outputs.
+"""
+from pathlib import Path
+import sys,json,hashlib
+import pandas as pd,numpy as np
+R=Path('${SPATIAL_RESULTS_ROOT}')
+samples=['mel%d_rep%d'%(i,j) for i in range(1,5) for j in (1,2)]
+jobs=[(sample,n) for sample in samples for n in [5,30,60]]
+missing=[]
+for sample,n in jobs:
+ s=R/'sections'/(sample+'_N'+str(n))
+ for f in ['independent_audit.json','density_sensitivity_v1/complete.json']:
+  if not (s/f).exists():missing.append(str((s/f).relative_to(R)))
+if missing or '--check' in sys.argv:
+ print(json.dumps(dict(status='WAITING_FOR_ALL_24' if missing else 'ALL_24_READY_FOR_COMPARISON',missing=missing),indent=2))
+ raise SystemExit(0 if '--check' in sys.argv else 2)
+O=R/'N_sensitivity_all24_v1';O.mkdir(exist_ok=False)
+scores=[];edges=[];hashes={}
+for sample,n in jobs:
+ s=R/'sections'/(sample+'_N'+str(n))
+ au=json.loads((s/'independent_audit.json').read_text())
+ de=json.loads((s/'density_sensitivity_v1/complete.json').read_text())
+ assert au['status'].startswith('PASS_') and de['status'].endswith('_PASS')
+ for f,h in de['input_hashes'].items():assert hashlib.sha256((s/f).read_bytes()).hexdigest()==h
+ xy=pd.read_csv(s/'coordinates_PRIVATE.tsv.gz',sep='\t',index_col=0)
+ ref=pd.read_csv(R/'sections'/(sample+'_N30')/'coordinates_PRIVATE.tsv.gz',sep='\t',index_col=0)
+ pd.testing.assert_frame_equal(xy,ref,check_exact=True)
+ for name,target,count in [('author_CM_scores_PRIVATE.tsv',scores,60),('density_sensitivity_v1/edge_density.tsv',edges,296)]:
+  p=s/name;t=pd.read_csv(p,sep='\t');assert len(t)==count
+  hashes[str(p.relative_to(R))]=hashlib.sha256(p.read_bytes()).hexdigest()
+  t['sample']=sample;t['assumed_N']=n;target.append(t)
+scores=pd.concat(scores,ignore_index=True);edges=pd.concat(edges,ignore_index=True)
+assert len(scores)==1440 and len(edges)==7104
+assert not scores.duplicated(['sample','assumed_N','cm','posterior','statistic']).any()
+assert not edges.duplicated(['sample','assumed_N','cm','posterior','node1','node2']).any()
+contrasts=[]
+for kind,t,key,metrics in [
+ ('author',scores,['sample','cm','posterior','statistic'],['author_score']),
+ ('edge',edges,['sample','cm','posterior','node1','node2'],['raw_spearman','partial_rank_total_melanoma_other_nuisance','parent_fraction_spearman'])]:
+ for metric in metrics:
+  wide=t.pivot(index=key,columns='assumed_N',values=metric)
+  assert list(wide.columns)==[5,30,60]
+  for n in [5,60]:
+   d=wide[n]-wide[30]
+   out=wide.reset_index()[key].copy();out['kind']=kind;out['metric']=metric;out['N']=n
+   out['value_N']=wide[n].to_numpy();out['value_N30']=wide[30].to_numpy();out['delta_from_N30']=d.to_numpy()
+   # Undefined correlations must not be counted as sign reversals.
+   valid=np.isfinite(wide[n].to_numpy()) & np.isfinite(wide[30].to_numpy())
+   out['sign_defined']=valid if kind=='edge' else False
+   out['sign_changed']=pd.array([bool(np.sign(x)!=np.sign(y)) if ok and kind=='edge' else pd.NA
+      for x,y,ok in zip(wide[n],wide[30],valid)],dtype='boolean')
+   contrasts.append(out)
+c=pd.concat(contrasts,ignore_index=True)
+scores.to_csv(O/'all_author_scores.tsv',sep='\t',index=False)
+edges.to_csv(O/'all_edge_metrics.tsv',sep='\t',index=False)
+c.to_csv(O/'all_matched_N_contrasts.tsv.gz',sep='\t',index=False)
+# Alternative row-wise lookup verifies every derived contrast against source rows.
+lookup={}
+for kind,t,key,metrics in [('author',scores,['sample','cm','posterior','statistic'],['author_score']),('edge',edges,['sample','cm','posterior','node1','node2'],['raw_spearman','partial_rank_total_melanoma_other_nuisance','parent_fraction_spearman'])]:
+ for row in t.to_dict('records'):
+  for metric in metrics:lookup[(kind,tuple(row[k] for k in key),metric,row['assumed_N'])]=row[metric]
+for row in c.to_dict('records'):
+ key=['sample','cm','posterior','statistic'] if row['kind']=='author' else ['sample','cm','posterior','node1','node2']
+ base=(row['kind'],tuple(row[k] for k in key),row['metric'])
+ x=lookup[base+(row['N'],)];y=lookup[base+(30,)]
+ assert np.isclose(row['value_N'],x,equal_nan=True) and np.isclose(row['value_N30'],y,equal_nan=True)
+ assert np.isclose(row['delta_from_N30'],x-y,equal_nan=True)
+ defined=row['kind']=='edge' and np.isfinite(x) and np.isfinite(y)
+ assert bool(row['sign_defined'])==bool(defined)
+ if defined:assert bool(row['sign_changed'])==bool(np.sign(x)!=np.sign(y))
+ else:assert pd.isna(row['sign_changed'])
+proof=dict(status='PASS_ALL24_INPUT_AUDITS_HASHES_MATCHED_COORDINATES_AND_ROW_WISE_CONTRAST_REPLAY',author_rows=len(scores),edge_rows=len(edges),contrast_rows=len(c),source_hashes=hashes,limitations='Descriptive assumption sensitivity only. N is assumed cells per spot, not measured nuclei. No new P values, no patient independence, no q05 confidence interval claim. No selection of favorable N.')
+(O/'complete.json').write_text(json.dumps(proof,indent=2));print(json.dumps({k:v for k,v in proof.items() if k!='source_hashes'}))

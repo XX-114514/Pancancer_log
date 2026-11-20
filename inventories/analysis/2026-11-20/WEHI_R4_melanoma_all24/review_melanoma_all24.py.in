@@ -1,0 +1,58 @@
+"""Independent serialized-table replay and descriptive summaries; stdlib only."""
+import csv,gzip,json,math,hashlib,sys
+from pathlib import Path
+from collections import defaultdict
+from datetime import datetime,timezone
+O=Path(sys.argv[1])
+def read(name):
+ p=O/name
+ with (gzip.open(p,'rt') if p.suffix=='.gz' else p.open()) as f:return list(csv.DictReader(f,delimiter='\t'))
+def write(name,rows):
+ with (O/name).open('w') as f:
+  w=csv.DictWriter(f,fieldnames=list(rows[0]),delimiter='\t');w.writeheader();w.writerows(rows)
+def same(a,b):return (math.isnan(a) and math.isnan(b)) or math.isclose(a,b,rel_tol=1e-12,abs_tol=1e-12)
+scores=read('all_author_scores.tsv');edges=read('all_edge_metrics.tsv');contrasts=read('all_matched_N_contrasts.tsv.gz')
+assert (len(scores),len(edges),len(contrasts))==(1440,7104,15168)
+lookup={}
+for kind,rows,keys,metrics in [('author',scores,['sample','cm','posterior','statistic'],['author_score']),('edge',edges,['sample','cm','posterior','node1','node2'],['raw_spearman','partial_rank_total_melanoma_other_nuisance','parent_fraction_spearman'])]:
+ for r in rows:
+  for m in metrics:
+   k=(kind,tuple(r[x] for x in keys),m,r['assumed_N']);assert k not in lookup;lookup[k]=float(r[m])
+for r in contrasts:
+ keys=['sample','cm','posterior','statistic'] if r['kind']=='author' else ['sample','cm','posterior','node1','node2']
+ b=(r['kind'],tuple(r[k] for k in keys),r['metric']);x=lookup[b+(r['N'],)];y=lookup[b+('30',)]
+ assert same(float(r['value_N']),x) and same(float(r['value_N30']),y) and same(float(r['delta_from_N30']),x-y)
+ valid=r['kind']=='edge' and math.isfinite(x) and math.isfinite(y)
+ assert (r['sign_defined']=='True')==valid
+ if valid:assert (r['sign_changed']=='True')==((x>0)-(x<0)!=(y>0)-(y<0))
+ else:assert r['sign_changed']==''
+groups=defaultdict(list)
+for r in contrasts:groups[tuple(r[k] for k in ['kind','cm','posterior','metric','N'])].append(r)
+out=[]
+for k,rs in sorted(groups.items()):
+ vals=[abs(float(r['delta_from_N30'])) for r in rs if math.isfinite(float(r['delta_from_N30']))]
+ out.append(dict(zip(['kind','cm','posterior','metric','N'],k),n=len(rs),finite_n=len(vals),mean_absolute_delta=sum(vals)/len(vals) if vals else '',max_absolute_delta=max(vals) if vals else '',sign_defined=sum(r['sign_defined']=='True' for r in rs),sign_changes=sum(r['sign_changed']=='True' for r in rs)))
+write('all_module_sensitivity_summary.tsv',out)
+pairs=[('CM12','Endo_tip_ESM1','Str_Pericyte_RGS5'),('CM12','Endo_tip_ESM1','Mye_Mac_FOLR2'),('CM12','Mye_Mac_FOLR2','Str_Pericyte_RGS5'),('CM01','Endo_vein_ACKR1','Str_Fib_PI16')]
+# CM01 spelling is confirmed against actual labels below, never fuzzy matched.
+for cm,a,b in pairs:
+ if not any(r['cm']==cm and {r['node1'],r['node2']}=={a,b} for r in edges):
+  matches=sorted({(r['node1'],r['node2']) for r in edges if r['cm']==cm and ('ACKR1' in r['node1'] or 'ACKR1' in r['node2']) and ('PI16' in r['node1'] or 'PI16' in r['node2'])})
+  assert cm=='CM01' and len(matches)==1
+  pairs[-1]=(cm,*matches[0])
+core=[r for r in edges if any(r['cm']==cm and {r['node1'],r['node2']}=={a,b} for cm,a,b in pairs)]
+assert len(core)==192
+write('core_edges_all24.tsv',core)
+summary=[]
+for cm,a,b in pairs:
+ for post in ['means','q05']:
+  for n in ['5','30','60']:
+   rows=[r for r in core if r['cm']==cm and {r['node1'],r['node2']}=={a,b} and r['posterior']==post and r['assumed_N']==n];assert len(rows)==8
+   for metric in ['raw_spearman','partial_rank_total_melanoma_other_nuisance','parent_fraction_spearman']:
+    vals=[float(r[metric]) for r in rows];assert all(math.isfinite(v) for v in vals)
+    summary.append(dict(cm=cm,node1=a,node2=b,posterior=post,N=n,metric=metric,n=8,positive=sum(v>0 for v in vals),minimum=min(vals),maximum=max(vals)))
+write('core_edge_ranges.tsv',summary)
+proof=dict(status='PASS_INDEPENDENT_SERIALIZED_15168_CONTRASTS_AND_SIGN_DOMAIN',reviewed_at_utc=datetime.now(timezone.utc).isoformat(),rows=dict(author=1440,edge=7104,contrasts=15168,core=192),hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(O.iterdir()) if p.is_file() and p.name!='independent_readback.json'},scope='Serialized aggregate table replay, not independent re-fitting or raw spatial validation.')
+(O/'independent_readback.json').write_text(json.dumps(proof,indent=2))
+for r in summary:
+ if r['posterior']=='means' and r['metric']=='partial_rank_total_melanoma_other_nuisance':print(r)

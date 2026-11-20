@@ -1,0 +1,58 @@
+{
+  "README.md": {
+    "bytes": 1191,
+    "sha256": "b7d7afbd31d0c27009c8a7f290c8add3085e92dba34e05fce359b878024dd1da"
+  },
+  "all_author_scores.tsv": {
+    "bytes": 180369,
+    "sha256": "9ad84422405e02939c115727cd866ef7f429152209d300945c21840f3e791971"
+  },
+  "all_edge_metrics.tsv": {
+    "bytes": 931818,
+    "sha256": "ca9201a8d3f346f047ba4b1648f762ae41b467b9ef04cf348889fe0502282f48"
+  },
+  "all_matched_N_contrasts.tsv.gz": {
+    "bytes": 192914,
+    "sha256": "dcec3029842d98bfdd60a482510071657dcc83bfa5ec40515a47164ae25344dd"
+  },
+  "all_module_sensitivity_summary.tsv": {
+    "bytes": 22253,
+    "sha256": "df4576a7eabe45652db20c9168cfdcb15729bc3ed4e2b79285ba2170920f4e3d"
+  },
+  "compare_melanoma_N_sensitivity.py.in": {
+    "bytes": 5011,
+    "sha256": "5eafbf042b7d2155d80581f61e16a34a1d55a6f9e67df44ba4a05a8424f0f3bb"
+  },
+  "complete.json": {
+    "bytes": 6752,
+    "sha256": "7eba56844baebf2a403c103f45e45dff506e10cb094ab12434d408cee3862a92"
+  },
+  "core_N_sensitivity.png": {
+    "bytes": 160644,
+    "sha256": "22c0593f05138a908d4ca344bb152cf883c2d17cb631084774c31e24f1f6a4ab"
+  },
+  "core_edge_ranges.tsv": {
+    "bytes": 8238,
+    "sha256": "0dbf10d2fa0110f1babd46e1affa3ea5c8f40a5b229809175dfd5c744f50efd0"
+  },
+  "core_edges_all24.tsv": {
+    "bytes": 24911,
+    "sha256": "13365ca63b37b62cc8706187f78ef9c641e50c586aa16d4c04ca1385fd97d5bd"
+  },
+  "independent_readback.json": {
+    "bytes": 1040,
+    "sha256": "5068580e8c5289ea40afae5e9da70b856940c4276ca2302052c5d6fbde676c0b"
+  },
+  "plot_melanoma_all24.py.in": {
+    "bytes": 1532,
+    "sha256": "19b833db72a06b4396286d62a7a49008f6eadb515f6e5fbc125bdbe52ad7a0ef"
+  },
+  "review_melanoma_all24.py.in": {
+    "bytes": 4395,
+    "sha256": "664e0e3c476c267e27c9b00868d3114a9269335a02c2b7834583ff8513a6f4b0"
+  },
+  "结果说明.txt": {
+    "bytes": 2694,
+    "sha256": "f4dbea5d679939756f08f2320b7a259f320d9e439c26325fb82e5f25128012ba"
+  }
+}

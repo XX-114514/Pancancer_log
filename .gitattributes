@@ -33,3 +33,7 @@ inventories/analysis/2026-10-16/GSE273952_spatial_RNA_completed_v1/figures_v1/*.
 inventories/analysis/2026-11-19/WEHI_R4_CM_validation/** -text
 inventories/analysis/2026-11-19/WEHI_R4_CM_validation/**/*.tsv whitespace=-blank-at-eol
 inventories/analysis/2026-11-19/WEHI_R4_CM_validation/**/statistical_analysis_*.txt whitespace=-blank-at-eol
+
+inventories/analysis/2026-11-20/WEHI_R4_melanoma_all24/** -text
+# Preserve csv-writer CRLF and SHA-bound missing fields in reviewed aggregates.
+inventories/analysis/2026-11-20/WEHI_R4_melanoma_all24/*.tsv whitespace=cr-at-eol,-blank-at-eol

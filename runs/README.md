@@ -1,3 +1,5 @@
+[2026-11-20 WEHI R4全部24模型参数敏感性](20261120_WEHI_R4_all24_sensitivity.md)
+
 [ccRCC原身份空间定位](20261110_ccRCC_localization_v1.md)：精确期望、区域贡献和影响诊断完成，身份复核后置。
 
 [ccRCC现有身份CM与通讯](20261109_ccRCC_current_identity_forward_v1.md)：12/108及CellChat四参数完成审核，有限MC联合校正未通过；身份问题后置。
