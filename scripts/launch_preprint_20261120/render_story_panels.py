@@ -13,6 +13,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 from matplotlib.ticker import FixedLocator, FixedFormatter, NullLocator
+
+from umap_labels import add_umap_labels
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.titlesize':10,'axes.titleweight':'bold','axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42,'svg.fonttype':'none','savefig.facecolor':'white'})
 BLUE='#147D92';PURPLE='#8F849D';GREY='#9AA8B3';ORANGE='#B8664D'
 def panel(ax,k,title):ax.set_title(title,loc='left',pad=12);ax.text(-.1,1.09,k,transform=ax.transAxes,fontsize=13,fontweight='bold')
@@ -56,6 +58,10 @@ def run(inputs,out):
  palette=plt.get_cmap('tab20')(np.linspace(0,1,len(majors)));rng=np.random.default_rng(20261014);order=rng.permutation(len(xy));fig,axes=plt.subplots(2,2,figsize=(9,8));fig.subplots_adjust(hspace=.5,wspace=.35,bottom=.16)
  for ax,codes,pal,title in [(axes[0,0],major,palette,'Major cell identities'),(axes[0,1],ds,plt.get_cmap('tab10')(np.arange(len(datasets))),'Source composition')]:
   ax.scatter(xy[order,0],xy[order,1],c=pal[codes[order]],s=.07,linewidths=0,rasterized=True);ax.set_title(title,loc='left');ax.set_xticks([]);ax.set_yticks([]);ax.set_xlabel('Frozen UMAP 1');ax.set_ylabel('Frozen UMAP 2')
+ legend_only = {'Unknown', 'Ambiguous', 'Unresolved', 'T_NK_boundary'}
+ add_umap_labels(axes[0,0], xy, major, [
+  None if name in legend_only else name.replace('_', ' ') for name in majors
+ ], fontsize=6)
  s=pd.read_csv(immune/'source_coverage.tsv',sep='\t');display_source=s.dataset.map(lambda x:'CXG CAR collection' if str(x).startswith('CXG_') else x);axes[1,0].barh(range(len(s)),s.cells/1000,color=BLUE);axes[1,0].set_yticks(range(len(s)),display_source,fontsize=7);axes[1,0].set_xlabel('Archived cells (thousands)');axes[1,1].barh(range(len(s)),s.archived_native_endpoint_eligible/s.cells*100,color=BLUE);axes[1,1].set_yticks(range(len(s)),display_source,fontsize=7);axes[1,1].set_xlabel('Archived native endpoint eligibility (%)')
  fig.legend(handles=[plt.Line2D([],[],ls='',marker='o',color=palette[i],label=m,markersize=4) for i,m in enumerate(majors)],loc='lower center',ncol=6,frameon=False,fontsize=7);save(fig,out,'FigureS07_immune_atlas')
  t=pd.read_csv(immune/'T_state_display.tsv.gz',sep='\t');lims=json.loads((immune/'state_display_scale.json').read_text());fig,axes=plt.subplots(2,3,figsize=(10,7.5));fig.subplots_adjust(hspace=.5,wspace=.65,bottom=.18)
