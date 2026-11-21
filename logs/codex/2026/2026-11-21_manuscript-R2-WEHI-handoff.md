@@ -27,3 +27,11 @@ The private handoff contains Claude instructions, entry guidance, file and figur
 Repository validation completed with the same two unrelated pre-existing broken links and existing warning. Scoped AST, shell syntax, privacy, relative-link and whitespace checks pass. Public checkpoint `601257cdd600a7eba6d5b7a2ecaefcaf08f4c9a9` was independently verified on remote main. Final generic code and sanitized technical acceptance are synchronized separately from the private payload.
 
 Remaining step: execute the receiving bootstrap in the intended WEHI project directory and inspect its actual receipt; retain raw/frozen science and avoid public publication of manuscripts or arrays. Suggested commit: `Record verified R2 manuscript handoff and receiver-ready status`.
+
+## Receiver receipt and Claude-return query
+
+Evidence 2026-11-21T05:02:58.554958+00:00 / 2026-11-21T13:02:58.554958+08:00. User requested a read-only check for Claude-polished figure returns. Recursively listed the existing R2 bucket (19 objects), including all prefixes, then separately read the new receiver receipt. No new polished figure/result archive was present. The original manuscript archive is the outgoing baseline, not a Claude return.
+
+The receiver receipt timestamp is 2026-11-21T03:56:54.612840+00:00; it reports extracted/verified receipt of the matching archive, 247 manifest files and 96 plotting inputs. It explicitly records plotting_executed=false. This supersedes the earlier no-receipt observation but is not evidence of drawing completion. The reported destination lies under a temporary directory; durable WEHI project storage was not independently checked. No data or objects were changed.
+
+Next: inspect a newly returned figure archive and completion manifest when uploaded, and check durable destination before relying on it as the sole working copy.
