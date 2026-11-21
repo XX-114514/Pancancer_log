@@ -39,3 +39,7 @@ Next: inspect a newly returned figure archive and completion manifest when uploa
 ## Requested repeat bucket check
 
 Read-only evidence 2026-11-21 07:49:24 UTC / 15:49:24 UTC+8: recursively listed all current bucket files again. Total remains nineteen objects across the same four prefixes. Every manuscript/WEHI/Claude-matched object has the same path, size and modification time as the previous query. No polished figure, result archive or new completion receipt was found. The earlier receiving receipt records input receipt, not Claude drawing completion. No object, job or scientific file changed.
+
+## Exact publication prefix query
+
+Evidence 2026-11-21T08:13:55.584882+00:00 / 2026-11-21T16:13:55.584882+08:00. User supplied a new timestamped delivery publication prefix. Read-only exact-prefix queries through the existing source-side remote timed out twice (90 seconds, then 40 seconds with explicit connection/read limits). A separate bounded SSH probe succeeded, isolating the observed wait to the R2 request path. The requested WEHI-side rclone alias is not configured on the source server; its existing migration alias was used, so alias equivalence was not independently established. No object listing was returned and no presence or absence conclusion is made. Previous inventories predate this named delivery and are not evidence against its existence. No files or bucket objects were changed. Next: query from the configured WEHI-side alias or retry after R2 reachability recovers.
