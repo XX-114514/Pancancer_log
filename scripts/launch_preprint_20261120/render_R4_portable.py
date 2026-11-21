@@ -15,6 +15,8 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
+from umap_labels import add_umap_labels
+
 PARENTS=['B','Plasma','CD4T','CD8T','ILC','Myeloid','Endothelial','Stromal']
 COLORS=dict(zip(PARENTS,['#0072B2','#56B4E9','#009E73','#117733','#CC79A7','#E69F00','#D55E00','#7C6DAD']))
 CM=[f'CM{i:02d}' for i in range(1,16)]
@@ -177,18 +179,16 @@ def render(root, run, output):
         base=np.array(colors.to_rgb(COLORS[p]))
         for k in range(len(ns)):fine_colors.append(tuple(base*(.6+.4*k/max(1,len(ns)-1))+np.ones(3)*(.4-.4*k/max(1,len(ns)-1))))
     fine_colors=np.clip(np.array(fine_colors),0,1)
-    def umap(ax,codes,palette,numbers=False):
+    def umap(ax,codes,palette):
         ax.scatter(xy[shuffle,0],xy[shuffle,1],c=palette[codes[shuffle]],s=.12,linewidths=0,rasterized=True,alpha=.7)
         ax.set_xlabel('Frozen UMAP 1');ax.set_ylabel('Frozen UMAP 2');ax.set_xticks([]);ax.set_yticks([])
-        if numbers:
-            for j in range(len(nodes)):
-                q=xy[nc==j];center=np.median(q,axis=0)
-                ax.text(*center,str(j+1),ha='center',va='center',fontsize=5.4,fontweight='bold',bbox={'boxstyle':'round,pad=.12','fc':'white','ec':'none','alpha':.8})
     fig=plt.figure(figsize=(8.4,8.7));gs=fig.add_gridspec(2,2,height_ratios=[1,1.05],hspace=.56,wspace=.28)
     ax=fig.add_subplot(gs[0,0]);umap(ax,pcode,parent_colors);panel(ax,'a','Eight parent compartments')
-    handles=[plt.Line2D([],[],marker='o',ls='',color=COLORS[p],label=p,markersize=4) for p in PARENTS]
-    ax.legend(handles=handles,fontsize=6.8,ncol=2,frameon=False,loc='lower center',bbox_to_anchor=(.5,-.31))
-    ax=fig.add_subplot(gs[0,1]);umap(ax,nc,fine_colors,False);panel(ax,'b','Forty-four resolved identities')
+    parent_labels = {'CD4T': 'CD4 T', 'CD8T': 'CD8 T'}
+    add_umap_labels(ax, xy, pcode, [parent_labels.get(p, p) for p in PARENTS], fontsize=6)
+    identity_numbers = [str(j + 1) for j in range(len(nodes))]
+    ax=fig.add_subplot(gs[0,1]);umap(ax,nc,fine_colors);panel(ax,'b','Forty-four resolved identities')
+    add_umap_labels(ax, xy, nc, identity_numbers, fontsize=5.4)
     ax.text(.5,-.21,'Full identity color key: Figure S06',ha='center',transform=ax.transAxes,fontsize=7)
     selected=['CD3D','FOXP3','GZMK','FCGR3A','CD79A','MS4A1','MZB1','LYZ','FOLR2','VWF','CA4','ESM1','PI16','COL1A1','RGS5','MYH11']
     dd=dot.copy();dd['parent']=dd.identity.map(mapping)
@@ -367,7 +367,8 @@ def render(root, run, output):
         ax.set_title(endpoint+' | age/sex model',fontsize=11)
     fig.colorbar(im,ax=axes.ravel().tolist(),fraction=.015,pad=.015,label='log2 hazard ratio',extend='both');save(fig,'FigureS08_all15_survival_context','All15 base-model survival estimates with updated extended-family q values; unavailable models remain missing.')
     fig,ax=plt.subplots(figsize=(7.5,4));status=imaging.groupby(['platform_cohort','status']).size().unstack(fill_value=0);status.plot.bar(stacked=True,ax=ax,color=['#567F98','#BFC5CA','#C89365']);ax.set_xlabel('Imaging cohort');ax.set_ylabel('Planned settings');ax.set_title('Imaging test eligibility, including insufficient settings',loc='left');ax.legend(frameon=False,fontsize=7);save(fig,'FigureS09_imaging_coverage','480 planned settings, preserving all insufficient rows and the 466-test inference family.')
-    fig=plt.figure(figsize=(12.5,9));ax=fig.add_axes([.06,.12,.58,.78]);umap(ax,nc,fine_colors,False);ax.set_title('All 44 identities on the frozen global UMAP',loc='left',fontsize=13)
+    fig=plt.figure(figsize=(12.5,9));ax=fig.add_axes([.06,.12,.58,.78]);umap(ax,nc,fine_colors);ax.set_title('All 44 identities on the frozen global UMAP',loc='left',fontsize=13)
+    add_umap_labels(ax, xy, nc, identity_numbers, fontsize=6)
     handles=[plt.Line2D([],[],marker='o',ls='',color=fine_colors[j],label=f'{j+1:02d}  {short(n)}',markersize=5) for j,n in enumerate(nodes)]
     fig.legend(handles=handles,loc='center left',bbox_to_anchor=(.65,.5),frameon=False,fontsize=8.3,labelspacing=.65)
     save(fig,'FigureS10_full_identity_UMAP','Full fine-identity color key with unchanged coordinates and complete resolved-identity population.')
