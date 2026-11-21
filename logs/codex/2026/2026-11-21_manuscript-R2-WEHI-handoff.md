@@ -35,3 +35,7 @@ Evidence 2026-11-21T05:02:58.554958+00:00 / 2026-11-21T13:02:58.554958+08:00. Us
 The receiver receipt timestamp is 2026-11-21T03:56:54.612840+00:00; it reports extracted/verified receipt of the matching archive, 247 manifest files and 96 plotting inputs. It explicitly records plotting_executed=false. This supersedes the earlier no-receipt observation but is not evidence of drawing completion. The reported destination lies under a temporary directory; durable WEHI project storage was not independently checked. No data or objects were changed.
 
 Next: inspect a newly returned figure archive and completion manifest when uploaded, and check durable destination before relying on it as the sole working copy.
+
+## Requested repeat bucket check
+
+Read-only evidence 2026-11-21 07:49:24 UTC / 15:49:24 UTC+8: recursively listed all current bucket files again. Total remains nineteen objects across the same four prefixes. Every manuscript/WEHI/Claude-matched object has the same path, size and modification time as the previous query. No polished figure, result archive or new completion receipt was found. The earlier receiving receipt records input receipt, not Claude drawing completion. No object, job or scientific file changed.
