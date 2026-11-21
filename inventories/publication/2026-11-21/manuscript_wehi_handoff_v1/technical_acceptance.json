@@ -1,0 +1,16 @@
+{
+  "status": "R2_READY_FOR_RECEIVER",
+  "evidence_UTC": "2026-11-21T03:51:08.345188+00:00",
+  "upload_readback_event_UTC": "2026-11-21T03:49:01.930917+00:00",
+  "archive_sha256": "1edef3a0773dfe79d003603072d527b337500bcd4626506d96870986b4597ebd",
+  "archive_bytes": 165151555,
+  "sidecar_files_verified": 10,
+  "cloud_objects_independently_confirmed": 12,
+  "WEHI_receipt_observed": false,
+  "raw_expression_matrices_transferred": false,
+  "credentials_in_payload": false,
+  "new_scientific_fits": false,
+  "actual_plotting_replay_on_WEHI": false,
+  "receiver_fixture_checks": "PASS on synthetic fixtures; not WEHI evidence",
+  "checkpoint_public_commit": "601257cdd600a7eba6d5b7a2ecaefcaf08f4c9a9"
+}

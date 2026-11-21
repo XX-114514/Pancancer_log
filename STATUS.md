@@ -2588,3 +2588,8 @@ Tcell_6旧winner排序遗漏完整Treg候选的原因已实证；补查841/842�
 ## 2026-11-20 Manuscript narrative and portable plotting v2
 
 The bilingual manuscript has been reorganized by biological argument, with exact plot inputs and code supplied privately. Full rendering and editing checks are recorded in the [current run](runs/20261120_manuscript_launch_and_plot_sources_v2.md); scientific interpretation and full families remain in the private review package.
+
+
+## 2026-11-21 Manuscript R2 receiving handoff
+
+The private manuscript/plotting bundle and Claude guidance passed full R2 readback and independent cloud object verification. The intended WEHI receiving receipt has not been observed. No scientific labels, models or raw matrices changed. See the [handoff run](runs/20261121_manuscript_R2_WEHI_handoff_v1.md).

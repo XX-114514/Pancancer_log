@@ -17,3 +17,13 @@ The accepted archive was rechecked locally by SHA256/ZIP CRC and every listed fi
 A detached old-server job is uploading to an isolated R2 prefix after checking the existing bucket cap. It will read the full archive and all sidecars back before publishing an upload receipt. At this checkpoint R2 verification and actual WEHI receipt remain pending. No original files, bucket items or scientific tasks were removed or changed.
 
 Validation: receiver shell syntax and Python AST pass. Tiny synthetic fixtures verified repeatability and rejected a traversal ZIP before extraction. Synthetic fixture receipts are not WEHI evidence and are not uploaded.
+
+## R2 acceptance and receiver handoff
+
+Upload/readback event 2026-11-21T03:49:01.930917+00:00; independent local evidence 2026-11-21T03:51:08.345188+00:00 / 2026-11-21T11:51:08.345188+08:00. The complete archive and all ten sidecars passed byte-level R2 readback. A separate R2 receipt and object listing confirmed twelve expected cloud objects, including the completion receipt. The archive SHA256 matches the accepted previous delivery. No actual WEHI receipt is present, and no drawing or model fitting on WEHI is claimed. The user reaffirmed R2 as the intermediate channel; the prepared receiving command reuses the WEHI-side migration configuration.
+
+The private handoff contains Claude instructions, entry guidance, file and figure indexes, immutable receiver/bootstrap, transfer metadata and checksums. It preserves the baseline and directs new graphics/manuscripts into versioned output folders. Receiver smoke checks are explicitly synthetic and not uploaded as target evidence.
+
+Repository validation completed with the same two unrelated pre-existing broken links and existing warning. Scoped AST, shell syntax, privacy, relative-link and whitespace checks pass. Public checkpoint `601257cdd600a7eba6d5b7a2ecaefcaf08f4c9a9` was independently verified on remote main. Final generic code and sanitized technical acceptance are synchronized separately from the private payload.
+
+Remaining step: execute the receiving bootstrap in the intended WEHI project directory and inspect its actual receipt; retain raw/frozen science and avoid public publication of manuscripts or arrays. Suggested commit: `Record verified R2 manuscript handoff and receiver-ready status`.
