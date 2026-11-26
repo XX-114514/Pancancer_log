@@ -1,3 +1,7 @@
+## 2026-11-27 预印本 v1：模块发现审计与 Tex 中心模块
+
+新增[代码](scripts/preprint_v1_20261127/README.md)与[公开汇总表及预注册](inventories/publication/2026-11-27/preprint_v1/README.md)：T 细胞精细注释、CoVarNet 原 runner 在精细状态上重跑、bulk 读出 v2 及治疗前后探索。稿件、学习权重和细胞级表保留私有；技术过程见[任务日志](logs/codex/2026/2026-11-27_preprint-v1-audit-and-tex-module.md)。
+
 ## 2026-11-20 作者图像几何检查
 
 [全部切片与失败记录](inventories/analysis/2026-11-20/WEHI_R4_histology_geometry/README.md)：6片相对网格可拟合、2片未通过固定门槛；尚未建立有效条码/H&E配准，未作血管病理定位声明。三种纯图像检测与独立几何重放均记录。

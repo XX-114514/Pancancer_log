@@ -1,0 +1,22 @@
+# Sensitivity on top of the unchanged original run: (1) stricter network top_n=3; (2) fixed K=4 (original rank)
+options(stringsAsFactors=FALSE)
+args<-commandArgs(trailingOnly=TRUE); scope<-args[[1]]; rdir<-args[[2]]
+suppressPackageStartupMessages({library(NMF);library(dplyr);library(reshape2);library(igraph)})
+lines<-readLines(file.path(rdir,'R','CoVarNet.R'),warn=FALSE); lines<-lines[!grepl('^\\s*usethis::use_package\\(',lines)]
+eval(parse(text=paste(lines,collapse='\n')),envir=.GlobalEnv)
+out<-file.path(scope,'discovery_v1'); fit<-readRDS(file.path(out,'NMF_discovery.rds'))
+corres<-read.delim(file.path(out,'source_adjusted_pair_correlations_private.tsv'))
+net3<-cm_network(fit,corres,top_n=3L,corr=.2,pval_fdr=.05)
+write.table(net3$filter,file.path(out,'CM_members_topn3.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
+write.table(net3$global$edge,file.path(out,'global_edge_topn3.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
+fq<-read.delim(file.path(scope,'inputs','frequency_private.tsv'),check.names=FALSE,row.names=1)
+meta<-read.delim(file.path(scope,'inputs','sample_metadata_private.tsv'),check.names=FALSE)
+meta<-meta[match(colnames(fq)[-1],meta$sampleID),,drop=FALSE]
+mn<-freq_normalize(fq,normalize='minmax'); blocks<-unique(meta$independent_unit)
+bal<-sapply(blocks,function(b)rowMeans(mn[,meta$independent_unit==b,drop=FALSE])); rownames(bal)<-rownames(mn)
+f4<-nmf(bal,4,method='nsNMF',nrun=30,seed=20261013,maxIter=2000)
+Wk<-basis(f4); colnames(Wk)<-sprintf('K4_CM%02d',1:4)
+write.table(Wk,file.path(out,'W_K4_private.tsv'),sep='\t',quote=FALSE,col.names=NA)
+n4<-cm_network(f4,corres,top_n=3L,corr=.2,pval_fdr=.05)
+write.table(n4$filter,file.path(out,'CM_members_K4_topn3.tsv'),sep='\t',quote=FALSE,row.names=FALSE)
+message('sensitivity done')
