@@ -1,0 +1,8 @@
+date	version	cells	units	sources	role
+2026-07	Project_v3 discovery	1963745	773.0	31 GSE	first integration + pan-cancer CoVarNet
+2026-08/09	5M merged (0906 basis)	4676787	1322.0	54 GSE · 43 labels	K=9 CMs, LIANA, V5→V7 identity
+2026-10-14	Immune atlas v1	2670057	400.0	9 sources (libraries)	ICI / immune-enriched; T-cell states
+2026-10-23	Full-context archive	9439479		65 source keys	unified identity, crosswalk
+2026-10-30	Eligible TME scope	2968368	770.0	43 sources (units)	non-enriched TME composition + states
+2026-11-06	V4 non-epithelial K14	560871	164.0	13 sources	author-configured CoVarNet replication
+2026-11-15	WEHI R4 K15	1974301	1194.0	R4 units	vascular CM12 validation
