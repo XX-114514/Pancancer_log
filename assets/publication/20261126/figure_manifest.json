@@ -1,0 +1,130 @@
+{
+  "renderer": "scripts/homepage_v3/render_figures.py",
+  "font": "Inter",
+  "note": "Aggregate tables only; UMAP raster panels re-used from assets/publication/20261102 (cell coordinates private).",
+  "figures": [
+    {
+      "figure": "fig1_concept_design",
+      "png_sha256": "11ded4fded1d42cc1d29d2b6de3003284e1a1a23a763a9ffe2ce0edbb7f13d02",
+      "pdf_sha256": "3da7cdce766c48414b8500e06099461f5bdf4fd04046a58bb17750f37a26a075",
+      "sources": [
+        "schematic; numbers from README text and releases/communication_evidence_chain_20260906"
+      ]
+    },
+    {
+      "figure": "fig2_data_organisation",
+      "png_sha256": "4d2b3fd26fdb60892f7ba2e21d51d7faefc115ace606867166a52264703a38c6",
+      "pdf_sha256": "244be75edc95e92f09a3eb9e0a9f9792ceb4451c7d7e461bac2c8b68ea912dac",
+      "sources": [
+        "inventories/publication/2026-11-02/homepage_v2/fig2_*.tsv",
+        "docs/homepage/01_datasets.md"
+      ]
+    },
+    {
+      "figure": "fig3_processing_annotation",
+      "png_sha256": "5d60c389a6b7cf2e7ab87516adc725e030a1412476d0a922d19257787227eabd",
+      "pdf_sha256": "854915450238fda86b66499f9055d835a74f9b8f62fcedec5b54bfe617e6094c",
+      "sources": [
+        "assets/publication/20261102/fig3_atlas_umap_annotation.png (UMAP raster)",
+        "inventories/publication/2026-11-02/homepage_v2/fig3_*.tsv"
+      ]
+    },
+    {
+      "figure": "fig4_cm_landscape",
+      "png_sha256": "7078f4ece43ec523989a134a6cf5a6684a8fa819951f46db184e888c6ea69ae0",
+      "pdf_sha256": "6b57528ce3813f3af0321d4e364baf6f4beacb0779d2e92155cd8324ffd4d7e5",
+      "sources": [
+        "inventories/publication/2026-11-02/homepage_v2/fig4_*.tsv",
+        "figS3_cm_member_node_class.tsv"
+      ]
+    },
+    {
+      "figure": "fig5_within_cm_communication",
+      "png_sha256": "aa536dd233c61d0466a9c23490b94e80fe42e0d7478eb2aaa655a34095977eaa",
+      "pdf_sha256": "bc416e3e3b0c2f5c4e789339329d8b2a7652eb81207e77c75ee20e4bd35ae0e4",
+      "sources": [
+        "inventories/publication/2026-11-02/homepage_v2/fig5_*.tsv"
+      ]
+    },
+    {
+      "figure": "fig6_spatial_readouts",
+      "png_sha256": "005167eff0083010c079ac558a5ad49d6bbb08a9608380848ec5b4b1d9fb7b70",
+      "pdf_sha256": "aa460def2588c310b3f2c7115501a0ddbc663989bbc0e28329f124d25461dd4b",
+      "sources": [
+        "inventories/publication/2026-11-02/homepage_v2/fig6_*.tsv"
+      ]
+    },
+    {
+      "figure": "fig7_bulk_ici_readouts",
+      "png_sha256": "4306f23e61ee8cf929ece4390d11a796b2db47991cc5c555aa636e15d040de90",
+      "pdf_sha256": "9a899faac6761e8405db3bbd4e84ed1d1547c45006bb67d287fad7a971469300",
+      "sources": [
+        "inventories/publication/2026-11-02/homepage_v2/fig7_*.tsv"
+      ]
+    },
+    {
+      "figure": "fig8_followup_versions",
+      "png_sha256": "1ba54e71c193699f1c617da777ddb65cf3376a1b6a3195ee2882de0383e5cce9",
+      "pdf_sha256": "6c9ca43eadcf375b112247cae237287925f2c7cb035769a375d441ebd66263c3",
+      "sources": [
+        "inventories/analysis/2026-11-07/v4_CM_selection_v1/ALL_CM_REVIEW.tsv",
+        "R4 Visium_core_evidence.tsv",
+        "R4 CM12_three_edges_all_sections.tsv",
+        "readout ledger = README sections 6–9"
+      ]
+    },
+    {
+      "figure": "figS1_datasets",
+      "png_sha256": "cf620287ccfeb3631cf47c03295dedf9833fb36c15946c916bfbe2ddb70e2b6d",
+      "pdf_sha256": "0f9b1f6b2e58785f30964570fa36c53f85489ecb0cf3c1294986a60a563be604",
+      "sources": [
+        "inventories/publication/2026-11-02/homepage_v2/figS1_immune_atlas_sources.tsv"
+      ]
+    },
+    {
+      "figure": "figS2_liana_cm",
+      "png_sha256": "9023784d17a27abfc9aa5dfcf39e0a9ce3d121eb87c01553209d5f7d9c421912",
+      "pdf_sha256": "c9790d6cb88d071d861dd112a217d3e6a2a60e42ef8794425bfc0acdf142145b",
+      "sources": [
+        "fig5_focus_axes_replication.tsv",
+        "releases/communication_evidence_chain_20260906/tables/collagen_ddr_sweep_summary.tsv"
+      ]
+    },
+    {
+      "figure": "figS3_annotation_layers",
+      "png_sha256": "c695fc53e895db66af3b9942ba62b2f82e2eee8619edb5a9e93a3ff71cdf51d0",
+      "pdf_sha256": "ec6dd3428d0c2f03d480ca1bd262704e65d7e150a40017e26cc8a6a7b34d3459",
+      "sources": [
+        "figS3_*.tsv",
+        "inventories/analysis/2026-11-06/v7_selective_subtype_restore_v4/README.md"
+      ]
+    },
+    {
+      "figure": "figS4_nsnmf_limits",
+      "png_sha256": "742a76641dbf4e333b289fb0da16c6b1f5396bceb0b7f8a17cb43fc5426d9ad9",
+      "pdf_sha256": "f9382338c0ea24bdde79793e47f072eec1b6decf9ef60816a36ae16cd7c1e331",
+      "sources": [
+        "figS4_simulation_rare_nodes.tsv (+ re-run seed 0)",
+        "inventories/analysis/2026-11-07/v4_CM_selection_v1/ALL_CM_REVIEW.tsv"
+      ]
+    },
+    {
+      "figure": "figS5_spatial_first",
+      "png_sha256": "7e3c840c1612d5f52fe7465c600eefdacbfbf847807a95cee38d0bd1031db5ce",
+      "pdf_sha256": "a606b640c894e92c15934e25e097bec6fabc9cdcc89c11ca2d9e03ce87d2ba06",
+      "sources": [
+        "R4 imaging_core_review/primary_summary.tsv",
+        "unit counts from analysis READMEs"
+      ]
+    },
+    {
+      "figure": "figS6_cm_improvement",
+      "png_sha256": "b50e76b028e83d9e9618445a84d7f584c97b1cad19a7714afbd071e4f6b10301",
+      "pdf_sha256": "a108519484ada42223ca0ec9c0bc815d5a6f4be6a3475baa5861921696d411c2",
+      "sources": [
+        "figS6_immune_atlas_cm_scopes.tsv",
+        "V4 K14 README numbers"
+      ]
+    }
+  ]
+}

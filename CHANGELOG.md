@@ -1,3 +1,7 @@
+## 2026-11-27 首页论文式重写（v3）
+
+[新首页](README.md)：以0906 K9为主线按论文结构重写，新增主图1–8与补图S1–S6（[图件与SHA](assets/publication/20261126/figure_manifest.json)）及[六个分页](docs/homepage/v3/01_datasets.md)；第9节并列展示V4 K14与R4 K15读出。CosMx T3b按2026-11-06复核改为密度零模型比较、不再标μm。旧首页保留为[README_20261102_0906.md](README_20261102_0906.md)。
+
 ## 2026-11-20 作者图像几何检查
 
 [全部切片与失败记录](inventories/analysis/2026-11-20/WEHI_R4_histology_geometry/README.md)：6片相对网格可拟合、2片未通过固定门槛；尚未建立有效条码/H&E配准，未作血管病理定位声明。三种纯图像检测与独立几何重放均记录。

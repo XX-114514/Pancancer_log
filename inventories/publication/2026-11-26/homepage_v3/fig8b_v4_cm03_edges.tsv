@@ -1,0 +1,3 @@
+edge	raw r	source-centred	both parents ≥20 + centred	LOSO min	LOSO max	within-source +
+IGHD B – PECAM1 EC	0.422	0.297	0.414	0.33	0.504	12/13
+PECAM1 EC – XCL1 NK	0.41	0.227	0.298	0.348	0.526	10/13
