@@ -4,9 +4,9 @@ from docx import Document
 from docx.shared import Pt, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 src, out, figdir = sys.argv[1], sys.argv[2], sys.argv[3]
-FIGS = {'Figure 1.': 'Fig1_release_lineage.png', 'Figure 2.': 'Fig2_source_dependence_reused_v12.png', 'Figure 3.': 'Fig3_module_discovery_audit.png',
-        'Figure 4.': 'Fig4_R4_module_catalogue.png', 'Figure 5.': 'Fig5_vascular_positive_control_reused_v12.png', 'Figure 6.': 'Fig6_Tex_centred_module.png',
-        'Supplementary Figure S1.': 'FigS_bulk_readout_v2.png'}
+FIGS = {'Figure 1.': 'Fig1_atlas_lineage.png', 'Figure 2.': 'Fig2_source_dependence.png', 'Figure 3.': 'Fig3_module_discovery_audit.png',
+        'Figure 4.': 'Fig4_reference_module_catalogue.png', 'Figure 5.': 'Fig5_vascular_positive_control.png', 'Figure 6.': 'Fig6_Tex_centred_module.png',
+        'Supplementary Figure S1.': 'FigS1_bulk_readouts.png'}
 doc = Document(); st = doc.styles['Normal']; st.font.name = 'Arial'; st.font.size = Pt(10)
 def runs(p, text):
     for part in re.split(r'(\*\*[^*]+\*\*|\*[^*]+\*|\^[^^]+\^)', text):

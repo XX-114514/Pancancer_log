@@ -72,3 +72,14 @@ The manuscript, curated basis weights and edges (S1b/S1c), cell-level tables, pa
 ## Suggested commit message
 
 `Add preprint v1 audit code, curated T-state CoVarNet rerun and public aggregate tables`
+
+## Update: publication naming
+
+The user asked that publication-level text use descriptive names rather than dates or internal version tags.
+
+- **Names now used.** Manuscript, figures and public tables use descriptive names:
+  - discovery collection; harmonised pan-cancer atlas; non-malignant TME atlas; TME identity reference; immunotherapy compendium; curated T-cell states;
+  - discovery modules DM01–DM09; reference modules RM01–RM15; compendium T-cell modules TM1–TM4.
+- **Where internal names stay.** The internal↔publication map is kept privately with the drafts. Repository paths and logs keep internal names.
+- **Reused composition figure.** Relabelled at the PDF text level (`figures/relabel_fig2.py`: PyMuPDF redaction and re-insertion of label text only). Data marks are unchanged. The original renderer inputs are not available on this server.
+- **Public tables.** Table S1a renamed to `Table_S1a_reference_module_*`; S2 columns renamed; checksums regenerated.
