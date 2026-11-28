@@ -1,0 +1,3 @@
+# Preprint v3 code availability
+
+On 2026-11-28 Melbourne, checked the cited repository snapshots and public release records for software licensing and archival identifiers. Published the supplied figure, supplement, and historical assembly scripts to `XX-114514/Pancancer_code` at `6cfb98cb1cc6dec88f05d90be90f255a3221335e`. Confirmed the remote file tree and updated the bilingual local manuscript code availability statements and package checksums. The release documents frozen-input dependencies and distinguishes figure reproduction from upstream analysis. Public changes contain source and documentation only.
